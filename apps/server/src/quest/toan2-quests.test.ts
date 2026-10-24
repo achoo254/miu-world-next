@@ -1,9 +1,12 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { readPendingQuests } from '../../../../tools/content/no-textbook-copy';
 import { completeStep, emptyProgress, type QuestProgress } from '@miu/quest/quest-progress';
 import { CONTENT_DIR, readQuestDefinitions } from '../content/content-catalog';
 import { solution } from '../../test/quest-solution';
 
+/** Quests still played from the book (the rest are rewritten in our own words). */
+const WAITING = readPendingQuests();
 const quests = readQuestDefinitions(path.join(CONTENT_DIR, 'quests')).filter((q) => q.id.startsWith('toan2-'));
 
 /** Where each topic of the book plays (story-map.md, "Chia lại 8 map"): the map's region and its chapter. */
@@ -20,8 +23,9 @@ const PLACE_OF_TOPIC: Record<number, { region: string; chapter: number }> = {
 describe('Toán 2 quests', () => {
   it('exist, one per lesson, each in the chapter of its topic on its map', () => {
     expect(quests.length).toBeGreaterThan(0);
-    const lessons = quests.map((q) => (q.status === 'stub' ? null : q.lesson));
-    expect(new Set(lessons).size).toBe(quests.length);
+    const waiting = quests.filter((q) => WAITING.has(q.id));
+    const lessons = waiting.map((q) => (q.status === 'stub' ? null : q.lesson));
+    expect(new Set(lessons).size).toBe(waiting.length);
     for (const quest of quests) {
       const topic = Number(/^toan2-cd(\d+)-/.exec(quest.id)?.[1]);
       expect({ region: quest.region, chapter: quest.chapter }, quest.id).toEqual(PLACE_OF_TOPIC[topic]);
@@ -45,10 +49,12 @@ describe('Toán 2 quests', () => {
       expect(reward).toEqual(quest.reward);
     });
 
-    it(`${quest.id} ties every graded step to the textbook exercises it plays`, () => {
-      if (quest.status === 'stub') throw new Error('textbook quests are written in full');
-      const untied = quest.steps.filter((s) => 'support' in s && !('curriculumRef' in s && s.curriculumRef && s.curriculumRef.length > 0)).map((s) => s.id);
-      expect(untied).toEqual([]);
+    it(`${quest.id} ties every graded step to what it teaches`, () => {
+      if (quest.status === 'stub') throw new Error('learning quests are written in full');
+      // Still played from the book: its inventory exercises; rewritten: its objective.
+      const tied = (s: (typeof quest.steps)[number]) =>
+        WAITING.has(quest.id) ? 'curriculumRef' in s && s.curriculumRef !== undefined && s.curriculumRef.length > 0 : 'objective' in s && s.objective !== undefined;
+      expect(quest.steps.filter((s) => 'support' in s && !tied(s)).map((s) => s.id)).toEqual([]);
     });
   }
 });

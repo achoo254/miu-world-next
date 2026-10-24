@@ -20,17 +20,17 @@ export function randomGaIds(nowMs: number): GaIds {
   return { clientId: `${randomInt(1_000_000_000, 10_000_000_000)}.${seconds}`, sessionId: seconds };
 }
 
-/** The textbook lessons the shipped quests play, and the subject of each skill: the only values quest events carry. */
+/** The topics the shipped quests teach, and the subject of each skill: the only values quest events carry. */
 export interface QuestLabels {
-  lessons: ReadonlySet<string>;
+  topics: ReadonlySet<string>;
   subjectOfSkill: ReadonlyMap<string, string>;
 }
 
 export function questLabels(content: Pick<ContentCatalog, 'quests' | 'subjects'>): QuestLabels {
-  const lessons = new Set<string>();
-  for (const quest of content.quests.values()) if (quest.status === 'active' && quest.lesson) lessons.add(quest.lesson);
+  const topics = new Set<string>();
+  for (const quest of content.quests.values()) if (quest.status === 'active' && quest.topic) topics.add(quest.topic);
   const subjectOfSkill = new Map(content.subjects.flatMap((subject) => subject.skills.map((skill) => [skill.id, subject.id] as const)));
-  return { lessons, subjectOfSkill };
+  return { topics, subjectOfSkill };
 }
 
 export interface ServerEventsOptions {
@@ -62,10 +62,10 @@ export class ServerEvents {
   }
 
   /** A player finished a run of `quest`; `first`: her first quest ever. */
-  questFinished(childId: string, quest: Pick<ActiveQuest, 'lesson' | 'reward'>, first: boolean): void {
+  questFinished(childId: string, quest: Pick<ActiveQuest, 'topic' | 'reward'>, first: boolean): void {
     const ids = this.sessions.forPlayer(childId) ?? randomGaIds(this.now());
     const params: Record<string, string> = {};
-    if (quest.lesson && this.labels.lessons.has(quest.lesson)) params.lesson_id = quest.lesson;
+    if (quest.topic && this.labels.topics.has(quest.topic)) params.topic_id = quest.topic;
     const subject = Object.keys(quest.reward.skillXp)
       .sort()
       .map((skill) => this.labels.subjectOfSkill.get(skill))

@@ -35,8 +35,8 @@ export function trackPageView(path: string, nowMs: number = Date.now()): void {
 }
 
 /** Something was shared (an invite link, a result card, the week's summary). */
-export function trackShare(share: { method: ShareMethod; contentType: ShareContentType; lessonId?: string; path?: string }, nowMs: number = Date.now()): void {
-  report({ name: 'share', method: share.method, content_type: share.contentType, lesson_id: share.lessonId, path: share.path }, nowMs);
+export function trackShare(share: { method: ShareMethod; contentType: ShareContentType; topicId?: string; path?: string }, nowMs: number = Date.now()): void {
+  report({ name: 'share', method: share.method, content_type: share.contentType, topic_id: share.topicId, path: share.path }, nowMs);
 }
 
 /** Forgets the last event time (tests). */

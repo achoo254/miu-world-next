@@ -125,7 +125,7 @@ for (const viewport of VIEWPORTS) {
       await outPage.goto('/login');
       await expect(outPage.locator('main')).toBeVisible();
     });
-    // The introduction at `/` and a static lesson page, the two ways in for someone who has not signed in.
+    // The introduction at `/` and a static topic page, the two ways in for someone who has not signed in.
     await capture(outPage, '20-landing', async () => {
       await outPage.goto('/');
       await expect(outPage.getByRole('heading', { level: 1, name: /Phiêu lưu trong thế giới khối/ })).toBeVisible();
@@ -134,8 +134,8 @@ for (const viewport of VIEWPORTS) {
       await expect.poll(() => outPage.locator('.landing-image').evaluate((img) => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
     });
     await capture(outPage, '21-lesson-page', async () => {
-      await outPage.goto('/bai/toan-2-bai-1-on-tap-cac-so-den-100/');
-      await expect(outPage.getByRole('heading', { level: 1, name: /Trò chơi ôn Bài 1/ })).toBeVisible();
+      await outPage.goto('/hoc/toan/so-den-100/');
+      await expect(outPage.getByRole('heading', { level: 1, name: /Trò chơi luyện Số đến 100/ })).toBeVisible();
       await expect(outPage.locator('[data-id="lesson-play"]')).toBeVisible();
     });
     // An invite link's page: the same for any code of the right shape (the server is asked only after sign-in).
@@ -284,7 +284,7 @@ for (const viewport of VIEWPORTS) {
       await page.goto('/parent/worksheets');
       await page.getByLabel('Nhập mã PIN tài khoản').fill('2468');
       await page.getByLabel('Nhập mã PIN tài khoản').press('Enter');
-      await expect(page.getByRole('heading', { name: 'Tiếng Việt 2, tập một' })).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Tiếng Việt', exact: true })).toBeVisible();
     });
     await capture(page, '22-friends-invite', async () => {
       await page.goto('/friends');

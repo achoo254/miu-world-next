@@ -1,10 +1,10 @@
-// Parent area → Phiếu viết: the writing parts of each textbook lesson (capital letters, copying,
-// dictation, paragraphs) and the at-home activities, printed on A4. Built by the server from the
-// textbook inventory, so every line is the book's own wording; nothing written comes back to the game.
-// Behind the parent PIN like the rest of the parent area.
+// Parent area → Phiếu viết: the writing part of each quest that hands one out (capital letters, copying, dictation,
+// a few sentences) and the at-home activities, printed on A4, grouped by subject and topic like the lessons. Built by
+// the server from the quests; nothing written comes back to the game. Behind the parent PIN like the rest of the
+// parent area.
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
-import { Worksheet, WorksheetListResponse, type WorksheetBlock } from '@miu/schema/worksheet';
+import { Worksheet, WorksheetListResponse, type WorksheetBlock, type WorksheetSummary } from '@miu/schema/worksheet';
 import { useAccount } from '../../account/account-context';
 import { ParentGate } from '../../account/parent-gate';
 import { api, errorMessage } from '../../api-client';
@@ -14,12 +14,28 @@ import { SkyScene } from '../../kit/sky-scene';
 import { OLi, letterSpace, sentenceSpace, useModelHand } from './oli';
 import './worksheets.css';
 
-const BOOK_NAMES: Record<string, string> = { 'tv2-t1': 'Tiếng Việt 2, tập một', 'toan2-t1': 'Toán 2, tập một' };
+interface TopicSheets {
+  topic: WorksheetSummary['topic'];
+  sheets: WorksheetSummary[];
+}
 
-/** Books list in the order above (Tiếng Việt first); a book not named there yet goes last. */
-function bookOrder(book: string): number {
-  const index = Object.keys(BOOK_NAMES).indexOf(book);
-  return index < 0 ? Number.MAX_SAFE_INTEGER : index;
+/** Sheets by subject, then by topic, in the order the server lists them (the topics' order). */
+export function groupSheets(sheets: readonly WorksheetSummary[]): Array<{ subject: WorksheetSummary['subject']; topics: TopicSheets[] }> {
+  const subjects: Array<{ subject: WorksheetSummary['subject']; topics: TopicSheets[] }> = [];
+  for (const sheet of sheets) {
+    let subject = subjects.find((s) => s.subject.id === sheet.subject.id);
+    if (!subject) {
+      subject = { subject: sheet.subject, topics: [] };
+      subjects.push(subject);
+    }
+    let topic = subject.topics.find((t) => t.topic.id === sheet.topic.id);
+    if (!topic) {
+      topic = { topic: sheet.topic, sheets: [] };
+      subject.topics.push(topic);
+    }
+    topic.sheets.push(sheet);
+  }
+  return subjects;
 }
 
 /** Loads a parent-only resource once the PIN gate is open; null until then. */
@@ -58,7 +74,7 @@ function GateOrContent({ gateOpen, children }: { gateOpen: boolean; children: Re
 
 export function WorksheetListScreen() {
   const { data, error, gateOpen } = useParentData(() => api('GET', '/worksheets', WorksheetListResponse), 'list');
-  const books = data ? [...new Set(data.worksheets.map((w) => w.bookId))].sort((a, b) => bookOrder(a) - bookOrder(b)) : [];
+  const subjects = data ? groupSheets(data.worksheets) : [];
   return (
     <GateOrContent gateOpen={gateOpen}>
       <SkyScene>
@@ -71,31 +87,30 @@ export function WorksheetListScreen() {
               Về khu phụ huynh
             </Link>
           </header>
-          <p className="hint">Phần viết của mỗi bài (chữ hoa, câu ứng dụng, nghe – viết, viết đoạn) và việc làm cùng bố mẹ ở nhà. In ra để bé viết tay; bài viết không cần gửi lại vào game.</p>
+          <p className="hint">Phần viết của mỗi nhiệm vụ học (chữ hoa, câu ứng dụng, nghe – viết, viết vài câu) và việc làm cùng bố mẹ ở nhà. In ra để bé viết tay; bài viết không cần gửi lại vào game.</p>
           {error ? <p role="alert" className="error">{error}</p> : null}
           {!data && !error ? <p role="status">Đang tải phiếu…</p> : null}
           <div className="worksheet-books">
-            {books.map((book) => {
-              const sheets = data?.worksheets.filter((w) => w.bookId === book) ?? [];
-              return (
-                <section key={book} className="panel" aria-labelledby={`book-${book}`} data-id={`worksheets-${book}`}>
-                  <h2 id={`book-${book}`}>{BOOK_NAMES[book] ?? book}</h2>
-                  <ul className="worksheet-rows">
-                    {sheets.map((sheet) => (
-                      <li key={sheet.lessonId}>
-                        <Link to={`/parent/worksheets/${sheet.lessonId}`} data-id={`worksheet-link-${sheet.lessonId}`}>
-                          {sheet.week ? <span className="badge">Tuần {sheet.week}</span> : null}
-                          <span className="worksheet-row-title">{sheet.title}</span>
-                          <span className="hint">
-                            tr. {sheet.pages[0]}–{sheet.pages[1]} · {sheet.blockCount} phần
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-              );
-            })}
+            {subjects.map(({ subject, topics }) => (
+              <section key={subject.id} className="panel" aria-labelledby={`subject-${subject.id}`} data-id={`worksheets-${subject.id}`}>
+                <h2 id={`subject-${subject.id}`}>{subject.name}</h2>
+                {topics.map(({ topic, sheets }) => (
+                  <div key={topic.id} data-id={`worksheets-topic-${topic.id}`}>
+                    <h3 className="worksheet-topic">{topic.title}</h3>
+                    <ul className="worksheet-rows">
+                      {sheets.map((sheet) => (
+                        <li key={sheet.id}>
+                          <Link to={`/parent/worksheets/${sheet.id}`} data-id={`worksheet-link-${sheet.id}`}>
+                            <span className="worksheet-row-title">{sheet.title}</span>
+                            <span className="hint">{sheet.blockCount} phần</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </section>
+            ))}
           </div>
         </main>
       </SkyScene>
@@ -116,7 +131,7 @@ function Block({ block, modelHand }: { block: WorksheetBlock; modelHand: boolean
             </>
           ) : (
             <>
-              <p className="sheet-note">Tô theo mẫu chữ hoa trang {block.page} SGK hoặc vở Tập viết, rồi viết tiếp.</p>
+              <p className="sheet-note">Tô theo mẫu chữ hoa trong vở Tập viết, rồi viết tiếp.</p>
               <OLi rows={4} />
             </>
           )}
@@ -158,15 +173,12 @@ function Block({ block, modelHand }: { block: WorksheetBlock; modelHand: boolean
         </section>
       );
     case 'activity':
-      return <ActivityBlock prompt={block.prompt} page={block.page} parts={[block.media]} />;
+      return <ActivityBlock prompt={block.prompt} parts={[block.media]} />;
   }
 }
 
-/**
- * At-home activity. Where the book asks one thing of several pictures (a, b, c…), the prompt prints once
- * and each picture — named as the inventory describes it, with its page — gets its own answer line.
- */
-function ActivityBlock({ prompt, page, parts }: { prompt: string; page: number; parts: ReadonlyArray<readonly string[]> }) {
+/** At-home activity. Where one thing is asked of several pictures or objects, the prompt prints once and each gets its own answer line. */
+function ActivityBlock({ prompt, parts }: { prompt: string; parts: ReadonlyArray<readonly string[]> }) {
   const pictured = parts.filter((media) => media.length > 0);
   return (
     <section className="sheet-block" data-id="block-activity">
@@ -176,9 +188,7 @@ function ActivityBlock({ prompt, page, parts }: { prompt: string; page: number; 
         <ol className="sheet-parts">
           {pictured.map((media, i) => (
             <li key={i}>
-              <p className="sheet-label">
-                Hình trang {page} SGK: {media.join('; ')}
-              </p>
+              <p className="sheet-label">{media.join('; ')}</p>
               <OLi rows={2} />
             </li>
           ))}
@@ -193,11 +203,10 @@ function ActivityBlock({ prompt, page, parts }: { prompt: string; page: number; 
 interface ActivityGroup {
   kind: 'activity-group';
   prompt: string;
-  page: number;
   parts: string[][];
 }
 
-/** Runs of activities that share the book's prompt become one block (see ActivityBlock). */
+/** Runs of activities that share a prompt become one block (see ActivityBlock). */
 function groupBlocks(blocks: readonly WorksheetBlock[]): Array<WorksheetBlock | ActivityGroup> {
   const out: Array<WorksheetBlock | ActivityGroup> = [];
   for (const block of blocks) {
@@ -208,16 +217,16 @@ function groupBlocks(blocks: readonly WorksheetBlock[]): Array<WorksheetBlock | 
     } else if (last.kind === 'activity-group') {
       last.parts.push(block.media);
     } else if (last.kind === 'activity') {
-      out[out.length - 1] = { kind: 'activity-group', prompt: last.prompt, page: last.page, parts: [last.media, block.media] };
+      out[out.length - 1] = { kind: 'activity-group', prompt: last.prompt, parts: [last.media, block.media] };
     }
   }
   return out;
 }
 
 export function WorksheetSheetScreen() {
-  const { lessonId = '' } = useParams();
+  const { id = '' } = useParams();
   const modelHand = useModelHand();
-  const { data: sheet, error, gateOpen } = useParentData(() => api('GET', `/worksheets/${encodeURIComponent(lessonId)}`, Worksheet), lessonId);
+  const { data: sheet, error, gateOpen } = useParentData(() => api('GET', `/worksheets/${encodeURIComponent(id)}`, Worksheet), id);
   return (
     <GateOrContent gateOpen={gateOpen}>
       <main className="worksheet-page" data-id="worksheet">
@@ -236,8 +245,7 @@ export function WorksheetSheetScreen() {
           <article className="worksheet-sheet" aria-labelledby="sheet-title">
             <header className="sheet-header">
               <p className="sheet-label">
-                {BOOK_NAMES[sheet.bookId] ?? sheet.bookId}
-                {sheet.week ? ` · Tuần ${sheet.week}` : ''} · trang {sheet.pages[0]}–{sheet.pages[1]}
+                {sheet.subject.name} · {sheet.topic.title}
               </p>
               <h1 id="sheet-title">{sheet.title}</h1>
               <p className="sheet-fields">
@@ -246,7 +254,7 @@ export function WorksheetSheetScreen() {
               </p>
             </header>
             {groupBlocks(sheet.blocks).map((block, i) =>
-              block.kind === 'activity-group' ? <ActivityBlock key={i} prompt={block.prompt} page={block.page} parts={block.parts} /> : <Block key={i} block={block} modelHand={modelHand} />,
+              block.kind === 'activity-group' ? <ActivityBlock key={i} prompt={block.prompt} parts={block.parts} /> : <Block key={i} block={block} modelHand={modelHand} />,
             )}
           </article>
         ) : null}

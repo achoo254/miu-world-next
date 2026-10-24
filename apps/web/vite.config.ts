@@ -11,7 +11,7 @@ import { MUSIC_PATHS } from './src/ui/sound/music.ts';
 import { UI_ART_PATHS } from './src/ui/kit/ui-art.ts';
 import { MINIGAME_SPRITE_PATHS } from './src/ui/minigame/sprites.ts';
 import { appIcons, APP_ICON_PATHS } from './vite-app-icons.ts';
-import { LESSON_PAGE_ENTRY, buildSite, lessonPageFiles, sitemapPages } from './vite-lesson-pages.ts';
+import { LESSON_PAGE_ENTRY, buildSite, sitemapPages, topicPageFiles } from './vite-lesson-pages.ts';
 import { NATIVE_MODE, NATIVE_OUT_DIR, nativeContentSecurityPolicy, nativeServerOrigin, nativeViewport } from './vite-native.ts';
 import { repoAssets } from './vite-repo-assets.ts';
 import { seoMeta } from './vite-seo-meta.ts';
@@ -86,7 +86,7 @@ export default defineConfig(({ mode, command }) => {
   const review = mode !== 'release' && !native;
   const serverOrigin = native ? nativeServerOrigin(process.env) : '';
   const policy = native ? nativeContentSecurityPolicy(CONTENT_SECURITY_POLICY, serverOrigin) : CONTENT_SECURITY_POLICY;
-  // The static pages (a page per subject and lesson, robots.txt, the sitemap) are written by the web build only.
+  // The static pages (a page per subject and topic, robots.txt, the sitemap) are written by the web build only.
   const site = command === 'build' && !native ? buildSite({ contentDir: CONTENT_DIR, assetsDir: ASSETS_DIR, csp: CONTENT_SECURITY_POLICY }) : null;
   return {
     plugins: [
@@ -96,7 +96,7 @@ export default defineConfig(({ mode, command }) => {
       ...(native ? [nativeViewport()] : [appIcons(ASSETS_DIR)]),
       seoMeta(ASSETS_DIR),
       repoAssets(ASSETS_DIR, APP_DIR, [...UI_PATHS, ...APP_ICON_PATHS], { review, fontsOnly: native }),
-      ...(site ? [lessonPageFiles(site), sitemap({ pages: sitemapPages(site, INDEX_HTML), ledger: readLedger(LASTMOD_LEDGER), release: !review })] : []),
+      ...(site ? [topicPageFiles(site), sitemap({ pages: sitemapPages(site, INDEX_HTML), ledger: readLedger(LASTMOD_LEDGER), release: !review })] : []),
     ],
     // The server origin is '' on the web (every address relative, src/platform/endpoints.ts).
     define: { ...assetVersionDefines(), __MIU_SERVER_ORIGIN__: JSON.stringify(serverOrigin) },
@@ -110,7 +110,7 @@ export default defineConfig(({ mode, command }) => {
       rollupOptions: {
         input: {
           index: INDEX_HTML,
-          // The script of the static lesson pages (page view, destination after sign-in); the build links it into each.
+          // The script of the static topic pages (page view, destination after sign-in); the build links it into each.
           ...(native ? {} : { [LESSON_PAGE_ENTRY]: path.join(APP_DIR, 'src/seo/lesson-page-entry.ts') }),
           // The minigame dev page opens any game without signing in: review builds only, like the render tool.
           ...(review

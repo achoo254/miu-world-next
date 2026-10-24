@@ -86,7 +86,7 @@ const TRADES = {
   vendor: { routine: 'vendor', names: ['Cô bán rau', 'Bác bán xôi', 'Bà bán bánh đa', 'Chị bán hoa', 'Cô bán quả', 'Bà bán nước chè', 'Chú bán kem', 'Cô bán bún'], held: [MODEL.basket], anchor: 'stall' },
   shopper: { routine: 'shopper', names: ['Cô đi chợ', 'Bà đi chợ', 'Chị mua rau', 'Chú mua cá', 'Mẹ đi chợ', 'Bác mua gạo'], held: [MODEL.basket], anchor: 'stall' },
   porter: { routine: 'porter', names: ['Chú gánh hàng', 'Anh khuân hàng', 'Bác chở hàng', 'Chú khuân thóc', 'Anh gánh nước'], held: [MODEL.basket], anchor: 'centre' },
-  pupil: { routine: 'pupil', names: ['Bạn học trò', 'Bé đá cầu', 'Bạn nhảy dây', 'Bé đọc bài', 'Bạn lớp Hai', 'Bé chơi ô ăn quan', 'Bạn đá bóng'], held: [MODEL.book], anchor: 'centre' },
+  pupil: { routine: 'pupil', names: ['Bạn học trò', 'Bé đá cầu', 'Bạn nhảy dây', 'Bé đọc bài', 'Bạn cùng lớp', 'Bé chơi ô ăn quan', 'Bạn đá bóng'], held: [MODEL.book], anchor: 'centre' },
   teacher: { routine: 'teacher', names: ['Cô giáo làng', 'Thầy giáo làng', 'Cô dạy chữ', 'Thầy dạy hát'], held: [MODEL.book], anchor: 'centre' },
   guard: { routine: 'school-guard', names: ['Bác bảo vệ', 'Chú gác trường', 'Ông trông cổng'], held: [], anchor: 'centre' },
   sweeper: { routine: 'sweeper', names: ['Cô quét sân', 'Chú quét lá', 'Bà quét ngõ', 'Cô lao công'], held: [MODEL.basket], anchor: 'yard' },

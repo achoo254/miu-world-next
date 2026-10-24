@@ -22,19 +22,19 @@ async function openPageAt(address: string): Promise<void> {
   document.querySelector<HTMLElement>('[data-id="lesson-play"]')?.click();
 }
 
-describe('the lesson page script', () => {
+describe('the topic page script', () => {
   it('keeps the quest for after sign-in', async () => {
-    await openPageAt('/bai/toan-2-bai-1/');
+    await openPageAt('/hoc/toan/so-den-100/');
     expect(takePostLoginTarget()).toEqual({ next: '/play?region=truong-hoc&quest=toan2-cd1-b01' });
   });
 
   it('keeps the invite code of a result shared with an invite, along with the quest', async () => {
-    await openPageAt(`/bai/toan-2-bai-1/?utm_source=share&moi=${CODE}`);
+    await openPageAt(`/hoc/toan/so-den-100/?utm_source=share&moi=${CODE}`);
     expect(takePostLoginTarget()).toEqual({ next: '/play?region=truong-hoc&quest=toan2-cd1-b01', inviteCode: CODE });
   });
 
   it('ignores a code that is not an invite code', async () => {
-    await openPageAt('/bai/toan-2-bai-1/?moi=<script>');
+    await openPageAt('/hoc/toan/so-den-100/?moi=<script>');
     expect(takePostLoginTarget()).toEqual({ next: '/play?region=truong-hoc&quest=toan2-cd1-b01' });
   });
 });

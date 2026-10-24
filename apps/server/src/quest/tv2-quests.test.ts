@@ -1,5 +1,6 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { readPendingQuests } from '../../../../tools/content/no-textbook-copy';
 import { completeStep, emptyProgress, type QuestProgress } from '@miu/quest/quest-progress';
 import { CONTENT_DIR, readQuestDefinitions } from '../content/content-catalog';
 import { readCurriculum } from '../worksheet/curriculum-books';
@@ -7,6 +8,8 @@ import { solution } from '../../test/quest-solution';
 
 const quests = readQuestDefinitions(path.join(CONTENT_DIR, 'quests')).filter((q) => q.id.startsWith('tv2-'));
 const book = readCurriculum().books.find((b) => b.book.id === 'tv2-t1')?.book;
+/** Quests still played from the book (the rest are rewritten in our own words). */
+const WAITING = readPendingQuests();
 const lessons = book?.toc.flatMap((unit) => unit.lessons) ?? [];
 
 /** `tv2-t1-b03` in week 2 is played by `tv2-t02-b03`; `tv2-t1-on-giua-ki` in week 9 by `tv2-t09-on-giua-ki`. */
@@ -38,7 +41,8 @@ describe('Tiếng Việt 2 quests', () => {
     it(`${id} plays ${lesson.id} in the chapter of week ${week} on its map`, () => {
       const quest = quests.find((q) => q.id === id);
       if (!quest || quest.status === 'stub') throw new Error(`${id} is missing or not written in full`);
-      expect(quest.lesson).toBe(lesson.id);
+      // A quest rewritten in our own words no longer names the book's lesson; one still played from the book does.
+      expect(quest.lesson).toBe(WAITING.has(id) ? lesson.id : undefined);
       expect({ region: quest.region, chapter: quest.chapter }).toEqual(placeOfWeek(week));
       expect(quest.review).toBe('teacher-pending');
     });

@@ -2,7 +2,7 @@ import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { CONTENT_DIR, loadContentCatalog, loadQuests, questTextbooks } from './content-catalog';
+import { loadContentCatalog, loadQuests } from './content-catalog';
 
 function questDir(quests: unknown[]): string {
   const dir = mkdtempSync(path.join(tmpdir(), 'miu-quests-'));
@@ -55,13 +55,5 @@ describe('content catalogue', () => {
     const loaded = loadQuests(questDir([{ ...base, id: 'a' }, draft]), new Set([...skills, 'phep-cong']));
     expect([...loaded.keys()]).toEqual(['a']);
     expect(() => loadQuests(questDir([{ ...draft, phases: {} }]), skills)).toThrow(/invalid content file/);
-  });
-
-  it('reads the title and printed pages of the lesson a quest plays', () => {
-    const quests = loadQuests(questDir([{ ...base, id: 'a', lesson: 'tv2-t1-b02' }, { ...base, id: 'b' }]), skills);
-    const textbooks = questTextbooks(quests.values(), path.join(CONTENT_DIR, 'curriculum'));
-    expect(Object.fromEntries(textbooks)).toEqual({ a: { book: 'Tiếng Việt 2, tập một', lesson: 'Bài 2. Ngày hôm qua đâu rồi?', pages: [13, 16] } });
-    const ghost = loadQuests(questDir([{ ...base, id: 'a', lesson: 'tv2-t1-b99' }]), skills);
-    expect(() => questTextbooks(ghost.values(), path.join(CONTENT_DIR, 'curriculum'))).toThrow('quest a plays unknown textbook lesson tv2-t1-b99');
   });
 });

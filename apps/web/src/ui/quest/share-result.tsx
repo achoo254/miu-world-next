@@ -1,25 +1,23 @@
 // NEW SCREEN part (Master Plan §6, after a quest): on the reward screen, under the stars, a quiet second button to show
-// the result off. What goes out is the link of the lesson's public page (the home page for a quest with no lesson),
+// the result off. What goes out is the link of the topic's public page (the home page for a quest with no topic),
 // never a name or a number of hers; "kèm lời mời" adds a fresh invite link's code to it, so whoever opens it and signs
 // in becomes her friend. Copying into the vở stays the screen's first job: this button comes after it and does not
 // take its place.
 import { useState } from 'react';
-import type { QuestTextbook } from '@miu/schema/game';
+import type { QuestTopic } from '@miu/schema/game';
 import { errorMessage } from '../api-client';
 import { createInvite, revokeInvite } from '../friends/invite-api';
 import { pairOf } from '../i18n/i18n';
 import { T } from '../i18n/use-t';
 import { buttonClass } from '../kit/button';
 import { shareLink } from '../share/share-actions';
-import { lessonPageOf } from '../share/lesson-link';
 import { webOrigin } from '../../platform/endpoints';
 import { resultLink } from '../share/share-links';
 
 type Notice = 'shared' | 'copied' | 'failed';
 const NOTICE_TEXT = { shared: 'shareResult.shared', copied: 'shareResult.copied', failed: 'shareResult.failed' } as const;
 
-export function ShareResult({ textbook }: { textbook: QuestTextbook | undefined }) {
-  const page = lessonPageOf(textbook);
+export function ShareResult({ topic }: { topic: QuestTopic | undefined }) {
   const [withInvite, setWithInvite] = useState(false);
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<Notice | null>(null);
@@ -32,8 +30,8 @@ export function ShareResult({ textbook }: { textbook: QuestTextbook | undefined 
     try {
       const invite = withInvite ? await createInvite() : null;
       const outcome = await shareLink(
-        { title: pairOf('shareResult.title').vi, text: pairOf('shareResult.text').vi, url: resultLink(webOrigin(), page?.slug ?? null, invite?.code) },
-        { contentType: 'result', ...(page ? { lessonId: page.lessonId } : {}) },
+        { title: pairOf('shareResult.title').vi, text: pairOf('shareResult.text').vi, url: resultLink(webOrigin(), topic ?? null, invite?.code) },
+        { contentType: 'result', ...(topic ? { topicId: topic.id } : {}) },
       );
       // A link nobody got must not keep one of her few live invites.
       if (invite && (outcome === 'cancelled' || outcome === 'failed')) await revokeInvite(invite.id).catch(() => undefined);

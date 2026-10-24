@@ -3,7 +3,7 @@
 // is emitted by the server. Every parameter is checked against a pattern or a list here, so no free text (a name, an
 // email, an account id, a code from a link) can reach Google; the page address is rebuilt from a fixed route table.
 import { z } from 'zod';
-import { LESSON_PAGES_ROOT, SUBJECT_SLUGS } from './lesson-pages';
+import { TOPIC_PAGES_ROOT, TOPIC_SUBJECTS } from './topic-pages';
 
 /** Events the web app may send. */
 export const WEB_EVENTS = ['page_view', 'share'] as const;
@@ -65,22 +65,22 @@ export const WebEventBody = z.object({
   referrer: z.string().max(300).optional(),
   method: z.string().max(40).optional(),
   content_type: z.string().max(40).optional(),
-  lesson_id: z.string().max(80).optional(),
+  topic_id: z.string().max(80).optional(),
 });
 export type WebEventBody = z.infer<typeof WebEventBody>;
 
-/** What the server knows exists: page addresses and lesson ids are checked against it. */
+/** What the server knows exists: page addresses and topic ids are checked against it. */
 export interface AnalyticsCatalog {
   /** Region ids (`/region/:id`). */
   regions: ReadonlySet<string>;
-  /** Textbook lesson ids a quest plays (`lesson_id`). */
-  lessons: ReadonlySet<string>;
-  /** Slugs of the lesson pages (`/bai/<slug>`, see lesson-pages.ts). */
-  lessonSlugs: ReadonlySet<string>;
+  /** Ids of the topics an active quest teaches (`topic_id`). */
+  topics: ReadonlySet<string>;
+  /** The topic pages as `<subject>/<topic>` (`/hoc/<subject>/<topic>`, see topic-pages.ts). */
+  topicPages: ReadonlySet<string>;
 }
 
 /** Paths sent to GA as they are. */
-const FIXED_PAGES = new Set(['/', '/login', '/play', '/home', '/privacy', '/moi', ...SUBJECT_SLUGS.map((slug) => `${LESSON_PAGES_ROOT}/${slug}`)]);
+const FIXED_PAGES = new Set(['/', '/login', '/play', '/home', '/privacy', '/moi', ...TOPIC_SUBJECTS.map((subject) => `${TOPIC_PAGES_ROOT}/${subject.id}`)]);
 /** An invite link `/moi/<code>`: counted as `/moi`, the code never leaves the server. */
 const INVITE_PAGE = /^\/moi\/[A-Za-z0-9_-]{1,64}$/;
 
@@ -91,10 +91,10 @@ export function normalizePagePath(path: string, catalog: AnalyticsCatalog): stri
   const trimmed = bare.length > 1 && bare.endsWith('/') ? bare.slice(0, -1) : bare;
   if (FIXED_PAGES.has(trimmed)) return trimmed;
   if (INVITE_PAGE.test(trimmed)) return '/moi';
-  const [, section, id, ...rest] = trimmed.split('/');
+  const [, section, id, topic, ...rest] = trimmed.split('/');
   if (rest.length > 0 || !id) return null;
-  if (section === 'region' && catalog.regions.has(id)) return trimmed;
-  if (section === LESSON_PAGES_ROOT.slice(1) && catalog.lessonSlugs.has(id)) return trimmed;
+  if (section === 'region' && topic === undefined && catalog.regions.has(id)) return trimmed;
+  if (section === TOPIC_PAGES_ROOT.slice(1) && topic !== undefined && catalog.topicPages.has(`${id}/${topic}`)) return trimmed;
   return null;
 }
 
@@ -130,7 +130,7 @@ const isOneOf = <T extends string>(list: readonly T[], value: string | undefined
 /**
  * The GA event for a web request, built only from checked values. A missing or malformed required value (event name,
  * ids, share method and kind) makes it `invalid`; a page outside the route table drops the whole event
- * (`unknown-page`); a malformed optional value (campaign labels, referrer, lesson) is left out. `origin` is the
+ * (`unknown-page`); a malformed optional value (campaign labels, referrer, topic) is left out. `origin` is the
  * request's allowed Origin, the base of `page_location`.
  */
 export function sanitizeWebEvent(body: WebEventBody, origin: string, catalog: AnalyticsCatalog): SanitizedWebEvent {
@@ -160,7 +160,7 @@ export function sanitizeWebEvent(body: WebEventBody, origin: string, catalog: An
     if (!isOneOf(SHARE_METHODS, body.method) || !isOneOf(SHARE_CONTENT_TYPES, body.content_type)) return invalid;
     params.method = body.method;
     params.content_type = body.content_type;
-    if (body.lesson_id !== undefined && catalog.lessons.has(body.lesson_id)) params.lesson_id = body.lesson_id;
+    if (body.topic_id !== undefined && catalog.topics.has(body.topic_id)) params.topic_id = body.topic_id;
   }
   return { ok: true, hit: { clientId: body.client_id, event: { name: body.name, params } } };
 }

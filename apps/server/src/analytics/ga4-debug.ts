@@ -31,7 +31,7 @@ const sessions = new AnalyticsSessions();
 sessions.remember('debug', ids, { parentId: 'debug', childId: 'debug' });
 const events = new ServerEvents({ sink: { send: (hit) => hits.push({ ...hit, clientId: ids.clientId }) }, sessions, labels: questLabels(content) });
 events.signUp('debug', 'idp');
-const quest = [...content.quests.values()].find((q) => q.status === 'active' && q.lesson);
+const quest = [...content.quests.values()].find((q) => q.status === 'active' && q.topic);
 if (quest?.status === 'active') events.questFinished('debug', quest, true);
 events.ccuPeak(3);
 

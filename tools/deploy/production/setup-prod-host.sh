@@ -61,6 +61,8 @@ systemctl enable -q --now miu-backup.timer
 
 # The server block goes live only if the whole nginx config still tests clean; otherwise it is removed
 # so a mistake here can never take the other sites on .65 down.
+# The former lesson pages' redirect table, included by miu.conf (outside conf.d, so nginx reads it only there).
+install -m 644 "$HERE/nginx-bai-redirects.conf" /etc/nginx/miu-bai-redirects.conf
 install -m 644 "$HERE/nginx-prod.conf" /etc/nginx/conf.d/miu.conf.new
 mv /etc/nginx/conf.d/miu.conf.new /etc/nginx/conf.d/miu.conf
 if nginx -t -q; then

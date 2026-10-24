@@ -1,5 +1,6 @@
 /* Phiếu viết: the list in the parent area, and an A4 sheet that prints without the app around it. */
 .worksheet-books { display: grid; gap: var(--space-md); }
+.worksheet-topic { margin: var(--space-sm) 0 var(--space-xs); font-size: var(--text-lg); }
 .worksheet-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-xs); }
 .worksheet-rows a {
   display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm);

@@ -84,7 +84,7 @@ export function questForRegion(quests: readonly QuestSummary[], region: string):
 
 /**
  * Chapters of a region in order, each with its quests in catalogue order. A chapter can hold
- * several quests (textbook content); the forest has one per chapter today.
+ * several quests (learning content); the forest has one per chapter today.
  */
 export function chapters(quests: readonly QuestSummary[], region: string): Array<{ chapter: number; quests: QuestSummary[] }> {
   const byChapter = new Map<number, QuestSummary[]>();

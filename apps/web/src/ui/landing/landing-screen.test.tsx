@@ -28,15 +28,15 @@ afterEach(() => {
 });
 
 describe('the introduction at /', () => {
-  it('greets a visitor who is not signed in, with a way to play and to the lesson pages', async () => {
+  it('greets a visitor who is not signed in, with a way to play and to the topic pages', async () => {
     stubSession(401, { error: 'unauthenticated' });
     renderAt('/');
     expect(await screen.findByRole('heading', { level: 1, name: viLocale['landing.title'] })).toBeTruthy();
     expect(screen.getByText(viLocale['landing.benefitFree'])).toBeTruthy();
     expect(screen.getByRole('link', { name: 'Chơi ngay' }).getAttribute('href')).toBe('/login');
-    // The lesson pages are static files: plain links with a trailing slash, not routes of the app.
-    expect(screen.getByRole('link', { name: 'Các bài Toán 2' }).getAttribute('href')).toBe('/bai/toan-2/');
-    expect(screen.getByRole('link', { name: 'Các bài Tiếng Việt 2' }).getAttribute('href')).toBe('/bai/tieng-viet-2/');
+    // The topic pages are static files: plain links with a trailing slash, not routes of the app.
+    expect(screen.getByRole('link', { name: 'Các chủ đề Toán' }).getAttribute('href')).toBe('/hoc/toan/');
+    expect(screen.getByRole('link', { name: 'Các chủ đề Tiếng Việt' }).getAttribute('href')).toBe('/hoc/tieng-viet/');
     expect(screen.getByRole('img', { name: viLocale['landing.imageAlt'] })).toBeTruthy();
     expect(screen.queryByRole('heading', { name: 'Đăng nhập' })).toBeNull();
   });

@@ -6,7 +6,7 @@ import { T } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { playPath, say, stepProgress, type PlayerData } from '../player/player-data';
-import { TextbookRef, textbookOf } from '../player/textbook-ref';
+import { TopicLabel, topicOf } from '../player/topic-label';
 import { Say, summaryOf, titleOf } from '../quest/content-text';
 
 const MAX_ROWS = 3;
@@ -24,13 +24,13 @@ function QuestRow({ summary, first, data }: { summary: QuestSummary; first: bool
   const { quest } = summary;
   const fill = (line: string): string => say(line, data.character);
   const { done, total } = stepProgress(summary);
-  const textbook = textbookOf(summary);
+  const topic = topicOf(summary);
   return (
     <li className={`today-row${first ? ' today-row--current' : ''}`} data-id={`home-today-quest-${quest.id}`}>
       <Link to={playPath(summary)} className="today-row-link">
         <Icon name={first ? 'glowingStar' : 'star'} size={32} />
         <span className="today-row-text">
-          {textbook ? <TextbookRef textbook={textbook} dataId={`home-today-textbook-${quest.id}`} /> : null}
+          {topic ? <TopicLabel topic={topic} dataId={`home-today-topic-${quest.id}`} /> : null}
           <span className="today-row-title" data-id={first ? 'home-today-quest' : undefined}>
             <Say text={titleOf(quest)} fill={fill} />
           </span>

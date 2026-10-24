@@ -1,7 +1,7 @@
 // `pnpm seo:lastmod`: moves the sitemap's `lastmod` days on. apps/web/seo-lastmod.json keeps, per public page, the
 // content hash and the day that hash was first seen; this records today (Asia/Saigon) for every page whose content
 // changed since and for pages that are new, drops pages that are gone, and leaves the rest alone. Run it after
-// content that a page shows changes (a lesson's quests, the landing words, the preview cards) and commit the file; the
+// content that a page shows changes (a topic's quests, the landing words, the preview cards) and commit the file; the
 // release build then dates those pages, and any it could not date it lists without a `lastmod`.
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';

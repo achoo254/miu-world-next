@@ -62,7 +62,7 @@ export interface AppDeps {
   db: Db;
   /** Defaults to the repo `content/` directory. */
   content?: ContentCatalog;
-  /** Printable worksheets by lesson id; defaults to the ones built from `content/curriculum`. */
+  /** Printable worksheets by quest id; defaults to the ones the content's quests hand out. */
   worksheets?: ReadonlyMap<string, Worksheet>;
   /** Injectable for tests (session expiry, parent-gate window). */
   clock?: () => Date;
@@ -116,7 +116,7 @@ const errorHandler: ErrorRequestHandler = (err: unknown, _req, res, _next) => {
 };
 
 /** Builds the Express app without listening, so tests can drive it through supertest. */
-export function createApp({ config, db, content = loadContentCatalog(), worksheets = loadWorksheets(), clock = () => new Date(), fetchImpl = fetch, turnFetch, characterEvents, playerEvents, online, partyQuests, analytics = { sink: DROP_EVENTS, sessions: new AnalyticsSessions() }, wsTickets, onlineSwitch = new OnlineSwitch(config.onlineMode) }: AppDeps): express.Express {
+export function createApp({ config, db, content = loadContentCatalog(), worksheets = loadWorksheets(content), clock = () => new Date(), fetchImpl = fetch, turnFetch, characterEvents, playerEvents, online, partyQuests, analytics = { sink: DROP_EVENTS, sessions: new AnalyticsSessions() }, wsTickets, onlineSwitch = new OnlineSwitch(config.onlineMode) }: AppDeps): express.Express {
   const app = express();
   app.disable('x-powered-by');
   // The API listens on loopback only and is reached through the web dev/preview proxy (or a reverse

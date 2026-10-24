@@ -13,8 +13,8 @@ import {
 
 const CATALOG: AnalyticsCatalog = {
   regions: new Set(['khu-rung-bi-mat', 'trung-tam']),
-  lessons: new Set(['toan2-t1-b01']),
-  lessonSlugs: new Set(['toan-2-bai-1-on-tap-cac-so-den-100']),
+  topics: new Set(['so-den-100']),
+  topicPages: new Set(['toan/so-den-100']),
 };
 const ORIGIN = 'https://miu.example';
 const CLIENT = '1234567890.1760000000';
@@ -39,7 +39,7 @@ describe('analytics ids header', () => {
 
 describe('page paths', () => {
   it('keeps the pages of the route table', () => {
-    for (const page of ['/', '/login', '/play', '/home', '/privacy', '/moi', '/bai/toan-2', '/bai/tieng-viet-2']) expect(normalizePagePath(page, CATALOG)).toBe(page);
+    for (const page of ['/', '/login', '/play', '/home', '/privacy', '/moi', '/hoc/toan', '/hoc/tieng-viet']) expect(normalizePagePath(page, CATALOG)).toBe(page);
   });
 
   it('drops query, hash and a trailing slash', () => {
@@ -48,12 +48,16 @@ describe('page paths', () => {
     expect(normalizePagePath('/home/', CATALOG)).toBe('/home');
   });
 
-  it('keeps a region or a lesson page only when it exists', () => {
+  it('keeps a region or a topic page only when it exists', () => {
     expect(normalizePagePath('/region/trung-tam', CATALOG)).toBe('/region/trung-tam');
     expect(normalizePagePath('/region/nowhere', CATALOG)).toBeNull();
-    expect(normalizePagePath('/bai/toan-2-bai-1-on-tap-cac-so-den-100/', CATALOG)).toBe('/bai/toan-2-bai-1-on-tap-cac-so-den-100');
-    expect(normalizePagePath('/bai/toan2-t1-b01', CATALOG)).toBeNull(); // a lesson id is not a page name
-    expect(normalizePagePath('/bai/made-up', CATALOG)).toBeNull();
+    expect(normalizePagePath('/hoc/toan/so-den-100/', CATALOG)).toBe('/hoc/toan/so-den-100');
+    expect(normalizePagePath('/hoc/tieng-viet/so-den-100', CATALOG)).toBeNull(); // a topic lives under its own subject
+    expect(normalizePagePath('/hoc/toan/made-up', CATALOG)).toBeNull();
+    expect(normalizePagePath('/hoc/toan/so-den-100/x', CATALOG)).toBeNull();
+    expect(normalizePagePath('/region/khu-rung-bi-mat/x', CATALOG)).toBeNull();
+    // The former lesson pages answer 301 in nginx; they are not pages of their own any more.
+    expect(normalizePagePath('/bai/toan-2', CATALOG)).toBeNull();
     expect(normalizePagePath('/region/trung-tam/more', CATALOG)).toBeNull();
   });
 
@@ -63,7 +67,7 @@ describe('page paths', () => {
   });
 
   it('refuses any other page', () => {
-    for (const page of ['/parent', '/consent', '/friends', '/region', '/bai', 'play', '//play', 'https://evil.example/play', '/play/x', '']) {
+    for (const page of ['/parent', '/consent', '/friends', '/region', '/hoc', '/bai', 'play', '//play', 'https://evil.example/play', '/play/x', '']) {
       expect(normalizePagePath(page, CATALOG)).toBeNull();
     }
   });
@@ -123,17 +127,17 @@ describe('web events', () => {
     for (const session_id of [0, -1, 1.5, 10_000_000_000, Number.NaN]) expect(sanitizeWebEvent(pageView({ session_id }), ORIGIN, CATALOG).ok).toBe(false);
   });
 
-  it('turns a share into a GA event with its method, kind and a known lesson', () => {
-    const result = sanitizeWebEvent(share({ lesson_id: 'toan2-t1-b01', path: '/play' }), ORIGIN, CATALOG);
+  it('turns a share into a GA event with its method, kind and a known topic', () => {
+    const result = sanitizeWebEvent(share({ topic_id: 'so-den-100', path: '/play' }), ORIGIN, CATALOG);
     expect(result.ok && result.hit.event).toEqual({
       name: 'share',
-      params: { session_id: SESSION, engagement_time_msec: 1, page_location: `${ORIGIN}/play`, method: 'copy-link', content_type: 'result', lesson_id: 'toan2-t1-b01' },
+      params: { session_id: SESSION, engagement_time_msec: 1, page_location: `${ORIGIN}/play`, method: 'copy-link', content_type: 'result', topic_id: 'so-den-100' },
     });
   });
 
-  it('leaves out an unknown lesson, and refuses a share of unknown method or kind', () => {
-    const unknownLesson = sanitizeWebEvent(share({ lesson_id: 'made-up' }), ORIGIN, CATALOG);
-    expect(unknownLesson.ok && unknownLesson.hit.event.params.lesson_id).toBeUndefined();
+  it('leaves out an unknown topic, and refuses a share of unknown method or kind', () => {
+    const unknownTopic = sanitizeWebEvent(share({ topic_id: 'made-up' }), ORIGIN, CATALOG);
+    expect(unknownTopic.ok && unknownTopic.hit.event.params.topic_id).toBeUndefined();
     expect(sanitizeWebEvent(share({ method: 'email' }), ORIGIN, CATALOG).ok).toBe(false);
     expect(sanitizeWebEvent(share({ method: undefined }), ORIGIN, CATALOG).ok).toBe(false);
     expect(sanitizeWebEvent(share({ content_type: 'profile' }), ORIGIN, CATALOG).ok).toBe(false);

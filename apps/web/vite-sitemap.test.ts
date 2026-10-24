@@ -6,12 +6,12 @@ import { LASTMOD_LEDGER, lastmodOf, readLedger, robotsTxt, sitemap, sitemapXml, 
 
 const PAGES = [
   { path: '/', hash: 'aaaaaaaaaaaa' },
-  { path: '/bai/toan-2/', hash: 'bbbbbbbbbbbb' },
-  { path: '/bai/toan-2-bai-1-on-tap-cac-so-den-100/', hash: 'cccccccccccc' },
+  { path: '/hoc/toan/', hash: 'bbbbbbbbbbbb' },
+  { path: '/hoc/toan/so-den-100/', hash: 'cccccccccccc' },
 ];
 const LEDGER: LastmodLedger = {
   '/': { hash: 'aaaaaaaaaaaa', date: '2026-10-12' },
-  '/bai/toan-2/': { hash: 'old000000000', date: '2026-10-01' },
+  '/hoc/toan/': { hash: 'old000000000', date: '2026-10-01' },
 };
 
 let dir: string | null = null;
@@ -41,8 +41,8 @@ describe('sitemap.xml', () => {
     expect(xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')).toBe(true);
     expect([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])).toEqual([
       'https://miu.hoandat.com/',
-      'https://miu.hoandat.com/bai/toan-2/',
-      'https://miu.hoandat.com/bai/toan-2-bai-1-on-tap-cac-so-den-100/',
+      'https://miu.hoandat.com/hoc/toan/',
+      'https://miu.hoandat.com/hoc/toan/so-den-100/',
     ]);
     // Only the page whose hash is the one on record has a date: the others changed since, or are new.
     expect([...xml.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1])).toEqual(['2026-10-12']);
@@ -65,8 +65,8 @@ describe('the lastmod ledger', () => {
     const updated = updateLedger({ ...LEDGER, '/gone/': { hash: 'x', date: '2026-09-01' } }, PAGES, '2026-10-13');
     expect(updated).toEqual({
       '/': { hash: 'aaaaaaaaaaaa', date: '2026-10-12' },
-      '/bai/toan-2/': { hash: 'bbbbbbbbbbbb', date: '2026-10-13' },
-      '/bai/toan-2-bai-1-on-tap-cac-so-den-100/': { hash: 'cccccccccccc', date: '2026-10-13' },
+      '/hoc/toan/': { hash: 'bbbbbbbbbbbb', date: '2026-10-13' },
+      '/hoc/toan/so-den-100/': { hash: 'cccccccccccc', date: '2026-10-13' },
     });
     expect(updateLedger(updated, PAGES, '2026-10-20')).toEqual(updated);
   });

@@ -127,8 +127,8 @@ describe('reporting', () => {
 
   it('posts a share with its method and kind', () => {
     const calls = stubFetch();
-    trackShare({ method: 'web-share', contentType: 'result', lessonId: 'toan2-t1-b01' }, T0);
-    expect(bodyOf(calls[0])).toMatchObject({ name: 'share', method: 'web-share', content_type: 'result', lesson_id: 'toan2-t1-b01' });
+    trackShare({ method: 'web-share', contentType: 'result', topicId: 'so-den-100' }, T0);
+    expect(bodyOf(calls[0])).toMatchObject({ name: 'share', method: 'web-share', content_type: 'result', topic_id: 'so-den-100' });
   });
 
   it('never throws when the report fails', async () => {

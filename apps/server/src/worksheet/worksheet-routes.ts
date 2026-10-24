@@ -1,6 +1,5 @@
 import { Router } from 'express';
 import { ContentId } from '@miu/schema/content';
-import { BookId } from '@miu/schema/curriculum';
 import { Worksheet, WorksheetListResponse } from '@miu/schema/worksheet';
 import { requireParent, requireParentGate } from '../auth/auth-context';
 import { HttpError } from '../http-error';
@@ -16,10 +15,10 @@ export function worksheetRoutes({ worksheets, clock }: WorksheetRouteDeps): Rout
   const gate = requireParentGate(clock);
 
   router.get('/worksheets', requireParent, gate, (req, res) => {
-    const book = req.query.book === undefined ? undefined : BookId.safeParse(req.query.book);
-    if (book && !book.success) throw new HttpError(400, 'invalid-book');
+    const subject = req.query.subject === undefined ? undefined : ContentId.safeParse(req.query.subject);
+    if (subject && !subject.success) throw new HttpError(400, 'invalid-subject');
     const list = [...worksheets.values()]
-      .filter((w) => !book || w.bookId === book.data)
+      .filter((w) => !subject || w.subject.id === subject.data)
       .map(({ blocks, ...summary }) => ({ ...summary, blockCount: blocks.length }));
     res.json(WorksheetListResponse.parse({ worksheets: list }));
   });
@@ -31,8 +30,8 @@ export function worksheetRoutes({ worksheets, clock }: WorksheetRouteDeps): Rout
     throw new HttpError(404, 'font-not-found');
   });
 
-  router.get('/worksheets/:lessonId', requireParent, gate, (req, res) => {
-    const id = ContentId.safeParse(req.params.lessonId);
+  router.get('/worksheets/:id', requireParent, gate, (req, res) => {
+    const id = ContentId.safeParse(req.params.id);
     const sheet = id.success ? worksheets.get(id.data) : undefined;
     if (!sheet) throw new HttpError(404, 'worksheet-not-found');
     res.json(Worksheet.parse(sheet));

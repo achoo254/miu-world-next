@@ -230,7 +230,7 @@ export function readPendingQuests(file: string = PENDING_FILE): Set<string> {
 export function checkRepoTextbookCopy(
   quests: readonly QuestDefinition[],
   topics: readonly Topic[],
-  { year = new Date().getFullYear(), env = process.env }: { year?: number; env?: NodeJS.ProcessEnv } = {},
+  { year = new Date().getFullYear(), env = process.env, pending = readPendingQuests() }: { year?: number; env?: NodeJS.ProcessEnv; pending?: ReadonlySet<string> } = {},
 ): { issues: string[]; warnings: string[] } {
   const key = fingerprintKey(env);
   if (!key) {
@@ -239,6 +239,6 @@ export function checkRepoTextbookCopy(
   }
   const common = commonPhraseShingles(JSON.parse(readFileSync(COMMON_PHRASES_FILE, 'utf8')), key);
   const traditional = traditionalPassages(JSON.parse(readFileSync(TRADITIONAL_PASSAGES_FILE, 'utf8')));
-  const context: CopyContext = { key, fingerprints: readFingerprints(), allowed: common.shingles, pending: readPendingQuests(), traditional: traditional.passages, year };
+  const context: CopyContext = { key, fingerprints: readFingerprints(), allowed: common.shingles, pending, traditional: traditional.passages, year };
   return { issues: [...common.issues, ...traditional.issues, ...checkTopicCopy(topics, context), ...checkTextbookCopy(quests, context)], warnings: [] };
 }

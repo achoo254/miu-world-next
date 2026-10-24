@@ -51,7 +51,7 @@ describe('the weekly card', () => {
     const texts = weeklyCardTexts({ minutes: 95, lessonsDone: 12, lessonsTotal: 70 }, 'miu.hoandat.com');
     const { painter, texts: drawn } = recorder();
     paintWeeklyCard(painter, COLOURS, texts);
-    expect(drawn).toEqual(['Miu World', 'Một tuần vừa chơi vừa học', '95', 'phút chơi tuần này', '12/70', 'bài đã xong', 'Học SGK lớp 2 qua trò chơi 3D', 'miu.hoandat.com']);
+    expect(drawn).toEqual(['Miu World', 'Một tuần vừa chơi vừa học', '95', 'phút chơi tuần này', '12/70', 'bài đã xong', 'Học Toán và Tiếng Việt qua trò chơi 3D', 'miu.hoandat.com']);
   });
 
   it('uses the colours it is given and the game’s fonts, and shrinks a line that does not fit', () => {

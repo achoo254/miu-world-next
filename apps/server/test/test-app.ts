@@ -7,7 +7,8 @@ import { createApp, type AppDeps } from '../src/app';
 import { loadContentCatalog } from '../src/content/content-catalog';
 import { loadConfig, type ServerConfig } from '../src/config';
 import { createTestDb, type Db, type DbHandle } from '../src/db/client';
-import { loadWorksheets } from '../src/worksheet/worksheet-builder';
+import { buildWorksheets, type WorksheetSource } from '../src/worksheet/worksheet-builder';
+import { readCurriculum } from '../src/worksheet/curriculum-books';
 
 export const ORIGIN = 'http://localhost:5173';
 /** Low scrypt cost keeps the suite fast; production cost has its own test in secret-hashing.test.ts. */
@@ -35,7 +36,17 @@ export const EVENT_CONTENT = loadContentCatalog({
   eventsDir: fileURLToPath(new URL('./fixtures/events', import.meta.url)),
 });
 /** Worksheets from a small fixture inventory, for the same reason. */
-export const FIXTURE_WORKSHEETS = loadWorksheets(fileURLToPath(new URL('./fixtures/curriculum', import.meta.url)));
+const TV = { id: 'tieng-viet', name: 'Tiếng Việt' };
+const MATH = { id: 'toan', name: 'Toán' };
+/** One sheet written for its quest and three still built from the fixture inventory. */
+export const FIXTURE_WORKSHEET_SOURCES: WorksheetSource[] = [
+  { id: 'quest-viet-chu-a', title: 'Phiếu chữ hoa A', subject: TV, topic: { id: 'viet', title: 'Viết chữ hoa và viết đoạn văn' }, parts: [{ sheet: { title: 'Phiếu chữ hoa A', blocks: [{ kind: 'letter', prompt: 'Tô và viết chữ hoa A', letters: ['A'] }] } }, { sheet: { title: 'Phần hai', blocks: [{ kind: 'paragraph-prompt', prompt: 'Viết 2 câu về ngày hè.', hints: ['Hè em đi đâu?'], lines: 4 }] } }] },
+  { id: 'quest-hom-qua', title: 'Tờ lịch của hôm qua', subject: TV, topic: { id: 'bang-chu-cai', title: 'Bảng chữ cái và tên riêng' }, parts: [{ lessonId: 'tv2-t1-b02' }] },
+  { id: 'quest-bi-bong', title: 'Cầu vồng sau mưa', subject: TV, topic: { id: 'doc-truyen', title: 'Đọc truyện và kể chuyện' }, parts: [{ lessonId: 'tv2-t1-b03' }] },
+  { id: 'quest-can-gao', title: 'Cân túi gạo', subject: MATH, topic: { id: 'khoi-luong-dung-tich', title: 'Ki-lô-gam và lít' }, parts: [{ lessonId: 'toan2-t1-b17' }, { lessonId: 'toan2-t1-b17' }] },
+  { id: 'quest-khong-phieu', title: 'Không có gì để viết', subject: MATH, topic: { id: 'khoi-luong-dung-tich', title: 'Ki-lô-gam và lít' }, parts: [{ lessonId: 'toan2-t1-b18' }] },
+];
+export const FIXTURE_WORKSHEETS = buildWorksheets(FIXTURE_WORKSHEET_SOURCES, readCurriculum(fileURLToPath(new URL('./fixtures/curriculum', import.meta.url))).books);
 
 export type Agent = ReturnType<typeof request.agent>;
 

@@ -1,19 +1,18 @@
 /// <reference lib="dom" />
 // Draws the preview pictures a pasted link shows (Open Graph / Twitter cards, 1200 × 630): one for the whole game and
-// one per lesson page, each from an HTML page of its own (the Miu logo, the island overview the Home screen shows,
+// one per topic page, each from an HTML page of its own (the Miu logo, the island overview the Home screen shows,
 // the Baloo 2 font pack, the colours of the UI tokens) photographed by headless Chromium, like render-preview.ts.
-// Output: assets/generated/share-cards/<name>.png, named by `packages/schema/src/share-cards.ts`; the lesson cards
-// follow the lesson pages (the books' tables of contents and the quests that play each lesson). Re-run
-// `pnpm assets:cards` after a lesson's title or the set of lessons with a quest changes; the same input gives the
-// same bytes on the same machine (run twice and compare the hashes).
+// Output: assets/generated/share-cards/<name>.png, named by `packages/schema/src/share-cards.ts`; the topic cards
+// follow the topic pages (the topics an active quest teaches). Re-run `pnpm assets:cards` after a topic's title or
+// the set of topics with a quest changes; the same input gives the same bytes on the same machine (run twice and
+// compare the hashes).
 import { mkdir, readFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { chromium, type Page } from '@playwright/test';
-import { splitLessonTitle } from '../../packages/schema/src/lesson-pages';
-import { GENERAL_SHARE_CARD, SHARE_CARD_DIR, SHARE_CARD_SIZE, lessonShareCard } from '../../packages/schema/src/share-cards';
+import { GENERAL_SHARE_CARD, SHARE_CARD_DIR, SHARE_CARD_SIZE, topicShareCard } from '../../packages/schema/src/share-cards';
 import { pairOf, type TextKey } from '../../apps/web/src/ui/i18n/i18n';
-import { readLessonPageData } from '../../apps/web/lesson-page-data';
+import { readTopicPageData } from '../../apps/web/lesson-page-data';
 import { ASSETS_DIR, REPO_ROOT } from './asset-lib';
 import { writeManifest } from './build-manifest';
 
@@ -97,20 +96,19 @@ const generalCard = (look: Look): string =>
      <div class="general-text"><p class="tagline">${escapeHtml(text('shareCard.tagline'))}</p><p class="free">${escapeHtml(text('shareCard.free'))}</p></div>`,
   );
 
-/** A lesson's card: its number and name, the book, and the logo. */
-function lessonCard(look: Look, title: string, subject: string): string {
-  const { label, name } = splitLessonTitle(title);
-  // A long name steps down a size so it keeps clear of the logo and to four lines.
-  const size = name.length > 46 ? 56 : name.length > 30 ? 68 : 84;
+/** A topic's card: its subject and title, and the logo. */
+function topicCard(look: Look, title: string, subject: string): string {
+  // A long title steps down a size so it keeps clear of the logo and to four lines.
+  const size = title.length > 46 ? 56 : title.length > 30 ? 68 : 84;
   return page(
     look,
     `${brand(look)}
      <div style="display:flex;flex-direction:column;gap:20px;align-items:flex-start">
-       ${label ? `<span class="pill">${escapeHtml(label)}</span>` : ''}
-       <p class="name" style="font-size:${size}px">${escapeHtml(name)}</p>
+       <span class="pill">${escapeHtml(subject)}</span>
+       <p class="name" style="font-size:${size}px">${escapeHtml(title)}</p>
      </div>
      <div style="display:flex;flex-direction:column;gap:6px">
-       <p class="line">${escapeHtml(text('shareCard.lessonLine', { subject }))}</p>
+       <p class="line">${escapeHtml(text('shareCard.topicLine'))}</p>
        <p class="play">${escapeHtml(text('shareCard.playLine'))}</p>
      </div>
      <img class="lesson-logo" src="${look.logo}" alt="">`,
@@ -134,17 +132,17 @@ export const shoot = (tab: Page, html: string, file: string, size: { width: numb
 
 async function main(): Promise<void> {
   const look = await loadLook();
-  const lessons = readLessonPageData(path.join(REPO_ROOT, 'content'));
+  const topics = readTopicPageData(path.join(REPO_ROOT, 'content'));
   await rm(OUT_DIR, { recursive: true, force: true });
   const browser = await chromium.launch();
   try {
     const tab = await browser.newPage({ viewport: SHARE_CARD_SIZE, deviceScaleFactor: 1 });
     await shoot(tab, generalCard(look), GENERAL_SHARE_CARD);
-    for (const lesson of lessons) await shoot(tab, lessonCard(look, lesson.title, lesson.subject.name), lessonShareCard(lesson.slug));
+    for (const { topic, subject } of topics) await shoot(tab, topicCard(look, topic.title, subject.name), topicShareCard(topic.id));
   } finally {
     await browser.close();
   }
-  console.log(`render-share-cards: ${lessons.length + 1} images in ${path.relative(process.cwd(), OUT_DIR)}`);
+  console.log(`render-share-cards: ${topics.length + 1} images in ${path.relative(process.cwd(), OUT_DIR)}`);
   await writeManifest();
 }
 

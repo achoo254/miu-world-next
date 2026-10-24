@@ -1,7 +1,7 @@
 // `pnpm security:dist`: after `pnpm --filter @miu/web build`, checks that no quest answer reached the
 // web bundle. Answers and support layers live only on the server (content/quests is read there); a
 // stray import from the web app would ship them to every child's browser. It also checks the static
-// lesson pages (dist/bai/): each carries the game's CSP and runs no inline script.
+// topic pages (dist/hoc/): each carries the game's CSP, runs no inline script and names no book, grade, lesson or page.
 // `pnpm security:dist --native` checks the iPhone/Android app build (apps/web/dist-native, `vite build --mode native`)
 // instead: no quest answer either, and none of the game's assets packed inside but the fonts (the app reads the rest
 // from the server).
@@ -10,9 +10,9 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { CONTENT_SECURITY_POLICY } from '../../apps/web/vite.config';
 import { REPO_ROOT } from '../assets/asset-lib';
+import { htmlText, wordingIssues } from '../content/no-book-or-grade-wording';
 
 const QUEST_DIR = path.join(REPO_ROOT, 'content/quests');
-const CURRICULUM_DIR = path.join(REPO_ROOT, 'content/curriculum');
 const DIST_DIR = path.join(REPO_ROOT, 'apps/web/dist');
 const NATIVE_DIST_DIR = path.join(REPO_ROOT, 'apps/web/dist-native');
 /**
@@ -27,25 +27,6 @@ function files(dir: string): string[] {
   return readdirSync(dir).flatMap((name) => {
     const full = path.join(dir, name);
     return statSync(full).isDirectory() ? files(full) : [full];
-  });
-}
-
-interface BookFile {
-  title?: unknown;
-  toc?: Array<{ title?: unknown; lessons?: Array<{ title?: unknown }> }>;
-}
-
-/**
- * The books' own titles for their lessons and topics. The lesson pages print them by design, so a quest whose answer
- * is one of them (the name of the poem a lesson reads) gives nothing away that the page does not already say.
- */
-export function publicBookTitles(curriculumDir = CURRICULUM_DIR): string[] {
-  if (!existsSync(curriculumDir)) return [];
-  return readdirSync(curriculumDir).flatMap((book) => {
-    const file = path.join(curriculumDir, book, 'book.json');
-    if (!existsSync(file)) return [];
-    const { title, toc = [] } = JSON.parse(readFileSync(file, 'utf8')) as BookFile;
-    return [title, ...toc.flatMap((unit) => [unit.title, ...(unit.lessons ?? []).map((lesson) => lesson.title)])].filter((t): t is string => typeof t === 'string');
   });
 }
 
@@ -88,11 +69,12 @@ export function leaksIn(text: string, secrets: readonly string[]): string[] {
 const decodeAttribute = (value: string): string => value.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 
 /**
- * What a static lesson page (dist/bai/<slug>/index.html) must keep to: the game's Content-Security-Policy in its own meta, and no
- * script that is code in the page itself. The one inline script allowed is the structured-data block, which is
- * data (`application/ld+json`); every other script names a file of this site.
+ * What a static topic or subject page (dist/hoc/<subject>/index.html, dist/hoc/<subject>/<topic>/index.html) must
+ * keep to: the game's Content-Security-Policy in its own meta, and no script that is code in the page itself. The
+ * one inline script allowed is the structured-data block, which is data (`application/ld+json`); every other script
+ * names a file of this site.
  */
-export function lessonPageIssues(html: string): string[] {
+export function topicPageIssues(html: string): string[] {
   const issues: string[] = [];
   const policy = /<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]*)"/i.exec(html);
   if (!policy) issues.push('no Content-Security-Policy meta');
@@ -112,8 +94,7 @@ export function scanDist(distDir = DIST_DIR, questDir = QUEST_DIR): string[] {
   const quests = files(questDir)
     .filter((f) => f.endsWith('.json'))
     .map((f) => JSON.parse(readFileSync(f, 'utf8')) as unknown);
-  const titles = publicBookTitles();
-  const secrets = questSecrets(quests).filter((secret) => !titles.some((title) => title.includes(secret)));
+  const secrets = questSecrets(quests);
   if (secrets.length === 0) return ['no answer text found in content/quests: the scan would prove nothing'];
   return files(distDir)
     .filter((f) => SCANNED.has(path.extname(f)))
@@ -121,16 +102,21 @@ export function scanDist(distDir = DIST_DIR, questDir = QUEST_DIR): string[] {
 }
 
 /**
- * The lesson pages of a build (`dist/bai/<slug>/index.html`) and its 404 page, checked one by one; a build with no
- * lesson page is an issue too.
+ * The topic and subject pages of a build (`dist/hoc/<subject>/[<topic>/]index.html`) and its 404 page, checked one
+ * by one; a build with no such page is an issue too.
  */
-export function scanLessonPages(distDir = DIST_DIR): string[] {
-  const root = path.join(distDir, 'bai');
-  const lessons = existsSync(root) ? files(root).filter((f) => path.basename(f) === 'index.html') : [];
-  if (lessons.length === 0) return ['no lesson page in dist/bai: the build did not write them'];
+export function scanTopicPages(distDir = DIST_DIR): string[] {
+  const root = path.join(distDir, 'hoc');
+  const topics = existsSync(root) ? files(root).filter((f) => path.basename(f) === 'index.html') : [];
+  if (topics.length === 0) return ['no topic page in dist/hoc: the build did not write them'];
   const notFound = path.join(distDir, '404.html');
-  const pages = existsSync(notFound) ? [...lessons, notFound] : lessons;
-  return pages.flatMap((f) => lessonPageIssues(readFileSync(f, 'utf8')).map((issue) => `${path.relative(REPO_ROOT, f)}: ${issue}`));
+  const pages = existsSync(notFound) ? [...topics, notFound] : topics;
+  return pages.flatMap((f) => {
+    const html = readFileSync(f, 'utf8');
+    const where = path.relative(REPO_ROOT, f);
+    // The page as built, not only its sources: no book, grade, lesson number or page.
+    return [...topicPageIssues(html).map((issue) => `${where}: ${issue}`), ...wordingIssues(where, htmlText(html))];
+  });
 }
 
 /** Game asset files packed into the app build other than the fonts: the app must read them from the server. */
@@ -148,7 +134,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const dir = native ? NATIVE_DIST_DIR : DIST_DIR;
   let issues: string[];
   try {
-    issues = native ? [...scanDist(dir), ...nativeBundleIssues(dir)] : [...scanDist(), ...scanLessonPages()];
+    issues = native ? [...scanDist(dir), ...nativeBundleIssues(dir)] : [...scanDist(), ...scanTopicPages()];
   } catch (error) {
     issues = [`cannot scan ${path.relative(REPO_ROOT, dir)} (build it first): ${error instanceof Error ? error.message : String(error)}`];
   }
@@ -160,6 +146,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   console.log(
     native
       ? 'security:dist OK — no quest answer in apps/web/dist-native, and no game asset but the fonts packed into the app'
-      : 'security:dist OK — no quest answer in apps/web/dist, every lesson page keeps the CSP and runs no inline script',
+      : 'security:dist OK — no quest answer in apps/web/dist, every topic page keeps the CSP and runs no inline script',
   );
 }

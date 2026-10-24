@@ -1,11 +1,11 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import type { QuestTextbook } from '@miu/schema/game';
+import type { QuestTopic } from '@miu/schema/game';
 import { resetTrackForTest } from '../../analytics/track';
 import { ShareResult } from './share-result';
 
-const TEXTBOOK: QuestTextbook = { book: 'Toán 2, tập một', lesson: 'Bài 1. Ôn tập các số đến 100', pages: [6, 8] };
-const PAGE = 'http://localhost:3000/bai/toan-2-bai-1-on-tap-cac-so-den-100/?utm_source=share&utm_medium=share&utm_campaign=result';
+const TOPIC: QuestTopic = { id: 'so-den-100', title: 'Số đến 100', subject: 'toan', subjectName: 'Toán' };
+const PAGE = 'http://localhost:3000/hoc/toan/so-den-100/?utm_source=share&utm_medium=share&utm_campaign=result';
 const CODE = 'AbCdEfGhIjKlMnOpQrStUv';
 const INVITE_ID = '3b0e8e0c-6f1a-4b8e-9a53-1f1c2a3b4c5d';
 
@@ -37,17 +37,17 @@ afterEach(() => {
 const shares = () => calls.filter((c) => c.key === 'POST /api/analytics/events').map((c) => c.body as Record<string, unknown>);
 
 describe('showing a result off', () => {
-  it('copies the lesson page link on a computer, without a name or a number, and counts the share', async () => {
-    render(<ShareResult textbook={TEXTBOOK} />);
+  it('copies the topic page link on a computer, without a name or a number, and counts the share', async () => {
+    render(<ShareResult topic={TOPIC} />);
     fireEvent.click(screen.getByRole('button', { name: /Khoe kết quả/ }));
     expect(await screen.findByText('Đã sao chép link, dán cho bạn bè nhé.')).toBeTruthy();
     expect(copied).toEqual([PAGE]);
     expect(calls.some((c) => c.key === 'POST /api/invites')).toBe(false);
-    expect(shares()).toEqual([expect.objectContaining({ name: 'share', method: 'copy-link', content_type: 'result', lesson_id: 'toan2-t1-b01' })]);
+    expect(shares()).toEqual([expect.objectContaining({ name: 'share', method: 'copy-link', content_type: 'result', topic_id: 'so-den-100' })]);
   });
 
   it('adds a fresh invite when asked, and the page link carries its code', async () => {
-    render(<ShareResult textbook={TEXTBOOK} />);
+    render(<ShareResult topic={TOPIC} />);
     fireEvent.click(screen.getByRole('checkbox', { name: 'Kèm lời mời kết bạn' }));
     fireEvent.click(screen.getByRole('button', { name: /Khoe kết quả/ }));
     await waitFor(() => expect(copied).toEqual([`${PAGE}&moi=${CODE}`]));
@@ -61,7 +61,7 @@ describe('showing a result off', () => {
     });
     Object.defineProperty(navigator, 'share', { value: share, configurable: true });
     try {
-      render(<ShareResult textbook={TEXTBOOK} />);
+      render(<ShareResult topic={TOPIC} />);
       fireEvent.click(screen.getByRole('checkbox', { name: 'Kèm lời mời kết bạn' }));
       fireEvent.click(screen.getByRole('button', { name: /Khoe kết quả/ }));
       await waitFor(() => expect(calls.map((c) => c.key)).toContain(`DELETE /api/invites/${INVITE_ID}`));
@@ -78,19 +78,19 @@ describe('showing a result off', () => {
       'fetch',
       vi.fn(async () => new Response(JSON.stringify({ error: 'invite-limit' }), { status: 409 })),
     );
-    render(<ShareResult textbook={TEXTBOOK} />);
+    render(<ShareResult topic={TOPIC} />);
     fireEvent.click(screen.getByRole('checkbox', { name: 'Kèm lời mời kết bạn' }));
     fireEvent.click(screen.getByRole('button', { name: /Khoe kết quả/ }));
     expect((await screen.findByRole('alert')).textContent).toMatch(/5 link mời/);
     expect(copied).toEqual([]);
   });
 
-  it('points a quest with no textbook lesson at the home page, and counts it without a lesson', async () => {
-    render(<ShareResult textbook={undefined} />);
+  it('points a quest with no topic at the home page, and counts it without a topic', async () => {
+    render(<ShareResult topic={undefined} />);
     fireEvent.click(screen.getByRole('button', { name: /Khoe kết quả/ }));
     await waitFor(() => expect(copied).toEqual(['http://localhost:3000/?utm_source=share&utm_medium=share&utm_campaign=result']));
     await waitFor(() => expect(shares()).toHaveLength(1));
     expect(shares()[0]).toMatchObject({ method: 'copy-link', content_type: 'result' });
-    expect(shares()[0]).not.toHaveProperty('lesson_id');
+    expect(shares()[0]).not.toHaveProperty('topic_id');
   });
 });

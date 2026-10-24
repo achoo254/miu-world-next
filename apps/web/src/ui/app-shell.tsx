@@ -185,7 +185,7 @@ export function AppRoutes() {
         <Route path="/parent" element={<RequireParent><ParentAreaScreen /></RequireParent>} />
         <Route path="/parent/worksheets" element={<RequireParent><Suspense fallback={<Loading />}><WorksheetListScreen /></Suspense></RequireParent>} />
         <Route path="/kiem-duyet" element={<RequireParent><Suspense fallback={<Loading />}><ModerationScreen /></Suspense></RequireParent>} />
-        <Route path="/parent/worksheets/:lessonId" element={<RequireParent><Suspense fallback={<Loading />}><WorksheetSheetScreen /></Suspense></RequireParent>} />
+        <Route path="/parent/worksheets/:id" element={<RequireParent><Suspense fallback={<Loading />}><WorksheetSheetScreen /></Suspense></RequireParent>} />
         <Route path="/create" element={<ChildScreen music="home"><CreatorScreen /></ChildScreen>} />
         <Route path="/home" element={<ChildScreen music="home"><HomeScreen /></ChildScreen>} />
         <Route path="/map" element={<ChildScreen music="home"><RegionMapScreen /></ChildScreen>} />

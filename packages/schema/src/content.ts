@@ -381,8 +381,31 @@ const speakShape = {
   pictureRefs: z.array(IllustrationRef).optional(),
 };
 
-/** Writing happens on a printed worksheet outside the game; the step only points at it. */
-const worksheetShape = { ...stepBase, kind: z.literal('worksheet'), lessonId: ContentId, text: Text };
+/**
+ * What a printed worksheet holds, written for the quest: capitals to trace, a sentence to copy, a passage a parent
+ * reads aloud for the child to write, a few sentences to write from hints, or something to do at home together.
+ */
+export const WorksheetSheetBlock = z.discriminatedUnion('kind', [
+  /** Capitals to trace and write; the sheet draws them in the primary-school model hand where it can. */
+  z.strictObject({ kind: z.literal('letter'), prompt: Text, letters: z.array(Text).min(1) }),
+  /** A sentence to copy, line by line. */
+  z.strictObject({ kind: z.literal('copy-line'), text: Text, model: z.array(Text).min(1).optional() }),
+  z.strictObject({ kind: z.literal('dictation'), prompt: Text, title: Text.optional(), text: Text }),
+  z.strictObject({ kind: z.literal('paragraph-prompt'), prompt: Text, hints: z.array(Text).default([]), lines: z.number().int().min(1).max(12).default(6) }),
+  /** `media`: what to look at or use, one entry per part answered on its own line. */
+  z.strictObject({ kind: z.literal('activity'), prompt: Text, media: z.array(Text).default([]) }),
+]);
+export type WorksheetSheetBlock = z.infer<typeof WorksheetSheetBlock>;
+export const WorksheetSheet = z.strictObject({ title: Text, blocks: z.array(WorksheetSheetBlock).min(1) });
+export type WorksheetSheet = z.infer<typeof WorksheetSheet>;
+
+/**
+ * Writing happens on a printed worksheet outside the game; the step tells the child where to find it. The sheet is
+ * the quest's own (`sheet`), or, for a quest still played from the book, the inventory lesson's (`lessonId`):
+ * exactly one of the two. The parent area builds and prints it; the client of the game never gets the sheet.
+ */
+const worksheetPublicShape = { ...stepBase, kind: z.literal('worksheet'), text: Text };
+const worksheetShape = { ...worksheetPublicShape, lessonId: ContentId.optional(), sheet: WorksheetSheet.optional() };
 
 /**
  * What a character says after an answer. The server rotates through the lines by attempt, so a child
@@ -499,7 +522,7 @@ export const QuestStepPublic = z.discriminatedUnion('kind', [
   z.object(rewardShape),
   z.object(nextShape),
   z.object(speakShape),
-  z.object(worksheetShape),
+  z.object(worksheetPublicShape),
   z.object(bossShape),
   z.object(coopPublicShape),
 ]);
@@ -777,6 +800,7 @@ function stepIssues(step: QuestStep, texts: Readonly<Record<string, unknown>>, a
     // Every turn answered right must beat the boss, or the fight could never be won.
     if (bossDamage(step) < step.maxHp) issues.push(`the turns take ${bossDamage(step)} HP in all, less than the boss's ${step.maxHp}`);
   }
+  if (step.kind === 'worksheet' && (step.sheet === undefined) === (step.lessonId === undefined)) issues.push('a worksheet has exactly one of its own sheet ("sheet") and a textbook lesson ("lessonId")');
   if (step.kind === 'challenge') issues.push(...challengeIssues(step));
   if (step.kind === 'coop') issues.push(...coopIssues(step));
   return issues;

@@ -5,9 +5,12 @@ import { eq, sql } from 'drizzle-orm';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import type request from 'supertest';
 import { QuestStep } from '@miu/schema/content';
+import { Topic } from '@miu/schema/learning';
 import type { QuestTarget } from '@miu/schema/world-target';
 import { createApp } from '../app';
 import { loadContentCatalog } from '../content/content-catalog';
+import { indexTopics } from '../content/learning-topics';
+import { topicOf } from './quest-routes';
 import { solution } from '../../test/quest-solution';
 import { FIXTURE_CONTENT, createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
 import * as t from '../db/schema';
@@ -451,11 +454,36 @@ describe('textbook mechanics over the API', () => {
     expect(res.text).not.toMatch(/"(answer|support|assignment|fills|edges|curriculumRef|objective|expression|feedback)"/);
   });
 
-  it('names the textbook lesson and its printed pages, for homework set by page or title', async () => {
+  it('names no book, lesson or page: a quest without a topic has no topic label', async () => {
     const { agent } = await playingChild();
     const res = await agent.get('/api/quests?region=truong-hoc').expect(200);
-    const sgkView = (res.body as { quests: { quest: { id: string; textbook?: unknown } }[] }).quests.find((q) => q.quest.id === 'quest-sgk');
-    expect(sgkView?.quest.textbook).toEqual({ book: 'Tiếng Việt 2, tập một', lesson: 'Bài 1. Tôi là học sinh lớp 2', pages: [10, 12] });
+    const sgkView = (res.body as { quests: { quest: Record<string, unknown> }[] }).quests.find((q) => q.quest.id === 'quest-sgk');
+    expect(sgkView?.quest).toBeDefined();
+    expect(sgkView?.quest).not.toHaveProperty('textbook');
+    expect(sgkView?.quest).not.toHaveProperty('topic');
+    expect(sgkView?.quest).not.toHaveProperty('lesson');
+  });
+});
+
+describe('topicOf', () => {
+  const topic = Topic.parse({
+    id: 'so-den-100',
+    subject: 'toan',
+    title: 'Số đến 100',
+    summary: 'Đếm và so sánh.',
+    order: 1,
+    gdpt: { grade: 2, strand: 'Số và phép tính', requirements: ['Đếm được.'] },
+    objectives: [{ id: 'so-den-100-dem', text: 'Đếm', skills: ['dem'], practice: ['dem'] }],
+  });
+  const content = { learning: indexTopics([topic]), subjects: [{ id: 'toan', name: 'Toán', skills: [{ id: 'dem', name: 'Đếm' }] }] };
+
+  it("labels a quest by its topic and the topic's subject", () => {
+    expect(topicOf(content, 'so-den-100')).toEqual({ id: 'so-den-100', title: 'Số đến 100', subject: 'toan', subjectName: 'Toán' });
+  });
+
+  it('has no label for a quest without a topic, or with one the catalogue does not know', () => {
+    expect(topicOf(content, undefined)).toBeUndefined();
+    expect(topicOf(content, 'made-up')).toBeUndefined();
   });
 });
 

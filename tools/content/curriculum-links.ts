@@ -215,7 +215,7 @@ export function checkCurriculumLinks(books: readonly LoadedBook[], quests: reado
         mechanicsFor.set(ref, set);
       }
       issues.push(...answerIssues(step, linked).map((m) => `${where(step.id)}: ${m}`));
-      if (step.kind === 'worksheet' && foreign(step.lessonId)) issues.push(`${where(step.id)} hands out the sheet of ${step.lessonId}, not of the quest's lesson ${quest.lesson}`);
+      if (step.kind === 'worksheet' && step.lessonId !== undefined && foreign(step.lessonId)) issues.push(`${where(step.id)} hands out the sheet of ${step.lessonId}, not of the quest's lesson ${quest.lesson}`);
     }
   }
 

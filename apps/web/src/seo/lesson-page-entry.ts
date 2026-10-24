@@ -1,4 +1,4 @@
-// The script of the static lesson and subject pages (written by vite-lesson-pages.ts), a bundle entry of its own so
+// The script of the static topic and subject pages (written by vite-lesson-pages.ts), a bundle entry of its own so
 // the page stays plain HTML with one same-origin script. It reports the page view for the usage numbers, and when
 // the visitor goes to play it saves the quest they came for, so the game opens it once they are signed in. A result
 // shared with an invite (`?moi=<code>`) keeps the code along with it: the game uses it once the visitor is in.

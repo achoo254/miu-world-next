@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { afterEach, describe, expect, it } from 'vitest';
 import { CONTENT_SECURITY_POLICY } from '../../apps/web/vite.config';
-import { leaksIn, lessonPageIssues, nativeBundleIssues, publicBookTitles, questSecrets, scanDist, scanLessonPages } from './scan-dist';
+import { leaksIn, topicPageIssues, nativeBundleIssues, questSecrets, scanDist, scanTopicPages } from './scan-dist';
 
 const quest = {
   id: 'q',
@@ -71,49 +71,34 @@ describe('app build contents', () => {
   });
 });
 
-/** A lesson page's head as the build writes it: the policy in its meta with its quotes escaped, the data block, one script file. */
+/** A topic page's head as the build writes it: the policy in its meta with its quotes escaped, the data block, one script file. */
 const page = (extra = '', policy = CONTENT_SECURITY_POLICY.replaceAll("'", '&#39;')) =>
   `<!doctype html><html><head><meta http-equiv="Content-Security-Policy" content="${policy}"><script type="application/ld+json">{"@type":"LearningResource"}</script></head><body>${extra}<script type="module" crossorigin src="/assets/lesson-page-1.js"></script></body></html>`;
 
-describe('lesson pages', () => {
+describe('topic pages', () => {
   it('accept the policy of the game, a data block and a script of this site', () => {
-    expect(lessonPageIssues(page())).toEqual([]);
+    expect(topicPageIssues(page())).toEqual([]);
   });
 
   it('flag a missing or different policy, an inline script and a script from elsewhere', () => {
-    expect(lessonPageIssues('<html><head></head></html>')).toEqual(['no Content-Security-Policy meta']);
-    expect(lessonPageIssues(page('', "default-src *"))).toEqual(["its Content-Security-Policy is not the game's"]);
-    expect(lessonPageIssues(page('<script>alert(1)</script>'))).toEqual(['inline script: alert(1)']);
-    expect(lessonPageIssues(page('<script type="module">import("/x")</script>'))).toHaveLength(1);
-    expect(lessonPageIssues(page('<script src="https://evil.example/x.js"></script>'))).toEqual(['script from another origin: https://evil.example/x.js']);
-    expect(lessonPageIssues(page('<script src="//evil.example/x.js"></script>'))).toHaveLength(1);
+    expect(topicPageIssues('<html><head></head></html>')).toEqual(['no Content-Security-Policy meta']);
+    expect(topicPageIssues(page('', "default-src *"))).toEqual(["its Content-Security-Policy is not the game's"]);
+    expect(topicPageIssues(page('<script>alert(1)</script>'))).toEqual(['inline script: alert(1)']);
+    expect(topicPageIssues(page('<script type="module">import("/x")</script>'))).toHaveLength(1);
+    expect(topicPageIssues(page('<script src="https://evil.example/x.js"></script>'))).toEqual(['script from another origin: https://evil.example/x.js']);
+    expect(topicPageIssues(page('<script src="//evil.example/x.js"></script>'))).toHaveLength(1);
   });
 
   it('are checked page by page in a build, and a build without any is flagged', () => {
     const root = mkdtempSync(path.join(tmpdir(), 'miu-dist-'));
     dir = root;
-    expect(scanLessonPages(root)).toEqual(['no lesson page in dist/bai: the build did not write them']);
-    mkdirSync(path.join(root, 'bai/toan-2-bai-1'), { recursive: true });
-    mkdirSync(path.join(root, 'bai/toan-2-bai-2'), { recursive: true });
-    writeFileSync(path.join(root, 'bai/toan-2-bai-1/index.html'), page());
-    writeFileSync(path.join(root, 'bai/toan-2-bai-2/index.html'), page('<script>x()</script>'));
-    expect(scanLessonPages(root)).toHaveLength(1);
-    expect(scanLessonPages(root)[0]).toContain('toan-2-bai-2');
-  });
-});
-
-describe('answers that are public titles', () => {
-  it('are left out of the scan: the lesson pages print the books\' titles', () => {
-    expect(publicBookTitles()).toContain('Bài 2. Ngày hôm qua đâu rồi?');
-    const root = mkdtempSync(path.join(tmpdir(), 'miu-dist-'));
-    dir = root;
-    mkdirSync(path.join(root, 'dist'), { recursive: true });
-    mkdirSync(path.join(root, 'quests'));
-    const titled = { id: 'q', steps: [{ id: 'a', support: { guide: ['x'], hint: 'y', answer: { text: 'Ngày hôm qua đâu rồi?', explanation: 'Tên bài thơ của bài học này.' } } }] };
-    writeFileSync(path.join(root, 'quests/q.json'), JSON.stringify(titled));
-    writeFileSync(path.join(root, 'dist/lesson.html'), '<h1>Bài 2. Ngày hôm qua đâu rồi?</h1>');
-    expect(scanDist(path.join(root, 'dist'), path.join(root, 'quests'))).toEqual([]);
-    writeFileSync(path.join(root, 'dist/leak.xml'), '<note>Tên bài thơ của bài học này.</note>');
-    expect(scanDist(path.join(root, 'dist'), path.join(root, 'quests'))).toHaveLength(1);
+    expect(scanTopicPages(root)).toEqual(['no topic page in dist/hoc: the build did not write them']);
+    mkdirSync(path.join(root, 'hoc/toan/so-den-100'), { recursive: true });
+    mkdirSync(path.join(root, 'hoc/toan/gio-va-lich'), { recursive: true });
+    writeFileSync(path.join(root, 'hoc/toan/index.html'), page());
+    writeFileSync(path.join(root, 'hoc/toan/so-den-100/index.html'), page());
+    writeFileSync(path.join(root, 'hoc/toan/gio-va-lich/index.html'), page('<script>x()</script>'));
+    expect(scanTopicPages(root)).toHaveLength(1);
+    expect(scanTopicPages(root)[0]).toContain('gio-va-lich');
   });
 });

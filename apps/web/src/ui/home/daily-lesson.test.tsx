@@ -8,7 +8,7 @@ import { DailyLessonCard, DailyLessonChip, todaysLesson } from './daily-lesson';
 
 afterEach(cleanup);
 
-/** The fixture's textbook lesson, moved to `region` with its own id and progress. */
+/** The fixture's learning quest, moved to `region` with its own id and progress. */
 function lessonAt(region: string, id: string, state: QuestSummary['state'] = 'open'): QuestSummary {
   const base = questListWithLesson().quests.find((q) => q.quest.id === 'tv2-t01-b01');
   if (base?.quest.status !== 'active') throw new Error('the fixture has no active lesson');
@@ -18,7 +18,7 @@ function lessonAt(region: string, id: string, state: QuestSummary['state'] = 'op
 const DAY = Date.parse('2026-10-09T03:00:00Z');
 
 describe('Bài hôm nay', () => {
-  it('picks a textbook lesson away from home, never a home quest or a chapter of a story', () => {
+  it('picks a learning quest away from home, never a home quest or a chapter of a story', () => {
     const quests = [...questListWithLesson().quests.filter((q) => q.quest.id !== 'tv2-t01-b01'), lessonAt('nha-cua-be', 'home-lesson'), lessonAt('cho-phien', 'market-lesson')];
     expect(todaysLesson(quests, DAY)?.quest.id).toBe('market-lesson');
     expect(todaysLesson(quests.filter((q) => q.quest.id !== 'market-lesson'), DAY)).toBeNull();
@@ -33,7 +33,7 @@ describe('Bài hôm nay', () => {
     );
     expect(screen.getByText('Bài hôm nay')).toBeTruthy();
     expect(document.querySelector('[data-id="home-daily-map"]')?.textContent).toBe('Làm tiếp ở Chợ phiên');
-    expect(document.querySelector('[data-id="home-daily-lesson"]')?.textContent).toBe('Sâu Xanh vào lớp Hai');
+    expect(document.querySelector('[data-id="home-daily-lesson"]')?.textContent).toBe('Sâu Xanh đến trường');
     expect(screen.getByRole('link', { name: 'Tới Chợ phiên' }).getAttribute('href')).toBe('/play?region=cho-phien&quest=market-lesson');
   });
 

@@ -1,4 +1,4 @@
-// NEW SCREEN part (owner, 09/10/2026: the child plays only at home, every day): "Bài hôm nay", one textbook lesson
+// NEW SCREEN part (owner, 09/10/2026: the child plays only at home, every day): "Bài hôm nay", one learning quest
 // on another map for each Vietnam day, with the way there. A card on Home and a chip over the game while she is
 // at home. The pick is `dailyLesson` of packages/quest; nothing extra is paid for it.
 import { Link } from 'react-router';
@@ -9,14 +9,14 @@ import { T } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { playPath, say, type PlayerData } from '../player/player-data';
-import { TextbookRef, textbookOf } from '../player/textbook-ref';
+import { TopicLabel, topicOf } from '../player/topic-label';
 import { Say, titleOf } from '../quest/content-text';
 import { HOME_REGION, findRegion } from '../region/regions';
 import './daily-lesson.css';
 
-/** Today's lesson away from home among her quests (textbook lessons only), or null when all are finished. */
+/** Today's lesson away from home among her quests (learning quests only: those that teach a topic), or null when all are finished. */
 export function todaysLesson(quests: readonly QuestSummary[], now: number = Date.now()): QuestSummary | null {
-  const lessons = quests.filter((q) => textbookOf(q) !== null);
+  const lessons = quests.filter((q) => topicOf(q) !== null);
   const pick = dailyLesson(
     lessons.map((q) => ({ id: q.quest.id, region: q.quest.region, state: q.state })),
     vietnamDay(now),
@@ -32,7 +32,7 @@ export function DailyLessonCard({ data }: { data: PlayerData }) {
   const lesson = todaysLesson(data.quests);
   if (!lesson) return null;
   const fill = (line: string): string => say(line, data.character);
-  const textbook = textbookOf(lesson);
+  const topic = topicOf(lesson);
   return (
     <section className="panel home-daily" data-id="home-daily" aria-labelledby="home-daily-title">
       {/* One row: what and where on the left, the way there on the right (it wraps under on a narrow phone). */}
@@ -47,7 +47,7 @@ export function DailyLessonCard({ data }: { data: PlayerData }) {
         <strong className="home-daily-lesson" data-id="home-daily-lesson">
           <Say text={titleOf(lesson.quest)} fill={fill} />
         </strong>
-        {textbook ? <TextbookRef textbook={textbook} dataId="home-daily-textbook" /> : null}
+        {topic ? <TopicLabel topic={topic} dataId="home-daily-topic" /> : null}
       </div>
       <Link to={playPath(lesson)} className={buttonClass('primary')} data-id="home-daily-go">
         <T k="daily.go" params={{ map: mapOf(lesson) }} />

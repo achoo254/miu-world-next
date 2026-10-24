@@ -42,8 +42,6 @@ export const Region = z.strictObject({
   music: ContentId.optional(),
   /** The map's guide: the one character who may appear in any number of its quests (content/world/targets.json id). */
   guide: ContentId.optional(),
-  /** Which lessons of the books the region plays, shown on the world map ("Tiếng Việt bài 1–8"). */
-  book: z.string().min(1).optional(),
   /** Hotspot centre on the island image, in percent of its width and height. */
   hotspot: z.strictObject({ x: percent, y: percent }),
 });

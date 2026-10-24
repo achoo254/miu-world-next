@@ -13,10 +13,10 @@ export interface LinkShare {
 export type LinkShareOutcome = 'web-share' | 'copy-link' | 'cancelled' | 'failed';
 export type ImageShareOutcome = 'web-share' | 'download' | 'cancelled' | 'failed';
 
-/** What a share is about, for the usage numbers: the kind, and the textbook lesson when it is one's result. */
+/** What a share is about, for the usage numbers: the kind, and the topic when it is a learning quest's result. */
 export interface ShareKind {
   contentType: ShareContentType;
-  lessonId?: string;
+  topicId?: string;
 }
 
 /** A phone or tablet (touch first) whose browser has a share sheet; a computer copies the link instead. */

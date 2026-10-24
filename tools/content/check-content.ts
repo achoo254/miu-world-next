@@ -28,7 +28,7 @@ import { modelCatalogSchema } from '../../packages/voxel/src/model-catalog';
 import { entitiesForChapter, worldEntitiesSchema, type Interactable } from '../../packages/voxel/src/world-entities';
 import { eventInteractable } from '../../packages/voxel/src/event-layer';
 import type { LiveEvent } from '../../packages/schema/src/live-event';
-import { ASSETS_DIR } from '../assets/asset-lib';
+import { ASSETS_DIR, REPO_ROOT } from '../assets/asset-lib';
 import { CURRICULUM_FOLDERS, checkCurriculum } from './check-curriculum';
 import { percentCovered, sumGaps } from './content-gaps';
 import { varietyIssues } from './content-variety';
@@ -39,6 +39,7 @@ import { checkRepoTextbookCopy, readPendingQuests } from './no-textbook-copy';
 import { indexTopics, learningQuestIssues, readTopicFiles } from '../../apps/server/src/content/learning-topics';
 import { topicIssues } from '../../packages/schema/src/learning';
 import { checkLocales } from './check-locales';
+import { checkBookOrGradeWording } from './no-book-or-grade-wording';
 import { modelSwatches } from './pet-swatches';
 import { questSpread } from './quest-spread';
 import { auditQuestTargets, formatFinding } from '../world/quest-target-audit';
@@ -752,6 +753,8 @@ async function main(): Promise<void> {
   const report = checkContent();
   // The web app's bilingual dictionaries: every Vietnamese line has its English twin.
   report.issues.push(...checkLocales());
+  // What the web shows names no book, grade, lesson number or page (quests once they are rewritten).
+  report.issues.push(...checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: CONTENT_DIR }));
   // Every quest target on the committed maps, played step by step: reachable, its own prompt, shown, in sight.
   report.issues.push(...(await auditQuestTargets()).map(formatFinding));
   for (const note of report.notes) console.log(`note: ${note}`);

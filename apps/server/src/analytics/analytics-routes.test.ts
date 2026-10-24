@@ -117,19 +117,18 @@ describe('POST /api/analytics/events', () => {
 });
 
 describe('analytics catalogue', () => {
-  it('knows the shipped regions and the lessons the quests play', () => {
+  it('knows the shipped regions, and fixture quests without a topic give no topic page', () => {
     const catalog = analyticsCatalog(app.content);
     expect(catalog.regions.has('trung-tam')).toBe(true);
-    expect(catalog.lessons.has('tv2-t1-b01')).toBe(true);
-    // A lesson page is named by the book's title for the lesson, never by the lesson id.
-    expect(catalog.lessonSlugs).toEqual(new Set(['tieng-viet-2-bai-1-toi-la-hoc-sinh-lop-2']));
+    expect(catalog.topics).toEqual(new Set());
+    expect(catalog.topicPages).toEqual(new Set());
   });
 
-  it('names a lesson page for every textbook lesson the shipped quests play', () => {
-    const { lessons, lessonSlugs } = analyticsCatalog(loadContentCatalog());
-    expect(lessonSlugs.size).toBe(lessons.size);
-    expect(lessonSlugs.has('toan-2-bai-1-on-tap-cac-so-den-100')).toBe(true);
-    expect(lessonSlugs.has('tieng-viet-2-on-tap-giua-hoc-ki-1')).toBe(true);
-    expect(lessonSlugs.has('toan2-t1-b01')).toBe(false);
+  it('names a topic page, under its subject, for every topic the shipped quests teach', () => {
+    const { topics, topicPages } = analyticsCatalog(loadContentCatalog());
+    expect(topicPages.size).toBe(topics.size);
+    expect(topicPages.has('toan/so-den-100')).toBe(true);
+    expect(topicPages.has('tieng-viet/doc-truyen')).toBe(true);
+    expect(topics.has('so-den-100')).toBe(true);
   });
 });

@@ -2,20 +2,19 @@
   "id": "tv2-t01-b01",
   "region": "lang-ven-song",
   "chapter": 1,
-  "title": "Thỏ Hạt Tiêu vào lớp Hai",
+  "title": "Thỏ Hạt Tiêu đón năm học mới",
   "status": "active",
-  "lesson": "tv2-t1-b01",
   "topic": "doc-truyen",
-  "summary": "Sáng khai giảng, Thỏ Hạt Tiêu nhảy vội tới cổng làng, rơi cả giày lẫn cặp. {name} nhặt đồ giúp bạn, đọc chuyện một bạn nhỏ háo hức đến trường, gặp bác Khải quét lá đa, Gà Con Tíu, cô Thỏ Ngọc rồi cùng Thỏ Hạt Tiêu tập nói lời chào.",
+  "summary": "Sáng khai giảng, Thỏ Hạt Tiêu nhảy vội tới cổng làng, rơi cả giày lẫn cặp. {name} nhặt đồ giúp bạn, đọc chuyện cô bé Na và chiếc cặp màu nắng, gặp bác Khải quét lá đa, Gà Con Tíu, cô Thỏ Ngọc rồi cùng Thỏ Hạt Tiêu tập nói lời chào.",
   "review": "teacher-pending",
   "sevenQuestions": {
-    "who": "Thỏ Hạt Tiêu (đôi tai dài hay run, lần đầu vào lớp Hai của làng), Cún Lúa chú cún vàng chạy khắp làng dẫn đường, bác Khải quét lá bên lũy tre, Gà Con Tíu mới vào lớp Một, cô giáo Thỏ Ngọc",
-    "where": "Cổng Làng Ven Sông lúc bình minh, con đường đất trước cổng làng, bảng gỗ lớp Hai, gốc đa cổng làng, lũy tre đầu làng, giếng làng và cửa lớp học nhỏ",
+    "who": "Thỏ Hạt Tiêu (đôi tai dài hay run, hồi hộp đón năm học mới của làng), Cún Lúa chú cún vàng chạy khắp làng dẫn đường, bác Khải quét lá bên lũy tre, Gà Con Tíu lần đầu đi học, cô giáo Thỏ Ngọc",
+    "where": "Cổng Làng Ven Sông lúc bình minh, con đường đất trước cổng làng, bảng gỗ đầu làng, gốc đa cổng làng, lũy tre đầu làng, giếng làng và cửa lớp học nhỏ",
     "goal": "Nhặt lại đồ Thỏ Hạt Tiêu đánh rơi và giúp bạn ấy bớt run trong ngày khai giảng",
     "play": "Tìm đồ, nói, đọc bài, chọn nhiều đáp án, ghép tranh với đoạn, xếp thứ tự, điền từ, trắc nghiệm, lựa chọn trong hội thoại, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 1: đọc hiểu \"Tôi là học sinh lớp 2\", từ ngữ trong bài, lời chào, kể về kì nghỉ hè, viết chữ hoa A",
+    "learn": "Đọc truyện \"Chiếc cặp màu nắng\" (tự viết): hiểu chi tiết, việc làm và cảm xúc của nhân vật, xếp sự việc theo thứ tự, hiểu nghĩa từ trong bài; nói lời chào, kể chuyện ngày hè; viết chữ hoa A",
     "reward": "80 XP, 15 xu, Đọc hiểu +2, Từ ngữ +1",
-    "next": "Bài 2 \"Ngày hôm qua đâu rồi?\""
+    "next": "Ông Cua Đồng tìm tờ lịch của ngày hôm qua bên ruộng lúa"
   },
   "phases": {
     "hook": "gap-sau-xanh",
@@ -28,31 +27,32 @@
     "next": "mo-bai-2"
   },
   "texts": {
-    "toi-la-hoc-sinh-lop-2": {
-      "title": "Tôi là học sinh lớp 2",
-      "author": "Văn Giá",
-      "body": "Ngày khai trường đã đến.\n\nSáng sớm, mẹ mới gọi một câu mà tôi đã vùng dậy, khác hẳn mọi ngày. Loáng một cái, tôi đã chuẩn bị xong mọi thứ. Bố ngạc nhiên nhìn tôi, còn mẹ cười tủm tỉm. Tôi rối rít: “Con muốn đến lớp sớm nhất.”.\n\nTôi háo hức tưởng tượng ra cảnh mình đến đầu tiên, cất tiếng chào thật to những bạn đến sau. Nhưng vừa đến cổng trường, tôi đã thấy mấy bạn cùng lớp đang ríu rít nói cười ở trong sân. Thì ra, không chỉ mình tôi muốn đến sớm nhất. Tôi chào mẹ, chạy ào vào cùng các bạn.\n\nChúng tôi tranh nhau kể về chuyện ngày hè. Ngay cạnh chúng tôi, mấy em lớp 1 đang rụt rè níu chặt tay bố mẹ, thật giống tôi năm ngoái. Trước các em, tôi cảm thấy mình lớn bổng lên. Tôi đã là học sinh lớp 2 rồi cơ mà.",
+    "chiec-cap-mau-nang": {
+      "title": "Chiếc cặp màu nắng",
+      "body": "Tối hôm trước, Na xếp sách vở vào chiếc cặp màu vàng nắng bà mới mua. Em xếp đi xếp lại, đến khi cây bút chì nào cũng nằm ngay ngắn trong hộp mới chịu đi ngủ.\n\nSáng hôm sau, gà vừa gáy, Na đã ngồi bật dậy. Em rửa mặt, chải tóc, ăn vội bát cháo rồi đeo cặp đứng chờ ở cửa. Mẹ bảo còn sớm lắm, Na vẫn nhún nhảy như một chú chim sẻ.\n\nTrên đường đến trường, Na gặp một em bé đánh rơi hộp sáp màu. Những thỏi sáp lăn tứ tung trên bãi cỏ. Na cúi xuống nhặt từng thỏi, xếp lại vào hộp rồi dắt em vào cổng. Em bé lí nhí cảm ơn, đôi mắt tròn xoe.\n\nTiếng trống trường vang lên. Na đứng vào hàng, ngực ưỡn ra, thấy mình như cao thêm một chút.",
       "glossary": [
         {
-          "term": "Loáng (một cái)",
-          "meaning": "rất nhanh."
+          "term": "Ngay ngắn",
+          "meaning": "thẳng hàng, gọn gàng."
         },
         {
-          "term": "Níu",
-          "meaning": "nắm lấy và kéo lại, kéo xuống."
+          "term": "Nhún nhảy",
+          "meaning": "vừa đứng vừa nhún chân, nảy người lên vì vui."
         },
         {
-          "term": "Lớn bổng",
-          "meaning": "lớn nhanh, vượt hẳn lên."
+          "term": "Lí nhí",
+          "meaning": "nói nhỏ quá, nghe không rõ."
         }
       ],
-      "section": "tv2-t1-b01-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
     "tv2-t01-b01-tho-hat-tieu": "cổng làng",
     "nhat-do-sau-xanh": "con đường đất trước cổng làng",
-    "bang-go-lop-hai": "bảng gỗ lớp Hai",
+    "bang-go-lop-hai": "bảng gỗ đầu làng",
     "cun-lua": "gốc đa cổng làng",
     "tv2-t01-b01-bac-gac-rung-khai": "lũy tre đầu làng",
     "tv2-t01-b01-ga-con-tiu": "giếng làng",
@@ -68,7 +68,7 @@
       "lines": [
         {
           "speaker": "Thỏ Hạt Tiêu",
-          "text": "{name} ơi! Hôm nay tớ vào lớp Hai của làng, mà hai cái tai dài cứ run cầm cập thế này!"
+          "text": "{name} ơi! Hôm nay làng mình khai giảng năm học mới, mà hai cái tai dài của tớ cứ run cầm cập thế này!"
         },
         {
           "speaker": "Cún Lúa",
@@ -97,7 +97,7 @@
         "title": "Meet Thỏ Hạt Tiêu at the village gate",
         "goTo": "Go to the village gate, where Thỏ Hạt Tiêu is hopping about waiting for {name}",
         "lines": [
-          "{name}! Today I start Year Two at the village school, and my two long ears won't stop trembling!",
+          "{name}! Today our village school starts the new year, and my two long ears won't stop trembling!",
           "Woof! Thỏ Hạt Tiêu has been dashing past the village gate since the first rooster crowed, I chased after her till I was out of breath!",
           "I hopped so fast I dropped a shoe, my school bag and my pencil case along the dirt road.",
           "Will you stay with me? With you here, maybe my ears will stop trembling... on one side at least."
@@ -131,11 +131,11 @@
       "goTo": "Mang đồ về cổng làng trả cho Thỏ Hạt Tiêu",
       "kind": "speak",
       "target": "tv2-t01-b01-tho-hat-tieu",
-      "prompt": "Thỏ Hạt Tiêu xỏ lại chiếc giày còn thiếu, ôm chặt cặp sách rồi hỏi {name}: Em đã chuẩn bị những gì để đón ngày khai giảng?",
+      "prompt": "Thỏ Hạt Tiêu xỏ lại chiếc giày còn thiếu, ôm chặt cặp sách rồi hỏi {name}: trước ngày đầu năm học, cậu đã sửa soạn những gì?",
       "hints": [
-        "Trong cặp sách của em có những đồ dùng gì?",
-        "Em mặc bộ quần áo nào để đi khai giảng?",
-        "Thỏ Hạt Tiêu chuẩn bị cả một củ cà rốt ăn sáng, còn em chuẩn bị gì đặc biệt?"
+        "Cặp của cậu đựng những đồ dùng nào?",
+        "Hôm khai giảng cậu định mặc bộ quần áo nào?",
+        "Thỏ Hạt Tiêu mang theo một củ cà rốt ăn sáng, còn cậu mang gì đặc biệt?"
       ],
       "pictureRefs": [
         {
@@ -146,63 +146,59 @@
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b01-doc-kd"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "doc-bai",
       "title": "Đọc bài trên bảng gỗ",
-      "goTo": "Theo mũi tên tới bảng gỗ lớp Hai đọc bài",
+      "goTo": "Theo mũi tên tới bảng gỗ đầu làng đọc bài",
       "kind": "read",
       "target": "bang-go-lop-hai",
-      "textRef": "toi-la-hoc-sinh-lop-2",
+      "textRef": "chiec-cap-mau-nang",
       "audio": true,
-      "question": "Bạn ấy có thực hiện được mong muốn đến sớm nhất lớp không? Vì sao?",
+      "question": "Vì sao trời còn sớm mà Na đã đeo cặp đứng chờ ở cửa?",
       "choices": [
         {
           "id": "khong-den-sau",
-          "text": "Không. Vì vừa đến cổng trường, bạn ấy đã thấy mấy bạn cùng lớp đang ríu rít nói cười ở trong sân."
+          "text": "Vì Na mong đến trường lắm, muốn đi thật sớm."
         },
         {
           "id": "co-den-dau",
-          "text": "Có. Vì bạn ấy là người đến cổng trường đầu tiên."
+          "text": "Vì mẹ giục Na phải đi ngay."
         },
         {
           "id": "khong-ngu-quen",
-          "text": "Không. Vì bạn ấy ngủ quên nên đến trường muộn."
+          "text": "Vì Na quên chưa ăn sáng."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "khong-den-sau"
       },
-      "curriculumRef": [
-        "tv2-t1-b01-doc-2"
-      ],
       "support": {
         "guide": [
-          "Đọc lại đoạn có câu \"vừa đến cổng trường\".",
-          "Xem bạn nhỏ thấy ai đã ở trong sân trước mình."
+          "Đọc lại đoạn hai, đoạn kể buổi sáng của Na.",
+          "Mẹ nói gì khi thấy Na đứng chờ ở cửa?"
         ],
-        "hint": "Bạn nhỏ muốn đến sớm nhất, nhưng trong sân đã có người rồi.",
+        "hint": "Mẹ bảo còn sớm, vậy không phải mẹ giục Na đi.",
         "answer": {
-          "text": "Không. Vì vừa đến cổng trường, bạn ấy đã thấy mấy bạn cùng lớp đang ríu rít nói cười ở trong sân.",
-          "explanation": "Bài đọc kể: vừa đến cổng, bạn ấy đã thấy mấy bạn cùng lớp đang ríu rít nói cười trong sân."
+          "text": "Na mong đến trường nên muốn đi thật sớm.",
+          "explanation": "Na dậy từ lúc gà gáy, ăn vội rồi đứng chờ dù mẹ bảo còn sớm: em rất mong tới trường."
         }
       },
       "feedback": {
         "right": [
-          "Chuẩn! Các bạn đã ríu rít trong sân từ trước rồi. Cún Lúa vẫy đuôi tít mù.",
-          "Thỏ Hạt Tiêu gật gù đến rung rinh cả đôi tai: {name} đọc kĩ ghê!",
-          "Giỏi quá! Hoá ra ai cũng muốn đến sớm, y như Thỏ Hạt Tiêu sáng nay."
+          "Chuẩn! Na mong tới trường đến mức đứng chờ cả ở cửa. Cún Lúa vẫy đuôi tít mù.",
+          "Thỏ Hạt Tiêu gật gù đến rung rinh cả đôi tai: {name} hiểu bài nhanh ghê!",
+          "Giỏi quá! Na cũng nôn nao y như Thỏ Hạt Tiêu sáng nay."
         ],
         "wrong": [
-          "Hụt mất rồi! Dò lại đoạn hai, chỗ bạn nhỏ vừa tới cổng trường nhé.",
-          "Bạn nhỏ vùng dậy ngay từ tiếng gọi đầu tiên, đâu có ngủ quên! Thử lại xem.",
-          "Trong sân có ai đang ríu rít nói cười nhỉ? Thỏ Hạt Tiêu nhảy đi tìm cùng {name} đây."
+          "Mẹ bảo còn sớm lắm cơ mà, đâu phải mẹ giục. Đọc lại đoạn hai nhé.",
+          "Na đã ăn vội bát cháo rồi đấy, không phải quên ăn sáng. Thử lại xem.",
+          "Vì sao một cô bé lại đứng đợi từ lúc gà gáy nhỉ? Thỏ Hạt Tiêu đoán cùng {name} đây."
         ]
-      }
+      },
+      "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "chon-chi-tiet",
@@ -210,23 +206,23 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "bang-go-lop-hai",
-      "prompt": "Thỏ Hạt Tiêu thì thầm: bạn nhỏ này còn nôn nao hơn cả tớ! Những chi tiết nào cho thấy bạn nhỏ rất háo hức đến trường vào ngày khai giảng?",
+      "prompt": "Thỏ Hạt Tiêu thì thầm: Na còn nôn nao hơn cả tớ! Những việc nào cho thấy Na rất mong đến trường?",
       "choices": [
         {
           "id": "vung-day",
-          "text": "vùng dậy"
+          "text": "gà vừa gáy đã ngồi bật dậy"
         },
         {
           "id": "muon-den-som",
-          "text": "muốn đến sớm nhất lớp"
+          "text": "đeo cặp đứng chờ ở cửa"
         },
         {
           "id": "chuan-bi-nhanh",
-          "text": "chuẩn bị rất nhanh"
+          "text": "ăn vội bát cháo"
         },
         {
           "id": "lon-bong",
-          "text": "thấy mình lớn bổng lên"
+          "text": "nhặt từng thỏi sáp màu"
         }
       ],
       "skill": "doc-hieu",
@@ -237,32 +233,30 @@
           "chuan-bi-nhanh"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b01-doc-1"
-      ],
       "support": {
         "guide": [
-          "Tìm những việc bạn nhỏ làm trước khi đến trường.",
-          "Chi tiết nào nói bạn ấy vội vàng, mong đến lớp?"
+          "Tìm những việc Na làm lúc ở nhà, buổi sáng hôm ấy.",
+          "Việc nào cho thấy Na vội, mong được đi?"
         ],
-        "hint": "Có ba chi tiết đúng; một chi tiết là cảm giác khi thấy các em lớp 1.",
+        "hint": "Có ba việc đúng; một việc Na làm trên đường đến trường để giúp em bé.",
         "answer": {
-          "text": "vùng dậy; muốn đến sớm nhất lớp; chuẩn bị rất nhanh",
-          "explanation": "\"Lớn bổng lên\" là cảm giác của bạn nhỏ khi đứng trước các em lớp 1, không phải sự háo hức đến trường."
+          "text": "gà vừa gáy đã ngồi bật dậy; đeo cặp đứng chờ ở cửa; ăn vội bát cháo",
+          "explanation": "Nhặt sáp màu là việc tốt Na làm cho em bé trên đường, không phải dấu hiệu mong đến trường."
         }
       },
       "feedback": {
         "right": [
-          "Đủ cả ba chi tiết háo hức! Thỏ Hạt Tiêu giậm chân sau thình thịch.",
-          "Cún Lúa mừng quá sủa liền hai tiếng: {name} chọn trúng cả ba chi tiết rồi!",
-          "Chọn chuẩn, không thừa không thiếu một chi tiết nào."
+          "Đủ cả ba việc nôn nao! Thỏ Hạt Tiêu giậm chân sau thình thịch.",
+          "Cún Lúa mừng quá sủa liền hai tiếng: {name} chọn trúng cả ba việc rồi!",
+          "Chọn chuẩn, không thừa không thiếu một việc nào của Na."
         ],
         "wrong": [
-          "Còn thiếu hoặc thừa một chi tiết đấy, đếm lại trên đầu ngón tay nhé.",
-          "Chi tiết \"lớn bổng lên\" xảy ra lúc đứng cạnh các em lớp 1 cơ mà.",
-          "Bạn nhỏ chuẩn bị nhanh như chớp, tìm thêm chữ \"Loáng một cái\" xem."
+          "Còn thiếu hoặc thừa một việc đấy, đếm lại trên đầu ngón tay nhé.",
+          "Nhặt sáp màu là Na giúp em bé trên đường, đâu phải lúc còn ở nhà.",
+          "Na làm gì ngay khi gà vừa gáy? Tìm lại câu ấy trong đoạn hai xem."
         ]
-      }
+      },
+      "objective": "doc-truyen-nhan-vat"
     },
     {
       "id": "doan-va-tranh",
@@ -271,19 +265,19 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "cun-lua",
-      "prompt": "Gió thổi ba bức tranh rơi khỏi bảng gỗ, Cún Lúa chạy đi ngậm về đủ cả, nhưng chẳng biết treo vào chỗ nào. Tìm tranh thích hợp với mỗi đoạn trong bài đọc.",
+      "prompt": "Gió thổi ba bức tranh rơi khỏi bảng gỗ, Cún Lúa chạy đi ngậm về đủ cả, nhưng chẳng biết treo vào chỗ nào. Bức tranh nào vẽ đoạn nào của bài đọc?",
       "groups": [
         {
           "id": "doan-1",
-          "label": "Đoạn 1: từ đầu đến “sớm nhất.”"
+          "label": "Đoạn 1: tối hôm trước"
         },
         {
           "id": "doan-2",
-          "label": "Đoạn 2: tiếp theo đến “cùng các bạn.”"
+          "label": "Đoạn 2: sáng hôm sau"
         },
         {
           "id": "doan-3",
-          "label": "Đoạn 3: phần còn lại"
+          "label": "Đoạn 3: trên đường đến trường"
         }
       ],
       "items": [
@@ -294,7 +288,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "bạn nhỏ đứng trò chuyện với các bạn trong sân trường, phía sau một em nhỏ rụt rè nắm tay mẹ",
+              "caption": "cô bé cúi nhặt những thỏi sáp màu trên bãi cỏ, một em nhỏ đứng bên cạnh",
               "n": 1
             }
           }
@@ -306,7 +300,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "bạn nhỏ đeo cặp vẫy tay chào mẹ rồi chạy vào sân trường, phía xa có các bạn",
+              "caption": "cô bé đeo cặp vàng đứng ở cửa nhà, gà trống gáy trên hàng rào",
               "n": 2
             }
           }
@@ -318,7 +312,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "bạn nhỏ mặc đồng phục, đeo cặp đứng trước bố mẹ ở nhà",
+              "caption": "cô bé ngồi bên bàn dưới ánh đèn, xếp sách vở vào chiếc cặp vàng",
               "n": 3
             }
           }
@@ -332,85 +326,81 @@
           "tranh-1": "doan-3"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b01-doc-4"
-      ],
       "support": {
         "guide": [
-          "Đoạn 1 kể chuyện ở nhà, đoạn 2 ở cổng trường, đoạn 3 trong sân trường.",
-          "Tìm tranh có đúng nơi đó."
+          "Đoạn 1 kể chuyện buổi tối, đoạn 2 kể buổi sáng ở nhà, đoạn 3 kể trên đường đến trường.",
+          "Tìm tranh vẽ đúng lúc và đúng nơi đó."
         ],
-        "hint": "Tranh bạn nhỏ đứng trước bố mẹ là chuyện ở nhà.",
+        "hint": "Tranh có ánh đèn và chiếc cặp đang mở là chuyện buổi tối.",
         "answer": {
           "text": "Đoạn 1 – tranh 3; đoạn 2 – tranh 2; đoạn 3 – tranh 1",
-          "explanation": "Mỗi đoạn diễn ra ở một nơi: ở nhà, ở cổng trường, rồi trong sân cùng các bạn và các em lớp 1."
+          "explanation": "Mỗi đoạn diễn ra vào một lúc: tối hôm trước, sáng hôm sau ở nhà, rồi trên đường tới trường."
         }
       },
       "feedback": {
         "right": [
           "Ba bức tranh đã về đúng chỗ! Cún Lúa sung sướng chạy một vòng quanh gốc đa.",
-          "Câu chuyện hiện ra theo đúng thứ tự, từ ở nhà tới sân trường.",
-          "{name} nhìn tranh còn tinh hơn cái mũi đánh hơi của Cún Lúa nữa đấy!"
+          "Câu chuyện của Na hiện ra theo đúng thứ tự, từ tối hôm trước tới cổng trường.",
+          "{name} nhìn tranh còn tinh hơn cái mũi đánh hơi của Cún Lúa đấy!"
         ],
         "wrong": [
-          "Đoạn nào kể chuyện ở nhà, có cả bố mẹ đứng nhìn nhỉ?",
-          "Một bức tranh đang đi lạc sang đoạn khác, giống chiếc giày của Thỏ Hạt Tiêu sáng nay.",
-          "Tranh nào có em nhỏ rụt rè nắm tay mẹ? Đó là đoạn cuối đấy."
+          "Đoạn nào kể chuyện buổi tối, khi Na còn ngồi xếp cặp nhỉ?",
+          "Một bức tranh đang đi lạc sang đoạn khác, y như chiếc giày của Thỏ Hạt Tiêu sáng nay.",
+          "Tranh nào có những thỏi sáp màu lăn trên cỏ? Đó là đoạn cuối đấy."
         ]
-      }
+      },
+      "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "lon-hon-mot-chut",
       "title": "Bạn nhỏ thay đổi thế nào",
-      "goTo": "Quay về bảng gỗ lớp Hai, dò lại đoạn cuối bài đọc",
+      "goTo": "Quay về bảng gỗ đầu làng, dò lại đoạn cuối bài đọc",
       "kind": "read",
       "target": "bang-go-lop-hai",
-      "textRef": "toi-la-hoc-sinh-lop-2",
-      "question": "Bạn ấy nhận ra mình thay đổi như thế nào khi lên lớp 2?",
+      "textRef": "chiec-cap-mau-nang",
+      "question": "Khi đứng vào hàng nghe tiếng trống, Na cảm thấy thế nào?",
       "choices": [
         {
           "id": "lon-bong",
-          "text": "Trước các em, tôi cảm thấy mình lớn bổng lên."
+          "text": "Na thấy mình như cao thêm một chút."
         },
         {
           "id": "rut-re",
-          "text": "Bạn ấy thấy mình rụt rè như các em lớp 1."
+          "text": "Na thấy sợ tiếng trống trường."
         },
         {
           "id": "buon-ngu",
-          "text": "Bạn ấy thấy mình vẫn muốn ngủ thêm một lát."
+          "text": "Na thấy buồn ngủ vì dậy sớm quá."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "lon-bong"
       },
-      "curriculumRef": [
-        "tv2-t1-b01-doc-3"
-      ],
       "support": {
         "guide": [
-          "Đọc câu cuối của đoạn 3.",
-          "Bạn nhỏ so mình với ai?"
+          "Dò lại câu kết của bài đọc.",
+          "Na đứng thế nào khi vào hàng?"
         ],
-        "hint": "Bạn nhỏ đứng cạnh các em lớp 1 và thấy mình khác trước.",
+        "hint": "Na ưỡn ngực, thấy mình khác hẳn mọi hôm.",
         "answer": {
-          "text": "Trước các em, tôi cảm thấy mình lớn bổng lên.",
-          "explanation": "Nhìn các em lớp 1 rụt rè như mình năm ngoái, bạn nhỏ thấy mình đã lớn."
+          "text": "Na thấy mình như lớn hơn, cao hơn.",
+          "explanation": "Vừa giúp được em bé, lại được vào năm học mới, Na thấy tự hào, như mình đã lớn hơn."
         }
       },
       "feedback": {
         "right": [
-          "Đúng thế, bạn nhỏ thấy mình lớn bổng lên!",
-          "Thỏ Hạt Tiêu kiễng cao hai chân sau: tớ cũng muốn lớn bổng như thế!",
-          "Chính xác, câu cuối bài nói rõ điều đó."
+          "Đúng thế, Na thấy mình như cao thêm một chút!",
+          "Thỏ Hạt Tiêu kiễng cao hai chân sau: tớ cũng muốn cao thêm như Na!",
+          "Chính xác, câu cuối bài nói rõ cảm xúc ấy."
         ],
         "wrong": [
-          "Người rụt rè trong bài là các em lớp 1 chứ không phải bạn nhỏ đâu.",
-          "Thử đọc lại câu cuối cùng của bài, chỗ có chữ \"lớn bổng\" xem.",
-          "Gần được rồi, bạn nhỏ đang so mình với các em lớp 1 mà."
+          "Na ưỡn ngực đứng vào hàng, đâu có sợ tiếng trống.",
+          "Thử đọc lại câu cuối cùng, chỗ Na đứng vào hàng xem.",
+          "Na dậy sớm nhưng vui lắm, chẳng buồn ngủ chút nào đâu."
         ]
-      }
+      },
+      "objective": "doc-truyen-nhan-vat"
     },
     {
       "id": "xep-buoi-sang",
@@ -423,19 +413,19 @@
       "items": [
         {
           "id": "chao-me",
-          "label": "Tôi chào mẹ, chạy ào vào cùng các bạn."
+          "label": "Na cúi xuống nhặt từng thỏi sáp, xếp lại vào hộp."
         },
         {
           "id": "vung-day",
-          "label": "Sáng sớm, mẹ mới gọi một câu mà tôi đã vùng dậy, khác hẳn mọi ngày."
+          "label": "Na xếp sách vở vào chiếc cặp màu vàng nắng."
         },
         {
           "id": "lon-bong",
-          "label": "Trước các em, tôi cảm thấy mình lớn bổng lên."
+          "label": "Na đứng vào hàng, thấy mình như cao thêm một chút."
         },
         {
           "id": "thay-cac-ban",
-          "label": "Nhưng vừa đến cổng trường, tôi đã thấy mấy bạn cùng lớp đang ríu rít nói cười ở trong sân."
+          "label": "Gà vừa gáy, Na đã ngồi bật dậy."
         }
       ],
       "skill": "doc-hieu",
@@ -449,27 +439,28 @@
       },
       "support": {
         "guide": [
-          "Câu nào kể chuyện ở nhà lúc sáng sớm?",
-          "Sau khi ra khỏi nhà, bạn nhỏ đến cổng trường rồi mới vào sân."
+          "Câu nào kể chuyện tối hôm trước?",
+          "Sáng ra Na dậy ở nhà, rồi mới gặp em bé trên đường."
         ],
-        "hint": "Câu \"lớn bổng lên\" nằm ở cuối bài.",
+        "hint": "Câu Na đứng vào hàng nằm ở cuối bài.",
         "answer": {
-          "text": "Vùng dậy → thấy các bạn ở cổng trường → chạy ào vào cùng các bạn → thấy mình lớn bổng lên",
-          "explanation": "Bài đọc đi từ ở nhà, tới cổng trường, vào sân, rồi tới lúc bạn nhỏ đứng cạnh các em lớp 1."
+          "text": "Xếp cặp → ngồi bật dậy → nhặt sáp màu → đứng vào hàng",
+          "explanation": "Bài đọc đi từ tối hôm trước, sang sáng hôm sau ở nhà, ra đường đến trường rồi vào hàng."
         }
       },
       "feedback": {
         "right": [
           "Bốn tờ giấy xếp hàng thẳng tắp, bác Khải chống chổi cười: khỏi phải quét nữa rồi!",
-          "Đúng thứ tự rồi! Buổi sáng của bạn nhỏ chạy vèo vèo như phim.",
+          "Đúng thứ tự rồi! Một ngày của Na chạy vèo vèo như phim.",
           "Cún Lúa ngồi ngay ngắn như học trò, đuôi đập xuống đất bộp bộp: chuẩn từng câu!"
         ],
         "wrong": [
-          "Bạn nhỏ phải vùng dậy ở nhà trước rồi mới ra tới cổng trường chứ.",
-          "Câu \"lớn bổng lên\" là câu kết, đặt nó xuống cuối hàng nhé.",
-          "Chạy ào vào sân xảy ra sau khi thấy các bạn ríu rít ở trong đó đấy."
+          "Na phải xếp cặp từ tối hôm trước, rồi sáng ra mới dậy chứ.",
+          "Câu đứng vào hàng là câu kết, đặt nó xuống cuối hàng nhé.",
+          "Na gặp em bé trên đường, tức là sau khi đã ra khỏi nhà đấy."
         ]
-      }
+      },
+      "objective": "doc-truyen-thu-tu"
     },
     {
       "id": "tu-moi-cua-vet",
@@ -478,23 +469,23 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "cun-lua",
-      "prompt": "Cún Lúa dí mũi khắp bài đọc, đánh hơi được ba từ khó giấu kĩ như ba khúc xương: loáng, níu, lớn bổng. Đặt mỗi từ về đúng chỗ của nó trong bài đọc nhé.",
-      "template": "{{loang}} một cái, tôi đã chuẩn bị xong mọi thứ.\nMấy em lớp 1 đang rụt rè {{niu}} chặt tay bố mẹ.\nTrước các em, tôi cảm thấy mình {{lon}} lên.",
+      "prompt": "Cún Lúa dí mũi khắp bài đọc, đánh hơi được ba từ khó giấu kĩ như ba khúc xương: ngay ngắn, nhún nhảy, lí nhí. Đặt mỗi từ về đúng chỗ của nó trong bài đọc nhé.",
+      "template": "Cây bút chì nào cũng nằm {{loang}} trong hộp.\nMẹ bảo còn sớm lắm, Na vẫn {{niu}} như một chú chim sẻ.\nEm bé {{lon}} cảm ơn, đôi mắt tròn xoe.",
       "blanks": [
         {
           "id": "loang",
           "options": [
             {
               "id": "le-me",
-              "text": "Lề mề"
+              "text": "lộn xộn"
             },
             {
               "id": "loang",
-              "text": "Loáng"
+              "text": "ngay ngắn"
             },
             {
               "id": "ngap",
-              "text": "Ngáp"
+              "text": "lăn lóc"
             }
           ]
         },
@@ -503,15 +494,15 @@
           "options": [
             {
               "id": "buong",
-              "text": "buông"
+              "text": "ngồi im"
             },
             {
               "id": "vay",
-              "text": "vẫy"
+              "text": "ngáp dài"
             },
             {
               "id": "niu",
-              "text": "níu"
+              "text": "nhún nhảy"
             }
           ]
         },
@@ -520,15 +511,15 @@
           "options": [
             {
               "id": "lon-bong",
-              "text": "lớn bổng"
+              "text": "lí nhí"
             },
             {
               "id": "be-ti",
-              "text": "bé tí"
+              "text": "quát to"
             },
             {
               "id": "buon-ngu",
-              "text": "buồn ngủ"
+              "text": "cười phá"
             }
           ]
         }
@@ -543,13 +534,13 @@
       },
       "support": {
         "guide": [
-          "Loáng (một cái) là rất nhanh; níu là nắm lấy và kéo lại; lớn bổng là lớn nhanh, vượt hẳn lên.",
+          "Ngay ngắn là thẳng hàng, gọn gàng; nhún nhảy là nảy người lên vì vui; lí nhí là nói nhỏ quá.",
           "Đọc cả câu lên xem từ nào hợp nghĩa nhất."
         ],
-        "hint": "Các em lớp 1 còn ngại nên nắm chặt tay bố mẹ không chịu buông.",
+        "hint": "Em bé còn ngượng nên nói nhỏ xíu.",
         "answer": {
-          "text": "Loáng một cái…; …rụt rè níu chặt tay bố mẹ; …mình lớn bổng lên.",
-          "explanation": "Ba từ đều có trong mục Từ ngữ dưới bài đọc, và mỗi từ nằm đúng một câu của bài."
+          "text": "…nằm ngay ngắn trong hộp; …Na vẫn nhún nhảy…; Em bé lí nhí cảm ơn…",
+          "explanation": "Ba từ đều được giải nghĩa dưới bài đọc, và mỗi từ nằm đúng một câu của bài."
         }
       },
       "feedback": {
@@ -559,64 +550,63 @@
           "{name} giỏi thật, lần sau Cún Lúa phải đánh hơi từ khó hơn mới đố nổi."
         ],
         "wrong": [
-          "Bạn nhỏ chuẩn bị rất nhanh, \"lề mề\" thì chậm như rùa mất rồi.",
-          "Các em lớp 1 đang nắm chặt tay bố mẹ, đâu có buông ra hay vẫy tay.",
-          "Đứng trước các em, bạn nhỏ thấy mình to lên hay bé đi nhỉ? Thử lại nào."
+          "Na xếp bút cẩn thận lắm, \"lộn xộn\" thì ngược hẳn rồi.",
+          "Na vui quá nên chẳng chịu đứng yên đâu, thử từ khác xem.",
+          "Em bé còn ngượng, nói to hay nói nhỏ nhỉ? Thử lại nào."
         ]
-      }
+      },
+      "objective": "doc-truyen-tu-ngu"
     },
     {
       "id": "tu-chi-lop-mot",
-      "title": "Chọn từ tả các em lớp 1",
-      "goTo": "Trở lại cổng làng, Thỏ Hạt Tiêu chỉ về phía các em lớp Một",
+      "title": "Chọn từ cho thấy em bé còn ngại",
+      "goTo": "Trở lại cổng làng, Thỏ Hạt Tiêu chỉ về phía mấy em nhỏ đang nấp sau lưng mẹ",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t01-b01-tho-hat-tieu",
-      "prompt": "Ở cổng làng, Thỏ Hạt Tiêu chỉ về phía mấy bạn nhỏ xíu đang nấp sau lưng mẹ. Từ nào dưới đây nói về các em lớp 1 trong ngày khai trường?",
+      "prompt": "Ở cổng làng, Thỏ Hạt Tiêu chỉ về phía mấy bạn nhỏ xíu đang nấp sau lưng mẹ, ngại ngùng y như em bé trong bài đọc. Trong bài, từ nào cho thấy em bé đánh rơi sáp màu còn ngại ngùng?",
       "choices": [
         {
           "id": "ngac-nhien",
-          "text": "ngạc nhiên"
+          "text": "ríu rít"
         },
         {
           "id": "hao-huc",
-          "text": "háo hức"
+          "text": "oang oang"
         },
         {
           "id": "rut-re",
-          "text": "rụt rè"
+          "text": "lí nhí"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "choice": "rut-re"
       },
-      "curriculumRef": [
-        "tv2-t1-b01-doc-lt1"
-      ],
       "support": {
         "guide": [
-          "Tìm câu nói về các em lớp 1 trong bài.",
-          "Các em đang làm gì với tay bố mẹ?"
+          "Tìm câu nói về em bé ở cuối đoạn ba.",
+          "Em bé cảm ơn Na bằng giọng thế nào?"
         ],
-        "hint": "Các em níu chặt tay bố mẹ vì còn ngại.",
+        "hint": "Người còn ngại thường nói rất nhỏ.",
         "answer": {
-          "text": "c. rụt rè",
-          "explanation": "Bài đọc viết: mấy em lớp 1 đang rụt rè níu chặt tay bố mẹ."
+          "text": "Từ \"lí nhí\".",
+          "explanation": "Bài đọc viết: em bé lí nhí cảm ơn. Nói lí nhí là nói nhỏ quá, vì em còn ngại."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, các em còn rụt rè lắm!",
-          "Thỏ Hạt Tiêu đỏ cả chóp tai thú nhận: năm ngoái tớ còn rụt rè gấp mười lần.",
-          "Chọn trúng ngay từ có trong bài luôn!"
+          "Đúng rồi, em bé còn ngại nên chỉ lí nhí cảm ơn!",
+          "Thỏ Hạt Tiêu thì thầm bắt chước: cảm… ơn… thế này là lí nhí chưa?",
+          "Chọn trúng từ cho thấy em bé đang ngượng ngùng luôn!"
         ],
         "wrong": [
-          "Người háo hức là bạn nhỏ lớp 2 cơ, không phải các em lớp 1.",
-          "Ai ngạc nhiên nhìn bạn nhỏ trong bài nhỉ? Là bố đấy, đâu phải các em.",
-          "Tìm lại câu có \"níu chặt tay bố mẹ\" rồi chọn lại nhé."
+          "Ríu rít là nói vui, liến thoắng, đâu phải đang ngại.",
+          "Oang oang là nói to lắm, em bé còn ngượng mà.",
+          "Tìm lại câu em bé cảm ơn Na rồi chọn lại nhé."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-tim-tu"
     },
     {
       "id": "chip-rut-re",
@@ -627,11 +617,11 @@
       "lines": [
         {
           "speaker": "Gà Con Tíu",
-          "text": "Chiếp… Tại sao lớp Một lại đông thế? Tại sao chân tớ cứ muốn chạy về nhà?"
+          "text": "Chiếp… Tại sao lớp học lại đông thế? Tại sao chân tớ cứ muốn chạy về nhà?"
         },
         {
           "speaker": "Thỏ Hạt Tiêu",
-          "text": "Tíu mới vào lớp Một, cứ níu chặt cánh mẹ y như các em trong bài đọc ấy."
+          "text": "Tíu mới đi học lần đầu, cứ rúc vào cánh mẹ, giống em bé đánh rơi sáp màu trong bài đọc ấy."
         },
         {
           "speaker": "Thỏ Hạt Tiêu",
@@ -656,8 +646,8 @@
         "title": "Gà Con Tíu won't go into class",
         "goTo": "Go to the village well, where Gà Con Tíu is hiding under her mother's wing",
         "lines": [
-          "Cheep... Why is Year One so crowded? Why do my legs keep wanting to run home?",
-          "Tíu has just started Year One, and she's clinging to her mum's wing just like the little ones in the reading.",
+          "Cheep... Why is the class so crowded? Why do my legs keep wanting to run home?",
+          "It's Tíu's very first day at school, and she keeps hiding under her mum's wing, like the little one who dropped the crayons in the reading.",
           "{name}, what can we say to help Tíu feel less scared?"
         ],
         "choices": [
@@ -682,17 +672,13 @@
       "goTo": "Dắt Tíu tới cửa lớp học nhỏ, cô Thỏ Ngọc đang đứng đón học trò",
       "kind": "speak",
       "target": "tv2-t01-b01-co-tho-ngoc",
-      "prompt": "Tùng! Tùng! Trống vào học rồi, Thỏ Hạt Tiêu luống cuống chào nhầm cả cây cột cổng làng. {name} làm mẫu giúp bạn nhé! Thực hiện các yêu cầu sau: a. Nói lời chào tạm biệt mẹ trước khi đến trường. b. Nói lời chào thầy, cô giáo khi đến lớp. c. Cùng bạn nói và đáp lời chào khi gặp nhau ở trường.",
+      "prompt": "Tùng! Tùng! Trống vào học rồi, Thỏ Hạt Tiêu luống cuống chào nhầm cả cây cột cổng làng. {name} làm mẫu giúp bạn nhé: chào tạm biệt người nhà trước khi đi học, chào cô giáo khi bước vào lớp, rồi chào một bạn và nghe bạn chào lại.",
       "hints": [
-        "Vẫy tay chào mẹ thật tươi trước khi vào cổng.",
-        "Khoanh tay, lễ phép chào thầy cô khi bước vào lớp.",
-        "Chào một bạn thật to, rồi lắng nghe bạn chào lại mình."
+        "Vẫy tay thật tươi chào người nhà trước khi vào cổng.",
+        "Khoanh tay, lễ phép chào cô khi bước qua cửa lớp.",
+        "Chào một bạn thật rõ, rồi lắng nghe bạn chào lại mình."
       ],
-      "curriculumRef": [
-        "tv2-t1-b01-doc-lt2-a",
-        "tv2-t1-b01-doc-lt2-b",
-        "tv2-t1-b01-doc-lt2-c"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "ke-he",
@@ -700,11 +686,11 @@
       "goTo": "Ra chơi rồi! Chạy ra lũy tre đầu làng, bác Khải nghỉ tay nghe kể chuyện hè",
       "kind": "speak",
       "target": "tv2-t01-b01-bac-gac-rung-khai",
-      "prompt": "Giờ ra chơi, Thỏ Hạt Tiêu kể cả hè chỉ gặm cà rốt với ngủ, rồi rủ {name} kể chuyện của mình: Kể về điều đáng nhớ nhất trong kì nghỉ hè của em. Em cảm thấy thế nào khi trở lại trường sau kì nghỉ hè?",
+      "prompt": "Giờ ra chơi, Thỏ Hạt Tiêu kể cả hè chỉ gặm cà rốt với ngủ, rồi rủ {name} kể chuyện của mình: hè vừa rồi cậu nhớ nhất chuyện gì? Quay lại trường, cậu thấy vui hay hồi hộp?",
       "hints": [
-        "Nghỉ hè, em được đi những đâu?",
-        "Em được tham gia những hoạt động nào?",
-        "Em nhớ nhất điều gì?"
+        "Hè này cậu được đi đâu chơi?",
+        "Cậu đã làm những việc gì vui?",
+        "Chuyện nào làm cậu nhớ mãi?"
       ],
       "pictureRefs": [
         {
@@ -729,33 +715,54 @@
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b01-noi-nghe-1",
-        "tv2-t1-b01-noi-nghe-2"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "phieu-viet",
-      "title": "Phiếu viết bài 1",
+      "title": "Phiếu viết chữ hoa A",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b01",
-      "text": "Nhờ bố mẹ in phiếu Bài 1 ở khu phụ huynh nhé: tập viết chữ hoa A, câu ứng dụng và vài câu về ngày hè. Thỏ Hạt Tiêu cầm bút bằng cả hai tay mà vẫn chưa viết đẹp bằng em đâu!",
-      "curriculumRef": [
-        "tv2-t1-b01-viet-chu-hoa-1",
-        "tv2-t1-b01-viet-ung-dung-2",
-        "tv2-t1-b01-van-dung-1"
-      ]
+      "text": "Nhờ bố mẹ in phiếu viết ở khu phụ huynh nhé: tập viết chữ hoa A và vài câu về ngày hè. Thỏ Hạt Tiêu cầm bút bằng cả hai tay mà vẫn chưa viết đẹp bằng {name} đâu!",
+      "objective": "viet-chu-hoa",
+      "sheet": {
+        "title": "Phiếu viết: chữ hoa A và ngày hè",
+        "blocks": [
+          {
+            "kind": "letter",
+            "prompt": "Tô rồi viết chữ hoa A",
+            "letters": [
+              "A"
+            ]
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: An đeo cặp mới đến trường.",
+            "model": [
+              "An đeo cặp mới đến trường."
+            ]
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Viết 2 – 3 câu kể một chuyện vui của em trong kì nghỉ hè.",
+            "hints": [
+              "Em đi đâu, với ai?",
+              "Em đã làm gì ở đó?",
+              "Em thấy vui hay tiếc khi hè hết?"
+            ],
+            "lines": 6
+          }
+        ]
+      }
     },
     {
       "id": "phan-thuong",
       "title": "Quà của Thỏ Hạt Tiêu",
       "kind": "reward",
       "trigger": "auto",
-      "text": "Thỏ Hạt Tiêu tặng {name} một củ cà rốt non buộc nơ cỏ may, rồi hứa sẽ ăn thật nhiều rau để mau lớn bổng như bạn nhỏ trong bài.",
+      "text": "Thỏ Hạt Tiêu tặng {name} một củ cà rốt non buộc nơ cỏ may, rồi hứa sẽ ăn thật nhiều rau để mau cao thêm một chút như Na trong bài.",
       "en": {
         "title": "Thỏ Hạt Tiêu's gift",
-        "text": "Thỏ Hạt Tiêu gives {name} a baby carrot tied with a grass bow, and promises to eat lots of vegetables to grow tall fast, like the child in the reading."
+        "text": "Thỏ Hạt Tiêu gives {name} a baby carrot tied with a grass bow, and promises to eat lots of vegetables to grow a little taller, like Na in the reading."
       }
     },
     {
@@ -763,10 +770,10 @@
       "title": "Tờ lịch bay đi",
       "kind": "next",
       "trigger": "auto",
-      "text": "Vù… một cơn gió thổi xấp lịch bay tung về phía ruộng lúa. Dưới gốc gạo đầu bờ, ông Cua Đồng giơ đôi càng lên trời mà không dám kẹp, vì kẹp vào là rách: ngày hôm qua đâu rồi?",
+      "text": "Vù… một cơn gió thổi xấp lịch bay tung về phía ruộng lúa. Dưới gốc gạo đầu bờ, ông Cua Đồng giơ đôi càng lên trời mà không dám kẹp, vì kẹp vào là rách: tờ lịch của hôm qua bay đâu mất rồi?",
       "en": {
         "title": "The calendar blows away",
-        "text": "Whoosh... a gust of wind sends a stack of calendar pages flying towards the rice field. Under the silk-cotton tree at the edge of the field, Grandpa Cua Đồng the paddy crab holds his claws up high but daren't pinch, because a pinch would tear them: \"Ngày hôm qua đâu rồi?\" (Where has yesterday gone?)"
+        "text": "Whoosh... a gust of wind sends a stack of calendar pages flying towards the rice field. Under the silk-cotton tree at the edge of the field, Grandpa Cua Đồng the paddy crab holds his claws up high but daren't pinch, because a pinch would tear them: where has yesterday's page gone?"
       }
     }
   ],

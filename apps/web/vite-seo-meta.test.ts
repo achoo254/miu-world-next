@@ -44,8 +44,8 @@ describe('the app shell tags', () => {
 
 describe('socialTags', () => {
   it('adds the page address as og:url when it has one', () => {
-    const card = { ...shellCard(), url: `${SITE_ORIGIN}/bai/toan-2/` };
-    expect(socialTags(card, 'https://x.example/a.png').map(renderHeadTag)).toContain('<meta property="og:url" content="https://miu.hoandat.com/bai/toan-2/">');
+    const card = { ...shellCard(), url: `${SITE_ORIGIN}/hoc/toan/` };
+    expect(socialTags(card, 'https://x.example/a.png').map(renderHeadTag)).toContain('<meta property="og:url" content="https://miu.hoandat.com/hoc/toan/">');
   });
 
   it('escapes what it prints', () => {
@@ -60,16 +60,16 @@ describe('index.html', () => {
     expect(indexHtml).toContain(`<title>${viLocale['seo.title']}</title>`);
     const root = /<div id="root">([\s\S]*?)<\/div>\s*<script/.exec(indexHtml)?.[1] ?? '';
     expect(root).toContain(`<h1>${viLocale['landing.title']}</h1>`);
-    for (const key of ['landing.lead', 'landing.benefitBooks', 'landing.benefitFriends', 'landing.benefitNotebook', 'landing.benefitFree', 'landing.play'] as const) {
+    for (const key of ['landing.lead', 'landing.benefitTopics', 'landing.benefitFriends', 'landing.benefitNotebook', 'landing.benefitFree', 'landing.play'] as const) {
       expect(text(root), key).toContain(viLocale[key]);
     }
     expect(root).toContain('<a href="/login">');
-    expect(root).toContain('<a href="/bai/toan-2/">Các bài Toán 2</a>');
-    expect(root).toContain('<a href="/bai/tieng-viet-2/">Các bài Tiếng Việt 2</a>');
+    expect(root).toContain('<a href="/hoc/toan/">Các chủ đề Toán</a>');
+    expect(root).toContain('<a href="/hoc/tieng-viet/">Các chủ đề Tiếng Việt</a>');
   });
 
   it('has an English twin for every new line', () => {
-    for (const key of Object.keys(viLocale).filter((k) => /^(seo|landing|subjectPage|lessonPage|shareCard)\./.test(k))) expect(enLocale, key).toHaveProperty([key]);
+    for (const key of Object.keys(viLocale).filter((k) => /^(seo|landing|subjectPage|topicPage|shareCard)\./.test(k))) expect(enLocale, key).toHaveProperty([key]);
   });
 
   it('sets no script of its own besides the app\'s', () => {

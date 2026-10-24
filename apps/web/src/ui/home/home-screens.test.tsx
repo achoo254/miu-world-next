@@ -44,11 +44,11 @@ afterEach(() => {
 });
 
 describe('Home', () => {
-  it("names the textbook lesson and its printed pages in today's quests, and offers it as today's lesson away from home", async () => {
+  it("names the subject and topic of a learning quest in today's quests, and offers it as today's lesson away from home", async () => {
     stubServer(0, questListWithLesson);
     renderAt('/home');
-    const [daily, row] = await screen.findAllByText('Trang 10–12');
-    expect(row?.closest('[data-id="home-today-textbook-tv2-t01-b01"]')?.textContent).toBe('Tiếng Việt 2, tập một · Bài 1. Tôi là học sinh lớp 2Trang 10–12');
+    const [daily, row] = await screen.findAllByText('Đọc truyện và kể chuyện');
+    expect(row?.closest('[data-id="home-today-topic-tv2-t01-b01"]')?.textContent).toBe('Tiếng ViệtĐọc truyện và kể chuyện');
     expect(daily?.closest('[data-id="home-daily"]')).toBeTruthy();
     expect(document.querySelector('[data-id="home-daily-go"]')?.getAttribute('href')).toBe('/play?region=khu-rung-bi-mat&quest=tv2-t01-b01');
   });
@@ -183,15 +183,15 @@ describe('Map and region', () => {
     expect(await screen.findByRole('heading', { name: 'Chương 1' })).toBeTruthy();
   });
 
-  it('shows under the map which book and pages each open region\'s lessons come from, and opens the region', async () => {
+  it("shows under the map which subjects and topics each open region's lessons teach, and opens the region", async () => {
     stubServer(0, questListWithLesson);
     renderAt('/map');
-    expect(await screen.findByRole('heading', { name: 'Sách trong từng khu' })).toBeTruthy();
-    expect(document.querySelector('[data-id="map-books-khu-rung-bi-mat-0"]')?.textContent).toBe('Tiếng Việt 2, tập mộtTrang 10–121 bài');
-    // A region without textbook lessons says what it is for instead.
+    expect(await screen.findByRole('heading', { name: 'Bài học ở từng khu' })).toBeTruthy();
+    expect(document.querySelector('[data-id="map-books-khu-rung-bi-mat-0"]')?.textContent).toBe('Tiếng Việt1 bàiĐọc truyện và kể chuyện');
+    // A region without lessons says what it is for instead.
     const hub = document.querySelector('[data-id="map-books-trung-tam"]');
     expect(hub?.textContent).toContain('Trung tâm');
-    expect(hub?.querySelector('.textbook-ref-pages')).toBeNull();
+    expect(hub?.querySelector('.region-books-subject')).toBeNull();
     fireEvent.click(document.querySelector('[data-id="map-books-khu-rung-bi-mat"]') as HTMLElement);
     expect(await screen.findByRole('heading', { name: 'Chương 1' })).toBeTruthy();
   });
@@ -219,15 +219,15 @@ describe('Map and region', () => {
     expect(document.querySelector('[data-id="region-play-forest-ch2"]')).toBeNull();
   });
 
-  it('names the book, lesson and printed pages of a textbook quest, open from the start', async () => {
+  it('names the subject and topic of a learning quest, open from the start', async () => {
     stubServer(0, questListWithLesson);
     renderAt('/region/khu-rung-bi-mat');
-    const ref = await screen.findByText('Trang 10–12');
-    expect(ref.closest('[data-id="region-quest-textbook-tv2-t01-b01"]')?.textContent).toBe('Tiếng Việt 2, tập một · Bài 1. Tôi là học sinh lớp 2Trang 10–12');
+    const ref = await screen.findByText('Đọc truyện và kể chuyện');
+    expect(ref.closest('[data-id="region-quest-topic-tv2-t01-b01"]')?.textContent).toBe('Tiếng ViệtĐọc truyện và kể chuyện');
     expect(document.querySelector('[data-id="region-quest-tv2-t01-b01"]')?.getAttribute('data-state')).toBe('open');
     expect(document.querySelector('[data-id="region-play-tv2-t01-b01"]')?.getAttribute('href')).toBe('/play?region=khu-rung-bi-mat&quest=tv2-t01-b01');
-    // Quests outside the textbook show no page line.
-    expect(document.querySelector('[data-id="region-quest-textbook-forest-ch1"]')).toBeNull();
+    // Quests that teach no topic show no topic line.
+    expect(document.querySelector('[data-id="region-quest-topic-forest-ch1"]')).toBeNull();
   });
 
   it('refuses a region that is not open', async () => {
@@ -259,7 +259,7 @@ describe('HUD', () => {
     expect(screen.queryByRole('button', { name: /Quay lại/ })).toBeNull();
   });
 
-  it('names the lesson and pages of a textbook quest under its title', () => {
+  it('names the topic of a learning quest under its title', () => {
     const lesson = questListWithLesson().quests.at(-1) ?? null;
     render(
       <MemoryRouter>
@@ -268,7 +268,7 @@ describe('HUD', () => {
         </GameStoreContext.Provider>
       </MemoryRouter>,
     );
-    expect(document.querySelector('[data-id="hud-tracker-textbook"]')?.textContent).toBe('Bài 1. Tôi là học sinh lớp 2Trang 10–12');
+    expect(document.querySelector('[data-id="hud-tracker-topic"]')?.textContent).toBe('Đọc truyện và kể chuyện');
   });
 
   it('says where to walk when the next step waits at another place', () => {

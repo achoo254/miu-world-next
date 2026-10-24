@@ -46,7 +46,7 @@ export function questList(done: number = 0): QuestListResponse {
   };
 }
 
-/** `questList` plus an open textbook lesson in chapter 2 of the forest. */
+/** `questList` plus an open learning quest in chapter 2 of the forest. */
 export function questListWithLesson(done: number = 0): QuestListResponse {
   const { quests } = questList(done);
   const lesson = {
@@ -54,13 +54,13 @@ export function questListWithLesson(done: number = 0): QuestListResponse {
       id: 'tv2-t01-b01',
       region: 'khu-rung-bi-mat',
       chapter: 2,
-      title: 'Sâu Xanh vào lớp Hai',
+      title: 'Sâu Xanh đến trường',
       status: 'active' as const,
       summary: '{name} đi cùng Sâu Xanh.',
       texts: {},
       steps: [hello],
       reward: { xp: 80, coin: 15, skillXp: {}, items: {} },
-      textbook: { book: 'Tiếng Việt 2, tập một', lesson: 'Bài 1. Tôi là học sinh lớp 2', pages: [10, 12] as [number, number] },
+      topic: { id: 'doc-truyen', title: 'Đọc truyện và kể chuyện', subject: 'tieng-viet', subjectName: 'Tiếng Việt' },
     },
     state: 'open' as const,
     progress: { questId: 'tv2-t01-b01', completedSteps: [], completed: false, found: {}, stars: null },

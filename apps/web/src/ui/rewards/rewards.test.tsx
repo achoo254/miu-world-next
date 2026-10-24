@@ -149,7 +149,7 @@ describe('completion screens', () => {
 });
 
 describe('showing the result off', () => {
-  const LESSON_QUEST: ActiveQuestView = { ...QUEST, textbook: { book: 'Toán 2, tập một', lesson: 'Bài 1. Ôn tập các số đến 100', pages: [6, 8] } };
+  const LESSON_QUEST: ActiveQuestView = { ...QUEST, topic: { id: 'so-den-100', title: 'Số đến 100', subject: 'toan', subjectName: 'Toán' } };
   const LINES = [{ step: 'a', question: 'Câu hỏi?', answer: 'Đáp án' }];
 
   it('comes second: the vở page stays first, and the share button waits on the reward screen', () => {
@@ -162,7 +162,7 @@ describe('showing the result off', () => {
     expect(screen.getByRole('button', { name: /Về bản đồ/ })).toBeTruthy();
   });
 
-  it('is there for a quest with no textbook lesson too', () => {
+  it('is there for a quest with no topic too', () => {
     render(<CompletionSequence completion={completion({ levelAfter: 1 })} reward={REWARD} quest={QUEST} data={DATA} onMap={() => undefined} onExplore={() => undefined} />);
     expect(screen.getByRole('button', { name: /Khoe kết quả/ })).toBeTruthy();
   });

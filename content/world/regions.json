@@ -11,7 +11,6 @@
       "map": "forest-ch1",
       "music": "forest",
       "guide": "vet-xanh",
-      "book": "Tiếng Việt 2, tập một: bài 17–24",
       "hotspot": { "x": 83, "y": 44 },
       "backdrop": { "eye": [14, 17, 12], "target": [40, 13, 44], "fov": 55 },
       "events": ["rain-rainbow", "fireflies", "animal-visit"]
@@ -26,7 +25,6 @@
       "map": "lang-ven-song",
       "music": "forest",
       "guide": "cun-lua",
-      "book": "Tiếng Việt 2, tập một: bài 1–8",
       "hotspot": { "x": 17, "y": 65 },
       "backdrop": { "eye": [191, 22, 250], "target": [191, 15, 211], "fov": 58 },
       "events": ["rain-rainbow", "fireflies", "animal-visit"]
@@ -69,7 +67,6 @@
       "map": "truong-hoc",
       "music": "school",
       "guide": "su-tu-vang",
-      "book": "Toán 2, tập một: bài 1–6 · Tiếng Việt 2, tập một: bài 9–14",
       "hotspot": { "x": 30, "y": 88 },
       "backdrop": { "eye": [400, 22, 328], "target": [400, 18, 372], "fov": 64 },
       "events": ["rain-rainbow", "fireflies"]
@@ -84,7 +81,6 @@
       "map": "thu-vien",
       "music": "puzzle",
       "guide": "gau-truc",
-      "book": "Tiếng Việt 2, tập một: bài 15–16, ôn giữa học kì · Toán 2, tập một: bài 29–32",
       "hotspot": { "x": 24, "y": 22 },
       "backdrop": { "eye": [231, 22, 596], "target": [231, 16, 531], "fov": 58 },
       "events": ["rain-rainbow", "fireflies", "animal-visit"]
@@ -99,7 +95,6 @@
       "map": "lau-dai",
       "music": "quest",
       "guide": "huou-cao",
-      "book": "Toán 2, tập một: bài 25–28, 33–36 · Tiếng Việt 2, tập một: ôn cuối học kì",
       "hotspot": { "x": 52, "y": 22 },
       "backdrop": { "eye": [441, 28, 424], "target": [441, 22, 300], "fov": 58 },
       "events": ["rain-rainbow", "fireflies", "animal-visit"]
@@ -114,7 +109,6 @@
       "map": "xom-mai-am",
       "music": "home",
       "guide": "ba-gau-nau",
-      "book": "Tiếng Việt 2, tập một: bài 25–32",
       "hotspot": { "x": 17, "y": 44 },
       "backdrop": { "eye": [211, 22, 196], "target": [211, 15, 151], "fov": 58 },
       "events": ["rain-rainbow", "fireflies", "animal-visit"]
@@ -129,7 +123,6 @@
       "map": "cho-phien",
       "music": "school",
       "guide": "chim-canh-cut-pin",
-      "book": "Toán 2, tập một: bài 7–18",
       "hotspot": { "x": 50, "y": 65 },
       "backdrop": { "eye": [221, 22, 452], "target": [221, 15, 373], "fov": 58 },
       "events": ["rain-rainbow", "fireflies", "animal-visit"]
@@ -144,7 +137,6 @@
       "map": "nong-trai",
       "music": "forest",
       "guide": "bo-sua-mo",
-      "book": "Toán 2, tập một: bài 19–24",
       "hotspot": { "x": 83, "y": 65 },
       "backdrop": { "eye": [401, 22, 520], "target": [401, 15, 431], "fov": 58 },
       "events": ["rain-rainbow", "fireflies", "animal-visit"]

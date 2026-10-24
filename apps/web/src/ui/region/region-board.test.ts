@@ -3,7 +3,7 @@ import type { QuestSummary } from '@miu/schema/game';
 import { currentQuest, questForRegion } from '../player/player-data';
 import { questList } from '../player/test-fixtures';
 import { boardTitle } from './region-detail';
-import { boardStories, recommendedQuest, regionBooks, regionProgress } from './region-board';
+import { boardStories, recommendedQuest, regionProgress, regionSubjects } from './region-board';
 
 const [ch1, ch2] = questList(0).quests as [QuestSummary, QuestSummary];
 const as = (summary: QuestSummary, id: string, state: QuestSummary['state']): QuestSummary => ({ ...summary, quest: { ...summary.quest, id }, state });
@@ -25,22 +25,22 @@ describe('region board', () => {
     expect(recommendedQuest([ch2])).toBeNull();
   });
 
-  it('names each book of a region\'s lessons once, spanning its lowest to its highest page', () => {
-    const lesson = (id: string, region: string, book: string, pages: [number, number], status: 'active' | 'stub' = 'active'): QuestSummary =>
-      ({ ...ch1, quest: { ...ch1.quest, id, region, status, textbook: { book, lesson: id, pages } } }) as QuestSummary;
+  it("names each subject of a region's lessons once, with the topics they practise", () => {
+    const lesson = (id: string, region: string, subject: string, title: string, status: 'active' | 'stub' = 'active'): QuestSummary =>
+      ({ ...ch1, quest: { ...ch1.quest, id, region, status, topic: { id: title, title, subject, subjectName: subject === 'toan' ? 'Toán' : 'Tiếng Việt' } } }) as QuestSummary;
     const quests = [
-      lesson('a', 'lang-ven-song', 'Tiếng Việt 2, tập một', [10, 12]),
-      lesson('b', 'lang-ven-song', 'Toán 2, tập một', [6, 7]),
-      lesson('c', 'lang-ven-song', 'Tiếng Việt 2, tập một', [40, 43]),
-      lesson('d', 'lang-ven-song', 'Tiếng Việt 2, tập một', [18, 20]),
-      lesson('e', 'cho-phien', 'Toán 2, tập một', [50, 52]),
-      lesson('f', 'lang-ven-song', 'Toán 2, tập một', [90, 91], 'stub'),
+      lesson('a', 'lang-ven-song', 'tieng-viet', 'Đọc truyện'),
+      lesson('b', 'lang-ven-song', 'toan', 'Số đến 100'),
+      lesson('c', 'lang-ven-song', 'tieng-viet', 'Đọc thơ'),
+      lesson('d', 'lang-ven-song', 'tieng-viet', 'Đọc truyện'),
+      lesson('e', 'cho-phien', 'toan', 'Giờ và lịch'),
+      lesson('f', 'lang-ven-song', 'toan', 'Hình phẳng', 'stub'),
     ];
-    expect(regionBooks(quests, 'lang-ven-song')).toEqual([
-      { book: 'Tiếng Việt 2, tập một', pages: [10, 43], lessons: 3 },
-      { book: 'Toán 2, tập một', pages: [6, 7], lessons: 1 },
+    expect(regionSubjects(quests, 'lang-ven-song')).toEqual([
+      { subject: 'tieng-viet', subjectName: 'Tiếng Việt', topics: ['Đọc truyện', 'Đọc thơ'], lessons: 3 },
+      { subject: 'toan', subjectName: 'Toán', topics: ['Số đến 100'], lessons: 1 },
     ]);
-    expect(regionBooks(quests, 'trung-tam')).toEqual([]);
+    expect(regionSubjects(quests, 'trung-tam')).toEqual([]);
   });
 
   it('drops the region from a quest title on that region\'s own board', () => {

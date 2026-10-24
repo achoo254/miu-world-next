@@ -4,7 +4,6 @@
   "chapter": 3,
   "title": "Gấu Trúc Khò và đồng hồ tháp ngủ quên",
   "status": "active",
-  "lesson": "toan2-t1-b29",
   "topic": "gio-va-lich",
   "summary": "Gấu Trúc Khò, cháu của bác thủ thư Gấu Trúc Tròn, ngủ quên lên dây cót, thế là tháp đồng hồ cạnh thư viện chỉ giờ lung tung làm gà gáy giữa đêm; {name} cùng ông Khuê thợ đồng hồ và các bạn trên tháp tìm lại kim đồng hồ, đọc giờ sáng, chiều, tối, đêm, ghép đồng hồ kim với đồng hồ điện tử và đưa tháp về đúng giờ.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Tháp đồng hồ cao cạnh Thư viện: dưới chân tháp, bãi cỏ quanh tháp, phòng máy, kệ đồng hồ điện tử, ô cửa sổ tròn, chiếu nghỉ cầu thang xoắn, ban công mặt đồng hồ",
     "goal": "Đưa đồng hồ tháp chạy đúng giờ trở lại",
     "play": "Tìm kim đồng hồ, đọc giờ trên đồng hồ kim, ghép tranh với đồng hồ điện tử, quay giờ, ghép đồng hồ cùng thời gian",
-    "learn": "Toán 2 Bài 29: ngày – giờ (một ngày có 24 giờ, giờ buổi chiều, tối, đêm), giờ – phút (1 giờ = 60 phút, 15 phút, 30 phút)",
+    "learn": "Giờ trong ngày: một ngày có 24 giờ, cách gọi giờ buổi chiều, tối, đêm; giờ và phút: 1 giờ bằng 60 phút, kim phút chỉ số 3 là 15 phút, chỉ số 6 là 30 phút",
     "reward": "90 XP, 15 xu, Xem đồng hồ +2",
-    "next": "Bài 30 \"Ngày – tháng\""
+    "next": "Phòng lịch trên tháp của Voi Bảo, nơi tờ lịch bị mất mấy ngày"
   },
   "phases": {
     "hook": "na-ngu-quen",
@@ -108,15 +107,15 @@
       "lines": [
         {
           "speaker": "Ông Khuê",
-          "text": "Kim ngắn là kim giờ, kim dài là kim phút. Một ngày có 24 giờ, kim giờ chạy đủ hai vòng mặt đồng hồ."
+          "text": "Cây kim ngắn chỉ giờ, cây kim dài chỉ phút. Một ngày đêm kim ngắn đi hai vòng quanh mặt số, cộng lại đủ 24 giờ."
         },
         {
           "speaker": "Ông Khuê",
-          "text": "Buổi chiều người ta còn gọi theo cách khác: 1 giờ chiều là 13 giờ, 4 giờ chiều là 16 giờ, 8 giờ tối là 20 giờ."
+          "text": "Qua 12 giờ trưa, ta đếm tiếp 13, 14, 15… cho tới 24. Vậy 2 giờ chiều là 14 giờ, 6 giờ chiều là 18 giờ, còn 9 giờ tối là 21 giờ."
         },
         {
           "speaker": "Gấu Trúc Khò",
-          "text": "Hai mươi bốn giờ một ngày à? Vậy tớ ngủ hai mươi giờ thì vẫn còn bốn giờ để… gặm măng!"
+          "text": "Một ngày có 24 giờ à? Tớ ngủ mất 10 giờ thì vẫn còn 14 giờ để… nhai măng!"
         }
       ],
       "choices": [
@@ -129,9 +128,9 @@
         "title": "How many hours in a day?",
         "goTo": "Bring the hands up to the clock machine room, where Grandpa Khuê is polishing the gears",
         "lines": [
-          "The short hand is the hour hand, the long hand is the minute hand. A day has 24 hours, and the hour hand goes all the way round the clock face twice.",
-          "In the afternoon people also say it another way: 1 in the afternoon is 13 o'clock, 4 in the afternoon is 16 o'clock, 8 in the evening is 20 o'clock.",
-          "Twenty-four hours in a day? So if I sleep twenty hours, I still have four hours for... munching bamboo shoots!"
+          "The short hand shows the hour and the long hand shows the minutes. In one day and night the short hand goes twice round the face, which adds up to 24 hours.",
+          "After 12 noon we keep counting: 13, 14, 15... up to 24. So 2 in the afternoon is 14 o'clock, 6 in the afternoon is 18 o'clock, and 9 in the evening is 21 o'clock.",
+          "Twenty-four hours in a day? If I sleep 10 of them I still have 14 hours left for... chewing bamboo shoots!"
         ],
         "choices": [
           {
@@ -143,48 +142,46 @@
     },
     {
       "id": "cau-ca-buoi-chieu",
-      "title": "Nam câu cá lúc mấy giờ?",
+      "title": "Bác Tròn khép cửa sổ lúc mấy giờ?",
       "target": "toan2-cd6-b29-ong-khue",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Bức tranh thứ nhất trên tường phòng máy: Nam và bố ngồi câu cá bên hồ, đồng hồ bên cạnh chỉ giờ như hình. Số ? Nam làm gì lúc mấy giờ? Nam và bố đi câu cá lúc ? giờ chiều.",
+      "prompt": "Bức tranh thứ nhất treo trên tường phòng máy: bác thủ thư Gấu Trúc Tròn đang khép các cửa sổ phòng đọc khi nắng chiều đã dịu. Đồng hồ cạnh tranh chỉ như hình. Bác Tròn khép cửa sổ lúc mấy giờ chiều?",
       "mode": "read",
       "display": "analog",
       "time": {
-        "hour": 16,
+        "hour": 17,
         "minute": 0
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-1-a"
-      ],
       "support": {
         "guide": [
-          "Kim dài chỉ số 12 là giờ đúng.",
-          "Số mà kim ngắn chỉ vào là số giờ."
+          "Kim dài đứng thẳng ở số 12 nghĩa là giờ tròn, không có phút lẻ.",
+          "Đọc số mà kim ngắn đang chỉ, đó là số giờ."
         ],
-        "hint": "Kim ngắn đang chỉ số 4.",
+        "hint": "Kim ngắn đang hướng vào số 5.",
         "answer": {
-          "text": "4 giờ chiều (16 giờ)",
-          "explanation": "Kim ngắn chỉ 4, kim dài chỉ 12: 4 giờ chiều, còn gọi là 16 giờ."
+          "text": "5 giờ chiều, tức 17 giờ",
+          "explanation": "Kim ngắn chỉ 5, kim dài chỉ 12 nên là 5 giờ chiều. Theo cách đếm đủ 24 giờ thì đó là 17 giờ."
         }
       },
       "feedback": {
         "right": [
-          "Bốn giờ chiều, cá cắn câu đúng lúc luôn!",
-          "Ông Khuê vuốt chòm râu bạc: đọc giờ chuẩn như chuông nhà thờ.",
-          "Gấu Trúc Khò mở một mắt: cậu đọc nhanh hơn tớ thức dậy nhiều."
+          "Năm giờ chiều, nắng vàng nhạt rọi qua khung cửa phòng đọc!",
+          "Ông Khuê gật đầu: đọc giờ tròn mà cháu không chần chừ chút nào.",
+          "Gấu Trúc Khò mở hé một mắt, nói lí nhí: giờ ấy tớ vẫn còn ngủ trưa."
         ],
         "wrong": [
-          "Nhìn kim ngắn trước, nó chỉ vào số nào nhỉ?",
-          "Kim dài ở số 12 nghĩa là giờ tròn, không có phút lẻ đâu.",
-          "Kim dài và kim ngắn dễ lẫn lắm, kim giờ là kim ngắn hơn."
+          "Hãy tìm cây kim ngắn trước, nó đang nằm gần số nào nhất?",
+          "Kim dài ở số 12 thì phần phút là không, chỉ cần đọc giờ thôi.",
+          "Hai cây kim dễ nhầm lắm; cây ngắn hơn mới là kim giờ."
         ]
       },
       "answer": {
-        "hour": 16,
+        "hour": 17,
         "minute": 0
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "tranh-va-dong-ho-dien-tu",
@@ -193,162 +190,154 @@
       "target": "toan2-cd6-b29-cao-tuyet-bip",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Ba đồng hồ điện tử trong phòng máy đang hiện 19:00, 14:00 và 07:00. Tìm đồng hồ chỉ thời gian thích hợp với mỗi bức tranh.",
+      "prompt": "Ba đồng hồ điện tử trên kệ đang hiện 08:00, 20:00 và 13:00. Hãy xếp mỗi việc vào đồng hồ có giờ đúng với nó.",
       "groups": [
         {
-          "id": "nhom-19-00",
-          "label": "19:00"
+          "id": "nhom-08-00",
+          "label": "08:00"
         },
         {
-          "id": "nhom-14-00",
-          "label": "14:00"
+          "id": "nhom-20-00",
+          "label": "20:00"
         },
         {
-          "id": "nhom-07-00",
-          "label": "07:00"
+          "id": "nhom-13-00",
+          "label": "13:00"
         }
       ],
       "items": [
         {
-          "id": "tranh-nam-di-hoc-luc-7-gio-sang",
-          "label": "Nam đi học lúc 7 giờ sáng."
+          "id": "khi-du-day-tap-luc-8-gio-sang",
+          "label": "Khỉ Đu Dây tập thể dục lúc 8 giờ sáng."
         },
         {
-          "id": "tranh-viet-xem-bong-da-luc-7-gio-toi",
-          "label": "Việt xem bóng đá lúc 7 giờ tối."
+          "id": "meo-may-ke-chuyen-luc-8-gio-toi",
+          "label": "Mèo Xám Mây kể chuyện đêm lúc 8 giờ tối."
         },
         {
-          "id": "tranh-ro-bot-ve-tranh-luc-2-gio-chieu",
-          "label": "Rô-bốt vẽ tranh lúc 2 giờ chiều."
+          "id": "gau-tron-xep-sach-luc-1-gio-chieu",
+          "label": "Gấu Trúc Tròn xếp sách lên kệ lúc 1 giờ chiều."
         }
       ],
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-a",
-        "toan2-t1-b29-hoat-dong-2-b",
-        "toan2-t1-b29-hoat-dong-2-c"
-      ],
       "support": {
         "guide": [
-          "Giờ sáng giữ nguyên số; giờ chiều, tối thì cộng thêm 12.",
-          "7 giờ tối là 19 giờ, 2 giờ chiều là 14 giờ."
+          "Giờ buổi sáng giữ nguyên số; giờ chiều và tối thì cộng thêm 12.",
+          "8 giờ tối ứng với 8 + 12, còn 1 giờ chiều ứng với 1 + 12."
         ],
-        "hint": "7 giờ sáng là 07:00, còn 7 giờ tối là 19:00.",
+        "hint": "8 giờ sáng ghi là 08:00, còn 8 giờ tối ghi là 20:00.",
         "answer": {
-          "text": "Nam đi học lúc 7 giờ sáng. – 07:00; Việt xem bóng đá lúc 7 giờ tối. – 19:00; Rô-bốt vẽ tranh lúc 2 giờ chiều. – 14:00",
-          "explanation": "Nam đi học lúc 7 giờ sáng: 07:00. Việt xem bóng đá lúc 7 giờ tối: 19:00. Rô-bốt vẽ tranh lúc 2 giờ chiều: 14:00."
+          "text": "Khỉ Đu Dây tập thể dục lúc 8 giờ sáng. – 08:00; Mèo Xám Mây kể chuyện đêm lúc 8 giờ tối. – 20:00; Gấu Trúc Tròn xếp sách lúc 1 giờ chiều. – 13:00",
+          "explanation": "Tập thể dục lúc 8 giờ sáng là 08:00. Kể chuyện đêm lúc 8 giờ tối là 20:00. Xếp sách lúc 1 giờ chiều là 13:00."
         }
       },
       "feedback": {
         "right": [
-          "Ba bức tranh tìm đúng đồng hồ, phòng máy sáng đèn xanh!",
-          "Cậu không bị lừa bởi hai số 7 sáng và tối, giỏi thật.",
-          "Cáo Tuyết Bíp vẫy đuôi trắng: 19 giờ là lúc tớ tắt đèn kệ đấy."
+          "Cả ba việc đã về đúng đồng hồ, kệ điện tử nháy đèn xanh!",
+          "8 giờ sáng hay 8 giờ tối đều không làm bạn bối rối chút nào.",
+          "Cáo Tuyết Bíp vẫy đuôi trắng: 20 giờ là lúc tớ kể chuyện cho cả kệ nghe."
         ],
         "wrong": [
-          "7 giờ sáng và 7 giờ tối khác nhau đấy, soi lại nhé.",
-          "Giờ chiều phải cộng thêm 12 khi đọc trên đồng hồ điện tử.",
-          "Rô-bốt vẽ tranh buổi chiều, đồng hồ nào hiện giờ chiều?"
+          "8 giờ sáng và 8 giờ tối nhìn giống nhau nhưng khác đồng hồ đấy.",
+          "Giờ buổi chiều khi ghi trên đồng hồ điện tử phải cộng thêm 12.",
+          "Xếp sách lúc đầu giờ chiều, đồng hồ nào hiện số bắt đầu bằng 13?"
         ]
       },
       "answer": {
         "assignment": {
-          "tranh-nam-di-hoc-luc-7-gio-sang": "nhom-07-00",
-          "tranh-viet-xem-bong-da-luc-7-gio-toi": "nhom-19-00",
-          "tranh-ro-bot-ve-tranh-luc-2-gio-chieu": "nhom-14-00"
+          "khi-du-day-tap-luc-8-gio-sang": "nhom-08-00",
+          "meo-may-ke-chuyen-luc-8-gio-toi": "nhom-20-00",
+          "gau-tron-xep-sach-luc-1-gio-chieu": "nhom-13-00"
         }
-      }
+      },
+      "objective": "gio-va-lich-ngay-gio"
     },
     {
       "id": "doc-sach-buoi-toi",
-      "title": "Nam đọc sách lúc mấy giờ?",
+      "title": "Cáo Tuyết Bíp đọc sách lúc mấy giờ?",
       "target": "toan2-cd6-b29-cao-tuyet-bip",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Bức tranh thứ hai: Nam và bố ngồi ghế đọc sách, ngoài cửa sổ trời đã tối. Số ? Nam làm gì lúc mấy giờ? Nam và bố đọc sách lúc ? giờ tối.",
+      "prompt": "Bức tranh thứ hai: Cáo Tuyết Bíp bật ngọn đèn bàn nhỏ để đọc sách, ngoài khung cửa trời đã nhá nhem tối. Đồng hồ treo trên giá sách chỉ như hình. Cáo Tuyết Bíp đọc sách lúc mấy giờ tối?",
       "mode": "read",
       "display": "analog",
       "time": {
-        "hour": 20,
+        "hour": 19,
         "minute": 0
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-1-b"
-      ],
       "support": {
         "guide": [
-          "Đọc số mà kim ngắn chỉ.",
-          "Trời tối thì đó là giờ buổi tối."
+          "Trời đã tối thì đó là giờ buổi tối.",
+          "Kim dài ở số 12 thì chỉ cần đọc số giờ."
         ],
-        "hint": "Kim ngắn chỉ số 8, kim dài chỉ số 12.",
+        "hint": "Kim ngắn đang chỉ số 7.",
         "answer": {
-          "text": "8 giờ tối (20 giờ)",
-          "explanation": "Đồng hồ chỉ 8 giờ; trời tối nên là 8 giờ tối, còn gọi là 20 giờ."
+          "text": "7 giờ tối (19 giờ)",
+          "explanation": "Kim ngắn chỉ 7, kim dài chỉ 12, trời đã tối nên là 7 giờ tối, còn gọi là 19 giờ."
         }
       },
       "feedback": {
         "right": [
-          "Tám giờ tối, giờ đọc truyện ấm áp của hai bố con!",
-          "Cáo Tuyết Bíp đọc to: 8 giờ tối, tức là 20 giờ, chính xác!",
-          "Đồng hồ tháp vừa điểm tám tiếng boong theo lời cậu."
+          "Bảy giờ tối, ánh đèn bàn của Cáo Tuyết Bíp thật ấm áp!",
+          "Cáo Tuyết Bíp phe phẩy đuôi: bạn đọc giờ trơn tru như đọc cả trang sách vậy.",
+          "Chiếc chuông nhỏ trên giá sách khẽ ngân một tiếng đáp lời."
         ],
         "wrong": [
-          "Kim ngắn chưa chỉ số 9 đâu, nhìn kĩ lại.",
-          "Giờ đúng thì kim dài đứng ở số 12 nhé.",
-          "Thử chạm vào kim ngắn rồi đọc số nó chỉ xem."
+          "Số mà kim ngắn chỉ nhỏ hơn 8, nhìn kĩ lại nhé.",
+          "Muốn đọc giờ tròn, hãy chắc chắn kim dài đang đứng ở số 12.",
+          "Đặt ngón tay lên kim ngắn rồi đếm tới số nó chỉ xem sao."
         ]
       },
       "answer": {
-        "hour": 20,
+        "hour": 19,
         "minute": 0
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "nam-ngu-luc-dem",
-      "title": "Nam đi ngủ lúc mấy giờ?",
+      "title": "Mây ngắm sao lúc mấy giờ?",
       "goTo": "Chạy xuống dưới chân tháp đồng hồ, Gấu Trúc Khò ôm bức tranh thứ ba ngủ say",
       "target": "toan2-cd6-b29-gau-truc-kho",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Bức tranh thứ ba: Nam nằm ngủ ngon lành trên giường. Số ? Nam làm gì lúc mấy giờ? Lúc ? giờ đêm, Nam đang ngủ.",
+      "prompt": "Bức tranh thứ ba: Mèo Xám Mây cuộn tròn bên cửa sổ ngắm sao trời, cả thư viện đã yên ắng. Đồng hồ trong tranh chỉ như hình. Mèo Xám Mây ngắm sao lúc mấy giờ tối?",
       "mode": "read",
       "display": "analog",
       "time": {
-        "hour": 22,
+        "hour": 21,
         "minute": 0
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-1-c"
-      ],
       "support": {
         "guide": [
-          "Đêm khuya là sau 9 giờ tối.",
-          "Kim ngắn chỉ số nào thì là mấy giờ."
+          "Khi mọi nơi đã yên ắng và sao đã lên, đó là giờ buổi tối.",
+          "Kim dài chỉ số 12, vậy chỉ cần đọc số giờ."
         ],
-        "hint": "Kim ngắn chỉ số 10.",
+        "hint": "Kim ngắn nằm đúng trên số 9.",
         "answer": {
-          "text": "10 giờ đêm (22 giờ)",
-          "explanation": "Đồng hồ chỉ 10 giờ; Nam đang ngủ nên là 10 giờ đêm, tức 22 giờ."
+          "text": "9 giờ tối (21 giờ)",
+          "explanation": "Kim ngắn chỉ 9, kim dài chỉ 12; trời đã tối nên là 9 giờ tối, tức 21 giờ."
         }
       },
       "feedback": {
         "right": [
-          "Mười giờ đêm, Nam ngủ say, Gấu Trúc Khò ghen tị ra mặt!",
-          "Cậu đọc giờ đêm mà mắt vẫn tỉnh như sáo.",
-          "Suỵt… Gấu Trúc Khò thì thầm: đúng 10 giờ đêm rồi."
+          "Chín giờ đêm, sao sáng lấp lánh trên nóc tháp!",
+          "Giờ khuya mà bạn đọc vẫn tỉnh táo, đáng nể thật.",
+          "Gấu Trúc Khò thì thào: suỵt, chín giờ rồi, tớ đang mơ dở."
         ],
         "wrong": [
-          "Kim ngắn đang chỉ số lớn hơn 9 một chút đấy.",
-          "Đây là giờ đúng, kim dài vẫn ở số 12.",
-          "Đếm các số trên mặt đồng hồ tới chỗ kim ngắn nào."
+          "Kim ngắn đã đi qua số 8 rồi, thử nhìn số kế tiếp xem.",
+          "Giờ tròn thì kim dài vẫn nằm yên ở số 12.",
+          "Đếm lần lượt các số trên mặt đồng hồ cho tới chỗ cây kim ngắn."
         ]
       },
       "answer": {
-        "hour": 22,
+        "hour": 21,
         "minute": 0
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "ban-gai-ngu-luc-23-gio",
@@ -357,81 +346,77 @@
       "target": "toan2-cd6-b29-meo-xam-may",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Tranh bên cửa sổ: bạn gái ngủ trên giường, ngoài trời tối có sao, đồng hồ kim chỉ 11 giờ. Chọn đồng hồ chỉ thời gian thích hợp với mỗi bức tranh. a) A 11:00 B 23:00 Quay đồng hồ điện tử về đúng giờ em chọn.",
+      "prompt": "Tranh bên ô cửa sổ tròn: Mèo Xám Mây đếm sao khi bầu trời đã tối đen, đồng hồ kim treo gần đó chỉ 10 giờ. Chọn đồng hồ điện tử chỉ giờ đêm đúng với bức tranh: A 10:00, B 22:00. Rồi quay đồng hồ điện tử về đúng giờ bạn chọn.",
       "mode": "set",
       "display": "digital",
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-3-a"
-      ],
       "support": {
         "guide": [
-          "Trời tối có sao là buổi đêm.",
-          "11 giờ đêm trên đồng hồ điện tử là 11 + 12."
+          "Bầu trời tối đen, có sao là buổi đêm.",
+          "Giờ đêm trên đồng hồ điện tử bằng giờ trên mặt kim cộng thêm 12."
         ],
-        "hint": "Không phải 11:00 buổi trưa đâu, trời đang tối mà.",
+        "hint": "10:00 là mười giờ sáng, trời lúc ấy sáng rực chứ không có sao.",
         "answer": {
-          "text": "B 23:00",
-          "explanation": "Bạn gái ngủ lúc 11 giờ đêm, đồng hồ điện tử hiện 23:00 (đồng hồ B)."
+          "text": "B 22:00",
+          "explanation": "Tranh vẽ lúc 10 giờ đêm, đồng hồ điện tử hiện 22:00 (đồng hồ B)."
         }
       },
       "feedback": {
         "right": [
-          "Đồng hồ B, 23 giờ đêm, chuẩn cả sao trên trời!",
-          "Quay về 23:00 khéo ghê, không lệch một giờ nào.",
-          "Mèo Xám Mây ngáp dài: 23 giờ là giờ cuộn tròn ngủ ngon nhất đấy."
+          "Đồng hồ B, hai mươi hai giờ, khớp với cả bầu trời đầy sao!",
+          "Quay đúng 22:00, chữ số không lệch lấy một nấc.",
+          "Mèo Xám Mây ngáp một cái thật dài: giờ này là giờ nằm co cho ấm."
         ],
         "wrong": [
-          "11:00 là giữa trưa, mà ngoài trời đang tối om kìa.",
-          "Giờ đêm thì đồng hồ điện tử hiện số lớn hơn 12.",
-          "Thử bấm nút giảm giờ từ 0 xuống xem nhanh hơn không."
+          "10:00 là giờ sáng, mà ngoài trời đang tối om kia mà.",
+          "Giờ đêm thì con số trên đồng hồ điện tử phải lớn hơn 12.",
+          "Hãy lấy 10 cộng với 12 rồi quay tới số vừa ra."
         ]
       },
       "answer": {
-        "hour": 23,
+        "hour": 22,
         "minute": 0
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "da-bong-luc-15-gio",
-      "title": "Giờ đá bóng ban ngày",
+      "title": "Giờ tập đu dây giữa ban ngày",
       "target": "toan2-cd6-b29-meo-xam-may",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Tranh thứ hai bên cửa sổ: hai bạn và Rô-bốt đá bóng trên bãi cỏ giữa ban ngày, đồng hồ kim chỉ 3 giờ. Chọn đồng hồ chỉ thời gian thích hợp với mỗi bức tranh. b) A 03:00 B 15:00 Quay đồng hồ điện tử về đúng giờ em chọn.",
+      "prompt": "Tranh thứ hai bên cửa sổ: Khỉ Đu Dây và Gấu Cơm Nắm tập đu dây ngoài bãi cỏ giữa buổi nắng chang chang, đồng hồ kim chỉ 2 giờ. Chọn đồng hồ điện tử chỉ giờ đúng với bức tranh: A 02:00, B 14:00. Rồi quay đồng hồ điện tử về đúng giờ bạn chọn.",
       "mode": "set",
       "display": "digital",
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-3-b"
-      ],
       "support": {
         "guide": [
-          "3 giờ sáng thì mọi người còn đang ngủ.",
-          "Đá bóng ban ngày là 3 giờ chiều: 3 + 12."
+          "Hai giờ sáng thì cả xóm còn đang ngủ.",
+          "Tập đu dây dưới nắng là hai giờ chiều: 2 cộng 12."
         ],
-        "hint": "3 giờ chiều trên đồng hồ điện tử là 15:00.",
+        "hint": "2 giờ chiều ghi trên đồng hồ điện tử là 14:00.",
         "answer": {
-          "text": "B 15:00",
-          "explanation": "Các bạn đá bóng lúc 3 giờ chiều, đồng hồ điện tử hiện 15:00 (đồng hồ B)."
+          "text": "B 14:00",
+          "explanation": "Các bạn tập đu dây lúc 2 giờ chiều, đồng hồ điện tử hiện 14:00 (đồng hồ B)."
         }
       },
       "feedback": {
         "right": [
-          "Mười lăm giờ, trận bóng giữa chiều nắng đẹp!",
-          "Rô-bốt trong tranh sút một quả ăn mừng cậu đấy.",
-          "Hai câu chọn đồng hồ đều trúng, Mèo Xám Mây vẫy đuôi tít mù."
+          "Mười bốn giờ, sợi dây đu đưa qua lại giữa chiều nắng!",
+          "Khỉ Đu Dây tung người xoay một vòng mừng bạn chọn đúng.",
+          "Hai bức tranh bên cửa sổ đều ghép đúng, Mèo Xám Mây gật gù hài lòng."
         ],
         "wrong": [
-          "03:00 là ba giờ sáng, ai lại đi đá bóng lúc ấy.",
-          "Trời đang sáng trưng, đó là giờ buổi chiều đấy.",
-          "Cộng thêm 12 vào 3 để ra giờ buổi chiều nhé."
+          "02:00 là hai giờ sáng, ai lại đi tập đu dây lúc ấy.",
+          "Bầu trời đang sáng, vậy phải là giờ buổi chiều chứ.",
+          "Thêm 12 vào số 2 sẽ ra giờ buổi chiều."
         ]
       },
       "answer": {
-        "hour": 15,
+        "hour": 14,
         "minute": 0
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "len-day-cot",
@@ -442,7 +427,7 @@
       "lines": [
         {
           "speaker": "Ông Khuê",
-          "text": "Giờ đến phần phút. Kim dài đi hết một vòng là 60 phút, tức là 1 giờ. Kim dài chỉ số 3 là 15 phút, chỉ số 6 là 30 phút."
+          "text": "Giờ tới chuyện phút. Kim dài đi trọn một vòng mất 60 phút, bằng 1 giờ. Nó dừng ở số 3 là đã qua 15 phút, dừng ở số 6 là đã qua 30 phút, tức nửa giờ."
         },
         {
           "speaker": "Gấu Trúc Khò",
@@ -463,7 +448,7 @@
         "title": "How do we wind the clock?",
         "goTo": "Go back to the clock machine room, where Grandpa Khuê hands you the winding key",
         "lines": [
-          "Now for the minutes. When the long hand goes all the way round, that's 60 minutes, which is 1 hour. When the long hand points to 3, that's 15 minutes; when it points to 6, that's 30 minutes.",
+          "Now for the minutes. The long hand takes 60 minutes to go once all the way round, which equals 1 hour. When it rests on 3, 15 minutes have gone by; when it rests on 6, 30 minutes have gone by, which is half an hour.",
           "I'll wind the clock! Do you want me to wind it super fast to catch up, or slowly so the clock doesn't get a fright?"
         ],
         "choices": [
@@ -480,185 +465,177 @@
     },
     {
       "id": "viet-hoc-bai-buoi-sang",
-      "title": "Việt học bài mấy giờ?",
+      "title": "Ông Khuê lau bánh răng lúc nào?",
       "target": "toan2-cd6-b29-ong-khue",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Dây cót đã căng, bức tranh lớp Hai hiện lên: Việt ngồi viết bài. Số ? Mỗi bạn làm gì lúc mấy giờ? Việt học bài lúc ? giờ ? phút sáng.",
+      "prompt": "Dây cót đã căng, một bức tranh mới hiện lên: ông Khuê đang cặm cụi lau chùi bánh răng trong phòng máy khi nắng sớm vừa lọt qua khe cửa. Đồng hồ trên tường chỉ như hình. Ông lau bánh răng lúc mấy giờ, mấy phút sáng?",
       "mode": "read",
       "display": "analog",
       "time": {
-        "hour": 8,
+        "hour": 7,
         "minute": 15
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-1-a"
-      ],
       "support": {
         "guide": [
-          "Kim dài chỉ số 3 là 15 phút.",
-          "Kim ngắn vừa qua số nào thì đó là số giờ."
+          "Kim dài dừng ở số 3 nghĩa là đã qua 15 phút.",
+          "Kim ngắn vừa đi qua số nào thì đó là số giờ."
         ],
-        "hint": "Kim ngắn vừa qua số 8, kim dài chỉ số 3.",
+        "hint": "Kim ngắn vừa qua số 7, kim dài ở số 3.",
         "answer": {
-          "text": "8 giờ 15 phút sáng",
-          "explanation": "Kim ngắn vừa qua 8, kim dài chỉ 3: Việt học bài lúc 8 giờ 15 phút sáng."
+          "text": "7 giờ 15 phút sáng",
+          "explanation": "Kim ngắn vừa qua 7, kim dài chỉ 3: ông Khuê lau bánh răng lúc 7 giờ 15 phút sáng."
         }
       },
       "feedback": {
         "right": [
-          "Tám giờ mười lăm, Việt chăm học, cậu đọc giờ còn chăm hơn!",
-          "Kim dài ở số 3 là 15 phút, cậu nhớ ngay.",
-          "Phòng máy kêu tích tắc vui vẻ như vỗ tay."
+          "Bảy giờ mười lăm sáng, bánh răng sáng loáng cả lên!",
+          "Ông Khuê cười hiền: cháu nhìn kim dài là biết ngay mười lăm phút.",
+          "Cả phòng máy tích tắc rộn ràng như đang vỗ tay."
         ],
         "wrong": [
-          "Kim dài ở số 3 thì là mấy phút nhỉ?",
-          "Kim ngắn mới vừa qua số 8 thôi, chưa tới 9 đâu.",
-          "Đọc giờ trước, rồi mới đọc phút sau nhé."
+          "Số 3 trên mặt đồng hồ ứng với bao nhiêu phút nhỉ?",
+          "Kim ngắn mới qua số 7 một chút, chưa chạm số 8 đâu.",
+          "Đọc phần giờ trước, xong rồi mới đọc phần phút."
         ]
       },
       "answer": {
-        "hour": 8,
+        "hour": 7,
         "minute": 15
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "nam-lam-bai-buoi-chieu",
-      "title": "Nam làm bài tập lúc nào?",
+      "title": "Gấu Cơm Nắm nghỉ chân lúc nào?",
       "goTo": "Xuống chiếu nghỉ cầu thang xoắn, Gấu Cơm Nắm đang mở hộp cơm",
       "target": "toan2-cd6-b29-gau-com-nam",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Bức tranh tiếp theo: Nam ngồi làm bài tập. Số ? Mỗi bạn làm gì lúc mấy giờ? Nam làm bài tập lúc ? giờ ? phút chiều.",
+      "prompt": "Bức tranh tiếp theo: Gấu Cơm Nắm ngồi nghỉ chân trên chiếu nghỉ cầu thang xoắn và nhấm nháp chiếc bánh xế. Đồng hồ treo bên lan can chỉ như hình. Gấu Cơm Nắm nghỉ chân lúc mấy giờ, mấy phút chiều?",
       "mode": "read",
       "display": "analog",
       "time": {
-        "hour": 14,
+        "hour": 15,
         "minute": 30
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-1-b"
-      ],
       "support": {
         "guide": [
-          "Kim dài chỉ số 6 nghĩa là được nửa vòng: 30 phút.",
-          "Kim ngắn nằm giữa hai số thì lấy số nhỏ hơn."
+          "Kim dài ở số 6 nghĩa là đã đi nửa vòng, tức 30 phút.",
+          "Kim ngắn nằm giữa hai số thì lấy số nhỏ hơn làm giờ."
         ],
-        "hint": "Kim ngắn nằm giữa số 2 và số 3.",
+        "hint": "Kim ngắn nằm giữa số 3 và số 4.",
         "answer": {
-          "text": "2 giờ 30 phút chiều (14 giờ 30 phút)",
-          "explanation": "Kim ngắn giữa 2 và 3, kim dài chỉ 6: 2 giờ 30 phút chiều, tức 14 giờ 30 phút."
+          "text": "3 giờ 30 phút chiều (15 giờ 30 phút)",
+          "explanation": "Kim ngắn ở giữa 3 và 4, kim dài chỉ 6: đó là 3 giờ 30 phút chiều, tức 15 giờ 30 phút."
         }
       },
       "feedback": {
         "right": [
-          "Hai giờ ba mươi chiều, bài tập của Nam xong veo!",
-          "Kim ngắn nằm giữa 2 và 3 mà cậu vẫn đọc đúng.",
-          "Gấu Cơm Nắm ghi ngay vào sổ: 14 giờ 30 phút."
+          "Ba giờ rưỡi chiều, đúng giờ ăn bánh xế của Gấu Cơm Nắm!",
+          "Kim ngắn đứng lưng chừng mà bạn vẫn đọc trúng phóc.",
+          "Gấu Cơm Nắm chia cho bạn nửa chiếc bánh để cảm ơn."
         ],
         "wrong": [
-          "Kim ngắn ở giữa hai số thì lấy số bé hơn làm giờ.",
-          "Kim dài chỉ số 6 là 30 phút đó.",
-          "Chưa tới 3 giờ đâu, kim ngắn mới đi được nửa đường."
+          "Khi kim ngắn nằm giữa hai số, hãy lấy số bé hơn làm giờ.",
+          "Kim dài hướng xuống số 6 là bao nhiêu phút nhỉ?",
+          "Kim ngắn chưa chạm tới số 4 đâu, mới đi được nửa đoạn."
         ]
       },
       "answer": {
-        "hour": 14,
+        "hour": 15,
         "minute": 30
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "mi-an-toi",
-      "title": "Mi ăn tối lúc mấy giờ?",
+      "title": "Gấu Cơm Nắm hâm cháo lúc mấy giờ?",
       "target": "toan2-cd6-b29-gau-com-nam",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Mùi cơm thơm phức từ bức tranh thứ ba: Mi đang ăn cơm. Số ? Mỗi bạn làm gì lúc mấy giờ? Mi ăn tối lúc ? giờ ? phút.",
+      "prompt": "Mùi cháo nóng thơm lừng bay ra từ bức tranh thứ ba: Gấu Cơm Nắm đang hâm lại nồi cháo cho bữa tối. Đồng hồ cạnh bếp chỉ như hình. Gấu Cơm Nắm hâm cháo lúc mấy giờ, mấy phút tối?",
       "mode": "read",
       "display": "analog",
       "time": {
-        "hour": 18,
+        "hour": 20,
         "minute": 15
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-1-c"
-      ],
       "support": {
         "guide": [
-          "Ăn tối là giờ buổi tối, sau 6 giờ chiều.",
-          "Kim dài ở số 3 thì thêm 15 phút."
+          "Đã tối rồi thì giờ này thuộc buổi tối.",
+          "Kim dài ở số 3 nghĩa là thêm 15 phút sau giờ tròn."
         ],
-        "hint": "Kim ngắn vừa qua số 6, kim dài chỉ số 3.",
+        "hint": "Kim ngắn vừa qua số 8, kim dài ở số 3.",
         "answer": {
-          "text": "6 giờ 15 phút tối (18 giờ 15 phút)",
-          "explanation": "Mi ăn tối lúc 6 giờ 15 phút tối, tức 18 giờ 15 phút."
+          "text": "8 giờ 15 phút tối (20 giờ 15 phút)",
+          "explanation": "Kim ngắn vừa qua 8, kim dài chỉ 3, trời đã tối: 8 giờ 15 phút tối, tức 20 giờ 15 phút."
         }
       },
       "feedback": {
         "right": [
-          "Sáu giờ mười lăm, giờ cơm tối đây rồi, chúc Mi ngon miệng!",
-          "Gấu Cơm Nắm xoa bụng: nghe ăn tối là bụng tớ réo ùng ục.",
-          "Đọc giờ ăn tối chuẩn không cần chỉnh luôn."
+          "Tám giờ mười lăm tối, nồi cháo sôi lục bục thơm nức!",
+          "Gấu Cơm Nắm xoa bụng cười: nghe tới cháo là bụng réo liền.",
+          "Bạn đọc cả giờ lẫn phút mà không cần ai nhắc."
         ],
         "wrong": [
-          "Kim ngắn mới vừa qua số 6 thôi nhé.",
-          "Kim dài chỉ số 3, không phải số 6 đâu.",
-          "Thử đếm 5 phút cho mỗi số kim dài đi qua."
+          "Kim ngắn vừa qua số 8 thôi, đừng đọc thành số 9.",
+          "Kim dài đang ở số 3, đâu phải số 6.",
+          "Mỗi số trên mặt đồng hồ ứng với 5 phút, thử đếm từ số 12 sang số 3."
         ]
       },
       "answer": {
-        "hour": 18,
+        "hour": 20,
         "minute": 15
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "ro-bot-ngu-dem",
-      "title": "Rô-bốt ngủ lúc mấy giờ?",
+      "title": "Khò ngủ gật bên chuông lúc nào?",
       "goTo": "Ghé lại dưới chân tháp đồng hồ, Gấu Trúc Khò giơ bức tranh cuối hàng",
       "target": "toan2-cd6-b29-gau-truc-kho",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Bức tranh cuối hàng: Rô-bốt cũng biết đi ngủ. Số ? Mỗi bạn làm gì lúc mấy giờ? Lúc ? giờ ? phút đêm, Rô-bốt đang ngủ.",
+      "prompt": "Bức tranh cuối hàng: Gấu Trúc Khò gục đầu ngủ ngay bên quả chuông lớn của tháp, ngoài kia đêm đã sâu. Đồng hồ trong tranh chỉ như hình. Khò ngủ gật lúc mấy giờ, mấy phút đêm?",
       "mode": "read",
       "display": "analog",
       "time": {
-        "hour": 22,
+        "hour": 23,
         "minute": 30
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-1-d"
-      ],
       "support": {
         "guide": [
-          "Kim ngắn giữa hai số thì đọc số nhỏ hơn.",
-          "Kim dài chỉ số 6 là nửa giờ."
+          "Kim dài ở số 6 là đã qua nửa giờ.",
+          "Kim ngắn nằm giữa hai số thì đọc số nhỏ hơn."
         ],
-        "hint": "Kim ngắn nằm giữa số 10 và số 11.",
+        "hint": "Kim ngắn nằm giữa số 11 và số 12.",
         "answer": {
-          "text": "10 giờ 30 phút đêm (22 giờ 30 phút)",
-          "explanation": "Kim ngắn giữa 10 và 11, kim dài chỉ 6: 10 giờ 30 phút đêm, tức 22 giờ 30 phút."
+          "text": "11 giờ 30 phút đêm (23 giờ 30 phút)",
+          "explanation": "Kim ngắn giữa 11 và 12, kim dài chỉ 6: 11 giờ 30 phút đêm, tức 23 giờ 30 phút."
         }
       },
       "feedback": {
         "right": [
-          "Mười giờ rưỡi đêm, Rô-bốt tắt đèn bíp bíp đi ngủ!",
-          "Cậu đọc được cả giờ của rô-bốt, siêu thật đấy.",
-          "Gấu Trúc Khò khen: bốn bức tranh, bốn giờ đúng."
+          "Mười một giờ rưỡi đêm, Khò ngủ khò khò bên chuông luôn!",
+          "Giờ khuya khoắt mà bạn vẫn đọc trúng, giỏi lắm.",
+          "Ông Khuê khẽ giơ ngón cái: bốn bức tranh, bốn lần đọc đúng."
         ],
         "wrong": [
-          "Kim ngắn chưa chạm số 11 đâu, còn ở giữa mà.",
-          "Kim dài chỉ xuống số 6, vậy là bao nhiêu phút?",
-          "Giờ đêm vẫn đọc giờ trước, phút sau nhé."
+          "Kim ngắn chưa chạm số 12, nó còn ở lưng chừng.",
+          "Kim dài chỉ xuống số 6, vậy đó là bao nhiêu phút?",
+          "Giờ đêm cũng đọc giờ trước, phút sau như mọi lần."
         ]
       },
       "answer": {
-        "hour": 22,
+        "hour": 23,
         "minute": 30
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "ghep-dong-ho-cung-gio",
@@ -667,278 +644,266 @@
       "target": "toan2-cd6-b29-cao-tuyet-bip",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Trên bàn phòng máy có bốn đồng hồ kim và bốn đồng hồ điện tử 18:15, 22:30, 19:00, 14:30; đồng hồ kim mẫu chỉ 10 giờ 30 phút đã ghép sẵn với 22:30. Tìm hai đồng hồ chỉ cùng thời gian vào buổi chiều, tối hoặc đêm.",
+      "prompt": "Trên bàn phòng máy có bốn đồng hồ kim và bốn đồng hồ điện tử hiện 16:15, 21:30, 20:00, 13:30. Hãy ghép mỗi đồng hồ kim với đồng hồ điện tử chỉ cùng thời điểm của buổi chiều, tối hoặc đêm.",
       "groups": [
         {
-          "id": "nhom-18-15",
-          "label": "18:15"
+          "id": "nhom-16-15",
+          "label": "16:15"
         },
         {
-          "id": "nhom-22-30",
-          "label": "22:30"
+          "id": "nhom-21-30",
+          "label": "21:30"
         },
         {
-          "id": "nhom-19-00",
-          "label": "19:00"
+          "id": "nhom-20-00",
+          "label": "20:00"
         },
         {
-          "id": "nhom-14-30",
-          "label": "14:30"
+          "id": "nhom-13-30",
+          "label": "13:30"
         }
       ],
       "items": [
         {
           "id": "kim-dong-ho-kim-mau",
-          "label": "Đồng hồ kim mẫu",
+          "label": "Đồng hồ kim thứ nhất",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
-              "hour": 22,
+              "hour": 21,
               "minute": 30
             }
           }
         },
         {
           "id": "kim-dong-ho-kim-thu-nhat",
-          "label": "Đồng hồ kim thứ nhất",
+          "label": "Đồng hồ kim thứ hai",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
-              "hour": 18,
+              "hour": 16,
               "minute": 15
             }
           }
         },
         {
           "id": "kim-dong-ho-kim-thu-hai",
-          "label": "Đồng hồ kim thứ hai",
+          "label": "Đồng hồ kim thứ ba",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
-              "hour": 14,
+              "hour": 13,
               "minute": 30
             }
           }
         },
         {
           "id": "kim-dong-ho-kim-thu-ba",
-          "label": "Đồng hồ kim thứ ba",
+          "label": "Đồng hồ kim thứ tư",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
-              "hour": 19,
+              "hour": 20,
               "minute": 0
             }
           }
         }
       ],
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-2-a",
-        "toan2-t1-b29-hoat-dong-2-2-b",
-        "toan2-t1-b29-hoat-dong-2-2-c"
-      ],
       "support": {
         "guide": [
-          "Đọc giờ trên đồng hồ kim trước.",
-          "Buổi chiều, tối, đêm thì cộng thêm 12 vào số giờ."
+          "Đọc giờ trên đồng hồ kim trước, rồi mới tìm số điện tử.",
+          "Chiều, tối, đêm thì lấy số giờ trên mặt kim cộng thêm 12."
         ],
-        "hint": "Đồng hồ kim chỉ 7 giờ đúng ghép với 19:00.",
+        "hint": "Đồng hồ kim chỉ đúng 8 giờ ghép với 20:00.",
         "answer": {
-          "text": "Mẫu – 22:30; thứ nhất – 18:15; thứ hai – 14:30; thứ ba – 19:00",
-          "explanation": "Mẫu 10 giờ 30 phút đêm – 22:30; 6 giờ 15 phút tối – 18:15; 2 giờ 30 phút chiều – 14:30; 7 giờ tối – 19:00."
+          "text": "Thứ nhất – 21:30; thứ hai – 16:15; thứ ba – 13:30; thứ tư – 20:00",
+          "explanation": "Thứ nhất: 9 giờ 30 phút tối, tức 21:30. Thứ hai: 4 giờ 15 phút chiều, tức 16:15. Thứ ba: 1 giờ 30 phút chiều, tức 13:30. Thứ tư: 8 giờ tối, tức 20:00."
         }
       },
       "feedback": {
         "right": [
-          "Bốn cặp đồng hồ nắm tay nhau, kêu tích tắc cùng nhịp!",
-          "Cậu đổi giờ chiều tối sang đồng hồ điện tử nhanh như máy.",
-          "Cáo Tuyết Bíp kêu bíp bíp: hai đồng hồ trông khác mà cùng giờ đấy!"
+          "Bốn cặp đồng hồ đã nắm tay nhau, cùng tích tắc một nhịp!",
+          "Bạn đổi giờ chiều, tối sang số điện tử nhanh hơn cả cái máy.",
+          "Cáo Tuyết Bíp kêu bíp bíp: hai mặt đồng hồ khác nhau mà chung một giờ!"
         ],
         "wrong": [
-          "Một đồng hồ kim đang ghép nhầm bạn rồi.",
-          "Nhớ cộng 12 vào giờ khi ghép với đồng hồ điện tử.",
-          "Kim dài ở số 3 là 15 phút, ở số 6 là 30 phút."
+          "Có một đồng hồ kim đang đứng cạnh nhầm bạn rồi.",
+          "Đừng quên cộng 12 vào giờ khi sang đồng hồ điện tử.",
+          "Kim dài ở số 3 là 15 phút, ở số 6 là 30 phút, nhớ chưa?"
         ]
       },
       "answer": {
         "assignment": {
-          "kim-dong-ho-kim-mau": "nhom-22-30",
-          "kim-dong-ho-kim-thu-nhat": "nhom-18-15",
-          "kim-dong-ho-kim-thu-hai": "nhom-14-30",
-          "kim-dong-ho-kim-thu-ba": "nhom-19-00"
+          "kim-dong-ho-kim-mau": "nhom-21-30",
+          "kim-dong-ho-kim-thu-nhat": "nhom-16-15",
+          "kim-dong-ho-kim-thu-hai": "nhom-13-30",
+          "kim-dong-ho-kim-thu-ba": "nhom-20-00"
         }
-      }
+      },
+      "objective": "gio-va-lich-ngay-gio"
     },
     {
       "id": "thap-ve-dung-gio-hoc-bai",
-      "title": "Quay tháp về 9 giờ 30 phút",
+      "title": "Quay tháp về 10 giờ 30 phút",
       "goTo": "Lên phòng máy đồng hồ, ông Khuê nắm cần quay kim tháp",
       "target": "toan2-cd6-b29-ong-khue",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Giờ là lúc đưa đồng hồ tháp về đúng giờ! Mỗi bức tranh của Nam có một đồng hồ điện tử, đây là 09:30. Nam học bài. Số ? Nam làm gì lúc mấy giờ? Nam học bài lúc ? giờ ? phút sáng. Quay kim đồng hồ tháp chỉ đúng giờ đó.",
+      "prompt": "Đã đến lúc đưa đồng hồ tháp về đúng giờ! Cửa phòng truyện thiếu nhi mở lúc 10:30 theo đồng hồ điện tử. Đó là mấy giờ, mấy phút sáng? Quay kim đồng hồ tháp chỉ đúng giờ đó.",
       "mode": "set",
       "display": "analog",
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-3-a"
-      ],
       "support": {
         "guide": [
-          "09:30 là 9 giờ 30 phút sáng.",
-          "30 phút thì kim dài quay xuống số 6."
+          "10:30 nghĩa là 10 giờ 30 phút sáng.",
+          "Muốn có 30 phút, kim dài phải quay xuống số 6."
         ],
-        "hint": "Kim dài chỉ số 6, kim ngắn giữa số 9 và số 10.",
+        "hint": "Kim dài chỉ số 6, kim ngắn nằm giữa số 10 và số 11.",
         "answer": {
-          "text": "9 giờ 30 phút sáng",
-          "explanation": "Đồng hồ điện tử 09:30 là 9 giờ 30 phút sáng: kim giờ giữa 9 và 10, kim phút chỉ 6."
+          "text": "10 giờ 30 phút sáng",
+          "explanation": "Đồng hồ điện tử 10:30 là 10 giờ 30 phút sáng: kim giờ ở giữa 10 và 11, kim phút chỉ 6."
         }
       },
       "feedback": {
         "right": [
-          "Boong! Tháp đồng hồ điểm chín rưỡi sáng, đúng từng phút!",
-          "Kim tháp to đùng mà cậu quay nhẹ như không.",
-          "Gà trống trên sân gáy xin lỗi vì lúc nãy gáy nhầm giờ."
+          "Boong! Tháp đồng hồ điểm mười giờ rưỡi, không lệch một phút!",
+          "Cây kim tháp to đùng mà bạn xoay nhẹ như lông vũ.",
+          "Con gà trống trên nóc tháp gáy một tiếng xin lỗi vì đã gáy nhầm lúc nửa đêm."
         ],
         "wrong": [
-          "Kim dài cần đứng ở số 6 cho 30 phút.",
-          "Nam học bài buổi sáng, kim ngắn ở gần số 9.",
-          "Đọc 09:30: số trước dấu hai chấm là giờ, số sau là phút."
+          "Để có 30 phút, kim dài phải dừng ở số 6.",
+          "Buổi sáng, kim ngắn phải nằm quanh khoảng số 10.",
+          "Trên 10:30, con số trước dấu hai chấm là giờ, con số sau là phút."
         ]
       },
       "answer": {
-        "hour": 9,
+        "hour": 10,
         "minute": 30
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "thap-gio-thu-vien",
-      "title": "Giờ Nam ở thư viện",
+      "title": "Giờ phòng đọc mở lại",
       "target": "toan2-cd6-b29-ong-khue",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Đồng hồ điện tử trong tranh thứ hai hiện 15:15. Nam đọc sách. Số ? Nam làm gì lúc mấy giờ? Nam ở thư viện lúc ? giờ ? phút chiều. Quay kim đồng hồ tháp chỉ đúng giờ đó.",
+      "prompt": "Đồng hồ điện tử trong tranh thứ hai hiện 13:15, đó là lúc phòng đọc mở cửa trở lại sau giờ nghỉ trưa. Đó là mấy giờ, mấy phút chiều? Quay kim đồng hồ tháp chỉ đúng giờ đó.",
       "mode": "set",
       "display": "analog",
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-3-b"
-      ],
       "support": {
         "guide": [
-          "15 giờ là 3 giờ chiều: 15 bớt 12.",
-          "Mười lăm phút sau giờ đúng, kim dài dừng ở số 3."
+          "13 giờ là 1 giờ chiều: lấy 13 bớt 12.",
+          "Mười lăm phút sau giờ tròn thì kim dài dừng ở số 3."
         ],
-        "hint": "Kim ngắn vừa qua số 3, kim dài chỉ số 3.",
+        "hint": "Kim ngắn vừa qua số 1, kim dài chỉ số 3.",
         "answer": {
-          "text": "3 giờ 15 phút chiều (15 giờ 15 phút)",
-          "explanation": "15:15 là 3 giờ 15 phút chiều: kim giờ vừa qua 3, kim phút chỉ 3."
+          "text": "1 giờ 15 phút chiều (13 giờ 15 phút)",
+          "explanation": "13:15 là 1 giờ 15 phút chiều: kim giờ vừa qua 1, kim phút chỉ 3."
         }
       },
       "feedback": {
         "right": [
-          "Ba giờ mười lăm chiều, thư viện mở cửa đón Nam!",
-          "Đổi 15 giờ thành 3 giờ chiều nhanh ghê.",
-          "Hai kim cùng chỉ số 3 trông vui mắt chưa kìa."
+          "Một giờ mười lăm chiều, phòng đọc đón những vị khách đầu tiên!",
+          "Bạn đổi 13 giờ thành 1 giờ chiều nhanh như chớp.",
+          "Hai cây kim tháp chỉ về số một và số ba trông thật ngộ nghĩnh."
         ],
         "wrong": [
-          "15 giờ bớt đi 12 thì là mấy giờ chiều?",
-          "Kim dài chỉ số 3 cho 15 phút nhé.",
-          "Mặt đồng hồ kim chỉ có số từ 1 đến 12 thôi đấy."
+          "13 bớt 12 còn mấy? Kim ngắn phải chỉ số đó.",
+          "Kim dài đứng ở số 3 mới là 15 phút.",
+          "Mặt đồng hồ kim chỉ có các số từ 1 tới 12 thôi nhé."
         ]
       },
       "answer": {
-        "hour": 15,
+        "hour": 13,
         "minute": 15
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "thap-gio-tan-hoc",
-      "title": "Giờ tan học của Nam",
+      "title": "Giờ thi đu dây bắt đầu",
       "goTo": "Ra ban công mặt đồng hồ, Khỉ Đu Dây đu trên kim tháp chờ quay",
       "target": "toan2-cd6-b29-khi-du-day",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Tranh thứ ba: Nam chạy ra cổng Trường Tiểu học, đồng hồ điện tử hiện 16:00. Số ? Nam làm gì lúc mấy giờ? Nam tan học lúc ? giờ chiều. Quay kim đồng hồ tháp chỉ đúng giờ đó.",
+      "prompt": "Tranh thứ ba: cuộc thi đu dây của Khỉ Đu Dây sắp bắt đầu, đồng hồ điện tử ở ban công hiện 15:00. Đó là mấy giờ chiều? Quay kim đồng hồ tháp chỉ đúng giờ đó.",
       "mode": "set",
       "display": "analog",
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-3-c"
-      ],
       "support": {
         "guide": [
-          "16 giờ là 4 giờ chiều.",
-          "Giờ đúng thì kim dài thẳng lên số 12."
+          "15 giờ chính là 3 giờ chiều.",
+          "Giờ tròn thì kim dài chỉ thẳng lên số 12."
         ],
-        "hint": "Kim ngắn chỉ số 4, kim dài chỉ số 12.",
+        "hint": "Kim ngắn chỉ số 3, kim dài chỉ số 12.",
         "answer": {
-          "text": "4 giờ chiều, tức 16:00",
-          "explanation": "16:00 là 4 giờ chiều: kim giờ chỉ 4, kim phút chỉ 12."
+          "text": "3 giờ chiều, tức 15:00",
+          "explanation": "Đồng hồ điện tử 15:00 nghĩa là 3 giờ chiều, nên kim ngắn hướng vào số 3 còn kim dài đứng ở số 12."
         }
       },
       "feedback": {
         "right": [
-          "Bốn giờ chiều, trống tan trường tùng tùng tùng!",
-          "Nam chạy ào ra cổng đúng giờ cậu quay.",
-          "Khỉ Đu Dây đánh dấu: giờ tan học đã đúng."
+          "Ba giờ chiều, cuộc thi đu dây bắt đầu đúng giờ!",
+          "Khỉ Đu Dây vút lên sợi dây, reo lên mừng cú quay của bạn.",
+          "Kim tháp đã vào đúng chỗ, tiếng chuông ngân dài trên ban công."
         ],
         "wrong": [
-          "Giờ đúng thì kim phút nằm ở số 12.",
-          "16 bớt 12 còn mấy? Đó là số kim ngắn cần chỉ.",
-          "Tan học buổi chiều, đừng để kim chỉ giờ sáng nhé."
+          "Giờ tròn thì cây kim phút phải nằm ở số 12.",
+          "Lấy 15 bớt 12 rồi chỉ vào số vừa ra bằng kim ngắn.",
+          "Giờ này là buổi chiều, đừng để kim ngắn chỉ giờ sáng nhé."
         ]
       },
       "answer": {
-        "hour": 16,
+        "hour": 15,
         "minute": 0
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "thap-gio-rua-bat",
-      "title": "Giờ Nam rửa bát",
+      "title": "Giờ tháp thắp đèn lần cuối",
       "target": "toan2-cd6-b29-khi-du-day",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Tranh cuối cùng: Nam rửa bát, đồng hồ điện tử hiện 19:15. Số ? Nam làm gì lúc mấy giờ? Nam rửa bát lúc ? giờ ? phút tối. Quay kim đồng hồ tháp chỉ đúng giờ đó lần cuối.",
+      "prompt": "Tranh cuối cùng: Voi Bảo thắp ngọn đèn lớn trên đỉnh tháp, đồng hồ điện tử hiện 19:30. Đó là mấy giờ, mấy phút tối? Quay kim đồng hồ tháp chỉ đúng giờ đó, lần quay cuối cùng.",
       "mode": "set",
       "display": "analog",
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b29-hoat-dong-2-3-d"
-      ],
       "support": {
         "guide": [
           "19 giờ là 7 giờ tối.",
-          "Thêm 15 phút thì kim dài chỉ số 3."
+          "Thêm 30 phút thì kim dài chỉ xuống số 6."
         ],
-        "hint": "Kim ngắn vừa qua số 7, kim dài chỉ số 3.",
+        "hint": "Kim ngắn nằm giữa số 7 và số 8, kim dài chỉ số 6.",
         "answer": {
-          "text": "7 giờ 15 phút tối (19 giờ 15 phút)",
-          "explanation": "19:15 là 7 giờ 15 phút tối: kim giờ vừa qua 7, kim phút chỉ 3."
+          "text": "7 giờ 30 phút tối (19 giờ 30 phút)",
+          "explanation": "19:30 là 7 giờ 30 phút tối: kim giờ ở giữa 7 và 8, kim phút chỉ 6."
         }
       },
       "feedback": {
         "right": [
-          "Bảy giờ mười lăm tối, bát đĩa sạch bong, tháp chạy đúng giờ rồi!",
-          "Lần quay cuối hoàn hảo, đồng hồ tháp hết ngủ gật.",
-          "Gấu Trúc Khò vỗ tay rồi… ngủ tiếp, nhưng lần này đồng hồ vẫn chạy."
+          "Bảy giờ rưỡi tối, ngọn đèn đỉnh tháp bừng sáng!",
+          "Lần quay cuối cực kì chuẩn, đồng hồ tháp hết ngủ gật rồi.",
+          "Gấu Trúc Khò vỗ tay bồm bộp rồi lại… ngáp, nhưng đồng hồ vẫn chạy đều."
         ],
         "wrong": [
-          "19 giờ là 7 giờ tối, kim ngắn ở gần số 7.",
-          "Còn 15 phút nữa, kim dài phải ở số 3.",
-          "Thử bớt 12 khỏi 19 rồi quay lại nhé."
+          "19 bớt 12 còn 7, kim ngắn phải ở quanh số 7.",
+          "Nửa giờ thì kim dài phải dừng ở số 6.",
+          "Kim ngắn nằm giữa số 7 và 8 chứ chưa tới số 8 đâu."
         ]
       },
       "answer": {
         "hour": 19,
-        "minute": 15
-      }
+        "minute": 30
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "huy-hieu-giu-gio",

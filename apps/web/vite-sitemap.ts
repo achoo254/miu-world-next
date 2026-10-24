@@ -1,5 +1,5 @@
 // `robots.txt` and `sitemap.xml` of the build. A release lets crawlers in (the API stays closed) and lists the home page,
-// the subject pages and every lesson page; any other build (review, E2E, local) tells every crawler to stay out and
+// the subject pages and every topic page; any other build (review, E2E, local) tells every crawler to stay out and
 // has no sitemap, so a copy of the game on another address is never indexed.
 //
 // A page's `lastmod` is the day its content last changed. Nothing here asks git: `seo-lastmod.json` (next to this file)
@@ -13,7 +13,7 @@ import type { Plugin } from 'vite';
 import { absoluteUrl, escapeHtml } from './vite-seo-meta.ts';
 
 export interface SitemapPage {
-  /** The page's address (`/` or `/bai/toan-2/`). */
+  /** The page's address (`/` or `/hoc/toan/`). */
   path: string;
   /** Changes when what the page says changes. */
   hash: string;

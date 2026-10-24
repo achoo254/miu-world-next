@@ -1,14 +1,13 @@
-// Quick facts under the world map (owner, 03/10/2026: each map shows, on the map screen, which book and which
-// pages it covers): a card per open region naming each textbook its lessons come from, with the pages they
-// span and how many lessons, so a parent or teacher who set "trang 25" sees at once where to go. A region
-// without textbook lessons says what it is for instead. Tapping a card opens the region.
+// Quick facts under the world map (owner, 03/10/2026: each map shows, on the map screen, what it teaches): a card
+// per open region naming each subject its lessons teach, the topics they practise and how many lessons, so anyone
+// looking for a topic sees at once where to go. A region without lessons says what it is for instead. Tapping a
+// card opens the region.
 import { Link } from 'react-router';
 import type { CharacterDto, QuestSummary } from '@miu/schema/game';
-import { Bi, T } from '../i18n/use-t';
+import { T } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { say } from '../player/player-data';
-import { pageText } from '../player/textbook-ref';
-import { regionBooks } from './region-board';
+import { regionSubjects } from './region-board';
 import { REGIONS } from './regions';
 
 export function RegionBooks({ quests, character }: { quests: readonly QuestSummary[]; character: CharacterDto }) {
@@ -21,21 +20,19 @@ export function RegionBooks({ quests, character }: { quests: readonly QuestSumma
       </h2>
       <ul className="region-books-list">
         {open.map((region) => {
-          const books = regionBooks(quests, region.id);
+          const subjects = regionSubjects(quests, region.id);
           return (
             <li key={region.id}>
               <Link to={`/region/${region.id}`} className="region-books-card" data-id={`map-books-${region.id}`}>
                 <span className="region-books-name">{say(region.name, character)}</span>
-                {books.length > 0 ? (
-                  books.map((b, i) => (
-                    <span key={b.book} className="region-books-row" data-id={`map-books-${region.id}-${i}`}>
-                      <span className="region-books-book">{b.book}</span>
-                      <strong className="textbook-ref-pages">
-                        <Bi {...pageText(b.pages)} />
-                      </strong>
+                {subjects.length > 0 ? (
+                  subjects.map((s, i) => (
+                    <span key={s.subject} className="region-books-row" data-id={`map-books-${region.id}-${i}`}>
+                      <strong className="region-books-subject">{s.subjectName}</strong>
                       <span className="region-books-count">
-                        <T k="region.lessonCount" params={{ count: b.lessons }} />
+                        <T k="region.lessonCount" params={{ count: s.lessons }} />
                       </span>
+                      <span className="region-books-topics">{s.topics.join(' · ')}</span>
                     </span>
                   ))
                 ) : (

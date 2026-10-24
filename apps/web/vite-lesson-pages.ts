@@ -1,8 +1,8 @@
 // The public pages of the build that are plain HTML, so a search engine or a chat app reads them without running the
-// game: a page per subject (`/bai/toan-2/`) and a page per textbook lesson that has a quest (`/bai/<slug>/`). Each one
-// says what the game offers for that lesson and leads to it ("Chơi bài này"). What they say comes from
-// lesson-page-data.ts (the books' tables of contents and the allowlisted quest fields), the words from the locale,
-// the preview picture from the share cards.
+// game: a page per subject (`/hoc/toan/`) and a page per topic that an active quest teaches (`/hoc/toan/so-den-100/`).
+// Each one says what the topic practises and what the game offers for it, and leads to it ("Chơi chủ đề này"). What
+// they say comes from lesson-page-data.ts (the topics and the allowlisted quest fields), the words from the locale,
+// the preview picture from the share cards. No page names a book, a grade, a lesson number or a page.
 //
 // A page is complete HTML with its own CSP meta, the shared icon links, a canonical address, preview tags, a
 // LearningResource JSON-LD block (the only inline script, data not code) and one same-origin module script: the
@@ -10,10 +10,10 @@
 // bundle when the pages are written.
 import { createHash } from 'node:crypto';
 import type { Plugin, Rollup } from 'vite';
-import { LESSON_SUBJECTS, lessonPagePath, splitLessonTitle, subjectPagePath, type LessonSubject } from '../../packages/schema/src/lesson-pages.ts';
-import { GENERAL_SHARE_CARD, lessonShareCard } from '../../packages/schema/src/share-cards.ts';
+import { GENERAL_SHARE_CARD, topicShareCard } from '../../packages/schema/src/share-cards.ts';
+import { TOPIC_SUBJECTS, subjectPagePath, topicPagePath, type TopicSubject } from '../../packages/schema/src/topic-pages.ts';
 import { pairOf } from './src/ui/i18n/i18n.ts';
-import { readLessonPageData, type LessonPageData } from './lesson-page-data.ts';
+import { readTopicPageData, type TopicPageData } from './lesson-page-data.ts';
 import { assetUrlResolver } from './vite-asset-url.ts';
 import { APP_LOGO, iconLinkTags } from './vite-app-icons.ts';
 import { SITE_NAME, absoluteUrl, escapeHtml, renderHeadTag, shellHash, socialTags } from './vite-seo-meta.ts';
@@ -30,7 +30,7 @@ export interface PageAssets {
 }
 
 export interface SitePage {
-  /** The page's address, ending in a slash (`/bai/toan-2/`). */
+  /** The page's address, ending in a slash (`/hoc/toan/`). */
   path: string;
   /** Changes when what the page says changes (not when the bundle's file names do): the sitemap's `lastmod` follows it. */
   hash: string;
@@ -61,17 +61,17 @@ interface PageParts {
 
 export interface Site {
   pages: SitePage[];
-  /** The page nginx answers a missing lesson page with (`/404.html`): a real 404 that is not indexed, with ways back. */
+  /** The page nginx answers a missing topic page with (`/404.html`): a real 404 that is not indexed, with ways back. */
   notFound(assets: PageAssets): string;
 }
 
 /**
- * The pages of the repo's content: the subject pages that have lessons, then every lesson page, in book order. `csp` is
+ * The pages of the repo's content: per subject that has topics, its page then its topic pages in order. `csp` is
  * the policy each page carries in its own meta (the game's, `CONTENT_SECURITY_POLICY` of vite.config.ts).
  */
 export function buildSite({ contentDir, assetsDir, csp }: { contentDir: string; assetsDir: string; csp: string }): Site {
   const url = assetUrlResolver(assetsDir);
-  const lessons = readLessonPageData(contentDir);
+  const topics = readTopicPageData(contentDir);
   const imageAlt = t('seo.imageAlt');
 
   /**
@@ -128,18 +128,12 @@ ${interactive ? `  <script type="module" crossorigin src="${escapeHtml(assets.sc
     render: (assets) => document(parts, assets),
   });
 
-  const lessonsOf = (subject: LessonSubject): LessonPageData[] => lessons.filter((page) => page.subject.slug === subject.slug);
+  const topicsOf = (subject: TopicSubject): TopicPageData[] => topics.filter((page) => page.subject.id === subject.id);
   const li = (href: string, text: string, attrs = ''): string => `<li><a href="${escapeHtml(href)}"${attrs}>${escapeHtml(text)}</a></li>`;
 
-  const subjectPage = (subject: LessonSubject): SitePage => {
+  const subjectPage = (subject: TopicSubject): SitePage => {
     const params = { subject: subject.name };
-    const units = [...new Set(lessonsOf(subject).map((page) => page.unit))];
-    const sections = units.map((unit) => {
-      const items = lessonsOf(subject)
-        .filter((page) => page.unit === unit)
-        .map((page) => li(lessonPagePath(page.slug), page.title));
-      return `        <section><h2>${escapeHtml(unit)}</h2><ul class="lesson-list">${items.join('')}</ul></section>`;
-    });
+    const items = topicsOf(subject).map((page) => li(topicPagePath(page.topic), page.topic.title));
     const path = subjectPagePath(subject);
     const title = t('subjectPage.title', params);
     const description = t('subjectPage.description', params);
@@ -160,33 +154,32 @@ ${interactive ? `  <script type="module" crossorigin src="${escapeHtml(assets.sc
       body: `      <article class="panel lesson-panel" data-id="subject-page">
         <h1>${escapeHtml(t('subjectPage.heading', params))}</h1>
         <p class="hint">${escapeHtml(t('subjectPage.lead'))}</p>
-${sections.join('\n')}
+        <ul class="lesson-list">${items.join('')}</ul>
         <a class="btn btn--primary" href="/login" data-id="subject-play">${escapeHtml(t('landing.play'))}</a>
       </article>`,
     });
   };
 
-  const lessonPage = (page: LessonPageData, previous: LessonPageData | undefined, next: LessonPageData | undefined): SitePage => {
-    const { label } = splitLessonTitle(page.title);
-    const review = label === null;
-    const params = { lesson: page.title, subject: page.subject.name, page: page.page, unit: page.unit };
-    const path = lessonPagePath(page.slug);
-    const title = t(review ? 'lessonPage.titleReview' : 'lessonPage.title', params);
+  const topicPage = (page: TopicPageData, previous: TopicPageData | undefined, next: TopicPageData | undefined): SitePage => {
+    const params = { topic: page.topic.title, subject: page.subject.name };
+    const path = topicPagePath(page.topic);
+    const title = t('topicPage.title', params);
     const first = page.activities[0];
-    // `activities` is never empty: a lesson has a page only because a quest plays it.
-    const description = t(review ? 'lessonPage.descriptionReview' : 'lessonPage.description', { ...params, teaser: teaser(first?.summary ?? '', 110) });
+    const description = t('topicPage.description', { ...params, teaser: teaser(page.topic.summary, 140) });
+    const objectives = page.topic.objectives.map((objective) => `          <li>${escapeHtml(objective.text)}</li>`).join('\n');
+    // `activities` is never empty: a topic has a page only because a quest teaches it.
     const activities = page.activities
       .map(
-        (activity) => `          <li><h3>${escapeHtml(activity.title)}</h3><p>${escapeHtml(activity.summary)}</p><p class="hint">${escapeHtml(t('lessonPage.activityRegion', { region: activity.regionName }))}</p></li>`,
+        (activity) => `          <li><h3>${escapeHtml(activity.title)}</h3><p>${escapeHtml(activity.summary)}</p><p class="hint">${escapeHtml(t('topicPage.activityRegion', { region: activity.regionName }))}</p></li>`,
       )
       .join('\n');
-    const neighbour = (other: LessonPageData | undefined, key: 'lessonPage.previous' | 'lessonPage.next'): string =>
-      other ? `<a class="btn btn--ghost btn--sm" href="${escapeHtml(lessonPagePath(other.slug))}">${escapeHtml(t(key))}: ${escapeHtml(other.title)}</a>` : '';
+    const neighbour = (other: TopicPageData | undefined, key: 'topicPage.previous' | 'topicPage.next'): string =>
+      other ? `<a class="btn btn--ghost btn--sm" href="${escapeHtml(topicPagePath(other.topic))}">${escapeHtml(t(key))}: ${escapeHtml(other.topic.title)}</a>` : '';
     return sitePage({
       path,
       title,
       description,
-      image: lessonShareCard(page.slug),
+      image: topicShareCard(page.topic.id),
       structured: {
         '@context': 'https://schema.org',
         '@type': 'LearningResource',
@@ -196,37 +189,40 @@ ${sections.join('\n')}
         inLanguage: 'vi',
         isAccessibleForFree: true,
         learningResourceType: 'Trò chơi học tập',
-        educationalLevel: 'Lớp 2',
-        teaches: page.title,
+        teaches: page.topic.title,
         about: page.subject.name,
         provider: { '@type': 'Organization', name: SITE_NAME, url: absoluteUrl('/') },
       },
       body: `      <article class="panel lesson-panel" data-id="lesson-article">
-        <p class="badge">${escapeHtml(t('lessonPage.bookLine', params))}</p>
-        <h1>${escapeHtml(t(review ? 'lessonPage.headingReview' : 'lessonPage.heading', params))}</h1>
-        <h2>${escapeHtml(t('lessonPage.activities'))}</h2>
+        <p class="badge">${escapeHtml(page.subject.name)}</p>
+        <h1>${escapeHtml(t('topicPage.heading', params))}</h1>
+        <p>${escapeHtml(page.topic.summary)}</p>
+        <h2>${escapeHtml(t('topicPage.objectives'))}</h2>
+        <ul class="lesson-objectives">
+${objectives}
+        </ul>
+        <h2>${escapeHtml(t('topicPage.activities'))}</h2>
         <ul class="lesson-activities">
 ${activities}
         </ul>
-        <a class="btn btn--primary" href="/login" data-id="lesson-play" data-play-region="${escapeHtml(first?.region ?? '')}" data-play-quest="${escapeHtml(first?.id ?? '')}">${escapeHtml(t('lessonPage.play'))}</a>
-        <p class="hint">${escapeHtml(t('lessonPage.playHint'))}</p>
+        <a class="btn btn--primary" href="/login" data-id="lesson-play" data-play-region="${escapeHtml(first?.region ?? '')}" data-play-quest="${escapeHtml(first?.id ?? '')}">${escapeHtml(t('topicPage.play'))}</a>
+        <p class="hint">${escapeHtml(t('topicPage.playHint'))}</p>
         <nav class="lesson-nav" aria-label="${escapeHtml(page.subject.name)}">
-${[neighbour(previous, 'lessonPage.previous'), neighbour(next, 'lessonPage.next'), `<a class="btn btn--ghost btn--sm" href="${escapeHtml(subjectPagePath(page.subject))}">${escapeHtml(t('lessonPage.allLessons', { subject: page.subject.name }))}</a>`]
+${[neighbour(previous, 'topicPage.previous'), neighbour(next, 'topicPage.next'), `<a class="btn btn--ghost btn--sm" href="${escapeHtml(subjectPagePath(page.subject))}">${escapeHtml(t('topicPage.allTopics', { subject: page.subject.name }))}</a>`]
   .filter((link) => link !== '')
   .map((link) => `          ${link}`)
   .join('\n')}
         </nav>
-        <p class="note">${escapeHtml(t('lessonPage.note'))}</p>
       </article>`,
     });
   };
 
   const pages: SitePage[] = [];
-  for (const subject of LESSON_SUBJECTS) {
-    const own = lessonsOf(subject);
-    if (own.length === 0) continue;
+  const subjects = TOPIC_SUBJECTS.filter((subject) => topicsOf(subject).length > 0);
+  for (const subject of subjects) {
+    const own = topicsOf(subject);
     pages.push(subjectPage(subject));
-    own.forEach((page, i) => pages.push(lessonPage(page, own[i - 1], own[i + 1])));
+    own.forEach((page, i) => pages.push(topicPage(page, own[i - 1], own[i + 1])));
   }
   const notFound = (assets: PageAssets): string =>
     frame(
@@ -236,9 +232,9 @@ ${[neighbour(previous, 'lessonPage.previous'), neighbour(next, 'lessonPage.next'
         body: `      <article class="panel lesson-panel" data-id="not-found">
         <h1>${escapeHtml(t('notFound.title'))}</h1>
         <p class="hint">${escapeHtml(t('notFound.hint'))}</p>
-        <a class="btn btn--primary" href="/">${escapeHtml(t('lessonPage.toGame'))}</a>
+        <a class="btn btn--primary" href="/">${escapeHtml(t('topicPage.toGame'))}</a>
         <nav class="lesson-nav">
-          ${LESSON_SUBJECTS.map((subject) => `<a class="btn btn--ghost btn--sm" href="${escapeHtml(subjectPagePath(subject))}">${escapeHtml(t('lessonPage.allLessons', { subject: subject.name }))}</a>`).join('\n          ')}
+          ${subjects.map((subject) => `<a class="btn btn--ghost btn--sm" href="${escapeHtml(subjectPagePath(subject))}">${escapeHtml(t('topicPage.allTopics', { subject: subject.name }))}</a>`).join('\n          ')}
         </nav>
       </article>`,
         interactive: false,
@@ -281,9 +277,9 @@ export function entryAssets(bundle: Rollup.OutputBundle, entry: Rollup.OutputChu
  * Writes the site's pages into the build, each as `<path>index.html`, and the 404 page. Needs the bundle's `lesson-page` entry (its
  * script, what that imports, its styles), which is why this runs once the bundle is complete.
  */
-export function lessonPageFiles(site: Site): Plugin {
+export function topicPageFiles(site: Site): Plugin {
   return {
-    name: 'miu-lesson-pages',
+    name: 'miu-topic-pages',
     apply: 'build',
     enforce: 'post',
     generateBundle(_options, bundle) {

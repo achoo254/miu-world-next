@@ -289,7 +289,7 @@ export function CompletionSequence({
       ) : screen === 'reward' ? (
         <>
           <RewardScreen completion={completion} reward={reward} quest={quest} data={data} />
-          <ShareResult textbook={quest.textbook} />
+          <ShareResult topic={quest.topic} />
         </>
       ) : screen === 'event' ? (
         <div className="reward-body" data-id="event-reward">

@@ -248,6 +248,13 @@ describe('textbook mechanics', () => {
   it('speak and worksheet steps need no answer; sort items may carry pictures', () => {
     expect(withStep({ id: 's', title: 'Nói', kind: 'speak', trigger: 'auto', prompt: 'Kể về ngày hè của em', hints: ['Em đi đâu?'] })).toEqual([]);
     expect(withStep({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', lessonId: 'tv2-t1-b01', text: 'Viết chữ hoa A' })).toEqual([]);
+    const sheet = { title: 'Phiếu chữ hoa A', blocks: [{ kind: 'letter', prompt: 'Tô chữ hoa A', letters: ['A'] }] };
+    expect(withStep({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', sheet, text: 'In phiếu nhé' })).toEqual([]);
+    const both = { id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', sheet, lessonId: 'tv2-t1-b01', text: 'In phiếu nhé' };
+    const exactlyOne = ['step w: a worksheet has exactly one of its own sheet ("sheet") and a textbook lesson ("lessonId")'];
+    expect(withStep(both)).toEqual(exactlyOne);
+    expect(withStep({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', text: 'In phiếu nhé' })).toEqual(exactlyOne);
+    expect(valid({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', sheet: { title: 'x', blocks: [{ kind: 'letter', prompt: 'x', letters: [], page: 3 }] }, text: 'x' })).toBe(false);
     const items = [{ id: 't2', label: 'Tranh 2', image: { kind: 'diagram', type: 'picture-card', params: { n: 2 } } }, { id: 't1', label: 'Tranh 1', image: { kind: 'icon', id: 'school' } }];
     expect(withStep({ ...challenge, mechanic: 'sort', items, answer: { order: ['t1', 't2'] } })).toEqual([]);
   });

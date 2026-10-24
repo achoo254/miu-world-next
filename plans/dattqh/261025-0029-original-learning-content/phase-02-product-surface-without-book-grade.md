@@ -1,6 +1,6 @@
 # Pha 2: Gỡ sách, lớp, bài, trang khỏi bề mặt sản phẩm
 
-**Tier:** L · **Phụ thuộc:** 1 · **Trạng thái:** pending
+**Tier:** L · **Phụ thuộc:** 1 · **Trạng thái:** done (25/10/2026; chờ deploy)
 
 ## Bối cảnh
 
@@ -41,3 +41,16 @@ Sau CI xanh và ảnh màn hình đã duyệt: hỏi người sở hữu trướ
 ## Rollback
 
 Revert commit; nginx giữ bản cũ của `nginx-prod.conf` theo quy trình ở `docs/deployment-guide.md`.
+
+## Kết quả (25/10/2026)
+
+- Chi tiết: [`fullstack-developer-261025-0235-phase-2-product-surface.md`](../reports/fullstack-developer-261025-0235-phase-2-product-surface.md); review: [`code-reviewer-261025-0321-phases-2-3-6.md`](../reports/code-reviewer-261025-0321-phases-2-3-6.md) (không Critical; H1 `deploy.sh` còn kiểm `dist/bai` đã sửa sang `dist/hoc`).
+- `QuestView.topic` thay `QuestView.textbook`; nhãn "Môn · Chủ đề" ở danh sách khu vực, Home, "Bài hôm nay", HUD, màn hoàn thành, chia sẻ. Analytics gửi `topic_id`.
+- `/hoc/<môn>/<chủ đề>/` (18 chủ đề, 2 môn) thay `/bai/`; 301 cho 72 địa chỉ cũ ở `tools/deploy/production/nginx-bai-redirects.conf` (review đã dựng lại slug cũ và đối chiếu đủ 72).
+- Kiểm cụm cấm `tools/content/no-book-or-grade-wording.ts` trong `content:check`: i18n, `index.html`, `regions.json`, dữ liệu trang chủ đề, tên và tóm tắt của **mọi** quest trên trang công khai (3 tóm tắt quest chờ còn "lớp 2A/2C" đã sửa), thêm "lớp 1/Một", "Toán 2", "Tiếng Việt 2", "tập một", "học kì 1", "second grade", "Year 2". `security:dist` quét thêm chữ của trang `/hoc` đã build.
+- Việc 5–6 (lịch clip, rà clip đã đăng) không làm ở repo này: công cụ marketing đã chuyển sang `tieu-de-next` (commit `e7948b6f`).
+
+### Trước khi deploy
+
+- `deploy.sh setup` phải chạy trước `release` (cài bảng 301 vào nginx); chỉ `release` thì `/bai/` trả 404. Cả hai là deploy production, hỏi người sở hữu.
+- GA4: nếu có custom dimension `lesson_id` thì khai thêm `topic_id` trong GA4 (ngoài repo, việc của người sở hữu).

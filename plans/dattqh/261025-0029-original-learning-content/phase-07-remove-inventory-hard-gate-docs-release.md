@@ -12,6 +12,13 @@
 6. **Review**: trang `apps/web/review.html` cho đợt này (số quest viết lại, độ phủ theo mục tiêu, kết quả kiểm chống chép, danh sách nguồn bài đọc, ảnh màn hình, kết quả rà clip đã đăng); chạy `pnpm bots:learning` rồi `pnpm assets:manifest`; ảnh màn chính duyệt theo `docs/screen-review.md`.
 7. **Release**: CI xanh, cổng `tools/deploy/release-gate.sh` qua, hỏi người sở hữu rồi deploy production đợt cuối; kiểm 301 và trang chủ đề trên production sau deploy.
 
+## Thêm từ các pha trước (25/10/2026)
+
+- Xóa trang nghiệm thu cũ đã commit `plans/dattqh/260930-0846-sgk-lop2-game-content/nghiem-thu/` (chứa chữ SGK trong repo công khai) cùng ảnh của nó.
+- Chữ "lớp" còn ở tên mục tiêu trên map (`content/world/targets.json`: "Bảng gỗ lớp Hai", "Cửa sổ lớp 2A", "Thời khóa biểu lớp 2B"; đã nướng vào `assets/generated/world/*/entities.json`, phải sinh lại map, `world:walk`, `assets:manifest`), lời NPC (`content/npcs/*.json`) và vài quest ngoài sách (`yarn-*`, `ward-*`, `with-thoi-khoa-bieu-lop`, `vuot-ai-truong-hoc`). Sau đó mở rộng `no-book-or-grade-wording.ts` sang npcs, targets và toàn bộ chữ quest.
+- `evaluateExpression` chỉ có cộng, trừ: nội dung Toán lớp 3 sẽ cần nhân, chia (ngoài phạm vi plan, ghi để plan sau).
+- nginx: `/bai/<slug>/index.html` (gõ thẳng file) chưa có trong bảng 301 (ít gặp).
+
 ## Kiểm tra
 
 - Gate 5 lệnh của repo theo thứ tự CI ở local (trừ full `pnpm test`), rồi CI đầy đủ (test, build web, `security:dist`, E2E) xanh.

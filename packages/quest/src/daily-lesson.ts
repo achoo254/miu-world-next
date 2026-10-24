@@ -1,6 +1,6 @@
 // "Bài hôm nay" (owner, 09/10/2026: the child plays only at home, every day): each Vietnam day the home points the
-// player to one textbook lesson on another map, so the maps she loves less get their turn. Pure, so the web, a
-// future app and the server word the same pick.
+// player to one learning quest (one that teaches a topic) on another map, so the maps she loves less get their turn.
+// Pure, so the web, a future app and the server word the same pick.
 
 /** What the pick needs to know of one lesson quest of the player. */
 export interface DailyLessonCandidate {

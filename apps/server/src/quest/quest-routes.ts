@@ -7,6 +7,7 @@ import {
   QuestListResponse,
   QuestSummary,
   type QuestStory,
+  type QuestTopic,
   QuestView,
   SkillCheckResult,
   StepCompleteRequest,
@@ -57,6 +58,14 @@ function supportPayload(support: LearningSupport, layer: SupportLayer): SupportR
   }
 }
 
+/** The topic a learning quest teaches, with its subject's name; none for a quest that names no topic. */
+export function topicOf(content: Pick<ContentCatalog, 'learning' | 'subjects'>, topicId: string | undefined): QuestTopic | undefined {
+  const topic = topicId === undefined ? undefined : content.learning.topics.get(topicId);
+  if (!topic) return undefined;
+  const subjectName = content.subjects.find((s) => s.id === topic.subject)?.name ?? topic.subject;
+  return { id: topic.id, title: topic.title, subject: topic.subject, subjectName };
+}
+
 /** The story a chapter belongs to, for the quest list (content/npcs); none for any other quest. */
 function storyOf(content: ContentCatalog, questId: string): QuestStory | undefined {
   const entry = content.npcs.chapters.get(questId);
@@ -102,7 +111,7 @@ export function questRoutes(deps: QuestRouteDeps): Router {
       [...content.quests.values()].filter((quest) => questOpenAt(content, quest, now)).map((quest) => {
         const row = byQuest.get(quest.id);
         const summary = {
-          quest: QuestView.parse({ ...quest, textbook: content.textbooks.get(quest.id), story: storyOf(content, quest.id) }),
+          quest: QuestView.parse({ ...quest, topic: topicOf(content, quest.status === 'active' ? quest.topic : undefined), story: storyOf(content, quest.id) }),
           state: questState(row),
           progress: progressDto(quest.id, row, runs.get(quest.id) ?? 0, quest),
         };

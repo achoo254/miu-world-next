@@ -4,18 +4,17 @@
   "chapter": 1,
   "title": "Túi thư của Chó Mực",
   "status": "active",
-  "lesson": "toan2-t1-b05",
   "topic": "cong-tru-khong-nho",
-  "summary": "Thư gửi các lớp ghi phép tính thay cho tên lớp, lại thêm chồng bưu thiếp Cáo Tuyết Mi gửi từ phương xa; {name} chạy khắp cổng trường giúp Chó Mực, bác Lộc, cô bưu tá Yến tính nhẩm, đặt tính, tìm chữ số bị nhòe để không lá thư nào đưa nhầm.",
+  "summary": "Chó Mực đưa thư theo cách mới: phong bì ghi phép tính thay cho tên người nhận, lại thêm chồng bưu thiếp Cáo Tuyết Mi gửi từ phương xa; {name} chạy khắp cổng trường giúp Chó Mực, bác Lộc, cô bưu tá Yến tính nhẩm, đặt tính, tìm chữ số bị nhòe để không lá thư nào đưa nhầm.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Chó Mực, bác bảo vệ Lộc, cô bưu tá Yến, Mèo Bạc Hà, Cáo Tuyết Mi, chú hề Tò Te",
-    "where": "Sân trường: cổng trường, bốt bảo vệ, chỗ dựng xe đạp thư, gốc bàng, hộp thư lớp 2, sân khấu nhỏ",
+    "where": "Sân trường: cổng trường, bốt bảo vệ, chỗ dựng xe đạp thư, gốc bàng, hộp thư của trường, sân khấu nhỏ",
     "goal": "Đưa đúng mọi lá thư và bưu thiếp tới tay người nhận",
-    "play": "Nhặt phong bì, tính nhẩm, đặt tính, xếp mây, chọn câu đúng, chia ô dù, tìm chữ số nhòe, đố bưu thiếp",
-    "learn": "Toán 2 Bài 5: ôn tập phép cộng, phép trừ (không nhớ) trong phạm vi 100",
+    "play": "Nhặt phong bì, tính nhẩm, đặt tính, ghép mây, chọn phép tính đúng, chia diều, tìm chữ số nhòe, đố bưu thiếp",
+    "learn": "Cộng, trừ không nhớ trong phạm vi 100: nhẩm với số tròn chục, đặt tính thẳng cột, tìm số còn thiếu và giải bài toán có lời văn",
     "reward": "120 XP, 18 xu, Phép cộng +2, Phép trừ +2, Bài toán có lời văn +1",
-    "next": "Bài 6 \"Luyện tập chung\""
+    "next": "Lời mời tới hội chợ số ở góc trò chơi dân gian"
   },
   "phases": {
     "hook": "thu-dua-nham",
@@ -34,24 +33,24 @@
     "toan2-cd1-b05-bac-loc": "bốt bảo vệ",
     "toan2-cd1-b05-co-yen": "xe đạp thư",
     "toan2-cd1-b05-meo-bac-ha": "gốc bàng",
-    "toan2-cd1-b05-cao-tuyet-mi": "hộp thư lớp 2",
+    "toan2-cd1-b05-cao-tuyet-mi": "hộp thư của trường",
     "toan2-cd1-b05-chu-he-to-te": "sân khấu nhỏ"
   },
   "steps": [
     {
       "id": "thu-dua-nham",
-      "title": "Thư đưa nhầm lớp",
+      "title": "Thư đưa nhầm chỗ",
       "goTo": "Chạy ra cổng trường, Chó Mực đang ôm túi thư phồng to",
       "kind": "dialogue",
       "target": "cho-muc",
       "lines": [
         {
           "speaker": "Chó Mực",
-          "text": "Gâu! {name} ơi, sáng nay bác đưa thư nghĩ ra trò mới: phong bì không ghi tên lớp mà ghi… phép tính!"
+          "text": "Gâu! {name} ơi, sáng nay bác đưa thư nghĩ ra trò mới: phong bì không ghi tên người nhận mà ghi… một phép tính!"
         },
         {
           "speaker": "Chó Mực",
-          "text": "Tớ chạy mười vòng quanh trường rồi mà vẫn đưa nhầm. Lớp 2A nhận thư của lớp 1C, còn thầy hiệu trưởng nhận nhầm… hóa đơn tiền cỏ của Bò Sữa Mơ."
+          "text": "Tớ chạy mười vòng quanh trường rồi mà vẫn đưa nhầm. Thư của cô giáo lọt sang tay Mèo Bạc Hà, còn thầy hiệu trưởng nhận nhầm… hóa đơn tiền cỏ của Bò Sữa Mơ."
         },
         {
           "speaker": "Chó Mực",
@@ -69,11 +68,11 @@
         }
       ],
       "en": {
-        "title": "Letters sent to the wrong class",
+        "title": "Letters sent to the wrong place",
         "goTo": "Run out to the school gate, where Chó Mực is hugging a bulging mailbag",
         "lines": [
-          "Woof! {name}, the postman thought up a new game this morning: the envelopes don't say the class name, they say... a sum!",
-          "I've run ten laps around the school and still delivered them wrong. Class 2A got Class 1C's letter, and the headmaster got... Bò Sữa Mơ's grass bill by mistake.",
+          "Woof! {name}, the postman thought up a new game this morning: the envelopes don't carry the receiver's name, they carry... a sum!",
+          "I've run ten laps around the school and still delivered them wrong. The teacher's letter ended up with Mèo Bạc Hà, and the headmaster got... Bò Sữa Mơ's grass bill by mistake.",
           "And a few envelopes fell out of the bag while I was wagging my tail. Will you help me, woof woof?"
         ],
         "choices": [
@@ -107,15 +106,15 @@
       "lines": [
         {
           "speaker": "Chó Mực",
-          "text": "Phong bì đầu tiên ghi 60 + 40. Bác đưa thư dặn: cộng số tròn chục thì nghĩ theo chục cho nhanh."
+          "text": "Phong bì đầu tiên ghi 30 + 70. Bác đưa thư dặn: gặp số tròn chục thì cứ nghĩ theo chục cho nhanh."
         },
         {
           "speaker": "Chó Mực",
-          "text": "6 chục cộng 4 chục là 10 chục, tức là 100. Còn 100 – 20 thì là 10 chục bớt 2 chục, còn 8 chục, tức là 80."
+          "text": "3 chục thêm 7 chục là 10 chục, tức là 100. Còn 100 – 70 thì lấy 10 chục bớt 7 chục, còn 3 chục, tức là 30."
         },
         {
           "speaker": "Chó Mực",
-          "text": "Nghe như đếm xương trong hộp ấy nhỉ! Ta thử với cả xấp phong bì nào."
+          "text": "Giống xếp thư thành từng bó mười lá ấy nhỉ! Ta thử với cả xấp phong bì nào."
         }
       ],
       "choices": [
@@ -127,9 +126,9 @@
       "en": {
         "title": "Envelopes with sums on them",
         "lines": [
-          "The first envelope says 60 + 40. The postman says: when adding round tens, think in tens to go faster.",
-          "6 tens plus 4 tens is 10 tens, which is 100. And 100 – 20 is 10 tens take away 2 tens, leaving 8 tens, which is 80.",
-          "Sounds like counting bones in a box, doesn't it! Let's try the whole stack of envelopes."
+          "The first envelope says 30 + 70. The postman says: with round tens, just think in tens to go faster.",
+          "3 tens and 7 tens make 10 tens, which is 100. And 100 – 70 is 10 tens take away 7 tens, leaving 3 tens, which is 30.",
+          "Like tying letters into bundles of ten, isn't it! Let's try the whole stack of envelopes."
         ],
         "choices": [
           {
@@ -145,15 +144,15 @@
       "target": "cho-muc",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Sáu phong bì đầu ghi phép tính với số tròn chục. Tính nhẩm (theo mẫu).",
-      "template": "a) 60 + 40 = ? 6 chục + 4 chục = 10 chục 60 + 40 = 100\na) 50 + 50 = {{b1}}\na) 70 + 30 = {{b2}}\na) 20 + 80 = {{b3}}\nb) 100 – 20 = ? 10 chục – 2 chục = 8 chục 100 – 20 = 80\nb) 100 – 30 = {{b4}}\nb) 100 – 50 = {{b5}}\nb) 100 – 90 = {{b6}}",
+      "prompt": "Sáu phong bì đầu ghi phép tính với số tròn chục. Cậu đổi ra chục, nhẩm kết quả rồi điền vào mỗi ô trống.",
+      "template": "Bó thư cộng\n40 + 60 = {{b1}}\n80 + 20 = {{b2}}\n90 + 10 = {{b3}}\nBó thư trừ\n100 – 60 = {{b4}}\n100 – 80 = {{b5}}\n100 – 10 = {{b6}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o98",
-              "text": "98"
+              "id": "o90",
+              "text": "90"
             },
             {
               "id": "o100",
@@ -173,8 +172,8 @@
               "text": "90"
             },
             {
-              "id": "o98",
-              "text": "98"
+              "id": "o120",
+              "text": "120"
             },
             {
               "id": "o100",
@@ -186,16 +185,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o98",
-              "text": "98"
-            },
-            {
               "id": "o100",
               "text": "100"
             },
             {
-              "id": "o102",
-              "text": "102"
+              "id": "o99",
+              "text": "99"
+            },
+            {
+              "id": "o109",
+              "text": "109"
             }
           ]
         },
@@ -203,16 +202,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o60",
-              "text": "60"
+              "id": "o30",
+              "text": "30"
             },
             {
-              "id": "o70",
-              "text": "70"
+              "id": "o40",
+              "text": "40"
             },
             {
-              "id": "o71",
-              "text": "71"
+              "id": "o160",
+              "text": "160"
             }
           ]
         },
@@ -220,16 +219,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o50",
-              "text": "50"
+              "id": "o180",
+              "text": "180"
             },
             {
-              "id": "o60",
-              "text": "60"
+              "id": "o20",
+              "text": "20"
             }
           ]
         },
@@ -237,50 +236,42 @@
           "id": "b6",
           "options": [
             {
-              "id": "o0",
-              "text": "0"
+              "id": "o80",
+              "text": "80"
             },
             {
-              "id": "o1",
-              "text": "1"
+              "id": "o90",
+              "text": "90"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o110",
+              "text": "110"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-1-a1",
-        "toan2-t1-b05-luyen-tap-1-a2",
-        "toan2-t1-b05-luyen-tap-1-a3",
-        "toan2-t1-b05-luyen-tap-1-b1",
-        "toan2-t1-b05-luyen-tap-1-b2",
-        "toan2-t1-b05-luyen-tap-1-b3"
-      ],
       "support": {
         "guide": [
-          "Đổi số tròn chục ra số chục: 50 là 5 chục.",
+          "Đổi số tròn chục ra số chục: 60 là 6 chục.",
           "100 là 10 chục."
         ],
-        "hint": "7 chục + 3 chục = 10 chục; 10 chục – 9 chục = 1 chục.",
+        "hint": "4 chục + 6 chục = 10 chục; 10 chục – 6 chục = 4 chục.",
         "answer": {
-          "text": "a) 60 + 40 = ? 6 chục + 4 chục = 10 chục 60 + 40 = 100; a) 50 + 50 = 100; a) 70 + 30 = 100; a) 20 + 80 = 100; b) 100 – 20 = ? 10 chục – 2 chục = 8 chục 100 – 20 = 80; b) 100 – 30 = 70; b) 100 – 50 = 50; b) 100 – 90 = 10",
-          "explanation": "Nghĩ theo chục: 5 + 5, 7 + 3, 2 + 8 đều bằng 10 chục là 100; 100 – 30 = 70, 100 – 50 = 50, 100 – 90 = 10."
+          "text": "Bó cộng: 40 + 60 = 100, 80 + 20 = 100, 90 + 10 = 100. Bó trừ: 100 – 60 = 40, 100 – 80 = 20, 100 – 10 = 90.",
+          "explanation": "Nghĩ theo chục: 4 + 6, 8 + 2, 9 + 1 đều bằng 10 chục, tức là 100; 10 chục bớt 6 chục còn 4 chục, bớt 8 chục còn 2 chục, bớt 1 chục còn 9 chục."
         }
       },
       "feedback": {
         "right": [
-          "Sáu phong bì về đúng sáu lớp, Chó Mực sủa mừng gâu gâu!",
-          "Tính nhẩm theo chục nhanh như chó săn đánh hơi.",
-          "Bác đưa thư mà biết chắc phải tuyển cậu làm phụ tá."
+          "Sáu phong bì tìm đúng ô thư, Chó Mực sủa mừng gâu gâu!",
+          "Đổi ra chục rồi nhẩm, cậu nhanh như chó săn đánh hơi.",
+          "Bác đưa thư mà thấy chắc phải mời cậu làm phụ tá."
         ],
         "wrong": [
           "Đổi ra chục rồi tính: 100 là 10 chục đấy.",
-          "Có một phong bì đang sai lớp, tính nhẩm lại xem.",
-          "10 chục bớt 9 chục còn mấy chục nhỉ?"
+          "Có một phong bì còn nằm sai ô thư, nhẩm lại xem.",
+          "10 chục bớt 1 chục còn mấy chục nhỉ?"
         ]
       },
       "answer": {
@@ -288,11 +279,20 @@
           "b1": "o100",
           "b2": "o100",
           "b3": "o100",
-          "b4": "o70",
-          "b5": "o50",
-          "b6": "o10"
+          "b4": "o40",
+          "b5": "o20",
+          "b6": "o90"
         }
-      }
+      },
+      "expression": {
+        "b1": "40 + 60",
+        "b2": "80 + 20",
+        "b3": "90 + 10",
+        "b4": "100 - 60",
+        "b5": "100 - 80",
+        "b6": "100 - 10"
+      },
+      "objective": "cong-tru-khong-nho-tinh-nham"
     },
     {
       "id": "dat-tinh-phong-bi",
@@ -301,8 +301,8 @@
       "target": "toan2-cd1-b05-bac-loc",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Bốn phong bì dày hơn, phải viết ra mới tính được. Đặt tính rồi tính.",
-      "template": "35 + 4 = {{b1}}\n52 + 37 = {{b2}}\n68 – 6 = {{b3}}\n79 – 55 = {{b4}}",
+      "prompt": "Bác Lộc đưa ra bốn phong bì ghi số lớn hơn, phải viết các số thẳng cột mới tính được. Cậu đặt tính rồi điền kết quả.",
+      "template": "26 + 3 = {{b1}}\n41 + 56 = {{b2}}\n87 – 5 = {{b3}}\n96 – 63 = {{b4}}",
       "blanks": [
         {
           "id": "b1",
@@ -312,12 +312,12 @@
               "text": "29"
             },
             {
-              "id": "o39",
-              "text": "39"
+              "id": "o56",
+              "text": "56"
             },
             {
-              "id": "o93",
-              "text": "93"
+              "id": "o92",
+              "text": "92"
             }
           ]
         },
@@ -325,12 +325,12 @@
           "id": "b2",
           "options": [
             {
-              "id": "o88",
-              "text": "88"
+              "id": "o79",
+              "text": "79"
             },
             {
-              "id": "o89",
-              "text": "89"
+              "id": "o97",
+              "text": "97"
             },
             {
               "id": "o98",
@@ -342,16 +342,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o60",
-              "text": "60"
+              "id": "o37",
+              "text": "37"
             },
             {
-              "id": "o62",
-              "text": "62"
+              "id": "o28",
+              "text": "28"
             },
             {
-              "id": "o72",
-              "text": "72"
+              "id": "o82",
+              "text": "82"
             }
           ]
         },
@@ -363,54 +363,55 @@
               "text": "23"
             },
             {
-              "id": "o24",
-              "text": "24"
+              "id": "o33",
+              "text": "33"
             },
             {
-              "id": "o42",
-              "text": "42"
+              "id": "o39",
+              "text": "39"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-2-a",
-        "toan2-t1-b05-luyen-tap-2-b",
-        "toan2-t1-b05-luyen-tap-2-c",
-        "toan2-t1-b05-luyen-tap-2-d"
-      ],
       "support": {
         "guide": [
-          "Số có một chữ số viết thẳng cột đơn vị.",
-          "Tính từ hàng đơn vị sang hàng chục."
+          "Số có một chữ số viết thẳng cột với hàng đơn vị.",
+          "Tính từ hàng đơn vị rồi mới sang hàng chục."
         ],
-        "hint": "35 + 4: số 4 đứng dưới số 5 chứ không phải dưới số 3.",
+        "hint": "26 + 3: số 3 đứng dưới số 6, không phải dưới số 2.",
         "answer": {
-          "text": "35 + 4 = 39; 52 + 37 = 89; 68 – 6 = 62; 79 – 55 = 24",
-          "explanation": "Đặt thẳng cột rồi tính: 35 + 4 = 39, 52 + 37 = 89, 68 – 6 = 62, 79 – 55 = 24."
+          "text": "26 + 3 = 29; 41 + 56 = 97; 87 – 5 = 82; 96 – 63 = 33",
+          "explanation": "Đặt thẳng cột rồi tính: 6 + 3 = 9 nên được 29; 1 + 6 = 7 và 4 + 5 = 9 nên được 97; 7 – 5 = 2 nên được 82; 6 – 3 = 3 và 9 – 6 = 3 nên được 33."
         }
       },
       "feedback": {
         "right": [
-          "Bốn phép tính thẳng cột, phong bì nào cũng tìm được chủ.",
+          "Bốn phép tính thẳng cột, phong bì nào cũng tìm ra chủ.",
           "Bác Lộc đóng dấu \"Đã tính đúng\" kêu cộp cộp.",
           "Cộng trừ không nhớ mà cậu làm như múa."
         ],
         "wrong": [
-          "Số 4 và số 6 phải đứng thẳng hàng đơn vị nhé.",
-          "Trừ hàng đơn vị trước, rồi tới hàng chục.",
-          "Một phong bì lệch số, xem lại phép trừ thứ hai."
+          "Số 3 phải đứng thẳng hàng đơn vị với số 6 nhé.",
+          "Trừ hàng đơn vị trước, rồi mới tới hàng chục.",
+          "Một phong bì bị lệch số, xem lại phép trừ thứ nhất."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o39",
-          "b2": "o89",
-          "b3": "o62",
-          "b4": "o24"
+          "b1": "o29",
+          "b2": "o97",
+          "b3": "o82",
+          "b4": "o33"
         }
-      }
+      },
+      "expression": {
+        "b1": "26 + 3",
+        "b2": "41 + 56",
+        "b3": "87 - 5",
+        "b4": "96 - 63"
+      },
+      "objective": "cong-tru-khong-nho-dat-tinh"
     },
     {
       "id": "may-cung-ket-qua",
@@ -418,71 +419,67 @@
       "target": "toan2-cd1-b05-bac-loc",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Trong túi có tấm bưu thiếp Cáo Tuyết Mi gửi: một rô-bốt nhảy dù chào \"Xin chào!\" giữa sáu đám mây ghi phép tính. Hai phép tính nào dưới đây có cùng kết quả? Kéo mỗi đám mây vào đám mây bạn của nó.",
+      "prompt": "Trong túi có tấm bưu thiếp Cáo Tuyết Mi gửi: một chiếc khinh khí cầu bay giữa sáu đám mây, mỗi đám ghi một phép tính. Hai đám mây nào cho cùng kết quả? Kéo mỗi đám mây bên dưới về đám mây bạn của nó.",
       "groups": [
         {
-          "id": "nhom-20-40",
-          "label": "20 + 40"
+          "id": "nhom-30-50",
+          "label": "30 + 50"
         },
         {
-          "id": "nhom-30-5",
-          "label": "30 + 5"
+          "id": "nhom-40-6",
+          "label": "40 + 6"
         },
         {
-          "id": "nhom-80-50",
-          "label": "80 – 50"
+          "id": "nhom-90-40",
+          "label": "90 – 40"
         }
       ],
       "items": [
         {
-          "id": "may-40-20",
-          "label": "40 + 20"
+          "id": "may-50-30",
+          "label": "50 + 30"
         },
         {
-          "id": "may-34-1",
-          "label": "34 + 1"
+          "id": "may-45-1",
+          "label": "45 + 1"
         },
         {
-          "id": "may-60-30",
-          "label": "60 – 30"
+          "id": "may-70-20",
+          "label": "70 – 20"
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-3-a",
-        "toan2-t1-b05-luyen-tap-3-b",
-        "toan2-t1-b05-luyen-tap-3-c"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả từng đám mây trước.",
+          "Tính kết quả của từng đám mây trước.",
           "Hai đám mây cùng kết quả thì ghép với nhau."
         ],
-        "hint": "60 – 30 = 30; tìm đám mây nào cũng bằng 30.",
+        "hint": "90 – 40 = 50; tìm đám mây nào cũng bằng 50.",
         "answer": {
-          "text": "40 + 20 với 20 + 40; 34 + 1 với 30 + 5; 60 – 30 với 80 – 50",
-          "explanation": "40 + 20 = 20 + 40 = 60; 34 + 1 = 30 + 5 = 35; 60 – 30 = 80 – 50 = 30."
+          "text": "Ghép 50 + 30 với 30 + 50; 45 + 1 với 40 + 6; 70 – 20 với 90 – 40.",
+          "explanation": "50 + 30 = 30 + 50 = 80; 45 + 1 = 40 + 6 = 46; 70 – 20 = 90 – 40 = 50."
         }
       },
       "feedback": {
         "right": [
-          "Ba cặp mây ôm nhau bay, rô-bốt nhảy dù hạ cánh êm ru.",
-          "Đổi chỗ số hạng, tổng không đổi, cậu nhận ra ngay!",
-          "Bưu thiếp của Mi giờ là bức tranh mây xếp đôi."
+          "Ba cặp mây nắm tay nhau bay, khinh khí cầu hạ cánh êm ru.",
+          "Đổi chỗ hai số hạng, tổng vẫn vậy, cậu nhận ra ngay!",
+          "Bưu thiếp của Mi thành bức tranh mây xếp đôi."
         ],
         "wrong": [
           "Tính ra kết quả của từng đám mây trước nhé.",
-          "34 + 1 bằng bao nhiêu? Đám mây nào cũng bằng số đó?",
+          "45 + 1 bằng bao nhiêu? Đám mây nào cũng bằng số đó?",
           "Có một cặp mây đang ghép nhầm bạn rồi."
         ]
       },
       "answer": {
         "assignment": {
-          "may-40-20": "nhom-20-40",
-          "may-34-1": "nhom-30-5",
-          "may-60-30": "nhom-80-50"
+          "may-50-30": "nhom-30-50",
+          "may-45-1": "nhom-40-6",
+          "may-70-20": "nhom-90-40"
         }
-      }
+      },
+      "objective": "cong-tru-khong-nho-tinh-nham"
     },
     {
       "id": "so-do-con-tem",
@@ -491,23 +488,23 @@
       "target": "toan2-cd1-b05-co-yen",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Một con tem phải chạy qua ba trạm bưu điện, mỗi trạm cộng hoặc trừ đi một số. Số ?",
-      "template": "50 → + 30 → {{b1}} → – 40 → {{b2}} → + 15 → {{b3}}",
+      "prompt": "Con tem xuất phát ở số 30 rồi chạy qua ba trạm bưu điện; mỗi trạm cộng hoặc trừ một số rồi chuyển tiếp. Cậu điền số ở cuối mỗi trạm.",
+      "template": "30 → + 60 → {{b1}} → – 50 → {{b2}} → + 24 → {{b3}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o78",
-              "text": "78"
-            },
-            {
-              "id": "o79",
-              "text": "79"
-            },
-            {
               "id": "o80",
               "text": "80"
+            },
+            {
+              "id": "o91",
+              "text": "91"
+            },
+            {
+              "id": "o90",
+              "text": "90"
             }
           ]
         },
@@ -523,8 +520,197 @@
               "text": "41"
             },
             {
-              "id": "o50",
-              "text": "50"
+              "id": "o140",
+              "text": "140"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o54",
+              "text": "54"
+            },
+            {
+              "id": "o64",
+              "text": "64"
+            },
+            {
+              "id": "o74",
+              "text": "74"
+            }
+          ]
+        }
+      ],
+      "skill": "phep-cong",
+      "support": {
+        "guide": [
+          "Đi theo mũi tên, mỗi lần chỉ làm một phép tính.",
+          "Con tem mang kết quả của trạm trước sang trạm sau."
+        ],
+        "hint": "30 + 60 = 90, rồi lấy 90 trừ 50.",
+        "answer": {
+          "text": "Qua ba trạm con tem lần lượt mang số 90, 40 rồi 64.",
+          "explanation": "30 + 60 = 90; 90 – 50 = 40; 40 + 24 = 64."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Con tem về đích ở ô 64, chuẩn từng trạm!",
+          "Nối mũi tên giỏi thế này, bưu điện nào cũng mời cậu làm.",
+          "Ba trạm, ba phép tính, không trạm nào bị lỡ."
+        ],
+        "wrong": [
+          "Lấy kết quả ô trước để tính tiếp ô sau nhé.",
+          "Mũi tên thứ hai là trừ 50 chứ không phải cộng đâu.",
+          "Kiểm tra lại ô đầu: 30 cộng 60 là mấy?"
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o90",
+          "b2": "o40",
+          "b3": "o64"
+        }
+      },
+      "expression": {
+        "b1": "30 + 60",
+        "b2": "30 + 60 - 50",
+        "b3": "30 + 60 - 50 + 24"
+      },
+      "objective": "cong-tru-khong-nho-tinh-nham"
+    },
+    {
+      "id": "thuyen-cho-khach",
+      "title": "Giỏ xe đạp thư",
+      "target": "toan2-cd1-b05-co-yen",
+      "kind": "riddle",
+      "question": "Tấm bưu thiếp thứ hai của Mi nhắc đến chiếc xe đạp thư. Cô Yến xếp 14 lá thư vào giỏ xe. Đi ngang bốt bảo vệ, bác Lộc bỏ thêm 5 lá nữa. Hỏi trong giỏ xe có tất cả bao nhiêu lá thư?",
+      "skill": "bai-toan-loi-van",
+      "support": {
+        "guide": [
+          "Bác Lộc bỏ thêm thư vào giỏ thì số thư nhiều lên: làm phép cộng.",
+          "Cộng số thư lúc đầu với số thư bác Lộc đưa thêm."
+        ],
+        "hint": "14 + 5.",
+        "answer": {
+          "text": "19 lá thư",
+          "explanation": "14 + 5 = 19, trong giỏ có tất cả 19 lá thư."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Giỏ xe đủ 19 lá thư, cô Yến buộc dây chắc tay!",
+          "Thêm thư vào giỏ là cộng, cậu hiểu ngay.",
+          "Cô Yến ghim bưu thiếp lên tay lái: lời giải chuẩn!"
+        ],
+        "wrong": [
+          "Bác Lộc bỏ thêm thư thì giỏ nặng lên đấy.",
+          "Cộng 14 với 5 thử xem.",
+          "Đừng trừ nhé, có lá thư nào bị lấy ra đâu."
+        ]
+      },
+      "answer": {
+        "value": 19
+      },
+      "expression": "14 + 5",
+      "objective": "cong-tru-khong-nho-bai-toan"
+    },
+    {
+      "id": "dung-sai-dat-tinh",
+      "title": "Phong bì ai tính hộ?",
+      "goTo": "Chạy về cổng trường, Chó Mực đang hít hà ba phong bì lạ",
+      "target": "cho-muc",
+      "kind": "challenge",
+      "mechanic": "multi-select",
+      "prompt": "Có ai đó đã ghi sẵn kết quả lên ba phong bì, nhưng Chó Mực đánh hơi thấy có chỗ nhầm. Cậu chọn những phép tính đã ghi đúng.",
+      "choices": [
+        {
+          "id": "a-24-5-74",
+          "text": "a) 24 + 5 = 74"
+        },
+        {
+          "id": "b-78-6-72",
+          "text": "b) 78 – 6 = 72"
+        },
+        {
+          "id": "c-95-41-54",
+          "text": "c) 95 – 41 = 54"
+        }
+      ],
+      "skill": "phep-tru",
+      "support": {
+        "guide": [
+          "Tự đặt tính lại từng phép rồi so với kết quả đã ghi.",
+          "Chú ý số có một chữ số phải viết thẳng cột với hàng đơn vị."
+        ],
+        "hint": "24 + 5 mà ra 74 là do số 5 bị viết sang cột chục.",
+        "answer": {
+          "text": "Phép đúng là b và c; phép a bị sai.",
+          "explanation": "a) sai vì 24 + 5 = 29; b) 78 – 6 = 72 đúng; c) 95 – 41 = 54 đúng."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Mũi Chó Mực thính, mắt {name} còn tinh hơn!",
+          "Bắt được phép tính viết lệch cột, giỏi quá.",
+          "Hai phong bì đúng được gửi đi, phong bì sai được sửa lại."
+        ],
+        "wrong": [
+          "Thử tự tính lại 24 + 5 xem có ra 74 không.",
+          "Còn một phép tính đúng chưa được chọn đấy.",
+          "Đặt tính thẳng cột lại từng phép rồi hẵng chọn."
+        ]
+      },
+      "answer": {
+        "choices": [
+          "b-78-6-72",
+          "c-95-41-54"
+        ]
+      },
+      "objective": "cong-tru-khong-nho-dat-tinh"
+    },
+    {
+      "id": "phong-bi-tinh-nhanh",
+      "title": "Xấp phong bì cuối",
+      "target": "cho-muc",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Xấp phong bì cuối cùng buộc dây thun, Chó Mực đọc to từng phép tính. Hai phép cuối có hai dấu nên làm lần lượt từ trái sang phải. Cậu điền kết quả.",
+      "template": "30 + 5 = {{b1}}\n68 – 8 = {{b2}}\n4 + 50 = {{b3}}\n32 + 40 = {{b4}}\n86 – 80 = {{b5}}\n78 – 28 = {{b6}}\n40 + 27 – 34 = {{b7}}\n85 – 65 + 34 = {{b8}}",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o35",
+              "text": "35"
+            },
+            {
+              "id": "o38",
+              "text": "38"
+            },
+            {
+              "id": "o65",
+              "text": "65"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o60",
+              "text": "60"
+            },
+            {
+              "id": "o76",
+              "text": "76"
             }
           ]
         },
@@ -536,205 +722,12 @@
               "text": "45"
             },
             {
-              "id": "o53",
-              "text": "53"
+              "id": "o54",
+              "text": "54"
             },
             {
-              "id": "o55",
-              "text": "55"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-4-a",
-        "toan2-t1-b05-luyen-tap-4-b",
-        "toan2-t1-b05-luyen-tap-4-c"
-      ],
-      "support": {
-        "guide": [
-          "Đi theo mũi tên, mỗi lần chỉ làm một phép tính.",
-          "Con tem mang kết quả trạm trước sang trạm sau."
-        ],
-        "hint": "50 + 30 = 80, rồi lấy 80 trừ 40.",
-        "answer": {
-          "text": "50 → + 30 → 80 → – 40 → 40 → + 15 → 55",
-          "explanation": "50 + 30 = 80; 80 – 40 = 40; 40 + 15 = 55."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Con tem về đích ở ô 55, chuẩn từng trạm!",
-          "Nối mũi tên giỏi thế này, bưu điện nào cũng mời cậu làm.",
-          "Ba trạm, ba phép tính, không trạm nào bị lỡ."
-        ],
-        "wrong": [
-          "Lấy kết quả ô trước để tính tiếp ô sau nhé.",
-          "Mũi tên thứ hai là trừ 40 chứ không phải cộng đâu.",
-          "Kiểm tra lại ô đầu: 50 cộng 30 là mấy?"
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o80",
-          "b2": "o40",
-          "b3": "o55"
-        }
-      }
-    },
-    {
-      "id": "thuyen-cho-khach",
-      "title": "Bưu thiếp trên sông",
-      "target": "toan2-cd1-b05-co-yen",
-      "kind": "riddle",
-      "question": "Bưu thiếp thứ hai của Mi vẽ một chiếc thuyền trên sông. Trên thuyền có 12 hành khách, đến bến có 3 hành khách lên thuyền. Hỏi lúc đó trên thuyền có tất cả bao nhiêu hành khách?",
-      "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-5"
-      ],
-      "support": {
-        "guide": [
-          "Có thêm khách lên thuyền thì làm phép cộng.",
-          "Cộng số khách lúc đầu với số khách lên thêm."
-        ],
-        "hint": "12 + 3.",
-        "answer": {
-          "text": "15 hành khách",
-          "explanation": "12 + 3 = 15, trên thuyền có tất cả 15 hành khách."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Thuyền chở đủ 15 người, Mi vẫy tay từ mũi thuyền!",
-          "Thêm khách là cộng, cậu hiểu bài ngay.",
-          "Cô Yến ghim bưu thiếp lên giỏ xe: lời giải chuẩn!"
-        ],
-        "wrong": [
-          "Khách lên thuyền thêm thì số người nhiều lên đấy.",
-          "Cộng 12 với 3 thử xem.",
-          "Đừng trừ nhé, có ai xuống thuyền đâu."
-        ]
-      },
-      "answer": {
-        "value": 15
-      }
-    },
-    {
-      "id": "dung-sai-dat-tinh",
-      "title": "Phong bì ai tính hộ?",
-      "goTo": "Chạy về cổng trường, Chó Mực đang hít hà ba phong bì lạ",
-      "target": "cho-muc",
-      "kind": "challenge",
-      "mechanic": "multi-select",
-      "prompt": "Ba phong bì đã có ai đó tính hộ, nhưng Chó Mực ngửi thấy mùi… nhầm lẫn. Đ, S ? Chọn những phép tính đúng (Đ).",
-      "choices": [
-        {
-          "id": "a-35-4-75",
-          "text": "a) 35 + 4 = 75"
-        },
-        {
-          "id": "b-59-6-53",
-          "text": "b) 59 – 6 = 53"
-        },
-        {
-          "id": "c-87-32-55",
-          "text": "c) 87 – 32 = 55"
-        }
-      ],
-      "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-2-1-a",
-        "toan2-t1-b05-luyen-tap-2-1-b",
-        "toan2-t1-b05-luyen-tap-2-1-c"
-      ],
-      "support": {
-        "guide": [
-          "Tự đặt tính lại từng phép rồi so kết quả.",
-          "Chú ý số một chữ số phải viết thẳng cột đơn vị."
-        ],
-        "hint": "35 + 4 mà ra 75 là do viết số 4 sang cột chục.",
-        "answer": {
-          "text": "Đ: b, c; S: a",
-          "explanation": "a) sai vì 35 + 4 = 39; b) 59 – 6 = 53 đúng; c) 87 – 32 = 55 đúng."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Mũi Chó Mực thính, mắt {name} còn tinh hơn!",
-          "Bắt được phép tính viết lệch cột, giỏi quá.",
-          "Hai phong bì đúng được gửi đi, phong bì sai được sửa lại."
-        ],
-        "wrong": [
-          "Thử tự tính lại 35 + 4 xem có ra 75 không.",
-          "Còn một phép tính đúng chưa được chọn đấy.",
-          "Đặt tính thẳng cột lại từng phép rồi hẵng chọn."
-        ]
-      },
-      "answer": {
-        "choices": [
-          "b-59-6-53",
-          "c-87-32-55"
-        ]
-      }
-    },
-    {
-      "id": "phong-bi-tinh-nhanh",
-      "title": "Xấp phong bì cuối",
-      "target": "cho-muc",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Xấp phong bì cuối cùng, Chó Mực đọc to từng phép tính. Tính.",
-      "template": "20 + 6 = {{b1}}\n57 – 7 = {{b2}}\n3 + 40 = {{b3}}\n43 + 20 = {{b4}}\n75 – 70 = {{b5}}\n69 – 19 = {{b6}}\na) 50 + 18 – 45 = {{b7}}\nb) 76 – 56 + 27 = {{b8}}",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o24",
-              "text": "24"
-            },
-            {
-              "id": "o26",
-              "text": "26"
-            },
-            {
-              "id": "o27",
-              "text": "27"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o50",
-              "text": "50"
-            },
-            {
-              "id": "o52",
-              "text": "52"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o33",
-              "text": "33"
-            },
-            {
-              "id": "o34",
-              "text": "34"
-            },
-            {
-              "id": "o43",
-              "text": "43"
+              "id": "o90",
+              "text": "90"
             }
           ]
         },
@@ -746,12 +739,12 @@
               "text": "36"
             },
             {
-              "id": "o53",
-              "text": "53"
+              "id": "o75",
+              "text": "75"
             },
             {
-              "id": "o63",
-              "text": "63"
+              "id": "o72",
+              "text": "72"
             }
           ]
         },
@@ -759,16 +752,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
               "id": "o6",
               "text": "6"
+            },
+            {
+              "id": "o60",
+              "text": "60"
+            },
+            {
+              "id": "o8",
+              "text": "8"
             }
           ]
         },
@@ -776,16 +769,16 @@
           "id": "b6",
           "options": [
             {
-              "id": "o48",
-              "text": "48"
-            },
-            {
-              "id": "o49",
-              "text": "49"
+              "id": "o5",
+              "text": "5"
             },
             {
               "id": "o50",
               "text": "50"
+            },
+            {
+              "id": "o51",
+              "text": "51"
             }
           ]
         },
@@ -797,12 +790,12 @@
               "text": "23"
             },
             {
-              "id": "o24",
-              "text": "24"
+              "id": "o33",
+              "text": "33"
             },
             {
-              "id": "o32",
-              "text": "32"
+              "id": "o101",
+              "text": "101"
             }
           ]
         },
@@ -810,40 +803,30 @@
           "id": "b8",
           "options": [
             {
-              "id": "o47",
-              "text": "47"
+              "id": "o44",
+              "text": "44"
             },
             {
-              "id": "o48",
-              "text": "48"
+              "id": "o154",
+              "text": "154"
             },
             {
-              "id": "o74",
-              "text": "74"
+              "id": "o54",
+              "text": "54"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-2-2-a",
-        "toan2-t1-b05-luyen-tap-2-2-b",
-        "toan2-t1-b05-luyen-tap-2-2-c",
-        "toan2-t1-b05-luyen-tap-2-2-d",
-        "toan2-t1-b05-luyen-tap-2-2-e",
-        "toan2-t1-b05-luyen-tap-2-2-g",
-        "toan2-t1-b05-luyen-tap-3-3-a",
-        "toan2-t1-b05-luyen-tap-3-3-b"
-      ],
       "support": {
         "guide": [
-          "Cộng, trừ số tròn chục thì chỉ đổi hàng chục.",
+          "Cộng, trừ số tròn chục thì chỉ đổi ở hàng chục.",
           "Phép tính có hai dấu thì tính lần lượt từ trái sang phải."
         ],
-        "hint": "50 + 18 = 68, rồi 68 – 45.",
+        "hint": "40 + 27 = 67, rồi 67 – 34.",
         "answer": {
-          "text": "20 + 6 = 26; 57 – 7 = 50; 3 + 40 = 43; 43 + 20 = 63; 75 – 70 = 5; 69 – 19 = 50; a) 50 + 18 – 45 = 23; b) 76 – 56 + 27 = 47",
-          "explanation": "20 + 6 = 26, 57 – 7 = 50, 3 + 40 = 43, 43 + 20 = 63, 75 – 70 = 5, 69 – 19 = 50; 50 + 18 – 45 = 23; 76 – 56 + 27 = 47."
+          "text": "30 + 5 = 35; 68 – 8 = 60; 4 + 50 = 54; 32 + 40 = 72; 86 – 80 = 6; 78 – 28 = 50; 40 + 27 – 34 = 33; 85 – 65 + 34 = 54",
+          "explanation": "Sáu phép đầu chỉ đổi một hàng; phép có hai dấu tính từng bước: 40 + 27 = 67 rồi 67 – 34 = 33; 85 – 65 = 20 rồi 20 + 34 = 54."
         }
       },
       "feedback": {
@@ -853,32 +836,43 @@
           "Tám phong bì, tám đáp số, đưa thư nhanh như bay."
         ],
         "wrong": [
-          "Phép tính hai dấu thì làm từ trái sang phải nhé.",
-          "75 bớt 70 chỉ còn ít thôi, tính lại xem.",
-          "Cộng số tròn chục thì hàng đơn vị giữ nguyên đấy."
+          "Phép tính có hai dấu thì làm từ trái sang phải nhé.",
+          "86 bớt 80 chỉ còn ít thôi, tính lại xem.",
+          "Cộng với số tròn chục thì hàng đơn vị giữ nguyên đấy."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o26",
-          "b2": "o50",
-          "b3": "o43",
-          "b4": "o63",
-          "b5": "o5",
+          "b1": "o35",
+          "b2": "o60",
+          "b3": "o54",
+          "b4": "o72",
+          "b5": "o6",
           "b6": "o50",
-          "b7": "o23",
-          "b8": "o47"
+          "b7": "o33",
+          "b8": "o54"
         }
-      }
+      },
+      "expression": {
+        "b1": "30 + 5",
+        "b2": "68 - 8",
+        "b3": "4 + 50",
+        "b4": "32 + 40",
+        "b5": "86 - 80",
+        "b6": "78 - 28",
+        "b7": "40 + 27 - 34",
+        "b8": "85 - 65 + 34"
+      },
+      "objective": "cong-tru-khong-nho-dat-tinh"
     },
     {
       "id": "o-du-bai-bien",
-      "title": "Bưu thiếp bãi biển",
-      "goTo": "Ra gốc bàng, Mèo Bạc Hà đang ngắm tấm bưu thiếp bãi biển",
+      "title": "Bưu thiếp bãi diều",
+      "goTo": "Ra gốc bàng, Mèo Bạc Hà đang ngắm tấm bưu thiếp bãi diều",
       "target": "toan2-cd1-b05-meo-bac-ha",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Bưu thiếp thứ ba: sáu chiếc ô che nắng trên bãi biển, mỗi chiếc ghi một phép tính. Những phép tính nào dưới đây có kết quả bé hơn 50? Những phép tính nào dưới đây có kết quả lớn hơn 50?",
+      "prompt": "Tấm bưu thiếp thứ ba vẽ sáu cánh diều bay trên bãi cỏ, mỗi cánh diều ghi một phép tính. Cánh diều nào có kết quả bé hơn 50? Cánh diều nào có kết quả lớn hơn 50? Cậu chia sáu cánh diều vào hai nhóm.",
       "groups": [
         {
           "id": "nhom-ket-qua-be-hon-50",
@@ -891,68 +885,65 @@
       ],
       "items": [
         {
-          "id": "o-du-40-8",
-          "label": "40 + 8"
+          "id": "dieu-23-cong-24",
+          "label": "23 + 24"
         },
         {
-          "id": "o-du-32-20",
-          "label": "32 + 20"
+          "id": "dieu-41-cong-13",
+          "label": "41 + 13"
         },
         {
-          "id": "o-du-70-30",
-          "label": "70 – 30"
+          "id": "dieu-80-tru-40",
+          "label": "80 – 40"
         },
         {
-          "id": "o-du-90-50",
-          "label": "90 – 50"
+          "id": "dieu-65-tru-30",
+          "label": "65 – 30"
         },
         {
-          "id": "o-du-30-40",
-          "label": "30 + 40"
+          "id": "dieu-20-cong-50",
+          "label": "20 + 50"
         },
         {
-          "id": "o-du-86-6",
-          "label": "86 – 6"
+          "id": "dieu-98-tru-6",
+          "label": "98 – 6"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-2-3-a",
-        "toan2-t1-b05-luyen-tap-2-3-b"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả từng chiếc ô rồi so với 50.",
-          "Không chiếc ô nào bằng đúng 50."
+          "Tính kết quả của từng cánh diều rồi so với 50.",
+          "Không cánh diều nào bằng đúng 50."
         ],
-        "hint": "40 + 8 = 48, còn 86 – 6 = 80.",
+        "hint": "23 + 24 = 47, còn 98 – 6 = 92.",
         "answer": {
-          "text": "Bé hơn 50: 40 + 8, 70 – 30, 90 – 50; lớn hơn 50: 32 + 20, 30 + 40, 86 – 6",
-          "explanation": "Bé hơn 50: 40 + 8 = 48, 70 – 30 = 40, 90 – 50 = 40. Lớn hơn 50: 32 + 20 = 52, 30 + 40 = 70, 86 – 6 = 80."
+          "text": "Bé hơn 50: 23 + 24, 80 – 40, 65 – 30. Lớn hơn 50: 41 + 13, 20 + 50, 98 – 6.",
+          "explanation": "Bé hơn 50: 23 + 24 = 47, 80 – 40 = 40, 65 – 30 = 35. Lớn hơn 50: 41 + 13 = 54, 20 + 50 = 70, 98 – 6 = 92."
         }
       },
       "feedback": {
         "right": [
-          "Bãi biển chia hai phe ô gọn gàng, Mi chắc vui lắm!",
-          "So với 50 chuẩn từng chiếc ô, nắng cũng phải khen.",
-          "Ô bé ô lớn về đúng chỗ, sóng vỗ rì rào tán thưởng."
+          "Bãi cỏ chia hai phe diều gọn gàng, Mi chắc vui lắm!",
+          "So với 50 chuẩn từng cánh diều, gió cũng phải khen.",
+          "Diều bé diều lớn về đúng nhóm, cả bãi cỏ reo lên."
         ],
         "wrong": [
-          "Tính kết quả chiếc ô trước rồi mới so với 50.",
-          "32 + 20 lớn hơn hay bé hơn 50 nhỉ?",
-          "Có một chiếc ô đang lạc sang phe kia rồi."
+          "Tính kết quả của cánh diều trước rồi mới so với 50.",
+          "41 + 13 lớn hơn hay bé hơn 50 nhỉ?",
+          "Có một cánh diều đang bay lạc sang nhóm kia rồi."
         ]
       },
       "answer": {
         "assignment": {
-          "o-du-40-8": "nhom-ket-qua-be-hon-50",
-          "o-du-32-20": "nhom-ket-qua-lon-hon-50",
-          "o-du-70-30": "nhom-ket-qua-be-hon-50",
-          "o-du-90-50": "nhom-ket-qua-be-hon-50",
-          "o-du-30-40": "nhom-ket-qua-lon-hon-50",
-          "o-du-86-6": "nhom-ket-qua-lon-hon-50"
+          "dieu-23-cong-24": "nhom-ket-qua-be-hon-50",
+          "dieu-41-cong-13": "nhom-ket-qua-lon-hon-50",
+          "dieu-80-tru-40": "nhom-ket-qua-be-hon-50",
+          "dieu-65-tru-30": "nhom-ket-qua-be-hon-50",
+          "dieu-20-cong-50": "nhom-ket-qua-lon-hon-50",
+          "dieu-98-tru-6": "nhom-ket-qua-lon-hon-50"
         }
-      }
+      },
+      "objective": "so-den-100-so-sanh"
     },
     {
       "id": "chu-so-bi-nhoe",
@@ -961,8 +952,8 @@
       "target": "cho-muc",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Mưa làm nhòe mấy chữ số trên phong bì, Chó Mực dí mũi ngửi mãi vẫn không ra.",
-      "template": "Tìm chữ số thích hợp.\na) 36 + {{b1}}2 = 7{{b2}}\nb) {{b3}}8 – 46 = 5{{b4}}\nc) 5{{b5}} + {{b6}}2 = 87\nSố ?\na) 10 + {{b7}} = 20\nb) 30 – {{b8}} = 20\nc) 50 + {{b9}} = 70\nd) 80 – {{b10}} = 40",
+      "prompt": "Mưa làm nhòe mấy chữ số trên phong bì, Chó Mực dí mũi ngửi mãi vẫn không ra. Cậu giúp bạn ấy đọc lại.",
+      "template": "Phong bì nhòe một chữ số\n24 + {{b1}}3 = 7{{b2}}\n{{b3}}7 – 35 = 4{{b4}}\n7{{b5}} + {{b6}}3 = 89\nPhong bì nhòe cả một số\n20 + {{b7}} = 90\n100 – {{b8}} = 40\n50 + {{b9}} = 80\n70 – {{b10}} = 20",
       "blanks": [
         {
           "id": "b1",
@@ -985,16 +976,16 @@
           "id": "b2",
           "options": [
             {
+              "id": "o6",
+              "text": "6"
+            },
+            {
               "id": "o7",
               "text": "7"
             },
             {
               "id": "o8",
               "text": "8"
-            },
-            {
-              "id": "o10",
-              "text": "10"
             }
           ]
         },
@@ -1002,16 +993,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o19",
-              "text": "19"
+              "id": "o8",
+              "text": "8"
             }
           ]
         },
@@ -1027,8 +1018,8 @@
               "text": "3"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o1",
+              "text": "1"
             }
           ]
         },
@@ -1036,16 +1027,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
               "id": "o5",
               "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o7",
+              "text": "7"
             }
           ]
         },
@@ -1053,16 +1044,16 @@
           "id": "b6",
           "options": [
             {
+              "id": "o1",
+              "text": "1"
+            },
+            {
+              "id": "o2",
+              "text": "2"
+            },
+            {
               "id": "o3",
               "text": "3"
-            },
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o13",
-              "text": "13"
             }
           ]
         },
@@ -1070,16 +1061,16 @@
           "id": "b7",
           "options": [
             {
-              "id": "o1",
-              "text": "1"
+              "id": "o60",
+              "text": "60"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o70",
+              "text": "70"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o110",
+              "text": "110"
             }
           ]
         },
@@ -1087,16 +1078,16 @@
           "id": "b8",
           "options": [
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o40",
+              "text": "40"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o140",
+              "text": "140"
             },
             {
-              "id": "o20",
-              "text": "20"
+              "id": "o60",
+              "text": "60"
             }
           ]
         },
@@ -1104,16 +1095,16 @@
           "id": "b9",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
-            },
-            {
-              "id": "o19",
-              "text": "19"
+              "id": "o130",
+              "text": "130"
             },
             {
               "id": "o20",
               "text": "20"
+            },
+            {
+              "id": "o30",
+              "text": "30"
             }
           ]
         },
@@ -1121,39 +1112,30 @@
           "id": "b10",
           "options": [
             {
-              "id": "o40",
-              "text": "40"
+              "id": "o20",
+              "text": "20"
             },
             {
-              "id": "o41",
-              "text": "41"
+              "id": "o50",
+              "text": "50"
             },
             {
-              "id": "o42",
-              "text": "42"
+              "id": "o90",
+              "text": "90"
             }
           ]
         }
       ],
       "skill": "thanh-phan-phep-tinh",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-2-4-a",
-        "toan2-t1-b05-luyen-tap-2-4-b",
-        "toan2-t1-b05-luyen-tap-2-4-c",
-        "toan2-t1-b05-luyen-tap-3-2-a",
-        "toan2-t1-b05-luyen-tap-3-2-b",
-        "toan2-t1-b05-luyen-tap-3-2-c",
-        "toan2-t1-b05-luyen-tap-3-2-d"
-      ],
       "support": {
         "guide": [
           "Xét từng hàng: hàng đơn vị trước, hàng chục sau.",
-          "Số còn thiếu trong phép cộng: lấy tổng trừ số đã biết."
+          "Số hạng còn thiếu trong phép cộng bằng tổng trừ số hạng đã biết."
         ],
-        "hint": "Câu a đầu: 6 + 2 = 8, nên chữ số đơn vị của tổng là 8.",
+        "hint": "Phép đầu: 4 + 3 = 7, nên chữ số hàng đơn vị của tổng là 7.",
         "answer": {
-          "text": "Tìm chữ số thích hợp.; a) 36 + 42 = 78; b) 98 – 46 = 52; c) 55 + 32 = 87; Số ?; a) 10 + 10 = 20; b) 30 – 10 = 20; c) 50 + 20 = 70; d) 80 – 40 = 40",
-          "explanation": "36 + 42 = 78; 98 – 46 = 52; 55 + 32 = 87; 10 + 10 = 20; 30 – 10 = 20; 50 + 20 = 70; 80 – 40 = 40."
+          "text": "Nhòe một chữ số: 24 + 53 = 77; 77 – 35 = 42; 76 + 13 = 89. Nhòe cả số: 20 + 70 = 90; 100 – 60 = 40; 50 + 30 = 80; 70 – 50 = 20.",
+          "explanation": "24 + 53 = 77; 77 – 35 = 42; 76 + 13 = 89; 90 – 20 = 70; 100 – 40 = 60; 80 – 50 = 30; 70 – 20 = 50."
         }
       },
       "feedback": {
@@ -1164,67 +1146,73 @@
         ],
         "wrong": [
           "Thử điền rồi tính lại xem phép tính có đúng không.",
-          "Hàng đơn vị: 8 trừ 6 còn mấy?",
+          "Hàng đơn vị: 7 trừ 5 còn mấy?",
           "Muốn tìm số hạng còn thiếu, lấy tổng trừ số hạng kia."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o4",
-          "b2": "o8",
-          "b3": "o9",
+          "b1": "o5",
+          "b2": "o7",
+          "b3": "o7",
           "b4": "o2",
-          "b5": "o5",
-          "b6": "o3",
-          "b7": "o10",
-          "b8": "o10",
-          "b9": "o20",
-          "b10": "o40"
+          "b5": "o6",
+          "b6": "o1",
+          "b7": "o70",
+          "b8": "o60",
+          "b9": "o30",
+          "b10": "o50"
         }
-      }
+      },
+      "expression": {
+        "b7": "20 + ? = 90",
+        "b8": "100 - ? = 40",
+        "b9": "50 + ? = 80",
+        "b10": "70 - ? = 20"
+      },
+      "objective": "thanh-phan-phep-tinh-phep-cong"
     },
     {
       "id": "trau-bo-bac-binh",
-      "title": "Thư của bác Bình",
-      "goTo": "Ra gốc bàng, Mèo Bạc Hà vừa bóc lá thư gửi từ trang trại",
+      "title": "Chồng thư chưa chia",
+      "goTo": "Ra gốc bàng, Mèo Bạc Hà đang ôm một chồng thư dày cộp",
       "target": "toan2-cd1-b05-meo-bac-ha",
       "kind": "riddle",
-      "question": "Có một lá thư từ trang trại gửi Bò Sữa Mơ. Đàn trâu và bò của nhà bác Bình có 28 con, trong đó có 12 con trâu. Hỏi nhà bác Bình có bao nhiêu con bò?",
+      "question": "Mèo Bạc Hà nhận một chồng 46 lá thư. Trong đó có 21 lá gửi cho Bò Sữa Mơ, các lá còn lại gửi cho bác Lộc. Hỏi có bao nhiêu lá thư gửi cho bác Lộc?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-2-5"
-      ],
       "support": {
         "guide": [
-          "Cả đàn gồm trâu và bò.",
-          "Lấy cả đàn trừ số trâu thì ra số bò."
+          "Cả chồng thư gồm thư của Bò Sữa Mơ và thư của bác Lộc.",
+          "Lấy cả chồng bớt đi số thư của Bò Sữa Mơ thì ra số thư của bác Lộc."
         ],
-        "hint": "28 – 12.",
+        "hint": "46 – 21.",
         "answer": {
-          "text": "16 con bò",
-          "explanation": "28 – 12 = 16, nhà bác Bình có 16 con bò."
+          "text": "25 lá thư",
+          "explanation": "46 – 21 = 25, có 25 lá thư gửi cho bác Lộc."
         }
       },
       "feedback": {
         "right": [
-          "Mười sáu con bò! Bò Sữa Mơ chắc sắp có bạn mới.",
-          "Biết bớt phần trâu ra là tìm được bò, thông minh ghê.",
-          "Ụm bò! Lá thư được chuyển tới trang trại đúng hẹn."
+          "Hai mươi lăm lá cho bác Lộc! Mèo Bạc Hà xếp gọn thành một bó.",
+          "Biết bớt phần của Bò Sữa Mơ ra là tìm được phần bác Lộc, thông minh ghê.",
+          "Chồng thư được chia xong, ai cũng nhận đúng phần."
         ],
         "wrong": [
-          "Cả đàn có 28 con, trong đó trâu là 12 con.",
-          "Muốn tìm số bò thì bớt số trâu đi nhé.",
-          "Hàng đơn vị: 8 bớt 2 còn mấy?"
+          "Cả chồng có 46 lá, trong đó 21 lá của Bò Sữa Mơ.",
+          "Muốn tìm số thư của bác Lộc thì bớt số thư của Bò Sữa Mơ đi nhé.",
+          "Hàng đơn vị: 6 bớt 1 còn mấy?"
         ]
       },
       "answer": {
-        "value": 16
-      }
+        "value": 25
+      },
+      "expression": "46 - 21",
+      "objective": "cong-tru-khong-nho-bai-toan"
     },
     {
       "id": "bong-ghe-tham",
       "title": "Cáo Tuyết Mi ghé thăm",
-      "goTo": "Mang bưu thiếp tới hộp thư lớp 2, Cáo Tuyết Mi vừa tới",
+      "goTo": "Mang bưu thiếp tới hộp thư của trường, Cáo Tuyết Mi vừa tới",
       "kind": "dialogue",
       "target": "toan2-cd1-b05-cao-tuyet-mi",
       "lines": [
@@ -1253,7 +1241,7 @@
       ],
       "en": {
         "title": "Cáo Tuyết Mi drops by",
-        "goTo": "Take the postcards to the Year 2 mailbox, where Cáo Tuyết Mi has just arrived",
+        "goTo": "Take the postcards to the school's mailbox, where Cáo Tuyết Mi has just arrived",
         "lines": [
           "Oh look, my postcards made it here! I'm so far away that I sent some puzzles along so I'd miss school a little less.",
           "Mi, the box you sent also has two fruit baskets and a triangle picture.",
@@ -1277,54 +1265,52 @@
       "target": "toan2-cd1-b05-cao-tuyet-mi",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Ba quả cam trong giỏ ghi phép tính. a) Những phép tính nào dưới đây có cùng kết quả?",
+      "prompt": "Ba quả cam trong giỏ, mỗi quả ghi một phép tính. Hai quả nào cho cùng kết quả? Cậu chọn cả hai.",
       "choices": [
         {
-          "id": "97-7",
-          "text": "97 – 7"
+          "id": "84-4",
+          "text": "84 – 4"
         },
         {
-          "id": "5-90",
-          "text": "5 + 90"
+          "id": "6-70",
+          "text": "6 + 70"
         },
         {
-          "id": "98-3",
-          "text": "98 – 3"
+          "id": "79-3",
+          "text": "79 – 3"
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-3-1-a"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả từng quả cam.",
+          "Tính kết quả của từng quả cam.",
           "Chọn hai quả có kết quả bằng nhau."
         ],
-        "hint": "97 – 7 = 90; hai quả kia bằng mấy?",
+        "hint": "84 – 4 = 80; hai quả kia bằng bao nhiêu?",
         "answer": {
-          "text": "5 + 90 và 98 – 3",
-          "explanation": "5 + 90 = 95 và 98 – 3 = 95; còn 97 – 7 = 90."
+          "text": "Quả ghi 6 + 70 và quả ghi 79 – 3 cùng cho 76.",
+          "explanation": "6 + 70 = 76 và 79 – 3 = 76; còn 84 – 4 = 80."
         }
       },
       "feedback": {
         "right": [
-          "Hai quả cam cùng 95, Mi thưởng cậu một múi cam!",
+          "Hai quả cam cùng 76, Mi thưởng cậu một múi cam!",
           "Chọn đúng cặp sinh đôi trong giỏ cam rồi.",
           "Tính nhẩm siêu nhanh, cam còn chưa kịp lăn."
         ],
         "wrong": [
-          "97 – 7 ra 90 thôi, so với hai quả kia xem.",
+          "84 – 4 ra 80 thôi, đem so với hai quả kia xem.",
           "Phải chọn đủ hai quả có cùng kết quả nhé.",
-          "Tính lại 98 – 3 thử nào."
+          "Tính lại 79 – 3 thử nào."
         ]
       },
       "answer": {
         "choices": [
-          "5-90",
-          "98-3"
+          "6-70",
+          "79-3"
         ]
-      }
+      },
+      "objective": "cong-tru-khong-nho-tinh-nham"
     },
     {
       "id": "gio-tao-be-nhat",
@@ -1333,149 +1319,147 @@
       "target": "toan2-cd1-b05-chu-he-to-te",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Ba quả táo trong giỏ cũng ghi phép tính. b) Phép tính nào dưới đây có kết quả bé nhất?",
+      "prompt": "Ba quả táo trong giỏ cũng ghi phép tính. Quả táo nào có kết quả bé nhất?",
       "choices": [
         {
-          "id": "35-1",
-          "text": "35 + 1"
+          "id": "21-7",
+          "text": "21 + 7"
         },
         {
-          "id": "14-20",
-          "text": "14 + 20"
+          "id": "56-30",
+          "text": "56 – 30"
         },
         {
-          "id": "49-10",
-          "text": "49 – 10"
+          "id": "41-10",
+          "text": "41 – 10"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-3-1-b"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả cả ba quả táo.",
+          "Tính kết quả của cả ba quả táo.",
           "So các kết quả rồi chọn số bé nhất."
         ],
-        "hint": "35 + 1 = 36, 49 – 10 = 39.",
+        "hint": "21 + 7 = 28, 41 – 10 = 31.",
         "answer": {
-          "text": "14 + 20",
-          "explanation": "14 + 20 = 34 bé hơn 36 và 39."
+          "text": "Quả táo ghi 56 – 30 có kết quả bé nhất.",
+          "explanation": "56 – 30 = 26 bé hơn 28 và 31."
         }
       },
       "feedback": {
         "right": [
-          "Táo 34 bé nhất, chú hề Tò Te cắn rộp một miếng mừng cậu!",
+          "Táo 26 bé nhất, chú hề Tò Te cắn rộp một miếng mừng cậu!",
           "Ba quả táo, một lần chọn trúng, xuất sắc.",
           "So kết quả gọn như gọt táo vậy."
         ],
         "wrong": [
           "Tính hết ba quả rồi hẵng so nhé.",
-          "36, 34, 39: số nào bé nhất?",
+          "28, 26, 31: số nào bé nhất?",
           "Quả táo đó chưa phải bé nhất đâu."
         ]
       },
       "answer": {
-        "choice": "14-20"
-      }
+        "choice": "56-30"
+      },
+      "objective": "so-den-100-so-sanh"
     },
     {
       "id": "rap-xiec-ghe-trong",
-      "title": "Vé xem xiếc",
+      "title": "Bóng bay của Tò Te",
       "target": "toan2-cd1-b05-chu-he-to-te",
       "kind": "riddle",
-      "question": "Chú hề Tò Te kể: chú vừa diễn xiếc ở phương Bắc, ba chú hề tung bóng vui lắm. Một rạp xiếc có 96 ghế, trong đó 62 ghế đã có khán giả ngồi. Hỏi trong rạp xiếc còn bao nhiêu ghế trống?",
+      "question": "Chú hề Tò Te buộc 79 quả bóng bay quanh sân khấu nhỏ. Một cơn gió thổi bay mất 43 quả. Hỏi sân khấu còn lại bao nhiêu quả bóng bay?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-3-4"
-      ],
       "support": {
         "guide": [
-          "Ghế trống = tất cả ghế bớt đi ghế có người ngồi.",
-          "Làm phép trừ."
+          "Gió thổi bay bớt đi thì số bóng ít lại: làm phép trừ.",
+          "Lấy số bóng lúc đầu trừ đi số bóng bị gió thổi bay."
         ],
-        "hint": "96 – 62.",
+        "hint": "79 – 43.",
         "answer": {
-          "text": "34 ghế trống",
-          "explanation": "96 – 62 = 34, còn 34 ghế trống."
+          "text": "36 quả bóng bay",
+          "explanation": "79 – 43 = 36, sân khấu còn lại 36 quả bóng bay."
         }
       },
       "feedback": {
         "right": [
-          "Còn 34 ghế trống, cả lớp mình đi xem được rồi!",
+          "Còn 36 quả bóng, sân khấu vẫn rực rỡ sắc màu!",
           "Chú hề Tò Te tung cho cậu một quả bóng khen thưởng.",
-          "Tò Te bóp còi pin pin: đúng như rạp xiếc chú đếm!"
+          "Tò Te bóp còi pin pin: đúng như chú đếm!"
         ],
         "wrong": [
-          "Lấy tổng số ghế trừ đi số ghế có người ngồi.",
-          "96 – 62: hàng đơn vị 6 – 2, hàng chục 9 – 6.",
-          "Ghế trống ít hơn tổng số ghế đấy nhé."
+          "Bóng bị gió thổi đi thì còn lại ít hơn, hãy làm phép trừ nhé.",
+          "79 – 43: hàng đơn vị 9 – 3, hàng chục 7 – 4.",
+          "Số bóng còn lại phải ít hơn số bóng ban đầu nhé."
         ]
       },
       "answer": {
-        "value": 34
-      }
+        "value": 36
+      },
+      "expression": "79 - 43",
+      "objective": "cong-tru-khong-nho-bai-toan"
     },
     {
       "id": "tem-tam-giac",
-      "title": "Bức tranh tam giác",
-      "goTo": "Về hộp thư lớp 2, Cáo Tuyết Mi đang mở bức tranh tam giác",
+      "title": "Con tem ba góc",
+      "goTo": "Về hộp thư của trường, Cáo Tuyết Mi đang mở ba con tem ba góc",
       "target": "toan2-cd1-b05-cao-tuyet-mi",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Món quà cuối của Mi là bức tranh ba tam giác, mỗi tam giác có ba số ở ba góc và một số ở giữa. Ai điền được số cuối thì được mở hộp quà! Số ?",
-      "template": "Tam giác vàng: góc 12, 4, 3 — ở giữa 19\nTam giác xanh dương: góc 10, 13, 5 — ở giữa 28\nTam giác xanh lá: góc 33, 6, 20 — ở giữa {{b1}}",
+      "prompt": "Món quà cuối của Mi là ba con tem hình tam giác. Mỗi con tem có ba số ở ba góc và một số in ở giữa. Hai con tem đầu đã đủ số, cậu tìm quy luật rồi điền số ở giữa con tem cuối cùng để mở hộp quà!",
+      "template": "Tem vàng: góc 21, 5, 2 — ở giữa 28\nTem xanh dương: góc 30, 14, 3 — ở giữa 47\nTem xanh lá: góc 42, 5, 30 — ở giữa {{b1}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o49",
-              "text": "49"
+              "id": "o87",
+              "text": "87"
             },
             {
-              "id": "o57",
-              "text": "57"
+              "id": "o77",
+              "text": "77"
             },
             {
-              "id": "o59",
-              "text": "59"
+              "id": "o67",
+              "text": "67"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b05-luyen-tap-3-5"
-      ],
       "support": {
         "guide": [
-          "Tìm quy luật ở hai tam giác đầu.",
+          "Tìm quy luật ở hai con tem đầu.",
           "Số ở giữa bằng tổng ba số ở ba góc."
         ],
-        "hint": "12 + 4 + 3 = 19. Làm tương tự với tam giác xanh lá.",
+        "hint": "21 + 5 + 2 = 28. Làm tương tự với tem xanh lá.",
         "answer": {
-          "text": "59",
-          "explanation": "Số ở giữa là tổng ba góc: 33 + 6 + 20 = 59."
+          "text": "Số ở giữa tem xanh lá là 77.",
+          "explanation": "Số ở giữa là tổng ba góc: 42 + 5 + 30 = 77."
         }
       },
       "feedback": {
         "right": [
           "Hộp quà bật mở: một quả cầu tuyết tí hon từ nhà Mi!",
           "Tìm ra quy luật cộng ba góc, cậu đúng là nhà thám hiểm.",
-          "59! Cả Chó Mực lẫn Mi cùng nhảy cẫng lên."
+          "77! Cả Chó Mực lẫn Mi cùng nhảy cẫng lên."
         ],
         "wrong": [
-          "Thử cộng ba số ở góc tam giác vàng xem có ra 19 không.",
-          "Cộng lần lượt: 33 + 6 rồi cộng thêm 20.",
+          "Thử cộng ba số ở góc tem vàng xem có ra 28 không.",
+          "Cộng lần lượt: 42 + 5 rồi cộng thêm 30.",
           "Quy luật ở đây là cộng, không phải trừ đâu."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o59"
+          "b1": "o77"
         }
-      }
+      },
+      "expression": {
+        "b1": "42 + 5 + 30"
+      },
+      "objective": "cong-tru-khong-nho-dat-tinh"
     },
     {
       "id": "huy-hieu-buu-ta",

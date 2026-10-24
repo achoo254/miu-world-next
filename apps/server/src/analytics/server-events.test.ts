@@ -101,7 +101,7 @@ describe('quest events', () => {
     return { agent, childId: me.activePlayerId };
   }
 
-  it('sends tutorial_complete on the first quest only and level_end on every run, with lesson and subject from the catalogue', async () => {
+  it('sends tutorial_complete on the first quest only and level_end on every run, with topic and subject from the catalogue', async () => {
     const { agent, childId } = await playing();
     await finish(agent, 'quest-a');
     expect(names()).toEqual(['tutorial_complete', 'level_end']);
@@ -122,13 +122,13 @@ describe('quest events', () => {
     expect(names()).toEqual([]);
   });
 
-  it('names a lesson only when the catalogue has it', () => {
+  it('names a topic only when the catalogue has it', () => {
     const local: Ga4Hit[] = [];
-    const events = new ServerEvents({ sink: { send: (hit) => void local.push(hit) }, sessions: new AnalyticsSessions(), labels: { lessons: new Set(['tv2-t1-b01']), subjectOfSkill: new Map([['doc-hieu', 'tieng-viet']]) } });
-    events.questFinished('child', { lesson: 'tv2-t1-b01', reward: { xp: 1, coin: 0, skillXp: { 'doc-hieu': 1 }, items: {} } }, false);
-    events.questFinished('child', { lesson: 'made-up', reward: { xp: 1, coin: 0, skillXp: { unknown: 1 }, items: {} } }, false);
+    const events = new ServerEvents({ sink: { send: (hit) => void local.push(hit) }, sessions: new AnalyticsSessions(), labels: { topics: new Set(['doc-truyen']), subjectOfSkill: new Map([['doc-hieu', 'tieng-viet']]) } });
+    events.questFinished('child', { topic: 'doc-truyen', reward: { xp: 1, coin: 0, skillXp: { 'doc-hieu': 1 }, items: {} } }, false);
+    events.questFinished('child', { topic: 'made-up', reward: { xp: 1, coin: 0, skillXp: { unknown: 1 }, items: {} } }, false);
     expect(local.map((hit) => hit.event.params)).toEqual([
-      { lesson_id: 'tv2-t1-b01', subject: 'tieng-viet', session_id: expect.any(Number), engagement_time_msec: 1 },
+      { topic_id: 'doc-truyen', subject: 'tieng-viet', session_id: expect.any(Number), engagement_time_msec: 1 },
       { session_id: expect.any(Number), engagement_time_msec: 1 },
     ]);
   });
@@ -160,7 +160,7 @@ describe('the iPhone/Android app', () => {
 
   it('sends nothing for work marked as the app’s outside a request (a co-op win paid over the WebSocket)', () => {
     const local: Ga4Hit[] = [];
-    const events = new ServerEvents({ sink: { send: (hit) => void local.push(hit) }, sessions: new AnalyticsSessions(), labels: { lessons: new Set(), subjectOfSkill: new Map() } });
+    const events = new ServerEvents({ sink: { send: (hit) => void local.push(hit) }, sessions: new AnalyticsSessions(), labels: { topics: new Set(), subjectOfSkill: new Map() } });
     const quest = { reward: { xp: 1, coin: 0, skillXp: {}, items: {} } };
     asAppRequest(true, () => events.questFinished('child', quest, false));
     expect(local).toEqual([]);
@@ -173,7 +173,7 @@ describe('the iPhone/Android app', () => {
 describe('ccu_peak', () => {
   it('sends a whole number of players under the server’s own GA id', () => {
     const local: Ga4Hit[] = [];
-    const events = new ServerEvents({ sink: { send: (hit) => void local.push(hit) }, sessions: new AnalyticsSessions(), labels: { lessons: new Set(), subjectOfSkill: new Map() } });
+    const events = new ServerEvents({ sink: { send: (hit) => void local.push(hit) }, sessions: new AnalyticsSessions(), labels: { topics: new Set(), subjectOfSkill: new Map() } });
     events.ccuPeak(4);
     events.ccuPeak(0);
     events.ccuPeak(-1);

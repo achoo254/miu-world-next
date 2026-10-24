@@ -226,7 +226,8 @@ export async function auditQuestTargets(maps?: readonly string[], picker: Prompt
     if (quests.length === 0) continue;
     const auditMap = await loadAuditMap(map);
     for (const quest of quests) {
-      const view = QuestView.parse(quest);
+      // A definition's `topic` is an id; the view's is the label the server builds, which the audit does not need.
+      const view = QuestView.parse({ ...quest, topic: undefined });
       if (view.status !== 'active') continue;
       findings.push(...auditQuest(auditMap, view, quest.chapter, picker));
     }

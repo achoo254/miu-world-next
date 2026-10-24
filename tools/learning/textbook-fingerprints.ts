@@ -56,11 +56,26 @@ function hashShingle(words: readonly string[], key: Buffer): number {
   return digest.readUIntBE(0, HASH_BYTES);
 }
 
+/**
+ * Hashes already made, per key and text: the content gate and its tests check the same thousands of lines again and
+ * again, and the keyed hash is what costs.
+ */
+const cache = new Map<string, Map<string, readonly number[]>>();
+
 /** Keyed hashes of every 7-word run of the text, in reading order (none for a text shorter than 7 words). */
-export function shingleHashes(text: string, key: Buffer): number[] {
+export function shingleHashes(text: string, key: Buffer): readonly number[] {
+  const id = key.toString('hex');
+  let byText = cache.get(id);
+  if (!byText) {
+    byText = new Map();
+    cache.set(id, byText);
+  }
+  const known = byText.get(text);
+  if (known) return known;
   const words = fingerprintWords(text);
   const hashes: number[] = [];
   for (let i = 0; i + SHINGLE_WORDS <= words.length; i += 1) hashes.push(hashShingle(words.slice(i, i + SHINGLE_WORDS), key));
+  byText.set(text, hashes);
   return hashes;
 }
 

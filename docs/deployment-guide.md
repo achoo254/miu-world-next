@@ -48,7 +48,7 @@ Thêm một entry mới thì làm theo `_meta.entry_schema`. Trước khi sửa,
 | Đường vào | Cloudflare → nginx trên .65 (`conf.d/miu.conf`, phục vụ web tĩnh, proxy `/api/`) → server ở loopback của .65 |
 | Dùng chung với | Nhiều dự án khác; xem bằng `pm2 jlist` và `ls /etc/nginx/conf.d` |
 
-Cấu hình từng phần nằm trong `tools/deploy/production/`, lý do ghi ngay trong file: `setup-prod-host.sh` (Postgres 16 từ AppStream, chỉ loopback, `pg_hba` cho role `miu` bằng scram; Node 22 ở `/opt`; user `miu`; unit và timer backup; journal namespace `miu`; server block nginx chỉ bật khi `nginx -t` sạch), `miu-server.service`, `miu-backup.{service,timer}`, `journald-miu.conf`, `nginx-prod.conf`.
+Cấu hình từng phần nằm trong `tools/deploy/production/`, lý do ghi ngay trong file: `setup-prod-host.sh` (Postgres 16 từ AppStream, chỉ loopback, `pg_hba` cho role `miu` bằng scram; Node 22 ở `/opt`; user `miu`; unit và timer backup; journal namespace `miu`; server block nginx chỉ bật khi `nginx -t` sạch), `miu-server.service`, `miu-backup.{service,timer}`, `journald-miu.conf`, `nginx-prod.conf` và `nginx-bai-redirects.conf` (bảng 301 từ trang bài cũ `/bai/<slug>/` sang trang chủ đề `/hoc/<môn>/<chủ-đề>/`, `setup` cài vào `/etc/nginx/miu-bai-redirects.conf`, `miu.conf` include; áp lên production bằng `deploy.sh setup`, hỏi người trước).
 
 ## 4. DNS và đường vào từ internet
 

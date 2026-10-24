@@ -36,29 +36,30 @@ export function recommendedQuest(quests: readonly QuestSummary[]): QuestSummary 
   );
 }
 
-/** A book a region's lessons come from: its name ("Toán 2, tập một"), the pages they span, how many lessons. */
-export interface RegionBook {
-  book: string;
-  pages: [number, number];
+/** A subject a region's lessons teach: its name ("Toán"), the topics they practise, how many lessons. */
+export interface RegionSubject {
+  subject: string;
+  subjectName: string;
+  /** Topic titles, in the order each topic's first lesson comes. */
+  topics: string[];
   lessons: number;
 }
 
 /**
- * The textbooks behind a region's lessons, for the world map's quick facts (owner, 03/10/2026: which book and
- * which pages each map covers): one entry per book, in the order its first lesson comes, spanning the lowest
- * to the highest page of its active lessons.
+ * What a region's lessons teach, for the world map's quick facts: one entry per subject, in the order its first
+ * lesson comes, with the topics of its active lessons there.
  */
-export function regionBooks(quests: readonly QuestSummary[], region: string): RegionBook[] {
-  const books = new Map<string, RegionBook>();
+export function regionSubjects(quests: readonly QuestSummary[], region: string): RegionSubject[] {
+  const subjects = new Map<string, RegionSubject>();
   for (const summary of quests) {
-    const textbook = summary.quest.status === 'active' && summary.quest.region === region ? summary.quest.textbook : undefined;
-    if (!textbook) continue;
-    const [from, to] = textbook.pages;
-    const known = books.get(textbook.book);
-    if (known) books.set(textbook.book, { book: textbook.book, pages: [Math.min(known.pages[0], from), Math.max(known.pages[1], to)], lessons: known.lessons + 1 });
-    else books.set(textbook.book, { book: textbook.book, pages: [from, to], lessons: 1 });
+    const topic = summary.quest.status === 'active' && summary.quest.region === region ? summary.quest.topic : undefined;
+    if (!topic) continue;
+    const known = subjects.get(topic.subject) ?? { subject: topic.subject, subjectName: topic.subjectName, topics: [], lessons: 0 };
+    known.lessons += 1;
+    if (!known.topics.includes(topic.title)) known.topics.push(topic.title);
+    subjects.set(topic.subject, known);
   }
-  return [...books.values()];
+  return [...subjects.values()];
 }
 
 /** A character's story on the board: its chapters in order, under "Chuyện của <tên>". */

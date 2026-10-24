@@ -182,16 +182,17 @@ export type StepAnswer = z.infer<typeof StepAnswer>;
 export const StepCompleteRequest = z.object({ answer: StepAnswer.optional(), target: ContentId.optional(), run: z.number().int().min(1).max(1_000_000).optional() });
 export type StepCompleteRequest = z.infer<typeof StepCompleteRequest>;
 
-/** Textbook lesson a quest plays, as printed: teachers set homework by page or by lesson title. */
-export const QuestTextbook = z.object({
-  /** "Tiếng Việt 2, tập một" */
-  book: z.string(),
-  /** "Bài 1. Tôi là học sinh lớp 2" */
-  lesson: z.string(),
-  /** First and last printed page. */
-  pages: z.tuple([z.number().int(), z.number().int()]),
+/** The topic a learning quest teaches (content/learning/topics), as the quest list, Home and the HUD name it. */
+export const QuestTopic = z.object({
+  id: ContentId,
+  /** "Số đến 100" */
+  title: z.string(),
+  /** Subject id of content/learning/skills.json; the topic's public page is `/hoc/<subject>/<id>/`. */
+  subject: ContentId,
+  /** "Toán" */
+  subjectName: z.string(),
 });
-export type QuestTextbook = z.infer<typeof QuestTextbook>;
+export type QuestTopic = z.infer<typeof QuestTopic>;
 
 /** The story a chapter belongs to, as the quest list groups it ("Chuyện của <tên>"). */
 export const QuestStory = z.object({
@@ -239,7 +240,8 @@ export const QuestView = z.discriminatedUnion('status', [
     ),
     steps: z.array(QuestStepPublic),
     reward: RewardSpec,
-    textbook: QuestTextbook.optional(),
+    /** The topic of a learning quest (the server fills it from the quest's `topic`). */
+    topic: QuestTopic.optional(),
     /** A story chapter: whose story, which arc and which part of it (content/npcs). */
     story: QuestStory.optional(),
   }),

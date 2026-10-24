@@ -19,7 +19,7 @@ import { SkyScene } from '../kit/sky-scene';
 import { StarRating } from '../kit/star-rating';
 import { assetUrl, REGION_BACKDROPS } from '../kit/ui-art';
 import { chapters, playPath, say, stepProgress, type PlayerData } from '../player/player-data';
-import { TextbookRef, textbookOf } from '../player/textbook-ref';
+import { TopicLabel, topicOf } from '../player/topic-label';
 import { boardStories, isEvent, isGuardian, isPlayable, isStory, recommendedQuest, regionProgress } from './region-board';
 import { RegionRewardPanel } from './region-reward-panel';
 import './region.css';
@@ -72,12 +72,6 @@ export function RegionIntro({
         {fill(region.description ?? region.tagline)}
       </p>
       <RegionRewardPanel region={region.id} done={done} total={total} name={data.character.name} onProgress={onProgress} />
-      {/* Which lessons of the books the region plays, so a parent finds the one taught in class this week. */}
-      {region.book ? (
-        <p className="region-book" data-id="region-book">
-          <T k="region.bookLine" params={{ book: region.book }} />
-        </p>
-      ) : null}
       {next ? (
         <Link to={playPath(next)} className={buttonClass('primary', { block: true })} data-id="region-explore">
           <T k={next.state === 'completed' ? 'common.playAgain' : 'region.exploreNow'} /> →
@@ -102,7 +96,7 @@ function BoardRow({ summary, region, data, pick }: { summary: QuestSummary; regi
   const title = inline(titlePair, mode);
   const stub = summary.quest.status === 'stub';
   const playable = isPlayable(summary);
-  const textbook = textbookOf(summary);
+  const topic = topicOf(summary);
   const current = pick?.current === summary.quest.id;
   const goArrow = (
     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
@@ -112,7 +106,7 @@ function BoardRow({ summary, region, data, pick }: { summary: QuestSummary; regi
   return (
     <li className={`board-row${playable ? '' : ' board-row--locked'}`} data-id={`region-quest-${summary.quest.id}`} data-state={summary.state}>
       <div className="board-row-text">
-        {textbook ? <TextbookRef textbook={textbook} dataId={`region-quest-textbook-${summary.quest.id}`} /> : null}
+        {topic ? <TopicLabel topic={topic} dataId={`region-quest-topic-${summary.quest.id}`} /> : null}
         <strong className="board-row-title">
           <Bi vi={titlePair.vi} en={titlePair.en} />
         </strong>

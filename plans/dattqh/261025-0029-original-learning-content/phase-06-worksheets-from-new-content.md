@@ -1,6 +1,6 @@
 # Pha 6: Phiếu viết từ nội dung mới
 
-**Tier:** M · **Phụ thuộc:** 1 (code); nội dung theo từng đợt của 4, 5 · **Trạng thái:** pending
+**Tier:** M · **Phụ thuộc:** 1 (code); nội dung theo từng đợt của 4, 5 · **Trạng thái:** in-progress (code xong; nội dung theo đợt)
 
 ## Bối cảnh
 
@@ -26,3 +26,10 @@ Xóa ở pha 7: `apps/server/src/worksheet/curriculum-books.ts` (+ test).
 ## Rủi ro
 
 - Trong lúc chuyển, phiếu của quest chưa viết lại vẫn đọc kiểm kê: builder hỗ trợ cả hai nguồn tới pha 7, nguồn cũ xóa cùng kiểm kê.
+
+## Tiến độ (25/10/2026)
+
+- Bước `worksheet` mang phiếu tự viết `sheet` (`title`, `blocks`: `letter`, `copy-line`, `dictation`, `paragraph-prompt`, `activity`) hoặc `lessonId` của kiểm kê, đúng một trong hai; client của game không nhận `sheet`.
+- Phiếu đi theo quest: `/api/worksheets` liệt kê `{ id (id quest), subject, topic, title, blockCount }`, lọc `?subject=`; `/api/worksheets/:id`. Quest còn chờ vẫn dựng phiếu từ kiểm kê, tiêu đề lấy tên quest (không còn "Bài N", tuần, trang).
+- Màn khu phụ huynh nhóm theo môn rồi chủ đề; bỏ "trang … SGK" trong ghi chú chữ hoa và hoạt động. E2E `worksheets` đổi sang `tv2-t01-b01`, `toan2-cd3-b15`.
+- `lessonId` của bước phiếu tính là liên kết sách trong kiểm chống chép, nên quest chỉ ra khỏi danh sách chờ khi phiếu của nó đã tự viết.

@@ -12,7 +12,7 @@ import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { PlayerBadge } from '../player/player-badge';
 import { nextStep, say, stepProgress, type PlayerData } from '../player/player-data';
-import { TextbookRef, textbookOf } from '../player/textbook-ref';
+import { TopicLabel, topicOf } from '../player/topic-label';
 import { Say, stepLineOf, titleOf } from '../quest/content-text';
 import { searchCount } from '../quest/quest-flow';
 import { RideButton } from './ride-button';
@@ -62,7 +62,7 @@ export function QuestTracker({ quest, data }: { quest: QuestSummary | null; data
   const step = nextStep(quest);
   const { done, total } = stepProgress(quest);
   const clues = step ? searchCount(step, quest.progress) : null;
-  const textbook = textbookOf(quest);
+  const topic = topicOf(quest);
   const going = autowalk === 'finding' || autowalk === 'walking';
   const tappable = Boolean(step) && (available || going);
   const toggle = (): void => store.send({ type: going ? 'autowalk-stop' : 'autowalk-start' });
@@ -113,7 +113,7 @@ export function QuestTracker({ quest, data }: { quest: QuestSummary | null; data
       <p className="hud-tracker-quest" data-id="hud-tracker-quest">
         <Say text={titleOf(quest.quest)} fill={(line) => say(line, data.character)} />
       </p>
-      {textbook ? <TextbookRef textbook={textbook} dataId="hud-tracker-textbook" compact /> : null}
+      {topic ? <TopicLabel topic={topic} dataId="hud-tracker-topic" compact /> : null}
       <p className="hud-tracker-step" data-id="hud-tracker-step">
         {/* Where to walk while the step waits somewhere else; its title heads the scene once there. */}
         {step ? <Say text={stepLineOf(step)} fill={(line) => say(line, data.character)} /> : <T k="hud.done" />}

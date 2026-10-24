@@ -6,7 +6,6 @@ import { PetGearCatalog, type PetGearItem } from '@miu/schema/pet-gear';
 import { RegionCatalog, playableMaps } from '@miu/schema/region';
 import { ConsentDocument, ContentId, LevelCurve, NameList, QuestDefinition, SkillCatalog, type PlayableQuest } from '@miu/schema/content';
 import { MinigameSpec } from '@miu/schema/minigame';
-import type { QuestTextbook } from '@miu/schema/game';
 import { questCatalogIssues } from '@miu/quest/quest-catalog';
 import { buildAccessoryCatalog, type AccessoryItem } from '@miu/voxel/accessory-schema';
 import { speciesSchema } from '@miu/voxel/character-recipe';
@@ -16,7 +15,6 @@ import { Item } from '@miu/schema/item';
 import { AchievementCatalog, achievementIssues, type AchievementEntry } from '@miu/schema/achievement';
 import { SkillGiftCatalog, skillGiftIssues } from '@miu/schema/progression';
 import { z } from 'zod';
-import { readCurriculum } from '../worksheet/curriculum-books';
 import { EMPTY_NPC_CATALOG, buildNpcCatalog, npcCatalogIssues, readNpcFiles, type NpcCatalog } from '../npc/npc-catalog';
 import { EMPTY_EVENT_CATALOG, loadEvents, type EventCatalog } from '../event/event-catalog';
 import { CONTENT_DIR } from './content-dir';
@@ -51,8 +49,6 @@ export interface ContentCatalog {
   minigames: ReadonlyMap<string, MinigameSpec>;
   /** Subject → Topic → Objective framework (content/learning/topics); quests name a topic, steps an objective. */
   learning: LearningTopics;
-  /** Quest id → the textbook lesson it plays, with its printed pages (quests naming a `lesson`). */
-  textbooks: ReadonlyMap<string, QuestTextbook>;
   /** Maps a child can play in: the open regions' maps (content/world/regions.json). */
   maps: ReadonlySet<string>;
   /** Collectible sets (content/collectibles.json), by region id, in catalogue order. */
@@ -193,24 +189,6 @@ export function loadQuests(
   return new Map(playable.map((q) => [q.id, q]));
 }
 
-/** Title and printed pages of the lesson each loaded quest plays, from the textbook inventory. */
-export function questTextbooks(quests: Iterable<PlayableQuest>, curriculumDir: string): Map<string, QuestTextbook> {
-  const withLesson = [...quests].flatMap((q) => (q.status === 'active' && q.lesson ? [{ id: q.id, lesson: q.lesson }] : []));
-  if (withLesson.length === 0) return new Map();
-  const lessons = new Map<string, QuestTextbook>();
-  const curriculum = readCurriculum(curriculumDir);
-  for (const { book, units } of curriculum.books) {
-    for (const lesson of units.flatMap((u) => u.lessons)) lessons.set(lesson.id, { book: book.title, lesson: lesson.title, pages: lesson.pages });
-  }
-  return new Map(
-    withLesson.map(({ id, lesson }) => {
-      const textbook = lessons.get(lesson);
-      if (!textbook) throw new Error([`quest ${id} plays unknown textbook lesson ${lesson}`, ...curriculum.issues].join('; '));
-      return [id, textbook];
-    }),
-  );
-}
-
 export function loadContentCatalog({ dir = CONTENT_DIR, questDir, extraQuestDir, requireEveryMap = false, npcsDir, eventsDir, icons, topicsDir }: ContentOptions = {}): ContentCatalog {
   const catalog = readContentJson(SkillCatalog, path.join(dir, 'learning/skills.json'));
   const skillIds = new Set(catalog.subjects.flatMap((s) => s.skills.map((k) => k.id)));
@@ -252,7 +230,6 @@ export function loadContentCatalog({ dir = CONTENT_DIR, questDir, extraQuestDir,
     quests,
     minigames,
     learning: loadLearningTopics(topicsDir ?? path.join(dir, 'learning/topics'), catalog.subjects, quests.values()),
-    textbooks: questTextbooks(quests.values(), path.join(dir, 'curriculum')),
     maps: new Set(playableMaps(regions)),
     collectibles: loadCollectibles(dir, regions),
     recipes: new Map(readContentJson(RecipeCatalog, path.join(dir, 'recipes.json')).recipes.map((r) => [r.id, r])),

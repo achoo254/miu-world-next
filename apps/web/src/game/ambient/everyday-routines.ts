@@ -210,7 +210,7 @@ export const EVERYDAY_LINES: Readonly<Record<string, readonly string[]>> = {
   'guard-cheer': ['Bác chào kiểu chào cờ!', 'Giỏi lắm học trò ngoan!', 'Bác tự hào về cháu!'],
   'pupil-greet': ['Ê {name}, chơi với tớ!', 'Chào bạn mới!', 'Giờ ra chơi vui quá!'],
   'pupil-work': ['Sút này, đỡ này!', 'Nhảy dây nào, một hai!', 'Tớ thắng rồi nhé!'],
-  'pupil-chat': ['Tớ học lớp Hai đấy.', 'Mai kiểm tra Toán đó.', 'Cô giáo tớ hiền lắm.'],
+  'pupil-chat': ['Tớ mê giờ đọc truyện lắm.', 'Mai kiểm tra Toán đó.', 'Cô giáo tớ hiền lắm.'],
   'pupil-cheer': ['Cậu giỏi nhất lớp!', 'Đập tay nào {name}!', 'Hoan hô bạn tớ!'],
   'pupil-reply': ['Chuyền cho tớ với!', 'Tớ chơi nữa nhé!', 'Hay quá đi!'],
   'teacher-greet': ['Chào em {name}!', 'Em đến sớm thế!', 'Cô chào em nhé.'],
