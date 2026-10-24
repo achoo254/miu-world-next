@@ -1,8 +1,8 @@
 {
   "viewport": "360x740",
-  "capturedFrom": "874eab87c73822d9e8e3702dc114b83c63f82815",
+  "capturedFrom": "31790027429d53257c173ace26b61aa5519fc5b0",
   "uncommitted": [],
-  "capturedAt": "2026-10-23T18:18:03+07:00",
+  "capturedAt": "2026-10-25T06:35:44+07:00",
   "shots": [
     {
       "shot": "360x740/01-login.png",
@@ -24,7 +24,9 @@
       "screen": "20-landing",
       "status": "ok",
       "facts": {
-        "offScreen": [],
+        "offScreen": [
+          "[data-id=\"landing-login\"] at 190,735–282,759"
+        ],
         "overlaps": [],
         "missingClose": [],
         "clipped": [
@@ -111,7 +113,7 @@
       "status": "ok",
       "facts": {
         "offScreen": [
-          "[data-id=\"map-books-lang-ven-song\"] at 18,647–342,759"
+          "[data-id=\"map-books-khu-rung-bi-mat\"] at 18,527–342,752"
         ],
         "overlaps": [],
         "missingClose": [],
@@ -333,7 +335,7 @@
       "status": "ok",
       "facts": {
         "offScreen": [
-          "[data-id=\"worksheet-link-tv2-t1-b03\"] at 54,691–306,835"
+          "[data-id=\"worksheet-link-tv2-t03-b05\"] at 54,680–306,785"
         ],
         "overlaps": [],
         "missingClose": [],

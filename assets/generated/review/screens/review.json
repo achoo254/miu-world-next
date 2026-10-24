@@ -1,43 +1,92 @@
 {
-  "capturedFrom": "874eab87c73822d9e8e3702dc114b83c63f82815",
-  "capturedAt": "2026-10-23T18:18:03+07:00",
-  "reviewedAt": "2026-10-23T18:20:30+07:00",
-  "reviewer": "agent:claude (5 subagent, mỗi lô 10–11 ảnh)",
+  "capturedFrom": "31790027429d53257c173ace26b61aa5519fc5b0",
+  "capturedAt": "2026-10-25T06:35:44+07:00",
+  "reviewedAt": "2026-10-25T06:40:00+07:00",
+  "reviewer": "agent:general-purpose (5 người duyệt, mỗi người 6–12 ảnh)",
   "verdict": "pass",
   "findings": [
     {
-      "shot": "820x1180/25-online-off.png",
+      "shot": "360x740/09-dialogue.png",
       "kind": "other",
       "severity": "note",
-      "text": "Màn này giống hệt ảnh trước và chỉ có thông báo chung \"Chơi online đang tạm nghỉ một lát\", không thấy dòng nhắc bé hỏi bố mẹ khi online của bé bị tắt, nên cần kiểm tra xem trường hợp tắt theo từng người chơi đã được chụp ở đâu chưa.",
+      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
       "fixedIn": null
     },
     {
-      "shot": "820x1180/26-moderation.png",
-      "kind": "raw-text",
+      "shot": "360x740/10-question.png",
+      "kind": "other",
       "severity": "note",
-      "text": "Dòng \"Bản đồ\" hiện mã nội bộ \"forest-ch1\" thay vì tên tiếng Việt của bản đồ; ảnh trước cũng vậy và đây là trang dành cho người kiểm duyệt.",
+      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/13-olympiad-practice.png",
-      "kind": "clipped",
+      "shot": "360x740/27-puzzle-clues.png",
+      "kind": "other",
       "severity": "note",
-      "text": "Dòng đầu của câu hỏi \"Biết 1 quả táo thăng bằng…\" bị mép trên màn hình xén mất nửa trên, nút quay lại thì nằm đè lên góc phải khung câu hỏi nhưng không che chữ; ảnh lần trước cũng y như vậy.",
+      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/15-shop.png",
+      "shot": "820x1180/09-dialogue.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/10-question.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/27-puzzle-clues.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/20-landing.png",
       "kind": "off-screen",
       "severity": "note",
-      "text": "Thông báo \"+80 XP\" ở mép trên bị panel Cửa hàng và mép màn hình che gần hết; đây không phải nút và ảnh lần trước cũng vậy.",
+      "text": "Tiêu đề và mô tả mới dài hơn nên liên kết \"Đăng nhập\" rơi xuống dưới mép màn 740 px; cuộn mới thấy.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/22-friends-invite.png",
-      "kind": "overlap",
+      "shot": "820x1180/21-lesson-page.png",
+      "kind": "off-screen",
       "severity": "note",
-      "text": "Nút \"Quay lại game\" đè lên góc dưới bên phải của khung panel Bạn bè nhưng không che chữ hay vùng chạm nào; ảnh lần trước cũng vậy.",
+      "text": "Nút \"Chơi ở …\" của trang chủ đề nằm sát đáy, bị cắt ngang ở mép màn; trang cuộn được.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/27-puzzle-clues.png",
+      "kind": "shifted",
+      "severity": "note",
+      "text": "Khung Manh mối dịch lên khoảng 7 px vì bong bóng lời không còn nút Nghe; lựa chọn thứ ba vẫn cần cuộn như trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/14-boss.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dòng gợi ý dưới câu hỏi trùm có chữ mới (\"Mochi giương bùa như ná…\") so với lần duyệt trước; bố cục không đổi.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/25-online-off.png",
+      "kind": "shifted",
+      "severity": "note",
+      "text": "Mèo xám khác tư thế, to hơn một chút so với ảnh trước (nhịp hoạt ảnh lúc chụp); không đè nút.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/18-party.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Biểu tượng micro và \"Nhắn đội\" vẽ bằng phông emoji của Windows nên khác ảnh trước; chữ đọc được, không chồng.",
       "fixedIn": null
     }
   ]

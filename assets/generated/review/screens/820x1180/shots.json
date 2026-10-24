@@ -1,8 +1,8 @@
 {
   "viewport": "820x1180",
-  "capturedFrom": "874eab87c73822d9e8e3702dc114b83c63f82815",
+  "capturedFrom": "31790027429d53257c173ace26b61aa5519fc5b0",
   "uncommitted": [],
-  "capturedAt": "2026-10-23T18:18:41+07:00",
+  "capturedAt": "2026-10-25T06:36:24+07:00",
   "shots": [
     {
       "shot": "820x1180/01-login.png",
@@ -39,7 +39,9 @@
       "screen": "21-lesson-page",
       "status": "ok",
       "facts": {
-        "offScreen": [],
+        "offScreen": [
+          "[data-id=\"lesson-play\"] at 78,1156–283,1216"
+        ],
         "overlaps": [],
         "missingClose": [],
         "clipped": [],
@@ -94,7 +96,7 @@
       "status": "ok",
       "facts": {
         "offScreen": [
-          "a.today-row-link \"Đảo bí ẩn – Chương 1: Tấm bản \" at 85,1151–735,1211"
+          "a.today-row-link \"Đảo bí ẩn – Chương 1: Tấm bản \" at 85,1125–735,1185"
         ],
         "overlaps": [],
         "missingClose": [],
@@ -111,8 +113,8 @@
       "status": "ok",
       "facts": {
         "offScreen": [
-          "[data-id=\"map-books-cho-phien\"] at 41,1149–406,1235",
-          "[data-id=\"map-books-nong-trai\"] at 414,1149–779,1235"
+          "[data-id=\"map-books-truong-hoc\"] at 41,1026–406,1281",
+          "[data-id=\"map-books-thu-vien\"] at 414,1026–779,1281"
         ],
         "overlaps": [],
         "missingClose": [],
@@ -311,7 +313,7 @@
       "status": "ok",
       "facts": {
         "offScreen": [
-          "[data-id=\"worksheet-link-tv2-t1-b14\"] at 77,1156–743,1220"
+          "[data-id=\"worksheet-link-tv2-t07-b13\"] at 152,1122–668,1186"
         ],
         "overlaps": [],
         "missingClose": [],
