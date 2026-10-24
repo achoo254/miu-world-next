@@ -59,16 +59,23 @@ systemctl daemon-reload
 systemctl enable -q miu-server
 systemctl enable -q --now miu-backup.timer
 
-# The server block goes live only if the whole nginx config still tests clean; otherwise it is removed
-# so a mistake here can never take the other sites on .65 down.
+# The server block goes live only if the whole nginx config still tests clean; otherwise the files that were live
+# before go back in place (or, on a first setup, the new ones are removed), so a mistake here can never take the
+# other sites on .65 down, nor leave Miu without its block at nginx's next reload.
 # The former lesson pages' redirect table, included by miu.conf (outside conf.d, so nginx reads it only there).
+for live in /etc/nginx/conf.d/miu.conf /etc/nginx/miu-bai-redirects.conf; do
+  if [ -f "$live" ]; then cp -p "$live" "$live.prev"; else rm -f "$live.prev"; fi
+done
 install -m 644 "$HERE/nginx-bai-redirects.conf" /etc/nginx/miu-bai-redirects.conf
 install -m 644 "$HERE/nginx-prod.conf" /etc/nginx/conf.d/miu.conf.new
 mv /etc/nginx/conf.d/miu.conf.new /etc/nginx/conf.d/miu.conf
 if nginx -t -q; then
   systemctl reload nginx
+  rm -f /etc/nginx/conf.d/miu.conf.prev /etc/nginx/miu-bai-redirects.conf.prev
 else
-  rm -f /etc/nginx/conf.d/miu.conf
+  for live in /etc/nginx/conf.d/miu.conf /etc/nginx/miu-bai-redirects.conf; do
+    if [ -f "$live.prev" ]; then mv -f "$live.prev" "$live"; else rm -f "$live"; fi
+  done
   nginx -t
   exit 1
 fi

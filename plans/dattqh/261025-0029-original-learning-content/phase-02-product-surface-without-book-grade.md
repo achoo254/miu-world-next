@@ -1,6 +1,6 @@
 # Pha 2: Gỡ sách, lớp, bài, trang khỏi bề mặt sản phẩm
 
-**Tier:** L · **Phụ thuộc:** 1 · **Trạng thái:** done (25/10/2026; chờ deploy)
+**Tier:** L · **Phụ thuộc:** 1 · **Trạng thái:** done (deploy production 25/10/2026)
 
 ## Bối cảnh
 
@@ -54,3 +54,9 @@ Revert commit; nginx giữ bản cũ của `nginx-prod.conf` theo quy trình ở
 
 - `deploy.sh setup` phải chạy trước `release` (cài bảng 301 vào nginx); chỉ `release` thì `/bai/` trả 404. Cả hai là deploy production, hỏi người sở hữu.
 - GA4: nếu có custom dimension `lesson_id` thì khai thêm `topic_id` trong GA4 (ngoài repo, việc của người sở hữu).
+
+## Deploy (25/10/2026, đợt 1 của T5)
+
+- Người sở hữu chọn "Deploy ngay". Ảnh màn chụp và duyệt ở `15f4babb` (54 ảnh, 0 `block`); `deploy.sh setup` rồi `release`; production chạy `15f4babb` (health ok, `/hoc/` 200, `/bai/` cũ 301 giữ query, sitemap 21 trang).
+- Lần `setup` đầu thất bại vì bảng 301 khóa chính xác cần `map_hash_bucket_size` lớn hơn mặc định; script lúc đó xóa `miu.conf` khi `nginx -t` lỗi (site vẫn chạy nhờ nginx chưa reload). Đã đổi bảng sang khóa regex (`15f4babb`) và cho `setup-prod-host.sh` trả lại bản đang chạy thay vì xóa.
+- `deploy.sh` gọi `ssh` không có `BatchMode`; lần này chạy qua một `ssh` bọc thêm `-o BatchMode=yes` trong PATH (tránh bị .65 tạm chặn IP khi ssh treo).

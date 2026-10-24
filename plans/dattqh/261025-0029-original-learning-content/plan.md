@@ -43,7 +43,7 @@ Quyết định kỹ thuật (agent tự chốt, ghi lại để người duyệ
 | # | Phase | Tier | Phụ thuộc | Status |
 |---|-------|------|-----------|--------|
 | 1 | [Khung Môn → Chủ đề → Mục tiêu, schema quest mới, kiểm chống chép](./phase-01-learning-framework-schema-copy-guard.md) | L | — | done |
-| 2 | [Gỡ sách, lớp, bài, trang khỏi bề mặt sản phẩm](./phase-02-product-surface-without-book-grade.md) | L | 1 | done (chờ deploy) |
+| 2 | [Gỡ sách, lớp, bài, trang khỏi bề mặt sản phẩm](./phase-02-product-surface-without-book-grade.md) | L | 1 | done (deploy 25/10) |
 | 3 | [Quest mẫu và trang nghiệm thu (người sở hữu duyệt)](./phase-03-sample-quests-acceptance.md) | M | 1 | in-progress (chờ duyệt) |
 | 4 | [Viết lại 36 quest Toán](./phase-04-rewrite-math-quests.md) | L | 3 (đã duyệt) | pending |
 | 5 | [Viết lại 34 quest Tiếng Việt](./phase-05-rewrite-vietnamese-quests.md) | XL | 3 (đã duyệt) | pending |
