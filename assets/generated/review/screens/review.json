@@ -1,8 +1,8 @@
 {
-  "capturedFrom": "31790027429d53257c173ace26b61aa5519fc5b0",
-  "capturedAt": "2026-10-25T06:35:44+07:00",
-  "reviewedAt": "2026-10-25T06:40:00+07:00",
-  "reviewer": "agent:general-purpose (5 người duyệt, mỗi người 6–12 ảnh)",
+  "capturedFrom": "15f4babb3f26c8ff3491fdf2d84199147c072422",
+  "capturedAt": "2026-10-25T06:43:40+07:00",
+  "reviewedAt": "2026-10-25T06:46:00+07:00",
+  "reviewer": "agent:general-purpose (5 người duyệt, mỗi người 6–12 ảnh; so với lần duyệt ở 31790027)",
   "verdict": "pass",
   "findings": [
     {
@@ -87,6 +87,13 @@
       "kind": "other",
       "severity": "note",
       "text": "Biểu tượng micro và \"Nhắn đội\" vẽ bằng phông emoji của Windows nên khác ảnh trước; chữ đọc được, không chồng.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/13-olympiad-practice.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Khung Olympic cao hơn màn 740 px: tiêu đề, thanh tên bài và tiến độ nằm ngoài màn, dòng đầu của đề sát mép trên; nút quay lại vẫn thấy. Đã có từ lần chụp trước.",
       "fixedIn": null
     }
   ]
