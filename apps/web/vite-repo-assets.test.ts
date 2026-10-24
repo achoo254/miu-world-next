@@ -69,8 +69,9 @@ describe('runtime asset selection for the web build', async () => {
     const release = await runtimeAssetPaths(ASSETS_DIR, manifest, UI_ART_PATHS, { review: false });
     const cards = release.filter((p) => p.startsWith('generated/share-cards/'));
     expect(cards).toContain('generated/share-cards/miu-world.png');
-    expect(cards).toContain('generated/share-cards/toan-2-bai-1-on-tap-cac-so-den-100.png');
-    expect(cards.length).toBeGreaterThanOrEqual(71);
+    expect(cards).toContain('generated/share-cards/so-den-100.png');
+    // One card for the game and one per topic page.
+    expect(cards.length).toBeGreaterThanOrEqual(19);
   });
 
   it('lets the game reach review material only through the UI art list a release keeps', () => {

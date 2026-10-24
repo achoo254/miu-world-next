@@ -13,8 +13,9 @@ beforeEach(() => {
 });
 afterEach(() => rmSync(dir, { recursive: true, force: true }));
 
-/** Each case copies the ~2,000 content files and runs the whole check: 5-10 s on Windows file systems, more under a parallel full run. Other platforms keep the default limit. */
-const SLOW_FS_TIMEOUT = process.platform === 'win32' ? 90_000 : undefined;
+// Each case runs the whole check (the textbook copy check included): the first one hashes every line, near half a
+// minute on CI under the parallel full run, so the cases get their own limit on every platform.
+const SLOW_FS_TIMEOUT = 90_000;
 
 describe('content:check', { timeout: SLOW_FS_TIMEOUT }, () => {
   it('passes the shipped content', () => {
