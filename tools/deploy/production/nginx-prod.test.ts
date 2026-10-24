@@ -88,7 +88,7 @@ describe('production nginx: the former lesson pages', () => {
   const include = readFileSync(new URL('./nginx-bai-redirects.conf', import.meta.url), 'utf8');
   /** The redirect table: former address → topic or subject page. */
   const table = new Map(
-    [...(/^map \$uri \$miu_bai_redirect \{\n([\s\S]*?)^\}/m.exec(include)?.[1] ?? '').matchAll(/^\s*(\S+)\s+(\S+);\s*$/gm)].map((m) => [m[1] ?? '', (m[2] ?? '').replace(/^"|"$/g, '')] as const),
+    [...(/^map \$uri \$miu_bai_redirect \{\n([\s\S]*?)^\}/m.exec(include)?.[1] ?? '').matchAll(/^\s*(\S+)\s+(\S+);\s*$/gm)].map((m) => [(m[1] ?? '').replace(/^~\^(.*)\/\?\$$/, '$1/'), (m[2] ?? '').replace(/^"|"$/g, '')] as const),
   );
   /** Every page the web build writes under /hoc/. */
   const built = new Set([
@@ -106,13 +106,17 @@ describe('production nginx: the former lesson pages', () => {
   it('sends every former page, with or without its trailing slash, to one page the build writes', () => {
     expect(table.get('default')).toBe('');
     const former = [...table.keys()].filter((key) => key !== 'default');
-    // Two subject pages and the 70 lesson pages that were live, each in both spellings.
-    expect(former).toHaveLength(72 * 2);
-    for (const key of former) {
-      expect(key).toMatch(/^\/bai\/[a-z0-9-]+\/?$/);
-      const target = table.get(key) ?? '';
+    // Two subject pages and the 70 lesson pages that were live; each key is a regex taking both spellings.
+    expect(former).toHaveLength(72);
+    const keys = [...include.matchAll(/^\s*(~\S+)\s/gm)].map((m) => m[1] ?? '');
+    expect(keys).toHaveLength(72);
+    for (const key of keys) {
+      const pattern = new RegExp(key.slice(1));
+      const slug = /^~\^(\/bai\/[a-z0-9-]+)\/\?\$$/.exec(key)?.[1];
+      expect(slug, key).toBeDefined();
+      expect(pattern.test(`${slug}/`) && pattern.test(`${slug}`) && !pattern.test(`${slug}/x`), key).toBe(true);
+      const target = table.get(`${slug}/`) ?? '';
       expect(built.has(target), `${key} → ${target}`).toBe(true);
-      expect(table.get(key.endsWith('/') ? key.slice(0, -1) : `${key}/`), key).toBe(target);
     }
   });
 
