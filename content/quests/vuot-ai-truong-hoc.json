@@ -4,12 +4,12 @@
   "chapter": 4,
   "title": "Trùm vui: Voi Tính Nhẩm",
   "status": "active",
-  "summary": "Hội khỏe lớp Hai chỉ khai mạc khi có người thắng Voi Tính Nhẩm, chú voi khổng lồ mê đố toán ở sân chơi. {name} gom đồ thi đấu, đọc chương trình hội, xếp hàng chạy tiếp sức rồi đấu trí bảy câu.",
+  "summary": "Hội khỏe của trường chỉ khai mạc khi có người thắng Voi Tính Nhẩm, chú voi khổng lồ mê đố toán ở sân chơi. {name} gom đồ thi đấu, đọc chương trình hội, xếp hàng chạy tiếp sức rồi đấu trí bảy câu.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "{name}, Chim Sâu Lớp Trưởng, Hươu Trọng Tài, Voi Tính Nhẩm",
     "where": "Trường học, sân chơi: góc trò chơi, quanh cầu trượt, hàng rào gỗ, bãi cát giữa sân, sân chơi",
-    "goal": "Thắng Voi Tính Nhẩm để Hội khỏe lớp Hai được khai mạc",
+    "goal": "Thắng Voi Tính Nhẩm để Hội khỏe của trường được khai mạc",
     "play": "Tìm bóng, vợt và ruy băng theo lời gợi ý, đọc chương trình hội, giải câu đố xếp hàng, chọn cách khởi động, đấu trùm bảy câu",
     "learn": "Ôn số đến 100, tia số, số hạng và tổng, hiệu, nhiều hơn bao nhiêu, so sánh số, cộng không nhớ",
     "reward": "100 XP, 25 Xu, Skill XP Số đến 100, Thành phần phép tính, Hơn kém, Logic",
@@ -41,7 +41,7 @@
       "kind": "dialogue",
       "target": "trum-th-chim-sau",
       "lines": [
-        { "speaker": "Chim Sâu Lớp Trưởng", "text": "{name} ơi, Voi Tính Nhẩm ngồi chắn giữa sân chơi rồi! Chú ấy bảo chưa ai thắng trận đố toán thì Hội khỏe lớp Hai chưa được khai mạc." },
+        { "speaker": "Chim Sâu Lớp Trưởng", "text": "{name} ơi, Voi Tính Nhẩm ngồi chắn giữa sân chơi rồi! Chú ấy bảo chưa ai thắng trận đố toán thì Hội khỏe của trường chưa được khai mạc." },
         { "speaker": "Chim Sâu Lớp Trưởng", "text": "Mà muốn vào sân còn phải mang đủ đồ thi đấu nữa. Lớp mình trông cả vào cậu đấy!" }
       ],
       "choices": [
@@ -52,7 +52,7 @@
         "title": "Class monitor Chim Sâu calls",
         "goTo": "Go to the games corner, Chim Sâu Lớp Trưởng is flapping and calling",
         "lines": [
-          "{name}, Voi Tính Nhẩm is sitting smack in the middle of the playground! He says Year Two Sports Day can't open until someone wins his maths quiz.",
+          "{name}, Voi Tính Nhẩm is sitting smack in the middle of the playground! He says the school Sports Day can't open until someone wins his maths quiz.",
           "And to get onto the field, you need all the sports kit too. Our whole class is counting on you!"
         ],
         "choices": [
@@ -102,7 +102,7 @@
       "kind": "read",
       "target": "trum-th-bang-hoi-khoe",
       "skill": "doc-hieu",
-      "text": "CHƯƠNG TRÌNH HỘI KHỎE LỚP HAI\n8 giờ: chạy tiếp sức quanh sân trường.\n9 giờ: nhảy dây ở góc trò chơi.\n10 giờ: đấu trí với Voi Tính Nhẩm giữa sân chơi.\nAi mang đủ bóng, vợt và ruy băng thì được vào sân.",
+      "text": "CHƯƠNG TRÌNH HỘI KHỎE CỦA TRƯỜNG\n8 giờ: chạy tiếp sức quanh sân trường.\n9 giờ: nhảy dây ở góc trò chơi.\n10 giờ: đấu trí với Voi Tính Nhẩm giữa sân chơi.\nAi mang đủ bóng, vợt và ruy băng thì được vào sân.",
       "question": "Theo bảng, cuộc đấu trí với Voi Tính Nhẩm bắt đầu lúc mấy giờ?",
       "choices": [
         { "id": "a", "text": "8 giờ" },
@@ -453,10 +453,10 @@
       "title": "Ngôi sao thi đua",
       "kind": "reward",
       "target": "trum-th-ngoi-sao",
-      "text": "Voi Tính Nhẩm dùng vòi gắn ngôi sao thi đua lên ngực áo {name}. Cả lớp Hai reo vang, túi quà của Voi đầy XP, xu và điểm kỹ năng.",
+      "text": "Voi Tính Nhẩm dùng vòi gắn ngôi sao thi đua lên ngực áo {name}. Cả trường reo vang, túi quà của Voi đầy XP, xu và điểm kỹ năng.",
       "en": {
         "title": "The champion's star",
-        "text": "Voi Tính Nhẩm uses his trunk to pin the champion's star on {name}'s shirt. All of Year Two cheers, and Voi's gift bag is packed with XP, coins and skill points."
+        "text": "Voi Tính Nhẩm uses his trunk to pin the champion's star on {name}'s shirt. The whole school cheers, and Voi's gift bag is packed with XP, coins and skill points."
       }
     },
     {

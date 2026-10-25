@@ -24,7 +24,7 @@
         { "hearts": 2, "vi": "Bác kể cháu nghe: có hôm bác chạy trọn một vòng mới biết mình bỏ quên… chính cái mũ của bác ở bến.", "en": "Here's one for you: once I drove a whole loop before noticing I'd left… my own cap at the stop." },
         { "hearts": 3, "vi": "Ghế thứ hai bên cửa sổ là ghế đẹp nhất xe. Từ nay bác giữ nó cho {name}, ai hỏi cứ bảo ghế đã có người đặt.", "en": "The second seat by the window is the best on the bus. From now on it's yours, {name}; if anyone asks, it's reserved." },
         { "hearts": 5, "vi": "{name} là hành khách thân nhất của bác rồi. Lúc nào buồn, cháu cứ lên xe ngồi một vòng, bác không thu vé đâu.", "en": "You're my dearest passenger now, {name}. Whenever you're sad, ride a loop with me. No ticket needed." },
-        { "about": "su-tu-vang", "vi": "Sư Tử Vàng với bác ngồi chung bàn hồi lớp Hai. Giờ cậu ấy làm thầy hiệu trưởng, sáng nào bác cũng chở học trò tới cổng trường cậu ấy.", "en": "Sư Tử Vàng and I shared a desk in second grade. Now he's the headmaster, and every morning I drive pupils to his school gate." },
+        { "about": "su-tu-vang", "vi": "Sư Tử Vàng với bác ngồi chung bàn hồi còn đi học. Giờ cậu ấy làm thầy hiệu trưởng, sáng nào bác cũng chở học trò tới cổng trường cậu ấy.", "en": "Sư Tử Vàng and I shared a desk at school. Now he's the headmaster, and every morning I drive pupils to his school gate." },
         { "about": "cho-canh-sat-coi", "vi": "Chó Cảnh Sát Còi thổi còi cho xe bác qua ngã tư mỗi ngày. Bác bóp kèn chào lại, hai đứa nói chuyện bằng còi với kèn.", "en": "Chó Cảnh Sát Còi whistles my bus through the crossroads every day. I honk back; we talk in whistles and horns." },
         { "vi": "Bánh mì bơ sữa ăn lúc ngồi chờ khách là ngon nhất. Ai tặng bác một ổ, bác dành ghế đầu cho cả tuần.", "en": "Butter-milk bread eaten while waiting for passengers tastes best. Bring me a loaf and the front seat is yours all week." },
         { "vi": "Lái xe buýt cũng như kể chuyện: trạm nào cũng có người lên, người xuống, mỗi người mang theo một chuyện riêng.", "en": "Driving a bus is like telling a story: at every stop someone gets on, someone gets off, and each carries a tale of their own." },
@@ -157,7 +157,7 @@
     { "a": "meo-xep-khoi", "b": "lan-con-ron-rang", "kind": "rival", "note": { "vi": "Lân múa ngang qua là chuỗi domino của Mèo đổ sớm; hai bên giận nhau đúng năm phút rồi lại chơi.", "en": "When Lân dances past, Mèo's dominoes topple early; they sulk for exactly five minutes and then play again." } },
     { "a": "voi-keo-bong", "b": "meo-xep-khoi", "kind": "neighbour", "note": { "vi": "Quầy kẹo của Voi nhìn thẳng ra đài phun nước của Mèo; sáng nào hai bên cũng vẫy chào nhau qua làn nước.", "en": "Voi's candy stall faces Mèo's fountain, and every morning they wave to each other across the spray." } },
     { "a": "bac-lai-xe-hai", "b": "lan-con-ron-rang", "kind": "friend", "note": { "vi": "Mùa hội nào xe Vàng Ươm cũng chở đoàn lân của Lân Con đi biểu diễn khắp các trạm.", "en": "Every festival season, Vàng Ươm carries Lân Con's troupe to perform at every stop." } },
-    { "a": "bac-lai-xe-hai", "b": "su-tu-vang", "kind": "friend", "note": { "vi": "Hai người ngồi chung bàn hồi lớp Hai; giờ Sư Tử Vàng làm thầy hiệu trưởng, còn Bác Hải sáng nào cũng chở học trò tới cổng trường.", "en": "They shared a desk in second grade; now Sư Tử Vàng is headmaster, and Bác Hải drives pupils to his school gate every morning." } },
+    { "a": "bac-lai-xe-hai", "b": "su-tu-vang", "kind": "friend", "note": { "vi": "Hai người ngồi chung bàn hồi còn đi học; giờ Sư Tử Vàng làm thầy hiệu trưởng, còn Bác Hải sáng nào cũng chở học trò tới cổng trường.", "en": "They shared a desk at school; now Sư Tử Vàng is headmaster, and Bác Hải drives pupils to his school gate every morning." } },
     { "a": "cho-canh-sat-coi", "b": "bac-thu-ngan-vui-ve", "kind": "friend", "note": { "vi": "Chủ nhật nào Chó cũng ra chợ phiên giúp Bác Thu Ngân xếp hàng người mua; hai người cùng mê sự ngăn nắp.", "en": "Every Sunday Chó helps Bác Thu Ngân line up customers at the fair market; both adore good order." } }
   ],
   "arcs": [
@@ -183,7 +183,7 @@
           "letter": {
             "from": "su-tu-vang",
             "title": { "vi": "Thư của thầy hiệu trưởng", "en": "From the headmaster" },
-            "body": { "vi": "Chào {name}, thầy là Sư Tử Vàng. Bác Hải là bạn cùng bàn của thầy hồi lớp Hai, hồi ấy bạn ấy đã mê xe buýt lắm rồi. Nghe nói có chuyến xe cuối, cả trường thầy xin góp một tràng vỗ tay thật to!", "en": "Hello {name}, this is Sư Tử Vàng. Bác Hải shared my desk in second grade, and even then he was mad about buses. I hear there's a last run; my whole school would like to give it a big round of applause!" },
+            "body": { "vi": "Chào {name}, thầy là Sư Tử Vàng. Bác Hải là bạn cùng bàn của thầy hồi còn đi học, hồi ấy bạn ấy đã mê xe buýt lắm rồi. Nghe nói có chuyến xe cuối, cả trường thầy xin góp một tràng vỗ tay thật to!", "en": "Hello {name}, this is Sư Tử Vàng. Bác Hải shared my desk at school, and even then he was mad about buses. I hear there's a last run; my whole school would like to give it a big round of applause!" },
             "reward": { "coins": 20, "xp": 15, "items": {} }
           }
         },

@@ -174,11 +174,11 @@
       "mechanic": "multi-select",
       "target": "st-ho-coi-giao-huu-ho-so-ung-vien",
       "skill": "doc-hieu",
-      "prompt": "Bác bảo vệ giữ giúp tập phiếu ứng tuyển. Đội cần bạn học lớp Hai và có giày thể thao. Chọn những bạn đủ cả hai điều kiện:",
+      "prompt": "Bác bảo vệ giữ giúp tập phiếu ứng tuyển. Đội cần bạn học lớp Sơn Ca và có giày thể thao. Chọn những bạn đủ cả hai điều kiện:",
       "choices": [
         {
           "id": "ga-con",
-          "text": "Gà Con: học lớp Hai, có giày thể thao"
+          "text": "Gà Con: học lớp Sơn Ca, có giày thể thao"
         },
         {
           "id": "voi-con",
@@ -186,11 +186,11 @@
         },
         {
           "id": "meo-muop",
-          "text": "Mèo Mướp: học lớp Hai, có giày thể thao"
+          "text": "Mèo Mướp: học lớp Sơn Ca, có giày thể thao"
         },
         {
           "id": "tho-xam",
-          "text": "Thỏ Xám: học lớp Hai, chỉ có dép lê"
+          "text": "Thỏ Xám: học lớp Sơn Ca, chỉ có dép lê"
         }
       ],
       "answer": {
@@ -201,7 +201,7 @@
       },
       "support": {
         "guide": [
-          "Mỗi bạn phải đủ hai điều: lớp Hai, và có giày thể thao.",
+          "Mỗi bạn phải đủ hai điều: học lớp Sơn Ca, và có giày thể thao.",
           "Thiếu một điều là chưa vào đội được."
         ],
         "hint": "Voi Con học lớp mấy? Thỏ Xám đi giày gì?",
@@ -211,7 +211,7 @@
         },
         "en": {
           "guide": [
-            "Each player needs both things: second grade, and sports shoes.",
+            "Each player needs both things: Skylark class, and sports shoes.",
             "Missing either one means not yet."
           ],
           "hint": "Which grade is Voi Con in? What is Thỏ Xám wearing?",
@@ -248,12 +248,12 @@
       "en": {
         "title": "Who can join?",
         "goTo": "Go to the guard's booth to collect the application cards",
-        "prompt": "The guard kept the application cards. The team needs players who are in second grade and own sports shoes. Pick everyone who meets both conditions:",
+        "prompt": "The guard kept the application cards. The team needs players who are in Skylark class and own sports shoes. Pick everyone who meets both conditions:",
         "choices": [
-          "Gà Con: second grade, has sports shoes",
+          "Gà Con: Skylark class, has sports shoes",
           "Voi Con: third grade, has sports shoes",
-          "Mèo Mướp: second grade, has sports shoes",
-          "Thỏ Xám: second grade, only has slippers"
+          "Mèo Mướp: Skylark class, has sports shoes",
+          "Thỏ Xám: Skylark class, only has slippers"
         ]
       }
     },

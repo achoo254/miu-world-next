@@ -1,7 +1,8 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { REPO_ROOT } from '../assets/asset-lib';
-import { checkBookOrGradeWording, htmlText, jsonStrings, wordingIssues } from './no-book-or-grade-wording';
+import { FORBIDDEN_IN_CONTENT, checkBookOrGradeWording, htmlText, jsonStrings, wordingIssues } from './no-book-or-grade-wording';
+import { readPendingQuests } from './no-textbook-copy';
 
 describe('book or grade wording', () => {
   it('finds a grade, a textbook, the series, a lesson number or a page', () => {
@@ -51,6 +52,15 @@ describe('book or grade wording', () => {
   });
 
   it('passes on what the repo shows today, quest titles and summaries on the topic pages included', () => {
-    expect(checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: path.join(REPO_ROOT, 'content') })).toEqual([]);
+    expect(checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: path.join(REPO_ROOT, 'content'), pendingQuests: readPendingQuests() })).toEqual([]);
+  });
+
+  it('holds the story (characters, map things, rewritten quests) to grade and textbook words only', () => {
+    for (const text of ['hồi lớp Hai', 'em bé lớp Một', 'Class 2A', 'since first grade', 'Year Two cheers', 'đọc SGK']) {
+      expect(wordingIssues('x', text, FORBIDDEN_IN_CONTENT), text).toHaveLength(1);
+    }
+    for (const text of ['trang 12 của cuốn sổ', 'tập một mình dưới trăng', 'Tập hai đang chờ', 'Bài 3. trong sổ', 'Sparrow class', 'lớp Chim Sẻ']) {
+      expect(wordingIssues('x', text, FORBIDDEN_IN_CONTENT), text).toEqual([]);
+    }
   });
 });

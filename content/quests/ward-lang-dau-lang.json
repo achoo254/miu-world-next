@@ -75,7 +75,7 @@
       "turns": [
         {
           "id": "loi-chao",
-          "prompt": "Ngày đầu vào lớp Hai, bạn nhỏ gặp cô giáo ở cổng. Lời chào nào lễ phép?",
+          "prompt": "Ngày đầu năm học mới, bạn nhỏ gặp cô giáo ở cổng. Lời chào nào lễ phép?",
           "skill": "tu-ngu",
           "move": "charge",
           "choices": [
@@ -94,7 +94,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "On the first day of Year 2 a pupil meets the teacher at the gate. Which greeting is polite?",
+            "prompt": "On the first day of the school year a pupil meets the teacher at the gate. Which greeting is polite?",
             "choices": [
               "Em chào cô ạ! (polite hello)",
               "Chào nhé! (casual hi)",

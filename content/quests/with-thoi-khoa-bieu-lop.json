@@ -2,7 +2,7 @@
   "id": "with-thoi-khoa-bieu-lop",
   "region": "truong-hoc",
   "chapter": 1,
-  "title": "Ghép lại thời khóa biểu lớp Hai",
+  "title": "Ghép lại thời khóa biểu lớp Sơn Ca",
   "summary": "Tờ thời khóa biểu bị cắt thành mảnh giấy nhỏ: mỗi bạn giữ một mảnh, cả đội ghép lại cho lớp.",
   "category": "coop",
   "status": "active",
@@ -10,7 +10,7 @@
   "sevenQuestions": {
     "who": "Đội giúp Cô Tổng Phụ Trách Lan",
     "where": "Sân trường",
-    "goal": "Ghép lại thời khóa biểu lớp Hai",
+    "goal": "Ghép lại thời khóa biểu lớp Sơn Ca",
     "play": "Mỗi bạn giữ mảnh giấy, cùng ghép và trả lời",
     "learn": "Xem giờ, cộng trong phạm vi 100, suy luận thứ tự",
     "reward": "Xu, kinh nghiệm cho mỗi bạn",
@@ -36,7 +36,7 @@
       "lines": [
         {
           "speaker": "Cô Tổng Phụ Trách Lan",
-          "text": "Ôi, {name} ơi! Bạn mèo con nghịch kéo cắt vụn tờ thời khóa biểu của lớp Hai rồi."
+          "text": "Ôi, {name} ơi! Bạn mèo con nghịch kéo cắt vụn tờ thời khóa biểu của lớp Sơn Ca rồi."
         },
         {
           "speaker": "Cô Tổng Phụ Trách Lan",
@@ -68,7 +68,7 @@
         "right": [
           "Giỏi quá, mảnh giấy khớp vào ô rồi!",
           "Cô thấy cả đội đọc rất kĩ đấy.",
-          "Đúng rồi, lớp Hai sắp có thời khóa biểu mới!"
+          "Đúng rồi, lớp Sơn Ca sắp có thời khóa biểu mới!"
         ],
         "wrong": [
           "Chưa khớp, các con đọc lại mảnh giấy nhé.",

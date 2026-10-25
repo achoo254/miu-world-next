@@ -548,11 +548,11 @@ export async function generateSchool() {
         ctx.landmark('lop-hoc', 'Lớp học', (x0 + x1) / 2, (z0 + z1) / 2, y);
         // The places the school's quests name in and by the classroom (quest `places`): their targets are
         // set round the landmark of the same name.
-        ctx.landmark('lop-2a', 'Lớp 2A', (x0 + x1) / 2, (z0 + z1) / 2, y);
+        ctx.landmark('lop-2a', 'Lớp Chim Sẻ', (x0 + x1) / 2, (z0 + z1) / 2, y);
         ctx.landmark('ban-co-giao', 'Bàn cô giáo', x0 + 1, Math.floor((z0 + z1) / 2), y);
         ctx.landmark('goc-ke-chuyen', 'Góc kể chuyện trong lớp', x1 - 1, z1 - 1, y);
-        ctx.landmark('cua-lop-2a', 'Cửa lớp 2A', Math.floor((x0 + x1) / 2), mb.zFront + 1, y);
-        ctx.landmark('cua-so-lop-2a', 'Cửa sổ lớp 2A', Math.floor((x0 + x1) / 2), mb.zFront - 4);
+        ctx.landmark('cua-lop-2a', 'Cửa lớp Chim Sẻ', Math.floor((x0 + x1) / 2), mb.zFront + 1, y);
+        ctx.landmark('cua-so-lop-2a', 'Cửa sổ lớp Chim Sẻ', Math.floor((x0 + x1) / 2), mb.zFront - 4);
       }
       const [library, music] = main.extraRooms;
       if (library) {

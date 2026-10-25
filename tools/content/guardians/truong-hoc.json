@@ -133,7 +133,7 @@
         {
           "id": "nhieu-hon",
           "skill": "hon-kem",
-          "prompt": "Lớp 2A có 32 bạn, lớp 2B có 28 bạn. Lớp 2A nhiều hơn lớp 2B mấy bạn?",
+          "prompt": "Lớp Chim Sẻ có 32 bạn, lớp Sơn Ca có 28 bạn. Lớp Chim Sẻ nhiều hơn lớp Sơn Ca mấy bạn?",
           "choices": [
             "4 bạn",
             "5 bạn",
@@ -141,13 +141,13 @@
           ],
           "answer": 0,
           "guide": [
-            "Muốn biết lớp 2A nhiều hơn bao nhiêu, lấy số lớn trừ số bé: 32 − 28.",
+            "Muốn biết lớp Chim Sẻ nhiều hơn bao nhiêu, lấy số lớn trừ số bé: 32 − 28.",
             "Hàng đơn vị 2 không trừ được 8, nên mượn 1 chục từ hàng chục."
           ],
           "hint": "Thử đếm thêm từ 28 lên tới 32, xem phải đếm mấy bước.",
           "explain": "32 − 28 = 4 (đếm 29, 30, 31, 32 là 4 bước); 60 là đem cộng hai lớp, không phải so sánh.",
           "en": {
-            "prompt": "Class 2A has 32 pupils and class 2B has 28. How many more pupils does 2A have?",
+            "prompt": "Sparrow class has 32 pupils and Skylark class has 28. How many more pupils does Sparrow class have?",
             "choices": [
               "4",
               "5",

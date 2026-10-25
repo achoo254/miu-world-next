@@ -9,7 +9,7 @@
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "{name}, Mèo Vẽ Màu",
-    "where": "Trường học: phòng mĩ thuật, sân sau dãy lớp, vườn trường, lớp 2A",
+    "where": "Trường học: phòng mĩ thuật, sân sau dãy lớp, vườn trường, lớp Chim Sẻ",
     "goal": "Lên kế hoạch cho bức tranh tường đầu tiên của Mèo Vẽ Màu",
     "play": "Giải bài toán đo tường, tìm ba thứ đáng vẽ trong vườn, xếp năm bản phác thảo theo giờ trong ngày, chọn cảnh giữa trưa, pha màu",
     "learn": "Giải bài toán có lời văn hai bước, sắp xếp trình tự thời gian trong ngày",
@@ -30,7 +30,7 @@
     "meo-hoa-si": "Phòng mĩ thuật",
     "st-meo-ve-buc-tuong-tuong-xam": "Sân sau dãy lớp",
     "tim-y-tuong": "Vườn trường",
-    "st-meo-ve-buc-tuong-ban-phac-thao": "Lớp 2A"
+    "st-meo-ve-buc-tuong-ban-phac-thao": "Lớp Chim Sẻ"
   },
   "steps": [
     {
@@ -164,7 +164,7 @@
     {
       "id": "xep-ban-phac-thao",
       "title": "Một ngày trên tường",
-      "goTo": "Mang ý tưởng vào lớp 2A, ghim các bản phác thảo lên bảng",
+      "goTo": "Mang ý tưởng vào lớp Chim Sẻ, ghim các bản phác thảo lên bảng",
       "kind": "challenge",
       "mechanic": "sort",
       "target": "st-meo-ve-buc-tuong-ban-phac-thao",
@@ -249,7 +249,7 @@
       },
       "en": {
         "title": "A day on the wall",
-        "goTo": "Take your ideas into Class 2A and pin the sketches on the board",
+        "goTo": "Take your ideas into Sparrow class and pin the sketches on the board",
         "prompt": "Mèo Vẽ Màu wants the wall to tell one day at school, from early morning to late at night. Put the five sketches in the right order:",
         "items": [
           "Midday: a snail hides from the sun under an almond leaf",
@@ -324,10 +324,10 @@
       "title": "Bức tường đã có kế hoạch",
       "kind": "reward",
       "trigger": "auto",
-      "text": "Bản phác thảo dán kín bảng lớp 2A. Mèo Vẽ Màu quẹt chóp đuôi vào lọ màu, vẽ tặng {name} một ngôi sao nhỏ lên mu bàn tay.",
+      "text": "Bản phác thảo dán kín bảng lớp Chim Sẻ. Mèo Vẽ Màu quẹt chóp đuôi vào lọ màu, vẽ tặng {name} một ngôi sao nhỏ lên mu bàn tay.",
       "en": {
         "title": "The wall has a plan",
-        "text": "Sketches cover the whole board in Class 2A. Mèo Vẽ Màu dips the tip of his tail in a paint jar and draws a little star on the back of {name}'s hand."
+        "text": "Sketches cover the whole board in Sparrow class. Mèo Vẽ Màu dips the tip of his tail in a paint jar and draws a little star on the back of {name}'s hand."
       }
     },
     {

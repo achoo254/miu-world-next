@@ -9,7 +9,7 @@
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "{name}, Thỏ Măng Non",
-    "where": "Trường: hiên hội trường, hành lang, sân sau dãy lớp, cầu thang, lớp 2A",
+    "where": "Trường: hiên hội trường, hành lang, sân sau dãy lớp, cầu thang, lớp Chim Sẻ",
     "goal": "Chuẩn bị cho buổi tập đầu tiên của đội nghi thức",
     "play": "Tìm đồ theo lời tả; tìm quy luật bước đi; tính số bạn trong đội; chọn cách giúp bạn",
     "learn": "Tìm quy luật, phép cộng các số bằng nhau",
@@ -34,7 +34,7 @@
     "st-tho-doi-nghi-thuc-co-doi-nho": "Hành lang",
     "st-tho-doi-nghi-thuc-vach-tap-di-deu": "Sân sau dãy lớp",
     "st-tho-doi-nghi-thuc-so-do-xep-hang": "Cầu thang",
-    "st-tho-doi-nghi-thuc-ban-hoc-lop": "Lớp 2A"
+    "st-tho-doi-nghi-thuc-ban-hoc-lop": "Lớp Chim Sẻ"
   },
   "steps": [
     {
@@ -50,7 +50,7 @@
         },
         {
           "speaker": "Thỏ Măng Non",
-          "text": "Trường sắp chọn chỉ huy đội nghi thức. Ai được chọn sẽ đi đầu hàng trống trong lễ khai giảng. Tớ mơ chuyện ấy từ hồi lớp Một!"
+          "text": "Trường sắp chọn chỉ huy đội nghi thức. Ai được chọn sẽ đi đầu hàng trống trong lễ khai giảng. Tớ mơ chuyện ấy từ hồi mới vào trường!"
         },
         {
           "speaker": "Thỏ Măng Non",
@@ -72,7 +72,7 @@
         "goTo": "Go to the hall porch, where Thỏ Măng Non is retying her scarf",
         "lines": [
           "Three, two, one! Hi {name}! I've tied my scarf three times and I'm still so nervous.",
-          "The school is choosing the honour guard leader. Whoever is chosen leads the drum line at the opening ceremony. I've dreamed of it since first grade!",
+          "The school is choosing the honour guard leader. Whoever is chosen leads the drum line at the opening ceremony. I've dreamed of it since my first day at school!",
           "But I dropped my team kit somewhere in the corridor. Help me find it, quick, three, two, one!"
         ],
         "choices": [
@@ -338,11 +338,11 @@
     {
       "id": "ban-vap-nga",
       "title": "Bạn vấp ngã",
-      "goTo": "Vào lớp 2A, cả đội đang tập trong lớp",
+      "goTo": "Vào lớp Chim Sẻ, cả đội đang tập trong lớp",
       "kind": "decision",
       "target": "st-tho-doi-nghi-thuc-ban-hoc-lop",
       "speaker": "Thỏ Măng Non",
-      "prompt": "Tập trong lớp 2A, Hươu Con vấp ngã, cả lớp cười ồ. Hươu đỏ mặt cúi đầu. Thỏ nhìn {name}: «Mình làm gì đây?»",
+      "prompt": "Tập trong lớp Chim Sẻ, Hươu Con vấp ngã, cả lớp cười ồ. Hươu đỏ mặt cúi đầu. Thỏ nhìn {name}: «Mình làm gì đây?»",
       "choices": [
         {
           "id": "do-ban",
@@ -362,8 +362,8 @@
       ],
       "en": {
         "title": "A friend trips",
-        "goTo": "Go into class 2A, where the guard is practising",
-        "prompt": "Practising in class 2A, Hươu Con trips and the class laughs. Hươu blushes and looks down. Thỏ turns to {name}: \"What do we do?\"",
+        "goTo": "Go into Sparrow class, where the guard is practising",
+        "prompt": "Practising in Sparrow class, Hươu Con trips and the class laughs. Hươu blushes and looks down. Thỏ turns to {name}: \"What do we do?\"",
         "choices": [
           {
             "text": "Help them up and practise again slowly",

@@ -4,7 +4,7 @@
   "chapter": 2,
   "title": "Việc tốt: Ngày đầu của Chồn Bông",
   "status": "active",
-  "summary": "Chồn Bông vừa chuyển tới lớp 2B, làm rơi đồ khắp sân sau và chưa quen ai. {name} tìm lại đồ cho bạn, đọc thời khóa biểu, đoán nhịp trống trường, chọn cách giúp bạn hòa nhập rồi cùng bạn xếp ba lô.",
+  "summary": "Chồn Bông vừa chuyển tới lớp Sơn Ca, làm rơi đồ khắp sân sau và chưa quen ai. {name} tìm lại đồ cho bạn, đọc thời khóa biểu, đoán nhịp trống trường, chọn cách giúp bạn hòa nhập rồi cùng bạn xếp ba lô.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "{name}, Chồn Bông, Bác Bảo Vệ Tư, Cún Đá Cầu",
@@ -40,7 +40,7 @@
       "kind": "dialogue",
       "target": "vt-th-chon-bong",
       "lines": [
-        { "speaker": "Chồn Bông", "text": "Chào cậu… Tớ là Chồn Bông, hôm nay mới chuyển tới lớp 2B. Tớ chạy vội quá nên làm rơi hết đồ ngoài sân rồi." },
+        { "speaker": "Chồn Bông", "text": "Chào cậu… Tớ là Chồn Bông, hôm nay mới chuyển tới lớp Sơn Ca. Tớ chạy vội quá nên làm rơi hết đồ ngoài sân rồi." },
         { "speaker": "Chồn Bông", "text": "Tớ cũng chưa biết lớp mình học môn gì, chưa quen bạn nào cả." }
       ],
       "choices": [
@@ -50,7 +50,7 @@
         "title": "A new friend on the steps",
         "goTo": "Someone new is sitting alone on the classroom steps",
         "lines": [
-          "Hi… I'm Chồn Bông, I just moved to class 2B today. I was rushing so much I dropped all my things in the yard.",
+          "Hi… I'm Chồn Bông, I just moved to Skylark class today. I was rushing so much I dropped all my things in the yard.",
           "I don't know what lessons our class has yet, and I don't know anyone."
         ],
         "choices": [
@@ -96,8 +96,8 @@
       "kind": "read",
       "target": "vt-th-thoi-khoa-bieu",
       "skill": "doc-hieu",
-      "text": "THỜI KHÓA BIỂU LỚP 2B\nThứ Hai: Tiếng Việt, Toán, Hoạt động trải nghiệm.\nThứ Ba: Toán, Tiếng Việt, Mĩ thuật.\nThứ Tư: Tiếng Việt, Âm nhạc, Toán.\nThứ Năm: Toán, Tự nhiên và Xã hội, Tiếng Việt.\nThứ Sáu: Tiếng Việt, Giáo dục thể chất, Đạo đức.",
-      "question": "Chồn Bông rất thích vẽ. Lớp 2B học Mĩ thuật vào thứ mấy?",
+      "text": "THỜI KHÓA BIỂU LỚP SƠN CA\nThứ Hai: Tiếng Việt, Toán, Hoạt động trải nghiệm.\nThứ Ba: Toán, Tiếng Việt, Mĩ thuật.\nThứ Tư: Tiếng Việt, Âm nhạc, Toán.\nThứ Năm: Toán, Tự nhiên và Xã hội, Tiếng Việt.\nThứ Sáu: Tiếng Việt, Giáo dục thể chất, Đạo đức.",
+      "question": "Chồn Bông rất thích vẽ. Lớp Sơn Ca học Mĩ thuật vào thứ mấy?",
       "choices": [
         { "id": "a", "text": "Thứ Hai" },
         { "id": "b", "text": "Thứ Ba" },

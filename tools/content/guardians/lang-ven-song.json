@@ -35,7 +35,7 @@
         {
           "id": "loi-chao",
           "skill": "tu-ngu",
-          "prompt": "Ngày đầu vào lớp Hai, bạn nhỏ gặp cô giáo ở cổng. Lời chào nào lễ phép?",
+          "prompt": "Ngày đầu năm học mới, bạn nhỏ gặp cô giáo ở cổng. Lời chào nào lễ phép?",
           "choices": ["Em chào cô ạ!", "Chào nhé!", "Ê cô ơi!"],
           "answer": 0,
           "guide": [
@@ -45,7 +45,7 @@
           "hint": "Chào người lớn thì xưng «em» và kết thúc bằng một tiếng «ạ» lễ phép.",
           "explain": "«Em chào cô ạ!» có xưng em, gọi cô và có «ạ» nên lễ phép; «Chào nhé!» là chào bạn bè, «Ê cô ơi!» thiếu lễ độ.",
           "en": {
-            "prompt": "On the first day of Year 2 a pupil meets the teacher at the gate. Which greeting is polite?",
+            "prompt": "On the first day of the school year a pupil meets the teacher at the gate. Which greeting is polite?",
             "choices": ["Em chào cô ạ! (polite hello)", "Chào nhé! (casual hi)", "Ê cô ơi! (hey, you)"],
             "guide": [
               "Think about who is being greeted: the teacher is older than the pupil.",

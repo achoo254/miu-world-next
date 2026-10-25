@@ -185,7 +185,7 @@
       "choices": [
         {
           "id": "tho-la",
-          "text": "Thỏ là đội viên lớp 2A."
+          "text": "Thỏ là đội viên lớp Chim Sẻ."
         },
         {
           "id": "tho-that",
@@ -214,7 +214,7 @@
         "hint": "Tìm hai câu có «… là …».",
         "answer": {
           "text": "Câu nói Thỏ là đội viên và câu nói thầy là hiệu trưởng",
-          "explanation": "«Thỏ là đội viên lớp 2A» và «Thầy Sư Tử Vàng là thầy hiệu trưởng» trả lời câu hỏi Ai là gì. Câu còn lại kể việc làm hoặc tả đặc điểm."
+          "explanation": "«Thỏ là đội viên lớp Chim Sẻ» và «Thầy Sư Tử Vàng là thầy hiệu trưởng» trả lời câu hỏi Ai là gì. Câu còn lại kể việc làm hoặc tả đặc điểm."
         },
         "en": {
           "guide": [
@@ -224,7 +224,7 @@
           "hint": "Find the two sentences built as \"… is a/the …\".",
           "answer": {
             "text": "The team-member sentence and the head-teacher sentence",
-            "explanation": "\"Thỏ is a team member in class 2A\" and \"Sư Tử Vàng is the head teacher\" answer Who is what. The others tell an action or describe."
+            "explanation": "\"Thỏ is a team member in Sparrow class\" and \"Sư Tử Vàng is the head teacher\" answer Who is what. The others tell an action or describe."
           }
         }
       },
@@ -257,7 +257,7 @@
         "goTo": "Go to the yard behind the classrooms to read the board for envelope two",
         "prompt": "Envelope two: Pick the sentences that introduce someone (answering: Who is what?):",
         "choices": [
-          "Thỏ is a team member in class 2A.",
+          "Thỏ is a team member in Sparrow class.",
           "Thỏ ties her scarf.",
           "Sư Tử Vàng is the head teacher.",
           "The scarf is bright red."

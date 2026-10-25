@@ -754,7 +754,7 @@ async function main(): Promise<void> {
   // The web app's bilingual dictionaries: every Vietnamese line has its English twin.
   report.issues.push(...checkLocales());
   // What the web shows names no book, grade, lesson number or page (quests once they are rewritten).
-  report.issues.push(...checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: CONTENT_DIR }));
+  report.issues.push(...checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: CONTENT_DIR, pendingQuests: readPendingQuests() }));
   // Every quest target on the committed maps, played step by step: reachable, its own prompt, shown, in sight.
   report.issues.push(...(await auditQuestTargets()).map(formatFinding));
   for (const note of report.notes) console.log(`note: ${note}`);

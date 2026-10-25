@@ -184,7 +184,7 @@
       "kind": "riddle",
       "target": "st-mai-cuon-sach-lac-the-muon-cu",
       "skill": "phep-tru",
-      "question": "Dòng cuối trên tấm thẻ mượn ghi: «Mai, lớp Hai». Sách trả muộn đúng 30 năm. Cô Thủ Thư Mai năm nay 38 tuổi. Nếu bạn Mai ấy chính là cô, thì hồi mượn sách cô mấy tuổi?",
+      "question": "Dòng cuối trên tấm thẻ mượn ghi: «Mai, lớp Sơn Ca». Sách trả muộn đúng 30 năm. Cô Thủ Thư Mai năm nay 38 tuổi. Nếu bạn Mai ấy chính là cô, thì hồi mượn sách cô mấy tuổi?",
       "answer": {
         "value": 8
       },
@@ -196,7 +196,7 @@
         "hint": "38 − 30 = ?",
         "answer": {
           "text": "8 tuổi",
-          "explanation": "38 − 30 = 8. Tám tuổi là đúng tuổi học lớp Hai, khớp với dòng ghi trên thẻ."
+          "explanation": "38 − 30 = 8. Tám tuổi là tuổi đi học, khớp với tấm thẻ của một học trò nhỏ."
         },
         "en": {
           "guide": [
@@ -206,7 +206,7 @@
           "hint": "38 − 30 = ?",
           "answer": {
             "text": "8 years old",
-            "explanation": "38 − 30 = 8. Eight is just the right age for second grade, which matches the card."
+            "explanation": "38 − 30 = 8. Eight is school age, which fits a young pupil's card."
           }
         }
       },
@@ -214,7 +214,7 @@
         "right": [
           "Tám tuổi… Cô Mai lặng đi một lúc, rồi mỉm cười rất khẽ.",
           "{name} trừ nhanh quá, mà đúng tới từng tuổi.",
-          "Đúng tuổi học lớp Hai, tấm thẻ không nói dối đâu."
+          "Đúng tuổi cô bé đi học, tấm thẻ không nói dối đâu."
         ],
         "wrong": [
           "Nhớ là lấy tuổi bây giờ trừ đi ba mươi nhé.",
@@ -225,7 +225,7 @@
           "right": [
             "Eight… Cô Mai goes quiet for a moment, then smiles very softly.",
             "{name} subtracted fast, and got every year right.",
-            "Just the age for second grade: the card isn't lying."
+            "Just the age of a schoolgirl: the card isn't lying."
           ],
           "wrong": [
             "Remember: take her age now and subtract thirty.",
@@ -237,7 +237,7 @@
       "en": {
         "title": "The old loan card",
         "goTo": "Take the loan register to the reading table and compare it with the old card",
-        "question": "The last line on the loan card says: «Mai, second grade». The book is exactly 30 years late. Cô Thủ Thư Mai is 38 this year. If that Mai is her, how old was she when she borrowed it?"
+        "question": "The last line on the loan card says: «Mai, Skylark class». The book is exactly 30 years late. Cô Thủ Thư Mai is 38 this year. If that Mai is her, how old was she when she borrowed it?"
       }
     },
     {
@@ -312,10 +312,10 @@
     },
     {
       "id": "ban-mai-lop-hai",
-      "title": "Bạn Mai lớp Hai",
+      "title": "Bạn Mai lớp Sơn Ca",
       "kind": "next",
       "trigger": "auto",
-      "text": "Lúc đóng cửa, cô Mai thì thầm: «Bạn Mai lớp Hai ấy là cô đấy. Cô đánh rơi cuốn sách trên xe buýt năm tám tuổi, và chưa từng kể với ai.» Cô muốn tìm cho ra người đọc chậm kia.",
+      "text": "Lúc đóng cửa, cô Mai thì thầm: «Bạn Mai lớp Sơn Ca ấy là cô đấy. Cô đánh rơi cuốn sách trên xe buýt năm tám tuổi, và chưa từng kể với ai.» Cô muốn tìm cho ra người đọc chậm kia.",
       "en": {
         "title": "The second-grader called Mai",
         "text": "At closing time, Cô Mai whispers: «That second-grader called Mai was me. I dropped the book on a bus when I was eight, and I've never told anyone.» She wants to find the slow reader."
