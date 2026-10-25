@@ -1,6 +1,6 @@
 # English names for characters, places, things and maps
 
-Status: in progress · Tier L · Owner request 25/10/2026: "tên NPC, tên vật phẩm, tên đường, tên map… chưa có tiếng Anh. Soát toàn bộ các tên tiếng Việt rồi thêm tiếng Anh."
+Status: done (deployed 25/10/2026, build ea2af28d) · Tier L · Owner request 25/10/2026: "tên NPC, tên vật phẩm, tên đường, tên map… chưa có tiếng Anh. Soát toàn bộ các tên tiếng Việt rồi thêm tiếng Anh."
 
 ## Decisions (owner, 25/10/2026)
 
@@ -18,10 +18,10 @@ Status: in progress · Tier L · Owner request 25/10/2026: "tên NPC, tên vật
 | # | Phase | Tier | Status |
 |---|---|---|---|
 | 1 | Harvest tool + batches | S | done |
-| 2 | Translate 6,807 names (parallel batches) | L | in progress |
-| 3 | Web lookup + wire every name display + gate in `content:check` | M | in progress |
-| 4 | English quest text uses the new NPC names | M | pending |
-| 5 | Review, screens in English mode, release | S | pending |
+| 2 | Translate 6,833 names (parallel batches) | L | done |
+| 3 | Web lookup + wire every name display + gate in `content:check` | M | done |
+| 4 | English quest text uses the new NPC names | M | done (3,072 lines; 44 lines holding Vietnamese sentences kept) |
+| 5 | Review, screens in English mode, release | S | done |
 
 ## Translation style
 
@@ -34,3 +34,9 @@ Status: in progress · Tier L · Owner request 25/10/2026: "tên NPC, tên vật
 - `{placeholders}` stay as they are: "Nhà của {name}" → "{name}'s Home".
 - Colour and pattern suffixes stay consistent across a family: bạc hà → mint, hồng → pink, chấm bi → polka-dot, kẻ sọc → striped, ngôi sao → star.
 - Never mention a grade, a textbook or a lesson.
+
+## Known limits
+
+- Names inside a few logic puzzles stay Vietnamese in the English text when the answers name the same characters ("Gấu Bắp Cày", "Mèo Mướp").
+- Answer labels show English only beside an English question; Vietnamese-language lessons keep their labels.
+- Name boards painted on the map follow the language chosen when the map loads.
