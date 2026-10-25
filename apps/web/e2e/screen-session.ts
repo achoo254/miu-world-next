@@ -22,6 +22,17 @@ export async function newScreen(browser: Browser, baseURL: string, size: ScreenS
     storageState: { cookies: [], origins: [] },
   });
   // Every wait is bounded, so a screen that does not come up is noted as missing instead of stalling the run.
+  // `MIU_SCREENS_LANG=en` (or `both`) pictures the screens in that display mode, for a look at the English; those
+  // pictures go elsewhere (screens.spec.ts) and are not the reviewed set.
+  const lang = process.env.MIU_SCREENS_LANG;
+  if (lang) {
+    await context.addInitScript((mode) => {
+      const read = Storage.prototype.getItem;
+      Storage.prototype.getItem = function (key: string) {
+        return key.startsWith('miu.lang') ? mode : read.call(this, key);
+      };
+    }, lang);
+  }
   context.setDefaultTimeout(20_000);
   context.setDefaultNavigationTimeout(30_000);
   return { context, page: await context.newPage() };

@@ -13,7 +13,10 @@ import { gameSettled, newPlayer, newScreen, type ScreenSize } from './screen-ses
 import { readStats, waitReady } from './stats';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-const SHOT_DIR = path.join(REPO_ROOT, 'assets/generated/review/screens');
+// Screens in another display mode (MIU_SCREENS_LANG) are a look only: kept out of the reviewed set in assets/.
+const SHOT_DIR = process.env.MIU_SCREENS_LANG
+  ? path.join(REPO_ROOT, `apps/web/test-results/screens-${process.env.MIU_SCREENS_LANG}`)
+  : path.join(REPO_ROOT, 'assets/generated/review/screens');
 /**
  * The sizes pictured: a phone and an iPad upright. `MIU_SCREENS_SIZES=1600x1000,…` pictures other sizes instead (a
  * desktop check by hand); only the two default sizes are reviewed before a release (docs/screen-review.md).

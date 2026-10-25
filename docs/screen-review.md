@@ -10,6 +10,7 @@ pnpm --filter @miu/web screens
 
 - Ảnh dùng để duyệt trước deploy chụp từ một cây sạch của commit sẽ deploy, không từ thư mục làm việc khi phiên khác có code dở: `git archive <commit> | tar -x -C <thư mục mới>`, `pnpm install --frozen-lockfile --prefer-offline`, rồi trong cây đó `MIU_SCREENS_COMMIT=<sha đầy đủ> pnpm --filter @miu/web screens`, và chép `assets/generated/review/screens/` về repo rồi `pnpm assets:manifest`.
 - Chạy trên máy dev, 1 worker, cùng server E2E (PGlite trong RAM, tài khoản giả): kiểm tải máy và cổng 4173/8787/8788 trước. Khoảng 1–2 phút.
+- Xem chữ tiếng Anh: `MIU_SCREENS_LANG=en` (hoặc `both`) chụp cùng các màn ở chế độ đó vào `apps/web/test-results/screens-<chế độ>/`; ảnh đó chỉ để xem, không thuộc lần duyệt trước deploy.
 - Spec: [`apps/web/e2e/screens.spec.ts`](../apps/web/e2e/screens.spec.ts); project `screens` không chạy trên CI.
 - Khổ màn: 360 × 740 và 820 × 1180, `deviceScaleFactor: 1`, có cảm ứng. Ba mươi màn mỗi khổ, tên cố định (`01-login` … `30-party-quest`), ghi đè mỗi lần chụp ở `assets/generated/review/screens/<rộng>x<cao>/<tên>.png`.
 - `28-play-menu` (menu HUD mở), `29-pause` (Tạm dừng, rộng trên iPad), `30-party-quest` (tổ đội mở cùng thẻ chơi cả đội). Khổ khác để tự kiểm (ví dụ máy tính): `MIU_SCREENS_SIZES=1600x1000`; ảnh khổ đó không thuộc lần duyệt trước deploy, chuyển ra ngoài `assets/` rồi chạy `pnpm assets:manifest`.
