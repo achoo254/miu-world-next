@@ -1,8 +1,8 @@
 {
-  "capturedFrom": "3ffdf44724f0ec85a9cc3fbd22adab1768076ac9",
-  "capturedAt": "2026-10-25T17:54:34+07:00",
-  "reviewedAt": "2026-10-25T17:55:53+07:00",
-  "reviewer": "agent:screen-reviewers (30 màn × 2 khổ ở c2960942) và phiên chính (15 ảnh khác ở 3ffdf447: phần thưởng ngẫu nhiên, hoạt ảnh, pill rộng hơn trên tablet)",
+  "capturedFrom": "17980a5cfa3b19579e12d28c87c26e8607c8315c",
+  "capturedAt": "2026-10-25T21:22:26+07:00",
+  "reviewedAt": "2026-10-25T21:23:36+07:00",
+  "reviewer": "phiên chính: so dữ kiện DOM 30 màn × 2 khổ với lần duyệt 3ffdf447 (không phát sinh lỗi mới), xem lại 10-question, 13-olympiad-practice, 27-puzzle-clues ở hai khổ",
   "verdict": "pass",
   "findings": [
     {
@@ -79,7 +79,7 @@
       "shot": "360x740/13-olympiad-practice.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Hộp luyện Olympic bị cắt phần đầu ở khổ 360 (tiêu đề, dòng đầu đề bài); như lần trước.",
+      "text": "Khổ 360: bốn đáp án xếp 2×2, thấy đủ cùng nút Kiểm tra; trang vẫn cuộn nên tiêu đề \"Thử thách Olympic Toán\" khuất một nửa.",
       "fixedIn": null
     },
     {
@@ -115,7 +115,7 @@
       "kind": "clipped",
       "severity": "note",
       "text": "Đáp án thứ ba bị thanh Hướng dẫn/Kiểm tra che ở khổ 360, phải cuộn; như lần trước.",
-      "fixedIn": null
+      "fixedIn": "0a170f8a"
     },
     {
       "shot": "820x1180/30-party-quest.png",
