@@ -13,6 +13,7 @@ import { cellsIn } from './chapters/place-quest-targets';
 import type { OutlandTheme } from '../../packages/voxel/src/outland';
 import { levelProfile } from '../../packages/voxel/src/outland-levelling';
 import { outlandSpecOf } from './outland-spec';
+import { propCells as solidPropCells } from './prop-cells';
 import { columnsOf, fillColumn, heightField, loadBlocks, mapModels, PACK, placeRegionTargets, rollingHeight, scatterTrees, smoothstep, standHeight, WIDE_MAP_SIDE } from './map-kit';
 import { WAY_BLOCKS, wayChecks } from './scenery-audit';
 import { placeVillageLife, type Resident } from './village-life';
@@ -426,7 +427,12 @@ export async function generateZoneMap(spec: ZoneMapSpec): Promise<{ world: Voxel
   }
 
   // 6. Quest targets: each chapter's in its zone, on level open ground off the paths, clear of props, trees and buildings.
-  const propCells = columnsOf(models.props);
+  // Every prop's own column, and every column a solid prop fills: a large rock spans several blocks round its centre.
+  const solidColumns = [...(await solidPropCells(models.props)).keys()].map((key) => {
+    const [x = 0, , z = 0] = key.split(',').map(Number);
+    return [x, z] as const;
+  });
+  const propCells = [...columnsOf(models.props), ...solidColumns];
   // Trees and props as column lookups (a wide map has some fifteen thousand props).
   const trunkNear = new Set<string>();
   for (const [tx, tz] of trunks) for (let dx = -2; dx <= 2; dx++) for (let dz = -2; dz <= 2; dz++) if (Math.hypot(dx, dz) < 2.2) trunkNear.add(`${tx + dx},${tz + dz}`);

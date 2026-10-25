@@ -167,7 +167,11 @@ export function placeVillageLife(ground: LifeGround, cast: readonly Resident[], 
       spots[name] = at(c);
     }
     if (!isAnimal) {
-      const [fx, fz] = resident.facing ?? [spots['work-a']?.[0] ?? home.x, (spots['work-a']?.[2] ?? home.z) + 1];
+      // Without a set facing, the walker looks at the column just past its first spot: the first of the four beside it
+      // that keeps clear of the quests, like every other spot of its day.
+      const [wx, wz] = [spots['work-a']?.[0] ?? home.x, spots['work-a']?.[2] ?? home.z];
+      const beside = ([[0, 1], [0, -1], [1, 0], [-1, 0]] as const).map(([dx, dz]) => [wx + dx, wz + dz] as const);
+      const [fx, fz] = resident.facing ?? beside.find(([x, z]) => !nearQuest(Math.floor(x), Math.floor(z))) ?? [wx, wz + 1];
       spots.focus = [fx + (resident.facing ? 0.5 : 0), ground.standY(Math.floor(fx), Math.floor(fz)) + 0.8, fz + (resident.facing ? 0.5 : 0)];
     }
     const n = (counts.get(resident.routine) ?? 0) + 1;

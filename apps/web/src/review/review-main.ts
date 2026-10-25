@@ -220,7 +220,7 @@ function renderGallery(generated: string[]): void {
     'toan2-cd4-b20': 'Toa hàng ba màu (Toán bài 20)',
     'toan2-cd7-b36': 'Hộp huy hiệu vàng, bạc, đồng (Toán bài 36)',
     'toan2-cd2-b09': 'Bê con: nhỏ hơn bò, mỗi con một màu (Toán bài 9)',
-    'tv2-t08-b15': 'Sách Dế Mèn, sách Thế giới quanh em (Tiếng Việt bài 15)',
+    'tv2-t08-b15': 'Sách có chú ếch trên bìa, sách tranh bìa xanh (Tiếng Việt bài 15)',
     'tv2-t18-on-cuoi-ki': 'Nhịp cầu đầu, giữa, cuối (Tiếng Việt ôn cuối kì)',
   };
   for (const p of reviewPaths.filter((x) => x.includes('/review/props/')).sort()) byId('lesson-props').append(figure(p, propsCaption[name(p)] ?? name(p)));

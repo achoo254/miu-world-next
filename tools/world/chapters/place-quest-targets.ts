@@ -14,7 +14,9 @@
 //   `sideSpot` puts it (beside the ways, at its place: tools/world/side-givers.ts), clear of everything else. So
 //   is the character a story chapter opens at (its storyteller, content/npcs), the host of a co-op challenge and a
 //   zone guardian: the child talks to it any time.
-// Deterministic for a given seed and input.
+// Deterministic for a given seed and input. Every resident, every quest and every target of a quest draws from
+// its own stream (questStream: the map's seed and the ids), never from one stream shared down the map: renaming
+// a quest's place, or adding a quest, moves that quest's targets and nothing of the other quests'.
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { QuestDefinition, stepTargets } from '../../../packages/schema/src/content';
@@ -22,7 +24,7 @@ import { LookCatalog, QuestTargetCatalog, type TargetLook } from '../../../packa
 import type { Interactable } from '../../../packages/voxel/src/world-entities';
 import { REPO_ROOT } from '../../assets/asset-lib';
 import { modelScales } from '../model-scales';
-import { createRng } from '../noise';
+import { createRng, hashSeed } from '../noise';
 
 type Cell = readonly [number, number];
 
@@ -121,6 +123,14 @@ const MEMBER_GAP = 2.5;
 /** A place the map names stands within this many blocks of it, if there is room. */
 const NAMED_PLACE_REACH = 10;
 
+/**
+ * The seeded stream of one part of the placement (`parts`: a resident's id, a quest's id, a quest and one of its
+ * targets), from the map's seed: what one quest draws never shifts what another draws.
+ */
+export function questStream(seed: number, ...parts: readonly string[]): () => number {
+  return createRng(hashSeed(['quest-targets', String(seed >>> 0), ...parts].join(':')));
+}
+
 export async function readTargetCatalogues(): Promise<{ looks: LookCatalog['looks']; targets: QuestTargetCatalog['targets'] }> {
   const read = async (rel: string): Promise<unknown> => JSON.parse(await readFile(path.join(REPO_ROOT, rel), 'utf8'));
   return { looks: LookCatalog.parse(await read('content/world/looks.json')).looks, targets: QuestTargetCatalog.parse(await read('content/world/targets.json')).targets };
@@ -135,7 +145,6 @@ export async function placeQuestTargets(options: {
 }): Promise<{ placed: Interactable[]; retagged: Interactable[]; narrow: Array<{ quest: string; place: string; gap: number }> }> {
   const { uses, map, existing, seed } = options;
   const { looks, targets } = await readTargetCatalogues();
-  const rng = createRng(seed);
   const lookOf = (id: string): { look: TargetLook; name: string; label: string; character?: string } => {
     const entry = targets[id];
     if (!entry) throw new Error(`target ${id} is not in content/world/targets.json`);
@@ -184,8 +193,9 @@ export async function placeQuestTargets(options: {
   const keepClear = within(map.keepClear, map.clearance ?? CLEAR_GAP);
   /** Cells a target may stand on at all (the map's ground and its keep-clear spots), once per cell list. */
   const standable = new Map<readonly Cell[], Cell[]>();
-  /** Shuffled candidates (deterministic), free of what must stay clear. */
-  const candidates = (cells: readonly Cell[], blocked: readonly Cell[], gap: number): Cell[] => {
+  type Rng = () => number;
+  /** Shuffled candidates (deterministic from `rng`), free of what must stay clear. */
+  const candidates = (rng: Rng, cells: readonly Cell[], blocked: readonly Cell[], gap: number): Cell[] => {
     let base = standable.get(cells);
     if (!base) {
       base = cells.filter((c) => map.canStand(c[0], c[1]) && !keepClear.has(`${c[0]},${c[1]}`));
@@ -215,18 +225,18 @@ export async function placeQuestTargets(options: {
   const taken: Cell[] = existing.map((t) => [Math.floor(t.position[0] ?? 0), Math.floor(t.position[2] ?? 0)]);
 
   /** The first free cell, keeping `gaps[0]` from `blocked` if the ground allows, else the next gap (and which one held). */
-  const firstFreeAt = (cells: readonly Cell[], blocked: readonly Cell[], gaps: readonly number[], near: readonly Cell[] = [], nearGap = 0): { cell: Cell; gap: number } | undefined => {
+  const firstFreeAt = (rng: Rng, cells: readonly Cell[], blocked: readonly Cell[], gaps: readonly number[], near: readonly Cell[] = [], nearGap = 0): { cell: Cell; gap: number } | undefined => {
     for (const gap of gaps) {
-      const cell = candidates(cells, blocked, gap).find((c) => !nearAny(c, near, nearGap));
+      const cell = candidates(rng, cells, blocked, gap).find((c) => !nearAny(c, near, nearGap));
       if (cell) return { cell, gap };
     }
     return undefined;
   };
   const firstFree = (...args: Parameters<typeof firstFreeAt>): Cell | undefined => firstFreeAt(...args)?.cell;
   /** The same as `firstFreeAt`, but the free cell nearest `to` rather than a shuffled one. */
-  const nearestFreeAt = (cells: readonly Cell[], to: Cell, blocked: readonly Cell[], gaps: readonly number[], near: readonly Cell[] = [], nearGap = 0): { cell: Cell; gap: number } | undefined => {
+  const nearestFreeAt = (rng: Rng, cells: readonly Cell[], to: Cell, blocked: readonly Cell[], gaps: readonly number[], near: readonly Cell[] = [], nearGap = 0): { cell: Cell; gap: number } | undefined => {
     for (const gap of gaps) {
-      const free = candidates(cells, blocked, gap).filter((c) => !nearAny(c, near, nearGap));
+      const free = candidates(rng, cells, blocked, gap).filter((c) => !nearAny(c, near, nearGap));
       const cell = free.sort((a, b) => Math.hypot(a[0] - to[0], a[1] - to[1]) - Math.hypot(b[0] - to[0], b[1] - to[1]))[0];
       if (cell) return { cell, gap };
     }
@@ -237,7 +247,8 @@ export async function placeQuestTargets(options: {
   const residents = [...uses.entries()].filter(([id, list]) => list.length > 1 && !existingIds.has(id) && !sideOnly.has(id)).sort(([a], [b]) => a.localeCompare(b));
   const residentAt: Cell[] = [];
   for (const [id, list] of residents) {
-    const cell = firstFree(map.residentCells, taken, RESIDENT_GAPS);
+    const rng = questStream(seed, 'resident', id);
+    const cell = firstFree(rng, map.residentCells, taken, RESIDENT_GAPS);
     if (!cell) throw new Error(`no room left for resident ${id}`);
     taken.push(cell);
     residentAt.push(cell);
@@ -256,6 +267,8 @@ export async function placeQuestTargets(options: {
     for (const m of members.sort((a, b) => a.id.localeCompare(b.id))) groups.set(m.use.place ?? m.id, [...(groups.get(m.use.place ?? m.id) ?? []), m]);
     const centres: Cell[] = [];
     const used: Cell[] = [];
+    // The quest's own stream picks its places; each target's own stream picks its spot within its place.
+    const rng = questStream(seed, 'quest', quest);
     for (const [place, group] of groups) {
       const chapter = group[0]?.use.chapter ?? 1;
       // Clear of the other places of this quest and of everything always there; beside residents is fine.
@@ -267,23 +280,24 @@ export async function placeQuestTargets(options: {
       // A place the map names: round its landmark first, nearest cells first.
       const named = map.placeNamed?.(place);
       const atNamed = named
-        ? nearestFreeAt(cells.filter((c) => Math.hypot(c[0] - named[0], c[1] - named[1]) <= NAMED_PLACE_REACH), named, [...always, ...centres], CLUSTER_GAPS, residentAt, BESIDE_RESIDENT)
+        ? nearestFreeAt(rng, cells.filter((c) => Math.hypot(c[0] - named[0], c[1] - named[1]) <= NAMED_PLACE_REACH), named, [...always, ...centres], CLUSTER_GAPS, residentAt, BESIDE_RESIDENT)
         : undefined;
       const found =
         atNamed ??
-        firstFreeAt(span, [...always, ...centres], CLUSTER_GAPS, residentAt, BESIDE_RESIDENT) ??
-        firstFreeAt(cells, [...always, ...centres], CLUSTER_GAPS, residentAt, BESIDE_RESIDENT);
+        firstFreeAt(rng, span, [...always, ...centres], CLUSTER_GAPS, residentAt, BESIDE_RESIDENT) ??
+        firstFreeAt(rng, cells, [...always, ...centres], CLUSTER_GAPS, residentAt, BESIDE_RESIDENT);
       if (!found) throw new Error(`quest ${quest}: no room for the place "${place}" in chapter ${chapter}`);
       const centre = found.cell;
       if (centres.length > 0 && found.gap < WALK_GAP) narrow.push({ quest, place, gap: found.gap });
       centres.push(centre);
       for (const m of group) {
         const around = map.chapterCells(chapter).filter((c) => Math.hypot(c[0] - centre[0], c[1] - centre[1]) <= CLUSTER_RADIUS);
-        const [cell] = candidates(around, [...taken, ...used], MEMBER_GAP);
+        const own = questStream(seed, 'quest', quest, m.id);
+        const [cell] = candidates(own, around, [...taken, ...used], MEMBER_GAP);
         const at = cell ?? centre;
         used.push(at);
         // Face the cluster's centre (the place), or the way the child arrives for a lone target.
-        const yaw = Math.round((Math.atan2(centre[0] - at[0], centre[1] - at[1]) * 180) / Math.PI) || Math.floor(rng() * 360);
+        const yaw = Math.round((Math.atan2(centre[0] - at[0], centre[1] - at[1]) * 180) / Math.PI) || Math.floor(own() * 360);
         placed.push(build(m.id, map.stand(at[0], at[1]), yaw, [m.use]));
       }
     }
@@ -302,7 +316,7 @@ export async function placeQuestTargets(options: {
 /** Block columns of placed targets. */
 const columnsOfPlaced = (list: readonly Interactable[]): Cell[] => list.map((t) => [Math.floor(t.position[0] ?? 0), Math.floor(t.position[2] ?? 0)] as const);
 
-/** A steady facing from an id (no draw from the seeded stream, so placing a giver moves nothing else). */
+/** A steady facing from an id (no draw from a seeded stream, so placing a giver moves nothing else). */
 function yawOf(id: string): number {
   let h = 0;
   for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) % 360;
