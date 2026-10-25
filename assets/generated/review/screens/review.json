@@ -1,8 +1,8 @@
 {
-  "capturedFrom": "63f555f48a74c7c651eee1e6212d3e5b851764a5",
-  "capturedAt": "2026-10-25T13:59:10+07:00",
-  "reviewedAt": "2026-10-25T14:02:11+07:00",
-  "reviewer": "agent:screen-reviewers (5 subagents, 12 ảnh mỗi agent)",
+  "capturedFrom": "0ee71f6008d1a7ef8191d62a028193ef61fab383",
+  "capturedAt": "2026-10-25T15:39:46+07:00",
+  "reviewedAt": "2026-10-25T15:43:00+07:00",
+  "reviewer": "agent:screen-reviewers (ảnh khác lần duyệt 63f555f4 do 3 subagent và phiên chính xem lại; 29 ảnh giống hệt giữ kết quả cũ)",
   "verdict": "pass",
   "findings": [
     {
@@ -115,6 +115,27 @@
       "kind": "other",
       "severity": "note",
       "text": "Tên phiếu dài sát chữ \"3 phần\" bên phải (còn khoảng 8 px), chưa cắt hay đè.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/16-backpack.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Chữ \"0/150 XP\" đè lên mép dưới thanh XP ở thẻ người chơi; vẫn đọc được.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/22-friends-invite.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Nút \"Quay lại\" cao khoảng 42 px và sát mép trên khung Bạn bè (khoảng 2 px); vẫn bấm được.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/27-puzzle-clues.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Nút đóng tròn khoảng 36 px, nhỏ hơn 44 px (đã như vậy từ lần trước).",
       "fixedIn": null
     }
   ]
