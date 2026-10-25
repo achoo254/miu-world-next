@@ -4,18 +4,17 @@
   "chapter": 3,
   "title": "Vết khắc trên cánh cửa chòi",
   "status": "active",
-  "lesson": "tv2-t1-b29",
   "topic": "doc-tho",
-  "summary": "Cua Kềnh bò ngang về căn chòi cũ bên bờ hồ sen của xóm, tìm lại những vạch khắc chiều cao bà đánh dấu năm nào. {name} cùng Cua đọc bài thơ Cánh cửa nhớ bà, tìm từ chỉ hoạt động, nghe và kể chuyện Bà cháu, rồi gặp Bà Gấu Nâu còn nhớ bà Cua ngày xưa.",
+  "summary": "Cua Kềnh bò ngang về căn chòi cũ bên bờ hồ sen của xóm, tìm lại những vạch khắc chiều cao bà đánh dấu năm nào. {name} cùng Cua đọc bài thơ về những vạch than trên cột nhà, tìm từ chỉ hoạt động, nghe Cua kể chuyện đôi dép của bà, rồi gặp Bà Gấu Nâu còn nhớ bà Cua ngày xưa.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Cua Kềnh (đi ngang, hay nói ngược, đang nhớ bà), Chú chài Khơi vớt tranh và mê nghe chuyện, Bà Gấu Nâu (bà của cả xóm) ghé qua, còn nhớ bà Cua ngày xưa",
     "where": "Căn chòi cũ bên bờ hồ sen: bãi cát quanh chòi, cánh cửa gỗ có hai then, bãi sỏi mép hồ, vách đá gắn vỏ sò sau chòi",
     "goal": "Tìm lại các vạch khắc chiều cao bà Cua đánh dấu trên cánh cửa và khắc thêm vạch mới",
     "play": "Lục tìm đồ cũ, nói, đọc thơ, chọn đáp án, xếp tranh, chọn nhiều từ, phân loại, chọn cách làm, nghe và kể chuyện, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 29: đọc hiểu bài thơ \"Cánh cửa nhớ bà\", từ chỉ hoạt động, nghe và kể chuyện \"Bà cháu\", viết chữ hoa Ô, Ơ",
+    "learn": "Đọc hiểu bài thơ \"Vạch chiều cao trên cột nhà\" (tự viết), từ chỉ hoạt động, nghe và kể chuyện đôi dép của bà, nói về tình cảm với ông bà, viết chữ hoa Ô, Ơ",
     "reward": "80 XP, 15 xu, Đọc hiểu +2, Kể chuyện +2, Từ ngữ +1, mẩu then cửa khắc vạch",
-    "next": "Lời nhử sang Bài 30 \"Thương ông\": con dốc gập ghềnh lên nhà ông"
+    "next": "Lời nhử sang con dốc gập ghềnh lên nhà ông Vện, nơi Cún Vừng đang cuống quýt gọi người giúp"
   },
   "phases": {
     "hook": "gap-cua-kenh",
@@ -28,17 +27,22 @@
     "next": "mo-bai-30"
   },
   "texts": {
-    "canh-cua-nho-ba": {
-      "title": "Cánh cửa nhớ bà",
-      "author": "Đoàn Thị Lam Luyến",
-      "body": "Ngày cháu còn thấp bé\nCánh cửa có hai then\nCháu chỉ cài then dưới\nNhờ bà cài then trên\n\nMỗi năm cháu lớn lên\nBà lưng còng cắm cúi\nCháu cài được then trên\nBà chỉ cài then dưới...\n\nNay cháu về nhà mới\nBao cánh cửa – ô trời\nMỗi lần tay đẩy cửa\nLại nhớ bà khôn nguôi.",
+    "vach-cao-tren-cot": {
+      "title": "Vạch chiều cao trên cột nhà",
+      "body": "Ngày cháu còn bé xíu\nBà cúi bên cột nhà\nVạch một nét bằng than\nNgang đầu gối của cháu\n\nMỗi năm cháu cao thêm\nNét than lên từng chút\nBà phải kiễng chân dần\nĐể vạch ngang vai cháu\n\nNay cháu đi học xa\nMỗi lần về chạm cột\nThấy vạch than còn đen\nCháu nhớ bà da diết",
       "glossary": [
         {
-          "term": "Then (cửa)",
-          "meaning": "vật bằng tre, gỗ hoặc sắt, dùng để cài cửa."
+          "term": "Kiễng chân",
+          "meaning": "đứng bằng đầu ngón chân cho người cao lên."
+        },
+        {
+          "term": "Da diết",
+          "meaning": "nhớ nhiều, nhớ mãi không nguôi."
         }
       ],
-      "section": "tv2-t1-b29-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -121,121 +125,115 @@
       "goTo": "Quay lại căn chòi cũ bên bờ, Cua Kềnh đang ôm ghế mây",
       "kind": "speak",
       "target": "cua-kenh",
-      "prompt": "Cua Kềnh ôm chiếc ghế mây của bà, hai càng khẽ phủi lớp bụi. Cua quay sang hỏi {name}: Nói về tình cảm của em đối với ông bà.",
+      "prompt": "Cua Kềnh ôm chiếc ghế mây của bà, hai càng khẽ phủi lớp bụi. Cua quay sang hỏi {name}: cậu thương ông bà mình nhất ở điều gì?",
       "hints": [
-        "Ông bà em sống ở đâu? Em hay gặp ông bà vào lúc nào?",
-        "Em thích làm việc gì cùng ông bà nhất?",
-        "Em thương ông bà ở điều gì?"
+        "Ông bà của cậu sống ở đâu? Cậu hay gặp ông bà vào lúc nào?",
+        "Cậu thích cùng ông bà làm việc gì nhất?",
+        "Có điều gì ông bà làm khiến cậu thấy ấm lòng không?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b29-doc-kd"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "doc-bai-tho",
       "title": "Bài thơ dán bên then cửa",
-      "goTo": "Đến cánh cửa gỗ của chòi, có bài thơ dán cạnh then cửa",
+      "goTo": "Đến cánh cửa gỗ của chòi, có bài thơ dán cạnh một vạch khắc cũ",
       "kind": "read",
       "target": "tv2-t16-canh-cua-go",
-      "textRef": "canh-cua-nho-ba",
+      "textRef": "vach-cao-tren-cot",
       "audio": true,
-      "question": "Ngày cháu còn nhỏ, ai thường cài then trên của cánh cửa?",
+      "question": "Lúc cháu còn bé xíu, bà vạch nét than ngang chỗ nào trên người cháu?",
       "choices": [
         {
           "id": "ba",
-          "text": "Bà"
+          "text": "Ngang đầu gối của cháu"
         },
         {
           "id": "chau",
-          "text": "Cháu"
+          "text": "Ngang vai của cháu"
         },
         {
           "id": "bo",
-          "text": "Bố"
+          "text": "Ngang đỉnh đầu của cháu"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "ba"
       },
-      "curriculumRef": [
-        "tv2-t1-b29-doc-1"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ đầu, lúc cháu còn thấp bé bên cánh cửa hai then.",
-          "Ngày cháu còn thấp bé, cháu cài then nào? Ai cài then còn lại?"
+          "Đọc khổ thơ đầu, lúc cháu còn bé xíu bên cột nhà.",
+          "Bà cúi xuống vạch nét than, vậy nét ấy ở thấp hay cao?"
         ],
-        "hint": "Cháu thấp bé chỉ với tới then dưới, nên then trên phải nhờ người khác.",
+        "hint": "Bà phải cúi xuống mới vạch được, nên nét than nằm thấp.",
         "answer": {
-          "text": "Bà là người cài then trên.",
-          "explanation": "Khổ thơ đầu viết: \"Cháu chỉ cài then dưới / Nhờ bà cài then trên\"."
+          "text": "Ở chỗ thấp nhất, ngang đầu gối cháu.",
+          "explanation": "Khổ đầu cho biết bà cúi bên cột nhà, vạch nét than thấp, vừa ngang đầu gối cháu bé."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, bà cài then trên! Cua Kềnh gõ hai càng lách cách như gõ trống.",
-          "Chuẩn! Hồi ấy cháu thấp bé, bà với tay cài giúp.",
-          "Cua Kềnh bò ngang ba vòng mừng rỡ: cậu đọc kĩ quá!"
+          "Đúng rồi, nét than đầu tiên thấp tè! Cua Kềnh gõ hai càng lách cách như gõ trống.",
+          "Chuẩn! Cháu còn bé xíu nên nét vạch chỉ tới đầu gối.",
+          "Cua Kềnh bò ngang ba vòng mừng rỡ: cậu đọc kĩ thật đấy!"
         ],
         "wrong": [
-          "Ối, cháu còn thấp bé lắm, với sao tới then trên? Đọc lại khổ một nhé.",
-          "Bài thơ không nhắc tới bố đâu. Tìm hai chữ \"Nhờ bà\" xem sao.",
-          "Gần lắm rồi! Dòng thơ thứ tư nói ai cài then trên đấy."
+          "Vai là chỗ bà vạch ở khổ sau, khi cháu đã cao hơn. Đọc lại khổ một nhé.",
+          "Đỉnh đầu thì cao quá, cháu bé xíu mà. Tìm dòng cuối của khổ thứ nhất xem.",
+          "Gần lắm rồi! Dòng thơ thứ tư của khổ đầu nói rõ nét than nằm ở đâu."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "vi-sao-ba-cai-then-duoi",
-      "title": "Vì sao bà đổi sang then dưới",
+      "title": "Vì sao bà phải kiễng chân",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t16-canh-cua-go",
-      "prompt": "Cua Kềnh kiễng chân, giơ càng chạm then trên: giờ tớ với tới rồi nè! Vì sao khi cháu lớn, bà lại là người cài then dưới của cánh cửa?",
+      "prompt": "Cua Kềnh kiễng chân, giơ càng chạm lên cao: tớ với tới rồi nè! Vì sao khi cháu lớn lên, bà lại phải kiễng chân khi vạch nét than?",
       "choices": [
         {
           "id": "lon-cao",
-          "text": "Vì cháu lớn lên cao hơn, còn bà lưng còng cắm cúi nên chỉ cài được then dưới."
+          "text": "Vì cháu cao thêm nên nét vạch phải lên cao theo."
         },
         {
           "id": "then-gay",
-          "text": "Vì then trên bị gãy, chẳng ai cài được nữa."
+          "text": "Vì bà lỡ làm rơi cục than xuống đất."
         },
         {
           "id": "ba-nhat-rau",
-          "text": "Vì bà thích ngồi bên cửa nhặt rau, tiện tay cài then dưới."
+          "text": "Vì bà thích đứng nhìn ra vườn qua cửa sổ."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "lon-cao"
       },
-      "curriculumRef": [
-        "tv2-t1-b29-doc-2"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ thứ hai, chỗ kể cháu lớn lên từng năm.",
-          "Mỗi năm cháu thế nào? Còn dáng lưng của bà thì sao?"
+          "Đọc khổ thơ thứ hai, chỗ kể mỗi năm cháu thêm cao.",
+          "Cháu cao lên thì nét vạch nằm thấp hơn hay cao hơn trước?"
         ],
-        "hint": "Có hai dòng thơ nói về cháu lớn lên và dáng lưng của bà.",
+        "hint": "Có hai dòng thơ nói chuyện cháu cao thêm và nét than lên dần.",
         "answer": {
-          "text": "Cháu mỗi năm một lớn, còn bà lưng còng nên bà chỉ cài then dưới.",
-          "explanation": "Khổ hai viết: \"Mỗi năm cháu lớn lên / Bà lưng còng cắm cúi / Cháu cài được then trên / Bà chỉ cài then dưới...\"."
+          "text": "Cháu mỗi năm một cao, nét than cũng lên cao nên bà phải kiễng chân.",
+          "explanation": "Khổ hai kể nét than lên từng chút theo chiều cao của cháu, vì vậy bà phải nhón chân mới vạch tới vai cháu."
         }
       },
       "feedback": {
         "right": [
-          "Đúng thế! Cháu cao lên, bà còng xuống, hai bà cháu đổi then cho nhau.",
-          "Cua Kềnh gật gù, mắt hơi rưng rưng: bà tớ cũng còng lưng như thế.",
+          "Đúng thế! Cháu vươn cao, nét than vươn theo, bà đành nhón chân.",
+          "Cua Kềnh gật gù, mắt hơi rưng rưng: bà tớ cũng kiễng chân như thế.",
           "Chính xác! {name} hiểu cả điều bài thơ không nói thẳng ra."
         ],
         "wrong": [
-          "Then trên vẫn còn tốt, cháu cài được đấy thôi. Đọc lại khổ hai nhé.",
-          "Bài thơ không kể chuyện nhặt rau đâu. Tìm dòng \"Bà lưng còng cắm cúi\" xem.",
-          "Thử nghĩ: mỗi năm cháu cao hơn hay thấp đi? Còn lưng bà thì sao?"
+          "Bài thơ không hề kể bà làm rơi cục than. Đọc lại khổ hai nhé.",
+          "Bà đứng cạnh cột chứ có nhìn ra vườn đâu. Tìm dòng nhắc chuyện kiễng chân xem.",
+          "Thử nghĩ: mỗi năm cháu cao hơn hay thấp đi? Nét than nằm ở đâu theo đó?"
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "xep-tranh-ba-kho-tho",
@@ -244,7 +242,7 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t16-b29-chu-chai-khoi",
-      "prompt": "Gió hồ thổi ba tấm tranh bà treo cạnh cửa rơi lộn xộn. Cua Kềnh định xếp từ cuối lên đầu… À không, phải xuôi chứ! Sắp xếp các bức tranh sau theo thứ tự của 3 khổ thơ trong bài.",
+      "prompt": "Gió hồ thổi ba tấm tranh bà treo cạnh cửa rơi lộn xộn. Cua Kềnh định xếp từ cuối lên đầu… À không, phải xuôi chứ! Xếp các tranh theo thứ tự ba khổ thơ nhé.",
       "items": [
         {
           "id": "tranh-1",
@@ -253,7 +251,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "người cháu đã lớn cài then trên, bà lưng còng cài then dưới của cánh cửa gỗ",
+              "caption": "bà đứng nhón chân vạch nét than ngang vai cháu, cháu đứng thẳng áp lưng vào cột nhà",
               "n": 1
             }
           }
@@ -265,7 +263,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "người cháu đã lớn xách cặp mở cánh cửa kính của nhà mới",
+              "caption": "cháu đã lớn, đứng cạnh cột nhà cũ, ngón tay lần theo những vạch than đen",
               "n": 2
             }
           }
@@ -277,7 +275,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "cháu nhỏ cài then dưới, bà cài then trên của cánh cửa gỗ",
+              "caption": "bà cúi xuống vạch nét than ngang đầu gối một cháu nhỏ đứng cạnh cột nhà",
               "n": 3
             }
           }
@@ -291,32 +289,30 @@
           "tranh-2"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b29-doc-3"
-      ],
       "support": {
         "guide": [
-          "Khổ một: cháu còn thấp bé. Khổ hai: cháu lớn, bà còng lưng. Khổ ba: cháu về nhà mới.",
+          "Khổ một: cháu còn bé xíu. Khổ hai: cháu cao thêm. Khổ ba: cháu đi xa rồi trở về.",
           "Tìm bức tranh hợp với từng khổ thơ."
         ],
-        "hint": "Tranh có cháu nhỏ xíu đứng cạnh bà là tranh của khổ thơ đầu tiên.",
+        "hint": "Tranh có cháu nhỏ xíu và bà cúi xuống là tranh của khổ đầu.",
         "answer": {
-          "text": "Tranh 3 → Tranh 1 → Tranh 2",
-          "explanation": "Tranh 3 vẽ cháu nhỏ cài then dưới (khổ một), tranh 1 vẽ cháu lớn cài then trên (khổ hai), tranh 2 vẽ cháu mở cửa nhà mới (khổ ba)."
+          "text": "Tranh 3, rồi tranh 1, rồi tranh 2.",
+          "explanation": "Tranh 3 vẽ bà cúi vạch ngang đầu gối (khổ một), tranh 1 vẽ bà nhón chân vạch ngang vai (khổ hai), tranh 2 vẽ cháu lớn lần theo vạch cũ (khổ ba)."
         }
       },
       "feedback": {
         "right": [
           "Ba tấm tranh về đúng chỗ, xuôi chiều hẳn hoi!",
           "Cua Kềnh reo: lần đầu tiên tớ xếp cái gì mà không bị ngược!",
-          "Tuyệt! Nhìn tranh là thấy cháu lớn dần qua từng khổ thơ."
+          "Tuyệt! Nhìn tranh là thấy cháu cao dần qua từng khổ thơ."
         ],
         "wrong": [
           "Hình như có tranh đang đứng ngược như Cua rồi. Khổ đầu cháu còn bé xíu cơ.",
-          "Cửa kính nhà mới là chuyện ở khổ cuối đấy, đừng xếp lên đầu nhé.",
-          "Thử tìm tranh bà còn đứng thẳng lưng cài then trên, đặt nó trước tiên."
+          "Cảnh cháu đã lớn lần theo vạch cũ là chuyện ở khổ cuối, đừng xếp lên đầu nhé.",
+          "Thử tìm tranh bà cúi xuống vạch thật thấp, đặt nó trước tiên."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "cau-tho-nho-ba",
@@ -324,52 +320,50 @@
       "goTo": "Ôm tranh về cánh cửa gỗ của chòi, đọc lại khổ thơ cuối",
       "kind": "read",
       "target": "tv2-t16-canh-cua-go",
-      "textRef": "canh-cua-nho-ba",
-      "question": "Câu thơ nào trong bài nói lên tình cảm của cháu đối với bà khi về nhà mới?",
+      "textRef": "vach-cao-tren-cot",
+      "question": "Câu thơ nào cho biết cháu nhớ bà mỗi lần về chạm vào cột nhà?",
       "choices": [
         {
           "id": "thap-be",
-          "text": "Ngày cháu còn thấp bé\nCánh cửa có hai then"
+          "text": "Ngày cháu còn bé xíu\nBà cúi bên cột nhà"
         },
         {
           "id": "lon-len",
-          "text": "Mỗi năm cháu lớn lên\nBà lưng còng cắm cúi"
+          "text": "Bà phải kiễng chân dần\nĐể vạch ngang vai cháu"
         },
         {
           "id": "nho-ba",
-          "text": "Mỗi lần tay đẩy cửa\nLại nhớ bà khôn nguôi."
+          "text": "Thấy vạch than còn đen\nCháu nhớ bà da diết"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "nho-ba"
       },
-      "curriculumRef": [
-        "tv2-t1-b29-doc-4"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ cuối, khi cháu đã về nhà mới.",
+          "Đọc khổ thơ cuối, khi cháu đã đi học xa.",
           "Tìm dòng thơ có hai chữ \"nhớ bà\"."
         ],
         "hint": "Câu trả lời nằm ở hai dòng cuối cùng của bài.",
         "answer": {
-          "text": "Hai dòng cuối bài: Mỗi lần tay đẩy cửa / Lại nhớ bà khôn nguôi.",
-          "explanation": "Về nhà mới có bao cánh cửa, mỗi lần đẩy cửa cháu lại nhớ bà mãi không thôi."
+          "text": "Hai dòng kết bài, nơi cháu nói mình nhớ bà.",
+          "explanation": "Về lại cột nhà, thấy vạch than vẫn còn đen, cháu nhớ bà mãi không nguôi."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, đẩy cửa là lại nhớ bà. Cua Kềnh khẽ áp càng vào cánh cửa cũ.",
-          "Chuẩn! \"Khôn nguôi\" nghĩa là nhớ mãi, nhớ hoài không thôi.",
-          "Cua Kềnh thì thầm: tớ cũng thế, cửa nào cũng làm tớ nhớ bà."
+          "Đúng rồi, nhìn vạch than là nhớ bà. Cua Kềnh khẽ áp càng vào cánh cửa cũ.",
+          "Chuẩn! \"Da diết\" nghĩa là nhớ nhiều, nhớ mãi không thôi.",
+          "Cua Kềnh thì thầm: tớ cũng thế, thấy vạch khắc nào cũng nhớ bà."
         ],
         "wrong": [
-          "Hai dòng này kể hồi cháu còn bé, chưa về nhà mới đâu.",
-          "Dòng này tả dáng lưng của bà. Tìm dòng có chữ \"nhớ\" nhé.",
+          "Hai dòng này kể hồi cháu còn bé, chưa đi xa đâu.",
+          "Dòng này tả bà phải kiễng chân. Tìm dòng có chữ \"nhớ\" nhé.",
           "Gợi ý nhỏ: câu thơ cần tìm nằm ở cuối cùng của bài."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tu-chi-hoat-dong",
@@ -378,158 +372,154 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "cua-kenh",
-      "prompt": "Cua Kềnh bày trò: từ nào là việc làm thì cậu nhảy lên! Mà khoan, tớ hay nói ngược lắm đấy. Những từ ngữ nào dưới đây chỉ hoạt động? cánh cửa, cài, then, đẩy, lưng, về, nhà",
+      "prompt": "Cua Kềnh bày trò: từ nào là việc làm thì cậu nhảy lên! Mà khoan, tớ hay nói ngược lắm đấy. Cậu chọn giúp tớ những thẻ ghi việc làm của người nhé: cột nhà, cúi, than, vạch, vai, chạm, cháu",
       "choices": [
         {
-          "id": "canh-cua",
-          "text": "cánh cửa"
+          "id": "cot-nha",
+          "text": "cột nhà"
         },
         {
-          "id": "cai",
-          "text": "cài"
+          "id": "cui",
+          "text": "cúi"
         },
         {
-          "id": "then",
-          "text": "then"
+          "id": "than",
+          "text": "than"
         },
         {
-          "id": "day",
-          "text": "đẩy"
+          "id": "vach",
+          "text": "vạch"
         },
         {
-          "id": "lung",
-          "text": "lưng"
+          "id": "vai",
+          "text": "vai"
         },
         {
-          "id": "ve",
-          "text": "về"
+          "id": "cham",
+          "text": "chạm"
         },
         {
-          "id": "nha",
-          "text": "nhà"
+          "id": "chau",
+          "text": "cháu"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "choices": [
-          "cai",
-          "day",
-          "ve"
+          "cui",
+          "vach",
+          "cham"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b29-doc-lt1"
-      ],
       "support": {
         "guide": [
           "Từ chỉ hoạt động là từ chỉ việc làm, ta làm được nó.",
-          "Thử nói \"Em ... cửa\" hoặc \"Em ... nhà\": từ nào điền vào chỗ trống được?"
+          "Thử nói \"Bà ... xuống\" hoặc \"Cháu ... vào cột\": từ nào điền vào chỗ trống được?"
         ],
-        "hint": "Có ba từ chỉ hoạt động; \"then\" và \"lưng\" là tên sự vật.",
+        "hint": "Có ba từ chỉ hoạt động; \"than\" và \"vai\" là tên sự vật.",
         "answer": {
-          "text": "Từ chỉ hoạt động: cài, đẩy, về.",
-          "explanation": "Cài (then), đẩy (cửa), về (nhà) là việc làm; cánh cửa, then, lưng, nhà là tên sự vật."
+          "text": "Từ chỉ hoạt động: cúi, vạch, chạm.",
+          "explanation": "Cúi (xuống), vạch (nét), chạm (cột) là việc làm; cột nhà, than, vai, cháu là tên người hoặc vật."
         }
       },
       "feedback": {
         "right": [
           "Ba từ chỉ hoạt động, không sót từ nào! Cua Kềnh nhảy ngang một bước ăn mừng.",
-          "Chuẩn rồi: cài, đẩy, về đều là việc mình làm được.",
+          "Chuẩn rồi: cúi, vạch, chạm đều là việc mình làm được.",
           "Cua Kềnh vỗ càng: tớ nói ngược mà cậu vẫn chọn xuôi, giỏi ghê!"
         ],
         "wrong": [
-          "\"Lưng\" là một phần cơ thể, đâu phải việc làm. Thử bỏ ra xem.",
-          "Còn thiếu một từ đấy! Cháu làm gì khi \"... nhà mới\"?",
-          "\"Cánh cửa\" và \"then\" là đồ vật nhé. Từ nào chỉ việc tay ta làm với chúng?"
+          "\"Vai\" là một phần cơ thể, đâu phải việc làm. Thử bỏ ra xem.",
+          "Còn thiếu một từ đấy! Bà làm gì với cục than để có nét kẻ?",
+          "\"Cột nhà\" và \"than\" là đồ vật nhé. Từ nào chỉ việc tay ta làm?"
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
     },
     {
       "id": "viec-lam-voi-cua",
-      "title": "Hai giỏ chữ của cánh cửa",
-      "goTo": "Cua Kềnh bò tới cánh cửa gỗ của chòi, gõ cốc cốc vào khung",
+      "title": "Hai giỏ chữ của cái cây",
+      "goTo": "Cua Kềnh bò ra gốc ổi cạnh cánh cửa gỗ của chòi, gõ cốc cốc vào thân cây",
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t16-canh-cua-go",
-      "prompt": "Cua Kềnh gõ cốc cốc vào khung cửa: cửa ơi, cho tớ hỏi một câu! Tìm những từ ngữ chỉ hoạt động có thể kết hợp với từ “cửa”. M: đẩy cửa",
+      "prompt": "Cua Kềnh gõ cốc cốc vào thân ổi: cây ơi, cho tớ hỏi một câu! Giúp Cua xếp các từ vào đúng giỏ: giỏ việc làm với cây, giỏ tên các loại cây.",
       "groups": [
         {
           "id": "hoat-dong",
-          "label": "Hoạt động với “cửa”"
+          "label": "Việc làm với cây"
         },
         {
-          "id": "loai-cua",
-          "label": "Tên các loại cửa"
+          "id": "loai-cay",
+          "label": "Tên các loại cây"
         }
       ],
       "items": [
         {
-          "id": "cua-so",
-          "label": "cửa sổ"
+          "id": "cay-cau",
+          "label": "cây cau"
         },
         {
-          "id": "mo-cua",
-          "label": "mở cửa"
+          "id": "trong-cay",
+          "label": "trồng cây"
         },
         {
-          "id": "cua-kinh",
-          "label": "cửa kính"
+          "id": "cay-tre",
+          "label": "cây tre"
         },
         {
-          "id": "dong-cua",
-          "label": "đóng cửa"
+          "id": "tuoi-cay",
+          "label": "tưới cây"
         },
         {
-          "id": "khep-cua",
-          "label": "khép cửa"
+          "id": "cham-cay",
+          "label": "chăm cây"
         },
         {
-          "id": "cua-go",
-          "label": "cửa gỗ"
+          "id": "cay-oi",
+          "label": "cây ổi"
         },
         {
-          "id": "go-cua",
-          "label": "gõ cửa"
+          "id": "nho-cay",
+          "label": "nhổ cây"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "cua-so": "loai-cua",
-          "mo-cua": "hoat-dong",
-          "cua-kinh": "loai-cua",
-          "dong-cua": "hoat-dong",
-          "khep-cua": "hoat-dong",
-          "cua-go": "loai-cua",
-          "go-cua": "hoat-dong"
+          "cay-cau": "loai-cay",
+          "trong-cay": "hoat-dong",
+          "cay-tre": "loai-cay",
+          "tuoi-cay": "hoat-dong",
+          "cham-cay": "hoat-dong",
+          "cay-oi": "loai-cay",
+          "nho-cay": "hoat-dong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b29-doc-lt2"
-      ],
       "support": {
         "guide": [
-          "Ghép thử \"Em ... cửa\": nếu nói thành một việc làm thì đó là hoạt động.",
-          "Từ nào chỉ một loại cửa thì xếp vào giỏ tên các loại cửa."
+          "Ghép thử \"Em ... cây\": nếu nói thành một việc làm thì đó là hoạt động.",
+          "Từ nào gọi tên một loại cây thì xếp vào giỏ tên các loại cây."
         ],
-        "hint": "Mở, đóng, khép, gõ là việc tay ta làm với cánh cửa.",
+        "hint": "Trồng, tưới, chăm, nhổ là việc tay ta làm với cái cây.",
         "answer": {
-          "text": "Hoạt động: mở cửa, đóng cửa, khép cửa, gõ cửa. Tên cửa: cửa sổ, cửa kính, cửa gỗ.",
-          "explanation": "Mở, đóng, khép, gõ là từ chỉ hoạt động kết hợp được với \"cửa\"; cửa sổ, cửa kính, cửa gỗ là tên gọi các loại cửa."
+          "text": "Việc làm: trồng cây, tưới cây, chăm cây, nhổ cây. Tên cây: cây cau, cây tre, cây ổi.",
+          "explanation": "Trồng, tưới, chăm, nhổ là từ chỉ hoạt động đi với \"cây\"; cau, tre, ổi là tên các loại cây."
         }
       },
       "feedback": {
         "right": [
-          "Hai giỏ gọn gàng! Cua Kềnh mở cửa, đóng cửa, khép cửa liền một mạch.",
-          "Đúng hết! Mở, đóng, khép, gõ đều là việc làm với cánh cửa.",
-          "Cua Kềnh cười khì: thế mà tớ cứ tưởng \"cửa sổ\" là đang... sổ cửa!"
+          "Hai giỏ gọn gàng! Cua Kềnh trồng cây, tưới cây, chăm cây liền một mạch.",
+          "Đúng hết! Trồng, tưới, chăm, nhổ đều là việc làm với cái cây.",
+          "Cua Kềnh cười khì: thế mà tớ cứ tưởng \"cây cau\" là đang… cau cây!"
         ],
         "wrong": [
-          "\"Cửa kính\" là một loại cửa, mình đâu làm việc \"kính\" được. Đổi giỏ nhé.",
-          "Có một việc làm đang lạc sang giỏ tên cửa. Thử nói \"Em ... cửa\" xem.",
-          "\"Gõ cửa\" là việc làm, nghe cốc cốc đấy! Xếp nó vào giỏ hoạt động nhé."
+          "\"Cây tre\" là tên một loại cây, mình đâu làm việc \"tre\" được. Đổi giỏ nhé.",
+          "Có một việc làm đang lạc sang giỏ tên cây. Thử nói \"Em ... cây\" xem.",
+          "\"Nhổ cây\" là việc làm, nghe phựt một cái! Xếp nó vào giỏ việc làm nhé."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
     },
     {
       "id": "tim-thay-vet-khac",
@@ -600,19 +590,19 @@
       "goTo": "Ra vách đá gắn vỏ sò sau chòi, có bốn bức tranh cũ",
       "kind": "speak",
       "target": "tv2-t16-vach-vo-so",
-      "prompt": "Ngày xưa bà Cua hay kể chuyện Bà cháu bên vách đá này. Cua Kềnh chỉ nhớ lõm bõm, nên rủ {name} đoán trước. Dựa vào tranh và câu hỏi gợi ý, đoán nội dung của từng tranh.",
+      "prompt": "Ngày xưa bà Cua hay kể chuyện về một đôi dép cũ bên vách đá này. Cua Kềnh chỉ nhớ lõm bõm, nên rủ {name} đoán trước. Nhìn tranh và nghe câu hỏi gợi ý, đoán xem từng tranh có chuyện gì.",
       "hints": [
-        "Cô tiên cho hai anh em cái gì?",
-        "Khi bà mất, hai anh em đã làm gì?",
-        "Vắng bà, hai anh em cảm thấy thế nào?",
-        "Câu chuyện kết thúc thế nào?"
+        "Đôi dép của bà trông ra sao, bà đi đâu?",
+        "Cô bé làm gì với ống tre đựng xu?",
+        "Cô bé giấu món quà ở đâu khi chờ bà?",
+        "Bà xỏ dép mới rồi làm gì?"
       ],
       "pictureRefs": [
         {
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "cô tiên đưa cho cậu bé một hạt, bà ôm em gái ngồi trong túp lều tranh",
+            "caption": "bà đi đôi dép mòn gót ra vườn, cô bé đứng ở hiên nhìn theo",
             "n": 1
           }
         },
@@ -620,7 +610,7 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "hai anh em đứng cạnh cây trĩu quả vàng bạc lấp lánh",
+            "caption": "cô bé đổ ống tre đựng xu ra sàn, đếm từng đồng",
             "n": 2
           }
         },
@@ -628,7 +618,7 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "hai anh em ngồi ôm nhau buồn bã trước ngôi nhà lớn",
+            "caption": "cô bé giấu hộp dép sau lưng, đứng chờ ở cổng",
             "n": 3
           }
         },
@@ -636,91 +626,84 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "bà ôm hai cháu vui vẻ trước túp lều tranh",
+            "caption": "bà đi dép mới, nắm tay cô bé bước trong vườn",
             "n": 4
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b29-ke-chuyen-1-a",
-        "tv2-t1-b29-ke-chuyen-1-b",
-        "tv2-t1-b29-ke-chuyen-1-c",
-        "tv2-t1-b29-ke-chuyen-1-d"
-      ]
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "nghe-chuyen-ba-chau",
-      "title": "Cua Kềnh kể chuyện Bà cháu",
+      "title": "Cua Kềnh kể chuyện đôi dép",
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t16-vach-vo-so",
-      "prompt": "Nghe kể chuyện. Cua Kềnh hắng giọng, lần này kể xuôi từ đầu: Ngày xưa, hai anh em sống với bà trong túp lều tranh. Cô tiên cho cậu anh một hạt đào, dặn khi bà mất thì gieo bên mộ bà. Cây mọc lên, trĩu quả vàng quả bạc. Hai anh em giàu có mà buồn rầu, chỉ mong bà sống lại. Cô tiên phất quạt, vàng bạc biến mất, bà hiện ra ôm hai cháu. Giờ xếp bốn bức tranh theo đúng câu chuyện nhé!",
+      "prompt": "Cua Kềnh hắng giọng, lần này kể xuôi từ đầu: Ngày xưa, có cô bé sống với bà cạnh bờ ao. Dép của bà mòn gót mà sáng nào bà cũng đi ra vườn. Thương bà, cô bé đập ống tre, đổ xu ra đếm rồi nhờ mẹ dẫn ra chợ mua đôi dép mới. Về đến nhà, em giấu hộp dép sau lưng, đứng chờ bà ở cổng. Bà xỏ dép vào, bước nhẹ hẳn, nắm tay cháu cùng đi ra vườn. Giờ xếp bốn bức tranh theo đúng câu chuyện nhé!",
       "items": [
         {
-          "id": "buon-ba",
-          "label": "Hai anh em ngồi buồn bã trước ngôi nhà to"
+          "id": "giau-dep",
+          "label": "Cô bé giấu hộp dép sau lưng, chờ bà ở cổng"
         },
         {
-          "id": "co-tien",
-          "label": "Cô tiên trao hạt cho cậu anh"
+          "id": "dep-mon",
+          "label": "Bà đi đôi dép mòn gót ra vườn"
         },
         {
-          "id": "ba-ve",
-          "label": "Bà ôm hai cháu trước túp lều"
+          "id": "ba-di-dep",
+          "label": "Bà đi dép mới, nắm tay cháu ra vườn"
         },
         {
-          "id": "cay-vang",
-          "label": "Cây trĩu quả vàng, quả bạc"
+          "id": "dem-xu",
+          "label": "Cô bé đổ ống tre, đếm từng đồng xu"
         }
       ],
       "skill": "ke-chuyen",
       "answer": {
         "order": [
-          "co-tien",
-          "cay-vang",
-          "buon-ba",
-          "ba-ve"
+          "dep-mon",
+          "dem-xu",
+          "giau-dep",
+          "ba-di-dep"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b29-ke-chuyen-2"
-      ],
       "support": {
         "guide": [
-          "Câu chuyện bắt đầu khi cô tiên ghé túp lều tranh.",
-          "Có vàng bạc rồi hai anh em mới thấy buồn vì vắng bà."
+          "Câu chuyện bắt đầu khi cô bé thấy đôi dép của bà đã mòn.",
+          "Phải có tiền thì mới mua được dép, và có dép rồi mới đem tặng bà."
         ],
-        "hint": "Tranh bà ôm hai cháu vui vẻ là kết thúc câu chuyện.",
+        "hint": "Tranh bà đi dép mới cùng cháu là cảnh kết thúc.",
         "answer": {
-          "text": "Cô tiên trao hạt → cây trĩu quả vàng bạc → hai anh em buồn bã → bà trở về ôm hai cháu",
-          "explanation": "Hai anh em được cô tiên cho hạt đào, gieo lên thành cây quả vàng bạc, giàu mà buồn vì nhớ bà, rồi xin cô tiên cho bà sống lại."
+          "text": "Bà đi dép mòn, rồi cô bé đếm xu, rồi giấu hộp dép, rồi bà đi dép mới.",
+          "explanation": "Cô bé thấy dép bà mòn gót, dành xu mua đôi mới, giấu quà chờ bà, và cuối cùng bà cùng cháu đi trong vườn với đôi dép mới."
         }
       },
       "feedback": {
         "right": [
           "Đúng trình tự rồi! Cua Kềnh xúc động đến mức bò thẳng được ba bước.",
-          "Bốn tranh nối nhau thành câu chuyện Bà cháu trọn vẹn.",
-          "Cậu nghe kĩ thật! Vàng bạc biến mất, bà trở về, ấm áp quá."
+          "Bốn tranh nối nhau thành câu chuyện đôi dép trọn vẹn.",
+          "Cậu nghe kĩ thật! Hộp dép giấu sau lưng làm bà bất ngờ, ấm áp quá."
         ],
         "wrong": [
-          "Phải có hạt của cô tiên thì cây vàng bạc mới mọc được chứ.",
-          "Hai anh em buồn vì vắng bà, chuyện đó đến sau khi có vàng bạc nhé.",
-          "Cảnh bà ôm hai cháu là cái kết, để nó đứng cuối cùng nhé."
+          "Phải thấy dép mòn thì cô bé mới nghĩ tới chuyện đi mua chứ.",
+          "Cô bé đếm xu trước khi có hộp dép nhé, đừng đặt cảnh giấu quà lên trước.",
+          "Cảnh bà cùng cháu đi dép mới là cái kết, để nó đứng cuối cùng nhé."
         ]
-      }
+      },
+      "objective": "doc-truyen-thu-tu"
     },
     {
       "id": "ke-chuyen-ba-chau",
       "title": "Đến lượt {name} kể chuyện",
-      "goTo": "Ra bãi sỏi mép hồ kể chuyện Bà cháu cho Chú chài Khơi nghe",
+      "goTo": "Ra bãi sỏi mép hồ kể chuyện đôi dép cho Chú chài Khơi nghe",
       "kind": "speak",
       "target": "tv2-t16-b29-chu-chai-khoi",
-      "prompt": "Cua Kềnh lau mắt bằng càng: tớ kể xong rồi, cậu có nhớ không? Nghe kể chuyện. Chọn kể 1 – 2 đoạn của câu chuyện theo tranh.",
+      "prompt": "Cua Kềnh lau mắt bằng càng: tớ kể xong rồi, cậu có nhớ không? Chọn kể lại 1 – 2 đoạn của câu chuyện đôi dép theo tranh.",
       "hints": [
-        "Đoạn 1: túp lều tranh nghèo và hạt đào của cô tiên.",
-        "Đoạn 2: cây đào lạ trĩu quả vàng, quả bạc.",
-        "Đoạn 3: nhà to, của nhiều mà hai anh em vẫn buồn.",
-        "Đoạn 4: hai anh em xin cô tiên cho bà sống lại."
+        "Đoạn 1: đôi dép mòn gót của bà.",
+        "Đoạn 2: cô bé đếm từng đồng xu trong ống tre.",
+        "Đoạn 3: cô bé giấu hộp dép, chờ bà ở cổng.",
+        "Đoạn 4: bà đi dép mới, hai bà cháu cùng ra vườn."
       ],
       "pictureRefs": [
         {
@@ -752,10 +735,7 @@
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b29-ke-chuyen-2",
-        "tv2-t1-b29-ke-chuyen-3"
-      ]
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "tap-ke-cho-ba",
@@ -763,15 +743,13 @@
       "goTo": "Về căn chòi cũ bên bờ, Cua Kềnh vừa khắc xong vạch mới",
       "kind": "speak",
       "target": "cua-kenh",
-      "prompt": "Cua Kềnh bảo tối nay sẽ kể chuyện này cho bà nghe qua chiếc vỏ ốc truyền tin. Mình tập trước nhé! Kể cho người thân nghe câu chuyện Bà cháu.",
+      "prompt": "Cua Kềnh bảo tối nay sẽ kể chuyện này cho bà nghe qua chiếc vỏ ốc truyền tin. Mình tập trước nhé! Kể cho người thân nghe chuyện đôi dép.",
       "hints": [
-        "Em sẽ kể cho ai nghe: ông bà, bố mẹ hay anh chị?",
-        "Nhớ kể đủ: hạt đào, cây vàng bạc, nỗi buồn vắng bà, cái kết.",
-        "Kể xong, em hỏi người thân thích đoạn nào nhất."
+        "Cậu sẽ kể cho ai nghe: ông bà, bố mẹ hay anh chị?",
+        "Nhớ kể đủ: dép mòn, ống tre đựng xu, hộp dép giấu sau lưng, cái kết.",
+        "Kể xong, hỏi người thân xem họ thích đoạn nào nhất."
       ],
-      "curriculumRef": [
-        "tv2-t1-b29-van-dung-1"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "vach-moi-tren-cua",
@@ -793,13 +771,13 @@
         },
         {
           "speaker": "Bà Gấu Nâu",
-          "text": "Ngày xưa, khắc vạch xong, bà Cua hay ngồi ghế mây kể chuyện Bà cháu cho cả xóm nghe. Cái then cửa gãy kia, cháu giữ làm kỉ niệm nhé."
+          "text": "Ngày xưa, khắc vạch xong, bà Cua hay ngồi ghế mây kể chuyện đôi dép cho cả xóm nghe. Cái then cửa gãy kia, cháu giữ làm kỉ niệm nhé."
         }
       ],
       "choices": [
         {
           "text": "Cua ơi, giữ mẩu then cửa ấy thật cẩn thận nhé!",
-          "reply": "Cua Kềnh ôm mẩu then cửa: cầm nó là tớ lại nhớ bà, giống đẩy cửa trong bài thơ ấy."
+          "reply": "Cua Kềnh ôm mẩu then cửa: cầm nó là tớ lại nhớ bà, giống như chạm vào vạch than trong bài thơ ấy."
         }
       ],
       "en": {
@@ -808,28 +786,43 @@
           "Done! The new line is a whole claw-span above the old one. I carved it nice and neat, not backwards at all!",
           "Hello, you two! I was walking by the lake, heard the tock-tock of carving and immediately remembered old Granny Crab.",
           "You knew my grandma, Granny Gấu Nâu? Oh, I should have said hello first, I've got it backwards again!",
-          "Long ago, after carving the lines, Granny Crab would sit in her rattan chair and tell the whole hamlet the story Bà cháu (Grandma and the Grandchildren). That broken door bar there, you keep it as a keepsake."
+          "Long ago, after carving the lines, Granny Crab would sit in her rattan chair and tell the whole hamlet the story of the worn-out slippers. That broken door bar there, you keep it as a keepsake."
         ],
         "choices": [
           {
             "text": "Cua, look after that piece of door bar really carefully!",
-            "reply": "Cua Kềnh hugs the piece of wood: holding it makes me think of Grandma, just like pushing the door in that poem."
+            "reply": "Cua Kềnh hugs the piece of wood: holding it makes me think of Grandma, just like touching the carved lines in that poem."
           }
         ]
       }
     },
     {
       "id": "phieu-viet-bai-29",
-      "title": "Phiếu viết Bài 29",
+      "title": "Phiếu viết chữ hoa Ô, Ơ",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b29",
-      "text": "Cua Kềnh dặn: nhờ bố mẹ in phiếu Bài 29 ở khu phụ huynh, tập viết chữ hoa Ô, Ơ và câu ứng dụng về ông bà. Viết xuôi nhé, đừng viết ngược như tớ!",
-      "curriculumRef": [
-        "tv2-t1-b29-viet-chu-hoa-1",
-        "tv2-t1-b29-viet-ung-dung-2",
-        "tv2-t1-b29-van-dung-1"
-      ]
+      "text": "Cua Kềnh dặn: nhờ bố mẹ in phiếu ở khu phụ huynh, tập viết chữ hoa Ô, Ơ và một câu về ông bà. Viết xuôi nhé, đừng viết ngược như tớ!",
+      "objective": "viet-chu-hoa",
+      "sheet": {
+        "title": "Phiếu viết: chữ hoa Ô, Ơ và ông bà",
+        "blocks": [
+          {
+            "kind": "letter",
+            "prompt": "Tô rồi viết chữ hoa Ô, Ơ",
+            "letters": [
+              "Ô",
+              "Ơ"
+            ]
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: Ông bà thương cháu từng ngày.",
+            "model": [
+              "Ông bà thương cháu từng ngày."
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "qua-cua-cua-kenh",

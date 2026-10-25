@@ -4,18 +4,17 @@
   "chapter": 5,
   "title": "Hải Ly Cần nặn quà bên suối",
   "status": "active",
-  "lesson": "tv2-t1-b24",
   "topic": "dau-cau",
-  "summary": "Đất sét bên suối khô cứng, Hải Ly Cần gặm thử suýt mẻ răng. {name} tìm nước và lá chuối ủ đất, đọc bài thơ Nặn đồ chơi bên phiến đá rêu, giúp Lợn Rừng Đốm tả đồ chơi trên giá rồi cùng Hải Ly chia quà nặn cho cả rừng. Dọc suối còn có Bác thợ gốm Hai, Khỉ Toe, Mèo Nơ và Cá Chép Kim chờ góp vui.",
+  "summary": "Đất sét bên suối khô cứng, Hải Ly Cần gặm thử suýt mẻ răng. {name} tìm nước và lá chuối ủ đất, đọc bài thơ Bé nhào đất bên phiến đá rêu, giúp Lợn Rừng Đốm tả đồ chơi trên giá rồi cùng Hải Ly chia quà nặn cho cả rừng. Dọc suối còn có Bác thợ gốm Hai, Khỉ Toe, Mèo Nơ và Cá Chép Kim chờ góp vui.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Hải Ly Cần chăm chỉ cẩn thận, Mèo Bùn (lông nâu như bùn suối, điềm tĩnh, nói ít, mê nắm đất hình chuột), Lợn Rừng Đốm vụng về làm đồ chơi, Bác thợ gốm Hai (nặn bình bên lò gốm), Khỉ Toe (cười suốt ngày), Mèo Nơ (khéo gói quà), Cá Chép Kim (mê nghe đồng dao)",
     "where": "Bờ suối đất sét, bãi lau ven suối, phiến đá rêu chép bài thơ, giá đồ chơi gỗ, lò gốm ven suối, cành ổi bên suối, bụi hồng ven suối và vũng suối trong",
     "goal": "Làm mềm đất sét để Hải Ly nặn quà tặng cả nhà và các bạn",
     "play": "Tìm đồ, nói, đọc thơ, xếp nhóm, chọn nhiều đáp án, trắc nghiệm, điền từ, điền vần, đặt dấu phẩy, lựa chọn trong hội thoại, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 24: đọc hiểu bài thơ \"Nặn đồ chơi\", từ chỉ cảm xúc, da/gia, s/x, ươn/ương, từ chỉ đặc điểm của đồ chơi, dấu phẩy, tả đồ chơi",
+    "learn": "Đọc hiểu bài thơ \"Bé nhào đất\" (tự viết): người nhận quà, tấm lòng của bé, từ chỉ cảm xúc; chính tả da/gia, s/x, ươn/ương; từ chỉ đặc điểm của đồ chơi, dấu phẩy khi liệt kê, tả đồ chơi",
     "reward": "85 XP, 15 xu, Từ ngữ +2, Đọc hiểu +1, Chính tả +1, Dấu câu +1",
-    "next": "Bài 25 \"Sự tích hoa tỉ muội\" ở Xóm Mái Ấm"
+    "next": "Hai chị em ong giận nhau bên bụi hoa ở Xóm Mái Ấm"
   },
   "phases": {
     "hook": "gap-hai-ly",
@@ -28,21 +27,26 @@
     "next": "mo-bai-25"
   },
   "texts": {
-    "nan-do-choi": {
-      "title": "Nặn đồ chơi",
-      "author": "Nguyễn Ngọc Ký",
-      "body": "Bên thềm gió mát,\nBé nặn đồ chơi.\nMèo nằm vẫy đuôi,\nTròn xoe đôi mắt.\n\nĐây là quả thị,\nĐây là quả na,\nQuả này phần mẹ,\nQuả này phần cha.\n\nĐây chiếc cối nhỏ\nBé nặn thật tròn,\nBiếu bà đấy nhé,\nGiã trầu thêm ngon.\n\nĐây là thằng chuột\nTặng riêng chú mèo,\nMèo ta thích chí\nVểnh râu “meo meo”!\n\nNgoài hiên đã nắng,\nBé nặn xong rồi.\nĐừng sờ vào đấy,\nBé còn đang phơi.",
+    "be-nhao-dat": {
+      "title": "Bé nhào đất",
+      "body": "Sáng nay bên hiên\nBé ngồi nhào đất\nGà con lạch bạch\nChạy lại ngó xem\nMắt sáng long lanh.\n\nBé nặn chiếc bát\nTròn như trăng rằm\nDành cho bố mẹ\nDọn cơm mỗi ngày\nĂn cho thật ngon.\n\nNào cá, nào gà\nNào thỏ, nào chim\nNặn tặng ông bà\nCho ông bà ngắm\nRâu bạc cười vui.\n\nChú voi bé xíu\nDành tặng bạn thân\nBạn đưa hai tay\nĐón quà hớn hở\nBé cũng vui lây.",
       "glossary": [
         {
-          "term": "Cối giã trầu",
-          "meaning": "đồ để giã trầu, thường làm bằng đồng."
+          "term": "Nhào đất",
+          "meaning": "bóp, nhồi đất cho dẻo và mềm để dễ nặn."
         },
         {
-          "term": "Thích chí",
-          "meaning": "tỏ ra bằng lòng, vui thích vì đúng ý muốn."
+          "term": "Lạch bạch",
+          "meaning": "dáng đi bước ngắn, lắc lư của gà, vịt."
+        },
+        {
+          "term": "Hớn hở",
+          "meaning": "vui mừng hiện rõ trên nét mặt."
         }
       ],
-      "section": "tv2-t1-b24-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -128,42 +132,40 @@
       "goTo": "Mang đồ về bờ suối đất sét cho Hải Ly Cần",
       "kind": "speak",
       "target": "hai-ly-can",
-      "prompt": "Đất phải ngấm nước một lúc mới mềm. Hải Ly Cần ngồi đếm trên móng vuốt, đếm mãi mới ra hai trò chơi. Kể tên các trò chơi em biết.",
+      "prompt": "Đất phải ngấm nước một lúc mới mềm. Hải Ly Cần ngồi đếm trên móng vuốt rồi quay sang hỏi {name}: ở trường và ở nhà, cậu hay chơi những trò gì cùng bạn? Kể vài trò cho Hải Ly nghe nhé.",
       "hints": [
-        "Ở trường, giờ ra chơi em hay chơi trò gì?",
-        "Có trò nào phải nắm tay hay nối đuôi nhau không?",
-        "Trò nào chơi trên các ô kẻ dưới đất?"
+        "Giờ ra chơi, cậu và các bạn hay chơi trò gì?",
+        "Có trò nào phải nắm tay nhau hay chạy nối đuôi không?",
+        "Trò nào chơi trên nền đất, cần vạch ô hay nhặt sỏi?"
       ],
       "pictureRefs": [
         {
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "sân trại hè có cổng ghi “TRẠI HÈ 2020 TRÒ CHƠI DÂN GIAN”, lều xanh, dây cờ; các nhóm bạn nhỏ đang chơi: một nhóm nối đuôi nhau thành hàng, một nhóm cùng thầy giáo chơi ở giữa sân, một nhóm ngồi quanh các ô kẻ trên mặt đất"
+            "caption": "sân trường nắng đẹp có cây phượng, một nhóm bạn nhảy dây, một nhóm đá cầu, một nhóm ngồi xổm chơi ô ăn quan trên nền đất"
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b24-doc-kd"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "doc-bai-tho",
       "title": "Bài thơ trên phiến đá rêu",
-      "goTo": "Ra phiến đá rêu, nơi Hải Ly chép bài thơ Nặn đồ chơi",
+      "goTo": "Ra phiến đá rêu, nơi Hải Ly chép bài thơ Bé nhào đất",
       "kind": "read",
       "target": "tv2-t13-phien-da-reu",
-      "textRef": "nan-do-choi",
+      "textRef": "be-nhao-dat",
       "audio": true,
-      "question": "Hải Ly Cần hỏi nhỏ, sợ làm Mèo Bùn thức giấc: bạn nhỏ trong bài ngồi nặn đồ chơi ở đâu?",
+      "question": "Hải Ly Cần hỏi nhỏ, sợ làm Mèo Bùn thức giấc: bạn nhỏ trong bài ngồi nhào đất ở đâu?",
       "choices": [
         {
           "id": "goc-da",
           "text": "Dưới gốc cây đa đầu làng"
         },
         {
-          "id": "ben-them",
-          "text": "Bên thềm gió mát"
+          "id": "ben-hien",
+          "text": "Bên hiên nhà, lúc nắng sớm"
         },
         {
           "id": "trong-bep",
@@ -172,31 +174,32 @@
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "ben-them"
+        "choice": "ben-hien"
       },
       "support": {
         "guide": [
-          "Đọc dòng thơ đầu tiên.",
-          "Dòng ấy nói bé ngồi ở chỗ có gió."
+          "Đọc hai dòng đầu của bài thơ.",
+          "Dòng ấy cho biết bé ngồi ở chỗ nào, vào lúc nào."
         ],
-        "hint": "Chỗ ấy ở ngay trước cửa nhà.",
+        "hint": "Chỗ ấy nằm ngay trước cửa nhà, nơi nắng sớm chiếu tới.",
         "answer": {
-          "text": "Bé ngồi bên thềm, chỗ có gió mát.",
-          "explanation": "Hai dòng đầu bài thơ kể: bên thềm gió mát, bé ngồi nặn đồ chơi."
+          "text": "Bé ngồi ngoài hiên khi trời mới sáng.",
+          "explanation": "Hai dòng đầu kể: sáng nay bên hiên, bé ngồi nhào đất."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, bên thềm gió mát! Hải Ly cũng muốn ngồi đó nặn cho mát.",
-          "Chuẩn! Ngay dòng đầu đã kể chỗ bé ngồi rồi.",
-          "Mèo Bùn mở hé một mắt, gật đầu, rồi lại ngủ tiếp."
+          "Đúng rồi, bên hiên nhà! Hải Ly cũng muốn ngồi đó nhào đất cho ấm.",
+          "Chuẩn! Ngay dòng thơ đầu đã kể chỗ bé ngồi rồi.",
+          "Mèo Bùn hé một mắt, gật đầu rồi lại ngủ tiếp."
         ],
         "wrong": [
-          "Trong bài không có cây đa nào đâu, đọc lại dòng thơ đầu nhé.",
-          "Bếp thì nóng lắm, bé ngồi chỗ có gió cơ.",
+          "Trong bài chẳng có cây đa nào đâu, đọc lại dòng thơ đầu nhé.",
+          "Bếp thì nóng lắm, bé ngồi chỗ có nắng sớm cơ.",
           "Thử đọc to hai dòng đầu bài thơ xem bé ngồi ở đâu."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "do-be-da-nan",
@@ -205,7 +208,7 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "hai-ly-can",
-      "prompt": "Hải Ly Cần bày ra một mẹt đồ nặn: có món bé trong bài nặn, có món Hải Ly nặn thêm cho vui. Kể tên những đồ chơi bé đã nặn.\nKéo mỗi món vào đúng rổ.",
+      "prompt": "Hải Ly Cần bày ra một mẹt đồ nặn: có món bé trong bài đã nặn, có món Hải Ly nặn thêm cho vui. Kéo mỗi món vào đúng rổ nhé.",
       "groups": [
         {
           "id": "be-nan",
@@ -218,67 +221,65 @@
       ],
       "items": [
         {
-          "id": "ca-rot",
-          "label": "củ cà rốt"
+          "id": "cay-cau",
+          "label": "cây cầu nhỏ"
         },
         {
-          "id": "qua-thi",
-          "label": "quả thị"
+          "id": "chiec-bat",
+          "label": "chiếc bát"
         },
         {
-          "id": "chiec-la",
-          "label": "chiếc lá"
+          "id": "con-ca",
+          "label": "con cá"
         },
         {
-          "id": "chiec-coi",
-          "label": "chiếc cối"
+          "id": "qua-dua",
+          "label": "quả dừa"
         },
         {
-          "id": "qua-na",
-          "label": "quả na"
+          "id": "chu-voi",
+          "label": "chú voi"
         },
         {
-          "id": "thang-chuot",
-          "label": "thằng chuột"
+          "id": "con-chim",
+          "label": "con chim"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "qua-thi": "be-nan",
-          "qua-na": "be-nan",
-          "chiec-coi": "be-nan",
-          "thang-chuot": "be-nan",
-          "ca-rot": "hai-ly-nan",
-          "chiec-la": "hai-ly-nan"
+          "chiec-bat": "be-nan",
+          "con-ca": "be-nan",
+          "chu-voi": "be-nan",
+          "con-chim": "be-nan",
+          "cay-cau": "hai-ly-nan",
+          "qua-dua": "hai-ly-nan"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b24-doc-1"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ thứ hai, thứ ba và thứ tư.",
-          "Mỗi khổ có chữ \"Đây là…\" giới thiệu một món đồ."
+          "Đọc lần lượt từng khổ thơ, gạch chân những thứ bé nặn.",
+          "Món nào không có trong bài thì là của Hải Ly."
         ],
-        "hint": "Bé nặn bốn món: hai loại quả, một đồ dùng của bà, một con vật cho mèo.",
+        "hint": "Bé nặn bốn món: một đồ đựng cơm, hai con vật trong khổ ba và một con vật to ở khổ cuối.",
         "answer": {
-          "text": "Bé nặn quả thị, quả na, chiếc cối, thằng chuột; cà rốt và chiếc lá là Hải Ly nặn thêm.",
-          "explanation": "Bài thơ kể lần lượt: quả thị, quả na phần mẹ phần cha, chiếc cối biếu bà, thằng chuột tặng chú mèo."
+          "text": "Bé nặn chiếc bát, con cá, con chim, chú voi; cây cầu nhỏ và quả dừa là của Hải Ly.",
+          "explanation": "Bài thơ kể bé nặn chiếc bát cho bố mẹ, cá và chim cho ông bà, chú voi cho bạn thân; cây cầu và quả dừa không có trong bài."
         }
       },
       "feedback": {
         "right": [
           "Đủ cả bốn món của bé! Hải Ly vỗ đuôi xuống nước bõm một cái.",
-          "Xếp chuẩn! Cà rốt với chiếc lá đúng là tác phẩm riêng của Hải Ly.",
-          "{name} đọc thơ kĩ hơn cả cô giáo rừng đấy."
+          "Xếp chuẩn! Cây cầu với quả dừa đúng là tác phẩm riêng của Hải Ly.",
+          "{name} đọc thơ kĩ hơn cả cô giáo của rừng đấy."
         ],
         "wrong": [
-          "Bài thơ có nhắc tới cà rốt đâu nhỉ? Đọc lại các khổ có chữ \"Đây là\".",
+          "Bài thơ có nhắc tới quả dừa đâu nhỉ? Đọc lại các khổ nói về món quà.",
           "Còn một món của bé đang nằm nhầm rổ, tìm lại xem.",
-          "Chiếc cối nhỏ bé nặn để biếu bà đấy, đừng bỏ sót nhé."
+          "Chú voi bé xíu ở khổ cuối là bé nặn đấy, đừng bỏ sót nhé."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tang-cho-ai",
@@ -287,19 +288,15 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t13-phien-da-reu",
-      "prompt": "Mèo Bùn vươn vai tỉnh dậy, hỏi đúng một câu rồi ngồi chờ: Bé nặn đồ chơi để tặng cho những ai?",
+      "prompt": "Mèo Bùn vươn vai tỉnh dậy, hỏi đúng một câu rồi ngồi chờ: bé trong bài nặn quà để tặng cho những ai?",
       "choices": [
         {
-          "id": "me",
-          "text": "mẹ"
+          "id": "bo-me",
+          "text": "bố mẹ"
         },
         {
           "id": "ong",
           "text": "ông"
-        },
-        {
-          "id": "cha",
-          "text": "cha"
         },
         {
           "id": "co-giao",
@@ -310,45 +307,47 @@
           "text": "bà"
         },
         {
-          "id": "chu-meo",
-          "text": "chú mèo"
+          "id": "chu-bao-ve",
+          "text": "chú bảo vệ"
+        },
+        {
+          "id": "ban-than",
+          "text": "bạn thân"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
-          "me",
-          "cha",
+          "bo-me",
+          "ong",
           "ba",
-          "chu-meo"
+          "ban-than"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b24-doc-2"
-      ],
       "support": {
         "guide": [
-          "Tìm các chữ \"phần\", \"biếu\", \"tặng\" trong bài thơ.",
-          "Mỗi món quà có một người nhận."
+          "Tìm các chữ “dành cho”, “tặng” trong bài thơ.",
+          "Mỗi món quà có một hoặc hai người nhận."
         ],
-        "hint": "Có bốn người nhận quà, một trong số đó có râu và hay kêu meo meo.",
+        "hint": "Có bốn nhóm người nhận quà: hai người dọn cơm, hai người râu bạc và một người bạn.",
         "answer": {
-          "text": "Bé tặng mẹ, cha, bà và chú mèo.",
-          "explanation": "Quả phần mẹ, quả phần cha, chiếc cối biếu bà, còn thằng chuột tặng riêng chú mèo."
+          "text": "Bé tặng bố mẹ, ông, bà và bạn thân.",
+          "explanation": "Chiếc bát dành cho bố mẹ, cá và chim nặn tặng ông bà, chú voi dành cho bạn thân."
         }
       },
       "feedback": {
         "right": [
-          "Đủ bốn người nhận quà! Mèo Bùn kêu \"meo\" một tiếng, nghe rất hài lòng.",
+          "Đủ người nhận quà! Mèo Bùn kêu “meo” một tiếng, nghe rất hài lòng.",
           "Chọn chuẩn không thừa một ai, giỏi quá {name}!",
           "Hải Ly ghi ngay vào sổ: bé trong bài chu đáo ghê."
         ],
         "wrong": [
-          "Ông và cô giáo không có trong bài thơ này đâu.",
-          "Còn sót một người nhận quà có râu dài đấy!",
-          "Đọc lại khổ có chiếc cối nhỏ xem bé biếu ai nhé."
+          "Cô giáo và chú bảo vệ không có trong bài thơ này đâu.",
+          "Còn sót một người nhận quà đấy, đọc lại khổ cuối xem.",
+          "Đọc lại khổ có cá, gà, thỏ, chim xem bé nặn tặng ai nhé."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tam-long-cua-be",
@@ -357,51 +356,49 @@
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t13-b24-bac-tho-gom-hai",
-      "prompt": "Hải Ly Cần ngẫm nghĩ, tay vẫn nhào đất: tớ cũng muốn nặn quà như bé. Việc bé nặn đồ chơi tặng mọi người thể hiện điều gì?",
+      "prompt": "Hải Ly Cần ngẫm nghĩ, tay vẫn nhào đất: tớ cũng muốn nặn quà như bé. Qua chuyện bé nặn quà tặng nhiều người, ta thấy bé là người thế nào?",
       "choices": [
         {
           "id": "khoe-gioi",
-          "text": "Bé muốn khoe mình nặn giỏi nhất nhà."
+          "text": "Bé thích giữ đồ nặn cho riêng mình, không cho ai xem."
         },
         {
           "id": "yeu-thuong",
-          "text": "Bé yêu thương, quan tâm tới mọi người trong nhà."
+          "text": "Bé biết nghĩ cho người khác và muốn làm mọi người vui."
         },
         {
           "id": "bot-do-choi",
-          "text": "Bé muốn cho bớt đồ chơi cho đỡ chật nhà."
+          "text": "Bé nhào đất chỉ để nghịch cho lem nhem tay."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "yeu-thuong"
       },
-      "curriculumRef": [
-        "tv2-t1-b24-doc-3"
-      ],
       "support": {
         "guide": [
-          "Bé nặn quà cho ai?",
-          "Bé có giữ món nào cho riêng mình không?"
+          "Bé nặn mỗi món quà cho ai?",
+          "Bé có giữ món nào lại cho mình không?"
         ],
-        "hint": "Món nào bé cũng nghĩ tới người nhận trước.",
+        "hint": "Bé nghĩ tới người nhận trước rồi mới chọn nặn món gì.",
         "answer": {
-          "text": "Việc ấy cho thấy bé yêu thương và luôn nghĩ tới mọi người.",
-          "explanation": "Bé nặn món nào cũng dành tặng người khác: cha, mẹ, bà và cả chú mèo, nên bé là người biết yêu thương."
+          "text": "Bé quan tâm tới những người xung quanh và thích làm họ vui.",
+          "explanation": "Món nào bé nặn cũng dành tặng người thân hay bạn bè, nên bé là người có lòng yêu thương."
         }
       },
       "feedback": {
         "right": [
           "Đúng vậy, mỗi món quà là một tấm lòng nhỏ xíu mà ấm áp.",
           "Hải Ly gật gù: thế thì tớ cũng nặn quà cho cả nhà hải ly!",
-          "Hay quá, {name} hiểu được điều bài thơ muốn nói."
+          "Hay quá, {name} hiểu được điều bài thơ muốn gửi gắm."
         ],
         "wrong": [
-          "Bé có khoe khoang gì đâu, bé chỉ nghĩ tới người nhận thôi.",
-          "Đồ chơi mới nặn xong, đâu phải đồ cũ đem cho bớt.",
-          "Thử nghĩ xem: tặng quà cho ai là nghĩ tới người ấy đấy."
+          "Bé đâu có giấu đồ nặn, bé mang đi tặng hết cơ mà.",
+          "Bé nặn rất chăm chút, đâu phải chỉ nghịch cho vui tay.",
+          "Thử nghĩ xem: nặn quà để tặng là nghĩ tới ai nào?"
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "em-thich-nan-gi",
@@ -409,40 +406,38 @@
       "title": "Em muốn nặn món gì",
       "kind": "speak",
       "target": "hai-ly-can",
-      "prompt": "Hải Ly Cần dúi vào tay {name} một nắm đất sét đã mềm, còn ấm nắng: Em thích nặn đồ chơi gì? Để tặng cho ai?",
+      "prompt": "Hải Ly Cần dúi vào tay {name} một nắm đất sét đã mềm, còn ấm nắng: nếu được nặn một món, cậu sẽ nặn gì, và định tặng cho ai? Kể cho Hải Ly nghe nhé.",
       "hints": [
-        "Em muốn nặn con vật, đồ vật hay loại quả nào?",
-        "Em sẽ nặn nó màu gì, to hay nhỏ?",
-        "Em tặng nó cho ai, vì sao?"
+        "Cậu muốn nặn con vật, đồ vật hay loại quả nào?",
+        "Món ấy màu gì, to hay nhỏ?",
+        "Cậu tặng cho ai, và vì sao lại chọn người đó?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b24-doc-4"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "meo-thich-chi",
-      "goTo": "Mang chú chuột đất ra phiến đá rêu tặng Mèo Bùn",
-      "title": "Chú mèo vui ra sao",
+      "goTo": "Mang chú voi đất ra phiến đá rêu cho Mèo Bùn xem",
+      "title": "Bạn nhận quà vui ra sao",
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t13-phien-da-reu",
-      "prompt": "Hải Ly nặn tặng Mèo Bùn một chú chuột đất, râu Mèo Bùn vểnh lên tận mang tai. Tìm từ ngữ cho biết chú mèo rất vui vì được bé tặng quà.",
-      "template": "Mèo ta {{vui}}\nVểnh râu “meo meo”!",
+      "prompt": "Hải Ly nặn một chú voi đất bé xíu, Mèo Bùn nhìn mãi không rời mắt. Trong khổ thơ cuối, bạn thân nhận quà với dáng vẻ thế nào? Chọn từ điền vào chỗ trống.",
+      "template": "Bạn đưa hai tay\nĐón quà {{vui}}.",
       "blanks": [
         {
           "id": "vui",
           "options": [
             {
-              "id": "tron-xoe",
-              "text": "tròn xoe"
+              "id": "e-de",
+              "text": "e dè"
             },
             {
-              "id": "thich-chi",
-              "text": "thích chí"
+              "id": "hon-ho",
+              "text": "hớn hở"
             },
             {
-              "id": "vay-duoi",
-              "text": "vẫy đuôi"
+              "id": "lo-lang",
+              "text": "lo lắng"
             }
           ]
         }
@@ -450,35 +445,33 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "vui": "thich-chi"
+          "vui": "hon-ho"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b24-doc-lt1"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ có thằng chuột.",
-          "Ô Từ ngữ: thích chí là vui thích vì đúng ý muốn."
+          "Đọc khổ thơ cuối, chỗ bạn đưa hai tay ra.",
+          "Ô Từ ngữ: hớn hở là vui mừng hiện rõ trên nét mặt."
         ],
-        "hint": "Từ ấy nằm ngay trước dòng \"Vểnh râu “meo meo”!\".",
+        "hint": "Bé cũng vui lây, nên bạn nhận quà phải rất vui.",
         "answer": {
-          "text": "Mèo ta thích chí, vểnh râu kêu meo meo.",
-          "explanation": "Được tặng đúng món mình thích, chú mèo thích chí, tức là rất vui vì đúng ý muốn."
+          "text": "Bạn đưa hai tay đón quà thật hớn hở.",
+          "explanation": "Người nhận vui mừng hiện rõ trên mặt nên bé mới vui lây; từ đúng là hớn hở."
         }
       },
       "feedback": {
         "right": [
-          "Thích chí! Mèo Bùn cũng thích chí y như chú mèo trong bài.",
+          "Hớn hở thật! Mèo Bùn cũng hớn hở y như bạn trong bài.",
           "Đúng rồi, chữ ấy có cả trong ô Từ ngữ đấy.",
-          "Hải Ly vỗ tay: râu vểnh, mắt cười, đúng là thích chí!"
+          "Hải Ly vỗ tay: hai tay đưa ra, mắt cười, đúng là hớn hở!"
         ],
         "wrong": [
-          "Tròn xoe là đôi mắt mèo ở khổ đầu, còn lúc nhận quà thì sao?",
-          "Vẫy đuôi là lúc mèo nằm chờ, chưa phải lúc vui vì có quà.",
-          "Tìm từ nghĩa là vui thích vì đúng ý muốn nhé."
+          "E dè là còn ngại ngùng, mà bé thì vui lây cơ.",
+          "Lo lắng làm sao hợp với người đang nhận quà vui vẻ được?",
+          "Tìm từ nghĩa là vui mừng hiện rõ trên nét mặt nhé."
         ]
-      }
+      },
+      "objective": "tu-ngu-tinh-cam-dien-tu"
     },
     {
       "id": "tu-vui-mung",
@@ -487,19 +480,19 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t13-b24-khi-toe",
-      "prompt": "Hải Ly Cần lật sổ sang trang mới, muốn ghi kín một trang toàn những từ vui. Tìm thêm từ ngữ chỉ cảm xúc vui mừng.\nChọn tất cả những từ chỉ cảm xúc vui mừng.",
+      "prompt": "Hải Ly Cần lật sổ sang trang mới, muốn ghi kín một trang toàn những từ vui. Hãy chọn tất cả những từ chỉ cảm xúc vui mừng.",
       "choices": [
         {
-          "id": "hon-ho",
-          "text": "hớn hở"
+          "id": "mung-ro",
+          "text": "mừng rỡ"
         },
         {
           "id": "buon-ba",
           "text": "buồn bã"
         },
         {
-          "id": "mung-ro",
-          "text": "mừng rỡ"
+          "id": "phan-khoi",
+          "text": "phấn khởi"
         },
         {
           "id": "lo-lang",
@@ -514,30 +507,27 @@
           "text": "giận dỗi"
         },
         {
-          "id": "phan-khoi",
-          "text": "phấn khởi"
+          "id": "han-hoan",
+          "text": "hân hoan"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "choices": [
-          "hon-ho",
           "mung-ro",
+          "phan-khoi",
           "vui-suong",
-          "phan-khoi"
+          "han-hoan"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b24-doc-lt2"
-      ],
       "support": {
         "guide": [
           "Đọc từng từ và thử làm nét mặt theo từ đó.",
-          "Từ nào làm em muốn cười?"
+          "Từ nào làm em muốn mỉm cười?"
         ],
         "hint": "Có bốn từ vui; ba từ còn lại làm mặt mình xị xuống.",
         "answer": {
-          "text": "hớn hở, mừng rỡ, vui sướng, phấn khởi",
+          "text": "mừng rỡ, phấn khởi, vui sướng, hân hoan",
           "explanation": "Bốn từ ấy đều chỉ lúc lòng mình vui; buồn bã, lo lắng, giận dỗi là những cảm xúc không vui."
         }
       },
@@ -545,14 +535,15 @@
         "right": [
           "Cả trang sổ cười toe! Hải Ly đọc to từng từ mà vui lây.",
           "Bốn từ vui đủ cả, không lọt một từ buồn nào.",
-          "Hớn hở như {name} lúc này đây!"
+          "Phấn khởi như {name} lúc này đây!"
         ],
         "wrong": [
           "Ối, có một từ buồn lẻn vào trang sổ vui rồi kìa!",
           "Thử làm nét mặt theo từng từ, từ nào làm em mếu thì bỏ ra nhé.",
           "Còn một từ vui chưa được chọn, tìm thêm xem."
         ]
-      }
+      },
+      "objective": "tu-ngu-tinh-cam-tim-tu"
     },
     {
       "id": "da-hay-gia",
@@ -561,58 +552,58 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "hai-ly-can",
-      "prompt": "Đất mềm rồi! Hải Ly nặn mấy tấm thẻ chữ, nhưng vụng tay quệt nhoè mất nửa đầu: da hay gia đây? Ghép da hoặc gia với các tiếng sau để tạo thành từ ngữ đúng. Viết 3 từ ngữ vào vở. (cặp, đình, vị, cầm, dẻ) M: cặp da.\nỞ đây, em ghép cả bốn tiếng còn lại nhé.",
-      "template": "đình → {{dinh}}\nvị → {{vi}}\ncầm → {{cam}}\ndẻ → {{de}}",
+      "prompt": "Đất mềm rồi! Hải Ly nặn mấy tấm thẻ chữ, nhưng vụng tay quệt nhoè mất nửa đầu: da hay gia đây? Chọn từ ghép đúng cho mỗi thẻ.",
+      "template": "súc → {{suc}}\nsư → {{su}}\nbò → {{bo}}\nnhập → {{nhap}}",
       "blanks": [
         {
-          "id": "dinh",
+          "id": "suc",
           "options": [
             {
-              "id": "da-dinh",
-              "text": "da đình"
+              "id": "da-suc",
+              "text": "da súc"
             },
             {
-              "id": "gia-dinh",
-              "text": "gia đình"
+              "id": "gia-suc",
+              "text": "gia súc"
             }
           ]
         },
         {
-          "id": "vi",
+          "id": "su",
           "options": [
             {
-              "id": "gia-vi",
-              "text": "gia vị"
+              "id": "gia-su",
+              "text": "gia sư"
             },
             {
-              "id": "da-vi",
-              "text": "da vị"
+              "id": "da-su",
+              "text": "da sư"
             }
           ]
         },
         {
-          "id": "cam",
+          "id": "bo",
           "options": [
             {
-              "id": "da-cam",
-              "text": "da cầm"
+              "id": "gia-bo",
+              "text": "gia bò"
             },
             {
-              "id": "gia-cam",
-              "text": "gia cầm"
+              "id": "da-bo",
+              "text": "da bò"
             }
           ]
         },
         {
-          "id": "de",
+          "id": "nhap",
           "options": [
             {
-              "id": "gia-de",
-              "text": "gia dẻ"
+              "id": "da-nhap",
+              "text": "da nhập"
             },
             {
-              "id": "da-de",
-              "text": "da dẻ"
+              "id": "gia-nhap",
+              "text": "gia nhập"
             }
           ]
         }
@@ -620,27 +611,21 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "dinh": "gia-dinh",
-          "vi": "gia-vi",
-          "cam": "gia-cam",
-          "de": "da-de"
+          "suc": "gia-suc",
+          "su": "gia-su",
+          "bo": "da-bo",
+          "nhap": "gia-nhap"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b24-chinh-ta-2-a",
-        "tv2-t1-b24-chinh-ta-2-b",
-        "tv2-t1-b24-chinh-ta-2-c",
-        "tv2-t1-b24-chinh-ta-2-d"
-      ],
       "support": {
         "guide": [
           "Đọc to từng từ ghép xem có quen không.",
-          "Gia đình là nhà mình; da dẻ là làn da."
+          "Gia súc là trâu bò lợn nuôi trong nhà; da bò là làn da của con bò."
         ],
-        "hint": "Chỉ có một tiếng đi với \"da\", ba tiếng kia đi với \"gia\".",
+        "hint": "Chỉ có một tiếng đi với “da”, ba tiếng còn lại đi với “gia”.",
         "answer": {
-          "text": "gia đình, gia vị, gia cầm, da dẻ",
-          "explanation": "Gia đình là những người thân trong nhà, gia vị để nêm món ăn, gia cầm là gà vịt; da dẻ là làn da của mình."
+          "text": "gia súc, gia sư, da bò, gia nhập",
+          "explanation": "Gia súc là vật nuôi lớn, gia sư là thầy cô dạy kèm tại nhà, gia nhập là tham gia vào nhóm; da bò là làn da của con bò."
         }
       },
       "feedback": {
@@ -650,23 +635,24 @@
           "{name} ghép giỏi hơn cả Hải Ly ghép gỗ làm cầu."
         ],
         "wrong": [
-          "Nhà có ông bà cha mẹ gọi là gì nhỉ? Đọc to lên thử xem.",
-          "Gà, vịt nuôi trong nhà là gia cầm hay da cầm?",
-          "Làn da của mình là \"da dẻ\" đấy, sửa lại thẻ cuối nhé."
+          "Trâu, bò, lợn nuôi trong nhà gọi là gia súc hay da súc nhỉ?",
+          "Làn da bọc ngoài con bò mới là “da bò”, sửa lại thẻ ấy nhé.",
+          "Người vào một nhóm để cùng làm việc là “gia nhập”, thử đọc to xem."
         ]
-      }
+      },
+      "objective": "chinh-ta-am-dau"
     },
     {
       "id": "tro-choi-dan-gian",
-      "title": "Hai tấm tranh trò chơi dân gian",
+      "title": "Tám câu bị mưa làm nhoè",
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "hai-ly-can",
-      "prompt": "Mèo Bùn đưa ra hai tấm tranh trò chơi dân gian và bốn câu thơ bị mưa làm mất vần. Chọn a hoặc b. a. Chọn s hoặc x thay cho ô vuông.\nKéo cưa lừa ■ẻ · Múa ■ạp\nb. Chọn ươn hoặc ương thay cho ô vuông.\n– Con đ■̀ uốn l■̣ quanh s■̀ núi.\n– Hoa h■́ d■ v■ mình đón ánh mặt trời.\nỞ đây, em làm cả a và b nhé.",
-      "template": "Kéo cưa lừa {{xe}}ẻ\nMúa {{sap}}ạp\nCon {{duong}} uốn {{luon}} quanh {{sun}} núi.\nHoa {{huong}} {{duong2}} {{vuon}} mình đón ánh mặt trời.",
+      "prompt": "Mèo Bùn đưa ra tám câu ngắn bị mưa làm nhoè mất chữ. Hai câu đầu: chọn s hoặc x. Sáu câu sau: chọn từ đúng có vần ươn hoặc ương.",
+      "template": "Bé {{x1}}ếp hình thành ngôi nhà.\nAnh thổi {{s1}}áo kêu vi vu.\nBé tưới rau ngoài {{vuon}} nhỏ.\nHải Ly rất {{thuong}} các bạn.\nNước chảy trong {{muong}} nhỏ.\nĐàn chim {{luon}} trên trời.\nHoa nhài tỏa {{huong}} thơm.\nCon cá có nhiều {{xuong}} nhỏ.",
       "blanks": [
         {
-          "id": "xe",
+          "id": "x1",
           "options": [
             {
               "id": "s",
@@ -679,28 +665,54 @@
           ]
         },
         {
-          "id": "sap",
+          "id": "s1",
           "options": [
-            {
-              "id": "s",
-              "text": "s"
-            },
             {
               "id": "x",
               "text": "x"
+            },
+            {
+              "id": "s",
+              "text": "s"
             }
           ]
         },
         {
-          "id": "duong",
+          "id": "vuon",
           "options": [
             {
-              "id": "duong",
-              "text": "đường"
+              "id": "vuon",
+              "text": "vườn"
             },
             {
-              "id": "duon",
-              "text": "đườn"
+              "id": "vuong",
+              "text": "vường"
+            }
+          ]
+        },
+        {
+          "id": "thuong",
+          "options": [
+            {
+              "id": "thuon",
+              "text": "thươn"
+            },
+            {
+              "id": "thuong",
+              "text": "thương"
+            }
+          ]
+        },
+        {
+          "id": "muong",
+          "options": [
+            {
+              "id": "muong",
+              "text": "mương"
+            },
+            {
+              "id": "muon",
+              "text": "mươn"
             }
           ]
         },
@@ -718,54 +730,28 @@
           ]
         },
         {
-          "id": "sun",
-          "options": [
-            {
-              "id": "sun",
-              "text": "sườn"
-            },
-            {
-              "id": "sung",
-              "text": "sường"
-            }
-          ]
-        },
-        {
           "id": "huong",
           "options": [
             {
-              "id": "hun",
-              "text": "hướn"
+              "id": "huon",
+              "text": "hươn"
             },
             {
               "id": "huong",
-              "text": "hướng"
+              "text": "hương"
             }
           ]
         },
         {
-          "id": "duong2",
+          "id": "xuong",
           "options": [
             {
-              "id": "duong",
-              "text": "dương"
+              "id": "xuong",
+              "text": "xương"
             },
             {
-              "id": "duon",
-              "text": "dươn"
-            }
-          ]
-        },
-        {
-          "id": "vuon",
-          "options": [
-            {
-              "id": "vuon",
-              "text": "vươn"
-            },
-            {
-              "id": "vuong",
-              "text": "vương"
+              "id": "xuon",
+              "text": "xươn"
             }
           ]
         }
@@ -773,45 +759,40 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "xe": "x",
-          "sap": "s",
-          "duong": "duong",
+          "x1": "x",
+          "s1": "s",
+          "vuon": "vuon",
+          "thuong": "thuong",
+          "muong": "muong",
           "luon": "luon",
-          "sun": "sun",
           "huong": "huong",
-          "duong2": "duong",
-          "vuon": "vuon"
+          "xuong": "xuong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b24-chinh-ta-3-a-1",
-        "tv2-t1-b24-chinh-ta-3-a-2",
-        "tv2-t1-b24-chinh-ta-3-b-1",
-        "tv2-t1-b24-chinh-ta-3-b-2"
-      ],
       "support": {
         "guide": [
-          "Đọc to từng tiếng, nghe xem có đúng tiếng mình vẫn nói không.",
-          "Hoa hướng dương luôn quay về phía mặt trời."
+          "Đọc to từng tiếng, nghe xem đã đúng tiếng mình vẫn nói chưa.",
+          "Hoa nhài thơm là có hương; cá có nhiều xương nhỏ."
         ],
-        "hint": "Kéo cưa lừa xẻ và múa sạp là hai trò chơi dân gian.",
+        "hint": "Chỉ cần nhớ nghĩa của từ: nơi trồng rau là vườn, sự yêu mến là thương.",
         "answer": {
-          "text": "xẻ, sạp; đường, lượn, sườn; hướng dương, vươn",
-          "explanation": "Kéo cưa lừa xẻ viết x, múa sạp viết s; con đường uốn lượn quanh sườn núi; hoa hướng dương vươn mình đón nắng."
+          "text": "xếp, sáo; vườn, thương, mương, lượn, hương, xương",
+          "explanation": "Xếp hình viết x, thổi sáo viết s; vườn, thương, mương, lượn, hương, xương là những từ đúng chính tả của sáu câu còn lại."
         }
       },
       "feedback": {
         "right": [
           "Đúng hết rồi! Mèo Bùn hiếm khi cười, mà giờ cười tủm tỉm.",
-          "Câu thơ đủ vần, đọc lên nghe êm như suối chảy.",
-          "Hải Ly đòi chơi kéo cưa lừa xẻ ngay với {name}!"
+          "Tám câu đủ chữ, đọc lên nghe êm như suối chảy.",
+          "Hải Ly đòi thổi sáo cùng {name} ngay bây giờ!"
         ],
         "wrong": [
-          "Múa sạp và kéo cưa lừa xẻ viết hai chữ khác nhau đấy.",
-          "Đọc to \"con đường uốn lượn\" xem tiếng nào có g ở cuối.",
-          "Hoa hướng dương vươn mình đón nắng, thử lại vần của tiếng \"vươn\"."
+          "Xếp hình và thổi sáo viết hai chữ khác nhau đấy, thử lại nhé.",
+          "Đọc to “Hải Ly rất thương các bạn”, tiếng nào có âm “ng” ở cuối?",
+          "Hoa nhài tỏa hương, cá có xương, thử soát lại vần hai từ ấy."
         ]
-      }
+      },
+      "objective": "chinh-ta-van"
     },
     {
       "id": "ta-do-choi-tren-gia",
@@ -820,64 +801,61 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t13-gia-do-choi",
-      "prompt": "Lợn Rừng Đốm làm đổ cả hộp nhãn ghi đặc điểm, mũi hồng đỏ ửng lên vì ngượng. Tìm từ ngữ chỉ đặc điểm của đồ chơi trên giá theo mẫu sau:\nĐồ chơi | Đặc điểm\nquả bóng | màu xanh pha trắng\nKéo mỗi nhãn đặc điểm về đúng đồ chơi.",
+      "prompt": "Lợn Rừng Đốm làm đổ cả hộp nhãn ghi đặc điểm, mũi hồng đỏ ửng lên vì ngượng. Kéo mỗi nhãn đặc điểm về đúng món đồ chơi trên giá nhé.",
       "groups": [
         {
-          "id": "qua-bong",
-          "label": "quả bóng"
+          "id": "o-to",
+          "label": "ô tô"
         },
         {
-          "id": "con-dieu",
-          "label": "con diều"
+          "id": "bup-be",
+          "label": "búp bê"
         },
         {
-          "id": "tho-bong",
-          "label": "thỏ bông"
+          "id": "xuc-xac",
+          "label": "xúc xắc"
         },
         {
-          "id": "den-ong-sao",
-          "label": "đèn ông sao"
+          "id": "chong-chong",
+          "label": "chong chóng"
         }
       ],
       "items": [
         {
-          "id": "mem-mai",
-          "label": "mềm mại"
+          "id": "bon-banh",
+          "label": "có bốn bánh tròn"
         },
         {
-          "id": "xanh-trang",
-          "label": "màu xanh pha trắng"
+          "id": "toc-dai",
+          "label": "tóc dài mượt"
         },
         {
-          "id": "nam-canh",
-          "label": "có năm cánh nhọn"
+          "id": "sau-mat",
+          "label": "có sáu mặt vuông"
         },
         {
-          "id": "duoi-dai",
-          "label": "có đuôi dài"
+          "id": "canh-xoay",
+          "label": "có cánh xoay tít"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "xanh-trang": "qua-bong",
-          "duoi-dai": "con-dieu",
-          "mem-mai": "tho-bong",
-          "nam-canh": "den-ong-sao"
+          "bon-banh": "o-to",
+          "toc-dai": "bup-be",
+          "sau-mat": "xuc-xac",
+          "canh-xoay": "chong-chong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b24-tu-ngu-cau-1"
-      ],
       "support": {
         "guide": [
           "Nhìn từng món đồ chơi trên giá.",
-          "Đồ chơi nào ôm vào thấy êm? Đồ chơi nào bay được?"
+          "Món nào có bánh để lăn? Món nào quay tít khi có gió?"
         ],
-        "hint": "Mẫu của sách đã cho sẵn: quả bóng màu xanh pha trắng.",
+        "hint": "Mỗi món có một nét riêng dễ nhận: bánh, tóc, mặt hay cánh.",
         "answer": {
-          "text": "Bóng xanh pha trắng, diều có đuôi dài, thỏ bông mềm mại, đèn ông sao có năm cánh nhọn.",
-          "explanation": "Mỗi nhãn nêu một đặc điểm dễ thấy của đồ chơi: màu sắc, hình dạng hoặc cảm giác khi chạm vào."
+          "text": "Ô tô có bốn bánh tròn, búp bê tóc dài mượt, xúc xắc có sáu mặt vuông, chong chóng có cánh xoay tít.",
+          "explanation": "Mỗi nhãn nêu một đặc điểm dễ thấy của đồ chơi: hình dạng, bộ phận hoặc cách chuyển động."
         }
       },
       "feedback": {
@@ -887,11 +865,12 @@
           "Đốm hứa tặng {name} cái nhãn đẹp nhất để dán lên cặp."
         ],
         "wrong": [
-          "Thỏ bông ôm vào êm lắm, nhãn nào hợp với nó nhỉ?",
-          "Cái gì bay trên trời mà có đuôi dài thướt tha?",
-          "Đèn ông sao có cánh hình gì? Đếm thử xem."
+          "Búp bê có thứ gì dài và mượt nhỉ? Tìm nhãn hợp với bạn ấy.",
+          "Món nào lăn đi được nhờ có bốn cái bánh?",
+          "Xúc xắc có hình khối gì? Đếm thử số mặt xem."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-tim-tu"
     },
     {
       "id": "dau-phay-do-choi",
@@ -899,8 +878,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t13-gia-do-choi",
-      "prompt": "Đốm viết ba câu khoe đồ chơi, nhưng quên hết dấu phẩy nên đọc một hơi hụt cả thở. Cần đặt dấu phẩy vào vị trí nào trong mỗi câu sau? M: Chú thỏ bông rất mềm mại, dễ thương. a. Em thích đồ chơi ô tô máy bay. b. Bố dạy em làm đèn ông sao diều giấy. c. Các bạn đá bóng đá cầu nhảy dây trên sân trường.\nỞ mỗi ô, chọn dấu phẩy hoặc không dấu.",
-      "template": "a. Em thích{{a1}} đồ chơi ô tô{{a2}} máy bay.\nb. Bố dạy em{{b1}} làm đèn ông sao{{b2}} diều giấy.\nc. Các bạn đá bóng{{c1}} đá cầu{{c2}} nhảy dây{{c3}} trên sân trường.",
+      "prompt": "Đốm viết ba câu khoe đồ đạc, nhưng quên hết dấu phẩy nên đọc một hơi hụt cả thở. Ở mỗi ô, chọn đặt dấu phẩy hoặc không đặt dấu nào nhé.",
+      "template": "a. Em tặng{{a1}} bạn quả cam{{a2}} quả bưởi.\nb. Chiều nay Lan{{b1}} rửa bát{{b2}} lau bàn.\nc. Trên sân trường, các bạn nhảy dây{{c1}} đá cầu{{c2}} chơi cờ{{c3}} thật vui.",
       "blanks": [
         {
           "id": "a1",
@@ -1006,20 +985,15 @@
           "c3": "khong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b24-tu-ngu-cau-2-a",
-        "tv2-t1-b24-tu-ngu-cau-2-b",
-        "tv2-t1-b24-tu-ngu-cau-2-c"
-      ],
       "support": {
         "guide": [
-          "Dấu phẩy ngăn cách các đồ chơi, các trò chơi đứng liền nhau.",
-          "Xem câu mẫu: rất mềm mại, dễ thương."
+          "Dấu phẩy ngăn cách các thứ, các việc đứng liền nhau.",
+          "Đọc to câu, chỗ nào phải nghỉ hơi thì đặt dấu phẩy."
         ],
         "hint": "Câu c có ba trò chơi đứng liền nhau, cần hai dấu phẩy.",
         "answer": {
-          "text": "Ô tô, máy bay; đèn ông sao, diều giấy; đá bóng, đá cầu, nhảy dây.",
-          "explanation": "Khi kể nhiều đồ chơi hay nhiều trò chơi liền nhau, ta đặt dấu phẩy giữa chúng để đọc rõ từng thứ."
+          "text": "quả cam, quả bưởi; rửa bát, lau bàn; nhảy dây, đá cầu, chơi cờ",
+          "explanation": "Khi kể nhiều việc hay nhiều vật liền nhau, ta đặt dấu phẩy giữa chúng để đọc rõ từng thứ."
         }
       },
       "feedback": {
@@ -1030,20 +1004,21 @@
         ],
         "wrong": [
           "Có một dấu phẩy đứng nhầm chỗ, câu đọc lên bị gãy làm đôi rồi.",
-          "Dấu phẩy chỉ đứng giữa hai đồ chơi hoặc hai trò chơi thôi.",
+          "Dấu phẩy chỉ đứng giữa hai thứ hay hai việc liền nhau thôi.",
           "Đếm xem câu c có mấy trò chơi đứng liền nhau nhé."
         ]
-      }
+      },
+      "objective": "dau-cau-dau-phay"
     },
     {
       "id": "qua-sinh-nhat-chi",
-      "goTo": "Ra bụi hồng ven suối, Mèo Nơ đang thắt nơ gói quà sinh nhật",
-      "title": "Những món quà sinh nhật của Chi",
+      "goTo": "Ra bụi hồng ven suối, Mèo Nơ đang thắt nơ gói quà tặng bạn",
+      "title": "Những món quà trong thiếp chúc",
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t13-b24-meo-no",
-      "prompt": "Đốm sắp sang dự sinh nhật bạn Chi, cầm tấm thiệp mà đọc mãi không ra hơi. Cần đặt dấu phẩy vào vị trí nào trong câu in nghiêng? Hôm nay là sinh nhật của Chi. Chi nhận được bao nhiêu là quà: búp bê hộp đựng bút đồng hồ báo thức và chiếc nơ hồng. Chi rất vui và cảm động.",
-      "template": "Chi nhận được bao nhiêu là quà: búp bê{{d1}} hộp đựng bút{{d2}} đồng hồ báo thức{{d3}} và chiếc nơ hồng.",
+      "prompt": "Mèo Nơ gói quà tặng Đốm nhân dịp Đốm tròn tuổi mới, đọc lại thiếp chúc mà lúng túng không biết ngắt nghỉ chỗ nào. Hãy chọn nơi cần đặt dấu phẩy trong câu liệt kê các món quà.",
+      "template": "Mèo Nơ gói tặng Đốm: mũ len{{d1}} găng tay{{d2}} khăn quàng{{d3}} và đôi tất ấm.",
       "blanks": [
         {
           "id": "d1",
@@ -1093,32 +1068,30 @@
           "d3": "khong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b24-tu-ngu-cau-3"
-      ],
       "support": {
         "guide": [
-          "Đếm xem Chi nhận được mấy món quà.",
-          "Trước chữ \"và\" thì không cần dấu phẩy nữa."
+          "Đếm xem Mèo Nơ gói bao nhiêu món quà.",
+          "Trước chữ “và” thì không cần dấu phẩy nữa."
         ],
         "hint": "Có bốn món quà, nhưng chỉ cần hai dấu phẩy.",
         "answer": {
-          "text": "Chi nhận được bao nhiêu là quà: búp bê, hộp đựng bút, đồng hồ báo thức và chiếc nơ hồng.",
-          "explanation": "Dấu phẩy ngăn cách các món quà; món cuối đã có chữ \"và\" nối vào nên không đặt dấu phẩy."
+          "text": "Mèo Nơ gói tặng Đốm: mũ len, găng tay, khăn quàng và đôi tất ấm.",
+          "explanation": "Dấu phẩy ngăn cách các món quà; món cuối đã có chữ “và” nối vào nên không đặt thêm dấu phẩy."
         }
       },
       "feedback": {
         "right": [
-          "Thiệp đọc trơn tru rồi! Đốm hét to: chúc mừng sinh nhật Chi!",
-          "Đúng hết! Chữ \"và\" đã nối món cuối rồi nên không cần phẩy.",
-          "Bốn món quà rõ ràng từng món, Chi đọc chắc vui lắm."
+          "Thiếp chúc đọc trơn tru rồi! Đốm hét to: cảm ơn Mèo Nơ nhé!",
+          "Đúng hết! Chữ “và” đã nối món cuối rồi nên không cần phẩy.",
+          "Bốn món quà rõ ràng từng món, Đốm đọc chắc vui lắm."
         ],
         "wrong": [
-          "Trước chữ \"và\" thì mình không đặt dấu phẩy đâu.",
-          "Búp bê với hộp đựng bút là hai món khác nhau, cần ngăn cách chứ.",
+          "Trước chữ “và” thì mình không đặt dấu phẩy đâu.",
+          "Mũ len với găng tay là hai món khác nhau, cần ngăn cách chứ.",
           "Đếm lại số món quà rồi đặt dấu phẩy giữa chúng nhé."
         ]
-      }
+      },
+      "objective": "dau-cau-dau-phay"
     },
     {
       "id": "chia-qua-dat-set",
@@ -1188,15 +1161,13 @@
       "title": "Đồ chơi em thích nhất",
       "kind": "speak",
       "target": "hai-ly-can",
-      "prompt": "Hải Ly Cần chống cằm hỏi {name}, mắt sáng long lanh: Kể tên những đồ chơi của em. Em thích đồ chơi nào nhất? Vì sao?",
+      "prompt": "Hải Ly Cần chống cằm hỏi {name}, mắt sáng long lanh: nếu phải chọn một món đồ chơi để kể thật kĩ, cậu chọn món nào? Món ấy trông ra sao, cậu chơi nó thế nào?",
       "hints": [
-        "Em có những đồ chơi nào ở nhà?",
-        "Đồ chơi em thích nhất trông thế nào?",
-        "Em chơi nó với ai, vì sao lại thích?"
+        "Món đồ chơi ấy tên là gì, làm từ chất liệu gì?",
+        "Hình dáng và màu sắc của nó ra sao?",
+        "Cậu chơi nó với ai, vì sao cậu thích?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b24-viet-doan-1"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "doc-mo-rong",
@@ -1204,29 +1175,52 @@
       "title": "Bài đồng dao về trò chơi",
       "kind": "speak",
       "target": "tv2-t13-b24-ca-chep-kim",
-      "prompt": "Chiều xuống, cả bọn ngồi bên suối đọc đồng dao, Đốm hát sai lời mà vẫn to nhất. Tìm đọc một bài thơ hoặc một bài đồng dao về một đồ chơi, trò chơi.\nNói với bạn: – Tên của đồ chơi, trò chơi – Cách chơi đồ chơi, trò chơi đó",
+      "prompt": "Chiều xuống, cả bọn ngồi bên suối đọc đồng dao, Đốm hát sai lời mà vẫn to nhất. Cá Chép Kim ngoi lên đòi nghe: cậu đọc hoặc hát một bài thơ, bài đồng dao về trò chơi mà cậu thuộc, rồi nói bài ấy là trò gì và chơi ra sao nhé.",
       "hints": [
-        "Bài em tìm được tên là gì?",
+        "Bài thơ hay đồng dao cậu chọn tên là gì?",
         "Bài ấy nói về đồ chơi hay trò chơi nào?",
-        "Muốn chơi trò đó thì làm thế nào?"
+        "Muốn chơi trò đó thì phải làm những gì?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b24-doc-mo-rong-1",
-        "tv2-t1-b24-doc-mo-rong-2"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "phieu-viet-bai-24",
-      "title": "Phiếu viết bài 24",
+      "title": "Phiếu viết tả đồ chơi",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b24",
-      "text": "Nhờ bố mẹ in phiếu Bài 24 ở khu phụ huynh: nghe – viết ba khổ thơ đầu bài Nặn đồ chơi và viết vài câu tả một đồ chơi của em. Hải Ly bảo nét chữ cũng phải nặn cho tròn trịa!",
-      "curriculumRef": [
-        "tv2-t1-b24-nghe-viet-1",
-        "tv2-t1-b24-viet-doan-1",
-        "tv2-t1-b24-viet-doan-2"
-      ]
+      "text": "Nhờ người thân in phiếu viết ở khu phụ huynh: nghe – viết khổ thơ đầu bài Bé nhào đất và viết vài câu tả một món đồ chơi của em. Hải Ly bảo nét chữ cũng phải nặn cho tròn trịa!",
+      "objective": "viet-doan-van",
+      "sheet": {
+        "title": "Phiếu viết: tả một món đồ chơi",
+        "blocks": [
+          {
+            "kind": "dictation",
+            "prompt": "Nghe – viết khổ thơ sau",
+            "title": "Bé nhào đất",
+            "text": "Sáng nay bên hiên\nBé ngồi nhào đất\nGà con lạch bạch\nChạy lại ngó xem\nMắt sáng long lanh."
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Viết 3 – 4 câu tả một món đồ chơi của em.",
+            "hints": [
+              "Món đồ chơi ấy tên là gì?",
+              "Nó to hay nhỏ, màu gì, làm bằng gì?",
+              "Em chơi nó như thế nào?"
+            ],
+            "lines": 7
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Viết 2 – 3 câu về một món quà tự tay em muốn làm để tặng người thân.",
+            "hints": [
+              "Em định làm món gì?",
+              "Em tặng cho ai?",
+              "Người ấy sẽ vui thế nào?"
+            ],
+            "lines": 6
+          }
+        ]
+      }
     },
     {
       "id": "qua-cua-hai-ly",

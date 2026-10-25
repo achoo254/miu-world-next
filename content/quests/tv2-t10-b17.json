@@ -4,18 +4,17 @@
   "chapter": 2,
   "title": "Tiếng gọi trên đồng cỏ khô",
   "status": "active",
-  "lesson": "tv2-t1-b17",
   "topic": "doc-tho",
-  "summary": "Đồng cỏ khô giòn như bánh đa, Thỏ Lúa đi hái cỏ non rồi quên béng đường về. {name} cùng Nai Nhung nhút nhát đọc bài thơ Gọi bạn, lần theo dấu chân tí xíu, gặp Bê Xôi ở bụi cỏ may và kể chuyện bê vàng, dê trắng thật to để gọi Thỏ Lúa trở về.",
+  "summary": "Đồng cỏ khô giòn như bánh đa, Thỏ Lúa đi hái cỏ non rồi quên béng đường về. {name} cùng Nai Nhung nhút nhát đọc bài thơ Tiếng vọng bên suối, lần theo dấu chân tí xíu, gặp Bê Xôi ở bụi cỏ may và kể chuyện đôi bạn nai vàng, sóc nâu thật to để gọi Thỏ Lúa trở về.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Nai Nhung (cô nai hiền khô, nhút nhát, gọi bạn đến khản cả giọng), Thỏ Lúa (hái cỏ non rồi quên đường về), Bê Xôi (cô bê con ở bụi cỏ may, thuộc thơ), Vẹt Xanh (lắm lời)",
     "where": "Đồng cỏ khô hạn ở rìa Khu rừng bí mật, tấm bảng gỗ khắc bài thơ, bụi cỏ may, cành keo khô, vách đá có tranh bên suối cạn và đồi cỏ non",
     "goal": "Tìm và gọi Thỏ Lúa trở về với Nai Nhung",
     "play": "Lần dấu chân, nói, đọc thơ, chọn nhiều đáp án, điền từ, xếp dòng thơ, xếp tranh, kể chuyện, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 17: đọc hiểu và học thuộc bài thơ \"Gọi bạn\", nói lời an ủi, kể chuyện theo tranh, viết chữ hoa H",
+    "learn": "Đọc hiểu và học thuộc bài thơ \"Tiếng vọng bên suối\" (tự viết), tìm từ nói tâm trạng, nói lời an ủi, kể chuyện theo tranh, viết chữ hoa H",
     "reward": "85 XP, 15 xu, Đọc hiểu +2, Kể chuyện +2, Từ ngữ +1",
-    "next": "Bài 18 \"Tớ nhớ cậu\""
+    "next": "Lá thư bên bến hồ gửi Gấu Tuyết Bông"
   },
   "phases": {
     "hook": "gap-bo-sua-mo",
@@ -29,24 +28,25 @@
   },
   "texts": {
     "goi-ban": {
-      "title": "Gọi bạn",
-      "author": "Định Hải",
-      "body": "Tự xa xưa thuở nào\nTrong rừng xanh sâu thẳm\nĐôi bạn sống bên nhau\nBê vàng và dê trắng.\n\nMột năm, trời hạn hán\nSuối cạn, cỏ héo khô\nLấy gì nuôi đôi bạn\nChờ mưa đến bao giờ?\n\nBê vàng đi tìm cỏ\nLang thang quên đường về\nDê trắng thương bạn quá\nChạy khắp nẻo tìm bê\nĐến bây giờ dê trắng\nVẫn gọi hoài: “Bê! Bê!”.",
+      "title": "Tiếng vọng bên suối",
+      "body": "Ngày xưa trong rừng thẳm\nNai vàng và sóc nâu\nSống bên dòng suối nhỏ\nChơi với nhau từ lâu.\n\nRồi mùa khô kéo đến\nNắng rát cả đường mòn\nHạt dẻ rơi thưa thớt\nSóc phải đi tìm xa.\n\nSóc mải tìm hạt dẻ\nChiều xuống, lạc mất đường\nGió lạnh luồn qua lá\nSóc nép bên tảng đá.\n\nNai nghe lòng sốt ruột\nChạy dọc khắp bờ xa\nGọi: “Sóc ơi, về nhé!”\nTiếng vang mãi đến giờ.",
       "glossary": [
         {
-          "term": "Sâu thẳm",
-          "meaning": "rất sâu."
+          "term": "Đường mòn",
+          "meaning": "lối nhỏ do người và muông thú đi lại nhiều lần mà thành."
         },
         {
-          "term": "Hạn hán",
-          "meaning": "tình trạng thiếu nước do nắng lâu, không mưa gây ra."
+          "term": "Thưa thớt",
+          "meaning": "ít và cách xa nhau, không dày."
         },
         {
-          "term": "Lang thang",
-          "meaning": "đi hết chỗ này đến chỗ khác, không dừng lại ở nơi nào."
+          "term": "Sốt ruột",
+          "meaning": "nóng lòng, lo lắng, không chờ yên được."
         }
       ],
-      "section": "tv2-t1-b17-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -123,15 +123,13 @@
       "goTo": "Quay về đồng cỏ khô, Nai Nhung đang đứng chờ",
       "kind": "speak",
       "target": "tv2-t10-b17-nai-nhung",
-      "prompt": "Nai Nhung nhấm nháp một cọng cỏ khô, rụt rè kể: Thỏ Lúa là bạn thân nhất của tớ, nhảy một cái cao hơn cả hàng rào! Đến lượt cậu nhé. Nói về một người bạn của em.",
+      "prompt": "Nai Nhung nhấm nháp một cọng cỏ khô, rụt rè kể: Thỏ Lúa là bạn thân nhất của tớ, nhảy một cái cao hơn cả hàng rào! Đến lượt cậu kể tớ nghe về một người bạn mà cậu quý nhé.",
       "hints": [
-        "Bạn ấy tên là gì? Ngồi cùng bàn hay ở gần nhà em?",
-        "Hai bạn hay rủ nhau chơi trò gì nhất?",
-        "Điều gì ở bạn ấy làm em quý ơi là quý?"
+        "Bạn ấy tên gì, hai cậu quen nhau ở đâu?",
+        "Hai bạn thường rủ nhau làm gì cùng nhau?",
+        "Cậu quý nhất điều gì ở bạn ấy?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b17-doc-kd"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "doc-bai-tho",
@@ -141,51 +139,49 @@
       "target": "tv2-t10-bang-go-goi-ban",
       "textRef": "goi-ban",
       "audio": true,
-      "question": "Câu chuyện được kể trong bài thơ diễn ra khi nào? Ở đâu?",
+      "question": "Câu chuyện trong bài thơ xảy ra vào lúc nào, ở nơi nào?",
       "choices": [
         {
-          "id": "mua-he-nam-ngoai",
-          "text": "Mới mùa hè năm ngoái, trên đồng cỏ cạnh làng."
+          "id": "hom-qua-doi-lang",
+          "text": "Mới hôm qua, trên triền đồi sau làng."
         },
         {
-          "id": "xa-xua-rung-xanh",
-          "text": "Tự xa xưa thuở nào, trong rừng xanh sâu thẳm."
+          "id": "ngay-xua-rung-tham",
+          "text": "Ngày xưa, trong khu rừng thẳm."
         },
         {
-          "id": "dem-trang-bo-bien",
-          "text": "Vào một đêm trăng, bên bờ biển xanh."
+          "id": "sang-xuan-canh-dong",
+          "text": "Một sớm mùa xuân, giữa cánh đồng lúa."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "xa-xua-rung-xanh"
+        "choice": "ngay-xua-rung-tham"
       },
-      "curriculumRef": [
-        "tv2-t1-b17-doc-1"
-      ],
       "support": {
         "guide": [
           "Đọc lại khổ thơ đầu tiên.",
-          "Tìm dòng thơ nói về thời gian và dòng thơ nói về nơi đôi bạn sống."
+          "Tìm dòng nói về thời gian và dòng nói về nơi hai bạn sống."
         ],
-        "hint": "Hai dòng đầu bài thơ trả lời cả \"khi nào\" lẫn \"ở đâu\".",
+        "hint": "Hai dòng mở đầu bài thơ cho biết cả thời gian lẫn nơi chốn.",
         "answer": {
-          "text": "Tự xa xưa thuở nào, trong rừng xanh sâu thẳm.",
-          "explanation": "Khổ thơ đầu kể: tự xa xưa thuở nào, trong rừng xanh sâu thẳm, bê vàng và dê trắng sống bên nhau."
+          "text": "Từ ngày xưa, ở một khu rừng sâu thẳm.",
+          "explanation": "Khổ đầu mở chuyện bằng \"ngày xưa\" và \"rừng thẳm\": nai vàng, sóc nâu sống cạnh dòng suối nhỏ từ rất lâu rồi."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi! Chuyện có từ xa xưa lắm, xưa hơn cả cụ nai già nhất đồng cỏ.",
-          "Vẹt Xanh vỗ cánh phành phạch: rừng xanh sâu thẳm, sâu thẳm! Chuẩn chuẩn!",
-          "Nai Nhung vẫy cái đuôi ngắn tũn lia lịa: {name} đọc thơ hay ghê!"
+          "Đúng rồi! Chuyện bắt đầu từ ngày xưa, ở một khu rừng thẳm.",
+          "Vẹt Xanh vỗ cánh phành phạch: rừng thẳm, rừng thẳm! Cậu đọc trúng ngay!",
+          "Nai Nhung khẽ gật đầu: {name} nhớ đúng nơi hai bạn từng sống."
         ],
         "wrong": [
-          "Ơ, mùa hè năm ngoái thì gần quá! Dòng thơ đầu tiên nói chuyện xưa lắm cơ.",
-          "Bài thơ chẳng có đêm trăng hay bờ biển nào đâu, tìm chữ “rừng” thử xem.",
-          "Suýt trúng rồi! Hai dòng đầu bài thơ giấu cả khi nào lẫn ở đâu đấy."
+          "Hôm qua và triền đồi thì gần quá, bài thơ kể chuyện xa xưa cơ.",
+          "Trong khổ đầu không có cánh đồng lúa hay mùa xuân nào đâu, đọc lại thử xem.",
+          "Suýt trúng rồi! Hai dòng đầu bài thơ giấu cả thời gian lẫn nơi chốn đấy."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "vi-sao-be-vang-di",
@@ -193,63 +189,61 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t10-bang-go-goi-ban",
-      "prompt": "Nai Nhung nhìn đồng cỏ nứt nẻ, thở dài thườn thượt: y hệt trong bài thơ! Chuyện gì xảy ra khiến bê vàng phải lang thang đi tìm cỏ?",
+      "prompt": "Nai Nhung nhìn đồng cỏ nứt nẻ, thở dài thườn thượt: y hệt trong bài thơ! Chuyện gì xảy ra khiến sóc nâu phải đi xa tìm hạt?",
       "choices": [
         {
-          "id": "han-han",
-          "text": "trời hạn hán"
+          "id": "mua-kho-den",
+          "text": "mùa khô kéo đến"
         },
         {
-          "id": "gian-nhau",
-          "text": "bê vàng giận dê trắng"
+          "id": "nang-rat",
+          "text": "nắng gắt làm đường mòn nóng rát"
         },
         {
-          "id": "suoi-can",
-          "text": "suối cạn"
+          "id": "hat-thua",
+          "text": "hạt dẻ ngày một ít đi"
         },
         {
-          "id": "mua-ngap",
-          "text": "mưa to làm ngập rừng"
+          "id": "soc-gian-nai",
+          "text": "sóc giận nai vàng"
         },
         {
-          "id": "co-heo-kho",
-          "text": "cỏ héo khô"
+          "id": "bao-gay-cay",
+          "text": "bão làm gãy hết cây dẻ"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
-          "han-han",
-          "suoi-can",
-          "co-heo-kho"
+          "mua-kho-den",
+          "nang-rat",
+          "hat-thua"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b17-doc-2"
-      ],
       "support": {
         "guide": [
           "Đọc khổ thơ thứ hai.",
-          "Tìm những điều không may xảy ra với khu rừng trong năm đó."
+          "Tìm những điều khiến sóc không còn đủ hạt ở gần nhà."
         ],
-        "hint": "Có ba điều đúng, đều nằm ở hai dòng đầu của khổ thơ thứ hai.",
+        "hint": "Có ba điều đúng, đều nằm trong khổ thơ thứ hai.",
         "answer": {
-          "text": "Một năm, trời hạn hán, suối cạn, cỏ héo khô.",
-          "explanation": "Trời hạn hán, suối cạn, cỏ héo khô nên bê vàng phải đi tìm cỏ; đôi bạn không hề giận nhau, rừng cũng chẳng có mưa."
+          "text": "Mùa khô tới, nắng rát đường mòn, hạt dẻ ít đi.",
+          "explanation": "Khổ hai kể mùa khô kéo đến, nắng rát, hạt dẻ rơi thưa nên sóc phải đi tìm xa. Hai bạn không giận nhau và trong thơ cũng không có bão."
         }
       },
       "feedback": {
         "right": [
           "Đủ cả ba điều rồi! Nai Nhung gật gù, hai mẩu sừng nhung non lúc lắc.",
-          "Đúng thế, rừng khô khốc nên chẳng còn ngọn cỏ nào cho bê vàng gặm.",
-          "Vẹt Xanh khoe từ mới: “hạn hán”, “hạn hán”! Cậu chọn chuẩn quá!"
+          "Đúng thế, hạt dẻ thưa dần nên sóc nâu mới phải lên đường.",
+          "Chọn chuẩn quá, ba lý do nằm gọn trong khổ thơ thứ hai."
         ],
         "wrong": [
-          "Hình như còn sót một điều, đọc lại hai dòng đầu khổ thơ thứ hai nhé.",
-          "Ơ kìa, trong bài đôi bạn có giận nhau bao giờ đâu nào.",
-          "Năm ấy rừng mong mưa đỏ cả mắt, làm gì có mưa to ngập rừng."
+          "Hình như còn sót hoặc thừa một ý, đọc kỹ khổ thơ thứ hai nhé.",
+          "Trong thơ nai vàng và sóc nâu chơi với nhau thân thiết, nào có giận nhau.",
+          "Khổ hai nhắc tới nắng và hạt dẻ, chứ chẳng có cơn bão nào đâu."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "de-trang-lam-gi",
@@ -258,51 +252,49 @@
       "kind": "read",
       "target": "tv2-t10-b17-be-xoi",
       "textRef": "goi-ban",
-      "question": "Khi bê vàng quên đường về, dê trắng đã làm gì?",
+      "question": "Khi sóc nâu lạc mất đường về, nai vàng đã làm gì?",
       "choices": [
         {
-          "id": "o-nha-cho-mua",
-          "text": "Dê trắng ở nhà chờ mưa đến rồi mới đi tìm bê."
+          "id": "ngoi-doi-ben-suoi",
+          "text": "Nai vàng ngồi yên bên suối, chờ sóc tự tìm về."
         },
         {
-          "id": "tim-co-rieng",
-          "text": "Dê trắng đi tìm bụi cỏ non cho riêng mình."
+          "id": "chay-doc-bo-suoi",
+          "text": "Nai vàng chạy dọc bờ suối và gọi sóc về."
         },
         {
-          "id": "chay-khap-neo",
-          "text": "Dê trắng thương bạn quá, chạy khắp nẻo tìm bê, đến bây giờ vẫn gọi hoài: “Bê! Bê!”."
+          "id": "di-tim-hat-rieng",
+          "text": "Nai vàng đi nhặt hạt dẻ cho riêng mình."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "chay-khap-neo"
+        "choice": "chay-doc-bo-suoi"
       },
-      "curriculumRef": [
-        "tv2-t1-b17-doc-3"
-      ],
       "support": {
         "guide": [
-          "Đọc bốn dòng cuối bài thơ.",
-          "Xem dê trắng làm gì vì thương bạn."
+          "Đọc khổ thơ cuối.",
+          "Xem nai vàng làm gì khi lòng đang sốt ruột."
         ],
-        "hint": "Dê trắng không ngồi yên chờ đâu, bạn ấy chạy đi và gọi mãi.",
+        "hint": "Nai không ngồi chờ đâu, nai chạy đi và cất tiếng gọi.",
         "answer": {
-          "text": "Dê trắng thương bạn quá, chạy khắp nẻo tìm bê, đến bây giờ vẫn gọi hoài: “Bê! Bê!”.",
-          "explanation": "Dê trắng thương bạn nên chạy khắp nơi tìm bê, và đến bây giờ vẫn còn gọi \"Bê! Bê!\"."
+          "text": "Nai chạy khắp bờ suối, gọi: “Sóc ơi, về nhé!”",
+          "explanation": "Nai vàng sốt ruột nên chạy dọc khắp bờ suối, vừa chạy vừa gọi sóc về; tiếng gọi ấy còn vang mãi tới bây giờ."
         }
       },
       "feedback": {
         "right": [
-          "Chính xác! Dê trắng chạy khắp nẻo, chạy mỏi cả bốn cái móng.",
-          "Thương bạn quá nên dê trắng gọi mãi không thôi, Bê Xôi sụt sịt theo.",
-          "{name} tìm trúng bốn dòng thơ cuối rồi, giỏi như thám tử!"
+          "Chính xác! Nai vàng chạy mỏi cả bốn chân mà vẫn không chịu dừng.",
+          "Bê Xôi sụt sịt: nai thương bạn nên chạy khắp bờ suối đấy.",
+          "{name} tìm trúng khổ cuối rồi, giỏi như thám tử rừng xanh!"
         ],
         "wrong": [
-          "Dê trắng không ngồi chờ mưa đâu, bạn ấy sốt ruột lắm cơ.",
-          "Dê trắng đi tìm bê chứ đâu tìm cỏ cho riêng mình.",
-          "Dò lại từ dòng “Dê trắng thương bạn quá” trở xuống xem sao."
+          "Nai vàng sốt ruột lắm, đâu có ngồi yên chờ bạn.",
+          "Nai chạy đi để tìm sóc, đâu phải đi nhặt hạt cho mình.",
+          "Dò lại bốn dòng cuối bài thơ, chỗ nai nghe lòng sốt ruột, xem sao."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tam-trang-de-trang",
@@ -311,23 +303,23 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t10-b17-nai-nhung",
-      "prompt": "Nai Nhung sụt sịt, nước mắt to như hạt đậu: Thỏ Lúa đi lâu quá, tớ thấy mình giống dê trắng ghê. Tìm từ ngữ thể hiện tâm trạng của dê trắng khi không thấy bạn trở về.",
-      "template": "Dê trắng {{tam-trang}}\nChạy khắp nẻo tìm bê",
+      "prompt": "Nai Nhung sụt sịt, nước mắt to như hạt đậu: Thỏ Lúa đi lâu quá, tớ thấy mình giống nai vàng ghê. Chọn từ nói đúng tâm trạng của nai vàng khi chưa thấy bạn quay về.",
+      "template": "Nai vàng {{tam-trang}} vì chưa thấy sóc nâu quay về.",
       "blanks": [
         {
           "id": "tam-trang",
           "options": [
             {
-              "id": "gian-ban-qua",
-              "text": "giận bạn quá"
+              "id": "ho-hung",
+              "text": "hờ hững"
             },
             {
-              "id": "thuong-ban-qua",
-              "text": "thương bạn quá"
+              "id": "sot-ruot",
+              "text": "sốt ruột"
             },
             {
-              "id": "vui-ve-qua",
-              "text": "vui vẻ quá"
+              "id": "hon-ho",
+              "text": "hớn hở"
             }
           ]
         }
@@ -335,35 +327,33 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "tam-trang": "thuong-ban-qua"
+          "tam-trang": "sot-ruot"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b17-doc-lt1"
-      ],
       "support": {
         "guide": [
-          "Tìm dòng thơ có tên dê trắng ở khổ cuối.",
-          "Từ ngữ nào cho biết dê trắng nghĩ về bạn thế nào?"
+          "Nghĩ xem nai chạy khắp nơi và gọi mãi là vì nai lo lắng hay vì nai vui.",
+          "Từ nào có nghĩa là nóng lòng, lo lắng không chờ yên được?"
         ],
-        "hint": "Dê trắng không giận, cũng chẳng vui, mà rất thương bạn.",
+        "hint": "“Sốt ruột” là nóng lòng, lo lắng; “hờ hững” là thờ ơ; “hớn hở” là rất vui.",
         "answer": {
-          "text": "thương bạn quá",
-          "explanation": "Bài thơ viết: \"Dê trắng thương bạn quá / Chạy khắp nẻo tìm bê\"."
+          "text": "sốt ruột",
+          "explanation": "Mất bạn, nai lo lắng và nóng lòng nên mới chạy đi gọi mãi, còn hờ hững hay hớn hở đều không hợp với nai."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, dê trắng thương bạn quá! Nai Nhung dụi cái mõm ươn ướt vào má {name}.",
-          "Điền chuẩn từ ngữ trong bài thơ luôn, không lệch một li.",
-          "Tớ cũng thương Thỏ Lúa y như thế đấy, thương ơi là thương."
+          "Đúng rồi, nai vàng sốt ruột! Nai Nhung dụi cái mõm ươn ướt vào má {name}.",
+          "Từ này nói đúng cái lo của người đang đợi bạn mãi.",
+          "Tớ cũng sốt ruột về Thỏ Lúa y như vậy đấy, sốt ruột ơi là sốt ruột."
         ],
         "wrong": [
-          "Dê trắng có giận bê vàng chút xíu nào đâu.",
-          "Bạn lạc mất rồi, dê trắng vui sao nổi hả cậu?",
-          "Đọc lại dòng thơ đứng ngay trước “Chạy khắp nẻo tìm bê” nhé."
+          "Hờ hững là không để tâm, mà nai thì thương bạn lắm cơ.",
+          "Bạn lạc mất rồi thì ai mà hớn hở nổi hả cậu?",
+          "Chọn từ nào hợp với một người chạy đi gọi bạn mãi không dừng nhỉ?"
         ]
-      }
+      },
+      "objective": "doc-tho-hinh-anh"
     },
     {
       "id": "xep-dong-tho",
@@ -372,94 +362,90 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t10-bang-go-goi-ban",
-      "prompt": "Vù! Một cơn gió khô thổi bay các dòng thơ trên bảng gỗ, rơi lả tả như lá khô. Xếp lại cho đúng để tập đọc thuộc: Học thuộc lòng 2 khổ thơ đầu.",
+      "prompt": "Vù! Một cơn gió khô thổi bay các dòng thơ trên bảng gỗ, rơi lả tả như lá khô. Xếp lại hai khổ thơ đầu cho đúng thứ tự để chuẩn bị đọc thuộc.",
       "items": [
         {
-          "id": "han-han",
-          "label": "Một năm, trời hạn hán"
+          "id": "mua-kho",
+          "label": "Rồi mùa khô kéo đến"
         },
         {
-          "id": "xa-xua",
-          "label": "Tự xa xưa thuở nào"
+          "id": "ngay-xua",
+          "label": "Ngày xưa trong rừng thẳm"
         },
         {
-          "id": "cho-mua",
-          "label": "Chờ mưa đến bao giờ?"
+          "id": "soc-tim-xa",
+          "label": "Sóc phải đi tìm xa."
         },
         {
-          "id": "song-ben-nhau",
-          "label": "Đôi bạn sống bên nhau"
+          "id": "choi-lau",
+          "label": "Chơi với nhau từ lâu."
         },
         {
-          "id": "suoi-can",
-          "label": "Suối cạn, cỏ héo khô"
+          "id": "duong-mon",
+          "label": "Nắng rát cả đường mòn"
         },
         {
-          "id": "rung-xanh",
-          "label": "Trong rừng xanh sâu thẳm"
+          "id": "nai-soc",
+          "label": "Nai vàng và sóc nâu"
         },
         {
-          "id": "lay-gi-nuoi",
-          "label": "Lấy gì nuôi đôi bạn"
+          "id": "hat-de",
+          "label": "Hạt dẻ rơi thưa thớt"
         },
         {
-          "id": "be-va-de",
-          "label": "Bê vàng và dê trắng."
+          "id": "dong-suoi",
+          "label": "Sống bên dòng suối nhỏ"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "order": [
-          "xa-xua",
-          "rung-xanh",
-          "song-ben-nhau",
-          "be-va-de",
-          "han-han",
-          "suoi-can",
-          "lay-gi-nuoi",
-          "cho-mua"
+          "ngay-xua",
+          "nai-soc",
+          "dong-suoi",
+          "choi-lau",
+          "mua-kho",
+          "duong-mon",
+          "hat-de",
+          "soc-tim-xa"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b17-doc-htl"
-      ],
       "support": {
         "guide": [
-          "Khổ một kể đôi bạn sống ở đâu, khổ hai kể năm hạn hán.",
-          "Dòng nào mở đầu bài thơ? Dòng nào hỏi chuyện chờ mưa?"
+          "Khổ một giới thiệu đôi bạn sống bên suối, khổ hai kể mùa khô tới.",
+          "Dòng nào mở đầu bài thơ? Dòng nào kết thúc khổ hai?"
         ],
-        "hint": "Bài thơ mở đầu bằng \"Tự xa xưa thuở nào\", khổ hai mở đầu bằng \"Một năm, trời hạn hán\".",
+        "hint": "Bài thơ mở đầu bằng “Ngày xưa”, còn khổ hai mở đầu bằng “Rồi mùa khô”.",
         "answer": {
-          "text": "Tự xa xưa thuở nào / Trong rừng xanh sâu thẳm / Đôi bạn sống bên nhau / Bê vàng và dê trắng. / Một năm, trời hạn hán / Suối cạn, cỏ héo khô / Lấy gì nuôi đôi bạn / Chờ mưa đến bao giờ?",
-          "explanation": "Khổ một giới thiệu đôi bạn trong rừng xanh; khổ hai kể năm trời hạn hán, đôi bạn ngóng mưa."
+          "text": "Ngày xưa trong rừng thẳm / Nai vàng và sóc nâu / Sống bên dòng suối nhỏ / Chơi với nhau từ lâu. // Rồi mùa khô kéo đến / Nắng rát cả đường mòn / Hạt dẻ rơi thưa thớt / Sóc phải đi tìm xa.",
+          "explanation": "Khổ một giới thiệu nai vàng, sóc nâu bên suối; khổ hai kể mùa khô tới, hạt dẻ thưa dần nên sóc phải đi xa."
         }
       },
       "feedback": {
         "right": [
           "Hai khổ thơ đã về đúng chỗ, bảng gỗ thở phào nhẹ nhõm!",
-          "Đọc lên nghe êm như tiếng suối ngày xưa còn nước.",
+          "Đọc lên nghe êm như tiếng suối ngày còn đầy nước.",
           "Xếp khéo quá! Vẹt Xanh định đọc theo mà vấp lưỡi hai lần."
         ],
         "wrong": [
-          "Có dòng thơ đang đứng nhầm hàng, như Thỏ Lúa đứng nhầm lớp vậy.",
-          "Nhớ nhé: khổ đầu nói về đôi bạn, khổ sau nói chuyện hạn hán.",
-          "Dòng có dấu chấm hỏi là dòng chốt cuối khổ hai đấy."
+          "Có dòng thơ đang đứng nhầm hàng, như Thỏ Lúa lạc khỏi đường về vậy.",
+          "Nhớ nhé: khổ đầu nói về đôi bạn, khổ sau nói chuyện mùa khô.",
+          "Dòng nói sóc phải đi tìm xa là dòng chốt cuối khổ hai đấy."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-to"
     },
     {
       "id": "doc-thuoc-long",
       "title": "Đọc thuộc lòng cho Nai Nhung nghe",
       "kind": "speak",
       "target": "tv2-t10-bang-go-goi-ban",
-      "prompt": "Nai Nhung nhắm mắt, hai tai ve vẩy theo nhịp thơ như đang nghe hát ru. Học thuộc lòng 2 khổ thơ đầu.",
+      "prompt": "Nai Nhung nhắm mắt, hai tai ve vẩy theo nhịp thơ như đang nghe hát ru. Đọc thuộc lòng hai khổ thơ đầu của bài, không nhìn bảng gỗ nhé.",
       "hints": [
-        "Tự xa xưa thuở nào",
-        "Một năm, trời hạn hán"
+        "Khổ một mở đầu bằng “Ngày xưa…”",
+        "Khổ hai mở đầu bằng “Rồi mùa khô…”"
       ],
-      "curriculumRef": [
-        "tv2-t1-b17-doc-htl"
-      ]
+      "objective": "doc-tho-doc-to"
     },
     {
       "id": "cam-nghi-doi-ban",
@@ -467,15 +453,13 @@
       "goTo": "Ra giữa đồng cỏ khô ngồi với Nai Nhung",
       "kind": "speak",
       "target": "tv2-t10-b17-nai-nhung",
-      "prompt": "Nai Nhung gập bốn chân khẳng khiu nằm xuống cỏ, cằm gối lên chân trước: cậu thấy đôi bạn ấy thế nào? Nêu cảm nghĩ của em về bê vàng và dê trắng.",
+      "prompt": "Nai Nhung gập bốn chân khẳng khiu nằm xuống cỏ, cằm gối lên chân trước: cậu thấy hai bạn ấy ra sao? Nói cho tớ nghe điều cậu nghĩ về nai vàng và sóc nâu.",
       "hints": [
-        "Tình bạn của bê vàng và dê trắng có đẹp không?",
-        "Em thương bạn nào hơn, vì sao?",
-        "Nếu là dê trắng, em sẽ đi tìm bê ở đâu?"
+        "Cậu có thấy tình bạn của hai bạn đáng quý không?",
+        "Cậu thương bạn nào hơn, vì sao?",
+        "Nếu là nai vàng, cậu sẽ đi tìm sóc ở những đâu?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b17-doc-4"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "bo-buon-ben-suoi",
@@ -485,7 +469,7 @@
       "lines": [
         {
           "speaker": "Nai Nhung",
-          "text": "Dê trắng gọi hoài mà bạn chẳng về. Tớ sợ mình cũng phải gọi hoài như thế."
+          "text": "Nai vàng gọi mãi mà chưa nghe hồi âm. Tớ sợ mình cũng phải gọi hoài như thế."
         },
         {
           "speaker": "Vẹt Xanh",
@@ -509,7 +493,7 @@
       "en": {
         "title": "Nai Nhung sad by the dry stream",
         "lines": [
-          "Dê Trắng (White Goat) called and called, but his friend never came back. I'm scared I'll have to keep calling like that too.",
+          "The golden deer called and called and still heard no answer. I'm afraid I'll have to keep calling like that too.",
           "Don't worry, don't worry! Thỏ Lúa's ears are so long, if we call loudly she's bound to hear!"
         ],
         "choices": [
@@ -522,7 +506,7 @@
             "reply": "Lúaaaa! Whoa, I've never called so loudly, and Vẹt Xanh got such a fright he fell off his branch."
           },
           {
-            "text": "Thỏ Lúa is quick on her feet, she's probably running back already.",
+            "text": "Thỏ Lúa is quick on her feet, she is probably running back already.",
             "reply": "Oh, you're right! Maybe she's hopping towards us right now."
           }
         ]
@@ -534,15 +518,13 @@
       "goTo": "Lên cành keo khô, Vẹt Xanh đội lá làm sừng chờ sẵn",
       "kind": "speak",
       "target": "vet-xanh",
-      "prompt": "Vẹt Xanh đội cái lá lên đầu làm sừng: tớ là dê trắng đây, mặt buồn thiu, buồn thiu! Đóng vai một người bạn trong rừng, nói lời an ủi dê trắng.",
+      "prompt": "Vẹt Xanh đội cái lá lên đầu làm sừng nai: tớ là nai vàng đây, mặt buồn thiu, buồn thiu! Cậu là một người bạn trong rừng: hãy nói vài lời để nai vàng bớt buồn nhé.",
       "hints": [
-        "Dê trắng ơi, cậu đừng khóc nữa nhé!",
-        "Tớ sẽ rủ cả rừng cùng đi tìm bê vàng.",
-        "Bê vàng chắc cũng đang nhớ cậu nhiều lắm."
+        "Nai ơi, cậu đừng buồn nữa nhé!",
+        "Mình sẽ rủ cả rừng cùng đi tìm sóc nâu.",
+        "Sóc chắc cũng đang nhớ cậu lắm đấy."
       ],
-      "curriculumRef": [
-        "tv2-t1-b17-doc-lt2"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "xep-tranh-goi-ban",
@@ -551,49 +533,49 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t10-vach-da-tranh",
-      "prompt": "Trên vách đá có bốn bức tranh kể chuyện đôi bạn. Ban sáng Thỏ Lúa đi qua, lỡ tay làm xáo tung cả lên. Dựa vào tranh minh hoạ câu chuyện trong bài thơ Gọi bạn và gợi ý, nói về sự việc trong từng tranh. Trước hết, xếp các tranh theo đúng thứ tự câu chuyện.",
+      "prompt": "Trên vách đá có bốn bức tranh kể chuyện đôi bạn. Ban sáng Thỏ Lúa đi qua, lỡ tay làm xáo tung cả lên. Hãy xếp các tranh theo đúng thứ tự câu chuyện trong bài thơ Tiếng vọng bên suối, rồi mới kể.",
       "items": [
         {
-          "id": "be-vang-tim-co",
-          "label": "Bê vàng đi tìm cỏ, (...).\nDê trắng thương bạn, (...).",
+          "id": "soc-lac-duong",
+          "label": "Chiều xuống, sóc mải tìm hạt nên lạc đường.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "bê vàng đi tìm cỏ, nghĩ tới bụi cỏ xanh"
+              "caption": "sóc nâu đứng một mình dưới chiều tối, nép bên tảng đá, gió lạnh thổi qua lá"
             }
           }
         },
         {
           "id": "doi-ban-ben-suoi",
-          "label": "Từ xa xưa, trong rừng xanh sâu thẳm, (...).",
+          "label": "Ngày xưa, nai vàng và sóc nâu sống cạnh suối.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "bê vàng và dê trắng vui vẻ bên suối trong rừng xanh"
+              "caption": "nai vàng và sóc nâu chơi vui vẻ bên dòng suối nhỏ trong rừng"
             }
           }
         },
         {
-          "id": "de-trang-goi-ban",
-          "label": "Đến bây giờ, dê trắng (...).",
+          "id": "nai-goi-soc",
+          "label": "Nai vàng chạy khắp bờ suối gọi sóc về.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "dê trắng đứng gọi, bóng nói “Bê! Bê!”"
+              "caption": "nai vàng đứng bên suối, miệng gọi “Sóc ơi, về nhé!”, tiếng vang lan xa"
             }
           }
         },
         {
-          "id": "rung-kho-han",
-          "label": "Một năm, trời hạn hán (...).",
+          "id": "mua-kho-den",
+          "label": "Mùa khô tới, hạt dẻ thưa thớt.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "rừng khô hạn, đất nứt nẻ, suối cạn"
+              "caption": "mùa khô nắng rát, đường mòn nứt nẻ, vài hạt dẻ rơi lẻ loi"
             }
           }
         }
@@ -602,52 +584,47 @@
       "answer": {
         "order": [
           "doi-ban-ben-suoi",
-          "rung-kho-han",
-          "be-vang-tim-co",
-          "de-trang-goi-ban"
+          "mua-kho-den",
+          "soc-lac-duong",
+          "nai-goi-soc"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b17-ke-chuyen-1-a",
-        "tv2-t1-b17-ke-chuyen-1-b",
-        "tv2-t1-b17-ke-chuyen-1-c",
-        "tv2-t1-b17-ke-chuyen-1-d"
-      ],
       "support": {
         "guide": [
           "Tranh nào vẽ đôi bạn còn vui vẻ bên suối?",
-          "Sau đó là năm hạn hán, rồi bê vàng đi tìm cỏ, cuối cùng là tiếng gọi của dê trắng."
+          "Sau đó là mùa khô, rồi sóc lạc đường, cuối cùng là tiếng gọi của nai."
         ],
-        "hint": "Các bức tranh đi theo đúng thứ tự các khổ thơ.",
+        "hint": "Các bức tranh đi theo đúng thứ tự bốn khổ thơ.",
         "answer": {
-          "text": "Đôi bạn bên suối → rừng khô hạn → bê vàng đi tìm cỏ → dê trắng đứng gọi \"Bê! Bê!\"",
-          "explanation": "Bốn bức tranh kể lần lượt từng đoạn của bài thơ Gọi bạn, từ ngày đôi bạn còn bên nhau tới tiếng gọi không nguôi."
+          "text": "Đôi bạn bên suối, rồi mùa khô tới, rồi sóc lạc đường, cuối cùng nai vàng cất tiếng gọi.",
+          "explanation": "Bốn bức tranh kể lần lượt bốn khổ thơ, từ ngày hai bạn còn bên nhau tới tiếng gọi vang mãi."
         }
       },
       "feedback": {
         "right": [
           "Bốn bức tranh đã kể đúng câu chuyện, vách đá như biết đọc thơ!",
-          "Nai Nhung khẽ chạm mõm vào bức tranh cuối, thương dê trắng quá chừng.",
+          "Nai Nhung khẽ chạm mõm vào bức tranh cuối, thương nai vàng quá chừng.",
           "Xếp tranh tài thật, {name} còn nhanh hơn cả Thỏ Lúa lúc nhớ đường."
         ],
         "wrong": [
           "Lúc đôi bạn còn vui bên suối thì phải đứng đầu tiên chứ.",
-          "Hạn hán đến trước, rồi bê vàng mới phải đi tìm cỏ.",
-          "Tiếng gọi “Bê! Bê!” là cảnh khép lại câu chuyện đấy."
+          "Mùa khô đến trước, rồi sóc mới phải đi tìm hạt và lạc đường.",
+          "Tiếng gọi “Sóc ơi, về nhé!” là cảnh khép lại câu chuyện đấy."
         ]
-      }
+      },
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "ke-theo-tranh",
       "title": "Kể chuyện bê vàng theo tranh",
       "kind": "speak",
       "target": "tv2-t10-vach-da-tranh",
-      "prompt": "Nai Nhung hít một hơi thật sâu, lấy hết can đảm: kể to lên nào, biết đâu Thỏ Lúa nghe thấy! Dựa vào tranh minh hoạ câu chuyện trong bài thơ Gọi bạn và gợi ý, nói về sự việc trong từng tranh. Chọn kể 1 – 2 đoạn của câu chuyện theo tranh.",
+      "prompt": "Nai Nhung hít một hơi thật sâu, lấy hết can đảm: kể to lên nào, biết đâu Thỏ Lúa nghe thấy! Nhìn bốn bức tranh trên vách đá, kể lại một hoặc hai đoạn của câu chuyện bằng lời của em.",
       "hints": [
-        "Từ xa xưa, trong rừng xanh sâu thẳm, (...).",
-        "Một năm, trời hạn hán (...).",
-        "Bê vàng đi tìm cỏ, (...).\nDê trắng thương bạn, (...).",
-        "Đến bây giờ, dê trắng (...)."
+        "Ngày xưa, ở bên suối trong rừng thẳm, có ai sống cùng nhau?",
+        "Rồi mùa khô tới, rừng thay đổi thế nào?",
+        "Sóc nâu đi tìm hạt, chuyện gì đã xảy ra với sóc?",
+        "Nai vàng làm gì khi sốt ruột, và tiếng gọi ấy ra sao?"
       ],
       "pictureRefs": [
         {
@@ -679,13 +656,7 @@
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b17-ke-chuyen-1-a",
-        "tv2-t1-b17-ke-chuyen-1-b",
-        "tv2-t1-b17-ke-chuyen-1-c",
-        "tv2-t1-b17-ke-chuyen-1-d",
-        "tv2-t1-b17-ke-chuyen-2"
-      ]
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "ke-doan-ket",
@@ -693,15 +664,13 @@
       "goTo": "Về bụi cỏ may, Bê Xôi ngồi chờ nghe kể đoạn kết",
       "kind": "speak",
       "target": "tv2-t10-b17-be-xoi",
-      "prompt": "Bài thơ dừng ở tiếng gọi “Bê! Bê!”. Nai Nhung mong đôi bạn được gặp lại lắm. Kể tiếp đoạn kết của câu chuyện theo ý của em.",
+      "prompt": "Bài thơ dừng ở tiếng gọi còn vang mãi, chưa biết sóc có nghe thấy không. Nai Nhung mong hai bạn gặp lại lắm. Em hãy kể tiếp đoạn kết theo ý của mình nhé.",
       "hints": [
-        "Bê vàng có nghe thấy tiếng gọi của dê trắng không?",
-        "Ai trong rừng đã chỉ đường cho bê vàng?",
-        "Gặp lại nhau, đôi bạn làm gì đầu tiên?"
+        "Sóc nâu có nghe thấy tiếng gọi của nai không?",
+        "Ai trong rừng đã giúp sóc tìm đường về?",
+        "Gặp lại nhau, hai bạn nói gì đầu tiên?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b17-ke-chuyen-3"
-      ]
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "tho-ti-tro-ve",
@@ -720,7 +689,7 @@
         },
         {
           "speaker": "Nai Nhung",
-          "text": "Lúa đây rồi! May quá, tớ không phải gọi hoài như dê trắng nữa rồi!"
+          "text": "Lúa đây rồi! May quá, tớ không phải gọi hoài như nai vàng trong thơ nữa rồi!"
         },
         {
           "speaker": "Thỏ Lúa",
@@ -739,7 +708,7 @@
         "lines": [
           "Nhung! {name}! I could hear you two chatting all the way from the other side of the hill!",
           "I was having so much fun picking fresh grass, I spun round once, twice… and forgot which way home was.",
-          "There you are, Lúa! Phew, I won't have to keep calling like the white goat any more!",
+          "There you are, Lúa! Phew, I won't have to keep calling like the golden deer in the poem any more!",
           "Here's the fresh grass, a bundle as big as a conical hat! Oh, and… what was I about to say?"
         ],
         "choices": [
@@ -752,16 +721,40 @@
     },
     {
       "id": "phieu-viet-bai-17",
-      "title": "Phiếu viết Bài 17",
+      "title": "Phiếu viết chữ hoa H",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b17",
-      "text": "Nhờ bố mẹ in phiếu Bài 17 ở khu phụ huynh nhé: tập viết chữ hoa H, câu ứng dụng và vài câu nhận xét về đôi bạn bê vàng, dê trắng. Nai Nhung hứa đứng thật im, không giậm móng lộc cộc làm nhoè vở.",
-      "curriculumRef": [
-        "tv2-t1-b17-viet-chu-hoa-1",
-        "tv2-t1-b17-viet-ung-dung-2",
-        "tv2-t1-b17-van-dung-1"
-      ]
+      "text": "Nhờ bố mẹ in phiếu viết ở khu phụ huynh nhé: tập viết chữ hoa H, một câu ứng dụng và vài câu về đôi bạn nai vàng, sóc nâu. Nai Nhung hứa đứng thật im, không giậm móng lộc cộc làm nhoè vở.",
+      "objective": "viet-chu-hoa",
+      "sheet": {
+        "title": "Phiếu viết: chữ hoa H và đôi bạn trong rừng",
+        "blocks": [
+          {
+            "kind": "letter",
+            "prompt": "Tô rồi viết chữ hoa H",
+            "letters": [
+              "H"
+            ]
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: Hạt dẻ rơi lộp bộp bên suối.",
+            "model": [
+              "Hạt dẻ rơi lộp bộp bên suối."
+            ]
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Viết 2 – 3 câu nói điều em nghĩ về nai vàng hoặc sóc nâu.",
+            "hints": [
+              "Em thấy bạn ấy là người bạn thế nào?",
+              "Em thích việc làm nào của bạn ấy?",
+              "Nếu gặp bạn ấy, em sẽ nói gì?"
+            ],
+            "lines": 6
+          }
+        ]
+      }
     },
     {
       "id": "qua-cua-bo-sua-mo",

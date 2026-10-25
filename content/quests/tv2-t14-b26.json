@@ -4,18 +4,17 @@
   "chapter": 1,
   "title": "Gà Con Mẩy đón em bé",
   "status": "active",
-  "lesson": "tv2-t1-b26",
   "topic": "tu-ngu-tinh-cam",
-  "summary": "Trong ngõ nhỏ của xóm, nhà Gà Con Mẩy sắp đón em bé từ quả trứng, Mẩy lo bị quên; {name} cùng Mẩy đọc bài thơ \"Em mang về yêu thương\", hỏi khắp hàng xóm trong ngõ và chờ em chào đời.",
+  "summary": "Trong ngõ nhỏ của xóm, nhà Gà Con Mẩy sắp đón em bé từ quả trứng, Mẩy lo bị quên; {name} cùng Mẩy đọc bài thơ \"Em bé từ đâu đến\", hỏi khắp hàng xóm trong ngõ và chờ em chào đời.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Gà Con Mẩy, Mẹ Gà, Bố Gà Trống, em gà con trong quả trứng và bốn hàng xóm: Cáo Hạt Dẻ, Gấu Trúc Bánh Bao, Cá Rô Bọt, Chị hái nấm Thơm",
     "where": "Ngõ nhà Mẩy trong xóm: tổ rơm của nhà Mẩy, sân rơm quanh tổ, bụi tre đầu ngõ, bãi đất trống bên rào, vũng nước cạnh ao bèo, gốc sung ven ngõ, chiếc võng dưới hiên",
     "goal": "Giúp Mẩy hết lo bị quên và sẵn sàng làm anh",
     "play": "Tìm đầu mối, nói, đọc thơ, ghép mảnh thơ, chọn nhiều đáp án, chọn đáp án, ghép câu, chọn vần, đọc thơ cho em, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 26: đọc hiểu \"Em mang về yêu thương\", từ tả em bé, họ nội họ ngoại, iên/yên/uyên, d/r, gi/r, ai/ay, ghép câu, nghe – viết, viết đoạn",
+    "learn": "Đọc hiểu bài thơ \"Em bé từ đâu đến\", từ tả em bé, họ nội họ ngoại, iên/yên/uyên, d/r, gi/r, ai/ay, ghép câu, nghe – viết, viết đoạn",
     "reward": "85 XP, 15 xu, Đọc hiểu +2, Chính tả +2, Từ ngữ +1, Câu +1",
-    "next": "Bài 27 \"Mẹ\": chiếc võng dưới hiên nhà Koala Na trong đêm trăng"
+    "next": "Lời ru của mẹ: chiếc võng dưới hiên nhà Koala Na trong đêm trăng"
   },
   "phases": {
     "hook": "gap-ga-con-chip",
@@ -28,17 +27,22 @@
     "next": "mo-bai-27"
   },
   "texts": {
-    "em-mang-ve-yeu-thuong": {
-      "title": "Em mang về yêu thương",
-      "author": "Minh Đăng",
-      "body": "Mẹ, mẹ ơi em bé\nTừ đâu đến nhà ta\nNụ cười như tia nắng\nBàn tay như nụ hoa\nBước chân đi lẫm chẫm\nTiếng cười vang sân nhà?\n\nHay bé từ sao xuống\nHay từ biển bước lên\nHay bé trong quả nhãn\nÔng trồng cạnh hàng hiên?\n\nHay bé theo cơn gió\nNằm cuộn tròn trong mây\nRồi biến thành giọt nước\nRơi xuống nhà mình đây?\n\nMỗi sáng em thức giấc\nLà như thể mây, hoa\nCùng nắng vàng biển rộng\nMang yêu thương vào nhà.",
+    "em-be-tu-dau-den": {
+      "title": "Em bé từ đâu đến",
+      "body": "Má em hồng quả đào\nMắt đen như hạt na\nTay mềm như bông gòn\nChân đi còn chập chững\n\nMẹ ơi, em từ đâu\nPhải từ ngôi sao xa\nHay theo cánh diều giấy\nBay về qua mái ngói?\n\nHay nằm trong vỏ ốc\nLăn theo bờ cát vàng\nHay ngồi trên đám mây\nRơi thành hạt mưa nhỏ?\n\nMẹ cười: \"Con yêu ạ,\nEm mang đến cho nhà\nTiếng nói cười bi bô\nVà niềm vui thật lớn.\"",
       "glossary": [
         {
-          "term": "Lẫm chẫm",
-          "meaning": "dáng đi chưa vững của em bé."
+          "term": "Chập chững",
+          "meaning": "dáng đi của em bé mới biết đi, bước chưa vững."
+        },
+        {
+          "term": "Bi bô",
+          "meaning": "tiếng em bé tập nói, líu lo chưa rõ lời."
         }
       ],
-      "section": "tv2-t1-b26-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -77,7 +81,7 @@
         },
         {
           "speaker": "Gà Con Mẩy",
-          "text": "Ông bảo em từ sao xuống, chú Vịt bảo em từ biển lên. Tại sao mỗi người nói một kiểu?"
+          "text": "Ông bảo em từ sao xuống, chú Vịt bảo em nằm trong vỏ ốc. Tại sao mỗi người nói một kiểu?"
         }
       ],
       "choices": [
@@ -98,7 +102,7 @@
           "The baby is inside this egg, Mẩy. I have to keep it warm for a few more days.",
           "Why did the baby get inside an egg? And once the baby's here, will you still remember Mẩy?",
           "Cock-a-doodle-doo! Oh, it's not morning yet? I'm so excited I crowed at the wrong time.",
-          "Grandpa says the baby comes down from the stars, Uncle Duck says it comes up from the sea. Why does everyone say something different?"
+          "Grandpa says the baby came down from a star, Uncle Duck says it was inside a snail shell. Why does everyone say something different?"
         ],
         "choices": [
           {
@@ -129,68 +133,64 @@
       "goTo": "Mang ba đầu mối về tổ rơm nhà Mẩy cho Mẹ Gà xem",
       "kind": "speak",
       "target": "me-ga",
-      "prompt": "Mẹ Gà cười hiền: \"Ngôi sao giấy, vỏ ốc, chùm nhãn… chẳng thấy em bé nào trong đó cả, Mẩy ơi.\" Rồi mẹ quay sang hỏi {name}: Nói về một em bé mà em biết.",
+      "prompt": "Mẹ Gà cười hiền: \"Ngôi sao giấy, vỏ ốc, chùm nhãn… chẳng thấy em bé nào trong đó cả, Mẩy ơi.\" Rồi mẹ quay sang hỏi {name}: em có biết em bé nào không? Kể cho Mẩy nghe về em bé ấy nhé.",
       "hints": [
         "Em bé ấy tên là gì, là em của ai?",
-        "Em bé trông thế nào: má, bàn tay, tiếng cười, dáng đi?",
-        "Bạn trong tranh nói: \"Bé Bo nhà tớ rất đáng yêu.\" Còn em bé em biết thì sao?"
+        "Em bé trông thế nào: đôi má, đôi mắt, bàn tay, tiếng cười?",
+        "Mỗi lần gặp em bé ấy, em thích làm gì nhất?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b26-doc-kd"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "doc-bai-tho",
       "title": "Bài thơ bên quả trứng",
       "kind": "read",
       "target": "tv2-t14-qua-trung",
-      "textRef": "em-mang-ve-yeu-thuong",
+      "textRef": "em-be-tu-dau-den",
       "audio": true,
       "question": "Mẩy kêu lên: \"Bạn này cũng hỏi giống hệt tớ!\" Bạn nhỏ đã hỏi mẹ điều gì?",
       "choices": [
         {
           "id": "em-tu-dau",
-          "text": "Mẹ, mẹ ơi em bé / Từ đâu đến nhà ta"
+          "text": "Em bé từ đâu đến?"
         },
         {
-          "id": "bao-gio-biet-di",
-          "text": "Mẹ ơi, bao giờ em bé mới biết đi?"
+          "id": "bao-gio-noi",
+          "text": "Bao giờ em bé biết nói?"
         },
         {
-          "id": "em-thich-an-gi",
-          "text": "Mẹ ơi, em bé thích ăn món gì nhất?"
+          "id": "em-thich-choi",
+          "text": "Em bé có thích chơi diều không?"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "em-tu-dau"
       },
-      "curriculumRef": [
-        "tv2-t1-b26-doc-1"
-      ],
       "support": {
         "guide": [
-          "Đọc lại hai dòng thơ đầu tiên.",
-          "Bạn nhỏ gọi \"Mẹ, mẹ ơi\" rồi hỏi điều gì?"
+          "Đọc lại khổ thơ thứ hai.",
+          "Bạn nhỏ gọi \"Mẹ ơi\" rồi hỏi điều gì?"
         ],
-        "hint": "Câu hỏi của bạn nhỏ cũng là điều Mẩy thắc mắc từ sáng: em bé từ đâu tới?",
+        "hint": "Câu hỏi của bạn nhỏ cũng là điều Mẩy thắc mắc từ sáng.",
         "answer": {
-          "text": "Bạn nhỏ hỏi: \"Mẹ, mẹ ơi em bé / Từ đâu đến nhà ta\"",
-          "explanation": "Hai dòng thơ đầu là lời bạn nhỏ hỏi mẹ: em bé từ đâu đến nhà mình."
+          "text": "Bạn nhỏ hỏi mẹ xem em bé đã đến nhà từ nơi nào.",
+          "explanation": "Dòng \"Mẹ ơi, em từ đâu\" mở đầu khổ hai là câu hỏi của bạn nhỏ, sau đó bạn đoán nhiều nơi em có thể đến."
         }
       },
       "feedback": {
         "right": [
           "Đúng rồi! Mẩy gật đầu lia lịa: câu này tớ hỏi mẹ hai mươi lần rồi!",
           "Chuẩn! Bạn nhỏ trong thơ tò mò y như một chú gà con.",
-          "Hay lắm, {name} tìm đúng câu hỏi ở ngay hai dòng đầu."
+          "Hay lắm, {name} tìm đúng câu hỏi ở đầu khổ hai."
         ],
         "wrong": [
-          "Ối, chuyện tập đi còn xa lắm. Đọc lại hai dòng thơ đầu tiên nhé.",
-          "Bài thơ chưa nhắc tới món ăn nào đâu. Bạn nhỏ hỏi em bé từ đâu tới cơ.",
-          "Gần rồi! Tìm dòng có tiếng gọi \"Mẹ, mẹ ơi\" xem bạn nhỏ hỏi gì."
+          "Bài thơ chưa hỏi chuyện biết nói đâu. Đọc lại khổ thơ thứ hai nhé.",
+          "Diều chỉ là một nơi bạn nhỏ đoán thôi. Bạn hỏi em bé từ đâu tới cơ.",
+          "Gần rồi! Tìm dòng có tiếng gọi \"Mẹ ơi\" xem bạn nhỏ hỏi gì."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "ta-em-be",
@@ -199,11 +199,15 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t14-b26-cao-hat-de",
-      "prompt": "Bố Gà Trống đọc lại khổ thơ đầu cho Mẩy nghe, nhưng hồi hộp quá, cứ \"Ò ó o!\" làm các mảnh thơ rơi lả tả. Đặt mỗi mảnh về đúng chỗ. Trong khổ thơ đầu, bạn nhỏ tả em của mình như thế nào?",
+      "prompt": "Bố Gà Trống đọc lại khổ thơ đầu cho Mẩy nghe, nhưng hồi hộp quá, cứ \"Ò ó o!\" làm các mảnh thơ rơi lả tả. Ghép mỗi mảnh với nét của em bé mà nó tả.",
       "groups": [
         {
-          "id": "nu-cuoi",
-          "label": "Nụ cười"
+          "id": "ma",
+          "label": "Đôi má"
+        },
+        {
+          "id": "mat",
+          "label": "Đôi mắt"
         },
         {
           "id": "ban-tay",
@@ -212,65 +216,59 @@
         {
           "id": "buoc-chan",
           "label": "Bước chân"
-        },
-        {
-          "id": "tieng-cuoi",
-          "label": "Tiếng cười"
         }
       ],
       "items": [
         {
-          "id": "lam-cham",
-          "label": "đi lẫm chẫm"
+          "id": "chap-chung",
+          "label": "đi còn chập chững"
         },
         {
-          "id": "tia-nang",
-          "label": "như tia nắng"
+          "id": "hong-qua-dao",
+          "label": "hồng quả đào"
         },
         {
-          "id": "vang-san-nha",
-          "label": "vang sân nhà"
+          "id": "mem-bong-gon",
+          "label": "mềm như bông gòn"
         },
         {
-          "id": "nu-hoa",
-          "label": "như nụ hoa"
+          "id": "den-hat-na",
+          "label": "đen như hạt na"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "assignment": {
-          "tia-nang": "nu-cuoi",
-          "nu-hoa": "ban-tay",
-          "lam-cham": "buoc-chan",
-          "vang-san-nha": "tieng-cuoi"
+          "hong-qua-dao": "ma",
+          "den-hat-na": "mat",
+          "mem-bong-gon": "ban-tay",
+          "chap-chung": "buoc-chan"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b26-doc-2"
-      ],
       "support": {
         "guide": [
-          "Đọc lại khổ thơ đầu, từ dòng \"Nụ cười như…\".",
-          "Mỗi dòng tả một nét của em bé: nụ cười, bàn tay, bước chân, tiếng cười."
+          "Đọc lại khổ thơ đầu, từ dòng \"Má em…\".",
+          "Mỗi dòng tả một nét của em bé: má, mắt, tay, chân."
         ],
-        "hint": "Em bé mới tập đi nên bước chân chưa vững, gọi là lẫm chẫm.",
+        "hint": "Em bé mới tập đi nên bước chân chưa vững, gọi là chập chững.",
         "answer": {
-          "text": "Nụ cười như tia nắng / Bàn tay như nụ hoa / Bước chân đi lẫm chẫm / Tiếng cười vang sân nhà",
-          "explanation": "Bạn nhỏ so sánh nụ cười của em với tia nắng, bàn tay với nụ hoa; em đi lẫm chẫm và cười vang sân nhà."
+          "text": "Má em hồng quả đào / Mắt đen như hạt na / Tay mềm như bông gòn / Chân đi còn chập chững",
+          "explanation": "Bạn nhỏ tả má hồng như quả đào, mắt đen như hạt na, tay mềm như bông gòn và đôi chân còn chập chững."
         }
       },
       "feedback": {
         "right": [
           "Khổ thơ ghép lại đủ rồi! Bố Gà Trống xấu hổ, hứa từ giờ gáy nhỏ thôi.",
-          "Đúng hết! Mẩy tưởng tượng em mình cười như tia nắng, sướng rung cả mào.",
+          "Đúng hết! Mẩy tưởng tượng em mình hồng hào như quả đào, sướng rung cả mào.",
           "Bốn mảnh về đúng chỗ, {name} đọc thơ thuộc ghê!"
         ],
         "wrong": [
-          "Bàn tay em bé nhỏ xinh như cái gì nhỉ? Đọc lại dòng thứ hai nhé.",
-          "Nụ cười thì không biết đi lẫm chẫm đâu! Mảnh đó thuộc về bước chân.",
-          "Tiếng cười của em vang lắm, vang tận đâu? Xem lại dòng cuối khổ đầu."
+          "Bàn tay em bé mềm như cái gì nhỉ? Đọc lại dòng thứ ba nhé.",
+          "Đôi má thì không biết đi chập chững đâu! Mảnh đó thuộc về bước chân.",
+          "Đôi mắt đen như hạt gì nhỉ? Xem lại dòng thứ hai của khổ đầu."
         ]
-      }
+      },
+      "objective": "doc-tho-hinh-anh"
     },
     {
       "id": "em-tu-dau-den",
@@ -278,64 +276,62 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t14-b26-cao-hat-de",
-      "prompt": "Mẩy giơ ngôi sao giấy, vỏ ốc và chùm nhãn lên cao: \"Tại sao bạn ấy đoán nhiều thế?\" Trong khổ thơ thứ hai và thứ ba, bạn nhỏ đoán em bé từ đâu đến?",
+      "prompt": "Mẩy giơ ngôi sao giấy, vỏ ốc và chùm nhãn lên cao: \"Tại sao bạn ấy đoán nhiều thế?\" Bạn nhỏ trong bài đã đoán em bé có thể từ những nơi nào đến? Chọn tất cả.",
       "choices": [
         {
           "id": "ngoi-sao",
           "text": "ngôi sao"
         },
         {
-          "id": "mat-bien",
-          "text": "mặt biển"
+          "id": "canh-dieu",
+          "text": "cánh diều"
+        },
+        {
+          "id": "vo-oc",
+          "text": "vỏ ốc"
+        },
+        {
+          "id": "bong-gon",
+          "text": "bông gòn"
         },
         {
           "id": "dam-may",
           "text": "đám mây"
-        },
-        {
-          "id": "nu-hoa",
-          "text": "nụ hoa"
-        },
-        {
-          "id": "qua-nhan",
-          "text": "quả nhãn"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
           "ngoi-sao",
-          "mat-bien",
-          "dam-may",
-          "qua-nhan"
+          "canh-dieu",
+          "vo-oc",
+          "dam-may"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b26-doc-3"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ thứ hai: \"Hay bé từ sao xuống…\".",
-          "Đọc tiếp khổ thơ thứ ba: \"Hay bé theo cơn gió…\"."
+          "Đọc khổ thơ thứ hai: \"Phải từ ngôi sao xa…\".",
+          "Đọc tiếp khổ thơ thứ ba: \"Hay nằm trong vỏ ốc…\"."
         ],
-        "hint": "Có bốn đầu mối đúng. \"Nụ hoa\" chỉ xuất hiện ở khổ đầu, khi tả bàn tay em.",
+        "hint": "Có bốn nơi đúng. \"Bông gòn\" chỉ xuất hiện ở khổ đầu, khi tả bàn tay em.",
         "answer": {
-          "text": "ngôi sao, mặt biển, đám mây, quả nhãn",
-          "explanation": "Khổ hai đoán em từ sao xuống, từ biển lên, trong quả nhãn; khổ ba đoán em nằm trong mây rồi thành giọt nước."
+          "text": "ngôi sao, cánh diều, vỏ ốc, đám mây",
+          "explanation": "Khổ hai đoán em từ ngôi sao hoặc cánh diều đến; khổ ba đoán em nằm trong vỏ ốc hoặc ngồi trên đám mây."
         }
       },
       "feedback": {
         "right": [
           "Đúng cả bốn! Mẩy ôm khư khư ba đầu mối: vậy là tớ đoán giỏi như nhà thơ!",
-          "Chuẩn! Sao, biển, mây, nhãn: bạn nhỏ đoán tài thật.",
+          "Chuẩn! Sao, diều, ốc, mây: bạn nhỏ đoán tài thật.",
           "Mẹ Gà tủm tỉm: {name} đọc kĩ hơn cả Mẩy đấy."
         ],
         "wrong": [
-          "\"Nụ hoa\" ở khổ đầu là để tả bàn tay em, chưa phải chỗ em đến đâu.",
-          "Còn sót một chỗ ở khổ ba: em \"nằm cuộn tròn trong\" cái gì nhỉ?",
-          "Đếm lại nhé: khổ hai có ba chỗ, khổ ba có thêm một chỗ nữa."
+          "\"Bông gòn\" ở khổ đầu là để tả bàn tay em, chưa phải nơi em đến.",
+          "Còn sót một nơi ở khổ ba: em \"ngồi trên\" cái gì nhỉ?",
+          "Đếm lại nhé: khổ hai có hai nơi, khổ ba cũng có hai nơi."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "em-mang-den-gi",
@@ -344,51 +340,49 @@
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "me-ga",
-      "prompt": "Mẩy ôm quả trứng, thì thầm: \"Em đến rồi, liệu mẹ có bớt thương con không?\" Mẹ Gà xoà cánh ôm Mẩy, chỉ vào khổ thơ cuối. Em bé mang đến những gì cho gia đình bạn nhỏ?",
+      "prompt": "Mẩy ôm quả trứng, thì thầm: \"Em đến rồi, liệu mẹ có bớt thương con không?\" Mẹ Gà xoà cánh ôm Mẩy, đọc khổ thơ cuối. Theo lời mẹ trong bài thơ, em bé mang đến những gì cho cả nhà?",
       "choices": [
         {
-          "id": "nang-vang-bien-rong",
-          "text": "Nắng vàng và biển rộng"
+          "id": "tieng-cuoi-niem-vui",
+          "text": "Tiếng nói cười và niềm vui"
         },
         {
-          "id": "tinh-yeu-thuong",
-          "text": "Tình yêu thương"
+          "id": "sao-va-may",
+          "text": "Những ngôi sao và đám mây"
         },
         {
-          "id": "may-va-hoa",
-          "text": "Mây và hoa"
+          "id": "dieu-va-oc",
+          "text": "Cánh diều và vỏ ốc"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "tinh-yeu-thuong"
+        "choice": "tieng-cuoi-niem-vui"
       },
-      "curriculumRef": [
-        "tv2-t1-b26-doc-4"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ cuối cùng, nhất là dòng cuối.",
-          "Mây, hoa, nắng, biển chỉ là \"như thể\"; em thật sự mang vào nhà điều gì?"
+          "Đọc khổ thơ cuối, nhất là lời mẹ đáp.",
+          "Sao, mây, diều, ốc chỉ là điều bạn nhỏ đoán; mẹ nói em mang đến điều gì?"
         ],
-        "hint": "Dòng cuối bài thơ có ba chữ trả lời câu hỏi này.",
+        "hint": "Hai dòng cuối bài thơ trả lời câu hỏi này.",
         "answer": {
-          "text": "Tình yêu thương",
-          "explanation": "Khổ cuối nói em bé như mây, hoa, nắng, biển \"Mang yêu thương vào nhà\": em mang đến tình yêu thương cho cả nhà."
+          "text": "Em mang đến tiếng bi bô cười nói và niềm vui lớn.",
+          "explanation": "Trong khổ cuối, mẹ cười và nói em bé mang đến cho nhà tiếng nói cười bi bô cùng niềm vui thật lớn."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi! Mẹ Gà thơm lên đầu Mẩy: yêu thương không bị chia nhỏ đâu, nó còn nhiều thêm.",
-          "Mẩy thở phào: thì ra em mang thêm yêu thương, chứ không lấy bớt của Mẩy!",
-          "{name} đọc đúng dòng thơ cuối rồi, ấm áp quá."
+          "Đúng rồi! Mẹ Gà thơm lên đầu Mẩy: có em thì nhà càng đông vui, không ai bị quên cả.",
+          "Mẩy thở phào: thì ra em mang thêm niềm vui chứ không lấy bớt phần của Mẩy!",
+          "{name} nghe đúng lời mẹ đáp ở khổ cuối rồi, ấm áp quá."
         ],
         "wrong": [
-          "Nắng vàng, biển rộng chỉ là hình ảnh so sánh thôi. Đọc dòng cuối bài nhé.",
-          "Mây và hoa đẹp thật, nhưng em bé mang vào nhà một thứ còn quý hơn thế.",
+          "Sao và mây chỉ là những nơi bạn nhỏ đoán thôi. Đọc lại lời mẹ đáp ở khổ cuối nhé.",
+          "Diều và ốc cũng là điều bạn nhỏ đoán, còn mẹ thì trả lời khác cơ.",
           "Gợi ý: thứ em mang đến khiến Mẩy hết lo bị quên đấy."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tu-ta-em-be",
@@ -397,58 +391,55 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t14-b26-gau-truc-banh-bao",
-      "prompt": "Mẩy muốn gom thật nhiều từ để khen em ngay khi em chui ra khỏi vỏ. Tìm thêm các từ ngữ tả em bé. M: bụ bẫm",
+      "prompt": "Mẩy muốn gom thật nhiều từ để khen em ngay khi em chui ra khỏi vỏ. Chọn các từ ngữ hợp để tả một em bé.",
       "choices": [
         {
-          "id": "mum-mim",
-          "text": "mũm mĩm"
+          "id": "bu-bam",
+          "text": "bụ bẫm"
         },
         {
-          "id": "rau-ria",
-          "text": "râu ria"
+          "id": "gan-guoc",
+          "text": "gân guốc"
         },
         {
-          "id": "xinh-xan",
-          "text": "xinh xắn"
+          "id": "ngo-nghinh",
+          "text": "ngộ nghĩnh"
         },
         {
-          "id": "lom-khom",
-          "text": "lom khom"
+          "id": "cong-lung",
+          "text": "còng lưng"
         },
         {
-          "id": "dang-yeu",
-          "text": "đáng yêu"
+          "id": "mem-mai",
+          "text": "mềm mại"
         },
         {
-          "id": "hong-hao",
-          "text": "hồng hào"
+          "id": "bac-pho",
+          "text": "bạc phơ"
         },
         {
-          "id": "vam-vo",
-          "text": "vạm vỡ"
+          "id": "tron-tria",
+          "text": "tròn trịa"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "choices": [
-          "mum-mim",
-          "xinh-xan",
-          "dang-yeu",
-          "hong-hao"
+          "bu-bam",
+          "ngo-nghinh",
+          "mem-mai",
+          "tron-tria"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b26-doc-lt1"
-      ],
       "support": {
         "guide": [
-          "Nghĩ tới một em bé thật: má, da, dáng người trông thế nào?",
-          "Từ \"bụ bẫm\" là mẫu: từ tả em bé nghe tròn trịa, dễ thương."
+          "Nghĩ tới một em bé thật: da, má, đôi tay trông thế nào?",
+          "Từ nào nghe tròn trịa, mềm mại, dễ thương thì hợp với em bé."
         ],
-        "hint": "Có bốn từ đúng. Ông già mới lom khom, chú lực sĩ mới vạm vỡ.",
+        "hint": "Có bốn từ đúng. Tóc bạc phơ là của cụ già, người gân guốc là người lực lưỡng, còng lưng là dáng người lớn tuổi.",
         "answer": {
-          "text": "mũm mĩm, xinh xắn, đáng yêu, hồng hào",
-          "explanation": "Mũm mĩm, xinh xắn, đáng yêu, hồng hào tả dáng vẻ dễ thương của em bé, giống từ mẫu \"bụ bẫm\"."
+          "text": "bụ bẫm, ngộ nghĩnh, mềm mại, tròn trịa",
+          "explanation": "Bốn từ ấy tả dáng vẻ dễ thương của em bé; gân guốc, còng lưng, bạc phơ thường dùng cho người lớn tuổi hoặc người rắn rỏi."
         }
       },
       "feedback": {
@@ -458,11 +449,12 @@
           "Hay quá, từ nào của {name} cũng tròn trịa đáng yêu như em bé."
         ],
         "wrong": [
-          "Ha ha, em bé mà có râu ria thì Mẩy giật mình mất! Bỏ từ đó ra nhé.",
-          "Em bé đâu có lom khom như ông bà, chọn từ tả em tròn trịa, dễ thương thôi.",
-          "Còn sót một từ tả má em bé đỏ hây hây đấy, tìm lại xem."
+          "Em bé mà gân guốc thì Mẩy giật mình mất! Bỏ từ đó ra nhé.",
+          "Em bé đâu có còng lưng như ông bà, chọn từ tả em tròn trịa, dễ thương thôi.",
+          "Còn sót một từ tả làn da em bé mềm như bông đấy, tìm lại xem."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-tim-tu"
     },
     {
       "id": "cau-khen-em",
@@ -470,14 +462,12 @@
       "goTo": "Tới vũng nước cạnh ao bèo, Cá Rô Bọt ngoi lên xem Mẩy tập khen em",
       "kind": "speak",
       "target": "tv2-t14-b26-ca-ro-bot",
-      "prompt": "Mẩy soi vũng nước tập khen em, khen nhiều đến nỗi cái bóng trong nước cũng phải đỏ mặt. Đặt một câu với từ ngữ em tìm được ở bài tập 1. M: Bé Hà rất bụ bẫm.",
+      "prompt": "Mẩy soi vũng nước tập khen em, khen nhiều đến nỗi cái bóng trong nước cũng phải đỏ mặt. Đặt một câu khen em bé, trong câu có dùng một từ ngữ em vừa chọn.",
       "hints": [
-        "Chọn một từ vừa tìm được: mũm mĩm, xinh xắn, đáng yêu, hồng hào…",
+        "Chọn một từ vừa tìm: bụ bẫm, ngộ nghĩnh, mềm mại, tròn trịa…",
         "Câu có tên em bé và từ tả em, nói to, rõ ràng."
       ],
-      "curriculumRef": [
-        "tv2-t1-b26-doc-lt2"
-      ]
+      "objective": "tu-chi-dac-diem-cau-dac-diem"
     },
     {
       "id": "ho-noi-ho-ngoai",
@@ -486,8 +476,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "me-ga",
-      "prompt": "Họ hàng nhà Mẩy rủ nhau tới thăm quả trứng. Mẩy hỏi một lèo: \"Tại sao dì là họ ngoại? Tại sao chú là họ nội? Tại sao…\" Chọn từ ngữ trong ngoặc thay cho ô vuông.",
-      "template": "(mẹ, bố, họ nội, họ ngoại) Dì Chi là em gái của {{b1}}. Chú Long là em trai của {{b2}}. Dì và cậu là những người thuộc {{b3}}. Cô, chú là những người thuộc {{b4}}.",
+      "prompt": "Họ hàng nhà Mẩy rủ nhau tới thăm quả trứng. Mẩy hỏi một lèo: \"Tại sao dì là họ ngoại? Tại sao chú là họ nội? Tại sao…\" Điền từ trong ngoặc vào chỗ trống cho đúng.",
+      "template": "(mẹ, bố, họ nội, họ ngoại) Dì Hạnh là chị gái của {{b1}}. Bác Sáu là anh trai của {{b2}}. Ông bà ngoại, dì và cậu đều thuộc {{b3}}. Ông bà nội, cô và chú đều thuộc {{b4}}.",
       "blanks": [
         {
           "id": "b1",
@@ -583,18 +573,15 @@
           "b4": "ho-noi"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b26-tu-ngu-cau-1"
-      ],
       "support": {
         "guide": [
-          "Dì là chị hoặc em gái của mẹ; chú là em trai của bố.",
+          "Dì là chị hoặc em gái của mẹ; bác là anh hoặc chị của bố.",
           "Họ hàng bên mẹ là họ ngoại, họ hàng bên bố là họ nội."
         ],
-        "hint": "Dì đi với mẹ, chú đi với bố. Bên mẹ là ngoại, bên bố là nội.",
+        "hint": "Dì đi với mẹ, bác đi với bố. Bên mẹ là ngoại, bên bố là nội.",
         "answer": {
-          "text": "Dì Chi là em gái của mẹ. Chú Long là em trai của bố. Dì và cậu là những người thuộc họ ngoại. Cô, chú là những người thuộc họ nội.",
-          "explanation": "Dì, cậu là anh chị em của mẹ nên thuộc họ ngoại; cô, chú là anh chị em của bố nên thuộc họ nội."
+          "text": "Dì Hạnh là chị gái của mẹ. Bác Sáu là anh trai của bố. Ông bà ngoại, dì và cậu đều thuộc họ ngoại. Ông bà nội, cô và chú đều thuộc họ nội.",
+          "explanation": "Ông bà ngoại, dì, cậu là người nhà bên mẹ nên thuộc họ ngoại; ông bà nội, cô, chú là người nhà bên bố nên thuộc họ nội."
         }
       },
       "feedback": {
@@ -604,11 +591,12 @@
           "{name} giỏi quá, nhớ rõ cả họ nội lẫn họ ngoại."
         ],
         "wrong": [
-          "Dì là em gái của mẹ hay của bố nhỉ? Dì thân với mẹ lắm đấy.",
-          "Ô thứ ba hỏi dì và cậu: họ là anh chị em bên mẹ, vậy thuộc họ nào?",
-          "Cô, chú là anh chị em của bố. Bên bố là họ nội, thử lại ô cuối nhé."
+          "Dì Hạnh là chị gái của mẹ hay của bố nhỉ? Dì thân với mẹ lắm đấy.",
+          "Ô thứ ba có ông bà ngoại, dì và cậu: họ là người nhà bên mẹ, vậy thuộc họ nào?",
+          "Ông bà nội, cô và chú là người nhà bên bố. Bên bố là họ nội, thử lại ô cuối nhé."
         ]
-      }
+      },
+      "objective": "tu-ngu-tinh-cam-dien-tu"
     },
     {
       "id": "ghep-cau-thiep-moi",
@@ -617,55 +605,52 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t14-b26-chi-hai-nam-thom",
-      "prompt": "Bố Gà Trống viết thiệp mời họ hàng, nhưng vỗ cánh mạnh quá, các mảnh chữ bay tứ tung. Kết hợp từ ngữ ở cột A với từ ngữ ở cột B để tạo câu. Chọn viết 2 câu vào vở.",
+      "prompt": "Bố Gà Trống viết thiệp mời họ hàng, nhưng vỗ cánh mạnh quá, các mảnh chữ bay tứ tung. Ghép mỗi người ở cột A với một điều hợp ở cột B để tạo thành câu.",
       "groups": [
         {
           "id": "em-be",
           "label": "Em bé"
         },
         {
-          "id": "chi-cua-em",
-          "label": "Chị của em"
+          "id": "anh-trai",
+          "label": "Anh trai của em"
         },
         {
-          "id": "ong-ngoai",
-          "label": "Ông ngoại của em"
+          "id": "ba-ngoai",
+          "label": "Bà ngoại của em"
         }
       ],
       "items": [
         {
-          "id": "cham-hoc",
-          "label": "chăm học."
+          "id": "cham-sach",
+          "label": "chăm đọc sách."
         },
         {
-          "id": "da-gia",
-          "label": "đã già."
+          "id": "toc-bac",
+          "label": "tóc đã bạc."
         },
         {
-          "id": "bu-bam",
-          "label": "bụ bẫm."
+          "id": "tap-bo",
+          "label": "đang tập bò."
         }
       ],
       "skill": "cau",
       "answer": {
         "assignment": {
-          "bu-bam": "em-be",
-          "cham-hoc": "chi-cua-em",
-          "da-gia": "ong-ngoai"
+          "tap-bo": "em-be",
+          "cham-sach": "anh-trai",
+          "toc-bac": "ba-ngoai"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b26-tu-ngu-cau-3"
-      ],
       "support": {
         "guide": [
-          "Cột A là người, cột B nói người đó thế nào.",
+          "Cột A là người, cột B nói người đó thế nào hay đang làm gì.",
           "Ghép từng cặp rồi đọc to cả câu xem có hợp không."
         ],
-        "hint": "Ông thì đã già, chị đi học thì chăm học, còn em bé thì tròn trịa.",
+        "hint": "Bà thì tóc đã bạc, anh đi học thì chăm đọc sách, còn em bé thì đang tập bò.",
         "answer": {
-          "text": "Em bé bụ bẫm. Chị của em chăm học. Ông ngoại của em đã già.",
-          "explanation": "Mỗi câu ghép người ở cột A với đặc điểm hợp với người đó ở cột B."
+          "text": "Em bé đang tập bò. Anh trai của em chăm đọc sách. Bà ngoại của em tóc đã bạc.",
+          "explanation": "Mỗi câu ghép người ở cột A với điều hợp với người đó ở cột B."
         }
       },
       "feedback": {
@@ -675,11 +660,12 @@
           "Đúng rồi, {name} ghép câu còn nhanh hơn Mẩy chạy đi hỏi."
         ],
         "wrong": [
-          "\"Em bé đã già\" nghe buồn cười quá! Đổi mảnh khác cho em bé nhé.",
-          "Ai đi học mới cần chăm học? Thử ghép lại cho chị của em.",
-          "Ông ngoại thì tóc bạc rồi. Mảnh nào hợp với ông nhỉ?"
+          "\"Em bé tóc đã bạc\" nghe buồn cười quá! Đổi mảnh khác cho em bé nhé.",
+          "Ai đi học mới cần chăm đọc sách? Thử ghép lại cho anh trai của em.",
+          "Bà ngoại thì tóc bạc rồi. Mảnh nào hợp với bà nhỉ?"
         ]
-      }
+      },
+      "objective": "cau-xep-tu"
     },
     {
       "id": "van-ien-yen-uyen",
@@ -688,8 +674,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t14-qua-trung",
-      "prompt": "Mẹ Gà hát ru quả trứng bốn câu, nhưng Mẩy chen \"Tại sao?\" vào giữa nên mấy vần bị rơi mất. Chọn iên, yên hoặc uyên thay cho ô vuông.",
-      "template": "– Em bé hồn nh{{b1}} ngủ trong lòng mẹ.\n– Ngoài h{{b2}}, trời lặng gió.\n– Hàng cây đứng {{b3}}.\n– Nắng x{{b4}} qua kẽ lá.",
+      "prompt": "Mẹ Gà hát ru quả trứng bốn câu, nhưng Mẩy chen \"Tại sao?\" vào giữa nên mấy vần bị rơi mất. Điền iên, yên hoặc uyên vào chỗ trống.",
+      "template": "– Chim kh{{b1}} hót trên cành chanh.\n– Đêm khuya, cả xóm ngủ {{b2}}.\n– Bà kể chuyện cô t{{b3}} cho bé nghe.\n– Chú bộ đội canh gác ở b{{b4}} giới.",
       "blanks": [
         {
           "id": "b1",
@@ -763,27 +749,21 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "b1": "ien",
-          "b2": "ien",
-          "b3": "yen",
-          "b4": "uyen"
+          "b1": "uyen",
+          "b2": "yen",
+          "b3": "ien",
+          "b4": "ien"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b26-chinh-ta-2-a",
-        "tv2-t1-b26-chinh-ta-2-b",
-        "tv2-t1-b26-chinh-ta-2-c",
-        "tv2-t1-b26-chinh-ta-2-d"
-      ],
       "support": {
         "guide": [
-          "Đọc to từng tiếng còn thiếu vần: hồn nh…, h…, đứng …, x….",
+          "Đọc to từng tiếng còn thiếu vần: kh…, ngủ …, t…, b….",
           "Vần \"yên\" đứng một mình không có âm đầu; \"uyên\" có u đứng trước."
         ],
-        "hint": "Đứng một mình, không có âm đầu thì viết \"yên\"; nắng chiếu xiên xiên qua kẽ lá là \"xuyên\".",
+        "hint": "Ngủ ngon, không còn tiếng động thì viết \"yên\"; chú chim nhỏ tên \"khuyên\" có vần uyên.",
         "answer": {
-          "text": "hồn nhiên; hiên; yên; xuyên",
-          "explanation": "Hồn nhiên, hiên viết vần iên; đứng yên viết yên vì không có âm đầu; nắng xuyên qua kẽ lá viết vần uyên."
+          "text": "khuyên; yên; tiên; biên",
+          "explanation": "Chim khuyên viết vần uyên; ngủ yên viết yên vì không có âm đầu; cô tiên và biên giới viết vần iên."
         }
       },
       "feedback": {
@@ -793,11 +773,12 @@
           "{name} phân biệt iên, yên, uyên chắc như đinh đóng cột!"
         ],
         "wrong": [
-          "\"Đứng yên\" không có âm đầu nào đứng trước, nên dùng vần nào nhỉ?",
-          "Nắng chiếu qua kẽ lá là nắng \"x…\"? Vần này có chữ u đứng trước đấy.",
-          "\"Hồn nhiên\" và \"hiên nhà\" dùng chung một vần, kiểm lại hai ô đầu nhé."
+          "\"Ngủ yên\" không có âm đầu nào đứng trước, nên dùng vần nào nhỉ?",
+          "Chim \"kh…\" hót trên cành có chữ u đứng trước vần, thử lại ô đầu nhé.",
+          "\"Cô tiên\" và \"biên giới\" dùng chung một vần, kiểm lại hai ô cuối nhé."
         ]
-      }
+      },
+      "objective": "chinh-ta-van"
     },
     {
       "id": "dat-hay-rat",
@@ -805,19 +786,19 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t14-qua-trung",
-      "prompt": "Mẩy tập làm anh: đọc to cho em trong trứng nghe, nhưng cứ líu lưỡi giữa d với r, gi với r. Chọn a hoặc b. a. Chọn tiếng thích hợp thay cho ô vuông.",
-      "template": "(dắt/ rắt)\n– Mẹ {{b1}} em đến trường.\n– Tiếng sáo diều réo {{b2}}.\n(gieo/ reo)\n– Em bé {{b3}} lên khi thấy mẹ về.\n– Chị Bống cẩn thận {{b4}} hạt vào chậu đất nhỏ.",
+      "prompt": "Mẩy tập làm anh: đọc to cho em trong trứng nghe, nhưng cứ líu lưỡi giữa d với r, gi với r. Điền tiếng đúng vào chỗ trống.",
+      "template": "(da / ra)\n– Em bé có làn {{b1}} mịn màng.\n– Mẹ {{b2}} chợ từ sớm.\n(giá / rá)\n– Bà úp chiếc {{b3}} tre lên chạn bát.\n– Mẹ mua một nắm {{b4}} đỗ về xào.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "dat",
-              "text": "dắt"
+              "id": "da",
+              "text": "da"
             },
             {
-              "id": "rat",
-              "text": "rắt"
+              "id": "ra",
+              "text": "ra"
             }
           ]
         },
@@ -825,12 +806,12 @@
           "id": "b2",
           "options": [
             {
-              "id": "dat",
-              "text": "dắt"
+              "id": "da",
+              "text": "da"
             },
             {
-              "id": "rat",
-              "text": "rắt"
+              "id": "ra",
+              "text": "ra"
             }
           ]
         },
@@ -838,12 +819,12 @@
           "id": "b3",
           "options": [
             {
-              "id": "gieo",
-              "text": "gieo"
+              "id": "gia",
+              "text": "giá"
             },
             {
-              "id": "reo",
-              "text": "reo"
+              "id": "ra-sac",
+              "text": "rá"
             }
           ]
         },
@@ -851,12 +832,12 @@
           "id": "b4",
           "options": [
             {
-              "id": "gieo",
-              "text": "gieo"
+              "id": "gia",
+              "text": "giá"
             },
             {
-              "id": "reo",
-              "text": "reo"
+              "id": "ra-sac",
+              "text": "rá"
             }
           ]
         }
@@ -864,27 +845,21 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "b1": "dat",
-          "b2": "rat",
-          "b3": "reo",
-          "b4": "gieo"
+          "b1": "da",
+          "b2": "ra",
+          "b3": "ra-sac",
+          "b4": "gia"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b26-chinh-ta-3-a-1",
-        "tv2-t1-b26-chinh-ta-3-a-2",
-        "tv2-t1-b26-chinh-ta-3-a-3",
-        "tv2-t1-b26-chinh-ta-3-a-4"
-      ],
       "support": {
         "guide": [
-          "\"Dắt\" là cầm tay đưa đi; \"réo rắt\" là tiếng kêu vang, ngân dài.",
-          "\"Reo\" là kêu lên vui mừng; \"gieo\" là thả hạt xuống đất."
+          "\"Da\" là phần da bọc ngoài cơ thể; \"ra\" là đi từ trong ra ngoài.",
+          "\"Rá\" là đồ đan để đựng, rửa rau; \"giá\" là rau mầm của hạt đỗ."
         ],
-        "hint": "Mẹ cầm tay em đi là dắt; hạt giống thì phải gieo.",
+        "hint": "Em bé có làn da mịn; mẹ ra chợ; giá đỗ là rau mầm; rá tre dùng để đựng.",
         "answer": {
-          "text": "Mẹ dắt em đến trường. Tiếng sáo diều réo rắt. Em bé reo lên khi thấy mẹ về. Chị Bống cẩn thận gieo hạt vào chậu đất nhỏ.",
-          "explanation": "Dắt (đưa đi), réo rắt (tiếng ngân vang), reo (kêu lên vui mừng), gieo (thả hạt giống)."
+          "text": "Em bé có làn da mịn màng. Mẹ ra chợ từ sớm. Bà úp chiếc rá tre lên chạn bát. Mẹ mua một nắm giá đỗ về xào.",
+          "explanation": "Da (phần bọc ngoài cơ thể), ra (đi ra), rá (đồ đan bằng tre), giá (giá đỗ) là bốn từ viết đúng chính tả."
         }
       },
       "feedback": {
@@ -894,11 +869,12 @@
           "Bốn tiếng chuẩn chỉnh, {name} tinh tai quá!"
         ],
         "wrong": [
-          "Mẹ cầm tay em đi học thì viết \"dắt\" hay \"rắt\"? Thử lại ô đầu nhé.",
-          "Tiếng sáo diều ngân vang là \"réo r…\", chọn tiếng hợp với \"réo\" xem.",
-          "Hạt giống thì không biết reo đâu! Thả hạt xuống đất là \"gieo\"."
+          "Làn gì mịn màng của em bé nhỉ? Thử lại ô đầu nhé.",
+          "Mẹ đi từ nhà tới chợ thì dùng \"ra\" hay \"da\"? Đọc to xem sao.",
+          "Một nắm rau mầm để xào là \"giá\" đỗ, còn \"rá\" dùng để đựng, đổi lại hai ô cuối xem."
         ]
-      }
+      },
+      "objective": "chinh-ta-am-dau"
     },
     {
       "id": "ai-hay-ay",
@@ -907,19 +883,19 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t14-b26-gau-truc-banh-bao",
-      "prompt": "Mẩy lấy mỏ vẽ một bạn gái lên nền đất, đánh số 1, 2, 3, 4 vào tranh rồi đố {name}. Chọn a hoặc b. b. Nhìn tranh, tìm từ ngữ chứa ai hoặc ay. Viết các từ em tìm được vào vở.",
-      "template": "Số 1, chỗ bạn gái dùng để vẫy chào: {{b1}}\nSố 2, chỗ để nghe Mẩy hỏi \"Tại sao?\": {{b2}}\nSố 3, chỗ đeo quai cặp sách: {{b3}}\nSố 4, thứ màu đỏ bạn gái mặc, xoay một vòng là xoè ra: {{b4}}",
+      "prompt": "Mẩy lấy mỏ vẽ lên nền đất bốn món đố, đánh số 1, 2, 3, 4 rồi đố {name}. Chọn từ đúng chính tả cho mỗi số.",
+      "template": "Số 1, loài hoa vàng nở rộ dịp Tết: {{b1}}\nSố 2, thứ trắng xốp trôi lững lờ trên trời: {{b2}}\nSố 3, số đứng ngay sau số một: {{b3}}\nSố 4, vật bằng thủy tinh, cổ nhỏ, hay đựng nước: {{b4}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "tai",
-              "text": "tai"
+              "id": "may",
+              "text": "may"
             },
             {
-              "id": "tay",
-              "text": "tay"
+              "id": "mai",
+              "text": "mai"
             }
           ]
         },
@@ -927,12 +903,12 @@
           "id": "b2",
           "options": [
             {
-              "id": "tay",
-              "text": "tay"
+              "id": "mai-sac",
+              "text": "mái"
             },
             {
-              "id": "tai",
-              "text": "tai"
+              "id": "may-mu",
+              "text": "mây"
             }
           ]
         },
@@ -940,12 +916,12 @@
           "id": "b3",
           "options": [
             {
-              "id": "vay",
-              "text": "vay"
+              "id": "hai",
+              "text": "hai"
             },
             {
-              "id": "vai",
-              "text": "vai"
+              "id": "hay",
+              "text": "hay"
             }
           ]
         },
@@ -953,12 +929,12 @@
           "id": "b4",
           "options": [
             {
-              "id": "vay-sac",
-              "text": "váy"
+              "id": "chay",
+              "text": "chay"
             },
             {
-              "id": "vai-sac",
-              "text": "vái"
+              "id": "chai",
+              "text": "chai"
             }
           ]
         }
@@ -966,38 +942,36 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "b1": "tay",
-          "b2": "tai",
-          "b3": "vai",
-          "b4": "vay-sac"
+          "b1": "mai",
+          "b2": "may-mu",
+          "b3": "hai",
+          "b4": "chai"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b26-chinh-ta-3-b"
-      ],
       "support": {
         "guide": [
-          "Chỉ vào chính mình: tay, tai, vai đều ở trên người em.",
-          "Đọc to rồi nghe vần cuối: \"ai\" hay \"ay\"."
+          "Đọc to từng câu đố rồi nghe vần cuối: \"ai\" hay \"ay\".",
+          "Nghĩ tới hoa mai ngày Tết, đám mây trên trời, số hai, cái chai."
         ],
-        "hint": "Bàn tay vẫy chào là \"tay\"; tai để nghe; vai đeo cặp; chiếc váy đỏ.",
+        "hint": "Hoa vàng ngày Tết là mai; trôi trên trời là mây; sau một là hai; đựng nước là chai.",
         "answer": {
-          "text": "tay, tai, vai, váy",
-          "explanation": "Tay và váy có vần ay; tai và vai có vần ai."
+          "text": "mai, mây, hai, chai",
+          "explanation": "Mai, hai, chai có vần ai; mây có vần ây."
         }
       },
       "feedback": {
         "right": [
           "Đoán trúng cả bốn! Mẩy vỗ cánh: tại sao cậu giỏi thế?",
-          "Đúng rồi, tay – tai – vai – váy, không nhầm vần nào!",
-          "{name} đọc tranh còn tinh hơn mắt gà con."
+          "Đúng rồi, mai – mây – hai – chai, không nhầm vần nào!",
+          "{name} đọc câu đố còn tinh hơn mắt gà con."
         ],
         "wrong": [
-          "Vẫy chào thì dùng tai được không nhỉ? Thử vẫy tai xem, khó lắm!",
-          "Chỗ đeo quai cặp ở trên vai, đọc to \"vai\" nghe vần ai đấy.",
-          "Bạn gái mặc chiếc \"v…\" màu đỏ: đọc thật chậm xem vần ai hay ay."
+          "Hoa vàng nở dịp Tết là hoa gì nhỉ? Đọc to nghe vần cuối xem.",
+          "Thứ trôi lững lờ trên trời có dáng bồng bềnh, không phải mái nhà đâu.",
+          "Số đứng sau số một, đếm lên: một, …? Đọc thật chậm xem vần ai hay ay."
         ]
-      }
+      },
+      "objective": "chinh-ta-van"
     },
     {
       "id": "qua-trung-nut",
@@ -1034,7 +1008,7 @@
         },
         {
           "text": "Kể cho em nghe chuyện ba đầu mối",
-          "reply": "Mẩy kể say sưa: em không từ sao, không từ biển, em từ yêu thương của nhà mình!"
+          "reply": "Mẩy kể say sưa: em không từ sao, không từ vỏ ốc, em từ niềm vui của cả nhà mình!"
         }
       ],
       "en": {
@@ -1057,7 +1031,7 @@
           },
           {
             "text": "Tell the baby the story of the three clues",
-            "reply": "Mẩy tells it eagerly: you didn't come from the stars or the sea, you came from our family's love!"
+            "reply": "Mẩy tells it eagerly: you didn't come from a star or a snail shell, you came from our whole family's joy!"
           }
         ]
       }
@@ -1068,23 +1042,23 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t14-qua-trung",
-      "prompt": "Em gà con lông vàng óng mở mắt nhìn Mẩy không chớp. Mẹ Gà mỉm cười: \"Giống hệt em Nụ trong sách nhé!\" Chọn từ ngữ trong ngoặc thay cho ô vuông.",
-      "template": "(mở to, đen láy, đỏ hồng) Em Nụ môi {{b1}}, trông yêu lắm. Em đã lớn lên nhiều. Em ngủ ít hơn trước. Có lúc, mắt em {{b2}}, tròn và {{b3}}. Em cứ nhìn Hoa mãi. Hoa yêu em và rất thích đưa võng ru em ngủ. (Theo Minh Tâm)",
+      "prompt": "Em gà con lông vàng óng mở mắt nhìn Mẩy không chớp. Mẹ Gà mỉm cười kể về bé Bống nhà hàng xóm cho Mẩy nghe. Chọn từ ngữ trong ngoặc điền vào chỗ trống.",
+      "template": "(mũm mĩm, tròn xoe, bi bô) Bống mới ba tháng tuổi. Em hay nằm nói {{b1}} một mình. Khi nghe tiếng mẹ, đôi mắt em {{b2}} nhìn quanh. Hai má em {{b3}}, ai thấy cũng muốn thơm.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "mo-to",
-              "text": "mở to"
+              "id": "mum-mim",
+              "text": "mũm mĩm"
             },
             {
-              "id": "den-lay",
-              "text": "đen láy"
+              "id": "tron-xoe",
+              "text": "tròn xoe"
             },
             {
-              "id": "do-hong",
-              "text": "đỏ hồng"
+              "id": "bi-bo",
+              "text": "bi bô"
             }
           ]
         },
@@ -1092,16 +1066,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "mo-to",
-              "text": "mở to"
+              "id": "mum-mim",
+              "text": "mũm mĩm"
             },
             {
-              "id": "den-lay",
-              "text": "đen láy"
+              "id": "tron-xoe",
+              "text": "tròn xoe"
             },
             {
-              "id": "do-hong",
-              "text": "đỏ hồng"
+              "id": "bi-bo",
+              "text": "bi bô"
             }
           ]
         },
@@ -1109,16 +1083,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "mo-to",
-              "text": "mở to"
+              "id": "mum-mim",
+              "text": "mũm mĩm"
             },
             {
-              "id": "den-lay",
-              "text": "đen láy"
+              "id": "tron-xoe",
+              "text": "tròn xoe"
             },
             {
-              "id": "do-hong",
-              "text": "đỏ hồng"
+              "id": "bi-bo",
+              "text": "bi bô"
             }
           ]
         }
@@ -1126,37 +1100,35 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "b1": "do-hong",
-          "b2": "mo-to",
-          "b3": "den-lay"
+          "b1": "bi-bo",
+          "b2": "tron-xoe",
+          "b3": "mum-mim"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b26-tu-ngu-cau-2"
-      ],
       "support": {
         "guide": [
-          "Ô đầu tả đôi môi; hai ô sau tả đôi mắt.",
-          "Đôi mắt làm gì trước, rồi mới \"tròn và\" màu gì?"
+          "\"Bi bô\" là tiếng em bé tập nói; \"tròn xoe\" tả đôi mắt mở to; \"mũm mĩm\" tả đôi má bụ bẫm.",
+          "Thử đặt từng từ vào câu, từ nào đọc nghe xuôi và đúng nghĩa thì giữ lại."
         ],
-        "hint": "Môi thì đỏ hồng; mắt mở to, tròn và đen láy.",
+        "hint": "Em bé nói thì bi bô; mắt thì tròn xoe; má thì mũm mĩm.",
         "answer": {
-          "text": "Em Nụ môi đỏ hồng, trông yêu lắm. … Có lúc, mắt em mở to, tròn và đen láy.",
-          "explanation": "Đỏ hồng tả màu môi; mở to tả mắt đang nhìn; đen láy tả màu mắt đen và sáng."
+          "text": "Em hay nằm nói bi bô một mình. Đôi mắt em tròn xoe nhìn quanh. Hai má em mũm mĩm.",
+          "explanation": "Bi bô hợp với tiếng nói, tròn xoe hợp với đôi mắt, mũm mĩm hợp với đôi má của em bé."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi! Em gà con chớp mắt đen láy, Mẩy sướng quá nhảy tưng tưng.",
+          "Đúng rồi! Em gà con chớp đôi mắt tròn xoe, Mẩy sướng quá nhảy tưng tưng.",
           "Ba ô chuẩn hết! Mẹ Gà khen {name} tả em bé dễ thương ghê.",
           "Hay lắm, đọc lên thấy ngay một em bé xinh xinh."
         ],
         "wrong": [
-          "Môi em bé có màu gì nhỉ? Mắt mới đen láy chứ môi thì không đâu.",
-          "Mắt em \"…, tròn và …\": mắt làm gì trước rồi mới tả màu. Thử đổi chỗ hai ô sau xem.",
-          "Ô đầu tiên tả đôi môi đấy, chọn từ chỉ màu đỏ nhé."
+          "Nói thì phải đi với từ chỉ tiếng nói của em bé, chứ không phải tả má đâu.",
+          "Đôi mắt thì tròn chứ đâu mũm mĩm. Đổi chỗ hai từ xem sao.",
+          "Hai má bụ bẫm thì hợp với từ nào nhất? Thử lại ô cuối nhé."
         ]
-      }
+      },
+      "objective": "tu-ngu-tinh-cam-dien-tu"
     },
     {
       "id": "doc-tho-cho-em",
@@ -1164,31 +1136,49 @@
       "goTo": "Cùng Mẩy ra chiếc võng dưới hiên nhà Mẩy ru em",
       "kind": "speak",
       "target": "tv2-t14-vong-hien",
-      "prompt": "Mẩy đưa võng cho em, cót két, cót két, mắt em díp dần. Tìm đọc bài thơ về tình cảm anh chị em trong nhà. Đọc cho bạn nghe những câu thơ em thích.",
+      "prompt": "Mẩy đưa võng cho em, cót két, cót két, mắt em díp dần. Đọc cho em nghe một bài thơ hoặc một lời ru mà em thích, hay đọc lại vài dòng của bài \"Em bé từ đâu đến\".",
       "hints": [
-        "Trong sách có bài \"Tiếng võng kêu\" của Trần Đăng Khoa: Em ơi hãy ngủ / Tay anh đưa đều…",
-        "Nhờ bố mẹ, thầy cô hoặc tìm ở thư viện lớp một bài thơ khác về anh chị em.",
+        "Em có thể đọc lại những dòng thơ vừa học, hoặc một lời ru bà, mẹ từng hát.",
+        "Nhờ người thân giúp nếu em chưa nhớ lời ru nào.",
         "Đọc thật chậm, thật dịu những câu em thích để em gà con ngủ ngon."
       ],
-      "curriculumRef": [
-        "tv2-t1-b26-doc-mo-rong-1",
-        "tv2-t1-b26-doc-mo-rong-2"
-      ]
+      "objective": "doc-tho-doc-to"
     },
     {
       "id": "phieu-viet-bai-26",
-      "title": "Phiếu viết bài 26",
+      "title": "Phiếu viết: khổ thơ và việc người thân làm",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b26",
-      "text": "Mẩy thì thầm cho em khỏi thức: {name} nhờ bố mẹ in phiếu Bài 26 ở khu phụ huynh để nghe – viết hai khổ thơ đầu, đọc đoạn văn về ông ngoại rồi viết 3 – 4 câu kể việc người thân làm cho em nhé.",
-      "curriculumRef": [
-        "tv2-t1-b26-nghe-viet-1",
-        "tv2-t1-b26-viet-doan-1-a",
-        "tv2-t1-b26-viet-doan-1-b",
-        "tv2-t1-b26-viet-doan-1-c",
-        "tv2-t1-b26-viet-doan-2"
-      ]
+      "text": "Mẩy thì thầm cho em khỏi thức: {name} nhờ người thân in phiếu viết ở khu phụ huynh, nghe – viết khổ thơ tả em bé, chép một câu khen em rồi kể việc người thân đã làm cho mình nhé.",
+      "objective": "chinh-ta-nghe-viet",
+      "sheet": {
+        "title": "Phiếu viết: em bé và người thân",
+        "blocks": [
+          {
+            "kind": "dictation",
+            "prompt": "Nghe và viết lại khổ thơ tả em bé",
+            "title": "Em bé từ đâu đến",
+            "text": "Má em hồng quả đào\nMắt đen như hạt na\nTay mềm như bông gòn\nChân đi còn chập chững"
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: Bé Bống cười bi bô, hai má mũm mĩm.",
+            "model": [
+              "Bé Bống cười bi bô, hai má mũm mĩm."
+            ]
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Kể bằng 3 – 4 câu về một lần người thân chăm sóc hoặc giúp đỡ em.",
+            "hints": [
+              "Người thân của em là ai?",
+              "Người ấy đã làm việc gì cho em?",
+              "Em cảm thấy thế nào và muốn nói gì với người ấy?"
+            ],
+            "lines": 6
+          }
+        ]
+      }
     },
     {
       "id": "qua-cua-chip",

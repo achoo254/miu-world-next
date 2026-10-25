@@ -4,18 +4,17 @@
   "chapter": 3,
   "title": "Dìu ông Vện qua dốc",
   "status": "active",
-  "lesson": "tv2-t1-b30",
   "topic": "tu-chi-su-vat-hoat-dong",
-  "summary": "Ông Vện, ông nội của Cún Vừng, đau chân giữa con dốc gập ghềnh lên nhà ông mà vẫn khoe hồi trẻ chạy nhanh hơn gió. {name} tìm lại cây gậy, đọc bài thơ \"Thương ông\" cùng hai ông cháu, rồi dìu ông về tới thềm nhà.",
+  "summary": "Ông Vện, ông nội của Cún Vừng, đau chân giữa con dốc gập ghềnh lên nhà ông mà vẫn khoe hồi trẻ chạy nhanh hơn gió. {name} tìm lại cây gậy, đọc bài thơ \"Cháu dìu bà qua suối\" cùng hai ông cháu, rồi dìu ông về tới thềm nhà.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Cún Vừng trung thành, ông Vện (ông nội Cún Vừng, đau chân nhưng mê kể chuyện hồi trẻ), Bê Cốm gặm cỏ lưng dốc, Bác tiều phu Bảy gánh củi, Cô Lựu hàng xóm mê đọc",
     "where": "Con dốc gập ghềnh lên nhà ông trong xóm: chân dốc, bụi tre ven dốc, tảng đá lưng dốc, bãi cỏ lưng dốc, lối mòn đỉnh dốc, thềm nhà ông và hiên nhà hàng xóm",
     "goal": "Tìm gậy, kính và mũ cho ông Vện rồi dìu ông qua dốc về nhà",
     "play": "Tìm đồ, nói, đọc thơ, trắc nghiệm, chọn nhiều đáp án, điền chữ, xếp từ vào nhóm, ghép câu trả lời với câu hỏi, lựa chọn trong hội thoại, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 30: đọc hiểu bài thơ \"Thương ông\", từ chỉ dáng vẻ, chính tả ch/tr và ac/at, từ chỉ sự vật, hoạt động, câu nêu hoạt động, kể việc làm cùng người thân",
+    "learn": "Đọc hiểu bài thơ kể chuyện \"Cháu dìu bà qua suối\" (tự viết), từ tả dáng vẻ, chính tả ch/tr và ac/at, từ chỉ sự vật, hoạt động, câu nêu hoạt động, kể việc làm cùng người thân",
     "reward": "80 XP, 15 xu, Đọc hiểu +2, Chính tả +1, Từ ngữ +1, Câu +1",
-    "next": "Bài 31 \"Ánh sáng của yêu thương\": hồ sen của xóm lúc hoàng hôn"
+    "next": "Hồ sen của xóm lúc hoàng hôn: đàn đom đóm rủ nhau đi soi đường giúp Cá Bống"
   },
   "phases": {
     "hook": "gap-cho-muc",
@@ -28,25 +27,26 @@
     "next": "mo-bai-31"
   },
   "texts": {
-    "thuong-ong": {
-      "title": "Thương ông",
-      "author": "Tú Mỡ",
-      "body": "Ông bị đau chân,\nNó sưng nó tấy\nĐi phải chống gậy\nKhập khiễng khập khà,\nBước lên thềm nhà,\nNhấc chân quá khó.\n\nThấy ông nhăn nhó\nViệt chơi ngoài sân\nLon ton lại gần\nÂu yếm nhanh nhảu:\n“Ông vịn vai cháu!\nCháu đỡ ông lên”.\n\nÔng bước lên thềm\nTrong lòng sung sướng,\nQuẳng gậy, cúi xuống\nQuên cả đớn đau\n\nÔm cháu xoa đầu:\n“Hoan hô thằng bé\nBé thế mà khoẻ\nVì nó thương ông”.",
+    "chau-diu-ba": {
+      "title": "Cháu dìu bà qua suối",
+      "body": "Chiều nay trời mát\nBà ra bờ suối\nTrượt chân trên đá\nCổ chân sưng đỏ\nBà đi tập tễnh\n\nBé Na đang hái\nRau dại ven đường\nThấy bà nhăn mặt\nNhanh nhẹn chạy tới\nTíu tít gọi: Bà!\n\nCháu nắm tay bà\nÂn cần dìu bước\nQua mấy phiến đá\nLên thềm nhà mình\nTừng bước thật khẽ\n\nBà ngồi xuống ghế\nXoa đầu cháu nhỏ\nKhen: Nhỏ mà khoẻ!\nVì cháu thương bà\nẤm cả buổi chiều",
       "glossary": [
         {
-          "term": "Tấy",
-          "meaning": "sưng to, làm cho đau nhức."
+          "term": "Tập tễnh",
+          "meaning": "dáng đi của người đau chân, bước nhấc cao nhấc thấp không đều."
         },
         {
-          "term": "Khập khiễng khập khà",
-          "meaning": "dáng đi bên cao, bên thấp, không đều."
+          "term": "Ân cần",
+          "meaning": "chu đáo, quan tâm đến người khác một cách nhẹ nhàng."
         },
         {
-          "term": "Lon ton",
-          "meaning": "dáng đi hoặc chạy (thường của trẻ em) với những bước ngắn, nhanh."
+          "term": "Tíu tít",
+          "meaning": "rối rít, vội vàng vì vui hoặc vì lo."
         }
       ],
-      "section": "tv2-t1-b30-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -132,15 +132,13 @@
       "goTo": "Mang đồ về chân dốc trả ông Vện",
       "kind": "speak",
       "target": "ong-ven",
-      "prompt": "Ông Vện đeo kính lên, nhìn rõ {name} rồi cười móm mém: \"Cháu tìm được cả ba món, ông vui như được ăn xương ống!\". Cún Vừng hỏi nhỏ: còn việc gì làm ông bà, bố mẹ mình vui nữa nhỉ?\nKể những việc em làm khiến người thân vui.",
+      "prompt": "Ông Vện đeo kính lên, nhìn rõ {name} rồi cười móm mém: \"Cháu tìm được cả ba món, ông vui như được ăn xương ống!\". Cún Vừng hỏi nhỏ: ở nhà, cậu từng làm việc gì khiến ông bà, bố mẹ mỉm cười chưa? Kể cho Cún nghe nhé.",
       "hints": [
-        "Ở nhà, em đã giúp ông bà, bố mẹ việc gì?",
-        "Khi em làm việc đó, người thân nói gì, cười thế nào?",
-        "Cún Vừng thì hay mang dép cho ông, còn em?"
+        "Việc ấy cậu làm cùng ai, ở đâu?",
+        "Người thân nói gì hoặc cười ra sao khi thấy việc cậu làm?",
+        "Cún Vừng hay mang dép cho ông, còn cậu thì sao?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b30-doc-kd"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "doc-thuong-ong",
@@ -148,275 +146,265 @@
       "goTo": "Dìu ông lên tảng đá lưng dốc nghỉ chân và đọc thơ",
       "kind": "read",
       "target": "tv2-t16-tang-da-lung-doc",
-      "textRef": "thuong-ong",
+      "textRef": "chau-diu-ba",
       "audio": true,
-      "question": "Ông của Việt bị làm sao?",
+      "question": "Ông Vện bảo bài thơ này ông thuộc từ nhỏ vì giống chuyện bà của ông. Trong bài, bà của bé Na bị làm sao?",
       "choices": [
         {
           "id": "dau-chan",
-          "text": "Ông bị đau chân, chân sưng tấy lên."
+          "text": "Bà trượt chân trên đá, cổ chân sưng đỏ."
         },
         {
           "id": "dau-lung",
-          "text": "Ông bị đau lưng nên không cúi xuống được."
+          "text": "Bà đau lưng nên không cúi xuống được."
         },
         {
           "id": "mat-gay",
-          "text": "Ông bị mất cây gậy nên không đi được."
+          "text": "Bà làm rơi gánh nước nên không đi được."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "dau-chan"
       },
-      "curriculumRef": [
-        "tv2-t1-b30-doc-1"
-      ],
       "support": {
         "guide": [
           "Đọc khổ thơ đầu tiên.",
-          "Tìm chỗ bài thơ nói ông đau ở đâu."
+          "Tìm chỗ bài thơ nói bà ra bờ suối và gặp chuyện gì."
         ],
-        "hint": "Hai dòng đầu bài thơ trả lời ngay câu này.",
+        "hint": "Bốn dòng đầu của bài trả lời ngay câu này.",
         "answer": {
-          "text": "Ông bị đau chân, nó sưng nó tấy.",
-          "explanation": "Khổ thơ đầu kể ông đau chân, chân sưng tấy nên phải chống gậy, đi khập khiễng."
+          "text": "Bà trượt chân trên đá nên cổ chân sưng đỏ.",
+          "explanation": "Khổ một kể bà trượt chân trên đá bờ suối, cổ chân sưng đỏ, đi tập tễnh."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, ông của Việt đau chân. Ông Vện xuýt xoa: y như ông bây giờ!",
-          "Chuẩn! Chân sưng tấy nên ông mới phải chống gậy đấy.",
+          "Đúng rồi, bà bị đau chân. Ông Vện xuýt xoa: y như ông bây giờ!",
+          "Chuẩn! Trượt chân trên đá nên cổ chân mới sưng đỏ đấy.",
           "Cún Vừng gật gù: {name} đọc một lần là nhớ ngay khổ đầu."
         ],
         "wrong": [
-          "Ông vẫn cúi xuống ôm cháu được mà, đâu phải đau lưng.",
-          "Ông trong bài vẫn có gậy để chống, đọc lại dòng thứ ba xem.",
-          "Hai dòng đầu bài thơ nói rõ ông đau chỗ nào, dò lại nhé."
+          "Bà vẫn cúi xuống xoa đầu cháu được mà, đâu phải đau lưng.",
+          "Bài thơ không kể bà làm rơi gánh nước đâu. Đọc lại khổ một xem.",
+          "Mấy dòng đầu bài thơ nói rõ bà đau ở đâu, dò lại nhé."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "viet-giup-ong",
-      "title": "Việt giúp ông thế nào",
+      "title": "Na giúp bà thế nào",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t16-tang-da-lung-doc",
-      "prompt": "Ông Vện đọc tới đoạn bạn Việt thì chống cằm hỏi Cún Vừng: \"Thế cháu có làm được như bạn ấy không?\". Cún Vừng đỏ cả tai, nhờ {name} trả lời trước.\nKhi thấy ông đau, Việt đã làm gì để giúp ông?",
+      "prompt": "Ông Vện đọc tới đoạn bé Na thì chống cằm hỏi Cún Vừng: \"Thế cháu có làm được như bạn ấy không?\". Cún Vừng đỏ cả tai, nhờ {name} trả lời trước.\nKhi thấy bà nhăn mặt vì đau, bé Na đã làm gì?",
       "choices": [
         {
-          "id": "dong-vien",
-          "text": "Việt lại gần động viên ông"
-        },
-        {
-          "id": "vin-vai",
-          "text": "Việt để ông vịn vào vai mình rồi đỡ ông đứng lên"
-        },
-        {
           "id": "nam-tay",
-          "text": "Việt âu yếm nắm lấy tay ông"
+          "text": "Na nắm tay bà, ân cần dìu bà từng bước lên thềm nhà."
+        },
+        {
+          "id": "goi-xom",
+          "text": "Na chạy đi gọi cả xóm đến giúp."
+        },
+        {
+          "id": "hai-rau",
+          "text": "Na ngồi xuống hái thêm rau dại cho bà."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "vin-vai"
+        "choice": "nam-tay"
       },
-      "curriculumRef": [
-        "tv2-t1-b30-doc-2"
-      ],
       "support": {
         "guide": [
-          "Đọc lời Việt nói với ông trong khổ thơ thứ hai.",
-          "Việt bảo ông làm gì, còn Việt làm gì?"
+          "Đọc khổ thơ thứ ba, chỗ có hai chữ \"dìu bước\".",
+          "Na đứng xa bà hay đi sát bên bà?"
         ],
-        "hint": "Việt nói: \"Ông vịn vai cháu! Cháu đỡ ông lên\".",
+        "hint": "Na nắm tay bà rồi cùng bà bước qua mấy phiến đá.",
         "answer": {
-          "text": "b. Việt để ông vịn vào vai mình rồi đỡ ông đứng lên",
-          "explanation": "Lời Việt trong bài thơ cho thấy Việt đưa vai cho ông vịn và đỡ ông bước lên thềm."
+          "text": "Na nắm tay và dìu bà bước qua đá, lên thềm nhà.",
+          "explanation": "Khổ ba cho thấy Na nắm tay bà, dìu từng bước qua phiến đá cho tới thềm nhà."
         }
       },
       "feedback": {
         "right": [
-          "Đúng thế! Cún Vừng ưỡn vai ra luôn: ông vịn vai cháu đây!",
-          "Chuẩn, Việt đưa vai cho ông vịn rồi đỡ ông lên.",
+          "Đúng thế! Cún Vừng đưa bàn chân ra luôn: ông nắm chân cháu đây!",
+          "Chuẩn, Na nắm tay rồi dìu bà đi từng bước.",
           "Ông Vện vỗ đùi: cháu nhà ai mà đọc thơ tinh thế!"
         ],
         "wrong": [
-          "Việt có lại gần, nhưng còn làm một việc giúp ông nhiều hơn thế.",
-          "Đọc lời Việt nói trong ngoặc kép xem, có chữ \"vịn vai\" đấy.",
-          "Việt không chỉ nắm tay đâu, bạn ấy còn đỡ ông bước lên nữa."
+          "Na không đi gọi cả xóm đâu, bé tự tới bên bà ngay.",
+          "Hái rau là việc Na làm trước khi gặp bà, chưa phải lúc giúp bà.",
+          "Đọc khổ thơ thứ ba: Na làm gì bằng đôi tay của mình?"
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "dang-ve-cua-viet",
-      "title": "Tìm từ tả dáng vẻ của Việt",
+      "title": "Tìm từ tả bé Na",
       "goTo": "Lên bãi cỏ lưng dốc, Bê Cốm ngẩng lên xem Cún Vừng tập làm bạn Việt",
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t16-b30-be-com",
-      "prompt": "Cún Vừng muốn tả mình y như bạn Việt để ông khen. Giúp Cún Vừng chọn cho đúng nhé.\nTừ ngữ nào dưới đây thể hiện dáng vẻ của Việt? lon ton, nhăn nhó, âu yếm, nhanh nhảu, khập khiễng khập khà",
+      "prompt": "Cún Vừng muốn tả mình y như bạn Na để ông khen. Giúp Cún chọn cho đúng nhé.\nTrong các từ sau, những từ nào tả Na chứ không tả bà? nhanh nhẹn, tập tễnh, ân cần, nhăn mặt, tíu tít",
       "choices": [
         {
-          "id": "lon-ton",
-          "text": "lon ton"
+          "id": "nhanh-nhen",
+          "text": "nhanh nhẹn"
         },
         {
-          "id": "nhan-nho",
-          "text": "nhăn nhó"
+          "id": "tap-te",
+          "text": "tập tễnh"
         },
         {
-          "id": "au-yem",
-          "text": "âu yếm"
+          "id": "an-can",
+          "text": "ân cần"
         },
         {
-          "id": "nhanh-nhau",
-          "text": "nhanh nhảu"
+          "id": "nhan-mat",
+          "text": "nhăn mặt"
         },
         {
-          "id": "khap-khieng",
-          "text": "khập khiễng khập khà"
+          "id": "tiu-tit",
+          "text": "tíu tít"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "choices": [
-          "lon-ton",
-          "au-yem",
-          "nhanh-nhau"
+          "nhanh-nhen",
+          "an-can",
+          "tiu-tit"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b30-doc-lt1"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ thứ hai, chỗ Việt đang chơi ngoài sân.",
-          "Từ nào tả ông thì không chọn."
+          "Đọc khổ thơ thứ hai và thứ ba, chỗ bé Na chạy tới bên bà.",
+          "Từ nào tả bà đang đau thì không chọn."
         ],
-        "hint": "Có ba từ tả Việt; hai từ còn lại tả ông lúc đau chân.",
+        "hint": "Có ba từ tả Na; hai từ còn lại tả bà lúc đau chân.",
         "answer": {
-          "text": "lon ton; âu yếm; nhanh nhảu",
-          "explanation": "Việt \"lon ton lại gần, âu yếm nhanh nhảu\"; còn \"nhăn nhó\", \"khập khiễng khập khà\" là dáng vẻ của ông khi đau chân."
+          "text": "nhanh nhẹn; ân cần; tíu tít",
+          "explanation": "Na \"nhanh nhẹn chạy tới\", \"tíu tít gọi\", \"ân cần dìu bước\"; còn \"tập tễnh\", \"nhăn mặt\" là dáng vẻ của bà khi đau."
         }
       },
       "feedback": {
         "right": [
-          "Ba từ chuẩn không cần chỉnh! Cún Vừng chạy lon ton một vòng quanh tảng đá.",
-          "Đúng là dáng vẻ của Việt: lon ton, âu yếm, nhanh nhảu.",
-          "Ông Vện cười khà: con cháu nhà này đứa nào cũng nhanh nhảu thế."
+          "Ba từ chuẩn không cần chỉnh! Cún Vừng chạy tíu tít một vòng quanh tảng đá.",
+          "Đúng là dáng vẻ của Na: nhanh nhẹn, ân cần, tíu tít.",
+          "Ông Vện cười khà: con cháu nhà này đứa nào cũng nhanh nhẹn thế."
         ],
         "wrong": [
-          "Nhăn nhó là khuôn mặt của ông lúc đau, đâu phải của Việt.",
-          "Khập khiễng khập khà là dáng ông đi, bỏ từ đó ra nhé.",
-          "Còn sót một từ tả Việt đấy, đọc lại dòng \"Âu yếm nhanh nhảu\"."
+          "Nhăn mặt là nét mặt của bà lúc đau, đâu phải của Na.",
+          "Tập tễnh là dáng bà đi, bỏ từ đó ra nhé.",
+          "Còn sót một từ tả Na đấy, đọc lại dòng có chữ \"tíu tít\"."
         ]
-      }
+      },
+      "objective": "doc-tho-hinh-anh"
     },
     {
       "id": "vi-sao-be-ma-khoe",
-      "title": "Bé thế mà khoẻ",
+      "title": "Nhỏ mà khoẻ",
       "goTo": "Trở lại tảng đá lưng dốc, ông Vện đọc tiếp khổ thơ sau",
       "kind": "read",
       "target": "tv2-t16-tang-da-lung-doc",
-      "textRef": "thuong-ong",
-      "question": "Theo ông, vì sao Việt tuy bé mà khoẻ?",
+      "textRef": "chau-diu-ba",
+      "question": "Theo lời bà, vì sao bé Na nhỏ mà khoẻ?",
       "choices": [
         {
           "id": "thuong-ong",
-          "text": "Vì nó thương ông"
+          "text": "Vì Na thương bà"
         },
         {
           "id": "an-nhieu",
-          "text": "Vì Việt ăn hết ba bát cơm mỗi bữa"
+          "text": "Vì ngày nào Na cũng gánh nước giúp mẹ"
         },
         {
           "id": "tap-vo",
-          "text": "Vì Việt đi tập võ mỗi sáng"
+          "text": "Vì Na được ăn thật nhiều rau dại"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "thuong-ong"
       },
-      "curriculumRef": [
-        "tv2-t1-b30-doc-3"
-      ],
       "support": {
         "guide": [
           "Đọc khổ thơ cuối cùng.",
-          "Ông nói \"Bé thế mà khoẻ\" rồi giải thích vì sao."
+          "Bà nói \"Nhỏ mà khoẻ\" rồi giải thích vì sao."
         ],
-        "hint": "Câu trả lời là dòng thơ cuối cùng của bài.",
+        "hint": "Dòng thơ ngay sau lời khen cho biết lí do.",
         "answer": {
-          "text": "Ông bảo Việt khoẻ là vì Việt thương ông.",
-          "explanation": "Dòng thơ cuối \"Vì nó thương ông\" cho thấy tình thương làm Việt khoẻ hơn."
+          "text": "Bà bảo Na khoẻ là vì Na thương bà.",
+          "explanation": "Sau lời khen, bài thơ nói rõ: vì cháu thương bà, nên cháu có sức dìu bà đi."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, vì Việt thương ông! Ông Vện sụt sịt: thơ hay quá, bụi bay vào mắt ông.",
+          "Đúng rồi, vì Na thương bà! Ông Vện sụt sịt: thơ hay quá, bụi bay vào mắt ông.",
           "Chuẩn, tình thương làm bạn nhỏ khoẻ hẳn lên.",
-          "Cún Vừng thì thầm: vậy tớ thương ông thật nhiều để khoẻ như Việt."
+          "Cún Vừng thì thầm: vậy tớ thương ông thật nhiều để khoẻ như Na."
         ],
         "wrong": [
-          "Bài thơ không kể Việt ăn mấy bát cơm đâu.",
-          "Việt chưa đi tập võ, đọc dòng thơ cuối cùng xem.",
-          "Ông khen ở khổ cuối, có chữ \"Vì\" ở đầu dòng đấy."
+          "Bài thơ không kể Na gánh nước giúp mẹ đâu.",
+          "Rau dại là thứ Na đang hái thôi, đọc dòng thơ cuối cùng xem.",
+          "Bà giải thích ở khổ cuối, có chữ \"Vì\" ở đầu dòng đấy."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "loi-khen-cua-ong",
-      "title": "Lời khen ông dành cho Việt",
+      "title": "Lời khen bà dành cho Na",
       "kind": "read",
       "target": "tv2-t16-tang-da-lung-doc",
-      "textRef": "thuong-ong",
-      "question": "Ông Vện hắng giọng, định đọc to lời khen để tập khen Cún Vừng. Đọc những câu thơ thể hiện lời khen của ông dành cho Việt.",
+      "textRef": "chau-diu-ba",
+      "question": "Ông Vện hắng giọng, định đọc to lời khen để tập khen Cún Vừng. Cặp dòng thơ nào chính là lời bà khen Na?",
       "choices": [
         {
           "id": "vin-vai",
-          "text": "“Ông vịn vai cháu!\nCháu đỡ ông lên”."
+          "text": "Cháu nắm tay bà\nÂn cần dìu bước"
         },
         {
           "id": "hoan-ho",
-          "text": "“Hoan hô thằng bé\nBé thế mà khoẻ\nVì nó thương ông”."
+          "text": "Khen: Nhỏ mà khoẻ!\nVì cháu thương bà"
         },
         {
           "id": "buoc-len",
-          "text": "Ông bước lên thềm\nTrong lòng sung sướng,"
+          "text": "Bà ngồi xuống ghế\nXoa đầu cháu nhỏ"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choice": "hoan-ho"
       },
-      "curriculumRef": [
-        "tv2-t1-b30-doc-lt2"
-      ],
       "support": {
         "guide": [
-          "Lời khen là lời ông nói, nằm trong ngoặc kép.",
-          "Bài có hai chỗ ngoặc kép: một của Việt, một của ông."
+          "Lời khen là lời bà nói với cháu, bắt đầu bằng chữ \"Khen\".",
+          "Hai dòng khác chỉ kể việc làm của cháu và của bà."
         ],
-        "hint": "Lời khen bắt đầu bằng \"Hoan hô\".",
+        "hint": "Tìm chữ \"Khen\" ở đầu dòng nhé.",
         "answer": {
-          "text": "Ba dòng cuối bài: Hoan hô thằng bé / Bé thế mà khoẻ / Vì nó thương ông.",
-          "explanation": "Lời ông khen cháu nằm trong ngoặc kép ở khổ cuối; ngoặc kép ở khổ hai là lời Việt nói với ông."
+          "text": "Hai dòng \"Khen: Nhỏ mà khoẻ! / Vì cháu thương bà\".",
+          "explanation": "Lời khen của bà nằm ở khổ cuối: bà khen cháu nhỏ mà khoẻ rồi nói vì cháu thương bà."
         }
       },
       "feedback": {
         "right": [
           "Hoan hô {name}! Ông Vện đọc theo to đến nỗi chim trên cành tre vỗ cánh.",
-          "Đúng ba dòng lời khen rồi, Cún Vừng vẫy đuôi như cái quạt.",
-          "Chuẩn! Lời khen nằm gọn trong ngoặc kép cuối bài."
+          "Đúng hai dòng lời khen rồi, Cún Vừng vẫy đuôi như cái quạt.",
+          "Chuẩn! Lời khen nằm ngay trong khổ thơ cuối."
         ],
         "wrong": [
-          "Câu ấy là Việt nói với ông, chưa phải lời ông khen.",
-          "Câu ấy kể ông bước lên thềm, ông chưa khen gì cả.",
-          "Tìm chữ \"Hoan hô\" nhé, lời khen bắt đầu từ đó."
+          "Hai dòng ấy kể Na dìu bà, chưa phải lời bà khen.",
+          "Hai dòng ấy kể bà ngồi nghỉ, bà chưa khen gì cả.",
+          "Tìm chữ \"Khen\" nhé, lời khen bắt đầu từ đó."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "hoc-thuoc-kho-tho",
@@ -424,25 +412,23 @@
       "goTo": "Lên lối mòn đỉnh dốc, Bác tiều phu Bảy dừng gánh củi chờ nghe đọc thơ",
       "kind": "speak",
       "target": "tv2-t16-b30-bac-tieu-phu-bay",
-      "prompt": "Ông Vện thách: \"Ông thuộc cả bài từ hồi còn là cún con. Cháu thuộc được khổ nào?\".\nHọc thuộc lòng một khổ thơ em thích.",
+      "prompt": "Ông Vện thách: \"Ông thuộc cả bài từ hồi còn là cún con. Cháu thuộc được khổ nào?\". Chọn một khổ thơ em thích trong bốn khổ rồi tập đọc cho thuộc.",
       "hints": [
-        "Chọn khổ thơ em thích nhất trong bốn khổ.",
-        "Đọc mỗi dòng hai lần, rồi che sách đọc lại.",
+        "Chọn khổ thơ em thích nhất.",
+        "Đọc mỗi dòng hai lần, rồi che lại và đọc tiếp.",
         "Đọc cho ông Vện và Cún Vừng nghe thật diễn cảm."
       ],
-      "curriculumRef": [
-        "tv2-t1-b30-doc-htl"
-      ]
+      "objective": "doc-tho-doc-to"
     },
     {
       "id": "chu-tron-qua-trung",
-      "title": "Chữ gì tròn như quả trứng",
+      "title": "Điền chữ trên mặt đá",
       "goTo": "Quay xuống tảng đá lưng dốc, Cún Vừng đang lấy móng vạch chữ",
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t16-tang-da-lung-doc",
-      "prompt": "Cún Vừng lấy móng vạch lên mặt đá một bài thơ về chữ O, nhưng vạch vội quá nên mất mấy chữ cái. Ông Vện bảo: \"Đố đứa nào điền được!\". Hôm nay mình làm cả phần a lẫn phần b nhé.\nChọn a hoặc b. a. Chọn ch hoặc tr thay cho ô vuông.",
-      "template": "Lần đầu tiên học {{b1}}ữ\nBé tung tăng khắp nhà:\n– {{b2}}ữ gì như quả {{b3}}ứng gà?\n{{b4}}ống {{b5}}oai nhanh nhảu đáp là : \"O...o!\"\n(Theo Trương Xương)",
+      "prompt": "Cún Vừng lấy móng vạch lên mặt đá mấy câu thơ nhỏ, nhưng vạch vội quá nên mất mấy chữ cái. Ông Vện bảo: \"Đố đứa nào điền được!\". Điền ch hay tr vào mỗi ô vuông cho đúng chữ.",
+      "template": "Sáng nay {{b1}}ời trong vắt\nBé {{b2}}ạy ra sân nhà\nNhặt {{b3}}iếc lá rơi {{b4}}ước ngõ\nBà bảo cháu {{b5}}ồng thêm cây",
       "blanks": [
         {
           "id": "b1",
@@ -462,19 +448,6 @@
           "options": [
             {
               "id": "ch",
-              "text": "Ch"
-            },
-            {
-              "id": "tr",
-              "text": "Tr"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "ch",
               "text": "ch"
             },
             {
@@ -484,15 +457,28 @@
           ]
         },
         {
+          "id": "b3",
+          "options": [
+            {
+              "id": "tr",
+              "text": "tr"
+            },
+            {
+              "id": "ch",
+              "text": "ch"
+            }
+          ]
+        },
+        {
           "id": "b4",
           "options": [
             {
               "id": "ch",
-              "text": "Ch"
+              "text": "ch"
             },
             {
               "id": "tr",
-              "text": "Tr"
+              "text": "tr"
             }
           ]
         },
@@ -513,39 +499,37 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "b1": "ch",
+          "b1": "tr",
           "b2": "ch",
-          "b3": "tr",
+          "b3": "ch",
           "b4": "tr",
-          "b5": "ch"
+          "b5": "tr"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b30-chinh-ta-2-a"
-      ],
       "support": {
         "guide": [
           "Đọc thật to từng dòng thơ, dừng lại ở mỗi ô vuông.",
-          "Chữ viết, quả trứng, con gà trống: tiếng nào quen thuộc nhất?"
+          "Trời, chạy, chiếc, trước, trồng: tiếng nào bắt đầu bằng ch, tiếng nào bằng tr?"
         ],
-        "hint": "Ô đầu dòng viết hoa: Ch hoặc Tr.",
+        "hint": "Có ba chữ tr và hai chữ ch.",
         "answer": {
-          "text": "học chữ; Chữ gì; quả trứng; Trống choai",
-          "explanation": "Các tiếng cần điền lần lượt là chữ, Chữ, trứng, Trống, choai."
+          "text": "trời; chạy; chiếc; trước; trồng",
+          "explanation": "Các tiếng cần điền lần lượt là trời (tr), chạy (ch), chiếc (ch), trước (tr), trồng (tr)."
         }
       },
       "feedback": {
         "right": [
-          "Chữ O tròn xoe hiện ra trên mặt đá! Ông Vện vỗ tay bộp bộp.",
-          "Chữ, trứng, trống, choai: không lệch chữ nào!",
-          "Cún Vừng sủa \"O…o!\" y như chú gà trống choai trong thơ."
+          "Mấy câu thơ hiện rõ trên mặt đá! Ông Vện vỗ tay bộp bộp.",
+          "Trời, chạy, chiếc, trước, trồng: không lệch chữ nào!",
+          "Cún Vừng sủa \"gâu gâu\" mừng, như muốn đọc thơ cùng {name}."
         ],
         "wrong": [
-          "Quả trứng gà viết bằng tr, còn chữ viết thì sao nhỉ?",
-          "Ô đầu dòng phải đội mũ viết hoa, chọn Ch hoặc Tr nhé.",
-          "Gà trống choai: tiếng trống viết tr, tiếng choai viết ch đấy."
+          "Bầu trời trong vắt viết bằng tr, còn chạy ra sân thì sao nhỉ?",
+          "Có một ô đang đội nhầm chữ, đọc to cả dòng thơ nghe thử nhé.",
+          "\"Chiếc lá\" và \"trước ngõ\" cùng một dòng nhưng hai chữ đầu khác nhau đấy."
         ]
-      }
+      },
+      "objective": "chinh-ta-am-dau"
     },
     {
       "id": "tui-ac-tui-at",
@@ -554,19 +538,19 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t16-b30-be-com",
-      "prompt": "Cún Vừng đeo hai túi lá: túi đỏ đựng vần ac, túi xanh đựng vần at. Nó nhảy lên làm đổ hết, giờ phải nhặt vần gắn lại cho đúng từ.\nChọn a hoặc b. b. Chọn ac hoặc at thay cho ô vuông.",
-      "template": "múa h{{b1}}́\nquét r{{b2}}́\nrửa b{{b3}}́\ncô b{{b4}}́\nca nh{{b5}}̣\nph{{b6}}́ quà",
+      "prompt": "Cún Vừng đeo hai túi lá: túi đỏ đựng vần ac, túi xanh đựng vần at. Nó nhảy lên làm đổ hết, giờ phải nhặt vần gắn lại cho đúng từ.\nĐiền ac hay at vào mỗi ô vuông cho thành từ đúng.",
+      "template": "bãi c{{b1}}\ng{{b2}} nhỏ\ngió m{{b3}}\nth{{b4}} nước\nh{{b5}} thóc\nđi l{{b6}} đường",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "ac",
-              "text": "ac"
+              "id": "at",
+              "text": "át"
             },
             {
-              "id": "at",
-              "text": "at"
+              "id": "ac",
+              "text": "ác"
             }
           ]
         },
@@ -574,12 +558,12 @@
           "id": "b2",
           "options": [
             {
-              "id": "at",
-              "text": "at"
+              "id": "ac",
+              "text": "ác"
             },
             {
-              "id": "ac",
-              "text": "ac"
+              "id": "at",
+              "text": "át"
             }
           ]
         },
@@ -587,12 +571,12 @@
           "id": "b3",
           "options": [
             {
-              "id": "ac",
-              "text": "ac"
+              "id": "at",
+              "text": "át"
             },
             {
-              "id": "at",
-              "text": "at"
+              "id": "ac",
+              "text": "ác"
             }
           ]
         },
@@ -600,12 +584,12 @@
           "id": "b4",
           "options": [
             {
-              "id": "at",
-              "text": "at"
+              "id": "ac",
+              "text": "ác"
             },
             {
-              "id": "ac",
-              "text": "ac"
+              "id": "at",
+              "text": "át"
             }
           ]
         },
@@ -613,12 +597,12 @@
           "id": "b5",
           "options": [
             {
-              "id": "ac",
-              "text": "ac"
+              "id": "at",
+              "text": "ạt"
             },
             {
-              "id": "at",
-              "text": "at"
+              "id": "ac",
+              "text": "ạc"
             }
           ]
         },
@@ -626,12 +610,12 @@
           "id": "b6",
           "options": [
             {
-              "id": "at",
-              "text": "at"
+              "id": "ac",
+              "text": "ạc"
             },
             {
-              "id": "ac",
-              "text": "ac"
+              "id": "at",
+              "text": "ạt"
             }
           ]
         }
@@ -643,41 +627,34 @@
           "b2": "ac",
           "b3": "at",
           "b4": "ac",
-          "b5": "ac",
-          "b6": "at"
+          "b5": "at",
+          "b6": "ac"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b30-chinh-ta-2-b-1",
-        "tv2-t1-b30-chinh-ta-2-b-2",
-        "tv2-t1-b30-chinh-ta-2-b-3",
-        "tv2-t1-b30-chinh-ta-2-b-4",
-        "tv2-t1-b30-chinh-ta-2-b-5",
-        "tv2-t1-b30-chinh-ta-2-b-6"
-      ],
       "support": {
         "guide": [
-          "Đọc to cả từ, nghe kĩ tiếng cuối là \"ác\" hay \"át\".",
-          "Múa hát, rửa bát, phát quà; quét rác, cô bác, ca nhạc."
+          "Đọc to cả từ, nghe kĩ tiếng cuối là \"c\" hay \"t\".",
+          "Bãi cát, gió mát, hạt thóc; gác nhỏ, thác nước, đi lạc."
         ],
-        "hint": "Có ba từ mang vần ac và ba từ mang vần at.",
+        "hint": "Có ba từ mang vần at và ba từ mang vần ac.",
         "answer": {
-          "text": "múa hát, quét rác, rửa bát, cô bác, ca nhạc, phát quà",
-          "explanation": "Hát, bát, phát viết vần at; rác, bác, nhạc viết vần ac."
+          "text": "bãi cát, gác nhỏ, gió mát, thác nước, hạt thóc, đi lạc đường",
+          "explanation": "Cát, mát, hạt viết vần at; gác, thác, lạc viết vần ac."
         }
       },
       "feedback": {
         "right": [
           "Hai túi vần đã về đúng chỗ, Cún Vừng hát luôn một bài!",
-          "Múa hát, quét rác, rửa bát… đúng cả sáu, ông Vện giơ ngón cái.",
+          "Bãi cát, gió mát, thác nước… đúng cả sáu, ông Vện giơ ngón cái.",
           "Tai {name} phân biệt ac với at còn thính hơn mũi chó."
         ],
         "wrong": [
-          "Rửa bát cần vần at, cái bát mới sạch bong được.",
-          "Ca nhạc và cô bác cùng chung một vần, đọc to lên nghe thử.",
+          "Hạt thóc cần vần at, nghe tiếng cuối là \"t\" nhé.",
+          "Thác nước và đi lạc đường cùng chung một vần, đọc to lên nghe thử.",
           "Có một vần đang chui nhầm túi, kiểm tra từng dòng nhé."
         ]
-      }
+      },
+      "objective": "chinh-ta-van"
     },
     {
       "id": "nha-ong-ven-ban-ron",
@@ -686,7 +663,7 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t16-tang-da-lung-doc",
-      "prompt": "Từ tảng đá nhìn xuống, thấy rõ cả nhà Cún Vừng: mẹ đeo tạp dề nấu ăn, bà nhặt rau vào rổ, ông tưới cây ở hiên, em bé chơi đồ chơi, bố sửa quạt điện, anh cầm chổi quét nhà. Cún Vừng đố {name} nhặt từ cho đúng giỏ.\nDựa vào tranh, tìm từ ngữ: a. Chỉ sự vật b. Chỉ hoạt động",
+      "prompt": "Từ tảng đá nhìn xuống, thấy rõ cả nhà Cún Vừng: mẹ nấu cháo trong xoong, bà phơi áo lên móc, ông tưới rau bằng bình, bố sửa xe đạp bằng cờ lê, em bé xếp khối gỗ. Cún Vừng đố {name} nhặt từ cho đúng giỏ: giỏ chỉ sự vật, giỏ chỉ hoạt động.",
       "groups": [
         {
           "id": "su-vat",
@@ -699,88 +676,85 @@
       ],
       "items": [
         {
-          "id": "nau-an",
-          "label": "nấu ăn"
+          "id": "nau-chao",
+          "label": "nấu cháo"
         },
         {
-          "id": "tap-de",
-          "label": "tạp dề"
+          "id": "cai-xoong",
+          "label": "cái xoong"
         },
         {
-          "id": "nhat-rau",
-          "label": "nhặt rau"
+          "id": "phoi-ao",
+          "label": "phơi áo"
         },
         {
-          "id": "ro-rau",
-          "label": "rổ rau"
+          "id": "moc-ao",
+          "label": "móc áo"
         },
         {
-          "id": "chau-cay",
-          "label": "chậu cây"
+          "id": "tuoi-rau",
+          "label": "tưới rau"
         },
         {
-          "id": "tuoi-cay",
-          "label": "tưới cây"
+          "id": "binh-tuoi",
+          "label": "bình tưới"
         },
         {
-          "id": "quat-dien",
-          "label": "quạt điện"
+          "id": "sua-xe",
+          "label": "sửa xe"
         },
         {
-          "id": "sua-quat",
-          "label": "sửa quạt"
+          "id": "co-le",
+          "label": "cờ lê"
         },
         {
-          "id": "quet-nha",
-          "label": "quét nhà"
+          "id": "xep-khoi",
+          "label": "xếp khối"
         },
         {
-          "id": "cai-choi",
-          "label": "cái chổi"
+          "id": "khoi-go",
+          "label": "khối gỗ"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "nau-an": "hoat-dong",
-          "tap-de": "su-vat",
-          "nhat-rau": "hoat-dong",
-          "ro-rau": "su-vat",
-          "chau-cay": "su-vat",
-          "tuoi-cay": "hoat-dong",
-          "quat-dien": "su-vat",
-          "sua-quat": "hoat-dong",
-          "quet-nha": "hoat-dong",
-          "cai-choi": "su-vat"
+          "nau-chao": "hoat-dong",
+          "cai-xoong": "su-vat",
+          "phoi-ao": "hoat-dong",
+          "moc-ao": "su-vat",
+          "tuoi-rau": "hoat-dong",
+          "binh-tuoi": "su-vat",
+          "sua-xe": "hoat-dong",
+          "co-le": "su-vat",
+          "xep-khoi": "hoat-dong",
+          "khoi-go": "su-vat"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b30-tu-ngu-cau-1-a",
-        "tv2-t1-b30-tu-ngu-cau-1-b"
-      ],
       "support": {
         "guide": [
           "Từ chỉ sự vật là tên đồ vật em cầm, nhìn được.",
           "Từ chỉ hoạt động là việc mọi người đang làm."
         ],
-        "hint": "Thử nói \"đang…\" trước từ đó: \"đang tưới cây\" nghe xuôi thì là hoạt động.",
+        "hint": "Thử nói \"đang…\" trước từ đó: \"đang tưới rau\" nghe xuôi thì là hoạt động.",
         "answer": {
-          "text": "Sự vật: tạp dề, rổ rau, chậu cây, quạt điện, cái chổi. Hoạt động: nấu ăn, nhặt rau, tưới cây, sửa quạt, quét nhà.",
-          "explanation": "Mỗi người trong tranh đang làm một việc (hoạt động) với một đồ vật (sự vật)."
+          "text": "Sự vật: cái xoong, móc áo, bình tưới, cờ lê, khối gỗ. Hoạt động: nấu cháo, phơi áo, tưới rau, sửa xe, xếp khối.",
+          "explanation": "Mỗi người trong nhà đang làm một việc (hoạt động) với một đồ vật (sự vật)."
         }
       },
       "feedback": {
         "right": [
           "Hai giỏ từ đầy ắp, chẳng từ nào lạc giỏ!",
-          "Cái chổi là sự vật, quét nhà là hoạt động: {name} phân biệt rành rọt.",
+          "Cái xoong là sự vật, nấu cháo là hoạt động: {name} phân biệt rành rọt.",
           "Cún Vừng sủa hai tiếng khen, tiếng to cho giỏ sự vật, tiếng nhỏ cho giỏ hoạt động."
         ],
         "wrong": [
           "Có một đồ vật đang ngồi nhầm giỏ hoạt động rồi.",
           "Thử nói \"đang\" trước từ ấy xem có thành việc làm không.",
-          "Quạt điện và sửa quạt khác nhau đấy: một cái để cầm, một việc để làm."
+          "Cờ lê và sửa xe khác nhau đấy: một cái để cầm, một việc để làm."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
     },
     {
       "id": "me-may-ba-noi",
@@ -788,71 +762,69 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t16-tang-da-lung-doc",
-      "prompt": "Ông Vện kể: hồi bé, mẹ ông khâu áo còn bố ông sửa xe đồ chơi, y như đoạn thơ này. Tìm giúp ông đủ ba từ nhé.\nTìm 3 từ ngữ chỉ hoạt động trong đoạn thơ dưới đây: Mẹ may chiếc áo mới\nLại thêu một bông hoa\nAnh cu Phương rất khoái\nKhen: Mẹ giỏi hơn ba!\nKhi ô tô hỏng máy\nMẹ chẳng sửa được cho\nBa nối dây cót lại\nXe chạy liền ro ro...\n(Đặng Hấn)",
+      "prompt": "Ông Vện kể: hồi bé, nhà ông cũng thế, bà đan rổ, mẹ khâu nón, bố bắc thang mắc đèn trước cổng. Tìm giúp ông đủ ba từ nhé.\nTìm 3 từ chỉ việc làm trong đoạn thơ sau:\nBà đan thêm cái rổ\nMẹ khâu lại chiếc nón\nBố vác thang ra ngõ\nBóng đèn sáng trước nhà",
       "choices": [
         {
-          "id": "ao",
-          "text": "áo"
+          "id": "ro",
+          "text": "rổ"
         },
         {
-          "id": "may",
-          "text": "may"
+          "id": "dan",
+          "text": "đan"
         },
         {
-          "id": "bong-hoa",
-          "text": "bông hoa"
+          "id": "non",
+          "text": "nón"
         },
         {
-          "id": "theu",
-          "text": "thêu"
+          "id": "khau",
+          "text": "khâu"
         },
         {
-          "id": "o-to",
-          "text": "ô tô"
+          "id": "thang",
+          "text": "thang"
         },
         {
-          "id": "noi",
-          "text": "nối"
+          "id": "vac",
+          "text": "vác"
         },
         {
-          "id": "day-cot",
-          "text": "dây cót"
+          "id": "bong-den",
+          "text": "bóng đèn"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "choices": [
-          "may",
-          "theu",
-          "noi"
+          "dan",
+          "khau",
+          "vac"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b30-tu-ngu-cau-2"
-      ],
       "support": {
         "guide": [
-          "Từ chỉ hoạt động là việc mẹ và ba làm.",
-          "Áo, bông hoa, ô tô, dây cót là tên đồ vật."
+          "Từ chỉ hoạt động là việc bà, mẹ và bố làm.",
+          "Rổ, nón, thang, bóng đèn là tên đồ vật."
         ],
-        "hint": "Mẹ làm hai việc với chiếc áo, ba làm một việc với dây cót.",
+        "hint": "Mỗi người trong đoạn thơ làm đúng một việc.",
         "answer": {
-          "text": "may; thêu; nối",
-          "explanation": "Mẹ may áo, thêu hoa; ba nối dây cót. Đó là ba hoạt động trong các thẻ, còn lại là sự vật."
+          "text": "đan; khâu; vác",
+          "explanation": "Bà đan rổ, mẹ khâu nón, bố vác thang. Đó là ba hoạt động; các thẻ còn lại là sự vật."
         }
       },
       "feedback": {
         "right": [
-          "May, thêu, nối: đủ ba việc! Ông Vện kể tiếp chuyện chiếc áo thêu hoa của mình.",
+          "Đan, khâu, vác: đủ ba việc! Ông Vện kể tiếp chuyện chiếc nón của mình.",
           "Chọn đúng ba hoạt động, không lấy nhầm đồ vật nào.",
-          "Cún Vừng vẫy đuôi ro ro như chiếc xe trong thơ."
+          "Cún Vừng vẫy đuôi vù vù như đang đan rổ."
         ],
         "wrong": [
-          "Bông hoa là đồ được thêu lên, còn việc thêu mới là hoạt động.",
-          "Ô tô và dây cót là đồ vật, ba làm gì với dây cót nhỉ?",
-          "Mẹ làm hai việc với chiếc áo, tìm đủ cả hai nhé."
+          "Chiếc rổ là đồ được đan ra, còn việc đan mới là hoạt động.",
+          "Thang và bóng đèn là đồ vật, bố làm gì với cái thang nhỉ?",
+          "Mẹ làm một việc với chiếc nón, tìm đúng việc ấy nhé."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
     },
     {
       "id": "ca-nha-lam-gi",
@@ -861,7 +833,7 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t16-b30-co-luu",
-      "prompt": "Cún Vừng chìa ra bốn bức tranh vẽ nhà hàng xóm: ông chơi cờ, bà ngồi ghế xem ti vi, bố mẹ lau nhà và lau cửa kính, bạn gái ngồi viết bài. Ghép mỗi câu trả lời với câu hỏi của nó.\nQuan sát tranh và trả lời câu hỏi.",
+      "prompt": "Cún Vừng chìa ra bốn bức tranh vẽ nhà hàng xóm: ông tưới hoa lan, bà ngồi đan khăn len, bố mẹ nhặt rau nấu cơm, bạn nhỏ ngồi vẽ tranh. Ghép mỗi câu trả lời với câu hỏi của nó.",
       "groups": [
         {
           "id": "ong",
@@ -883,48 +855,48 @@
       "items": [
         {
           "id": "viet-bai",
-          "label": "Đang ngồi viết bài vào vở.",
+          "label": "Đang ngồi vẽ tranh bằng bút màu.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "bạn gái ngồi viết bài vào vở",
+              "caption": "bạn gái ngồi vẽ tranh bằng bút màu",
               "n": 4
             }
           }
         },
         {
           "id": "choi-co",
-          "label": "Đang chơi cờ với bác hàng xóm.",
+          "label": "Đang tưới hoa lan ngoài hiên.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "ông ngồi chơi cờ với một người đàn ông",
+              "caption": "ông cầm bình tưới nước cho chậu hoa lan",
               "n": 1
             }
           }
         },
         {
           "id": "lau-nha",
-          "label": "Đang lau nhà và lau cửa kính.",
+          "label": "Đang nhặt rau và nấu cơm trong bếp.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "mẹ lau nhà bằng cây lau, bố lau cửa kính",
+              "caption": "mẹ nhặt rau, bố đứng cạnh bếp nấu cơm",
               "n": 3
             }
           }
         },
         {
           "id": "xem-ti-vi",
-          "label": "Đang ngồi trên ghế xem ti vi.",
+          "label": "Đang ngồi đan chiếc khăn len.",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "bà ngồi ghế sô-pha xem ti vi",
+              "caption": "bà ngồi trên ghế mây đan khăn len",
               "n": 2
             }
           }
@@ -939,20 +911,14 @@
           "viet-bai": "ban-nho"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b30-tu-ngu-cau-3-a",
-        "tv2-t1-b30-tu-ngu-cau-3-b",
-        "tv2-t1-b30-tu-ngu-cau-3-c",
-        "tv2-t1-b30-tu-ngu-cau-3-d"
-      ],
       "support": {
         "guide": [
           "Nhìn tranh trên mỗi thẻ: ai đang ở trong tranh?",
           "Câu trả lời nói đúng việc người đó đang làm."
         ],
-        "hint": "Tranh có hai người cùng lau dọn là tranh của bố mẹ.",
+        "hint": "Tranh có hai người cùng ở trong bếp là tranh của bố mẹ.",
         "answer": {
-          "text": "Ông chơi cờ; bà xem ti vi; bố mẹ lau nhà, lau cửa kính; bạn nhỏ viết bài.",
+          "text": "Ông tưới hoa; bà đan khăn; bố mẹ nấu cơm; bạn nhỏ vẽ tranh.",
           "explanation": "Mỗi tranh vẽ một người (hoặc hai người) đang làm một việc; câu trả lời gọi đúng việc đó."
         }
       },
@@ -963,11 +929,12 @@
           "Ghép chuẩn! Cún Vừng sủa một tiếng cho mỗi bức tranh."
         ],
         "wrong": [
-          "Bà đang ngồi trên ghế đấy, việc nào hợp với bà nhỉ?",
-          "Tranh có cây lau và cửa kính là của hai người cùng làm.",
-          "Bạn nhỏ cầm bút và vở, xếp lại câu ấy nhé."
+          "Bà đang ngồi ghế đấy, việc nào hợp với bà nhỉ?",
+          "Tranh có bếp và rau là của hai người cùng làm.",
+          "Bạn nhỏ cầm bút màu, xếp lại câu ấy nhé."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
     },
     {
       "id": "buoc-len-them",
@@ -982,13 +949,13 @@
         },
         {
           "speaker": "Cún Vừng",
-          "text": "{name} ơi, giống hệt bài thơ luôn. Mình làm gì giúp ông bây giờ?"
+          "text": "{name} ơi, giống hệt bé Na dìu bà luôn. Mình làm gì giúp ông bây giờ?"
         }
       ],
       "choices": [
         {
-          "text": "Ông vịn vai cháu với Cún Vừng, mỗi bên một đứa nhé!",
-          "reply": "Một, hai, ba… hấp! Ông Vện lên thềm, quẳng gậy, ôm cả hai đứa xoa đầu."
+          "text": "Ông nắm tay cháu, Cún Vừng đi trước dò đường nhé!",
+          "reply": "Một, hai, ba… hấp! Ông Vện lên thềm, buông gậy, ôm cả hai đứa xoa đầu."
         },
         {
           "text": "Cháu cầm gậy, ông bước thật chậm thôi ạ.",
@@ -996,7 +963,7 @@
         },
         {
           "text": "Cháu kể chuyện vui cho ông quên đau nhé!",
-          "reply": "Nghe chuyện con gà trống choai gáy \"O…o!\", ông cười rung cả râu và bước lên lúc nào chẳng biết."
+          "reply": "Nghe chuyện chú ếch hát giữa ao đêm mưa, ông cười rung cả râu và bước lên lúc nào chẳng biết."
         }
       ],
       "en": {
@@ -1004,12 +971,12 @@
         "goTo": "Help Grandpa Vện home to his doorstep",
         "lines": [
           "We've reached the doorstep! But has this step grown taller today, or have my legs got shorter?",
-          "{name}, it's exactly like the poem. What can we do to help Grandpa now?"
+          "{name}, it's just like little Na helping her grandma. What can we do to help Grandpa now?"
         ],
         "choices": [
           {
-            "text": "Lean on my shoulder and Cún Vừng's, one of us on each side!",
-            "reply": "One, two, three… up! Grandpa Vện is on the step; he tosses his stick and ruffles both their heads."
+            "text": "Hold my hand, Grandpa, and Cún Vừng will go ahead to check the way!",
+            "reply": "One, two, three… up! Grandpa Vện is on the step; he lets go of his stick and ruffles both their heads."
           },
           {
             "text": "I'll hold your stick, Grandpa, just take it really slowly.",
@@ -1017,7 +984,7 @@
           },
           {
             "text": "I'll tell you a funny story so you forget the pain!",
-            "reply": "Hearing about the young rooster crowing “O…o!”, Grandpa laughs so hard his beard shakes, and he's up the step before he knows it."
+            "reply": "Hearing about the frog singing in the pond on a rainy night, Grandpa laughs so hard his beard shakes, and he's up the step before he knows it."
           }
         ]
       }
@@ -1027,18 +994,18 @@
       "title": "Kể việc làm cùng người thân",
       "kind": "speak",
       "target": "tv2-t16-them-nha-ong",
-      "prompt": "Ông Vện ngồi trên thềm, pha ấm trà lá ổi rồi bảo: \"Kể ông nghe các cháu hay làm gì cùng ông bà, bố mẹ nào\". Bốn bức tranh treo bên hiên giúp {name} nhớ ra.\nQuan sát tranh, nêu việc các bạn nhỏ đã làm cùng người thân.",
+      "prompt": "Ông Vện ngồi trên thềm, pha ấm trà lá ổi rồi bảo: \"Kể ông nghe các cháu hay làm gì cùng ông bà, bố mẹ nào\". Bốn bức tranh treo bên hiên giúp {name} nhớ ra. Nhìn tranh rồi nói việc các bạn nhỏ làm cùng người thân.",
       "hints": [
-        "Tranh 1: bạn trai làm gì cùng ông?",
+        "Tranh 1: bạn gái làm gì cùng ông?",
         "Tranh 2, 3, 4: các bạn làm gì cùng bố, cùng bà, cùng mẹ?",
-        "Còn em, em đã làm việc gì cùng người thân?"
+        "Còn cậu, cậu đã làm việc gì cùng người thân?"
       ],
       "pictureRefs": [
         {
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "bạn trai dắt tay ông chống gậy đi dạo",
+            "caption": "bạn gái cùng ông tưới những chậu hoa ngoài hiên",
             "n": 1
           }
         },
@@ -1046,7 +1013,7 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "bạn gái cầm xẻng cùng bố trồng cây",
+            "caption": "bạn trai cùng bố sơn lại hàng rào gỗ",
             "n": 2
           }
         },
@@ -1054,7 +1021,7 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "bạn gái ngồi đọc sách cùng bà",
+            "caption": "bạn gái cùng bà gói bánh lá",
             "n": 3
           }
         },
@@ -1062,17 +1029,12 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "bạn trai cùng mẹ rửa bát",
+            "caption": "bạn trai cùng mẹ gấp quần áo",
             "n": 4
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b30-viet-doan-1-a",
-        "tv2-t1-b30-viet-doan-1-b",
-        "tv2-t1-b30-viet-doan-1-c",
-        "tv2-t1-b30-viet-doan-1-d"
-      ]
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
     },
     {
       "id": "chuyen-ong-ba-chau",
@@ -1080,32 +1042,52 @@
       "goTo": "Ôm chồng sách sang hiên nhà hàng xóm, Cô Lựu cũng mê đọc thơ lắm",
       "kind": "speak",
       "target": "tv2-t16-b30-co-luu",
-      "prompt": "Cún Vừng lôi từ gầm chõng ra một chồng sách của ông, cuốn nào cũng thơm mùi lá ổi.\nTìm đọc một bài thơ, câu chuyện về tình cảm của ông bà và cháu.\nChia sẻ với các bạn cảm xúc về một khổ thơ em thích, hoặc một sự việc trong câu chuyện mà em thấy thú vị.",
+      "prompt": "Cún Vừng lôi từ gầm chõng ra một chồng sách của ông, cuốn nào cũng thơm mùi lá ổi.\nChọn một bài thơ hoặc một câu chuyện về ông bà và cháu mà em từng đọc, từng nghe, rồi kể cho Cún nghe.\nNói cả cảm xúc của em về một khổ thơ hay một việc trong truyện.",
       "hints": [
-        "Tên bài thơ, câu chuyện",
-        "Tên tác giả",
-        "Khổ thơ hay sự việc nào làm em thấy vui, thấy thương?"
+        "Tên bài thơ hay câu chuyện.",
+        "Khổ thơ hay việc em nhớ nhất.",
+        "Điều làm em thấy vui, thấy thương."
       ],
-      "curriculumRef": [
-        "tv2-t1-b30-doc-mo-rong-1",
-        "tv2-t1-b30-doc-mo-rong-2"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "phieu-viet-bai-30",
-      "title": "Phiếu viết bài 30",
+      "title": "Phiếu viết: nghe – viết và kể việc cùng người thân",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b30",
-      "text": "Nhờ bố mẹ in phiếu Bài 30 ở khu phụ huynh: nghe – viết hai khổ thơ đầu bài Thương ông, nêu việc các bạn nhỏ làm cùng người thân và viết vài câu về việc em làm cùng người thân. Ông Vện dặn: viết xong nhớ đọc cho ông bà nghe.",
-      "curriculumRef": [
-        "tv2-t1-b30-nghe-viet-1",
-        "tv2-t1-b30-viet-doan-1-a",
-        "tv2-t1-b30-viet-doan-1-b",
-        "tv2-t1-b30-viet-doan-1-c",
-        "tv2-t1-b30-viet-doan-1-d",
-        "tv2-t1-b30-viet-doan-2"
-      ]
+      "text": "Nhờ bố mẹ in phiếu ở khu phụ huynh: nghe – viết hai khổ thơ đầu bài \"Cháu dìu bà qua suối\", nêu việc các bạn nhỏ làm cùng người thân và viết vài câu về việc em làm cùng người thân. Ông Vện dặn: viết xong nhớ đọc cho ông bà nghe.",
+      "objective": "viet-doan-van",
+      "sheet": {
+        "title": "Phiếu viết: dìu bà qua suối và việc cùng người thân",
+        "blocks": [
+          {
+            "kind": "dictation",
+            "prompt": "Nghe và viết hai khổ thơ đầu của bài thơ Cháu dìu bà qua suối.",
+            "title": "Cháu dìu bà qua suối",
+            "text": "Chiều nay trời mát\nBà ra bờ suối\nTrượt chân trên đá\nCổ chân sưng đỏ\nBà đi tập tễnh\n\nBé Na đang hái\nRau dại ven đường\nThấy bà nhăn mặt\nNhanh nhẹn chạy tới\nTíu tít gọi: Bà!"
+          },
+          {
+            "kind": "activity",
+            "prompt": "Nhìn bốn tranh, viết mỗi tranh một câu nêu việc bạn nhỏ làm cùng người thân.",
+            "media": [
+              "bạn gái cùng ông tưới những chậu hoa ngoài hiên",
+              "bạn trai cùng bố sơn lại hàng rào gỗ",
+              "bạn gái cùng bà gói bánh lá",
+              "bạn trai cùng mẹ gấp quần áo"
+            ]
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Kể bằng 3 – 5 câu một việc em đã cùng người thân làm.",
+            "hints": [
+              "Em đã làm việc gì, cùng ai, vào lúc nào?",
+              "Hai người đã làm việc ấy như thế nào?",
+              "Em cảm thấy ra sao khi làm việc cùng người thân?"
+            ],
+            "lines": 6
+          }
+        ]
+      }
     },
     {
       "id": "qua-cua-ong-ven",

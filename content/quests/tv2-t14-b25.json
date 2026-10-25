@@ -5,14 +5,14 @@
   "title": "Chị em ong và bụi hoa tỉ muội",
   "status": "active",
   "topic": "doc-truyen",
-  "summary": "Trong vườn hoa đầu ngõ của xóm, hai chị em ong con cãi nhau vì một chùm hoa; {name} cùng Gấu Hũ giữ vườn nghe chuyện cổ hai anh em gánh thóc trong đêm trăng, mượn giỏ của Thỏ Cải, nhờ Bà Gấu Nâu hỏi chuyện và giúp hai bạn làm lành.",
+  "summary": "Trong vườn hoa đầu ngõ của xóm, hai chị em ong con cãi nhau vì một chùm hoa; {name} cùng Gấu Hũ giữ vườn nghe chuyện cổ tích Cây khế dưới bụi hoa, mượn giỏ của Thỏ Cải, nhờ Bà Gấu Nâu hỏi chuyện và giúp hai bạn làm lành.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Gấu Hũ (gấu giữ vườn hoa, việc gì cũng đếm), hai chị em ong con Hồng, Nụ, Bà Gấu Nâu (bà của cả xóm, hay kể chuyện ngày xưa), Thỏ Cải (trồng cải góc vườn)",
     "where": "Vườn hoa đầu ngõ của xóm: cổng vườn hoa, bụi hoa tỉ muội, giàn mướp cuối vườn, khóm cúc bên hàng rào, ghế mây của Bà Gấu Nâu bên ngõ, luống cải góc vườn và vách tổ ong treo tranh sáp",
     "goal": "Giúp hai chị em ong làm lành và cùng chăm bụi hoa",
     "play": "Tìm chùm hoa, nói, đọc truyện, chọn đáp án, chọn nhiều chi tiết, xếp từ vào hai giỏ, đoán tranh, xếp tranh, kể chuyện, phiếu viết",
-    "learn": "Đọc truyện cổ tích \"Hai anh em và đêm trăng gánh thóc\" (kể lại bằng lời mình): hiểu chuyện và từ khó, tìm từ chỉ hoạt động, đặt câu, kể lại chuyện hai chị em ong theo tranh, viết chữ hoa N",
+    "learn": "Đọc truyện cổ tích Cây khế (kể lại bằng lời mình): hiểu chuyện và từ khó, tìm từ chỉ hoạt động và từ chỉ đặc điểm, đặt câu, kể lại chuyện hai chị em ong theo tranh, viết chữ hoa N",
     "reward": "80 XP, 15 xu, Đọc hiểu +2, Từ ngữ +1, Kể chuyện +1",
     "next": "Tổ rơm nhà Gà Con Mẩy trong ngõ nhỏ của xóm"
   },
@@ -27,27 +27,26 @@
     "next": "mo-bai-26"
   },
   "texts": {
-    "hai-anh-em-ganh-thoc": {
-      "title": "Hai anh em và đêm trăng gánh thóc",
-      "body": "Ngày xưa, bên một cánh đồng rộng, có hai anh em cha mẹ mất sớm, chỉ để lại mấy thửa ruộng. Người anh đã lấy vợ, nhà có thêm hai đứa nhỏ hay cười. Người em vẫn ở một mình trong túp lều nhỏ sát bờ ruộng.\n\nNăm ấy lúa chín vàng. Gặt xong, hai anh em đổ thóc thành hai đống cao ngang nhau dưới gốc đa, mỗi người giữ một đống.\n\nTối hôm ấy, người em trằn trọc không sao chợp mắt. Em nghĩ: nhà anh đông miệng ăn, thóc của anh làm sao đủ? Em khẽ trở dậy, xúc đầy một thúng, gánh sang đổ vào đống của anh.\n\nỞ bên kia, người anh cũng thao thức. Anh nghĩ: em mình chẳng có ai đỡ đần, mai kia trái gió trở trời thì trông vào đâu? Anh lặng lẽ gánh thóc sang đống của em.\n\nHôm sau ra sân, ai cũng lấy làm lạ: hai đống thóc chẳng vơi đi chút nào. Mấy đêm liền vẫn thế. Rồi một đêm trăng tròn sáng vằng vặc, hai anh em gánh thóc đi ngược chiều và gặp nhau giữa bờ ruộng. Nhìn gánh thóc nặng trĩu trên vai nhau, họ hiểu cả. Hai anh em đặt gánh xuống, ôm lấy nhau, mắt rưng rưng.",
+    "cay-khe": {
+      "title": "Cây khế",
+      "body": "Ngày xưa, có hai anh em mồ côi cha mẹ. Khi chia nhà, người anh giữ hết ruộng vườn, chỉ để cho em một túp lều và cây khế trước sân. Người em không giận, sáng đi làm thuê, chiều về tưới cây.\n\nĐến mùa, khế trĩu quả. Một hôm, có con chim lạ to lớn sà xuống ăn. Em thấy tiếc nhưng không nỡ đuổi. Ăn xong, chim cất tiếng người: \"Ta ăn khế của cậu, ta sẽ trả bằng vàng. Hãy may một chiếc túi ba gang rồi theo ta.\"\n\nEm may túi, cưỡi chim bay ra đảo xa. Ở đó vàng sáng lấp lánh. Em chỉ nhặt vừa đầy túi nhỏ rồi trở về. Từ đó, em đủ ăn đủ mặc và hay giúp những nhà nghèo.\n\nNghe chuyện, người anh vội đổi nhà lấy cây khế. Chim lại đến ăn khế và nói như trước. Anh may một chiếc túi thật to. Ra đảo, anh nhặt đầy túi, còn nhét thêm đầy cả áo.\n\nChim chở nặng, bay mãi, cánh rã rời. Giữa biển, chim run run: \"Nặng quá, tôi không bay nổi nữa!\" Anh sợ hãi, đành thả hết vàng xuống nước, về đến nhà với hai bàn tay trắng. Anh ngồi dưới gốc khế, hối hận mãi. Người em đến, chia cho anh một nửa số vàng rồi đón anh về ở cùng.",
       "glossary": [
         {
-          "term": "Trằn trọc",
-          "meaning": "nằm mãi mà không ngủ được."
+          "term": "Trĩu",
+          "meaning": "nặng và cong xuống vì có quá nhiều quả."
         },
         {
-          "term": "Vằng vặc",
-          "meaning": "sáng rõ, tròn đầy, không chút mờ."
+          "term": "Rã rời",
+          "meaning": "mệt đến mức người như rời ra từng mảnh."
         },
         {
-          "term": "Rưng rưng",
-          "meaning": "mắt ngân ngấn nước vì xúc động."
+          "term": "Hối hận",
+          "meaning": "buồn và tự trách vì đã làm điều không tốt."
         }
       ],
       "source": {
         "kind": "folk",
-        "title": "Truyện kể dân gian Hai anh em",
-        "note": "Truyện lưu truyền ở nhiều nước; bản này kể lại bằng lời mới."
+        "title": "Truyện cổ tích Cây khế"
       }
     }
   },
@@ -147,165 +146,165 @@
       "title": "Đọc chuyện cổ dưới bụi hoa",
       "kind": "read",
       "target": "tv2-t14-bui-hoa-ti-muoi",
-      "textRef": "hai-anh-em-ganh-thoc",
+      "textRef": "cay-khe",
       "audio": true,
-      "question": "Gấu Hũ đếm được đúng một trăm cánh hoa thì ngồi xuống nghe {name} đọc. Sau buổi chia thóc, vì sao người em lại dậy giữa đêm gánh thóc sang đống của anh?",
+      "question": "Gấu Hũ đếm được đúng một trăm cánh hoa thì ngồi xuống nghe {name} đọc. Giữa biển, vì sao người anh phải thả hết vàng xuống nước?",
       "choices": [
         {
-          "id": "anh-nhieu-con",
-          "text": "Em nghĩ nhà anh đông người nên anh cần nhiều thóc hơn."
+          "id": "chim-het-suc",
+          "text": "Chim chở nặng quá, cánh mỏi, không bay nổi nữa."
         },
         {
-          "id": "em-muon-nhieu",
-          "text": "Em muốn giấu bớt thóc đi để có nhiều hơn anh."
+          "id": "anh-tang-bien",
+          "text": "Anh muốn tặng số vàng ấy lại cho biển cả."
         },
         {
-          "id": "em-so-trom",
-          "text": "Em sợ có kẻ trộm đến lấy hết thóc của anh."
+          "id": "gio-cuon-vang",
+          "text": "Gió lớn thổi tung túi vàng của anh xuống biển."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "anh-nhieu-con"
+        "choice": "chim-het-suc"
       },
       "support": {
         "guide": [
-          "Tìm đoạn kể về đêm đầu tiên, lúc người em nằm trằn trọc.",
-          "Xem em nghĩ gì về người anh trước khi xúc thóc."
+          "Tìm đoạn kể chuyến bay về của người anh.",
+          "Xem chim kêu lên điều gì khi bay giữa biển."
         ],
-        "hint": "Người em nghĩ đến hoàn cảnh của anh mình, không phải nghĩ cho bản thân.",
+        "hint": "Lời chim run run cho biết lí do anh phải buông vàng.",
         "answer": {
-          "text": "Vì em lo nhà anh đông miệng ăn, thóc của anh không đủ.",
-          "explanation": "Trong truyện, người em trằn trọc vì lo cho anh có gia đình đông miệng ăn, nên lặng lẽ mang thóc sang giúp."
+          "text": "Vì túi vàng quá nặng nên chim không thể bay tiếp.",
+          "explanation": "Người anh nhặt quá nhiều vàng, chim chở nặng đến rã rời, nên anh đành thả hết vàng xuống nước."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi! Ong Nụ gật đầu mạnh quá, hai chiếc râu rung tít như đang gảy đàn.",
-          "Chuẩn! Gấu Hũ đếm: một thúng, hai thúng… rồi ngáp dài vì ấm lòng.",
-          "{name} đọc kĩ ghê, tìm đúng điều người em đã nghĩ trong đêm."
+          "Chuẩn! Ong Nụ rùng mình: chở nặng thế thì cánh nào chịu nổi.",
+          "Gấu Hũ gật gù: tham quá thì mang không nổi, thả vàng ra mới bay được.",
+          "{name} đọc kĩ ghê, tìm đúng lí do chim phải dừng lại giữa biển."
         ],
         "wrong": [
-          "Người em đâu có tính toán cho mình đâu. Đọc lại đoạn đêm đến nhé.",
-          "Trong truyện chẳng có kẻ trộm nào ghé qua sân kho cả. Dò lại xem em nghĩ gì về anh.",
-          "Gần rồi! Thử nhớ xem anh của em còn phải lo cho ai trong nhà nhỉ?"
+          "Trong truyện đâu có cơn gió nào thổi tung túi vàng. Đọc lại đoạn cuối nhé.",
+          "Anh thả vàng vì bị ép chứ có ai tự nguyện tặng biển đâu. Xem chim nói gì.",
+          "Gần rồi! Thử nhớ xem chim kêu lên điều gì giữa biển."
         ]
       },
       "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "dem-nu-hoa",
-      "title": "Gấu Hũ nằm trằn trọc",
+      "title": "Gấu Hũ mệt rã rời",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t14-bui-hoa-ti-muoi",
-      "prompt": "Đêm qua Gấu Hũ đếm nụ hoa tới tận khuya mà chẳng ngủ nổi. Gấu hỏi {name}: theo phần Từ ngữ dưới bài đọc, \"trằn trọc\" nghĩa là gì?",
+      "prompt": "Đếm nụ hoa cả buổi, Gấu Hũ mệt rã rời, ngã phịch xuống cỏ. Gấu hỏi {name}: theo phần Từ ngữ dưới bài đọc, \"rã rời\" nghĩa là gì?",
       "choices": [
         {
-          "id": "nam-khong-ngu",
-          "text": "nằm mãi mà không ngủ được."
+          "id": "met-lu",
+          "text": "mệt lử, không còn chút sức nào."
         },
         {
-          "id": "ngu-mot-mach",
-          "text": "ngủ một mạch đến sáng, không tỉnh giấc."
+          "id": "khoe-khoan",
+          "text": "khỏe khoắn, bay thật nhanh."
         },
         {
-          "id": "vua-nam-vua-hat",
-          "text": "vừa nằm vừa hát ru cho em bé."
+          "id": "buon-ngu",
+          "text": "buồn ngủ, mắt díp lại."
         }
       ],
       "skill": "tu-ngu",
       "answer": {
-        "choice": "nam-khong-ngu"
+        "choice": "met-lu"
       },
       "support": {
         "guide": [
           "Nhìn xuống ô Từ ngữ ở cuối bài đọc.",
-          "Tìm dòng giải nghĩa từ \"Trằn trọc\"."
+          "Tìm dòng giải nghĩa từ \"Rã rời\"."
         ],
-        "hint": "Người em lo nghĩ cho anh, nên mắt cứ mở thao láo giữa đêm.",
+        "hint": "Chim chở thật nhiều vàng và bay mãi nên rất mệt.",
         "answer": {
-          "text": "Trằn trọc là nằm mãi mà không ngủ được.",
-          "explanation": "Ô Từ ngữ giải nghĩa: trằn trọc là nằm mãi mà không ngủ được, đúng với người em đang lo nghĩ cho anh."
+          "text": "Rã rời là mệt đến mức người như rời ra từng mảnh.",
+          "explanation": "Ô Từ ngữ giải nghĩa: rã rời là mệt đến mức người như rời ra từng mảnh, đúng với chú chim chở vàng nặng."
         }
       },
       "feedback": {
         "right": [
-          "Chính xác! Gấu Hũ thở dài: thảo nào đêm qua tớ cứ lăn qua lăn lại.",
-          "Đúng thế, trằn trọc là mắt mở hoài không chịu ngủ. Gấu Hũ giơ tay xin chia sẻ cảm giác này.",
-          "{name} tra từ nhanh hơn cả tốc độ Gấu Hũ đếm nụ!"
+          "Chính xác! Gấu Hũ thở dài: đếm hoa mãi, tớ cũng rã rời như chú chim.",
+          "Đúng thế, rã rời là mệt lử. Gấu Hũ xin nằm nghỉ một chút.",
+          "{name} tra từ nhanh hơn cả Gấu Hũ đếm nụ!"
         ],
         "wrong": [
-          "Ngủ một mạch thì đâu còn trằn trọc nữa. Xem lại ô Từ ngữ nhé.",
-          "Hát ru nghe êm tai thật, nhưng không phải nghĩa của từ này. Tìm dòng giải nghĩa đi.",
-          "Chưa trúng rồi. Gợi ý: người trằn trọc thì rất khó chìm vào giấc ngủ."
+          "Khỏe khoắn thì đâu còn rã rời nữa. Xem lại ô Từ ngữ nhé.",
+          "Buồn ngủ là díp mắt, còn rã rời nói về sức lực. Tìm dòng giải nghĩa đi.",
+          "Chưa trúng rồi. Gợi ý: chim chở thật nhiều vàng bay giữa biển thì thế nào?"
         ]
       },
       "objective": "doc-truyen-tu-ngu"
     },
     {
       "id": "chi-tiet-dam-am",
-      "goTo": "Quay lại giàn mướp cuối vườn, Ong Hồng xin đọc lại đoạn hai đêm gánh thóc",
-      "title": "Những việc thể hiện tình thương",
+      "goTo": "Quay lại giàn mướp cuối vườn, Ong Hồng xin đọc lại đoạn kể về người em",
+      "title": "Những việc làm của người em",
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "ong-hong",
-      "prompt": "Ong Hồng đọc lại đoạn đêm gánh thóc, mặt đỏ dần lên như cánh hoa. Tìm những chi tiết cho thấy hai anh em rất thương nhau.",
+      "prompt": "Ong Hồng đọc lại những việc người em làm, mặt đỏ dần lên như cánh hoa. Tìm những chi tiết cho thấy người em có tấm lòng tốt.",
       "choices": [
         {
-          "id": "em-nghi-cho-anh",
-          "text": "Người em lo nhà anh đông miệng ăn, thóc không đủ."
+          "id": "khong-gian",
+          "text": "Người em không giận khi chỉ được túp lều và cây khế."
         },
         {
-          "id": "em-ganh-sang",
-          "text": "Người em lặng lẽ gánh thóc sang đống của anh."
+          "id": "khong-duoi-chim",
+          "text": "Người em không nỡ đuổi con chim đến ăn khế."
         },
         {
-          "id": "anh-lo-cho-em",
-          "text": "Người anh lo em ở một mình, mai kia không ai đỡ đần nên gánh thóc sang cho em."
+          "id": "nhat-vua-du",
+          "text": "Ra đảo, người em chỉ nhặt vừa đầy chiếc túi nhỏ."
         },
         {
-          "id": "om-chat",
-          "text": "Gặp nhau giữa bờ ruộng, hai anh em đặt gánh xuống và ôm lấy nhau."
+          "id": "don-anh-ve",
+          "text": "Người em chia vàng cho anh và đón anh về ở cùng."
         },
         {
-          "id": "mo-coi",
-          "text": "Cha mẹ của hai anh em mất sớm."
+          "id": "anh-giu-het",
+          "text": "Người anh giữ hết ruộng vườn khi chia nhà."
         },
         {
-          "id": "tup-leu",
-          "text": "Người em ở trong túp lều nhỏ sát bờ ruộng."
+          "id": "chim-noi",
+          "text": "Chim cất tiếng người và hẹn trả bằng vàng."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
-          "em-nghi-cho-anh",
-          "em-ganh-sang",
-          "anh-lo-cho-em",
-          "om-chat"
+          "khong-gian",
+          "khong-duoi-chim",
+          "nhat-vua-du",
+          "don-anh-ve"
         ]
       },
       "support": {
         "guide": [
-          "Đọc lại các đoạn kể về đêm và về lúc gặp nhau giữa bờ ruộng.",
-          "Chi tiết nào cho thấy mỗi người đều nghĩ đến người kia trước?"
+          "Đọc lại đoạn kể về người em: lúc chia nhà, lúc chim đến, lúc ra đảo và lúc cuối truyện.",
+          "Chi tiết nào cho thấy em vẫn sống tốt dù bị thiệt?"
         ],
-        "hint": "Có bốn chi tiết đúng; hai chi tiết còn lại chỉ giới thiệu hoàn cảnh của hai anh em.",
+        "hint": "Có bốn chi tiết đúng; hai chi tiết còn lại không nói về lòng tốt của người em.",
         "answer": {
-          "text": "Người em lo nhà anh đông miệng ăn, thóc không đủ. Người em lặng lẽ gánh thóc sang đống của anh. Người anh lo em ở một mình nên gánh thóc sang cho em. Hai anh em đặt gánh xuống và ôm chặt lấy nhau.",
-          "explanation": "Mỗi người đều nghĩ cho người kia và lặng lẽ giúp. Chuyện cha mẹ mất sớm và túp lều chỉ là phần giới thiệu hoàn cảnh."
+          "text": "Em không giận khi bị chia ít. Em không nỡ đuổi chim. Em chỉ nhặt vừa đầy túi nhỏ. Em chia vàng cho anh và đón anh về ở cùng.",
+          "explanation": "Người em hiền lành, biết đủ và biết thương anh. Việc người anh giữ hết ruộng vườn và lời chim nói chỉ là diễn biến của truyện."
         }
       },
       "feedback": {
         "right": [
-          "Đủ bốn chi tiết rồi! Ong Hồng lí nhí: hình như chị chưa nghĩ cho Nụ như thế bao giờ…",
-          "Chọn chuẩn từng chi tiết ấm lòng, không thừa không thiếu cái nào.",
+          "Đủ bốn chi tiết rồi! Ong Hồng lí nhí: chị cũng muốn học tính biết đủ của người em.",
+          "Chọn chuẩn từng chi tiết tốt bụng, không thừa không thiếu cái nào.",
           "Gấu Hũ đếm ngón tay: một, hai, ba, bốn, khớp cả bốn! Ồ hô!"
         ],
         "wrong": [
-          "Còn thiếu hoặc thừa một chi tiết đấy. Tìm xem ai nghĩ cho ai trong đêm gánh thóc.",
-          "Chuyện cha mẹ mất sớm và túp lều chỉ để giới thiệu nhân vật thôi, chưa nói lên tình thương đâu.",
+          "Còn thiếu hoặc thừa một chi tiết đấy. Tìm xem người em đã đối xử thế nào với mọi người.",
+          "Việc người anh giữ hết ruộng vườn không nói lên lòng tốt của em, bỏ nó ra nhé.",
           "Gấu Hũ đếm giúp rồi: chi tiết đúng có bốn, {name} kiểm lại số lần mình chọn nhé."
         ]
       },
@@ -314,64 +313,65 @@
     {
       "id": "dieu-ki-la",
       "goTo": "Tìm tới khóm cúc bên hàng rào, Ong Nụ đang nấp sau một cánh hoa",
-      "title": "Điều khiến hai anh em ngạc nhiên",
+      "title": "Điều kì lạ bên cây khế",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "ong-nu",
-      "prompt": "Ong Nụ nín thở, hai cái râu dựng đứng như ăng-ten. Nụ hỏi {name}: sáng hôm sau, hai anh em ngạc nhiên vì điều gì?",
+      "prompt": "Ong Nụ nín thở, hai cái râu dựng đứng như ăng-ten. Nụ hỏi {name}: chim lạ ăn khế xong thì có điều kì lạ nào xảy ra?",
       "choices": [
         {
-          "id": "dong-day-nhu-cu",
-          "text": "Hai đống thóc chẳng vơi đi chút nào."
+          "id": "chim-noi-tieng-nguoi",
+          "text": "Chim nói được tiếng người và hứa trả bằng vàng."
         },
         {
-          "id": "mat-mot-dong",
-          "text": "Đống thóc của người anh biến mất sạch."
+          "id": "cay-khe-bay",
+          "text": "Cây khế nhổ rễ lên rồi bay theo chim."
         },
         {
-          "id": "thoc-thanh-vang",
-          "text": "Thóc trong sân kho bỗng hóa thành vàng."
+          "id": "khe-thanh-vang",
+          "text": "Những quả khế bỗng hóa thành vàng ròng."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "dong-day-nhu-cu"
+        "choice": "chim-noi-tieng-nguoi"
       },
       "support": {
         "guide": [
-          "Tìm đoạn mở đầu bằng \"Sáng ra\".",
-          "Xem hai đống thóc lúc ấy ra sao."
+          "Tìm đoạn kể lúc chim ăn khế xong.",
+          "Chim đã làm một việc mà chim thường không làm được."
         ],
-        "hint": "Vì cả hai cùng mang thóc sang cho nhau nên số thóc không hề vơi.",
+        "hint": "Nhớ lại lời chim nói với người em.",
         "answer": {
-          "text": "Cả hai đống thóc vẫn đầy ngang nhau, không đống nào vơi.",
-          "explanation": "Mỗi người lén mang thóc sang cho người kia, nên đống nào cũng không vơi đi, khiến cả hai thấy lạ."
+          "text": "Chim cất tiếng người, nói sẽ trả khế bằng vàng.",
+          "explanation": "Ăn khế xong, chim nói chuyện như người và hẹn trả ơn bằng vàng, đó là điều kì lạ nhất trong đoạn này."
         }
       },
       "feedback": {
         "right": [
-          "Đúng thế! Hai đống đầy y như cũ nên cả hai gãi đầu không hiểu vì sao.",
-          "Gấu Hũ gật gù: thì ra chuyện lạ có lời giải thích dễ thương thế!",
-          "Tuyệt! {name} nhớ đúng chuyện lạ lặp lại mấy đêm liền."
+          "Đúng thế! Ong Nụ vểnh râu: chim biết nói thì lạ thật đấy.",
+          "Gấu Hũ gật gù: một chú chim ăn khế mà trả bằng vàng, ồ hô!",
+          "Tuyệt! {name} nhớ đúng điều kì lạ ngay sau bữa khế."
         ],
         "wrong": [
-          "Đống thóc nào có biến mất đâu. Đọc đoạn bắt đầu bằng \"Sáng ra\" nhé.",
-          "Truyện này chẳng có phép hóa vàng nào cả. Thóc vẫn là thóc, chỉ có điều nó cứ đầy mãi.",
-          "Thử so sánh hai đống thóc vào buổi sáng xem chúng thế nào."
+          "Cây khế vẫn đứng yên trước sân, chẳng nhổ rễ đi đâu cả. Đọc lại đoạn chim ăn khế nhé.",
+          "Khế chỉ là khế thôi, vàng nằm ở ngoài đảo cơ. Xem chim nói gì sau khi ăn.",
+          "Thử nhớ xem chim cất tiếng bằng thứ tiếng nào."
         ]
       },
       "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "ten-hoa-ti-muoi",
-      "title": "Điều hai anh em nghĩ trong đêm trăng",
+      "title": "Điều người anh nghĩ dưới gốc khế",
       "goTo": "Ra ghế mây bên ngõ, Bà Gấu Nâu đang phe phẩy quạt, vẫy {name} lại gần",
       "kind": "speak",
       "target": "ba-gau-nau",
-      "prompt": "Bà Gấu Nâu cười hiền: \"Chuyện này, ngày bé bà cũng được bà của bà kể cho nghe đấy.\" Rồi bà hỏi {name}: Gặp nhau giữa bờ ruộng với hai gánh thóc, hai anh em nghĩ gì mà mắt rưng rưng?",
+      "prompt": "Bà Gấu Nâu cười hiền: \"Chuyện này, ngày bé bà cũng được bà của bà kể cho nghe đấy.\" Rồi bà hỏi {name}: Ngồi dưới gốc khế với hai bàn tay trắng, người anh hối hận điều gì? Nếu là người em, em sẽ nói gì với anh?",
       "hints": [
-        "Mỗi người đã lặng lẽ làm gì cho người kia?",
-        "Biết người kia cũng thương mình như vậy, họ cảm thấy thế nào?"
+        "Người anh đã làm gì khi chia nhà và khi đổi nhà lấy cây khế?",
+        "Người em đã đối xử với anh thế nào?",
+        "Biết anh đã nhận ra lỗi, em sẽ nói gì để anh bớt buồn?"
       ],
       "objective": "doc-truyen-doc-hieu"
     },
@@ -382,7 +382,7 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t14-b25-tho-cai",
-      "prompt": "Hồng cầm giỏ a, Nụ cầm giỏ b. Lần đầu tiên trong ngày, hai chị em làm chung mà không cãi nhau câu nào! Xếp các từ ngữ sau vào giỏ thích hợp: gánh, nhỏ, xúc, tròn, gặt, đầy, ôm, nặng",
+      "prompt": "Hồng cầm giỏ a, Nụ cầm giỏ b. Lần đầu tiên trong ngày, hai chị em làm chung mà không cãi nhau câu nào! Xếp các từ ngữ sau vào giỏ thích hợp: sà, to, nhặt, nhỏ, may, nặng, thả, sáng",
       "groups": [
         {
           "id": "hoat-dong",
@@ -395,72 +395,72 @@
       ],
       "items": [
         {
-          "id": "ganh",
-          "label": "gánh"
+          "id": "sa",
+          "label": "sà"
+        },
+        {
+          "id": "to",
+          "label": "to"
+        },
+        {
+          "id": "nhat",
+          "label": "nhặt"
         },
         {
           "id": "nho",
           "label": "nhỏ"
         },
         {
-          "id": "xuc",
-          "label": "xúc"
-        },
-        {
-          "id": "sang",
-          "label": "tròn"
-        },
-        {
-          "id": "gat",
-          "label": "gặt"
-        },
-        {
-          "id": "day",
-          "label": "đầy"
-        },
-        {
-          "id": "om",
-          "label": "ôm"
+          "id": "may",
+          "label": "may"
         },
         {
           "id": "nang",
           "label": "nặng"
+        },
+        {
+          "id": "tha",
+          "label": "thả"
+        },
+        {
+          "id": "sang",
+          "label": "sáng"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "ganh": "hoat-dong",
+          "sa": "hoat-dong",
+          "to": "dac-diem",
+          "nhat": "hoat-dong",
           "nho": "dac-diem",
-          "xuc": "hoat-dong",
-          "sang": "dac-diem",
-          "gat": "hoat-dong",
-          "day": "dac-diem",
-          "om": "hoat-dong",
-          "nang": "dac-diem"
+          "may": "hoat-dong",
+          "nang": "dac-diem",
+          "tha": "hoat-dong",
+          "sang": "dac-diem"
         }
       },
       "support": {
         "guide": [
-          "Từ chỉ hoạt động nói về việc làm, cử động: gánh, xúc, gặt...",
-          "Từ chỉ đặc điểm cho biết sự vật thế nào: to hay nhỏ, nặng hay nhẹ, đầy hay vơi."
+          "Từ chỉ hoạt động nói về việc làm, cử động: sà, nhặt, may...",
+          "Từ chỉ đặc điểm cho biết sự vật thế nào: to hay nhỏ, nặng hay nhẹ, sáng hay tối."
         ],
         "hint": "Mỗi giỏ có bốn từ. Thử làm động tác theo từng từ: từ nào làm được là hoạt động.",
         "answer": {
-          "text": "a. Từ ngữ chỉ hoạt động: gánh, xúc, gặt, ôm. b. Từ ngữ chỉ đặc điểm: nhỏ, tròn, đầy, nặng.",
-          "explanation": "Gánh, xúc, gặt, ôm là việc người ta làm; nhỏ, tròn, đầy, nặng tả túp lều, vầng trăng, thúng thóc và gánh thóc."
+          "text": "a. Từ ngữ chỉ hoạt động: sà, nhặt, may, thả. b. Từ ngữ chỉ đặc điểm: to, nhỏ, nặng, sáng.",
+          "explanation": "Sà, nhặt, may, thả là việc người ta hay chim làm; to, nhỏ, nặng, sáng cho biết con chim, chiếc túi và vàng trông ra sao."
         }
       },
       "feedback": {
         "right": [
           "Hai giỏ đầy, mỗi giỏ bốn từ, Gấu Hũ đếm lại vẫn khớp từng từ!",
           "Hồng và Nụ chạm cánh vào nhau: chị em mình làm chung vui ghê!",
-          "{name} làm động tác gánh thóc trông khỏe re, chẳng cần ai phụ."
+          "{name} làm động tác nhặt vàng trông nhanh nhẹn, chẳng cần ai phụ."
         ],
         "wrong": [
-          "\"Nặng\" là tả sức nặng của gánh thóc, đâu phải việc làm. Thử nặng một cái xem, khó lắm!",
-          "\"Gặt\" thì nông dân nào cũng làm được ngay, vậy nó vào giỏ hoạt động nhé.",
-          "Còn một từ tả ánh trăng đang nằm nhầm giỏ đấy."
+          "\"Nặng\" là tả sức nặng của chiếc túi, đâu phải việc làm. Thử nặng một cái xem, khó lắm!",
+          "\"Thả\" thì ai cũng làm được ngay, vậy nó vào giỏ hoạt động nhé.",
+          "Còn một từ tả ánh vàng đang nằm nhầm giỏ đấy."
         ]
       },
       "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
@@ -471,9 +471,9 @@
       "title": "Đặt câu về hai anh em",
       "kind": "speak",
       "target": "ong-hong",
-      "prompt": "Hồng muốn học làm một người chị tốt, tốt hơn cả mật. Đặt một câu nói về việc người anh hoặc người em đã làm cho người kia trong đêm trăng.",
+      "prompt": "Hồng muốn học làm một người chị tốt, tốt hơn cả mật. Đặt một câu nói về việc người anh hoặc người em đã làm trong chuyện Cây khế.",
       "hints": [
-        "Nhớ lại đêm hai anh em gánh thóc.",
+        "Nhớ lại chuyện chim ăn khế và chuyến bay ra đảo xa.",
         "Nói câu bắt đầu bằng \"Người anh...\" hoặc \"Người em...\" và kể một việc họ làm."
       ],
       "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
@@ -487,7 +487,7 @@
       "lines": [
         {
           "speaker": "Ong Hồng",
-          "text": "Chị em mình mà lại giành nhau một chùm hoa, trong khi hai anh em trong chuyện cổ cứ nhường nhau hoài. Chị xin lỗi Nụ nhé."
+          "text": "Chị em mình mà lại giành nhau một chùm hoa, trong khi người em trong chuyện Cây khế biết đủ, lại còn chia vàng cho anh. Chị xin lỗi Nụ nhé."
         },
         {
           "speaker": "Ong Nụ",
@@ -516,7 +516,7 @@
         "title": "The sisters' flower cluster",
         "goTo": "Run to the flower-garden gate, Gấu Hũ has called both bee sisters back",
         "lines": [
-          "We're sisters, yet we fought over one flower, while the two brothers in the old tale kept giving way to each other. I'm sorry, Nụ.",
+          "We're sisters, yet we fought over one flower, while the younger brother in the tale of the star-fruit tree was content with little and even shared his gold with his brother. I'm sorry, Nụ.",
           "I'm sorry too. {name}, what should we do with this flower now?",
           "Oho, I've been counting: eighteen lines of quarrelling and only two of making up. Say another one!"
         ],
