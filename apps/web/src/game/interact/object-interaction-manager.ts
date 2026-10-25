@@ -10,7 +10,6 @@ import type { CatalogModel } from '@miu/voxel/model-catalog';
 import type { ModelBounds } from '@miu/voxel/prop-collision';
 import type { WorldEntities } from '@miu/voxel/world-entities';
 import type { InteractionPrompt } from '../../game-bridge/game-store';
-import { getLangMode, inline } from '../../ui/i18n/i18n';
 import type { SpeechBubble } from '../ambient/speech-bubble';
 import type { ExtraPlayerAction, SeatedPose } from '../entities/player-character';
 import type { MultiplayerClient } from '../multiplayer/multiplayer-client';
@@ -121,7 +120,7 @@ export class ObjectInteractionManager {
       const placed = { position: prop.position, yaw: prop.yaw, scale: prop.scale };
       const candidate: CandidateObject = {
         id: `prop-${def.id}-${i}`,
-        name: inline({ vi: def.nameVi, en: def.nameEn }, getLangMode()),
+        name: def.nameVi,
         model: prop.model,
         slot: prop.slot,
         propIndex: i,
@@ -169,7 +168,8 @@ export class ObjectInteractionManager {
     const getUp = POSE_BEHAVIOURS[def.pose].place === 'inside' ? STEP_OUT : GET_UP;
     const label =
       this.holding === obj ? getUp : on && def.offVi && def.offEn ? { vi: def.offVi, en: def.offEn } : { vi: def.verbVi, en: def.verbEn };
-    return { targetId: obj.id, kind: 'object', name: obj.name, label: inline(label, getLangMode()) };
+    // Both languages travel with the prompt: the label over the object shows them in the mode picked at that moment.
+    return { targetId: obj.id, kind: 'object', name: obj.name, nameEn: def.nameEn, label: label.vi, labelEn: label.en };
   }
 
   /** Screen coordinates for the interaction label anchor. */

@@ -6,7 +6,8 @@
 import { useEffect, useState } from 'react';
 import type { SkillCheckResult, StepCompleteResponse } from '@miu/schema/game';
 import { freshPicker, type FreshPicker } from '@miu/quest/pick-fresh';
-import { format, linesOf, same, type Bilingual } from '../i18n/i18n';
+import { format, linesOf, type Bilingual } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 import { Bi, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -28,7 +29,7 @@ let shortLines: FreshPicker<Bilingual> | null = null;
 
 export function SkillCheckModal({ check, name, onPractice, onGoOn }: SkillCheckModalProps) {
   const { t } = useT();
-  const skill = same(check.skillName ?? check.skill ?? '');
+  const skill = nameOf(check.skillName ?? check.skill ?? '');
   const required = check.requiredLevel ?? 1;
   const current = check.currentLevel ?? 1;
   const hint = check.hintQuestId;
@@ -46,7 +47,7 @@ export function SkillCheckModal({ check, name, onPractice, onGoOn }: SkillCheckM
           <Icon name="glowingStar" size={64} />
         </span>
         <p className="gate-needs">
-          <T k="knowledgeGate.needs" params={{ target: same(check.targetName), name }} />
+          <T k="knowledgeGate.needs" params={{ target: nameOf(check.targetName), name }} />
         </p>
         <div className="gate-requirement" data-id="skill-check-requirement">
           <Icon name="books" size={36} />

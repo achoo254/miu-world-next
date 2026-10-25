@@ -8,7 +8,7 @@ import { useEffect, useRef, type MouseEvent, type ReactNode } from 'react';
 import { ListenButton } from '../dialogue/listen-button';
 import { NpcPortrait } from '../dialogue/npc-portrait';
 import type { Bilingual } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { keepMathTogether } from '../kit/math-text';
@@ -33,6 +33,11 @@ export interface ChallengeContext {
   fill: (text: string) => string;
   /** A content line and its English twin (if the step has one), `{name}` filled: textbook wording has none. */
   say: (vi: string, en?: string | null) => Bilingual;
+  /**
+   * An answer label (a choice, a piece, an element, a card, a group): `say`, and when the step has no English twin for
+   * it, the name glossary's English (ui/i18n/names) — except in a language lesson, where the word is what she learns.
+   */
+  label: (vi: string, en?: string | null) => Bilingual;
   busy: boolean;
   /** Line after the last wrong answer, if any (the content's own feedback, or a kind line in both languages). */
   tryAgain: Bilingual | null;
@@ -106,7 +111,11 @@ export function ChallengeFrame({
           />
         ) : null}
         <p className="parchment npc-bubble challenge-prompt" data-id="challenge-prompt">
-          {presenter ? <span className="npc-name">{context.fill(presenter.name)}</span> : null}
+          {presenter ? (
+            <span className="npc-name">
+              <Name vi={presenter.name} fill={context.fill} />
+            </span>
+          ) : null}
           <Bi vi={keepMathTogether(prompt.vi)} en={keepMathTogether(prompt.en)} />
           {/* A lesson's question is the book's Vietnamese: without an English twin it is read in Vietnamese in every mode. */}
           <ListenButton text={prompt.en === prompt.vi ? { vi: prompt.vi } : prompt} dataId="challenge-listen" />

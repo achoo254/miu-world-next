@@ -10,7 +10,7 @@ import type { CoopLobbyView, CoopStateView, CoopTaskView } from '@miu/schema/coo
 import type { QuestStepPublic } from '@miu/schema/content';
 import type { CoopMessage, SocialStore } from '../../game-bridge/social-store';
 import { linesOf, same, type Bilingual, type TextKey } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
 import { MiuArt } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -330,7 +330,7 @@ function Play({ social, state, at, quest, fill, titleOfQuest }: { social: Social
         {state.boss ? (
           <div className="coop-boss" data-id="coop-boss">
             <p className="coop-card-title">
-              <Bi vi={state.boss.name} en={state.boss.nameEn ?? state.boss.name} />
+              <Name vi={state.boss.name} en={state.boss.nameEn} />
             </p>
             <div className="coop-hp" role="meter" aria-valuemin={0} aria-valuemax={state.boss.maxHp} aria-valuenow={state.boss.hp} aria-label={t('coop.boss.hp', { hp: state.boss.hp, max: state.boss.maxHp })} data-id="coop-boss-hp" data-hp={state.boss.hp}>
               <span className="coop-hp-fill" style={{ width: `${(100 * state.boss.hp) / state.boss.maxHp}%` }} />

@@ -13,6 +13,8 @@ import { ITEMS, itemIcon } from '../backpack/items';
 import { BOOK_SETS, itemName } from '../collection/collection-catalog';
 import type { TextKey } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
+import { twin } from '../quest/content-text';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -73,7 +75,7 @@ function Room({ room, going }: { room: TrophyRoomResponse; going: Going | null }
                   <span className="trophy-card-name">
                     <Bi {...itemName(item, b.itemId)} />
                   </span>
-                  <span className="trophy-card-how">{item?.description ?? ''}</span>
+                  <span className="trophy-card-how">{item ? <Bi {...twin(item.description, item.en?.description)} /> : null}</span>
                   <When at={b.earnedAt} dataId={`trophy-badge-when-${b.itemId}`} />
                   {going && !b.earnedAt ? <GoThereButton trip={badgeTrip(b.itemId, going.sources)} travel={going.travel} dataId={`trophy-badge-go-${b.itemId}`} label="trophy.go" /> : null}
                 </span>
@@ -96,7 +98,7 @@ function Room({ room, going }: { room: TrophyRoomResponse; going: Going | null }
                 <span>
                   <span className="trophy-card-name">{set ? <Bi {...set.name} /> : c.mapId}</span>
                   <span className="trophy-card-how">
-                    <T k="trophy.cupHow" params={{ region: set?.region ?? c.mapId }} />
+                    <T k="trophy.cupHow" params={{ region: nameOf(set?.region ?? c.mapId) }} />
                   </span>
                   <When at={c.earnedAt} dataId={`trophy-cup-when-${c.mapId}`} />
                   {going && !c.earnedAt ? <GoThereButton trip={collectionTrip(c.mapId, going.sources.quests)} travel={going.travel} dataId={`trophy-cup-go-${c.mapId}`} label="trophy.go" /> : null}

@@ -3,6 +3,8 @@
 import { Item } from '@miu/schema/item';
 import type { UiIcon } from '../kit/ui-art';
 import { UI_ICONS } from '../kit/ui-art';
+import type { Bilingual } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 
 const modules = import.meta.glob<{ default: unknown }>('../../../../../content/items/*.json', { eager: true });
 
@@ -16,3 +18,9 @@ export const ITEMS: ReadonlyMap<string, Item> = new Map(
 export function itemIcon(item: Item | undefined): UiIcon {
   return item && item.icon in UI_ICONS ? (item.icon as UiIcon) : 'gift';
 }
+
+/**
+ * A granted thing's name (an item, a wearable, a decor piece) in both languages: the item file's own English when
+ * it has one, else the name glossary's.
+ */
+export const awardName = (id: string, vi: string): Bilingual => nameOf(vi, ITEMS.get(id)?.en?.name);

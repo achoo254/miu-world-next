@@ -13,6 +13,7 @@ import type { NotebookLine, StepAnswer } from '@miu/schema/game';
 import { GameStoreContext } from '../../../game-bridge/use-game-state';
 import { linesOf, mapBoth, pairOf, type Bilingual, type LinesKey } from '../../i18n/i18n';
 import { Bi, T, useT } from '../../i18n/use-t';
+import { nameOf } from '../../i18n/names';
 import { buttonClass } from '../../kit/button';
 import { Modal } from '../../kit/modal';
 import { twin } from '../../quest/content-text';
@@ -238,7 +239,7 @@ export function BossDuel({
       className={`boss-duel boss-duel--${mode}`}
     >
       <div className="boss-screen" data-id="boss-battle" data-mode={mode}>
-        <BossHud step={step} hp={hp} answered={answered} current={defeated ? null : (turn?.id ?? null)} name={fill(twin(step.bossName, step.en?.bossName))} drop={drop} calm={calm} />
+        <BossHud step={step} hp={hp} answered={answered} current={defeated ? null : (turn?.id ?? null)} name={fill(nameOf(step.bossName, step.en?.bossName))} drop={drop} calm={calm} />
         <div className="boss-stage">
           {mode === 'card' ? (
             <div className="boss-avatar-wrap">

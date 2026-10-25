@@ -446,8 +446,8 @@ describe('the bosses on the minimap', () => {
       quest('ward-noi-khac', 'guardian', [boss('xa', 'Xa')], 'cho-phien'),
     ];
     expect(mapBossesOf(quests, lesson.quest.region, (t) => t.replace('{name}', 'Mochi'))).toEqual([
-      { questId: 'vuot-ai-thu', targetId: 'than-rung', name: 'Thần Rừng của Mochi', title: 'Bài vuot-ai-thu', big: true },
-      { questId: 'ward-thu', targetId: 'rai-ca', name: 'Rái Cá', title: 'Bài ward-thu', big: false },
+      { questId: 'vuot-ai-thu', targetId: 'than-rung', name: { vi: 'Thần Rừng của Mochi', en: 'Thần Rừng của Mochi' }, title: { vi: 'Bài vuot-ai-thu', en: 'Bài vuot-ai-thu' }, big: true },
+      { questId: 'ward-thu', targetId: 'rai-ca', name: { vi: 'Rái Cá', en: 'Rái Cá' }, title: { vi: 'Bài ward-thu', en: 'Bài ward-thu' }, big: false },
     ]);
   });
 });

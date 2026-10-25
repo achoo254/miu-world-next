@@ -5,7 +5,7 @@ import { useCallback, useState, type KeyboardEvent } from 'react';
 import type { QuestStepPublic } from '@miu/schema/content';
 import type { StepAnswer } from '@miu/schema/game';
 import { Icon } from '../kit/art';
-import { useT } from '../i18n/use-t';
+import { Bi, useT } from '../i18n/use-t';
 import { ChallengeFrame, type ChallengeContext } from './challenge-frame';
 import { DROP_ZONE_ATTR, usePointerDrag } from './use-pointer-drag';
 import { isStringList, useDraftState } from '../quest/step-draft';
@@ -27,7 +27,7 @@ const onActivateKey = (action: () => void) => (e: KeyboardEvent<HTMLElement>) =>
 export function DragDropChallenge({ step, context, onAnswer }: { step: DragDropStep; context: ChallengeContext; onAnswer: (answer: StepAnswer) => void }) {
   const [placed, setPlaced] = useDraftState<string[]>('placed', [], isStringList);
   const [selected, setSelected] = useState<string | null>(null);
-  const { t } = useT();
+  const { t, inline } = useT();
 
   const move = useCallback((id: string, into: boolean) => {
     setPlaced((prev) => (into ? (prev.includes(id) ? prev : [...prev, id]) : prev.filter((p) => p !== id)));
@@ -74,13 +74,13 @@ export function DragDropChallenge({ step, context, onAnswer }: { step: DragDropS
           onClick={() => dropSelected(false)}
           onKeyDown={onActivateKey(() => dropSelected(false))}
         >
-          {step.pieces.filter((p) => !placed.includes(p.id)).map((p) => piece(p.id, context.fill(p.label)))}
+          {step.pieces.filter((p) => !placed.includes(p.id)).map((p) => piece(p.id, inline(context.label(p.label))))}
         </div>
         <div
           className="drag-container"
           role="button"
           tabIndex={0}
-          aria-label={`${context.fill(step.container)}: ${total}`}
+          aria-label={`${inline(context.label(step.container))}: ${total}`}
           {...{ [DROP_ZONE_ATTR]: 'container' }}
           data-id="drag-container"
           onClick={() => dropSelected(true)}
@@ -88,9 +88,9 @@ export function DragDropChallenge({ step, context, onAnswer }: { step: DragDropS
         >
           <p className="drag-container-label">
             <Icon name="basket" size={40} />
-            {context.fill(step.container)}
+            <Bi {...context.label(step.container)} />
           </p>
-          <div className="drag-container-items">{step.pieces.filter((p) => placed.includes(p.id)).map((p) => piece(p.id, context.fill(p.label)))}</div>
+          <div className="drag-container-items">{step.pieces.filter((p) => placed.includes(p.id)).map((p) => piece(p.id, inline(context.label(p.label))))}</div>
           <p className="drag-count" data-id="drag-count">
             {total}
           </p>

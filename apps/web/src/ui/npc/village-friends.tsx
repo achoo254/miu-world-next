@@ -9,12 +9,12 @@ import { ITEMS, itemIcon } from '../backpack/items';
 import { errorMessage } from '../api-client';
 import { NpcPortrait } from '../dialogue/npc-portrait';
 import { mapBoth, type TextKey } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { SkyScene } from '../kit/sky-scene';
 import { say, usePlayer } from '../player/player-data';
-import { twin } from '../quest/content-text';
 import { findRegion } from '../region/regions';
 import { fetchNpcs } from './npc-api';
 import { Hearts } from './hearts';
@@ -38,13 +38,13 @@ const RELATION_TEXT: Record<NpcDto['relations'][number]['kind'], TextKey> = {
 function Friend({ npc, fill }: { npc: NpcDto; fill: (text: string) => string }) {
   const { friendship } = npc;
   const say2 = (text: { vi: string; en: string }) => <Bi {...mapBoth(text, fill)} />;
-  const regionName = (id: string): string => fill(findRegion(id)?.name ?? id);
+  const named = (vi: string) => <Name vi={vi} fill={fill} />;
   return (
     <li className="parchment village-friend" data-id={`village-npc-${npc.id}`}>
       <div className="village-friend-head">
         <NpcPortrait name={fill(npc.name)} target={npc.id} size={72} reaction="speak" />
         <div className="village-friend-name">
-          <strong>{fill(npc.name)}</strong>
+          <strong>{named(npc.name)}</strong>
           <span className="hint">{say2(npc.role)}</span>
           <Hearts hearts={friendship.hearts} dataId={`village-hearts-${npc.id}`} />
           <span className="hint" data-id={`village-points-${npc.id}`}>
@@ -86,7 +86,7 @@ function Friend({ npc, fill }: { npc: NpcDto; fill: (text: string) => string }) 
           const item = ITEMS.get(id);
           return (
             <li key={id}>
-              <Icon name={itemIcon(item)} size={24} /> <Bi {...twin(item?.name ?? id, item?.en?.name)} />
+              <Icon name={itemIcon(item)} size={24} /> <Name vi={item?.name ?? id} en={item?.en?.name} />
             </li>
           );
         })}
@@ -99,7 +99,7 @@ function Friend({ npc, fill }: { npc: NpcDto; fill: (text: string) => string }) 
           <ul className="village-relations">
             {npc.relations.map((rel) => (
               <li key={rel.npc} data-id={`village-relation-${npc.id}-${rel.npc}`}>
-                <strong>{fill(rel.name)}</strong> ({regionName(rel.region)}) · <T k={RELATION_TEXT[rel.kind]} />: {say2(rel.note)}
+                <strong>{named(rel.name)}</strong> ({named(findRegion(rel.region)?.name ?? rel.region)}) · <T k={RELATION_TEXT[rel.kind]} />: {say2(rel.note)}
               </li>
             ))}
           </ul>
@@ -179,8 +179,10 @@ export function VillageFriendsScreen() {
           </p>
         ) : null}
         {regions.map((region) => (
-          <section key={region} className="village-region" aria-label={t('village.region', { region: fill(findRegion(region)?.name ?? region) })} data-id={`village-region-${region}`}>
-            <h2 className="ribbon ribbon--small">{fill(findRegion(region)?.name ?? region)}</h2>
+          <section key={region} className="village-region" aria-label={t('village.region', { region: mapBoth(nameOf(findRegion(region)?.name ?? region), fill) })} data-id={`village-region-${region}`}>
+            <h2 className="ribbon ribbon--small">
+              <Name vi={findRegion(region)?.name ?? region} fill={fill} />
+            </h2>
             <ul className="village-list">
               {(npcs ?? [])
                 .filter((n) => n.region === region)

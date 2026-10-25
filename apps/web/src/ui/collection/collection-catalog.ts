@@ -8,6 +8,7 @@ import collectiblesJson from '../../../../../content/collectibles.json';
 import { api } from '../api-client';
 import { ITEMS } from '../backpack/items';
 import type { Bilingual, TextKey } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 import { findRegion } from '../region/regions';
 
 export interface BookSlot {
@@ -23,16 +24,21 @@ export interface BookSet {
   name: Bilingual;
   description: string;
   title: Bilingual;
-  /** The region's name, for the tab (regions have Vietnamese names only). */
+  /** The region's name in Vietnamese, for the tab (shown through the name glossary). */
   region: string;
   slots: readonly BookSlot[];
 }
 
+// Names in both languages are read when shown (getters), so the name glossary arriving later still shows.
 const bookSet = (set: CollectibleSet): BookSet => ({
   mapId: set.mapId,
-  name: { vi: set.name, en: set.en?.name ?? set.name },
+  get name() {
+    return nameOf(set.name, set.en?.name);
+  },
   description: set.description,
-  title: { vi: set.reward.title, en: set.en?.title ?? set.reward.title },
+  get title() {
+    return nameOf(set.reward.title, set.en?.title);
+  },
   region: findRegion(set.mapId)?.name ?? set.mapId,
   slots: set.items.map((entry) => ({ ...entry, item: ITEMS.get(entry.id) })),
 });
@@ -43,8 +49,8 @@ const BY_ITEM: ReadonlyMap<string, BookSet> = new Map(BOOK_SETS.flatMap((set) =>
 /** The set a collectible belongs to (null for any other item). */
 export const setOfItem = (itemId: string): BookSet | null => BY_ITEM.get(itemId) ?? null;
 
-/** An item's name in both languages (its own English name when the item file has one). */
-export const itemName = (item: Item | undefined, fallback: string): Bilingual => ({ vi: item?.name ?? fallback, en: item?.en?.name ?? item?.name ?? fallback });
+/** An item's name in both languages (its own English name when the item file has one, else the name glossary's). */
+export const itemName = (item: Item | undefined, fallback: string): Bilingual => nameOf(item?.name ?? fallback, item?.en?.name);
 
 export const RARITY_KEYS: Readonly<Record<CollectibleRarity, TextKey>> = {
   common: 'collection.rarity.common',

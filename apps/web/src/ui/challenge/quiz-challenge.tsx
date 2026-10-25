@@ -14,7 +14,7 @@ export function QuizChallenge({ step, context, onAnswer }: { step: QuizStep; con
   const { t } = useT();
   return (
     <ChallengeFrame context={context} prompt={context.say(step.prompt, step.en?.prompt)} onCheck={() => choice && onAnswer({ choice })} canCheck={choice !== null}>
-      <ChoiceList choices={step.choices} en={step.en?.choices} selected={choice} onSelect={setChoice} fill={context.fill} label={t('challenge.pickChoice')} />
+      <ChoiceList choices={step.choices} en={step.en?.choices} selected={choice} onSelect={setChoice} fill={context.fill} say={context.label} label={t('challenge.pickChoice')} />
     </ChallengeFrame>
   );
 }

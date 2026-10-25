@@ -49,7 +49,7 @@ export function LogicChallenge({
                   <span className="logic-pattern-order">{idx + 1}</span>
                   {elem.image && <Illustration picture={elem.image} />}
                   <span className={elem.label.trim() === '?' ? 'logic-pattern-question' : 'logic-pattern-label'}>
-                    <Bi {...context.say(elem.label, step.en?.elements?.[idx])} />
+                    <Bi {...context.label(elem.label, step.en?.elements?.[idx])} />
                   </span>
                 </div>
               );
@@ -73,7 +73,7 @@ export function LogicChallenge({
                 <li key={elem.id} className="logic-clue">
                   {elem.image && <Illustration picture={elem.image} />}
                   <span className="logic-clue-label">
-                    <Bi {...context.say(elem.label, step.en?.elements?.[idx])} />
+                    <Bi {...context.label(elem.label, step.en?.elements?.[idx])} />
                   </span>
                 </li>
               ))}
@@ -107,6 +107,7 @@ export function LogicChallenge({
           selected={choice}
           onSelect={setChoice}
           fill={context.fill}
+          say={context.label}
           label={t('challenge.pickChoice')}
         />
       </div>

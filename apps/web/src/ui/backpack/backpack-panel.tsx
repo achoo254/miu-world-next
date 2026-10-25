@@ -7,7 +7,8 @@ import { api, errorMessage } from '../api-client';
 import { CollectionBook } from '../collection/collection-book';
 import type { Travel } from '../travel/go-there-button';
 import type { TextKey } from '../i18n/i18n';
-import { T, useT } from '../i18n/use-t';
+import { Name, T, useT } from '../i18n/use-t';
+import { Say, twin } from '../quest/content-text';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Tabs } from '../kit/tabs';
@@ -71,7 +72,7 @@ export function BackpackPanel({ data, region, travel }: { data: Pick<PlayerData,
               <li key={itemId}>
                 <button type="button" className="bag-tile" aria-pressed={chosen === itemId} data-id={`backpack-item-${itemId}`} onClick={() => setChosen(itemId)}>
                   <Icon name={itemIcon(item)} size={44} />
-                  {item ? fill(item.name) : itemId}
+                  {item ? <Name vi={item.name} en={item.en?.name} fill={fill} /> : itemId}
                   <span className="bag-qty">×{qty}</span>
                 </button>
               </li>
@@ -80,8 +81,12 @@ export function BackpackPanel({ data, region, travel }: { data: Pick<PlayerData,
         </ul>
         {detail ? (
           <div className="bag-detail" data-id="backpack-detail">
-            <strong>{fill(detail.name)}</strong>
-            <p>{fill(detail.description)}</p>
+            <strong>
+              <Name vi={detail.name} en={detail.en?.name} fill={fill} />
+            </strong>
+            <p>
+              <Say text={twin(detail.description, detail.en?.description)} fill={fill} />
+            </p>
             <p className="hint">{fill(detail.usedIn)}</p>
           </div>
         ) : null}

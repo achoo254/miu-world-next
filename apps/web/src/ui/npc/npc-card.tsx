@@ -12,6 +12,7 @@ import { ITEMS, itemIcon } from '../backpack/items';
 import { errorMessage } from '../api-client';
 import { linesOf, mapBoth, pairOf, type Bilingual } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -54,7 +55,10 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
   const [busy, setBusy] = useState(false);
   const [hello] = useState(() => hellos.next());
   const name = fill(npc.name);
-  const shown = mapBoth(said ?? (line ? twin(line.vi, line.en) : hello), (text) => fill(text.replaceAll('{who}', npc.name)));
+  // Its name in both languages: the card's title, and `{who}` in its lines and in the gift hint.
+  const who = mapBoth(nameOf(npc.name), fill);
+  const picked = said ?? (line ? twin(line.vi, line.en) : hello);
+  const shown = { vi: fill(picked.vi.replaceAll('{who}', who.vi)), en: fill(picked.en.replaceAll('{who}', who.en)) };
   const offer = npc.offer;
   const arc = offer ? npc.arcs.find((a) => a.id === offer.arcId) : undefined;
   const chapter = arc && offer ? arc.chapters[offer.part - 1] : undefined;
@@ -76,7 +80,7 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
   }
 
   return (
-    <Modal title={name} onClose={onClose} dataId="npc-card" placement="bottom" variant="scene" titleClass="ribbon ribbon--small">
+    <Modal title={<Bi {...who} />} onClose={onClose} dataId="npc-card" placement="bottom" variant="scene" titleClass="ribbon ribbon--small">
       <div className="dialogue-scene">
         <div className="npc-say">
           <NpcPortrait name={name} target={targetId} size={96} reaction={raised ? 'cheer' : 'speak'} reactionKey={shown.vi} />
@@ -100,7 +104,7 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
         {gifting ? (
           <div className="npc-gifts" data-id="npc-card-gifts">
             <p className="hint">
-              <T k="npc.giftPick" params={{ who: name }} />
+              <T k="npc.giftPick" params={{ who }} />
             </p>
             <div className="dialogue-choices">
               {npc.likes.map((itemId) => {
@@ -110,7 +114,7 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
                   <button key={itemId} type="button" className="dialogue-choice" data-id={`npc-gift-${itemId}`} disabled={busy || spare === 0} onClick={() => void give(itemId)}>
                     <Icon name={itemIcon(item)} size={32} />
                     <span>
-                      <Bi {...twin(item?.name ?? itemId, item?.en?.name)} />
+                      <Bi {...nameOf(item?.name ?? itemId, item?.en?.name)} />
                     </span>
                     <span className="hint">{spare > 0 ? t('npc.giftSpare', { count: spare }) : t('npc.giftNone')}</span>
                   </button>

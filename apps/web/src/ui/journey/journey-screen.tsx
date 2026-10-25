@@ -6,7 +6,8 @@ import { useCallback, useState } from 'react';
 import { Link } from 'react-router';
 import type { JourneyEvent, JourneyEventKind, JourneyRegion, JourneyTab } from '@miu/schema/journey';
 import { ITEMS, itemIcon } from '../backpack/items';
-import { mapBoth, pairOf, same, type Bilingual, type TextKey } from '../i18n/i18n';
+import { joinBoth, mapBoth, pairOf, same, type Bilingual, type TextKey } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 import { Bi, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -47,11 +48,13 @@ function dayOf(at: string): string {
 function detailOf(event: JourneyEvent, player: PlayerData): Bilingual | null {
   const fill = (text: string) => say(text, player.character);
   if (event.kind === 'level-up') return pairOf('journey.levelLine', { name: player.character.name, level: event.level ?? 1 });
-  if (event.kind === 'skill-up') return pairOf('journey.skillLine', { skill: same(event.label ?? event.ref ?? ''), level: event.level ?? 1 });
-  const item = event.itemId ? (event.itemName ?? ITEMS.get(event.itemId)?.name ?? null) : null;
-  const parts = [event.label, item].filter((part): part is string => part !== null);
-  if (event.kind === 'gift' && event.level !== null) parts.unshift(`Lv.${event.level}`);
-  return parts.length > 0 ? mapBoth(same(parts.join(' · ')), fill) : null;
+  if (event.kind === 'skill-up') return pairOf('journey.skillLine', { skill: nameOf(event.label ?? event.ref ?? ''), level: event.level ?? 1 });
+  // What it was about and the item it gave, each a name in both languages (the item's own English first).
+  const itemDef = event.itemId ? ITEMS.get(event.itemId) : undefined;
+  const itemVi = event.itemId ? (event.itemName ?? itemDef?.name ?? null) : null;
+  const parts: Bilingual[] = [...(event.label !== null ? [nameOf(event.label)] : []), ...(itemVi !== null ? [nameOf(itemVi, itemVi === itemDef?.name ? itemDef.en?.name : undefined)] : [])];
+  if (event.kind === 'gift' && event.level !== null) parts.unshift(same(`Lv.${event.level}`));
+  return parts.length > 0 ? mapBoth(joinBoth(parts, ' · '), fill) : null;
 }
 
 function EventRow({ event, player }: { event: JourneyEvent; player: PlayerData }) {
@@ -91,7 +94,7 @@ function EventRow({ event, player }: { event: JourneyEvent; player: PlayerData }
 function RegionCard({ region, player }: { region: JourneyRegion; player: PlayerData }) {
   const { t } = useT();
   const info = REGIONS.find((r) => r.id === region.region);
-  const name = info ? say(info.name, player.character) : region.region;
+  const name = info ? mapBoth(nameOf(info.name), (text) => say(text, player.character)) : same(region.region);
   const art = REGION_BACKDROPS[region.region];
   const complete = region.lessons > 0 && region.lessonsDone === region.lessons;
   const fresh = region.lessonsDone === 0 && region.minigameRuns === 0;
@@ -111,7 +114,9 @@ function RegionCard({ region, player }: { region: JourneyRegion; player: PlayerD
             </span>
           ) : null}
         </span>
-        <strong>{name}</strong>
+        <strong>
+          <Bi {...name} />
+        </strong>
         {region.lessons > 0 ? (
           <>
             <ProgressBar done={region.lessonsDone} total={region.lessons} label={t('journey.lessons', { done: region.lessonsDone, total: region.lessons })} />

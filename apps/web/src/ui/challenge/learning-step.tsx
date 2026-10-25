@@ -8,6 +8,8 @@ import { freshPicker } from '@miu/quest/pick-fresh';
 import type { QuestStepPublic } from '@miu/schema/content';
 import type { NotebookLine, StepAnswer, StepCompleteRequest, StepCompleteResponse } from '@miu/schema/game';
 import { mapBoth, type Bilingual } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
+import { teachesLanguage } from './language-lesson';
 import { stepTitleOf, twin } from '../quest/content-text';
 import { say, type PlayerData } from '../player/player-data';
 import { TRY_AGAIN_LINES } from '../quest/loop-lines';
@@ -119,11 +121,14 @@ export function LearningStep({
     return { correct: response.correct, won: response.quest.completedSteps.includes(step.id), copy: response.copy ?? null };
   }
 
+  // A language lesson keeps its answer labels as written (see language-lesson.ts).
+  const language = teachesLanguage(quest, step);
   const context: ChallengeContext = {
     questId: quest.id,
     stepId: step.id,
     title: mapBoth(stepTitleOf(step), fill),
     say: (vi, en) => mapBoth(twin(vi, en), fill),
+    label: (vi, en) => mapBoth(language ? twin(vi, en) : nameOf(vi, en), fill),
     position: { index: quest.steps.findIndex((s) => s.id === step.id) + 1, total: quest.steps.length },
     xp: quest.reward.xp,
     fill,

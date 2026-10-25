@@ -17,8 +17,10 @@ import { GameStoreContext, useGameState } from '../../game-bridge/use-game-state
 import { CharacterPreview, EMOTES, type Emote } from '../../game/preview/character-preview';
 import { SPECIES } from '../../game/content/characters';
 import { api, errorMessage } from '../api-client';
-import type { TextKey } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { mapBoth, same, type Bilingual, type TextKey } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
+import { titleOf } from '../quest/content-text';
+import { Bi, Name, T, useT } from '../i18n/use-t';
 import { Icon, MiuArt } from '../kit/art';
 import { assetUrl, PETS } from '../kit/ui-art';
 import { buttonClass } from '../kit/button';
@@ -39,7 +41,7 @@ interface CreatorData {
   character: CharacterDto;
   level: number;
   completed: ReadonlySet<string>;
-  questTitles: ReadonlyMap<string, string>;
+  questTitles: ReadonlyMap<string, Bilingual>;
   /** Things bought in the shop or claimed from a region chest (the server keeps both in the shop cupboard). */
   owned: ReadonlySet<string>;
 }
@@ -56,7 +58,7 @@ async function loadCreator(): Promise<CreatorData> {
     character,
     level: progress.level,
     completed: new Set(progress.quests.filter((q) => q.completed).map((q) => q.questId)),
-    questTitles: new Map(quests.quests.map((q) => [q.quest.id, q.quest.title])),
+    questTitles: new Map(quests.quests.map((q) => [q.quest.id, titleOf(q.quest)])),
     owned: new Set(Object.keys(shop?.owned ?? {})),
   };
 }
@@ -91,7 +93,9 @@ function SpeciesStep({ current, switching, onPick }: { current: string; switchin
               <span className="species-card-art">
                 <MiuArt pose="idle" species={s.id} />
               </span>
-              <strong>{s.name}</strong>
+              <strong>
+                <Name vi={s.name} />
+              </strong>
               <span className="hint">{s.trait}</span>
             </button>
           </li>
@@ -185,8 +189,8 @@ function OutfitStep({
   const [error, setError] = useState<string | null>(null);
   const worn = data.character.equipped;
   const { t } = useT();
-  const questTitle = (id: string): string => fillPlayerName(data.questTitles.get(id) ?? id, name);
-  const regionName = (id: string): string => fillPlayerName(findRegion(id)?.name ?? id, name);
+  const questTitle = (id: string): Bilingual => mapBoth(data.questTitles.get(id) ?? same(id), (text) => fillPlayerName(text, name));
+  const regionName = (id: string): Bilingual => mapBoth(nameOf(findRegion(id)?.name ?? id), (text) => fillPlayerName(text, name));
 
   function choose(itemId: string | null) {
     if (slot === 'pet') return;
@@ -273,7 +277,7 @@ function OutfitStep({
                         </span>
                       )}
                     </span>
-                    {p.name}
+                    <Name vi={p.name} />
                     {open || !p.unlock ? null : (
                       <span className="item-lock">
                         <T k="creator.needLevel" params={{ level: p.unlock.level }} />
@@ -314,7 +318,7 @@ function OutfitStep({
                       </span>
                     )}
                   </span>
-                  {item.name}
+                  <Name vi={item.name} />
                   {open ? null : (
                     <span className="item-lock">
                       <Bi {...lockText(item, questTitle, regionName)} />

@@ -4,7 +4,7 @@
 // card opens the region.
 import { Link } from 'react-router';
 import type { CharacterDto, QuestSummary } from '@miu/schema/game';
-import { T } from '../i18n/use-t';
+import { Name, T } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { say } from '../player/player-data';
 import { regionSubjects } from './region-board';
@@ -24,15 +24,21 @@ export function RegionBooks({ quests, character }: { quests: readonly QuestSumma
           return (
             <li key={region.id}>
               <Link to={`/region/${region.id}`} className="region-books-card" data-id={`map-books-${region.id}`}>
-                <span className="region-books-name">{say(region.name, character)}</span>
+                <span className="region-books-name">
+                  <Name vi={region.name} fill={(text) => say(text, character)} />
+                </span>
                 {subjects.length > 0 ? (
                   subjects.map((s, i) => (
                     <span key={s.subject} className="region-books-row" data-id={`map-books-${region.id}-${i}`}>
-                      <strong className="region-books-subject">{s.subjectName}</strong>
+                      <strong className="region-books-subject">
+                        <Name vi={s.subjectName} />
+                      </strong>
                       <span className="region-books-count">
                         <T k="region.lessonCount" params={{ count: s.lessons }} />
                       </span>
-                      <span className="region-books-topics">{s.topics.join(' · ')}</span>
+                      <span className="region-books-topics">
+                        <Name vi={s.topics.join(' · ')} />
+                      </span>
                     </span>
                   ))
                 ) : (

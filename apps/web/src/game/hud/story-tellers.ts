@@ -10,7 +10,7 @@ export function storyTellersOf(list: NpcListResponse, fill: (text: string) => st
     if (npc.arcs.length === 0) return [];
     const arc = npc.offer ? npc.arcs.find((a) => a.id === npc.offer?.arcId) : undefined;
     const chapter = arc && npc.offer ? arc.chapters[npc.offer.part - 1] : undefined;
-    return [{ targetIds: npc.targets, next: chapter ? fill(chapter.title.vi) : null }];
+    return [{ targetIds: npc.targets, next: chapter ? { vi: fill(chapter.title.vi), en: fill(chapter.title.en) } : null }];
   });
 }
 

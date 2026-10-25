@@ -9,10 +9,12 @@
 import type { WalkGoal } from '../../game-bridge/game-store';
 import { buttonClass } from '../../ui/kit/button';
 import { UI_ICONS, assetUrl } from '../../ui/kit/ui-art';
-import { t } from '../../ui/i18n/i18n';
+import { getLangMode, t } from '../../ui/i18n/i18n';
+import { nameText } from '../../ui/i18n/names';
 import { drawMarker, drawPlayer } from './map-draw';
 import { blendView, clampView, fitLabels, hitTest, overview, panBy, pinch, scaleLimits, toScreen, zoomAt, type Inset, type MapRect, type Point, type ScaleLimits, type SheetView, type Viewport } from './map-view';
 import { MARKER_COLOURS, legendGroups, type MinimapMarker, type PlaceKind } from './minimap-model';
+import { markerDetail, markerLabel } from './map-text';
 import './map-sheet.css';
 
 /** Marker radius on the sheet (CSS px), and how near a tap must land to pick one. */
@@ -90,7 +92,6 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
   root.hidden = true;
   root.setAttribute('role', 'dialog');
   root.setAttribute('aria-modal', 'true');
-  root.setAttribute('aria-label', input.title ? t('map.label', { name: input.title }) : t('map.title'));
   // Focusable, so keys pressed after a tap on the map still reach the sheet (not the game or its pause menu).
   root.tabIndex = -1;
   // `minimap-sheet-canvas`: the class tests and tools use to tell the map's canvases from the game's.
@@ -99,7 +100,13 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
 
   const top = el('div', 'map-sheet-top');
   const title = el('h2', 'map-sheet-title');
-  title.textContent = input.title || t('map.title');
+  // The map's name in the display language, written each time the sheet opens (the mode may have changed since).
+  const writeTitle = (): void => {
+    const name = input.title ? nameText(input.title) : '';
+    root.setAttribute('aria-label', name ? t('map.label', { name }) : t('map.title'));
+    title.textContent = name || t('map.title');
+  };
+  writeTitle();
   const close = button('map-sheet-close', 'game-minimap-close', t('map.close'), '✕');
   top.append(title, close);
 
@@ -219,8 +226,9 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
       .flatMap((m) => {
         const [px, py] = toScreen(v, vp, m.x, m.z);
         if (!onScreen(px, py)) return [];
-        const width = ctx.measureText(m.label).width + 8;
-        return [{ m, px, py: py + MARKER_R + 3, box: { x: px - width / 2, y: py + MARKER_R + 1, width, height: 18 } }];
+        const text = markerLabel(m);
+        const width = ctx.measureText(text).width + 8;
+        return [{ m, text, px, py: py + MARKER_R + 3, box: { x: px - width / 2, y: py + MARKER_R + 1, width, height: 18 } }];
       });
     const fits = fitLabels([{ x: cx - 14, y: cy - 14, width: 28, height: 28 }, ...labels.map((l) => l.box)]).slice(1);
     ctx.lineJoin = 'round';
@@ -229,8 +237,8 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
     ctx.fillStyle = input.colours.ink;
     labels.forEach((l, i) => {
       if (!fits[i]) return;
-      ctx.strokeText(l.m.label, l.px, l.py);
-      ctx.fillText(l.m.label, l.px, l.py);
+      ctx.strokeText(l.text, l.px, l.py);
+      ctx.fillText(l.text, l.px, l.py);
     });
     drawn = { ...state.player, markers: state.markers };
   };
@@ -297,9 +305,10 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
     }
     cardSwatch.className = `map-sheet-swatch map-sheet-swatch--${picked.kind}`;
     cardSwatch.style.setProperty('--swatch', picked.colour);
-    cardTitle.textContent = picked.label;
-    cardDetail.textContent = picked.detail ?? '';
-    cardDetail.hidden = !picked.detail;
+    cardTitle.textContent = markerLabel(picked);
+    const detail = markerDetail(picked);
+    cardDetail.textContent = detail;
+    cardDetail.hidden = !detail;
     go.hidden = false;
     card.dataset.kind = picked.kind;
   };
@@ -325,7 +334,7 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
     const groups = legendGroups(markers);
     list.replaceChildren(
       ...groups.flatMap((g) => [
-        Object.assign(el('p', 'map-sheet-list-head'), { textContent: g.label }),
+        Object.assign(el('p', 'map-sheet-list-head'), { textContent: t(g.label) }),
         ...markers
           .filter((m) => m.kind === g.kind)
           .map((m) => {
@@ -333,11 +342,12 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
             item.type = 'button';
             const text = el('span', 'map-sheet-list-text');
             const name = el('span', 'map-sheet-list-name');
-            name.textContent = m.label;
+            name.textContent = markerLabel(m);
             text.append(name);
-            if (m.detail) {
+            const detailText = markerDetail(m);
+            if (detailText) {
               const detail = el('span', 'map-sheet-list-detail');
-              detail.textContent = m.detail;
+              detail.textContent = detailText;
               text.append(detail);
             }
             item.append(swatch(m.kind, m.colour), text);
@@ -363,7 +373,7 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
   listToggle.addEventListener('click', () => setList(list.hidden !== false));
   const fillLegend = (): void => {
     const groups = legendGroups(state.markers);
-    const key = groups.map((g) => `${g.kind}:${g.count}:${hiddenKinds.has(g.kind)}`).join('|');
+    const key = `${getLangMode()}|${groups.map((g) => `${g.kind}:${g.count}:${hiddenKinds.has(g.kind)}`).join('|')}`;
     if (key === legendFor) return;
     legendFor = key;
     chips.replaceChildren(
@@ -371,11 +381,12 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
         const chip = el('button', 'map-sheet-chip', `game-map-chip-${g.kind}`);
         chip.type = 'button';
         chip.setAttribute('aria-pressed', String(!hiddenKinds.has(g.kind)));
-        const chipLabel = g.label.toLocaleLowerCase();
+        const groupLabel = t(g.label);
+        const chipLabel = groupLabel.toLocaleLowerCase();
         chip.setAttribute('aria-label', hiddenKinds.has(g.kind) ? t('map.chipToggleShow', { label: chipLabel }) : t('map.chipToggleHide', { label: chipLabel }));
         const count = el('span', 'map-sheet-chip-count');
         count.textContent = String(g.count);
-        chip.append(swatch(g.kind, g.colour), document.createTextNode(g.label), count);
+        chip.append(swatch(g.kind, g.colour), document.createTextNode(groupLabel), count);
         chip.addEventListener('click', () => {
           if (hiddenKinds.has(g.kind)) hiddenKinds.delete(g.kind);
           else hiddenKinds.add(g.kind);
@@ -512,6 +523,7 @@ export function createMapSheet(input: MapSheetInput): MapSheet {
     show(next) {
       state = next;
       root.hidden = false;
+      writeTitle();
       fillLegend();
       showCard();
       draw();

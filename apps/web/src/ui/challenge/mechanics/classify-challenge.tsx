@@ -4,6 +4,7 @@
 import { useCallback, useState } from 'react';
 import type { QuestStepPublic } from '@miu/schema/content';
 import type { StepAnswer } from '@miu/schema/game';
+import { Bi, useT } from '../../i18n/use-t';
 import { ChallengeFrame, type ChallengeContext } from '../challenge-frame';
 import { Illustration } from '../illustrations/illustration';
 import { DROP_ZONE_ATTR, usePointerDrag } from '../use-pointer-drag';
@@ -15,6 +16,7 @@ type ClassifyStep = Extract<QuestStepPublic, { kind: 'challenge'; mechanic: 'cla
 export function ClassifyChallenge({ step, context, onAnswer }: { step: ClassifyStep; context: ChallengeContext; onAnswer: (answer: StepAnswer) => void }) {
   const [assignment, setAssignment] = useDraftState<Record<string, string>>('assignment', {}, isStringRecord);
   const [selected, setSelected] = useState<string | null>(null);
+  const { inline } = useT();
 
   const place = useCallback((itemId: string, groupId: string | null) => {
     setAssignment((prev) => {
@@ -51,7 +53,9 @@ export function ClassifyChallenge({ step, context, onAnswer }: { step: ClassifyS
       {...dragProps(item.id)}
     >
       {item.image ? <Illustration picture={item.image} /> : null}
-      <span>{context.fill(item.label)}</span>
+      <span>
+        <Bi {...context.label(item.label)} />
+      </span>
     </button>
   );
   const unplaced = step.items.filter((i) => !assignment[i.id]);
@@ -74,10 +78,10 @@ export function ClassifyChallenge({ step, context, onAnswer }: { step: ClassifyS
             className={`classify-group${selected ? ' classify-group--ready' : ''}`}
             {...{ [DROP_ZONE_ATTR]: `group-${group.id}` }}
             data-id={`group-${group.id}`}
-            aria-label={context.fill(group.label)}
+            aria-label={inline(context.label(group.label))}
           >
             <button type="button" className="classify-group-title" data-id={`group-title-${group.id}`} onClick={() => selected && place(selected, group.id)}>
-              {context.fill(group.label)}
+              <Bi {...context.label(group.label)} />
             </button>
             <div className="classify-group-cards">{step.items.filter((i) => assignment[i.id] === group.id).map(card)}</div>
           </section>

@@ -7,7 +7,8 @@ import { Link } from 'react-router';
 import { ACHIEVEMENT_CATEGORIES, type AchievementCategory, type AchievementClaimResponse, type AchievementDto } from '@miu/schema/achievement';
 import { freshPicker, type FreshPicker } from '@miu/quest/pick-fresh';
 import { format, linesOf, mapBoth, same, type Bilingual, type TextKey } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
+import { ITEMS } from '../backpack/items';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -55,7 +56,7 @@ function Gifts({ achievement }: { achievement: AchievementDto }) {
       {reward.item ? (
         <li className="achievement-gift" data-id={`achievement-gift-${reward.item.id}`}>
           <img src={rewardItemArt(reward.item.id)} alt="" width={36} height={36} />
-          {reward.item.name}
+          <Name vi={reward.item.name} en={ITEMS.get(reward.item.id)?.en?.name} />
         </li>
       ) : null}
     </ul>
@@ -68,7 +69,9 @@ function AchievementCard({ achievement, player, busy, onClaim }: { achievement: 
   return (
     <section className="achievement-card parchment" aria-live="polite" data-id="achievement-card" data-achievement={achievement.id}>
       <Icon name={iconOf(achievement)} size={72} />
-      <h2>{achievement.name}</h2>
+      <h2>
+        <Name vi={achievement.name} />
+      </h2>
       <p>
         <Bi {...mapBoth(same(achievement.description), fill)} />
       </p>
@@ -123,7 +126,7 @@ export function AchievementCelebration({ claim, player, onClose }: { claim: Achi
           <Bi {...doneLine} />
         </p>
         <strong className="reward-level achievement-celebration-name">
-          {achievement.name}
+          <Name vi={achievement.name} />
         </strong>
         <Gifts achievement={achievement} />
         {achievement.reward.item ? (
@@ -253,7 +256,9 @@ function AchievementsBody({ player, onCoins }: { player: PlayerData; onCoins: (c
                 >
                   <Icon name={iconOf(a)} size={40} />
                   <span className="achievement-row-text">
-                    <strong>{a.name}</strong>
+                    <strong>
+                      <Name vi={a.name} />
+                    </strong>
                     <span>{say(a.description, player.character)}</span>
                     <ProgressBar done={a.progress} total={a.goal} label={t('achievements.progress', { done: a.progress, total: a.goal })} />
                   </span>

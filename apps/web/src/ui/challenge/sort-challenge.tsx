@@ -24,7 +24,7 @@ export function SortChallenge({ step, context, onAnswer }: { step: SortStep; con
   const { inline } = useT();
   const label = (id: string) => {
     const index = step.items.findIndex((i) => i.id === id);
-    return inline(context.say(step.items[index]?.label ?? id, step.en?.items?.[index]));
+    return inline(context.label(step.items[index]?.label ?? id, step.en?.items?.[index]));
   };
 
   const put = useCallback((id: string, slot: number) => {

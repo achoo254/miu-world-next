@@ -11,7 +11,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { errorMessage } from '../api-client';
 import { mapBoth, pairOf, type Bilingual } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -25,8 +26,8 @@ import './home-decor.css';
 /** Why a style is not hers to pick yet: sold in the shop at a price, or a keepsake of another map's chest. */
 export type DecorLock = { kind: 'price'; price: number } | { kind: 'souvenir'; region: string };
 
-/** The name a map goes by (its `{name}` left for the caller to fill), or its id when unknown. */
-const regionNameOf = (region: string): string => findRegion(region)?.name ?? region;
+/** The name a map goes by in both languages (through the name glossary), or its id when unknown. */
+const regionNameOf = (region: string): Bilingual => nameOf(findRegion(region)?.name ?? region);
 
 /**
  * `lockOf`: why she cannot pick a style yet, or null when she can. A locked style shows a lock with its price or
@@ -35,7 +36,7 @@ const regionNameOf = (region: string): string => findRegion(region)?.name ?? reg
 function SlotPicker({ slot, picked, lockOf, onPick, onLocked }: { slot: DecorSlot; picked: string; lockOf: (option: string) => DecorLock | null; onPick: (option: string) => void; onLocked: (lock: DecorLock) => void }) {
   const { t } = useT();
   return (
-    <div className="decor-options" role="group" aria-label={t('decor.styleOf', { slot: slot.name.toLocaleLowerCase('vi') })} data-id={`decor-options-${slot.id}`}>
+    <div className="decor-options" role="group" aria-label={t('decor.styleOf', { slot: mapBoth(nameOf(slot.name), (text) => text.toLocaleLowerCase('vi')) })} data-id={`decor-options-${slot.id}`}>
       {slot.options.map((option) => {
         const on = option.id === picked;
         const lock = lockOf(option.id);
@@ -49,7 +50,9 @@ function SlotPicker({ slot, picked, lockOf, onPick, onLocked }: { slot: DecorSlo
             onClick={() => (lock === null ? onPick(option.id) : onLocked(lock))}
           >
             <span className="decor-swatch" style={swatchStyle(option.swatch)} aria-hidden="true" />
-            <span className="decor-card-name">{option.name}</span>
+            <span className="decor-card-name">
+              <Name vi={option.name} />
+            </span>
             {option.id === slot.default ? (
               <span className="decor-card-own">
                 <T k="decor.default" />
@@ -65,7 +68,7 @@ function SlotPicker({ slot, picked, lockOf, onPick, onLocked }: { slot: DecorSlo
             {lock?.kind === 'souvenir' ? (
               <span className="decor-card-price decor-card-souvenir" data-id={`decor-souvenir-${option.id}`}>
                 <Icon name="locked" size={20} />
-                {regionNameOf(lock.region)}
+                <Bi {...regionNameOf(lock.region)} />
               </span>
             ) : null}
             {on ? (
@@ -193,7 +196,7 @@ export function HomeDecorPanel({ onClose, onSaved }: { onClose: () => void; /** 
                 return (
                   <button key={s.id} type="button" className="decor-slot" aria-pressed={s.id === slot?.id} data-id={`decor-slot-${s.id}`} onClick={() => setSlotId((now) => ({ ...now, [side]: s.id }))}>
                     {picked ? <span className="decor-swatch" style={swatchStyle(picked.swatch)} aria-hidden="true" /> : null}
-                    {s.name}
+                    <Name vi={s.name} />
                   </button>
                 );
               })}

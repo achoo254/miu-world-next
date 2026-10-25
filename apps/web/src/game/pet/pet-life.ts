@@ -11,6 +11,7 @@ import { type Mesh, type Scene, Vector3 } from 'three';
 import { freshPicker, type FreshPicker } from '@miu/quest/pick-fresh';
 import type { PetCareAction, PetTrick } from '@miu/schema/pet-care';
 import { getLangMode, linesOf, type Bilingual, type LinesKey } from '../../ui/i18n/i18n';
+import { nameOf } from '../../ui/i18n/names';
 import type { ExtraPlayerAction } from '../entities/player-character';
 import type { PetCompanion, PetGoal } from '../entities/pet-companion';
 import type { ParticleSpawn } from '../interact/effect-particles';
@@ -131,9 +132,9 @@ export function createPetLife(options: PetLifeOptions): PetLife {
   const say = (pool: LinePool): void => {
     let picker = pickers.get(pool);
     if (!picker) pickers.set(pool, (picker = freshPicker(linesOf(LINES[pool]))));
-    const map = options.outing ?? '';
+    const map = nameOf(options.outing ?? '');
     const raw = picker.next();
-    const line = { vi: raw.vi.replaceAll('{map}', map), en: raw.en.replaceAll('{map}', map) };
+    const line = { vi: raw.vi.replaceAll('{map}', map.vi), en: raw.en.replaceAll('{map}', map.en) };
     const mode = getLangMode();
     if (mode === 'en') options.say(line.en, null);
     else options.say(line.vi, mode === 'both' && line.en !== line.vi ? line.en : null);

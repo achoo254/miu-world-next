@@ -14,7 +14,9 @@ import { AssetRegistry } from '../../game/asset-loader';
 import { ApiError, errorMessage } from '../api-client';
 import { useAccount } from '../account/account-context';
 import { Hud } from '../hud/hud';
-import { T, useT } from '../i18n/use-t';
+import { Bi, T, useLangMode, useT } from '../i18n/use-t';
+import { joinBoth, same } from '../i18n/i18n';
+import { nameOf, nameText } from '../i18n/names';
 import type { QuestSummary, StepCompleteResponse } from '@miu/schema/game';
 import { currentQuest, loadPlayer, questForRegion, say, type PlayerData } from '../player/player-data';
 import { QuestLayer } from '../quest/quest-layer';
@@ -102,7 +104,7 @@ export function withReloaded(prev: PlayerData | null, next: PlayerData): PlayerD
 }
 /**
  * The bosses of a region's map for the minimap: each quest's boss (a lesson's big boss, a zone guardian), named in
- * Vietnamese like the map's other markers, `{name}` filled.
+ * both languages (the quest's own English), `{name}` filled.
  */
 export function mapBossesOf(quests: readonly QuestSummary[], region: string, fill: (text: string) => string): MapBoss[] {
   return quests.flatMap(({ quest }): MapBoss[] => {
@@ -111,7 +113,15 @@ export function mapBossesOf(quests: readonly QuestSummary[], region: string, fil
     if (category !== 'main' && category !== 'guardian') return [];
     const boss = quest.steps.find((s) => s.kind === 'boss');
     if (!boss || boss.kind !== 'boss' || !boss.target) return [];
-    return [{ questId: quest.id, targetId: boss.target, name: fill(boss.bossName), title: fill(quest.title), big: category === 'main' }];
+    return [
+      {
+        questId: quest.id,
+        targetId: boss.target,
+        name: { vi: fill(boss.bossName), en: fill(boss.en?.bossName ?? boss.bossName) },
+        title: { vi: fill(quest.title), en: fill(quest.en?.title ?? quest.title) },
+        big: category === 'main',
+      },
+    ];
   });
 }
 
@@ -127,6 +137,8 @@ const SAVE_SPOT_MS = 10_000;
 function InteractionLabel() {
   const store = useGameStore();
   const prompt = useGameState((s) => s.prompt);
+  // Re-renders when the mode changes or the English names arrive.
+  useLangMode();
   if (!prompt) return null;
   return (
     <button
@@ -143,7 +155,7 @@ function InteractionLabel() {
       }}
       onClick={() => store.send({ type: 'interact' })}
     >
-      {prompt.name} · {prompt.label}
+      <Bi {...joinBoth([nameOf(prompt.name, prompt.nameEn), same(' · '), nameOf(prompt.label, prompt.labelEn)])} />
     </button>
   );
 }
@@ -674,7 +686,8 @@ export function PlayScreen() {
     if (draftOwner && species !== undefined && look) rememberLook(draftOwner, look);
   }, [draftOwner, species, look]);
   const boardRegion = findRegion(region);
-  const regionTitle = findRegion(quest?.quest.region ?? '')?.name ?? t('play.defaultRegion');
+  const regionFound = findRegion(quest?.quest.region ?? '')?.name;
+  const regionTitle = regionFound !== undefined ? nameText(regionFound) : t('play.defaultRegion');
   // The map's bosses for the minimap (read once by each game built: a new list never rebuilds it).
   const bosses = data ? mapBossesOf(data.quests, region, (text) => say(text, data.character)) : [];
   const regionName = data ? say(regionTitle, data.character) : regionTitle;

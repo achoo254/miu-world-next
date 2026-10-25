@@ -30,6 +30,7 @@ import { duelPoseFrame, type DuelClip, type DuelPose } from '../duel/duel-poses'
 import { mergeParts } from '../ambient/merge-parts';
 import { createRiddleBoard } from './riddle-board';
 import { seededRandom } from './seeded-random';
+import { nameText } from '../../ui/i18n/names';
 
 export interface InteractableObject {
   readonly def: Interactable;
@@ -222,7 +223,8 @@ async function buildVisual(
   }
   const root = new Group();
   if (def.shape === 'letter') root.add(createLetter());
-  if (def.board) root.add(await createRiddleBoard(def.board, shadows));
+  // A name board ("Nhà của …") in the display language when the map loads; a sum reads the same in both.
+  if (def.board) root.add(await createRiddleBoard(nameText(def.board), shadows));
   return { root, mixer: null, clips: [], open: null };
 }
 

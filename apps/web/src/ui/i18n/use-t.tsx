@@ -3,10 +3,23 @@
 // for visible text: in Song ngữ the Vietnamese line with a smaller English line under it.
 import { useMemo, useSyncExternalStore } from 'react';
 import { getLangMode, inline, onLangModeChange, pairOf, type Bilingual, type LangMode, type Params, type TextKey } from './i18n';
+import { nameOf, namesRevision, onNamesChange } from './names';
 import './i18n.css';
 
+const subscribeDisplay = (listener: () => void): (() => void) => {
+  const stopMode = onLangModeChange(listener);
+  const stopNames = onNamesChange(listener);
+  return () => {
+    stopMode();
+    stopNames();
+  };
+};
+/** Changes with the mode and when the English names arrive, so screens showing names re-render then too. */
+const displaySnapshot = (): string => `${getLangMode()}:${namesRevision()}`;
+
 export function useLangMode(): LangMode {
-  return useSyncExternalStore(onLangModeChange, getLangMode, getLangMode);
+  useSyncExternalStore(subscribeDisplay, displaySnapshot, displaySnapshot);
+  return getLangMode();
 }
 
 export interface Translator {
@@ -15,11 +28,21 @@ export interface Translator {
   t: (key: TextKey, params?: Params) => string;
   /** Any bilingual line as one string in the current mode. */
   inline: (text: Bilingual) => string;
+  /** A game name (character, place, thing…) as one string in the current mode; see `nameOf`. */
+  name: (vi: string, ownEnglish?: string | null) => string;
 }
 
 export function useT(): Translator {
   const mode = useLangMode();
-  return useMemo(() => ({ mode, t: (key, params) => inline(pairOf(key, params), mode), inline: (text) => inline(text, mode) }), [mode]);
+  return useMemo(
+    () => ({
+      mode,
+      t: (key, params) => inline(pairOf(key, params), mode),
+      inline: (text) => inline(text, mode),
+      name: (vi, ownEnglish) => inline(nameOf(vi, ownEnglish), mode),
+    }),
+    [mode],
+  );
 }
 
 /**
@@ -44,4 +67,15 @@ export function Bi({ vi, en }: Bilingual) {
 export function T({ k, params }: { k: TextKey; params?: Params }) {
   const pair = pairOf(k, params);
   return <Bi vi={pair.vi} en={pair.en} />;
+}
+
+/**
+ * A game name (character, place, thing, wearable, decor, verb, title) as visible text: its own English (`en`) or
+ * the glossary's, per `nameOf`, then `fill` (the player's name into `{name}`). Re-renders when the English names arrive.
+ */
+export function Name({ vi, en, fill }: { vi: string; en?: string | null; fill?: (text: string) => string }) {
+  useLangMode();
+  const pair = nameOf(vi, en);
+  // Looked up as written ("Nhà của {name}"), then filled.
+  return fill ? <Bi vi={fill(pair.vi)} en={fill(pair.en)} /> : <Bi vi={pair.vi} en={pair.en} />;
 }

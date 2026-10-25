@@ -7,7 +7,8 @@ import type { QuestStepPublic } from '@miu/schema/content';
 import { SkillCheckResult, StepCompleteResponse, type NotebookLine, type QuestCompletion, type StepCompleteRequest } from '@miu/schema/game';
 import type { GameStore, InteractableKind } from '../../game-bridge/game-store';
 import { ApiError, api, errorMessage } from '../api-client';
-import { mapBoth, pairOf, type Bilingual } from '../i18n/i18n';
+import { mapBoth, pairOf, same, type Bilingual } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 import { twin } from './content-text';
 import { say, type PlayerData } from '../player/player-data';
 import { clearShown } from '../kit/toast';
@@ -354,7 +355,7 @@ export function useQuestController({ store, data, questId, onResponse, onRetried
   }, [waiting, busy, resumeAuto]);
 
   const onInteraction = useCallback(
-    (targetId: string, who: string, kind: InteractableKind): void => {
+    (targetId: string, who: Bilingual, kind: InteractableKind): void => {
       // The timetable board in the child's home, the pet, the kitchen and the trophy room open their own screens (play screen),
       // never a quest line.
       if (TIMETABLE_TARGETS.has(targetId) || OWN_SCREEN_TARGETS.has(targetId)) return;
@@ -440,7 +441,7 @@ export function useQuestController({ store, data, questId, onResponse, onRetried
       if (last && last.count !== seen) {
         seen = last.count;
         const prompt = snapshot.prompt;
-        onInteraction(last.targetId, prompt?.targetId === last.targetId ? prompt.name : '', prompt && prompt.kind !== 'ambient' && prompt.kind !== 'player' ? prompt.kind : 'object');
+        onInteraction(last.targetId, prompt?.targetId === last.targetId ? nameOf(prompt.name, prompt.nameEn) : same(''), prompt && prompt.kind !== 'ambient' && prompt.kind !== 'player' ? prompt.kind : 'object');
       }
     });
   }, [store, activeQuest, syncWorld, startStep, onInteraction]);

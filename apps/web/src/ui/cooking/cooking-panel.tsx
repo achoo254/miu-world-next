@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { z } from 'zod';
 import { type Recipe } from '@miu/schema/cooking';
 import { api } from '../api-client';
-import { T } from '../i18n/use-t';
+import { ITEMS } from '../backpack/items';
+import { Name, T } from '../i18n/use-t';
 import { buttonClass } from '../kit/button';
 import './cooking.css';
 
@@ -111,7 +112,9 @@ export function CookingPanel({ onClose, onCooked }: CookingPanelProps) {
             <div key={r.id} className="cooking-card" data-id={`recipe-${r.id}`}>
               <div className="cooking-card-main">
                 <div className="cooking-card-info">
-                  <h4 className="cooking-card-title">{r.name}</h4>
+                  <h4 className="cooking-card-title">
+                    <Name vi={r.name} en={r.en?.name} />
+                  </h4>
                   <p className="cooking-card-desc">{r.description}</p>
 
                   <div className="cooking-ingredients">
@@ -123,7 +126,7 @@ export function CookingPanel({ onClose, onCooked }: CookingPanelProps) {
                       const enough = owned >= ing.qty;
                       return (
                         <span key={ing.itemId} className={`cooking-ing-tag ${enough ? 'has-enough' : 'not-enough'}`}>
-                          {ing.name} ({owned}/{ing.qty})
+                          <Name vi={ing.name} en={ITEMS.get(ing.itemId)?.en?.name} /> ({owned}/{ing.qty})
                         </span>
                       );
                     })}

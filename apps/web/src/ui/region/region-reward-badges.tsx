@@ -6,7 +6,8 @@ import type { CSSProperties } from 'react';
 import { Link } from 'react-router';
 import { fillPlayerName } from '@miu/quest/player-name';
 import type { RegionRewardsList } from '@miu/schema/region-reward';
-import { T, useT } from '../i18n/use-t';
+import { Name, T, useT } from '../i18n/use-t';
+import { nameText } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { claimableTiers } from './region-rewards';
 import { findRegion } from './regions';
@@ -33,11 +34,13 @@ export function RegionRewardBadges({ idPrefix, list, name }: { idPrefix: string;
           className="region-reward-badge"
           style={{ left: `${region.hotspot.x}%`, top: `${region.hotspot.y}%` } as CSSProperties}
           data-id={`${idPrefix}-reward-${region.id}`}
-          aria-label={t('reward.badgeLabel', { region: fillPlayerName(region.name, name), count })}
+          aria-label={t('reward.badgeLabel', { region: fillPlayerName(nameText(region.name), name), count })}
         >
           <Icon name="gift" size={24} />
           <T k="reward.claim" />
-          <span className="region-reward-badge-region">{fillPlayerName(region.name, name)}</span>
+          <span className="region-reward-badge-region">
+            <Name vi={region.name} fill={(text) => fillPlayerName(text, name)} />
+          </span>
         </Link>
       ))}
     </div>

@@ -11,8 +11,9 @@ import petNames from '../../../../../content/names/pet-names.json';
 import { useGameStore } from '../../game-bridge/use-game-state';
 import { PET_GEAR, gearSlotOf } from '../../game/pet/pet-gear-catalog';
 import { errorMessage } from '../api-client';
-import { linesOf, mapBoth, pairOf, type Bilingual, type LinesKey, type TextKey } from '../i18n/i18n';
+import { inline, linesOf, pairOf, same, type Bilingual, type LinesKey, type TextKey } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { Modal } from '../kit/modal';
 import { PETS, UI_ICONS, assetUrl, type UiIcon } from '../kit/ui-art';
@@ -70,7 +71,7 @@ export interface PetCarePanelProps {
 
 export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps) {
   const store = useGameStore();
-  const { t } = useT();
+  const { t, mode } = useT();
   const [state, setState] = useState<'loading' | 'none' | 'ready' | 'failed'>('loading');
   const [petId, setPetId] = useState<string | null>(null);
   const [bond, setBond] = useState<PetBond | null>(null);
@@ -104,8 +105,9 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
   }, []);
   const pickers = useRef(new Map<LinesKey, FreshPicker<Bilingual>>());
   const pet = PETS.find((p) => p.id === petId);
-  const name = bond?.name ?? pet?.name ?? '';
-  const fill = (text: Bilingual): Bilingual => mapBoth(text, (l) => l.replaceAll('{pet}', name));
+  // The name she picked stays as it is; its kind's name ("Cún con") reads in the display language.
+  const name: Bilingual = bond?.name ? same(bond.name) : nameOf(pet?.name ?? '');
+  const fill = (text: Bilingual): Bilingual => ({ vi: text.vi.replaceAll('{pet}', name.vi), en: text.en.replaceAll('{pet}', name.en) });
 
   /** A fresh line from the pet about how it feels (never the same twice in a row). */
   const speak = useCallback((next: PetBond): void => {
@@ -225,7 +227,7 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
       setBond(answer.bond);
       store.send({ type: 'pet-name', name: answer.bond.name });
       onRename?.(answer.bond.name);
-      setNews([mapBoth(pairOf('petCare.named'), (l) => l.replaceAll('{pet}', answer.bond.name ?? pet?.name ?? ''))]);
+      setNews([pairOf('petCare.named', { pet: answer.bond.name ? same(answer.bond.name) : nameOf(pet?.name ?? '') })]);
       playCue('right');
     } catch (err) {
       setError(errorMessage(err));
@@ -304,7 +306,7 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
         <>
           <div className="npc-say pet-care-say">
             <span className="pet-care-portrait" data-id="pet-care-portrait" data-act={pressed?.what} key={pressed?.seq ?? 0}>
-              <img src={assetUrl(pet.art)} alt={name} width={112} height={112} draggable={false} />
+              <img src={assetUrl(pet.art)} alt={inline(name, mode)} width={112} height={112} draggable={false} />
               {bond.gear.map((id) => {
                 const item = PET_GEAR.get(id);
                 return item ? <img key={id} className={`pet-care-gear-badge pet-care-gear-badge--${gearSlotOf(id) ?? 'head'}`} src={assetUrl(iconPath(item.icon))} alt="" width={30} height={30} draggable={false} /> : null;
@@ -312,7 +314,7 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
             </span>
             <div className="npc-bubble parchment pet-care-bubble">
               <span className="npc-name" data-id="pet-care-name">
-                {name}
+                <Bi {...name} />
               </span>
               <span className="pet-care-level" data-id="pet-care-level">
                 <Icon name="glowingStar" size={20} /> <T k="petCare.level" params={{ level: bond.level }} />
@@ -460,7 +462,7 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
 }
 
 /** "Cho ăn" with dishes she cooked: the pet's own food, or one of her dishes (how many she has of each). */
-function FeedPick({ pet, dishes, disabled, onUsual, onDish, onCancel }: { pet: string; dishes: readonly CookedDish[]; disabled: boolean; onUsual: () => void; onDish: (dish: CookedDish) => void; onCancel: () => void }) {
+function FeedPick({ pet, dishes, disabled, onUsual, onDish, onCancel }: { pet: Bilingual; dishes: readonly CookedDish[]; disabled: boolean; onUsual: () => void; onDish: (dish: CookedDish) => void; onCancel: () => void }) {
   const { t } = useT();
   return (
     <div className="parchment pet-care-feed" data-id="pet-care-feed" role="group" aria-label={t('petCare.feedPick', { pet })}>

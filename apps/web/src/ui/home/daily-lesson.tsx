@@ -6,6 +6,8 @@ import type { QuestSummary } from '@miu/schema/game';
 import { dailyLesson } from '@miu/quest/daily-lesson';
 import { vietnamDay } from '@miu/quest/live-event';
 import { T } from '../i18n/use-t';
+import type { Bilingual } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { playPath, say, type PlayerData } from '../player/player-data';
@@ -26,7 +28,7 @@ export function todaysLesson(quests: readonly QuestSummary[], now: number = Date
 }
 
 /** The name of the map a lesson is on. */
-const mapOf = (summary: QuestSummary): string => findRegion(summary.quest.region)?.name ?? summary.quest.region;
+const mapOf = (summary: QuestSummary): Bilingual => nameOf(findRegion(summary.quest.region)?.name ?? summary.quest.region);
 
 export function DailyLessonCard({ data }: { data: PlayerData }) {
   const lesson = todaysLesson(data.quests);

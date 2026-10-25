@@ -33,7 +33,7 @@ describe('fetchSideGivers', () => {
     vi.stubGlobal('fetch', fetchMock);
     const givers = await fetchSideGivers('lau-dai');
     expect(fetchMock).toHaveBeenCalledWith('/api/quests?category=side&region=lau-dai', expect.objectContaining({ method: 'GET' }));
-    expect(givers).toEqual([{ targetId: 'cao-cung-thu', games: ['Bắn cung có gió'] }]);
+    expect(givers).toEqual([{ targetId: 'cao-cung-thu', games: [{ vi: 'Bắn cung có gió', en: 'Bắn cung có gió' }] }]);
   });
 
   it('shows no givers when signed out or offline', async () => {

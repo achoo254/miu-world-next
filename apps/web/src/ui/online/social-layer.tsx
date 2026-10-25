@@ -6,8 +6,9 @@ import { useEffect, useState } from 'react';
 import { HOME_MAP_ID, type MpNotice, type PartyMember, type PartyView } from '@miu/schema/multiplayer';
 import type { OnlineToast, SocialStore } from '../../game-bridge/social-store';
 import { cannedPair } from '../../game/multiplayer/canned-lines';
-import { pairOf, same, t, type Bilingual, type TextKey } from '../i18n/i18n';
-import { T, useT } from '../i18n/use-t';
+import { mapBoth, pairOf, same, t, type Bilingual, type TextKey } from '../i18n/i18n';
+import { T, useLangMode, useT } from '../i18n/use-t';
+import { nameOf, nameText } from '../i18n/names';
 import { MiuArt } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Toast } from '../kit/toast';
@@ -30,7 +31,7 @@ type Fill = (text: string) => string;
 export const placeOfMap = (mapId: string, fill: Fill): string => {
   if (mapId === HOME_MAP_ID) return t('online.atHome');
   const region = REGIONS.find((r) => r.status === 'open' && r.map === mapId);
-  return region ? fill(region.name) : mapId;
+  return region ? fill(nameText(region.name)) : mapId;
 };
 
 const NOTICE_KEY: Record<MpNotice, TextKey> = {
@@ -119,7 +120,7 @@ function MemberRow({ social, voice, member, self, leader, here, place, canLead, 
           </span>
           <span className="online-party-place">{place ?? <T k="online.party.away" />}</span>
         </span>
-        {pet ? <img className="online-party-pet" src={assetUrl(pet.art)} alt={pet.name} width={28} height={28} draggable={false} /> : null}
+        {pet ? <img className="online-party-pet" src={assetUrl(pet.art)} alt={nameText(pet.name)} width={28} height={28} draggable={false} /> : null}
         {here && !self ? (
           <span
             className="online-party-arrow"
@@ -333,9 +334,10 @@ function InviteCard({ social }: { social: SocialStore }) {
 /** The party leader went through a gate: come along, or stay. */
 function TravelCard({ social, fill }: { social: SocialStore; fill: Fill }) {
   const travel = useSocial(social, (s) => s.travel);
+  useLangMode();
   if (!travel) return null;
   const region = findRegion(travel.region);
-  const place = same(region ? fill(region.name) : travel.region);
+  const place = region ? mapBoth(nameOf(region.name), fill) : same(travel.region);
   return (
     <section className="online-card parchment" data-id="online-travel" role="alertdialog" aria-live="polite">
       <p className="online-card-text">

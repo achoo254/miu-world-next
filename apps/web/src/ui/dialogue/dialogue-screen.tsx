@@ -7,7 +7,7 @@ import { useState } from 'react';
 import type { QuestStepPublic } from '@miu/schema/content';
 import type { CharacterDto } from '@miu/schema/game';
 import { mapBoth, type Bilingual } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
 import { twin } from '../quest/content-text';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -60,7 +60,7 @@ export function DialogueScreen({
   const decision = step.choices.length >= 3;
 
   return (
-    <Modal title={shown.speaker} onClose={onClose} dataId="dialogue" placement="bottom" variant="scene" titleClass="ribbon ribbon--small">
+    <Modal title={<Name vi={shown.speaker} />} onClose={onClose} dataId="dialogue" placement="bottom" variant="scene" titleClass="ribbon ribbon--small">
       <div className="dialogue-scene">
         <div className="npc-say">
           <NpcPortrait name={shown.speaker} target={step.target} size={96} reaction="speak" reactionKey={`${index}-${reply ? 'reply' : 'line'}`} />

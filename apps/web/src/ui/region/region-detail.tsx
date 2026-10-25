@@ -12,7 +12,8 @@ import type { Region } from '@miu/schema/region';
 import type { TextKey } from '../i18n/i18n';
 import { inline, mapBoth } from '../i18n/i18n';
 import { titleOf, twin } from '../quest/content-text';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { SkyScene } from '../kit/sky-scene';
@@ -65,8 +66,12 @@ export function RegionIntro({
   return (
     <div className="region-intro">
       <h1 id="region-title" className="ribbon region-sign">
-        {fill(region.name)}
-        {region.subject ? <span className="region-sign-subject">{region.subject}</span> : null}
+        <Name vi={region.name} fill={fill} />
+        {region.subject ? (
+          <span className="region-sign-subject">
+            <Name vi={region.subject} />
+          </span>
+        ) : null}
       </h1>
       <p className="region-bubble" data-id="region-description">
         {fill(region.description ?? region.tagline)}
@@ -91,8 +96,9 @@ function BoardRow({ summary, region, data, pick }: { summary: QuestSummary; regi
   const { done, total } = stepProgress(summary);
   const { t, mode } = useT();
   const shownTitle = summary.quest.status === 'active' ? titleOf(summary.quest) : twin(summary.quest.title, null);
-  const regionName = say(region.name, data.character);
-  const titlePair = mapBoth(shownTitle, (line) => boardTitle(say(line, data.character), regionName));
+  // The region's name is left off each side's title in that side's language.
+  const regionName = mapBoth(nameOf(region.name), (line) => say(line, data.character));
+  const titlePair = { vi: boardTitle(say(shownTitle.vi, data.character), regionName.vi), en: boardTitle(say(shownTitle.en, data.character), regionName.en) };
   const title = inline(titlePair, mode);
   const stub = summary.quest.status === 'stub';
   const playable = isPlayable(summary);
@@ -174,9 +180,9 @@ export function QuestBoard({ region, quests, data, pick }: { region: Region; que
         </section>
       ))}
       {boardStories(quests, region.id).map((story) => (
-        <section key={story.arc} className="board-chapter" aria-label={t('region.story', { name: say(story.npcName, data.character) })} data-id={`region-story-${story.arc}`}>
+        <section key={story.arc} className="board-chapter" aria-label={t('region.story', { name: mapBoth(nameOf(story.npcName), (line) => say(line, data.character)) })} data-id={`region-story-${story.arc}`}>
           <h3 className="board-chapter-title">
-            <T k="region.story" params={{ name: say(story.npcName, data.character) }} /> · <Bi {...mapBoth(story.arcTitle, (line) => say(line, data.character))} />
+            <T k="region.story" params={{ name: mapBoth(nameOf(story.npcName), (line) => say(line, data.character)) }} /> · <Bi {...mapBoth(story.arcTitle, (line) => say(line, data.character))} />
           </h3>
           <ul className="board-list">
             {story.chapters.map((q) => (

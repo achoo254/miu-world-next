@@ -156,7 +156,8 @@ describe('ObjectInteractionManager', () => {
     const near = m.nearest({ x: 10.5, y: 10, z: 10.2 });
     expect(near?.def.id).toBe('toilet-use');
     if (!near) return;
-    expect(m.toPrompt(near)).toMatchObject({ name: 'Bồn cầu', label: 'Đi vệ sinh' });
+    // Both languages travel with the prompt; the label over the object picks the mode when it shows.
+    expect(m.toPrompt(near)).toMatchObject({ name: 'Bồn cầu', label: 'Đi vệ sinh', nameEn: near.def.nameEn, labelEn: near.def.verbEn });
     expect(m.nearest({ x: 50, y: 10, z: 50 })).toBeNull();
   });
 

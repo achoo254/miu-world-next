@@ -7,8 +7,10 @@
 import { useState, type CSSProperties } from 'react';
 import type { CollectionClaimResponse, CollectionSetDto } from '@miu/schema/collectible';
 import type { CharacterDto } from '@miu/schema/game';
-import { mapBoth, same } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { mapBoth } from '../i18n/i18n';
+import { Bi, Name, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
+import { Say, twin } from '../quest/content-text';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -61,7 +63,7 @@ function SlotDetail({ slot, count, set, character, travel }: { slot: BookSlot; c
           <T k="collection.missing" />
         </strong>
         <p className="hint">
-          <T k="collection.missingHint" params={{ map: same(set.region) }} />
+          <T k="collection.missingHint" params={{ map: nameOf(set.region) }} />
         </p>
         {travel ? <GoThereButton trip={collectionTrip(set.mapId, travel.quests)} travel={travel} dataId={`book-go-${slot.id}`} label="collection.go" /> : null}
       </div>
@@ -79,7 +81,11 @@ function SlotDetail({ slot, count, set, character, travel }: { slot: BookSlot; c
         <span className={`badge book-rarity book-rarity--${slot.rarity}`}>
           <T k={RARITY_KEYS[slot.rarity]} />
         </span>
-        {slot.item ? <p>{fill(slot.item.description)}</p> : null}
+        {slot.item ? (
+          <p>
+            <Say text={twin(slot.item.description, slot.item.en?.description)} fill={fill} />
+          </p>
+        ) : null}
         <p className="hint book-lore">{fill(slot.lore)}</p>
         <p className="hint">
           <T k="collection.count" params={{ count }} />
@@ -199,7 +205,7 @@ export function CollectionBook({ character, startAt, onClose, onCoins, travel }:
                 key: book.mapId,
                 label: (
                   <span className="book-tab">
-                    {book.region}
+                    <Name vi={book.region} />
                     <span className={`book-tab-count${s.complete ? ' book-tab-count--full' : ''}`}>
                       {s.found}/{s.total}
                     </span>

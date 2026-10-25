@@ -4,6 +4,7 @@ import { ContentId } from '@miu/schema/content';
 import { PetBondChange, PetBondResponse, PetCareStatusResponse, type PetCareAction, type PetTrick } from '@miu/schema/pet-care';
 import { api } from '../api-client';
 import type { Bilingual } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 
 export const loadPetCare = (): Promise<PetCareStatusResponse> => api('GET', '/character/pet/care', PetCareStatusResponse);
 
@@ -44,7 +45,7 @@ export async function loadCookedDishes(): Promise<CookedDish[]> {
       const qty = kitchen.ingredients[recipe.resultItemId] ?? 0;
       if (qty <= 0 || seen.has(recipe.resultItemId)) return [];
       seen.add(recipe.resultItemId);
-      return [{ itemId: recipe.resultItemId, name: { vi: recipe.name, en: recipe.en?.name ?? recipe.name }, qty }];
+      return [{ itemId: recipe.resultItemId, name: nameOf(recipe.name, recipe.en?.name), qty }];
     });
   } catch {
     return [];

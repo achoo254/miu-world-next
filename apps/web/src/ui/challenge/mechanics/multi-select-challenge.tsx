@@ -39,7 +39,7 @@ export function MultiSelectChallenge({ step, context, onAnswer }: { step: MultiS
               <span className="mechanic-tick" aria-hidden="true">
                 {on ? '✓' : ''}
               </span>
-              <Bi {...context.say(c.text, step.en?.choices?.[i])} />
+              <Bi {...context.label(c.text, step.en?.choices?.[i])} />
             </button>
           );
         })}

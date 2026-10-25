@@ -4,7 +4,7 @@
 // Compact HUD (owner, 25/10/2026): "Lái xe" is a tile in the HUD menu; "Xuống xe" stands on screen, above the
 // stick, only while she rides.
 import { useGameState, useGameStore } from '../../game-bridge/use-game-state';
-import { T } from '../i18n/use-t';
+import { T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import './ride-button.css';
@@ -12,6 +12,7 @@ import './ride-button.css';
 export function RideButton({ place }: { place: 'screen' | 'menu' }) {
   const store = useGameStore();
   const vehicle = useGameState((s) => s.vehicle);
+  const { name } = useT();
   if (!vehicle || vehicle.riding !== (place === 'screen')) return null;
   return (
     <button
@@ -20,7 +21,7 @@ export function RideButton({ place }: { place: 'screen' | 'menu' }) {
       data-id="hud-ride"
       data-riding={vehicle.riding}
       aria-pressed={vehicle.riding}
-      title={vehicle.name}
+      title={name(vehicle.name)}
       // On screen ("Xuống xe"), the label over a target keeps off it (the game reads its box).
       ref={
         place === 'screen'

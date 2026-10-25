@@ -19,7 +19,7 @@ import { blockLookup, blockTraversal } from '@miu/voxel/block-table';
 import type { Traversal } from '@miu/voxel/traversal';
 import type { SolidAt } from '@miu/voxel/grid-collision';
 import { castHidden, entitiesForChapter } from '@miu/voxel/world-entities';
-import { onLangModeChange, t as translate, writeText, type TextKey } from '../ui/i18n/i18n';
+import { onLangModeChange, pairOf, t as translate, writeText, type TextKey } from '../ui/i18n/i18n';
 import { PETS, UI_ICONS, assetUrl } from '../ui/kit/ui-art';
 import { readReduceMotion } from '../ui/system/display-setting';
 import type { GameStore, WorldState } from '../game-bridge/game-store';
@@ -1309,13 +1309,20 @@ export class Game {
         const prompt = def
           ? { targetId: def.id, kind: def.kind, name: def.name, label: def.label }
           : nearPlayer
-            ? { targetId: `player:${nearPlayer.id}`, kind: 'player' as const, name: nearPlayer.isBot ? `🤖 [${translate('online.botLabel')}] ${nearPlayer.name}` : nearPlayer.name, label: translate('online.interact') }
+            ? {
+                targetId: `player:${nearPlayer.id}`,
+                kind: 'player' as const,
+                name: nearPlayer.isBot ? `🤖 [${pairOf('online.botLabel').vi}] ${nearPlayer.name}` : nearPlayer.name,
+                nameEn: nearPlayer.isBot ? `🤖 [${pairOf('online.botLabel').en}] ${nearPlayer.name}` : nearPlayer.name,
+                label: pairOf('online.interact').vi,
+                labelEn: pairOf('online.interact').en,
+              }
             : nearAmbient
             ? { targetId: nearAmbient.id, kind: 'ambient' as const, name: nearAmbient.name, label: nearAmbient.label }
             : nearObject
               ? objectInteractions.toPrompt(nearObject)
               : nearPet
-                ? { targetId: 'pet-companion', kind: 'ambient' as const, name: petName, label: translate('pet.prompt') }
+                ? { targetId: 'pet-companion', kind: 'ambient' as const, name: petName, label: pairOf('pet.prompt').vi, labelEn: pairOf('pet.prompt').en }
                 : null;
         store.emit({ type: 'interaction-prompt', prompt });
       }

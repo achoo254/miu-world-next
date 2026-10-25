@@ -1,15 +1,24 @@
 import { describe, expect, it } from 'vitest';
 import { PORTAL_COLOURS } from '@miu/voxel/portal-colours';
 import type { WorldEntities } from '@miu/voxel/world-entities';
-import { GATE_COLOUR, MARKER_COLOURS, bossMarkers, commonHeight, headingAngle, legendGroups, minimapMarkers, minimapPixels, onDisc, questMarker, rideOf, sideGiverMarkers, stationMarkers, toMinimap } from './minimap-model';
+import { GATE_COLOUR, MARKER_COLOURS, bossMarkers, commonHeight, headingAngle, legendGroups, minimapMarkers, minimapPixels, onDisc, questMarker, rideOf, sideGiverMarkers, stationMarkers, toMinimap, type MinimapMarker } from './minimap-model';
+import { markerDetailLine, markerLine } from './map-text';
 import { sideGiversOf } from './side-givers';
 import type { QuestListResponse } from '@miu/schema/game';
+import { pairOf, same } from '../../ui/i18n/i18n';
 
 type Target = WorldEntities['interactables'][number];
 const gate = (id: string, travel: string, x: number, z: number): Target => ({ id, kind: 'gate', name: `Cổng ${id}`, label: 'Đi qua cổng', position: [x, 13, z], yaw: 0, radius: 3, travel });
 const stop = (id: string, name: string, x: number, z: number): Target => ({ id, kind: 'object', name, label: 'Lên xe', position: [x, 13, z], yaw: 0, radius: 2, ride: [0, 13, 0] });
 const names: Record<string, string> = { 'nong-trai': 'Nông trại', 'cho-phien': 'Chợ phiên', 'nha-cua-be': 'Nhà của Mochi' };
 const regionName = (id: string): string | undefined => names[id];
+
+/** A marker as the map shows it in Tiếng Việt (its lines written out), to compare whole. */
+function shownVi(m: MinimapMarker) {
+  const { detail: _detail, ...rest } = m;
+  const detail = markerDetailLine(m);
+  return { ...rest, label: markerLine(m.label).vi, ...(detail ? { detail: detail.vi } : {}) };
+}
 
 describe('minimap markers', () => {
   const entities = {
@@ -27,7 +36,7 @@ describe('minimap markers', () => {
 
   it('names each gate by where it leads, in the colour of the portal it stands in (a plain gate in violet), and walks to it', () => {
     const markers = minimapMarkers(entities, { regionName }).filter((m) => m.kind === 'gate');
-    expect(markers).toEqual([
+    expect(markers.map(shownVi)).toEqual([
       { id: 'cong-nong-trai', kind: 'gate', x: 100, z: 50, colour: PORTAL_COLOURS.lime[0], label: 'Nông trại', detail: 'Cổng sang Nông trại', goal: { targetId: 'cong-nong-trai' } },
       { id: 'cong-cho-phien', kind: 'gate', x: 20, z: 30, colour: GATE_COLOUR, label: 'Chợ phiên', detail: 'Cổng sang Chợ phiên', goal: { targetId: 'cong-cho-phien' } },
     ]);
@@ -35,14 +44,14 @@ describe('minimap markers', () => {
 
   it("marks the child's home on her own map at its first landmark, the other landmarks as named places", () => {
     const markers = minimapMarkers(entities, { regionName, homeName: 'Nhà của Mochi', fill: (t) => t.replace('{name}', 'Mochi') });
-    expect(markers[0]).toEqual({ id: 'nha-va-vuon', kind: 'home', x: 81.5, z: 80.5, colour: MARKER_COLOURS.home, label: 'Nhà của Mochi', goal: { position: [81.5, 13, 80.5] } });
-    expect(markers.filter((m) => m.kind === 'place')).toEqual([{ id: 'goc-hoc', kind: 'place', x: 90, z: 70, colour: MARKER_COLOURS.place, label: 'Góc học của Mochi', goal: { position: [90, 13, 70] } }]);
+    expect(markers.map(shownVi)[0]).toEqual({ id: 'nha-va-vuon', kind: 'home', x: 81.5, z: 80.5, colour: MARKER_COLOURS.home, label: 'Nhà của Mochi', goal: { position: [81.5, 13, 80.5] } });
+    expect(markers.filter((m) => m.kind === 'place').map(shownVi)).toEqual([{ id: 'goc-hoc', kind: 'place', x: 90, z: 70, colour: MARKER_COLOURS.place, label: 'Góc học của Mochi', goal: { position: [90, 13, 70] } }]);
     // Away from home every landmark is a place.
     expect(minimapMarkers(entities, { regionName }).filter((m) => m.kind === 'place').map((m) => m.id)).toEqual(['nha-va-vuon', 'goc-hoc']);
   });
 
   it('marks the gate that leads home as her home', () => {
-    const home = minimapMarkers({ ...entities, interactables: [gate('cong-nha', 'nha-cua-be', 5, 6)] }, { regionName, homeRegion: 'nha-cua-be' })[0];
+    const home = minimapMarkers({ ...entities, interactables: [gate('cong-nha', 'nha-cua-be', 5, 6)] }, { regionName, homeRegion: 'nha-cua-be' }).map(shownVi)[0];
     expect(home).toEqual({ id: 'cong-nha', kind: 'home', x: 5, z: 6, colour: MARKER_COLOURS.home, label: 'Nhà của Mochi', detail: 'Cổng về nhà', goal: { targetId: 'cong-nha' } });
   });
 
@@ -57,7 +66,7 @@ describe('minimap markers', () => {
       stop('ben-3', 'Xe buýt tới Quảng trường', 595, 430),
       stop('ga-1', 'Tàu rừng tới Hồ', 212, 252),
     ]);
-    expect(stations.map((s) => [s.id, s.label, s.detail ?? null, s.goal])).toEqual([
+    expect(stations.map(shownVi).map((s) => [s.id, s.label, s.detail ?? null, s.goal])).toEqual([
       ['ben-1', 'Bến xe buýt', 'Đi tới: Chợ rau hoa · cổng', { targetId: 'ben-1' }],
       ['ben-3', 'Bến xe buýt', 'Đi tới: Quảng trường', { targetId: 'ben-3' }],
       ['ga-1', 'Ga tàu rừng', 'Đi tới: Hồ', { targetId: 'ga-1' }],
@@ -71,7 +80,7 @@ describe('minimap markers', () => {
       landmarks: [...entities.landmarks, { id: 'lang-xa', name: 'Làng xa', position: [-900, 13, 400] as [number, number, number] }],
     };
     const markers = minimapMarkers(wide, { regionName, size: [800, 800] });
-    expect(markers.map((m) => [m.id, m.label, m.detail ?? null])).toEqual([
+    expect(markers.map(shownVi).map((m) => [m.id, m.label, m.detail ?? null])).toEqual([
       ['edge-1', 'Bến xe', 'Đi tới: Xóm Cối Xay · Xóm Đồng Mía'],
       ['nha-va-vuon', 'Ngôi nhà và khu vườn', null],
       ['goc-hoc', 'Góc học của {name}', null],
@@ -81,31 +90,44 @@ describe('minimap markers', () => {
   it('marks the characters who offer minigames, with their games, only when they stand on this map', () => {
     const parrot: Target = { id: 'vet', kind: 'npc', name: 'Vẹt', label: 'Nói chuyện', position: [7, 13, 8], yaw: 0, radius: 2 };
     const markers = sideGiverMarkers([parrot], [
-      { targetId: 'vet', games: ['Bắn cung có gió', 'Ghép hình'] },
-      { targetId: 'far-away', games: ['Đua thuyền'] },
+      { targetId: 'vet', games: [same('Bắn cung có gió'), same('Ghép hình')] },
+      { targetId: 'far-away', games: [same('Đua thuyền')] },
     ]);
-    expect(markers).toEqual([{ id: 'vet', kind: 'side', x: 7, z: 8, colour: MARKER_COLOURS.side, label: 'Vẹt', detail: 'Trò chơi: Bắn cung có gió · Ghép hình', goal: { targetId: 'vet' } }]);
+    expect(markers.map(shownVi)).toEqual([{ id: 'vet', kind: 'side', x: 7, z: 8, colour: MARKER_COLOURS.side, label: 'Vẹt', detail: 'Trò chơi: Bắn cung có gió · Ghép hình', goal: { targetId: 'vet' } }]);
   });
 
   it('marks a storyteller as one, with its next chapter and its games, in place of its minigame marker', () => {
     const bird: Target = { id: 'hoa-mi', kind: 'npc', name: 'Họa Mi', label: 'Nói chuyện', position: [3, 13, 4], yaw: 0, radius: 2 };
-    const markers = sideGiverMarkers([bird], [{ targetId: 'hoa-mi', games: ['Hợp xướng'] }], [{ targetIds: ['hoa-mi'], next: 'Chương 2: Tiếng vọng' }]);
-    expect(markers).toEqual([{ id: 'hoa-mi', kind: 'story', x: 3, z: 4, colour: MARKER_COLOURS.story, label: 'Họa Mi', detail: 'Chuyện: Chương 2: Tiếng vọng · Trò chơi: Hợp xướng', goal: { targetId: 'hoa-mi' } }]);
+    const markers = sideGiverMarkers([bird], [{ targetId: 'hoa-mi', games: [{ vi: 'Hợp xướng', en: 'Choir' }] }], [{ targetIds: ['hoa-mi'], next: { vi: 'Chương 2: Tiếng vọng', en: 'Chapter 2: Echoes' } }]);
+    expect(markers.map(shownVi)).toEqual([{ id: 'hoa-mi', kind: 'story', x: 3, z: 4, colour: MARKER_COLOURS.story, label: 'Họa Mi', detail: 'Chuyện: Chương 2: Tiếng vọng · Trò chơi: Hợp xướng', goal: { targetId: 'hoa-mi' } }]);
   });
 
   it("marks the quest's place, walked to by its target", () => {
-    expect(questMarker({ id: 'parrot-guide', label: 'Vẹt', x: 1, z: 2 })).toEqual({ id: 'parrot-guide', kind: 'quest', x: 1, z: 2, colour: MARKER_COLOURS.quest, label: 'Vẹt', detail: 'Nơi làm nhiệm vụ', goal: { targetId: 'parrot-guide' } });
+    expect(shownVi(questMarker({ id: 'parrot-guide', label: 'Vẹt', x: 1, z: 2 }))).toEqual({ id: 'parrot-guide', kind: 'quest', x: 1, z: 2, colour: MARKER_COLOURS.quest, label: 'Vẹt', detail: 'Nơi làm nhiệm vụ', goal: { targetId: 'parrot-guide' } });
   });
 
   it('gives the legend a chip for each group the map has, in order, with its count', () => {
     const markers = [...minimapMarkers(entities, { regionName, homeName: 'Nhà của Mochi' }), questMarker({ id: 'q', label: 'Q', x: 0, z: 0 })];
-    expect(legendGroups(markers).map((g) => [g.kind, g.label, g.count])).toEqual([
+    expect(legendGroups(markers).map((g) => [g.kind, pairOf(g.label).vi, g.count])).toEqual([
       ['quest', 'Nhiệm vụ', 1],
       ['home', 'Nhà', 1],
       ['gate', 'Cổng', 2],
       ['place', 'Địa điểm', 1],
     ]);
     expect(legendGroups([])).toEqual([]);
+  });
+});
+
+describe('minimap markers in English', () => {
+  it('writes the UI words in English and keeps each name’s own twin', () => {
+    const bird: Target = { id: 'hoa-mi', kind: 'npc', name: 'Họa Mi', label: 'Nói chuyện', position: [3, 13, 4], yaw: 0, radius: 2 };
+    const [story] = sideGiverMarkers([bird], [{ targetId: 'hoa-mi', games: [{ vi: 'Hợp xướng', en: 'Choir' }] }], [{ targetIds: ['hoa-mi'], next: { vi: 'Chương 2', en: 'Chapter 2' } }]);
+    expect(story && markerDetailLine(story)?.en).toBe('Story: Chapter 2 · Games: Choir');
+    const [station] = stationMarkers([stop('ben-1', 'Xe buýt tới Chợ rau hoa', 210, 250)]);
+    expect(station && markerLine(station.label)).toEqual({ vi: 'Bến xe buýt', en: 'Bến xe buýt' });
+    const [boss] = bossMarkers([{ id: 'than-rung', kind: 'npc', name: 'x', label: 'x', position: [1, 13, 1], yaw: 0, radius: 3 }], [{ questId: 'q', targetId: 'than-rung', name: { vi: 'Thần Rừng', en: 'Forest Spirit' }, title: { vi: 'Trùm vui', en: 'Fun boss' }, big: true }]);
+    expect(boss && markerLine(boss.label).en).toBe('Forest Spirit');
+    expect(boss && markerDetailLine(boss)?.en).toBe('Big boss · Fun boss');
   });
 });
 
@@ -135,8 +157,8 @@ describe('side quest givers', () => {
   it('reads who offers which games from the list, each giver once', () => {
     const list = { quests: [quest('a', 'cao', 'Bắn cung có gió'), quest('b', 'vet', 'Ghép hình của {name}'), quest('c', 'cao', 'Đua thuyền'), quest('d', 'cao', 'x', 'stub')] };
     expect(sideGiversOf(list, (t) => t.replace('{name}', 'Mochi'))).toEqual([
-      { targetId: 'cao', games: ['Bắn cung có gió', 'Đua thuyền'] },
-      { targetId: 'vet', games: ['Ghép hình của Mochi'] },
+      { targetId: 'cao', games: [same('Bắn cung có gió'), same('Đua thuyền')] },
+      { targetId: 'vet', games: [same('Ghép hình của Mochi')] },
     ]);
   });
 });
@@ -170,18 +192,18 @@ describe('boss markers', () => {
 
   it('marks every boss of the map where it stands: a guardian walks to it and greets it, the big boss asks for its quest', () => {
     const markers = bossMarkers(interactables, [
-      { questId: 'vuot-ai-khu-rung', targetId: 'than-rung', name: 'Thần Rừng', title: 'Trùm vui: Thần Rừng', big: true },
-      { questId: 'ward-khu-rung-suoi', targetId: 'canh-suoi', name: 'Rái Cá Canh Suối', title: 'Trùm canh khu: Suối', big: false },
+      { questId: 'vuot-ai-khu-rung', targetId: 'than-rung', name: same('Thần Rừng'), title: same('Trùm vui: Thần Rừng'), big: true },
+      { questId: 'ward-khu-rung-suoi', targetId: 'canh-suoi', name: same('Rái Cá Canh Suối'), title: same('Trùm canh khu: Suối'), big: false },
     ]);
-    expect(markers).toEqual([
+    expect(markers.map(shownVi)).toEqual([
       { id: 'boss-vuot-ai-khu-rung', kind: 'boss', x: 300, z: 400, colour: MARKER_COLOURS.boss, label: 'Thần Rừng', detail: 'Trùm lớn · Trùm vui: Thần Rừng', goal: { quest: 'vuot-ai-khu-rung' }, big: true },
       { id: 'boss-ward-khu-rung-suoi', kind: 'boss', x: 120, z: 80, colour: MARKER_COLOURS.boss, label: 'Rái Cá Canh Suối', detail: 'Trùm canh khu · Trùm canh khu: Suối', goal: { targetId: 'canh-suoi' } },
     ]);
-    expect(legendGroups(markers)).toEqual([{ kind: 'boss', label: 'Trùm', colour: MARKER_COLOURS.boss, count: 2 }]);
+    expect(legendGroups(markers)).toEqual([{ kind: 'boss', label: 'map.group.boss', colour: MARKER_COLOURS.boss, count: 2 }]);
   });
 
   it('leaves out a boss that does not stand on this map', () => {
-    expect(bossMarkers(interactables, [{ questId: 'ward-xa', targetId: 'o-noi-khac', name: 'Xa', title: 'Xa', big: false }])).toEqual([]);
+    expect(bossMarkers(interactables, [{ questId: 'ward-xa', targetId: 'o-noi-khac', name: same('Xa'), title: same('Xa'), big: false }])).toEqual([]);
   });
 });
 

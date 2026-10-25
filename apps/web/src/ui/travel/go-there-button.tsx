@@ -3,7 +3,8 @@
 // beside it on another (play-screen.tsx `goThere`). Navigation only; what she earns stays the server's.
 import { fillPlayerName } from '@miu/quest/player-name';
 import type { QuestSummary } from '@miu/schema/game';
-import type { TextKey } from '../i18n/i18n';
+import { mapBoth, type TextKey } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 import { T, useT } from '../i18n/use-t';
 import { buttonClass } from '../kit/button';
 import { findRegion, regionMap } from '../region/regions';
@@ -25,7 +26,7 @@ export interface Travel {
 export function GoThereButton({ trip, travel, dataId, label }: { trip: PlaceTrip | null; travel: Travel; dataId: string; label: TextKey }) {
   const { t } = useT();
   if (!trip) return null;
-  const map = fillPlayerName(findRegion(trip.region)?.name ?? trip.region, travel.name);
+  const map = mapBoth(nameOf(findRegion(trip.region)?.name ?? trip.region), (text) => fillPlayerName(text, travel.name));
   const here = regionMap(trip.region) === regionMap(travel.region);
   return (
     <span className="go-there">

@@ -4,7 +4,7 @@
 import { Link } from 'react-router';
 import { BackpackPanel } from '../backpack/backpack-panel';
 import { ITEMS, itemIcon } from '../backpack/items';
-import { T, useT } from '../i18n/use-t';
+import { Name, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { PageLoading, SkyScene } from '../kit/sky-scene';
@@ -106,7 +106,7 @@ export function ProfileScreen() {
                     <li key={item.id}>
                       <div className={`bag-tile${has ? '' : ' bag-tile--locked'}`} data-id={`collection-${item.id}`} data-owned={has}>
                         <Icon name={has ? itemIcon(item) : 'locked'} size={44} label={has ? undefined : t('common.notYet')} />
-                        {has ? say(item.name, player.character) : '???'}
+                        {has ? <Name vi={item.name} en={item.en?.name} fill={(text) => say(text, player.character)} /> : '???'}
                       </div>
                     </li>
                   );

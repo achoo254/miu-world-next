@@ -17,10 +17,14 @@ export interface InteractionPrompt {
    * another player or a companion bot (the online menu).
    */
   kind: InteractableKind | 'ambient' | 'player';
-  /** Display name of the target (e.g. "Vẹt"). */
+  /** Display name of the target (e.g. "Vẹt"), in Vietnamese; the label shows it through `nameOf` (ui/i18n/names). */
   name: string;
-  /** Action label (e.g. "Nói chuyện"). */
+  /** The name's own English when it has one (the interaction registry's); otherwise the name glossary's. */
+  nameEn?: string;
+  /** Action label (e.g. "Nói chuyện"), in Vietnamese. */
   label: string;
+  /** The label's own English when it has one. */
+  labelEn?: string;
 }
 
 /** Why the game stopped; `context-lost` means the GPU dropped the WebGL context (low memory, background tab). */

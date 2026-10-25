@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 import type { CharacterDto } from '@miu/schema/game';
 import type { Region } from '@miu/schema/region';
+import { Name, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { assetUrl, HOME_ISLAND } from '../kit/ui-art';
 import { say } from '../player/player-data';
@@ -25,8 +26,12 @@ function bubbleSide(x: number): string {
 
 function RegionMarker({ region, character, idPrefix, peek, onPeek }: { region: Region; character: CharacterDto; idPrefix: string; peek: boolean; onPeek(open: boolean): void }) {
   const navigate = useNavigate();
+  // Follows the display mode (and the English names arriving): the lock's words and the name in aria labels.
+  const { name: nameIn } = useT();
   const lock = regionLockText(region);
-  const name = say(region.name, character);
+  const fill = (text: string): string => say(text, character);
+  const name = fill(nameIn(region.name));
+  const shown = <Name vi={region.name} fill={fill} />;
   const at = { left: `${region.hotspot.x}%`, top: `${region.hotspot.y}%` };
   if (!lock) {
     return (
@@ -34,8 +39,12 @@ function RegionMarker({ region, character, idPrefix, peek, onPeek }: { region: R
         <button type="button" className="world-marker world-marker--open" data-id={`${idPrefix}-${region.id}`} onClick={() => navigate(`/region/${region.id}`)}>
           <Icon name="sparkles" size={28} />
           <span className="world-marker-text">
-            <span className="world-marker-name">{name}</span>
-            {region.subject ? <span className="world-marker-sub">{say(region.subject, character)}</span> : null}
+            <span className="world-marker-name">{shown}</span>
+            {region.subject ? (
+              <span className="world-marker-sub">
+                <Name vi={region.subject} fill={fill} />
+              </span>
+            ) : null}
           </span>
         </button>
       </div>
@@ -48,14 +57,14 @@ function RegionMarker({ region, character, idPrefix, peek, onPeek }: { region: R
           <Icon name="locked" size={24} />
         </span>
         <span className="world-marker-text" aria-hidden="true">
-          <span className="world-marker-name">{name}</span>
+          <span className="world-marker-name">{shown}</span>
           <span className="world-marker-sub">{lock}</span>
         </span>
       </button>
       {peek ? (
         // The button already carries the name for screen readers; the bubble only shows it.
         <span className={`world-bubble${bubbleSide(region.hotspot.x)}`} aria-hidden="true" data-id={`${idPrefix}-bubble-${region.id}`}>
-          <span>{name}</span>
+          <span>{shown}</span>
           <span className="badge">{lock}</span>
         </span>
       ) : null}

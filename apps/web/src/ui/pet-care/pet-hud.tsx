@@ -4,7 +4,8 @@
 import { useEffect, useState } from 'react';
 import { useGameState, useGameStore } from '../../game-bridge/use-game-state';
 import { same } from '../i18n/i18n';
-import { T, useT } from '../i18n/use-t';
+import { Name, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { PETS, assetUrl } from '../kit/ui-art';
@@ -39,9 +40,9 @@ export function PetHud({ petId, renamed, hidden = false, onOpen }: { petId: stri
 
   if (!pet || hidden) return null;
   return (
-    <button type="button" className={`${buttonClass('secondary', { small: true })} pet-hud-button`} data-id="hud-pet" aria-label={t('hud.petNamed', { name: same(name ?? pet.name) })} onClick={onOpen}>
+    <button type="button" className={`${buttonClass('secondary', { small: true })} pet-hud-button`} data-id="hud-pet" aria-label={t('hud.petNamed', { name: name ? same(name) : nameOf(pet.name) })} onClick={onOpen}>
       <img className="pet-hud-art" src={assetUrl(pet.art)} alt="" width={32} height={32} draggable={false} />
-      <span className="hud-btn-label">{name ?? pet.name}</span>
+      <span className="hud-btn-label">{name ? name : <Name vi={pet.name} />}</span>
     </button>
   );
 }

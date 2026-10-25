@@ -8,12 +8,13 @@
 import { useEffect, useState, type CSSProperties } from 'react';
 import type { NotebookLine, QuestCompletion, StepCompleteResponse } from '@miu/schema/game';
 import type { SkillGiftDto } from '@miu/schema/progression';
-import { ITEMS, itemIcon } from '../backpack/items';
+import { ITEMS, awardName, itemIcon } from '../backpack/items';
 import { CollectibleDropNote } from '../collection/collectible-drop';
 import { EventRewardCard } from '../event/event-reward-card';
 import { lastSpeakerOf, NpcPortrait } from '../dialogue/npc-portrait';
-import { pairOf, type TextKey } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { mapBoth, pairOf, type TextKey } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
+import { Bi, Name, T, useT } from '../i18n/use-t';
 import { Icon, MiuPortrait } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -129,7 +130,7 @@ function RegionChestProgress({ quest, data, reveal }: { quest: ActiveQuestView; 
     <div className="reward-region reward-reveal" style={reveal} data-id="reward-region-goal">
       <img className="reward-region-chest" src={assetUrl(REGION_CHEST)} alt="" width={56} height={56} />
       <div className="reward-region-text">
-        <span className="hint">{region ? say(region.name, data.character) : null}</span>
+        <span className="hint">{region ? <Name vi={region.name} fill={(text) => say(text, data.character)} /> : null}</span>
         <ProgressBar done={dto.lessonsDone} total={dto.lessons} label={t('completion.areaLabel', { done: dto.lessonsDone, total: dto.lessons })} />
         <strong data-id="reward-region-line">
           <Bi {...line} />
@@ -173,12 +174,12 @@ function RewardScreen({ completion, reward, quest, data }: { completion: QuestCo
         {reward.coin > 0 ? <CountedReward value={reward.coin} delayMs={countFrom} unit={t('common.coins')} icon="coin" dataId="reward-coin" /> : null}
         {items.map(([id, qty], i) => (
           <li key={id} data-id={`reward-item-${id}`} className="reward-reveal" style={reveal(i)}>
-            <Icon name={itemIcon(ITEMS.get(id))} size={32} /> {fill(ITEMS.get(id)?.name ?? id)} ×{qty}
+            <Icon name={itemIcon(ITEMS.get(id))} size={32} /> <Name vi={ITEMS.get(id)?.name ?? id} en={ITEMS.get(id)?.en?.name} fill={fill} /> ×{qty}
           </li>
         ))}
         {skills.map((s, i) => (
           <li key={s.skillId} data-id={`reward-skill-${s.skillId}`} className="reward-reveal" style={reveal(items.length + i)}>
-            <Icon name="books" size={32} /> {skillName(s.skillId)} +{reward.skillXp[s.skillId] ?? 0}
+            <Icon name="books" size={32} /> <Name vi={skillName(s.skillId)} /> +{reward.skillXp[s.skillId] ?? 0}
             {s.levelAfter > s.levelBefore ? (
               <span className="badge">
                 <T k="completion.skillUp" params={{ level: s.levelAfter }} />
@@ -191,7 +192,7 @@ function RewardScreen({ completion, reward, quest, data }: { completion: QuestCo
       {completion.story ? (
         <p className="reward-story reward-reveal" style={reveal(items.length + skills.length)} data-id="reward-story">
           <Hearts hearts={completion.story.heartsAfter} dataId="reward-story-hearts" />{' '}
-          <T k={completion.story.heartsAfter > completion.story.heartsBefore ? 'completion.storyHeart' : 'completion.storyDone'} params={{ who: fill(completion.story.npcName) }} />
+          <T k={completion.story.heartsAfter > completion.story.heartsBefore ? 'completion.storyHeart' : 'completion.storyDone'} params={{ who: mapBoth(nameOf(completion.story.npcName), fill) }} />
           {completion.story.letter ? (
             <>
               {' '}
@@ -221,7 +222,7 @@ function SkillGifts({ gifts, data }: { gifts: readonly SkillGiftDto[]; data: Pla
         <li key={`${gift.skillId}-${gift.level}`} className="reward-skill-gift" data-id={`skill-gift-${gift.skillId}-${gift.level}`}>
           <Icon name="gift" size={32} />
           <span>
-            {skillNameOf(data, gift.skillId)} · <T k="completion.skillGift" params={{ level: gift.level }} />
+            <Name vi={skillNameOf(data, gift.skillId)} /> · <T k="completion.skillGift" params={{ level: gift.level }} />
           </span>
           <span className="reward-skill-gift-coin">
             <Icon name="coin" size={24} />+{gift.coin}
@@ -232,7 +233,9 @@ function SkillGifts({ gifts, data }: { gifts: readonly SkillGiftDto[]; data: Pla
               <span className="badge">
                 <T k="reward.exclusive" />
               </span>
-              <strong>{gift.item.name}</strong>
+              <strong>
+                <Bi {...awardName(gift.item.id, gift.item.name)} />
+              </strong>
               <span className="hint">
                 <T k="reward.inWardrobe" />
               </span>
@@ -315,7 +318,9 @@ export function CompletionSequence({
               <div key={s.skillId} className="reward-skill-up-item" data-id={`skill-up-${s.skillId}`}>
                 <div className="reward-skill-name">
                   <Icon name="books" size={32} />
-                  <span>{skillNameOf(data, s.skillId)}</span>
+                  <span>
+                    <Name vi={skillNameOf(data, s.skillId)} />
+                  </span>
                 </div>
                 <p className="reward-level">
                   Lv.{s.levelBefore} → Lv.{s.levelAfter}

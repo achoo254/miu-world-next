@@ -2,7 +2,7 @@
 // that loops may repeat back-to-back). `{name}` is the player's character name; `{who}` the target.
 // The words live in the locales (`loop.*`), each line with its English twin at the same position.
 import type { InteractableKind } from '../../game-bridge/game-store';
-import { linesOf, mapBoth, type Bilingual } from '../i18n/i18n';
+import { linesOf, type Bilingual } from '../i18n/i18n';
 
 /** Talking to someone (or touching something) whose turn in the quest has not come yet. */
 export const NOT_NOW_LINES: Readonly<Record<InteractableKind, readonly Bilingual[]>> = {
@@ -16,8 +16,12 @@ export const NOT_NOW_LINES: Readonly<Record<InteractableKind, readonly Bilingual
 /** A clue just found, when the server sends no line of its own. */
 export const FOUND_LINES: readonly Bilingual[] = linesOf('loop.found');
 
-export function fillLine(line: Bilingual, who: string, name: string): Bilingual {
-  return mapBoth(line, (text) => text.replaceAll('{who}', who).replaceAll('{name}', name));
+/** Fills `{who}` (the target's name, each language its own) and `{name}` (the player's own name, never translated). */
+export function fillLine(line: Bilingual, who: Bilingual, name: string): Bilingual {
+  return {
+    vi: line.vi.replaceAll('{who}', who.vi).replaceAll('{name}', name),
+    en: line.en.replaceAll('{who}', who.en).replaceAll('{name}', name),
+  };
 }
 
 /** A wrong answer on a step whose content has no feedback pool of its own. */

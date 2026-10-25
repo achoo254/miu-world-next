@@ -7,7 +7,9 @@ import { Link } from 'react-router';
 import type { ProgressResponse } from '@miu/schema/game';
 import type { RegionRewardClaimResponse, RegionRewardsDto, RegionRewardTier, RegionRewardTierDto } from '@miu/schema/region-reward';
 import { mapBoth } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
+import { awardName } from '../backpack/items';
 import { Icon } from '../kit/art';
 import { swatchStyle } from '../home-decor/decor-catalog';
 import { buttonClass } from '../kit/button';
@@ -40,7 +42,8 @@ function TierIcon({ tier }: { tier: RegionRewardTier }) {
 
 function TierRow({ tier, busy, onClaim }: { tier: RegionRewardTierDto; busy: boolean; onClaim: () => void }) {
   const state = tier.claimed ? 'claimed' : tier.reached ? 'ready' : 'locked';
-  const { t } = useT();
+  const { t, inline } = useT();
+  const itemName = tier.item ? inline(awardName(tier.item.id, tier.item.name)) : '';
   return (
     <li className={`region-tier region-tier--${state}`} data-id={`region-tier-${tier.tier}`} data-state={state}>
       <TierIcon tier={tier.tier} />
@@ -57,11 +60,11 @@ function TierRow({ tier, busy, onClaim }: { tier: RegionRewardTierDto; busy: boo
           {tier.coin}
           <Icon name="sparkles" size={20} />
           {tier.xp} XP
-          {tier.item ? <img className="region-tier-item" src={rewardItemArt(tier.item.id)} alt={tier.item.name} title={tier.item.name} width={28} height={28} /> : null}
+          {tier.item ? <img className="region-tier-item" src={rewardItemArt(tier.item.id)} alt={itemName} title={itemName} width={28} height={28} /> : null}
           {tier.decor ? (
-            <span className="region-tier-decor" data-id={`region-tier-decor-${tier.tier}`} title={tier.decor.name}>
+            <span className="region-tier-decor" data-id={`region-tier-decor-${tier.tier}`} title={inline(nameOf(tier.decor.name))}>
               <span className="region-swatch" style={swatchStyle(tier.decor.swatch)} aria-hidden="true" />
-              <T k="reward.souvenir" params={{ name: tier.decor.name }} />
+              <T k="reward.souvenir" params={{ name: nameOf(tier.decor.name) }} />
             </span>
           ) : null}
         </span>
@@ -102,7 +105,9 @@ export function ClaimCelebration({ claim, name, onClose }: { claim: RegionReward
             <span className="badge">
               <T k="reward.exclusive" />
             </span>
-            <strong>{tier.item.name}</strong>
+            <strong>
+              <Bi {...awardName(tier.item.id, tier.item.name)} />
+            </strong>
             <span className="hint">
               <T k="reward.inWardrobe" />
             </span>
@@ -123,7 +128,7 @@ export function ClaimCelebration({ claim, name, onClose }: { claim: RegionReward
               <T k="reward.souvenirBadge" />
             </span>
             <strong>
-              {tier.decor.name} · {tier.decor.slot}
+              <Name vi={tier.decor.name} /> · <Name vi={tier.decor.slot} />
             </strong>
             <span className="hint">
               <T k="reward.souvenirHint" />
@@ -142,7 +147,9 @@ export function ClaimCelebration({ claim, name, onClose }: { claim: RegionReward
           <Icon name="star" size={36} />
           <span>
             <T k="reward.newTitle" />
-            <strong>{tier.title}</strong>
+            <strong>
+              <Name vi={tier.title} />
+            </strong>
           </span>
         </>
       ),
@@ -238,7 +245,7 @@ export function RegionRewardPanel({ region, done, total, name, onProgress }: { r
           {full?.claimed ? (
             <span className="region-title-earned" data-id="region-title">
               <Icon name="star" size={22} />
-              {dto?.title}
+              {dto ? <Name vi={dto.title} /> : null}
             </span>
           ) : null}
         </div>

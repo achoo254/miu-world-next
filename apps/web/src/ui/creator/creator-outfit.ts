@@ -51,7 +51,7 @@ export function isOpen(item: AccessoryItem, level: number, completed: ReadonlySe
 }
 
 /** Why a closed item is closed. `regionName`: a region's name as shown (its `{name}` filled). */
-export function lockText(item: AccessoryItem, questTitle: (id: string) => string, regionName: (id: string) => string = (id) => id): Bilingual {
+export function lockText(item: AccessoryItem, questTitle: (id: string) => string | Bilingual, regionName: (id: string) => string | Bilingual = (id) => id): Bilingual {
   if (item.unlock?.shop) return pairOf('creator.lock.shop');
   if (item.unlock?.region) return pairOf('creator.lock.region', { region: regionName(item.unlock.region) });
   if (item.unlock?.award) return pairOf('creator.lock.award');

@@ -4,7 +4,8 @@
 // gifts already received. Every number is the server's (`GET /api/skill-tree`).
 import { useState } from 'react';
 import type { SkillTreeResponse, SkillTreeSkill } from '@miu/schema/progression';
-import { T, useT } from '../i18n/use-t';
+import { Name, T, useT } from '../i18n/use-t';
+import { awardName } from '../backpack/items';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { ProgressBar } from '../kit/progress-bar';
@@ -27,13 +28,16 @@ function Leaves({ level, max }: { level: number; max: number }) {
 }
 
 function SkillRow({ skill }: { skill: SkillTreeSkill }) {
-  const { t } = useT();
+  const { t, inline } = useT();
   const next = skill.gifts.find((gift) => gift.level === skill.level + 1);
+  const itemName = next?.item ? inline(awardName(next.item.id, next.item.name)) : '';
   const received = skill.gifts.filter((gift) => gift.received).length;
   return (
     <li className="skill-row" data-id={`skill-tree-${skill.skillId}`} data-level={skill.level}>
       <div className="skill-row-head">
-        <strong className="skill-row-name">{skill.name}</strong>
+        <strong className="skill-row-name">
+          <Name vi={skill.name} />
+        </strong>
         <span className="skill-row-level">Lv.{skill.level}</span>
       </div>
       <Leaves level={skill.level} max={skill.maxLevel} />
@@ -55,7 +59,7 @@ function SkillRow({ skill }: { skill: SkillTreeSkill }) {
             <Icon name="gift" size={24} />
             <T k="skillTree.nextGift" params={{ level: next.level }} />
             <Icon name="coin" size={20} />+{next.coin}
-            {next.item ? <img src={rewardItemArt(next.item.id)} alt={next.item.name} title={next.item.name} width={32} height={32} /> : null}
+            {next.item ? <img src={rewardItemArt(next.item.id)} alt={itemName} title={itemName} width={32} height={32} /> : null}
           </span>
         ) : null}
         {received > 0 ? (
@@ -69,7 +73,7 @@ function SkillRow({ skill }: { skill: SkillTreeSkill }) {
 }
 
 export function SkillTreeView({ tree }: { tree: SkillTreeResponse }) {
-  const { t } = useT();
+  const { t, name } = useT();
   const [active, setActive] = useState(tree.subjects[0]?.subjectId ?? null);
   const subject = tree.subjects.find((s) => s.subjectId === active);
   return (
@@ -78,7 +82,7 @@ export function SkillTreeView({ tree }: { tree: SkillTreeResponse }) {
       dataId="skill-tree-subject"
       active={active}
       onChange={setActive}
-      items={tree.subjects.map((s) => ({ key: s.subjectId, label: `${s.name} · Lv.${s.level}` }))}
+      items={tree.subjects.map((s) => ({ key: s.subjectId, label: `${name(s.name)} · Lv.${s.level}` }))}
     >
       {subject ? (
         <>

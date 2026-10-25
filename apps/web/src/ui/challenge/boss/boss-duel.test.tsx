@@ -49,6 +49,7 @@ const context: ChallengeContext = {
   xp: 100,
   fill: (t) => t.replace('{name}', 'Mochi'),
   say: (vi, en) => ({ vi, en: en ?? vi }),
+  label: (vi, en) => ({ vi, en: en ?? vi }),
   busy: false,
   tryAgain: null,
   wrongTries: 0,

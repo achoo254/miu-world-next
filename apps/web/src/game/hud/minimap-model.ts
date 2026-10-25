@@ -8,10 +8,28 @@
 import { PORTAL_COLOURS, portalColourOf } from '@miu/voxel/portal-colours';
 import type { Interactable, WorldEntities } from '@miu/voxel/world-entities';
 import type { WalkGoal } from '../../game-bridge/game-store';
+import type { Bilingual, TextKey } from '../../ui/i18n/i18n';
 
 export type MarkerKind = 'player' | 'quest' | 'boss' | 'home' | 'gate' | 'story' | 'side' | 'stop' | 'place';
 /** What a marked place is (the child herself is drawn apart). */
 export type PlaceKind = Exclude<MarkerKind, 'player'>;
+
+/**
+ * A value in a marker's line: a name in Vietnamese (its English looked up when shown, ui/i18n/names), a name that
+ * reads in lower case in the Vietnamese line ("Bến xe buýt"), or text already in both languages.
+ */
+export type MarkerParam = string | Bilingual | { name: string; lowerVi: true };
+/** A UI line with its values ("Cổng sang {place}"). */
+export interface MarkerText {
+  key: TextKey;
+  params?: Readonly<Record<string, MarkerParam>>;
+}
+/**
+ * One line of a marker as the model knows it: a name in Vietnamese, text already in both languages, or a UI line.
+ * The map turns it into the display language when it draws (map-text.ts), so a mode switch or the English names
+ * arriving later shows at the next drawing.
+ */
+export type MarkerLine = string | Bilingual | MarkerText;
 
 export interface MinimapMarker {
   /** Unique on the map: the target's or the named place's id. */
@@ -22,9 +40,9 @@ export interface MinimapMarker {
   /** Its colour on the map and in the legend. */
   colour: string;
   /** Its name, on the map once zoomed in enough and on its card. */
-  label: string;
-  /** A second line on its card: where a gate or a stop takes her, the games a character offers. */
-  detail?: string;
+  label: MarkerLine;
+  /** A second line on its card (its parts joined by " · "): where a gate or a stop takes her, the games a character offers. */
+  detail?: readonly MarkerLine[];
   /** Where "Đi tới đây" walks her. */
   goal: WalkGoal;
   /** Drawn larger than the others of its kind (the map's big boss). */
@@ -55,15 +73,15 @@ const STATION_REACH = 16;
 export const MAP_MARGIN = 24;
 
 /** The legend's groups, in the order the chips show them; each can be hidden from the map. */
-export const MARKER_GROUPS: ReadonlyArray<{ kind: PlaceKind; label: string }> = [
-  { kind: 'quest', label: 'Nhiệm vụ' },
-  { kind: 'boss', label: 'Trùm' },
-  { kind: 'story', label: 'Chuyện' },
-  { kind: 'side', label: 'Trò chơi' },
-  { kind: 'home', label: 'Nhà' },
-  { kind: 'gate', label: 'Cổng' },
-  { kind: 'stop', label: 'Bến xe' },
-  { kind: 'place', label: 'Địa điểm' },
+export const MARKER_GROUPS: ReadonlyArray<{ kind: PlaceKind; label: TextKey }> = [
+  { kind: 'quest', label: 'map.group.quest' },
+  { kind: 'boss', label: 'map.group.boss' },
+  { kind: 'story', label: 'map.group.story' },
+  { kind: 'side', label: 'map.group.side' },
+  { kind: 'home', label: 'map.group.home' },
+  { kind: 'gate', label: 'map.group.gate' },
+  { kind: 'stop', label: 'map.group.stop' },
+  { kind: 'place', label: 'map.group.place' },
 ];
 
 const at = (t: { position: readonly number[] }): { x: number; z: number } => ({ x: t.position[0] ?? 0, z: t.position[2] ?? 0 });
@@ -98,8 +116,8 @@ export function stationMarkers(interactables: readonly Interactable[]): MinimapM
     kind: 'stop',
     ...at(first),
     colour: MARKER_COLOURS.stop,
-    label: `${/^tàu/i.test(vehicle) ? 'Ga' : 'Bến'} ${vehicle.toLocaleLowerCase('vi')}`,
-    ...(to.length ? { detail: `Đi tới: ${to.join(' · ')}` } : {}),
+    label: { key: /^tàu/i.test(vehicle) ? 'map.trainStation' : 'map.station', params: { vehicle: { name: vehicle, lowerVi: true } } },
+    ...(to.length ? { detail: [{ key: 'map.goesTo', params: { places: to.join(' · ') } }] } : {}),
     goal: { targetId: first.id },
   }));
 }
@@ -131,10 +149,10 @@ export function minimapMarkers(
       const { x, z } = at(t);
       const place = options.regionName(t.travel ?? '') ?? t.name;
       if (options.homeRegion !== undefined && t.travel === options.homeRegion) {
-        return { id: t.id, kind: 'home', x, z, colour: MARKER_COLOURS.home, label: place, detail: 'Cổng về nhà', goal: { targetId: t.id } };
+        return { id: t.id, kind: 'home', x, z, colour: MARKER_COLOURS.home, label: place, detail: [{ key: 'map.homeGate' }], goal: { targetId: t.id } };
       }
       const portal = portals.filter((p) => Math.hypot(p.x - x, p.z - z) <= PORTAL_REACH).sort((a, b) => Math.hypot(a.x - x, a.z - z) - Math.hypot(b.x - x, b.z - z))[0];
-      return { id: t.id, kind: 'gate', x, z, colour: portal?.colour ?? GATE_COLOUR, label: place, detail: `Cổng sang ${place}`, goal: { targetId: t.id } };
+      return { id: t.id, kind: 'gate', x, z, colour: portal?.colour ?? GATE_COLOUR, label: place, detail: [{ key: 'map.gateTo', params: { place } }], goal: { targetId: t.id } };
     });
   const [first, ...rest] = entities.landmarks;
   const ownHome = options.homeName !== undefined && first !== undefined;
@@ -150,14 +168,14 @@ export function minimapMarkers(
 /** A character of this map who offers minigames (side-givers.ts), with the games' names. */
 export interface SideGiver {
   targetId: string;
-  games: readonly string[];
+  games: readonly Bilingual[];
 }
 
 /** A character of this map who tells a story (story-tellers.ts): its targets and the chapter it offers next. */
 export interface StoryTeller {
   targetIds: readonly string[];
   /** The next chapter's title; null once every chapter is finished (the story stays to replay). */
-  next: string | null;
+  next: Bilingual | null;
 }
 
 /**
@@ -172,15 +190,21 @@ export function sideGiverMarkers(interactables: readonly Interactable[], givers:
     if (!target) return [];
     marked.add(target.id);
     const games = gamesOf.get(target.id);
-    const detail = [teller.next ? `Chuyện: ${teller.next}` : 'Chuyện đã kể hết, chơi lại tùy thích', ...(games ? [`Trò chơi: ${games.join(' · ')}`] : [])].join(' · ');
+    const detail: MarkerLine[] = [teller.next ? { key: 'map.storyNext', params: { title: teller.next } } : { key: 'map.storyDone' }, ...(games ? [gamesLine(games)] : [])];
     return [{ id: target.id, kind: 'story', ...at(target), colour: MARKER_COLOURS.story, label: target.name, detail, goal: { targetId: target.id } }];
   });
   const side = givers.flatMap((giver): MinimapMarker[] => {
     const target = interactables.find((t) => t.id === giver.targetId);
     if (!target || marked.has(target.id)) return [];
-    return [{ id: target.id, kind: 'side', ...at(target), colour: MARKER_COLOURS.side, label: target.name, detail: `Trò chơi: ${giver.games.join(' · ')}`, goal: { targetId: target.id } }];
+    return [{ id: target.id, kind: 'side', ...at(target), colour: MARKER_COLOURS.side, label: target.name, detail: [gamesLine(giver.games)], goal: { targetId: target.id } }];
   });
   return [...story, ...side];
+}
+
+/** "Trò chơi: Bắn cung · Ghép hình", each game's title in both languages. */
+function gamesLine(games: readonly Bilingual[]): MarkerText {
+  const joined: Bilingual = { vi: games.map((g) => g.vi).join(' · '), en: games.map((g) => g.en).join(' · ') };
+  return { key: 'map.games', params: { games: joined } };
 }
 
 /** A boss of this map: the big boss (a lesson's last fight) or a zone guardian, from the player's quest list. */
@@ -189,9 +213,9 @@ export interface MapBoss {
   /** The boss step's target: where the boss stands. */
   targetId: string;
   /** The boss's name, the player's name filled in. */
-  name: string;
+  name: Bilingual;
   /** The quest's title, filled in. */
-  title: string;
+  title: Bilingual;
   /** The map's big boss (its fight ends a lesson); otherwise a zone guardian. */
   big: boolean;
 }
@@ -212,7 +236,7 @@ export function bossMarkers(interactables: readonly Interactable[], bosses: read
         ...at(target),
         colour: MARKER_COLOURS.boss,
         label: boss.name,
-        detail: `${boss.big ? 'Trùm lớn' : 'Trùm canh khu'} · ${boss.title}`,
+        detail: [{ key: boss.big ? 'map.bigBoss' : 'map.guardian' }, boss.title],
         goal: boss.big ? { quest: boss.questId } : { targetId: boss.targetId },
         ...(boss.big ? { big: true } : {}),
       },
@@ -222,12 +246,12 @@ export function bossMarkers(interactables: readonly Interactable[], bosses: read
 
 /** The quest's place now (the target the quest card points at). */
 export function questMarker(quest: { id: string; label: string; x: number; z: number }): MinimapMarker {
-  return { id: quest.id, kind: 'quest', x: quest.x, z: quest.z, colour: MARKER_COLOURS.quest, label: quest.label, detail: 'Nơi làm nhiệm vụ', goal: { targetId: quest.id } };
+  return { id: quest.id, kind: 'quest', x: quest.x, z: quest.z, colour: MARKER_COLOURS.quest, label: quest.label, detail: [{ key: 'map.questPlace' }], goal: { targetId: quest.id } };
 }
 
 export interface LegendGroup {
   kind: PlaceKind;
-  label: string;
+  label: TextKey;
   colour: string;
   count: number;
 }

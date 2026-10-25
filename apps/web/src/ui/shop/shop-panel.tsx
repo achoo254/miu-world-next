@@ -16,7 +16,8 @@ import { OPEN_SLOTS, equip, type OpenSlot } from '../creator/creator-outfit';
 import { PreviewStage } from '../creator/creator-screen';
 import { DECOR_CATALOG } from '../home-decor/decor-catalog';
 import { mapBoth, pairOf, same, type Bilingual, type Params, type TextKey } from '../i18n/i18n';
-import { Bi, T, useT } from '../i18n/use-t';
+import { Bi, Name, T, useT } from '../i18n/use-t';
+import { nameOf } from '../i18n/names';
 import { Icon, MiuPortrait } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -55,10 +56,10 @@ const TAB_ICONS: Readonly<Record<Tab, UiIcon | { art: string }>> = {
   'goi-dac-biet': 'gift',
 };
 const TABS: readonly Tab[] = ['noi-bat', ...SHOP_CATEGORIES];
-/** A slot's name: the wardrobe's (translated), or a home style's from the catalogue (its own words). */
-const SLOT_LABELS: ReadonlyMap<string, Bilingual> = new Map<string, Bilingual>([
-  ...OPEN_SLOTS.map((s) => [s.slot, pairOf(s.label)] as const),
-  ...DECOR_CATALOG.slots.map((s) => [s.id, { vi: s.name, en: s.name }] as const),
+/** A slot's name: the wardrobe's (translated), or a home style's from the catalogue (through the name glossary). */
+const SLOT_LABELS: ReadonlyMap<string, () => Bilingual> = new Map<string, () => Bilingual>([
+  ...OPEN_SLOTS.map((s) => [s.slot, () => pairOf(s.label)] as const),
+  ...DECOR_CATALOG.slots.map((s) => [s.id, () => nameOf(s.name)] as const),
 ]);
 /** About what one quest pays, for the "how to earn more" line. */
 const COINS_PER_QUEST = 20;
@@ -108,7 +109,7 @@ function ItemCard({ item, state, onOpen }: { item: ShopItemDto; state: ShopState
           <ShopPicture item={item} />
         </span>
         <span className="shop-card-name">
-          <Bi {...twin(item.name, item.nameEn)} />
+          <Name vi={item.name} en={item.nameEn} />
         </span>
         <CardStatus item={item} state={state} />
       </button>
@@ -163,7 +164,7 @@ function ItemDetail({ item, items, state, character, busy, notice, fill, onBuy, 
       </div>
       <section className="shop-detail-card parchment" aria-labelledby="shop-detail-name">
         <h3 id="shop-detail-name">
-          <Bi {...twin(item.name, item.nameEn)} />
+          <Name vi={item.name} en={item.nameEn} />
         </h3>
         {item.description ? (
           <p>
@@ -180,7 +181,7 @@ function ItemDetail({ item, items, state, character, busy, notice, fill, onBuy, 
             </span>
           ) : slot && SLOT_LABELS.has(slot) ? (
             <span className="scene-chip">
-              <Bi {...(SLOT_LABELS.get(slot) ?? { vi: slot, en: slot })} />
+              <Bi {...(SLOT_LABELS.get(slot)?.() ?? { vi: slot, en: slot })} />
             </span>
           ) : null}
           {item.effect ? (
@@ -195,7 +196,7 @@ function ItemDetail({ item, items, state, character, busy, notice, fill, onBuy, 
               part ? (
                 <li key={part.id}>
                   <ShopPicture item={part} size={40} />
-                  {part.name}
+                  <Name vi={part.name} en={part.nameEn} />
                   {qty > 1 ? ` × ${qty}` : ''}
                 </li>
               ) : null,

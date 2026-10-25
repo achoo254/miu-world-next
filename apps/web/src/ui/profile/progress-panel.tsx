@@ -6,7 +6,7 @@ import { useCallback } from 'react';
 import { Link } from 'react-router';
 import { PlayerProgressDto, type ProgressSkill } from '@miu/schema/progress';
 import { api } from '../api-client';
-import { T, useT } from '../i18n/use-t';
+import { Name, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { ProgressBar } from '../kit/progress-bar';
@@ -32,7 +32,7 @@ function SkillChips({ skills, dataId }: { skills: ProgressSkill[]; dataId: strin
     <ul className="progress-chips" data-id={dataId}>
       {skills.map((skill) => (
         <li key={skill.skillId} className="progress-chip" data-id={`${dataId}-${skill.skillId}`}>
-          {skill.name} <span className="progress-chip-level">Lv.{skill.level}</span>
+          <Name vi={skill.name} /> <span className="progress-chip-level">Lv.{skill.level}</span>
         </li>
       ))}
     </ul>
@@ -86,7 +86,9 @@ export function ProgressView({ progress, playable, dataId, shareWeek = false }: 
           {progress.subjects.map((subject) => (
             <li key={subject.subjectId} className="progress-subject" data-id={`${dataId}-subject-${subject.subjectId}`}>
               <div className="progress-subject-head">
-                <strong>{subject.name}</strong>
+                <strong>
+                  <Name vi={subject.name} />
+                </strong>
                 <span className="progress-chip-level">Lv.{subject.level}</span>
               </div>
               <ProgressBar done={subject.lessonsDone} total={subject.lessonsTotal} label={t('progress.subjectLessons', { done: subject.lessonsDone, total: subject.lessonsTotal })} />
