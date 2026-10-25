@@ -98,4 +98,22 @@ describe('MailPanel', () => {
     });
     expect(onCoinsUpdated).toHaveBeenCalledWith(150);
   });
+  it('opens wide, and on a phone shows the list until a letter is picked and again after Back', async () => {
+    vi.spyOn(globalThis, 'fetch').mockImplementation(async (input: RequestInfo | URL) => {
+      const url = String(input);
+      if (url.endsWith('/api/mail')) return { ok: true, json: async () => mockListResponse } as Response;
+      if (url.includes('/read')) return { ok: true, json: async () => ({ success: true }) } as Response;
+      return { ok: false, status: 404 } as Response;
+    });
+    render(<MailPanel onClose={vi.fn()} />);
+    const dialog = screen.getByRole('dialog', { name: 'Hộp thư' });
+    expect(dialog.className).toContain('modal--wide');
+    const card = (await screen.findAllByText('Chào mừng bé đến Đảo Mây!'))[0];
+    const layout = dialog.querySelector('.mail-content-layout');
+    expect(layout?.classList.contains('has-selected')).toBe(false);
+    fireEvent.click(card as HTMLElement);
+    await waitFor(() => expect(layout?.classList.contains('has-selected')).toBe(true));
+    fireEvent.click(screen.getByRole('button', { name: /Quay lại/ }));
+    expect(layout?.classList.contains('has-selected')).toBe(false);
+  });
 });

@@ -33,11 +33,8 @@ export function MailPanel({ onClose, onCoinsUpdated }: MailPanelProps) {
     void fetchMailList()
       .then((data) => {
         if (!alive) return;
+        // Nothing is picked yet: a wide screen previews the first letter beside the list, a phone shows the list.
         setMailList(data.mail);
-        const first = data.mail[0];
-        if (first) {
-          setSelectedId(first.id);
-        }
       })
       .catch(() => {
         // Ignored
@@ -84,7 +81,7 @@ export function MailPanel({ onClose, onCoinsUpdated }: MailPanelProps) {
   const unreadCount = mailList.filter((m) => !m.isRead).length;
 
   return (
-    <Modal title={<T k="mail.title" />} onClose={onClose} dataId="mailbox-dialog">
+    <Modal title={<T k="mail.title" />} onClose={onClose} dataId="mailbox-dialog" size="wide">
       <div className="mail-container">
         <div className="mail-header-tabs">
           <div className="mail-tabs">
@@ -122,7 +119,7 @@ export function MailPanel({ onClose, onCoinsUpdated }: MailPanelProps) {
         </div>
 
         <div
-          className={`mail-content-layout ${selectedMail ? 'has-selected' : ''}`}
+          className={`mail-content-layout ${selectedId !== null ? 'has-selected' : ''}`}
         >
           <div className="mail-list-pane" data-id="mail-list">
             {filteredMail.length === 0 ? (
