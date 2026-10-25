@@ -4,7 +4,8 @@
 // The English lives in one glossary per group, `content/i18n/names/<group>.json`, keyed by the exact
 // Vietnamese name ("Koala Ghép Tranh": "Puzzle Koala"), so a name gets one English twin wherever it shows:
 // the label over a head, the minimap, the dialogue, the backpack. Names that already carry their own English
-// (an item's `en.name`, an event character's `nameEn`) keep it and are not repeated here.
+// (an item's `en.name`, an event character's `nameEn`) keep it and are not repeated here. Quest and step titles
+// without their own `en` are kept here too (group `quest`).
 //
 //   pnpm content:names            lists the names still missing English, by group
 //   pnpm content:names --todo DIR writes them as `<group>.json` ({"Vietnamese": ""}) to fill in
@@ -12,7 +13,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import path from 'node:path';
 import { questSecrets } from '../security/scan-dist';
 
-export const NAME_GROUPS = ['character', 'place', 'thing', 'wearable', 'home', 'action', 'title'] as const;
+export const NAME_GROUPS = ['character', 'place', 'thing', 'wearable', 'home', 'action', 'title', 'quest'] as const;
 export type NameGroup = (typeof NAME_GROUPS)[number];
 
 const ROOT = path.resolve(import.meta.dirname, '../..');
@@ -135,6 +136,15 @@ export function harvestNames(): Map<string, NameGroup> {
     walk(readJson(file), ['name', 'title'], 'title');
   }
   for (const file of jsonFiles(content('learning'))) walk(readJson(file), ['name', 'title'], 'title');
+
+  // Quest and step titles without their own English (a step's `en` must mirror the whole step, so a title alone
+  // lives here): the quest tracker, the step banner, the journal.
+  for (const file of jsonFiles(content('quests'))) {
+    const quest = readJson(file);
+    if (!isObject(quest)) continue;
+    if (!hasOwnEnglish(quest, 'title')) add(quest.title, 'quest');
+    for (const step of asArray(quest.steps)) if (isObject(step) && !hasOwnEnglish(step, 'title')) add(step.title, 'quest');
+  }
   return found;
 }
 

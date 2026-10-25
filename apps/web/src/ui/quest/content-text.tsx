@@ -2,13 +2,20 @@
 // twin in `en`; what has none (textbook wording, text not translated yet) shows in Vietnamese in every mode.
 import type { QuestStepPublic } from '@miu/schema/content';
 import { mapBoth, type Bilingual } from '../i18n/i18n';
+import { nameOf } from '../i18n/names';
 import { Bi } from '../i18n/use-t';
 
 /** A line with its English twin; without one, the same line in both languages (shown once, in Vietnamese). */
 export const twin = (vi: string, en: string | null | undefined): Bilingual => ({ vi, en: en && en.trim() !== '' ? en : vi });
 
+/**
+ * A title in both languages: its own English first, then the name glossary (content/i18n/names/quest.json holds the
+ * quest and step titles that have no `en` of their own), else the Vietnamese.
+ */
+const titleTwin = (vi: string, en: string | null | undefined): Bilingual => nameOf(vi, en && en.trim() !== '' ? en : null);
+
 /** A quest's (or a story's) title in both languages. */
-export const titleOf = (quest: { title: string; en?: { title: string } | undefined }): Bilingual => twin(quest.title, quest.en?.title);
+export const titleOf = (quest: { title: string; en?: { title: string } | undefined }): Bilingual => titleTwin(quest.title, quest.en?.title);
 
 /** A quest's summary in both languages. */
 export const summaryOf = (quest: { summary: string; en?: { summary: string } | undefined }): Bilingual => twin(quest.summary, quest.en?.summary);
@@ -17,7 +24,7 @@ export const summaryOf = (quest: { summary: string; en?: { summary: string } | u
 const enOf = (step: QuestStepPublic): { title?: string | undefined; goTo?: string | undefined } | undefined => ('en' in step ? step.en : undefined);
 
 /** A step's own title in both languages. */
-export const stepTitleOf = (step: QuestStepPublic): Bilingual => twin(step.title, enOf(step)?.title);
+export const stepTitleOf = (step: QuestStepPublic): Bilingual => titleTwin(step.title, enOf(step)?.title);
 
 /** Where the tracker sends the child for a step (its `goTo`, else its title), in both languages. */
 export const stepLineOf = (step: QuestStepPublic): Bilingual => (step.goTo ? twin(step.goTo, enOf(step)?.goTo) : stepTitleOf(step));

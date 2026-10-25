@@ -5,12 +5,13 @@ import action from '../../../../../content/i18n/names/action.json';
 import character from '../../../../../content/i18n/names/character.json';
 import home from '../../../../../content/i18n/names/home.json';
 import place from '../../../../../content/i18n/names/place.json';
+import quest from '../../../../../content/i18n/names/quest.json';
 import thing from '../../../../../content/i18n/names/thing.json';
 import title from '../../../../../content/i18n/names/title.json';
 import wearable from '../../../../../content/i18n/names/wearable.json';
 
 // Same order as the harvest tool's groups (tools/content/name-glossary.ts): the first group naming a word wins.
-const GROUPS: ReadonlyArray<Readonly<Record<string, unknown>>> = [character, place, thing, wearable, home, action, title];
+const GROUPS: ReadonlyArray<Readonly<Record<string, unknown>>> = [character, place, thing, wearable, home, action, title, quest];
 
 /** Vietnamese name → English name, over every group; blank entries (not translated yet) are left out. */
 export function mergedGlossary(): Map<string, string> {
