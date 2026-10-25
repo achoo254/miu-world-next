@@ -67,6 +67,14 @@
   font-weight: 800;
   cursor: pointer;
 }
+/* Phones: the stones two to a row and a smaller question, so all four answers show above the support bar. */
+@media (max-width: 40rem) {
+  .olympiad-prompt { font-size: var(--text-body); }
+  .olympiad-area { gap: var(--space-sm); }
+  .olympiad-choices { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .olympiad-choice { min-width: 0; gap: var(--space-xs); padding-inline: var(--space-xs); font-size: var(--text-body); line-height: 1.2; }
+  .olympiad-choice-letter { flex: none; width: 1.5rem; height: 1.5rem; font-size: var(--text-sm); }
+}
 .olympiad-choice:focus-visible { box-shadow: var(--focus-ring); outline: none; }
 .olympiad-choice--picked { border-color: var(--color-secondary); background: var(--color-surface); }
 .olympiad-choice--right { border-color: var(--color-leaf); }
