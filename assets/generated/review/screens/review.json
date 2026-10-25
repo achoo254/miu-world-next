@@ -1,141 +1,127 @@
 {
-  "capturedFrom": "ba40834aa4cccbb44d5682fe602ff2edaf29fa70",
-  "capturedAt": "2026-10-25T16:42:30+07:00",
-  "reviewedAt": "2026-10-25T16:43:56+07:00",
-  "reviewer": "agent:phiên chính (so với lần duyệt 0ee71f60: 7 ảnh khác quá 0,5% do phần thưởng ngẫu nhiên và hoạt ảnh, xem lại không có lỗi; còn lại giữ kết quả cũ)",
+  "capturedFrom": "3ffdf44724f0ec85a9cc3fbd22adab1768076ac9",
+  "capturedAt": "2026-10-25T17:54:34+07:00",
+  "reviewedAt": "2026-10-25T17:55:53+07:00",
+  "reviewer": "agent:screen-reviewers (30 màn × 2 khổ ở c2960942) và phiên chính (15 ảnh khác ở 3ffdf447: phần thưởng ngẫu nhiên, hoạt ảnh, pill rộng hơn trên tablet)",
   "verdict": "pass",
   "findings": [
     {
-      "shot": "360x740/13-olympiad-practice.png",
-      "kind": "clipped",
+      "shot": "360x740/04-home.png",
+      "kind": "overlap",
       "severity": "note",
-      "text": "Dòng đầu của đề bị cắt nửa trên sát mép trên màn hình, thanh tiêu đề và tiến độ 1/10 không còn trong khung nhìn; ảnh lần trước cũng vậy. Nên cho cuộn hoặc chừa lề trên.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/15-shop.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Phía trên bảng Cửa hàng lộ chữ \"+80 XP\" bị cắt ngang mép trên, có thể là thông báo XP còn sót lại; nút đóng vẫn rõ.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/24-weekly-share.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Chân thẻ chia sẻ ghi địa chỉ máy chụp (127.0.0.1:4173); bản production phải hiện tên miền thật, cần xem trên production. Ảnh lần trước cũng vậy.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/24-weekly-share.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Chân thẻ chia sẻ cũng ghi địa chỉ máy chụp (xem ghi chú ở 360x740).",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/27-puzzle-clues.png",
-      "kind": "clipped",
-      "severity": "note",
-      "text": "Đáp án thứ ba bị thanh dưới (Hướng dẫn / Kiểm tra) che nửa; danh sách cuộn được và ảnh lần trước cũng vậy, nhưng người chơi có thể không biết cần cuộn.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/25-online-off.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Đã hiểu\" của thẻ chơi online tạm nghỉ cao khoảng 42 px, hơi dưới 44 px nhưng vẫn bấm được.",
+      "text": "Chip người chơi: chữ \"0/100 XP\" đè lên thanh XP, khó đọc ở cỡ nhỏ (cũng thấy ở 820x1180).",
       "fixedIn": null
     },
     {
       "shot": "360x740/05-world-map.png",
       "kind": "overlap",
       "severity": "note",
-      "text": "Con vẹt trang trí ở mép trái đè lên biểu tượng cạnh tiêu đề danh sách khu; không che chữ hay vùng chạm, ảnh lần trước cũng vậy.",
+      "text": "Hình chú vẹt và các nút khu vực chạm tiêu đề \"Bài học từ từng khu\"; chữ vẫn đọc được, không che vùng bấm.",
       "fixedIn": null
     },
     {
       "shot": "360x740/02-players.png",
       "kind": "off-screen",
       "severity": "note",
-      "text": "Hai nút \"Quản lý tài khoản\" và \"Đăng xuất\" (thấy ở 820x1180) nằm dưới khung nhìn 360, phải cuộn mới tới.",
+      "text": "Nút \"Quản lý tài khoản\" và \"Đăng xuất\" nằm dưới khung nhìn 360, phải cuộn mới tới (như lần trước).",
       "fixedIn": null
     },
     {
-      "shot": "360x740/06-region.png",
+      "shot": "820x1180/06-region.png",
       "kind": "other",
       "severity": "note",
-      "text": "Dòng phụ xám nhỏ trên nền be (\"Xong 6 nhiệm vụ · 0/6\") hơi nhạt, đọc được nhưng chưa rõ.",
+      "text": "Cảnh 3D phía sau các thẻ mờ, khó nhận ra khu rừng; như thiết kế cũ.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/03-creator.png",
-      "kind": "other",
+      "shot": "820x1180/07-play-hud.png",
+      "kind": "clipped",
       "severity": "note",
-      "text": "Nút \"Về trang chủ\" cao khoảng 40 px, hơi dưới 44 px.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/07-play-hud.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Thẻ nhiệm vụ chiếm khoảng 70% bề ngang, che gần một phần ba cảnh phía trên; bố cục HUD giống lần trước.",
-      "fixedIn": null
+      "text": "Pill nhiệm vụ cắt tên nhiệm vụ dù màn rộng còn nhiều chỗ; nên cho pill rộng hơn trên tablet. Nút menu chỉ có biểu tượng ở khổ 820 (chữ \"Menu\" chỉ từ 1024 px).",
+      "fixedIn": "3ffdf447"
     },
     {
       "shot": "360x740/08-play-prompt.png",
-      "kind": "overlap",
-      "severity": "note",
-      "text": "Nút Tương tác và nút Chạy chỉ cách nhau khoảng 10 px (cả hai khổ); không chồng nhau nhưng dễ bấm nhầm.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/10-question.png",
-      "kind": "clipped",
-      "severity": "note",
-      "text": "Tên người nói dính liền câu hỏi trong bong bóng, dòng chữ khá chật; chữ đủ dấu, không bị cắt.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/20-landing.png",
       "kind": "other",
       "severity": "note",
-      "text": "Một mảnh nền be nhỏ nhô lên sát mép trên khung \"Xem các chủ đề có trong game\"; không che chữ hay nút.",
+      "text": "Nhãn \"Vẹt · Nói chuyện\" rõ và bấm được, nhưng Vẹt không nằm trong khung hình nên khó biết nhãn thuộc mục tiêu nào (cũng thấy ở 820x1180).",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/11-reward.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Bảng thưởng mở ở vị trí đã cuộn xuống, phần đầu (tiêu đề, sao, XP) khuất; như lần trước. Ô tick \"Kèm lời mời kết bạn\" khoảng 28 px.",
       "fixedIn": null
     },
     {
       "shot": "360x740/22-friends-invite.png",
-      "kind": "overlap",
-      "severity": "note",
-      "text": "Nút \"Quay lại game\" đè lên viền dưới bảng Bạn bè khoảng 10 px; không che chữ, giống lần trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/19-worksheets.png",
       "kind": "other",
       "severity": "note",
-      "text": "Tên phiếu dài sát chữ \"3 phần\" bên phải (còn khoảng 8 px), chưa cắt hay đè.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/16-backpack.png",
-      "kind": "overlap",
-      "severity": "note",
-      "text": "Chữ \"0/150 XP\" đè lên mép dưới thanh XP ở thẻ người chơi; vẫn đọc được.",
+      "text": "Nút \"Quay lại\" ở góc trên cao khoảng 32 px, dưới 44 px; vẫn có \"Quay lại game\" ở dưới.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/22-friends-invite.png",
       "kind": "other",
       "severity": "note",
-      "text": "Nút \"Quay lại\" cao khoảng 42 px và sát mép trên khung Bạn bè (khoảng 2 px); vẫn bấm được.",
+      "text": "Nút \"Quay lại\" cao khoảng 36 px; panel lệch xuống giữa màn, phía trên còn trống nhiều.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/24-weekly-share.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Thẻ chia sẻ ghi địa chỉ máy chụp (127.0.0.1:4173); bản production phải ghi tên miền thật, như lần trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/13-olympiad-practice.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Hộp luyện Olympic bị cắt phần đầu ở khổ 360 (tiêu đề, dòng đầu đề bài); như lần trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/14-boss.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Panel dưới sát mép đáy, nút \"Hướng dẫn\" bị cắt bo góc dưới; dòng gợi ý chữ rất nhỏ.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/18-party.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Pill nhiệm vụ cắt tên giữa chữ (\"Chươn…\") dù màn còn chỗ; nên cho pill rộng hơn trên tablet.",
+      "fixedIn": "3ffdf447"
+    },
+    {
+      "shot": "360x740/28-play-menu.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Menu chụp không có Thú cưng, Bài hôm nay, Lái xe vì các mục này chỉ hiện khi có (đã kiểm code: nhóm bạn bè/thú cưng/bài hôm nay và nút lái xe theo điều kiện).",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/29-pause.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Hộp Tạm dừng không có nút X, thoát bằng nút lớn \"Tiếp tục chơi\" (hoặc Esc); hộp cao gần hết màn 360.",
       "fixedIn": null
     },
     {
       "shot": "360x740/27-puzzle-clues.png",
-      "kind": "other",
+      "kind": "clipped",
       "severity": "note",
-      "text": "Nút đóng tròn khoảng 36 px, nhỏ hơn 44 px (đã như vậy từ lần trước).",
+      "text": "Đáp án thứ ba bị thanh Hướng dẫn/Kiểm tra che ở khổ 360, phải cuộn; như lần trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/30-party-quest.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Nhãn \"Bông · Tương tác\" đè lên bong bóng chat mờ phía sau; không che nút.",
       "fixedIn": null
     }
   ]

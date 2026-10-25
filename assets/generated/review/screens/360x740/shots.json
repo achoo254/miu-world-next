@@ -1,8 +1,8 @@
 {
   "viewport": "360x740",
-  "capturedFrom": "ba40834aa4cccbb44d5682fe602ff2edaf29fa70",
+  "capturedFrom": "3ffdf44724f0ec85a9cc3fbd22adab1768076ac9",
   "uncommitted": [],
-  "capturedAt": "2026-10-25T16:42:30+07:00",
+  "capturedAt": "2026-10-25T17:54:34+07:00",
   "shots": [
     {
       "shot": "360x740/01-login.png",
@@ -146,12 +146,42 @@
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "span.hud-btn-label \"Bạn bè\" shows 1×1 of 56×23",
-          "span.hud-btn-label \"Nhiệm vụ\" shows 1×1 of 64×20",
-          "span.hud-btn-label \"Bản đồ\" shows 1×1 of 47×20",
-          "span.hud-btn-label \"Ba lô\" shows 1×1 of 34×20",
-          "span.hud-btn-label \"Menu\" shows 1×1 of 38×20"
+          "[data-id=\"player-name\"] shows 1×1 of 48×27",
+          "[data-id=\"player-xp\"] shows 1×1 of 76×27",
+          "[data-id=\"hud-tracker-pill-title\"] shows 130×24 of 245×24"
         ],
+        "rawText": [],
+        "small": []
+      }
+    },
+    {
+      "shot": "360x740/28-play-menu.png",
+      "screen": "28-play-menu",
+      "status": "ok",
+      "facts": {
+        "offScreen": [],
+        "overlaps": [],
+        "missingClose": [],
+        "clipped": [
+          "[data-id=\"player-name\"] shows 1×1 of 48×27",
+          "[data-id=\"player-xp\"] shows 1×1 of 76×27",
+          "[data-id=\"hud-tracker-pill-title\"] shows 130×24 of 245×24"
+        ],
+        "rawText": [],
+        "small": []
+      }
+    },
+    {
+      "shot": "360x740/29-pause.png",
+      "screen": "29-pause",
+      "status": "ok",
+      "facts": {
+        "offScreen": [],
+        "overlaps": [],
+        "missingClose": [
+          "[data-id=\"pause\"]"
+        ],
+        "clipped": [],
         "rawText": [],
         "small": []
       }
@@ -165,11 +195,9 @@
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "span.hud-btn-label \"Bạn bè\" shows 1×1 of 56×23",
-          "span.hud-btn-label \"Nhiệm vụ\" shows 1×1 of 64×20",
-          "span.hud-btn-label \"Bản đồ\" shows 1×1 of 47×20",
-          "span.hud-btn-label \"Ba lô\" shows 1×1 of 34×20",
-          "span.hud-btn-label \"Menu\" shows 1×1 of 38×20"
+          "[data-id=\"player-name\"] shows 1×1 of 48×27",
+          "[data-id=\"player-xp\"] shows 1×1 of 76×27",
+          "[data-id=\"hud-tracker-pill-title\"] shows 130×24 of 245×24"
         ],
         "rawText": [],
         "small": []
@@ -318,12 +346,26 @@
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "span.hud-btn-label \"Bạn bè\" shows 1×1 of 56×23",
-          "span.hud-btn-label \"Mèo xám\" shows 1×1 of 73×23",
-          "span.hud-btn-label \"Nhiệm vụ\" shows 1×1 of 64×20",
-          "span.hud-btn-label \"Bản đồ\" shows 1×1 of 47×20",
-          "span.hud-btn-label \"Ba lô\" shows 1×1 of 34×20",
-          "span.hud-btn-label \"Menu\" shows 1×1 of 38×20"
+          "[data-id=\"player-name\"] shows 1×1 of 48×27",
+          "[data-id=\"player-xp\"] shows 1×1 of 76×27",
+          "[data-id=\"hud-tracker-pill-title\"] shows 119×24 of 245×24"
+        ],
+        "rawText": [],
+        "small": []
+      }
+    },
+    {
+      "shot": "360x740/30-party-quest.png",
+      "screen": "30-party-quest",
+      "status": "ok",
+      "facts": {
+        "offScreen": [],
+        "overlaps": [],
+        "missingClose": [],
+        "clipped": [
+          "[data-id=\"player-name\"] shows 1×1 of 48×27",
+          "[data-id=\"player-xp\"] shows 1×1 of 76×27",
+          "[data-id=\"hud-tracker-pill-title\"] shows 119×24 of 245×24"
         ],
         "rawText": [],
         "small": []
@@ -382,12 +424,9 @@
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "span.hud-btn-label \"Bạn bè\" shows 1×1 of 56×23",
-          "span.hud-btn-label \"Mèo xám\" shows 1×1 of 73×23",
-          "span.hud-btn-label \"Nhiệm vụ\" shows 1×1 of 64×20",
-          "span.hud-btn-label \"Bản đồ\" shows 1×1 of 47×20",
-          "span.hud-btn-label \"Ba lô\" shows 1×1 of 34×20",
-          "span.hud-btn-label \"Menu\" shows 1×1 of 38×20"
+          "[data-id=\"player-name\"] shows 1×1 of 48×27",
+          "[data-id=\"player-xp\"] shows 1×1 of 76×27",
+          "[data-id=\"hud-tracker-pill-title\"] shows 119×24 of 245×24"
         ],
         "rawText": [],
         "small": []
