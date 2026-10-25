@@ -9,6 +9,8 @@ metadata:
 
 Placement cascade: `placeQuestTargets` draws every shuffle from one seeded stream over quests sorted by id, so a quest place that stops matching a landmark name (toan2-cd1-b01 "cửa lớp 2A" after the landmark rename) moves almost every later target and villager.
 
+Follow-up the same day: the water fix changed trajectories and exposed a real lost update in memory-restart.test. `Brain.sense` faded every place's q each minute without bumping `revision`, so `MemoryKeeper.flush()` skipped a bot whose last snapshot was 7 s old and the stored q was stale (diff 1.3e-4). Fixed by bumping `changes` when a fade changes a value. To find this kind of bug, wrap `brain.snapshot` to log when the snapshot was taken and its revision; logging only the write call hides it.
+
 **Why:** these sim tests are chaotic; a grid trap turns luck into failure.
 
 **How to apply:** for a stuck-share regression, first log per-bot stuckMs and height jumps; run the trap audit before blaming placement. Related: [[seeded-bot-tests-content-drift]].

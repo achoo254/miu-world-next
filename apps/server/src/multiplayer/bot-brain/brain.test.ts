@@ -157,4 +157,22 @@ describe("a bot's mind", () => {
     expect(x > 10 || z > 10 || x < 4 || z < 4).toBe(true);
     expect(bot.brain.metrics.stuckSeconds).toBeGreaterThanOrEqual(20);
   });
+
+  it('counts the values it lets fade as learnt: what is written after a quiet spell holds the faded values', () => {
+    // A known place far beyond its sight: standing still, it sees nothing new and only its values fade.
+    const yard = drawnMap(Array.from({ length: 60 }, () => 'a'.repeat(60)), { places: [place('xa', 'landmark', 55, 55)] });
+    let clock = 0;
+    const home = { x: 2, y: 1, z: 2 };
+    const brain = new Brain({ map: yard, home, persona: { sight: 8, walk: 3, curious: 0.5 }, quests: [], random: seeded(hashOf('fade-test')), now: () => clock, planner: new LocalPlanner(), requestPlan: (run) => run(), events: { doing: () => {}, gesture: () => {}, news: () => {} } });
+    const known = brain.snapshot();
+    brain.restore({ ...known, graph: { ...known.graph, places: [{ id: 'xa', firstSeenAt: 0, visits: 3, q: 0.5, lastReward: 0.5 }] } });
+    const view = { map: yard, at: home, home, sight: 8 };
+    clock = 1_000;
+    brain.sense(view, [], 1, false);
+    const revision = brain.revision;
+    clock = 121_000;
+    brain.sense(view, [], 1, false);
+    expect(brain.memory.places.get('xa')?.q).toBeLessThan(0.5);
+    expect(brain.revision).not.toBe(revision);
+  });
 });

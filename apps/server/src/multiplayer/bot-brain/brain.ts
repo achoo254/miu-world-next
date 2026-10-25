@@ -897,8 +897,15 @@ export class Brain implements GoalChooser {
     if (now >= this.nextHourAt) this.markHour(now);
     if (now - this.lastFadeAt >= 60_000) {
       const hours = (now - this.lastFadeAt) / 3_600_000;
-      for (const place of this.memory.places.values()) place.q = faded(place.q, hours);
+      let changed = false;
+      for (const place of this.memory.places.values()) {
+        const q = faded(place.q, hours);
+        if (q !== place.q) changed = true;
+        place.q = q;
+      }
       this.lastFadeAt = now;
+      // Values that faded are learnt too: without a new revision the last write would keep the values before it.
+      if (changed) this.changes += 1;
     }
     if (walking && this.stalledS >= STALL_RESET_S) {
       this.resetDue = true;
