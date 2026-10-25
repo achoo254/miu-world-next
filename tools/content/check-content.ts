@@ -37,6 +37,7 @@ import { indexTopics, learningQuestIssues, readTopicFiles } from '../../apps/ser
 import { topicIssues } from '../../packages/schema/src/learning';
 import { checkLocales } from './check-locales';
 import { glossaryIssues } from './name-glossary';
+import { allEnglishGaps } from './english-gaps';
 import { checkBookOrGradeWording } from './no-book-or-grade-wording';
 import { modelSwatches } from './pet-swatches';
 import { questSpread } from './quest-spread';
@@ -752,6 +753,8 @@ async function main(): Promise<void> {
   const report = checkContent();
   // The web app's bilingual dictionaries: every Vietnamese line has its English twin.
   report.issues.push(...checkLocales());
+  // Every quest reads in English too: its title, summary, steps, support layers and feedback (pnpm content:english).
+  for (const [id, gaps] of allEnglishGaps()) report.issues.push(`quest ${id} lacks English: ${gaps.slice(0, 3).join('; ')}${gaps.length > 3 ? ` (+${gaps.length - 3} more)` : ''}`);
   // Every Vietnamese name the game shows (characters, places, things, clothes, decor, verbs, titles) has English.
   const names = glossaryIssues();
   for (const [group, list] of names.missing) {

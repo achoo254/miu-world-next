@@ -46,7 +46,15 @@ const FindObjectEn = z.strictObject({ ...enBase, prompt: Text, items: z.array(z.
 const ReadEn = z.strictObject({ ...enBase, text: Text.optional(), question: Text, choices: z.array(Text).min(2) });
 const RiddleEn = z.strictObject({ ...enBase, question: Text });
 /** Any challenge: its prompt, and the labels of its choices, items or elements when it shows them. */
-const ChallengeEn = z.strictObject({ ...enBase, prompt: Text, choices: z.array(Text).optional(), items: z.array(Text).optional(), elements: z.array(Text).optional() });
+const ChallengeEn = z.strictObject({
+  ...enBase,
+  prompt: Text,
+  choices: z.array(Text).optional(),
+  items: z.array(Text).optional(),
+  elements: z.array(Text).optional(),
+  /** A calendar step's question under the month page. */
+  question: Text.optional(),
+});
 /** A reward or a closing beat. */
 const BeatEn = z.strictObject({ ...enBase, text: Text });
 /** A boss: its name and what it says when the fight opens and when it is won. */
@@ -1081,7 +1089,10 @@ export function englishIssues(q: { steps: QuestStep[]; en?: QuestEn | undefined 
   for (const step of q.steps) {
     const at = `step ${step.id}`;
     const en = 'en' in step ? step.en : undefined;
-    if (complete && (!en || !en.title)) issues.push(`${at}: needs its English twin ("en") with a title`);
+    // Speaking practice (the child says Vietnamese aloud) and a printed worksheet stay Vietnamese: no `en` twin.
+    // Their titles read in English through the name glossary (content/i18n/names/quest.json).
+    const vietnameseOnly = step.kind === 'speak' || step.kind === 'worksheet';
+    if (complete && !vietnameseOnly && (!en || !en.title)) issues.push(`${at}: needs its English twin ("en") with a title`);
     if ('support' in step && complete && !step.support.en) issues.push(`${at}: needs its support layers in English (support.en)`);
     if ('support' in step && step.support.en && step.support.en.guide.length !== step.support.guide.length) issues.push(`${at}: support.en has ${step.support.en.guide.length} guide lines, the step ${step.support.guide.length}`);
     if ('feedback' in step && step.feedback) {
@@ -1118,6 +1129,8 @@ export function englishIssues(q: { steps: QuestStep[]; en?: QuestEn | undefined 
       case 'challenge': {
         const twin = step.en;
         if (!twin) break;
+        if (step.mechanic === 'calendar' && complete && !twin.question) issues.push(`${at}: en.question is missing`);
+        if (step.mechanic !== 'calendar' && twin.question !== undefined) issues.push(`${at}: en.question belongs to a calendar step only`);
         const own = step as { choices?: unknown[]; items?: unknown[]; elements?: unknown[] };
         for (const key of ['choices', 'items', 'elements'] as const) {
           // A logic step's elements default to none: an empty list needs no twin.
@@ -1176,7 +1189,8 @@ function questIssues(q: {
     if (seen.has(line)) issues.push(`feedback line "${line}" is used twice in the quest`);
     seen.add(line);
   }
-  // A step's English twin always mirrors it; side quests and stories ship with every line in both languages.
+  // A step's English twin always mirrors it; side quests and stories ship with every line in both languages
+  // (learning quests too: `pnpm content:check` asks for them through tools/content/english-gaps.ts).
   issues.push(...englishIssues(q, q.category !== 'main'));
   if (q.category === 'side') {
     // Played for fun: its own shape instead of the lesson rules (mechanics, wayfinding).

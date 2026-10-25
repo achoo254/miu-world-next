@@ -70,6 +70,24 @@ describe('varietyIssues', () => {
     ]);
   });
 
+  it('lets an English twin keep its own line of only numbers and signs, but not another quest’s', () => {
+    const sums = '26 + 3 = 29; 41 + 56 = 97';
+    const withSums = (id: string, tag: string) => {
+      const q = quest(id, tag);
+      if (q.status !== 'active') throw new Error('active');
+      const riddle = q.steps[2];
+      if (riddle?.kind !== 'riddle') throw new Error('riddle');
+      riddle.support.answer.explanation = sums;
+      riddle.support.en = { guide: [`Add the tens of ${id} first`], hint: `A hint for ${id} alone`, answer: { text: '2', explanation: sums } };
+      return q;
+    };
+    expect(varietyIssues([withSums('a', 'buổi sáng')])).toEqual([]);
+    expect(varietyIssues([withSums('a', 'buổi sáng'), withSums('b', 'buổi chiều')])).toEqual([
+      `quest b steps[2].support.answer.explanation repeats "${sums}" (already used by quest a steps[2].support.answer.explanation): write a new line`,
+      `quest b steps[2].support.en.answer.explanation repeats "${sums}" (already used by quest a steps[2].support.answer.explanation): write a new line`,
+    ]);
+  });
+
   it("lets a boss question's answer layer name its right choice, but not reuse another line", () => {
     const label = (n: number) => `Các bạn nhỏ chơi rồng rắn lên mây ${n}`;
     const bossOf = (tag: string, explanation: string) => ({

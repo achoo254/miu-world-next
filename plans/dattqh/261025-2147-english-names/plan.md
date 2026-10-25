@@ -23,6 +23,7 @@ Status: done (deployed 25/10/2026, build ea2af28d) · Tier L · Owner request 25
 | 4 | English quest text uses the new NPC names | M | done (3,072 lines; 44 lines holding Vietnamese sentences kept) |
 | 5 | Review, screens in English mode, release | S | done |
 | 6 | Quest and step titles without English (1,161, glossary group `quest`) | M | done |
+| 7 | Dialogue, prompts, support and feedback in English for the 93 quests that had none ([brief](english-text-brief.md)); `content:check` now asks every quest for its English (`pnpm content:english`); speak and worksheet steps stay Vietnamese; calendar steps get `en.question` | L | done |
 
 ## Translation style
 

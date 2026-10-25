@@ -1,5 +1,6 @@
 // Content must never feel repeated: no quest reuses another quest's lines (dialogue, prompts, support,
 // feedback, rewards…), and no two learning quests are built from the same sequence of mechanics.
+import path from 'node:path';
 import type { QuestDefinition } from '../../packages/schema/src/content';
 import { stepMechanic } from './mechanic-rules';
 
@@ -75,6 +76,17 @@ function nameTwinOf(where: string): string | null {
   return match ? `${match[1]}.${match[2]}` : null;
 }
 
+/**
+ * The Vietnamese line an English twin repeats on purpose when the line holds no word at all, only numbers and signs
+ * ("26 + 3 = 29; 41 + 56 = 97"): `…en.choices[1]` / `…en.answer.text` / `…en.right[0]` twin the same place without
+ * `en` (a choice's own `text` included).
+ */
+function numberTwinOf(where: string, text: string): string[] {
+  if (/\p{L}/u.test(text) || !where.includes('.en.')) return [];
+  const vi = where.replace('.en.', '.');
+  return [vi, `${vi}.text`];
+}
+
 export function varietyIssues(quests: readonly QuestDefinition[]): string[] {
   const issues: string[] = [];
   const firstUse = new Map<string, string>();
@@ -85,6 +97,7 @@ export function varietyIssues(quests: readonly QuestDefinition[]): string[] {
       const here = `quest ${quest.id} ${where}`;
       const first = firstUse.get(line);
       if (first !== undefined && first === nameTwinOf(here)) continue;
+      if (first !== undefined && numberTwinOf(here, text).includes(first)) continue;
       if (first) issues.push(`${here} repeats "${text}" (already used by ${first}): write a new line`);
       else firstUse.set(line, here);
     }
@@ -98,4 +111,15 @@ export function varietyIssues(quests: readonly QuestDefinition[]): string[] {
     else sequences.set(sequence, quest.id);
   }
   return issues;
+}
+
+// `pnpm content:variety [<quest id> …]`: the repeated lines (and look-alike quests), optionally only those of the
+// given quests, without the rest of content:check.
+if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(import.meta.filename)) {
+  const { readQuestDefinitions } = await import('../../apps/server/src/content/content-catalog');
+  const questDir = path.resolve(import.meta.dirname, '../../content/quests');
+  const ids = process.argv.slice(2);
+  const issues = varietyIssues(readQuestDefinitions(questDir)).filter((i) => ids.length === 0 || ids.some((id) => i.startsWith(`quest ${id} `)));
+  for (const issue of issues) console.log(issue);
+  console.log(`content:variety: ${issues.length} issue(s)`);
 }

@@ -3,6 +3,7 @@
 import { WEEKDAYS, daysInMonth, type QuestStepPublic } from '@miu/schema/content';
 import type { StepAnswer } from '@miu/schema/game';
 import { ChallengeFrame, type ChallengeContext } from '../challenge-frame';
+import { Bi } from '../../i18n/use-t';
 import './mechanics.css';
 import { isNumberOrNull, useDraftState } from '../../quest/step-draft';
 
@@ -35,7 +36,7 @@ export function CalendarChallenge({ step, context, onAnswer }: { step: CalendarS
   return (
     <ChallengeFrame context={context} prompt={context.say(step.prompt, step.en?.prompt)} onCheck={() => answer && onAnswer(answer)} canCheck={answer !== null}>
       <p className="challenge-question" data-id="calendar-question">
-        {context.fill(step.question)}
+        <Bi {...context.say(step.question, step.en?.question)} />
       </p>
       <table className="calendar" data-id="calendar">
         <caption>
