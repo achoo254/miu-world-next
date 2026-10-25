@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Gà Vàng Báo Giờ",
+        "title": "Meet Golden Rooster Time Announcer",
         "lines": [
-          "Cock-a-doodle-doo, right on time! I'm Gà Vàng Báo Giờ, and I crow with every chime of the tower.",
+          "Cock-a-doodle-doo, right on time! I'm Golden Rooster Time Announcer, and I crow with every chime of the tower.",
           "Here are five riddles about time and the calendar, {name}: answer before the bell rings!"
         ],
         "choices": [
@@ -94,7 +94,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Gà Vàng Báo Giờ asks: how many hours are there in a whole day?",
+            "prompt": "Golden Rooster Time Announcer asks: how many hours are there in a whole day?",
             "choices": [
               "60 hours",
               "24 hours",
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Gà Vàng Báo Giờ",
-        "bossName": "Gà Vàng Báo Giờ",
+        "title": "Battle of wits with Golden Rooster Time Announcer",
+        "bossName": "Golden Rooster Time Announcer",
         "introDialogue": "The second hand is ticking, and the first riddle chimes!",
         "winDialogue": "Bong bong, I lost right on the hour! {name} is so good at clocks and calendars."
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Gà Vàng Báo Giờ tặng {name} một chiếc đồng hồ cát nhỏ, mỗi lần lật là một ván đố mới.",
       "en": {
-        "title": "Gà Vàng Báo Giờ's gift",
-        "text": "Gà Vàng Báo Giờ gives {name} a little sand timer: every turn is a new round of riddles."
+        "title": "Golden Rooster Time Announcer's gift",
+        "text": "Golden Rooster Time Announcer gives {name} a little sand timer: every turn is a new round of riddles."
       }
     },
     {
@@ -393,7 +393,7 @@
       "trigger": "auto",
       "text": "Đủ ba trùm canh khu rồi, {name} lên tháp gặp Sâu Mọt Sách Khổng Lồ ở chặng cuối nhé.",
       "en": {
-        "title": "Goodbye, Gà Vàng Báo Giờ",
+        "title": "Goodbye, Golden Rooster Time Announcer",
         "text": "All three zone guardians met, {name}: climb the tower to meet the Giant Bookworm at the last stop."
       }
     }
@@ -407,7 +407,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Gà Vàng Báo Giờ",
-    "summary": "Gà Vàng Báo Giờ guards the lawn round the clock tower and asks {name} five riddles about hours, minutes and the calendar."
+    "title": "Zone guardian: Golden Rooster Time Announcer",
+    "summary": "Golden Rooster Time Announcer guards the lawn round the clock tower and asks {name} five riddles about hours, minutes and the calendar."
   }
 }

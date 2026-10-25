@@ -68,7 +68,7 @@
       ],
       "en": {
         "title": "One enormous sneeze",
-        "goTo": "Climb up to the calendar room in the tower, where Voi Bảo is sniffling",
+        "goTo": "Climb up to the calendar room in the tower, where Bảo Elephant is sniffling",
         "lines": [
           "Aaah... CHOOO! Oh no, {name}! My trunk just blew the library's whole stack of calendars away.",
           "The July page has lost a few squares, and the February page is full of holes too. I have a great memory, but I remember... a bit slowly.",
@@ -77,11 +77,11 @@
         "choices": [
           {
             "text": "I'll pick up the calendar pages now!",
-            "reply": "Voi Bảo waves her trunk: Hurry, before Gấu Trúc Khò uses them all as a blanket!"
+            "reply": "Bảo Elephant waves her trunk: Hurry, before Snoring Panda uses them all as a blanket!"
           },
           {
-            "text": "Have you got a cold, Voi Bảo?",
-            "reply": "Voi Bảo: No, a speck of dust flew up my trunk, that's all. Will you find the calendar pieces for me?"
+            "text": "Have you got a cold, Bảo Elephant?",
+            "reply": "Bảo Elephant: No, a speck of dust flew up my trunk, that's all. Will you find the calendar pieces for me?"
           }
         ]
       }
@@ -134,7 +134,7 @@
         "choices": [
           {
             "text": "Let me try tracing a column!",
-            "reply": "Voi Bảo: First, help me match up my friends' birthday cards."
+            "reply": "Bảo Elephant: First, help me match up my friends' birthday cards."
           }
         ]
       }
@@ -567,8 +567,8 @@
         }
       ],
       "en": {
-        "title": "Gấu Trúc Khò naps under a calendar",
-        "goTo": "Go out to the tower balcony, where Gấu Trúc Khò is sleeping soundly under the August page",
+        "title": "Snoring Panda naps under a calendar",
+        "goTo": "Go out to the tower balcony, where Snoring Panda is sleeping soundly under the August page",
         "lines": [
           "Zzz... zzz... August is so warm and cozy... just five more minutes...",
           "Khò, that's the calendar room's August page, not a blanket!",
@@ -577,11 +577,11 @@
         "choices": [
           {
             "text": "Quiz me, I'll answer them all!",
-            "reply": "Gấu Trúc Khò sits up, eyes still drooping: Okay, but ask quietly, please."
+            "reply": "Snoring Panda sits up, eyes still drooping: Okay, but ask quietly, please."
           },
           {
             "text": "I'll tuck you in with a real blanket, Khò",
-            "reply": "Gấu Trúc Khò grins: How kind! Then I'll quiz you right away to wake myself up."
+            "reply": "Snoring Panda grins: How kind! Then I'll quiz you right away to wake myself up."
           }
         ]
       }
@@ -1208,7 +1208,7 @@
       "text": "Voi Bảo treo đủ các tờ lịch lên tường, rồi lấy vòi gắn cho {name} huy hiệu \"Người giữ lịch tháp đồng hồ\". Lần này Voi Bảo nhớ quay mặt đi chỗ khác mới hắt xì.",
       "en": {
         "title": "Calendar keeper badge",
-        "text": "Voi Bảo hangs all the calendar pages back on the wall, then uses her trunk to pin the \"Clock Tower Calendar Keeper\" badge on {name}. This time she remembers to turn away before she sneezes."
+        "text": "Bảo Elephant hangs all the calendar pages back on the wall, then uses her trunk to pin the \"Clock Tower Calendar Keeper\" badge on {name}. This time she remembers to turn away before she sneezes."
       }
     },
     {
@@ -1219,7 +1219,7 @@
       "text": "Chó Đốm Boong chạy xuống từ gác chuông, thở hồng hộc: \"Cả tuần tới chưa ai trực đánh chuông cho tháp! Phải xem đồng hồ, xem lịch để lên lịch trực ngay thôi!\"",
       "en": {
         "title": "The tower bell is silent",
-        "text": "Chó Đốm Boong runs down from the bell loft, panting: \"Nobody's on duty to ring the tower bell all next week! We need to check the clock and the calendar and make a duty rota right now!\""
+        "text": "Boong the Spotted Dog runs down from the bell loft, panting: \"Nobody's on duty to ring the tower bell all next week! We need to check the clock and the calendar and make a duty rota right now!\""
       }
     }
   ],

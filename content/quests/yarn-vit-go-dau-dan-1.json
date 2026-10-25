@@ -66,10 +66,10 @@
       ],
       "en": {
         "title": "The wooden duck is missing",
-        "goTo": "Go to the fishpond, where Chó Lùa Vịt is running round the bank",
+        "goTo": "Go to the fishpond, where Duck-Herding Dog is running round the bank",
         "lines": [
           "Woof! {name}! Single file... oh, sorry, I’m all in a muddle. The wooden duck that leads my flock has vanished!",
-          "Ông Cụ Trông Vườn carved it for me back when I was learning to herd. He says ducks will follow a duck, but hardly ever a dog.",
+          "Old Garden Keeper carved it for me back when I was learning to herd. He says ducks will follow a duck, but hardly ever a dog.",
           "Last night the sky rumbled and I hid under the pond bridge, so I saw nothing. This morning its string had snapped and the ducks were swimming every which way, like dumplings in a pot."
         ],
         "choices": [
@@ -219,7 +219,7 @@
       },
       "en": {
         "title": "Last night's ditch log",
-        "goTo": "Go to the windmill and read Chú Đào Kênh Dẫn Nước’s ditch log",
+        "goTo": "Go to the windmill and read Canal-Digging Uncle’s ditch log",
         "text": "Chú Đào Kênh’s ditch log, the night of the storm:\nLotus Ditch: from the fishpond to the lotus marsh. Gate shut since the afternoon, the water still.\nWind Ditch: from the fishpond to the windmill. A bamboo net at its mouth stops anything floating.\nRice Ditch: from the fishpond out to the crop fields. Gate opened at ten at night to water the paddies; fast water, no net.",
         "question": "The wooden duck floats. Which ditch did it drift down last night?",
         "choices": [
@@ -308,8 +308,8 @@
       },
       "en": {
         "title": "Which one is Chó's duck?",
-        "goTo": "Follow the rice ditch to the crop fields, where Bác Nông Dân Thành has laid out four wooden ducks",
-        "prompt": "Bác Nông Dân Thành has fished four wooden ducks out of the paddy edge: «Well now, the rain swept away the village children’s toys too.» Chó remembers that Ông Cụ’s duck has a yellow beak, an upturned tail and three notches under its belly. Which one is Chó’s?",
+        "goTo": "Follow the rice ditch to the crop fields, where Uncle Thành the Farmer has laid out four wooden ducks",
+        "prompt": "Uncle Thành the Farmer has fished four wooden ducks out of the paddy edge: «Well now, the rain swept away the village children’s toys too.» Chó remembers that Ông Cụ’s duck has a yellow beak, an upturned tail and three notches under its belly. Which one is Chó’s?",
         "choices": [
           "Red beak, upturned tail, three notches",
           "Yellow beak, drooping tail, three notches",
@@ -355,7 +355,7 @@
             "consequence": "The three wooden ducks sunbathe in a row on the steps, as if waiting to be collected."
           },
           {
-            "text": "Ask Heo Kho Hàng to write them in the lost-property book",
+            "text": "Ask Warehouse Pig to write them in the lost-property book",
             "consequence": "Bác Thành laughs: «Heo labels even the broom. These ducks won’t get lost one step further.»"
           }
         ]
@@ -373,7 +373,7 @@
       "goal": 10,
       "en": {
         "title": "Ducks in the henhouse",
-        "goTo": "Go to the henhouse, where Vịt Mỏ Cam is quacking for her friends",
+        "goTo": "Go to the henhouse, where Orange-Beaked Duck is quacking for her friends",
         "prompt": "Quack quack! With no wooden duck to lead us, the whole flock wandered into the henhouse. {name}, please herd us back to the duck pen!"
       }
     },
@@ -385,7 +385,7 @@
       "text": "Vịt gỗ về lại ao cá, mười hai chú vịt thật lạch bạch nối đuôi phía sau. Chó Lùa Vịt đếm hai lượt, đủ cả, rồi nằm phịch xuống bờ ao thở phào.",
       "en": {
         "title": "The whole flock home",
-        "text": "The wooden duck is back on the fishpond, with twelve real ducks waddling in line behind it. Chó Lùa Vịt counts twice, finds them all, and flops down on the bank with a sigh of relief."
+        "text": "The wooden duck is back on the fishpond, with twelve real ducks waddling in line behind it. Duck-Herding Dog counts twice, finds them all, and flops down on the bank with a sigh of relief."
       }
     },
     {
@@ -396,7 +396,7 @@
       "text": "Tối đó Chó lau vịt gỗ và thấy một vết nứt dài dưới bụng. Thả xuống ao, nó cứ nghiêng hẳn sang một bên. «Chỉ ông bạn già của tớ, Ông Cụ Trông Vườn, mới biết chữa. Mai tớ viết thư cho ông!»",
       "en": {
         "title": "A crack underneath",
-        "text": "That evening Chó dries the wooden duck and finds a long crack under its belly. On the water it keeps leaning to one side. «Only my old friend Ông Cụ Trông Vườn knows how to mend it. Tomorrow I’ll write to him!»"
+        "text": "That evening Chó dries the wooden duck and finds a long crack under its belly. On the water it keeps leaning to one side. «Only my old friend Old Garden Keeper knows how to mend it. Tomorrow I’ll write to him!»"
       }
     }
   ],
@@ -410,7 +410,7 @@
     "items": {}
   },
   "en": {
-    "title": "Chó Lùa Vịt's story, chapter 1: The wooden duck goes astray",
-    "summary": "After a thunderstorm, the wooden duck that leads Chó Lùa Vịt’s flock has drifted away. {name} checks the line of ducks, reads Chú Đào Kênh Dẫn Nước’s ditch log, picks out the duck Ông Cụ Trông Vườn carved among four that Bác Nông Dân Thành fished out, and herds the stray ducks home from the henhouse."
+    "title": "Duck-Herding Dog's story, chapter 1: The wooden duck goes astray",
+    "summary": "After a thunderstorm, the wooden duck that leads Duck-Herding Dog’s flock has drifted away. {name} checks the line of ducks, reads Canal-Digging Uncle’s ditch log, picks out the duck Old Garden Keeper carved among four that Uncle Thành the Farmer fished out, and herds the stray ducks home from the henhouse."
   }
 }

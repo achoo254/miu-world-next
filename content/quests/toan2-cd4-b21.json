@@ -68,7 +68,7 @@
       ],
       "en": {
         "title": "All the gifts are locked!",
-        "goTo": "Go to the yard in front of the granary, where Cáo Mía is whistling under the harvest festival flag",
+        "goTo": "Go to the yard in front of the granary, where Sugarcane Fox is whistling under the harvest festival flag",
         "lines": [
           "Hello, hello! This year at the harvest festival I'm not hiding corn cobs, I'm hiding... presents! Three secret gift boxes, with real number locks.",
           "Hey now, those presents are the prizes for the whole farm! I've turned the lock ten times, and every time it goes \"click\" and stays shut.",
@@ -77,11 +77,11 @@
         "choices": [
           {
             "text": "I'll open every one of them!",
-            "reply": "Cáo Mía raises an eyebrow: Confident, aren't you! Then find the boxes first."
+            "reply": "Sugarcane Fox raises an eyebrow: Confident, aren't you! Then find the boxes first."
           },
           {
             "text": "Locks can sneeze?",
-            "reply": "Cáo Mía rolls about laughing: My locks have feelings, you know!"
+            "reply": "Sugarcane Fox rolls about laughing: My locks have feelings, you know!"
           }
         ]
       }
@@ -424,7 +424,7 @@
       "goTo": "Chạy tới lối đá qua vườn cây, Nai Lộc đang lên dây cót cho chú nai gỗ",
       "en": {
         "title": "The wooden deer is wound up",
-        "goTo": "Run to the stepping-stone path through the orchard, where Nai Lộc is winding up a wooden deer",
+        "goTo": "Run to the stepping-stone path through the orchard, where Blessing Deer is winding up a wooden deer",
         "lines": [
           "The yellow box held a wind-up wooden deer! It dares me to a contest of leaps over the stepping stones in the orchard, marked 5, 10, 15... up to 50.",
           "Each stone is worth 5 points. I bet {name} cannot guess the score of the second leap!",
@@ -433,11 +433,11 @@
         "choices": [
           {
             "text": "Count one stone at a time",
-            "reply": "Nai Lộc: Slow and steady, like me picking my way along the paddy edges."
+            "reply": "Blessing Deer: Slow and steady, like me picking my way along the paddy edges."
           },
           {
             "text": "Count on 5 with each step",
-            "reply": "Cáo Mía: Hmm, hopping ahead fast, but don't count too far!"
+            "reply": "Sugarcane Fox: Hmm, hopping ahead fast, but don't count too far!"
           }
         ]
       }
@@ -840,7 +840,7 @@
       "text": "Ba hộp quà đều mở tung! Bác thợ Tùng trao cho {name} chiếc cúp gỗ \"Thợ mở khoá số\", còn Cáo Mía phải hứa từ nay chỉ khoá quà bằng nơ.",
       "en": {
         "title": "The locksmith's trophy",
-        "text": "All three gift boxes pop open! Uncle Tùng gives {name} the wooden \"Number Lock Master\" trophy, and Cáo Mía has to promise that from now on he'll only tie presents shut with ribbons."
+        "text": "All three gift boxes pop open! Uncle Tùng gives {name} the wooden \"Number Lock Master\" trophy, and Sugarcane Fox has to promise that from now on he'll only tie presents shut with ribbons."
       }
     },
     {
@@ -851,7 +851,7 @@
       "text": "Giữa ruộng ngô, Koala Lơ Mơ ngáp một cái thật dài: \"Tớ bẻ được nhiều bắp ngô quá, muốn tặng bớt cho các em nhỏ quanh vùng… mà tặng bớt thì còn lại bao nhiêu nhỉ? Zzz…\"",
       "en": {
         "title": "A cornfield full of cobs",
-        "text": "In the middle of the cornfield, Koala Lơ Mơ gives a long, long yawn: \"I picked so many corn cobs, I want to give some to the little ones around here... but if I give some away, how many will I have left? Zzz...\""
+        "text": "In the middle of the cornfield, Dreamy Koala gives a long, long yawn: \"I picked so many corn cobs, I want to give some to the little ones around here... but if I give some away, how many will I have left? Zzz...\""
       }
     }
   ],

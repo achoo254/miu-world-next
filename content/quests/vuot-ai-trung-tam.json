@@ -49,7 +49,7 @@
       ],
       "en": {
         "title": "Hot news from Bồ Câu",
-        "goTo": "Go to the trading-area gate, Bồ Câu Đưa Tin is waiting",
+        "goTo": "Go to the trading-area gate, Messenger Dove is waiting",
         "lines": [
           "Coo coo, hot news! The Magician Fox just set up a stage in the middle of the trading area; whoever wins the talent quiz gets to open the Fox's prop chest.",
           "Only, the Fox is very forgetful, and the show props are scattered all along the second-hand stalls. Without all of them, the Fox won't perform."
@@ -265,7 +265,7 @@
             },
             "en": {
               "guide": [
-                "Cáo conjures a red «quả táo»; find the English word for this fruit.",
+                "Fox conjures a red «quả táo»; find the English word for this fruit.",
                 "Rule out the word for a banana and the word for an orange first."
               ],
               "hint": "A banana and an orange are different fruits; the word you need starts with a.",
@@ -299,7 +299,7 @@
             },
             "en": {
               "guide": [
-                "The short hand on Cáo's clock tells the hour; see which number it points to.",
+                "The short hand on Fox's clock tells the hour; see which number it points to.",
                 "A long hand sitting right on 12 means an exact hour, with no minutes added."
               ],
               "hint": "For half past, the long hand would point to 6, not 12.",
@@ -467,7 +467,7 @@
       "text": "Cáo Ảo Thuật thu dọn sân khấu để đi diễn ở map khác. Mèo Đại Sứ mời {name} qua cổng dịch chuyển, kể cho bạn bè khắp nơi nghe chuyện vừa thắng Cáo.",
       "en": {
         "title": "The Magician Fox hits the road",
-        "text": "The Magician Fox packs up the stage to go and perform on another map. Mèo Đại Sứ invites {name} through the teleport gate to tell friends everywhere about beating the Fox."
+        "text": "The Magician Fox packs up the stage to go and perform on another map. Ambassador Cat invites {name} through the teleport gate to tell friends everywhere about beating the Fox."
       }
     }
   ],

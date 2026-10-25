@@ -51,7 +51,7 @@
       ],
       "en": {
         "title": "The bridge makes a strange noise",
-        "goTo": "Go to the stone bridge over the moat, where Bác Thợ Khóa Thành is tapping hello on every lock",
+        "goTo": "Go to the stone bridge over the moat, where Castle Locksmith Uncle is tapping hello on every lock",
         "lines": [
           "Click! Hello, {name}. This morning the bridge machine started creaking in threes, like someone knocking from inside.",
           "I need oil, a rag and a spare cog, but last night's wind blew my tools all the way to the grassy bank of the moat.",
@@ -92,7 +92,7 @@
       ],
       "en": {
         "title": "Gather the locksmith's tools",
-        "goTo": "Head to the grassy bank of the moat (Bãi cỏ ven hào) for the scattered tools",
+        "goTo": "Head to the grassy bank of the moat (Moat-Side Lawn) for the scattered tools",
         "prompt": "The night wind scattered the tools all over the grass. Read each description and find them:",
         "items": [
           { "name": "Pot of lock oil", "clue": "A small pot with a yellow lid that smells of toasted sesame; one drop and a lock stops complaining." },
@@ -158,7 +158,7 @@
       },
       "en": {
         "title": "The brass plate in the gear box",
-        "goTo": "Open the gear box at the first span of the bridge (Nhịp cầu đầu); a brass plate is fixed inside",
+        "goTo": "Open the gear box at the first span of the bridge (First Bridge Section); a brass plate is fixed inside",
         "text": "Bridge gear box. Made by Cụ Đồng in the year of the deepest snow.\nBig cog: 12 teeth. Small cog: 6 teeth.\nOil it once a week, not every day, or the oil sets into glue.\nWhen the machine creaks in threes, the hundredth hook is waiting for its key. That key is not forged in fire.",
         "question": "According to the plate, how often should the gear box be oiled?",
         "choices": ["Once a day", "Once a week", "Once a year"]
@@ -260,7 +260,7 @@
       ],
       "en": {
         "title": "My teacher's plate",
-        "goTo": "Take the plate back to the stone bridge over the moat (Cầu đá qua hào) to show Bác Thợ Khóa Thành",
+        "goTo": "Take the plate back to the stone bridge over the moat (Stone Bridge over the Moat) to show Castle Locksmith Uncle",
         "prompt": "He reads the last line with trembling hands: «That key is not forged in fire…». He asks {name} what to do with the plate.",
         "choices": [
           { "text": "Hang it in the workshop so you see it every day", "consequence": "He nods: «Yes, let it remind me my teacher is still setting me riddles.» The plate gleams on the workshop wall." },
@@ -281,7 +281,7 @@
       "goal": 3,
       "en": {
         "title": "Rebuild the bridge machine",
-        "goTo": "Go to the lifting machine at the bridgehead (Đầu cầu) and fit the cogs back in",
+        "goTo": "Go to the lifting machine at the bridgehead (Bridge End) and fit the cogs back in",
         "prompt": "Link the cogs from the crank to the chain drum so the stone bridge lifts without a sound!"
       }
     },
@@ -293,7 +293,7 @@
       "text": "Cầu đá nâng lên hạ xuống êm như ru, không còn một tiếng kẽo kẹt. Bác Thợ Khóa Thành gõ ba cái lên cỗ máy, rồi gõ ba cái lên vai {name}.",
       "en": {
         "title": "Smooth as a lullaby",
-        "text": "The stone bridge rises and falls as smooth as a lullaby, without a single creak. Bác Thợ Khóa Thành taps the machine three times, then taps {name}'s shoulder three times too."
+        "text": "The stone bridge rises and falls as smooth as a lullaby, without a single creak. Castle Locksmith Uncle taps the machine three times, then taps {name}'s shoulder three times too."
       }
     },
     {
@@ -314,7 +314,7 @@
     "skillXp": { "doc-hieu": 1, "logic": 1 }
   },
   "en": {
-    "title": "Bác Thợ Khóa Thành's story, chapter 1: The creaking stone bridge",
-    "summary": "The machine that lifts the stone bridge has started creaking in threes. {name} gathers tools for Bác Thợ Khóa Thành, reads his old teacher's brass plate, works out how the cogs turn and rebuilds the machine so the bridge runs smooth."
+    "title": "Castle Locksmith Uncle's story, chapter 1: The creaking stone bridge",
+    "summary": "The machine that lifts the stone bridge has started creaking in threes. {name} gathers tools for Castle Locksmith Uncle, reads his old teacher's brass plate, works out how the cogs turn and rebuilds the machine so the bridge runs smooth."
   }
 }

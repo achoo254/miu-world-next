@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "The voice is back",
-        "goTo": "Go to the green canopy, where Họa Mi Rừng Xanh is softly testing her voice",
+        "goTo": "Go to the green canopy, where Green Forest Songbird is softly testing her voice",
         "lines": [
           "Tra… la! Did you hear that, {name}? My voice is back, though it's still as tiny as a buzzing mosquito.",
           "Three days without singing taught me something: the forest's song doesn't need one big voice, it needs every voice ringing out together.",
@@ -111,7 +111,7 @@
       ],
       "en": {
         "title": "Sẻ Nhỏ has the jitters",
-        "goTo": "Sẻ Nhỏ Nốt Lặng is hiding on the low myrtle branch. Go and cheer her up",
+        "goTo": "Little Sparrow Rest Note is hiding on the low myrtle branch. Go and cheer her up",
         "lines": [
           "Cheep… Họa Mi wants me to sing the opening line. With such a crowd, I'm scared I'll open my beak and out comes a 'squawk'.",
           "And Gõ Kiến is in a muddle: the band is arguing about who stands where. Could you go to the pine stump and help?"
@@ -135,7 +135,7 @@
       "choices": [{ "text": "Bác đọc điều kiện cho cháu nghe đi ạ." }],
       "en": {
         "title": "The band is bickering",
-        "goTo": "Go over to the old pine stump to see Gõ Kiến Giữ Nhịp",
+        "goTo": "Go over to the old pine stump to see Beat-Keeping Woodpecker",
         "lines": [
           "Knock! Thank goodness you're here. Four friends stand in a row on the music branch, and each one has their own condition. I've written them all down.",
           "Place them one at a time: whoever's spot is certain goes first, the unsure ones go last. Rush it and there'll be a squabble!"
@@ -244,7 +244,7 @@
     "items": { "hoa-chuong-tim": 1 }
   },
   "en": {
-    "title": "Họa Mi Rừng Xanh's story, chapter 4: Concert under the canopy",
+    "title": "Green Forest Songbird's story, chapter 4: Concert under the canopy",
     "summary": "Họa Mi's voice is back, small but enough. {name} counts the audience seats, cheers up Sẻ Nhỏ, sorts out where the band stands, lights the firefly lanterns and helps Họa Mi choose her own place on the forest's concert night."
   }
 }

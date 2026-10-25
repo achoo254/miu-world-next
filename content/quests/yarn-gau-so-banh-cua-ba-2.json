@@ -51,14 +51,14 @@
         { "text": "Gấp thuyền giấy vui lắm, có gì sai đâu!", "reply": "Gấp thì không sai… gấp bằng trang sổ của bà mới chết chứ!" }
       ],
       "en": {
-        "title": "Gấu half remembers",
-        "goTo": "Gấu Bánh Ngọt is waiting in the front yard, hugging the book",
+        "title": "Bear half remembers",
+        "goTo": "Pastry Bear is waiting in the front yard, hugging the book",
         "lines": [
           "I lay awake all night thinking about that paper boat. As a cub I folded boats out of every scrap of paper I found.",
           "Surely not… no, can't be sure yet! {name}, find the wooden box at the pond first. I'll follow; my knees are a bit wobbly."
         ],
         "choices": [
-          { "text": "I'll be right beside you, Gấu.", "reply": "Okay. With you leading the way, my knees feel much steadier." },
+          { "text": "I'll be right beside you, Bear.", "reply": "Okay. With you leading the way, my knees feel much steadier." },
           { "text": "Folding paper boats is fun, nothing wrong with that!", "reply": "Folding isn't wrong… folding Grandma's recipe page would be!" }
         ]
       }
@@ -149,7 +149,7 @@
         "right": ["Trang giấy phẳng dần, từng nét chữ hiện lên như được tắm nắng.", "Nhẹ tay và kiên nhẫn, đúng kiểu {name} rồi!", "Giấy khô mà không rách một mép nào, Gấu thở phào."],
         "wrong": ["Ối, vắt kiểu ấy thì trang giấy rách làm đôi mất!", "Lửa với giấy là đôi bạn không nên ngồi gần nhau đâu {name}.", "Còn một cách đúng nữa chưa chọn, hoặc lỡ chọn thừa một cách rồi."],
         "en": {
-          "right": ["The page flattens bit by bit, every word surfacing as if it were sunbathing.", "Gentle hands and patience, that's so you, {name}!", "Dry without a single torn edge. Gấu lets out a big sigh of relief."],
+          "right": ["The page flattens bit by bit, every word surfacing as if it were sunbathing.", "Gentle hands and patience, that's so you, {name}!", "Dry without a single torn edge. Bear lets out a big sigh of relief."],
           "wrong": ["Yikes, wringing it like that would rip the page in two!", "Fire and paper are friends who shouldn't sit together, {name}.", "Either one right way is still unpicked, or an extra one crept in."]
         }
       },
@@ -189,7 +189,7 @@
         "right": ["Mật hoa vườn nhà! Gấu chép ngay vào sổ, chữ to tướng.", "{name} đọc ra đúng điều bà dặn từ bao năm trước.", "Thì ra thiếu vị nhà! Gấu biết phải làm gì rồi… hình như vậy."],
         "wrong": ["Bà có nhắc tới chợ, nhưng là để nói mật chợ thiếu gì đấy, {name}.", "Rừng sâu xa lắm, trang giấy chỉ nói tới khu vườn thôi.", "Đọc kỹ câu «Bước cuối» thêm một lần nữa nha."],
         "en": {
-          "right": ["Honey from our own garden! Gấu copies it into the book in huge letters.", "You found exactly what Grandma wrote all those years ago, {name}.", "So the missing flavour is home! Gấu knows what to do now… probably."],
+          "right": ["Honey from our own garden! Bear copies it into the book in huge letters.", "You found exactly what Grandma wrote all those years ago, {name}.", "So the missing flavour is home! Bear knows what to do now… probably."],
           "wrong": ["Grandma does mention the market, {name}, but only to say what its honey lacks.", "The deep forest is far away; the page only talks about the garden.", "Read the “Last step” sentence carefully one more time."]
         }
       },
@@ -216,12 +216,12 @@
       ],
       "en": {
         "title": "The bear cub in the corner",
-        "goTo": "Take the page out to Gấu in the front yard",
-        "prompt": "Gấu looks at the bear cub and turns bright red: “That drawing… I drew it. I folded this page into a boat!” And asking for honey means greeting the bees, which scare her most of all. What do you say to Gấu?",
+        "goTo": "Take the page out to Bear in the front yard",
+        "prompt": "Bear looks at the bear cub and turns bright red: “That drawing… I drew it. I folded this page into a boat!” And asking for honey means greeting the bees, which scare her most of all. What do you say to Bear?",
         "choices": [
-          { "text": "You were tiny back then, Grandma surely wasn't cross", "consequence": "Gấu sniffles: “Look, Grandma drew a smiley face next to my bear… Maybe she knew all along.”" },
-          { "text": "I'll go and greet the bees with you", "consequence": "Gấu squeezes {name}'s hand: “If we go together… I'll try. But you stand in front, just a little!”" },
-          { "text": "Ask Thỏ Làm Vườn where the hive is", "consequence": "Gấu nods: “Thỏ says the bees fly toward the windmill. We'll go early tomorrow, while they're still sleepy.”" }
+          { "text": "You were tiny back then, Grandma surely wasn't cross", "consequence": "Bear sniffles: “Look, Grandma drew a smiley face next to my bear… Maybe she knew all along.”" },
+          { "text": "I'll go and greet the bees with you", "consequence": "Bear squeezes {name}'s hand: “If we go together… I'll try. But you stand in front, just a little!”" },
+          { "text": "Ask Gardener Rabbit where the hive is", "consequence": "Bear nods: “Rabbit says the bees fly toward the windmill. We'll go early tomorrow, while they're still sleepy.”" }
         ]
       }
     },
@@ -233,7 +233,7 @@
       "text": "Gấu kẹp trang giấy vào lại cuốn sổ bìa xanh, dán băng dính thật cẩn thận, rồi tặng {name} một túi bánh quy hình thuyền.",
       "en": {
         "title": "The page comes home",
-        "text": "Gấu tucks the page back into the green notebook, tapes it in very carefully, and gives {name} a bag of boat-shaped biscuits."
+        "text": "Bear tucks the page back into the green notebook, tapes it in very carefully, and gives {name} a bag of boat-shaped biscuits."
       }
     },
     {
@@ -244,7 +244,7 @@
       "text": "Bước cuối cần mật hoa vườn nhà, mà muốn xin mật thì phải chào đàn ong. Gấu đã chuẩn bị… một cái nồi để đội lên đầu. {name} sẽ phải giúp Gấu nhiều đấy.",
       "en": {
         "title": "The hive past the garden",
-        "text": "The last step needs honey from the garden, and asking for honey means greeting the bees. Gấu has prepared… a pot to wear on her head. She'll need a lot of help, {name}."
+        "text": "The last step needs honey from the garden, and asking for honey means greeting the bees. Bear has prepared… a pot to wear on her head. She'll need a lot of help, {name}."
       }
     }
   ],
@@ -254,7 +254,7 @@
     "skillXp": { "logic": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Gấu Bánh Ngọt's story, chapter 2: The paper boat of long ago",
-    "summary": "Following Sẻ Nâu's tip, {name} searches the pier by the pond for the box of fished-out things, cracks the fish lock, dries the damp page and reads Grandma's last step. A drawing in the corner makes Gấu blush bright red."
+    "title": "Pastry Bear's story, chapter 2: The paper boat of long ago",
+    "summary": "Following Sẻ Nâu's tip, {name} searches the pier by the pond for the box of fished-out things, cracks the fish lock, dries the damp page and reads Grandma's last step. A drawing in the corner makes Bear blush bright red."
   }
 }

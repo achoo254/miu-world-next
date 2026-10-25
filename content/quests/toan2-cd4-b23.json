@@ -68,7 +68,7 @@
       ],
       "en": {
         "title": "Grrr! My plane is broken!",
-        "goTo": "Go to the grass by the windmill, where Hổ Gừ is growling beside a pile of paper planes",
+        "goTo": "Go to the grass by the windmill, where Growly Tiger is growling beside a pile of paper planes",
         "lines": [
           "Grrr! My paper plane flew 81 steps away, and then the headwind blew it back 26 steps. That is so... so...",
           "So what, Tiger? Why did you dive behind the haystack right after saying that?",
@@ -77,11 +77,11 @@
         "choices": [
           {
             "text": "Nobody's laughing, let's work it out together!",
-            "reply": "Hổ Gừ peeks out with a big grin: Really? Then... one little grrr, just to look tough."
+            "reply": "Growly Tiger peeks out with a big grin: Really? Then... one little grrr, just to look tough."
           },
           {
             "text": "Such a big roar, yet so shy!",
-            "reply": "Hổ Gừ blushes: Shh! That's my secret, don't tell Cáo Mía."
+            "reply": "Growly Tiger blushes: Shh! That's my secret, don't tell Sugarcane Fox."
           }
         ]
       }
@@ -124,8 +124,8 @@
       ],
       "goTo": "Ra hàng rào đo đường bay, Hươu Gió vươn cổ đón máy bay giấy giúp Hổ",
       "en": {
-        "title": "Hươu Gió shows how to take away",
-        "goTo": "Go to the fence where the flights are measured, where Hươu Gió is stretching her neck to catch paper planes for Tiger",
+        "title": "Breeze Giraffe shows how to take away",
+        "goTo": "Go to the fence where the flights are measured, where Breeze Giraffe is stretching her neck to catch paper planes for Tiger",
         "lines": [
           "Flew 81 steps away, came 26 steps back: we write 81 – 26. In the ones, 1 is smaller than 6, so borrow a ten: 11 – 6 = 5, write 5 and carry 1.",
           "Tens: add the carried 1 to the number being taken away, 2 + 1 = 3; then 8 – 3 = 5, write 5. So 81 – 26 = 55.",
@@ -134,7 +134,7 @@
         "choices": [
           {
             "text": "Borrow a ten, add the carry to the number taken away!",
-            "reply": "Hươu Gió stretches her neck up high: Brilliant! Now let's measure the flights."
+            "reply": "Breeze Giraffe stretches her neck up high: Brilliant! Now let's measure the flights."
           }
         ]
       }
@@ -970,7 +970,7 @@
       "goTo": "Quay lại bãi cỏ cạnh cối xay gió, Hổ Gừ diện đồ phi công rủ cậu thi đấu",
       "en": {
         "title": "Tiger wants a contest",
-        "goTo": "Go back to the grass by the windmill, where Hổ Gừ, dressed as a pilot, wants a contest with you",
+        "goTo": "Go back to the grass by the windmill, where Growly Tiger, dressed as a pilot, wants a contest with you",
         "lines": [
           "Grrr... I mean, {name}! I'm not scared any more. Let's split up the rest of the challenges and then race at the hedgehog-guiding game!",
           "Good idea. {name}, do you want to go slow and steady, or test your speed against Tiger?"
@@ -978,11 +978,11 @@
         "choices": [
           {
             "text": "Slow and steady, checking every problem",
-            "reply": "Hổ Gừ nods: Just like a professional plane measurer."
+            "reply": "Growly Tiger nods: Just like a professional plane measurer."
           },
           {
             "text": "Speed test, let's see who's faster!",
-            "reply": "Hổ Gừ rolls up his sleeves: Grrr! This time I won't hide."
+            "reply": "Growly Tiger rolls up his sleeves: Grrr! This time I won't hide."
           }
         ]
       }
@@ -1772,7 +1772,7 @@
       "text": "Hổ Gừ gỡ chiếc máy bay đẹp nhất tặng {name}, trên cánh có dòng chữ ngoằn ngoèo: \"Cảm ơn bạn đã không cười tớ\". Hươu Gió trao thêm huy hiệu \"Kĩ sư đường bay\".",
       "en": {
         "title": "Brave wings",
-        "text": "Hổ Gừ gives {name} his best paper plane, with wobbly writing on the wing: \"Thank you for not laughing at me\". Hươu Gió adds the \"Flight Path Engineer\" badge."
+        "text": "Growly Tiger gives {name} his best paper plane, with wobbly writing on the wing: \"Thank you for not laughing at me\". Breeze Giraffe adds the \"Flight Path Engineer\" badge."
       }
     },
     {
@@ -1783,7 +1783,7 @@
       "text": "Mèo Tam Thể vẫy gọi từ tủ kính ở hiên kho: \"Bác Sáu đẽo xong nhiều đồ chơi gỗ quá mà tủ kính thì đánh số ngăn lung tung, xếp sao cho đúng thứ tự đây?\"",
       "en": {
         "title": "The display case is still empty",
-        "text": "Mèo Tam Thể waves from the display case on the storehouse porch: \"Uncle Sáu has carved so many wooden toys, but the case's shelves are numbered all higgledy-piggledy. How do I put them in the right order?\""
+        "text": "Calico Cat waves from the display case on the storehouse porch: \"Uncle Sáu has carved so many wooden toys, but the case's shelves are numbered all higgledy-piggledy. How do I put them in the right order?\""
       }
     }
   ],

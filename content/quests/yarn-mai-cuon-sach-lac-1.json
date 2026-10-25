@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "The strange book",
-        "goTo": "Go to the help desk, where Cô Thủ Thư Mai is holding a strange book",
+        "goTo": "Go to the help desk, where Auntie Mai the Librarian is holding a strange book",
         "lines": [
           "Shh… hello, {name}. This morning the night-return box held a very odd book: the cover is worn blank and the spine is taped three times over.",
           "I've checked the records again and again, and no one has it on loan. All that came with it was a note folded in four, which I left at the returns counter."
@@ -237,7 +237,7 @@
       "en": {
         "title": "The old loan card",
         "goTo": "Take the loan register to the reading table and compare it with the old card",
-        "question": "The last line on the loan card says: «Mai, Skylark class». The book is exactly 30 years late. Cô Thủ Thư Mai is 38 this year. If that Mai is her, how old was she when she borrowed it?"
+        "question": "The last line on the loan card says: «Mai, Skylark class». The book is exactly 30 years late. Auntie Mai the Librarian is 38 this year. If that Mai is her, how old was she when she borrowed it?"
       }
     },
     {
@@ -267,7 +267,7 @@
       ],
       "en": {
         "title": "Where should it go?",
-        "goTo": "Go back to the help desk and tell Cô Thủ Thư Mai everything",
+        "goTo": "Go back to the help desk and tell Auntie Mai the Librarian everything",
         "prompt": "Cô Mai hugs the book: «Where should it go now, dear?»",
         "choices": [
           {
@@ -332,7 +332,7 @@
     "items": {}
   },
   "en": {
-    "title": "Cô Thủ Thư Mai's story, chapter 1: The late book",
-    "summary": "The night-return box holds a book worn blank, with an apology for bringing it back late. {name} reads the folded note, searches the stacks for the book's place, works out how old its borrower was long ago and helps Cô Thủ Thư Mai decide where it should go."
+    "title": "Auntie Mai the Librarian's story, chapter 1: The late book",
+    "summary": "The night-return box holds a book worn blank, with an apology for bringing it back late. {name} reads the folded note, searches the stacks for the book's place, works out how old its borrower was long ago and helps Auntie Mai the Librarian decide where it should go."
   }
 }

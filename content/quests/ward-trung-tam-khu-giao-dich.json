@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Heo Thu Ngân",
+        "title": "Meet Cashier Pig",
         "lines": [
-          "Ka-ching! Heo Thu Ngân here, my counter is the busiest on the trading street, {name}.",
+          "Ka-ching! Cashier Pig here, my counter is the busiest on the trading street, {name}.",
           "Today I'm treating customers to a four-riddle quiz. Whoever beats me gets a present!"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Heo Thu Ngân",
-        "bossName": "Heo Thu Ngân",
+        "title": "Battle of wits with Cashier Pig",
+        "bossName": "Cashier Pig",
         "introDialogue": "The cash drawer slides open, and the first riddle is inside!",
         "winDialogue": "Oink, you out-counted me! {name} adds faster than a till."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Heo Thu Ngân tặng {name} một con heo đất nhỏ xinh để để dành Xu, lúc nào rảnh ghé quầy đấu lại.",
       "en": {
-        "title": "Heo Thu Ngân's gift",
-        "text": "Heo Thu Ngân gives {name} a cute little piggy bank for saving coins. Drop by the counter to battle again."
+        "title": "Cashier Pig's gift",
+        "text": "Cashier Pig gives {name} a cute little piggy bank for saving coins. Drop by the counter to battle again."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ở khu sự kiện theo mùa, một trùm canh khu đang treo đèn lồng chờ {name}.",
       "en": {
-        "title": "Goodbye, Heo Thu Ngân",
+        "title": "Goodbye, Cashier Pig",
         "text": "At the seasonal events area a zone guardian is hanging up lanterns, waiting for {name}."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Heo Thu Ngân",
-    "summary": "Heo Thu Ngân guards the trading street and asks {name} four riddles about shop sums, comparing numbers and one English word."
+    "title": "Zone guardian: Cashier Pig",
+    "summary": "Cashier Pig guards the trading street and asks {name} four riddles about shop sums, comparing numbers and one English word."
   }
 }

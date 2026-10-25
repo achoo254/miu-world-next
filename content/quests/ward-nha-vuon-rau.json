@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Thỏ Bông Giữ Luống",
+        "title": "Meet Garden Bed Bunny",
         "lines": [
-          "Oh, {name} is home! I'm Thỏ Bông Giữ Luống, and I look after the vegetable garden for the whole family.",
+          "Oh, {name} is home! I'm Garden Bed Bunny, and I look after the vegetable garden for the whole family.",
           "I promise not to nibble the carrots, but I'm dying for some riddles. Four of them?"
         ],
         "choices": [
@@ -148,7 +148,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "The bed has 7 mustard plants and Thỏ plants 6 more. How many plants in all?",
+            "prompt": "The bed has 7 mustard plants and Rabbit plants 6 more. How many plants in all?",
             "choices": [
               "1",
               "12",
@@ -170,7 +170,7 @@
             },
             "en": {
               "guide": [
-                "Take the 7 mustard plants and add the 6 that Thỏ plants.",
+                "Take the 7 mustard plants and add the 6 that Rabbit plants.",
                 "Split 6 into 3 and 3 so that 7 plus 3 makes a ten."
               ],
               "hint": "7 + 3 = 10, and there are still 3 more mustard plants to add.",
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Thỏ Bông Giữ Luống",
-        "bossName": "Thỏ Bông Giữ Luống",
+        "title": "Battle of wits with Garden Bed Bunny",
+        "bossName": "Garden Bed Bunny",
         "introDialogue": "My ears are up, and the first riddle sprouts from the bed!",
         "winDialogue": "I give up! {name} is great at gardening and at riddles."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Thỏ Bông Giữ Luống tặng {name} một gói hạt giống cà rốt, gieo xuống là mọc ngay.",
       "en": {
-        "title": "Thỏ Bông Giữ Luống's gift",
-        "text": "Thỏ Bông Giữ Luống gives {name} a packet of carrot seeds: sow them and they sprout at once."
+        "title": "Garden Bed Bunny's gift",
+        "text": "Garden Bed Bunny gives {name} a packet of carrot seeds: sow them and they sprout at once."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ra cầu tàu bên ao đi {name}, có trùm canh khu đang ngồi câu cá chờ cậu.",
       "en": {
-        "title": "Goodbye, Thỏ Bông Giữ Luống",
+        "title": "Goodbye, Garden Bed Bunny",
         "text": "Go down to the jetty by the pond, {name}: a zone guardian is fishing there and waiting for you."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Thỏ Bông Giữ Luống",
-    "summary": "Thỏ Bông Giữ Luống guards the vegetable garden beside the house and asks {name} four riddles about vegetables, seedlings and Mum's reminder."
+    "title": "Zone guardian: Garden Bed Bunny",
+    "summary": "Garden Bed Bunny guards the vegetable garden beside the house and asks {name} four riddles about vegetables, seedlings and Mum's reminder."
   }
 }

@@ -425,12 +425,12 @@
             },
             "en": {
               "guide": [
-                "Think back to when the ship reached Đảo bí ẩn: who greeted {name} first at the pier?",
+                "Think back to when the ship reached Mystery Island: who greeted {name} first at the pier?",
                 "Recall who told the story of the treasure map blown away by the wind."
               ],
               "hint": "That character owns the treasure map and calls {name} «sailor».",
               "answer": {
-                "text": "Khỉ Thuyền Trưởng (the Monkey Captain)",
+                "text": "Captain Monkey",
                 "explanation": "The Monkey Captain met {name} at the pier and asked for help with the map; neither the sea turtle nor the baby dolphin sails that ship."
               }
             }

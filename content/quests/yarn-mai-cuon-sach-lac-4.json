@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "Cô Mai writes a book",
-        "goTo": "Go to the help desk, where Cô Thủ Thư Mai is hugging her blank notebook",
+        "goTo": "Go to the help desk, where Auntie Mai the Librarian is hugging her blank notebook",
         "lines": [
           "{name}, I've decided: I'm going to write a book! One about books that got lost and found their way home.",
           "I've put a slip box in the reading area, and any reader with a story can write it on a slip. Could you collect them for me?"
@@ -236,7 +236,7 @@
         ],
         "en": {
           "right": [
-            "Fourteen pages! Cụ Gấu taps his stick on the floor twice in praise.",
+            "Fourteen pages! Cụ Bear taps his stick on the floor twice in praise.",
             "{name} didn't forget the thank-you page, and the old bear is touched.",
             "Cover and thanks both counted. Spot on."
           ],
@@ -249,8 +249,8 @@
       },
       "en": {
         "title": "How many pages?",
-        "goTo": "Go up to the upstairs balcony and ask Cụ Gấu Kính Lão to read the draft",
-        "question": "Cụ Gấu Kính Lão leafs through the draft: «The book has 3 chapters of 4 pages each, plus 1 cover page and 1 page of thanks to the slow reader. Count for me: how many pages altogether?»"
+        "goTo": "Go up to the upstairs balcony and ask Grandpa Bear with Reading Glasses to read the draft",
+        "question": "Grandpa Bear with Reading Glasses leafs through the draft: «The book has 3 chapters of 4 pages each, plus 1 cover page and 1 page of thanks to the slow reader. Count for me: how many pages altogether?»"
       }
     },
     {
@@ -280,7 +280,7 @@
       ],
       "en": {
         "title": "Naming the book",
-        "goTo": "Go back to the help desk and help Cô Thủ Thư Mai name her book",
+        "goTo": "Go back to the help desk and help Auntie Mai the Librarian name her book",
         "prompt": "The draft is done; it just needs a title. Cô Mai asks {name}: what shall we call the book?",
         "choices": [
           {
@@ -289,7 +289,7 @@
           },
           {
             "text": "«To the Slow Reader»",
-            "consequence": "When Cụ Gấu Kính Lão hears it he keeps polishing his glasses, blaming the dust."
+            "consequence": "When Grandpa Bear with Reading Glasses hears it he keeps polishing his glasses, blaming the dust."
           },
           {
             "text": "«The Number 7 Bus»",
@@ -347,7 +347,7 @@
     }
   },
   "en": {
-    "title": "Cô Thủ Thư Mai's story, chapter 4: The books that went astray",
-    "summary": "Cô Thủ Thư Mai starts writing the first book of her life. {name} collects readers' story slips, picks the ones that fit, solves Cụ Gấu Kính Lão's page-counting riddle, names the book and puts the pictures in order."
+    "title": "Auntie Mai the Librarian's story, chapter 4: The books that went astray",
+    "summary": "Auntie Mai the Librarian starts writing the first book of her life. {name} collects readers' story slips, picks the ones that fit, solves Grandpa Bear with Reading Glasses's page-counting riddle, names the book and puts the pictures in order."
   }
 }

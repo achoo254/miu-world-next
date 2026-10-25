@@ -117,21 +117,21 @@
       ],
       "en": {
         "title": "The librarian opens the festival",
-        "goTo": "Go to the golden-leaf stage by the library door, Gấu Trúc Tròn is slowly climbing up",
+        "goTo": "Go to the golden-leaf stage by the library door, Round Panda is slowly climbing up",
         "lines": [
           "The golden-leaf festival… has begun. I'll speak slowly so you can all hear: whoever clears every stall gets to light the leaf lantern.",
           "A new friend keeps each stall, and each one brings a puzzle that reviews what you learned along the way. Get to know them slowly, nobody has to rush.",
-          "Hi {name}, I'm Gấu Bùi, keeper of the objects stall… but I dropped all the golden-leaf tickets along the way. Hee hee.",
-          "Without tickets, nobody can enter the stalls. {name}, please help Gấu Bùi pick them up, one at a time is plenty."
+          "Hi {name}, I'm Dusty Bear, keeper of the objects stall… but I dropped all the golden-leaf tickets along the way. Hee hee.",
+          "Without tickets, nobody can enter the stalls. {name}, please help Dusty Bear pick them up, one at a time is plenty."
         ],
         "choices": [
           {
-            "text": "I'll pick up the tickets, Gấu Bùi, you stay right here!",
-            "reply": "Gấu Bùi stands to attention… for exactly three seconds, then wanders off to look for the honey pot."
+            "text": "I'll pick up the tickets, Dusty Bear, you stay right here!",
+            "reply": "Dusty Bear stands to attention… for exactly three seconds, then wanders off to look for the honey pot."
           },
           {
             "text": "Which stall is the hardest, sir?",
-            "reply": "Gấu Trúc Tròn thinks for a very long time before answering: the last stall has an elephant that five people touch and argue over without ever finishing."
+            "reply": "Round Panda thinks for a very long time before answering: the last stall has an elephant that five people touch and argue over without ever finishing."
           }
         ]
       }
@@ -1138,11 +1138,11 @@
         "choices": [
           {
             "text": "Everyone adds one leaf and we light the lantern together!",
-            "reply": "The class goes quiet for a second, then everyone nods. Gấu Bùi adds the first leaf, and this time he doesn't drop it."
+            "reply": "The class goes quiet for a second, then everyone nods. Dusty Bear adds the first leaf, and this time he doesn't drop it."
           },
           {
             "text": "Hang the lantern in the middle of the yard where everyone can see it.",
-            "reply": "Khỉ Nhót scratches his ear: true, a lantern in the middle lights up the whole festival. I agree!"
+            "reply": "Plum Monkey scratches his ear: true, a lantern in the middle lights up the whole festival. I agree!"
           }
         ]
       }
@@ -1631,7 +1631,7 @@
       "text": "Cả lớp góp lá vàng vào chiếc đèn lá khổng lồ. Đèn bừng sáng giữa sân trước thư viện, bác Gấu Trúc Tròn chậm rãi xướng tên {name} thật to, còn Gấu Bùi ôm chặt chiếc huy hiệu lá vàng của mình, lần này nhất định không làm rơi.",
       "en": {
         "title": "Lighting the golden-leaf lantern",
-        "text": "The whole class adds golden leaves to the giant leaf lantern. It blazes into light in the yard before the library; Gấu Trúc Tròn slowly calls out {name} loud and clear, and Gấu Bùi hugs his golden-leaf badge tight, determined not to drop it this time."
+        "text": "The whole class adds golden leaves to the giant leaf lantern. It blazes into light in the yard before the library; Round Panda slowly calls out {name} loud and clear, and Dusty Bear hugs his golden-leaf badge tight, determined not to drop it this time."
       }
     },
     {
@@ -1642,7 +1642,7 @@
       "text": "Lễ hội vừa tan, bác Gấu Trúc Tròn đọc chậm lá thư mới gửi tới: ở Khu rừng bí mật, đồng cỏ khô giòn như bánh đa, và có một bài thơ về tiếng gọi vọng bên suối đang chờ người đến đọc.",
       "en": {
         "title": "A call across the dry meadow",
-        "text": "As the festival ends, Gấu Trúc Tròn slowly reads a new letter: in the Secret Forest the meadow is dry and crunchy as a rice cracker, and a poem about a call echoing by the stream is waiting for someone to read it."
+        "text": "As the festival ends, Round Panda slowly reads a new letter: in the Secret Forest the meadow is dry and crunchy as a rice cracker, and a poem about a call echoing by the stream is waiting for someone to read it."
       }
     }
   ],

@@ -65,9 +65,9 @@
       ],
       "en": {
         "title": "A big order",
-        "goTo": "Go to the lane well, where Mèo Trà Đá is wiping the counter by the well wall",
+        "goTo": "Go to the lane well, where Iced Tea Cat is wiping the counter by the well wall",
         "lines": [
-          "Honoured guest {name}! The hottest news this morning: the whole lane is meeting in the warm cave, and they've ordered Mèo's tea! Meow meow!",
+          "Honoured guest {name}! The hottest news this morning: the whole lane is meeting in the warm cave, and they've ordered Cat's tea! Meow meow!",
           "Thirty litres of iced tea all at once. But I lent my measuring things to the neighbours yesterday, and now they're scattered by the starfruit tree at the head of the lane."
         ],
         "choices": [
@@ -111,7 +111,7 @@
       "skill": "doc-hieu",
       "en": {
         "title": "Can, jug and mug",
-        "goTo": "Go to the starfruit tree at the head of the lane and find Mèo’s three measuring things",
+        "goTo": "Go to the starfruit tree at the head of the lane and find Cat’s three measuring things",
         "prompt": "The neighbours returned everything but left it mixed up under the starfruit tree. Read the descriptions and find the right three:",
         "items": [
           {
@@ -176,8 +176,8 @@
         "en": {
           "right": [
             "Seven litres! Meow meow, you count faster than I pour, honoured guest.",
-            "A tidy subtraction, {name}; Mèo writes a 7 in the corner of the board.",
-            "Just seven litres to go: one five-litre can and one two-litre jug will do it; Mèo is off to brew them."
+            "A tidy subtraction, {name}; Cat writes a 7 in the corner of the board.",
+            "Just seven litres to go: one five-litre can and one two-litre jug will do it; Cat is off to brew them."
           ],
           "wrong": [
             "Remember to add what was in the jar to what was just poured before you subtract.",
@@ -188,8 +188,8 @@
       },
       "en": {
         "title": "How many litres short?",
-        "goTo": "Go to the porch, where Mèo pinned the tea order on a post",
-        "question": "The order says 30 litres of iced tea. Mèo’s clay jar already holds 15 litres, and she has just poured in 8 more. How many more litres must be made to complete the order?"
+        "goTo": "Go to the porch, where Cat pinned the tea order on a post",
+        "question": "The order says 30 litres of iced tea. Cat’s clay jar already holds 15 litres, and she has just poured in 8 more. How many more litres must be made to complete the order?"
       }
     },
     {
@@ -265,8 +265,8 @@
         ],
         "en": {
           "right": [
-            "All three ways! Mèo claps with a crisp little meow.",
-            "You measure in your head faster than Mèo measures by hand, {name}.",
+            "All three ways! Cat claps with a crisp little meow.",
+            "You measure in your head faster than Cat measures by hand, {name}.",
             "All three make four litres; the neighbours can pick any of them."
           ],
           "wrong": [
@@ -278,7 +278,7 @@
       },
       "en": {
         "title": "Measuring four litres",
-        "goTo": "Go to the bamboo daybed, where Mèo set out the tray of mugs and jugs",
+        "goTo": "Go to the bamboo daybed, where Cat set out the tray of mugs and jugs",
         "prompt": "The neighbours want 4 more litres to take home. The daybed has only a 1-litre mug and a 2-litre jug. Pick every way that measures exactly 4 litres:",
         "choices": [
           "Fill the 2-litre jug twice",
@@ -316,20 +316,20 @@
       ],
       "en": {
         "title": "Which flavour?",
-        "goTo": "Go out to the rock at the cave mouth, where Mèo left three jars of tea flavours in the breeze",
-        "prompt": "Mèo opens each jar for {name} to sniff: \"Thirty litres for the gathering. Which flavour, honoured guest? Meow, it’s so hard to choose!\"",
+        "goTo": "Go out to the rock at the cave mouth, where Cat left three jars of tea flavours in the breeze",
+        "prompt": "Cat opens each jar for {name} to sniff: \"Thirty litres for the gathering. Which flavour, honoured guest? Meow, it’s so hard to choose!\"",
         "choices": [
           {
             "text": "Pandan, green and gently fragrant",
-            "consequence": "The scent of pandan drifts all through the cave mouth. Mèo says the old folk of the lane love it best."
+            "consequence": "The scent of pandan drifts all through the cave mouth. Cat says the old folk of the lane love it best."
           },
           {
             "text": "Lemon and lemongrass, cool and refreshing",
-            "consequence": "Mèo drops lemon slices and crushed lemongrass into the jug. One sip and your eyes sparkle."
+            "consequence": "Cat drops lemon slices and crushed lemongrass into the jug. One sip and your eyes sparkle."
           },
           {
             "text": "Jasmine, sweet and light as a summer evening",
-            "consequence": "Mèo scatters a pinch of dried jasmine. The tea turns pale gold and smells like a freshly watered garden."
+            "consequence": "Cat scatters a pinch of dried jasmine. The tea turns pale gold and smells like a freshly watered garden."
           }
         ]
       }
@@ -356,7 +356,7 @@
       "text": "Ba mươi lít trà đá xếp hàng trong hang đá ấm, cốc nào cũng mát rượi. Mèo cười meo meo, dúi cho {name} một nắm xu lẻ trong túi tạp dề.",
       "en": {
         "title": "Thirty litres, done",
-        "text": "Thirty litres of iced tea stand in a row in the warm cave, every glass ice-cold. Mèo laughs meow meow and presses a handful of coins from her apron into {name}’s hand."
+        "text": "Thirty litres of iced tea stand in a row in the warm cave, every glass ice-cold. Cat laughs meow meow and presses a handful of coins from her apron into {name}’s hand."
       }
     },
     {
@@ -367,7 +367,7 @@
       "text": "Khách khen trà ngon quá nên Mèo định sáng mai mở thêm một quán tạm ngay trong ngõ. Sáng sớm thì đông khách lắm, Mèo cần {name} phụ một tay.",
       "en": {
         "title": "A pop-up stall in the lane",
-        "text": "The guests loved the tea, so tomorrow morning Mèo will open a pop-up stall right in the lane. Mornings are busy, and Mèo needs {name}’s help."
+        "text": "The guests loved the tea, so tomorrow morning Cat will open a pop-up stall right in the lane. Mornings are busy, and Cat needs {name}’s help."
       }
     }
   ],
@@ -380,7 +380,7 @@
     }
   },
   "en": {
-    "title": "Mèo Trà Đá's story, chapter 1: The thirty-litre order",
-    "summary": "Mèo Trà Đá has an order for thirty litres of tea for a gathering in the warm cave. {name} finds the can, jug and mug, works out how many litres are missing, picks the ways to measure the rest and helps Mèo choose a flavour."
+    "title": "Iced Tea Cat's story, chapter 1: The thirty-litre order",
+    "summary": "Iced Tea Cat has an order for thirty litres of tea for a gathering in the warm cave. {name} finds the can, jug and mug, works out how many litres are missing, picks the ways to measure the rest and helps Cat choose a flavour."
   }
 }

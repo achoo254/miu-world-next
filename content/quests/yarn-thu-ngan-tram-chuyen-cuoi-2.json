@@ -72,7 +72,7 @@
         "goTo": "Go back to the cashier's counter, where he is scratching his head at the scale",
         "lines": [
           "Ho ho… my laugh is a bit wonky today. {name}, my scale is reading completely wrong!",
-          "Voi Bốc Hàng put a sack of rice on it, and the scale said it weighed as much as… a cat. Voi laughed; I didn't.",
+          "Porter Elephant put a sack of rice on it, and the scale said it weighed as much as… a cat. Voi laughed; I didn't.",
           "I counted the box of weights and three are missing. They must have rolled down to the wharf while the boat was being unloaded."
         ],
         "choices": [
@@ -318,7 +318,7 @@
             "consequence": "He sticks a reminder on the scale: «Needle at 0, customers happy». He says it is his most serious joke."
           },
           {
-            "text": "Ask Voi Bốc Hàng to level the scale's feet",
+            "text": "Ask Porter Elephant to level the scale's feet",
             "consequence": "Voi lifts the whole scale as lightly as a bunch of greens and slips a flat brick under it. Steady scale, steady needle."
           }
         ]
@@ -370,7 +370,7 @@
     }
   },
   "en": {
-    "title": "Bác Thu Ngân Vui Vẻ's story, chapter 2: The weights in hiding",
+    "title": "Cheerful Cashier Uncle's story, chapter 2: The weights in hiding",
     "summary": "The weighing row's scale reads wrong because three weights are missing. {name} finds them at the wharf, works out how heavy a rice sack is, orders the loads from lightest to heaviest and helps mend the scale."
   }
 }

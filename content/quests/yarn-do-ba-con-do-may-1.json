@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "A leaking boat",
-        "goTo": "Head to the grassy riverbank, where Chú Lái Đò Ba is bailing water out of his boat",
+        "goTo": "Head to the grassy riverbank, where Uncle Ba the Ferryman is bailing water out of his boat",
         "lines": [
           "Now then, little one, this morning I knocked three times to greet the river and then saw water seeping into the Cloud Ferry, drip, drip, like someone counting seconds.",
           "In thirty years she's never let me down. If I can't patch her in time, this evening the whole village will stand on the far bank calling 'ferry!' for nothing.",
@@ -77,7 +77,7 @@
       ],
       "en": {
         "title": "Ask the bee-keeper",
-        "goTo": "Go to the flower garden with the beehives and ask Bà Nuôi Ong how to seal the boat",
+        "goTo": "Go to the flower garden with the beehives and ask Grandma the Beekeeper how to seal the boat",
         "lines": [
           "My bees just flew back to tell me a youngster was racing about. Is the Cloud Ferry leaking again, dear? Oh, that's nothing, nothing at all.",
           "You need three things: a cake of beeswax to seal it, a handful of coconut fibre to stuff the crack, and a thin board to cover it outside. I left all three by the reeds; read how I describe them and you'll find them."
@@ -102,7 +102,7 @@
       "en": {
         "title": "Gather the patching things",
         "goTo": "Go to the reed bed by the river for the beeswax, coconut fibre and board",
-        "prompt": "Bà Nuôi Ong described three things she left by the reeds. Read her descriptions and find each one:",
+        "prompt": "Grandma the Beekeeper described three things she left by the reeds. Read her descriptions and find each one:",
         "items": [
           { "name": "Cake of beeswax", "clue": "Golden as honey, a bit sticky to touch, and it smells of longan blossom." },
           { "name": "Handful of coconut fibre", "clue": "Brown and bristly like an old man's beard; it pulls apart into tough strands." },
@@ -170,7 +170,7 @@
         "goTo": "Go back to the grassy riverbank and tell Uncle Ba the boat is patched",
         "prompt": "The Cloud Ferry floats smoothly on the water. 'Who rides the very first test crossing, little one?'",
         "choices": [
-          { "text": "Invite Bà Nuôi Ong, who knew how to fix it", "consequence": "Bà Nuôi Ong sits at the bow hugging a jar of honey. Midstream she chuckles: 'A ride this smooth? I'll go and sell my honey at the market over there!'" },
+          { "text": "Invite Grandma the Beekeeper, who knew how to fix it", "consequence": "Grandma the Beekeeper sits at the bow hugging a jar of honey. Midstream she chuckles: 'A ride this smooth? I'll go and sell my honey at the market over there!'" },
           { "text": "Just the two of us", "consequence": "Uncle Ba hands {name} an oar. The boat makes a loop round the landing, the water as calm as a pond." },
           { "text": "Carry a sack of rice for the family across", "consequence": "Uncle Ba nods: 'A real load is the real test.' The rice reaches the far bank perfectly dry, and the people there clap and cheer." }
         ]
@@ -200,7 +200,7 @@
     "items": { "vay-ca-bac": 1 }
   },
   "en": {
-    "title": "Chú Lái Đò Ba's story, chapter 1: The Cloud Ferry springs a leak",
-    "summary": "Uncle Ba's boat, the Cloud Ferry, is leaking. {name} asks Bà Nuôi Ong how to seal it, gathers beeswax, coconut fibre and a patching board, puts the repair steps in order with Uncle Ba and picks who rides the first test crossing."
+    "title": "Uncle Ba the Ferryman's story, chapter 1: The Cloud Ferry springs a leak",
+    "summary": "Uncle Ba's boat, the Cloud Ferry, is leaking. {name} asks Grandma the Beekeeper how to seal it, gathers beeswax, coconut fibre and a patching board, puts the repair steps in order with Uncle Ba and picks who rides the first test crossing."
   }
 }

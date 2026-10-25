@@ -82,14 +82,14 @@
         }
       ],
       "en": {
-        "title": "Thỏ Vội in a flap in the corridor",
-        "goTo": "Go up to the second floor, Thỏ Vội is in a flap on the corridor bench",
+        "title": "Hurry Bunny in a flap in the corridor",
+        "goTo": "Go up to the second floor, Hurry Bunny is in a flap on the corridor bench",
         "lines": [
           "{name}, help! I zoomed up the stairs so fast my bag strap slipped, and my ruler and scissors went flying who knows where!",
           "And why is there only this carrot in my bag? We don't have Carrot-Eating class today…",
           "Yesterday you brought a pillow because you thought we had Nap class! The whole Sparrow class laughed until home time.",
           "That's because I pack my bag from memory, and my memory runs even faster than my legs. It's Thursday, what lessons do we have?",
-          "The timetable is pinned on the board right there in the corridor. Pick up your things first, then ask Gấu Bắp at the duty desk, he keeps the whole school's schedule."
+          "The timetable is pinned on the board right there in the corridor. Pick up your things first, then ask Corn Bear at the duty desk, he keeps the whole school's schedule."
         ],
         "choices": [
           {
@@ -898,11 +898,11 @@
         }
       ],
       "en": {
-        "title": "Thỏ Vội's promise",
-        "goTo": "Go to the duty desk, Gấu Bắp has his notebook open, waiting for Thỏ Vội's promise",
+        "title": "Hurry Bunny's promise",
+        "goTo": "Go to the duty desk, Corn Bear has his notebook open, waiting for Hurry Bunny's promise",
         "lines": [
-          "Thỏ Vội, from tomorrow, what will you do so you stop bringing pillows and carrots to school?",
-          "I was going to write it in a notebook like Gấu Bắp… but I ran so fast the notebook fell out, and all I've got left is the pen!",
+          "Hurry Bunny, from tomorrow, what will you do so you stop bringing pillows and carrots to school?",
+          "I was going to write it in a notebook like Corn Bear… but I ran so fast the notebook fell out, and all I've got left is the pen!",
           "{name}, give me a really easy way to remember, and I promise I'll do it!"
         ],
         "choices": [
@@ -1074,8 +1074,8 @@
       "trigger": "auto",
       "text": "Thỏ Vội tặng {name} một chiếc kẹp gỗ hình cà rốt để kẹp thời khoá biểu vào góc học tập, kèm củ cà rốt “dự phòng”. Gấu Bắp đóng lên đó con dấu hình bắp ngô, còn Cua Kéo cắt tặng thêm một cái nhãn tên.",
       "en": {
-        "title": "Thỏ Vội's carrot-shaped clip",
-        "text": "Thỏ Vội gives {name} a wooden carrot-shaped clip for pinning the timetable by the study corner, plus a “spare” carrot. Gấu Bắp stamps it with a corn-cob stamp, and Cua Kéo snips a name label to go with it."
+        "title": "Hurry Bunny's carrot-shaped clip",
+        "text": "Hurry Bunny gives {name} a wooden carrot-shaped clip for pinning the timetable by the study corner, plus a “spare” carrot. Corn Bear stamps it with a corn-cob stamp, and Scissors Crab snips a name label to go with it."
       }
     },
     {
@@ -1086,7 +1086,7 @@
       "text": "Từ chòi trống giữa sân trường vọng lên tiếng Chó Lu gọi í ới: “Dậy đi trống ơi, hết hè rồi!”. Chiếc trống trường ngủ say suốt mùa hè, liệu hôm nay có chịu cất tiếng không?",
       "en": {
         "title": "A call to the drum in the yard",
-        "text": "From the drum hut in the middle of the schoolyard, Chó Lu is calling out: “Wake up, drum, summer's over!” The school drum slept soundly all summer. Will it make a sound today?"
+        "text": "From the drum hut in the middle of the schoolyard, Lu Dog is calling out: “Wake up, drum, summer's over!” The school drum slept soundly all summer. Will it make a sound today?"
       }
     }
   ],

@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Cáo Bạc Hồ Băng",
+        "title": "Meet Silver Fox of Ice Lake",
         "lines": [
-          "Hello {name}! I'm Cáo Bạc Hồ Băng, and my silver fur sparkles like the frozen lake.",
+          "Hello {name}! I'm Silver Fox of Ice Lake, and my silver fur sparkles like the frozen lake.",
           "The ice is still thin, so I'll stay on the shore and ask you just four riddles."
         ],
         "choices": [
@@ -94,7 +94,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "The lake wind blows and Cáo says «It's cold!». What is «cold» in Vietnamese?",
+            "prompt": "The lake wind blows and Fox says «It's cold!». What is «cold» in Vietnamese?",
             "choices": [
               "ấm",
               "lạnh",
@@ -119,7 +119,7 @@
                 "Think how people feel when the wind blows across the frozen lake.",
                 "Rule out the two words for how you feel in sunshine or next to a fire."
               ],
-              "hint": "Cáo says «It's cold!» as the biting wind blows; it is the opposite of «hot».",
+              "hint": "Fox says «It's cold!» as the biting wind blows; it is the opposite of «hot».",
               "answer": {
                 "text": "lạnh",
                 "explanation": "«Cold» means «lạnh», just how the lake wind feels; «nóng» is hot and «ấm» is warm."
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Cáo Bạc Hồ Băng",
-        "bossName": "Cáo Bạc Hồ Băng",
+        "title": "Battle of wits with Silver Fox of Ice Lake",
+        "bossName": "Silver Fox of Ice Lake",
         "introDialogue": "The ice crackles, and the first riddle pops up!",
         "winDialogue": "I tuck my tail and give up! {name} is clever and careful, a true friend of the frozen lake."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Cáo Bạc Hồ Băng tặng {name} một viên đá băng không bao giờ tan, nằm trong chiếc lọ thủy tinh.",
       "en": {
-        "title": "Cáo Bạc Hồ Băng's gift",
-        "text": "Cáo Bạc Hồ Băng gives {name} an ice crystal that never melts, inside a little glass jar."
+        "title": "Silver Fox of Ice Lake's gift",
+        "text": "Silver Fox of Ice Lake gives {name} an ice crystal that never melts, inside a little glass jar."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Sang cửa hang băng đi {name}, trùm canh khu mạnh nhất núi đang chờ ở trạm thám hiểm.",
       "en": {
-        "title": "Goodbye, Cáo Bạc Hồ Băng",
+        "title": "Goodbye, Silver Fox of Ice Lake",
         "text": "Go to the ice cave entrance, {name}: the mountain's strongest zone guardian waits at the explorers' station."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Cáo Bạc Hồ Băng",
-    "summary": "Cáo Bạc Hồ Băng guards the frozen lake shore and asks {name} four riddles about ice, numbers and safety signs."
+    "title": "Zone guardian: Silver Fox of Ice Lake",
+    "summary": "Silver Fox of Ice Lake guards the frozen lake shore and asks {name} four riddles about ice, numbers and safety signs."
   }
 }

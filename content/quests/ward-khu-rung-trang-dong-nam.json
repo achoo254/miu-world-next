@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Sâu Rồng Ngũ Sắc",
+        "title": "Meet Five-Color Dragon Caterpillar",
         "lines": [
-          "I'm Sâu Rồng Ngũ Sắc, as long as a whole dragon-and-snake line, {name}!",
+          "I'm Five-Color Dragon Caterpillar, as long as a whole dragon-and-snake line, {name}!",
           "Get all five riddles right and you'll be the dragon's head leading everyone."
         ],
         "choices": [
@@ -354,8 +354,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Sâu Rồng Ngũ Sắc",
-        "bossName": "Sâu Rồng Ngũ Sắc",
+        "title": "Battle of wits with Five-Color Dragon Caterpillar",
+        "bossName": "Five-Color Dragon Caterpillar",
         "introDialogue": "The dragon line is ready, five riddles are crawling your way!",
         "winDialogue": "I'll be the tail! {name} deserves to be the head of the dragon."
       }
@@ -367,8 +367,8 @@
       "trigger": "auto",
       "text": "Sâu Rồng Ngũ Sắc tặng {name} một chiếc vảy bảy màu lấp lánh để đội khi làm đầu rồng.",
       "en": {
-        "title": "Sâu Rồng Ngũ Sắc's gift",
-        "text": "Sâu Rồng Ngũ Sắc gives {name} a shiny rainbow scale to wear as the dragon's head."
+        "title": "Five-Color Dragon Caterpillar's gift",
+        "text": "Five-Color Dragon Caterpillar gives {name} a shiny rainbow scale to wear as the dragon's head."
       }
     },
     {
@@ -378,7 +378,7 @@
       "trigger": "auto",
       "text": "Bốn trảng rừng đều đã gặp, {name} ghé khoảng rừng trăng thăm Thần Rừng Tinh Nghịch nhé.",
       "en": {
-        "title": "Goodbye, Sâu Rồng Ngũ Sắc",
+        "title": "Goodbye, Five-Color Dragon Caterpillar",
         "text": "You've met all four glades, {name}: visit the Mischievous Forest Spirit in the moonlit glade."
       }
     }
@@ -393,7 +393,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Sâu Rồng Ngũ Sắc",
-    "summary": "Sâu Rồng Ngũ Sắc guards the south-east glade and invites {name} to a dragon-and-snake game of five riddles about sentences and spelling."
+    "title": "Zone guardian: Five-Color Dragon Caterpillar",
+    "summary": "Five-Color Dragon Caterpillar guards the south-east glade and invites {name} to a dragon-and-snake game of five riddles about sentences and spelling."
   }
 }

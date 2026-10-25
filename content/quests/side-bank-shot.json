@@ -50,12 +50,12 @@
       "en": {
         "title": "Invitation",
         "lines": [
-          "Woof woof! {name}, Gấu the bear is tucked away in a corner where a straight throw cannot reach.",
-          "Drag the dotted line to set the angle so the ball bounces off the wall into the paws of Gấu."
+          "Woof woof! {name}, Bear is tucked away in a corner where a straight throw cannot reach.",
+          "Drag the dotted line to set the angle so the ball bounces off the wall into the paws of Bear."
         ],
         "choices": [
           {
-            "text": "Off the wall, straight to Gấu!"
+            "text": "Off the wall, straight to Bear!"
           }
         ]
       }
@@ -82,7 +82,7 @@
       "text": "Chó Đội Trưởng quẫy đuôi rối rít: {name} tính góc nảy chuẩn quá, bạn Gấu bắt gọn bóng rồi!",
       "en": {
         "title": "Reward",
-        "text": "Chó Đội Trưởng wags like crazy: {name} worked out the bounce perfectly, and Gấu caught it!"
+        "text": "Captain Dog wags like crazy: {name} worked out the bounce perfectly, and Bear caught it!"
       }
     },
     {
@@ -93,7 +93,7 @@
       "text": "Giờ ra chơi nào đội bóng cũng tập ném, {name} cứ ra mép sân trường tìm Chó Đội Trưởng nhé.",
       "en": {
         "title": "See you soon",
-        "text": "The team practises throwing every break time, {name}, so find Chó Đội Trưởng by the court."
+        "text": "The team practises throwing every break time, {name}, so find Captain Dog by the court."
       }
     }
   ],
@@ -102,7 +102,7 @@
     "coin": 5
   },
   "en": {
-    "title": "Bouncing the ball off the wall with Chó Đội Trưởng",
-    "summary": "Gấu is hiding behind a stack of crates: drag the aim line so the ball bounces off the wall right into his paws."
+    "title": "Bouncing the ball off the wall with Captain Dog",
+    "summary": "Bear is hiding behind a stack of crates: drag the aim line so the ball bounces off the wall right into his paws."
   }
 }

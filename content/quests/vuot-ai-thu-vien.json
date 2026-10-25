@@ -47,15 +47,15 @@
         { "text": "Cú Mèo đừng lo, tớ nhặt đồ trước!", "reply": "Cảm ơn nhé, mắt tớ ban ngày kém lắm, chẳng tìm nổi." }
       ],
       "en": {
-        "title": "Cú Mèo brings news",
-        "goTo": "Go to the tower yard gate, Cú Mèo Gác Tháp is waiting",
+        "title": "Cú Cat brings news",
+        "goTo": "Go to the tower yard gate, Tower Watch Owl is waiting",
         "lines": [
           "Hoo hoo… {name}, the Giant Bookworm has nibbled up several pages of the tower calendar, and now the bell doesn't know what day it is to ring.",
           "The bookworm will only give back the calendar to someone who can answer its riddles about time. And the tower's things are scattered all over the lawn, too."
         ],
         "choices": [
           {
-            "text": "Don't worry, Cú Mèo, I'll pick up the things first!",
+            "text": "Don't worry, Cú Cat, I'll pick up the things first!",
             "reply": "Thank you, my eyes are terrible in the daytime, I can't find a thing."
           }
         ]
@@ -377,7 +377,7 @@
       "text": "Sâu Mọt Sách hứa từ nay chỉ gặm lá, không gặm sách nữa. Gấu Trúc Tròn mời {name} vào phòng đọc nghe kể chuyện bên cửa sổ.",
       "en": {
         "title": "Back to the reading room",
-        "text": "The Bookworm promises to nibble only leaves from now on, never books. Gấu Trúc Tròn invites {name} into the reading room for a story by the window."
+        "text": "The Bookworm promises to nibble only leaves from now on, never books. Round Panda invites {name} into the reading room for a story by the window."
       }
     }
   ],

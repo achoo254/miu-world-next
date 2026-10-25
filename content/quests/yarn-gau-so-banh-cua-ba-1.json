@@ -52,8 +52,8 @@
         { "text": "Bánh của bà chắc ngon lắm nhỉ?", "reply": "Ngon tới mức hồi xưa bà phải giấu sổ trên nóc tủ! Đi tìm thôi." }
       ],
       "en": {
-        "title": "Gấu's missing book",
-        "goTo": "Gấu Bánh Ngọt is in a flap out in the front yard",
+        "title": "Bear's missing book",
+        "goTo": "Pastry Bear is in a flap out in the front yard",
         "lines": [
           "One spoon, two spoons… oh, it's you, {name}! Today I'm frying honey doughnuts from my grandmother's recipe book.",
           "Trouble is, I read it on the living room sofa last night and fell asleep. This morning the book was gone, and my glasses with it.",
@@ -79,12 +79,12 @@
       ],
       "en": {
         "title": "Find the book and the glasses",
-        "goTo": "Go into the living room to find Gấu's book and glasses",
-        "prompt": "Gấu dozed off on the sofa and her things scattered everywhere. Read each description and find them:",
+        "goTo": "Go into the living room to find Bear's book and glasses",
+        "prompt": "Bear dozed off on the sofa and her things scattered everywhere. Read each description and find them:",
         "items": [
           { "name": "The green notebook", "clue": "A cover green as a young banana leaf, a worn spine, and a faint smell of butter when it opens." },
-          { "name": "Gấu's round glasses", "clue": "Two perfectly round lenses, with a smear of white flour still on the frame." },
-          { "name": "The bookmark pencil", "clue": "Gấu marks her page with it; the tip is blunt because she chews it while thinking." }
+          { "name": "Bear's round glasses", "clue": "Two perfectly round lenses, with a smear of white flour still on the frame." },
+          { "name": "The bookmark pencil", "clue": "Bear marks her page with it; the tip is blunt because she chews it while thinking." }
         ]
       }
     },
@@ -116,7 +116,7 @@
         "right": ["Đúng rồi, Gấu véo dái tai mình thử luôn: mềm thật!", "{name} đọc sổ còn nhanh hơn Gấu đeo kính.", "Bột mềm như dái tai, Gấu nhớ rồi, lần này không quên nữa!"],
         "wrong": ["Bột cứng như đá thì rán xong gãy răng mất, {name} đọc lại dòng thứ ba nhé.", "Bà không nói tới chuyện bột nở đâu, tìm chữ «nhào bột» xem.", "Gần đúng rồi, chỉ cần nhìn kỹ phần sau chữ «cho tới khi» thôi."],
         "en": {
-          "right": ["Right! Gấu pinches her own earlobe to check: soft indeed!", "You read that book faster than I can put my glasses on, {name}.", "Soft as an earlobe, got it, and this time I won't forget!"],
+          "right": ["Right! Bear pinches her own earlobe to check: soft indeed!", "You read that book faster than I can put my glasses on, {name}.", "Soft as an earlobe, got it, and this time I won't forget!"],
           "wrong": ["Stone-hard dough would break our teeth, {name}. Read the third line again.", "Grandma says nothing about the dough rising; look for the word “knead”.", "Almost there, just look closely at what comes after “until”."]
         }
       },
@@ -150,14 +150,14 @@
         "right": ["Mười hai thìa, Gấu đong ngay, không sót giọt nào!", "Đếm cách hai giỏi ghê, {name} làm thợ bánh được rồi.", "Đủ mật cho sáu chiếc bánh, thơm chưa nào? Thơm rồi!"],
         "wrong": ["Thiếu mật thì bánh nhạt lắm, {name} đếm lại từng chiếc nhé.", "Mỗi chiếc những hai thìa cơ, đừng quên tính đủ cả hai.", "Gấu bày sáu chiếc bánh ra bàn rồi, {name} đếm thìa cạnh từng chiếc xem."],
         "en": {
-          "right": ["Twelve spoons! Gấu measures them out without spilling a drop.", "Counting in twos like a pro, {name}; you could be a baker already.", "Enough honey for six doughnuts. Smell that? Smells done!"],
-          "wrong": ["Too little honey makes a bland doughnut, {name}; count each one again.", "Each doughnut gets two whole spoons, so count both every time.", "Gấu has laid six doughnuts on the table; count the spoons beside each one."]
+          "right": ["Twelve spoons! Bear measures them out without spilling a drop.", "Counting in twos like a pro, {name}; you could be a baker already.", "Enough honey for six doughnuts. Smell that? Smells done!"],
+          "wrong": ["Too little honey makes a bland doughnut, {name}; count each one again.", "Each doughnut gets two whole spoons, so count both every time.", "Bear has laid six doughnuts on the table; count the spoons beside each one."]
         }
       },
       "en": {
         "title": "Counting spoons of honey",
-        "goTo": "Take the book to the kitchen table, where Gấu keeps the honey jar",
-        "question": "The book says 2 spoons of honey for each doughnut. This batch has 6. How many spoons of honey does Gấu need in all?"
+        "goTo": "Take the book to the kitchen table, where Bear keeps the honey jar",
+        "question": "The book says 2 spoons of honey for each doughnut. This batch has 6. How many spoons of honey does Bear need in all?"
       }
     },
     {
@@ -174,11 +174,11 @@
       ],
       "en": {
         "title": "The torn-out page",
-        "goTo": "Run out to the front yard and tell Gấu the last page is gone",
-        "prompt": "Turning the page shows only a torn edge. Without the last step, what should Gấu do?",
+        "goTo": "Run out to the front yard and tell Bear the last page is gone",
+        "prompt": "Turning the page shows only a torn edge. Without the last step, what should Bear do?",
         "choices": [
-          { "text": "Fry one anyway, taste it and guess the last step", "consequence": "The doughnut comes out golden. Gấu takes a bite and shakes her head: “Tasty, but not Grandma's. Something's missing… Shall we ask Sẻ Nâu on the gate?”" },
-          { "text": "Ask whoever has lived around the house since Gấu was a cub", "consequence": "Gấu slaps her forehead: “Sẻ Nâu on the gate has been here forever, she's sure to remember!”" }
+          { "text": "Fry one anyway, taste it and guess the last step", "consequence": "The doughnut comes out golden. Bear takes a bite and shakes her head: “Tasty, but not Grandma's. Something's missing… Shall we ask Sẻ Nâu on the gate?”" },
+          { "text": "Ask whoever has lived around the house since Bear was a cub", "consequence": "Bear slaps her forehead: “Sẻ Nâu on the gate has been here forever, she's sure to remember!”" }
         ]
       }
     },
@@ -197,13 +197,13 @@
       ],
       "en": {
         "title": "Sẻ Nâu remembers",
-        "goTo": "Go to the front gate and ask Sẻ Nâu Mái Hiên",
+        "goTo": "Go to the front gate and ask Brown Sparrow of the Eaves",
         "lines": [
-          "Cheep! A page that smells of butter? When Gấu was tiny, I saw a paper boat with slanted handwriting floating on the pond.",
+          "Cheep! A page that smells of butter? When Bear was tiny, I saw a paper boat with slanted handwriting floating on the pond.",
           "It snagged on a post of the pier, and someone fished it out and kept it in the wooden box there. Go and look on the pier by the pond."
         ],
         "choices": [
-          { "text": "Slanted handwriting… just like in Grandma's book!", "reply": "Exactly! And back then little Gấu sat in the yard folding paper boats all day long, cheep cheep." }
+          { "text": "Slanted handwriting… just like in Grandma's book!", "reply": "Exactly! And back then little Bear sat in the yard folding paper boats all day long, cheep cheep." }
         ]
       }
     },
@@ -215,7 +215,7 @@
       "text": "Gấu Bánh Ngọt ôm cuốn sổ vào lòng, dúi cho {name} chiếc bánh rán thử đầu tiên: «Chưa đúng vị bà, nhưng là vị cảm ơn!»",
       "en": {
         "title": "The first trial doughnut",
-        "text": "Gấu Bánh Ngọt hugs the book and slips {name} the first trial doughnut: “Not Grandma's flavour yet, but it tastes of thank-you!”"
+        "text": "Pastry Bear hugs the book and slips {name} the first trial doughnut: “Not Grandma's flavour yet, but it tastes of thank-you!”"
       }
     },
     {
@@ -226,7 +226,7 @@
       "text": "Mai {name} cùng Gấu ra cầu tàu bên ao tìm chiếc thuyền giấy năm xưa. Gấu cứ lẩm bẩm: «Thuyền giấy… sao nghe quen quá nhỉ?»",
       "en": {
         "title": "See you at the pond",
-        "text": "Tomorrow {name} and Gấu head to the pier to find that old paper boat. Gấu keeps muttering: “A paper boat… why does that sound so familiar?”"
+        "text": "Tomorrow {name} and Bear head to the pier to find that old paper boat. Bear keeps muttering: “A paper boat… why does that sound so familiar?”"
       }
     }
   ],
@@ -236,7 +236,7 @@
     "skillXp": { "doc-hieu": 1, "phep-cong": 1 }
   },
   "en": {
-    "title": "Gấu Bánh Ngọt's story, chapter 1: The green notebook",
-    "summary": "Gấu Bánh Ngọt wants to fry honey doughnuts from her grandmother's recipe book, but this morning she can't remember where she left it. {name} finds the book and her glasses, reads the recipe, counts the spoons of honey and discovers the last page has been torn out."
+    "title": "Pastry Bear's story, chapter 1: The green notebook",
+    "summary": "Pastry Bear wants to fry honey doughnuts from her grandmother's recipe book, but this morning she can't remember where she left it. {name} finds the book and her glasses, reads the recipe, counts the spoons of honey and discovers the last page has been torn out."
   }
 }

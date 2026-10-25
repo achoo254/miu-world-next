@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Hổ Xanh Vẽ Hình",
+        "title": "Meet Shape-Drawing Green Tiger",
         "lines": [
-          "Grr… no, I only growl for fun! I'm Hổ Xanh Vẽ Hình, and my claws draw the best shapes in this yard.",
+          "Grr… no, I only growl for fun! I'm Shape-Drawing Green Tiger, and my claws draw the best shapes in this yard.",
           "If {name} solves four shape riddles, I'll draw you a picture."
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Hổ Xanh Vẽ Hình",
-        "bossName": "Hổ Xanh Vẽ Hình",
+        "title": "Battle of wits with Shape-Drawing Green Tiger",
+        "bossName": "Shape-Drawing Green Tiger",
         "introDialogue": "Ruler ready, pencil sharpened: here's the first shape riddle!",
         "winDialogue": "I put down my pencil and give up! {name} sees shapes better than a tiger's eye."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Hổ Xanh Vẽ Hình vẽ tặng {name} một ngôi sao nhiều cánh bằng các đoạn thẳng.",
       "en": {
-        "title": "Hổ Xanh Vẽ Hình's gift",
-        "text": "Hổ Xanh Vẽ Hình draws {name} a many-pointed star made of straight segments."
+        "title": "Shape-Drawing Green Tiger's gift",
+        "text": "Shape-Drawing Green Tiger draws {name} a many-pointed star made of straight segments."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Vào trong thành tới đại sảnh ôn tập, có trùm canh khu thích tính toán đang chờ {name}.",
       "en": {
-        "title": "Goodbye, Hổ Xanh Vẽ Hình",
+        "title": "Goodbye, Shape-Drawing Green Tiger",
         "text": "Go inside the walls to the great review hall, a zone guardian who loves sums is waiting for {name}."
       }
     }
@@ -352,7 +352,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Hổ Xanh Vẽ Hình",
-    "summary": "Hổ Xanh Vẽ Hình guards the shapes yard and asks {name} four riddles about segments, zigzag lines and quadrilaterals."
+    "title": "Zone guardian: Shape-Drawing Green Tiger",
+    "summary": "Shape-Drawing Green Tiger guards the shapes yard and asks {name} four riddles about segments, zigzag lines and quadrilaterals."
   }
 }

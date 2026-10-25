@@ -64,7 +64,7 @@
         "goTo": "Go to the flower stalls: tonight is the full-moon fair",
         "lines": [
           "The moon's up, {name}. The dragon's body is done; it just needs whiskers and a little bell under its chin to jingle.",
-          "And the kids... their scales are so lopsided. I'm afraid they'll spoil the dragon. But if I say no, I feel like Ông Chổi Rơm used to be."
+          "And the kids... their scales are so lopsided. I'm afraid they'll spoil the dragon. But if I say no, I feel like Straw Broom Grandpa used to be."
         ],
         "choices": [
           {
@@ -138,7 +138,7 @@
         ],
         "en": {
           "right": [
-            "Ten scales! Bé Mít leaps for joy in the middle of the street, her basket wobbling.",
+            "Ten scales! Little Mít leaps for joy in the middle of the street, her basket wobbling.",
             "{name} counts scales faster than Mít counts sweets.",
             "Exactly ten, not one wonky scale missing!"
           ],
@@ -150,9 +150,9 @@
         }
       },
       "en": {
-        "title": "Bé Mít's basket of scales",
-        "goTo": "Go to the market street, where Bé Mít is waiting",
-        "question": "Bé Mít shows off: «Me, Su and Hến made 4 scales each. But I dropped 2 and broke them running here...» How many scales are left in Mít's basket?"
+        "title": "Little Mít's basket of scales",
+        "goTo": "Go to the market street, where Little Mít is waiting",
+        "question": "Little Mít shows off: «Me, Su and Hến made 4 scales each. But I dropped 2 and broke them running here...» How many scales are left in Mít's basket?"
       }
     },
     {
@@ -183,7 +183,7 @@
       "en": {
         "title": "Wonky scales or not?",
         "goTo": "Bring the scales to the market square, where the dragon is waiting",
-        "prompt": "Cô Nặn Tò He opens a little tin box. Inside is a hard, lopsided lump of dough: «The very first tò he I ever made, and I botched it.» Then she looks at {name}: «What should I do with the kids' scales?»",
+        "prompt": "Auntie Tò He Maker opens a little tin box. Inside is a hard, lopsided lump of dough: «The very first tò he I ever made, and I botched it.» Then she looks at {name}: «What should I do with the kids' scales?»",
         "choices": [
           {
             "text": "Put them all on: every wonky scale gets a place",
@@ -299,7 +299,7 @@
       "text": "Con rồng tò he dài bằng cả dãy sạp hoa uốn qua quảng trường dưới trăng rằm, vảy méo vảy tròn lấp lánh. Cô Nặn Tò He đi bên cạnh, lần đầu không sửa một vảy nào. Cô dúi vào tay {name} một con rồng tò he nhỏ xíu.",
       "en": {
         "title": "The whole market's dragon",
-        "text": "The tò he dragon, as long as the whole row of flower stalls, winds across the square under the full moon, wonky scales and round ones glittering. Cô Nặn Tò He walks beside it and, for the first time, doesn't fix a single scale. She presses a tiny tò he dragon into {name}'s hand."
+        "text": "The tò he dragon, as long as the whole row of flower stalls, winds across the square under the full moon, wonky scales and round ones glittering. Auntie Tò He Maker walks beside it and, for the first time, doesn't fix a single scale. She presses a tiny tò he dragon into {name}'s hand."
       }
     },
     {
@@ -310,7 +310,7 @@
       "text": "Sáng hôm sau, đầu dãy sạp hoa có tấm bảng mới: «Lớp nặn tò he, ai nặn méo cũng được nhận». Cô Nặn Tò He bảo phiên rằm sau, rồng sẽ dài gấp đôi, vì cả chợ đều biết nặn vảy rồi.",
       "en": {
         "title": "The tò he class",
-        "text": "Next morning a new sign stands at the head of the flower stalls: «Tò he class: wonky makers welcome». Cô Nặn Tò He says next full moon the dragon will be twice as long, because the whole market can make scales now."
+        "text": "Next morning a new sign stands at the head of the flower stalls: «Tò he class: wonky makers welcome». Auntie Tò He Maker says next full moon the dragon will be twice as long, because the whole market can make scales now."
       }
     }
   ],
@@ -326,7 +326,7 @@
     }
   },
   "en": {
-    "title": "Cô Nặn Tò He's story, chapter 4: The dragon at the full-moon fair",
-    "summary": "On the night of the full-moon fair, the tò he dragon only lacks its whiskers and a little bell. The market kids bring scales they made themselves, all lopsided. {name} helps Cô Nặn Tò He find the whiskers, counts scales with Bé Mít, decides what happens to the wonky scales and lines up the kids to carry the dragon."
+    "title": "Auntie Tò He Maker's story, chapter 4: The dragon at the full-moon fair",
+    "summary": "On the night of the full-moon fair, the tò he dragon only lacks its whiskers and a little bell. The market kids bring scales they made themselves, all lopsided. {name} helps Auntie Tò He Maker find the whiskers, counts scales with Little Mít, decides what happens to the wonky scales and lines up the kids to carry the dragon."
   }
 }

@@ -62,7 +62,7 @@
       ],
       "en": {
         "title": "The morning idea",
-        "goTo": "Go to the art room, where Mèo Vẽ Màu waves at you with his rainbow tail",
+        "goTo": "Go to the art room, where Painter Cat waves at you with his rainbow tail",
         "lines": [
           "{name}! I stayed up all night and worked it out: one shape for each colour. Circle is red, triangle is green. My eyes mix up colours, but never shapes!",
           "Shapes painted on the lids won't wash off in the rain, and friends who can't read yet can still follow them. The whole school can paint the wall together!"
@@ -239,7 +239,7 @@
           "right": [
             "Three lids open, and the apple tree is about to ripen on the wall!",
             "{name} picked every colour without one extra lid.",
-            "Circle, triangle, star: Mèo Vẽ Màu cheers like he's just caught a fish."
+            "Circle, triangle, star: Painter Cat cheers like he's just caught a fish."
           ],
           "wrong": [
             "Nothing in this scene is yellow, so drop one lid.",
@@ -251,7 +251,7 @@
       "en": {
         "title": "Lids for the apple tree",
         "goTo": "Go to the teacher's desk, where the tray of paint lids is waiting",
-        "prompt": "Mèo Vẽ Màu is about to paint an apple tree: red apples and green leaves under a blue sky. Pick every lid he needs to open:",
+        "prompt": "Painter Cat is about to paint an apple tree: red apples and green leaves under a blue sky. Pick every lid he needs to open:",
         "choices": [
           "Circle lid",
           "Triangle lid",
@@ -303,11 +303,11 @@
       "en": {
         "title": "Signing the picture",
         "goTo": "Take the brushes out behind the classrooms, where the wall only needs a signature",
-        "prompt": "The whole school has lent a hand and the wall is nearly done. Mèo Vẽ Màu asks {name}: how shall we sign the picture?",
+        "prompt": "The whole school has lent a hand and the wall is nearly done. Painter Cat asks {name}: how shall we sign the picture?",
         "choices": [
           {
-            "text": "Mèo Vẽ Màu signs big in the corner",
-            "consequence": "Mèo signs an M that curls like a cat's tail. Everyone who passes will know who dreamed up this wall."
+            "text": "Painter Cat signs big in the corner",
+            "consequence": "Cat signs an M that curls like a cat's tail. Everyone who passes will know who dreamed up this wall."
           },
           {
             "text": "Everyone presses a handprint round the edge",
@@ -315,7 +315,7 @@
           },
           {
             "text": "Paint a green sun as the signature",
-            "consequence": "Mèo Vẽ Màu laughs and paints a round green sun himself. From now on it's his very own mark."
+            "consequence": "Painter Cat laughs and paints a round green sun himself. From now on it's his very own mark."
           }
         ]
       }
@@ -342,7 +342,7 @@
       "text": "Bức tường xám ngày nào giờ rực rỡ từ đầu này tới đầu kia, có cả những vệt mưa lấp lánh. Mèo Vẽ Màu dúi vào tay {name} cây bút mực tím cậu ấy vẫn dùng vẽ nét mảnh nhất.",
       "en": {
         "title": "The rainbow wall",
-        "text": "The once-grey wall now blazes from end to end, shimmering rain streaks and all. Mèo Vẽ Màu presses into {name}'s hand the purple ink pen he uses for his finest lines."
+        "text": "The once-grey wall now blazes from end to end, shimmering rain streaks and all. Painter Cat presses into {name}'s hand the purple ink pen he uses for his finest lines."
       }
     },
     {
@@ -353,7 +353,7 @@
       "text": "Mèo Vẽ Màu chừa lại một ô nhỏ cuối tường, viết dòng chữ «Còn chỗ cho bạn mới». Cậu ấy bảo từ giờ mỗi năm học sẽ vẽ thêm một cảnh, và lần nào cũng mời {name} cầm cọ đầu tiên.",
       "en": {
         "title": "Room for a new friend",
-        "text": "Mèo Vẽ Màu leaves one small panel free at the end of the wall with the words «Room for a new friend». From now on, he says, he will paint one more scene every school year, and {name} always gets the first brush."
+        "text": "Painter Cat leaves one small panel free at the end of the wall with the words «Room for a new friend». From now on, he says, he will paint one more scene every school year, and {name} always gets the first brush."
       }
     }
   ],
@@ -369,7 +369,7 @@
     }
   },
   "en": {
-    "title": "Mèo Vẽ Màu's story, chapter 3: A picture by the whole school",
-    "summary": "Mèo Vẽ Màu thinks of marking colours with shapes so anyone can paint. {name} reads the colour code, picks the lids for the apple-tree scene, gathers brushes for everyone, chooses how to sign it and paints the last patches of the wall Mèo has dreamed of since he was a kitten."
+    "title": "Painter Cat's story, chapter 3: A picture by the whole school",
+    "summary": "Painter Cat thinks of marking colours with shapes so anyone can paint. {name} reads the colour code, picks the lids for the apple-tree scene, gathers brushes for everyone, chooses how to sign it and paints the last patches of the wall Cat has dreamed of since he was a kitten."
   }
 }

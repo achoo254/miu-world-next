@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "My very own code",
-        "goTo": "Go back to the chessboard in the great hall, where Tể Tướng Cờ Vua keeps turning a sheet full of numbers this way and that",
+        "goTo": "Go back to the chessboard in the great hall, where Chess Chancellor keeps turning a sheet full of numbers this way and that",
         "lines": [
           "{name}, I confess a foolish move. So that nobody could peek at the seating plan for tonight's banquet, I wrote it in code.",
           "A code so ingenious that… this morning even I could not crack it. And for extra secrecy I hid the three name cards around the dining room, and now I have forgotten where.",
@@ -175,9 +175,9 @@
         }
       },
       "en": {
-        "title": "Cracking Hươu Cao's card",
+        "title": "Cracking Giraffe's card",
         "goTo": "Take the name cards over to the word-problem gallery, where the chancellor keeps his code-breaking scroll",
-        "prompt": "The code-breaking scroll is locked with three number rings. The rule says: «The lock number is the answer to the sum on Hươu Cao's card.» The card says 46 + 27. What is the lock number?",
+        "prompt": "The code-breaking scroll is locked with three number rings. The rule says: «The lock number is the answer to the sum on Giraffe's card.» The card says 46 + 27. What is the lock number?",
         "choices": [
           "Lock number 63",
           "Lock number 73",
@@ -247,14 +247,14 @@
         },
         "en": {
           "guide": [
-            "Code one gives Gấu Gác Hầm exactly one place.",
-            "Once Gấu is seated, find the seat not beside him for Hươu Cao.",
-            "The seat left over belongs to Bác Thợ Khóa Thành."
+            "Code one gives Dungeon-Keeper Bear exactly one place.",
+            "Once Bear is seated, find the seat not beside him for Giraffe.",
+            "The seat left over belongs to Castle Locksmith Uncle."
           ],
           "hint": "The seat by the big candle is seat 1. Which seat is furthest from seat 1?",
           "answer": {
-            "text": "Gấu Gác Hầm in seat 1, Bác Thợ Khóa Thành in seat 2, Hươu Cao in seat 3",
-            "explanation": "Gấu sits by the candle, so seat 1. Seat 2 is beside seat 1, so Hươu Cao must take seat 3. Bác Thợ Khóa Thành takes the remaining seat 2."
+            "text": "Dungeon-Keeper Bear in seat 1, Castle Locksmith Uncle in seat 2, Giraffe in seat 3",
+            "explanation": "Bear sits by the candle, so seat 1. Seat 2 is beside seat 1, so Giraffe must take seat 3. Castle Locksmith Uncle takes the remaining seat 2."
           }
         }
       },
@@ -276,9 +276,9 @@
             "I shall copy this plan out again, this time in plain words anyone can read."
           ],
           "wrong": [
-            "Check code two: is Hươu Cao sitting next to Gấu Gác Hầm?",
-            "Code one says Gấu sits by the candle. Which seat is the candle beside?",
-            "Seat Gấu first, then arrange the other two guests."
+            "Check code two: is Giraffe sitting next to Dungeon-Keeper Bear?",
+            "Code one says Bear sits by the candle. Which seat is the candle beside?",
+            "Seat Bear first, then arrange the other two guests."
           ]
         }
       },
@@ -290,13 +290,13 @@
           "Seat 1 stands right by the big candle",
           "Seat 2 is in the middle",
           "Seat 3 stands right by the window",
-          "Code one: «Gấu Gác Hầm sits beside the big candle»",
-          "Code two: «Hươu Cao does not sit beside Gấu Gác Hầm»"
+          "Code one: «Dungeon-Keeper Bear sits beside the big candle»",
+          "Code two: «Giraffe does not sit beside Dungeon-Keeper Bear»"
         ],
         "choices": [
-          "Seat 1: Gấu Gác Hầm · Seat 2: Bác Thợ Khóa Thành · Seat 3: Hươu Cao",
-          "Seat 1: Gấu Gác Hầm · Seat 2: Hươu Cao · Seat 3: Bác Thợ Khóa Thành",
-          "Seat 1: Hươu Cao · Seat 2: Bác Thợ Khóa Thành · Seat 3: Gấu Gác Hầm"
+          "Seat 1: Dungeon-Keeper Bear · Seat 2: Castle Locksmith Uncle · Seat 3: Giraffe",
+          "Seat 1: Dungeon-Keeper Bear · Seat 2: Giraffe · Seat 3: Castle Locksmith Uncle",
+          "Seat 1: Giraffe · Seat 2: Castle Locksmith Uncle · Seat 3: Dungeon-Keeper Bear"
         ]
       }
     },
@@ -335,7 +335,7 @@
             "consequence": "«Rules are rules,» he says, and sets the head chair perfectly straight. From there he can see every guest, like seeing the whole board."
           },
           {
-            "text": "Beside Bác Thợ Khóa Thành, to talk chess",
+            "text": "Beside Castle Locksmith Uncle, to talk chess",
             "consequence": "The chancellor tucks a pocket chessboard beside his plate. «Between the soup and the cake, a few moves will do no harm,» he winks."
           },
           {
@@ -378,7 +378,7 @@
       "text": "Tể tướng thở dài: Cáo Cung Thủ vừa thua một ván cờ chỉ sau năm nước vì đi quá vội. Ngài muốn soạn một bài học đặc biệt cho cậu học trò ấy.",
       "en": {
         "title": "A hasty archer",
-        "text": "The chancellor sighs: Cáo Cung Thủ has just lost a game after only five moves by rushing. He wants to prepare a special lesson for his young pupil."
+        "text": "The chancellor sighs: Archer Fox has just lost a game after only five moves by rushing. He wants to prepare a special lesson for his young pupil."
       }
     }
   ],
@@ -391,7 +391,7 @@
     }
   },
   "en": {
-    "title": "Tể Tướng Cờ Vua's story, chapter 2: A seating plan in code",
-    "summary": "Tể Tướng Cờ Vua wrote the banquet seating plan in code and then forgot how to read it. {name} gathers three name cards, solves an addition to find the lock number of the plan scroll, reasons out three guests' places and chooses where the chancellor himself should sit."
+    "title": "Chess Chancellor's story, chapter 2: A seating plan in code",
+    "summary": "Chess Chancellor wrote the banquet seating plan in code and then forgot how to read it. {name} gathers three name cards, solves an addition to find the lock number of the plan scroll, reasons out three guests' places and chooses where the chancellor himself should sit."
   }
 }

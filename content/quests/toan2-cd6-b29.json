@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "Who made the clock nod off?",
-        "goTo": "Go to the foot of the clock tower, where Gấu Trúc Khò is snoring away",
+        "goTo": "Go to the foot of the clock tower, where Snoring Panda is snoring away",
         "lines": [
           "Zzz... zzz... Oh, is that you, {name}? What time is it? I only shut my eyes for... three days.",
           "Only three hours, Khò! But you slept through winding the clock, the tower clock is showing all the wrong times, and the rooster crowed cock-a-doodle-doo at midnight.",
@@ -78,11 +78,11 @@
         "choices": [
           {
             "text": "You sit tight, Khò, I'll find the hands!",
-            "reply": "Gấu Trúc Khò hugs a clump of bamboo and nods: Thanks, I'll sit here... and guard the bamboo."
+            "reply": "Snoring Panda hugs a clump of bamboo and nods: Thanks, I'll sit here... and guard the bamboo."
           },
           {
             "text": "Up you get, Khò, come search with me!",
-            "reply": "Gấu Trúc Khò clambers to his feet: Okay, but let's go slowly, my legs are still asleep."
+            "reply": "Snoring Panda clambers to his feet: Okay, but let's go slowly, my legs are still asleep."
           }
         ]
       }
@@ -454,11 +454,11 @@
         "choices": [
           {
             "text": "Wind it fast, Khò!",
-            "reply": "Gấu Trúc Khò winds like a whirlwind, then plops down: Phew, that's the fastest I've ever been!"
+            "reply": "Snoring Panda winds like a whirlwind, then plops down: Phew, that's the fastest I've ever been!"
           },
           {
             "text": "Wind it slowly to be safe",
-            "reply": "Gấu Trúc Khò turns it one click at a time, counting softly: one, two, three... oh, yaaawn..."
+            "reply": "Snoring Panda turns it one click at a time, counting softly: one, two, three... oh, yaaawn..."
           }
         ]
       }
@@ -913,7 +913,7 @@
       "text": "Tháp đồng hồ ngân vang mười hai tiếng boong, vọng xuống tận phòng đọc. Ông Khuê trao cho {name} huy hiệu \"Người giữ giờ\", còn Gấu Trúc Khò hứa từ nay đặt báo thức… ba cái liền.",
       "en": {
         "title": "Keeper of the tower time",
-        "text": "The clock tower rings out twelve booming chimes that echo all the way down to the reading room. Grandpa Khuê gives {name} the \"Timekeeper\" badge, and Gấu Trúc Khò promises from now on to set... three alarms in a row."
+        "text": "The clock tower rings out twelve booming chimes that echo all the way down to the reading room. Grandpa Khuê gives {name} the \"Timekeeper\" badge, and Snoring Panda promises from now on to set... three alarms in a row."
       }
     },
     {
@@ -924,7 +924,7 @@
       "text": "Từ phòng lịch trên tháp, Voi Bảo kêu lên: tờ lịch tháng treo tường bị ai xé mất mấy ngày rồi, thế này thì biết hôm nay ngày bao nhiêu!",
       "en": {
         "title": "Days missing from the calendar",
-        "text": "From the calendar room in the tower, Voi Bảo cries out: somebody has torn some days off the wall calendar, so how is anyone supposed to know today's date?"
+        "text": "From the calendar room in the tower, Bảo Elephant cries out: somebody has torn some days off the wall calendar, so how is anyone supposed to know today's date?"
       }
     }
   ],

@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "A statue with seven colours",
-        "goTo": "Go to Cáo's plinth in the middle of the square, where Cáo Tuyết is drawing circles in the snow with the tip of his tail",
+        "goTo": "Go to Fox's plinth in the middle of the square, where Cáo Tuyết is drawing circles in the snow with the tip of his tail",
         "lines": [
           "Hello, {name}. You've come just as I finished my ninth circle. The roundest one all morning.",
           "I want to carve a statue so clear that sunlight slipping inside splits into seven colours. For that, the ice must be as clear as a drop of water standing still.",
@@ -81,7 +81,7 @@
             "reply": "Good. Your eyes shine like two glass marbles. Let's go."
           },
           {
-            "text": "Isn't all ice clear, Cáo?",
+            "text": "Isn't all ice clear, Fox?",
             "reply": "Not at all. Some blocks are misty like fog, some are cracked like a pencil line. Look closely and you'll see."
           }
         ]
@@ -117,7 +117,7 @@
       "en": {
         "title": "Three blocks at the foot of the slope",
         "goTo": "Go down to the foot of the ice-cutting slope at the village edge, where the freshly cut blocks lie in a row",
-        "prompt": "There are lots of ice blocks at the foot of the slope. Read how Cáo describes each one and find the right block:",
+        "prompt": "There are lots of ice blocks at the foot of the slope. Read how Fox describes each one and find the right block:",
         "items": [
           {
             "name": "Crystal-clear block",
@@ -180,7 +180,7 @@
         ],
         "en": {
           "right": [
-            "Sixty-two kilograms. Cáo gives one nod, as neat as a ruled line.",
+            "Sixty-two kilograms. Fox gives one nod, as neat as a ruled line.",
             "{name} carried to the tens as steadily as an ice carver's hand.",
             "The sled can carry ninety kilograms, so both blocks can ride together."
           ],
@@ -194,7 +194,7 @@
       "en": {
         "title": "Two blocks on the scale",
         "goTo": "Push the two blocks to the quest post, where the village's big pan scale stands",
-        "question": "Cáo puts each block on the scale. The clear block weighs 27 kg and the cracked block weighs 35 kg. How many kilograms do the two blocks weigh altogether?"
+        "question": "Fox puts each block on the scale. The clear block weighs 27 kg and the cracked block weighs 35 kg. How many kilograms do the two blocks weigh altogether?"
       }
     },
     {
@@ -267,7 +267,7 @@
         ],
         "en": {
           "right": [
-            "The tower block stands at the end of the row, straight as a candle. Cáo gives a small tail wag.",
+            "The tower block stands at the end of the row, straight as a candle. Fox gives a small tail wag.",
             "{name} wasn't fooled by 47 and 74; sharper eyes than mine when I draw a square.",
             "Short to long, not a centimetre out of place. I love this neatness."
           ],
@@ -280,8 +280,8 @@
       },
       "en": {
         "title": "Which edge is longest?",
-        "goTo": "Go to the porch of the warm-clothes shop, where Cáo has hung his tape measure on the fence",
-        "prompt": "Cáo measures the longest edge of the four remaining blocks. The statue's body needs the block with the longest edge. Sort the blocks by edge, from shortest to longest:",
+        "goTo": "Go to the porch of the warm-clothes shop, where Fox has hung his tape measure on the fence",
+        "prompt": "Fox measures the longest edge of the four remaining blocks. The statue's body needs the block with the longest edge. Sort the blocks by edge, from shortest to longest:",
         "items": [
           "Square block: 47 cm",
           "Mirror-face block: 40 cm",
@@ -318,11 +318,11 @@
       "en": {
         "title": "How to carry the ice?",
         "goTo": "Go to the snow village gate, where the wooden sled is waiting",
-        "prompt": "The clear block and the tower block are on the sled. Cáo looks at the sloping road to the square: \"One tiny scratch and the sunlight will lose its way inside. How shall we carry them, {name}?\"",
+        "prompt": "The clear block and the tower block are on the sled. Fox looks at the sloping road to the square: \"One tiny scratch and the sunlight will lose its way inside. How shall we carry them, {name}?\"",
         "choices": [
           {
             "text": "Lay a wool blanket in the sled so the ice won't scratch",
-            "consequence": "Cáo folds the blanket into a rectangle that fits the sled exactly. The two blocks rest as snugly as two cakes in a box."
+            "consequence": "Fox folds the blanket into a rectangle that fits the sled exactly. The two blocks rest as snugly as two cakes in a box."
           },
           {
             "text": "Pull very slowly, counting a beat for each step",
@@ -330,7 +330,7 @@
           },
           {
             "text": "Tie a second rope to be safe",
-            "consequence": "{name} ties the knot and Cáo checks it. The two ropes cross in a tidy X over the ice."
+            "consequence": "{name} ties the knot and Fox checks it. The two ropes cross in a tidy X over the ice."
           }
         ]
       }
@@ -346,7 +346,7 @@
       "goal": 5,
       "en": {
         "title": "Both sides of the plinth even",
-        "prompt": "Back at the square, Cáo wants to share the leftover ice pieces evenly on both sides of the plinth. Make the scale level five times!"
+        "prompt": "Back at the square, Fox wants to share the leftover ice pieces evenly on both sides of the plinth. Make the scale level five times!"
       }
     },
     {
@@ -357,7 +357,7 @@
       "text": "Khối dáng tháp đứng giữa quảng trường, trong tới mức {name} nhìn thấy cả chóp đuôi Cáo ở phía bên kia. Cáo vẽ một hình vuông nhỏ lên tuyết, rồi vẽ thêm một hình vuông nữa ngay cạnh: «Cái này là tớ, cái này là cậu.»",
       "en": {
         "title": "The ice is home",
-        "text": "The tower block stands in the middle of the square, so clear that {name} can see the tip of Cáo's tail on the other side. Cáo draws a small square in the snow, then another right beside it: \"This one is me, and this one is you.\""
+        "text": "The tower block stands in the middle of the square, so clear that {name} can see the tip of Fox's tail on the other side. Fox draws a small square in the snow, then another right beside it: \"This one is me, and this one is you.\""
       }
     },
     {
@@ -368,7 +368,7 @@
       "text": "Có khối băng rồi, giờ phải biết tượng sẽ mang hình gì. Sáng mai Cáo sẽ phác những hình đầu tiên lên tuyết, và cậu ấy muốn {name} đứng cạnh để góp ý.",
       "en": {
         "title": "Sketches to come",
-        "text": "The ice is here; now the statue needs a shape. Tomorrow morning Cáo will sketch the first shapes in the snow, and he wants {name} beside him to give advice."
+        "text": "The ice is here; now the statue needs a shape. Tomorrow morning Fox will sketch the first shapes in the snow, and he wants {name} beside him to give advice."
       }
     }
   ],
@@ -381,7 +381,7 @@
     }
   },
   "en": {
-    "title": "Cáo Tuyết Điêu Khắc's story, chapter 1: The clearest block of ice",
-    "summary": "Cáo Tuyết Điêu Khắc wants to carve a statue so clear that sunlight inside splits into seven colours. {name} finds the freshly cut ice blocks, weighs and measures them, then helps Cáo carry the best one back to the square."
+    "title": "Sculptor Snow Fox's story, chapter 1: The clearest block of ice",
+    "summary": "Sculptor Snow Fox wants to carve a statue so clear that sunlight inside splits into seven colours. {name} finds the freshly cut ice blocks, weighs and measures them, then helps Fox carry the best one back to the square."
   }
 }

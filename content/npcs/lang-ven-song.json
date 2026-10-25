@@ -22,7 +22,7 @@
         { "vi": "Đêm sông lặng, chú ngồi đầu bến đếm đèn nhà bên kia. Nhà nào còn sáng là chú chờ thêm chút nữa.", "en": "At night the river's still. I sit at the landing counting lights on the far bank, and if one's still on, I wait a little longer.", "when": "night" },
         { "vi": "Mưa rồi cháu ạ, chú che mái lá cho đò. Mưa trên sông nghe như ai đang rang lạc trên mặt nước.", "en": "Rain, little one. I'm putting the palm-leaf roof on the boat. Rain on the river sounds like peanuts roasting on the water.", "weather": "rain" },
         { "vi": "Trời trong, gió nam thổi đều, hôm nay đò đi êm như ru.", "en": "Clear sky and a steady southern breeze: today the boat glides like a lullaby.", "weather": "fine" },
-        { "vi": "Mèo Bếp Trưởng hay đặt chú chở cá tươi lên bếp, lần nào cũng gửi lại một đĩa bánh rán nóng hổi.", "en": "Mèo Bếp Trưởng often orders fresh fish up to the kitchen, and every time sends back a plate of piping-hot fried cakes.", "about": "meo-bep-truong" },
+        { "vi": "Mèo Bếp Trưởng hay đặt chú chở cá tươi lên bếp, lần nào cũng gửi lại một đĩa bánh rán nóng hổi.", "en": "Head Chef Cat often orders fresh fish up to the kitchen, and every time sends back a plate of piping-hot fried cakes.", "about": "meo-bep-truong" },
         { "vi": "Nước sông lên xuống theo mùa. Mùa lũ chú buộc thêm hai sợi dây neo cho chắc.", "en": "The river rises and falls with the seasons. In flood season I tie two extra mooring ropes, to be safe." },
         { "vi": "Cháu biết không, mái chèo phải khua đều hai bên. Lệch một bên là đò quay vòng như con quay ngay.", "en": "Did you know? You have to row evenly on both sides. Pull harder on one and the boat spins round like a top." },
         { "vi": "{name} có muốn thử cầm chèo không? Đừng sợ, chú ngồi ngay sau lưng đây.", "en": "Fancy a go at the oar, {name}? Don't worry, I'm sitting right behind you." },
@@ -50,7 +50,7 @@
         { "vi": "Khuya rồi mà ông còn sơn nốt cái áo đỏ cho Chú Tễu. Sơn ta phải ba lớp mới bóng, cháu ạ.", "en": "It's late and I'm still painting Chú Tễu's red jacket. Lacquer needs three coats to shine, my dear.", "when": "night" },
         { "vi": "Mưa thế này thì hoãn diễn thôi! Nước mưa với nước ao lẫn vào nhau, rối chẳng biết đâu mà múa.", "en": "Rain like this means no show! Rainwater and pond water get all muddled, and the puppets can't tell where to dance.", "weather": "rain" },
         { "vi": "Trời đẹp, mặt ao lặng như tờ. Đêm nay mà diễn thì đèn soi xuống nước lung linh lắm.", "en": "Lovely weather and the pond is smooth as paper. If we play tonight, the lights will shimmer on the water.", "weather": "fine" },
-        { "vi": "Cô Nặn Tò He ngoài chợ phiên gửi ông con rồng tò he bé tí, ông đặt ngay cạnh Chú Tễu cho có bạn.", "en": "Cô Nặn Tò He from the fair sent me a tiny sugar-dough dragon. I set it right beside Chú Tễu so he'd have company.", "about": "co-nan-to-he" },
+        { "vi": "Cô Nặn Tò He ngoài chợ phiên gửi ông con rồng tò he bé tí, ông đặt ngay cạnh Chú Tễu cho có bạn.", "en": "Auntie Tò He Maker from the fair sent me a tiny sugar-dough dragon. I set it right beside Chú Tễu so he'd have company.", "about": "co-nan-to-he" },
         { "vi": "Cháu biết vì sao rối nước làm bằng gỗ sung không? Vì gỗ sung nhẹ như bấc, thả xuống là nổi bập bềnh.", "en": "Know why water puppets are made of fig wood? It's light as cork: drop it in and it bobs right up." },
         { "vi": "{name} có muốn ngó ra sau tấm mành tre không? Ở sau ấy ướt nhẹp mà vui ra phết đấy.", "en": "Want a peek behind the bamboo screen, {name}? It's soaking wet back there, but great fun." },
         { "vi": "Một con rối cần đủ sào, dây và một bàn tay giật khéo. Thiếu một thứ là nó chỉ biết nằm im.", "en": "A puppet needs a pole, strings and a clever hand. Miss one and it just lies there." },
@@ -68,7 +68,7 @@
       "voice": { "vi": "Câu nào cũng mở bằng «Gâu!», kể chuyện bằng mùi: «tớ ngửi thấy…», «mũi tớ bảo…».", "en": "Opens nearly every sentence with 'Woof!' and tells stories in smells: 'I sniffed…', 'my nose says…'." },
       "fear": { "vi": "Sợ tiếng sấm: sấm vừa nổ là chui tọt vào gầm đò của Chú Lái Đò Ba.", "en": "Thunder: one rumble and he's under Uncle Ba's ferry in a flash." },
       "dream": { "vi": "Ngửi thử mùi của mọi miền trên thế giới và nhớ hết, để ai lạc đường cũng dẫn về được.", "en": "To sniff every corner of the world and remember them all, so he can lead anyone home who gets lost." },
-      "secret": { "vi": "Cún Lúa không phân biệt được màu đỏ với màu xanh lá, nên lúc dẫn đường cậu chỉ nhớ mùi chứ không nhớ màu.", "en": "Cún Lúa can't tell red from green, so when he guides people he remembers smells, never colours." },
+      "secret": { "vi": "Cún Lúa không phân biệt được màu đỏ với màu xanh lá, nên lúc dẫn đường cậu chỉ nhớ mùi chứ không nhớ màu.", "en": "Rice Pup can't tell red from green, so when he guides people he remembers smells, never colours." },
       "habit": { "vi": "Sáng nào cũng chạy một vòng quanh bến sông, chào từng gốc cây bằng một cái vẫy đuôi.", "en": "Runs a lap of the river landing every morning, greeting each tree with a wag of his tail." },
       "likes": ["oc-da-song", "da-cuoi-song", "long-vu-chim-rung"],
       "lines": [
@@ -95,7 +95,7 @@
       "personality": { "vi": "Tỉ mỉ, thích mọi thứ ngăn nắp, hơi khó tính nhưng thương đàn vịt nghịch ngợm như con.", "en": "Meticulous and fond of everything neat; a bit fussy, but loves her naughty ducks like her own kittens." },
       "voice": { "vi": "Hay «meo» một tiếng trước khi phàn nàn, nói câu ngắn và rõ, thích đếm và xếp mọi thứ thành từng ô.", "en": "Lets out a 'meow' before every complaint; speaks in short, clear sentences and loves counting things and sorting them into neat boxes." },
       "fear": { "vi": "Sợ nước, nhất là nước sâu tới cổ; trông đầm sen bao năm mà chưa bao giờ lội quá đầu gối.", "en": "Water, especially water up to her neck; she has minded the lotus pond for years and never waded past her knees." },
-      "dream": { "vi": "Thắng Tể Tướng Cờ Vua một ván cờ gửi qua thư, sau ba năm thua liền.", "en": "To finally beat Tể Tướng Cờ Vua in a game of chess by post, after three years of losing." },
+      "dream": { "vi": "Thắng Tể Tướng Cờ Vua một ván cờ gửi qua thư, sau ba năm thua liền.", "en": "To finally beat Chess Chancellor in a game of chess by post, after three years of losing." },
       "secret": { "vi": "Đêm nào Mèo cũng lén ra bờ đầm tập thả chân xuống nước, mỗi đêm sâu thêm một đốt ngón.", "en": "Every night she sneaks to the edge of the pond to practise dipping her paws in, a tiny bit deeper each night." },
       "habit": { "vi": "Đếm vịt ba lần mỗi sáng, lần nào ra số khác là đếm lại từ đầu.", "en": "Counts the ducks three times every morning, and starts all over again if a number comes out different." },
       "likes": ["canh-sen-hong", "ech-xanh-bo-ao", "chia-khoa-thanh-co"],
@@ -109,7 +109,7 @@
         { "vi": "Lá sen không bao giờ ướt, giọt nước lăn tròn như hạt ngọc. Tớ ước bộ lông tớ cũng thế.", "en": "Lotus leaves never get wet; drops roll right off like pearls. I wish my fur did that." },
         { "vi": "{name} giúp tớ lùa vịt nhé? Tớ đứng trên bờ chỉ đường, còn cậu thì… lội.", "en": "Help me herd the ducks, {name}? I'll give directions from the bank, and you'll… wade." },
         { "vi": "Tể Tướng hứa nếu tớ thắng một ván, bác ấy gửi tớ chiếc chìa khóa phòng cờ của lâu đài. Meo, phải thắng!", "en": "Tể Tướng promised that if I win just one game, he'll send me the key to the castle's chess room. Meow, I must win!" },
-        { "vi": "Cô Đèn Lồng Sen xin tớ cánh sen khô làm đèn. Tớ chọn cánh đẹp nhất, buộc mười cánh một bó cho dễ đếm.", "en": "Cô Đèn Lồng Sen asks me for dried petals for her lanterns. I pick the prettiest and tie them in bundles of ten, easy to count.", "about": "co-den-long-sen" },
+        { "vi": "Cô Đèn Lồng Sen xin tớ cánh sen khô làm đèn. Tớ chọn cánh đẹp nhất, buộc mười cánh một bó cho dễ đếm.", "en": "Auntie Lotus Lantern asks me for dried petals for her lanterns. I pick the prettiest and tie them in bundles of ten, easy to count.", "about": "co-den-long-sen" },
         { "vi": "Meo… thú thật nhé, tớ sợ nước. Trông đầm bao năm mà chưa lội quá đầu gối bao giờ.", "en": "Meow… honestly? I'm scared of water. All these years at the pond and I've never waded past my knees.", "hearts": 2 },
         { "vi": "Ba năm thua cờ liền, nhưng thư nào Tể Tướng cũng khen tớ một nước hay. Thế là tớ chơi tiếp.", "en": "Three years of losing, but in every letter Tể Tướng praises one clever move of mine. So I keep playing.", "hearts": 3 },
         { "vi": "Đêm nào tớ cũng lén thả chân xuống đầm, mỗi đêm sâu thêm một tí. Đêm qua tới cổ chân rồi đấy!", "en": "Every night I secretly dip my paws in the pond, a tiny bit deeper each time. Last night it reached my ankles!", "hearts": 4 },
@@ -134,7 +134,7 @@
         { "vi": "Đêm khuya, chỉ còn một chiếc đèn cô thắp riêng dưới gốc đa. Chiếc ấy không bao giờ tắt.", "en": "Late at night only one lantern stays lit under the banyan, the one I light myself. That one never goes out.", "when": "night" },
         { "vi": "Mưa rồi! Cô kê chum ra hứng nước. Nước mưa pha hồ thì giấy đèn trong như cánh chuồn chuồn.", "en": "Rain! I'm setting out the jars. Rainwater paste makes lantern paper clear as a dragonfly's wing.", "weather": "rain" },
         { "vi": "Trời quang gió nhẹ thế này, tối nay thả hoa đăng là đẹp nhất. Cháu ra bến sông với cô nhé?", "en": "Clear and calm like this, tonight's perfect for floating lantern-flowers. Will you come down to the river with me?", "weather": "fine" },
-        { "vi": "Mèo Gắp Thú ngoài chợ phiên gắp được chiếc quạt nan tặng cô. Cô dán thêm một bông sen lên, quạt mát cả hiên.", "en": "Mèo Gắp Thú at the fair won me a bamboo fan from the claw machine. I stuck a lotus on it, and now it cools the whole porch.", "about": "meo-gap-thu" },
+        { "vi": "Mèo Gắp Thú ngoài chợ phiên gắp được chiếc quạt nan tặng cô. Cô dán thêm một bông sen lên, quạt mát cả hiên.", "en": "Claw-Machine Cat at the fair won me a bamboo fan from the claw machine. I stuck a lotus on it, and now it cools the whole porch.", "about": "meo-gap-thu" },
         { "vi": "Khung đèn làm bằng nan tre chẻ mỏng, uốn cong mà không gãy. Tre làng mình dẻo lắm.", "en": "Lantern frames are thin strips of split bamboo, bent without snapping. Our village bamboo is wonderfully bendy." },
         { "vi": "Cháu có muốn đặt tên cho chiếc đèn cô đang làm không? Cô hứa sẽ gọi nó đúng tên ấy.", "en": "Would you like to name the lantern I'm making? I promise to call it exactly that." },
         { "vi": "Đèn sen phải có đủ tám cánh. Bảy cánh thì trông chiếc đèn như đang buồn.", "en": "A lotus lantern needs all eight petals. With only seven, it looks a little sad." },
@@ -146,13 +146,13 @@
     }
   ],
   "relations": [
-    { "a": "chu-lai-do-ba", "b": "cun-lua", "kind": "family", "note": { "vi": "Cún Lúa ngủ dưới gầm Đò Mây từ hồi còn bé xíu; Chú Ba coi Cún như đứa con út của bến sông.", "en": "Cún Lúa has slept under the Cloud Ferry since he was a tiny pup; Uncle Ba thinks of him as the landing's youngest child." } },
+    { "a": "chu-lai-do-ba", "b": "cun-lua", "kind": "family", "note": { "vi": "Cún Lúa ngủ dưới gầm Đò Mây từ hồi còn bé xíu; Chú Ba coi Cún như đứa con út của bến sông.", "en": "Rice Pup has slept under the Cloud Ferry since he was a tiny pup; Uncle Ba thinks of him as the landing's youngest child." } },
     { "a": "chu-lai-do-ba", "b": "nghe-nhan-mua-roi", "kind": "friend", "note": { "vi": "Bạn từ thuở bé tắm sông; mùa diễn nào Chú Ba cũng chở rối ra thủy đình giúp ông.", "en": "Friends since they swam in the river as boys; every show season Uncle Ba ferries the puppets out to the water stage for him." } },
     { "a": "nghe-nhan-mua-roi", "b": "co-den-long-sen", "kind": "friend", "note": { "vi": "Đêm nào có rối nước, đèn sen của cô soi sáng mặt ao cho rối múa.", "en": "On every puppet night, her lotus lanterns light up the pond for the puppets to dance." } },
-    { "a": "meo-dam-sen", "b": "co-den-long-sen", "kind": "neighbour", "note": { "vi": "Mèo phơi cánh sen khô, Cô Đèn Lồng Sen dán thành đèn; hai nhà chung một lối ra đầm.", "en": "Mèo dries lotus petals and Cô Đèn Lồng Sen turns them into lanterns; their houses share a path to the pond." } },
-    { "a": "cun-lua", "b": "meo-dam-sen", "kind": "rival", "note": { "vi": "Cún Lúa cứ thấy vịt là đuổi, Mèo Đầm Sen cứ thấy Cún là mắng; mà vắng nhau một ngày là hai bạn đi tìm.", "en": "Cún Lúa chases the ducks whenever he sees them and Mèo Đầm Sen scolds him whenever she sees him; yet a day apart and each goes looking for the other." } },
-    { "a": "chu-lai-do-ba", "b": "meo-bep-truong", "kind": "friend", "note": { "vi": "Chú Ba chở cá tươi và rau sông lên tận bếp, Mèo Bếp Trưởng gửi lại bánh rán nóng cho chuyến đò chiều.", "en": "Uncle Ba ferries fresh fish and river greens up to the kitchen, and Mèo Bếp Trưởng sends back hot fried cakes for the evening crossing." } },
-    { "a": "meo-dam-sen", "b": "te-tuong-co-the", "kind": "pen-pal", "note": { "vi": "Ba năm đánh cờ qua thư, mỗi lá thư một nước đi; Mèo chưa thắng ván nào nhưng chưa bỏ ván nào.", "en": "Three years of chess by post, one move per letter; Mèo hasn't won a game yet, but she's never given one up." } }
+    { "a": "meo-dam-sen", "b": "co-den-long-sen", "kind": "neighbour", "note": { "vi": "Mèo phơi cánh sen khô, Cô Đèn Lồng Sen dán thành đèn; hai nhà chung một lối ra đầm.", "en": "Cat dries lotus petals and Auntie Lotus Lantern turns them into lanterns; their houses share a path to the pond." } },
+    { "a": "cun-lua", "b": "meo-dam-sen", "kind": "rival", "note": { "vi": "Cún Lúa cứ thấy vịt là đuổi, Mèo Đầm Sen cứ thấy Cún là mắng; mà vắng nhau một ngày là hai bạn đi tìm.", "en": "Rice Pup chases the ducks whenever he sees them and Lotus Pond Cat scolds him whenever she sees him; yet a day apart and each goes looking for the other." } },
+    { "a": "chu-lai-do-ba", "b": "meo-bep-truong", "kind": "friend", "note": { "vi": "Chú Ba chở cá tươi và rau sông lên tận bếp, Mèo Bếp Trưởng gửi lại bánh rán nóng cho chuyến đò chiều.", "en": "Uncle Ba ferries fresh fish and river greens up to the kitchen, and Head Chef Cat sends back hot fried cakes for the evening crossing." } },
+    { "a": "meo-dam-sen", "b": "te-tuong-co-the", "kind": "pen-pal", "note": { "vi": "Ba năm đánh cờ qua thư, mỗi lá thư một nước đi; Mèo chưa thắng ván nào nhưng chưa bỏ ván nào.", "en": "Three years of chess by post, one move per letter; Cat hasn't won a game yet, but she's never given one up." } }
   ],
   "arcs": [
     {
@@ -177,7 +177,7 @@
           "letter": {
             "from": "meo-bep-truong",
             "title": { "vi": "Giỏ cá về tới bếp", "en": "The fish basket reached my kitchen" },
-            "body": { "vi": "Chào {name}! Mèo Bếp Trưởng đây. Chú Ba chở giỏ cá lên tới bếp mà cá còn quẫy, chú kể có một bạn nhỏ giải câu đố dê, chó, rau giúp chú. Tớ rán ngay một mẻ bánh gửi xuống bến, phần cậu là chiếc giòn nhất đấy.", "en": "Hello {name}! Mèo Bếp Trưởng here. Uncle Ba brought the fish basket up to my kitchen with the fish still flapping, and told me a young friend had cracked the goat, dog and greens puzzle for him. I fried a batch of cakes straight away and sent them down to the landing; yours is the crispiest one." },
+            "body": { "vi": "Chào {name}! Mèo Bếp Trưởng đây. Chú Ba chở giỏ cá lên tới bếp mà cá còn quẫy, chú kể có một bạn nhỏ giải câu đố dê, chó, rau giúp chú. Tớ rán ngay một mẻ bánh gửi xuống bến, phần cậu là chiếc giòn nhất đấy.", "en": "Hello {name}! Head Chef Cat here. Uncle Ba brought the fish basket up to my kitchen with the fish still flapping, and told me a young friend had cracked the goat, dog and greens puzzle for him. I fried a batch of cakes straight away and sent them down to the landing; yours is the crispiest one." },
             "reward": { "coins": 20, "xp": 15, "items": { "dia-banh-ran": 1 } }
           }
         },
@@ -225,7 +225,7 @@
           "letter": {
             "from": "co-nan-to-he",
             "title": { "vi": "Thư từ chợ phiên", "en": "A letter from the fair" },
-            "body": { "vi": "Chào {name}, cô là Cô Nặn Tò He ngoài chợ phiên. Ông Nghệ Nhân viết thư khoe cánh tay mới của Chú Tễu, sơn ba lớp bóng như mật. Cô nặn tặng cháu một con rồng tò he, để hôm nào cháu đẽo rối thì có bạn ngồi xem.", "en": "Hello {name}, I'm Cô Nặn Tò He from the fair. The puppet master wrote to show off Chú Tễu's new arm, three coats of lacquer and shiny as honey. I've shaped you a sugar-dough dragon, so when you carve your own puppet someday you'll have a friend watching." },
+            "body": { "vi": "Chào {name}, cô là Cô Nặn Tò He ngoài chợ phiên. Ông Nghệ Nhân viết thư khoe cánh tay mới của Chú Tễu, sơn ba lớp bóng như mật. Cô nặn tặng cháu một con rồng tò he, để hôm nào cháu đẽo rối thì có bạn ngồi xem.", "en": "Hello {name}, I'm Auntie Tò He Maker from the fair. The puppet master wrote to show off Chú Tễu's new arm, three coats of lacquer and shiny as honey. I've shaped you a sugar-dough dragon, so when you carve your own puppet someday you'll have a friend watching." },
             "reward": { "coins": 20, "xp": 20, "items": { "to-he-rong": 1 } }
           }
         },
@@ -263,7 +263,7 @@
           "letter": {
             "from": "meo-gap-thu",
             "title": { "vi": "Thư từ chân cầu rồng", "en": "A letter from the dragon bridge" },
-            "body": { "vi": "{name} ơi, Cô Đèn Lồng Sen kể cậu vừa làm xong chiếc hoa đăng đầu tay, meo! Tớ đố cậu: thứ gì càng thắp càng ngắn lại? Nghĩ không ra thì nhìn vào giữa đế đèn nhé. Tớ gửi kèm mấy xu, mua giấy làm chiếc thứ hai đi, meo!", "en": "{name}, Cô Đèn Lồng Sen says you've just made your first lantern-flower, meow! Here's a riddle: what gets shorter the longer it burns? If you're stuck, look in the middle of the base. A few coins enclosed; buy paper for a second one, meow!" },
+            "body": { "vi": "{name} ơi, Cô Đèn Lồng Sen kể cậu vừa làm xong chiếc hoa đăng đầu tay, meo! Tớ đố cậu: thứ gì càng thắp càng ngắn lại? Nghĩ không ra thì nhìn vào giữa đế đèn nhé. Tớ gửi kèm mấy xu, mua giấy làm chiếc thứ hai đi, meo!", "en": "{name}, Auntie Lotus Lantern says you've just made your first lantern-flower, meow! Here's a riddle: what gets shorter the longer it burns? If you're stuck, look in the middle of the base. A few coins enclosed; buy paper for a second one, meow!" },
             "reward": { "coins": 20, "xp": 15, "items": {} }
           }
         },
@@ -292,7 +292,7 @@
     {
       "id": "meo-sen-dem-vit",
       "npc": "meo-dam-sen",
-      "title": { "vi": "Ngăn nắp như Mèo Đầm Sen", "en": "As Tidy as Mèo Đầm Sen" },
+      "title": { "vi": "Ngăn nắp như Mèo Đầm Sen", "en": "As Tidy as Lotus Pond Cat" },
       "teaser": { "vi": "Meo. {name}. Mèo thích mọi thứ ngăn nắp: vịt đếm đủ, cờ đi đúng, nước đong vừa. Sáng nay chẳng thứ gì ngăn nắp cả. Giúp Mèo không?", "en": "Meow. {name}. I like everything tidy: ducks counted, moves right, water measured. This morning nothing is tidy at all. Will you help?" },
       "chapters": [
         {
@@ -311,7 +311,7 @@
           "letter": {
             "from": "te-tuong-co-the",
             "title": { "vi": "Thư của người bạn cờ", "en": "From the chess friend" },
-            "body": { "vi": "Ta là Tể Tướng Cờ Vua, gửi người bạn nhỏ tên {name}. Mèo Đầm Sen viết rằng nước cờ lần này có phần của {name}. Nước ấy khiến ta vuốt râu đủ ba lần mà vẫn chưa nghĩ xong. Ta gửi {name} ít xu, coi như lời khen của một kẻ suýt bị chiếu tướng.", "en": "I, Tể Tướng Cờ Vua, write to the young friend called {name}. Mèo Đầm Sen tells me this move was partly yours. It made me stroke my beard three full times and I still have not finished thinking. Accept these coins as praise from one who was very nearly checkmated." },
+            "body": { "vi": "Ta là Tể Tướng Cờ Vua, gửi người bạn nhỏ tên {name}. Mèo Đầm Sen viết rằng nước cờ lần này có phần của {name}. Nước ấy khiến ta vuốt râu đủ ba lần mà vẫn chưa nghĩ xong. Ta gửi {name} ít xu, coi như lời khen của một kẻ suýt bị chiếu tướng.", "en": "I, Chess Chancellor, write to the young friend called {name}. Lotus Pond Cat tells me this move was partly yours. It made me stroke my beard three full times and I still have not finished thinking. Accept these coins as praise from one who was very nearly checkmated." },
             "reward": { "coins": 20, "xp": 15, "items": {} }
           }
         },
@@ -321,7 +321,7 @@
           "letter": {
             "from": "cun-lua",
             "title": { "vi": "Mũi tớ bảo hôm nay vui", "en": "My nose says today was happy" },
-            "body": { "vi": "Gâu! {name} ơi, mũi tớ bảo ruộng ven đầm hôm nay thơm mùi bùn mới. Tớ chạy ngang chuồng vịt mà Mèo không mắng câu nào, lạ chưa! Chắc tại Mèo đang vui. Tớ gửi cậu viên đá cuội trơn nhất bến.", "en": "Woof! {name}, my nose says the fields by the pond smell of fresh mud today. I ran right past the duck house and Mèo didn't scold me once, how strange! She must be happy. Here's the smoothest pebble on the landing for you." },
+            "body": { "vi": "Gâu! {name} ơi, mũi tớ bảo ruộng ven đầm hôm nay thơm mùi bùn mới. Tớ chạy ngang chuồng vịt mà Mèo không mắng câu nào, lạ chưa! Chắc tại Mèo đang vui. Tớ gửi cậu viên đá cuội trơn nhất bến.", "en": "Woof! {name}, my nose says the fields by the pond smell of fresh mud today. I ran right past the duck house and Cat didn't scold me once, how strange! She must be happy. Here's the smoothest pebble on the landing for you." },
             "reward": { "coins": 20, "xp": 20, "items": {"da-cuoi-song": 1} }
           }
         }

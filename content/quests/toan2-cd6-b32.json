@@ -67,7 +67,7 @@
       ],
       "en": {
         "title": "The day-counting leaves got nibbled",
-        "goTo": "Go up to the sky-watching balcony, where Sâu Xanh is draped over the railing",
+        "goTo": "Go up to the sky-watching balcony, where Green Caterpillar is draped over the railing",
         "lines": [
           "Hi {name}! Mum says I'll turn into a butterfly at the end of the month. I count the days by nibbling one leaf every day...",
           "...but yesterday I was so hungry I nibbled seven leaves in a row, and now my whole week's count is wrong. Munch munch, how embarrassing!",
@@ -76,11 +76,11 @@
         "choices": [
           {
             "text": "I'll pick up the postcards for you!",
-            "reply": "Sâu Xanh curls into a question mark: Thank you, I crawl really slowly!"
+            "reply": "Green Caterpillar curls into a question mark: Thank you, I crawl really slowly!"
           },
           {
             "text": "No more counting by nibbling leaves!",
-            "reply": "Sâu Xanh giggles: Okay, from now on I'll use a calendar. But please get my postcards first!"
+            "reply": "Green Caterpillar giggles: Okay, from now on I'll use a calendar. But please get my postcards first!"
           }
         ]
       }
@@ -355,7 +355,7 @@
           },
           {
             "text": "Remember the opening and closing times first",
-            "reply": "Sâu Xanh: Opens at 9, closes at 15:30. Now let's look at the photos!"
+            "reply": "Green Caterpillar: Opens at 9, closes at 15:30. Now let's look at the photos!"
           }
         ]
       }
@@ -699,7 +699,7 @@
       "text": "Sâu Xanh tặng {name} huy hiệu \"Bạn đồng hành đếm ngày\" và hứa: khi hóa bướm, chuyến bay đầu tiên sẽ là bay tới vai {name}.",
       "en": {
         "title": "Day-counting badge",
-        "text": "Sâu Xanh gives {name} the \"Day-Counting Companion\" badge and promises: when she becomes a butterfly, her very first flight will be to {name}'s shoulder."
+        "text": "Green Caterpillar gives {name} the \"Day-Counting Companion\" badge and promises: when she becomes a butterfly, her very first flight will be to {name}'s shoulder."
       }
     },
     {

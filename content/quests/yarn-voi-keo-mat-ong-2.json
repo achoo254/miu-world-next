@@ -50,11 +50,11 @@
         { "text": "Có tớ ở đây, gió chẳng làm gì được đâu.", "reply": "Nghe {name} nói vậy, vòi Voi đỡ run hẳn. Ngọt chưa nào?" }
       ],
       "en": {
-        "title": "Gấu's reply",
-        "goTo": "Head back to the cotton candy stall, where Voi Kẹo Bông is hugging a little jar of honey",
+        "title": "Bear's reply",
+        "goTo": "Head back to the cotton candy stall, where Cotton Candy Elephant is hugging a little jar of honey",
         "lines": [
-          "{name}! Gấu's letter came, with a honey jar no bigger than a fist. She writes: “Recipe for recipe, and no cheating.”",
-          "I pinned the recipe scrap to the market noticeboard so it wouldn't blow away, but Gấu copied the steps all jumbled; she must have been counting spoons of flour as she wrote. Would you go and sort it out for me?",
+          "{name}! Bear's letter came, with a honey jar no bigger than a fist. She writes: “Recipe for recipe, and no cheating.”",
+          "I pinned the recipe scrap to the market noticeboard so it wouldn't blow away, but Bear copied the steps all jumbled; she must have been counting spoons of flour as she wrote. Would you go and sort it out for me?",
           "Only… it's very windy today. One whistle of wind and my trunk shakes and the sugar threads tangle."
         ],
         "choices": [
@@ -93,14 +93,14 @@
         "right": ["Đúng từng bước! Hóa ra Gấu chỉ viết lộn chứ đâu có viết sai.", "{name} xếp việc mạch lạc như một đầu bếp lâu năm.", "Xong công thức rồi, giờ chỉ còn ông gió là khó chiều."],
         "wrong": ["Máy chưa có đường thì quấn que vào đâu cho ra kẹo, {name}?", "Lau vòi trước khi làm kẹo thì lát nữa vòi lại dính đường thôi.", "Mật với đường chưa trộn thì lấy gì đổ vào máy? Thử lại từ việc đầu tiên."],
         "en": {
-          "right": ["Every step right! Turns out Gấu only wrote it jumbled, not wrong.", "You ordered the jobs as clearly as a seasoned cook, {name}.", "The recipe's sorted; now only Mister Wind is hard to please."],
+          "right": ["Every step right! Turns out Bear only wrote it jumbled, not wrong.", "You ordered the jobs as clearly as a seasoned cook, {name}.", "The recipe's sorted; now only Mister Wind is hard to please."],
           "wrong": ["With no sugar in the machine, what would the stick wind up, {name}?", "Wipe the trunk before making candy and it'll just get sticky again.", "If the honey and sugar aren't mixed, what goes into the machine? Start again from the first job."]
         }
       },
       "en": {
         "title": "Honey cotton candy recipe",
-        "goTo": "Go to the market noticeboard and sort out Gấu's recipe scrap",
-        "prompt": "Gấu's scrap of paper lists the steps for honey cotton candy, but they're jumbled. Put them back in order:",
+        "goTo": "Go to the market noticeboard and sort out Bear's recipe scrap",
+        "prompt": "Bear's scrap of paper lists the steps for honey cotton candy, but they're jumbled. Put them back in order:",
         "items": ["Pour the honey sugar into the hot spinning machine", "Stand the candy in the rack, wipe the trunk and give a puff", "Mix honey with sugar and dry it until it's loose", "Circle a bamboo stick round the machine, winding the threads into a cloud"]
       }
     },
@@ -211,7 +211,7 @@
       "text": "Mẻ kẹo bông mật ong đầu tiên vàng óng, thơm lừng cả mái hiên chợ. Voi chỉ hít một hơi thật sâu rồi gói hết lại: «Phần ăn để dành cho Gấu.»",
       "en": {
         "title": "The first honey batch",
-        "text": "The first batch of honey cotton candy glows golden and fills the market awning with its scent. Voi takes one deep sniff and packs it all away: “The eating is saved for Gấu.”"
+        "text": "The first batch of honey cotton candy glows golden and fills the market awning with its scent. Voi takes one deep sniff and packs it all away: “The eating is saved for Bear.”"
       }
     },
     {
@@ -222,7 +222,7 @@
       "text": "Kẹo đã gói xong, nhưng Nhà của {name} ở xa lắm. Voi nghe nói Cáo Phi Công hay đậu máy bay chở thư ở bãi đất trống cạnh chợ. Mai {name} cùng Voi ra hỏi nhé!",
       "en": {
         "title": "Who will carry the candy?",
-        "text": "The candy is packed, but {name}'s home is a long way off. Voi has heard that Cáo Phi Công often parks the mail plane on the open ground beside the market. Tomorrow {name} and Voi go and ask!"
+        "text": "The candy is packed, but {name}'s home is a long way off. Voi has heard that Pilot Fox often parks the mail plane on the open ground beside the market. Tomorrow {name} and Voi go and ask!"
       }
     }
   ],
@@ -232,7 +232,7 @@
     "skillXp": { "ke-chuyen": 1, "xem-dong-ho": 1, "logic": 1 }
   },
   "en": {
-    "title": "Voi Kẹo Bông's story, chapter 2: Honey sugar and a stray gust",
-    "summary": "Gấu's reply brings her honey sugar recipe. {name} sorts the honey cotton candy steps at the market noticeboard, reads the wind board to learn when the wind drops, picks dry packing at the dry-goods stall, and stands beside Voi under the market awning when a stray gust sweeps past."
+    "title": "Cotton Candy Elephant's story, chapter 2: Honey sugar and a stray gust",
+    "summary": "Bear's reply brings her honey sugar recipe. {name} sorts the honey cotton candy steps at the market noticeboard, reads the wind board to learn when the wind drops, picks dry packing at the dry-goods stall, and stands beside Voi under the market awning when a stray gust sweeps past."
   }
 }

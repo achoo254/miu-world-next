@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "Nobody knows the score",
-        "goTo": "Go out to the running track, where referee Hươu Lêu Nghêu is tooting his whistle",
+        "goTo": "Go out to the running track, where referee Lanky Giraffe is tooting his whistle",
         "lines": [
           "Toot toot! The Bear team picked up 8 balls, the Cat team picked up 5. But which team is ahead, and by how many... I'm this tall and I still can't figure it out!",
           "My team won for sure! But... three balls rolled into the bushes, and I'd rather not crawl in there.",
@@ -78,11 +78,11 @@
         "choices": [
           {
             "text": "I'll fetch the balls right now!",
-            "reply": "Gấu Sún sighs with relief: Phew, thank you! I'll go watch the finish line."
+            "reply": "Toothless Bear sighs with relief: Phew, thank you! I'll go watch the finish line."
           },
           {
-            "text": "Gấu Sún, are you really scared of bushes?",
-            "reply": "Gấu Sún blushes: No way! I'm just... worried the thorns will rip my shirt."
+            "text": "Toothless Bear, are you really scared of bushes?",
+            "reply": "Toothless Bear blushes: No way! I'm just... worried the thorns will rip my shirt."
           }
         ]
       }
@@ -133,7 +133,7 @@
         "choices": [
           {
             "text": "Take the smaller number away from the bigger one!",
-            "reply": "Hươu Lêu Nghêu stretches his neck up to peek into the tree: Exactly! Now let's try it with the flock of birds."
+            "reply": "Lanky Giraffe stretches his neck up to peek into the tree: Exactly! Now let's try it with the flock of birds."
           }
         ]
       }
@@ -472,19 +472,19 @@
       ],
       "en": {
         "title": "Ribbons at the finish line",
-        "goTo": "Run to the finish line, where Gấu Sún is holding three ribbons",
+        "goTo": "Run to the finish line, where Toothless Bear is holding three ribbons",
         "lines": [
-          "Referee Hươu Lêu Nghêu asked me to stretch ribbons as the finish line. The red ribbon is 9 cm, the yellow one 4 cm, the blue one 6 cm. Which ribbon is longer than which, and by how much?",
+          "Referee Lanky Giraffe asked me to stretch ribbons as the finish line. The red ribbon is 9 cm, the yellow one 4 cm, the blue one 6 cm. Which ribbon is longer than which, and by how much?",
           "When I compare things on my own I always get mixed up. {name}, pick a way to compare them for me."
         ],
         "choices": [
           {
             "text": "Lay the ribbons side by side and look at the extra bit",
-            "reply": "Gấu Sún: The part that sticks out is the extra length, how clever!"
+            "reply": "Toothless Bear: The part that sticks out is the extra length, how clever!"
           },
           {
             "text": "Read the numbers and take the smaller from the bigger",
-            "reply": "Gấu Sún: Quick and neat, I like this way!"
+            "reply": "Toothless Bear: Quick and neat, I like this way!"
           }
         ]
       }
@@ -926,7 +926,7 @@
       "text": "Trọng tài Hươu Lêu Nghêu cúi cổ đeo cho {name} chiếc huy chương \"Trọng tài hơn kém\". Gấu Sún reo một tiếng thật to… rồi ngượng ngùng xin chụp ảnh chung.",
       "en": {
         "title": "More-or-less medal",
-        "text": "Referee Hươu Lêu Nghêu bends his long neck to hang the \"More-or-Less Referee\" medal on {name}. Gấu Sún gives a huge cheer... then shyly asks for a photo together."
+        "text": "Referee Lanky Giraffe bends his long neck to hang the \"More-or-Less Referee\" medal on {name}. Toothless Bear gives a huge cheer... then shyly asks for a photo together."
       }
     },
     {
@@ -937,7 +937,7 @@
       "text": "Ở cổng trường, Chó Mực ôm túi thư rối rít: phong bì nào cũng ghi một phép tính thay cho tên người nhận, thư sắp đưa nhầm hết rồi!",
       "en": {
         "title": "The mailbag at the school gate",
-        "text": "At the school gate, Chó Mực is fussing over his mailbag: every envelope has a sum written on it instead of the name of the person it is for, and the letters are about to go to all the wrong places!"
+        "text": "At the school gate, Inky Dog is fussing over his mailbag: every envelope has a sum written on it instead of the name of the person it is for, and the letters are about to go to all the wrong places!"
       }
     }
   ],

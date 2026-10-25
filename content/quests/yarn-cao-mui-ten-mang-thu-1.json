@@ -64,8 +64,8 @@
         }
       ],
       "en": {
-        "title": "Cáo opens a contest",
-        "goTo": "Go to the training ground, where Cáo Cung Thủ is licking a finger and holding it up to test the wind",
+        "title": "Fox opens a contest",
+        "goTo": "Go to the training ground, where Archer Fox is licking a finger and holding it up to test the wind",
         "lines": [
           "Whoosh! {name}, perfect timing. I'm holding a friendly archery contest. Right in front of the castle gate. Archers from everywhere are invited.",
           "One small problem: this morning the guards' horse scratched its back on the wind flags and knocked them all down; the scoreboard is blank, and the arrows in the quiver are muddled long and short. And nobody has put up the target yet."
@@ -143,7 +143,7 @@
         ],
         "en": {
           "right": [
-            "Sixty-six! Cáo chalks the number on the board, the line as straight as an arrow's flight.",
+            "Sixty-six! Fox chalks the number on the board, the line as straight as an arrow's flight.",
             "{name} carried the one into the tens neatly; dead centre.",
             "Whoosh! The scoreboard works. Now all we need is archers."
           ],
@@ -157,7 +157,7 @@
       "en": {
         "title": "Adding the practice score",
         "goTo": "Go to the makeshift practice range, where the practice scoreboard has just gone up",
-        "question": "To test the scoreboard, Cáo shoots two rounds. In the morning round he scores 29 points, in the afternoon round 37 points. How many points does he score in both rounds together?"
+        "question": "To test the scoreboard, Fox shoots two rounds. In the morning round he scores 29 points, in the afternoon round 37 points. How many points does he score in both rounds together?"
       }
     },
     {
@@ -230,7 +230,7 @@
         ],
         "en": {
           "right": [
-            "The quiver is in order! Cáo draws out Thunder, the longest and grandest.",
+            "The quiver is in order! Fox draws out Thunder, the longest and grandest.",
             "{name} added shafts and heads as fast as an arrow off the string.",
             "Short first, long last. Every single one dead centre."
           ],
@@ -243,8 +243,8 @@
       },
       "en": {
         "title": "Long arrows, short arrows",
-        "goTo": "Stop at the gatehouse, where Cáo's quiver stands beside a wooden ruler",
-        "prompt": "Each arrow has a shaft and a head, and Cáo wrote the length of each part on the shaft. Add them up, then sort the arrows from shortest to longest:",
+        "goTo": "Stop at the gatehouse, where Fox's quiver stands beside a wooden ruler",
+        "prompt": "Each arrow has a shaft and a head, and Fox wrote the length of each part on the shaft. Add them up, then sort the arrows from shortest to longest:",
         "items": [
           "Wind arrow: 52 cm and 9 cm",
           "Little arrow: 38 cm and 6 cm",
@@ -281,19 +281,19 @@
       "en": {
         "title": "The opening arrow",
         "goTo": "Go to the grass field before the castle gate, where the ringed target is finally up",
-        "prompt": "The target stands straight and the wind flags flap. Cáo strokes his bowstring: \"Every contest needs an opening arrow. Who shoots it?\"",
+        "prompt": "The target stands straight and the wind flags flap. Fox strokes his bowstring: \"Every contest needs an opening arrow. Who shoots it?\"",
         "choices": [
           {
-            "text": "Cáo shoots, since he's the one holding the contest",
-            "consequence": "Cáo puffs out his chest, draws, lets go. Whoosh! The arrow lands in the eight ring. \"An eight is just right for an opening,\" he winks."
+            "text": "Fox shoots, since he's the one holding the contest",
+            "consequence": "Fox puffs out his chest, draws, lets go. Whoosh! The arrow lands in the eight ring. \"An eight is just right for an opening,\" he winks."
           },
           {
             "text": "Invite {name} to shoot the first arrow",
-            "consequence": "Cáo straightens {name}'s arm and counts one, two, three. The arrow drifts a little wide but still sticks in the target. Cáo claps loudest of all."
+            "consequence": "Fox straightens {name}'s arm and counts one, two, three. The arrow drifts a little wide but still sticks in the target. Fox claps loudest of all."
           },
           {
             "text": "Save it for the youngest archer who comes",
-            "consequence": "Cáo nods: \"Good idea. Youngest shoots first, oldest picks up the arrows.\" And then he volunteers to pick up the arrows."
+            "consequence": "Fox nods: \"Good idea. Youngest shoots first, oldest picks up the arrows.\" And then he volunteers to pick up the arrows."
           }
         ]
       }
@@ -309,7 +309,7 @@
       "goal": 100,
       "en": {
         "title": "Warm-up darts",
-        "prompt": "Before the contest, Cáo sets up a game of darts to warm the hands. Score a hundred points and {name}'s hands are as ready as an archer's!"
+        "prompt": "Before the contest, Fox sets up a game of darts to warm the hands. Score a hundred points and {name}'s hands are as ready as an archer's!"
       }
     },
     {
@@ -320,7 +320,7 @@
       "text": "Cờ gió bay, bảng điểm sạch, ống tên thẳng hàng. Cáo đứng giữa bãi cỏ, chống nạnh ngắm một lượt rồi tuyên bố: «Sân đẹp nhất mọi miền. Có công của {name}.»",
       "en": {
         "title": "The ground is ready",
-        "text": "Wind flags flying, scoreboard clean, quiver in order. Cáo stands in the middle of the field, hands on hips, looks it all over and declares: \"The finest range in any land. {name} helped build it.\""
+        "text": "Wind flags flying, scoreboard clean, quiver in order. Fox stands in the middle of the field, hands on hips, looks it all over and declares: \"The finest range in any land. {name} helped build it.\""
       }
     },
     {
@@ -331,7 +331,7 @@
       "text": "Đêm ấy Cáo không ngủ được. Cáo có một ý mới: trước khi giải bắt đầu, phải tập cho được một mũi tên buộc thư bay qua hào.",
       "en": {
         "title": "An arrow with a letter",
-        "text": "That night Cáo can't sleep. He has a new idea: before the contest begins, he must learn to send an arrow with a letter tied to it across the moat."
+        "text": "That night Fox can't sleep. He has a new idea: before the contest begins, he must learn to send an arrow with a letter tied to it across the moat."
       }
     }
   ],
@@ -344,7 +344,7 @@
     }
   },
   "en": {
-    "title": "Cáo Cung Thủ's story, chapter 1: A contest before the gate",
-    "summary": "Cáo Cung Thủ is holding a friendly archery contest right in front of the castle gate, but the wind flags are down, the scoreboard is blank and the arrows are muddled. {name} raises the wind flags, adds up the practice score, sorts the arrows by length and picks who shoots the opening arrow."
+    "title": "Archer Fox's story, chapter 1: A contest before the gate",
+    "summary": "Archer Fox is holding a friendly archery contest right in front of the castle gate, but the wind flags are down, the scoreboard is blank and the arrows are muddled. {name} raises the wind flags, adds up the practice score, sorts the arrows by length and picks who shoots the opening arrow."
   }
 }

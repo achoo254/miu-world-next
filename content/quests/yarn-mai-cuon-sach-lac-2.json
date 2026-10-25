@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "When she was eight",
-        "goTo": "Go to the help desk, where Cô Thủ Thư Mai is turning the pages of the stray book",
+        "goTo": "Go to the help desk, where Auntie Mai the Librarian is turning the pages of the stray book",
         "lines": [
           "{name}, there's something I want to tell you. When I was eight I borrowed this book and dropped it on a bus. I cried for a week and never dared tell anyone.",
           "That's why I became a librarian, so no book would ever be lost like that again. Now I want to thank whoever looked after it so well.",
@@ -272,8 +272,8 @@
           ],
           "hint": "Granny Stork's hat is another colour, and the deer walks far too fast.",
           "answer": {
-            "text": "It is Cụ Gấu Kính Lão",
-            "explanation": "Only Cụ Gấu Kính Lão has a stick, a slow walk and a green woolly hat. Granny Stork's hat is red and the deer is fast as the wind."
+            "text": "It is Grandpa Bear with Reading Glasses",
+            "explanation": "Only Grandpa Bear with Reading Glasses has a stick, a slow walk and a green woolly hat. Granny Stork's hat is red and the deer is fast as the wind."
           }
         }
       },
@@ -290,7 +290,7 @@
         ],
         "en": {
           "right": [
-            "Cụ Gấu Kính Lão! Chú Bảo Vệ slaps his knee: «He sits on the upstairs balcony every afternoon!»",
+            "Grandpa Bear with Reading Glasses! Chú Bảo Vệ slaps his knee: «He sits on the upstairs balcony every afternoon!»",
             "{name} ruled them out one by one, like a true detective.",
             "All three clues fit; it can't be anyone else."
           ],
@@ -303,16 +303,16 @@
       },
       "en": {
         "title": "Who is the slow reader?",
-        "goTo": "Go to the night-return box, where Chú Bảo Vệ Đèn Pin is on watch",
+        "goTo": "Go to the night-return box, where Flashlight Guard Uncle is on watch",
         "elements": [
           "Granny Stork, the newspaper reader: walking stick, red woolly hat",
-          "Cụ Gấu Kính Lão: walking stick, green woolly hat, walks slowly",
+          "Grandpa Bear with Reading Glasses: walking stick, green woolly hat, walks slowly",
           "Brother Deer, the jogger: green woolly hat, fast as the wind"
         ],
-        "prompt": "Chú Bảo Vệ Đèn Pin hands over the list of readers who often borrow in the evening. The returner uses a stick, walks very slowly and wears a green woolly hat. Who is it?",
+        "prompt": "Flashlight Guard Uncle hands over the list of readers who often borrow in the evening. The returner uses a stick, walks very slowly and wears a green woolly hat. Who is it?",
         "choices": [
           "Granny Stork, the newspaper reader",
-          "Cụ Gấu Kính Lão",
+          "Grandpa Bear with Reading Glasses",
           "Brother Deer, the jogger"
         ]
       }
@@ -344,8 +344,8 @@
       ],
       "en": {
         "title": "How to say thank you?",
-        "goTo": "Go back to the help desk with the news for Cô Thủ Thư Mai",
-        "prompt": "«Cụ Gấu Kính Lão…» Cô Mai turns pink. «How should I thank him, {name}?»",
+        "goTo": "Go back to the help desk with the news for Auntie Mai the Librarian",
+        "prompt": "«Grandpa Bear with Reading Glasses…» Cô Mai turns pink. «How should I thank him, {name}?»",
         "choices": [
           {
             "text": "Write a thank-you letter in her neatest hand",
@@ -381,7 +381,7 @@
       "text": "Chú Bảo Vệ bảo chiều nào Cụ Gấu Kính Lão cũng lên ban công tầng 2 đọc sách với cháu nội. Cô Mai sửa tóc ba lần mà vẫn chưa dám đi.",
       "en": {
         "title": "Up on the balcony",
-        "text": "Chú Bảo Vệ says Cụ Gấu Kính Lão reads with his grandson on the upstairs balcony every afternoon. Cô Mai fixes her hair three times and still doesn't dare go."
+        "text": "Chú Bảo Vệ says Grandpa Bear with Reading Glasses reads with his grandson on the upstairs balcony every afternoon. Cô Mai fixes her hair three times and still doesn't dare go."
       }
     }
   ],
@@ -395,7 +395,7 @@
     "items": {}
   },
   "en": {
-    "title": "Cô Thủ Thư Mai's story, chapter 2: The slow reader",
-    "summary": "Cô Thủ Thư Mai wants to thank whoever kept her book safe for thirty years. {name} finds the things tucked inside it, reads the night watch log, works out the slow reader with Chú Bảo Vệ Đèn Pin and chooses how to say thank you."
+    "title": "Auntie Mai the Librarian's story, chapter 2: The slow reader",
+    "summary": "Auntie Mai the Librarian wants to thank whoever kept her book safe for thirty years. {name} finds the things tucked inside it, reads the night watch log, works out the slow reader with Flashlight Guard Uncle and chooses how to say thank you."
   }
 }

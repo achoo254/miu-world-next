@@ -67,7 +67,7 @@
       ],
       "en": {
         "title": "Chó's idea",
-        "goTo": "Go to the fishpond, where Chó Lùa Vịt is pacing up and down the bank",
+        "goTo": "Go to the fishpond, where Duck-Herding Dog is pacing up and down the bank",
         "lines": [
           "{name}, I lay awake all night thinking about Ông Cụ’s float with the price tag still on.",
           "Anyone is careful around deep water. But this pond has a corner only ankle-deep. Let’s make a really safe wading spot there and invite him over to paddle with the ducks!",
@@ -231,7 +231,7 @@
       },
       "en": {
         "title": "How high would the water come?",
-        "goTo": "Go to the windmill and borrow Chú Đào Kênh Dẫn Nước’s measuring pole",
+        "goTo": "Go to the windmill and borrow Canal-Digging Uncle’s measuring pole",
         "question": "Ông Cụ measures everything in hand-spans: his knee is three hand-spans high, and each hand-span is 15 cm. The water at Sand Corner is 19 cm deep. How many centimetres below his knee is the water?"
       }
     },
@@ -330,8 +330,8 @@
       },
       "en": {
         "title": "The wading-spot rules",
-        "goTo": "Go to the crop fields to write the rules sign with Bác Nông Dân Thành",
-        "prompt": "Bác Nông Dân Thành agrees to the wading spot but wants a sign with rules: «Well now, even shallow water needs rules!» Pick everything that belongs on the sign:",
+        "goTo": "Go to the crop fields to write the rules sign with Uncle Thành the Farmer",
+        "prompt": "Uncle Thành the Farmer agrees to the wading spot but wants a sign with rules: «Well now, even shallow water needs rules!» Pick everything that belongs on the sign:",
         "choices": [
           "A grown-up always watches from the bank",
           "Going into the water alone at dusk",
@@ -370,8 +370,8 @@
       ],
       "en": {
         "title": "A gift with the invitation",
-        "goTo": "Go to the pigsty, where Heo Kho Hàng is waiting to write the invitation",
-        "prompt": "Heo Kho Hàng writes in his neatest hand: «Oink, item one: Ông Cụ Trông Vườn is warmly invited to wade at Sand Corner.» Then Heo asks {name} what to send with it.",
+        "goTo": "Go to the pigsty, where Warehouse Pig is waiting to write the invitation",
+        "prompt": "Warehouse Pig writes in his neatest hand: «Oink, item one: Old Garden Keeper is warmly invited to wade at Sand Corner.» Then Heo asks {name} what to send with it.",
         "choices": [
           {
             "text": "A drawing of the wading spot, marked 19 cm deep",
@@ -438,7 +438,7 @@
     "items": {}
   },
   "en": {
-    "title": "Chó Lùa Vịt's story, chapter 3: A wading spot waiting for him",
-    "summary": "Knowing Ông Cụ Trông Vườn has never dared go into the water, Chó Lùa Vịt wants to make a shallow, safe wading spot at the fishpond and invite him over. {name} compares the depth of four corners, works out how far below his knee the water stays, picks the rules for the sign with Bác Nông Dân Thành, chooses a gift for the invitation with Heo Kho Hàng and guides the ducks across the new spot."
+    "title": "Duck-Herding Dog's story, chapter 3: A wading spot waiting for him",
+    "summary": "Knowing Old Garden Keeper has never dared go into the water, Duck-Herding Dog wants to make a shallow, safe wading spot at the fishpond and invite him over. {name} compares the depth of four corners, works out how far below his knee the water stays, picks the rules for the sign with Uncle Thành the Farmer, chooses a gift for the invitation with Warehouse Pig and guides the ducks across the new spot."
   }
 }

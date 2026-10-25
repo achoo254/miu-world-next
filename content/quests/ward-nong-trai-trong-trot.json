@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Lợn Rừng Đếm Bắp",
+        "title": "Meet Corn-Counting Boar",
         "lines": [
-          "Oink oink! {name}, I'm Lợn Rừng Đếm Bắp, and I know every cob in this cornfield by heart.",
+          "Oink oink! {name}, I'm Corn-Counting Boar, and I know every cob in this cornfield by heart.",
           "All that counting makes me want a riddle friend. Four carrying sums, dare you?"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Lợn Rừng Đếm Bắp",
-        "bossName": "Lợn Rừng Đếm Bắp",
+        "title": "Battle of wits with Corn-Counting Boar",
+        "bossName": "Corn-Counting Boar",
         "introDialogue": "The first cob is picked, and the riddle is inside the husk!",
         "winDialogue": "Oink, I give up! {name} never forgets to carry the one."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Lợn Rừng Đếm Bắp tặng {name} một bắp ngô nếp luộc thơm phức, ăn xong ghé đấu tiếp nhé.",
       "en": {
-        "title": "Lợn Rừng Đếm Bắp's gift",
-        "text": "Lợn Rừng Đếm Bắp gives {name} a hot boiled cob of sticky corn. Come back for another battle after your snack."
+        "title": "Corn-Counting Boar's gift",
+        "text": "Corn-Counting Boar gives {name} a hot boiled cob of sticky corn. Come back for another battle after your snack."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Sang khu chăn nuôi đi {name}, trùm canh khu ở đó chuyên đố phép trừ có nhớ.",
       "en": {
-        "title": "Goodbye, Lợn Rừng Đếm Bắp",
+        "title": "Goodbye, Corn-Counting Boar",
         "text": "Go to the livestock area, {name}: its zone guardian loves take-away riddles with exchanging."
       }
     }
@@ -353,7 +353,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Lợn Rừng Đếm Bắp",
-    "summary": "Lợn Rừng Đếm Bắp guards the crop fields and asks {name} four carrying-over sums about corn and tomatoes."
+    "title": "Zone guardian: Corn-Counting Boar",
+    "summary": "Corn-Counting Boar guards the crop fields and asks {name} four carrying-over sums about corn and tomatoes."
   }
 }

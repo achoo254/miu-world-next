@@ -69,7 +69,7 @@
       "targets": ["st-chia-khoa-thu-tram-vach-bay", "st-chia-khoa-thu-tram-vach-hai", "st-chia-khoa-thu-tram-vach-nam"],
       "en": {
         "title": "Three carvings in the stone",
-        "goTo": "Walk along the bridge spans (Các nhịp cầu) and find Cụ Đồng's three carvings"
+        "goTo": "Walk along the bridge spans (Bridge Spans) and find Cụ Đồng's three carvings"
       }
     },
     {
@@ -129,7 +129,7 @@
       },
       "en": {
         "title": "Turn the dial, small to large",
-        "goTo": "Climb down under the bridge (Gầm cầu) to the iron door with the number lock",
+        "goTo": "Climb down under the bridge (Under the Bridge) to the iron door with the number lock",
         "prompt": "Carved on the door: «Turn the numbers from smallest to biggest». Put the three carvings in turning order:",
         "items": ["Seven keys", "Two keys", "Five keys"]
       }
@@ -248,7 +248,7 @@
       ],
       "en": {
         "title": "Rope and cork float",
-        "goTo": "Run to the drawbridge (Cầu treo) for the rope and cork float",
+        "goTo": "Run to the drawbridge (Suspension Bridge) for the rope and cork float",
         "prompt": "His safety gear is kept by the drawbridge. Read the descriptions and find both things:",
         "items": [
           { "name": "Coil of rope", "clue": "Curled up like a sleeping snake, rough to touch, and strong enough to hold a cow." },
@@ -313,7 +313,7 @@
       },
       "en": {
         "title": "The letter in the iron box",
-        "goTo": "Go through the door under the bridge (Gầm cầu) and open Cụ Đồng's iron box",
+        "goTo": "Go through the door under the bridge (Under the Bridge) and open Cụ Đồng's iron box",
         "text": "Dear Khóa, my pupil,\nIf you are reading this, you have learnt to count, to add, and to be afraid yet keep walking. The hundredth key has three pieces. The first waits where boats wait for passengers. The second sleeps inside the castle gate. The third piece nobody hid: you must make it yourself.\nYour teacher, Cụ Đồng.",
         "question": "According to the letter, where is the third piece of the key?",
         "choices": ["Where boats wait for passengers", "Asleep inside the castle gate", "He has to make it himself"]
@@ -327,7 +327,7 @@
       "text": "Bác Thợ Khóa Thành ôm lá thư vào ngực, mắt đỏ hoe mà miệng vẫn cười. Bác bảo hôm nay hai bác cháu đã mở được một cánh cửa khó nhất: cánh cửa của nỗi sợ.",
       "en": {
         "title": "The door of fear",
-        "text": "Bác Thợ Khóa Thành hugs the letter to his chest, eyes red but smiling. He says today the two of you opened the hardest door of all: the door of fear."
+        "text": "Castle Locksmith Uncle hugs the letter to his chest, eyes red but smiling. He says today the two of you opened the hardest door of all: the door of fear."
       }
     },
     {
@@ -348,7 +348,7 @@
     "skillXp": { "so-sanh-so": 1, "phep-cong": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Bác Thợ Khóa Thành's story, chapter 2: The little door under the bridge",
-    "summary": "Under the stone bridge is an iron door with a number lock. {name} finds three carvings on the bridge spans, orders the numbers, adds up the code, helps Bác Thợ Khóa Thành past his fear of water and reads the letter his teacher left."
+    "title": "Castle Locksmith Uncle's story, chapter 2: The little door under the bridge",
+    "summary": "Under the stone bridge is an iron door with a number lock. {name} finds three carvings on the bridge spans, orders the numbers, adds up the code, helps Castle Locksmith Uncle past his fear of water and reads the letter his teacher left."
   }
 }

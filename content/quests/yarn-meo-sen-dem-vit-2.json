@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "The chess letter arrives",
-        "goTo": "Go to the lotus pond, where Mèo is holding an empty envelope",
+        "goTo": "Go to the lotus pond, where Cat is holding an empty envelope",
         "lines": [
           "Meow. The chess letter came. Three years, one move per letter. I have not won a single game.",
           "This time I want to read carefully and think slowly. But the moment I opened it, the football children ran past, took the pages for paper planes and borrowed the lot to fly on the pitch."
@@ -112,7 +112,7 @@
       "en": {
         "title": "Pages turned paper planes",
         "goTo": "Run to the village football pitch, where the pages came down as paper planes",
-        "prompt": "The children flew the chess letter all over the pitch and ran home for dinner. Read how Mèo describes each thing and pick it up:",
+        "prompt": "The children flew the chess letter all over the pitch and ran home for dinner. Read how Cat describes each thing and pick it up:",
         "items": [
           {
             "name": "Page with the red seal",
@@ -170,10 +170,10 @@
             "Find the sentence with \"think for a long time\".",
             "Read the part before the comma."
           ],
-          "hint": "The Knight to square 7 is the friend's own move, not Mèo's.",
+          "hint": "The Knight to square 7 is the friend's own move, not Cat's.",
           "answer": {
             "text": "The Rook to square 7",
-            "explanation": "The letter says: \"If Mèo moves her Rook to square 7, I will have to think for a long time.\" So that move is the hardest for the friend."
+            "explanation": "The letter says: \"If Cat moves her Rook to square 7, I will have to think for a long time.\" So that move is the hardest for the friend."
           }
         }
       },
@@ -190,9 +190,9 @@
         ],
         "en": {
           "right": [
-            "Right! Mèo's tail shoots up: for the first time her friend has given away a weak spot.",
+            "Right! Cat's tail shoots up: for the first time her friend has given away a weak spot.",
             "{name} read what the friend hid between the lines.",
-            "Meow. Read closely and you see it. Mèo likes close readers."
+            "Meow. Read closely and you see it. Cat likes close readers."
           ],
           "wrong": [
             "The Knight jump is the move the friend just made; read the second line again, {name}.",
@@ -204,12 +204,12 @@
       "en": {
         "title": "Reading the chess letter",
         "goTo": "Take the pages to the lotus-drying yard, put them together and read",
-        "text": "Dear Mèo Đầm Sen,\nI make move one hundred: Knight to square 7.\nIt sounds grand, but I confess I have planned three moves ahead.\nIf you move your Rook to square 7, I will have to think for a long time.\nAutumn has come where I live. Are your lotuses still in bloom?\nYour faraway chess friend",
+        "text": "Dear Lotus Pond Cat,\nI make move one hundred: Knight to square 7.\nIt sounds grand, but I confess I have planned three moves ahead.\nIf you move your Rook to square 7, I will have to think for a long time.\nAutumn has come where I live. Are your lotuses still in bloom?\nYour faraway chess friend",
         "question": "According to the letter, which move would make the friend \"think for a long time\"?",
         "choices": [
-          "Mèo moves her Rook to square 7",
-          "Mèo jumps her Knight to square 7",
-          "Mèo writes about the lotus flowers"
+          "Cat moves her Rook to square 7",
+          "Cat jumps her Knight to square 7",
+          "Cat writes about the lotus flowers"
         ]
       }
     },
@@ -275,9 +275,9 @@
         ],
         "en": {
           "right": [
-            "Two moves: four squares, then two. Mèo taps the Rook down with a firm tock.",
-            "{name} worked it out more neatly than Mèo's friend of three years.",
-            "Fewest moves, just how Mèo likes it: not one step wasted."
+            "Two moves: four squares, then two. Cat taps the Rook down with a firm tock.",
+            "{name} worked it out more neatly than Cat's friend of three years.",
+            "Fewest moves, just how Cat likes it: not one step wasted."
           ],
           "wrong": [
             "Three moves gets there too, but it isn't the fewest, {name}.",
@@ -288,8 +288,8 @@
       },
       "en": {
         "title": "How many moves for the Rook?",
-        "goTo": "Go to Mèo's veranda, where the wooden chessboard sits at the edge",
-        "prompt": "On Mèo's board the Rook stands on square 1. Each move it goes forward exactly 2 or 4 squares. To land on square 7 in as few moves as possible, how many moves does it need?",
+        "goTo": "Go to Cat's veranda, where the wooden chessboard sits at the edge",
+        "prompt": "On Cat's board the Rook stands on square 1. Each move it goes forward exactly 2 or 4 squares. To land on square 7 in as few moves as possible, how many moves does it need?",
         "choices": [
           "2 moves",
           "3 moves",
@@ -325,19 +325,19 @@
       "en": {
         "title": "Which move to send?",
         "goTo": "Go to the head of the pond bank, beside the red postbox",
-        "prompt": "Mèo holds her pen, hesitating over the reply: \"Meow. Which move do I send?\"",
+        "prompt": "Cat holds her pen, hesitating over the reply: \"Meow. Which move do I send?\"",
         "choices": [
           {
             "text": "Rook to square 7, the move the friend fears most",
-            "consequence": "Mèo writes very neatly: \"Rook to 7.\" Then she smiles, the first smile ever in a chess letter."
+            "consequence": "Cat writes very neatly: \"Rook to 7.\" Then she smiles, the first smile ever in a chess letter."
           },
           {
             "text": "Play a strange move to surprise the friend",
-            "consequence": "Mèo picks a move nobody has ever tried: \"Losing is fine. But it has to be a new way of losing.\""
+            "consequence": "Cat picks a move nobody has ever tried: \"Losing is fine. But it has to be a new way of losing.\""
           },
           {
             "text": "Add a line about the lotuses in bloom",
-            "consequence": "Under the move, Mèo writes that pink lotuses cover the pond. Every chess friend, she says, needs some good news."
+            "consequence": "Under the move, Cat writes that pink lotuses cover the pond. Every chess friend, she says, needs some good news."
           }
         ]
       }
@@ -364,7 +364,7 @@
       "text": "Lá thư khô ráo đã nằm gọn trong hòm. Mèo dán tem thẳng góc, miết ba lần, rồi bảo {name}: «Nước này có phần của cháu.»",
       "en": {
         "title": "The letter is posted",
-        "text": "The letter lies dry and safe in the box. Mèo sets the stamp perfectly square, presses it three times and tells {name}: \"Part of this move is yours.\""
+        "text": "The letter lies dry and safe in the box. Cat sets the stamp perfectly square, presses it three times and tells {name}: \"Part of this move is yours.\""
       }
     },
     {
@@ -375,7 +375,7 @@
       "text": "Chưa kịp chờ thư hồi âm, đường ống ra ruộng ven đầm lại rò nước. Mèo cần đong nước cho từng thửa ruộng.",
       "en": {
         "title": "Water for the fields",
-        "text": "Before any reply can come, the pipe out to the fields by the pond starts leaking. Mèo needs to measure water for every field."
+        "text": "Before any reply can come, the pipe out to the fields by the pond starts leaking. Cat needs to measure water for every field."
       }
     }
   ],
@@ -388,7 +388,7 @@
     }
   },
   "en": {
-    "title": "Mèo Đầm Sen's story, chapter 2: A move by post",
-    "summary": "The letter from Mèo's faraway chess friend has been borrowed by the football children. {name} gathers the pages, reads the letter, works out the Rook's moves and helps Mèo choose which move to post."
+    "title": "Lotus Pond Cat's story, chapter 2: A move by post",
+    "summary": "The letter from Cat's faraway chess friend has been borrowed by the football children. {name} gathers the pages, reads the letter, works out the Rook's moves and helps Cat choose which move to post."
   }
 }

@@ -67,20 +67,20 @@
       ],
       "en": {
         "title": "Every painting is upside down!",
-        "goTo": "Go into the picture gallery, where Sâu Tòn Ten is dangling from the picture rail on a silk thread",
+        "goTo": "Go into the picture gallery, where Dangling Caterpillar is dangling from the picture rail on a silk thread",
         "lines": [
-          "Hello {name}! I'm Sâu Tòn Ten, and all I love doing all day is spinning silk and swinging upside down from the rail. From up here, every painting I hung looks perfectly straight!",
+          "Hello {name}! I'm Dangling Caterpillar, and all I love doing all day is spinning silk and swinging upside down from the rail. From up here, every painting I hung looks perfectly straight!",
           "Miss Hằng calls out from her easel: Tòn Ten, you only think they're the right way up because you're upside down! Every painting has its head on the floor, the snail in that one is crawling up into the sky!",
           "Eek, really? A gust of wind spun me right round just now, and the nails and frames all came tumbling down. {name}, pick them up for me, please!"
         ],
         "choices": [
           {
             "text": "I'll pick them up, you hold on tight!",
-            "reply": "Sâu Tòn Ten sways on her silk thread: My silk is very strong, it's only my things that aren't!"
+            "reply": "Dangling Caterpillar sways on her silk thread: My silk is very strong, it's only my things that aren't!"
           },
           {
             "text": "Hop down and stand the right way up to look!",
-            "reply": "Sâu Tòn Ten slides down her silk to the stone floor, looks at the painting and squeals: Eek, it really is upside down!"
+            "reply": "Dangling Caterpillar slides down her silk to the stone floor, looks at the painting and squeals: Eek, it really is upside down!"
           }
         ]
       }
@@ -380,7 +380,7 @@
           },
           {
             "text": "Hold a long ruler along each row",
-            "reply": "Sâu Tòn Ten curls around the ruler: I'll hold the ruler, you take aim, and don't let me crawl off line."
+            "reply": "Dangling Caterpillar curls around the ruler: I'll hold the ruler, you take aim, and don't let me crawl off line."
           }
         ]
       }
@@ -562,7 +562,7 @@
       "text": "Mọi bức tranh hình khối đã treo xuôi. Sâu Tòn Ten bò xuôi xuống ngắm lại một lượt, trao cho {name} huy hiệu \"Thám tử hình khối\" và hứa: từ nay treo tranh xong phải bò xuôi nhìn lại!",
       "en": {
         "title": "The gallery opens",
-        "text": "Every shape painting now hangs the right way up. Sâu Tòn Ten crawls down the right way to check them all once more, gives {name} the \"Shape Detective\" badge and promises: from now on, after hanging a painting, check it the right way up!"
+        "text": "Every shape painting now hangs the right way up. Dangling Caterpillar crawls down the right way to check them all once more, gives {name} the \"Shape Detective\" badge and promises: from now on, after hanging a painting, check it the right way up!"
       }
     },
     {
@@ -573,7 +573,7 @@
       "text": "Ở Thư viện, dưới chân tháp đồng hồ vọng lên tiếng ngáy khò khò: Gấu Trúc Khò ngủ quên, kim đồng hồ tháp chạy lung tung, chẳng ai biết mấy giờ rồi!",
       "en": {
         "title": "Snoring under the clock tower",
-        "text": "At the Library, loud snores come from the foot of the clock tower: Gấu Trúc Khò has overslept, the tower clock's hands are running wild, and nobody knows what time it is!"
+        "text": "At the Library, loud snores come from the foot of the clock tower: Snoring Panda has overslept, the tower clock's hands are running wild, and nobody knows what time it is!"
       }
     }
   ],

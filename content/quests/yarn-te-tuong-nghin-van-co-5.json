@@ -66,11 +66,11 @@
       ],
       "en": {
         "title": "A confession before the game",
-        "goTo": "Go to the chessboard in the great hall, where Tể Tướng Cờ Vua sits alone, hands resting on a board with no pieces set out",
+        "goTo": "Go to the chessboard in the great hall, where Chess Chancellor sits alone, hands resting on a board with no pieces set out",
         "lines": [
           "{name}, you have seen me fear cats, early guests and buttered toast. Today I want to make the hardest move of my life: telling the truth.",
-          "I tell the whole castle that Bác Thợ Khóa Thành and I are «evenly matched». The truth is I have never beaten him. Not once.",
-          "Funny thing: in three years Mèo Đầm Sen has not won a single letter game against me either, and the chess-room key I promised still waits for her. She and I are in the same boat, only she is more honest than I am."
+          "I tell the whole castle that Castle Locksmith Uncle and I are «evenly matched». The truth is I have never beaten him. Not once.",
+          "Funny thing: in three years Lotus Pond Cat has not won a single letter game against me either, and the chess-room key I promised still waits for her. She and I are in the same boat, only she is more honest than I am."
         ],
         "choices": [
           {
@@ -128,7 +128,7 @@
           "hint": "The space for the chancellor's wins is «left blank».",
           "answer": {
             "text": "The chancellor won none at all",
-            "explanation": "In both seasons the «chancellor won» line is blank, meaning he won no games. 36 and 17 are the games Bác Thợ Khóa Thành won."
+            "explanation": "In both seasons the «chancellor won» line is blank, meaning he won no games. 36 and 17 are the games Castle Locksmith Uncle won."
           }
         }
       },
@@ -150,7 +150,7 @@
             "The chancellor nods slowly, as if laying his king down."
           ],
           "wrong": [
-            "That number belongs to Bác Thợ Khóa Thành, not the chancellor.",
+            "That number belongs to Castle Locksmith Uncle, not the chancellor.",
             "Read the «chancellor won» line for each season again and see what it says.",
             "A space «left blank» is an answer too."
           ]
@@ -159,8 +159,8 @@
       "en": {
         "title": "The real chess record",
         "goTo": "Go into the soft-toy store, where the chess record is hidden under a big teddy bear",
-        "text": "Saturday chess record\n– Spring: Bác Thợ Khóa Thành won 36 games. The chancellor won: (left blank).\n– Summer: Bác Thợ Khóa Thành won 17 games. The chancellor won: (left blank).\n– Last line of the page, in tiny writing: «Tell everyone we are evenly matched.»",
-        "question": "According to the notebook, across spring and summer, how many games did the chancellor win against Bác Thợ Khóa Thành?",
+        "text": "Saturday chess record\n– Spring: Castle Locksmith Uncle won 36 games. The chancellor won: (left blank).\n– Summer: Castle Locksmith Uncle won 17 games. The chancellor won: (left blank).\n– Last line of the page, in tiny writing: «Tell everyone we are evenly matched.»",
+        "question": "According to the notebook, across spring and summer, how many games did the chancellor win against Castle Locksmith Uncle?",
         "choices": [
           "Not a single game",
           "36 games",
@@ -197,7 +197,7 @@
           "hint": "Ones: 6 plus 7 makes 13, so write 3 and carry 1 to the tens.",
           "answer": {
             "text": "53 games",
-            "explanation": "36 + 17 = 53: 6 + 7 = 13, write 3 and carry 1; 3 + 1 = 4, plus 1 makes 5. Bác Thợ Khóa Thành won 53 games altogether."
+            "explanation": "36 + 17 = 53: 6 + 7 = 13, write 3 and carry 1; 3 + 1 = 4, plus 1 makes 5. Castle Locksmith Uncle won 53 games altogether."
           }
         }
       },
@@ -228,7 +228,7 @@
       "en": {
         "title": "Adding up two seasons' losses",
         "goTo": "Go to the corner where the wooden stage is being built; the chancellor has put up the two-season scoreboard there",
-        "question": "In spring Bác Thợ Khóa Thành won 36 games, and in summer he won 17. How many games did Bác Thợ Khóa Thành win altogether across both seasons?"
+        "question": "In spring Castle Locksmith Uncle won 36 games, and in summer he won 17. How many games did Castle Locksmith Uncle win altogether across both seasons?"
       }
     },
     {
@@ -371,20 +371,20 @@
       ],
       "en": {
         "title": "How to tell the truth?",
-        "goTo": "Go to the paper-flower arbour, where the chancellor has set down his book to wait for Bác Thợ Khóa Thành",
-        "prompt": "Bác Thợ Khóa Thành's figure appears at the end of the path. The chancellor strokes his beard three times: «I will tell the truth. But how should I say it, {name}?»",
+        "goTo": "Go to the paper-flower arbour, where the chancellor has set down his book to wait for Castle Locksmith Uncle",
+        "prompt": "Castle Locksmith Uncle's figure appears at the end of the path. The chancellor strokes his beard three times: «I will tell the truth. But how should I say it, {name}?»",
         "choices": [
           {
             "text": "Say it as soon as he arrives, before setting up",
-            "consequence": "The chancellor says it all in one breath, red as a red rook. Bác Thợ Khóa Thành laughs: «Click! I have known for ages, and the Saturday game is still my favourite part of the week.»"
+            "consequence": "The chancellor says it all in one breath, red as a red rook. Castle Locksmith Uncle laughs: «Click! I have known for ages, and the Saturday game is still my favourite part of the week.»"
           },
           {
             "text": "Write the truth on the first page and ask him to read it",
-            "consequence": "Bác Thợ Khóa Thành reads it and taps the cover three times, as if greeting a lock: «This page is the finest in the whole book.»"
+            "consequence": "Castle Locksmith Uncle reads it and taps the cover three times, as if greeting a lock: «This page is the finest in the whole book.»"
           },
           {
             "text": "Say it as they shake hands after the game",
-            "consequence": "At the end, the two hands clasp and the chancellor quietly tells the truth. Bác Thợ Khóa Thành grips tighter: «Next time I will teach you the move I have kept most secret.»"
+            "consequence": "At the end, the two hands clasp and the chancellor quietly tells the truth. Castle Locksmith Uncle grips tighter: «Next time I will teach you the move I have kept most secret.»"
           }
         ]
       }
@@ -438,7 +438,7 @@
     }
   },
   "en": {
-    "title": "Tể Tướng Cờ Vua's story, chapter 5: A game that ends in a handshake",
-    "summary": "Before the Saturday game, Tể Tướng Cờ Vua shares his secret: he has never beaten Bác Thợ Khóa Thành. {name} reads the chess record, adds up two seasons of games, numbers the new pages and helps him choose how to tell the truth, so the book closes with a handshake."
+    "title": "Chess Chancellor's story, chapter 5: A game that ends in a handshake",
+    "summary": "Before the Saturday game, Chess Chancellor shares his secret: he has never beaten Castle Locksmith Uncle. {name} reads the chess record, adds up two seasons of games, numbers the new pages and helps him choose how to tell the truth, so the book closes with a handshake."
   }
 }

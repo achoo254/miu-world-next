@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Khỉ Vườn Cam",
+        "title": "Meet Orange Grove Monkey",
         "lines": [
-          "Chee chee! {name}, look up here! I'm Khỉ Vườn Cam, and I always know first when an orange is ripe.",
+          "Chee chee! {name}, look up here! I'm Orange Grove Monkey, and I always know first when an orange is ripe.",
           "I've hung five riddles on five orange branches. Pick them all right and a whole basket of sweet oranges is yours!"
         ],
         "choices": [
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Khỉ Vườn Cam",
-        "bossName": "Khỉ Vườn Cam",
+        "title": "Battle of wits with Orange Grove Monkey",
+        "bossName": "Orange Grove Monkey",
         "introDialogue": "The first branch shakes, and down drops a riddle!",
         "winDialogue": "Chee chee, I climb down and give up! This basket of sweet oranges is {name}'s."
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Khỉ Vườn Cam tặng {name} một rổ cam ngọt lịm, chia cho cả nhà cùng ăn nhé.",
       "en": {
-        "title": "Khỉ Vườn Cam's gift",
-        "text": "Khỉ Vườn Cam gives {name} a basket of super-sweet oranges to share with the family."
+        "title": "Orange Grove Monkey's gift",
+        "text": "Orange Grove Monkey gives {name} a basket of super-sweet oranges to share with the family."
       }
     },
     {
@@ -393,7 +393,7 @@
       "trigger": "auto",
       "text": "Thắng cả ba trùm canh khu rồi, {name} ra chặng cuối đấu với Gà Trống Choai Khổng Lồ nhé.",
       "en": {
-        "title": "Goodbye, Khỉ Vườn Cam",
+        "title": "Goodbye, Orange Grove Monkey",
         "text": "All three zone guardians beaten, {name}: head to the last stop and battle the Giant Cockerel."
       }
     }
@@ -409,7 +409,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Khỉ Vườn Cam",
-    "summary": "Khỉ Vườn Cam guards the orchard and asks {name} five riddles about carrying sums, take-aways and reasoning."
+    "title": "Zone guardian: Orange Grove Monkey",
+    "summary": "Orange Grove Monkey guards the orchard and asks {name} five riddles about carrying sums, take-aways and reasoning."
   }
 }

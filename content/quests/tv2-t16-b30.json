@@ -95,8 +95,8 @@
         }
       ],
       "en": {
-        "title": "Cún Vừng barking at the bottom of the slope",
-        "goTo": "Run to the bottom of the slope, Cún Vừng is barking loudly for someone to help Grandpa",
+        "title": "Sesame Pup barking at the bottom of the slope",
+        "goTo": "Run to the bottom of the slope, Sesame Pup is barking loudly for someone to help Grandpa",
         "lines": [
           "Woof! {name}, thank goodness! My grandpa's leg hurts; he's plonked down at the bottom of the slope and won't admit it hurts.",
           "Hurts? Nonsense! When I was young I ran up this slope faster than the wind, and the wind had to beg me to slow down.",
@@ -109,8 +109,8 @@
             "reply": "Grandpa Vện strokes his beard: what a good child. Find the stick first, it's my wooden horse."
           },
           {
-            "text": "Cún Vừng, let's split up and search!",
-            "reply": "Cún Vừng wags his tail like mad: I'll sniff, you look carefully. To the bamboo by the slope!"
+            "text": "Sesame Pup, let's split up and search!",
+            "reply": "Sesame Pup wags his tail like mad: I'll sniff, you look carefully. To the bamboo by the slope!"
           }
         ]
       }
@@ -975,7 +975,7 @@
         ],
         "choices": [
           {
-            "text": "Hold my hand, Grandpa, and Cún Vừng will go ahead to check the way!",
+            "text": "Hold my hand, Grandpa, and Sesame Pup will go ahead to check the way!",
             "reply": "One, two, three… up! Grandpa Vện is on the step; he lets go of his stick and ruffles both their heads."
           },
           {
@@ -1097,7 +1097,7 @@
       "text": "Ông Vện tặng {name} một khúc tre nhỏ ông tự gọt thành chiếc còi, thổi lên kêu \"toe toe\" như tiếng gió hồi ông còn trẻ. Cún Vừng thì tặng một cái vẫy đuôi dài nhất từ trước tới nay.",
       "en": {
         "title": "A gift from Grandpa Vện",
-        "text": "Grandpa Vện gives {name} a little piece of bamboo he whittled into a whistle; blow it and it goes “toot toot” like the wind when he was young. Cún Vừng gives the longest tail wag ever."
+        "text": "Grandpa Vện gives {name} a little piece of bamboo he whittled into a whistle; blow it and it goes “toot toot” like the wind when he was young. Sesame Pup gives the longest tail wag ever."
       }
     },
     {
@@ -1108,7 +1108,7 @@
       "text": "Hoàng hôn buông xuống hồ sen cuối xóm. Một đàn đom đóm bay ngang, rủ nhau đi soi đường cho Cá Bống: mẹ của Bống ốm rồi, cần tìm thuốc gấp.",
       "en": {
         "title": "Fireflies fly to the lake",
-        "text": "Dusk settles over the lotus lake at the end of the hamlet. A swarm of fireflies flits past, off to light the way for Cá Bống: Bống's mum is ill and needs medicine fast."
+        "text": "Dusk settles over the lotus lake at the end of the hamlet. A swarm of fireflies flits past, off to light the way for Goby Fish: Bống's mum is ill and needs medicine fast."
       }
     }
   ],

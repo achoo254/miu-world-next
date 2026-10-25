@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "A sleepless night",
-        "goTo": "Find Bác Thợ Khóa Thành at the stone bridge over the moat; he's been up all night",
+        "goTo": "Find Castle Locksmith Uncle at the stone bridge over the moat; he's been up all night",
         "lines": [
           "Click… no, this morning I haven't the energy to imitate a lock. I stayed up all night thinking about the third piece.",
           "At dawn the little bell rang «ding» again when the wind blew from the willow by the moat. My teacher used to sit and fish there."
@@ -69,7 +69,7 @@
       "targets": ["st-chia-khoa-thu-tram-hom-cu-dong", "st-chia-khoa-thu-tram-day-dong", "st-chia-khoa-thu-tram-len-do"],
       "en": {
         "title": "Among the willow roots",
-        "goTo": "Go to the willow by the moat (Gốc liễu) and search around its roots"
+        "goTo": "Go to the willow by the moat (Willow Tree Base) and search around its roots"
       }
     },
     {
@@ -126,7 +126,7 @@
           "right": [
             "Dong! The lid springs up as if pushed from inside.",
             "A lock that sings, and {name} sang the very last note right!",
-            "Bác Thợ Khóa Thành is stunned: his teacher really made a lock from a song."
+            "Castle Locksmith Uncle is stunned: his teacher really made a lock from a song."
           ],
           "wrong": [
             "The chest stays shut; the tune must be off the beat.",
@@ -260,7 +260,7 @@
       },
       "en": {
         "title": "A ring wrapped in red wool",
-        "goTo": "Go back to the locksmith's workshop by the bridge (Xưởng khóa) to make the key's ring",
+        "goTo": "Go back to the locksmith's workshop by the bridge (Lock Workshop) to make the key's ring",
         "prompt": "He chooses copper wire wrapped in red wool, because the wool was a gift from the friend he loves most. Put the steps for making the ring in order:",
         "items": ["Wrap red wool round the copper ring", "Hang the key on the hundredth hook", "Bend the copper wire into a circle", "Fix the ring to the end of the key shaft"]
       }
@@ -293,7 +293,7 @@
       "en": {
         "title": "The first apprentice",
         "goTo": "Carry the key ring out to the stone bridge over the moat with him",
-        "prompt": "The ring holds a hundred keys at last. Bác Thợ Khóa Thành looks at {name} and clears his throat: «I need an apprentice…» How does {name} answer?",
+        "prompt": "The ring holds a hundred keys at last. Castle Locksmith Uncle looks at {name} and clears his throat: «I need an apprentice…» How does {name} answer?",
         "choices": [
           { "text": "Let me be your very first pupil!", "consequence": "His eyes crinkle into a smile as he taps {name}'s shoulder three times: «Lesson one: open locks with your head, not a hammer.»" },
           { "text": "Start a class for the whole castle", "consequence": "He scratches his head: «The whole castle is a crowd… but fine, more laughter in the workshop is better.»" },
@@ -313,7 +313,7 @@
       "goal": 3,
       "en": {
         "title": "Lesson one",
-        "goTo": "Go to the castle gate (Cổng thành) and open the turning-disc lock, the trade's first lesson",
+        "goTo": "Go to the castle gate (Castle Gate) and open the turning-disc lock, the trade's first lesson",
         "prompt": "Turn the maze disc so the key slides into the lock, and open three locks in your first lesson!"
       }
     },
@@ -325,7 +325,7 @@
       "text": "Chiếc chìa thứ một trăm đung đưa trên móc, vòng len đỏ ấm như một cái nắm tay. Bác Thợ Khóa Thành tặng {name} chìa khóa thành cổ và hứa giữ sẵn một chỗ trong xưởng cho cháu.",
       "en": {
         "title": "A hundred keys at last",
-        "text": "The hundredth key swings on its hook, its red wool ring as warm as a held hand. Bác Thợ Khóa Thành gives {name} an old castle key and promises a spot in the workshop is always waiting."
+        "text": "The hundredth key swings on its hook, its red wool ring as warm as a held hand. Castle Locksmith Uncle gives {name} an old castle key and promises a spot in the workshop is always waiting."
       }
     },
     {
@@ -347,7 +347,7 @@
     "items": { "chia-khoa-thanh-co": 1 }
   },
   "en": {
-    "title": "Bác Thợ Khóa Thành's story, chapter 4: The key not forged in fire",
-    "summary": "The little bell leads {name} and Bác Thợ Khóa Thành to the willow, where Cụ Đồng's chest opens only to a tune of bells. The teacher's last words reveal what the third piece is, and what the hundredth key is really for."
+    "title": "Castle Locksmith Uncle's story, chapter 4: The key not forged in fire",
+    "summary": "The little bell leads {name} and Castle Locksmith Uncle to the willow, where Cụ Đồng's chest opens only to a tune of bells. The teacher's last words reveal what the third piece is, and what the hundredth key is really for."
   }
 }

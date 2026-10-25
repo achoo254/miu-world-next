@@ -60,11 +60,11 @@
         }
       ],
       "en": {
-        "title": "Thỏ covers his ears",
-        "goTo": "Go to the lawn by the tower, where Thỏ Ngắm Sao is holding both ears shut",
+        "title": "Rabbit covers his ears",
+        "goTo": "Go to the lawn by the tower, where Stargazer Rabbit is holding both ears shut",
         "lines": [
           "Yesterday I made it to the landing, {name}… But next comes the bell gallery. That bell strikes the hours as loud as thunder.",
-          "Chị Kéo Chuông up there knows when the bell strikes. Could you ask her when we can pass without it ringing…"
+          "Bell-Ringer Sister up there knows when the bell strikes. Could you ask her when we can pass without it ringing…"
         ],
         "choices": [
           {
@@ -140,7 +140,7 @@
         ],
         "en": {
           "right": [
-            "Five past nine! Chị Kéo Chuông gives a thumbs-up: the bell has just rung and is resting.",
+            "Five past nine! Bell-Ringer Sister gives a thumbs-up: the bell has just rung and is resting.",
             "{name} times it like a real tower keeper.",
             "Ten quiet minutes, not a single bong."
           ],
@@ -153,8 +153,8 @@
       },
       "en": {
         "title": "When is the bell quiet?",
-        "goTo": "Climb up to the bell gallery and ask Chị Kéo Chuông",
-        "prompt": "Chị Kéo Chuông explains: the bell only strikes on the hour (8 o'clock, 9 o'clock, 10 o'clock…). Crossing the bell gallery takes 10 minutes. When should Thỏ start crossing so he never hears the bell?",
+        "goTo": "Climb up to the bell gallery and ask Bell-Ringer Sister",
+        "prompt": "Bell-Ringer Sister explains: the bell only strikes on the hour (8 o'clock, 9 o'clock, 10 o'clock…). Crossing the bell gallery takes 10 minutes. When should Rabbit start crossing so he never hears the bell?",
         "choices": [
           "8:55",
           "9:05",
@@ -208,7 +208,7 @@
         ],
         "en": {
           "right": [
-            "Thirteen! If Thỏ were here he'd have named every one.",
+            "Thirteen! If Rabbit were here he'd have named every one.",
             "{name} remembered to add the top row too. Well done.",
             "Eight below, five above: the whole sky counted."
           ],
@@ -252,12 +252,12 @@
       ],
       "en": {
         "title": "Making friends with the bell",
-        "goTo": "Stand under the big bell: Chị Kéo Chuông has an idea",
-        "prompt": "Chị Kéo Chuông says: «If something scares you, make friends with it.» How will {name} help Thỏ make friends with the bell?",
+        "goTo": "Stand under the big bell: Bell-Ringer Sister has an idea",
+        "prompt": "Bell-Ringer Sister says: «If something scares you, make friends with it.» How will {name} help Rabbit make friends with the bell?",
         "choices": [
           {
-            "text": "Get Thỏ to tap the bell gently with one finger",
-            "consequence": "Ting… such a big bell, yet it squeaks like a kitten. Thỏ's eyes go round: so it can whisper too."
+            "text": "Get Rabbit to tap the bell gently with one finger",
+            "consequence": "Ting… such a big bell, yet it squeaks like a kitten. Rabbit's eyes go round: so it can whisper too."
           },
           {
             "text": "Give the bell a friendly name",
@@ -265,7 +265,7 @@
           },
           {
             "text": "Listen to it strike from far away, then move a little closer each time",
-            "consequence": "Every hour Thỏ climbs a few steps higher. By evening the bong sounds no worse than a loud heartbeat."
+            "consequence": "Every hour Rabbit climbs a few steps higher. By evening the bong sounds no worse than a loud heartbeat."
           }
         ]
       }
@@ -302,7 +302,7 @@
       ],
       "en": {
         "title": "The secret on the star map",
-        "goTo": "Go down to the lawn by the tower and tell Thỏ Ngắm Sao",
+        "goTo": "Go down to the lawn by the tower and tell Stargazer Rabbit",
         "lines": [
           "I got past the bell gallery, {name}! The bell really doesn't eat rabbits…",
           "To say thank you, I'll show you the star map I drew myself. There's one star in this corner… that I made up.",
@@ -328,7 +328,7 @@
       "text": "Thỏ Ngắm Sao tặng {name} một góc bản đồ sao đêm cậu ấy vẽ lại, có cả gác chuông bé xíu ở mép giấy.",
       "en": {
         "title": "A corner of the star map",
-        "text": "Thỏ Ngắm Sao gives {name} a corner of his night-sky map, redrawn, with a tiny bell gallery sketched at the edge."
+        "text": "Stargazer Rabbit gives {name} a corner of his night-sky map, redrawn, with a tiny bell gallery sketched at the edge."
       }
     },
     {
@@ -339,7 +339,7 @@
       "text": "Còn một đoạn cuối lên lan can đỉnh tháp, và chỉ một đêm nữa là mưa sao băng. Thỏ bắt đầu gói chăn, nhưng tai vẫn hơi run.",
       "en": {
         "title": "Just one night left",
-        "text": "Only the last stretch to the top railing is left, and the meteor shower is just one night away. Thỏ starts packing his blanket, though his ears still tremble a little."
+        "text": "Only the last stretch to the top railing is left, and the meteor shower is just one night away. Rabbit starts packing his blanket, though his ears still tremble a little."
       }
     }
   ],
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Thỏ Ngắm Sao's story, chapter 2: The big bell",
-    "summary": "The way to the top runs through the bell gallery, and the big bell strikes the hours so loudly that Thỏ Ngắm Sao fears his ears will drop off. {name} works out a quiet time to cross with Chị Kéo Chuông, counts stars through the round window, helps Thỏ make friends with the bell and hears the secret on his star map."
+    "title": "Stargazer Rabbit's story, chapter 2: The big bell",
+    "summary": "The way to the top runs through the bell gallery, and the big bell strikes the hours so loudly that Stargazer Rabbit fears his ears will drop off. {name} works out a quiet time to cross with Bell-Ringer Sister, counts stars through the round window, helps Rabbit make friends with the bell and hears the secret on his star map."
   }
 }

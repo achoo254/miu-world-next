@@ -49,7 +49,7 @@
       ],
       "en": {
         "title": "Full moon night",
-        "goTo": "The moon is up. Go to the grassy riverbank to meet Chú Lái Đò Ba",
+        "goTo": "The moon is up. Go to the grassy riverbank to meet Uncle Ba the Ferryman",
         "lines": [
           "Now then, the full moon's as round as a brass tray. The bridge is finished, and people are walking across like it's a festival.",
           "But lantern-flowers have to go right out to midstream to float far. Go up to the lantern porch and bring back flowers in three colours."
@@ -97,8 +97,8 @@
         { "text": "Đi chứ! Cậu chèo trái, tớ chèo phải.", "reply": "Hay quá! Để tớ chạy về lấy cái mũ cói, gió đêm trên sông lạnh lắm." }
       ],
       "en": {
-        "title": "Bé Tí wants to row",
-        "goTo": "Bé Tí Học Chèo is waiting by the silk-cotton tree at the landing",
+        "title": "Little Tí wants to row",
+        "goTo": "Little Tí Learning Chèo is waiting by the silk-cotton tree at the landing",
         "lines": [
           "Hey! I've practised rowing with Uncle Ba every evening, and now I can row in a straight line. Can I come along tonight?",
           "Oh, and the bridge builder says the lanterns have to go in a colour order. He's standing at the bridgehead."
@@ -121,7 +121,7 @@
       "choices": [{ "text": "Để em nhìn kỹ hàng đèn ạ." }],
       "en": {
         "title": "The colour order",
-        "goTo": "Go to the new bamboo bridgehead and ask Anh Thợ Cầu Tre",
+        "goTo": "Go to the new bamboo bridgehead and ask Bamboo Bridge Builder",
         "lines": [
           "Perfect timing! I've hung lanterns along the railing in a colour pattern. If the lantern-flowers on the river follow the same pattern, above and below will shine like a mirror.",
           "Look at the row of lanterns on the bridge and guess the next colour. Get it right and I'll wave a lantern to signal Uncle Ba."
@@ -215,7 +215,7 @@
         "title": "A new course for the Cloud Ferry",
         "prompt": "Lantern-flowers twinkle all around the boat. Uncle Ba asks softly: 'Now there's a bridge, what should the Cloud Ferry do next, {name}?'",
         "choices": [
-          { "text": "Start a rowing class for the kids", "consequence": "'Bé Tí is pupil number one, {name} is pupil number two,' Uncle Ba laughs. 'This landing will never be short of a ferryman.'" },
+          { "text": "Start a rowing class for the kids", "consequence": "'Little Tí is pupil number one, {name} is pupil number two,' Uncle Ba laughs. 'This landing will never be short of a ferryman.'" },
           { "text": "Take people out to see the lanterns every full moon", "consequence": "Uncle Ba nods: 'Lantern trips at full moon, rice and fish on ordinary days. The Cloud Ferry will be busier than ever!'" },
           { "text": "Get ready for a voyage downstream to the sea", "consequence": "Uncle Ba gazes after the water flowing into the distance, his eyes shining: 'Thirty years I've only rowed across the river. Maybe it's time to row along it.'" }
         ]
@@ -227,7 +227,7 @@
       "kind": "reward",
       "trigger": "auto",
       "text": "Trên cầu, đèn sáng thành một hàng; dưới sông, hoa đăng trôi thành một dải. Ở giữa, Đò Mây đậu im, Chú Ba, Bé Tí và {name} ngồi ngắm, chẳng ai nói câu nào mà ai cũng cười.",
-      "en": { "title": "The river aglow", "text": "On the bridge, the lanterns shine in a row; on the river, the lantern-flowers drift in a ribbon. In between, the Cloud Ferry rests, and Uncle Ba, Bé Tí and {name} sit and watch, nobody saying a word and everybody smiling." }
+      "en": { "title": "The river aglow", "text": "On the bridge, the lanterns shine in a row; on the river, the lantern-flowers drift in a ribbon. In between, the Cloud Ferry rests, and Uncle Ba, Little Tí and {name} sit and watch, nobody saying a word and everybody smiling." }
     },
     {
       "id": "xuoi-dong-ra-bien",
@@ -245,7 +245,7 @@
     "items": { "thuyen-nan-giay": 1 }
   },
   "en": {
-    "title": "Chú Lái Đò Ba's story, chapter 4: Lantern night on the river",
-    "summary": "On full moon night the bamboo bridge is finished and the village floats lantern-flowers. {name} gathers lanterns in three colours, invites Bé Tí to row along, works out the lantern order with Anh Thợ Cầu, sails the Cloud Ferry out to midstream and helps Uncle Ba choose a new course for his boat."
+    "title": "Uncle Ba the Ferryman's story, chapter 4: Lantern night on the river",
+    "summary": "On full moon night the bamboo bridge is finished and the village floats lantern-flowers. {name} gathers lanterns in three colours, invites Little Tí to row along, works out the lantern order with Anh Thợ Cầu, sails the Cloud Ferry out to midstream and helps Uncle Ba choose a new course for his boat."
   }
 }

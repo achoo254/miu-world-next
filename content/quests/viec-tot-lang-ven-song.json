@@ -192,8 +192,8 @@
             "consequence": "The long way is further but there are no stones, so Granny and {name} go slow and steady."
           },
           {
-            "text": "Ask Bò Vàng to pull a cart",
-            "consequence": "Ong Thợ zooms off with the news. Bò Vàng Kéo Xe is resting by the bamboo at the riverbank, go and ask him!"
+            "text": "Ask Golden Cow to pull a cart",
+            "consequence": "Ong Thợ zooms off with the news. Cart-Pulling Golden Cow is resting by the bamboo at the riverbank, go and ask him!"
           }
         ]
       }
@@ -209,14 +209,14 @@
       ],
       "choices": [{ "text": "Cảm ơn Bò Vàng nhiều lắm!" }],
       "en": {
-        "title": "Ask Bò Vàng to pull the cart",
-        "goTo": "Go to the bamboo by the riverbank and ask Bò Vàng Kéo Xe",
+        "title": "Ask Golden Cow to pull the cart",
+        "goTo": "Go to the bamboo by the riverbank and ask Cart-Pulling Golden Cow",
         "lines": [
           "Moo, I'm always happy to help Granny! Put the basket on the cart and I'll pull it straight to her gate."
         ],
         "choices": [
           {
-            "text": "Thank you so much, Bò Vàng!"
+            "text": "Thank you so much, Golden Cow!"
           }
         ]
       }
@@ -270,7 +270,7 @@
       "text": "Bà hẹn hôm sau {name} ghé ăn xôi lạc. Cún Lúa đứng chờ ở cầu đá, đuôi vẫy tít rủ {name} đi chơi tiếp.",
       "en": {
         "title": "A sticky-rice date",
-        "text": "Granny invites {name} to drop by tomorrow for peanut sticky rice. Cún Lúa is waiting at the stone bridge, tail wagging, ready to go and play some more."
+        "text": "Granny invites {name} to drop by tomorrow for peanut sticky rice. Rice Pup is waiting at the stone bridge, tail wagging, ready to go and play some more."
       }
     }
   ],

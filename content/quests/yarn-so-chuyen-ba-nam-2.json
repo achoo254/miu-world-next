@@ -91,7 +91,7 @@
       ],
       "en": {
         "title": "Three things from the story",
-        "goTo": "Go to the sister-flower bush (Bụi hoa tỉ muội) and find three things from the leaf-boat story",
+        "goTo": "Go to the sister-flower bush (Sister Flower Bush) and find three things from the leaf-boat story",
         "prompt": "She describes each thing in the story. Read the descriptions and find all three:",
         "items": [
           { "name": "Big almond leaf", "clue": "As big as a grown-up's hand, red as cheeks after a run, its edges curling up like the sides of a boat." },
@@ -116,7 +116,7 @@
       ],
       "en": {
         "title": "Ông Mực's memory",
-        "goTo": "Take the three things up to the porch of Mẩy's house (Hiên nhà Mẩy) and ask Ông Mực Nằm Hiên",
+        "goTo": "Take the three things up to the porch of Mẩy's house (Mẩy's Porch) and ask Old Inky Dog on the Porch",
         "lines": [
           "Woof… gently now, I'm lying here listening to the sunshine. The leaf-boat story? I've heard Bà Năm tell it for fifteen years; I know it better than my way home.",
           "The middle goes like this: the boat drifts to the middle of the pond and the wind gets up. Sen ties the boat with the golden thread, then paddles along the bank, singing as she goes.",
@@ -241,7 +241,7 @@
       },
       "en": {
         "title": "How many pages long?",
-        "goTo": "Go to the flower-garden gate (Cổng vườn hoa), where she has pinned the notebook's contents on a wooden board",
+        "goTo": "Go to the flower-garden gate (Flower Garden Gate), where she has pinned the notebook's contents on a wooden board",
         "question": "The contents say: the leaf-boat story starts on page 12 and is exactly 5 pages long, each page carrying on from the last. What number is the story's last page?"
       }
     },
@@ -289,7 +289,7 @@
       "text": "Đoạn giữa của chuyện chiếc thuyền lá đã được chép lại bằng nét bút chì mới tinh. Bà Năm cài sợi chỉ vàng làm dấu trang, tặng {name} một góc bánh cốm Cô bánh mì Hạnh gửi lên.",
       "en": {
         "title": "Words shining again",
-        "text": "The middle of the leaf-boat story is copied out again in fresh pencil. Bà Năm tucks the golden thread in as a bookmark and gives {name} a piece of the green rice cake Cô bánh mì Hạnh sent her."
+        "text": "The middle of the leaf-boat story is copied out again in fresh pencil. Bà Năm tucks the golden thread in as a bookmark and gives {name} a piece of the green rice cake Auntie Hạnh the Baker sent her."
       }
     },
     {
@@ -310,7 +310,7 @@
     "skillXp": { "tu-ngu": 1, "so-den-100": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Bà Năm Kể Chuyện's story, chapter 2: Lines smudged by rain",
-    "summary": "Night rain has smudged lines of the leaf-boat story, and Bà Năm only half remembers them. {name} finds things from the story to jog her memory, asks Ông Mực Nằm Hiên, picks out the action words for the lost line and works out the story's last page."
+    "title": "Grandma Năm the Storyteller's story, chapter 2: Lines smudged by rain",
+    "summary": "Night rain has smudged lines of the leaf-boat story, and Bà Năm only half remembers them. {name} finds things from the story to jog her memory, asks Old Inky Dog on the Porch, picks out the action words for the lost line and works out the story's last page."
   }
 }

@@ -68,7 +68,7 @@
       ],
       "en": {
         "title": "The dam is leaking",
-        "goTo": "Go to the canal bank by the market, where Hải Ly Sậy is hauling stones",
+        "goTo": "Go to the canal bank by the market, where Reed Beaver is hauling stones",
         "lines": [
           "Hup, hup! {name}, you came just at the right time. My dam is dripping like a tap, and Cá Linh says the duck pond has dropped a whole hand's width.",
           "Blub blub... If I have to swim in a teeny puddle it's so cramped, my tail keeps bumping my head!",
@@ -77,7 +77,7 @@
         "choices": [
           {
             "text": "I'll go collect the stones now!",
-            "reply": "Hải Ly Sậy slaps his tail on the water with a splash: Great! Pick a round one, a flat one and a yellow one."
+            "reply": "Reed Beaver slaps his tail on the water with a splash: Great! Pick a round one, a flat one and a yellow one."
           },
           {
             "text": "Don't worry, Cá Linh!",
@@ -522,7 +522,7 @@
       ],
       "en": {
         "title": "Hải Ly asks how to stack",
-        "goTo": "Go back into the wooden shed by the canal, where Hải Ly Sậy stands beside three stacks of wooden blocks",
+        "goTo": "Go back into the wooden shed by the canal, where Reed Beaver stands beside three stacks of wooden blocks",
         "lines": [
           "To plug the last leak, I need to pick the stack with the most blocks. There are three stacks here: A, B and C.",
           "(calling from the pond) Whichever stack you pick, pick it fast, the water's nearly up to my ears... I mean, up to my fins!",
@@ -531,11 +531,11 @@
         "choices": [
           {
             "text": "Count block by block to be sure",
-            "reply": "Hải Ly Sậy: Slow and steady, just like how I build dams."
+            "reply": "Reed Beaver: Slow and steady, just like how I build dams."
           },
           {
             "text": "Count layer by layer",
-            "reply": "Hải Ly Sậy: Smart! Add the top layer and the bottom layer and you're done."
+            "reply": "Reed Beaver: Smart! Add the top layer and the bottom layer and you're done."
           }
         ]
       }
@@ -962,7 +962,7 @@
       "text": "Con đập xong xuôi, nước ao vịt dâng đầy, Cá Linh bơi vòng vòng sung sướng. Hải Ly Sậy gắn cho {name} huy hiệu gỗ \"Kĩ sư đập nhỏ\" có khắc số 10 thật to.",
       "en": {
         "title": "Dam engineer badge",
-        "text": "The dam is finished, the duck pond fills right up, and Cá Linh swims happy circles. Hải Ly Sậy pins a wooden \"Little Dam Engineer\" badge on {name}, carved with a big number 10."
+        "text": "The dam is finished, the duck pond fills right up, and Cá Linh swims happy circles. Reed Beaver pins a wooden \"Little Dam Engineer\" badge on {name}, carved with a big number 10."
       }
     },
     {
@@ -973,7 +973,7 @@
       "text": "Lộp độp, lộp độp! Cây táo già bên hàng quả rụng quả liên tục. Heo Ủn vừa nhặt vừa ăn, giờ chẳng biết còn lại bao nhiêu quả nữa.",
       "en": {
         "title": "The apple tree by the fruit stalls calls",
-        "text": "Plop, plop, plop! The old apple tree by the fruit stalls keeps dropping apples. Heo Ủn has been picking them up and eating them at the same time, and now has no idea how many are left."
+        "text": "Plop, plop, plop! The old apple tree by the fruit stalls keeps dropping apples. Oink Pig has been picking them up and eating them at the same time, and now has no idea how many are left."
       }
     }
   ],

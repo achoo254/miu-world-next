@@ -67,20 +67,20 @@
       ],
       "en": {
         "title": "The fish tank is half empty",
-        "goTo": "Go to the fish tank at the water stall, where Cá Lia Thia is coming up for air, puffing hard",
+        "goTo": "Go to the fish tank at the water stall, where Betta Fish is coming up for air, puffing hard",
         "lines": [
           "Blub blub! {name}, my tank has lost half its water! Every lap I swim, my tummy scrapes the bottom.",
-          "This morning Heo Ủn scooped out water to cook sweet soup, scooping and scooping... and nobody counted how much.",
+          "This morning Oink Pig scooped out water to cook sweet soup, scooping and scooping... and nobody counted how much.",
           "We have to pour back enough litres. But what's a \"litre\"? All I know is swimming!"
         ],
         "choices": [
           {
             "text": "I'll go find a jug!",
-            "reply": "Cá Lia Thia flicks her tail and splashes water on {name}'s face: Oops, sorry, I'm just so happy!"
+            "reply": "Betta Fish flicks her tail and splashes water on {name}'s face: Oops, sorry, I'm just so happy!"
           },
           {
             "text": "Swim slowly for now!",
-            "reply": "Cá Lia Thia: If I swim slowly I'll fall asleep. Please hurry!"
+            "reply": "Betta Fish: If I swim slowly I'll fall asleep. Please hurry!"
           }
         ]
       }
@@ -138,7 +138,7 @@
         "choices": [
           {
             "text": "Let's start measuring!",
-            "reply": "Cá Lia Thia opens her mouth wide and waits: Pour it here, pour it here!"
+            "reply": "Betta Fish opens her mouth wide and waits: Pour it here, pour it here!"
           }
         ]
       }
@@ -598,7 +598,7 @@
           },
           {
             "text": "Pour can by can, counting as I go",
-            "reply": "Cá Lia Thia: Count out loud, and I'll count along in bubbles."
+            "reply": "Betta Fish: Count out loud, and I'll count along in bubbles."
           }
         ]
       }
@@ -1000,8 +1000,8 @@
       "trigger": "auto",
       "text": "Bể nước trong veo, đầy tới miệng. Cá Lia Thia tặng {name} một chiếc vảy bạc lấp lánh và hứa từ nay sẽ đếm từng lít Heo Ủn múc đi.",
       "en": {
-        "title": "Cá Lia Thia's silver scale",
-        "text": "The tank is crystal clear and full to the brim. Cá Lia Thia gives {name} a sparkly silver scale and promises to count every litre Heo Ủn scoops out from now on."
+        "title": "Betta Fish's silver scale",
+        "text": "The tank is crystal clear and full to the brim. Betta Fish gives {name} a sparkly silver scale and promises to count every litre Oink Pig scoops out from now on."
       }
     },
     {
@@ -1012,7 +1012,7 @@
       "text": "Từ bếp chè giữa chợ bay ra mùi đậu xanh thơm lừng. Heo Ủn đội mũ đầu bếp gọi ầm lên: nồi chè cho cả phiên chợ cần đúng ki-lô-gam đường, đúng lít nước, ai phụ tớ với!",
       "en": {
         "title": "The sweet smell of chè",
-        "text": "The smell of mung beans drifts from the chè (sweet soup) kitchen in the middle of the market. Heo Ủn, in his chef's hat, calls out: the pot of chè for the whole market needs exactly the right kilograms of sugar and litres of water, who'll help me?"
+        "text": "The smell of mung beans drifts from the chè (sweet soup) kitchen in the middle of the market. Oink Pig, in his chef's hat, calls out: the pot of chè for the whole market needs exactly the right kilograms of sugar and litres of water, who'll help me?"
       }
     }
   ],

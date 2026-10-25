@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "Cô Mai is nervous",
-        "goTo": "Go to the help desk, where Cô Thủ Thư Mai has brushed her hair for the fourth time",
+        "goTo": "Go to the help desk, where Auntie Mai the Librarian has brushed her hair for the fourth time",
         "lines": [
           "Will you come with me, {name}? I've read stories to hundreds of children, yet meeting one old gentleman makes my hands shake.",
           "Go up ahead and scout the way. They say his grandson sits on the stairs to the book loft and loves quizzing strangers."
@@ -137,8 +137,8 @@
       },
       "en": {
         "title": "The riddle on the stairs",
-        "goTo": "Climb the stairs to the book loft, where Gấu Con Thuộc Truyện is blocking the way",
-        "question": "Gấu Con Thuộc Truyện folds his arms: «Grandpa's book has 9 stories. Every night he reads 1, and after story 9 he goes back to story 1. Tonight he reads story 8. Which story will he read the night after tomorrow?»"
+        "goTo": "Climb the stairs to the book loft, where Storytelling Bear Cub is blocking the way",
+        "question": "Storytelling Bear Cub folds his arms: «Grandpa's book has 9 stories. Every night he reads 1, and after story 9 he goes back to story 1. Tonight he reads story 8. Which story will he read the night after tomorrow?»"
       }
     },
     {
@@ -169,7 +169,7 @@
       ],
       "en": {
         "title": "The number 7 bus",
-        "goTo": "Go out to the upstairs balcony, where Cụ Gấu Kính Lão sits reading",
+        "goTo": "Go out to the upstairs balcony, where Grandpa Bear with Reading Glasses sits reading",
         "lines": [
           "Ha ha, you're the librarian's friend? Thirty years ago I found that book under a seat on the number 7 bus.",
           "I meant to return it, but my grandson cried for the next story. Then one grew up, another was born, and on we read.",
@@ -246,7 +246,7 @@
           "hint": "First little Mai borrows it; last, it arrives in the return box.",
           "answer": {
             "text": "Borrowed, dropped, found, read, glasses, returned",
-            "explanation": "Little Mai borrowed the book and dropped it on the bus; Cụ Gấu found it and read it to his grandchildren for years; with new glasses he saw the stamp, so he returned it through the night box."
+            "explanation": "Little Mai borrowed the book and dropped it on the bus; Cụ Bear found it and read it to his grandchildren for years; with new glasses he saw the stamp, so he returned it through the night box."
           }
         }
       },
@@ -279,12 +279,12 @@
         "goTo": "Go into the reading room and write down the book's journey",
         "prompt": "Cô Mai wants to write the book's journey in her notebook. Put the events in the order they happened:",
         "items": [
-          "Cụ Gấu gets new glasses and sees the library stamp",
+          "Cụ Bear gets new glasses and sees the library stamp",
           "Eight-year-old Mai borrows the book",
-          "Cụ Gấu reads the book to his grandchildren for years",
+          "Cụ Bear reads the book to his grandchildren for years",
           "The book lands in the night-return box",
           "The book falls under a seat on the number 7 bus",
-          "Cụ Gấu finds the book"
+          "Cụ Bear finds the book"
         ]
       }
     },
@@ -315,11 +315,11 @@
       ],
       "en": {
         "title": "Who keeps the book?",
-        "goTo": "Go back to the help desk, where Cô Thủ Thư Mai is waiting for news",
-        "prompt": "Cụ Gấu comes down to say hello, and the two of them keep bowing and thanking each other. Then Cô Mai asks {name}: «Who should the book stay with now?»",
+        "goTo": "Go back to the help desk, where Auntie Mai the Librarian is waiting for news",
+        "prompt": "Cụ Bear comes down to say hello, and the two of them keep bowing and thanking each other. Then Cô Mai asks {name}: «Who should the book stay with now?»",
         "choices": [
           {
-            "text": "Give it to Cụ Gấu's family and buy the library a new copy",
+            "text": "Give it to Cụ Bear's family and buy the library a new copy",
             "consequence": "Gấu Con hugs the book and jumps for joy. Cô Mai writes in her notebook: «Old book has found a new home.»"
           },
           {
@@ -340,8 +340,8 @@
       "trigger": "auto",
       "text": "Cụ Gấu Kính Lão tặng {name} chiếc kính lúp bạc cụ dùng đọc chữ nhỏ suốt ba mươi năm: «Để cháu tìm những thứ bé tí mà quý.»",
       "en": {
-        "title": "Cụ Gấu's magnifying glass",
-        "text": "Cụ Gấu Kính Lão gives {name} the silver magnifying glass he has used for small print for thirty years: «So you can find tiny, precious things.»"
+        "title": "Cụ Bear's magnifying glass",
+        "text": "Grandpa Bear with Reading Glasses gives {name} the silver magnifying glass he has used for small print for thirty years: «So you can find tiny, precious things.»"
       }
     },
     {
@@ -368,7 +368,7 @@
     }
   },
   "en": {
-    "title": "Cô Thủ Thư Mai's story, chapter 3: Thirty years of slow reading",
-    "summary": "Cô Thủ Thư Mai is about to meet the one who kept her book. {name} solves Gấu Con Thuộc Truyện's riddle, hears Cụ Gấu Kính Lão tell of the number 7 bus, puts the book's journey in order and helps Cô Mai decide who the book should stay with."
+    "title": "Auntie Mai the Librarian's story, chapter 3: Thirty years of slow reading",
+    "summary": "Auntie Mai the Librarian is about to meet the one who kept her book. {name} solves Storytelling Bear Cub's riddle, hears Grandpa Bear with Reading Glasses tell of the number 7 bus, puts the book's journey in order and helps Cô Mai decide who the book should stay with."
   }
 }

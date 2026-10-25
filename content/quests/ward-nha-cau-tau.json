@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Vịt Bầu Cầu Tàu",
+        "title": "Meet Pier Duck",
         "lines": [
-          "Quack quack! {name}, it's Vịt Bầu Cầu Tàu. I swim round the pond all day and know every plank of the jetty.",
+          "Quack quack! {name}, it's Pier Duck. I swim round the pond all day and know every plank of the jetty.",
           "The pond is calm today, so let's have a four-riddle battle for fun!"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Vịt Bầu Cầu Tàu",
-        "bossName": "Vịt Bầu Cầu Tàu",
+        "title": "Battle of wits with Pier Duck",
+        "bossName": "Pier Duck",
         "introDialogue": "Ripples on the pond, and up floats the first riddle!",
         "winDialogue": "Quack… I dive under and give up! {name} is ever so clever."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Vịt Bầu Cầu Tàu tặng {name} một chiếc phao vịt nhỏ màu vàng, thả xuống chậu tắm là nổi.",
       "en": {
-        "title": "Vịt Bầu Cầu Tàu's gift",
-        "text": "Vịt Bầu Cầu Tàu gives {name} a little yellow rubber duck that floats in the bath."
+        "title": "Pier Duck's gift",
+        "text": "Pier Duck gives {name} a little yellow rubber duck that floats in the bath."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ra chuồng gà sau nhà đi {name}, trùm canh khu cuối cùng đang ấp trứng chờ cậu.",
       "en": {
-        "title": "Goodbye, Vịt Bầu Cầu Tàu",
+        "title": "Goodbye, Pier Duck",
         "text": "Go to the henhouse behind the house, {name}: the last zone guardian is sitting on her eggs and waiting."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Vịt Bầu Cầu Tàu",
-    "summary": "Vịt Bầu Cầu Tàu guards the jetty by the pond and asks {name} four riddles about ducks, fishing rods and a safety sign."
+    "title": "Zone guardian: Pier Duck",
+    "summary": "Pier Duck guards the jetty by the pond and asks {name} four riddles about ducks, fishing rods and a safety sign."
   }
 }

@@ -48,14 +48,14 @@
         }
       ],
       "en": {
-        "title": "Meet Mèo Đêm Trăng",
+        "title": "Meet Moonlit Night Cat",
         "lines": [
-          "Meow… isn't the moon bright, {name}? I'm Mèo Đêm Trăng, and every night I sit here counting stars.",
+          "Meow… isn't the moon bright, {name}? I'm Moonlit Night Cat, and every night I sit here counting stars.",
           "It's lonely on my own, so have a battle of wits with me: four riddles."
         ],
         "choices": [
           {
-            "text": "Let's do riddles, Mèo!"
+            "text": "Let's do riddles, Cat!"
           }
         ]
       }
@@ -305,8 +305,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Mèo Đêm Trăng",
-        "bossName": "Mèo Đêm Trăng",
+        "title": "Battle of wits with Moonlit Night Cat",
+        "bossName": "Moonlit Night Cat",
         "introDialogue": "The moonlight shines down, and look, the first riddle appears!",
         "winDialogue": "I curl up and give up! {name} is as bright as the full moon."
       }
@@ -318,8 +318,8 @@
       "trigger": "auto",
       "text": "Mèo Đêm Trăng tặng {name} một ngôi sao giấy phát sáng để treo ở đầu giường.",
       "en": {
-        "title": "Mèo Đêm Trăng's gift",
-        "text": "Mèo Đêm Trăng gives {name} a glow-in-the-dark paper star to hang over your bed."
+        "title": "Moonlit Night Cat's gift",
+        "text": "Moonlit Night Cat gives {name} a glow-in-the-dark paper star to hang over your bed."
       }
     },
     {
@@ -329,7 +329,7 @@
       "trigger": "auto",
       "text": "Xuống bờ hồ có căn chòi cũ, trùm canh khu ở đó thương ông bà lắm, {name} ghé nhé.",
       "en": {
-        "title": "Goodbye, Mèo Đêm Trăng",
+        "title": "Goodbye, Moonlit Night Cat",
         "text": "Down by the lake there's an old hut, and its zone guardian loves grandparents dearly, {name}, pay a visit."
       }
     }
@@ -344,7 +344,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Mèo Đêm Trăng",
-    "summary": "Mèo Đêm Trăng guards the moonlit lane and asks {name} four riddles about a mother's love, saying thank you and spelling."
+    "title": "Zone guardian: Moonlit Night Cat",
+    "summary": "Moonlit Night Cat guards the moonlit lane and asks {name} four riddles about a mother's love, saying thank you and spelling."
   }
 }

@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "The head teacher's riddles",
-        "goTo": "Go back to the hall porch, where Thỏ Măng Non is hopping on the spot",
+        "goTo": "Go back to the hall porch, where Young Bamboo Rabbit is hopping on the spot",
         "lines": [
           "Three, two, one… I know! Er, no, I don't know anything yet. The head teacher hid three riddle envelopes in the activity hall.",
           "I love trick riddles, but I tend to speak before I think. Last time I got it wrong just from answering too fast."
@@ -128,13 +128,13 @@
         },
         "en": {
           "guide": [
-            "Thỏ isn't first, so Thỏ is second or third.",
-            "Chó is right behind Thỏ, so Thỏ can't be last."
+            "Rabbit isn't first, so Rabbit is second or third.",
+            "Chó is right behind Rabbit, so Rabbit can't be last."
           ],
-          "hint": "Thỏ second, Chó third, so who is first?",
+          "hint": "Rabbit second, Chó third, so who is first?",
           "answer": {
             "text": "Hươu",
-            "explanation": "Thỏ isn't first and has Chó behind her, so Thỏ is second and Chó third. Hươu is first."
+            "explanation": "Rabbit isn't first and has Chó behind her, so Rabbit is second and Chó third. Hươu is first."
           }
         }
       },
@@ -151,23 +151,23 @@
         ],
         "en": {
           "right": [
-            "Hươu! Thỏ counts down three seconds before nodding: right!",
+            "Hươu! Rabbit counts down three seconds before nodding: right!",
             "You reasoned one clue at a time, never rushing, {name}.",
             "Envelope one solved! Two to go."
           ],
           "wrong": [
-            "The riddle says Thỏ isn't first; read it again.",
-            "Chó is right behind Thỏ, so Chó can't be first.",
-            "Three, two, one… think slowly. Place Thỏ and Chó first."
+            "The riddle says Rabbit isn't first; read it again.",
+            "Chó is right behind Rabbit, so Chó can't be first.",
+            "Three, two, one… think slowly. Place Rabbit and Chó first."
           ]
         }
       },
       "en": {
         "title": "Who stands first?",
         "goTo": "Take envelope one into the art room, where the picture of three friends hangs",
-        "prompt": "Envelope one: Thỏ, Hươu and Chó stand in a line. Thỏ is not first. Chó stands right behind Thỏ. Who is first in line?",
+        "prompt": "Envelope one: Rabbit, Hươu and Chó stand in a line. Rabbit is not first. Chó stands right behind Rabbit. Who is first in line?",
         "choices": [
-          "Thỏ",
+          "Rabbit",
           "Hươu",
           "Chó"
         ]
@@ -224,7 +224,7 @@
           "hint": "Find the two sentences built as \"… is a/the …\".",
           "answer": {
             "text": "The team-member sentence and the head-teacher sentence",
-            "explanation": "\"Thỏ is a team member in Sparrow class\" and \"Sư Tử Vàng is the head teacher\" answer Who is what. The others tell an action or describe."
+            "explanation": "\"Rabbit is a team member in Sparrow class\" and \"Golden Lion is the head teacher\" answer Who is what. The others tell an action or describe."
           }
         }
       },
@@ -241,12 +241,12 @@
         ],
         "en": {
           "right": [
-            "Two introducing sentences! Thỏ counts down before cheering. Such progress!",
+            "Two introducing sentences! Rabbit counts down before cheering. Such progress!",
             "You spot \"is a\" as sharply as the head teacher, {name}.",
             "Envelope two done. Just one more!"
           ],
           "wrong": [
-            "\"Thỏ ties her scarf\" tells an action, not an introduction.",
+            "\"Rabbit ties her scarf\" tells an action, not an introduction.",
             "\"The scarf is bright red\" describes what the scarf is like.",
             "There's one more sentence with \"is a/the\"; look again."
           ]
@@ -257,9 +257,9 @@
         "goTo": "Go to the yard behind the classrooms to read the board for envelope two",
         "prompt": "Envelope two: Pick the sentences that introduce someone (answering: Who is what?):",
         "choices": [
-          "Thỏ is a team member in Sparrow class.",
-          "Thỏ ties her scarf.",
-          "Sư Tử Vàng is the head teacher.",
+          "Rabbit is a team member in Sparrow class.",
+          "Rabbit ties her scarf.",
+          "Golden Lion is the head teacher.",
           "The scarf is bright red."
         ]
       }
@@ -292,19 +292,19 @@
       "en": {
         "title": "Think first, speak second",
         "goTo": "Go to the jasmine planter outside the corridor to open envelope three",
-        "prompt": "Envelope three is the hardest riddle. Thỏ's mouth is already open to blurt an answer. How do you help her?",
+        "prompt": "Envelope three is the hardest riddle. Rabbit's mouth is already open to blurt an answer. How do you help her?",
         "choices": [
           {
-            "text": "Remind Thỏ to count down three, two, one before speaking",
-            "consequence": "Thỏ shuts her eyes: \"Three… two… one.\" She opens them and answers slowly, and correctly!"
+            "text": "Remind Rabbit to count down three, two, one before speaking",
+            "consequence": "Rabbit shuts her eyes: \"Three… two… one.\" She opens them and answers slowly, and correctly!"
           },
           {
             "text": "Write the answer on paper first together",
-            "consequence": "Writing it down and reading it back, Thỏ spots her near-mistake. She sighs: \"Thank goodness for paper!\""
+            "consequence": "Writing it down and reading it back, Rabbit spots her near-mistake. She sighs: \"Thank goodness for paper!\""
           },
           {
-            "text": "Invite Thỏ to breathe in the jasmine and calm down",
-            "consequence": "Thỏ takes a deep breath of cool jasmine scent and smiles: \"Calm now. Now I think.\""
+            "text": "Invite Rabbit to breathe in the jasmine and calm down",
+            "consequence": "Rabbit takes a deep breath of cool jasmine scent and smiles: \"Calm now. Now I think.\""
           }
         ]
       }
@@ -317,7 +317,7 @@
       "text": "Thầy hiệu trưởng gầm một tiếng nhỏ khen Thỏ. Thỏ chạy ra ôm {name}, quên cả đếm ngược.",
       "en": {
         "title": "Riddles solved",
-        "text": "The head teacher gives a small roar of praise. Thỏ runs over to hug {name}, forgetting even to count down."
+        "text": "The head teacher gives a small roar of praise. Rabbit runs over to hug {name}, forgetting even to count down."
       }
     },
     {
@@ -328,7 +328,7 @@
       "text": "Thỏ đã được chọn làm chỉ huy đội nghi thức! Lễ khai giảng sẽ diễn ra sáng mai. Thỏ hồi hộp tới mức thắt khăn quàng tới lần thứ sáu.",
       "en": {
         "title": "The opening ceremony is near",
-        "text": "Thỏ has been chosen to lead the honour guard! The opening ceremony is tomorrow morning. She's so nervous she has tied her scarf six times."
+        "text": "Rabbit has been chosen to lead the honour guard! The opening ceremony is tomorrow morning. She's so nervous she has tied her scarf six times."
       }
     }
   ],
@@ -341,7 +341,7 @@
     }
   },
   "en": {
-    "title": "Thỏ Măng Non's story, chapter 2: Riddles for the guard",
-    "summary": "To lead the honour guard, you must solve the head teacher's riddles. {name} finds three riddle envelopes, works out who stands first in line, picks the introducing sentences and helps Thỏ Măng Non practise thinking before answering."
+    "title": "Young Bamboo Rabbit's story, chapter 2: Riddles for the guard",
+    "summary": "To lead the honour guard, you must solve the head teacher's riddles. {name} finds three riddle envelopes, works out who stands first in line, picks the introducing sentences and helps Young Bamboo Rabbit practise thinking before answering."
   }
 }

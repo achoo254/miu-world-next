@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Chó Bạc Canh Hào",
+        "title": "Meet Moat-Guarding Silver Dog",
         "lines": [
-          "Woof! Chó Bạc Canh Hào here. I've guarded this moat since the rope bridge was first built.",
+          "Woof! Moat-Guarding Silver Dog here. I've guarded this moat since the rope bridge was first built.",
           "Anyone who wants to admire the bridge with me must pass five review riddles. Are you ready, {name}?"
         ],
         "choices": [
@@ -364,8 +364,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Chó Bạc Canh Hào",
-        "bossName": "Chó Bạc Canh Hào",
+        "title": "Battle of wits with Moat-Guarding Silver Dog",
+        "bossName": "Moat-Guarding Silver Dog",
         "introDialogue": "The bridge ropes are tight, and the first riddle is swinging over!",
         "winDialogue": "Woof… I wag my tail and give up! {name} has revised so well, the rope bridge welcomes you."
       }
@@ -377,8 +377,8 @@
       "trigger": "auto",
       "text": "Chó Bạc Canh Hào tặng {name} chiếc chuông bạc nhỏ, rung lên là ta chạy tới đố tiếp.",
       "en": {
-        "title": "Chó Bạc Canh Hào's gift",
-        "text": "Chó Bạc Canh Hào gives {name} a little silver bell: ring it and I'll come running with more riddles."
+        "title": "Moat-Guarding Silver Dog's gift",
+        "text": "Moat-Guarding Silver Dog gives {name} a little silver bell: ring it and I'll come running with more riddles."
       }
     },
     {
@@ -388,7 +388,7 @@
       "trigger": "auto",
       "text": "Đã gặp ba trùm canh khu, {name} qua cầu treo gặp Hiệp Sĩ Đá Gác Cầu ở chặng cuối nhé.",
       "en": {
-        "title": "Goodbye, Chó Bạc Canh Hào",
+        "title": "Goodbye, Moat-Guarding Silver Dog",
         "text": "Three zone guardians met, {name}: cross the rope bridge to meet the Stone Knight at the last stop."
       }
     }
@@ -404,7 +404,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Chó Bạc Canh Hào",
-    "summary": "Chó Bạc Canh Hào guards the moat before the rope bridge and asks {name} five end-of-term review riddles."
+    "title": "Zone guardian: Moat-Guarding Silver Dog",
+    "summary": "Moat-Guarding Silver Dog guards the moat before the rope bridge and asks {name} five end-of-term review riddles."
   }
 }

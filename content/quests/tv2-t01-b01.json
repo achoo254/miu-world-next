@@ -94,11 +94,11 @@
         }
       ],
       "en": {
-        "title": "Meet Thỏ Hạt Tiêu at the village gate",
-        "goTo": "Go to the village gate, where Thỏ Hạt Tiêu is hopping about waiting for {name}",
+        "title": "Meet Peppercorn Rabbit at the village gate",
+        "goTo": "Go to the village gate, where Peppercorn Rabbit is hopping about waiting for {name}",
         "lines": [
           "{name}! Today our village school starts the new year, and my two long ears won't stop trembling!",
-          "Woof! Thỏ Hạt Tiêu has been dashing past the village gate since the first rooster crowed, I chased after her till I was out of breath!",
+          "Woof! Peppercorn Rabbit has been dashing past the village gate since the first rooster crowed, I chased after her till I was out of breath!",
           "I hopped so fast I dropped a shoe, my school bag and my pencil case along the dirt road.",
           "Will you stay with me? With you here, maybe my ears will stop trembling... on one side at least."
         ],
@@ -643,8 +643,8 @@
         }
       ],
       "en": {
-        "title": "Gà Con Tíu won't go into class",
-        "goTo": "Go to the village well, where Gà Con Tíu is hiding under her mother's wing",
+        "title": "Tíu the Chick won't go into class",
+        "goTo": "Go to the village well, where Tíu the Chick is hiding under her mother's wing",
         "lines": [
           "Cheep... Why is the class so crowded? Why do my legs keep wanting to run home?",
           "It's Tíu's very first day at school, and she keeps hiding under her mum's wing, like the little one who dropped the crayons in the reading.",
@@ -660,8 +660,8 @@
             "reply": "Tíu tilts her head: Why does the drum go boom boom? Okay, I'll go in and see!"
           },
           {
-            "text": "Thỏ Hạt Tiêu and I will walk you right to the classroom door.",
-            "reply": "Thỏ Hạt Tiêu holds out a soft, fluffy paw. Tíu laughs and lets go of her mum."
+            "text": "Peppercorn Rabbit and I will walk you right to the classroom door.",
+            "reply": "Peppercorn Rabbit holds out a soft, fluffy paw. Tíu laughs and lets go of her mum."
           }
         ]
       }
@@ -761,8 +761,8 @@
       "trigger": "auto",
       "text": "Thỏ Hạt Tiêu tặng {name} một củ cà rốt non buộc nơ cỏ may, rồi hứa sẽ ăn thật nhiều rau để mau cao thêm một chút như Na trong bài.",
       "en": {
-        "title": "Thỏ Hạt Tiêu's gift",
-        "text": "Thỏ Hạt Tiêu gives {name} a baby carrot tied with a grass bow, and promises to eat lots of vegetables to grow a little taller, like Na in the reading."
+        "title": "Peppercorn Rabbit's gift",
+        "text": "Peppercorn Rabbit gives {name} a baby carrot tied with a grass bow, and promises to eat lots of vegetables to grow a little taller, like Na in the reading."
       }
     },
     {

@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Chồn Đuôi Bông",
+        "title": "Meet Fluffy-Tail Weasel",
         "lines": [
-          "Hi {name}! I'm Chồn Đuôi Bông, and I've lined up the whole alphabet as a fence round this glade.",
+          "Hi {name}! I'm Fluffy-Tail Weasel, and I've lined up the whole alphabet as a fence round this glade.",
           "To get through, have a battle of wits with me. If you miss, just try again."
         ],
         "choices": [
@@ -202,7 +202,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Chồn Đuôi Bông writes «chair» three ways. Which uses g/gh correctly?",
+            "prompt": "Fluffy-Tail Weasel writes «chair» three ways. Which uses g/gh correctly?",
             "choices": [
               "cái gế",
               "cái ghiế",
@@ -310,8 +310,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Chồn Đuôi Bông",
-        "bossName": "Chồn Đuôi Bông",
+        "title": "Battle of wits with Fluffy-Tail Weasel",
+        "bossName": "Fluffy-Tail Weasel",
         "introDialogue": "The letters are in line and the feelings are ready, here we go!",
         "winDialogue": "My tail is drooping! {name} knows the alphabet even better than I do."
       }
@@ -323,8 +323,8 @@
       "trigger": "auto",
       "text": "Chồn Đuôi Bông tặng {name} một chiếc lá khắc đủ hai mươi chín chữ cái, đấu lại lúc nào cũng được.",
       "en": {
-        "title": "Chồn Đuôi Bông's gift",
-        "text": "Chồn Đuôi Bông gives {name} a leaf carved with all twenty-nine letters. Battle again whenever you like."
+        "title": "Fluffy-Tail Weasel's gift",
+        "text": "Fluffy-Tail Weasel gives {name} a leaf carved with all twenty-nine letters. Battle again whenever you like."
       }
     },
     {
@@ -334,7 +334,7 @@
       "trigger": "auto",
       "text": "Phía tây nam khu rừng có trùm canh khu mê âm thanh và đồ chơi.",
       "en": {
-        "title": "Goodbye, Chồn Đuôi Bông",
+        "title": "Goodbye, Fluffy-Tail Weasel",
         "text": "In the south-west of the forest a zone guardian loves sounds and toys."
       }
     }
@@ -349,7 +349,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Chồn Đuôi Bông",
-    "summary": "Chồn Đuôi Bông guards the north-east glade and asks {name} four riddles about the alphabet, feelings and spelling."
+    "title": "Zone guardian: Fluffy-Tail Weasel",
+    "summary": "Fluffy-Tail Weasel guards the north-east glade and asks {name} four riddles about the alphabet, feelings and spelling."
   }
 }

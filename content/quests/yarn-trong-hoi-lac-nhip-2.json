@@ -64,8 +64,8 @@
         }
       ],
       "en": {
-        "title": "Voi Trống Hội searches",
-        "goTo": "Go back beside the stage, where Voi Trống Hội is turning the curtains upside down",
+        "title": "Festival Drum Elephant searches",
+        "goTo": "Go back beside the stage, where Festival Drum Elephant is turning the curtains upside down",
         "lines": [
           "I've searched the whole drum, {name}. A brown shard the size of a baby's hand. I always keep it stuck inside for luck.",
           "It sounds silly, but without it my hands feel like they're about to miss the beat.",
@@ -144,7 +144,7 @@
         ],
         "en": {
           "right": [
-            "Clack clack clack! Nine things. Vẹt Phách Tre claps his clappers three times.",
+            "Clack clack clack! Nine things. Bamboo Clapper Parrot claps his clappers three times.",
             "Nicely counted. Now let's check the shop roof.",
             "{name} remembered the extra one. That magpie can't fool you."
           ],
@@ -156,9 +156,9 @@
         }
       },
       "en": {
-        "title": "Vẹt Phách Tre's riddle",
-        "goTo": "Ask Vẹt Phách Tre, who is practising his clappers under the old almond tree",
-        "question": "Vẹt Phách Tre clacks his clappers: «The magpie hides things on the shop roof. The roof has four tile squares; it stuffs two shiny things in each, and one extra shard in the last square. Riddle me this: how many things are on the roof altogether?»"
+        "title": "Bamboo Clapper Parrot's riddle",
+        "goTo": "Ask Bamboo Clapper Parrot, who is practising his clappers under the old almond tree",
+        "question": "Bamboo Clapper Parrot clacks his clappers: «The magpie hides things on the shop roof. The roof has four tile squares; it stuffs two shiny things in each, and one extra shard in the last square. Riddle me this: how many things are on the roof altogether?»"
       }
     },
     {
@@ -267,7 +267,7 @@
           "Cracked shard: 5 rings",
           "White shard: 7 rings"
         ],
-        "prompt": "There are four shards in the nest. Voi Trống Hội remembers: his has more pattern rings than the green shard, but fewer than the cracked one. Which shard is Voi's?",
+        "prompt": "There are four shards in the nest. Festival Drum Elephant remembers: his has more pattern rings than the green shard, but fewer than the cracked one. Which shard is Voi's?",
         "choices": [
           "Green shard",
           "Brown shard",
@@ -346,7 +346,7 @@
       ],
       "en": {
         "title": "Grandma's rice pot",
-        "goTo": "Bring the shard back to Voi Trống Hội beside the stage",
+        "goTo": "Bring the shard back to Festival Drum Elephant beside the stage",
         "lines": [
           "Oh, that's it! You know what, {name}? This is a piece of my grandma's rice pot.",
           "When I was little I was too shy to talk to anyone. Grandma turned her chipped pot upside down, handed me her big rice paddles and said: if you can't say it, drum it.",
@@ -368,7 +368,7 @@
       "text": "Voi Trống Hội dán mảnh sành vào lòng trống, gõ một tràng tùng tùng cảm ơn rồi tặng {name} một chiếc tem bé ngoan.",
       "en": {
         "title": "The shard goes home",
-        "text": "Voi Trống Hội sticks the shard back inside his drum, plays a rolling thank-you and gives {name} a good-pupil stamp."
+        "text": "Festival Drum Elephant sticks the shard back inside his drum, plays a rolling thank-you and gives {name} a good-pupil stamp."
       }
     },
     {
@@ -379,7 +379,7 @@
       "text": "Vừa lúc ấy Vẹt Phách Tre chạy tới, tay cầm tờ giấy kín những chấm tròn: «Thầy hiệu trưởng đổi bài mở màn rồi, nhịp mới viết bằng chấm!» Voi Trống Hội nhìn tờ giấy, vòi cứng đơ.",
       "en": {
         "title": "A new rhythm",
-        "text": "Just then Vẹt Phách Tre rushes over with a sheet covered in dots: «The head teacher changed the opening piece, and the new rhythm is written in dots!» Voi Trống Hội stares at the sheet and his trunk goes stiff."
+        "text": "Just then Bamboo Clapper Parrot rushes over with a sheet covered in dots: «The head teacher changed the opening piece, and the new rhythm is written in dots!» Festival Drum Elephant stares at the sheet and his trunk goes stiff."
       }
     }
   ],
@@ -395,7 +395,7 @@
     }
   },
   "en": {
-    "title": "Voi Trống Hội's story, chapter 2: The lucky shard",
-    "summary": "The little shard Voi Trống Hội keeps inside his drum has vanished. {name} follows the trail round the portal gate, solves Vẹt Phách Tre's riddle, picks the right shard out of a magpie's nest, then hears the story of Grandma's rice pot."
+    "title": "Festival Drum Elephant's story, chapter 2: The lucky shard",
+    "summary": "The little shard Festival Drum Elephant keeps inside his drum has vanished. {name} follows the trail round the portal gate, solves Bamboo Clapper Parrot's riddle, picks the right shard out of a magpie's nest, then hears the story of Grandma's rice pot."
   }
 }

@@ -88,8 +88,8 @@
         }
       ],
       "en": {
-        "title": "Cua Kềnh scuttles back to the old hut",
-        "goTo": "Go to the old hut on the lakeshore, Cua Kềnh is scuttling sideways towards it",
+        "title": "Big Claw Crab scuttles back to the old hut",
+        "goTo": "Go to the old hut on the lakeshore, Big Claw Crab is scuttling sideways towards it",
         "lines": [
           "Goodbye, {name}! Oops, I mean hello. I'm so used to saying things backwards!",
           "This is my family's old hut. When I was little I lived here with Grandma; now everyone's moved to a new house.",
@@ -561,7 +561,7 @@
       ],
       "en": {
         "title": "Carved marks under the dust",
-        "goTo": "Cua Kềnh is waving a claw from the old hut on the shore: found the marks!",
+        "goTo": "Big Claw Crab is waving a claw from the old hut on the shore: found the marks!",
         "lines": [
           "{name}, look! Under the dust there are little carved lines, with an age written beside each one.",
           "The lowest line is level with the bottom bar. The highest one reaches right up to the top bar.",
@@ -791,7 +791,7 @@
         "choices": [
           {
             "text": "Cua, look after that piece of door bar really carefully!",
-            "reply": "Cua Kềnh hugs the piece of wood: holding it makes me think of Grandma, just like touching the carved lines in that poem."
+            "reply": "Big Claw Crab hugs the piece of wood: holding it makes me think of Grandma, just like touching the carved lines in that poem."
           }
         ]
       }
@@ -832,7 +832,7 @@
       "text": "Cua Kềnh tặng {name} một mẩu gỗ nhỏ cắt từ then cửa của bà, có khắc sẵn một vạch. Cua dặn: cậu cao tới đâu thì khắc tới đó nhé!",
       "en": {
         "title": "A marked piece of the door bar",
-        "text": "Cua Kềnh gives {name} a small piece of wood cut from Grandma's door bar, with one line already carved. Cua says: carve a line wherever your height reaches!"
+        "text": "Big Claw Crab gives {name} a small piece of wood cut from Grandma's door bar, with one line already carved. Cua says: carve a line wherever your height reaches!"
       }
     },
     {
@@ -843,7 +843,7 @@
       "text": "Từ con dốc gập ghềnh phía xa vọng lại tiếng \"Gâu! Gâu!\". Cún Vừng đang cuống quýt: ông Vện đau chân, chẳng bước lên dốc được.",
       "en": {
         "title": "Woofing on the slope",
-        "text": "A “Woof! Woof!” rings out from the bumpy slope in the distance. Cún Vừng is in a panic: Grandpa Vện has a sore leg and can't climb the hill."
+        "text": "A “Woof! Woof!” rings out from the bumpy slope in the distance. Sesame Pup is in a panic: Grandpa Vện has a sore leg and can't climb the hill."
       }
     }
   ],

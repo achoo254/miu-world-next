@@ -51,7 +51,7 @@
       ],
       "en": {
         "title": "The bear's dream",
-        "goTo": "Go down into the dungeon, where Gấu Gác Hầm is wringing his paws with nerves",
+        "goTo": "Go down into the dungeon, where Dungeon-Keeper Bear is wringing his paws with nerves",
         "lines": [
           "Shh… {name}, I told the puppet, so now I'll tell you: I want to watch the sun rise, just once.",
           "But I guard the cellar all night and only rest at dawn. If I leave, who'll keep watch?",
@@ -120,7 +120,7 @@
       },
       "en": {
         "title": "The night-watch list",
-        "goTo": "Go into the dark corner of the cellar (Góc hầm tối) to ask Dơi Nhí Lộn Ngược",
+        "goTo": "Go into the dark corner of the cellar (Dark Cellar Corner) to ask Upside-Down Baby Bat",
         "text": "Dơi Nhí's night-watch list\n1. Bear leaves one oil lamp at the cellar door, turned right down.\n2. No loud singing after ten at night.\n3. If a visitor comes for lost property, Dơi hangs up a note saying come back tomorrow morning.\n4. Bear must be home before the sun climbs as high as the tower.",
         "question": "According to the list, what will Dơi Nhí do if a visitor comes looking for something at night?",
         "choices": ["Fly off and wake the bear", "Hang up a note saying come back in the morning", "Search the store room for them"]
@@ -185,7 +185,7 @@
       },
       "en": {
         "title": "What time to set off?",
-        "goTo": "Go to the clock hall (Gian đồng hồ) to choose a time to set off",
+        "goTo": "Go to the clock hall (Clock Room) to choose a time to set off",
         "prompt": "Today the sun rises at 6 in the morning. The bear must leave the cellar before then. Pick every clock showing a time he could set off:",
         "choices": ["5 o'clock", "Half past 7", "4:30", "Quarter past 6", "5:45"]
       }
@@ -248,7 +248,7 @@
       },
       "en": {
         "title": "Where to watch the dawn?",
-        "goTo": "The bear drags {name} to the west gate (Cổng tây), planning to wait for dawn there",
+        "goTo": "The bear drags {name} to the west gate (West Gate), planning to wait for dawn there",
         "prompt": "The bear plans to watch the sunrise from the west gate. But the sun rises in the east and sets in the west. The signpost says: the rose arch is on the castle's east side, the servants' house to the north. Where should the bear stand?",
         "choices": ["Right here at the west gate", "Under the rose arch", "In front of the servants' house"]
       }
@@ -280,7 +280,7 @@
       ],
       "en": {
         "title": "Shivering on the stone bench",
-        "goTo": "Run to the rose arch (Vòm hoa hồng); the eastern sky is already turning pink",
+        "goTo": "Run to the rose arch (Rose Arch); the eastern sky is already turning pink",
         "prompt": "The bear sits on the stone bench, shaking all over: it's still dim, and the cellar feels so far away. «Maybe I should go back?» What does {name} do?",
         "choices": [
           { "text": "Count down from ten with him until the sun appears", "consequence": "Ten, nine, eight… right on «one» a golden edge peeps over the wall, as punctual as if someone timed it." },
@@ -333,9 +333,9 @@
         ],
         "en": {
           "right": [
-            "The bear tells it smoothly without a stumble; Hươu Cao will love it.",
+            "The bear tells it smoothly without a stumble; Giraffe will love it.",
             "Beginning to end, crystal clear; you helped the bear tell it like a puppeteer, {name}.",
-            "For the first time the bear will describe a sunrise to Hươu Cao, instead of only listening."
+            "For the first time the bear will describe a sunrise to Giraffe, instead of only listening."
           ],
           "wrong": [
             "The sunrise is the ending; it can't come first.",
@@ -345,8 +345,8 @@
         }
       },
       "en": {
-        "title": "Telling it to Hươu Cao",
-        "prompt": "This time the bear wants to tell Hươu Cao about his special night himself. Put what happened in the right order:",
+        "title": "Telling it to Giraffe",
+        "prompt": "This time the bear wants to tell Giraffe about his special night himself. Put what happened in the right order:",
         "items": ["Watch the sun peep over the wall", "Nearly wait for dawn at the west gate", "Ask Dơi Nhí to stay up and mind the cellar", "Pick a setting-off time in the clock hall"]
       }
     },
@@ -358,7 +358,7 @@
       "text": "Mặt trời lên, nắng phủ vàng bộ lông Gấu Gác Hầm. Gấu cười toe như chưa từng biết sợ, rồi tặng {name} chiếc huy hiệu hiệp sĩ trong kho: «Hôm nay hai đứa mình đều dũng cảm.»",
       "en": {
         "title": "Sunlight on the bear's fur",
-        "text": "The sun climbs and turns Gấu Gác Hầm's fur to gold. He grins as if he'd never been afraid of anything, then gives {name} a knight's badge from the store: «We were both brave today.»"
+        "text": "The sun climbs and turns Dungeon-Keeper Bear's fur to gold. He grins as if he'd never been afraid of anything, then gives {name} a knight's badge from the store: «We were both brave today.»"
       }
     },
     {
@@ -369,7 +369,7 @@
       "text": "Từ hôm ấy, đêm Dơi Nhí gác hầm, sáng Gấu Gác Hầm ra vòm hoa hồng chào mặt trời rồi mới đi ngủ. Gấu còn hẹn sẽ có ngày leo lên tận ngọn tháp cao nhất, cùng {name}.",
       "en": {
         "title": "A new watch rota",
-        "text": "From that day on, Dơi Nhí guards the cellar by night, and every morning Gấu Gác Hầm greets the sun at the rose arch before going to bed. He's even promised to climb the tallest tower one day, with {name}."
+        "text": "From that day on, Dơi Nhí guards the cellar by night, and every morning Dungeon-Keeper Bear greets the sun at the rose arch before going to bed. He's even promised to climb the tallest tower one day, with {name}."
       }
     }
   ],
@@ -380,7 +380,7 @@
     "items": { "huy-hieu-hiep-si": 1 }
   },
   "en": {
-    "title": "Gấu Gác Hầm's story, chapter 3: The first sunrise",
-    "summary": "Gấu Gác Hầm wants to watch the sun rise just once, but who will mind the cellar? {name} asks Dơi Nhí to keep night watch, picks a time to set off, works out where dawn comes from and sits with the bear under the rose arch waiting for the sun."
+    "title": "Dungeon-Keeper Bear's story, chapter 3: The first sunrise",
+    "summary": "Dungeon-Keeper Bear wants to watch the sun rise just once, but who will mind the cellar? {name} asks Dơi Nhí to keep night watch, picks a time to set off, works out where dawn comes from and sits with the bear under the rose arch waiting for the sun."
   }
 }

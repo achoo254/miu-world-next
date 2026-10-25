@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Cú Kính Tròn",
+        "title": "Meet Round-Glasses Owl",
         "lines": [
-          "Shh… quietly, {name}, this is a reading place. I'm Cú Kính Tròn, and I read all night long.",
+          "Shh… quietly, {name}, this is a reading place. I'm Round-Glasses Owl, and I read all night long.",
           "I have four riddles about books. Whisper them all right and I'll lend you my best book."
         ],
         "choices": [
@@ -310,8 +310,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Cú Kính Tròn",
-        "bossName": "Cú Kính Tròn",
+        "title": "Battle of wits with Round-Glasses Owl",
+        "bossName": "Round-Glasses Owl",
         "introDialogue": "The first page turns over, and the riddle is right here!",
         "winDialogue": "Hoo… I close my book and give up! {name} is a lovely bookworm."
       }
@@ -323,8 +323,8 @@
       "trigger": "auto",
       "text": "Cú Kính Tròn cho {name} mượn một chiếc thẻ đánh dấu trang bằng lông vũ, đọc xong nhớ ghé đấu tiếp.",
       "en": {
-        "title": "Cú Kính Tròn's gift",
-        "text": "Cú Kính Tròn lends {name} a feather bookmark. Come back for more riddles when you've finished reading."
+        "title": "Round-Glasses Owl's gift",
+        "text": "Round-Glasses Owl lends {name} a feather bookmark. Come back for more riddles when you've finished reading."
       }
     },
     {
@@ -334,7 +334,7 @@
       "trigger": "auto",
       "text": "Theo đường lá vàng sang sân lễ hội, có trùm canh khu đang quét lá chờ {name}.",
       "en": {
-        "title": "Goodbye, Cú Kính Tròn",
+        "title": "Goodbye, Round-Glasses Owl",
         "text": "Follow the golden leaf road to the festival yard, a zone guardian is sweeping leaves for {name}."
       }
     }
@@ -349,7 +349,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Cú Kính Tròn",
-    "summary": "Cú Kính Tròn guards the reading garden by the reading room and asks {name} four riddles about books and spelling."
+    "title": "Zone guardian: Round-Glasses Owl",
+    "summary": "Round-Glasses Owl guards the reading garden by the reading room and asks {name} four riddles about books and spelling."
   }
 }

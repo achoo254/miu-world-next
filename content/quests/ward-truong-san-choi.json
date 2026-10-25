@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Khỉ Cầu Trượt",
+        "title": "Meet Slide Monkey",
         "lines": [
-          "Wheee! I'm Khỉ Cầu Trượt, and I slid down just as {name} walked by.",
+          "Wheee! I'm Slide Monkey, and I slid down just as {name} walked by.",
           "Five riddles, one slide each. Answer them all and the whole playground is yours!"
         ],
         "choices": [
@@ -151,8 +151,8 @@
             "prompt": "Which sentence describes what the playground is like?",
             "choices": [
               "Chúng em chơi ở sân. (We play there.)",
-              "Sân chơi rộng và sạch. (It is wide and clean.)",
-              "Sân chơi ở đâu? (Where is it?)"
+              "Playground rộng và sạch. (It is wide and clean.)",
+              "Playground ở đâu? (Where is it?)"
             ]
           },
           "answer": {
@@ -175,8 +175,8 @@
               ],
               "hint": "Look for the sentence with words about the playground's size or look.",
               "answer": {
-                "text": "Sân chơi rộng và sạch. (It is wide and clean.)",
-                "explanation": "«Sân chơi rộng và sạch.» uses «rộng» (wide) and «sạch» (clean) to describe it; one tells an activity, one asks."
+                "text": "Playground rộng và sạch. (It is wide and clean.)",
+                "explanation": "«Playground rộng và sạch.» uses «rộng» (wide) and «sạch» (clean) to describe it; one tells an activity, one asks."
               }
             }
           }
@@ -364,8 +364,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Khỉ Cầu Trượt",
-        "bossName": "Khỉ Cầu Trượt",
+        "title": "Battle of wits with Slide Monkey",
+        "bossName": "Slide Monkey",
         "introDialogue": "One, two, three, wheee… the first riddle slides down!",
         "winDialogue": "I landed head over heels! {name} is so clever, the whole playground is clapping."
       }
@@ -377,8 +377,8 @@
       "trigger": "auto",
       "text": "Khỉ Cầu Trượt tặng {name} một chiếc huy hiệu hình cầu trượt, sân chơi luôn để phần cậu một lượt.",
       "en": {
-        "title": "Khỉ Cầu Trượt's gift",
-        "text": "Khỉ Cầu Trượt gives {name} a slide badge. The playground always saves you a turn."
+        "title": "Slide Monkey's gift",
+        "text": "Slide Monkey gives {name} a slide badge. The playground always saves you a turn."
       }
     },
     {
@@ -388,8 +388,8 @@
       "trigger": "auto",
       "text": "Thắng cả bốn trùm canh khu rồi, {name} vào gặp Voi Tính Nhẩm ở chặng cuối của trường nhé.",
       "en": {
-        "title": "Goodbye, Khỉ Cầu Trượt",
-        "text": "All four zone guardians beaten, {name}: go and meet Voi Tính Nhẩm at the school's last stop."
+        "title": "Goodbye, Slide Monkey",
+        "text": "All four zone guardians beaten, {name}: go and meet Mental Math Elephant at the school's last stop."
       }
     }
   ],
@@ -403,7 +403,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Khỉ Cầu Trượt",
-    "summary": "Khỉ Cầu Trượt guards the playground and slides five riddles about loving school, sentences and spelling down to {name}."
+    "title": "Zone guardian: Slide Monkey",
+    "summary": "Slide Monkey guards the playground and slides five riddles about loving school, sentences and spelling down to {name}."
   }
 }

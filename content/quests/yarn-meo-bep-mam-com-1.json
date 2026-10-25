@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "A soup with no taste",
-        "goTo": "Go round behind the kitchen, where Mèo Bếp Trưởng is tapping his chopsticks on a pot",
+        "goTo": "Go round behind the kitchen, where Head Chef Cat is tapping his chopsticks on a pot",
         "lines": [
           "Wash hands. Come here. Taste. What do you notice, {name}?",
           "Bland. Bland as well water. This Sunday we have guests from all over coming to eat, and my trial pot of sour soup has failed.",
@@ -117,7 +117,7 @@
       "en": {
         "title": "Finding the soup ingredients",
         "goTo": "Go into the kitchen and dining table area to find the three things the soup is missing",
-        "prompt": "Mèo reads the list aloud; read each description and find every item:",
+        "prompt": "Cat reads the list aloud; read each description and find every item:",
         "items": [
           {
             "name": "The tamarind bag",
@@ -180,12 +180,12 @@
         ],
         "en": {
           "right": [
-            "Fourteen! Mèo gives one nod, like a general inspecting troops.",
+            "Fourteen! Cat gives one nod, like a general inspecting troops.",
             "Make ten, then keep adding: you count as fast as a knife through spring onions, {name}.",
             "Eggs enough for the whole table, and the hens are clucking their praise."
           ],
           "wrong": [
-            "Not yet. Mèo lays out both nests again; count every egg.",
+            "Not yet. Cat lays out both nests again; count every egg.",
             "Try making 9 up to 10 first, then add what is left.",
             "The hen tilts her head at you, {name}: that number does not match her nest."
           ]
@@ -194,7 +194,7 @@
       "en": {
         "title": "Counting eggs for the omelette",
         "goTo": "Go out to the chicken coop behind the house to check this morning's two nests",
-        "question": "Mèo also wants to make an omelette. The first nest has 9 eggs and the second has 5. How many eggs are there in all?"
+        "question": "Cat also wants to make an omelette. The first nest has 9 eggs and the second has 5. How many eggs are there in all?"
       }
     },
     {
@@ -267,7 +267,7 @@
         ],
         "en": {
           "right": [
-            "Right order! Mèo sticks the recipe back up with a grain of rice.",
+            "Right order! Cat sticks the recipe back up with a grain of rice.",
             "You cook so well in your head, {name}; tomorrow you can be my lieutenant.",
             "If the pot could hear, it would nod along: textbook order."
           ],
@@ -280,7 +280,7 @@
       },
       "en": {
         "title": "The steps of sour soup",
-        "goTo": "Go into the storeroom, where Mèo keeps the recipe stuck on the cupboard door",
+        "goTo": "Go into the storeroom, where Cat keeps the recipe stuck on the cupboard door",
         "prompt": "A kitten snipped the recipe sheet on the storeroom cupboard into separate lines. Put the steps of making sour soup back in order:",
         "items": [
           "Season, sprinkle the herbs and turn off the stove",
@@ -318,19 +318,19 @@
       "en": {
         "title": "How to rescue the soup?",
         "goTo": "Carry the soup out to the table set up in the front yard",
-        "prompt": "Mèo carries the soup out to the table in the yard and folds his arms: \"This pot is bland. Three days left. What do we do?\"",
+        "prompt": "Cat carries the soup out to the table in the yard and folds his arms: \"This pot is bland. Three days left. What do we do?\"",
         "choices": [
           {
             "text": "Mash in more tamarind for a stronger taste",
-            "consequence": "Mèo mashes, tastes and nods exactly once: \"Good. Sour enough.\""
+            "consequence": "Cat mashes, tastes and nods exactly once: \"Good. Sour enough.\""
           },
           {
-            "text": "Ask Gấu Bánh Ngọt to come and taste",
-            "consequence": "Gấu tastes a spoonful and wrinkles her nose: \"Not sour enough!\" Mèo huffs, but writes it down anyway."
+            "text": "Ask Pastry Bear to come and taste",
+            "consequence": "Bear tastes a spoonful and wrinkles her nose: \"Not sour enough!\" Cat huffs, but writes it down anyway."
           },
           {
             "text": "Start a fresh pot by the recipe sheet",
-            "consequence": "The fresh pot simmers, smelling of tamarind and herbs. Mèo lets slip a very quiet \"meow\"."
+            "consequence": "The fresh pot simmers, smelling of tamarind and herbs. Cat lets slip a very quiet \"meow\"."
           }
         ]
       }
@@ -343,7 +343,7 @@
       "text": "Mèo múc cho {name} bát canh đầu tiên của nồi mới. «Phó bếp ăn trước. Luật nhà bếp.»",
       "en": {
         "title": "The soup tastes right",
-        "text": "Mèo ladles {name} the first bowl from the new pot. \"The assistant eats first. Kitchen law.\""
+        "text": "Cat ladles {name} the first bowl from the new pot. \"The assistant eats first. Kitchen law.\""
       }
     },
     {
@@ -354,7 +354,7 @@
       "text": "Các khách mời bắt đầu gửi thiệp hồi âm. Mai {name} ra cổng nhận thiệp giúp Mèo, xem ai tới và họ nhớ món gì của quê nhà.",
       "en": {
         "title": "Replies are on their way",
-        "text": "The guests are starting to send their replies. Tomorrow {name} will collect them at the gate for Mèo, to see who is coming and which dish from home they miss."
+        "text": "The guests are starting to send their replies. Tomorrow {name} will collect them at the gate for Cat, to see who is coming and which dish from home they miss."
       }
     }
   ],
@@ -367,7 +367,7 @@
     }
   },
   "en": {
-    "title": "Mèo Bếp Trưởng's story, chapter 1: The bland soup",
-    "summary": "Guests are coming on Sunday, but Mèo Bếp Trưởng's trial pot of sour soup tastes of nothing. {name} finds the ingredients, counts the eggs, puts the cooking steps in order and decides how to rescue the soup."
+    "title": "Head Chef Cat's story, chapter 1: The bland soup",
+    "summary": "Guests are coming on Sunday, but Head Chef Cat's trial pot of sour soup tastes of nothing. {name} finds the ingredients, counts the eggs, puts the cooking steps in order and decides how to rescue the soup."
   }
 }

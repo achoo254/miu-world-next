@@ -181,7 +181,7 @@
       ],
       "en": {
         "title": "How to reach the chestnut branch?",
-        "prompt": "Sẻ Con's nest is way up on a high chestnut branch. How will {name} get Sẻ Con back up to the nest?",
+        "prompt": "Baby Sparrow's nest is way up on a high chestnut branch. How will {name} get Baby Sparrow back up to the nest?",
         "choices": [
           {
             "text": "Find wood and build a ladder",
@@ -192,8 +192,8 @@
             "consequence": "The long way round is further but gentle, and from the top of the slope you can reach the branch easily."
           },
           {
-            "text": "Ask Khỉ Leo Trèo for a hand",
-            "consequence": "Uncle Hải Ly whistles for his friend. Khỉ Leo Trèo is swinging in a wild guava tree nearby, go and ask him!"
+            "text": "Ask Climbing Monkey for a hand",
+            "consequence": "Uncle Hải Ly whistles for his friend. Climbing Monkey is swinging in a wild guava tree nearby, go and ask him!"
           }
         ]
       }
@@ -209,10 +209,10 @@
       ],
       "choices": [{ "text": "Cảm ơn cậu, mình cùng ra gốc dẻ nhé!" }],
       "en": {
-        "title": "Ask Khỉ Leo Trèo",
-        "goTo": "Go to the wild guava tree and ask Khỉ Leo Trèo for help",
+        "title": "Ask Climbing Monkey",
+        "goTo": "Go to the wild guava tree and ask Climbing Monkey for help",
         "lines": [
-          "Climbing trees is my job! You get the nest ready at the bottom, and I'll lift Sẻ Con up to the branch nice and gently."
+          "Climbing trees is my job! You get the nest ready at the bottom, and I'll lift Baby Sparrow up to the branch nice and gently."
         ],
         "choices": [
           {
@@ -257,8 +257,8 @@
       "target": "vt-kr-to-chim",
       "text": "Sẻ Con nằm gọn trong chiếc tổ mới, ló đầu ra hót một khúc cảm ơn {name}. Cả cây dẻ rung rinh như cũng vui lây.",
       "en": {
-        "title": "Sẻ Con is home",
-        "text": "Sẻ Con snuggles into the new nest, pokes out her head and sings a thank-you song for {name}. The whole chestnut tree seems to sway with joy."
+        "title": "Baby Sparrow is home",
+        "text": "Baby Sparrow snuggles into the new nest, pokes out her head and sings a thank-you song for {name}. The whole chestnut tree seems to sway with joy."
       }
     },
     {

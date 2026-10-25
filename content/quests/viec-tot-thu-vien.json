@@ -192,7 +192,7 @@
           },
           {
             "text": "Ask Bồ Nông to fly the books over",
-            "consequence": "Hươu points to the hut roof: Bồ Nông Đưa Sách is resting up there, go and ask her!"
+            "consequence": "Hươu points to the hut roof: Book-Delivering Pelican is resting up there, go and ask her!"
           }
         ]
       }
@@ -209,7 +209,7 @@
       "choices": [{ "text": "Tớ xếp sách ngay, chờ chút nhé!" }],
       "en": {
         "title": "Ask Bồ Nông to deliver the books",
-        "goTo": "Go over to the pelican's hut roof and ask Bồ Nông Đưa Sách",
+        "goTo": "Go over to the pelican's hut roof and ask Book-Delivering Pelican",
         "lines": [
           "The pouch under my beak holds a dozen books! Stack them neatly and pass them here, and I'll fly straight to their homes."
         ],

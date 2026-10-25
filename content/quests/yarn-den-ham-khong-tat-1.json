@@ -49,7 +49,7 @@
       ],
       "en": {
         "title": "Three candles out in the night",
-        "goTo": "Go down into the dungeon, where Gấu Gác Hầm is whispering for you",
+        "goTo": "Go down into the dungeon, where Dungeon-Keeper Bear is whispering for you",
         "lines": [
           "Shh! {name}, come here. Last night three candles in the cellar went out all at once, and there's no wind down here at all.",
           "I'm not scared, mind you. I just… want more candles, more lamps, more lamp glasses, and one more friend standing beside me."
@@ -89,7 +89,7 @@
       ],
       "en": {
         "title": "The servants' candle store",
-        "goTo": "Go over to the servants' house (Nhà người hầu) for candles and lamps for Gấu Gác Hầm",
+        "goTo": "Go over to the servants' house (Servants' House) for candles and lamps for Dungeon-Keeper Bear",
         "prompt": "The servants' store room is a terrible mess. Read the descriptions and find the three things the bear needs:",
         "items": [
           { "name": "Box of beeswax candles", "clue": "A small wooden box smelling of honey, with yellow candles lined up inside, each as thick as a bear cub's finger." },
@@ -149,7 +149,7 @@
       },
       "en": {
         "title": "Candles for one night",
-        "goTo": "Bring everything back to the dungeon (Hầm ngục); the bear wants to work out the night's candles",
+        "goTo": "Bring everything back to the dungeon (Dungeon); the bear wants to work out the night's candles",
         "question": "Each beeswax candle burns for 2 hours. The bear keeps watch from 8 in the evening to 4 in the morning, that's 8 hours straight, lighting one candle when the last burns out. What is the fewest candles he needs so it's never dark?"
       }
     },
@@ -161,7 +161,7 @@
       "targets": ["st-den-ham-khong-tat-khe-cua", "st-den-ham-khong-tat-ong-khoi", "st-den-ham-khong-tat-vet-chan"],
       "en": {
         "title": "Where's the draught from?",
-        "goTo": "Follow the strange draught along the cellar stairs (Lối xuống hầm)"
+        "goTo": "Follow the strange draught along the cellar stairs (Path Down to the Cellar)"
       }
     },
     {
@@ -191,7 +191,7 @@
       ],
       "en": {
         "title": "The upside-down visitor",
-        "goTo": "Follow the tiny footprints into the dark corner of the cellar (Góc hầm tối)",
+        "goTo": "Follow the tiny footprints into the dark corner of the cellar (Dark Cellar Corner)",
         "prompt": "A tiny bat hangs upside down from a beam, wings over its eyes: «The light's so bright! When I flap, the candles go out. I don't mean to!» What will {name} do?",
         "choices": [
           { "text": "Split the cellar: a dark corner for the bat, a bright one for the bear", "consequence": "The bear moves every candle to the far corner. Dơi Nhí lowers its wings and grins, showing two teeth as small as grains of rice." },
@@ -212,7 +212,7 @@
       "goal": 4,
       "en": {
         "title": "Things dropped in the dark",
-        "goTo": "Back in the dungeon (Hầm ngục), pick up the lost property Dơi Nhí knocked over",
+        "goTo": "Back in the dungeon (Dungeon), pick up the lost property Dơi Nhí knocked over",
         "prompt": "Flapping about, Dơi Nhí scattered the bear's lost property all over the cellar. Shine a lamp and find four things!"
       }
     },
@@ -224,7 +224,7 @@
       "text": "Hầm giờ có một góc sáng và một góc tối, ai cũng có chỗ của mình. Gấu Gác Hầm đếm nến hai lượt, lượt nào cũng đủ, rồi lục kho tặng {name} một chú rồng con bằng sứ.",
       "en": {
         "title": "A bright corner and a dark one",
-        "text": "Now the cellar has a bright corner and a dark one, and everyone has a place. Gấu Gác Hầm counts the candles twice, all present both times, then digs out a little china dragon from the store for {name}."
+        "text": "Now the cellar has a bright corner and a dark one, and everyone has a place. Dungeon-Keeper Bear counts the candles twice, all present both times, then digs out a little china dragon from the store for {name}."
       }
     },
     {
@@ -246,7 +246,7 @@
     "items": { "rong-con-su": 1 }
   },
   "en": {
-    "title": "Gấu Gác Hầm's story, chapter 1: The candles that keep going out",
-    "summary": "The candles in the dungeon keep going out although there is no wind. {name} fetches candles and lamps for Gấu Gác Hầm, works out how many the night needs, follows a strange draught and meets a tiny visitor hanging upside down in the dark corner."
+    "title": "Dungeon-Keeper Bear's story, chapter 1: The candles that keep going out",
+    "summary": "The candles in the dungeon keep going out although there is no wind. {name} fetches candles and lamps for Dungeon-Keeper Bear, works out how many the night needs, follows a strange draught and meets a tiny visitor hanging upside down in the dark corner."
   }
 }

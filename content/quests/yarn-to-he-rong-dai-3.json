@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "It's raining!",
-        "goTo": "Run back to the flower stalls: Cô Nặn Tò He is calling",
+        "goTo": "Run back to the flower stalls: Auntie Tò He Maker is calling",
         "lines": [
           "It's raining, {name}! Steady rain is what I dread most: wet sticky-rice dough goes as soft as porridge, and a dragon turns into... a worm.",
           "The covered-market roof leaks in three places, and my dragon is lying right under it. I need an oilcloth and a bucket for the drips, quick!"
@@ -252,7 +252,7 @@
       ],
       "en": {
         "title": "The soggy tail",
-        "prompt": "The tail got wet before you arrived and it's gone floppy. Cô Nặn Tò He sinks down: «Maybe I should give up, the sky doesn't want this...» What does {name} say?",
+        "prompt": "The tail got wet before you arrived and it's gone floppy. Auntie Tò He Maker sinks down: «Maybe I should give up, the sky doesn't want this...» What does {name} say?",
         "choices": [
           {
             "text": "Let's make a new tail, I'll help!",
@@ -356,7 +356,7 @@
       "text": "Mưa tạnh đúng 3 giờ. Con rồng nằm khô ráo dưới tấm vải dầu, thân dài thẳng, vảy nào cũng còn nguyên mặt cười. Cô Nặn Tò He khẽ vỗ vai {name}: «Không có cháu chắc cô bỏ cuộc rồi.»",
       "en": {
         "title": "The dragon survives the rain",
-        "text": "The rain stops at three on the dot. The dragon lies dry under the oilcloth, long and straight, every scale still smiling. Cô Nặn Tò He pats {name} on the shoulder: «Without you I'd have given up.»"
+        "text": "The rain stops at three on the dot. The dragon lies dry under the oilcloth, long and straight, every scale still smiling. Auntie Tò He Maker pats {name} on the shoulder: «Without you I'd have given up.»"
       }
     },
     {
@@ -381,7 +381,7 @@
     "items": {}
   },
   "en": {
-    "title": "Cô Nặn Tò He's story, chapter 3: Rain on the market roof",
+    "title": "Auntie Tò He Maker's story, chapter 3: Rain on the market roof",
     "summary": "Rain pours down before the full-moon fair, and the covered-market roof leaks right onto the tò he dragon. {name} finds an oilcloth and a bucket, steers the dragon tray between the drips, decides how to save the soggy tail, works out the hours left with the clock-tower keeper, then helps Cô reshape the dough."
   }
 }

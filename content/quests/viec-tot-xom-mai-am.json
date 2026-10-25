@@ -191,8 +191,8 @@
             "consequence": "The porch glows bright, and Granny says she can see every single knitting stitch."
           },
           {
-            "text": "Invite Mèo Mun from next door over",
-            "consequence": "Đom Đóm flies ahead to light the way. Mèo Mun's house is at the end of the lane, go and invite her!"
+            "text": "Invite Black Cat from next door over",
+            "consequence": "Đom Đóm flies ahead to light the way. Black Cat's house is at the end of the lane, go and invite her!"
           }
         ]
       }
@@ -208,8 +208,8 @@
       ],
       "choices": [{ "text": "Bà chắc vui lắm đây!" }],
       "en": {
-        "title": "Invite Mèo Mun over",
-        "goTo": "Go down Mèo Mun's lane and invite her over to keep Granny company",
+        "title": "Invite Black Cat over",
+        "goTo": "Go down Black Cat's lane and invite her over to keep Granny company",
         "lines": [
           "Come and visit Granny Mướp? I'm coming right now! I'll even bring the plate of ripe guavas Mum just picked, as a gift for her."
         ],
@@ -269,7 +269,7 @@
       "text": "Bà hẹn Chủ nhật cháu Mít về sẽ làm bánh, mời {name} sang ăn cùng. Đom Đóm Thắp Đèn bay theo soi đường cho {name} về nhà.",
       "en": {
         "title": "Waiting for the grandchild",
-        "text": "Granny says that on Sunday, when Mít comes home, she'll bake cakes and invite {name} over to share. Đom Đóm Thắp Đèn flies along to light {name}'s way home."
+        "text": "Granny says that on Sunday, when Mít comes home, she'll bake cakes and invite {name} over to share. Lantern Firefly flies along to light {name}'s way home."
       }
     }
   ],

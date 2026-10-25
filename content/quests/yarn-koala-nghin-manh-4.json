@@ -243,9 +243,9 @@
         }
       },
       "en": {
-        "title": "Counting Mèo's cards",
-        "goTo": "In the empty sky tray there's just one blue-backed card. Take it to the bench by the bougainvillea, where Mèo Hộp Nhạc's card box is",
-        "question": "Mèo Hộp Nhạc's full deck of picture cards has 16 pairs, with 2 matching cards in each pair. Right now the box holds 31 cards and one stray blue puzzle piece. How many cards is the box missing?"
+        "title": "Counting Cat's cards",
+        "goTo": "In the empty sky tray there's just one blue-backed card. Take it to the bench by the bougainvillea, where Music Box Cat's card box is",
+        "question": "Music Box Cat's full deck of picture cards has 16 pairs, with 2 matching cards in each pair. Right now the box holds 31 cards and one stray blue puzzle piece. How many cards is the box missing?"
       }
     },
     {
@@ -276,7 +276,7 @@
       "en": {
         "title": "Who puts in the last piece?",
         "goTo": "Carry the round window piece back to the big puzzle table, where the whole picture is waiting",
-        "prompt": "The day Mèo Hộp Nhạc dropped by to fetch Koala for cards, the deck sat right beside the blue sky tray: one card slid into the tray, and the round window piece slipped into the card box. Now the piece is back. Koala holds it up: \"Who puts in the last piece, {name}?\"",
+        "prompt": "The day Music Box Cat dropped by to fetch Koala for cards, the deck sat right beside the blue sky tray: one card slid into the tray, and the round window piece slipped into the card box. Now the piece is back. Koala holds it up: \"Who puts in the last piece, {name}?\"",
         "choices": [
           {
             "text": "{name} does, because {name} found it",
@@ -303,8 +303,8 @@
       "game": "jigsaw",
       "goal": 15,
       "en": {
-        "title": "A puzzle for Mèo",
-        "prompt": "Koala is so happy he asks {name} to build a little puzzle as a present for Mèo Hộp Nhạc, to thank his deck for looking after the last piece. Fit all fifteen pieces!"
+        "title": "A puzzle for Cat",
+        "prompt": "Koala is so happy he asks {name} to build a little puzzle as a present for Music Box Cat, to thank his deck for looking after the last piece. Fit all fifteen pieces!"
       }
     },
     {
@@ -326,7 +326,7 @@
       "text": "Đúng lúc ấy bưu tá mang tới một phong bì từ Núi tuyết. Nai Leo Vách gửi ảnh một vách băng mới leo được. Koala lật đi lật lại tấm ảnh: lần này cậu muốn tận mắt thấy vách băng trước khi cắt thành tranh ghép.",
       "en": {
         "title": "A new ice-cliff photo",
-        "text": "Just then the postman brings an envelope from Snowy Mountain. Nai Leo Vách has sent a photo of a newly climbed ice cliff. Koala turns the photo over and over: this time he wants to see the cliff with his own eyes before he cuts it into a puzzle."
+        "text": "Just then the postman brings an envelope from Snowy Mountain. Cliff-Climbing Deer has sent a photo of a newly climbed ice cliff. Koala turns the photo over and over: this time he wants to see the cliff with his own eyes before he cuts it into a puzzle."
       }
     }
   ],
@@ -342,7 +342,7 @@
     }
   },
   "en": {
-    "title": "Koala Ghép Tranh's story, chapter 4: Where is the last piece?",
-    "summary": "The thousand-piece puzzle is missing only the round window piece on the roof, and Koala tells {name} his greatest fear. {name} writes a notice for the missing piece, searches Koala's nap corner, counts Mèo Hộp Nhạc's deck of cards and works out where the piece strayed to."
+    "title": "Puzzle Koala's story, chapter 4: Where is the last piece?",
+    "summary": "The thousand-piece puzzle is missing only the round window piece on the roof, and Koala tells {name} his greatest fear. {name} writes a notice for the missing piece, searches Koala's nap corner, counts Music Box Cat's deck of cards and works out where the piece strayed to."
   }
 }

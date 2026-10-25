@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "Opening morning",
-        "goTo": "Go to the hall porch, where Thỏ Măng Non is tying her scarf for the sixth time",
+        "goTo": "Go to the hall porch, where Young Bamboo Rabbit is tying her scarf for the sixth time",
         "lines": [
           "Three… two… one… I've been counting down since five this morning! {name}, I'm the honour guard leader!",
           "But I'm shaking. What if I forget the order of the ceremony? What if I drop the drumsticks?",
@@ -157,9 +157,9 @@
         ],
         "en": {
           "right": [
-            "Right order! Thỏ whispers it through once to remember.",
+            "Right order! Rabbit whispers it through once to remember.",
             "You know the ceremony as if you'd been to a hundred, {name}.",
-            "The programme is fixed. Thỏ's shaking is half gone!"
+            "The programme is fixed. Rabbit's shaking is half gone!"
           ],
           "wrong": [
             "You can't salute before the guard has marched in.",
@@ -222,7 +222,7 @@
           },
           {
             "name": "The sixth scarf",
-            "clue": "Bright red with fresh creases, because Thỏ kept retying it."
+            "clue": "Bright red with fresh creases, because Rabbit kept retying it."
           }
         ]
       }
@@ -240,7 +240,7 @@
       "en": {
         "title": "The opening drumbeat",
         "goTo": "Go to the middle of the yard, where the opening drum stands",
-        "prompt": "It's drum time! Beat in time with Thỏ and score twenty-four points!"
+        "prompt": "It's drum time! Beat in time with Rabbit and score twenty-four points!"
       }
     },
     {
@@ -271,19 +271,19 @@
       "en": {
         "title": "The new pupil alone",
         "goTo": "Go to the front row, where a new pupil is standing alone",
-        "prompt": "After the ceremony, everyone rushes off to play. A new pupil stands alone by the front row, watching the others leave. Thỏ stops and looks at {name}.",
+        "prompt": "After the ceremony, everyone rushes off to play. A new pupil stands alone by the front row, watching the others leave. Rabbit stops and looks at {name}.",
         "choices": [
           {
             "text": "Invite them to practise with the honour guard",
-            "consequence": "Thỏ holds out a hand: \"Three, two, one… join the guard!\" The new pupil beams and steps to the drum."
+            "consequence": "Rabbit holds out a hand: \"Three, two, one… join the guard!\" The new pupil beams and steps to the drum."
           },
           {
             "text": "Give them the little team flag as a welcome gift",
-            "consequence": "The new pupil waves the flag high. From then on, they run to find Thỏ every break time."
+            "consequence": "The new pupil waves the flag high. From then on, they run to find Rabbit every break time."
           },
           {
             "text": "Invite them into the game everyone is playing",
-            "consequence": "Thỏ takes their hand and pulls them into the circle. Nobody is left out, and Thỏ feels warm inside."
+            "consequence": "Rabbit takes their hand and pulls them into the circle. Nobody is left out, and Rabbit feels warm inside."
           }
         ]
       }
@@ -296,7 +296,7 @@
       "text": "Thỏ tặng {name} chiếc tàu bay giấy gấp từ tờ chương trình lễ khai giảng: «Bay cao như ước mơ của tụi mình!»",
       "en": {
         "title": "Honour guard leader",
-        "text": "Thỏ gives {name} a paper plane folded from the ceremony programme: \"Fly as high as our dreams!\""
+        "text": "Rabbit gives {name} a paper plane folded from the ceremony programme: \"Fly as high as our dreams!\""
       }
     },
     {
@@ -307,7 +307,7 @@
       "text": "Đội nghi thức có thêm một bạn mới. Thỏ bảo đội phải tập thêm một bài đi đều cho đủ mười sáu bạn, và Thỏ cần {name} đếm nhịp.",
       "en": {
         "title": "A new member",
-        "text": "The honour guard has a new member. Thỏ says they need a new marching drill for sixteen, and she needs {name} to count the beat."
+        "text": "The honour guard has a new member. Rabbit says they need a new marching drill for sixteen, and she needs {name} to count the beat."
       }
     }
   ],
@@ -323,7 +323,7 @@
     }
   },
   "en": {
-    "title": "Thỏ Măng Non's story, chapter 3: The opening ceremony",
-    "summary": "The opening ceremony has arrived and Thỏ Măng Non leads the honour guard. {name} orders the ceremony programme, finds the drumsticks and the leader's flag backstage, plays the festival drum in the middle of the yard and decides how to help a new pupil standing alone."
+    "title": "Young Bamboo Rabbit's story, chapter 3: The opening ceremony",
+    "summary": "The opening ceremony has arrived and Young Bamboo Rabbit leads the honour guard. {name} orders the ceremony programme, finds the drumsticks and the leader's flag backstage, plays the festival drum in the middle of the yard and decides how to help a new pupil standing alone."
   }
 }

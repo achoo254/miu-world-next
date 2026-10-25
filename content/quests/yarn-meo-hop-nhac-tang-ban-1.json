@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "The music box falls silent",
-        "goTo": "Go to the middle of the festival yard, where Mèo Hộp Nhạc sits hugging his tail and staring at the stage",
+        "goTo": "Go to the middle of the festival yard, where Music Box Cat sits hugging his tail and staring at the stage",
         "lines": [
           "Ting-a-ling… {name}, the big music box was playing «Falling Gold Leaves» and then, ting-a-ling… silence, as if someone had covered its mouth.",
           "A moment ago some little ones climbed onto the stage and opened the lid to peek, and I heard a few little clinks. Some tiny parts must have dropped out.",
@@ -81,7 +81,7 @@
             "reply": "Tiny and shiny. Ting-a-ling, your eyes are much sharper than mine."
           },
           {
-            "text": "Can a music box sulk, Mèo?",
+            "text": "Can a music box sulk, Cat?",
             "reply": "Heh, it's only missing a tooth, like a child whose front tooth just fell out."
           }
         ]
@@ -116,8 +116,8 @@
       "skill": "doc-hieu",
       "en": {
         "title": "Three shiny parts",
-        "goTo": "Climb onto the golden-leaf stage, read Mèo's descriptions and find the parts that fell out",
-        "prompt": "Mèo describes each part for {name}. Read carefully, then search the stage:",
+        "goTo": "Climb onto the golden-leaf stage, read Cat's descriptions and find the parts that fell out",
+        "prompt": "Cat describes each part for {name}. Read carefully, then search the stage:",
         "items": [
           {
             "name": "Little cog",
@@ -193,7 +193,7 @@
       },
       "en": {
         "title": "How many notes are left?",
-        "goTo": "Go to the leaf-sweet stall, where Mèo forgot his sheet music while buying sweets",
+        "goTo": "Go to the leaf-sweet stall, where Cat forgot his sheet music while buying sweets",
         "question": "The tune «Falling Gold Leaves» has 61 notes in all. The music box played 34 notes and then went silent. How many notes has it not played yet?"
       }
     },
@@ -298,7 +298,7 @@
       },
       "en": {
         "title": "Numbers on the music pins",
-        "goTo": "Go to the edge of the round pool, where Mèo spread a cloth to dry the pins he just washed",
+        "goTo": "Go to the edge of the round pool, where Cat spread a cloth to dry the pins he just washed",
         "prompt": "Each music pin is engraved with a number, laid in a row on the cloth. One pin has rolled down a crack by the pool. What number is on the missing pin?",
         "choices": [
           "21",
@@ -343,19 +343,19 @@
       "en": {
         "title": "Who gets the first song?",
         "goTo": "Walk to the cloud-hung tree, where the wind chime jingles as it waits for news",
-        "prompt": "Mèo twirls his tail once and ponders: \"Ting-a-ling… once it's mended, who should the music box play for first, {name}?\"",
+        "prompt": "Cat twirls his tail once and ponders: \"Ting-a-ling… once it's mended, who should the music box play for first, {name}?\"",
         "choices": [
           {
             "text": "For the readers waiting round the yard",
-            "consequence": "Mèo asks everyone not to leave just yet. They all hug their books and shuffle closer to the stage, eyes shining."
+            "consequence": "Cat asks everyone not to leave just yet. They all hug their books and shuffle closer to the stage, eyes shining."
           },
           {
             "text": "For the sparrow who listened to a whole song yesterday",
-            "consequence": "Mèo scatters a little millet on the wooden stage. Soon the sparrow lands and tilts its head, ready to listen."
+            "consequence": "Cat scatters a little millet on the wooden stage. Soon the sparrow lands and tilts its head, ready to listen."
           },
           {
             "text": "For the gold leaves still falling",
-            "consequence": "Mèo says the leaves fall in three-four time and will dance even better with music. The two of them look up at the leaves spinning down."
+            "consequence": "Cat says the leaves fall in three-four time and will dance even better with music. The two of them look up at the leaves spinning down."
           }
         ]
       }
@@ -382,7 +382,7 @@
       "text": "Trống nhạc quay, răng lược ngân, hai mươi lăm nốt còn lại vang khắp sân lễ hội. Mèo nhắm mắt lắc lư theo nhịp, khẽ bảo {name}: «Tinh tang… cảm ơn cậu, hộp nhạc của tớ lại có giọng rồi.»",
       "en": {
         "title": "The music returns",
-        "text": "The drum turns, the comb teeth ring, and the last twenty-five notes float across the festival yard. Mèo sways to the beat with his eyes shut and whispers to {name}: \"Ting-a-ling… thank you, my music box has found its voice again.\""
+        "text": "The drum turns, the comb teeth ring, and the last twenty-five notes float across the festival yard. Cat sways to the beat with his eyes shut and whispers to {name}: \"Ting-a-ling… thank you, my music box has found its voice again.\""
       }
     },
     {
@@ -393,7 +393,7 @@
       "text": "Nghe xong, một bạn đọc nhỏ hỏi: «Hộp nhạc có chơi được bài em thích không?» Mèo dỏng tai lên. Có lẽ đã tới lúc đi hỏi bài hát yêu thích của từng bạn đọc.",
       "en": {
         "title": "Song slips",
-        "text": "When the tune ends, a little reader asks: \"Can the music box play my favourite song?\" Mèo's ears prick up. Perhaps it's time to ask every reader for their favourite song."
+        "text": "When the tune ends, a little reader asks: \"Can the music box play my favourite song?\" Cat's ears prick up. Perhaps it's time to ask every reader for their favourite song."
       }
     }
   ],
@@ -406,7 +406,7 @@
     }
   },
   "en": {
-    "title": "Mèo Hộp Nhạc's story, chapter 1: The song that stopped halfway",
-    "summary": "The big music box on the golden-leaf stage fell silent mid-song. {name} finds the comb tooth, cog and music pin that fell out, works out how many notes are left, cracks the number pattern on the pins and helps Mèo put the music box back together."
+    "title": "Music Box Cat's story, chapter 1: The song that stopped halfway",
+    "summary": "The big music box on the golden-leaf stage fell silent mid-song. {name} finds the comb tooth, cog and music pin that fell out, works out how many notes are left, cracks the number pattern on the pins and helps Cat put the music box back together."
   }
 }

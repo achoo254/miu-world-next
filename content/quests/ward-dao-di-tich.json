@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Voi Đá Đền Cổ",
+        "title": "Meet Temple Stone Elephant",
         "lines": [
-          "Rumble… rumble… I'm Voi Đá Đền Cổ, and I've guarded these ruins for a very long time, {name}.",
+          "Rumble… rumble… I'm Temple Stone Elephant, and I've guarded these ruins for a very long time, {name}.",
           "Five pillars hold five ancient riddles. Solve them all and the ruins' gate will open for you."
         ],
         "choices": [
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Voi Đá Đền Cổ",
-        "bossName": "Voi Đá Đền Cổ",
+        "title": "Battle of wits with Temple Stone Elephant",
+        "bossName": "Temple Stone Elephant",
         "introDialogue": "Moss falls from the first pillar, and a riddle appears!",
         "winDialogue": "Rumble, I kneel and give up! {name} is a true friend of the ancient ruins."
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Voi Đá Đền Cổ tặng {name} một viên ngọc đá cuội khắc hình voi, mang theo là gặp may.",
       "en": {
-        "title": "Voi Đá Đền Cổ's gift",
-        "text": "Voi Đá Đền Cổ gives {name} a pebble carved with an elephant: carry it for luck."
+        "title": "Temple Stone Elephant's gift",
+        "text": "Temple Stone Elephant gives {name} a pebble carved with an elephant: carry it for luck."
       }
     },
     {
@@ -393,7 +393,7 @@
       "trigger": "auto",
       "text": "Đã gặp ba trùm canh khu, {name} ra bãi biển đấu với Cua Biển Khổng Lồ ở chặng cuối nhé.",
       "en": {
-        "title": "Goodbye, Voi Đá Đền Cổ",
+        "title": "Goodbye, Temple Stone Elephant",
         "text": "Three zone guardians met, {name}: go to the beach and battle the Giant Sea Crab at the last stop."
       }
     }
@@ -409,7 +409,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Voi Đá Đền Cổ",
-    "summary": "Voi Đá Đền Cổ guards the gate of the ancient ruins and asks {name} five riddles carved on the stone pillars."
+    "title": "Zone guardian: Temple Stone Elephant",
+    "summary": "Temple Stone Elephant guards the gate of the ancient ruins and asks {name} five riddles carved on the stone pillars."
   }
 }

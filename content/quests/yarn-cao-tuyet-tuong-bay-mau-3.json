@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "A clear sky this morning",
-        "goTo": "Go to the square, where Cáo has stood beside the ice swan since the sky was still violet",
+        "goTo": "Go to the square, where Fox has stood beside the ice swan since the sky was still violet",
         "lines": [
           "{name}, look at the sky. Not a wisp of cloud, blue and flat as a new sheet of paper. The sunshine will come today.",
           "I want to hold a small exhibition so the whole village can wait for the seven colours with us. But I have no visitors' book, no ribbon, not even a name sign.",
@@ -81,7 +81,7 @@
             "reply": "Thank you. You're as quick as a diagonal, straight from one corner to the other."
           },
           {
-            "text": "Are you nervous, Cáo?",
+            "text": "Are you nervous, Fox?",
             "reply": "A little. My heart beats as evenly as the four sides of a square, just a bit fast."
           }
         ]
@@ -117,7 +117,7 @@
       "en": {
         "title": "Borrowing for the exhibition",
         "goTo": "Knock and go inside the village house, where the neighbours have laid out things to lend",
-        "prompt": "The house is full of things. Read the neighbours' descriptions and find the three things Cáo needs:",
+        "prompt": "The house is full of things. Read the neighbours' descriptions and find the three things Fox needs:",
         "items": [
           {
             "name": "Visitors' book",
@@ -233,7 +233,7 @@
         "en": {
           "right": [
             "The path zigzags like a lightning stroke, and every visitor can still reach the statue.",
-            "{name} traced the path without bumping a single snow pile. Cáo ties the red ribbon all along it.",
+            "{name} traced the path without bumping a single snow pile. Fox ties the red ribbon all along it.",
             "Eight steps, not one too many or too few. As neat as a finished drawing."
           ],
           "wrong": [
@@ -300,7 +300,7 @@
         ],
         "en": {
           "right": [
-            "Eighty-two visitors! Cáo stands quite still; only the tip of his tail trembles with joy.",
+            "Eighty-two visitors! Fox stands quite still; only the tip of his tail trembles with joy.",
             "{name} added as tidily as the tally marks lined up on the board.",
             "No statue in the village has ever had such a long queue waiting for it."
           ],
@@ -313,7 +313,7 @@
       },
       "en": {
         "title": "How many visitors are waiting?",
-        "goTo": "Stop at the visitor tally corner, where Người Tuyết Đếm Bậc has been marking tallies since early morning",
+        "goTo": "Stop at the visitor tally corner, where Step-Counting Snowman has been marking tallies since early morning",
         "question": "The tally board says 37 visitors were queuing to see the statue early on, and 45 more have just arrived. How many visitors are waiting to see the swan statue now?"
       }
     },
@@ -345,11 +345,11 @@
       "en": {
         "title": "How shall we unveil it?",
         "goTo": "While the visitors wait, go up the sun-watching hill and sit on the flat rock to plan the unveiling",
-        "prompt": "Cáo brushes the snow off the canvas over the statue: \"Carving I can do, but unveiling it right as the sun comes out is beyond me. Will you choose for me?\"",
+        "prompt": "Fox brushes the snow off the canvas over the statue: \"Carving I can do, but unveiling it right as the sun comes out is beyond me. Will you choose for me?\"",
         "choices": [
           {
             "text": "Ask the smallest visitor in the queue to pull the cloth",
-            "consequence": "Cáo leads a little rabbit up onto the plinth. She pulls so hard she sits down in the snow; the whole queue laughs, and she laughs loudest of all."
+            "consequence": "Fox leads a little rabbit up onto the plinth. She pulls so hard she sits down in the snow; the whole queue laughs, and she laughs loudest of all."
           },
           {
             "text": "Have the whole square count down from ten",
@@ -357,7 +357,7 @@
           },
           {
             "text": "Lift the cloth one corner at a time so the statue appears bit by bit",
-            "consequence": "Cáo lifts each corner very slowly, and each time a patch of sparkling ice appears. The visitors hold their breath with every fold."
+            "consequence": "Fox lifts each corner very slowly, and each time a patch of sparkling ice appears. The visitors hold their breath with every fold."
           }
         ]
       }
@@ -384,7 +384,7 @@
       "text": "Tia nắng chạm vào ngực thiên nga rồi vỡ ra đỏ, cam, vàng, lục, lam, chàm, tím, rải thành một dải trên tuyết. Cả quảng trường ồ lên. Cáo không nói gì, chỉ đứng sát bên {name}, gần tới mức hai cái bóng chập lại thành một hình.",
       "en": {
         "title": "The seven colours appear",
-        "text": "The sunbeam touches the swan's chest and breaks into red, orange, yellow, green, blue, indigo and violet, spread in a band across the snow. The whole square gasps. Cáo says nothing; he just stands close beside {name}, so close their two shadows join into one shape."
+        "text": "The sunbeam touches the swan's chest and breaks into red, orange, yellow, green, blue, indigo and violet, spread in a band across the snow. The whole square gasps. Fox says nothing; he just stands close beside {name}, so close their two shadows join into one shape."
       }
     },
     {
@@ -395,7 +395,7 @@
       "text": "Tối đó Cáo chụp một tấm ảnh dải bảy màu, gửi cho Mèo Xếp Khối ở Trung tâm. Theo luật của hai bạn, ai thua sẽ phải gửi bánh. Cáo đặt bức thư lên bậc cửa, ngồi đợi, đuôi vẽ hết hình vuông này tới hình vuông khác.",
       "en": {
         "title": "A photo for the Town Centre",
-        "text": "That evening Cáo takes a photo of the seven-colour band and sends it to Mèo Xếp Khối at the Town Centre. By the two friends' rule, whoever loses sends a cake. Cáo sets the letter on the doorstep and waits, his tail drawing one square after another."
+        "text": "That evening Fox takes a photo of the seven-colour band and sends it to Block-Stacking Cat at the Town Centre. By the two friends' rule, whoever loses sends a cake. Fox sets the letter on the doorstep and waits, his tail drawing one square after another."
       }
     }
   ],
@@ -411,7 +411,7 @@
     }
   },
   "en": {
-    "title": "Cáo Tuyết Điêu Khắc's story, chapter 3: Seven colours on the first sunny morning",
+    "title": "Sculptor Snow Fox's story, chapter 3: Seven colours on the first sunny morning",
     "summary": "The first clear morning has come. {name} borrows things for the exhibition from a village house, finds a path for the visitors, adds up how many are waiting, chooses how to unveil the statue and helps the sunbeam find its way into the swan's chest so the seven colours appear."
   }
 }

@@ -68,7 +68,7 @@
       ],
       "en": {
         "title": "The number board blew away",
-        "goTo": "Go to the flagpole in the middle of the schoolyard, where Sư Tử Vàng is waiting",
+        "goTo": "Go to the flagpole in the middle of the schoolyard, where Golden Lion is waiting",
         "lines": [
           "ROAR... I mean, hello {name}! The wind this morning was so strong it blew away the school number board, and... my magnificent mane.",
           "I found counting sticks and carrots at the foot of the flagpole. One carrot is a bit... nibbled, but it wasn't me!",
@@ -777,7 +777,7 @@
         "goTo": "Run to the football pitch, where Coach Nai Phi is calling the team to line up",
         "lines": [
           "Peep peep! The school football team is about to salute the flag, yet four players are jostling like ducks fighting over a bread roll!",
-          "I've blown my whistle till I'm out of breath. {name}, line them up for me this first round; next round, captain Gấu Đô is waiting at the goal."
+          "I've blown my whistle till I'm out of breath. {name}, line them up for me this first round; next round, captain Strong Bear is waiting at the goal."
         ],
         "choices": [
           {
@@ -1647,7 +1647,7 @@
       "text": "Thầy Sư Tử Vàng (bờm đã gọn gàng) cài lên áo {name} huy hiệu \"Người giữ bảng số\" đầu tiên của Trường học, rồi gầm một tiếng thật to làm cả sân vỗ tay.",
       "en": {
         "title": "Number board badge",
-        "text": "Headmaster Sư Tử Vàng (mane now neat and tidy) pins the school's very first \"Number Board Keeper\" badge on {name}'s shirt, then gives a mighty roar and the whole yard claps."
+        "text": "Headmaster Golden Lion (mane now neat and tidy) pins the school's very first \"Number Board Keeper\" badge on {name}'s shirt, then gives a mighty roar and the whole yard claps."
       }
     },
     {
@@ -1658,7 +1658,7 @@
       "text": "Từ sân nhảy lò cò vọng sang tiếng Gà Con Chíp: \"Ối, ối! Các vạch kẻ mất hết số rồi, tớ lại nhảy nhầm ô!\"",
       "en": {
         "title": "Lines on the playground",
-        "text": "From the hopscotch court comes Gà Con Chíp's voice: \"Oh no, oh no! All the numbers on the lines are gone, and I keep hopping into the wrong square!\""
+        "text": "From the hopscotch court comes Chip the Chick's voice: \"Oh no, oh no! All the numbers on the lines are gone, and I keep hopping into the wrong square!\""
       }
     }
   ],

@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Voi Tím Cân Đong",
+        "title": "Meet Purple Weighing Elephant",
         "lines": [
-          "Thud, thud! I'm Voi Tím Cân Đong, and the biggest scales in the market are mine, {name}.",
+          "Thud, thud! I'm Purple Weighing Elephant, and the biggest scales in the market are mine, {name}.",
           "Today I've brought the balance and the water cans for riddles. Five of them: get them all and you win!"
         ],
         "choices": [
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Voi Tím Cân Đong",
-        "bossName": "Voi Tím Cân Đong",
+        "title": "Battle of wits with Purple Weighing Elephant",
+        "bossName": "Purple Weighing Elephant",
         "introDialogue": "The scales are level: here goes the first riddle!",
         "winDialogue": "My scales have tipped right over to {name}'s side, I give up!"
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Voi Tím Cân Đong tặng {name} một quả cân đồng bé xíu, nặng đúng một trăm gam.",
       "en": {
-        "title": "Voi Tím Cân Đong's gift",
-        "text": "Voi Tím Cân Đong gives {name} a tiny brass weight of exactly one hundred grams."
+        "title": "Purple Weighing Elephant's gift",
+        "text": "Purple Weighing Elephant gives {name} a tiny brass weight of exactly one hundred grams."
       }
     },
     {
@@ -393,7 +393,7 @@
       "trigger": "auto",
       "text": "Gặp đủ ba trùm canh khu rồi, {name} ra chặng cuối đấu với Heo Đất Khổng Lồ nhé.",
       "en": {
-        "title": "Goodbye, Voi Tím Cân Đong",
+        "title": "Goodbye, Purple Weighing Elephant",
         "text": "All three zone guardians met, {name}: head to the last stop and battle the Giant Piggy Bank."
       }
     }
@@ -407,7 +407,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Voi Tím Cân Đong",
-    "summary": "Voi Tím Cân Đong guards the stalls with scales and asks {name} five riddles about balance scales, kilograms and litres."
+    "title": "Zone guardian: Purple Weighing Elephant",
+    "summary": "Purple Weighing Elephant guards the stalls with scales and asks {name} five riddles about balance scales, kilograms and litres."
   }
 }

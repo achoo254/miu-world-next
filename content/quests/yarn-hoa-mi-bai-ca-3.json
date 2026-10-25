@@ -52,10 +52,10 @@
       ],
       "en": {
         "title": "A beak with no voice",
-        "goTo": "The green canopy is strangely quiet. Go and see how Họa Mi Rừng Xanh is",
+        "goTo": "The green canopy is strangely quiet. Go and see how Green Forest Songbird is",
         "lines": [
           "(Họa Mi opens her beak; only a wheezy breath comes out. She grabs a leaf and scratches a few words:) 'Lost my voice. Concert in three days.'",
-          "(Another leaf, in shaky letters:) 'Old Cú Mèo in the oak hollow knows how to mend voices. Will you go for me, {name}?'"
+          "(Another leaf, in shaky letters:) 'Old Cú Cat in the oak hollow knows how to mend voices. Will you go for me, {name}?'"
         ],
         "choices": [
           { "text": "Just rest, I'll take care of it!", "reply": "(Họa Mi nods and nods, eyes brimming, then draws a heart on a leaf and hands it to {name}.)" },
@@ -77,8 +77,8 @@
         { "text": "Cháu đọc ngay đây ạ.", "reply": "Ngoan. Mắt cú như bác đọc được giữa đêm, còn mắt cháu thì đọc ban ngày cho rõ." }
       ],
       "en": {
-        "title": "Old Cú Mèo",
-        "goTo": "Go to the oak hollow to find old Cú Mèo",
+        "title": "Old Cú Cat",
+        "goTo": "Go to the oak hollow to find old Cú Cat",
         "lines": [
           "Hoo… hoo… Họa Mi has overdone it again. Rehearsing till midnight and shouting at the whole choir to sing louder: no throat can take that.",
           "I carved how to care for a voice on the piece of bark by my door. Read it carefully before you fetch anything; read it sloppily and you'll fetch the wrong things."
@@ -116,13 +116,13 @@
         "right": ["Hù hù, chính xác! Bác Cú Mèo xoay đầu gần trọn một vòng.", "{name} đọc chậm mà trúng, đúng kiểu cú mèo.", "Hai ngụm mỗi ngày, Họa Mi sẽ nhớ thôi."],
         "wrong": ["Đọc lại dòng có chữ «mật ong» nhé, có hai lúc được nhắc tới cơ.", "Hù… nhiều quá thì Họa Mi uống no nước mất.", "Sáng có, tối có… vậy là mấy lần nhỉ {name}?"],
         "en": {
-          "right": ["Hoo hoo, exactly! Cú Mèo turns his head almost all the way round.", "{name} reads slowly and gets it right, a true owl.", "Two sips a day. Họa Mi won't forget."],
+          "right": ["Hoo hoo, exactly! Cú Cat turns his head almost all the way round.", "{name} reads slowly and gets it right, a true owl.", "Two sips a day. Họa Mi won't forget."],
           "wrong": ["Read the line with 'honey' again; it names two times of day.", "Hoo… that many and Họa Mi will be sloshing with water.", "Morning, yes, evening, yes… so how many times, {name}?"]
         }
       },
       "en": {
         "title": "The note on the bark",
-        "text": "For a voice gone hoarse:\n– One sip of warm water with honey, once in the morning, once in the evening.\n– Wear a banana-leaf scarf to keep your throat warm whenever the night wind blows.\n– Three days with no shouting and no singing; if you must speak, whisper.\n– Stay away from sour hog plums: sourness makes a sore throat sorer.\nCú Mèo.",
+        "text": "For a voice gone hoarse:\n– One sip of warm water with honey, once in the morning, once in the evening.\n– Wear a banana-leaf scarf to keep your throat warm whenever the night wind blows.\n– Three days with no shouting and no singing; if you must speak, whisper.\n– Stay away from sour hog plums: sourness makes a sore throat sorer.\nCú Cat.",
         "question": "According to the note, how many times a day does Họa Mi drink warm honey water?",
         "choices": ["Once", "Twice", "Three times"]
       }
@@ -142,7 +142,7 @@
       "en": {
         "title": "Gather the voice remedies",
         "goTo": "Head to the wildflower edge of the forest for honey, warm water and a banana-leaf scarf",
-        "prompt": "The three things Cú Mèo listed are around the wildflower edge. Follow the clues:",
+        "prompt": "The three things Cú Cat listed are around the wildflower edge. Follow the clues:",
         "items": [
           { "name": "Jar of wild honey", "clue": "Bees buzz round a rock face, and at its foot sits a jar the colour of sunshine." },
           { "name": "Flask of warm water", "clue": "A spring is steaming away, and someone has left a flask beside it to fill." },
@@ -181,14 +181,14 @@
         "right": ["Họa Mi vẽ ba dấu tích to tướng lên lá, kèm một khuôn mặt cười.", "{name} nhớ lời dặn còn kỹ hơn cả Bác Cú Mèo.", "Đúng hết rồi! Ba ngày này vòm lá sẽ chỉ có tiếng thì thầm."],
         "wrong": ["Họa Mi lắc đầu nguầy nguậy: việc ấy bị dặn tránh mà!", "Còn sót một việc nên làm đấy {name}, nghĩ tới gió đêm xem.", "Gào thì cổ càng khàn thêm, bỏ việc ấy ra nhé."],
         "en": {
-          "right": ["Họa Mi draws three huge ticks on a leaf, plus a smiley face.", "{name} remembers the note even better than Cú Mèo does.", "All correct! For three days the canopy will only hear whispers."],
+          "right": ["Họa Mi draws three huge ticks on a leaf, plus a smiley face.", "{name} remembers the note even better than Cú Cat does.", "All correct! For three days the canopy will only hear whispers."],
           "wrong": ["Họa Mi shakes her head hard: that one is on the 'avoid' list!", "One good thing is still missing, {name}. Think about the night wind.", "Shouting only makes a voice hoarser. Leave that one out."]
         }
       },
       "en": {
         "title": "What to do for three days?",
         "goTo": "Bring everything back to Họa Mi in the green canopy",
-        "prompt": "Họa Mi writes on a leaf: 'What am I allowed to do these three days?' Choose everything that matches Cú Mèo's note:",
+        "prompt": "Họa Mi writes on a leaf: 'What am I allowed to do these three days?' Choose everything that matches Cú Cat's note:",
         "choices": ["Drink warm water with honey", "Shout for the whole choir to come and rehearse", "Wear the banana-leaf scarf when the night wind blows", "Whisper instead of singing", "Eat a basket of hog plums to perk up"]
       }
     },
@@ -208,7 +208,7 @@
         "title": "Who sings the lead?",
         "prompt": "Họa Mi writes: 'What if my voice isn't back by concert night? Who sings the lead?' What do you advise, {name}?",
         "choices": [
-          { "text": "Sẻ Nhỏ Nốt Lặng, with a voice clear as dew", "consequence": "Họa Mi writes Sẻ Nhỏ's name big and underlines it three times. 'She needs someone to believe in her. I will.'" },
+          { "text": "Little Sparrow Rest Note, with a voice clear as dew", "consequence": "Họa Mi writes Sẻ Nhỏ's name big and underlines it three times. 'She needs someone to believe in her. I will.'" },
           { "text": "The whole choir, one line each", "consequence": "Họa Mi thinks for a long while, then nods: 'The forest's song, sung by the forest. Why didn't I think of that before?'" },
           { "text": "Put the concert off until Họa Mi is well", "consequence": "Họa Mi shakes her head and writes: 'The whole forest has made plans. No postponing. We'll find another way.'" }
         ]
@@ -237,7 +237,7 @@
     "skillXp": { "doc-hieu": 1, "logic": 1 }
   },
   "en": {
-    "title": "Họa Mi Rừng Xanh's story, chapter 3: The lost voice",
-    "summary": "Họa Mi loses her voice just three days before the concert. {name} finds old Cú Mèo, reads his note carved on bark, gathers honey, warm water and a banana-leaf scarf, then helps Họa Mi decide who will sing in her place."
+    "title": "Green Forest Songbird's story, chapter 3: The lost voice",
+    "summary": "Họa Mi loses her voice just three days before the concert. {name} finds old Cú Cat, reads his note carved on bark, gathers honey, warm water and a banana-leaf scarf, then helps Họa Mi decide who will sing in her place."
   }
 }

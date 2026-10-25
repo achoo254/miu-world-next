@@ -118,7 +118,7 @@
       },
       "en": {
         "title": "Seats for the whole lane",
-        "goTo": "Go to the yard in front of Mẩy's house (Sân trước nhà Mẩy) and set out stools for the guests",
+        "goTo": "Go to the yard in front of Mẩy's house (Mẩy's Front Yard) and set out stools for the guests",
         "prompt": "The yard fits 3 rows of stools, 4 in each row. Tonight 14 people are coming to listen. How many more stools must be borrowed so everyone has a seat?",
         "choices": ["1 stool", "2 stools", "3 stools"]
       }
@@ -135,7 +135,7 @@
       "goal": 4,
       "en": {
         "title": "Where are the children hiding?",
-        "goTo": "Go inside Mẩy's house (Trong nhà Mẩy), where the children are still playing hide-and-seek",
+        "goTo": "Go inside Mẩy's house (Inside Mẩy's Home), where the children are still playing hide-and-seek",
         "prompt": "The children are hiding all over the house and won't come out for the story. Count the hiders correctly in four rounds!"
       }
     },
@@ -147,7 +147,7 @@
       "targets": ["st-so-chuyen-ba-nam-den-xanh", "st-so-chuyen-ba-nam-den-do", "st-so-chuyen-ba-nam-den-vang"],
       "en": {
         "title": "Three lanterns",
-        "goTo": "Go to the bamboo clump at the end of the lane (Bụi tre đầu ngõ) and fetch three lanterns to hang along the path"
+        "goTo": "Go to the bamboo clump at the end of the lane (Bamboo Clump at the Lane Entrance) and fetch three lanterns to hang along the path"
       }
     },
     {
@@ -277,7 +277,7 @@
     "skillXp": { "bai-toan-loi-van": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Bà Năm Kể Chuyện's story, chapter 3: Story night in the lane",
+    "title": "Grandma Năm the Storyteller's story, chapter 3: Story night in the lane",
     "summary": "The whole lane brings out chairs to hear Bà Năm tell the leaf-boat story. {name} works out enough seats, coaxes the hiding children out, hangs lanterns along the lane, then listens until she stops and reveals a secret kept for sixty years."
   }
 }

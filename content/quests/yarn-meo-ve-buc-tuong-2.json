@@ -64,8 +64,8 @@
         }
       ],
       "en": {
-        "title": "Mèo Vẽ Màu hides from the rain",
-        "goTo": "Run to the art room, where Mèo Vẽ Màu is hiding behind the door",
+        "title": "Painter Cat hides from the rain",
+        "goTo": "Run to the art room, where Painter Cat is hiding behind the door",
         "lines": [
           "Meow meow meow! Dark clouds, {name}! The wall is only half done, and if it rains the paint will run like melting ice cream.",
           "One drop of water on me and my fur stands up like a feather duster. Could you cover the picture for me?",
@@ -206,7 +206,7 @@
         ],
         "en": {
           "right": [
-            "Jar C! Mèo Vẽ Màu sticks on a new label straight away, letters twice as big.",
+            "Jar C! Painter Cat sticks on a new label straight away, letters twice as big.",
             "{name} knows the colour without even opening the lid. Brilliant.",
             "Heaviest is red, lightest is green. Neat."
           ],
@@ -225,7 +225,7 @@
           "Jar B: balances 5 weights",
           "Jar C: balances 2 weights"
         ],
-        "prompt": "Three closed jars, labels washed clean off. Mèo Vẽ Màu remembers: the red jar is fullest, so it is heaviest; the green jar is lighter than the yellow one. On the scales they weigh as shown. Which jar is green?",
+        "prompt": "Three closed jars, labels washed clean off. Painter Cat remembers: the red jar is fullest, so it is heaviest; the green jar is lighter than the yellow one. On the scales they weigh as shown. Which jar is green?",
         "choices": [
           "Jar A",
           "Jar B",
@@ -271,8 +271,8 @@
             "consequence": "The streaks shimmer like real rain. It seems the sky wanted to add a brushstroke too."
           },
           {
-            "text": "Leave them and run to ask Mèo Vẽ Màu",
-            "consequence": "Off you run, hair still speckled with rain. Mèo will have to see it with his own eyes to decide."
+            "text": "Leave them and run to ask Painter Cat",
+            "consequence": "Off you run, hair still speckled with rain. Cat will have to see it with his own eyes to decide."
           }
         ]
       }
@@ -309,7 +309,7 @@
       ],
       "en": {
         "title": "A secret about his eyes",
-        "goTo": "Go back to the art room and tell Mèo Vẽ Màu everything",
+        "goTo": "Go back to the art room and tell Painter Cat everything",
         "lines": [
           "You found the green jar without even opening it? {name}, I want to tell you something. Promise not to laugh.",
           "Red and green look exactly the same to me, like twins in matching clothes. I've always painted by reading the labels.",
@@ -335,7 +335,7 @@
       "text": "Mèo Vẽ Màu ôm ba lọ màu đã dán nhãn mới, rồi rút trong túi ra hộp sáp màu tặng {name}: «Màu nào cũng có tên, cậu đọc là thấy.»",
       "en": {
         "title": "Labels twice as big",
-        "text": "Mèo Vẽ Màu hugs the three newly labelled jars, then pulls a box of crayons from his pocket for {name}: «Every colour has its name on it, so you can read it.»"
+        "text": "Painter Cat hugs the three newly labelled jars, then pulls a box of crayons from his pocket for {name}: «Every colour has its name on it, so you can read it.»"
       }
     },
     {
@@ -346,7 +346,7 @@
       "text": "Tối đó Mèo Vẽ Màu ngồi nghĩ mãi: nhãn chữ thì mưa rửa trôi, lỡ bạn nào chưa biết đọc thì sao? Sáng mai cậu ấy có một ý tưởng muốn khoe {name} đầu tiên.",
       "en": {
         "title": "A midnight idea",
-        "text": "That night Mèo Vẽ Màu sits thinking for ages: rain washes word labels away, and what about friends who can't read yet? By morning he has an idea he wants to show {name} first."
+        "text": "That night Painter Cat sits thinking for ages: rain washes word labels away, and what about friends who can't read yet? By morning he has an idea he wants to show {name} first."
       }
     }
   ],
@@ -362,7 +362,7 @@
     }
   },
   "en": {
-    "title": "Mèo Vẽ Màu's story, chapter 2: The rain that washed the labels",
-    "summary": "The wall is half painted when a shower blows in, and Mèo Vẽ Màu fears water more than anything. {name} finds things to shield the picture, works out which jar is which after the rain washed the labels off, decides what to do with the rain streaks, and hears Mèo's secret about his eyes."
+    "title": "Painter Cat's story, chapter 2: The rain that washed the labels",
+    "summary": "The wall is half painted when a shower blows in, and Painter Cat fears water more than anything. {name} finds things to shield the picture, works out which jar is which after the rain washed the labels off, decides what to do with the rain streaks, and hears Cat's secret about his eyes."
   }
 }

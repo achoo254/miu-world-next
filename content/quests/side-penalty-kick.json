@@ -38,7 +38,7 @@
       ],
       "choices": [{ "text": "Coi chừng cú sút của tớ!" }],
       "en": {
-        "title": "Vẹt's Challenge",
+        "title": "Parrot's Challenge",
         "lines": [
           "I just finished building a goal out of branches, {name}!",
           "I'm a brilliant goalkeeper. Go on, try to get one past me."
@@ -61,7 +61,7 @@
       "goal": 8,
       "en": {
         "title": "Penalty Kick",
-        "prompt": "Score eight goals past Vẹt!"
+        "prompt": "Score eight goals past Parrot!"
       }
     },
     {
@@ -72,7 +72,7 @@
       "text": "Vẹt xòe cánh: {name} sút hay quá, tớ chịu thua!",
       "en": {
         "title": "Vẹt Gives Up",
-        "text": "Vẹt spreads his wings: what a kicker you are, {name}, I give up!"
+        "text": "Parrot spreads his wings: what a kicker you are, {name}, I give up!"
       }
     },
     {
@@ -83,13 +83,13 @@
       "text": "Vẹt sẽ tập bắt bóng thêm, hẹn {name} trận sau.",
       "en": {
         "title": "Rematch Soon",
-        "text": "Vẹt will practise his saves. See you at the next match, {name}."
+        "text": "Parrot will practise his saves. See you at the next match, {name}."
       }
     }
   ],
   "reward": { "xp": 15, "coin": 5 },
   "en": {
-    "title": "Penalty Kicks with Vẹt",
-    "summary": "Vẹt is in goal between two branch posts: kick the ball into the open space."
+    "title": "Penalty Kicks with Parrot",
+    "summary": "Parrot is in goal between two branch posts: kick the ball into the open space."
   }
 }

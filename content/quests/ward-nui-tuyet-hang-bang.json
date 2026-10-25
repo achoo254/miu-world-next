@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Tuần Lộc Thám Hiểm",
+        "title": "Meet Explorer Reindeer",
         "lines": [
-          "Jingle jingle! I'm Tuần Lộc Thám Hiểm, and I lead the team into the ice cave every morning.",
+          "Jingle jingle! I'm Explorer Reindeer, and I lead the team into the ice cave every morning.",
           "Anyone who wants to join must pass my five riddles. Got your torch, {name}?"
         ],
         "choices": [
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Tuần Lộc Thám Hiểm",
-        "bossName": "Tuần Lộc Thám Hiểm",
+        "title": "Battle of wits with Explorer Reindeer",
+        "bossName": "Explorer Reindeer",
         "introDialogue": "Torches on: the first riddle appears on the ice wall!",
         "winDialogue": "Jingle jingle, I give up! {name} deserves to lead the expedition."
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Tuần Lộc Thám Hiểm tặng {name} một chiếc huy hiệu thám hiểm hình ngọn núi tuyết.",
       "en": {
-        "title": "Tuần Lộc Thám Hiểm's gift",
-        "text": "Tuần Lộc Thám Hiểm gives {name} an explorer's badge shaped like a snowy peak."
+        "title": "Explorer Reindeer's gift",
+        "text": "Explorer Reindeer gives {name} an explorer's badge shaped like a snowy peak."
       }
     },
     {
@@ -393,7 +393,7 @@
       "trigger": "auto",
       "text": "Bốn trùm canh khu đều đã gặp, {name} ra chặng cuối đấu với Cánh Cụt Hoàng Đế nhé.",
       "en": {
-        "title": "Goodbye, Tuần Lộc Thám Hiểm",
+        "title": "Goodbye, Explorer Reindeer",
         "text": "All four zone guardians met, {name}: head to the last stop and battle the Emperor Penguin."
       }
     }
@@ -410,7 +410,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Tuần Lộc Thám Hiểm",
-    "summary": "Tuần Lộc Thám Hiểm guards the ice cave entrance and asks {name} five riddles about the expedition and the way into the cave."
+    "title": "Zone guardian: Explorer Reindeer",
+    "summary": "Explorer Reindeer guards the ice cave entrance and asks {name} five riddles about the expedition and the way into the cave."
   }
 }

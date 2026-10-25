@@ -60,11 +60,11 @@
         }
       ],
       "en": {
-        "title": "Voi Trống Hội owns up",
-        "goTo": "Go beside the stage, where Voi Trống Hội is holding the dotted sheet upside down",
+        "title": "Festival Drum Elephant owns up",
+        "goTo": "Go beside the stage, where Festival Drum Elephant is holding the dotted sheet upside down",
         "lines": [
           "Keep this between us, {name}: I've never been able to read music. I've always listened with my ears and drummed with my tummy.",
-          "This sheet is all filled dots and hollow dots, like an anthill after rain. Vẹt Phách Tre has the key that explains them."
+          "This sheet is all filled dots and hollow dots, like an anthill after rain. Bamboo Clapper Parrot has the key that explains them."
         ],
         "choices": [
           {
@@ -139,7 +139,7 @@
         ],
         "en": {
           "right": [
-            "Three booms! Vẹt Phách Tre nods like a music teacher.",
+            "Three booms! Bamboo Clapper Parrot nods like a music teacher.",
             "{name} reads rhythm sheets faster than I read a menu.",
             "Right, hollow dots and dashes don't count."
           ],
@@ -152,7 +152,7 @@
       },
       "en": {
         "title": "The key",
-        "goTo": "Find Vẹt Phách Tre under the old almond tree and ask for the key",
+        "goTo": "Find Bamboo Clapper Parrot under the old almond tree and ask for the key",
         "text": "HOW TO READ THE RHYTHM SHEET\n● filled dot: strike the middle of the drum, «boom».\n○ hollow dot: strike the rim, «clack».\n– dash: rest for one beat, play nothing.",
         "question": "How many «booms» are in the line ● ● ○ – ●?",
         "choices": [
@@ -224,7 +224,7 @@
         ],
         "en": {
           "right": [
-            "Clash clash! Heo Chũm Chọe crashes his cymbals twice for joy.",
+            "Clash clash! Cymbal Pig crashes his cymbals twice for joy.",
             "The rhythm grows like a staircase, and {name} saw it straight away.",
             "A filled dot: the fourth group gets four booms."
           ],
@@ -237,7 +237,7 @@
       },
       "en": {
         "title": "The next dot",
-        "goTo": "Go to the team shelter, where Heo Chũm Chọe is copying the rhythm onto his cymbal",
+        "goTo": "Go to the team shelter, where Cymbal Pig is copying the rhythm onto his cymbal",
         "prompt": "The opening line goes: ● ○ ● ● ○ ● ● ● ○ … What comes next?",
         "choices": [
           "●",
@@ -366,12 +366,12 @@
       ],
       "en": {
         "title": "How to stop a shaky trunk",
-        "goTo": "Take the sorted music back to Voi Trống Hội beside the stage",
-        "prompt": "Voi Trống Hội whispers: «What scares me most is standing before the whole school with my trunk shaking. One wrong beat and the whole piece falls apart.» What do you suggest, {name}?",
+        "goTo": "Take the sorted music back to Festival Drum Elephant beside the stage",
+        "prompt": "Festival Drum Elephant whispers: «What scares me most is standing before the whole school with my trunk shaking. One wrong beat and the whole piece falls apart.» What do you suggest, {name}?",
         "choices": [
           {
             "text": "When you shake, look down at where I'm sitting",
-            "consequence": "Voi Trống Hội breathes out: «Seeing you, I'll remember I'm not drumming alone.»"
+            "consequence": "Festival Drum Elephant breathes out: «Seeing you, I'll remember I'm not drumming alone.»"
           },
           {
             "text": "Count one two three four in time with your feet",
@@ -406,7 +406,7 @@
       "text": "Lần đầu tiên Voi Trống Hội gõ trọn bài theo tờ nhạc. Cậu ấy chép tay một tờ nhịp nhỏ, ký tên to tướng rồi tặng {name}.",
       "en": {
         "title": "The drum team is ready",
-        "text": "For the first time ever, Voi Trống Hội plays a whole piece from the sheet. He copies out a little rhythm card, signs it in huge letters and gives it to {name}."
+        "text": "For the first time ever, Festival Drum Elephant plays a whole piece from the sheet. He copies out a little rhythm card, signs it in huge letters and gives it to {name}."
       }
     },
     {
@@ -417,7 +417,7 @@
       "text": "Lúc cả đội ra về, Voi Trống Hội chỉ về phía phông màn: «Có một bạn gà con cứ nấp đó xem tập mãi. Mai diễn, tớ định rủ bạn ấy một việc…» Việc gì thì mai {name} sẽ biết.",
       "en": {
         "title": "The little one behind the curtain",
-        "text": "As the team heads home, Voi Trống Hội points at the curtain: «A little chick keeps hiding there to watch us practise. Tomorrow at the show, I want to ask her something…» What it is, {name} will find out tomorrow."
+        "text": "As the team heads home, Festival Drum Elephant points at the curtain: «A little chick keeps hiding there to watch us practise. Tomorrow at the show, I want to ask her something…» What it is, {name} will find out tomorrow."
       }
     }
   ],
@@ -432,7 +432,7 @@
     "items": {}
   },
   "en": {
-    "title": "Voi Trống Hội's story, chapter 3: The rhythm in dots",
-    "summary": "The new opening piece is written in filled and hollow dots, and Voi Trống Hội has only ever drummed by ear. {name} reads the key, guesses the next beat, puts four parts back in order, rehearses with the team and hears what Voi fears most."
+    "title": "Festival Drum Elephant's story, chapter 3: The rhythm in dots",
+    "summary": "The new opening piece is written in filled and hollow dots, and Festival Drum Elephant has only ever drummed by ear. {name} reads the key, guesses the next beat, puts four parts back in order, rehearses with the team and hears what Voi fears most."
   }
 }

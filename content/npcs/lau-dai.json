@@ -81,17 +81,17 @@
         },
         {
           "vi": "Bà Gấu Nâu ở Xóm Mái Ấm vừa gửi lên đôi găng len mới. Tay bác ấm rồi, chỉ có cái kìm là ghen tị.",
-          "en": "Bà Gấu Nâu down in Xóm Mái Ấm sent me new wool gloves. My hands are warm now; only my pliers are jealous.",
+          "en": "Grandma Brown Bear down in Cosy Hamlet sent me new wool gloves. My hands are warm now; only my pliers are jealous.",
           "about": "ba-gau-nau"
         },
         {
           "vi": "Tể Tướng Cờ Vua lại làm mất chìa hộp cờ, lần thứ mười hai năm nay. Bác sắp làm cho ngài một chiếc chìa có gắn chuông.",
-          "en": "Tể Tướng Cờ Vua has lost his chess-box key again, the twelfth time this year. I'm about to make him one with a bell on it.",
+          "en": "Chess Chancellor has lost his chess-box key again, the twelfth time this year. I'm about to make him one with a bell on it.",
           "about": "te-tuong-co-the"
         },
         {
           "vi": "Hươu Cao bảo nhìn từ trên cao, cây cầu đá giống chiếc chìa nằm ngang. Đúng thật, chỉ thiếu cái ổ to cỡ ngọn đồi.",
-          "en": "Hươu Cao says that from up high the stone bridge looks like a key lying flat. True enough; it only needs a lock the size of a hill.",
+          "en": "Giraffe says that from up high the stone bridge looks like a key lying flat. True enough; it only needs a lock the size of a hill.",
           "about": "huou-cao"
         },
         {
@@ -137,7 +137,7 @@
       },
       "dream": {
         "vi": "Một lần được đứng ở chỗ thật thoáng ngắm mặt trời mọc, thay vì chỉ nghe Hươu Cao kể lại qua ô cửa thông hơi.",
-        "en": "To stand somewhere wide open and watch the sun rise just once, instead of hearing Hươu Cao describe it through the air vent."
+        "en": "To stand somewhere wide open and watch the sun rise just once, instead of hearing Giraffe describe it through the air vent."
       },
       "secret": {
         "vi": "Đêm nào gấu cũng ôm một con kỳ lân bông trong kho đồ thất lạc mà ngủ, và đặt tên nó là Bánh Bao.",
@@ -189,22 +189,22 @@
         },
         {
           "vi": "Sáng nào Hươu Cao cũng cúi xuống ô thông hơi kể mặt trời hôm nay màu gì. Hôm qua bảo màu bánh trứng, gấu thèm cả ngày.",
-          "en": "Every morning Hươu Cao bends to the air vent to tell me the colour of the sunrise. Yesterday it was custard, and I was hungry all day.",
+          "en": "Every morning Giraffe bends to the air vent to tell me the colour of the sunrise. Yesterday it was custard, and I was hungry all day.",
           "about": "huou-cao"
         },
         {
           "vi": "Nai Đom Đóm ở Khu rừng bí mật hứa cho gấu mượn một hũ đom đóm. Đèn mà biết bay, nghe thôi đã thấy can đảm hơn.",
-          "en": "Nai Đom Đóm in the Secret Forest promised to lend me a jar of fireflies. Lamps that fly! Just hearing it makes me braver.",
+          "en": "Firefly Deer in the Secret Forest promised to lend me a jar of fireflies. Lamps that fly! Just hearing it makes me braver.",
           "about": "nai-dom-dom"
         },
         {
           "vi": "Bác Thợ Khóa Thành làm cho hầm này mười bảy ổ khóa. Gấu thuộc tiếng kêu từng cái, nhắm mắt cũng biết cửa nào.",
-          "en": "Bác Thợ Khóa Thành made seventeen locks for this cellar. I know every click by heart; I could name each door with my eyes shut.",
+          "en": "Castle Locksmith Uncle made seventeen locks for this cellar. I know every click by heart; I could name each door with my eyes shut.",
           "about": "bac-tho-khoa-thanh"
         },
         {
           "vi": "Gấu kể nhỏ thôi: thứ gấu quý nhất là chiếc đèn dầu cổ mua ở Xóm Mái Ấm. Đèn dầu chẳng bao giờ tắt phụt như nến.",
-          "en": "Just between us: my dearest thing is an old oil lamp from Xóm Mái Ấm. Oil lamps never puff out the way candles do.",
+          "en": "Just between us: my dearest thing is an old oil lamp from Cosy Hamlet. Oil lamps never puff out the way candles do.",
           "hearts": 2
         },
         {
@@ -249,11 +249,11 @@
       },
       "secret": {
         "vi": "Hươu Cao chẳng phải lúc nào cũng thấy hết đâu: mắt hơi cận, đã mấy lần cúi chào một cái cây vì tưởng là khách.",
-        "en": "Hươu Cao doesn't actually see everything: a little short-sighted, and has bowed to a tree more than once, mistaking it for a guest."
+        "en": "Giraffe doesn't actually see everything: a little short-sighted, and has bowed to a tree more than once, mistaking it for a guest."
       },
       "habit": {
         "vi": "Mỗi sáng cúi xuống ô thông hơi của hầm, kể cho Gấu Gác Hầm nghe bình minh hôm nay màu gì.",
-        "en": "Every morning bends down to the cellar air vent to tell Gấu Gác Hầm the colour of the sunrise."
+        "en": "Every morning bends down to the cellar air vent to tell Dungeon-Keeper Bear the colour of the sunrise."
       },
       "likes": ["vuong-mien-hoa", "ruy-bang-nhung"],
       "lines": [
@@ -297,17 +297,17 @@
         },
         {
           "vi": "Hôm nay tớ kể với Gấu Gác Hầm bình minh màu hồng đào. Gấu bảo nghe thôi đã thấy ấm, thế là tớ vui cả buổi.",
-          "en": "Today I told Gấu Gác Hầm the sunrise was peach pink. He said just hearing it felt warm, and that made my whole morning.",
+          "en": "Today I told Dungeon-Keeper Bear the sunrise was peach pink. He said just hearing it felt warm, and that made my whole morning.",
           "about": "gau-gac-ham"
         },
         {
           "vi": "Cô Thủ Thư Mai gửi tớ một cuốn sách tranh về biển. Giờ sóng tớ vẽ bớt giống bánh quy rồi, chỉ còn hơi giống bánh bông lan.",
-          "en": "Cô Thủ Thư Mai sent me a picture book about the sea. Now my waves look less like biscuits and only a little like sponge cake.",
+          "en": "Auntie Mai the Librarian sent me a picture book about the sea. Now my waves look less like biscuits and only a little like sponge cake.",
           "about": "co-thu-thu-mai"
         },
         {
           "vi": "Cáo Cung Thủ nhờ tớ đứng sau bia báo điểm. Tớ chỉ gật đầu khi cậu ấy hứa ngắm thấp hơn tai tớ một chút.",
-          "en": "Cáo Cung Thủ asked me to stand behind the target and call the scores. I agreed once he promised to aim a little below my ears.",
+          "en": "Archer Fox asked me to stand behind the target and call the scores. I agreed once he promised to aim a little below my ears.",
           "about": "cao-cung-thu"
         },
         {
@@ -405,12 +405,12 @@
         },
         {
           "vi": "Bác Quăng Lưới Biển ở Đảo bí ẩn dạy cáo đọc gió trên mặt sóng. Bác bảo lưới bung tròn hay méo đều do gió cả.",
-          "en": "Bác Quăng Lưới Biển on the Mysterious Island taught me to read wind on the waves. He says whether a net opens round or lopsided is all the wind's doing.",
+          "en": "Net-Casting Uncle on the Mysterious Island taught me to read wind on the waves. He says whether a net opens round or lopsided is all the wind's doing.",
           "about": "bac-quang-luoi-bien"
         },
         {
           "vi": "Tể Tướng Cờ Vua dặn cáo: muốn trúng thì phải chậm. Cáo đang tập chậm, nhưng mà chậm nhanh nhất có thể.",
-          "en": "Tể Tướng Cờ Vua told me: to hit, go slow. So I'm practising going slow, as fast as I possibly can.",
+          "en": "Chess Chancellor told me: to hit, go slow. So I'm practising going slow, as fast as I possibly can.",
           "about": "te-tuong-co-the"
         },
         {
@@ -424,7 +424,7 @@
         },
         {
           "vi": "Nếu {name} muốn, cáo cho mượn «Sấm Sét» bắn một phát. Cáo chưa cho ai mượn đâu, kể cả Hươu Cao.",
-          "en": "If you like, {name}, I'll lend you «Thunderbolt» for one shot. I've never lent it to anyone, not even Hươu Cao.",
+          "en": "If you like, {name}, I'll lend you «Thunderbolt» for one shot. I've never lent it to anyone, not even Giraffe.",
           "hearts": 3
         },
         {
@@ -464,7 +464,7 @@
       },
       "secret": {
         "vi": "Ngài chưa từng thắng Bác Thợ Khóa Thành ván cờ nào, dù vẫn kể với cả thành rằng hai bên «ngang tài».",
-        "en": "He has never once beaten Bác Thợ Khóa Thành at chess, though he tells the whole castle they are «evenly matched»."
+        "en": "He has never once beaten Castle Locksmith Uncle at chess, though he tells the whole castle they are «evenly matched»."
       },
       "habit": {
         "vi": "Vuốt râu đúng ba lần trước mỗi quyết định, và đếm bậc thang thành tiếng khi xuống đại sảnh.",
@@ -512,17 +512,17 @@
         },
         {
           "vi": "Mèo Đầm Sen ở Làng Ven Sông đánh cờ với ta qua thư, mỗi tuần một nước. Ván này e phải tới mùa sen năm sau mới xong.",
-          "en": "Mèo Đầm Sen in Làng Ven Sông plays chess with me by post, one move a week. This game may last until next lotus season.",
+          "en": "Lotus Pond Cat in Riverside Village plays chess with me by post, one move a week. This game may last until next lotus season.",
           "about": "meo-dam-sen"
         },
         {
           "vi": "Bác Thợ Khóa Thành lại xin ván phục thù. Ta nhận lời, miễn là chiếc chìa hộp cờ hôm nay không «tự dưng» biến mất nữa.",
-          "en": "Bác Thợ Khóa Thành wants a rematch. I accept, provided the chess-box key does not «mysteriously» vanish again today.",
+          "en": "Castle Locksmith Uncle wants a rematch. I accept, provided the chess-box key does not «mysteriously» vanish again today.",
           "about": "bac-tho-khoa-thanh"
         },
         {
           "vi": "Cáo Cung Thủ bắn nhanh như chớp, nghĩ còn nhanh hơn bắn. Ta đang dạy cậu ấy đếm tới ba rồi mới buông dây.",
-          "en": "Cáo Cung Thủ shoots like lightning and thinks even faster. I am teaching him to count to three before letting go.",
+          "en": "Archer Fox shoots like lightning and thinks even faster. I am teaching him to count to three before letting go.",
           "about": "cao-cung-thu"
         },
         {
@@ -537,7 +537,7 @@
         },
         {
           "vi": "Đừng kể với ai: ta chưa thắng Bác Thợ Khóa Thành ván nào. «Ngang tài» chỉ là cách nói của người thua lịch sự.",
-          "en": "Tell no one: I have never beaten Bác Thợ Khóa Thành. «Evenly matched» is merely how a polite loser puts it.",
+          "en": "Tell no one: I have never beaten Castle Locksmith Uncle. «Evenly matched» is merely how a polite loser puts it.",
           "hearts": 4
         },
         {
@@ -555,7 +555,7 @@
       "kind": "friend",
       "note": {
         "vi": "Ba mươi năm nay Bà Gấu Nâu mùa lạnh nào cũng đan găng len gửi lên thành; bác thì làm cho bà những ổ khóa bé xíu cho hộp bánh quy.",
-        "en": "For thirty winters Bà Gấu Nâu has knitted gloves and sent them up to the castle; in return he makes tiny locks for her biscuit tins."
+        "en": "For thirty winters Grandma Brown Bear has knitted gloves and sent them up to the castle; in return he makes tiny locks for her biscuit tins."
       }
     },
     {
@@ -591,7 +591,7 @@
       "kind": "friend",
       "note": {
         "vi": "Sáng nào Hươu Cao cũng kể bình minh qua ô thông hơi cho Gấu Gác Hầm, người chưa từng được tận mắt ngắm nó.",
-        "en": "Every morning Hươu Cao describes the sunrise through the air vent to Gấu Gác Hầm, who has never seen one himself."
+        "en": "Every morning Giraffe describes the sunrise through the air vent to Dungeon-Keeper Bear, who has never seen one himself."
       }
     },
     {
@@ -600,7 +600,7 @@
       "kind": "friend",
       "note": {
         "vi": "Hươu Cao đứng sau bia báo điểm cho Cáo Cung Thủ, vì cổ cao nhìn rõ mũi tên cắm ở vòng nào.",
-        "en": "Hươu Cao stands behind the target calling scores for Cáo Cung Thủ, tall enough to see which ring each arrow lands in."
+        "en": "Giraffe stands behind the target calling scores for Archer Fox, tall enough to see which ring each arrow lands in."
       }
     },
     {
@@ -609,7 +609,7 @@
       "kind": "mentor",
       "note": {
         "vi": "Tể tướng dạy Cáo Cung Thủ chơi cờ để tập tính trước và đếm tới ba rồi mới hành động.",
-        "en": "The chancellor teaches Cáo Cung Thủ chess, to help him think ahead and count to three before he acts."
+        "en": "The chancellor teaches Archer Fox chess, to help him think ahead and count to three before he acts."
       }
     }
   ],
@@ -641,7 +641,7 @@
           "hearts": 1,
           "letter": {
             "from": "ba-gau-nau",
-            "title": { "vi": "Thư từ Xóm Mái Ấm", "en": "A letter from Xóm Mái Ấm" },
+            "title": { "vi": "Thư từ Xóm Mái Ấm", "en": "A letter from Cosy Hamlet" },
             "body": {
               "vi": "Cháu {name} ơi, bác Thợ Khóa vừa viết thư kể cháu giúp bác mở cánh cửa dưới gầm cầu. Ba mươi năm quen nhau, bà chưa thấy chữ bác ấy nhảy nhót vui thế bao giờ. Bà gửi cháu chiếc khăn len, để lúc chui gầm cầu gió hào khỏi lùa vào cổ.",
               "en": "Dear {name}, the old locksmith has written to tell me you helped him open the door under the bridge. In thirty years I've never seen his handwriting dance so happily. Here's a wool scarf, so the moat wind can't creep down your neck under there."
@@ -694,7 +694,7 @@
             "title": { "vi": "Hầm có thêm người thuê nhà", "en": "The cellar has a new lodger" },
             "body": {
               "vi": "{name} ơi, Dơi Nhí Lộn Ngược ngủ ngoan trên xà ở góc tối, còn đèn của gấu sáng ở góc bên kia. Đêm nay chẳng cây nến nào tắt. Gấu đếm hai lượt rồi, vẫn đủ!",
-              "en": "{name}, Dơi Nhí Lộn Ngược is sleeping soundly on a beam in the dark corner, and my lamps glow in the other one. Not one candle went out tonight. I counted twice, and they're all there!"
+              "en": "{name}, Upside-Down Baby Bat is sleeping soundly on a beam in the dark corner, and my lamps glow in the other one. Not one candle went out tonight. I counted twice, and they're all there!"
             },
             "reward": { "coins": 15, "xp": 15, "items": {} }
           }
@@ -707,7 +707,7 @@
             "title": { "vi": "Thư từ cánh rừng có đom đóm", "en": "A letter from the firefly woods" },
             "body": {
               "vi": "Chào {name}, Gấu Gác Hầm viết thư kể chuyện mấy bóng ma vải và con rối mới. Ở rừng tớ, trời tối là lúc đom đóm thắp đèn, nên tớ chưa bao giờ thấy bóng tối đáng sợ. Tớ gửi gấu một hũ ánh sáng xanh, còn cậu thì nhận chút quà này nhé.",
-              "en": "Hello {name}, Gấu Gác Hầm wrote to me about the cloth ghosts and the new puppet. In my woods, darkness is when the fireflies light their lamps, so I've never found it scary. I've sent the bear a jar of green light, and this little gift is for you."
+              "en": "Hello {name}, Dungeon-Keeper Bear wrote to me about the cloth ghosts and the new puppet. In my woods, darkness is when the fireflies light their lamps, so I've never found it scary. I've sent the bear a jar of green light, and this little gift is for you."
             },
             "reward": { "coins": 20, "xp": 20, "items": {} }
           }
@@ -720,7 +720,7 @@
             "title": { "vi": "Gấu đã thấy mặt trời mọc", "en": "I saw the sun come up" },
             "body": {
               "vi": "{name} thân mến, bình minh còn đẹp hơn mọi lời Hươu Cao kể. Gấu đứng dưới vòm hoa hồng, run như cầy sấy mà vẫn mở thật to mắt. Từ nay đêm có Dơi Nhí gác, sáng có gấu ngắm, hầm mình chẳng bao giờ một mình nữa.",
-              "en": "Dear {name}, the sunrise was even lovelier than all of Hươu Cao's descriptions. I stood under the rose arch, shaking like a jelly, but I kept my eyes wide open. Now Dơi Nhí keeps watch by night and I greet the sun by day, so our cellar is never alone."
+              "en": "Dear {name}, the sunrise was even lovelier than all of Giraffe's descriptions. I stood under the rose arch, shaking like a jelly, but I kept my eyes wide open. Now Dơi Nhí keeps watch by night and I greet the sun by day, so our cellar is never alone."
             },
             "reward": { "coins": 25, "xp": 20, "items": { "ky-lan-bong": 1 } }
           }
@@ -731,7 +731,7 @@
       "id": "te-tuong-nghin-van-co",
       "npc": "te-tuong-co-the",
       "title": { "vi": "Một nghìn ván cờ không ai thua", "en": "A Thousand Games Nobody Loses" },
-      "teaser": { "vi": "Ta là Tể Tướng Cờ Vua. Ta đang soạn cuốn «Một nghìn ván cờ không ai thua», nơi ván nào cũng khép lại bằng một cái bắt tay. Nước đi tiếp theo, {name} ạ, xin mời ngươi.", "en": "I am Tể Tướng Cờ Vua. I am writing «A Thousand Games Nobody Loses», where every game closes with a handshake. The next move, {name}, is yours." },
+      "teaser": { "vi": "Ta là Tể Tướng Cờ Vua. Ta đang soạn cuốn «Một nghìn ván cờ không ai thua», nơi ván nào cũng khép lại bằng một cái bắt tay. Nước đi tiếp theo, {name} ạ, xin mời ngươi.", "en": "I am Chess Chancellor. I am writing «A Thousand Games Nobody Loses», where every game closes with a handshake. The next move, {name}, is yours." },
       "chapters": [
         {
           "quest": "yarn-te-tuong-nghin-van-co-1",
@@ -763,7 +763,7 @@
           "letter": {
             "from": "cao-cung-thu",
             "title": { "vi": "Một, hai, ba… vút!", "en": "One, two, three… whoosh!" },
-            "body": { "vi": "Vút! Cáo đây. Thầy Tể Tướng đưa cáo tấm thẻ cậu chọn câu. Sáng nay cáo đếm một, hai, ba rồi mới buông dây. Trúng vòng chín! Ván cờ chiều nay cáo trụ được tới nước hai mươi. Chưa thắng, nhưng cáo đòi đấu lại liền. Tặng cậu chiếc lông vũ chim rừng.", "en": "Whoosh! Cáo here. Master chancellor gave me the card you chose the words for. This morning I counted one, two, three before letting go. Ring nine! In this afternoon's chess game I lasted to move twenty. Not a win, but I demanded a rematch right away. Here's a forest feather for you." },
+            "body": { "vi": "Vút! Cáo đây. Thầy Tể Tướng đưa cáo tấm thẻ cậu chọn câu. Sáng nay cáo đếm một, hai, ba rồi mới buông dây. Trúng vòng chín! Ván cờ chiều nay cáo trụ được tới nước hai mươi. Chưa thắng, nhưng cáo đòi đấu lại liền. Tặng cậu chiếc lông vũ chim rừng.", "en": "Whoosh! Fox here. Master chancellor gave me the card you chose the words for. This morning I counted one, two, three before letting go. Ring nine! In this afternoon's chess game I lasted to move twenty. Not a win, but I demanded a rematch right away. Here's a forest feather for you." },
             "reward": {
               "coins": 20,
               "xp": 20,
@@ -800,7 +800,7 @@
     {
       "id": "cao-mui-ten-mang-thu",
       "npc": "cao-cung-thu",
-      "title": { "vi": "Mũi tên mang thư của Cáo", "en": "Cáo's Letter-Arrow" },
+      "title": { "vi": "Mũi tên mang thư của Cáo", "en": "Fox's Letter-Arrow" },
       "teaser": { "vi": "Vút! {name}. Cáo sắp mở một giải bắn trước cổng thành, rồi bắn một mũi tên mang thư thật xa. Một mình thì chậm. Hai người thì trúng phóc. Đi không?", "en": "Whoosh! {name}. I'm about to hold an archery contest before the castle gate, then shoot an arrow carrying a letter far, far away. Alone is slow. Two of us is dead centre. Coming?" },
       "chapters": [
         {
@@ -809,7 +809,7 @@
           "letter": {
             "from": "huou-cao",
             "title": { "vi": "Bảng điểm nhìn từ trên cao", "en": "The scoreboard from up high" },
-            "body": { "vi": "Hí hí, {name}! Nhìn từ trên này thì bãi cỏ trước cổng thành giờ như một tấm bản đồ đẹp: ba lá cờ gió, một tấm bia vòng, một bảng điểm do tớ giữ phấn. Cáo khoe với tớ là cậu cộng điểm nhanh hơn tớ kịp đọc số. Tớ gửi cậu ít xu, ngày giải nhớ đứng cạnh tớ, chỗ đó nhìn rõ nhất.", "en": "Hee hee, {name}! From up here, the grass before the castle gate looks like a lovely map now: three wind flags, one ringed target, and a scoreboard where I hold the chalk. Cáo boasted that you add up scores faster than I can read them out. Here are a few coins; on contest day, stand next to me, it's the best view there is." },
+            "body": { "vi": "Hí hí, {name}! Nhìn từ trên này thì bãi cỏ trước cổng thành giờ như một tấm bản đồ đẹp: ba lá cờ gió, một tấm bia vòng, một bảng điểm do tớ giữ phấn. Cáo khoe với tớ là cậu cộng điểm nhanh hơn tớ kịp đọc số. Tớ gửi cậu ít xu, ngày giải nhớ đứng cạnh tớ, chỗ đó nhìn rõ nhất.", "en": "Hee hee, {name}! From up here, the grass before the castle gate looks like a lovely map now: three wind flags, one ringed target, and a scoreboard where I hold the chalk. Fox boasted that you add up scores faster than I can read them out. Here are a few coins; on contest day, stand next to me, it's the best view there is." },
             "reward": { "coins": 15, "xp": 15, "items": {} }
           }
         },
@@ -819,7 +819,7 @@
           "letter": {
             "from": "te-tuong-co-the",
             "title": { "vi": "Nước đi chậm mà chắc", "en": "A slow, sure move" },
-            "body": { "vi": "Ta, Tể Tướng Cờ Vua, gửi {name}. Cáo Cung Thủ vừa chạy một mạch lên tháp khoe rằng mũi tên buộc thư đã bay qua hào. Ta nghe kể thì biết đó là một nước đi chậm mà chắc: chọn dây cho gọn, đọc gió cho kỹ, rồi mới buông. Ta vẫn dặn cáo như thế mãi mà nay mới thấy cáo làm theo, hẳn là nhờ có {name} đứng bên. Nhận lấy chút quà của ta.", "en": "I, Tể Tướng Cờ Vua, write to {name}. Cáo Cung Thủ has just run all the way up the tower to boast that the letter-arrow flew over the moat. From his account, it was a slow and sure move: thread chosen neatly, wind read carefully, and only then the release. I have told him so a hundred times, and only now does he do it; no doubt because {name} stood beside him. Accept this small gift from me." },
+            "body": { "vi": "Ta, Tể Tướng Cờ Vua, gửi {name}. Cáo Cung Thủ vừa chạy một mạch lên tháp khoe rằng mũi tên buộc thư đã bay qua hào. Ta nghe kể thì biết đó là một nước đi chậm mà chắc: chọn dây cho gọn, đọc gió cho kỹ, rồi mới buông. Ta vẫn dặn cáo như thế mãi mà nay mới thấy cáo làm theo, hẳn là nhờ có {name} đứng bên. Nhận lấy chút quà của ta.", "en": "I, Chess Chancellor, write to {name}. Archer Fox has just run all the way up the tower to boast that the letter-arrow flew over the moat. From his account, it was a slow and sure move: thread chosen neatly, wind read carefully, and only then the release. I have told him so a hundred times, and only now does he do it; no doubt because {name} stood beside him. Accept this small gift from me." },
             "reward": { "coins": 20, "xp": 20, "items": {} }
           }
         },
@@ -829,7 +829,7 @@
           "letter": {
             "from": "bac-quang-luoi-bien",
             "title": { "vi": "Thư theo phà ra đảo", "en": "Letters by ferry to the island" },
-            "body": { "vi": "Bác Quăng Lưới Biển gửi {name}. Chuyến phà chiều qua chở ra đảo cả một bó thư buộc trên thân tên, giấy còn thơm mùi cỏ trước cổng thành. Cáo viết rằng có {name} giúp chọn dây, giúp đọc gió. Hôm ấy gió trên sóng êm, lưới bác bung tròn như mặt trăng rằm. Bác để dành cho {name} một chiếc vảy cá bạc. Lần sau qua đảo, ta thi đoán gió nhé: cháu với Cáo đoán bằng tên, bác đoán bằng lưới.", "en": "Bác Quăng Lưới Biển writes to {name}. Yesterday evening's ferry brought a whole bundle of letters tied to an arrow shaft out to the island, the paper still smelling of the grass before the castle gate. Cáo writes that {name} helped choose the thread and read the wind. The wind on the waves was gentle that day, and my net opened as round as a full moon. I've kept a silver fish scale for {name}. Next time you come to the island, let's have a wind-guessing contest: you and Cáo guess with arrows, I'll guess with my net." },
+            "body": { "vi": "Bác Quăng Lưới Biển gửi {name}. Chuyến phà chiều qua chở ra đảo cả một bó thư buộc trên thân tên, giấy còn thơm mùi cỏ trước cổng thành. Cáo viết rằng có {name} giúp chọn dây, giúp đọc gió. Hôm ấy gió trên sóng êm, lưới bác bung tròn như mặt trăng rằm. Bác để dành cho {name} một chiếc vảy cá bạc. Lần sau qua đảo, ta thi đoán gió nhé: cháu với Cáo đoán bằng tên, bác đoán bằng lưới.", "en": "Net-Casting Uncle writes to {name}. Yesterday evening's ferry brought a whole bundle of letters tied to an arrow shaft out to the island, the paper still smelling of the grass before the castle gate. Fox writes that {name} helped choose the thread and read the wind. The wind on the waves was gentle that day, and my net opened as round as a full moon. I've kept a silver fish scale for {name}. Next time you come to the island, let's have a wind-guessing contest: you and Fox guess with arrows, I'll guess with my net." },
             "reward": {
               "coins": 25,
               "xp": 25,

@@ -68,7 +68,7 @@
       ],
       "en": {
         "title": "The addition tables fell off",
-        "goTo": "Go to the seed-gourd trellis, where Khỉ Lủng Lẳng is hanging by his tail",
+        "goTo": "Go to the seed-gourd trellis, where Dangling Monkey is hanging by his tail",
         "lines": [
           "Boo hoo, {name}... I spent the whole summer carving addition tables onto each seed gourd, and last night the wind knocked them all down.",
           "Oh, gourds have fallen? I heard it from my soup stall. Can I have a few to make soup for the lunch crowd?",
@@ -77,7 +77,7 @@
         "choices": [
           {
             "text": "I'll pick them up now!",
-            "reply": "Khỉ Lủng Lẳng sniffles: Thank you! If I let go, the ones on the trellis will fall too."
+            "reply": "Dangling Monkey sniffles: Thank you! If I let go, the ones on the trellis will fall too."
           },
           {
             "text": "Wait a moment, Uncle Lành!",
@@ -1184,7 +1184,7 @@
       "text": "Khỉ Lủng Lẳng tặng {name} một quả bầu giống tí hon khắc chữ \"Bạn thuộc bảng cộng\". Bác Lành cũng múc mời một bát canh bầu nấu từ quả bầu trơn, thơm phưng phức.",
       "en": {
         "title": "Addition table badge",
-        "text": "Khỉ Lủng Lẳng gives {name} a teeny seed gourd carved with the words \"Addition Table Expert\". Uncle Lành ladles out a bowl of fragrant gourd soup, made from a plain gourd."
+        "text": "Dangling Monkey gives {name} a teeny seed gourd carved with the words \"Addition Table Expert\". Uncle Lành ladles out a bowl of fragrant gourd soup, made from a plain gourd."
       }
     },
     {
@@ -1195,7 +1195,7 @@
       "text": "Từ góc chợ vọng ra tiếng \"ụm bò\" hớt hải: đàn bê con theo Bò Mẹ Gạo đi chợ cứ chạy ra chạy vào đống rơm, cô đếm mãi không biết còn bao nhiêu con!",
       "en": {
         "title": "Calves frolicking about",
-        "text": "From the corner of the market comes a flustered \"moo!\": the calves who came to market with Bò Mẹ Gạo keep running in and out of the haystack, and she can't work out how many are left!"
+        "text": "From the corner of the market comes a flustered \"moo!\": the calves who came to market with Mama Rice Cow keep running in and out of the haystack, and she can't work out how many are left!"
       }
     }
   ],

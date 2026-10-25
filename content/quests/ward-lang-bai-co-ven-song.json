@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Thỏ Ngọc Bãi Sông",
+        "title": "Meet Riverside Jade Rabbit",
         "lines": [
-          "Oh look, {name}! I'm Thỏ Ngọc Bãi Sông, and I'm counting every blade of grass by the river.",
+          "Oh look, {name}! I'm Riverside Jade Rabbit, and I'm counting every blade of grass by the river.",
           "Counting gets boring, so shall we swap four riddles for fun?"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Thỏ Ngọc Bãi Sông",
-        "bossName": "Thỏ Ngọc Bãi Sông",
+        "title": "Battle of wits with Riverside Jade Rabbit",
+        "bossName": "Riverside Jade Rabbit",
         "introDialogue": "My ears are up: here hops the first riddle!",
         "winDialogue": "I give up! {name} is even quicker than a rabbit."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Thỏ Ngọc Bãi Sông tặng {name} một bó cỏ ba lá may mắn, lúc nào buồn thì ra đây đố tiếp nhé.",
       "en": {
-        "title": "Thỏ Ngọc Bãi Sông's gift",
-        "text": "Thỏ Ngọc Bãi Sông gives {name} a bunch of lucky clover. Come back for more riddles whenever you feel blue."
+        "title": "Riverside Jade Rabbit's gift",
+        "text": "Riverside Jade Rabbit gives {name} a bunch of lucky clover. Come back for more riddles whenever you feel blue."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Xuôi xuống bến sông, có một trùm canh khu đang ngồi đợi bạn đố chữ.",
       "en": {
-        "title": "Goodbye, Thỏ Ngọc Bãi Sông",
+        "title": "Goodbye, Riverside Jade Rabbit",
         "text": "Down at the river landing a zone guardian is waiting for someone to play word riddles."
       }
     }
@@ -354,7 +354,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Thỏ Ngọc Bãi Sông",
-    "summary": "Thỏ Ngọc Bãi Sông guards the riverside meadow and challenges {name} to four riddles about words, sentences and the alphabet."
+    "title": "Zone guardian: Riverside Jade Rabbit",
+    "summary": "Riverside Jade Rabbit guards the riverside meadow and challenges {name} to four riddles about words, sentences and the alphabet."
   }
 }

@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "Khỉ's fear",
-        "goTo": "Go to the swinging tree, where Khỉ Chuyền Cành sits still, not swinging at all",
+        "goTo": "Go to the swinging tree, where Branch-Swinging Monkey sits still, not swinging at all",
         "lines": [
           "{name}… I'll tell you something, don't laugh. I'm scared of the crack of a branch. Since the vine snapped, that sound makes my legs shake.",
           "Dragonflies too. One landed on my nose once. Since then I… well, I avoid them.",
@@ -148,13 +148,13 @@
         },
         "en": {
           "guide": [
-            "Gấu alone weighs more than 30 kg, so he can't share a ride.",
+            "Bear alone weighs more than 30 kg, so he can't share a ride.",
             "Try adding the other three."
           ],
           "hint": "12 kg + 16 kg = 28 kg; who makes it 30 kg?",
           "answer": {
-            "text": "Khỉ, Hươu and Vẹt",
-            "explanation": "12 + 16 + 2 = 30, exactly 30 kg. Gấu weighs 45 kg, so he rides alone on a thicker vine."
+            "text": "Khỉ, Hươu and Parrot",
+            "explanation": "12 + 16 + 2 = 30, exactly 30 kg. Bear weighs 45 kg, so he rides alone on a thicker vine."
           }
         }
       },
@@ -187,9 +187,9 @@
         "goTo": "Go to the grassy clearing to see the ride board",
         "prompt": "Each ride, the vine holds exactly 30 kg. Pick friends to swing together so their weights add up to exactly 30 kg:",
         "choices": [
-          "Khỉ Chuyền Cành weighs 12 kg",
+          "Branch-Swinging Monkey weighs 12 kg",
           "Hươu Bông Rắm weighs 16 kg",
-          "Vẹt Xanh weighs 2 kg",
+          "Green Parrot weighs 2 kg",
           "Gấu Bắp Cày weighs 45 kg"
         ]
       }
@@ -381,7 +381,7 @@
     }
   },
   "en": {
-    "title": "Khỉ Chuyền Cành's story, chapter 4: A flyway for the whole forest",
-    "summary": "The vine line reaches the music stop. Khỉ Chuyền Cành tells {name} about his fear of cracking branches. {name} checks the knots, picks friends to swing together within the vine's limit, orders leaves that retell the story and joins the whole forest for the first ride."
+    "title": "Branch-Swinging Monkey's story, chapter 4: A flyway for the whole forest",
+    "summary": "The vine line reaches the music stop. Branch-Swinging Monkey tells {name} about his fear of cracking branches. {name} checks the knots, picks friends to swing together within the vine's limit, orders leaves that retell the story and joins the whole forest for the first ride."
   }
 }

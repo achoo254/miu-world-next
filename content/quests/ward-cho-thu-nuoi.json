@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Chó Vàng Giữ Sạp",
+        "title": "Meet Stall-Guarding Golden Dog",
         "lines": [
-          "Woof woof! Don't be scared, {name}, I'm Chó Vàng Giữ Sạp, and I only bark to say hello to customers.",
+          "Woof woof! Don't be scared, {name}, I'm Stall-Guarding Golden Dog, and I only bark to say hello to customers.",
           "My pet stall is selling fast today. Help me with four sums!"
         ],
         "choices": [
@@ -94,7 +94,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Chó Vàng has 14 bones and eats 6. How many bones are left?",
+            "prompt": "Golden Dog has 14 bones and eats 6. How many bones are left?",
             "choices": [
               "9",
               "20",
@@ -116,7 +116,7 @@
             },
             "en": {
               "guide": [
-                "Chó Vàng eats 6 bones, so there are fewer: subtract 14 − 6.",
+                "Golden Dog eats 6 bones, so there are fewer: subtract 14 − 6.",
                 "Do it in two steps: take 4 from 14 to reach 10, then take the rest of the 6."
               ],
               "hint": "14 − 4 = 10, and 2 of the 6 bones still need taking away from that 10.",
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Chó Vàng Giữ Sạp",
-        "bossName": "Chó Vàng Giữ Sạp",
+        "title": "Battle of wits with Stall-Guarding Golden Dog",
+        "bossName": "Stall-Guarding Golden Dog",
         "introDialogue": "The cage door opens, and out runs the first problem!",
         "winDialogue": "Woof… I lie down and give up! {name} takes away better than the stall owner."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Chó Vàng Giữ Sạp tặng {name} một chiếc vòng cổ có lục lạc nhỏ, đeo vào là kêu leng keng.",
       "en": {
-        "title": "Chó Vàng Giữ Sạp's gift",
-        "text": "Chó Vàng Giữ Sạp gives {name} a collar with a little bell that jingles."
+        "title": "Stall-Guarding Golden Dog's gift",
+        "text": "Stall-Guarding Golden Dog gives {name} a collar with a little bell that jingles."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Sang dãy hàng cân đong, trùm canh khu ở đó mang cả cân đĩa ra đố {name}.",
       "en": {
-        "title": "Goodbye, Chó Vàng Giữ Sạp",
+        "title": "Goodbye, Stall-Guarding Golden Dog",
         "text": "Over at the weighing row the zone guardian brings out the balance scales for {name}."
       }
     }
@@ -353,7 +353,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Chó Vàng Giữ Sạp",
-    "summary": "Chó Vàng Giữ Sạp guards the pet stalls and asks {name} four riddles about taking away over ten and more-or-fewer problems."
+    "title": "Zone guardian: Stall-Guarding Golden Dog",
+    "summary": "Stall-Guarding Golden Dog guards the pet stalls and asks {name} four riddles about taking away over ten and more-or-fewer problems."
   }
 }

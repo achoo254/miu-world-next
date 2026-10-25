@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Cua Kềnh Gác Bến",
+        "title": "Meet Wharf-Guarding Giant Crab",
         "lines": [
-          "Halt, halt! Cua Kềnh Gác Bến here, with the biggest claws on this landing, {name}.",
+          "Halt, halt! Wharf-Guarding Giant Crab here, with the biggest claws on this landing, {name}.",
           "But I never pinch, I only ask riddles. Get four right and I'll raise my claws to salute you."
         ],
         "choices": [
@@ -260,7 +260,7 @@
             "choices": [
               "Chơi em ra bến sông. (muddled)",
               "Em ra bến sông chơi. (I go to the river landing to play.)",
-              "Bến sông em ra chơi. (muddled)"
+              "River Dock em ra chơi. (muddled)"
             ]
           },
           "answer": {
@@ -281,7 +281,7 @@
                 "Find who does something in the sentence and put them first.",
                 "After the doer come the action and the place; read each order aloud to hear which flows."
               ],
-              "hint": "Telling sentences usually go who, does what, where; starting with «Chơi» or «Bến sông» sounds back to front.",
+              "hint": "Telling sentences usually go who, does what, where; starting with «Chơi» or «River Dock» sounds back to front.",
               "answer": {
                 "text": "Em ra bến sông chơi. (I go to the river landing to play.)",
                 "explanation": "«Em ra bến sông chơi.» follows who (em) then what (go to the landing to play); the other two are jumbled."
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Cua Kềnh Gác Bến",
-        "bossName": "Cua Kềnh Gác Bến",
+        "title": "Battle of wits with Wharf-Guarding Giant Crab",
+        "bossName": "Wharf-Guarding Giant Crab",
         "introDialogue": "A riddle in my left claw, a riddle in my right claw, let's start!",
         "winDialogue": "I salute {name} with both claws! You're cleverer than a sideways crab."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Cua Kềnh Gác Bến tặng {name} một vỏ ốc biết hát, áp vào tai là nghe tiếng sông.",
       "en": {
-        "title": "Cua Kềnh Gác Bến's gift",
-        "text": "Cua Kềnh Gác Bến gives {name} a singing shell: hold it to your ear and you hear the river."
+        "title": "Wharf-Guarding Giant Crab's gift",
+        "text": "Wharf-Guarding Giant Crab gives {name} a singing shell: hold it to your ear and you hear the river."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Đầm sen và sân bóng còn một trùm canh khu mạnh nhất làng đấy, {name} sang đó thử xem.",
       "en": {
-        "title": "Goodbye, Cua Kềnh Gác Bến",
+        "title": "Goodbye, Wharf-Guarding Giant Crab",
         "text": "The lotus pond and football pitch have the strongest zone guardian in the village, {name}, go and try."
       }
     }
@@ -354,7 +354,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Cua Kềnh Gác Bến",
-    "summary": "Cua Kềnh Gác Bến guards the river landing and raises its claws to ask {name} four riddles about words, sentences and polite replies."
+    "title": "Zone guardian: Wharf-Guarding Giant Crab",
+    "summary": "Wharf-Guarding Giant Crab guards the river landing and raises its claws to ask {name} four riddles about words, sentences and polite replies."
   }
 }

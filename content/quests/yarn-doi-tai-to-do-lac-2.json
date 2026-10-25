@@ -51,7 +51,7 @@
       ],
       "en": {
         "title": "Dơi shares a secret",
-        "goTo": "Go to the stone cave, where Dơi Đêm Tai To has been waiting since twilight",
+        "goTo": "Go to the stone cave, where Big-Eared Night Bat has been waiting since twilight",
         "lines": [
           "Shh… I've never told anyone this. When I was little, whenever I found something dropped I meant to give it back, but everyone who saw me screamed 'cave ghost!' and ran.",
           "So I kept it all in a chest in the old forest, each thing with a note of where I found it. Years later the chest is full to the brim, and I've… forgotten the code.",
@@ -171,7 +171,7 @@
       ],
       "en": {
         "title": "Meet the forgetful squirrel",
-        "goTo": "Take the notebook to the chestnut tree by the hill to find Sóc Hạt Dẻ Hay Quên",
+        "goTo": "Take the notebook to the chestnut tree by the hill to find Forgetful Chestnut Squirrel",
         "lines": [
           "Oh, hello… who are you again? Ah, {name}! I'm looking for… what was it? Something round, I think.",
           "Dơi has been keeping my things? I used to see him flitting about and thought he was a thief. I even threw chestnut shells at him. Oh dear!"
@@ -217,7 +217,7 @@
       },
       "en": {
         "title": "Which things are Sóc's?",
-        "prompt": "Using Dơi's notebook, choose everything that belongs to Sóc Hạt Dẻ Hay Quên:",
+        "prompt": "Using Dơi's notebook, choose everything that belongs to Forgetful Chestnut Squirrel:",
         "choices": ["Wooden top carved S.H.D", "Red wool scarf", "Three chestnuts wrapped in leaves", "Leaf whistle", "Brass bell from the meadow"]
       }
     },
@@ -268,7 +268,7 @@
     "skillXp": { "phep-cong": 1, "doc-hieu": 1, "logic": 1 }
   },
   "en": {
-    "title": "Dơi Đêm Tai To's story, chapter 2: The chest in the old forest",
-    "summary": "Dơi leads {name} to a wooden chest hidden in the old forest, where for years he has kept everything the forest lost. {name} finds two numbered stones, adds them up for the code, reads the lost-things notebook and helps Sóc Hạt Dẻ Hay Quên get her things back."
+    "title": "Big-Eared Night Bat's story, chapter 2: The chest in the old forest",
+    "summary": "Dơi leads {name} to a wooden chest hidden in the old forest, where for years he has kept everything the forest lost. {name} finds two numbered stones, adds them up for the code, reads the lost-things notebook and helps Forgetful Chestnut Squirrel get her things back."
   }
 }

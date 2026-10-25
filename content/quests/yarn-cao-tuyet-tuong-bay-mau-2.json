@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "The statue has a shape",
-        "goTo": "Go back to the ice statue yard in the middle of the square, where Cáo is gazing at the tower block of ice",
+        "goTo": "Go back to the ice statue yard in the middle of the square, where Fox is gazing at the tower block of ice",
         "lines": [
           "I thought all night. The block is tall and straight, so the statue should be something reaching upward. I've chosen a swan spreading its wings.",
           "To me a swan is shapes put together: a square base, triangle wings, a round head. But I've left my sketching tools all over the street."
@@ -94,7 +94,7 @@
       ],
       "en": {
         "title": "Forgotten sketching tools",
-        "goTo": "Walk along the village street and find Cáo's little chisel, set square and charcoal pencil"
+        "goTo": "Walk along the village street and find Fox's little chisel, set square and charcoal pencil"
       }
     },
     {
@@ -174,7 +174,7 @@
         ],
         "en": {
           "right": [
-            "Three quadrilaterals, none missed. Cáo dots three little charcoal marks on the board.",
+            "Three quadrilaterals, none missed. Fox dots three little charcoal marks on the board.",
             "{name} sees shapes as sharply as someone who has carved ice for ten winters.",
             "The tail tip has slanted corners and {name} still spotted it; I'm impressed."
           ],
@@ -187,8 +187,8 @@
       },
       "en": {
         "title": "Which shapes have four sides?",
-        "goTo": "Go over to the clock tower, where Cáo has set up the swan sketch board at the foot of the tower",
-        "prompt": "The swan sketch is made of many shapes. Cáo wants to carve the quadrilaterals first because they are easiest to lay a ruler on. Choose all the quadrilaterals:",
+        "goTo": "Go over to the clock tower, where Fox has set up the swan sketch board at the foot of the tower",
+        "prompt": "The swan sketch is made of many shapes. Fox wants to carve the quadrilaterals first because they are easiest to lay a ruler on. Choose all the quadrilaterals:",
         "choices": [
           "Base: 4 straight sides, 4 square corners",
           "Left wing: 3 straight sides, 3 corners",
@@ -262,7 +262,7 @@
           "right": [
             "Exactly. Where the light passes, there mustn't be a single speck of dust.",
             "{name} found the reason as quickly as a sunbeam goes through ice.",
-            "Cáo underlines that line with one perfectly straight charcoal stroke."
+            "Fox underlines that line with one perfectly straight charcoal stroke."
           ],
           "wrong": [
             "The notebook doesn't say the chest is the biggest part, {name}; look for \"because\" again.",
@@ -272,8 +272,8 @@
         }
       },
       "en": {
-        "title": "A page from Cáo's notebook",
-        "goTo": "Go into the ice workshop behind the square, where Cáo's notebook lies open on the bench",
+        "title": "A page from Fox's notebook",
+        "goTo": "Go into the ice workshop behind the square, where Fox's notebook lies open on the bench",
         "text": "Notes on the swan statue.\nThe base is square and steady.\nThe wings are thin, spread wide like two fans.\nThe swan's neck is long and softly curved.\nThe chest must be the clearest, because the sunlight will pass through it and split into seven colours.\nRemember: carve slowly, each cut no bigger than a grain of rice.",
         "question": "According to the notebook page, why must the swan's chest be the clearest part?",
         "choices": [
@@ -310,20 +310,20 @@
       ],
       "en": {
         "title": "Which way will the swan look?",
-        "goTo": "Go to the snowman field, where Cáo has planted a marker post to choose the statue's direction",
-        "prompt": "Cáo turns the post a full circle: \"A statue must look somewhere, like the needle on a compass. Which way should our swan face, {name}?\"",
+        "goTo": "Go to the snowman field, where Fox has planted a marker post to choose the statue's direction",
+        "prompt": "Fox turns the post a full circle: \"A statue must look somewhere, like the needle on a compass. Which way should our swan face, {name}?\"",
         "choices": [
           {
             "text": "East, where the sun rises",
-            "consequence": "Cáo draws an arrow pointing east: \"So the swan is the first in the village to greet the morning sun.\""
+            "consequence": "Fox draws an arrow pointing east: \"So the swan is the first in the village to greet the morning sun.\""
           },
           {
             "text": "Towards the village gate, so visitors see it as they arrive",
-            "consequence": "Cáo nods: \"Like a greeting made of shapes.\" He draws a little circle at the arrow's tip, the swan's nod."
+            "consequence": "Fox nods: \"Like a greeting made of shapes.\" He draws a little circle at the arrow's tip, the swan's nod."
           },
           {
             "text": "Towards the clock tower, so it knows when to be admired",
-            "consequence": "Cáo laughs softly, a laugh as small and round as an air bubble: \"A swan that can tell the time. I like it.\""
+            "consequence": "Fox laughs softly, a laugh as small and round as an air bubble: \"A swan that can tell the time. I like it.\""
           }
         ]
       }
@@ -339,7 +339,7 @@
       "goal": 3,
       "en": {
         "title": "The first chisel strokes",
-        "prompt": "The sketch is marked on the ice. Chip away the spare ice around the swan and keep the dark blue shape inside whole; carve three good ones and Cáo will nod!"
+        "prompt": "The sketch is marked on the ice. Chip away the spare ice around the swan and keep the dark blue shape inside whole; carve three good ones and Fox will nod!"
       }
     },
     {
@@ -350,7 +350,7 @@
       "text": "Đế vuông, thân tứ giác, đôi cánh tam giác đã hiện lên trong khối băng. Cáo lùi ba bước, nghiêng đầu nhìn rồi bảo {name}: «Nét cổ chưa thật cong. Nhưng nét bạn bè giữa hai đứa mình thì thẳng rồi.»",
       "en": {
         "title": "The swan takes shape",
-        "text": "A square base, a four-sided body and triangle wings have appeared in the ice. Cáo steps back three paces, tilts his head and tells {name}: \"The neck isn't curved enough yet. But the line between us two is perfectly straight.\""
+        "text": "A square base, a four-sided body and triangle wings have appeared in the ice. Fox steps back three paces, tilts his head and tells {name}: \"The neck isn't curved enough yet. But the line between us two is perfectly straight.\""
       }
     },
     {
@@ -374,7 +374,7 @@
     }
   },
   "en": {
-    "title": "Cáo Tuyết Điêu Khắc's story, chapter 2: A swan drawn in shapes",
-    "summary": "Cáo Tuyết has found the statue's shape: a swan spreading its wings. {name} gathers his sketching tools along the village street, picks out the quadrilaterals in the sketch, reads Cáo's notebook and chooses the statue's direction before the first chisel strokes fall."
+    "title": "Sculptor Snow Fox's story, chapter 2: A swan drawn in shapes",
+    "summary": "Cáo Tuyết has found the statue's shape: a swan spreading its wings. {name} gathers his sketching tools along the village street, picks out the quadrilaterals in the sketch, reads Fox's notebook and chooses the statue's direction before the first chisel strokes fall."
   }
 }

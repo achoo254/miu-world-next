@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "A drawing hidden in a hat",
-        "goTo": "Go to the wheat field, where Anh Thợ Sửa Mái is taking a sheet of paper out of his hat",
+        "goTo": "Go to the wheat field, where Roofer Brother is taking a sheet of paper out of his hat",
         "lines": [
           "I've hidden this drawing in my hat for three years and never shown anyone. You're the first, {name}.",
           "A shared roof at the edge of the fields: no door, no lock, anyone caught in the rain can run in, sit side by side and listen to it fall.",
@@ -124,7 +124,7 @@
       },
       "en": {
         "title": "How many posts?",
-        "goTo": "Go to the chestnut tree (Gốc cây dẻ), where he has set the marker stakes",
+        "goTo": "Go to the chestnut tree (Chestnut Tree), where he has set the marker stakes",
         "prompt": "The shared roof is a rectangle with 4 corners and 2 long sides. Each corner gets 1 post. The long sides are so long that the middle of each one needs 1 extra post. How many posts in all?",
         "elements": ["4 corners, 1 post each", "2 long sides, 1 extra post in the middle of each"],
         "choices": ["4 posts", "6 posts", "8 posts"]
@@ -188,7 +188,7 @@
       },
       "en": {
         "title": "Where does building start?",
-        "goTo": "Go over to the maize field (Ruộng ngô), where he has pinned the drawing to a stake",
+        "goTo": "Go over to the maize field (Corn Field), where he has pinned the drawing to a stake",
         "prompt": "The back of the drawing lists the building jobs, but he wrote them all jumbled. Put them in the right order:",
         "items": ["Lay bamboo rafters across the post tops", "Thatch the roof with palm leaves", "Dig holes where the marker stakes are", "Stand the posts in the holes and stamp the earth firm"]
       }
@@ -222,7 +222,7 @@
       ],
       "en": {
         "title": "Bamboo, palm leaves and rattan",
-        "goTo": "Go to the cattle pasture (Bãi thả bò) and gather the materials the lane has given",
+        "goTo": "Go to the cattle pasture (Cow Pasture) and gather the materials the lane has given",
         "prompt": "Every house in the lane gave a little and left it at the pasture. Read the descriptions and find all three:",
         "items": [
           { "name": "Bundle of old bamboo", "clue": "Poles dead straight and golden as honey, ringing «boong» when tapped, tied tight with banana-fibre string." },
@@ -275,7 +275,7 @@
       "text": "Sáu cây cột, một bó tre, một chồng lá cọ và một cây cột cái có khắc chữ nằm xếp hàng dưới gốc cây dẻ. Anh Thợ Sửa Mái bảo đó là lần đầu anh thấy giấc mơ của mình chạm được tay.",
       "en": {
         "title": "Everything is ready",
-        "text": "Six posts, a bundle of bamboo, a stack of palm leaves and a carved main post lie in a row under the chestnut tree. Anh Thợ Sửa Mái says it's the first time his dream has felt solid enough to touch."
+        "text": "Six posts, a bundle of bamboo, a stack of palm leaves and a carved main post lie in a row under the chestnut tree. Roofer Brother says it's the first time his dream has felt solid enough to touch."
       }
     },
     {
@@ -286,7 +286,7 @@
       "text": "Ngày dựng mái đã định, nhưng đài báo chiều ấy có giông. Anh Thợ Sửa Mái nuốt nước bọt, rồi bảo {name}: «Lần này anh không chạy. Em tới với anh nhé.»",
       "en": {
         "title": "Storm clouds again",
-        "text": "Building day is set, but the radio says a storm is due that afternoon. Anh Thợ Sửa Mái swallows hard, then tells {name}: «This time I won't run. Will you come with me?»"
+        "text": "Building day is set, but the radio says a storm is due that afternoon. Roofer Brother swallows hard, then tells {name}: «This time I won't run. Will you come with me?»"
       }
     }
   ],
@@ -296,7 +296,7 @@
     "skillXp": { "logic": 1, "ke-chuyen": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Anh Thợ Sửa Mái's story, chapter 2: Drawing a shared roof",
-    "summary": "Anh Thợ Sửa Mái shows {name} his drawing of a shared roof at the edge of the fields, where anyone caught in the rain can shelter. {name} works out the posts, orders the building jobs, gathers bamboo, palm leaves and rattan, then helps choose the words carved on the main post."
+    "title": "Roofer Brother's story, chapter 2: Drawing a shared roof",
+    "summary": "Roofer Brother shows {name} his drawing of a shared roof at the edge of the fields, where anyone caught in the rain can shelter. {name} works out the posts, orders the building jobs, gathers bamboo, palm leaves and rattan, then helps choose the words carved on the main post."
   }
 }

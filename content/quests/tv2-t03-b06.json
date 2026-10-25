@@ -90,22 +90,22 @@
         }
       ],
       "en": {
-        "title": "Mèo Nghệ's trembling whiskers",
-        "goTo": "Go to the class under the banyan, Mèo Nghệ is sitting very still at the back",
+        "title": "Turmeric Cat's trembling whiskers",
+        "goTo": "Go to the class under the banyan, Turmeric Cat is sitting very still at the back",
         "lines": [
           "Woof woof! It's speaking practice, {name}! Everyone gets a turn in front of the class today, so I ran all the way from the river to listen!",
           "Talking to one friend is easy. Talking to the whole class… my whiskers twang like guitar strings.",
-          "Mèo Nghệ even hid all his morning things in the bamboo grove so he wouldn't have to talk about his morning. My nose can smell the toothpaste from here!",
+          "Turmeric Cat even hid all his morning things in the bamboo grove so he wouldn't have to talk about his morning. My nose can smell the toothpaste from here!",
           "Yes, I hid them. Whether they get found or not… depends on {name}'s nose."
         ],
         "choices": [
           {
             "text": "I'll find your things, then we'll practise together!",
-            "reply": "Mèo Nghệ flicks his tail a little: the toothbrush is at the foot of the bamboo, but the face towel and the school bag… I hid them so well I forgot where."
+            "reply": "Turmeric Cat flicks his tail a little: the toothbrush is at the foot of the bamboo, but the face towel and the school bag… I hid them so well I forgot where."
           },
           {
             "text": "If your whiskers shake, let's tie them in a bow!",
-            "reply": "Mèo Nghệ nearly laughs: then I'd just have a shaky bow. Let's find my things first."
+            "reply": "Turmeric Cat nearly laughs: then I'd just have a shaky bow. Let's find my things first."
           }
         ]
       }
@@ -809,21 +809,21 @@
       "en": {
         "title": "A magic spell for whiskers",
         "lines": [
-          "It's Mèo Nghệ's turn now. Take your time… I can wait, I can wait all morning.",
+          "It's Turmeric Cat's turn now. Take your time… I can wait, I can wait all morning.",
           "I'll go up. But give me a magic spell first, {name}, so my whiskers stay still."
         ],
         "choices": [
           {
             "text": "Just speak slowly, the whole class wants to hear you!",
-            "reply": "Mèo Nghệ takes a deep breath. Now only one single whisker is trembling."
+            "reply": "Turmeric Cat takes a deep breath. Now only one single whisker is trembling."
           },
           {
             "text": "If you forget, just look at a flower, like Bích did!",
-            "reply": "Mèo Nghệ giggles: right, Bích looked at her flower and suddenly the words flowed."
+            "reply": "Turmeric Cat giggles: right, Bích looked at her flower and suddenly the words flowed."
           },
           {
             "text": "I'll sit at the front and clap the loudest!",
-            "reply": "Cún Lúa butts in: and I'll wag my tail the second loudest!"
+            "reply": "Rice Pup butts in: and I'll wag my tail the second loudest!"
           }
         ]
       }
@@ -1033,7 +1033,7 @@
       "text": "Mèo Nghệ tặng {name} một chiếc nơ buộc râu bện bằng cỏ may, kèm lời dặn rất Mèo Nghệ: lúc run thì buộc nơ, nói xong thì cởi. Ở hàng cuối, Thỏ Hạt Tiêu vỗ tay lộp độp, hai tai dựng đứng vì phục.",
       "en": {
         "title": "The whisker bow",
-        "text": "Mèo Nghệ gives {name} a whisker bow woven from grass, with some very Mèo Nghệ advice: tie it on when you tremble, take it off when you've finished speaking. In the back row, Thỏ Hạt Tiêu claps and claps, both ears standing straight up in admiration."
+        "text": "Turmeric Cat gives {name} a whisker bow woven from grass, with some very Turmeric Cat advice: tie it on when you tremble, take it off when you've finished speaking. In the back row, Peppercorn Rabbit claps and claps, both ears standing straight up in admiration."
       }
     },
     {
@@ -1044,7 +1044,7 @@
       "text": "Ven đầm sen vọng lại tiếng Cáo Vần ngâm nga: lá ơi sao cụp, lá ơi sao xoè? Vừa có một tiếng động lạ, bụi cỏ xấu hổ đã nhắm tịt cả trăm con mắt lá. Tiếng động ấy là của ai nhỉ?",
       "en": {
         "title": "The bush that shuts its eyes",
-        "text": "From the lotus pond comes Cáo Vần's sing-song voice: little leaves, why do you fold, little leaves, why do you open? At one strange noise, the shy mimosa bush shut all its hundred leafy eyes. Who made that noise?"
+        "text": "From the lotus pond comes Rhyme Fox's sing-song voice: little leaves, why do you fold, little leaves, why do you open? At one strange noise, the shy mimosa bush shut all its hundred leafy eyes. Who made that noise?"
       }
     }
   ],

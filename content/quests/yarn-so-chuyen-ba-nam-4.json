@@ -76,7 +76,7 @@
       ],
       "en": {
         "title": "Ông Mực sniffs it out",
-        "goTo": "Go up to the porch of Mẩy's house and ask Ông Mực Nằm Hiên; his nose is the keenest in the lane",
+        "goTo": "Go up to the porch of Mẩy's house and ask Old Inky Dog on the Porch; his nose is the keenest in the lane",
         "lines": [
           "Woof! I can smell fresh paper round the chrysanthemums by the fence: three pieces, no more, no less.",
           "I've an ending too, only dogs can't hold pencils. I reckon the moon wants to go wherever someone is waiting to hear a story."
@@ -116,7 +116,7 @@
       ],
       "en": {
         "title": "Three folded notes",
-        "goTo": "Go to the chrysanthemums by the fence (Khóm cúc) and find the three notes the lane hid",
+        "goTo": "Go to the chrysanthemums by the fence (Daisy Clump) and find the three notes the lane hid",
         "prompt": "Each house folded its ending its own way. Read the descriptions and find all three notes:",
         "items": [
           { "name": "Note folded into a boat", "clue": "Folded into a little pointed boat, perched on a chrysanthemum leaf as if about to set sail." },
@@ -182,7 +182,7 @@
       },
       "en": {
         "title": "The lane's three endings",
-        "goTo": "Bring the three notes to the rattan chair by the lane (Ghế mây bên ngõ) and read them aloud to her",
+        "goTo": "Bring the three notes to the rattan chair by the lane (Rattan Chair by the Lane) and read them aloud to her",
         "text": "Note folded into a boat: «The moon wants to go back to the sky. Sen unties the golden thread, and the leaf boat floats up, carrying the moon home.»\nNote tied with red thread: «The moon wants to go to Sen's home. That night it lies by the window, lighting her little bed until morning.»\nNote between bamboo leaves: «The moon wants to go to a little lane where an old lady tells stories. Ever since, it drops by every full moon to listen.»",
         "question": "According to the note tied with red thread, where does the moon want to go?",
         "choices": ["Back to the sky", "To Sen's home", "To the lane with the old storyteller"]
@@ -330,7 +330,7 @@
     "items": { "khung-tranh-go": 1 }
   },
   "en": {
-    "title": "Bà Năm Kể Chuyện's story, chapter 4: Where the moon wants to go",
-    "summary": "The whole lane has written endings for the leaf-boat story and hidden them round the garden. {name} asks Ông Mực Nằm Hiên, finds the notes, reads and chooses an ending, chains words into the last line, then tells the whole story back to Bà Năm herself."
+    "title": "Grandma Năm the Storyteller's story, chapter 4: Where the moon wants to go",
+    "summary": "The whole lane has written endings for the leaf-boat story and hidden them round the garden. {name} asks Old Inky Dog on the Porch, finds the notes, reads and chooses an ending, chains words into the last line, then tells the whole story back to Bà Năm herself."
   }
 }

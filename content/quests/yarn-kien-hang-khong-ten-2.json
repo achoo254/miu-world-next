@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "The Flying Fish boat is back",
-        "goTo": "Monday morning: meet Voi Bốc Hàng at the wharf",
+        "goTo": "Monday morning: meet Porter Elephant at the wharf",
         "lines": [
           "The boat's in, {name}! The boatman says the sender didn't write a name, just a few lines in the delivery book. The book's on the boat, moored at the sluice gate.",
           "I'm... a bit shaky. It's as if I'm about to open my own letter, and who would ever write to an elephant who carries boxes?"
@@ -120,8 +120,8 @@
           ],
           "hint": "Ears like fans, a nose that's a trunk.",
           "answer": {
-            "text": "Voi Bốc Hàng",
-            "explanation": "Fan-sized ears, a long nose that waters vegetables, the strongest on the wharf and scared of mice: it can only be Voi Bốc Hàng."
+            "text": "Porter Elephant",
+            "explanation": "Fan-sized ears, a long nose that waters vegetables, the strongest on the wharf and scared of mice: it can only be Porter Elephant."
           }
         }
       },
@@ -155,9 +155,9 @@
         "text": "Parcel no. 7. To: don't know the name. All I know is: ears as big as two bamboo fans, and a long nose that cools the vegetable stalls with water every noon. Strongest on the canal wharf, and yet lifts one foot whenever a mouse runs by. From: an old friend who casts nets out at sea.",
         "question": "Who does the description fit?",
         "choices": [
-          "Mèo Gắp Thú at the bridge",
+          "Claw-Machine Cat at the bridge",
           "The porter on the wharf",
-          "Voi Bốc Hàng"
+          "Porter Elephant"
         ]
       }
     },
@@ -336,7 +336,7 @@
       "en": {
         "title": "Voi goes quiet",
         "goTo": "After reading the letter, Voi walks to the edge of the canal and stands still",
-        "prompt": "The letter invites Voi to sail to the sea, signed Bác Quăng Lưới Biển. It's Voi's lifelong dream, and yet he just stares at the water and says nothing. What does {name} do?",
+        "prompt": "The letter invites Voi to sail to the sea, signed Net-Casting Uncle. It's Voi's lifelong dream, and yet he just stares at the water and says nothing. What does {name} do?",
         "choices": [
           {
             "text": "Ask softly: «What are you afraid of?»",
@@ -386,7 +386,7 @@
     "items": {}
   },
   "en": {
-    "title": "Voi Bốc Hàng's story, chapter 2: Ears like bamboo fans",
-    "summary": "The Flying Fish boat is back. In its delivery book, the sender didn't write a name but described someone very unusual. {name} reads the description, opens the parcel in the wooden shed by the canal, solves the tide puzzle and helps Voi Bốc Hàng say something hard to say."
+    "title": "Porter Elephant's story, chapter 2: Ears like bamboo fans",
+    "summary": "The Flying Fish boat is back. In its delivery book, the sender didn't write a name but described someone very unusual. {name} reads the description, opens the parcel in the wooden shed by the canal, solves the tide puzzle and helps Porter Elephant say something hard to say."
   }
 }

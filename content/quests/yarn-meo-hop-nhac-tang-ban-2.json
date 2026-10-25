@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "A slip for every reader",
-        "goTo": "Go back to the middle of the festival yard, where Mèo is hugging a stack of coloured paper slips",
+        "goTo": "Go back to the middle of the festival yard, where Cat is hugging a stack of coloured paper slips",
         "lines": [
           "Ting-a-ling, {name}, perfect timing! I'm handing out slips so each reader can write the one song they love best.",
           "I'll carve every song into a music roll, so anyone who visits the festival yard can hear a song of their very own.",
@@ -185,8 +185,8 @@
       },
       "en": {
         "title": "Titles in alphabetical order",
-        "goTo": "Take the slips to the stone table under the golden-leaf tree, where Mèo keeps his box of song cards",
-        "prompt": "Mèo wants to file the song cards by the first letter of each title, in alphabetical order. Sort them from first to last:",
+        "goTo": "Take the slips to the stone table under the golden-leaf tree, where Cat keeps his box of song cards",
+        "prompt": "Cat wants to file the song cards by the first letter of each title, in alphabetical order. Sort them from first to last:",
         "items": [
           "Đàn gà mổ thóc (Chicks Pecking Rice)",
           "Bông hoa giấy đỏ (Red Paper Flower)",
@@ -286,7 +286,7 @@
       "en": {
         "title": "Words that dance",
         "goTo": "Go to the round pool, where a reader left a notebook of song words on the rim",
-        "prompt": "The song words in the notebook say: «The child runs out to the yard, jumps over the leaf pile, then laughs aloud under the tree canopy.» Mèo wants to put the jolliest pins on the action words. Choose every action word:",
+        "prompt": "The song words in the notebook say: «The child runs out to the yard, jumps over the leaf pile, then laughs aloud under the tree canopy.» Cat wants to put the jolliest pins on the action words. Choose every action word:",
         "choices": [
           "run",
           "leaf pile",
@@ -325,19 +325,19 @@
       "en": {
         "title": "Which song first?",
         "goTo": "Go to the readers' slip box, where the slips are now neatly stacked inside",
-        "prompt": "Mèo leafs through the slips and hums: \"Ting-a-ling… whose song should the very first roll be, {name}?\"",
+        "prompt": "Cat leafs through the slips and hums: \"Ting-a-ling… whose song should the very first roll be, {name}?\"",
         "choices": [
           {
             "text": "The youngest reader's song, written in wobbly letters",
-            "consequence": "Mèo puts the wobbly slip on top. \"The littlest one hears theirs first; that's only fair.\""
+            "consequence": "Cat puts the wobbly slip on top. \"The littlest one hears theirs first; that's only fair.\""
           },
           {
             "text": "The song the most readers wrote down",
-            "consequence": "{name} counts the slips: «River of Gold Leaves» got the most votes. Mèo nods: \"One roll that makes many readers happy.\""
+            "consequence": "{name} counts the slips: «River of Gold Leaves» got the most votes. Cat nods: \"One roll that makes many readers happy.\""
           },
           {
-            "text": "The lullaby Thỏ Ngắm Sao scribbled before nodding off",
-            "consequence": "Mèo chuckles at Thỏ's trailing handwriting. \"No worries tonight, then; there'll be a lullaby just for Thỏ.\""
+            "text": "The lullaby Stargazer Rabbit scribbled before nodding off",
+            "consequence": "Cat chuckles at Rabbit's trailing handwriting. \"No worries tonight, then; there'll be a lullaby just for Rabbit.\""
           }
         ]
       }
@@ -364,7 +364,7 @@
       "text": "Cuộn nhạc mới quay tròn, từng chốt gảy lên răng lược kêu lanh canh. Bạn đọc nào cũng nín thở nghe. Mèo xoay đuôi một vòng thật vui rồi cột cuộn nhạc bằng sợi ruy băng vàng, ghi tên {name} ở mép.",
       "en": {
         "title": "The first music roll",
-        "text": "The new roll turns, each pin plucking the comb with a bright plink. Every reader holds their breath to listen. Mèo gives his tail a happy twirl, ties the roll with a gold ribbon and writes {name}'s name on the edge."
+        "text": "The new roll turns, each pin plucking the comb with a bright plink. Every reader holds their breath to listen. Cat gives his tail a happy twirl, ties the roll with a gold ribbon and writes {name}'s name on the edge."
       }
     },
     {
@@ -375,7 +375,7 @@
       "text": "Phiếu vẫn còn cả xấp, cuộn nhạc sẽ còn nhiều nữa. Mèo nảy ra ý định mời cả thư viện tới nghe một buổi hòa nhạc hộp nhạc dưới gốc cây lá vàng.",
       "en": {
         "title": "Planning a concert",
-        "text": "There's still a whole stack of slips, so many more rolls will follow. Mèo has an idea: invite the whole library to a music-box concert under the golden-leaf tree."
+        "text": "There's still a whole stack of slips, so many more rolls will follow. Cat has an idea: invite the whole library to a music-box concert under the golden-leaf tree."
       }
     }
   ],
@@ -388,7 +388,7 @@
     }
   },
   "en": {
-    "title": "Mèo Hộp Nhạc's story, chapter 2: The readers' song slips",
-    "summary": "Mèo hands out slips for readers to write their favourite songs, but the sparrows carry some away. {name} collects them, files the titles in alphabetical order, finds the action words in a song, picks which song to carve first and pins the new music roll."
+    "title": "Music Box Cat's story, chapter 2: The readers' song slips",
+    "summary": "Cat hands out slips for readers to write their favourite songs, but the sparrows carry some away. {name} collects them, files the titles in alphabetical order, finds the action words in a song, picks which song to carve first and pins the new music roll."
   }
 }

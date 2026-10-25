@@ -88,12 +88,12 @@
         }
       ],
       "en": {
-        "title": "Cáo Cọ wringing out her tail",
-        "goTo": "Go to the painting corner on the art-room porch, Cáo Cọ is wiping her paint-smeared tail",
+        "title": "Brush Fox wringing out her tail",
+        "goTo": "Go to the painting corner on the art-room porch, Brush Fox is wiping her paint-smeared tail",
         "lines": [
           "Eek, soaking wet! Is that you, {name}? I dipped my tail in the water pot again, I thought it was my paintbrush.",
           "I'm painting a picture for the school art fair. The trouble is my paint box is empty, all that's left is the colour… of no colour!",
-          "I can't help with paint, all I've got is this golden mane! But the art fair this afternoon must have a picture by Cáo Cọ!",
+          "I can't help with paint, all I've got is this golden mane! But the art fair this afternoon must have a picture by Brush Fox!",
           "Along the fence by the playground there are ripe berries, flowers and young leaves. Will you pick some for my paints, {name}?"
         ],
         "choices": [
@@ -103,7 +103,7 @@
           },
           {
             "text": "Please show me the way, sir!",
-            "reply": "Sư Tử Vàng points to the fence: straight past the slide, then turn right, and don't step on the flower beds!"
+            "reply": "Golden Lion points to the fence: straight past the slide, then turn right, and don't step on the flower beds!"
           }
         ]
       }
@@ -993,7 +993,7 @@
       ],
       "en": {
         "title": "Which picture for the fair?",
-        "goTo": "Back at the painting corner, Cáo Cọ has mixed all three colours",
+        "goTo": "Back at the painting corner, Brush Fox has mixed all three colours",
         "lines": [
           "I've got all my colours: raspberry red, daisy yellow, new-leaf green. But I only have time to paint one picture before the fair.",
           "Paint me! My mane is already yellow, it'll save paint!",
@@ -1010,7 +1010,7 @@
           },
           {
             "text": "The headteacher reading a poem",
-            "reply": "Sư Tử Vàng chuckles and smooths his mane so he can sit as the model."
+            "reply": "Golden Lion chuckles and smooths his mane so he can sit as the model."
           }
         ]
       }
@@ -1074,7 +1074,7 @@
       "text": "Cáo Cọ tặng {name} một bức tranh nhỏ vẽ dòng sông có thuyền buồm chở nắng, góc tranh có lời phê “Đẹp lắm!” của thầy Sư Tử Vàng. Cạnh đó là một vệt cam quệt bằng chóp đuôi, chữ kí riêng của hoạ sĩ Cáo Cọ.",
       "en": {
         "title": "A little painting for a friend",
-        "text": "Cáo Cọ gives {name} a little painting of a river with a sailboat carrying sunshine; in the corner is Sư Tử Vàng's comment, “Excellent!”. Beside it is an orange streak swiped with a tail tip: artist Cáo Cọ's own signature."
+        "text": "Brush Fox gives {name} a little painting of a river with a sailboat carrying sunshine; in the corner is Golden Lion's comment, “Excellent!”. Beside it is an orange streak swiped with a tail tip: artist Brush Fox's own signature."
       }
     },
     {

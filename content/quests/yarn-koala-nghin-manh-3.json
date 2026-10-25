@@ -73,7 +73,7 @@
         "lines": [
           "{name}… look. A thousand pieces. Once I'd tipped them out… I just stood and stared, too scared to touch a single one.",
           "Jumbled like this, it'd take a whole year. We need trays: one for sky, one for roof tiles, one for leaves…",
-          "And tonight Mèo Hộp Nhạc has challenged me to a card-flip game. Only if we sort them early… will I dare go and play."
+          "And tonight Music Box Cat has challenged me to a card-flip game. Only if we sort them early… will I dare go and play."
         ],
         "choices": [
           {
@@ -289,19 +289,19 @@
       ],
       "en": {
         "title": "An evening card game",
-        "goTo": "Go to the mossy stone by the footpath, where Mèo Hộp Nhạc's cards are waiting",
-        "prompt": "On the mossy stone there's a deck of picture cards and a note from Mèo Hộp Nhạc: \"Tinh tang, card flip tonight!\". Koala looks at the half-sorted trays, then at the cards: \"What do we do, {name}?\"",
+        "goTo": "Go to the mossy stone by the footpath, where Music Box Cat's cards are waiting",
+        "prompt": "On the mossy stone there's a deck of picture cards and a note from Music Box Cat: \"Tinh tang, card flip tonight!\". Koala looks at the half-sorted trays, then at the cards: \"What do we do, {name}?\"",
         "choices": [
           {
             "text": "Play one game for fun, then go back to sorting",
             "consequence": "Koala plays one game, loses by a whisker and giggles. Back at the table, his paws sort much faster."
           },
           {
-            "text": "Invite Mèo to bring the cards over to the puzzle table",
-            "consequence": "Mèo Hộp Nhạc carries the cards over, humming as he flips them. The long table is packed: piece trays on one side, cards on the other."
+            "text": "Invite Cat to bring the cards over to the puzzle table",
+            "consequence": "Music Box Cat carries the cards over, humming as he flips them. The long table is packed: piece trays on one side, cards on the other."
           },
           {
-            "text": "Write a note asking Mèo for a really long game tomorrow night",
+            "text": "Write a note asking Cat for a really long game tomorrow night",
             "consequence": "Koala writes the note very neatly and tucks it under the deck. The wind blows past, but the note stays put beneath the cards."
           }
         ]
@@ -320,8 +320,8 @@
         "pairs": 6
       },
       "en": {
-        "title": "Flipping cards with Mèo",
-        "prompt": "Evening, and the card-flip game begins! Mèo Hộp Nhạc flips as quick as the wind, while Koala is great at remembering where each picture is. {name} joins Team Koala; find all six pairs!"
+        "title": "Flipping cards with Cat",
+        "prompt": "Evening, and the card-flip game begins! Music Box Cat flips as quick as the wind, while Koala is great at remembering where each picture is. {name} joins Team Koala; find all six pairs!"
       }
     },
     {
@@ -356,7 +356,7 @@
     }
   },
   "en": {
-    "title": "Koala Ghép Tranh's story, chapter 3: Sorting a thousand pieces by colour",
-    "summary": "A thousand pieces tumble out, jumbled like a bowl of mixed sweet soup. {name} helps Koala label the trays by colour, finds pieces hiding under cushions, compares the sky tray with the roof tray and decides what to do about the evening card game with Mèo Hộp Nhạc."
+    "title": "Puzzle Koala's story, chapter 3: Sorting a thousand pieces by colour",
+    "summary": "A thousand pieces tumble out, jumbled like a bowl of mixed sweet soup. {name} helps Koala label the trays by colour, finds pieces hiding under cushions, compares the sky tray with the roof tray and decides what to do about the evening card game with Music Box Cat."
   }
 }

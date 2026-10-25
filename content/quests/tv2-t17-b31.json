@@ -92,8 +92,8 @@
         }
       ],
       "en": {
-        "title": "Cá Bống hiccups bubbles",
-        "goTo": "Go to the edge of the lotus lake, Cá Bống is hiccupping bubbles from worry",
+        "title": "Goby Fish hiccups bubbles",
+        "goTo": "Go to the edge of the lotus lake, Goby Fish is hiccupping bubbles from worry",
         "lines": [
           "{name}… hic! My mum has a terrible tummy ache… hic! Every time I worry, out comes a string of bubbles.",
           "I've swum over, slow and steady. But Bống's burrow is as dark as the bottom of a pot, I can't even see where her mum's tummy is.",
@@ -103,7 +103,7 @@
         "choices": [
           {
             "text": "Don't worry, Bống, we'll think of something together!",
-            "reply": "Cá Bống stops hiccupping for a while: with {name} here, my fins have stopped shaking."
+            "reply": "Goby Fish stops hiccupping for a while: with {name} here, my fins have stopped shaking."
           },
           {
             "text": "Đom Đóm Nhí, call your whole family over!",
@@ -741,7 +741,7 @@
       "text": "Mẹ Bống tặng {name} chiếc vỏ trai sáng nhất, soi vào thấy cả ánh đom đóm lấp lánh bên trong. Cá Bống thì thôi ấc, thay vào đó là một tràng bong bóng cười.",
       "en": {
         "title": "A gift from Mother Bống",
-        "text": "Mother Bống gives {name} the brightest clam shell; look inside and you can see firefly light twinkling. Cá Bống has stopped hiccupping; instead out comes a stream of giggling bubbles."
+        "text": "Mother Bống gives {name} the brightest clam shell; look inside and you can see firefly light twinkling. Goby Fish has stopped hiccupping; instead out comes a stream of giggling bubbles."
       }
     },
     {
@@ -752,7 +752,7 @@
       "text": "Sáng hôm sau, gió từ cánh đồng sau xóm thổi về mang theo tiếng cãi nhau chí chóe. Thỏ Tí và em trai bé Tẹo đang giành nhau một chiếc chong chóng, chưa ai chịu nhường ai.",
       "en": {
         "title": "Pinwheels in the windy field",
-        "text": "The next morning, the wind from the field behind the hamlet carries the sound of squabbling. Thỏ Tí and his little brother Tẹo are fighting over a pinwheel, and neither will let go."
+        "text": "The next morning, the wind from the field behind the hamlet carries the sound of squabbling. Tí the Bunny and his little brother Tẹo are fighting over a pinwheel, and neither will let go."
       }
     }
   ],

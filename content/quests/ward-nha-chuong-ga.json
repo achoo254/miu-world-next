@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Gà Mơ Giữ Ổ",
+        "title": "Meet Nest-Sitting Hen",
         "lines": [
-          "Cluck cluck… has {name} come to see my eggs? I'm Gà Mơ Giữ Ổ, and I guard the henhouse behind the house.",
+          "Cluck cluck… has {name} come to see my eggs? I'm Nest-Sitting Hen, and I guard the henhouse behind the house.",
           "Whoever wants to see the eggs must battle me in five riddles. My eggs hatch riddles!"
         ],
         "choices": [
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Gà Mơ Giữ Ổ",
-        "bossName": "Gà Mơ Giữ Ổ",
+        "title": "Battle of wits with Nest-Sitting Hen",
+        "bossName": "Nest-Sitting Hen",
         "introDialogue": "Crack, the first egg breaks open and out comes a riddle!",
         "winDialogue": "Cluck-cluck, I give up my nest! {name} is so hard-working and clever."
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Gà Mơ Giữ Ổ tặng {name} một chiếc lông vũ màu mơ, cài lên mũ là đẹp nhất xóm.",
       "en": {
-        "title": "Gà Mơ Giữ Ổ's gift",
-        "text": "Gà Mơ Giữ Ổ gives {name} an apricot-coloured feather: tuck it in your hat and you'll be the smartest in the neighbourhood."
+        "title": "Nest-Sitting Hen's gift",
+        "text": "Nest-Sitting Hen gives {name} an apricot-coloured feather: tuck it in your hat and you'll be the smartest in the neighbourhood."
       }
     },
     {
@@ -393,7 +393,7 @@
       "trigger": "auto",
       "text": "Gặp đủ ba trùm canh khu rồi, {name} vào nhà đấu với Mèo Đại Vương Bánh Bao nhé.",
       "en": {
-        "title": "Goodbye, Gà Mơ Giữ Ổ",
+        "title": "Goodbye, Nest-Sitting Hen",
         "text": "All three zone guardians met, {name}: go inside and battle the Great Bun Cat King."
       }
     }
@@ -409,7 +409,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Gà Mơ Giữ Ổ",
-    "summary": "Gà Mơ Giữ Ổ guards the henhouse behind the house and asks {name} five riddles about eggs, grain and Grandma's reminder."
+    "title": "Zone guardian: Nest-Sitting Hen",
+    "summary": "Nest-Sitting Hen guards the henhouse behind the house and asks {name} five riddles about eggs, grain and Grandma's reminder."
   }
 }

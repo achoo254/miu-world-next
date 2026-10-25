@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "The paper boat story",
-        "goTo": "The oven in the front yard is glowing, and Gấu is waiting",
+        "goTo": "The oven in the front yard is glowing, and Bear is waiting",
         "lines": [
           "Let me finish the story. When I was five, Grandma was in hospital. I tore out the last page and folded a boat, hoping it would float all the way to her.",
           "It got stuck at the pier, and I hid it, scared of a scolding. Grandma came home and never asked, only smiled. She knew all along.",
@@ -73,7 +73,7 @@
       "goal": 8,
       "en": {
         "title": "Frying Grandma's batch",
-        "prompt": "Borrow Gấu's big pan and flip eight cakes until both sides are golden!"
+        "prompt": "Borrow Bear's big pan and flip eight cakes until both sides are golden!"
       }
     },
     {
@@ -106,14 +106,14 @@
         "right": ["Sáu đĩa hoa lam xếp hàng, chiếc bánh nào cũng có bạn đôi.", "{name} chia bánh đều tăm tắp, chẳng chiếc nào lẻ loi.", "Đủ đĩa rồi! Gấu hít hà: thơm chưa nào? Thơm lắm rồi!"],
         "wrong": ["Còn bánh nằm chơ vơ trong rổ kìa, {name} đếm lại số đĩa nhé.", "Thừa ra một cái đĩa trống trơn rồi, bớt đi một cái xem.", "Mỗi đĩa chỉ hai chiếc thôi, đếm cách hai cho tới mười hai nào."],
         "en": {
-          "right": ["Six blue-flowered plates in a row, and every doughnut has a partner.", "You shared them out perfectly evenly, {name}, not one left alone.", "Enough plates! Gấu sniffs: smell that? Smells wonderful!"],
+          "right": ["Six blue-flowered plates in a row, and every doughnut has a partner.", "You shared them out perfectly evenly, {name}, not one left alone.", "Enough plates! Bear sniffs: smell that? Smells wonderful!"],
           "wrong": ["Some doughnuts are still stranded in the basket, {name}; count the plates again.", "There's a plate left empty with nothing on it; try one fewer.", "Only two per plate, so count by twos all the way to twelve."]
         }
       },
       "en": {
         "title": "Plating the doughnuts",
         "goTo": "Carry the basket of hot doughnuts to the kitchen table",
-        "prompt": "Gấu doubled the recipe and made 12 piping-hot doughnuts. Each plate holds 2. How many plates does Gấu need?",
+        "prompt": "Bear doubled the recipe and made 12 piping-hot doughnuts. Each plate holds 2. How many plates does Bear need?",
         "choices": ["5 plates", "6 plates", "7 plates"]
       }
     },
@@ -147,13 +147,13 @@
         "right": ["Thì ra bước cuối không nằm trong chảo mà nằm quanh bàn ăn!", "{name} đọc ra lời bà dặn, Gấu ôm trang giấy cười rưng rưng.", "Mời mọi người khi bánh còn nóng: Gấu sẽ thêu câu này lên tạp dề."],
         "wrong": ["Bánh cất tủ một tuần thì cứng như gạch mất, {name} ơi.", "Bà dặn đừng ngồi ăn một mình mà, đọc lại câu cuối nhé.", "Lời bà có hai ý, {name} đã chọn đủ cả hai, và chỉ hai thôi chưa?"],
         "en": {
-          "right": ["So the last step was never in the pan; it was around the table!", "You read Grandma's words aloud, {name}, and Gấu hugs the page with teary smiles.", "Invite everyone while it's warm: Gấu will embroider that on her apron."],
+          "right": ["So the last step was never in the pan; it was around the table!", "You read Grandma's words aloud, {name}, and Bear hugs the page with teary smiles.", "Invite everyone while it's warm: Bear will embroider that on her apron."],
           "wrong": ["A week in the cupboard would turn them hard as bricks, {name}.", "Grandma said not to eat alone; read the last sentence again.", "Grandma's advice has two parts, {name}. Did you pick both, and only those?"]
         }
       },
       "en": {
         "title": "Words on the back",
-        "goTo": "Gấu holds the page under the living room lamp and spots faint writing on the back",
+        "goTo": "Bear holds the page under the living room lamp and spots faint writing on the back",
         "prompt": "The back of the page reads: “The real last step: invite the ones you love to eat while the doughnuts are warm. Doughnuts left to cool turn hard, and so does a heart that eats alone.” Pick everything that follows Grandma's advice:",
         "choices": ["Invite the whole household to eat", "Eat while the doughnuts are still warm", "Lock them in the cupboard for next week", "Eat alone so there's no sharing"]
       }
@@ -173,12 +173,12 @@
       ],
       "en": {
         "title": "The cake window opens",
-        "goTo": "Go to the front gate, where Gấu has just set up her cake window",
-        "prompt": "Everyone at home has been fed and there are still doughnuts left. Gấu sets up a cake window right at the gate, the dream she's had for ages. Who should get the first doughnut through the window?",
+        "goTo": "Go to the front gate, where Bear has just set up her cake window",
+        "prompt": "Everyone at home has been fed and there are still doughnuts left. Bear sets up a cake window right at the gate, the dream she's had for ages. Who should get the first doughnut through the window?",
         "choices": [
-          { "text": "The first person to pass the gate", "consequence": "A postman stops his bike, takes a bite and stands there dazed: “This tastes… just like home.” Gấu's eyes crinkle with joy." },
-          { "text": "One set beside the notebook, Grandma's share", "consequence": "Gấu sets a doughnut on the notebook cover and whispers: “Grandma, I did every step.” A breeze flips a page, like a nod." },
-          { "text": "{name} eats first, then Gấu tastes", "consequence": "For the first time ever, Gấu finishes a whole doughnut of her own without wanting to change a thing. “No fixing needed. That's Grandma's flavour.”" }
+          { "text": "The first person to pass the gate", "consequence": "A postman stops his bike, takes a bite and stands there dazed: “This tastes… just like home.” Bear's eyes crinkle with joy." },
+          { "text": "One set beside the notebook, Grandma's share", "consequence": "Bear sets a doughnut on the notebook cover and whispers: “Grandma, I did every step.” A breeze flips a page, like a nod." },
+          { "text": "{name} eats first, then Bear tastes", "consequence": "For the first time ever, Bear finishes a whole doughnut of her own without wanting to change a thing. “No fixing needed. That's Grandma's flavour.”" }
         ]
       }
     },
@@ -190,7 +190,7 @@
       "text": "Cả nhà ngồi quanh bàn, bánh rán còn bốc khói. Gấu gói riêng cho {name} một chiếc trong lá chuối, buộc nơ xanh như bìa cuốn sổ.",
       "en": {
         "title": "A batch true to Grandma",
-        "text": "The whole household sits round the table, doughnuts still steaming. Gấu wraps one for {name} in a banana leaf, tied with a ribbon as green as the notebook."
+        "text": "The whole household sits round the table, doughnuts still steaming. Bear wraps one for {name} in a banana leaf, tied with a ribbon as green as the notebook."
       }
     },
     {
@@ -201,7 +201,7 @@
       "text": "Từ nay sáng chủ nhật nào cửa sổ bánh của Gấu cũng mở. Gấu bảo sẽ viết thêm một trang vào sổ của bà: «Bước cuối, Gấu học được cùng {name}.»",
       "en": {
         "title": "Sunday mornings at the gate",
-        "text": "From now on Gấu's cake window opens every Sunday morning. She says she'll add a page to Grandma's book: “The last step, learnt together with {name}.”"
+        "text": "From now on Bear's cake window opens every Sunday morning. She says she'll add a page to Grandma's book: “The last step, learnt together with {name}.”"
       }
     }
   ],
@@ -211,7 +211,7 @@
     "skillXp": { "logic": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Gấu Bánh Ngọt's story, chapter 4: The very last step",
-    "summary": "Gấu tells the rest of the paper boat story, then fries Grandma's batch exactly right with {name}. The back of the page holds one more piece of advice, and the cake window Gấu has long dreamed of finally opens at the front gate."
+    "title": "Pastry Bear's story, chapter 4: The very last step",
+    "summary": "Bear tells the rest of the paper boat story, then fries Grandma's batch exactly right with {name}. The back of the page holds one more piece of advice, and the cake window Bear has long dreamed of finally opens at the front gate."
   }
 }

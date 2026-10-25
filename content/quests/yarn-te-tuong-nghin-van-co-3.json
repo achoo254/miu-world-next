@@ -69,16 +69,16 @@
       ],
       "en": {
         "title": "The quick-handed pupil",
-        "goTo": "Go to the chessboard in the great hall, where Tể Tướng Cờ Vua is replaying the five moves of a very short lost game",
+        "goTo": "Go to the chessboard in the great hall, where Chess Chancellor is replaying the five moves of a very short lost game",
         "lines": [
-          "Look here, {name}: move one, two, three, four… move five, checkmate. Cáo Cung Thủ moves his pieces exactly as fast as he lets go of his bowstring.",
+          "Look here, {name}: move one, two, three, four… move five, checkmate. Archer Fox moves his pieces exactly as fast as he lets go of his bowstring.",
           "I want to teach him one small rule: before every move, count one, two, three. One to look, two to think, three to steady the hand.",
           "Between us: when I was young I rushed too; once, about to lose, I quietly lifted a pawn off the board. I put it back… the next morning. That is why I understand him."
         ],
         "choices": [
           {
             "text": "I'll help you prepare the three-beat lesson!",
-            "reply": "Then we have two teachers for one pupil. Cáo Cung Thủ will surely have to count to three now."
+            "reply": "Then we have two teachers for one pupil. Archer Fox will surely have to count to three now."
           },
           {
             "text": "Giving the pawn back was a good thing, sir.",
@@ -172,7 +172,7 @@
           "right": [
             "Two pairs, both right. One, two, three… bullseye!",
             "You worked it out before choosing, exactly the lesson I want to teach.",
-            "If Cáo saw this solution, his eyes would go round."
+            "If Fox saw this solution, his eyes would go round."
           ],
           "wrong": [
             "One pair makes sixty, which is more than fifty.",
@@ -183,8 +183,8 @@
       },
       "en": {
         "title": "Arrow pairs that make fifty",
-        "goTo": "Go to the badge stand, where Cáo's scoring target is set up",
-        "prompt": "The chancellor sets Cáo a task: «Before you shoot, count to three and work out which pairs of arrows add up to exactly 50 points.» Pick every right pair:",
+        "goTo": "Go to the badge stand, where Fox's scoring target is set up",
+        "prompt": "The chancellor sets Fox a task: «Before you shoot, count to three and work out which pairs of arrows add up to exactly 50 points.» Pick every right pair:",
         "choices": [
           "An arrow of 27 points and one of 23",
           "An arrow of 45 points and one of 15",
@@ -222,7 +222,7 @@
           "hint": "8 o'clock plus 2 hours is 10 o'clock.",
           "answer": {
             "text": "11 o'clock",
-            "explanation": "8 + 2 = 10, then 10 + 1 = 11. Cáo goes to the range at 11 o'clock."
+            "explanation": "8 + 2 = 10, then 10 + 1 = 11. Fox goes to the range at 11 o'clock."
           }
         }
       },
@@ -241,7 +241,7 @@
           "right": [
             "Eleven o'clock! The short hand on 11, the long hand on 12.",
             "You added each stretch of time one by one, missing nothing.",
-            "At that hour Cáo will stand at the range with a cool head."
+            "At that hour Fox will stand at the range with a cool head."
           ],
           "wrong": [
             "Do not forget the hour of breathing practice after the chess lesson.",
@@ -253,7 +253,7 @@
       "en": {
         "title": "When can he go to the range?",
         "goTo": "Go over to the chess-lesson corner, where the pendulum clock is ticking",
-        "question": "The lesson starts at 8 in the morning: Cáo studies chess for 2 hours, then practises counting his breaths for 1 more hour. Only then may he go to the range. What time does Cáo go to the range?"
+        "question": "The lesson starts at 8 in the morning: Fox studies chess for 2 hours, then practises counting his breaths for 1 more hour. Only then may he go to the range. What time does Fox go to the range?"
       }
     },
     {
@@ -284,11 +284,11 @@
       "en": {
         "title": "Writing the lesson card",
         "goTo": "Reach the flat-shapes gallery, where the chancellor spreads the blank lesson card on the table",
-        "prompt": "The chancellor dips his pen and strokes his beard three times: «The card only has room for one sentence. Cáo Cung Thủ will carry it every day. Which should I write?»",
+        "prompt": "The chancellor dips his pen and strokes his beard three times: «The card only has room for one sentence. Archer Fox will carry it every day. Which should I write?»",
         "choices": [
           {
             "text": "«One to look, two to think, then three to move.»",
-            "consequence": "The chancellor writes each word with care, then hangs the first beat bell from the corner of the card so Cáo will remember to count."
+            "consequence": "The chancellor writes each word with care, then hangs the first beat bell from the corner of the card so Fox will remember to count."
           },
           {
             "text": "«Look at the whole board, not just your own pieces.»",
@@ -347,7 +347,7 @@
     }
   },
   "en": {
-    "title": "Tể Tướng Cờ Vua's story, chapter 3: Count to three, then let go",
-    "summary": "Cáo Cung Thủ lost a game after five moves by rushing. Tể Tướng Cờ Vua and {name} prepare a three-beat lesson: finding three bells, picking arrow pairs that make fifty, working out when he may go to the range and writing a motto on a card."
+    "title": "Chess Chancellor's story, chapter 3: Count to three, then let go",
+    "summary": "Archer Fox lost a game after five moves by rushing. Chess Chancellor and {name} prepare a three-beat lesson: finding three bells, picking arrow pairs that make fifty, working out when he may go to the range and writing a motto on a card."
   }
 }

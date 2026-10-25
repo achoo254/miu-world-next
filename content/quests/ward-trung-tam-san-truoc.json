@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Voi Gác Sân Trước",
+        "title": "Meet Front Yard Guard Elephant",
         "lines": [
-          "Hup! Voi Gác Sân Trước here. To cross this forecourt, {name} must answer my five riddles.",
+          "Hup! Front Yard Guard Elephant here. To cross this forecourt, {name} must answer my five riddles.",
           "Don't worry, I only use my trunk to water the flowers. Ready?"
         ],
         "choices": [
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Voi Gác Sân Trước",
-        "bossName": "Voi Gác Sân Trước",
+        "title": "Battle of wits with Front Yard Guard Elephant",
+        "bossName": "Front Yard Guard Elephant",
         "introDialogue": "My trunk is up: here sprays the first riddle!",
         "winDialogue": "I kneel on one knee and give up! {name} has earned the way across the forecourt."
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Voi Gác Sân Trước phun một cầu vồng nước nhỏ tặng {name} và hẹn đấu lại vào lúc khác.",
       "en": {
-        "title": "Voi Gác Sân Trước's gift",
-        "text": "Voi Gác Sân Trước sprays a little water rainbow for {name} and hopes to battle again another time."
+        "title": "Front Yard Guard Elephant's gift",
+        "text": "Front Yard Guard Elephant sprays a little water rainbow for {name} and hopes to battle again another time."
       }
     },
     {
@@ -393,7 +393,7 @@
       "trigger": "auto",
       "text": "Thắng hết bốn trùm canh khu rồi thì {name} ghé chặng cuối gặp Cáo Ảo Thuật nhé.",
       "en": {
-        "title": "Goodbye, Voi Gác Sân Trước",
+        "title": "Goodbye, Front Yard Guard Elephant",
         "text": "Beaten all four zone guardians? Then visit the Magician Fox at the last stop, {name}."
       }
     }
@@ -410,7 +410,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Voi Gác Sân Trước",
-    "summary": "Voi Gác Sân Trước guards the castle forecourt and asks {name} five riddles about take-aways, time, numbers and signs."
+    "title": "Zone guardian: Front Yard Guard Elephant",
+    "summary": "Front Yard Guard Elephant guards the castle forecourt and asks {name} five riddles about take-aways, time, numbers and signs."
   }
 }

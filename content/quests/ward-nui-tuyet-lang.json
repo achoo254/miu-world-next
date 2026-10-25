@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Cánh Cụt Đưa Thư",
+        "title": "Meet Mail Penguin",
         "lines": [
-          "Waddle, waddle… post! Hello {name}, I'm Cánh Cụt Đưa Thư of the snowy village.",
+          "Waddle, waddle… post! Hello {name}, I'm Mail Penguin of the snowy village.",
           "Today's postbag holds four riddles. Open them all and I'll give you my prettiest snow stamp."
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Cánh Cụt Đưa Thư",
-        "bossName": "Cánh Cụt Đưa Thư",
+        "title": "Battle of wits with Mail Penguin",
+        "bossName": "Mail Penguin",
         "introDialogue": "Here's the first snow-covered envelope: open it!",
         "winDialogue": "Waddle… I slipped over and give up! {name} reads letters as fast as a snowstorm."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Cánh Cụt Đưa Thư tặng {name} một con tem in hình bông tuyết sáu cánh.",
       "en": {
-        "title": "Cánh Cụt Đưa Thư's gift",
-        "text": "Cánh Cụt Đưa Thư gives {name} a stamp printed with a six-pointed snowflake."
+        "title": "Mail Penguin's gift",
+        "text": "Mail Penguin gives {name} a stamp printed with a six-pointed snowflake."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Lên khu trượt tuyết đi {name}, có trùm canh khu trượt nhanh nhất núi đang chờ.",
       "en": {
-        "title": "Goodbye, Cánh Cụt Đưa Thư",
+        "title": "Goodbye, Mail Penguin",
         "text": "Go up to the ski area, {name}: the fastest skier on the mountain is a zone guardian waiting there."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Cánh Cụt Đưa Thư",
-    "summary": "Cánh Cụt Đưa Thư guards the street of the snowy village and asks {name} four riddles about letters, warm things and sums."
+    "title": "Zone guardian: Mail Penguin",
+    "summary": "Mail Penguin guards the street of the snowy village and asks {name} four riddles about letters, warm things and sums."
   }
 }

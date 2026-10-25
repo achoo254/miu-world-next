@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Heo Hồng Chăn Đàn",
+        "title": "Meet Herding Pink Pig",
         "lines": [
-          "Oink oink, hello {name}! I'm Heo Hồng Chăn Đàn, and every hen and duck on the farm comes when I call.",
+          "Oink oink, hello {name}! I'm Herding Pink Pig, and every hen and duck on the farm comes when I call.",
           "Today I'm taking the flock for a walk with four take-away riddles. Count with me!"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Heo Hồng Chăn Đàn",
-        "bossName": "Heo Hồng Chăn Đàn",
+        "title": "Battle of wits with Herding Pink Pig",
+        "bossName": "Herding Pink Pig",
         "introDialogue": "The hens are out in the yard: cluck, here's the first riddle!",
         "winDialogue": "Oink, I give up! {name} herds with take-aways better than I do."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Heo Hồng Chăn Đàn tặng {name} chiếc còi chăn đàn bằng tre, thổi lên là gà vịt kéo về.",
       "en": {
-        "title": "Heo Hồng Chăn Đàn's gift",
-        "text": "Heo Hồng Chăn Đàn gives {name} a bamboo herding whistle: blow it and the hens and ducks come home."
+        "title": "Herding Pink Pig's gift",
+        "text": "Herding Pink Pig gives {name} a bamboo herding whistle: blow it and the hens and ducks come home."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ra vườn cây ăn quả đi {name}, trùm canh khu cuối cùng của trại đang hái cam chờ cậu.",
       "en": {
-        "title": "Goodbye, Heo Hồng Chăn Đàn",
+        "title": "Goodbye, Herding Pink Pig",
         "text": "Head to the orchard, {name}: the farm's last zone guardian is picking oranges and waiting for you."
       }
     }
@@ -353,7 +353,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Heo Hồng Chăn Đàn",
-    "summary": "Heo Hồng Chăn Đàn guards the livestock area and asks {name} four take-away-with-exchanging riddles about hens and ducks."
+    "title": "Zone guardian: Herding Pink Pig",
+    "summary": "Herding Pink Pig guards the livestock area and asks {name} four take-away-with-exchanging riddles about hens and ducks."
   }
 }

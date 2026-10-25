@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "Contest morning",
-        "goTo": "Go to the training ground, where Cáo Cung Thủ is giving his bow «Thunderbolt» one last polish",
+        "goTo": "Go to the training ground, where Archer Fox is giving his bow «Thunderbolt» one last polish",
         "lines": [
           "Today is the day, {name}. Archers from the mountains, the sea and the riverside villages have all come. Whoosh! I'm so excited both my ears are standing straight up.",
           "Each of them brought a little letter. At the end, I'll tie them all to one arrow and shoot it over the moat for the ferry to carry out to sea."
@@ -141,7 +141,7 @@
           "hint": "You can't take 4 from 2, so borrow a ten: 12 − 4 = 8.",
           "answer": {
             "text": "8 points",
-            "explanation": "72 − 64: in the ones, 2 is less than 4, so 12 − 4 = 8, write 8 and carry 1. Tens: 6 plus 1 is 7, and 7 − 7 = 0. So Cáo is 8 points behind Sơn Dương."
+            "explanation": "72 − 64: in the ones, 2 is less than 4, so 12 − 4 = 8, write 8 and carry 1. Tens: 6 plus 1 is 7, and 7 − 7 = 0. So Fox is 8 points behind Sơn Dương."
           }
         }
       },
@@ -158,21 +158,21 @@
         ],
         "en": {
           "right": [
-            "Eight points. Cáo nods: \"Not many. A rematch can win them back.\"",
+            "Eight points. Fox nods: \"Not many. A rematch can win them back.\"",
             "{name} subtracted with borrowing like a veteran judge.",
-            "Exactly eight! Cáo rolls up his sleeves, eyes shining."
+            "Exactly eight! Fox rolls up his sleeves, eyes shining."
           ],
           "wrong": [
             "In the ones, 2 is less than 4, so you need to borrow a ten, {name}.",
             "Twelve is too many; try subtracting again from the ones column.",
-            "Take Cáo's score away from Sơn Dương's score."
+            "Take Fox's score away from Sơn Dương's score."
           ]
         }
       },
       "en": {
         "title": "The gap after round one",
         "goTo": "Go to the judges' tent to see the round-one scoreboard just pinned up",
-        "prompt": "The scoreboard says: after round one, the mountain archer Sơn Dương has 72 points and Cáo has 64. Cáo scratches an ear: \"Lost. Fair and square. But by how much?\" How many points is Cáo behind Sơn Dương?",
+        "prompt": "The scoreboard says: after round one, the mountain archer Sơn Dương has 72 points and Fox has 64. Fox scratches an ear: \"Lost. Fair and square. But by how much?\" How many points is Fox behind Sơn Dương?",
         "choices": [
           "8 points",
           "12 points",
@@ -257,7 +257,7 @@
         },
         "en": {
           "guide": [
-            "Cáo stands on the cat square, so start there.",
+            "Fox stands on the cat square, so start there.",
             "Trace one sequence at a time; touch an arrow crate (a brick) and it fails.",
             "The sequence that stops right on the platform is the one."
           ],
@@ -281,7 +281,7 @@
         ],
         "en": {
           "right": [
-            "Not a single crate bumped! Cáo hops onto the platform and dusts off his paws.",
+            "Not a single crate bumped! Fox hops onto the platform and dusts off his paws.",
             "{name} found the way as neatly as an arrow slipping through leaves.",
             "Clean route, steady steps. Here's the platform!"
           ],
@@ -295,7 +295,7 @@
       "en": {
         "title": "The way to the platform",
         "goTo": "Go to the path out to the shooting platform, where arrow crates are stacked across the way",
-        "prompt": "The cat square is where Cáo stands, the star square is the shooting platform, and brick squares are arrow crates. Which steps get Cáo to the platform without tripping over a crate? (→ right, ↓ down)",
+        "prompt": "The cat square is where Fox stands, the star square is the shooting platform, and brick squares are arrow crates. Which steps get Fox to the platform without tripping over a crate? (→ right, ↓ down)",
         "choices": [
           "→ ↓ → → ↓ ↓ → ↓",
           "→ ↓ → ↓ → ↓ → ↓",
@@ -330,12 +330,12 @@
       ],
       "en": {
         "title": "Asking for a rematch",
-        "goTo": "Step up onto the rematch platform, where Cáo waits beside a fresh target",
-        "prompt": "Cáo holds out a paw to Sơn Dương: \"You shot better. I lost round one.\" Then he turns to {name} and whispers: \"But I want a rematch. What's a nice way to ask?\"",
+        "goTo": "Step up onto the rematch platform, where Fox waits beside a fresh target",
+        "prompt": "Fox holds out a paw to Sơn Dương: \"You shot better. I lost round one.\" Then he turns to {name} and whispers: \"But I want a rematch. What's a nice way to ask?\"",
         "choices": [
           {
             "text": "Congratulate Sơn Dương loudly first",
-            "consequence": "Cáo shouts: \"Well done, Sơn Dương!\" The whole field claps. Sơn Dương grins and offers: \"Let's go again, just for fun.\""
+            "consequence": "Fox shouts: \"Well done, Sơn Dương!\" The whole field claps. Sơn Dương grins and offers: \"Let's go again, just for fun.\""
           },
           {
             "text": "Whoever wins the rematch ties on the first letter",
@@ -343,7 +343,7 @@
           },
           {
             "text": "After the rematch, both shoot the letter-arrow together",
-            "consequence": "Sơn Dương agrees: \"Win or lose, we shoot it together.\" Cáo bounces up and down: \"One arrow, two archers. Nobody's ever done that!\""
+            "consequence": "Sơn Dương agrees: \"Win or lose, we shoot it together.\" Fox bounces up and down: \"One arrow, two archers. Nobody's ever done that!\""
           }
         ]
       }
@@ -359,7 +359,7 @@
       "goal": 30,
       "en": {
         "title": "The rematch",
-        "prompt": "The rematch begins, with a soft breeze over the moat. Watch the wind arrow and aim the other way, just like Bác Quăng Lưới Biển's trick: thirty points, {name}!"
+        "prompt": "The rematch begins, with a soft breeze over the moat. Watch the wind arrow and aim the other way, just like Net-Casting Uncle's trick: thirty points, {name}!"
       }
     },
     {
@@ -370,7 +370,7 @@
       "text": "Vòng lại hòa sát nút. Cáo cười khanh khách, buộc thư của cả giải lên một mũi tên. Vút! Mũi tên bay qua hào, rơi đúng bên bến phà. Bác lái phà vẫy tay, nhận thư mang ra biển. Cáo quay sang {name}: «Bước một xong rồi. Trúng phóc.»",
       "en": {
         "title": "The letter flies away",
-        "text": "The rematch ends neck and neck. Cáo laughs out loud and ties the whole contest's letters onto one arrow. Whoosh! It flies over the moat and lands right by the ferry landing. The ferryman waves and takes the letters out to sea. Cáo turns to {name}: \"Step one done. Dead centre.\""
+        "text": "The rematch ends neck and neck. Fox laughs out loud and ties the whole contest's letters onto one arrow. Whoosh! It flies over the moat and lands right by the ferry landing. The ferryman waves and takes the letters out to sea. Fox turns to {name}: \"Step one done. Dead centre.\""
       }
     },
     {
@@ -381,7 +381,7 @@
       "text": "Từ hôm ấy, chiều nào Cáo cũng ra mép hào ngóng phà về. Cáo bảo thư bay đi được thì thư cũng sẽ bay về, chỉ cần đợi đúng chiều gió.",
       "en": {
         "title": "Waiting for a reply",
-        "text": "From that day on, every evening Cáo goes to the edge of the moat to watch for the ferry. A letter that can fly out, he says, can fly back, if you wait for the right wind."
+        "text": "From that day on, every evening Fox goes to the edge of the moat to watch for the ferry. A letter that can fly out, he says, can fly back, if you wait for the right wind."
       }
     }
   ],
@@ -397,7 +397,7 @@
     }
   },
   "en": {
-    "title": "Cáo Cung Thủ's story, chapter 3: Lose a round, win a letter",
-    "summary": "On contest day, Cáo loses round one to the mountain archer Sơn Dương and owns up straight away. {name} gathers the archers' letters, works out the score gap, finds the way to the shooting platform, helps Cáo choose how to ask for a rematch, and then a letter really flies."
+    "title": "Archer Fox's story, chapter 3: Lose a round, win a letter",
+    "summary": "On contest day, Fox loses round one to the mountain archer Sơn Dương and owns up straight away. {name} gathers the archers' letters, works out the score gap, finds the way to the shooting platform, helps Fox choose how to ask for a rematch, and then a letter really flies."
   }
 }

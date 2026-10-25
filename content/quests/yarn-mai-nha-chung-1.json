@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "Dark clouds on the horizon",
-        "goTo": "Go to the path by the wheat field (Ruộng lúa mì), where Anh Thợ Sửa Mái is craning up at the sky",
+        "goTo": "Go to the path by the wheat field (Wheat Field), where Roofer Brother is craning up at the sky",
         "lines": [
           "One, two, three, look, {name}! Dark clouds rolling in like a herd of giant buffalo. The uninvited guest is on its way.",
           "The red cowshed roof has two holes, and when the rain comes the cows will be soaked to the skin. I need my tools, nails and ties, and I left them all in the vegetable garden."
@@ -90,7 +90,7 @@
       ],
       "en": {
         "title": "Forgotten tools",
-        "goTo": "Run to the vegetable garden (Vườn rau) and gather the tools he left behind",
+        "goTo": "Run to the vegetable garden (Vegetable Garden) and gather the tools he left behind",
         "prompt": "His tools are tangled up among the vegetable beds. Read the descriptions and find all three:",
         "items": [
           { "name": "Box of bamboo nails", "clue": "A small wooden box that rattles when shaken, full of nails whittled from old bamboo, needle-sharp at the tip." },
@@ -150,7 +150,7 @@
       },
       "en": {
         "title": "How many tiles short?",
-        "goTo": "Take the tools to the red cowshed (Chuồng bò đỏ), where he's counting the holes",
+        "goTo": "Take the tools to the red cowshed (Red Cow Barn), where he's counting the holes",
         "question": "The cowshed roof has two holed rows, each missing 5 tiles. His basket still holds 7 tiles. How many more tiles must be found to mend the roof?"
       }
     },
@@ -162,7 +162,7 @@
       "targets": ["st-mai-nha-chung-ngoi-rom", "st-mai-nha-chung-ngoi-mang", "st-mai-nha-chung-ngoi-cui"],
       "en": {
         "title": "Three stray tiles",
-        "goTo": "Walk round the hen house (Quanh chuồng gà) and find three old tiles"
+        "goTo": "Walk round the hen house (Around the Chicken Coop) and find three old tiles"
       }
     },
     {
@@ -207,7 +207,7 @@
       ],
       "en": {
         "title": "The first thunderclap",
-        "prompt": "The last tile is barely in place when «BOOM!», thunder cracks. Anh Thợ Sửa Mái clings to the ladder, white as a sheet. What does {name} do?",
+        "prompt": "The last tile is barely in place when «BOOM!», thunder cracks. Roofer Brother clings to the ladder, white as a sheet. What does {name} do?",
         "choices": [
           { "text": "Count with him: one, two, three, down!", "consequence": "He counts along, one rung at a time, and by «three» his feet are on the ground. He laughs with relief: «Counting down works as well as counting up.»" },
           { "text": "Whistle his favourite tune to drown out the thunder", "consequence": "Your two whistles ring louder than the second thunderclap. He slides down the ladder, whistling and laughing." },
@@ -223,7 +223,7 @@
       "text": "Mưa trút xuống ào ào mà trong chuồng bò khô cong, đàn bò nằm nhai rơm tỉnh bơ. Anh Thợ Sửa Mái kể nhỏ với {name}: viên ngói nào anh lợp cũng mang một điều ước viết bằng than.",
       "en": {
         "title": "A bone-dry cowshed",
-        "text": "Rain pours down, but inside the cowshed it's bone dry and the cows lie chewing hay without a care. Anh Thợ Sửa Mái whispers to {name}: every tile he lays carries a wish written in charcoal."
+        "text": "Rain pours down, but inside the cowshed it's bone dry and the cows lie chewing hay without a care. Roofer Brother whispers to {name}: every tile he lays carries a wish written in charcoal."
       }
     },
     {
@@ -244,7 +244,7 @@
     "skillXp": { "doc-hieu": 1, "phep-tru": 1 }
   },
   "en": {
-    "title": "Anh Thợ Sửa Mái's story, chapter 1: The cowshed roof before the storm",
-    "summary": "Storm clouds are coming and the red cowshed roof has two holes. {name} gathers tools for Anh Thợ Sửa Mái, works out how many tiles are short, finds tiles around the hen house, beats the rain on the roof and stays by him when the first thunder cracks."
+    "title": "Roofer Brother's story, chapter 1: The cowshed roof before the storm",
+    "summary": "Storm clouds are coming and the red cowshed roof has two holes. {name} gathers tools for Roofer Brother, works out how many tiles are short, finds tiles around the hen house, beats the rain on the roof and stays by him when the first thunder cracks."
   }
 }

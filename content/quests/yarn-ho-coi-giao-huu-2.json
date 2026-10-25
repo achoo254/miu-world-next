@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "Pfff goes the whistle",
-        "goTo": "Go to the edge of the pitch, where Hổ Còi Vàng is blowing a silent whistle",
+        "goTo": "Go to the edge of the pitch, where Golden Whistle Tiger is blowing a silent whistle",
         "lines": [
           "Pfff… pfff… Grr grr! Grr grr grr!",
           "{name}, I said \"line up\" and the whole team thought I was hungry. The pea in my whistle has fallen out and it won't blow.",
@@ -339,19 +339,19 @@
       "en": {
         "title": "The latecomer",
         "goTo": "Go to the running track, where the team is warming up",
-        "prompt": "Mid warm-up, Mèo Mướp dashes in ten minutes late. Hổ blows his mended whistle: \"Whistle! {name}, how do we handle this?\"",
+        "prompt": "Mid warm-up, Tabby Cat dashes in ten minutes late. Hổ blows his mended whistle: \"Whistle! {name}, how do we handle this?\"",
         "choices": [
           {
             "text": "Let them join right away and ask why they're late",
-            "consequence": "Mèo Mướp explains they helped a little one find a school bag. Hổ nods: \"Late for a good deed: no penalty.\""
+            "consequence": "Tabby Cat explains they helped a little one find a school bag. Hổ nods: \"Late for a good deed: no penalty.\""
           },
           {
             "text": "Remind them to warm up first, then join",
-            "consequence": "Mèo Mướp jogs two laps before joining. Hổ praises: \"Looking after your legs. Good!\""
+            "consequence": "Tabby Cat jogs two laps before joining. Hổ praises: \"Looking after your legs. Good!\""
           },
           {
             "text": "Make them the team's timekeeper today",
-            "consequence": "Mèo Mướp holds the watch and calls \"five minutes left!\" loudly. From that day, never late again."
+            "consequence": "Tabby Cat holds the watch and calls \"five minutes left!\" loudly. From that day, never late again."
           }
         ]
       }
@@ -388,7 +388,7 @@
     }
   },
   "en": {
-    "title": "Hổ Còi Vàng's story, chapter 2: The whistle that wouldn't blow",
-    "summary": "At the first training session, Hổ Còi Vàng's golden whistle only goes pfff. {name} finds the lost pea, works out when training ends, orders the warm-up exercises and decides how to welcome a latecomer."
+    "title": "Golden Whistle Tiger's story, chapter 2: The whistle that wouldn't blow",
+    "summary": "At the first training session, Golden Whistle Tiger's golden whistle only goes pfff. {name} finds the lost pea, works out when training ends, orders the warm-up exercises and decides how to welcome a latecomer."
   }
 }

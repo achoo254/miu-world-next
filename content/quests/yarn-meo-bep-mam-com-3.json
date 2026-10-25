@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "Fumbling paws",
-        "goTo": "Go behind the kitchen, where Mèo Bếp Trưởng is picking up pieces of a broken bowl",
+        "goTo": "Go behind the kitchen, where Head Chef Cat is picking up pieces of a broken bowl",
         "lines": [
           "Thirty years in the kitchen and I never broke a bowl. This morning, two. Because of the radio.",
           "It has gone quiet. No music, no presenter. I'm used to chopping while it talks; in this silence my knife loses the beat.",
@@ -166,7 +166,7 @@
           "right": [
             "Thirty minutes! Enough to change batteries, tie the wire and tighten two screws.",
             "Half a turn of the long hand is half an hour; you read clocks sharply, {name}.",
-            "Mèo sets the kitchen timer: half an hour left, let's get to work."
+            "Cat sets the kitchen timer: half an hour left, let's get to work."
           ],
           "wrong": [
             "A whole hour would move the short hand a full number. Look at the long hand again.",
@@ -250,7 +250,7 @@
           "right": [
             "Crackle crackle… then a voice sings out! The radio is alive again!",
             "Plus three, plus three, plus three: you caught the dial's rhythm at once, {name}.",
-            "Mèo presses an ear to the speaker, eyes closed, tail gently swishing."
+            "Cat presses an ear to the speaker, eyes closed, tail gently swishing."
           ],
           "wrong": [
             "Nothing but static. Check how much each number adds.",
@@ -296,19 +296,19 @@
       ],
       "en": {
         "title": "Where should the radio go?",
-        "prompt": "The radio sings again. Mèo hugs it like a kitten: \"Back on the cupboard it will fall again. Where now?\"",
+        "prompt": "The radio sings again. Cat hugs it like a kitten: \"Back on the cupboard it will fall again. Where now?\"",
         "choices": [
           {
             "text": "By the kitchen window, where the aerial picks up well",
-            "consequence": "The signal is crystal clear. Mèo chops tomatoes and hums along to the music."
+            "consequence": "The signal is crystal clear. Cat chops tomatoes and hums along to the music."
           },
           {
             "text": "Leave it in the living room for everyone",
-            "consequence": "Cún Đốm tidies twice as fast with music on. Mèo has to run between the kitchen and the living room."
+            "consequence": "Spotted Pup tidies twice as fast with music on. Cat has to run between the kitchen and the living room."
           },
           {
-            "text": "Ask Ông Cụ Trông Vườn to build it its own shelf",
-            "consequence": "Ông Cụ carves a little shelf with a rail. Mèo says the radio now has a home of its own, grander than his."
+            "text": "Ask Old Garden Keeper to build it its own shelf",
+            "consequence": "Ông Cụ carves a little shelf with a rail. Cat says the radio now has a home of its own, grander than his."
           }
         ]
       }
@@ -321,7 +321,7 @@
       "text": "Mèo chỉnh đúng chương trình nấu ăn buổi trưa, rót cho {name} cốc trà gừng: «Nghe cùng. Ghi chép cùng.»",
       "en": {
         "title": "Music in the kitchen again",
-        "text": "Mèo tunes in the lunchtime cooking show and pours {name} a cup of ginger tea: \"Listen together. Take notes together.\""
+        "text": "Cat tunes in the lunchtime cooking show and pours {name} a cup of ginger tea: \"Listen together. Take notes together.\""
       }
     },
     {
@@ -332,7 +332,7 @@
       "text": "Chủ nhật đã đến gần. Món nào cũng sẵn sàng, chỉ còn một rổ hành tây chưa thái, và Mèo cứ nhìn nó như nhìn kẻ thù. Mai {name} ghé sớm nhé.",
       "en": {
         "title": "Sunday is coming",
-        "text": "Sunday is almost here. Every dish is ready except a basket of onions still to chop, and Mèo keeps glaring at it like an enemy. Come early tomorrow, {name}."
+        "text": "Sunday is almost here. Every dish is ready except a basket of onions still to chop, and Cat keeps glaring at it like an enemy. Come early tomorrow, {name}."
       }
     }
   ],
@@ -345,7 +345,7 @@
     }
   },
   "en": {
-    "title": "Mèo Bếp Trưởng's story, chapter 3: The silent radio",
-    "summary": "The kitchen's old radio has gone silent and Mèo Bếp Trưởng's paws keep fumbling. {name} finds tools in the storeroom, counts the time until the cooking show, tunes it in and chooses a new spot for the radio."
+    "title": "Head Chef Cat's story, chapter 3: The silent radio",
+    "summary": "The kitchen's old radio has gone silent and Head Chef Cat's paws keep fumbling. {name} finds tools in the storeroom, counts the time until the cooking show, tunes it in and chooses a new spot for the radio."
   }
 }

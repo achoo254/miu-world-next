@@ -64,8 +64,8 @@
         }
       ],
       "en": {
-        "title": "A sleepy Thỏ Ngắm Sao",
-        "goTo": "Go to the lawn by the tower, where Thỏ Ngắm Sao is yawning",
+        "title": "A sleepy Stargazer Rabbit",
+        "goTo": "Go to the lawn by the tower, where Stargazer Rabbit is yawning",
         "lines": [
           "{name}… in three nights there's a meteor shower… It's the one night I wait for all year.",
           "But down on this lawn, trees and lamps hide half the sky. The best spot is the top of the clock tower… and I'm scared of heights. I've never been past the first landing.",
@@ -144,7 +144,7 @@
         ],
         "en": {
           "right": [
-            "East! Thỏ's ears shoot up and his eyes light up.",
+            "East! Rabbit's ears shoot up and his eyes light up.",
             "{name} reads a star calendar faster than a shooting star.",
             "The way the sun rises is the way the stars fall that night."
           ],
@@ -157,9 +157,9 @@
       },
       "en": {
         "title": "The star calendar",
-        "goTo": "Go to the foot of the clock tower and read Thỏ's star calendar",
+        "goTo": "Go to the foot of the clock tower and read Rabbit's star calendar",
         "text": "OCTOBER METEOR SHOWER\nThis Saturday night, the most shooting stars fall between 2 and 4 in the morning.\nLook towards the east, where no lamps or trees are in the way.\nBring a blanket: it gets very cold before dawn.",
-        "question": "To see the most shooting stars, which way should Thỏ look?",
+        "question": "To see the most shooting stars, which way should Rabbit look?",
         "choices": [
           "West",
           "East",
@@ -213,7 +213,7 @@
         ],
         "en": {
           "right": [
-            "Six hours! Enough for Thỏ to have three dreams full of stars.",
+            "Six hours! Enough for Rabbit to have three dreams full of stars.",
             "{name} counted past midnight without a stumble.",
             "Four hours before midnight, two after. Spot on."
           ],
@@ -225,9 +225,9 @@
         }
       },
       "en": {
-        "title": "How long can Thỏ sleep?",
-        "goTo": "Go to the foot of the spiral stair, where Thỏ's alarm clock is ticking",
-        "question": "Thỏ goes to bed at 8 in the evening and sets the alarm for 2 in the morning to catch the shooting stars. How many hours of sleep does Thỏ get?"
+        "title": "How long can Rabbit sleep?",
+        "goTo": "Go to the foot of the spiral stair, where Rabbit's alarm clock is ticking",
+        "question": "Rabbit goes to bed at 8 in the evening and sets the alarm for 2 in the morning to catch the shooting stars. How many hours of sleep does Rabbit get?"
       }
     },
     {
@@ -260,7 +260,7 @@
       "en": {
         "title": "Getting the landing ready",
         "goTo": "Climb to the landing of the spiral stair and find things for the resting spot",
-        "prompt": "Three things will make the landing less scary for Thỏ. Read the descriptions and find them:",
+        "prompt": "Three things will make the landing less scary for Rabbit. Read the descriptions and find them:",
         "items": [
           {
             "name": "Glow-in-the-dark star",
@@ -304,20 +304,20 @@
       ],
       "en": {
         "title": "How do we climb?",
-        "goTo": "Go back down to the lawn by the tower to fetch Thỏ Ngắm Sao",
-        "prompt": "The landing is ready. Thỏ stands before the first step, ears drooping: «How do I do this…?»",
+        "goTo": "Go back down to the lawn by the tower to fetch Stargazer Rabbit",
+        "prompt": "The landing is ready. Rabbit stands before the first step, ears drooping: «How do I do this…?»",
         "choices": [
           {
             "text": "Count every step out loud together",
-            "consequence": "«One… two… three…» By step twelve Thỏ has forgotten he's scared."
+            "consequence": "«One… two… three…» By step twelve Rabbit has forgotten he's scared."
           },
           {
             "text": "Look only at the glowing stars under your feet",
-            "consequence": "Thỏ follows each little green star, as if walking a tiny starry road."
+            "consequence": "Rabbit follows each little green star, as if walking a tiny starry road."
           },
           {
-            "text": "Hold paws; Thỏ can keep his eyes shut",
-            "consequence": "Thỏ grips {name}'s hand, peeks with one eye on the last step and cheers: we made it!"
+            "text": "Hold paws; Rabbit can keep his eyes shut",
+            "consequence": "Rabbit grips {name}'s hand, peeks with one eye on the last step and cheers: we made it!"
           }
         ]
       }
@@ -333,7 +333,7 @@
       "trigger": "auto",
       "en": {
         "title": "Constellation practice",
-        "prompt": "Sit on the landing and join three constellations with Thỏ for practice!"
+        "prompt": "Sit on the landing and join three constellations with Rabbit for practice!"
       }
     },
     {
@@ -344,7 +344,7 @@
       "text": "Lần đầu tiên Thỏ Ngắm Sao ngồi trên chiếu nghỉ mà không run. Cậu ấy bóc một ngôi sao dạ quang dán lên vai áo {name}: «Huy hiệu người dẫn đường.»",
       "en": {
         "title": "The guide's badge",
-        "text": "For the first time, Thỏ Ngắm Sao sits on the landing without trembling. He peels off a glow star and sticks it on {name}'s shoulder: «Guide's badge.»"
+        "text": "For the first time, Stargazer Rabbit sits on the landing without trembling. He peels off a glow star and sticks it on {name}'s shoulder: «Guide's badge.»"
       }
     },
     {
@@ -355,7 +355,7 @@
       "text": "Từ chiếu nghỉ, Thỏ ngước nhìn lên gác chuông. «Mai mình lên tiếp nhé… nhưng quả chuông to kia mà kêu thì tai tớ rụng mất…»",
       "en": {
         "title": "Looking up at the bells",
-        "text": "«Let's go higher tomorrow…» says Thỏ, gazing up from the landing at the bell gallery. «But if that big bell rings, my ears will fall off…»"
+        "text": "«Let's go higher tomorrow…» says Rabbit, gazing up from the landing at the bell gallery. «But if that big bell rings, my ears will fall off…»"
       }
     }
   ],
@@ -369,7 +369,7 @@
     "items": {}
   },
   "en": {
-    "title": "Thỏ Ngắm Sao's story, chapter 1: The first landing",
-    "summary": "In three nights there's a meteor shower, and the best place to watch is the top of the clock tower, where Thỏ Ngắm Sao, scared of heights, has never dared go. {name} reads the star calendar, works out Thỏ's sleep, gets the landing ready and helps Thỏ take the first steps."
+    "title": "Stargazer Rabbit's story, chapter 1: The first landing",
+    "summary": "In three nights there's a meteor shower, and the best place to watch is the top of the clock tower, where Stargazer Rabbit, scared of heights, has never dared go. {name} reads the star calendar, works out Rabbit's sleep, gets the landing ready and helps Rabbit take the first steps."
   }
 }

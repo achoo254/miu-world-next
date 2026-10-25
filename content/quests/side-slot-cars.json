@@ -50,7 +50,7 @@
       "en": {
         "title": "Invitation",
         "lines": [
-          "Hey {name}, Cáo has a car waiting to race against yours!",
+          "Hey {name}, Fox has a car waiting to race against yours!",
           "Hold down to go fast, and let go just before a bend or your car will fly off the track."
         ],
         "choices": [
@@ -71,7 +71,7 @@
       "goal": 3,
       "en": {
         "title": "Slot Car Racing",
-        "prompt": "Finish 3 laps ahead of the car of Cáo!"
+        "prompt": "Finish 3 laps ahead of the car of Fox!"
       }
     },
     {
@@ -82,7 +82,7 @@
       "text": "Xe của {name} về trước một mũi, Chó Cảnh Sát Còi bấm còi mừng!",
       "en": {
         "title": "Reward",
-        "text": "The car of {name} wins by a nose, and Chó Cảnh Sát Còi honks to celebrate!"
+        "text": "The car of {name} wins by a nose, and Whistle Police Dog honks to celebrate!"
       }
     },
     {
@@ -93,7 +93,7 @@
       "text": "Cáo đòi đua lại đấy, cậu ghé ngã tư tìm tớ khi rảnh nhé.",
       "en": {
         "title": "See you soon",
-        "text": "Cáo wants a rematch, so come find me at the crossroads when you are free."
+        "text": "Fox wants a rematch, so come find me at the crossroads when you are free."
       }
     }
   ],
@@ -102,7 +102,7 @@
     "coin": 5
   },
   "en": {
-    "title": "Slot car racing with Chó Cảnh Sát Còi",
+    "title": "Slot car racing with Whistle Police Dog",
     "summary": "A winding track with sharp bends: hold to speed up, and let go before each corner."
   }
 }

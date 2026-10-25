@@ -50,8 +50,8 @@
         { "text": "Tháo nồi ra đi, tớ biết một cách hay hơn.", "reply": "Thật hả? Vậy Gấu tháo… nhưng Gấu ôm nồi theo, phòng khi cần." }
       ],
       "en": {
-        "title": "Gấu in a pot helmet",
-        "goTo": "Go to the front yard, where Gấu is wearing… a pot",
+        "title": "Bear in a pot helmet",
+        "goTo": "Go to the front yard, where Bear is wearing… a pot",
         "lines": [
           "Don't laugh, {name}! This pot is my anti-bee helmet, my very own invention.",
           "Only, with it on I can't see a thing, and my own voice echoes inside like buzzing, which is even scarier…"
@@ -91,14 +91,14 @@
         "right": ["Đúng trình tự rồi, Gấu đội mũ rơm vào trông duyên hẳn!", "{name} sắp xếp gọn gàng như một người nuôi ong lành nghề.", "Có kế hoạch rồi, Gấu bớt run được một nửa."],
         "wrong": ["Chưa mặc áo dài tay mà đã ra tổ thì Gấu chạy mất dép đấy.", "Xin mật trước khi chào thì ong phật ý cho xem, {name} xếp lại nhé.", "Thử nghĩ như khi sang nhà hàng xóm: chuẩn bị, đi tới, chào, rồi mới xin."],
         "en": {
-          "right": ["Perfect order! In the straw hat Gấu looks rather charming.", "As tidy as a seasoned beekeeper, {name}.", "With a plan in place, Gấu is only half as shaky."],
-          "wrong": ["Heading to the hive without long sleeves would send Gấu running for her life.", "Ask before greeting and the bees will be offended. Try again, {name}.", "Think of visiting a neighbour: get ready, walk over, say hello, then ask."]
+          "right": ["Perfect order! In the straw hat Bear looks rather charming.", "As tidy as a seasoned beekeeper, {name}.", "With a plan in place, Bear is only half as shaky."],
+          "wrong": ["Heading to the hive without long sleeves would send Bear running for her life.", "Ask before greeting and the bees will be offended. Try again, {name}.", "Think of visiting a neighbour: get ready, walk over, say hello, then ask."]
         }
       },
       "en": {
         "title": "Getting ready to meet the bees",
-        "goTo": "Go into the storeroom and fetch the wide straw hat for Gấu",
-        "prompt": "Thỏ Làm Vườn once explained how to approach a hive without startling the bees. Put the steps in order:",
+        "goTo": "Go into the storeroom and fetch the wide straw hat for Bear",
+        "prompt": "Gardener Rabbit once explained how to approach a hive without startling the bees. Put the steps in order:",
         "items": ["Stand an arm's length from the hive and greet softly", "Put on a wide hat and long sleeves", "Wait for the bees to get used to you before asking for honey", "Walk slowly and never swat at the bees"]
       }
     },
@@ -136,14 +136,14 @@
         "right": ["Bà Ong rung râu: «Đúng hai mươi sáu, cháu đếm giỏi hơn cả ong thợ!»", "Hai mươi sáu ô mật vàng óng, đủ chia cho cả đàn lẫn Gấu.", "{name} vừa trả lời, cả tổ ong vo ve như vỗ tay."],
         "wrong": ["Bà Ong nghiêng đầu: «Hửm? Đếm lại ba tầng xem nào.»", "Nhớ trừ đi bốn ô đã ăn hết mật nhé {name}.", "Mỗi tầng mười ô, ba tầng là bao nhiêu ô? Bắt đầu từ đó."],
         "en": {
-          "right": ["Bà Ong twitches her feelers: “Twenty-six exactly, you count better than my workers!”", "Twenty-six golden cells, plenty for the colony and for Gấu.", "As soon as you answer, the whole hive hums like applause, {name}."],
+          "right": ["Bà Ong twitches her feelers: “Twenty-six exactly, you count better than my workers!”", "Twenty-six golden cells, plenty for the colony and for Bear.", "As soon as you answer, the whole hive hums like applause, {name}."],
           "wrong": ["Bà Ong tilts her head: “Hmm? Count the three layers again.”", "Don't forget to take away the four eaten cells, {name}.", "Ten cells per layer, three layers: how many cells? Start there."]
         }
       },
       "en": {
         "title": "Bà Ong's riddle",
-        "goTo": "The bees fly home to the hive at the foot of the windmill, where Bà Ong Vàng is waiting",
-        "question": "Bà Ong Vàng asks: “My hive has 3 layers, each with 10 wax cells full of honey. The colony has eaten the honey in 4 cells. How many cells are still full?”"
+        "goTo": "The bees fly home to the hive at the foot of the windmill, where Bà Golden Bee is waiting",
+        "question": "Bà Golden Bee asks: “My hive has 3 layers, each with 10 wax cells full of honey. The colony has eaten the honey in 4 cells. How many cells are still full?”"
       }
     },
     {
@@ -160,11 +160,11 @@
       ],
       "en": {
         "title": "Who greets the bees?",
-        "prompt": "Bà Ong says: “Whoever the honey is for must do the greeting.” Gấu hides behind {name}, clutching her pot. What do you do?",
+        "prompt": "Bà Ong says: “Whoever the honey is for must do the greeting.” Bear hides behind {name}, clutching her pot. What do you do?",
         "choices": [
-          { "text": "Hold Gấu's paw and step forward together", "consequence": "Gấu steps up, voice trembling: “H-hello, bees. May I have a spoon of honey for Grandma's doughnuts?” The bees circle her straw hat once and settle, gentle as can be." },
-          { "text": "Whisper the greeting to Gấu word by word", "consequence": "Gấu repeats each word after {name}, then finishes the sentence on her own. Bà Ong nods: “That's a proper greeting.”" },
-          { "text": "Tell Gấu to put the pot down first", "consequence": "Gấu sets the pot on the grass. Without it she hears the bees clearly: they aren't growling, they're singing. She laughs and says hello." }
+          { "text": "Hold Bear's paw and step forward together", "consequence": "Bear steps up, voice trembling: “H-hello, bees. May I have a spoon of honey for Grandma's doughnuts?” The bees circle her straw hat once and settle, gentle as can be." },
+          { "text": "Whisper the greeting to Bear word by word", "consequence": "Bear repeats each word after {name}, then finishes the sentence on her own. Bà Ong nods: “That's a proper greeting.”" },
+          { "text": "Tell Bear to put the pot down first", "consequence": "Bear sets the pot on the grass. Without it she hears the bees clearly: they aren't growling, they're singing. She laughs and says hello." }
         ]
       }
     },
@@ -182,14 +182,14 @@
         { "text": "Chuyện gì thế Gấu?", "reply": "Mai rán bánh xong Gấu kể. Hứa đấy, hứa bằng cả hũ mật này!" }
       ],
       "en": {
-        "title": "The first honey Gấu asked for herself",
-        "goTo": "Follow Gấu back to the front yard, the honey jar still warm from the sun",
+        "title": "The first honey Bear asked for herself",
+        "goTo": "Follow Bear back to the front yard, the honey jar still warm from the sun",
         "lines": [
           "I did it, {name}! Bà Ong says next time I can just come, no pot needed.",
           "My heart's still thumping, but it's a happy thump. Now there's only the frying… and one thing I haven't told you yet."
         ],
         "choices": [
-          { "text": "What thing, Gấu?", "reply": "I'll tell you tomorrow after frying. Promise, I swear on this whole jar of honey!" }
+          { "text": "What thing, Bear?", "reply": "I'll tell you tomorrow after frying. Promise, I swear on this whole jar of honey!" }
         ]
       }
     },
@@ -201,7 +201,7 @@
       "text": "Gấu chia cho {name} thìa mật đầu tiên, rồi treo chiếc mũ rơm lên cửa như treo một tấm huy chương.",
       "en": {
         "title": "The brave spoonful",
-        "text": "Gấu shares the very first spoon of honey with {name}, then hangs the straw hat on the door like a medal."
+        "text": "Bear shares the very first spoon of honey with {name}, then hangs the straw hat on the door like a medal."
       }
     },
     {
@@ -212,7 +212,7 @@
       "text": "Đủ cả bột, trứng và mật hoa vườn nhà. Mai Gấu nhóm lò thật sớm, rán mẻ bánh đúng như sổ của bà, và kể {name} nghe nốt chuyện chiếc thuyền giấy.",
       "en": {
         "title": "Grandma's batch",
-        "text": "Flour, egg and garden honey, all ready. Tomorrow Gấu lights the oven early to fry the batch exactly as Grandma wrote, and to tell {name} the rest of the paper boat story."
+        "text": "Flour, egg and garden honey, all ready. Tomorrow Bear lights the oven early to fry the batch exactly as Grandma wrote, and to tell {name} the rest of the paper boat story."
       }
     }
   ],
@@ -222,7 +222,7 @@
     "skillXp": { "ke-chuyen": 1, "phep-tru": 1 }
   },
   "en": {
-    "title": "Gấu Bánh Ngọt's story, chapter 3: Greeting the bees",
-    "summary": "For honey from the home garden, Gấu must greet the bees herself, and bees scare her most of all. {name} helps her get ready, follows the bees' flight path, solves Bà Ong Vàng's riddle and stands beside Gấu as she says hello."
+    "title": "Pastry Bear's story, chapter 3: Greeting the bees",
+    "summary": "For honey from the home garden, Bear must greet the bees herself, and bees scare her most of all. {name} helps her get ready, follows the bees' flight path, solves Bà Golden Bee's riddle and stands beside Bear as she says hello."
   }
 }

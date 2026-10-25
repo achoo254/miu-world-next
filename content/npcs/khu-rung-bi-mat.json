@@ -11,7 +11,7 @@
       "voice": { "vi": "Nói như hát, hay ngân dài chữ cuối câu và đếm «một, hai, ba» trước khi kể chuyện gì quan trọng.", "en": "Talks the way she sings, stretches the last word of a sentence, and counts 'one, two, three' before anything important." },
       "fear": { "vi": "Sợ một sáng nào đó mở mỏ ra mà chẳng có tiếng nào bay ra, còn cả rừng thì im phăng phắc nhìn mình.", "en": "That one morning she'll open her beak, nothing will come out, and the whole forest will stare at her in silence." },
       "dream": { "vi": "Viết một bài ca mà mọi sinh vật trong rừng, từ ếch, ve sầu tới con suối, đều có một câu để hát.", "en": "To write one song in which every creature of the forest, frogs, cicadas, even the stream, gets a line to sing." },
-      "secret": { "vi": "Hồi còn bé, Họa Mi hát dở nhất tổ; chính Dơi Đêm Tai To đã dạy chị nghe tiếng vang trong hang cho tới khi tìm được giọng của mình.", "en": "As a chick she was the worst singer in her nest; it was Dơi Đêm Tai To who taught her to listen to echoes in the cave until she found her own voice." },
+      "secret": { "vi": "Hồi còn bé, Họa Mi hát dở nhất tổ; chính Dơi Đêm Tai To đã dạy chị nghe tiếng vang trong hang cho tới khi tìm được giọng của mình.", "en": "As a chick she was the worst singer in her nest; it was Big-Eared Night Bat who taught her to listen to echoes in the cave until she found her own voice." },
       "habit": { "vi": "Sáng nào cũng súc mỏ bằng một giọt sương trên lá dong rồi mới cất tiếng hót đầu tiên.", "en": "Every morning she rinses her beak with a dewdrop from a broad leaf before she sings a single note." },
       "likes": ["hoa-chuong-tim", "to-ong-mat", "chuong-gio-truc"],
       "lines": [
@@ -25,11 +25,11 @@
         { "vi": "Cậu biết không, chim họa mi hót hay nhất vào mùa xuân, lúc đi tìm bạn đấy.", "en": "Did you know? Hwamei thrushes like me sing their very best in spring, when they're looking for a friend." },
         { "vi": "{name} hát thử một câu xem nào. Lệch nhịp cũng được, tớ chỉ muốn nghe giọng cậu thôi.", "en": "Sing me one line, {name}. Off the beat is fine, I only want to hear your voice." },
         { "vi": "Lá dong to bản hứng được nhiều sương nhất. Tớ thuộc từng chiếc lá trong vòm này đấy.", "en": "Broad leaves catch the most dew. I know every single leaf in this canopy by heart." },
-        { "vi": "Cún Lúa ở làng ven sông gửi tớ chiếc chuông gió trúc, gió thổi là ngân đúng nốt Đô. Quý lắm luôn!", "en": "Cún Lúa from the riverside village sent me a bamboo wind chime. When the wind blows it rings a perfect C. I treasure it!", "about": "cun-lua" },
-        { "vi": "Khỉ Chuyền Cành đu ngang qua là cả dàn hợp xướng lạc nhịp, vì ai cũng ngoái ra xem!", "en": "Whenever Khỉ Chuyền Cành swings past, the whole choir loses the beat, because everyone turns to watch!", "about": "khi-chuyen-canh" },
+        { "vi": "Cún Lúa ở làng ven sông gửi tớ chiếc chuông gió trúc, gió thổi là ngân đúng nốt Đô. Quý lắm luôn!", "en": "Rice Pup from the riverside village sent me a bamboo wind chime. When the wind blows it rings a perfect C. I treasure it!", "about": "cun-lua" },
+        { "vi": "Khỉ Chuyền Cành đu ngang qua là cả dàn hợp xướng lạc nhịp, vì ai cũng ngoái ra xem!", "en": "Whenever Branch-Swinging Monkey swings past, the whole choir loses the beat, because everyone turns to watch!", "about": "khi-chuyen-canh" },
         { "vi": "Nói nhỏ nhé {name}: lên tới nốt cao nhất là tớ vẫn run, chỉ là tớ xòe cánh ra cho không ai thấy.", "en": "Just between us, {name}: I still shake on the highest note. I spread my wings so nobody notices.", "hearts": 2 },
         { "vi": "Tớ đặt riêng một nốt nhạc theo tên cậu, nghe nè: «tí-li-tí-u». Cậu là nốt vui nhất trong bài đấy.", "en": "I named a note after you, listen: 'tee-lee-tee-oo'. You're the happiest note in the whole song.", "hearts": 3 },
-        { "vi": "Hồi bé tớ hát dở nhất tổ. Chính Dơi Đêm Tai To dạy tớ nghe tiếng vang trong hang, đêm này qua đêm khác.", "en": "As a chick I was the worst singer in my nest. Dơi Đêm Tai To taught me to listen to the cave's echoes, night after night.", "hearts": 4, "about": "doi-hang-sau" },
+        { "vi": "Hồi bé tớ hát dở nhất tổ. Chính Dơi Đêm Tai To dạy tớ nghe tiếng vang trong hang, đêm này qua đêm khác.", "en": "As a chick I was the worst singer in my nest. Big-Eared Night Bat taught me to listen to the cave's echoes, night after night.", "hearts": 4, "about": "doi-hang-sau" },
         { "vi": "Bạn thân là người hát lạc giọng cùng mình mà vẫn cười toe. Cậu là bạn thân của tớ rồi đấy, {name}.", "en": "A best friend is someone who sings off-key with you and still grins. That's you now, {name}.", "hearts": 5 }
       ]
     },
@@ -55,7 +55,7 @@
         { "vi": "Trời quang thế này, đêm sẽ đầy sao. Mắt tớ không nhìn rõ sao, nhưng bạn bè hay kể cho tớ nghe.", "en": "With a clear sky like this, tonight will be full of stars. I can't see them well, but my friends describe them to me.", "weather": "fine" },
         { "vi": "Dơi không mù đâu nhé. Mắt tớ vẫn thấy, chỉ là tai tớ thấy giỏi hơn thôi.", "en": "Bats aren't blind, you know. My eyes work fine. My ears just see better." },
         { "vi": "Thử hét một tiếng vào hang đi {name}, rồi đếm xem tiếng vọng dội lại mấy lần.", "en": "Give a shout into the cave, {name}, then count how many times the echo answers." },
-        { "vi": "Thỏ Ngắm Sao gửi tớ tấm bản đồ sao có chấm nổi. Tớ sờ tay lên là biết chòm nào nằm ở đâu.", "en": "Thỏ Ngắm Sao sent me a star map with raised dots. I just run a wing over it and know where each constellation is.", "about": "tho-ngam-sao" },
+        { "vi": "Thỏ Ngắm Sao gửi tớ tấm bản đồ sao có chấm nổi. Tớ sờ tay lên là biết chòm nào nằm ở đâu.", "en": "Stargazer Rabbit sent me a star map with raised dots. I just run a wing over it and know where each constellation is.", "about": "tho-ngam-sao" },
         { "vi": "Lần đầu gặp cậu, tớ đã nấp sau tảng đá cả buổi. Cậu là người đầu tiên không hét lên đấy.", "en": "The first time we met, I hid behind a rock all afternoon. You're the first one who didn't scream.", "hearts": 2 },
         { "vi": "Tớ có cuốn sổ ghi tiếng bước chân của từng người bạn. Trang của {name} là trang dài nhất.", "en": "I keep a notebook of every friend's footsteps. Your page is the longest one, {name}.", "hearts": 3 },
         { "vi": "Hồi Họa Mi mất giọng, đêm nào chị ấy cũng tới đây tập nghe tiếng vang. Đừng kể ai là tớ kể nhé.", "en": "When Họa Mi lost her voice, she came here every night to practise with the echoes. Don't tell anyone I told you.", "hearts": 4, "about": "hoa-mi-rung" },
@@ -69,26 +69,26 @@
       "personality": { "vi": "Nhanh nhảu, tò mò, biết chuyện của cả rừng và không giữ nổi một bí mật quá một buổi sáng.", "en": "Quick, curious and in the know about the whole forest; can't keep a secret for longer than a morning." },
       "voice": { "vi": "Điều gì quan trọng cũng nói hai lần, hai lần! Mỗi ngày học một từ lạ rồi đi khoe khắp nơi.", "en": "Says everything important twice, twice! Learns one new word a day and shows it off everywhere." },
       "fear": { "vi": "Sợ có ngày quên đường về tổ, vì tổ đổi chỗ theo mùa mà trí nhớ thì chỉ giữ chuyện của người khác.", "en": "Forgetting the way home one day: the nest moves with the seasons, and its memory only keeps other people's news." },
-      "dream": { "vi": "Bay một vòng qua mọi miền của thế giới, tới đâu cũng có bạn reo «Vẹt Xanh tới rồi, tới rồi!».", "en": "To fly a loop over every corner of the world and hear friends everywhere shout 'Vẹt Xanh is here, is here!'" },
-      "secret": { "vi": "Vẹt Xanh không biết đọc: mọi từ lạ nó khoe đều học thuộc bằng tai, nghe lỏm lúc các bạn nhỏ đọc bài.", "en": "Vẹt Xanh can't read: every new word it shows off was learned by ear, overheard while children read aloud." },
+      "dream": { "vi": "Bay một vòng qua mọi miền của thế giới, tới đâu cũng có bạn reo «Vẹt Xanh tới rồi, tới rồi!».", "en": "To fly a loop over every corner of the world and hear friends everywhere shout 'Green Parrot is here, is here!'" },
+      "secret": { "vi": "Vẹt Xanh không biết đọc: mọi từ lạ nó khoe đều học thuộc bằng tai, nghe lỏm lúc các bạn nhỏ đọc bài.", "en": "Green Parrot can't read: every new word it shows off was learned by ear, overheard while children read aloud." },
       "habit": { "vi": "Đậu lên vai người mới tới và hỏi tên ba lần cho thật chắc.", "en": "Lands on every newcomer's shoulder and asks their name three times, just to be sure." },
       "likes": ["long-vu-chim-rung", "hat-de-rung", "sao-bien-vang"],
       "lines": [
         { "vi": "Dậy rồi, dậy rồi! {name} ơi, sáng nay rừng có tin mới, tin mới toanh!", "en": "Up, up! {name}, there's news in the forest this morning, brand-new news!", "when": "morning" },
-        { "vi": "Tớ vừa bay qua trảng cỏ, sương còn đọng trên lưng Nai Đom Đóm, đọng đầy, đọng đầy!", "en": "I just flew over the meadow. Dew is still sitting on Nai Đom Đóm's back, loads of it, loads!", "when": "morning", "about": "nai-dom-dom" },
+        { "vi": "Tớ vừa bay qua trảng cỏ, sương còn đọng trên lưng Nai Đom Đóm, đọng đầy, đọng đầy!", "en": "I just flew over the meadow. Dew is still sitting on Firefly Deer's back, loads of it, loads!", "when": "morning", "about": "nai-dom-dom" },
         { "vi": "Từ lạ hôm nay của tớ là «râm mát». Dưới gốc đại thụ râm mát lắm, râm mát lắm!", "en": "My new word today is 'shady'. Under the big old tree it's so shady, so shady!", "when": "afternoon" },
         { "vi": "Chiều rồi, chiều rồi! Tớ phải bay một vòng đếm xem bạn nào chưa về tổ.", "en": "Evening, evening! I have to fly a round and count who isn't home yet.", "when": "evening" },
         { "vi": "Khuya rồi, khuya rồi… Vẹt cũng phải ngủ chứ. Mai kể tiếp, kể tiếp nhé.", "en": "Late, so late… even parrots need their sleep. More tomorrow, more tomorrow.", "when": "night" },
         { "vi": "Ướt cánh rồi, ướt cánh! Mưa thế này tớ chỉ đi bộ trên cành thôi.", "en": "Wet wings, wet wings! In rain like this I only walk along the branches.", "weather": "rain" },
         { "vi": "Nắng đẹp, nắng đẹp! Bay lên cao là thấy con suối sáng như sợi chỉ bạc.", "en": "Lovely sun, lovely sun! From up high the stream shines like a silver thread.", "weather": "fine" },
         { "vi": "Cậu tên là {name}, {name}, {name}. Rồi, nhớ rồi, nhớ mãi luôn!", "en": "Your name is {name}, {name}, {name}. Got it, got it forever!" },
-        { "vi": "Tin nóng, tin nóng: Sóc Đu Đuôi lại giấu hạt dẻ rồi quên mất chỗ giấu!", "en": "Hot news, hot news: Sóc Đu Đuôi hid her chestnuts and forgot where, again!" },
+        { "vi": "Tin nóng, tin nóng: Sóc Đu Đuôi lại giấu hạt dẻ rồi quên mất chỗ giấu!", "en": "Hot news, hot news: Tail-Swinging Squirrel hid her chestnuts and forgot where, again!" },
         { "vi": "Lạc đường thì nhìn vệt rêu trên gốc cây nhé, nhìn rêu! Nhưng hỏi tớ thêm cho chắc.", "en": "Lost? Look at the moss on the tree trunks, the moss! But ask me as well, just in case." },
-        { "vi": "Thuyền Trưởng Vẹt Biển là bà con xa của tớ đấy, bà con đấy! Bác ấy nói giọng mặn mùi muối biển.", "en": "Thuyền Trưởng Vẹt Biển is my distant cousin, my cousin! He talks with a salty sea-breeze accent.", "about": "thuyen-truong-vet-bien" },
+        { "vi": "Thuyền Trưởng Vẹt Biển là bà con xa của tớ đấy, bà con đấy! Bác ấy nói giọng mặn mùi muối biển.", "en": "Captain Sea Parrot is my distant cousin, my cousin! He talks with a salty sea-breeze accent.", "about": "thuyen-truong-vet-bien" },
         { "vi": "Bí mật nhé, bí mật: tớ học từ lạ bằng cách đậu bên cửa sổ nghe các bạn đọc bài thật to.", "en": "Secret, secret: I learn new words by perching at the window while kids read aloud.", "hearts": 2 },
         { "vi": "Sáng nào cậu cũng là người đầu tiên được nghe tin của tớ. Đầu tiên, đầu tiên luôn!", "en": "Every morning you're the first one to hear my news. The very first, first!", "hearts": 3 },
-        { "vi": "Có hôm tớ quên đường về tổ, phải ngủ nhờ ở hang của Dơi Đêm Tai To. Đừng kể ai, đừng kể!", "en": "Once I forgot the way back to my nest and had to sleep in Dơi Đêm Tai To's cave. Don't tell, don't tell!", "hearts": 4 },
-        { "vi": "Ai hỏi bạn thân nhất của Vẹt Xanh là ai, tớ sẽ đọc tên cậu, đọc ba lần!", "en": "If anyone asks who Vẹt Xanh's best friend is, I'll say your name. Three times!", "hearts": 5 }
+        { "vi": "Có hôm tớ quên đường về tổ, phải ngủ nhờ ở hang của Dơi Đêm Tai To. Đừng kể ai, đừng kể!", "en": "Once I forgot the way back to my nest and had to sleep in Big-Eared Night Bat's cave. Don't tell, don't tell!", "hearts": 4 },
+        { "vi": "Ai hỏi bạn thân nhất của Vẹt Xanh là ai, tớ sẽ đọc tên cậu, đọc ba lần!", "en": "If anyone asks who Green Parrot's best friend is, I'll say your name. Three times!", "hearts": 5 }
       ]
     },
     {
@@ -109,7 +109,7 @@
         { "vi": "Đêm rồi, khỉ cũng phải về ổ. Nhưng ú òa! Tớ còn thức để chúc {name} ngủ ngon đấy.", "en": "Night time, even monkeys go to bed. But boo! I stayed up to say good night, {name}.", "when": "night" },
         { "vi": "Mưa làm dây leo trơn tuột, hôm nay tớ đu chậm thôi, chậm như ốc sên ấy.", "en": "Rain makes the vines slippery. Today I'm swinging slowly, snail-slow.", "weather": "rain" },
         { "vi": "Trời đẹp thế này đu dây là sướng nhất! Gió lùa qua tai mát rượi.", "en": "Weather like this is the best for swinging! The wind whooshes cool past your ears.", "weather": "fine" },
-        { "vi": "Mèo Hộp Nhạc gửi tớ một cuộn giấy đục lỗ, lắp vào hộp nhạc là ra bài hát ru. Tớ nghe hoài không chán.", "en": "Mèo Hộp Nhạc sent me a punched paper roll. Put it in a music box and out comes a lullaby. I never get tired of it.", "about": "meo-hop-nhac" },
+        { "vi": "Mèo Hộp Nhạc gửi tớ một cuộn giấy đục lỗ, lắp vào hộp nhạc là ra bài hát ru. Tớ nghe hoài không chán.", "en": "Music Box Cat sent me a punched paper roll. Put it in a music box and out comes a lullaby. I never get tired of it.", "about": "meo-hop-nhac" },
         { "vi": "Chuối chín cây ngoài nông trại thơm hơn chuối rừng nhiều. Ai cho tớ một nải, tớ đu ba vòng cảm ơn!", "en": "Tree-ripened farm bananas smell way better than wild ones. Give me a bunch and I'll swing three thank-you loops!" },
         { "vi": "Quy tắc số một của tớ: một tay nắm dây, một tay nắm cành. Không bao giờ buông cả hai!", "en": "My rule number one: one hand on the vine, one hand on a branch. Never let go of both!" },
         { "vi": "{name} có biết có loài khỉ bám cành được bằng đuôi không? Đuôi tớ thì lười, chỉ biết vẫy thôi.", "en": "Did you know some monkeys can grip branches with their tails, {name}? Mine is lazy, it only waves." },
@@ -140,7 +140,7 @@
         { "vi": "Đom đóm nháy đèn để gọi nhau, mỗi loài một nhịp riêng. Giống như mật mã vậy.", "en": "Fireflies blink to call one another, each kind with its own rhythm. Like a secret code." },
         { "vi": "{name} soi đèn thì soi xuống cỏ thôi nhé, đừng rọi thẳng vào đom đóm.", "en": "When you shine your torch, {name}, point it at the grass, never straight at a firefly." },
         { "vi": "Đêm qua tớ đếm được ba trăm mười hai con. Còn xa lắm mới tới một nghìn.", "en": "Last night I counted three hundred and twelve. Still a long way to a thousand." },
-        { "vi": "Mèo Trà Đá gửi tớ gói trà hoa cúc, dặn uống vào thì đếm đom đóm không buồn ngủ. Ấm như ánh đèn bếp.", "en": "Mèo Trà Đá sent me chamomile tea and said it would keep me awake for firefly counting. Warm as a kitchen lamp.", "about": "meo-tra-da" },
+        { "vi": "Mèo Trà Đá gửi tớ gói trà hoa cúc, dặn uống vào thì đếm đom đóm không buồn ngủ. Ấm như ánh đèn bếp.", "en": "Iced Tea Cat sent me chamomile tea and said it would keep me awake for firefly counting. Warm as a kitchen lamp.", "about": "meo-tra-da" },
         { "vi": "Ừm… tớ có một con đom đóm tên là {name} đấy. Nó bay nhanh nhất trảng cỏ.", "en": "Mm… I have a firefly named {name}. It's the fastest one in the meadow.", "hearts": 2 },
         { "vi": "Tớ sợ lắm, sợ một mùa nào đó trảng cỏ tối om, không còn đốm sáng nào bay về.", "en": "I'm so afraid that one season the meadow will stay dark, with not a single light coming home.", "hearts": 3 },
         { "vi": "Cậu thấy lưng tớ sáng lên không? Ừm… đó không phải đom đóm đâu. Lông tớ sáng khi tớ vui.", "en": "See my back glowing? Mm… that's not fireflies. My fur glows when I'm happy.", "hearts": 4 },
@@ -150,12 +150,12 @@
   ],
   "relations": [
     { "a": "hoa-mi-rung", "b": "doi-hang-sau", "kind": "mentor", "note": { "vi": "Dơi dạy Họa Mi nghe tiếng vang trong hang hồi chị còn hát dở; tới giờ hai bạn vẫn tập cùng nhau lúc chạng vạng.", "en": "Dơi taught Họa Mi to listen to the cave's echoes back when she sang badly; the two still practise together at twilight." } },
-    { "a": "vet-xanh", "b": "hoa-mi-rung", "kind": "neighbour", "note": { "vi": "Ở chung vòm lá xanh: Vẹt mang tin về, Họa Mi phổ tin thành bài hát.", "en": "They share the green canopy: Vẹt brings the news home, Họa Mi turns it into songs." } },
-    { "a": "khi-chuyen-canh", "b": "vet-xanh", "kind": "friend", "note": { "vi": "Khỉ đu tới đâu, Vẹt bay theo tới đó để có tin nóng kể cho cả rừng.", "en": "Wherever Khỉ swings, Vẹt flies after him, hoping for hot news to tell the forest." } },
+    { "a": "vet-xanh", "b": "hoa-mi-rung", "kind": "neighbour", "note": { "vi": "Ở chung vòm lá xanh: Vẹt mang tin về, Họa Mi phổ tin thành bài hát.", "en": "They share the green canopy: Parrot brings the news home, Họa Mi turns it into songs." } },
+    { "a": "khi-chuyen-canh", "b": "vet-xanh", "kind": "friend", "note": { "vi": "Khỉ đu tới đâu, Vẹt bay theo tới đó để có tin nóng kể cho cả rừng.", "en": "Wherever Khỉ swings, Parrot flies after him, hoping for hot news to tell the forest." } },
     { "a": "nai-dom-dom", "b": "doi-hang-sau", "kind": "friend", "note": { "vi": "Hai bạn thức đêm: Nai đếm đom đóm, Dơi nghe tiếng bước của từng con thú đi ngang trảng cỏ.", "en": "Two night owls: Nai counts the fireflies while Dơi listens to every creature crossing the meadow." } },
     { "a": "khi-chuyen-canh", "b": "hoa-mi-rung", "kind": "rival", "note": { "vi": "Khỉ đu ngang làm dàn chim lạc nhịp, Họa Mi giận lắm; nhưng đêm nào có nhạc, Khỉ cũng ngồi hàng đầu.", "en": "Khỉ's swinging throws the choir off the beat and Họa Mi gets cross; yet on concert nights Khỉ always sits in the front row." } },
-    { "a": "hoa-mi-rung", "b": "cun-lua", "kind": "pen-pal", "note": { "vi": "Gió xuôi mang tiếng hót của Họa Mi xuống tận bến sông; Cún Lúa nghe được, gửi thư lên khen, từ đó hai bạn viết thư cho nhau.", "en": "A downhill wind carried Họa Mi's song all the way to the river landing; Cún Lúa heard it and wrote to praise her, and they've written to each other ever since." } },
-    { "a": "khi-chuyen-canh", "b": "meo-hop-nhac", "kind": "pen-pal", "note": { "vi": "Mèo Hộp Nhạc gửi Khỉ những cuộn nhạc đục lỗ, Khỉ gửi lại quả rừng và kể chuyện đu dây nghe nhạc trên ngọn cây.", "en": "Mèo Hộp Nhạc sends Khỉ punched music rolls; Khỉ sends back wild fruit and tales of listening to music from the treetops." } }
+    { "a": "hoa-mi-rung", "b": "cun-lua", "kind": "pen-pal", "note": { "vi": "Gió xuôi mang tiếng hót của Họa Mi xuống tận bến sông; Cún Lúa nghe được, gửi thư lên khen, từ đó hai bạn viết thư cho nhau.", "en": "A downhill wind carried Họa Mi's song all the way to the river landing; Rice Pup heard it and wrote to praise her, and they've written to each other ever since." } },
+    { "a": "khi-chuyen-canh", "b": "meo-hop-nhac", "kind": "pen-pal", "note": { "vi": "Mèo Hộp Nhạc gửi Khỉ những cuộn nhạc đục lỗ, Khỉ gửi lại quả rừng và kể chuyện đu dây nghe nhạc trên ngọn cây.", "en": "Music Box Cat sends Khỉ punched music rolls; Khỉ sends back wild fruit and tales of listening to music from the treetops." } }
   ],
   "arcs": [
     {
@@ -228,7 +228,7 @@
           "letter": {
             "from": "tho-ngam-sao",
             "title": { "vi": "Thư từ ngọn đồi ngắm sao", "en": "A letter from the stargazing hill" },
-            "body": { "vi": "Chào {name}, tớ là Thỏ Ngắm Sao, bạn thư của Dơi. Dơi kể cậu đã cùng bạn ấy mở chiếc rương khép kín bao năm. Bạn ấy viết cho tớ đúng một câu: «Hóa ra trả đồ vui hơn giữ đồ.» Tớ đọc mà cười suốt buổi tối.", "en": "Hello {name}, I'm Thỏ Ngắm Sao, Dơi's pen pal. Dơi told me you opened the chest he'd kept shut for years. He wrote me just one line: 'Turns out giving things back is more fun than keeping them.' I smiled all evening." },
+            "body": { "vi": "Chào {name}, tớ là Thỏ Ngắm Sao, bạn thư của Dơi. Dơi kể cậu đã cùng bạn ấy mở chiếc rương khép kín bao năm. Bạn ấy viết cho tớ đúng một câu: «Hóa ra trả đồ vui hơn giữ đồ.» Tớ đọc mà cười suốt buổi tối.", "en": "Hello {name}, I'm Stargazer Rabbit, Dơi's pen pal. Dơi told me you opened the chest he'd kept shut for years. He wrote me just one line: 'Turns out giving things back is more fun than keeping them.' I smiled all evening." },
             "reward": { "coins": 20, "xp": 20, "items": { "reu-xanh-co-thu": 1 } }
           }
         },
@@ -276,7 +276,7 @@
           "letter": {
             "from": "meo-hop-nhac",
             "title": { "vi": "Thư kèm giai điệu", "en": "A letter with a tune" },
-            "body": { "vi": "Tinh tang, chào {name}! Mèo là Mèo Hộp Nhạc đây. Khỉ viết thư kể hộp nhạc đã hát trên ngọn cây, Mèo mừng tới mức lên dây cót cho cả chục hộp nhạc trong phòng. Mèo gửi {name} ít xu, nhớ thay Mèo lên dây cho hộp nhạc trong rừng nhé, tinh tang!", "en": "Ting-tang, hello {name}! It's Mèo Hộp Nhạc. Khỉ wrote that the music box sang from the treetop, and I was so happy I wound every music box in my room. Here are a few coins; wind the forest's music box for me, ting-tang!" },
+            "body": { "vi": "Tinh tang, chào {name}! Mèo là Mèo Hộp Nhạc đây. Khỉ viết thư kể hộp nhạc đã hát trên ngọn cây, Mèo mừng tới mức lên dây cót cho cả chục hộp nhạc trong phòng. Mèo gửi {name} ít xu, nhớ thay Mèo lên dây cho hộp nhạc trong rừng nhé, tinh tang!", "en": "Ting-tang, hello {name}! It's Music Box Cat. Khỉ wrote that the music box sang from the treetop, and I was so happy I wound every music box in my room. Here are a few coins; wind the forest's music box for me, ting-tang!" },
             "reward": { "coins": 20, "xp": 20, "items": {} }
           }
         },

@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "The last run needs passengers",
-        "goTo": "Bác Lái Xe Hải is holding a stack of papers at the bus stop",
+        "goTo": "Uncle Hải the Bus Driver is holding a stack of papers at the bus stop",
         "lines": [
           "Next stop: planning! I've written the notices; Vàng Ươm's last run leaves on Saturday morning.",
           "I'm only afraid of one thing: a last run with empty seats would be so sad. Will you put up the notices for me, {name}?"
@@ -142,7 +142,7 @@
       ],
       "en": {
         "title": "Cô Vé whispers",
-        "goTo": "Cô Vé Tóc Xoăn waves {name} over to the ticket counter",
+        "goTo": "Curly-Haired Ticket Auntie waves {name} over to the ticket counter",
         "lines": [
           "Psst, come here! The whole square is planning a big farewell party for Vàng Ươm.",
           "Ribbons, balloons, banners, the lot. But Bác Hải mustn't find out beforehand!"
@@ -203,7 +203,7 @@
     "skillXp": { "phep-cong": 1 }
   },
   "en": {
-    "title": "Bác Lái Xe Hải's story, chapter 2: Who rides the last run?",
-    "summary": "Bác Hải wants Vàng Ươm's last run to be full. {name} posts notices round the square, maps the route, picks passenger groups that fill exactly twenty seats, and then hears Cô Vé Tóc Xoăn whisper a secret plan."
+    "title": "Uncle Hải the Bus Driver's story, chapter 2: Who rides the last run?",
+    "summary": "Bác Hải wants Vàng Ươm's last run to be full. {name} posts notices round the square, maps the route, picks passenger groups that fill exactly twenty seats, and then hears Curly-Haired Ticket Auntie whisper a secret plan."
   }
 }

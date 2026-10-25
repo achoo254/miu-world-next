@@ -65,8 +65,8 @@
         }
       ],
       "en": {
-        "title": "Mèo's invitation",
-        "goTo": "Drop by the middle of the festival yard, where Mèo is tying a bow on the big music box",
+        "title": "Cat's invitation",
+        "goTo": "Drop by the middle of the festival yard, where Cat is tying a bow on the big music box",
         "lines": [
           "Ting-a-ling! {name}, this afternoon I'm holding the very first music-box concert, right under the golden-leaf tree.",
           "Every roll is one reader's favourite song. I've pinned the invitation on the notice board; could you check it for mistakes?",
@@ -158,8 +158,8 @@
       },
       "en": {
         "title": "The invitation on the notice board",
-        "goTo": "Go to the festival notice board and read the invitation Mèo just pinned up",
-        "text": "Dear readers, you are warmly invited:\nThis Saturday afternoon, the golden-leaf music box will play under the golden-leaf tree.\nThe yard gate opens at 14:00 so you can choose your seats.\nAt 15:00 sharp, the first roll starts to turn.\nPlease bring one gold leaf each as your entry ticket.\nTing-a-ling, Mèo Hộp Nhạc",
+        "goTo": "Go to the festival notice board and read the invitation Cat just pinned up",
+        "text": "Dear readers, you are warmly invited:\nThis Saturday afternoon, the golden-leaf music box will play under the golden-leaf tree.\nThe yard gate opens at 14:00 so you can choose your seats.\nAt 15:00 sharp, the first roll starts to turn.\nPlease bring one gold leaf each as your entry ticket.\nTing-a-ling, Music Box Cat",
         "question": "According to the invitation, what time in the afternoon does the first roll start?",
         "choices": [
           "2 p.m.",
@@ -341,8 +341,8 @@
       },
       "en": {
         "title": "Enough chairs for the audience",
-        "goTo": "Go into the wooden chair store, where Mèo is pointing at two stacks of folding chairs",
-        "question": "Mèo sets 26 chairs in the front row and 18 chairs in the back row. How many chairs are there in all under the golden-leaf tree?"
+        "goTo": "Go into the wooden chair store, where Cat is pointing at two stacks of folding chairs",
+        "question": "Cat sets 26 chairs in the front row and 18 chairs in the back row. How many chairs are there in all under the golden-leaf tree?"
       }
     },
     {
@@ -373,15 +373,15 @@
       "en": {
         "title": "How shall we open?",
         "goTo": "Go to the golden-leaf tree, where every seat is taken and everyone holds a gold leaf",
-        "prompt": "Mèo stands beside the music box, his tail trembling a little: \"Ting-a-ling… it's almost time. How shall we open, {name}?\"",
+        "prompt": "Cat stands beside the music box, his tail trembling a little: \"Ting-a-ling… it's almost time. How shall we open, {name}?\"",
         "choices": [
           {
             "text": "Collect the gold-leaf tickets and scatter them on the stage",
-            "consequence": "A hundred gold leaves spread round the music box like a carpet. Mèo says it's the most beautiful stage he has ever seen."
+            "consequence": "A hundred gold leaves spread round the music box like a carpet. Cat says it's the most beautiful stage he has ever seen."
           },
           {
-            "text": "Let Mèo thank the readers first",
-            "consequence": "Mèo bows and tells how the music box once fell silent and was mended. The audience claps loudly for both Mèo and {name}."
+            "text": "Let Cat thank the readers first",
+            "consequence": "Cat bows and tells how the music box once fell silent and was mended. The audience claps loudly for both Cat and {name}."
           },
           {
             "text": "Ring the wind chime three times as a signal",
@@ -412,7 +412,7 @@
       "text": "Bài cuối khép lại, gió thổi qua tán cây, lá vàng rơi lả tả như cũng vỗ tay. Mèo tặng {name} một chiếc chuông gió ống trúc: «Tinh tang, mỗi lần nó reo là tớ nhớ buổi chiều hôm nay.»",
       "en": {
         "title": "The gold leaves applaud",
-        "text": "The last song ends, a breeze runs through the branches, and gold leaves flutter down as if they are clapping too. Mèo gives {name} a bamboo wind chime: \"Ting-a-ling, whenever it rings I'll remember this afternoon.\""
+        "text": "The last song ends, a breeze runs through the branches, and gold leaves flutter down as if they are clapping too. Cat gives {name} a bamboo wind chime: \"Ting-a-ling, whenever it rings I'll remember this afternoon.\""
       }
     },
     {
@@ -423,7 +423,7 @@
       "text": "Khán giả về rồi, Mèo vẫn ngồi đếm những tờ phiếu chưa khắc. Còn bao nhiêu bài hát đang chờ thành cuộn nhạc, và Mèo biết lần sau nên rủ ai cùng làm.",
       "en": {
         "title": "A whole stack of slips left",
-        "text": "The audience has gone home, but Mèo sits counting the slips not yet carved. So many songs are waiting to become rolls, and Mèo knows exactly who to ask to help next time."
+        "text": "The audience has gone home, but Cat sits counting the slips not yet carved. So many songs are waiting to become rolls, and Cat knows exactly who to ask to help next time."
       }
     }
   ],
@@ -439,7 +439,7 @@
     }
   },
   "en": {
-    "title": "Mèo Hộp Nhạc's story, chapter 3: A concert under the golden-leaf tree",
-    "summary": "Mèo holds a music-box concert for the readers under the golden-leaf tree. {name} reads the invitation to find the start time, finds a way to push the music-box cart across the yard, counts the chairs, chooses how to open the show and plays the whole concert with Mèo."
+    "title": "Music Box Cat's story, chapter 3: A concert under the golden-leaf tree",
+    "summary": "Cat holds a music-box concert for the readers under the golden-leaf tree. {name} reads the invitation to find the start time, finds a way to push the music-box cart across the yard, counts the chairs, chooses how to open the show and plays the whole concert with Cat."
   }
 }

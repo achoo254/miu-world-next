@@ -198,7 +198,7 @@
         "choices": [
           { "text": "Hang it at the door of the Vàng Ươm shelter", "consequence": "From then on, everyone entering the shelter taps the bell once. Ding-dong! As if the bus were still greeting its passengers." },
           { "text": "Fix it on your new bus", "consequence": "Bác Hải fixes the bell to his new bus and smiles: “New bus, old voice. Regulars will know me at once.”" },
-          { "text": "Ring it once for the whole square to hear", "consequence": "Bác Hải lifts the bell and rings it loud. The whole square answers together: “Ding-dong!” Chó Cảnh Sát Còi adds a long whistle." }
+          { "text": "Ring it once for the whole square to hear", "consequence": "Bác Hải lifts the bell and rings it loud. The whole square answers together: “Ding-dong!” Whistle Police Dog adds a long whistle." }
         ]
       }
     },
@@ -231,7 +231,7 @@
     "skillXp": { "logic": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Bác Lái Xe Hải's story, chapter 4: Last run, new stop",
+    "title": "Uncle Hải the Bus Driver's story, chapter 4: Last run, new stop",
     "summary": "On Saturday morning the whole square greets Bác Hải with a surprise farewell. {name} helps passengers board, rings the bell at every stop, finds a detour round the roadworks and reads the city's letter: Vàng Ươm isn't going anywhere."
   }
 }

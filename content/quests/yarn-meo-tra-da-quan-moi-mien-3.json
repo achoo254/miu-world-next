@@ -66,9 +66,9 @@
       ],
       "en": {
         "title": "A flavour of the stall’s own",
-        "goTo": "Go back to the lane well, where Mèo Trà Đá is tasting spoonfuls of cool tea",
+        "goTo": "Go back to the lane well, where Iced Tea Cat is tasting spoonfuls of cool tea",
         "lines": [
-          "Honoured guest {name}, Mèo has a very big dream: tea stalls everywhere, each with a flavour of its own that nobody ever forgets. Meow!",
+          "Honoured guest {name}, Cat has a very big dream: tea stalls everywhere, each with a flavour of its own that nobody ever forgets. Meow!",
           "But to go everywhere, first I need a flavour right here in our lane. I've put the ingredients out on the yard in front of the porch."
         ],
         "choices": [
@@ -112,8 +112,8 @@
       "skill": "doc-hieu",
       "en": {
         "title": "Pandan, lime and rock sugar",
-        "goTo": "Go out to the yard in front of the porch and find the three things Mèo is drying for tea",
-        "prompt": "The yard is full of leaves and fruit. Read the descriptions and pick the three ingredients Mèo needs:",
+        "goTo": "Go out to the yard in front of the porch and find the three things Cat is drying for tea",
+        "prompt": "The yard is full of leaves and fruit. Read the descriptions and pick the three ingredients Cat needs:",
         "items": [
           {
             "name": "Bunch of fragrant pandan",
@@ -208,11 +208,11 @@
         "en": {
           "right": [
             "Ice-cool, fragrant, gently sweet! Reading it makes you thirsty, meow meow.",
-            "You pick words as carefully as Mèo picks young tea leaves, {name}.",
+            "You pick words as carefully as Cat picks young tea leaves, {name}.",
             "With those three words on the board, customers will stop to read."
           ],
           "wrong": [
-            "\"Pour\" is what Mèo does with the jug; it doesn’t say what the tea is like.",
+            "\"Pour\" is what Cat does with the jug; it doesn’t say what the tea is like.",
             "Stirring is an action, done with a spoon, not something you taste.",
             "One word about sweetness is still unpicked; look again."
           ]
@@ -221,7 +221,7 @@
       "en": {
         "title": "Words for the menu board",
         "goTo": "Go out to the rock at the cave mouth, where the half-written menu board stands",
-        "prompt": "Mèo wants to describe the new tea on the menu with describing words. Pick every describing word:",
+        "prompt": "Cat wants to describe the new tea on the menu with describing words. Pick every describing word:",
         "choices": [
           "ice-cool",
           "pour",
@@ -295,7 +295,7 @@
           "right": [
             "Exactly! Slow-melting ice keeps the tea cold, and customers can gossip all afternoon.",
             "You read right down to the note, {name}: a careful stall hand indeed.",
-            "Meow! You read the card once and can brew it just like Mèo."
+            "Meow! You read the card once and can brew it just like Cat."
           ],
           "wrong": [
             "The card never says the pandan changes colour; read the note.",
@@ -306,7 +306,7 @@
       },
       "en": {
         "title": "The pandan tea recipe card",
-        "goTo": "Go over to the porch, where Mèo tucked the recipe card into a crack in the post",
+        "goTo": "Go over to the porch, where Cat tucked the recipe card into a crack in the post",
         "text": "The lane’s pandan and lime tea\nStep 1: Wash the pandan leaves and tie them in a knot.\nStep 2: Simmer the pandan with water until fragrant, then let it cool completely.\nStep 3: Add the rock sugar and stir until it dissolves.\nStep 4: Squeeze in half a lime, add ice and pour into glasses.\nNote: let the pandan water cool completely before adding ice, and the ice will not melt quickly.",
         "question": "According to the card, why must the pandan water cool completely before the ice goes in?",
         "choices": [
@@ -343,20 +343,20 @@
       ],
       "en": {
         "title": "Naming the tea",
-        "goTo": "Go to the starfruit tree at the head of the lane, where Mèo hung the bamboo tube of name slips on a branch",
-        "prompt": "The tea is ready and the whole lane smells of it. Mèo shakes the bamboo tube: \"This flavour needs a name nobody forgets. You choose, honoured guest, meow!\"",
+        "goTo": "Go to the starfruit tree at the head of the lane, where Cat hung the bamboo tube of name slips on a branch",
+        "prompt": "The tea is ready and the whole lane smells of it. Cat shakes the bamboo tube: \"This flavour needs a name nobody forgets. You choose, honoured guest, meow!\"",
         "choices": [
           {
             "text": "\"Lane Breeze Tea\", cool as the breeze at the lane’s head",
-            "consequence": "Mèo chalks the name on the board. Everyone passing reads \"Lane Breeze Tea\" aloud and smiles."
+            "consequence": "Cat chalks the name on the board. Everyone passing reads \"Lane Breeze Tea\" aloud and smiles."
           },
           {
             "text": "\"Lane Moon Tea\", pale gold like moonlight",
-            "consequence": "Mèo nods: \"Our lane has the loveliest moonlight around.\" The name alone feels cool."
+            "consequence": "Cat nods: \"Our lane has the loveliest moonlight around.\" The name alone feels cool."
           },
           {
             "text": "Let the first customer to taste it choose the name",
-            "consequence": "The old lady from the top of the lane takes a sip, closes her eyes and says: \"Homesick Tea.\" Mèo goes quiet a moment, then writes it straight on the board."
+            "consequence": "The old lady from the top of the lane takes a sip, closes her eyes and says: \"Homesick Tea.\" Cat goes quiet a moment, then writes it straight on the board."
           }
         ]
       }
@@ -385,7 +385,7 @@
       "text": "Ai uống cũng xin thêm cốc nữa. Mèo cười meo meo không ngớt, cài lên áo {name} một bông hoa chuông tím: «Huy hiệu phụ quán số một!»",
       "en": {
         "title": "The tea has a name",
-        "text": "Everyone asks for a second glass. Mèo laughs meow meow without stopping and pins a purple bellflower on {name}: \"Badge of stall hand number one!\""
+        "text": "Everyone asks for a second glass. Cat laughs meow meow without stopping and pins a purple bellflower on {name}: \"Badge of stall hand number one!\""
       }
     },
     {
@@ -396,7 +396,7 @@
       "text": "Mèo chép công thức vào sổ, đánh số một. Mèo bảo vị thứ hai sẽ pha ở một miền khác, và hẹn {name} cùng đi nếm thử.",
       "en": {
         "title": "A stall with the lane’s flavour",
-        "text": "Mèo copies the recipe into a notebook as number one. The second flavour will be brewed somewhere else, and Mèo asks {name} to come along and taste it."
+        "text": "Cat copies the recipe into a notebook as number one. The second flavour will be brewed somewhere else, and Cat asks {name} to come along and taste it."
       }
     }
   ],
@@ -412,7 +412,7 @@
     }
   },
   "en": {
-    "title": "Mèo Trà Đá's story, chapter 3: A tea nobody forgets",
-    "summary": "Mèo Trà Đá wants a tea of the stall's own that nobody forgets. {name} finds pandan, lime and rock sugar, chooses describing words for the menu board, reads the recipe card, names the new flavour and serves the whole cave."
+    "title": "Iced Tea Cat's story, chapter 3: A tea nobody forgets",
+    "summary": "Iced Tea Cat wants a tea of the stall's own that nobody forgets. {name} finds pandan, lime and rock sugar, chooses describing words for the menu board, reads the recipe card, names the new flavour and serves the whole cave."
   }
 }

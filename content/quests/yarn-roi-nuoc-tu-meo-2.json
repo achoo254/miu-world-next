@@ -49,7 +49,7 @@
       ],
       "en": {
         "title": "In search of light wood",
-        "goTo": "Stop by the craft workshop, where Nghệ Nhân Múa Rối has already sharpened his carving knife",
+        "goTo": "Stop by the craft workshop, where Puppet Master has already sharpened his carving knife",
         "lines": [
           "Tễu here begs to say: knife sharpened, chisel wiped, only the wood is missing. A heavy water puppet sinks like a stone, and all the audience sees is bubbles.",
           "The woodworker at the little village market knows which woods float and which sink. Go and ask him, and listen to every word."
@@ -75,7 +75,7 @@
       ],
       "en": {
         "title": "The woodworker talks wood",
-        "goTo": "Go to the little village market to find Bác Thợ Gỗ Sung",
+        "goTo": "Go to the little village market to find Uncle Sung the Woodworker",
         "lines": [
           "Wood for water puppets? Listen: fig wood and silk-cotton wood are light as cork. Drop them in the pond and they float right up.",
           "Ironwood and sến wood are heavy as can be; drop them in and down they go, so they're only for house pillars. Jackfruit wood makes lovely statues, but it cracks if it soaks too long. Take some pieces to the pond and try them."
@@ -123,7 +123,7 @@
       "en": {
         "title": "Which woods make water puppets?",
         "goTo": "Take the wood samples to the village pond and test them in the tub",
-        "prompt": "Going by what Bác Thợ Gỗ Sung said, choose every wood that is light, floats and suits water puppets:",
+        "prompt": "Going by what Uncle Sung the Woodworker said, choose every wood that is light, floats and suits water puppets:",
         "choices": ["Fig wood", "Ironwood", "Silk-cotton wood", "Sến wood", "Jackfruit wood"]
       }
     },
@@ -215,7 +215,7 @@
     "skillXp": { "doc-hieu": 1, "ke-chuyen": 1 }
   },
   "en": {
-    "title": "Nghệ Nhân Múa Rối's story, chapter 2: Wood as light as cork",
-    "summary": "Chú Tễu needs a new arm of really light wood. {name} goes to the little market to hear Bác Thợ Gỗ Sung talk about wood, tests which pieces float at the pond, puts the steps for making a puppet arm in order and helps the puppet master decide who will paint it."
+    "title": "Puppet Master's story, chapter 2: Wood as light as cork",
+    "summary": "Chú Tễu needs a new arm of really light wood. {name} goes to the little market to hear Uncle Sung the Woodworker talk about wood, tests which pieces float at the pond, puts the steps for making a puppet arm in order and helps the puppet master decide who will paint it."
   }
 }

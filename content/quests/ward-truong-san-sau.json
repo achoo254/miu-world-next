@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Mèo Thời Khóa Biểu",
+        "title": "Meet Timetable Cat",
         "lines": [
-          "Meow! {name} has come right at break time. I'm Mèo Thời Khóa Biểu and I remember every subject in the school.",
+          "Meow! {name} has come right at break time. I'm Timetable Cat and I remember every subject in the school.",
           "Beat me in four riddles and I'll tell you which day has art."
         ],
         "choices": [
@@ -97,7 +97,7 @@
             "prompt": "Which sentence shows how the pupil feels about the teacher?",
             "choices": [
               "Cô đến lớp lúc bảy giờ. (She arrives at seven.)",
-              "Cô giáo mặc áo dài. (The teacher wears an áo dài.)",
+              "Teacher mặc áo dài. (The teacher wears an áo dài.)",
               "Em yêu cô giáo lắm! (I love my teacher so much!)"
             ]
           },
@@ -148,7 +148,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Mèo reads the timetable: «Monday: Vietnamese, Maths, Art». How many subjects are there on Monday?",
+            "prompt": "Cat reads the timetable: «Monday: Vietnamese, Maths, Art». How many subjects are there on Monday?",
             "choices": [
               "3",
               "4",
@@ -310,8 +310,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Mèo Thời Khóa Biểu",
-        "bossName": "Mèo Thời Khóa Biểu",
+        "title": "Battle of wits with Timetable Cat",
+        "bossName": "Timetable Cat",
         "introDialogue": "The drum says it's break time, quick, a riddle before lessons start!",
         "winDialogue": "Meow… I lost! {name} studies so well, every subject must be easy."
       }
@@ -323,8 +323,8 @@
       "trigger": "auto",
       "text": "Mèo Thời Khóa Biểu tặng {name} một nhãn vở có vẽ hình mèo, viết tên vào rồi dán lên vở nhé.",
       "en": {
-        "title": "Mèo Thời Khóa Biểu's gift",
-        "text": "Mèo Thời Khóa Biểu gives {name} a book label with a cat on it: write your name and stick it on your exercise book."
+        "title": "Timetable Cat's gift",
+        "text": "Timetable Cat gives {name} a book label with a cat on it: write your name and stick it on your exercise book."
       }
     },
     {
@@ -334,7 +334,7 @@
       "trigger": "auto",
       "text": "Vườn trường có trùm canh khu giữ chiếc trống to nhất trường, {name} ra gặp thử xem.",
       "en": {
-        "title": "Goodbye, Mèo Thời Khóa Biểu",
+        "title": "Goodbye, Timetable Cat",
         "text": "In the school garden a zone guardian keeps the biggest drum in the school, {name}, go and meet it."
       }
     }
@@ -350,7 +350,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Mèo Thời Khóa Biểu",
-    "summary": "Mèo Thời Khóa Biểu guards the yard behind the classrooms and asks {name} four riddles about teachers, subjects and spelling."
+    "title": "Zone guardian: Timetable Cat",
+    "summary": "Timetable Cat guards the yard behind the classrooms and asks {name} four riddles about teachers, subjects and spelling."
   }
 }

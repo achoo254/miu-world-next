@@ -51,15 +51,15 @@
       ],
       "en": {
         "title": "A box tied with a bow",
-        "goTo": "Go to the cotton candy stall, where Voi Kẹo Bông sits beside a cardboard box tied with a bow",
+        "goTo": "Go to the cotton candy stall, where Cotton Candy Elephant sits beside a cardboard box tied with a bow",
         "lines": [
           "Perfect timing, {name}! The honey cotton candy box is done; I tied the bow three times before I liked it.",
-          "Tomorrow is Gấu's birthday. Gấu remembers everyone's birthday at home but forgets her own every year. This time I'm remembering for her!",
+          "Tomorrow is Bear's birthday. Bear remembers everyone's birthday at home but forgets her own every year. This time I'm remembering for her!",
           "I wrote a letter to go with it and left it at the market entrance, and rereading it makes me blush. Would you read it for me?"
         ],
         "choices": [
-          { "text": "Gấu will be so surprised!", "reply": "So surprised she'll forget to argue with me. Sweet enough?" },
-          { "text": "How do you send a box this big?", "reply": "I've worked it out: this afternoon Cáo Phi Công parks the mail plane on the open ground beside the market. But the letter comes first." }
+          { "text": "Bear will be so surprised!", "reply": "So surprised she'll forget to argue with me. Sweet enough?" },
+          { "text": "How do you send a box this big?", "reply": "I've worked it out: this afternoon Pilot Fox parks the mail plane on the open ground beside the market. But the letter comes first." }
         ]
       }
     },
@@ -84,8 +84,8 @@
         "answer": { "text": "Mỗi que kẹo có phần đường của Voi và phần mật của Gấu", "explanation": "Thư kể Voi trộn mật ong của Gấu vào đường của Voi, nên que kẹo có phần của cả hai bạn." },
         "en": {
           "guide": ["Find the words “belongs to both of us”.", "Read the sentence just before: what did Voi mix with what?"],
-          "hint": "One thing is Voi's, the other came from Gấu by letter.",
-          "answer": { "text": "Every stick holds some of Voi's sugar and some of Gấu's honey", "explanation": "The letter says Voi mixed Gấu's honey into her own sugar, so each stick has a share from both friends." }
+          "hint": "One thing is Voi's, the other came from Bear by letter.",
+          "answer": { "text": "Every stick holds some of Voi's sugar and some of Bear's honey", "explanation": "The letter says Voi mixed Bear's honey into her own sugar, so each stick has a share from both friends." }
         }
       },
       "feedback": {
@@ -93,15 +93,15 @@
         "wrong": ["Gấu ở xa lắm, đâu có sang quầy quấn kẹo cùng Voi được.", "Thư không nhắc gì tới cỡ que kẹo, đọc lại câu trước chữ «của cả hai» xem.", "Gần đúng rồi, {name} tìm xem Voi đã trộn hai thứ gì."],
         "en": {
           "right": ["That's it: half sugar, half honey; nobody wins and both are happy.", "You understood Voi's letter faster than she wrote it, {name}.", "Just sweet enough; Voi doesn't need to cut a single word."],
-          "wrong": ["Gấu lives far away; she couldn't come and spin at the stall.", "The letter says nothing about the size of the sticks; reread the sentence before “both of us”.", "Nearly there, {name}: find the two things Voi mixed."]
+          "wrong": ["Bear lives far away; she couldn't come and spin at the stall.", "The letter says nothing about the size of the sticks; reread the sentence before “both of us”.", "Nearly there, {name}: find the two things Voi mixed."]
         }
       },
       "en": {
         "title": "The letter in the box",
-        "goTo": "Go to the market entrance and read Voi's letter to Gấu",
-        "text": "Dear Gấu Bánh Ngọt,\nI admit I'm half beaten: cotton candy in an envelope really does shrink.\nBut I mixed your honey into my sugar and spun it into honey cotton candy. This candy isn't mine and it isn't yours; it belongs to both of us.\nHappy birthday, Gấu! The eating is all for you; I'll only sniff.\nVoi Kẹo Bông",
+        "goTo": "Go to the market entrance and read Voi's letter to Bear",
+        "text": "Dear Pastry Bear,\nI admit I'm half beaten: cotton candy in an envelope really does shrink.\nBut I mixed your honey into my sugar and spun it into honey cotton candy. This candy isn't mine and it isn't yours; it belongs to both of us.\nHappy birthday, Bear! The eating is all for you; I'll only sniff.\nCotton Candy Elephant",
         "question": "Why does Voi write that the candy “belongs to both of us”?",
-        "choices": ["Because Voi and Gấu sat and spun the candy together", "Because the candy mixes Voi's sugar with Gấu's honey", "Because each stick is twice the usual size"]
+        "choices": ["Because Voi and Bear sat and spun the candy together", "Because the candy mixes Voi's sugar with Bear's honey", "Because each stick is twice the usual size"]
       }
     },
     {
@@ -127,7 +127,7 @@
         "right": ["Ba mươi ba que! {name} viết số ấy lên nắp thùng bằng phấn hồng.", "{name} cộng có nhớ không sót que nào.", "Đủ cho Gấu ăn dần cả tháng, mà chắc Gấu lại chia cho cả nhà mất thôi."],
         "wrong": ["Đừng quên số nhớ sang hàng chục nhé, {name}.", "Hai ngăn gộp lại thì phải nhiều hơn mỗi ngăn chứ.", "Hàng đơn vị 8 với 5 được mười mấy? Bắt đầu từ đó nào."],
         "en": {
-          "right": ["Thirty-three! {name} writes the number on the lid in pink chalk.", "You added with carrying and didn't miss a single stick, {name}.", "Enough for Gấu to nibble all month, though she'll probably share them with the whole house."],
+          "right": ["Thirty-three! {name} writes the number on the lid in pink chalk.", "You added with carrying and didn't miss a single stick, {name}.", "Enough for Bear to nibble all month, though she'll probably share them with the whole house."],
           "wrong": ["Don't forget the ten you carry, {name}.", "Both layers together must be more than either layer alone.", "8 and 5 in the ones make ten-something; start from there."]
         }
       },
@@ -167,14 +167,14 @@
         "right": ["Một hũ là kim cân dừng đúng vạch mười, vừa khít.", "{name} tính sức chở chuẩn như kỹ sư sân bay.", "Máy bay không quá tải, mà Voi vẫn gửi kịp một hũ đường mật cho Gấu."],
         "wrong": ["Còn thùng kẹo ba ki-lô-gam nữa chứ, {name} quên cân nó rồi.", "Thử cộng hết lại xem, máy bay có quá mười ki-lô-gam không?", "Túi thư sáu, thùng kẹo ba, còn trống bao nhiêu nào?"],
         "en": {
-          "right": ["One jar and the scale needle stops right on ten: a perfect fit.", "You worked out the load like an airport engineer, {name}.", "The plane isn't overloaded, and Voi still sends Gấu a jar of honey sugar."],
+          "right": ["One jar and the scale needle stops right on ten: a perfect fit.", "You worked out the load like an airport engineer, {name}.", "The plane isn't overloaded, and Voi still sends Bear a jar of honey sugar."],
           "wrong": ["There's the three-kilogram candy box too, {name}; you forgot to weigh it.", "Add everything up: does the plane go over ten kilograms?", "Mailbag six, candy box three, so how much room is left?"]
         }
       },
       "en": {
         "title": "The plane's load",
-        "goTo": "Carry the candy box to the parcel counter and set it on Cáo Phi Công's scale",
-        "prompt": "Cáo's plane carries at most 10 kg. The mailbag on board weighs 6 kg and Voi's candy box weighs 3 kg. Voi wants to add some jars of honey sugar, 1 kg each. What is the most jars she can send?",
+        "goTo": "Carry the candy box to the parcel counter and set it on Pilot Fox's scale",
+        "prompt": "Fox's plane carries at most 10 kg. The mailbag on board weighs 6 kg and Voi's candy box weighs 3 kg. Voi wants to add some jars of honey sugar, 1 kg each. What is the most jars she can send?",
         "choices": ["1 jar", "2 jars", "4 jars"]
       }
     },
@@ -189,7 +189,7 @@
       "goal": 6,
       "en": {
         "title": "Practice drops",
-        "prompt": "Cáo Phi Công lands on the open ground beside the market and lets {name} ride in the co-pilot's seat for a practice loop. Land six test parcels in the yellow ring and Cáo will happily carry the real candy box!"
+        "prompt": "Pilot Fox lands on the open ground beside the market and lets {name} ride in the co-pilot's seat for a practice loop. Land six test parcels in the yellow ring and Fox will happily carry the real candy box!"
       }
     },
     {
@@ -207,8 +207,8 @@
       ],
       "en": {
         "title": "Wind before take-off",
-        "goTo": "Go to the open ground beside the market, where Cáo's mail plane is waiting",
-        "prompt": "The moment the engine starts, the propeller's wind blows Voi's ears inside out. Voi steps back, then steps forward again: “I… I want to put the box on the plane myself.” Cáo turns to {name}: “What do you think?”",
+        "goTo": "Go to the open ground beside the market, where Fox's mail plane is waiting",
+        "prompt": "The moment the engine starts, the propeller's wind blows Voi's ears inside out. Voi steps back, then steps forward again: “I… I want to put the box on the plane myself.” Fox turns to {name}: “What do you think?”",
         "choices": [
           { "text": "Invite Voi for a trial loop round the square to get used to the wind", "consequence": "Voi squeezes her eyes shut at take-off and opens them to snow-white clouds right outside the window. “Cotton candy nobody's eaten!” Back on the ground, she lifts the box onto the plane herself, without a tremble." },
           { "text": "Tie one more bow round the box with Voi, then load it", "consequence": "Voi ties another tight pink bow while {name} holds one end of the ribbon. The wind still blows, but Voi is so busy with the bow she forgets to be scared." },
@@ -224,7 +224,7 @@
       "text": "Máy bay của Cáo vút lên, bay về phía nhà của {name}, để lại một vệt khói trắng như sợi kẹo bông. Voi quấn tặng {name} que kẹo bông mật ong cuối cùng của mẻ: «Phần của người đứng cạnh Voi suốt chuyện này.»",
       "en": {
         "title": "The candy takes off",
-        "text": "Cáo's plane zooms up towards {name}'s home, leaving a white trail like a thread of cotton candy. Voi spins {name} the last stick of honey cotton candy from the batch: “For the one who stood by me through all of this.”"
+        "text": "Fox's plane zooms up towards {name}'s home, leaving a white trail like a thread of cotton candy. Voi spins {name} the last stick of honey cotton candy from the batch: “For the one who stood by me through all of this.”"
       }
     },
     {
@@ -234,8 +234,8 @@
       "trigger": "auto",
       "text": "Sáng mai Gấu sẽ mở thùng kẹo ở Nhà của {name}. {name} về nhà xem Gấu nếm thử nhé! Chắc chắn Gấu sẽ viết một lá thư dài ba trang, có điều lần này là ba trang cảm ơn.",
       "en": {
-        "title": "Home to watch Gấu open it",
-        "text": "Tomorrow morning Gấu opens the candy box at {name}'s home. Go home and watch her take the first bite, {name}! She's sure to write a three-page letter back, only this time it'll be three pages of thank-yous."
+        "title": "Home to watch Bear open it",
+        "text": "Tomorrow morning Bear opens the candy box at {name}'s home. Go home and watch her take the first bite, {name}! She's sure to write a three-page letter back, only this time it'll be three pages of thank-yous."
       }
     }
   ],
@@ -245,7 +245,7 @@
     "skillXp": { "doc-hieu": 1, "phep-cong": 1, "logic": 1 }
   },
   "en": {
-    "title": "Voi Kẹo Bông's story, chapter 3: The candy box flies to {name}'s home",
-    "summary": "The honey cotton candy box is ready. {name} reads the letter Voi wrote for Gấu, counts the sticks in the box, works out the plane's load on the parcel scale, practises dropping parcels on target and helps Voi past the wind before take-off."
+    "title": "Cotton Candy Elephant's story, chapter 3: The candy box flies to {name}'s home",
+    "summary": "The honey cotton candy box is ready. {name} reads the letter Voi wrote for Bear, counts the sticks in the box, works out the plane's load on the parcel scale, practises dropping parcels on target and helps Voi past the wind before take-off."
   }
 }

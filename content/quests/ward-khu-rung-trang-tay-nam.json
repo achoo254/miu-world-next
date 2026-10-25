@@ -48,7 +48,7 @@
         }
       ],
       "en": {
-        "title": "Meet Gấu Túi Diều Gió",
+        "title": "Meet Kite Koala",
         "lines": [
           "Can you hear it, {name}? My kite hums whoosh-whoosh over this glade all day long.",
           "Whoever answers my four riddles gets to hold the kite string for a while!"
@@ -310,8 +310,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Gấu Túi Diều Gió",
-        "bossName": "Gấu Túi Diều Gió",
+        "title": "Battle of wits with Kite Koala",
+        "bossName": "Kite Koala",
         "introDialogue": "The wind is up and the kite is tight: here comes the first riddle!",
         "winDialogue": "My kite has landed! {name} is brilliant, here, take the string."
       }
@@ -323,8 +323,8 @@
       "trigger": "auto",
       "text": "Gấu Túi Diều Gió buộc cho {name} một chiếc nơ đuôi diều màu xanh, mai lại bay cùng nhau nhé.",
       "en": {
-        "title": "Gấu Túi Diều Gió's gift",
-        "text": "Gấu Túi Diều Gió ties a blue kite-tail bow for {name}. Let's fly again tomorrow!"
+        "title": "Kite Koala's gift",
+        "text": "Kite Koala ties a blue kite-tail bow for {name}. Let's fly again tomorrow!"
       }
     },
     {
@@ -334,7 +334,7 @@
       "trigger": "auto",
       "text": "Ở trảng rừng phía đông nam, một trùm canh khu đang chuẩn bị trò rồng rắn đố chữ.",
       "en": {
-        "title": "Goodbye, Gấu Túi Diều Gió",
+        "title": "Goodbye, Kite Koala",
         "text": "In the south-east glade a zone guardian is setting up a dragon-and-snake word game."
       }
     }
@@ -348,7 +348,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Gấu Túi Diều Gió",
-    "summary": "Gấu Túi Diều Gió guards the south-west glade and challenges {name} to four riddles about sounds, toys and spelling."
+    "title": "Zone guardian: Kite Koala",
+    "summary": "Kite Koala guards the south-west glade and challenges {name} to four riddles about sounds, toys and spelling."
   }
 }

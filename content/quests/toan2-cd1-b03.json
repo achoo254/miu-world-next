@@ -68,7 +68,7 @@
       ],
       "en": {
         "title": "Wind on the notice board",
-        "goTo": "Go to the schoolyard notice board, where Mèo Mun is holding a stack of name signs",
+        "goTo": "Go to the schoolyard notice board, where Black Cat is holding a stack of name signs",
         "lines": [
           "Hello {name}. I'm perfectly calm, see... it's just that the wind blew every sign off the notice board.",
           "Tổng! Tổng! Số hạng! Hiệu! I'm reading them out loud to help, but I have no idea where any of them go!",
@@ -77,11 +77,11 @@
         "choices": [
           {
             "text": "I'll pick up the signs right away!",
-            "reply": "Mèo Mun strokes her whiskers: Great, the three signs only blew around here."
+            "reply": "Black Cat strokes her whiskers: Great, the three signs only blew around here."
           },
           {
-            "text": "Quieter, please, Khỉ Tí Toáy!",
-            "reply": "Khỉ Tí Toáy whispers: Tổng... tổng... is this better?"
+            "text": "Quieter, please, Tiny Monkey!",
+            "reply": "Tiny Monkey whispers: Tổng... tổng... is this better?"
           }
         ]
       }
@@ -132,7 +132,7 @@
         "choices": [
           {
             "text": "Let's hang up the \"Tổng\" sign!",
-            "reply": "Mèo Mun nods: Let's start with the table of addends."
+            "reply": "Black Cat nods: Let's start with the table of addends."
           }
         ]
       }
@@ -435,7 +435,7 @@
       "choices": [],
       "en": {
         "title": "The three names in a subtraction",
-        "goTo": "Bring the seashells back to the notice board, where Mèo Mun is waiting to hang the subtraction signs",
+        "goTo": "Bring the seashells back to the notice board, where Black Cat is waiting to hang the subtraction signs",
         "lines": [
           "Subtraction has its own name signs too. In 10 – 3 = 7: 10 is the minuend (số bị trừ), 3 is the subtrahend (số trừ), and 7 is the difference (hiệu).",
           "\"Số bị trừ\" means \"the one being taken from\"... poor thing! Who's taking from it?",
@@ -943,21 +943,21 @@
         }
       ],
       "en": {
-        "title": "Khỉ Tí Toáy has a challenge",
-        "goTo": "Go to the corner of the yard with the wooden train, where Khỉ Tí Toáy is perched on a carriage roof",
+        "title": "Tiny Monkey has a challenge",
+        "goTo": "Go to the corner of the yard with the wooden train, where Tiny Monkey is perched on a carriage roof",
         "lines": [
-          "Now that the notice board's done, come play with me! I've got two trains, and Koala Bơ is keeping the star garland and the secret number card box by the flowerbed.",
-          "Once Khỉ Tí Toáy starts setting puzzles, he goes on till nightfall. {name}, where do you want to start?",
+          "Now that the notice board's done, come play with me! I've got two trains, and Butter Koala is keeping the star garland and the secret number card box by the flowerbed.",
+          "Once Tiny Monkey starts setting puzzles, he goes on till nightfall. {name}, where do you want to start?",
           "Pick one, pick one! I'm going to quiz you on all of them anyway!"
         ],
         "choices": [
           {
             "text": "Write numbers as sums first",
-            "reply": "Khỉ Tí Toáy: Splitting numbers? I've got four ready for you!"
+            "reply": "Tiny Monkey: Splitting numbers? I've got four ready for you!"
           },
           {
             "text": "Count the star garland first",
-            "reply": "Khỉ Tí Toáy: Hold on, star counting comes after the number splitting, I'm the game master here!"
+            "reply": "Tiny Monkey: Hold on, star counting comes after the number splitting, I'm the game master here!"
           }
         ]
       }
@@ -1434,7 +1434,7 @@
       "text": "Bảng tin treo đủ biển \"Số hạng\", \"Tổng\", \"Số bị trừ\", \"Số trừ\", \"Hiệu\". Mèo Mun trao cho {name} huy hiệu \"Người gọi tên phép tính\", còn Khỉ Tí Toáy hứa từ nay đọc nhỏ hơn… một chút.",
       "en": {
         "title": "Notice board badge",
-        "text": "The notice board now has all its signs: \"Số hạng\", \"Tổng\", \"Số bị trừ\", \"Số trừ\", \"Hiệu\". Mèo Mun gives {name} the \"Sum Namer\" badge, and Khỉ Tí Toáy promises to read a bit more quietly from now on... a tiny bit."
+        "text": "The notice board now has all its signs: \"Số hạng\", \"Tổng\", \"Số bị trừ\", \"Số trừ\", \"Hiệu\". Black Cat gives {name} the \"Sum Namer\" badge, and Tiny Monkey promises to read a bit more quietly from now on... a tiny bit."
       }
     },
     {
@@ -1445,7 +1445,7 @@
       "text": "Ngoài đường chạy, trọng tài Hươu Lêu Nghêu thổi còi toe toe: hai đội nhặt bóng vừa thi xong mà chẳng ai biết đội nào hơn bao nhiêu quả!",
       "en": {
         "title": "A whistle on the running track",
-        "text": "Out on the running track, referee Hươu Lêu Nghêu toots his whistle: two ball-collecting teams just finished, and nobody knows which team got more, or by how many!"
+        "text": "Out on the running track, referee Lanky Giraffe toots his whistle: two ball-collecting teams just finished, and nobody knows which team got more, or by how many!"
       }
     }
   ],

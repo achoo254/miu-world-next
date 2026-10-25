@@ -62,7 +62,7 @@
       ],
       "en": {
         "title": "The cards are here",
-        "goTo": "Head back behind the kitchen, where Mèo Bếp Trưởng is minding three pots at once",
+        "goTo": "Head back behind the kitchen, where Head Chef Cat is minding three pots at once",
         "lines": [
           "The postman rang three times this morning. Three rings, three cards. I'm minding the pots, so collect them for me, {name}.",
           "Every card names the dish that guest misses most. Read carefully. One wrong word is one ruined dish."
@@ -134,7 +134,7 @@
           "hint": "Every meal has a bowl of…",
           "answer": {
             "text": "Chú Ba misses fish and tamarind soup with sesbania",
-            "explanation": "The card says every meal there has fish soup with tamarind and sesbania flowers, and asks Mèo to cook it."
+            "explanation": "The card says every meal there has fish soup with tamarind and sesbania flowers, and asks Cat to cook it."
           }
         }
       },
@@ -151,21 +151,21 @@
         ],
         "en": {
           "right": [
-            "Fish and tamarind soup! Mèo writes it down at once and underlines it twice.",
+            "Fish and tamarind soup! Cat writes it down at once and underlines it twice.",
             "You read slowly and surely, {name}, and didn't miss a single sesbania flower.",
-            "Exactly what Chú Ba craves. Mèo can already hear the oars."
+            "Exactly what Chú Ba craves. Cat can already hear the oars."
           ],
           "wrong": [
             "Braised fish is lovely, but the card never mentions a clay pot.",
-            "Doughnuts are what Mèo sends him, not what he misses. Read the middle sentence again.",
+            "Doughnuts are what Cat sends him, not what he misses. Read the middle sentence again.",
             "Find \"bowl of\" in the card and read on to see what goes in it."
           ]
         }
       },
       "en": {
-        "title": "Chú Lái Đò Ba's card",
+        "title": "Uncle Ba the Ferryman's card",
         "goTo": "Take the cards into the living room and sit down to read them properly",
-        "text": "Dear Mèo Bếp Trưởng,\nOn Sunday I'll row up early with a basket of fresh fish. At my river landing, every meal has a bowl of fish soup cooked with tamarind and sesbania flowers. Cook that, and I'll tell the whole table river stories.\nChú Ba",
+        "text": "Dear Head Chef Cat,\nOn Sunday I'll row up early with a basket of fresh fish. At my river landing, every meal has a bowl of fish soup cooked with tamarind and sesbania flowers. Cook that, and I'll tell the whole table river stories.\nChú Ba",
         "question": "Which dish does Chú Ba miss most?",
         "choices": [
           "Fish soup with tamarind and sesbania flowers",
@@ -229,9 +229,9 @@
         "en": {
           "guide": [
             "An action word tells what the cook is doing.",
-            "Try putting \"Mèo is…\" in front and see whether it makes an action."
+            "Try putting \"Cat is…\" in front and see whether it makes an action."
           ],
-          "hint": "Mèo is boiling, Mèo is… pot? Sounds odd, doesn't it?",
+          "hint": "Cat is boiling, Cat is… pot? Sounds odd, doesn't it?",
           "answer": {
             "text": "boil, stir-fry, braise",
             "explanation": "Boil, stir-fry and braise are things a cook does. Pot and chopsticks are things; fragrant describes the food."
@@ -251,12 +251,12 @@
         ],
         "en": {
           "right": [
-            "Three jobs, three words, nothing extra. Mèo taps his chopsticks three times in praise.",
+            "Three jobs, three words, nothing extra. Cat taps his chopsticks three times in praise.",
             "You separate actions from things as neatly as separating egg whites from yolks, {name}.",
             "The menu book is tidy now. A true kitchen lieutenant!"
           ],
           "wrong": [
-            "Does \"Mèo is pot-ing\" sound right? Leave that word out.",
+            "Does \"Cat is pot-ing\" sound right? Leave that word out.",
             "Fragrant tells how food is, not what anyone does.",
             "One kitchen job is still missing; read the whole row again."
           ]
@@ -264,8 +264,8 @@
       },
       "en": {
         "title": "Which words are kitchen jobs?",
-        "goTo": "Go to the kitchen and dining table, where Mèo keeps his menu book by the rice pot",
-        "prompt": "Mèo copies the dishes into his menu book and scribbles a few words in between. Pick the words for cooking actions:",
+        "goTo": "Go to the kitchen and dining table, where Cat keeps his menu book by the rice pot",
+        "prompt": "Cat copies the dishes into his menu book and scribbles a few words in between. Pick the words for cooking actions:",
         "choices": [
           "boil",
           "pot",
@@ -287,7 +287,7 @@
       "goal": 12,
       "en": {
         "title": "Who ordered what?",
-        "prompt": "Mèo reads out each guest's dish; remember carefully and serve the right one. Score twelve points!"
+        "prompt": "Cat reads out each guest's dish; remember carefully and serve the right one. Score twelve points!"
       }
     },
     {
@@ -318,19 +318,19 @@
       "en": {
         "title": "Seating the guests",
         "goTo": "Go to the living room and count the guest chairs again",
-        "prompt": "Mèo counts the chairs, counts the guests and frowns: \"Two chairs short. How do we handle it?\"",
+        "prompt": "Cat counts the chairs, counts the guests and frowns: \"Two chairs short. How do we handle it?\"",
         "choices": [
           {
             "text": "Lay out mats and sit around the tray the old way",
-            "consequence": "Mèo nods: \"On mats everyone sits level. Good.\" The flowered mats come out of the storeroom."
+            "consequence": "Cat nods: \"On mats everyone sits level. Good.\" The flowered mats come out of the storeroom."
           },
           {
             "text": "Borrow two chairs from the study corner",
-            "consequence": "Two small chairs are carried down the stairs. Mèo sticks a \"guest chair\" label on each back."
+            "consequence": "Two small chairs are carried down the stairs. Cat sticks a \"guest chair\" label on each back."
           },
           {
             "text": "Our family eats second; the guests eat first",
-            "consequence": "Mèo folds his arms: \"Hosts give way to guests. Proper manners.\" He still secretly saves {name} a chicken leg."
+            "consequence": "Cat folds his arms: \"Hosts give way to guests. Proper manners.\" He still secretly saves {name} a chicken leg."
           }
         ]
       }
@@ -343,7 +343,7 @@
       "text": "Mèo xé một trang sổ, viết tên {name} vào ô «phó bếp» rồi dán lên cửa bếp.",
       "en": {
         "title": "The menu book is full",
-        "text": "Mèo tears out a page, writes {name} in the \"assistant cook\" box and sticks it on the kitchen door."
+        "text": "Cat tears out a page, writes {name} in the \"assistant cook\" box and sticks it on the kitchen door."
       }
     },
     {
@@ -354,7 +354,7 @@
       "text": "Chiếc radio cũ trên nóc tủ bếp bỗng im bặt giữa buổi nấu. Mèo bảo không có nó thì tay Mèo cứ lóng ngóng. Mai {name} giúp Mèo xem nó bị làm sao.",
       "en": {
         "title": "The silent radio",
-        "text": "The old radio on top of the kitchen cupboard went silent in the middle of cooking. Mèo says without it his paws feel clumsy. Tomorrow {name} will help find out what is wrong."
+        "text": "The old radio on top of the kitchen cupboard went silent in the middle of cooking. Cat says without it his paws feel clumsy. Tomorrow {name} will help find out what is wrong."
       }
     }
   ],
@@ -367,7 +367,7 @@
     }
   },
   "en": {
-    "title": "Mèo Bếp Trưởng's story, chapter 2: The replies",
-    "summary": "The guests' replies have arrived. {name} gathers them at the gate, reads Chú Lái Đò Ba's card, finds the cooking words, remembers each guest's order and decides how to seat everyone."
+    "title": "Head Chef Cat's story, chapter 2: The replies",
+    "summary": "The guests' replies have arrived. {name} gathers them at the gate, reads Uncle Ba the Ferryman's card, finds the cooking words, remembers each guest's order and decides how to seat everyone."
   }
 }

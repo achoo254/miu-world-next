@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "Pages flying like butterflies",
-        "goTo": "Go to Mẩy's lane (Ngõ nhà Mẩy), where Bà Năm Kể Chuyện sits watching the wind",
+        "goTo": "Go to Mẩy's lane (Mẩy's Lane), where Grandma Năm the Storyteller sits watching the wind",
         "lines": [
           "Once upon a time… not so long ago, mind, just this morning, a gust of wind snatched my storybook away.",
           "The pages flew off like butterflies and landed all over the lane. My legs are weak; three steps of chasing and I'm out of breath.",
@@ -70,7 +70,7 @@
       "targets": ["st-so-chuyen-ba-nam-trang-sung", "st-so-chuyen-ba-nam-trang-cuc", "st-so-chuyen-ba-nam-trang-tre"],
       "en": {
         "title": "Three stray pages",
-        "goTo": "Run to the fig tree (Gốc sung) and pick up the pages the wind blew away"
+        "goTo": "Run to the fig tree (Fig Tree Base) and pick up the pages the wind blew away"
       }
     },
     {
@@ -163,7 +163,7 @@
       ],
       "en": {
         "title": "A calf with a taste for words",
-        "goTo": "Follow the munching sound to the cabbage patch at the corner of the garden (Luống cải)",
+        "goTo": "Follow the munching sound to the cabbage patch at the corner of the garden (Mustard Bed)",
         "prompt": "The notebook's last page is in a calf's mouth, its tail swishing: «This paper smells of pencil, tastier than grass!» How will {name} get the page back?",
         "choices": [
           { "text": "Swap it for a bunch of tender cabbage", "consequence": "The calf eyes the cabbage, then the page: «Cabbage is tasty, but riddles are tastier. Riddle me first!»" },
@@ -243,7 +243,7 @@
       },
       "en": {
         "title": "The nibbled page",
-        "goTo": "Take the nibbled page to the rattan chair by the lane (Ghế mây bên ngõ) and read it with her",
+        "goTo": "Take the nibbled page to the rattan chair by the lane (Rattan Chair by the Lane) and read it with her",
         "text": "The Leaf Boat That Carried the Moon\nOn the night of the full moon, a girl called Sen set a tropical almond leaf on the pond. The round moon's reflection fell right into the leaf, and so the leaf became a boat carrying the moon. The boat drifted under the bamboo bridge, past the water lilies, past… (the calf nibbled this corner away).",
         "question": "On the page, what does the almond leaf turn into?",
         "choices": ["A boat carrying the moon", "An umbrella for Sen", "A nest for sparrows"]
@@ -257,7 +257,7 @@
       "text": "Cuốn sổ bìa xanh lại dày dặn như cũ. Bà Năm Kể Chuyện xoa đầu {name}, bảo từ nay trong sổ có thêm một nhân vật mới: «đứa cháu đuổi kịp gió».",
       "en": {
         "title": "Every page back home",
-        "text": "The blue notebook is plump and whole again. Bà Năm Kể Chuyện pats {name} on the head and says the book has a new character now: «the child who outran the wind»."
+        "text": "The blue notebook is plump and whole again. Grandma Năm the Storyteller pats {name} on the head and says the book has a new character now: «the child who outran the wind»."
       }
     },
     {
@@ -278,7 +278,7 @@
     "skillXp": { "ke-chuyen": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Bà Năm Kể Chuyện's story, chapter 1: The wind steals a storybook",
+    "title": "Grandma Năm the Storyteller's story, chapter 1: The wind steals a storybook",
     "summary": "A gust of wind scatters Bà Năm's blue notebook of stories. {name} gathers the pages from all over the lane, puts a story back in order, wins the last page back from a paper-loving calf and reads the tale Bà Năm loves most."
   }
 }

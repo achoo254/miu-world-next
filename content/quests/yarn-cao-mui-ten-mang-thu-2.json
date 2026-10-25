@@ -64,8 +64,8 @@
         }
       ],
       "en": {
-        "title": "Cáo's dream",
-        "goTo": "Go back to the training ground, where Cáo Cung Thủ sits on a pile of old targets gazing into the distance",
+        "title": "Fox's dream",
+        "goTo": "Go back to the training ground, where Archer Fox sits on a pile of old targets gazing into the distance",
         "lines": [
           "{name}, I'll tell you something. Haven't told anyone. One day I want to shoot an arrow carrying a letter all the way to the far shore.",
           "The sea is too far for now. Today we practise: tie a letter to an arrow, shoot it over the moat. Over the moat is step one."
@@ -112,11 +112,11 @@
       "en": {
         "title": "Letter-tying kit",
         "goTo": "Go into the archers' tent set up before the castle gate, where the letter-tying things are muddled together",
-        "prompt": "The archers' tent is a mess. Read how Cáo describes each thing and find it:",
+        "prompt": "The archers' tent is a mess. Read how Fox describes each thing and find it:",
         "items": [
           {
             "name": "Sheet of letter paper",
-            "clue": "Thin enough to roll up, with one edge a little curled from Cáo handling it."
+            "clue": "Thin enough to roll up, with one edge a little curled from Fox handling it."
           },
           {
             "name": "Spool of hemp thread",
@@ -202,7 +202,7 @@
         ],
         "en": {
           "right": [
-            "Three that fit! Cáo winds the white one round the shaft, neat as a ring.",
+            "Three that fit! Fox winds the white one round the shaft, neat as a ring.",
             "{name} didn't let the 33 cm one sneak in; eyes as sharp as an archer's.",
             "Whoosh! Short, tidy thread means a straight arrow. Spot on."
           ],
@@ -215,7 +215,7 @@
       },
       "en": {
         "title": "Thread of the right size",
-        "goTo": "Go to the horse-hitching tree, where Cáo has laid some threads on a wooden bench",
+        "goTo": "Go to the horse-hitching tree, where Fox has laid some threads on a wooden bench",
         "prompt": "The thread that ties the letter to the shaft must be shorter than 3 dm; too long and it flaps about and pulls the arrow off course. Pick every thread that will do:",
         "choices": [
           "Red thread: 25 cm",
@@ -287,9 +287,9 @@
         ],
         "en": {
           "right": [
-            "That's his trick! Cáo licks a finger, holds it up, and gives one firm nod.",
+            "That's his trick! Fox licks a finger, holds it up, and gives one firm nod.",
             "{name} read the letter as carefully as he reads the waves.",
-            "Just a little to the left. Cáo writes it on his palm so he won't forget."
+            "Just a little to the left. Fox writes it on his palm so he won't forget."
           ],
           "wrong": [
             "He wrote \"don't aim too far off\", {name}; read the line near the end again.",
@@ -300,9 +300,9 @@
       },
       "en": {
         "title": "How to read the wind",
-        "goTo": "Climb up the wind-watch hut, where an old letter from Bác Quăng Lưới Biển is tucked on a post",
-        "text": "Dear Cáo,\nOut at sea I don't look at the sky; I look at the flag on the mast.\nWhichever way the flag flies, that is the way the wind is going.\nWherever the wind pushes a net, it pushes an arrow too.\nSo when the wind blows from the left to the right, aim a little to the left.\nDon't aim too far off. A light wind needs only a light correction.\nBác Quăng Lưới Biển",
-        "question": "According to the letter, how should Cáo aim when the wind blows from left to right?",
+        "goTo": "Climb up the wind-watch hut, where an old letter from Net-Casting Uncle is tucked on a post",
+        "text": "Dear Fox,\nOut at sea I don't look at the sky; I look at the flag on the mast.\nWhichever way the flag flies, that is the way the wind is going.\nWherever the wind pushes a net, it pushes an arrow too.\nSo when the wind blows from the left to the right, aim a little to the left.\nDon't aim too far off. A light wind needs only a light correction.\nNet-Casting Uncle",
+        "question": "According to the letter, how should Fox aim when the wind blows from left to right?",
         "choices": [
           "Aim a little to the left",
           "Aim far over to the right",
@@ -337,20 +337,20 @@
       ],
       "en": {
         "title": "What goes in the letter?",
-        "goTo": "Go to the east edge of the moat, where Cáo has driven a marker post at the spot he'll shoot from",
-        "prompt": "Paper ready, thread chosen. Cáo holds the pen and scratches an ear: \"Keep it short; an arrow can't carry a long letter. What shall I write, {name}?\"",
+        "goTo": "Go to the east edge of the moat, where Fox has driven a marker post at the spot he'll shoot from",
+        "prompt": "Paper ready, thread chosen. Fox holds the pen and scratches an ear: \"Keep it short; an arrow can't carry a long letter. What shall I write, {name}?\"",
         "choices": [
           {
-            "text": "A greeting for Bác Quăng Lưới Biển",
-            "consequence": "Cáo writes: \"Hello, uncle. I'm reading the wind your way now.\" Then he reads it aloud three times to learn it by heart."
+            "text": "A greeting for Net-Casting Uncle",
+            "consequence": "Fox writes: \"Hello, uncle. I'm reading the wind your way now.\" Then he reads it aloud three times to learn it by heart."
           },
           {
             "text": "Draw a target with an arrow right in the middle",
-            "consequence": "Cáo draws a circle and puts one dot in the centre. \"No words needed. He'll know at a glance.\""
+            "consequence": "Fox draws a circle and puts one dot in the centre. \"No words needed. He'll know at a glance.\""
           },
           {
             "text": "Challenge him to a wind-reading contest: arrow against net",
-            "consequence": "Cáo writes: \"Fancy a wind-reading contest, uncle? I'll guess with arrows, you guess with nets.\" Then he giggles to himself."
+            "consequence": "Fox writes: \"Fancy a wind-reading contest, uncle? I'll guess with arrows, you guess with nets.\" Then he giggles to himself."
           }
         ]
       }
@@ -366,7 +366,7 @@
       "goal": 60,
       "en": {
         "title": "A kite to test the wind",
-        "prompt": "Before shooting the letter-arrow, Cáo wants to know how strong the wind over the moat is. Fly the kite high; sixty points and we'll know which way the wind is going!"
+        "prompt": "Before shooting the letter-arrow, Fox wants to know how strong the wind over the moat is. Fly the kite high; sixty points and we'll know which way the wind is going!"
       }
     },
     {
@@ -377,7 +377,7 @@
       "text": "Cáo liếm ngón tay, ngắm lệch trái một chút, thở ra rồi buông. Vút! Mũi tên mang thư bay vèo qua mặt hào, cắm phập vào bãi cỏ bờ bên kia. Cáo nhảy cẫng lên, ôm chầm lấy {name}.",
       "en": {
         "title": "The letter flies over the moat",
-        "text": "Cáo licks a finger, aims a touch to the left, breathes out and lets go. Whoosh! The letter-arrow zips across the moat and thuds into the grass on the far bank. Cáo leaps in the air and throws his arms round {name}."
+        "text": "Fox licks a finger, aims a touch to the left, breathes out and lets go. Whoosh! The letter-arrow zips across the moat and thuds into the grass on the far bank. Fox leaps in the air and throws his arms round {name}."
       }
     },
     {
@@ -401,7 +401,7 @@
     }
   },
   "en": {
-    "title": "Cáo Cung Thủ's story, chapter 2: The letter-arrow",
-    "summary": "Cáo shares his dream of shooting an arrow with a letter all the way to the far shore, and today he practises the first step: a letter over the moat. {name} gathers the letter-tying kit, picks threads of the right length, reads Bác Quăng Lưới Biển's tip for reading the wind and decides what goes in the very first letter."
+    "title": "Archer Fox's story, chapter 2: The letter-arrow",
+    "summary": "Fox shares his dream of shooting an arrow with a letter all the way to the far shore, and today he practises the first step: a letter over the moat. {name} gathers the letter-tying kit, picks threads of the right length, reads Net-Casting Uncle's tip for reading the wind and decides what goes in the very first letter."
   }
 }

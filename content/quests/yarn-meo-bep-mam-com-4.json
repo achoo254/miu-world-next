@@ -69,7 +69,7 @@
       ],
       "en": {
         "title": "The onion enemy",
-        "goTo": "Go behind the kitchen, where Mèo Bếp Trưởng is staring at a basket of onions",
+        "goTo": "Go behind the kitchen, where Head Chef Cat is staring at a basket of onions",
         "lines": [
           "{name}. Come closer. Speak softly. This is a military secret of the kitchen.",
           "I am afraid of onions. One onion and my tears pour like a rain shower; I can't even see the knife.",
@@ -78,10 +78,10 @@
         "choices": [
           {
             "text": "Your secret is safe, and I'll find the goggles now!",
-            "reply": "Thank you. Don't tell Gấu. She'd laugh for a week."
+            "reply": "Thank you. Don't tell Bear. She'd laugh for a week."
           },
           {
-            "text": "Onions make everybody's eyes sting, Mèo.",
+            "text": "Onions make everybody's eyes sting, Cat.",
             "reply": "Yes. But a general afraid of an onion… never mind, find the goggles first."
           }
         ]
@@ -117,7 +117,7 @@
       "en": {
         "title": "Finding the goggles and gear",
         "goTo": "Go up to the bedroom to find the goggles, the face cloth and the chef's hat",
-        "prompt": "Cún Đốm tidied a little too eagerly and put Mèo's things away in the bedroom. Read each description and find them:",
+        "prompt": "Spotted Pup tidied a little too eagerly and put Cat's things away in the bedroom. Read each description and find them:",
         "items": [
           {
             "name": "The swimming goggles",
@@ -180,21 +180,21 @@
         ],
         "en": {
           "right": [
-            "Twenty-five. Mèo takes a long breath and straightens his goggles.",
+            "Twenty-five. Cat takes a long breath and straightens his goggles.",
             "Subtraction with borrowing, and you did it as cleanly as a thin slice, {name}.",
             "Right! More than half a basket left, but with a lieutenant there's nothing to fear."
           ],
           "wrong": [
             "The ones won't subtract on their own; remember to borrow a ten.",
             "Try counting back seventeen steps from 42.",
-            "Mèo wipes his goggles and waits for you to try again. How many really remain?"
+            "Cat wipes his goggles and waits for you to try again. How many really remain?"
           ]
         }
       },
       "en": {
         "title": "How many onions are left?",
         "goTo": "Bring the goggles down to the kitchen and dining table, where the onions are waiting",
-        "question": "The basket holds 42 onions. Mèo chopped 17 before the tears made him stop. How many are still to be chopped?"
+        "question": "The basket holds 42 onions. Cat chopped 17 before the tears made him stop. How many are still to be chopped?"
       }
     },
     {
@@ -225,19 +225,19 @@
       "en": {
         "title": "How to cut onions without tears?",
         "goTo": "Go out to the jetty by the pond, where there is a basin of cool water",
-        "prompt": "There is a basin of cool water by the jetty. Mèo asks quietly: \"Twenty-five to go. How do I keep from crying?\"",
+        "prompt": "There is a basin of cool water by the jetty. Cat asks quietly: \"Twenty-five to go. How do I keep from crying?\"",
         "choices": [
           {
             "text": "Soak the onions in cold water for a while before cutting",
-            "consequence": "Soaked onions sting much less. Mèo chops straight through, goggles only a little misty."
+            "consequence": "Soaked onions sting much less. Cat chops straight through, goggles only a little misty."
           },
           {
-            "text": "{name} cuts, Mèo does the frying",
-            "consequence": "You swap jobs. Mèo stirs the pan from a safe distance, now and then calling \"Stinging?\""
+            "text": "{name} cuts, Cat does the frying",
+            "consequence": "You swap jobs. Cat stirs the pan from a safe distance, now and then calling \"Stinging?\""
           },
           {
             "text": "Sharpen the knife and chop fast near a fan",
-            "consequence": "A sharp knife and a breeze blow the sting away. Mèo sighs with relief: \"With a trick, no fear.\""
+            "consequence": "A sharp knife and a breeze blow the sting away. Cat sighs with relief: \"With a trick, no fear.\""
           }
         ]
       }
@@ -266,7 +266,7 @@
       "text": "Chú Ba khen canh cá me, Gấu khen món trứng đúc, cả mâm ăn sạch đĩa. Mèo kêu «meo» to tới mức chính Mèo cũng giật mình, rồi dúi cho {name} một bát súp nóng.",
       "en": {
         "title": "A table for every homeland",
-        "text": "Chú Ba praises the fish soup, Gấu praises the omelette, and every plate is wiped clean. Mèo meows so loudly he startles himself, then hands {name} a bowl of hot soup."
+        "text": "Chú Ba praises the fish soup, Bear praises the omelette, and every plate is wiped clean. Cat meows so loudly he startles himself, then hands {name} a bowl of hot soup."
       }
     },
     {
@@ -277,7 +277,7 @@
       "text": "Mỗi vị khách để lại cho Mèo một công thức quê mình. Tuần sau Mèo định học từng món một, và dĩ nhiên cần một phó tướng nếm thử.",
       "en": {
         "title": "A new dish next week",
-        "text": "Each guest left Mèo a recipe from home. Next week he plans to learn them one by one, and of course he needs a lieutenant to taste them."
+        "text": "Each guest left Cat a recipe from home. Next week he plans to learn them one by one, and of course he needs a lieutenant to taste them."
       }
     }
   ],
@@ -293,7 +293,7 @@
     }
   },
   "en": {
-    "title": "Mèo Bếp Trưởng's story, chapter 4: The Sunday table",
-    "summary": "Sunday is here. Mèo Bếp Trưởng still has a basket of onions to chop and a fear he hasn't told anyone. {name} finds his swimming goggles, works out the onions, chooses a gentler way to cut them, then lays a balanced table for the family and guests."
+    "title": "Head Chef Cat's story, chapter 4: The Sunday table",
+    "summary": "Sunday is here. Head Chef Cat still has a basket of onions to chop and a fear he hasn't told anyone. {name} finds his swimming goggles, works out the onions, chooses a gentler way to cut them, then lays a balanced table for the family and guests."
   }
 }

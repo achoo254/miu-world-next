@@ -189,7 +189,7 @@
             "consequence": "The shortcut runs along the block steps, and soon you can hear the parade's music."
           },
           {
-            "text": "Ask Rô-bốt Thiếc Tí Hon for help",
+            "text": "Ask Tiny Tin Robot for help",
             "consequence": "Gấu Bông points: Rô-bốt Thiếc is standing by the tin-toy shelf, and he runs really fast!"
           }
         ]
@@ -207,7 +207,7 @@
       "choices": [{ "text": "Cảm ơn Rô-bốt, mình đi thôi!" }],
       "en": {
         "title": "Ask Rô-bốt Thiếc",
-        "goTo": "Go over to the tin-toy shelf and ask Rô-bốt Thiếc Tí Hon",
+        "goTo": "Go over to the tin-toy shelf and ask Tiny Tin Robot",
         "lines": [
           "Beep beep! Order received. Lính Gỗ, climb onto my shoulders and I'll roll my wheels after the parade right away."
         ],

@@ -54,7 +54,7 @@
       ],
       "en": {
         "title": "The windmill stands still",
-        "goTo": "Head to the little garden shed, where Ông Cụ Trông Vườn is sighing",
+        "goTo": "Head to the little garden shed, where Old Garden Keeper is sighing",
         "lines": [
           "Well now, young {name}, you're just in time. Last night's storm snapped one of the windmill's blades into pieces.",
           "No turning windmill means no pump, and the vegetable beds are parched to the roots.",
@@ -210,7 +210,7 @@
     "skillXp": { "logic": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Ông Cụ Trông Vườn's story, chapter 1: The broken blade",
+    "title": "Old Garden Keeper's story, chapter 1: The broken blade",
     "summary": "Last night's storm snapped a windmill blade, the pump stopped and the vegetable beds are parched. {name} gathers the broken pieces, works out the gears, reads Ông's old notebook and finds a way to keep the greens alive overnight."
   }
 }

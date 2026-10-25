@@ -49,13 +49,13 @@
       ],
       "en": {
         "title": "Wide awake at bedtime",
-        "goTo": "Go to the stone cave, where Dơi Đêm Tai To hangs upside down flapping his big ears",
+        "goTo": "Go to the stone cave, where Big-Eared Night Bat hangs upside down flapping his big ears",
         "lines": [
           "Shh… {name}, come closer. For nights now there's been a strange 'knock… knock' in the cave, steady as someone at a door.",
           "My ears can hear mushrooms growing, yet this one beats me; I can't work it out. And I'm… a bit shy about going deep inside on my own."
         ],
         "choices": [
-          { "text": "Let's look together. Fly right behind me.", "reply": "Thank you… Oh, Nhím Gai Mềm hears it too. She sleeps under the ferns right by the cave." },
+          { "text": "Let's look together. Fly right behind me.", "reply": "Thank you… Oh, Soft-Quill Hedgehog hears it too. She sleeps under the ferns right by the cave." },
           { "text": "A bat who's scared of the dark?", "reply": "I'm not scared of the dark… I'm scared of what I don't understand. That's different!" }
         ]
       }
@@ -74,8 +74,8 @@
         { "text": "Gió với hạt dẻ à? Manh mối hay đấy!", "reply": "Thật hả? Vậy tớ thôi sợ… à, vẫn sợ một tí tẹo thôi." }
       ],
       "en": {
-        "title": "What Nhím Gai Mềm heard",
-        "goTo": "Stop by the ferns to ask Nhím Gai Mềm",
+        "title": "What Soft-Quill Hedgehog heard",
+        "goTo": "Stop by the ferns to ask Soft-Quill Hedgehog",
         "lines": [
           "Eek, you made all my spines pop up! The knocking? I hear it all the time; I was so scared I stayed curled up all night.",
           "But I noticed: whenever the wind blows through the cave mouth it knocks, and when the wind drops it goes quiet. And there's a faint smell of chestnuts too."
@@ -159,7 +159,7 @@
       "kind": "reward",
       "trigger": "auto",
       "text": "Gió vẫn lùa qua cửa hang, nhưng không còn tiếng cộc nào nữa. Nhím Gai Mềm duỗi người ra ngủ, còn Dơi treo con quay lên vách như treo một chiếc huy chương.",
-      "en": { "title": "The cave is quiet again", "text": "The wind still blows through the cave mouth, but there's no more knocking. Nhím Gai Mềm stretches out to sleep, and Dơi hangs the top on the wall like a medal." }
+      "en": { "title": "The cave is quiet again", "text": "The wind still blows through the cave mouth, but there's no more knocking. Soft-Quill Hedgehog stretches out to sleep, and Dơi hangs the top on the wall like a medal." }
     },
     {
       "id": "bi-mat-cua-doi",
@@ -176,7 +176,7 @@
     "skillXp": { "logic": 1 }
   },
   "en": {
-    "title": "Dơi Đêm Tai To's story, chapter 1: Knocking at midnight",
-    "summary": "Every night a 'knock… knock' in the cave keeps Dơi Đêm Tai To awake. {name} asks Nhím Gai Mềm, searches the cave entrance for clues, follows the wind to a crack in the rock and finds the culprit: a wooden top someone dropped."
+    "title": "Big-Eared Night Bat's story, chapter 1: Knocking at midnight",
+    "summary": "Every night a 'knock… knock' in the cave keeps Big-Eared Night Bat awake. {name} asks Soft-Quill Hedgehog, searches the cave entrance for clues, follows the wind to a crack in the rock and finds the culprit: a wooden top someone dropped."
   }
 }

@@ -51,7 +51,7 @@
       ],
       "en": {
         "title": "The life jacket on back to front",
-        "goTo": "Meet Bác Thợ Khóa Thành at the stone bridge over the moat, fumbling with a life jacket",
+        "goTo": "Meet Castle Locksmith Uncle at the stone bridge over the moat, fumbling with a life jacket",
         "lines": [
           "I've been up since the rooster crowed, putting this life jacket on and taking it off. Three times exactly.",
           "To be honest, {name}, I've lived beside the moat all my life and never learnt to swim. Thinking of the landing makes my knees rattle like a lock without oil.",
@@ -79,7 +79,7 @@
       ],
       "en": {
         "title": "The chest on the bow",
-        "goTo": "Go down to the boat landing (Bến thuyền) in front of the castle gate; a chest is tied to the bow of a little boat",
+        "goTo": "Go down to the boat landing (Boat Landing) in front of the castle gate; a chest is tied to the bow of a little boat",
         "lines": [
           "There it is, the wooden chest tied to the bow, exactly three arm-spans from the bank. The waves are gentle, yet it feels as if it's calling me.",
           "I'm going to step in. Hold my hand, and if the boat wobbles, count out loud for me."
@@ -175,7 +175,7 @@
       ],
       "en": {
         "title": "The piece asleep in the gate",
-        "goTo": "Go into the castle gate (Cổng thành) to find the second piece «sleeping» there",
+        "goTo": "Go into the castle gate (Castle Gate) to find the second piece «sleeping» there",
         "prompt": "Cụ Đồng hid things in the gate very cleverly. Read the descriptions and find two things:",
         "items": [
           { "name": "Brass key shaft", "clue": "As long as a finger, one end round and open like a lotus, asleep in a crack beside the gate bolt." },
@@ -282,7 +282,7 @@
       },
       "en": {
         "title": "Fit the teeth to the key",
-        "goTo": "Take everything to the workbench at the bridgehead (Đầu cầu) and assemble the key",
+        "goTo": "Take everything to the workbench at the bridgehead (Bridge End) and assemble the key",
         "prompt": "Cụ Đồng's old lock has three pins, 3, 1 and 4 notches high. His rule: each pin plus the key tooth under it must make 5 notches. How high must the three teeth be?",
         "elements": ["Pin 1: 3 notches", "Pin 2: 1 notch", "Pin 3: 4 notches"],
         "choices": ["2 – 4 – 1", "3 – 1 – 4", "2 – 3 – 1"]
@@ -296,7 +296,7 @@
       "text": "Hai mảnh đã thành một chiếc chìa đồng sáng bóng, chỉ còn thiếu cái vòng để treo. Bác Thợ Khóa Thành tặng {name} một chiếc huy hiệu nhỏ: «Cho người đầu tiên dắt bác xuống thuyền».",
       "en": {
         "title": "A key without its ring",
-        "text": "The two pieces have become one shiny brass key; only the ring to hang it by is missing. Bác Thợ Khóa Thành gives {name} a little badge: «For the first person who got me into a boat»."
+        "text": "The two pieces have become one shiny brass key; only the ring to hang it by is missing. Castle Locksmith Uncle gives {name} a little badge: «For the first person who got me into a boat»."
       }
     },
     {
@@ -318,7 +318,7 @@
     "items": { "huy-hieu-hiep-si": 1 }
   },
   "en": {
-    "title": "Bác Thợ Khóa Thành's story, chapter 3: Two key pieces and a boat",
-    "summary": "The first key piece is tied to the bow of a little boat, and Bác Thợ Khóa Thành can't swim. {name} goes down to the landing with him, picks out the real key teeth, finds the second piece in the castle gate and fits the key together on the workbench."
+    "title": "Castle Locksmith Uncle's story, chapter 3: Two key pieces and a boat",
+    "summary": "The first key piece is tied to the bow of a little boat, and Castle Locksmith Uncle can't swim. {name} goes down to the landing with him, picks out the real key teeth, finds the second piece in the castle gate and fits the key together on the workbench."
   }
 }

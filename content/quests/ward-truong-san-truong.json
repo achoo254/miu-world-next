@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Hươu Đếm Cờ",
+        "title": "Meet Flag-Counting Giraffe",
         "lines": [
-          "Hello {name}! I'm Hươu Đếm Cờ, and my long neck lets me count every flag round the schoolyard.",
+          "Hello {name}! I'm Flag-Counting Giraffe, and my long neck lets me count every flag round the schoolyard.",
           "Counting has made me hungry for maths, so let me ask you four riddles. Shall we?"
         ],
         "choices": [
@@ -94,7 +94,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Hươu Đếm Cờ has 7 tens of flags and 4 more single flags. How many flags in all?",
+            "prompt": "Flag-Counting Giraffe has 7 tens of flags and 4 more single flags. How many flags in all?",
             "choices": [
               "11",
               "47",
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Hươu Đếm Cờ",
-        "bossName": "Hươu Đếm Cờ",
+        "title": "Battle of wits with Flag-Counting Giraffe",
+        "bossName": "Flag-Counting Giraffe",
         "introDialogue": "The flag is at the top of the pole: here flutters the first maths riddle!",
         "winDialogue": "I bow my neck and give up! {name} counts faster than I can look down from up here."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Hươu Đếm Cờ tặng {name} một lá cờ nhỏ thêu số 100, đấu lại lúc nào cũng được.",
       "en": {
-        "title": "Hươu Đếm Cờ's gift",
-        "text": "Hươu Đếm Cờ gives {name} a little flag stitched with the number 100. Battle again whenever you like."
+        "title": "Flag-Counting Giraffe's gift",
+        "text": "Flag-Counting Giraffe gives {name} a little flag stitched with the number 100. Battle again whenever you like."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ra sân sau dãy lớp đi {name}, có một trùm canh khu thuộc làu thời khóa biểu.",
       "en": {
-        "title": "Goodbye, Hươu Đếm Cờ",
+        "title": "Goodbye, Flag-Counting Giraffe",
         "text": "Go round to the yard behind the classrooms, {name}: a zone guardian there knows the timetable by heart."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Hươu Đếm Cờ",
-    "summary": "Hươu Đếm Cờ guards the schoolyard by the flagpole and asks {name} four riddles about numbers to 100 and sums."
+    "title": "Zone guardian: Flag-Counting Giraffe",
+    "summary": "Flag-Counting Giraffe guards the schoolyard by the flagpole and asks {name} four riddles about numbers to 100 and sums."
   }
 }

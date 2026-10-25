@@ -70,7 +70,7 @@
       ],
       "en": {
         "title": "Short of players!",
-        "goTo": "Go to the edge of the football pitch, where Hổ Còi Vàng is jogging on the spot",
+        "goTo": "Go to the edge of the football pitch, where Golden Whistle Tiger is jogging on the spot",
         "lines": [
           "Whistle! {name}! Big news: on Saturday we play a friendly against the team from over the hill. Our first ever!",
           "Bad news: we only have a few players. We need eleven: seven to start and four on the bench.",
@@ -216,7 +216,7 @@
           ],
           "hint": "Which grade is Voi Con in? What is Thỏ Xám wearing?",
           "answer": {
-            "text": "Gà Con and Mèo Mướp",
+            "text": "Gà Con and Tabby Cat",
             "explanation": "Gà Con and Mèo Mướp meet both conditions. Voi Con is in third grade, and Thỏ Xám has no sports shoes yet."
           }
         }
@@ -252,7 +252,7 @@
         "choices": [
           "Gà Con: Skylark class, has sports shoes",
           "Voi Con: third grade, has sports shoes",
-          "Mèo Mướp: Skylark class, has sports shoes",
+          "Tabby Cat: Skylark class, has sports shoes",
           "Thỏ Xám: Skylark class, only has slippers"
         ]
       }
@@ -293,7 +293,7 @@
           },
           {
             "text": "Stand in a circle and pass the ball, calling a name before each pass",
-            "consequence": "The ball goes all the way round and everyone gets called by name. Gà Con and Mèo Mướp learn the whole team's names on day one."
+            "consequence": "The ball goes all the way round and everyone gets called by name. Gà Con and Tabby Cat learn the whole team's names on day one."
           },
           {
             "text": "Group skipping, with Hổ holding one end of the rope",
@@ -350,7 +350,7 @@
     }
   },
   "en": {
-    "title": "Hổ Còi Vàng's story, chapter 1: A team short of players",
+    "title": "Golden Whistle Tiger's story, chapter 1: A team short of players",
     "summary": "The school team is about to play its first friendly but is still short of players. {name} puts up notices, works out how many are missing, picks the eligible players, picks the warm-up for the first practice and practises penalty kicks."
   }
 }

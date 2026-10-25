@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Mèo Quản Gia",
+        "title": "Meet Butler Cat",
         "lines": [
-          "Greetings, {name}! I'm Mèo Quản Gia, and I look after everything in the great hall, from chairs to candles.",
+          "Greetings, {name}! I'm Butler Cat, and I look after everything in the great hall, from chairs to candles.",
           "The prize-giving is about to start, so help me with four sums. Get them all right and you sit in the front row."
         ],
         "choices": [
@@ -148,7 +148,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "There are 72 candles and Mèo has lit 45. How many are still unlit?",
+            "prompt": "There are 72 candles and Cat has lit 45. How many are still unlit?",
             "choices": [
               "117",
               "37",
@@ -256,7 +256,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "The big jug holds 12 l of water and Mèo pours out 5 l for the flowers. How many litres are left?",
+            "prompt": "The big jug holds 12 l of water and Cat pours out 5 l for the flowers. How many litres are left?",
             "choices": [
               "6 l",
               "17 l",
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Mèo Quản Gia",
-        "bossName": "Mèo Quản Gia",
+        "title": "Battle of wits with Butler Cat",
+        "bossName": "Butler Cat",
         "introDialogue": "The hall doors open: here's the first job to work out!",
         "winDialogue": "I bow and give up! Please take a front-row seat at the prize-giving, {name}."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Mèo Quản Gia trao cho {name} tấm vé mời hàng ghế đầu, có in hình ngai vàng.",
       "en": {
-        "title": "Mèo Quản Gia's gift",
-        "text": "Mèo Quản Gia hands {name} a front-row invitation printed with the golden throne."
+        "title": "Butler Cat's gift",
+        "text": "Butler Cat hands {name} a front-row invitation printed with the golden throne."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ra cổng thành đi {name}, ở bờ hào bên cầu treo có trùm canh khu mê chữ nghĩa.",
       "en": {
-        "title": "Goodbye, Mèo Quản Gia",
+        "title": "Goodbye, Butler Cat",
         "text": "Head out of the castle gate, {name}: by the moat at the rope bridge a zone guardian loves words."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Mèo Quản Gia",
-    "summary": "Mèo Quản Gia guards the courtyard before the great hall and asks {name} four riddles counting chairs, candles, rice sacks and water jugs."
+    "title": "Zone guardian: Butler Cat",
+    "summary": "Butler Cat guards the courtyard before the great hall and asks {name} four riddles counting chairs, candles, rice sacks and water jugs."
   }
 }

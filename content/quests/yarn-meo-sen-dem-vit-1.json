@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "Three counts, three numbers",
-        "goTo": "Go to the lotus pond, where Mèo Đầm Sen is frowning and counting ducks",
+        "goTo": "Go to the lotus pond, where Lotus Pond Cat is frowning and counting ducks",
         "lines": [
           "Meow. {name}, count for me. This morning I counted three times and got three different numbers.",
           "First: twelve. Second: eleven. Third: thirteen. My flock has exactly twelve ducks."
@@ -126,7 +126,7 @@
           "hint": "What number is 4 tens and 7 ones?",
           "answer": {
             "text": "47 eggs",
-            "explanation": "4 full trays are 4 tens = 40 eggs, plus 7 loose ones: 40 + 7 = 47. Mèo collected 47 eggs."
+            "explanation": "4 full trays are 4 tens = 40 eggs, plus 7 loose ones: 40 + 7 = 47. Cat collected 47 eggs."
           }
         }
       },
@@ -143,8 +143,8 @@
         ],
         "en": {
           "right": [
-            "Forty-seven! Mèo writes it down, the digits straight as bamboo stakes.",
-            "{name} put tens and ones together as neatly as Mèo stacks eggs.",
+            "Forty-seven! Cat writes it down, the digits straight as bamboo stakes.",
+            "{name} put tens and ones together as neatly as Cat stacks eggs.",
             "Meow. Correct. Not one egg too many, not one too few."
           ],
           "wrong": [
@@ -156,8 +156,8 @@
       },
       "en": {
         "title": "Counting eggs in tens",
-        "goTo": "Go into the duck house and look at the tray of eggs Mèo just collected",
-        "question": "Mèo puts duck eggs in trays of exactly 10. This morning she filled 4 trays and had 7 eggs left over. How many eggs did she collect in all?"
+        "goTo": "Go into the duck house and look at the tray of eggs Cat just collected",
+        "question": "Cat puts duck eggs in trays of exactly 10. This morning she filled 4 trays and had 7 eggs left over. How many eggs did she collect in all?"
       }
     },
     {
@@ -230,7 +230,7 @@
         ],
         "en": {
           "right": [
-            "Meow! The name board is perfectly in line; Mèo loves it.",
+            "Meow! The name board is perfectly in line; Cat loves it.",
             "{name} wasn't fooled by 35 and 53 for a second.",
             "Chubby sleeps in the last box, nearest the grain trough; he'll be delighted."
           ],
@@ -243,8 +243,8 @@
       },
       "en": {
         "title": "Sleeping boxes by grain",
-        "goTo": "Go to the lotus-drying yard, where Mèo set up the board of sleeping boxes",
-        "prompt": "Mèo wants to arrange the sleeping boxes by how many grains each duck ate this morning, from fewest to most. Sort the name board:",
+        "goTo": "Go to the lotus-drying yard, where Cat set up the board of sleeping boxes",
+        "prompt": "Cat wants to arrange the sleeping boxes by how many grains each duck ate this morning, from fewest to most. Sort the name board:",
         "items": [
           "Orange Bill: 53 grains",
           "Grey Feather: 35 grains",
@@ -281,7 +281,7 @@
       "en": {
         "title": "Duck number thirteen",
         "goTo": "Go back to the duck house, where the stray duck stands by the straw nest",
-        "prompt": "The stray duck with the blue leg ring keeps following the flock. Mèo strokes her whiskers: \"Meow. Thirteen bothers me. What now?\"",
+        "prompt": "The stray duck with the blue leg ring keeps following the flock. Cat strokes her whiskers: \"Meow. Thirteen bothers me. What now?\"",
         "choices": [
           {
             "text": "Ask round the village whose duck is lost",
@@ -289,11 +289,11 @@
           },
           {
             "text": "Let it stay for now and add a line in the book",
-            "consequence": "Mèo rules one more box in the book and writes \"guest\". Suddenly thirteen looks perfectly tidy."
+            "consequence": "Cat rules one more box in the book and writes \"guest\". Suddenly thirteen looks perfectly tidy."
           },
           {
             "text": "Let the stray duck out at the pond and see where it swims",
-            "consequence": "The duck swims straight across the pond and waddles off towards the far field, where someone is calling “ducky!”. Mèo counts again: twelve. Her tail gives a little flick."
+            "consequence": "The duck swims straight across the pond and waddles off towards the far field, where someone is calling “ducky!”. Cat counts again: twelve. Her tail gives a little flick."
           }
         ]
       }
@@ -309,7 +309,7 @@
       "goal": 10,
       "en": {
         "title": "Herding the ducks home",
-        "prompt": "Evening already! Herd the flock neatly back to the duck house; ten points and tonight Mèo only needs to count once!"
+        "prompt": "Evening already! Herd the flock neatly back to the duck house; ten points and tonight Cat only needs to count once!"
       }
     },
     {
@@ -320,7 +320,7 @@
       "text": "Tối nay Mèo chỉ đếm một lần mà ra đúng số. Mèo không nói gì, chỉ gạch một gạch thật thẳng trong sổ rồi giơ cho {name} xem.",
       "en": {
         "title": "One count is enough",
-        "text": "Tonight Mèo counts just once and gets it right. She says nothing; she just rules one perfectly straight line in her book and holds it up for {name} to see."
+        "text": "Tonight Cat counts just once and gets it right. She says nothing; she just rules one perfectly straight line in her book and holds it up for {name} to see."
       }
     },
     {
@@ -331,7 +331,7 @@
       "text": "Bưu tá vừa mang tới một lá thư cờ. Ván cờ ba năm của Mèo đã tới nước quan trọng, và Mèo cần một người ngồi nghĩ cùng.",
       "en": {
         "title": "Chess by post",
-        "text": "The postman has just brought a chess letter. Mèo's three-year game has reached an important move, and she needs someone to think it through with her."
+        "text": "The postman has just brought a chess letter. Cat's three-year game has reached an important move, and she needs someone to think it through with her."
       }
     }
   ],
@@ -344,7 +344,7 @@
     }
   },
   "en": {
-    "title": "Mèo Đầm Sen's story, chapter 1: Duck number thirteen",
-    "summary": "This morning Mèo Đầm Sen counted her ducks three times and got three different numbers. {name} finds the ducks hiding round the pond, counts eggs in tens, orders the sleeping boxes by grain and decides what to do about the stray duck."
+    "title": "Lotus Pond Cat's story, chapter 1: Duck number thirteen",
+    "summary": "This morning Lotus Pond Cat counted her ducks three times and got three different numbers. {name} finds the ducks hiding round the pond, counts eggs in tens, orders the sleeping boxes by grain and decides what to do about the stray duck."
   }
 }

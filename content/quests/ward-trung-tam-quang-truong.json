@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Sẻ Nâu Đưa Thư",
+        "title": "Meet Mail Sparrow",
         "lines": [
-          "Tweet tweet! A letter for {name}. I'm Sẻ Nâu Đưa Thư, and I carry happy news all round the square.",
+          "Tweet tweet! A letter for {name}. I'm Mail Sparrow, and I carry happy news all round the square.",
           "Today's letter is four riddles. Open it and battle me?"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Sẻ Nâu Đưa Thư",
-        "bossName": "Sẻ Nâu Đưa Thư",
+        "title": "Battle of wits with Mail Sparrow",
+        "bossName": "Mail Sparrow",
         "introDialogue": "The first envelope has landed in {name}'s hands!",
         "winDialogue": "Tweet tweet, I lost! {name} reads letters faster than I can fly."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Sẻ Nâu Đưa Thư tặng {name} một chiếc tem thư in hình quảng trường, thư sau ta lại mang đố mới tới.",
       "en": {
-        "title": "Sẻ Nâu Đưa Thư's gift",
-        "text": "Sẻ Nâu Đưa Thư gives {name} a stamp with the square on it. Next time I'll bring new riddles."
+        "title": "Mail Sparrow's gift",
+        "text": "Mail Sparrow gives {name} a stamp with the square on it. Next time I'll bring new riddles."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Khu giao dịch và cửa hàng có trùm canh khu giỏi tính nhất phố đấy, {name}.",
       "en": {
-        "title": "Goodbye, Sẻ Nâu Đưa Thư",
+        "title": "Goodbye, Mail Sparrow",
         "text": "The trading street and shops have the best counter in town as their zone guardian, {name}."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Sẻ Nâu Đưa Thư",
-    "summary": "Sẻ Nâu Đưa Thư guards the square and brings {name} four riddles about notices, comparing numbers and sums."
+    "title": "Zone guardian: Mail Sparrow",
+    "summary": "Mail Sparrow guards the square and brings {name} four riddles about notices, comparing numbers and sums."
   }
 }

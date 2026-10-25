@@ -48,7 +48,7 @@
       ],
       "en": {
         "title": "Thỏ Tuyết invites you to compete",
-        "goTo": "Go to the ski rental hut, Thỏ Tuyết Mũ Len is waving",
+        "goTo": "Go to the ski rental hut, Woolly-Hat Snow Bunny is waving",
         "lines": [
           "Brrr brrr, it's freezing! {name}, the Emperor Penguin is holding the ski trophy at the bottom of the big slope; whoever wins his seven frosty riddles takes the trophy home to the village.",
           "But head to the slope without your warm things and you'll freeze solid. The wind blew my stuff all over the flat snowfield."
@@ -230,8 +230,8 @@
               ],
               "hint": "58 has 5 tens and 85 has 8 tens; the bigger tens make the bigger number.",
               "answer": {
-                "text": "The fox (Cáo)",
-                "explanation": "85 m has 8 tens, more than the 5 tens of 58 m, so the fox (Cáo) went further than the rabbit (Thỏ); swapped digits are not equal."
+                "text": "The fox (Fox)",
+                "explanation": "85 m has 8 tens, more than the 5 tens of 58 m, so the fox (Fox) went further than the rabbit (Rabbit); swapped digits are not equal."
               }
             }
           }
@@ -461,7 +461,7 @@
       "text": "Cánh Cụt Hoàng Đế hẹn mùa đông năm sau sẽ thi tiếp. Gấu Băng Tuyết mời {name} đi cáp treo lên đỉnh núi ngắm hoàng hôn trên tuyết.",
       "en": {
         "title": "Cable car to the summit",
-        "text": "The Emperor Penguin promises a rematch next winter. Gấu Băng Tuyết invites {name} to ride the cable car to the summit and watch the sunset over the snow."
+        "text": "The Emperor Penguin promises a rematch next winter. Snowflake Polar Bear invites {name} to ride the cable car to the summit and watch the sunset over the snow."
       }
     }
   ],

@@ -66,7 +66,7 @@
       ],
       "en": {
         "title": "The bell won’t ring",
-        "goTo": "Go to the dairy meadow to meet Bò Chuông Đồng",
+        "goTo": "Go to the dairy meadow to meet Brass Bell Cow",
         "lines": [
           "Mooo... hello, {name}. This morning I shook my head and the bell didn't ring. The clapper inside has fallen out somewhere.",
           "Without my jingle, if I got lost in the morning mist, who would ever find me? Mooo... just thinking about it gives me shivers.",
@@ -210,9 +210,9 @@
         }
       ],
       "en": {
-        "title": "Talking to Dê Râu Xồm",
-        "goTo": "Go to the grassy riverbank, where Dê Râu Xồm is grazing",
-        "prompt": "Dê Râu Xồm chews noisily: «That shiny yellow thing? Er... it looked pretty, so I hid it for fun.» What does {name} do to make him tell where?",
+        "title": "Talking to Bushy-Bearded Goat",
+        "goTo": "Go to the grassy riverbank, where Bushy-Bearded Goat is grazing",
+        "prompt": "Bushy-Bearded Goat chews noisily: «That shiny yellow thing? Er... it looked pretty, so I hid it for fun.» What does {name} do to make him tell where?",
         "choices": [
           {
             "text": "Challenge him to blind man’s goat",
@@ -240,7 +240,7 @@
       "goal": 5,
       "en": {
         "title": "Blind man's goat",
-        "prompt": "Blindfold on: follow the bleating and catch Dê Râu Xồm!"
+        "prompt": "Blindfold on: follow the bleating and catch Bushy-Bearded Goat!"
       }
     },
     {
@@ -290,7 +290,7 @@
     "items": {}
   },
   "en": {
-    "title": "Bò Chuông Đồng's story, chapter 1: The silent bell",
-    "summary": "This morning Bò Chuông Đồng's brass bell went silent: the clapper inside has vanished. {name} follows hoof prints at the cowshed door, works out how many goats came by, finds a way to make Dê Râu Xồm confess where he hid it, then tracks the clapper down in the livestock area."
+    "title": "Brass Bell Cow's story, chapter 1: The silent bell",
+    "summary": "This morning Brass Bell Cow's brass bell went silent: the clapper inside has vanished. {name} follows hoof prints at the cowshed door, works out how many goats came by, finds a way to make Bushy-Bearded Goat confess where he hid it, then tracks the clapper down in the livestock area."
   }
 }

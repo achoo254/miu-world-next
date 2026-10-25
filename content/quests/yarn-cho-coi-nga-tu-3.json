@@ -66,7 +66,7 @@
       ],
       "en": {
         "title": "Cold rice",
-        "goTo": "Go to the crossroads, where Chó Cảnh Sát Còi is holding a cold lunch box",
+        "goTo": "Go to the crossroads, where Whistle Police Dog is holding a cold lunch box",
         "lines": [
           "Twelve years at this crossroads and I've never finished a lunch. Open the box and there's a horn, or someone calling.",
           "My dream is small: one hour on the stone bench, all my rice eaten, all my water drunk, no one calling.",
@@ -261,8 +261,8 @@
           ],
           "hint": "Whose free time covers the whole half hour from 11:30 to 12?",
           "answer": {
-            "text": "Bác Hải and Mèo Xếp Khối",
-            "explanation": "Bác Hải is free 11 to 12 and Mèo 11:15 to 12:15, so both cover 11:30 to 12. Voi starts too late and Lân finishes too early."
+            "text": "Bác Hải and Block-Stacking Cat",
+            "explanation": "Bác Hải is free 11 to 12 and Cat 11:15 to 12:15, so both cover 11:30 to 12. Voi starts too late and Lân finishes too early."
           }
         }
       },
@@ -295,10 +295,10 @@
         "goTo": "Go to the quest board to read everyone's free times",
         "prompt": "Chó needs someone to stand in from half past 11 to 12. Pick everyone who is free for that whole time:",
         "choices": [
-          "Bác Lái Xe Hải: free from 11 to 12",
-          "Voi Kẹo Bông: free from 12 to 1",
-          "Mèo Xếp Khối: free from quarter past 11 to quarter past 12",
-          "Lân Con Rộn Ràng: free from 10 to 11"
+          "Uncle Hải the Bus Driver: free from 11 to 12",
+          "Cotton Candy Elephant: free from 12 to 1",
+          "Block-Stacking Cat: free from quarter past 11 to quarter past 12",
+          "Lively Lion Cub: free from 10 to 11"
         ]
       }
     },
@@ -337,8 +337,8 @@
             "consequence": "Bác Hải takes the crossroads and honks twice to stop traffic. Chó gets through more than half his lunch without standing up."
           },
           {
-            "text": "Ask Mèo Xếp Khối to set out a row of traffic cones",
-            "consequence": "Mèo lines up cones like dominoes. Traffic follows them on its own, and Chó eats nearly all his lunch, one eye on the road."
+            "text": "Ask Block-Stacking Cat to set out a row of traffic cones",
+            "consequence": "Cat lines up cones like dominoes. Traffic follows them on its own, and Chó eats nearly all his lunch, one eye on the road."
           },
           {
             "text": "{name} takes the traffic stand for half an hour",
@@ -395,7 +395,7 @@
     }
   },
   "en": {
-    "title": "Chó Cảnh Sát Còi's story, chapter 3: The unfinished lunch",
-    "summary": "Chó Cảnh Sát Còi has never finished a lunch. {name} counts the tower's chimes, finds his lunch box, picks friends free to stand in, decides who minds the crossroads and directs the traffic for a while."
+    "title": "Whistle Police Dog's story, chapter 3: The unfinished lunch",
+    "summary": "Whistle Police Dog has never finished a lunch. {name} counts the tower's chimes, finds his lunch box, picks friends free to stand in, decides who minds the crossroads and directs the traffic for a while."
   }
 }

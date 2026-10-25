@@ -60,7 +60,7 @@
       ],
       "en": {
         "title": "Face-watching",
-        "goTo": "Drop by the flower stalls to hear more from Cô Nặn Tò He",
+        "goTo": "Drop by the flower stalls to hear more from Auntie Tò He Maker",
         "lines": [
           "I have a little habit: whoever walks past, my hands start shaping their face. One lady even came back asking me to give her... less chin.",
           "My dragon will carry the whole market on its back. I need three special faces: a toothless grin, a curly moustache, and the hardest person in the market to make smile."
@@ -68,7 +68,7 @@
         "choices": [
           {
             "text": "Who's the hardest to make smile?",
-            "reply": "Ông Chổi Rơm, the broom man. In twenty years I've never once seen him smile. This time it's all up to you, {name}."
+            "reply": "Straw Broom Grandpa, the broom man. In twenty years I've never once seen him smile. This time it's all up to you, {name}."
           },
           {
             "text": "I'll look really closely at everyone!"
@@ -100,7 +100,7 @@
       "en": {
         "title": "A grin and a moustache",
         "goTo": "Go up the north street to find the two faces Cô described",
-        "prompt": "Read Cô Nặn Tò He's descriptions and find the right people:",
+        "prompt": "Read Auntie Tò He Maker's descriptions and find the right people:",
         "items": [
           {
             "name": "The old betel-nut seller",
@@ -172,8 +172,8 @@
       },
       "en": {
         "title": "The broom man's riddle",
-        "goTo": "Go to the market aisle, where Ông Chổi Rơm is sweeping",
-        "question": "Ông Chổi Rơm doesn't look up: «Want to look at my face? Riddle first. This morning I sold 8 brooms, this afternoon 3 fewer than this morning. How many brooms did I sell all day?»"
+        "goTo": "Go to the market aisle, where Straw Broom Grandpa is sweeping",
+        "question": "Straw Broom Grandpa doesn't look up: «Want to look at my face? Riddle first. This morning I sold 8 brooms, this afternoon 3 fewer than this morning. How many brooms did I sell all day?»"
       }
     },
     {
@@ -202,7 +202,7 @@
       ],
       "en": {
         "title": "Making him smile",
-        "prompt": "Ông Chổi Rơm lets you look at his face, but it's still as wrinkled as a dried jujube. What does {name} do to make him smile?",
+        "prompt": "Straw Broom Grandpa lets you look at his face, but it's still as wrinkled as a dried jujube. What does {name} do to make him smile?",
         "choices": [
           {
             "text": "Tell a joke",
@@ -320,7 +320,7 @@
       "text": "Cô Nặn Tò He nặn xong vảy cuối, giơ lên ngắm rồi bật cười: «Ông Chổi Rơm cười trên lưng rồng! Chuyện này cả chợ phải kể mười năm.»",
       "en": {
         "title": "Four faces on the dragon's back",
-        "text": "Cô Nặn Tò He finishes the last scale, holds it up and laughs: «Ông Chổi Rơm smiling on a dragon's back! The market will talk about this for ten years.»"
+        "text": "Auntie Tò He Maker finishes the last scale, holds it up and laughs: «Straw Broom Grandpa smiling on a dragon's back! The market will talk about this for ten years.»"
       }
     },
     {
@@ -331,7 +331,7 @@
       "text": "Chiều ấy, gió đổi chiều và mây đen kéo về đầu chợ. Cô Nặn Tò He nhìn trời, mặt tái đi: con rồng còn nằm dưới mái nhà lồng chợ cũ, mà mái ấy hay dột lắm.",
       "en": {
         "title": "Dark clouds over the market",
-        "text": "That afternoon the wind turns and dark clouds roll in over the market. Cô Nặn Tò He looks up and goes pale: the dragon is still lying under the old roof of the covered market, and that roof leaks."
+        "text": "That afternoon the wind turns and dark clouds roll in over the market. Auntie Tò He Maker looks up and goes pale: the dragon is still lying under the old roof of the covered market, and that roof leaks."
       }
     }
   ],
@@ -346,7 +346,7 @@
     "items": {}
   },
   "en": {
-    "title": "Cô Nặn Tò He's story, chapter 2: Scales with faces",
-    "summary": "Cô Nặn Tò He wants every dragon scale to be a face from the market. {name} finds a toothless grin and a curly moustache, solves a riddle from the grumpiest broom seller around, then lines the scales up from biggest to smallest on the dragon table."
+    "title": "Auntie Tò He Maker's story, chapter 2: Scales with faces",
+    "summary": "Auntie Tò He Maker wants every dragon scale to be a face from the market. {name} finds a toothless grin and a curly moustache, solves a riddle from the grumpiest broom seller around, then lines the scales up from biggest to smallest on the dragon table."
   }
 }

@@ -49,14 +49,14 @@
       ],
       "en": {
         "title": "A tricky crossing",
-        "goTo": "Go to the grassy riverbank, where Chú Lái Đò Ba is scratching his head beside his oar",
+        "goTo": "Go to the grassy riverbank, where Uncle Ba the Ferryman is scratching his head beside his oar",
         "lines": [
           "Now then, in thirty years I've ferried everything: pigs, chickens, even a whole family altar. But today's crossing has me stumped.",
-          "The Cloud Ferry is small; each trip takes just me and one passenger. Bé Tí is waiting by the silk-cotton tree; go and hear how fussy his three passengers are."
+          "The Cloud Ferry is small; each trip takes just me and one passenger. Little Tí is waiting by the silk-cotton tree; go and hear how fussy his three passengers are."
         ],
         "choices": [
           { "text": "A puzzle? I love puzzles!", "reply": "Good. Think it through, mind; one wrong trip and somebody's lunch gets eaten." },
-          { "text": "Can't you just make three trips?", "reply": "That's what I thought, until Bé Tí told me about the goat and the greens." }
+          { "text": "Can't you just make three trips?", "reply": "That's what I thought, until Little Tí told me about the goat and the greens." }
         ]
       }
     },
@@ -75,8 +75,8 @@
         { "text": "Để tớ nghĩ cách cho cậu!", "reply": "Cảm ơn bạn! Nghĩ xong thì ra mép nước, Đò Mây đang chờ ở đó." }
       ],
       "en": {
-        "title": "Bé Tí's three passengers",
-        "goTo": "Go to the silk-cotton tree by the landing to meet Bé Tí Học Chèo",
+        "title": "Little Tí's three passengers",
+        "goTo": "Go to the silk-cotton tree by the landing to meet Little Tí Learning Chèo",
         "lines": [
           "Hi! Mum told me to take the little goat, our dog Vện and a bundle of water spinach to Grandma's across the river.",
           "The trouble is, the goat gobbles up greens the moment it sees them, and Vện chases the goat round and round. The dog and the greens don't care about each other at all.",
@@ -197,12 +197,12 @@
         { "id": "cung-hoc", "text": "Rủ cả {name} cùng học", "consequence": "Chú Ba cười khà: «Hai học trò một lúc à? Được! Một đứa chèo trái, một đứa chèo phải, đò đi thẳng tắp.»" }
       ],
       "en": {
-        "title": "Bé Tí's request",
+        "title": "Little Tí's request",
         "goTo": "Row back to the grassy riverbank; Uncle Ba wants to ask you something",
-        "prompt": "As they say goodbye, Bé Tí asks Uncle Ba to teach him to row. Uncle Ba hesitates: 'I've never taught anyone. What do you think, {name}?'",
+        "prompt": "As they say goodbye, Little Tí asks Uncle Ba to teach him to row. Uncle Ba hesitates: 'I've never taught anyone. What do you think, {name}?'",
         "choices": [
-          { "text": "Teach him now, a lesson every evening", "consequence": "Uncle Ba nods: 'Right, one lesson each evening, starting with three knocks to greet the river.' Bé Tí jumps so high he nearly falls in." },
-          { "text": "Wait until Bé Tí is a bit bigger", "consequence": "Uncle Ba thinks, then says: 'A bit bigger and his arms will be strong enough. But he can sit and watch me row from today.'" },
+          { "text": "Teach him now, a lesson every evening", "consequence": "Uncle Ba nods: 'Right, one lesson each evening, starting with three knocks to greet the river.' Little Tí jumps so high he nearly falls in." },
+          { "text": "Wait until Little Tí is a bit bigger", "consequence": "Uncle Ba thinks, then says: 'A bit bigger and his arms will be strong enough. But he can sit and watch me row from today.'" },
           { "text": "Ask if {name} can learn too", "consequence": "Uncle Ba laughs: 'Two pupils at once? Done! One rows left, one rows right, and the boat goes dead straight.'" }
         ]
       }
@@ -230,7 +230,7 @@
     "skillXp": { "logic": 1, "doc-hieu": 1 }
   },
   "en": {
-    "title": "Chú Lái Đò Ba's story, chapter 2: A goat, a dog and some greens",
-    "summary": "Bé Tí Học Chèo needs his goat, his dog Vện and a bundle of water spinach ferried across, but the boat carries only one at a time. {name} works out the first trip, rows every crossing with Uncle Ba, reads the timetable on the far bank and helps him answer a very special request."
+    "title": "Uncle Ba the Ferryman's story, chapter 2: A goat, a dog and some greens",
+    "summary": "Little Tí Learning Chèo needs his goat, his dog Vện and a bundle of water spinach ferried across, but the boat carries only one at a time. {name} works out the first trip, rows every crossing with Uncle Ba, reads the timetable on the far bank and helps him answer a very special request."
   }
 }

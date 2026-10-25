@@ -68,19 +68,19 @@
       ],
       "en": {
         "title": "The fair opens",
-        "goTo": "Go to the games corner, where Cáo Lém is hanging up fair lanterns",
+        "goTo": "Go to the games corner, where Cheeky Fox is hanging up fair lanterns",
         "lines": [
-          "Ladies and gentlemen! Cáo Lém's Number Fair is officially open! No hidden chalk, no tricks... well, maybe one tiny trick.",
+          "Ladies and gentlemen! Cheeky Fox's Number Fair is officially open! No hidden chalk, no tricks... well, maybe one tiny trick.",
           "To get into the puzzle stalls you need a ticket. And the tickets... the wind blew three away. Hee hee, this time it really was the wind!"
         ],
         "choices": [
           {
             "text": "I'll find the tickets!",
-            "reply": "Cáo Lém bows: Our guest {name} is so helpful! The tickets blew around this corner, that's all."
+            "reply": "Cheeky Fox bows: Our guest {name} is so helpful! The tickets blew around this corner, that's all."
           },
           {
             "text": "Was it really the wind?",
-            "reply": "Cáo Lém raises both paws: I swear on my own tail!"
+            "reply": "Cheeky Fox raises both paws: I swear on my own tail!"
           }
         ]
       }
@@ -120,13 +120,13 @@
       "en": {
         "title": "The rules of the fair",
         "lines": [
-          "The fair has these stalls: neighbour numbers, number splitting, race cars, four doors and number cards. Pass them all and you get to compete against Gấu Mật Nhi.",
+          "The fair has these stalls: neighbour numbers, number splitting, race cars, four doors and number cards. Pass them all and you get to compete against Honey Bear Nhi.",
           "Little tip: the number just after means add 1, the number just before means take away 1; a two-digit number splits into tens and ones. {name} has learnt all this already, right?"
         ],
         "choices": [
           {
             "text": "Learnt it, let's go in!",
-            "reply": "Cáo Lém tears the ticket with a rip: Please step into the first stall!"
+            "reply": "Cheeky Fox tears the ticket with a rip: Please step into the first stall!"
           }
         ]
       }
@@ -894,17 +894,17 @@
         "title": "Four mystery doors",
         "goTo": "Go to the four-door stall, where each door has a puzzle stuck on it",
         "lines": [
-          "This stall has four doors, and behind each one is a multiple-choice question. The keys to doors two and three are kept by my cousin, Cáo Rung Rinh, at the wind chime rack!",
+          "This stall has four doors, and behind each one is a multiple-choice question. The keys to doors two and three are kept by my cousin, Wobbly Fox, at the wind chime rack!",
           "Would our guest like to open them in order from door one, or close your eyes and pick any door?"
         ],
         "choices": [
           {
             "text": "Open them in order from door one",
-            "reply": "Cáo Lém: With that much care, every door will open!"
+            "reply": "Cheeky Fox: With that much care, every door will open!"
           },
           {
             "text": "Pick any door",
-            "reply": "Cáo Lém giggles: Every door leads back to door one anyway, after you!"
+            "reply": "Cheeky Fox giggles: Every door leads back to door one anyway, after you!"
           }
         ]
       }
@@ -1634,7 +1634,7 @@
       "text": "Vé hội chợ của {name} kín dấu đuôi cáo. Cáo Lém trao huy hiệu \"Khách quý của hội chợ số\" và thú thật: hội chợ năm sau tớ sẽ đố khó gấp đôi!",
       "en": {
         "title": "Fair badge",
-        "text": "{name}'s fair ticket is covered in fox-tail stamps. Cáo Lém hands over the \"Guest of Honour at the Number Fair\" badge and confesses: next year's fair will be twice as tricky!"
+        "text": "{name}'s fair ticket is covered in fox-tail stamps. Cheeky Fox hands over the \"Guest of Honour at the Number Fair\" badge and confesses: next year's fair will be twice as tricky!"
       }
     },
     {
@@ -1645,7 +1645,7 @@
       "text": "Gấu Mật Nhi chỉ ra phố ngoài cổng trường: Chợ phiên đang họp rồi! Ong Vàng chờ {name} ở hàng hoa hướng dương, tổ mới cần đủ chục bông mà ong đếm mãi vẫn bị lố!",
       "en": {
         "title": "Market day outside the school gate",
-        "text": "Gấu Mật Nhi points to the street outside the school gate: Market day has started! Ong Vàng the bee is waiting for {name} at the sunflower stall. The new hive needs exactly ten flowers, but the bee keeps counting too many!"
+        "text": "Honey Bear Nhi points to the street outside the school gate: Market day has started! Golden Bee is waiting for {name} at the sunflower stall. The new hive needs exactly ten flowers, but the bee keeps counting too many!"
       }
     }
   ],

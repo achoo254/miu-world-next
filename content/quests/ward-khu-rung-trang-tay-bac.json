@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Nai Gác Đồng Cỏ",
+        "title": "Meet Meadow Watch Deer",
         "lines": [
-          "Hold on, {name}! I'm Nai Gác Đồng Cỏ, and everyone who crosses this glade has a battle of wits with me.",
+          "Hold on, {name}! I'm Meadow Watch Deer, and everyone who crosses this glade has a battle of wits with me.",
           "You lose nothing if you miss, and every right answer wears me down. Dare to try?"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Nai Gác Đồng Cỏ",
-        "bossName": "Nai Gác Đồng Cỏ",
+        "title": "Battle of wits with Meadow Watch Deer",
+        "bossName": "Meadow Watch Deer",
         "introDialogue": "Here are four word riddles: listen to the grass rustle and answer!",
         "winDialogue": "I give up! {name} reads fast and spells right, so the glade is open to you."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Nai Gác Đồng Cỏ tặng {name} một túi hạt cỏ thơm, hẹn đấu lại bất cứ lúc nào.",
       "en": {
-        "title": "Nai Gác Đồng Cỏ's gift",
-        "text": "Nai Gác Đồng Cỏ gives {name} a bag of sweet grass seeds and says you can battle again any time."
+        "title": "Meadow Watch Deer's gift",
+        "text": "Meadow Watch Deer gives {name} a bag of sweet grass seeds and says you can battle again any time."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Trảng rừng phía đông bắc còn một trùm canh khu nữa đang chờ {name}.",
       "en": {
-        "title": "Goodbye, Nai Gác Đồng Cỏ",
+        "title": "Goodbye, Meadow Watch Deer",
         "text": "Another zone guardian is waiting for {name} in the north-east glade."
       }
     }
@@ -354,7 +354,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Nai Gác Đồng Cỏ",
-    "summary": "Nai Gác Đồng Cỏ guards the way into the north-west glade. {name} wins four word riddles and the stag opens the way."
+    "title": "Zone guardian: Meadow Watch Deer",
+    "summary": "Meadow Watch Deer guards the way into the north-west glade. {name} wins four word riddles and the stag opens the way."
   }
 }

@@ -50,9 +50,9 @@
       ],
       "en": {
         "title": "Class monitor Chim Sâu calls",
-        "goTo": "Go to the games corner, Chim Sâu Lớp Trưởng is flapping and calling",
+        "goTo": "Go to the games corner, Class Monitor Sparrow is flapping and calling",
         "lines": [
-          "{name}, Voi Tính Nhẩm is sitting smack in the middle of the playground! He says the school Sports Day can't open until someone wins his maths quiz.",
+          "{name}, Mental Math Elephant is sitting smack in the middle of the playground! He says the school Sports Day can't open until someone wins his maths quiz.",
           "And to get onto the field, you need all the sports kit too. Our whole class is counting on you!"
         ],
         "choices": [
@@ -186,7 +186,7 @@
           },
           {
             "text": "Roll your wrists and ankles really well",
-            "consequence": "Hươu Trọng Tài counts one, two, three, four, and {name}'s arms and legs feel loose and bendy."
+            "consequence": "Referee Giraffe counts one, two, three, four, and {name}'s arms and legs feel loose and bendy."
           },
           {
             "text": "Count from 1 to 20 in your head to warm up",
@@ -367,13 +367,13 @@
             },
             "en": {
               "guide": [
-                "To see how many more points Thỏ scored than Sóc, work out 27 − 23.",
+                "To see how many more points Rabbit scored than Sóc, work out 27 − 23.",
                 "Both numbers have 2 tens, so just subtract the ones: 7 − 3."
               ],
               "hint": "Count on from 23 to 27: twenty-four, twenty-five… how many steps?",
               "answer": {
                 "text": "4 points",
-                "explanation": "27 − 23 = 4, so Thỏ's team is 4 points ahead; 50 adds both teams' points."
+                "explanation": "27 − 23 = 4, so Rabbit's team is 4 points ahead; 50 adds both teams' points."
               }
             }
           }
@@ -456,7 +456,7 @@
       "text": "Voi Tính Nhẩm dùng vòi gắn ngôi sao thi đua lên ngực áo {name}. Cả trường reo vang, túi quà của Voi đầy XP, xu và điểm kỹ năng.",
       "en": {
         "title": "The champion's star",
-        "text": "Voi Tính Nhẩm uses his trunk to pin the champion's star on {name}'s shirt. The whole school cheers, and Voi's gift bag is packed with XP, coins and skill points."
+        "text": "Mental Math Elephant uses his trunk to pin the champion's star on {name}'s shirt. The whole school cheers, and Voi's gift bag is packed with XP, coins and skill points."
       }
     },
     {
@@ -467,7 +467,7 @@
       "text": "Tiếng trống khai mạc vang lên, Voi Tính Nhẩm xin vào đội chạy tiếp sức. Sư Tử Vàng mời {name} ghé vườn trường xem các bạn vừa trồng cây mới.",
       "en": {
         "title": "Sports Day opens",
-        "text": "The opening drum sounds, and Voi Tính Nhẩm asks to join the relay team. Sư Tử Vàng invites {name} to the school garden to see the trees the children have just planted."
+        "text": "The opening drum sounds, and Mental Math Elephant asks to join the relay team. Golden Lion invites {name} to the school garden to see the trees the children have just planted."
       }
     }
   ],

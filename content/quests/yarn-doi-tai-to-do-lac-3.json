@@ -51,7 +51,7 @@
       ],
       "en": {
         "title": "Dơi is shaking like a leaf",
-        "goTo": "Stop by the stone cave, where Dơi Đêm Tai To has been awake since noon from nerves",
+        "goTo": "Stop by the stone cave, where Big-Eared Night Bat has been awake since noon from nerves",
         "lines": [
           "{name}, I've been awake since noon. I counted five hundred drops and still couldn't get back to sleep. This evening the whole forest is coming here…",
           "What if someone screams? My ears will droop, and I'll fly back into the cave and hide like always.",
@@ -100,8 +100,8 @@
         { "text": "Cậu tới chào Dơi cùng tớ đi!", "reply": "Ừ! Tớ sẽ đứng hàng đầu, xù gai lên làm trò cho mọi người cười." }
       ],
       "en": {
-        "title": "Nhím Gai Mềm opens up",
-        "goTo": "Nhím Gai Mềm is waving from the ferns",
+        "title": "Soft-Quill Hedgehog opens up",
+        "goTo": "Soft-Quill Hedgehog is waving from the ferns",
         "lines": [
           "Sóc told me everything. You know, when I was little everyone called me 'the spiky ball' and nobody dared ask me to play.",
           "Then one day I walked up and said hello first. Turns out my spines are softer than people think. Please tell Dơi that from me."
@@ -167,7 +167,7 @@
       ],
       "en": {
         "title": "Sóc spreads the word",
-        "goTo": "Sóc Hạt Dẻ Hay Quên is calling loudly from the chestnut tree by the hill",
+        "goTo": "Forgetful Chestnut Squirrel is calling loudly from the chestnut tree by the hill",
         "lines": [
           "{name}! I've told the whole forest, and this time I didn't forget anyone! Well… except one: the little bat who lives next to the cave.",
           "He was playing and flew deep into the cave, and now he can't find the way out. It's nearly time, please help!"
@@ -239,7 +239,7 @@
     "items": { "nam-chuong-do": 1 }
   },
   "en": {
-    "title": "Dơi Đêm Tai To's story, chapter 3: Sunset at the cave",
-    "summary": "The whole forest is invited to the cave at twilight to collect their lost things, and Dơi is shaking like a leaf. {name} decorates with Nhím Gai Mềm, puts the evening's jobs in time order, guides a lost little bat out in time and helps Dơi step out to greet everyone."
+    "title": "Big-Eared Night Bat's story, chapter 3: Sunset at the cave",
+    "summary": "The whole forest is invited to the cave at twilight to collect their lost things, and Dơi is shaking like a leaf. {name} decorates with Soft-Quill Hedgehog, puts the evening's jobs in time order, guides a lost little bat out in time and helps Dơi step out to greet everyone."
   }
 }

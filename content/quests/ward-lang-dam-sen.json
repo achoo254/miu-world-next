@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Sư Tử Thủ Môn",
+        "title": "Meet Goalkeeper Lion",
         "lines": [
-          "Roar… I'm Sư Tử Thủ Môn! Nobody has ever scored past me, {name}.",
+          "Roar… I'm Goalkeeper Lion! Nobody has ever scored past me, {name}.",
           "Five riddles are five shots: answer all five right and you win the match."
         ],
         "choices": [
@@ -148,7 +148,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Sư Tử Thủ Môn writes a player's name on the board. Which name has the right capital letters?",
+            "prompt": "Goalkeeper Lion writes a player's name on the board. Which name has the right capital letters?",
             "choices": [
               "lê văn hùng",
               "Lê văn hùng",
@@ -369,8 +369,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Sư Tử Thủ Môn",
-        "bossName": "Sư Tử Thủ Môn",
+        "title": "Battle of wits with Goalkeeper Lion",
+        "bossName": "Goalkeeper Lion",
         "introDialogue": "The whistle blows: here comes the first riddle shot!",
         "winDialogue": "Goal! Goal! {name} hit the back of my net, and the whole lotus pond is clapping."
       }
@@ -382,8 +382,8 @@
       "trigger": "auto",
       "text": "Sư Tử Thủ Môn trao cho {name} chiếc băng đội trưởng bằng lá sen, sân bóng luôn chờ cậu quay lại.",
       "en": {
-        "title": "Sư Tử Thủ Môn's gift",
-        "text": "Sư Tử Thủ Môn hands {name} a lotus-leaf captain's armband. The pitch is always waiting for you."
+        "title": "Goalkeeper Lion's gift",
+        "text": "Goalkeeper Lion hands {name} a lotus-leaf captain's armband. The pitch is always waiting for you."
       }
     },
     {
@@ -393,8 +393,8 @@
       "trigger": "auto",
       "text": "Đã thắng cả bốn trùm canh khu? Trâu Đen Đố Chữ vẫn đang chờ {name} ở chặng cuối của làng.",
       "en": {
-        "title": "Goodbye, Sư Tử Thủ Môn",
-        "text": "Beaten all four zone guardians? Trâu Đen Đố Chữ is still waiting for {name} at the village's last stop."
+        "title": "Goodbye, Goalkeeper Lion",
+        "text": "Beaten all four zone guardians? Riddle Water Buffalo is still waiting for {name} at the village's last stop."
       }
     }
   ],
@@ -409,7 +409,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Sư Tử Thủ Môn",
-    "summary": "Sư Tử Thủ Môn guards the goal by the lotus pond and shoots five riddles about names, describing words and congratulations for {name} to stop."
+    "title": "Zone guardian: Goalkeeper Lion",
+    "summary": "Goalkeeper Lion guards the goal by the lotus pond and shoots five riddles about names, describing words and congratulations for {name} to stop."
   }
 }

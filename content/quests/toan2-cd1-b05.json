@@ -69,20 +69,20 @@
       ],
       "en": {
         "title": "Letters sent to the wrong place",
-        "goTo": "Run out to the school gate, where Chó Mực is hugging a bulging mailbag",
+        "goTo": "Run out to the school gate, where Inky Dog is hugging a bulging mailbag",
         "lines": [
           "Woof! {name}, the postman thought up a new game this morning: the envelopes don't carry the receiver's name, they carry... a sum!",
-          "I've run ten laps around the school and still delivered them wrong. The teacher's letter ended up with Mèo Bạc Hà, and the headmaster got... Bò Sữa Mơ's grass bill by mistake.",
+          "I've run ten laps around the school and still delivered them wrong. The teacher's letter ended up with Mint Cat, and the headmaster got... Dream Dairy Cow's grass bill by mistake.",
           "And a few envelopes fell out of the bag while I was wagging my tail. Will you help me, woof woof?"
         ],
         "choices": [
           {
             "text": "I'll pick up the envelopes for you!",
-            "reply": "Chó Mực wags his tail like a propeller: Thanks! They must have fallen near the gate!"
+            "reply": "Inky Dog wags his tail like a propeller: Thanks! They must have fallen near the gate!"
           },
           {
             "text": "A grass bill? That's so funny!",
-            "reply": "Chó Mực chuckles: The headmaster was even going to pay it for her."
+            "reply": "Inky Dog chuckles: The headmaster was even going to pay it for her."
           }
         ]
       }
@@ -133,7 +133,7 @@
         "choices": [
           {
             "text": "Thinking in tens, easy peasy!",
-            "reply": "Chó Mực: Woof! You sound just like the postman."
+            "reply": "Inky Dog: Woof! You sound just like the postman."
           }
         ]
       }
@@ -1240,8 +1240,8 @@
         }
       ],
       "en": {
-        "title": "Cáo Tuyết Mi drops by",
-        "goTo": "Take the postcards to the school's mailbox, where Cáo Tuyết Mi has just arrived",
+        "title": "Mi the Snow Fox drops by",
+        "goTo": "Take the postcards to the school's mailbox, where Mi the Snow Fox has just arrived",
         "lines": [
           "Oh look, my postcards made it here! I'm so far away that I sent some puzzles along so I'd miss school a little less.",
           "Mi, the box you sent also has two fruit baskets and a triangle picture.",
@@ -1250,11 +1250,11 @@
         "choices": [
           {
             "text": "The orange basket first!",
-            "reply": "Cáo Tuyết Mi: Oranges from the north are so juicy, here's your puzzle!"
+            "reply": "Mi the Snow Fox: Oranges from the north are so juicy, here's your puzzle!"
           },
           {
             "text": "The apple basket first!",
-            "reply": "Cáo Tuyết Mi: Tò Te the clown is keeping the apple basket, so let's do the orange basket first!"
+            "reply": "Mi the Snow Fox: Tò Te the clown is keeping the apple basket, so let's do the orange basket first!"
           }
         ]
       }
@@ -1469,7 +1469,7 @@
       "text": "Chó Mực đội lên đầu {name} chiếc mũ bưu tá và gắn huy hiệu \"Bưu tá phép tính\". Cáo Tuyết Mi hứa lần sau gửi bưu thiếp khó hơn nữa.",
       "en": {
         "title": "Postal worker badge",
-        "text": "Chó Mực pops a postal cap on {name}'s head and pins on the \"Sum Postie\" badge. Cáo Tuyết Mi promises to send even trickier postcards next time."
+        "text": "Inky Dog pops a postal cap on {name}'s head and pins on the \"Sum Postie\" badge. Mi the Snow Fox promises to send even trickier postcards next time."
       }
     },
     {
@@ -1480,7 +1480,7 @@
       "text": "Lá thư cuối cùng ghi: \"Mời {name} tới góc trò chơi dân gian, hội chợ số có năm gian đố đang chờ! Kí tên: Cáo Lém (lần này không giấu phấn đâu)\".",
       "en": {
         "title": "An invitation to the fair",
-        "text": "The very last letter says: \"Dear {name}, come to the folk games corner, the number fair has five puzzle stalls waiting! Signed: Cáo Lém (no hidden chalk this time)\"."
+        "text": "The very last letter says: \"Dear {name}, come to the folk games corner, the number fair has five puzzle stalls waiting! Signed: Cheeky Fox (no hidden chalk this time)\"."
       }
     }
   ],

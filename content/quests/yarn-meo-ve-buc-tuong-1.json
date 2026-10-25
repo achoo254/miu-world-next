@@ -64,8 +64,8 @@
         }
       ],
       "en": {
-        "title": "Mèo Vẽ Màu's good news",
-        "goTo": "Go to the art room, where Mèo Vẽ Màu is bouncing in the doorway",
+        "title": "Painter Cat's good news",
+        "goTo": "Go to the art room, where Painter Cat is bouncing in the doorway",
         "lines": [
           "Meow! {name}, the head teacher said yes! The dull grey wall behind the classrooms is mine, from one end to the other!",
           "I've dreamed of this since I was a kitten. Every time I passed that wall it looked as sad as bread with no butter.",
@@ -129,7 +129,7 @@
         ],
         "en": {
           "right": [
-            "Five scenes! Mèo Vẽ Màu sketches five squares in the dirt with his tail.",
+            "Five scenes! Painter Cat sketches five squares in the dirt with his tail.",
             "{name} remembered to take away the window. Sharp eyes!",
             "Ten panels in pairs fits five scenes exactly."
           ],
@@ -143,7 +143,7 @@
       "en": {
         "title": "Measuring the wall",
         "goTo": "Go out to the yard behind the classrooms and measure the grey wall",
-        "question": "The wall has 12 big brick panels, but a window takes up 2 of them. Each scene needs exactly 2 panels. How many scenes can Mèo Vẽ Màu paint?"
+        "question": "The wall has 12 big brick panels, but a window takes up 2 of them. Each scene needs exactly 2 panels. How many scenes can Painter Cat paint?"
       }
     },
     {
@@ -236,7 +236,7 @@
         ],
         "en": {
           "right": [
-            "A whole day sits neatly on the board, and Mèo Vẽ Màu lets out a long, happy meow.",
+            "A whole day sits neatly on the board, and Painter Cat lets out a long, happy meow.",
             "{name} keeps time as well as the school bell.",
             "From rooster to moonrise, not one scene is out of time."
           ],
@@ -250,7 +250,7 @@
       "en": {
         "title": "A day on the wall",
         "goTo": "Take your ideas into Sparrow class and pin the sketches on the board",
-        "prompt": "Mèo Vẽ Màu wants the wall to tell one day at school, from early morning to late at night. Put the five sketches in the right order:",
+        "prompt": "Painter Cat wants the wall to tell one day at school, from early morning to late at night. Put the five sketches in the right order:",
         "items": [
           "Midday: a snail hides from the sun under an almond leaf",
           "Night: the moon rises over an empty schoolyard",
@@ -287,20 +287,20 @@
       ],
       "en": {
         "title": "The midday scene",
-        "goTo": "Go back to the art room to talk it over with Mèo Vẽ Màu",
+        "goTo": "Go back to the art room to talk it over with Painter Cat",
         "prompt": "The midday scene still feels empty. What should go in it, {name}?",
         "choices": [
           {
             "text": "The class eating lunch together",
-            "consequence": "Mèo Vẽ Màu sketches steaming bowls of soup at once. Just looking makes you hungry."
+            "consequence": "Painter Cat sketches steaming bowls of soup at once. Just looking makes you hungry."
           },
           {
             "text": "The head teacher dozing under the almond tree",
-            "consequence": "Mèo Vẽ Màu laughs till his whiskers shake: «I'll make his mane extra fluffy, then he won't mind.»"
+            "consequence": "Painter Cat laughs till his whiskers shake: «I'll make his mane extra fluffy, then he won't mind.»"
           },
           {
             "text": "Leave a blank panel for anyone passing to add something",
-            "consequence": "Mèo Vẽ Màu stops short: «A picture by the whole school? I'd never thought of that.»"
+            "consequence": "Painter Cat stops short: «A picture by the whole school? I'd never thought of that.»"
           }
         ]
       }
@@ -316,7 +316,7 @@
       "trigger": "auto",
       "en": {
         "title": "The first colours",
-        "prompt": "Mix the wall's first eight colours with Mèo Vẽ Màu!"
+        "prompt": "Mix the wall's first eight colours with Painter Cat!"
       }
     },
     {
@@ -327,7 +327,7 @@
       "text": "Bản phác thảo dán kín bảng lớp Chim Sẻ. Mèo Vẽ Màu quẹt chóp đuôi vào lọ màu, vẽ tặng {name} một ngôi sao nhỏ lên mu bàn tay.",
       "en": {
         "title": "The wall has a plan",
-        "text": "Sketches cover the whole board in Sparrow class. Mèo Vẽ Màu dips the tip of his tail in a paint jar and draws a little star on the back of {name}'s hand."
+        "text": "Sketches cover the whole board in Sparrow class. Painter Cat dips the tip of his tail in a paint jar and draws a little star on the back of {name}'s hand."
       }
     },
     {
@@ -338,7 +338,7 @@
       "text": "Mèo Vẽ Màu xếp các lọ màu thẳng hàng dưới chân tường, nhãn nào cũng ghi tên thật to. Cậu ấy liếc lên trời: một đám mây xám đang trôi lại gần, mà Mèo thì ghét nước nhất trên đời.",
       "en": {
         "title": "A grey cloud rolls in",
-        "text": "Mèo Vẽ Màu lines the paint jars up at the foot of the wall, every label written in big letters. He glances at the sky: a grey cloud is drifting closer, and Mèo hates water more than anything."
+        "text": "Painter Cat lines the paint jars up at the foot of the wall, every label written in big letters. He glances at the sky: a grey cloud is drifting closer, and Cat hates water more than anything."
       }
     }
   ],
@@ -352,7 +352,7 @@
     "items": {}
   },
   "en": {
-    "title": "Mèo Vẽ Màu's story, chapter 1: The grey wall",
-    "summary": "The head teacher has let Mèo Vẽ Màu paint the whole long wall behind the classrooms. {name} measures the wall, hunts for ideas in the school garden, puts the sketches in order through one long day, picks the middle scene and mixes the first colours."
+    "title": "Painter Cat's story, chapter 1: The grey wall",
+    "summary": "The head teacher has let Painter Cat paint the whole long wall behind the classrooms. {name} measures the wall, hunts for ideas in the school garden, puts the sketches in order through one long day, picks the middle scene and mixes the first colours."
   }
 }

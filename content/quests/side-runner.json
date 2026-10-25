@@ -72,7 +72,7 @@
       "text": "Vẹt vỗ cánh: {name} chạy nhanh như gió!",
       "en": {
         "title": "Vẹt Cheers",
-        "text": "Vẹt flaps his wings: {name} runs as fast as the wind!"
+        "text": "Parrot flaps his wings: {name} runs as fast as the wind!"
       }
     },
     {
@@ -83,13 +83,13 @@
       "text": "Lúc nào muốn chạy nữa, cứ tìm Vẹt ở gốc cây nhé.",
       "en": {
         "title": "Run Again Soon",
-        "text": "Whenever you fancy another run, just look for Vẹt by his tree."
+        "text": "Whenever you fancy another run, just look for Parrot by his tree."
       }
     }
   ],
   "reward": { "xp": 15, "coin": 5 },
   "en": {
-    "title": "Star Run with Vẹt",
+    "title": "Star Run with Parrot",
     "summary": "Race along the forest trail, jump over rocks, duck under branches and grab the fallen stars."
   }
 }

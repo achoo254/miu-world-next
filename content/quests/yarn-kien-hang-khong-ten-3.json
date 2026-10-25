@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "A deep breath",
-        "goTo": "Go to the wharf: Voi Bốc Hàng has been waiting since dawn",
+        "goTo": "Go to the wharf: Porter Elephant has been waiting since dawn",
         "lines": [
           "I thought about it all night, {name}. Dreams don't wait for you to learn to swim. Today I practise floating.",
           "The duck pond only comes up to my belly, and the lifeguard in the orange shirt keeps watch. Fetch me the life ring and the towel from the wooden shed, would you?"
@@ -308,7 +308,7 @@
         "prompt": "Voi dries off, then frets: «If I go to sea, who'll mind the wharf? I can't sleep if goods sit overnight with nobody counting them.»",
         "choices": [
           {
-            "text": "Ask Mèo Gắp Thú: she counts boats every evening anyway",
+            "text": "Ask Claw-Machine Cat: she counts boats every evening anyway",
             "consequence": "Voi nods: «That cat has never miscounted a boat. And mice run for their lives when they see her, even better!»"
           },
           {
@@ -373,7 +373,7 @@
     }
   },
   "en": {
-    "title": "Voi Bốc Hàng's story, chapter 3: Voi gets his feet wet",
-    "summary": "Voi Bốc Hàng wants to practise floating in the duck pond, the shallowest water in the market. {name} brings the life ring and a towel from the wooden shed, picks the right safety steps before getting in, counts ducks with the lifeguard, helps Voi choose who will mind the wharf, and learns to keep the scale balanced."
+    "title": "Porter Elephant's story, chapter 3: Voi gets his feet wet",
+    "summary": "Porter Elephant wants to practise floating in the duck pond, the shallowest water in the market. {name} brings the life ring and a towel from the wooden shed, picks the right safety steps before getting in, counts ducks with the lifeguard, helps Voi choose who will mind the wharf, and learns to keep the scale balanced."
   }
 }

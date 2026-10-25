@@ -193,7 +193,7 @@
         "choices": [
           { "text": "I'd love to be your apprentice!", "consequence": "Ông Cụ laughs till his beard shakes and carves “Apprentice” on a bed marker, planting it beside his own chair." },
           { "text": "I'll come for a lesson every week", "consequence": "Ông nods: “One lesson a week, slow and sure. Lesson one: carve with the grain.”" },
-          { "text": "I'll bring Thỏ Làm Vườn to learn too", "consequence": "Ông claps: “Two apprentices means two keepers for the windmill. Now I can rest easy!”" }
+          { "text": "I'll bring Gardener Rabbit to learn too", "consequence": "Ông claps: “Two apprentices means two keepers for the windmill. Now I can rest easy!”" }
         ]
       }
     },
@@ -226,7 +226,7 @@
     "skillXp": { "logic": 1 }
   },
   "en": {
-    "title": "Ông Cụ Trông Vườn's story, chapter 3: The wind comes home",
+    "title": "Old Garden Keeper's story, chapter 3: The wind comes home",
     "summary": "{name} warms up with Ông's shape-sorter, fetches paint and a brush for the new blade, checks it before mounting and guides water to the thirstiest bed. The windmill sings again, and Ông has an offer for {name}."
   }
 }

@@ -24,8 +24,8 @@
         { "hearts": 2, "vi": "Bác kể cháu nghe: có hôm bác chạy trọn một vòng mới biết mình bỏ quên… chính cái mũ của bác ở bến.", "en": "Here's one for you: once I drove a whole loop before noticing I'd left… my own cap at the stop." },
         { "hearts": 3, "vi": "Ghế thứ hai bên cửa sổ là ghế đẹp nhất xe. Từ nay bác giữ nó cho {name}, ai hỏi cứ bảo ghế đã có người đặt.", "en": "The second seat by the window is the best on the bus. From now on it's yours, {name}; if anyone asks, it's reserved." },
         { "hearts": 5, "vi": "{name} là hành khách thân nhất của bác rồi. Lúc nào buồn, cháu cứ lên xe ngồi một vòng, bác không thu vé đâu.", "en": "You're my dearest passenger now, {name}. Whenever you're sad, ride a loop with me. No ticket needed." },
-        { "about": "su-tu-vang", "vi": "Sư Tử Vàng với bác ngồi chung bàn hồi còn đi học. Giờ cậu ấy làm thầy hiệu trưởng, sáng nào bác cũng chở học trò tới cổng trường cậu ấy.", "en": "Sư Tử Vàng and I shared a desk at school. Now he's the headmaster, and every morning I drive pupils to his school gate." },
-        { "about": "cho-canh-sat-coi", "vi": "Chó Cảnh Sát Còi thổi còi cho xe bác qua ngã tư mỗi ngày. Bác bóp kèn chào lại, hai đứa nói chuyện bằng còi với kèn.", "en": "Chó Cảnh Sát Còi whistles my bus through the crossroads every day. I honk back; we talk in whistles and horns." },
+        { "about": "su-tu-vang", "vi": "Sư Tử Vàng với bác ngồi chung bàn hồi còn đi học. Giờ cậu ấy làm thầy hiệu trưởng, sáng nào bác cũng chở học trò tới cổng trường cậu ấy.", "en": "Golden Lion and I shared a desk at school. Now he's the headmaster, and every morning I drive pupils to his school gate." },
+        { "about": "cho-canh-sat-coi", "vi": "Chó Cảnh Sát Còi thổi còi cho xe bác qua ngã tư mỗi ngày. Bác bóp kèn chào lại, hai đứa nói chuyện bằng còi với kèn.", "en": "Whistle Police Dog whistles my bus through the crossroads every day. I honk back; we talk in whistles and horns." },
         { "vi": "Bánh mì bơ sữa ăn lúc ngồi chờ khách là ngon nhất. Ai tặng bác một ổ, bác dành ghế đầu cho cả tuần.", "en": "Butter-milk bread eaten while waiting for passengers tastes best. Bring me a loaf and the front seat is yours all week." },
         { "vi": "Lái xe buýt cũng như kể chuyện: trạm nào cũng có người lên, người xuống, mỗi người mang theo một chuyện riêng.", "en": "Driving a bus is like telling a story: at every stop someone gets on, someone gets off, and each carries a tale of their own." },
         { "vi": "{name} thích ngồi ghế đầu hay ghế cuối? Ghế đầu nhìn đường rõ, ghế cuối thì xóc vui hơn.", "en": "Front seat or back seat, {name}? Up front you see the road; at the back the bumps are more fun." },
@@ -53,8 +53,8 @@
         { "hearts": 2, "vi": "Lân kể nhỏ thôi nhé: đuôi Lân có gắn chuông, nên Lân chưa bao giờ chơi trốn tìm thắng được ai.", "en": "Just between us: my tail has a bell on it, so I've never once won at hide-and-seek." },
         { "hearts": 3, "vi": "{name} là khán giả Lân thích nhất. Mỗi lần thấy {name} đứng xem, Lân nhảy cao thêm được một gang tay.", "en": "You're my favourite audience, {name}. Whenever I see you watching, I jump a hand-span higher." },
         { "hearts": 4, "vi": "Lân tin {name} nên mới kể: có những đêm Lân tập múa một mình trên sân khấu vắng, tự đếm nhịp cho khỏi sợ.", "en": "I trust you, so I'll tell you: some nights I practise alone on the empty stage, counting beats out loud so I'm not scared." },
-        { "about": "voi-trong-hoi", "vi": "Voi Trống Hội ở trường học đánh trống to nhất Lân từng nghe. Lân mơ một lần được múa theo trống của Voi.", "en": "Voi Trống Hội at the school plays the loudest drum I've ever heard. I dream of dancing to that drum one day." },
-        { "about": "voi-keo-bong", "vi": "Múa xong là Lân chạy ngay sang chỗ Voi Kẹo Bông. Voi bảo kẹo bông giống bờm Lân, nên Lân ăn mà hơi ngượng.", "en": "After every dance I dash over to Voi Kẹo Bông. Voi says cotton candy looks like my mane, which makes eating it a bit awkward." },
+        { "about": "voi-trong-hoi", "vi": "Voi Trống Hội ở trường học đánh trống to nhất Lân từng nghe. Lân mơ một lần được múa theo trống của Voi.", "en": "Festival Drum Elephant at the school plays the loudest drum I've ever heard. I dream of dancing to that drum one day." },
+        { "about": "voi-keo-bong", "vi": "Múa xong là Lân chạy ngay sang chỗ Voi Kẹo Bông. Voi bảo kẹo bông giống bờm Lân, nên Lân ăn mà hơi ngượng.", "en": "After every dance I dash over to Cotton Candy Elephant. Voi says cotton candy looks like my mane, which makes eating it a bit awkward." },
         { "vi": "Ai tặng Lân một chú tò he hình rồng, Lân đặt lên đầu múa cùng luôn. Rồng với lân là anh em mà!", "en": "Give me a dragon tò he figure and I'll balance it on my head while dancing. Dragons and lions are cousins, after all!" },
         { "vi": "Múa lân có ba bước khó nhất: bật lên, đứng vững, và nháy mắt với khán giả. Bước thứ ba Lân giỏi nhất.", "en": "Lion dancing has three hardest moves: the leap, the balance and the wink at the crowd. I'm best at the third." },
         { "vi": "{name} biết vì sao đầu lân có chiếc gương nhỏ trên trán không? Người ta bảo gương soi cho điều xui sợ mà chạy mất.", "en": "Do you know why a lion head has a little mirror on its forehead, {name}? They say it scares bad luck away." },
@@ -82,14 +82,14 @@
         { "hearts": 2, "vi": "Voi thú thật nhé: mỗi lần quấn hỏng một que, Voi gọi nó là «kẹo nghệ thuật» và bán rẻ hơn một xu.", "en": "A confession: whenever I spin a wonky stick, I call it “art candy” and sell it a coin cheaper." },
         { "hearts": 3, "vi": "Que kẹo xoắn hình ngôi sao chỉ dành cho bạn thân thôi. {name} là người thứ ba Voi làm cho đấy.", "en": "The star-twisted stick is only for close friends. You're the third one I've ever made it for, {name}." },
         { "hearts": 4, "vi": "Voi biết {name} giữ bí mật được. Mùi đường nóng làm Voi nhớ nhà, nên ngày nào Voi cũng quấn kẹo cho đỡ nhớ.", "en": "I know you can keep a secret, {name}. The smell of warm sugar reminds me of home, so I spin every day to miss it less." },
-        { "about": "gau-banh-ngot", "vi": "Gấu Bánh Ngọt viết thư bảo bánh rán mật ong ngon hơn kẹo bông. Voi viết lại một lá dài gấp đôi để cãi.", "en": "Gấu Bánh Ngọt wrote that honey doughnuts beat cotton candy. I wrote back a letter twice as long to argue." },
-        { "about": "lan-con-ron-rang", "vi": "Lân Con Rộn Ràng múa ngang qua là kẹo bông của Voi rung rinh theo nhịp trống. Kẹo cũng mê múa lân đấy.", "en": "When Lân Con Rộn Ràng dances past, my cotton candy wobbles to the drumbeat. Even candy loves a lion dance." },
-        { "vi": "Gấu gửi sang một đĩa bánh rán mật ong, Voi nếm một miếng rồi để dành ngửi. Ai tặng Voi đĩa nữa, Voi cảm ơn mãi.", "en": "Gấu sent me a plate of honey doughnuts; I tasted one bite and kept the rest to sniff. Bring me another plate and I'll thank you forever." },
+        { "about": "gau-banh-ngot", "vi": "Gấu Bánh Ngọt viết thư bảo bánh rán mật ong ngon hơn kẹo bông. Voi viết lại một lá dài gấp đôi để cãi.", "en": "Pastry Bear wrote that honey doughnuts beat cotton candy. I wrote back a letter twice as long to argue." },
+        { "about": "lan-con-ron-rang", "vi": "Lân Con Rộn Ràng múa ngang qua là kẹo bông của Voi rung rinh theo nhịp trống. Kẹo cũng mê múa lân đấy.", "en": "When Lively Lion Cub dances past, my cotton candy wobbles to the drumbeat. Even candy loves a lion dance." },
+        { "vi": "Gấu gửi sang một đĩa bánh rán mật ong, Voi nếm một miếng rồi để dành ngửi. Ai tặng Voi đĩa nữa, Voi cảm ơn mãi.", "en": "Bear sent me a plate of honey doughnuts; I tasted one bite and kept the rest to sniff. Bring me another plate and I'll thank you forever." },
         { "vi": "Biết không, một thìa đường nhỏ quấn ra được cả một đám mây kẹo, vì kẹo bông phần lớn là… không khí!", "en": "Did you know one small spoon of sugar spins into a whole candy cloud? Cotton candy is mostly… air!" },
         { "vi": "{name} thích kẹo bông màu hồng, màu xanh hay màu vàng chanh? Voi pha màu theo ý khách mà.", "en": "Pink, blue or lemon yellow, {name}? I mix the colour to order." },
         { "vi": "Que kẹo bông cao nhất Voi từng làm cao tới tai Voi. Nó đổ trúng mũ một bác bảo vệ, bác cười cả buổi.", "en": "The tallest stick I ever spun reached my ears. It toppled onto a guard's cap, and he laughed all afternoon." },
-        { "vi": "Voi với Gấu đổi công thức qua thư lâu lắm rồi: Voi gửi cách quấn kẹo, Gấu gửi cách nấu mật. Chỉ riêng chuyện món nào ngon hơn thì chưa ai chịu nhường.", "en": "Gấu and I have swapped recipes by letter for ages: I send spinning tips, she sends honey tricks. Which treat is better, though, neither of us will ever concede." },
-        { "vi": "Hũ mật ong Gấu gửi sang, Voi đặt trên quầy cho thơm. Khách nào hỏi, Voi bảo: «Mật của một cô bạn ở Nhà của {name} đấy.»", "en": "I keep the honey jar Gấu sent on my counter for the smell. When customers ask, I say: “That's from a friend at {name}'s home.”" }
+        { "vi": "Voi với Gấu đổi công thức qua thư lâu lắm rồi: Voi gửi cách quấn kẹo, Gấu gửi cách nấu mật. Chỉ riêng chuyện món nào ngon hơn thì chưa ai chịu nhường.", "en": "Bear and I have swapped recipes by letter for ages: I send spinning tips, she sends honey tricks. Which treat is better, though, neither of us will ever concede." },
+        { "vi": "Hũ mật ong Gấu gửi sang, Voi đặt trên quầy cho thơm. Khách nào hỏi, Voi bảo: «Mật của một cô bạn ở Nhà của {name} đấy.»", "en": "I keep the honey jar Bear sent on my counter for the smell. When customers ask, I say: “That's from a friend at {name}'s home.”" }
       ]
     },
     {
@@ -113,8 +113,8 @@
         { "hearts": 2, "vi": "Chó kể nhé: có lần Chó thổi còi dừng một đàn vịt, cả đàn đứng nghiêm chào lại. Từ đó Chó quý vịt lắm.", "en": "True story: once I whistled a line of ducks to a stop, and they all stood to attention. I've adored ducks ever since." },
         { "hearts": 3, "vi": "Với {name} thì Chó nói thật: tiếng còi to thế thôi chứ Chó hiền lắm, chưa phạt ai bao giờ.", "en": "With you I'll be honest, {name}: my whistle is loud, but I'm a softie. Never fined anyone in my life." },
         { "hearts": 4, "vi": "Chó tặng {name} một chiếc còi dự phòng. Lúc nào lạc đường cứ thổi, Chó nghe tiếng là chạy tới ngay.", "en": "Here's one of my spare whistles, {name}. If you're ever lost, blow it, and I'll come running." },
-        { "about": "bac-thu-ngan-vui-ve", "vi": "Chủ nhật nào Chó cũng ra chợ phiên giúp Bác Thu Ngân Vui Vẻ xếp hàng người mua. Bác trả công bằng một đồng xu cổ.", "en": "Every Sunday I go to the fair market to help Bác Thu Ngân Vui Vẻ line up customers. He pays me in old coins." },
-        { "about": "bac-lai-xe-hai", "vi": "Bác Lái Xe Hải bóp kèn hai tiếng mỗi lần qua ngã tư, Chó thổi một tiếng còi dài đáp lại. Thế là đủ hiểu nhau.", "en": "Bác Lái Xe Hải honks twice whenever he passes, and I answer with one long whistle. That's all we need to understand each other." },
+        { "about": "bac-thu-ngan-vui-ve", "vi": "Chủ nhật nào Chó cũng ra chợ phiên giúp Bác Thu Ngân Vui Vẻ xếp hàng người mua. Bác trả công bằng một đồng xu cổ.", "en": "Every Sunday I go to the fair market to help Cheerful Cashier Uncle line up customers. He pays me in old coins." },
+        { "about": "bac-lai-xe-hai", "vi": "Bác Lái Xe Hải bóp kèn hai tiếng mỗi lần qua ngã tư, Chó thổi một tiếng còi dài đáp lại. Thế là đủ hiểu nhau.", "en": "Uncle Hải the Bus Driver honks twice whenever he passes, and I answer with one long whistle. That's all we need to understand each other." },
         { "vi": "Ai tặng Chó một chiếc chuông xe đạp, Chó gắn lên mũ. Còi cho xe, chuông cho người đi bộ, công bằng!", "en": "Give me a bicycle bell and I'll fix it to my cap. Whistle for cars, bell for walkers, fair's fair!" },
         { "vi": "Biết không, vạch kẻ đường cho người đi bộ có sọc trắng to để người lái nhìn thấy từ rất xa, cả lúc trời mưa.", "en": "Did you know zebra crossings have wide white stripes so drivers can see them from far away, even in the rain?" },
         { "vi": "{name} biết qua đường phải nhìn bên nào trước không? Nhìn trái, nhìn phải, rồi nhìn trái lần nữa. Ba lần mới chắc!", "en": "Do you know which way to look before crossing, {name}? Left, right, then left again. Three looks to be sure!" },
@@ -142,8 +142,8 @@
         { "hearts": 2, "vi": "Meo, kể {name} nghe: chuỗi domino dài nhất của Mèo đổ trước khi xong, chỉ vì một chú bồ câu đậu nhầm.", "en": "Meow, here's a story: my longest domino chain fell before I finished, all because a pigeon landed on it." },
         { "hearts": 3, "vi": "{name} là người duy nhất Mèo cho đặt viên domino cuối cùng. Viên cuối là viên quan trọng nhất.", "en": "You're the only one I let place the last domino, {name}. The last one matters most." },
         { "hearts": 4, "vi": "Mèo tin {name}: tối nào Mèo cũng chúc tượng mèo ngủ ngon. Nghe hơi lạ, nhưng tượng có vẻ thích.", "en": "I trust you, {name}: every night I wish the cat statue good night. Sounds odd, but it seems to like it." },
-        { "about": "cao-tuyet-dieu-khac", "vi": "Cáo Tuyết Điêu Khắc trên núi gửi tranh tượng băng cho Mèo xem. Tượng băng đẹp thật, nhưng tan mất; khối của Mèo thì ở lại.", "en": "Cáo Tuyết Điêu Khắc up the mountain sends me drawings of his ice sculptures. Lovely, but ice melts; my blocks stay." },
-        { "about": "voi-keo-bong", "vi": "Voi Kẹo Bông hay mang kẹo sang. Mèo ăn xong rửa tay ba lần, tay dính kẹo là domino dính theo.", "en": "Voi Kẹo Bông often brings candy over. I eat it and wash my paws three times; sticky paws make sticky dominoes." },
+        { "about": "cao-tuyet-dieu-khac", "vi": "Cáo Tuyết Điêu Khắc trên núi gửi tranh tượng băng cho Mèo xem. Tượng băng đẹp thật, nhưng tan mất; khối của Mèo thì ở lại.", "en": "Sculptor Snow Fox up the mountain sends me drawings of his ice sculptures. Lovely, but ice melts; my blocks stay." },
+        { "about": "voi-keo-bong", "vi": "Voi Kẹo Bông hay mang kẹo sang. Mèo ăn xong rửa tay ba lần, tay dính kẹo là domino dính theo.", "en": "Cotton Candy Elephant often brings candy over. I eat it and wash my paws three times; sticky paws make sticky dominoes." },
         { "vi": "Ai tặng Mèo một người tuyết nhỏ, Mèo sẽ xây cho nó một ngôi nhà khối có mái che nắng.", "en": "Give me a little snowman and I'll build it a block house with a sunshade roof." },
         { "vi": "Biết không, một viên domino đổ được viên to hơn nó một chút. Xếp khéo thì viên tí hon cũng làm đổ được viên khổng lồ.", "en": "Did you know a domino can topple one slightly bigger than itself? Line them up right and a tiny one can fell a giant." },
         { "vi": "{name} thích tháp cao chót vót hay cầu dài thật dài? Mèo đang phân vân công trình tuần sau.", "en": "Tall towers or long bridges, {name}? I can't decide next week's project." },
@@ -153,11 +153,11 @@
   ],
   "relations": [
     { "a": "bac-lai-xe-hai", "b": "cho-canh-sat-coi", "kind": "friend", "note": { "vi": "Ngày nào Chó cũng thổi còi cho xe Vàng Ươm qua ngã tư, còn Bác Hải bóp kèn hai tiếng chào lại.", "en": "Every day Chó whistles Vàng Ươm through the crossroads, and Bác Hải honks twice in reply." } },
-    { "a": "lan-con-ron-rang", "b": "voi-keo-bong", "kind": "friend", "note": { "vi": "Múa xong bài nào, Lân Con cũng sang chỗ Voi Kẹo Bông nhận một que kẹo thưởng.", "en": "After every dance Lân Con trots over to Voi Kẹo Bông for a reward stick of candy." } },
-    { "a": "meo-xep-khoi", "b": "lan-con-ron-rang", "kind": "rival", "note": { "vi": "Lân múa ngang qua là chuỗi domino của Mèo đổ sớm; hai bên giận nhau đúng năm phút rồi lại chơi.", "en": "When Lân dances past, Mèo's dominoes topple early; they sulk for exactly five minutes and then play again." } },
-    { "a": "voi-keo-bong", "b": "meo-xep-khoi", "kind": "neighbour", "note": { "vi": "Quầy kẹo của Voi nhìn thẳng ra đài phun nước của Mèo; sáng nào hai bên cũng vẫy chào nhau qua làn nước.", "en": "Voi's candy stall faces Mèo's fountain, and every morning they wave to each other across the spray." } },
+    { "a": "lan-con-ron-rang", "b": "voi-keo-bong", "kind": "friend", "note": { "vi": "Múa xong bài nào, Lân Con cũng sang chỗ Voi Kẹo Bông nhận một que kẹo thưởng.", "en": "After every dance Lân Con trots over to Cotton Candy Elephant for a reward stick of candy." } },
+    { "a": "meo-xep-khoi", "b": "lan-con-ron-rang", "kind": "rival", "note": { "vi": "Lân múa ngang qua là chuỗi domino của Mèo đổ sớm; hai bên giận nhau đúng năm phút rồi lại chơi.", "en": "When Lân dances past, Cat's dominoes topple early; they sulk for exactly five minutes and then play again." } },
+    { "a": "voi-keo-bong", "b": "meo-xep-khoi", "kind": "neighbour", "note": { "vi": "Quầy kẹo của Voi nhìn thẳng ra đài phun nước của Mèo; sáng nào hai bên cũng vẫy chào nhau qua làn nước.", "en": "Voi's candy stall faces Cat's fountain, and every morning they wave to each other across the spray." } },
     { "a": "bac-lai-xe-hai", "b": "lan-con-ron-rang", "kind": "friend", "note": { "vi": "Mùa hội nào xe Vàng Ươm cũng chở đoàn lân của Lân Con đi biểu diễn khắp các trạm.", "en": "Every festival season, Vàng Ươm carries Lân Con's troupe to perform at every stop." } },
-    { "a": "bac-lai-xe-hai", "b": "su-tu-vang", "kind": "friend", "note": { "vi": "Hai người ngồi chung bàn hồi còn đi học; giờ Sư Tử Vàng làm thầy hiệu trưởng, còn Bác Hải sáng nào cũng chở học trò tới cổng trường.", "en": "They shared a desk at school; now Sư Tử Vàng is headmaster, and Bác Hải drives pupils to his school gate every morning." } },
+    { "a": "bac-lai-xe-hai", "b": "su-tu-vang", "kind": "friend", "note": { "vi": "Hai người ngồi chung bàn hồi còn đi học; giờ Sư Tử Vàng làm thầy hiệu trưởng, còn Bác Hải sáng nào cũng chở học trò tới cổng trường.", "en": "They shared a desk at school; now Golden Lion is headmaster, and Bác Hải drives pupils to his school gate every morning." } },
     { "a": "cho-canh-sat-coi", "b": "bac-thu-ngan-vui-ve", "kind": "friend", "note": { "vi": "Chủ nhật nào Chó cũng ra chợ phiên giúp Bác Thu Ngân xếp hàng người mua; hai người cùng mê sự ngăn nắp.", "en": "Every Sunday Chó helps Bác Thu Ngân line up customers at the fair market; both adore good order." } }
   ],
   "arcs": [
@@ -183,7 +183,7 @@
           "letter": {
             "from": "su-tu-vang",
             "title": { "vi": "Thư của thầy hiệu trưởng", "en": "From the headmaster" },
-            "body": { "vi": "Chào {name}, thầy là Sư Tử Vàng. Bác Hải là bạn cùng bàn của thầy hồi còn đi học, hồi ấy bạn ấy đã mê xe buýt lắm rồi. Nghe nói có chuyến xe cuối, cả trường thầy xin góp một tràng vỗ tay thật to!", "en": "Hello {name}, this is Sư Tử Vàng. Bác Hải shared my desk at school, and even then he was mad about buses. I hear there's a last run; my whole school would like to give it a big round of applause!" },
+            "body": { "vi": "Chào {name}, thầy là Sư Tử Vàng. Bác Hải là bạn cùng bàn của thầy hồi còn đi học, hồi ấy bạn ấy đã mê xe buýt lắm rồi. Nghe nói có chuyến xe cuối, cả trường thầy xin góp một tràng vỗ tay thật to!", "en": "Hello {name}, this is Golden Lion. Bác Hải shared my desk at school, and even then he was mad about buses. I hear there's a last run; my whole school would like to give it a big round of applause!" },
             "reward": { "coins": 20, "xp": 15, "items": {} }
           }
         },
@@ -231,7 +231,7 @@
           "letter": {
             "from": "voi-trong-hoi",
             "title": { "vi": "Thư từ người đánh trống", "en": "From a fellow drummer" },
-            "body": { "vi": "Chào {name}, tớ là Voi Trống Hội ở trường. Nghe tin Lân Con tự làm đầu lân bằng giấy, tớ mừng rơn. Nhắn Lân giúp tớ: cứ múa theo nhịp tim mình, trống sẽ tự theo kịp!", "en": "Hello {name}, I'm Voi Trống Hội from the school. I was thrilled to hear Lân Con made a paper lion head. Tell Lân for me: dance to your own heartbeat, and the drum will catch up!" },
+            "body": { "vi": "Chào {name}, tớ là Voi Trống Hội ở trường. Nghe tin Lân Con tự làm đầu lân bằng giấy, tớ mừng rơn. Nhắn Lân giúp tớ: cứ múa theo nhịp tim mình, trống sẽ tự theo kịp!", "en": "Hello {name}, I'm Festival Drum Elephant from the school. I was thrilled to hear Lân Con made a paper lion head. Tell Lân for me: dance to your own heartbeat, and the drum will catch up!" },
             "reward": { "coins": 20, "xp": 15, "items": {} }
           }
         },
@@ -250,8 +250,8 @@
     {
       "id": "voi-keo-mat-ong",
       "npc": "voi-keo-bong",
-      "title": { "vi": "Kẹo bông gửi Gấu", "en": "Cotton Candy for Gấu" },
-      "teaser": { "vi": "Gấu Bánh Ngọt cá rằng chẳng ai gửi nổi một que kẹo bông còn nguyên tới Nhà của {name}. Voi muốn cãi lại bằng một món quà… {name} giúp Voi nhé, ngọt chưa?", "en": "Gấu Bánh Ngọt bet that nobody could send a stick of cotton candy to {name}'s home in one piece. I want to answer her with a present… will you help, {name}? Sweet enough?" },
+      "title": { "vi": "Kẹo bông gửi Gấu", "en": "Cotton Candy for Bear" },
+      "teaser": { "vi": "Gấu Bánh Ngọt cá rằng chẳng ai gửi nổi một que kẹo bông còn nguyên tới Nhà của {name}. Voi muốn cãi lại bằng một món quà… {name} giúp Voi nhé, ngọt chưa?", "en": "Pastry Bear bet that nobody could send a stick of cotton candy to {name}'s home in one piece. I want to answer her with a present… will you help, {name}? Sweet enough?" },
       "chapters": [
         {
           "quest": "yarn-voi-keo-mat-ong-1",
@@ -259,7 +259,7 @@
           "letter": {
             "from": "voi-keo-bong",
             "title": { "vi": "Thư đổi công thức đã gửi", "en": "The recipe swap is posted" },
-            "body": { "vi": "{name} ơi, tối nay Voi đã gửi thư cho Gấu: đổi cách quấn kẹo bông lấy cách nấu đường mật ong. Voi không kể mình định làm gì đâu, {name} cũng giữ bí mật giúp Voi nhé. Ngọt chưa? Chưa ngọt bằng một bí mật!", "en": "{name}, tonight I posted my letter to Gấu: my cotton candy method for her honey sugar recipe. I didn't say what it's for, so please keep the secret too. Sweet enough? Not as sweet as a secret!" },
+            "body": { "vi": "{name} ơi, tối nay Voi đã gửi thư cho Gấu: đổi cách quấn kẹo bông lấy cách nấu đường mật ong. Voi không kể mình định làm gì đâu, {name} cũng giữ bí mật giúp Voi nhé. Ngọt chưa? Chưa ngọt bằng một bí mật!", "en": "{name}, tonight I posted my letter to Bear: my cotton candy method for her honey sugar recipe. I didn't say what it's for, so please keep the secret too. Sweet enough? Not as sweet as a secret!" },
             "reward": { "coins": 15, "xp": 15, "items": {} }
           }
         },
@@ -268,7 +268,7 @@
           "hearts": 1,
           "letter": {
             "from": "gau-banh-ngot",
-            "title": { "vi": "Gấu nghi lắm nhé", "en": "Gấu is suspicious" },
+            "title": { "vi": "Gấu nghi lắm nhé", "en": "Bear is suspicious" },
             "body": { "vi": "{name} ơi, Voi xin công thức đường mật mà nhất định không nói để làm gì. Gấu đoán Voi định rán bánh thi với Gấu! {name} ở quảng trường thì để ý giúp Gấu nhé. Thơm chưa nào? Thơm rồi, mà Gấu vẫn lo.", "en": "{name}, Voi asked for my honey sugar recipe and simply won't say what it's for. I bet she's planning to out-bake me! Keep an eye out for me on the square. Smell that? Smells done, but I'm still worried." },
             "reward": { "coins": 20, "xp": 15, "items": {} }
           }
@@ -307,7 +307,7 @@
           "letter": {
             "from": "bac-thu-ngan-vui-ve",
             "title": { "vi": "Thư từ quầy tính tiền", "en": "A letter from the till" },
-            "body": { "vi": "Hô hô, {name} ơi! Bác là Bác Thu Ngân Vui Vẻ đây. Chó viết thư kể chuyện dẫn đàn vịt, bác cười tới mức tính nhầm cả tiền thừa. Ba vịt con, một vịt mẹ, cộng lại là bốn niềm vui! Bác gửi {name} mấy đồng xu, tính tiền nàooo!", "en": "Ho ho, {name}! It's Bác Thu Ngân Vui Vẻ. Chó wrote to tell me about guiding the ducks, and I laughed so hard I gave the wrong change. Three ducklings and one mother make four joys! Here are a few coins for you. Ring it up!" },
+            "body": { "vi": "Hô hô, {name} ơi! Bác là Bác Thu Ngân Vui Vẻ đây. Chó viết thư kể chuyện dẫn đàn vịt, bác cười tới mức tính nhầm cả tiền thừa. Ba vịt con, một vịt mẹ, cộng lại là bốn niềm vui! Bác gửi {name} mấy đồng xu, tính tiền nàooo!", "en": "Ho ho, {name}! It's Cheerful Cashier Uncle. Chó wrote to tell me about guiding the ducks, and I laughed so hard I gave the wrong change. Three ducklings and one mother make four joys! Here are a few coins for you. Ring it up!" },
             "reward": { "coins": 20, "xp": 15, "items": {} }
           }
         },

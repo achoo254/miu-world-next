@@ -82,7 +82,7 @@
       "text": "Thỏ Làm Vườn ôm rổ rau đầy: {name} trồng rau giỏi quá!",
       "en": {
         "title": "Reward",
-        "text": "Thỏ Làm Vườn hugs a full basket: {name} is a great gardener!"
+        "text": "Gardener Rabbit hugs a full basket: {name} is a great gardener!"
       }
     },
     {
@@ -93,7 +93,7 @@
       "text": "Hạt mới nảy mầm mỗi ngày, Thỏ chờ {name} ra vườn rau chăm tiếp.",
       "en": {
         "title": "See you soon",
-        "text": "New seeds sprout every day. Thỏ will wait for {name} in the veggie garden."
+        "text": "New seeds sprout every day. Rabbit will wait for {name} in the veggie garden."
       }
     }
   ],
@@ -102,7 +102,7 @@
     "coin": 5
   },
   "en": {
-    "title": "Tend the Veggie Patch with Thỏ Làm Vườn",
+    "title": "Tend the Veggie Patch with Gardener Rabbit",
     "summary": "Sow seeds in empty beds, water wilting plants, shoo the birds and pick the veggies when they're ripe."
   }
 }

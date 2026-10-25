@@ -61,10 +61,10 @@
       ],
       "en": {
         "title": "The dragonfly pond",
-        "goTo": "Go back to the swinging tree, where Khỉ Chuyền Cành is eating a banana upside down",
+        "goTo": "Go back to the swinging tree, where Branch-Swinging Monkey is eating a banana upside down",
         "lines": [
           "Hup! Today's stretch has to fly over the dragonfly pond. That pond is… er… full of dragonflies.",
-          "Vẹt Xanh left me a leaf note and said to read it before stringing the vine. But I can't sit still for more than three words before I want to jump, so read it for me?"
+          "Green Parrot left me a leaf note and said to read it before stringing the vine. But I can't sit still for more than three words before I want to jump, so read it for me?"
         ],
         "choices": [
           {
@@ -136,7 +136,7 @@
         "en": {
           "right": [
             "Rain! Khỉ looks up: grey clouds really are rolling in.",
-            "You read the old saying and understood the weather; better than Vẹt, {name}.",
+            "You read the old saying and understood the weather; better than Parrot, {name}.",
             "The elders were right. We'd better string the vine fast, hup!"
           ],
           "wrong": [
@@ -147,9 +147,9 @@
         }
       },
       "en": {
-        "title": "Vẹt Xanh's leaf note",
-        "goTo": "Go to the dragonfly pond to read the leaf note Vẹt Xanh pinned to a post",
-        "text": "To Khỉ, to Khỉ!\nOur elders have a saying: \"Dragonflies flying low mean rain, flying high mean sun, flying in between mean cloud.\" This morning the dragonflies are skimming the pond. String the vine carefully, carefully!\nVẹt Xanh",
+        "title": "Green Parrot's leaf note",
+        "goTo": "Go to the dragonfly pond to read the leaf note Green Parrot pinned to a post",
+        "text": "To Khỉ, to Khỉ!\nOur elders have a saying: \"Dragonflies flying low mean rain, flying high mean sun, flying in between mean cloud.\" This morning the dragonflies are skimming the pond. String the vine carefully, carefully!\nGreen Parrot",
         "question": "According to the note, what do this morning's low-flying dragonflies tell us?",
         "choices": [
           "Rain is coming",
@@ -378,7 +378,7 @@
     }
   },
   "en": {
-    "title": "Khỉ Chuyền Cành's story, chapter 2: Dragonflies flying low",
-    "summary": "The second stretch must cross the dragonfly pond, and the dragonflies are skimming the water. {name} reads Vẹt Xanh's leaf note, orders the vine routes from shortest to longest, finds markers for the route and decides how to string the vine before the rain."
+    "title": "Branch-Swinging Monkey's story, chapter 2: Dragonflies flying low",
+    "summary": "The second stretch must cross the dragonfly pond, and the dragonflies are skimming the water. {name} reads Green Parrot's leaf note, orders the vine routes from shortest to longest, finds markers for the route and decides how to string the vine before the rain."
   }
 }

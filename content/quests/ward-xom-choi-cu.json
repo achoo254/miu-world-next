@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Hươu Nâu Con Dốc",
+        "title": "Meet Hillside Brown Deer",
         "lines": [
-          "Huff, puff… I'm Hươu Nâu Con Dốc, and every day I help Grandpa climb that slope over there.",
+          "Huff, puff… I'm Hillside Brown Deer, and every day I help Grandpa climb that slope over there.",
           "Grandpa's having his nap now, so battle me in four riddles, {name}. Every riddle has a grandparent in it."
         ],
         "choices": [
@@ -305,8 +305,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Hươu Nâu Con Dốc",
-        "bossName": "Hươu Nâu Con Dốc",
+        "title": "Battle of wits with Hillside Brown Deer",
+        "bossName": "Hillside Brown Deer",
         "introDialogue": "Afternoon sun on the sand: here's the first riddle!",
         "winDialogue": "I give up! {name} is so caring and good with words, your grandparents must be proud."
       }
@@ -318,8 +318,8 @@
       "trigger": "auto",
       "text": "Hươu Nâu Con Dốc tặng {name} một chiếc gậy trúc nhỏ, mang về tặng ông nhé.",
       "en": {
-        "title": "Hươu Nâu Con Dốc's gift",
-        "text": "Hươu Nâu Con Dốc gives {name} a little bamboo walking stick to take home for Grandpa."
+        "title": "Hillside Brown Deer's gift",
+        "text": "Hillside Brown Deer gives {name} a little bamboo walking stick to take home for Grandpa."
       }
     },
     {
@@ -329,7 +329,7 @@
       "trigger": "auto",
       "text": "Ra hồ sen và cánh đồng gió, trùm canh khu cuối cùng của xóm đang thả chong chóng chờ {name}.",
       "en": {
-        "title": "Goodbye, Hươu Nâu Con Dốc",
+        "title": "Goodbye, Hillside Brown Deer",
         "text": "Out at the lotus lake and windy fields, the hamlet's last zone guardian is spinning pinwheels for {name}."
       }
     }
@@ -343,7 +343,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Hươu Nâu Con Dốc",
-    "summary": "Hươu Nâu Con Dốc guards the sandy shore by the old hut and asks {name} four riddles about grandparents and spelling."
+    "title": "Zone guardian: Hillside Brown Deer",
+    "summary": "Hillside Brown Deer guards the sandy shore by the old hut and asks {name} four riddles about grandparents and spelling."
   }
 }

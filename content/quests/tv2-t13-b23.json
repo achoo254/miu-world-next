@@ -92,8 +92,8 @@
         }
       ],
       "en": {
-        "title": "Cáo Tũn invites the whole forest to play",
-        "goTo": "Go to the forest clearing, Cáo Tũn is waving his tail like a feather duster",
+        "title": "Tũn the Fox invites the whole forest to play",
+        "goTo": "Go to the forest clearing, Tũn the Fox is waving his tail like a feather duster",
         "lines": [
           "{name}, perfect timing! I just invited the whole forest to play chi chi chành chành (a finger-and-palm rhyme game), and… I've completely forgotten the rules!",
           "Grrr… I'll just watch. If I sit down to join in, my giant hand will squash all those little fingers flat.",
@@ -107,7 +107,7 @@
           },
           {
             "text": "Why didn't you carve the rules in stone?",
-            "reply": "Because carving stone makes your claws ache! Next time I'll write them on Sư Tử Xù's back, no wind would dare blow that away."
+            "reply": "Because carving stone makes your claws ache! Next time I'll write them on Fluffy Lion's back, no wind would dare blow that away."
           }
         ]
       }
@@ -629,15 +629,15 @@
         "choices": [
           {
             "text": "I'll be the palm-opener, and I'll close my hand very gently!",
-            "reply": "Cáo Tũn cheers: the kindest hand in the forest! Xíu happily puts a finger into {name}'s palm."
+            "reply": "Tũn the Fox cheers: the kindest hand in the forest! Xíu happily puts a finger into {name}'s palm."
           },
           {
-            "text": "Sư Tử Xù, you open your palm, just close it very gently!",
-            "reply": "Sư Tử Xù opens his huge hand; everyone stares, then rolls about laughing. A lion's palm turns out to be wonderfully warm."
+            "text": "Fluffy Lion, you open your palm, just close it very gently!",
+            "reply": "Fluffy Lion opens his huge hand; everyone stares, then rolls about laughing. A lion's palm turns out to be wonderfully warm."
           },
           {
             "text": "I'll be a player, I pull my finger out super fast!",
-            "reply": "{name}'s finger shoots out like lightning, and Cáo Tũn laughs so hard he loses a tail hair."
+            "reply": "{name}'s finger shoots out like lightning, and Tũn the Fox laughs so hard he loses a tail hair."
           }
         ]
       }
@@ -879,8 +879,8 @@
       "trigger": "auto",
       "text": "Cáo Tũn trao cho {name} chiếc huy hiệu lá bàng khắc chữ \"Người giữ luật chi chi chành chành\", còn Sư Tử Xù ngượng ngùng tặng thêm một cái vuốt… bằng gỗ, không nhọn tí nào.",
       "en": {
-        "title": "A gift from Cáo Tũn",
-        "text": "Cáo Tũn gives {name} an almond-leaf badge engraved “Keeper of the Chi Chi Chành Chành Rules”, and Sư Tử Xù shyly adds a claw… made of wood, not the least bit sharp."
+        "title": "A gift from Tũn the Fox",
+        "text": "Tũn the Fox gives {name} an almond-leaf badge engraved “Keeper of the Chi Chi Chành Chành Rules”, and Fluffy Lion shyly adds a claw… made of wood, not the least bit sharp."
       }
     },
     {
@@ -891,7 +891,7 @@
       "text": "Từ bờ suối vọng lên tiếng \"cốc, cốc\": Hải Ly Cần đang gõ răng vào cục đất sét cứng như đá. Bạn ấy muốn nặn quà tặng cả nhà, mà đất cứ khô cong mất rồi!",
       "en": {
         "title": "Clay dried hard by the stream",
-        "text": "A “tock, tock” rises from the stream bank: Hải Ly Cần is tapping her teeth on a lump of clay as hard as stone. She wants to mould presents for her whole family, but the clay has dried out completely!"
+        "text": "A “tock, tock” rises from the stream bank: Diligent Beaver is tapping her teeth on a lump of clay as hard as stone. She wants to mould presents for her whole family, but the clay has dried out completely!"
       }
     }
   ],

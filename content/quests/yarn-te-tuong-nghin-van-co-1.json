@@ -69,10 +69,10 @@
       ],
       "en": {
         "title": "A sleeve sweeps the board",
-        "goTo": "Go to the chessboard in the great hall, where Tể Tướng Cờ Vua stands staring at an open chess box",
+        "goTo": "Go to the chessboard in the great hall, where Chess Chancellor stands staring at an open chess box",
         "lines": [
           "Twelve… thirteen… fourteen steps. Ah, {name}! You arrive just as my board finds itself in a tight corner.",
-          "This afternoon, as every Saturday, I play my weekly game with Bác Thợ Khóa Thành. I also meant to copy it into my book «A Thousand Games Nobody Loses».",
+          "This afternoon, as every Saturday, I play my weekly game with Castle Locksmith Uncle. I also meant to copy it into my book «A Thousand Games Nobody Loses».",
           "Yet, lost in thought over a move, I flung out my sleeve and scattered some pieces and some pages. A move found in no rulebook whatsoever!"
         ],
         "choices": [
@@ -317,7 +317,7 @@
       ],
       "en": {
         "title": "The first move when the guest arrives",
-        "goTo": "Go to the rows of seats, where the chancellor has laid a tea table for Bác Thợ Khóa Thành",
+        "goTo": "Go to the rows of seats, where the chancellor has laid a tea table for Castle Locksmith Uncle",
         "prompt": "He strokes his beard once, twice, three times and asks: «Today's game will be a new page of the book. In your view, how should I begin it?»",
         "choices": [
           {
@@ -381,7 +381,7 @@
     }
   },
   "en": {
-    "title": "Tể Tướng Cờ Vua's story, chapter 1: Three pieces escape the box",
-    "summary": "Lost in thought, Tể Tướng Cờ Vua flings out his sleeve and scatters his own chess pieces and book pages just before his weekly game. {name} works out how many pieces are missing, finds the three runaways, puts the pages back in order and chooses how the game should begin."
+    "title": "Chess Chancellor's story, chapter 1: Three pieces escape the box",
+    "summary": "Lost in thought, Chess Chancellor flings out his sleeve and scatters his own chess pieces and book pages just before his weekly game. {name} works out how many pieces are missing, finds the three runaways, puts the pages back in order and chooses how the game should begin."
   }
 }

@@ -68,8 +68,8 @@
         }
       ],
       "en": {
-        "title": "Ong Vàng counts too many",
-        "goTo": "Go to the sunflower stall, where Ong Vàng is buzzing around the bunches of flowers",
+        "title": "Golden Bee counts too many",
+        "goTo": "Go to the sunflower stall, where Golden Bee is buzzing around the bunches of flowers",
         "lines": [
           "Bzzz bzzz! {name}, our new hive hangs under the market tent roof and has lots of cells, and each cell needs ten sunflowers to look its best.",
           "But I fly so fast that I counted 8 flowers, added 7 more... and then forgot where I'd got to. I'm so dizzy!",
@@ -78,11 +78,11 @@
         "choices": [
           {
             "text": "I'll go get the counting sticks!",
-            "reply": "Ong Vàng does a twirl: Quick, quick, the counting sticks are scattered around the flower stall!"
+            "reply": "Golden Bee does a twirl: Quick, quick, the counting sticks are scattered around the flower stall!"
           },
           {
-            "text": "What does making 10 mean, Ong Vàng?",
-            "reply": "Ong Vàng smiles sweetly: Just bring the counting sticks back here, and I'll show you with your own eyes."
+            "text": "What does making 10 mean, Golden Bee?",
+            "reply": "Golden Bee smiles sweetly: Just bring the counting sticks back here, and I'll show you with your own eyes."
           }
         ]
       }
@@ -2743,7 +2743,7 @@
       "text": "Ong Vàng tặng {name} một hũ mật nhỏ có dán nhãn \"Bậc thầy gom đủ chục\". Cô Thơm thì tặng thêm một bông hướng dương to bằng cái mũ.",
       "en": {
         "title": "Make-a-ten badge",
-        "text": "Ong Vàng gives {name} a little jar of honey labelled \"Master of Making Ten\". Auntie Thơm adds a sunflower as big as a hat."
+        "text": "Golden Bee gives {name} a little jar of honey labelled \"Master of Making Ten\". Auntie Thơm adds a sunflower as big as a hat."
       }
     },
     {
@@ -2754,7 +2754,7 @@
       "text": "Lộp bộp! Ở giàn bầu bán giống cuối dãy, mấy quả bầu khắc bảng cộng rụng xuống đất. Khỉ Lủng Lẳng đu cành tụt xuống, mặt mếu máo: \"Bảng cộng của tớ lăn mất rồi!\"",
       "en": {
         "title": "Gourds come tumbling down",
-        "text": "Thud, thud! At the seed-gourd trellis at the end of the row, gourds carved with addition tables tumble to the ground. Khỉ Lủng Lẳng swings down from a branch, his face crumpling: \"My addition tables have rolled away!\""
+        "text": "Thud, thud! At the seed-gourd trellis at the end of the row, gourds carved with addition tables tumble to the ground. Dangling Monkey swings down from a branch, his face crumpling: \"My addition tables have rolled away!\""
       }
     }
   ],

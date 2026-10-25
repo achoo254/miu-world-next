@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Gấu Bạc Trượt Dốc",
+        "title": "Meet Silver Slope-Sliding Bear",
         "lines": [
-          "Wheee… brake! I nearly crashed into {name}. I'm Gấu Bạc Trượt Dốc, the fastest on this slope.",
+          "Wheee… brake! I nearly crashed into {name}. I'm Silver Slope-Sliding Bear, the fastest on this slope.",
           "To ski with me, first win four riddles!"
         ],
         "choices": [
@@ -94,7 +94,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Gấu skis 26 laps in the morning and 38 in the afternoon. How many laps in all?",
+            "prompt": "Bear skis 26 laps in the morning and 38 in the afternoon. How many laps in all?",
             "choices": [
               "64",
               "54",
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Gấu Bạc Trượt Dốc",
-        "bossName": "Gấu Bạc Trượt Dốc",
+        "title": "Battle of wits with Silver Slope-Sliding Bear",
+        "bossName": "Silver Slope-Sliding Bear",
         "introDialogue": "The start flag drops, and the first riddle zooms down the slope!",
         "winDialogue": "I rolled all the way to the bottom and give up! {name} crossed the line before me."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Gấu Bạc Trượt Dốc tặng {name} cặp kính trượt tuyết tí hon màu bạc.",
       "en": {
-        "title": "Gấu Bạc Trượt Dốc's gift",
-        "text": "Gấu Bạc Trượt Dốc gives {name} a tiny pair of silver ski goggles."
+        "title": "Silver Slope-Sliding Bear's gift",
+        "text": "Silver Slope-Sliding Bear gives {name} a tiny pair of silver ski goggles."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Xuống hồ băng đi {name}, trùm canh khu ở đó đố toàn chuyện băng giá.",
       "en": {
-        "title": "Goodbye, Gấu Bạc Trượt Dốc",
+        "title": "Goodbye, Silver Slope-Sliding Bear",
         "text": "Go down to the frozen lake, {name}: its zone guardian asks all about ice and frost."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Gấu Bạc Trượt Dốc",
-    "summary": "Gấu Bạc Trượt Dốc guards the ski area and asks {name} four riddles about ski laps, flags and snow."
+    "title": "Zone guardian: Silver Slope-Sliding Bear",
+    "summary": "Silver Slope-Sliding Bear guards the ski area and asks {name} four riddles about ski laps, flags and snow."
   }
 }

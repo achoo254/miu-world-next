@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "A finger in the water",
-        "goTo": "Go to the crop fields to meet Bác Nông Dân Thành",
+        "goTo": "Go to the crop fields to meet Uncle Thành the Farmer",
         "lines": [
           "Every morning I dip a finger in the field to test the water before I say hello to anyone. And yet this morning my finger came up smelling like a freshly opened pot of sticky rice.",
           "Forty years of rice and I've never met a stalk that smelled like that. Trouble is, my eyes aren't what they were: every stalk looks the same to me.",
@@ -297,14 +297,14 @@
         "choices": [
           {
             "text": "Tell the whole farm now!",
-            "consequence": "Bác shouts it from the middle of the yard. Bò Chuông Đồng rings her bell, the chicks cheep, and the whole farm feels like a festival."
+            "consequence": "Bác shouts it from the middle of the yard. Brass Bell Cow rings her bell, the chicks cheep, and the whole farm feels like a festival."
           },
           {
             "text": "Keep it secret until the rice sprouts",
             "consequence": "Bác winks and puts a finger to his lips: «Our secret. We will show off once it sprouts, for extra glory.»"
           },
           {
-            "text": "Tell only Heo Kho Hàng, who keeps the jars",
+            "text": "Tell only Warehouse Pig, who keeps the jars",
             "consequence": "Bác laughs: «Good idea. With Heo labelling the jar, nobody will take it by mistake.» The label will probably say: «Fragrant seed. Do not eat. Not even Heo.»"
           }
         ]
@@ -359,7 +359,7 @@
     "items": {}
   },
   "en": {
-    "title": "Bác Nông Dân Thành's story, chapter 1: The strangely fragrant rice",
-    "summary": "Testing the water in his field this morning, Bác Nông Dân Thành caught a strange fragrance from one rice stalk, but they all look alike. {name} finds the purple-stemmed stalk, reads his grandfather’s advice in the field diary, counts the grains, decides whether to keep it secret, then winnows the very first seeds clean."
+    "title": "Uncle Thành the Farmer's story, chapter 1: The strangely fragrant rice",
+    "summary": "Testing the water in his field this morning, Uncle Thành the Farmer caught a strange fragrance from one rice stalk, but they all look alike. {name} finds the purple-stemmed stalk, reads his grandfather’s advice in the field diary, counts the grains, decides whether to keep it secret, then winnows the very first seeds clean."
   }
 }

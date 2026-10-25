@@ -67,7 +67,7 @@
       ],
       "en": {
         "title": "The crooked paper",
-        "goTo": "Go to the craft table in the painting room, where Hổ Con Đậu is scratching his head with his paw",
+        "goTo": "Go to the craft table in the painting room, where Bean Tiger Cub is scratching his head with his paw",
         "lines": [
           "{name}, I want to fold a thank-you card for Miss Hằng, but however I fold it, the paper goes as wobbly as a rice cracker dunked in water!",
           "That's because you fold with... your claws, Đậu. And then you sneezed and sent the scissors and glue flying all over the painting room.",
@@ -80,7 +80,7 @@
           },
           {
             "text": "Let's make a really lovely card together!",
-            "reply": "Gấu Nút smiles till both eyes crinkle shut: Yes, but first we have to find all our things."
+            "reply": "Button Bear smiles till both eyes crinkle shut: Yes, but first we have to find all our things."
           }
         ]
       }
@@ -123,8 +123,8 @@
       ],
       "goTo": "Sang kệ giấy màu, Gấu Nút đang gấp thử một tờ giấy chữ nhật",
       "en": {
-        "title": "Gấu Nút shows how",
-        "goTo": "Go to the coloured paper shelf, where Gấu Nút is test-folding a rectangle of paper",
+        "title": "Button Bear shows how",
+        "goTo": "Go to the coloured paper shelf, where Button Bear is test-folding a rectangle of paper",
         "lines": [
           "Take a rectangle of paper, fold one corner over diagonally so the two edges sit exactly on top of each other, then cut off the spare strip and out comes a neat square.",
           "And to draw a line segment 6 cm long, dot one point at the 0 mark of the ruler, another at the 6 mark, then join the two points.",
@@ -902,7 +902,7 @@
       "text": "Tấm thiệp có tam giác lớn, hình vuông vức và năm que trang trí thẳng tắp. Đậu ôm thiệp chạy lon ton đi tặng cô Hằng, còn Gấu Nút cài cho {name} huy hiệu \"Đôi tay khéo léo\".",
       "en": {
         "title": "Craft badge",
-        "text": "The card has a big triangle, a neat square and five dead-straight decorating sticks. Đậu hugs the card and trots off to give it to Miss Hằng, and Gấu Nút pins the \"Clever Hands\" badge on {name}."
+        "text": "The card has a big triangle, a neat square and five dead-straight decorating sticks. Đậu hugs the card and trots off to give it to Miss Hằng, and Button Bear pins the \"Clever Hands\" badge on {name}."
       }
     },
     {
@@ -913,7 +913,7 @@
       "text": "Từ phòng trưng bày tranh vọng ra tiếng Sâu Tòn Ten: \"Treo mình ngược thế này nhìn tranh mới đẹp!\" — ấy thế mà bức nào Sâu cũng treo lộn ngược cả.",
       "en": {
         "title": "The upside-down gallery",
-        "text": "From the picture gallery comes Sâu Tòn Ten's voice: \"Paintings look best when you hang upside down like this!\" And sure enough, every painting the caterpillar hung is upside down."
+        "text": "From the picture gallery comes Dangling Caterpillar's voice: \"Paintings look best when you hang upside down like this!\" And sure enough, every painting the caterpillar hung is upside down."
       }
     }
   ],

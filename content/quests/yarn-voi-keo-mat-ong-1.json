@@ -48,11 +48,11 @@
         { "text": "Hai bạn cãi nhau qua thư lâu chưa?", "reply": "Từ hồi Voi mới mở quầy. Thư qua thư lại dày bằng cuốn sổ rồi mà chưa ai chịu thua ai." }
       ],
       "en": {
-        "title": "A letter from Gấu",
-        "goTo": "Go to the cotton candy stall at the shops entrance, where Voi Kẹo Bông is waving a letter about",
+        "title": "A letter from Bear",
+        "goTo": "Go to the cotton candy stall at the shops entrance, where Cotton Candy Elephant is waving a letter about",
         "lines": [
-          "{name}! The postman has just left a letter from Gấu Bánh Ngọt at {name}'s home in the trading market's mailbox. He says it's a proper dare.",
-          "I'm too nervous to open it. Would you go to the trading market and read it for me? Gấu's letters are always floury, so handle it gently. Sweet enough?"
+          "{name}! The postman has just left a letter from Pastry Bear at {name}'s home in the trading market's mailbox. He says it's a proper dare.",
+          "I'm too nervous to open it. Would you go to the trading market and read it for me? Bear's letters are always floury, so handle it gently. Sweet enough?"
         ],
         "choices": [
           { "text": "I'll go and get it right away!", "reply": "I'll keep spinning here and listen out with both ears." },
@@ -80,25 +80,25 @@
         "hint": "Điều Gấu cá nằm ở dòng ngay trước câu «Thơm chưa nào?».",
         "answer": { "text": "Gấu cá rằng không ai gửi được que kẹo bông nào tới nơi mà còn nguyên", "explanation": "Thư viết: «Gấu cá là chẳng ai gửi nổi một que kẹo bông còn nguyên tới đây!», mà «đây» là nhà của {name}, nơi Gấu đang ở." },
         "en": {
-          "guide": ["Find the sentence with “I bet”.", "Read the whole sentence: what does Gấu say nobody can do?"],
+          "guide": ["Find the sentence with “I bet”.", "Read the whole sentence: what does Bear say nobody can do?"],
           "hint": "The bet is on the line just before “Smell that?”.",
-          "answer": { "text": "Gấu bets no stick of cotton candy can reach her without falling apart", "explanation": "The letter says: “I bet nobody can send a stick of cotton candy here in one piece!”, and “here” is {name}'s home, where Gấu lives." }
+          "answer": { "text": "Bear bets no stick of cotton candy can reach her without falling apart", "explanation": "The letter says: “I bet nobody can send a stick of cotton candy here in one piece!”, and “here” is {name}'s home, where Bear lives." }
         }
       },
       "feedback": {
         "right": ["Đúng điều Gấu cá! Lá thư còn thơm mùi bánh rán, chắc Gấu viết ngay cạnh lò.", "{name} đọc thư tinh mắt hơn cả người viết ra nó.", "Chuẩn rồi, về kể cho Voi nghe thôi: thách thì nhận!"],
         "wrong": ["Gấu có khen mật ong thật, nhưng điều Gấu cá nằm ở một câu khác cơ.", "Hạt đậu là cục đường còn sót lại, chứ không phải que kẹo Voi quấn đâu, {name} đọc lại nhé.", "Tìm chữ «cá» trong thư, điều Gấu cá đứng ngay sau đó."],
         "en": {
-          "right": ["That's the bet! The letter still smells of doughnuts; Gấu must have written it beside the oven.", "You read that letter more sharply than the one who wrote it, {name}.", "Exactly. Back to Voi with the news: a dare is a dare!"],
-          "wrong": ["Gấu does praise her honey, but the bet is in another sentence.", "The pea is the lump of sugar left over, not a stick Voi spins, {name}. Read it again.", "Look for the word “bet” in the letter; what Gấu bets comes right after it."]
+          "right": ["That's the bet! The letter still smells of doughnuts; Bear must have written it beside the oven.", "You read that letter more sharply than the one who wrote it, {name}.", "Exactly. Back to Voi with the news: a dare is a dare!"],
+          "wrong": ["Bear does praise her honey, but the bet is in another sentence.", "The pea is the lump of sugar left over, not a stick Voi spins, {name}. Read it again.", "Look for the word “bet” in the letter; what Bear bets comes right after it."]
         }
       },
       "en": {
         "title": "A floury letter",
-        "goTo": "Go to the trading market, where Gấu's floury letter is lying on the mailbox",
-        "text": "Dear Voi Kẹo Bông,\nHere's a secret in exchange for a secret: honey heated on the lowest flame smells lovely and never turns bitter.\nAnd your cotton candy? Put it in an envelope for a day's journey and it reaches {name}'s home as a lump of sugar the size of a pea.\nI bet nobody can send a stick of cotton candy here in one piece!\nSmell that? Smells done!\nGấu Bánh Ngọt",
-        "question": "What does Gấu bet Voi?",
-        "choices": ["Nobody can send a stick of cotton candy to Gấu in one piece", "Gấu's honey is sweeter than any sugar", "Voi can't spin a candy as big as a pea"]
+        "goTo": "Go to the trading market, where Bear's floury letter is lying on the mailbox",
+        "text": "Dear Cotton Candy Elephant,\nHere's a secret in exchange for a secret: honey heated on the lowest flame smells lovely and never turns bitter.\nAnd your cotton candy? Put it in an envelope for a day's journey and it reaches {name}'s home as a lump of sugar the size of a pea.\nI bet nobody can send a stick of cotton candy here in one piece!\nSmell that? Smells done!\nPastry Bear",
+        "question": "What does Bear bet Voi?",
+        "choices": ["Nobody can send a stick of cotton candy to Bear in one piece", "Bear's honey is sweeter than any sugar", "Voi can't spin a candy as big as a pea"]
       }
     },
     {
@@ -115,7 +115,7 @@
         "hint": "Đặt tính 40 − 16: hàng đơn vị 0 không trừ được 6 thì mượn một chục nhé.",
         "answer": { "text": "24 que tre", "explanation": "40 − 16 = 24: 0 không trừ được 6, lấy 10 trừ 6 bằng 4, viết 4 nhớ 1; 1 thêm 1 bằng 2, 4 trừ 2 bằng 2. Bó còn 24 que." },
         "en": {
-          "guide": ["The bundle started with 40 sticks, and Mèo borrowed 16.", "Take the borrowed sticks away from the sticks at the start: 40 − 16."],
+          "guide": ["The bundle started with 40 sticks, and Cat borrowed 16.", "Take the borrowed sticks away from the sticks at the start: 40 − 16."],
           "hint": "Write 40 − 16 in columns: you can't take 6 from 0 in the ones, so borrow a ten.",
           "answer": { "text": "24 bamboo sticks", "explanation": "40 − 16 = 24: you can't take 6 from 0, so 10 take away 6 is 4, write 4 and carry 1; 1 plus 1 is 2, and 4 take away 2 is 2. The bundle has 24 sticks left." }
         }
@@ -125,13 +125,13 @@
         "wrong": ["Mèo mượn bớt đi rồi, số que còn lại phải ít hơn 40 chứ.", "Hàng đơn vị 0 không trừ được 6, nhớ mượn một chục nhé, {name}.", "Que Mèo mượn đang nằm ở đài phun nước, đâu còn trong bó mà cộng thêm."],
         "en": {
           "right": ["Twenty-four sticks! {name} ties the bundle up again with Voi's pink string.", "You subtracted with borrowing as neatly as Voi winds sugar, {name}.", "Enough sticks to experiment all afternoon; time to take them back to Voi."],
-          "wrong": ["Mèo borrowed some, so fewer than 40 must be left.", "You can't take 6 from 0 in the ones, so remember to borrow a ten, {name}.", "The sticks Mèo borrowed are over at the fountain, not in the bundle to add back."]
+          "wrong": ["Cat borrowed some, so fewer than 40 must be left.", "You can't take 6 from 0 in the ones, so remember to borrow a ten, {name}.", "The sticks Cat borrowed are over at the fountain, not in the bundle to add back."]
         }
       },
       "en": {
         "title": "Voi's bundle of sticks",
-        "goTo": "Go to the storeroom corner, where Voi keeps the bamboo sticks Bác Lái Xe Hải brought",
-        "question": "Bác Hải brought Voi a bundle of 40 bamboo sticks. On the way he lent Mèo Xếp Khối 16 sticks for building shapes. How many sticks are left in the bundle?"
+        "goTo": "Go to the storeroom corner, where Voi keeps the bamboo sticks Uncle Hải the Bus Driver brought",
+        "question": "Bác Hải brought Voi a bundle of 40 bamboo sticks. On the way he lent Block-Stacking Cat 16 sticks for building shapes. How many sticks are left in the bundle?"
       }
     },
     {
@@ -144,7 +144,7 @@
       "game": "cotton-candy",
       "goal": 5,
       "en": {
-        "title": "Test candy for Gấu",
+        "title": "Test candy for Bear",
         "prompt": "Sticks in hand, spin five trial sticks for Voi: keep your hand steady and unhurried, or the sugar threads will fly away!"
       }
     },
@@ -164,11 +164,11 @@
       "en": {
         "title": "The wooden test box",
         "goTo": "Take the fresh candy to the shop porch and try it in the wooden box",
-        "prompt": "Voi sets the candy in the wooden box, closes the lid, counts to fifty and opens it: the candy has shrunk to the size of a fist. Voi sighs: “Gấu is half right already. What do you think, {name}?”",
+        "prompt": "Voi sets the candy in the wooden box, closes the lid, counts to fifty and opens it: the candy has shrunk to the size of a fist. Voi sighs: “Bear is half right already. What do you think, {name}?”",
         "choices": [
-          { "text": "Mix Gấu's honey into the sugar so the threads stay springy", "consequence": "Voi slaps her trunk with a thwack: “Honeyed sugar stays supple and shrinks less!” A candy made of my sugar and Gấu's honey; let's see Gấu argue with that." },
+          { "text": "Mix Bear's honey into the sugar so the threads stay springy", "consequence": "Voi slaps her trunk with a thwack: “Honeyed sugar stays supple and shrinks less!” A candy made of my sugar and Bear's honey; let's see Bear argue with that." },
           { "text": "Stack a taller box so the lid doesn't squash the candy", "consequence": "You prop up the box with a few more wooden blocks until it's twice as tall. Nothing presses on the candy now, but after fifty it has still drooped a little. “The box only solves half,” says Voi, “the other half is in the sugar.”" },
-          { "text": "Write and ask Gấu how her doughnuts survive long trips", "consequence": "Voi pulls out a pen at once: “Asking your rival is a way of winning too.” After a moment she adds: “And send your honey recipe too, Gấu.”" }
+          { "text": "Write and ask Bear how her doughnuts survive long trips", "consequence": "Voi pulls out a pen at once: “Asking your rival is a way of winning too.” After a moment she adds: “And send your honey recipe too, Bear.”" }
         ]
       }
     },
@@ -180,7 +180,7 @@
       "text": "Voi Kẹo Bông quấn tặng {name} một que kẹo xoắn hai màu, hồng và vàng mật ong, rồi lau vòi, thổi phù một cái cho sợi đường cuối bay theo gió nhẹ.",
       "en": {
         "title": "A two-tone stick",
-        "text": "Voi Kẹo Bông spins {name} a twisted two-tone stick, pink and honey gold, then wipes her trunk and puffs the last sugar thread off on a gentle breeze."
+        "text": "Cotton Candy Elephant spins {name} a twisted two-tone stick, pink and honey gold, then wipes her trunk and puffs the last sugar thread off on a gentle breeze."
       }
     },
     {
@@ -191,7 +191,7 @@
       "text": "Tối nay Voi viết thư cho Gấu: đổi cách quấn kẹo bông lấy cách nấu đường mật ong, nhưng nhất định không nói để làm gì. Mai {name} ghé quầy kẹo nhé, có khi thư trả lời của Gấu đã tới!",
       "en": {
         "title": "A recipe swap",
-        "text": "Tonight Voi writes to Gấu: her cotton candy method in exchange for Gấu's honey sugar recipe, without saying what it's for. Drop by the candy stall tomorrow, {name}; Gấu's reply may have arrived!"
+        "text": "Tonight Voi writes to Bear: her cotton candy method in exchange for Bear's honey sugar recipe, without saying what it's for. Drop by the candy stall tomorrow, {name}; Bear's reply may have arrived!"
       }
     }
   ],
@@ -201,7 +201,7 @@
     "skillXp": { "doc-hieu": 1, "phep-tru": 1 }
   },
   "en": {
-    "title": "Voi Kẹo Bông's story, chapter 1: A dare in an envelope",
-    "summary": "Gấu Bánh Ngọt writes to bet that nobody can send a stick of cotton candy to {name}'s home in one piece. {name} reads the floury letter at the trading market, counts the bamboo sticks in the storeroom corner, spins some trial candy and tests it in a wooden box on the shop porch to see whether it could survive a long journey."
+    "title": "Cotton Candy Elephant's story, chapter 1: A dare in an envelope",
+    "summary": "Pastry Bear writes to bet that nobody can send a stick of cotton candy to {name}'s home in one piece. {name} reads the floury letter at the trading market, counts the bamboo sticks in the storeroom corner, spins some trial candy and tests it in a wooden box on the shop porch to see whether it could survive a long journey."
   }
 }

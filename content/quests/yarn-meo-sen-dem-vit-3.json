@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "A leaking pipe",
-        "goTo": "Go to the lotus pond, where Mèo is staring at a puddle spreading over the bank",
+        "goTo": "Go to the lotus pond, where Cat is staring at a puddle spreading over the bank",
         "lines": [
           "Meow. The pipe to the fields is leaking. Water everywhere. I hate everywhere.",
           "Three fields by the pond need water, each a different amount. I have written it all down; now I need someone to measure and someone to lead the water."
@@ -76,7 +76,7 @@
             "reply": "Good. Remember: enough, not extra. Extra water is wasted water."
           },
           {
-            "text": "Where's the leak, Mèo?",
+            "text": "Where's the leak, Cat?",
             "reply": "Wherever it's wet. But first, go and get the tools."
           }
         ]
@@ -193,9 +193,9 @@
         ],
         "en": {
           "right": [
-            "The pipe runs as neatly as one of Mèo's ruled lines, crossing no bank.",
+            "The pipe runs as neatly as one of Cat's ruled lines, crossing no bank.",
             "{name} finds a path better than water finds its own.",
-            "Meow. Lovely. Mèo pins this drawing to the shed wall."
+            "Meow. Lovely. Cat pins this drawing to the shed wall."
           ],
           "wrong": [
             "Three steps right along the middle row hits a bank, {name}.",
@@ -206,8 +206,8 @@
       },
       "en": {
         "title": "The new pipe",
-        "goTo": "Go into the pipe shed, where Mèo has spread the pipe drawing on a mat",
-        "prompt": "The square with the cat is where Mèo lays the start of the pipe; the star square is the field that needs water. Brick squares are field banks being planted; no pipe can be dug through them. Which moves lead the pipe to the star square? (→ right, ↓ down)",
+        "goTo": "Go into the pipe shed, where Cat has spread the pipe drawing on a mat",
+        "prompt": "The square with the cat is where Cat lays the start of the pipe; the star square is the field that needs water. Brick squares are field banks being planted; no pipe can be dug through them. Which moves lead the pipe to the star square? (→ right, ↓ down)",
         "choices": [
           "→ ↓ ↓ → → → ↓ →",
           "→ ↓ → ↓ → → ↓ →",
@@ -261,7 +261,7 @@
         ],
         "en": {
           "right": [
-            "Fifty-three litres! Mèo pours ten five-litre cans plus three litres, not a drop wrong.",
+            "Fifty-three litres! Cat pours ten five-litre cans plus three litres, not a drop wrong.",
             "{name} saw \"more than\" and knew it meant adding.",
             "The second field drinks its fill and the rice shoots turn bright green."
           ],
@@ -306,19 +306,19 @@
       "en": {
         "title": "Water left over",
         "goTo": "Go to the water-spinach bed, where the jar of extra water stands at the end",
-        "prompt": "With all three fields measured, there is still a little water in the jar. Mèo asks: \"Meow. Extra water. How do we not waste it?\"",
+        "prompt": "With all three fields measured, there is still a little water in the jar. Cat asks: \"Meow. Extra water. How do we not waste it?\"",
         "choices": [
           {
             "text": "Water the water spinach by the duck house",
-            "consequence": "The water spinach turns lush and green before your eyes. Mèo writes: \"extra water: not wasted\"."
+            "consequence": "The water spinach turns lush and green before your eyes. Cat writes: \"extra water: not wasted\"."
           },
           {
             "text": "Pour it into the ducks' trough",
-            "consequence": "The ducks crowd round and gulp it down. Mèo counts while they drink: twelve exactly, none missing, none extra."
+            "consequence": "The ducks crowd round and gulp it down. Cat counts while they drink: twelve exactly, none missing, none extra."
           },
           {
             "text": "Keep it in the jar for a scorching day",
-            "consequence": "Mèo seals the lid tight and labels it \"spare\". So tidy that even the jar looks serious."
+            "consequence": "Cat seals the lid tight and labels it \"spare\". So tidy that even the jar looks serious."
           }
         ]
       }
@@ -345,7 +345,7 @@
       "text": "Ba thửa ruộng ven đầm no nước, mặt ruộng phẳng như tấm gương. Mèo trao cho {name} một cành sen hồng, buộc nơ ngay ngắn đúng giữa cuống.",
       "en": {
         "title": "Fields full of water",
-        "text": "The three fields by the pond are full, their surfaces flat as mirrors. Mèo gives {name} a pink lotus stem, with a bow tied exactly in the middle."
+        "text": "The three fields by the pond are full, their surfaces flat as mirrors. Cat gives {name} a pink lotus stem, with a bow tied exactly in the middle."
       }
     },
     {
@@ -356,7 +356,7 @@
       "text": "Bưu tá đạp xe qua đầm, vẫy một lá thư cờ mới. Mèo chưa bóc, chỉ bảo: «Lần này Mèo không đọc một mình.»",
       "en": {
         "title": "A new chess letter",
-        "text": "The postman cycles past the pond, waving a new chess letter. Mèo doesn't open it yet; she only says: \"This time I won't read it alone.\""
+        "text": "The postman cycles past the pond, waving a new chess letter. Cat doesn't open it yet; she only says: \"This time I won't read it alone.\""
       }
     }
   ],
@@ -369,7 +369,7 @@
     }
   },
   "en": {
-    "title": "Mèo Đầm Sen's story, chapter 3: Water for the pond fields",
+    "title": "Lotus Pond Cat's story, chapter 3: Water for the pond fields",
     "summary": "The pipe to the fields is leaking. {name} gathers tools at the sluice, draws a new pipe route round the planted banks, measures the litres for each field and decides what to do with the water left over."
   }
 }

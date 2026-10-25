@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Ong Chúa Vườn Hoa",
+        "title": "Meet Flower Garden Queen Bee",
         "lines": [
-          "Bzzz… {name}, I'm Ong Chúa Vườn Hoa! The whole hive is busy making honey, so only I have time for riddles.",
+          "Bzzz… {name}, I'm Flower Garden Queen Bee! The whole hive is busy making honey, so only I have time for riddles.",
           "Here are four riddles as sweet as honey. Get them all and I'll treat you to a drop of flower nectar."
         ],
         "choices": [
@@ -310,8 +310,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Ong Chúa Vườn Hoa",
-        "bossName": "Ong Chúa Vườn Hoa",
+        "title": "Battle of wits with Flower Garden Queen Bee",
+        "bossName": "Flower Garden Queen Bee",
         "introDialogue": "Bzzz bzzz, here flies the first riddle!",
         "winDialogue": "Bzzz… I fold my wings and give up! {name} is so sweet and clever."
       }
@@ -323,8 +323,8 @@
       "trigger": "auto",
       "text": "Ong Chúa Vườn Hoa tặng {name} một hũ mật nhỏ xíu, ngọt lịm như tình chị em.",
       "en": {
-        "title": "Ong Chúa Vườn Hoa's gift",
-        "text": "Ong Chúa Vườn Hoa gives {name} a tiny pot of honey, as sweet as love between sisters."
+        "title": "Flower Garden Queen Bee's gift",
+        "text": "Flower Garden Queen Bee gives {name} a tiny pot of honey, as sweet as love between sisters."
       }
     },
     {
@@ -334,7 +334,7 @@
       "trigger": "auto",
       "text": "Ra hiên nhà đêm trăng, một trùm canh khu đang ngắm trăng và chờ đố {name}.",
       "en": {
-        "title": "Goodbye, Ong Chúa Vườn Hoa",
+        "title": "Goodbye, Flower Garden Queen Bee",
         "text": "Out on the moonlit porch a zone guardian is watching the moon and waiting to quiz {name}."
       }
     }
@@ -348,7 +348,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Ong Chúa Vườn Hoa",
-    "summary": "Ong Chúa Vườn Hoa guards the lane by the flower garden and asks {name} four riddles about babies, relatives and spelling."
+    "title": "Zone guardian: Flower Garden Queen Bee",
+    "summary": "Flower Garden Queen Bee guards the lane by the flower garden and asks {name} four riddles about babies, relatives and spelling."
   }
 }

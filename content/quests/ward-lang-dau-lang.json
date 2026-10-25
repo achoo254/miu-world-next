@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Cò Trắng Giữ Giếng",
+        "title": "Meet Well-Guarding White Egret",
         "lines": [
-          "Coo… no, I'm Cò Trắng Giữ Giếng! Everyone passing the village entrance greets me with a riddle.",
+          "Coo… no, I'm Well-Guarding White Egret! Everyone passing the village entrance greets me with a riddle.",
           "Answer four right and I'll draw {name} the coolest bucket of water in the village."
         ],
         "choices": [
@@ -260,7 +260,7 @@
             "choices": [
               "Tớ là Cò, tớ giữ giếng làng. (I'm Cò, I keep the well.)",
               "Cậu uống nước chưa? (Have you had a drink?)",
-              "Giếng làng sâu ghê! (The well is so deep!)"
+              "Village Well sâu ghê! (The well is so deep!)"
             ]
           },
           "answer": {
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Cò Trắng Giữ Giếng",
-        "bossName": "Cò Trắng Giữ Giếng",
+        "title": "Battle of wits with Well-Guarding White Egret",
+        "bossName": "Well-Guarding White Egret",
         "introDialogue": "The well is crystal clear: splash, here's the first riddle!",
         "winDialogue": "Here's your cool water, {name}! I lost, and I'm still so happy."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Cò Trắng Giữ Giếng kéo cho {name} một gàu nước mát và tặng chiếc lông trắng muốt làm bút.",
       "en": {
-        "title": "Cò Trắng Giữ Giếng's gift",
-        "text": "Cò Trắng Giữ Giếng draws {name} a bucket of cool water and gives a snow-white feather to write with."
+        "title": "Well-Guarding White Egret's gift",
+        "text": "Well-Guarding White Egret draws {name} a bucket of cool water and gives a snow-white feather to write with."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ra bãi cỏ ven sông đi {name}, ở đó có một trùm canh khu mê đố câu.",
       "en": {
-        "title": "Goodbye, Cò Trắng Giữ Giếng",
+        "title": "Goodbye, Well-Guarding White Egret",
         "text": "Head to the riverside meadow, {name}: a zone guardian there loves sentence riddles."
       }
     }
@@ -354,7 +354,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Cò Trắng Giữ Giếng",
-    "summary": "Cò Trắng Giữ Giếng guards the village entrance and asks {name} four riddles about greetings, letters and introductions."
+    "title": "Zone guardian: Well-Guarding White Egret",
+    "summary": "Well-Guarding White Egret guards the village entrance and asks {name} four riddles about greetings, letters and introductions."
   }
 }

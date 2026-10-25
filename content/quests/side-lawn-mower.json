@@ -82,7 +82,7 @@
       "text": "Thỏ Làm Vườn lăn tròn trên cỏ: bãi cỏ {name} cắt mượt như thảm!",
       "en": {
         "title": "Reward",
-        "text": "Thỏ Làm Vườn rolls on the grass: {name} mowed it smooth as a carpet!"
+        "text": "Gardener Rabbit rolls on the grass: {name} mowed it smooth as a carpet!"
       }
     },
     {
@@ -93,7 +93,7 @@
       "text": "Tuần sau cỏ lại cao, Thỏ hẹn {name} ở lối đi cạnh vườn rau.",
       "en": {
         "title": "See you soon",
-        "text": "The grass will be tall again next week. Thỏ will meet {name} on the path by the veggie garden."
+        "text": "The grass will be tall again next week. Rabbit will meet {name} on the path by the veggie garden."
       }
     }
   ],
@@ -102,7 +102,7 @@
     "coin": 5
   },
   "en": {
-    "title": "One-Stroke Mowing with Thỏ Làm Vườn",
+    "title": "One-Stroke Mowing with Gardener Rabbit",
     "summary": "Drive the mower over every square of grass without crossing a square twice, avoiding flower beds and rocks."
   }
 }

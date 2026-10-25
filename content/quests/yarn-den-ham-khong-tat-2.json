@@ -50,7 +50,7 @@
       ],
       "en": {
         "title": "The bear owns up",
-        "goTo": "Go down into the dungeon and ask Gấu Gác Hầm about the seven sheets",
+        "goTo": "Go down into the dungeon and ask Dungeon-Keeper Bear about the seven sheets",
         "lines": [
           "Shh… don't look at me like that, {name}. I haven't said anything.",
           "Oh, all right. The cloth ghosts down here, I hung them up. The cellar's so big; with «someone» else standing about it feels less empty.",
@@ -77,7 +77,7 @@
       ],
       "en": {
         "title": "An empty washing line",
-        "goTo": "Go to the west gate (Cổng tây) to meet the laundress hanging out her washing",
+        "goTo": "Go to the west gate (West Gate) to meet the laundress hanging out her washing",
         "lines": [
           "I hung seven white sheets at the west gate, and this morning there was nothing but an empty line!",
           "I've found four myself, draped over the rose bushes. How many are still missing, I couldn't tell you."
@@ -152,7 +152,7 @@
       "goal": 30,
       "en": {
         "title": "Dodge the ghosts, grab the beans",
-        "goTo": "Back in the dungeon (Hầm ngục), the cloth ghosts are swaying in every passage",
+        "goTo": "Back in the dungeon (Dungeon), the cloth ghosts are swaying in every passage",
         "prompt": "A draught has the cloth ghosts drifting all over the cellar, and the bear's bag of red beans has spilled everywhere. Collect beans, dodge ghosts, and score thirty points!"
       }
     },
@@ -164,7 +164,7 @@
       "targets": ["st-den-ham-khong-tat-ma-mat-tron", "st-den-ham-khong-tat-ma-doi-noi", "st-den-ham-khong-tat-ma-deo-no"],
       "en": {
         "title": "Take down three cloth ghosts",
-        "goTo": "Go round every nook of the cellar (Các ngóc hầm) and take down the three cloth ghosts"
+        "goTo": "Go round every nook of the cellar (Cellar Nooks) and take down the three cloth ghosts"
       }
     },
     {
@@ -199,7 +199,7 @@
         "choices": [
           { "text": "Ask for scraps of cloth and build a puppet stage right here", "consequence": "The bear's eyes light up like ten candles at once: «Puppets talk and dance, and nobody loses a sheet!»" },
           { "text": "Invite the laundress down for tea every afternoon", "consequence": "The bear blushes but nods. The laundress says yes and promises to bring sticky rice cakes. Meanwhile, the two of you try making a puppet." },
-          { "text": "Hang pictures of everyone in the castle on the cellar walls", "consequence": "The bear says he'll ask Hươu Cao to paint them, but for now a puppet to chat with comes first." }
+          { "text": "Hang pictures of everyone in the castle on the cellar walls", "consequence": "The bear says he'll ask Giraffe to paint them, but for now a puppet to chat with comes first." }
         ]
       }
     },
@@ -261,7 +261,7 @@
       },
       "en": {
         "title": "The very first puppet",
-        "goTo": "Take the cloth scraps to the puppet stage (Bục múa rối) and make the first puppet",
+        "goTo": "Take the cloth scraps to the puppet stage (Puppet Stage) and make the first puppet",
         "prompt": "Make a hand puppet from cloth scraps. Put the steps in order:",
         "items": ["Slip your hand in and make it bow", "Cut the cloth into a puppet shape", "Choose a clean piece of cloth", "Sew the edge, leaving room for a hand"]
       }
@@ -274,7 +274,7 @@
       "text": "Con rối đầu tiên của hầm ra đời: tròn ủng, mắt cúc, giọng ồm y hệt gấu. Chị Giặt Áo lấy lại đủ khăn, còn Gấu Gác Hầm có thêm một người bạn biết cúi chào.",
       "en": {
         "title": "A new friend in the cellar",
-        "text": "The cellar's first puppet is born: plump, button-eyed, with a voice as deep as the bear's. The laundress has all her sheets back, and Gấu Gác Hầm has a new friend who knows how to bow."
+        "text": "The cellar's first puppet is born: plump, button-eyed, with a voice as deep as the bear's. The laundress has all her sheets back, and Dungeon-Keeper Bear has a new friend who knows how to bow."
       }
     },
     {
@@ -295,7 +295,7 @@
     "skillXp": { "phep-tru": 1, "ke-chuyen": 1 }
   },
   "en": {
-    "title": "Gấu Gác Hầm's story, chapter 2: The cloth ghosts",
-    "summary": "Seven of the laundress's sheets have vanished, and Gấu Gác Hầm admits he hung them up as «ghosts» so the cellar would feel less empty. {name} works out how many are missing, dodges the cloth ghosts, takes the sheets down and makes the cellar's first puppet with the bear."
+    "title": "Dungeon-Keeper Bear's story, chapter 2: The cloth ghosts",
+    "summary": "Seven of the laundress's sheets have vanished, and Dungeon-Keeper Bear admits he hung them up as «ghosts» so the cellar would feel less empty. {name} works out how many are missing, dodges the cloth ghosts, takes the sheets down and makes the cellar's first puppet with the bear."
   }
 }

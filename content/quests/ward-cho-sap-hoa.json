@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Gà Mái Bán Trứng",
+        "title": "Meet Egg-Selling Hen",
         "lines": [
-          "Cluck cluck! Hello {name}, I'm Gà Mái Bán Trứng, and my egg stall is right by the flowers.",
+          "Cluck cluck! Hello {name}, I'm Egg-Selling Hen, and my egg stall is right by the flowers.",
           "The market is so busy I can't count fast enough. Battle me in four sums, and get them right for a present."
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Gà Mái Bán Trứng",
-        "bossName": "Gà Mái Bán Trứng",
+        "title": "Battle of wits with Egg-Selling Hen",
+        "bossName": "Egg-Selling Hen",
         "introDialogue": "The egg basket is full: here's the first sum!",
         "winDialogue": "Cluck, I lost! {name} adds faster than I can lay eggs."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Gà Mái Bán Trứng tặng {name} một quả trứng gỗ sơn hoa, đặt lên bàn học cho vui.",
       "en": {
-        "title": "Gà Mái Bán Trứng's gift",
-        "text": "Gà Mái Bán Trứng gives {name} a flower-painted wooden egg to keep on your desk."
+        "title": "Egg-Selling Hen's gift",
+        "text": "Egg-Selling Hen gives {name} a flower-painted wooden egg to keep on your desk."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Ghé khu bán thú nuôi đi {name}, trùm canh khu ở đó toàn đố phép trừ.",
       "en": {
-        "title": "Goodbye, Gà Mái Bán Trứng",
+        "title": "Goodbye, Egg-Selling Hen",
         "text": "Drop by the pet stalls, {name}: the zone guardian there only asks take-away riddles."
       }
     }
@@ -353,7 +353,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Gà Mái Bán Trứng",
-    "summary": "Gà Mái Bán Trứng guards the flower stalls of the vegetable and flower market and asks {name} four add-over-ten riddles."
+    "title": "Zone guardian: Egg-Selling Hen",
+    "summary": "Egg-Selling Hen guards the flower stalls of the vegetable and flower market and asks {name} four add-over-ten riddles."
   }
 }

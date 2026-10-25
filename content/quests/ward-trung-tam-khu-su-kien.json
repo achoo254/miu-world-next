@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Gấu Trúc Lễ Hội",
+        "title": "Meet Festival Panda",
         "lines": [
-          "Oh, {name}! I'm Gấu Trúc Lễ Hội, and every season I hang lights and flowers round the events area.",
+          "Oh, {name}! I'm Festival Panda, and every season I hang lights and flowers round the events area.",
           "Today I've hung riddles on the lantern string. Take down four and you win!"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Gấu Trúc Lễ Hội",
-        "bossName": "Gấu Trúc Lễ Hội",
+        "title": "Battle of wits with Festival Panda",
+        "bossName": "Festival Panda",
         "introDialogue": "The first lantern lights up, and a riddle appears!",
         "winDialogue": "I switch off my lights and give up! {name} shines like the brightest lantern of the festival."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Gấu Trúc Lễ Hội tặng {name} một chiếc đèn lồng giấy nhỏ, mùa lễ hội nào cũng mời cậu tới.",
       "en": {
-        "title": "Gấu Trúc Lễ Hội's gift",
-        "text": "Gấu Trúc Lễ Hội gives {name} a little paper lantern. You're invited to every festival."
+        "title": "Festival Panda's gift",
+        "text": "Festival Panda gives {name} a little paper lantern. You're invited to every festival."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Sân trước lâu đài có trùm canh khu canh gác nghiêm nhất trung tâm, {name} sang đó nhé.",
       "en": {
-        "title": "Goodbye, Gấu Trúc Lễ Hội",
+        "title": "Goodbye, Festival Panda",
         "text": "The castle forecourt has the strictest zone guardian in town, {name}, go there next."
       }
     }
@@ -354,7 +354,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Gấu Trúc Lễ Hội",
-    "summary": "Gấu Trúc Lễ Hội guards the seasonal events area and asks {name} four riddles about time, patterns and colours."
+    "title": "Zone guardian: Festival Panda",
+    "summary": "Festival Panda guards the seasonal events area and asks {name} four riddles about time, patterns and colours."
   }
 }

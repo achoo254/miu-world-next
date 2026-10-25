@@ -61,7 +61,7 @@
       ],
       "en": {
         "title": "Two in the morning",
-        "goTo": "At two in the morning, go to the lawn by the tower, where Thỏ Ngắm Sao has his backpack on",
+        "goTo": "At two in the morning, go to the lawn by the tower, where Stargazer Rabbit has his backpack on",
         "lines": [
           "You're up, {name}? I couldn't sleep a wink; my ears kept pricking up to listen to the sky.",
           "Tonight we go all the way to the top. I really am scared… but I'm more scared of missing the shooting stars."
@@ -107,7 +107,7 @@
           "hint": "48 − 30 = ?",
           "answer": {
             "text": "18 steps",
-            "explanation": "48 − 30 = 18. Eighteen more steps and Thỏ is standing on top of the tower."
+            "explanation": "48 − 30 = 18. Eighteen more steps and Rabbit is standing on top of the tower."
           }
         }
       },
@@ -124,7 +124,7 @@
         ],
         "en": {
           "right": [
-            "Eighteen steps! Thỏ takes a breath: less than half to go.",
+            "Eighteen steps! Rabbit takes a breath: less than half to go.",
             "{name} took the tens away in no time.",
             "Only eighteen steps left, and the shooting stars are waiting."
           ],
@@ -170,8 +170,8 @@
       "skill": "doc-hieu",
       "en": {
         "title": "Things left on the balcony",
-        "goTo": "Go out onto the clock-face balcony and fetch what Thỏ left behind",
-        "prompt": "Thỏ left three things on the balcony. Read the descriptions and find them:",
+        "goTo": "Go out onto the clock-face balcony and fetch what Rabbit left behind",
+        "prompt": "Rabbit left three things on the balcony. Read the descriptions and find them:",
         "items": [
           {
             "name": "Red woolly blanket",
@@ -240,8 +240,8 @@
           ],
           "hint": "The smallest group has exactly one star.",
           "answer": {
-            "text": "Thỏ's star, Orion's belt, Cassiopeia, the Big Dipper",
-            "explanation": "1 < 3 < 5 < 7: Thỏ's made-up star, then Orion's belt, Cassiopeia and finally the Big Dipper."
+            "text": "Rabbit's star, Orion's belt, Cassiopeia, the Big Dipper",
+            "explanation": "1 < 3 < 5 < 7: Rabbit's made-up star, then Orion's belt, Cassiopeia and finally the Big Dipper."
           }
         }
       },
@@ -260,7 +260,7 @@
           "right": [
             "One, three, five, seven: the constellations line up like a stairway to the sky.",
             "{name} sorted them before a single star could fall.",
-            "Thỏ's made-up star leads the line. How grand!"
+            "Rabbit's made-up star leads the line. How grand!"
           ],
           "wrong": [
             "The first one isn't the group with the fewest stars yet.",
@@ -272,10 +272,10 @@
       "en": {
         "title": "Sorting the constellations",
         "goTo": "Climb to the top railing and spread out the star map",
-        "prompt": "Thỏ wants to find the constellations in order, from fewest stars to most. Sort them:",
+        "prompt": "Rabbit wants to find the constellations in order, from fewest stars to most. Sort them:",
         "items": [
           "The Big Dipper, shaped like a ladle: 7 stars",
-          "Thỏ's own made-up star: 1 star",
+          "Rabbit's own made-up star: 1 star",
           "Cassiopeia, shaped like a W: 5 stars",
           "Orion's belt, three in a row: 3 stars"
         ]
@@ -306,19 +306,19 @@
       ],
       "en": {
         "title": "A wish on a falling star",
-        "prompt": "Whoosh! The first shooting star draws a bright line across the eastern sky. Thỏ grabs {name}'s hand: «Quick, make a wish!» What does {name} wish for?",
+        "prompt": "Whoosh! The first shooting star draws a bright line across the eastern sky. Rabbit grabs {name}'s hand: «Quick, make a wish!» What does {name} wish for?",
         "choices": [
           {
-            "text": "Wish that Thỏ will never fear heights again",
-            "consequence": "Thỏ giggles: «I'm standing on top of the tower right now, so your wish has already come true.»"
+            "text": "Wish that Rabbit will never fear heights again",
+            "consequence": "Rabbit giggles: «I'm standing on top of the tower right now, so your wish has already come true.»"
           },
           {
             "text": "Wish that next year the whole library comes up to watch",
-            "consequence": "Thỏ nods hard: next year they'll need more blankets, and lots more cocoa."
+            "consequence": "Rabbit nods hard: next year they'll need more blankets, and lots more cocoa."
           },
           {
-            "text": "Wish that Thỏ's made-up star appears for real",
-            "consequence": "Right then, in the empty corner of the sky, a tiny light blinks. Maybe a satellite, maybe magic; Thỏ chooses magic."
+            "text": "Wish that Rabbit's made-up star appears for real",
+            "consequence": "Right then, in the empty corner of the sky, a tiny light blinks. Maybe a satellite, maybe magic; Rabbit chooses magic."
           }
         ]
       }
@@ -334,7 +334,7 @@
       "trigger": "auto",
       "en": {
         "title": "Joining stars at the top",
-        "prompt": "Shooting stars are falling like rain! Join three constellations with Thỏ on the top railing!"
+        "prompt": "Shooting stars are falling like rain! Join three constellations with Rabbit on the top railing!"
       }
     },
     {
@@ -345,7 +345,7 @@
       "text": "Thỏ Ngắm Sao đếm được bốn mươi bảy ngôi sao băng, nhiều nhất từ trước tới giờ. Cậu ấy tặng {name} chiếc đèn đọc sách nhỏ để mang lên tháp những đêm sau.",
       "en": {
         "title": "Forty-seven shooting stars",
-        "text": "Thỏ Ngắm Sao counts forty-seven shooting stars, more than ever before. He gives {name} a little reading lamp to bring up the tower on nights to come."
+        "text": "Stargazer Rabbit counts forty-seven shooting stars, more than ever before. He gives {name} a little reading lamp to bring up the tower on nights to come."
       }
     },
     {
@@ -356,7 +356,7 @@
       "text": "Lúc trời hửng sáng, Thỏ ngồi trên lan can, tai vểnh, chẳng còn run. «Từ giờ đêm nào trời trong tớ cũng lên đây,» cậu ấy nói, «và lúc nào cũng chừa một chỗ cho {name}.»",
       "en": {
         "title": "A spot saved for a friend",
-        "text": "As dawn breaks, Thỏ sits on the railing, ears up, not trembling at all. «From now on I'll come up here every clear night,» he says, «and I'll always save a spot for {name}.»"
+        "text": "As dawn breaks, Rabbit sits on the railing, ears up, not trembling at all. «From now on I'll come up here every clear night,» he says, «and I'll always save a spot for {name}.»"
       }
     }
   ],
@@ -373,7 +373,7 @@
     }
   },
   "en": {
-    "title": "Thỏ Ngắm Sao's story, chapter 3: The night of falling stars",
-    "summary": "The night of the meteor shower has come. {name} and Thỏ Ngắm Sao climb past the second landing, collect things from the clock-face balcony, sort the constellations on the map, make a wish and join stars at the top railing, where Thỏ has never dared to go."
+    "title": "Stargazer Rabbit's story, chapter 3: The night of falling stars",
+    "summary": "The night of the meteor shower has come. {name} and Stargazer Rabbit climb past the second landing, collect things from the clock-face balcony, sort the constellations on the map, make a wish and join stars at the top railing, where Rabbit has never dared to go."
   }
 }

@@ -66,8 +66,8 @@
         }
       ],
       "en": {
-        "title": "Mèo Tam Thể sighs",
-        "goTo": "Go to the display case on the storehouse porch, where Mèo Tam Thể is polishing the glass",
+        "title": "Calico Cat sighs",
+        "goTo": "Go to the display case on the storehouse porch, where Calico Cat is polishing the glass",
         "lines": [
           "Hello {name}. I've polished the glass three times and still haven't put a single toy away, because the shelf numbers jump all over the place.",
           "That's my fault! I stuck the shelf numbers on while... munching a rice cake, so I stuck them all backwards. And the toys Uncle Sáu carved have rolled all over the porch.",
@@ -76,11 +76,11 @@
         "choices": [
           {
             "text": "Let's gather the toys first!",
-            "reply": "Mèo Tam Thể nods slowly: That's the right order, just like arranging the case."
+            "reply": "Calico Cat nods slowly: That's the right order, just like arranging the case."
           },
           {
-            "text": "Bê Phính, eating cake and not sharing?",
-            "reply": "Bê Phính brushes crumbs off her muzzle: Hee, there's exactly one piece left, I saved it for you!"
+            "text": "Chubby Calf, eating cake and not sharing?",
+            "reply": "Chubby Calf brushes crumbs off her muzzle: Hee, there's exactly one piece left, I saved it for you!"
           }
         ]
       }
@@ -124,7 +124,7 @@
       "goTo": "Ôm đồ chơi về tủ kính ở hiên kho, Mèo Tam Thể đang chờ ôn bài",
       "en": {
         "title": "Review before arranging",
-        "goTo": "Carry the toys back to the display case on the storehouse porch, where Mèo Tam Thể is waiting to review",
+        "goTo": "Carry the toys back to the display case on the storehouse porch, where Calico Cat is waiting to review",
         "lines": [
           "Every shelf has a sum stuck on it. When you subtract and the ones are not enough, borrow a ten and remember to carry 1 to the tens.",
           "A long sum? Just work from left to right, one pair of numbers at a time, as lightly as a cat on a garden wall.",
@@ -133,7 +133,7 @@
         "choices": [
           {
             "text": "One step at a time, got it!",
-            "reply": "Mèo Tam Thể helps Bê Phính up: See? Rush and down you go."
+            "reply": "Calico Cat helps Chubby Calf up: See? Rush and down you go."
           }
         ]
       }
@@ -607,20 +607,20 @@
       "goTo": "Ra băng chuyền đóng bao, Bê Phính ôm khư khư chiếc con quay, Mèo Tam Thể theo sau",
       "en": {
         "title": "Which shelf for the spinning top?",
-        "goTo": "Go to the bagging conveyor, where Bê Phính is clutching a spinning top, with Mèo Tam Thể close behind",
+        "goTo": "Go to the bagging conveyor, where Chubby Calf is clutching a spinning top, with Calico Cat close behind",
         "lines": [
-          "There's still the spinning top and a few small things. I'd like the top on the middle shelf, but Bê Phính keeps insisting on the top shelf.",
+          "There's still the spinning top and a few small things. I'd like the top on the middle shelf, but Chubby Calf keeps insisting on the top shelf.",
           "The top shelf, so it looks grand! A top that spins so fast has to stand up highest.",
           "{name}, you decide. But first let's finish the last review puzzles."
         ],
         "choices": [
           {
             "text": "The middle shelf, easy to admire",
-            "reply": "Mèo Tam Thể gives a soft little meow, looking very pleased."
+            "reply": "Calico Cat gives a soft little meow, looking very pleased."
           },
           {
             "text": "The top shelf, so it looks grand",
-            "reply": "Bê Phính jumps for joy and nearly knocks over the conveyor belt."
+            "reply": "Chubby Calf jumps for joy and nearly knocks over the conveyor belt."
           }
         ]
       }
@@ -933,7 +933,7 @@
       "text": "Tủ kính sáng đèn, món nào cũng đúng ngăn. Mèo Tam Thể tặng {name} chiếc con quay nhỏ sơn ba màu loang lổ như bộ lông của mình, còn Bê Phính mang ra miếng bánh để dành… đã bị chính Bê Phính cắn mất một nửa.",
       "en": {
         "title": "The sparkling display case",
-        "text": "The display case lights up, with every toy on the right shelf. Mèo Tam Thể gives {name} a little spinning top painted in three patchy colours like her own fur, and Bê Phính brings out the saved piece of cake... which Bê Phính has already bitten in half."
+        "text": "The display case lights up, with every toy on the right shelf. Calico Cat gives {name} a little spinning top painted in three patchy colours like her own fur, and Chubby Calf brings out the saved piece of cake... which Chubby Calf has already bitten in half."
       }
     },
     {
@@ -944,7 +944,7 @@
       "text": "Từ phòng vẽ của Lâu đài, Hươu Cao thò cái cổ dài qua ô cửa sổ kính màu: \"Tớ chấm đầy sao lên giá vẽ lớn rồi mà chưa nối được thành chòm sao nào cả!\"",
       "en": {
         "title": "Star dots on the easel",
-        "text": "From the Castle's painting room, Hươu Cao pokes her long neck through the stained-glass window: \"I've dotted stars all over the big easel, but I haven't managed to join them into a single constellation!\""
+        "text": "From the Castle's painting room, Giraffe pokes her long neck through the stained-glass window: \"I've dotted stars all over the big easel, but I haven't managed to join them into a single constellation!\""
       }
     }
   ],

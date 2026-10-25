@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "The pop-up stall opens",
-        "goTo": "Stop at the lane well early, where Mèo Trà Đá has a basket of ice ready",
+        "goTo": "Stop at the lane well early, where Iced Tea Cat has a basket of ice ready",
         "lines": [
           "Up early, honoured guest {name}! I just heard: the whole lane plans to stop at the pop-up stall for tea before work. Meow!",
           "I carried the stall things over to the porch last night, but this morning I've been too rushed to set them out."
@@ -159,7 +159,7 @@
         ],
         "en": {
           "right": [
-            "The man in the red shirt! Mèo pours him the first glass, fair and square, nobody grumbles.",
+            "The man in the red shirt! Cat pours him the first glass, fair and square, nobody grumbles.",
             "You lined up three customers in your head as neatly as I line glasses on a tray, {name}.",
             "Meow! You guessed it like the lane’s own detective."
           ],
@@ -256,7 +256,7 @@
         ],
         "en": {
           "right": [
-            "The schedule is right! Mèo pins it on the post and rings the bell at each time.",
+            "The schedule is right! Cat pins it on the post and rings the bell at each time.",
             "You read the 24-hour times better than the clock by the well, {name}.",
             "Morning, midday, afternoon, evening: no customer waits. Meow meow!"
           ],
@@ -269,7 +269,7 @@
       },
       "en": {
         "title": "Appointments by the clock",
-        "goTo": "Go back to the hammock under the porch, where Mèo clipped the appointment book to its edge",
+        "goTo": "Go back to the hammock under the porch, where Cat clipped the appointment book to its edge",
         "prompt": "The book lists when each customer will collect tea. Order them from earliest to latest in the day:",
         "items": [
           "The market-goer: 6 in the morning",
@@ -308,11 +308,11 @@
       "en": {
         "title": "So many customers!",
         "goTo": "Go into the warm cave, where a long queue waits at the makeshift wooden counter",
-        "prompt": "Customers pour in and everyone orders at once. Mèo is flustered: \"Meow… honoured guest {name}, what do we do?\"",
+        "prompt": "Customers pour in and everyone orders at once. Cat is flustered: \"Meow… honoured guest {name}, what do we do?\"",
         "choices": [
           {
             "text": "Hand out numbers on bottle caps and call them in turn",
-            "consequence": "Each customer holds a numbered bottle cap. Mèo calls out each number, and the counter is suddenly orderly."
+            "consequence": "Each customer holds a numbered bottle cap. Cat calls out each number, and the counter is suddenly orderly."
           },
           {
             "text": "Serve the elderly and little children first",
@@ -320,7 +320,7 @@
           },
           {
             "text": "Pour a full tray of glasses for people to help themselves",
-            "consequence": "The tray empties and fills again. Mèo pours, {name} carries, and nobody has to wait."
+            "consequence": "The tray empties and fills again. Cat pours, {name} carries, and nobody has to wait."
           }
         ]
       }
@@ -347,7 +347,7 @@
       "text": "Tới trưa, thùng đá vơi một nửa mà chẳng ai phải chờ lâu. Mèo đếm xu, chia cho {name} một phần, vừa đếm vừa kể chuyện cả ngõ.",
       "en": {
         "title": "A smooth morning",
-        "text": "By noon the ice bucket is half empty and nobody waited long. Mèo counts the coins, gives {name} a share, and gossips about the whole lane while counting."
+        "text": "By noon the ice bucket is half empty and nobody waited long. Cat counts the coins, gives {name} a share, and gossips about the whole lane while counting."
       }
     },
     {
@@ -358,7 +358,7 @@
       "text": "Khách hỏi mãi: quán có vị trà nào riêng không? Mèo quyết định nghĩ ra một vị mới, có tên riêng, uống một lần là nhớ.",
       "en": {
         "title": "A brand-new flavour",
-        "text": "Customers keep asking: does the stall have its own special tea? Mèo decides to invent a new flavour with its own name, one sip and you never forget."
+        "text": "Customers keep asking: does the stall have its own special tea? Cat decides to invent a new flavour with its own name, one sip and you never forget."
       }
     }
   ],
@@ -371,7 +371,7 @@
     }
   },
   "en": {
-    "title": "Mèo Trà Đá's story, chapter 2: The morning rush",
-    "summary": "Mèo Trà Đá's pop-up stall is packed the moment it opens. {name} finds the sign, bell and ice bucket, works out who came first, orders the appointments by the time of day and helps keep the stall from chaos."
+    "title": "Iced Tea Cat's story, chapter 2: The morning rush",
+    "summary": "Iced Tea Cat's pop-up stall is packed the moment it opens. {name} finds the sign, bell and ice bucket, works out who came first, orders the appointments by the time of day and helps keep the stall from chaos."
   }
 }

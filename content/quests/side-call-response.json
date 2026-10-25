@@ -50,7 +50,7 @@
       "en": {
         "title": "Invitation",
         "lines": [
-          "Listen, {name}: whatever rhythm Vẹt the parrot claps, the whole team copies it.",
+          "Listen, {name}: whatever rhythm Parrot claps, the whole team copies it.",
           "Listen carefully, then tap each circle right on time, with not one extra tap."
         ],
         "choices": [
@@ -82,7 +82,7 @@
       "text": "Cả đội nhạc vỗ tay theo {name}, Voi Trống Hội khen: nhịp chuẩn từng li!",
       "en": {
         "title": "Reward",
-        "text": "The whole band claps along with {name}, and Voi Trống Hội says: spot-on rhythm!"
+        "text": "The whole band claps along with {name}, and Festival Drum Elephant says: spot-on rhythm!"
       }
     },
     {
@@ -93,7 +93,7 @@
       "text": "Lần sau bạn Vẹt sẽ vỗ nhịp khó hơn, cậu nhớ ghé thử sức nhé.",
       "en": {
         "title": "See you soon",
-        "text": "Next time Vẹt will clap a harder rhythm, so remember to come try it."
+        "text": "Next time Parrot will clap a harder rhythm, so remember to come try it."
       }
     }
   ],
@@ -102,7 +102,7 @@
     "coin": 5
   },
   "en": {
-    "title": "Copy the clapping beat with Voi Trống Hội",
-    "summary": "Vẹt claps a rhythm and the dots light up with it: when it is your turn, clap it back exactly."
+    "title": "Copy the clapping beat with Festival Drum Elephant",
+    "summary": "Parrot claps a rhythm and the dots light up with it: when it is your turn, clap it back exactly."
   }
 }

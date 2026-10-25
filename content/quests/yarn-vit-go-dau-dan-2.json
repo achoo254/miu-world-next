@@ -62,9 +62,9 @@
       ],
       "en": {
         "title": "A letter has come!",
-        "goTo": "Go to the fishpond: Chó Lùa Vịt has just got a letter",
+        "goTo": "Go to the fishpond: Duck-Herding Dog has just got a letter",
         "lines": [
-          "Woof! A letter! A letter from Ông Cụ Trông Vườn! Oh, sorry, too loud, but I really am that happy.",
+          "Woof! A letter! A letter from Old Garden Keeper! Oh, sorry, too loud, but I really am that happy.",
           "I’m so nervous the words keep dancing on the page. Read it for me, {name}, slowly, one line at a time."
         ],
         "choices": [
@@ -152,7 +152,7 @@
       },
       "en": {
         "title": "Reading Ông Cụ's letter",
-        "text": "Dear Chó,\nWell now, a wooden duck with a cracked belly is like an old man with a sore back: both can be mended. I carved that duck from xoan wood. Xoan is light, so it floats gently; lim wood is heavy and sinks like a stone.\nHere is what to do: scrape the mud out of the crack, press resin in until it is sealed, tap it gently with a wooden mallet so the resin grips, and wait until the resin is cool and hard before it goes back in the water. Ask Heo Kho Hàng for the resin, and ask someone with clever hands to help with the filling.\nYour old friend,\nÔng Cụ Trông Vườn",
+        "text": "Dear Chó,\nWell now, a wooden duck with a cracked belly is like an old man with a sore back: both can be mended. I carved that duck from xoan wood. Xoan is light, so it floats gently; lim wood is heavy and sinks like a stone.\nHere is what to do: scrape the mud out of the crack, press resin in until it is sealed, tap it gently with a wooden mallet so the resin grips, and wait until the resin is cool and hard before it goes back in the water. Ask Warehouse Pig for the resin, and ask someone with clever hands to help with the filling.\nYour old friend,\nOld Garden Keeper",
         "question": "According to Ông Cụ's letter, why does the wooden duck float on the pond?",
         "choices": [
           "Because he painted it yellow",
@@ -220,8 +220,8 @@
       },
       "en": {
         "title": "How much resin is left?",
-        "goTo": "Go to the farm market for the pot of resin Heo Kho Hàng sent to sell",
-        "question": "The label Heo Kho Hàng stuck on the pot says: «Oink, item seven: pine resin, 50 spoonfuls at the start. The tinker bought 18 spoonfuls to mend Bò’s bell.» How many spoonfuls of resin are left in the pot?"
+        "goTo": "Go to the farm market for the pot of resin Warehouse Pig sent to sell",
+        "question": "The label Warehouse Pig stuck on the pot says: «Oink, item seven: pine resin, 50 spoonfuls at the start. The tinker bought 18 spoonfuls to mend Bò’s bell.» How many spoonfuls of resin are left in the pot?"
       }
     },
     {
@@ -294,7 +294,7 @@
         ],
         "en": {
           "right": [
-            "Ông Lão Pháo Đất pats {name} on the head: «These hands could be a craftsman’s!»",
+            "Grandpa Firecracker Master pats {name} on the head: «These hands could be a craftsman’s!»",
             "The crack has closed up perfectly; it feels smooth to the touch.",
             "Step by step, just as the letter said. Ông Cụ would be so pleased."
           ],
@@ -307,8 +307,8 @@
       },
       "en": {
         "title": "Filling the duck's belly",
-        "goTo": "Take the resin to the farmyard, to Ông Lão Pháo Đất’s mending bench",
-        "prompt": "Ông Lão Pháo Đất warms the pot of resin by his charcoal stove, then asks {name} to put the filling steps in order, just as Ông Cụ’s letter says:",
+        "goTo": "Take the resin to the farmyard, to Grandpa Firecracker Master’s mending bench",
+        "prompt": "Grandpa Firecracker Master warms the pot of resin by his charcoal stove, then asks {name} to put the filling steps in order, just as Ông Cụ’s letter says:",
         "items": [
           "Tap gently with the mallet so the resin grips",
           "Wait for the resin to cool and harden",
@@ -343,7 +343,7 @@
       ],
       "en": {
         "title": "Making the duck pretty",
-        "prompt": "The crack has closed. Ông Lão Pháo Đất has a little paint left and a tuft of red wool: «How would you like to brighten up the wooden duck?»",
+        "prompt": "The crack has closed. Grandpa Firecracker Master has a little paint left and a tuft of red wool: «How would you like to brighten up the wooden duck?»",
         "choices": [
           {
             "text": "Repaint the yellow beak so it shines",
@@ -384,7 +384,7 @@
       "text": "Vịt gỗ nổi thẳng băng trong xô nước, không nghiêng chút nào. Chó Lùa Vịt sủa một tiếng thật to vì sướng, rồi vội xin lỗi cả chuồng bò.",
       "en": {
         "title": "Floating perfectly straight",
-        "text": "The wooden duck floats perfectly level in the bucket, not leaning one bit. Chó Lùa Vịt lets out an enormous happy bark, then hurries to apologise to every cow in the shed."
+        "text": "The wooden duck floats perfectly level in the bucket, not leaning one bit. Duck-Herding Dog lets out an enormous happy bark, then hurries to apologise to every cow in the shed."
       }
     },
     {
@@ -410,7 +410,7 @@
     "items": {}
   },
   "en": {
-    "title": "Chó Lùa Vịt's story, chapter 2: A letter from an old friend",
-    "summary": "Ông Cụ Trông Vườn writes back with how to mend the crack under the wooden duck. {name} reads the letter to Chó Lùa Vịt, works out how much is left in the pot of resin Heo Kho Hàng sent to the market, puts the filling steps in order at Ông Lão Pháo Đất’s bench, chooses how to brighten the duck and tests it in a bucket of water by the cowshed door."
+    "title": "Duck-Herding Dog's story, chapter 2: A letter from an old friend",
+    "summary": "Old Garden Keeper writes back with how to mend the crack under the wooden duck. {name} reads the letter to Duck-Herding Dog, works out how much is left in the pot of resin Warehouse Pig sent to the market, puts the filling steps in order at Grandpa Firecracker Master’s bench, chooses how to brighten the duck and tests it in a bucket of water by the cowshed door."
   }
 }

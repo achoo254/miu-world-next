@@ -66,8 +66,8 @@
         }
       ],
       "en": {
-        "title": "Gấu Băng packs a box",
-        "goTo": "Go into the cool corner of the storehouse at the end of the market, where Gấu Băng is sneezing because it's... too warm",
+        "title": "Ice Bear packs a box",
+        "goTo": "Go into the cool corner of the storehouse at the end of the market, where Ice Bear is sneezing because it's... too warm",
         "lines": [
           "Aaa-choo! The market is so crowded and hot, only this corner of the storehouse is cool. I'm wrapping presents to send home to the far north.",
           "But the postman says: no weight on the box, no delivery. And I've completely forgotten how to add kilograms!",
@@ -76,11 +76,11 @@
         "choices": [
           {
             "text": "I'll help you label them!",
-            "reply": "Gấu Băng gives {name} a big hug: Oh, this hug's a bit chilly, sorry about that!"
+            "reply": "Ice Bear gives {name} a big hug: Oh, this hug's a bit chilly, sorry about that!"
           },
           {
             "text": "Is the far north really far, Băng?",
-            "reply": "Gấu Băng: Very far! So far that the snow there is as deep as... three snow bears standing on each other's shoulders."
+            "reply": "Ice Bear: Very far! So far that the snow there is as deep as... three snow bears standing on each other's shoulders."
           }
         ]
       }
@@ -745,7 +745,7 @@
       "text": "Gấu Băng quàng cho {name} chiếc khăn len trắng muốt đan ở phương Bắc. \"Lần sau tớ gửi thư kể chuyện tuyết cho cậu nhé!\"",
       "en": {
         "title": "A snow-white wool scarf",
-        "text": "Gấu Băng wraps {name} in a snow-white wool scarf knitted in the far north. \"Next time I'll send you a letter all about the snow!\""
+        "text": "Ice Bear wraps {name} in a snow-white wool scarf knitted in the far north. \"Next time I'll send you a letter all about the snow!\""
       }
     },
     {
@@ -756,7 +756,7 @@
       "text": "Ở Nông trại, trong xưởng nông cụ vang lên tiếng loảng xoảng: Lợn Lấm Lem làm đổ cả hộp ốc vít ra bàn sửa xe, đang cuống cuồng đếm theo chục và rời.",
       "en": {
         "title": "Clattering in the tool workshop",
-        "text": "At the Farm, there's a clatter from the tool workshop: Lợn Lấm Lem has spilled a whole box of nuts and bolts onto the repair bench and is frantically counting them in tens and ones."
+        "text": "At the Farm, there's a clatter from the tool workshop: Muddy Pig has spilled a whole box of nuts and bolts onto the repair bench and is frantically counting them in tens and ones."
       }
     }
   ],

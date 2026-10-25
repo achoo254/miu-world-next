@@ -65,7 +65,7 @@
       ],
       "en": {
         "title": "The poorly big drum",
-        "goTo": "Go over by the stage, where Voi Trống Hội is scratching his head beside his drum",
+        "goTo": "Go over by the stage, where Festival Drum Elephant is scratching his head beside his drum",
         "lines": [
           "Boom… thud. Boom… thud. Hear that, {name}? My big drum's poorly. It sounds like hitting a pillow.",
           "The school show is in three days and the drum team opens it. With a slack drumhead like this the whole yard will nod off. Boom!",
@@ -276,7 +276,7 @@
         ],
         "en": {
           "right": [
-            "Crash! Heo Chũm Chọe clangs his cymbals: hole 6 is spot on!",
+            "Crash! Cymbal Pig clangs his cymbals: hole 6 is spot on!",
             "Pull in opposite pairs and the drumhead lies flat as a pond.",
             "{name} found the opposite hole faster than I could."
           ],
@@ -289,8 +289,8 @@
       },
       "en": {
         "title": "Pulling the cord in pairs",
-        "goTo": "Take the tools to the team shelter, where Heo Chũm Chọe knows a lacing trick",
-        "prompt": "Heo Chũm Chọe explains: the drum has eight lacing holes, numbered 1 to 8 round the rim like a clock face. After pulling one hole, pull the hole straight across so the drum stays even. We did 1 then 5, 3 then 7; now 2, then which hole?",
+        "goTo": "Take the tools to the team shelter, where Cymbal Pig knows a lacing trick",
+        "prompt": "Cymbal Pig explains: the drum has eight lacing holes, numbered 1 to 8 round the rim like a clock face. After pulling one hole, pull the hole straight across so the drum stays even. We did 1 then 5, 3 then 7; now 2, then which hole?",
         "choices": [
           "Hole 4",
           "Hole 6",
@@ -325,12 +325,12 @@
       ],
       "en": {
         "title": "How shall we test it?",
-        "goTo": "Take the laced drum back to Voi Trống Hội beside the stage",
+        "goTo": "Take the laced drum back to Festival Drum Elephant beside the stage",
         "prompt": "The cord's tight! How shall we test it, {name}?",
         "choices": [
           {
             "text": "Tap it gently once and listen",
-            "consequence": "Boom! A round, warm sound. Voi Trống Hội waves his trunk: a light hand and every beat rings clear."
+            "consequence": "Boom! A round, warm sound. Festival Drum Elephant waves his trunk: a light hand and every beat rings clear."
           },
           {
             "text": "Let the drum sit in the sun so the cord dries",
@@ -338,7 +338,7 @@
           },
           {
             "text": "Hit it as hard as you can and make the whole yard jump",
-            "consequence": "BOOM! The sparrows on the roof scatter. Voi Trống Hội chuckles: that's loud, but a show needs soft beats too."
+            "consequence": "BOOM! The sparrows on the roof scatter. Festival Drum Elephant chuckles: that's loud, but a show needs soft beats too."
           }
         ]
       }
@@ -354,7 +354,7 @@
       "trigger": "auto",
       "en": {
         "title": "Test the big drum",
-        "prompt": "Drum along with Voi Trống Hội and score twenty-four points!"
+        "prompt": "Drum along with Festival Drum Elephant and score twenty-four points!"
       }
     },
     {
@@ -365,7 +365,7 @@
       "text": "Tiếng trống vang lại khắp sân. Voi Trống Hội đập vòi vào ngực ba cái tùng tùng tùng: «Bạn của tớ đấy, cả sân nghe thấy chưa!»",
       "en": {
         "title": "The drum is back",
-        "text": "The drum booms across the yard again. Voi Trống Hội thumps his chest with his trunk three times, boom boom boom: «That's my friend, did everyone hear?»"
+        "text": "The drum booms across the yard again. Festival Drum Elephant thumps his chest with his trunk three times, boom boom boom: «That's my friend, did everyone hear?»"
       }
     },
     {
@@ -376,7 +376,7 @@
       "text": "Lúc cất dùi, Voi Trống Hội thò vòi vào lòng trống rồi đứng sững: «Mảnh sành của tớ đâu rồi?» Cậu ấy chưa kịp kể đó là gì thì mặt đã buồn thiu.",
       "en": {
         "title": "The missing shard",
-        "text": "As he puts his sticks away, Voi Trống Hội reaches his trunk inside the drum and freezes: «Where's my little shard?» Before he can say what it is, his face falls."
+        "text": "As he puts his sticks away, Festival Drum Elephant reaches his trunk inside the drum and freezes: «Where's my little shard?» Before he can say what it is, his face falls."
       }
     }
   ],
@@ -390,7 +390,7 @@
     "items": {}
   },
   "en": {
-    "title": "Voi Trống Hội's story, chapter 1: The slack drumhead",
-    "summary": "The school show is three days away, and Voi Trống Hội's big drum only goes thud-thud. {name} reads the show programme, gathers tools from the prop store, laces the drum tight in the right order and plays it for the whole yard."
+    "title": "Festival Drum Elephant's story, chapter 1: The slack drumhead",
+    "summary": "The school show is three days away, and Festival Drum Elephant's big drum only goes thud-thud. {name} reads the show programme, gathers tools from the prop store, laces the drum tight in the right order and plays it for the whole yard."
   }
 }

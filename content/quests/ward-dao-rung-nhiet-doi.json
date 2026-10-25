@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Báo Đốm Rừng Mưa",
+        "title": "Meet Rainforest Jaguar",
         "lines": [
-          "Swish! I'm Báo Đốm Rừng Mưa, the fastest in this forest. Can {name} keep up with me?",
+          "Swish! I'm Rainforest Jaguar, the fastest in this forest. Can {name} keep up with me?",
           "I don't race on foot, I race with riddles. Four of them: the quickest mind wins!"
         ],
         "choices": [
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Báo Đốm Rừng Mưa",
-        "bossName": "Báo Đốm Rừng Mưa",
+        "title": "Battle of wits with Rainforest Jaguar",
+        "bossName": "Rainforest Jaguar",
         "introDialogue": "Rain patters in the forest, and the first riddle leaps from a bush!",
         "winDialogue": "I stretch out on a rock and give up! {name} is quicker-witted than a leopard."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Báo Đốm Rừng Mưa tặng {name} một chiếc lá chuối rừng to làm ô che mưa.",
       "en": {
-        "title": "Báo Đốm Rừng Mưa's gift",
-        "text": "Báo Đốm Rừng Mưa gives {name} a big wild banana leaf to use as an umbrella."
+        "title": "Rainforest Jaguar's gift",
+        "text": "Rainforest Jaguar gives {name} a big wild banana leaf to use as an umbrella."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Đi tiếp tới khu di tích cổ, trùm canh khu ở đó đã canh đền hàng trăm năm rồi, {name} ạ.",
       "en": {
-        "title": "Goodbye, Báo Đốm Rừng Mưa",
+        "title": "Goodbye, Rainforest Jaguar",
         "text": "On to the ancient ruins, {name}: their zone guardian has watched the temple for hundreds of years."
       }
     }
@@ -354,7 +354,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Báo Đốm Rừng Mưa",
-    "summary": "Báo Đốm Rừng Mưa guards the rainforest waterfall and asks {name} four riddles about forest trees, waterfall rocks and the rope bridge."
+    "title": "Zone guardian: Rainforest Jaguar",
+    "summary": "Rainforest Jaguar guards the rainforest waterfall and asks {name} four riddles about forest trees, waterfall rocks and the rope bridge."
   }
 }

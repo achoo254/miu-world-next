@@ -99,7 +99,7 @@
       ],
       "en": {
         "title": "Two brothers tug on a pinwheel",
-        "goTo": "Run to the windy field, where Thỏ Tí and little Tẹo are tugging back and forth",
+        "goTo": "Run to the windy field, where Tí the Bunny and little Tẹo are tugging back and forth",
         "lines": [
           "{name}, help! Tẹo's clinging to the stick and I'm holding the sails, the pinwheel's about to snap in half!",
           "It's mine! Tí had it all morning, now it's my turn!",
@@ -110,7 +110,7 @@
         "choices": [
           {
             "text": "Don't cry, I'll go and pick them up right now!",
-            "reply": "Thỏ Tí scratches his ear: the red sail flew towards the mound… or was it the blue one? Let's just pick them all up!"
+            "reply": "Tí the Bunny scratches his ear: the red sail flew towards the mound… or was it the blue one? Let's just pick them all up!"
           },
           {
             "text": "Stop tugging, you two, the wind can hear you!",
@@ -1036,11 +1036,11 @@
         "choices": [
           {
             "text": "Take turns, one lap each",
-            "reply": "Thỏ Tí counts: lap one is Tẹo's, lap two is mine, lap three is… whose again?"
+            "reply": "Tí the Bunny counts: lap one is Tẹo's, lap two is mine, lap three is… whose again?"
           },
           {
             "text": "Tẹo holds it first, and Tí shows him how to grip the stick firmly, like Tuấn",
-            "reply": "Thỏ Tí nods: a firm grip makes the pinwheel spin like mad, just like Tuấn's banana-leaf boat!"
+            "reply": "Tí the Bunny nods: a firm grip makes the pinwheel spin like mad, just like Tuấn's banana-leaf boat!"
           }
         ]
       }
@@ -1167,7 +1167,7 @@
       "text": "Hai anh em thỏ tặng {name} một chiếc chong chóng có ba cánh ghi “thương”, “nhường”, “chơi chung”. Còn cánh thứ tư ghi gì thì… Thỏ Tí quên mất rồi, {name} tự nghĩ nhé!",
       "en": {
         "title": "The three-word pinwheel",
-        "text": "The rabbit brothers give {name} a pinwheel whose three sails say “love”, “give way” and “play together”. As for what the fourth sail says… Thỏ Tí has forgotten, so {name} can decide!"
+        "text": "The rabbit brothers give {name} a pinwheel whose three sails say “love”, “give way” and “play together”. As for what the fourth sail says… Tí the Bunny has forgotten, so {name} can decide!"
       }
     },
     {

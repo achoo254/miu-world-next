@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Gà Trống Gõ Trống",
+        "title": "Meet Drumming Rooster",
         "lines": [
-          "Boom boom boom! I'm Gà Trống Gõ Trống, and every morning I beat the drum to wake up the whole school garden.",
+          "Boom boom boom! I'm Drumming Rooster, and every morning I beat the drum to wake up the whole school garden.",
           "If {name} gets four riddles right, you can have a go on the drum!"
         ],
         "choices": [
@@ -305,8 +305,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Gà Trống Gõ Trống",
-        "bossName": "Gà Trống Gõ Trống",
+        "title": "Battle of wits with Drumming Rooster",
+        "bossName": "Drumming Rooster",
         "introDialogue": "Boom! The first riddle rings out across the school garden!",
         "winDialogue": "Cock-a-doodle… I lost! Here's the drumstick, {name}, give it a good loud beat."
       }
@@ -318,8 +318,8 @@
       "trigger": "auto",
       "text": "Gà Trống Gõ Trống trao cho {name} chiếc dùi trống nhỏ bằng gỗ, mai lại cùng gọi vườn trường dậy nhé.",
       "en": {
-        "title": "Gà Trống Gõ Trống's gift",
-        "text": "Gà Trống Gõ Trống gives {name} a little wooden drumstick. Let's wake the school garden together tomorrow."
+        "title": "Drumming Rooster's gift",
+        "text": "Drumming Rooster gives {name} a little wooden drumstick. Let's wake the school garden together tomorrow."
       }
     },
     {
@@ -329,7 +329,7 @@
       "trigger": "auto",
       "text": "Sân chơi bên cầu trượt có trùm canh khu cuối cùng của trường, khó nhất đấy {name}.",
       "en": {
-        "title": "Goodbye, Gà Trống Gõ Trống",
+        "title": "Goodbye, Drumming Rooster",
         "text": "The playground by the slide has the school's last zone guardian, the hardest one, {name}."
       }
     }
@@ -344,7 +344,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Gà Trống Gõ Trống",
-    "summary": "Gà Trống Gõ Trống guards the school garden and beats out four riddles about words, the alphabet and spelling for {name}."
+    "title": "Zone guardian: Drumming Rooster",
+    "summary": "Drumming Rooster guards the school garden and beats out four riddles about words, the alphabet and spelling for {name}."
   }
 }

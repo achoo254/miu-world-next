@@ -93,7 +93,7 @@
         }
       ],
       "en": {
-        "title": "Voi Út's leaf wings",
+        "title": "Youngest Elephant's leaf wings",
         "goTo": "Go to the river landing, someone is admiring their reflection in the water",
         "lines": [
           "{name}! {name}! Do I look like a bird? I just tied two banana leaves on my back for wings!",
@@ -108,7 +108,7 @@
           },
           {
             "text": "Let me find Tùng's glasses first!",
-            "reply": "Voi Tùng is delighted: he's sure he left his glasses on the pebbles by the landing… or was it up a tree?"
+            "reply": "Tùng the Elephant is delighted: he's sure he left his glasses on the pebbles by the landing… or was it up a tree?"
           }
         ]
       }
@@ -514,8 +514,8 @@
         }
       ],
       "en": {
-        "title": "Say something kind to Voi Út",
-        "goTo": "Go back to the river landing, Voi Út is looking at her reflection",
+        "title": "Say something kind to Youngest Elephant",
+        "goTo": "Go back to the river landing, Youngest Elephant is looking at her reflection",
         "lines": [
           "I took off all the leaves and fruit. Now I don't look like anybody… Am I still lovable?",
           "I've got my glasses on and I can see clearly: you're most lovable when you're just you, Út.",
@@ -524,15 +524,15 @@
         "choices": [
           {
             "text": "Út has ears as big as two fans, so cute!",
-            "reply": "Voi Út flaps her ears flip-flap: hee hee, I can cool the whole riverbank!"
+            "reply": "Youngest Elephant flaps her ears flip-flap: hee hee, I can cool the whole riverbank!"
           },
           {
             "text": "Út is the best water-sprayer on the river!",
-            "reply": "Voi Út fills her trunk and sprays a tiny rainbow. Hươu Sừng Non claps, and bumps a branch again."
+            "reply": "Youngest Elephant fills her trunk and sprays a tiny rainbow. Young-Antler Deer claps, and bumps a branch again."
           },
           {
             "text": "Út is just Út, and that's the prettiest of all!",
-            "reply": "Voi Út smiles until her eyes crinkle and wraps her trunk around big brother Tùng in a tight hug."
+            "reply": "Youngest Elephant smiles until her eyes crinkle and wraps her trunk around big brother Tùng in a tight hug."
           }
         ]
       }
@@ -745,7 +745,7 @@
       "text": "Voi Út tặng {name} một chiếc quạt lá sen để quạt mát. Voi Tùng thì buộc luôn một sợi dây vào kính, thề từ nay không làm rơi kính nữa.",
       "en": {
         "title": "The lotus-leaf fan",
-        "text": "Voi Út gives {name} a lotus-leaf fan to cool off with. Voi Tùng ties a string to his glasses and swears he'll never drop them again."
+        "text": "Youngest Elephant gives {name} a lotus-leaf fan to cool off with. Tùng the Elephant ties a string to his glasses and swears he'll never drop them again."
       }
     },
     {
@@ -756,7 +756,7 @@
       "text": "Dưới gốc đa gần bến sông, buổi học của làng sắp bắt đầu. Mèo Nghệ ngồi im thin thít ở bàn cuối, cứ nghĩ tới chuyện phải đứng lên nói trước mọi người là râu lại run run.",
       "en": {
         "title": "A lesson under the banyan tree",
-        "text": "Under the banyan near the river, the village lesson is about to begin. Mèo Nghệ sits silent at the back desk; just thinking about standing up to speak in front of everyone makes his whiskers wobble."
+        "text": "Under the banyan near the river, the village lesson is about to begin. Turmeric Cat sits silent at the back desk; just thinking about standing up to speak in front of everyone makes his whiskers wobble."
       }
     }
   ],

@@ -79,7 +79,7 @@
       ],
       "en": {
         "title": "Who knocked over the shelf?",
-        "goTo": "Step into the reading room, Gấu Me is standing frozen by the cushion corner",
+        "goTo": "Step into the reading room, Mama Bear is standing frozen by the cushion corner",
         "lines": [
           "It wasn't me! Well… actually it was. I was bouncing on the cushions to reach the top book, and then… crash!",
           "Shh… quietly now. Books flew right out into the aisle between the shelves, and the contents page of the new book has blown away too.",
@@ -88,12 +88,12 @@
         ],
         "choices": [
           {
-            "text": "Thỏ Lò Xo, next time ask me to get the book for you!",
-            "reply": "Thỏ Lò Xo's ears go pink: okay, next time I'll ask, but bouncing is so much fun!"
+            "text": "Spring Bunny, next time ask me to get the book for you!",
+            "reply": "Spring Bunny's ears go pink: okay, next time I'll ask, but bouncing is so much fun!"
           },
           {
             "text": "Don't worry, the three of us will pick them up in a flash.",
-            "reply": "Gấu Me smiles kindly, finger to her lips: in a flash, yes, but pick them up quietly."
+            "reply": "Mama Bear smiles kindly, finger to her lips: in a flash, yes, but pick them up quietly."
           }
         ]
       }
@@ -804,7 +804,7 @@
       ],
       "en": {
         "title": "The librarian tells the leaf story",
-        "goTo": "Go to the librarian's desk, Gấu Trúc Tròn has just brought a storybook down from the loft",
+        "goTo": "Go to the librarian's desk, Round Panda has just brought a storybook down from the loft",
         "lines": [
           "Here I come… one step… at a time. Slow and steady, and the storybook about the ants is still safe in my paws.",
           "Tell it now! Tell it fast, fast, my ears are standing straight up!",
@@ -817,11 +817,11 @@
         "choices": [
           {
             "text": "I listened closely! Now I'll sort the pictures!",
-            "reply": "Gấu Trúc Tròn nods once, very slowly: all right, take your time, I'll wait."
+            "reply": "Round Panda nods once, very slowly: all right, take your time, I'll wait."
           },
           {
             "text": "Was the little ant scared?",
-            "reply": "Gấu Trúc Tròn smiles gently: of course, but with friends holding its leg, the little ant stopped being scared right away, little one."
+            "reply": "Round Panda smiles gently: of course, but with friends holding its leg, the little ant stopped being scared right away, little one."
           }
         ]
       }
@@ -1016,7 +1016,7 @@
       "text": "Gấu Me tặng {name} một chiếc thẻ kẹp sách cắt từ lá me khô, một mặt in chữ \"mục lục\", mặt kia in dấu móng vuốt của cô trông phòng đọc. Bác Gấu Trúc Tròn đóng thêm con dấu tròn của thư viện, ấn thật chậm cho thật rõ.",
       "en": {
         "title": "A tamarind-leaf bookmark",
-        "text": "Gấu Me gives {name} a bookmark cut from a dried tamarind leaf; one side says “mục lục” (contents), the other carries the reading-room keeper's paw print. Gấu Trúc Tròn adds the library's round stamp, pressed very slowly so it comes out nice and clear."
+        "text": "Mama Bear gives {name} a bookmark cut from a dried tamarind leaf; one side says “mục lục” (contents), the other carries the reading-room keeper's paw print. Round Panda adds the library's round stamp, pressed very slowly so it comes out nice and clear."
       }
     },
     {
@@ -1027,7 +1027,7 @@
       "text": "Ngoài vườn đọc sách, trên tảng đá phẳng bên suối nhỏ, Nai Mơ vừa lật một trang sách thì lá cây, cánh chim, giọt mưa trong sách bỗng bay ra lượn quanh. Cảnh gì mà kì lạ thế này?",
       "en": {
         "title": "Book pages come to life",
-        "text": "In the reading garden, on the flat rock by the little stream, Nai Mơ turned a page and the leaves, birds' wings and raindrops in the book flew out and swirled around. What a strange sight!"
+        "text": "In the reading garden, on the flat rock by the little stream, Dream Deer turned a page and the leaves, birds' wings and raindrops in the book flew out and swirled around. What a strange sight!"
       }
     }
   ],

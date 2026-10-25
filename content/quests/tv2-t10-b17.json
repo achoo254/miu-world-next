@@ -94,13 +94,13 @@
         "goTo": "Go to the dry meadow at the forest edge to meet Nai Nhung",
         "lines": [
           "{name}… the meadow is as crunchy as a rice cracker; however softly I step, it goes crackle-crunch.",
-          "This morning Thỏ Lúa promised to pick fresh grass to share with me. It's way past noon and not a single long ear has popped back.",
-          "Thỏ Lúa? Scatterbrain, scatterbrain! Once she went looking for a carrot that was right there in her paw!",
+          "This morning Rice Rabbit promised to pick fresh grass to share with me. It's way past noon and not a single long ear has popped back.",
+          "Rice Rabbit? Scatterbrain, scatterbrain! Once she went looking for a carrot that was right there in her paw!",
           "I've called “Lúa!” so many times that my voice is only a whisper, like wind through the grass. Will you help me find her?"
         ],
         "choices": [
           {
-            "text": "Let's go, we'll find Thỏ Lúa no matter what!",
+            "text": "Let's go, we'll find Rice Rabbit no matter what!",
             "reply": "Thank you! Let's head towards those scorched yellow tufts. You go a little ahead, I'm a bit scared of strange places."
           }
         ]
@@ -494,19 +494,19 @@
         "title": "Nai Nhung sad by the dry stream",
         "lines": [
           "The golden deer called and called and still heard no answer. I'm afraid I'll have to keep calling like that too.",
-          "Don't worry, don't worry! Thỏ Lúa's ears are so long, if we call loudly she's bound to hear!"
+          "Don't worry, don't worry! Rice Rabbit's ears are so long, if we call loudly she's bound to hear!"
         ],
         "choices": [
           {
-            "text": "Don't be sad, I'm right here with you, and we'll find Thỏ Lúa!",
+            "text": "Don't be sad, I'm right here with you, and we'll find Rice Rabbit!",
             "reply": "With you beside me, my four skinny legs have stopped shaking."
           },
           {
             "text": "Let's call really loudly together: Lúaaaa!",
-            "reply": "Lúaaaa! Whoa, I've never called so loudly, and Vẹt Xanh got such a fright he fell off his branch."
+            "reply": "Lúaaaa! Whoa, I've never called so loudly, and Green Parrot got such a fright he fell off his branch."
           },
           {
-            "text": "Thỏ Lúa is quick on her feet, she is probably running back already.",
+            "text": "Rice Rabbit is quick on her feet, she is probably running back already.",
             "reply": "Oh, you're right! Maybe she's hopping towards us right now."
           }
         ]
@@ -703,8 +703,8 @@
         }
       ],
       "en": {
-        "title": "Thỏ Lúa hears the call",
-        "goTo": "Listen! Thỏ Lúa is waving her ears and calling from the hill of fresh grass",
+        "title": "Rice Rabbit hears the call",
+        "goTo": "Listen! Rice Rabbit is waving her ears and calling from the hill of fresh grass",
         "lines": [
           "Nhung! {name}! I could hear you two chatting all the way from the other side of the hill!",
           "I was having so much fun picking fresh grass, I spun round once, twice… and forgot which way home was.",
@@ -764,7 +764,7 @@
       "text": "Nai Nhung tặng {name} một chiếc lục lạc kết bằng quả keo khô: lạc nhau ở đâu cứ lắc lách cách là bạn bè tìm thấy. Thỏ Lúa xin một cái, để lắc cho chính mình nhớ đường về.",
       "en": {
         "title": "Nai Nhung's rattle",
-        "text": "Nai Nhung gives {name} a rattle strung from dried acacia pods: if you ever get separated, just shake it clickety-clack and your friends will find you. Thỏ Lúa asks for one too, to shake so she remembers her own way home."
+        "text": "Nai Nhung gives {name} a rattle strung from dried acacia pods: if you ever get separated, just shake it clickety-clack and your friends will find you. Rice Rabbit asks for one too, to shake so she remembers her own way home."
       }
     },
     {
@@ -775,7 +775,7 @@
       "text": "Trên đường về, Thỏ Lúa nhặt được một lá thư lạnh buốt như vừa lấy ra từ tủ đá, dán tem hình bông tuyết, đề gửi Gấu Tuyết Bông ở bến thư bên hồ. Ai ở phương xa gửi thư thế nhỉ?",
       "en": {
         "title": "A letter at the lakeside post",
-        "text": "On the way home, Thỏ Lúa finds a letter as icy as if it came straight out of a freezer, with a snowflake stamp, addressed to Gấu Tuyết Bông at the lakeside post. Who could be writing from so far away?"
+        "text": "On the way home, Rice Rabbit finds a letter as icy as if it came straight out of a freezer, with a snowflake stamp, addressed to Cotton Snow Bear at the lakeside post. Who could be writing from so far away?"
       }
     }
   ],

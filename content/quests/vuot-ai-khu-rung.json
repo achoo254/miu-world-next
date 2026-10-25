@@ -49,8 +49,8 @@
         { "text": "Thần Rừng có đáng sợ không?", "reply": "Không đâu, ngài chỉ ham đố vui thôi. Cứ ra bãi cỏ dưới tán dẻ tìm quà trước đã." }
       ],
       "en": {
-        "title": "Thỏ Kèn Lá brings news",
-        "goTo": "Go to the hollow oak, Thỏ Kèn Lá is blowing a leaf horn to call for friends",
+        "title": "Leaf Horn Rabbit brings news",
+        "goTo": "Go to the hollow oak, Leaf Horn Rabbit is blowing a leaf horn to call for friends",
         "lines": [
           "{name}, the Mischievous Forest Spirit just hooked the forest festival's wind chime on his antlers and darted off into the moonlit glade!",
           "He says he'll only give it back to someone who brings a gift and wins his quiz. Without the chime, the animals won't know when the festival starts tonight."
@@ -200,8 +200,8 @@
             "consequence": "The Forest Spirit sniffs the sweet honey, and his antlers quiver with delight."
           },
           {
-            "text": "Go back and ask Thỏ Kèn Lá to come along",
-            "consequence": "Gấu Trúc nods: with a friend cheering you on, you'll feel braver. Run back to the hollow oak and fetch Thỏ!"
+            "text": "Go back and ask Leaf Horn Rabbit to come along",
+            "consequence": "Gấu Trúc nods: with a friend cheering you on, you'll feel braver. Run back to the hollow oak and fetch Rabbit!"
           }
         ]
       }
@@ -217,8 +217,8 @@
       ],
       "choices": [{ "text": "Mình cùng tới khoảng rừng trăng nào!" }],
       "en": {
-        "title": "Bring Thỏ Kèn Lá along",
-        "goTo": "Go back to the hollow oak and ask Thỏ Kèn Lá to come with you",
+        "title": "Bring Leaf Horn Rabbit along",
+        "goTo": "Go back to the hollow oak and ask Leaf Horn Rabbit to come with you",
         "lines": [
           "You really came back for me? Hooray! Every time you get an answer right, I'll blow a great big blast on my leaf horn."
         ],
@@ -459,7 +459,7 @@
       "text": "Chuông gió ngân vang khắp khu rừng bí mật. Thần Rừng hẹn {name} hôm nào quay lại đố tiếp, còn Vẹt Xanh đang chờ ở cửa rừng để kể chuyện ngày hội.",
       "en": {
         "title": "The forest festival begins",
-        "text": "The wind chime rings out across the Secret Forest. The Forest Spirit asks {name} to come back for another quiz someday, and Vẹt Xanh is waiting at the forest gate to chatter about the festival."
+        "text": "The wind chime rings out across the Secret Forest. The Forest Spirit asks {name} to come back for another quiz someday, and Green Parrot is waiting at the forest gate to chatter about the festival."
       }
     }
   ],

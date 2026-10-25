@@ -115,19 +115,19 @@
         "title": "A bridge built plank by plank",
         "goTo": "Go to the end of the suspension bridge before the castle gate, the whole castle is waiting for the opening",
         "lines": [
-          "{name}'s here! I'm Hải Ly Mầm. Eighteen planks, and I measured every one three times before nailing it down.",
+          "{name}'s here! I'm Sprout Beaver. Eighteen planks, and I measured every one three times before nailing it down.",
           "Ladies and gentlemen of the castle! I'm the tallest, so I'm hosting; even those at the far end of the moat can see me. The bridge opening is about to begin!",
-          "Wait, Hươu Cao! The last plank isn't on yet. This morning it fell under the bridge, along with the red ribbon and the hammer.",
+          "Wait, Giraffe! The last plank isn't on yet. This morning it fell under the bridge, along with the red ribbon and the hammer.",
           "Then I'll draw a review map: each span of the bridge has a revision riddle, and you only cross if you answer it!"
         ],
         "choices": [
           {
             "text": "I'll go under the bridge and get the plank right now!",
-            "reply": "Hải Ly Mầm slaps her tail with a thwack: carry the plank nice and straight, I just polished it with my tail."
+            "reply": "Sprout Beaver slaps her tail with a thwack: carry the plank nice and straight, I just polished it with my tail."
           },
           {
-            "text": "Hươu Cao, are the riddles hard?",
-            "reply": "Hươu Cao tilts his long neck: from up here I can see the whole road behind us, and every question is just right for you!"
+            "text": "Giraffe, are the riddles hard?",
+            "reply": "Giraffe tilts his long neck: from up here I can see the whole road behind us, and every question is just right for you!"
           }
         ]
       }
@@ -1104,8 +1104,8 @@
             "reply": "Snip! The ribbon falls in two, the whole castle claps and cheers, and the sound echoes across the moat."
           },
           {
-            "text": "Let Hải Ly Mầm cut it, she built the whole bridge!",
-            "reply": "Hải Ly Mầm blushes as she cuts the ribbon, and Hươu Cao stretches his neck to shout “It's open!” all the way to the top of the watchtower."
+            "text": "Let Sprout Beaver cut it, she built the whole bridge!",
+            "reply": "Sprout Beaver blushes as she cuts the ribbon, and Giraffe stretches his neck to shout “It's open!” all the way to the top of the watchtower."
           },
           {
             "text": "The whole castle counts one, two, three, and we all cut it together!",
@@ -1642,7 +1642,7 @@
       "text": "Hải Ly Mầm khắc tên {name} lên tấm ván cuối cùng của cầu treo, ngay cạnh dấu răng của mình. Hươu Cao tặng thêm tấm bản đồ lâu đài có vẽ chiếc cầu mới, \"để cậu không bao giờ lạc đường trong lâu đài\".",
       "en": {
         "title": "A plank with your name on it",
-        "text": "Hải Ly Mầm carves {name}'s name on the last plank of the suspension bridge, right next to her own tooth marks. Hươu Cao adds a map of the castle with the new bridge drawn on it, “so you never get lost in the castle”."
+        "text": "Sprout Beaver carves {name}'s name on the last plank of the suspension bridge, right next to her own tooth marks. Giraffe adds a map of the castle with the new bridge drawn on it, “so you never get lost in the castle”."
       }
     },
     {
@@ -1653,7 +1653,7 @@
       "text": "Cầu treo hạ xuống, sương sớm tan dần trên hào nước. Hươu Cao vươn cổ nhìn thật xa và thì thầm: chặng đường này khép lại rồi, còn bao trang truyện và bài thơ mới đang chờ mình ở phía bên kia cầu!",
       "en": {
         "title": "Across the suspension bridge",
-        "text": "The bridge comes down and the morning mist melts off the moat. Hươu Cao stretches his neck to look far away and whispers: this stretch of the road is finished, and many new stories and poems are waiting on the far side of the bridge!"
+        "text": "The bridge comes down and the morning mist melts off the moat. Giraffe stretches his neck to look far away and whispers: this stretch of the road is finished, and many new stories and poems are waiting on the far side of the bridge!"
       }
     }
   ],

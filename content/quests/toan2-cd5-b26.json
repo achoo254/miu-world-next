@@ -67,21 +67,21 @@
         }
       ],
       "en": {
-        "title": "Ong Nhí is dizzy",
-        "goTo": "Go to the stained-glass window by the shapes courtyard, where Ong Nhí is flying in circles",
+        "title": "Little Bee is dizzy",
+        "goTo": "Go to the stained-glass window by the shapes courtyard, where Little Bee is flying in circles",
         "lines": [
-          "Bzzz... bonk! I'm Ong Nhí, I only learnt to fly three days ago. Every pane of glass sparkles, I keep zigzagging, I'm so dizzy, {name}!",
+          "Bzzz... bonk! I'm Little Bee, I only learnt to fly three days ago. Every pane of glass sparkles, I keep zigzagging, I'm so dizzy, {name}!",
           "I told you to just fly straight. Oh wait, fly straight and you'd crash into the red pane, ho ho.",
           "The wind on the castle wall just knocked a few pieces of coloured glass onto the windowsill. Once they're all back in, I can draw my flight path."
         ],
         "choices": [
           {
             "text": "I'll pick up the glass for you!",
-            "reply": "Ong Nhí does a twirl: Careful, the glass is slippery, I've slipped three times already."
+            "reply": "Little Bee does a twirl: Careful, the glass is slippery, I've slipped three times already."
           },
           {
-            "text": "Ong Nhí, land and rest a moment!",
-            "reply": "Ong Nhí lands on Gấu Mực's shiny black nose: There, I've landed. The glass pieces are up to you!"
+            "text": "Little Bee, land and rest a moment!",
+            "reply": "Little Bee lands on Ink Bear's shiny black nose: There, I've landed. The glass pieces are up to you!"
           }
         ]
       }
@@ -132,7 +132,7 @@
         "choices": [
           {
             "text": "Let's try flying a path!",
-            "reply": "Ong Nhí dots four points on the glass: D, E, G, H. Join them up for me, please."
+            "reply": "Little Bee dots four points on the glass: D, E, G, H. Join them up for me, please."
           }
         ]
       }
@@ -688,20 +688,20 @@
       ],
       "en": {
         "title": "Where to next?",
-        "goTo": "Fly over to the corner of the drawing table, where Gấu Mực is hanging up a still-wet classroom painting",
+        "goTo": "Fly over to the corner of the drawing table, where Ink Bear is hanging up a still-wet classroom painting",
         "lines": [
-          "Come and see! I'm Gấu Mực, and I've just finished a painting of the castle kitchen, with all sorts of broken lines and four-sided shapes hidden in it.",
-          "I also wrote down the race routes of Thỏ Mây, Hổ Con Đậu and Gấu Nút across the lawn. What winding runs, just like my flying!",
+          "Come and see! I'm Ink Bear, and I've just finished a painting of the castle kitchen, with all sorts of broken lines and four-sided shapes hidden in it.",
+          "I also wrote down the race routes of Cloud Rabbit, Bean Tiger Cub and Button Bear across the lawn. What winding runs, just like my flying!",
           "{name}, do you want to look at the kitchen painting first, or watch the three friends race first?"
         ],
         "choices": [
           {
             "text": "The kitchen painting first",
-            "reply": "Gấu Mực points his brush at the wall: Let's begin with the crooked chimney!"
+            "reply": "Ink Bear points his brush at the wall: Let's begin with the crooked chimney!"
           },
           {
             "text": "The three friends racing first",
-            "reply": "Ong Nhí: Sure, but look at the painting for a moment first, the colours are about to dry!"
+            "reply": "Little Bee: Sure, but look at the painting for a moment first, the colours are about to dry!"
           }
         ]
       }
@@ -1277,7 +1277,7 @@
       "text": "Cửa sổ kính màu của lâu đài lấp lánh trở lại, Ong Nhí bay một vòng đúng lối mà không đâm vào ô nào. Ong Nhí gắn lên áo {name} huy hiệu \"Phi công đường gấp khúc\", Gấu Mực vỗ tay rung cả giá vẽ.",
       "en": {
         "title": "Bee wings badge",
-        "text": "The castle's stained-glass window sparkles again, and Ong Nhí flies a full loop along the right path without bumping into a single pane. She pins the \"Broken Line Pilot\" badge on {name}'s shirt, and Gấu Mực claps so hard the easel shakes."
+        "text": "The castle's stained-glass window sparkles again, and Little Bee flies a full loop along the right path without bumping into a single pane. She pins the \"Broken Line Pilot\" badge on {name}'s shirt, and Ink Bear claps so hard the easel shakes."
       }
     },
     {
@@ -1287,8 +1287,8 @@
       "trigger": "auto",
       "text": "Ở bàn thủ công trong phòng vẽ, Hổ Con Đậu ôm một xấp giấy màu bằng hai chân trước: Đậu muốn gấp thiệp cảm ơn cô Hằng dạy vẽ, mà gấp mãi tờ giấy vẫn méo xệch!",
       "en": {
-        "title": "Hổ Con Đậu's card",
-        "text": "At the craft table in the painting room, Hổ Con Đậu is hugging a stack of coloured paper in his front paws: Đậu wants to fold a thank-you card for Miss Hằng the art teacher, but however he folds it, the paper comes out all crooked!"
+        "title": "Bean Tiger Cub's card",
+        "text": "At the craft table in the painting room, Bean Tiger Cub is hugging a stack of coloured paper in his front paws: Đậu wants to fold a thank-you card for Miss Hằng the art teacher, but however he folds it, the paper comes out all crooked!"
       }
     }
   ],

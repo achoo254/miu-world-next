@@ -48,9 +48,9 @@
         }
       ],
       "en": {
-        "title": "Meet Cáo Lá Vàng",
+        "title": "Meet Golden Leaf Fox",
         "lines": [
-          "Rustle, rustle! {name} has come just in golden leaf season. I'm Cáo Lá Vàng.",
+          "Rustle, rustle! {name} has come just in golden leaf season. I'm Golden Leaf Fox.",
           "Every leaf I sweep has a riddle on it. Collect four and you win!"
         ],
         "choices": [
@@ -94,7 +94,7 @@
           ],
           "damage": 100,
           "en": {
-            "prompt": "Cáo needs something to sweep the leaves into a pile. Which thing is it?",
+            "prompt": "Fox needs something to sweep the leaves into a pile. Which thing is it?",
             "choices": [
               "cái kéo (scissors)",
               "cái chổi (a broom)",
@@ -116,7 +116,7 @@
             },
             "en": {
               "guide": [
-                "Picture what Cáo has to do: gather the fallen leaves on the yard into a pile.",
+                "Picture what Fox has to do: gather the fallen leaves on the yard into a pile.",
                 "Think what each thing is used for, then choose the one you can sweep with."
               ],
               "hint": "Scissors cut and a cup holds a drink; the right thing has a long handle and lots of stiff bristles.",
@@ -315,8 +315,8 @@
         }
       },
       "en": {
-        "title": "Battle of wits with Cáo Lá Vàng",
-        "bossName": "Cáo Lá Vàng",
+        "title": "Battle of wits with Golden Leaf Fox",
+        "bossName": "Golden Leaf Fox",
         "introDialogue": "The first leaf floats down: read the riddle on it!",
         "winDialogue": "My leaf pile has blown everywhere! {name} wins and the whole festival yard cheers."
       }
@@ -328,8 +328,8 @@
       "trigger": "auto",
       "text": "Cáo Lá Vàng ép tặng {name} một chiếc lá vàng thật đẹp để kẹp vào vở.",
       "en": {
-        "title": "Cáo Lá Vàng's gift",
-        "text": "Cáo Lá Vàng presses a beautiful golden leaf for {name} to keep in an exercise book."
+        "title": "Golden Leaf Fox's gift",
+        "text": "Golden Leaf Fox presses a beautiful golden leaf for {name} to keep in an exercise book."
       }
     },
     {
@@ -339,7 +339,7 @@
       "trigger": "auto",
       "text": "Sang tháp đồng hồ đi {name}, trùm canh khu ở đó canh giờ chưa sai một phút.",
       "en": {
-        "title": "Goodbye, Cáo Lá Vàng",
+        "title": "Goodbye, Golden Leaf Fox",
         "text": "Go to the clock tower, {name}: its zone guardian has never been a minute late."
       }
     }
@@ -355,7 +355,7 @@
     }
   },
   "en": {
-    "title": "Zone guardian: Cáo Lá Vàng",
-    "summary": "Cáo Lá Vàng guards the golden leaf festival yard and asks {name} four riddles about things, describing sentences and patterns."
+    "title": "Zone guardian: Golden Leaf Fox",
+    "summary": "Golden Leaf Fox guards the golden leaf festival yard and asks {name} four riddles about things, describing sentences and patterns."
   }
 }

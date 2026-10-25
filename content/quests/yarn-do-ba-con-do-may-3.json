@@ -52,7 +52,7 @@
       ],
       "en": {
         "title": "Uncle Ba goes quiet",
-        "goTo": "Go to the grassy riverbank, where Chú Lái Đò Ba sits alone gazing at the far bank",
+        "goTo": "Go to the grassy riverbank, where Uncle Ba the Ferryman sits alone gazing at the far bank",
         "lines": [
           "Oh, you're here… Once the bamboo bridge is done, people can walk across whenever they like. No more waiting for the ferry.",
           "I'm happy for the village, truly. It's just that I keep picturing a morning when I come down and nobody calls 'ferry!'…",
@@ -79,7 +79,7 @@
       ],
       "en": {
         "title": "The bamboo bridge builder",
-        "goTo": "Go to the new bamboo bridgehead to meet Anh Thợ Cầu Tre",
+        "goTo": "Go to the new bamboo bridgehead to meet Bamboo Bridge Builder",
         "lines": [
           "Hello! This bridge has three spans, and each span needs exactly eight old bamboo poles for its frame. Folks have only brought ten so far.",
           "And honestly, without Uncle Ba ferrying poles to the other side, this bridge could never join its two ends."
@@ -111,7 +111,7 @@
         "right": ["Anh Thợ Cầu Tre khắc ngay số 14 lên cột: «Chuẩn từng cây!»", "{name} tính gọn như bó tre vừa buộc.", "Mười bốn cây nữa thôi, cầu sẽ nối được hai bờ."],
         "wrong": ["Cầu có những ba nhịp đấy, đừng quên nhịp nào {name}.", "Khoan, mình đã có sẵn mười cây rồi mà.", "Thử cộng tám ba lần trước, rồi mới bớt đi nhé."],
         "en": {
-          "right": ["Anh Thợ Cầu Tre carves 14 on a post right away: 'Spot on, every pole!'", "{name}'s maths is as neat as a freshly tied bundle of bamboo.", "Just fourteen more, and the bridge will join both banks."],
+          "right": ["Bamboo Bridge Builder carves 14 on a post right away: 'Spot on, every pole!'", "{name}'s maths is as neat as a freshly tied bundle of bamboo.", "Just fourteen more, and the bridge will join both banks."],
           "wrong": ["The bridge has three spans, {name}; don't leave one out.", "Hold on, we already have ten poles.", "Try adding eight three times first, then take some away."]
         }
       },
@@ -190,7 +190,7 @@
         "prompt": "Uncle Ba stands up and brushes off his trousers: 'The bridge builder needs someone to ferry poles across. What should I do, {name}?'",
         "choices": [
           { "text": "Ferry the bamboo across to help build the bridge", "consequence": "Uncle Ba knocks three times on the boat, hard this time. The Cloud Ferry carries the bamboo across, and the builder cheers from the far bank." },
-          { "text": "Teach Bé Tí to row the bamboo with him", "consequence": "Bé Tí rows left, Uncle Ba rows right, and the Cloud Ferry glides dead straight. 'When the bridge is done, the village will have one more ferryman,' he laughs." },
+          { "text": "Teach Little Tí to row the bamboo with him", "consequence": "Little Tí rows left, Uncle Ba rows right, and the Cloud Ferry glides dead straight. 'When the bridge is done, the village will have one more ferryman,' he laughs." },
           { "text": "Talk to the bridge builder first", "consequence": "The two of them stand talking at the bridgehead for a long time. On the way back Uncle Ba says: 'He told me that without the boat, the bridge could never join both banks. Good lad, that one.'" }
         ]
       }
@@ -218,7 +218,7 @@
     "skillXp": { "bai-toan-loi-van": 1, "logic": 1 }
   },
   "en": {
-    "title": "Chú Lái Đò Ba's story, chapter 3: The new bamboo bridge",
-    "summary": "The village is about to build a bamboo bridge, and Uncle Ba quietly worries his landing will fall silent. {name} meets Anh Thợ Cầu Tre, works out how many poles are missing, gathers bamboo round the village, then helps Uncle Ba see which jobs the village will still need his boat for."
+    "title": "Uncle Ba the Ferryman's story, chapter 3: The new bamboo bridge",
+    "summary": "The village is about to build a bamboo bridge, and Uncle Ba quietly worries his landing will fall silent. {name} meets Bamboo Bridge Builder, works out how many poles are missing, gathers bamboo round the village, then helps Uncle Ba see which jobs the village will still need his boat for."
   }
 }

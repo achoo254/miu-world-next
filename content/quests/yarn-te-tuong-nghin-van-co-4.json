@@ -66,7 +66,7 @@
       ],
       "en": {
         "title": "A banquet off by the minute",
-        "goTo": "Hurry to the chessboard in the great hall, where Tể Tướng Cờ Vua holds the banquet schedule with trembling hands",
+        "goTo": "Hurry to the chessboard in the great hall, where Chess Chancellor holds the banquet schedule with trembling hands",
         "lines": [
           "{name}! The schedule says guests arrive at six. It is only half past five, and the hall door is already crowded with early guests!",
           "Then a tabby cat from nowhere leapt onto the chessboard and the pieces went tumbling. I… I must sit down a moment.",
@@ -75,7 +75,7 @@
         "choices": [
           {
             "text": "Just breathe slowly, sir; I'm right here to help!",
-            "reply": "One… two… three. Yes, Cáo's own lesson rescues me. I can stand again."
+            "reply": "One… two… three. Yes, Fox's own lesson rescues me. I can stand again."
           },
           {
             "text": "Things off the rules can be fun sometimes, sir.",
@@ -426,7 +426,7 @@
       "text": "Thứ Bảy này lại tới ván cờ tuần với Bác Thợ Khóa Thành. Tể tướng bảo trước ván ấy, ngài có một chuyện giữ kín đã lâu muốn nói ra.",
       "en": {
         "title": "The Saturday game",
-        "text": "This Saturday brings the weekly game with Bác Thợ Khóa Thành again. The chancellor says that before it, he has a long-kept secret he wants to speak aloud."
+        "text": "This Saturday brings the weekly game with Castle Locksmith Uncle again. The chancellor says that before it, he has a long-kept secret he wants to speak aloud."
       }
     }
   ],
@@ -442,7 +442,7 @@
     }
   },
   "en": {
-    "title": "Tể Tướng Cờ Vua's story, chapter 4: A banquet that broke the rules",
-    "summary": "The castle banquet goes off schedule: early guests, a cat on the chessboard, toast landing butter-side down. Tể Tướng Cờ Vua admits his fear, while {name} catches the cat, adds up two sacks' weight, works out the lemonade left and helps him stay calm."
+    "title": "Chess Chancellor's story, chapter 4: A banquet that broke the rules",
+    "summary": "The castle banquet goes off schedule: early guests, a cat on the chessboard, toast landing butter-side down. Chess Chancellor admits his fear, while {name} catches the cat, adds up two sacks' weight, works out the lemonade left and helps him stay calm."
   }
 }
