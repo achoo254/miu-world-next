@@ -163,9 +163,9 @@
         }
       ],
       "en": {
-        "summary": "Hổ Xanh Vẽ Hình guards the shapes yard and asks {name} four riddles about segments, zigzag lines and quadrilaterals.",
+        "summary": "Shape-Drawing Green Tiger guards the shapes yard and asks {name} four riddles about segments, zigzag lines and quadrilaterals.",
         "hook": [
-          "Grr… no, I only growl for fun! I'm Hổ Xanh Vẽ Hình, and my claws draw the best shapes in this yard.",
+          "Grr… no, I only growl for fun! I'm Shape-Drawing Green Tiger, and my claws draw the best shapes in this yard.",
           "If {name} solves four shape riddles, I'll draw you a picture."
         ],
         "choice": "Draw me one!",
@@ -181,7 +181,7 @@
           "Not right, count the sides again.",
           "Nearly right, look at the shape a little longer."
         ],
-        "reward": "Hổ Xanh Vẽ Hình draws {name} a many-pointed star made of straight segments.",
+        "reward": "Shape-Drawing Green Tiger draws {name} a many-pointed star made of straight segments.",
         "next": "Go inside the walls to the great review hall, a zone guardian who loves sums is waiting for {name}."
       }
     },
@@ -268,7 +268,7 @@
           "hint": "12 − 5 = 7, viết 7 nhớ 1; hàng chục là 7 − (4 + 1).",
           "explain": "72 − 45 = 27: 12 − 5 = 7 viết 7 nhớ 1, 4 + 1 = 5, 7 − 5 = 2; 37 là quên số nhớ, còn 117 là cộng nhầm.",
           "en": {
-            "prompt": "There are 72 candles and Mèo has lit 45. How many are still unlit?",
+            "prompt": "There are 72 candles and Cat has lit 45. How many are still unlit?",
             "choices": [
               "27",
               "37",
@@ -330,7 +330,7 @@
           "hint": "12 − 2 = 10, rồi 10 − 3 = ?",
           "explain": "12 − 5 = 7 (12 − 2 = 10, 10 − 3 = 7) nên bình còn 7 l; 17 l là cộng nhầm, 6 l là trừ thừa một lít.",
           "en": {
-            "prompt": "The big jug holds 12 l of water and Mèo pours out 5 l for the flowers. How many litres are left?",
+            "prompt": "The big jug holds 12 l of water and Cat pours out 5 l for the flowers. How many litres are left?",
             "choices": [
               "7 l",
               "17 l",
@@ -346,9 +346,9 @@
         }
       ],
       "en": {
-        "summary": "Mèo Quản Gia guards the courtyard before the great hall and asks {name} four riddles counting chairs, candles, rice sacks and water jugs.",
+        "summary": "Butler Cat guards the courtyard before the great hall and asks {name} four riddles counting chairs, candles, rice sacks and water jugs.",
         "hook": [
-          "Greetings, {name}! I'm Mèo Quản Gia, and I look after everything in the great hall, from chairs to candles.",
+          "Greetings, {name}! I'm Butler Cat, and I look after everything in the great hall, from chairs to candles.",
           "The prize-giving is about to start, so help me with four sums. Get them all right and you sit in the front row."
         ],
         "choice": "I'll help right away!",
@@ -364,7 +364,7 @@
           "Not right, line up the digits neatly.",
           "Nearly there, remember to carry."
         ],
-        "reward": "Mèo Quản Gia hands {name} a front-row invitation printed with the golden throne.",
+        "reward": "Butler Cat hands {name} a front-row invitation printed with the golden throne.",
         "next": "Head out of the castle gate, {name}: by the moat at the rope bridge a zone guardian loves words."
       }
     },
@@ -556,9 +556,9 @@
         }
       ],
       "en": {
-        "summary": "Chó Bạc Canh Hào guards the moat before the rope bridge and asks {name} five end-of-term review riddles.",
+        "summary": "Moat-Guarding Silver Dog guards the moat before the rope bridge and asks {name} five end-of-term review riddles.",
         "hook": [
-          "Woof! Chó Bạc Canh Hào here. I've guarded this moat since the rope bridge was first built.",
+          "Woof! Moat-Guarding Silver Dog here. I've guarded this moat since the rope bridge was first built.",
           "Anyone who wants to admire the bridge with me must pass five review riddles. Are you ready, {name}?"
         ],
         "choice": "Woof woof, I'm ready!",
@@ -574,7 +574,7 @@
           "One plank off, read the question carefully.",
           "Nearly right, think a little longer."
         ],
-        "reward": "Chó Bạc Canh Hào gives {name} a little silver bell: ring it and I'll come running with more riddles.",
+        "reward": "Moat-Guarding Silver Dog gives {name} a little silver bell: ring it and I'll come running with more riddles.",
         "next": "Three zone guardians met, {name}: cross the rope bridge to meet the Stone Knight at the last stop."
       }
     }

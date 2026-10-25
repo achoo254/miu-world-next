@@ -8,3 +8,4 @@
 - [Online/voice switch enforcement gaps](project-online-switch-review.md) — WS-only enforcement; HTTP invites/TURN unchecked; no-PIN gate lets child flip
 - [Asset pack review](project-asset-pack-review.md) — assets:fetch wipes all packs; Kenney roads hash drift 25/10; re-hash URLs; fonts.check weak
 - [Strict schema + native bundle skew](project-strict-schema-native-skew.md) — new response field in strictObject breaks shipped Capacitor app
+- [Name glossary review](project-name-glossary-review.md) — client content chunks trip security:dist (CI-only); lesson labels vs Vietnamese prompts

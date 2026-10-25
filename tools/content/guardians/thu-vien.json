@@ -159,9 +159,9 @@
         }
       ],
       "en": {
-        "summary": "Cú Kính Tròn guards the reading garden by the reading room and asks {name} four riddles about books and spelling.",
+        "summary": "Round-Glasses Owl guards the reading garden by the reading room and asks {name} four riddles about books and spelling.",
         "hook": [
-          "Shh… quietly, {name}, this is a reading place. I'm Cú Kính Tròn, and I read all night long.",
+          "Shh… quietly, {name}, this is a reading place. I'm Round-Glasses Owl, and I read all night long.",
           "I have four riddles about books. Whisper them all right and I'll lend you my best book."
         ],
         "choice": "I'll whisper my answers!",
@@ -177,7 +177,7 @@
           "Wrong chapter, read the question again.",
           "Nearly right, think one more line."
         ],
-        "reward": "Cú Kính Tròn lends {name} a feather bookmark. Come back for more riddles when you've finished reading.",
+        "reward": "Round-Glasses Owl lends {name} a feather bookmark. Come back for more riddles when you've finished reading.",
         "next": "Follow the golden leaf road to the festival yard, a zone guardian is sweeping leaves for {name}."
       }
     },
@@ -232,14 +232,14 @@
           "hint": "Kéo dùng để cắt, cốc dùng để uống; đồ vật cần tìm có cán dài và nhiều sợi cứng.",
           "explain": "Cái chổi dùng để quét, gom lá thành đống; cái kéo để cắt giấy, vải, còn cái cốc để đựng nước uống.",
           "en": {
-            "prompt": "Cáo needs something to sweep the leaves into a pile. Which thing is it?",
+            "prompt": "Fox needs something to sweep the leaves into a pile. Which thing is it?",
             "choices": [
               "cái chổi (a broom)",
               "cái kéo (scissors)",
               "cái cốc (a cup)"
             ],
             "guide": [
-              "Picture what Cáo has to do: gather the fallen leaves on the yard into a pile.",
+              "Picture what Fox has to do: gather the fallen leaves on the yard into a pile.",
               "Think what each thing is used for, then choose the one you can sweep with."
             ],
             "hint": "Scissors cut and a cup holds a drink; the right thing has a long handle and lots of stiff bristles.",
@@ -341,9 +341,9 @@
         }
       ],
       "en": {
-        "summary": "Cáo Lá Vàng guards the golden leaf festival yard and asks {name} four riddles about things, describing sentences and patterns.",
+        "summary": "Golden Leaf Fox guards the golden leaf festival yard and asks {name} four riddles about things, describing sentences and patterns.",
         "hook": [
-          "Rustle, rustle! {name} has come just in golden leaf season. I'm Cáo Lá Vàng.",
+          "Rustle, rustle! {name} has come just in golden leaf season. I'm Golden Leaf Fox.",
           "Every leaf I sweep has a riddle on it. Collect four and you win!"
         ],
         "choice": "Let's collect leaves!",
@@ -359,7 +359,7 @@
           "Not right, read the writing on the leaf carefully.",
           "The autumn wind blew your answer away, try again!"
         ],
-        "reward": "Cáo Lá Vàng presses a beautiful golden leaf for {name} to keep in an exercise book.",
+        "reward": "Golden Leaf Fox presses a beautiful golden leaf for {name} to keep in an exercise book.",
         "next": "Go to the clock tower, {name}: its zone guardian has never been a minute late."
       }
     },
@@ -416,7 +416,7 @@
           "hint": "Mỗi lượt kim ngắn đi hết 12 giờ, mà một ngày có hai lượt: 12 + 12 = ?",
           "explain": "Một ngày có 24 giờ vì 12 + 12 = 24; 12 giờ mới là nửa ngày, còn 60 là số phút của một giờ.",
           "en": {
-            "prompt": "Gà Vàng Báo Giờ asks: how many hours are there in a whole day?",
+            "prompt": "Golden Rooster Time Announcer asks: how many hours are there in a whole day?",
             "choices": [
               "24 hours",
               "12 hours",
@@ -556,9 +556,9 @@
         }
       ],
       "en": {
-        "summary": "Gà Vàng Báo Giờ guards the lawn round the clock tower and asks {name} five riddles about hours, minutes and the calendar.",
+        "summary": "Golden Rooster Time Announcer guards the lawn round the clock tower and asks {name} five riddles about hours, minutes and the calendar.",
         "hook": [
-          "Cock-a-doodle-doo, right on time! I'm Gà Vàng Báo Giờ, and I crow with every chime of the tower.",
+          "Cock-a-doodle-doo, right on time! I'm Golden Rooster Time Announcer, and I crow with every chime of the tower.",
           "Here are five riddles about time and the calendar, {name}: answer before the bell rings!"
         ],
         "choice": "Start the clock!",
@@ -574,7 +574,7 @@
           "Not right, count the marks on the clock face again.",
           "Wrong calendar page, try once more."
         ],
-        "reward": "Gà Vàng Báo Giờ gives {name} a little sand timer: every turn is a new round of riddles.",
+        "reward": "Golden Rooster Time Announcer gives {name} a little sand timer: every turn is a new round of riddles.",
         "next": "All three zone guardians met, {name}: climb the tower to meet the Giant Bookworm at the last stop."
       }
     }

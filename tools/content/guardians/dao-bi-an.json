@@ -160,9 +160,9 @@
         }
       ],
       "en": {
-        "summary": "Hồng Hạc Bãi Cát guards the fishing village by the beach and asks {name} four riddles about a message in a bottle, boat numbers and shells.",
+        "summary": "Beach Flamingo guards the fishing village by the beach and asks {name} four riddles about a message in a bottle, boat numbers and shells.",
         "hook": [
-          "Hello {name}! I'm Hồng Hạc Bãi Cát, and I stand on one leg guarding the beach all day.",
+          "Hello {name}! I'm Beach Flamingo, and I stand on one leg guarding the beach all day.",
           "The waves just washed up a glass bottle with four riddles inside. Let's solve them together!"
         ],
         "choice": "Let's open the bottle!",
@@ -178,7 +178,7 @@
           "Not right, read the note again.",
           "Nearly there, compare each digit carefully."
         ],
-        "reward": "Hồng Hạc Bãi Cát gives {name} a mother-of-pearl shell: hold it to your ear and hear the sea.",
+        "reward": "Beach Flamingo gives {name} a mother-of-pearl shell: hold it to your ear and hear the sea.",
         "next": "Go into the rainforest, {name}: by the waterfall waits a zone guardian as quick as lightning."
       }
     },
@@ -341,9 +341,9 @@
         }
       ],
       "en": {
-        "summary": "Báo Đốm Rừng Mưa guards the rainforest waterfall and asks {name} four riddles about forest trees, waterfall rocks and the rope bridge.",
+        "summary": "Rainforest Jaguar guards the rainforest waterfall and asks {name} four riddles about forest trees, waterfall rocks and the rope bridge.",
         "hook": [
-          "Swish! I'm Báo Đốm Rừng Mưa, the fastest in this forest. Can {name} keep up with me?",
+          "Swish! I'm Rainforest Jaguar, the fastest in this forest. Can {name} keep up with me?",
           "I don't race on foot, I race with riddles. Four of them: the quickest mind wins!"
         ],
         "choice": "A riddle race? Bring it on!",
@@ -359,7 +359,7 @@
           "Not right, read the wooden sign carefully.",
           "Nearly right, think one more beat!"
         ],
-        "reward": "Báo Đốm Rừng Mưa gives {name} a big wild banana leaf to use as an umbrella.",
+        "reward": "Rainforest Jaguar gives {name} a big wild banana leaf to use as an umbrella.",
         "next": "On to the ancient ruins, {name}: their zone guardian has watched the temple for hundreds of years."
       }
     },
@@ -553,9 +553,9 @@
         }
       ],
       "en": {
-        "summary": "Voi Đá Đền Cổ guards the gate of the ancient ruins and asks {name} five riddles carved on the stone pillars.",
+        "summary": "Temple Stone Elephant guards the gate of the ancient ruins and asks {name} five riddles carved on the stone pillars.",
         "hook": [
-          "Rumble… rumble… I'm Voi Đá Đền Cổ, and I've guarded these ruins for a very long time, {name}.",
+          "Rumble… rumble… I'm Temple Stone Elephant, and I've guarded these ruins for a very long time, {name}.",
           "Five pillars hold five ancient riddles. Solve them all and the ruins' gate will open for you."
         ],
         "choice": "I can solve them all!",
@@ -571,7 +571,7 @@
           "Not right, read the carving carefully.",
           "Nearly right, compare each digit again."
         ],
-        "reward": "Voi Đá Đền Cổ gives {name} a pebble carved with an elephant: carry it for luck.",
+        "reward": "Temple Stone Elephant gives {name} a pebble carved with an elephant: carry it for luck.",
         "next": "Three zone guardians met, {name}: go to the beach and battle the Giant Sea Crab at the last stop."
       }
     }

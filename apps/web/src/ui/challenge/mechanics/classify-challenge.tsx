@@ -54,7 +54,7 @@ export function ClassifyChallenge({ step, context, onAnswer }: { step: ClassifyS
     >
       {item.image ? <Illustration picture={item.image} /> : null}
       <span>
-        <Bi {...context.label(item.label)} />
+        <Bi {...context.label(item.label, step.en?.items?.[step.items.indexOf(item)])} />
       </span>
     </button>
   );

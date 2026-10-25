@@ -160,9 +160,9 @@
         }
       ],
       "en": {
-        "summary": "Sẻ Nâu Đưa Thư guards the square and brings {name} four riddles about notices, comparing numbers and sums.",
+        "summary": "Mail Sparrow guards the square and brings {name} four riddles about notices, comparing numbers and sums.",
         "hook": [
-          "Tweet tweet! A letter for {name}. I'm Sẻ Nâu Đưa Thư, and I carry happy news all round the square.",
+          "Tweet tweet! A letter for {name}. I'm Mail Sparrow, and I carry happy news all round the square.",
           "Today's letter is four riddles. Open it and battle me?"
         ],
         "choice": "Let's open it!",
@@ -178,7 +178,7 @@
           "Not right, read the letter once more.",
           "So close, compare each number carefully."
         ],
-        "reward": "Sẻ Nâu Đưa Thư gives {name} a stamp with the square on it. Next time I'll bring new riddles.",
+        "reward": "Mail Sparrow gives {name} a stamp with the square on it. Next time I'll bring new riddles.",
         "next": "The trading street and shops have the best counter in town as their zone guardian, {name}."
       }
     },
@@ -342,9 +342,9 @@
         }
       ],
       "en": {
-        "summary": "Heo Thu Ngân guards the trading street and asks {name} four riddles about shop sums, comparing numbers and one English word.",
+        "summary": "Cashier Pig guards the trading street and asks {name} four riddles about shop sums, comparing numbers and one English word.",
         "hook": [
-          "Ka-ching! Heo Thu Ngân here, my counter is the busiest on the trading street, {name}.",
+          "Ka-ching! Cashier Pig here, my counter is the busiest on the trading street, {name}.",
           "Today I'm treating customers to a four-riddle quiz. Whoever beats me gets a present!"
         ],
         "choice": "I'm your first customer!",
@@ -360,7 +360,7 @@
           "That doesn't add up, start again from the ones.",
           "Nearly right, check it once more."
         ],
-        "reward": "Heo Thu Ngân gives {name} a cute little piggy bank for saving coins. Drop by the counter to battle again.",
+        "reward": "Cashier Pig gives {name} a cute little piggy bank for saving coins. Drop by the counter to battle again.",
         "next": "At the seasonal events area a zone guardian is hanging up lanterns, waiting for {name}."
       }
     },
@@ -523,9 +523,9 @@
         }
       ],
       "en": {
-        "summary": "Gấu Trúc Lễ Hội guards the seasonal events area and asks {name} four riddles about time, patterns and colours.",
+        "summary": "Festival Panda guards the seasonal events area and asks {name} four riddles about time, patterns and colours.",
         "hook": [
-          "Oh, {name}! I'm Gấu Trúc Lễ Hội, and every season I hang lights and flowers round the events area.",
+          "Oh, {name}! I'm Festival Panda, and every season I hang lights and flowers round the events area.",
           "Today I've hung riddles on the lantern string. Take down four and you win!"
         ],
         "choice": "Let's take down the lanterns!",
@@ -541,7 +541,7 @@
           "Not right, look closely at the pattern.",
           "Almost lit up, try once more!"
         ],
-        "reward": "Gấu Trúc Lễ Hội gives {name} a little paper lantern. You're invited to every festival.",
+        "reward": "Festival Panda gives {name} a little paper lantern. You're invited to every festival.",
         "next": "The castle forecourt has the strictest zone guardian in town, {name}, go there next."
       }
     },
@@ -736,9 +736,9 @@
         }
       ],
       "en": {
-        "summary": "Voi Gác Sân Trước guards the castle forecourt and asks {name} five riddles about take-aways, time, numbers and signs.",
+        "summary": "Front Yard Guard Elephant guards the castle forecourt and asks {name} five riddles about take-aways, time, numbers and signs.",
         "hook": [
-          "Hup! Voi Gác Sân Trước here. To cross this forecourt, {name} must answer my five riddles.",
+          "Hup! Front Yard Guard Elephant here. To cross this forecourt, {name} must answer my five riddles.",
           "Don't worry, I only use my trunk to water the flowers. Ready?"
         ],
         "choice": "Ready, Voi!",
@@ -754,7 +754,7 @@
           "I'm flapping my ears, think a bit more.",
           "Nearly right, read the question again."
         ],
-        "reward": "Voi Gác Sân Trước sprays a little water rainbow for {name} and hopes to battle again another time.",
+        "reward": "Front Yard Guard Elephant sprays a little water rainbow for {name} and hopes to battle again another time.",
         "next": "Beaten all four zone guardians? Then visit the Magician Fox at the last stop, {name}."
       }
     }

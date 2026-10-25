@@ -162,9 +162,9 @@
         }
       ],
       "en": {
-        "summary": "Gà Mái Bán Trứng guards the flower stalls of the vegetable and flower market and asks {name} four add-over-ten riddles.",
+        "summary": "Egg-Selling Hen guards the flower stalls of the vegetable and flower market and asks {name} four add-over-ten riddles.",
         "hook": [
-          "Cluck cluck! Hello {name}, I'm Gà Mái Bán Trứng, and my egg stall is right by the flowers.",
+          "Cluck cluck! Hello {name}, I'm Egg-Selling Hen, and my egg stall is right by the flowers.",
           "The market is so busy I can't count fast enough. Battle me in four sums, and get them right for a present."
         ],
         "choice": "Cluck, I'll help count!",
@@ -180,7 +180,7 @@
           "Not right, try making a ten first.",
           "Nearly right, count on from 10."
         ],
-        "reward": "Gà Mái Bán Trứng gives {name} a flower-painted wooden egg to keep on your desk.",
+        "reward": "Egg-Selling Hen gives {name} a flower-painted wooden egg to keep on your desk.",
         "next": "Drop by the pet stalls, {name}: the zone guardian there only asks take-away riddles."
       }
     },
@@ -238,14 +238,14 @@
           "hint": "14 − 4 = 10, mà 6 khúc còn thiếu 2 khúc chưa trừ; lấy 10 bớt 2.",
           "explain": "14 − 6 = 8 vì 14 − 4 = 10, bớt thêm 2 còn 8; 20 là cộng nhầm 14 với 6.",
           "en": {
-            "prompt": "Chó Vàng has 14 bones and eats 6. How many bones are left?",
+            "prompt": "Golden Dog has 14 bones and eats 6. How many bones are left?",
             "choices": [
               "8",
               "9",
               "20"
             ],
             "guide": [
-              "Chó Vàng eats 6 bones, so there are fewer: subtract 14 − 6.",
+              "Golden Dog eats 6 bones, so there are fewer: subtract 14 − 6.",
               "Do it in two steps: take 4 from 14 to reach 10, then take the rest of the 6."
             ],
             "hint": "14 − 4 = 10, and 2 of the 6 bones still need taking away from that 10.",
@@ -347,9 +347,9 @@
         }
       ],
       "en": {
-        "summary": "Chó Vàng Giữ Sạp guards the pet stalls and asks {name} four riddles about taking away over ten and more-or-fewer problems.",
+        "summary": "Stall-Guarding Golden Dog guards the pet stalls and asks {name} four riddles about taking away over ten and more-or-fewer problems.",
         "hook": [
-          "Woof woof! Don't be scared, {name}, I'm Chó Vàng Giữ Sạp, and I only bark to say hello to customers.",
+          "Woof woof! Don't be scared, {name}, I'm Stall-Guarding Golden Dog, and I only bark to say hello to customers.",
           "My pet stall is selling fast today. Help me with four sums!"
         ],
         "choice": "Woof, I'll help!",
@@ -365,7 +365,7 @@
           "Try splitting the number to take away to a ten.",
           "Nearly right, check the take-away again."
         ],
-        "reward": "Chó Vàng Giữ Sạp gives {name} a collar with a little bell that jingles.",
+        "reward": "Stall-Guarding Golden Dog gives {name} a collar with a little bell that jingles.",
         "next": "Over at the weighing row the zone guardian brings out the balance scales for {name}."
       }
     },
@@ -562,9 +562,9 @@
         }
       ],
       "en": {
-        "summary": "Voi Tím Cân Đong guards the stalls with scales and asks {name} five riddles about balance scales, kilograms and litres.",
+        "summary": "Purple Weighing Elephant guards the stalls with scales and asks {name} five riddles about balance scales, kilograms and litres.",
         "hook": [
-          "Thud, thud! I'm Voi Tím Cân Đong, and the biggest scales in the market are mine, {name}.",
+          "Thud, thud! I'm Purple Weighing Elephant, and the biggest scales in the market are mine, {name}.",
           "Today I've brought the balance and the water cans for riddles. Five of them: get them all and you win!"
         ],
         "choice": "Put it on the scales!",
@@ -580,7 +580,7 @@
           "Not right, remember to write the unit.",
           "The can isn't full yet, work it out again."
         ],
-        "reward": "Voi Tím Cân Đong gives {name} a tiny brass weight of exactly one hundred grams.",
+        "reward": "Purple Weighing Elephant gives {name} a tiny brass weight of exactly one hundred grams.",
         "next": "All three zone guardians met, {name}: head to the last stop and battle the Giant Piggy Bank."
       }
     }

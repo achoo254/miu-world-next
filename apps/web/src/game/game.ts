@@ -1322,7 +1322,8 @@ export class Game {
             : nearObject
               ? objectInteractions.toPrompt(nearObject)
               : nearPet
-                ? { targetId: 'pet-companion', kind: 'ambient' as const, name: petName, label: pairOf('pet.prompt').vi, labelEn: pairOf('pet.prompt').en }
+                // The pet's name is the one the child gave it: never looked up in the name glossary.
+                ? { targetId: 'pet-companion', kind: 'ambient' as const, name: petName, nameEn: petName, label: pairOf('pet.prompt').vi, labelEn: pairOf('pet.prompt').en }
                 : null;
         store.emit({ type: 'interaction-prompt', prompt });
       }

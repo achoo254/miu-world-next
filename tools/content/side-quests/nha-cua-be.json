@@ -30,7 +30,7 @@
           "who": "{name}, người gói bánh chưng",
           "learn": "Làm đúng thứ tự từng bước",
           "en": {
-            "title": "Wrap Tết bánh chưng with Gấu Bánh Ngọt",
+            "title": "Wrap Tết bánh chưng with Pastry Bear",
             "summary": "Out in the yard, lay the leaves, add rice, beans and pork following the pattern, then fold and tie a square rice cake.",
             "lines": [
               "Tết is coming, {name}! Let's wrap some perfectly square bánh chưng!",
@@ -38,8 +38,8 @@
             ],
             "choice": "I'll wrap the first one!",
             "prompt": "Wrap {goal} neat square bánh chưng!",
-            "reward": "Gấu Bánh Ngọt sets the cakes on a tray: {name}'s bánh chưng are square as gift boxes!",
-            "next": "Every Tết needs rice cakes. Gấu Bánh Ngọt will meet {name} in the front yard."
+            "reward": "Pastry Bear sets the cakes on a tray: {name}'s bánh chưng are square as gift boxes!",
+            "next": "Every Tết needs rice cakes. Pastry Bear will meet {name} in the front yard."
           }
         },
         {
@@ -57,7 +57,7 @@
           "who": "{name}, đầu bếp bánh xèo",
           "learn": "Canh thời gian và làm nhiều việc cùng lúc",
           "en": {
-            "title": "Crispy bánh xèo with Gấu Bánh Ngọt",
+            "title": "Crispy bánh xèo with Pastry Bear",
             "summary": "Pour batter into the pan, flip the pancake when it's golden, then slide it onto a plate before it burns.",
             "lines": [
               "The pan's hot, {name}! Let's pour some sizzling bánh xèo!",
@@ -65,8 +65,8 @@
             ],
             "choice": "Pour the batter, it smells great!",
             "prompt": "Cook {goal} golden, crispy bánh xèo!",
-            "reward": "Gấu Bánh Ngọt takes a big sniff: {name}'s bánh xèo are super crispy!",
-            "next": "There'll be bánh xèo again next meal. Come help Gấu in the front yard, {name}."
+            "reward": "Pastry Bear takes a big sniff: {name}'s bánh xèo are super crispy!",
+            "next": "There'll be bánh xèo again next meal. Come help Bear in the front yard, {name}."
           }
         },
         {
@@ -84,7 +84,7 @@
           "who": "{name}, thợ trang trí bánh kem",
           "learn": "Chọn đúng lúc theo vật chuyển động",
           "en": {
-            "title": "Candles on a Spinning Cake with Gấu Bánh Ngọt",
+            "title": "Candles on a Spinning Cake with Pastry Bear",
             "summary": "A birthday cake spins round; tap to shoot candles into its edge without hitting the old ones.",
             "lines": [
               "It's Cat's birthday today, {name}. Help me put the candles on!",
@@ -92,8 +92,8 @@
             ],
             "choice": "Let me do the candles!",
             "prompt": "Score {goal} points with the candles!",
-            "reward": "Gấu Bánh Ngọt sings happy birthday: {name}'s candles are perfectly even!",
-            "next": "Lots of friends have birthdays coming up. Gấu Bánh Ngọt will ask {name} again."
+            "reward": "Pastry Bear sings happy birthday: {name}'s candles are perfectly even!",
+            "next": "Lots of friends have birthdays coming up. Pastry Bear will ask {name} again."
           }
         },
         {
@@ -111,7 +111,7 @@
           "who": "{name}, người giữ nhà sạch sẽ",
           "learn": "Làm theo đủ các bước và chăm chỉ",
           "en": {
-            "title": "Clean the Muddy Toys with Gấu Bánh Ngọt",
+            "title": "Clean the Muddy Toys with Pastry Bear",
             "summary": "After the rain the toys are muddy; scrub with soap, rinse, then dry each one until it shines.",
             "lines": [
               "The rain got all the toys in the yard muddy, {name}!",
@@ -119,8 +119,8 @@
             ],
             "choice": "Pass me the towel, I'll wipe!",
             "prompt": "Wipe {goal} things sparkling clean!",
-            "reward": "Gấu Bánh Ngọt sees his reflection in the bucket: {name} cleaned it like new!",
-            "next": "The yard always has something to clean. Gấu will ask {name} next time."
+            "reward": "Pastry Bear sees his reflection in the bucket: {name} cleaned it like new!",
+            "next": "The yard always has something to clean. Bear will ask {name} next time."
           }
         }
       ]
@@ -154,7 +154,7 @@
           "who": "{name}, người trồng rau nhí",
           "learn": "Chăm sóc cây theo từng giai đoạn",
           "en": {
-            "title": "Tend the Veggie Patch with Thỏ Làm Vườn",
+            "title": "Tend the Veggie Patch with Gardener Rabbit",
             "summary": "Sow seeds in empty beds, water wilting plants, shoo the birds and pick the veggies when they're ripe.",
             "lines": [
               "The veggie garden by the house still has empty beds, {name}. Let's sow some seeds!",
@@ -162,8 +162,8 @@
             ],
             "choice": "I'll bring the watering can!",
             "prompt": "Pick {goal} bunches of greens!",
-            "reward": "Thỏ Làm Vườn hugs a full basket: {name} is a great gardener!",
-            "next": "New seeds sprout every day. Thỏ will wait for {name} in the veggie garden."
+            "reward": "Gardener Rabbit hugs a full basket: {name} is a great gardener!",
+            "next": "New seeds sprout every day. Rabbit will wait for {name} in the veggie garden."
           }
         },
         {
@@ -181,7 +181,7 @@
           "who": "{name}, người giữ vườn sạch cỏ",
           "learn": "Phân biệt cây trồng và cỏ dại",
           "en": {
-            "title": "Weed the Carrot Bed with Thỏ Làm Vườn",
+            "title": "Weed the Carrot Bed with Gardener Rabbit",
             "summary": "Hold your finger on a weed and pull it up; wiggle the clover loose first and don't pull a carrot by mistake.",
             "lines": [
               "Weeds have crept into my carrot bed, {name}!",
@@ -189,8 +189,8 @@
             ],
             "choice": "I'll pull them all out for you!",
             "prompt": "Score {goal} points pulling weeds!",
-            "reward": "Thỏ Làm Vườn jumps for joy: the carrot bed is weed-free, thank you {name}!",
-            "next": "Weeds grow back fast. Remember to visit the veggie garden with Thỏ, {name}."
+            "reward": "Gardener Rabbit jumps for joy: the carrot bed is weed-free, thank you {name}!",
+            "next": "Weeds grow back fast. Remember to visit the veggie garden with Rabbit, {name}."
           }
         },
         {
@@ -208,7 +208,7 @@
           "who": "{name}, người cắt cỏ khéo tay",
           "learn": "Tìm đường đi qua mọi ô một lần",
           "en": {
-            "title": "One-Stroke Mowing with Thỏ Làm Vườn",
+            "title": "One-Stroke Mowing with Gardener Rabbit",
             "summary": "Drive the mower over every square of grass without crossing a square twice, avoiding flower beds and rocks.",
             "lines": [
               "The grass around the garden is way too tall. {name}, take the mower!",
@@ -216,8 +216,8 @@
             ],
             "choice": "Mower ready, let's go!",
             "prompt": "Mow {goal} lawns nice and neat!",
-            "reward": "Thỏ Làm Vườn rolls on the grass: {name} mowed it smooth as a carpet!",
-            "next": "The grass will be tall again next week. Thỏ will meet {name} on the path by the veggie garden."
+            "reward": "Gardener Rabbit rolls on the grass: {name} mowed it smooth as a carpet!",
+            "next": "The grass will be tall again next week. Rabbit will meet {name} on the path by the veggie garden."
           }
         }
       ]
@@ -246,7 +246,7 @@
           "who": "{name}, người vớt cá khéo léo",
           "learn": "Khéo tay và kiên nhẫn chờ đợi",
           "en": {
-            "title": "Goldfish Scooping at the Pier with Chó Giữ Ao",
+            "title": "Goldfish Scooping at the Pier with Pond Guard Dog",
             "summary": "Dip the paper scoop in front of a fish and lift at the right moment, without tearing the paper.",
             "lines": [
               "Some goldfish swam off into the pond, {name}. Help me scoop them back into the bowl!",
@@ -254,8 +254,8 @@
             ],
             "choice": "I'll be really gentle!",
             "prompt": "Scoop {goal} goldfish!",
-            "reward": "Chó Giữ Ao wags his tail like mad: all the goldfish are home thanks to {name}!",
-            "next": "Goldfish love to wander off. Chó Giữ Ao will wait for {name} at the pier."
+            "reward": "Pond Guard Dog wags his tail like mad: all the goldfish are home thanks to {name}!",
+            "next": "Goldfish love to wander off. Pond Guard Dog will wait for {name} at the pier."
           }
         },
         {
@@ -273,7 +273,7 @@
           "who": "{name}, người dẫn đường cho vịt con",
           "learn": "Vẽ đường và tránh va chạm",
           "en": {
-            "title": "Draw the Ducklings Home with Chó Giữ Ao",
+            "title": "Draw the Ducklings Home with Pond Guard Dog",
             "summary": "The ducklings are lost; drag your finger to draw each one a path to the coop of its colour without any bumping.",
             "lines": [
               "The ducklings have lost their way back to the coop, {name}!",
@@ -281,8 +281,8 @@
             ],
             "choice": "Let me draw the paths!",
             "prompt": "Guide {goal} ducklings home to their coops!",
-            "reward": "Chó Giữ Ao barks happily: every duckling is home thanks to {name}!",
-            "next": "Ducklings love to play. When they get lost, Chó Giữ Ao will call {name} again."
+            "reward": "Pond Guard Dog barks happily: every duckling is home thanks to {name}!",
+            "next": "Ducklings love to play. When they get lost, Pond Guard Dog will call {name} again."
           }
         }
       ]
@@ -317,7 +317,7 @@
           "who": "{name}, bé ngoan dọn phòng ngăn nắp",
           "learn": "Ghi nhớ hình ảnh không gian và rèn tính gọn gàng",
           "en": {
-            "title": "Toys Back in Place with Cún Đốm Dọn Nhà",
+            "title": "Toys Back in Place with Tidy Spotted Pup",
             "summary": "After playtime things are a mess; remember how the room looked and drag each item back to its spot.",
             "lines": [
               "The toys are scattered all over the rug. {name}, help me tidy the room!",
@@ -325,8 +325,8 @@
             ],
             "choice": "I'll tidy everything right away!",
             "prompt": "Put {goal} toys back in their right places!",
-            "reward": "Cún Đốm wags with delight: our room is neat and spotless thanks to {name}!",
-            "next": "The living room corner is always cosy. Cún Đốm will wait for {name} to play again."
+            "reward": "Spotted Pup wags with delight: our room is neat and spotless thanks to {name}!",
+            "next": "The living room corner is always cosy. Spotted Pup will wait for {name} to play again."
           }
         },
         {
@@ -344,16 +344,16 @@
           "who": "{name}, người bạn thân thiết của cún con",
           "learn": "Ước lượng thời gian bay và đón đầu chuyển động",
           "en": {
-            "title": "Frisbee in the Yard with Cún Đốm Dọn Nhà",
+            "title": "Frisbee in the Yard with Tidy Spotted Pup",
             "summary": "The puppy scampers across the lawn; swipe to throw the frisbee ahead of where the pup is running.",
             "lines": [
               "It's cool and shady in the yard this afternoon. Throw the frisbee for me, {name}!",
               "Swipe long towards where I'm about to run, so the frisbee glides in just right."
             ],
             "choice": "One perfect frisbee, coming up!",
-            "prompt": "Throw so Cún Đốm catches the frisbee {goal} times!",
-            "reward": "Cún Đốm bounces with the frisbee in his mouth: {name} throws so well, I never miss!",
-            "next": "The lawn by the porch is wide open. Cún Đốm is waiting for {name} to play frisbee."
+            "prompt": "Throw so Spotted Pup catches the frisbee {goal} times!",
+            "reward": "Spotted Pup bounces with the frisbee in his mouth: {name} throws so well, I never miss!",
+            "next": "The lawn by the porch is wide open. Spotted Pup is waiting for {name} to play frisbee."
           }
         },
         {
@@ -371,7 +371,7 @@
           "who": "{name}, kỹ sư lập trình rô bốt nhí",
           "learn": "Tư duy bước tiến logic và định hướng không gian",
           "en": {
-            "title": "Program the Robot Vacuum with Cún Đốm",
+            "title": "Program the Robot Vacuum with Spotted Pup",
             "summary": "Line up forward, turn-left and turn-right arrows so the robot vacuums every speck without bumping the furniture.",
             "lines": [
               "The robot vacuum is waiting for orders, {name}. Help me plan its route!",
@@ -379,8 +379,8 @@
             ],
             "choice": "Let me program the route!",
             "prompt": "Program perfect routes to clean {goal} dusty rooms!",
-            "reward": "Cún Đốm barks with glee: the floor shines thanks to {name}'s smart route!",
-            "next": "The living room has lots of corners left. Cún Đốm is waiting for {name} to drive the robot."
+            "reward": "Spotted Pup barks with glee: the floor shines thanks to {name}'s smart route!",
+            "next": "The living room has lots of corners left. Spotted Pup is waiting for {name} to drive the robot."
           }
         }
       ]
@@ -415,7 +415,7 @@
           "who": "{name}, phụ bếp gắp đũa khéo tay",
           "learn": "Điều khiển lực ngón tay bền bỉ và cẩn thận",
           "en": {
-            "title": "Chopstick Practice with Mèo Bếp Trưởng",
+            "title": "Chopstick Practice with Head Chef Cat",
             "summary": "Small bamboo chopsticks pinch round beans; keep a gentle hand and move each bean from plate to bowl.",
             "lines": [
               "The family meal's nearly ready, {name}. Let's show off our chopstick skills!",
@@ -423,8 +423,8 @@
             ],
             "choice": "I'll hold tight and not drop any!",
             "prompt": "Use chopsticks to move {goal} golden beans into the bowl!",
-            "reward": "Mèo Bếp Trưởng twitches his whiskers: {name}'s chopstick hands are skilful and steady!",
-            "next": "The kitchen always smells delicious. Mèo Bếp Trưởng is waiting for {name} to help."
+            "reward": "Head Chef Cat twitches his whiskers: {name}'s chopstick hands are skilful and steady!",
+            "next": "The kitchen always smells delicious. Head Chef Cat is waiting for {name} to help."
           }
         },
         {
@@ -442,7 +442,7 @@
           "who": "{name}, thợ làm bánh quy tí hon",
           "learn": "Sắp xếp hình gọn gàng tận dụng tối đa diện tích",
           "en": {
-            "title": "Cookie Cutting with Mèo Bếp Trưởng",
+            "title": "Cookie Cutting with Head Chef Cat",
             "summary": "Buttery dough is rolled flat; press the cutters so they fit snugly and make lots of cookies.",
             "lines": [
               "This yummy sheet of dough is freshly rolled. {name}, cut cookies with me!",
@@ -450,8 +450,8 @@
             ],
             "choice": "I'll cut lots of pretty cookies!",
             "prompt": "Cut out {goal} nicely shaped cookies!",
-            "reward": "Mèo Bếp Trưởng licks his lips: {name}'s batch makes the whole kitchen smell wonderful!",
-            "next": "The oven is still warm. Mèo Bếp Trưởng is waiting for {name} to cut a new batch."
+            "reward": "Head Chef Cat licks his lips: {name}'s batch makes the whole kitchen smell wonderful!",
+            "next": "The oven is still warm. Head Chef Cat is waiting for {name} to cut a new batch."
           }
         },
         {
@@ -469,7 +469,7 @@
           "who": "{name}, đầu bếp chia phần chu đáo",
           "learn": "Ước lượng tỷ lệ phân chia đều các phần",
           "en": {
-            "title": "Fair Cake Slices with Mèo Bếp Trưởng",
+            "title": "Fair Cake Slices with Head Chef Cat",
             "summary": "A round cake sits on the table; swipe the knife to cut it into equal pieces for everyone.",
             "lines": [
               "The whole family is waiting for dessert, {name}. Help me share out the cake!",
@@ -477,8 +477,8 @@
             ],
             "choice": "I'll cut every slice even!",
             "prompt": "Cut {goal} tasty cakes into equal slices!",
-            "reward": "Mèo Bếp Trưởng tilts his head in approval: every slice {name} cuts is perfectly fair!",
-            "next": "The sweet tray still has lots of treats. Mèo Bếp Trưởng will see {name} at the table."
+            "reward": "Head Chef Cat tilts his head in approval: every slice {name} cuts is perfectly fair!",
+            "next": "The sweet tray still has lots of treats. Head Chef Cat will see {name} at the table."
           }
         }
       ]
@@ -513,7 +513,7 @@
           "who": "{name}, nghệ nhân cắt giấy thủ công",
           "learn": "Tư duy đối xứng trục khi gập và mở hình",
           "en": {
-            "title": "Fold and Cut Paper Flowers with Bé Gấp Giấy Vui",
+            "title": "Fold and Cut Paper Flowers with Happy Paper-Folding Kid",
             "summary": "A sheet of coloured paper is folded in half; study the flower pattern, then swipe to cut and open up the petals.",
             "lines": [
               "I've got some bright coloured paper, {name}. Let's cut out flowers to decorate!",
@@ -540,7 +540,7 @@
           "who": "{name}, tuyển thủ xếp cốc tốc độ",
           "learn": "Trình tự thao tác chuẩn và phối hợp hai tay",
           "en": {
-            "title": "Cup Stacking Race with Bé Gấp Giấy Vui",
+            "title": "Cup Stacking Race with Happy Paper-Folding Kid",
             "summary": "Colourful cups sit neatly in rows; tap fast to build a tower, then stack it down without knocking it over.",
             "lines": [
               "This cup-stacking race is so exciting! {name}, race me with your speedy hands!",
@@ -567,7 +567,7 @@
           "who": "{name}, nghệ sĩ biểu diễn yo-yo điêu luyện",
           "learn": "Bắt đúng thời điểm nhịp chuyển động rơi và giật",
           "en": {
-            "title": "Yo-Yo Tricks with Bé Gấp Giấy Vui",
+            "title": "Yo-Yo Tricks with Happy Paper-Folding Kid",
             "summary": "The yo-yo spins down on its long string; tap the moment it hits the bottom to whip it back up.",
             "lines": [
               "My sparkly yo-yo spins like crazy. {name}, want to try the up-and-down?",
@@ -611,7 +611,7 @@
           "who": "{name}, người bạn bảo vệ động vật",
           "learn": "Vẽ đường dẫn hướng dòng chảy của giọt nước",
           "en": {
-            "title": "Draw a Rain Roof for the Puppy with Ông Cụ Trông Vườn",
+            "title": "Draw a Rain Roof for the Puppy with Old Garden Keeper",
             "summary": "A sudden shower pours over the garden; draw a curve to keep the puppy from getting wet.",
             "lines": [
               "Dark clouds are rolling in and rain's coming, {name}. Draw a roof for the puppy!",
@@ -638,7 +638,7 @@
           "who": "{name}, cháu ngoan bày mâm ngũ quả",
           "learn": "Phân biệt màu sắc và giải đố xếp vị trí kề nhau",
           "en": {
-            "title": "Tết Five-Fruit Tray with Ông Cụ Trông Vườn",
+            "title": "Tết Five-Fruit Tray with Old Garden Keeper",
             "summary": "A five-petal fruit stand; arrange five kinds of fresh fruit without putting two of the same side by side.",
             "lines": [
               "Tết is coming to our little lane, {name}. Help Grandpa set out the five-fruit tray for the ancestors!",
@@ -665,7 +665,7 @@
           "who": "{name}, bé tinh mắt ghép khối hình học",
           "learn": "Nhận biết hình vuông, tròn, tam giác khi chuyển động",
           "en": {
-            "title": "Shape Sorter Lid with Ông Cụ Trông Vườn",
+            "title": "Shape Sorter Lid with Old Garden Keeper",
             "summary": "Wooden shapes slide down onto the box lid; turn the lid so the matching hole lines up and the shape drops in.",
             "lines": [
               "I've just carved this lovely shape-sorting box, {name}. Try fitting the shapes with me!",
@@ -709,7 +709,7 @@
           "who": "{name}, hành khách chuẩn giờ đi học",
           "learn": "Đọc giờ đúng và giờ rưỡi trên mặt đồng hồ",
           "en": {
-            "title": "Stop the Clock for the Bus with Chú Rô Bốt Đồng Hồ",
+            "title": "Stop the Clock for the Bus with Uncle Clock Robot",
             "summary": "The clock hands keep spinning; listen for the time the driver calls, then tap to stop the hands right there.",
             "lines": [
               "The school bus is coming soon, {name}. Help the robot watch the time!",
@@ -736,7 +736,7 @@
           "who": "{name}, nhà khoa học nhí gom kim loại",
           "learn": "Phân biệt vật bằng sắt hút được bằng nam châm",
           "en": {
-            "title": "Magnet Desk Sweep with Chú Rô Bốt Đồng Hồ",
+            "title": "Magnet Desk Sweep with Uncle Clock Robot",
             "summary": "Screws and paper clips are scattered on the desk; sweep the magnet to pick up all the metal and drop it in the tray.",
             "lines": [
               "So many paper clips and pins on the study desk! {name}, grab the magnet and sweep with me!",
@@ -763,7 +763,7 @@
           "who": "{name}, chuyên gia so sánh kích thước đồ vật",
           "learn": "So sánh thứ tự kích cỡ từ bé đến lớn",
           "en": {
-            "title": "Nesting Dolls with Chú Rô Bốt Đồng Hồ",
+            "title": "Nesting Dolls with Uncle Clock Robot",
             "summary": "Wooden dolls of many sizes; compare them and tuck each smaller doll inside the next bigger one.",
             "lines": [
               "The layered wooden dolls on the table are so cute. {name}, help me nest them!",

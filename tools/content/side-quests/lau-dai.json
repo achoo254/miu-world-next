@@ -30,7 +30,7 @@
           "who": "{name}, cung thủ nhí của rừng thông",
           "learn": "Ngắm bắn và tính đến hướng gió",
           "en": {
-            "title": "Archery in the Wind with Cáo Cung Thủ",
+            "title": "Archery in the Wind with Archer Fox",
             "summary": "Wooden targets stand on the range by the training yard; the wind pushes arrows aside, so aim against it to hit the centre.",
             "lines": [
               "Hi {name}! The pine-forest wind is strong today, so archery is tricky.",
@@ -38,7 +38,7 @@
             ],
             "choice": "Hand me the bow!",
             "prompt": "Score {goal} points on the target!",
-            "reward": "Cáo Cung Thủ raises his bow in salute: {name} hit the bullseye like a true knight!",
+            "reward": "Archer Fox raises his bow in salute: {name} hit the bullseye like a true knight!",
             "next": "I practise archery in the training yard every morning. Drop by for more shots!"
           }
         },
@@ -57,7 +57,7 @@
           "who": "{name}, xạ thủ ná cao su",
           "learn": "Ước lượng lực kéo và góc bắn",
           "en": {
-            "title": "Topple Box Towers with Cáo Cung Thủ",
+            "title": "Topple Box Towers with Archer Fox",
             "summary": "Stacked box towers have teddy bears on top; pull the slingshot and fire stones to knock the bears down.",
             "lines": [
               "{name}, try the slingshot I made myself. Knock down that box tower!",
@@ -65,7 +65,7 @@
             ],
             "choice": "Stretch it back and fire!",
             "prompt": "Knock down {goal} box towers!",
-            "reward": "Teddy bears tumble down, plop-plop, and Cáo Cung Thủ cheers: {name} has perfect aim!",
+            "reward": "Teddy bears tumble down, plop-plop, and Archer Fox cheers: {name} has perfect aim!",
             "next": "I'll stack the towers even higher. Come back and test your skill again!"
           }
         },
@@ -84,7 +84,7 @@
           "who": "{name}, người nhanh tay nhất vùng",
           "learn": "Tập trung chờ tín hiệu và phản xạ nhanh",
           "en": {
-            "title": "Quick Hands Contest with Cáo Cung Thủ",
+            "title": "Quick Hands Contest with Archer Fox",
             "summary": "A lantern hangs between two players; wait for it to glow red, then tap faster than your Cat rival.",
             "lines": [
               "Are you quick, {name}? Let's see who taps first once the lantern turns red!",
@@ -92,7 +92,7 @@
             ],
             "choice": "I'm ready, my hands are lightning fast!",
             "prompt": "Win {goal} rounds of the quick-hands duel!",
-            "reward": "Cáo Cung Thủ shakes his head and gives up: {name} is faster than a lightning bolt!",
+            "reward": "Archer Fox shakes his head and gives up: {name} is faster than a lightning bolt!",
             "next": "I'll keep training to get quicker. Rematch at the training yard, {name}!"
           }
         }
@@ -128,7 +128,7 @@
           "who": "{name}, người xếp kho thông minh",
           "learn": "Suy nghĩ trước từng bước di chuyển",
           "en": {
-            "title": "Push Crates into the Storehouse with Voi Thủ Kho",
+            "title": "Push Crates into the Storehouse with Storekeeper Elephant",
             "summary": "The storehouse is crammed with wooden crates; walk around them and push each one onto a star square.",
             "lines": [
               "Oh, {name}! I need someone to push crates to the right spots in the storehouse!",
@@ -136,7 +136,7 @@
             ],
             "choice": "I'm a great pusher, leave it to me!",
             "prompt": "Finish sorting {goal} storehouses!",
-            "reward": "Voi Thủ Kho trumpets with joy: every storehouse is tidy thanks to {name}!",
+            "reward": "Storekeeper Elephant trumpets with joy: every storehouse is tidy thanks to {name}!",
             "next": "The market below the castle gets new goods every day. Come help me again!"
           }
         },
@@ -155,7 +155,7 @@
           "who": "{name}, kiến trúc sư xây tháp",
           "learn": "Canh đúng lúc và căn thẳng hàng",
           "en": {
-            "title": "Sliding Stack with Voi Thủ Kho",
+            "title": "Sliding Stack with Storekeeper Elephant",
             "summary": "Wooden layers slide back and forth on top of the tower; tap at the right moment to drop each one in line with the layer below.",
             "lines": [
               "{name}, I want to build a really tall tower of goods, but it keeps leaning.",
@@ -163,7 +163,7 @@
             ],
             "choice": "Let's build it sky-high!",
             "prompt": "Stack {goal} tower layers!",
-            "reward": "The tower soars, and Voi Thủ Kho lifts his trunk to praise {name}'s perfect timing!",
+            "reward": "The tower soars, and Storekeeper Elephant lifts his trunk to praise {name}'s perfect timing!",
             "next": "I've got plenty more wood at the market. Come build again whenever you like."
           }
         }
@@ -198,7 +198,7 @@
           "who": "{name}, người dẫn nắng cho vườn hoa",
           "learn": "Suy luận hướng đi của tia sáng",
           "en": {
-            "title": "Guide the Sunbeam with Mèo Gương Thần",
+            "title": "Guide the Sunbeam with Magic Mirror Cat",
             "summary": "A sunbeam shines into the royal garden; turn the mirrors to lead the light to a flower that hasn't bloomed yet.",
             "lines": [
               "Meow, {name}, the flower in the corner of the garden gets no sun, so it can't bloom.",
@@ -206,7 +206,7 @@
             ],
             "choice": "Turn the mirrors, catch the sun!",
             "prompt": "Make the flower bloom on {goal} mirror boards!",
-            "reward": "The flower bursts into bloom, and Mèo Gương Thần tucks a blossom behind {name}'s ear!",
+            "reward": "The flower bursts into bloom, and Magic Mirror Cat tucks a blossom behind {name}'s ear!",
             "next": "The garden has plenty of shady corners. Come back to the flower path and help me bring in light."
           }
         },
@@ -225,7 +225,7 @@
           "who": "{name}, nhà thám hiểm mê cung",
           "learn": "Tìm đường và định hướng",
           "en": {
-            "title": "Find the Way Home with Mèo Gương Thần",
+            "title": "Find the Way Home with Magic Mirror Cat",
             "summary": "The royal garden's hedge maze hides stars in its dead ends; trace a path with your finger, grab the stars, then head home.",
             "lines": [
               "{name}, do you dare enter the king's flower maze?",
@@ -233,7 +233,7 @@
             ],
             "choice": "I'm not afraid of getting lost!",
             "prompt": "Score {goal} points in the maze!",
-            "reward": "Mèo Gương Thần waits at the gate: {name} is brilliant at finding the way!",
+            "reward": "Magic Mirror Cat waits at the gate: {name} is brilliant at finding the way!",
             "next": "The flower maze changes every season. Remember to stop by the flower path and try it!"
           }
         }
@@ -268,7 +268,7 @@
           "who": "{name}, người dũng cảm dưới hầm",
           "learn": "Quan sát xung quanh và chọn đường an toàn",
           "en": {
-            "title": "Eat Seeds, Dodge Ghosts with Gấu Gác Hầm",
+            "title": "Eat Seeds, Dodge Ghosts with Dungeon-Keeper Bear",
             "summary": "The dungeon tunnels are a tangle of paths full of seeds; eat them all while dodging the slow ghosts.",
             "lines": [
               "Shh, {name}! A few cloth ghosts are wandering around down in the dungeon.",
@@ -276,7 +276,7 @@
             ],
             "choice": "Into the dungeon I go!",
             "prompt": "Eat {goal} seeds in the dungeon!",
-            "reward": "Gấu Gác Hầm raises his lantern and laughs: {name} dodges ghosts so well!",
+            "reward": "Dungeon-Keeper Bear raises his lantern and laughs: {name} dodges ghosts so well!",
             "next": "The dungeon has lots more tunnels. Come down and play whenever you like."
           }
         },
@@ -295,7 +295,7 @@
           "who": "{name}, người tìm đồ tinh mắt",
           "learn": "Quan sát chi tiết trong bức tranh",
           "en": {
-            "title": "Hidden Things in the Dungeon with Gấu Gác Hầm",
+            "title": "Hidden Things in the Dungeon with Dungeon-Keeper Bear",
             "summary": "A dungeon picture is piled with old junk; find the six items shown in the tray below to send them flying in.",
             "lines": [
               "{name}, I dropped my things all over the dungeon and now I can't find them!",
@@ -303,7 +303,7 @@
             ],
             "choice": "I'll find every one for you!",
             "prompt": "Find {goal} hidden items!",
-            "reward": "Everything's back! Gấu Gác Hầm pats {name} on the shoulder: you have sharp eyes!",
+            "reward": "Everything's back! Dungeon-Keeper Bear pats {name} on the shoulder: you have sharp eyes!",
             "next": "I forget things all the time. Whenever you visit the dungeon, help me look!"
           }
         },
@@ -322,7 +322,7 @@
           "who": "{name}, người soi tranh tinh tường",
           "learn": "So sánh và tìm điểm khác biệt",
           "en": {
-            "title": "Spot the Difference with Gấu Gác Hầm",
+            "title": "Spot the Difference with Dungeon-Keeper Bear",
             "summary": "Two paintings on the dungeon wall look almost the same; find the five differences.",
             "lines": [
               "{name}, look at the two paintings on the dungeon wall. Are they the same?",
@@ -330,7 +330,7 @@
             ],
             "choice": "Let me look really closely!",
             "prompt": "Find {goal} differences!",
-            "reward": "Gấu Gác Hầm's eyes go wide: {name} found them all, how clever!",
+            "reward": "Dungeon-Keeper Bear's eyes go wide: {name} found them all, how clever!",
             "next": "I'll hang some new paintings. Come back down the dungeon steps to search again."
           }
         }
@@ -366,7 +366,7 @@
           "who": "{name}, hiệp sĩ thấu hiểu gương thần",
           "learn": "Quy luật đối xứng trục và điều khiển hai vật thể",
           "en": {
-            "title": "Mirror Twins with Hiệp Sĩ Gương Soi",
+            "title": "Mirror Twins with Mirror Knight",
             "summary": "Two knights walk across a marble floor; guide them so both reach their mirrored goals together.",
             "lines": [
               "The knight greets you, {name}! The palace's magic mirror is putting us to the test.",
@@ -374,7 +374,7 @@
             ],
             "choice": "I'll walk with my reflection!",
             "prompt": "Lead both twins through the mirror to the goal {goal} times!",
-            "reward": "Hiệp Sĩ Gương Soi raises his sword: {name} has mastered mirror symmetry like no one else!",
+            "reward": "Mirror Knight raises his sword: {name} has mastered mirror symmetry like no one else!",
             "next": "The palace shape courtyard is always open. The knight awaits your return to practise mirror magic."
           }
         },
@@ -393,7 +393,7 @@
           "who": "{name}, tay phá gạch cừ khôi",
           "learn": "Ước lượng góc phản xạ và di chuyển đón đầu",
           "en": {
-            "title": "Royal Brick Breaker with Hiệp Sĩ Gương Soi",
+            "title": "Royal Brick Breaker with Mirror Knight",
             "summary": "The ancient castle wall needs clearing; move the paddle to bounce the ball and smash row after row of bricks.",
             "lines": [
               "{name}, the old brick wall in front of the palace yard needs your quick hands!",
@@ -401,7 +401,7 @@
             ],
             "choice": "I'll bounce the ball and clear every brick!",
             "prompt": "Smash {goal} sturdy royal bricks!",
-            "reward": "Hiệp Sĩ Gương Soi applauds: {name}'s shots are as precise as a knight's sword strokes!",
+            "reward": "Mirror Knight applauds: {name}'s shots are as precise as a knight's sword strokes!",
             "next": "The palace wall is clean and bright. Come practise again in the shape courtyard some day."
           }
         },
@@ -420,7 +420,7 @@
           "who": "{name}, phù thủy nét chữ thần kỳ",
           "learn": "Viết nhanh chữ cái và kết nối âm đầu hình ảnh",
           "en": {
-            "title": "Magic Letter Drawing with Hiệp Sĩ Gương Soi",
+            "title": "Magic Letter Drawing with Mirror Knight",
             "summary": "Magic bubbles carrying letters float down from a high tower; draw each letter with your finger to pop them.",
             "lines": [
               "Look up, {name}! Magic bubbles with letters inside are swooping down from the sky!",
@@ -428,7 +428,7 @@
             ],
             "choice": "I'll draw the magic letters right now!",
             "prompt": "Break the spell on {goal} letter bubbles with neat drawing!",
-            "reward": "Hiệp Sĩ Gương Soi bows in admiration at {name}'s lightning-fast, beautiful letters!",
+            "reward": "Mirror Knight bows in admiration at {name}'s lightning-fast, beautiful letters!",
             "next": "The palace sky is peaceful again. Remember to visit the shape courtyard for a chat."
           }
         }
@@ -464,7 +464,7 @@
           "who": "{name}, người kỵ mã bàn cờ tài hoa",
           "learn": "Quy tắc di chuyển hình chữ L trong cờ vua",
           "en": {
-            "title": "Knight Hops with Quản Mã Hoàng Gia",
+            "title": "Knight Hops with Royal Stable Master",
             "summary": "A stone chessboard floor sparkles with stars; lead the magic horse in L-shaped jumps to collect every one.",
             "lines": [
               "Hello, {name}! The royal steed loves jumping in L shapes across the chessboard.",
@@ -472,7 +472,7 @@
             ],
             "choice": "I'll lead the steed in L-shaped leaps!",
             "prompt": "Help the horse jump and gather {goal} twinkling stars!",
-            "reward": "Quản Mã Hoàng Gia strokes the horse's mane and laughs: {name} really knows the knight's move!",
+            "reward": "Royal Stable Master strokes the horse's mane and laughs: {name} really knows the knight's move!",
             "next": "The royal horse is full of grass and gold stars. See you at the drawbridge by the castle gate."
           }
         },
@@ -491,7 +491,7 @@
           "who": "{name}, nghệ nhân dựng tháp bài",
           "learn": "Giữ tay bình tĩnh và điều tiết tốc độ thao tác",
           "en": {
-            "title": "Build a Card Castle with Quản Mã Hoàng Gia",
+            "title": "Build a Card Castle with Royal Stable Master",
             "summary": "Flimsy playing cards need a perfectly calm hand; gently stack them into tall tiers.",
             "lines": [
               "{name}, while the horses rest, let's try building a castle out of playing cards.",
@@ -499,7 +499,7 @@
             ],
             "choice": "I'll place each card ever so gently!",
             "prompt": "Build {goal} steady tiers of your card castle!",
-            "reward": "Quản Mã Hoàng Gia holds his breath, then cheers: {name}'s card castle is tall and rock-solid!",
+            "reward": "Royal Stable Master holds his breath, then cheers: {name}'s card castle is tall and rock-solid!",
             "next": "Flimsy cards teach us patience. When you're free, come back to the drawbridge and play."
           }
         },
@@ -518,7 +518,7 @@
           "who": "{name}, tay nhảy khối hộp thoăn thoắt",
           "learn": "Định vị phương hướng trên lưới chéo và né chướng ngại",
           "en": {
-            "title": "Speedy Cube Hop with Quản Mã Hoàng Gia",
+            "title": "Speedy Cube Hop with Royal Stable Master",
             "summary": "A pyramid of bright cubes; hop from cube to cube to change their colour without falling off the edge.",
             "lines": [
               "The little horse is learning to climb the cube pyramid, {name}. Come give it a hand!",
@@ -526,7 +526,7 @@
             ],
             "choice": "I'll hop and change the colours now!",
             "prompt": "Change the colour of {goal} pyramid cubes!",
-            "reward": "Quản Mã Hoàng Gia claps: {name} hops quick as a flash and smart as can be!",
+            "reward": "Royal Stable Master claps: {name} hops quick as a flash and smart as can be!",
             "next": "The pyramid wears a shiny new coat. Whenever you feel like hopping, come to the drawbridge."
           }
         }
@@ -562,7 +562,7 @@
           "who": "{name}, hoa tiêu tháp xoắn thiện chiến",
           "learn": "Xoay không gian tròn và né vùng cấm nguy hiểm",
           "en": {
-            "title": "Helix Tower Drop with Ngự Lâm Quân Tháp Cao",
+            "title": "Helix Tower Drop with Tower Royal Guard",
             "summary": "A many-levelled spiral watchtower; turn it so the gaps line up and the ball drops safely to the bottom.",
             "lines": [
               "Hello, {name}! The royal guard is checking the signal path from the top of the spiral tower to the ground.",
@@ -570,7 +570,7 @@
             ],
             "choice": "I'll spin the tower and drop the ball!",
             "prompt": "Guide the ball safely down {goal} levels of the spiral tower!",
-            "reward": "Ngự Lâm Quân Tháp Cao raises his spear: {name} spins the tower with real skill and precision!",
+            "reward": "Tower Royal Guard raises his spear: {name} spins the tower with real skill and precision!",
             "next": "The watchtower signal runs clear now. Feel free to visit the castle's corner tower any time."
           }
         },
@@ -589,7 +589,7 @@
           "who": "{name}, người thắp sáng tháp canh",
           "learn": "Tư duy ma trận đảo trạng thái và giải câu đố logic",
           "en": {
-            "title": "Watchtower Windows with Ngự Lâm Quân Tháp Cao",
+            "title": "Watchtower Windows with Tower Royal Guard",
             "summary": "The watchtower windows flicker light and dark; work out which to tap so every window is lit.",
             "lines": [
               "{name}, the window lights on the castle tower are all mixed up, some on and some off.",
@@ -597,7 +597,7 @@
             ],
             "choice": "I'll light up all the windows!",
             "prompt": "Light every window on {goal} watchtower floors!",
-            "reward": "Ngự Lâm Quân Tháp Cao cheers: all the lamps blaze at once thanks to {name}'s clever thinking!",
+            "reward": "Tower Royal Guard cheers: all the lamps blaze at once thanks to {name}'s clever thinking!",
             "next": "The castle glows bright at night. Come test yourself at the corner tower whenever you're free."
           }
         },
@@ -616,7 +616,7 @@
           "who": "{name}, chuyên gia mở khóa xoay tài ba",
           "learn": "Căn nhịp thời gian xoay tròn và bấm nút dứt khoát",
           "en": {
-            "title": "Spinning Lock with Ngự Lâm Quân Tháp Cao",
+            "title": "Spinning Lock with Tower Royal Guard",
             "summary": "The treasure lock's dial spins round and round; tap just as the needle meets the gold spot to release each latch.",
             "lines": [
               "The treasure chest in the corner tower has a stuck spinning lock. Come help open it, {name}!",
@@ -624,7 +624,7 @@
             ],
             "choice": "I'll tap at just the right moment!",
             "prompt": "Tap on time to pop open {goal} spinning locks!",
-            "reward": "Click! The lock springs open, and Ngự Lâm Quân Tháp Cao praises {name}'s amazing reflexes!",
+            "reward": "Click! The lock springs open, and Tower Royal Guard praises {name}'s amazing reflexes!",
             "next": "The treasure is safe in the tower. Drop by the castle's corner tower whenever you like."
           }
         }
@@ -660,7 +660,7 @@
           "who": "{name}, thợ cơ khí bánh răng nhí",
           "learn": "Nguyên lý truyền động cơ học và khớp răng cưa",
           "en": {
-            "title": "Gear Train with Bác Thợ Khóa Thành",
+            "title": "Gear Train with Castle Locksmith Uncle",
             "summary": "Brass gears big and small lie scattered; fit them on the pegs so the turning crank drives the mill.",
             "lines": [
               "Hello, {name}! The stone bridge lift is missing its drive gears, so it can't be raised.",
@@ -668,7 +668,7 @@
             ],
             "choice": "I'll fit the gears together!",
             "prompt": "Mesh the gears to run {goal} machines!",
-            "reward": "Bác Thợ Khóa Thành chuckles: the gears spin smoothly, {name} has such clever hands!",
+            "reward": "Castle Locksmith Uncle chuckles: the gears spin smoothly, {name} has such clever hands!",
             "next": "The bridge over the moat runs smoothly now. Visit the moat bank any time to look at the machines."
           }
         },
@@ -687,7 +687,7 @@
           "who": "{name}, nhà thám hiểm mê cung cổng phép",
           "learn": "Tư duy không gian dịch chuyển và liên kết màu sắc",
           "en": {
-            "title": "Portal Maze with Bác Thợ Khóa Thành",
+            "title": "Portal Maze with Castle Locksmith Uncle",
             "summary": "A tunnel under the moat has magic portals; pick the right coloured portal to reach the treasure chest.",
             "lines": [
               "{name}, are you brave enough to enter the portal maze under the moat with me?",
@@ -695,7 +695,7 @@
             ],
             "choice": "I'll explore the magic portals!",
             "prompt": "Find a path through the portals and open {goal} secret chests!",
-            "reward": "Bác Thợ Khóa Thành is full of praise: {name} finds the way through portals like a genius!",
+            "reward": "Castle Locksmith Uncle is full of praise: {name} finds the way through portals like a genius!",
             "next": "The maze under the moat has many mysterious nooks. Come to the stone bridge whenever you like."
           }
         },
@@ -714,7 +714,7 @@
           "who": "{name}, bậc thầy xoay đĩa mê cung",
           "learn": "Điều khiển góc nghiêng và tận dụng trọng lực lăn",
           "en": {
-            "title": "Turn the Maze for the Key with Bác Thợ Khóa Thành",
+            "title": "Turn the Maze for the Key with Castle Locksmith Uncle",
             "summary": "Hold a round maze and tilt its rim so the key marble rolls to the star.",
             "lines": [
               "I've just built a very fine spinning-disc maze lock, {name}.",
@@ -722,7 +722,7 @@
             ],
             "choice": "I'll spin the disc and roll it out!",
             "prompt": "Turn the maze and roll the key out {goal} times!",
-            "reward": "Bác Thợ Khóa Thành slaps his knee: the marble rolled right out, {name} turns it so skilfully!",
+            "reward": "Castle Locksmith Uncle slaps his knee: the marble rolled right out, {name} turns it so skilfully!",
             "next": "The moat bank by the stone bridge always has strange locks waiting for you to explore."
           }
         }
@@ -758,7 +758,7 @@
           "who": "{name}, thám tử giải mã mật thư",
           "learn": "Suy luận logic phản chứng và giải mã ký hiệu",
           "en": {
-            "title": "Colour Code Breaker with Tể Tướng Cờ Vua",
+            "title": "Colour Code Breaker with Chess Chancellor",
             "summary": "A royal code lock hides beneath a row of gems; reason it out from the star and circle clues.",
             "lines": [
               "Greetings, {name}! The royal mailbox code needs a sharp mind to crack it.",
@@ -766,7 +766,7 @@
             ],
             "choice": "I'll decode the precious gems!",
             "prompt": "Crack the code on {goal} royal mailboxes!",
-            "reward": "Tể Tướng Cờ Vua strokes his beard: {name}'s powers of deduction are truly admirable!",
+            "reward": "Chess Chancellor strokes his beard: {name}'s powers of deduction are truly admirable!",
             "next": "The grand review hall always welcomes bright talents like you. Do come and visit."
           }
         },
@@ -785,7 +785,7 @@
           "who": "{name}, kỳ thủ cờ nhảy thông tuệ",
           "learn": "Tính toán bước đi trước sau và thu hẹp bàn cờ",
           "en": {
-            "title": "Peg Jump with Tể Tướng Cờ Vua",
+            "title": "Peg Jump with Chess Chancellor",
             "summary": "A cross-shaped board of fine wood; jump each gem over its neighbour to clear the board.",
             "lines": [
               "Welcome, {name}, to the elegant and challenging court game of peg jumping.",
@@ -793,7 +793,7 @@
             ],
             "choice": "I'll jump and clear the board!",
             "prompt": "Jump cleverly to clear {goal} gems from the board!",
-            "reward": "Tể Tướng Cờ Vua rises to congratulate {name} on a game played with brilliant tactics!",
+            "reward": "Chess Chancellor rises to congratulate {name} on a game played with brilliant tactics!",
             "next": "Peg jumping needs careful thought. Come to the great hall and talk strategy with me any time."
           }
         },
@@ -812,7 +812,7 @@
           "who": "{name}, người điều phối yến tiệc hoàng gia",
           "learn": "Xử lý đồng thời nhiều điều kiện ràng buộc logic",
           "en": {
-            "title": "Seat the Royal Banquet with Tể Tướng Cờ Vua",
+            "title": "Seat the Royal Banquet with Chess Chancellor",
             "summary": "A grand palace banquet; use each guest's wishes to seat everyone in harmony.",
             "lines": [
               "The feast is about to begin, {name}, and our honoured guests need their seats arranged with care.",
@@ -820,7 +820,7 @@
             ],
             "choice": "I'll arrange the seats with care!",
             "prompt": "Arrange perfect seating for {goal} royal banquet tables!",
-            "reward": "Tể Tướng Cờ Vua smiles over his tea and praises {name} for a banquet arranged so thoughtfully!",
+            "reward": "Chess Chancellor smiles over his tea and praises {name} for a banquet arranged so thoughtfully!",
             "next": "Every festival season I have a new party puzzle. The review hall looks forward to your visit."
           }
         }

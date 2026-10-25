@@ -159,9 +159,9 @@
         }
       ],
       "en": {
-        "summary": "Ong Chúa Vườn Hoa guards the lane by the flower garden and asks {name} four riddles about babies, relatives and spelling.",
+        "summary": "Flower Garden Queen Bee guards the lane by the flower garden and asks {name} four riddles about babies, relatives and spelling.",
         "hook": [
-          "Bzzz… {name}, I'm Ong Chúa Vườn Hoa! The whole hive is busy making honey, so only I have time for riddles.",
+          "Bzzz… {name}, I'm Flower Garden Queen Bee! The whole hive is busy making honey, so only I have time for riddles.",
           "Here are four riddles as sweet as honey. Get them all and I'll treat you to a drop of flower nectar."
         ],
         "choice": "I love honey!",
@@ -177,7 +177,7 @@
           "Not right, read each word slowly.",
           "Almost at the centre of the flower, choose again."
         ],
-        "reward": "Ong Chúa Vườn Hoa gives {name} a tiny pot of honey, as sweet as love between sisters.",
+        "reward": "Flower Garden Queen Bee gives {name} a tiny pot of honey, as sweet as love between sisters.",
         "next": "Out on the moonlit porch a zone guardian is watching the moon and waiting to quiz {name}."
       }
     },
@@ -337,12 +337,12 @@
         }
       ],
       "en": {
-        "summary": "Mèo Đêm Trăng guards the moonlit lane and asks {name} four riddles about a mother's love, saying thank you and spelling.",
+        "summary": "Moonlit Night Cat guards the moonlit lane and asks {name} four riddles about a mother's love, saying thank you and spelling.",
         "hook": [
-          "Meow… isn't the moon bright, {name}? I'm Mèo Đêm Trăng, and every night I sit here counting stars.",
+          "Meow… isn't the moon bright, {name}? I'm Moonlit Night Cat, and every night I sit here counting stars.",
           "It's lonely on my own, so have a battle of wits with me: four riddles."
         ],
-        "choice": "Let's do riddles, Mèo!",
+        "choice": "Let's do riddles, Cat!",
         "intro": "The moonlight shines down, and look, the first riddle appears!",
         "win": "I curl up and give up! {name} is as bright as the full moon.",
         "right": [
@@ -355,7 +355,7 @@
           "Not right, think about the people in your family.",
           "Nearly right, read the question again by moonlight."
         ],
-        "reward": "Mèo Đêm Trăng gives {name} a glow-in-the-dark paper star to hang over your bed.",
+        "reward": "Moonlit Night Cat gives {name} a glow-in-the-dark paper star to hang over your bed.",
         "next": "Down by the lake there's an old hut, and its zone guardian loves grandparents dearly, {name}, pay a visit."
       }
     },
@@ -515,9 +515,9 @@
         }
       ],
       "en": {
-        "summary": "Hươu Nâu Con Dốc guards the sandy shore by the old hut and asks {name} four riddles about grandparents and spelling.",
+        "summary": "Hillside Brown Deer guards the sandy shore by the old hut and asks {name} four riddles about grandparents and spelling.",
         "hook": [
-          "Huff, puff… I'm Hươu Nâu Con Dốc, and every day I help Grandpa climb that slope over there.",
+          "Huff, puff… I'm Hillside Brown Deer, and every day I help Grandpa climb that slope over there.",
           "Grandpa's having his nap now, so battle me in four riddles, {name}. Every riddle has a grandparent in it."
         ],
         "choice": "Ask away, Hươu Nâu!",
@@ -533,7 +533,7 @@
           "Not right, read it really slowly.",
           "So close, just one more step."
         ],
-        "reward": "Hươu Nâu Con Dốc gives {name} a little bamboo walking stick to take home for Grandpa.",
+        "reward": "Hillside Brown Deer gives {name} a little bamboo walking stick to take home for Grandpa.",
         "next": "Out at the lotus lake and windy fields, the hamlet's last zone guardian is spinning pinwheels for {name}."
       }
     },
@@ -724,9 +724,9 @@
         }
       ],
       "en": {
-        "summary": "Bò Gió Đồng Xa guards the windy fields by the lotus lake and asks {name} five riddles about toys, spelling and caring.",
+        "summary": "Far Field Wind Cow guards the windy fields by the lotus lake and asks {name} five riddles about toys, spelling and caring.",
         "hook": [
-          "Moo-oo! {name}, see the pinwheels spinning? I'm Bò Gió Đồng Xa, and I keep the wind for the whole field.",
+          "Moo-oo! {name}, see the pinwheels spinning? I'm Far Field Wind Cow, and I keep the wind for the whole field.",
           "Here are five windy riddles. Get them all right and the whole field will spin pinwheels for you."
         ],
         "choice": "Blow the wind!",
@@ -742,7 +742,7 @@
           "Not right, listen carefully to the wind.",
           "Nearly right, one more puff!"
         ],
-        "reward": "Bò Gió Đồng Xa gives {name} a rainbow paper pinwheel that spins in every breeze.",
+        "reward": "Far Field Wind Cow gives {name} a rainbow paper pinwheel that spins in every breeze.",
         "next": "All four zone guardians met, {name}: visit the last stop and battle the Whirlwind Hawk."
       }
     }

@@ -257,7 +257,7 @@
           "who": "{name}, bạn xếp hàng lên xe",
           "learn": "Sắp xếp hình khối vào chỗ trống",
           "en": {
-            "title": "Load the lorry with Voi Bốc Hàng",
+            "title": "Load the lorry with Porter Elephant",
             "summary": "Drag each crate onto the lorry and fill a whole row or column so it can drive off.",
             "lines": [
               "The lorry's at the wharf! Help me pack the crates, {name}!",
@@ -284,7 +284,7 @@
           "who": "{name}, người giữ cân của bến hàng",
           "learn": "Cộng số và so sánh nặng nhẹ",
           "en": {
-            "title": "Balance the scale with Voi Bốc Hàng",
+            "title": "Balance the scale with Porter Elephant",
             "summary": "The left pan holds numbered weights: pick weights for the right pan so both sides are equal.",
             "lines": [
               "{name}, my scale keeps tipping to one side!",
@@ -327,7 +327,7 @@
           "who": "{name}, cao thủ máy gắp",
           "learn": "Căn vị trí theo hai chiều",
           "en": {
-            "title": "Claw machine with Mèo Gắp Thú",
+            "title": "Claw machine with Claw-Machine Cat",
             "summary": "Move the claw right, then back, then drop it to grab the soft toy you want.",
             "lines": [
               "The new claw machine just arrived! Grab one, {name}!",
@@ -354,7 +354,7 @@
           "who": "{name}, người dõi theo tinh mắt",
           "learn": "Tập trung chú ý và ghi nhớ",
           "en": {
-            "title": "Find the pearl with Mèo Gắp Thú",
+            "title": "Find the pearl with Claw-Machine Cat",
             "summary": "Three bowls swap places in a flash: follow the one hiding the pearl and point to it.",
             "lines": [
               "{name}, the pearl is hiding under this bowl!",
@@ -381,7 +381,7 @@
           "who": "{name}, người xếp quả nhanh trí",
           "learn": "Nhận ra mẫu giống nhau và tính trước",
           "en": {
-            "title": "Match three fruits with Mèo Gắp Thú",
+            "title": "Match three fruits with Claw-Machine Cat",
             "summary": "Swap two neighbouring fruits to line up three of a kind and make them pop.",
             "lines": [
               "My fruit basket is a total mess, {name}! Help!",
@@ -425,7 +425,7 @@
           "who": "{name}, nghệ nhân tò he nhí tài hoa",
           "learn": "Ước lượng độ dài chính xác theo thước đo",
           "en": {
-            "title": "Colourful tò he with Cô Nặn Tò He",
+            "title": "Colourful tò he with Auntie Tò He Maker",
             "summary": "Roll the soft, colourful rice dough to the right length on the ruler, then cut and shape a tò he figure.",
             "lines": [
               "This colourful rice dough smells of pomelo blossom, {name}!",
@@ -452,7 +452,7 @@
           "who": "{name}, thợ gốm nhỏ tuổi tài năng của phiên chợ",
           "learn": "Khéo léo điều khiển ngón tay theo đường viền mẫu",
           "en": {
-            "title": "Pottery wheel with Cô Nặn Tò He",
+            "title": "Pottery wheel with Auntie Tò He Maker",
             "summary": "Cup your hand gently around the spinning clay and shape it into a graceful vase.",
             "lines": [
               "Look, {name}, the village pottery wheel is spinning fast!",
@@ -479,7 +479,7 @@
           "who": "{name}, thợ in tranh dân gian khéo léo",
           "learn": "Canh đúng thời điểm giấy lướt qua khuôn in",
           "en": {
-            "title": "Đông Hồ printing with Cô Nặn Tò He",
+            "title": "Đông Hồ printing with Auntie Tò He Maker",
             "summary": "Press the carved woodblock onto the shimmering paper at just the right moment so the folk picture shows clearly.",
             "lines": [
               "{name}, would you like to print the bright yin-yang pig picture yourself?",
@@ -523,7 +523,7 @@
           "who": "{name}, chuyên gia trang trí bánh sinh nhật nhí",
           "learn": "Đếm đúng số lượng trang trí theo đơn hàng",
           "en": {
-            "title": "Decorate birthday cakes with Chú Bán Bánh Kem",
+            "title": "Decorate birthday cakes with Cream Cake Seller",
             "summary": "Put candles, strawberries and sweets on the soft sponge, as many as each young customer ordered.",
             "lines": [
               "So many birthday cake orders today, {name}!",
@@ -550,7 +550,7 @@
           "who": "{name}, phụ bếp nhanh trí xâu xiên hoa quả",
           "learn": "Nhận biết quy luật chuỗi hình ảnh lặp lại",
           "en": {
-            "title": "Fruit skewers with Chú Bán Bánh Kem",
+            "title": "Fruit skewers with Cream Cake Seller",
             "summary": "Pick the right fresh fruit off the conveyor belt to follow the repeating colour pattern on the skewer.",
             "lines": [
               "Don't these rainbow fruit skewers look yummy, {name}?",
@@ -577,7 +577,7 @@
           "who": "{name}, tay bấm bi pinball cừ khôi phiên chợ",
           "learn": "Phản xạ nhanh hai tay giữ bóng nảy liên tục",
           "en": {
-            "title": "Fairground pinball with Chú Bán Bánh Kem",
+            "title": "Fairground pinball with Cream Cake Seller",
             "summary": "Flip the left and right flippers to keep the steel ball bouncing into golden bells and star targets.",
             "lines": [
               "The pinball machine with all its flashing lights is so much fun, {name}!",
@@ -621,7 +621,7 @@
           "who": "{name}, thu ngân nhí tính toán chuẩn xác",
           "learn": "Cộng nhẩm các mệnh giá tiền Việt Nam",
           "en": {
-            "title": "Pay the exact amount with Bác Thu Ngân Vui Vẻ",
+            "title": "Pay the exact amount with Cheerful Cashier Uncle",
             "summary": "Choose banknotes of different values for the tray so they add up to exactly the price.",
             "lines": [
               "The market is packed with shoppers today, {name}!",
@@ -648,7 +648,7 @@
           "who": "{name}, bạn nhỏ ước lượng số lượng tinh tế",
           "learn": "Ước lượng nhanh số lượng vật thể bằng mắt",
           "en": {
-            "title": "Guess the sweets in the jar with Bác Thu Ngân Vui Vẻ",
+            "title": "Guess the sweets in the jar with Cheerful Cashier Uncle",
             "summary": "Take a quick look, guess how many sweets are in the glass jar, then drag the needle to your best guess.",
             "lines": [
               "{name}, can you guess how many sweets are in this glass jar?",
@@ -675,7 +675,7 @@
           "who": "{name}, người phục vụ có trí nhớ tuyệt hảo",
           "learn": "Ghi nhớ hình ảnh tức thời và xử lý nhanh",
           "en": {
-            "title": "Remember the orders with Bác Thu Ngân Vui Vẻ",
+            "title": "Remember the orders with Cheerful Cashier Uncle",
             "summary": "Remember what each customer asked for, then hand the right item to each person.",
             "lines": [
               "I'm run off my feet! {name}, help me remember what everyone ordered!",
@@ -719,7 +719,7 @@
           "who": "{name}, tay đua xe đụng dũng mãnh quả cảm",
           "learn": "Định hướng di chuyển và phán đoán đường chạy",
           "en": {
-            "title": "Bumper cars with Anh Lái Xe Đụng",
+            "title": "Bumper cars with Bumper Car Driver",
             "summary": "Steer your round electric car and bump the other cars off the floor to the cheerful music.",
             "lines": [
               "Come onto the bumper car floor, {name}. It's a real thrill!",
@@ -746,7 +746,7 @@
           "who": "{name}, thám tử quan sát tinh anh nhạy bén",
           "learn": "Ghi nhớ không gian vị trí và phát hiện thay đổi",
           "en": {
-            "title": "Who swapped? with Anh Lái Xe Đụng",
+            "title": "Who swapped? with Bumper Car Driver",
             "summary": "Look quickly at where the items are, then spot the two that swapped places when the curtain lifts.",
             "lines": [
               "{name}, take a good look at the counter before the curtain drops!",
@@ -773,7 +773,7 @@
           "who": "{name}, nhà logic học tí hon của hội chợ",
           "learn": "Tư duy bắc cầu so sánh nặng nhẹ logic",
           "en": {
-            "title": "Seesaw weigh-in with Anh Lái Xe Đụng",
+            "title": "Seesaw weigh-in with Bumper Car Driver",
             "summary": "Watch which way the seesaws tip to work out which animal is the heaviest or the lightest.",
             "lines": [
               "The bears and rabbits are on the seesaws, comparing weights, {name}!",
@@ -817,7 +817,7 @@
           "who": "{name}, bạn nhỏ đi chợ tháo vát đảm đang",
           "learn": "Ghi nhớ danh sách đồ vật bằng trí nhớ ngắn hạn",
           "en": {
-            "title": "Remember the shopping list with Chị Tiệm Tạp Hóa",
+            "title": "Remember the shopping list with Grocery Shopkeeper",
             "summary": "Remember Mum's shopping list, then walk along the shelves and put the right things in the basket.",
             "lines": [
               "Mum sent you a shopping list, {name}!",
@@ -844,7 +844,7 @@
           "who": "{name}, chuyên gia xếp đồ ngăn nắp của tiệm",
           "learn": "Phân loại theo bộ ba và quản lý ô trống khay",
           "en": {
-            "title": "Triple tiles with Chị Tiệm Tạp Hóa",
+            "title": "Triple tiles with Grocery Shopkeeper",
             "summary": "Pick uncovered tiles into the tray; three of the same kind together vanish.",
             "lines": [
               "The toy shelf is piled up in a mess, {name}!",
@@ -871,7 +871,7 @@
           "who": "{name}, bạn nhỏ gỡ rối dây thừng kiên nhẫn",
           "learn": "Tư duy hình học phẳng và sắp xếp không gian",
           "en": {
-            "title": "Untangle the strings with Chị Tiệm Tạp Hóa",
+            "title": "Untangle the strings with Grocery Shopkeeper",
             "summary": "Move the balloons around until none of their tangled strings cross each other.",
             "lines": [
               "The wind has tangled the shop's balloons, {name}! The strings are all crossed!",

@@ -160,9 +160,9 @@
         }
       ],
       "en": {
-        "summary": "Cánh Cụt Đưa Thư guards the street of the snowy village and asks {name} four riddles about letters, warm things and sums.",
+        "summary": "Mail Penguin guards the street of the snowy village and asks {name} four riddles about letters, warm things and sums.",
         "hook": [
-          "Waddle, waddle… post! Hello {name}, I'm Cánh Cụt Đưa Thư of the snowy village.",
+          "Waddle, waddle… post! Hello {name}, I'm Mail Penguin of the snowy village.",
           "Today's postbag holds four riddles. Open them all and I'll give you my prettiest snow stamp."
         ],
         "choice": "Give me the post!",
@@ -178,7 +178,7 @@
           "Not right, read the letter again.",
           "Nearly right, brush the snow off the question and read carefully."
         ],
-        "reward": "Cánh Cụt Đưa Thư gives {name} a stamp printed with a six-pointed snowflake.",
+        "reward": "Mail Penguin gives {name} a stamp printed with a six-pointed snowflake.",
         "next": "Go up to the ski area, {name}: the fastest skier on the mountain is a zone guardian waiting there."
       }
     },
@@ -232,7 +232,7 @@
           "hint": "6 + 8 = 14, viết 4 nhớ 1; 2 chục cộng 3 chục rồi thêm 1.",
           "explain": "26 + 38 = 64: 6 + 8 = 14 viết 4 nhớ 1, 2 + 3 + 1 = 6; 54 là quên nhớ, 12 là lấy hiệu.",
           "en": {
-            "prompt": "Gấu skis 26 laps in the morning and 38 in the afternoon. How many laps in all?",
+            "prompt": "Bear skis 26 laps in the morning and 38 in the afternoon. How many laps in all?",
             "choices": [
               "64",
               "54",
@@ -341,9 +341,9 @@
         }
       ],
       "en": {
-        "summary": "Gấu Bạc Trượt Dốc guards the ski area and asks {name} four riddles about ski laps, flags and snow.",
+        "summary": "Silver Slope-Sliding Bear guards the ski area and asks {name} four riddles about ski laps, flags and snow.",
         "hook": [
-          "Wheee… brake! I nearly crashed into {name}. I'm Gấu Bạc Trượt Dốc, the fastest on this slope.",
+          "Wheee… brake! I nearly crashed into {name}. I'm Silver Slope-Sliding Bear, the fastest on this slope.",
           "To ski with me, first win four riddles!"
         ],
         "choice": "Let's race!",
@@ -359,7 +359,7 @@
           "Not right, set out the sum carefully.",
           "Nearly at the finish, one more run!"
         ],
-        "reward": "Gấu Bạc Trượt Dốc gives {name} a tiny pair of silver ski goggles.",
+        "reward": "Silver Slope-Sliding Bear gives {name} a tiny pair of silver ski goggles.",
         "next": "Go down to the frozen lake, {name}: its zone guardian asks all about ice and frost."
       }
     },
@@ -414,7 +414,7 @@
           "hint": "Cáo nói «It's cold!» khi gió buốt thổi qua, ngược hẳn với «hot».",
           "explain": "«Cold» nghĩa là lạnh, đúng cảm giác khi gió hồ thổi qua; «hot» mới là nóng, «warm» là ấm.",
           "en": {
-            "prompt": "The lake wind blows and Cáo says «It's cold!». What is «cold» in Vietnamese?",
+            "prompt": "The lake wind blows and Fox says «It's cold!». What is «cold» in Vietnamese?",
             "choices": [
               "lạnh",
               "nóng",
@@ -424,7 +424,7 @@
               "Think how people feel when the wind blows across the frozen lake.",
               "Rule out the two words for how you feel in sunshine or next to a fire."
             ],
-            "hint": "Cáo says «It's cold!» as the biting wind blows; it is the opposite of «hot».",
+            "hint": "Fox says «It's cold!» as the biting wind blows; it is the opposite of «hot».",
             "explain": "«Cold» means «lạnh», just how the lake wind feels; «nóng» is hot and «ấm» is warm."
           }
         },
@@ -523,9 +523,9 @@
         }
       ],
       "en": {
-        "summary": "Cáo Bạc Hồ Băng guards the frozen lake shore and asks {name} four riddles about ice, numbers and safety signs.",
+        "summary": "Silver Fox of Ice Lake guards the frozen lake shore and asks {name} four riddles about ice, numbers and safety signs.",
         "hook": [
-          "Hello {name}! I'm Cáo Bạc Hồ Băng, and my silver fur sparkles like the frozen lake.",
+          "Hello {name}! I'm Silver Fox of Ice Lake, and my silver fur sparkles like the frozen lake.",
           "The ice is still thin, so I'll stay on the shore and ask you just four riddles."
         ],
         "choice": "Ask me from the shore!",
@@ -541,7 +541,7 @@
           "Not quite, read the warning sign again.",
           "Nearly right, compare each number again."
         ],
-        "reward": "Cáo Bạc Hồ Băng gives {name} an ice crystal that never melts, inside a little glass jar.",
+        "reward": "Silver Fox of Ice Lake gives {name} an ice crystal that never melts, inside a little glass jar.",
         "next": "Go to the ice cave entrance, {name}: the mountain's strongest zone guardian waits at the explorers' station."
       }
     },
@@ -736,9 +736,9 @@
         }
       ],
       "en": {
-        "summary": "Tuần Lộc Thám Hiểm guards the ice cave entrance and asks {name} five riddles about the expedition and the way into the cave.",
+        "summary": "Explorer Reindeer guards the ice cave entrance and asks {name} five riddles about the expedition and the way into the cave.",
         "hook": [
-          "Jingle jingle! I'm Tuần Lộc Thám Hiểm, and I lead the team into the ice cave every morning.",
+          "Jingle jingle! I'm Explorer Reindeer, and I lead the team into the ice cave every morning.",
           "Anyone who wants to join must pass my five riddles. Got your torch, {name}?"
         ],
         "choice": "Torch ready, ask away!",
@@ -754,7 +754,7 @@
           "Not right, read the explorers' book again.",
           "Close to the exit, think a bit more!"
         ],
-        "reward": "Tuần Lộc Thám Hiểm gives {name} an explorer's badge shaped like a snowy peak.",
+        "reward": "Explorer Reindeer gives {name} an explorer's badge shaped like a snowy peak.",
         "next": "All four zone guardians met, {name}: head to the last stop and battle the Emperor Penguin."
       }
     }

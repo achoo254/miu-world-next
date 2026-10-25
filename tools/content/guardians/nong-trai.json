@@ -162,9 +162,9 @@
         }
       ],
       "en": {
-        "summary": "Lợn Rừng Đếm Bắp guards the crop fields and asks {name} four carrying-over sums about corn and tomatoes.",
+        "summary": "Corn-Counting Boar guards the crop fields and asks {name} four carrying-over sums about corn and tomatoes.",
         "hook": [
-          "Oink oink! {name}, I'm Lợn Rừng Đếm Bắp, and I know every cob in this cornfield by heart.",
+          "Oink oink! {name}, I'm Corn-Counting Boar, and I know every cob in this cornfield by heart.",
           "All that counting makes me want a riddle friend. Four carrying sums, dare you?"
         ],
         "choice": "Oink, I dare!",
@@ -180,7 +180,7 @@
           "Not right, line up the columns.",
           "Nearly right, check the ones again."
         ],
-        "reward": "Lợn Rừng Đếm Bắp gives {name} a hot boiled cob of sticky corn. Come back for another battle after your snack.",
+        "reward": "Corn-Counting Boar gives {name} a hot boiled cob of sticky corn. Come back for another battle after your snack.",
         "next": "Go to the livestock area, {name}: its zone guardian loves take-away riddles with exchanging."
       }
     },
@@ -344,9 +344,9 @@
         }
       ],
       "en": {
-        "summary": "Heo Hồng Chăn Đàn guards the livestock area and asks {name} four take-away-with-exchanging riddles about hens and ducks.",
+        "summary": "Herding Pink Pig guards the livestock area and asks {name} four take-away-with-exchanging riddles about hens and ducks.",
         "hook": [
-          "Oink oink, hello {name}! I'm Heo Hồng Chăn Đàn, and every hen and duck on the farm comes when I call.",
+          "Oink oink, hello {name}! I'm Herding Pink Pig, and every hen and duck on the farm comes when I call.",
           "Today I'm taking the flock for a walk with four take-away riddles. Count with me!"
         ],
         "choice": "Let's count the flock!",
@@ -362,7 +362,7 @@
           "Not right, remember to borrow a ten.",
           "Nearly right, add back to check."
         ],
-        "reward": "Heo Hồng Chăn Đàn gives {name} a bamboo herding whistle: blow it and the hens and ducks come home.",
+        "reward": "Herding Pink Pig gives {name} a bamboo herding whistle: blow it and the hens and ducks come home.",
         "next": "Head to the orchard, {name}: the farm's last zone guardian is picking oranges and waiting for you."
       }
     },
@@ -557,9 +557,9 @@
         }
       ],
       "en": {
-        "summary": "Khỉ Vườn Cam guards the orchard and asks {name} five riddles about carrying sums, take-aways and reasoning.",
+        "summary": "Orange Grove Monkey guards the orchard and asks {name} five riddles about carrying sums, take-aways and reasoning.",
         "hook": [
-          "Chee chee! {name}, look up here! I'm Khỉ Vườn Cam, and I always know first when an orange is ripe.",
+          "Chee chee! {name}, look up here! I'm Orange Grove Monkey, and I always know first when an orange is ripe.",
           "I've hung five riddles on five orange branches. Pick them all right and a whole basket of sweet oranges is yours!"
         ],
         "choice": "Let's pick oranges!",
@@ -575,7 +575,7 @@
           "Not right, read again who has more and who has fewer.",
           "Nearly right, work it out once more!"
         ],
-        "reward": "Khỉ Vườn Cam gives {name} a basket of super-sweet oranges to share with the family.",
+        "reward": "Orange Grove Monkey gives {name} a basket of super-sweet oranges to share with the family.",
         "next": "All three zone guardians beaten, {name}: head to the last stop and battle the Giant Cockerel."
       }
     }

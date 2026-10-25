@@ -35,16 +35,16 @@
           "who": "{name}, người vắt sữa nhỏ của đồng cỏ",
           "learn": "Nhịp tay đều và kiên nhẫn chờ đúng lúc",
           "en": {
-            "title": "Milking Time with Bò Chuông Đồng",
-            "summary": "Bò Chuông Đồng stands patiently by a wooden pail, waiting for nice, steady milking.",
+            "title": "Milking Time with Brass Bell Cow",
+            "summary": "Brass Bell Cow stands patiently by a wooden pail, waiting for nice, steady milking.",
             "lines": [
               "Moo, hello {name}! My udder is so full.",
               "Stroke gently on each side and milk when the tip turns pink. I'm very ticklish!"
             ],
             "choice": "I'll hold the pail!",
             "prompt": "Milk {goal} drops to fill the pail!",
-            "reward": "Ding-a-ling! Bò Chuông Đồng rings her bell to thank {name} for such gentle milking.",
-            "next": "There's milk every afternoon. Find Bò Chuông Đồng at the edge of the meadow."
+            "reward": "Ding-a-ling! Brass Bell Cow rings her bell to thank {name} for such gentle milking.",
+            "next": "There's milk every afternoon. Find Brass Bell Cow at the edge of the meadow."
           }
         },
         {
@@ -63,14 +63,14 @@
           "learn": "Lắng nghe và đoán hướng âm thanh",
           "en": {
             "title": "Blindfold Goat Chase in the Meadow",
-            "summary": "The blindfold is tied, and little goats are bleating all over Bò Chuông Đồng's meadow.",
+            "summary": "The blindfold is tied, and little goats are bleating all over Brass Bell Cow's meadow.",
             "lines": [
               "{name}, the goats next door have sneaked out to play in the meadow!",
               "Put the blindfold on, listen for the baa-baa, and follow the sound to catch them."
             ],
             "choice": "Tie the blindfold on me!",
             "prompt": "Catch {goal} goats while blindfolded!",
-            "reward": "Bò Chuông Đồng stamps a hoof: {name}'s ears are sharper than a rabbit's!",
+            "reward": "Brass Bell Cow stamps a hoof: {name}'s ears are sharper than a rabbit's!",
             "next": "The goats will sneak off again soon. Come back to the meadow and play with me."
           }
         },
@@ -89,7 +89,7 @@
           "who": "{name}, người lái diều giỏi nhất đồng quê",
           "learn": "Khéo léo điều khiển và né vật cản",
           "en": {
-            "title": "Kites up to the Clouds with Bò Chuông Đồng",
+            "title": "Kites up to the Clouds with Brass Bell Cow",
             "summary": "The meadow wind blows wide and free, and the paper kite waits for you to steer it high.",
             "lines": [
               "The wind is lovely and cool today. {name}, want to fly a kite?",
@@ -132,7 +132,7 @@
           "who": "{name}, người giữ kho tinh mắt",
           "learn": "Phân loại đồ vật theo nhóm",
           "en": {
-            "title": "Conveyor Sorting with Heo Kho Hàng",
+            "title": "Conveyor Sorting with Warehouse Pig",
             "summary": "The storehouse conveyor belt rumbles along; flick each item into the basket its sign asks for.",
             "lines": [
               "Oink, {name}, perfect timing! The conveyor belt is piled high!",
@@ -140,7 +140,7 @@
             ],
             "choice": "Leave it to me, I'm a fast sorter!",
             "prompt": "Sort {goal} items into the right baskets!",
-            "reward": "Heo Kho Hàng oinks with joy: the storehouse is all tidy thanks to {name}!",
+            "reward": "Warehouse Pig oinks with joy: the storehouse is all tidy thanks to {name}!",
             "next": "The belt runs all day. Drop by the storehouse door if you want to sort more."
           }
         },
@@ -159,7 +159,7 @@
           "who": "{name}, nhạc trưởng nhí của dàn thú",
           "learn": "Ghi nhớ thứ tự âm thanh và hình ảnh",
           "en": {
-            "title": "Farm Choir with Heo Kho Hàng",
+            "title": "Farm Choir with Warehouse Pig",
             "summary": "The farm animals sing one after another; remember the order and tap it back just right.",
             "lines": [
               "{name}, I've formed a choir of cows, chickens and ducks!",
@@ -167,7 +167,7 @@
             ],
             "choice": "I've got a great memory, start singing!",
             "prompt": "Remember {goal} rounds of the animals' song!",
-            "reward": "The whole choir bows, and Heo Kho Hàng praises {name}'s perfect memory!",
+            "reward": "The whole choir bows, and Warehouse Pig praises {name}'s perfect memory!",
             "next": "The choir is learning a new song. Come listen again by the storehouse door."
           }
         }
@@ -203,7 +203,7 @@
           "who": "{name}, người chăn vịt khéo léo",
           "learn": "Tính đường đi và đoán hướng chạy",
           "en": {
-            "title": "Herd the Ducks Home with Chó Lùa Vịt",
+            "title": "Herd the Ducks Home with Duck-Herding Dog",
             "summary": "Ducks have wandered off from the fish pond; lead the dog around behind them to herd them into the pen.",
             "lines": [
               "Woof woof! {name}, the ducks are running all over the pond bank!",
@@ -211,7 +211,7 @@
             ],
             "choice": "Let's go, round the back!",
             "prompt": "Herd {goal} ducks into the pen!",
-            "reward": "Chó Lùa Vịt wags his tail like crazy: {name} is an ace duck herder!",
+            "reward": "Duck-Herding Dog wags his tail like crazy: {name} is an ace duck herder!",
             "next": "The ducks wander off every afternoon. Come to the pond bank and help me herd them again."
           }
         },
@@ -230,7 +230,7 @@
           "who": "{name}, người cho gà ăn chu đáo",
           "learn": "Quan sát và chia đều cho mọi bạn",
           "en": {
-            "title": "Feed the Chicks with Chó Lùa Vịt",
+            "title": "Feed the Chicks with Duck-Herding Dog",
             "summary": "Greedy mother hens grab all the grain; scatter it cleverly so every chick gets enough.",
             "lines": [
               "{name}, the little chicks are starving, but the mother hens keep eating everything.",
@@ -238,7 +238,7 @@
             ],
             "choice": "Hand me a fistful of grain!",
             "prompt": "Feed the chicks {goal} grains!",
-            "reward": "The chicks are full to bursting, and Chó Lùa Vịt says {name} really cares for them!",
+            "reward": "The chicks are full to bursting, and Duck-Herding Dog says {name} really cares for them!",
             "next": "The chicks will be hungry again tomorrow. Come scatter grain with me by the fish pond."
           }
         }
@@ -273,7 +273,7 @@
           "who": "{name}, người giữ ruộng nhanh tay",
           "learn": "Phản xạ nhanh và nhìn kỹ trước khi chạm",
           "en": {
-            "title": "Chase the Moles for Thỏ Giữ Vườn",
+            "title": "Chase the Moles for Garden Guard Bunny",
             "summary": "Moles are digging all over the corn field; tap them fast when they pop their heads up.",
             "lines": [
               "Oh no, {name}, the moles have dug holes all over my corn field!",
@@ -281,7 +281,7 @@
             ],
             "choice": "Come out, moles!",
             "prompt": "Score {goal} mole-bopping points!",
-            "reward": "Thỏ Giữ Vườn leaps for joy: the corn field is safe, thank you {name}!",
+            "reward": "Garden Guard Bunny leaps for joy: the corn field is safe, thank you {name}!",
             "next": "Moles love coming back. Remember to stand guard with me at the edge of the corn field."
           }
         },
@@ -300,7 +300,7 @@
           "who": "{name}, người giữ lúa của bà con",
           "learn": "Sắp xếp người giúp và chọn chỗ quan trọng",
           "en": {
-            "title": "Guard the Rice from Birds with Thỏ Giữ Vườn",
+            "title": "Guard the Rice from Birds with Garden Guard Bunny",
             "summary": "Flocks of sparrows come to peck the rice; send the farmers out to the rows to wave their hats and shoo them.",
             "lines": [
               "Look, {name}, a whole flock of sparrows has come to eat the rice!",
@@ -308,7 +308,7 @@
             ],
             "choice": "Off to guard the rice!",
             "prompt": "Chase {goal} birds out of the field!",
-            "reward": "The rice sheaves are safe, and Thỏ Giữ Vườn cheers: {name} guards the field so well!",
+            "reward": "The rice sheaves are safe, and Garden Guard Bunny cheers: {name} guards the field so well!",
             "next": "Harvest season is long. Come to the corn field edge and watch the rice with me."
           }
         }
@@ -344,15 +344,15 @@
           "who": "{name}, bạn nhỏ cấy mạ chăm chỉ",
           "learn": "Căn khoảng cách đều đặn và bước lùi khéo léo",
           "en": {
-            "title": "Plant Rice in Rows with Bác Nông Dân Thành",
-            "summary": "Bác Nông Dân Thành takes you out to the muddy paddy to plant fresh green seedlings in straight lines.",
+            "title": "Plant Rice in Rows with Uncle Thành the Farmer",
+            "summary": "Uncle Thành the Farmer takes you out to the muddy paddy to plant fresh green seedlings in straight lines.",
             "lines": [
               "Hello, {name}! The paddy is harrowed smooth and waiting for your little hands to plant.",
               "Step back evenly and press each young seedling in, straight along the line."
             ],
             "choice": "Into the paddy to plant!",
             "prompt": "Plant {goal} clumps of seedlings in straight rows!",
-            "reward": "Bác Nông Dân Thành says {name} plants rice as skilfully as any grown-up!",
+            "reward": "Uncle Thành the Farmer says {name} plants rice as skilfully as any grown-up!",
             "next": "When the rice turns golden, remember to visit the paddy bank in the growing fields."
           }
         },
@@ -371,15 +371,15 @@
           "who": "{name}, bé giã gạo nhịp nhàng",
           "learn": "Lắng nghe nhịp điệu và phối hợp ăn ý",
           "en": {
-            "title": "Double Pestle Rice Pounding with Bác Nông Dân Thành",
-            "summary": "By the lively stone mortar, Bác Nông Dân Thành and you take turns pounding each batch of grain until it's white.",
+            "title": "Double Pestle Rice Pounding with Uncle Thành the Farmer",
+            "summary": "By the lively stone mortar, Uncle Thành the Farmer and you take turns pounding each batch of grain until it's white.",
             "lines": [
               "Come here, {name}! The mortar is full of grain, ready for the two of us to pound together.",
               "When I pound one beat, you take the next. Don't let our pestles knock together."
             ],
             "choice": "Got a firm grip on the pestle!",
             "prompt": "Pound {goal} mortars of grain to snowy white in rhythm!",
-            "reward": "Bác Nông Dân Thành pats {name} on the back, praising the perfectly even double beat!",
+            "reward": "Uncle Thành the Farmer pats {name} on the back, praising the perfectly even double beat!",
             "next": "The new rice smells wonderful. Whenever you want to hear the pestles thump, come visit."
           }
         },
@@ -398,15 +398,15 @@
           "who": "{name}, tay sảy thóc thoăn thoắt",
           "learn": "Căn lực nâng tay và tận dụng sức gió tự nhiên",
           "en": {
-            "title": "Winnowing Rice with Bác Nông Dân Thành",
-            "summary": "A cool breeze blows over the fields as Bác Nông Dân Thành shows you how to toss the tray and winnow away the husks.",
+            "title": "Winnowing Rice with Uncle Thành the Farmer",
+            "summary": "A cool breeze blows over the fields as Uncle Thành the Farmer shows you how to toss the tray and winnow away the husks.",
             "lines": [
               "{name}, the freshly pounded grain is still full of husks floating about.",
               "Lift the winnowing tray and toss gently into the wind, so the husks fly off and the plump grains fall back."
             ],
             "choice": "I'll lift the tray right now!",
             "prompt": "Winnow the husks from {goal} trays of golden grain!",
-            "reward": "Bác Nông Dân Thành admires the plump grain and says {name} winnows like a real expert!",
+            "reward": "Uncle Thành the Farmer admires the plump grain and says {name} winnows like a real expert!",
             "next": "The grain is spotless now. See you again at the dear old paddy bank in the growing fields."
           }
         }
@@ -450,7 +450,7 @@
             ],
             "choice": "I'll dig the channel now!",
             "prompt": "Dig {goal} channels to bring in cool water!",
-            "reward": "Chú Đào Kênh Dẫn Nước cheers to see {name} clear the stream so cleverly!",
+            "reward": "Canal-Digging Uncle cheers to see {name} clear the stream so cleverly!",
             "next": "The windmill always needs good diggers. When you're free, come help me dig channels."
           }
         },
@@ -477,7 +477,7 @@
             ],
             "choice": "I'll watch the water level!",
             "prompt": "Give {goal} terraced paddies just the right water!",
-            "reward": "Chú Đào Kênh Dẫn Nước praises {name} for keeping the field's water level amazingly exact!",
+            "reward": "Canal-Digging Uncle praises {name} for keeping the field's water level amazingly exact!",
             "next": "The rice is lush with water. When the water comes, I'll wait for you beneath the windmill."
           }
         },
@@ -504,7 +504,7 @@
             ],
             "choice": "I'll pull the wooden pin!",
             "prompt": "Pull the pins cleverly and save {goal} full bins of grain!",
-            "reward": "Chú Đào Kênh Dẫn Nước claps loudly: {name} pulled the pins so smartly, not a grain was lost!",
+            "reward": "Canal-Digging Uncle claps loudly: {name} pulled the pins so smartly, not a grain was lost!",
             "next": "The grain chute is clear now. Next time, come play by the windmill with me."
           }
         }
@@ -548,7 +548,7 @@
             ],
             "choice": "I'll put up the fence posts!",
             "prompt": "Fence in {goal} chicks safe and sound!",
-            "reward": "Bé Chăn Gà Con cuddles a little chick and thanks {name} for fencing so fast!",
+            "reward": "Little Chick Keeper cuddles a little chick and thanks {name} for fencing so fast!",
             "next": "The chicks are behaving now. Visit the chicken coop fence whenever you're free."
           }
         },
@@ -567,7 +567,7 @@
           "who": "{name}, dũng sĩ thổi bay mây đen",
           "learn": "Lướt ngón tay đón đầu và ngắm chuẩn mục tiêu",
           "en": {
-            "title": "Blast the Storm Clouds with Bé Chăn Gà Con",
+            "title": "Blast the Storm Clouds with Little Chick Keeper",
             "summary": "Grey clouds roll in over the chicken coop; spray water to make the gloomy clouds vanish.",
             "lines": [
               "Look, {name}! Grey clouds are drifting over, trying to soak the chicken coop!",
@@ -575,7 +575,7 @@
             ],
             "choice": "I'll grab the hose and clear the sky!",
             "prompt": "Spray away {goal} grey clouds!",
-            "reward": "Bé Chăn Gà Con skips with joy: the sun is shining again thanks to brave {name}!",
+            "reward": "Little Chick Keeper skips with joy: the sun is shining again thanks to brave {name}!",
             "next": "The sky is clear now. If a storm ever comes, come help me at the chicken coop."
           }
         },
@@ -602,7 +602,7 @@
             ],
             "choice": "Climbing the barrels now!",
             "prompt": "Climb the barrels past {goal} obstacles!",
-            "reward": "Bé Chăn Gà Con breathes a sigh of relief and says {name} climbs as nimbly as a squirrel!",
+            "reward": "Little Chick Keeper breathes a sigh of relief and says {name} climbs as nimbly as a squirrel!",
             "next": "The water has drained from the coop yard. Remember to visit the fluffy yellow chicks."
           }
         }
@@ -646,7 +646,7 @@
             ],
             "choice": "I'll pick your landing spot!",
             "prompt": "Catch {goal} of the kangaroo's jumps!",
-            "reward": "Chú Chuột Túi Nhảy bounces with delight, praising {name}'s super mental maths!",
+            "reward": "Uncle Hopping Kangaroo bounces with delight, praising {name}'s super mental maths!",
             "next": "The fresh grass in the animal yard is lovely. Come back tomorrow for a jumping contest."
           }
         },
@@ -673,7 +673,7 @@
             ],
             "choice": "I'm a super-fast sack hopper!",
             "prompt": "Hop to the finish in {goal} exciting races!",
-            "reward": "Chú Chuột Túi Nhảy hands over a bright laurel wreath and cheers {name} the champion!",
+            "reward": "Uncle Hopping Kangaroo hands over a bright laurel wreath and cheers {name} the champion!",
             "next": "The farm race track is so much fun. Come hop in sacks on the lawn again some time."
           }
         },
@@ -700,7 +700,7 @@
             ],
             "choice": "I'll widen the pasture now!",
             "prompt": "Claim {goal} percent of the green meadow!",
-            "reward": "Chú Chuột Túi Nhảy cheers, delighted that {name} opened up a huge, beautiful pasture!",
+            "reward": "Uncle Hopping Kangaroo cheers, delighted that {name} opened up a huge, beautiful pasture!",
             "next": "The animals can graze freely now. Stroll over to the animal yard whenever you like."
           }
         }
@@ -736,7 +736,7 @@
           "who": "{name}, nghệ nhân pháo đất nhí",
           "learn": "Căn độ dày mỏng và dùng lực dứt khoát",
           "en": {
-            "title": "Clay Poppers with Ông Lão Pháo Đất",
+            "title": "Clay Poppers with Grandpa Firecracker Master",
             "summary": "Soft, sticky clay in Grandpa's hands; shape a thin hollow popper and slam it down on the yard.",
             "lines": [
               "Hello, {name}! The folk game of pháo đất, clay poppers, has always been so lively, my dear.",
@@ -744,7 +744,7 @@
             ],
             "choice": "I'll mould a lovely clay popper!",
             "prompt": "Make {goal} clay poppers go bang!",
-            "reward": "Ông Lão Pháo Đất smiles warmly and slaps his knee: {name}'s poppers are loud and crisp!",
+            "reward": "Grandpa Firecracker Master smiles warmly and slaps his knee: {name}'s poppers are loud and crisp!",
             "next": "The clay is nice and soft this season. Grandpa waits in the farm's brick yard every afternoon."
           }
         },
@@ -763,7 +763,7 @@
           "who": "{name}, tay chơi đánh khang thiện nghệ",
           "learn": "Ước lượng thời điểm rơi và vung tay chính xác",
           "en": {
-            "title": "Đánh khăng in the Fields with Ông Lão Pháo Đất",
+            "title": "Đánh khăng in the Fields with Grandpa Firecracker Master",
             "summary": "Two bamboo sticks, one short and one long, in a wide yard; flip the short stick up and whack it far.",
             "lines": [
               "Come to this open yard, {name}. Let's play the traditional game of đánh khăng, stick-flicking!",
@@ -771,7 +771,7 @@
             ],
             "choice": "I'll whack the stick far away!",
             "prompt": "Hit the stick {goal} metres across the field!",
-            "reward": "Ông Lão Pháo Đất strokes his silver beard: {name} has sharp eyes and hit the stick so far!",
+            "reward": "Grandpa Firecracker Master strokes his silver beard: {name} has sharp eyes and hit the stick so far!",
             "next": "Folk games are good for you. Whenever you're free, come to the farm yard to play đánh khăng."
           }
         },
@@ -790,7 +790,7 @@
           "who": "{name}, nhà quy hoạch ruộng đất tài hoa",
           "learn": "Phân chia diện tích và suy luận hình học",
           "en": {
-            "title": "Rectangle Fields with Ông Lão Pháo Đất",
+            "title": "Rectangle Fields with Grandpa Firecracker Master",
             "summary": "The yard is ruled into squares like a game board; drag rectangles around each number clue.",
             "lines": [
               "{name}, look at this gridded yard. Each patch of land needs dividing into rectangles.",
@@ -798,7 +798,7 @@
             ],
             "choice": "I'll mark out each field neatly!",
             "prompt": "Divide {goal} model fields into neat rectangles!",
-            "reward": "Ông Lão Pháo Đất is full of praise: {name} divides the fields so neatly and sensibly!",
+            "reward": "Grandpa Firecracker Master is full of praise: {name} divides the fields so neatly and sensibly!",
             "next": "The fields are divided nice and straight. Let's meet again in the brick yard, my dear."
           }
         }

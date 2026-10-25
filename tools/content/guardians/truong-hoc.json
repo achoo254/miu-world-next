@@ -54,7 +54,7 @@
           "hint": "Số chục đứng trước, số đơn vị đứng sau; đừng đem 7 cộng với 4.",
           "explain": "7 chục và 4 đơn vị viết là 74; 47 là 4 chục 7 đơn vị, còn 11 là lấy 7 + 4.",
           "en": {
-            "prompt": "Hươu Đếm Cờ has 7 tens of flags and 4 more single flags. How many flags in all?",
+            "prompt": "Flag-Counting Giraffe has 7 tens of flags and 4 more single flags. How many flags in all?",
             "choices": [
               "74",
               "47",
@@ -163,9 +163,9 @@
         }
       ],
       "en": {
-        "summary": "Hươu Đếm Cờ guards the schoolyard by the flagpole and asks {name} four riddles about numbers to 100 and sums.",
+        "summary": "Flag-Counting Giraffe guards the schoolyard by the flagpole and asks {name} four riddles about numbers to 100 and sums.",
         "hook": [
-          "Hello {name}! I'm Hươu Đếm Cờ, and my long neck lets me count every flag round the schoolyard.",
+          "Hello {name}! I'm Flag-Counting Giraffe, and my long neck lets me count every flag round the schoolyard.",
           "Counting has made me hungry for maths, so let me ask you four riddles. Shall we?"
         ],
         "choice": "Yes, let's play, Hươu!",
@@ -181,7 +181,7 @@
           "Not right, try working it out on scrap paper.",
           "So close, look carefully at the tens and the ones."
         ],
-        "reward": "Hươu Đếm Cờ gives {name} a little flag stitched with the number 100. Battle again whenever you like.",
+        "reward": "Flag-Counting Giraffe gives {name} a little flag stitched with the number 100. Battle again whenever you like.",
         "next": "Go round to the yard behind the classrooms, {name}: a zone guardian there knows the timetable by heart."
       }
     },
@@ -239,7 +239,7 @@
             "prompt": "Which sentence shows how the pupil feels about the teacher?",
             "choices": [
               "Em yêu cô giáo lắm! (I love my teacher so much!)",
-              "Cô giáo mặc áo dài. (The teacher wears an áo dài.)",
+              "Teacher mặc áo dài. (The teacher wears an áo dài.)",
               "Cô đến lớp lúc bảy giờ. (She arrives at seven.)"
             ],
             "guide": [
@@ -267,7 +267,7 @@
           "hint": "Tiếng Việt là một môn dù có hai tiếng, đừng đếm thành hai.",
           "explain": "Thứ Hai có Tiếng Việt, Toán, Mĩ thuật: ba tên môn, hai dấu phẩy, nên là 3 môn.",
           "en": {
-            "prompt": "Mèo reads the timetable: «Monday: Vietnamese, Maths, Art». How many subjects are there on Monday?",
+            "prompt": "Cat reads the timetable: «Monday: Vietnamese, Maths, Art». How many subjects are there on Monday?",
             "choices": [
               "2",
               "3",
@@ -343,9 +343,9 @@
         }
       ],
       "en": {
-        "summary": "Mèo Thời Khóa Biểu guards the yard behind the classrooms and asks {name} four riddles about teachers, subjects and spelling.",
+        "summary": "Timetable Cat guards the yard behind the classrooms and asks {name} four riddles about teachers, subjects and spelling.",
         "hook": [
-          "Meow! {name} has come right at break time. I'm Mèo Thời Khóa Biểu and I remember every subject in the school.",
+          "Meow! {name} has come right at break time. I'm Timetable Cat and I remember every subject in the school.",
           "Beat me in four riddles and I'll tell you which day has art."
         ],
         "choice": "Tell me, please!",
@@ -361,7 +361,7 @@
           "Wrong lesson, read a bit more slowly.",
           "Nearly there, think just a little more."
         ],
-        "reward": "Mèo Thời Khóa Biểu gives {name} a book label with a cat on it: write your name and stick it on your exercise book.",
+        "reward": "Timetable Cat gives {name} a book label with a cat on it: write your name and stick it on your exercise book.",
         "next": "In the school garden a zone guardian keeps the biggest drum in the school, {name}, go and meet it."
       }
     },
@@ -521,9 +521,9 @@
         }
       ],
       "en": {
-        "summary": "Gà Trống Gõ Trống guards the school garden and beats out four riddles about words, the alphabet and spelling for {name}.",
+        "summary": "Drumming Rooster guards the school garden and beats out four riddles about words, the alphabet and spelling for {name}.",
         "hook": [
-          "Boom boom boom! I'm Gà Trống Gõ Trống, and every morning I beat the drum to wake up the whole school garden.",
+          "Boom boom boom! I'm Drumming Rooster, and every morning I beat the drum to wake up the whole school garden.",
           "If {name} gets four riddles right, you can have a go on the drum!"
         ],
         "choice": "Let me play the drum!",
@@ -539,7 +539,7 @@
           "Not right, listen carefully to each word.",
           "Cock-a… nearly right, choose again."
         ],
-        "reward": "Gà Trống Gõ Trống gives {name} a little wooden drumstick. Let's wake the school garden together tomorrow.",
+        "reward": "Drumming Rooster gives {name} a little wooden drumstick. Let's wake the school garden together tomorrow.",
         "next": "The playground by the slide has the school's last zone guardian, the hardest one, {name}."
       }
     },
@@ -627,16 +627,16 @@
           "en": {
             "prompt": "Which sentence describes what the playground is like?",
             "choices": [
-              "Sân chơi rộng và sạch. (It is wide and clean.)",
+              "Playground rộng và sạch. (It is wide and clean.)",
               "Chúng em chơi ở sân. (We play there.)",
-              "Sân chơi ở đâu? (Where is it?)"
+              "Playground ở đâu? (Where is it?)"
             ],
             "guide": [
               "A describing sentence tells what something is like: big, small, pretty, clean…",
               "Rule out the question (it has a question mark) and the sentence about what the children do."
             ],
             "hint": "Look for the sentence with words about the playground's size or look.",
-            "explain": "«Sân chơi rộng và sạch.» uses «rộng» (wide) and «sạch» (clean) to describe it; one tells an activity, one asks."
+            "explain": "«Playground rộng và sạch.» uses «rộng» (wide) and «sạch» (clean) to describe it; one tells an activity, one asks."
           }
         },
         {
@@ -732,9 +732,9 @@
         }
       ],
       "en": {
-        "summary": "Khỉ Cầu Trượt guards the playground and slides five riddles about loving school, sentences and spelling down to {name}.",
+        "summary": "Slide Monkey guards the playground and slides five riddles about loving school, sentences and spelling down to {name}.",
         "hook": [
-          "Wheee! I'm Khỉ Cầu Trượt, and I slid down just as {name} walked by.",
+          "Wheee! I'm Slide Monkey, and I slid down just as {name} walked by.",
           "Five riddles, one slide each. Answer them all and the whole playground is yours!"
         ],
         "choice": "Slide away, I'll catch them all!",
@@ -750,8 +750,8 @@
           "Not that one, read the question again.",
           "So close, swing one more time!"
         ],
-        "reward": "Khỉ Cầu Trượt gives {name} a slide badge. The playground always saves you a turn.",
-        "next": "All four zone guardians beaten, {name}: go and meet Voi Tính Nhẩm at the school's last stop."
+        "reward": "Slide Monkey gives {name} a slide badge. The playground always saves you a turn.",
+        "next": "All four zone guardians beaten, {name}: go and meet Mental Math Elephant at the school's last stop."
       }
     }
   ]

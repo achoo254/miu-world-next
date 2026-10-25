@@ -115,7 +115,7 @@
           "explain": "«Tớ là Cò, tớ giữ giếng làng.» nói tên và việc của Cò nên là câu giới thiệu; hai câu kia là câu khen và câu hỏi.",
           "en": {
             "prompt": "Which sentence introduces the speaker?",
-            "choices": ["Tớ là Cò, tớ giữ giếng làng. (I'm Cò, I keep the well.)", "Giếng làng sâu ghê! (The well is so deep!)", "Cậu uống nước chưa? (Have you had a drink?)"],
+            "choices": ["Tớ là Cò, tớ giữ giếng làng. (I'm Cò, I keep the well.)", "Village Well sâu ghê! (The well is so deep!)", "Cậu uống nước chưa? (Have you had a drink?)"],
             "guide": [
               "Remember: an introduction tells the listener who the speaker is and what they do.",
               "Read the three sentences in turn and rule out the one praising the well and the question."
@@ -126,9 +126,9 @@
         }
       ],
       "en": {
-        "summary": "Cò Trắng Giữ Giếng guards the village entrance and asks {name} four riddles about greetings, letters and introductions.",
+        "summary": "Well-Guarding White Egret guards the village entrance and asks {name} four riddles about greetings, letters and introductions.",
         "hook": [
-          "Coo… no, I'm Cò Trắng Giữ Giếng! Everyone passing the village entrance greets me with a riddle.",
+          "Coo… no, I'm Well-Guarding White Egret! Everyone passing the village entrance greets me with a riddle.",
           "Answer four right and I'll draw {name} the coolest bucket of water in the village."
         ],
         "choice": "Go on, Cò, ask me!",
@@ -144,7 +144,7 @@
           "Not that one, read the question aloud once more.",
           "Tilt your head and think a bit, the stork can wait."
         ],
-        "reward": "Cò Trắng Giữ Giếng draws {name} a bucket of cool water and gives a snow-white feather to write with.",
+        "reward": "Well-Guarding White Egret draws {name} a bucket of cool water and gives a snow-white feather to write with.",
         "next": "Head to the riverside meadow, {name}: a zone guardian there loves sentence riddles."
       }
     },
@@ -273,9 +273,9 @@
         }
       ],
       "en": {
-        "summary": "Thỏ Ngọc Bãi Sông guards the riverside meadow and challenges {name} to four riddles about words, sentences and the alphabet.",
+        "summary": "Riverside Jade Rabbit guards the riverside meadow and challenges {name} to four riddles about words, sentences and the alphabet.",
         "hook": [
-          "Oh look, {name}! I'm Thỏ Ngọc Bãi Sông, and I'm counting every blade of grass by the river.",
+          "Oh look, {name}! I'm Riverside Jade Rabbit, and I'm counting every blade of grass by the river.",
           "Counting gets boring, so shall we swap four riddles for fun?"
         ],
         "choice": "Riddles for fun!",
@@ -291,7 +291,7 @@
           "Not right yet, read each word carefully.",
           "Almost, just one more hop!"
         ],
-        "reward": "Thỏ Ngọc Bãi Sông gives {name} a bunch of lucky clover. Come back for more riddles whenever you feel blue.",
+        "reward": "Riverside Jade Rabbit gives {name} a bunch of lucky clover. Come back for more riddles whenever you feel blue.",
         "next": "Down at the river landing a zone guardian is waiting for someone to play word riddles."
       }
     },
@@ -409,20 +409,20 @@
           "explain": "«Em ra bến sông chơi.» đi đúng thứ tự ai (em) rồi làm gì (ra bến sông chơi); hai cách kia đảo lộn nên khó hiểu.",
           "en": {
             "prompt": "Put «em, ra, bến sông, chơi» in order to make a sentence. Which is right?",
-            "choices": ["Em ra bến sông chơi. (I go to the river landing to play.)", "Bến sông em ra chơi. (muddled)", "Chơi em ra bến sông. (muddled)"],
+            "choices": ["Em ra bến sông chơi. (I go to the river landing to play.)", "River Dock em ra chơi. (muddled)", "Chơi em ra bến sông. (muddled)"],
             "guide": [
               "Find who does something in the sentence and put them first.",
               "After the doer come the action and the place; read each order aloud to hear which flows."
             ],
-            "hint": "Telling sentences usually go who, does what, where; starting with «Chơi» or «Bến sông» sounds back to front.",
+            "hint": "Telling sentences usually go who, does what, where; starting with «Chơi» or «River Dock» sounds back to front.",
             "explain": "«Em ra bến sông chơi.» follows who (em) then what (go to the landing to play); the other two are jumbled."
           }
         }
       ],
       "en": {
-        "summary": "Cua Kềnh Gác Bến guards the river landing and raises its claws to ask {name} four riddles about words, sentences and polite replies.",
+        "summary": "Wharf-Guarding Giant Crab guards the river landing and raises its claws to ask {name} four riddles about words, sentences and polite replies.",
         "hook": [
-          "Halt, halt! Cua Kềnh Gác Bến here, with the biggest claws on this landing, {name}.",
+          "Halt, halt! Wharf-Guarding Giant Crab here, with the biggest claws on this landing, {name}.",
           "But I never pinch, I only ask riddles. Get four right and I'll raise my claws to salute you."
         ],
         "choice": "Crab, I'm not scared!",
@@ -438,7 +438,7 @@
           "Not right, think a little longer.",
           "A wave knocked that answer off course, choose again."
         ],
-        "reward": "Cua Kềnh Gác Bến gives {name} a singing shell: hold it to your ear and you hear the river.",
+        "reward": "Wharf-Guarding Giant Crab gives {name} a singing shell: hold it to your ear and you hear the river.",
         "next": "The lotus pond and football pitch have the strongest zone guardian in the village, {name}, go and try."
       }
     },
@@ -509,7 +509,7 @@
           "hint": "Kiểm tra lần lượt từng tiếng; chỉ một tiếng viết thường là tên đó chưa đúng.",
           "explain": "Tên người viết hoa chữ đầu của cả ba tiếng họ, đệm, tên, nên «Lê Văn Hùng» đúng; hai cách kia còn tiếng viết thường.",
           "en": {
-            "prompt": "Sư Tử Thủ Môn writes a player's name on the board. Which name has the right capital letters?",
+            "prompt": "Goalkeeper Lion writes a player's name on the board. Which name has the right capital letters?",
             "choices": ["Lê Văn Hùng", "lê văn hùng", "Lê văn hùng"],
             "guide": [
               "Count the parts of the player's name: family name, middle name and given name.",
@@ -590,9 +590,9 @@
         }
       ],
       "en": {
-        "summary": "Sư Tử Thủ Môn guards the goal by the lotus pond and shoots five riddles about names, describing words and congratulations for {name} to stop.",
+        "summary": "Goalkeeper Lion guards the goal by the lotus pond and shoots five riddles about names, describing words and congratulations for {name} to stop.",
         "hook": [
-          "Roar… I'm Sư Tử Thủ Môn! Nobody has ever scored past me, {name}.",
+          "Roar… I'm Goalkeeper Lion! Nobody has ever scored past me, {name}.",
           "Five riddles are five shots: answer all five right and you win the match."
         ],
         "choice": "Shoot, I'm ready!",
@@ -608,8 +608,8 @@
           "I caught that one, try another shot.",
           "Just wide of the goal, aim again."
         ],
-        "reward": "Sư Tử Thủ Môn hands {name} a lotus-leaf captain's armband. The pitch is always waiting for you.",
-        "next": "Beaten all four zone guardians? Trâu Đen Đố Chữ is still waiting for {name} at the village's last stop."
+        "reward": "Goalkeeper Lion hands {name} a lotus-leaf captain's armband. The pitch is always waiting for you.",
+        "next": "Beaten all four zone guardians? Riddle Water Buffalo is still waiting for {name} at the village's last stop."
       }
     }
   ]

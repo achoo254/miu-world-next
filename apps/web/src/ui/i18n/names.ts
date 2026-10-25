@@ -5,7 +5,8 @@
 //
 // The glossary is downloaded only when the display mode is English or Song ngữ (a dynamic import, so its own
 // chunk). Until it arrives, and in Tiếng Việt, a name reads in Vietnamese. When it arrives the name listeners run
-// (React screens re-render through `useLangMode`, the game relabels through `onNameDisplayChange`).
+// (React screens re-render through `useLangMode`; game labels read the name each time they are shown, and the
+// name boards painted on the map wait for the glossary when the map loads).
 // React-free, so the game runtime uses it too: `nameText(vi)` gives the name as one string in the current mode.
 import { getLangMode, inline, onLangModeChange, type Bilingual } from './i18n';
 

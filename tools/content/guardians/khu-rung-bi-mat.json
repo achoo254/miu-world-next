@@ -126,9 +126,9 @@
         }
       ],
       "en": {
-        "summary": "Nai Gác Đồng Cỏ guards the way into the north-west glade. {name} wins four word riddles and the stag opens the way.",
+        "summary": "Meadow Watch Deer guards the way into the north-west glade. {name} wins four word riddles and the stag opens the way.",
         "hook": [
-          "Hold on, {name}! I'm Nai Gác Đồng Cỏ, and everyone who crosses this glade has a battle of wits with me.",
+          "Hold on, {name}! I'm Meadow Watch Deer, and everyone who crosses this glade has a battle of wits with me.",
           "You lose nothing if you miss, and every right answer wears me down. Dare to try?"
         ],
         "choice": "I'll try right now!",
@@ -144,7 +144,7 @@
           "The wind blew that one off course, pick again.",
           "So close, read it slowly once more."
         ],
-        "reward": "Nai Gác Đồng Cỏ gives {name} a bag of sweet grass seeds and says you can battle again any time.",
+        "reward": "Meadow Watch Deer gives {name} a bag of sweet grass seeds and says you can battle again any time.",
         "next": "Another zone guardian is waiting for {name} in the north-east glade."
       }
     },
@@ -238,7 +238,7 @@
           "hint": "Sau âm «gờ» là ê nên phải dùng gh; rồi kiểm tra xem cách viết nào thừa chữ.",
           "explain": "Trước ê viết gh nên «cái gế» sai; «cái ghiế» lại thừa chữ i, chỉ «cái ghế» viết đúng.",
           "en": {
-            "prompt": "Chồn Đuôi Bông writes «chair» three ways. Which uses g/gh correctly?",
+            "prompt": "Fluffy-Tail Weasel writes «chair» three ways. Which uses g/gh correctly?",
             "choices": ["cái ghế", "cái gế", "cái ghiế"],
             "guide": [
               "Look at the vowel right after g or gh in each spelling.",
@@ -273,9 +273,9 @@
         }
       ],
       "en": {
-        "summary": "Chồn Đuôi Bông guards the north-east glade and asks {name} four riddles about the alphabet, feelings and spelling.",
+        "summary": "Fluffy-Tail Weasel guards the north-east glade and asks {name} four riddles about the alphabet, feelings and spelling.",
         "hook": [
-          "Hi {name}! I'm Chồn Đuôi Bông, and I've lined up the whole alphabet as a fence round this glade.",
+          "Hi {name}! I'm Fluffy-Tail Weasel, and I've lined up the whole alphabet as a fence round this glade.",
           "To get through, have a battle of wits with me. If you miss, just try again."
         ],
         "choice": "Let's battle!",
@@ -291,7 +291,7 @@
           "Run through the alphabet from the start and see.",
           "Nearly there, try saying each word out loud."
         ],
-        "reward": "Chồn Đuôi Bông gives {name} a leaf carved with all twenty-nine letters. Battle again whenever you like.",
+        "reward": "Fluffy-Tail Weasel gives {name} a leaf carved with all twenty-nine letters. Battle again whenever you like.",
         "next": "In the south-west of the forest a zone guardian loves sounds and toys."
       }
     },
@@ -420,7 +420,7 @@
         }
       ],
       "en": {
-        "summary": "Gấu Túi Diều Gió guards the south-west glade and challenges {name} to four riddles about sounds, toys and spelling.",
+        "summary": "Kite Koala guards the south-west glade and challenges {name} to four riddles about sounds, toys and spelling.",
         "hook": [
           "Can you hear it, {name}? My kite hums whoosh-whoosh over this glade all day long.",
           "Whoever answers my four riddles gets to hold the kite string for a while!"
@@ -438,7 +438,7 @@
           "The kite only wobbled a little, choose again.",
           "Not yet, listen carefully to the sound."
         ],
-        "reward": "Gấu Túi Diều Gió ties a blue kite-tail bow for {name}. Let's fly again tomorrow!",
+        "reward": "Kite Koala ties a blue kite-tail bow for {name}. Let's fly again tomorrow!",
         "next": "In the south-east glade a zone guardian is setting up a dragon-and-snake word game."
       }
     },
@@ -590,9 +590,9 @@
         }
       ],
       "en": {
-        "summary": "Sâu Rồng Ngũ Sắc guards the south-east glade and invites {name} to a dragon-and-snake game of five riddles about sentences and spelling.",
+        "summary": "Five-Color Dragon Caterpillar guards the south-east glade and invites {name} to a dragon-and-snake game of five riddles about sentences and spelling.",
         "hook": [
-          "I'm Sâu Rồng Ngũ Sắc, as long as a whole dragon-and-snake line, {name}!",
+          "I'm Five-Color Dragon Caterpillar, as long as a whole dragon-and-snake line, {name}!",
           "Get all five riddles right and you'll be the dragon's head leading everyone."
         ],
         "choice": "I want to be the dragon's head!",
@@ -608,7 +608,7 @@
           "Not that one, look at each word again.",
           "The tail is waving: give it one more go!"
         ],
-        "reward": "Sâu Rồng Ngũ Sắc gives {name} a shiny rainbow scale to wear as the dragon's head.",
+        "reward": "Five-Color Dragon Caterpillar gives {name} a shiny rainbow scale to wear as the dragon's head.",
         "next": "You've met all four glades, {name}: visit the Mischievous Forest Spirit in the moonlit glade."
       }
     }

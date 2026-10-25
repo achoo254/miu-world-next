@@ -13,6 +13,7 @@ import { withLooks } from './build-side-quests';
 import { readGuardianTables, type Guardian, type GuardianTable } from './guardian-table';
 import { readSideQuestTables, type SideQuestTable } from './side-quest-table';
 import { duelMovesFor } from './duel-moves';
+import { readGlossary } from './name-glossary';
 
 /** HP each right answer takes: the guardian falls on its last question. */
 export const GUARDIAN_DAMAGE = 100;
@@ -40,12 +41,17 @@ export function choiceOrder(key: string, count: number): number[] {
   return order;
 }
 
+let glossary: Map<string, string> | null = null;
+const englishNames = (): Map<string, string> => (glossary ??= readGlossary());
+
 /** The look a guardian wears: its table's look, tinted, as a look of its own. */
 export const guardianLookId = (guardian: Pick<Guardian, 'id' | 'look'>): string => `${guardian.look}-${guardian.id}`;
 
 /** One guardian's fight: its lines at the guardian, its boss (one question a blow), its gift and the way on. */
 export function guardianQuestOf(table: GuardianTable, g: Guardian): QuestDefinition {
   const en = g.en;
+  // The guardian's English name, as the label over its head shows it (content/i18n/names).
+  const nameEn = englishNames().get(g.name) ?? g.name;
   const skills = [...new Set(g.turns.map((t) => t.skill))];
   const xp = GUARDIAN_XP_PER_TURN * g.turns.length;
   // Each question answered with a play move, rotating so two in a row differ and the fight uses every move.
@@ -77,7 +83,7 @@ export function guardianQuestOf(table: GuardianTable, g: Guardian): QuestDefinit
         target: g.id,
         lines: g.hook.map((text) => ({ speaker: g.name, text })),
         choices: [{ text: g.choice }],
-        en: { title: `Meet ${g.name}`, lines: [...en.hook], choices: [{ text: en.choice }] },
+        en: { title: `Meet ${nameEn}`, lines: [...en.hook], choices: [{ text: en.choice }] },
       },
       {
         id: 'dau',
@@ -114,13 +120,13 @@ export function guardianQuestOf(table: GuardianTable, g: Guardian): QuestDefinit
           };
         }),
         feedback: { right: [...g.right], wrong: [...g.wrong], en: { right: [...en.right], wrong: [...en.wrong] } },
-        en: { title: `Battle of wits with ${g.name}`, bossName: g.name, introDialogue: en.intro, winDialogue: en.win },
+        en: { title: `Battle of wits with ${nameEn}`, bossName: nameEn, introDialogue: en.intro, winDialogue: en.win },
       },
-      { id: 'qua', title: `Quà của ${g.name}`, kind: 'reward', trigger: 'auto', text: g.reward, en: { title: `${g.name}'s gift`, text: en.reward } },
-      { id: 'tiep', title: `Chia tay ${g.name}`, kind: 'next', trigger: 'auto', text: g.next, en: { title: `Goodbye, ${g.name}`, text: en.next } },
+      { id: 'qua', title: `Quà của ${g.name}`, kind: 'reward', trigger: 'auto', text: g.reward, en: { title: `${nameEn}'s gift`, text: en.reward } },
+      { id: 'tiep', title: `Chia tay ${g.name}`, kind: 'next', trigger: 'auto', text: g.next, en: { title: `Goodbye, ${nameEn}`, text: en.next } },
     ],
     reward: { xp, coin: GUARDIAN_COINS, skillXp: Object.fromEntries(skills.map((s) => [s, 1])) },
-    en: { title: `Zone guardian: ${g.name}`, summary: en.summary },
+    en: { title: `Zone guardian: ${nameEn}`, summary: en.summary },
   };
   const parsed = QuestDefinition.safeParse(quest);
   if (!parsed.success) throw new Error(`${g.quest}: ${parsed.error.message}`);

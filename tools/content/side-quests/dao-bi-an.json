@@ -30,7 +30,7 @@
           "who": "{name}, tay lướt sóng của đảo",
           "learn": "Cảm nhận nhịp lên xuống của sóng",
           "en": {
-            "title": "Surf past the islands with Cua Lướt Sóng",
+            "title": "Surf past the islands with Surfer Crab",
             "summary": "On the board, hold to drop down a wave for speed, then let go to fly over the crest.",
             "lines": [
               "The waves are just the right height today! Grab your board and come out with me, {name}!",
@@ -38,7 +38,7 @@
             ],
             "choice": "Grabbing my board now!",
             "prompt": "Surf past {goal} islands on the waves!",
-            "reward": "Cua Lướt Sóng waves both claws and cheers: {name} surfs like a dolphin!",
+            "reward": "Surfer Crab waves both claws and cheers: {name} surfs like a dolphin!",
             "next": "There are waves every day. Cua will wait for {name} on the beach by the pier."
           }
         },
@@ -57,7 +57,7 @@
           "who": "{name}, kình ngư nhỏ của đảo",
           "learn": "Giữ nhịp đều và kiên nhẫn",
           "en": {
-            "title": "Swim race along the shore with Cua Lướt Sóng",
+            "title": "Swim race along the shore with Surfer Crab",
             "summary": "Tap when the gold ring meets the white ring to stroke, and keep a steady rhythm to the finish.",
             "lines": [
               "Who can swim to the red buoy first? Dare to race me, {name}?",
@@ -65,7 +65,7 @@
             ],
             "choice": "A race? You're on!",
             "prompt": "Finish first or second in {goal} races!",
-            "reward": "Cua Lướt Sóng gives up: {name} swims so steadily, I just can't keep up!",
+            "reward": "Surfer Crab gives up: {name} swims so steadily, I just can't keep up!",
             "next": "The sea is lovely and warm. Whenever you want a rematch, find Cua on the beach."
           }
         }
@@ -101,7 +101,7 @@
           "who": "{name}, đầu bếp trái cây của rừng",
           "learn": "Phản xạ nhanh và nhìn kỹ trước khi chém",
           "en": {
-            "title": "Slice jungle fruit with Khỉ Hái Dừa",
+            "title": "Slice jungle fruit with Coconut-Picker Monkey",
             "summary": "Jungle fruit flies into the air: swipe to slice each one in half, and steer clear of the cactus.",
             "lines": [
               "I just picked a whole basket of coconuts, mangoes and pineapples, {name}! Let's make a fruit plate!",
@@ -109,8 +109,8 @@
             ],
             "choice": "Toss them up, I'm ready!",
             "prompt": "Score {goal} points slicing fruit!",
-            "reward": "Khỉ Hái Dừa bounces up and down: {name}'s fruit plate is delicious!",
-            "next": "The trees will be heavy with fruit again tomorrow. Khỉ Hái Dừa will meet {name} at the jungle entrance."
+            "reward": "Coconut-Picker Monkey bounces up and down: {name}'s fruit plate is delicious!",
+            "next": "The trees will be heavy with fruit again tomorrow. Coconut-Picker Monkey will meet {name} at the jungle entrance."
           }
         },
         {
@@ -128,7 +128,7 @@
           "who": "{name}, nhiếp ảnh gia thiên nhiên",
           "learn": "Kiên nhẫn chờ đúng khoảnh khắc",
           "en": {
-            "title": "Photograph jungle animals with Khỉ Hái Dừa",
+            "title": "Photograph jungle animals with Coconut-Picker Monkey",
             "summary": "Animals hide behind bushes and tree stumps: wait until one steps fully into the frame, then snap.",
             "lines": [
               "This jungle is full of shy animals, {name}. Bring the camera and come with me!",
@@ -136,7 +136,7 @@
             ],
             "choice": "Camera's ready!",
             "prompt": "Take {goal} sharp photos of the animals!",
-            "reward": "Khỉ Hái Dừa can't stop looking at them: {name} takes photos like a real photographer!",
+            "reward": "Coconut-Picker Monkey can't stop looking at them: {name} takes photos like a real photographer!",
             "next": "Lots of animals still haven't had their picture taken. Come back to the jungle with Khỉ, {name}."
           }
         },
@@ -155,7 +155,7 @@
           "who": "{name}, xạ thủ bóng màu",
           "learn": "Nhóm theo màu và ngắm góc bật",
           "en": {
-            "title": "Bubble shooter under the palms with Khỉ Hái Dừa",
+            "title": "Bubble shooter under the palms with Coconut-Picker Monkey",
             "summary": "Drag your finger to aim along the dotted line and shoot; three bubbles of one colour that touch will pop.",
             "lines": [
               "See the coloured bubbles stuck in the palm leaves, {name}? Shoot them down for me!",
@@ -163,7 +163,7 @@
             ],
             "choice": "Aiming carefully, here goes!",
             "prompt": "Score {goal} points popping bubbles!",
-            "reward": "Khỉ Hái Dừa swings on a branch and cheers: {name} never misses a shot!",
+            "reward": "Coconut-Picker Monkey swings on a branch and cheers: {name} never misses a shot!",
             "next": "The wind keeps blowing bubbles into the trees. Come play in the jungle with Khỉ again, {name}."
           }
         }
@@ -269,7 +269,7 @@
           "who": "{name}, nhà thám hiểm tìm kho báu",
           "learn": "Suy luận từ manh mối gần và xa",
           "en": {
-            "title": "Hot-and-cold treasure dig with Gấu Trúc Thám Hiểm",
+            "title": "Hot-and-cold treasure dig with Explorer Panda",
             "summary": "Tap a patch of sand to dig: fire means close, snow means far. Find the treasure in eight digs.",
             "lines": [
               "The old map says treasure is buried around these ruins, {name}!",
@@ -277,7 +277,7 @@
             ],
             "choice": "Hand me the shovel!",
             "prompt": "Dig up {goal} treasures from the sand!",
-            "reward": "Gấu Trúc Thám Hiểm hugs the golden chest: {name} has a real nose for treasure!",
+            "reward": "Explorer Panda hugs the golden chest: {name} has a real nose for treasure!",
             "next": "The map still has lots of X marks. Come back to the ruins and keep digging, {name}."
           }
         },
@@ -296,7 +296,7 @@
           "who": "{name}, thợ đào hầm tìm ngọc",
           "learn": "Lên kế hoạch đường đi an toàn",
           "en": {
-            "title": "Tunnel for gems with Gấu Trúc Thám Hiểm",
+            "title": "Tunnel for gems with Explorer Panda",
             "summary": "Drag your finger to dig tunnels for gems, carefully, so the boulders above don't fall on you.",
             "lines": [
               "There are sparkling gems under the old temple floor, {name}. Let's tunnel down together!",
@@ -304,7 +304,7 @@
             ],
             "choice": "I'll dig gently!",
             "prompt": "Collect {goal} gems from underground!",
-            "reward": "Gấu Trúc Thám Hiểm wipes his glasses and cheers: {name} digs like a mole!",
+            "reward": "Explorer Panda wipes his glasses and cheers: {name} digs like a mole!",
             "next": "More gems are sleeping underground. Gấu Trúc will wait for {name} at the ruins gate."
           }
         }
@@ -340,7 +340,7 @@
           "who": "{name}, nhà thám hiểm săn kho báu biển",
           "learn": "Đọc hướng đi theo mũi tên và đếm bước",
           "en": {
-            "title": "Follow the old map with Thuyền Trưởng Vẹt Biển",
+            "title": "Follow the old map with Captain Sea Parrot",
             "summary": "The old map shows a mysterious route: count the steps along each arrow to dig up the golden chest.",
             "lines": [
               "Here's my ancient treasure chart, {name}! Quick, count the steps with your captain!",
@@ -367,7 +367,7 @@
           "who": "{name}, hoa tiêu dò đường biển tài ba",
           "learn": "Suy luận logic và đánh dấu mối nguy",
           "en": {
-            "title": "Chart the coral reef with Thuyền Trưởng Vẹt Biển",
+            "title": "Chart the coral reef with Captain Sea Parrot",
             "summary": "The shallows hide sharp rocks: use the number clues to plant warning flags and keep boats safe.",
             "lines": [
               "The reef by my tent is full of dangerous rocks, {name}. Check the channel for me!",
@@ -394,7 +394,7 @@
           "who": "{name}, thuyền trưởng tháo gỡ tắc nghẽn",
           "learn": "Tư duy di chuyển từng bước có trật tự",
           "en": {
-            "title": "Free the stuck boat with Thuyền Trưởng Vẹt Biển",
+            "title": "Free the stuck boat with Captain Sea Parrot",
             "summary": "Rafts are blocking the bay: slide the boats back and forth to get the golden ship out to sea.",
             "lines": [
               "My golden sailing ship is stuck between the wooden rafts, {name}! Come to the rescue!",
@@ -438,7 +438,7 @@
           "who": "{name}, vận động viên bóng chuyền bãi biển",
           "learn": "Đoán vị trí bóng rơi và căn lực đập",
           "en": {
-            "title": "Beach volleyball with Hải Cẩu Bóng Chuyền",
+            "title": "Beach volleyball with Volleyball Seal",
             "summary": "The ball sails over the net: run to where it lands and jump to spike it into the other court.",
             "lines": [
               "The waves are so cool and splashy, {name}! Come play volleyball on the sand with me!",
@@ -465,7 +465,7 @@
           "who": "{name}, nghệ sĩ xiếc giữ thăng bằng",
           "learn": "Điều chỉnh tay nhẹ nhàng theo hướng nghiêng",
           "en": {
-            "title": "Balance the ball with Hải Cẩu Bóng Chuyền",
+            "title": "Balance the ball with Volleyball Seal",
             "summary": "The sea breeze keeps gusting: lean left and right to keep the ball balanced.",
             "lines": [
               "The sea breeze is playing tricks today, {name}. Help me keep the ball balanced!",
@@ -536,7 +536,7 @@
           "who": "{name}, tay bắt cua khéo léo bờ biển",
           "learn": "Nhanh tay gắp thả và nhớ đậy nắp đồ vật",
           "en": {
-            "title": "Catch crabs in the tide pool with Cua Càng Cắp Cua",
+            "title": "Catch crabs in the tide pool with Claw-in-Claw Crab",
             "summary": "Baby crabs scuttle over the sand: pick each one up quickly, pop it in the basket and close the lid.",
             "lines": [
               "The tide has left so many tiny crabs behind, {name}! Help me gather them up!",
@@ -563,7 +563,7 @@
           "who": "{name}, kiến trúc sư lâu đài cát",
           "learn": "Đong lượng vừa đủ và ước lượng thể tích",
           "en": {
-            "title": "Build a sandcastle against the waves with Cua Càng Cắp Cua",
+            "title": "Build a sandcastle against the waves with Claw-in-Claw Crab",
             "summary": "Scoop wet sand up to the mark, then flip it over to build sturdy sand towers on the shore.",
             "lines": [
               "The waves are about to roll in, {name}! Let's build a really strong sandcastle!",
@@ -590,7 +590,7 @@
           "who": "{name}, nhà toán học nhí bờ biển",
           "learn": "Tính nhẩm tổng các số vừa khít số đích",
           "en": {
-            "title": "Fill the three-span bag with Cua Càng Cắp Cua",
+            "title": "Fill the three-span bag with Claw-in-Claw Crab",
             "summary": "The magic bag from the old tale holds only the set amount: pick gems that fit it exactly.",
             "lines": [
               "The magic bird just dropped off the three-span bag, {name}! Pick gems with me!",
@@ -634,7 +634,7 @@
           "who": "{name}, ngư dân nhí quăng chài thiện nghệ",
           "learn": "Ước lượng khoảng cách và đón đầu vật chuyển động",
           "en": {
-            "title": "Cast the net at sea with Bác Quăng Lưới Biển",
+            "title": "Cast the net at sea with Net-Casting Uncle",
             "summary": "From the bow, swipe to throw the round net wide open ahead of the swimming fish.",
             "lines": [
               "A school of sardines is swimming past the boat, {name}! Help me cast the net!",
@@ -661,7 +661,7 @@
           "who": "{name}, người dẫn đường dòng hải lưu",
           "learn": "Hiểu quy luật đổi dòng của nước khi gặp vật cản",
           "en": {
-            "title": "Guide the message bottles with Bác Quăng Lưới Biển",
+            "title": "Guide the message bottles with Net-Casting Uncle",
             "summary": "Water rushes over the rocks: drop pebbles to bend the current and carry each message bottle to shore.",
             "lines": [
               "The sailors' message bottles must reach a faraway island, {name}. Help me steer the current!",
@@ -688,7 +688,7 @@
           "who": "{name}, thuyền trưởng phà biển khéo léo",
           "learn": "Kiểm soát tốc độ và căn khoảng cách cập bến",
           "en": {
-            "title": "Dock the ferry with Bác Quăng Lưới Biển",
+            "title": "Dock the ferry with Net-Casting Uncle",
             "summary": "The passenger ferry bobs on the waves: steer it, slow it down and bring it gently alongside the pier.",
             "lines": [
               "The ferry's packed with passengers today, {name}. Take the wheel and help me out!",
@@ -732,7 +732,7 @@
           "who": "{name}, phi công nhảy dù đảo hoang",
           "learn": "Đoán hướng gió và điều chỉnh tay lái",
           "en": {
-            "title": "Parachute onto the island with Khỉ Nhảy Dù Đảo Cổ",
+            "title": "Parachute onto the island with Parachute Monkey",
             "summary": "The parachute glides through the windy sky: steer around the gusts to land right on the target.",
             "lines": [
               "Soaring up from the top of a palm tree is so much fun! Put on a parachute and fly with me, {name}!",
@@ -786,7 +786,7 @@
           "who": "{name}, tay gôn cừ khôi bờ biển",
           "learn": "Ước lượng lực kéo và hướng bóng dội lại",
           "en": {
-            "title": "Mini golf on the sand with Khỉ Nhảy Dù Đảo Cổ",
+            "title": "Mini golf on the sand with Parachute Monkey",
             "summary": "On a bumpy, winding sand course, pull back to set the power and bank the ball off the walls into the hole.",
             "lines": [
               "I just made a mini golf course around the palm tree, {name}! Let's play a round!",

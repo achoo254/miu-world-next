@@ -10,6 +10,7 @@
 //   pnpm content:names --todo DIR writes them as `<group>.json` ({"Vietnamese": ""}) to fill in
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
+import { questSecrets } from '../security/scan-dist';
 
 export const NAME_GROUPS = ['character', 'place', 'thing', 'wearable', 'home', 'action', 'title'] as const;
 export type NameGroup = (typeof NAME_GROUPS)[number];
@@ -47,15 +48,20 @@ function hasOwnEnglish(obj: JsonObject, key: string): boolean {
 /** Every name the game shows in Vietnamese, with the group whose glossary owns it (first group wins). */
 export function harvestNames(): Map<string, NameGroup> {
   const found = new Map<string, NameGroup>();
+  // The glossary ships in the web bundle, so a name that contains a quest's answer would hand it out early.
+  const secrets = questSecrets(jsonFiles(path.join(ROOT, 'content/quests')).map((f) => readJson(f)));
   const add = (text: Json | undefined, group: NameGroup) => {
-    if (typeof text === 'string' && needsEnglish(text) && !found.has(text)) found.set(text, group);
+    if (typeof text !== 'string' || !needsEnglish(text) || found.has(text)) return;
+    if (secrets.some((secret) => text.includes(secret))) return;
+    found.set(text, group);
   };
   /** Walks a JSON tree adding the values of `keys` that lack their own English. */
   const walk = (node: Json, keys: readonly string[], group: NameGroup) => {
     if (Array.isArray(node)) return node.forEach((n) => walk(n, keys, group));
     if (!isObject(node)) return;
     for (const [k, v] of Object.entries(node)) {
-      if (k === 'en') continue;
+      // `answer` and `support` are server-only: the web bundle must never carry their text.
+      if (k === 'en' || k === 'answer' || k === 'support') continue;
       if (typeof v === 'string') {
         if (keys.includes(k) && !hasOwnEnglish(node, k)) add(v, group);
       } else walk(v, keys, group);
@@ -87,6 +93,12 @@ export function harvestNames(): Map<string, NameGroup> {
     for (const x of asArray(map.landmarks)) if (isObject(x)) add(x.name, 'place');
     for (const x of asArray(map.interactables)) if (isObject(x) && x.kind === 'gate') add(x.name, 'place');
     for (const x of asArray(map.interactables)) if (isObject(x)) add(x.board, 'place');
+    // A ride's stop is shown split into its vehicle and where it goes (the map's stations, minimap-model.ts rideOf).
+    for (const x of asArray(map.interactables)) {
+      if (!isObject(x) || !x.ride || typeof x.name !== 'string') continue;
+      const ride = /^(.+?) (?:tới|về|ra) (.+)$/.exec(x.name);
+      if (ride) add(ride[2], 'place');
+    }
   }
   for (const file of jsonFiles(content('quests'))) {
     const quest = readJson(file);
@@ -103,6 +115,14 @@ export function harvestNames(): Map<string, NameGroup> {
 
   for (const file of [...jsonFiles(content('accessories')), ...jsonFiles(content('outfits'))]) walk(readJson(file), ['name'], 'wearable');
   for (const file of jsonFiles(content('home'))) walk(readJson(file), ['name'], 'home');
+
+  // The vehicle of a ride's stop ("Xe buýt", "Tàu rừng"), named on the map's stations.
+  for (const map of mapData) {
+    for (const x of asArray(map.interactables)) {
+      if (!isObject(x) || !x.ride || typeof x.name !== 'string') continue;
+      add(/^(.+?) (?:tới|về|ra) /.exec(x.name)?.[1] ?? x.name, 'thing');
+    }
+  }
 
   // Verbs on the labels ("Nói chuyện", "Mở rương").
   walk(readJson(content('world/looks.json')), ['label'], 'action');
@@ -152,6 +172,8 @@ export function glossaryIssues(names = harvestNames(), glossary = readGlossary()
   for (const [vi, en] of glossary) {
     if (holes(vi) !== holes(en)) broken.push(`"${vi}" → "${en}": placeholders differ`);
   }
+  // A name the game no longer shows (renamed, removed, or holding an answer) must leave the glossary too.
+  for (const vi of glossary.keys()) if (!names.has(vi)) broken.push(`"${vi}": the game shows no such name any more; remove it`);
   return { missing, broken };
 }
 

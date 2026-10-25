@@ -121,8 +121,10 @@ export function LearningStep({
     return { correct: response.correct, won: response.quest.completedSteps.includes(step.id), copy: response.copy ?? null };
   }
 
-  // A language lesson keeps its answer labels as written (see language-lesson.ts).
-  const language = teachesLanguage(quest, step);
+  // Answer labels take the name glossary's English only beside an English question: a language lesson keeps its
+  // labels as written (see language-lesson.ts), and a question shown in Vietnamese keeps its answers Vietnamese too.
+  const englishPrompt = 'en' in step && typeof step.en === 'object' && step.en !== null && 'prompt' in step.en && Boolean(step.en.prompt);
+  const language = teachesLanguage(quest, step) || !englishPrompt;
   const context: ChallengeContext = {
     questId: quest.id,
     stepId: step.id,

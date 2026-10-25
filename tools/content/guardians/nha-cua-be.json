@@ -82,14 +82,14 @@
           "hint": "7 + 3 = 10, rồi còn 3 cây cải nữa phải cộng vào.",
           "explain": "7 + 6 = 13 vì 7 + 3 = 10, thêm 3 nữa là 13; 12 là đếm thiếu một cây, còn 1 là lấy 7 trừ 6.",
           "en": {
-            "prompt": "The bed has 7 mustard plants and Thỏ plants 6 more. How many plants in all?",
+            "prompt": "The bed has 7 mustard plants and Rabbit plants 6 more. How many plants in all?",
             "choices": [
               "13",
               "12",
               "1"
             ],
             "guide": [
-              "Take the 7 mustard plants and add the 6 that Thỏ plants.",
+              "Take the 7 mustard plants and add the 6 that Rabbit plants.",
               "Split 6 into 3 and 3 so that 7 plus 3 makes a ten."
             ],
             "hint": "7 + 3 = 10, and there are still 3 more mustard plants to add.",
@@ -160,9 +160,9 @@
         }
       ],
       "en": {
-        "summary": "Thỏ Bông Giữ Luống guards the vegetable garden beside the house and asks {name} four riddles about vegetables, seedlings and Mum's reminder.",
+        "summary": "Garden Bed Bunny guards the vegetable garden beside the house and asks {name} four riddles about vegetables, seedlings and Mum's reminder.",
         "hook": [
-          "Oh, {name} is home! I'm Thỏ Bông Giữ Luống, and I look after the vegetable garden for the whole family.",
+          "Oh, {name} is home! I'm Garden Bed Bunny, and I look after the vegetable garden for the whole family.",
           "I promise not to nibble the carrots, but I'm dying for some riddles. Four of them?"
         ],
         "choice": "Four? Easy!",
@@ -178,7 +178,7 @@
           "Not right, count each plant again.",
           "Nearly right, water it with a bit more thinking!"
         ],
-        "reward": "Thỏ Bông Giữ Luống gives {name} a packet of carrot seeds: sow them and they sprout at once.",
+        "reward": "Garden Bed Bunny gives {name} a packet of carrot seeds: sow them and they sprout at once.",
         "next": "Go down to the jetty by the pond, {name}: a zone guardian is fishing there and waiting for you."
       }
     },
@@ -341,9 +341,9 @@
         }
       ],
       "en": {
-        "summary": "Vịt Bầu Cầu Tàu guards the jetty by the pond and asks {name} four riddles about ducks, fishing rods and a safety sign.",
+        "summary": "Pier Duck guards the jetty by the pond and asks {name} four riddles about ducks, fishing rods and a safety sign.",
         "hook": [
-          "Quack quack! {name}, it's Vịt Bầu Cầu Tàu. I swim round the pond all day and know every plank of the jetty.",
+          "Quack quack! {name}, it's Pier Duck. I swim round the pond all day and know every plank of the jetty.",
           "The pond is calm today, so let's have a four-riddle battle for fun!"
         ],
         "choice": "Quack, let's battle!",
@@ -359,7 +359,7 @@
           "Not right, read the sign carefully.",
           "Nearly right, swim one more lap of thinking!"
         ],
-        "reward": "Vịt Bầu Cầu Tàu gives {name} a little yellow rubber duck that floats in the bath.",
+        "reward": "Pier Duck gives {name} a little yellow rubber duck that floats in the bath.",
         "next": "Go to the henhouse behind the house, {name}: the last zone guardian is sitting on her eggs and waiting."
       }
     },
@@ -553,9 +553,9 @@
         }
       ],
       "en": {
-        "summary": "Gà Mơ Giữ Ổ guards the henhouse behind the house and asks {name} five riddles about eggs, grain and Grandma's reminder.",
+        "summary": "Nest-Sitting Hen guards the henhouse behind the house and asks {name} five riddles about eggs, grain and Grandma's reminder.",
         "hook": [
-          "Cluck cluck… has {name} come to see my eggs? I'm Gà Mơ Giữ Ổ, and I guard the henhouse behind the house.",
+          "Cluck cluck… has {name} come to see my eggs? I'm Nest-Sitting Hen, and I guard the henhouse behind the house.",
           "Whoever wants to see the eggs must battle me in five riddles. My eggs hatch riddles!"
         ],
         "choice": "Let me see them hatch!",
@@ -571,7 +571,7 @@
           "Not right, count each grain again.",
           "Nearly right, sit on it a little longer!"
         ],
-        "reward": "Gà Mơ Giữ Ổ gives {name} an apricot-coloured feather: tuck it in your hat and you'll be the smartest in the neighbourhood.",
+        "reward": "Nest-Sitting Hen gives {name} an apricot-coloured feather: tuck it in your hat and you'll be the smartest in the neighbourhood.",
         "next": "All three zone guardians met, {name}: go inside and battle the Great Bun Cat King."
       }
     }
