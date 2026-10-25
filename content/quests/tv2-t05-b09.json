@@ -4,18 +4,17 @@
   "chapter": 2,
   "title": "Bài thơ Nai Sương tặng cô",
   "status": "active",
-  "lesson": "tv2-t1-b09",
   "topic": "doc-tho",
-  "summary": "Nai Sương muốn viết bài thơ tặng cô giáo nhưng bí vần. {name} cùng Nai Sương tìm ý thơ quanh bồn nhài ngoài hành lang, đọc bài “Cô giáo lớp em” dán bên cửa sổ lớp học, nhờ Mèo Sữa nhặt lại dòng thơ bị gió thổi, tròn mắt nghe thầy hiệu trưởng Sư Tử Vàng hát và nghe cô Gấu Mật kể chuyện cậu bé Vũ Duệ ham học.",
+  "summary": "Nai Sương muốn viết bài thơ tặng cô giáo nhưng bí vần. {name} cùng Nai Sương tìm ý thơ quanh bồn nhài ngoài hành lang, đọc bài “Tiếng cô trong nắng sớm” dán bên cửa sổ lớp học, nhờ Mèo Sữa nhặt lại dòng thơ bị gió thổi, tròn mắt nghe thầy hiệu trưởng Sư Tử Vàng hát và nghe cô Gấu Mật kể chuyện chú ốc sên Đậu đi học.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Nai Sương (mơ mộng, cái gì cũng muốn làm thơ), thầy hiệu trưởng Sư Tử Vàng hát hay bất ngờ, Mèo Sữa lớp trưởng nhanh tay, cô giáo Gấu Mật",
-    "where": "Lớp 2A trong nhà chính của trường: chỗ ngồi của Nai Sương, cửa sổ lớp, bồn nhài ngoài hành lang, đầu hành lang, chân cầu thang, bàn cô giáo và góc kể chuyện",
+    "where": "Lớp Chim Sẻ trong nhà chính của trường: chỗ ngồi của Nai Sương, cửa sổ lớp, bồn nhài ngoài hành lang, đầu hành lang, chân cầu thang, bàn cô giáo và góc kể chuyện",
     "goal": "Giúp Nai Sương tìm ý và hoàn thành bài thơ tặng cô giáo",
     "play": "Tìm đồ trong vườn, hát khởi động, đọc thơ, chọn nhiều đáp án, xếp thẻ vào giỏ, chọn một đáp án, xếp dòng thơ, ghép câu ngạc nhiên, xếp thẻ thành câu, xếp tranh, nói và kể, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 9: đọc hiểu và học thuộc bài thơ “Cô giáo lớp em”, câu thể hiện sự ngạc nhiên, câu nói tình cảm với thầy cô, kể chuyện “Cậu bé ham học”, viết chữ hoa D",
+    "learn": "Đọc hiểu và học thuộc bài thơ “Tiếng cô trong nắng sớm” (tự viết), nói câu thể hiện sự ngạc nhiên, nói lời biết ơn thầy cô, kể lại chuyện chú ốc sên Đậu đi học, viết chữ hoa D",
     "reward": "80 XP, 15 xu, Đọc hiểu +2, Câu +1, Kể chuyện +1",
-    "next": "Bài 10 \"Thời khoá biểu\""
+    "next": "Thỏ Vội mang nhầm sách vở, cả hành lang cùng đọc thời khoá biểu"
   },
   "phases": {
     "hook": "nai-mo-bi-van",
@@ -28,17 +27,18 @@
     "next": "mo-bai-10"
   },
   "texts": {
-    "co-giao-lop-em": {
-      "title": "Cô giáo lớp em",
-      "author": "Nguyễn Xuân Sanh",
-      "body": "Sáng nào em đến lớp\nCũng thấy cô đến rồi.\nĐáp lời \"Chào cô ạ!\"\nCô mỉm cười thật tươi.\n\nCô dạy em tập viết\nGió đưa thoảng hương nhài\nNắng ghé vào cửa lớp\nXem chúng em học bài.\n\nNhững lời cô giáo giảng\nẤm trang vở thơm tho\nYêu thương em ngắm mãi\nNhững điểm mười cô cho.",
-      "section": "tv2-t1-b09-doc"
+    "tieng-co-trong-nang-som": {
+      "title": "Tiếng cô trong nắng sớm",
+      "body": "Cô đến lớp thật sớm\nMở cửa đón nắng vàng\nNụ cười cô rất hiền\nEm chào, lòng rộn ràng.\n\nPhấn trắng chạy trên bảng\nGió lật trang vở em\nNắng ngồi yên cửa sổ\nNghe giọng cô dịu êm.\n\nLời cô dặn nho nhỏ\nThơm vở em, thơm bài\nTiếng cô trong nắng sớm\nEm giữ mãi không phai.",
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
-    "tv2-t05-b09-nai-suong": "lớp 2A",
+    "tv2-t05-b09-nai-suong": "lớp Chim Sẻ",
     "tim-y-tho-vuon-nhai": "bồn nhài ngoài hành lang",
-    "tv2-t05-khung-cua-so-la": "cửa sổ lớp 2A",
+    "tv2-t05-khung-cua-so-la": "cửa sổ lớp Chim Sẻ",
     "tv2-t05-b09-meo-sua": "đầu hành lang",
     "su-tu-vang": "chân cầu thang",
     "tv2-t01-b01-co-gau-mat": "bàn cô giáo",
@@ -48,7 +48,7 @@
     {
       "id": "nai-mo-bi-van",
       "title": "Nai Sương bí vần",
-      "goTo": "Vào lớp 2A, Nai Sương đang ngồi cắn bút bên bàn",
+      "goTo": "Vào lớp Chim Sẻ, Nai Sương đang ngồi cắn bút bên bàn",
       "kind": "dialogue",
       "target": "tv2-t05-b09-nai-suong",
       "lines": [
@@ -81,7 +81,7 @@
       ],
       "en": {
         "title": "Nai Sương can't find a rhyme",
-        "goTo": "Go into class 2A, Nai Sương is chewing her pencil at her desk",
+        "goTo": "Go into the Sparrow classroom, Nai Sương is chewing her pencil at her desk",
         "lines": [
           "{name}! Tomorrow the whole class gives our teacher presents. I want to give her a poem I wrote myself.",
           "I've got one line so far: “Our teacher is gentle, like… a yellow banana!” Oops, that sounds like I'm hungry.",
@@ -114,71 +114,67 @@
     {
       "id": "hat-ve-thay-co",
       "title": "Hát cho ấm giọng",
-      "goTo": "Mang ý thơ về lớp 2A cho Nai Sương",
+      "goTo": "Mang ý thơ về lớp Chim Sẻ cho Nai Sương",
       "kind": "speak",
       "target": "tv2-t05-b09-nai-suong",
-      "prompt": "Nai Sương hít hà bông nhài, rung rung cái chuông gió tre rồi reo: “Có ý thơ rồi! Nhưng trước hết, tớ cần nghe thơ cho ấm giọng.”\nĐọc một bài thơ hoặc hát một bài hát về thầy cô.",
+      "prompt": "Nai Sương hít hà bông nhài, rung rung cái chuông gió tre rồi reo: “Có ý thơ rồi! Nhưng trước hết, tớ cần nghe thơ cho ấm giọng.”\n{name} hát một đoạn hoặc ngâm vài câu thơ em thuộc nói về thầy cô nhé.",
       "hints": [
-        "Em thuộc bài hát nào có từ “cô giáo” hay “thầy giáo”?",
+        "Bài hát hay bài thơ nào nhắc đến thầy cô mà em thuộc lòng?",
         "Vừa hát vừa vỗ tay theo nhịp, Nai Sương sẽ gõ móng lóc cóc theo."
       ],
-      "curriculumRef": [
-        "tv2-t1-b09-doc-kd"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "doc-bai-tho-cua-so",
       "title": "Bài thơ bên cửa sổ lớp",
-      "goTo": "Ngó lên cửa sổ lớp 2A, bài thơ Cô giáo lớp em dán ngay cạnh khung kính",
+      "goTo": "Ngó lên cửa sổ lớp Chim Sẻ, bài thơ Tiếng cô trong nắng sớm dán ngay cạnh khung kính",
       "kind": "read",
       "target": "tv2-t05-khung-cua-so-la",
-      "textRef": "co-giao-lop-em",
+      "textRef": "tieng-co-trong-nang-som",
       "audio": true,
-      "question": "Nai Sương chỉ lên cửa sổ lớp: bài thơ chị lớp Ba chép tặng lớp mình dán ở đây này, đọc cùng tớ nhé!\nCô giáo đáp lại lời chào của các bạn nhỏ như thế nào?",
+      "question": "Nai Sương chỉ lên cửa sổ: bài thơ một bạn lớn chép tặng cả lớp dán ở đây này, đọc cùng tớ nhé!\nBuổi sáng, cô đến lớp như thế nào?",
       "choices": [
         {
-          "id": "vay-tay",
-          "text": "Cô vẫy tay chào lại thật lâu."
+          "id": "den-som",
+          "text": "Cô đến lớp thật sớm, mở cửa đón nắng vàng."
         },
         {
-          "id": "mim-cuoi",
-          "text": "Cô mỉm cười thật tươi."
+          "id": "doi-trong",
+          "text": "Cô đứng ngoài sân chờ tiếng trống báo giờ."
         },
         {
-          "id": "gat-dau",
-          "text": "Cô gật đầu rồi đi ra cửa."
+          "id": "vao-sau",
+          "text": "Cô vào lớp khi các bạn đã ngồi vào bàn."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "mim-cuoi"
+        "choice": "den-som"
       },
-      "curriculumRef": [
-        "tv2-t1-b09-doc-1"
-      ],
       "support": {
         "guide": [
-          "Nhìn khổ thơ đầu, chỗ các bạn chào cô.",
-          "Tìm dòng thơ đứng ngay sau lời chào “Chào cô ạ!”."
+          "Nhìn khổ thơ đầu, đọc hai dòng mở bài.",
+          "Cô làm gì với cánh cửa lớp?"
         ],
-        "hint": "Cô đáp lại bằng nụ cười, không nói thêm lời nào.",
+        "hint": "Cô đến trước các bạn nên cửa lớp đã được mở sẵn.",
         "answer": {
-          "text": "Cô mỉm cười thật tươi.",
-          "explanation": "Khổ thơ đầu kể: các bạn chào “Chào cô ạ!”, cô đáp lại bằng một nụ cười thật tươi."
+          "text": "Cô đến lớp từ rất sớm rồi mở cửa đón nắng.",
+          "explanation": "Hai dòng đầu bài thơ cho biết cô đến lớp thật sớm, rồi mở cửa để nắng vàng ùa vào."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi! Nai Sương cười tươi theo, tươi đến lộ cả hai cái răng cửa.",
-          "Chuẩn! Nụ cười của cô sáng như nắng sớm trên khung kính cửa sổ.",
-          "Giỏi quá! Nai Sương ghi ngay chữ “mỉm cười” vào sổ thơ."
+          "Đúng rồi! Nai Sương gõ móng xuống sàn lóc cóc, vui như vừa được cô khen.",
+          "Chuẩn! Cô tới lớp trước cả nắng, Nai Sương ghi ngay vào sổ thơ.",
+          "Giỏi quá! Hai dòng mở bài đã kể đúng điều ấy."
         ],
         "wrong": [
-          "Chưa đúng rồi. Đọc lại dòng thơ ngay sau “Chào cô ạ!” nhé.",
-          "Ối, cô không đi đâu cả! Tìm xem gương mặt cô thế nào khi nghe lời chào.",
-          "Gần đúng thôi. Bài thơ nói tới nụ cười, không nói tới cái vẫy tay đâu."
+          "Chưa đúng. Đọc lại hai dòng đầu của khổ thơ thứ nhất nhé.",
+          "Trong thơ cô đâu đứng chờ ngoài sân. Tìm xem cô làm gì với cánh cửa.",
+          "Gần đúng thôi, nhưng cô đến lớp trước cả các bạn cơ."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "gio-nang-ghe-lop",
@@ -186,80 +182,78 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t05-khung-cua-so-la",
-      "prompt": "Nai Sương nhảy cẫng: gió, nắng, hoa nhài… toàn là ý thơ cả! Tớ phải chép ngay những câu ấy.\nTìm những câu thơ tả cảnh vật khi cô dạy em học bài.",
+      "prompt": "Nai Sương nhảy cẫng: phấn, gió, nắng… toàn là ý thơ cả! Tớ phải chép ngay.\nTìm những dòng thơ tả cảnh trong lớp lúc cô đang giảng bài.",
       "choices": [
         {
-          "id": "gio-dua",
-          "text": "Gió đưa thoảng hương nhài"
+          "id": "phan-trang",
+          "text": "Phấn trắng chạy trên bảng"
         },
         {
-          "id": "mim-cuoi",
-          "text": "Cô mỉm cười thật tươi."
+          "id": "nu-cuoi",
+          "text": "Nụ cười cô rất hiền"
         },
         {
-          "id": "nang-ghe",
-          "text": "Nắng ghé vào cửa lớp"
+          "id": "gio-lat",
+          "text": "Gió lật trang vở em"
         },
         {
-          "id": "am-trang-vo",
-          "text": "Ấm trang vở thơm tho"
+          "id": "co-den-som",
+          "text": "Cô đến lớp thật sớm"
         },
         {
-          "id": "xem-hoc-bai",
-          "text": "Xem chúng em học bài."
+          "id": "nang-ngoi",
+          "text": "Nắng ngồi yên cửa sổ"
         },
         {
-          "id": "co-den-roi",
-          "text": "Cũng thấy cô đến rồi."
+          "id": "em-chao",
+          "text": "Em chào, lòng rộn ràng."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
-          "gio-dua",
-          "nang-ghe",
-          "xem-hoc-bai"
+          "phan-trang",
+          "gio-lat",
+          "nang-ngoi"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b09-doc-2"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ thơ thứ hai, chỗ cô dạy em tập viết.",
-          "Câu tả cảnh vật nói về gió, nắng, hương hoa."
+          "Đọc khổ thơ thứ hai, lúc cô đứng trước bảng.",
+          "Dòng tả cảnh nói về phấn, gió hoặc nắng; dòng nói về cô hay về em thì để lại."
         ],
-        "hint": "Có ba câu liền nhau, đứng sau câu “Cô dạy em tập viết”.",
+        "hint": "Có ba dòng đúng, nằm liền nhau ở khổ thơ thứ hai.",
         "answer": {
-          "text": "Gió đưa thoảng hương nhài; Nắng ghé vào cửa lớp; Xem chúng em học bài.",
-          "explanation": "Khi cô dạy tập viết, gió đưa hương nhài vào lớp, nắng ghé cửa lớp xem các bạn học bài."
+          "text": "Phấn trắng chạy trên bảng; Gió lật trang vở em; Nắng ngồi yên cửa sổ.",
+          "explanation": "Lúc cô giảng bài, phấn chạy trên bảng, gió lật vở, nắng ngồi bên cửa sổ. Ba dòng còn lại kể chuyện buổi đầu ngày."
         }
       },
       "feedback": {
         "right": [
-          "Đủ cả gió lẫn nắng! Nai Sương chép lia lịa, sổ thơ kêu sột soạt.",
-          "Tuyệt! Lớp học có gió đưa hương, có nắng ghé chơi, thơ quá đi mất.",
-          "Ba câu đúng phóc! Nai Sương vẫy đuôi như vừa được điểm mười."
+          "Đủ cả phấn, gió lẫn nắng! Nai Sương chép lia lịa, sổ thơ kêu sột soạt.",
+          "Tuyệt! Lớp học có phấn chạy, có gió lật vở, có nắng ngồi nghe, thơ quá đi mất.",
+          "Ba dòng đúng phóc! Nai Sương vẫy đuôi như vừa được điểm mười."
         ],
         "wrong": [
-          "Còn sót một câu nắng đang ghé xem các bạn học đấy.",
-          "Câu nào nói về cô thì để lại nhé, mình chỉ tìm câu tả gió, nắng.",
-          "Đọc lại khổ hai: sau “Cô dạy em tập viết” là ba câu cảnh vật."
+          "Còn sót một dòng tả nắng đấy, đọc kĩ khổ thơ thứ hai nhé.",
+          "Dòng nào nói về cô hay về em thì để lại, mình chỉ tìm dòng tả cảnh thôi.",
+          "Khổ thứ hai là khổ có tiếng phấn, tiếng gió, bóng nắng. Đọc lại thử xem."
         ]
-      }
+      },
+      "objective": "doc-tho-hinh-anh"
     },
     {
       "id": "ban-nho-ke-ve-co",
       "title": "Những điều về cô",
-      "goTo": "Về chỗ ngồi trong lớp 2A, Nai Sương ôm sổ thơ phồng như bánh bao",
+      "goTo": "Về chỗ ngồi trong lớp Chim Sẻ, Nai Sương ôm sổ thơ phồng như bánh bao",
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t05-b09-nai-suong",
-      "prompt": "Nai Sương muốn nhét thật nhiều điều về cô vào bài thơ, nhét nhiều đến mức sổ thơ phồng như cái bánh bao.\nBạn nhỏ đã kể những gì về cô giáo của mình?\nKéo mỗi thẻ vào đúng giỏ.",
+      "prompt": "Nai Sương muốn nhét thật nhiều điều về cô vào bài thơ, nhét nhiều đến mức sổ thơ phồng như cái bánh bao.\nBài thơ có nói những điều nào về cô giáo, và điều nào không?\nKéo mỗi thẻ vào đúng giỏ.",
       "groups": [
         {
           "id": "co-ke",
-          "label": "Bạn nhỏ có kể"
+          "label": "Bài thơ có kể"
         },
         {
           "id": "khong-ke",
@@ -268,77 +262,75 @@
       ],
       "items": [
         {
-          "id": "day-tap-viet",
-          "label": "Cô dạy em tập viết"
-        },
-        {
-          "id": "day-da-bong",
-          "label": "Cô dạy em đá bóng"
-        },
-        {
           "id": "den-som",
-          "label": "Sáng nào cô cũng đến lớp trước"
+          "label": "Cô đến lớp từ rất sớm"
         },
         {
-          "id": "hat-ru",
-          "label": "Cô hát ru em ngủ trưa"
+          "id": "chay-xe",
+          "label": "Cô chở em về nhà bằng xe đạp"
         },
         {
-          "id": "mim-cuoi",
-          "label": "Cô mỉm cười đáp lời chào"
+          "id": "mo-cua",
+          "label": "Cô mở cửa lớp đón nắng"
         },
         {
-          "id": "diem-muoi",
-          "label": "Cô cho em những điểm mười"
+          "id": "ke-co-tich",
+          "label": "Cô kể chuyện cổ tích trước giờ ngủ"
         },
         {
-          "id": "mua-hoa",
-          "label": "Cô đi chợ mua hoa nhài"
+          "id": "nu-cuoi",
+          "label": "Cô có nụ cười hiền"
         },
         {
-          "id": "loi-giang",
-          "label": "Lời cô giảng làm ấm trang vở"
+          "id": "viet-phan",
+          "label": "Cô viết phấn trắng lên bảng"
+        },
+        {
+          "id": "day-boi",
+          "label": "Cô dạy em tập bơi ở hồ"
+        },
+        {
+          "id": "loi-dan",
+          "label": "Cô dặn em những lời nho nhỏ"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "assignment": {
-          "day-tap-viet": "co-ke",
-          "day-da-bong": "khong-ke",
           "den-som": "co-ke",
-          "hat-ru": "khong-ke",
-          "mim-cuoi": "co-ke",
-          "diem-muoi": "co-ke",
-          "mua-hoa": "khong-ke",
-          "loi-giang": "co-ke"
+          "chay-xe": "khong-ke",
+          "mo-cua": "co-ke",
+          "ke-co-tich": "khong-ke",
+          "nu-cuoi": "co-ke",
+          "viet-phan": "co-ke",
+          "day-boi": "khong-ke",
+          "loi-dan": "co-ke"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b09-doc-3"
-      ],
       "support": {
         "guide": [
           "Đọc lần lượt cả ba khổ thơ.",
-          "Thẻ nào có trong bài thơ thì bỏ vào giỏ “Bạn nhỏ có kể”."
+          "Thẻ nào có ý trong bài thơ thì bỏ vào giỏ “Bài thơ có kể”."
         ],
-        "hint": "Bài thơ có năm điều về cô: đến lớp sớm, mỉm cười, dạy tập viết, lời giảng, điểm mười.",
+        "hint": "Bài thơ có năm điều: đến sớm, mở cửa, nụ cười, viết phấn, lời dặn.",
         "answer": {
-          "text": "Bạn nhỏ có kể: cô đến lớp trước, cô mỉm cười, cô dạy tập viết, lời cô giảng ấm trang vở, cô cho điểm mười.",
-          "explanation": "Đá bóng, hát ru, đi chợ mua hoa không có trong bài thơ."
+          "text": "Có kể: cô đến lớp sớm, mở cửa đón nắng, có nụ cười hiền, viết phấn lên bảng, dặn những lời nho nhỏ.",
+          "explanation": "Chở em bằng xe đạp, kể chuyện cổ tích và dạy bơi không có trong bài thơ."
         }
       },
       "feedback": {
         "right": [
           "Hai giỏ gọn gàng! Nai Sương ôm sổ thơ xoay một vòng.",
-          "Chính xác! Cô đến sớm, cười tươi, dạy viết, cho điểm mười… đủ cả.",
-          "Giỏi ghê! Nai Sương bảo {name} đọc bài thơ còn kĩ hơn tớ."
+          "Chính xác! Cô đến sớm, cười hiền, viết phấn, dặn dò… đủ cả năm điều.",
+          "Giỏi ghê! Nai Sương bảo {name} đọc thơ còn kĩ hơn cả tớ."
         ],
         "wrong": [
-          "Cô dạy đá bóng ư? Bài thơ đâu có sân bóng nào! Xem lại giỏ nhé.",
-          "Còn một điều bạn nhỏ có kể đang lạc sang giỏ kia đấy.",
-          "Khổ cuối nói về lời cô giảng và điểm mười, đọc lại thử xem."
+          "Cô dạy bơi ư? Trong thơ đâu có cái hồ nào! Xem lại giỏ nhé.",
+          "Còn một điều có trong bài thơ đang lạc sang giỏ bên kia đấy.",
+          "Khổ cuối nói về lời cô dặn, còn khổ đầu nói chuyện cửa lớp. Đọc lại thử xem."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tinh-cam-voi-co",
@@ -346,51 +338,49 @@
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t05-b09-nai-suong",
-      "prompt": "Qua bài thơ, em thấy tình cảm bạn nhỏ dành cho cô giáo thế nào?\nNai Sương chớp chớp hàng mi dài: tớ đoán ra rồi, còn {name} chọn câu nào?",
+      "prompt": "Qua bài thơ, em thấy bạn nhỏ nghĩ về cô giáo như thế nào?\nNai Sương chớp chớp hàng mi dài: tớ đoán ra rồi, còn {name} chọn câu nào?",
       "choices": [
         {
+          "id": "quy-men",
+          "text": "Bạn nhỏ quý mến cô và nhớ mãi cô"
+        },
+        {
           "id": "so-co",
-          "text": "Bạn nhỏ hơi sợ cô giáo"
+          "text": "Bạn nhỏ hơi ngại và sợ cô"
         },
         {
-          "id": "yeu-quy",
-          "text": "Bạn nhỏ rất yêu quý, kính trọng cô giáo"
-        },
-        {
-          "id": "khong-de-y",
-          "text": "Bạn nhỏ chẳng để ý gì đến cô"
+          "id": "chan-hoc",
+          "text": "Bạn nhỏ chỉ mong được nghỉ học"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "yeu-quy"
+        "choice": "quy-men"
       },
-      "curriculumRef": [
-        "tv2-t1-b09-doc-4"
-      ],
       "support": {
         "guide": [
           "Đọc lại khổ thơ cuối.",
-          "Bạn nhỏ ngắm mãi những điểm mười cô cho với cảm xúc gì?"
+          "Bạn nhỏ làm gì với tiếng cô và lời cô dặn?"
         ],
-        "hint": "Hãy chú ý hai chữ “Yêu thương” ở khổ cuối.",
+        "hint": "Chú ý dòng cuối cùng của bài, nơi bạn nhỏ nói mình giữ gì mãi trong lòng.",
         "answer": {
-          "text": "Bạn nhỏ rất yêu quý, kính trọng cô giáo.",
-          "explanation": "Bạn nhỏ chào cô lễ phép, thấy lời cô giảng ấm trang vở và “yêu thương” ngắm mãi điểm mười cô cho."
+          "text": "Bạn nhỏ rất quý mến cô và nhớ lời cô mãi.",
+          "explanation": "Bạn nhỏ chào cô vui vẻ, thấy lời cô làm vở thêm thơm và giữ mãi tiếng cô trong lòng."
         }
       },
       "feedback": {
         "right": [
           "Đúng thế! Nai Sương xúc động, sụt sịt mũi kêu khịt khịt.",
-          "Chuẩn rồi! Yêu thương cô thì mới ngắm điểm mười mãi không chán.",
-          "Hay quá! Câu này Nai Sương sẽ đưa vào bài thơ tặng cô."
+          "Chuẩn rồi! Nhớ mãi tiếng cô thì chắc chắn là rất quý cô.",
+          "Hay quá! Ý này Nai Sương sẽ đưa vào bài thơ tặng cô."
         ],
         "wrong": [
-          "Bạn nhỏ chào cô rất vui, đâu có sợ! Đọc lại khổ đầu nhé.",
-          "Tìm chữ “Yêu thương” ở khổ thơ cuối rồi chọn lại xem.",
-          "Bạn nhỏ nhớ từng nụ cười, từng lời giảng của cô, thế là để ý lắm đấy."
+          "Bạn nhỏ chào cô rất rộn ràng, đâu có ngại. Đọc lại khổ đầu nhé.",
+          "Tìm dòng cuối bài rồi chọn lại xem bạn nhỏ giữ mãi điều gì.",
+          "Đi học mà bạn nhỏ còn nhớ từng lời cô dặn, đâu phải chán học."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "gio-thoi-dong-tho",
@@ -399,75 +389,71 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t05-b09-meo-sua",
-      "prompt": "Phù! Một cơn gió tinh nghịch lùa qua cửa sổ lớp, thổi tung bốn dòng thơ Nai Sương vừa chép. Xếp lại khổ thơ thứ hai cho đúng thứ tự nhé.\nHọc thuộc lòng 2 khổ thơ em thích.",
+      "prompt": "Phù! Một cơn gió tinh nghịch lùa qua cửa sổ lớp, thổi tung bốn dòng của khổ thơ cuối Nai Sương vừa chép. Xếp lại cho đúng thứ tự nhé.",
       "items": [
         {
-          "id": "nang-ghe",
-          "label": "Nắng ghé vào cửa lớp"
+          "id": "khong-phai",
+          "label": "Em giữ mãi không phai."
         },
         {
-          "id": "xem-hoc-bai",
-          "label": "Xem chúng em học bài."
+          "id": "loi-dan",
+          "label": "Lời cô dặn nho nhỏ"
         },
         {
-          "id": "day-tap-viet",
-          "label": "Cô dạy em tập viết"
+          "id": "nang-som",
+          "label": "Tiếng cô trong nắng sớm"
         },
         {
-          "id": "gio-dua",
-          "label": "Gió đưa thoảng hương nhài"
+          "id": "vo-thom",
+          "label": "Thơm vở em, thơm bài"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "order": [
-          "day-tap-viet",
-          "gio-dua",
-          "nang-ghe",
-          "xem-hoc-bai"
+          "loi-dan",
+          "vo-thom",
+          "nang-som",
+          "khong-phai"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b09-doc-htl"
-      ],
       "support": {
         "guide": [
-          "Khổ thơ thứ hai mở đầu bằng việc cô làm.",
-          "Dòng có dấu chấm là dòng cuối khổ thơ."
+          "Khổ thơ cuối mở đầu bằng lời cô dặn.",
+          "Dòng có dấu chấm là dòng khép khổ thơ."
         ],
-        "hint": "Cô dạy tập viết trước, rồi gió, rồi nắng ghé xem.",
+        "hint": "Lời dặn đi trước, vở thơm đi sau; tiếng cô trong nắng đứng ngay trước dòng em giữ mãi.",
         "answer": {
-          "text": "Cô dạy em tập viết / Gió đưa thoảng hương nhài / Nắng ghé vào cửa lớp / Xem chúng em học bài.",
-          "explanation": "Đây là khổ thơ thứ hai của bài “Cô giáo lớp em”, xếp theo đúng thứ tự trong sách."
+          "text": "Lời cô dặn nho nhỏ / Thơm vở em, thơm bài / Tiếng cô trong nắng sớm / Em giữ mãi không phai.",
+          "explanation": "Đây là khổ thơ cuối của bài “Tiếng cô trong nắng sớm”, xếp theo đúng thứ tự trong bài."
         }
       },
       "feedback": {
         "right": [
           "Khổ thơ về chỗ cũ rồi! Nai Sương chặn cục tẩy lên cho gió hết nghịch.",
           "Đúng thứ tự! {name} thuộc bài nhanh như sóc leo cây.",
-          "Tuyệt vời, đọc lên nghe êm như gió thoảng hương nhài."
+          "Tuyệt vời, đọc lên nghe êm như tiếng cô giảng."
         ],
         "wrong": [
           "Dòng có dấu chấm phải nằm cuối cùng đấy.",
-          "Cô dạy em tập viết trước, rồi gió mới đưa hương vào nhé.",
-          "Nắng ghé vào cửa lớp để làm gì? Dòng trả lời đứng ngay sau nó."
+          "Lời cô dặn là dòng mở đầu, kéo nó lên đầu hàng nhé.",
+          "Cô dặn xong thì vở mới thơm, dòng nào kể điều đó? Đặt nó ngay sau lời dặn."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "doc-thuoc-long",
       "title": "Đọc thuộc lòng cho Nai Sương nghe",
-      "goTo": "Quay vào lớp 2A, Nai Sương vểnh tai chờ nghe đọc",
+      "goTo": "Quay vào lớp Chim Sẻ, Nai Sương vểnh tai chờ nghe đọc",
       "kind": "speak",
       "target": "tv2-t05-b09-nai-suong",
-      "prompt": "Học thuộc lòng 2 khổ thơ em thích.\nNai Sương nhắm mắt nghe, đọc tới đâu đôi tai cụp xuống vểnh lên tới đó. {name} đọc cho bạn ấy nghe nhé.",
+      "prompt": "Chọn hai khổ thơ em thích nhất và học thuộc lòng.\nNai Sương nhắm mắt nghe, đọc tới đâu đôi tai cụp xuống vểnh lên tới đó. {name} đọc cho bạn ấy nghe nhé.",
       "hints": [
         "Đọc chậm, ngắt hơi ở cuối mỗi dòng thơ.",
         "Quên một dòng thì liếc lên tờ thơ bên cửa sổ rồi đọc tiếp."
       ],
-      "curriculumRef": [
-        "tv2-t1-b09-doc-htl"
-      ]
+      "objective": "doc-tho-doc-to"
     },
     {
       "id": "vet-xanh-hat-bat-ngo",
@@ -476,57 +462,53 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "su-tu-vang",
-      "prompt": "Bỗng thầy hiệu trưởng Sư Tử Vàng vừa bước lên cầu thang vừa hát, giọng ấm và ngọt đến nỗi Nai Sương đánh rơi cả bút. Cả lớp cứ tưởng thầy chỉ biết gầm thôi cơ!\nNói câu thể hiện sự ngạc nhiên của em khi:\nGhép mỗi câu với đúng lúc em nói câu ấy.",
+      "prompt": "Bỗng thầy hiệu trưởng Sư Tử Vàng vừa bước lên cầu thang vừa hát, giọng ấm và ngọt đến nỗi Nai Sương đánh rơi cả bút. Cả lớp cứ tưởng thầy chỉ biết gầm thôi cơ!\nNhững câu dưới đây đều reo lên vì ngạc nhiên. Ghép mỗi câu với đúng lúc em nói câu ấy.",
       "groups": [
         {
-          "id": "ban-hat-hay",
-          "label": "a. Lần đầu được nghe một bạn hát rất hay"
+          "id": "nghe-hat",
+          "label": "a. Lúc nghe một giọng hát hay bất ngờ"
         },
         {
-          "id": "qua-bat-ngo",
-          "label": "b. Được bố mẹ tặng một món quà bất ngờ"
+          "id": "mo-qua",
+          "label": "b. Lúc mở ra một món quà không ngờ tới"
         }
       ],
       "items": [
         {
-          "id": "hop-qua-xinh",
-          "label": "Ôi, hộp quà xinh quá, con cảm ơn bố mẹ!"
+          "id": "qua-dep",
+          "label": "Ôi, món quà này đẹp quá, em cảm ơn!"
         },
         {
-          "id": "hat-hay-qua",
-          "label": "Ôi, bạn hát hay quá!"
+          "id": "hat-hay",
+          "label": "Ôi, thầy hát hay quá chừng!"
         },
         {
-          "id": "khong-ngo",
-          "label": "Ồ, con không ngờ lại có quà!"
+          "id": "sao-co-qua",
+          "label": "Ồ, sao lại có hộp quà ở đây nhỉ!"
         },
         {
-          "id": "trong-nhu-suoi",
-          "label": "Chà, giọng bạn trong như tiếng suối!"
+          "id": "ngot-nhu-mat",
+          "label": "Chà, giọng thầy ngọt như mật ong!"
         }
       ],
       "skill": "cau",
       "answer": {
         "assignment": {
-          "hop-qua-xinh": "qua-bat-ngo",
-          "hat-hay-qua": "ban-hat-hay",
-          "khong-ngo": "qua-bat-ngo",
-          "trong-nhu-suoi": "ban-hat-hay"
+          "qua-dep": "mo-qua",
+          "hat-hay": "nghe-hat",
+          "sao-co-qua": "mo-qua",
+          "ngot-nhu-mat": "nghe-hat"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b09-doc-lt1-a",
-        "tv2-t1-b09-doc-lt1-b"
-      ],
       "support": {
         "guide": [
           "Đọc từng câu, xem câu đó khen giọng hát hay nói về món quà.",
           "Câu ngạc nhiên thường mở đầu bằng Ôi, Ồ, Chà."
         ],
-        "hint": "Câu có chữ “hát”, “giọng” là lúc nghe bạn hát.",
+        "hint": "Câu có chữ “hát” hoặc “giọng” là lúc nghe hát.",
         "answer": {
-          "text": "Lúc nghe bạn hát: Ôi, bạn hát hay quá!; Chà, giọng bạn trong như tiếng suối! Lúc được quà: Ôi, hộp quà xinh quá, con cảm ơn bố mẹ!; Ồ, con không ngờ lại có quà!",
-          "explanation": "Cả bốn câu đều thể hiện sự ngạc nhiên; hai câu khen giọng hát, hai câu nói về món quà bất ngờ."
+          "text": "Lúc nghe hát: Ôi, thầy hát hay quá chừng!; Chà, giọng thầy ngọt như mật ong! Lúc mở quà: Ôi, món quà này đẹp quá, em cảm ơn!; Ồ, sao lại có hộp quà ở đây nhỉ!",
+          "explanation": "Cả bốn câu đều reo lên ngạc nhiên; hai câu khen giọng hát, hai câu nói về món quà bất ngờ."
         }
       },
       "feedback": {
@@ -536,27 +518,25 @@
           "Ghép khéo quá! Nai Sương bảo câu nào nghe cũng tròn xoe mắt."
         ],
         "wrong": [
-          "Câu có chữ “quà” là lúc bố mẹ tặng quà, đâu phải lúc nghe hát.",
+          "Câu nhắc tới hộp quà là lúc mở quà, đâu phải lúc nghe hát.",
           "Ối, thầy đâu có mang hộp quà nào! Xem lại câu khen giọng hát nhé.",
           "Tìm chữ “hát” và chữ “giọng” trong thẻ, hai thẻ đó đi cùng nhau."
         ]
-      }
+      },
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "khen-vet-xanh",
       "title": "Nói câu ngạc nhiên với thầy",
       "kind": "speak",
       "target": "su-tu-vang",
-      "prompt": "Thầy Sư Tử Vàng nháy mắt: “Thầy hát thế có được không nào? Con nói thật ngạc nhiên cho thầy nghe xem!”\nNói câu thể hiện sự ngạc nhiên của em khi: a. Lần đầu được nghe một bạn hát rất hay\nb. Được bố mẹ tặng một món quà bất ngờ",
+      "prompt": "Thầy Sư Tử Vàng nháy mắt: “Thầy hát thế có được không nào? Con nói thật ngạc nhiên cho thầy nghe xem!”\nNói một câu reo lên ngạc nhiên khi em nghe một giọng hát hay, rồi một câu khác khi em mở ra một món quà bất ngờ.",
       "hints": [
         "Mở đầu bằng Ôi…, Chà…, Ồ… cho thật bất ngờ.",
         "Nói to, mắt tròn xoe như vừa nghe thầy hiệu trưởng hát.",
-        "Nhớ lại một món quà bố mẹ từng tặng em, em đã reo lên thế nào?"
+        "Nhớ lại một món quà em từng được tặng, em đã reo lên thế nào?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b09-doc-lt1-a",
-        "tv2-t1-b09-doc-lt1-b"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "cau-ket-bai-tho",
@@ -565,7 +545,7 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t05-b09-meo-sua",
-      "prompt": "Nai Sương muốn kết bài thơ bằng một câu thật ấm áp, nhưng các thẻ chữ lại nằm lộn tùng phèo.\nNói câu thể hiện tình cảm của em đối với thầy cô giáo của mình.\nXếp thẻ thành câu rồi đọc to lên nhé.",
+      "prompt": "Nai Sương muốn kết bài thơ bằng một lời thật ấm áp, nhưng các thẻ chữ lại nằm lộn tùng phèo.\nHãy nói một câu tỏ lòng biết ơn thầy cô.\nXếp thẻ thành câu rồi đọc to lên nhé.",
       "items": [
         {
           "id": "co-giao",
@@ -576,35 +556,32 @@
           "label": "Em"
         },
         {
-          "id": "nhieu-lam",
-          "label": "nhiều lắm!"
+          "id": "cua-em",
+          "label": "của em!"
         },
         {
-          "id": "yeu-quy",
-          "label": "yêu quý"
+          "id": "biet-on",
+          "label": "rất biết ơn"
         }
       ],
       "skill": "cau",
       "answer": {
         "order": [
           "em",
-          "yeu-quy",
+          "biet-on",
           "co-giao",
-          "nhieu-lam"
+          "cua-em"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b09-doc-lt2"
-      ],
       "support": {
         "guide": [
-          "Thẻ viết hoa đứng đầu câu.",
-          "Thẻ có dấu chấm than đứng cuối câu."
+          "Thẻ viết hoa mở đầu câu.",
+          "Thẻ có dấu chấm than khép câu lại."
         ],
-        "hint": "Ai làm gì: Em yêu quý ai, yêu thế nào?",
+        "hint": "Ai làm sao với ai: Em biết ơn cô giáo.",
         "answer": {
-          "text": "Em yêu quý cô giáo nhiều lắm!",
-          "explanation": "Câu nói rõ tình cảm của em với cô: yêu quý, và yêu nhiều lắm."
+          "text": "Em rất biết ơn cô giáo của em!",
+          "explanation": "Câu nói rõ lòng biết ơn của em với cô: rất biết ơn cô giáo của em."
         }
       },
       "feedback": {
@@ -616,14 +593,15 @@
         "wrong": [
           "Thẻ “Em” viết hoa, phải đứng đầu câu cơ.",
           "Dấu chấm than đang lạc giữa câu rồi, đưa nó về cuối nhé.",
-          "Đọc thử thành tiếng: em yêu quý ai? Thẻ đó đứng ngay sau “yêu quý”."
+          "Đọc thử thành tiếng: em biết ơn ai? Thẻ đó đứng ngay sau “rất biết ơn”."
         ]
-      }
+      },
+      "objective": "cau-xep-tu"
     },
     {
       "id": "tang-tho-the-nao",
       "title": "Tặng thơ thế nào đây?",
-      "goTo": "Về lớp 2A, Nai Sương ôm bài thơ vừa viết xong",
+      "goTo": "Về lớp Chim Sẻ, Nai Sương ôm bài thơ vừa viết xong",
       "kind": "dialogue",
       "target": "tv2-t05-b09-nai-suong",
       "lines": [
@@ -652,7 +630,7 @@
       ],
       "en": {
         "title": "How to give the poem?",
-        "goTo": "Back in class 2A, Nai Sương is hugging the poem she just finished",
+        "goTo": "Back in the Sparrow classroom, Nai Sương is hugging the poem she just finished",
         "lines": [
           "The poem's done! But how do I give it to her as a real surprise, {name}?",
           "Let me have a look! Why not sing it? I'll play the little drum along!",
@@ -672,45 +650,77 @@
     },
     {
       "id": "nghe-chuyen-vu-due",
-      "title": "Chuyện cậu bé ham học",
+      "title": "Chuyện chú ốc sên đi học",
       "goTo": "Ghé bàn cô giáo, cô Gấu Mật đang ôm chồng tranh truyện",
       "kind": "speak",
       "target": "tv2-t01-b01-co-gau-mat",
-      "prompt": "Nai Sương thì thầm: hôm qua cô kể chuyện một cậu bé ham học, nghe xong tớ thương cậu ấy quá.\nNghe kể chuyện.\nNhờ bố mẹ hoặc thầy cô kể câu chuyện “Cậu bé ham học”, rồi trả lời từng câu hỏi nhé.",
+      "prompt": "Nai Sương thì thầm: hôm qua cô kể một chuyện, nghe xong tớ thương chú ốc sên ấy quá. Cô Gấu Mật gọi cả lớp ngồi quanh góc kể chuyện rồi kể lại:\n“Ở cuối bờ ruộng có chú ốc sên tên Đậu. Nhà Đậu xa trường lắm, nên khi sao còn lấp lánh, Đậu đã bò ra đường. Một hôm trời đổ mưa, Đậu rụt vào vỏ, vừa trú mưa vừa nhẩm lại bảng chữ cái cho đỡ sợ. Mưa tạnh, Đậu bò tiếp và đến lớp muộn. Cô giáo không trách, chỉ mỉm cười nghe Đậu kể, rồi cả lớp vỗ tay khen. Sáng hôm sau, các bạn đứng chờ ở đầu đường để cùng Đậu đi học.”\nNghe xong, {name} trả lời từng câu hỏi nhé.",
       "hints": [
-        "Vì sao cậu bé Vũ Duệ không được đi học?",
-        "Buổi sáng, Vũ Duệ thường cõng em đi đâu?",
-        "Vì sao Vũ Duệ được thầy khen?",
-        "Vì sao Vũ Duệ được đi học?"
+        "Vì sao Đậu phải lên đường khi sao còn chưa tắt?",
+        "Gặp mưa giữa đường, Đậu làm gì để bớt sợ?",
+        "Vì sao cả lớp vỗ tay khen Đậu?",
+        "Sáng hôm sau, các bạn làm gì để giúp Đậu?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b09-ke-chuyen-1"
-      ]
+      "pictureRefs": [
+        {
+          "kind": "diagram",
+          "type": "picture-card",
+          "params": {
+            "caption": "chú ốc sên Đậu bò trên con đường nhỏ, trên trời còn lấp lánh những vì sao",
+            "n": 1
+          }
+        },
+        {
+          "kind": "diagram",
+          "type": "picture-card",
+          "params": {
+            "caption": "cơn mưa rào, ốc sên rụt vào vỏ dưới một tàu lá chuối",
+            "n": 2
+          }
+        },
+        {
+          "kind": "diagram",
+          "type": "picture-card",
+          "params": {
+            "caption": "cả lớp vỗ tay trong khi ốc sên Đậu đứng ở cửa lớp",
+            "n": 3
+          }
+        },
+        {
+          "kind": "diagram",
+          "type": "picture-card",
+          "params": {
+            "caption": "các bạn nhỏ đứng chờ ở đầu đường, ốc sên Đậu bò tới",
+            "n": 4
+          }
+        }
+      ],
+      "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "xep-tranh-vu-due",
-      "title": "Xếp tranh Vũ Duệ",
+      "title": "Xếp tranh chú ốc sên",
       "goTo": "Sang góc kể chuyện trong lớp, treo lại bốn bức tranh bị gió thổi",
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t05-tranh-cau-be-ham-hoc",
-      "prompt": "Cơn gió nghịch ngợm lúc nãy lại ghé qua, làm bốn bức tranh rơi lẫn lộn. Treo lại theo đúng diễn biến câu chuyện nào.\nChọn kể 1 – 2 đoạn của câu chuyện theo tranh.",
+      "prompt": "Cơn gió nghịch ngợm lúc nãy lại ghé qua, làm bốn bức tranh rơi lẫn lộn. Treo lại theo đúng diễn biến câu chuyện cô Gấu Mật vừa kể nhé.",
       "items": [
         {
           "id": "tranh-3",
-          "label": "Thầy đồ đặt tay lên vai Vũ Duệ"
+          "label": "Cả lớp vỗ tay trước cửa lớp"
         },
         {
           "id": "tranh-1",
-          "label": "Vũ Duệ cõng em đứng ở cổng rào"
+          "label": "Ốc sên Đậu bò dưới những vì sao"
         },
         {
           "id": "tranh-4",
-          "label": "Vũ Duệ ngồi học cùng các bạn"
+          "label": "Các bạn chờ Đậu ở đầu đường"
         },
         {
           "id": "tranh-2",
-          "label": "Vũ Duệ đứng nép ngoài cửa lớp"
+          "label": "Ốc sên Đậu rụt vào vỏ trú mưa"
         }
       ],
       "skill": "ke-chuyen",
@@ -722,18 +732,15 @@
           "tranh-4"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b09-ke-chuyen-2"
-      ],
       "support": {
         "guide": [
-          "Lúc đầu Vũ Duệ chưa được đi học, phải ở nhà trông em.",
-          "Cuối chuyện Vũ Duệ được ngồi học trong lớp."
+          "Lúc đầu trời còn tối, Đậu mới lên đường.",
+          "Cuối chuyện, các bạn đứng chờ để đi cùng Đậu."
         ],
-        "hint": "Cậu bé cõng em đến lớp nghe lén trước, rồi mới được thầy khen.",
+        "hint": "Cơn mưa đến trước khi Đậu tới lớp, còn lời khen thì đến sau khi Đậu tới.",
         "answer": {
-          "text": "Cổng rào → đứng nép ngoài cửa lớp → thầy đặt tay lên vai → ngồi học cùng các bạn.",
-          "explanation": "Bốn tranh theo thứ tự đánh số trong sách: ở nhà trông em, đứng ngoài lớp nghe giảng, được thầy khen, được đi học."
+          "text": "Bò dưới sao → trú mưa trong vỏ → cả lớp vỗ tay → các bạn chờ ở đầu đường.",
+          "explanation": "Bốn tranh theo đúng lời cô Gấu Mật kể: lên đường lúc sao còn sáng, gặp mưa, được cả lớp khen, rồi có bạn chờ cùng đi."
         }
       },
       "feedback": {
@@ -743,30 +750,31 @@
           "Giỏi quá, {name} nhớ chuyện còn kĩ hơn cả sổ thơ của Nai Sương."
         ],
         "wrong": [
-          "Vũ Duệ được ngồi học là chuyện cuối cùng, để tranh ấy về sau nhé.",
-          "Trước khi được thầy khen, cậu bé phải đến lớp đã chứ.",
-          "Mở đầu câu chuyện, Vũ Duệ còn ở nhà cõng em đấy."
+          "Các bạn chờ ở đầu đường là chuyện của sáng hôm sau, để tranh ấy về cuối nhé.",
+          "Trước khi được cả lớp khen, Đậu phải bò tới lớp đã chứ.",
+          "Mở đầu câu chuyện, trên trời còn đầy sao đấy."
         ]
-      }
+      },
+      "objective": "doc-truyen-thu-tu"
     },
     {
       "id": "ke-cho-nguoi-than",
-      "title": "Kể chuyện Vũ Duệ",
-      "goTo": "Chạy về lớp 2A, Nai Sương đang tìm vần cho chữ Duệ",
+      "title": "Kể chuyện chú ốc sên Đậu",
+      "goTo": "Chạy về lớp Chim Sẻ, Nai Sương đang tìm vần cho chữ Đậu",
       "kind": "speak",
       "target": "tv2-t05-b09-nai-suong",
-      "prompt": "Chọn kể 1 – 2 đoạn của câu chuyện theo tranh.\nKể cho người thân về cậu bé Vũ Duệ trong câu chuyện Cậu bé ham học.\nNai Sương hứa sẽ viết thêm một bài thơ về Vũ Duệ, chỉ cần tìm được chữ nào vần với “Duệ”.",
+      "prompt": "Chọn một hai bức tranh em thích nhất rồi kể lại chuyện chú ốc sên Đậu cho người thân nghe.\nNai Sương hứa sẽ viết thêm một bài thơ về Đậu, chỉ cần tìm được chữ nào vần với “Đậu”.",
       "hints": [
-        "Chọn một hai bức tranh em thích nhất rồi kể theo tranh.",
-        "Kể Vũ Duệ ham học thế nào và vì sao thầy quý cậu.",
-        "Về nhà, kể cho ông bà, bố mẹ nghe trong bữa cơm tối."
+        "Kể theo tranh em chọn: Đậu đang ở đâu, đang làm gì?",
+        "Nói vì sao cả lớp quý chú ốc sên chăm học ấy.",
+        "Tối nay, kể cho ông bà hoặc bố mẹ nghe trong bữa cơm nhé."
       ],
       "pictureRefs": [
         {
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "cậu bé Vũ Duệ cõng em đứng ở cổng rào, phía xa bố mẹ làm ruộng",
+            "caption": "ốc sên Đậu mang vỏ nhỏ bò dưới bầu trời đầy sao",
             "n": 1
           }
         },
@@ -774,7 +782,7 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "Vũ Duệ cõng em đứng nép ngoài cửa lớp nhìn vào, thầy đồ đang giảng cho học trò",
+            "caption": "ốc sên Đậu thu mình trong vỏ khi mưa rơi, miệng nhẩm chữ cái",
             "n": 2
           }
         },
@@ -782,7 +790,7 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "thầy đồ đặt tay lên vai Vũ Duệ đang cõng em",
+            "caption": "cô giáo và các bạn vỗ tay đón ốc sên Đậu vào lớp",
             "n": 3
           }
         },
@@ -790,37 +798,59 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "Vũ Duệ ngồi học cùng các bạn trong lớp, thầy đồ ngồi giảng",
+            "caption": "một hàng bạn nhỏ chờ sẵn ở đầu đường để đi học cùng Đậu",
             "n": 4
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b09-ke-chuyen-2",
-        "tv2-t1-b09-van-dung-1"
-      ]
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "phieu-viet-bai-9",
-      "title": "Phiếu viết bài 9",
+      "title": "Phiếu viết chữ hoa D",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b09",
-      "text": "Nhờ bố mẹ in phiếu Bài 9 ở khu phụ huynh: tập viết chữ hoa D và câu ứng dụng “Dung dăng dung dẻ”, nét đều tăm tắp như hàng nai đi dạo.",
-      "curriculumRef": [
-        "tv2-t1-b09-viet-chu-hoa-1",
-        "tv2-t1-b09-viet-ung-dung-2"
-      ]
+      "text": "Nhờ bố mẹ in phiếu viết ở khu phụ huynh: tập viết chữ hoa D, chép một câu về dòng sông nhỏ và kể thêm một việc cô giáo đã làm cho em. Nét chữ đều tăm tắp như hàng nai đi dạo.",
+      "sheet": {
+        "title": "Phiếu viết: chữ hoa D và cô giáo của em",
+        "blocks": [
+          {
+            "kind": "letter",
+            "prompt": "Tô rồi viết chữ hoa D",
+            "letters": [
+              "D"
+            ]
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: Dòng sông nhỏ dẫn em tới trường.",
+            "model": [
+              "Dòng sông nhỏ dẫn em tới trường."
+            ]
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Viết 2 – 3 câu kể một việc cô giáo đã làm khiến em nhớ mãi.",
+            "hints": [
+              "Cô đã làm việc gì cho em hoặc cho cả lớp?",
+              "Em thấy thế nào khi ấy?",
+              "Em muốn nói gì với cô?"
+            ],
+            "lines": 6
+          }
+        ]
+      },
+      "objective": "viet-chu-hoa"
     },
     {
       "id": "qua-cua-nai-mo",
       "title": "Trang sổ thơ thơm nhài",
       "kind": "reward",
       "trigger": "auto",
-      "text": "Nai Sương tặng {name} một trang sổ thơ chép bài thơ “Cô giáo lớp em”, ép kèm một bông nhài. Thầy Sư Tử Vàng đóng lên đó con dấu hình mặt sư tử cười, còn Mèo Sữa hứa chép bài thơ lên bảng cho cả lớp cùng đọc.",
+      "text": "Nai Sương tặng {name} một trang sổ thơ chép bài “Tiếng cô trong nắng sớm”, ép kèm một bông nhài. Thầy Sư Tử Vàng đóng lên đó con dấu hình mặt sư tử cười, còn Mèo Sữa hứa chép bài thơ lên bảng cho cả lớp cùng đọc.",
       "en": {
         "title": "A jasmine-scented poem page",
-        "text": "Nai Sương gives {name} a notebook page with the poem “Cô giáo lớp em” copied on it and a jasmine flower pressed inside. Sư Tử Vàng stamps it with a smiling lion face, and Mèo Sữa promises to write the poem on the board for the whole class to read."
+        "text": "Nai Sương gives {name} a notebook page with the poem “Tiếng cô trong nắng sớm” (Teacher’s Voice in the Morning Sun) copied on it and a jasmine flower pressed inside. Sư Tử Vàng stamps it with a smiling lion face, and Mèo Sữa promises to write the poem on the board for the whole class to read."
       }
     },
     {

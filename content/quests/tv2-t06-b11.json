@@ -4,18 +4,17 @@
   "chapter": 3,
   "title": "Đánh thức trống trường",
   "status": "active",
-  "lesson": "tv2-t1-b11",
   "topic": "doc-tho",
-  "summary": "Cái trống trường trong chòi trống giữa sân im tiếng suốt mùa hè. {name} cùng Chó Lu tìm lại dùi trống, đọc bài thơ “Cái trống trường em” khắc trên giá, ra hàng rào gỗ cùng Hải Ly Mộc tìm từ nói về trống như nói về người, rồi gõ vang tiếng trống đón năm học mới cho cả Cá Chép Hồng dưới hồ cá nghe.",
+  "summary": "Cái trống trường trong chòi trống giữa sân im tiếng suốt mùa hè. {name} cùng Chó Lu tìm lại dùi trống, đọc bài thơ “Chiếc trống ngủ quên” khắc trên giá, ra hàng rào gỗ cùng Hải Ly Mộc tìm từ nói về trống như nói về người, rồi gõ vang tiếng trống đón năm học mới cho cả Cá Chép Hồng dưới hồ cá nghe.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Chó Lu (canh chòi trống, “Gâu!” vẫy đuôi tít), Hải Ly Mộc sửa hàng rào gỗ bên chòi, Cá Chép Hồng tò mò dưới hồ cá",
     "where": "Chòi trống giữa sân trường: hiên chòi, giá trống, hàng rào gỗ cạnh chòi, hồ cá nhỏ trong sân và bãi cỏ cạnh chòi",
     "goal": "Đánh thức cái trống trường đã im tiếng cả mùa hè",
     "play": "Tìm đồ dọc bờ suối, nói về tiếng trống, đọc thơ, xếp dòng thơ vào giỏ, chọn một đáp án, chọn nhiều đáp án, xếp lời tạm biệt, nói và đáp, điền chữ vào khổ thơ, nói về trường em, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 11: đọc hiểu bài thơ “Cái trống trường em”, từ ngữ nói về vật như nói về người, nói và đáp lời tạm biệt, nói về ngôi trường của em, viết chữ hoa Đ",
+    "learn": "Đọc hiểu bài thơ “Chiếc trống ngủ quên” (tự viết), từ ngữ nói về vật như nói về người, nói lời tạm biệt, nói về ngôi trường của em, viết chữ hoa Đ",
     "reward": "80 XP, 15 xu, Đọc hiểu +2, Từ ngữ +1, Câu +1",
-    "next": "Bài 12 \"Danh sách học sinh\""
+    "next": "Cô thủ thư Mèo Kính ôm tờ danh sách ướt sũng trong phòng đọc"
   },
   "phases": {
     "hook": "trong-ngu-ca-he",
@@ -28,17 +27,22 @@
     "next": "mo-bai-12"
   },
   "texts": {
-    "cai-trong-truong-em": {
-      "title": "Cái trống trường em",
-      "author": "Thanh Hào",
-      "body": "Cái trống trường em\nMùa hè cũng nghỉ\nSuốt ba tháng liền\nTrống nằm ngẫm nghĩ.\n\nBuồn không hả trống\nTrong những ngày hè\nBọn mình đi vắng\nChỉ còn tiếng ve?\n\nCái trống lặng im\nNghiêng đầu trên giá\nChắc thấy chúng em\nNó mừng vui quá!\n\nKìa trống đang gọi:\nTùng! Tùng! Tùng! Tùng!\nVào năm học mới\nGiọng vang tưng bừng.",
+    "chiec-trong-ngu-quen": {
+      "title": "Chiếc trống ngủ quên",
+      "body": "Hè về nắng gắt\nSân trường vắng em\nTrống nằm một mình\nNghe ve rả rích.\n\nTrống nhớ các bạn\nNgóng mãi cổng trường\nBuồn buồn tự hỏi\nBao giờ gặp em?\n\nTrống ơi đừng nhớ\nSắp hết mùa hè\nMai em trở lại\nMang theo tiếng cười.\n\nSớm nay trống thức\nMừng em đến trường\nTùng tùng reo vang\nVui cả mùa thu.",
       "glossary": [
         {
-          "term": "Ngẫm nghĩ",
-          "meaning": "nghĩ đi nghĩ lại kĩ càng."
+          "term": "Rả rích",
+          "meaning": "kêu đều đều, kéo dài mãi không dứt."
+        },
+        {
+          "term": "Ngóng",
+          "meaning": "nhìn ra xa để chờ đợi một người."
         }
       ],
-      "section": "tv2-t1-b11-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -121,17 +125,18 @@
       "goTo": "Mang dùi, khăn và chốt ra hiên chòi cho Chó Lu",
       "kind": "speak",
       "target": "tv2-t06-b11-cho-lu",
-      "prompt": "Chó Lu cầm khăn lau bụi cho trống, vừa lau vừa hắt xì: “Hắt xì! Bụi của cả một mùa hè đấy!”\nTiếng trống trường báo cho em biết điều gì?",
+      "prompt": "Chó Lu cầm khăn lau bụi cho trống, vừa lau vừa hắt xì: “Hắt xì! Bụi của cả một mùa hè đấy!”\nNghe tiếng trống ở trường, em biết lúc nào là giờ vào học, lúc nào là giờ ra chơi? Kể cho Chó Lu nghe nhé.",
       "hints": [
-        "Sáng sớm nghe “tùng… tùng…”, em biết đã tới giờ gì?",
-        "Giữa buổi, trống giục giã thì các bạn ùa ra đâu?"
+        "Trống đánh vào đầu buổi sáng, các bạn làm gì?",
+        "Trống đánh giữa buổi, sân trường thay đổi ra sao?",
+        "Còn lúc trống báo tan học thì thế nào?"
       ],
       "pictureRefs": [
         {
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "bác bảo vệ đeo băng đỏ cầm dùi đánh trống, học sinh ngồi trong lớp",
+            "caption": "bác bảo vệ cầm dùi đánh trống, học sinh xếp hàng đi vào lớp",
             "n": 1
           }
         },
@@ -139,14 +144,12 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "trống đánh, học sinh chạy ra sân chơi, đá cầu",
+            "caption": "tiếng trống vang, học sinh ùa ra sân nhảy dây và chơi đuổi bắt",
             "n": 2
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b11-doc-kd"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "bai-tho-tren-gia-trong",
@@ -154,53 +157,51 @@
       "goTo": "Vào chòi trống, bài thơ khắc ngay trên giá trống",
       "kind": "read",
       "target": "tv2-t06-trong-truong",
-      "textRef": "cai-trong-truong-em",
+      "textRef": "chiec-trong-ngu-quen",
       "audio": true,
-      "question": "Chó Lu ghé sát mũi vào giá trống, hít hít: bài thơ khắc ở đây này, đọc to lên cho trống nghe với!\nTiếng trống trường trong khổ thơ cuối báo hiệu điều gì?",
+      "question": "Chó Lu ghé sát mũi vào giá trống, hít hít: bài thơ khắc ở đây này, đọc to lên cho trống nghe với!\nSáng nay, tiếng trống thức dậy để làm gì?",
       "choices": [
         {
-          "id": "ra-choi",
-          "text": "Đến giờ ra chơi"
+          "id": "mung-ban",
+          "text": "Để mừng các bạn đến trường."
         },
         {
-          "id": "het-ngay",
-          "text": "Đã hết một ngày học"
+          "id": "bao-ra-choi",
+          "text": "Để báo giờ ra chơi."
         },
         {
-          "id": "nam-hoc-moi",
-          "text": "Vào năm học mới"
+          "id": "goi-ve-nha",
+          "text": "Để gọi các bạn ra về."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "nam-hoc-moi"
+        "choice": "mung-ban"
       },
-      "curriculumRef": [
-        "tv2-t1-b11-doc-2"
-      ],
       "support": {
         "guide": [
-          "Tìm khổ thơ có tiếng “Tùng! Tùng! Tùng! Tùng!”.",
-          "Đọc dòng thơ đứng ngay sau tiếng trống."
+          "Tìm khổ thơ cuối, nơi trống reo vang.",
+          "Đọc dòng thơ nói trống mừng ai, mừng ở đâu."
         ],
-        "hint": "Khổ cuối kể chuyện ngày khai giảng, các bạn trở lại trường.",
+        "hint": "Khổ cuối kể về buổi các bạn quay lại trường sau mùa hè.",
         "answer": {
-          "text": "Vào năm học mới",
-          "explanation": "Khổ thơ cuối: trống gọi “Tùng! Tùng! Tùng! Tùng!” báo hiệu vào năm học mới, giọng vang tưng bừng."
+          "text": "Trống thức dậy để đón các bạn đến trường.",
+          "explanation": "Khổ cuối kể sớm nay trống thức dậy, mừng em đến trường và reo vang."
         }
       },
       "feedback": {
         "right": [
           "Đúng rồi! Chó Lu vẫy đuôi tít mù, quất cả vào giá trống kêu “bộp”.",
-          "Chuẩn! Năm học mới tới, trống lại có việc để làm rồi.",
+          "Chuẩn! Các bạn quay lại thì trống lại có việc để làm rồi.",
           "Giỏi quá! Gâu một tiếng thật to mừng {name} nào!"
         ],
         "wrong": [
-          "Chưa đúng đâu. Tìm dòng thơ ngay sau bốn tiếng “Tùng!” nhé.",
+          "Chưa đúng đâu. Tìm khổ cuối, nơi trống reo vang nhé.",
           "Ra chơi cũng đánh trống thật, nhưng khổ cuối nói chuyện khác cơ.",
           "Bài thơ kể lúc các bạn trở lại trường sau hè, đọc lại khổ cuối xem."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "trong-mua-he-va-khai-giang",
@@ -208,7 +209,7 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t06-trong-truong",
-      "prompt": "Chó Lu muốn biết cái trống đã sống thế nào lúc vắng các bạn, và vui ra sao khi các bạn quay lại.\nBạn học sinh kể gì về trống trường trong những ngày hè?\nKéo mỗi dòng thơ vào đúng giỏ.",
+      "prompt": "Chó Lu muốn biết cái trống đã sống thế nào lúc vắng các bạn, và vui ra sao khi các bạn quay lại.\nDòng thơ nào kể chuyện mùa hè, dòng nào kể chuyện ngày khai giảng?\nKéo mỗi dòng thơ vào đúng giỏ.",
       "groups": [
         {
           "id": "ngay-he",
@@ -216,72 +217,70 @@
         },
         {
           "id": "nam-hoc-moi",
-          "label": "Trống khi vào năm học mới"
+          "label": "Trống buổi đón các bạn về trường"
         }
       ],
       "items": [
         {
-          "id": "trong-dang-goi",
-          "label": "Kìa trống đang gọi:"
+          "id": "tho-trong-thuc",
+          "label": "Sớm nay trống thức"
         },
         {
-          "id": "mua-he-nghi",
-          "label": "Mùa hè cũng nghỉ"
+          "id": "tho-nang-gat",
+          "label": "Hè về nắng gắt"
         },
         {
-          "id": "giong-vang",
-          "label": "Giọng vang tưng bừng."
+          "id": "tho-mung-em",
+          "label": "Mừng em đến trường"
         },
         {
-          "id": "ba-thang",
-          "label": "Suốt ba tháng liền"
+          "id": "tho-vang-em",
+          "label": "Sân trường vắng em"
         },
         {
-          "id": "ngam-nghi",
-          "label": "Trống nằm ngẫm nghĩ."
+          "id": "tho-mua-thu",
+          "label": "Vui cả mùa thu."
         },
         {
-          "id": "tung-tung",
-          "label": "Tùng! Tùng! Tùng! Tùng!"
+          "id": "tho-ve-ca",
+          "label": "Nghe ve rả rích."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "assignment": {
-          "trong-dang-goi": "nam-hoc-moi",
-          "mua-he-nghi": "ngay-he",
-          "giong-vang": "nam-hoc-moi",
-          "ba-thang": "ngay-he",
-          "ngam-nghi": "ngay-he",
-          "tung-tung": "nam-hoc-moi"
+          "tho-trong-thuc": "nam-hoc-moi",
+          "tho-nang-gat": "ngay-he",
+          "tho-mung-em": "nam-hoc-moi",
+          "tho-vang-em": "ngay-he",
+          "tho-mua-thu": "nam-hoc-moi",
+          "tho-ve-ca": "ngay-he"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b11-doc-1"
-      ],
       "support": {
         "guide": [
           "Khổ thơ đầu kể về trống trong mùa hè.",
           "Khổ thơ cuối kể về trống ngày khai giảng."
         ],
-        "hint": "Ba dòng sau “Cái trống trường em” là chuyện ngày hè.",
+        "hint": "Ba dòng nhắc đến nắng gắt, sân vắng và tiếng ve là chuyện ngày hè.",
         "answer": {
-          "text": "Ngày hè: Mùa hè cũng nghỉ; Suốt ba tháng liền; Trống nằm ngẫm nghĩ. Năm học mới: Kìa trống đang gọi:; Tùng! Tùng! Tùng! Tùng!; Giọng vang tưng bừng.",
-          "explanation": "Khổ đầu kể trống nghỉ hè, nằm ngẫm nghĩ suốt ba tháng; khổ cuối kể trống vang lên gọi các bạn vào năm học mới."
+          "text": "Ngày hè: Hè về nắng gắt; Sân trường vắng em; Nghe ve rả rích. Khai giảng: Sớm nay trống thức; Mừng em đến trường; Vui cả mùa thu.",
+          "explanation": "Khổ đầu kể trống nằm một mình giữa mùa hè; khổ cuối kể trống thức dậy mừng các bạn trong ngày khai giảng."
         }
       },
       "feedback": {
         "right": [
           "Hai giỏ chuẩn chỉnh! Chó Lu gật gù như ông cụ non.",
-          "Đúng hết! Hè thì trống nằm im, khai giảng thì trống gọi vang.",
+          "Đúng hết! Hè thì trống nằm nghe ve, khai giảng thì trống thức dậy reo vang.",
           "Tuyệt! Chó Lu bảo {name} hiểu trống còn hơn cả tớ."
         ],
         "wrong": [
-          "Dòng có tiếng “Tùng!” là lúc trống đã thức dậy rồi đấy.",
-          "Trống nằm ngẫm nghĩ khi nào nhỉ? Đọc lại khổ thơ đầu nhé.",
-          "Có một dòng của ngày hè đang lạc sang giỏ năm học mới."
+          "Dòng nói trống thức dậy là chuyện ngày khai giảng rồi đấy.",
+          "Tiếng ve rả rích vang lên vào lúc nào nhỉ? Đọc lại khổ thơ đầu nhé.",
+          "Có một dòng của ngày hè đang lạc sang giỏ ngày khai giảng."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "kho-tho-tro-chuyen",
@@ -290,55 +289,53 @@
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t06-b11-cho-lu",
-      "prompt": "Chó Lu thú thật: tớ vẫn hay rủ trống nói chuyện như bạn thân, mà trống chưa trả lời câu nào. Hoá ra trong thơ cũng có người giống tớ!\nKhổ thơ nào cho thấy bạn học sinh trò chuyện với trống trường như với một người bạn?",
+      "prompt": "Chó Lu thú thật: tớ vẫn hay rủ trống nói chuyện như bạn thân, mà trống chưa trả lời câu nào. Hoá ra trong thơ cũng có người giống tớ!\nKhổ thơ nào cho thấy bạn nhỏ nói chuyện thân mật với chiếc trống như nói với một người bạn?",
       "choices": [
         {
           "id": "kho-1",
-          "text": "Khổ 1: Cái trống trường em…"
+          "text": "Khổ 1: Hè về nắng gắt…"
         },
         {
           "id": "kho-2",
-          "text": "Khổ 2: Buồn không hả trống…"
+          "text": "Khổ 2: Trống nhớ các bạn…"
         },
         {
           "id": "kho-3",
-          "text": "Khổ 3: Cái trống lặng im…"
+          "text": "Khổ 3: Trống ơi đừng nhớ…"
         },
         {
           "id": "kho-4",
-          "text": "Khổ 4: Kìa trống đang gọi:…"
+          "text": "Khổ 4: Sớm nay trống thức…"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "kho-2"
+        "choice": "kho-3"
       },
-      "curriculumRef": [
-        "tv2-t1-b11-doc-3"
-      ],
       "support": {
         "guide": [
-          "Trò chuyện là hỏi han, gọi tên người kia.",
-          "Tìm khổ thơ có câu hỏi dành cho trống."
+          "Nói chuyện với bạn là gọi tên bạn và nhắn nhủ bạn.",
+          "Tìm khổ thơ có tiếng gọi dành cho trống."
         ],
-        "hint": "Khổ thơ ấy kết thúc bằng một dấu chấm hỏi.",
+        "hint": "Khổ thơ ấy mở đầu bằng hai tiếng gọi “Trống ơi”.",
         "answer": {
-          "text": "Khổ 2: Buồn không hả trống / Trong những ngày hè / Bọn mình đi vắng / Chỉ còn tiếng ve?",
-          "explanation": "Bạn học sinh hỏi trống “Buồn không hả trống”, xưng “bọn mình” như nói với một người bạn."
+          "text": "Khổ 3: Trống ơi đừng nhớ / Sắp hết mùa hè / Mai em trở lại / Mang theo tiếng cười.",
+          "explanation": "Bạn nhỏ gọi “Trống ơi”, nhắn trống đừng nhớ và hứa mai quay lại, như nói với một người bạn."
         }
       },
       "feedback": {
         "right": [
-          "Đúng! “Buồn không hả trống” nghe thân như hỏi bạn cùng bàn.",
+          "Đúng! “Trống ơi” nghe thân như gọi bạn cùng bàn.",
           "Chuẩn rồi! Chó Lu vui quá, chạy vào chòi ôm trống một cái thật chặt.",
-          "Giỏi ghê! Bạn ấy hỏi han trống y như Chó Lu vẫn làm."
+          "Giỏi ghê! Bạn ấy nhắn nhủ trống y như Chó Lu vẫn làm."
         ],
         "wrong": [
-          "Tìm khổ thơ có câu hỏi han trống nhé, có dấu chấm hỏi đấy.",
-          "Khổ này chỉ kể về trống thôi. Khổ nào bạn nhỏ hỏi thẳng trống cơ?",
-          "Bạn nhỏ xưng “bọn mình” với trống ở khổ nào? Đọc lại thử xem."
+          "Tìm khổ thơ có tiếng gọi “ơi” dành cho trống nhé.",
+          "Khổ này chỉ kể về trống thôi. Khổ nào bạn nhỏ gọi thẳng trống cơ?",
+          "Bạn nhỏ hứa “mai em trở lại” ở khổ nào? Đọc lại thử xem."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tinh-cam-voi-trong",
@@ -346,49 +343,46 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t06-b11-cho-lu",
-      "prompt": "Em thấy tình cảm của bạn học sinh với trống trường như thế nào?\nChó Lu vẫy đuôi tít mù: chọn hết những ý đúng giúp tớ nhé, đuôi tớ đếm không xuể đâu!",
+      "prompt": "Em thấy bạn nhỏ nghĩ và làm gì để cho thấy mình thương chiếc trống?\nChó Lu vẫy đuôi tít mù: chọn hết những ý đúng giúp tớ nhé, đuôi tớ đếm không xuể đâu!",
       "choices": [
         {
-          "id": "yeu-quy",
-          "text": "Bạn ấy yêu quý trống trường"
+          "id": "quy-nhu-ban",
+          "text": "Bạn ấy quý chiếc trống như một người bạn"
         },
         {
-          "id": "on-ao",
-          "text": "Bạn ấy thấy trống ồn ào, khó chịu"
+          "id": "che-on",
+          "text": "Bạn ấy chê tiếng trống quá ồn"
         },
         {
-          "id": "nhu-ban",
-          "text": "Bạn ấy coi trống như một người bạn"
+          "id": "thuong-mot-minh",
+          "text": "Bạn ấy thương trống nằm một mình suốt mùa hè"
         },
         {
-          "id": "khong-nho",
-          "text": "Bạn ấy chẳng nhớ gì tới trống"
+          "id": "quen-trong",
+          "text": "Bạn ấy quên hẳn chiếc trống khi nghỉ hè"
         },
         {
-          "id": "lo-trong-buon",
-          "text": "Bạn ấy lo trống buồn khi hè vắng"
+          "id": "hua-tro-lai",
+          "text": "Bạn ấy hứa sẽ trở lại với trống"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
-          "yeu-quy",
-          "nhu-ban",
-          "lo-trong-buon"
+          "quy-nhu-ban",
+          "thuong-mot-minh",
+          "hua-tro-lai"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b11-doc-4"
-      ],
       "support": {
         "guide": [
-          "Bạn nhỏ hỏi trống có buồn không: bạn ấy nghĩ gì về trống?",
-          "Bạn nhỏ thấy trống mừng vui khi gặp lại các bạn."
+          "Bạn nhỏ gọi trống, nhắn nhủ trống: bạn ấy nghĩ gì về trống?",
+          "Cuối bài, bạn nhỏ và trống gặp lại nhau ra sao?"
         ],
         "hint": "Có ba ý nói về tình cảm tốt đẹp với trống.",
         "answer": {
-          "text": "Bạn ấy yêu quý trống trường; coi trống như một người bạn; lo trống buồn khi hè vắng.",
-          "explanation": "Bạn nhỏ hỏi han trống, nghĩ trống buồn khi vắng các bạn và mừng khi gặp lại: đó là tình cảm yêu quý, thân thiết."
+          "text": "Quý trống như một người bạn; thương trống nằm một mình suốt mùa hè; hứa sẽ trở lại với trống.",
+          "explanation": "Bạn nhỏ nhắn trống đừng nhớ, hứa mai quay lại và mừng khi trống reo vang: đó là tình cảm yêu quý, thân thiết."
         }
       },
       "feedback": {
@@ -398,61 +392,63 @@
           "Tuyệt vời, không chọn thừa ý nào! Gâu gâu!"
         ],
         "wrong": [
-          "Bạn nhỏ còn hỏi trống có buồn không, vậy là có nhớ tới trống chứ.",
-          "Còn sót một ý: bạn nhỏ nói chuyện với trống như với ai?",
-          "Ồn ào, khó chịu ư? Bạn nhỏ thấy tiếng trống “vang tưng bừng” cơ mà."
+          "Bạn nhỏ còn nhắn trống đừng nhớ, vậy là có nghĩ tới trống chứ.",
+          "Còn sót một ý: bạn nhỏ hứa với trống điều gì?",
+          "Ồn ào, khó chịu ư? Trong thơ tiếng trống “reo vang”, vui lắm cơ mà."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "ngam-nghi-la-gi",
-      "title": "Ngẫm nghĩ là gì?",
+      "title": "Rả rích là gì?",
       "goTo": "Ra hàng rào gỗ, Hải Ly Mộc đang gặm dở một thanh gỗ",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t06-b11-hai-ly-moc",
-      "prompt": "Hải Ly Mộc nghiêng đầu y hệt cái trống trong thơ: “Ngẫm nghĩ là làm gì nhỉ? Tớ chỉ quen gặm gỗ thôi.”\nĐọc phần Từ ngữ dưới bài thơ rồi chọn nghĩa đúng của “ngẫm nghĩ”.",
+      "prompt": "Hải Ly Mộc nghiêng đầu nghe tiếng ve ngoài hàng rào: “Rả rích là kêu thế nào nhỉ? Tớ chỉ quen tiếng gặm gỗ thôi.”\nĐọc phần giải nghĩa từ dưới bài thơ rồi chọn nghĩa đúng của “rả rích”.",
       "choices": [
         {
-          "id": "ngu-say",
-          "text": "nằm ngủ thật say"
+          "id": "keu-mot-tieng",
+          "text": "kêu to một tiếng rồi im hẳn"
         },
         {
-          "id": "nghi-ki",
-          "text": "nghĩ đi nghĩ lại kĩ càng."
+          "id": "keu-deu",
+          "text": "kêu đều đều, kéo dài mãi không dứt."
         },
         {
-          "id": "ngoi-im",
-          "text": "ngồi im, không nói gì"
+          "id": "luc-co-luc-khong",
+          "text": "kêu nhỏ lúc có lúc không"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
-        "choice": "nghi-ki"
+        "choice": "keu-deu"
       },
       "support": {
         "guide": [
-          "Dưới bài thơ có ô Từ ngữ giải nghĩa từ khó.",
-          "Ngẫm nghĩ là một việc của cái đầu."
+          "Dưới bài thơ có ô giải nghĩa từ khó.",
+          "Tiếng ve suốt mùa hè kêu hết ngày này sang ngày khác."
         ],
-        "hint": "Từ ngẫm nghĩ có chữ “nghĩ” ở trong đấy.",
+        "hint": "Tiếng ve rả rích nghe cả ngày, không lúc nào nghỉ.",
         "answer": {
-          "text": "Ngẫm nghĩ là nghĩ đi nghĩ lại thật kĩ.",
-          "explanation": "Phần Từ ngữ của bài giải nghĩa: Ngẫm nghĩ là nghĩ đi nghĩ lại kĩ càng."
+          "text": "Rả rích là kêu đều đều và kéo dài mãi.",
+          "explanation": "Phần giải nghĩa của bài ghi: rả rích là kêu đều đều, kéo dài mãi không dứt."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi! Hải Ly Mộc thử ngẫm nghĩ, mặt nhăn như quả táo khô.",
-          "Chuẩn! Nghĩ đi nghĩ lại, chứ không phải gặm đi gặm lại đâu.",
+          "Đúng rồi! Hải Ly Mộc thử rả rích bằng tiếng gặm gỗ, nghe cũng ra dáng.",
+          "Chuẩn! Kêu đều và kéo dài, chứ không phải kêu một tiếng rồi thôi.",
           "Hay quá! Hải Ly Mộc ghi nhớ từ mới, đập đuôi dẹt xuống thanh rào hai cái."
         ],
         "wrong": [
-          "Ngủ say thì đâu có nghĩ gì! Xem lại ô Từ ngữ nhé.",
-          "Từ “ngẫm nghĩ” có chữ “nghĩ” đấy, chọn nghĩa có việc suy nghĩ.",
-          "Ngồi im chưa chắc đã nghĩ. Đọc phần giải nghĩa dưới bài thơ xem."
+          "Tiếng ve đâu có im bặt sau một tiếng! Xem lại phần giải nghĩa nhé.",
+          "Ve kêu suốt mùa hè, không phải lúc có lúc không. Chọn lại thử xem.",
+          "Đọc ô giải nghĩa từ dưới bài thơ, nghĩa của “rả rích” nằm ngay đó."
         ]
-      }
+      },
+      "objective": "doc-tho-hinh-anh"
     },
     {
       "id": "trong-giong-con-nguoi",
@@ -460,15 +456,15 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t06-b11-hai-ly-moc",
-      "prompt": "Hải Ly Mộc khoái chí: người ta cũng nói về tớ như nói về con người đấy, “Hải Ly Mộc ngẫm nghĩ” nghe oai ra phết!\nNhững từ ngữ nào dưới đây nói về trống trường như nói về con người?",
+      "prompt": "Hải Ly Mộc khoái chí: thơ nói về trống như nói về con người, giống hệt cách người ta nói về tớ vậy!\nNhững từ nào dưới đây tả chiếc trống như tả một con người?",
       "choices": [
         {
           "id": "tu-0",
-          "text": "ngẫm nghĩ"
+          "text": "nhớ"
         },
         {
           "id": "tu-1",
-          "text": "mừng vui"
+          "text": "ngóng"
         },
         {
           "id": "tu-2",
@@ -476,7 +472,7 @@
         },
         {
           "id": "tu-3",
-          "text": "đi vắng"
+          "text": "rả rích"
         }
       ],
       "skill": "tu-ngu",
@@ -487,32 +483,30 @@
           "tu-2"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b11-doc-lt1"
-      ],
       "support": {
         "guide": [
-          "Từ nào thường dùng để nói về người: nghĩ, vui, buồn…?",
-          "Trong bài thơ, trống “đi vắng” không? Ai mới đi vắng?"
+          "Từ nào thường dùng để nói về cảm xúc của người: nhớ, buồn, mong ngóng…?",
+          "Trong bài, ai kêu rả rích? Trống hay con ve?"
         ],
-        "hint": "Các bạn học sinh mới là người đi vắng trong mùa hè.",
+        "hint": "Tiếng rả rích là của con ve, không phải của trống.",
         "answer": {
-          "text": "ngẫm nghĩ, mừng vui, buồn",
-          "explanation": "Trống được tả biết ngẫm nghĩ, biết buồn, biết mừng vui như con người; “đi vắng” là nói về các bạn học sinh."
+          "text": "nhớ, ngóng, buồn",
+          "explanation": "Trống được tả biết nhớ bạn, ngóng bạn và biết buồn như con người; “rả rích” là tiếng của con ve."
         }
       },
       "feedback": {
         "right": [
-          "Đúng ba từ! Trống biết nghĩ, biết buồn, biết vui y như người.",
+          "Đúng ba từ! Trống biết nhớ, biết ngóng, biết buồn y như người.",
           "Chuẩn! Hải Ly Mộc gõ đuôi lên hàng rào: trống ơi, cậu giống tớ ghê.",
-          "Giỏi quá! Không bị chữ “đi vắng” lừa chút nào."
+          "Giỏi quá! Không bị tiếng ve “rả rích” lừa chút nào."
         ],
         "wrong": [
-          "Ai đi vắng trong mùa hè? Trống hay các bạn học sinh?",
+          "Ai kêu rả rích suốt mùa hè? Trống hay con ve?",
           "Còn sót một từ chỉ cảm xúc của trống đấy, đọc lại khổ hai nhé.",
-          "Trống “mừng vui quá” ở khổ ba, từ đó cũng nói như về con người."
+          "Trống “ngóng mãi cổng trường”, từ đó cũng là cách nói về con người."
         ]
-      }
+      },
+      "objective": "tu-ngu-tinh-cam-tim-tu"
     },
     {
       "id": "loi-tam-biet-trong",
@@ -521,41 +515,38 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t06-trong-truong",
-      "prompt": "Chó Lu kể: hôm bắt đầu nghỉ hè, một bạn nhỏ chạy lại ôm trống chào. Tiếc là lời chào bị gió thổi rơi lộn xộn mất rồi.\nNói và đáp: a. Lời tạm biệt của bạn học sinh với trống trường\nXếp lại lời chào cho đúng nhé.",
+      "prompt": "Chó Lu kể: hôm bắt đầu nghỉ hè, một bạn nhỏ chạy lại ôm trống chào. Tiếc là lời chào bị gió thổi rơi lộn xộn mất rồi.\nXếp lại lời chào của bạn nhỏ cho đúng nhé.",
       "items": [
         {
           "id": "hen-gap-lai",
-          "label": "hẹn gặp lại"
+          "label": "em lại đến chơi với trống!"
         },
         {
-          "id": "khai-giang",
-          "label": "vào ngày khai giảng!"
+          "id": "het-he",
+          "label": "hết hè"
         },
         {
-          "id": "tam-biet",
-          "label": "Tạm biệt trống nhé,"
+          "id": "chao-trong",
+          "label": "Trống ơi, nghỉ hè vui nhé,"
         }
       ],
       "skill": "cau",
       "answer": {
         "order": [
-          "tam-biet",
-          "hen-gap-lai",
-          "khai-giang"
+          "chao-trong",
+          "het-he",
+          "hen-gap-lai"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b11-doc-lt2-a"
-      ],
       "support": {
         "guide": [
-          "Thẻ viết hoa đứng đầu lời chào.",
-          "Thẻ có dấu chấm than đứng cuối."
+          "Thẻ viết hoa mở đầu lời chào.",
+          "Thẻ có dấu chấm than khép lời chào lại."
         ],
-        "hint": "Chào trước, hẹn sau: Tạm biệt…, hẹn gặp lại…",
+        "hint": "Chào trước, hẹn sau: Trống ơi… rồi hết hè… rồi em lại đến.",
         "answer": {
-          "text": "Tạm biệt trống nhé, hẹn gặp lại vào ngày khai giảng!",
-          "explanation": "Lời tạm biệt có câu chào và lời hẹn gặp lại khi năm học mới bắt đầu."
+          "text": "Trống ơi, nghỉ hè vui nhé, hết hè em lại đến chơi với trống!",
+          "explanation": "Lời tạm biệt có câu chúc trống nghỉ hè vui và lời hẹn sẽ quay lại khi hết hè."
         }
       },
       "feedback": {
@@ -566,27 +557,25 @@
         ],
         "wrong": [
           "Thẻ viết hoa phải đứng đầu, đó là lời chào.",
-          "Dấu chấm than nằm cuối câu nhé, chuyển nó về sau cùng.",
-          "Đọc thử: tạm biệt trống nhé… rồi hẹn gặp lại lúc nào?"
+          "Dấu chấm than nằm cuối lời chào nhé, chuyển nó về sau cùng.",
+          "Đọc thử: trống ơi, nghỉ hè vui nhé… rồi bao giờ em lại đến?"
         ]
-      }
+      },
+      "objective": "cau-xep-tu"
     },
     {
       "id": "noi-va-dap-tam-biet",
-      "title": "Nói và đáp lời tạm biệt",
+      "title": "Tập nói lời tạm biệt",
       "goTo": "Ra hiên chòi, Chó Lu đã ngồi chờ tập nói lời tạm biệt",
       "kind": "speak",
       "target": "tv2-t06-b11-cho-lu",
-      "prompt": "Nói và đáp: a. Lời tạm biệt của bạn học sinh với trống trường\nb. Lời tạm biệt bạn bè khi bắt đầu nghỉ hè\n{name} nói lời tạm biệt, Chó Lu đáp lại (xen vài tiếng “Gâu!” cho tình cảm), rồi hai bạn đổi vai.",
+      "prompt": "Tập nói lời tạm biệt trong hai tình huống: một bạn học sinh chào chiếc trống trường, và hai bạn chào nhau khi bắt đầu kì nghỉ hè.\n{name} nói lời tạm biệt, Chó Lu đáp lại (xen vài tiếng “Gâu!” cho tình cảm), rồi hai bạn đổi vai.",
       "hints": [
-        "Lời tạm biệt: Tạm biệt…, hẹn gặp lại…",
-        "Người đáp nói lại: Tạm biệt cậu, nghỉ hè vui vẻ nhé!",
+        "Nói lời chào, rồi hẹn ngày gặp lại.",
+        "Người đáp nói lại: chúc bạn nghỉ hè thật vui nhé!",
         "Nhìn bạn và mỉm cười khi nói lời tạm biệt."
       ],
-      "curriculumRef": [
-        "tv2-t1-b11-doc-lt2-a",
-        "tv2-t1-b11-doc-lt2-b"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "danh-thuc-trong-the-nao",
@@ -644,7 +633,7 @@
       "mechanic": "fill-blank",
       "target": "tv2-t06-trong-truong",
       "prompt": "Mỗi chữ {name} điền đúng là một tiếng trống vang lên. Đọc to khổ thơ cuối và đánh thức trống nào!",
-      "template": "Kìa trống đang {{b1}}:\nTùng! Tùng! Tùng! Tùng!\nVào năm học {{b2}}\nGiọng vang tưng {{b3}}.",
+      "template": "Sớm nay trống {{b1}}\nMừng em đến {{b2}}\nTùng tùng reo {{b3}}\nVui cả mùa thu",
       "blanks": [
         {
           "id": "b1",
@@ -654,8 +643,8 @@
               "text": "ngủ"
             },
             {
-              "id": "goi",
-              "text": "gọi"
+              "id": "thuc",
+              "text": "thức"
             }
           ]
         },
@@ -663,12 +652,12 @@
           "id": "b2",
           "options": [
             {
-              "id": "moi",
-              "text": "mới"
+              "id": "nha",
+              "text": "nhà"
             },
             {
-              "id": "cu",
-              "text": "cũ"
+              "id": "truong",
+              "text": "trường"
             }
           ]
         },
@@ -676,12 +665,12 @@
           "id": "b3",
           "options": [
             {
-              "id": "tung",
-              "text": "tửng"
+              "id": "vang",
+              "text": "vang"
             },
             {
-              "id": "bung",
-              "text": "bừng"
+              "id": "vang-mau",
+              "text": "vàng"
             }
           ]
         }
@@ -689,20 +678,20 @@
       "skill": "doc-hieu",
       "answer": {
         "fills": {
-          "b1": "goi",
-          "b2": "moi",
-          "b3": "bung"
+          "b1": "thuc",
+          "b2": "truong",
+          "b3": "vang"
         }
       },
       "support": {
         "guide": [
           "Nhớ lại khổ thơ cuối của bài.",
-          "Trống đang làm gì khi kêu “Tùng! Tùng!”?"
+          "Sáng khai giảng, trống đang thức hay đang ngủ?"
         ],
-        "hint": "Ngày khai giảng là ngày bắt đầu năm học mới.",
+        "hint": "Trống reo thì tiếng trống phải vang xa.",
         "answer": {
-          "text": "Kìa trống đang gọi: / Tùng! Tùng! Tùng! Tùng! / Vào năm học mới / Giọng vang tưng bừng.",
-          "explanation": "Khổ thơ cuối kể trống gọi các bạn vào năm học mới, giọng vang tưng bừng."
+          "text": "Sớm nay trống thức / Mừng em đến trường / Tùng tùng reo vang / Vui cả mùa thu.",
+          "explanation": "Khổ thơ cuối kể sớm nay trống thức dậy, mừng em đến trường, reo vang cả mùa thu."
         }
       },
       "feedback": {
@@ -712,11 +701,12 @@
           "Tuyệt vời! Cả trường nghe trống gọi, đàn chim sẻ trên mái bay lên chào."
         ],
         "wrong": [
-          "Trống đang ngủ thì làm sao kêu “Tùng!” được? Thử chữ khác nhé.",
-          "Khai giảng là năm học mới hay năm học cũ nhỉ?",
-          "Giọng trống vang tưng… gì? Đọc lại dòng thơ cuối thật to xem."
+          "Trống đang ngủ thì làm sao reo được? Thử chữ khác nhé.",
+          "Em đến đâu để học: nhà hay trường nhỉ?",
+          "Tiếng trống reo vang hay reo vàng? Đọc lại dòng thơ thật to xem."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "truong-em-co-gi-vui",
@@ -724,23 +714,21 @@
       "goTo": "Ra hồ cá nhỏ trong sân, Cá Chép Hồng nhảy vọt lên chào",
       "kind": "speak",
       "target": "tv2-t06-b11-ca-chep-hong",
-      "prompt": "Trống vừa thức dậy, Cá Chép Hồng đã ngoi lên hỏi ngay về trường của {name}, đuôi quẫy không ngừng.\nNói những điều em thích về trường của em.",
+      "prompt": "Trống vừa thức dậy, Cá Chép Hồng đã ngoi lên hỏi ngay về trường của {name}, đuôi quẫy không ngừng.\nKể cho Cá Chép Hồng nghe điều em thích nhất ở trường của em và vì sao.",
       "hints": [
-        "Trường em tên là gì? Ở đâu?",
-        "Điều gì khiến em cảm thấy yêu thích, muốn đến trường hằng ngày?"
+        "Trường em tên là gì? Nằm ở đâu?",
+        "Điều gì làm em háo hức muốn đến trường mỗi ngày?"
       ],
       "pictureRefs": [
         {
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "cổng Trường Tiểu học Quang Trung, hai bạn chạy vui; bóng nói: \"Tớ thích sân trường mình vì có nhiều cây.\" và \"Tớ thích bữa ăn trưa ở trường.\""
+            "caption": "cổng một ngôi trường làng có hàng phượng, hai bạn nhỏ trò chuyện; bóng nói: \"Tớ thích giờ ra chơi vì được nhảy dây.\" và \"Tớ thích góc đọc sách của trường.\""
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b11-noi-nghe-1"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "uoc-truong-thay-doi",
@@ -748,28 +736,50 @@
       "goTo": "Quay lên hiên chòi, Chó Lu đang nằm canh cổng chòi",
       "kind": "speak",
       "target": "tv2-t06-b11-cho-lu",
-      "prompt": "Em muốn trường mình có những thay đổi gì?\nNói với người thân những điều em muốn trường mình thay đổi.\nChó Lu thì chỉ ước cổng trường có thêm một bát nước mát và một cái đệm êm để nằm canh.",
+      "prompt": "Nếu được vẽ lại một góc của trường, em sẽ thêm hoặc đổi điều gì?\nNói với người thân điều em mong muốn.\nChó Lu thì chỉ ước cổng trường có thêm một bát nước mát và một cái đệm êm để nằm canh.",
       "hints": [
-        "Em muốn trường có thêm cây xanh, góc đọc sách hay sân chơi?",
-        "Vì sao em muốn trường thay đổi như thế?",
-        "Tối nay kể điều ước ấy cho bố mẹ nghe nhé."
+        "Em muốn thêm cây xanh, góc đọc sách hay sân chơi?",
+        "Vì sao em mong như vậy?",
+        "Tối nay, thử kể điều ước ấy cho người thân nghe."
       ],
-      "curriculumRef": [
-        "tv2-t1-b11-noi-nghe-2",
-        "tv2-t1-b11-van-dung-1"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "phieu-viet-bai-11",
-      "title": "Phiếu viết bài 11",
+      "title": "Phiếu viết chữ hoa Đ",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b11",
-      "text": "Nhờ bố mẹ in phiếu Bài 11 ở khu phụ huynh: tập viết chữ hoa Đ và câu ứng dụng “Đi một ngày đàng, học một sàng khôn.”, nét chữ đều như tiếng trống tùng tùng.",
-      "curriculumRef": [
-        "tv2-t1-b11-viet-chu-hoa-1",
-        "tv2-t1-b11-viet-ung-dung-2"
-      ]
+      "text": "Nhờ bố mẹ in phiếu viết ở khu phụ huynh: tập viết chữ hoa Đ, chép một câu về đàn chim đậu trên mái trường và viết vài dòng về điều em mong chờ khi trở lại trường. Nét chữ đều như tiếng trống tùng tùng.",
+      "sheet": {
+        "title": "Phiếu viết: chữ hoa Đ và ngày trở lại trường",
+        "blocks": [
+          {
+            "kind": "letter",
+            "prompt": "Tô rồi viết chữ hoa Đ",
+            "letters": [
+              "Đ"
+            ]
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: Đàn chim đậu trên mái trường.",
+            "model": [
+              "Đàn chim đậu trên mái trường."
+            ]
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Viết 2 – 3 câu nói về điều em mong chờ nhất khi trở lại trường sau mùa hè.",
+            "hints": [
+              "Em muốn gặp ai đầu tiên?",
+              "Em muốn làm gì ở sân trường?",
+              "Em thấy thế nào khi nghe tiếng trống?"
+            ],
+            "lines": 6
+          }
+        ]
+      },
+      "objective": "viet-chu-hoa"
     },
     {
       "id": "dui-trong-ti-hon",

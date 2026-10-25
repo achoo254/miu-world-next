@@ -4,18 +4,17 @@
   "chapter": 4,
   "title": "Gà Con Ri nhớ nhà giờ ra chơi",
   "status": "active",
-  "lesson": "tv2-t1-b13",
   "topic": "doc-tho",
-  "summary": "Giờ ra chơi, Gà Con Ri ngồi một mình dưới gốc phượng cạnh xích đu, nhớ ổ rơm và hỏi \"tại sao\" không ngớt. {name} cùng Mèo Khói và Heo Bột tìm niềm vui quanh cầu trượt, đọc bài thơ bên cửa sổ phòng mĩ thuật, kể chuyện bữa trưa ở căng tin để Ri thấy yêu ngôi trường mới.",
+  "summary": "Giờ ra chơi, Gà Con Ri ngồi một mình dưới gốc phượng cạnh xích đu, nhớ ổ rơm và hỏi \"tại sao\" không ngớt. {name} cùng Mèo Khói và Heo Bột tìm niềm vui quanh cầu trượt, đọc bài thơ lục bát bên cửa sổ phòng mĩ thuật, nghe chuyện hộp cơm ở căng tin để Ri thấy yêu ngôi trường mới.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Gà Con Ri (học sinh mới, hỏi \"Tại sao?\" liên tục), Mèo Khói điềm tĩnh ít lời, Heo Bột bếp trưởng ham ăn",
     "where": "Sân chơi của trường giờ ra chơi: gốc phượng cạnh xích đu, quanh cầu trượt, bậc thềm sân chơi, cửa sổ phòng mĩ thuật nhìn ra sân, căng tin trường và vách căng tin treo tranh",
     "goal": "Giúp Ri bớt nhớ nhà và thấy yêu ngôi trường mới",
-    "play": "Tìm đồ, hát, đọc thơ, ghép khổ thơ với tranh, chọn nhiều đáp án, điền từ, ghép câu, xếp tranh, kể chuyện, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 13: đọc bài thơ Yêu lắm trường ơi!, từ chỉ tình cảm, câu nêu đặc điểm, chữ hoa E, Ê, kể chuyện Bữa ăn trưa",
+    "play": "Tìm đồ, nói, đọc thơ, ghép cặp thơ với tranh, chọn nhiều đáp án, điền từ, ghép câu, xếp tranh, kể chuyện, phiếu viết",
+    "learn": "Đọc bài thơ lục bát \"Mái trường ven sông\" (tự viết): hiểu hình ảnh và tình cảm của bạn nhỏ, tìm từ chỉ tình cảm, ghép câu nêu đặc điểm; nghe kể và kể lại chuyện hộp cơm qua tranh; viết chữ hoa E, Ê",
     "reward": "80 XP, 15 xu, Đọc hiểu +2, Từ ngữ +1, Câu +1, Kể chuyện +1",
-    "next": "Bài 14 \"Em học vẽ\""
+    "next": "Cáo Cọ cạn hộp màu trong phòng mĩ thuật cạnh sân chơi"
   },
   "phases": {
     "hook": "chip-nho-nha",
@@ -28,11 +27,22 @@
     "next": "mo-bai-14"
   },
   "texts": {
-    "yeu-lam-truong-oi": {
-      "title": "Yêu lắm trường ơi!",
-      "author": "Nguyễn Trọng Hoàn",
-      "body": "Em yêu mái trường\nCó hàng cây mát\nXôn xao khúc nhạc\nTiếng chim xanh trời.\n\nMỗi giờ ra chơi\nSân trường nhộn nhịp\nHồng hào gương mặt\nBạn nào cũng xinh.\n\nYêu lớp học em\nCó khung cửa sổ\nCó bàn tay lá\nQuạt gió mát vào.\n\nLời cô ngọt ngào\nThấm từng trang sách\nNgày không đến lớp\nThấy nhớ nhớ ghê!\n\nCó đêm trong mơ\nBỗng cười khúc khích\nNgỡ đang ở lớp\nCùng bạn đùa vui.",
-      "section": "tv2-t1-b13-doc"
+    "mai-truong-ven-song": {
+      "title": "Mái trường ven sông",
+      "body": "Mái trường nằm sát bờ sông,\nPhi lao reo gió ngoài đồng sớm mai.\n\nGiờ ra chơi, tiếng reo dài,\nBạn nào cũng ướt đôi vai mồ hôi.\n\nBên bàn cửa sổ em ngồi,\nNhành bằng lăng vẫy, mây trôi đưa mơ.\n\nLời cô giảng ngọt như thơ,\nTrang vở thơm mãi, em chờ giờ sau.\n\nNghỉ hè, em nhớ trường lâu,\nTrống vang gọi bạn qua cầu về sân.",
+      "glossary": [
+        {
+          "term": "Phi lao",
+          "meaning": "loài cây thân thẳng, lá nhỏ như kim, hay mọc ven sông ven biển."
+        },
+        {
+          "term": "Bằng lăng",
+          "meaning": "loài cây có hoa màu tím nở vào mùa hè."
+        }
+      ],
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -112,34 +122,30 @@
     },
     {
       "id": "hat-em-yeu-truong-em",
-      "title": "Hát cho Ri nghe",
+      "title": "Một câu hát cho Ri nghe",
       "goTo": "Mang ba niềm vui tới bậc thềm sân chơi, Mèo Khói đang chờ",
       "kind": "speak",
       "target": "tv2-t07-b13-meo-khoi",
-      "prompt": "Mèo Khói ít nói, hôm nay cũng chỉ nói một câu: hát lên, nỗi buồn sẽ bay mất.\nHát bài Em yêu trường em của nhạc sĩ Hoàng Vân.",
+      "prompt": "Mèo Khói ít nói, hôm nay cũng chỉ nói đúng một câu: nghe ai ngân nga là nỗi buồn tự tan. Hãy chọn một bài hát hay một câu thơ về trường lớp mà {name} thuộc, rồi đọc hoặc hát cho Ri nghe.",
       "hints": [
-        "Hát chậm thôi, vừa hát vừa vỗ tay theo nhịp.",
+        "Ngân chậm thôi, vừa đọc vừa vỗ tay theo nhịp.",
         "Ri chưa thuộc lời, {name} hát trước để bạn ấy hát theo nhé."
       ],
-      "curriculumRef": [
-        "tv2-t1-b13-doc-kd1"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "tinh-cam-ban-nho",
-      "title": "Bạn nhỏ trong bài hát",
+      "title": "Điều {name} thích ở trường",
       "goTo": "Về gốc phượng, Ri vừa nghe xong bài hát",
       "kind": "speak",
       "target": "tv2-t07-b13-ga-con-ri",
-      "prompt": "Ri nghe xong thì nghiêng đầu, chiếp một tiếng: tại sao bạn trong bài hát lại vui đến thế?\nBạn nhỏ trong bài hát có tình cảm như thế nào với ngôi trường của mình?",
+      "prompt": "Nghe xong, Ri nghiêng đầu, chiếp một tiếng: tại sao ai cũng bảo trường vui? Ở ngôi trường của mình, {name} thích nhất điều gì, và vì sao?",
       "hints": [
-        "Bạn nhỏ thấy trường mình buồn tẻ hay đáng yêu?",
-        "Bạn ấy có mong được đến trường mỗi ngày không?",
-        "Thử nói trọn câu: Bạn nhỏ rất… ngôi trường của mình."
+        "Có thể là một góc sân, một người bạn hay một giờ học.",
+        "Cậu thấy thế nào mỗi khi ở đó?",
+        "Thử nói trọn câu: Mình thích … vì …"
       ],
-      "curriculumRef": [
-        "tv2-t1-b13-doc-kd2"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "doc-bai-tho",
@@ -147,53 +153,51 @@
       "goTo": "Ghé cửa sổ phòng mĩ thuật, nơi cành lá to đang vẫy vẫy",
       "kind": "read",
       "target": "tv2-t07-cua-so-la",
-      "textRef": "yeu-lam-truong-oi",
+      "textRef": "mai-truong-ven-song",
       "audio": true,
-      "question": "Chiếc lá to bên cửa sổ phe phẩy như đang quạt cho cả lớp. Bài thơ khắc ngay trên khung gỗ, Ri đọc xong là hỏi liền.\nTìm những câu thơ tả các bạn học sinh trong giờ ra chơi.",
+      "question": "Chiếc lá to ngoài cửa sổ phe phẩy như đang quạt cho cả phòng. Bài thơ khắc ngay trên khung gỗ, Ri đọc xong là hỏi liền: giờ ra chơi trong bài thơ diễn ra thế nào?",
       "choices": [
         {
-          "id": "guong-mat",
-          "text": "Hồng hào gương mặt / Bạn nào cũng xinh."
+          "id": "reo-vang",
+          "text": "Tiếng reo vang dài, bạn nào cũng ướt mồ hôi vì mải chơi."
         },
         {
-          "id": "san-truong",
-          "text": "Mỗi giờ ra chơi / Sân trường nhộn nhịp"
+          "id": "vang-lang",
+          "text": "Sân trường vắng lặng, ai cũng ngồi im trong phòng."
         },
         {
-          "id": "cua-so",
-          "text": "Có khung cửa sổ / Có bàn tay lá"
+          "id": "mua-to",
+          "text": "Mưa đổ xuống, các bạn trú dưới mái hiên chờ tạnh."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "guong-mat"
+        "choice": "reo-vang"
       },
-      "curriculumRef": [
-        "tv2-t1-b13-doc-2"
-      ],
       "support": {
         "guide": [
-          "Đọc lại khổ thơ thứ hai, khổ nói về giờ ra chơi.",
-          "Câu nào nói về gương mặt của các bạn?"
+          "Đọc lại cặp câu thứ hai của bài thơ.",
+          "Tiếng reo và đôi vai ướt cho em biết các bạn đang làm gì?"
         ],
-        "hint": "Hai câu cần tìm là hai dòng cuối của khổ thơ thứ hai.",
+        "hint": "Ướt mồ hôi cả hai vai thì chắc chắn đã chạy nhảy rất nhiều.",
         "answer": {
-          "text": "Hai câu thơ: Hồng hào gương mặt, Bạn nào cũng xinh.",
-          "explanation": "Hai dòng cuối khổ hai tả các bạn giờ ra chơi: má hồng hào, bạn nào cũng xinh."
+          "text": "Sân trường rộn tiếng reo, các bạn nô đùa đến ướt cả vai áo.",
+          "explanation": "Cặp câu thứ hai tả giờ chơi có tiếng reo vang dài, và ai cũng đẫm mồ hôi vì mải vui."
         }
       },
       "feedback": {
         "right": [
-          "Ri vỗ cánh phành phạch: tìm ra rồi, má bạn nào cũng hồng!",
-          "Đúng rồi! Mèo Khói gật gù, cả bộ râu gật theo.",
-          "Chuẩn! Hai dòng ấy tả các bạn xinh như hoa giờ ra chơi."
+          "Ri vỗ cánh phành phạch: giờ chơi nào cũng ồn ào như thế đấy!",
+          "Chuẩn rồi! Mèo Khói gật gù, cả chùm râu gật theo.",
+          "Đúng thế, tiếng reo vang dài khắp sân là của giờ ra chơi."
         ],
         "wrong": [
-          "Ối, trượt mất rồi! Tìm dòng thơ có chữ \"gương mặt\" nhé.",
-          "Câu cần tìm phải tả các bạn, chứ chưa phải tả sân hay tả lớp.",
-          "Gần lắm rồi! Đọc chậm hai dòng cuối của khổ thứ hai xem."
+          "Ối, trượt mất rồi! Đọc lại cặp câu bắt đầu bằng \"Giờ ra chơi\" nhé.",
+          "Bài thơ đâu có nhắc tới mưa hay sân vắng, tìm lại hai dòng thơ ấy xem.",
+          "Gần lắm! Bạn nào cũng ướt vai thì đang chơi hay đang ngồi yên nhỉ?"
         ]
-      }
+      },
+      "objective": "doc-tho-doc-to"
     },
     {
       "id": "khop-kho-tho-voi-tranh",
@@ -201,19 +205,19 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t07-cua-so-la",
-      "prompt": "Mèo Khói lấy ra ba bức tranh vẽ trường lớp. Ri hỏi ngay: tại sao tranh nào cũng có bạn đang cười?\nĐọc khổ thơ tương ứng với từng bức tranh dưới đây:\nKéo mỗi khổ thơ về đúng tranh. Khổ nào chưa có tranh thì thả vào giỏ \"Chưa có tranh\".",
+      "prompt": "Mèo Khói lấy ra ba bức tranh vẽ trường lớp. Ri hỏi ngay: tại sao tranh nào cũng có bạn đang cười? Kéo mỗi cặp dòng thơ về bức tranh kể đúng điều ấy. Cặp nào chưa có tranh thì thả vào giỏ \"Chưa có tranh\".",
       "groups": [
         {
           "id": "tranh-1",
-          "label": "Tranh 1: sân trường có hàng cây, các bạn nhảy dây, chơi đùa"
+          "label": "Tranh 1: sân trường rộn rã, các bạn chạy nhảy và reo hò"
         },
         {
           "id": "tranh-2",
-          "label": "Tranh 2: bạn gái ngồi bên khung cửa sổ, cành lá xanh vươn vào"
+          "label": "Tranh 2: một bạn ngồi bên cửa sổ, nhành hoa tím vẫy ngoài kia"
         },
         {
           "id": "tranh-3",
-          "label": "Tranh 3: bạn gái nằm ngủ mỉm cười trên giường"
+          "label": "Tranh 3: các bạn nhỏ qua chiếc cầu bắc ngang sông, tiếng trống vọng từ sân trường"
         },
         {
           "id": "chua-co-tranh",
@@ -223,23 +227,23 @@
       "items": [
         {
           "id": "kho-4",
-          "label": "Lời cô ngọt ngào\nThấm từng trang sách\nNgày không đến lớp\nThấy nhớ nhớ ghê!"
+          "label": "Lời cô giảng ngọt như thơ,\nTrang vở thơm mãi, em chờ giờ sau."
         },
         {
           "id": "kho-2",
-          "label": "Mỗi giờ ra chơi\nSân trường nhộn nhịp\nHồng hào gương mặt\nBạn nào cũng xinh."
+          "label": "Giờ ra chơi, tiếng reo dài,\nBạn nào cũng ướt đôi vai mồ hôi."
         },
         {
           "id": "kho-5",
-          "label": "Có đêm trong mơ\nBỗng cười khúc khích\nNgỡ đang ở lớp\nCùng bạn đùa vui."
+          "label": "Nghỉ hè, em nhớ trường lâu,\nTrống vang gọi bạn qua cầu về sân."
         },
         {
           "id": "kho-1",
-          "label": "Em yêu mái trường\nCó hàng cây mát\nXôn xao khúc nhạc\nTiếng chim xanh trời."
+          "label": "Mái trường nằm sát bờ sông,\nPhi lao reo gió ngoài đồng sớm mai."
         },
         {
           "id": "kho-3",
-          "label": "Yêu lớp học em\nCó khung cửa sổ\nCó bàn tay lá\nQuạt gió mát vào."
+          "label": "Bên bàn cửa sổ em ngồi,\nNhành bằng lăng vẫy, mây trôi đưa mơ."
         }
       ],
       "skill": "doc-hieu",
@@ -252,63 +256,59 @@
           "kho-5": "tranh-3"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b13-doc-1-a",
-        "tv2-t1-b13-doc-1-b",
-        "tv2-t1-b13-doc-1-c"
-      ],
       "support": {
         "guide": [
-          "Tranh 1 vẽ giờ ra chơi: tìm khổ thơ có \"giờ ra chơi\".",
-          "Tranh 2 có khung cửa sổ, tranh 3 có bạn đang ngủ mơ."
+          "Tranh 1 vẽ giờ chơi: tìm cặp thơ có chữ \"giờ ra chơi\".",
+          "Tranh 2 có khung cửa sổ, tranh 3 có chiếc cầu và tiếng trống."
         ],
-        "hint": "Khổ thơ đầu và khổ thơ thứ tư chưa có tranh nào vẽ.",
+        "hint": "Cặp thơ đầu tiên và cặp thơ nói về cô giáo chưa có tranh nào vẽ.",
         "answer": {
-          "text": "Tranh 1: khổ hai (Mỗi giờ ra chơi…). Tranh 2: khổ ba (Yêu lớp học em…). Tranh 3: khổ năm (Có đêm trong mơ…).",
-          "explanation": "Mỗi tranh vẽ đúng điều khổ thơ kể: giờ ra chơi nhộn nhịp, khung cửa sổ có bàn tay lá, giấc mơ cười khúc khích."
+          "text": "Tranh 1: cặp thơ thứ hai. Tranh 2: cặp thơ thứ ba. Tranh 3: cặp thơ cuối cùng.",
+          "explanation": "Mỗi tranh vẽ đúng điều cặp thơ kể: sân chơi ồn ã, bạn ngồi cạnh cửa sổ, đoàn bạn qua cầu về trường."
         }
       },
       "feedback": {
         "right": [
-          "Ba tranh tìm đúng khổ thơ, Ri ngắm mãi không chán!",
+          "Ba bức tranh tìm đúng cặp thơ, Ri ngắm mãi không chán!",
           "Khớp hết! Mèo Khói khẽ \"meo\" một tiếng, thế là khen to lắm rồi.",
-          "Tài thật, giấc mơ cười khúc khích đã về đúng tranh 3."
+          "Tài thật, tiếng trống và chiếc cầu đã về đúng tranh số ba."
         ],
         "wrong": [
-          "Có khổ thơ đi lạc tranh rồi. Tranh nào có bạn đang ngủ nhỉ?",
-          "Khổ có \"bàn tay lá\" hợp với tranh có khung cửa sổ đấy.",
-          "Khổ nói về hàng cây và tiếng chim chưa có tranh nào vẽ đâu."
+          "Có cặp thơ đi lạc tranh rồi. Tranh nào có một bạn ngồi bên cửa sổ nhỉ?",
+          "Cặp thơ có nhành hoa tím và mây trôi hợp với tranh ngồi bên cửa sổ đấy.",
+          "Cặp thơ nói về bờ sông và về lời cô giảng thì chưa có tranh nào đâu."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "ban-nho-yeu-gi",
-      "title": "Bạn nhỏ yêu những gì?",
+      "title": "Bạn nhỏ nhắc tới những gì?",
       "goTo": "Chạy về gốc phượng, Ri đang đếm trên đầu cánh",
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t07-b13-ga-con-ri",
-      "prompt": "Ri đếm trên đầu cánh: hàng cây, tiếng chim… rồi rối tung cả lên. Giúp bạn ấy nhé!\nBạn nhỏ yêu những gì ở trường, lớp của mình?\nChọn tất cả những điều bạn nhỏ yêu.",
+      "prompt": "Ri đếm trên đầu cánh: phi lao, bể bơi… rồi rối tung cả lên. Giúp bạn ấy nhé! Trong bài thơ, bạn nhỏ nhắc tới những điều nào ở trường mình? Chọn tất cả.",
       "choices": [
         {
-          "id": "hang-cay",
-          "text": "Mái trường có hàng cây mát"
+          "id": "phi-lao",
+          "text": "Phi lao reo gió ngoài đồng"
         },
         {
           "id": "cau-truot",
           "text": "Chiếc cầu trượt thật cao"
         },
         {
-          "id": "tieng-chim",
-          "text": "Tiếng chim xanh trời"
+          "id": "tieng-reo",
+          "text": "Tiếng reo vang dài giờ ra chơi"
         },
         {
           "id": "be-boi",
           "text": "Bể bơi nước trong veo"
         },
         {
-          "id": "cua-so-ban-tay-la",
-          "text": "Khung cửa sổ có bàn tay lá"
+          "id": "bang-lang",
+          "text": "Nhành bằng lăng ngoài cửa sổ"
         },
         {
           "id": "tuong-da",
@@ -316,97 +316,93 @@
         },
         {
           "id": "loi-co",
-          "text": "Lời cô ngọt ngào"
+          "text": "Lời cô giảng ngọt như thơ"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
-          "hang-cay",
-          "tieng-chim",
-          "cua-so-ban-tay-la",
+          "phi-lao",
+          "tieng-reo",
+          "bang-lang",
           "loi-co"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b13-doc-3"
-      ],
       "support": {
         "guide": [
-          "Đọc khổ một: mái trường của bạn nhỏ có gì?",
-          "Đọc khổ ba và khổ bốn: lớp học có gì, lời cô thế nào?"
+          "Đọc từng cặp câu và gạch chân những điều bạn nhỏ nhìn thấy hoặc nghe thấy.",
+          "Chỉ chọn điều có trong bài, đừng chọn điều em tự nghĩ ra."
         ],
         "hint": "Bài thơ không hề nhắc tới cầu trượt, bể bơi hay tượng đá.",
         "answer": {
-          "text": "Mái trường có hàng cây mát; tiếng chim xanh trời; khung cửa sổ có bàn tay lá; lời cô ngọt ngào.",
-          "explanation": "Bạn nhỏ yêu mái trường có hàng cây và tiếng chim, yêu lớp học có khung cửa sổ, bàn tay lá, yêu cả lời cô ngọt ngào."
+          "text": "Gió trong hàng phi lao, tiếng reo giờ chơi, nhành bằng lăng và lời cô giảng.",
+          "explanation": "Bốn điều ấy nằm ở các cặp câu một, hai, ba và bốn; ba thứ còn lại không có chữ nào trong bài."
         }
       },
       "feedback": {
         "right": [
           "Đủ bốn điều! Ri đếm lại trên cánh, lần này không rối nữa.",
-          "Chọn khéo ghê! Hàng cây với bàn tay lá cùng vẫy chào {name}.",
-          "Chính xác, bạn nhỏ yêu từ tiếng chim tới lời cô."
+          "Chọn khéo ghê! Nhành bằng lăng ngoài kia cũng vẫy chào {name}.",
+          "Chính xác, bài thơ nhắc từ gió phi lao tới lời cô giảng."
         ],
         "wrong": [
-          "Có lựa chọn không hề có trong bài thơ. Đọc lại khổ một xem.",
-          "Còn sót một điều ở khổ bốn, khổ nói về cô giáo đấy.",
-          "Ri thì thầm: bể bơi với cầu trượt là tớ mơ thôi, bài thơ đâu có kể."
+          "Có lựa chọn không hề xuất hiện trong bài. Đọc lại từng cặp câu xem.",
+          "Còn sót một điều ở cặp câu nói về cô giáo đấy.",
+          "Ri thì thầm: bể bơi với tượng đá là tớ mơ thôi, bài thơ đâu có kể."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "nho-loi-co",
-      "title": "Ngày nghỉ nhớ cô giáo",
+      "title": "Lời cô giống gì?",
       "goTo": "Ra bậc thềm sân chơi, Mèo Khói đang ngồi liếm chân rửa mặt",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t07-b13-meo-khoi",
-      "prompt": "Mèo Khói rửa mặt xong mới hỏi, đúng một câu, chẳng thừa chữ nào.\nBạn nhỏ nhớ gì về cô giáo khi không đến lớp?",
+      "prompt": "Mèo Khói rửa mặt xong mới hỏi, đúng một câu, chẳng thừa chữ nào. Trong bài thơ, lời cô giảng được ví như gì?",
       "choices": [
         {
-          "id": "ao-dai",
-          "text": "Tà áo dài của cô"
+          "id": "tho",
+          "text": "Một bài thơ"
         },
         {
-          "id": "loi-co",
-          "text": "Lời cô ngọt ngào"
+          "id": "mua-rao",
+          "text": "Một cơn mưa rào"
         },
         {
-          "id": "but-do",
-          "text": "Cây bút đỏ cô chấm bài"
+          "id": "tieng-chuong",
+          "text": "Một hồi chuông"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "loi-co"
+        "choice": "tho"
       },
-      "curriculumRef": [
-        "tv2-t1-b13-doc-4"
-      ],
       "support": {
         "guide": [
-          "Tìm khổ thơ có câu \"Ngày không đến lớp\".",
-          "Đọc dòng đầu tiên của khổ thơ đó."
+          "Tìm cặp câu nhắc tới cô giáo.",
+          "Dòng ấy kết thúc bằng một từ chỉ loại bài em đang đọc đây."
         ],
-        "hint": "Lời cô thấm vào từng trang sách.",
+        "hint": "Dòng thơ nói lời cô giảng ngọt như thế nào ấy.",
         "answer": {
-          "text": "Bạn nhỏ nhớ lời cô ngọt ngào.",
-          "explanation": "Khổ thơ thứ tư kể: lời cô ngọt ngào thấm từng trang sách, ngày không đến lớp bạn nhỏ thấy nhớ nhớ ghê."
+          "text": "Lời cô được so sánh với thơ.",
+          "explanation": "Dòng bảy viết lời cô giảng ngọt như thơ, nghĩa là nghe êm tai và dễ thương như câu thơ."
         }
       },
       "feedback": {
         "right": [
           "Đúng! Mèo Khói nheo mắt cười, nói ít mà vui nhiều.",
-          "Lời cô ngọt như mật, Ri chép chép cái mỏ.",
-          "Chuẩn rồi, lời cô ngọt ngào thấm từng trang sách."
+          "Lời cô êm như thơ, Ri chép chép cái mỏ vào vở.",
+          "Chuẩn rồi, hình ảnh so sánh ấy nằm ngay dòng đầu cặp câu thứ tư."
         ],
         "wrong": [
-          "Chưa đúng rồi. Đọc lại khổ thơ thứ tư thật chậm nhé.",
-          "Tìm chữ \"ngọt ngào\" trong bài thơ xem nó đi cùng ai.",
-          "Gần rồi! Khổ có câu \"Thấy nhớ nhớ ghê!\" sẽ mách em đáp án."
+          "Chưa đúng rồi. Đọc lại cặp câu thứ tư thật chậm nhé.",
+          "Bài thơ không nhắc mưa rào hay chuông, tìm chữ đứng sau \"ngọt như\".",
+          "Gần rồi! Dòng thơ có chữ \"giảng\" sẽ mách em đáp án."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "tu-the-hien-tinh-cam",
@@ -414,27 +410,27 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t07-b13-meo-khoi",
-      "prompt": "Ri ríu rít: tại sao bài thơ lại tên là \"Yêu lắm trường ơi!\"? Mèo Khói đáp gọn: tìm ra một từ là hiểu.\nTừ nào trong bài thơ thể hiện rõ nhất tình cảm của bạn nhỏ dành cho trường lớp?",
-      "template": "Từ cần tìm là: {{b1}}",
+      "prompt": "Ri ríu rít: tại sao nghỉ hè mà bạn nhỏ vẫn nhắc mãi tới trường? Mèo Khói đáp gọn: điền đúng một từ chỉ tình cảm là hiểu.",
+      "template": "Nghỉ hè, bạn nhỏ {{b1}} trường lâu.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "xinh",
-              "text": "xinh"
+              "id": "quen",
+              "text": "quên"
             },
             {
-              "id": "yeu",
-              "text": "yêu"
+              "id": "nho",
+              "text": "nhớ"
             },
             {
-              "id": "mat",
-              "text": "mát"
+              "id": "chan",
+              "text": "chán"
             },
             {
-              "id": "nhon-nhip",
-              "text": "nhộn nhịp"
+              "id": "so",
+              "text": "sợ"
             }
           ]
         }
@@ -442,35 +438,33 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "b1": "yeu"
+          "b1": "nho"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b13-doc-lt1"
-      ],
       "support": {
         "guide": [
-          "Đọc dòng mở đầu của khổ một và khổ ba.",
-          "Từ cần tìm có cả trong tên bài thơ."
+          "Đọc dòng đầu của cặp câu cuối cùng trong bài thơ.",
+          "Từ cần điền nói bạn nhỏ cảm thấy thế nào khi xa trường."
         ],
-        "hint": "\"Em … mái trường\", \"… lớp học em\": hai chỗ trống là cùng một từ.",
+        "hint": "Người ta hay có tình cảm này khi xa một nơi thân thuộc.",
         "answer": {
-          "text": "Từ \"yêu\" thể hiện rõ nhất tình cảm của bạn nhỏ.",
-          "explanation": "Từ \"yêu\" có trong tên bài và mở đầu hai khổ thơ: Em yêu mái trường, Yêu lớp học em."
+          "text": "Bạn nhỏ nhớ trường dù đang nghỉ hè.",
+          "explanation": "Cặp câu cuối nói: nghỉ hè, em nhớ trường lâu; từ \"nhớ\" chỉ tình cảm gắn bó với ngôi trường."
         }
       },
       "feedback": {
         "right": [
-          "Yêu! Ri hét to đến nỗi chim trên cành giật mình bay vút.",
-          "Đúng từ ấy rồi, ngắn tũn mà chứa cả trái tim.",
+          "Nhớ! Ri hét to đến nỗi chim trên cành giật mình bay vút.",
+          "Đúng từ ấy rồi, ngắn tũn mà chứa cả một nỗi niềm.",
           "Mèo Khói vẫy đuôi một cái thật chậm: chuẩn."
         ],
         "wrong": [
-          "Từ này chỉ tả cảnh hay tả người thôi. Tìm từ nói về tình cảm cơ.",
-          "Nhìn lại tên bài thơ nhé, đáp án nằm sẵn ở đó.",
-          "Thử đặt từ em chọn vào \"Em … mái trường\" xem có hợp không."
+          "Từ này chưa hợp với một bạn rất yêu trường. Đọc lại câu cuối bài nhé.",
+          "Thử đọc to cả câu sau khi điền, nghe có xuôi tai không?",
+          "Người ở xa một nơi mình thương thường thấy gì nhỉ? Thử lại nào."
         ]
-      }
+      },
+      "objective": "tu-ngu-tinh-cam-dien-tu"
     },
     {
       "id": "ghep-cau-dac-diem",
@@ -479,71 +473,67 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t07-b13-ga-con-ri",
-      "prompt": "Ri nhặt được ba mảnh gỗ khắc chữ, mảnh nào cũng thiếu mất nửa sau. Tại sao lại thiếu nhỉ?\nKết hợp từ ngữ ở cột A với từ ngữ ở cột B để tạo câu nêu đặc điểm.\nKéo mỗi thẻ ở cột B về đúng chỗ ở cột A.",
+      "prompt": "Ri nhặt được ba mảnh gỗ khắc chữ, mảnh nào cũng thiếu mất nửa sau. Tại sao lại thiếu nhỉ? Kéo mỗi thẻ vào đúng mảnh gỗ để được một câu nêu đặc điểm.",
       "groups": [
         {
-          "id": "a-guong-mat",
-          "label": "Gương mặt các bạn"
-        },
-        {
-          "id": "a-loi-co",
-          "label": "Lời cô"
+          "id": "a-giong-co",
+          "label": "Giọng cô giáo"
         },
         {
           "id": "a-san-truong",
-          "label": "Sân trường"
+          "label": "Sân trường giờ ra chơi"
+        },
+        {
+          "id": "a-bang-lang",
+          "label": "Nhành bằng lăng"
         }
       ],
       "items": [
         {
-          "id": "nhon-nhip",
-          "label": "nhộn nhịp."
+          "id": "on-a",
+          "label": "ồn ã."
         },
         {
-          "id": "ngot-ngao",
-          "label": "ngọt ngào."
+          "id": "tim-biec",
+          "label": "tím biếc."
         },
         {
-          "id": "xinh-xan",
-          "label": "xinh xắn."
+          "id": "am-ap",
+          "label": "ấm áp."
         }
       ],
       "skill": "cau",
       "answer": {
         "assignment": {
-          "xinh-xan": "a-guong-mat",
-          "ngot-ngao": "a-loi-co",
-          "nhon-nhip": "a-san-truong"
+          "am-ap": "a-giong-co",
+          "tim-biec": "a-bang-lang",
+          "on-a": "a-san-truong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b13-doc-lt2-a",
-        "tv2-t1-b13-doc-lt2-b",
-        "tv2-t1-b13-doc-lt2-c"
-      ],
       "support": {
         "guide": [
           "Đọc to từng câu vừa ghép xem nghe có xuôi không.",
-          "Gương mặt thì xinh hay ồn ào? Sân trường giờ ra chơi thì sao?"
+          "Giọng nói thì ấm hay tím? Sân giờ ra chơi thì yên hay ồn?"
         ],
-        "hint": "Sân trường giờ ra chơi đông vui, rộn ràng.",
+        "hint": "Màu sắc thì hợp với một loài hoa.",
         "answer": {
-          "text": "Gương mặt các bạn xinh xắn. Lời cô ngọt ngào. Sân trường nhộn nhịp.",
-          "explanation": "Ba câu nêu đặc điểm: các bạn xinh xắn, lời cô ngọt ngào, sân trường giờ ra chơi nhộn nhịp."
+          "text": "Giọng cô giáo ấm áp. Sân trường giờ ra chơi ồn ã. Nhành bằng lăng tím biếc.",
+          "explanation": "Mỗi câu nêu đặc điểm: giọng cô nghe ấm áp, sân chơi đông nên ồn ã, hoa bằng lăng có màu tím biếc."
         }
       },
       "feedback": {
         "right": [
           "Ba câu ghép khít như mảnh gỗ ráp mộng!",
           "Ri đọc to cả ba câu, giọng không còn run run nữa.",
-          "Hay quá, sân trường nhộn nhịp đúng y như lúc này."
+          "Hay quá, sân trường giờ chơi ồn ã đúng y như lúc này."
         ],
         "wrong": [
           "Có một câu nghe chưa xuôi tai. Đọc to từng câu thử xem.",
-          "Thử ghép \"xinh xắn\" với gương mặt các bạn xem sao.",
-          "Sân trường giờ ra chơi đông vui lắm, tìm thẻ hợp với nó nhé."
+          "Thử ghép \"tím biếc\" với thứ có màu sắc, như một loài hoa.",
+          "Sân trường giờ ra chơi đông vui, tìm thẻ hợp với nó nhé."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-cau-dac-diem"
     },
     {
       "id": "heo-un-goi-an-trua",
@@ -562,7 +552,19 @@
         },
         {
           "speaker": "Heo Bột",
-          "text": "Vì ăn cùng bạn thì miếng nào cũng ngon gấp đôi! Tớ thử rồi, ăn liền hai bát. Ụt ịt!"
+          "text": "Vì ăn cùng bạn thì miếng nào cũng ngon gấp đôi! Để tớ kể chuyện hộp cơm bị quên nhé. Hôm ấy, Thỏ Mơ mở cặp ra mà chẳng thấy hộp cơm đâu, bụng kêu ọc ọc."
+        },
+        {
+          "speaker": "Heo Bột",
+          "text": "Cún Bông ngồi cạnh liền nhích sang, gắp cho bạn một miếng trứng. Chim Sẻ góp nắm xôi, Vịt Xiêm chia nửa bát canh."
+        },
+        {
+          "speaker": "Heo Bột",
+          "text": "Chiếc nắp hộp của Cún Bông thành cái mâm đầy ắp, cả nhóm ngồi quây quanh cười rôm rả."
+        },
+        {
+          "speaker": "Heo Bột",
+          "text": "Hôm sau, Thỏ Mơ mang tới một hộp cơm thật to, mời cả nhóm cùng ăn. Ụt ịt, kể xong là tớ đói cồn cào!"
         }
       ],
       "choices": [
@@ -571,26 +573,29 @@
           "reply": "Ngồi cạnh cậu thì được! Mà tại sao Heo Bột ăn những hai bát?"
         },
         {
-          "text": "Heo Bột kể chuyện bữa trưa đi!",
-          "reply": "Ụt ịt, có ngay! Chuyện về món ăn của biển và của đồi núi đấy."
+          "text": "Chuyện hay quá, tớ cũng muốn chia cơm cho bạn!",
+          "reply": "Ụt ịt, vậy mai tớ mang thêm hai bát cho cậu chia nhé!"
         }
       ],
       "en": {
         "title": "Heo Bột calls everyone to lunch",
-        "goTo": "Follow the smell of rice to the school canteen, Heo Bột is clanging a ladle",
+        "goTo": "Follow the smell of rice to the school canteen, where Heo Bột is tapping a ladle, ting ting",
         "lines": [
-          "Oink oink! The drum says it's lunchtime! Today there are rice balls, braised fish and squash soup; the whole schoolyard smells delicious.",
-          "Why do we have to eat lunch at school? At home, my mum roasts lovely toasty grain.",
-          "Because eating with friends makes every bite twice as tasty! I tested it, I had two whole bowls. Oink oink!"
+          "Oink! The drum says lunchtime! Today there are rice balls, braised fish and pumpkin soup, and the whole yard smells wonderful.",
+          "Why do we have to eat lunch at school? At home my mum roasts grain that smells so good.",
+          "Because food shared with friends tastes twice as good! Let me tell you about the forgotten lunchbox. One day Thỏ Mơ opened his bag and found no lunchbox at all, and his tummy rumbled.",
+          "Cún Bông, sitting next to him, scooted closer and picked a piece of egg for him. Chim Sẻ added a rice ball, and Vịt Xiêm shared half a bowl of soup.",
+          "Cún Bông's lunchbox lid turned into a tray piled high, and the whole group sat around it laughing.",
+          "The next day Thỏ Mơ brought a huge lunchbox and invited everyone to eat together. Oink, telling that made me hungry!"
         ],
         "choices": [
           {
-            "text": "Sit next to me for lunch, Ri!",
-            "reply": "Sitting next to you, okay! But why did Heo Bột eat two bowls?"
+            "text": "Ri, sit next to me for lunch!",
+            "reply": "I can sit next to you! But why does Heo Bột eat two whole bowls?"
           },
           {
-            "text": "Tell us a lunchtime story, Heo Bột!",
-            "reply": "Oink oink, coming right up! It's about food from the sea and food from the hills."
+            "text": "What a great story, I want to share my lunch with a friend too!",
+            "reply": "Oink, then tomorrow I'll bring two extra bowls for you to share!"
           }
         ]
       }
@@ -602,49 +607,49 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t07-tranh-bua-trua",
-      "prompt": "Trên vách căng tin treo bốn bức tranh kể chuyện Bữa ăn trưa, nhưng Heo Bột mải nếm canh nên dán lộn hết cả.\nNghe kể chuyện.\nXếp các tranh theo đúng thứ tự câu chuyện.",
+      "prompt": "Bốn bức tranh vẽ chuyện hộp cơm Heo Bột vừa kể bị gió thổi tung trên vách căng tin, vì Heo Bột mải nếm canh nên dán lộn hết cả. Xếp lại cho đúng thứ tự câu chuyện nhé.",
       "items": [
         {
           "id": "tranh-3",
-          "label": "Thầy hỏi khay cơm của bạn gái",
+          "label": "Cả nhóm ăn chung",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "tranh 3: thầy chỉ vào khay cơm của bạn gái; bóng nói: \"Món này là của biển hay của đồi núi?\""
+              "caption": "tranh 3: cả nhóm bạn ngồi quanh chiếc nắp hộp cơm đầy ắp, ai cũng cười rạng rỡ"
             }
           }
         },
         {
           "id": "tranh-1",
-          "label": "Thầy hiệu trưởng hỏi cả lớp",
+          "label": "Thỏ Mơ mở cặp",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "tranh 1: thầy hiệu trưởng đứng hỏi các bạn ngồi ăn trưa; bóng nói: \"Các em có đem theo món ăn của biển và của đồi núi không?\""
+              "caption": "tranh 1: Thỏ Mơ lục cặp sách, mặt buồn thiu, hộp cơm không có trong cặp"
             }
           }
         },
         {
           "id": "tranh-4",
-          "label": "Cả lớp chắp tay trước bữa ăn",
+          "label": "Hôm sau Thỏ Mơ chia cơm",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "tranh 4: các bạn ngồi bên hộp cơm, vui vẻ chắp tay trước bữa ăn"
+              "caption": "tranh 4: Thỏ Mơ bê hộp cơm thật to ra mời các bạn cùng ăn"
             }
           }
         },
         {
           "id": "tranh-2",
-          "label": "Cô cấp dưỡng gắp thêm thức ăn",
+          "label": "Các bạn góp thức ăn",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "tranh 2: cô cấp dưỡng gắp thêm thức ăn vào hộp cơm của một bạn trai, thầy đứng cạnh"
+              "caption": "tranh 2: Cún Bông gắp miếng trứng, Chim Sẻ đặt nắm xôi, Vịt Xiêm đưa bát canh cho Thỏ Mơ"
             }
           }
         }
@@ -658,18 +663,15 @@
           "tranh-4"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b13-ke-chuyen-1"
-      ],
       "support": {
         "guide": [
-          "Câu chuyện mở đầu bằng câu hỏi của thầy hiệu trưởng.",
-          "Bạn nào còn thiếu món thì được gắp thêm, rồi thầy hỏi từng khay cơm."
+          "Chuyện mở đầu khi Thỏ Mơ phát hiện mình quên mang cơm.",
+          "Các bạn góp thức ăn trước, rồi mới ngồi ăn chung."
         ],
-        "hint": "Tranh cuối là lúc cả lớp chắp tay, sẵn sàng vào bữa.",
+        "hint": "Tranh cuối là hôm sau, khi Thỏ Mơ đã có hộp cơm to.",
         "answer": {
-          "text": "Thầy hỏi cả lớp → cô gắp thêm thức ăn → thầy hỏi khay cơm của bạn gái → cả lớp chắp tay trước bữa ăn",
-          "explanation": "Bốn tranh đi theo câu chuyện Bữa ăn trưa: thầy hỏi về món của biển và của đồi núi, cô gắp thêm, thầy hỏi từng bạn, rồi cả lớp vui vẻ vào bữa."
+          "text": "Thỏ Mơ mở cặp, rồi các bạn góp thức ăn, rồi cả nhóm ăn chung, cuối cùng là hôm sau Thỏ Mơ chia cơm.",
+          "explanation": "Bốn tranh đi theo lời Heo Bột: quên cơm, được bạn chia, ăn chung vui vẻ, rồi hôm sau tới lượt Thỏ Mơ chia lại."
         }
       },
       "feedback": {
@@ -679,24 +681,25 @@
           "Ri trầm trồ: tại sao {name} xếp nhanh thế?"
         ],
         "wrong": [
-          "Thầy hỏi cả lớp trước rồi mới hỏi từng khay cơm đấy.",
-          "Lúc cả lớp chắp tay là sắp ăn rồi, để tranh ấy cuối cùng nhé.",
-          "Cô cấp dưỡng gắp thêm khi có bạn còn thiếu món, tìm lại tranh ấy xem."
+          "Các bạn phải biết Thỏ Mơ thiếu cơm rồi mới góp thức ăn được chứ.",
+          "Hôm sau là lúc cuối cùng, để tranh Thỏ Mơ bê hộp cơm xuống chót nhé.",
+          "Cả nhóm chỉ ăn chung sau khi mọi người đã góp món, tìm lại tranh ấy xem."
         ]
-      }
+      },
+      "objective": "doc-truyen-thu-tu"
     },
     {
       "id": "ke-chuyen-bua-trua",
-      "title": "Kể chuyện cho Heo Bột nghe",
+      "title": "Kể lại chuyện hộp cơm cho Heo Bột",
       "goTo": "Về căng tin, Heo Bột ngồi phịch xuống chờ nghe kể",
       "kind": "speak",
       "target": "tv2-t07-b13-heo-bot",
-      "prompt": "Heo Bột ngồi phịch xuống, hai tai vểnh lên: ụt ịt, kể đi, đoạn nào có món ăn thì kể chậm thôi nhé!\nNghe kể chuyện.\nChọn kể 1 – 2 đoạn của câu chuyện theo tranh.",
+      "prompt": "Heo Bột ngồi phịch xuống, hai tai vểnh lên: ụt ịt, kể đi, đoạn nào có món ăn thì kể chậm thôi nhé! Dựa vào bốn tranh, {name} kể lại một hoặc hai đoạn của chuyện hộp cơm.",
       "hints": [
-        "Tranh 1: Thầy hiệu trưởng hỏi các bạn điều gì?",
-        "Tranh 2: Bạn nào chưa đủ món thì được cô cấp dưỡng làm gì?",
-        "Tranh 3: Thầy hỏi bạn gái về món ăn trong khay ra sao?",
-        "Tranh 4: Các bạn làm gì trước khi ăn?"
+        "Tranh 1: Chuyện gì xảy ra khi Thỏ Mơ mở cặp?",
+        "Tranh 2: Các bạn ngồi cạnh làm gì để giúp Thỏ Mơ?",
+        "Tranh 3: Cả nhóm ngồi ăn trông vui thế nào?",
+        "Tranh 4: Hôm sau Thỏ Mơ làm gì để cảm ơn các bạn?"
       ],
       "pictureRefs": [
         {
@@ -728,10 +731,7 @@
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b13-ke-chuyen-1",
-        "tv2-t1-b13-ke-chuyen-2"
-      ]
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "ke-cho-me-chip",
@@ -739,28 +739,41 @@
       "goTo": "Quay lại gốc phượng, Ri đã ăn no căng diều",
       "kind": "speak",
       "target": "tv2-t07-b13-ga-con-ri",
-      "prompt": "Ri ăn no căng diều, mắt sáng rỡ: tối nay tớ kể cho mẹ gà nghe ngay! Còn {name} thì sao?\nChọn a hoặc b.\na. Kể cho người thân về giờ ăn trưa ở lớp em.\nb. Kể cho bạn về bữa ăn trưa của em.",
+      "prompt": "Ri ăn no căng diều, mắt sáng rỡ: tối nay tớ kể cho mẹ gà nghe ngay! Còn {name} thì sao? Chọn một cách: kể cho người nhà nghe về bữa trưa của mình, hoặc kể lại chuyện hộp cơm của Thỏ Mơ cho một người bạn.",
       "hints": [
         "Bữa trưa của em có những món gì?",
         "Em ăn cùng ai, ăn ở đâu?",
         "Món nào em thích nhất? Vì sao?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b13-van-dung-a",
-        "tv2-t1-b13-van-dung-b"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "phieu-viet-bai-13",
-      "title": "Phiếu viết bài 13",
+      "title": "Phiếu viết chữ hoa E, Ê",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b13",
-      "text": "Nhờ bố mẹ in phiếu Bài 13 ở khu phụ huynh: tập viết chữ hoa E, Ê và câu ứng dụng về mái trường có hàng cây mát. Ri hứa sẽ viết thẳng hàng như hàng cây ngoài sân.",
-      "curriculumRef": [
-        "tv2-t1-b13-viet-chu-hoa-1",
-        "tv2-t1-b13-viet-ung-dung-2"
-      ]
+      "text": "Nhờ bố mẹ in phiếu viết ở khu phụ huynh: tập viết chữ hoa E, Ê và một câu về mái trường ven sông. Ri hứa sẽ viết thẳng hàng như hàng phi lao ngoài sân.",
+      "objective": "viet-chu-hoa",
+      "sheet": {
+        "title": "Phiếu viết: chữ hoa E, Ê và mái trường",
+        "blocks": [
+          {
+            "kind": "letter",
+            "prompt": "Tô rồi viết chữ hoa E và Ê",
+            "letters": [
+              "E",
+              "Ê"
+            ]
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: Em nhớ tiếng trống trường mỗi buổi sáng.",
+            "model": [
+              "Em nhớ tiếng trống trường mỗi buổi sáng."
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "qua-cua-chip",

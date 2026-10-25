@@ -429,6 +429,71 @@
       "objective": "doc-van-ban-thong-tin-lam-theo"
     },
     {
+      "id": "xep-buoc-choi",
+      "title": "Năm bước của một lượt chơi",
+      "goTo": "Ra cây treo bản luật, Bé Nhún đang kiễng chân đọc các tấm thẻ",
+      "kind": "challenge",
+      "mechanic": "sort",
+      "target": "tv2-t13-cay-nuc-nac",
+      "prompt": "Bé Nhún mới đến, chưa biết chơi gì cả. Các tấm thẻ trên cây treo bản luật lại bị gió thổi lộn xộn. Xếp năm bước của một lượt chi chi chành chành theo đúng thứ tự trong bản luật để chỉ cho bé.",
+      "items": [
+        {
+          "id": "doc-dong-dao",
+          "label": "Cả nhóm cùng đọc lời đồng dao"
+        },
+        {
+          "id": "ngua-tay",
+          "label": "Một bạn ngồi xuống, ngửa bàn tay, duỗi thẳng các ngón"
+        },
+        {
+          "id": "doi-luot",
+          "label": "Ai bị giữ ngón thì sang lượt sau làm người xòe tay"
+        },
+        {
+          "id": "cham-ngon",
+          "label": "Các bạn khác chạm ngón trỏ vào lòng bàn tay ấy"
+        },
+        {
+          "id": "nam-tay",
+          "label": "Tới tiếng cuối, người xòe tay nắm tay lại thật nhanh"
+        }
+      ],
+      "skill": "doc-hieu",
+      "answer": {
+        "order": [
+          "ngua-tay",
+          "cham-ngon",
+          "doc-dong-dao",
+          "nam-tay",
+          "doi-luot"
+        ]
+      },
+      "support": {
+        "guide": [
+          "Bản luật kể các bước theo đúng trình tự: ai làm gì trước, rồi tới gì sau.",
+          "Đọc từ đầu bài xuống, gạch chân mỗi việc người chơi phải làm."
+        ],
+        "hint": "Phải có bàn tay ngửa ra trước thì các bạn mới có chỗ chạm ngón trỏ vào.",
+        "answer": {
+          "text": "Ngửa bàn tay, chạm ngón trỏ, đọc đồng dao, nắm tay ở tiếng cuối, rồi đổi người xòe tay.",
+          "explanation": "Bản luật dặn chuẩn bị bàn tay và ngón trỏ trước, đọc đồng dao, đến tiếng cuối mới nắm tay; người bị giữ ngón làm người xòe tay lượt tiếp."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Bé Nhún gật gù: à, thì ra phải chạm ngón trước rồi mới đọc!",
+          "Năm tấm thẻ thẳng hàng tăm tắp, Cáo Tũn vẫy đuôi tít mù.",
+          "Đúng từng bước một, cả bãi đất trống sẵn sàng vào lượt đầu tiên."
+        ],
+        "wrong": [
+          "Hình như có bước bị đặt sớm quá. Ai chưa có bàn tay để chạm vào thì làm sao chạm?",
+          "Lời đồng dao vang lên lúc nào nhỉ: trước hay sau khi các ngón trỏ đã vào chỗ?",
+          "Việc đổi người xòe tay chỉ xảy ra khi lượt chơi đã kết thúc rồi đấy."
+        ]
+      },
+      "objective": "doc-van-ban-thong-tin-lam-theo"
+    },
+    {
       "id": "tu-kho-cua-cao",
       "title": "Hai từ khó của Cáo Tũn",
       "kind": "challenge",
@@ -502,7 +567,8 @@
           "Nhớ ô Từ ngữ: xòe là mở rộng các ngón tay. Thử lại nào."
         ]
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "goTo": "Về bãi đất trống, Cáo Tũn vẫy cậu lại khoe hai từ mới học"
     },
     {
       "id": "cau-tro-choi",

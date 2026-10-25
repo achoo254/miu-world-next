@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Trang sách mở ra giữa vườn đọc sách",
   "status": "active",
-  "lesson": "tv2-t1-b16",
   "topic": "tu-chi-dac-diem",
   "summary": "Nai Mơ mang cuốn sách mượn của cô Gấu Me ra vườn đọc sách, vừa mở ra thì cỏ dại, cánh chim, cánh buồm bay khỏi trang giấy, cả một chú cánh cụt cũng lạch bạch bước ra. {name} cùng Nai Mơ và bác thủ thư Gấu Trúc Tròn đọc bài thơ, đi theo những cảnh hiện ra bên suối nhỏ rồi làm phiếu đọc sách trước khi trả sách.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Vườn đọc sách của Thư viện: tảng đá phẳng giữa bãi cỏ dại, gốc sim tím của Nai Mơ, bậc thềm ra vườn, suối nhỏ hoá thành biển nhỏ với bãi cát, và quầy trả sách trong phòng đọc",
     "goal": "Nhặt lại những thứ bay ra từ trang sách, đọc hiểu bài thơ và giúp Nai Mơ trả sách đúng hẹn",
     "play": "Nhặt đồ, đọc thơ, xếp thứ tự, chọn nhiều đáp án, xếp thẻ vào giỏ, trắc nghiệm, điền vần, điền chữ, ghép câu, điền dấu câu, nói và kể, phiếu viết",
-    "learn": "Tiếng Việt 2 Bài 16: đọc hiểu bài thơ Khi trang sách mở ra, vần cuối dòng thơ, chính tả l/n và các tiếng có vần an/ang, ăn/ăng, ân/âng, từ chỉ đặc điểm, câu nêu đặc điểm, dấu chấm và dấu chấm hỏi, phiếu đọc sách",
+    "learn": "Đọc bài thơ 5 chữ \"Trang sách có suối\" (tự viết): hiểu thứ tự và hình ảnh trong thơ, tìm vần cuối dòng, từ chỉ sự vật và đặc điểm; chính tả l/n, an/ang, ăn/ăng, ân/âng; dấu chấm và dấu chấm hỏi; làm phiếu đọc sách",
     "reward": "90 XP, 15 xu, Đọc hiểu +2, Chính tả +2, Từ ngữ +1, Câu +1, Dấu câu +1",
-    "next": "Ôn tập giữa học kì 1: lễ hội lá vàng ở sân trước Thư viện"
+    "next": "Lễ hội lá vàng ở sân trước Thư viện"
   },
   "phases": {
     "hook": "nai-mo-om-sach",
@@ -28,21 +27,22 @@
     "next": "nhu-le-hoi-la-vang"
   },
   "texts": {
-    "khi-trang-sach-mo-ra": {
-      "title": "Khi trang sách mở ra",
-      "author": "Nguyễn Nhật Ánh",
-      "body": "Khi trang sách mở ra\nKhoảng trời xa xích lại\nBắt đầu là cỏ dại\nThứ đến là cánh chim\nSau nữa là trẻ con\nCuối cùng là người lớn.\n\nTrong trang sách có biển\nEm thấy những cánh buồm\nTrong trang sách có rừng\nVới bao nhiêu là gió.\n\nTrang sách còn có lửa\nMà giấy chẳng cháy đâu\nTrang sách có ao sâu\nMà giấy không hề ướt.\n\nTrang sách không nói được\nSao em nghe điều gì\nDạt dào như sóng vỗ\nMột chân trời đang đi.",
+    "trang-sach-co-suoi": {
+      "title": "Trang sách có suối",
+      "body": "Trang sách vừa mở ra\nTrước hết là cánh chim\nKế đến là dòng suối\nRồi đến cánh buồm xa\nSau cùng là ngọn núi\nĐội mây trắng như hoa.\n\nTrong trang có đồng cỏ\nĐàn bò gặm nắng vàng\nCó cơn gió rất nhẹ\nThổi mãi vẫn dịu dàng.\n\nTrang sách còn có đêm\nNgôi sao treo rất cao\nCó ngọn đèn nhỏ xíu\nSoi giấc mơ hôm nào.\n\nTrang sách chẳng biết nói\nMà em nghe rõ ràng\nCó tiếng chân đi mãi\nHướng về cõi mênh mang.",
       "glossary": [
         {
-          "term": "Cỏ dại",
-          "meaning": "cỏ mọc tự nhiên."
+          "term": "Dịu dàng",
+          "meaning": "nhẹ nhàng, êm ái, dễ chịu."
         },
         {
-          "term": "Thứ đến",
-          "meaning": "sau đó."
+          "term": "Mênh mang",
+          "meaning": "rộng lớn đến mức nhìn mãi không thấy bờ."
         }
       ],
-      "section": "tv2-t1-b16-doc"
+      "source": {
+        "kind": "original"
+      }
     }
   },
   "places": {
@@ -128,15 +128,13 @@
       "goTo": "Mang đồ về gốc sim tím cho Nai Mơ",
       "kind": "speak",
       "target": "nai-mo",
-      "prompt": "Nai Mơ kẹp nhánh cỏ dại vào sổ lá, mắt lấp lánh: tớ đọc chín cuốn thơ rồi, đang đọc dở cuốn thứ mười. Còn cậu?\nNói tên những cuốn sách mà em đã đọc. Giới thiệu về một cuốn sách em thích nhất.",
+      "prompt": "Nai Mơ kẹp nhánh cỏ dại vào sổ lá, mắt lấp lánh: tớ đọc chín cuốn thơ rồi, đang đọc dở cuốn thứ mười. Còn cậu thì sao? Kể tên vài cuốn sách {name} đã đọc, rồi giới thiệu cuốn mà {name} thích nhất.",
       "hints": [
-        "Kể cho Nai Mơ tên vài cuốn sách, cuốn truyện em đã đọc.",
-        "Cuốn em mê nhất tên là gì, bìa có hình gì?",
+        "Kể cho Nai Mơ tên vài cuốn truyện hay cuốn thơ em đã đọc.",
+        "Cuốn em mê nhất tên là gì, bìa vẽ hình gì?",
         "Trong cuốn ấy, nhân vật hay chuyện gì làm em nhớ mãi?"
       ],
-      "curriculumRef": [
-        "tv2-t1-b16-doc-kd"
-      ]
+      "objective": "noi-va-nghe-khoi-dong"
     },
     {
       "id": "doc-tho-tren-tang-da",
@@ -144,50 +142,51 @@
       "goTo": "Sang tảng đá phẳng, bài thơ hiện lên trên mặt đá",
       "kind": "read",
       "target": "tv2-t08-tang-da-phang",
-      "textRef": "khi-trang-sach-mo-ra",
+      "textRef": "trang-sach-co-suoi",
       "audio": true,
-      "question": "Bác Gấu Trúc Tròn ngồi xuống bên tảng đá, đọc thật chậm hai chữ “xích lại” rồi hỏi: Khi trang sách mở ra, cái gì xích lại?",
+      "question": "Bác Gấu Trúc Tròn ngồi xuống bên tảng đá, đọc thật chậm hai chữ “dòng suối” rồi hỏi: ở khổ thơ đầu, ngay sau cánh chim, điều gì bước ra khỏi trang sách?",
       "choices": [
         {
-          "id": "canh-rung-xanh",
-          "text": "Cánh rừng xanh"
+          "id": "dong-suoi",
+          "text": "Dòng suối"
         },
         {
-          "id": "khoang-troi-xa",
-          "text": "Khoảng trời xa"
+          "id": "ngon-nui",
+          "text": "Ngọn núi"
         },
         {
-          "id": "con-thuyen-buom",
-          "text": "Con thuyền buồm"
+          "id": "canh-buom",
+          "text": "Cánh buồm"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "khoang-troi-xa"
+        "choice": "dong-suoi"
       },
       "support": {
         "guide": [
-          "Đọc lại hai dòng thơ đầu tiên của bài.",
-          "Tìm những chữ đứng ngay trước “xích lại”."
+          "Đọc lại khổ thơ đầu tiên của bài.",
+          "Tìm dòng thơ có chữ \"Kế đến là\"."
         ],
-        "hint": "Dòng thơ thứ hai bắt đầu bằng chữ “Khoảng”.",
+        "hint": "Dòng thơ thứ ba của bài nhắc tới thứ chảy róc rách.",
         "answer": {
-          "text": "Khoảng trời xa",
-          "explanation": "Bài thơ viết: Khi trang sách mở ra / Khoảng trời xa xích lại."
+          "text": "Sau cánh chim là dòng suối.",
+          "explanation": "Khổ đầu kể lần lượt: trước hết cánh chim, kế đến dòng suối, rồi cánh buồm, sau cùng là ngọn núi."
         }
       },
       "feedback": {
         "right": [
-          "Bác Gấu Trúc Tròn gõ nhẹ lên mặt đá: khoảng trời xa xích lại, đúng rồi đấy.",
-          "Nai Mơ ngước nhìn, thấy khoảng trời như sà xuống sát sừng mình.",
-          "Chuẩn rồi, khoảng trời xa xích lại gần {name} luôn!"
+          "Bác Gấu Trúc Tròn gõ nhẹ lên mặt đá: kế đến là dòng suối, đúng rồi đấy.",
+          "Nai Mơ ngước nhìn, nghe tiếng suối róc rách chảy ra khỏi trang giấy.",
+          "Chuẩn rồi, dòng suối đứng ngay sau cánh chim trong bài thơ."
         ],
         "wrong": [
-          "Ối, rừng còn ở tận khổ thơ thứ hai cơ. Đọc lại dòng thơ thứ hai nhé.",
-          "Con thuyền chưa cập bến đâu! Tìm chữ đứng ngay trước “xích lại” xem.",
-          "Gần lắm rồi, đáp án đang lơ lửng ngay trên đầu {name} đấy, nhìn lên thử xem."
+          "Ối, ngọn núi còn ở tận cuối khổ cơ. Đọc lại dòng thứ ba nhé.",
+          "Cánh buồm chưa ra đâu! Tìm chữ đứng ngay sau \"Kế đến là\" xem.",
+          "Gần lắm rồi, thứ cần tìm nằm ngay dưới cánh chim, nhìn xuống thử xem."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-to"
     },
     {
       "id": "xep-hang-buoc-ra",
@@ -196,60 +195,58 @@
       "kind": "challenge",
       "mechanic": "sort",
       "target": "nai-mo",
-      "prompt": "Nai Mơ đọc khổ đầu, mỗi dòng thơ lại có một vị khách bước ra khỏi trang giấy. Ai ra trước, ai ra sau nhỉ?\nSắp xếp các sự vật sau theo thứ tự được nhắc đến trong khổ thơ đầu.",
+      "prompt": "Nai Mơ đọc khổ đầu, mỗi dòng thơ lại có một vị khách bước ra khỏi trang giấy. Ai ra trước, ai ra sau nhỉ? Xếp bốn vị khách theo thứ tự xuất hiện trong khổ thơ đầu.",
       "items": [
         {
           "id": "canh-chim",
           "label": "cánh chim"
         },
         {
-          "id": "co-dai",
-          "label": "cỏ dại"
+          "id": "canh-buom",
+          "label": "cánh buồm"
         },
         {
-          "id": "nguoi-lon",
-          "label": "người lớn"
+          "id": "ngon-nui",
+          "label": "ngọn núi"
         },
         {
-          "id": "tre-con",
-          "label": "trẻ con"
+          "id": "dong-suoi",
+          "label": "dòng suối"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "order": [
-          "co-dai",
           "canh-chim",
-          "tre-con",
-          "nguoi-lon"
+          "dong-suoi",
+          "canh-buom",
+          "ngon-nui"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b16-doc-1"
-      ],
       "support": {
         "guide": [
           "Đọc lại khổ thơ đầu, từng dòng một.",
-          "Để ý các chữ: Bắt đầu là, Thứ đến là, Sau nữa là, Cuối cùng là."
+          "Để ý các chữ mở đầu dòng: Trước hết là, Kế đến là, Rồi đến, Sau cùng là."
         ],
-        "hint": "Vị khách đầu tiên mọc lên từ mặt đất.",
+        "hint": "Vị khách đầu tiên biết bay.",
         "answer": {
-          "text": "cỏ dại, cánh chim, trẻ con, người lớn",
-          "explanation": "Khổ đầu viết: Bắt đầu là cỏ dại / Thứ đến là cánh chim / Sau nữa là trẻ con / Cuối cùng là người lớn."
+          "text": "cánh chim, dòng suối, cánh buồm, ngọn núi",
+          "explanation": "Khổ đầu viết theo thứ tự: trước hết là cánh chim, kế đến dòng suối, rồi cánh buồm, sau cùng là ngọn núi."
         }
       },
       "feedback": {
         "right": [
-          "Cỏ dại, cánh chim, trẻ con, người lớn: Nai Mơ vỗ móng lộp cộp khen hay!",
+          "Chim, suối, buồm, núi: Nai Mơ vỗ móng lộp cộp khen hay!",
           "Đúng thứ tự trong khổ thơ, như đoàn khách xếp hàng bước ra khỏi trang sách.",
           "Nai Mơ xúc động quá, đòi viết thêm hẳn một khổ thơ nữa!"
         ],
         "wrong": [
-          "Ai bước ra đầu tiên nhỉ? Đọc lại dòng có chữ “Bắt đầu là” nhé.",
-          "Người lớn đi chậm nên ra sau cùng đấy, xem dòng “Cuối cùng là”.",
-          "Cánh chim nằm ở dòng “Thứ đến là”, thử dò lại từng dòng một."
+          "Ai bước ra đầu tiên nhỉ? Đọc lại dòng có chữ \"Trước hết là\" nhé.",
+          "Ngọn núi to nên ra sau cùng đấy, xem dòng \"Sau cùng là\".",
+          "Cánh buồm nằm ở dòng \"Rồi đến\", thử dò lại từng dòng một."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "bien-hien-ra-ben-suoi",
@@ -258,82 +255,80 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t08-canh-buom-hien-ra",
-      "prompt": "Ào… ào! Dòng suối sau tảng đá bỗng hoá thành biển nhỏ, một cánh buồm đỏ lướt qua ngay trước mũi {name}.\nỞ khổ thơ thứ hai và thứ ba, bạn nhỏ thấy những gì trong trang sách?\nChọn tất cả những gì bạn nhỏ thấy.",
+      "prompt": "Ào… ào! Dòng suối sau tảng đá bỗng hoá thành biển nhỏ, một cánh buồm đỏ lướt qua ngay trước mũi {name}. Hãy dò lại khổ hai và khổ ba của bài thơ: trong trang sách, bạn nhỏ đã nhìn thấy những thứ nào? Chọn mọi thứ có mặt trong hai khổ ấy.",
       "choices": [
         {
-          "id": "bien",
-          "text": "biển"
-        },
-        {
-          "id": "co-dai",
-          "text": "cỏ dại"
-        },
-        {
-          "id": "canh-buom",
-          "text": "cánh buồm"
-        },
-        {
-          "id": "rung",
-          "text": "rừng"
+          "id": "dong-co",
+          "text": "đồng cỏ"
         },
         {
           "id": "canh-chim",
           "text": "cánh chim"
         },
         {
-          "id": "gio",
-          "text": "gió"
+          "id": "dan-bo",
+          "text": "đàn bò"
         },
         {
-          "id": "lua",
-          "text": "lửa"
+          "id": "con-gio",
+          "text": "cơn gió"
         },
         {
-          "id": "chan-troi",
-          "text": "chân trời"
+          "id": "ngon-nui",
+          "text": "ngọn núi"
         },
         {
-          "id": "ao-sau",
-          "text": "ao sâu"
+          "id": "dem",
+          "text": "đêm"
+        },
+        {
+          "id": "ngoi-sao",
+          "text": "ngôi sao"
+        },
+        {
+          "id": "con-bao",
+          "text": "cơn bão"
+        },
+        {
+          "id": "ngon-den",
+          "text": "ngọn đèn"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
-          "bien",
-          "canh-buom",
-          "rung",
-          "gio",
-          "lua",
-          "ao-sau"
+          "dong-co",
+          "dan-bo",
+          "con-gio",
+          "dem",
+          "ngoi-sao",
+          "ngon-den"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b16-doc-2"
-      ],
       "support": {
         "guide": [
           "Chỉ đọc khổ thơ thứ hai và khổ thơ thứ ba.",
-          "Mỗi dòng có chữ “có” hay “thấy” đều chỉ ra một thứ trong trang sách."
+          "Mỗi dòng có chữ \"có\" cho em biết một thứ nằm trong trang sách."
         ],
-        "hint": "Có sáu thứ: hai thứ ở biển, hai thứ ở rừng, hai thứ ở khổ ba.",
+        "hint": "Có sáu thứ: ba thứ ở khổ hai, ba thứ ở khổ ba.",
         "answer": {
-          "text": "biển, cánh buồm, rừng, gió, lửa, ao sâu",
-          "explanation": "Khổ hai có biển, cánh buồm, rừng, gió; khổ ba có lửa và ao sâu. Cỏ dại, cánh chim ở khổ đầu, chân trời ở khổ cuối."
+          "text": "đồng cỏ, đàn bò, cơn gió, đêm, ngôi sao, ngọn đèn",
+          "explanation": "Khổ hai có đồng cỏ, đàn bò, cơn gió; khổ ba có đêm, ngôi sao, ngọn đèn. Cánh chim và ngọn núi ở khổ đầu, còn cơn bão thì không có."
         }
       },
       "feedback": {
         "right": [
           "Đủ cả sáu! Cánh buồm đỏ nghiêng mình chào {name} rồi lướt đi.",
-          "Biển, rừng, gió, lửa, ao sâu: trang sách đúng là cả một thế giới!",
+          "Đồng cỏ, đêm sao, ngọn đèn: trang sách đúng là cả một thế giới!",
           "Bác Gấu Trúc Tròn đếm chậm từng thứ trên ngón tay: đủ sáu, không sót món nào."
         ],
         "wrong": [
           "Có vị khách lạc từ khổ đầu sang đây rồi, kiểm tra lại nhé.",
-          "Còn sót một thứ ở khổ ba: thứ ấy sâu mà giấy chẳng ướt.",
-          "Chân trời đang ở khổ cuối cơ, chỉ chọn trong khổ hai và khổ ba thôi."
+          "Còn sót một thứ ở khổ ba: thứ nhỏ xíu, soi giấc mơ ấy.",
+          "Cơn bão thì bài thơ đâu có nhắc, chỉ chọn trong khổ hai và khổ ba thôi."
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "the-chu-ben-suoi",
@@ -341,7 +336,7 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t08-canh-buom-hien-ra",
-      "prompt": "Mỗi thứ hiện ra bên suối lại thả xuống một tấm thẻ chữ. Nai Mơ muốn gom thẻ gọi tên sự vật vào giỏ lá để làm thơ.\nTìm các từ ngữ chỉ sự vật trong khổ thơ thứ hai hoặc thứ ba.",
+      "prompt": "Mỗi thứ hiện ra bên suối lại thả xuống một tấm thẻ chữ. Nai Mơ muốn gom những thẻ gọi tên sự vật vào giỏ lá để làm thơ. Kéo mỗi thẻ vào giỏ hợp với nó.",
       "groups": [
         {
           "id": "su-vat",
@@ -354,44 +349,44 @@
       ],
       "items": [
         {
-          "id": "thay",
-          "label": "thấy"
+          "id": "gam",
+          "label": "gặm"
         },
         {
-          "id": "bien",
-          "label": "biển"
+          "id": "dong-suoi",
+          "label": "dòng suối"
         },
         {
           "id": "canh-buom",
           "label": "cánh buồm"
         },
         {
-          "id": "chay",
-          "label": "cháy"
+          "id": "thoi",
+          "label": "thổi"
         },
         {
-          "id": "rung",
-          "label": "rừng"
+          "id": "dong-co",
+          "label": "đồng cỏ"
         },
         {
-          "id": "gio",
-          "label": "gió"
+          "id": "dan-bo",
+          "label": "đàn bò"
         },
         {
-          "id": "uot",
-          "label": "ướt"
+          "id": "soi",
+          "label": "soi"
         },
         {
-          "id": "lua",
-          "label": "lửa"
+          "id": "ngoi-sao",
+          "label": "ngôi sao"
         },
         {
-          "id": "giay",
-          "label": "giấy"
+          "id": "ngon-den",
+          "label": "ngọn đèn"
         },
         {
-          "id": "ao",
-          "label": "ao"
+          "id": "ngon-nui",
+          "label": "ngọn núi"
         },
         {
           "id": "trang-sach",
@@ -401,98 +396,94 @@
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "thay": "khong-phai",
-          "bien": "su-vat",
+          "gam": "khong-phai",
+          "dong-suoi": "su-vat",
           "canh-buom": "su-vat",
-          "chay": "khong-phai",
-          "rung": "su-vat",
-          "gio": "su-vat",
-          "uot": "khong-phai",
-          "lua": "su-vat",
-          "giay": "su-vat",
-          "ao": "su-vat",
+          "thoi": "khong-phai",
+          "dong-co": "su-vat",
+          "dan-bo": "su-vat",
+          "soi": "khong-phai",
+          "ngoi-sao": "su-vat",
+          "ngon-den": "su-vat",
+          "ngon-nui": "su-vat",
           "trang-sach": "su-vat"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b16-doc-lt1"
-      ],
       "support": {
         "guide": [
           "Từ chỉ sự vật gọi tên người, con vật, đồ vật, cây cối, cảnh vật.",
-          "Thử hỏi: đây có phải là một cái gì đó không?"
+          "Thử đặt chữ \"một\" phía trước: nghe hợp thì có thể là sự vật."
         ],
-        "hint": "Thấy, cháy, ướt nói về việc làm hay trạng thái, không gọi tên vật nào.",
+        "hint": "Gặm, thổi, soi là những việc làm, không gọi tên vật nào.",
         "answer": {
-          "text": "Chỉ sự vật: biển, cánh buồm, rừng, gió, lửa, giấy, ao, trang sách. Không phải: thấy, cháy, ướt.",
-          "explanation": "Khổ hai và khổ ba gọi tên trang sách, biển, cánh buồm, rừng, gió, lửa, giấy, ao; còn thấy, cháy, ướt không phải tên sự vật."
+          "text": "Chỉ sự vật: dòng suối, cánh buồm, đồng cỏ, đàn bò, ngôi sao, ngọn đèn, ngọn núi, trang sách. Không phải: gặm, thổi, soi.",
+          "explanation": "Tám thẻ đầu gọi tên cảnh vật và đồ vật; ba thẻ còn lại là việc làm."
         }
       },
       "feedback": {
         "right": [
           "Giỏ lá đầy ắp sự vật, Nai Mơ đủ chữ làm ba bài thơ!",
-          "Chuẩn rồi, “cháy” với “ướt” đâu phải đồ vật mà bỏ vào giỏ.",
+          "Chuẩn rồi, \"gặm\" với \"thổi\" đâu phải đồ vật mà bỏ vào giỏ.",
           "Cánh buồm đỏ vẫy vẫy như khen {name} tinh mắt."
         ],
         "wrong": [
-          "Có thẻ “gọi tên một cái gì đó” đang nằm nhầm giỏ rồi.",
-          "Thử nói “một cái …” trước từ đó: nghe hợp thì là sự vật.",
-          "Giấy chẳng cháy, nhưng “giấy” vẫn là sự vật đấy nhé."
+          "Có thẻ \"nói về việc làm\" đang nằm nhầm giỏ rồi.",
+          "Thử nói \"một cái …\" trước từ đó: nghe hợp thì là sự vật.",
+          "\"Soi\" là chiếu sáng, một việc làm, bỏ nó sang giỏ còn lại nhé."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
     },
     {
       "id": "song-vo-kho-cuoi",
-      "title": "Khổ thơ cuối dạt dào như sóng",
+      "title": "Khổ thơ cuối nói điều gì",
       "goTo": "Ra bãi cát nhỏ, Cánh Cụt Phao vừa lạch bạch bước ra từ trang sách",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t08-b16-canh-cut-phao",
-      "prompt": "Một con sóng nhỏ vỗ vào chân {name}, mát rượi mà áo chẳng ướt tí nào. Nai Mơ thì thầm đọc khổ cuối.\nTheo em, khổ thơ cuối ý nói gì?",
+      "prompt": "Một cơn gió nhỏ thổi qua bãi cát, mát rượi mà trang giấy chẳng bay. Nai Mơ thì thầm đọc khổ cuối. Theo em, khổ thơ cuối muốn nói điều gì?",
       "choices": [
         {
-          "id": "tieng-song-vo",
-          "text": "Trong trang sách có tiếng sóng vỗ."
+          "id": "tieng-chan",
+          "text": "Trong trang sách có tiếng chân người thật đang đi."
         },
         {
-          "id": "may-troi-bay",
-          "text": "Trong trang sách có mây trời đang bay."
+          "id": "dieu-moi-la",
+          "text": "Trang sách tuy không biết nói nhưng mở ra bao điều mới lạ cho em."
         },
         {
-          "id": "dieu-thu-vi",
-          "text": "Trong trang sách có nhiều điều thú vị về cuộc sống."
+          "id": "sach-to",
+          "text": "Trang sách rất to nên ôm không xuể."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "dieu-thu-vi"
+        "choice": "dieu-moi-la"
       },
-      "curriculumRef": [
-        "tv2-t1-b16-doc-3"
-      ],
       "support": {
         "guide": [
-          "Đọc lại khổ thơ cuối: trang sách không nói được mà em vẫn nghe thấy điều gì đó.",
-          "Sóng vỗ trong bài chỉ là một hình ảnh so sánh thôi."
+          "Đọc lại khổ thơ cuối: trang sách chẳng nói được mà em vẫn nghe thấy điều gì đó.",
+          "\"Tiếng chân đi mãi\" chỉ là một hình ảnh, không phải tiếng thật."
         ],
-        "hint": "Ý cả khổ thơ rộng như một chân trời, không chỉ một tiếng sóng.",
+        "hint": "Ý của cả khổ thơ rộng như cõi mênh mang, không phải một tiếng động nhỏ.",
         "answer": {
-          "text": "Trong trang sách có nhiều điều thú vị về cuộc sống.",
-          "explanation": "Khổ cuối nói trang sách tuy không biết nói nhưng mở ra cho em bao điều mới mẻ, dạt dào như sóng, rộng như chân trời."
+          "text": "Đọc sách giúp em biết thêm nhiều điều mới mẻ dù sách không nói thành lời.",
+          "explanation": "Khổ cuối so sánh việc đọc với những bước chân đi mãi về cõi mênh mang: sách mở ra cho em rất nhiều điều mới."
         }
       },
       "feedback": {
         "right": [
-          "Đúng! Sóng biển lùi ra xa, cúi chào {name} một cái.",
-          "Nai Mơ gật gù: một chân trời đang đi chính là bao điều hay ho đấy.",
-          "Bác Gấu Trúc Tròn chép hai chữ “dạt dào” vào sổ, nét nào cũng tròn trịa."
+          "Đúng! Cơn gió lùi ra xa, cúi chào {name} một cái.",
+          "Nai Mơ gật gù: một cõi mênh mang chính là bao điều hay ho trong sách đấy.",
+          "Bác Gấu Trúc Tròn chép hai chữ \"mênh mang\" vào sổ, nét nào cũng tròn trịa."
         ],
         "wrong": [
-          "Tiếng sóng chỉ là so sánh thôi, ý thơ còn rộng hơn nhiều.",
-          "Bài thơ có nhắc mây trời bay đâu nhỉ? Đọc lại khổ cuối nhé.",
-          "Nghĩ xem: trang sách mở ra cho em biết những gì về cuộc sống?"
+          "Tiếng chân đi mãi chỉ là hình ảnh thôi, ý thơ còn rộng hơn nhiều.",
+          "Bài thơ có nói sách to đến mức ôm không xuể đâu nhỉ? Đọc lại khổ cuối nhé.",
+          "Nghĩ xem: trang sách mở ra cho em thấy những gì mới mẻ?"
         ]
-      }
+      },
+      "objective": "doc-tho-doc-hieu"
     },
     {
       "id": "vet-xanh-suu-tam-van",
@@ -501,23 +492,23 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "gau-truc",
-      "prompt": "Bác Gấu Trúc Tròn đọc chậm từng dòng: đọc chậm thì tai mới nghe ra tiếng cuối dòng nào na ná nhau, cháu thử xem.\nTìm những tiếng có vần giống nhau ở cuối các dòng thơ.\nChọn cặp tiếng có vần giống nhau cho từng khổ thơ.",
-      "template": "Khổ thơ thứ nhất: {{v1}}\nKhổ thơ thứ ba: {{v2}}\nKhổ thơ thứ tư: {{v3}}",
+      "prompt": "Bác Gấu Trúc Tròn đọc chậm từng dòng: đọc chậm thì tai mới nghe ra tiếng cuối dòng nào na ná nhau, cháu thử xem. Với mỗi khổ thơ, chọn cặp tiếng có vần giống nhau.",
+      "template": "Khổ thơ thứ nhất, dòng một và dòng bốn: {{v1}}\nKhổ thơ thứ ba, dòng hai và dòng bốn: {{v2}}\nKhổ thơ thứ tư, dòng hai và dòng bốn: {{v3}}",
       "blanks": [
         {
           "id": "v1",
           "options": [
             {
-              "id": "chim-con",
-              "text": "chim – con"
+              "id": "ra-chim",
+              "text": "ra – chim"
             },
             {
-              "id": "lai-dai",
-              "text": "lại – dại"
+              "id": "ra-xa",
+              "text": "ra – xa"
             },
             {
-              "id": "ra-lon",
-              "text": "ra – lớn"
+              "id": "ra-nui",
+              "text": "ra – núi"
             }
           ]
         },
@@ -525,16 +516,16 @@
           "id": "v2",
           "options": [
             {
-              "id": "lua-uot",
-              "text": "lửa – ướt"
+              "id": "cao-nao",
+              "text": "cao – nào"
             },
             {
-              "id": "dau-lua",
-              "text": "đâu – lửa"
+              "id": "cao-xiu",
+              "text": "cao – xíu"
             },
             {
-              "id": "dau-sau",
-              "text": "đâu – sâu"
+              "id": "sao-mo",
+              "text": "sao – mơ"
             }
           ]
         },
@@ -542,16 +533,16 @@
           "id": "v3",
           "options": [
             {
-              "id": "gi-di",
-              "text": "gì – đi"
+              "id": "noi-mai",
+              "text": "nói – mãi"
             },
             {
-              "id": "duoc-vo",
-              "text": "được – vỗ"
+              "id": "rang-mang",
+              "text": "ràng – mang"
             },
             {
-              "id": "vo-di",
-              "text": "vỗ – đi"
+              "id": "nghe-di",
+              "text": "nghe – đi"
             }
           ]
         }
@@ -559,37 +550,35 @@
       "skill": "doc-hieu",
       "answer": {
         "fills": {
-          "v1": "lai-dai",
-          "v2": "dau-sau",
-          "v3": "gi-di"
+          "v1": "ra-xa",
+          "v2": "cao-nao",
+          "v3": "rang-mang"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b16-doc-4"
-      ],
       "support": {
         "guide": [
           "Đọc to tiếng cuối của từng dòng trong khổ thơ.",
           "Hai tiếng có vần giống nhau thì đọc lên nghe rất êm tai."
         ],
-        "hint": "Khổ đầu: “lại” đi với tiếng nào ở dòng ngay dưới?",
+        "hint": "Khổ đầu: \"ra\" đi cùng tiếng nào ở dòng thứ tư?",
         "answer": {
-          "text": "lại – dại; đâu – sâu; gì – đi",
-          "explanation": "Xích lại – cỏ dại có vần ai; cháy đâu – ao sâu có vần âu; điều gì – đang đi có vần i."
+          "text": "ra với xa; cao với nào; ràng với mang",
+          "explanation": "Mở ra – buồm xa có vần a; treo rất cao – hôm nào có vần ao; nghe rõ ràng – cõi mênh mang có vần ang."
         }
       },
       "feedback": {
         "right": [
-          "Bác Gấu Trúc Tròn ghi ba cặp vần vào sổ: lại dại, đâu sâu, gì đi!",
+          "Bác Gấu Trúc Tròn ghi ba cặp vần vào sổ: ra xa, cao nào, ràng mang!",
           "Êm tai quá! Nai Mơ đọc lại mà nghe như hát.",
           "Ba cặp vần chuẩn chỉnh, bác thủ thư gật gù: nghe từ từ là ra cả thôi!"
         ],
         "wrong": [
-          "“Chim” với “con” đọc lên đâu có giống nhau, thử cặp khác nhé.",
-          "Khổ ba: tìm tiếng cuối dòng đi cùng vần với “đâu”.",
-          "Khổ cuối: “được” với “vỗ” chẳng ăn vần gì cả, nghe lại tiếng “gì” xem."
+          "\"Chim\" với \"ra\" đọc lên đâu có giống nhau, thử cặp khác nhé.",
+          "Khổ ba: tìm tiếng cuối dòng đi cùng vần với \"cao\".",
+          "Khổ cuối: \"nói\" với \"mãi\" chẳng ăn vần gì cả, nghe lại tiếng \"ràng\" xem."
         ]
-      }
+      },
+      "objective": "doc-tho-hinh-anh"
     },
     {
       "id": "cau-ve-cuon-truyen",
@@ -597,15 +586,13 @@
       "goTo": "Về gốc sim tím, Nai Mơ mở sổ lá ra trang mới",
       "kind": "speak",
       "target": "nai-mo",
-      "prompt": "Nai Mơ mở sổ lá ra trang mới tinh: mỗi bạn tặng tớ một câu về cuốn truyện mình đọc, tớ sẽ chép bằng mực hoa sim.\nĐặt một câu về một cuốn truyện.\nM: Truyện Tích Chu nói về tình cảm bà cháu.",
+      "prompt": "Nai Mơ mở sổ lá ra trang mới tinh: mỗi bạn tặng tớ một câu về cuốn sách mình thích, tớ sẽ chép bằng mực hoa sim. Hãy đặt một câu giới thiệu cuốn sách của {name}.",
       "hints": [
-        "Cuốn truyện {name} chọn tên là gì?",
-        "Truyện ấy nói về ai, về chuyện gì?",
-        "Nói theo mẫu: Truyện … nói về …"
+        "Cuốn sách {name} chọn tên là gì?",
+        "Sách ấy nói về ai, về chuyện gì?",
+        "Thử nói theo mẫu: Cuốn … kể về …"
       ],
-      "curriculumRef": [
-        "tv2-t1-b16-doc-lt2"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "so-la-l-va-n",
@@ -613,8 +600,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "nai-mo",
-      "prompt": "Nai Mơ chép vội mấy câu vào sổ lá, chữ l với chữ n cứ chạy lung tung như đàn kiến tha mồi. Hôm nay mình làm cả phần a lẫn phần b.\nChọn a hoặc b.\na. Chọn l hoặc n thay cho ô vuông.",
-      "template": "– Dao có mài mới sắc, người có học mới {{a1}}ên.\n– Hay học thì sang, hay {{a2}}àm thì có.\n– {{a3}}ật từng trang từng trang\nGiấy trắng sờ mát rượi\nThơm tho mùi giấy mới\n{{a4}}ắn {{a5}}ót bàn tay xinh.\n(Theo Nguyễn Quang Huy)",
+      "prompt": "Nai Mơ chép vội mấy câu vào sổ lá, chữ l với chữ n cứ chạy lung tung như đàn kiến tha mồi. Chọn l hoặc n điền vào mỗi ô vuông, nhớ viết hoa chữ đầu dòng thơ.",
+      "template": "– Chú nai nhỏ {{a1}}ắng nghe tiếng suối reo.\n– Cuốn truyện mới thơm {{a2}}ức mùi giấy.\n– {{a3}}ắng chiều tắt sau núi,\n  {{a4}}ặng {{a5}}ẽ cánh buồm trôi.",
       "blanks": [
         {
           "id": "a1",
@@ -685,41 +672,37 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "a1": "n",
-          "a2": "l",
-          "a3": "l",
-          "a4": "n",
-          "a5": "n"
+          "a1": "l",
+          "a2": "n",
+          "a3": "n",
+          "a4": "l",
+          "a5": "l"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b16-chinh-ta-3-a-1",
-        "tv2-t1-b16-chinh-ta-3-a-2",
-        "tv2-t1-b16-chinh-ta-3-a-3"
-      ],
       "support": {
         "guide": [
           "Đọc to cả câu rồi mới chọn chữ.",
-          "Nghĩ nghĩa của tiếng: học để lớn lên, làm thì mới có, lật trang sách, nắn nót chữ."
+          "Nghĩ nghĩa của tiếng: lắng nghe, thơm nức, nắng chiều, lặng lẽ."
         ],
-        "hint": "Chữ đầu dòng thơ phải viết hoa: L hoặc N.",
+        "hint": "Chữ đầu dòng thơ phải viết hoa: N hoặc L.",
         "answer": {
-          "text": "nên; làm; Lật; Nắn nót",
-          "explanation": "Người có học mới nên (người tốt); hay làm thì có; Lật từng trang; Nắn nót bàn tay xinh."
+          "text": "lắng; nức; Nắng; Lặng lẽ",
+          "explanation": "Nai nhỏ lắng nghe tiếng suối, sách mới thơm nức, nắng chiều tắt sau núi, cánh buồm trôi lặng lẽ."
         }
       },
       "feedback": {
         "right": [
           "Đàn chữ l, chữ n về đúng chỗ, sổ lá thơm mùi giấy mới!",
-          "Nắn nót, lật trang: {name} nghe l và n tinh như tai nai.",
-          "Nai Mơ đọc to câu tục ngữ, bác Gấu Trúc Tròn đọc theo chậm rãi từng tiếng."
+          "Lắng nghe, lặng lẽ: {name} nghe l và n tinh như tai nai.",
+          "Nai Mơ đọc to hai dòng thơ, bác Gấu Trúc Tròn đọc theo chậm rãi từng tiếng."
         ],
         "wrong": [
-          "“Nắn nót” có hai tiếng cùng một chữ đầu đấy, thử lại nhé.",
-          "Mở sách thì mình “lật” trang, đọc to lên nghe xem.",
-          "Hay làm thì có: tiếng “làm” bắt đầu bằng chữ gì nhỉ?"
+          "\"Lặng lẽ\" có hai tiếng cùng một chữ đầu đấy, thử lại nhé.",
+          "Thơm nức hay thơm lức? Đọc to lên nghe xem tiếng nào xuôi tai.",
+          "Nắng chiều tắt sau núi: tiếng \"nắng\" bắt đầu bằng chữ gì nhỉ?"
         ]
-      }
+      },
+      "objective": "chinh-ta-am-dau"
     },
     {
       "id": "tang-tu-cho-do-dung",
@@ -728,70 +711,70 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t08-hop-but-nai-mo",
-      "prompt": "Nai Mơ dốc hộp bút lên tảng đá: thước, vở, bút chì, lọ mực lăn lóc. Tớ muốn tặng mỗi bạn một từ thật kêu!\nChọn từ chỉ đặc điểm của mỗi đồ dùng học tập trong hình.\n(thẳng tắp, trắng tinh, nhọn hoắt, tím ngắt)\nKéo mỗi hình vào đúng từ của nó.",
+      "prompt": "Nai Mơ dốc hộp bút lên tảng đá: cuốn từ điển, hộp màu, cái kéo, tờ giấy lăn lóc khắp nơi. Tớ muốn tặng mỗi bạn một từ thật kêu! Kéo mỗi hình vào từ chỉ đặc điểm hợp nhất với nó.",
       "groups": [
         {
-          "id": "thang-tap",
-          "label": "thẳng tắp"
+          "id": "day-cop",
+          "label": "dày cộp"
         },
         {
-          "id": "trang-tinh",
-          "label": "trắng tinh"
+          "id": "sac-so",
+          "label": "sặc sỡ"
         },
         {
-          "id": "nhon-hoat",
-          "label": "nhọn hoắt"
+          "id": "sang-loang",
+          "label": "sáng loáng"
         },
         {
-          "id": "tim-ngat",
-          "label": "tím ngắt"
+          "id": "mong-tang",
+          "label": "mỏng tang"
         }
       ],
       "items": [
         {
-          "id": "lo-muc",
-          "label": "Lọ mực",
+          "id": "cai-keo",
+          "label": "Cái kéo",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "lọ mực màu tím",
-              "n": 4
-            }
-          }
-        },
-        {
-          "id": "thuoc-ke",
-          "label": "Thước kẻ",
-          "image": {
-            "kind": "diagram",
-            "type": "picture-card",
-            "params": {
-              "caption": "cái thước kẻ màu hồng",
-              "n": 1
-            }
-          }
-        },
-        {
-          "id": "but-chi",
-          "label": "Bút chì",
-          "image": {
-            "kind": "diagram",
-            "type": "picture-card",
-            "params": {
-              "caption": "hai cây bút chì vót nhọn",
+              "caption": "cái kéo bằng thép bóng loáng",
               "n": 3
             }
           }
         },
         {
-          "id": "cuon-vo",
-          "label": "Cuốn vở",
+          "id": "to-giay",
+          "label": "Tờ giấy",
           "image": {
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "cuốn vở mở ra, trang giấy trắng",
+              "caption": "tờ giấy trắng gần như trong suốt",
+              "n": 4
+            }
+          }
+        },
+        {
+          "id": "tu-dien",
+          "label": "Cuốn từ điển",
+          "image": {
+            "kind": "diagram",
+            "type": "picture-card",
+            "params": {
+              "caption": "cuốn từ điển rất dày",
+              "n": 1
+            }
+          }
+        },
+        {
+          "id": "hop-mau",
+          "label": "Hộp màu",
+          "image": {
+            "kind": "diagram",
+            "type": "picture-card",
+            "params": {
+              "caption": "hộp bút màu đủ sắc đỏ vàng xanh",
               "n": 2
             }
           }
@@ -800,41 +783,36 @@
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "thuoc-ke": "thang-tap",
-          "cuon-vo": "trang-tinh",
-          "but-chi": "nhon-hoat",
-          "lo-muc": "tim-ngat"
+          "tu-dien": "day-cop",
+          "hop-mau": "sac-so",
+          "cai-keo": "sang-loang",
+          "to-giay": "mong-tang"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b16-tu-ngu-cau-1-a",
-        "tv2-t1-b16-tu-ngu-cau-1-b",
-        "tv2-t1-b16-tu-ngu-cau-1-c",
-        "tv2-t1-b16-tu-ngu-cau-1-d"
-      ],
       "support": {
         "guide": [
-          "Nhìn kĩ hình dáng và màu sắc của từng đồ dùng.",
-          "Đọc từng từ trong ngoặc: từ nào nói về màu, từ nào nói về hình dáng?"
+          "Nhìn kĩ độ dày, độ bóng và màu sắc của từng đồ vật.",
+          "Đọc từng từ: từ nào nói về màu, từ nào nói về độ dày mỏng, độ bóng?"
         ],
-        "hint": "Bút chì vót kĩ thì đầu nó rất nhọn.",
+        "hint": "Một tờ giấy thì rất mỏng.",
         "answer": {
-          "text": "Thước kẻ: thẳng tắp; Cuốn vở: trắng tinh; Bút chì: nhọn hoắt; Lọ mực: tím ngắt.",
-          "explanation": "Thước kẻ rất thẳng, trang vở rất trắng, bút chì rất nhọn, mực rất tím, nên mỗi đồ dùng nhận một từ chỉ đặc điểm."
+          "text": "Từ điển: dày cộp; hộp màu: sặc sỡ; cái kéo: sáng loáng; tờ giấy: mỏng tang.",
+          "explanation": "Từ điển rất dày, hộp màu nhiều màu rực rỡ, cái kéo sáng bóng và tờ giấy rất mỏng, nên mỗi đồ vật nhận một từ chỉ đặc điểm."
         }
       },
       "feedback": {
         "right": [
-          "Thước kẻ ưỡn thẳng tắp, vở khoe trang trắng tinh: ai cũng vui!",
+          "Từ điển ưỡn bụng dày cộp, giấy khoe vẻ mỏng tang: ai cũng vui!",
           "Bốn từ về đúng bốn nhà, Nai Mơ thấy hộp bút sáng bừng lên.",
-          "Bút chì nhọn hoắt suýt chọc thủng sổ lá vì sướng quá!"
+          "Cái kéo sáng loáng suýt cắt đứt sợi râu của Cánh Cụt Phao vì sướng quá!"
         ],
         "wrong": [
-          "Ối, lọ mực đâu có trắng tinh! Nhìn lại màu của nó nhé.",
-          "Từ nào nói về cái đầu bút đã vót kĩ? Thử đổi chỗ xem.",
-          "Thước kẻ không có màu tím đâu, nó nổi tiếng vì rất thẳng cơ."
+          "Ối, hộp màu đâu có mỏng tang! Nhìn lại nhiều sắc của nó nhé.",
+          "Từ nào nói về vật bằng thép bóng lên? Thử đổi chỗ xem.",
+          "Tờ giấy không dày cộp đâu, nó nổi tiếng vì rất mỏng cơ."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-tim-tu"
     },
     {
       "id": "tieng-sinh-doi",
@@ -843,19 +821,19 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "gau-truc",
-      "prompt": "Bác Gấu Trúc Tròn mở hộp phiếu, rút từng tấm thật chậm: gắn với gắng, nắn với nắng, nghe na ná nhau mà nghĩa khác hẳn.\nChọn a hoặc b.\nb. Chọn tiếng trong ngoặc thay cho ô vuông.",
-      "template": "– (gắn/ gắng): {{g1}} bó, cố {{g2}}, {{g3}} sức\n– (nắn/ nắng): ánh {{n1}} , uốn {{n2}}, {{n3}} nót\n– (vần/ vầng): {{v1}} thơ, {{v2}} trăng, {{v3}} trán\n– (vân/ vâng): {{w1}} gỗ, {{w2}} lời, {{w3}} tay",
+      "prompt": "Bác Gấu Trúc Tròn mở hộp phiếu, rút từng tấm thật chậm: thang với than, trăn với trăng, nghe na ná nhau mà nghĩa khác hẳn. Với mỗi cụm từ, chọn tiếng đúng trong hai tiếng gợi ý ở ngoặc.",
+      "template": "– (thang/ than): cầu {{g1}}, {{g2}} củi, {{g3}} thở\n– (trăn/ trăng): con {{n1}}, vầng {{n2}}, ánh {{n3}} sáng\n– (tầng/ tần): {{v1}} mây, {{v2}} ngần, {{v3}} lầu\n– (khăn/ khăng): {{w1}} len, {{w2}} khăng, {{w3}} tay",
       "blanks": [
         {
           "id": "g1",
           "options": [
             {
-              "id": "gan",
-              "text": "gắn"
+              "id": "sai",
+              "text": "than"
             },
             {
-              "id": "gang",
-              "text": "gắng"
+              "id": "dung",
+              "text": "thang"
             }
           ]
         },
@@ -863,12 +841,12 @@
           "id": "g2",
           "options": [
             {
-              "id": "gan",
-              "text": "gắn"
+              "id": "dung",
+              "text": "than"
             },
             {
-              "id": "gang",
-              "text": "gắng"
+              "id": "sai",
+              "text": "thang"
             }
           ]
         },
@@ -876,12 +854,12 @@
           "id": "g3",
           "options": [
             {
-              "id": "gang",
-              "text": "gắng"
+              "id": "sai",
+              "text": "thang"
             },
             {
-              "id": "gan",
-              "text": "gắn"
+              "id": "dung",
+              "text": "than"
             }
           ]
         },
@@ -889,12 +867,12 @@
           "id": "n1",
           "options": [
             {
-              "id": "nan",
-              "text": "nắn"
+              "id": "dung",
+              "text": "trăn"
             },
             {
-              "id": "nang",
-              "text": "nắng"
+              "id": "sai",
+              "text": "trăng"
             }
           ]
         },
@@ -902,12 +880,12 @@
           "id": "n2",
           "options": [
             {
-              "id": "nang",
-              "text": "nắng"
+              "id": "sai",
+              "text": "trăn"
             },
             {
-              "id": "nan",
-              "text": "nắn"
+              "id": "dung",
+              "text": "trăng"
             }
           ]
         },
@@ -915,12 +893,12 @@
           "id": "n3",
           "options": [
             {
-              "id": "nan",
-              "text": "nắn"
+              "id": "dung",
+              "text": "trăng"
             },
             {
-              "id": "nang",
-              "text": "nắng"
+              "id": "sai",
+              "text": "trăn"
             }
           ]
         },
@@ -928,12 +906,12 @@
           "id": "v1",
           "options": [
             {
-              "id": "vang",
-              "text": "vầng"
+              "id": "sai",
+              "text": "tần"
             },
             {
-              "id": "van",
-              "text": "vần"
+              "id": "dung",
+              "text": "tầng"
             }
           ]
         },
@@ -941,12 +919,12 @@
           "id": "v2",
           "options": [
             {
-              "id": "van",
-              "text": "vần"
+              "id": "dung",
+              "text": "tần"
             },
             {
-              "id": "vang",
-              "text": "vầng"
+              "id": "sai",
+              "text": "tầng"
             }
           ]
         },
@@ -954,12 +932,12 @@
           "id": "v3",
           "options": [
             {
-              "id": "vang",
-              "text": "vầng"
+              "id": "dung",
+              "text": "tầng"
             },
             {
-              "id": "van",
-              "text": "vần"
+              "id": "sai",
+              "text": "tần"
             }
           ]
         },
@@ -967,12 +945,12 @@
           "id": "w1",
           "options": [
             {
-              "id": "vang",
-              "text": "vâng"
+              "id": "dung",
+              "text": "khăn"
             },
             {
-              "id": "van",
-              "text": "vân"
+              "id": "sai",
+              "text": "khăng"
             }
           ]
         },
@@ -980,12 +958,12 @@
           "id": "w2",
           "options": [
             {
-              "id": "van",
-              "text": "vân"
+              "id": "sai",
+              "text": "khăn"
             },
             {
-              "id": "vang",
-              "text": "vâng"
+              "id": "dung",
+              "text": "khăng"
             }
           ]
         },
@@ -993,12 +971,12 @@
           "id": "w3",
           "options": [
             {
-              "id": "van",
-              "text": "vân"
+              "id": "sai",
+              "text": "khăng"
             },
             {
-              "id": "vang",
-              "text": "vâng"
+              "id": "dung",
+              "text": "khăn"
             }
           ]
         }
@@ -1006,122 +984,113 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "g1": "gan",
-          "g2": "gang",
-          "g3": "gang",
-          "n1": "nang",
-          "n2": "nan",
-          "n3": "nan",
-          "v1": "van",
-          "v2": "vang",
-          "v3": "vang",
-          "w1": "van",
-          "w2": "vang",
-          "w3": "van"
+          "g1": "dung",
+          "g2": "dung",
+          "g3": "dung",
+          "n1": "dung",
+          "n2": "dung",
+          "n3": "dung",
+          "v1": "dung",
+          "v2": "dung",
+          "v3": "dung",
+          "w1": "dung",
+          "w2": "dung",
+          "w3": "dung"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b16-chinh-ta-3-b-1",
-        "tv2-t1-b16-chinh-ta-3-b-2",
-        "tv2-t1-b16-chinh-ta-3-b-3",
-        "tv2-t1-b16-chinh-ta-3-b-4"
-      ],
       "support": {
         "guide": [
-          "Đọc to cả cụm từ, nghe xem tiếng nào có “ng” ở cuối.",
-          "Nghĩ nghĩa: cố gắng là chịu khó, ánh nắng là của mặt trời, vầng trăng tròn trên trời."
+          "Đọc to cả cụm từ, nghe xem tiếng nào có \"ng\" ở cuối.",
+          "Nghĩ nghĩa: cầu thang để bước lên, than củi để đốt, vầng trăng tròn trên trời, khăn len để quàng."
         ],
-        "hint": "Vâng lời là dạ vâng khi được dặn; vân gỗ, vân tay là những đường vằn.",
+        "hint": "Con trăn là loài rắn lớn; còn trăng thì sáng trên trời.",
         "answer": {
-          "text": "gắn bó, cố gắng, gắng sức; ánh nắng, uốn nắn, nắn nót; vần thơ, vầng trăng, vầng trán; vân gỗ, vâng lời, vân tay",
+          "text": "cầu thang, than củi, than thở; con trăn, vầng trăng, ánh trăng; tầng mây, tần ngần, tầng lầu; khăn len, khăng khăng, khăn tay",
           "explanation": "Mỗi cặp tiếng chỉ khác nhau chữ g ở cuối, đọc kĩ và nghĩ nghĩa của cả cụm từ thì chọn được."
         }
       },
       "feedback": {
         "right": [
           "Mười hai ô đều trúng! Bác Gấu Trúc Tròn xếp phiếu vào hộp, thẳng hàng tăm tắp.",
-          "Vầng trăng, vần thơ, vâng lời: {name} phân biệt tài như thám tử chữ.",
-          "Bác thủ thư cài lên áo {name} chiếc huy hiệu “Tai thính số một”."
+          "Cầu thang, vầng trăng, khăn len: {name} phân biệt tài như thám tử chữ.",
+          "Bác thủ thư cài lên áo {name} chiếc huy hiệu \"Tai thính số một\"."
         ],
         "wrong": [
-          "Có một tiếng đang thiếu chữ g ở cuối, đọc chậm lại nhé.",
-          "Mặt trời chiếu “ánh nắng”, còn tay mình “uốn nắn” chữ đấy.",
-          "Trăng tròn trên trời là “vầng” hay “vần”? Thử nói to lên."
+          "Có một tiếng đang thiếu hoặc thừa chữ g ở cuối, đọc chậm lại nhé.",
+          "Than củi để nhóm bếp, còn cầu thang để bước lên cao đấy.",
+          "Ánh trăng chiếu từ trời xuống, con trăn bò dưới đất: thử nói to lên."
         ]
-      }
+      },
+      "objective": "chinh-ta-van"
     },
     {
       "id": "goc-hoc-tap-cua-bong",
-      "title": "Góc học tập của Bống",
+      "title": "Góc học tập của Nai Mơ",
       "goTo": "Về gốc sim tím, Nai Mơ lật tiếp một trang sách",
       "kind": "challenge",
       "mechanic": "classify",
       "target": "nai-mo",
-      "prompt": "Nai Mơ lật tiếp, trang sách mở ra một góc học tập xinh xinh của bạn Bống ngay trên tảng đá.\nKết hợp từ ngữ ở cột A với từ ngữ ở cột B để tạo câu nêu đặc điểm.\nA: Bàn học của Bống; Cuốn vở; Cục tẩy\nB: thơm phức mùi giấy mới.; ngăn nắp, gọn gàng.; nhỏ xíu như một viên kẹo.\nKéo mỗi thẻ ở cột B về đúng bạn ở cột A.",
+      "prompt": "Nai Mơ lật tiếp, trang sách mở ra một góc học tập xinh xinh ngay trên tảng đá. Kéo mỗi thẻ về đúng đồ vật để tạo thành một câu nêu đặc điểm.",
       "groups": [
         {
-          "id": "ban-hoc",
-          "label": "Bàn học của Bống"
+          "id": "den-ban",
+          "label": "Ngọn đèn bàn"
         },
         {
-          "id": "cuon-vo",
-          "label": "Cuốn vở"
+          "id": "hop-but",
+          "label": "Hộp bút"
         },
         {
-          "id": "cuc-tay",
-          "label": "Cục tẩy"
+          "id": "chong-sach",
+          "label": "Chồng sách"
         }
       ],
       "items": [
         {
-          "id": "thom-phuc",
-          "label": "thơm phức mùi giấy mới."
+          "id": "cao-ngat",
+          "label": "cao ngất."
         },
         {
-          "id": "ngan-nap",
-          "label": "ngăn nắp, gọn gàng."
+          "id": "sang-diu",
+          "label": "sáng dịu hiền."
         },
         {
-          "id": "nho-xiu",
-          "label": "nhỏ xíu như một viên kẹo."
+          "id": "day-ap",
+          "label": "đầy ắp bút màu."
         }
       ],
       "skill": "cau",
       "answer": {
         "assignment": {
-          "ngan-nap": "ban-hoc",
-          "thom-phuc": "cuon-vo",
-          "nho-xiu": "cuc-tay"
+          "sang-diu": "den-ban",
+          "day-ap": "hop-but",
+          "cao-ngat": "chong-sach"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b16-tu-ngu-cau-2-a",
-        "tv2-t1-b16-tu-ngu-cau-2-b",
-        "tv2-t1-b16-tu-ngu-cau-2-c"
-      ],
       "support": {
         "guide": [
           "Ghép thử từng cặp rồi đọc to cả câu.",
           "Câu nghe hợp nghĩa nhất là câu đúng."
         ],
-        "hint": "Cái gì mới mua về thì thơm mùi giấy?",
+        "hint": "Thứ gì xếp chồng lên nhau thì cao dần lên?",
         "answer": {
-          "text": "Bàn học của Bống ngăn nắp, gọn gàng. Cuốn vở thơm phức mùi giấy mới. Cục tẩy nhỏ xíu như một viên kẹo.",
-          "explanation": "Bàn học được xếp gọn, vở mới thơm mùi giấy, cục tẩy bé như viên kẹo: mỗi câu nêu một đặc điểm."
+          "text": "Ngọn đèn bàn sáng dịu hiền. Hộp bút đầy ắp bút màu. Chồng sách cao ngất.",
+          "explanation": "Đèn bàn toả ánh sáng dịu, hộp bút chứa nhiều bút màu, chồng sách xếp thật cao: mỗi câu nêu một đặc điểm."
         }
       },
       "feedback": {
         "right": [
-          "Ba câu nêu đặc điểm tròn trịa, góc học tập của Bống sáng lên!",
-          "Cục tẩy nhỏ xíu, Cánh Cụt Phao suýt tưởng là kẹo mà mổ thử.",
+          "Ba câu nêu đặc điểm tròn trịa, góc học tập của Nai Mơ sáng lên!",
+          "Chồng sách cao ngất, Cánh Cụt Phao ngước cổ mỏi cả nhìn.",
           "Nai Mơ khen: ghép khéo như xếp sách lên kệ!"
         ],
         "wrong": [
-          "Bàn học mà thơm mùi giấy mới thì lạ quá, đổi thử nhé.",
-          "Thứ gì bé tí như viên kẹo? Nhìn lại cột A xem.",
+          "Ngọn đèn mà đầy ắp bút màu thì lạ quá, đổi thử nhé.",
+          "Thứ gì cao vút như tháp? Nhìn lại ba đồ vật xem.",
           "Đọc to cả câu sau khi ghép, câu nào nghe kì kì là chưa đúng đâu."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-cau-dac-diem"
     },
     {
       "id": "danh-thuc-hop-but",
@@ -1130,8 +1099,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t08-hop-but-nai-mo",
-      "prompt": "Gió ru hiu hiu, cả hộp bút ngủ khì trên tảng đá, thước kẻ còn ngáy khò khò. Nai Mơ đọc bài thơ gọi chúng dậy, nhưng bài thơ rơi mất vài dấu câu.\nChọn dấu chấm hoặc dấu chấm hỏi thay cho ô vuông.",
-      "template": "Sách ơi thức dậy\nVở ơi học bài\nÔ kìa thước kẻ\nSao cứ nằm dài{{d1}}\nLại còn anh bút\nTrốn tít nơi đâu{{d2}}\nNhanh dậy đi mau\nCùng em đến lớp{{d3}}\n(Theo Ngọc Minh)",
+      "prompt": "Gió ru hiu hiu, cả hộp bút ngủ khì trên tảng đá, thước kẻ còn ngáy khò khò. Nai Mơ đọc mấy câu gọi chúng dậy, nhưng làm rơi mất vài dấu câu. Mỗi ô vuông cần dấu chấm hay dấu chấm hỏi?",
+      "template": "Mặt trời lên cao rồi{{d1}}\nThước kẻ ơi, dậy chưa{{d2}}\nBút chì đang trốn ở đâu{{d3}}",
       "blanks": [
         {
           "id": "d1",
@@ -1176,39 +1145,35 @@
       "skill": "dau-cau",
       "answer": {
         "fills": {
-          "d1": "hoi",
+          "d1": "cham",
           "d2": "hoi",
-          "d3": "cham"
+          "d3": "hoi"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-b16-tu-ngu-cau-3-a",
-        "tv2-t1-b16-tu-ngu-cau-3-b",
-        "tv2-t1-b16-tu-ngu-cau-3-c"
-      ],
       "support": {
         "guide": [
-          "Đọc từng câu xem câu đó đang hỏi hay đang kể, đang rủ.",
-          "Câu có chữ “Sao”, “nơi đâu” thường là câu hỏi."
+          "Đọc từng câu xem câu đó đang hỏi hay đang kể.",
+          "Câu có chữ \"chưa\", \"ở đâu\" thường là câu hỏi."
         ],
         "hint": "Câu hỏi kết thúc bằng dấu chấm hỏi, câu kể kết thúc bằng dấu chấm.",
         "answer": {
-          "text": "nằm dài? ; nơi đâu? ; đến lớp.",
-          "explanation": "Hai câu đầu hỏi thước kẻ và anh bút nên dùng dấu chấm hỏi; câu cuối rủ nhau đến lớp nên dùng dấu chấm."
+          "text": "cao rồi. / dậy chưa? / ở đâu?",
+          "explanation": "Câu đầu kể mặt trời đã lên nên dùng dấu chấm; hai câu sau hỏi thước kẻ và bút chì nên dùng dấu chấm hỏi."
         }
       },
       "feedback": {
         "right": [
-          "Thước kẻ bật dậy thẳng tắp, anh bút chui ra khỏi hộp: dậy rồi đây!",
-          "Đúng dấu hết! Cả hộp bút xếp hàng đòi theo {name} đến lớp.",
+          "Thước kẻ bật dậy thẳng tắp, bút chì chui ra khỏi hộp: dậy rồi đây!",
+          "Đúng dấu hết! Cả hộp bút xếp hàng đòi theo {name} đi học.",
           "Nai Mơ đọc lại, giọng lên xuống đúng chỗ như cô giáo."
         ],
         "wrong": [
-          "“Sao cứ nằm dài” là đang hỏi hay đang kể nhỉ?",
-          "Câu cuối rủ nhau đến lớp, không hỏi ai cả đâu.",
-          "Anh bút trốn ở đâu? Câu ấy cần dấu để hỏi đấy."
+          "\"Dậy chưa\" là đang hỏi hay đang kể nhỉ?",
+          "Câu đầu chỉ kể mặt trời đã lên, không hỏi ai cả đâu.",
+          "Bút chì trốn ở đâu? Câu ấy cần dấu để hỏi đấy."
         ]
-      }
+      },
+      "objective": "dau-cau-cuoi-cau"
     },
     {
       "id": "nai-mo-luyen-tiec-sach",
@@ -1267,79 +1232,77 @@
       "kind": "challenge",
       "mechanic": "multi-select",
       "target": "tv2-t08-b15-gau-me",
-      "prompt": "Gấu Me nhẹ tay rút ra một tấm phiếu ai đó kẹp quên trong sách. “À, phiếu của bạn Nam đây mà.”\nCho biết phiếu đọc sách dưới đây của bạn Nam có những nội dung gì.\nPHIẾU ĐỌC SÁCH\nNgày: 19/10/2021\nTên sách: Cái Tết của mèo con\nTên tác giả: Nguyễn Đình Thi\nĐiều em thích nhất: Mèo con rất dũng cảm.\nChọn tất cả các nội dung có trong phiếu.",
+      "prompt": "Gấu Me nhẹ tay rút ra một tấm phiếu ai đó kẹp quên trong sách. “À, phiếu của bạn Sóc Nâu đây mà.” Phiếu ghi: PHIẾU ĐỌC SÁCH. Ngày đọc: 8 tháng 3. Tựa sách: Hạt dẻ lên đường. Người viết: bác Nhím Tròn. Chỗ em thích nhất: Hạt dẻ không sợ đường xa. Hãy chọn tất cả những nội dung có trong phiếu.",
       "choices": [
         {
           "id": "ngay",
-          "text": "Ngày"
+          "text": "Ngày đọc"
         },
         {
           "id": "so-trang",
           "text": "Số trang"
         },
         {
-          "id": "ten-sach",
-          "text": "Tên sách"
+          "id": "tua-sach",
+          "text": "Tựa sách"
         },
         {
           "id": "gia-tien",
           "text": "Giá tiền"
         },
         {
-          "id": "ten-tac-gia",
-          "text": "Tên tác giả"
+          "id": "nguoi-viet",
+          "text": "Người viết"
         },
         {
           "id": "mau-bia",
           "text": "Màu bìa sách"
         },
         {
-          "id": "dieu-thich-nhat",
-          "text": "Điều em thích nhất"
+          "id": "cho-thich",
+          "text": "Chỗ em thích nhất"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "choices": [
           "ngay",
-          "ten-sach",
-          "ten-tac-gia",
-          "dieu-thich-nhat"
+          "tua-sach",
+          "nguoi-viet",
+          "cho-thich"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-b16-doc-mo-rong-1"
-      ],
       "support": {
         "guide": [
           "Đọc từng dòng của phiếu, nhìn phần đứng trước dấu hai chấm.",
           "Mỗi dòng của phiếu là một nội dung."
         ],
-        "hint": "Phiếu có bốn dòng, nên có bốn nội dung.",
+        "hint": "Phiếu có bốn dòng ghi thông tin, nên có bốn nội dung.",
         "answer": {
-          "text": "Ngày; Tên sách; Tên tác giả; Điều em thích nhất",
-          "explanation": "Phiếu đọc sách của bạn Nam ghi ngày đọc, tên sách, tên tác giả và điều bạn ấy thích nhất; phiếu không ghi số trang, giá tiền hay màu bìa."
+          "text": "Ngày đọc; tựa sách; người viết; chỗ em thích nhất",
+          "explanation": "Phiếu của Sóc Nâu ghi ngày đọc, tựa sách, người viết và chỗ bạn ấy thích nhất; không ghi số trang, giá tiền hay màu bìa."
         }
       },
       "feedback": {
         "right": [
           "Đủ bốn nội dung! Gấu Me khẽ giơ ngón cái lên.",
-          "Ngày, tên sách, tác giả, điều thích nhất: phiếu gọn mà đầy đủ ghê.",
+          "Ngày đọc, tựa sách, người viết, chỗ thích nhất: phiếu gọn mà đầy đủ ghê.",
           "Nai Mơ reo lên: tớ cũng sẽ làm một tấm y như thế!"
         ],
         "wrong": [
           "Phiếu có ghi giá tiền đâu nhỉ? Đọc lại từng dòng nhé.",
-          "Còn sót một dòng ở cuối phiếu, dòng nói về điều bạn Nam thích.",
+          "Còn sót một dòng ở cuối phiếu, dòng nói về chỗ bạn Sóc thích.",
           "Đếm các dòng có dấu hai chấm: bao nhiêu dòng thì bấy nhiêu nội dung."
         ]
-      }
+      },
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
     },
     {
       "id": "ke-dieu-thich-nhat",
       "title": "Kể điều thích nhất trong sách",
       "kind": "speak",
       "target": "tv2-t08-b15-gau-me",
-      "prompt": "Gấu Me ngồi xuống chiếc gối cạnh quầy, chống cằm: cứ kể thong thả thôi, tớ có cả buổi chiều để nghe.\nNói về điều em thích nhất trong cuốn sách em đã đọc.",
+      "prompt": "Gấu Me ngồi xuống chiếc gối cạnh quầy, chống cằm: cứ kể thong thả thôi, tớ có cả buổi chiều để nghe. Hãy kể về điều {name} thích nhất trong một cuốn sách đã đọc.",
       "hints": [
         "Cuốn sách {name} muốn kể cho Gấu Me tên là gì?",
         "Em thích nhân vật, đoạn truyện hay bức tranh nào nhất trong đó?",
@@ -1350,28 +1313,50 @@
           "kind": "diagram",
           "type": "picture-card",
           "params": {
-            "caption": "bạn gái đứng giữa các cuốn sách có mắt mũi; bóng nói: “Cuốn Dế Mèn phiêu lưu kí rất hay. Tớ thích nhất là nhân vật Dế Trũi.”"
+            "caption": "bạn gái đứng giữa các cuốn sách có mắt mũi; bóng nói: “Cuốn Chuyến đi của hạt mưa rất hay. Tớ thích nhất chú ếch ngồi trên lá sen.”"
           }
         }
       ],
-      "curriculumRef": [
-        "tv2-t1-b16-doc-mo-rong-3"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "phieu-viet-bai-16",
-      "title": "Phiếu viết bài 16",
+      "title": "Phiếu viết nghe – viết và phiếu đọc sách",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b16",
-      "text": "Nhờ bố mẹ in phiếu Bài 16 ở khu phụ huynh: nghe – viết hai khổ thơ cuối, ghi tên tác giả, tả một đồ dùng học tập và tự làm phiếu đọc sách như Nai Mơ.",
-      "curriculumRef": [
-        "tv2-t1-b16-nghe-viet-1",
-        "tv2-t1-b16-chinh-ta-2",
-        "tv2-t1-b16-viet-doan-1",
-        "tv2-t1-b16-viet-doan-2",
-        "tv2-t1-b16-doc-mo-rong-2"
-      ]
+      "text": "Nhờ bố mẹ in phiếu viết ở khu phụ huynh: nghe đọc rồi chép lại hai khổ thơ cuối của Trang sách có suối, tả một đồ dùng học tập, và tự làm một phiếu đọc sách như Nai Mơ.",
+      "objective": "chinh-ta-nghe-viet",
+      "sheet": {
+        "title": "Phiếu viết: Trang sách có suối",
+        "blocks": [
+          {
+            "kind": "dictation",
+            "prompt": "Bố mẹ đọc chậm từng dòng, em nghe rồi viết lại hai khổ thơ cuối.",
+            "title": "Trang sách có suối",
+            "text": "Trang sách còn có đêm\nNgôi sao treo rất cao\nCó ngọn đèn nhỏ xíu\nSoi giấc mơ hôm nào.\n\nTrang sách chẳng biết nói\nMà em nghe rõ ràng\nCó tiếng chân đi mãi\nHướng về cõi mênh mang."
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Hãy tả vài câu về một món đồ trong cặp sách của em.",
+            "hints": [
+              "Món đồ ấy tên là gì?",
+              "Nhìn vào nó, em thấy hình gì, màu gì?",
+              "Hằng ngày em dùng nó để làm gì?"
+            ],
+            "lines": 6
+          },
+          {
+            "kind": "activity",
+            "prompt": "Tự làm một phiếu đọc sách cho cuốn sách em vừa đọc: điền vào bốn dòng sau.",
+            "media": [
+              "Ngày đọc:",
+              "Tựa sách:",
+              "Người viết:",
+              "Chỗ em thích nhất:"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "qua-cua-nai-mo",

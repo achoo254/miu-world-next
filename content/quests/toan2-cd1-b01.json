@@ -9,7 +9,7 @@
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Thầy hiệu trưởng Sư Tử Vàng, Gà Con Chíp, Thỏ Lúm, cô Nguyệt, thầy thể dục Nai Phi, đội trưởng Gấu Đô, cô lao công Thắm",
-    "where": "Sân trường: cột cờ, ghế đá, cửa phòng học, sân bóng, khung thành, góc sân",
+    "where": "Sân trường: cột cờ, ghế đá, cửa lớp Chim Sẻ, sân bóng, khung thành, góc sân",
     "goal": "Ghép lại bảng số của trường trước giờ vào học",
     "play": "Điền bảng, phân loại, xếp thứ tự, chọn nhiều số, ước lượng rồi đếm",
     "learn": "Các số đến 100: chục và đơn vị, đọc viết số, so sánh, xếp thứ tự, cấu tạo số",
@@ -30,7 +30,7 @@
   "places": {
     "su-tu-vang": "cột cờ",
     "toan2-cd1-b01-tho-lum": "ghế đá sân trường",
-    "toan2-cd1-b01-co-ngan": "cửa phòng học",
+    "toan2-cd1-b01-co-ngan": "cửa lớp Chim Sẻ",
     "toan2-cd1-b01-nai-phi": "sân bóng",
     "toan2-cd1-b01-gau-do": "khung thành",
     "toan2-cd1-b01-co-tham": "góc sân"
@@ -538,11 +538,11 @@
     {
       "id": "binh-hoa-huong-duong",
       "title": "Bình hoa hướng dương",
-      "goTo": "Chạy tới cửa phòng học, cô Nguyệt đang dựng lại bình hoa bị gió hắt đổ",
+      "goTo": "Chạy tới cửa lớp Chim Sẻ, cô Nguyệt đang dựng lại bình hoa bị gió hắt đổ",
       "kind": "challenge",
       "mechanic": "classify",
       "target": "toan2-cd1-b01-co-ngan",
-      "prompt": "Gió hắt xì làm bình hoa ở cửa phòng học đổ nghiêng, hoa nằm lăn lóc. Cô Nguyệt nhờ cậu cắm hoa vào các giỏ theo số ghi trên cánh: giỏ thứ nhất cho số lớn hơn 70, giỏ thứ hai cho số bé hơn 40, giỏ thứ ba cho số nằm giữa 40 và 50. Bông không hợp giỏ nào thì để riêng.",
+      "prompt": "Gió hắt xì làm bình hoa ở cửa lớp Chim Sẻ đổ nghiêng, hoa nằm lăn lóc. Cô Nguyệt nhờ cậu cắm hoa vào các giỏ theo số ghi trên cánh: giỏ thứ nhất cho số lớn hơn 70, giỏ thứ hai cho số bé hơn 40, giỏ thứ ba cho số nằm giữa 40 và 50. Bông không hợp giỏ nào thì để riêng.",
       "groups": [
         {
           "id": "lon-hon-70",
@@ -605,7 +605,7 @@
       },
       "feedback": {
         "right": [
-          "Ba giỏ hoa đã đầy, cửa phòng học lại rực rỡ.",
+          "Ba giỏ hoa đã đầy, cửa lớp Chim Sẻ lại rực rỡ.",
           "Bông số 40 nằm riêng là chuẩn rồi, cô Nguyệt gật đầu.",
           "Cậu so số nhanh hơn cả gió đổi chiều."
         ],
