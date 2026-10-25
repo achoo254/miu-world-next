@@ -1,6 +1,6 @@
 # Pha 7: Xóa kiểm kê SGK, cổng cứng, tài liệu, review, release
 
-**Tier:** M · **Phụ thuộc:** 2, 4, 5, 6 · **Trạng thái:** pending
+**Tier:** M · **Phụ thuộc:** 2, 4, 5, 6 · **Trạng thái:** in-progress (việc 1–6 xong 25/10; chờ người sở hữu cho deploy)
 
 ## Việc
 
@@ -36,3 +36,11 @@
 ## Rollback
 
 Revert commit xóa; nội dung quest mới không phụ thuộc kiểm kê nên không cần revert pha 4, 5.
+
+## Tiến độ (25/10/2026)
+
+- Việc 1–3: commit `439d045b` (xóa kiểm kê, danh sách chờ và mọi miễn trừ; kiểm vân tay chạy trên mọi quest, khóa sai định dạng hay không khớp `textbook-fingerprints.key-check` làm `content:check` đỏ; E2E `quest-mechanics`; gỡ 5 PDF sách khỏi tệp riêng, file trong iCloud giữ nguyên). Review: `plans/dattqh/reports/code-reviewer-261025-1240-remove-textbook-inventory.md`.
+- Việc 4–5: commit `84267cd8` (README, CLAUDE.md, docs, store listing, Master Plan, plan cũ).
+- Thêm: đặt mục tiêu quest theo dòng số riêng của từng quest, đổi 20 tên mục tiêu trên map, sinh lại 12 map (`63865225`); sửa bot rơi xuống kênh (`f599cb0f`) và mất cập nhật khi tắt server (`aaffaf3a`).
+- Việc 6: trang review (`63f555f4`); ảnh 27 màn × 2 khổ chụp ở `63f555f4`, 5 agent duyệt, 0 block, 16 note (`c82cf587`). Cổng release qua, CI xanh.
+- Còn mở: rà clip đã đăng trên mạng xã hội (repo marketing riêng) chưa làm; tỉ lệ kẹt bot ở trường học 4,61% (ngưỡng 5%), nên sửa cách bot chọn đích; `bot-load.test.ts` có lần đỏ trên CI vì đo theo thời gian thật (chạy lại thì xanh).
