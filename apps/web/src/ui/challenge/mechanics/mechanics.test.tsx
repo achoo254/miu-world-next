@@ -225,7 +225,14 @@ describe('learning mechanic screens send the answer the server grades', () => {
     expect(body(submit)).toEqual({ answer: { choice: 'apple' } });
   });
 
-  const logicOf = (logicType: 'pattern' | 'maze' | 'puzzle', labels: string[]): QuestStepPublic => ({
+  const logicOf = (
+    logicType: 'pattern' | 'maze' | 'puzzle',
+    labels: string[],
+    choices = [
+      { id: 'a', text: 'Cách A' },
+      { id: 'b', text: 'Cách B' },
+    ],
+  ): QuestStepPublic => ({
     id: `${logicType}-clues`,
     title: 'Ba ghế đầu bàn',
     goTo: 'Xem sơ đồ',
@@ -236,10 +243,7 @@ describe('learning mechanic screens send the answer the server grades', () => {
     mechanic: 'logic',
     logicType,
     elements: labels.map((label, i) => ({ id: `e${i}`, label })),
-    choices: [
-      { id: 'a', text: 'Cách A' },
-      { id: 'b', text: 'Cách B' },
-    ],
+    choices,
   });
   const renderLogic = (step: QuestStepPublic) =>
     render(<LearningStep step={step} quest={quest} data={DATA} busy={false} submit={vi.fn(async () => response(true))} onClose={() => undefined} />);
@@ -252,6 +256,19 @@ describe('learning mechanic screens send the answer the server grades', () => {
     // Headed as clues, so they never read as a second list of the answers.
     expect(screen.getByRole('region', { name: /Manh mối/ }).contains(clues ?? null)).toBe(true);
     expect(screen.queryByLabelText('unknown next element')).toBeNull();
+  });
+
+  it('short answers share a row, so a phone shows them all; sentence answers keep wide columns', () => {
+    renderLogic(logicOf('puzzle', ['Bi không ở giữa']));
+    expect(screen.getByRole('radiogroup').classList.contains('choice-list--short')).toBe(true);
+    cleanup();
+    renderLogic(
+      logicOf('puzzle', ['Bi không ở giữa'], [
+        { id: 'a', text: 'Cốc có bi nằm bên trái' },
+        { id: 'b', text: 'Cốc đỏ' },
+      ]),
+    );
+    expect(screen.getByRole('radiogroup').classList.contains('choice-list--short')).toBe(false);
   });
 
   it('logic pattern adds its own unknown cell only when no element is the unknown one', () => {

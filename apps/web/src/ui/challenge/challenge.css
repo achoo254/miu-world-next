@@ -92,6 +92,11 @@
   font-weight: 700;
   cursor: pointer;
 }
+.choice-list--short { grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr)); }
+/* Phones: answers stay 48px+ to tap but drop the extra height, so the whole question fits above the bar. */
+@media (max-width: 40rem) {
+  .choice { min-height: 3.25rem; padding: var(--space-xs) var(--space-sm); font-size: var(--text-body); }
+}
 .choice--selected { border-color: var(--color-primary); background: var(--color-badge); }
 .choice:focus-visible { box-shadow: var(--focus-ring); outline: none; }
 

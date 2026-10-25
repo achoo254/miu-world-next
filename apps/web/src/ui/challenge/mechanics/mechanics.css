@@ -90,3 +90,8 @@ button.calendar-cell, .calendar-weekday { cursor: pointer; }
 .logic-clue-title { margin: 0; font-size: var(--text-body); font-weight: 800; color: var(--color-ink-soft); }
 .logic-clue-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-xs); }
 .logic-clue { display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-key); background: var(--color-surface); box-shadow: var(--shadow-tile); font-weight: 700; font-size: var(--text-md); color: var(--color-ink); }
+/* Phones: clues read as one compact list, not stacked cards, leaving room for the answers. */
+@media (max-width: 40rem) {
+  .logic-clue-list { gap: 2px; }
+  .logic-clue { padding: var(--space-xs) var(--space-sm); font-size: var(--text-body); box-shadow: none; }
+}

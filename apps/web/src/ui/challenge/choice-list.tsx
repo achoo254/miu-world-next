@@ -3,6 +3,8 @@ import { mapBoth } from '../i18n/i18n';
 import { Bi } from '../i18n/use-t';
 import { twin } from '../quest/content-text';
 
+const SHORT_CHOICE = 14;
+
 export function ChoiceList({
   choices,
   en,
@@ -19,8 +21,11 @@ export function ChoiceList({
   fill: (text: string) => string;
   label: string;
 }) {
+  // Short labels ("Cốc đỏ") sit two or three to a row, so a phone shows every choice without scrolling;
+  // sentence-long ones keep the wide columns.
+  const short = choices.every((c) => fill(c.text).length <= SHORT_CHOICE);
   return (
-    <div className="choice-list" role="radiogroup" aria-label={label}>
+    <div className={`choice-list${short ? ' choice-list--short' : ''}`} role="radiogroup" aria-label={label}>
       {choices.map((c, i) => (
         <button
           key={c.id}
