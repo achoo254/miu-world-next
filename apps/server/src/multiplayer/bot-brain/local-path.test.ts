@@ -46,6 +46,18 @@ describe('a bot plans its way over what it sees', () => {
     expect(planner.plan(cliff, { x: 0, y: 5, z: 0 }, { x: 3.5, y: 1, z: 0.5, reach: 0.5 }, 4)?.reachesGoal ?? false).toBe(false);
   });
 
+  it('never drops into water it could not climb out of, but wades a stream with low banks', () => {
+    // A canal three blocks under its quays: the drop is one the child's walk takes, the way back up is not.
+    const canal = drawnMap(['444www444']);
+    const plan = planner.plan(canal, { x: 0, y: 4, z: 0 }, { x: 8.5, y: 4, z: 0.5, reach: 0.5 }, 8);
+    expect(plan?.cells.some((c) => c.y === 1) ?? false).toBe(false);
+    // A stream one block under its banks: in and out again.
+    const stream = drawnMap(['222www222']);
+    const across = planner.plan(stream, { x: 0, y: 2, z: 0 }, { x: 8.5, y: 2, z: 0.5, reach: 0.5 }, 8);
+    expect(across?.reachesGoal).toBe(true);
+    expect(walksAlong(stream, [{ x: 0, y: 2, z: 0 }, ...(across?.cells ?? [])])).toBe(true);
+  });
+
   it('heads for the edge of its sight on the side of a goal beyond it', () => {
     const map = openMap(120);
     const from = { x: 20, y: 1, z: 60 };

@@ -216,6 +216,9 @@ export class LocalPlanner {
           if (done[next] === stamp) continue;
           const nextFeet = feetOf(there);
           if (!canStep(feet, room, nextFeet, clearOf(there))) continue;
+          // Never a drop into water with no step back up: a canal or a lake under a high quay has no way out
+          // anywhere along it, and a bot that fell in would wade there for good.
+          if (groundOf(there) === WALK_GROUND.water && !canStep(nextFeet, clearOf(there), feet, room)) continue;
           const rise = nextFeet - feet;
           const cost = gHere + (SEARCH_COST[groundOf(there)] ?? 1) + (edgeOf(there) ? EDGE_COST : 0) + (rise > 0 ? rise * CLIMB_COST : -rise * DROP_COST);
           if (seen[next] === stamp && cost >= (g[next] ?? Infinity)) continue;
