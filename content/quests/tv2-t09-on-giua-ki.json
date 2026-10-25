@@ -4,18 +4,17 @@
   "chapter": 2,
   "title": "Lễ hội lá vàng trước thư viện",
   "status": "active",
-  "lesson": "tv2-t1-on-giua-ki",
   "topic": "doc-truyen",
-  "summary": "Lá vàng rụng đầy sân trước thư viện, bác thủ thư Gấu Trúc Tròn mở hội thi giữa kì: mỗi trạm do một bạn mới giữ, mỗi trạm một thử thách ôn lại nửa học kì. {name} đi khắp sân lễ hội làm quen bạn mới, gom đủ lá vàng để cùng cả lớp thắp chiếc đèn lá lớn nhất sân.",
+  "summary": "Lá vàng rụng đầy sân trước thư viện, bác thủ thư Gấu Trúc Tròn mở hội ôn tập: mỗi trạm do một bạn mới giữ, mỗi trạm một thử thách nhắc lại những điều đã học dọc đường. {name} đi khắp sân lễ hội làm quen bạn mới, gom đủ lá vàng để cùng cả lớp thắp chiếc đèn lá lớn nhất sân.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Bác thủ thư Gấu Trúc Tròn dẫn chương trình, nói chậm mà chắc; Mèo Gừng, Cáo Ớt, Khỉ Nhót, Gấu Bùi, Gấu Trắng Kem, Mèo Muối, Hải Ly Bào, Cá Bảy Màu, Bà Tư, Bác tiều phu Lâm, Cô giáo Thu và Sư Tử Kẹo giữ các trạm",
     "where": "Sân lễ hội lá vàng rộng trước cửa Thư viện: sân khấu lá vàng, đường lá vàng, bể nước tròn, các cây lá vàng và các trạm thi xếp quanh sân",
     "goal": "Vượt qua tất cả các trạm để góp lá vàng thắp chiếc đèn lá của cả lớp",
     "play": "Tìm đồ, ghép bài đọc với nội dung, nói, đoán từ, điền chữ, xếp thẻ thành câu, phân nhóm, đóng vai, đọc truyện, điền dấu câu, trắc nghiệm, kể chuyện, lựa chọn trong hội thoại, phiếu viết",
-    "learn": "Tiếng Việt 2 Ôn tập giữa học kì 1: các bài đọc đã học, đoán từ, tên đồ vật và công dụng, câu nêu đặc điểm, nói và đáp lời, kiểu câu, dấu chấm và dấu chấm hỏi, kể chuyện, đọc hiểu \"Câu chuyện bó đũa\", nghĩa từ, từ chỉ sự vật và hoạt động",
+    "learn": "Ôn lại các bài đọc đã gặp trên đường, đoán từ, tên đồ vật và công dụng, câu nêu đặc điểm, nói và đáp lời, kiểu câu, dấu chấm và dấu chấm hỏi, kể chuyện theo tranh, đọc hiểu \"Thầy bói xem voi\", nghĩa từ, từ chỉ sự vật và hoạt động",
     "reward": "120 XP, 20 xu, Đọc hiểu +2, Từ ngữ +2, Câu +2, Dấu câu +1, Kể chuyện +1, Chính tả +1",
-    "next": "Bài 17 \"Gọi bạn\" ở Khu rừng bí mật"
+    "next": "Tiếng gọi trên đồng cỏ khô ở Khu rừng bí mật"
   },
   "phases": {
     "hook": "mo-hoi-la-vang",
@@ -28,17 +27,41 @@
     "next": "mo-bai-17"
   },
   "texts": {
-    "vit-boi-duoc-ma": {
-      "title": "Vịt bơi được mà",
-      "author": "Trung Nguyên sưu tầm",
-      "body": "Người đàn ông nọ muốn lội qua sông. Gặp cậu bé chăn vịt, bác ta liền hỏi:\n\n– Sông này có sâu không cháu◻\n\nCậu bé trả lời:\n\n– Nông lắm bác ạ◻\n\nBác ta liền lội sang sông, mới lội một đoạn đã gần ngập đầu◻ Quay lại, bác ta hỏi cậu bé:\n\n– Sao cháu bảo sông này nông lắm◻\n\n– Cháu thấy con vịt chân ngắn thế mà nó cũng lội sang được ạ◻",
-      "section": "tv2-t1-on-giua-ki-danh-gia-3"
+    "treo-bien": {
+      "title": "Treo biển",
+      "body": "Bác Tư mở quán bánh giò, nắn nót viết lên tấm ván: “Bánh giò nóng hổi, mời ghé mua.” Bà hàng xóm hỏi:\n\n– Nóng hay nguội, ngửi là biết, ghi làm gì?\n\nBác Tư xoá chữ “nóng hổi”. Cậu đưa thư lắc đầu:\n\n– Khách đói tự khắc vào, mời làm chi.\n\nBác Tư xoá nốt. Nhìn tấm ván trắng tinh, bác hỏi:\n\n– Biển trống trơn thế này, ai biết quán bán gì?\n\nCậu đưa thư gãi đầu đáp:\n\n– Dạ, bác bày bánh lên mâm là khách biết ngay.",
+      "glossary": [
+        {
+          "term": "Nắn nót",
+          "meaning": "viết hay làm thật chậm, thật cẩn thận từng nét."
+        }
+      ],
+      "source": {
+        "kind": "folk",
+        "title": "Truyện cười dân gian Việt Nam"
+      }
     },
-    "cau-chuyen-bo-dua": {
-      "title": "Câu chuyện bó đũa",
-      "author": "Theo Ngụ ngôn Việt Nam",
-      "body": "Ngày xưa, ở một gia đình kia, có hai anh em. Lúc nhỏ, anh em rất hoà thuận. Khi lớn lên, anh có vợ, em có chồng. Tuy mỗi người một nhà nhưng vẫn hay va chạm.\n\nThấy các con không yêu thương nhau, người cha rất buồn phiền. Một hôm, ông đặt một bó đũa và một túi tiền lên mặt bàn rồi gọi các con lại và bảo:\n\n– Ai bẻ gãy được bó đũa này thì cha thưởng cho túi tiền.\n\nBốn người con lần lượt bẻ bó đũa. Ai cũng cố hết sức mà không sao bẻ gãy được.\n\nNgười cha bèn cởi bó đũa ra, rồi thong thả bẻ gãy từng chiếc một cách dễ dàng. Thấy vậy, bốn người con cùng nói:\n\n– Thưa cha, lấy từng chiếc mà bẻ thì có khó gì!\n\nNgười cha liền bảo:\n\n– Đúng. Như thế là các con đều thấy rằng chia lẻ ra thì yếu, hợp lại thì mạnh. Vậy các con phải biết yêu thương, đùm bọc lẫn nhau. Có đoàn kết thì mới có sức mạnh.",
-      "section": "tv2-t1-on-giua-ki-doc"
+    "thay-boi-xem-voi": {
+      "title": "Thầy bói xem voi",
+      "body": "Ngày xưa, trong một xóm nọ có năm ông thầy bói, ai cũng mù cả hai mắt. Nghe tin có người dắt voi qua làng, cả năm rủ nhau đi xem. Chẳng nhìn thấy gì, các thầy chỉ còn cách lần mò bằng tay.\n\nThầy thứ nhất sờ vào cái vòi, reo lên:\n\n– Con voi mềm và dài, giống một con rắn lớn!\n\nThầy thứ hai chạm vào chiếc ngà, cãi lại:\n\n– Sai rồi! Voi cứng, nhọn và nhẵn bóng, giống một cây giáo!\n\nThầy thứ ba vuốt chiếc tai, lắc đầu:\n\n– Các thầy nói bậy cả! Voi mỏng và phẳng, phe phẩy như cái quạt!\n\nThầy thứ tư ôm lấy cái chân, quả quyết:\n\n– Voi to và tròn như cột nhà!\n\nThầy thứ năm nắm cái đuôi, bảo:\n\n– Voi chỉ nhỏ và dài như sợi dây thừng thôi!\n\nNăm thầy khăng khăng giữ ý mình, ai cũng cho mình đúng, cãi nhau om sòm đến khản cả giọng. Người quản tượng đứng xem, bật cười:\n\n– Mỗi thầy mới sờ được một chỗ thôi. Voi là tất cả những thứ ấy hợp lại đấy!\n\nNghe vậy, năm thầy ngượng ngùng, im bặt.",
+      "glossary": [
+        {
+          "term": "Lần mò",
+          "meaning": "đưa tay sờ dần từng chỗ để tìm hiểu khi không nhìn thấy rõ."
+        },
+        {
+          "term": "Khăng khăng",
+          "meaning": "cứ nhất định giữ ý mình, không chịu nghe ai."
+        },
+        {
+          "term": "Ngượng ngùng",
+          "meaning": "thấy mình không phải nên mặt nóng bừng, không biết nói gì."
+        }
+      ],
+      "source": {
+        "kind": "folk",
+        "title": "Truyện ngụ ngôn dân gian Việt Nam"
+      }
     }
   },
   "places": {
@@ -53,7 +76,7 @@
     "tv2-t09-on-giua-ki-hai-ly-bao": "trạm bể nước",
     "tv2-t09-on-giua-ki-ca-bay-mau": "mép bể nước tròn",
     "tv2-t09-on-giua-ki-ba-tu": "trạm kể chuyện",
-    "tv2-t09-on-giua-ki-bac-tieu-phu-lam": "trạm bó đũa",
+    "tv2-t09-on-giua-ki-bac-tieu-phu-lam": "trạm xem voi",
     "tv2-t09-on-giua-ki-co-giao-thu": "bàn đá dưới cây lá vàng",
     "tv2-t09-on-giua-ki-su-tu-keo": "quầy kẹo lá"
   },
@@ -71,7 +94,7 @@
         },
         {
           "speaker": "Gấu Trúc Tròn",
-          "text": "Mỗi trạm có một bạn mới giữ, bạn nào cũng mang một câu đố của nửa học kì vừa qua. Cứ từ từ làm quen, không ai phải vội."
+          "text": "Mỗi trạm có một bạn mới giữ, bạn nào cũng mang một câu đố ôn lại những điều đã học dọc đường. Cứ từ từ làm quen, không ai phải vội."
         },
         {
           "speaker": "Gấu Bùi",
@@ -89,7 +112,7 @@
         },
         {
           "text": "Bác ơi, trạm nào khó nhất ạ?",
-          "reply": "Bác Gấu Trúc Tròn ngẫm nghĩ thật lâu rồi mới đáp: trạm cuối có một bó đũa không ai bẻ được đâu."
+          "reply": "Bác Gấu Trúc Tròn ngẫm nghĩ thật lâu rồi mới đáp: trạm cuối có một con voi, năm người cùng sờ mà cãi nhau mãi chưa xong."
         }
       ],
       "en": {
@@ -97,7 +120,7 @@
         "goTo": "Go to the golden-leaf stage by the library door, Gấu Trúc Tròn is slowly climbing up",
         "lines": [
           "The golden-leaf festival… has begun. I'll speak slowly so you can all hear: whoever clears every stall gets to light the leaf lantern.",
-          "A new friend keeps each stall, and each one brings a puzzle from the half term we've just had. Get to know them slowly, nobody has to rush.",
+          "A new friend keeps each stall, and each one brings a puzzle that reviews what you learned along the way. Get to know them slowly, nobody has to rush.",
           "Hi {name}, I'm Gấu Bùi, keeper of the objects stall… but I dropped all the golden-leaf tickets along the way. Hee hee.",
           "Without tickets, nobody can enter the stalls. {name}, please help Gấu Bùi pick them up, one at a time is plenty."
         ],
@@ -108,7 +131,7 @@
           },
           {
             "text": "Which stall is the hardest, sir?",
-            "reply": "Gấu Trúc Tròn thinks for a very long time before answering: the last stall has a bundle of chopsticks nobody can break."
+            "reply": "Gấu Trúc Tròn thinks for a very long time before answering: the last stall has an elephant that five people touch and argue over without ever finishing."
           }
         ]
       }
@@ -131,49 +154,49 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t09-on-giua-ki-meo-gung",
-      "prompt": "Mèo Gừng vẫy đuôi: bông hoa năm cánh vàng ghi tên năm bài đọc, năm cánh hồng ghi nội dung, mà gió thổi rời hết cánh hồng rồi!\nTìm tên bài đọc tương ứng với nội dung của bài.\nKéo mỗi cánh hồng về đúng tên bài.",
+      "prompt": "Mèo Gừng vẫy đuôi: bông hoa năm cánh vàng ghi tên năm bài đọc, năm cánh hồng ghi nội dung, mà gió thổi rời hết cánh hồng rồi!\nNhớ lại những bài đã đọc dọc đường để ghép mỗi nội dung với tên bài của nó.\nKéo mỗi cánh hồng về đúng tên bài.",
       "groups": [
         {
           "id": "bai-1",
-          "label": "1. TÔI LÀ HỌC SINH LỚP 2"
+          "label": "1. CHIẾC CẶP MÀU NẮNG"
         },
         {
           "id": "bai-2",
-          "label": "2. NIỀM VUI CỦA BI VÀ BỐNG"
+          "label": "2. KHO BÁU DƯỚI CHÂN CẦU VỒNG"
         },
         {
           "id": "bai-3",
-          "label": "3. MỘT GIỜ HỌC"
+          "label": "3. BÔNG HOA CỦA BÍCH"
         },
         {
           "id": "bai-4",
-          "label": "4. CÁI TRỐNG TRƯỜNG EM"
+          "label": "4. CHIẾC TRỐNG NGỦ QUÊN"
         },
         {
           "id": "bai-5",
-          "label": "5. CUỐN SÁCH CỦA EM"
+          "label": "5. CÁC PHẦN CỦA MỘT CUỐN SÁCH"
         }
       ],
       "items": [
         {
           "id": "noi-dung-a",
-          "label": "a. Kể về niềm vui của hai anh em."
+          "label": "a. Hai bạn nhỏ ngắm cầu vồng rồi vẽ quà tặng nhau."
         },
         {
           "id": "noi-dung-b",
-          "label": "b. Giới thiệu về sách."
+          "label": "b. Giới thiệu những phần quen thuộc khi mở một cuốn sách."
         },
         {
           "id": "noi-dung-c",
-          "label": "c. Kể về ngày khai trường của một bạn học sinh lớp 2."
+          "label": "c. Một bạn gái náo nức chuẩn bị cho ngày đầu đến trường."
         },
         {
           "id": "noi-dung-d",
-          "label": "d. Nói về một đồ vật thân thuộc ở trường học."
+          "label": "d. Chiếc trống nhớ học trò suốt mùa hè vắng lặng."
         },
         {
           "id": "noi-dung-e",
-          "label": "e. Kể về cậu bé Quang tự tin nói trước lớp."
+          "label": "e. Một cô bé run run rồi tự tin nói trước cả lớp."
         }
       ],
       "skill": "doc-hieu",
@@ -186,36 +209,30 @@
           "noi-dung-b": "bai-5"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-1-a",
-        "tv2-t1-on-giua-ki-danh-gia-1-b",
-        "tv2-t1-on-giua-ki-danh-gia-1-c",
-        "tv2-t1-on-giua-ki-danh-gia-1-d",
-        "tv2-t1-on-giua-ki-danh-gia-1-e"
-      ],
       "support": {
         "guide": [
-          "Nhớ lại từng bài: bài nào kể ngày khai trường, bài nào có cậu bé Quang, bài nào nói về chiếc trống?",
-          "Bài \"Cuốn sách của em\" giới thiệu tên sách, tác giả, mục lục."
+          "Nhớ lại từng bài: bài nào có em bé làm rơi hộp sáp màu, bài nào có cô bé ôm chậu hoa cúc, bài nào nói về chiếc trống?",
+          "Bài nói về sách nhắc đến tên sách, tên tác giả, nhà xuất bản và mục lục."
         ],
-        "hint": "Bi và Bống là hai anh em; Quang là cậu bé trong bài \"Một giờ học\".",
+        "hint": "Tí và Tép là hai chú chuột; cô bé ôm chậu hoa cúc đứng trước cả lớp là Bích.",
         "answer": {
           "text": "1 – c; 2 – a; 3 – e; 4 – d; 5 – b",
-          "explanation": "Tôi là học sinh lớp 2 kể ngày khai trường; Niềm vui của Bi và Bống kể niềm vui hai anh em; Một giờ học kể Quang tự tin nói trước lớp; Cái trống trường em nói về chiếc trống; Cuốn sách của em giới thiệu về sách."
+          "explanation": "Chiếc cặp màu nắng kể buổi sáng náo nức của Na; Kho báu dưới chân cầu vồng kể hai bạn chuột vẽ quà tặng nhau; Bông hoa của Bích kể cô bé hết run khi nói trước lớp; Chiếc trống ngủ quên là bài thơ về cái trống nhớ học trò; Các phần của một cuốn sách giới thiệu bìa, tên sách, nhà xuất bản và mục lục."
         }
       },
       "feedback": {
         "right": [
           "Bông hoa nở đủ năm cánh hồng! Mèo Gừng nhảy một vòng số tám ăn mừng.",
-          "Năm bài đọc, năm nội dung, không lạc cánh nào cả.",
+          "Năm bài đọc gặp lại đúng năm nội dung, không lạc cánh nào.",
           "Mèo Gừng tặng {name} chiếc lá vàng đầu tiên, thơm mùi gừng ấm."
         ],
         "wrong": [
-          "Cậu bé Quang là nhân vật của bài \"Một giờ học\" đấy.",
-          "Bài nào nói về chiếc trống im lặng suốt ngày hè nhỉ?",
-          "Bi và Bống là hai anh em, ghép cánh \"niềm vui của hai anh em\" cho đúng bài."
+          "Cô bé run run trước cả lớp là Bích, ghép cánh ấy vào bài về bông hoa nhé.",
+          "Bài nào kể về chiếc trống nằm lặng im suốt kì nghỉ hè nhỉ?",
+          "Hai chú chuột ngắm cầu vồng là nhân vật của bài về kho báu đấy."
         ]
-      }
+      },
+      "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "the-mau-cau-hoi",
@@ -223,23 +240,16 @@
       "goTo": "Sang trạm thẻ màu, Cáo Ớt đang xoè sáu tấm thẻ",
       "kind": "speak",
       "target": "tv2-t09-on-giua-ki-cao-ot",
-      "prompt": "Cáo Ớt nhanh tay xoè sáu tấm thẻ màu, mỗi thẻ ghi tên một bài đọc và một câu hỏi. Rút một thẻ nào, nhanh lên kẻo gió thổi bay!\nChọn đọc một bài và trả lời câu hỏi.",
+      "prompt": "Cáo Ớt nhanh tay xoè sáu tấm thẻ màu, mỗi thẻ ghi tên một bài đọc và một câu hỏi. Rút một thẻ nào, nhanh lên kẻo gió thổi bay!\nChọn một thẻ, nhắc lại bài đọc ấy và trả lời câu hỏi bằng lời của em.",
       "hints": [
-        "TÔI LÀ HỌC SINH LỚP 2\nTheo em, vì sao vào ngày khai trường, các bạn thường muốn đến trường sớm?",
-        "EM CÓ XINH KHÔNG?\nCuối cùng, voi em nhận thấy mình xinh nhất khi nào?",
-        "NIỀM VUI CỦA BI VÀ BỐNG\nTheo em, vì sao Bi và Bống không vẽ tranh cho mình mà lại vẽ cho nhau?",
-        "CẦU THỦ DỰ BỊ\nTheo gấu, cầu thủ dự bị là như thế nào?",
-        "CÔ GIÁO LỚP EM\nEm thích khổ thơ nào nhất? Vì sao?",
-        "CÁI TRỐNG TRƯỜNG EM\nVì sao trong những ngày hè trống trường lại buồn?"
+        "CHIẾC CẶP MÀU NẮNG\nTheo em, vì sao Na đứng vào hàng mà thấy mình như cao thêm một chút?",
+        "CHÚ VOI CON MUỐN CÓ CÁNH\nCuối cùng voi con nhận ra mình giỏi việc gì?",
+        "KHO BÁU DƯỚI CHÂN CẦU VỒNG\nTheo em, vì sao Tí và Tép vẫn cười dù chẳng có hũ vàng nào?",
+        "NGƯỜI NHẶT CẦU\nTheo em, người nhặt cầu có quan trọng với trận đấu không? Vì sao?",
+        "TIẾNG CÔ TRONG NẮNG SỚM\nKhổ thơ nào làm em thích nhất? Vì sao?",
+        "CHIẾC TRỐNG NGỦ QUÊN\nTrống nhớ ai trong mùa hè, và trống reo lên khi nào?"
       ],
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-2-a",
-        "tv2-t1-on-giua-ki-danh-gia-2-b",
-        "tv2-t1-on-giua-ki-danh-gia-2-c",
-        "tv2-t1-on-giua-ki-danh-gia-2-d",
-        "tv2-t1-on-giua-ki-danh-gia-2-e",
-        "tv2-t1-on-giua-ki-danh-gia-2-f"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "doan-tu-cung-cao",
@@ -248,36 +258,19 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-khi-nhot",
-      "prompt": "Khỉ Nhót nháy mắt: trò này tớ bày, bốn từ tớ giấu, đoán sai là phải nhảy lò cò một vòng nhé!\nTrò chơi: Đoán từ",
-      "template": "a. Bắt đầu bằng tr; Đồ vật ở trường; Dùng để báo giờ học → {{a}}\nb. Bắt đầu bằng ch; Đồ vật trong nhà; Dùng để quét nhà → {{b}}\nc. Chứa vần ang; Đồ vật trong lớp; Dùng để viết → {{c}}\nd. Chứa vần an; Đồ vật ở góc học tập; Dùng để bày sách vở → {{d}}",
+      "prompt": "Khỉ Nhót nháy mắt: trò này tớ bày, bốn từ tớ giấu, đoán sai là phải nhảy lò cò một vòng nhé!\nTrò chơi đoán từ: đọc gợi ý rồi chọn từ đúng.",
+      "template": "a. Bắt đầu bằng ch; Đồ vật ở cổng thư viện; Dùng để rung báo giờ mở cửa → {{a}}\nb. Bắt đầu bằng s; Đồ vật trong lớp học; Dùng để đọc truyện và học bài → {{b}}\nc. Chứa vần ươc; Đồ vật trong hộp bút; Dùng để kẻ đường thẳng → {{c}}\nd. Chứa vần ăp; Đồ vật đeo trên vai; Dùng để đựng sách vở → {{d}}",
       "blanks": [
         {
           "id": "a",
           "options": [
             {
-              "id": "truong",
-              "text": "trường"
+              "id": "chuong",
+              "text": "chuông"
             },
             {
-              "id": "trong",
-              "text": "trống"
-            },
-            {
-              "id": "thuoc",
-              "text": "thước"
-            }
-          ]
-        },
-        {
-          "id": "b",
-          "options": [
-            {
-              "id": "chan",
-              "text": "chăn"
-            },
-            {
-              "id": "chau",
-              "text": "chậu"
+              "id": "chuoi",
+              "text": "chuối"
             },
             {
               "id": "choi",
@@ -286,19 +279,36 @@
           ]
         },
         {
+          "id": "b",
+          "options": [
+            {
+              "id": "sach",
+              "text": "sách"
+            },
+            {
+              "id": "sao",
+              "text": "sáo"
+            },
+            {
+              "id": "sap",
+              "text": "sáp"
+            }
+          ]
+        },
+        {
           "id": "c",
           "options": [
             {
-              "id": "bang",
-              "text": "bảng"
+              "id": "thuoc",
+              "text": "thước"
             },
             {
-              "id": "but",
-              "text": "bút"
+              "id": "nuoc",
+              "text": "nước"
             },
             {
-              "id": "cap",
-              "text": "cặp"
+              "id": "buoc",
+              "text": "bước"
             }
           ]
         },
@@ -306,16 +316,16 @@
           "id": "d",
           "options": [
             {
-              "id": "ghe",
-              "text": "ghế"
+              "id": "cap",
+              "text": "cặp"
             },
             {
-              "id": "ban",
-              "text": "bàn"
+              "id": "kep",
+              "text": "kẹp"
             },
             {
-              "id": "bang",
-              "text": "bảng"
+              "id": "bap",
+              "text": "bắp"
             }
           ]
         }
@@ -323,41 +333,36 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "a": "trong",
-          "b": "choi",
-          "c": "bang",
-          "d": "ban"
+          "a": "chuong",
+          "b": "sach",
+          "c": "thuoc",
+          "d": "cap"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-2-4-a",
-        "tv2-t1-on-giua-ki-danh-gia-2-4-b",
-        "tv2-t1-on-giua-ki-danh-gia-2-4-c",
-        "tv2-t1-on-giua-ki-danh-gia-2-4-d"
-      ],
       "support": {
         "guide": [
-          "Mỗi từ có ba gợi ý: âm đầu hoặc vần, đồ vật ở đâu, dùng để làm gì.",
-          "Đọc gợi ý \"Dùng để…\" trước, rồi kiểm tra âm đầu hoặc vần."
+          "Mỗi từ có ba gợi ý: âm đầu hoặc vần, đồ vật nằm ở đâu, dùng để làm gì.",
+          "Đọc gợi ý \"Dùng để…\" trước, rồi kiểm tra âm đầu hoặc vần của từ."
         ],
-        "hint": "Đồ vật báo giờ học kêu tùng tùng; đồ vật bày sách vở ở góc học tập có vần an.",
+        "hint": "Đồ vật rung leng keng ở cổng thư viện; đồ vật đeo trên vai để đựng sách vở có vần ăp.",
         "answer": {
-          "text": "a. trống; b. chổi; c. bảng; d. bàn",
-          "explanation": "Trống bắt đầu bằng tr, báo giờ học; chổi bắt đầu bằng ch, để quét nhà; bảng có vần ang, để viết; bàn có vần an, để bày sách vở."
+          "text": "a. chuông; b. sách; c. thước; d. cặp",
+          "explanation": "Chuông bắt đầu bằng ch, rung báo giờ mở cửa; sách bắt đầu bằng s, để đọc truyện; thước có vần ươc, để kẻ đường thẳng; cặp có vần ăp, để đựng sách vở."
         }
       },
       "feedback": {
         "right": [
           "Đoán trúng cả bốn! Khỉ Nhót phải tự nhảy lò cò một vòng vì thua cuộc.",
           "Khỉ Nhót gãi đầu: cậu đoán nhanh hơn tớ nghĩ ra câu đố!",
-          "Trống, chổi, bảng, bàn, không sót từ nào, xuất sắc."
+          "Chuông, sách, thước, cặp: không sót từ nào, xuất sắc."
         ],
         "wrong": [
-          "Trường không phải đồ vật, nó là cả một ngôi nhà to đấy.",
-          "Đồ vật dùng để quét nhà có âm đầu ch, nghĩ thêm chút nữa.",
-          "Bảng có vần ang, còn bàn có vần an, đừng để chúng đổi chỗ nhé."
+          "Chuối là một loại quả, không rung báo giờ được đâu.",
+          "Đồ vật kẻ đường thẳng có vần ươc, nghĩ thêm chút nữa nhé.",
+          "Đồ đeo trên vai để đựng sách vở có vần ăp, không phải bắp ngô."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
     },
     {
       "id": "ten-do-vat",
@@ -366,19 +371,19 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-gau-bui",
-      "prompt": "Gấu Bùi ôm giỏ đồ vật chạy vội, thế là… rơi tung toé. Giúp bạn ấy dán lại tên cho từng món nhé.\nViết tên đồ vật trong mỗi hình.",
-      "template": "Cán xanh, hai lưỡi sắc: {{h1}}\nVắt trên giá, màu hồng: {{h2}}\nTreo tường, viền đỏ, kêu tích tắc: {{h3}}\nNhựa xanh lá, để xúc cơm: {{h4}}\nCả hộp đủ màu, để tô tranh: {{h5}}\nViền xanh, để đựng thức ăn: {{h6}}",
+      "prompt": "Gấu Bùi ôm giỏ đồ vật chạy vội, thế là… rơi tung toé. Giúp bạn ấy dán lại tên cho từng món nhé.\nĐọc lời tả rồi chọn cách viết đúng tên của mỗi đồ vật.",
+      "template": "Cán gỗ, lông cứng, để quét sân: {{h1}}\nHai gọng, đeo trước mắt để nhìn rõ chữ: {{h2}}\nBốn chân, có tựa lưng, để ngồi đọc sách: {{h3}}\nCó quai cầm, để xách nước tưới cây: {{h4}}\nĐan bằng tre, để đựng trái cây: {{h5}}\nTreo trên trần, bật lên là sáng cả phòng: {{h6}}",
       "blanks": [
         {
           "id": "h1",
           "options": [
             {
-              "id": "keo",
-              "text": "kéo"
+              "id": "choi",
+              "text": "chổi"
             },
             {
-              "id": "ceo",
-              "text": "céo"
+              "id": "troi",
+              "text": "trổi"
             }
           ]
         },
@@ -386,12 +391,12 @@
           "id": "h2",
           "options": [
             {
-              "id": "khang-mat",
-              "text": "khăng mặt"
+              "id": "kinh",
+              "text": "kính"
             },
             {
-              "id": "khan-mat",
-              "text": "khăn mặt"
+              "id": "cinh",
+              "text": "cính"
             }
           ]
         },
@@ -399,12 +404,12 @@
           "id": "h3",
           "options": [
             {
-              "id": "dong-ho",
-              "text": "đồng hồ"
+              "id": "ghe",
+              "text": "ghế"
             },
             {
-              "id": "dong-ho-sai",
-              "text": "đồng hô"
+              "id": "ge",
+              "text": "gế"
             }
           ]
         },
@@ -412,12 +417,12 @@
           "id": "h4",
           "options": [
             {
-              "id": "dua",
-              "text": "đũa"
+              "id": "xo",
+              "text": "xô"
             },
             {
-              "id": "thia",
-              "text": "thìa"
+              "id": "so",
+              "text": "sô"
             }
           ]
         },
@@ -425,12 +430,12 @@
           "id": "h5",
           "options": [
             {
-              "id": "but-chi-mau",
-              "text": "bút chì màu"
+              "id": "gio",
+              "text": "giỏ"
             },
             {
-              "id": "but-bi",
-              "text": "bút bi"
+              "id": "do",
+              "text": "dỏ"
             }
           ]
         },
@@ -438,12 +443,12 @@
           "id": "h6",
           "options": [
             {
-              "id": "dia",
-              "text": "đĩa"
+              "id": "den",
+              "text": "đèn"
             },
             {
-              "id": "dia-sai",
-              "text": "địa"
+              "id": "den-sai",
+              "text": "đền"
             }
           ]
         }
@@ -451,61 +456,54 @@
       "skill": "chinh-ta",
       "answer": {
         "fills": {
-          "h1": "keo",
-          "h2": "khan-mat",
-          "h3": "dong-ho",
-          "h4": "thia",
-          "h5": "but-chi-mau",
-          "h6": "dia"
+          "h1": "choi",
+          "h2": "kinh",
+          "h3": "ghe",
+          "h4": "xo",
+          "h5": "gio",
+          "h6": "den"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-2-5-a",
-        "tv2-t1-on-giua-ki-danh-gia-2-5-b",
-        "tv2-t1-on-giua-ki-danh-gia-2-5-c",
-        "tv2-t1-on-giua-ki-danh-gia-2-5-d",
-        "tv2-t1-on-giua-ki-danh-gia-2-5-e",
-        "tv2-t1-on-giua-ki-danh-gia-2-5-f"
-      ],
       "support": {
         "guide": [
           "Đọc lời tả từng đồ vật, nghĩ xem ở nhà em gọi nó là gì.",
-          "Để ý cách viết: k đứng trước e; khăn có vần ăn."
+          "Để ý cách viết: k đứng trước i, gh đứng trước e, x khác s, ch khác tr."
         ],
-        "hint": "Thứ dùng để cắt giấy viết bằng chữ k; thứ để xúc cơm là cái thìa.",
+        "hint": "Thứ đeo trước mắt để nhìn rõ chữ viết bằng k; thứ để ngồi có gh đứng trước e.",
         "answer": {
-          "text": "kéo, khăn mặt, đồng hồ, thìa, bút chì màu, đĩa",
-          "explanation": "Sáu hình là cái kéo, chiếc khăn mặt, đồng hồ treo tường, cái thìa nhựa, hộp bút chì màu và cái đĩa."
+          "text": "chổi, kính, ghế, xô, giỏ, đèn",
+          "explanation": "Sáu món là cái chổi, chiếc kính, cái ghế, cái xô, cái giỏ tre và chiếc đèn trên trần."
         }
       },
       "feedback": {
         "right": [
           "Sáu món đồ có tên đầy đủ! Gấu Bùi ôm giỏ chặt hơn, hứa không làm rơi nữa.",
-          "Viết đúng cả k lẫn kh, Gấu Bùi phục lăn.",
+          "Viết đúng cả k, gh lẫn x, Gấu Bùi phục lăn.",
           "Giỏ đồ ngăn nắp rồi, Gấu Bùi trao {name} thêm một lá vàng."
         ],
         "wrong": [
-          "Âm cờ đứng trước e phải viết k: kéo chứ không phải céo.",
-          "Thứ xúc cơm bằng nhựa xanh là cái thìa, còn đũa thì để gắp.",
-          "Khăn mặt có vần ăn, không có chữ g ở cuối đâu."
+          "Âm cờ đứng trước i phải viết k: kính chứ không phải cính.",
+          "Âm gờ đứng trước e phải viết gh, nên là ghế chứ không phải gế.",
+          "Xách nước tưới cây bằng cái xô viết với x, còn s là một chữ khác đấy."
         ]
-      }
+      },
+      "objective": "chinh-ta-am-dau"
     },
     {
       "id": "cong-dung-do-vat",
-      "title": "Chiếc khăn dùng để làm gì?",
+      "title": "Chiếc xô dùng để làm gì?",
       "kind": "challenge",
       "mechanic": "sort",
       "target": "tv2-t09-on-giua-ki-gau-bui",
-      "prompt": "Gấu Bùi vắt chiếc khăn mặt hồng lên tai, hỏi tỉnh bơ: cái này để làm mũ hả? {name} trả lời giúp bằng một câu nhé.\nHỏi – đáp về công dụng của từng đồ vật ở bài tập 5.\nM:\n– Kéo dùng để làm gì?\n– Kéo dùng để cắt giấy, cắt vải.",
+      "prompt": "Gấu Bùi úp chiếc xô lên đầu, hỏi tỉnh bơ: cái này để làm mũ hả? {name} trả lời giúp bằng một câu nhé.\nSắp ba thẻ thành câu nói công dụng của chiếc xô.",
       "items": [
         {
-          "id": "lau-mat",
-          "label": "lau mặt."
+          "id": "xach-nuoc",
+          "label": "xách nước."
         },
         {
-          "id": "khan-mat",
-          "label": "Khăn mặt"
+          "id": "cai-xo",
+          "label": "Chiếc xô"
         },
         {
           "id": "dung-de",
@@ -515,37 +513,35 @@
       "skill": "cau",
       "answer": {
         "order": [
-          "khan-mat",
+          "cai-xo",
           "dung-de",
-          "lau-mat"
+          "xach-nuoc"
         ]
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-2-6"
-      ],
       "support": {
         "guide": [
-          "Làm giống câu mẫu: Kéo dùng để cắt giấy, cắt vải.",
-          "Tên đồ vật đứng đầu, công dụng đứng cuối."
+          "Câu nói công dụng có ba phần: tên đồ vật, chữ nối, việc nó làm.",
+          "Tên đồ vật đứng đầu, việc nó làm đứng cuối."
         ],
-        "hint": "Khăn mặt… dùng để… làm gì?",
+        "hint": "Chiếc xô… dùng để… làm gì nhỉ?",
         "answer": {
-          "text": "Khăn mặt dùng để lau mặt.",
-          "explanation": "Câu nói tên đồ vật (khăn mặt) và công dụng của nó (lau mặt), giống câu mẫu về cái kéo."
+          "text": "Chiếc xô dùng để xách nước.",
+          "explanation": "Câu gọi tên đồ vật (chiếc xô) rồi nói việc nó làm được (xách nước)."
         }
       },
       "feedback": {
         "right": [
-          "Gấu Bùi gỡ khăn khỏi tai, lau mặt cái phốc: à, ra là thế!",
-          "Câu nói công dụng gọn gàng như câu mẫu cái kéo.",
-          "Tên đồ vật trước, công dụng sau, {name} làm chuẩn."
+          "Gấu Bùi gỡ chiếc xô khỏi đầu, xách thử nước: à, ra là thế!",
+          "Tên đồ vật trước, công dụng sau, {name} sắp thẻ chuẩn.",
+          "Câu nghe trôi chảy như dòng nước chảy vào xô."
         ],
         "wrong": [
           "Câu phải mở đầu bằng tên đồ vật viết hoa.",
-          "\"Dùng để\" đứng giữa tên đồ vật và việc nó làm.",
-          "Thẻ có dấu chấm là thẻ kết câu, đặt nó cuối cùng."
+          "Hai chữ \"dùng để\" đứng giữa tên đồ vật và việc nó làm.",
+          "Thẻ có dấu chấm là thẻ kết câu, hãy đặt nó cuối cùng."
         ]
-      }
+      },
+      "objective": "cau-xep-tu"
     },
     {
       "id": "ghep-may-dac-diem",
@@ -554,78 +550,76 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t09-on-giua-ki-gau-trang-kem",
-      "prompt": "Trên trời trạm đồ vật treo tám đám mây giấy, bốn đám hàng trên, bốn đám hàng dưới. Gấu Bùi nhảy mãi không với tới, nhờ {name} ghép giúp.\nGhép các từ ngữ để tạo 4 câu nêu đặc điểm.\nđôi mắt của bé; những vì sao; cầu vồng; tóc bà; lấp lánh trong đêm; to tròn, đen láy; đã bạc; rực rỡ sau cơn mưa",
+      "prompt": "Trên cây treo tám đám mây giấy, bốn đám hàng trên, bốn đám hàng dưới. Gấu Bùi nhảy mãi không với tới, nhờ {name} ghép giúp.\nGhép từng đám mây để thành 4 câu nêu đặc điểm.\nchú mèo con; dòng suối; chiếc đèn lồng; những trang sách; mềm như bông; trong veo, chảy róc rách; đỏ rực trong đêm hội; thơm mùi giấy mới",
       "groups": [
         {
-          "id": "mat-be",
-          "label": "đôi mắt của bé"
+          "id": "meo-con",
+          "label": "chú mèo con"
         },
         {
-          "id": "vi-sao",
-          "label": "những vì sao"
+          "id": "dong-suoi",
+          "label": "dòng suối"
         },
         {
-          "id": "cau-vong",
-          "label": "cầu vồng"
+          "id": "den-long",
+          "label": "chiếc đèn lồng"
         },
         {
-          "id": "toc-ba",
-          "label": "tóc bà"
+          "id": "trang-sach",
+          "label": "những trang sách"
         }
       ],
       "items": [
         {
-          "id": "da-bac",
-          "label": "đã bạc"
+          "id": "thom-giay",
+          "label": "thơm mùi giấy mới"
         },
         {
-          "id": "lap-lanh",
-          "label": "lấp lánh trong đêm"
+          "id": "trong-veo",
+          "label": "trong veo, chảy róc rách"
         },
         {
-          "id": "ruc-ro",
-          "label": "rực rỡ sau cơn mưa"
+          "id": "mem-bong",
+          "label": "mềm như bông"
         },
         {
-          "id": "to-tron",
-          "label": "to tròn, đen láy"
+          "id": "do-ruc",
+          "label": "đỏ rực trong đêm hội"
         }
       ],
       "skill": "cau",
       "answer": {
         "assignment": {
-          "to-tron": "mat-be",
-          "lap-lanh": "vi-sao",
-          "ruc-ro": "cau-vong",
-          "da-bac": "toc-ba"
+          "mem-bong": "meo-con",
+          "trong-veo": "dong-suoi",
+          "do-ruc": "den-long",
+          "thom-giay": "trang-sach"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-2-7"
-      ],
       "support": {
         "guide": [
-          "Đọc thử từng cặp thành câu, nghe có hợp nghĩa không.",
-          "Cái gì lấp lánh vào ban đêm? Cái gì hiện ra sau cơn mưa?"
+          "Đọc thử từng cặp thành một câu, nghe có hợp nghĩa không.",
+          "Thứ gì chảy róc rách? Thứ gì được treo lên trong đêm hội?"
         ],
-        "hint": "Tóc của bà thì đã bạc; đôi mắt của bé to tròn, đen láy.",
+        "hint": "Chú mèo con thì mềm như bông; những trang sách mới thơm mùi giấy.",
         "answer": {
-          "text": "Đôi mắt của bé to tròn, đen láy. Những vì sao lấp lánh trong đêm. Cầu vồng rực rỡ sau cơn mưa. Tóc bà đã bạc.",
-          "explanation": "Mỗi câu nêu đặc điểm của một sự vật: mắt bé to tròn, sao lấp lánh, cầu vồng rực rỡ, tóc bà bạc."
+          "text": "Chú mèo con mềm như bông. Dòng suối trong veo, chảy róc rách. Chiếc đèn lồng đỏ rực trong đêm hội. Những trang sách thơm mùi giấy mới.",
+          "explanation": "Mỗi câu nêu đặc điểm của một sự vật: mèo con mềm, suối trong veo, đèn lồng đỏ rực, trang sách thơm mùi giấy."
         }
       },
       "feedback": {
         "right": [
           "Bốn cặp mây ghép thành bốn câu đẹp như thơ!",
-          "Gấu Trắng Kem ngửa cổ nhìn trời: cầu vồng rực rỡ thật kìa!",
-          "Ghép chuẩn hết, đám mây nào cũng có đôi."
+          "Gấu Trắng Kem ngửa cổ nhìn trời: đèn lồng đỏ rực thật kìa!",
+          "Ghép chuẩn hết, đám mây nào cũng tìm được bạn đôi."
         ],
         "wrong": [
-          "Những vì sao sáng vào ban đêm, ghép lại đám mây ấy nhé.",
-          "Cầu vồng thường hiện ra sau cơn mưa đấy.",
-          "Đôi mắt của bé thì to tròn, đen láy, chứ chưa bạc đâu."
+          "Dòng suối mới chảy róc rách, hãy đưa đám mây ấy về chỗ suối nhé.",
+          "Đèn lồng treo lên trong đêm hội mới đỏ rực, ghép lại xem.",
+          "Chú mèo con thì mềm như bông, không thơm mùi giấy đâu."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-cau-dac-diem"
     },
     {
       "id": "dong-vai-cung-meo",
@@ -633,19 +627,14 @@
       "goTo": "Đến trạm đóng vai, Mèo Muối vẫy tay chờ bạn diễn",
       "kind": "speak",
       "target": "tv2-t09-on-giua-ki-meo-muoi",
-      "prompt": "Mèo Muối mới chuyển tới gần thư viện, nói trước đám đông còn run râu, vậy mà xung phong làm bạn diễn của {name}! Hai bạn thay nhau nói và đáp nhé.\nĐóng vai, nói và đáp lời trong các tình huống sau:\na. Nhờ bạn nhặt giúp cái bút bị rơi.\nb. Khen bạn viết chữ đẹp.\nc. An ủi bạn khi bạn bị ốm nên phải nghỉ học.\nd. Chúc mừng sinh nhật bạn.",
+      "prompt": "Mèo Muối mới chuyển tới gần thư viện, nói trước đám đông còn run râu, vậy mà xung phong làm bạn diễn của {name}! Hai bạn thay nhau đóng vai ở bốn tình huống, mỗi lần một người nói, một người đáp:\na. Mượn bạn cây thước kẻ.\nb. Khen bức tranh bạn vừa vẽ.\nc. Động viên bạn lỡ làm đổ nước ra vở.\nd. Mừng bạn được cô giáo khen.",
       "hints": [
-        "Nhờ bạn thì nói \"giúp mình với\" và nhớ cảm ơn.",
+        "Nhờ bạn thì nói \"cho mình mượn với\" và nhớ cảm ơn.",
         "Khen bạn thật lòng, bạn đáp lại bằng lời cảm ơn.",
-        "An ủi bạn ốm bằng lời hỏi han, chúc bạn mau khoẻ.",
-        "Chúc mừng sinh nhật thì chúc bạn một điều thật hay."
+        "An ủi bạn bằng lời hỏi han, bảo bạn đừng lo, mình cùng lau.",
+        "Chúc mừng thì nói điều làm bạn vui, bạn đáp lại bằng nụ cười."
       ],
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-3-8-a",
-        "tv2-t1-on-giua-ki-danh-gia-3-8-b",
-        "tv2-t1-on-giua-ki-danh-gia-3-8-c",
-        "tv2-t1-on-giua-ki-danh-gia-3-8-d"
-      ]
+      "objective": "noi-va-nghe-chia-se"
     },
     {
       "id": "kieu-cau-1",
@@ -654,8 +643,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-hai-ly-bao",
-      "prompt": "Hải Ly Bào đập đuôi tung toé, đọc câu đầu tiên trên tấm ván trôi giữa bể nước:\nMỗi câu ở cột A thuộc kiểu câu nào ở cột B?\nA: Bác An là nông dân.; Bác đang gặt lúa.; Bác rất chăm chỉ và cẩn thận.\nB: Câu giới thiệu; Câu nêu hoạt động; Câu nêu đặc điểm\nBác An là nông dân.",
-      "template": "Bác An là nông dân. → {{kieu}}",
+      "prompt": "Hải Ly Bào đập đuôi tung toé, đọc câu đầu tiên trên tấm ván trôi giữa bể nước:\nBa câu ở bảng A thuộc ba kiểu câu khác nhau ở bảng B. Câu trên ván là kiểu nào?\nA: Cô Thu là người giữ kho truyện.; Cô đang xếp sách lên kệ.; Cô rất kiên nhẫn và dịu dàng.\nB: Câu giới thiệu; Câu kể hoạt động; Câu tả đặc điểm\nCô Thu là người giữ kho truyện.",
+      "template": "Cô Thu là người giữ kho truyện. → {{kieu}}",
       "blanks": [
         {
           "id": "kieu",
@@ -666,11 +655,11 @@
             },
             {
               "id": "hoat-dong",
-              "text": "Câu nêu hoạt động"
+              "text": "Câu kể hoạt động"
             },
             {
               "id": "dac-diem",
-              "text": "Câu nêu đặc điểm"
+              "text": "Câu tả đặc điểm"
             }
           ]
         }
@@ -681,32 +670,30 @@
           "kieu": "gioi-thieu"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-3-9-a"
-      ],
       "support": {
         "guide": [
-          "Câu \"Ai là gì?\" dùng để giới thiệu một người.",
-          "Đọc to câu \"Bác An là nông dân.\" rồi tự hỏi câu ấy để làm gì."
+          "Câu trả lời cho \"Ai là gì?\" thường dùng để giới thiệu một người.",
+          "Đọc to câu trên ván rồi tự hỏi câu ấy cho biết điều gì về cô Thu."
         ],
-        "hint": "Giới thiệu là gì, hoạt động là làm gì, đặc điểm là thế nào; câu \"Bác An là nông dân.\" trả lời điều nào?",
+        "hint": "Giới thiệu cho biết là ai, hoạt động cho biết làm gì, đặc điểm cho biết thế nào; câu \"Cô Thu là người giữ kho truyện.\" thuộc kiểu nào?",
         "answer": {
-          "text": "Bác An là nông dân. → Câu giới thiệu",
-          "explanation": "Câu cho biết bác An là ai (là nông dân), nên là câu giới thiệu."
+          "text": "Cô Thu là người giữ kho truyện. → Câu giới thiệu",
+          "explanation": "Câu cho biết cô Thu là ai (người giữ kho truyện), nên là câu giới thiệu."
         }
       },
       "feedback": {
         "right": [
           "Câu giới thiệu, trúng phóc! Hải Ly Bào quẫy đuôi làm bể nước nổi cầu vồng.",
-          "Bác An là ai? Là nông dân! Câu này giới thiệu bác rồi.",
-          "Đúng rồi, câu có chữ \"là\" để giới thiệu người."
+          "Cô Thu là ai? Là người giữ kho truyện! Câu này giới thiệu cô rồi.",
+          "Đúng rồi, chữ \"là\" nối tên người với điều giới thiệu về người ấy."
         ],
         "wrong": [
-          "Câu này không kể bác đang làm gì, chỉ cho biết bác là ai thôi.",
-          "Bác An là nông dân: câu này giới thiệu hay tả đặc điểm nhỉ?",
+          "Câu này không kể cô đang làm gì, chỉ cho biết cô là ai thôi.",
+          "Câu trên ván giới thiệu hay tả tính nết nhỉ? Đọc lại thử xem.",
           "Tìm chữ \"là\" trong câu, câu có \"là\" thường để giới thiệu đấy."
         ]
-      }
+      },
+      "objective": "cau-gioi-thieu"
     },
     {
       "id": "kieu-cau-2",
@@ -714,8 +701,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-hai-ly-bao",
-      "prompt": "Tấm ván thứ hai trôi tới, dính cả một bông lúa vàng:\nMỗi câu ở cột A thuộc kiểu câu nào ở cột B?\nA: Bác An là nông dân.; Bác đang gặt lúa.; Bác rất chăm chỉ và cẩn thận.\nB: Câu giới thiệu; Câu nêu hoạt động; Câu nêu đặc điểm\nBác đang gặt lúa.",
-      "template": "Bác đang gặt lúa. → {{kieu}}",
+      "prompt": "Tấm ván thứ hai trôi tới, dính cả một chiếc lá vàng:\nBa câu ở bảng A thuộc ba kiểu câu khác nhau ở bảng B. Câu trên ván là kiểu nào?\nA: Cô Thu là người giữ kho truyện.; Cô đang xếp sách lên kệ.; Cô rất kiên nhẫn và dịu dàng.\nB: Câu giới thiệu; Câu nói về việc làm; Câu nói về tính nết\nCô đang xếp sách lên kệ.",
+      "template": "Cô đang xếp sách lên kệ. → {{kieu}}",
       "blanks": [
         {
           "id": "kieu",
@@ -726,11 +713,11 @@
             },
             {
               "id": "hoat-dong",
-              "text": "Câu nêu hoạt động"
+              "text": "Câu nói về việc làm"
             },
             {
               "id": "dac-diem",
-              "text": "Câu nêu đặc điểm"
+              "text": "Câu nói về tính nết"
             }
           ]
         }
@@ -741,32 +728,30 @@
           "kieu": "hoat-dong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-3-9-b"
-      ],
       "support": {
         "guide": [
-          "Câu \"Ai làm gì?\" kể về một hoạt động.",
-          "Đọc to câu \"Bác đang gặt lúa.\" rồi tự hỏi câu ấy để làm gì."
+          "Câu trả lời cho \"Ai làm gì?\" kể về một hoạt động.",
+          "Đọc to câu trên ván rồi tự hỏi cô Thu đang làm việc gì."
         ],
-        "hint": "Giới thiệu là gì, hoạt động là làm gì, đặc điểm là thế nào; câu \"Bác đang gặt lúa.\" trả lời điều nào?",
+        "hint": "Giới thiệu cho biết là ai, hoạt động cho biết làm gì, đặc điểm cho biết thế nào; câu \"Cô đang xếp sách lên kệ.\" thuộc kiểu nào?",
         "answer": {
-          "text": "Bác đang gặt lúa. → Câu nêu hoạt động",
-          "explanation": "Câu kể việc bác đang làm (gặt lúa), nên là câu nêu hoạt động."
+          "text": "Cô đang xếp sách lên kệ. → Câu nói về việc làm",
+          "explanation": "Câu kể việc cô đang làm (xếp sách lên kệ), nên là câu nêu hoạt động."
         }
       },
       "feedback": {
         "right": [
-          "Câu nêu hoạt động, chuẩn! Gặt lúa là việc bác đang làm.",
+          "Câu nêu hoạt động, chuẩn! Xếp sách là việc cô đang làm.",
           "Hải Ly Bào lặn một vòng quanh bể ăn mừng: hoạt động đấy!",
-          "Chữ \"đang gặt\" lộ ngay đây là việc làm, giỏi quá."
+          "Chữ \"đang xếp\" lộ ngay đây là việc làm, giỏi quá."
         ],
         "wrong": [
-          "Gặt lúa là một việc làm, câu này kể bác đang làm gì đấy.",
-          "Câu không giới thiệu bác là ai, mà nói bác đang làm gì.",
-          "Thử thêm chữ \"đang\": \"đang gặt lúa\", nghe là hoạt động rồi."
+          "Xếp sách là một việc làm, câu này kể cô đang làm gì đấy.",
+          "Câu không giới thiệu cô là ai, mà nói cô đang bận việc gì.",
+          "Thử nhìn chữ \"đang\": \"đang xếp sách\", nghe là hoạt động rồi."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
     },
     {
       "id": "kieu-cau-3",
@@ -775,8 +760,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-ca-bay-mau",
-      "prompt": "Tấm ván cuối cùng to nhất, Cá Bảy Màu phải đẩy bằng cả hai vây:\nMỗi câu ở cột A thuộc kiểu câu nào ở cột B?\nA: Bác An là nông dân.; Bác đang gặt lúa.; Bác rất chăm chỉ và cẩn thận.\nB: Câu giới thiệu; Câu nêu hoạt động; Câu nêu đặc điểm\nBác rất chăm chỉ và cẩn thận.",
-      "template": "Bác rất chăm chỉ và cẩn thận. → {{kieu}}",
+      "prompt": "Tấm ván cuối cùng to nhất, Cá Bảy Màu phải đẩy bằng cả hai vây:\nBa câu ở bảng A thuộc ba kiểu câu khác nhau ở bảng B. Câu trên ván là kiểu nào?\nA: Cô Thu là người giữ kho truyện.; Cô đang xếp sách lên kệ.; Cô rất kiên nhẫn và dịu dàng.\nB: Câu giới thiệu; Câu kể một hoạt động; Câu tả một đặc điểm\nCô rất kiên nhẫn và dịu dàng.",
+      "template": "Cô rất kiên nhẫn và dịu dàng. → {{kieu}}",
       "blanks": [
         {
           "id": "kieu",
@@ -787,11 +772,11 @@
             },
             {
               "id": "hoat-dong",
-              "text": "Câu nêu hoạt động"
+              "text": "Câu kể một hoạt động"
             },
             {
               "id": "dac-diem",
-              "text": "Câu nêu đặc điểm"
+              "text": "Câu tả một đặc điểm"
             }
           ]
         }
@@ -802,82 +787,81 @@
           "kieu": "dac-diem"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-3-9-c"
-      ],
       "support": {
         "guide": [
-          "Câu \"Ai thế nào?\" nêu đặc điểm.",
-          "Đọc to câu \"Bác rất chăm chỉ và cẩn thận.\" rồi tự hỏi câu ấy để làm gì."
+          "Câu trả lời cho \"Ai thế nào?\" nêu đặc điểm.",
+          "Đọc to câu trên ván rồi tự hỏi câu ấy tả cô Thu ra sao."
         ],
-        "hint": "Giới thiệu là gì, hoạt động là làm gì, đặc điểm là thế nào; câu \"Bác rất chăm chỉ và cẩn thận.\" trả lời điều nào?",
+        "hint": "Giới thiệu cho biết là ai, hoạt động cho biết làm gì, đặc điểm cho biết thế nào; câu \"Cô rất kiên nhẫn và dịu dàng.\" thuộc kiểu nào?",
         "answer": {
-          "text": "Bác rất chăm chỉ và cẩn thận. → Câu nêu đặc điểm",
-          "explanation": "Câu cho biết bác thế nào (chăm chỉ, cẩn thận), nên là câu nêu đặc điểm."
+          "text": "Cô rất kiên nhẫn và dịu dàng. → Câu tả một đặc điểm",
+          "explanation": "Câu cho biết cô thế nào (kiên nhẫn, dịu dàng), nên là câu nêu đặc điểm."
         }
       },
       "feedback": {
         "right": [
-          "Câu nêu đặc điểm! Chăm chỉ, cẩn thận là tính nết của bác.",
+          "Câu nêu đặc điểm! Kiên nhẫn, dịu dàng là tính nết của cô.",
           "Đủ ba tấm ván, Cá Bảy Màu nhảy tủm một cái chúc mừng.",
           "Câu \"Ai thế nào?\" đây rồi, {name} phân biệt tài ghê."
         ],
         "wrong": [
-          "Chăm chỉ, cẩn thận không phải việc làm, mà là tính nết của bác.",
-          "Câu này tả bác thế nào, không kể bác đang làm gì.",
-          "Hỏi \"Bác thế nào?\" sẽ ra câu trả lời: rất chăm chỉ và cẩn thận."
+          "Kiên nhẫn, dịu dàng không phải việc làm, mà là tính nết của cô.",
+          "Câu này tả cô thế nào, không kể cô đang làm gì.",
+          "Hỏi \"Cô thế nào?\" sẽ ra câu trả lời: rất kiên nhẫn và dịu dàng."
         ]
-      }
+      },
+      "objective": "tu-chi-dac-diem-cau-dac-diem"
     },
     {
       "id": "doc-vit-boi",
       "title": "Truyện cười bên bể nước",
       "kind": "read",
       "target": "tv2-t09-on-giua-ki-ca-bay-mau",
-      "textRef": "vit-boi-duoc-ma",
+      "textRef": "treo-bien",
       "audio": true,
-      "question": "Cá Bảy Màu ngoi lên, cười sặc nước: truyện này buồn cười lắm! Vì sao cậu bé chăn vịt bảo sông nông lắm?",
+      "question": "Cá Bảy Màu ngoi lên, cười sặc nước: truyện này buồn cười lắm! Vì sao cuối cùng trên tấm ván của bác Tư chẳng còn chữ nào?",
       "choices": [
         {
-          "id": "loi-nhieu-lan",
-          "text": "Vì cậu bé đã tự lội qua sông nhiều lần rồi."
+          "id": "nghe-het-loi",
+          "text": "Vì ai góp ý bác cũng nghe theo và xoá bớt, xoá mãi thì hết."
         },
         {
-          "id": "vit-chan-ngan",
-          "text": "Vì cậu thấy con vịt chân ngắn mà cũng lội sang được."
+          "id": "mua-troi-muc",
+          "text": "Vì cơn mưa lớn làm trôi hết mực trên ván."
         },
         {
-          "id": "nuoc-can",
-          "text": "Vì nước sông chỉ ngập tới mắt cá chân."
+          "id": "het-banh",
+          "text": "Vì bánh bán hết nên bác tháo biển xuống."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "vit-chan-ngan"
+        "choice": "nghe-het-loi"
       },
       "support": {
         "guide": [
-          "Đọc câu trả lời cuối cùng của cậu bé.",
-          "Cậu bé so con sông với con vật nào?"
+          "Đọc lại những chỗ bác Tư xoá chữ, xem mỗi lần ai bảo bác xoá.",
+          "Sau lần xoá cuối, trên ván còn lại gì?"
         ],
-        "hint": "Vịt không lội mà bơi, nhưng cậu bé lại tưởng vịt lội.",
+        "hint": "Bà hàng xóm và cậu đưa thư đều nói chữ ấy thừa, và bác nghe theo cả hai.",
         "answer": {
-          "text": "Cậu bé nghĩ vịt chân ngắn còn sang được thì sông phải nông lắm.",
-          "explanation": "Cậu bé nói: \"Cháu thấy con vịt chân ngắn thế mà nó cũng lội sang được ạ.\" Cậu quên mất vịt biết bơi, nên truyện mới buồn cười."
+          "text": "Bác Tư nghe ai nói chữ thừa cũng xoá, nên hết sạch chữ.",
+          "explanation": "Bà hàng xóm rồi cậu đưa thư đều bảo chữ trên biển là thừa, bác xoá theo từng lời, cuối cùng chỉ còn tấm ván trắng tinh, nên truyện mới buồn cười."
         }
       },
       "feedback": {
         "right": [
-          "Ha ha! Vịt bơi chứ đâu có lội, cậu bé nhầm to rồi!",
-          "Cá Bảy Màu cười tới mức sủi bong bóng khắp bể: đúng rồi, con vịt!",
+          "Ha ha! Nghe ai cũng xoá thì biển nào chẳng trắng tinh!",
+          "Cá Bảy Màu cười tới mức sủi bong bóng khắp bể: đúng rồi, bác Tư xoá hết!",
           "Chuẩn! Hiểu được truyện cười là đọc kĩ lắm đấy."
         ],
         "wrong": [
-          "Truyện không kể cậu bé từng lội qua sông, đọc lại câu cuối nhé.",
-          "Nếu nước chỉ tới mắt cá thì bác kia đâu có suýt ngập đầu!",
-          "Cậu bé so dòng sông với một con vật chân ngắn, tìm lại xem."
+          "Truyện không hề nhắc tới cơn mưa, đọc lại chỗ bác xoá chữ nhé.",
+          "Bác Tư chưa bán hết bánh đâu, bác còn đang hỏi khách kia mà.",
+          "Mỗi lần bác xoá là có người góp lời, tìm lại những lời ấy xem."
         ]
-      }
+      },
+      "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "dau-cau-vit-boi",
@@ -886,8 +870,8 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-hai-ly-bao",
-      "prompt": "Hải Ly Bào chép lại truyện lên tấm ván, nhưng quên mất năm dấu câu. Dòng khó nhất bạn ấy khoanh tròn ngay đầu ván:\nVịt bơi được mà\nBác ta liền lội sang sông, mới lội một đoạn đã gần ngập đầu◻ Quay lại, bác ta hỏi cậu bé:\nChọn dấu chấm hoặc dấu chấm hỏi thay cho ô vuông.",
-      "template": "Vịt bơi được mà\n\nNgười đàn ông nọ muốn lội qua sông. Gặp cậu bé chăn vịt, bác ta liền hỏi:\n\n– Sông này có sâu không cháu{{d1}}\n\nCậu bé trả lời:\n\n– Nông lắm bác ạ{{d2}}\n\nBác ta liền lội sang sông, mới lội một đoạn đã gần ngập đầu{{d3}} Quay lại, bác ta hỏi cậu bé:\n\n– Sao cháu bảo sông này nông lắm{{d4}}\n\n– Cháu thấy con vịt chân ngắn thế mà nó cũng lội sang được ạ{{d5}}\n(Trung Nguyên sưu tầm)",
+      "prompt": "Hải Ly Bào chép lại truyện lên tấm ván, nhưng quên mất năm dấu câu. Dòng khó nhất bạn ấy khoanh tròn ngay đầu ván:\nTreo biển\nBác Tư xoá nốt. Nhìn tấm ván trắng tinh, bác hỏi:\nĐiền dấu chấm hoặc dấu chấm hỏi vào năm chỗ trống cho đúng.",
+      "template": "Treo biển\n\nBác Tư mở quán bánh giò, nắn nót viết lên tấm ván: “Bánh giò nóng hổi, mời ghé mua.” Bà hàng xóm hỏi:\n\n– Nóng hay nguội, ngửi là biết, ghi làm gì{{d1}}\n\nBác Tư xoá chữ “nóng hổi”{{d2}} Cậu đưa thư lắc đầu:\n\n– Khách đói tự khắc vào, mời làm chi{{d3}}\n\nBác Tư xoá nốt. Nhìn tấm ván trắng tinh, bác hỏi:\n\n– Biển trống trơn thế này, ai biết quán bán gì{{d4}}\n\nCậu đưa thư gãi đầu đáp:\n\n– Dạ, bác bày bánh lên mâm là khách biết ngay{{d5}}",
       "blanks": [
         {
           "id": "d1",
@@ -919,12 +903,12 @@
           "id": "d3",
           "options": [
             {
-              "id": "cham",
-              "text": "."
-            },
-            {
               "id": "hoi",
               "text": "?"
+            },
+            {
+              "id": "cham",
+              "text": "."
             }
           ]
         },
@@ -932,12 +916,12 @@
           "id": "d4",
           "options": [
             {
-              "id": "hoi",
-              "text": "?"
-            },
-            {
               "id": "cham",
               "text": "."
+            },
+            {
+              "id": "hoi",
+              "text": "?"
             }
           ]
         },
@@ -945,12 +929,12 @@
           "id": "d5",
           "options": [
             {
-              "id": "cham",
-              "text": "."
-            },
-            {
               "id": "hoi",
               "text": "?"
+            },
+            {
+              "id": "cham",
+              "text": "."
             }
           ]
         }
@@ -965,22 +949,15 @@
           "d5": "cham"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-danh-gia-3-10-a",
-        "tv2-t1-on-giua-ki-danh-gia-3-10-b",
-        "tv2-t1-on-giua-ki-danh-gia-3-10-c",
-        "tv2-t1-on-giua-ki-danh-gia-3-10-d",
-        "tv2-t1-on-giua-ki-danh-gia-3-10-e"
-      ],
       "support": {
         "guide": [
-          "Câu hỏi để hỏi người khác thì cuối câu có dấu chấm hỏi.",
-          "Câu kể, câu trả lời thì cuối câu có dấu chấm."
+          "Câu dùng để hỏi người khác thì cuối câu có dấu chấm hỏi.",
+          "Câu kể hoặc lời đáp thì cuối câu có dấu chấm."
         ],
-        "hint": "Bác hỏi hai lần, nên có hai dấu chấm hỏi.",
+        "hint": "Có hai lời hỏi của bác Tư và bà hàng xóm, nên có hai dấu chấm hỏi.",
         "answer": {
-          "text": "cháu? – ạ. – ngập đầu. – nông lắm? – được ạ.",
-          "explanation": "Hai câu của người đàn ông là câu hỏi nên dùng dấu chấm hỏi; câu trả lời của cậu bé và câu kể dùng dấu chấm."
+          "text": "làm gì? – “nóng hổi”. – làm chi. – bán gì? – biết ngay.",
+          "explanation": "Hai câu hỏi (bác ghi làm gì, ai biết quán bán gì) kết thúc bằng dấu chấm hỏi; câu kể việc bác xoá chữ và hai lời đáp của cậu đưa thư kết thúc bằng dấu chấm."
         }
       },
       "feedback": {
@@ -990,11 +967,12 @@
           "Hải Ly Bào đọc lại cả truyện, cười rung cả hai chiếc răng cửa to."
         ],
         "wrong": [
-          "\"Sông này có sâu không cháu\" là câu hỏi, cần dấu chấm hỏi.",
-          "Cậu bé trả lời chứ không hỏi lại, nên dùng dấu chấm.",
-          "Câu kể bác lội gần ngập đầu kết thúc bằng dấu chấm đấy."
+          "\"Bác ghi làm gì\" là lời hỏi, cần dấu chấm hỏi.",
+          "Câu kể bác xoá chữ không hỏi ai, nên dùng dấu chấm.",
+          "Cậu đưa thư đang trả lời chứ không hỏi lại, kết câu bằng dấu chấm nhé."
         ]
-      }
+      },
+      "objective": "dau-cau-cuoi-cau"
     },
     {
       "id": "tranh-ten-truyen",
@@ -1003,23 +981,23 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t09-on-giua-ki-ba-tu",
-      "prompt": "Bà Tư treo bốn bức tranh của bốn câu chuyện đã nghe trong nửa học kì, nhưng quên dán tên.\nNhìn tranh và nói tên câu chuyện. Chọn kể một câu chuyện em thích.\nTrước tiên, kéo mỗi tranh về đúng tên câu chuyện.",
+      "prompt": "Bà Tư treo bốn bức tranh của bốn câu chuyện {name} đã gặp trên đường, nhưng quên dán tên.\nTrước tiên, kéo mỗi tranh về đúng tên câu chuyện của nó; sau đó chọn một chuyện em thích để kể lại.",
       "groups": [
         {
-          "id": "do-con",
-          "label": "Chú đỗ con"
+          "id": "de-con",
+          "label": "Chú dế con tập hát"
         },
         {
-          "id": "ham-hoc",
-          "label": "Cậu bé ham học"
+          "id": "oc-sen",
+          "label": "Chú ốc sên đi học"
         },
         {
-          "id": "bi-bong",
-          "label": "Niềm vui của Bi và Bống"
+          "id": "cau-vong",
+          "label": "Kho báu dưới chân cầu vồng"
         },
         {
-          "id": "xinh-khong",
-          "label": "Em có xinh không?"
+          "id": "voi-con",
+          "label": "Chú voi con muốn có cánh"
         }
       ],
       "items": [
@@ -1030,7 +1008,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "người cha dắt tay con gái, bóng nghĩ có ô tô, búp bê, quần áo, xa xa là cầu vồng",
+              "caption": "hai chú chuột nhỏ đứng giữa bãi cỏ ướt, ngước nhìn một dải cầu vồng bảy màu",
               "n": 3
             }
           }
@@ -1042,7 +1020,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "mầm cây non nhú khỏi hạt trên nền đất, ông mặt trời mỉm cười rọi nắng",
+              "caption": "chú dế con ngồi trên lá sen hát dưới ánh trăng, ếch và đom đóm ngồi yên lắng nghe",
               "n": 1
             }
           }
@@ -1054,7 +1032,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "chú voi con đứng cạnh một con dê trên con đường xuyên rừng",
+              "caption": "chú voi con đeo lá chuối trên lưng, loạng choạng bước qua một gốc cây",
               "n": 4
             }
           }
@@ -1066,7 +1044,7 @@
             "kind": "diagram",
             "type": "picture-card",
             "params": {
-              "caption": "cậu bé cõng em nép ngoài cửa lớp, nhìn vào chỗ thầy đồ đang giảng bài",
+              "caption": "chú ốc sên bò chậm trên con đường nhỏ lúc trời còn sao, trên lưng là chiếc vỏ xoáy tròn",
               "n": 2
             }
           }
@@ -1075,54 +1053,49 @@
       "skill": "ke-chuyen",
       "answer": {
         "assignment": {
-          "tranh-1": "do-con",
-          "tranh-2": "ham-hoc",
-          "tranh-3": "bi-bong",
-          "tranh-4": "xinh-khong"
+          "tranh-1": "de-con",
+          "tranh-2": "oc-sen",
+          "tranh-3": "cau-vong",
+          "tranh-4": "voi-con"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-ke-chuyen-11"
-      ],
       "support": {
         "guide": [
-          "Nhớ lại các câu chuyện đã nghe kể ở bài 3, 5, 7 và 9.",
-          "Nhìn nhân vật trong tranh: hạt đỗ, cậu bé cõng em, hai bố con, chú voi."
+          "Nhớ lại những câu chuyện đã gặp: dế con, ốc sên, hai chú chuột, voi con.",
+          "Nhìn nhân vật trong tranh: chiếc lá sen, chiếc vỏ xoáy, dải cầu vồng, tàu lá chuối."
         ],
-        "hint": "Cậu bé cõng em đứng ngoài lớp là Vũ Duệ trong \"Cậu bé ham học\".",
+        "hint": "Chú vật đeo lá chuối làm cánh là voi con; chú vật ngồi hát trên lá sen là dế.",
         "answer": {
-          "text": "Tranh 1 – Chú đỗ con; tranh 2 – Cậu bé ham học; tranh 3 – Niềm vui của Bi và Bống; tranh 4 – Em có xinh không?",
-          "explanation": "Mầm đỗ dưới nắng là Chú đỗ con; cậu bé cõng em nghe thầy giảng là Cậu bé ham học; bóng nghĩ ô tô, búp bê, quần áo và cầu vồng là Niềm vui của Bi và Bống; voi và dê là Em có xinh không?"
+          "text": "Tranh 1 – Chú dế con tập hát; tranh 2 – Chú ốc sên đi học; tranh 3 – Kho báu dưới chân cầu vồng; tranh 4 – Chú voi con muốn có cánh",
+          "explanation": "Dế hát giữa đêm trăng là Chú dế con tập hát; ốc sên bò dưới sao là Chú ốc sên đi học; hai chú chuột ngắm cầu vồng là Kho báu dưới chân cầu vồng; voi con đeo lá chuối là Chú voi con muốn có cánh."
         }
       },
       "feedback": {
         "right": [
           "Bốn tranh có tên rồi! Bà Tư chép ngay vào cuốn sổ lá.",
-          "Nhớ truyện giỏi ghê, chuyện từ hồi tuần ba mà vẫn nhớ.",
+          "Nhớ truyện giỏi ghê, chuyện từ những chặng đầu mà vẫn nhớ.",
           "Bà Tư ngâm nga: tranh nào cũng gặp lại người quen."
         ],
         "wrong": [
-          "Chú voi đứng với con dê là truyện voi em hỏi \"Em có xinh không?\" đấy.",
-          "Mầm cây nhú lên dưới nắng là truyện về một hạt đỗ nhỏ.",
-          "Cậu bé cõng em đứng ngoài lớp là cậu bé rất ham học."
+          "Chú vật đeo lá chuối trên lưng là nhân vật của chuyện muốn có cánh đấy.",
+          "Chiếc vỏ xoáy tròn là của chú ốc sên đi tới lớp.",
+          "Hai chú chuột nhìn cầu vồng đang mơ về một hũ vàng đấy."
         ]
-      }
+      },
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "ke-chuyen-em-thich",
       "title": "Kể câu chuyện em thích",
       "kind": "speak",
       "target": "tv2-t09-on-giua-ki-ba-tu",
-      "prompt": "Giờ đến lượt {name} kể, Bà Tư sẽ hỏi lại như một khán giả thật.\nNhìn tranh và nói tên câu chuyện. Chọn kể một câu chuyện em thích.\nCùng bạn hỏi – đáp về những câu chuyện em vừa kể.\nM: – Câu chuyện có mấy nhân vật?\n– Bạn thích nhân vật nào?",
+      "prompt": "Giờ đến lượt {name} kể, Bà Tư sẽ hỏi lại như một khán giả thật.\nChọn một trong bốn chuyện trên các bức tranh và kể bằng lời của em. Kể xong, hãy hỏi lại Bà Tư: chuyện nào bà ưa nhất, vì sao?",
       "hints": [
-        "Em chọn kể câu chuyện nào? Câu chuyện có những ai?",
-        "Chuyện gì xảy ra đầu tiên, tiếp theo, và cuối cùng?",
-        "Kể xong, hỏi bạn: Bạn thích nhân vật nào? Vì sao?"
+        "Em chọn kể câu chuyện nào? Trong chuyện có những ai?",
+        "Chuyện gì xảy ra đầu tiên, tiếp theo và cuối cùng?",
+        "Kể xong, hỏi bạn: Bạn thích nhân vật hay chi tiết nào? Vì sao?"
       ],
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-ke-chuyen-11",
-        "tv2-t1-on-giua-ki-ke-chuyen-12"
-      ]
+      "objective": "doc-truyen-ke-lai"
     },
     {
       "id": "chia-la-vang",
@@ -1176,216 +1149,207 @@
     },
     {
       "id": "doc-bo-dua",
-      "title": "Bó đũa không ai bẻ được",
-      "goTo": "Đến trạm bó đũa, Bác tiều phu Lâm đặt một bó đũa lên bàn đá",
+      "title": "Năm thầy bói và con voi",
+      "goTo": "Đến trạm xem voi, Bác tiều phu Lâm đặt năm tấm thẻ hình voi lên bàn đá",
       "kind": "read",
       "target": "tv2-t09-on-giua-ki-bac-tieu-phu-lam",
-      "textRef": "cau-chuyen-bo-dua",
+      "textRef": "thay-boi-xem-voi",
       "audio": true,
-      "question": "Đọc câu chuyện sau:\nBác tiều phu Lâm hỏi trước một câu khởi động: lúc nhỏ, anh em trong gia đình ấy sống với nhau thế nào?",
+      "question": "Đọc câu chuyện sau:\nBác tiều phu Lâm hỏi trước một câu khởi động: vì sao năm thầy bói phải dùng tay để biết hình dạng con voi?",
       "choices": [
         {
-          "id": "hay-cai",
-          "text": "Hay giành đồ chơi của nhau"
+          "id": "khong-nhin",
+          "text": "Cả năm thầy đều không nhìn thấy gì"
         },
         {
-          "id": "hoa-thuan",
-          "text": "Rất hoà thuận"
+          "id": "voi-o-xa",
+          "text": "Con voi đứng quá xa để nhìn"
         },
         {
-          "id": "it-gap",
-          "text": "Ít khi gặp nhau"
+          "id": "do-can-nang",
+          "text": "Các thầy muốn đo xem voi nặng bao nhiêu"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "hoa-thuan"
+        "choice": "khong-nhin"
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-doc-13"
-      ],
       "support": {
         "guide": [
-          "Đọc những câu mở đầu truyện bó đũa, trước khi hai anh em lớn lên.",
-          "Tìm câu nói về lúc hai anh em còn nhỏ."
+          "Đọc những câu mở đầu của truyện, chỗ giới thiệu năm ông thầy bói.",
+          "Tìm câu nói về đôi mắt của các thầy."
         ],
-        "hint": "Câu có chữ \"Lúc nhỏ…\".",
+        "hint": "Câu có chữ \"mù cả hai mắt\".",
         "answer": {
-          "text": "Hồi còn nhỏ, hai anh em sống rất hoà thuận.",
-          "explanation": "Truyện viết: \"Lúc nhỏ, anh em rất hoà thuận.\" Chỉ khi lớn lên mới hay va chạm."
+          "text": "Cả năm thầy bói đều bị mù nên chỉ còn cách lần mò bằng tay.",
+          "explanation": "Truyện viết: ai cũng mù cả hai mắt, chẳng nhìn thấy gì, nên các thầy chỉ có thể lần mò bằng tay."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, lúc nhỏ hai anh em rất hoà thuận. Bác Lâm gật gù: nhớ y như sách.",
+          "Đúng rồi, các thầy đều mù nên phải lần mò. Bác Lâm gật gù: nhớ y như trong truyện.",
           "Đọc kĩ ngay từ câu đầu, {name} làm Bác Lâm hài lòng lắm.",
-          "Chuẩn! Câu chuyện bắt đầu êm ấm như vậy đấy."
+          "Chuẩn! Câu chuyện bắt đầu từ đôi mắt không nhìn thấy ấy."
         ],
         "wrong": [
-          "Truyện không nhắc chuyện giành đồ chơi, đọc lại đoạn đầu nhé.",
-          "Hai anh em ở cùng một gia đình, gặp nhau hằng ngày cơ mà.",
-          "Tìm câu bắt đầu bằng \"Lúc nhỏ\" xem anh em sống thế nào."
+          "Truyện không nhắc chuyện voi đứng xa, đọc lại đoạn đầu nhé.",
+          "Các thầy đi xem voi chứ đâu có đi đo cân nặng.",
+          "Tìm câu nói về hai mắt của các thầy xem lí do là gì."
         ]
-      }
+      },
+      "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "tinh-cam-khi-lon",
-      "title": "Lớn lên thì sao?",
+      "title": "Các thầy nghĩ gì về nhau?",
       "kind": "challenge",
       "mechanic": "quiz",
       "target": "tv2-t09-on-giua-ki-bac-tieu-phu-lam",
-      "prompt": "Bác Lâm khẽ thở dài: lớn lên thì mọi chuyện đổi khác.\nTrả lời câu hỏi và thực hiện yêu cầu.\na. Khi lớn lên, tình cảm giữa anh và em như thế nào?\n◻ hoà thuận\t◻ không thay đổi\t◻ không hoà thuận",
+      "prompt": "Bác Lâm khẽ thở dài: cãi nhau nửa buổi mà chẳng thầy nào chịu nghe thầy nào.\nTrả lời câu hỏi.\nKhi nghe bạn tả voi khác mình, mỗi thầy bói nghĩ thế nào?",
       "choices": [
         {
-          "id": "hoa-thuan",
-          "text": "hoà thuận"
+          "id": "tin-ban",
+          "text": "tin bạn nói đúng và đổi ý ngay"
         },
         {
-          "id": "khong-doi",
-          "text": "không thay đổi"
+          "id": "cho-minh-dung",
+          "text": "cho rằng mình đúng, bạn nói sai"
         },
         {
-          "id": "khong-hoa-thuan",
-          "text": "không hoà thuận"
+          "id": "so-hai",
+          "text": "sợ hãi và bỏ chạy"
         }
       ],
       "skill": "doc-hieu",
       "answer": {
-        "choice": "khong-hoa-thuan"
+        "choice": "cho-minh-dung"
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-doc-13-a"
-      ],
       "support": {
         "guide": [
-          "Đọc câu kể chuyện khi các con đã lớn, có vợ, có chồng.",
-          "Mỗi người một nhà nhưng vẫn hay làm gì?"
+          "Đọc lời của từng thầy bói, xem thầy nào có lời \"Sai rồi\", \"nói bậy\" hay \"quả quyết\".",
+          "Cuối truyện, các thầy làm gì với ý riêng của mình?"
         ],
-        "hint": "\"Tuy mỗi người một nhà nhưng vẫn hay va chạm.\"",
+        "hint": "Truyện có câu: \"Năm thầy khăng khăng giữ ý mình, ai cũng cho mình đúng.\"",
         "answer": {
-          "text": "Lớn lên, anh em không còn hoà thuận như trước.",
-          "explanation": "Truyện kể khi lớn lên, anh em vẫn hay va chạm, nên tình cảm không hoà thuận."
+          "text": "Mỗi thầy đều cho rằng mình đúng còn các thầy kia sai.",
+          "explanation": "Các thầy chê nhau \"sai rồi\", \"nói bậy\", khăng khăng giữ ý mình, vì thế mới cãi nhau om sòm."
         }
       },
       "feedback": {
         "right": [
-          "Đúng thế, lớn lên các con hay va chạm, không hoà thuận nữa.",
-          "Bác Lâm gật đầu buồn buồn: vì vậy người cha mới lo.",
-          "{name} đọc ra ngay chữ \"va chạm\", tinh ý thật."
+          "Đúng thế, thầy nào cũng tin mình đúng nên mới cãi nhau mãi.",
+          "Bác Lâm gật đầu buồn cười: vì vậy mới cần người quản tượng giải thích.",
+          "{name} đọc ra ngay chữ \"khăng khăng\", tinh ý thật."
         ],
         "wrong": [
-          "Lúc nhỏ mới hoà thuận, còn lớn lên thì khác rồi.",
-          "Có thay đổi đấy: từ hoà thuận thành hay va chạm.",
-          "Tìm câu có chữ \"va chạm\" rồi chọn lại nhé."
+          "Nếu các thầy tin nhau ngay thì đâu có cãi nhau om sòm.",
+          "Các thầy không sợ hãi gì, chỉ bực vì ý kiến bị chê thôi.",
+          "Tìm câu có chữ \"khăng khăng\" rồi chọn lại nhé."
         ]
-      }
+      },
+      "objective": "doc-truyen-nhan-vat"
     },
     {
       "id": "hoi-dap-bo-dua",
-      "title": "Bốn câu hỏi về bó đũa",
+      "title": "Bốn câu hỏi về con voi",
       "goTo": "Sang bàn đá dưới cây lá vàng, Cô giáo Thu xếp bốn câu hỏi",
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t09-on-giua-ki-co-giao-thu",
-      "prompt": "Cô giáo Thu nhớ cả câu chuyện, nhưng bốn câu trả lời lại lẫn vào nhau. Kéo mỗi câu trả lời về đúng câu hỏi.\nTrả lời câu hỏi và thực hiện yêu cầu.",
+      "prompt": "Cô giáo Thu nhớ cả câu chuyện, nhưng bốn câu trả lời lại lẫn vào nhau. Kéo mỗi câu trả lời về đúng câu hỏi.",
       "groups": [
         {
-          "id": "cach-khuyen",
-          "label": "b. Người cha nghĩ ra cách gì để khuyên bảo con?"
+          "id": "vong-voi",
+          "label": "Thầy sờ vào cái vòi nghĩ voi giống vật gì?"
         },
         {
-          "id": "vi-sao-khong-gay",
-          "label": "c. Vì sao bốn người con không bẻ gãy được bó đũa?"
+          "id": "chan-voi",
+          "label": "Thầy ôm lấy cái chân thì tả voi ra sao?"
         },
         {
-          "id": "cach-be",
-          "label": "d. Người cha bẻ gãy bó đũa bằng cách nào?"
+          "id": "vi-sao-cai",
+          "label": "Vì sao các thầy cãi nhau mãi không xong?"
         },
         {
-          "id": "loi-khuyen",
-          "label": "e. Người cha muốn khuyên các con điều gì?"
+          "id": "loi-nhac",
+          "label": "Người quản tượng muốn nhắc các thầy điều gì?"
         }
       ],
       "items": [
         {
-          "id": "tra-loi-d",
-          "label": "Cởi bó đũa ra, rồi thong thả bẻ gãy từng chiếc một."
+          "id": "tl-chan",
+          "label": "Voi to và tròn như một cột nhà."
         },
         {
-          "id": "tra-loi-b",
-          "label": "Đặt bó đũa và túi tiền lên bàn, hứa thưởng cho ai bẻ gãy được bó đũa."
+          "id": "tl-vong",
+          "label": "Giống một con rắn lớn, mềm và dài."
         },
         {
-          "id": "tra-loi-e",
-          "label": "Anh em phải yêu thương, đùm bọc lẫn nhau; có đoàn kết mới có sức mạnh."
+          "id": "tl-nhac",
+          "label": "Voi gồm nhiều phần hợp lại, phải xem đủ mọi chỗ mới hiểu rõ."
         },
         {
-          "id": "tra-loi-c",
-          "label": "Vì các chiếc đũa bó chặt vào nhau, hợp lại thì rất khó bẻ."
+          "id": "tl-cai",
+          "label": "Vì mỗi thầy chỉ sờ một chỗ nhưng ai cũng tin mình đúng."
         }
       ],
       "skill": "doc-hieu",
       "answer": {
         "assignment": {
-          "tra-loi-b": "cach-khuyen",
-          "tra-loi-c": "vi-sao-khong-gay",
-          "tra-loi-d": "cach-be",
-          "tra-loi-e": "loi-khuyen"
+          "tl-vong": "vong-voi",
+          "tl-chan": "chan-voi",
+          "tl-cai": "vi-sao-cai",
+          "tl-nhac": "loi-nhac"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-doc-13-b",
-        "tv2-t1-on-giua-ki-doc-13-c",
-        "tv2-t1-on-giua-ki-doc-13-d",
-        "tv2-t1-on-giua-ki-doc-13-e"
-      ],
       "support": {
         "guide": [
           "Đọc từng câu hỏi, rồi tìm đoạn truyện kể đúng việc đó.",
           "Câu hỏi \"vì sao\" cần câu trả lời bắt đầu bằng \"Vì\"."
         ],
-        "hint": "Người cha bẻ được là nhờ cởi bó đũa ra trước.",
+        "hint": "Thầy thứ nhất sờ vòi, thầy thứ tư ôm chân; lời nhắc của người quản tượng nằm ở cuối truyện.",
         "answer": {
-          "text": "b – đặt bó đũa và túi tiền; c – đũa bó chặt khó bẻ; d – cởi ra bẻ từng chiếc; e – yêu thương, đoàn kết",
-          "explanation": "Người cha đặt bó đũa, túi tiền để thử các con; bó đũa hợp lại nên rất chắc; tách từng chiếc thì dễ gãy; vì vậy anh em phải đoàn kết."
+          "text": "vòi – rắn lớn; chân – cột nhà; cãi nhau – mỗi thầy chỉ sờ một chỗ; lời nhắc – xem đủ mọi chỗ",
+          "explanation": "Vòi mềm và dài nên thầy thứ nhất tưởng con rắn; chân to tròn như cột nhà; các thầy cãi vì mỗi người chỉ sờ một chỗ; người quản tượng nhắc phải xem đủ mọi chỗ mới biết voi thế nào."
         }
       },
       "feedback": {
         "right": [
-          "Bốn câu hỏi gặp đúng bốn câu trả lời, gọn như một bó đũa!",
-          "Cô giáo Thu mỉm cười: chia lẻ thì yếu, hợp lại thì mạnh!",
-          "Hiểu câu chuyện đến tận lời khuyên cuối cùng, giỏi quá."
+          "Bốn câu hỏi gặp đúng bốn câu trả lời, ngay ngắn như bốn chân voi!",
+          "Cô giáo Thu mỉm cười: xem đủ mọi chỗ thì mới hiểu rõ!",
+          "Hiểu câu chuyện đến tận lời nhắc cuối cùng, giỏi quá."
         ],
         "wrong": [
-          "Câu \"vì sao\" cần một câu trả lời có chữ \"Vì\" đấy.",
-          "Người cha bẻ gãy đũa bằng cách cởi bó ra trước, xem lại nhé.",
-          "Lời khuyên của người cha nằm ở cuối truyện, về yêu thương và đoàn kết."
+          "Câu hỏi \"vì sao\" cần một câu trả lời có chữ \"Vì\" đấy.",
+          "Thầy ôm lấy cái chân thì thấy to và tròn, xem lại nhé.",
+          "Lời nhắc của người quản tượng nằm ở cuối truyện, về việc xem đủ mọi chỗ."
         ]
-      }
+      },
+      "objective": "doc-truyen-doc-hieu"
     },
     {
       "id": "nghia-tu-1",
-      "title": "Nghĩa của từ hoà thuận",
+      "title": "Nghĩa của từ lần mò",
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-co-giao-thu",
-      "prompt": "Cô giáo Thu rút từ túi áo ra tấm thẻ thứ nhất:\nTrả lời câu hỏi và thực hiện yêu cầu.\ng. Tìm từ ngữ ở cột A phù hợp với nghĩa ở cột B.\nA: hoà thuận; yêu thương; buồn phiền\nB: buồn và lo nghĩ, không yên lòng; êm ấm, không có xích mích, mâu thuẫn; có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng\nhoà thuận",
-      "template": "hoà thuận: {{nghia}}",
+      "prompt": "Cô giáo Thu rút từ túi áo ra tấm thẻ thứ nhất:\nChọn nghĩa đúng của từ trong truyện.\nTừ: lần mò",
+      "template": "lần mò: {{nghia}}",
       "blanks": [
         {
           "id": "nghia",
           "options": [
             {
-              "id": "buon-lo",
-              "text": "buồn và lo nghĩ, không yên lòng"
+              "id": "tay-so",
+              "text": "đưa tay sờ dần từng chỗ để tìm hiểu khi không nhìn thấy rõ"
             },
             {
-              "id": "em-am",
-              "text": "êm ấm, không có xích mích, mâu thuẫn"
+              "id": "giu-y",
+              "text": "cứ nhất định giữ ý mình, không chịu nghe ai"
             },
             {
-              "id": "gan-bo",
-              "text": "có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng"
+              "id": "mat-nong",
+              "text": "thấy mình không phải nên mặt nóng bừng, không biết nói gì"
             }
           ]
         }
@@ -1393,60 +1357,58 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "nghia": "em-am"
+          "nghia": "tay-so"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-doc-13-g-1"
-      ],
       "support": {
         "guide": [
-          "Hoà thuận là khi mọi người sống êm ấm với nhau.",
-          "Thay nghĩa vừa chọn vào chỗ từ \"hoà thuận\" trong truyện, đọc xem có hợp không."
+          "Lần mò là khi vừa sờ vừa tìm, vì mắt không thấy rõ.",
+          "Thay nghĩa vừa chọn vào chỗ từ \"lần mò\" trong truyện, đọc xem có hợp không."
         ],
-        "hint": "Từ \"hoà thuận\" xuất hiện trong \"Câu chuyện bó đũa\", đọc lại câu có từ ấy.",
+        "hint": "Từ \"lần mò\" xuất hiện trong \"Thầy bói xem voi\", đọc lại câu có từ ấy.",
         "answer": {
-          "text": "hoà thuận: êm ấm, không có xích mích, mâu thuẫn",
-          "explanation": "Hoà thuận nghĩa là êm ấm, không có xích mích, mâu thuẫn."
+          "text": "lần mò: đưa tay sờ dần từng chỗ để tìm hiểu khi không nhìn thấy rõ",
+          "explanation": "Lần mò nghĩa là đưa tay sờ dần từng chỗ để tìm hiểu khi không nhìn thấy rõ."
         }
       },
       "feedback": {
         "right": [
-          "Hoà thuận là êm ấm, không xích mích, đúng rồi!",
-          "Cô giáo Thu gật gù: lúc nhỏ anh em trong truyện hoà thuận đúng như thế.",
-          "Chuẩn! Nhà nào hoà thuận là nhà ấy êm ấm."
+          "Lần mò là sờ dần từng chỗ khi không thấy rõ, đúng rồi!",
+          "Cô giáo Thu gật gù: các thầy bói lần mò đúng như thế.",
+          "Chuẩn! Đi trong bóng tối cũng phải lần mò từng bước."
         ],
         "wrong": [
-          "Hoà thuận đâu phải buồn và lo nghĩ, nghĩ lại xem.",
-          "Hoà thuận là sống êm ấm, không cãi vã với nhau đấy.",
-          "Tìm nghĩa nói về \"không có xích mích\" thử xem."
+          "Lần mò chẳng liên quan gì tới mặt nóng bừng, nghĩ lại xem.",
+          "Khi lần mò, người ta dùng tay để tìm hiểu, không phải để cãi.",
+          "Tìm nghĩa nói về việc dùng tay sờ dần từng chỗ thử xem."
         ]
-      }
+      },
+      "objective": "doc-truyen-tu-ngu"
     },
     {
       "id": "nghia-tu-2",
-      "title": "Nghĩa của từ yêu thương",
-      "goTo": "Về trạm bó đũa, Bác tiều phu Lâm cầm tấm thẻ thứ hai",
+      "title": "Nghĩa của từ khăng khăng",
+      "goTo": "Về trạm xem voi, Bác tiều phu Lâm cầm tấm thẻ thứ hai",
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-bac-tieu-phu-lam",
-      "prompt": "Tấm thẻ thứ hai Bác Lâm cầm nhẹ như cầm một bông hoa:\nTrả lời câu hỏi và thực hiện yêu cầu.\ng. Tìm từ ngữ ở cột A phù hợp với nghĩa ở cột B.\nA: hoà thuận; yêu thương; buồn phiền\nB: buồn và lo nghĩ, không yên lòng; êm ấm, không có xích mích, mâu thuẫn; có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng\nyêu thương",
-      "template": "yêu thương: {{nghia}}",
+      "prompt": "Tấm thẻ thứ hai Bác Lâm cầm nhẹ như cầm một bông hoa:\nChọn nghĩa đúng của từ trong truyện.\nTừ: khăng khăng",
+      "template": "khăng khăng: {{nghia}}",
       "blanks": [
         {
           "id": "nghia",
           "options": [
             {
-              "id": "buon-lo",
-              "text": "buồn và lo nghĩ, không yên lòng"
+              "id": "tay-so",
+              "text": "dùng tay sờ từng chút một để biết, vì mắt không thấy"
             },
             {
-              "id": "em-am",
-              "text": "êm ấm, không có xích mích, mâu thuẫn"
+              "id": "giu-y",
+              "text": "luôn bám lấy ý riêng, dù ai khuyên cũng không đổi"
             },
             {
-              "id": "gan-bo",
-              "text": "có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng"
+              "id": "mat-nong",
+              "text": "biết mình sai nên đỏ mặt, im lặng không nói được"
             }
           ]
         }
@@ -1454,60 +1416,58 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "nghia": "gan-bo"
+          "nghia": "giu-y"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-doc-13-g-2"
-      ],
       "support": {
         "guide": [
-          "Yêu thương là quan tâm, chăm sóc nhau hết lòng.",
-          "Thay nghĩa vừa chọn vào chỗ từ \"yêu thương\" trong truyện, đọc xem có hợp không."
+          "Khăng khăng là cứ giữ chặt ý của mình.",
+          "Thay nghĩa vừa chọn vào chỗ từ \"khăng khăng\" trong truyện, đọc xem có hợp không."
         ],
-        "hint": "Từ \"yêu thương\" xuất hiện trong \"Câu chuyện bó đũa\", đọc lại câu có từ ấy.",
+        "hint": "Từ \"khăng khăng\" xuất hiện trong \"Thầy bói xem voi\", đọc lại câu có từ ấy.",
         "answer": {
-          "text": "yêu thương: có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng",
-          "explanation": "Yêu thương nghĩa là có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng."
+          "text": "khăng khăng: luôn bám lấy ý riêng, dù ai khuyên cũng không đổi",
+          "explanation": "Khăng khăng nghĩa là luôn bám lấy ý riêng, dù ai khuyên cũng không đổi."
         }
       },
       "feedback": {
         "right": [
-          "Yêu thương là gắn bó tha thiết, quan tâm, chăm sóc hết lòng. Chuẩn!",
+          "Khăng khăng là nhất định giữ ý mình, chuẩn!",
           "Bác Lâm xoa đầu {name} bằng bàn tay chai sần.",
-          "Đúng nghĩa rồi, người cha mong các con biết yêu thương nhau như thế."
+          "Đúng nghĩa rồi, năm thầy bói khăng khăng như thế mới cãi nhau."
         ],
         "wrong": [
-          "Yêu thương là có tình cảm gắn bó, không phải là buồn phiền.",
-          "Nghĩ xem khi yêu thương ai, mình quan tâm chăm sóc họ thế nào.",
-          "Còn một nghĩa nói về chăm sóc hết lòng, thử chọn nó xem."
+          "Khăng khăng không phải là ngượng ngùng, chọn lại nhé.",
+          "Nghĩ xem khi ai đó không chịu nghe lời nào, người ta gọi là gì.",
+          "Còn một nghĩa nói về việc giữ chặt ý riêng, thử chọn nó xem."
         ]
-      }
+      },
+      "objective": "doc-truyen-tu-ngu"
     },
     {
       "id": "nghia-tu-3",
-      "title": "Nghĩa của từ buồn phiền",
+      "title": "Nghĩa của từ ngượng ngùng",
       "goTo": "Ra quầy kẹo lá, Sư Tử Kẹo vuốt phẳng tấm thẻ cuối cùng",
       "kind": "challenge",
       "mechanic": "fill-blank",
       "target": "tv2-t09-on-giua-ki-su-tu-keo",
-      "prompt": "Tấm thẻ cuối cùng hơi nhàu, Sư Tử Kẹo vuốt mãi mới phẳng:\nTrả lời câu hỏi và thực hiện yêu cầu.\ng. Tìm từ ngữ ở cột A phù hợp với nghĩa ở cột B.\nA: hoà thuận; yêu thương; buồn phiền\nB: buồn và lo nghĩ, không yên lòng; êm ấm, không có xích mích, mâu thuẫn; có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng\nbuồn phiền",
-      "template": "buồn phiền: {{nghia}}",
+      "prompt": "Tấm thẻ cuối cùng hơi nhàu, Sư Tử Kẹo vuốt mãi mới phẳng:\nChọn nghĩa đúng của từ trong truyện.\nTừ: ngượng ngùng",
+      "template": "ngượng ngùng: {{nghia}}",
       "blanks": [
         {
           "id": "nghia",
           "options": [
             {
-              "id": "buon-lo",
-              "text": "buồn và lo nghĩ, không yên lòng"
+              "id": "tay-so",
+              "text": "dò dẫm bằng tay, sờ tới đâu hay tới đó"
             },
             {
-              "id": "em-am",
-              "text": "êm ấm, không có xích mích, mâu thuẫn"
+              "id": "giu-y",
+              "text": "ôm chặt ý kiến của mình, ai nói gì cũng mặc"
             },
             {
-              "id": "gan-bo",
-              "text": "có tình cảm gắn bó tha thiết, quan tâm, chăm sóc hết lòng"
+              "id": "mat-nong",
+              "text": "thấy xấu hổ vì mình chưa đúng nên đỏ mặt, ngập ngừng"
             }
           ]
         }
@@ -1515,35 +1475,33 @@
       "skill": "tu-ngu",
       "answer": {
         "fills": {
-          "nghia": "buon-lo"
+          "nghia": "mat-nong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-doc-13-g-3"
-      ],
       "support": {
         "guide": [
-          "Người cha buồn phiền khi thấy các con không yêu thương nhau.",
-          "Thay nghĩa vừa chọn vào chỗ từ \"buồn phiền\" trong truyện, đọc xem có hợp không."
+          "Ngượng ngùng là cảm giác khi mình thấy mình chưa phải.",
+          "Thay nghĩa vừa chọn vào chỗ từ \"ngượng ngùng\" trong truyện, đọc xem có hợp không."
         ],
-        "hint": "Từ \"buồn phiền\" xuất hiện trong \"Câu chuyện bó đũa\", đọc lại câu có từ ấy.",
+        "hint": "Từ \"ngượng ngùng\" xuất hiện trong \"Thầy bói xem voi\", đọc lại câu có từ ấy.",
         "answer": {
-          "text": "buồn phiền: buồn và lo nghĩ, không yên lòng",
-          "explanation": "Buồn phiền nghĩa là buồn và lo nghĩ, không yên lòng."
+          "text": "ngượng ngùng: thấy xấu hổ vì mình chưa đúng nên đỏ mặt, ngập ngừng",
+          "explanation": "Ngượng ngùng nghĩa là thấy xấu hổ vì mình chưa đúng nên đỏ mặt, ngập ngừng."
         }
       },
       "feedback": {
         "right": [
-          "Buồn phiền là buồn và lo nghĩ, không yên lòng, đúng thế!",
-          "Người cha trong truyện buồn phiền vì các con, {name} hiểu rồi.",
+          "Ngượng ngùng là thấy mình không phải nên mặt nóng bừng, đúng thế!",
+          "Năm thầy bói ngượng ngùng im bặt, {name} hiểu rồi.",
           "Ba tấm thẻ đều có nghĩa, Sư Tử Kẹo cất vào chiếc bờm siêu dày."
         ],
         "wrong": [
-          "Buồn phiền không êm ấm chút nào, chọn lại nhé.",
-          "Khi buồn phiền, người ta lo nghĩ, không yên lòng đấy.",
-          "Người cha buồn phiền vì thấy các con không yêu thương nhau, nhớ không?"
+          "Ngượng ngùng không phải là nhất định giữ ý, chọn lại nhé.",
+          "Khi ngượng ngùng, mặt nóng bừng và chẳng biết nói gì đấy.",
+          "Cuối truyện, các thầy im bặt vì thấy mình chưa đúng, nhớ không?"
         ]
-      }
+      },
+      "objective": "doc-truyen-tu-ngu"
     },
     {
       "id": "keo-su-vat-hoat-dong",
@@ -1551,7 +1509,7 @@
       "kind": "challenge",
       "mechanic": "classify",
       "target": "tv2-t09-on-giua-ki-su-tu-keo",
-      "prompt": "Sư Tử Kẹo mang ra bảy viên kẹo bọc giấy, mỗi viên ghi một từ, và hai túi xách. Sư Tử Kẹo đọc túi thứ nhất:\nTrả lời câu hỏi và thực hiện yêu cầu.\nh. Xếp các từ ngữ dưới đây vào nhóm thích hợp.\ngọi; nhà; đặt; bẻ; bó đũa; nói; túi\nTừ chỉ sự vật\nRồi Sư Tử Kẹo đọc lại bảy viên kẹo cho túi thứ hai: gọi; nhà; đặt; bẻ; bó đũa; nói; túi\nTừ chỉ hoạt động",
+      "prompt": "Sư Tử Kẹo mang ra bảy viên kẹo bọc giấy, mỗi viên ghi một từ, và hai túi xách. Sư Tử Kẹo đọc túi thứ nhất:\nXếp các từ vào túi thích hợp.\nvoi; sờ; ngà; cãi; đuôi; vuốt; ôm\nTừ chỉ sự vật\nRồi Sư Tử Kẹo đọc lại bảy viên kẹo cho túi thứ hai: voi; sờ; ngà; cãi; đuôi; vuốt; ôm\nTừ chỉ hoạt động",
       "groups": [
         {
           "id": "su-vat",
@@ -1564,59 +1522,55 @@
       ],
       "items": [
         {
-          "id": "goi",
-          "label": "gọi"
+          "id": "so",
+          "label": "sờ"
         },
         {
-          "id": "nha",
-          "label": "nhà"
+          "id": "voi",
+          "label": "voi"
         },
         {
-          "id": "dat",
-          "label": "đặt"
+          "id": "cai",
+          "label": "cãi"
         },
         {
-          "id": "be",
-          "label": "bẻ"
+          "id": "nga",
+          "label": "ngà"
         },
         {
-          "id": "bo-dua",
-          "label": "bó đũa"
+          "id": "vuot",
+          "label": "vuốt"
         },
         {
-          "id": "noi",
-          "label": "nói"
+          "id": "duoi",
+          "label": "đuôi"
         },
         {
-          "id": "tui",
-          "label": "túi"
+          "id": "om",
+          "label": "ôm"
         }
       ],
       "skill": "tu-ngu",
       "answer": {
         "assignment": {
-          "goi": "hoat-dong",
-          "nha": "su-vat",
-          "dat": "hoat-dong",
-          "be": "hoat-dong",
-          "bo-dua": "su-vat",
-          "noi": "hoat-dong",
-          "tui": "su-vat"
+          "voi": "su-vat",
+          "nga": "su-vat",
+          "duoi": "su-vat",
+          "so": "hoat-dong",
+          "cai": "hoat-dong",
+          "vuot": "hoat-dong",
+          "om": "hoat-dong"
         }
       },
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-doc-13-h-1",
-        "tv2-t1-on-giua-ki-doc-13-h-2"
-      ],
       "support": {
         "guide": [
-          "Từ chỉ sự vật gọi tên đồ vật, nơi chốn: cầm được, nhìn thấy được.",
+          "Từ chỉ sự vật gọi tên con vật, bộ phận hay đồ vật: nhìn thấy được, chạm vào được.",
           "Từ chỉ hoạt động là việc làm: thử thêm chữ \"đang\" phía trước."
         ],
         "hint": "Ba viên kẹo là sự vật, bốn viên là hoạt động.",
         "answer": {
-          "text": "Sự vật: nhà, bó đũa, túi. Hoạt động: gọi, đặt, bẻ, nói.",
-          "explanation": "Nhà, bó đũa, túi là tên sự vật trong truyện; gọi, đặt, bẻ, nói là những việc người cha và các con làm."
+          "text": "Sự vật: voi, ngà, đuôi. Hoạt động: sờ, cãi, vuốt, ôm.",
+          "explanation": "Voi, ngà, đuôi là tên con vật và các bộ phận của nó; sờ, cãi, vuốt, ôm là những việc các thầy bói làm."
         }
       },
       "feedback": {
@@ -1626,23 +1580,48 @@
           "Bảy viên kẹo không viên nào lạc, Gấu Bùi đứng xem phục sát đất."
         ],
         "wrong": [
-          "Thử nói \"đang bó đũa\" xem, nghe kì không? Nó là sự vật đấy.",
-          "\"Bẻ\" là việc người cha làm với từng chiếc đũa, nó là hoạt động.",
-          "Cái túi đựng tiền là một đồ vật, đưa nó về túi sự vật nhé."
+          "Thử nói \"đang đuôi\" xem, nghe kì không? Nó là sự vật đấy.",
+          "\"Cãi\" là việc các thầy làm với nhau, nó là hoạt động.",
+          "Chiếc ngà là một bộ phận của voi, đưa nó về túi sự vật nhé."
         ]
-      }
+      },
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
     },
     {
       "id": "phieu-viet-giua-ki",
-      "title": "Phiếu viết ôn giữa kì",
+      "title": "Phiếu viết ôn tập",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-on-giua-ki",
-      "text": "Nhờ bố mẹ in phiếu Ôn tập giữa học kì 1 ở khu phụ huynh: nghe – viết hai khổ thơ đầu bài \"Cô giáo lớp em\" và viết 3 – 4 câu giới thiệu một đồ chơi hoặc đồ dùng gia đình. Bác Gấu Trúc Tròn sẽ đọc thật chậm, thật rõ lời giới thiệu của em trong buổi tổng kết lễ hội!",
-      "curriculumRef": [
-        "tv2-t1-on-giua-ki-nghe-viet-3",
-        "tv2-t1-on-giua-ki-viet-doan-14"
-      ]
+      "text": "Nhờ người thân in phiếu của lễ hội ở khu phụ huynh: nghe và viết lại đoạn mở đầu truyện về năm thầy bói, chép một câu, rồi tự viết mấy câu về món đồ em hay dùng nhất trong nhà. Bác Gấu Trúc Tròn sẽ đọc thật chậm, thật rõ lời giới thiệu của em trong buổi tổng kết lễ hội!",
+      "objective": "chinh-ta-nghe-viet",
+      "sheet": {
+        "title": "Phiếu lễ hội lá vàng: chép đoạn truyện và giới thiệu một đồ vật",
+        "blocks": [
+          {
+            "kind": "dictation",
+            "prompt": "Nghe người lớn đọc rồi viết lại đoạn đầu truyện \"Thầy bói xem voi\".",
+            "title": "Thầy bói xem voi",
+            "text": "Ngày xưa, trong một xóm nọ có năm ông thầy bói, ai cũng mù cả hai mắt. Nghe tin có người dắt voi qua làng, cả năm rủ nhau đi xem. Chẳng nhìn thấy gì, các thầy chỉ còn cách lần mò bằng tay."
+          },
+          {
+            "kind": "copy-line",
+            "text": "Viết câu: Cô Thu dịu dàng đón chúng em ở thư viện.",
+            "model": [
+              "Cô Thu dịu dàng đón chúng em ở thư viện."
+            ]
+          },
+          {
+            "kind": "paragraph-prompt",
+            "prompt": "Viết mấy câu về một món đồ em hay dùng ở nhà (đồ chơi, ấm chén, bút vở…).",
+            "hints": [
+              "Đó là đồ vật gì, ở đâu trong nhà?",
+              "Nó trông thế nào: màu sắc, hình dáng?",
+              "Em hoặc người nhà dùng nó để làm gì?"
+            ],
+            "lines": 6
+          }
+        ]
+      }
     },
     {
       "id": "den-la-vang",
@@ -1660,10 +1639,10 @@
       "title": "Tiếng gọi giữa đồng khô",
       "kind": "next",
       "trigger": "auto",
-      "text": "Lễ hội vừa tan, bác Gấu Trúc Tròn đọc chậm lá thư mới gửi tới: ở Khu rừng bí mật, đồng cỏ khô giòn như bánh đa, có một bạn nhỏ gọi bạn mãi mà chẳng thấy ai thưa.",
+      "text": "Lễ hội vừa tan, bác Gấu Trúc Tròn đọc chậm lá thư mới gửi tới: ở Khu rừng bí mật, đồng cỏ khô giòn như bánh đa, và có một bài thơ về tiếng gọi vọng bên suối đang chờ người đến đọc.",
       "en": {
         "title": "A call across the dry meadow",
-        "text": "As the festival ends, Gấu Trúc Tròn slowly reads a new letter: in the Secret Forest the meadow is dry and crunchy as a rice cracker, and a little one keeps calling a friend who never answers."
+        "text": "As the festival ends, Gấu Trúc Tròn slowly reads a new letter: in the Secret Forest the meadow is dry and crunchy as a rice cracker, and a poem about a call echoing by the stream is waiting for someone to read it."
       }
     }
   ],
