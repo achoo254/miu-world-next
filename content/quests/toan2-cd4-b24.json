@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Tủ kính của Mèo Tam Thể",
   "status": "active",
-  "lesson": "toan2-t1-b24",
   "topic": "cong-tru-co-nho",
   "summary": "Đồ chơi gỗ Bác Sáu đẽo cho hội mùa chất đầy hiên kho mà tủ kính đánh số lung tung; {name} giúp Mèo Tam Thể ôn cộng trừ có nhớ để xếp từng món vào đúng ngăn, chạy ra băng chuyền đóng bao của Bê Phính, thang dây nhà sóc trong vườn của Bác Sáu, kệ nhãn ở xưởng nông cụ của Gấu Keo, rồi thắng Mèo Tam Thể trò Cặp tấm thẻ anh em.",
   "review": "teacher-pending",
@@ -12,10 +11,10 @@
     "who": "Mèo Tam Thể, Bê Phính, Bác Sáu, Gấu Keo",
     "where": "Nông trại: tủ kính ở hiên kho, băng chuyền đóng bao, thang dây nhà sóc trong vườn, kệ nhãn ở xưởng nông cụ",
     "goal": "Xếp đồ chơi gỗ Bác Sáu đẽo xong vào tủ kính theo đúng số thứ tự",
-    "play": "Gom đồ chơi, đặt tính, đi băng chuyền số, giải toán, chọn nhãn vở, xếp số ngăn tủ, tìm chữ số, chơi Cặp tấm thẻ anh em",
-    "learn": "Toán 2 Bài 24: luyện tập chung cộng, trừ có nhớ trong phạm vi 100",
+    "play": "Gom đồ chơi, đặt tính, đi băng chuyền số, giải toán, chọn nhãn dán, xếp số ngăn tủ, tìm chữ số, chơi ghép thẻ anh em",
+    "learn": "Ôn chung cộng, trừ có nhớ trong phạm vi 100: đặt tính, tính dây chuyền, giải toán, so sánh và xếp thứ tự các số",
     "reward": "80 XP, 15 xu, Phép trừ +2, Logic +1",
-    "next": "Bài 25 \"Điểm, đoạn thẳng, đường thẳng, đường cong, ba điểm thẳng hàng\""
+    "next": "Hươu Cao chấm sao trên giá vẽ: điểm, đoạn thẳng, đường thẳng và đường cong"
   },
   "phases": {
     "hook": "meo-mun-thu-dai",
@@ -105,15 +104,15 @@
       "lines": [
         {
           "speaker": "Mèo Tam Thể",
-          "text": "Mỗi ngăn tủ ghi một phép tính. Trừ có nhớ: hàng đơn vị không đủ thì mượn một chục, rồi nhớ 1 vào hàng chục."
+          "text": "Mỗi ngăn tủ dán một phép tính. Khi trừ mà chữ số đơn vị chưa đủ, ta mượn một chục rồi ghi nhớ 1 sang hàng chục."
         },
         {
           "speaker": "Mèo Tam Thể",
-          "text": "Phép tính dài thì cứ làm từ trái sang phải, từng bước một, như mèo bước trên bờ tường."
+          "text": "Gặp phép tính dài, cứ làm từ trái sang phải, từng cặp số một, nhẹ nhàng như mèo đi trên bờ tường."
         },
         {
           "speaker": "Bê Phính",
-          "text": "Như mèo bước trên bờ tường… còn tớ thì bước trên vỏ chuối. Oạch!"
+          "text": "Mèo đi bờ tường thì khéo… còn tớ đi trên vỏ chuối. Oạch!"
         }
       ],
       "choices": [
@@ -127,9 +126,9 @@
         "title": "Review before arranging",
         "goTo": "Carry the toys back to the display case on the storehouse porch, where Mèo Tam Thể is waiting to review",
         "lines": [
-          "Each shelf has a sum on it. Taking away with borrowing: if the ones aren't enough, borrow a ten, then add the carried 1 to the tens.",
-          "For a long sum, just work from left to right, one step at a time, like a cat walking along the top of a wall.",
-          "Like a cat walking along a wall... and me, I walk on banana peels. Whoops!"
+          "Every shelf has a sum stuck on it. When you subtract and the ones are not enough, borrow a ten and remember to carry 1 to the tens.",
+          "A long sum? Just work from left to right, one pair of numbers at a time, as lightly as a cat on a garden wall.",
+          "A cat on a wall is graceful... me, I walk on banana peels. Whoops!"
         ],
         "choices": [
           {
@@ -145,23 +144,23 @@
       "target": "toan2-cd4-b24-meo-tam-the",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Bốn ngăn tủ đầu ghi bốn phép trừ, tính đúng thì cửa ngăn mới mở. Đặt tính rồi tính.",
-      "template": "34 – 7 = {{b1}}   45 – 8 = {{b2}}   60 – 12 = {{b3}}   51 – 19 = {{b4}}",
+      "prompt": "Bốn ngăn tủ đầu tiên chỉ mở khi cậu trừ đúng; viết dọc rồi ghi kết quả.",
+      "template": "53 – 6 = {{b1}}   72 – 9 = {{b2}}   80 – 14 = {{b3}}   61 – 28 = {{b4}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o43",
+              "text": "43"
             },
             {
-              "id": "o27",
-              "text": "27"
+              "id": "o47",
+              "text": "47"
             },
             {
-              "id": "o28",
-              "text": "28"
+              "id": "o57",
+              "text": "57"
             }
           ]
         },
@@ -169,16 +168,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o35",
-              "text": "35"
+              "id": "o63",
+              "text": "63"
             },
             {
-              "id": "o36",
-              "text": "36"
+              "id": "o67",
+              "text": "67"
             },
             {
-              "id": "o37",
-              "text": "37"
+              "id": "o73",
+              "text": "73"
             }
           ]
         },
@@ -186,16 +185,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o46",
-              "text": "46"
+              "id": "o64",
+              "text": "64"
             },
             {
-              "id": "o48",
-              "text": "48"
+              "id": "o66",
+              "text": "66"
             },
             {
-              "id": "o84",
-              "text": "84"
+              "id": "o76",
+              "text": "76"
             }
           ]
         },
@@ -203,57 +202,58 @@
           "id": "b4",
           "options": [
             {
-              "id": "o22",
-              "text": "22"
+              "id": "o33",
+              "text": "33"
             },
             {
-              "id": "o23",
-              "text": "23"
+              "id": "o37",
+              "text": "37"
             },
             {
-              "id": "o32",
-              "text": "32"
+              "id": "o43",
+              "text": "43"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-1-a",
-        "toan2-t1-b24-luyen-tap-1-b",
-        "toan2-t1-b24-luyen-tap-1-c",
-        "toan2-t1-b24-luyen-tap-1-d"
-      ],
       "support": {
         "guide": [
-          "Đặt các chữ số cùng hàng thẳng cột.",
-          "Ngăn tủ nào có hàng đơn vị thiếu thì mượn một chục từ hàng bên trái."
+          "Viết các chữ số cùng hàng thẳng cột.",
+          "Ngăn nào có chữ số đơn vị thiếu thì mượn một chục ở hàng bên trái."
         ],
-        "hint": "60 – 12: 10 – 2 = 8, nhớ 1; 6 – 2 = 4.",
+        "hint": "80 – 14: 10 – 4 = 6, nhớ 1; hàng chục: 1 thêm 1 là 2, 8 – 2 = 6.",
         "answer": {
-          "text": "34 – 7 = 27   45 – 8 = 37   60 – 12 = 48   51 – 19 = 32",
-          "explanation": "34 – 7 = 27; 45 – 8 = 37; 60 – 12 = 48; 51 – 19 = 32."
+          "text": "53 – 6 = 47   72 – 9 = 63   80 – 14 = 66   61 – 28 = 33",
+          "explanation": "53 – 6 = 47; 72 – 9 = 63; 80 – 14 = 66; 61 – 28 = 33."
         }
       },
       "feedback": {
         "right": [
-          "Bốn cửa ngăn kêu tách tách mở ra, Mèo Tam Thể mỉm cười hài lòng.",
-          "Ô tô gỗ đã nằm gọn trong ngăn đầu tiên.",
+          "Bốn cửa ngăn bật tách tách, Mèo Tam Thể mỉm cười hài lòng.",
+          "Món đồ chơi đầu tiên đã nằm gọn trong ngăn của nó.",
           "Trừ có nhớ gọn gàng như mèo rửa mặt."
         ],
         "wrong": [
           "Một cửa ngăn vẫn khoá chặt, có phép trừ quên mượn kìa.",
-          "51 – 19: nhớ cộng 1 vào hàng chục của 19 nhé.",
-          "Thở đều, đặt tính lại thẳng cột rồi trừ nào."
+          "61 – 28: nhớ cộng 1 vào hàng chục của 28 nhé.",
+          "Thở đều, viết lại thẳng cột rồi trừ nào."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o27",
-          "b2": "o37",
-          "b3": "o48",
-          "b4": "o32"
+          "b1": "o47",
+          "b2": "o63",
+          "b3": "o66",
+          "b4": "o33"
         }
+      },
+      "objective": "cong-tru-co-nho-tru",
+      "expression": {
+        "b1": "53 - 6",
+        "b2": "72 - 9",
+        "b3": "80 - 14",
+        "b4": "61 - 28"
       }
     },
     {
@@ -262,23 +262,23 @@
       "target": "toan2-cd4-b24-be-com",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Bê Phính bật băng chuyền, mỗi trạm thêm hoặc bớt bao ngô. Số ?",
-      "template": "88 → + 4 → {{b1}} → – 7 → {{b2}} → – 26 → {{b3}}",
+      "prompt": "Bê Phính bật băng chuyền, mỗi trạm thêm hoặc bớt vài bao ngô. Điền số còn thiếu.",
+      "template": "76 → + 8 → {{b1}} → – 9 → {{b2}} → – 38 → {{b3}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o90",
-              "text": "90"
+              "id": "o74",
+              "text": "74"
             },
             {
-              "id": "o92",
-              "text": "92"
+              "id": "o84",
+              "text": "84"
             },
             {
-              "id": "o102",
-              "text": "102"
+              "id": "o94",
+              "text": "94"
             }
           ]
         },
@@ -286,16 +286,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o83",
-              "text": "83"
+              "id": "o65",
+              "text": "65"
+            },
+            {
+              "id": "o75",
+              "text": "75"
             },
             {
               "id": "o85",
               "text": "85"
-            },
-            {
-              "id": "o87",
-              "text": "87"
             }
           ]
         },
@@ -303,148 +303,146 @@
           "id": "b3",
           "options": [
             {
-              "id": "o49",
-              "text": "49"
+              "id": "o27",
+              "text": "27"
             },
             {
-              "id": "o59",
-              "text": "59"
+              "id": "o37",
+              "text": "37"
             },
             {
-              "id": "o61",
-              "text": "61"
+              "id": "o47",
+              "text": "47"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-2-a",
-        "toan2-t1-b24-luyen-tap-2-b",
-        "toan2-t1-b24-luyen-tap-2-c"
-      ],
       "support": {
         "guide": [
-          "Đi theo mũi tên, lấy kết quả trạm trước làm số đầu của trạm sau.",
+          "Đi theo mũi tên, kết quả trạm trước là số đầu của trạm sau.",
           "Trạm đầu là phép cộng có nhớ."
         ],
-        "hint": "88 + 4 = 92.",
+        "hint": "76 + 8 = 84.",
         "answer": {
-          "text": "88 → + 4 → 92 → – 7 → 85 → – 26 → 59",
-          "explanation": "88 + 4 = 92; 92 – 7 = 85; 85 – 26 = 59."
+          "text": "76 → + 8 → 84 → – 9 → 75 → – 38 → 37",
+          "explanation": "76 + 8 = 84; 76 + 8 – 9 = 75; 76 + 8 – 9 – 38 = 37."
         }
       },
       "feedback": {
         "right": [
-          "Băng chuyền chạy ro ro, cuối băng còn đúng 59 bao ngô.",
+          "Băng chuyền chạy ro ro, cuối băng còn đúng 37 bao ngô.",
           "Ba trạm, ba con số, không trạm nào kẹt cả.",
-          "Bê Phính reo: lần đầu băng chuyền chạy không kêu cà rịch!"
+          "Bê Phính reo: lần đầu băng chuyền chạy mà không kêu cọt kẹt!"
         ],
         "wrong": [
           "Băng chuyền khựng lại rồi, trạm nào đang tính lệch?",
-          "Trạm thứ hai lấy kết quả trạm thứ nhất trừ 7 nhé.",
-          "88 + 4 qua chục mới đấy, đừng quên nhớ."
+          "Trạm thứ hai lấy kết quả trạm thứ nhất bớt 9 nhé.",
+          "76 + 8 qua chục mới đấy, đừng quên nhớ."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o92",
-          "b2": "o85",
-          "b3": "o59"
+          "b1": "o84",
+          "b2": "o75",
+          "b3": "o37"
         }
       },
-      "goTo": "Sang băng chuyền đóng bao, Bê Phính vừa bật công tắc chạy ro ro"
+      "goTo": "Sang băng chuyền đóng bao, Bê Phính vừa bật công tắc chạy ro ro",
+      "objective": "cong-tru-co-nho-hai-dau",
+      "expression": {
+        "b1": "76 + 8",
+        "b2": "76 + 8 - 9",
+        "b3": "76 + 8 - 9 - 38"
+      }
     },
     {
       "id": "thang-len-nha-soc",
       "title": "Sóc gỗ leo thang",
       "target": "toan2-cd4-b24-bac-sau",
       "kind": "riddle",
-      "question": "Một món đồ chơi là chú sóc gỗ biết leo thang dây. Cầu thang lên nhà sóc có tất cả 32 bậc thang. Sóc đã leo được 9 bậc thang. Hỏi sóc cần leo thêm bao nhiêu bậc thang nữa để vào nhà?",
+      "question": "Thang dây dẫn lên nhà sóc có tất cả 51 nấc. Chú sóc gỗ mới leo qua 8 nấc. Hỏi sóc còn phải leo thêm bao nhiêu nấc nữa mới tới cửa nhà?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-3"
-      ],
       "support": {
         "guide": [
-          "Lấy tổng số bậc trừ đi số bậc đã leo.",
-          "Phép tính: 32 – 9."
+          "Lấy tổng số nấc trừ đi số nấc đã leo.",
+          "Phép tính: 51 – 8."
         ],
-        "hint": "12 – 9 = 3, hàng chục còn 2.",
+        "hint": "11 – 8 = 3, hàng chục còn 4.",
         "answer": {
-          "text": "23 bậc thang",
-          "explanation": "Sóc cần leo thêm: 32 – 9 = 23 (bậc thang)."
+          "text": "43 nấc thang",
+          "explanation": "Sóc còn phải leo: 51 – 8 = 43 (nấc)."
         }
       },
       "feedback": {
         "right": [
-          "Sóc gỗ leo thoăn thoắt 23 bậc nữa rồi chui tọt vào nhà.",
-          "Lấy tất cả trừ phần đã leo, đúng bài luôn.",
-          "Mèo Tam Thể vỗ nhẹ hai chân: tuyệt vời, không vội mà đúng."
+          "Sóc gỗ leo thoăn thoắt nốt 43 nấc rồi chui tọt vào nhà.",
+          "Lấy tất cả trừ phần đã leo, đúng cách luôn.",
+          "Mèo Tam Thể vỗ nhẹ hai chân: tuyệt, không vội mà vẫn đúng."
         ],
         "wrong": [
           "Còn phải leo thêm thì làm phép trừ nhé.",
-          "Mượn một chục: 12 – 9 rồi hàng chục bớt 1.",
-          "Số bậc còn lại phải ít hơn 32 chứ."
+          "Mượn một chục: 11 – 8 rồi hàng chục bớt 1.",
+          "Số nấc còn lại phải ít hơn 51 chứ."
         ]
       },
       "answer": {
-        "value": 23
+        "value": 43
       },
-      "goTo": "Tới thang dây nhà sóc trong vườn, Bác Sáu thợ già đang lên dây cót cho sóc gỗ"
+      "goTo": "Tới thang dây nhà sóc trong vườn, Bác Sáu thợ già đang lên dây cót cho sóc gỗ",
+      "objective": "cong-tru-co-nho-bai-toan",
+      "expression": "51 - 8"
     },
     {
       "id": "nhan-vo-ba-ban",
-      "title": "Nhãn vở dán ngăn tủ",
+      "title": "Nhãn dán ngăn tủ",
       "target": "toan2-cd4-b24-gau-bo",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Mỗi ngăn tủ cần một cái nhãn vở. Mai, Nam và Rô-bốt lần lượt nói. Chọn câu trả lời đúng. Tớ có 20 cái nhãn vở. Tớ có 15 cái nhãn vở. Số nhãn vở của tớ nhiều hơn của Nam nhưng ít hơn của Mai. Kết quả của phép tính nào sau đây là số nhãn vở của Rô-bốt? A. 32 – 17 B. 62 – 42 C. 51 – 33",
+      "prompt": "Mỗi ngăn tủ cần một nhãn dán. Bê Phính có 24 nhãn, Gấu Keo có 30 nhãn. Số nhãn của Mèo Tam Thể nhiều hơn của Bê Phính nhưng ít hơn của Gấu Keo. Phép tính nào dưới đây cho số nhãn của Mèo Tam Thể? A. 90 – 63 B. 52 – 28 C. 71 – 41",
       "choices": [
         {
-          "id": "a-32-17",
-          "text": "A. 32 – 17"
+          "id": "a-90-63",
+          "text": "A. 90 – 63"
         },
         {
-          "id": "b-62-42",
-          "text": "B. 62 – 42"
+          "id": "b-52-28",
+          "text": "B. 52 – 28"
         },
         {
-          "id": "c-51-33",
-          "text": "C. 51 – 33"
+          "id": "c-71-41",
+          "text": "C. 71 – 41"
         }
       ],
       "skill": "logic",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-4"
-      ],
       "support": {
         "guide": [
-          "Rô-bốt có nhiều hơn 15 nhưng ít hơn 20 cái nhãn vở.",
-          "Tính kết quả ba phép tính rồi tìm số nằm giữa 15 và 20."
+          "Mèo Tam Thể có nhiều hơn 24 nhưng ít hơn 30 nhãn.",
+          "Tính ba phép trừ rồi tìm số nằm giữa 24 và 30."
         ],
-        "hint": "32 – 17 = 15, 62 – 42 = 20.",
+        "hint": "52 – 28 = 24, 71 – 41 = 30.",
         "answer": {
-          "text": "C. 51 – 33",
-          "explanation": "32 – 17 = 15 (bằng của Nam), 62 – 42 = 20 (bằng của Mai), 51 – 33 = 18 nằm giữa 15 và 20. Chọn C."
+          "text": "Phép tính A, 90 – 63, cho 27 nhãn dán.",
+          "explanation": "52 – 28 = 24 (bằng của Bê Phính), 71 – 41 = 30 (bằng của Gấu Keo), 90 – 63 = 27 nằm giữa 24 và 30. Chọn A."
         }
       },
       "feedback": {
         "right": [
-          "Mười tám cái nhãn vở của Rô-bốt dán kín mười tám ngăn tủ!",
-          "Không nhiều hơn Mai, không ít hơn Nam, chuẩn quá.",
-          "Rô-bốt nháy đèn cảm ơn {name} ba lần liền."
+          "Hai mươi bảy nhãn dán vừa đủ phủ kín mấy ngăn tủ của Mèo Tam Thể!",
+          "Không nhiều bằng Gấu Keo, không ít hơn Bê Phính, chuẩn quá.",
+          "Gấu Keo gật gù dán nhãn lên tủ, đều tăm tắp."
         ],
         "wrong": [
           "Số đó bằng đúng số nhãn của một bạn rồi, phải nằm giữa cơ.",
-          "Nhiều hơn 15 nhưng ít hơn 20, thử từng phép tính nhé.",
-          "Tính lại 51 – 33 xem ra mấy."
+          "Nhiều hơn 24 nhưng ít hơn 30, thử từng phép tính nhé.",
+          "Tính lại 90 – 63 xem ra mấy."
         ]
       },
       "answer": {
-        "choice": "c-51-33"
+        "choice": "a-90-63"
       },
-      "goTo": "Ra kệ nhãn ở xưởng nông cụ, Gấu Keo đang ôm chồng nhãn chờ dán ngăn tủ"
+      "goTo": "Ra kệ nhãn ở xưởng nông cụ, Gấu Keo đang ôm chồng nhãn chờ dán ngăn tủ",
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "so-ngan-tu-tu-the",
@@ -452,56 +450,54 @@
       "target": "toan2-cd4-b24-meo-tam-the",
       "kind": "challenge",
       "mechanic": "sort",
-      "prompt": "Mèo Tam Thể làm ba thẻ số 3, 3, 8 để đánh số ngăn tủ. Ghép hai trong ba thẻ số bên được các số có hai chữ số. Số bé nhất trong các số đó là số nào? Số lớn nhất trong các số đó là số nào? Hãy xếp các số ghép được theo thứ tự từ bé đến lớn để dán lên ngăn tủ.",
+      "prompt": "Mèo Tam Thể có ba thẻ số 5, 5, 6 để đánh số ngăn tủ. Ghép hai trong ba thẻ thành các số có hai chữ số, rồi xếp những số ghép được theo thứ tự từ bé đến lớn để dán lên ngăn tủ.",
       "items": [
         {
-          "id": "ngan-38",
-          "label": "38"
+          "id": "ngan-56",
+          "label": "56"
         },
         {
-          "id": "ngan-83",
-          "label": "83"
+          "id": "ngan-65",
+          "label": "65"
         },
         {
-          "id": "ngan-33",
-          "label": "33"
+          "id": "ngan-55",
+          "label": "55"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-5"
-      ],
       "support": {
         "guide": [
-          "Hai thẻ 3 ghép được số 33; thẻ 3 với thẻ 8 ghép được 38 và 83.",
-          "So hàng chục trước."
+          "Hai thẻ 5 ghép được số 55; thẻ 5 với thẻ 6 ghép được 56 và 65.",
+          "So sánh hàng chục trước."
         ],
-        "hint": "Số bé nhất có hàng chục là 3 và hàng đơn vị là 3.",
+        "hint": "Số bé nhất có hàng chục là 5 và hàng đơn vị là 5.",
         "answer": {
-          "text": "33, 38, 83",
-          "explanation": "Ghép được 33, 38, 83; xếp từ bé đến lớn: 33, 38, 83."
+          "text": "55, 56, 65",
+          "explanation": "Ghép được 55, 56, 65; xếp từ bé đến lớn: 55, 56, 65."
         }
       },
       "feedback": {
         "right": [
           "Ba ngăn tủ có số thẳng hàng, nhìn sướng mắt ghê.",
-          "Hai thẻ 3 cũng ghép được số, {name} không bỏ sót.",
+          "Hai thẻ 5 cũng ghép được số, {name} không bỏ sót.",
           "Bê Phính dán lại số, lần này không ăn bánh nữa."
         ],
         "wrong": [
           "Số có hàng chục bé hơn phải đứng trước.",
-          "33 và 38 cùng 3 chục, so tiếp hàng đơn vị.",
-          "Số 83 có 8 chục, nó đứng đâu nhỉ?"
+          "55 và 56 cùng 5 chục, so tiếp hàng đơn vị.",
+          "Số 65 có 6 chục, nó đứng ở đâu nhỉ?"
         ]
       },
       "answer": {
         "order": [
-          "ngan-33",
-          "ngan-38",
-          "ngan-83"
+          "ngan-55",
+          "ngan-56",
+          "ngan-65"
         ]
       },
-      "goTo": "Về tủ kính ở hiên kho, Mèo Tam Thể xếp ba thẻ số 3, 3, 8 lên mặt kính"
+      "goTo": "Về tủ kính ở hiên kho, Mèo Tam Thể xếp ba thẻ số 3, 3, 8 lên mặt kính",
+      "objective": "so-den-100-so-sanh"
     },
     {
       "id": "so-be-nhat-lon-nhat",
@@ -509,23 +505,23 @@
       "target": "toan2-cd4-b24-meo-tam-the",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Ghép hai trong ba thẻ số bên được các số có hai chữ số. Số bé nhất trong các số đó là số nào? Số lớn nhất trong các số đó là số nào?",
+      "prompt": "Từ ba thẻ 5, 5, 6, lấy ra hai thẻ để ghép thành số có hai chữ số. Trong các số ghép được, số nào nhỏ nhất và số nào lớn nhất?",
       "template": "Số bé nhất: {{b1}}. Số lớn nhất: {{b2}}.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o33",
-              "text": "33"
+              "id": "o55",
+              "text": "55"
             },
             {
-              "id": "o38",
-              "text": "38"
+              "id": "o56",
+              "text": "56"
             },
             {
-              "id": "o83",
-              "text": "83"
+              "id": "o65",
+              "text": "65"
             }
           ]
         },
@@ -533,38 +529,35 @@
           "id": "b2",
           "options": [
             {
-              "id": "o33",
-              "text": "33"
+              "id": "o55",
+              "text": "55"
             },
             {
-              "id": "o38",
-              "text": "38"
+              "id": "o56",
+              "text": "56"
             },
             {
-              "id": "o83",
-              "text": "83"
+              "id": "o65",
+              "text": "65"
             }
           ]
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-5"
-      ],
       "support": {
         "guide": [
           "Xem lại dãy số vừa xếp ở tủ.",
           "Số đứng đầu dãy là bé nhất, số đứng cuối là lớn nhất."
         ],
-        "hint": "Dãy vừa xếp: 33, 38, 83.",
+        "hint": "Dãy vừa xếp: 55, 56, 65.",
         "answer": {
-          "text": "Số bé nhất: 33. Số lớn nhất: 83.",
-          "explanation": "Các số ghép được là 33, 38, 83; bé nhất là 33, lớn nhất là 83."
+          "text": "Số bé nhất: 55. Số lớn nhất: 65.",
+          "explanation": "Các số ghép được là 55, 56, 65; bé nhất là 55, lớn nhất là 65."
         }
       },
       "feedback": {
         "right": [
-          "Ngăn số 33 ở đầu, ngăn số 83 ở cuối, tủ kính ngay ngắn hẳn.",
+          "Ngăn số 55 ở đầu, ngăn số 65 ở cuối, tủ kính ngay ngắn hẳn.",
           "Bé nhất, lớn nhất, chọn trúng cả hai.",
           "Mèo Tam Thể đặt búp bê gỗ vào ngăn cuối cùng."
         ],
@@ -576,10 +569,11 @@
       },
       "answer": {
         "fills": {
-          "b1": "o33",
-          "b2": "o83"
+          "b1": "o55",
+          "b2": "o65"
         }
-      }
+      },
+      "objective": "so-den-100-so-sanh"
     },
     {
       "id": "meo-mun-chon-ngan",
@@ -637,19 +631,19 @@
       "target": "toan2-cd4-b24-meo-tam-the",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Cửa tủ kính có hai phép tính dài và một chú ong gỗ bay qua ba bông hoa ghi 5, 61, 8.",
-      "template": "Tính.\n25 + 65 – 30 = {{b1}}   90 – 40 – 26 = {{b2}}\nChú ong bay về tổ theo đường hình sợi dây dưới đây, xuất phát từ mũi tên. Tính tổng các số trên ba bông hoa mà chú ong đã gặp. {{b3}}",
+      "prompt": "Cửa tủ kính có hai phép tính dài và một chú ong gỗ bay qua ba bông hoa ghi 6, 47, 9.",
+      "template": "Tính từ trái sang phải.\n38 + 52 – 40 = {{b1}}   100 – 30 – 45 = {{b2}}\nChú ong gỗ bay về tổ qua ba bông hoa, mỗi bông ghi một số. Tổng các số trên ba bông hoa đó là bao nhiêu? {{b3}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o50",
-              "text": "50"
+              "id": "o40",
+              "text": "40"
             },
             {
-              "id": "o59",
-              "text": "59"
+              "id": "o50",
+              "text": "50"
             },
             {
               "id": "o60",
@@ -661,16 +655,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o23",
-              "text": "23"
-            },
-            {
-              "id": "o24",
-              "text": "24"
+              "id": "o15",
+              "text": "15"
             },
             {
               "id": "o25",
               "text": "25"
+            },
+            {
+              "id": "o35",
+              "text": "35"
             }
           ]
         },
@@ -678,95 +672,95 @@
           "id": "b3",
           "options": [
             {
+              "id": "o52",
+              "text": "52"
+            },
+            {
+              "id": "o62",
+              "text": "62"
+            },
+            {
               "id": "o72",
               "text": "72"
-            },
-            {
-              "id": "o74",
-              "text": "74"
-            },
-            {
-              "id": "o76",
-              "text": "76"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-2-1-a",
-        "toan2-t1-b24-luyen-tap-2-1-b",
-        "toan2-t1-b24-luyen-tap-2-2"
-      ],
       "support": {
         "guide": [
-          "Phép tính dài ở cửa tủ: làm phép đầu trước, rồi lấy kết quả làm tiếp.",
-          "Đường bay của ong: cộng cả ba số trên ba bông hoa."
+          "Phép tính dài ở cửa tủ: làm hai số đầu trước, lấy kết quả làm tiếp.",
+          "Chú ong gặp ba bông hoa nên cộng cả ba số lại."
         ],
-        "hint": "25 + 65 = 90, rồi 90 – 30.",
+        "hint": "38 + 52 = 90, rồi 90 – 40.",
         "answer": {
-          "text": "Tính.; 25 + 65 – 30 = 60   90 – 40 – 26 = 24; Chú ong bay về tổ theo đường hình sợi dây dưới đây, xuất phát từ mũi tên. Tính tổng các số trên ba bông hoa mà chú ong đã gặp. 74",
-          "explanation": "25 + 65 – 30 = 90 – 30 = 60; 90 – 40 – 26 = 50 – 26 = 24; 5 + 61 + 8 = 74."
+          "text": "Tính từ trái sang phải.; 38 + 52 – 40 = 50   100 – 30 – 45 = 25; Chú ong gỗ bay về tổ qua ba bông hoa, mỗi bông ghi một số. Tổng các số trên ba bông hoa đó là bao nhiêu? 62",
+          "explanation": "38 + 52 – 40 = 50; 100 – 30 – 45 = 25; 6 + 47 + 9 = 62."
         }
       },
       "feedback": {
         "right": [
-          "Ong gỗ vo ve về tổ, mang theo đúng tổng 74.",
+          "Ong gỗ vo ve về tổ, mang theo đúng tổng 62.",
           "Hai phép tính dài mà không vấp bước nào.",
-          "Mèo Tam Thể gõ nhẹ vào kính: cửa tủ đã mở khoá."
+          "Mèo Tam Thể gõ nhẹ lên kính: cửa tủ đã mở khoá."
         ],
         "wrong": [
           "Làm từ trái sang phải, đừng tính phần sau trước.",
           "Ong gặp ba bông hoa, cộng đủ cả ba số nhé.",
-          "90 – 40 xong rồi mới trừ tiếp 26."
+          "100 – 30 xong rồi mới trừ tiếp 45."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o60",
-          "b2": "o24",
-          "b3": "o74"
+          "b1": "o50",
+          "b2": "o25",
+          "b3": "o62"
         }
       },
-      "goTo": "Quay lại tủ kính ở hiên kho, Mèo Tam Thể chỉ hai phép tính dài trên cánh cửa"
+      "goTo": "Quay lại tủ kính ở hiên kho, Mèo Tam Thể chỉ hai phép tính dài trên cánh cửa",
+      "objective": "cong-tru-co-nho-hai-dau",
+      "expression": {
+        "b1": "38 + 52 - 40",
+        "b2": "100 - 30 - 45",
+        "b3": "6 + 47 + 9"
+      }
     },
     {
       "id": "cay-tre-tram-dot",
-      "title": "Cây tre trong truyện cổ",
+      "title": "Chuỗi hạt gỗ của Bác Sáu",
       "target": "toan2-cd4-b24-bac-sau",
       "kind": "riddle",
-      "question": "Bác Sáu làm xong đồ chơi cây tre trăm đốt và kể lại truyện cổ. Anh Khoai đốn được hai cây tre. Cây thứ nhất có 43 đốt, cây thứ hai có 50 đốt. Hỏi hai cây tre có tất cả bao nhiêu đốt tre?",
+      "question": "Bác Sáu xâu hai chuỗi hạt gỗ làm quà. Chuỗi thứ nhất có 36 hạt, chuỗi thứ hai có 50 hạt. Hỏi hai chuỗi có tất cả bao nhiêu hạt?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-2-3"
-      ],
       "support": {
         "guide": [
-          "Hỏi cả hai cây có bao nhiêu đốt thì gộp lại bằng phép cộng.",
-          "Phép tính: 43 + 50."
+          "Hỏi cả hai chuỗi có bao nhiêu hạt thì gộp lại bằng phép cộng.",
+          "Phép tính: 36 + 50."
         ],
-        "hint": "4 chục và 5 chục là 9 chục.",
+        "hint": "3 chục và 5 chục là 8 chục, thêm 6 hạt lẻ.",
         "answer": {
-          "text": "93 đốt tre",
-          "explanation": "Hai cây tre có tất cả: 43 + 50 = 93 (đốt tre)."
+          "text": "86 hạt gỗ",
+          "explanation": "Hai chuỗi có tất cả: 36 + 50 = 86 (hạt)."
         }
       },
       "feedback": {
         "right": [
-          "Khắc nhập, khắc nhập! Chín mươi ba đốt tre nối liền một mạch.",
-          "Ông Bụt mà ở đây chắc cũng khen {name} nhanh trí.",
-          "Đồ chơi cây tre của Bác Sáu được đặt vào tủ trang trọng."
+          "Tách, tách, tách! Tám mươi sáu hạt gỗ nối liền một mạch.",
+          "Bác Sáu mà thấy chắc cũng khen {name} nhanh trí.",
+          "Hai chuỗi hạt được treo lên tủ kính thật trang trọng."
         ],
         "wrong": [
-          "Gộp hai cây tre thì cộng số đốt lại nhé.",
-          "Cộng hàng chục: 4 chục thêm 5 chục là mấy chục?",
-          "Đừng quên 3 đốt lẻ của cây thứ nhất."
+          "Gộp hai chuỗi hạt thì cộng số hạt lại nhé.",
+          "Cộng hàng chục: 3 chục thêm 5 chục là mấy chục?",
+          "Đừng quên 6 hạt lẻ của chuỗi thứ nhất."
         ]
       },
       "answer": {
-        "value": 93
+        "value": 86
       },
-      "goTo": "Lên thang dây nhà sóc trong vườn, Bác Sáu bày đồ chơi cây tre trăm đốt"
+      "goTo": "Lên thang dây nhà sóc trong vườn, Bác Sáu bày hai chuỗi hạt gỗ vừa xâu",
+      "objective": "cong-tru-co-nho-bai-toan",
+      "expression": "36 + 50"
     },
     {
       "id": "chu-so-tron-kinh",
@@ -775,7 +769,7 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "prompt": "Hơi thở của Bê Phính làm mờ kính, che mất hai chữ số trên nhãn ngăn tủ.",
-      "template": "Tìm chữ số thích hợp.\na) 60 – 9 > 5{{b1}}\nb) 42 – 4 < 3{{b2}}",
+      "template": "Tìm chữ số bị che.\na) 80 – 9 > 7{{b1}}\nb) 63 – 5 < 5{{b2}}",
       "blanks": [
         {
           "id": "b1",
@@ -789,8 +783,8 @@
               "text": "1"
             },
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o2",
+              "text": "2"
             }
           ]
         },
@@ -813,19 +807,15 @@
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b24-luyen-tap-2-4-a",
-        "toan2-t1-b24-luyen-tap-2-4-b"
-      ],
       "support": {
         "guide": [
           "Tính vế trái trước.",
           "Thử từng chữ số xem dấu so sánh có đúng không."
         ],
-        "hint": "60 – 9 = 51; 42 – 4 = 38.",
+        "hint": "80 – 9 = 71; 63 – 5 = 58.",
         "answer": {
-          "text": "Tìm chữ số thích hợp.; a) 60 – 9 > 50; b) 42 – 4 < 39",
-          "explanation": "a) 51 > 5? chỉ đúng khi số đó là 50, nên chữ số là 0. b) 38 < 3? chỉ đúng khi số đó là 39, nên chữ số là 9."
+          "text": "Tìm chữ số bị che.; a) 80 – 9 > 70; b) 63 – 5 < 59",
+          "explanation": "a) 71 > 7? chỉ đúng khi chữ số đó là 0 (70). b) 58 < 5? chỉ đúng khi chữ số đó là 9 (59)."
         }
       },
       "feedback": {
@@ -836,8 +826,8 @@
         ],
         "wrong": [
           "Thay chữ số vào rồi kiểm tra dấu so sánh nhé.",
-          "51 phải lớn hơn số 5? thì số đó chỉ có thể là 50.",
-          "38 bé hơn số 3? thì số đó phải lớn hơn 38."
+          "71 phải lớn hơn số 7? thì chữ số ấy chỉ có thể là 0.",
+          "58 bé hơn số 5? thì chữ số ấy phải lớn hơn 8."
         ]
       },
       "answer": {
@@ -846,7 +836,8 @@
           "b2": "o9"
         }
       },
-      "goTo": "Về tủ kính ở hiên kho, Mèo Tam Thể hà hơi lau ô kính mờ"
+      "goTo": "Về tủ kính ở hiên kho, Mèo Tam Thể hà hơi lau ô kính mờ",
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "cap-the-anh-em",
@@ -854,87 +845,85 @@
       "target": "toan2-cd4-b24-meo-tam-the",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Mèo Tam Thể rủ {name} chơi trò CẶP TẤM THẺ ANH EM, ai ghép được nhiều cặp thì được đặt món đồ chơi cuối vào tủ. Thẻ phép trừ: 30 – 5, 100 – 20, 35 – 8, 40 – 12, 52 – 15; thẻ số: 25, 37, 27, 28, 80. Cách chơi: • Chơi theo nhóm. • Úp các tấm thẻ có các phép trừ dưới đây thành một nhóm theo thứ tự bất kì. • Úp các tấm thẻ có các số dưới đây thành một nhóm theo thứ tự bất kì. • Khi đến lượt, người chơi lấy ở mỗi nhóm một tấm thẻ. Nếu là cặp tấm thẻ anh em (cặp tấm thẻ ghi phép tính và kết quả của phép tính đó) thì người chơi được giữ lấy, nếu không thì xếp trả lại. • Trò chơi kết thúc khi có người lấy được 2 cặp tấm thẻ anh em. Ghép mỗi thẻ phép trừ với thẻ số anh em của nó.",
+      "prompt": "Mèo Tam Thể rủ {name} chơi ghép thẻ anh em: thẻ phép trừ nào ghép với thẻ số là kết quả của nó thì thành một cặp anh em, ai ghép được nhiều cặp thì được đặt món đồ chơi cuối cùng vào tủ. Thẻ phép trừ: 40 – 6, 52 – 7, 71 – 9, 83 – 5, 100 – 30; thẻ số: 34, 45, 62, 78, 70. Hãy ghép mỗi thẻ phép trừ với thẻ số anh em của nó.",
       "groups": [
         {
-          "id": "nhom-the-so-25",
-          "label": "Thẻ số 25"
+          "id": "nhom-the-so-45",
+          "label": "Thẻ số 45"
         },
         {
-          "id": "nhom-the-so-37",
-          "label": "Thẻ số 37"
+          "id": "nhom-the-so-78",
+          "label": "Thẻ số 78"
         },
         {
-          "id": "nhom-the-so-27",
-          "label": "Thẻ số 27"
+          "id": "nhom-the-so-34",
+          "label": "Thẻ số 34"
         },
         {
-          "id": "nhom-the-so-28",
-          "label": "Thẻ số 28"
+          "id": "nhom-the-so-70",
+          "label": "Thẻ số 70"
         },
         {
-          "id": "nhom-the-so-80",
-          "label": "Thẻ số 80"
+          "id": "nhom-the-so-62",
+          "label": "Thẻ số 62"
         }
       ],
       "items": [
         {
-          "id": "the-35-8",
-          "label": "Thẻ 35 – 8"
+          "id": "the-83-5",
+          "label": "Thẻ 83 – 5"
         },
         {
-          "id": "the-30-5",
-          "label": "Thẻ 30 – 5"
+          "id": "the-40-6",
+          "label": "Thẻ 40 – 6"
         },
         {
-          "id": "the-52-15",
-          "label": "Thẻ 52 – 15"
+          "id": "the-100-30",
+          "label": "Thẻ 100 – 30"
         },
         {
-          "id": "the-100-20",
-          "label": "Thẻ 100 – 20"
+          "id": "the-71-9",
+          "label": "Thẻ 71 – 9"
         },
         {
-          "id": "the-40-12",
-          "label": "Thẻ 40 – 12"
+          "id": "the-52-7",
+          "label": "Thẻ 52 – 7"
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b24-tro-choi-1"
-      ],
       "support": {
         "guide": [
           "Lật một thẻ phép trừ, tính nhẩm kết quả.",
-          "Thẻ số trùng kết quả là anh em của nó."
+          "Thẻ số trùng với kết quả là anh em của nó."
         ],
-        "hint": "40 – 12 = 28, 35 – 8 = 27.",
+        "hint": "40 – 6 = 34, 52 – 7 = 45.",
         "answer": {
-          "text": "30 – 5 = 25; 100 – 20 = 80; 35 – 8 = 27; 40 – 12 = 28; 52 – 15 = 37",
-          "explanation": "30 – 5 = 25; 100 – 20 = 80; 35 – 8 = 27; 40 – 12 = 28; 52 – 15 = 37."
+          "text": "40 – 6 = 34; 52 – 7 = 45; 71 – 9 = 62; 83 – 5 = 78; 100 – 30 = 70",
+          "explanation": "Mỗi thẻ phép trừ ghép với thẻ số đúng bằng kết quả của nó, tạo thành năm cặp anh em."
         }
       },
       "feedback": {
         "right": [
           "Năm cặp anh em đoàn tụ, {name} thắng Mèo Tam Thể ván này!",
-          "Mèo Tam Thể chịu thua, cúi đầu kiểu mèo lịch sự.",
-          "Thẻ 27 và 28 sát nhau mà cậu không ghép lẫn."
+          "Mèo Tam Thể chịu thua, cúi đầu một cách lịch sự.",
+          "Thẻ 62 và thẻ 70 gần nhau mà cậu không ghép lẫn."
         ],
         "wrong": [
-          "Cặp này không phải anh em rồi, xếp trả lại và thử tiếp.",
+          "Cặp này chưa phải anh em, xếp trả lại rồi thử tiếp.",
           "Tính kết quả thẻ phép trừ trước khi tìm thẻ số.",
-          "35 – 8 và 40 – 12 ra hai số liền nhau đấy, cẩn thận."
+          "83 – 5 và 71 – 9 đều có mượn, tính kĩ từng phép nhé."
         ]
       },
       "answer": {
         "assignment": {
-          "the-35-8": "nhom-the-so-27",
-          "the-30-5": "nhom-the-so-25",
-          "the-52-15": "nhom-the-so-37",
-          "the-100-20": "nhom-the-so-80",
-          "the-40-12": "nhom-the-so-28"
+          "the-83-5": "nhom-the-so-78",
+          "the-40-6": "nhom-the-so-34",
+          "the-100-30": "nhom-the-so-70",
+          "the-71-9": "nhom-the-so-62",
+          "the-52-7": "nhom-the-so-45"
         }
-      }
+      },
+      "objective": "cong-tru-co-nho-tru"
     },
     {
       "id": "tu-kinh-lung-linh",

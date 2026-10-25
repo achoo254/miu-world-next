@@ -4,18 +4,17 @@
   "chapter": 3,
   "title": "Sâu Xanh đếm ngày hóa bướm",
   "status": "active",
-  "lesson": "toan2-t1-b32",
   "topic": "gio-va-lich",
   "summary": "Sâu Xanh nằm trên ban công tháp đồng hồ cạnh thư viện đếm từng ngày chờ hóa bướm; {name} giúp Sâu Xanh đọc đồng hồ, tìm ngày trên lịch theo bưu ảnh của Rô-bốt, xem giờ mở cửa bảo tàng và sắp lịch học năng khiếu.",
   "review": "teacher-pending",
   "sevenQuestions": {
-    "who": "Sâu Xanh, ông Lộc, Cáo Đỏ Tem, chị Thảo dạy bóng rổ",
+    "who": "Sâu Xanh, ông Lộc, Cáo Đỏ Tem, chị Thảo dạy cờ vua",
     "where": "Tháp đồng hồ cạnh Thư viện: ban công ngắm trời, mái hiên tháp, hộp thư trên tháp, góc kính viễn vọng trên đỉnh tháp, chân cầu thang xoắn",
     "goal": "Giúp Sâu Xanh không còn đếm nhầm ngày, giờ trước khi hóa bướm",
     "play": "Tìm bưu ảnh, chọn giờ đúng, chạm ngày trên lịch, xếp nhóm theo đồng hồ, đặt giờ, sắp xếp lịch học, chọn nhiều đáp án",
-    "learn": "Toán 2 Bài 32: luyện tập chung xem đồng hồ, xem lịch",
+    "learn": "Luyện tập xem đồng hồ và xem lịch: đọc giờ khi kim dài đi qua các số, tìm ngày theo thứ tự chuyến đi trên tờ lịch, so giờ đến với giờ mở cửa, sắp các buổi học theo giờ",
     "reward": "80 XP, 15 xu, Xem đồng hồ +2, Xem lịch +1",
-    "next": "Bài 33 \"Ôn tập phép cộng, phép trừ trong phạm vi 20, 100\" ở Lâu đài"
+    "next": "Đại sảnh Lâu đài, nơi vé ghế của buổi tổng duyệt là những phép cộng, phép trừ"
   },
   "phases": {
     "hook": "sau-xanh-ngam-troi",
@@ -145,51 +144,49 @@
       "target": "sau-xanh",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Đồng hồ trên ban công: kim ngắn vừa qua số 3, kim dài đang ở số 3. Xem hình vẽ rồi chọn câu trả lời đúng. Trong đồng hồ bên, khi kim dài chạy qua số 4, số 5, đến số 6 thì lúc này đồng hồ chỉ: A. 3 giờ 30 phút. B. 4 giờ 15 phút. C. 4 giờ 30 phút.",
+      "prompt": "Sâu Xanh ngó chiếc đồng hồ ngoài ban công lúc nó đang chỉ 8 giờ 15 phút, rồi nằm đếm thêm một quãng nữa cho đến khi kim phút chạm số 6. Hỏi lúc đó đồng hồ chỉ mấy giờ?",
       "choices": [
         {
-          "id": "a-3-gio-30-phut",
-          "text": "A. 3 giờ 30 phút."
+          "id": "a-8-gio-15-phut",
+          "text": "8 giờ 15 phút"
         },
         {
-          "id": "b-4-gio-15-phut",
-          "text": "B. 4 giờ 15 phút."
+          "id": "b-8-gio-30-phut",
+          "text": "8 giờ 30 phút"
         },
         {
-          "id": "c-4-gio-30-phut",
-          "text": "C. 4 giờ 30 phút."
+          "id": "c-9-gio-30-phut",
+          "text": "9 giờ 30 phút"
         }
       ],
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-1"
-      ],
       "support": {
         "guide": [
-          "Kim dài chỉ số 6 là 30 phút.",
-          "Kim ngắn vẫn chưa tới số 4, nên vẫn là 3 giờ hơn."
+          "Kim dài dừng ở số 6 nghĩa là đã qua nửa giờ, tức 30 phút.",
+          "Kim ngắn vẫn chưa tới số 9, nên giờ vẫn là 8."
         ],
-        "hint": "Kim dài mới chạy thêm một quãng ngắn, kim ngắn chưa sang giờ mới.",
+        "hint": "Kim dài chỉ chạy thêm một quãng ngắn, kim ngắn chưa sang giờ mới.",
         "answer": {
-          "text": "A. 3 giờ 30 phút.",
-          "explanation": "Kim dài từ số 3 chạy tới số 6 thì đồng hồ chỉ 30 phút; kim ngắn vẫn ở giữa số 3 và số 4, nên là 3 giờ 30 phút."
+          "text": "Lúc này là tám giờ rưỡi.",
+          "explanation": "Kim dài đi từ số 3 tới số 6 thì chỉ 30 phút; kim ngắn vẫn nằm giữa số 8 và số 9, nên đồng hồ chỉ 8 giờ 30 phút."
         }
       },
       "feedback": {
         "right": [
-          "Ba giờ rưỡi! Sâu Xanh thè lưỡi: kim dài bò nhanh thật.",
-          "Cậu không bị số 4, số 5 đánh lừa, giỏi ghê.",
-          "Kim ngắn chưa sang số 4 mà, chuẩn luôn!"
+          "Tám giờ rưỡi! Sâu Xanh thè lưỡi khâm phục: kim dài bò nhanh thật.",
+          "Số 4 và số 5 không đánh lừa được cậu, giỏi ghê.",
+          "Kim ngắn chưa sang số 9, cậu để ý chuẩn thật."
         ],
         "wrong": [
-          "Kim dài chỉ số 6 thì là mấy phút?",
-          "Kim ngắn vẫn chưa chạm số 4 đâu nhé.",
-          "Kim dài đi qua số 4, số 5 nhưng dừng ở số 6 cơ."
+          "Kim dài dừng ở số 6 thì đã qua bao nhiêu phút?",
+          "Kim ngắn vẫn chưa chạm số 9 đâu nhé.",
+          "Kim dài đi qua số 4, số 5 nhưng dừng hẳn ở số 6."
         ]
       },
       "answer": {
-        "choice": "a-3-gio-30-phut"
-      }
+        "choice": "b-8-gio-30-phut"
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "ruong-bac-thang",
@@ -198,41 +195,39 @@
       "target": "toan2-cd6-b32-cao-do-tem",
       "kind": "challenge",
       "mechanic": "calendar",
-      "prompt": "Xem tờ lịch và các ảnh chụp của Rô-bốt rồi trả lời câu hỏi (theo mẫu). Mẫu: Rô-bốt ghé thăm Tây Nguyên vào ngày 2 tháng 8. – Rô-bốt ghé thăm Mù Cang Chải vào ngày nào? Trên tờ lịch tháng 8, Rô-bốt khoanh các ngày 2, 13, 21, 30; bốn bưu ảnh xếp đúng thứ tự chuyến đi: Tây Nguyên, Huế, chợ nổi Năm Căn, Mù Cang Chải.",
-      "month": 8,
+      "prompt": "Rô-bốt đánh dấu bốn ngày 5, 12, 20 và 29 trên tờ lịch tháng 10, mỗi ngày ứng với một bưu ảnh. Chuyến đi bắt đầu ở Đà Lạt, sau đó qua Huế, rồi tới Năm Căn, và dừng chân sau cùng ở Mù Cang Chải. Ví dụ: ngày 5 tháng 10 là ngày bưu ảnh Đà Lạt được gửi.",
+      "month": 10,
       "year": 2022,
-      "question": "Chạm vào ngày Rô-bốt ghé thăm ruộng bậc thang Mù Cang Chải.",
+      "question": "Rô-bốt ghé Mù Cang Chải vào ngày nào? Chạm vào ngày đó trên tờ lịch.",
       "ask": "day",
       "skill": "xem-lich",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-2-a"
-      ],
       "support": {
         "guide": [
-          "Ngày khoanh đầu tiên ứng với bưu ảnh đầu tiên.",
-          "Mù Cang Chải là bưu ảnh cuối cùng của chuyến đi."
+          "Ngày khoanh đầu tiên ứng với bưu ảnh đầu tiên của chuyến đi.",
+          "Mù Cang Chải là bưu ảnh đến sau cùng."
         ],
-        "hint": "Bưu ảnh cuối ứng với ngày khoanh cuối cùng trong tháng.",
+        "hint": "Bưu ảnh cuối cùng ứng với ngày khoanh muộn nhất trong tháng.",
         "answer": {
-          "text": "Ngày 30 tháng 8",
-          "explanation": "Bốn ngày khoanh xếp theo thứ tự chuyến đi; Mù Cang Chải là điểm cuối nên ứng với ngày 30 tháng 8."
+          "text": "Ngày 29 tháng 10",
+          "explanation": "Bốn ngày khoanh xếp theo thứ tự chuyến đi là 5, 12, 20, 29; Mù Cang Chải là nơi đến cuối cùng nên ứng với ngày 29 tháng 10."
         }
       },
       "feedback": {
         "right": [
-          "Ngày 30! Ruộng bậc thang vàng óng đúng dịp lúa chín.",
-          "Bưu ảnh cuối, ngày khoanh cuối, cậu ghép chuẩn rồi.",
-          "Sâu Xanh ước sau này bay tới Mù Cang Chải ngắm lúa."
+          "Ngày 29! Ruộng bậc thang vàng óng đúng mùa gặt.",
+          "Bưu ảnh cuối ghép với ngày khoanh cuối, cậu ghép chuẩn rồi.",
+          "Sâu Xanh mơ ngày bay tới Mù Cang Chải ngắm lúa chín."
         ],
         "wrong": [
-          "Mù Cang Chải là nơi Rô-bốt đến sau cùng.",
-          "Tìm ngày khoanh nằm xa nhất trong tháng nhé.",
-          "Ngày 2 là Tây Nguyên trong mẫu rồi mà."
+          "Mù Cang Chải là nơi Rô-bốt đặt chân đến sau cùng.",
+          "Hãy tìm ngày khoanh nằm xa nhất trong tháng.",
+          "Ngày 5 đã là bưu ảnh Đà Lạt ở ví dụ rồi mà."
         ]
       },
       "answer": {
-        "day": 30
-      }
+        "day": 29
+      },
+      "objective": "gio-va-lich-lich"
     },
     {
       "id": "cho-noi-nam-can",
@@ -240,41 +235,39 @@
       "target": "toan2-cd6-b32-cao-do-tem",
       "kind": "challenge",
       "mechanic": "calendar",
-      "prompt": "Xem tờ lịch và các ảnh chụp của Rô-bốt rồi trả lời câu hỏi (theo mẫu). – Rô-bốt ghé thăm chợ nổi Năm Căn vào ngày nào?",
-      "month": 8,
+      "prompt": "Rô-bốt đã gạch chân các ngày 5, 12, 20 và 29 trên lịch tháng 10; thứ tự những nơi anh ấy ghé là Đà Lạt, Huế, Năm Căn rồi Mù Cang Chải.",
+      "month": 10,
       "year": 2022,
-      "question": "Chợ nổi Năm Căn là bưu ảnh thứ ba. Chạm vào ngày khoanh tương ứng trên lịch.",
+      "question": "Năm Căn là nơi thứ ba trong chuyến đi. Chạm vào ngày Rô-bốt ở Năm Căn.",
       "ask": "day",
       "skill": "xem-lich",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-2-b"
-      ],
       "support": {
         "guide": [
           "Đếm các ngày khoanh theo thứ tự từ đầu tháng.",
-          "Ngày khoanh thứ ba là chợ nổi."
+          "Ngày khoanh thứ ba ứng với chợ nổi."
         ],
-        "hint": "Ngày khoanh thứ ba nằm ở tuần thứ tư của tháng.",
+        "hint": "Ngày khoanh thứ ba nằm ở nửa sau của tháng.",
         "answer": {
-          "text": "Ngày 21 tháng 8",
-          "explanation": "Các ngày khoanh theo thứ tự là 2, 13, 21, 30; ngày thứ ba là ngày 21 tháng 8."
+          "text": "Ngày 20 tháng 10",
+          "explanation": "Các ngày khoanh theo thứ tự là 5, 12, 20, 29; ngày khoanh thứ ba là ngày 20 tháng 10."
         }
       },
       "feedback": {
         "right": [
-          "Ngày 21, thuyền ghe tấp nập trên chợ nổi!",
-          "Đếm đúng ngày khoanh thứ ba rồi, Cáo Đỏ Tem gật gù.",
-          "Bưu ảnh chợ nổi đã có ngày, hay quá."
+          "Ngày 20, ghe thuyền tấp nập chen chúc trên chợ nổi!",
+          "Cậu đếm ra ngày khoanh thứ ba, Cáo Đỏ Tem gật gù hài lòng.",
+          "Bưu ảnh chợ nổi đã tìm được ngày của mình rồi."
         ],
         "wrong": [
-          "Đếm lần lượt: ngày khoanh thứ nhất, thứ hai, rồi thứ ba.",
-          "Ngày cậu chạm không được Rô-bốt khoanh.",
-          "Chợ nổi đứng sau Huế trong chuyến đi đấy."
+          "Đếm lần lượt: ngày khoanh thứ nhất, thứ hai, rồi mới tới thứ ba.",
+          "Ngày cậu chạm không nằm trong số các ngày Rô-bốt khoanh.",
+          "Chợ nổi đứng sau Huế trong hành trình đấy."
         ]
       },
       "answer": {
-        "day": 21
-      }
+        "day": 20
+      },
+      "objective": "gio-va-lich-lich"
     },
     {
       "id": "co-do-hue",
@@ -283,41 +276,39 @@
       "target": "sau-xanh",
       "kind": "challenge",
       "mechanic": "calendar",
-      "prompt": "Xem tờ lịch và các ảnh chụp của Rô-bốt rồi trả lời câu hỏi (theo mẫu). – Rô-bốt ghé thăm Huế vào ngày nào?",
-      "month": 8,
+      "prompt": "Sâu Xanh định dán bưu ảnh Huế lên tường nhưng chưa biết ghi ngày nào. Trên lịch tháng 10, Rô-bốt gạch chân 5, 12, 20, 29 theo thứ tự Đà Lạt, Huế, Năm Căn, Mù Cang Chải.",
+      "month": 10,
       "year": 2022,
-      "question": "Huế là nơi thứ hai Rô-bốt ghé qua. Chạm vào ngày đó trên tờ lịch.",
+      "question": "Huế là nơi thứ hai Rô-bốt ghé qua. Chạm vào ngày Rô-bốt ở Huế.",
       "ask": "day",
       "skill": "xem-lich",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-2-c"
-      ],
       "support": {
         "guide": [
-          "Huế đứng ngay sau Tây Nguyên.",
+          "Huế đứng ngay sau Đà Lạt trong chuyến đi.",
           "Ngày khoanh thứ hai là ngày Rô-bốt ở Huế."
         ],
-        "hint": "Ngày khoanh thứ hai nằm ở giữa tháng.",
+        "hint": "Ngày khoanh thứ hai nằm vào khoảng giữa tháng.",
         "answer": {
-          "text": "Ngày 13 tháng 8",
-          "explanation": "Sau ngày 2 (Tây Nguyên), ngày khoanh tiếp theo là ngày 13 tháng 8, ứng với Huế."
+          "text": "Ngày 12 tháng 10",
+          "explanation": "Sau ngày 5 (Đà Lạt), ngày khoanh kế tiếp là ngày 12 tháng 10, ứng với Huế."
         }
       },
       "feedback": {
         "right": [
-          "Ngày 13, Rô-bốt ngắm sông Hương thơ mộng!",
-          "Ba bưu ảnh đủ ngày, Sâu Xanh dán lên tường.",
-          "Cậu đọc lịch du lịch còn giỏi hơn hướng dẫn viên."
+          "Ngày 12, Rô-bốt ngồi thuyền ngắm sông Hương êm đềm!",
+          "Đủ cả bốn bưu ảnh có ngày rồi, Sâu Xanh dán lên tường.",
+          "Cậu đọc lịch du lịch còn khéo hơn cả hướng dẫn viên."
         ],
         "wrong": [
-          "Huế là chặng thứ hai, ngay sau Tây Nguyên.",
-          "Ngày 2 đã là Tây Nguyên, tìm ngày khoanh kế tiếp.",
-          "Ngày cậu chọn chưa được khoanh tròn đâu."
+          "Huế là chặng thứ hai, ngay sau Đà Lạt.",
+          "Ngày 5 là Đà Lạt rồi, tìm ngày khoanh kế tiếp.",
+          "Ngày cậu chạm chưa được Rô-bốt khoanh tròn đâu."
         ]
       },
       "answer": {
-        "day": 13
-      }
+        "day": 12
+      },
+      "objective": "gio-va-lich-lich"
     },
     {
       "id": "di-bao-tang-khong",
@@ -328,11 +319,11 @@
       "lines": [
         {
           "speaker": "Ông Lộc",
-          "text": "Hồi trẻ ông dẫn khách ở Bảo tàng Lịch sử Quân sự Việt Nam đấy. Nay mấy bạn nhỏ hẹn nhau đi, mỗi bạn đến một giờ khác nhau."
+          "text": "Hồi trẻ ông làm hướng dẫn viên ở Bảo tàng Hóa thạch dưới chân đồi. Nay mấy bạn nhỏ hẹn nhau tới thăm, mỗi bạn đến vào một giờ khác nhau."
         },
         {
           "speaker": "Sâu Xanh",
-          "text": "Bảo tàng mở cửa từ 8 giờ đến 16 giờ 30 phút. Ai đến muộn quá là đứng ngoài cổng ngắm trực thăng thôi!"
+          "text": "Bảo tàng mở cửa từ 9 giờ đến 15 giờ 30 phút. Ai đến sớm quá hay muộn quá thì chỉ đứng ngoài cổng, ngắm bộ xương khủng long qua hàng rào thôi!"
         },
         {
           "speaker": "Ông Lộc",
@@ -346,15 +337,15 @@
         },
         {
           "text": "Nhớ giờ mở cửa, đóng cửa trước",
-          "reply": "Sâu Xanh: 8 giờ mở, 16 giờ 30 phút đóng. Giờ soi ảnh nào!"
+          "reply": "Sâu Xanh: 9 giờ mở, 15 giờ 30 phút đóng. Giờ soi ảnh nào!"
         }
       ],
       "en": {
         "title": "Off to the museum?",
         "goTo": "Go to the telescope corner, where Grandpa Lộc is looking out over the town",
         "lines": [
-          "When I was young I was a guide at the Vietnam Military History Museum. Now some youngsters are meeting there, and each one arrives at a different time.",
-          "The museum opens from 8 o'clock to 16:30. Anyone who's too late has to stand outside the gate looking at the helicopter!",
+          "When I was young I was a guide at the Fossil Museum at the foot of the hill. Now some youngsters are meeting there, and each one arrives at a different time.",
+          "The museum opens from 9 o'clock to 15:30. If you come too early or too late, you can only stand outside the gate and peek at the dinosaur skeleton through the fence!",
           "{name}, do you want to look at each child's clock first, or set the closing time first?"
         ],
         "choices": [
@@ -364,7 +355,7 @@
           },
           {
             "text": "Remember the opening and closing times first",
-            "reply": "Sâu Xanh: Opens at 8, closes at 16:30. Now let's look at the photos!"
+            "reply": "Sâu Xanh: Opens at 9, closes at 15:30. Now let's look at the photos!"
           }
         ]
       }
@@ -375,57 +366,57 @@
       "target": "toan2-cd6-b32-ong-loc",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Cho biết thời gian đến thăm Bảo tàng Lịch sử Quân sự Việt Nam của mỗi bạn như sau: Biết bảo tàng mở cửa từ 8 giờ đến 16 giờ 30 phút. Hỏi những bạn nào được vào thăm bảo tàng? Xếp mỗi bạn vào đúng nhóm theo đồng hồ của bạn ấy.",
+      "prompt": "Bốn bạn đến Bảo tàng Hóa thạch vào những lúc khác nhau; chiếc đồng hồ trong mỗi bức ảnh cho biết giờ bạn ấy tới cổng. Bảo tàng mở cửa từ 9 giờ đến 15 giờ 30 phút. Hãy xếp từng bạn vào nhóm vào được hoặc không vào được.",
       "groups": [
         {
-          "id": "nhom-duoc-vao-tham-bao-tang",
-          "label": "Được vào thăm bảo tàng"
+          "id": "nhom-vao-duoc-bao-tang",
+          "label": "Vào được bảo tàng"
         },
         {
-          "id": "nhom-khong-duoc-vao",
-          "label": "Không được vào"
+          "id": "nhom-khong-vao-duoc",
+          "label": "Không vào được"
         }
       ],
       "items": [
         {
-          "id": "ban-hai-ban-gai-dat-xe-dap-o-cong",
-          "label": "Hai bạn gái dắt xe đạp ở cổng",
+          "id": "ban-cao-do-tem-luc-suong-som",
+          "label": "Cáo Đỏ Tem đến cổng khi sương sớm còn đọng",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
-              "hour": 10,
+              "hour": 7,
               "minute": 15
             }
           }
         },
         {
-          "id": "ban-ro-bot-dung-o-cong-bao-tang",
-          "label": "Rô-bốt đứng ở cổng bảo tàng",
+          "id": "ban-hai-chim-se-giua-buoi-sang",
+          "label": "Hai chú chim sẻ đậu lên cột cờ giữa buổi sáng",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
-              "hour": 5,
+              "hour": 9,
               "minute": 30
             }
           }
         },
         {
-          "id": "ban-ban-trai-dung-truoc-cot-co",
-          "label": "Bạn trai đứng trước cột cờ",
+          "id": "ban-sau-xanh-luc-nang-dung-bong",
+          "label": "Sâu Xanh bò qua sảnh lúc nắng đứng bóng",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
-              "hour": 11,
+              "hour": 12,
               "minute": 30
             }
           }
         },
         {
-          "id": "ban-ban-trai-chi-tay-vao-truc-thang",
-          "label": "Bạn trai chỉ tay vào trực thăng",
+          "id": "ban-ro-bot-khi-nang-xe",
+          "label": "Rô-bốt tới ngắm hóa thạch khi nắng đã xế",
           "image": {
             "kind": "diagram",
             "type": "clock",
@@ -437,40 +428,38 @@
         }
       ],
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-3"
-      ],
       "support": {
         "guide": [
-          "Đọc giờ trên đồng hồ của từng bạn.",
-          "Giờ phải từ 8 giờ đến 16 giờ 30 phút mới được vào."
+          "Đọc giờ trên đồng hồ của từng bạn, nhớ để ý bạn đến buổi sáng hay buổi chiều.",
+          "Chỉ những bạn tới trong khoảng từ 9 giờ đến 15 giờ 30 phút mới vào được."
         ],
-        "hint": "Đồng hồ của Rô-bốt chỉ 5 giờ 30 phút: lúc đó bảo tàng chưa mở hoặc đã đóng.",
+        "hint": "Một bạn tới trước giờ mở cửa, một bạn tới sau giờ đóng cửa.",
         "answer": {
-          "text": "Hai bạn gái (10 giờ 15 phút), bạn trai ở cột cờ (11 giờ 30 phút), bạn trai xem trực thăng (16 giờ 15 phút)",
-          "explanation": "Hai bạn gái đến lúc 10 giờ 15 phút, bạn trai ở cột cờ lúc 11 giờ 30 phút, bạn trai xem trực thăng lúc 16 giờ 15 phút: đều trong giờ mở cửa. Rô-bốt đến lúc 5 giờ 30 phút nên không được vào."
+          "text": "Vào được: hai chú chim sẻ (9 giờ 30 phút) và Sâu Xanh (12 giờ 30 phút). Không vào được: Cáo Đỏ Tem (7 giờ 15 phút) và Rô-bốt (16 giờ 15 phút).",
+          "explanation": "Chim sẻ tới lúc 9 giờ 30 phút và Sâu Xanh tới lúc 12 giờ 30 phút, cả hai đều trong giờ mở cửa. Cáo Đỏ Tem tới lúc 7 giờ 15 phút nên bảo tàng chưa mở; Rô-bốt tới lúc 16 giờ 15 phút nên bảo tàng đã đóng."
         }
       },
       "feedback": {
         "right": [
-          "Ba nhóm bạn vào bảo tàng, Rô-bốt đành hẹn hôm khác!",
-          "Cậu soi từng đồng hồ kĩ như người gác cổng.",
-          "Chuẩn: ai đến trong giờ mở cửa mới được vào."
+          "Hai bạn vào bảo tàng, hai bạn đành hẹn hôm khác, cậu phân nhóm chuẩn rồi!",
+          "Cậu soi từng chiếc đồng hồ kĩ như bác bảo vệ cổng.",
+          "Chính xác: tới trong giờ mở cửa mới được bước vào."
         ],
         "wrong": [
-          "Có bạn đến lúc bảo tàng chưa mở hoặc đã đóng đấy.",
-          "16 giờ 15 phút vẫn trước giờ đóng cửa nhé.",
-          "Đọc lại đồng hồ có kim giờ giữa số 5 và số 6 xem."
+          "Có bạn tới khi bảo tàng chưa mở, có bạn tới khi đã đóng cửa đấy.",
+          "16 giờ 15 phút là sau giờ đóng cửa 15 giờ 30 phút.",
+          "Xem lại chiếc đồng hồ có kim giờ vừa qua số 7 xem."
         ]
       },
       "answer": {
         "assignment": {
-          "ban-hai-ban-gai-dat-xe-dap-o-cong": "nhom-duoc-vao-tham-bao-tang",
-          "ban-ro-bot-dung-o-cong-bao-tang": "nhom-khong-duoc-vao",
-          "ban-ban-trai-dung-truoc-cot-co": "nhom-duoc-vao-tham-bao-tang",
-          "ban-ban-trai-chi-tay-vao-truc-thang": "nhom-duoc-vao-tham-bao-tang"
+          "ban-cao-do-tem-luc-suong-som": "nhom-khong-vao-duoc",
+          "ban-hai-chim-se-giua-buoi-sang": "nhom-vao-duoc-bao-tang",
+          "ban-sau-xanh-luc-nang-dung-bong": "nhom-vao-duoc-bao-tang",
+          "ban-ro-bot-khi-nang-xe": "nhom-khong-vao-duoc"
         }
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "gio-dong-cua-bao-tang",
@@ -479,236 +468,228 @@
       "target": "toan2-cd6-b32-chi-thao",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Chị Thảo dặn: chỉnh chiếc đồng hồ điện tử ở cổng để ai cũng biết giờ về. Cho biết thời gian đến thăm Bảo tàng Lịch sử Quân sự Việt Nam của mỗi bạn như sau: Biết bảo tàng mở cửa từ 8 giờ đến 16 giờ 30 phút. Hỏi những bạn nào được vào thăm bảo tàng? Đặt đồng hồ chỉ giờ bảo tàng đóng cửa.",
+      "prompt": "Chị Thảo dặn: hãy chỉnh chiếc đồng hồ điện tử ở cổng bảo tàng chỉ đúng giờ đóng cửa để ai cũng biết giờ ra về. Bảo tàng mở cửa từ 9 giờ đến 15 giờ 30 phút.",
       "mode": "set",
       "display": "digital",
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-3"
-      ],
       "support": {
         "guide": [
-          "Giờ đóng cửa ghi ngay trong đề bài.",
-          "Đồng hồ điện tử ghi giờ trước, phút sau."
+          "Giờ đóng cửa là giờ thứ hai trong câu nói về giờ mở cửa.",
+          "Đồng hồ điện tử ghi giờ trước, rồi mới đến phút."
         ],
-        "hint": "16 giờ 30 phút viết trên đồng hồ điện tử là 16:30.",
+        "hint": "15 giờ 30 phút viết trên đồng hồ điện tử là 15:30.",
         "answer": {
-          "text": "16:30",
-          "explanation": "Bảo tàng mở cửa từ 8 giờ đến 16 giờ 30 phút, nên đồng hồ đóng cửa chỉ 16:30."
+          "text": "15:30",
+          "explanation": "Bảo tàng đóng cửa lúc 15 giờ 30 phút, nên chiếc đồng hồ điện tử phải hiện 15:30."
         }
       },
       "feedback": {
         "right": [
-          "Đồng hồ cổng sáng chữ 16:30, chẳng ai về trễ nữa!",
+          "Đồng hồ ở cổng sáng chữ 15:30, chẳng ai về trễ nữa!",
           "Giờ trước phút sau, cậu đặt gọn gàng ghê.",
-          "Chị Thảo giơ ngón cái: bảng giờ cổng bảo tàng xong rồi."
+          "Chị Thảo giơ ngón cái: bảng giờ ở cổng bảo tàng xong rồi."
         ],
         "wrong": [
-          "Giờ đóng cửa là giờ thứ hai trong đề bài đấy.",
+          "Giờ đóng cửa là giờ nói sau trong câu về giờ mở cửa đấy.",
           "Đồng hồ điện tử ghi giờ trước rồi mới tới phút.",
           "30 phút chứ không phải 15 phút nhé."
         ]
       },
       "answer": {
-        "hour": 16,
+        "hour": 15,
         "minute": 30
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "lich-hoc-thu-bay",
-      "title": "Xếp lịch học thứ Bảy",
+      "title": "Xếp giờ học sáng thứ Bảy",
       "goTo": "Trở lại ban công ngắm trời, Sâu Xanh đang đợi",
       "target": "sau-xanh",
       "kind": "challenge",
       "mechanic": "sort",
-      "prompt": "Sâu Xanh muốn bắt chước Rô-bốt học năng khiếu. Cho biết giờ học các môn năng khiếu vào sáng ngày thứ Bảy của Rô-bốt như sau: Rô-bốt học bóng rổ. Rô-bốt học vẽ. Rô-bốt học hát. Rô-bốt học võ. Trước giờ học bóng rổ, Rô-bốt đã học những môn nào? Trước hết, xếp bốn lớp học theo thứ tự giờ học từ sớm đến muộn.",
+      "prompt": "Sâu Xanh muốn bắt chước Rô-bốt đi học năng khiếu. Sáng thứ Bảy, Rô-bốt học bốn môn là đàn, bơi, cờ vua và múa, mỗi môn bắt đầu vào một giờ riêng. Hãy xếp bốn môn theo thứ tự giờ bắt đầu, từ sớm đến muộn.",
       "items": [
         {
-          "id": "lop-hoc-bong-ro",
-          "label": "Học bóng rổ",
+          "id": "gio-hoc-co-vua",
+          "label": "Học cờ vua",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
               "hour": 9,
-              "minute": 15
+              "minute": 0
             }
           }
         },
         {
-          "id": "lop-hoc-ve",
-          "label": "Học vẽ",
-          "image": {
-            "kind": "diagram",
-            "type": "clock",
-            "params": {
-              "hour": 8,
-              "minute": 30
-            }
-          }
-        },
-        {
-          "id": "lop-hoc-hat",
-          "label": "Học hát",
-          "image": {
-            "kind": "diagram",
-            "type": "clock",
-            "params": {
-              "hour": 7,
-              "minute": 15
-            }
-          }
-        },
-        {
-          "id": "lop-hoc-vo",
-          "label": "Học võ",
+          "id": "gio-hoc-mua",
+          "label": "Học múa",
           "image": {
             "kind": "diagram",
             "type": "clock",
             "params": {
               "hour": 10,
+              "minute": 15
+            }
+          }
+        },
+        {
+          "id": "gio-hoc-dan",
+          "label": "Học đàn",
+          "image": {
+            "kind": "diagram",
+            "type": "clock",
+            "params": {
+              "hour": 7,
               "minute": 30
+            }
+          }
+        },
+        {
+          "id": "gio-hoc-boi",
+          "label": "Học bơi",
+          "image": {
+            "kind": "diagram",
+            "type": "clock",
+            "params": {
+              "hour": 8,
+              "minute": 15
             }
           }
         }
       ],
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-4"
-      ],
       "support": {
         "guide": [
-          "Đọc giờ trên từng đồng hồ trước.",
-          "Giờ nhỏ hơn thì học trước."
+          "Đọc giờ trên từng chiếc đồng hồ trước.",
+          "Môn có giờ nhỏ hơn thì học trước."
         ],
-        "hint": "Lớp sớm nhất bắt đầu lúc 7 giờ 15 phút.",
+        "hint": "Môn học sớm nhất bắt đầu lúc 7 giờ 30 phút.",
         "answer": {
-          "text": "Học hát, Học vẽ, Học bóng rổ, Học võ",
-          "explanation": "Học hát lúc 7 giờ 15 phút, học vẽ lúc 8 giờ 30 phút, học bóng rổ lúc 9 giờ 15 phút, học võ lúc 10 giờ 30 phút."
+          "text": "Đàn, bơi, cờ vua rồi mới đến múa.",
+          "explanation": "Học đàn lúc 7 giờ 30 phút, học bơi lúc 8 giờ 15 phút, học cờ vua lúc 9 giờ, học múa lúc 10 giờ 15 phút."
         }
       },
       "feedback": {
         "right": [
-          "Lịch học thẳng tắp, sáng thứ Bảy của Rô-bốt bận rộn ghê!",
-          "Đọc bốn đồng hồ mà không nhầm cái nào, siêu thật.",
-          "Sâu Xanh chép ngay lịch này vào sổ lá."
+          "Lịch học sắp thẳng tắp, sáng thứ Bảy của Rô-bốt bận rộn thật!",
+          "Đọc bốn chiếc đồng hồ mà không nhầm cái nào, siêu thật.",
+          "Sâu Xanh chép ngay lịch này vào cuốn sổ lá."
         ],
         "wrong": [
-          "Có một lớp đang chen lên trước giờ của nó.",
+          "Có một môn đang chen lên trước giờ thật của nó.",
           "So kim ngắn trước: số nhỏ hơn thì học sớm hơn.",
-          "Hai lớp có giờ gần nhau, so tiếp kim dài nhé."
+          "Hai môn có giờ gần nhau, hãy so tiếp kim dài nhé."
         ]
       },
       "answer": {
         "order": [
-          "lop-hoc-hat",
-          "lop-hoc-ve",
-          "lop-hoc-bong-ro",
-          "lop-hoc-vo"
+          "gio-hoc-dan",
+          "gio-hoc-boi",
+          "gio-hoc-co-vua",
+          "gio-hoc-mua"
         ]
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "gio-hoc-bong-ro",
-      "title": "Giờ học bóng rổ",
-      "goTo": "Chạy xuống chân cầu thang xoắn, chị Thảo đập bóng rổ bịch bịch",
+      "title": "Giờ học cờ vua",
+      "goTo": "Chạy xuống chân cầu thang xoắn, chị Thảo xếp quân cờ vua lách cách",
       "target": "toan2-cd6-b32-chi-thao",
       "kind": "challenge",
       "mechanic": "clock",
-      "prompt": "Cho biết giờ học các môn năng khiếu vào sáng ngày thứ Bảy của Rô-bốt như sau: Rô-bốt học bóng rổ. Rô-bốt học vẽ. Rô-bốt học hát. Rô-bốt học võ. Trước giờ học bóng rổ, Rô-bốt đã học những môn nào? Đồng hồ học bóng rổ đây: đọc xem đó là mấy giờ.",
+      "prompt": "Rô-bốt học cờ vua theo chiếc đồng hồ này. Đọc xem buổi học cờ vua bắt đầu lúc mấy giờ.",
       "mode": "read",
       "display": "analog",
       "time": {
         "hour": 9,
-        "minute": 15
+        "minute": 0
       },
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-4"
-      ],
       "support": {
         "guide": [
-          "Kim ngắn vừa qua số 9.",
-          "Kim dài ở số 3 là 15 phút."
+          "Kim dài đứng thẳng ở số 12 nghĩa là giờ tròn.",
+          "Kim ngắn chỉ vào số của giờ."
         ],
-        "hint": "Giờ học bóng rổ là sau 9 giờ một chút.",
+        "hint": "Kim ngắn chỉ số 9.",
         "answer": {
-          "text": "9 giờ 15 phút",
-          "explanation": "Kim giờ vừa qua số 9, kim phút chỉ số 3: 9 giờ 15 phút."
+          "text": "9 giờ đúng",
+          "explanation": "Kim giờ chỉ số 9, kim phút chỉ số 12, nên buổi học cờ vua bắt đầu lúc 9 giờ đúng."
         }
       },
       "feedback": {
         "right": [
-          "Chín giờ mười lăm, bóng rổ bắt đầu, bịch bịch bịch!",
-          "Đọc giờ bóng rổ chuẩn như ném bóng vào rổ.",
+          "Chín giờ đúng, quân cờ đã sẵn sàng trên bàn!",
+          "Đọc giờ tròn chuẩn như nước cờ của kiện tướng.",
           "Cậu nhìn kim ngắn rồi kim dài, đúng thứ tự luôn."
         ],
         "wrong": [
-          "Kim ngắn vừa đi qua số 9 thôi.",
-          "Kim dài ở số 3 là mấy phút nhỉ?",
-          "Đừng đọc lẫn kim dài thành kim giờ nhé."
+          "Kim ngắn đang chỉ vào số 9, đúng không nhỉ?",
+          "Kim dài ở số 12 nghĩa là mấy phút?",
+          "Đừng đọc kim dài thành kim giờ nhé."
         ]
       },
       "answer": {
         "hour": 9,
-        "minute": 15
-      }
+        "minute": 0
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "truoc-gio-bong-ro",
-      "title": "Học gì trước bóng rổ",
+      "title": "Học gì trước cờ vua",
       "goTo": "Lên ban công ngắm trời, Sâu Xanh chờ câu hỏi cuối",
       "target": "sau-xanh",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Cho biết giờ học các môn năng khiếu vào sáng ngày thứ Bảy của Rô-bốt như sau: Rô-bốt học bóng rổ. Rô-bốt học vẽ. Rô-bốt học hát. Rô-bốt học võ. Trước giờ học bóng rổ, Rô-bốt đã học những môn nào? Chọn tất cả các môn Rô-bốt đã học trước giờ học bóng rổ.",
+      "prompt": "Rô-bốt học cờ vua lúc 9 giờ. Chọn tất cả các môn mà Rô-bốt đã học xong trước giờ học cờ vua.",
       "choices": [
         {
-          "id": "ve",
-          "text": "vẽ"
+          "id": "boi",
+          "text": "bơi"
         },
         {
-          "id": "hat",
-          "text": "hát"
+          "id": "dan",
+          "text": "đàn"
         },
         {
-          "id": "vo",
-          "text": "võ"
+          "id": "mua",
+          "text": "múa"
         }
       ],
       "skill": "xem-dong-ho",
-      "curriculumRef": [
-        "toan2-t1-b32-luyen-tap-4"
-      ],
       "support": {
         "guide": [
-          "Bóng rổ bắt đầu lúc 9 giờ 15 phút.",
-          "Môn nào có giờ sớm hơn thì học trước bóng rổ."
+          "Giờ học cờ vua bắt đầu lúc 9 giờ.",
+          "Môn nào bắt đầu sớm hơn 9 giờ thì được học trước cờ vua."
         ],
-        "hint": "Có hai môn học trước bóng rổ.",
+        "hint": "Có hai môn học trước cờ vua.",
         "answer": {
-          "text": "hát, vẽ",
-          "explanation": "Hát (7 giờ 15 phút) và vẽ (8 giờ 30 phút) sớm hơn bóng rổ (9 giờ 15 phút); võ (10 giờ 30 phút) học sau."
+          "text": "Đàn và bơi",
+          "explanation": "Đàn (7 giờ 30 phút) và bơi (8 giờ 15 phút) bắt đầu sớm hơn cờ vua (9 giờ); múa (10 giờ 15 phút) học sau."
         }
       },
       "feedback": {
         "right": [
-          "Hát rồi vẽ, xong mới tới bóng rổ, Sâu Xanh nhớ rồi!",
+          "Đàn rồi bơi, xong mới đến cờ vua, Sâu Xanh nhớ hết rồi!",
           "Hai môn, không thừa không thiếu, cậu tuyệt lắm.",
-          "Câu hỏi cuối xong, Sâu Xanh lăn một vòng ăn mừng!"
+          "Câu hỏi cuối xong rồi, Sâu Xanh lăn một vòng mừng rỡ!"
         ],
         "wrong": [
-          "Võ học lúc 10 giờ 30 phút, sau bóng rổ đấy.",
+          "Múa học lúc 10 giờ 15 phút, sau cờ vua đấy.",
           "Còn một môn học sớm nữa chưa được chọn.",
-          "So từng giờ với 9 giờ 15 phút của bóng rổ nhé."
+          "So từng giờ bắt đầu với 9 giờ của cờ vua nhé."
         ]
       },
       "answer": {
         "choices": [
-          "hat",
-          "ve"
+          "dan",
+          "boi"
         ]
-      }
+      },
+      "objective": "gio-va-lich-dong-ho"
     },
     {
       "id": "huy-hieu-dem-ngay",

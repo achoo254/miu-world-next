@@ -4,7 +4,6 @@
   "chapter": 2,
   "title": "Phông nền bằng hình phẳng",
   "status": "active",
-  "lesson": "toan2-t1-b34",
   "topic": "hinh-phang",
   "summary": "Gấu Bum vấp ngã làm đổ tung phông nền sân khấu đại sảnh ghép từ các hình phẳng; {name} cùng Hươu Cao, Mèo Cam Xíu và chú Phong đếm đoạn thẳng, đo, tìm hình tứ giác, ba điểm thẳng hàng và dựng lại phông cho buổi văn nghệ cuối kì của lâu đài.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Lâu đài, đại sảnh ôn tập: phông nền sân khấu, cánh gà sân khấu, đống thanh gỗ khung phông, giàn đèn sân khấu, bậc lên sân khấu",
     "goal": "Dựng lại phông nền sân khấu trước buổi tổng duyệt",
     "play": "Tìm mảnh phông, điền số đoạn thẳng và độ dài, chọn đoạn bằng nhau, phân loại hình, chọn ba điểm thẳng hàng, nối điểm vẽ đoạn thẳng, giải đố, phiếu vẽ hình",
-    "learn": "Toán 2 Bài 34: ôn tập hình phẳng (đoạn thẳng, đường gấp khúc, hình tứ giác, ba điểm thẳng hàng, đo và vẽ đoạn thẳng)",
+    "learn": "Ôn tập hình phẳng: đếm đoạn thẳng, đo và so sánh độ dài, nhận ra hình tứ giác, ba điểm thẳng hàng, tính độ dài đường gấp khúc, kẻ đoạn thẳng cho trước",
     "reward": "120 XP, 20 xu, Hình phẳng +2, Logic +1",
-    "next": "Bài 35 \"Ôn tập đo lường\""
+    "next": "Hậu trường sân khấu của Cáo Chấm Bi, nơi cần cân bánh và đong nước"
   },
   "phases": {
     "hook": "phong-nen-do-sap",
@@ -145,33 +144,12 @@
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Bốn mảnh phông đầu tiên nằm sấp trên sàn. Số ?",
-      "template": "Mảnh a là một đường gấp khúc.\na) Có {{b1}} đoạn thẳng.\nMảnh b là một hình tam giác.\nb) Có {{b2}} đoạn thẳng.\nMảnh c là một hình vuông.\nc) Có {{b3}} đoạn thẳng.\nMảnh d là một hình tứ giác có một đường chéo.\nd) Có {{b4}} đoạn thẳng.",
+      "prompt": "Bốn tấm phông nhỏ nằm ngửa trên sàn sân khấu. Đếm xem mỗi tấm được ghép từ bao nhiêu đoạn thẳng rồi điền số.",
+      "template": "Tấm a là một đường gấp khúc có bốn khúc, nên có {{b1}} đoạn thẳng.\nTấm b là một hình năm cạnh, nên có {{b2}} đoạn thẳng.\nTấm c là một hình tam giác, nên có {{b3}} đoạn thẳng.\nTấm d là một hình chữ nhật kẻ thêm một đường chéo, nên có {{b4}} đoạn thẳng.",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o2",
-              "text": "2"
-            },
-            {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o13",
-              "text": "13"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o2",
-              "text": "2"
-            },
             {
               "id": "o3",
               "text": "3"
@@ -179,6 +157,27 @@
             {
               "id": "o4",
               "text": "4"
+            },
+            {
+              "id": "o14",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o4",
+              "text": "4"
+            },
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -190,12 +189,12 @@
               "text": "2"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o3",
+              "text": "3"
             },
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o4",
+              "text": "4"
             }
           ]
         },
@@ -211,50 +210,45 @@
               "text": "5"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o6",
+              "text": "6"
             }
           ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-1-a",
-        "toan2-t1-b34-luyen-tap-1-b",
-        "toan2-t1-b34-luyen-tap-1-c",
-        "toan2-t1-b34-luyen-tap-1-d"
-      ],
       "support": {
         "guide": [
-          "Mỗi cạnh của hình là một đoạn thẳng.",
-          "Đường chéo nối hai đỉnh cũng là một đoạn thẳng."
+          "Mỗi cạnh của một hình là một đoạn thẳng, mỗi khúc của đường gấp khúc cũng vậy.",
+          "Đường chéo nối hai đỉnh đối diện cũng là một đoạn thẳng thêm vào."
         ],
-        "hint": "Hình tứ giác có 4 cạnh, thêm một đường chéo nữa là mấy đoạn?",
+        "hint": "Hình chữ nhật có 4 cạnh, kẻ thêm một đường chéo thì được thêm mấy đoạn?",
         "answer": {
-          "text": "Mảnh a là một đường gấp khúc.; a) Có 3 đoạn thẳng.; Mảnh b là một hình tam giác.; b) Có 3 đoạn thẳng.; Mảnh c là một hình vuông.; c) Có 4 đoạn thẳng.; Mảnh d là một hình tứ giác có một đường chéo.; d) Có 5 đoạn thẳng.",
-          "explanation": "Đường gấp khúc ba khúc có 3 đoạn, tam giác có 3 cạnh, hình vuông có 4 cạnh, tứ giác có 4 cạnh và 1 đường chéo là 5 đoạn thẳng."
+          "text": "Tấm a có 4, tấm b có 5, tấm c có 3, tấm d có 5.",
+          "explanation": "Đường gấp khúc bốn khúc có 4 đoạn, hình năm cạnh có 5 đoạn, hình tam giác có 3 đoạn, hình chữ nhật cộng một đường chéo là 4 + 1 = 5 đoạn."
         }
       },
       "feedback": {
         "right": [
-          "Đếm đoạn thẳng chuẩn từng nét, Hươu Cao gật cái cổ dài!",
-          "Cả đường chéo cũng không lọt khỏi mắt cậu.",
-          "Bốn mảnh đầu tiên đã ghi đủ số rồi."
+          "Cả bốn tấm phông đều đếm đúng, Hươu Cao gật cái cổ dài tỏ vẻ hài lòng.",
+          "Đường chéo thêm vào cũng được cậu tính, mắt tinh thật đấy.",
+          "Ghi đủ số đoạn thẳng lên từng tấm xong rồi, xếp phông được rồi."
         ],
         "wrong": [
-          "Đếm từng cạnh, chạm ngón tay vào mỗi nét nhé.",
-          "Đừng quên đường chéo ở mảnh d đấy.",
-          "Hình vuông có mấy cạnh nhỉ?"
+          "Thử chạm ngón tay vào từng nét một khi đếm nhé.",
+          "Đường chéo của tấm d là một đoạn thẳng nữa, đừng quên.",
+          "Hình tam giác có mấy cạnh nhỉ? Mỗi cạnh là một đoạn."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o3",
-          "b2": "o3",
-          "b3": "o4",
+          "b1": "o4",
+          "b2": "o5",
+          "b3": "o3",
           "b4": "o5"
         }
-      }
+      },
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "do-bon-doan-thang",
@@ -263,12 +257,16 @@
       "target": "toan2-cd7-b34-meo-cam-xiu",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Bốn thanh gỗ khung phông được đặt dọc theo thước kẻ, vạch 0 trùng đầu bên trái mỗi thanh. Cho các đoạn thẳng sau: a) Đo độ dài mỗi đoạn thẳng.",
-      "template": "AB dài {{b1}} cm\nCD dài {{b2}} cm\nPQ dài {{b3}} cm\nMN dài {{b4}} cm",
+      "prompt": "Bốn thanh gỗ làm khung phông được đặt dọc theo cây thước, đầu trái của mỗi thanh trùng vạch 0. Đọc vạch ở đầu phải để biết mỗi thanh dài bao nhiêu xăng-ti-mét.",
+      "template": "Thanh EF dài {{b1}} cm\nThanh GH dài {{b2}} cm\nThanh KL dài {{b3}} cm\nThanh RS dài {{b4}} cm",
       "blanks": [
         {
           "id": "b1",
           "options": [
+            {
+              "id": "o2",
+              "text": "2"
+            },
             {
               "id": "o3",
               "text": "3"
@@ -276,10 +274,6 @@
             {
               "id": "o5",
               "text": "5"
-            },
-            {
-              "id": "o7",
-              "text": "7"
             }
           ]
         },
@@ -287,16 +281,16 @@
           "id": "b2",
           "options": [
             {
+              "id": "o5",
+              "text": "5"
+            },
+            {
               "id": "o6",
               "text": "6"
             },
             {
               "id": "o7",
               "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
             }
           ]
         },
@@ -308,12 +302,12 @@
               "text": "6"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -325,54 +319,49 @@
               "text": "7"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o10",
+              "text": "10"
             }
           ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-a1",
-        "toan2-t1-b34-luyen-tap-2-a2",
-        "toan2-t1-b34-luyen-tap-2-a3",
-        "toan2-t1-b34-luyen-tap-2-a4"
-      ],
       "support": {
         "guide": [
-          "Đặt vạch 0 của thước trùng một đầu đoạn thẳng.",
-          "Đầu kia chạm vạch nào thì đoạn dài bấy nhiêu xăng-ti-mét."
+          "Vạch 0 của thước phải trùng với một đầu thanh gỗ.",
+          "Đầu kia chạm vạch số mấy thì thanh dài bấy nhiêu xăng-ti-mét."
         ],
-        "hint": "Thanh MN dài nhất trong bốn thanh.",
+        "hint": "Thanh RS là thanh dài nhất trong bốn thanh.",
         "answer": {
-          "text": "AB dài 5 cm; CD dài 7 cm; PQ dài 7 cm; MN dài 9 cm",
-          "explanation": "Đọc vạch thước ở đầu bên phải mỗi đoạn: AB dài 5 cm, CD dài 7 cm, PQ dài 7 cm, MN dài 9 cm."
+          "text": "EF dài 3 cm, GH dài 6 cm, KL dài 6 cm, RS dài 8 cm.",
+          "explanation": "Đọc vạch ở đầu bên phải mỗi thanh: EF chạm vạch 3, GH chạm vạch 6, KL chạm vạch 6, RS chạm vạch 8."
         }
       },
       "feedback": {
         "right": [
-          "Bốn thanh gỗ đo xong, Mèo Cam Xíu ghi số bằng phấn!",
-          "Cậu đặt thước chuẩn vạch 0, số đo không lệch tí nào.",
-          "Đo đạc kĩ thế này thì phông dựng thẳng tắp."
+          "Bốn thanh gỗ đo xong cả rồi, Mèo Cam Xíu ghi số lên bằng viên phấn xanh!",
+          "Cậu đặt đúng vạch 0, số đo không lệch lấy một vạch.",
+          "Đo kĩ thế này thì khung phông đứng thẳng tắp."
         ],
         "wrong": [
-          "Nhớ đếm từ vạch 0, không phải từ vạch 1 nhé.",
-          "Một thanh đang bị đọc lệch một vạch rồi.",
-          "Nhìn đầu bên phải của thanh chạm vạch số mấy?"
+          "Nhớ bắt đầu đếm từ vạch 0, đừng bắt đầu từ vạch 1.",
+          "Một thanh đang bị đọc lệch sang vạch bên cạnh rồi.",
+          "Đầu bên phải của thanh chạm vào vạch số mấy?"
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o5",
-          "b2": "o7",
-          "b3": "o7",
-          "b4": "o9"
+          "b1": "o3",
+          "b2": "o6",
+          "b3": "o6",
+          "b4": "o8"
         }
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "hai-doan-bang-nhau",
@@ -381,58 +370,56 @@
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Hươu Cao cần hai thanh dài bằng nhau làm hai cột phông. Cho các đoạn thẳng sau: b) Hai đoạn thẳng nào dài bằng nhau?",
+      "prompt": "Hươu Cao cần hai thanh gỗ dài bằng nhau để làm hai cột đỡ phông. Dựa vào số đo vừa tìm được, chọn hai thanh dài bằng nhau.",
       "choices": [
         {
-          "id": "ab",
-          "text": "AB"
+          "id": "ef",
+          "text": "EF"
         },
         {
-          "id": "cd",
-          "text": "CD"
+          "id": "gh",
+          "text": "GH"
         },
         {
-          "id": "pq",
-          "text": "PQ"
+          "id": "kl",
+          "text": "KL"
         },
         {
-          "id": "mn",
-          "text": "MN"
+          "id": "rs",
+          "text": "RS"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-b"
-      ],
       "support": {
         "guide": [
-          "So các số đo vừa tìm được.",
-          "Hai đoạn có cùng số xăng-ti-mét thì dài bằng nhau."
+          "Hãy xem lại số xăng-ti-mét của từng thanh.",
+          "Hai thanh có số đo giống nhau thì dài bằng nhau."
         ],
-        "hint": "Có hai đoạn cùng dài 7 cm.",
+        "hint": "Có hai thanh cùng dài 6 cm.",
         "answer": {
-          "text": "CD và PQ",
-          "explanation": "CD và PQ đều dài 7 cm nên dài bằng nhau."
+          "text": "Thanh GH và thanh KL",
+          "explanation": "GH và KL đều dài 6 cm nên hai thanh này dài bằng nhau."
         }
       },
       "feedback": {
         "right": [
-          "Hai cột phông cao bằng nhau, đứng vững chãi rồi!",
-          "Bảy xăng-ti-mét gặp bảy xăng-ti-mét, cặp đôi hoàn hảo.",
-          "Hươu Cao dựng hai cột lên cái một."
+          "Hai cột đỡ cao ngang nhau, đứng vững chãi như hai cây tre!",
+          "Sáu xăng-ti-mét gặp sáu xăng-ti-mét, một cặp đôi hoàn hảo.",
+          "Hươu Cao dựng hai cột lên chỉ trong một nhịp."
         ],
         "wrong": [
-          "Hai đoạn bằng nhau phải có cùng số đo.",
-          "Chỉ chọn đúng hai đoạn thôi nhé.",
-          "Xem lại: đoạn nào dài 7 cm?"
+          "Hai thanh bằng nhau thì phải có cùng số đo.",
+          "Chỉ cần chọn đúng hai thanh, không nhiều hơn.",
+          "Thử xem lại: thanh nào dài 6 cm?"
         ]
       },
       "answer": {
         "choices": [
-          "cd",
-          "pq"
+          "gh",
+          "kl"
         ]
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "doan-dai-nhat-ngan-nhat",
@@ -441,27 +428,27 @@
       "target": "toan2-cd7-b34-meo-cam-xiu",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Thanh dài nhất làm xà ngang, thanh ngắn nhất làm chân đỡ. Cho các đoạn thẳng sau:",
-      "template": "c) Đoạn thẳng nào dài nhất, đoạn thẳng nào ngắn nhất?\nĐoạn thẳng dài nhất là {{b1}}, đoạn thẳng ngắn nhất là {{b2}}.",
+      "prompt": "Thanh dài nhất sẽ làm xà ngang, thanh ngắn nhất làm chân đỡ. Dựa vào số đo, điền tên hai thanh đó.",
+      "template": "Thanh dài nhất là {{b1}}, thanh ngắn nhất là {{b2}}.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "ab",
-              "text": "AB"
+              "id": "ef",
+              "text": "EF"
             },
             {
-              "id": "cd",
-              "text": "CD"
+              "id": "gh",
+              "text": "GH"
             },
             {
-              "id": "mn",
-              "text": "MN"
+              "id": "kl",
+              "text": "KL"
             },
             {
-              "id": "pq",
-              "text": "PQ"
+              "id": "rs",
+              "text": "RS"
             }
           ]
         },
@@ -469,57 +456,55 @@
           "id": "b2",
           "options": [
             {
-              "id": "ab",
-              "text": "AB"
+              "id": "ef",
+              "text": "EF"
             },
             {
-              "id": "cd",
-              "text": "CD"
+              "id": "gh",
+              "text": "GH"
             },
             {
-              "id": "mn",
-              "text": "MN"
+              "id": "kl",
+              "text": "KL"
             },
             {
-              "id": "pq",
-              "text": "PQ"
+              "id": "rs",
+              "text": "RS"
             }
           ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-c"
-      ],
       "support": {
         "guide": [
-          "Số đo lớn nhất là đoạn dài nhất.",
-          "Số đo bé nhất là đoạn ngắn nhất."
+          "Thanh có số đo lớn nhất là thanh dài nhất.",
+          "Thanh có số đo bé nhất là thanh ngắn nhất."
         ],
-        "hint": "So 5 cm, 7 cm, 7 cm và 9 cm.",
+        "hint": "So sánh các số đo 3 cm, 6 cm, 6 cm và 8 cm.",
         "answer": {
-          "text": "c) Đoạn thẳng nào dài nhất, đoạn thẳng nào ngắn nhất?; Đoạn thẳng dài nhất là MN, đoạn thẳng ngắn nhất là AB.",
-          "explanation": "MN dài 9 cm là dài nhất, AB dài 5 cm là ngắn nhất."
+          "text": "Dài nhất là RS, ngắn nhất là EF.",
+          "explanation": "RS dài 8 cm nên dài nhất, EF dài 3 cm nên ngắn nhất."
         }
       },
       "feedback": {
         "right": [
-          "Xà ngang MN, chân đỡ AB, phông nền đứng thẳng tắp!",
-          "So số đo nhanh như chớp, cậu giỏi quá.",
-          "Mèo Cam Xíu reo: lần này chẳng ai cầm nhầm thanh nữa!"
+          "Xà ngang là RS, chân đỡ là EF, cậu chọn không nhầm thanh nào.",
+          "So các số đo nhanh như chớp, Mèo Cam Xíu phục sát đất.",
+          "Lần này chẳng ai cầm nhầm thanh gỗ nữa nhờ cậu."
         ],
         "wrong": [
-          "Thanh dài nhất có số đo lớn nhất đấy.",
-          "5 cm hay 7 cm thì ngắn hơn?",
-          "Hai chỗ trống đang bị đổi ngược cho nhau rồi."
+          "Thanh dài nhất là thanh có số đo lớn nhất.",
+          "3 cm và 6 cm, số nào bé hơn thì thanh đó ngắn hơn.",
+          "Hai ô trống đang bị đổi chỗ cho nhau, thử đổi lại."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "mn",
-          "b2": "ab"
+          "b1": "rs",
+          "b2": "ef"
         }
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "tim-hinh-tu-giac",
@@ -528,7 +513,7 @@
       "target": "toan2-cd7-b34-chu-phong",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Bốn mảnh phông màu sắc nằm chồng lên nhau. Những hình nào dưới đây là hình tứ giác?",
+      "prompt": "Chú Phong soi đèn vào bốn mảnh phông nhiều màu. Mảnh nào là hình tứ giác thì gắn lên phông, mảnh nào không phải thì gỡ ra.",
       "groups": [
         {
           "id": "nhom-tu-giac-gan-len-phong",
@@ -549,13 +534,15 @@
             "params": {
               "points": [
                 0,
-                4,
-                2,
+                3,
+                3,
                 0,
                 6,
-                0,
-                8,
-                4
+                3,
+                5,
+                6,
+                1,
+                6
               ]
             }
           }
@@ -569,11 +556,13 @@
             "params": {
               "points": [
                 0,
-                4,
-                3,
                 0,
                 6,
-                4
+                1,
+                7,
+                5,
+                1,
+                6
               ]
             }
           }
@@ -587,14 +576,10 @@
             "params": {
               "points": [
                 0,
-                0,
-                4,
+                6,
+                3,
                 0,
                 6,
-                2,
-                6,
-                6,
-                0,
                 6
               ]
             }
@@ -609,127 +594,123 @@
             "params": {
               "points": [
                 0,
-                1,
+                5,
+                2,
+                0,
                 5,
                 0,
-                6,
-                5,
-                1,
-                4
+                7,
+                5
               ]
             }
           }
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-3"
-      ],
       "support": {
         "guide": [
-          "Đếm số cạnh của từng hình.",
-          "Hình tứ giác có đúng 4 cạnh."
+          "Đếm số cạnh của từng mảnh phông.",
+          "Chỉ mảnh có đúng bốn cạnh mới là hình tứ giác."
         ],
-        "hint": "Có một hình 3 cạnh và một hình 5 cạnh không phải tứ giác.",
+        "hint": "Một mảnh có ba cạnh và một mảnh có năm cạnh, hai mảnh đó phải gỡ ra.",
         "answer": {
-          "text": "Hình tứ giác: A, D",
-          "explanation": "Hình A và hình D có 4 cạnh nên là hình tứ giác; hình B có 3 cạnh, hình C có 5 cạnh."
+          "text": "Gắn lên phông: hình B và hình D.",
+          "explanation": "Hình B và hình D có bốn cạnh nên là hình tứ giác; hình A có năm cạnh, hình C có ba cạnh."
         }
       },
       "feedback": {
         "right": [
-          "Hai mảnh tứ giác được gắn lên phông, vừa khít!",
-          "Đếm cạnh không sót, cậu là thợ dựng phông xịn.",
-          "Hình năm cạnh cũng không lừa được cậu."
+          "Hai mảnh tứ giác lên phông vừa khít, chú Phong bật đèn khen ngợi!",
+          "Cậu đếm cạnh không sót nét nào, đúng là thợ dựng phông giỏi.",
+          "Mảnh năm cạnh cũng không qua mắt nổi cậu."
         ],
         "wrong": [
-          "Đếm lại số cạnh của mảnh bị cắt góc nhé.",
-          "Tứ giác phải có đúng 4 cạnh, không hơn không kém.",
-          "Có một mảnh tứ giác đang nằm nhầm nhóm."
+          "Thử đếm lại số cạnh của mảnh có hình ngôi nhà nhé.",
+          "Tứ giác thì phải đúng bốn cạnh, không thừa không thiếu.",
+          "Còn một mảnh tứ giác đang nằm nhầm nhóm đấy."
         ]
       },
       "answer": {
         "assignment": {
-          "manh-hinh-a": "nhom-tu-giac-gan-len-phong",
-          "manh-hinh-b": "nhom-chua-phai-tu-giac-go-ra",
+          "manh-hinh-a": "nhom-chua-phai-tu-giac-go-ra",
+          "manh-hinh-b": "nhom-tu-giac-gan-len-phong",
           "manh-hinh-c": "nhom-chua-phai-tu-giac-go-ra",
           "manh-hinh-d": "nhom-tu-giac-gan-len-phong"
         }
-      }
+      },
+      "objective": "hinh-phang-tu-giac"
     },
     {
       "id": "ba-diem-thang-hang",
       "title": "Ba điểm thẳng hàng trên khung",
-      "goTo": "Quay về phông nền sân khấu, Hươu Cao chỉ khung MNPQ",
+      "goTo": "Quay về phông nền sân khấu, Hươu Cao chỉ khung ABCD",
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Khung phông hình tứ giác MNPQ: MN ở trên, QP ở dưới; điểm R nằm trên cạnh MN, điểm S nằm trên cạnh NP; hai đoạn MP và NQ cắt nhau tại O. Tìm ba điểm thẳng hàng có trong hình dưới đây.",
+      "prompt": "Khung phông là hình tứ giác ABCD. Điểm E nằm trên cạnh AB, điểm F nằm trên cạnh BC, còn hai đường chéo AC và BD gặp nhau tại điểm I. Chọn tất cả các bộ ba điểm thẳng hàng trong khung.",
       "choices": [
         {
-          "id": "m-r-n",
-          "text": "M, R, N"
+          "id": "a-e-b",
+          "text": "A, E, B"
         },
         {
-          "id": "m-o-n",
-          "text": "M, O, N"
+          "id": "a-i-b",
+          "text": "A, I, B"
         },
         {
-          "id": "m-o-p",
-          "text": "M, O, P"
+          "id": "a-i-c",
+          "text": "A, I, C"
         },
         {
-          "id": "q-o-r",
-          "text": "Q, O, R"
+          "id": "d-i-e",
+          "text": "D, I, E"
         },
         {
-          "id": "n-o-q",
-          "text": "N, O, Q"
+          "id": "b-i-d",
+          "text": "B, I, D"
         },
         {
-          "id": "n-s-p",
-          "text": "N, S, P"
+          "id": "b-f-c",
+          "text": "B, F, C"
         },
         {
-          "id": "r-s-p",
-          "text": "R, S, P"
+          "id": "e-f-c",
+          "text": "E, F, C"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-4"
-      ],
       "support": {
         "guide": [
-          "Ba điểm thẳng hàng cùng nằm trên một đoạn thẳng của khung.",
-          "Xét từng cạnh và từng đường chéo xem có điểm nào nằm giữa."
+          "Ba điểm thẳng hàng khi cùng nằm trên một cạnh hoặc một đường chéo của khung.",
+          "Xét lần lượt từng cạnh, rồi từng đường chéo xem có điểm nào nằm giữa."
         ],
-        "hint": "Mỗi cạnh có điểm nằm giữa và mỗi đường chéo đi qua O cho một bộ ba.",
+        "hint": "Mỗi cạnh có một điểm nằm giữa, và mỗi đường chéo đi qua I.",
         "answer": {
-          "text": "M, R, N; M, O, P; N, O, Q; N, S, P",
-          "explanation": "R nằm trên MN (M, R, N); S nằm trên NP (N, S, P); O nằm trên MP (M, O, P) và trên NQ (N, O, Q)."
+          "text": "A, E, B; B, F, C; A, I, C; B, I, D.",
+          "explanation": "E nằm trên AB nên A, E, B thẳng hàng; F nằm trên BC nên B, F, C thẳng hàng; I nằm trên cả AC và BD nên A, I, C và B, I, D cũng thẳng hàng. Các bộ ba còn lại tạo thành hình tam giác."
         }
       },
       "feedback": {
         "right": [
-          "Bốn bộ ba thẳng hàng, khung phông chắc như đinh đóng!",
-          "Cậu soi cả hai đường chéo, tinh mắt thật.",
-          "Hươu Cao nhìn từ trên cao cũng phải công nhận đúng."
+          "Đủ bốn bộ ba thẳng hàng, khung phông chắc như đinh đóng cột!",
+          "Cậu soi cả hai đường chéo, thật tinh mắt.",
+          "Hươu Cao nhìn từ trên cao xuống cũng phải công nhận cậu đúng."
         ],
         "wrong": [
-          "Ba điểm phải cùng nằm trên một đường thẳng nhé.",
-          "Còn một bộ ba trên đường chéo chưa được chọn.",
-          "M, O, N tạo thành hình tam giác, đâu có thẳng hàng."
+          "Ba điểm phải cùng nằm trên một đường thẳng của khung mới được chọn.",
+          "Trên đường chéo còn một bộ ba nữa chưa được chọn.",
+          "A, I, B tạo thành một góc chứ không nằm trên một đường thẳng."
         ]
       },
       "answer": {
         "choices": [
-          "m-r-n",
-          "m-o-p",
-          "n-o-q",
-          "n-s-p"
+          "a-e-b",
+          "a-i-c",
+          "b-i-d",
+          "b-f-c"
         ]
-      }
+      },
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "dom-muon-ve",
@@ -783,171 +764,169 @@
     },
     {
       "id": "ve-doan-ab",
-      "title": "Kẻ đoạn AB dài 5 cm",
+      "title": "Kẻ đoạn EF dài 6 cm",
       "target": "toan2-cd7-b33-gau-bum",
       "kind": "challenge",
       "mechanic": "connect",
-      "prompt": "Gấu Bum đặt điểm A ở vạch 0 của thước, các vạch 3, 5, 7 đã được chấm sẵn. Nối A với đúng vạch để được đoạn thẳng AB. a) Vẽ đoạn thẳng AB dài 5 cm.",
+      "prompt": "Gấu Bum đặt điểm E vào vạch 0 của cây thước và chấm sẵn các vạch 4, 6, 8. Hãy nối E với vạch thích hợp để được đoạn thẳng EF dài 6 cm.",
       "points": [
         {
-          "id": "diem-a",
+          "id": "diem-e",
           "x": 0,
           "y": 0,
-          "label": "A"
+          "label": "E"
         },
         {
-          "id": "vach-3",
-          "x": 3,
+          "id": "vach-4",
+          "x": 4,
           "y": 0,
-          "label": "Vạch 3"
+          "label": "Vạch 4"
         },
         {
-          "id": "vach-5",
-          "x": 5,
+          "id": "vach-6",
+          "x": 6,
           "y": 0,
-          "label": "Vạch 5"
+          "label": "Vạch 6"
         },
         {
-          "id": "vach-7",
-          "x": 7,
+          "id": "vach-8",
+          "x": 8,
           "y": 0,
-          "label": "Vạch 7"
+          "label": "Vạch 8"
         }
       ],
       "showLengths": true,
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-1-a"
-      ],
       "support": {
         "guide": [
-          "A ở vạch 0, đầu kia của đoạn phải ở vạch 5.",
-          "Chỉ nối một đoạn thẳng thôi."
+          "E nằm ở vạch 0, đầu còn lại của đoạn thẳng phải nằm ở vạch 6.",
+          "Chỉ cần nối một đoạn thẳng."
         ],
-        "hint": "Đoạn dài 5 cm thì kết thúc ở vạch 5.",
+        "hint": "Đoạn dài 6 cm thì kết thúc ở vạch số 6.",
         "answer": {
-          "text": "Nối A với vạch 5",
-          "explanation": "Đặt A ở vạch 0, chấm B ở vạch 5 rồi nối A với B được đoạn thẳng AB dài 5 cm."
+          "text": "Nối E với vạch 6.",
+          "explanation": "Đặt E ở vạch 0, chấm F ở vạch 6 rồi nối E với F, ta được đoạn thẳng EF dài 6 cm."
         }
       },
       "feedback": {
         "right": [
-          "Đoạn AB thẳng tắp đúng 5 cm, chẳng còn con giun nào!",
-          "Gấu Bum há hốc: dùng thước dễ thế à?",
-          "Đường viền đầu tiên của phông đã xong."
+          "Đoạn EF thẳng tắp đúng 6 cm, chẳng còn nét nào giống con giun nữa!",
+          "Gấu Bum tròn mắt: hóa ra có thước thì vẽ dễ thế này.",
+          "Nét viền đầu tiên của tấm phông đã hoàn thành."
         ],
         "wrong": [
-          "Đoạn đó dài hơn hay ngắn hơn 5 cm nhỉ?",
-          "A ở vạch 0, vậy B phải ở vạch mấy?",
-          "Đếm số xăng-ti-mét từ A tới điểm cậu nối xem."
+          "Đoạn cậu nối dài hơn hay ngắn hơn 6 cm nhỉ?",
+          "E nằm ở vạch 0, vậy F phải nằm ở vạch số mấy?",
+          "Đếm số xăng-ti-mét từ E đến điểm cậu vừa nối xem."
         ]
       },
       "answer": {
         "edges": [
           [
-            "diem-a",
-            "vach-5"
+            "diem-e",
+            "vach-6"
           ]
         ]
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "do-dai-doan-bc",
-      "title": "Đoạn BC dài bao nhiêu",
-      "goTo": "Lên giàn đèn sân khấu, chú Phong cầm sợi dây đèn AC",
+      "title": "Đoạn YZ dài bao nhiêu",
+      "goTo": "Lên giàn đèn sân khấu, chú Phong cầm sợi dây đèn XZ",
       "target": "toan2-cd7-b34-chu-phong",
       "kind": "riddle",
-      "question": "Sợi dây đèn AC dài 13 cm, điểm B nằm trên AC, đoạn AB dài 6 cm. a) Tính độ dài đoạn thẳng BC.",
+      "question": "Sợi dây đèn XZ dài 17 cm. Điểm Y nằm trên sợi dây, đoạn XY dài 9 cm. Hỏi đoạn thẳng YZ dài bao nhiêu xăng-ti-mét?",
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-2-a"
-      ],
       "support": {
         "guide": [
-          "AB và BC ghép lại thành AC.",
-          "Lấy cả đoạn AC trừ đi phần AB."
+          "Hai đoạn XY và YZ nối liền nhau thành cả sợi dây XZ.",
+          "Lấy chiều dài cả sợi dây bớt đi phần XY."
         ],
-        "hint": "6 cộng mấy thì được 13?",
+        "hint": "9 cộng mấy thì được 17?",
         "answer": {
-          "text": "7 cm",
-          "explanation": "AB + BC = AC, tức 6 + ? = 13, nên BC = 13 – 6 = 7 cm."
+          "text": "8 cm",
+          "explanation": "XY + YZ = XZ, tức là 9 + ? = 17, nên YZ dài 17 – 9 = 8 (cm)."
         }
       },
       "feedback": {
         "right": [
-          "BC dài 7 cm, dây đèn treo vừa khít!",
-          "Cậu tìm ra phần còn thiếu nhanh như điện.",
-          "Đèn sân khấu bật sáng lấp lánh, tách tách!"
+          "YZ dài 8 cm, đoạn dây còn lại treo vừa khít!",
+          "Cậu tìm phần còn thiếu nhanh như bật công tắc đèn.",
+          "Chú Phong gật đầu, bóng đèn trên giàn nháy sáng liên hồi."
         ],
         "wrong": [
-          "Cả sợi dây dài 13 cm, đã có 6 cm rồi.",
-          "Thử tính 13 trừ 6 xem.",
-          "BC chỉ là một phần của AC thôi nhé."
+          "Cả sợi dây dài 17 cm, mà đoạn XY đã chiếm 9 cm rồi.",
+          "Thử lấy 17 bớt đi 9 xem sao.",
+          "YZ chỉ là một phần của sợi dây XZ thôi nhé."
         ]
       },
       "answer": {
-        "value": 7
-      }
+        "value": 8
+      },
+      "objective": "hinh-phang-ve-xep",
+      "expression": "17 - 9"
     },
     {
       "id": "duong-vien-gap-khuc",
-      "title": "Đường viền gấp khúc MNPQ",
+      "title": "Đường viền gấp khúc STUV",
       "goTo": "Xuống bậc lên sân khấu, Gấu Bum ôm cuộn ruy băng",
       "target": "toan2-cd7-b33-gau-bum",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Hươu Cao đo đường viền gấp khúc trên phông: MN dài 5 cm, NP dài 3 cm, PQ dài 6 cm.",
-      "template": "b) Đo rồi tính độ dài đường gấp khúc MNPQ.\nĐộ dài đường gấp khúc MNPQ là: 5 + 3 + 6 = {{b1}} (cm).",
+      "prompt": "Hươu Cao đo đường viền gấp khúc STUV trên phông: đoạn ST dài 4 cm, đoạn TU dài 6 cm, đoạn UV dài 7 cm. Tính cả đường viền dài bao nhiêu xăng-ti-mét.",
+      "template": "Đường gấp khúc STUV dài: 4 + 6 + 7 = {{b1}} (cm).",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o16",
+              "text": "16"
             },
             {
-              "id": "o14",
-              "text": "14"
+              "id": "o17",
+              "text": "17"
             },
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o18",
+              "text": "18"
             }
           ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-2-b"
-      ],
       "support": {
         "guide": [
-          "Độ dài đường gấp khúc bằng tổng độ dài các đoạn.",
-          "Cộng khúc đầu với khúc giữa trước, rồi thêm khúc cuối."
+          "Độ dài đường gấp khúc bằng tổng độ dài các đoạn của nó.",
+          "Cộng hai đoạn đầu với nhau, rồi cộng thêm đoạn cuối."
         ],
-        "hint": "5 + 3 = 8, rồi cộng tiếp 6.",
+        "hint": "4 + 6 = 10, rồi cộng thêm 7.",
         "answer": {
-          "text": "b) Đo rồi tính độ dài đường gấp khúc MNPQ.; Độ dài đường gấp khúc MNPQ là: 5 + 3 + 6 = 14 (cm).",
-          "explanation": "Đường gấp khúc MNPQ gồm MN, NP, PQ nên dài 5 + 3 + 6 = 14 (cm)."
+          "text": "Cả đường viền dài 17 cm.",
+          "explanation": "Đường gấp khúc STUV gồm ba đoạn ST, TU, UV nên dài 4 + 6 + 7 = 17 (cm)."
         }
       },
       "feedback": {
         "right": [
-          "Mười bốn xăng-ti-mét đường viền, Gấu Bum cắt ruy băng vừa đủ!",
-          "Cộng ba khúc liền một mạch, giỏi ghê.",
-          "Đường viền gấp khúc lượn quanh phông thật xinh."
+          "Mười bảy xăng-ti-mét đường viền, Gấu Bum cắt ruy băng vừa vặn!",
+          "Cộng ba đoạn liền một mạch, khéo ghê.",
+          "Đường viền gấp khúc ôm quanh phông trông thật xinh."
         ],
         "wrong": [
-          "Cộng cả ba đoạn MN, NP và PQ nhé.",
-          "5 + 3 trước, được bao nhiêu rồi cộng tiếp.",
-          "Đừng bỏ sót đoạn PQ ở cuối."
+          "Phải cộng đủ cả ba đoạn ST, TU và UV.",
+          "Cộng 4 với 6 trước, được bao nhiêu rồi cộng tiếp đoạn cuối.",
+          "Đừng bỏ sót đoạn UV ở cuối đường gấp khúc."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o14"
+          "b1": "o17"
         }
+      },
+      "objective": "hinh-phang-gap-khuc",
+      "expression": {
+        "b1": "4 + 6 + 7"
       }
     },
     {
@@ -957,7 +936,7 @@
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Dải trang trí lặp lại: hình tròn, hình thoi, hình thang, hình tam giác; hình tròn, hình thoi, hình thang, hình tam giác; hình tròn, ?, hình thang, hình tam giác. Các thẻ: A là hình tròn, B là hình thoi, C là hình thang, D là hình tam giác. Chọn hình thích hợp đặt vào dấu “?”. A. B. C. D.",
+      "prompt": "Dải trang trí trên phông lặp lại theo nhóm bốn hình: hình tam giác, hình tròn, hình vuông, hình thoi; rồi lại hình tam giác, hình tròn, hình vuông, hình thoi; đến nhóm thứ ba chỉ còn hình tam giác, hình tròn, một ô trống, hình thoi. Các thẻ hình: A là hình vuông, B là hình thoi, C là hình tam giác, D là hình tròn. Chọn thẻ để đặt vào ô trống.",
       "choices": [
         {
           "id": "a",
@@ -977,35 +956,33 @@
         }
       ],
       "skill": "logic",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-3"
-      ],
       "support": {
         "guide": [
-          "Tìm nhóm hình lặp đi lặp lại.",
-          "Hình đứng sau hình tròn trong mỗi nhóm là hình gì?"
+          "Tìm nhóm hình cứ lặp đi lặp lại trên dải.",
+          "Ô trống đứng sau hình tròn và trước hình thoi."
         ],
-        "hint": "Mỗi nhóm có 4 hình, luôn theo cùng một thứ tự.",
+        "hint": "Mỗi nhóm có bốn hình, luôn xếp theo cùng một thứ tự.",
         "answer": {
-          "text": "B",
-          "explanation": "Mỗi nhóm lặp lại: tròn, thoi, thang, tam giác. Chỗ trống đứng sau hình tròn nên là hình thoi (B)."
+          "text": "Thẻ A.",
+          "explanation": "Mỗi nhóm lặp lại theo thứ tự tam giác, tròn, vuông, thoi. Ô trống nằm sau hình tròn nên là hình vuông, tức thẻ A."
         }
       },
       "feedback": {
         "right": [
-          "Hình thoi vào chỗ, dải trang trí liền mạch rồi!",
-          "Cậu bắt được quy luật lặp lại ngay.",
-          "Hươu Cao dán hình thoi lên, vừa in."
+          "Hình vuông vào đúng chỗ, dải trang trí liền một mạch!",
+          "Cậu nhìn ra quy luật lặp lại ngay, Hươu Cao khen mãi.",
+          "Hươu Cao dán hình vuông vào ô trống, vừa như in."
         ],
         "wrong": [
           "Nhìn hai nhóm đầu: sau hình tròn là hình gì?",
-          "Dải hình lặp lại theo nhóm bốn hình đấy.",
-          "Hình thang đã có ở ngay sau chỗ trống rồi."
+          "Cả dải lặp lại theo từng nhóm bốn hình đấy.",
+          "Hình thoi đã đứng ngay sau ô trống rồi, ô trống phải là hình khác."
         ]
       },
       "answer": {
-        "choice": "b"
-      }
+        "choice": "a"
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "ghep-nua-o-vuong",
@@ -1013,37 +990,36 @@
       "goTo": "Ghé giàn đèn sân khấu, chú Phong xếp mảnh tam giác thành cây thông",
       "target": "toan2-cd7-b34-chu-phong",
       "kind": "riddle",
-      "question": "Hình A là một mảnh tam giác bằng nửa ô vuông. Hình B gồm hai ô vuông (một trên, một dưới) và hai nửa ô vuông ở hai bên ô trên. Dùng bao nhiêu hình A để xếp thành hình B?",
+      "question": "Hình A là một mảnh tam giác có diện tích bằng nửa ô vuông. Hình B được ghép từ hai ô vuông xếp cạnh nhau và ba nửa ô vuông xếp quanh chúng. Cần bao nhiêu mảnh hình A để xếp kín hình B?",
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-4"
-      ],
       "support": {
         "guide": [
-          "Mỗi ô vuông ghép được từ 2 hình A.",
-          "Mỗi nửa ô vuông là 1 hình A."
+          "Mỗi ô vuông ghép được từ 2 mảnh hình A.",
+          "Mỗi nửa ô vuông chính là 1 mảnh hình A."
         ],
-        "hint": "Hai ô vuông là 4 hình A, còn hai nửa ô nữa.",
+        "hint": "Hai ô vuông cần 4 mảnh, rồi cộng thêm ba nửa ô nữa.",
         "answer": {
-          "text": "6 hình A",
-          "explanation": "Hai ô vuông cần 2 + 2 = 4 hình A, hai nửa ô vuông cần thêm 2 hình A: tất cả 6 hình A."
+          "text": "7 mảnh",
+          "explanation": "Hai ô vuông cần 2 + 2 = 4 mảnh hình A, ba nửa ô vuông cần thêm 3 mảnh nữa, tất cả 4 + 3 = 7 mảnh."
         }
       },
       "feedback": {
         "right": [
-          "Sáu mảnh tam giác ghép thành cây thông trang trí!",
-          "Cậu tính cả nửa ô vuông, chuẩn không cần chỉnh.",
-          "Chú Phong xếp thử: đúng sáu mảnh thật!"
+          "Bảy mảnh tam giác xếp kín hình B, chú Phong xếp thử thấy vừa khít!",
+          "Cậu nhớ cộng cả ba nửa ô vuông, tính chuẩn không cần sửa.",
+          "Chú Phong ghép xong mảnh cuối cùng, hình B sáng bừng dưới đèn."
         ],
         "wrong": [
-          "Một ô vuông cần hai mảnh tam giác nhỏ đấy.",
-          "Đừng quên hai nửa ô vuông ở hai bên.",
-          "Đếm lại: hai ô vuông và hai nửa ô."
+          "Mỗi ô vuông cần hai mảnh tam giác nhỏ nhé.",
+          "Đừng quên ba nửa ô vuông xếp quanh hai ô vuông.",
+          "Đếm lại: hai ô vuông và ba nửa ô vuông."
         ]
       },
       "answer": {
-        "value": 6
-      }
+        "value": 7
+      },
+      "objective": "hinh-phang-ve-xep",
+      "expression": "2 + 2 + 1 + 1 + 1"
     },
     {
       "id": "phieu-ve-hinh",
@@ -1051,21 +1027,49 @@
       "goTo": "Về phông nền sân khấu, Hươu Cao cầm sẵn phiếu vẽ hình",
       "kind": "worksheet",
       "target": "huou-cao",
-      "lessonId": "toan2-t1-b34",
-      "text": "Hươu Cao gửi {name} phiếu thực hành về nhà: đo bốn đoạn thẳng, vẽ bốn hình theo mẫu trên lưới ô vuông, vẽ đoạn thẳng AB dài 5 cm, CD dài 7 cm, rồi đo và tính độ dài đường gấp khúc MNPQ bằng thước thật.",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-a1",
-        "toan2-t1-b34-luyen-tap-2-a2",
-        "toan2-t1-b34-luyen-tap-2-a3",
-        "toan2-t1-b34-luyen-tap-2-a4",
-        "toan2-t1-b34-luyen-tap-5-a",
-        "toan2-t1-b34-luyen-tap-5-b",
-        "toan2-t1-b34-luyen-tap-5-c",
-        "toan2-t1-b34-luyen-tap-5-d",
-        "toan2-t1-b34-luyen-tap-2-1-a",
-        "toan2-t1-b34-luyen-tap-2-1-b",
-        "toan2-t1-b34-luyen-tap-2-2-b"
-      ]
+      "text": "Hươu Cao gửi {name} một phiếu thực hành mang về nhà: đo các đoạn thẳng, kẻ đoạn thẳng EF dài 6 cm và GH dài 8 cm, rồi đo từng khúc của đường gấp khúc để tính xem cả đường dài bao nhiêu.",
+      "objective": "hinh-phang-ve-xep",
+      "sheet": {
+        "title": "Phiếu đo và vẽ của Hươu Cao",
+        "blocks": [
+          {
+            "kind": "activity",
+            "prompt": "Dùng thước kẻ đo từng đoạn thẳng Hươu Cao đã vẽ sẵn, ghi số đo xăng-ti-mét bên cạnh mỗi đoạn.",
+            "media": [
+              "Bốn đoạn thẳng vẽ sẵn trên phiếu",
+              "Một cây thước kẻ có vạch xăng-ti-mét"
+            ]
+          },
+          {
+            "kind": "activity",
+            "prompt": "Kẻ đoạn thẳng EF dài 6 cm và đoạn thẳng GH dài 8 cm bằng bút chì.",
+            "media": [
+              "Đoạn EF dài 6 cm",
+              "Đoạn GH dài 8 cm"
+            ]
+          },
+          {
+            "kind": "activity",
+            "prompt": "Đo từng khúc của đường gấp khúc ba khúc trên phiếu, rồi cộng các số đo để biết cả đường dài bao nhiêu xăng-ti-mét.",
+            "media": [
+              "Số đo khúc thứ nhất",
+              "Số đo khúc thứ hai",
+              "Số đo khúc thứ ba",
+              "Độ dài cả đường gấp khúc"
+            ]
+          },
+          {
+            "kind": "activity",
+            "prompt": "Vẽ lại bốn hình mẫu của Hươu Cao lên lưới ô vuông: một tam giác, một tứ giác, một đường gấp khúc và một hình năm cạnh.",
+            "media": [
+              "Hình tam giác",
+              "Hình tứ giác",
+              "Đường gấp khúc",
+              "Hình năm cạnh"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "dem-tam-giac-thi-tai",
@@ -1074,55 +1078,54 @@
       "target": "toan2-cd7-b33-gau-bum",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Thử thách cuối: Gấu Bum thách {name} đếm hình tam giác trên đỉnh phông, ai đúng được kéo màn! Hình tam giác lớn có hai đoạn thẳng đi từ đỉnh trên xuống cạnh đáy. Chọn câu trả lời đúng. Số hình tam giác có trong hình sau là: A. 3 B. 4 C. 5 D. 6",
+      "prompt": "Thử thách cuối: Gấu Bum thách {name} đếm các hình tam giác trên đỉnh phông, ai đếm đúng thì được kéo màn! Trên đỉnh phông là một hình vuông, hai đường chéo của nó chia hình vuông thành bốn tam giác nhỏ. Chọn số hình tam giác có trong hình.",
       "choices": [
         {
-          "id": "a-3",
-          "text": "A. 3"
+          "id": "a-4",
+          "text": "4"
         },
         {
-          "id": "b-4",
-          "text": "B. 4"
+          "id": "b-6",
+          "text": "6"
         },
         {
-          "id": "c-5",
-          "text": "C. 5"
+          "id": "c-8",
+          "text": "8"
         },
         {
-          "id": "d-6",
-          "text": "D. 6"
+          "id": "d-10",
+          "text": "10"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b34-luyen-tap-2-5"
-      ],
       "support": {
         "guide": [
           "Đếm các tam giác nhỏ trước.",
-          "Rồi đếm các tam giác ghép từ hai, từ ba hình nhỏ."
+          "Rồi đếm những tam giác lớn hơn, mỗi tam giác ghép từ hai tam giác nhỏ kề nhau."
         ],
-        "hint": "Có 3 tam giác nhỏ, 2 tam giác ghép đôi và 1 tam giác lớn.",
+        "hint": "Có 4 tam giác nhỏ, và có 4 cặp tam giác nhỏ kề nhau ghép được tam giác lớn.",
         "answer": {
-          "text": "D. 6",
-          "explanation": "Cạnh đáy chia làm 3 phần: 3 tam giác nhỏ, 2 tam giác ghép từ hai hình nhỏ, 1 tam giác lớn, tất cả 6 hình."
+          "text": "Có 8 hình tam giác.",
+          "explanation": "Hai đường chéo cho 4 tam giác nhỏ. Hai tam giác nhỏ kề nhau ghép thành một tam giác lớn hơn, có 4 cặp như vậy. Tất cả là 4 + 4 = 8 tam giác."
         }
       },
       "feedback": {
         "right": [
-          "Sáu tam giác! {name} thắng, màn nhung kéo lên rộn ràng!",
-          "Gấu Bum đếm được có 3 thôi, cậu thắng đẹp.",
-          "Đếm cả tam giác ghép, cậu đúng là cao thủ hình học."
+          "Tám tam giác! {name} thắng cuộc, màn nhung kéo lên rộn ràng!",
+          "Gấu Bum chỉ đếm được bốn cái thôi, cậu đếm hơn hẳn cả tam giác ghép.",
+          "Đếm cả tam giác nhỏ lẫn tam giác ghép, cậu đúng là cao thủ hình học."
         ],
         "wrong": [
-          "Còn tam giác ghép từ hai hình nhỏ nữa đấy.",
-          "Đừng quên hình tam giác lớn bao quanh tất cả.",
-          "Gấu Bum cũng đếm thiếu như thế, đếm lại nào!"
+          "Còn những tam giác ghép từ hai tam giác nhỏ nữa đấy.",
+          "Gấu Bum cũng đếm thiếu như thế, cùng đếm lại nào!",
+          "Có 4 tam giác nhỏ, đếm thêm các tam giác ghép từ hai hình kề nhau."
         ]
       },
       "answer": {
-        "choice": "d-6"
-      }
+        "choice": "c-8"
+      },
+      "objective": "hinh-phang-nhan-dien",
+      "expression": "4 + 4"
     },
     {
       "id": "huy-hieu-dung-phong",

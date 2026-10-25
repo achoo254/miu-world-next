@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Hươu Cao vẽ chòm sao",
   "status": "active",
-  "lesson": "toan2-t1-b25",
   "topic": "hinh-phang",
   "summary": "Hươu Cao muốn vẽ một chòm sao thật to lên giá vẽ trong phòng vẽ của lâu đài, nhưng cổ dài quá nên chấm nào cũng lệch; {name} cùng Hươu Cao, Cáo Bạch ở bàn thước kẻ và Bác Ngân ở góc bản đồ sao gọi tên điểm, đoạn thẳng, đường thẳng, đường cong, tìm ba điểm thẳng hàng, rồi ra ô cửa cùng Thỏ Bi ngắm sân hình khối.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Lâu đài, phòng vẽ bên sân hình khối: giá vẽ lớn, góc bản đồ sao, bàn thước kẻ, ô cửa nhìn xuống sân",
     "goal": "Giúp Hươu Cao vẽ xong bức tranh chòm sao trên giá vẽ",
     "play": "Tìm đồ vẽ, phân loại điểm và đoạn thẳng, chọn nhiều, nối chòm sao, đọc thước, phân loại đường thẳng và đường cong, nói điều nhìn thấy",
-    "learn": "Toán 2 Bài 25: điểm, đoạn thẳng, đường thẳng, đường cong, ba điểm thẳng hàng",
+    "learn": "Điểm, đoạn thẳng, đường thẳng, đường cong, ba điểm thẳng hàng",
     "reward": "80 XP, 15 xu, Hình phẳng +2",
-    "next": "Bài 26 \"Đường gấp khúc. Hình tứ giác\""
+    "next": "Đường gấp khúc và hình tứ giác"
   },
   "phases": {
     "hook": "huou-cham-lech",
@@ -143,7 +142,7 @@
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Trên giá vẽ, Hươu Cao kẻ đoạn thẳng AB, đoạn thẳng CD rồi chấm thêm hai điểm G và H đứng lẻ loi. a) Kể tên các điểm trong hình vẽ. b) Kể tên các đoạn thẳng trong hình vẽ. Xếp mỗi tên vào đúng nhóm.",
+      "prompt": "Hươu Cao kẻ đoạn thẳng PQ và đoạn thẳng RS trên giá vẽ, rồi chấm thêm hai điểm K và L đứng riêng, chưa nối với nhau. Hãy xếp từng tên vào đúng nhóm: điểm, đoạn thẳng, hay không có trong hình.",
       "groups": [
         {
           "id": "nhom-diem",
@@ -160,93 +159,90 @@
       ],
       "items": [
         {
-          "id": "ten-a",
-          "label": "A"
+          "id": "ten-p",
+          "label": "P"
         },
         {
-          "id": "ten-b",
-          "label": "B"
+          "id": "ten-q",
+          "label": "Q"
         },
         {
-          "id": "ten-c",
-          "label": "C"
+          "id": "ten-r",
+          "label": "R"
         },
         {
-          "id": "ten-d",
-          "label": "D"
+          "id": "ten-s",
+          "label": "S"
         },
         {
-          "id": "ten-g",
-          "label": "G"
+          "id": "ten-k",
+          "label": "K"
         },
         {
-          "id": "ten-h",
-          "label": "H"
+          "id": "ten-l",
+          "label": "L"
         },
         {
-          "id": "ten-ab",
-          "label": "AB"
+          "id": "ten-pq",
+          "label": "PQ"
         },
         {
-          "id": "ten-cd",
-          "label": "CD"
+          "id": "ten-rs",
+          "label": "RS"
         },
         {
-          "id": "ten-e",
-          "label": "E"
+          "id": "ten-t",
+          "label": "T"
         },
         {
-          "id": "ten-gh",
-          "label": "GH"
+          "id": "ten-kl",
+          "label": "KL"
         },
         {
-          "id": "ten-ac",
-          "label": "AC"
+          "id": "ten-pr",
+          "label": "PR"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-1-a",
-        "toan2-t1-b25-hoat-dong-1-b"
-      ],
       "support": {
         "guide": [
-          "Hai đầu của một đoạn thẳng cũng là hai điểm.",
-          "Chỉ những nét Hươu Cao đã kẻ bằng thước mới là đoạn thẳng."
+          "Hai đầu của một đoạn thẳng cũng là hai điểm của hình.",
+          "Chỉ những nét Hươu Cao đã kẻ thẳng bằng thước mới được gọi là đoạn thẳng."
         ],
-        "hint": "Có sáu điểm: bốn điểm là đầu hai đoạn thẳng, thêm G và H.",
+        "hint": "Bốn điểm là đầu của hai đoạn thẳng, thêm hai điểm đứng riêng K và L.",
         "answer": {
-          "text": "Điểm: A, B, C, D, G, H; Đoạn thẳng: AB, CD",
-          "explanation": "Các điểm là A, B, C, D, G, H; các đoạn thẳng là AB, CD. G và H chưa được nối nên GH không phải đoạn thẳng trong hình."
+          "text": "Điểm: P, Q, R, S, K, L; Đoạn thẳng: PQ, RS",
+          "explanation": "Hình có sáu điểm P, Q, R, S, K, L và hai đoạn thẳng PQ, RS. K và L chưa được nối nên KL không phải đoạn thẳng trong hình; hình cũng không có điểm T hay nét PR."
         }
       },
       "feedback": {
         "right": [
-          "Sáu điểm, hai đoạn thẳng, không sót cái nào. Hươu Cao gật gù tới tận trần nhà!",
-          "Cậu không mắc bẫy GH chưa nối, tinh ghê!",
-          "Bức tranh bắt đầu có hình chòm sao rồi đấy."
+          "Sáu điểm và hai đoạn thẳng đều có chỗ đứng, Hươu Cao gật đầu chạm cả trần nhà!",
+          "Cậu không mắc bẫy KL chưa được nối, mắt tinh thật.",
+          "Giá vẽ bắt đầu thấy hình dáng của chòm sao rồi."
         ],
         "wrong": [
-          "Đầu của đoạn thẳng cũng là một điểm, đừng bỏ sót nhé.",
-          "Hai điểm G và H đã được nối với nhau chưa nhỉ?",
-          "Trong hình có điểm E không? Nhìn lại giá vẽ xem."
+          "Hai đầu của một đoạn thẳng cũng là điểm, đừng bỏ sót chúng nhé.",
+          "K và L đã có nét nào nối với nhau chưa? Nhìn lại giá vẽ xem.",
+          "Trong hình có điểm T không? Đối chiếu từng tên với bức vẽ."
         ]
       },
       "answer": {
         "assignment": {
-          "ten-a": "nhom-diem",
-          "ten-b": "nhom-diem",
-          "ten-c": "nhom-diem",
-          "ten-d": "nhom-diem",
-          "ten-g": "nhom-diem",
-          "ten-h": "nhom-diem",
-          "ten-ab": "nhom-doan-thang",
-          "ten-cd": "nhom-doan-thang",
-          "ten-e": "nhom-khong-co-trong-hinh",
-          "ten-gh": "nhom-khong-co-trong-hinh",
-          "ten-ac": "nhom-khong-co-trong-hinh"
+          "ten-p": "nhom-diem",
+          "ten-q": "nhom-diem",
+          "ten-r": "nhom-diem",
+          "ten-s": "nhom-diem",
+          "ten-k": "nhom-diem",
+          "ten-l": "nhom-diem",
+          "ten-pq": "nhom-doan-thang",
+          "ten-rs": "nhom-doan-thang",
+          "ten-t": "nhom-khong-co-trong-hinh",
+          "ten-kl": "nhom-khong-co-trong-hinh",
+          "ten-pr": "nhom-khong-co-trong-hinh"
         }
-      }
+      },
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "canh-chom-sao-tam-giac",
@@ -254,60 +250,58 @@
       "target": "toan2-cd5-b25-bac-ngan",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Hươu Cao vẽ chòm sao đầu tiên hình tam giác có ba đỉnh M, N, P. Kể tên các đoạn thẳng trong mỗi hình vẽ sau: a) Chọn tất cả các đoạn thẳng.",
+      "prompt": "Chòm sao thứ nhất của Hươu Cao có ba ngôi sao X, Y, Z nối với nhau thành một hình tam giác. Chọn tất cả những tên gọi là đoạn thẳng nằm trong hình.",
       "choices": [
         {
-          "id": "mn",
-          "text": "MN"
+          "id": "xy",
+          "text": "XY"
         },
         {
-          "id": "np",
-          "text": "NP"
+          "id": "yz",
+          "text": "YZ"
         },
         {
-          "id": "mp",
-          "text": "MP"
+          "id": "xz",
+          "text": "XZ"
         },
         {
-          "id": "mnp",
-          "text": "MNP"
+          "id": "xyz",
+          "text": "XYZ"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-2-a"
-      ],
       "support": {
         "guide": [
           "Mỗi cạnh của hình tam giác là một đoạn thẳng.",
-          "Tên đoạn thẳng gồm hai chữ cái là hai đầu của nó."
+          "Tên đoạn thẳng gồm hai chữ cái, là tên của hai đầu."
         ],
-        "hint": "Tam giác có ba cạnh, nên có ba đoạn thẳng.",
+        "hint": "Tam giác có ba cạnh, tức ba đoạn thẳng.",
         "answer": {
-          "text": "MN, NP, MP",
-          "explanation": "Ba đoạn thẳng là MN, NP, MP. MNP là tên của cả hình tam giác, không phải một đoạn thẳng."
+          "text": "XY, YZ, XZ",
+          "explanation": "Ba đoạn thẳng là XY, YZ, XZ. XYZ là tên của cả hình tam giác, chứ không phải của một đoạn thẳng."
         }
       },
       "feedback": {
         "right": [
-          "Ba cạnh tam giác lấp lánh như ba tia sao băng!",
-          "Đúng cả ba, Hươu Cao tô ngay màu vàng óng.",
-          "MNP chỉ là tên cả hình thôi, cậu phân biệt giỏi quá."
+          "Ba cạnh sáng lên như ba tia sao băng nối nhau!",
+          "Hươu Cao tô ngay màu vàng óng cho cả ba nét.",
+          "XYZ chỉ là tên cả hình, cậu phân biệt rất khéo."
         ],
         "wrong": [
-          "Tên đoạn thẳng chỉ có hai chữ cái thôi nhé.",
-          "Tam giác có mấy cạnh? Còn thiếu một cạnh kìa.",
-          "Đếm lại đi: mỗi cạnh nối hai đỉnh là một đoạn thẳng."
+          "Một đoạn thẳng chỉ cần hai chữ cái, không hơn.",
+          "Tam giác có mấy cạnh nhỉ? Hình như còn thiếu một nét.",
+          "Mỗi cạnh nối hai ngôi sao với nhau là một đoạn thẳng, đếm lại nhé."
         ]
       },
       "answer": {
         "choices": [
-          "mn",
-          "np",
-          "mp"
+          "xy",
+          "yz",
+          "xz"
         ]
       },
-      "goTo": "Sang góc bản đồ sao, Bác Ngân trải bản đồ, Hươu Cao thò cổ dài theo"
+      "goTo": "Sang góc bản đồ sao, Bác Ngân trải bản đồ, Hươu Cao thò cổ dài theo",
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "noi-chom-sao-gau",
@@ -315,76 +309,74 @@
       "target": "toan2-cd5-b25-bac-ngan",
       "kind": "challenge",
       "mechanic": "connect",
-      "prompt": "Chòm sao thứ hai có bốn ngôi sao A, B, C, D xếp như một con đường ngoằn ngoèo. Kể tên các đoạn thẳng trong mỗi hình vẽ sau: b) Trước hết, hãy nối A với B, B với C, C với D như hình trong sách.",
+      "prompt": "Chòm sao thứ hai có bốn ngôi sao K, L, M, N xếp thành một đường ngoằn ngoèo. Hãy kẻ lần lượt các nét: K nối L, L nối M, rồi M nối N.",
       "points": [
         {
-          "id": "a",
+          "id": "k",
           "x": 0,
-          "y": 4,
-          "label": "A"
+          "y": 1,
+          "label": "K"
         },
         {
-          "id": "b",
+          "id": "l",
           "x": 2,
-          "y": 0,
-          "label": "B"
+          "y": 4,
+          "label": "L"
         },
         {
-          "id": "c",
+          "id": "m",
           "x": 5,
-          "y": 3,
-          "label": "C"
+          "y": 1,
+          "label": "M"
         },
         {
-          "id": "d",
+          "id": "n",
           "x": 8,
-          "y": 0,
-          "label": "D"
+          "y": 4,
+          "label": "N"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-2-b"
-      ],
       "support": {
         "guide": [
           "Chạm vào một ngôi sao rồi chạm ngôi sao kế tiếp để kẻ một đoạn thẳng.",
-          "Đi lần lượt theo thứ tự chữ cái A, B, C, D."
+          "Đi theo thứ tự K, L, M, N, không quay ngược lại."
         ],
-        "hint": "Cần kẻ đúng ba nét: từ A sang B, từ B sang C, từ C sang D.",
+        "hint": "Chỉ cần ba nét: K tới L, L tới M, M tới N.",
         "answer": {
-          "text": "AB, BC, CD",
-          "explanation": "Hình b) là đường đi qua bốn điểm A, B, C, D nên gồm ba đoạn thẳng AB, BC, CD."
+          "text": "KL, LM, MN",
+          "explanation": "Đường đi qua bốn điểm K, L, M, N gồm ba đoạn thẳng KL, LM và MN."
         }
       },
       "feedback": {
         "right": [
-          "Chòm sao ngoằn ngoèo hiện lên, Hươu Cao reo: giống con rắn sao trời!",
-          "Ba nét kẻ thẳng tắp, không nét nào nối lung tung.",
-          "Bác Ngân huýt sáo: nối sao còn khéo hơn bác nối dây nhảy."
+          "Chòm sao ngoằn ngoèo hiện ra, Hươu Cao reo lên: giống chú rắn bay!",
+          "Ba nét thẳng tắp, không nét nào nối lung tung.",
+          "Bác Ngân huýt sáo: nối sao mà khéo hơn cả bác xâu hạt."
         ],
         "wrong": [
-          "Có một nét đang nối nhảy cóc qua một ngôi sao rồi.",
-          "Nối theo thứ tự A, B, C, D thôi nhé, đừng vòng về A.",
-          "Còn thiếu một nét để đi hết bốn ngôi sao kìa."
+          "Có một nét đang nhảy cóc qua mất một ngôi sao.",
+          "Đi theo thứ tự K, L, M, N thôi, đừng vòng ngược về K.",
+          "Còn thiếu một nét để đi đủ bốn ngôi sao."
         ]
       },
       "answer": {
         "edges": [
           [
-            "a",
-            "b"
+            "k",
+            "l"
           ],
           [
-            "b",
-            "c"
+            "l",
+            "m"
           ],
           [
-            "c",
-            "d"
+            "m",
+            "n"
           ]
         ]
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "ten-doan-chom-sao",
@@ -392,64 +384,62 @@
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Nhìn chòm sao vừa nối. Kể tên các đoạn thẳng trong mỗi hình vẽ sau: b) Chọn tất cả các đoạn thẳng.",
+      "prompt": "Nhìn chòm sao vừa nối. Chọn tất cả những tên gọi là đoạn thẳng có trong hình.",
       "choices": [
         {
-          "id": "ab",
-          "text": "AB"
+          "id": "kl",
+          "text": "KL"
         },
         {
-          "id": "bc",
-          "text": "BC"
+          "id": "lm",
+          "text": "LM"
         },
         {
-          "id": "cd",
-          "text": "CD"
+          "id": "mn",
+          "text": "MN"
         },
         {
-          "id": "ac",
-          "text": "AC"
+          "id": "km",
+          "text": "KM"
         },
         {
-          "id": "abcd",
-          "text": "ABCD"
+          "id": "klmn",
+          "text": "KLMN"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-2-b"
-      ],
       "support": {
         "guide": [
-          "Mỗi nét em vừa nối là một đoạn thẳng.",
-          "A và C không được nối trực tiếp với nhau."
+          "Mỗi nét em vừa kẻ là một đoạn thẳng.",
+          "K và M không được nối trực tiếp với nhau."
         ],
-        "hint": "Có ba nét nên có ba đoạn thẳng.",
+        "hint": "Em đã kẻ ba nét nên có ba đoạn thẳng.",
         "answer": {
-          "text": "AB, BC, CD",
-          "explanation": "Các đoạn thẳng là AB, BC, CD. AC không được kẻ; ABCD là tên cả con đường."
+          "text": "KL, LM, MN",
+          "explanation": "Các đoạn thẳng là KL, LM, MN. KM không được kẻ; KLMN là tên của cả con đường."
         }
       },
       "feedback": {
         "right": [
-          "Ba tên gọi chuẩn như ba nét bút của cậu!",
-          "Hươu Cao ghi tên từng nét lên góc tranh, đẹp quá.",
-          "Không nhầm AC chút nào, mắt cậu sáng như sao."
+          "Ba tên gọi khớp với ba nét bút của cậu!",
+          "Hươu Cao ghi từng tên lên góc tranh, nét chữ nghiêng nghiêng.",
+          "Không chọn nhầm KM, mắt cậu sáng như sao."
         ],
         "wrong": [
-          "A và C có nét kẻ nào nối thẳng với nhau không?",
-          "ABCD là tên cả đường đi, chưa phải một đoạn thẳng.",
-          "Đếm số nét em đã kẻ, rồi gọi tên từng nét nhé."
+          "Giữa K và M có nét kẻ thẳng nào không?",
+          "KLMN là tên cả đường đi, chưa phải một đoạn thẳng.",
+          "Đếm số nét đã kẻ rồi gọi tên từng nét."
         ]
       },
       "answer": {
         "choices": [
-          "ab",
-          "bc",
-          "cd"
+          "kl",
+          "lm",
+          "mn"
         ]
       },
-      "goTo": "Về giá vẽ lớn, Hươu Cao cúi cổ ngắm chòm sao vừa nối"
+      "goTo": "Về giá vẽ lớn, Hươu Cao cúi cổ ngắm chòm sao vừa nối",
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "doc-thuoc-cua-khi",
@@ -457,15 +447,15 @@
       "target": "toan2-cd5-b25-cao-bach",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Cáo Bạch đặt thước dưới từng đoạn thẳng, vạch 0 trùng điểm đầu. Đầu N chạm vạch đứng ngay sau vạch 6; đầu Q chạm vạch đứng ngay trước vạch 10. Số ? Dùng thước đo độ dài đoạn thẳng (theo mẫu).",
-      "template": "a) Mẫu: Đoạn thẳng AB dài 5 cm.\nb) Đoạn thẳng MN dài {{b1}} cm.\nb) Đoạn thẳng PQ dài {{b2}} cm.",
+      "prompt": "Cáo Bạch đặt thước dưới từng đoạn thẳng, vạch 0 trùng với đầu trái. Đầu phải của đoạn GH chạm vạch đứng ngay sau vạch 7; đầu phải của đoạn KL chạm vạch đứng ngay trước vạch 5. Hãy đọc số đo của từng đoạn.",
+      "template": "Đoạn thẳng mẫu EF dài 6 cm.\nĐoạn thẳng GH dài {{b1}} cm.\nĐoạn thẳng KL dài {{b2}} cm.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o8",
+              "text": "8"
             },
             {
               "id": "o9",
@@ -481,67 +471,84 @@
           "id": "b2",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o4",
+              "text": "4"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o14",
+              "text": "14"
             }
           ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-3-b1",
-        "toan2-t1-b25-hoat-dong-3-b2"
-      ],
       "support": {
         "guide": [
-          "Khi vạch 0 trùng đầu đoạn thẳng, số ở đầu kia chính là độ dài.",
-          "Vạch ngay sau 6 là 7, vạch ngay trước 10 là 9."
+          "Khi vạch 0 trùng đầu đoạn thẳng, số ở đầu còn lại chính là độ dài.",
+          "Vạch ngay sau 7 là 8, vạch ngay trước 5 là 4."
         ],
         "hint": "Đọc số ở vạch mà đầu còn lại của đoạn thẳng chạm vào.",
         "answer": {
-          "text": "a) Mẫu: Đoạn thẳng AB dài 5 cm.; b) Đoạn thẳng MN dài 7 cm.; b) Đoạn thẳng PQ dài 9 cm.",
-          "explanation": "Đầu N chạm vạch 7 nên MN dài 7 cm; đầu Q chạm vạch 9 nên PQ dài 9 cm."
+          "text": "GH dài 8 cm; KL dài 4 cm",
+          "explanation": "Đầu của GH chạm vạch 8 nên GH dài 8 cm; đầu của KL chạm vạch 4 nên KL dài 4 cm."
         }
       },
       "feedback": {
         "right": [
-          "Đọc thước chuẩn từng xăng-ti-mét, Cáo Bạch giơ ngón cái!",
-          "Bảy và chín, không lệch một li nào.",
-          "Hươu Cao xin học cậu cách đọc thước luôn đấy."
+          "Con số trên thước được cậu đọc trúng phóc, Cáo Bạch phấn khởi vẫy đuôi!",
+          "Hai số đo đều chính xác, cây thước như sáng lên.",
+          "Hươu Cao cúi cổ xuống tận bàn thước để xem {name} đọc số."
         ],
         "wrong": [
-          "Vạch ngay sau vạch 6 là vạch số mấy nhỉ?",
-          "Nhớ vạch 0 đặt ở điểm đầu, không phải vạch 1 đâu.",
-          "Vạch ngay trước 10 thì bé hơn 10 một đơn vị đó."
+          "Vạch ngay sau vạch 7 là vạch số mấy nhỉ?",
+          "Nhớ đặt vạch 0 ở điểm đầu của đoạn thẳng, không phải vạch 1.",
+          "Vạch ngay trước vạch 5 thì nhỏ hơn 5 đúng một đơn vị."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o7",
-          "b2": "o9"
+          "b1": "o8",
+          "b2": "o4"
         }
       },
-      "goTo": "Ra bàn thước kẻ, Cáo Bạch đặt sẵn thước dưới từng đoạn thẳng"
+      "goTo": "Ra bàn thước kẻ, Cáo Bạch đặt sẵn thước dưới từng đoạn thẳng",
+      "objective": "hinh-phang-ve-xep",
+      "expression": {
+        "b1": "7 + 1",
+        "b2": "5 - 1"
+      }
     },
     {
       "id": "phieu-do-doan-thang",
       "title": "Phiếu đo đoạn thẳng",
       "kind": "worksheet",
       "target": "toan2-cd5-b25-cao-bach",
-      "lessonId": "toan2-t1-b25",
-      "text": "Về nhà lấy thước kẻ của mình, đặt vạch 0 trùng đầu đoạn thẳng rồi đo đoạn thẳng MN và PQ in trên phiếu, viết số đo vào ô trống.",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-3-b1",
-        "toan2-t1-b25-hoat-dong-3-b2"
-      ]
+      "text": "Về nhà lấy thước kẻ của mình, đặt vạch 0 trùng đầu đoạn thẳng rồi đo hai đoạn thẳng GH và KL in trên phiếu, viết số đo vào chỗ trống. Thử vẽ thêm một đoạn thẳng dài 6 cm nữa nhé!",
+      "objective": "hinh-phang-ve-xep",
+      "sheet": {
+        "title": "Phiếu thước kẻ: đo hai đoạn và vẽ một đoạn",
+        "blocks": [
+          {
+            "kind": "activity",
+            "prompt": "Dùng thước kẻ, đặt vạch 0 trùng với một đầu của đoạn thẳng rồi đọc số ở đầu còn lại. Ghi số đo vào chỗ trống.",
+            "media": [
+              "Đoạn thẳng GH dài ... cm",
+              "Đoạn thẳng KL dài ... cm"
+            ]
+          },
+          {
+            "kind": "activity",
+            "prompt": "Tự vẽ bằng thước: chấm điểm E, đo sang phải đúng 6 cm rồi chấm điểm F và nối lại.",
+            "media": [
+              "Đoạn thẳng EF dài 6 cm"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "thang-tap-hay-uon-luon",
@@ -599,7 +606,7 @@
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Trên tranh có đường thẳng đi qua B và C, đường thẳng đi qua D và E, và hai đường cong mang tên x, y. a) Kể tên các đường thẳng trong hình vẽ. b) Kể tên các đường cong trong hình vẽ.",
+      "prompt": "Trên tranh có một đường thẳng đi qua hai điểm U và V, một đường thẳng khác đi qua hai điểm W và Z, cùng hai đường cong mang tên x và y. Hãy xếp từng tên vào nhóm đường thẳng hoặc đường cong.",
       "groups": [
         {
           "id": "nhom-duong-thang",
@@ -616,54 +623,51 @@
           "label": "x"
         },
         {
-          "id": "duong-bc",
-          "label": "BC"
+          "id": "duong-uv",
+          "label": "UV"
         },
         {
           "id": "duong-y",
           "label": "y"
         },
         {
-          "id": "duong-de",
-          "label": "DE"
+          "id": "duong-wz",
+          "label": "WZ"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-2-1-a",
-        "toan2-t1-b25-hoat-dong-2-1-b"
-      ],
       "support": {
         "guide": [
-          "Đường thẳng được đặt tên theo hai điểm nằm trên nó.",
+          "Đường thẳng được gọi tên theo hai điểm nằm trên nó.",
           "Đường cong uốn lượn được đặt tên bằng chữ thường như x, y."
         ],
-        "hint": "BC và DE kẻ bằng thước; x và y uốn lượn.",
+        "hint": "UV và WZ kẻ bằng thước; x và y uốn lượn.",
         "answer": {
-          "text": "Đường thẳng: BC, DE; Đường cong: x, y",
-          "explanation": "Các đường thẳng là BC, DE; các đường cong là x, y."
+          "text": "Đường thẳng: UV, WZ; Đường cong: x, y",
+          "explanation": "Các đường thẳng là UV và WZ; các đường cong là x và y."
         }
       },
       "feedback": {
         "right": [
-          "Hai tia thẳng, hai dải lượn, bầu trời tranh đẹp lung linh!",
+          "Hai tia thẳng, hai dải lượn, bầu trời trong tranh lung linh hẳn lên!",
           "Cậu phân biệt thẳng với cong nhanh như chớp.",
-          "Hươu Cao vẽ thêm mặt trăng để mừng cậu đấy."
+          "Hươu Cao vẽ thêm vầng trăng nhỏ để thưởng cho cậu."
         ],
         "wrong": [
-          "Đường nào kẻ được bằng thước thì là đường thẳng.",
-          "x và y uốn éo như con giun, chúng là đường gì nhỉ?",
-          "Có một tên đang đứng nhầm nhóm rồi, nhìn kĩ lại."
+          "Nét nào kẻ được bằng thước thì là đường thẳng.",
+          "x và y uốn éo như sợi dây, vậy chúng thuộc nhóm nào?",
+          "Có một tên đang đứng nhầm nhóm, nhìn kĩ lại nhé."
         ]
       },
       "answer": {
         "assignment": {
           "duong-x": "nhom-duong-cong",
-          "duong-bc": "nhom-duong-thang",
+          "duong-uv": "nhom-duong-thang",
           "duong-y": "nhom-duong-cong",
-          "duong-de": "nhom-duong-thang"
+          "duong-wz": "nhom-duong-thang"
         }
-      }
+      },
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "dung-sai-thang-hang",
@@ -671,51 +675,48 @@
       "target": "toan2-cd5-b25-cao-bach",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Cáo Bạch đặt hai cây thước: dọc mép thước thứ nhất có ba điểm A, B, C; dọc mép thước thứ hai có hai điểm E, G, còn điểm D nằm lệch ra ngoài. Đ, S ? Trong hình vẽ trên: Chọn câu đúng (Đ); câu không chọn là sai (S).",
+      "prompt": "Cáo Bạch đặt hai cây thước. Mép thước thứ nhất đi qua hai điểm R và S, còn điểm T nằm lệch ra ngoài mép. Dọc mép thước thứ hai có ba điểm O, P, Q. Chọn những câu nói đúng; câu nào không chọn là câu sai.",
       "choices": [
         {
-          "id": "a-ba-diem-a-b-c-thang-hang",
-          "text": "a) Ba điểm A, B, C thẳng hàng."
+          "id": "ba-diem-r-s-t",
+          "text": "Ba điểm R, S, T thẳng hàng."
         },
         {
-          "id": "b-ba-diem-d-e-g-thang-hang",
-          "text": "b) Ba điểm D, E, G thẳng hàng."
+          "id": "ba-diem-o-p-q",
+          "text": "Ba điểm O, P, Q thẳng hàng."
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-2-2-a",
-        "toan2-t1-b25-hoat-dong-2-2-b"
-      ],
       "support": {
         "guide": [
           "Ba điểm thẳng hàng khi cùng nằm trên một đường thẳng.",
           "Đặt thước qua hai điểm, xem điểm thứ ba có nằm trên mép thước không."
         ],
-        "hint": "Điểm D nằm lệch khỏi mép thước thứ hai.",
+        "hint": "Điểm T nằm lệch khỏi mép thước thứ nhất.",
         "answer": {
-          "text": "a) Đ; b) S",
-          "explanation": "A, B, C cùng nằm trên một mép thước nên thẳng hàng (Đ); D nằm ngoài đường thẳng qua E, G nên D, E, G không thẳng hàng (S)."
+          "text": "Chỉ câu về O, P, Q là đúng",
+          "explanation": "O, P, Q cùng nằm trên một mép thước nên thẳng hàng; T nằm ngoài đường thẳng qua R, S nên R, S, T không thẳng hàng."
         }
       },
       "feedback": {
         "right": [
-          "Đúng rồi, điểm D lạc đàn bị cậu phát hiện ngay!",
-          "Ba điểm thẳng hàng như ba chú lính gác đứng trên tường thành.",
-          "Cáo Bạch cất thước: bài này cậu nắm chắc rồi."
+          "Điểm T lạc đàn đã bị cậu phát hiện ngay!",
+          "Ba điểm trên cùng một mép thước đứng ngay hàng như ba chú lính gác.",
+          "Cáo Bạch cất thước vào hộp: bài này cậu nắm chắc rồi."
         ],
         "wrong": [
-          "Điểm D có nằm trên mép thước thứ hai không?",
+          "Điểm T có nằm trên mép thước thứ nhất không nhỉ?",
           "Ba điểm thẳng hàng phải cùng nằm trên một đường thẳng.",
-          "Câu về A, B, C có đúng không? Soi lại mép thước thứ nhất."
+          "Thử áp thước vào câu nói còn lại xem nó có đúng không."
         ]
       },
       "answer": {
         "choices": [
-          "a-ba-diem-a-b-c-thang-hang"
+          "ba-diem-o-p-q"
         ]
       },
-      "goTo": "Chạy sang bàn thước kẻ, Cáo Bạch đang xếp hai cây thước song song"
+      "goTo": "Chạy sang bàn thước kẻ, Cáo Bạch đang xếp hai cây thước song song",
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "bo-ba-thang-hang",
@@ -723,63 +724,61 @@
       "target": "huou-cao",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Hươu Cao vẽ hình tam giác ABC, chấm điểm M trên cạnh BC, kẻ đoạn thẳng AM rồi chấm điểm H trên đoạn AM. Kể tên ba điểm thẳng hàng có trong hình vẽ. Chọn tất cả các bộ ba thẳng hàng.",
+      "prompt": "Hươu Cao vẽ hình tam giác DEF, chấm điểm K trên cạnh EF, kẻ đoạn thẳng DK rồi chấm điểm L trên đoạn DK. Chọn tất cả các bộ ba điểm thẳng hàng có trong hình.",
       "choices": [
         {
-          "id": "a-h-m",
-          "text": "A, H, M"
+          "id": "d-l-k",
+          "text": "D, L, K"
         },
         {
-          "id": "b-m-c",
-          "text": "B, M, C"
+          "id": "e-k-f",
+          "text": "E, K, F"
         },
         {
-          "id": "a-b-c",
-          "text": "A, B, C"
+          "id": "d-e-f",
+          "text": "D, E, F"
         },
         {
-          "id": "a-h-c",
-          "text": "A, H, C"
+          "id": "d-l-f",
+          "text": "D, L, F"
         },
         {
-          "id": "b-h-m",
-          "text": "B, H, M"
+          "id": "e-l-k",
+          "text": "E, L, K"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-2-3"
-      ],
       "support": {
         "guide": [
           "Tìm những điểm cùng nằm trên một đoạn thẳng.",
-          "H nằm trên AM, M nằm trên BC."
+          "L nằm trên DK, K nằm trên EF."
         ],
-        "hint": "Có hai bộ ba: một bộ trên đoạn AM, một bộ trên cạnh BC.",
+        "hint": "Có hai bộ ba: một bộ trên đoạn DK, một bộ trên cạnh EF.",
         "answer": {
-          "text": "A, H, M; B, M, C",
-          "explanation": "A, H, M cùng nằm trên đoạn AM; B, M, C cùng nằm trên cạnh BC. Ba đỉnh A, B, C của tam giác không thẳng hàng."
+          "text": "D, L, K; E, K, F",
+          "explanation": "D, L, K cùng nằm trên đoạn DK; E, K, F cùng nằm trên cạnh EF. Ba đỉnh D, E, F của tam giác không thẳng hàng."
         }
       },
       "feedback": {
         "right": [
-          "Hai bộ ba thẳng hàng, tìm không sót bộ nào!",
-          "Cậu nhìn ra cả điểm H nấp giữa đoạn AM, giỏi quá.",
-          "Hươu Cao cúi cổ xuống tận nơi để vỗ tay cho cậu."
+          "Hai bộ ba thẳng hàng, tìm đủ không sót bộ nào!",
+          "Cậu nhìn ra cả điểm L nấp giữa đoạn DK, tinh mắt quá.",
+          "Hươu Cao cúi cổ thật thấp để vỗ tay mừng {name}."
         ],
         "wrong": [
-          "Ba đỉnh của tam giác có cùng nằm trên một đường thẳng đâu.",
-          "Còn một bộ ba nằm dọc cạnh BC chưa chọn kìa.",
-          "H có nằm trên cạnh BC không? Xem lại hình nhé."
+          "Ba đỉnh của hình tam giác không cùng nằm trên một đường thẳng.",
+          "Còn một bộ ba nằm dọc cạnh EF chưa được chọn.",
+          "L có nằm trên cạnh EF không? Xem lại hình nhé."
         ]
       },
       "answer": {
         "choices": [
-          "a-h-m",
-          "b-m-c"
+          "d-l-k",
+          "e-k-f"
         ]
       },
-      "goTo": "Về giá vẽ lớn, Hươu Cao vừa vẽ xong một hình tam giác to"
+      "goTo": "Về giá vẽ lớn, Hươu Cao vừa vẽ xong một hình tam giác to",
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "nhin-ra-san-truong",
@@ -787,15 +786,13 @@
       "goTo": "Ra ô cửa phòng vẽ, Thỏ Bi kiễng chân chỉ xuống sân hình khối",
       "kind": "speak",
       "target": "toan2-cd5-b25-tho-bi",
-      "prompt": "Dưới sân hình khối, ba bạn nhỏ đang nhảy dây giữa các khối đá, phía sau là hàng cây và dãy nhà có cửa sổ. Tìm một đường thẳng, một đường cong và ba cây thẳng hàng có trong hình dưới đây. Nói to cho Thỏ Bi nghe nhé.",
+      "prompt": "Thỏ Bi chỉ xuống sân hình khối: một bạn nhỏ đang đạp xe vòng quanh bồn hoa, xa xa là hàng cột đèn và dãy cửa sổ của lâu đài. Hãy kể cho Thỏ Bi nghe em thấy gì giống đường thẳng, gì giống đường cong, và những cột đèn nào đứng thẳng hàng với nhau.",
       "hints": [
-        "Mép viên gạch lát sân hay mép cửa sổ trông như đường gì?",
-        "Sợi dây nhảy đang uốn cong kìa.",
-        "Hàng cây phía sau sân có ba cây đứng thẳng một hàng."
+        "Mép bậc thềm hay khung cửa sổ trông như đường gì?",
+        "Vệt bánh xe quanh bồn hoa đang uốn cong kìa.",
+        "Hàng cột đèn phía xa có ba cột đứng thành một hàng."
       ],
-      "curriculumRef": [
-        "toan2-t1-b25-hoat-dong-2-4"
-      ]
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "huy-hieu-chom-sao",

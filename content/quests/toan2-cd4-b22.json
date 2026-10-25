@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Koala Lơ Mơ tặng bắp ngô",
   "status": "active",
-  "lesson": "toan2-t1-b22",
   "topic": "cong-tru-co-nho",
   "summary": "Koala Lơ Mơ muốn tặng bớt bắp ngô vừa bẻ cho các em nhỏ quanh vùng nhưng cứ ngủ gật giữa chừng; {name} chạy khắp nông trại học trừ có nhớ cùng Thỏ Ruy Băng ở chòi gói quà, Bác Huệ ở hàng rào hoa, Bác thủ kho Lâm ở kho thóc ba cánh cửa, rồi cùng Gấu Rô dắt Rô-bốt qua lưới số trên sân phơi.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Nông trại: ruộng ngô, chòi gói quà bên ruộng, hàng rào hoa, kho thóc ba cánh cửa, sân phơi kẻ ô số",
     "goal": "Gói xong quà bắp ngô tặng các em nhỏ trước khi Lơ Mơ ngủ quên",
     "play": "Tính trừ có nhớ, giải bài toán, cắm hoa vào lọ, tìm đường cho sóc, xếp ghế cho chú lùn, chọn kết quả đúng, dẫn Rô-bốt qua lưới số",
-    "learn": "Toán 2 Bài 22: phép trừ có nhớ số có hai chữ số cho số có một chữ số",
+    "learn": "Trừ có nhớ số có hai chữ số cho số có một chữ số: mượn một chục, đặt tính, tính nhẩm và giải bài toán",
     "reward": "90 XP, 15 xu, Phép trừ +2, Bài toán có lời văn +1",
-    "next": "Bài 23 \"Phép trừ (có nhớ) số có hai chữ số cho số có hai chữ số\""
+    "next": "Hổ Gừ và chuyến bay giấy: trừ có nhớ hai số có hai chữ số"
   },
   "phases": {
     "hook": "na-ngap-ngu",
@@ -45,19 +44,19 @@
       "lines": [
         {
           "speaker": "Bò Sữa Mơ",
-          "text": "Ò… {name} ơi, ra ruộng ngô giúp bác với. Lơ Mơ bẻ ngô từ sáng sớm, giờ chắc lại gà gật rồi."
+          "text": "Ò… {name} ơi, ra ruộng ngô phụ bác một tay. Lơ Mơ bẻ ngô từ lúc trời còn tờ mờ, giờ chắc đang gật gù rồi."
         },
         {
           "speaker": "Koala Lơ Mơ",
-          "text": "Ôi {name} đến rồi… Tớ định tặng bớt bắp ngô cho các em nhỏ quanh vùng, mà vừa đếm tới 42 thì… khò…"
+          "text": "Ơ, {name} tới rồi à… Tớ định tặng bớt ngô cho các em nhỏ quanh vùng, mà đếm đến 53 thì… khò…"
         },
         {
           "speaker": "Thỏ Ruy Băng",
-          "text": "Lơ Mơ ơi tỉnh dậy! Cậu gục đầu lên đúng bắp ngô thứ 43, râu ngô dính đầy mặt rồi kìa."
+          "text": "Lơ Mơ ơi dậy đi! Cậu úp mặt lên đúng bắp thứ 54 rồi, râu ngô dính đầy má kìa."
         },
         {
           "speaker": "Koala Lơ Mơ",
-          "text": "Hả? Ừ nhỉ. {name} giúp tớ tính tặng đi bao nhiêu thì còn lại bao nhiêu nhé, tớ hay quên lắm."
+          "text": "Hả? À ừ. {name} ơi, tặng đi mấy bắp thì còn lại mấy bắp, cậu tính giúp tớ nhé, tớ đãng trí lắm."
         }
       ],
       "choices": [
@@ -74,10 +73,10 @@
         "title": "Lơ Mơ yawns in the cornfield",
         "goTo": "Go to the cornfield, where Koala Lơ Mơ has dozed off hugging a corn cob",
         "lines": [
-          "Mooo... {name}, could you go to the cornfield and help? Lơ Mơ has been picking corn since dawn, and is probably nodding off again by now.",
-          "Oh, {name}'s here... I was going to give some corn to the little ones nearby, but I'd only counted to 42 when... zzz...",
-          "Wake up, Lơ Mơ! You fell asleep right on the 43rd cob, and you've got corn silk all over your face.",
-          "Huh? Oh, right. {name}, help me work out how many are left after I give some away, I'm very forgetful."
+          "Mooo... {name}, could you come to the cornfield and lend a hand? Lơ Mơ has been picking corn since before sunrise, and she's probably nodding off by now.",
+          "Oh, {name}'s here already... I wanted to give some corn to the little ones nearby, but I'd only counted to 53 when... zzz...",
+          "Wake up, Lơ Mơ! You've planted your face on the 54th cob, and there's corn silk stuck all over your cheek.",
+          "Huh? Oh, yes. {name}, if I give away a few cobs, how many are left? Please work it out, I'm so absent-minded."
         ],
         "choices": [
           {
@@ -99,11 +98,11 @@
       "lines": [
         {
           "speaker": "Thỏ Ruy Băng",
-          "text": "Có 4 bó, mỗi bó 10 bắp ngô, thêm 2 bắp lẻ: 42 bắp. Lơ Mơ muốn tặng 8 bắp."
+          "text": "Có 5 bó, mỗi bó 10 bắp, cộng thêm 3 bắp lẻ: tất cả 53 bắp. Lơ Mơ định gửi đi 7 bắp."
         },
         {
           "speaker": "Koala Lơ Mơ",
-          "text": "Nhưng chỉ có 2 bắp lẻ, làm sao lấy ra 8 bắp được? Hay là… mình ngủ một giấc rồi tính?"
+          "text": "Nhưng lẻ chỉ có đúng 3 bắp, sao lấy ra 7 bắp được? Hay mình chợp mắt một lát rồi tính?"
         }
       ],
       "choices": [
@@ -115,8 +114,8 @@
       "en": {
         "title": "Counting cobs in the field",
         "lines": [
-          "There are 4 bundles of 10 cobs each, plus 2 loose cobs: 42 cobs. Lơ Mơ wants to give away 8.",
-          "But there are only 2 loose cobs, how can we take out 8? Or maybe... we nap first and work it out after?"
+          "There are 5 bundles of 10 cobs each, plus 3 loose ones: 53 cobs altogether. Lơ Mơ wants to send off 7 cobs.",
+          "But only 3 are loose, so how can we take out 7? Maybe we should doze off for a bit and work it out afterwards?"
         ],
         "choices": [
           {
@@ -134,15 +133,15 @@
       "lines": [
         {
           "speaker": "Thỏ Ruy Băng",
-          "text": "Đặt tính 42 – 8: hàng đơn vị 2 không trừ được 8, mượn một chục thành 12. 12 trừ 8 bằng 4, viết 4, nhớ 1."
+          "text": "Viết 53 ở trên, 7 ở dưới cho thẳng cột đơn vị. 3 bé hơn 7 nên tháo một bó chục ra: 13 trừ 7 được 6, ghi 6."
         },
         {
           "speaker": "Thỏ Ruy Băng",
-          "text": "Hàng chục: 4 trừ 1 đã mượn còn 3, viết 3. Vậy 42 – 8 = 34."
+          "text": "Bó chục đã tháo thì hàng chục bớt đi một: 5 bớt 1 còn 4, ghi 4. Vậy 53 – 7 = 46."
         },
         {
           "speaker": "Koala Lơ Mơ",
-          "text": "Mượn rồi phải trả, giống tớ mượn gối bông của Thỏ vậy. Hì hì."
+          "text": "Mượn một bó rồi nhớ trừ đi, giống tớ mượn chăn của Thỏ mà phải giặt trả. Hì hì."
         }
       ],
       "choices": [
@@ -156,9 +155,9 @@
         "title": "Untie a ten to take away",
         "goTo": "Go to the gift-wrapping hut by the field, where Thỏ Ruy Băng is untying a bundle of ten cobs",
         "lines": [
-          "Set out 42 – 8 in columns: in the ones, you can't take 8 from 2, so borrow a ten to make 12. 12 take away 8 is 4, write 4, carry 1.",
-          "Tens: 4 take away the 1 we borrowed leaves 3, write 3. So 42 – 8 = 34.",
-          "If you borrow, you must give it back, like when I borrow Bunny's fluffy pillow. Hee hee."
+          "Write 53 on top and 7 underneath, with the ones lined up. 3 is smaller than 7, so untie a bundle of ten: 13 take away 7 is 6, write 6.",
+          "Once a bundle is untied, the tens lose one: 5 take away 1 leaves 4, write 4. So 53 – 7 = 46.",
+          "Borrow a bundle, then remember to take it off the tens, like borrowing Bunny's blanket that I must wash and give back. Hee hee."
         ],
         "choices": [
           {
@@ -174,23 +173,23 @@
       "target": "toan2-cd4-b22-tho-ruy-bang",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Mỗi phép trừ là một lần Lơ Mơ lấy bắp ngô ra khỏi bó.",
-      "template": "Tính.\n42 – 8 = {{b1}}   56 – 9 = {{b2}}   60 – 5 = {{b3}}   75 – 6 = {{b4}}\nĐặt tính rồi tính.\n64 – 8 = {{b5}}   70 – 7 = {{b6}}   83 – 4 = {{b7}}   41 – 5 = {{b8}}",
+      "prompt": "Thỏ Ruy Băng lấy bớt ngô cho từng túi quà; mỗi phép trừ là một lần lấy.",
+      "template": "Nhẩm rồi điền kết quả.\n51 – 6 = {{b1}}   37 – 8 = {{b2}}   80 – 3 = {{b3}}   94 – 5 = {{b4}}\nViết dọc rồi trừ.\n62 – 7 = {{b5}}   90 – 4 = {{b6}}   45 – 9 = {{b7}}   73 – 8 = {{b8}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o24",
-              "text": "24"
+              "id": "o35",
+              "text": "35"
             },
             {
-              "id": "o34",
-              "text": "34"
+              "id": "o45",
+              "text": "45"
             },
             {
-              "id": "o36",
-              "text": "36"
+              "id": "o55",
+              "text": "55"
             }
           ]
         },
@@ -198,16 +197,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o47",
-              "text": "47"
+              "id": "o21",
+              "text": "21"
             },
             {
-              "id": "o48",
-              "text": "48"
+              "id": "o29",
+              "text": "29"
             },
             {
-              "id": "o74",
-              "text": "74"
+              "id": "o39",
+              "text": "39"
             }
           ]
         },
@@ -215,16 +214,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o54",
-              "text": "54"
+              "id": "o73",
+              "text": "73"
             },
             {
-              "id": "o55",
-              "text": "55"
+              "id": "o77",
+              "text": "77"
             },
             {
-              "id": "o65",
-              "text": "65"
+              "id": "o87",
+              "text": "87"
             }
           ]
         },
@@ -232,16 +231,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o68",
-              "text": "68"
+              "id": "o81",
+              "text": "81"
             },
             {
-              "id": "o69",
-              "text": "69"
+              "id": "o89",
+              "text": "89"
             },
             {
-              "id": "o79",
-              "text": "79"
+              "id": "o99",
+              "text": "99"
             }
           ]
         },
@@ -249,29 +248,12 @@
           "id": "b5",
           "options": [
             {
-              "id": "o54",
-              "text": "54"
+              "id": "o45",
+              "text": "45"
             },
             {
               "id": "o55",
               "text": "55"
-            },
-            {
-              "id": "o56",
-              "text": "56"
-            }
-          ]
-        },
-        {
-          "id": "b6",
-          "options": [
-            {
-              "id": "o53",
-              "text": "53"
-            },
-            {
-              "id": "o63",
-              "text": "63"
             },
             {
               "id": "o65",
@@ -280,24 +262,24 @@
           ]
         },
         {
-          "id": "b7",
+          "id": "b6",
           "options": [
             {
-              "id": "o69",
-              "text": "69"
+              "id": "o84",
+              "text": "84"
             },
             {
-              "id": "o79",
-              "text": "79"
+              "id": "o86",
+              "text": "86"
             },
             {
-              "id": "o89",
-              "text": "89"
+              "id": "o96",
+              "text": "96"
             }
           ]
         },
         {
-          "id": "b8",
+          "id": "b7",
           "options": [
             {
               "id": "o34",
@@ -312,92 +294,109 @@
               "text": "46"
             }
           ]
+        },
+        {
+          "id": "b8",
+          "options": [
+            {
+              "id": "o55",
+              "text": "55"
+            },
+            {
+              "id": "o65",
+              "text": "65"
+            },
+            {
+              "id": "o75",
+              "text": "75"
+            }
+          ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-hoat-dong-1-a",
-        "toan2-t1-b22-hoat-dong-1-b",
-        "toan2-t1-b22-hoat-dong-1-c",
-        "toan2-t1-b22-hoat-dong-1-d",
-        "toan2-t1-b22-hoat-dong-2-a",
-        "toan2-t1-b22-hoat-dong-2-b",
-        "toan2-t1-b22-hoat-dong-2-c",
-        "toan2-t1-b22-hoat-dong-2-d"
-      ],
       "support": {
         "guide": [
-          "Hàng đơn vị không trừ được thì mượn 1 chục, rồi nhớ 1 vào hàng chục.",
-          "Số tròn chục như 60, 70: lấy 10 trừ đi số đơn vị."
+          "Chữ số đơn vị của số bị trừ bé hơn số trừ thì mượn một chục rồi mới trừ.",
+          "Số tròn chục như 80, 90 cũng mượn một chục: 10 trừ số đơn vị, hàng chục giảm đi 1."
         ],
-        "hint": "60 – 5: 10 – 5 = 5, viết 5 nhớ 1; 6 – 1 = 5.",
+        "hint": "80 – 3: mượn một chục thành 10, 10 – 3 = 7, hàng chục còn 7.",
         "answer": {
-          "text": "Tính.; 42 – 8 = 34   56 – 9 = 47   60 – 5 = 55   75 – 6 = 69; Đặt tính rồi tính.; 64 – 8 = 56   70 – 7 = 63   83 – 4 = 79   41 – 5 = 36",
-          "explanation": "42 – 8 = 34; 56 – 9 = 47; 60 – 5 = 55; 75 – 6 = 69; 64 – 8 = 56; 70 – 7 = 63; 83 – 4 = 79; 41 – 5 = 36."
+          "text": "Nhẩm rồi điền kết quả.; 51 – 6 = 45   37 – 8 = 29   80 – 3 = 77   94 – 5 = 89; Viết dọc rồi trừ.; 62 – 7 = 55   90 – 4 = 86   45 – 9 = 36   73 – 8 = 65",
+          "explanation": "51 – 6 = 45; 37 – 8 = 29; 80 – 3 = 77; 94 – 5 = 89; 62 – 7 = 55; 90 – 4 = 86; 45 – 9 = 36; 73 – 8 = 65."
         }
       },
       "feedback": {
         "right": [
-          "Tám túi quà buộc nơ xong, Lơ Mơ chưa kịp ngáp lần nào!",
-          "Mượn một chục, trả một chục, {name} làm đều tay quá.",
-          "Thỏ Ruy Băng dán nhãn từng túi: đúng hết, không sót bắp ngô nào."
+          "Tám túi quà đều đủ ngô, Lơ Mơ chưa kịp ngáp lần nào!",
+          "Mượn một chục rồi trừ, {name} làm đều tay như người kéo gàu.",
+          "Thỏ Ruy Băng gật đầu: tám phép trừ đúng, không rơi bắp nào xuống đất."
         ],
         "wrong": [
-          "Có phép trừ quên trả 1 ở hàng chục rồi kìa.",
-          "Hàng đơn vị bé hơn thì mượn 10 trước khi trừ nhé.",
-          "Lơ Mơ hé mắt: ô này có vẻ nhiều ngô hơn thực tế đấy."
+          "Hàng chục phải giảm 1 sau khi mượn, kiểm tra lại nhé.",
+          "Số đơn vị bé hơn thì phải mượn một chục trước khi trừ.",
+          "Lơ Mơ hé mắt: có túi đang thừa ngô, chắc một phép trừ chưa chuẩn."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o34",
-          "b2": "o47",
-          "b3": "o55",
-          "b4": "o69",
-          "b5": "o56",
-          "b6": "o63",
-          "b7": "o79",
-          "b8": "o36"
+          "b1": "o45",
+          "b2": "o29",
+          "b3": "o77",
+          "b4": "o89",
+          "b5": "o55",
+          "b6": "o86",
+          "b7": "o36",
+          "b8": "o65"
         }
+      },
+      "objective": "cong-tru-co-nho-tru",
+      "expression": {
+        "b1": "51 - 6",
+        "b2": "37 - 8",
+        "b3": "80 - 3",
+        "b4": "94 - 5",
+        "b5": "62 - 7",
+        "b6": "90 - 4",
+        "b7": "45 - 9",
+        "b8": "73 - 8"
       }
     },
     {
       "id": "dua-hau-tha-bien",
-      "title": "Chuyện dưa hấu của bà",
+      "title": "Sữa của Bò Sữa Mơ",
       "target": "toan2-cd4-b22-koala-lo-mo",
       "kind": "riddle",
-      "question": "Lơ Mơ kể chuyện bà kể trước giờ ngủ: Ngày thứ nhất, Mai An Tiêm thả 34 quả dưa hấu xuống biển. Ngày thứ hai, Mai An Tiêm thả ít hơn ngày thứ nhất 7 quả. Hỏi ngày thứ hai Mai An Tiêm thả bao nhiêu quả dưa hấu xuống biển?",
+      "question": "Lơ Mơ lẩm nhẩm đố: Hôm qua Bò Sữa Mơ vắt được 52 lít sữa. Hôm nay vắt được ít hơn hôm qua 8 lít. Hỏi hôm nay Bò Sữa Mơ vắt được bao nhiêu lít sữa?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b22-hoat-dong-3"
-      ],
       "support": {
         "guide": [
-          "\"Ít hơn\" thì lấy số ngày thứ nhất trừ đi phần ít hơn.",
-          "Phép tính: 34 – 7."
+          "Ít hơn hôm qua thì lấy số lít hôm qua bớt đi phần ít hơn.",
+          "Phép tính cần làm: 52 – 8."
         ],
-        "hint": "4 không trừ được 7, mượn thành 14.",
+        "hint": "2 bé hơn 8, mượn một chục: 12 – 8 = 4, hàng chục còn 4.",
         "answer": {
-          "text": "27 quả dưa hấu",
-          "explanation": "Ngày thứ hai Mai An Tiêm thả: 34 – 7 = 27 (quả dưa hấu)."
+          "text": "44 lít sữa",
+          "explanation": "Hôm nay vắt được: 52 – 8 = 44 (lít sữa)."
         }
       },
       "feedback": {
         "right": [
-          "Hai mươi bảy quả dưa trôi bồng bềnh, Lơ Mơ nghe xong tỉnh hẳn ngủ.",
-          "Ít hơn thì trừ, cậu kể chuyện mà vẫn tính trúng phóc.",
-          "Lơ Mơ reo: bà kể chuyện này hoài mà giờ tớ mới biết đáp số!"
+          "Bốn mươi bốn lít sữa trắng thơm, Lơ Mơ nghe xong tỉnh hẳn ngủ.",
+          "Ít hơn là trừ, cậu vừa nghe đố vừa tính trúng phóc.",
+          "Bò Sữa Mơ ò một tiếng dài: đúng số lít của tớ rồi!"
         ],
         "wrong": [
-          "Ngày thứ hai thả ÍT hơn, vậy số dưa phải bé hơn 34.",
-          "Thử trừ có nhớ: 14 – 7 rồi hàng chục bớt 1.",
-          "Gần rồi, xem lại hàng chục sau khi đã mượn."
+          "Hôm nay vắt ÍT hơn, vậy số lít phải bé hơn 52.",
+          "Thử trừ có mượn: 12 – 8 rồi hàng chục giảm 1.",
+          "Sắp đúng rồi, nhìn lại hàng chục sau khi đã mượn xem."
         ]
       },
       "answer": {
-        "value": 27
+        "value": 44
       },
-      "goTo": "Về ruộng ngô, Koala Lơ Mơ gối đầu lên bó ngô kể chuyện bà kể trước giờ ngủ"
+      "goTo": "Về ruộng ngô, Koala Lơ Mơ gối đầu lên bó ngô và lẩm nhẩm một câu đố về sữa bò",
+      "objective": "cong-tru-co-nho-bai-toan",
+      "expression": "52 - 8"
     },
     {
       "id": "goi-qua-dot-hai",
@@ -405,45 +404,28 @@
       "target": "toan2-cd4-b22-tho-ruy-bang",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Thỏ Ruy Băng bê thêm hai thúng ngô nữa ra. Đặt tính rồi tính.",
-      "template": "42 – 5 = {{b1}}   51 – 9 = {{b2}}   63 – 7 = {{b3}}   86 – 8 = {{b4}}\n63 – 8 = {{b5}}   38 – 9 = {{b6}}   40 – 2 = {{b7}}   92 – 4 = {{b8}}",
+      "prompt": "Hai thúng ngô nữa được khiêng ra chòi gói quà; cậu viết dọc rồi tính nhé.",
+      "template": "71 – 4 = {{b1}}   62 – 8 = {{b2}}   55 – 9 = {{b3}}   84 – 6 = {{b4}}\n93 – 5 = {{b5}}   47 – 8 = {{b6}}   30 – 6 = {{b7}}   82 – 7 = {{b8}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o27",
-              "text": "27"
+              "id": "o63",
+              "text": "63"
             },
             {
-              "id": "o37",
-              "text": "37"
+              "id": "o67",
+              "text": "67"
             },
             {
-              "id": "o47",
-              "text": "47"
+              "id": "o77",
+              "text": "77"
             }
           ]
         },
         {
           "id": "b2",
-          "options": [
-            {
-              "id": "o41",
-              "text": "41"
-            },
-            {
-              "id": "o42",
-              "text": "42"
-            },
-            {
-              "id": "o52",
-              "text": "52"
-            }
-          ]
-        },
-        {
-          "id": "b3",
           "options": [
             {
               "id": "o54",
@@ -454,258 +436,8 @@
               "text": "56"
             },
             {
-              "id": "o57",
-              "text": "57"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o76",
-              "text": "76"
-            },
-            {
-              "id": "o78",
-              "text": "78"
-            },
-            {
-              "id": "o79",
-              "text": "79"
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "options": [
-            {
-              "id": "o53",
-              "text": "53"
-            },
-            {
-              "id": "o55",
-              "text": "55"
-            },
-            {
-              "id": "o65",
-              "text": "65"
-            }
-          ]
-        },
-        {
-          "id": "b6",
-          "options": [
-            {
-              "id": "o29",
-              "text": "29"
-            },
-            {
-              "id": "o31",
-              "text": "31"
-            },
-            {
-              "id": "o39",
-              "text": "39"
-            }
-          ]
-        },
-        {
-          "id": "b7",
-          "options": [
-            {
-              "id": "o38",
-              "text": "38"
-            },
-            {
-              "id": "o39",
-              "text": "39"
-            },
-            {
-              "id": "o83",
-              "text": "83"
-            }
-          ]
-        },
-        {
-          "id": "b8",
-          "options": [
-            {
-              "id": "o86",
-              "text": "86"
-            },
-            {
-              "id": "o88",
-              "text": "88"
-            },
-            {
-              "id": "o89",
-              "text": "89"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-1-a",
-        "toan2-t1-b22-luyen-tap-1-b",
-        "toan2-t1-b22-luyen-tap-1-c",
-        "toan2-t1-b22-luyen-tap-1-d",
-        "toan2-t1-b22-luyen-tap-2-1-a",
-        "toan2-t1-b22-luyen-tap-2-1-b",
-        "toan2-t1-b22-luyen-tap-2-1-c",
-        "toan2-t1-b22-luyen-tap-2-1-d"
-      ],
-      "support": {
-        "guide": [
-          "Viết số trừ thẳng cột hàng đơn vị.",
-          "Trừ từ phải sang trái, mượn thì nhớ 1."
-        ],
-        "hint": "92 – 4: 12 – 4 = 8, viết 8 nhớ 1; 9 – 1 = 8.",
-        "answer": {
-          "text": "42 – 5 = 37   51 – 9 = 42   63 – 7 = 56   86 – 8 = 78; 63 – 8 = 55   38 – 9 = 29   40 – 2 = 38   92 – 4 = 88",
-          "explanation": "42 – 5 = 37; 51 – 9 = 42; 63 – 7 = 56; 86 – 8 = 78; 63 – 8 = 55; 38 – 9 = 29; 40 – 2 = 38; 92 – 4 = 88."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Hai thúng ngô đã chia xong, Thỏ Ruy Băng mừng quá vấp cả vào thúng rỗng.",
-          "Tám phép trừ, tám lần nhớ 1, không trật nhịp nào!",
-          "Koala Lơ Mơ vỗ tay bộp bộp, lần này Lơ Mơ thức suốt luôn."
-        ],
-        "wrong": [
-          "Một thúng đang bị đếm dư, kiểm tra phép trừ có mượn.",
-          "Đặt tính thẳng cột rồi trừ hàng đơn vị trước nhé.",
-          "Số tròn chục 40 trừ 2: mượn 10 từ hàng chục đấy."
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o37",
-          "b2": "o42",
-          "b3": "o56",
-          "b4": "o78",
-          "b5": "o55",
-          "b6": "o29",
-          "b7": "o38",
-          "b8": "o88"
-        }
-      },
-      "goTo": "Chạy ra chòi gói quà bên ruộng, Thỏ Ruy Băng vừa bê thêm hai thúng ngô"
-    },
-    {
-      "id": "cam-hoa-lo-gau",
-      "title": "Cắm hoa trang trí",
-      "target": "toan2-cd4-b22-bac-hue",
-      "kind": "challenge",
-      "mechanic": "classify",
-      "prompt": "Lơ Mơ muốn mỗi túi quà có một lọ hoa xinh. Cắm hoa vào lọ thích hợp.",
-      "groups": [
-        {
-          "id": "nhom-lo-46-7",
-          "label": "Lọ 46 – 7"
-        },
-        {
-          "id": "nhom-lo-50-2",
-          "label": "Lọ 50 – 2"
-        },
-        {
-          "id": "nhom-lo-64-8",
-          "label": "Lọ 64 – 8"
-        }
-      ],
-      "items": [
-        {
-          "id": "hoa-hoa-56",
-          "label": "Hoa 56"
-        },
-        {
-          "id": "hoa-hoa-48",
-          "label": "Hoa 48"
-        },
-        {
-          "id": "hoa-hoa-39",
-          "label": "Hoa 39"
-        }
-      ],
-      "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-2-a",
-        "toan2-t1-b22-luyen-tap-2-b",
-        "toan2-t1-b22-luyen-tap-2-c"
-      ],
-      "support": {
-        "guide": [
-          "Tính phép trừ ghi trên mỗi lọ.",
-          "Bông hoa ghi đúng kết quả thì cắm vào lọ đó."
-        ],
-        "hint": "46 – 7 = 39.",
-        "answer": {
-          "text": "Hoa 39 – lọ 46 – 7; hoa 48 – lọ 50 – 2; hoa 56 – lọ 64 – 8",
-          "explanation": "46 – 7 = 39, 50 – 2 = 48, 64 – 8 = 56: hoa 39, 48, 56 vào ba lọ tương ứng."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Ba lọ hoa thơm phức, Lơ Mơ hít hà rồi… suýt ngủ tiếp.",
-          "Lọ nào cũng đúng hoa, đẹp như tiệm hoa thật.",
-          "Bác Huệ buộc nơ quanh lọ: quá chuẩn luôn!"
-        ],
-        "wrong": [
-          "Có một bông hoa đang lạc sang lọ hàng xóm.",
-          "Tính phép trừ trên lọ trước rồi mới chọn hoa nhé.",
-          "Lọ 50 – 2 còn lại bao nhiêu? Bông hoa ấy mới vừa."
-        ]
-      },
-      "answer": {
-        "assignment": {
-          "hoa-hoa-56": "nhom-lo-64-8",
-          "hoa-hoa-48": "nhom-lo-50-2",
-          "hoa-hoa-39": "nhom-lo-46-7"
-        }
-      },
-      "goTo": "Ra hàng rào hoa, Bác Huệ trồng hoa đang tỉa từng bông thật xinh"
-    },
-    {
-      "id": "duong-ve-nha-soc",
-      "title": "Đường về nhà sóc",
-      "target": "toan2-cd4-b22-koala-lo-mo",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Một chú sóc nhồi bông đòi về nhà. Từ đầu đường 54 – 8, lối rẽ lên ghi 22 + 24, lối rẽ xuống ghi 30 + 16; sau 22 + 24 có đường 60 – 9 tới nhà mái đỏ và đường 50 – 4 tới nhà mái xanh; sau 30 + 16 có đường 73 – 7 tới nhà mái tím và đường 65 – 8 tới nhà mái cam. Đường về nhà sóc đi qua ba phép tính có kết quả bằng nhau. Tìm nhà cho sóc.",
-      "template": "54 – 8 = {{b1}}   22 + 24 = {{b2}}   30 + 16 = {{b3}}   60 – 9 = {{b4}}   50 – 4 = {{b5}}   73 – 7 = {{b6}}   65 – 8 = {{b7}}\nNhà của sóc là {{b8}}.",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o44",
-              "text": "44"
-            },
-            {
-              "id": "o46",
-              "text": "46"
-            },
-            {
               "id": "o64",
               "text": "64"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o44",
-              "text": "44"
-            },
-            {
-              "id": "o46",
-              "text": "46"
-            },
-            {
-              "id": "o47",
-              "text": "47"
             }
           ]
         },
@@ -713,16 +445,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o45",
-              "text": "45"
+              "id": "o44",
+              "text": "44"
             },
             {
               "id": "o46",
               "text": "46"
             },
             {
-              "id": "o47",
-              "text": "47"
+              "id": "o56",
+              "text": "56"
             }
           ]
         },
@@ -730,16 +462,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o50",
-              "text": "50"
+              "id": "o72",
+              "text": "72"
             },
             {
-              "id": "o51",
-              "text": "51"
+              "id": "o78",
+              "text": "78"
             },
             {
-              "id": "o52",
-              "text": "52"
+              "id": "o88",
+              "text": "88"
             }
           ]
         },
@@ -747,16 +479,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o36",
-              "text": "36"
+              "id": "o82",
+              "text": "82"
             },
             {
-              "id": "o45",
-              "text": "45"
+              "id": "o88",
+              "text": "88"
             },
             {
-              "id": "o46",
-              "text": "46"
+              "id": "o98",
+              "text": "98"
             }
           ]
         },
@@ -764,16 +496,16 @@
           "id": "b6",
           "options": [
             {
-              "id": "o64",
-              "text": "64"
+              "id": "o31",
+              "text": "31"
             },
             {
-              "id": "o65",
-              "text": "65"
+              "id": "o39",
+              "text": "39"
             },
             {
-              "id": "o66",
-              "text": "66"
+              "id": "o49",
+              "text": "49"
             }
           ]
         },
@@ -781,16 +513,280 @@
           "id": "b7",
           "options": [
             {
-              "id": "o57",
-              "text": "57"
+              "id": "o24",
+              "text": "24"
             },
             {
-              "id": "o58",
-              "text": "58"
+              "id": "o26",
+              "text": "26"
+            },
+            {
+              "id": "o34",
+              "text": "34"
+            }
+          ]
+        },
+        {
+          "id": "b8",
+          "options": [
+            {
+              "id": "o65",
+              "text": "65"
             },
             {
               "id": "o75",
               "text": "75"
+            },
+            {
+              "id": "o85",
+              "text": "85"
+            }
+          ]
+        }
+      ],
+      "skill": "phep-tru",
+      "support": {
+        "guide": [
+          "Viết số trừ thẳng cột đơn vị với số bị trừ, trừ từ phải sang trái.",
+          "Chữ số đơn vị bé hơn thì mượn, rồi nhớ bớt 1 ở hàng chục."
+        ],
+        "hint": "93 – 5: 13 – 5 = 8, hàng chục còn 8.",
+        "answer": {
+          "text": "71 – 4 = 67   62 – 8 = 54   55 – 9 = 46   84 – 6 = 78; 93 – 5 = 88   47 – 8 = 39   30 – 6 = 24   82 – 7 = 75",
+          "explanation": "71 – 4 = 67; 62 – 8 = 54; 55 – 9 = 46; 84 – 6 = 78; 93 – 5 = 88; 47 – 8 = 39; 30 – 6 = 24; 82 – 7 = 75."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Hai thúng ngô vơi dần đúng số, Thỏ Ruy Băng mừng đến suýt đạp vào thúng rỗng.",
+          "Tám lần mượn chục, tám kết quả đúng, {name} chắc tay thật.",
+          "Lơ Mơ vỗ tay bộp bộp, lần này cậu ấy thức đến hết ván."
+        ],
+        "wrong": [
+          "Có một thúng đang bị đếm dư, kiểm tra lại chỗ mượn chục.",
+          "Viết thẳng cột rồi trừ hàng đơn vị trước nhé.",
+          "30 – 6: số tròn chục cũng phải mượn một chục đấy."
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o67",
+          "b2": "o54",
+          "b3": "o46",
+          "b4": "o78",
+          "b5": "o88",
+          "b6": "o39",
+          "b7": "o24",
+          "b8": "o75"
+        }
+      },
+      "goTo": "Chạy ra chòi gói quà bên ruộng, Thỏ Ruy Băng vừa bê thêm hai thúng ngô",
+      "objective": "cong-tru-co-nho-tru",
+      "expression": {
+        "b1": "71 - 4",
+        "b2": "62 - 8",
+        "b3": "55 - 9",
+        "b4": "84 - 6",
+        "b5": "93 - 5",
+        "b6": "47 - 8",
+        "b7": "30 - 6",
+        "b8": "82 - 7"
+      }
+    },
+    {
+      "id": "cam-hoa-lo-gau",
+      "title": "Cắm hoa trang trí",
+      "target": "toan2-cd4-b22-bac-hue",
+      "kind": "challenge",
+      "mechanic": "classify",
+      "prompt": "Lơ Mơ muốn mỗi túi quà kèm một lọ hoa xinh. Cắm mỗi bông hoa vào lọ có hiệu bằng số ghi trên bông.",
+      "groups": [
+        {
+          "id": "nhom-lo-52-6",
+          "label": "Lọ 52 – 6"
+        },
+        {
+          "id": "nhom-lo-40-3",
+          "label": "Lọ 40 – 3"
+        },
+        {
+          "id": "nhom-lo-73-9",
+          "label": "Lọ 73 – 9"
+        }
+      ],
+      "items": [
+        {
+          "id": "hoa-46",
+          "label": "Hoa 46"
+        },
+        {
+          "id": "hoa-37",
+          "label": "Hoa 37"
+        },
+        {
+          "id": "hoa-64",
+          "label": "Hoa 64"
+        }
+      ],
+      "skill": "phep-tru",
+      "support": {
+        "guide": [
+          "Tính phép trừ ghi ở mỗi lọ.",
+          "Bông hoa mang đúng kết quả thì cắm vào lọ đó."
+        ],
+        "hint": "40 – 3: mượn một chục, 10 – 3 = 7, hàng chục còn 3.",
+        "answer": {
+          "text": "Hoa 37 – lọ 40 – 3; hoa 46 – lọ 52 – 6; hoa 64 – lọ 73 – 9",
+          "explanation": "52 – 6 = 46, 40 – 3 = 37, 73 – 9 = 64: mỗi bông hoa vào lọ có kết quả tương ứng."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Ba lọ hoa thơm lừng, Lơ Mơ hít một hơi dài rồi… suýt ngủ tiếp.",
+          "Lọ nào cũng đúng bông, đẹp như tiệm hoa ngoài chợ.",
+          "Bác Huệ buộc nơ quanh từng lọ: chuẩn từng li!"
+        ],
+        "wrong": [
+          "Có một bông đang cắm nhầm lọ hàng xóm.",
+          "Tính phép trừ trên lọ trước rồi hẵng chọn hoa nhé.",
+          "Lọ 40 – 3 còn lại mấy? Bông ghi số đó mới vừa."
+        ]
+      },
+      "answer": {
+        "assignment": {
+          "hoa-46": "nhom-lo-52-6",
+          "hoa-37": "nhom-lo-40-3",
+          "hoa-64": "nhom-lo-73-9"
+        }
+      },
+      "goTo": "Ra hàng rào hoa, Bác Huệ trồng hoa đang tỉa từng bông thật xinh",
+      "objective": "cong-tru-co-nho-tru"
+    },
+    {
+      "id": "duong-ve-nha-soc",
+      "title": "Đường về nhà sóc",
+      "target": "toan2-cd4-b22-koala-lo-mo",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Chú sóc bông ở xưởng đồ chơi lạc ra ruộng ngô và đòi về nhà. Đầu đường ghi 71 – 5; lối rẽ lên ghi 33 + 33, lối rẽ xuống ghi 40 + 26. Sau 33 + 33 có đường 80 – 9 tới nhà mái đỏ và đường 72 – 6 tới nhà mái xanh; sau 40 + 26 có đường 91 – 4 tới nhà mái tím và đường 85 – 8 tới nhà mái cam. Chỉ một lối là đúng: ba phép tính nó đi qua đều cho cùng một số. Tìm nhà cho sóc.",
+      "template": "71 – 5 = {{b1}}   33 + 33 = {{b2}}   40 + 26 = {{b3}}   80 – 9 = {{b4}}   72 – 6 = {{b5}}   91 – 4 = {{b6}}   85 – 8 = {{b7}}\nNhà của sóc là {{b8}}.",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o64",
+              "text": "64"
+            },
+            {
+              "id": "o66",
+              "text": "66"
+            },
+            {
+              "id": "o76",
+              "text": "76"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o56",
+              "text": "56"
+            },
+            {
+              "id": "o66",
+              "text": "66"
+            },
+            {
+              "id": "o76",
+              "text": "76"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o56",
+              "text": "56"
+            },
+            {
+              "id": "o66",
+              "text": "66"
+            },
+            {
+              "id": "o76",
+              "text": "76"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o71",
+              "text": "71"
+            },
+            {
+              "id": "o79",
+              "text": "79"
+            },
+            {
+              "id": "o81",
+              "text": "81"
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "options": [
+            {
+              "id": "o64",
+              "text": "64"
+            },
+            {
+              "id": "o66",
+              "text": "66"
+            },
+            {
+              "id": "o76",
+              "text": "76"
+            }
+          ]
+        },
+        {
+          "id": "b6",
+          "options": [
+            {
+              "id": "o83",
+              "text": "83"
+            },
+            {
+              "id": "o87",
+              "text": "87"
+            },
+            {
+              "id": "o97",
+              "text": "97"
+            }
+          ]
+        },
+        {
+          "id": "b7",
+          "options": [
+            {
+              "id": "o73",
+              "text": "73"
+            },
+            {
+              "id": "o77",
+              "text": "77"
+            },
+            {
+              "id": "o87",
+              "text": "87"
             }
           ]
         },
@@ -817,83 +813,89 @@
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-3-a"
-      ],
       "support": {
         "guide": [
-          "Tính hết các phép tính trên đường.",
-          "Chọn con đường có ba phép tính cho cùng một kết quả."
+          "Tính hết các phép tính trên các lối rẽ.",
+          "Con đường đúng đi qua ba phép tính cùng kết quả, nối liền nhau từ đầu tới nhà."
         ],
-        "hint": "54 – 8 = 46; tìm thêm hai phép tính nữa cũng bằng 46 nối liền nhau.",
+        "hint": "71 – 5 = 66; tìm tiếp hai phép tính cũng bằng 66 mà nối liền nhau.",
         "answer": {
-          "text": "54 – 8 = 46   22 + 24 = 46   30 + 16 = 46   60 – 9 = 51   50 – 4 = 46   73 – 7 = 66   65 – 8 = 57; Nhà của sóc là nhà mái xanh.",
-          "explanation": "54 – 8 = 46, 22 + 24 = 46, 50 – 4 = 46: ba phép tính bằng nhau dẫn tới nhà mái xanh. Lối 30 + 16 cũng bằng 46 nhưng hai đường sau nó là 66 và 57."
+          "text": "71 – 5 = 66   33 + 33 = 66   40 + 26 = 66   80 – 9 = 71   72 – 6 = 66   91 – 4 = 87   85 – 8 = 77; Nhà của sóc là nhà mái xanh.",
+          "explanation": "71 – 5 = 66, 33 + 33 = 66, 72 – 6 = 66: ba phép tính bằng nhau dẫn tới nhà mái xanh. Lối 40 + 26 cũng bằng 66 nhưng hai đường sau nó là 87 và 77."
         }
       },
       "feedback": {
         "right": [
-          "Sóc nhồi bông lăn tròn về nhà mái xanh, vẫy đuôi cảm ơn.",
-          "Ba con số 46 nối tiếp nhau như ba viên sỏi dẫn đường!",
-          "Cậu không bị lối 30 + 16 đánh lừa, tài thật."
+          "Chú sóc bông lăn về nhà mái xanh, vẫy đuôi cảm ơn rối rít.",
+          "Ba con số 66 nối nhau như ba viên sỏi dẫn lối!",
+          "Cậu không mắc bẫy lối 40 + 26, tinh mắt thật."
         ],
         "wrong": [
-          "Lối rẽ xuống cũng ra 46 đấy, nhưng đi tiếp thì sao?",
-          "Ba phép tính trên đường phải cho cùng một kết quả.",
-          "Tính lại 60 – 9 và 50 – 4 xem cái nào bằng 46."
+          "Lối rẽ xuống cũng ra 66 đấy, nhưng đi tiếp thì sao?",
+          "Ba phép tính trên đường phải cùng một kết quả mới đúng.",
+          "Tính lại 80 – 9 và 72 – 6 xem phép nào bằng 66."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o46",
-          "b2": "o46",
-          "b3": "o46",
-          "b4": "o51",
-          "b5": "o46",
-          "b6": "o66",
-          "b7": "o57",
+          "b1": "o66",
+          "b2": "o66",
+          "b3": "o66",
+          "b4": "o71",
+          "b5": "o66",
+          "b6": "o87",
+          "b7": "o77",
           "b8": "nha-mai-xanh"
         }
       },
-      "goTo": "Quay về ruộng ngô, Koala Lơ Mơ ôm chú sóc nhồi bông đang đòi về nhà"
+      "goTo": "Quay về ruộng ngô, Koala Lơ Mơ ôm chú sóc bông đang đòi về nhà",
+      "objective": "cong-tru-co-nho-tru",
+      "expression": {
+        "b1": "71 - 5",
+        "b2": "33 + 33",
+        "b3": "40 + 26",
+        "b4": "80 - 9",
+        "b5": "72 - 6",
+        "b6": "91 - 4",
+        "b7": "85 - 8"
+      }
     },
     {
       "id": "hong-va-cuc",
       "title": "Vườn hoa sau hàng rào",
       "target": "toan2-cd4-b22-bac-hue",
       "kind": "riddle",
-      "question": "Lơ Mơ kiễng chân ngó qua hàng rào. Trong vườn có 30 cây hoa hồng và hoa cúc. Mi đếm được có 9 cây hoa cúc. Hỏi trong vườn có bao nhiêu cây hoa hồng?",
+      "question": "Lơ Mơ kiễng chân ngó qua hàng rào hoa. Bác Huệ cho biết vườn có 50 cây hồng và cúc cộng lại, trong đó 7 cây là hoa cúc. Vậy bác trồng bao nhiêu cây hoa hồng?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-4"
-      ],
       "support": {
         "guide": [
-          "30 cây gồm cả hồng và cúc.",
-          "Bớt đi số cây cúc thì còn lại số cây hồng."
+          "50 cây gồm cả hồng lẫn cúc.",
+          "Bớt số cây cúc đi thì còn số cây hồng."
         ],
-        "hint": "30 – 9: mượn 10, 10 – 9 = 1.",
+        "hint": "50 – 7: mượn 10, 10 – 7 = 3, hàng chục còn 4.",
         "answer": {
-          "text": "21 cây hoa hồng",
-          "explanation": "Số cây hoa hồng: 30 – 9 = 21 (cây)."
+          "text": "43 cây hoa hồng",
+          "explanation": "Số cây hoa hồng: 50 – 7 = 43 (cây)."
         }
       },
       "feedback": {
         "right": [
-          "Hai mươi mốt cây hồng đỏ rực, Lơ Mơ muốn hái một bông tặng bác Bò Sữa Mơ.",
-          "Bớt cây cúc đi là ra cây hồng, cậu nghĩ đúng hướng ghê.",
-          "Mi trong vườn vẫy tay: đúng rồi đó!"
+          "Bốn mươi ba cây hồng đỏ rực, Lơ Mơ muốn hái một bông tặng Bò Sữa Mơ.",
+          "Bỏ phần hoa cúc ra là còn hồng, cậu nghĩ đúng hướng ghê.",
+          "Bác Huệ vẫy kéo tỉa cành: chuẩn quá còn gì!"
         ],
         "wrong": [
-          "30 cây là tính cả cúc lẫn hồng, phải bớt cây cúc ra.",
-          "Phép trừ 30 – 9 có mượn ở hàng đơn vị nhé.",
-          "Số cây hồng phải ít hơn 30 chứ."
+          "50 cây tính cả cúc lẫn hồng, phải bớt cây cúc ra.",
+          "Phép trừ 50 – 7 có mượn từ hàng chục đấy nhé.",
+          "Số cây hồng phải ít hơn 50 chứ."
         ]
       },
       "answer": {
-        "value": 21
+        "value": 43
       },
-      "goTo": "Lại ra hàng rào hoa, Bác Huệ chỉ vườn hồng và cúc phía bên trong"
+      "goTo": "Lại ra hàng rào hoa, Bác Huệ chỉ vườn hồng và cúc phía bên trong",
+      "objective": "cong-tru-co-nho-bai-toan",
+      "expression": "50 - 7"
     },
     {
       "id": "na-chon-cach-goi",
@@ -946,19 +948,87 @@
       "target": "toan2-cd4-b22-koala-lo-mo",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Các em nhỏ vẽ đố lên giấy gói ngô. Số ?",
-      "template": "a) 56 → + 4 → {{b1}} → – 5 → {{b2}}\nb) 35 → – 8 → {{b3}} → + 38 → {{b4}}\nBa ô tô đang che ba số là 10, 20 và 40. Hỏi mỗi ô tô đang che số nào?\n60 – ô tô đỏ = 50: ô tô đỏ che {{b5}}\nô tô vàng – ô tô tím = 20: ô tô vàng che {{b6}}, ô tô tím che {{b7}}",
+      "prompt": "Mấy em nhỏ vẽ câu đố lên giấy gói bắp ngô; {name} điền số còn thiếu giúp các em.",
+      "template": "a) 38 → + 2 → {{b1}} → – 7 → {{b2}}\nb) 41 → – 6 → {{b3}} → + 46 → {{b4}}\nBa chiếc xe đồ chơi che ba số 20, 30 và 60. Mỗi xe che số nào?\n80 – xe đỏ = 60: xe đỏ che {{b5}}\nxe vàng – xe tím = 30: xe vàng che {{b6}}, xe tím che {{b7}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o30",
+              "text": "30"
             },
             {
-              "id": "o58",
-              "text": "58"
+              "id": "o40",
+              "text": "40"
+            },
+            {
+              "id": "o50",
+              "text": "50"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o23",
+              "text": "23"
+            },
+            {
+              "id": "o33",
+              "text": "33"
+            },
+            {
+              "id": "o43",
+              "text": "43"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o25",
+              "text": "25"
+            },
+            {
+              "id": "o35",
+              "text": "35"
+            },
+            {
+              "id": "o45",
+              "text": "45"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o71",
+              "text": "71"
+            },
+            {
+              "id": "o81",
+              "text": "81"
+            },
+            {
+              "id": "o91",
+              "text": "91"
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "options": [
+            {
+              "id": "o20",
+              "text": "20"
+            },
+            {
+              "id": "o30",
+              "text": "30"
             },
             {
               "id": "o60",
@@ -967,87 +1037,19 @@
           ]
         },
         {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o53",
-              "text": "53"
-            },
-            {
-              "id": "o55",
-              "text": "55"
-            },
-            {
-              "id": "o56",
-              "text": "56"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o27",
-              "text": "27"
-            },
-            {
-              "id": "o28",
-              "text": "28"
-            },
-            {
-              "id": "o72",
-              "text": "72"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o64",
-              "text": "64"
-            },
-            {
-              "id": "o65",
-              "text": "65"
-            },
-            {
-              "id": "o75",
-              "text": "75"
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "options": [
-            {
-              "id": "o10",
-              "text": "10"
-            },
-            {
-              "id": "o20",
-              "text": "20"
-            },
-            {
-              "id": "o40",
-              "text": "40"
-            }
-          ]
-        },
-        {
           "id": "b6",
           "options": [
             {
-              "id": "o10",
-              "text": "10"
-            },
-            {
               "id": "o20",
               "text": "20"
             },
             {
-              "id": "o40",
-              "text": "40"
+              "id": "o30",
+              "text": "30"
+            },
+            {
+              "id": "o60",
+              "text": "60"
             }
           ]
         },
@@ -1055,60 +1057,64 @@
           "id": "b7",
           "options": [
             {
-              "id": "o10",
-              "text": "10"
-            },
-            {
               "id": "o20",
               "text": "20"
             },
             {
-              "id": "o40",
-              "text": "40"
+              "id": "o30",
+              "text": "30"
+            },
+            {
+              "id": "o60",
+              "text": "60"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-2-2-a",
-        "toan2-t1-b22-luyen-tap-2-2-b",
-        "toan2-t1-b22-luyen-tap-2-4-a",
-        "toan2-t1-b22-luyen-tap-2-4-b"
-      ],
       "support": {
         "guide": [
-          "Giấy gói vẽ mũi tên: tính xong ô này mới sang ô kế.",
-          "Ô tô che số nào thì thử đặt số đó vào xem phép tính có đúng không."
+          "Mũi tên chỉ phép tính nào thì làm phép tính đó; kết quả ô trước là số đầu của ô sau.",
+          "Xe che số nào thì thử đặt số đó vào xem phép tính có đúng không."
         ],
-        "hint": "60 trừ mấy bằng 50? Hai số còn lại 20 và 40: số lớn trừ số bé bằng 20.",
+        "hint": "80 trừ mấy bằng 60? Hai số còn lại là 30 và 60, số lớn trừ số bé phải ra 30.",
         "answer": {
-          "text": "a) 56 → + 4 → 60 → – 5 → 55; b) 35 → – 8 → 27 → + 38 → 65; Ba ô tô đang che ba số là 10, 20 và 40. Hỏi mỗi ô tô đang che số nào?; 60 – ô tô đỏ = 50: ô tô đỏ che 10; ô tô vàng – ô tô tím = 20: ô tô vàng che 40, ô tô tím che 20",
-          "explanation": "a) 56 + 4 = 60, 60 – 5 = 55. b) 35 – 8 = 27, 27 + 38 = 65. Ô tô đỏ che 10 (60 – 10 = 50); ô tô vàng che 40, ô tô tím che 20 (40 – 20 = 20)."
+          "text": "a) 38 → + 2 → 40 → – 7 → 33; b) 41 → – 6 → 35 → + 46 → 81; Ba chiếc xe đồ chơi che ba số 20, 30 và 60. Mỗi xe che số nào?; 80 – xe đỏ = 60: xe đỏ che 20; xe vàng – xe tím = 30: xe vàng che 60, xe tím che 30",
+          "explanation": "38 + 2 = 40; 38 + 2 – 7 = 33; 41 – 6 = 35; 41 – 6 + 46 = 81; 80 – 20 = 60; 60 – 30 = 30; 60 – 30 = 30."
         }
       },
       "feedback": {
         "right": [
-          "Mũi tên chạy tới đâu {name} tính tới đó, giỏi quá!",
-          "Ba chiếc ô tô bị lật tẩy, số ẩn lộ ra hết rồi.",
-          "Các em nhỏ nhận được giấy gói đã giải xong, cười tít mắt."
+          "Mũi tên chạy tới đâu cậu tính tới đó, trơn tru như chiếc xe đồ chơi.",
+          "Ba chiếc xe bị lật mặt, số bị che hiện ra hết rồi.",
+          "Các em nhỏ nhận giấy gói đã giải xong, cười tít cả mắt."
         ],
         "wrong": [
-          "Làm lần lượt theo mũi tên, đừng nhảy cóc nhé.",
-          "Thử đặt số vào chỗ ô tô xem phép tính có đúng không.",
-          "Ô tô vàng phải che số lớn hơn ô tô tím đấy."
+          "Làm lần lượt theo mũi tên, đừng nhảy cóc sang ô sau.",
+          "Thử đặt số vào chỗ chiếc xe che xem phép tính có đúng không.",
+          "Xe vàng phải che số lớn hơn xe tím mới ra hiệu 30."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o60",
-          "b2": "o55",
-          "b3": "o27",
-          "b4": "o65",
-          "b5": "o10",
-          "b6": "o40",
-          "b7": "o20"
+          "b1": "o40",
+          "b2": "o33",
+          "b3": "o35",
+          "b4": "o81",
+          "b5": "o20",
+          "b6": "o60",
+          "b7": "o30"
         }
+      },
+      "objective": "cong-tru-co-nho-hai-dau",
+      "expression": {
+        "b1": "38 + 2",
+        "b2": "38 + 2 - 7",
+        "b3": "41 - 6",
+        "b4": "41 - 6 + 46",
+        "b5": "80 - ? = 60",
+        "b6": "? - 30 = 30",
+        "b7": "60 - ? = 30"
       }
     },
     {
@@ -1117,8 +1123,8 @@
       "target": "toan2-cd4-b22-bac-thu-kho-lam",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Con mèo của nông trại chui tọt vào sau ba cánh cửa kho: cửa A ghi 40 – 7, cửa B ghi 53 – 9, cửa C ghi 50 – 4.",
-      "template": "Con mèo nấp sau cánh cửa ghi phép tính có kết quả lớn nhất. Hỏi con mèo nấp sau cánh cửa nào? Cửa {{b1}}",
+      "prompt": "Chú mèo của nông trại chui vào sau ba cánh cửa kho: cửa A ghi 72 – 8, cửa B ghi 90 – 6, cửa C ghi 83 – 7.",
+      "template": "Mèo luôn nấp sau cánh cửa có hiệu lớn nhất. Vậy mèo nấp sau cửa {{b1}}",
       "blanks": [
         {
           "id": "b1",
@@ -1139,75 +1145,72 @@
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-2-3"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả sau mỗi cánh cửa.",
-          "Cửa có kết quả lớn nhất là chỗ mèo nấp."
+          "Tính hiệu ghi sau mỗi cánh cửa.",
+          "Cửa có hiệu lớn nhất là chỗ mèo trốn."
         ],
-        "hint": "40 – 7 = 33, 53 – 9 = 44, còn 50 – 4?",
+        "hint": "72 – 8 = 64, 83 – 7 = 76, còn 90 – 6?",
         "answer": {
-          "text": "Cửa C",
-          "explanation": "40 – 7 = 33, 53 – 9 = 44, 50 – 4 = 46; 46 lớn nhất nên mèo nấp sau cửa C."
+          "text": "Cửa B",
+          "explanation": "72 – 8 = 64, 90 – 6 = 84, 83 – 7 = 76; 84 lớn nhất nên mèo nấp sau cửa B."
         }
       },
       "feedback": {
         "right": [
-          "Meo! Mèo nhảy ra từ cửa C, làm bác Lâm giật mình đánh rơi búa.",
-          "Đúng cửa C, kết quả lớn nhất là 46.",
-          "Trốn kĩ mấy cũng không thoát được phép trừ của {name}."
+          "Meo! Mèo bật ra từ cửa B, làm bác Lâm giật mình rơi cả chổi.",
+          "Đúng cửa B, hiệu lớn nhất là 84.",
+          "Mèo trốn kĩ mấy cũng không thoát tay {name}."
         ],
         "wrong": [
-          "Mở cửa ra thấy… cái chổi. Tính lại kết quả từng cửa nhé.",
-          "44 và 46, số nào lớn hơn?",
-          "Mèo chọn cửa có kết quả lớn NHẤT đấy."
+          "Mở cửa ra chỉ thấy cái xô rỗng, tính lại hiệu từng cửa nhé.",
+          "76 và 84, số nào lớn hơn?",
+          "Mèo chọn cửa có hiệu lớn NHẤT đấy."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "c"
+          "b1": "b"
         }
       },
-      "goTo": "Tới kho thóc ba cánh cửa, Bác thủ kho Lâm nghe tiếng meo meo sau cửa"
+      "goTo": "Tới kho thóc ba cánh cửa, Bác thủ kho Lâm nghe tiếng meo meo sau cửa",
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "can-mai-va-mi",
       "title": "Chiếc cân cạnh cửa kho",
       "target": "toan2-cd4-b22-bac-thu-kho-lam",
       "kind": "riddle",
-      "question": "Hai chị em đến nhận quà và đứng lên cân thử. Mai cân nặng 23 kg. Mi nhẹ hơn Mai 5 kg. Hỏi Mi cân nặng bao nhiêu ki-lô-gam?",
+      "question": "Bác Lâm đặt hai bao lên chiếc cân cạnh cửa kho. Bao ngô nặng 42 kg, bao đậu xanh nhẹ hơn bao ngô 7 kg. Hỏi bao đậu xanh nặng bao nhiêu ki-lô-gam?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-2-5"
-      ],
       "support": {
         "guide": [
-          "\"Nhẹ hơn\" thì làm phép trừ.",
-          "Phép tính: 23 – 5."
+          "Nhẹ hơn thì làm phép trừ.",
+          "Phép tính: 42 – 7."
         ],
-        "hint": "3 không trừ được 5, mượn thành 13.",
+        "hint": "2 bé hơn 7, mượn một chục: 12 – 7 = 5, hàng chục còn 3.",
         "answer": {
-          "text": "18 kg",
-          "explanation": "Mi cân nặng: 23 – 5 = 18 (kg)."
+          "text": "35 kg",
+          "explanation": "Bao đậu xanh nặng: 42 – 7 = 35 (kg)."
         }
       },
       "feedback": {
         "right": [
-          "Kim cân chỉ đúng 18 ki-lô-gam, Mi nhảy xuống cười khúc khích.",
+          "Kim cân dừng ở 35 ki-lô-gam, bác Lâm gật gù ghi vào sổ.",
           "Nhẹ hơn là trừ đi, chuẩn bài luôn.",
-          "Mai xoa đầu em: bạn {name} tính còn nhanh hơn cái cân."
+          "Bao đậu xanh lắc lư trên cân: {name} tính còn nhanh hơn cái cân."
         ],
         "wrong": [
-          "Mi nhẹ HƠN Mai, nên cân nặng của Mi bé hơn 23.",
-          "Mượn 1 chục: 13 – 5 rồi hàng chục còn lại mấy?",
-          "Phép tính đúng là 23 – 5 đấy, thử lại nhé."
+          "Bao đậu nhẹ HƠN bao ngô, nên cân nặng phải bé hơn 42.",
+          "Mượn 1 chục: 12 – 7 rồi hàng chục còn lại mấy?",
+          "Phép tính đúng là 42 – 7 đấy, thử lại nhé."
         ]
       },
       "answer": {
-        "value": 18
-      }
+        "value": 35
+      },
+      "objective": "cong-tru-co-nho-bai-toan",
+      "expression": "42 - 7"
     },
     {
       "id": "bang-hieu-gau",
@@ -1215,23 +1218,23 @@
       "target": "toan2-cd4-b22-tho-ruy-bang",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Thỏ Ruy Băng ghi sổ: có bao nhiêu bắp ngô, tặng đi bao nhiêu, còn lại bao nhiêu. Số ?",
-      "template": "Số bị trừ | 57 | 70 | 25 | 53 | 60\nSố trừ | 8 | 7 | 9 | 4 | 30\nHiệu | 49 | {{b1}} | {{b2}} | {{b3}} | {{b4}}",
+      "prompt": "Thỏ Ruy Băng ghi sổ bắp ngô: số lúc đầu, số đã tặng và số còn lại. Điền các ô còn trống.",
+      "template": "Số bị trừ | 64 | 80 | 36 | 92 | 70\nSố trừ | 7 | 5 | 8 | 4 | 40\nHiệu | 57 | {{b1}} | {{b2}} | {{b3}} | {{b4}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o62",
-              "text": "62"
-            },
-            {
-              "id": "o63",
-              "text": "63"
-            },
             {
               "id": "o65",
               "text": "65"
+            },
+            {
+              "id": "o75",
+              "text": "75"
+            },
+            {
+              "id": "o85",
+              "text": "85"
             }
           ]
         },
@@ -1239,302 +1242,9 @@
           "id": "b2",
           "options": [
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o22",
+              "text": "22"
             },
-            {
-              "id": "o16",
-              "text": "16"
-            },
-            {
-              "id": "o17",
-              "text": "17"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o47",
-              "text": "47"
-            },
-            {
-              "id": "o49",
-              "text": "49"
-            },
-            {
-              "id": "o51",
-              "text": "51"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o28",
-              "text": "28"
-            },
-            {
-              "id": "o30",
-              "text": "30"
-            },
-            {
-              "id": "o32",
-              "text": "32"
-            }
-          ]
-        }
-      ],
-      "skill": "thanh-phan-phep-tinh",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-3-1-a",
-        "toan2-t1-b22-luyen-tap-3-1-b",
-        "toan2-t1-b22-luyen-tap-3-1-c",
-        "toan2-t1-b22-luyen-tap-3-1-d"
-      ],
-      "support": {
-        "guide": [
-          "Trong sổ của Thỏ, hiệu bằng số bị trừ bớt đi số trừ.",
-          "Cột mẫu: 57 – 8 = 49."
-        ],
-        "hint": "70 – 7: 10 – 7 = 3, viết 3 nhớ 1.",
-        "answer": {
-          "text": "Số bị trừ | 57 | 70 | 25 | 53 | 60; Số trừ | 8 | 7 | 9 | 4 | 30; Hiệu | 49 | 63 | 16 | 49 | 30",
-          "explanation": "70 – 7 = 63; 25 – 9 = 16; 53 – 4 = 49; 60 – 30 = 30."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Sổ sách gọn gàng, Thỏ Ruy Băng hứa từ nay ghi bằng bút chứ không bằng mùn cưa.",
-          "Hiệu nào cũng đúng, cột mẫu chắc cũng phải nể.",
-          "Lơ Mơ đọc sổ to: không thiếu, không thừa bắp ngô nào!"
-        ],
-        "wrong": [
-          "Hiệu là lấy số bị trừ trừ đi số trừ nhé.",
-          "Cột 60 và 30 trừ nhau dễ lắm, xem lại nào.",
-          "Một ô hiệu đang lệch, kiểm tra phép trừ có mượn."
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o63",
-          "b2": "o16",
-          "b3": "o49",
-          "b4": "o30"
-        }
-      },
-      "goTo": "Sang chòi gói quà bên ruộng, Thỏ Ruy Băng giở cuốn sổ ghi số bắp ngô"
-    },
-    {
-      "id": "ghe-cho-chu-lun",
-      "title": "Ghế cho chú lùn",
-      "target": "toan2-cd4-b22-bac-thu-kho-lam",
-      "kind": "challenge",
-      "mechanic": "classify",
-      "prompt": "Ba chú lùn gỗ đòi ngồi ghế ghi phép tính 31 – 8, 50 – 3, 82 – 7. Mỗi chú lùn sẽ ngồi lên chiếc ghế ghi phép tính có kết quả là số trên áo của mình. Tìm ghế cho các chú lùn.",
-      "groups": [
-        {
-          "id": "nhom-ghe-31-8",
-          "label": "Ghế 31 – 8"
-        },
-        {
-          "id": "nhom-ghe-50-3",
-          "label": "Ghế 50 – 3"
-        },
-        {
-          "id": "nhom-ghe-82-7",
-          "label": "Ghế 82 – 7"
-        }
-      ],
-      "items": [
-        {
-          "id": "lun-chu-lun-ao-do-so-47",
-          "label": "Chú lùn áo đỏ số 47"
-        },
-        {
-          "id": "lun-chu-lun-ao-xanh-la-so-23",
-          "label": "Chú lùn áo xanh lá số 23"
-        },
-        {
-          "id": "lun-chu-lun-ao-vang-so-75",
-          "label": "Chú lùn áo vàng số 75"
-        }
-      ],
-      "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-3-2-a",
-        "toan2-t1-b22-luyen-tap-3-2-b",
-        "toan2-t1-b22-luyen-tap-3-2-c"
-      ],
-      "support": {
-        "guide": [
-          "Tính phép trừ trên mỗi chiếc ghế.",
-          "Chú lùn ngồi ghế có kết quả bằng số trên áo."
-        ],
-        "hint": "31 – 8 = 23.",
-        "answer": {
-          "text": "Số 47 – ghế 50 – 3; số 23 – ghế 31 – 8; số 75 – ghế 82 – 7",
-          "explanation": "31 – 8 = 23, 50 – 3 = 47, 82 – 7 = 75: chú lùn số 47 ngồi ghế 50 – 3, số 23 ngồi ghế 31 – 8, số 75 ngồi ghế 82 – 7."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Ba chú lùn ngồi phịch xuống ghế, ghế kêu cót két vui tai.",
-          "Ghế nào chủ nấy, không ai phải đứng chờ.",
-          "Chú lùn áo vàng ngả lưng ngáy o o, giống hệt Lơ Mơ."
-        ],
-        "wrong": [
-          "Có chú lùn đang ngồi nhầm ghế bạn, bị đẩy ra rồi kìa.",
-          "Tính kết quả ghế trước rồi nhìn số trên áo.",
-          "82 – 7 còn lại bao nhiêu? Số ấy ở trên áo ai?"
-        ]
-      },
-      "answer": {
-        "assignment": {
-          "lun-chu-lun-ao-do-so-47": "nhom-ghe-50-3",
-          "lun-chu-lun-ao-xanh-la-so-23": "nhom-ghe-31-8",
-          "lun-chu-lun-ao-vang-so-75": "nhom-ghe-82-7"
-        }
-      },
-      "goTo": "Quay lại kho thóc ba cánh cửa, Bác thủ kho Lâm kê ba chiếc ghế cho chú lùn"
-    },
-    {
-      "id": "chon-ket-qua-dung",
-      "title": "Hai câu chọn kết quả",
-      "target": "toan2-cd4-b22-koala-lo-mo",
-      "kind": "challenge",
-      "mechanic": "multi-select",
-      "prompt": "Lơ Mơ tỉnh như sáo, giành đọc to bảng đố. Chọn kết quả đúng. a) 40 + 20 – 6 = ? A. 60 B. 54 C. 64 b) 43 – 8 + 17 = ? A. 35 B. 62 C. 52 Chọn đúng một kết quả cho mỗi câu a và b.",
-      "choices": [
-        {
-          "id": "a-a-60",
-          "text": "a) A. 60"
-        },
-        {
-          "id": "a-b-54",
-          "text": "a) B. 54"
-        },
-        {
-          "id": "a-c-64",
-          "text": "a) C. 64"
-        },
-        {
-          "id": "b-a-35",
-          "text": "b) A. 35"
-        },
-        {
-          "id": "b-b-62",
-          "text": "b) B. 62"
-        },
-        {
-          "id": "b-c-52",
-          "text": "b) C. 52"
-        }
-      ],
-      "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-3-3-a",
-        "toan2-t1-b22-luyen-tap-3-3-b"
-      ],
-      "support": {
-        "guide": [
-          "Tính lần lượt từ trái sang phải.",
-          "Mỗi câu chỉ có một kết quả đúng."
-        ],
-        "hint": "40 + 20 = 60, rồi 60 – 6.",
-        "answer": {
-          "text": "a) B. 54; b) C. 52",
-          "explanation": "a) 40 + 20 – 6 = 60 – 6 = 54 (B). b) 43 – 8 + 17 = 35 + 17 = 52 (C)."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Hai câu, hai kết quả, Lơ Mơ tuyên bố không ngủ nữa để xem cậu tính!",
-          "Tính từ trái sang phải, chuẩn không cần chỉnh.",
-          "Cậu không bị đáp án 60 với 35 lừa, hay ghê."
-        ],
-        "wrong": [
-          "Câu a mới cộng xong 40 + 20, còn phải trừ 6 nữa.",
-          "Câu b: trừ trước rồi mới cộng thêm 17 nhé.",
-          "Mỗi câu chỉ chọn một kết quả thôi."
-        ]
-      },
-      "answer": {
-        "choices": [
-          "a-b-54",
-          "b-c-52"
-        ]
-      },
-      "goTo": "Chạy về ruộng ngô, Koala Lơ Mơ tỉnh như sáo giơ bảng đố"
-    },
-    {
-      "id": "buc-tranh-dinh-muc",
-      "title": "Bức tranh dính mực",
-      "target": "toan2-cd4-b22-koala-lo-mo",
-      "kind": "riddle",
-      "question": "Lơ Mơ treo bức tranh của Việt lên chòi làm quà. Việt vẽ một bức tranh có 35 bông hoa. Mèo làm đổ mực vào bức tranh nên chỉ còn nhìn thấy 9 bông hoa. Hỏi có bao nhiêu bông hoa bị mực che khuất?",
-      "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-3-4"
-      ],
-      "support": {
-        "guide": [
-          "Tất cả 35 bông, nhìn thấy 9 bông.",
-          "Số bông bị che = 35 – 9."
-        ],
-        "hint": "15 – 9 = 6, hàng chục còn 2.",
-        "answer": {
-          "text": "26 bông hoa",
-          "explanation": "Số bông hoa bị mực che khuất: 35 – 9 = 26 (bông)."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Hai mươi sáu bông trốn dưới vết mực, cậu tìm ra hết!",
-          "Mèo ngượng ngùng liếm chân, hứa không đổ mực nữa.",
-          "Lấy tất cả trừ phần nhìn thấy, đúng phương pháp luôn."
-        ],
-        "wrong": [
-          "Số bông bị che là phần còn lại sau khi bớt 9 bông nhìn thấy.",
-          "Phép trừ 35 – 9 có mượn đấy.",
-          "Số bông bị che phải ít hơn 35 chứ."
-        ]
-      },
-      "answer": {
-        "value": 26
-      }
-    },
-    {
-      "id": "robot-tim-do-choi",
-      "title": "Dẫn Rô-bốt qua lưới số",
-      "target": "toan2-cd4-b22-gau-mat",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Trò chơi cuối: Lơ Mơ đọc phép tính, {name} tính và dẫn Rô-bốt đi; ai dẫn tới nơi trước thì thắng. Lưới số: hàng 1: 17, 28, 28, 34, 28 tới tàu hoả; hàng 2: 23, 34, 17, 23, 34 tới ô tô; hàng 3: 34, 17, 17, 23, 28 tới máy bay. Rô-bốt đi theo thứ tự các số là kết quả của các phép tính dưới đây. Rô-bốt sẽ đến được tàu hoả, ô tô hay máy bay?",
-      "template": "25 – 8 = {{b1}} → 30 – 2 = {{b2}} → 20 – 3 = {{b3}} → 30 – 7 = {{b4}} → 33 – 5 = {{b5}}\nRô-bốt sẽ đến được {{b6}}.",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o15",
-              "text": "15"
-            },
-            {
-              "id": "o16",
-              "text": "16"
-            },
-            {
-              "id": "o17",
-              "text": "17"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
             {
               "id": "o28",
               "text": "28"
@@ -1542,10 +1252,6 @@
             {
               "id": "o38",
               "text": "38"
-            },
-            {
-              "id": "o82",
-              "text": "82"
             }
           ]
         },
@@ -1553,16 +1259,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o82",
+              "text": "82"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o88",
+              "text": "88"
             },
             {
-              "id": "o71",
-              "text": "71"
+              "id": "o98",
+              "text": "98"
             }
           ]
         },
@@ -1570,16 +1276,306 @@
           "id": "b4",
           "options": [
             {
-              "id": "o22",
-              "text": "22"
+              "id": "o20",
+              "text": "20"
             },
             {
-              "id": "o23",
-              "text": "23"
+              "id": "o30",
+              "text": "30"
+            },
+            {
+              "id": "o40",
+              "text": "40"
+            }
+          ]
+        }
+      ],
+      "skill": "thanh-phan-phep-tinh",
+      "support": {
+        "guide": [
+          "Hiệu là số bị trừ bớt đi số trừ.",
+          "Cột đầu đã làm mẫu: 64 – 7 = 57."
+        ],
+        "hint": "80 – 5: mượn 10, 10 – 5 = 5, hàng chục còn 7.",
+        "answer": {
+          "text": "Số bị trừ | 64 | 80 | 36 | 92 | 70; Số trừ | 7 | 5 | 8 | 4 | 40; Hiệu | 57 | 75 | 28 | 88 | 30",
+          "explanation": "80 – 5 = 75; 36 – 8 = 28; 92 – 4 = 88; 70 – 40 = 30."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Sổ sách đầy đủ, ngô vào ngô ra đều rõ ràng.",
+          "Ô hiệu nào cũng khớp, cột mẫu cũng phải gật đầu.",
+          "Lơ Mơ đọc to cuốn sổ: không thiếu, không thừa bắp nào!"
+        ],
+        "wrong": [
+          "Hiệu là lấy số bị trừ trừ đi số trừ nhé.",
+          "Cột 70 và 40 là trừ hai số tròn chục, dễ hơn các cột kia.",
+          "Có một ô hiệu đang lệch, kiểm tra lại chỗ mượn chục."
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o75",
+          "b2": "o28",
+          "b3": "o88",
+          "b4": "o30"
+        }
+      },
+      "goTo": "Sang chòi gói quà bên ruộng, Thỏ Ruy Băng giở cuốn sổ ghi số bắp ngô",
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "expression": {
+        "b1": "80 - 5",
+        "b2": "36 - 8",
+        "b3": "92 - 4",
+        "b4": "70 - 40"
+      }
+    },
+    {
+      "id": "ghe-cho-chu-lun",
+      "title": "Ghế cho chú lùn",
+      "target": "toan2-cd4-b22-bac-thu-kho-lam",
+      "kind": "challenge",
+      "mechanic": "classify",
+      "prompt": "Ba chú lùn gỗ canh kho thóc, chú nào cũng muốn ngồi chiếc ghế có hiệu bằng số trên áo mình. Ghế ghi 42 – 6, 60 – 4 và 93 – 8. Tìm ghế cho các chú lùn.",
+      "groups": [
+        {
+          "id": "nhom-ghe-42-6",
+          "label": "Ghế 42 – 6"
+        },
+        {
+          "id": "nhom-ghe-60-4",
+          "label": "Ghế 60 – 4"
+        },
+        {
+          "id": "nhom-ghe-93-8",
+          "label": "Ghế 93 – 8"
+        }
+      ],
+      "items": [
+        {
+          "id": "chu-lun-ao-do-so-56",
+          "label": "Chú lùn áo đỏ số 56"
+        },
+        {
+          "id": "chu-lun-ao-xanh-la-so-85",
+          "label": "Chú lùn áo xanh lá số 85"
+        },
+        {
+          "id": "chu-lun-ao-vang-so-36",
+          "label": "Chú lùn áo vàng số 36"
+        }
+      ],
+      "skill": "phep-tru",
+      "support": {
+        "guide": [
+          "Tính hiệu ghi trên mỗi chiếc ghế.",
+          "Chú lùn ngồi chiếc ghế có hiệu bằng số trên áo."
+        ],
+        "hint": "42 – 6 = 36.",
+        "answer": {
+          "text": "Số 56 – ghế 60 – 4; số 85 – ghế 93 – 8; số 36 – ghế 42 – 6",
+          "explanation": "42 – 6 = 36, 60 – 4 = 56, 93 – 8 = 85: mỗi chú lùn ngồi đúng chiếc ghế của mình."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Ba chú lùn ngồi phịch xuống, ghế kêu cót két nghe rất vui tai.",
+          "Ghế nào chủ nấy, không chú nào phải đứng chờ.",
+          "Chú lùn áo vàng ngả lưng ngáy o o, chẳng khác gì Lơ Mơ."
+        ],
+        "wrong": [
+          "Có chú lùn ngồi nhầm ghế bạn, bị đẩy ra rồi kìa.",
+          "Tính hiệu trên ghế trước rồi nhìn số ghi ở áo.",
+          "93 – 8 còn lại mấy? Số ấy ở trên áo chú nào?"
+        ]
+      },
+      "answer": {
+        "assignment": {
+          "chu-lun-ao-do-so-56": "nhom-ghe-60-4",
+          "chu-lun-ao-xanh-la-so-85": "nhom-ghe-93-8",
+          "chu-lun-ao-vang-so-36": "nhom-ghe-42-6"
+        }
+      },
+      "goTo": "Quay lại kho thóc ba cánh cửa, Bác thủ kho Lâm kê ba chiếc ghế cho chú lùn",
+      "objective": "cong-tru-co-nho-tru"
+    },
+    {
+      "id": "chon-ket-qua-dung",
+      "title": "Hai câu chọn kết quả",
+      "target": "toan2-cd4-b22-koala-lo-mo",
+      "kind": "challenge",
+      "mechanic": "multi-select",
+      "prompt": "Lơ Mơ đã tỉnh ngủ, hào hứng giơ bảng đố hai dòng. Mỗi dòng có ba đáp số A, B, C; {name} chọn một đáp số đúng cho mỗi dòng. a) 30 + 40 – 7 = ? A. 70 B. 77 C. 63 b) 52 – 9 + 28 = ? A. 43 B. 71 C. 33",
+      "choices": [
+        {
+          "id": "a-a-70",
+          "text": "a) A. 70"
+        },
+        {
+          "id": "a-b-77",
+          "text": "a) B. 77"
+        },
+        {
+          "id": "a-c-63",
+          "text": "a) C. 63"
+        },
+        {
+          "id": "b-a-43",
+          "text": "b) A. 43"
+        },
+        {
+          "id": "b-b-71",
+          "text": "b) B. 71"
+        },
+        {
+          "id": "b-c-33",
+          "text": "b) C. 33"
+        }
+      ],
+      "skill": "phep-tru",
+      "support": {
+        "guide": [
+          "Tính lần lượt từ trái sang phải.",
+          "Mỗi dòng chỉ có một đáp số đúng."
+        ],
+        "hint": "30 + 40 = 70, rồi bớt 7.",
+        "answer": {
+          "text": "a) C. 63; b) B. 71",
+          "explanation": "a) 30 + 40 – 7 = 70 – 7 = 63 (C). b) 52 – 9 + 28 = 43 + 28 = 71 (B)."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Hai dòng, hai đáp số đúng, Lơ Mơ tuyên bố sẽ thức để xem cậu tính tiếp!",
+          "Tính từ trái sang phải, trúng hết không cần chỉnh.",
+          "Cậu không mắc bẫy đáp số 70 và 43, tinh tế thật."
+        ],
+        "wrong": [
+          "Dòng a mới cộng xong 30 + 40, còn phải bớt 7 nữa.",
+          "Dòng b: trừ 9 trước rồi mới cộng thêm 28 nhé.",
+          "Mỗi dòng chỉ chọn một đáp số thôi."
+        ]
+      },
+      "answer": {
+        "choices": [
+          "a-c-63",
+          "b-b-71"
+        ]
+      },
+      "goTo": "Chạy về ruộng ngô, Koala Lơ Mơ tỉnh như sáo giơ bảng đố",
+      "objective": "cong-tru-co-nho-hai-dau"
+    },
+    {
+      "id": "buc-tranh-dinh-muc",
+      "title": "Tấm rèm bị gió gấp",
+      "target": "toan2-cd4-b22-koala-lo-mo",
+      "kind": "riddle",
+      "question": "Bác Huệ cài 62 bông hoa giấy lên tấm rèm trang trí quanh chòi. Gió thổi gấp tấm rèm lại nên chỉ còn nhìn thấy 8 bông. Hỏi có bao nhiêu bông hoa bị gấp khuất?",
+      "skill": "bai-toan-loi-van",
+      "support": {
+        "guide": [
+          "Tất cả 62 bông, đang thấy 8 bông.",
+          "Số bông bị khuất bằng 62 – 8."
+        ],
+        "hint": "12 – 8 = 4, hàng chục còn 5.",
+        "answer": {
+          "text": "54 bông hoa",
+          "explanation": "Số bông hoa bị khuất: 62 – 8 = 54 (bông)."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Năm mươi tư bông trốn trong nếp gấp, cậu tìm ra hết!",
+          "Gió biết điều ngừng thổi, tấm rèm nằm yên cho {name} tính.",
+          "Lấy tất cả trừ phần đang thấy, đúng cách quá."
+        ],
+        "wrong": [
+          "Số bông bị khuất là phần còn lại sau khi bớt 8 bông đang thấy.",
+          "Phép trừ 62 – 8 có mượn đấy.",
+          "Số bông bị khuất phải ít hơn 62 chứ."
+        ]
+      },
+      "answer": {
+        "value": 54
+      },
+      "objective": "cong-tru-co-nho-bai-toan",
+      "expression": "62 - 8"
+    },
+    {
+      "id": "robot-tim-do-choi",
+      "title": "Dẫn Rô-bốt qua lưới số",
+      "target": "toan2-cd4-b22-gau-mat",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Màn chốt: Gấu Rô thả Rô-bốt vào lưới số trên sân phơi, Lơ Mơ đọc lần lượt năm phép trừ, {name} tính rồi dò đường. Lưới có 3 hàng, mỗi hàng 5 ô: hàng 1: 25, 32, 54, 75, 56 tới tàu hoả; hàng 2: 52, 23, 45, 57, 65 tới ô tô; hàng 3: 25, 45, 32, 75, 76 tới máy bay. Rô-bốt bước từ cột này sang cột kế tiếp, đứng đúng ô mang kết quả của phép tính vừa đọc. Hỏi Rô-bốt sẽ tới tàu hoả, ô tô hay máy bay?",
+      "template": "31 – 6 = {{b1}} → 40 – 8 = {{b2}} → 52 – 7 = {{b3}} → 60 – 3 = {{b4}} → 74 – 9 = {{b5}}\nRô-bốt sẽ tới {{b6}}.",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o15",
+              "text": "15"
             },
             {
               "id": "o25",
               "text": "25"
+            },
+            {
+              "id": "o35",
+              "text": "35"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o32",
+              "text": "32"
+            },
+            {
+              "id": "o38",
+              "text": "38"
+            },
+            {
+              "id": "o42",
+              "text": "42"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o35",
+              "text": "35"
+            },
+            {
+              "id": "o45",
+              "text": "45"
+            },
+            {
+              "id": "o55",
+              "text": "55"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o53",
+              "text": "53"
+            },
+            {
+              "id": "o57",
+              "text": "57"
+            },
+            {
+              "id": "o67",
+              "text": "67"
             }
           ]
         },
@@ -1587,16 +1583,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o55",
+              "text": "55"
             },
             {
-              "id": "o28",
-              "text": "28"
+              "id": "o65",
+              "text": "65"
             },
             {
-              "id": "o29",
-              "text": "29"
+              "id": "o75",
+              "text": "75"
             }
           ]
         },
@@ -1619,43 +1615,48 @@
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b22-luyen-tap-3-5"
-      ],
       "support": {
         "guide": [
-          "Tính lần lượt năm phép tính.",
-          "Mỗi bước, Rô-bốt bước sang ô kề bên có số đúng kết quả."
+          "Tính lần lượt năm phép trừ.",
+          "Từ ô vừa đứng, Rô-bốt sang cột bên cạnh, đi thẳng hoặc lên, xuống một hàng, miễn là ô đó mang đúng kết quả."
         ],
-        "hint": "Dãy số Rô-bốt đi: 17, 28, 17, 23, 28.",
+        "hint": "Dãy số Rô-bốt đi qua: 25, 32, 45, 57, 65.",
         "answer": {
-          "text": "25 – 8 = 17 → 30 – 2 = 28 → 20 – 3 = 17 → 30 – 7 = 23 → 33 – 5 = 28; Rô-bốt sẽ đến được máy bay.",
-          "explanation": "25 – 8 = 17, 30 – 2 = 28, 20 – 3 = 17, 30 – 7 = 23, 33 – 5 = 28: Rô-bốt đi 17 → 28 ở hàng 1, xuống 17 ở hàng 2, rồi 23 → 28 ở hàng 3 và tới máy bay."
+          "text": "31 – 6 = 25 → 40 – 8 = 32 → 52 – 7 = 45 → 60 – 3 = 57 → 74 – 9 = 65; Rô-bốt sẽ tới ô tô.",
+          "explanation": "31 – 6 = 25, 40 – 8 = 32, 52 – 7 = 45, 60 – 3 = 57, 74 – 9 = 65: Rô-bốt đi 25 → 32 ở hàng 1, xuống 45 ở hàng 2, rồi 57 → 65 cũng ở hàng 2 và tới ô tô."
         }
       },
       "feedback": {
         "right": [
-          "Rô-bốt leo lên máy bay, ù ù cất cánh vòng quanh nông trại!",
-          "Lơ Mơ thua cuộc mà vẫn cười: lần này tớ thức trọn trò chơi đấy.",
+          "Rô-bốt leo lên ô tô, bấm còi inh ỏi chạy vòng quanh nông trại!",
+          "Lơ Mơ thua mà vẫn hí hửng: cả ván này tớ không hề ngủ gật.",
           "Năm phép trừ, năm bước chân chuẩn, {name} thắng ván này."
         ],
         "wrong": [
-          "Rô-bốt va vào tường rồi, tính lại một phép trừ xem.",
-          "Bước tiếp theo phải là ô kề bên có đúng số vừa tính.",
-          "Dò lại từ ô 17 đầu tiên ở hàng 1 nhé."
+          "Rô-bốt va vào hàng rào rồi, tính lại một phép trừ xem.",
+          "Bước kế tiếp phải là ô ở cột bên cạnh có đúng số vừa tính.",
+          "Dò lại từ ô 25 đầu tiên ở hàng 1 nhé."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o17",
-          "b2": "o28",
-          "b3": "o17",
-          "b4": "o23",
-          "b5": "o28",
-          "b6": "may-bay"
+          "b1": "o25",
+          "b2": "o32",
+          "b3": "o45",
+          "b4": "o57",
+          "b5": "o65",
+          "b6": "o-to"
         }
       },
-      "goTo": "Ra sân phơi kẻ ô số, Gấu Rô bật Rô-bốt, Lơ Mơ ôm bắp ngô theo đọc phép tính"
+      "goTo": "Ra sân phơi kẻ ô số, Gấu Rô bật Rô-bốt, Lơ Mơ ôm bắp ngô theo đọc phép tính",
+      "objective": "cong-tru-co-nho-tru",
+      "expression": {
+        "b1": "31 - 6",
+        "b2": "40 - 8",
+        "b3": "52 - 7",
+        "b4": "60 - 3",
+        "b5": "74 - 9"
+      }
     },
     {
       "id": "gau-bong-cam-on",

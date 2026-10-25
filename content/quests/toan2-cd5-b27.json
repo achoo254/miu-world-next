@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Tấm thiệp cảm ơn của Hổ Con Đậu",
   "status": "active",
-  "lesson": "toan2-t1-b27",
   "topic": "hinh-phang",
   "summary": "Hổ Con Đậu muốn gấp thiệp cảm ơn cô Hằng dạy vẽ, nhưng móng vuốt to quá nên tờ giấy cứ méo xệch; {name} cùng Đậu học gấp cắt với Gấu Nút, ghép hình với Thỏ Mây, kẻ viền bằng thước thần của Bác Thìn, đo que trang trí, rồi mang phiếu về nhà gấp cắt thật.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Lâu đài, phòng vẽ bên sân hình khối: bàn thủ công, kệ giấy màu, góc ghép hình, bàn thước thần",
     "goal": "Làm xong tấm thiệp cảm ơn cô Hằng dạy vẽ",
     "play": "Tìm đồ thủ công, nhận phiếu gấp cắt, ghép hình, kẻ đoạn thẳng, đo bằng thước, xếp que từ ngắn đến dài",
-    "learn": "Toán 2 Bài 27: gấp, cắt, ghép, xếp hình; vẽ và đo đoạn thẳng",
+    "learn": "Gấp, cắt, ghép, xếp hình; vẽ và đo đoạn thẳng",
     "reward": "70 XP, 15 xu, Hình phẳng +2",
-    "next": "Bài 28 \"Luyện tập chung\""
+    "next": "Luyện tập chung về hình phẳng"
   },
   "phases": {
     "hook": "chip-giay-meo-xech",
@@ -105,11 +104,11 @@
       "lines": [
         {
           "speaker": "Gấu Nút",
-          "text": "Gấp chéo một góc tờ giấy chữ nhật cho hai mép trùng nhau, cắt phần thừa là được hình vuông. Phẳng phiu luôn!"
+          "text": "Lấy tờ giấy hình chữ nhật, gập xéo một góc sao cho hai mép chồng khít lên nhau, rồi cắt bỏ dải thừa là ra ngay hình vuông vắn."
         },
         {
           "speaker": "Gấu Nút",
-          "text": "Còn muốn vẽ đoạn thẳng dài 5 cm thì chấm một điểm ở vạch 0 của thước, chấm điểm nữa ở vạch 5, rồi nối lại."
+          "text": "Còn muốn vẽ đoạn thẳng dài 6 cm thì chấm một điểm ở vạch 0 của thước, chấm điểm nữa ở vạch 6, rồi nối hai điểm lại."
         },
         {
           "speaker": "Hổ Con Đậu",
@@ -127,8 +126,8 @@
         "title": "Gấu Nút shows how",
         "goTo": "Go to the coloured paper shelf, where Gấu Nút is test-folding a rectangle of paper",
         "lines": [
-          "Fold one corner of a rectangle of paper diagonally so the two edges line up, cut off the extra bit, and you've got a square. Nice and flat!",
-          "And to draw a line segment 5 cm long, dot one point at the 0 mark of the ruler, another at the 5 mark, then join them.",
+          "Take a rectangle of paper, fold one corner over diagonally so the two edges sit exactly on top of each other, then cut off the spare strip and out comes a neat square.",
+          "And to draw a line segment 6 cm long, dot one point at the 0 mark of the ruler, another at the 6 mark, then join the two points.",
           "Oh, so you don't fold with your claws. I've learnt it now!"
         ],
         "choices": [
@@ -144,17 +143,37 @@
       "title": "Phiếu gấp, cắt, ghép hình",
       "kind": "worksheet",
       "target": "toan2-cd5-b27-gau-nut",
-      "lessonId": "toan2-t1-b27",
-      "text": "Ở nhà, có người lớn ngồi cạnh khi dùng kéo: gấp tờ giấy chữ nhật rồi cắt thành một hình vuông và một hình chữ nhật; cắt hình vuông thành bốn hình tam giác để xếp bốn hình theo phiếu; cắt hai hình trên lưới ô thành hai phần rồi ghép lại thành hình vuông.",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-1",
-        "toan2-t1-b27-hoat-dong-2-a",
-        "toan2-t1-b27-hoat-dong-2-b",
-        "toan2-t1-b27-hoat-dong-2-c",
-        "toan2-t1-b27-hoat-dong-2-d",
-        "toan2-t1-b27-hoat-dong-3-a",
-        "toan2-t1-b27-hoat-dong-3-b"
-      ]
+      "text": "Nhờ người lớn ngồi cạnh khi dùng kéo, rồi làm phiếu gấp, cắt, ghép hình ở nhà: cắt tờ giấy chữ nhật thành hình vuông, chia hình vuông thành bốn tam giác để xếp hình, và ghép hai mảnh trên lưới ô thành một hình vuông.",
+      "objective": "hinh-phang-ve-xep",
+      "sheet": {
+        "title": "Phiếu thủ công: gấp giấy, cắt hình, ghép mảnh",
+        "blocks": [
+          {
+            "kind": "activity",
+            "prompt": "Có người lớn ngồi cạnh khi dùng kéo. Gập tờ giấy hình chữ nhật cho hai mép trùng khít để cắt ra một hình vuông, phần còn lại là một hình chữ nhật nhỏ.",
+            "media": [
+              "Hình vuông vừa cắt",
+              "Hình chữ nhật còn lại"
+            ]
+          },
+          {
+            "kind": "activity",
+            "prompt": "Cắt hình vuông theo hai đường chéo để được bốn hình tam giác, rồi xếp bốn hình tam giác thành các hình theo ý em.",
+            "media": [
+              "Bốn hình tam giác",
+              "Hình em xếp được"
+            ]
+          },
+          {
+            "kind": "activity",
+            "prompt": "Cắt một hình vẽ trên lưới ô thành hai mảnh, rồi ghép hai mảnh lại thành một hình vuông.",
+            "media": [
+              "Hai mảnh ghép",
+              "Hình vuông ghép được"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "ghep-thanh-tam-giac",
@@ -162,7 +181,7 @@
       "target": "toan2-cd5-b27-ho-con-dau",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Đậu muốn dán một hình tam giác lớn (đáy 6 ô, cao 6 ô) lên mặt thiệp. Hai hình nào ở cột bên trái ghép được hình ở cột bên phải? a) Xếp hai hình ghép được vào một nhóm, hình còn lại để riêng.",
+      "prompt": "Đậu muốn dán một hình tam giác lớn (đáy 9 ô, cao 6 ô) lên mặt thiệp. Trong ba mảnh bên trái, hai mảnh nào ghép lại vừa khít thành hình tam giác lớn? Xếp hai mảnh ghép được vào một nhóm, mảnh còn lại để riêng.",
       "groups": [
         {
           "id": "nhom-ghep-vao-hinh-ben-phai",
@@ -176,7 +195,7 @@
       "items": [
         {
           "id": "manh-a-hinh-1",
-          "label": "Hình 1",
+          "label": "Mảnh 1",
           "image": {
             "kind": "diagram",
             "type": "shapes",
@@ -184,9 +203,9 @@
               "points": [
                 0,
                 2,
+                3,
                 2,
-                2,
-                1,
+                1.5,
                 0
               ]
             }
@@ -194,17 +213,19 @@
         },
         {
           "id": "manh-a-hinh-2",
-          "label": "Hình 2",
+          "label": "Mảnh 2",
           "image": {
             "kind": "diagram",
             "type": "shapes",
             "params": {
               "points": [
                 0,
+                4,
+                9,
+                4,
+                6,
+                0,
                 3,
-                1,
-                3,
-                0.5,
                 0
               ]
             }
@@ -212,7 +233,7 @@
         },
         {
           "id": "manh-a-hinh-3",
-          "label": "Hình 3",
+          "label": "Mảnh 3",
           "image": {
             "kind": "diagram",
             "type": "shapes",
@@ -220,11 +241,9 @@
               "points": [
                 0,
                 4,
-                6,
-                4,
-                4,
-                0,
                 2,
+                4,
+                1,
                 0
               ]
             }
@@ -232,40 +251,38 @@
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-4-a"
-      ],
       "support": {
         "guide": [
           "Đặt hình thang làm phần đáy của tam giác lớn.",
           "Mảnh còn thiếu phải vừa khít phần chóp ở trên."
         ],
-        "hint": "Hình thang đáy dưới 6 ô, đáy trên 2 ô; phần chóp còn thiếu là tam giác đáy 2 ô.",
+        "hint": "Hình thang có đáy dưới 9 ô, đáy trên 3 ô; phần chóp còn thiếu là tam giác đáy 3 ô.",
         "answer": {
-          "text": "Hình 1 và hình 3",
-          "explanation": "Hình 3 (hình thang) làm phần dưới, hình 1 (tam giác đáy 2 ô, cao 2 ô) đặt lên trên là được tam giác đáy 6 ô, cao 6 ô."
+          "text": "Mảnh 1 và mảnh 2",
+          "explanation": "Mảnh 2 (hình thang) làm phần dưới, mảnh 1 (tam giác đáy 3 ô, cao 2 ô) đặt lên trên là được tam giác đáy 9 ô, cao 6 ô."
         }
       },
       "feedback": {
         "right": [
-          "Khớp khít khìn khịt, tam giác lớn hiện ra trên mặt thiệp!",
-          "Hình thang làm thân, tam giác nhỏ làm chóp, chuẩn rồi.",
+          "Khít rịt không hở một khe, tam giác lớn hiện ra trên mặt thiệp!",
+          "Hình thang làm thân, tam giác nhỏ làm chóp, đúng quá.",
           "Đậu dán ngay, không lệch một ô nào."
         ],
         "wrong": [
-          "Mảnh hẹp và cao kia có vừa với phần chóp không nhỉ?",
-          "Thử đặt hình thang xuống dưới trước xem.",
-          "Phần chóp còn thiếu có đáy 2 ô, cao 2 ô đấy."
+          "Mảnh hẹp mà cao kia có vừa với phần chóp không nhỉ?",
+          "Thử đặt hình thang xuống phía dưới trước xem.",
+          "Phần chóp còn thiếu có đáy 3 ô, cao 2 ô đấy."
         ]
       },
       "answer": {
         "assignment": {
           "manh-a-hinh-1": "nhom-ghep-vao-hinh-ben-phai",
-          "manh-a-hinh-2": "nhom-de-rieng-ra",
-          "manh-a-hinh-3": "nhom-ghep-vao-hinh-ben-phai"
+          "manh-a-hinh-2": "nhom-ghep-vao-hinh-ben-phai",
+          "manh-a-hinh-3": "nhom-de-rieng-ra"
         }
       },
-      "goTo": "Về bàn thủ công, Hổ Con Đậu đã trải sẵn mặt thiệp chờ dán"
+      "goTo": "Về bàn thủ công, Hổ Con Đậu đã trải sẵn mặt thiệp chờ dán",
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "ghep-thanh-hinh-vuong",
@@ -273,7 +290,7 @@
       "target": "toan2-cd5-b27-tho-may",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Mặt sau tấm thiệp cần một hình vuông 6 × 6 ô. Hai hình nào ở cột bên trái ghép được hình ở cột bên phải? b) Xếp hai hình ghép được vào một nhóm, hình còn lại để riêng.",
+      "prompt": "Mặt sau tấm thiệp cần một hình vuông 8 × 8 ô. Trong ba mảnh bên trái, hai mảnh nào ghép lại thành hình vuông ấy? Xếp hai mảnh ghép được vào một nhóm, mảnh còn lại để riêng.",
       "groups": [
         {
           "id": "nhom-ghep-thanh-hinh-vuong",
@@ -287,7 +304,7 @@
       "items": [
         {
           "id": "manh-b-hinh-1",
-          "label": "Hình 1",
+          "label": "Mảnh 1",
           "image": {
             "kind": "diagram",
             "type": "shapes",
@@ -295,19 +312,19 @@
               "points": [
                 0,
                 0,
-                3,
+                5,
                 0,
-                6,
-                6,
+                8,
+                8,
                 0,
-                6
+                8
               ]
             }
           }
         },
         {
           "id": "manh-b-hinh-2",
-          "label": "Hình 2",
+          "label": "Mảnh 2",
           "image": {
             "kind": "diagram",
             "type": "shapes",
@@ -316,16 +333,16 @@
                 0,
                 0,
                 0,
-                6,
+                8,
                 2,
-                6
+                8
               ]
             }
           }
         },
         {
           "id": "manh-b-hinh-3",
-          "label": "Hình 3",
+          "label": "Mảnh 3",
           "image": {
             "kind": "diagram",
             "type": "shapes",
@@ -336,35 +353,32 @@
                 3,
                 0,
                 3,
-                6
+                8
               ]
             }
           }
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-4-b"
-      ],
       "support": {
         "guide": [
           "Hình thang vuông đã chiếm gần hết hình vuông.",
           "Tìm tam giác vừa khít phần góc còn trống."
         ],
-        "hint": "Phần trống là tam giác có hai cạnh góc vuông 3 ô và 6 ô.",
+        "hint": "Phần trống là tam giác có hai cạnh góc vuông dài 3 ô và 8 ô.",
         "answer": {
-          "text": "Hình 1 và hình 3",
-          "explanation": "Hình 1 (hình thang cạnh trên 3 ô, cạnh dưới 6 ô) ghép với hình 3 (tam giác vuông cạnh 6 ô và 3 ô) thành hình vuông 6 × 6 ô."
+          "text": "Mảnh 1 và mảnh 3",
+          "explanation": "Mảnh 1 (hình thang cạnh trên 5 ô, cạnh dưới 8 ô) ghép với mảnh 3 (tam giác vuông có hai cạnh góc vuông 3 ô và 8 ô) thành hình vuông 8 × 8 ô."
         }
       },
       "feedback": {
         "right": [
-          "Vuông vức như cái bánh chưng, mặt sau thiệp đẹp rồi!",
+          "Vuông vức như chiếc bánh chưng, mặt sau thiệp đẹp rồi!",
           "Hai mảnh lắp vào nhau không hở một khe nào.",
-          "Thỏ Mây gật gù: mắt ghép hình của cậu xịn thật."
+          "Thỏ Mây giơ ngón cái: cậu ghép hình rất tinh mắt."
         ],
         "wrong": [
-          "Tam giác cạnh 2 ô thì nhỏ quá, phần trống rộng 3 ô cơ.",
+          "Mảnh tam giác chỉ rộng 2 ô thì nhỏ quá, phần trống rộng 3 ô cơ.",
           "Đo phần góc còn trống của hình vuông rồi chọn mảnh vừa.",
           "Hình thang vuông chắc chắn phải có mặt, tìm mảnh đi cùng nó."
         ]
@@ -376,7 +390,8 @@
           "manh-b-hinh-3": "nhom-ghep-thanh-hinh-vuong"
         }
       },
-      "goTo": "Ra góc ghép hình, Thỏ Mây xếp các mảnh hình thành một hàng dài"
+      "goTo": "Ra góc ghép hình, Thỏ Mây xếp các mảnh hình thành một hàng dài",
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "ke-hay-do-truoc",
@@ -434,98 +449,95 @@
       "target": "toan2-cd5-b27-bac-thin",
       "kind": "challenge",
       "mechanic": "connect",
-      "prompt": "Vẽ đoạn thẳng: a) AB có độ dài 9 cm. b) CD có độ dài 12 cm. Chạm điểm A rồi chạm một trong các chấm X, Y, Z; chạm điểm C rồi chạm một trong các chấm U, V, W. Thước thần hiện số đo mỗi nét em kẻ, nét nào sai thì xóa kẻ lại.",
+      "prompt": "Kẻ hai đoạn thẳng làm đường viền thiệp: EF phải dài 8 cm và GH phải dài 11 cm. Chạm điểm E rồi chạm một trong các chấm P, Q, R; chạm điểm G rồi chạm một trong các chấm S, T, U. Thước thần hiện số đo mỗi nét em kẻ, nét nào sai thì xóa và kẻ lại.",
       "points": [
         {
-          "id": "a",
+          "id": "e",
           "x": 0,
           "y": 0,
-          "label": "A"
+          "label": "E"
         },
         {
-          "id": "x",
-          "x": 7,
+          "id": "p",
+          "x": 6,
           "y": 0,
-          "label": "X"
+          "label": "P"
         },
         {
-          "id": "y",
-          "x": 9,
+          "id": "q",
+          "x": 8,
           "y": 0,
-          "label": "Y"
+          "label": "Q"
         },
         {
-          "id": "z",
-          "x": 11,
+          "id": "r",
+          "x": 10,
           "y": 0,
-          "label": "Z"
+          "label": "R"
         },
         {
-          "id": "c",
+          "id": "g",
           "x": 0,
           "y": 3,
-          "label": "C"
+          "label": "G"
+        },
+        {
+          "id": "s",
+          "x": 9,
+          "y": 3,
+          "label": "S"
+        },
+        {
+          "id": "t",
+          "x": 11,
+          "y": 3,
+          "label": "T"
         },
         {
           "id": "u",
-          "x": 10,
+          "x": 13,
           "y": 3,
           "label": "U"
-        },
-        {
-          "id": "v",
-          "x": 12,
-          "y": 3,
-          "label": "V"
-        },
-        {
-          "id": "w",
-          "x": 14,
-          "y": 3,
-          "label": "W"
         }
       ],
       "showLengths": true,
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-2-1-a",
-        "toan2-t1-b27-hoat-dong-2-1-b"
-      ],
       "support": {
         "guide": [
-          "Đoạn AB phải dài đúng 9 cm, đoạn CD dài đúng 12 cm.",
+          "Đoạn EF phải dài đúng 8 cm, đoạn GH dài đúng 11 cm.",
           "Kẻ thử rồi xem thước thần hiện số đo bao nhiêu."
         ],
-        "hint": "Chấm cách A 9 cm là chấm ở giữa trong ba chấm X, Y, Z.",
+        "hint": "Chấm cách E đúng 8 cm là chấm ở giữa trong ba chấm P, Q, R.",
         "answer": {
-          "text": "AY dài 9 cm (Y là B); CV dài 12 cm (V là D)",
-          "explanation": "Nối A với Y được đoạn dài 9 cm (Y là điểm B); nối C với V được đoạn dài 12 cm (V là điểm D)."
+          "text": "EQ dài 8 cm (Q là F); GT dài 11 cm (T là H)",
+          "explanation": "Nối E với Q được đoạn dài 8 cm (Q chính là điểm F); nối G với T được đoạn dài 11 cm (T chính là điểm H)."
         }
       },
       "feedback": {
         "right": [
-          "Hai nét viền dài đúng từng xăng-ti-mét, thiệp sang hẳn lên!",
-          "Thước thần kêu \"ting ting\": 9 cm và 12 cm chuẩn chỉnh.",
-          "Đậu kẻ theo cậu mà móng không run nữa."
+          "Hai nét viền dài đúng từng xăng-ti-mét, tấm thiệp sang hẳn lên!",
+          "Thước thần kêu ting ting: 8 cm và 11 cm chuẩn chỉnh.",
+          "Đậu kẻ theo cậu mà móng không còn run nữa."
         ],
         "wrong": [
-          "Thước thần đang hiện số đo khác 9 cm, thử chấm khác nhé.",
-          "Đoạn CD cần dài 12 cm, xem lại nét dưới.",
+          "Thước thần đang hiện số đo khác 8 cm, thử chấm chấm khác nhé.",
+          "Đoạn GH cần dài 11 cm, xem lại nét dưới.",
           "Xóa nét vừa kẻ rồi nối sang chấm bên cạnh thử xem."
         ]
       },
       "answer": {
         "edges": [
           [
-            "a",
-            "y"
+            "e",
+            "q"
           ],
           [
-            "c",
-            "v"
+            "g",
+            "t"
           ]
         ]
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "thuoc-than-do-que",
@@ -533,71 +545,66 @@
       "target": "toan2-cd5-b27-tho-may",
       "kind": "challenge",
       "mechanic": "connect",
-      "prompt": "Ba que trang trí AB, CD, MN nằm trên bàn. Đo độ dài mỗi đoạn thẳng dưới đây. Kẻ lại từng que bằng thước thần để thước hiện số đo.",
+      "prompt": "Ba que trang trí ST, UV, XY nằm trên bàn. Hãy kẻ lại từng que bằng thước thần để thước hiện số đo của nó.",
       "points": [
         {
-          "id": "a",
+          "id": "s",
           "x": 0,
           "y": 0,
-          "label": "A"
+          "label": "S"
         },
         {
-          "id": "b",
-          "x": 7,
+          "id": "t",
+          "x": 6,
           "y": 0,
-          "label": "B"
+          "label": "T"
         },
         {
-          "id": "c",
+          "id": "u",
           "x": 0,
           "y": 3,
-          "label": "C"
+          "label": "U"
         },
         {
-          "id": "d",
-          "x": 12,
+          "id": "v",
+          "x": 10,
           "y": 3,
-          "label": "D"
+          "label": "V"
         },
         {
-          "id": "m",
-          "x": 14,
+          "id": "x",
+          "x": 13,
           "y": 0,
-          "label": "M"
+          "label": "X"
         },
         {
-          "id": "n",
-          "x": 14,
-          "y": 4,
-          "label": "N"
+          "id": "y",
+          "x": 13,
+          "y": 5,
+          "label": "Y"
         }
       ],
       "showLengths": true,
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-2-2-a",
-        "toan2-t1-b27-hoat-dong-2-2-b",
-        "toan2-t1-b27-hoat-dong-2-2-c"
-      ],
       "support": {
         "guide": [
-          "Kẻ đúng ba que: A với B, C với D, M với N.",
+          "Kẻ đúng ba que: S với T, U với V, X với Y.",
           "Nhìn số đo thước thần hiện trên từng nét."
         ],
-        "hint": "Que MN đứng dọc, nối M ở trên với N ở dưới.",
+        "hint": "Que XY đứng dọc, nối X ở trên với Y ở dưới.",
         "answer": {
-          "text": "AB, CD, MN",
-          "explanation": "Ba que là ba đoạn thẳng AB, CD, MN; thước thần hiện độ dài của chúng."
+          "text": "ST, UV, XY",
+          "explanation": "Ba que là ba đoạn thẳng ST, UV, XY; thước thần hiện độ dài của chúng."
         }
       },
       "feedback": {
         "right": [
-          "Ba que hiện số đo sáng rực, đo xong trong nháy mắt!",
-          "Que đứng dọc MN cũng không làm khó được cậu.",
-          "Thỏ Mây ghi số đo vào sổ, nét chữ tròn xoe."
+          "Cả ba que đều hiện số đo sáng rực, nhanh như chớp!",
+          "Que đứng dọc XY cũng không làm khó được cậu.",
+          "Thỏ Mây chép số đo vào sổ, nét chữ tròn xoe."
         ],
         "wrong": [
-          "Mỗi que nối hai điểm cùng tên của nó, như A với B.",
+          "Mỗi que nối hai điểm có chữ cái đi cặp với nhau, như S với T.",
           "Đừng nối chéo sang que khác nhé.",
           "Còn một que chưa được đo kìa."
         ]
@@ -605,20 +612,21 @@
       "answer": {
         "edges": [
           [
-            "a",
-            "b"
+            "s",
+            "t"
           ],
           [
-            "c",
-            "d"
+            "u",
+            "v"
           ],
           [
-            "m",
-            "n"
+            "x",
+            "y"
           ]
         ]
       },
-      "goTo": "Ôm que sang góc ghép hình, Thỏ Mây đã bày sẵn ba que trang trí"
+      "goTo": "Ôm que sang góc ghép hình, Thỏ Mây đã bày sẵn ba que trang trí",
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "ghi-so-do-que",
@@ -626,23 +634,23 @@
       "target": "toan2-cd5-b27-ho-con-dau",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Đậu đọc số đo trên thước thần và ghi lại. Đo độ dài mỗi đoạn thẳng dưới đây.",
-      "template": "AB: {{b1}} cm\nCD: {{b2}} cm\nMN: {{b3}} cm",
+      "prompt": "Đậu đọc số đo trên thước thần rồi ghi lại cho từng que.",
+      "template": "ST: {{b1}} cm\nUV: {{b2}} cm\nXY: {{b3}} cm",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -650,16 +658,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
+              "id": "o1",
+              "text": "1"
             },
             {
-              "id": "o12",
-              "text": "12"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o21",
-              "text": "21"
+              "id": "o20",
+              "text": "20"
             }
           ]
         },
@@ -667,57 +675,53 @@
           "id": "b3",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
+              "id": "o3",
+              "text": "3"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o14",
-              "text": "14"
+              "id": "o15",
+              "text": "15"
             }
           ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-2-2-a",
-        "toan2-t1-b27-hoat-dong-2-2-b",
-        "toan2-t1-b27-hoat-dong-2-2-c"
-      ],
       "support": {
         "guide": [
           "Ghi đúng số thước thần vừa hiện trên mỗi que.",
           "Độ dài đo bằng xăng-ti-mét."
         ],
-        "hint": "Que CD dài nhất, que MN ngắn nhất.",
+        "hint": "Que UV dài nhất, que XY ngắn nhất.",
         "answer": {
-          "text": "AB: 7 cm; CD: 12 cm; MN: 4 cm",
-          "explanation": "AB dài 7 cm, CD dài 12 cm, MN dài 4 cm."
+          "text": "ST: 6 cm; UV: 10 cm; XY: 5 cm",
+          "explanation": "ST dài 6 cm, UV dài 10 cm, XY dài 5 cm."
         }
       },
       "feedback": {
         "right": [
-          "Ba số đo ghi gọn gàng, Đậu dán que lên thiệp liền!",
-          "Đọc thước thần không sai số nào.",
-          "Sổ ghi chép của Thỏ Mây có thêm ba dòng đẹp."
+          "Ba con số ghi ngay ngắn, Đậu dán que lên thiệp ngay!",
+          "Đọc thước thần mà không sai số nào.",
+          "Sổ của Thỏ Mây có thêm ba dòng đẹp nữa."
         ],
         "wrong": [
-          "Que nằm dọc MN ngắn hơn hai que kia nhiều.",
-          "Nhìn lại số thước thần hiện trên que CD xem.",
+          "Que đứng dọc XY ngắn hơn hai que còn lại.",
+          "Nhìn lại số thước thần hiện trên que UV xem.",
           "Một số đo đang bị đổi chỗ sang que khác rồi."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o7",
-          "b2": "o12",
-          "b3": "o4"
+          "b1": "o6",
+          "b2": "o10",
+          "b3": "o5"
         }
       },
-      "goTo": "Quay về bàn thủ công, Hổ Con Đậu kẹp thước thần giữa hai chân trước chờ đọc số"
+      "goTo": "Quay về bàn thủ công, Hổ Con Đậu kẹp thước thần giữa hai chân trước chờ đọc số",
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "que-trang-tri-ngan-dai",
@@ -725,11 +729,11 @@
       "target": "toan2-cd5-b27-ho-con-dau",
       "kind": "challenge",
       "mechanic": "sort",
-      "prompt": "Đậu thách {name}: tớ cắt năm que theo các cạnh của hình ngôi nhà, ai xếp nhanh hơn từ ngắn đến dài thì thắng! Đo độ dài các đoạn thẳng: AB, CD, GH, MN, NP. Vẽ các đoạn thẳng có độ dài như vậy vào vở. Trong game, xếp các que từ ngắn đến dài.",
+      "prompt": "Đậu thách {name}: tớ cắt năm que trang trí nhiều màu, ai xếp nhanh từ ngắn đến dài thì thắng! Hãy xếp năm que theo thứ tự từ ngắn đến dài.",
       "items": [
         {
-          "id": "que-doan-thang-ab",
-          "label": "Đoạn thẳng AB",
+          "id": "que-do",
+          "label": "Que đỏ",
           "image": {
             "kind": "diagram",
             "type": "polyline",
@@ -737,18 +741,18 @@
               "points": [
                 0,
                 0,
-                12,
+                11,
                 0
               ],
               "lengths": [
-                12
+                11
               ]
             }
           }
         },
         {
-          "id": "que-doan-thang-mn",
-          "label": "Đoạn thẳng MN",
+          "id": "que-cam",
+          "label": "Que cam",
           "image": {
             "kind": "diagram",
             "type": "polyline",
@@ -756,18 +760,18 @@
               "points": [
                 0,
                 0,
-                7,
+                6,
                 0
               ],
               "lengths": [
-                7
+                6
               ]
             }
           }
         },
         {
-          "id": "que-doan-thang-cd",
-          "label": "Đoạn thẳng CD",
+          "id": "que-vang",
+          "label": "Que vàng",
           "image": {
             "kind": "diagram",
             "type": "polyline",
@@ -775,18 +779,18 @@
               "points": [
                 0,
                 0,
-                8,
+                13,
                 0
               ],
               "lengths": [
-                8
+                13
               ]
             }
           }
         },
         {
-          "id": "que-doan-thang-np",
-          "label": "Đoạn thẳng NP",
+          "id": "que-xanh",
+          "label": "Que xanh",
           "image": {
             "kind": "diagram",
             "type": "polyline",
@@ -794,18 +798,18 @@
               "points": [
                 0,
                 0,
-                10,
+                4,
                 0
               ],
               "lengths": [
-                10
+                4
               ]
             }
           }
         },
         {
-          "id": "que-doan-thang-gh",
-          "label": "Đoạn thẳng GH",
+          "id": "que-tim",
+          "label": "Que tím",
           "image": {
             "kind": "diagram",
             "type": "polyline",
@@ -813,77 +817,82 @@
               "points": [
                 0,
                 0,
-                3,
+                9,
                 0
               ],
               "lengths": [
-                3
+                9
               ]
             }
           }
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-2-3-a",
-        "toan2-t1-b27-hoat-dong-2-3-b",
-        "toan2-t1-b27-hoat-dong-2-3-c",
-        "toan2-t1-b27-hoat-dong-2-3-d",
-        "toan2-t1-b27-hoat-dong-2-3-e"
-      ],
       "support": {
         "guide": [
           "Đọc số đo ghi trên mỗi que.",
           "Que có số đo bé nhất đứng đầu hàng."
         ],
-        "hint": "Que GH ngắn nhất, que AB dài nhất.",
+        "hint": "Que xanh ngắn nhất, que vàng dài nhất.",
         "answer": {
-          "text": "GH, MN, CD, NP, AB",
-          "explanation": "Số đo các que: AB 12 cm, CD 8 cm, GH 3 cm, MN 7 cm, NP 10 cm; xếp từ ngắn đến dài được GH, MN, CD, NP, AB."
+          "text": "Que xanh, que cam, que tím, que đỏ, que vàng",
+          "explanation": "Số đo các que: xanh 4 cm, cam 6 cm, tím 9 cm, đỏ 11 cm, vàng 13 cm; xếp từ ngắn đến dài được xanh, cam, tím, đỏ, vàng."
         }
       },
       "feedback": {
         "right": [
-          "Cậu xếp xong trước Đậu cả một nhịp, thắng rồi!",
-          "Năm que thẳng hàng từ ngắn đến dài, đẹp như cầu thang.",
-          "Đậu thua mà vẫn cười toe: lần sau tớ luyện thêm."
+          "Cậu xếp xong trước Đậu cả một nhịp, cậu thắng rồi!",
+          "Năm que thẳng hàng từ ngắn đến dài, đẹp như bậc cầu thang.",
+          "Đậu thua mà vẫn cười toe: lần sau tớ sẽ luyện thêm."
         ],
         "wrong": [
-          "Que 7 cm và que 8 cm, que nào ngắn hơn nhỉ?",
-          "Que dài nhất phải đứng cuối hàng nhé.",
+          "Que 9 cm và que 11 cm, que nào ngắn hơn nhỉ?",
+          "Que dài nhất phải nằm ở cuối hàng nhé.",
           "So từng cặp số đo một rồi đổi chỗ cho đúng."
         ]
       },
       "answer": {
         "order": [
-          "que-doan-thang-gh",
-          "que-doan-thang-mn",
-          "que-doan-thang-cd",
-          "que-doan-thang-np",
-          "que-doan-thang-ab"
+          "que-xanh",
+          "que-cam",
+          "que-tim",
+          "que-do",
+          "que-vang"
         ]
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "phieu-ve-va-do",
       "title": "Phiếu vẽ và đo đoạn thẳng",
       "kind": "worksheet",
       "target": "toan2-cd5-b27-bac-thin",
-      "lessonId": "toan2-t1-b27",
-      "text": "Về nhà dùng thước kẻ: vẽ đoạn thẳng AB dài 9 cm và CD dài 12 cm vào vở; đo ba đoạn thẳng AB, CD, MN và các cạnh của hình ngôi nhà trên phiếu, rồi vẽ lại các đoạn thẳng có độ dài như vậy.",
-      "curriculumRef": [
-        "toan2-t1-b27-hoat-dong-2-1-a",
-        "toan2-t1-b27-hoat-dong-2-1-b",
-        "toan2-t1-b27-hoat-dong-2-2-a",
-        "toan2-t1-b27-hoat-dong-2-2-b",
-        "toan2-t1-b27-hoat-dong-2-2-c",
-        "toan2-t1-b27-hoat-dong-2-3-a",
-        "toan2-t1-b27-hoat-dong-2-3-b",
-        "toan2-t1-b27-hoat-dong-2-3-c",
-        "toan2-t1-b27-hoat-dong-2-3-d",
-        "toan2-t1-b27-hoat-dong-2-3-e"
-      ],
-      "goTo": "Ghé bàn thước thần, Bác Thìn đưa phiếu vẽ và đo mang về nhà"
+      "text": "Về nhà dùng thước kẻ: vẽ đoạn thẳng EF dài 8 cm và GH dài 11 cm vào vở; đo ba que ST, UV, XY và các cạnh của chiếc diều trên phiếu, rồi vẽ lại những đoạn thẳng có độ dài như thế.",
+      "goTo": "Ghé bàn thước thần, Bác Thìn đưa phiếu vẽ và đo mang về nhà",
+      "objective": "hinh-phang-ve-xep",
+      "sheet": {
+        "title": "Phiếu thước kẻ: vẽ đoạn thẳng và đo que",
+        "blocks": [
+          {
+            "kind": "activity",
+            "prompt": "Dùng thước kẻ, vẽ hai đoạn thẳng vào vở: chấm điểm đầu ở vạch 0, chấm điểm cuối đúng số đo rồi nối lại.",
+            "media": [
+              "Đoạn thẳng EF dài 8 cm",
+              "Đoạn thẳng GH dài 11 cm"
+            ]
+          },
+          {
+            "kind": "activity",
+            "prompt": "Đo độ dài ba que trang trí và bốn cạnh của chiếc diều in trên phiếu, rồi ghi số đo vào chỗ trống.",
+            "media": [
+              "Que ST dài ... cm",
+              "Que UV dài ... cm",
+              "Que XY dài ... cm",
+              "Bốn cạnh chiếc diều: ... cm, ... cm, ... cm, ... cm"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "huy-hieu-thu-cong",

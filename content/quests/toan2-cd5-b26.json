@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Ong Nhí bay qua ô kính màu",
   "status": "active",
-  "lesson": "toan2-t1-b26",
   "topic": "hinh-phang",
   "summary": "Ong Nhí mới tập bay, lượn qua cửa sổ kính màu của lâu đài theo lối gãy khúc tới hoa cả mắt; {name} cùng Ong Nhí, Bác Tâm thợ kính và họa sĩ Gấu Mực gọi tên đường gấp khúc, tính độ dài đường bay, săn hình tứ giác với Mèo Tuyết ở bàn ghép tranh và cùng Bò Cỏ Non soi đường chạy thi trên bãi cỏ.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Lâu đài, quanh sân hình khối: cửa sổ kính màu, giá để kính màu, góc bàn vẽ, bàn ghép tranh, hiên đá nhìn ra bãi cỏ",
     "goal": "Vẽ lại lối bay của Ong Nhí và tìm đủ các ô kính hình tứ giác",
     "play": "Tìm mảnh kính, nối đường bay, chọn tên, phân loại ô kính, đếm, điền phép tính, nói đồ vật, thi đường bay dài hơn",
-    "learn": "Toán 2 Bài 26: đường gấp khúc, độ dài đường gấp khúc, hình tứ giác",
+    "learn": "Đường gấp khúc, độ dài đường gấp khúc, hình tứ giác",
     "reward": "80 XP, 15 xu, Hình phẳng +2, Phép cộng +1",
-    "next": "Bài 27 \"Thực hành gấp, cắt, ghép, xếp hình. Vẽ đoạn thẳng\""
+    "next": "Gấp, cắt, ghép, xếp hình và vẽ đoạn thẳng"
   },
   "phases": {
     "hook": "ong-hoa-mat",
@@ -144,76 +143,74 @@
       "target": "toan2-cd5-b26-ong-nhi",
       "kind": "challenge",
       "mechanic": "connect",
-      "prompt": "Ong Nhí bay từ D sang ngang tới E, bay thẳng xuống G rồi bay ngang tới H. Kể tên các đường gấp khúc trong mỗi hình vẽ sau: b) Trước hết, nối lối bay của Ong qua các điểm theo thứ tự.",
+      "prompt": "Ong Nhí tập bay một lối mới qua bốn điểm R, S, T, U: từ R vút lên S, rẽ xuống T, rồi lại vút lên U. Hãy nối các điểm theo đúng thứ tự Ong bay để vẽ lối bay.",
       "points": [
         {
-          "id": "d",
+          "id": "r",
           "x": 0,
-          "y": 0,
-          "label": "D"
+          "y": 4,
+          "label": "R"
         },
         {
-          "id": "e",
-          "x": 4,
+          "id": "s",
+          "x": 3,
           "y": 0,
-          "label": "E"
+          "label": "S"
         },
         {
-          "id": "g",
-          "x": 4,
+          "id": "t",
+          "x": 5,
           "y": 3,
-          "label": "G"
+          "label": "T"
         },
         {
-          "id": "h",
+          "id": "u",
           "x": 8,
-          "y": 3,
-          "label": "H"
+          "y": 0,
+          "label": "U"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-hoat-dong-1-b"
-      ],
       "support": {
         "guide": [
           "Nối từng cặp điểm liền nhau theo thứ tự Ong bay.",
-          "Không nối điểm cuối quay về điểm đầu."
+          "Không nối điểm cuối về lại điểm đầu."
         ],
-        "hint": "Ba nét: D với E, E với G, G với H.",
+        "hint": "Ba nét: R với S, S với T, T với U.",
         "answer": {
-          "text": "DE, EG, GH",
-          "explanation": "Lối bay gồm ba đoạn thẳng DE, EG, GH nối tiếp nhau, tạo thành đường gấp khúc DEGH."
+          "text": "RS, ST, TU",
+          "explanation": "Lối bay gồm ba đoạn thẳng RS, ST, TU nối tiếp nhau, tạo thành đường gấp khúc RSTU."
         }
       },
       "feedback": {
         "right": [
-          "Vo ve vèo! Ong bay đúng lối, không đâm vào kính nữa.",
-          "Ba đoạn nối tiếp ngay ngắn, đúng là đường gấp khúc.",
-          "Ong Nhí xin cậu vẽ bản đồ bay cho cả tổ luôn."
+          "Vo ve vút! Ong bay đúng lối, không đâm vào kính nữa.",
+          "Ba đoạn nối tiếp ngay ngắn, đúng là một đường gấp khúc.",
+          "Cả tổ ong muốn nhờ cậu vẽ bản đồ bay cho mình."
         ],
         "wrong": [
-          "Ong không bay chéo từ D xuống G đâu, đi lần lượt nhé.",
-          "Còn thiếu một nét để Ong tới được điểm H.",
-          "Đừng nối H quay về D, Ong đâu có bay vòng tròn."
+          "Ong không bay xuyên thẳng từ R tới U đâu, hãy nối từng chặng.",
+          "Còn thiếu một nét để Ong tới được điểm U.",
+          "Đừng nối U quay về R, Ong đâu có bay vòng tròn."
         ]
       },
       "answer": {
         "edges": [
           [
-            "d",
-            "e"
+            "r",
+            "s"
           ],
           [
-            "e",
-            "g"
+            "s",
+            "t"
           ],
           [
-            "g",
-            "h"
+            "t",
+            "u"
           ]
         ]
-      }
+      },
+      "objective": "hinh-phang-ve-xep"
     },
     {
       "id": "ten-loi-bay-a",
@@ -221,52 +218,50 @@
       "target": "toan2-cd5-b26-bac-tam",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Lối bay thứ nhất gồm hai đoạn thẳng AB và BC nối tiếp nhau. Kể tên các đường gấp khúc trong mỗi hình vẽ sau: a)",
+      "prompt": "Lối bay thứ nhất của Ong Nhí gồm hai đoạn thẳng PQ và QR nối tiếp nhau. Lối bay đó có tên là đường gấp khúc nào?",
       "choices": [
         {
-          "id": "acb",
-          "text": "ACB"
+          "id": "qpr",
+          "text": "QPR"
         },
         {
-          "id": "abc",
-          "text": "ABC"
+          "id": "pqr",
+          "text": "PQR"
         },
         {
-          "id": "ac",
-          "text": "AC"
+          "id": "pr",
+          "text": "PR"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-hoat-dong-1-a"
-      ],
       "support": {
         "guide": [
           "Đọc tên các điểm theo đúng thứ tự trên đường.",
-          "Đường gấp khúc có hai đoạn thì có ba điểm."
+          "Đường gấp khúc có hai đoạn thì đi qua ba điểm."
         ],
-        "hint": "Bắt đầu ở A, đi qua B, kết thúc ở C.",
+        "hint": "Xuất phát ở P, đi qua Q, kết thúc ở R.",
         "answer": {
-          "text": "ABC",
-          "explanation": "Đường đi qua A rồi B rồi C nên tên là đường gấp khúc ABC."
+          "text": "PQR",
+          "explanation": "Đường đi qua P, rồi Q, rồi R nên tên là đường gấp khúc PQR."
         }
       },
       "feedback": {
         "right": [
-          "ABC, gọn như bảng chữ cái!",
+          "PQR, đọc gọn như tiếng ong vo ve!",
           "Đọc tên theo đúng lối bay, chuẩn rồi.",
-          "Ong Nhí ghi tên ABC lên cánh, tự hào ghê."
+          "Ong Nhí ghi tên PQR lên cánh, tự hào ghê."
         ],
         "wrong": [
-          "Tên phải đi qua đủ ba điểm theo thứ tự.",
-          "Điểm B nằm giữa đường, nên đọc ở giữa nhé.",
-          "AC chỉ có hai điểm, thiếu chỗ gãy rồi."
+          "Điểm Q nằm giữa đường đi, nên đọc nó ở vị trí giữa.",
+          "PR chỉ có hai điểm, bỏ mất chỗ gãy rồi.",
+          "Thử chạm ngón tay lần lượt vào từng điểm rồi đọc."
         ]
       },
       "answer": {
-        "choice": "abc"
+        "choice": "pqr"
       },
-      "goTo": "Sang giá để kính màu, Bác Tâm thợ kính đang chép lại lối bay lên giấy"
+      "goTo": "Sang giá để kính màu, Bác Tâm thợ kính đang chép lại lối bay lên giấy",
+      "objective": "hinh-phang-gap-khuc"
     },
     {
       "id": "ten-loi-bay-b",
@@ -274,51 +269,49 @@
       "target": "toan2-cd5-b26-bac-tam",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Nhìn lại lối bay vừa nối. Kể tên các đường gấp khúc trong mỗi hình vẽ sau: b)",
+      "prompt": "Nhìn lại lối bay vừa nối qua bốn điểm R, S, T, U. Lối bay ấy có tên là đường gấp khúc nào?",
       "choices": [
         {
-          "id": "dgeh",
-          "text": "DGEH"
+          "id": "rtsu",
+          "text": "RTSU"
         },
         {
-          "id": "dh",
-          "text": "DH"
+          "id": "ru",
+          "text": "RU"
         },
         {
-          "id": "degh",
-          "text": "DEGH"
+          "id": "rstu",
+          "text": "RSTU"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-hoat-dong-1-b"
-      ],
       "support": {
         "guide": [
           "Đọc lần lượt các điểm từ đầu tới cuối lối bay.",
-          "Ba đoạn thẳng thì có bốn điểm."
+          "Ba đoạn thẳng thì đi qua bốn điểm."
         ],
-        "hint": "D, rồi E, rồi G, rồi H.",
+        "hint": "R, rồi S, rồi T, rồi U.",
         "answer": {
-          "text": "DEGH",
-          "explanation": "Lối bay đi qua D, E, G, H nên tên là đường gấp khúc DEGH."
+          "text": "RSTU",
+          "explanation": "Lối bay đi qua R, S, T, U nên tên là đường gấp khúc RSTU."
         }
       },
       "feedback": {
         "right": [
-          "DEGH! Đọc trơn tru như Ong hát.",
+          "RSTU! Đọc trơn tru như Ong hát.",
           "Bốn điểm đúng thứ tự, không đảo chữ nào.",
-          "Bác Tâm chép tên DEGH vào sổ vẽ ngay."
+          "Bác Tâm chép tên RSTU vào sổ vẽ ngay."
         ],
         "wrong": [
-          "Ong bay qua E trước rồi mới tới G nhé.",
+          "Ong bay qua S trước rồi mới tới T nhé.",
           "Tên đường gấp khúc phải có đủ các điểm gãy.",
           "Dò ngón tay theo lối bay rồi đọc lại xem."
         ]
       },
       "answer": {
-        "choice": "degh"
-      }
+        "choice": "rstu"
+      },
+      "objective": "hinh-phang-gap-khuc"
     },
     {
       "id": "san-o-kinh-tu-giac",
@@ -326,7 +319,7 @@
       "target": "toan2-cd5-b26-ong-nhi",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Sáu ô kính màu đã lắp lại vào khung. Có mấy hình tứ giác? Trước hết, xếp mỗi ô kính vào đúng nhóm.",
+      "prompt": "Sáu ô kính màu đã lắp lại vào khung. Hãy xếp từng ô vào nhóm hình tứ giác hoặc nhóm không phải hình tứ giác.",
       "groups": [
         {
           "id": "nhom-hinh-tu-giac",
@@ -346,12 +339,14 @@
             "type": "shapes",
             "params": {
               "points": [
-                0,
-                4,
                 2,
                 0,
-                4,
-                4
+                5,
+                2,
+                2,
+                5,
+                0,
+                2
               ]
             }
           }
@@ -364,14 +359,12 @@
             "type": "shapes",
             "params": {
               "points": [
-                2,
                 0,
                 4,
-                2,
-                2,
-                4,
+                3,
                 0,
-                2
+                5,
+                4
               ]
             }
           }
@@ -384,14 +377,16 @@
             "type": "shapes",
             "params": {
               "points": [
-                1,
-                0,
-                5,
+                2,
                 0,
                 4,
-                3,
+                1.5,
+                3.2,
+                4,
+                0.8,
+                4,
                 0,
-                3
+                1.5
               ]
             }
           }
@@ -405,10 +400,10 @@
             "params": {
               "points": [
                 0,
-                0,
-                4,
                 1,
-                4,
+                5,
+                1,
+                5,
                 4,
                 0,
                 4
@@ -424,38 +419,12 @@
             "type": "shapes",
             "params": {
               "points": [
-                4,
-                2,
-                3.85,
-                2.77,
-                3.41,
-                3.41,
-                2.77,
-                3.85,
-                2,
-                4,
-                1.23,
-                3.85,
-                0.59,
-                3.41,
-                0.15,
-                2.77,
                 0,
-                2,
-                0.15,
-                1.23,
-                0.59,
-                0.59,
-                1.23,
-                0.15,
-                2,
                 0,
-                2.77,
-                0.15,
-                3.41,
-                0.59,
-                3.85,
-                1.23
+                4,
+                4,
+                0,
+                4
               ]
             }
           }
@@ -468,93 +437,89 @@
             "type": "shapes",
             "params": {
               "points": [
+                0,
                 1,
-                0,
                 3,
                 0,
-                4,
-                3,
-                0,
-                3
+                5,
+                2,
+                1,
+                4
               ]
             }
           }
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-hoat-dong-2"
-      ],
       "support": {
         "guide": [
           "Đếm số cạnh của từng ô kính.",
           "Hình tứ giác có bốn cạnh và bốn đỉnh."
         ],
-        "hint": "Ô kính ba cạnh và ô kính tròn không phải hình tứ giác.",
+        "hint": "Ô kính ba cạnh và ô kính năm cạnh không phải hình tứ giác.",
         "answer": {
-          "text": "Hình tứ giác: ô kính 2, 3, 4, 6; không phải: ô kính 1, 5",
-          "explanation": "Ô kính 2, 3, 4, 6 đều có bốn cạnh nên là hình tứ giác; ô 1 là hình tam giác, ô 5 là hình tròn."
+          "text": "Hình tứ giác: ô kính 1, 4, 6; không phải: ô kính 2, 3, 5",
+          "explanation": "Ô kính 1, 4, 6 đều có bốn cạnh nên là hình tứ giác; ô 2 và ô 5 là hình tam giác, ô 3 có năm cạnh."
         }
       },
       "feedback": {
         "right": [
-          "Bốn ô bốn cạnh đã vào nhóm, khung kính sáng rực!",
+          "Ba ô bốn cạnh vào đúng nhóm, khung kính sáng rực lên!",
           "Ô kính xiên xẹo vẫn là tứ giác, cậu không bị lừa.",
-          "Ong Nhí đếm cạnh theo cậu: một, hai, ba, bốn!"
+          "Ong Nhí đếm cạnh cùng cậu: một, hai, ba, bốn!"
         ],
         "wrong": [
-          "Đếm số cạnh từng ô kính thật chậm xem.",
-          "Ô kính tròn có cạnh thẳng nào đâu nhỉ?",
-          "Một ô bốn cạnh nhưng hơi xiên đang bị bỏ quên."
+          "Đếm số cạnh của từng ô kính thật chậm xem.",
+          "Ô kính nhiều hơn bốn cạnh có phải hình tứ giác không nhỉ?",
+          "Một ô bốn cạnh nhưng hơi lệch đang bị bỏ quên."
         ]
       },
       "answer": {
         "assignment": {
-          "kinh-o-kinh-1": "nhom-khong-phai-hinh-tu-giac",
-          "kinh-o-kinh-2": "nhom-hinh-tu-giac",
-          "kinh-o-kinh-3": "nhom-hinh-tu-giac",
+          "kinh-o-kinh-1": "nhom-hinh-tu-giac",
+          "kinh-o-kinh-2": "nhom-khong-phai-hinh-tu-giac",
+          "kinh-o-kinh-3": "nhom-khong-phai-hinh-tu-giac",
           "kinh-o-kinh-4": "nhom-hinh-tu-giac",
           "kinh-o-kinh-5": "nhom-khong-phai-hinh-tu-giac",
           "kinh-o-kinh-6": "nhom-hinh-tu-giac"
         }
       },
-      "goTo": "Về cửa sổ kính màu, Ong Nhí đang lắp sáu ô kính vào khung"
+      "goTo": "Về cửa sổ kính màu, Ong Nhí đang lắp sáu ô kính vào khung",
+      "objective": "hinh-phang-tu-giac"
     },
     {
       "id": "dem-o-kinh-tu-giac",
       "title": "Đếm ô kính tứ giác",
       "target": "toan2-cd5-b26-ong-nhi",
       "kind": "riddle",
-      "question": "Ong Nhí muốn khắc số lên khung cửa sổ. Có mấy hình tứ giác?",
+      "question": "Ong Nhí muốn khắc số lên khung cửa sổ: trong sáu ô kính vừa xếp có bao nhiêu ô kính hình tứ giác?",
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-hoat-dong-2"
-      ],
       "support": {
         "guide": [
           "Đếm các ô kính em vừa xếp vào nhóm hình tứ giác."
         ],
-        "hint": "Nhóm hình tứ giác có ô kính 2, 3, 4, 6.",
+        "hint": "Nhóm hình tứ giác gồm ô kính 1, 4, 6.",
         "answer": {
-          "text": "4 hình tứ giác",
-          "explanation": "Có 4 ô kính hình tứ giác."
+          "text": "3 ô kính",
+          "explanation": "Có 3 ô kính hình tứ giác."
         }
       },
       "feedback": {
         "right": [
-          "Ong Nhí khắc số 4 lên khung, nét chữ hơi run vì vui quá.",
+          "Ong Nhí khắc số 3 lên khung, nét chữ hơi run vì vui quá.",
           "Đếm đúng phóc, khung kính vừa vặn rồi.",
-          "Bốn ô tứ giác, không thừa không thiếu!"
+          "Ba ô tứ giác, không thừa không thiếu!"
         ],
         "wrong": [
-          "Nhìn lại nhóm hình tứ giác lúc nãy mà đếm nhé.",
-          "Ô tam giác và ô tròn không được tính đâu.",
-          "Đếm từng ô một, chạm tay vào cho chắc."
+          "Quay lại nhóm hình tứ giác vừa xếp rồi đếm các ô trong đó.",
+          "Ô ba cạnh và ô năm cạnh không được tính vào đâu.",
+          "Chạm tay vào từng ô kính mà đếm cho chắc ăn."
         ]
       },
       "answer": {
-        "value": 4
-      }
+        "value": 3
+      },
+      "objective": "hinh-phang-tu-giac"
     },
     {
       "id": "do-duong-bay-abcd",
@@ -562,23 +527,23 @@
       "target": "toan2-cd5-b26-bac-tam",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Ong Nhí bay một lối mới qua A, B, C, D: đoạn AB dài 5 cm, đoạn BC dài 4 cm, đoạn CD dài 4 cm. Tính độ dài đường gấp khúc ABCD.",
-      "template": "Bài giải\nĐộ dài đường gấp khúc ABCD là:\n{{b1}} + {{b2}} + {{b3}} = {{b4}} (cm)\nĐáp số: {{b5}} cm.",
+      "prompt": "Ong Nhí bay một lối mới qua bốn điểm E, F, G, H: đoạn EF dài 6 cm, đoạn FG dài 5 cm, đoạn GH dài 3 cm. Hãy tính độ dài đường gấp khúc EFGH.",
+      "template": "Cách làm\nĐộ dài đường gấp khúc EFGH là:\n{{b1}} + {{b2}} + {{b3}} = {{b4}} (cm)\nTrả lời: lối bay dài {{b5}} cm.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
-            },
-            {
               "id": "o5",
               "text": "5"
             },
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -586,16 +551,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
+              "id": "o3",
+              "text": "3"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o14",
-              "text": "14"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -603,38 +568,21 @@
           "id": "b3",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
-            },
-            {
-              "id": "o4",
-              "text": "4"
+              "id": "o3",
+              "text": "3"
             },
             {
               "id": "o5",
               "text": "5"
+            },
+            {
+              "id": "o8",
+              "text": "8"
             }
           ]
         },
         {
           "id": "b4",
-          "options": [
-            {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o13",
-              "text": "13"
-            }
-          ]
-        },
-        {
-          "id": "b5",
           "options": [
             {
               "id": "o13",
@@ -649,45 +597,64 @@
               "text": "15"
             }
           ]
+        },
+        {
+          "id": "b5",
+          "options": [
+            {
+              "id": "o14",
+              "text": "14"
+            },
+            {
+              "id": "o15",
+              "text": "15"
+            },
+            {
+              "id": "o41",
+              "text": "41"
+            }
+          ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-hoat-dong-3"
-      ],
       "support": {
         "guide": [
-          "Độ dài đường gấp khúc bằng tổng độ dài các đoạn thẳng của nó.",
-          "Viết lần lượt AB, BC, CD rồi cộng."
+          "Muốn biết lối bay dài bao nhiêu, em cộng độ dài từng khúc nối nhau của nó.",
+          "Viết lần lượt EF, FG, GH rồi cộng."
         ],
-        "hint": "5 + 4 = 9, rồi cộng tiếp 4.",
+        "hint": "6 + 5 = 11, rồi cộng tiếp 3.",
         "answer": {
-          "text": "Bài giải; Độ dài đường gấp khúc ABCD là:; 5 + 4 + 4 = 13 (cm); Đáp số: 13 cm.",
-          "explanation": "AB + BC + CD = 5 + 4 + 4 = 13, nên đường gấp khúc ABCD dài 13 cm."
+          "text": "6 + 5 + 3 = 14 (cm); lối bay dài 14 cm",
+          "explanation": "EF + FG + GH = 6 + 5 + 3 = 14, nên đường gấp khúc EFGH dài 14 cm."
         }
       },
       "feedback": {
         "right": [
-          "Mười ba xăng-ti-mét, Ong Nhí bay hết lối không mỏi cánh!",
-          "Bài giải trình bày đẹp như vở mẫu của cô.",
+          "Mười bốn xăng-ti-mét, Ong Nhí bay hết lối vẫn chưa mỏi cánh!",
+          "Cách làm gọn như bài mẫu, từng phép cộng đều chuẩn.",
           "Cộng ba đoạn liền một mạch, giỏi quá {name}."
         ],
         "wrong": [
-          "Nhớ cộng đủ cả ba đoạn AB, BC, CD nhé.",
-          "Đáp số phải giống kết quả phép cộng đấy.",
-          "Thử cộng 5 với 4 trước, rồi thêm 4 nữa."
+          "Nhớ cộng đủ cả ba đoạn EF, FG, GH nhé.",
+          "Phần trả lời phải bằng kết quả của phép cộng.",
+          "Thử cộng 6 với 5 trước, rồi thêm 3 nữa."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o5",
-          "b2": "o4",
-          "b3": "o4",
-          "b4": "o13",
-          "b5": "o13"
+          "b1": "o6",
+          "b2": "o5",
+          "b3": "o3",
+          "b4": "o14",
+          "b5": "o14"
         }
       },
-      "goTo": "Ra giá để kính màu, Bác Tâm thợ kính căng thước đo lối bay mới"
+      "goTo": "Ra giá để kính màu, Bác Tâm thợ kính căng thước đo lối bay mới",
+      "objective": "hinh-phang-gap-khuc",
+      "expression": {
+        "b4": "6 + 5 + 3",
+        "b5": "6 + 5 + 3"
+      }
     },
     {
       "id": "hai-loi-di-tiep",
@@ -698,61 +665,58 @@
       "lines": [
         {
           "speaker": "Gấu Mực",
-          "text": "Lại đây xem! Tớ là Gấu Mực, vừa vẽ xong bức tranh phòng học, trong đó giấu đủ thứ hình gấp khúc với tứ giác."
+          "text": "Lại đây xem! Tớ là Gấu Mực, vừa vẽ xong bức tranh nhà bếp của lâu đài, trong đó giấu đủ thứ hình gấp khúc với tứ giác."
         },
         {
           "speaker": "Ong Nhí",
-          "text": "Tớ còn ghi lại đường chạy của Rô-bốt, Việt và Mai qua bãi cỏ nữa. Chạy gì mà ngoằn ngoèo như tớ bay!"
+          "text": "Tớ còn ghi lại đường chạy thi của Thỏ Mây, Hổ Con Đậu và Gấu Nút qua bãi cỏ nữa. Chạy gì mà ngoằn ngoèo như tớ bay!"
         },
         {
           "speaker": "Gấu Mực",
-          "text": "{name} muốn soi tranh phòng học trước, hay xem ba bạn chạy thi trước?"
+          "text": "{name} muốn soi tranh nhà bếp trước, hay xem ba bạn chạy thi trước?"
         }
       ],
       "choices": [
         {
-          "text": "Soi tranh phòng học trước",
-          "reply": "Gấu Mực giơ cây bút lông chỉ lên tường: Bắt đầu từ mấy cái giá sách nhé!"
+          "text": "Soi tranh nhà bếp trước",
+          "reply": "Gấu Mực giơ cây bút lông chỉ lên tường: Bắt đầu từ ống khói gãy khúc nhé!"
         },
         {
           "text": "Xem ba bạn chạy thi trước",
-          "reply": "Ong Nhí: Được thôi, nhưng soi tranh một chút đã, tranh sắp khô rồi!"
+          "reply": "Ong Nhí: Được thôi, nhưng soi tranh một chút đã, màu sắp khô rồi!"
         }
       ],
       "en": {
         "title": "Where to next?",
         "goTo": "Fly over to the corner of the drawing table, where Gấu Mực is hanging up a still-wet classroom painting",
         "lines": [
-          "Come and look! I'm Gấu Mực, and I just finished a painting of a classroom, with all sorts of broken lines and quadrilaterals hidden in it.",
-          "I also recorded the paths Rô-bốt, Việt and Mai ran across the lawn. They ran as zigzaggy as I fly!",
-          "{name}, do you want to study the classroom painting first, or look at the three runners first?"
+          "Come and see! I'm Gấu Mực, and I've just finished a painting of the castle kitchen, with all sorts of broken lines and four-sided shapes hidden in it.",
+          "I also wrote down the race routes of Thỏ Mây, Hổ Con Đậu and Gấu Nút across the lawn. What winding runs, just like my flying!",
+          "{name}, do you want to look at the kitchen painting first, or watch the three friends race first?"
         ],
         "choices": [
           {
-            "text": "Study the classroom painting first",
-            "reply": "Gấu Mực points his paintbrush at the wall: Start with the bookshelves!"
+            "text": "The kitchen painting first",
+            "reply": "Gấu Mực points his brush at the wall: Let's begin with the crooked chimney!"
           },
           {
-            "text": "Look at the three runners first",
-            "reply": "Ong Nhí: Sure, but study the painting a little first, it's nearly dry!"
+            "text": "The three friends racing first",
+            "reply": "Ong Nhí: Sure, but look at the painting for a moment first, the colours are about to dry!"
           }
         ]
       }
     },
     {
       "id": "soi-tranh-phong-hoc",
-      "title": "Soi tranh phòng học",
+      "title": "Soi tranh nhà bếp",
       "kind": "speak",
       "target": "toan2-cd5-b26-gau-muc",
-      "prompt": "Trong tranh phòng học có bức tranh treo tường, đồng hồ, hai giá sách treo tường, cửa sổ có rèm, bàn học, ghế xoay và hai tủ ngăn kéo. a) Tìm hai đồ vật có dạng đường gấp khúc. b) Tìm hai đồ vật có dạng hình tứ giác. Nói cho Gấu Mực nghe.",
+      "prompt": "Bức tranh nhà bếp của lâu đài vẽ: cái thớt, ống khói gãy khúc, giá chén xếp bậc thang, cửa sổ có rèm, mặt bàn ăn, ghế dài và hai ngăn tủ. Hãy tìm hai đồ vật có hình dạng giống đường gấp khúc và hai đồ vật có hình dạng giống hình tứ giác, rồi nói cho Gấu Mực nghe.",
       "hints": [
-        "Giá sách treo tường gãy khúc như bậc thang.",
-        "Mặt tủ ngăn kéo, ô cửa sổ có mấy cạnh?"
+        "Ống khói gãy khúc và giá chén xếp bậc thang gãy ở mấy chỗ?",
+        "Mặt bàn ăn và ngăn tủ có mấy cạnh nhỉ?"
       ],
-      "curriculumRef": [
-        "toan2-t1-b26-luyen-tap-1-a",
-        "toan2-t1-b26-luyen-tap-1-b"
-      ]
+      "objective": "hinh-phang-nhan-dien"
     },
     {
       "id": "tu-giac-trong-tranh-ghep",
@@ -760,11 +724,28 @@
       "target": "toan2-cd5-b26-meo-tuyet",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Mèo Tuyết ghép ba bức tranh từ các mảnh hình. Trong mỗi hình dưới đây có mấy hình tứ giác?",
-      "template": "a) Thuyền buồm: hai cánh buồm hình tam giác, thân thuyền hình thang. Có {{b1}} hình tứ giác.\nb) Xe tải: thùng trước, ca-bin, thùng sau đều có bốn cạnh, thêm bốn bánh xe tròn. Có {{b2}} hình tứ giác.\nc) Cái cây: một hình tam giác trên ngọn, hai hình thang xếp chồng, hai hình tam giác ở gốc. Có {{b3}} hình tứ giác.",
+      "prompt": "Mèo Tuyết ghép ba bức tranh từ các mảnh hình. Hãy đếm xem mỗi bức có bao nhiêu hình tứ giác.",
+      "template": "Ngôi nhà gỗ: mái là hình tam giác, tường nhà, cửa ra vào và cửa sổ đều có bốn cạnh. Có {{b1}} hình tứ giác.\nCon diều: thân diều hình thoi, đuôi gồm ba hình tam giác nhỏ. Có {{b2}} hình tứ giác.\nTàu hỏa đồ chơi: đầu tàu hình thang, ba toa hình chữ nhật, các bánh xe tròn. Có {{b3}} hình tứ giác.",
       "blanks": [
         {
           "id": "b1",
+          "options": [
+            {
+              "id": "o2",
+              "text": "2"
+            },
+            {
+              "id": "o3",
+              "text": "3"
+            },
+            {
+              "id": "o4",
+              "text": "4"
+            }
+          ]
+        },
+        {
+          "id": "b2",
           "options": [
             {
               "id": "o0",
@@ -775,13 +756,13 @@
               "text": "1"
             },
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o4",
+              "text": "4"
             }
           ]
         },
         {
-          "id": "b2",
+          "id": "b3",
           "options": [
             {
               "id": "o3",
@@ -792,66 +773,45 @@
               "text": "4"
             },
             {
-              "id": "o13",
-              "text": "13"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o0",
-              "text": "0"
-            },
-            {
-              "id": "o1",
-              "text": "1"
-            },
-            {
-              "id": "o2",
-              "text": "2"
+              "id": "o7",
+              "text": "7"
             }
           ]
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-luyen-tap-2-a",
-        "toan2-t1-b26-luyen-tap-2-b",
-        "toan2-t1-b26-luyen-tap-2-c"
-      ],
       "support": {
         "guide": [
-          "Hình thang cũng có bốn cạnh, nên là hình tứ giác.",
+          "Hình thang, hình thoi, hình chữ nhật đều có bốn cạnh nên đều là hình tứ giác.",
           "Không đếm hình tam giác và hình tròn."
         ],
-        "hint": "Xe tải có ba mảnh bốn cạnh; cái cây có hai hình thang.",
+        "hint": "Tàu hỏa: một đầu tàu cộng ba toa; con diều chỉ có phần thân.",
         "answer": {
-          "text": "a) Thuyền buồm: hai cánh buồm hình tam giác, thân thuyền hình thang. Có 1 hình tứ giác.; b) Xe tải: thùng trước, ca-bin, thùng sau đều có bốn cạnh, thêm bốn bánh xe tròn. Có 3 hình tứ giác.; c) Cái cây: một hình tam giác trên ngọn, hai hình thang xếp chồng, hai hình tam giác ở gốc. Có 2 hình tứ giác.",
-          "explanation": "Thuyền có 1 hình tứ giác (thân thuyền), xe tải có 3, cái cây có 2."
+          "text": "Ngôi nhà gỗ: 3; con diều: 1; tàu hỏa: 4",
+          "explanation": "Ngôi nhà có tường, cửa ra vào, cửa sổ là 3 hình tứ giác; con diều chỉ có thân diều là 1; tàu hỏa có đầu tàu và ba toa là 4."
         }
       },
       "feedback": {
         "right": [
-          "Thuyền, xe, cây đều được soi kĩ, không sót mảnh nào!",
+          "Nhà, diều, tàu đều được soi kĩ, không sót mảnh nào!",
           "Hình thang cũng là tứ giác, cậu nhớ rất chắc.",
-          "Mèo Tuyết treo ba bức tranh lên, chỗ nào cũng khen."
+          "Mèo Tuyết treo ba bức tranh lên, ai ghé qua cũng khen."
         ],
         "wrong": [
-          "Bánh xe tròn không phải hình tứ giác nhé.",
-          "Thân thuyền hình thang có mấy cạnh? Đếm lại xem.",
-          "Cái cây có hai tầng hình thang, đừng bỏ qua."
+          "Bánh xe tròn và mái nhà tam giác không phải hình tứ giác.",
+          "Đuôi diều gồm các hình tam giác, chúng có tính không nhỉ?",
+          "Tàu hỏa có đầu tàu và cả ba toa, đừng bỏ sót toa nào."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o1",
-          "b2": "o3",
-          "b3": "o2"
+          "b1": "o3",
+          "b2": "o1",
+          "b3": "o4"
         }
       },
-      "goTo": "Sang bàn ghép tranh, Mèo Tuyết đang xếp ba bức tranh mảnh hình"
+      "goTo": "Sang bàn ghép tranh, Mèo Tuyết đang xếp ba bức tranh mảnh hình",
+      "objective": "hinh-phang-tu-giac"
     },
     {
       "id": "doc-ten-duong-chay",
@@ -859,70 +819,68 @@
       "target": "toan2-cd5-b26-bo-co-non",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Rô-bốt, Việt và Mai chạy qua một bãi cỏ theo ba đường như hình vẽ. Rô-bốt chạy thẳng từ A lên B; Việt chạy qua C, D, E rồi tới G; Mai chạy qua H, I rồi tới K. a) Đọc tên đường chạy của mỗi bạn.",
+      "prompt": "Thỏ Mây, Hổ Con Đậu và Gấu Nút chạy thi qua một bãi cỏ theo ba đường khác nhau. Thỏ Mây chạy thẳng một mạch từ X tới Y; Hổ Con Đậu chạy qua M, N, P rồi tới Q; Gấu Nút chạy qua S, T rồi tới U. Hãy ghép tên đường chạy với từng bạn.",
       "groups": [
         {
-          "id": "nhom-ro-bot",
-          "label": "Rô-bốt"
+          "id": "nhom-tho-may",
+          "label": "Thỏ Mây"
         },
         {
-          "id": "nhom-viet",
-          "label": "Việt"
+          "id": "nhom-ho-con-dau",
+          "label": "Hổ Con Đậu"
         },
         {
-          "id": "nhom-mai",
-          "label": "Mai"
+          "id": "nhom-gau-nut",
+          "label": "Gấu Nút"
         }
       ],
       "items": [
         {
-          "id": "duong-chay-hik",
-          "label": "HIK"
+          "id": "duong-chay-stu",
+          "label": "STU"
         },
         {
-          "id": "duong-chay-ab",
-          "label": "AB"
+          "id": "duong-chay-xy",
+          "label": "XY"
         },
         {
-          "id": "duong-chay-cdeg",
-          "label": "CDEG"
+          "id": "duong-chay-mnpq",
+          "label": "MNPQ"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-luyen-tap-3-a"
-      ],
       "support": {
         "guide": [
-          "Tên đường chạy là các điểm bạn đó đi qua, theo thứ tự.",
+          "Tên đường chạy là tên các điểm bạn ấy đi qua, đọc theo thứ tự.",
           "Ghép mỗi tên đường với bạn đã chạy trên đó."
         ],
-        "hint": "Rô-bốt chỉ đi qua hai điểm A và B.",
+        "hint": "Thỏ Mây chỉ đi qua hai điểm X và Y.",
         "answer": {
-          "text": "Rô-bốt: AB; Việt: CDEG; Mai: HIK",
-          "explanation": "Đường chạy của từng bạn: Rô-bốt: AB; Việt: CDEG; Mai: HIK."
+          "text": "Thỏ Mây: XY; Hổ Con Đậu: MNPQ; Gấu Nút: STU",
+          "explanation": "Đường chạy của từng bạn: Thỏ Mây chạy theo XY; Hổ Con Đậu chạy theo MNPQ; Gấu Nút chạy theo STU."
         }
       },
       "feedback": {
         "right": [
-          "Ba đường chạy đã có chủ, không ai chạy nhầm làn!",
-          "Đọc tên đường chạy nhanh hơn cả Rô-bốt chạy.",
-          "Ong Nhí bay một vòng mừng ba vận động viên."
+          "Ba đường chạy đã tìm được chủ, không ai chạy nhầm làn!",
+          "Cậu đọc tên đường chạy nhanh hơn cả Hổ Con Đậu chạy.",
+          "Ong Nhí bay một vòng chúc mừng ba vận động viên."
         ],
         "wrong": [
-          "Việt chạy qua bốn điểm, tên đường phải có bốn chữ.",
-          "Tên đường của Mai bắt đầu bằng chữ H đấy.",
-          "Rô-bốt chạy thẳng một mạch, đường nào chỉ có hai điểm?"
+          "Hổ Con Đậu qua bốn điểm, tên đường phải có bốn chữ cái.",
+          "Tên đường của Gấu Nút bắt đầu bằng chữ S đấy.",
+          "Thỏ Mây chạy thẳng một mạch, đường nào chỉ có hai điểm?"
         ]
       },
       "answer": {
         "assignment": {
-          "duong-chay-hik": "nhom-mai",
-          "duong-chay-ab": "nhom-ro-bot",
-          "duong-chay-cdeg": "nhom-viet"
+          "duong-chay-stu": "nhom-gau-nut",
+          "duong-chay-xy": "nhom-tho-may",
+          "duong-chay-mnpq": "nhom-ho-con-dau"
         }
       },
-      "goTo": "Ra hiên đá nhìn ra bãi cỏ, Bò Cỏ Non đang làm trọng tài cuộc chạy thi"
+      "goTo": "Ra hiên đá nhìn ra bãi cỏ, Bò Cỏ Non đang làm trọng tài cuộc chạy thi",
+      "objective": "hinh-phang-gap-khuc"
     },
     {
       "id": "ai-chay-gap-khuc",
@@ -930,54 +888,52 @@
       "target": "toan2-cd5-b26-bo-co-non",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Rô-bốt, Việt và Mai chạy qua một bãi cỏ theo ba đường như hình vẽ. b) Bạn nào chạy qua bãi cỏ theo đường gấp khúc? Chọn tất cả các bạn đó.",
+      "prompt": "Thỏ Mây, Hổ Con Đậu và Gấu Nút chạy thi qua bãi cỏ theo ba đường vừa nói. Bạn nào chạy theo đường gấp khúc? Chọn tất cả các bạn đó.",
       "choices": [
         {
-          "id": "ro-bot",
-          "text": "Rô-bốt"
+          "id": "tho-may",
+          "text": "Thỏ Mây"
         },
         {
-          "id": "viet",
-          "text": "Việt"
+          "id": "ho-con-dau",
+          "text": "Hổ Con Đậu"
         },
         {
-          "id": "mai",
-          "text": "Mai"
+          "id": "gau-nut",
+          "text": "Gấu Nút"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-luyen-tap-3-b"
-      ],
       "support": {
         "guide": [
-          "Đường gấp khúc có từ hai đoạn thẳng trở lên.",
+          "Đường gấp khúc gồm từ hai đoạn thẳng nối tiếp trở lên.",
           "Đường chỉ có một đoạn thẳng thì không gãy khúc."
         ],
-        "hint": "Rô-bốt chạy một mạch thẳng tắp.",
+        "hint": "Thỏ Mây chạy một mạch thẳng tắp.",
         "answer": {
-          "text": "Việt, Mai",
-          "explanation": "Việt (CDEG) và Mai (HIK) chạy theo đường gấp khúc; Rô-bốt chạy theo đoạn thẳng AB."
+          "text": "Hổ Con Đậu, Gấu Nút",
+          "explanation": "Hổ Con Đậu (MNPQ) và Gấu Nút (STU) chạy theo đường gấp khúc; Thỏ Mây chạy theo đoạn thẳng XY."
         }
       },
       "feedback": {
         "right": [
-          "Việt và Mai rẽ ngoắt ngoéo, chuẩn đường gấp khúc!",
-          "Rô-bốt chạy thẳng băng nên không được chọn, đúng rồi.",
-          "Bò Cỏ Non vẽ thêm hai lá cờ cho Việt và Mai."
+          "Hổ Con Đậu và Gấu Nút rẽ ngoắt ngoéo, đúng là đường gấp khúc!",
+          "Thỏ Mây chạy thẳng băng nên không được chọn, cậu chọn chuẩn rồi.",
+          "Bò Cỏ Non cắm thêm hai lá cờ cho hai bạn rẽ khúc."
         ],
         "wrong": [
-          "Đường của Rô-bốt có chỗ nào gãy không nhỉ?",
+          "Đường của Thỏ Mây có chỗ nào gãy không nhỉ?",
           "Còn một bạn chạy gãy khúc chưa được chọn.",
           "Đếm số đoạn thẳng trên mỗi đường chạy xem."
         ]
       },
       "answer": {
         "choices": [
-          "viet",
-          "mai"
+          "ho-con-dau",
+          "gau-nut"
         ]
-      }
+      },
+      "objective": "hinh-phang-gap-khuc"
     },
     {
       "id": "dem-doan-duong-chay",
@@ -985,7 +941,7 @@
       "target": "toan2-cd5-b26-gau-muc",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Rô-bốt, Việt và Mai chạy qua một bãi cỏ theo ba đường như hình vẽ. c) Đường chạy của bạn nào gồm hai đoạn thẳng? c) Đường chạy của bạn nào gồm ba đoạn thẳng? Xếp mỗi bạn vào đúng nhóm.",
+      "prompt": "Thỏ Mây, Hổ Con Đậu và Gấu Nút chạy theo ba đường đã cho. Mỗi đường chạy gồm bao nhiêu đoạn thẳng? Xếp từng bạn vào nhóm thích hợp.",
       "groups": [
         {
           "id": "nhom-mot-doan-thang",
@@ -1002,54 +958,51 @@
       ],
       "items": [
         {
-          "id": "ban-viet",
-          "label": "Việt"
+          "id": "ban-tho-may",
+          "label": "Thỏ Mây"
         },
         {
-          "id": "ban-ro-bot",
-          "label": "Rô-bốt"
+          "id": "ban-ho-con-dau",
+          "label": "Hổ Con Đậu"
         },
         {
-          "id": "ban-mai",
-          "label": "Mai"
+          "id": "ban-gau-nut",
+          "label": "Gấu Nút"
         }
       ],
       "skill": "hinh-phang",
-      "curriculumRef": [
-        "toan2-t1-b26-luyen-tap-3-c1",
-        "toan2-t1-b26-luyen-tap-3-c2"
-      ],
       "support": {
         "guide": [
-          "Số đoạn thẳng ít hơn số điểm trên đường đi một.",
-          "HIK có ba điểm, CDEG có bốn điểm."
+          "Số đoạn thẳng luôn ít hơn số điểm trên đường đi một đơn vị.",
+          "STU có ba điểm, MNPQ có bốn điểm."
         ],
-        "hint": "Mai đi qua ba điểm H, I, K.",
+        "hint": "Gấu Nút đi qua ba điểm S, T, U.",
         "answer": {
-          "text": "Hai đoạn thẳng: Mai; Ba đoạn thẳng: Việt; Một đoạn thẳng: Rô-bốt",
-          "explanation": "Đường của Mai (HIK) gồm hai đoạn thẳng HI, IK; đường của Việt (CDEG) gồm ba đoạn thẳng CD, DE, EG; Rô-bốt chỉ có đoạn AB."
+          "text": "Một đoạn: Thỏ Mây; hai đoạn: Gấu Nút; ba đoạn: Hổ Con Đậu",
+          "explanation": "Gấu Nút (STU) chạy hai đoạn ST, TU; Hổ Con Đậu (MNPQ) chạy ba đoạn MN, NP, PQ; Thỏ Mây chỉ chạy đoạn XY."
         }
       },
       "feedback": {
         "right": [
-          "Đếm đoạn chuẩn tới từng khúc rẽ!",
-          "Mai hai đoạn, Việt ba đoạn, Rô-bốt một đoạn, gọn gàng.",
-          "Ong Nhí phong cậu làm trọng tài bãi cỏ."
+          "Số đoạn của cả ba đường đều đếm trúng, Gấu Mực gật gù bên bàn vẽ!",
+          "Thỏ Mây một đoạn, Gấu Nút hai đoạn, Hổ Con Đậu ba đoạn, gọn gàng!",
+          "Ong Nhí phong cậu làm trọng tài của cả bãi cỏ."
         ],
         "wrong": [
-          "Đường HIK có mấy khúc? Đếm từ H tới K xem.",
-          "Việt rẽ hai lần nên đường có ba đoạn đấy.",
+          "Đường STU có mấy khúc? Đếm từ S tới U xem.",
+          "Hổ Con Đậu rẽ hai lần nên đường có ba đoạn đấy.",
           "Một bạn đang đứng nhầm nhóm rồi."
         ]
       },
       "answer": {
         "assignment": {
-          "ban-viet": "nhom-ba-doan-thang",
-          "ban-ro-bot": "nhom-mot-doan-thang",
-          "ban-mai": "nhom-hai-doan-thang"
+          "ban-tho-may": "nhom-mot-doan-thang",
+          "ban-ho-con-dau": "nhom-ba-doan-thang",
+          "ban-gau-nut": "nhom-hai-doan-thang"
         }
       },
-      "goTo": "Về góc bàn vẽ, Gấu Mực chấm bút lông đếm từng khúc đường chạy"
+      "goTo": "Về góc bàn vẽ, Gấu Mực chấm bút lông đếm từng khúc đường chạy",
+      "objective": "hinh-phang-gap-khuc"
     },
     {
       "id": "tinh-hai-loi-bay",
@@ -1057,23 +1010,23 @@
       "target": "toan2-cd5-b26-gau-muc",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Gấu Mực vẽ hai lối bay mới: đường ABC có AB dài 3 cm, BC dài 6 cm; đường MNPQ có MN, NP, PQ đều dài 4 cm. Tính độ dài đường gấp khúc ABC và MNPQ.",
-      "template": "a) {{b1}} + {{b2}} = {{b3}} (cm)\nb) {{b4}} + {{b5}} + {{b6}} = {{b7}} (cm)",
+      "prompt": "Gấu Mực vẽ hai lối bay mới: đường EFG có EF dài 5 cm, FG dài 4 cm; đường HIKL có HI, IK, KL đều dài 5 cm. Hãy tính độ dài hai đường gấp khúc.",
+      "template": "Đường EFG: {{b1}} + {{b2}} = {{b3}} (cm)\nĐường HIKL: {{b4}} + {{b5}} + {{b6}} = {{b7}} (cm)",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o4",
+              "text": "4"
             },
             {
               "id": "o5",
               "text": "5"
             },
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o9",
+              "text": "9"
             }
           ]
         },
@@ -1081,16 +1034,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o4",
+              "text": "4"
             },
             {
               "id": "o6",
               "text": "6"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o9",
+              "text": "9"
             }
           ]
         },
@@ -1115,16 +1068,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
-            },
-            {
-              "id": "o4",
-              "text": "4"
+              "id": "o3",
+              "text": "3"
             },
             {
               "id": "o5",
               "text": "5"
+            },
+            {
+              "id": "o10",
+              "text": "10"
             }
           ]
         },
@@ -1132,16 +1085,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -1153,91 +1106,6 @@
               "text": "4"
             },
             {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o14",
-              "text": "14"
-            }
-          ]
-        },
-        {
-          "id": "b7",
-          "options": [
-            {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o12",
-              "text": "12"
-            },
-            {
-              "id": "o22",
-              "text": "22"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b26-luyen-tap-4-a",
-        "toan2-t1-b26-luyen-tap-4-b"
-      ],
-      "support": {
-        "guide": [
-          "Cộng độ dài tất cả các đoạn thẳng của mỗi đường.",
-          "Đường MNPQ có ba đoạn bằng nhau."
-        ],
-        "hint": "4 + 4 = 8, cộng thêm 4 nữa.",
-        "answer": {
-          "text": "a) 3 + 6 = 9 (cm); b) 4 + 4 + 4 = 12 (cm)",
-          "explanation": "ABC dài 3 + 6 = 9 cm; MNPQ dài 4 + 4 + 4 = 12 cm."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Chín và mười hai, cộng không sai một li!",
-          "Hai lối bay đo xong, Ong Nhí bay thử ngay.",
-          "Cậu cộng ba số bằng nhau thật nhanh."
-        ],
-        "wrong": [
-          "Đường MNPQ có ba đoạn, đừng quên đoạn thứ ba.",
-          "Cộng lại phép tính đường ABC xem: 3 với 6.",
-          "Mỗi ô trống ghi đúng độ dài của từng đoạn nhé."
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o3",
-          "b2": "o6",
-          "b3": "o9",
-          "b4": "o4",
-          "b5": "o4",
-          "b6": "o4",
-          "b7": "o12"
-        }
-      }
-    },
-    {
-      "id": "thi-bay-ai-xa-hon",
-      "title": "Thi bay: lối nào dài hơn?",
-      "goTo": "Quay lại cửa sổ kính màu, Ong Nhí thách thi bay",
-      "target": "toan2-cd5-b26-ong-nhi",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Ong Nhí bay đường gấp khúc màu hồng gồm các đoạn dài 1, 2, 3 cạnh ô. {name} bay đường gấp khúc màu xanh gồm các đoạn dài 2, 2, 1, 1, 1 cạnh ô. Đường gấp khúc nào dài hơn?",
-      "template": "Đường màu hồng dài {{b1}} cạnh ô.\nĐường màu xanh dài {{b2}} cạnh ô.\n{{b3}} dài hơn.",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
               "id": "o5",
               "text": "5"
             },
@@ -1248,19 +1116,105 @@
           ]
         },
         {
-          "id": "b2",
+          "id": "b7",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o10",
+              "text": "10"
             },
+            {
+              "id": "o15",
+              "text": "15"
+            },
+            {
+              "id": "o20",
+              "text": "20"
+            }
+          ]
+        }
+      ],
+      "skill": "phep-cong",
+      "support": {
+        "guide": [
+          "Cộng độ dài tất cả các đoạn thẳng của mỗi đường.",
+          "Đường HIKL có ba đoạn bằng nhau."
+        ],
+        "hint": "5 + 5 = 10, cộng thêm 5 nữa.",
+        "answer": {
+          "text": "EFG: 5 + 4 = 9 (cm); HIKL: 5 + 5 + 5 = 15 (cm)",
+          "explanation": "Đường EFG dài 5 + 4 = 9 cm; đường HIKL dài 5 + 5 + 5 = 15 cm."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Chín và mười lăm, cộng không sai một li!",
+          "Hai lối bay đo xong, Ong Nhí bay thử ngay.",
+          "Ba đoạn bằng nhau mà cậu cộng nhanh như chớp."
+        ],
+        "wrong": [
+          "Đường HIKL có ba đoạn, đừng quên đoạn thứ ba.",
+          "Cộng lại đường EFG xem: 5 với 4.",
+          "Mỗi ô trống ghi đúng độ dài từng đoạn của đường đó."
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o5",
+          "b2": "o4",
+          "b3": "o9",
+          "b4": "o5",
+          "b5": "o5",
+          "b6": "o5",
+          "b7": "o15"
+        }
+      },
+      "objective": "hinh-phang-gap-khuc",
+      "expression": {
+        "b3": "5 + 4",
+        "b7": "5 + 5 + 5"
+      }
+    },
+    {
+      "id": "thi-bay-ai-xa-hon",
+      "title": "Thi bay: lối nào dài hơn?",
+      "goTo": "Quay lại cửa sổ kính màu, Ong Nhí thách thi bay",
+      "target": "toan2-cd5-b26-ong-nhi",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Ong Nhí bay đường gấp khúc màu vàng gồm các đoạn dài 3, 4, 2 cạnh ô. {name} bay đường gấp khúc màu tím gồm các đoạn dài 2, 1, 2, 1, 2 cạnh ô. Đường gấp khúc nào dài hơn?",
+      "template": "Đường màu vàng dài {{b1}} cạnh ô.\nĐường màu tím dài {{b2}} cạnh ô.\n{{b3}} dài hơn.",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o10",
+              "text": "10"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
             {
               "id": "o7",
               "text": "7"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o10",
+              "text": "10"
             }
           ]
         },
@@ -1268,49 +1222,51 @@
           "id": "b3",
           "options": [
             {
-              "id": "duong-gap-khuc-mau-hong",
-              "text": "Đường gấp khúc màu hồng"
+              "id": "duong-vang",
+              "text": "Đường gấp khúc màu vàng"
             },
             {
-              "id": "duong-gap-khuc-mau-xanh",
-              "text": "Đường gấp khúc màu xanh"
+              "id": "duong-tim",
+              "text": "Đường gấp khúc màu tím"
             }
           ]
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b26-luyen-tap-5"
-      ],
       "support": {
         "guide": [
           "Cộng số cạnh ô của từng đường.",
           "Đường nào có tổng lớn hơn thì dài hơn."
         ],
-        "hint": "Hồng: 1 + 2 + 3; xanh: 2 + 2 + 1 + 1 + 1.",
+        "hint": "Vàng: 3 + 4 + 2; tím: 2 + 1 + 2 + 1 + 2.",
         "answer": {
-          "text": "Đường màu hồng dài 6 cạnh ô.; Đường màu xanh dài 7 cạnh ô.; Đường gấp khúc màu xanh dài hơn.",
-          "explanation": "Đường hồng dài 6 cạnh ô, đường xanh dài 7 cạnh ô, nên đường gấp khúc màu xanh dài hơn."
+          "text": "Đường màu vàng dài 9 cạnh ô; đường màu tím dài 8 cạnh ô; đường màu vàng dài hơn",
+          "explanation": "Đường vàng dài 9 cạnh ô, đường tím dài 8 cạnh ô, nên đường gấp khúc màu vàng dài hơn."
         }
       },
       "feedback": {
         "right": [
-          "Đường xanh của {name} dài hơn, Ong Nhí chịu thua tâm phục!",
-          "Bảy hơn sáu, cậu thắng cuộc thi bay rồi.",
-          "Ong Nhí tặng cậu một giọt mật vì thua cuộc vui vẻ."
+          "Đường vàng của Ong Nhí dài hơn một cạnh ô, Ong Nhí đắc ý vo ve!",
+          "Chín hơn tám, cậu so sánh không sai chút nào.",
+          "Ong Nhí tặng cậu một giọt mật vì thi bay rất tài."
         ],
         "wrong": [
-          "Cộng lại các đoạn của đường xanh, có năm đoạn đấy.",
+          "Cộng lại các đoạn của đường tím, có tới năm đoạn đấy.",
           "Đường nhiều đoạn chưa chắc dài hơn, phải cộng mới biết.",
           "So hai tổng rồi chọn đường dài hơn nhé."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o6",
-          "b2": "o7",
-          "b3": "duong-gap-khuc-mau-xanh"
+          "b1": "o9",
+          "b2": "o8",
+          "b3": "duong-vang"
         }
+      },
+      "objective": "hinh-phang-gap-khuc",
+      "expression": {
+        "b1": "3 + 4 + 2",
+        "b2": "2 + 1 + 2 + 1 + 2"
       }
     },
     {
