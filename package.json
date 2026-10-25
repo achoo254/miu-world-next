@@ -15,6 +15,7 @@
     "content:gaps": "tsx tools/content/content-gaps.ts",
     "content:probe": "tsx tools/content/probe-quests.ts",
     "content:spread": "tsx tools/content/quest-spread.ts",
+    "content:names": "tsx tools/content/name-glossary.ts",
     "learning:acceptance": "tsx tools/learning/acceptance-page.ts",
     "private:sync": "tsx tools/private/sync-private.ts",
     "private:check": "tsx tools/private/sync-private.ts --check",

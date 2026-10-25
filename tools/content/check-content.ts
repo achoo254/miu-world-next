@@ -36,6 +36,7 @@ import { checkRepoTextbookCopy } from './no-textbook-copy';
 import { indexTopics, learningQuestIssues, readTopicFiles } from '../../apps/server/src/content/learning-topics';
 import { topicIssues } from '../../packages/schema/src/learning';
 import { checkLocales } from './check-locales';
+import { glossaryIssues } from './name-glossary';
 import { checkBookOrGradeWording } from './no-book-or-grade-wording';
 import { modelSwatches } from './pet-swatches';
 import { questSpread } from './quest-spread';
@@ -244,6 +245,8 @@ const readByLegalCheck = (rel: string) => rel === TERMS_FILE;
 /** Topic files (content/learning/topics/<subject>/<topic>.json), and the textbook fingerprints and key check value of the copy check. */
 const readByLearningCheck = (rel: string) =>
   (rel.startsWith('learning/topics/') && rel.endsWith('.json')) || rel === 'learning/textbook-fingerprints.bin' || rel === 'learning/textbook-fingerprints.key-check';
+/** The English names of characters, places and things, checked by `glossaryIssues` below. */
+const readByNameGlossary = (rel: string) => rel.startsWith('i18n/names/') && rel.endsWith('.json');
 const readByWeb = (rel: string) => rel === REGIONS_FILE || rel === MODELS_FILE || rel === LOOKS_FILE || rel === EMOJI_PROPS_FILE || rel === BOX_PROPS_FILE || rel === TARGETS_FILE || rel === PRIVACY_FILE || (inFolder(rel, ITEMS_FOLDER) && rel.endsWith('.json'));
 
 /**
@@ -602,7 +605,7 @@ export function checkContent(dir: string = CONTENT_DIR, { env = process.env }: {
   const issues: string[] = [];
   const files = listFiles(dir);
   for (const rel of files) {
-    if (!readByCatalogue(rel) && !readByAssetTools(rel) && !readByWeb(rel) && !readByLegalCheck(rel) && !readByLearningCheck(rel)) {
+    if (!readByCatalogue(rel) && !readByAssetTools(rel) && !readByWeb(rel) && !readByLegalCheck(rel) && !readByLearningCheck(rel) && !readByNameGlossary(rel)) {
       issues.push(`content/${rel} has no validator: add it to the server catalogue or an asset tool`);
     }
   }
@@ -749,6 +752,12 @@ async function main(): Promise<void> {
   const report = checkContent();
   // The web app's bilingual dictionaries: every Vietnamese line has its English twin.
   report.issues.push(...checkLocales());
+  // Every Vietnamese name the game shows (characters, places, things, clothes, decor, verbs, titles) has English.
+  const names = glossaryIssues();
+  for (const [group, list] of names.missing) {
+    report.issues.push(`content/i18n/names/${group}.json lacks English for ${list.length} name(s), e.g. ${list.slice(0, 5).join(' · ')} (pnpm content:names --todo <dir>)`);
+  }
+  report.issues.push(...names.broken.map((b) => `content/i18n/names: ${b}`));
   // What the web shows and the story the game tells name no book or grade (the web no lesson number or page either).
   report.issues.push(...checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: CONTENT_DIR }));
   // Every quest target on the committed maps, played step by step: reachable, its own prompt, shown, in sight.
