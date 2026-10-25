@@ -1,11 +1,7 @@
-// No textbook wording in the game. The first learning quests were built from two textbooks, word for word; they are
-// being rewritten in our own words. This check refuses text that matches the textbooks' keyed fingerprints
-// (tools/learning/textbook-fingerprints.ts) in every quest and topic, and tracks the quests still waiting to be
-// rewritten in tools/content/textbook-copy-pending.json, a list that may only shrink (it stays within the 70 quests
-// of tools/content/textbook-copy-baseline.ts):
-//  - a quest outside the list may not match the fingerprints, nor keep a textbook link (`lesson`, `curriculumRef`, a
-//    worksheet's `lessonId`, a passage's `author` or `section`), and each of its passages says where it comes from;
-//  - a quest on the list that no longer matches and no longer keeps a textbook link must leave the list.
+// No textbook wording in the game. The first learning quests were built from two textbooks, word for word, and have
+// all been rewritten in our own words; this check keeps the textbook text from coming back. It refuses text that
+// matches the textbooks' keyed fingerprints (tools/learning/textbook-fingerprints.ts) in every quest and topic, and
+// every passage says where it comes from.
 // Folk and public-domain passages are scanned too: a traditional verse may read the same as in a book, so a match is
 // allowed only when tools/content/allowed-traditional-passages.json lists that passage with a reason a reviewer can
 // read. A public-domain author must have died long enough ago: protection lasts 50 years after the year of death.
@@ -15,9 +11,7 @@ import type { QuestDefinition } from '../../packages/schema/src/content';
 import type { Topic } from '../../packages/schema/src/learning';
 import { fingerprintKey, readFingerprints, shingleHashes, SHINGLE_WORDS, KEY_FILE_IN_ICLOUD } from '../learning/textbook-fingerprints';
 import { playerLines } from './content-variety';
-import { TEXTBOOK_COPY_BASELINE } from './textbook-copy-baseline';
 
-export const PENDING_FILE = path.join(import.meta.dirname, 'textbook-copy-pending.json');
 export const COMMON_PHRASES_FILE = path.join(import.meta.dirname, 'allowed-common-phrases.json');
 export const TRADITIONAL_PASSAGES_FILE = path.join(import.meta.dirname, 'allowed-traditional-passages.json');
 
@@ -31,14 +25,10 @@ export interface CopyContext {
   fingerprints: ReadonlySet<number>;
   /** Shingles of the allowed common phrases, never counted as copied outside passages. */
   allowed: ReadonlySet<number>;
-  /** Quests still waiting to be rewritten. */
-  pending: ReadonlySet<string>;
   /** Traditional passages allowed to match the textbooks, as "<quest id>/<text id>". */
   traditional: ReadonlySet<string>;
   /** The current year (protection ends on 31 December of the 50th year after death). */
   year: number;
-  /** Quests the waiting list may name; the repo's 70 first learning quests by default. */
-  baseline?: ReadonlySet<string>;
 }
 
 type Hashing = Pick<CopyContext, 'key' | 'fingerprints' | 'allowed'>;
@@ -143,22 +133,6 @@ export function copiedPassages(quest: QuestDefinition, context: Hashing): string
   return Object.entries(quest.texts).filter(([, text]) => copiedShingles(text.body, context, true) >= COPY_THRESHOLD).map(([id]) => id);
 }
 
-/** Textbook links a quest still keeps: its lesson, inventory refs, a worksheet's lesson, passages' author or section. */
-export function textbookLinks(quest: QuestDefinition): string[] {
-  if (quest.status === 'stub') return [];
-  const links: string[] = [];
-  if (quest.lesson !== undefined) links.push('lesson');
-  for (const step of quest.steps) {
-    if ('curriculumRef' in step && step.curriculumRef !== undefined) links.push(`step ${step.id} curriculumRef`);
-    if (step.kind === 'worksheet' && step.lessonId !== undefined) links.push(`step ${step.id} lessonId`);
-  }
-  for (const [id, text] of Object.entries(quest.texts)) {
-    if (text.author !== undefined) links.push(`text ${id} author`);
-    if (text.section !== undefined) links.push(`text ${id} section`);
-  }
-  return links;
-}
-
 /** Passage sources: a public-domain author's protection must have ended. */
 function sourceIssues(quest: QuestDefinition, year: number): string[] {
   if (quest.status === 'stub') return [];
@@ -185,22 +159,11 @@ export function checkTopicCopy(topics: readonly Topic[], context: Hashing): stri
 
 export function checkTextbookCopy(quests: readonly QuestDefinition[], context: CopyContext): string[] {
   const issues: string[] = [];
-  const ids = new Set(quests.map((q) => q.id));
-  const baseline = context.baseline ?? TEXTBOOK_COPY_BASELINE;
-  for (const id of context.pending) {
-    if (!baseline.has(id)) issues.push(`textbook-copy-pending.json lists ${id}, which is not one of the quests first built from the textbooks: the list may only shrink`);
-    else if (!ids.has(id)) issues.push(`textbook-copy-pending.json lists ${id}, which is not a quest`);
-  }
   const usedTraditional = new Set<string>();
   for (const quest of quests) {
     issues.push(...sourceIssues(quest, context.year));
     const copied = copiedLines(quest, context);
     const passages = copiedPassages(quest, context);
-    const links = textbookLinks(quest);
-    if (context.pending.has(quest.id)) {
-      if (copied.length === 0 && passages.length === 0 && links.length === 0) issues.push(`quest ${quest.id} no longer copies the textbooks: remove it from tools/content/textbook-copy-pending.json`);
-      continue;
-    }
     for (const line of copied) issues.push(`quest ${quest.id} copies textbook wording at ${line}: write it in our own words`);
     for (const id of passages) {
       const text = quest.status === 'stub' ? undefined : quest.texts[id];
@@ -210,27 +173,20 @@ export function checkTextbookCopy(quests: readonly QuestDefinition[], context: C
       else if (traditional) issues.push(`quest ${quest.id} text ${id} reads like the textbooks: a traditional passage that matches is listed in tools/content/allowed-traditional-passages.json with a reason, or retold in our own words`);
       else issues.push(`quest ${quest.id} text ${id} copies textbook wording: write it in our own words`);
     }
-    for (const link of links) issues.push(`quest ${quest.id} keeps a textbook link (${link}): only quests waiting to be rewritten may (tools/content/textbook-copy-pending.json)`);
     if (quest.status !== 'stub') for (const [id, text] of Object.entries(quest.texts)) if (!text.source) issues.push(`quest ${quest.id} text ${id} needs its source ("source": folk, public-domain or original)`);
   }
-  for (const key of context.traditional) if (!usedTraditional.has(key)) issues.push(`allowed-traditional-passages.json lists ${key}, which matches nothing (or is not a folk or public-domain passage of a rewritten quest): remove it`);
+  for (const key of context.traditional) if (!usedTraditional.has(key)) issues.push(`allowed-traditional-passages.json lists ${key}, which matches nothing (or is not a folk or public-domain passage): remove it`);
   return issues;
 }
 
-export function readPendingQuests(file: string = PENDING_FILE): Set<string> {
-  const raw = JSON.parse(readFileSync(file, 'utf8')) as { quests?: unknown };
-  if (!Array.isArray(raw.quests) || raw.quests.some((q) => typeof q !== 'string')) throw new Error('textbook-copy-pending.json: expected { "quests": ["<quest id>", …] }');
-  return new Set(raw.quests as string[]);
-}
-
 /**
- * The check as `pnpm content:check` runs it, on the repo's fingerprints, allowed lists and waiting list. Without the
+ * The check as `pnpm content:check` runs it, on the repo's fingerprints and allowed lists. Without the
  * key it cannot run: on CI that is an error, on a machine without the owner's iCloud a warning.
  */
 export function checkRepoTextbookCopy(
   quests: readonly QuestDefinition[],
   topics: readonly Topic[],
-  { year = new Date().getFullYear(), env = process.env, pending = readPendingQuests() }: { year?: number; env?: NodeJS.ProcessEnv; pending?: ReadonlySet<string> } = {},
+  { year = new Date().getFullYear(), env = process.env }: { year?: number; env?: NodeJS.ProcessEnv } = {},
 ): { issues: string[]; warnings: string[] } {
   const key = fingerprintKey(env);
   if (!key) {
@@ -239,6 +195,6 @@ export function checkRepoTextbookCopy(
   }
   const common = commonPhraseShingles(JSON.parse(readFileSync(COMMON_PHRASES_FILE, 'utf8')), key);
   const traditional = traditionalPassages(JSON.parse(readFileSync(TRADITIONAL_PASSAGES_FILE, 'utf8')));
-  const context: CopyContext = { key, fingerprints: readFingerprints(), allowed: common.shingles, pending, traditional: traditional.passages, year };
+  const context: CopyContext = { key, fingerprints: readFingerprints(), allowed: common.shingles, traditional: traditional.passages, year };
   return { issues: [...common.issues, ...traditional.issues, ...checkTopicCopy(topics, context), ...checkTextbookCopy(quests, context)], warnings: [] };
 }

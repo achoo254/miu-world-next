@@ -5,19 +5,19 @@ import { QuestView, type CharacterDto, type StepCompleteRequest, type StepComple
 import type { PlayerData } from '../../player/player-data';
 import { PROGRESS } from '../../player/test-fixtures';
 import type { ActiveQuestView } from '../../quest/quest-flow';
-import questSgk from '../../../../../server/test/fixtures/quests/quest-sgk.json';
+import questMechanics from '../../../../../server/test/fixtures/quests/quest-mechanics.json';
 import { LearningStep } from '../learning-step';
 import { pickMimeType } from './use-voice-recorder';
 
-const view = QuestView.parse(QuestDefinition.parse(questSgk));
-if (view.status !== 'active') throw new Error('quest-sgk is active');
+const view = QuestView.parse(QuestDefinition.parse(questMechanics));
+if (view.status !== 'active') throw new Error('quest-mechanics is active');
 const quest = view as ActiveQuestView;
 const talk = quest.steps.find((s) => s.id === 'talk') as QuestStepPublic;
 const DATA: PlayerData = { character: { species: 'cat', name: 'Mochi', equipped: [], pet: null } as CharacterDto, progress: PROGRESS, quests: [] };
 const done: StepCompleteResponse = {
   correct: true,
   feedback: null,
-  quest: { questId: 'quest-sgk', completedSteps: [], completed: false, found: {}, stars: null },
+  quest: { questId: 'quest-mechanics', completedSteps: [], completed: false, found: {}, stars: null },
   reward: null,
   repeated: false,
   completion: null,

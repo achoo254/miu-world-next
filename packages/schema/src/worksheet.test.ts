@@ -15,9 +15,7 @@ describe('Worksheet', () => {
     expect(Worksheet.parse({ ...sheet, bookId: 'tv2-t1', pages: [1, 2] })).not.toHaveProperty('bookId');
   });
 
-  it('needs at least one block; an inventory reference, when there is one, is never empty', () => {
+  it('needs at least one block', () => {
     expect(Worksheet.safeParse({ ...sheet, blocks: [] }).success).toBe(false);
-    expect(Worksheet.safeParse({ ...sheet, blocks: [{ ...sheet.blocks[0], curriculumRef: [] }] }).success).toBe(false);
-    expect(Worksheet.safeParse({ ...sheet, blocks: [{ ...sheet.blocks[0], curriculumRef: ['tv2-t1-b03-viet-ung-dung-1'] }] }).success).toBe(true);
   });
 });

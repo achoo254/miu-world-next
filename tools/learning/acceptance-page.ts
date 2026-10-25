@@ -12,8 +12,8 @@ import { readQuestDefinitions } from '../../apps/server/src/content/content-cata
 import { indexTopics, readTopicFiles } from '../../apps/server/src/content/learning-topics';
 import { QuestDefinition, type QuestStep } from '../../packages/schema/src/content';
 import { RegionCatalog } from '../../packages/schema/src/region';
-import { stepMechanic } from '../content/curriculum-links';
-import { checkRepoTextbookCopy, copiedLines, copiedPassages, readPendingQuests } from '../content/no-textbook-copy';
+import { stepMechanic } from '../content/mechanic-rules';
+import { checkRepoTextbookCopy, copiedLines, copiedPassages } from '../content/no-textbook-copy';
 import { fingerprintKey, readFingerprints } from './textbook-fingerprints';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -23,7 +23,7 @@ const OUT = path.join(ROOT, '.data/acceptance/index.html');
 const SAMPLES = ['tv2-t01-b01', 'tv2-t14-b25', 'toan2-cd1-b05', 'toan2-cd2-b09', 'toan2-cd6-b29'];
 /** What the reviewer should look at in each sample: choices the writers made that only the owner can settle. */
 const NOTES: Record<string, string[]> = {
-  'tv2-t01-b01': ['Bài đọc tự viết, cốt truyện khác hẳn bài cũ (cô bé Na và chiếc cặp mới), cùng mục tiêu: chi tiết, việc làm và cảm xúc của nhân vật, thứ tự sự việc, nghĩa từ.', 'Tên mục tiêu trên map "Bảng gỗ lớp Hai" còn chữ lớp: đổi khi sinh lại map (pha 7).'],
+  'tv2-t01-b01': ['Bài đọc tự viết, cốt truyện khác hẳn bài cũ (cô bé Na và chiếc cặp mới), cùng mục tiêu: chi tiết, việc làm và cảm xúc của nhân vật, thứ tự sự việc, nghĩa từ.', 'Tên mục tiêu trên map còn chữ lớp: đổi khi sinh lại map.'],
   'tv2-t14-b25': ['Bài đọc là truyện kể dân gian "Hai anh em" (lưu truyền ở nhiều nước), kể lại bằng lời mới; khung quest là chị em ong nên nối bằng lời thoại. Nếu muốn một truyện cổ tích Việt về chị em, cần chọn truyện khác.', 'Phần kể chuyện theo tranh là truyện tự viết "chiếc lá che mưa"; game không có giọng kể, nên bước xếp tranh và bước kể dựa trên tranh.'],
   'toan2-cd1-b05': ['Mọi phép tính giữ không nhớ, cùng phạm vi 100; bài toán chuyển sang thế giới bưu điện của Chó Mực.'],
   'toan2-cd2-b09': ['Khung Tóm tắt / Bài giải / Đáp số giữ, câu chữ của khung viết lại.'],
@@ -36,7 +36,7 @@ const MECHANIC_NAMES: Record<string, string> = {
   connect: 'Nối điểm', 'drag-drop': 'Kéo thả', 'find-object': 'Tìm vật', decision: 'Lựa chọn', boss: 'Đấu trùm', logic: 'Suy luận',
 };
 /** Keys that are ids or machine data, not text a player reads. */
-const NOT_TEXT = new Set(['id', 'kind', 'mechanic', 'trigger', 'target', 'targets', 'skill', 'textRef', 'curriculumRef', 'objective', 'expression', 'lessonId', 'answer', 'type', 'params', 'n', 'mode', 'display', 'en', 'audio']);
+const NOT_TEXT = new Set(['id', 'kind', 'mechanic', 'trigger', 'target', 'targets', 'skill', 'textRef', 'objective', 'expression', 'answer', 'type', 'params', 'n', 'mode', 'display', 'en', 'audio']);
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const withName = (html: string) => html.replace(/\{name\}/g, '<span class="who">tên bé</span>').replace(/\{\{([a-z0-9-]+)\}\}/g, '<span class="blank">▢</span>');
@@ -84,6 +84,40 @@ function answerOf(step: QuestStep): string {
   return JSON.stringify(a);
 }
 
+const isRecord = (value: unknown): value is Record<string, unknown> => typeof value === 'object' && value !== null && !Array.isArray(value);
+
+/**
+ * A quest as it was before the rewrite, readable by today's schema: it still carried the textbook's lesson, inventory
+ * references, passage authors and sections, and worksheets printed from a textbook lesson (`lessonId`), none of which
+ * the schema keeps any more. Those are dropped (a lesson worksheet becomes a one-line placeholder); the passages'
+ * authors are returned apart for the old column.
+ */
+function legacyQuest(raw: unknown): { quest: QuestDefinition; authors: Map<string, string> } {
+  if (!isRecord(raw)) throw new Error('a quest file holds an object');
+  const { lesson: _lesson, ...rest } = raw;
+  const authors = new Map<string, string>();
+  const texts = isRecord(rest.texts)
+    ? Object.fromEntries(
+        Object.entries(rest.texts).map(([id, text]) => {
+          if (!isRecord(text)) return [id, text];
+          const { author, section: _section, ...kept } = text;
+          if (typeof author === 'string') authors.set(id, author);
+          return [id, kept];
+        }),
+      )
+    : rest.texts;
+  const steps = Array.isArray(rest.steps)
+    ? rest.steps.map((step: unknown) => {
+        if (!isRecord(step)) return step;
+        const { curriculumRef: _ref, lessonId, ...kept } = step;
+        if (kept.kind !== 'worksheet' || kept.sheet !== undefined) return kept;
+        const prompt = typeof lessonId === 'string' ? `Phiếu in từ bài ${lessonId} của sách` : 'Phiếu in từ bài của sách';
+        return { ...kept, sheet: { title: 'Phiếu viết cũ', blocks: [{ kind: 'activity', prompt, media: [] }] } };
+      })
+    : rest.steps;
+  return { quest: QuestDefinition.parse({ ...rest, texts, steps }), authors };
+}
+
 function main(): void {
   const ids = process.argv.slice(2).length > 0 ? process.argv.slice(2) : SAMPLES;
   const key = fingerprintKey();
@@ -93,21 +127,21 @@ function main(): void {
   const quests = readQuestDefinitions(path.join(ROOT, 'content/quests'));
   const { topics } = readTopicFiles(path.join(ROOT, 'content/learning/topics'));
   const learning = indexTopics(topics);
-  const pending = readPendingQuests();
   const gate = checkRepoTextbookCopy(quests, topics).issues;
   const sections = ids.map((id) => {
     const quest = quests.find((q) => q.id === id);
     if (!quest || quest.status === 'stub') throw new Error(`no quest ${id}`);
-    const old = QuestDefinition.parse(JSON.parse(execFileSync('git', ['show', `${BEFORE}:content/quests/${id}.json`], { cwd: ROOT, encoding: 'utf8' })));
+    const { quest: old, authors: oldAuthors } = legacyQuest(JSON.parse(execFileSync('git', ['show', `${BEFORE}:content/quests/${id}.json`], { cwd: ROOT, encoding: 'utf8' })) as unknown);
     if (old.status === 'stub') throw new Error(`${id} was a stub`);
     const topic = quest.topic ? learning.topics.get(quest.topic) : undefined;
     const before = copiedLines(old, context).length + copiedPassages(old, context).length;
     const after = copiedLines(quest, context).length + copiedPassages(quest, context).length;
     const issues = gate.filter((i) => i.includes(`quest ${id} `));
     const passages = Object.entries(quest.texts).map(([tid, t]) => {
-      const was = Object.values(old.texts)[0];
+      const [wasId, was] = Object.entries(old.texts)[0] ?? [];
+      const wasAuthor = wasId === undefined ? undefined : oldAuthors.get(wasId);
       const src = t.source ? (t.source.kind === 'original' ? 'tự viết' : t.source.kind === 'folk' ? `dân gian: ${t.source.title}` : `hết bảo hộ: ${t.source.author} (mất ${t.source.died})`) : 'chưa khai nguồn';
-      return `<div class="pair"><div class="old"><h4>Bài đọc cũ: ${esc(was?.title ?? '—')}${was?.author ? ` — ${esc(was.author)}` : ''}</h4><p>${esc(was?.body ?? '').replace(/\n/g, '<br>')}</p></div>
+      return `<div class="pair"><div class="old"><h4>Bài đọc cũ: ${esc(was?.title ?? '—')}${wasAuthor ? ` — ${esc(wasAuthor)}` : ''}</h4><p>${esc(was?.body ?? '').replace(/\n/g, '<br>')}</p></div>
         <div class="new"><h4>Bài đọc mới (${esc(tid)}): ${esc(t.title)} <span class="tag">${esc(src)}</span></h4><p>${esc(t.body).replace(/\n/g, '<br>')}</p>${t.glossary?.length ? `<p class="muted">Từ ngữ: ${t.glossary.map((g) => `<b>${esc(g.term)}</b>: ${esc(g.meaning)}`).join('; ')}</p>` : ''}</div></div>`;
     });
     const rows = quest.steps.map((step, i) => {
@@ -123,7 +157,7 @@ function main(): void {
     return `<section class="quest" id="${esc(id)}">
       <h2>${withName(esc(quest.title))}</h2>
       <p class="muted">Trước: ${withName(esc(old.title))} · ${esc(regions.get(quest.region) ?? quest.region)} · chủ đề <b>${esc(topic?.title ?? '?')}</b> · ${quest.steps.length} bước</p>
-      <p class="check ${after === 0 && issues.length === 0 ? 'ok' : 'bad'}">Kiểm chống chép: bản cũ ${before} chỗ trùng SGK → bản mới ${after}. ${pending.has(id) ? 'Còn trong danh sách chờ.' : 'Đã ra khỏi danh sách chờ.'} ${issues.length === 0 ? 'Cổng nội dung không báo lỗi.' : `Cổng báo: ${issues.map(esc).join(' | ')}`}</p>
+      <p class="check ${after === 0 && issues.length === 0 ? 'ok' : 'bad'}">Kiểm chống chép: bản cũ ${before} chỗ trùng vân tay sách → bản mới ${after}. ${issues.length === 0 ? 'Cổng nội dung không báo lỗi.' : `Cổng báo: ${issues.map(esc).join(' | ')}`}</p>
       ${(NOTES[id] ?? []).length ? `<ul class="notes">${(NOTES[id] ?? []).map((n) => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}
       ${passages.join('')}
       ${rows.join('\n')}
@@ -163,7 +197,7 @@ h4 { margin: 4px 0; }
 </style>
 <main lang="vi">
 <h1>Nghiệm thu quest mẫu: nội dung tự viết</h1>
-<p>Mỗi bước đặt bản cũ (chép từ sách giáo khoa, lấy từ git trước khi viết lại) cạnh bản mới. Id bước, nơi chốn trên map, cơ chế chơi giữ nguyên; chữ, số, bài đọc viết mới. Góp ý ở đây sẽ thành luật viết chung cho 70 quest. Chơi thử trong game sau lần deploy tới (các quest mẫu đã bật), hoặc ở bản chạy trên máy.</p>
+<p>Mỗi bước đặt bản cũ (chép từ sách in, lấy từ git trước khi viết lại) cạnh bản mới. Id bước, nơi chốn trên map, cơ chế chơi giữ nguyên; chữ, số, bài đọc viết mới. Góp ý ở đây sẽ thành luật viết chung cho 70 quest. Chơi thử trong game sau lần deploy tới (các quest mẫu đã bật), hoặc ở bản chạy trên máy.</p>
 <ol>${toc}</ol>
 ${body}
 </main>

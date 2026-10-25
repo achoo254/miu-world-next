@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ContentId, MAX_MINIGAME_SCORE, QUEST_CATEGORIES, QuestEn, QuestStepPublic, RewardSpec, WEEKDAYS } from './content';
+import { ContentId, MAX_MINIGAME_SCORE, QUEST_CATEGORIES, QuestEn, QuestStepPublic, RewardSpec, TextSource, WEEKDAYS } from './content';
 import { SkillGiftDto } from './progression';
 import { EventRewardGrant } from './live-event';
 
@@ -228,15 +228,24 @@ export const QuestView = z.discriminatedUnion('status', [
     category: z.enum(QUEST_CATEGORIES).optional(),
     /** Title and summary in English (the bilingual display). */
     en: QuestEn.optional(),
-    /** Passages the read steps point at (`textRef`). */
+    /**
+     * Passages the read steps point at (`textRef`). A public-domain passage shows its author's name (the author's
+     * right to be named never ends); the rest of its source stays on the server.
+     */
     texts: z.record(
       ContentId,
-      z.object({
-        title: z.string(),
-        author: z.string().optional(),
-        body: z.string(),
-        glossary: z.array(z.object({ term: z.string(), meaning: z.string() })).optional(),
-      }),
+      z
+        .object({
+          title: z.string(),
+          author: z.string().optional(),
+          body: z.string(),
+          glossary: z.array(z.object({ term: z.string(), meaning: z.string() })).optional(),
+          source: TextSource.optional(),
+        })
+        .transform(({ source, author, ...text }) => {
+          const named = author ?? (source?.kind === 'public-domain' ? source.author : undefined);
+          return named === undefined ? text : { ...text, author: named };
+        }),
     ),
     steps: z.array(QuestStepPublic),
     reward: RewardSpec,

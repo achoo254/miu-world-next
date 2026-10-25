@@ -48,8 +48,8 @@ describe('private file sync', () => {
   });
 
   it('never copies a source whose hash differs, and says when iCloud has no such file', async () => {
-    const { icloud, repo, entry } = setup({ 'sgk/book.pdf': 'edited scan' });
-    const manifest = { folder: 'box', files: [entry('sgk/book.pdf', 'original scan'), entry('sgk/other.pdf', 'x')] };
+    const { icloud, repo, entry } = setup({ 'docs/table.json': 'edited table' });
+    const manifest = { folder: 'box', files: [entry('docs/table.json', 'original table'), entry('docs/other.json', 'x')] };
     expect((await syncPrivate({ manifest, repo, icloud, check: false })).map((r) => r.state)).toEqual(['source-changed', 'no-source']);
     expect((await syncPrivate({ manifest, repo, icloud: null, check: false })).map((r) => r.state)).toEqual(['no-source', 'no-source']);
   });

@@ -22,6 +22,11 @@ describe('content:check', { timeout: SLOW_FS_TIMEOUT }, () => {
     expect(checkContent().issues).toEqual([]);
   });
 
+  it('fails on CI when the copy check key is malformed, instead of skipping the learning checks', () => {
+    const env = { CI: 'true', MIU_FINGERPRINT_KEY: 'abc', MIU_ICLOUD_DIR: '/nowhere' };
+    expect(checkContent(CONTENT_DIR, { env }).issues).toEqual(['the learning checks could not run: the textbook fingerprint key must be 64 hex characters']);
+  });
+
   it('flags a rewarded item with no description, a bad icon, and a misnamed item file', () => {
     rmSync(path.join(dir, 'items/la-than.json'));
     expect(checkContent(dir).issues).toEqual(['quest forest-ch1 rewards item la-than, which content/items does not describe']);

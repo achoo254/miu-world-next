@@ -94,7 +94,7 @@ const DECISIONS = [
   { label: 'Home trên ảnh đảo render sẵn', verdict: 'Chỉnh (giữ ảnh đảo)', direction: 'sự sống trên đảo: thác chảy, chim và bướm bay, nhân vật vẫy tay' },
   { label: '3 thử thách Toán và ba lớp hỗ trợ', verdict: 'Chỉnh (giữ ba lớp hỗ trợ)', direction: 'đồ vật phản ứng khi chơi (táo nảy, đá lắc lư, hũ kẹo cười)' },
   { label: 'Màn thưởng, lên cấp, mở khóa; 90 XP sau Đáp án', verdict: 'Chỉnh (giữ 90 XP)', direction: 'cả thế giới 3D ăn mừng khi xong quest' },
-  { label: 'Quest mẫu SGK', verdict: 'Chấp nhận kèm chỉnh sửa', direction: 'lời thoại vui nhộn hơn; đáp án AI tự chọn được đánh dấu cho giáo viên; mở viết các quest còn lại' },
+  { label: 'Quest mẫu nội dung học', verdict: 'Chấp nhận kèm chỉnh sửa', direction: 'lời thoại vui nhộn hơn; đáp án AI tự chọn được đánh dấu cho giáo viên; mở viết các quest còn lại' },
 ];
 const MVP_STEPS: Record<string, string> = {
   '01-creator': 'Tạo nhân vật: đổi mũ thấy ngay trên nhân vật voxel, chọn tên (M1.3)',
@@ -223,7 +223,7 @@ function renderGallery(generated: string[]): void {
     'tv2-t08-b15': 'Sách Dế Mèn, sách Thế giới quanh em (Tiếng Việt bài 15)',
     'tv2-t18-on-cuoi-ki': 'Nhịp cầu đầu, giữa, cuối (Tiếng Việt ôn cuối kì)',
   };
-  for (const p of reviewPaths.filter((x) => x.includes('/review/props/')).sort()) byId('sgk-props').append(figure(p, propsCaption[name(p)] ?? name(p)));
+  for (const p of reviewPaths.filter((x) => x.includes('/review/props/')).sort()) byId('lesson-props').append(figure(p, propsCaption[name(p)] ?? name(p)));
   // The school beside the owner's mock frames (bundled with the review page only, from designs/).
   for (const p of reviewPaths.filter((x) => x.includes('/review/school/')).sort()) {
     const key = name(p);
@@ -352,31 +352,37 @@ function renderDecisions(): void {
   byId('decisions').append(list);
 }
 
-interface CoverageTotals {
-  items: number;
-  inGame: number;
-  onWorksheet: number;
-  missing: number;
+interface TopicCoverage {
+  subject: string;
+  subjectName: string;
+  title: string;
+  objectives: number;
+  covered: number;
+  steps: number;
+  percent: number;
 }
 interface CoverageSummary {
-  books: Array<{ title: string; totals: CoverageTotals; percent: number; units: Array<{ title: string; totals: CoverageTotals; percent: number; lessons: number }> }>;
+  topics: TopicCoverage[];
 }
 
-/** Textbook coverage per book and unit (assets/generated/review/sgk-coverage.json, from `pnpm content:gaps --review`). */
+const COVERAGE_FILE = 'generated/review/objective-coverage.json';
+
+/** Objectives practised per topic, one table per subject (from `pnpm content:gaps --review`). */
 async function renderCoverage(generated: readonly string[]): Promise<void> {
-  if (!generated.includes('generated/review/sgk-coverage.json')) return;
-  const summary = (await (await fetch(assetHref('generated/review/sgk-coverage.json'))).json()) as CoverageSummary;
-  for (const book of summary.books) {
+  if (!generated.includes(COVERAGE_FILE)) return;
+  const summary = (await (await fetch(assetHref(COVERAGE_FILE))).json()) as CoverageSummary;
+  for (const subject of [...new Set(summary.topics.map((t) => t.subject))]) {
+    const topics = summary.topics.filter((t) => t.subject === subject);
     const table = el('table', { className: 'coverage' });
     const head = el('tr');
-    for (const h of ['Chủ đề', 'Bài', 'Bài tập', 'Trong game', 'Phiếu', 'Phủ']) head.append(el('th', { textContent: h }));
+    for (const h of ['Chủ đề', 'Mục tiêu', 'Đã luyện đủ', 'Bước học', 'Phủ']) head.append(el('th', { textContent: h }));
     table.append(head);
-    for (const u of [...book.units, { title: 'Cả sách', totals: book.totals, percent: book.percent, lessons: book.units.reduce((n, x) => n + x.lessons, 0) }]) {
+    for (const t of topics) {
       const row = el('tr');
-      for (const cell of [u.title, String(u.lessons), String(u.totals.items), String(u.totals.inGame), String(u.totals.onWorksheet), `${u.percent}%`]) row.append(el('td', { textContent: cell }));
+      for (const cell of [t.title, String(t.objectives), String(t.covered), String(t.steps), `${t.percent}%`]) row.append(el('td', { textContent: cell }));
       table.append(row);
     }
-    byId('sgk-coverage').append(el('figure', {}, [el('figcaption', { textContent: book.title }), table]));
+    byId('objective-coverage').append(el('figure', {}, [el('figcaption', { textContent: topics[0]?.subjectName ?? subject }), table]));
   }
 }
 

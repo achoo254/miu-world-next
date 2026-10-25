@@ -1,7 +1,7 @@
 // Chapter 1 against the real server and content: meet the parrot (M3.3) → take the quest → the arrow
 // points at a clue → find the three clues in reverse order → tracker 3/3 from the server → the letter
 // opens by itself → read it and answer → on to the beaver; then the chapter's reward from the server. The
-// textbook mechanics by touch: sgk-mechanics.spec.ts.
+// learning mechanics by touch: quest-mechanics.spec.ts.
 import { mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, test, type Page } from '@playwright/test';
@@ -108,7 +108,7 @@ test('finishing chapter 1 without seeing an answer: 100 XP, Level Up to 2, the L
   await expect(page.locator('[data-id="reward-item-la-than"]')).toContainText('Lá thần');
   await page.locator('[data-id="completion-next"]').click();
   await expect(page.getByRole('dialog', { name: 'Lên cấp!' })).toContainText('Lv.1 → Lv.2');
-  // Then the skills that went up a level; chapter 1 opens no other quest (every textbook lesson is open from
+  // Then the skills that went up a level; chapter 1 opens no other quest (every learning quest is open from
   // the start), so that is the last screen.
   await page.locator('[data-id="completion-next"]').click();
   await expect(page.locator('[data-id="skill-up"]')).toBeVisible();

@@ -58,6 +58,12 @@ describe('evaluateExpression', () => {
     expect(evaluateExpression('8 + 5 - 4')).toBe(9);
     expect(evaluateExpression('47 ? 38 + 5')).toBe('>');
     expect(evaluateExpression('? + 5 = 12')).toBe(7);
-    expect(evaluateExpression('6 x 2')).toBeNull();
+    expect(evaluateExpression('8 + 5 − 3')).toBe(10);
+    expect(evaluateExpression('40 + 3 ? 43')).toBe('=');
+    expect(evaluateExpression('15 - ? = 9')).toBe(6);
+  });
+
+  it('refuses what it cannot compute', () => {
+    for (const bad of ['6 x 2', '3 +', '', '? + ? = 4', '1 = 1', '5 kg + 3 kg', '(2 + 3)']) expect(evaluateExpression(bad)).toBeNull();
   });
 });

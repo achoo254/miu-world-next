@@ -292,7 +292,7 @@
     "license": "CC0-1.0"
   },
   {
-    "glob": "generated/review/sgk-coverage.json",
+    "glob": "generated/review/objective-coverage.json",
     "generator": "tools/content/content-gaps.ts",
     "derivedFrom": [],
     "license": "CC0-1.0"

@@ -8,7 +8,7 @@ import { freshChild } from './quest-api';
 
 test.use({ storageState: { cookies: [], origins: [] }, viewport: { width: 1180, height: 820 } });
 
-const SHOTS = fileURLToPath(new URL('../../../.data/sgk/review-shots/', import.meta.url));
+const SHOTS = fileURLToPath(new URL('../../../.data/review-shots/', import.meta.url));
 mkdirSync(SHOTS, { recursive: true });
 
 async function printSheet(page: Page, questId: string, file: string, checkSheet?: () => Promise<void>): Promise<void> {

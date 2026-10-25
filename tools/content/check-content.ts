@@ -29,13 +29,10 @@ import { entitiesForChapter, worldEntitiesSchema, type Interactable } from '../.
 import { eventInteractable } from '../../packages/voxel/src/event-layer';
 import type { LiveEvent } from '../../packages/schema/src/live-event';
 import { ASSETS_DIR, REPO_ROOT } from '../assets/asset-lib';
-import { CURRICULUM_FOLDERS, checkCurriculum } from './check-curriculum';
-import { percentCovered, sumGaps } from './content-gaps';
 import { varietyIssues } from './content-variety';
 import { checkLogicSteps } from './logic-steps';
-import { checkCurriculumLinks } from './curriculum-links';
 import { checkLearningLinks } from './learning-links';
-import { checkRepoTextbookCopy, readPendingQuests } from './no-textbook-copy';
+import { checkRepoTextbookCopy } from './no-textbook-copy';
 import { indexTopics, learningQuestIssues, readTopicFiles } from '../../apps/server/src/content/learning-topics';
 import { topicIssues } from '../../packages/schema/src/learning';
 import { checkLocales } from './check-locales';
@@ -225,7 +222,7 @@ export function checkPlayerText(quests: Iterable<QuestDefinition>): string[] {
 
 export interface ContentReport {
   issues: string[];
-  /** Known gaps allowed for now (a textbook inventory still in draft), printed on every run. */
+  /** Known gaps allowed for now (a check that cannot run on this machine, a missing contact), printed on every run. */
   warnings: string[];
   /** Checks deliberately not run yet, printed so a green run does not overstate what was verified. */
   notes: string[];
@@ -243,10 +240,10 @@ const inFolder = (rel: string, folder: string) => rel.startsWith(folder) && !rel
 const readByCatalogue = (rel: string) =>
   CATALOGUE_FILES.some((o) => (o.endsWith('/') ? inFolder(rel, o) && rel.endsWith('.json') : rel === o));
 const readByAssetTools = (rel: string) => ASSET_TOOL_FILES.some((o) => (o.endsWith('/') ? inFolder(rel, o) : rel === o));
-const readByCurriculum = (rel: string) => CURRICULUM_FOLDERS.some((o) => inFolder(rel, o) && rel.endsWith('.json'));
 const readByLegalCheck = (rel: string) => rel === TERMS_FILE;
-/** Topic files (content/learning/topics/<subject>/<topic>.json) and the textbook fingerprints of the copy check. */
-const readByLearningCheck = (rel: string) => (rel.startsWith('learning/topics/') && rel.endsWith('.json')) || rel === 'learning/textbook-fingerprints.bin';
+/** Topic files (content/learning/topics/<subject>/<topic>.json), and the textbook fingerprints and key check value of the copy check. */
+const readByLearningCheck = (rel: string) =>
+  (rel.startsWith('learning/topics/') && rel.endsWith('.json')) || rel === 'learning/textbook-fingerprints.bin' || rel === 'learning/textbook-fingerprints.key-check';
 const readByWeb = (rel: string) => rel === REGIONS_FILE || rel === MODELS_FILE || rel === LOOKS_FILE || rel === EMOJI_PROPS_FILE || rel === BOX_PROPS_FILE || rel === TARGETS_FILE || rel === PRIVACY_FILE || (inFolder(rel, ITEMS_FOLDER) && rel.endsWith('.json'));
 
 /**
@@ -479,8 +476,8 @@ export function checkBossCoverage(raw: unknown, quests: Iterable<QuestDefinition
 /**
  * A quest tells its story where the child stands: its story text never names another region (a lesson moved
  * to a new map must not still say it happens in the forest). Story text is the summary, who / where / what
- * of the seven questions, the places, and each step's title, directions, lines and prompt. The textbook's
- * own wording (readings, choices, answers) and where the story goes next (the `next` step,
+ * of the seven questions, the places, and each step's title, directions, lines and prompt. The learning
+ * text (readings, choices, answers) and where the story goes next (the `next` step,
  * `sevenQuestions.next`) may name any region.
  */
 export function checkRegionMentions(quests: Iterable<QuestDefinition>, regions: RegionCatalog): string[] {
@@ -600,11 +597,12 @@ export function checkTerms(raw: unknown): string[] {
   return parsed.success ? [] : [`content/${TERMS_FILE}: ${parsed.error.message}`];
 }
 
-export function checkContent(dir: string = CONTENT_DIR): ContentReport {
+/** `env`: where the copy check finds its key (the process environment by default). */
+export function checkContent(dir: string = CONTENT_DIR, { env = process.env }: { env?: NodeJS.ProcessEnv } = {}): ContentReport {
   const issues: string[] = [];
   const files = listFiles(dir);
   for (const rel of files) {
-    if (!readByCatalogue(rel) && !readByAssetTools(rel) && !readByWeb(rel) && !readByLegalCheck(rel) && !readByCurriculum(rel) && !readByLearningCheck(rel)) {
+    if (!readByCatalogue(rel) && !readByAssetTools(rel) && !readByWeb(rel) && !readByLegalCheck(rel) && !readByLearningCheck(rel)) {
       issues.push(`content/${rel} has no validator: add it to the server catalogue or an asset tool`);
     }
   }
@@ -713,48 +711,46 @@ export function checkContent(dir: string = CONTENT_DIR): ContentReport {
   } catch (error) {
     issues.push(error instanceof Error ? error.message : String(error));
   }
-  const curriculum = checkCurriculum(path.join(dir, 'curriculum'));
-  issues.push(...curriculum.issues);
-  // No quest copies the textbooks; quests waiting to be rewritten keep their inventory links and their inventory
-  // coverage; rewritten ones name objectives, and finished topics are fully practised. No quest may repeat another's
-  // lines.
+  // No quest copies the textbooks; learning quests name objectives, and every topic is fully practised. No quest may
+  // repeat another's lines.
+  let quests: QuestDefinition[] | null = null;
   try {
-    const quests = readQuestDefinitions(path.join(dir, 'quests'));
-    const pending = readPendingQuests();
-    const skills = JSON.parse(readFileSync(path.join(dir, 'learning/skills.json'), 'utf8')) as { subjects: Array<{ id: string; skills: Array<{ id: string }> }> };
-    const topicFiles = readTopicFiles(path.join(dir, 'learning/topics'));
-    issues.push(...topicFiles.issues, ...topicIssues(topicFiles.topics, skills.subjects), ...learningQuestIssues(quests, indexTopics(topicFiles.topics)));
-    const copy = checkRepoTextbookCopy(quests, topicFiles.topics);
-    issues.push(...copy.issues);
-    warnings.push(...copy.warnings);
-    issues.push(...checkLearningLinks(topicFiles.topics, quests, pending).issues);
-    const links = checkCurriculumLinks(curriculum.books, quests);
-    issues.push(...links.issues);
-    issues.push(...varietyIssues(quests, curriculum.books));
-    issues.push(...checkLogicSteps(quests));
-    const waitingLessons = new Set(quests.flatMap((q) => (q.status !== 'stub' && pending.has(q.id) && q.lesson ? [q.lesson] : [])));
-    for (const book of curriculum.books) {
-      // Only lessons still played from the book count: a rewritten quest is held to its topic's objectives instead.
-      const totals = sumGaps(links.lessons.filter((l) => l.book === book.book.id && waitingLessons.has(l.lesson)));
-      // Every exercise of a finished inventory must be in the game or on a worksheet (the textbook goal).
-      if (totals.missing + totals.missingTexts > 0) {
-        const line = `${book.book.id}: ${percentCovered(totals)}% of ${totals.items} textbook items covered by quests (pnpm content:gaps --missing)`;
-        if (book.book.status === 'complete') issues.push(line);
-        else warnings.push(line);
-      }
-    }
+    quests = readQuestDefinitions(path.join(dir, 'quests'));
   } catch {
     // A quest file that breaks the schema is already reported by the catalogue load above.
   }
-  return { issues, warnings: [...warnings, ...curriculum.warnings], notes, fileCount: files.length };
+  if (quests) issues.push(...learningCheckIssues(dir, quests, warnings, env));
+  return { issues, warnings, notes, fileCount: files.length };
+}
+
+/**
+ * The learning checks on quests that parsed. Any failure here (a malformed or wrong key, a broken fingerprint or
+ * allowed-list file, a bad topic file) is an issue: the checks must never be skipped quietly.
+ */
+function learningCheckIssues(dir: string, quests: QuestDefinition[], warnings: string[], env: NodeJS.ProcessEnv): string[] {
+  const issues: string[] = [];
+  try {
+    const skills = JSON.parse(readFileSync(path.join(dir, 'learning/skills.json'), 'utf8')) as { subjects: Array<{ id: string; skills: Array<{ id: string }> }> };
+    const topicFiles = readTopicFiles(path.join(dir, 'learning/topics'));
+    issues.push(...topicFiles.issues, ...topicIssues(topicFiles.topics, skills.subjects), ...learningQuestIssues(quests, indexTopics(topicFiles.topics)));
+    const copy = checkRepoTextbookCopy(quests, topicFiles.topics, { env });
+    issues.push(...copy.issues);
+    warnings.push(...copy.warnings);
+    issues.push(...checkLearningLinks(topicFiles.topics, quests).issues);
+    issues.push(...varietyIssues(quests));
+    issues.push(...checkLogicSteps(quests));
+  } catch (error) {
+    issues.push(`the learning checks could not run: ${error instanceof Error ? error.message : String(error)}`);
+  }
+  return issues;
 }
 
 async function main(): Promise<void> {
   const report = checkContent();
   // The web app's bilingual dictionaries: every Vietnamese line has its English twin.
   report.issues.push(...checkLocales());
-  // What the web shows names no book, grade, lesson number or page (quests once they are rewritten).
-  report.issues.push(...checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: CONTENT_DIR, pendingQuests: readPendingQuests() }));
+  // What the web shows and the story the game tells name no book or grade (the web no lesson number or page either).
+  report.issues.push(...checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: CONTENT_DIR }));
   // Every quest target on the committed maps, played step by step: reachable, its own prompt, shown, in sight.
   report.issues.push(...(await auditQuestTargets()).map(formatFinding));
   for (const note of report.notes) console.log(`note: ${note}`);

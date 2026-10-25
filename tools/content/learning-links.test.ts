@@ -20,13 +20,13 @@ describe('a topic of another grade', () => {
     expect(topicIssues(topics, skills.subjects)).toEqual([]);
     const quest = QuestDefinition.parse(rawQuest());
     expect(() => loadLearningTopics(path.join(FIXTURE, 'topics'), skills.subjects, [quest])).not.toThrow();
-    const report = checkLearningLinks(topics, [quest], new Set());
+    const report = checkLearningLinks(topics, [quest]);
     expect(report.issues).toEqual([]);
-    expect(report.coverage.map((c) => [c.objective, c.missing, c.gated])).toEqual([
-      ['doc-thong-bao-tim-y', [], true],
-      ['doc-thong-bao-phan-loai', [], true],
+    expect(report.coverage.map((c) => [c.objective, c.missing])).toEqual([
+      ['doc-thong-bao-tim-y', []],
+      ['doc-thong-bao-phan-loai', []],
     ]);
-    const copy = { key: Buffer.alloc(32), fingerprints: new Set<number>(), allowed: new Set<number>(), pending: new Set<string>(), traditional: new Set<string>(), year: 2026 };
+    const copy = { key: Buffer.alloc(32), fingerprints: new Set<number>(), allowed: new Set<number>(), traditional: new Set<string>(), year: 2026 };
     expect(checkTextbookCopy([quest], copy)).toEqual([]);
   });
 });
@@ -41,23 +41,21 @@ describe('learning links', () => {
     expect(learningQuestIssues([ghost, wrong], indexTopics(topics))).toEqual(['quest bang-tin-cho names unknown topic ghost', 'quest bang-tin-cho step chon-y names unknown objective doc-thong-bao-x']);
   });
 
-  it('asks a rewritten quest for the objective of each step that teaches', () => {
+  it('asks a learning quest for the objective of each step that teaches', () => {
     const raw = rawQuest();
     const bare = QuestDefinition.parse({ ...raw, steps: raw.steps.map(({ objective: _o, ...s }) => s) });
-    expect(checkLearningLinks(topics, [bare], new Set()).issues).toEqual([
+    expect(checkLearningLinks(topics, [bare]).issues).toEqual([
       'quest bang-tin-cho step doc-tin teaches but names no objective ("objective")',
       'quest bang-tin-cho step xep-y teaches but names no objective ("objective")',
       'quest bang-tin-cho step chon-y teaches but names no objective ("objective")',
-      'objective doc-thong-bao-tim-y of topic doc-thong-bao is not practised yet as doc-hieu (pnpm content:gaps --topics)',
-      'objective doc-thong-bao-phan-loai of topic doc-thong-bao is not practised yet as tim-tu (pnpm content:gaps --topics)',
+      'objective doc-thong-bao-tim-y of topic doc-thong-bao is not practised yet as doc-hieu (pnpm content:gaps)',
+      'objective doc-thong-bao-phan-loai of topic doc-thong-bao is not practised yet as tim-tu (pnpm content:gaps)',
     ]);
-    // Waiting to be rewritten: nothing is asked, and its topic is not held to full coverage yet.
-    expect(checkLearningLinks(topics, [bare], new Set(['bang-tin-cho'])).issues).toEqual([]);
   });
 
   it('counts only active quests towards coverage: a draft practises nothing yet', () => {
     const draft = QuestDefinition.parse({ ...rawQuest(), status: 'draft' });
-    expect(checkLearningLinks(topics, [draft], new Set()).coverage.map((c) => c.steps)).toEqual([0, 0]);
+    expect(checkLearningLinks(topics, [draft]).coverage.map((c) => c.steps)).toEqual([0, 0]);
   });
 });
 
@@ -116,11 +114,11 @@ describe('expressions', () => {
     expect(expressionIssues({ ...drag, expression: '3 + 3' } as QuestStep)).toEqual(['total 7 differs from 3 + 3 = 6']);
   });
 
-  it('a calculation riddle of a rewritten quest gives its expression', () => {
+  it('a calculation riddle of a learning quest gives its expression', () => {
     const { do: riddle } = mathSteps();
     if (!riddle) throw new Error('step');
     const { expression: _e, ...bare } = riddle as QuestStep & { expression?: unknown };
     const quest = QuestDefinition.parse({ ...rawQuest(), places: { 'bac-gau': 'cổng chợ', cay: 'gốc cây' }, steps: [...rawQuest().steps, { ...bare, goTo: 'Ra gốc cây', objective: 'doc-thong-bao-tim-y', feedback: { right: ['a1', 'a2', 'a3'], wrong: ['b1', 'b2', 'b3'] } }] });
-    expect(checkLearningLinks([], [quest], new Set()).issues).toContain('quest bang-tin-cho step do: a calculation riddle gives its "expression", so the answer is computed');
+    expect(checkLearningLinks([], [quest]).issues).toContain('quest bang-tin-cho step do: a calculation riddle gives its "expression", so the answer is computed');
   });
 });

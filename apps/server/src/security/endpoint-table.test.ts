@@ -40,7 +40,7 @@ function routes(t: TestApp): string[] {
 
 /** A concrete URL for a route pattern (`:id` → a well-formed id that exists nowhere). */
 const fill = (path: string, id = '00000000-0000-4000-8000-000000000000'): string =>
-  `/api${path.replace(':questId', 'forest-ch1').replace(':stepId', 'meet-parrot').replace(':lessonId', 'toan2-t1-b01').replace(':id', id)}`;
+  `/api${path.replace(':questId', 'forest-ch1').replace(':stepId', 'meet-parrot').replace(':id', id)}`;
 
 let t: TestApp;
 beforeAll(async () => {

@@ -37365,6 +37365,14 @@
       "bytes": 988142
     },
     {
+      "path": "generated/review/objective-coverage.json",
+      "license": "CC0-1.0",
+      "generator": "tools/content/content-gaps.ts",
+      "derivedFrom": [],
+      "sha256": "612c5b385d08982019eeede83237f1c8ac71601c5fdd90b4fdb2d66fe4e036ff",
+      "bytes": 5213
+    },
+    {
       "path": "generated/review/outland/cho-phien-ngoai.png",
       "license": "CC0-1.0",
       "generator": "tools/assets/render-preview.ts",
@@ -39217,14 +39225,6 @@
       ],
       "sha256": "c5317400fb28b78585781cd27341622e426f6794839babbd097470f53db62e52",
       "bytes": 5276
-    },
-    {
-      "path": "generated/review/sgk-coverage.json",
-      "license": "CC0-1.0",
-      "generator": "tools/content/content-gaps.ts",
-      "derivedFrom": [],
-      "sha256": "173a23f5d7e925a0cc6237ac1f1fefd8e3dea86b94db4b74110fd32c947f1e3e",
-      "bytes": 4290
     },
     {
       "path": "generated/review/thu-vien/mock__thu-vien__d-01-toan-canh.png",

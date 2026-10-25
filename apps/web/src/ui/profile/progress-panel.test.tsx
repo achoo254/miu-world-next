@@ -10,7 +10,7 @@ const PROGRESS: PlayerProgressDto = {
   weak: [{ skillId: 'phep-cong', name: 'Phép cộng', subjectId: 'toan', level: 1, xp: 0 }],
   suggestions: [
     { questId: 'toan2-b01', title: 'Ôn tập các số đến 100', region: 'truong-hoc', reason: 'new', stars: null },
-    { questId: 'tv2-b01', title: 'Tôi là học sinh lớp 2', region: 'truong-hoc', reason: 'improve', stars: 1 },
+    { questId: 'tv2-b01', title: 'Ngày đầu đến trường', region: 'truong-hoc', reason: 'improve', stars: 1 },
   ],
   weeks: [
     { weekStart: '2026-09-14', minutes: 0 },

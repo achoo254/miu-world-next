@@ -23,15 +23,15 @@ function quest(id: string, extra: Record<string, unknown> = {}): QuestDefinition
     ...extra,
   });
 }
-/** Textbook quests need two different interactive challenges; phases still point at `find` and `add`. */
-const TEXTBOOK_STEPS = [
+/** Learning quests need two different interactive challenges; phases still point at `find` and `add`. */
+const LEARNING_STEPS = [
   { id: 'find', title: 'Xếp', goTo: 'Ra bãi cỏ xếp số', kind: 'challenge', mechanic: 'sort', target: 'box', prompt: 'Xếp từ bé đến lớn', skill: 'phep-cong', items: [{ id: 'b', label: '9' }, { id: 'a', label: '3' }], answer: { order: ['a', 'b'] }, support, feedback: { right: ['r1', 'r2', 'r3'], wrong: ['w1', 'w2', 'w3'] } },
   { id: 'add', title: 'Chọn', kind: 'challenge', mechanic: 'multi-select', target: 'tree', prompt: 'Chọn số chẵn', skill: 'phep-cong', choices: [{ id: 'c2', text: '2' }, { id: 'c3', text: '3' }], answer: { choices: ['c2'] }, support, feedback: { right: ['r4', 'r5', 'r6'], wrong: ['w4', 'w5', 'w6'] } },
 ];
-/** Where the textbook steps happen: both on the same patch of grass. */
-const TEXTBOOK_PLACES = { box: 'bãi cỏ', tree: 'bãi cỏ' };
+/** Where the learning steps happen: both on the same patch of grass. */
+const LEARNING_PLACES = { box: 'bãi cỏ', tree: 'bãi cỏ' };
 const draft = (id: string, extra: Record<string, unknown> = {}) =>
-  quest(id, { status: 'draft', lesson: 'toan2-t1-b01', topic: 'so-den-100', steps: TEXTBOOK_STEPS, places: TEXTBOOK_PLACES, ...extra });
+  quest(id, { status: 'draft', topic: 'so-den-100', steps: LEARNING_STEPS, places: LEARNING_PLACES, ...extra });
 const stub = (id: string) => QuestDefinition.parse({ id, region: 'r', chapter: 2, title: id, status: 'stub' });
 const skills = new Set(['phep-cong']);
 

@@ -1,4 +1,4 @@
-// Every textbook mechanic on the reference iPad viewport with touch, against the real server: the
+// Every learning mechanic on the reference iPad viewport with touch, against the real server: the
 // E2E-only fixture quest (e2e/fixtures/quests, loaded through EXTRA_QUEST_DIR) runs its steps by
 // itself, one screen after another. Each answer goes to the server, which grades it; a wrong try
 // shows the step's own feedback line. A screenshot of every screen goes to the review folder.
@@ -11,7 +11,7 @@ import { tap, touchDrag } from './touch';
 
 test.use({ storageState: { cookies: [], origins: [] }, viewport: { width: 820, height: 1180 }, hasTouch: true, isMobile: false });
 
-const SHOTS = fileURLToPath(new URL('../../../.data/sgk/review-shots/', import.meta.url));
+const SHOTS = fileURLToPath(new URL('../../../.data/review-shots/', import.meta.url));
 mkdirSync(SHOTS, { recursive: true });
 // Animations off: the shot shows the screen as it rests, never mid-transition.
 const shot = (page: Page, name: string) => page.screenshot({ path: `${SHOTS}${name}.png`, animations: 'disabled' });
@@ -29,7 +29,7 @@ test('plays classify, fill-blank, multi-select, clock, calendar, connect, pictur
   const pageErrors: string[] = [];
   page.on('pageerror', (err) => pageErrors.push(err.message));
   await freshChild(page, baseURL ?? '');
-  await page.goto('/play?quality=low&region=khu-rung-bi-mat&quest=e2e-sgk-mechanics');
+  await page.goto('/play?quality=low&region=khu-rung-bi-mat&quest=e2e-quest-mechanics');
   await waitReady(page);
 
   await expect(dialog(page, 'Vẹt')).toBeVisible();
@@ -118,6 +118,6 @@ test('plays classify, fill-blank, multi-select, clock, calendar, connect, pictur
   await shot(page, 'completion');
 
   const progress = await (await page.context().request.get('/api/progress')).json();
-  expect(progress.quests.find((q: { questId: string }) => q.questId === 'e2e-sgk-mechanics')).toMatchObject({ completed: true });
+  expect(progress.quests.find((q: { questId: string }) => q.questId === 'e2e-quest-mechanics')).toMatchObject({ completed: true });
   expect(pageErrors).toEqual([]);
 });

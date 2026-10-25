@@ -66,8 +66,8 @@ describe('minigame side quests', () => {
     expect(issues(waits)).toContain('step play: after the first dialogue, side quest steps start by themselves (trigger "auto")');
   });
 
-  it('never plays a textbook lesson', () => {
-    expect(issues({ ...sideQuest(), lesson: 'toan2-t1-b01' })).toContain('a side quest plays no textbook lesson');
+  it('teaches no topic', () => {
+    expect(issues({ ...sideQuest(), topic: 'so-den-100' })).toContain('a side quest teaches no topic');
   });
 
   it('rejects a goal out of range and unknown keys on the step', () => {

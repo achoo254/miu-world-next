@@ -18,7 +18,7 @@ describe('worksheet routes', () => {
     const tv = await agent.get('/api/worksheets?subject=tieng-viet').expect(200);
     expect(tv.body.worksheets).toHaveLength(3);
     const sheet = await agent.get('/api/worksheets/quest-hom-qua').expect(200);
-    expect(sheet.body.blocks[0]).toMatchObject({ kind: 'dictation', curriculumRef: ['tv2-t1-b02-nghe-viet-1'] });
+    expect(sheet.body.blocks[0]).toMatchObject({ kind: 'dictation', title: 'Tờ lịch' });
 
     await agent.post('/api/parent-gate/lock').expect(200);
     await agent.get('/api/worksheets').expect(403, { error: 'parent-gate-closed' });

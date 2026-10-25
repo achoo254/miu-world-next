@@ -1,14 +1,17 @@
 // Which quest mechanics may practise each kind of exercise (a clock exercise needs a clock challenge). A kind is
 // practised when, among the steps that train it, every mechanic of at least one option is present. A new exercise
 // kind fails to compile until it has a rule.
+import type { QuestStep } from '../../packages/schema/src/content';
 import type { ExerciseType } from '../../packages/schema/src/learning';
+
+/** How a step is played: the challenge mechanic, or the step kind for other steps. */
+export function stepMechanic(step: QuestStep): string {
+  return step.kind === 'challenge' ? step.mechanic : step.kind;
+}
 
 const INTERACTIVE = ['drag-drop', 'sort', 'classify', 'fill-blank', 'multi-select', 'clock', 'calendar', 'connect'].map((m) => [m]);
 
-/**
- * Ways a quest may cover each exercise type. An item is covered when, among the steps pointing at it,
- * every mechanic of at least one option is present. A new exercise type fails to compile until it has a rule.
- */
+/** Ways a quest may practise each exercise kind (see above). */
 export const MECHANIC_RULES: Record<ExerciseType, readonly (readonly string[])[]> = {
   'chon-dap-an': [['quiz'], ['multi-select']],
   noi: [['classify'], ['connect'], ['fill-blank']],

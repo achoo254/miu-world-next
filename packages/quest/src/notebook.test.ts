@@ -21,7 +21,7 @@ describe('notebook lines', () => {
         answer: { fills: { b1: 'gt' } },
         support: support('47 > 38'),
       },
-      { id: 'w', title: 'Phiếu', kind: 'worksheet', lessonId: 'l', text: 'Viết' },
+      { id: 'w', title: 'Phiếu', kind: 'worksheet', sheet: { title: 'Phiếu', blocks: [{ kind: 'letter', prompt: 'Tô chữ A', letters: ['A'] }] }, text: 'Viết' },
     ] as unknown as QuestStep[];
     expect(notebookLine(steps[0] as QuestStep)).toBeNull();
     expect(notebookLines(steps)).toEqual([

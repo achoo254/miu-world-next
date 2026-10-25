@@ -1,10 +1,7 @@
 // Content must never feel repeated: no quest reuses another quest's lines (dialogue, prompts, support,
-// feedback, rewards…), and no two textbook quests are built from the same sequence of mechanics.
-// The book's own wording is exempt: two quests may both show the same printed exercise.
+// feedback, rewards…), and no two learning quests are built from the same sequence of mechanics.
 import type { QuestDefinition } from '../../packages/schema/src/content';
-import type { CurriculumItem } from '../../packages/schema/src/curriculum';
-import type { LoadedBook } from './check-curriculum';
-import { normaliseWording, stepMechanic } from './curriculum-links';
+import { stepMechanic } from './mechanic-rules';
 
 /** Shorter strings are labels (a choice "5", a title "Đọc bài"), not lines of content. */
 const MIN_LINE_LENGTH = 16;
@@ -13,7 +10,7 @@ const MIN_LINE_LENGTH = 16;
  * line or a boss's name (a character's name: a character who gives several games says its name in each, and keeps it
  * in English).
  */
-const NOT_TEXT = new Set(['speaker', 'bossName', 'id', 'kind', 'mechanic', 'trigger', 'target', 'targets', 'skill', 'status', 'region', 'review', 'textRef', 'lessonId', 'curriculumRef', 'lesson', 'topic', 'objective', 'expression', 'source', 'phases', 'type', 'mode', 'display', 'sevenQuestions', 'category', 'game', 'params']);
+const NOT_TEXT = new Set(['speaker', 'bossName', 'id', 'kind', 'mechanic', 'trigger', 'target', 'targets', 'skill', 'status', 'region', 'review', 'textRef', 'topic', 'objective', 'expression', 'source', 'phases', 'type', 'mode', 'display', 'sevenQuestions', 'category', 'game', 'params']);
 
 const isRecord = (value: unknown): value is Record<string, unknown> => typeof value === 'object' && value !== null && !Array.isArray(value);
 const labelsOf = (choices: unknown): string[] =>
@@ -54,47 +51,40 @@ export function playerLines(quest: QuestDefinition): Array<{ where: string; text
     }
   };
   if (quest.status === 'stub') return lines;
-  // Passages come from the book and are compared with it elsewhere.
+  // Passages are read whole and checked on their own (their source, the copy check), not line by line.
   const { texts: _texts, ...rest } = quest;
   visit(rest, '');
   return lines;
 }
 
-/** The book's answer as text, when it is text (an answer may be shown as a choice and again in the answer layer). */
-function answerTexts(answer: CurriculumItem['answer']): string[] {
-  if (!answer) return [];
-  if ('text' in answer) return [answer.text];
-  if ('choice' in answer) return [answer.choice];
-  if ('choices' in answer) return answer.choices;
-  if ('values' in answer) return answer.values.filter((v): v is string => typeof v === 'string');
-  return [];
+// Lines are compared after only two layout-level normalisations: runs of spaces/line breaks become one space, and
+// every blank mark (?, …, ..., □, ■, ◻, ___ and the template's {{blank}}) becomes "?". Letters, diacritics, digits
+// and punctuation must match exactly.
+const BLANK = /\{\{[a-z0-9-]+\}\}|…|\.{3,}|[□■◻◼]|_{2,}/g;
+export function normaliseWording(text: string): string {
+  return text.normalize('NFC').replace(BLANK, '?').replace(/\s+/g, ' ').trim();
 }
 
-/** Normalised printed wording (prompts, passages, the book's answers) that quests may repeat. */
-function bookWording(books: readonly LoadedBook[]): string[] {
-  return books.flatMap(({ units }) =>
-    units.flatMap((u) =>
-      u.lessons.flatMap((l) =>
-        l.sections.flatMap((s) =>
-          [...(s.text ? [s.text.title, s.text.body] : []), ...s.items.flatMap((i) => [i.prompt, ...answerTexts(i.answer)])].map(normaliseWording),
-        ),
-      ),
-    ),
-  );
+/**
+ * The Vietnamese line an English twin may keep as it is: only a step's own `title` or `goTo`, where a proper name
+ * naturally stays (a folk game, "Chi chi chành chành"). `steps[1].en.title` → `steps[1].title`; any other line of the
+ * twin (a prompt, a choice, a line of dialogue) left in Vietnamese is untranslated, and reported.
+ */
+function nameTwinOf(where: string): string | null {
+  const match = /^(.* steps\[\d+\])\.en\.(title|goTo)$/.exec(where);
+  return match ? `${match[1]}.${match[2]}` : null;
 }
 
-export function varietyIssues(quests: readonly QuestDefinition[], books: readonly LoadedBook[]): string[] {
+export function varietyIssues(quests: readonly QuestDefinition[]): string[] {
   const issues: string[] = [];
-  // One search over all printed text (NUL never occurs in wording) instead of one per passage.
-  const printed = bookWording(books).join('\u0000');
-  const fromBook = (line: string) => printed.includes(line);
   const firstUse = new Map<string, string>();
   for (const quest of quests) {
     for (const { where, text } of playerLines(quest)) {
       const line = normaliseWording(text).toLowerCase();
-      if (line.length < MIN_LINE_LENGTH || fromBook(normaliseWording(text))) continue;
+      if (line.length < MIN_LINE_LENGTH) continue;
       const here = `quest ${quest.id} ${where}`;
       const first = firstUse.get(line);
+      if (first !== undefined && first === nameTwinOf(here)) continue;
       if (first) issues.push(`${here} repeats "${text}" (already used by ${first}): write a new line`);
       else firstUse.set(line, here);
     }

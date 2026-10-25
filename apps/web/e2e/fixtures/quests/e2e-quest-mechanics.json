@@ -1,5 +1,5 @@
 {
-  "id": "e2e-sgk-mechanics",
+  "id": "e2e-quest-mechanics",
   "region": "khu-rung-bi-mat",
   "chapter": 99,
   "title": "Thử cơ chế sách giáo khoa",
@@ -28,7 +28,7 @@
   "texts": {
     "bai-doc": {
       "title": "Bài đọc thử",
-      "author": "Tác giả thử",
+      "source": { "kind": "public-domain", "author": "Tác giả thử", "died": 1900 },
       "body": "Ngày khai trường đã đến.\n\nTôi chào mẹ.",
       "glossary": [
         {
@@ -398,7 +398,7 @@
       "title": "Phiếu viết",
       "kind": "worksheet",
       "trigger": "auto",
-      "lessonId": "tv2-t1-b01",
+      "sheet": { "title": "Phiếu chữ hoa A", "blocks": [{ "kind": "letter", "prompt": "Tô và viết chữ hoa A", "letters": ["A"] }] },
       "text": "Viết chữ hoa A vào phiếu."
     }
   ],

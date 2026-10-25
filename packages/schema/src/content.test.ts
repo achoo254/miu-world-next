@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { ConsentDocument, NameList, PrivacyDocument, QuestDefinition, QuestStepPublic, SkillCatalog, TermsDocument } from './content';
+import { ConsentDocument, NameList, PrivacyDocument, QuestDefinition, QuestStepPublic, QuestText, SkillCatalog, TermsDocument } from './content';
 import { LOCK_DAYS } from './moderation';
 
 describe('content schema', () => {
@@ -45,9 +45,9 @@ function validQuest() {
   } as Record<string, unknown> & { steps: Record<string, unknown>[] };
 }
 
-/** `validQuest` as a textbook draft, with a place for every target and a goTo line at each change. */
-function textbookQuest() {
-  const quest = { ...validQuest(), id: 'toan2-cd1-b01', status: 'draft', lesson: 'toan2-t1-b01', topic: 'so-den-100', places: { parrot: 'cổng rừng', find: 'bãi cỏ', tree: 'gốc cây' } as Record<string, string> };
+/** `validQuest` as a learning draft, with a place for every target and a goTo line at each change. */
+function learningQuest() {
+  const quest = { ...validQuest(), id: 'toan2-cd1-b01', status: 'draft', topic: 'so-den-100', places: { parrot: 'cổng rừng', find: 'bãi cỏ', tree: 'gốc cây' } as Record<string, string> };
   const goTo: Record<string, string> = { hi: 'Ra cổng rừng gặp Vẹt', find: 'Tìm hộp trên bãi cỏ', riddle: 'Đến gốc cây giải đố' };
   quest.steps = quest.steps.map((step) => ({ ...step, goTo: goTo[String(step.id)] }));
   return quest;
@@ -187,7 +187,7 @@ const withStep = (step: Record<string, unknown>, quest = validQuest()): string[]
 };
 const valid = (step: Record<string, unknown>) => QuestDefinition.safeParse({ ...validQuest(), steps: [...validQuest().steps, step] }).success;
 
-describe('textbook mechanics', () => {
+describe('learning mechanics', () => {
   const choices = [{ id: 'a', text: 'a' }, { id: 'b', text: 'b' }];
 
   it('classifies every item into a known group', () => {
@@ -247,49 +247,48 @@ describe('textbook mechanics', () => {
 
   it('speak and worksheet steps need no answer; sort items may carry pictures', () => {
     expect(withStep({ id: 's', title: 'Nói', kind: 'speak', trigger: 'auto', prompt: 'Kể về ngày hè của em', hints: ['Em đi đâu?'] })).toEqual([]);
-    expect(withStep({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', lessonId: 'tv2-t1-b01', text: 'Viết chữ hoa A' })).toEqual([]);
     const sheet = { title: 'Phiếu chữ hoa A', blocks: [{ kind: 'letter', prompt: 'Tô chữ hoa A', letters: ['A'] }] };
     expect(withStep({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', sheet, text: 'In phiếu nhé' })).toEqual([]);
-    const both = { id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', sheet, lessonId: 'tv2-t1-b01', text: 'In phiếu nhé' };
-    const exactlyOne = ['step w: a worksheet has exactly one of its own sheet ("sheet") and a textbook lesson ("lessonId")'];
-    expect(withStep(both)).toEqual(exactlyOne);
-    expect(withStep({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', text: 'In phiếu nhé' })).toEqual(exactlyOne);
+    // The sheet is always the quest's own: no textbook lesson stands in for it.
+    expect(valid({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', sheet, lessonId: 'tv2-t1-b01', text: 'In phiếu nhé' })).toBe(false);
+    expect(valid({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', text: 'In phiếu nhé' })).toBe(false);
     expect(valid({ id: 'w', title: 'Viết', kind: 'worksheet', trigger: 'auto', sheet: { title: 'x', blocks: [{ kind: 'letter', prompt: 'x', letters: [], page: 3 }] }, text: 'x' })).toBe(false);
     const items = [{ id: 't2', label: 'Tranh 2', image: { kind: 'diagram', type: 'picture-card', params: { n: 2 } } }, { id: 't1', label: 'Tranh 1', image: { kind: 'icon', id: 'school' } }];
     expect(withStep({ ...challenge, mechanic: 'sort', items, answer: { order: ['t1', 't2'] } })).toEqual([]);
   });
 
-  it('allows curriculum references on learning steps only', () => {
-    expect(valid({ ...challenge, mechanic: 'multi-select', choices, answer: { choices: ['a'] }, curriculumRef: ['tv2-t1-b01-doc-1'] })).toBe(true);
-    expect(valid({ id: 'd', title: 'Nói', kind: 'dialogue', target: 'x', lines: [{ speaker: 'Vẹt', text: 'Chào' }], curriculumRef: ['tv2-t1-b01-doc-1'] })).toBe(false);
-    expect(valid({ id: 'r', title: 'Thưởng', kind: 'reward', target: 'x', text: 'Giỏi', curriculumRef: ['x'] })).toBe(false);
+  it('allows objectives on learning steps only, and no textbook reference anywhere', () => {
+    expect(valid({ ...challenge, mechanic: 'multi-select', choices, answer: { choices: ['a'] }, objective: 'cong-tru-cong' })).toBe(true);
+    expect(valid({ ...challenge, mechanic: 'multi-select', choices, answer: { choices: ['a'] }, curriculumRef: ['tv2-t1-b01-doc-1'] })).toBe(false);
+    expect(valid({ id: 'd', title: 'Nói', kind: 'dialogue', target: 'x', lines: [{ speaker: 'Vẹt', text: 'Chào' }], objective: 'cong-tru-cong' })).toBe(false);
+    expect(valid({ id: 'r', title: 'Thưởng', kind: 'reward', target: 'x', text: 'Giỏi', objective: 'x' })).toBe(false);
   });
 
   it('a read step has its passage inline or by reference, not both', () => {
     const read = { id: 'r', title: 'Đọc', kind: 'read', target: 'x', question: 'Ai?', choices, answer: { choice: 'a' }, skill: 'doc-hieu', support };
-    const texts = { 'bai-doc': { title: 'Tôi là học sinh lớp 2', author: 'Văn Giá', body: 'Ngày khai trường đã đến.', section: 'tv2-t1-b01-doc' } };
+    const texts = { 'bai-doc': { title: 'Ngày khai trường', body: 'Ngày khai trường đã đến.', source: { kind: 'original' } } };
     expect(withStep({ ...read, textRef: 'bai-doc', audio: true }, { ...validQuest(), texts })).toEqual([]);
     expect(withStep({ ...read, text: 'x', textRef: 'bai-doc' }, { ...validQuest(), texts })).toEqual(['step r: needs exactly one of text and textRef']);
     expect(withStep({ ...read })).toEqual(['step r: needs exactly one of text and textRef']);
     expect(withStep({ ...read, textRef: 'ghost' })).toEqual(['step r: textRef ghost is not in the quest texts']);
   });
 
-  it('feedback pools have three lines each, never reused within the quest, and are required in textbook quests', () => {
+  it('feedback pools have three lines each, never reused within the quest, and are required in learning quests', () => {
     const feedback = { right: ['Đúng rồi!', 'Hay quá!', 'Chuẩn luôn!'], wrong: ['Thử lại nhé.', 'Gần đúng rồi.', 'Nhìn kĩ hơn nào.'] };
     const pick = { ...challenge, id: 'm', mechanic: 'multi-select', choices, answer: { choices: ['a'] } };
     expect(withStep({ ...pick, feedback })).toEqual([]);
     expect(valid({ ...pick, feedback: { right: ['Đúng'], wrong: feedback.wrong } })).toBe(false);
     expect(withStep({ ...pick, feedback: { ...feedback, wrong: ['Đúng rồi!', 'x', 'y'] } })).toEqual(['feedback line "Đúng rồi!" is used twice in the quest']);
-    const textbook = textbookQuest();
-    textbook.places = { ...textbook.places, x: 'gốc cây' };
-    textbook.steps.push({ ...pick, feedback }, { ...challenge, id: 'k', mechanic: 'clock', mode: 'set', display: 'analog', answer: { hour: 8, minute: 0 } });
-    expect(issues(textbook)).toEqual(['step riddle: a textbook quest step needs feedback lines', 'step k: a textbook quest step needs feedback lines']);
+    const learning = learningQuest();
+    learning.places = { ...learning.places, x: 'gốc cây' };
+    learning.steps.push({ ...pick, feedback }, { ...challenge, id: 'k', mechanic: 'clock', mode: 'set', display: 'analog', answer: { hour: 8, minute: 0 } });
+    expect(issues(learning)).toEqual(['step riddle: a learning quest step needs feedback lines', 'step k: a learning quest step needs feedback lines']);
   });
 
-  it('a textbook quest needs two different interactive challenges, not search or riddles', () => {
-    const quest = textbookQuest();
+  it('a learning quest needs two different interactive challenges, not search or riddles', () => {
+    const quest = learningQuest();
     expect(issues(quest).filter((m) => !m.includes('feedback'))).toEqual([
-      'a textbook quest needs at least two different interactive challenges (classify, fill-blank, multi-select, clock, calendar, connect, sort, drag-drop)',
+      'a learning quest needs at least two different interactive challenges (classify, fill-blank, multi-select, clock, calendar, connect, sort, drag-drop)',
     ]);
     quest.steps.push({ ...challenge, id: 'm', mechanic: 'multi-select', choices, answer: { choices: ['a'] } });
     quest.steps.push({ ...challenge, id: 'k', mechanic: 'clock', mode: 'set', display: 'analog', answer: { hour: 8, minute: 0 } });
@@ -298,24 +297,24 @@ describe('textbook mechanics', () => {
   });
 });
 
-describe('textbook lessons', () => {
+describe('learning quests', () => {
   const noMechanicRule = (m: string) => !m.includes('feedback') && !m.includes('interactive challenges');
 
-  it('names its topic, which the quest list and the public pages group it by; the textbook lesson is optional', () => {
-    const { topic: _topic, ...quest } = textbookQuest();
+  it('names its topic, which the quest list and the public pages group it by, and no textbook lesson', () => {
+    const { topic: _topic, ...quest } = learningQuest();
     expect(issues(quest).filter(noMechanicRule)).toEqual(['a learning quest names its topic ("topic"), which the quest list and the public pages group it by']);
-    const { lesson: _lesson, ...rewritten } = textbookQuest();
-    expect(issues(rewritten).filter(noMechanicRule)).toEqual([]);
+    expect(issues(learningQuest()).filter(noMechanicRule)).toEqual([]);
+    expect(QuestDefinition.safeParse({ ...learningQuest(), lesson: 'toan2-t1-b01' }).success).toBe(false);
   });
 
   it('holds any quest naming a topic to the learning rules, whatever its id', () => {
     const quest = { ...validQuest(), topic: 'nhan-chia' };
-    expect(issues(quest)).toContain('a textbook quest needs at least two different interactive challenges (classify, fill-blank, multi-select, clock, calendar, connect, sort, drag-drop)');
-    expect(issues({ ...validQuest(), category: 'side', topic: 'nhan-chia' })).toContain('a side quest plays no textbook lesson');
+    expect(issues(quest)).toContain('a learning quest needs at least two different interactive challenges (classify, fill-blank, multi-select, clock, calendar, connect, sort, drag-drop)');
+    expect(issues({ ...validQuest(), category: 'side', topic: 'nhan-chia' })).toContain('a side quest teaches no topic');
   });
 
   it('never sends what a step teaches or how its answer is computed to the client', () => {
-    const step = { id: 'r', title: 'Đố', kind: 'riddle', skill: 'phep-cong', question: '1 + 2 = ?', objective: 'cong-tru-cong', expression: '1 + 2', curriculumRef: ['a'] };
+    const step = { id: 'r', title: 'Đố', kind: 'riddle', skill: 'phep-cong', question: '1 + 2 = ?', objective: 'cong-tru-cong', expression: '1 + 2' };
     expect(Object.keys(QuestStepPublic.parse(step))).toEqual(['id', 'title', 'trigger', 'kind', 'question', 'skill']);
   });
 
@@ -329,30 +328,37 @@ describe('textbook lessons', () => {
     expect(QuestDefinition.safeParse(text({ kind: 'borrowed' })).success).toBe(false);
   });
 
+  it('keeps no textbook author or section on a passage: who wrote it is in its source', () => {
+    const passage = { title: 'Bài đọc', body: 'Một đoạn văn.', source: { kind: 'original' } };
+    expect(QuestText.safeParse(passage).success).toBe(true);
+    expect(QuestText.safeParse({ ...passage, author: 'Một tác giả' }).success).toBe(false);
+    expect(QuestText.safeParse({ ...passage, section: 'tv2-t1-b01-doc' }).success).toBe(false);
+  });
+
   it('has no way to lock a quest behind another: every quest is open from the start', () => {
     expect(QuestDefinition.safeParse({ ...validQuest(), unlock: ['forest-ch2'] }).success).toBe(false);
   });
 });
 
-describe('textbook wayfinding', () => {
+describe('learning wayfinding', () => {
   const noMechanicRule = (m: string) => !m.includes('feedback') && !m.includes('interactive challenges');
 
   it('names where to go each time the place changes, and only then', () => {
-    expect(issues(textbookQuest()).filter(noMechanicRule)).toEqual([]);
+    expect(issues(learningQuest()).filter(noMechanicRule)).toEqual([]);
     // The box lies at the gate too: walking on from Vẹt to the box needs no goTo.
-    const same = textbookQuest();
+    const same = learningQuest();
     same.places = { ...same.places, find: 'cổng rừng' };
     same.steps = same.steps.map((step) => (step.id === 'find' ? { ...step, goTo: undefined } : step));
     expect(issues(same).filter(noMechanicRule)).toEqual([]);
     // Back at a place after going elsewhere, the child is told again.
-    const back = textbookQuest();
+    const back = learningQuest();
     back.places = { ...back.places, tree: 'cổng rừng' };
     back.steps = back.steps.map((step) => (step.id === 'riddle' ? { ...step, goTo: 'Đi tiếp nào' } : step));
     expect(issues(back).filter(noMechanicRule)).toEqual(['step riddle: the place changes to "cổng rừng", so it needs a goTo line naming it']);
   });
 
   it('flags a missing place, a goTo that does not name the place, and a place for nothing', () => {
-    const quest = textbookQuest();
+    const quest = learningQuest();
     quest.places = { find: 'bãi cỏ', tree: 'gốc cây', ghost: 'hang đá' };
     quest.steps = quest.steps.map((step) => (step.id === 'riddle' ? { ...step, goTo: 'Đi tiếp nào' } : step));
     expect(issues(quest).filter(noMechanicRule)).toEqual([
@@ -362,9 +368,9 @@ describe('textbook wayfinding', () => {
     ]);
   });
 
-  it('asks nothing of quests outside the textbook, and nothing of steps that start by themselves', () => {
+  it('asks nothing of quests that teach no topic, and nothing of steps that start by themselves', () => {
     expect(issues(validQuest())).toEqual([]);
-    const quest = textbookQuest();
+    const quest = learningQuest();
     quest.steps = quest.steps.map((step) => (step.id === 'hi' ? { ...step, target: undefined, trigger: 'auto', goTo: undefined } : step));
     quest.places = { find: 'bãi cỏ', tree: 'gốc cây' };
     expect(issues(quest).filter(noMechanicRule)).toEqual([]);

@@ -3,16 +3,15 @@
 // HMAC-SHA256 under a secret key and only the first 5 bytes are kept. The key matters: shingles overlap by six
 // words, so with a plain hash anyone could rebuild the text word by word, guessing the next word and checking it
 // against the file. Without the key nobody can test a guess. The key lives outside git (`MIU_FINGERPRINT_KEY`, the CI
-// secret of the same name, or the owner's iCloud file below) and never changes: a new key needs the textbooks to
-// rebuild the file, and they are removed from the repo.
+// secret of the same name, or the owner's iCloud file below) and never changes: the file was made once (25/10/2026)
+// from the textbook inventory and the first quests' readings, both since removed from the repo, so it cannot be
+// rebuilt under a new key.
 //
-//   pnpm exec tsx tools/learning/textbook-fingerprints.ts   (once, while content/curriculum still exists)
-//
-// Writes content/learning/textbook-fingerprints.bin: 5-byte big-endian hashes, sorted, no duplicates.
-import { createHash, createHmac } from 'node:crypto';
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+// content/learning/textbook-fingerprints.bin: 5-byte big-endian hashes, sorted, no duplicates;
+// content/learning/textbook-fingerprints.key-check: the key's check value (`keyCheckOf`).
+import { createHmac } from 'node:crypto';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
-import { pathToFileURL } from 'node:url';
 import { CONTENT_DIR } from '../../apps/server/src/content/content-dir';
 import { icloudRoot } from '../private/sync-private';
 
@@ -23,8 +22,30 @@ export const FINGERPRINTS_FILE = path.join(CONTENT_DIR, 'learning/textbook-finge
 /** Where the key file sits in the owner's iCloud Drive, next to the project's other secrets. */
 export const KEY_FILE_IN_ICLOUD = 'cong-viec/Cong viec/ENV production/miu-world/textbook-fingerprint.key';
 
-/** The key (hex) from `MIU_FINGERPRINT_KEY`, else the iCloud file; null when neither is there. Never printed. */
-export function fingerprintKey(env: NodeJS.ProcessEnv = process.env): Buffer | null {
+/**
+ * A check value for the key, committed next to the fingerprints: the first 8 bytes (hex) of HMAC(key, a fixed label).
+ * It tells whether a key is the one the file was made with, and says nothing about the key: a well-formed but wrong
+ * key would otherwise match no shingle at all and silently turn the copy check into a no-op.
+ */
+export const KEY_CHECK_FILE = path.join(CONTENT_DIR, 'learning/textbook-fingerprints.key-check');
+const KEY_CHECK_LABEL = 'miu-fingerprint-key-check';
+const KEY_CHECK_BYTES = 8;
+
+export function keyCheckOf(key: Buffer): string {
+  return createHmac('sha256', key).update(KEY_CHECK_LABEL).digest().subarray(0, KEY_CHECK_BYTES).toString('hex');
+}
+
+export function readKeyCheck(file: string = KEY_CHECK_FILE): string {
+  const value = readFileSync(file, 'utf8').trim();
+  if (!/^[0-9a-f]{16}$/.test(value)) throw new Error(`${path.basename(file)} must hold 16 lower-case hex characters`);
+  return value;
+}
+
+/**
+ * The key (hex) from `MIU_FINGERPRINT_KEY`, else the iCloud file; null when neither is there. Never printed. A
+ * malformed key, or one that is not the key the fingerprints were made with (`check`), is an error.
+ */
+export function fingerprintKey(env: NodeJS.ProcessEnv = process.env, check: string = readKeyCheck()): Buffer | null {
   let hex = env.MIU_FINGERPRINT_KEY?.trim();
   if (!hex) {
     const root = icloudRoot(env);
@@ -33,7 +54,11 @@ export function fingerprintKey(env: NodeJS.ProcessEnv = process.env): Buffer | n
   }
   if (!hex) return null;
   if (!/^[0-9a-f]{64}$/i.test(hex)) throw new Error('the textbook fingerprint key must be 64 hex characters');
-  return Buffer.from(hex, 'hex');
+  const key = Buffer.from(hex, 'hex');
+  if (keyCheckOf(key) !== check) {
+    throw new Error('the textbook fingerprint key is not the one the fingerprints were made with (content/learning/textbook-fingerprints.key-check)');
+  }
+  return key;
 }
 
 /**
@@ -96,41 +121,3 @@ export function decodeFingerprints(data: Buffer): Set<number> {
 export function readFingerprints(file: string = FINGERPRINTS_FILE): Set<number> {
   return decodeFingerprints(readFileSync(file));
 }
-
-/** Every string inside a JSON value (keys left out). */
-function strings(value: unknown, out: string[] = []): string[] {
-  if (typeof value === 'string') out.push(value);
-  else if (Array.isArray(value)) for (const v of value) strings(v, out);
-  else if (typeof value === 'object' && value !== null) for (const v of Object.values(value)) strings(v, out);
-  return out;
-}
-
-/** Wording of the inventory files and of the readings of the first learning quests. */
-function textbookWording(contentDir: string): string[] {
-  const texts: string[] = [];
-  const curriculum = path.join(contentDir, 'curriculum');
-  for (const book of readdirSync(curriculum)) {
-    for (const file of readdirSync(path.join(curriculum, book)).filter((f) => f.endsWith('.json'))) {
-      texts.push(...strings(JSON.parse(readFileSync(path.join(curriculum, book, file), 'utf8'))));
-    }
-  }
-  const quests = path.join(contentDir, 'quests');
-  for (const file of readdirSync(quests).filter((f) => /^(toan2|tv2)-.*\.json$/.test(f))) {
-    const quest = JSON.parse(readFileSync(path.join(quests, file), 'utf8')) as { texts?: unknown };
-    texts.push(...strings(quest.texts ?? {}));
-  }
-  return texts;
-}
-
-function main(): void {
-  if (!existsSync(path.join(CONTENT_DIR, 'curriculum'))) throw new Error('content/curriculum is gone: the fingerprints were made before it was removed');
-  const key = fingerprintKey();
-  if (!key) throw new Error(`no fingerprint key: set MIU_FINGERPRINT_KEY or put it in iCloud Drive at ${KEY_FILE_IN_ICLOUD}`);
-  const hashes = textbookWording(CONTENT_DIR).flatMap((text) => shingleHashes(text, key));
-  const data = encodeFingerprints(hashes);
-  writeFileSync(FINGERPRINTS_FILE, data);
-  const sha = createHash('sha256').update(data).digest('hex');
-  console.log(`${data.length / HASH_BYTES} shingle hashes (${hashes.length} shingles read), ${data.length} bytes, sha256 ${sha}`);
-}
-
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main();

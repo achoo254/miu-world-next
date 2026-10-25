@@ -1,16 +1,14 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { readPendingQuests } from '../../../../tools/content/no-textbook-copy';
 import { completeStep, emptyProgress, type QuestProgress } from '@miu/quest/quest-progress';
 import { CONTENT_DIR, readQuestDefinitions } from '../content/content-catalog';
 import { solution } from '../../test/quest-solution';
 
-/** Quests still played from the book (the rest are rewritten in our own words). */
-const WAITING = readPendingQuests();
+// The math learning quests keep their first ids (`toan2-cd<group>-b<n>`), so saved progress still matches them.
 const quests = readQuestDefinitions(path.join(CONTENT_DIR, 'quests')).filter((q) => q.id.startsWith('toan2-'));
 
-/** Where each topic of the book plays (story-map.md, "Chia lại 8 map"): the map's region and its chapter. */
-const PLACE_OF_TOPIC: Record<number, { region: string; chapter: number }> = {
+/** Where each group of math quests plays (story-map.md, "Chia lại 8 map"): the map's region and its chapter. */
+const PLACE_OF_GROUP: Record<number, { region: string; chapter: number }> = {
   1: { region: 'truong-hoc', chapter: 1 },
   2: { region: 'cho-phien', chapter: 1 },
   3: { region: 'cho-phien', chapter: 2 },
@@ -20,21 +18,18 @@ const PLACE_OF_TOPIC: Record<number, { region: string; chapter: number }> = {
   7: { region: 'lau-dai', chapter: 2 },
 };
 
-describe('Toán 2 quests', () => {
-  it('exist, one per lesson, each in the chapter of its topic on its map', () => {
-    expect(quests.length).toBeGreaterThan(0);
-    const waiting = quests.filter((q) => WAITING.has(q.id));
-    const lessons = waiting.map((q) => (q.status === 'stub' ? null : q.lesson));
-    expect(new Set(lessons).size).toBe(waiting.length);
+describe('math learning quests', () => {
+  it('are all there, each in the chapter of its group on its map', () => {
+    expect(quests).toHaveLength(36);
     for (const quest of quests) {
-      const topic = Number(/^toan2-cd(\d+)-/.exec(quest.id)?.[1]);
-      expect({ region: quest.region, chapter: quest.chapter }, quest.id).toEqual(PLACE_OF_TOPIC[topic]);
+      const group = Number(/^toan2-cd(\d+)-/.exec(quest.id)?.[1]);
+      expect({ region: quest.region, chapter: quest.chapter }, quest.id).toEqual(PLACE_OF_GROUP[group]);
     }
   });
 
   for (const quest of quests) {
-    it(`${quest.id} plays from first step to reward with the book's answers`, () => {
-      if (quest.status === 'stub') throw new Error('textbook quests are written in full');
+    it(`${quest.id} plays from first step to reward with its own answers`, () => {
+      if (quest.status === 'stub') throw new Error('learning quests are written in full');
       // Drafts are played as they will run once switched on; lessons open in any order, so each plays alone.
       const playable = { ...quest, status: 'active' as const };
       let progress: QuestProgress = emptyProgress();
@@ -49,11 +44,9 @@ describe('Toán 2 quests', () => {
       expect(reward).toEqual(quest.reward);
     });
 
-    it(`${quest.id} ties every graded step to what it teaches`, () => {
+    it(`${quest.id} ties every graded step to the objective it practises`, () => {
       if (quest.status === 'stub') throw new Error('learning quests are written in full');
-      // Still played from the book: its inventory exercises; rewritten: its objective.
-      const tied = (s: (typeof quest.steps)[number]) =>
-        WAITING.has(quest.id) ? 'curriculumRef' in s && s.curriculumRef !== undefined && s.curriculumRef.length > 0 : 'objective' in s && s.objective !== undefined;
+      const tied = (s: (typeof quest.steps)[number]) => 'objective' in s && s.objective !== undefined;
       expect(quest.steps.filter((s) => 'support' in s && !tied(s)).map((s) => s.id)).toEqual([]);
     });
   }

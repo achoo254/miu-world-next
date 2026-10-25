@@ -381,20 +381,20 @@ describe('learning support', () => {
   });
 });
 
-describe('textbook mechanics over the API', () => {
-  const sgk = FIXTURE_CONTENT.quests.get('quest-sgk');
-  if (sgk?.status !== 'active') throw new Error('quest-sgk must be an active fixture quest');
+describe('learning mechanics over the API', () => {
+  const mechanics = FIXTURE_CONTENT.quests.get('quest-mechanics');
+  if (mechanics?.status !== 'active') throw new Error('quest-mechanics must be an active fixture quest');
 
   it('grades every new mechanic on the server and finishes the quest', async () => {
     const { agent } = await playingChild();
     let last: request.Response | undefined;
-    for (const [stepId, body] of solution(sgk)) last = await step(agent, 'quest-sgk', stepId, body).expect(200, /"correct":true/);
+    for (const [stepId, body] of solution(mechanics)) last = await step(agent, 'quest-mechanics', stepId, body).expect(200, /"correct":true/);
     expect(last?.body).toMatchObject({ quest: { completed: true }, reward: { xp: 20 } });
   });
 
   it('marks wrong answers of each shape as wrong without advancing', async () => {
     const { agent } = await playingChild();
-    const moves = solution(sgk);
+    const moves = solution(mechanics);
     const wrong: Record<string, object> = {
       'read-text': { choice: 'ban' },
       'sort-words': { assignment: { sach: 'hoat-dong', doc: 'hoat-dong', but: 'su-vat' } },
@@ -408,60 +408,60 @@ describe('textbook mechanics over the API', () => {
     for (const [stepId, body] of moves) {
       const bad = wrong[stepId];
       if (bad) {
-        const res = await step(agent, 'quest-sgk', stepId, { answer: bad }).expect(200);
+        const res = await step(agent, 'quest-mechanics', stepId, { answer: bad }).expect(200);
         expect(res.body).toMatchObject({ correct: false, quest: { completed: false } });
       }
-      await step(agent, 'quest-sgk', stepId, body).expect(200, /"correct":true/);
+      await step(agent, 'quest-mechanics', stepId, body).expect(200, /"correct":true/);
     }
   });
 
   it('accepts the clock read as morning or afternoon on an analog face, and edges in any direction', async () => {
     const { agent } = await playingChild();
-    for (const [stepId, body] of solution(sgk)) {
+    for (const [stepId, body] of solution(mechanics)) {
       const alt: Record<string, object> = { 'read-clock': { answer: { hour: 3, minute: 0 } }, draw: { answer: { edges: [['c', 'b'], ['b', 'a']] } } };
-      await step(agent, 'quest-sgk', stepId, alt[stepId] ?? body).expect(200, /"correct":true/);
+      await step(agent, 'quest-mechanics', stepId, alt[stepId] ?? body).expect(200, /"correct":true/);
     }
   });
 
   it('answers with a new feedback line on every try, never the previous one', async () => {
     const { agent } = await playingChild();
-    const moves = solution(sgk);
+    const moves = solution(mechanics);
     const upTo = moves.findIndex(([id]) => id === 'fill');
-    for (const [stepId, body] of moves.slice(0, upTo)) await step(agent, 'quest-sgk', stepId, body).expect(200);
+    for (const [stepId, body] of moves.slice(0, upTo)) await step(agent, 'quest-mechanics', stepId, body).expect(200);
     const lines: string[] = [];
-    for (let i = 0; i < 4; i += 1) lines.push((await step(agent, 'quest-sgk', 'fill', { answer: { fills: { b1: 'be' } } }).expect(200)).body.feedback);
+    for (let i = 0; i < 4; i += 1) lines.push((await step(agent, 'quest-mechanics', 'fill', { answer: { fills: { b1: 'be' } } }).expect(200)).body.feedback);
     expect(lines).toEqual(['Nhìn lại hai số nhé.', 'Số nào nhiều chục hơn?', 'Gần đúng rồi, thử dấu khác xem.', 'Nhìn lại hai số nhé.']);
     lines.forEach((line, i) => expect(line).not.toBe(lines[i - 1]));
-    const right = await step(agent, 'quest-sgk', 'fill', { answer: { fills: { b1: 'lon' } } }).expect(200);
+    const right = await step(agent, 'quest-mechanics', 'fill', { answer: { fills: { b1: 'lon' } } }).expect(200);
     expect(right.body).toMatchObject({ correct: true, feedback: 'Tuyệt, đúng dấu rồi!' });
-    const noLines = await step(agent, 'quest-sgk', 'pick-even', { answer: { choices: ['p1', 'p3'] } }).expect(200);
+    const noLines = await step(agent, 'quest-mechanics', 'pick-even', { answer: { choices: ['p1', 'p3'] } }).expect(200);
     expect(noLines.body.feedback).toBeNull();
   });
 
   it('rejects oversized or malformed answers before grading', async () => {
     const { agent } = await playingChild();
-    await step(agent, 'quest-sgk', 'hello').expect(200);
-    await step(agent, 'quest-sgk', 'read-text', { answer: { choice: 'toi' } }).expect(200);
+    await step(agent, 'quest-mechanics', 'hello').expect(200);
+    await step(agent, 'quest-mechanics', 'read-text', { answer: { choice: 'toi' } }).expect(200);
     const many = Object.fromEntries(Array.from({ length: 51 }, (_, i) => [`w${i}`, 'su-vat']));
-    await step(agent, 'quest-sgk', 'sort-words', { answer: { assignment: many } }).expect(400, { error: 'invalid-step-input' });
-    await step(agent, 'quest-sgk', 'sort-words', { answer: { assignment: { sach: 'su-vat' }, choice: 'x' } }).expect(400, { error: 'invalid-step-input' });
+    await step(agent, 'quest-mechanics', 'sort-words', { answer: { assignment: many } }).expect(400, { error: 'invalid-step-input' });
+    await step(agent, 'quest-mechanics', 'sort-words', { answer: { assignment: { sach: 'su-vat' }, choice: 'x' } }).expect(400, { error: 'invalid-step-input' });
   });
 
   it('shows passages but no answers in the quest view', async () => {
     const { agent } = await playingChild();
-    const res = await agent.get('/api/quests/quest-sgk').expect(200);
+    const res = await agent.get('/api/quests/quest-mechanics').expect(200);
     expect(res.body.quest.texts).toEqual({ 'bai-doc': { title: 'Bài đọc thử', author: 'Tác giả thử', body: 'Ngày khai trường đã đến.\n\nTôi chào mẹ.' } });
-    expect(res.text).not.toMatch(/"(answer|support|assignment|fills|edges|curriculumRef|objective|expression|feedback)"/);
+    expect(res.text).not.toMatch(/"(answer|support|assignment|fills|edges|objective|expression|feedback|source|died)"/);
   });
 
   it('names no book, lesson or page: a quest without a topic has no topic label', async () => {
     const { agent } = await playingChild();
     const res = await agent.get('/api/quests?region=truong-hoc').expect(200);
-    const sgkView = (res.body as { quests: { quest: Record<string, unknown> }[] }).quests.find((q) => q.quest.id === 'quest-sgk');
-    expect(sgkView?.quest).toBeDefined();
-    expect(sgkView?.quest).not.toHaveProperty('textbook');
-    expect(sgkView?.quest).not.toHaveProperty('topic');
-    expect(sgkView?.quest).not.toHaveProperty('lesson');
+    const mechanicsView = (res.body as { quests: { quest: Record<string, unknown> }[] }).quests.find((q) => q.quest.id === 'quest-mechanics');
+    expect(mechanicsView?.quest).toBeDefined();
+    expect(mechanicsView?.quest).not.toHaveProperty('textbook');
+    expect(mechanicsView?.quest).not.toHaveProperty('topic');
+    expect(mechanicsView?.quest).not.toHaveProperty('lesson');
   });
 });
 
@@ -602,10 +602,10 @@ describe('quest list and detail', () => {
     const { agent } = await playingChild();
     const states = async () =>
       Object.fromEntries(((await agent.get('/api/quests').expect(200)).body.quests as Array<{ quest: { id: string }; state: string }>).map((q) => [q.quest.id, q.state]));
-    expect(await states()).toEqual({ 'quest-a': 'open', 'quest-b': 'open', 'quest-c': 'open', 'quest-sgk': 'open', 'quest-soon': 'open' });
+    expect(await states()).toEqual({ 'quest-a': 'open', 'quest-b': 'open', 'quest-c': 'open', 'quest-mechanics': 'open', 'quest-soon': 'open' });
     await step(agent, 'quest-c', 'say-hello').expect(200);
     await finish(agent, 'quest-a');
-    expect(await states()).toEqual({ 'quest-a': 'completed', 'quest-b': 'open', 'quest-c': 'in-progress', 'quest-sgk': 'open', 'quest-soon': 'open' });
+    expect(await states()).toEqual({ 'quest-a': 'completed', 'quest-b': 'open', 'quest-c': 'in-progress', 'quest-mechanics': 'open', 'quest-soon': 'open' });
     const detail = (await agent.get('/api/quests/quest-a').expect(200)).body;
     expect(detail).toMatchObject({ state: 'completed', progress: { stars: 3, completed: true }, quest: { id: 'quest-a', status: 'active' } });
     expect(detail.quest.steps.map((s: { id: string }) => s.id)).toEqual(['meet-vet', 'find-letter', 'solve-tree']);

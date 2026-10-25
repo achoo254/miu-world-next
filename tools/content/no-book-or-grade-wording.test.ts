@@ -2,7 +2,6 @@ import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { REPO_ROOT } from '../assets/asset-lib';
 import { FORBIDDEN_IN_CONTENT, checkBookOrGradeWording, htmlText, jsonStrings, wordingIssues } from './no-book-or-grade-wording';
-import { readPendingQuests } from './no-textbook-copy';
 
 describe('book or grade wording', () => {
   it('finds a grade, a textbook, the series, a lesson number or a page', () => {
@@ -51,11 +50,11 @@ describe('book or grade wording', () => {
     expect(htmlText('<title>A</title><!-- lớp 2 --><script>x("SGK")</script><p>B <a href="/bai/">C</a></p>').trim()).toBe('A B C');
   });
 
-  it('passes on what the repo shows today, quest titles and summaries on the topic pages included', () => {
-    expect(checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: path.join(REPO_ROOT, 'content'), pendingQuests: readPendingQuests() })).toEqual([]);
+  it('passes on what the repo shows today, every quest included', () => {
+    expect(checkBookOrGradeWording({ repoRoot: REPO_ROOT, contentDir: path.join(REPO_ROOT, 'content') })).toEqual([]);
   });
 
-  it('holds the story (characters, map things, rewritten quests) to grade and textbook words only', () => {
+  it('holds the story (characters, map things, quests) to grade and textbook words only', () => {
     for (const text of ['hồi lớp Hai', 'em bé lớp Một', 'Class 2A', 'since first grade', 'Year Two cheers', 'đọc SGK']) {
       expect(wordingIssues('x', text, FORBIDDEN_IN_CONTENT), text).toHaveLength(1);
     }

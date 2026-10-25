@@ -8,7 +8,6 @@ import { loadContentCatalog } from '../src/content/content-catalog';
 import { loadConfig, type ServerConfig } from '../src/config';
 import { createTestDb, type Db, type DbHandle } from '../src/db/client';
 import { buildWorksheets, type WorksheetSource } from '../src/worksheet/worksheet-builder';
-import { readCurriculum } from '../src/worksheet/curriculum-books';
 
 export const ORIGIN = 'http://localhost:5173';
 /** Low scrypt cost keeps the suite fast; production cost has its own test in secret-hashing.test.ts. */
@@ -35,18 +34,18 @@ export const EVENT_CONTENT = loadContentCatalog({
   npcsDir: null,
   eventsDir: fileURLToPath(new URL('./fixtures/events', import.meta.url)),
 });
-/** Worksheets from a small fixture inventory, for the same reason. */
+/** Worksheets from fixture sources, for the same reason. */
 const TV = { id: 'tieng-viet', name: 'Tiếng Việt' };
 const MATH = { id: 'toan', name: 'Toán' };
-/** One sheet written for its quest and three still built from the fixture inventory. */
+/** Four quests with a sheet (one of them two worksheet steps) and one whose steps give nothing to write. */
 export const FIXTURE_WORKSHEET_SOURCES: WorksheetSource[] = [
-  { id: 'quest-viet-chu-a', title: 'Phiếu chữ hoa A', subject: TV, topic: { id: 'viet', title: 'Viết chữ hoa và viết đoạn văn' }, parts: [{ sheet: { title: 'Phiếu chữ hoa A', blocks: [{ kind: 'letter', prompt: 'Tô và viết chữ hoa A', letters: ['A'] }] } }, { sheet: { title: 'Phần hai', blocks: [{ kind: 'paragraph-prompt', prompt: 'Viết 2 câu về ngày hè.', hints: ['Hè em đi đâu?'], lines: 4 }] } }] },
-  { id: 'quest-hom-qua', title: 'Tờ lịch của hôm qua', subject: TV, topic: { id: 'bang-chu-cai', title: 'Bảng chữ cái và tên riêng' }, parts: [{ lessonId: 'tv2-t1-b02' }] },
-  { id: 'quest-bi-bong', title: 'Cầu vồng sau mưa', subject: TV, topic: { id: 'doc-truyen', title: 'Đọc truyện và kể chuyện' }, parts: [{ lessonId: 'tv2-t1-b03' }] },
-  { id: 'quest-can-gao', title: 'Cân túi gạo', subject: MATH, topic: { id: 'khoi-luong-dung-tich', title: 'Ki-lô-gam và lít' }, parts: [{ lessonId: 'toan2-t1-b17' }, { lessonId: 'toan2-t1-b17' }] },
-  { id: 'quest-khong-phieu', title: 'Không có gì để viết', subject: MATH, topic: { id: 'khoi-luong-dung-tich', title: 'Ki-lô-gam và lít' }, parts: [{ lessonId: 'toan2-t1-b18' }] },
+  { id: 'quest-viet-chu-a', title: 'Phiếu chữ hoa A', subject: TV, topic: { id: 'viet', title: 'Viết chữ hoa và viết đoạn văn' }, sheets: [{ title: 'Phiếu chữ hoa A', blocks: [{ kind: 'letter', prompt: 'Tô và viết chữ hoa A', letters: ['A'] }] }, { title: 'Phần hai', blocks: [{ kind: 'paragraph-prompt', prompt: 'Viết 2 câu về ngày hè.', hints: ['Hè em đi đâu?'], lines: 4 }] }] },
+  { id: 'quest-hom-qua', title: 'Tờ lịch của hôm qua', subject: TV, topic: { id: 'bang-chu-cai', title: 'Bảng chữ cái và tên riêng' }, sheets: [{ title: 'Tờ lịch của hôm qua', blocks: [{ kind: 'dictation', prompt: 'Nghe – viết hai dòng đầu', title: 'Tờ lịch', text: 'Sáng nay em bóc tờ lịch' }, { kind: 'paragraph-prompt', prompt: 'Viết 2 – 3 câu kể về hôm qua.', hints: ['Hôm qua em làm gì?'], lines: 6 }] }] },
+  { id: 'quest-bi-bong', title: 'Cầu vồng sau mưa', subject: TV, topic: { id: 'doc-truyen', title: 'Đọc truyện và kể chuyện' }, sheets: [{ title: 'Cầu vồng sau mưa', blocks: [{ kind: 'letter', prompt: 'Tô và viết chữ hoa Ă, Â', letters: ['Ă', 'Â'] }, { kind: 'copy-line', text: 'Ăn chậm nhai kĩ.', model: ['Ăn chậm nhai kĩ.'] }] }] },
+  { id: 'quest-can-gao', title: 'Cân túi gạo', subject: MATH, topic: { id: 'khoi-luong-dung-tich', title: 'Ki-lô-gam và lít' }, sheets: [{ title: 'Cân túi gạo', blocks: [{ kind: 'activity', prompt: 'Cân một số đồ vật trong nhà.', media: ['cân đồng hồ', 'túi gạo'] }] }] },
+  { id: 'quest-khong-phieu', title: 'Không có gì để viết', subject: MATH, topic: { id: 'khoi-luong-dung-tich', title: 'Ki-lô-gam và lít' }, sheets: [] },
 ];
-export const FIXTURE_WORKSHEETS = buildWorksheets(FIXTURE_WORKSHEET_SOURCES, readCurriculum(fileURLToPath(new URL('./fixtures/curriculum', import.meta.url))).books);
+export const FIXTURE_WORKSHEETS = buildWorksheets(FIXTURE_WORKSHEET_SOURCES);
 
 export type Agent = ReturnType<typeof request.agent>;
 

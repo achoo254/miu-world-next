@@ -13,7 +13,7 @@ export const PARENT_STATE = 'playwright/.auth/parent.json';
  * The smoke suite (docs/code-standards.md "Kiểm thử"): one project per `e2e/<name>.spec.ts`, each a main journey that
  * stays green and holds every release; checks that grow with content live in Node. All start from the parent session.
  */
-const SIGNED_IN = ['play', 'quest-flow', 'sgk-mechanics', 'worksheets', 'maps', 'coop', 'bosses', 'shop'] as const;
+const SIGNED_IN = ['play', 'quest-flow', 'quest-mechanics', 'worksheets', 'maps', 'coop', 'bosses', 'shop'] as const;
 
 export default defineConfig({
   testDir: 'e2e',
@@ -58,7 +58,7 @@ export default defineConfig({
         // The screens project's fake moderator (screens.spec.ts): no other spec signs up with this email, so to every
         // other account the moderation routes stay 404 as in production without the setting.
         MODERATOR_ACCOUNTS: 'moderator-e2e@example.vn',
-        // Test-only quests (every textbook mechanic), loaded after the shipped ones.
+        // Test-only quests (every learning mechanic), loaded after the shipped ones.
         EXTRA_QUEST_DIR: fileURLToPath(new URL('./e2e/fixtures/quests', import.meta.url)),
       },
       reuseExistingServer: false,

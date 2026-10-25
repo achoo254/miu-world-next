@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { FINGERPRINTS_FILE, decodeFingerprints, encodeFingerprints, fingerprintKey, fingerprintWords, readFingerprints, shingleHashes } from './textbook-fingerprints';
+import { FINGERPRINTS_FILE, decodeFingerprints, encodeFingerprints, fingerprintKey, fingerprintWords, keyCheckOf, readFingerprints, readKeyCheck, shingleHashes } from './textbook-fingerprints';
 
 const KEY = Buffer.alloc(32, 7);
 
@@ -22,9 +22,30 @@ describe('textbook fingerprints', () => {
   });
 
   it('read the key from MIU_FINGERPRINT_KEY or the owner iCloud file, and refuse a malformed one', () => {
-    expect(fingerprintKey({ MIU_FINGERPRINT_KEY: '07'.repeat(32), MIU_ICLOUD_DIR: '/nowhere' })).toEqual(KEY);
+    expect(fingerprintKey({ MIU_FINGERPRINT_KEY: '07'.repeat(32), MIU_ICLOUD_DIR: '/nowhere' }, keyCheckOf(KEY))).toEqual(KEY);
     expect(fingerprintKey({ MIU_ICLOUD_DIR: '/nowhere' })).toBeNull();
     expect(() => fingerprintKey({ MIU_FINGERPRINT_KEY: 'abc' })).toThrow(/64 hex/);
+  });
+
+  it('refuse a well-formed key that is not the one the fingerprints were made with', () => {
+    // An all-zero key (a placeholder secret) is well-formed but would match no shingle at all.
+    expect(() => fingerprintKey({ MIU_FINGERPRINT_KEY: '0'.repeat(64), MIU_ICLOUD_DIR: '/nowhere' })).toThrow(/not the one the fingerprints were made with/);
+    expect(() => fingerprintKey({ MIU_FINGERPRINT_KEY: '07'.repeat(32), MIU_ICLOUD_DIR: '/nowhere' }, keyCheckOf(Buffer.alloc(32, 8)))).toThrow(/not the one/);
+    expect(keyCheckOf(KEY)).toMatch(/^[0-9a-f]{16}$/);
+    expect(readKeyCheck()).toMatch(/^[0-9a-f]{16}$/);
+  });
+
+  // On CI the secret is set; on a machine without the owner's iCloud there is no key, and this case is skipped.
+  const realKey = (() => {
+    try {
+      return fingerprintKey();
+    } catch {
+      return 'mismatch' as const;
+    }
+  })();
+  it.skipIf(realKey === null)('accept the real key, which matches the committed check value', () => {
+    if (realKey === 'mismatch' || realKey === null) throw new Error('the key on this machine is not the one the fingerprints were made with');
+    expect(keyCheckOf(realKey)).toBe(readKeyCheck());
   });
 
   it('round-trip through the file format, sorted and without duplicates', () => {

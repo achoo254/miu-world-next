@@ -6,15 +6,15 @@ import type { PlayerData } from '../../player/player-data';
 import { PROGRESS } from '../../player/test-fixtures';
 import type { ActiveQuestView } from '../../quest/quest-flow';
 import { LearningStep } from '../learning-step';
-import questSgk from '../../../../../server/test/fixtures/quests/quest-sgk.json';
+import questMechanics from '../../../../../server/test/fixtures/quests/quest-mechanics.json';
 import { monthGrid } from './calendar-challenge';
 import { stepTime } from './clock-challenge';
 import { toggleEdge } from './connect-challenge';
 import { templateParts } from './fill-blank-challenge';
 
-// The server's fixture quest with every textbook mechanic, as the client receives it (no answers).
-const view = QuestView.parse(QuestDefinition.parse(questSgk));
-if (view.status !== 'active') throw new Error('quest-sgk is active');
+// The server's fixture quest with every learning mechanic, as the client receives it (no answers).
+const view = QuestView.parse(QuestDefinition.parse(questMechanics));
+if (view.status !== 'active') throw new Error('quest-mechanics is active');
 const quest = view as ActiveQuestView;
 const stepOf = (id: string): QuestStepPublic => {
   const step = quest.steps.find((s) => s.id === id);
@@ -27,7 +27,7 @@ const DATA: PlayerData = { character: CHARACTER, progress: PROGRESS, quests: [] 
 const response = (correct: boolean): StepCompleteResponse => ({
   correct,
   feedback: null,
-  quest: { questId: 'quest-sgk', completedSteps: [], completed: false, found: {}, stars: null },
+  quest: { questId: 'quest-mechanics', completedSteps: [], completed: false, found: {}, stars: null },
   reward: null,
   repeated: false,
   completion: null,
@@ -57,7 +57,7 @@ const body = (submit: ReturnType<typeof vi.fn>) => submit.mock.calls.at(-1)?.[1]
 Element.prototype.setPointerCapture = () => undefined;
 afterEach(cleanup);
 
-describe('textbook mechanic screens send the answer the server grades', () => {
+describe('learning mechanic screens send the answer the server grades', () => {
   it('classify: tap a card then a group; a placed card taps back out; drag works too', () => {
     const submit = renderStep('sort-words');
     const check_ = screen.getByRole('button', { name: /Kiểm tra/ }) as HTMLButtonElement;

@@ -1,0 +1,214 @@
+{
+  "topics": [
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "bang-chu-cai",
+      "title": "Bảng chữ cái và tên riêng",
+      "objectives": 3,
+      "covered": 3,
+      "steps": 12,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "cau",
+      "title": "Câu giới thiệu và xếp từ thành câu",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 14,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "chinh-ta",
+      "title": "Viết đúng chính tả",
+      "objectives": 3,
+      "covered": 3,
+      "steps": 40,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "dau-cau",
+      "title": "Dấu chấm, dấu chấm hỏi, dấu chấm than, dấu phẩy",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 13,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "doc-tho",
+      "title": "Đọc thơ, đồng dao và ca dao",
+      "objectives": 3,
+      "covered": 3,
+      "steps": 68,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "doc-truyen",
+      "title": "Đọc truyện và kể chuyện",
+      "objectives": 6,
+      "covered": 6,
+      "steps": 119,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "doc-van-ban-thong-tin",
+      "title": "Đọc thời khoá biểu, danh sách và lời hướng dẫn",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 35,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "noi-va-nghe",
+      "title": "Nói và nghe",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 99,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "tu-chi-dac-diem",
+      "title": "Từ chỉ đặc điểm",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 20,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "tu-chi-su-vat-hoat-dong",
+      "title": "Từ chỉ sự vật, từ chỉ hoạt động",
+      "objectives": 3,
+      "covered": 3,
+      "steps": 40,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "tu-ngu-tinh-cam",
+      "title": "Từ ngữ về bạn bè và gia đình",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 12,
+      "percent": 100
+    },
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "topic": "viet",
+      "title": "Viết chữ hoa và viết đoạn văn",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 24,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "bai-toan-co-loi-van",
+      "title": "Bài toán thêm, bớt, nhiều hơn, ít hơn",
+      "objectives": 3,
+      "covered": 3,
+      "steps": 41,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "cong-tru-co-nho",
+      "title": "Cộng, trừ có nhớ đến 100",
+      "objectives": 4,
+      "covered": 4,
+      "steps": 75,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "cong-tru-khong-nho",
+      "title": "Cộng, trừ không nhớ đến 100",
+      "objectives": 3,
+      "covered": 3,
+      "steps": 13,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "cong-tru-qua-10",
+      "title": "Cộng, trừ qua 10 trong phạm vi 20",
+      "objectives": 4,
+      "covered": 4,
+      "steps": 65,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "gio-va-lich",
+      "title": "Giờ, phút, ngày, tháng",
+      "objectives": 3,
+      "covered": 3,
+      "steps": 70,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "hinh-phang",
+      "title": "Điểm, đoạn thẳng và hình phẳng",
+      "objectives": 4,
+      "covered": 4,
+      "steps": 53,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "khoi-luong-dung-tich",
+      "title": "Ki-lô-gam và lít",
+      "objectives": 5,
+      "covered": 5,
+      "steps": 49,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "so-den-100",
+      "title": "Số đến 100",
+      "objectives": 4,
+      "covered": 4,
+      "steps": 37,
+      "percent": 100
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "topic": "thanh-phan-phep-tinh",
+      "title": "Tên gọi trong phép cộng, phép trừ",
+      "objectives": 2,
+      "covered": 2,
+      "steps": 18,
+      "percent": 100
+    }
+  ]
+}

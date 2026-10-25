@@ -17,7 +17,7 @@ const base = JSON.parse(
 ) as Record<string, unknown>;
 
 describe('content catalogue', () => {
-  it('loads the shipped content: chapter 1 and every textbook lesson, all open from the start', () => {
+  it('loads the shipped content: chapter 1 and every learning quest, all open from the start', () => {
     const catalog = loadContentCatalog();
     const ids = [...catalog.quests.keys()];
     expect(ids[0]).toBe('forest-ch1');
@@ -43,15 +43,15 @@ describe('content catalogue', () => {
   });
 
   it('validates drafts but never loads them', () => {
-    const sgk = JSON.parse(readFileSync(new URL('../../test/fixtures/quests/quest-sgk.json', import.meta.url), 'utf8')) as Record<string, unknown>;
-    // Textbook quests need feedback lines on every learning step, none reused.
-    const steps = (sgk.steps as Array<Record<string, unknown>>).map((s) =>
+    const mechanics = JSON.parse(readFileSync(new URL('../../test/fixtures/quests/quest-mechanics.json', import.meta.url), 'utf8')) as Record<string, unknown>;
+    // Learning quests need feedback lines on every learning step, none reused.
+    const steps = (mechanics.steps as Array<Record<string, unknown>>).map((s) =>
       'support' in s ? { ...s, feedback: { right: [1, 2, 3].map((n) => `${String(s.id)} ${n}`), wrong: [4, 5, 6].map((n) => `${String(s.id)} ${n}`) } } : s,
     );
     // ...and say where to go: every step here happens at the ancient tree.
     const places = Object.fromEntries(steps.flatMap((s) => (s.kind === 'search' ? [[s.id, 'cây cổ thụ']] : s.target ? [[s.target, 'cây cổ thụ']] : [])));
     const walked = steps.map((s) => ({ ...s, goTo: 'Đến cây cổ thụ' }));
-    const draft = { ...sgk, id: 'tv2-t01-b01', status: 'draft', lesson: 'tv2-t1-b01', topic: 'doc-truyen', steps: walked, places };
+    const draft = { ...mechanics, id: 'tv2-t01-b01', status: 'draft', topic: 'doc-truyen', steps: walked, places };
     const loaded = loadQuests(questDir([{ ...base, id: 'a' }, draft]), new Set([...skills, 'phep-cong']));
     expect([...loaded.keys()]).toEqual(['a']);
     expect(() => loadQuests(questDir([{ ...draft, phases: {} }]), skills)).toThrow(/invalid content file/);

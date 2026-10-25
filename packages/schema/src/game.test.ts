@@ -27,13 +27,24 @@ describe('QuestView', () => {
   });
 
   it('keeps shared passages and drops every answer of the new mechanics', () => {
-    const raw: unknown = JSON.parse(readFileSync(new URL('../../../apps/server/test/fixtures/quests/quest-sgk.json', import.meta.url), 'utf8'));
+    const raw: unknown = JSON.parse(readFileSync(new URL('../../../apps/server/test/fixtures/quests/quest-mechanics.json', import.meta.url), 'utf8'));
     const view = QuestView.parse(QuestDefinition.parse(raw));
     if (view.status !== 'active') throw new Error('expected an active quest');
     expect(view.texts['bai-doc']).toEqual({ title: 'Bài đọc thử', author: 'Tác giả thử', body: 'Ngày khai trường đã đến.\n\nTôi chào mẹ.' });
     const keys = keysDeep(view);
     for (const secret of ['answer', 'support', 'assignment', 'fills', 'edges']) expect(keys).not.toContain(secret);
     expect(view.steps.find((s) => s.id === 'read-clock')).toMatchObject({ mechanic: 'clock', mode: 'read', time: { hour: 3, minute: 0 } });
+    for (const secret of ['source', 'died']) expect(keys).not.toContain(secret);
+  });
+
+  it('names no author for a folk or original reading, and never sends its source', () => {
+    const raw = JSON.parse(readFileSync(new URL('../../../apps/server/test/fixtures/quests/quest-mechanics.json', import.meta.url), 'utf8')) as { texts: Record<string, Record<string, unknown>> };
+    const body = 'Ngày khai trường đã đến.\n\nTôi chào mẹ.';
+    for (const source of [{ kind: 'folk', title: 'Đồng dao thử', note: 'bản truyền miệng' }, { kind: 'original' }]) {
+      const view = QuestView.parse(QuestDefinition.parse({ ...raw, texts: { 'bai-doc': { title: 'Bài đọc thử', body, source } } }));
+      if (view.status !== 'active') throw new Error('expected an active quest');
+      expect(view.texts['bai-doc']).toEqual({ title: 'Bài đọc thử', body });
+    }
   });
 
   it('drops every boss turn answer from the shipped quests that end in a boss battle', () => {

@@ -1,8 +1,9 @@
 // No book, grade, lesson number or page on what the web shows. The game teaches by subject and topic: players and
 // visitors never read a school grade ("lớp 2"), a textbook ("SGK", "sách giáo khoa", the series' name), a printed
 // lesson number ("Bài 3.") or a page ("Trang 25"). This check reads the web-visible text that is not quest content (the
-// UI dictionaries, the app shell, the region names, the topics shown on the public pages) and the title and summary
-// of every quest the public pages list.
+// UI dictionaries, the app shell, the region names, the topics shown on the public pages, the title and summary of
+// every quest the public pages list) and the story the game tells (characters, map things, every string of every
+// quest).
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { readTopicPageData } from '../../apps/web/lesson-page-data';
@@ -65,15 +66,13 @@ export function htmlText(html: string): string {
 export interface WordingSources {
   repoRoot: string;
   contentDir: string;
-  /** Quests still played from the book: their story text waits for the rewrite (the copy guard watches them). */
-  pendingQuests?: ReadonlySet<string>;
 }
 
 /** JSON files of a folder, by name (none when the folder is missing). */
 const jsonFilesOf = (dir: string): string[] => (existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).sort() : []);
 
 /** The check as `pnpm content:check` runs it. */
-export function checkBookOrGradeWording({ repoRoot, contentDir, pendingQuests = new Set() }: WordingSources): string[] {
+export function checkBookOrGradeWording({ repoRoot, contentDir }: WordingSources): string[] {
   const rel = (file: string): string => path.relative(repoRoot, file).split(path.sep).join('/');
   const issues: string[] = [];
   for (const lang of ['vi', 'en']) {
@@ -87,14 +86,14 @@ export function checkBookOrGradeWording({ repoRoot, contentDir, pendingQuests = 
   for (const page of readTopicPageData(contentDir)) {
     const where = `topic page ${page.topic.subject}/${page.topic.id}`;
     for (const text of [page.subject.name, page.topic.title, page.topic.summary, ...page.topic.objectives.map((o) => o.text)]) issues.push(...wordingIssues(where, text));
-    // Every quest a public page lists shows its title and summary there, rewritten yet or not.
+    // Every quest a public page lists shows its title and summary there.
     for (const activity of page.activities) for (const text of [activity.title, activity.summary]) issues.push(...wordingIssues(`${where}, quest ${activity.id}`, text));
   }
-  // The story the game tells: characters, the things on the maps, and every quest written in our own words.
+  // The story the game tells: characters, the things on the maps, and every quest.
   const story = [
     ...jsonFilesOf(path.join(contentDir, 'npcs')).map((f) => `npcs/${f}`),
     'world/targets.json',
-    ...jsonFilesOf(path.join(contentDir, 'quests')).filter((f) => !pendingQuests.has(f.replace(/\.json$/, ''))).map((f) => `quests/${f}`),
+    ...jsonFilesOf(path.join(contentDir, 'quests')).map((f) => `quests/${f}`),
   ];
   for (const file of story) {
     const full = path.join(contentDir, file);
