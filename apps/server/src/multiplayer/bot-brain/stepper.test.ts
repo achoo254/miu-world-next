@@ -62,11 +62,28 @@ describe("a bot's feet", () => {
     expect(stepper.spot.x).toBeGreaterThan(60);
   });
 
-  it('knows it is stuck after three plans without headway, and keeps off that column for a while', () => {
-    // A ledge four blocks up ends the way: the goal on top is never reachable.
+  it('walks as near as it gets to a goal in sight that is walled off, then gives it up at once, keeping off nothing', () => {
+    // A ledge four blocks up, the goal on top of it in sight: nothing it sees leads up there.
     const map = drawnMap(['11115555']);
     const stepper = new Stepper(map, { x: 1, y: 1, z: 0 }, { speed: 3, sight: 8 });
     const { events, plans } = walk(map, stepper, { x: 6.5, y: 5, z: 0.5, reach: 0.5 }, 30);
+    expect(events).toEqual(['stuck']);
+    // One plan, not three: it never presses against the ledge.
+    expect(plans).toBe(1);
+    expect(stepper.stats.stuck).toBe(1);
+    expect(stepper.stats.stuckMs).toBeLessThanOrEqual(MIN_PLAN_GAP_MS);
+    expect(stepper.hasGoal).toBe(false);
+    expect(stepper.spot).toEqual({ x: 3, y: 1, z: 0 });
+    // The column it stood on is not kept off: a goal there is walked to at once.
+    expect(walk(map, stepper, { x: 2.5, y: 1, z: 0.5, reach: 0.5 }, 10, 10_000).events).toEqual(['arrived']);
+    expect(walk(map, stepper, { x: 3.5, y: 1, z: 0.5, reach: 0.5 }, 10, 20_000).events).toEqual(['arrived']);
+  });
+
+  it('knows it is stuck after three plans without headway, and keeps off that column for a while', () => {
+    // A ledge four blocks up ends the way, the goal far along the top beyond its sight: never reachable.
+    const map = drawnMap([`1111${'5'.repeat(20)}`]);
+    const stepper = new Stepper(map, { x: 1, y: 1, z: 0 }, { speed: 3, sight: 8 });
+    const { events, plans } = walk(map, stepper, { x: 22.5, y: 5, z: 0.5, reach: 0.5 }, 30);
     expect(events).toEqual(['stuck']);
     expect(plans).toBe(STUCK_PLANS + 1);
     expect(stepper.stats.stuck).toBe(1);

@@ -65,6 +65,11 @@ export interface LocalPlan {
   readonly cells: readonly Spot[];
   /** False when it ends at the window's edge or as near as it could get. */
   readonly reachesGoal: boolean;
+  /**
+   * The goal is in sight but walled off from it: every spot the walk reaches in the window was searched and none is
+   * the goal (a fence or a ledge between, with no gate in view). Pressing on gets it no nearer.
+   */
+  readonly sealed: boolean;
   readonly expansions: number;
 }
 
@@ -147,7 +152,8 @@ export class LocalPlanner {
 
   /**
    * The way from `from` (a standing spot) towards `goal` within `sight` of it, avoiding columns `blocked` says no
-   * to; null when it stands nowhere, or nothing in the window gets it any nearer.
+   * to; null when it stands nowhere, or nothing in the window gets it any nearer (an empty plan that is `sealed` when
+   * the goal is in the window and walled off).
    */
   plan(map: WalkMap, from: Spot, goal: PathGoal, sight: number, blocked: (x: number, z: number) => boolean = NOTHING_BLOCKED): LocalPlan | null {
     const startLevel = map.levelAt(from.x, from.y, from.z);
@@ -230,9 +236,11 @@ export class LocalPlanner {
       }
     }
     const reachesGoal = end >= 0 && goalInside;
+    // Every spot it can walk to in the window searched (not the budget spent), and the goal in the window not among them.
+    const sealed = end < 0 && goalInside && open.size === 0;
     // No goal spot (or edge spot) found: as near as it got, if that is a block nearer than where it stands.
     if (end < 0) {
-      if (nearest === first || nearestLeft > firstLeft - 1) return null;
+      if (nearest === first || nearestLeft > firstLeft - 1) return sealed ? { points: [], cells: [], reachesGoal: false, sealed, expansions } : null;
       end = nearest;
     }
     const cells: Spot[] = [];
@@ -243,7 +251,7 @@ export class LocalPlanner {
       cells.push({ x, y: feetOf(map.spot(x, z, id % WALK_LEVELS)), z });
     }
     cells.reverse();
-    return { points: mergeRuns(map, from, cells, blocked), cells, reachesGoal, expansions };
+    return { points: mergeRuns(map, from, cells, blocked), cells, reachesGoal, sealed, expansions };
   }
 
   /** Column `column` of the window's straight distance to the goal (worked out once a plan). */

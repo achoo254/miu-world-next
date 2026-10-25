@@ -3,7 +3,8 @@
 // where nobody could. It asks for a new plan every few columns or seconds while its plan only reaches the edge of
 // what it saw, and plans from the end of the leg it is on, so the new plan starts where its feet will be. Making no
 // headway over three plans in a row is being stuck: the column it is on is avoided for a minute and its goal given
-// up. Where it walked is kept for the bot's memory.
+// up. A goal in sight that a plan finds walled off (no way to it over what it sees) is given up at once, once the bot
+// has walked as near as it can get. Where it walked is kept for the bot's memory.
 import { lineColumns, type LocalPlanner, type PathGoal, type PathPoint } from './local-path';
 import type { Spot, WalkMap } from './walk-store';
 
@@ -185,6 +186,13 @@ export class Stepper {
     const found = planner.plan(this.map, from, goal, this.sight, this.banned.size > 0 ? this.blocked : undefined);
     this.legs = current ? [current, ...(found?.points ?? [])] : [...(found?.points ?? [])];
     this.planReaches = found?.reachesGoal ?? false;
+    if (found?.sealed) {
+      // Its goal is in sight with no way to it over what it sees: it walks as near as that gets it (along the fence),
+      // then gives the goal up instead of pressing against the fence plan after plan. The column it stands on is not
+      // to blame, so nothing is kept off.
+      this.giveUp(now, false);
+      return;
+    }
     const end = found?.cells.at(-1) ?? from;
     const left = Math.hypot(end.x + 0.5 - goal.x, end.z + 0.5 - goal.z);
     if (left <= this.bestLeft - 1 || this.planReaches) {
@@ -195,12 +203,20 @@ export class Stepper {
     }
     this.noHeadway += 1;
     if (this.noHeadway < STUCK_PLANS) return;
+    this.banned.set(this.cell.x + this.cell.z * this.map.sx, now + STUCK_BAN_MS);
+    this.giveUp(now, true);
+  }
+
+  /**
+   * Stuck: its goal given up and the time since its last headway counted; it walks the leg it is on to its end, or
+   * (`onlyCurrent` false) the whole plan it was just given.
+   */
+  private giveUp(now: number, onlyCurrent: boolean): void {
     this.stuckNow = true;
     this.stats.stuck += 1;
     this.stats.stuckMs += now - this.headwayAt;
-    this.banned.set(this.cell.x + this.cell.z * this.map.sx, now + STUCK_BAN_MS);
     this.goal = null;
-    this.legs = this.legs.slice(0, 1);
+    if (onlyCurrent) this.legs = this.legs.slice(0, 1);
   }
 
   /** Walks on for `dt` seconds. */

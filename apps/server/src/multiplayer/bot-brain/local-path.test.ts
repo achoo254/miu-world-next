@@ -79,10 +79,18 @@ describe('a bot plans its way over what it sees', () => {
     for (const c of plan?.cells ?? []) expect(Math.max(Math.abs(c.x - 50), Math.abs(c.z - 50))).toBeGreaterThan(2);
   });
 
-  it('has no plan from nowhere, nor when nothing gets it any nearer', () => {
+  it('has no plan from nowhere, nor when nothing gets it any nearer; a goal in sight walled off is said to be', () => {
     const map = drawnMap(['1#1']);
     expect(planner.plan(map, { x: 1, y: 1, z: 0 }, { x: 2.5, y: 1, z: 0.5, reach: 0.5 }, 4)).toBeNull();
-    expect(planner.plan(map, { x: 0, y: 1, z: 0 }, { x: 2.5, y: 1, z: 0.5, reach: 0.5 }, 4)).toBeNull();
+    // Beyond the wall in sight: every spot it can walk to searched, an empty plan that says it is walled off.
+    expect(planner.plan(map, { x: 0, y: 1, z: 0 }, { x: 2.5, y: 1, z: 0.5, reach: 0.5 }, 4)).toMatchObject({ cells: [], reachesGoal: false, sealed: true });
+    // Beyond its sight, nothing nearer: no plan (it cannot tell what lies past the edge).
+    const long = drawnMap(['1#11111111']);
+    expect(planner.plan(long, { x: 0, y: 1, z: 0 }, { x: 9.5, y: 1, z: 0.5, reach: 0.5 }, 2)).toBeNull();
+    // Along a fence towards a gate it cannot see yet: nearer, not walled off.
+    const fence = drawnMap(['1111111', '###1111', '1111111'].map((r) => r));
+    const along = planner.plan(fence, { x: 0, y: 1, z: 0 }, { x: 0.5, y: 1, z: 2.5, reach: 0.5 }, 6);
+    expect(along?.sealed).toBe(false);
   });
 
   it('keeps off columns it is told to avoid', () => {
