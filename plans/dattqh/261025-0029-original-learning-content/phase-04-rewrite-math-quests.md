@@ -1,6 +1,6 @@
 # Pha 4: Viết lại 36 quest Toán
 
-**Tier:** L · **Phụ thuộc:** 3 (người sở hữu đã duyệt mẫu) · **Trạng thái:** pending
+**Tier:** L · **Phụ thuộc:** 3 (người sở hữu đã duyệt mẫu) · **Trạng thái:** done (25/10, commit `ee522755`, `5eaa20c9`)
 
 ## Bối cảnh
 
@@ -26,3 +26,10 @@ Sửa: `content/quests/toan2-*.json` (36 file trừ mẫu), `tools/content/textb
 
 - Đổi số làm lệch dạng bài (ví dụ cộng không nhớ thành có nhớ): kiểm vùng số và có nhớ hay không bằng test theo mục tiêu.
 - Bạn máy tự học (`pnpm bots:learning`) dựa vào nội dung bước: chạy lại số liệu cho trang review sau đợt cuối.
+
+## Kết quả (25/10/2026)
+
+- 33 quest Toán còn chờ (3 quest mẫu xong từ pha 3) viết lại trong 8 đợt song song theo `rewrite-brief.md`: bộ số mới cùng vùng số và độ khó, bối cảnh trong thế giới Miu, phản hồi mới; mọi bước dạy có `objective`, mọi đáp số tính được có `expression`. Danh sách chờ không còn quest Toán.
+- Kiểm: `pnpm content:probe` rỗng cả bốn danh sách cho từng quest; `toan2-quests.test.ts` 73/73; `content:check` không còn lỗi Toán (bước `dong-ho-cung-gio` của `toan2-cd7-b36` gán lại `gio-va-lich-ngay-gio` để mục tiêu này có dạng chọn đáp án).
+- Còn lại, để pha 7: tên vài mục tiêu trên map vẫn theo bản cũ (bưu ảnh Huế, Năm Căn, Mù Cang Chải ở `toan2-cd6-b32`; tờ lịch tháng 12, 2, 5, 6 ở `toan2-cd6-b30`, `b31`) trong khi lời quest đã nói tháng khác; id bước giữ nguyên nên vài id không còn khớp nghĩa (vd `so-be-hon-5`), người chơi không thấy.
+- Đáp án đếm, xếp, nối, chọn nhiều không có `expression` (máy chưa hỗ trợ dạng này), người viết tự kiểm.
