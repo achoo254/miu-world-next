@@ -110,6 +110,15 @@
       "sourceUrl": "https://fontsource.org/fonts/nunito"
     },
     {
+      "id": "font-playwrite-vn",
+      "name": "Playwrite Việt Nam",
+      "author": "TypeTogether (Veronika Burian, José Scaglione) / Google Fonts",
+      "version": "1.003",
+      "license": "OFL-1.1",
+      "homepage": "https://fonts.google.com/specimen/Playwrite+VN",
+      "sourceUrl": "https://fonts.google.com/specimen/Playwrite+VN"
+    },
+    {
       "id": "kenney-furniture-kit",
       "name": "Furniture Kit",
       "author": "Kenney",
@@ -10282,6 +10291,22 @@
       "sourceUrl": "https://fontsource.org/fonts/nunito",
       "sha256": "0e29c28c9a442387fe5e98ca62a66dfe2bfb7b1c873ee9d081b42f0565af8858",
       "bytes": 5960
+    },
+    {
+      "path": "packs/font-playwrite-vn/1.003/OFL.txt",
+      "pack": "font-playwrite-vn",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://fonts.google.com/specimen/Playwrite+VN",
+      "sha256": "0370f5946020846b0ca65e44950d11411ea3bd3c4c0d755916470f9f96cd8cb8",
+      "bytes": 4393
+    },
+    {
+      "path": "packs/font-playwrite-vn/1.003/playwrite-vn-400.woff2",
+      "pack": "font-playwrite-vn",
+      "license": "OFL-1.1",
+      "sourceUrl": "https://fonts.google.com/specimen/Playwrite+VN",
+      "sha256": "40caf7f0139c322649f4147077937a24f6cd2ba4879408a6dc9beb34d6a83475",
+      "bytes": 42800
     },
     {
       "path": "packs/kenney-furniture-kit/2.0/License.txt",

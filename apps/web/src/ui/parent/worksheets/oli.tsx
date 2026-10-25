@@ -1,17 +1,18 @@
-// Writing space in vở ô li, and the model hand written on it. The model is the primary-school font
-// (HP001); it has no open license, so the server does not serve it and the sheet shows no model at all
-// rather than letters in a hand the child should not copy.
+// Writing space in vở ô li, and the model hand written on it. The model is Playwrite Việt Nam (TypeTogether,
+// OFL 1.1), drawn after Vietnam's primary-school model handwriting and served from the origin as a font pack
+// (worksheets.css). Until it has loaded, or where it cannot be fetched, the sheet shows no model at all rather
+// than letters in a hand the child should not copy.
 import { useEffect, useState, type CSSProperties } from 'react';
 
-const MODEL_FONT = 'Chu Mau Tieu Hoc';
+const MODEL_FONT = 'Playwrite VN';
 
-/** True once the model handwriting font has loaded; false when the server has none. */
+/** True once the model handwriting font has loaded; false while it loads or when it cannot be fetched. */
 export function useModelHand(): boolean {
   const [ready, setReady] = useState(false);
   useEffect(() => {
     let live = true;
-    // `load` rejects when the file 404s, and resolves empty where no face matches.
-    document.fonts?.load(`700 1em "${MODEL_FONT}"`).then(
+    // `load` rejects when the file cannot be fetched, and resolves empty where no face matches.
+    document.fonts?.load(`400 1em "${MODEL_FONT}"`).then(
       (faces) => live && setReady(faces.length > 0),
       () => undefined,
     );

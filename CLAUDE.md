@@ -9,7 +9,7 @@ Giai đoạn hiện tại: Vertical slice MVP đã xong 10 phase; nội dung SGK
 ## Lệnh
 
 - Chỉ dùng `pnpm` (workspace, `packageManager` khóa trong `package.json`), Node ≥ 22. Không dùng `npm`/`yarn`.
-- Dữ liệu ngoài git (font HP001 của phiếu viết, PDF SGK gốc) nằm trong iCloud Drive của người phụ trách, danh sách kèm sha256 ở `tools/private/private-files.json`. Máy mới hoặc khi hook đầu phiên báo thiếu: chạy `pnpm private:sync` (macOS và Windows; iCloud ở chỗ khác thì đặt `MIU_ICLOUD_DIR`). Không commit các file đó.
+- Dữ liệu ngoài git (PDF SGK gốc, thời khóa biểu mặc định) nằm trong iCloud Drive của người phụ trách, danh sách kèm sha256 ở `tools/private/private-files.json`. Máy mới hoặc khi hook đầu phiên báo thiếu: chạy `pnpm private:sync` (macOS và Windows; iCloud ở chỗ khác thì đặt `MIU_ICLOUD_DIR`). Không commit các file đó.
 - Gate trước khi báo xong — 5 lệnh, đúng thứ tự CI (`.github/workflows/ci.yml`):
   `pnpm assets:check` → `pnpm content:check` → `pnpm test` → `pnpm typecheck` → `pnpm lint`
   Máy dev 16 GB dùng chung: **không chạy full `pnpm test`, build web hay E2E ở local**. Local chỉ chạy `assets:check`, `content:check`, `typecheck`, `lint` và đúng file test liên quan (`pnpm vitest run <file>`); bộ đầy đủ, build web và E2E chạy trên CI (push `main` hoặc PR): push rồi `gh run watch`, CI xanh mới báo xong.

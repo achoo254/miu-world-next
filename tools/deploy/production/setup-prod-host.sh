@@ -48,9 +48,6 @@ install -d -m 755 /opt/miu /opt/miu/releases
 install -d -m 750 -o root -g miu /etc/miu
 install -d -m 700 -o postgres -g postgres /var/backups/miu
 install -d -m 700 -o postgres -g postgres /var/backups/miu/bots
-# Worksheet handwriting font: no open license, so it never goes through git or a release; `deploy.sh
-# fonts` uploads it here, outside /opt/miu/current so a release does not replace it.
-install -d -m 750 -o root -g miu /opt/miu/fonts
 
 install -m 644 "$HERE/miu-server.service" "$HERE/miu-backup.service" "$HERE/miu-backup.timer" /etc/systemd/system/
 # The API's own journal namespace (14 days); the host journal config is left alone.

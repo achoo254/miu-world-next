@@ -1729,6 +1729,28 @@
       ]
     },
     {
+      "id": "font-playwrite-vn",
+      "name": "Playwrite Việt Nam",
+      "author": "TypeTogether (Veronika Burian, José Scaglione) / Google Fonts",
+      "version": "1.003",
+      "license": "OFL-1.1",
+      "homepage": "https://fonts.google.com/specimen/Playwrite+VN",
+      "licenseFile": "OFL.txt",
+      "mode": "files",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/TypeTogether/Playwrite/02e4e15767f5b6c2109413429fc51879b9507ab4/OFL.txt",
+          "to": "OFL.txt",
+          "sha256": "0370f5946020846b0ca65e44950d11411ea3bd3c4c0d755916470f9f96cd8cb8"
+        },
+        {
+          "url": "https://fonts.gstatic.com/s/playwritevn/v11/mtGo4_hXJqPSu8nf5RBY5i0q0yxCxtP-9TFBNUI9E-o.woff2",
+          "to": "playwrite-vn-400.woff2",
+          "sha256": "40caf7f0139c322649f4147077937a24f6cd2ba4879408a6dc9beb34d6a83475"
+        }
+      ]
+    },
+    {
       "id": "kenney-furniture-kit",
       "name": "Furniture Kit",
       "author": "Kenney",

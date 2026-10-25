@@ -39,12 +39,4 @@ describe('worksheet routes', () => {
     const { agent } = await parentWithChild(app, false);
     await agent.post('/api/worksheets/quest-hom-qua').send({ text: 'bài viết' }).expect(404);
   });
-
-  it('serves the handwriting font to no one, not even a signed-in account (it has no open license)', async () => {
-    const { agent } = await parentWithChild(app, false);
-    for (const file of ['chu-mau-tieu-hoc.woff2', 'chu-mau-tieu-hoc-dam.woff2', 'other.woff2', '..%2F..%2Fpackage.json']) {
-      await agent.get(`/api/worksheets/fonts/${file}`).expect(404, { error: 'font-not-found' });
-      await app.agent().get(`/api/worksheets/fonts/${file}`).expect(401);
-    }
-  });
 });

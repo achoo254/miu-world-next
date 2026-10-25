@@ -95,11 +95,13 @@ describe('runtime asset selection for the web build', async () => {
 describe('asset selection for the app build', async () => {
   const manifest = await createManifestReader(ASSETS_DIR)();
 
-  it('packs the fonts (every one fonts.css names) and no world, model, sound or picture', () => {
+  it('packs the fonts (every one fonts.css and the worksheet model hand name) and no world, model, sound or picture', () => {
     const fonts = fontAssetPaths(manifest);
-    const css = readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), 'src/ui/fonts.css'), 'utf8');
+    const css = ['src/ui/fonts.css', 'src/ui/parent/worksheets/worksheets.css']
+      .map((file) => readFileSync(path.join(path.dirname(fileURLToPath(import.meta.url)), file), 'utf8'))
+      .join('\n');
     const named = [...css.matchAll(/url\('\/game-assets\/([^']+)'\)/g)].map((m) => m[1]).sort();
-    expect(named.length).toBeGreaterThan(0);
+    expect(named.some((p) => p?.startsWith('packs/font-playwrite-vn/'))).toBe(true);
     for (const font of named) expect(fonts).toContain(font);
     expect(fonts.every((p) => p.endsWith('.woff2'))).toBe(true);
   });

@@ -23,13 +23,6 @@ export function worksheetRoutes({ worksheets, clock }: WorksheetRouteDeps): Rout
     res.json(WorksheetListResponse.parse({ worksheets: list }));
   });
 
-  // The primary-school model hand (HP001, HP Design) has no open license, so the server does not serve it to anyone,
-  // even where the files are installed. The sheet's font request finds nothing and the printed sheet leaves the
-  // model letters out rather than show a different hand.
-  router.get('/worksheets/fonts/:file', requireParent, () => {
-    throw new HttpError(404, 'font-not-found');
-  });
-
   router.get('/worksheets/:id', requireParent, gate, (req, res) => {
     const id = ContentId.safeParse(req.params.id);
     const sheet = id.success ? worksheets.get(id.data) : undefined;

@@ -81,7 +81,7 @@ async function renderLicenses(sources: Sources): Promise<string> {
     '| --- | --- | --- | --- | --- |',
     ...sources.packs.map((p) => `| ${p.name} (\`${p.id}\`) | ${p.author} | ${p.version} | ${p.license} | ${p.homepage} |`),
     '',
-    'Credits: art by Kenney (www.kenney.nl), emoji by Microsoft Fluent Emoji, fonts Baloo 2 and Nunito (SIL Open Font License).',
+    'Credits: art by Kenney (www.kenney.nl), emoji by Microsoft Fluent Emoji, fonts Baloo 2, Nunito and Playwrite Việt Nam (SIL Open Font License).',
     '',
   ];
   for (const pack of sources.packs) {

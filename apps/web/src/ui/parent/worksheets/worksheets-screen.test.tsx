@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { Worksheet, WorksheetListResponse } from '@miu/schema/worksheet';
@@ -109,7 +109,7 @@ describe('worksheets in the parent area', () => {
     expect(screen.getByText('Tiếng Việt · Đọc truyện và kể chuyện')).toBeTruthy();
     expect(screen.getByText(/Tô theo mẫu chữ hoa trong vở Tập viết/)).toBeTruthy();
     expect(screen.getByText('Viết câu: Anh em thuận hoà.')).toBeTruthy();
-    // No model hand installed: no model letters, the note points to the writing book instead.
+    // The model hand has not loaded (no font loading here): no model letters, the note points to the writing book instead.
     expect(document.querySelector('.oli-model')).toBeNull();
     expect(byId('block-dictation')?.querySelector('.sheet-passage')?.textContent).toBe('Câu thứ nhất.\nCâu thứ hai.');
     expect(screen.getByText('Gợi ý hai')).toBeTruthy();
@@ -158,7 +158,8 @@ describe('activities on a sheet', () => {
 
 describe('model hand on a sheet', () => {
   it('writes the capitals and the sentence in the model hand once the font has loaded', async () => {
-    Object.defineProperty(document, 'fonts', { value: { load: vi.fn(async () => [{}]) }, configurable: true });
+    const load = vi.fn(async () => [{}]);
+    Object.defineProperty(document, 'fonts', { value: { load }, configurable: true });
     stubApi({
       'GET /api/auth/me': () => ({ status: 200, body: me(true) }),
       'GET /api/worksheets/tv2-t01-b01': () => ({ status: 200, body: SHEET }),
@@ -172,6 +173,23 @@ describe('model hand on a sheet', () => {
     expect([...(letterLines[0]?.children ?? [])].map((s) => `${s.textContent}${s.className ? '·trace' : ''}`)).toEqual(['A', 'A·trace', 'A·trace']);
     const sentence = [...(byId('block-copy-line')?.querySelectorAll('.oli-model') ?? [])].map((p) => p.textContent);
     expect(sentence).toEqual(['Anh em thuận hoà.', 'Anh em thuận hoà.']);
+    expect(load).toHaveBeenCalledWith('400 1em "Playwrite VN"');
+    Reflect.deleteProperty(document, 'fonts');
+  });
+
+  it('leaves the model out when the font cannot be fetched', async () => {
+    const load = vi.fn(async () => {
+      throw new Error('network');
+    });
+    Object.defineProperty(document, 'fonts', { value: { load }, configurable: true });
+    stubApi({
+      'GET /api/auth/me': () => ({ status: 200, body: me(true) }),
+      'GET /api/worksheets/tv2-t01-b01': () => ({ status: 200, body: SHEET }),
+    });
+    renderAt('/parent/worksheets/tv2-t01-b01');
+    expect(await screen.findByText(/Tô theo mẫu chữ hoa trong vở Tập viết/)).toBeTruthy();
+    await waitFor(() => expect(load).toHaveBeenCalled());
+    expect(document.querySelector('.oli-model')).toBeNull();
     Reflect.deleteProperty(document, 'fonts');
   });
 });

@@ -2,7 +2,6 @@
 # Production deploy for Miu World on .65, run from a dev machine at the repo root.
 #   tools/deploy/production/deploy.sh setup     one-time/idempotent: Postgres 16, Node 22, unit, backup timer,
 #                                               journal namespace, nginx block, DB role, env file
-#   tools/deploy/production/deploy.sh fonts     upload the worksheet handwriting font (kept out of git)
 #   tools/deploy/production/deploy.sh timetable upload the default class timetable (kept out of git); restart to apply
 #   tools/deploy/production/deploy.sh turn      write the voice relay (Cloudflare TURN) key into the env file; restart to apply
 #   tools/deploy/production/deploy.sh signin    write the account-service (auth-next, miu-web) client into the env file;
@@ -206,16 +205,6 @@ analytics() {
     grep -c "^GA4_" "$f" | xargs echo GA4 lines in env file:'
 }
 
-# Worksheet handwriting font (no open license: kept out of git). Uploads the .woff2 files from
-# $MIU_FONT_DIR (default .data/fonts of this checkout) to /opt/miu/fonts. Unused: the server no longer serves the
-# font to anyone (the worksheet prints without the model letters); kept so the upload path is not lost.
-fonts() {
-  local dir="${MIU_FONT_DIR:-.data/fonts}"
-  ls "$dir"/*.woff2 >/dev/null 2>&1 || { echo "no .woff2 in $dir: set MIU_FONT_DIR" >&2; exit 1; }
-  tar --no-xattrs -C "$dir" -cf - $(cd "$dir" && ls *.woff2) \
-    | prod 'tar --no-same-owner -xf - -C /opt/miu/fonts && chown root:miu /opt/miu/fonts/*.woff2 && chmod 640 /opt/miu/fonts/*.woff2 && ls /opt/miu/fonts | wc -l | xargs echo fonts on host:'
-}
-
 # The owner's class timetable every child starts from (names a school and a teacher: kept out of git). Uploads
 # $MIU_TIMETABLE_FILE (default .data/private/timetable-default.json, from `pnpm private:sync`) to /opt/miu/config
 # and points the env file at it; the next release (or a restart) picks it up.
@@ -287,12 +276,11 @@ release() {
 
 case "${1:-}" in
   setup) setup ;;
-  fonts) fonts ;;
   timetable) timetable ;;
   turn) turn ;;
   signin) signin ;;
   google-cleanup) google_cleanup ;;
   analytics) analytics ;;
   release) release ;;
-  *) echo "usage: $0 setup|fonts|timetable|turn|signin|google-cleanup|analytics|gate|release" >&2; exit 2 ;;
+  *) echo "usage: $0 setup|timetable|turn|signin|google-cleanup|analytics|gate|release" >&2; exit 2 ;;
 esac

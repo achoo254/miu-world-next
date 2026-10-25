@@ -3,20 +3,6 @@
   "folder": "cong-viec/Cong viec/ENV production/miu-world",
   "files": [
     {
-      "from": "fonts/chu-mau-tieu-hoc.woff2",
-      "to": ".data/fonts/chu-mau-tieu-hoc.woff2",
-      "bytes": 44452,
-      "sha256": "64973bccd33e74be3bb49fdfd08cf93d72b574de123568860b6a8bf5ab0f599b",
-      "why": "Primary-school model hand (HP001, regular) for the printed writing sheets; no open license."
-    },
-    {
-      "from": "fonts/chu-mau-tieu-hoc-dam.woff2",
-      "to": ".data/fonts/chu-mau-tieu-hoc-dam.woff2",
-      "bytes": 45508,
-      "sha256": "0fb26db35f7fdefc6141643598a77ea2431eb36924dadc93f1ad9f6a9427999c",
-      "why": "Primary-school model hand (HP001, bold) for the printed writing sheets; no open license."
-    },
-    {
       "from": "sgk/toan2-t1.pdf",
       "to": ".data/sgk/src/toan2-t1.pdf",
       "bytes": 131244677,

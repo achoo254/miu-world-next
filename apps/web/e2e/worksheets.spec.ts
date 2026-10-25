@@ -11,11 +11,12 @@ test.use({ storageState: { cookies: [], origins: [] }, viewport: { width: 1180, 
 const SHOTS = fileURLToPath(new URL('../../../.data/sgk/review-shots/', import.meta.url));
 mkdirSync(SHOTS, { recursive: true });
 
-async function printSheet(page: Page, questId: string, file: string): Promise<void> {
+async function printSheet(page: Page, questId: string, file: string, checkSheet?: () => Promise<void>): Promise<void> {
   await page.locator(`[data-id="worksheet-link-${questId}"]`).click();
   await expect(page).toHaveURL(new RegExp(`/parent/worksheets/${questId}$`));
   await expect(page.locator('.worksheet-sheet')).toBeVisible();
   await page.evaluate(() => document.fonts.ready);
+  await checkSheet?.();
   await page.emulateMedia({ media: 'print' });
   await expect(page.locator('[data-id="worksheet-print"]')).toBeHidden();
   await page.pdf({ path: `${SHOTS}${file}.pdf`, format: 'A4', printBackground: true, preferCSSPageSize: true });
@@ -38,12 +39,14 @@ test('the parent unlocks the gate, lists the sheets by subject and prints one of
   await expect(page.getByRole('heading', { name: 'Toán', exact: true })).toBeVisible();
   await page.screenshot({ path: `${SHOTS}worksheets-list.png`, fullPage: true, animations: 'disabled' });
 
-  await printSheet(page, 'tv2-t01-b01', 'worksheet-tv2-t01-b01');
-  // The model handwriting font has no open license and is never served: the sheet prints without model letters.
-  await page.goto('/parent/worksheets/tv2-t01-b01');
-  await expect(page.locator('.worksheet-sheet')).toBeVisible();
-  await expect(page.locator('.oli-model')).toHaveCount(0);
-  await page.getByRole('link', { name: 'Danh sách phiếu' }).click();
+  // The model hand (Playwrite Việt Nam, a font pack served from the origin) writes the capital and the sentence:
+  // the capital in ink and to trace at two sizes, the sentence once in ink and once to trace.
+  await printSheet(page, 'tv2-t01-b01', 'worksheet-tv2-t01-b01', async () => {
+    await expect(page.locator('[data-id="block-letter"] .oli-model')).toHaveCount(2);
+    await expect(page.locator('[data-id="block-copy-line"] .oli-model')).toHaveCount(2);
+    const loaded = await page.evaluate(() => [...document.fonts].some((f) => f.family.replace(/"/g, '') === 'Playwrite VN' && f.status === 'loaded'));
+    expect(loaded).toBe(true);
+  });
   await printSheet(page, 'toan2-cd3-b15', 'worksheet-toan2-cd3-b15');
 
   // From the parent area itself.

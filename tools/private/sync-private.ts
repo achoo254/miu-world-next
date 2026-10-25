@@ -1,7 +1,7 @@
-// `pnpm private:sync`: copies the files the project keeps out of git (the HP001 font, the scanned
-// textbooks) from the owner's iCloud Drive into `.data/`, checking each hash, so any machine (the Mac at
-// work, the Windows PC at home) gets the same files. `pnpm private:check` only reports what is missing;
-// the session-start hook runs it so an agent on a new machine knows to sync.
+// `pnpm private:sync`: copies the files the project keeps out of git (the scanned textbooks, the default
+// timetable) from the owner's iCloud Drive into `.data/`, checking each hash, so any machine (the Mac at work,
+// the Windows PC at home) gets the same files. `pnpm private:check` only reports what is missing; the
+// session-start hook runs it so an agent on a new machine knows to sync.
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { copyFileSync, createReadStream, existsSync, mkdirSync, readFileSync, statSync } from 'node:fs';

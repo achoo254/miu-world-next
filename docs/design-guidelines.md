@@ -39,7 +39,7 @@ Nguồn: Master Plan v3 §2 (art direction, quy tắc bám mock), §10 (phong c�
 
 ## Font, icon, âm thanh
 
-- Font tự host (OFL, có tiếng Việt): **Baloo 2** (700, 800) cho tiêu đề/HUD, **Nunito** (400, 700) cho nội dung. Khai báo dùng chung ở `apps/web/src/ui/fonts.css`.
+- Font tự host (OFL, có tiếng Việt): **Baloo 2** (700, 800) cho tiêu đề/HUD, **Nunito** (400, 700) cho nội dung; **Playwrite Việt Nam** (400, theo mẫu chữ viết tay tiểu học) cho chữ mẫu trên phiếu viết. Khai báo dùng chung ở `apps/web/src/ui/fonts.css`.
 - Icon vật phẩm, tiền tệ, HUD, huy hiệu: Microsoft Fluent Emoji 3D (MIT); bỏ emoji dính thương hiệu.
 - Khung, nút, banner: CSS + token, không dùng ảnh vẽ tay. Ảnh đại diện, thumbnail render từ model 3D bằng script.
 - Số và chữ trên vật thể (viên đá số, thẻ chữ) vẽ lúc chạy bằng canvas texture.
