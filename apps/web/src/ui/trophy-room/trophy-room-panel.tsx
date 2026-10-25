@@ -7,7 +7,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { QuestSummary } from '@miu/schema/game';
 import { ACHIEVEMENT_CATEGORIES } from '@miu/schema/achievement';
-import { PLAQUE_STARS, type TrophyRoomResponse } from '@miu/schema/trophy-room';
+import { PLAQUE_STARS, type TrophyGoTo, type TrophyRoomResponse } from '@miu/schema/trophy-room';
 import { errorMessage } from '../api-client';
 import { ITEMS, itemIcon } from '../backpack/items';
 import { BOOK_SETS, itemName } from '../collection/collection-catalog';
@@ -18,8 +18,8 @@ import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
 import { useLiveEvents } from '../event/event-api';
 import { GoThereButton, type Travel } from '../travel/go-there-button';
-import { badgeTrip, collectionTrip, plaqueTrip, type PlaceTrip, type TripSources } from '../travel/place-trips';
-import { loadSideQuests, loadTrophies } from './trophy-room-api';
+import { badgeTrip, collectionTrip, plaqueTrip, type TripSources } from '../travel/place-trips';
+import { loadSideQuests, loadTrophies, loadTrophyNext } from './trophy-room-api';
 import './trophy-room.css';
 
 const DAY = new Intl.DateTimeFormat('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh', day: '2-digit', month: '2-digit', year: 'numeric' });
@@ -45,11 +45,8 @@ const CATEGORY_KEYS: Readonly<Record<(typeof ACHIEVEMENT_CATEGORIES)[number], Te
 interface Going {
   travel: Travel;
   sources: TripSources;
-}
-
-/** "Đi tới" under a piece not hers yet. */
-function GoButton({ trip, going, dataId }: { trip: PlaceTrip | null; going: Going; dataId: string }) {
-  return <GoThereButton trip={trip} travel={going.travel} dataId={dataId} label="trophy.go" />;
+  /** Where each plaque's next star is earned (`GET /trophies/next`); a category missing: no "Đi tới" for it. */
+  nextStars: ReadonlyMap<string, TrophyGoTo | null>;
 }
 
 function Room({ room, going }: { room: TrophyRoomResponse; going: Going | null }) {
@@ -78,7 +75,7 @@ function Room({ room, going }: { room: TrophyRoomResponse; going: Going | null }
                   </span>
                   <span className="trophy-card-how">{item?.description ?? ''}</span>
                   <When at={b.earnedAt} dataId={`trophy-badge-when-${b.itemId}`} />
-                  {going && !b.earnedAt ? <GoButton trip={badgeTrip(b.itemId, going.sources)} going={going} dataId={`trophy-badge-go-${b.itemId}`} /> : null}
+                  {going && !b.earnedAt ? <GoThereButton trip={badgeTrip(b.itemId, going.sources)} travel={going.travel} dataId={`trophy-badge-go-${b.itemId}`} label="trophy.go" /> : null}
                 </span>
               </div>
             );
@@ -102,7 +99,7 @@ function Room({ room, going }: { room: TrophyRoomResponse; going: Going | null }
                     <T k="trophy.cupHow" params={{ region: set?.region ?? c.mapId }} />
                   </span>
                   <When at={c.earnedAt} dataId={`trophy-cup-when-${c.mapId}`} />
-                  {going && !c.earnedAt ? <GoButton trip={collectionTrip(c.mapId, going.sources.quests)} going={going} dataId={`trophy-cup-go-${c.mapId}`} /> : null}
+                  {going && !c.earnedAt ? <GoThereButton trip={collectionTrip(c.mapId, going.sources.quests)} travel={going.travel} dataId={`trophy-cup-go-${c.mapId}`} label="trophy.go" /> : null}
                 </span>
               </div>
             );
@@ -132,7 +129,7 @@ function Room({ room, going }: { room: TrophyRoomResponse; going: Going | null }
                   <T k="trophy.plaqueHow" params={{ claimed: p.claimed, total: p.total }} />
                 </span>
                 <When at={p.lastAt} dataId={`trophy-plaque-when-${p.category}`} />
-                {going && p.stars < PLAQUE_STARS ? <GoButton trip={plaqueTrip(p.goTo, going.sources)} going={going} dataId={`trophy-plaque-go-${p.category}`} /> : null}
+                {going && p.stars < PLAQUE_STARS ? <GoThereButton trip={plaqueTrip(going.nextStars.get(p.category) ?? null, going.sources)} travel={going.travel} dataId={`trophy-plaque-go-${p.category}`} label="trophy.go" /> : null}
               </span>
             </div>
           ))}
@@ -148,11 +145,13 @@ export function TrophyRoomPanel({ onClose, travel }: { onClose: () => void; trav
   const [loadError, setLoadError] = useState<string | null>(null);
   const [loads, setLoads] = useState(0);
   const { t } = useT();
-  // The events on now (a badge is earned at the event that gives it) and the minigame side quests (a minigame
-  // plaque's star): a failed read only leaves those pieces without "Đi tới".
-  const { events } = useLiveEvents();
-  const [sideQuests, setSideQuests] = useState<QuestSummary[]>([]);
+  // Over the game only: the events on now (a badge is earned at the event that gives it), the minigame side quests (a
+  // minigame plaque's star) and where each plaque's next star is earned. A failed read only leaves those pieces
+  // without "Đi tới".
   const travelling = travel !== undefined;
+  const { events } = useLiveEvents(travelling);
+  const [sideQuests, setSideQuests] = useState<QuestSummary[]>([]);
+  const [nextStars, setNextStars] = useState<ReadonlyMap<string, TrophyGoTo | null>>(() => new Map());
   useEffect(() => {
     if (!travelling) return;
     let live = true;
@@ -160,13 +159,17 @@ export function TrophyRoomPanel({ onClose, travel }: { onClose: () => void; trav
       (list) => live && setSideQuests(list),
       () => undefined,
     );
+    loadTrophyNext().then(
+      (next) => live && setNextStars(new Map(next.plaques.map((p) => [p.category, p.goTo]))),
+      () => undefined,
+    );
     return () => {
       live = false;
     };
   }, [travelling]);
   const going = useMemo<Going | null>(
-    () => (travel && room ? { travel, sources: { quests: travel.quests, events: events ?? [], sideQuests, cups: room.cups } } : null),
-    [travel, room, events, sideQuests],
+    () => (travel && room ? { travel, nextStars, sources: { quests: travel.quests, events: events ?? [], sideQuests, cups: room.cups } } : null),
+    [travel, room, events, sideQuests, nextStars],
   );
 
   useEffect(() => {

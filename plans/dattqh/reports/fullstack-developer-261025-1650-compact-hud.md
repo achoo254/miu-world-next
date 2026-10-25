@@ -74,3 +74,74 @@ Trước (bản ở HEAD, chép ra ngoài): `C:\Users\HOANDA~1\AppData\Local\Tem
 - Ảnh desktop `30-party-quest`: nhãn "Bông · Tương tác" của người chơi kia nằm đè bóng thoại "Hôm nay đi đâu nhỉ?" của chính người đó (bóng thoại do game vẽ, không trong danh sách tránh). Có từ trước; chưa sửa.
 - "Chồng các dòng chat": hiện vẫn một dòng một lúc; xếp chồng nhiều dòng cần đổi `social-store` (ngoài phạm vi bố cục).
 - Trên phone, khi khung đội mở và có thẻ cả đội, cột trái cuộn; nút của thẻ cả đội phải cuộn mới thấy (ảnh `360x740/30-party-quest.png`).
+
+## Round 2: sửa theo review `code-reviewer-261025-1725-compact-hud-go-to.md`
+
+### H2. Phím game bấm nhầm nút HUD đang giữ focus
+- **Menu nhận focus chỉ khi mở bằng bàn phím.** `hud-menu.tsx` đọc `event.detail` của cú bấm nút ☰: mở bằng Enter/Space thì ô đầu nhận focus; mở bằng chạm hay chuột thì focus không vào lưới. Esc chỉ trả focus về ☰ khi menu được mở bằng bàn phím.
+- **Phím game đóng menu.** Khi menu mở mà bé bấm phím game (Space, E, WASD, mũi tên) ở ngoài menu, menu đóng và game vẫn nhận phím.
+- **Hook mới `ui/hud/use-hud-keyboard-guard.ts`** (gắn trong `Hud`), áp cho cột trái, menu, nhãn `.npc-label`, "Quay lại", "Xuống xe":
+  - nút bấm bằng pointer (chuột, chạm) thì `blur()` ngay, nên focus chỉ còn ở nút HUD khi người chơi tự Tab tới;
+  - Space/Enter trên nút HUD đang focus là của nút đó: chặn ở pha capture trên document, nên listener của game trên window không thấy, còn nút vẫn được bấm.
+- **Không sửa `input.ts`.**
+- **Test** (`hud-menu.test.tsx`), 4 trường hợp:
+  - mở bằng click rồi bấm Space: game nhận Space, menu đóng, bảng Nhiệm vụ không mở;
+  - mở bằng bàn phím: Space/Enter ở lại trong menu, Esc trả focus về ☰;
+  - Esc sau khi mở bằng click: focus không quay về ☰;
+  - nhãn tương tác bị click chuột thì nhả focus; Space sau đó không gửi thêm `interact`.
+
+### M1. Nhãn không đè, không nuốt cú chạm của điều khiển
+- **Danh sách tránh** gồm: joystick, `#actions` (Chạy/Nhảy), bản đồ nhỏ (phía game, `game.ts` phần đặt nhãn), nút ☰ (`hud-menu`), sheet menu (`hud-menu-sheet`), "Quay lại" (`hud-rescue`), "Xuống xe" (`hud-ride`).
+- **Khi không còn chỗ trống:** nhãn có thể vẫn đè lên một điều khiển. Khi đó `labelCrossesAny` báo, và nhãn được đặt `pointer-events: none` để điều khiển thắng cú chạm; phím E vẫn tương tác.
+- **Lý do không chỉ đổi z-index:** `.miu-game` là một stacking context riêng, nên chỉ hạ z-index của nhãn thì không đặt được nó dưới joystick.
+- **Test** (`prompt-placement.test.ts`): nhãn ở đáy, ở trên joystick, trên Chạy/Nhảy, trên bản đồ nhỏ đều được dời ra; `labelCrossesAny` đúng, và box rỗng (điều khiển đang ẩn) không tính.
+
+### M3. Tên truy cập chứa chữ hiển thị
+- **Pill nhiệm vụ:** tên là "Nhiệm vụ: {tên quest} {xong}/{tổng}, mở chi tiết" (khóa `hud.openQuest`, vi/en).
+- **Nút thú cưng trong menu:** "{tên} · chăm sóc thú cưng" (khóa `hud.petNamed`); khóa `hud.pet` không còn ai dùng nên đã xóa.
+- **"Đánh hơi" khi đang chờ:** tên thêm "· Chờ N giây".
+- **Đã kiểm, không cần sửa:**
+  - ☰ "Menu, có N điều mới" (chữ "Menu" hiện từ 1024 px);
+  - các ô trong menu, "Xuống xe", "Quay lại": tên là chính chữ hiển thị;
+  - nhãn tương tác: tên là chữ hiển thị.
+- **Không thuộc phần của tôi:** "Đi đến"/"Đi tới" ở `go-there-button.tsx` nằm trong `ui/travel`.
+
+### M5. E2E bấm nhãn
+- **Helper mới trong `e2e/quest-api.ts`:**
+  - `interactByKey(page, target?)`: chờ prompt của mục tiêu có trong DOM rồi bấm E;
+  - `tapLabel(page, target)`: locator ổn định `[data-id="play-prompt-<target>"]`, chờ hiện, rồi `click()` (Playwright tự chờ nhãn đứng yên).
+- **Bước chỉ cần tương tác dùng E:** các manh mối 2–3 và rương ở `quest-flow`; hai bước ở `store-screens`; các màn 10, 11, 27 ở `screens`.
+- **Giữ chạm nhãn thật ở hai chỗ:**
+  - manh mối đầu (`clue-mushroom`) ở `quest-flow`, spec này chạy trên CI;
+  - màn `09-dialogue` (Vẹt) ở `screens`.
+- **Đã chạy local** `pnpm --filter @miu/web e2e --project setup --project quest-flow --workers=1`: 3/3 xanh, 30,1 s. Không đụng `assets/generated/review/screens` (git status sạch ở đó).
+
+### Pill trên tablet
+Từ 601 px, `max-width` của pill là `min(30rem, 100%)` (trước: 18rem), đủ chỗ cho "Khu rừng bí mật – Chương 1: Lá thần 11/11" ở 820 px. Phone giữ 14rem. Chưa chụp lại ảnh vì không được ghi vào thư mục screens.
+
+### Low
+- **L5 (nhãn nhảy qua lại ở mép panel): bỏ qua.** Việc chọn chỗ là tất định theo vị trí. Nhãn chỉ đổi phía khi mục tiêu cắt ngang đường chia giữa hai ứng viên, nên muốn giữ hướng của frame trước thì phải thêm trạng thái theo frame vào `game.ts`. Lợi ích nhỏ so với rủi ro.
+- **L6 (`hud.interact` vẫn dùng làm chữ của nhãn người chơi): giữ nguyên**, không xóa.
+- **L1–L4** thuộc `ui/travel` và trophy room, không phải file của tôi.
+
+### File round 2
+- **Mới:** `apps/web/src/ui/hud/use-hud-keyboard-guard.ts`.
+- **Sửa:**
+  - HUD: `ui/hud/hud-menu.tsx`, `hud.tsx`, `hud.css`, `ride-button.tsx`, `hud-menu.test.tsx`, `quest-tracker.test.tsx`;
+  - thú cưng: `ui/pet-care/pet-hud.tsx`, `pet-hud.test.tsx`;
+  - `ui/home/home-screens.test.tsx` (selector của pill);
+  - locales `vi.json`/`en.json`: thêm `hud.openQuest`, `hud.petNamed`; xóa `hud.pet`;
+  - `game/game.ts`, chỉ phần đặt nhãn: `gameControls`, `hudPanels`, `pointerEvents`, import;
+  - `game/hud/prompt-placement.ts` và test;
+  - E2E: `e2e/quest-api.ts`, `quest-flow.spec.ts`, `store-screens.spec.ts`, `screens.spec.ts`.
+- **Không sửa ở round này:** `play-screen.tsx` và `play-screen.test.tsx` đang đổi trong cây làm việc, nhưng đó là thay đổi của agent kia.
+
+### Kiểm tra round 2
+| Lệnh | Kết quả |
+|---|---|
+| `pnpm typecheck` | 0 lỗi (mobile, server, web) |
+| `pnpm lint` | 0 lỗi, 0 cảnh báo; check-brand OK |
+| `vitest run` `ui/hud`, `home`, `play`, `player`, `pet-care`, `i18n`, `game/hud`, `game/player` `--maxWorkers=1` | 24 file, 211 test xanh |
+| E2E `quest-flow` (1 worker) | 3/3 xanh |
+
+Không chạy `assets:check`/`content:check` ở round này vì không đụng asset hay nội dung; round 1 cả hai đều xanh.

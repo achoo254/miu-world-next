@@ -115,3 +115,19 @@ export async function openHudMenu(page: Page): Promise<void> {
   if ((await toggle.getAttribute('aria-expanded')) !== 'true') await toggle.click();
   await expect(page.locator('[data-id="hud-menu-sheet"]')).toBeVisible();
 }
+
+/**
+ * Interacts with the target in reach through the E key, once its label shows (its prompt is up). The label moves with
+ * the camera every frame; steps that are not about the label itself use the key, which does the same.
+ */
+export async function interactByKey(page: Page, target?: string): Promise<void> {
+  await expect(page.locator(target ? `[data-id="play-prompt-${target}"]` : '.npc-label')).toBeAttached();
+  await page.keyboard.press('KeyE');
+}
+
+/** Taps the label over `target`: the touch way to interact (waits until it shows and stands still). */
+export async function tapLabel(page: Page, target: string): Promise<void> {
+  const label = page.locator(`[data-id="play-prompt-${target}"]`);
+  await expect(label).toBeVisible();
+  await label.click();
+}

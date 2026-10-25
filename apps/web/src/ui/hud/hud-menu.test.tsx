@@ -9,9 +9,12 @@ import { Hud } from './hud';
 import { HudMenu } from './hud-menu';
 import { HOLD_HINT_LINGER_MS, HOLD_HINT_MS } from './use-hold-hint';
 
+/** Window listeners a test added, removed after it. */
+const stopListening: Array<() => void> = [];
 afterEach(() => {
   cleanup();
   vi.useRealTimers();
+  stopListening.splice(0).forEach((stop) => stop());
 });
 
 const DATA: PlayerData = { character: { species: 'cat', name: 'Kem', equipped: [], pet: null }, progress: PROGRESS, quests: questList(1).quests };
@@ -111,6 +114,73 @@ describe('HUD menu', () => {
     act(() => store.emit({ type: 'vehicle', vehicle: { name: 'Ván trượt đỏ', riding: true } }));
     const off = screen.getByRole('button', { name: /Xuống xe/ });
     expect(off.closest('[data-id="hud-menu-sheet"]')).toBeNull();
+  });
+});
+
+describe('the game keys and the HUD buttons', () => {
+  /** What the game hears: its keys arrive on window. */
+  function gameKeys(): string[] {
+    const heard: string[] = [];
+    const listen = (event: KeyboardEvent): void => void heard.push(event.code);
+    window.addEventListener('keydown', listen);
+    stopListening.push(() => window.removeEventListener('keydown', listen));
+    return heard;
+  }
+
+  it('opened with a tap or click, leaves the focus out of the menu: Space jumps and closes it, never opening Quests', () => {
+    const heard = gameKeys();
+    const { calls } = renderHud();
+    toggle().focus();
+    fireEvent.click(toggle(), { detail: 1 });
+    expect(toggle().getAttribute('aria-expanded')).toBe('true');
+    // The button gave its focus up, and none of the grid took it.
+    expect(document.activeElement).toBe(document.body);
+    fireEvent.keyDown(document.body, { key: ' ', code: 'Space' });
+    expect(heard).toEqual(['Space']);
+    expect(calls.quests).not.toHaveBeenCalled();
+    expect(toggle().getAttribute('aria-expanded')).toBe('false');
+  });
+
+  it('opened with the keyboard, keeps Space and Enter on its own buttons, away from the game', () => {
+    const heard = gameKeys();
+    renderHud();
+    fireEvent.click(toggle(), { detail: 0 });
+    const first = screen.getByRole('button', { name: 'Nhiệm vụ' });
+    expect(document.activeElement).toBe(first);
+    fireEvent.keyDown(first, { key: ' ', code: 'Space' });
+    fireEvent.keyDown(first, { key: 'Enter', code: 'Enter' });
+    expect(heard).toEqual([]);
+    // Esc closes it and gives the focus back to its button, opened from the keyboard.
+    fireEvent.keyDown(first, { key: 'Escape', code: 'Escape' });
+    expect(document.activeElement).toBe(toggle());
+  });
+
+  it('closed with Esc after a click, does not keep the focus on its button (Space would open it again)', () => {
+    renderHud();
+    fireEvent.click(toggle(), { detail: 1 });
+    fireEvent.keyDown(document.body, { key: 'Escape', code: 'Escape' });
+    expect(toggle().getAttribute('aria-expanded')).toBe('false');
+    expect(document.activeElement).not.toBe(toggle());
+  });
+
+  it('frees a label over a target clicked with the mouse, so Space after it jumps instead of interacting again', () => {
+    const heard = gameKeys();
+    renderHud();
+    const onLabel = vi.fn();
+    render(
+      <button type="button" className="npc-label" onClick={onLabel}>
+        Vẹt · Nói chuyện
+      </button>,
+    );
+    const label = screen.getByRole('button', { name: 'Vẹt · Nói chuyện' });
+    label.focus();
+    fireEvent.click(label, { detail: 1 });
+    expect(onLabel).toHaveBeenCalledTimes(1);
+    expect(document.activeElement).not.toBe(label);
+    // Focused from the keyboard (Tab), Space and Enter are the label's own.
+    label.focus();
+    fireEvent.keyDown(label, { key: ' ', code: 'Space' });
+    expect(heard).toEqual([]);
   });
 });
 

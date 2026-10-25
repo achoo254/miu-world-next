@@ -2,7 +2,7 @@
 import { Router } from 'express';
 import { ACHIEVEMENT_CATEGORIES, achievementOfSource } from '@miu/schema/achievement';
 import { collectionOfSource } from '@miu/schema/collectible';
-import { plaqueGoTo, plaqueStars, type TrophyRoomResponse } from '@miu/schema/trophy-room';
+import { plaqueGoTo, plaqueStars, type TrophyNextResponse, type TrophyRoomResponse } from '@miu/schema/trophy-room';
 import { activePlayerId, requireParent } from '../auth/auth-context';
 import type { ContentCatalog } from '../content/content-catalog';
 import type { Db } from '../db/client';
@@ -36,22 +36,37 @@ export function trophyRoom(content: ContentCatalog, record: PlayerRecord): Troph
     const entries = [...content.achievements.values()].filter((entry) => entry.category === category);
     const dates = entries.flatMap((entry) => achievements.get(entry.id) ?? []);
     const latest = dates.reduce<Date | undefined>((a, b) => (a && a > b ? a : b), undefined);
-    const goTo = plaqueGoTo(entries, new Set(achievements.keys()));
-    return { category, claimed: dates.length, total: entries.length, stars: plaqueStars(dates.length, entries.length), lastAt: iso(latest), goTo };
+    return { category, claimed: dates.length, total: entries.length, stars: plaqueStars(dates.length, entries.length), lastAt: iso(latest) };
   });
   return { badges, cups, plaques };
 }
 
+/** Where her next star of each category is earned: from the achievements she has claimed (the ledger). */
+export function trophyNext(content: ContentCatalog, record: PlayerRecord): TrophyNextResponse {
+  const claimed = new Set(record.ledger.flatMap((row) => achievementOfSource(row.source) ?? []));
+  const plaques = ACHIEVEMENT_CATEGORIES.map((category) => ({
+    category,
+    goTo: plaqueGoTo([...content.achievements.values()].filter((entry) => entry.category === category), claimed),
+  }));
+  return { plaques };
+}
+
 /**
  * The trophy room of the selected player (Phòng truyền thống in her home): `GET /trophies` lists every event badge,
- * every collection set's cup and every achievement category's plaque, with what is hers and when she earned it.
- * Read only: nothing here pays or changes anything.
+ * every collection set's cup and every achievement category's plaque, with what is hers and when she earned it;
+ * `GET /trophies/next` where each plaque's next star is earned (the room's "Đi tới"; its own endpoint so the room's
+ * response keeps the shape released apps parse). Read only: nothing here pays or changes anything.
  */
 export function trophyRoomRoutes({ db, content }: TrophyRoomRouteDeps): Router {
   const router = Router();
   router.get('/trophies', requireParent, async (_req, res) => {
     const childId = await activePlayerId(db, res, content.consent.version);
     const body: TrophyRoomResponse = trophyRoom(content, await loadPlayerRecord(db, childId));
+    res.json(body);
+  });
+  router.get('/trophies/next', requireParent, async (_req, res) => {
+    const childId = await activePlayerId(db, res, content.consent.version);
+    const body: TrophyNextResponse = trophyNext(content, await loadPlayerRecord(db, childId));
     res.json(body);
   });
   return router;

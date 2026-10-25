@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { HEAD_GAP, PANEL_GAP, promptClearOf, promptClearOfPanels } from './prompt-placement';
+import { HEAD_GAP, PANEL_GAP, labelCrossesAny, promptClearOf, promptClearOfPanels } from './prompt-placement';
 
 // Her on screen: a figure 100 px wide from y 400 (ears) to 600 (feet), in the middle of an iPad.
 const her = { left: 360, right: 460, top: 400, bottom: 600 };
@@ -35,5 +35,28 @@ describe('the Interact label and the HUD panels', () => {
 
   it('keeps the label on screen, and counts an empty (closed) panel for nothing', () => {
     expect(promptClearOfPanels({ x: 5, y: 5 }, label, [{ left: 0, right: 0, top: 0, bottom: 0 }], view)).toEqual({ x: label.width / 2 + PANEL_GAP, y: label.height + PANEL_GAP });
+  });
+});
+
+describe('the Interact label and the touch controls', () => {
+  // A phone upright: the stick bottom left, Run / Jump bottom right, the menu button and the minimap top right.
+  const view = { width: 360, height: 740 };
+  const stick = { left: 12, right: 124, top: 616, bottom: 728 };
+  const actions = { left: 260, right: 348, top: 620, bottom: 728 };
+  const menu = { left: 304, right: 352, top: 8, bottom: 56 };
+  const minimap = { left: 248, right: 352, top: 68, bottom: 172 };
+  const controls = [stick, actions, menu, minimap];
+
+  it('moves a label off the stick and Run / Jump (a target near the bottom of the screen), so it never takes their taps', () => {
+    for (const at of [{ x: 70, y: 700 }, { x: 300, y: 730 }, { x: 330, y: 120 }]) {
+      const placed = promptClearOfPanels(at, label, controls, view);
+      expect(labelCrossesAny(placed, label, controls)).toBe(false);
+    }
+  });
+
+  it('tells when a label still crosses a control, and counts a hidden (empty) one for nothing', () => {
+    expect(labelCrossesAny({ x: 70, y: 700 }, label, [stick])).toBe(true);
+    expect(labelCrossesAny({ x: 180, y: 400 }, label, controls)).toBe(false);
+    expect(labelCrossesAny({ x: 70, y: 700 }, label, [{ left: 0, right: 0, top: 0, bottom: 0 }])).toBe(false);
   });
 });

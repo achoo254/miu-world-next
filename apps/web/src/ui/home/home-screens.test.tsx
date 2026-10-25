@@ -268,7 +268,7 @@ describe('HUD', () => {
         </GameStoreContext.Provider>
       </MemoryRouter>,
     );
-    fireEvent.click(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' }));
+    fireEvent.click(screen.getByRole('button', { name: /^Nhiệm vụ: .*, mở chi tiết$/ }));
     expect(document.querySelector('[data-id="hud-tracker-topic"]')?.textContent).toBe('Đọc truyện và kể chuyện');
   });
 
@@ -284,7 +284,7 @@ describe('HUD', () => {
         </GameStoreContext.Provider>
       </MemoryRouter>,
     );
-    fireEvent.click(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' }));
+    fireEvent.click(screen.getByRole('button', { name: /^Nhiệm vụ: .*, mở chi tiết$/ }));
     expect(document.querySelector('[data-id="hud-tracker-step"]')?.textContent).toBe(`Ra bãi cỏ tìm manh mối cùng ${CHARACTER.name} 0/1`);
   });
 
@@ -302,7 +302,7 @@ describe('HUD', () => {
         </GameStoreContext.Provider>
       </MemoryRouter>,
     );
-    fireEvent.click(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' }));
+    fireEvent.click(screen.getByRole('button', { name: /^Nhiệm vụ: .*, mở chi tiết$/ }));
     expect(document.querySelector('[data-id="hud-tracker-step"]')?.textContent).toBe('Tìm manh mối 0/1');
     expect(screen.queryByRole('button', { name: /Tương tác/ })).toBeNull();
     const before = trackerRenders;

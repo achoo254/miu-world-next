@@ -21,6 +21,15 @@ export function RideButton({ place }: { place: 'screen' | 'menu' }) {
       data-riding={vehicle.riding}
       aria-pressed={vehicle.riding}
       title={vehicle.name}
+      // On screen ("Xuống xe"), the label over a target keeps off it (the game reads its box).
+      ref={
+        place === 'screen'
+          ? (el: HTMLButtonElement | null) => {
+              store.setPromptAvoid('hud-ride', el);
+              return () => store.setPromptAvoid('hud-ride', null);
+            }
+          : undefined
+      }
       onClick={() => store.send({ type: 'ride', on: !vehicle.riding })}
     >
       <Icon name="automobile" size={place === 'screen' ? 36 : 28} />

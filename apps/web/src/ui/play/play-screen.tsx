@@ -34,7 +34,7 @@ import { earnedTrophyKeys } from '@miu/schema/trophy-room';
 import { HomeDecorPanel } from '../home-decor/home-decor-panel';
 import { TROPHY_TARGET, loadTrophies } from '../trophy-room/trophy-room-api';
 import { TrophyRoomPanel } from '../trophy-room/trophy-room-panel';
-import type { PlaceTrip } from '../travel/place-trips';
+import { tripMove, type PlaceTrip } from '../travel/place-trips';
 import type { Travel } from '../travel/go-there-button';
 import { SHOP_TARGET, ShopPanel } from '../shop/shop-panel';
 import { PetCarePanel } from '../pet-care/pet-care-panel';
@@ -70,6 +70,8 @@ const NO_GEAR: readonly string[] = [];
 interface Arrival {
   target: string | null;
   stage: 'set' | 'loading';
+  /** `beside`: the new game starts her next to the place; `walk`: once it is up she walks there from where she stood. */
+  how: 'beside' | 'walk';
 }
 
 /**
@@ -268,7 +270,7 @@ function GameView({
   useEffect(() => {
     if (!host.current) return;
     const picks = decorKey ? (JSON.parse(decorKey) as Record<string, string>) : undefined;
-    const instance = new Game(host.current, { store, social, search: window.location.search, playerName, species, pet, petGear: petGearRef.current, outfit: outfitKey ? outfitKey.split(',') : [], chapter, region, quest, savedSpot, decor: picks, trophies: trophyKeys ? trophyKeys.split(',') : [], objectStates: objectsRef.current, bosses: bossesRef.current, events: eventsRef.current, outing: outingRef.current, arriveBeside: arrival.current?.target ?? null });
+    const instance = new Game(host.current, { store, social, search: window.location.search, playerName, species, pet, petGear: petGearRef.current, outfit: outfitKey ? outfitKey.split(',') : [], chapter, region, quest, savedSpot, decor: picks, trophies: trophyKeys ? trophyKeys.split(',') : [], objectStates: objectsRef.current, bosses: bossesRef.current, events: eventsRef.current, outing: outingRef.current, arriveBeside: arrival.current?.how === 'beside' ? arrival.current.target : null });
     game.current = instance;
     onSpotReader(() => instance.currentSpot());
     void instance.start();
@@ -391,7 +393,10 @@ export function PlayScreen() {
         if (!trip) return;
         const { status } = store.getSnapshot();
         if (trip.stage === 'set' && status === 'loading') trip.stage = 'loading';
-        else if (trip.stage === 'loading' && status === 'ready') arrival.current = null;
+        else if (trip.stage === 'loading' && status === 'ready') {
+          arrival.current = null;
+          if (trip.how === 'walk' && trip.target) store.send({ type: 'autowalk-to', to: { targetId: trip.target } });
+        }
       }),
     [store],
   );
@@ -547,13 +552,14 @@ export function PlayScreen() {
    * characters where the child stands now. The URL follows (a reload resumes the same quest) without a
    * router navigation, which would reload the player data.
    */
-  function switchQuest(next: QuestSummary, throughGate = false, from: string | null = null): void {
+  /** Takes up `next` (false: it is the quest played already, nothing is rebuilt). */
+  function switchQuest(next: QuestSummary, throughGate = false, from: string | null = null): boolean {
     // Any other switch (the board, a gate, a character) cancels a walk still waiting from a boss picked on the map.
     walkAfterPick.current = 'none';
     arrival.current = null;
     setQuestsOpen(false);
     setOpenAt(from);
-    if (next.quest.id === questId) return;
+    if (next.quest.id === questId) return false;
     const spot = spotOf.current?.() ?? null;
     if (spot) setPositions((list) => [...(list ?? []).filter((p) => p.map !== spot.map), spot]);
     // Through a gate she arrives at the map's starting point, never where she last left it (owner, 03/10/2026).
@@ -565,23 +571,22 @@ export function PlayScreen() {
     url.searchParams.set('region', next.quest.region);
     url.searchParams.set('quest', next.quest.id);
     window.history.replaceState(window.history.state, '', url);
+    return true;
   }
   /**
    * "Đi tới" in the trophy room, "Đi đến" in the collection book: the screens close; a place on this map is walked to as
    * a tap on the quest card walks (its quest taken up first when it is another's); a place on another map is travelled
-   * to through the portal, and she arrives standing beside it, the quest's arrow pointing on from there. Navigation
+   * to through the portal, and she arrives standing beside it, the quest's arrow pointing on from there (`tripMove`).
+   * The place to arrive at is kept only when the quest really switched, so no later rebuild carries it. Navigation
    * only: nothing is earned here.
    */
   function goThere(trip: PlaceTrip): void {
     setTrophyOpen(false);
     setBackpackOpen(false);
-    if (regionMap(trip.region) === regionMap(region)) {
-      if (trip.questBound) store.send({ type: 'autowalk-to', to: { quest: trip.quest.quest.id } });
-      else if (trip.target) store.send({ type: 'autowalk-to', to: { targetId: trip.target } });
-      return;
-    }
-    switchQuest(trip.quest, true);
-    arrival.current = { target: trip.target, stage: 'set' };
+    const move = tripMove(trip, region, questId);
+    if (!move) return;
+    if (move.kind === 'walk') store.send({ type: 'autowalk-to', to: move.to });
+    else if (switchQuest(trip.quest, move.throughGate)) arrival.current = { target: trip.target, stage: 'set', how: move.then };
   }
   /** Where the trophy room's and the collection book's buttons send her from here. */
   const placeTravel: Travel | undefined = data ? { region, name: data.character.name, quests: data.quests, onGo: goThere } : undefined;

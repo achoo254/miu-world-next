@@ -28,7 +28,7 @@ function show(done = 0, { loaded = true } = {}) {
 }
 
 /** Opens the card from its one-line pill. */
-const openCard = (): void => void fireEvent.click(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' }));
+const openCard = (): void => void fireEvent.click(screen.getByRole('button', { name: /^Nhiệm vụ: .*, mở chi tiết$/ }));
 
 beforeEach(() => vi.useFakeTimers());
 afterEach(() => {
@@ -40,7 +40,8 @@ describe('QuestTracker folding', () => {
   it('starts as a one-line pill with the quest and its steps done, and opens into the card on a tap', () => {
     show();
     expect(screen.queryByText('Nhiệm vụ hiện tại')).toBeNull();
-    const pill = screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' });
+    // Its name holds what it shows (label in name), then what a tap does.
+    const pill = screen.getByRole('button', { name: `Nhiệm vụ: ${quest(0).quest.title} 0/2, mở chi tiết` });
     expect(pill.querySelector('[data-id="hud-tracker-pill-title"]')?.textContent).toBe(quest(0).quest.title);
     expect(pill.querySelector('[data-id="hud-tracker-pill-count"]')?.textContent).toBe('0/2');
     openCard();
@@ -77,7 +78,7 @@ describe('QuestTracker folding', () => {
     expect(screen.getByText('Nhiệm vụ hiện tại')).toBeTruthy();
     act(() => void vi.advanceTimersByTime(1500));
     expect(screen.queryByText('Nhiệm vụ hiện tại')).toBeNull();
-    expect(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: /^Nhiệm vụ: .*, mở chi tiết$/ })).toBeTruthy();
   });
 
   it('counts the quiet time from when the map is up, not while it loads', () => {

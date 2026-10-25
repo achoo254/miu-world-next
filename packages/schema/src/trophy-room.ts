@@ -68,7 +68,7 @@ export const METRIC_PLACES: Readonly<Record<AchievementMetricKind, TrophyPlace |
   'coop-challenges': null,
 };
 
-export const TrophyGoTo = z.strictObject({ place: TrophyPlace, region: ContentId.nullable() });
+export const TrophyGoTo = z.object({ place: TrophyPlace, region: ContentId.nullable() });
 export type TrophyGoTo = z.infer<typeof TrophyGoTo>;
 
 /**
@@ -87,25 +87,34 @@ export function plaqueGoTo(entries: readonly AchievementEntry[], claimed: Readon
 /** When it was earned, ISO; null while not earned yet. */
 const EarnedAt = z.iso.datetime({ offset: true }).nullable();
 
-export const TrophyRoomResponse = z.strictObject({
+/**
+ * `GET /trophies`. Its keys are the ones released apps parse strictly (the native app carries its own web bundle, an
+ * open tab keeps the old one): a new key here would break them, so new data goes to its own endpoint, and this schema
+ * strips keys it does not know, so a later addition never breaks this client either.
+ */
+export const TrophyRoomResponse = z.object({
   /** Every event badge of the catalogue (content/items, kind `badge`), hers or not. */
-  badges: z.array(z.strictObject({ itemId: ContentId, earnedAt: EarnedAt })),
+  badges: z.array(z.object({ itemId: ContentId, earnedAt: EarnedAt })),
   /** Every collection set: its cup is hers once she claimed the full set. */
-  cups: z.array(z.strictObject({ mapId: ContentId, earnedAt: EarnedAt })),
+  cups: z.array(z.object({ mapId: ContentId, earnedAt: EarnedAt })),
   /** One plaque per achievement category: how many she claimed of how many, its stars, the latest claim. */
   plaques: z.array(
-    z.strictObject({
+    z.object({
       category: AchievementCategory,
       claimed: z.number().int().min(0),
       total: z.number().int().min(0),
       stars: z.number().int().min(0).max(PLAQUE_STARS),
       lastAt: EarnedAt,
-      /** Where her next star of this category is earned (null: no map place leads to one). */
-      goTo: TrophyGoTo.nullable(),
     }),
   ),
 });
 export type TrophyRoomResponse = z.infer<typeof TrophyRoomResponse>;
+
+/** `GET /trophies/next`: where her next star of each achievement category is earned (null: no map place leads to one). */
+export const TrophyNextResponse = z.object({
+  plaques: z.array(z.object({ category: AchievementCategory, goTo: TrophyGoTo.nullable() })),
+});
+export type TrophyNextResponse = z.infer<typeof TrophyNextResponse>;
 
 /** The display keys of everything she has: the spots whose pieces stand in her trophy room. */
 export function earnedTrophyKeys(room: TrophyRoomResponse): Set<string> {

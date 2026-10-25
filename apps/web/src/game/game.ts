@@ -45,7 +45,7 @@ import { createTargetArrow } from './entities/target-arrow';
 import { createMinimap } from './hud/minimap';
 import { bossMarkers, minimapMarkers, sideGiverMarkers, type MapBoss } from './hud/minimap-model';
 import { fetchSideGivers } from './hud/side-givers';
-import { promptClearOf, promptClearOfPanels, type ScreenBox } from './hud/prompt-placement';
+import { labelCrossesAny, promptClearOf, promptClearOfPanels, type ScreenBox } from './hud/prompt-placement';
 import { fetchStoryTellers } from './hud/story-tellers';
 import { fillPlayerName } from '@miu/quest/player-name';
 import { HOME_REGION } from '../ui/region/regions';
@@ -769,15 +769,21 @@ export class Game {
     // Interaction prompt: React renders the label; the game reports which target is near (discrete)
     // and moves the anchor React registered (per frame, no React render).
     let promptTarget: InteractableObject | null = null;
+    /** The game's own touch controls and minimap: the label keeps off them, and never takes their taps. */
+    const gameControls: readonly HTMLElement[] = [dom.joystick, dom.run.parentElement, minimap.root].filter((el): el is HTMLElement => el instanceof HTMLElement);
+    const boxOf = (el: HTMLElement): ScreenBox => {
+      const b = el.getBoundingClientRect();
+      return { left: b.left, right: b.right, top: b.top, bottom: b.bottom };
+    };
     /**
-     * The boxes of the HUD panels React registered, for the label to keep off. Read each frame a label shows (a few
-     * boxes; moving the label by transform leaves layout clean), so a panel that just grew counts.
+     * The boxes the label keeps off: the HUD panels and buttons React registered, and the game's controls. Read each
+     * frame a label shows (a few boxes; moving the label by transform leaves layout clean), so a panel that just grew
+     * counts; a hidden one has an empty box and counts for nothing.
      */
-    const hudPanels = (): ScreenBox[] =>
-      store.getPromptAvoid().map((el) => {
-        const b = el.getBoundingClientRect();
-        return { left: b.left, right: b.right, top: b.top, bottom: b.bottom };
-      });
+    const hudPanels = (): { panels: ScreenBox[]; controls: ScreenBox[] } => {
+      const controls = gameControls.map(boxOf);
+      return { panels: [...store.getPromptAvoid().map(boxOf), ...controls], controls };
+    };
     const herFeet = new Vector3();
     const herHead = new Vector3();
     /** Her figure on screen this frame, feet to the tips of her ears: the Interact label keeps off her head. */
@@ -1333,8 +1339,12 @@ export class Game {
           const size = { width: anchor.offsetWidth, height: anchor.offsetHeight };
           const overHer = character.root.visible ? promptClearOf(anchorAt, size, herOnScreen()) : anchorAt;
           // The label is how she interacts by touch: never hidden under a HUD panel, it moves clear of them instead.
-          const at = promptClearOfPanels(overHer, size, hudPanels(), { width: window.innerWidth, height: window.innerHeight });
+          const { panels, controls } = hudPanels();
+          const at = promptClearOfPanels(overHer, size, panels, { width: window.innerWidth, height: window.innerHeight });
           anchor.style.transform = `translate(-50%, -100%) translate(${at.x}px, ${at.y}px)`;
+          // Drawn over the stick or Run / Jump (nowhere clear left), the controls win the taps: the label lets them
+          // through (E still interacts).
+          anchor.style.pointerEvents = labelCrossesAny(at, size, controls) ? 'none' : '';
           // Hidden until first positioned (no flash at 0,0).
           anchor.style.visibility = 'visible';
         }

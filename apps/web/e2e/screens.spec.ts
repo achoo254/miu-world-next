@@ -8,7 +8,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { expect, test, type Browser, type BrowserContext, type Page } from '@playwright/test';
 import { layoutFacts, type LayoutFacts } from './layout';
-import { notebookPage, openHudMenu, playAt, playUntil } from './quest-api';
+import { interactByKey, notebookPage, openHudMenu, playAt, playUntil, tapLabel } from './quest-api';
 import { gameSettled, newPlayer, newScreen, type ScreenSize } from './screen-session';
 import { readStats, waitReady } from './stats';
 
@@ -198,14 +198,15 @@ for (const viewport of VIEWPORTS) {
       await expect(page.locator('.npc-label')).toBeVisible();
     });
     await capture(page, '09-dialogue', async () => {
-      await page.locator('.npc-label').click();
+      // The touch way: a tap on the label over the parrot.
+      await tapLabel(page, 'parrot-guide');
       await expect(page.getByRole('dialog', { name: 'Vẹt' })).toBeVisible();
     });
     await capture(page, '10-question', async () => {
       await playUntil(page, base, 'tree-riddle');
       await page.goto(playAt('ancient-tree'));
       await gameSettled(page);
-      await page.locator('.npc-label').click();
+      await interactByKey(page);
       await expect(page.locator('[data-id="challenge"]')).toBeVisible();
     });
     await capture(page, '11-reward', async () => {
@@ -213,7 +214,7 @@ for (const viewport of VIEWPORTS) {
       await playUntil(page, base, 'open-chest');
       await page.goto(playAt('chest'));
       await gameSettled(page);
-      await page.locator('.npc-label').click();
+      await interactByKey(page);
       await notebookPage(page, 5);
       await expect(page.getByRole('dialog', { name: 'Hoàn thành nhiệm vụ!' })).toBeVisible();
       // The XP counts up on screen: pictured once it reaches what the server paid.
@@ -361,7 +362,7 @@ for (const viewport of VIEWPORTS) {
       }
       await page.goto(`/play?quality=low&region=${PUZZLE.region}&quest=${PUZZLE.quest}&spawnAt=${PUZZLE.target}`);
       await gameSettled(page);
-      await page.locator('.npc-label').click();
+      await interactByKey(page);
       await expect(page.locator('[data-id="logic-challenge-clues"]')).toBeVisible();
     });
     await context.close();

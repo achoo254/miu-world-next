@@ -17,14 +17,16 @@ export const isOpen = (event: Pick<LiveEventDto, 'state'>): boolean => event.sta
 
 /**
  * The events shown now, asked for again when one opens or closes (`changesInMs`, from the server) and on `refresh()`.
- * `null` until the first answer; an error leaves the last list (Home simply shows no banner).
+ * `null` until the first answer; an error leaves the last list (Home simply shows no banner). `enabled` false: nothing is
+ * asked (a screen that needs the events only in some uses), `events` stays null.
  */
-export function useLiveEvents(): { events: LiveEventDto[] | null; error: string | null; refresh: () => void } {
+export function useLiveEvents(enabled = true): { events: LiveEventDto[] | null; error: string | null; refresh: () => void } {
   const [events, setEvents] = useState<LiveEventDto[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [round, setRound] = useState(0);
   const refresh = useCallback(() => setRound((r) => r + 1), []);
   useEffect(() => {
+    if (!enabled) return;
     let alive = true;
     loadEvents().then(
       (res) => {
@@ -37,7 +39,7 @@ export function useLiveEvents(): { events: LiveEventDto[] | null; error: string 
     return () => {
       alive = false;
     };
-  }, [round]);
+  }, [round, enabled]);
   useEffect(() => {
     if (!events || events.length === 0) return;
     const wait = Math.min(MAX_WAIT_MS, Math.min(...events.map((e) => e.changesInMs)) + AFTER_CHANGE_MS);

@@ -32,6 +32,12 @@ export const PANEL_GAP = 8;
 /** Whether two boxes cross. */
 const crosses = (a: ScreenBox, b: ScreenBox): boolean => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
 
+/** Whether the label, its bottom centre at `at`, crosses any of `boxes` (an empty box counts for none). */
+export function labelCrossesAny(at: { x: number; y: number }, label: { width: number; height: number }, boxes: readonly ScreenBox[]): boolean {
+  const box = { left: at.x - label.width / 2, right: at.x + label.width / 2, top: at.y - label.height, bottom: at.y };
+  return boxes.some((b) => b.right > b.left && b.bottom > b.top && crosses(box, b));
+}
+
 /**
  * The label's bottom centre kept on screen and off every HUD panel (`panels`; an empty box counts for none). The label
  * is the way to interact by touch, so it is never hidden for a panel: resting on one, it moves to the nearest spot

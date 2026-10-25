@@ -58,6 +58,8 @@
   font-family: var(--font-display); font-weight: 800; font-size: var(--text-body); color: var(--color-ink); cursor: pointer;
 }
 .hud-tracker-pill .icon { flex-shrink: 0; }
+/* Tablets and wider: room for the whole name ("Khu rừng bí mật – Chương 1: Lá thần"); phones cut it (rule below). */
+@media (min-width: 601px) { .hud-tracker-pill { max-width: min(30rem, 100%); } }
 /* One line: the quest's whole name is on its card, a tap away. */
 .hud-tracker-pill-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: var(--text-sm); }
 .hud-tracker-pill-title .bi-en { display: none; }

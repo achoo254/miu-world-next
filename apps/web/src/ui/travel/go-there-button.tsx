@@ -21,7 +21,7 @@ export interface Travel {
   onGo: (trip: PlaceTrip) => void;
 }
 
-/** Nothing when no place leads to it now. `label`: the button's word on that screen. */
+/** Nothing when no place leads to it now. `label`: the button's word on that screen, also the start of its name. */
 export function GoThereButton({ trip, travel, dataId, label }: { trip: PlaceTrip | null; travel: Travel; dataId: string; label: TextKey }) {
   const { t } = useT();
   if (!trip) return null;
@@ -29,7 +29,7 @@ export function GoThereButton({ trip, travel, dataId, label }: { trip: PlaceTrip
   const here = regionMap(trip.region) === regionMap(travel.region);
   return (
     <span className="go-there">
-      <button type="button" className={buttonClass('secondary', { small: true })} data-id={dataId} aria-label={t(here ? 'travel.goHereAria' : 'travel.goAria', { map })} onClick={() => travel.onGo(trip)}>
+      <button type="button" className={buttonClass('secondary', { small: true })} data-id={dataId} aria-label={t(here ? 'travel.goHereAria' : 'travel.goAria', { word: t(label), map })} onClick={() => travel.onGo(trip)}>
         <T k={label} />
       </button>
       <span className="go-there-where" data-id={`${dataId}-where`}>

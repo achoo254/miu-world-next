@@ -90,11 +90,11 @@ describe('"Đi đến" in the collection book', () => {
     fireEvent.click(document.querySelector(`[data-id="book-item-${ids[0] ?? ''}"]`) as Element);
     expect(document.querySelector('[data-id^="book-go-"]')).toBeNull();
     fireEvent.click(document.querySelector(`[data-id="book-item-${ids[1] ?? ''}"]`) as Element);
-    const go = screen.getByRole('button', { name: 'Đi tới Khu rừng bí mật' });
+    const go = screen.getByRole('button', { name: 'Đi đến Khu rừng bí mật' });
     expect(go.textContent).toBe('Đi đến');
     expect(document.querySelector(`[data-id="book-go-${ids[1] ?? ''}-where"]`)?.textContent).toBe('Ở Khu rừng bí mật');
     fireEvent.click(go);
-    expect(onGo).toHaveBeenCalledWith({ region: 'khu-rung-bi-mat', quest: lesson, target: 'parrot-guide', questBound: true });
+    expect(onGo).toHaveBeenCalledWith({ region: 'khu-rung-bi-mat', quest: lesson, target: 'parrot-guide', questBound: true, hinted: true });
   });
 
   it('offers nothing where no lesson of that region is in her list, or the book is opened away from the game', async () => {

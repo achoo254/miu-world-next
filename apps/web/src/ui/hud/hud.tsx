@@ -8,7 +8,7 @@ import { useEffect, useState, type KeyboardEvent, type ReactNode } from 'react';
 import type { QuestSummary } from '@miu/schema/game';
 import type { AutowalkState } from '../../game-bridge/game-store';
 import { useGameState, useGameStore } from '../../game-bridge/use-game-state';
-import type { TextKey } from '../i18n/i18n';
+import { mapBoth, type TextKey } from '../i18n/i18n';
 import { T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -19,6 +19,7 @@ import { Say, stepLineOf, titleOf } from '../quest/content-text';
 import { searchCount } from '../quest/quest-flow';
 import { HudMenu } from './hud-menu';
 import { RideButton } from './ride-button';
+import { useHudKeyboardGuard } from './use-hud-keyboard-guard';
 import './hud.css';
 import './autowalk.css';
 
@@ -71,7 +72,14 @@ export function QuestTracker({ quest, data }: { quest: QuestSummary | null; data
   const toggle = (): void => store.send({ type: going ? 'autowalk-stop' : 'autowalk-start' });
   if (folded) {
     return (
-      <button type="button" className="hud-tracker-pill" data-id="hud-tracker-pill" aria-label={t('hud.openCurrent')} title={t('hud.openCurrent')} onClick={() => setFolded(false)}>
+      <button
+        type="button"
+        className="hud-tracker-pill"
+        data-id="hud-tracker-pill"
+        // Its name holds what it shows (the quest and its steps done), then what a tap does.
+        aria-label={t('hud.openQuest', { quest: mapBoth(titleOf(quest.quest), (line) => say(line, data.character)), done, total })}
+        onClick={() => setFolded(false)}
+      >
         <Icon name="scroll" size={24} />
         <span className="hud-tracker-pill-title" data-id="hud-tracker-pill-title">
           <Say text={titleOf(quest.quest)} fill={(line) => say(line, data.character)} />
@@ -148,7 +156,17 @@ function RescueButton() {
   const stuck = useGameState((s) => s.stuck);
   if (!stuck) return null;
   return (
-    <button type="button" className="hud-rescue" data-id="hud-rescue" onClick={() => store.send({ type: 'rescue' })}>
+    <button
+      type="button"
+      className="hud-rescue"
+      data-id="hud-rescue"
+      // The label over a target keeps off it (the game reads its box).
+      ref={(el) => {
+        store.setPromptAvoid('hud-rescue', el);
+        return () => store.setPromptAvoid('hud-rescue', null);
+      }}
+      onClick={() => store.send({ type: 'rescue' })}
+    >
       <Icon name="ringBuoy" size={36} />
       <T k="hud.rescue" />
     </button>
@@ -186,8 +204,9 @@ export function Hud({
   children?: ReactNode;
 }) {
   const store = useGameStore();
+  useHudKeyboardGuard();
   if (covered) return null;
-  // The prompt label over the world hides while it would sit under these panels (the game reads their boxes).
+  // The label over a target in the world keeps off these panels (the game reads their boxes).
   const avoid = (key: string) => (el: HTMLElement | null) => {
     store.setPromptAvoid(key, el);
     return () => store.setPromptAvoid(key, null);
@@ -199,7 +218,7 @@ export function Hud({
         <QuestTracker quest={quest} data={data} />
         {children}
       </div>
-      <HudMenu badge={menuBadge} fresh={menuFresh} onAvoid={(el) => store.setPromptAvoid('hud-right', el)}>
+      <HudMenu badge={menuBadge} fresh={menuFresh} onAvoid={(key, el) => store.setPromptAvoid(key, el)}>
         <button type="button" className={buttonClass('secondary', { small: true })} data-id="hud-quests" onClick={onQuests}>
           <Icon name="scroll" size={28} />
           <T k="common.quests" />

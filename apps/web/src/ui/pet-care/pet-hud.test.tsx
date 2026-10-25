@@ -33,7 +33,7 @@ describe('pet HUD', () => {
   it("shows her pet's picture and name, opens its care board, and names it in the world once the game is up", async () => {
     const { store, sent, onOpen } = renderHud();
     expect(await screen.findByText('Bông')).toBeTruthy();
-    fireEvent.click(screen.getByRole('button', { name: 'Chăm sóc thú cưng' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Bông · chăm sóc thú cưng' }));
     expect(onOpen).toHaveBeenCalled();
     act(() => store.emit({ type: 'ready' }));
     expect(sent).toContainEqual({ type: 'pet-name', name: 'Bông' });
@@ -52,7 +52,7 @@ describe('pet HUD', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Thú cưng đánh hơi tìm đồ' }));
     expect(sent).toContainEqual({ type: 'pet-sniff' });
     act(() => store.emit({ type: 'pet-sniff', available: true, wait: 12 }));
-    expect((screen.getByRole('button', { name: 'Thú cưng đánh hơi tìm đồ' }) as HTMLButtonElement).disabled).toBe(true);
+    expect((screen.getByRole('button', { name: 'Thú cưng đánh hơi tìm đồ · Chờ 12 giây' }) as HTMLButtonElement).disabled).toBe(true);
     expect(screen.getByText('Chờ 12 giây')).toBeTruthy();
   });
 

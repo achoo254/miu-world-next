@@ -8,6 +8,9 @@ import { T, useT } from '../i18n/use-t';
 import { useHoldHint } from './use-hold-hint';
 import './hud-menu.css';
 
+/** The game's own keys (walk, jump, interact): pressed outside the open menu, she plays on and the menu closes. */
+const GAME_KEYS = new Set(['Space', 'KeyE', 'KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight']);
+
 export function HudMenu({
   badge = 0,
   fresh = false,
@@ -18,8 +21,8 @@ export function HudMenu({
   badge?: number;
   /** Something new inside without a number (today's lesson): a dot on the button. */
   fresh?: boolean;
-  /** The grid's box, for the in-world label to keep out from under it. */
-  onAvoid?: (el: HTMLElement | null) => void;
+  /** The button's and the grid's boxes (`key`), for the in-world label to keep off them. */
+  onAvoid?: (key: string, el: HTMLElement | null) => void;
   /** The grid's buttons. A press on any of them closes it. */
   children: ReactNode;
 }) {
@@ -30,8 +33,11 @@ export function HudMenu({
   const toggle = useRef<HTMLButtonElement>(null);
   const sheet = useRef<HTMLDivElement>(null);
   const hint = useHoldHint();
-  // While open: a press anywhere else (the stick, the world) closes it, so does a pick of one of its actions, and Esc
-  // closes it only (caught before the game's own Esc, which opens Pause, can see it).
+  /** Opened with the keyboard (Enter on the button): the focus moves into the grid, and back to the button after. */
+  const byKeys = useRef(false);
+  // While open: a press anywhere else (the stick, the world) closes it, so does a pick of one of its actions or a game
+  // key pressed outside it (she plays on), and Esc closes it only (caught before the game's own Esc, which opens Pause,
+  // can see it).
   useEffect(() => {
     if (!open) return;
     const outside = (event: PointerEvent): void => {
@@ -43,10 +49,14 @@ export function HudMenu({
       if (action && sheet.current?.contains(action)) setOpen(false);
     };
     const escape = (event: KeyboardEvent): void => {
+      if (GAME_KEYS.has(event.code) && !(event.target instanceof Node && root.current?.contains(event.target))) {
+        setOpen(false);
+        return;
+      }
       if (event.key !== 'Escape') return;
       event.stopPropagation();
       setOpen(false);
-      toggle.current?.focus();
+      if (byKeys.current) toggle.current?.focus();
     };
     document.addEventListener('pointerdown', outside);
     document.addEventListener('click', picked);
@@ -57,15 +67,22 @@ export function HudMenu({
       document.removeEventListener('keydown', escape, true);
     };
   }, [open]);
-  // Opened from the keyboard or a tap, the first action takes the focus.
+  // Opened from the keyboard, the first action takes the focus; opened with a tap or a click, the focus stays out of the
+  // grid, so the game's keys (Space) never press one of its buttons.
   useEffect(() => {
-    if (open) sheet.current?.querySelector<HTMLElement>('button:not(:disabled), a[href]')?.focus();
+    if (open && byKeys.current) sheet.current?.querySelector<HTMLElement>('button:not(:disabled), a[href]')?.focus();
   }, [open]);
 
   const label = badge > 0 ? t('hud.menuNews', { count: badge }) : fresh ? t('hud.menuFresh') : t('common.menu');
 
   return (
-    <div className="hud-menu" ref={root}>
+    <div
+      className="hud-menu"
+      ref={(el) => {
+        root.current = el;
+        onAvoid?.('hud-menu', el);
+      }}
+    >
       <button
         type="button"
         ref={toggle}
@@ -75,7 +92,11 @@ export function HudMenu({
         aria-expanded={open}
         aria-controls={sheetId}
         title={t('common.menu')}
-        onClick={() => setOpen((was) => !was)}
+        onClick={(event) => {
+          // `detail` counts pointer clicks; Enter or Space on the focused button gives 0.
+          byKeys.current = event.detail === 0;
+          setOpen((was) => !was);
+        }}
         {...hint.bind}
       >
         <span className="hud-menu-bars" aria-hidden="true" data-open={open || undefined}>
@@ -103,7 +124,7 @@ export function HudMenu({
         id={sheetId}
         ref={(el) => {
           sheet.current = el;
-          onAvoid?.(el);
+          onAvoid?.('hud-menu-sheet', el);
         }}
         className="hud-menu-sheet"
         data-id="hud-menu-sheet"

@@ -30,9 +30,9 @@ const ROOM: TrophyRoomResponse = {
     { mapId: secondSet ?? 'lang-ven-song', earnedAt: null },
   ],
   plaques: [
-    { category: 'hoc-tap', claimed: 7, total: 13, stars: 2, lastAt: '2026-10-07T20:00:00.000Z', goTo: { place: 'lesson', region: null } },
-    { category: 'su-kien', claimed: 0, total: 5, stars: 0, lastAt: null, goTo: { place: 'event', region: null } },
-    { category: 'suu-tam', claimed: 11, total: 11, stars: 3, lastAt: '2026-10-07T08:00:00.000Z', goTo: null },
+    { category: 'hoc-tap', claimed: 7, total: 13, stars: 2, lastAt: '2026-10-07T20:00:00.000Z' },
+    { category: 'su-kien', claimed: 0, total: 5, stars: 0, lastAt: null },
+    { category: 'suu-tam', claimed: 11, total: 11, stars: 3, lastAt: '2026-10-07T08:00:00.000Z' },
   ],
 };
 
@@ -79,6 +79,7 @@ describe('TrophyRoomPanel', () => {
     const lessonIn = (id: string, region: string): QuestSummary => ({ ...fixture, quest: { ...fixtureQuest, id, region }, progress: { ...fixture.progress, questId: id } });
     const cupRegion = secondSet ?? 'lang-ven-song';
     const quests = [lessonIn('lesson-here', 'nha-cua-be'), lessonIn('lesson-cup', cupRegion)];
+    const NEXT = { plaques: [{ category: 'hoc-tap', goTo: { place: 'lesson', region: null } }, { category: 'su-kien', goTo: { place: 'event', region: null } }, { category: 'suu-tam', goTo: null }] };
     const serve = (): void => {
       vi.stubGlobal(
         'fetch',
@@ -86,6 +87,7 @@ describe('TrophyRoomPanel', () => {
           if (url === '/api/trophies') return json(ROOM);
           if (url === '/api/events') return json({ events: [] });
           if (url === '/api/quests?category=side') return json({ quests: [] });
+          if (url === '/api/trophies/next') return json(NEXT);
           return json({ error: 'not-found' }, 404);
         }),
       );
@@ -98,6 +100,8 @@ describe('TrophyRoomPanel', () => {
       const cup = await vi.waitFor(() => byId(`trophy-cup-go-${cupRegion}`));
       expect(cup.tagName).toBe('BUTTON');
       expect(cup.textContent).toBe('Đi tới');
+      // Its name starts with the word it shows (label in name).
+      expect(cup.getAttribute('aria-label')).toMatch(/^Đi tới /);
       expect(byId(`trophy-cup-go-${cupRegion}-where`).textContent).toContain('Ở ');
       expect(document.querySelector(`[data-id="trophy-cup-go-${firstSet}"]`)).toBeNull();
       expect(document.querySelector('[data-id="trophy-badge-go-huy-hieu-olympic-vang"]')).toBeNull();
@@ -116,19 +120,21 @@ describe('TrophyRoomPanel', () => {
       render(<TrophyRoomPanel onClose={() => undefined} travel={{ region: 'nha-cua-be', name: 'Mochi', quests, onGo }} />);
       const cup = await vi.waitFor(() => byId(`trophy-cup-go-${cupRegion}`));
       fireEvent.click(cup);
-      expect(onGo).toHaveBeenCalledWith({ region: cupRegion, quest: quests[1], target: 'parrot-guide', questBound: true });
+      expect(onGo).toHaveBeenCalledWith({ region: cupRegion, quest: quests[1], target: 'parrot-guide', questBound: true, hinted: true });
       // A native button: Enter and Space press it, and it is reached with Tab.
       cup.focus();
       expect(document.activeElement).toBe(cup);
       expect(cup.getAttribute('type')).toBe('button');
     });
 
-    it('offers no trip where the room is only looked at', async () => {
+    it('offers no trip where the room is only looked at, and asks the server for nothing it needs only for trips', async () => {
       serve();
       render(<TrophyRoomPanel onClose={() => undefined} />);
       await screen.findByRole('dialog', { name: 'Phòng truyền thống' });
       await vi.waitFor(() => byId('trophy-board'));
       expect(document.querySelector('.go-there')).toBeNull();
+      const asked = vi.mocked(fetch).mock.calls.map(([url]) => String(url));
+      expect(asked).toEqual(['/api/trophies']);
     });
   });
 });

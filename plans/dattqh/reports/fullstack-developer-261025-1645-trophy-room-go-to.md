@@ -67,6 +67,46 @@ Theo quy định, tôi không chạy full `pnpm test`, build web hay E2E. Tôi c
 6. **Chưa chụp ảnh ở 360×740 và 820×1180**, vì cần đăng nhập và server dev. Theo tính toán, card rộng tối thiểu 10rem, cột chữ khoảng 100 px, nút khoảng 80 px, và dòng "Ở {map}" tự xuống dòng. Nên kiểm ở lượt chụp màn hình tới.
 7. Chữ trên nút khác nhau theo đúng lời người sở hữu: "Đi tới" ở Phòng truyền thống, "Đi đến" ở Sổ sưu tập. Nếu muốn thống nhất một chữ thì chỉ cần đổi một khóa i18n.
 
-Status: DONE_WITH_CONCERNS
-Summary: Phòng truyền thống ("Đi tới") và Sổ sưu tập ("Đi đến") dùng chung `ui/travel/*`. Đích được suy từ dữ liệu: sự kiện đang mở, bài của vùng, và `goTo` do server tính từ thành tích kế tiếp. Ở map khác thì bé sang qua cổng và đứng cạnh chỗ cần tới; trên cùng map thì bé tự đi. Có test unit, test server và test component; 40/40 test qua; assets, content và typecheck xanh.
-Concerns: `pnpm lint` đỏ vì `hud-menu.tsx` của agent khác; agent đó cũng đang sửa `play-screen.tsx`, `game.ts` và các file locale nên commit phải tách theo hunk; chưa chụp ảnh kiểm layout; huy hiệu dẫn tới cổng chứ không mở bài thi thử.
+Trạng thái vòng 1: DONE_WITH_CONCERNS (lint đỏ vì `hud-menu.tsx` của agent khác; chưa chụp ảnh kiểm layout).
+
+## Round 2: sửa theo review `code-reviewer-261025-1725-compact-hud-go-to.md`
+
+Vòng này sửa các mục H1, H3, M2, M3 (phần của tôi), L1–L4. Mọi sửa đổi đều chưa stage, chưa commit. Tôi không sửa `ui/hud/*`, `input.ts` hay phần đặt nhãn trong `game.ts`; `game.ts` đang thay đổi trong cây là của agent khác.
+
+| Mục | Sửa thế nào | Test |
+|---|---|---|
+| **H1** app cũ hỏng vì trường mới `goTo` | `GET /trophies` trả lại đúng shape đã phát hành, không còn `goTo`. `goTo` chuyển sang endpoint riêng `GET /trophies/next` → `{ plaques: [{ category, goTo }] }` (`TrophyNextResponse`). `TrophyRoomResponse` và `TrophyNextResponse` đổi sang `z.object`, bỏ qua key lạ: từ nay thêm trường cũng không làm client này lỗi. Repo đang dùng lẫn hai kiểu; `QuestSummary` vốn đã là `z.object`. Panel chỉ gọi `/trophies/next` khi mở trong game. | Server: response mới vẫn parse được bằng bản sao **strict** của schema đã phát hành; schema mới bỏ key lạ; `/trophies/next` yêu cầu đăng nhập (401); `goTo` của năm bảng đọc qua endpoint mới. |
+| **H3** cùng map mà quest đã xong thì nút không làm gì | `PlaceTrip` thêm cờ `hinted` (quest còn mũi tên chỉ đường). Hàm thuần mới `tripMove(trip, region, questId)` quyết định hành động. (1) Quest còn mũi tên: đi theo quest như trước. (2) Quest đã xong và là quest đang chơi: tự đi thẳng tới `trip.target`. (3) Quest đã xong nhưng là quest khác cùng map: dựng lại map cho quest đó, bé giữ chỗ đứng, map lên xong thì tự đi tới target. (4) Sự kiện mà mọi quest đã `done` cũng đi theo nhánh này. Mock Game trong test giờ phát `loading` trước `ready` như game thật. | `place-trips.test.ts`: trip của quest đã xong, của sự kiện đã xong, các nhánh của `tripMove`. `play-screen.test.tsx`: test mới cho cả hai trường hợp ở rừng (quest đã xong đang chơi, và quest sự kiện đang chơi). |
+| **M2** `arrival` bị treo | `switchQuest` trả `boolean`. `arrival` chỉ được đặt khi đã thật sự đổi quest; `tripMove` trả `null` khi việc đổi không xảy ra. Mọi lối thoát của `switchQuest` đều đã xoá `arrival` từ trước. | `tripMove` trả `null` cho trường hợp đổi sang chính quest đang chơi; test cùng map khẳng định `arriveBeside` là null. |
+| **M3** tên truy cập phải chứa chữ hiển thị | `travel.goAria` / `travel.goHereAria` nhận `{word}` là chính chữ trên nút. vi: "Đi đến Khu rừng bí mật", "Đi tới, ngay trên map này: Nhà của Mochi". en: "Go there (…)", "Go, on this map (…)". | Test panel: tên bắt đầu bằng "Đi tới ". Test Sổ sưu tập: tìm nút theo tên "Đi đến Khu rừng bí mật". |
+| **M4** huy hiệu dẫn tới cổng | Giữ nguyên theo lời người sở hữu. | — |
+| **L1** logic sự kiện lặp | Gộp vào `eventTrip`. | (đã có) |
+| **L2** viết lại helper có sẵn | `firstStepTarget` dùng `stepTargets(step)[0]` của `@miu/schema/content`, nên quest có bước đầu là search hay find cũng có chỗ đến. `arrivalTarget` đọc lại từ `questTrip`, không còn lặp. | Test quest bắt đầu bằng bước search. |
+| **L3** wrapper thừa | Bỏ `GoButton`, panel gọi thẳng `GoThereButton`. | — |
+| **L4** request thừa | `useLiveEvents(enabled)`, mặc định `true`, nên Home không đổi. Panel mở ngoài game không gọi `/events`, `/quests?category=side` hay `/trophies/next`. | Test panel: không có `travel` thì chỉ gọi `/api/trophies`. |
+| L5, L6 | Bỏ qua: đều thuộc HUD và nhãn, của agent khác. | — |
+
+File sửa ở vòng này:
+- `packages/schema/src/trophy-room.ts`
+- `apps/server/src/progression/trophy-room-routes.ts`, `.test.ts`
+- `apps/web/src/ui/travel/place-trips.ts`, `.test.ts`, `go-there-button.tsx`
+- `apps/web/src/ui/trophy-room/trophy-room-api.ts`, `trophy-room-panel.tsx`, `.test.tsx`
+- `apps/web/src/ui/collection/collection-book.test.tsx`
+- `apps/web/src/ui/event/event-api.ts`
+- `apps/web/src/ui/play/play-screen.tsx`, `.test.tsx`
+- `apps/web/src/ui/i18n/locales/{vi,en}.json` (hai khóa `travel.goAria` / `goHereAria`)
+
+Kết quả kiểm tra (local, `--maxWorkers=1`):
+
+| Lệnh | Kết quả |
+|---|---|
+| `pnpm typecheck` | 0 lỗi |
+| `pnpm lint` | 0 lỗi, 0 cảnh báo; `check:brand` OK |
+| `pnpm content:check` | OK, 2159 file |
+| `vitest` trên `ui/travel`, `ui/trophy-room`, `ui/collection`, `ui/backpack`, `ui/event`, `ui/play`, `trophy-room-routes.test.ts` | 9 file, **70/70 qua** (server 9/9) |
+
+Ghi chú cho lead: app cài từ bản trước sẽ không có nút "Đi tới" ở bảng thành tích, vì bản đó chưa gọi `/trophies/next`. Ngoài chuyện đó, mọi màn khác của app cũ vẫn chạy như trước.
+
+Status: DONE
+Summary: Đã sửa H1 (`goTo` chuyển sang `/trophies/next`, `/trophies` giữ shape đã phát hành, client bỏ qua key lạ), H3 (quest hay sự kiện đã xong trên cùng map thì tự đi tới chỗ của nó), M2 (`arrival` chỉ đặt khi thật sự đổi quest), M3 (tên truy cập chứa chữ trên nút), cùng L1–L4; mỗi mục có test. Typecheck, lint, content:check xanh; 70/70 test qua.
+Concerns: Không có cho phần của tôi. M4 giữ nguyên theo người sở hữu. `game.ts` và các file HUD trong cây là của agent khác.

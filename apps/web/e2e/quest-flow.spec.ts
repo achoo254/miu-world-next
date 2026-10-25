@@ -5,7 +5,7 @@
 import { mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, test, type Page } from '@playwright/test';
-import { copied, freshChild, notebookPage, openQuestCard, playAt, playUntil } from './quest-api';
+import { copied, freshChild, interactByKey, notebookPage, openQuestCard, playAt, playUntil, tapLabel } from './quest-api';
 import { expectDrawCalls, readStats, waitReady } from './stats';
 
 /** Draw calls of one scene (docs/system-architecture.md, Master Plan §12). */
@@ -57,7 +57,9 @@ test('meet the parrot, follow the arrow, find the three clues, and the letter op
   for (const clue of ['clue-mushroom', 'clue-letter', 'clue-box']) {
     await page.goto(playAt(clue));
     await waitReady(page);
-    await page.locator('.npc-label').click();
+    // The first clue by a tap on its label (the touch way), the others by E.
+    if (found === 0) await tapLabel(page, clue);
+    else await interactByKey(page, clue);
     found += 1;
     if (found < 3) {
       await openQuestCard(page);
@@ -93,7 +95,7 @@ test('finishing chapter 1 without seeing an answer: 100 XP, Level Up to 2, the L
   await playUntil(page, baseURL ?? '', 'open-chest');
   await page.goto(playAt('chest'));
   await waitReady(page);
-  await page.locator('.npc-label').click();
+  await interactByKey(page, 'chest');
 
   // The world cheers first: villagers and animals around join in and confetti flies, before any screen covers it.
   const reward = page.getByRole('dialog', { name: 'Hoàn thành nhiệm vụ!' });

@@ -7,3 +7,4 @@
 - [Release script hard-coded paths](project-release-script-hardcoded-paths.md) — deploy.sh checks dist/<route>, CI never runs it; nginx changes need setup
 - [Online/voice switch enforcement gaps](project-online-switch-review.md) — WS-only enforcement; HTTP invites/TURN unchecked; no-PIN gate lets child flip
 - [Asset pack review](project-asset-pack-review.md) — assets:fetch wipes all packs; Kenney roads hash drift 25/10; re-hash URLs; fonts.check weak
+- [Strict schema + native bundle skew](project-strict-schema-native-skew.md) — new response field in strictObject breaks shipped Capacitor app

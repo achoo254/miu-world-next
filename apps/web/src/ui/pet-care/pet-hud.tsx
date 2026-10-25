@@ -3,6 +3,7 @@
 // steps toward the nearest (a nudge, then a wait before the next), on screen under the quest card only while usable.
 import { useEffect, useState } from 'react';
 import { useGameState, useGameStore } from '../../game-bridge/use-game-state';
+import { same } from '../i18n/i18n';
 import { T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -38,7 +39,7 @@ export function PetHud({ petId, renamed, hidden = false, onOpen }: { petId: stri
 
   if (!pet || hidden) return null;
   return (
-    <button type="button" className={`${buttonClass('secondary', { small: true })} pet-hud-button`} data-id="hud-pet" aria-label={t('hud.pet')} onClick={onOpen}>
+    <button type="button" className={`${buttonClass('secondary', { small: true })} pet-hud-button`} data-id="hud-pet" aria-label={t('hud.petNamed', { name: same(name ?? pet.name) })} onClick={onOpen}>
       <img className="pet-hud-art" src={assetUrl(pet.art)} alt="" width={32} height={32} draggable={false} />
       <span className="hud-btn-label">{name ?? pet.name}</span>
     </button>
@@ -56,7 +57,8 @@ export function PetSniffButton({ hidden = false }: { hidden?: boolean }) {
       type="button"
       className={`${buttonClass('primary', { small: true })} pet-hud-sniff`}
       data-id="hud-pet-sniff"
-      aria-label={t('petCare.sniffLabel')}
+      // Its name holds what it shows: the wait, while it waits.
+      aria-label={sniff.wait > 0 ? `${t('petCare.sniffLabel')} · ${t('petCare.sniffWait', { seconds: sniff.wait })}` : t('petCare.sniffLabel')}
       disabled={sniff.wait > 0}
       onClick={() => store.send({ type: 'pet-sniff' })}
     >

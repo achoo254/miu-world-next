@@ -1,8 +1,9 @@
 import { randomUUID } from 'node:crypto';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { achievementSource, type AchievementEntry } from '@miu/schema/achievement';
+import { z } from 'zod';
+import { AchievementCategory, achievementSource, type AchievementEntry } from '@miu/schema/achievement';
 import { collectionSource } from '@miu/schema/collectible';
-import { METRIC_PLACES, TrophyRoomResponse, earnedTrophyKeys, plaqueGoTo, plaqueStars, trophyKey } from '@miu/schema/trophy-room';
+import { METRIC_PLACES, PLAQUE_STARS, TrophyNextResponse, TrophyRoomResponse, earnedTrophyKeys, plaqueGoTo, plaqueStars, trophyKey } from '@miu/schema/trophy-room';
 import { createTestApp, parentWithChild, type Agent, type TestApp } from '../../test/test-app';
 import { inventoryItems, rewardLedger } from '../db/schema';
 
@@ -21,6 +22,26 @@ async function playingChild(): Promise<{ agent: Agent; childId: string }> {
 }
 
 const room = async (agent: Agent): Promise<TrophyRoomResponse> => TrophyRoomResponse.parse((await agent.get('/api/trophies').expect(200)).body);
+const next = async (agent: Agent): Promise<TrophyNextResponse> => TrophyNextResponse.parse((await agent.get('/api/trophies/next').expect(200)).body);
+
+/**
+ * `GET /trophies` as the apps already released parse it: strictly, any other key an error. Their web bundle stays on
+ * the phone (and in a tab left open) while the server moves on, so this shape must keep parsing.
+ */
+const EarnedAt = z.iso.datetime({ offset: true }).nullable();
+const ReleasedTrophyRoom = z.strictObject({
+  badges: z.array(z.strictObject({ itemId: z.string(), earnedAt: EarnedAt })),
+  cups: z.array(z.strictObject({ mapId: z.string(), earnedAt: EarnedAt })),
+  plaques: z.array(
+    z.strictObject({
+      category: AchievementCategory,
+      claimed: z.number().int().min(0),
+      total: z.number().int().min(0),
+      stars: z.number().int().min(0).max(PLAQUE_STARS),
+      lastAt: EarnedAt,
+    }),
+  ),
+});
 
 /** A ledger row at a fixed time, as the routes that pay would have written it. */
 async function paid(childId: string, source: string, createdAt: Date, items: Record<string, number> = {}): Promise<void> {
@@ -39,7 +60,23 @@ describe('trophy room', () => {
     expect(body.plaques.reduce((n, p) => n + p.total, 0)).toBe(app.content.achievements.size);
     expect(earnedTrophyKeys(body)).toEqual(new Set());
     // Every plaque has somewhere on a map its first star is earned.
-    expect(Object.fromEntries(body.plaques.map((p) => [p.category, p.goTo?.place]))).toEqual({ 'kham-pha': 'lesson', 'hoc-tap': 'lesson', minigame: 'minigame', 'suu-tam': 'collection', 'su-kien': 'event' });
+    const places = await next(agent);
+    expect(Object.fromEntries(places.plaques.map((p) => [p.category, p.goTo?.place]))).toEqual({ 'kham-pha': 'lesson', 'hoc-tap': 'lesson', minigame: 'minigame', 'suu-tam': 'collection', 'su-kien': 'event' });
+  });
+
+  it('keeps the shape the apps already released read strictly, whatever she has', async () => {
+    const { agent, childId } = await playingChild();
+    const [entry] = app.content.achievements.values();
+    if (!entry) throw new Error('the catalogue has achievements');
+    await paid(childId, achievementSource(entry.id), new Date('2026-10-02T08:00:00Z'));
+    const body: unknown = (await agent.get('/api/trophies').expect(200)).body;
+    expect(() => ReleasedTrophyRoom.parse(body)).not.toThrow();
+    // And this client strips what a later server may add instead of failing on it.
+    expect(TrophyRoomResponse.parse({ ...ReleasedTrophyRoom.parse(body), extra: 1 })).not.toHaveProperty('extra');
+  });
+
+  it('asks for a signed-in player for where to go next too', async () => {
+    await app.agent().get('/api/trophies/next').expect(401);
   });
 
   it('shows what the ledger paid her, with the day each was first earned', async () => {
@@ -62,8 +99,9 @@ describe('trophy room', () => {
     expect(plaque).toMatchObject({ claimed: half.length, total: studies.length, stars: 2, lastAt: new Date(Date.UTC(2026, 9, half.length)).toISOString() });
     expect(earnedTrophyKeys(body)).toEqual(new Set([trophyKey.badge(badge.id), trophyKey.cup(set), trophyKey.star('hoc-tap', 1), trophyKey.star('hoc-tap', 2)]));
     // The next star of the study plaque is the first study achievement not claimed yet.
-    const next = studies.find((a) => !half.includes(a));
-    expect(plaque?.goTo).toEqual(next ? plaqueGoTo([next], new Set()) : null);
+    const unclaimed = studies.find((a) => !half.includes(a));
+    const places = await next(agent);
+    expect(places.plaques.find((p) => p.category === 'hoc-tap')?.goTo).toEqual(unclaimed ? plaqueGoTo([unclaimed], new Set()) : null);
   });
 
   it('never shows another player what is not hers', async () => {
