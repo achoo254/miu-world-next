@@ -397,9 +397,10 @@ export function SocialLayer({ social, covered, fill, voice = null }: { social: S
           <TravelCard social={social} fill={fill} />
           <FriendAskCard social={social} />
           {voice ? <CallInviteCard voice={voice} /> : null}
-          {voice ? <VoiceSafetyCard voice={voice} /> : null}
         </div>
       )}
+      {/* A full dialog, not a card: kept out of the card strip, whose small box would clip it to its title. */}
+      {!covered && voice ? <VoiceSafetyCard voice={voice} /> : null}
       {covered ? null : <OnlinePauseCard social={social} />}
       <OnlineToastLine social={social} />
     </>

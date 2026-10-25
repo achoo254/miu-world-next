@@ -186,6 +186,19 @@ describe('the reminder before her first voice chat', () => {
     expect(screen.queryByRole('dialog')).toBeNull();
   });
 
+  it('opens over the whole screen, not inside the strip of online cards at the top', async () => {
+    const { social, voice } = setup(false);
+    render(
+      <>
+        <PartyFrame social={social} voice={voice} fill={(t) => t} />
+        <SocialLayer social={social} voice={voice} covered={false} fill={(t) => t} />
+      </>,
+    );
+    fireEvent.click(screen.getByRole('button', { name: /Nói chuyện bằng giọng với đội/ }));
+    const dialog = await screen.findByRole('dialog', { name: 'Nói chuyện an toàn nhé!' });
+    expect(dialog.closest('.online-cards')).toBeNull();
+  });
+
   it('closes with "Để sau" and nothing starts', async () => {
     const { social, voice, sent } = setup(false);
     render(
