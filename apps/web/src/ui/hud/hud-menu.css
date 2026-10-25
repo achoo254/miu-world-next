@@ -1,0 +1,125 @@
+/* The HUD's one menu button (top right) and the grid it opens; values from tokens.css only. Touch targets ≥ 44 px. */
+.hud-menu {
+  position: fixed;
+  top: calc(var(--space-sm) + env(safe-area-inset-top, 0px));
+  right: calc(var(--space-sm) + env(safe-area-inset-right, 0px));
+  z-index: calc(var(--z-hud) + 1);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.hud-menu-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-width: 3rem;
+  height: 3rem;
+  padding: 0 var(--space-sm);
+  border: 3px solid var(--color-surface);
+  border-radius: var(--radius-field);
+  background: linear-gradient(180deg, var(--color-primary-top) 0%, var(--color-primary) 100%);
+  color: var(--color-on-primary);
+  font: 800 var(--text-body) / 1 var(--font-display);
+  box-shadow: var(--shadow-primary);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.hud-menu-toggle:focus-visible { box-shadow: var(--focus-ring); outline: none; }
+.hud-menu-toggle[aria-expanded='true'] { transform: translateY(2px); box-shadow: var(--shadow-tile); }
+/* Three bars, turning into a cross while the grid is open. */
+.hud-menu-bars { display: grid; gap: 0.25rem; width: 1.375rem; }
+.hud-menu-bars > span {
+  display: block;
+  height: 0.1875rem;
+  border-radius: var(--radius-pill);
+  background: currentColor;
+  transition: transform var(--duration-press) ease-out, opacity var(--duration-press) ease-out;
+}
+.hud-menu-bars[data-open] > span:nth-child(1) { transform: translateY(0.4375rem) rotate(45deg); }
+.hud-menu-bars[data-open] > span:nth-child(2) { opacity: 0; }
+.hud-menu-bars[data-open] > span:nth-child(3) { transform: translateY(-0.4375rem) rotate(-45deg); }
+/* The word "Menu" shows on wide tablets and computers only. */
+.hud-menu-toggle-label { display: none; }
+@media (min-width: 1024px) {
+  .hud-menu-toggle { padding: 0 var(--space-md); }
+  .hud-menu-toggle-label { display: inline; }
+}
+/* What waits inside: a number (friend requests) or, without one, a dot. */
+.hud-menu-badge,
+.hud-menu-dot {
+  position: absolute;
+  top: calc(-1 * var(--space-sm));
+  right: calc(-1 * var(--space-sm));
+  border: 2px solid var(--color-surface);
+  border-radius: var(--radius-pill);
+  background: var(--color-danger);
+  pointer-events: none;
+}
+.hud-menu-badge {
+  display: grid;
+  place-items: center;
+  min-width: 1.5rem;
+  height: 1.5rem;
+  padding: 0 var(--space-xs);
+  color: var(--color-on-primary);
+  font: 800 var(--text-sm) / 1 var(--font-body);
+}
+.hud-menu-dot { width: 1rem; height: 1rem; }
+
+/* The grid: under the button, right-aligned, three tiles a row (two on the narrowest phones). */
+.hud-menu-sheet {
+  position: absolute;
+  top: calc(100% + var(--space-sm));
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-xs);
+  width: min(20rem, calc(100vw - 2 * var(--space-sm)));
+  max-height: calc(100dvh - 5rem - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  overflow-y: auto;
+  padding: var(--space-sm);
+  border-radius: var(--radius-tile);
+  background: var(--color-surface-glass);
+  box-shadow: var(--shadow-panel);
+}
+.hud-menu-sheet[hidden] { display: none; }
+@media (max-width: 340px) {
+  .hud-menu-sheet { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* Every action is a tile: its icon over its name, the name always shown here. */
+.hud-menu-sheet .btn {
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-xs);
+  width: 100%;
+  min-width: 0;
+  min-height: 4.5rem;
+  padding: var(--space-xs);
+  border-radius: var(--radius-field);
+  font-size: var(--text-sm);
+  line-height: 1.15;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+.hud-menu-sheet .btn .icon,
+.hud-menu-sheet .btn .pet-hud-art { width: 2rem; height: 2rem; }
+.hud-menu-sheet .btn > [aria-hidden='true']:first-child:not(img) { font-size: 1.75rem; line-height: 1; }
+/* "Bài hôm nay" says where it goes: a whole row. */
+.hud-menu-sheet .daily-chip { grid-column: 1 / -1; max-width: none; }
+
+/* The label shown while a finger rests on an icon-only button (use-hold-hint.ts). */
+.hud-hint {
+  position: absolute;
+  z-index: 1;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-pill);
+  background: var(--color-ink);
+  color: var(--color-on-primary);
+  font: 700 var(--text-sm) / 1.2 var(--font-body);
+  white-space: nowrap;
+  box-shadow: var(--shadow-label);
+  pointer-events: none;
+}
+.hud-hint--below { top: calc(100% + var(--space-xs)); right: 0; }

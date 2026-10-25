@@ -1,8 +1,8 @@
 import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { CollectionClaimResponse, CollectionResponse, CollectionSetDto } from '@miu/schema/collectible';
-import type { CharacterDto } from '@miu/schema/game';
-import { PROGRESS } from '../player/test-fixtures';
+import type { CharacterDto, QuestSummary } from '@miu/schema/game';
+import { PROGRESS, questList } from '../player/test-fixtures';
 import { CollectibleDropNote } from './collectible-drop';
 import { CollectionBook } from './collection-book';
 import { BOOK_SETS } from './collection-catalog';
@@ -74,6 +74,41 @@ describe('the collection book', () => {
     const last = BOOK_SETS.at(-1);
     render(<CollectionBook character={CHARACTER} startAt={last?.mapId} onClose={() => undefined} />);
     expect(await screen.findByRole('alert')).toBeTruthy();
+  });
+});
+
+describe('"Đi đến" in the collection book', () => {
+  const lesson = questList(0).quests[0];
+  if (!lesson) throw new Error('fixture has no quest');
+  const quests: QuestSummary[] = [lesson]; // the fixture's lesson plays in the forest
+
+  it('takes her from a thing not found yet to where it drops, naming the map; nothing on one she has', async () => {
+    stubServer({ 'GET /api/collection': collection({ [ids[0] ?? '']: 1 }) });
+    const onGo = vi.fn();
+    render(<CollectionBook character={CHARACTER} startAt="khu-rung-bi-mat" onClose={() => undefined} travel={{ region: 'nha-cua-be', name: 'Mochi', quests, onGo }} />);
+    await screen.findByText('Đã tìm 1/10');
+    fireEvent.click(document.querySelector(`[data-id="book-item-${ids[0] ?? ''}"]`) as Element);
+    expect(document.querySelector('[data-id^="book-go-"]')).toBeNull();
+    fireEvent.click(document.querySelector(`[data-id="book-item-${ids[1] ?? ''}"]`) as Element);
+    const go = screen.getByRole('button', { name: 'Đi tới Khu rừng bí mật' });
+    expect(go.textContent).toBe('Đi đến');
+    expect(document.querySelector(`[data-id="book-go-${ids[1] ?? ''}-where"]`)?.textContent).toBe('Ở Khu rừng bí mật');
+    fireEvent.click(go);
+    expect(onGo).toHaveBeenCalledWith({ region: 'khu-rung-bi-mat', quest: lesson, target: 'parrot-guide', questBound: true });
+  });
+
+  it('offers nothing where no lesson of that region is in her list, or the book is opened away from the game', async () => {
+    stubServer({ 'GET /api/collection': collection({}) });
+    const view = render(<CollectionBook character={CHARACTER} startAt="khu-rung-bi-mat" onClose={() => undefined} travel={{ region: 'nha-cua-be', name: 'Mochi', quests: [], onGo: () => undefined }} />);
+    await screen.findByText('Đã tìm 0/10');
+    fireEvent.click(document.querySelector(`[data-id="book-item-${ids[1] ?? ''}"]`) as Element);
+    expect(document.querySelector('[data-id^="book-go-"]')).toBeNull();
+    view.unmount();
+    render(<CollectionBook character={CHARACTER} startAt="khu-rung-bi-mat" onClose={() => undefined} />);
+    await screen.findByText('Đã tìm 0/10');
+    fireEvent.click(document.querySelector(`[data-id="book-item-${ids[1] ?? ''}"]`) as Element);
+    expect(screen.getByText('Chưa tìm thấy', { selector: 'strong' })).toBeTruthy();
+    expect(document.querySelector('[data-id^="book-go-"]')).toBeNull();
   });
 });
 

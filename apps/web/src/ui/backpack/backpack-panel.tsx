@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { InventoryResponse } from '@miu/schema/game';
 import { api, errorMessage } from '../api-client';
 import { CollectionBook } from '../collection/collection-book';
+import type { Travel } from '../travel/go-there-button';
 import type { TextKey } from '../i18n/i18n';
 import { T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
@@ -21,8 +22,8 @@ const TABS: ReadonlyArray<{ key: Tab; label: TextKey }> = [
   { key: 'quest', label: 'backpack.quest' },
 ];
 
-/** `region`: where she plays, the collection book's first page. */
-export function BackpackPanel({ data, region }: { data: Pick<PlayerData, 'character'>; region?: string }) {
+/** `region`: where she plays, the collection book's first page; `travel`: its "Đi đến" over the game. */
+export function BackpackPanel({ data, region, travel }: { data: Pick<PlayerData, 'character'>; region?: string; travel?: Travel }) {
   const [inventory, setInventory] = useState<InventoryResponse['items'] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<Tab>('all');
@@ -50,7 +51,7 @@ export function BackpackPanel({ data, region }: { data: Pick<PlayerData, 'charac
         <Icon name="books" size={28} />
         <T k="collection.title" />
       </button>
-      {bookOpen ? <CollectionBook character={data.character} startAt={region} onClose={() => setBookOpen(false)} /> : null}
+      {bookOpen ? <CollectionBook character={data.character} startAt={region} onClose={() => setBookOpen(false)} travel={travel} /> : null}
       <Tabs label={t('backpack.kinds')} items={TABS.map((item) => ({ key: item.key, label: <T k={item.label} /> }))} active={tab} onChange={setTab} dataId="backpack-tab">
         {error ? <p role="alert" className="error">{error}</p> : null}
         {!inventory && !error ? (

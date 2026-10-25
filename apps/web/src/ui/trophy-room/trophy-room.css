@@ -36,7 +36,11 @@
   background: var(--color-surface-faint);
   color: var(--color-ink);
 }
-.trophy-card--missing { opacity: 0.55; filter: grayscale(1); }
+.trophy-card--missing > :not(:last-child),
+.trophy-card--missing .trophy-card-name,
+.trophy-card--missing .trophy-card-how,
+.trophy-card--missing .trophy-card-when,
+.trophy-card--missing .go-there-where { opacity: 0.55; filter: grayscale(1); }
 .trophy-card-name { font: 800 var(--text-body) var(--font-display); }
 .trophy-card-how, .trophy-card-when { display: block; font-size: var(--text-sm); }
 .trophy-stars { display: inline-flex; gap: 2px; }

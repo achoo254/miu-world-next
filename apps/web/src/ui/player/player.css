@@ -42,3 +42,29 @@
 /* The tracker is narrow: keep the line inside it and shorten the topic title. */
 .topic-label--compact { flex-wrap: nowrap; max-width: 100%; font-size: 0.75rem; }
 .topic-label--compact .topic-label-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* The game's HUD: the avatar in a ring filled by the level's XP, the level on a tag under it, then the coins. */
+.player-badge--compact { gap: var(--space-xs); padding: var(--space-xs) var(--space-md) var(--space-xs) var(--space-xs); }
+.player-badge-ring {
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  padding: 0.1875rem;
+  border-radius: 50%;
+  background: conic-gradient(var(--color-star) var(--xp), var(--color-field-edge) 0);
+}
+.player-badge--compact .miu-portrait { width: 2.75rem; height: 2.75rem; border-width: 2px; }
+.player-badge-level-tag {
+  position: absolute;
+  bottom: calc(-1 * var(--space-xs));
+  left: 50%;
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-pill);
+  background: var(--color-secondary);
+  color: var(--color-on-primary);
+  font: 800 0.75rem / 1.25 var(--font-display);
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+.player-badge--compact .player-coins { margin-left: 0; font-size: var(--text-body); }

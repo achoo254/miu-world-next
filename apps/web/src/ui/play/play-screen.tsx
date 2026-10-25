@@ -34,9 +34,11 @@ import { earnedTrophyKeys } from '@miu/schema/trophy-room';
 import { HomeDecorPanel } from '../home-decor/home-decor-panel';
 import { TROPHY_TARGET, loadTrophies } from '../trophy-room/trophy-room-api';
 import { TrophyRoomPanel } from '../trophy-room/trophy-room-panel';
+import type { PlaceTrip } from '../travel/place-trips';
+import type { Travel } from '../travel/go-there-button';
 import { SHOP_TARGET, ShopPanel } from '../shop/shop-panel';
 import { PetCarePanel } from '../pet-care/pet-care-panel';
-import { PetHud } from '../pet-care/pet-hud';
+import { PetHud, PetSniffButton } from '../pet-care/pet-hud';
 import { reportPetWalk } from '../pet-care/pet-care-api';
 import { CookingPanel } from '../cooking/cooking-panel';
 import { TimetablePanel } from '../timetable/timetable-panel';
@@ -59,6 +61,16 @@ import { keepScreenOn } from '../../platform/keep-awake';
 const HOME_PATH = '/home';
 /** A pet wearing nothing (a stable value: the game is not rebuilt for it). */
 const NO_GEAR: readonly string[] = [];
+
+/**
+ * A trip from the trophy room to another map: the place she starts beside there, kept until that map is up (`set`
+ * until the new game starts loading, `loading` until it is ready), so a game built later for the same quest starts
+ * where she stands, not back at the place.
+ */
+interface Arrival {
+  target: string | null;
+  stage: 'set' | 'loading';
+}
 
 /**
  * A quest's progress from the server: the step route's response and the party's pushes may arrive out of order, so
@@ -106,6 +118,10 @@ const PICK_WALK_WAIT_MS = 4_000;
 /** How often the child's spot is saved while playing; hiding or leaving the page saves it at once. */
 const SAVE_SPOT_MS = 10_000;
 
+/**
+ * The label over the target in reach ("Vẹt · Nói chuyện"): the way to interact by touch, mouse or keyboard (Enter on
+ * it, or E anywhere), for the nearest target. There is no separate Interact button (owner, 25/10/2026).
+ */
 function InteractionLabel() {
   const store = useGameStore();
   const prompt = useGameState((s) => s.prompt);
@@ -184,6 +200,7 @@ function GameView({
   bosses,
   events,
   outing,
+  arrival,
 }: {
   store: GameStore;
   /** The online UI's store; it outlives each game (the party frame stays while the next map loads). */
@@ -218,6 +235,8 @@ function GameView({
   events: readonly EventLayerOption[];
   /** At home, the map of today's lesson: the pet greets her wanting to go there; read when the game is (re)built. */
   outing: string | null;
+  /** Arriving from the trophy room: the place she starts beside on the next map built (read when the game is built). */
+  arrival: { readonly current: Arrival | null };
 }) {
   const host = useRef<HTMLDivElement>(null);
   const game = useRef<Game | null>(null);
@@ -249,7 +268,7 @@ function GameView({
   useEffect(() => {
     if (!host.current) return;
     const picks = decorKey ? (JSON.parse(decorKey) as Record<string, string>) : undefined;
-    const instance = new Game(host.current, { store, social, search: window.location.search, playerName, species, pet, petGear: petGearRef.current, outfit: outfitKey ? outfitKey.split(',') : [], chapter, region, quest, savedSpot, decor: picks, trophies: trophyKeys ? trophyKeys.split(',') : [], objectStates: objectsRef.current, bosses: bossesRef.current, events: eventsRef.current, outing: outingRef.current });
+    const instance = new Game(host.current, { store, social, search: window.location.search, playerName, species, pet, petGear: petGearRef.current, outfit: outfitKey ? outfitKey.split(',') : [], chapter, region, quest, savedSpot, decor: picks, trophies: trophyKeys ? trophyKeys.split(',') : [], objectStates: objectsRef.current, bosses: bossesRef.current, events: eventsRef.current, outing: outingRef.current, arriveBeside: arrival.current?.target ?? null });
     game.current = instance;
     onSpotReader(() => instance.currentSpot());
     void instance.start();
@@ -272,7 +291,7 @@ function GameView({
       if (game.current === instance) game.current = null;
       onSpotReader(null);
     };
-  }, [store, social, playerName, species, pet, outfitKey, chapter, region, quest, savedSpot, decorKey, trophyKeys, onSpotReader]);
+  }, [store, social, playerName, species, pet, outfitKey, chapter, region, quest, savedSpot, decorKey, trophyKeys, onSpotReader, arrival]);
   // Full-screen screens stop rendering (Master Plan §12); React only calls stop/resume.
   useEffect(() => {
     if (paused) game.current?.stop();
@@ -294,6 +313,8 @@ export function PlayScreen() {
   const onlineMenu = useSocial(social, (s) => s.menu !== null);
   /** A co-op lobby, challenge or its end is on screen (it covers the game). */
   const coopOpen = useSocial(social, (s) => s.coopLobby !== null || s.coopState !== null || s.coopEnd !== null);
+  /** Friend requests waiting: the number on the HUD's menu button (and on "Bạn bè" inside it). */
+  const friendAsks = useSocial(social, (s) => s.friendAsks.length);
   const coop = useCoopChallenges(social);
   // The quest played with the party: the server's pushes of her progress, and whether a teammate's answer is awaited.
   const partyProgressSeq = useSocial(social, (s) => s.partyProgress?.seq ?? 0);
@@ -361,6 +382,19 @@ export function PlayScreen() {
    * place to be walkable; any other quest switch cancels it.
    */
   const walkAfterPick = useRef<'none' | 'loading' | 'loaded' | 'ready'>('none');
+  /** A trip from the trophy room to another map, until that map is up. */
+  const arrival = useRef<Arrival | null>(null);
+  useEffect(
+    () =>
+      store.subscribe(() => {
+        const trip = arrival.current;
+        if (!trip) return;
+        const { status } = store.getSnapshot();
+        if (trip.stage === 'set' && status === 'loading') trip.stage = 'loading';
+        else if (trip.stage === 'loading' && status === 'ready') arrival.current = null;
+      }),
+    [store],
+  );
   const onSpotReader = useCallback((read: (() => PlayerPosition | null) | null): void => {
     spotOf.current = read;
   }, []);
@@ -516,6 +550,7 @@ export function PlayScreen() {
   function switchQuest(next: QuestSummary, throughGate = false, from: string | null = null): void {
     // Any other switch (the board, a gate, a character) cancels a walk still waiting from a boss picked on the map.
     walkAfterPick.current = 'none';
+    arrival.current = null;
     setQuestsOpen(false);
     setOpenAt(from);
     if (next.quest.id === questId) return;
@@ -531,6 +566,25 @@ export function PlayScreen() {
     url.searchParams.set('quest', next.quest.id);
     window.history.replaceState(window.history.state, '', url);
   }
+  /**
+   * "Đi tới" in the trophy room, "Đi đến" in the collection book: the screens close; a place on this map is walked to as
+   * a tap on the quest card walks (its quest taken up first when it is another's); a place on another map is travelled
+   * to through the portal, and she arrives standing beside it, the quest's arrow pointing on from there. Navigation
+   * only: nothing is earned here.
+   */
+  function goThere(trip: PlaceTrip): void {
+    setTrophyOpen(false);
+    setBackpackOpen(false);
+    if (regionMap(trip.region) === regionMap(region)) {
+      if (trip.questBound) store.send({ type: 'autowalk-to', to: { quest: trip.quest.quest.id } });
+      else if (trip.target) store.send({ type: 'autowalk-to', to: { targetId: trip.target } });
+      return;
+    }
+    switchQuest(trip.quest, true);
+    arrival.current = { target: trip.target, stage: 'set' };
+  }
+  /** Where the trophy room's and the collection book's buttons send her from here. */
+  const placeTravel: Travel | undefined = data ? { region, name: data.character.name, quests: data.quests, onGo: goThere } : undefined;
   // Through a gate (the hub's to each map, each map's back to the hub): that region's lesson takes over.
   const travelled = useRef(0);
   useEffect(
@@ -624,7 +678,7 @@ export function PlayScreen() {
     <GameStoreContext.Provider value={store}>
       <main data-id="play">
         {data && positions && mapEvents && (!atHome || (decor !== null && homeObjects !== null && trophies !== null)) ? (
-          <GameView store={store} social={social} playerName={data.character.name} species={data.character.species} pet={data.character.pet} petGear={data.character.petGear ?? NO_GEAR} outfit={data.character.equipped} chapter={quest?.quest.chapter ?? 1} region={region} quest={quest?.quest.id} savedSpot={savedSpot} decor={atHome ? (decor ?? undefined) : undefined} trophies={atHome ? (trophies ?? undefined) : undefined} objectStates={atHome ? (homeObjects ?? undefined) : undefined} paused={covered} controlsHidden={covered || petCareOpen} onSpotReader={onSpotReader} bosses={bosses} events={mapEvents} outing={atHome && daily ? (findRegion(daily.quest.region)?.name ?? null) : null} />
+          <GameView store={store} social={social} playerName={data.character.name} species={data.character.species} pet={data.character.pet} petGear={data.character.petGear ?? NO_GEAR} outfit={data.character.equipped} chapter={quest?.quest.chapter ?? 1} region={region} quest={quest?.quest.id} savedSpot={savedSpot} decor={atHome ? (decor ?? undefined) : undefined} trophies={atHome ? (trophies ?? undefined) : undefined} objectStates={atHome ? (homeObjects ?? undefined) : undefined} paused={covered} controlsHidden={covered || petCareOpen} onSpotReader={onSpotReader} bosses={bosses} events={mapEvents} outing={atHome && daily ? (findRegion(daily.quest.region)?.name ?? null) : null} arrival={arrival} />
         ) : null}
         {loadError ? (
           <div className="play-message" role="alert">
@@ -638,18 +692,31 @@ export function PlayScreen() {
         ) : null}
         {loadError || offline ? null : <LoadingOverlay region={regionName} viaPortal={viaPortal} look={look} />}
         {offline ? <OfflineBanner onRetry={retryOffline} /> : null}
-        {/* The in-world label and Interact would show through a screen's backdrop: only while playing. */}
+        {/* The in-world label would show through a screen's backdrop: only while playing. */}
         {hudCovered ? null : <InteractionLabel />}
         <GameStatus />
         {/* A boss fight in the world has the screen to itself: its own header over the top, its card at the bottom. The
             HUD stays mounted meanwhile (out of sight), so each vở card between blows does not build it again. */}
         {data && status !== 'error' ? (
           <div className="hud-layer" data-id="hud-layer" hidden={duelOpen} style={{ display: duelOpen ? 'none' : 'contents' }}>
-            <Hud data={data} quest={quest} covered={hudCovered} onMenu={() => setPaused(true)} onQuests={() => setQuestsOpen(true)} onBackpack={() => setBackpackOpen(true)}>
-              <div className="hud-row">
-                <FriendsButton social={social} onOpen={() => setFriendsOpen(true)} />
-                <PetHud petId={data.character.pet} renamed={petRenamed} hidden={hudCovered} onOpen={() => setPetCareOpen(true)} />
-              </div>
+            <Hud
+              data={data}
+              quest={quest}
+              covered={hudCovered}
+              onMenu={() => setPaused(true)}
+              onQuests={() => setQuestsOpen(true)}
+              onBackpack={() => setBackpackOpen(true)}
+              menuBadge={friendAsks}
+              menuFresh={atHome && daily !== null}
+              menu={
+                <>
+                  <FriendsButton social={social} onOpen={() => setFriendsOpen(true)} />
+                  <PetHud petId={data.character.pet} renamed={petRenamed} hidden={hudCovered} onOpen={() => setPetCareOpen(true)} />
+                  {hudCovered || !atHome || !daily ? null : <DailyLessonChip lesson={daily} onGo={(next) => switchQuest(next, true)} />}
+                </>
+              }
+            >
+              {data.character.pet ? <PetSniffButton hidden={hudCovered} /> : null}
               {/* Out of the way while a screen (the friends list…) covers the game: the two never overlap. */}
               {covered ? null : <PartyFrame social={social} voice={voice} fill={(text) => say(text, data.character)} />}
               {covered ? null : <CallBar voice={voice} social={social} />}
@@ -664,14 +731,13 @@ export function PlayScreen() {
                   }}
                 />
               )}
-              {hudCovered || !atHome || !daily ? null : <DailyLessonChip lesson={daily} onGo={(next) => switchQuest(next, true)} />}
             </Hud>
           </div>
         ) : null}
         {data ? <SocialLayer social={social} voice={voice} covered={covered && !onlineMenu} fill={(text) => say(text, data.character)} /> : null}
         {data && backpackOpen ? (
           <Modal title={<T k="common.backpack" />} onClose={() => setBackpackOpen(false)} dataId="play-backpack" size="wide">
-            <BackpackPanel data={data} region={region} />
+            <BackpackPanel data={data} region={region} travel={placeTravel} />
             <button type="button" className={buttonClass('primary', { block: true })} data-id="play-backpack-done" onClick={() => setBackpackOpen(false)}>
               <T k="common.close" />
             </button>
@@ -691,7 +757,7 @@ export function PlayScreen() {
         {data && friendsOpen ? <FriendsDialog social={social} voice={voice} fill={(text) => say(text, data.character)} player={draftOwner} onClose={() => setFriendsOpen(false)} /> : null}
         {timetable ? <TimetablePanel focus={timetable} onClose={() => setTimetable(null)} /> : null}
         {decorOpen ? <HomeDecorPanel onClose={() => setDecorOpen(false)} onSaved={decorated} /> : null}
-        {trophyOpen ? <TrophyRoomPanel onClose={() => setTrophyOpen(false)} /> : null}
+        {trophyOpen ? <TrophyRoomPanel onClose={() => setTrophyOpen(false)} travel={placeTravel} /> : null}
         {shopOpen ? (
           <ShopPanel
             onClose={() => setShopOpen(false)}

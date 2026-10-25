@@ -2,7 +2,7 @@
 import { Router } from 'express';
 import { ACHIEVEMENT_CATEGORIES, achievementOfSource } from '@miu/schema/achievement';
 import { collectionOfSource } from '@miu/schema/collectible';
-import { plaqueStars, type TrophyRoomResponse } from '@miu/schema/trophy-room';
+import { plaqueGoTo, plaqueStars, type TrophyRoomResponse } from '@miu/schema/trophy-room';
 import { activePlayerId, requireParent } from '../auth/auth-context';
 import type { ContentCatalog } from '../content/content-catalog';
 import type { Db } from '../db/client';
@@ -36,7 +36,8 @@ export function trophyRoom(content: ContentCatalog, record: PlayerRecord): Troph
     const entries = [...content.achievements.values()].filter((entry) => entry.category === category);
     const dates = entries.flatMap((entry) => achievements.get(entry.id) ?? []);
     const latest = dates.reduce<Date | undefined>((a, b) => (a && a > b ? a : b), undefined);
-    return { category, claimed: dates.length, total: entries.length, stars: plaqueStars(dates.length, entries.length), lastAt: iso(latest) };
+    const goTo = plaqueGoTo(entries, new Set(achievements.keys()));
+    return { category, claimed: dates.length, total: entries.length, stars: plaqueStars(dates.length, entries.length), lastAt: iso(latest), goTo };
   });
   return { badges, cups, plaques };
 }

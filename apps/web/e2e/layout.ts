@@ -39,7 +39,7 @@ export function layoutFacts(page: Page): Promise<LayoutFacts> {
       const top = document.elementFromPoint(cx, cy);
       return top !== null && (top === el || el.contains(top));
     };
-    const controls = [...document.querySelectorAll('button, a[href], [role="button"], input, select, textarea, [data-id="hud-interact"]')].filter(shown);
+    const controls = [...document.querySelectorAll('button, a[href], [role="button"], input, select, textarea')].filter(shown);
     const boxes = controls.map((el) => ({ el, r: el.getBoundingClientRect() }));
     const offScreen = boxes.filter(({ r }) => r.left < -1 || r.top < -1 || r.right > view.width + 1 || r.bottom > view.height + 1).map(({ el, r }) => `${name(el)} at ${Math.round(r.left)},${Math.round(r.top)}–${Math.round(r.right)},${Math.round(r.bottom)}`);
     const overlaps: string[] = [];

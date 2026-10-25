@@ -268,6 +268,7 @@ describe('HUD', () => {
         </GameStoreContext.Provider>
       </MemoryRouter>,
     );
+    fireEvent.click(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' }));
     expect(document.querySelector('[data-id="hud-tracker-topic"]')?.textContent).toBe('Đọc truyện và kể chuyện');
   });
 
@@ -283,10 +284,11 @@ describe('HUD', () => {
         </GameStoreContext.Provider>
       </MemoryRouter>,
     );
+    fireEvent.click(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' }));
     expect(document.querySelector('[data-id="hud-tracker-step"]')?.textContent).toBe(`Ra bãi cỏ tìm manh mối cùng ${CHARACTER.name} 0/1`);
   });
 
-  it('tracks the current step, shows Interact only near a target, and does not re-render for events it does not use', () => {
+  it('tracks the current step, has no Interact button (the label in the world is tapped), and does not re-render for events it does not use', () => {
     const store = createGameStore();
     const sent: string[] = [];
     store.onCommand((c) => sent.push(c.type));
@@ -300,6 +302,7 @@ describe('HUD', () => {
         </GameStoreContext.Provider>
       </MemoryRouter>,
     );
+    fireEvent.click(screen.getByRole('button', { name: 'Mở nhiệm vụ hiện tại' }));
     expect(document.querySelector('[data-id="hud-tracker-step"]')?.textContent).toBe('Tìm manh mối 0/1');
     expect(screen.queryByRole('button', { name: /Tương tác/ })).toBeNull();
     const before = trackerRenders;
@@ -315,8 +318,9 @@ describe('HUD', () => {
     act(() => {
       for (let i = 0; i < 20; i += 1) store.emit({ type: 'interaction-prompt', prompt: { ...prompt } });
     });
-    expect(trackerRenders).toBe(before + 2); // one more change: the Interact button appears
-    fireEvent.click(screen.getByRole('button', { name: /Tương tác/ }));
-    expect(sent).toEqual(['interact']);
+    // A target in reach changes nothing in the HUD: the label over it (play screen) is what she taps.
+    expect(trackerRenders).toBe(before + 1);
+    expect(screen.queryByRole('button', { name: /Tương tác/ })).toBeNull();
+    expect(sent).toEqual([]);
   });
 });

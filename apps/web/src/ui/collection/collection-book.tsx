@@ -2,7 +2,8 @@
 // opened from the Backpack and from Home. A tab per region; each page shows the region's set as ten slots (the
 // thing's picture, name and count once found, a silhouette until then), the page's progress bar, and the set's
 // reward with "Nhận thưởng" once the set is complete, which opens a "Chúc mừng!" card like the region chest's.
-// Tapping a slot shows the thing's description. What she owns and what a set pays are the server's.
+// Tapping a slot shows the thing's description; over the game, a thing not found yet offers "Đi đến" (owner,
+// 25/10/2026) to the region where it drops (travel/place-trips.ts). What she owns and what a set pays are the server's.
 import { useState, type CSSProperties } from 'react';
 import type { CollectionClaimResponse, CollectionSetDto } from '@miu/schema/collectible';
 import type { CharacterDto } from '@miu/schema/game';
@@ -16,6 +17,8 @@ import { Tabs } from '../kit/tabs';
 import { itemIcon } from '../backpack/items';
 import { say } from '../player/player-data';
 import { Chest } from '../region/region-reward-panel';
+import { GoThereButton, type Travel } from '../travel/go-there-button';
+import { collectionTrip } from '../travel/place-trips';
 import { playCue } from '../sound/sfx';
 import { BOOK_SETS, RARITY_KEYS, claimCollection, itemName, useCollection, type BookSet, type BookSlot } from './collection-catalog';
 // The backpack's tile grid (item-grid-backpack, bag-tile) and the reward card's body.
@@ -49,7 +52,7 @@ function Slot({ slot, count, chosen, onChoose, character }: { slot: BookSlot; co
   );
 }
 
-function SlotDetail({ slot, count, set, character }: { slot: BookSlot; count: number; set: BookSet; character: CharacterDto }) {
+function SlotDetail({ slot, count, set, character, travel }: { slot: BookSlot; count: number; set: BookSet; character: CharacterDto; travel?: Travel }) {
   const fill = (text: string) => say(text, character);
   if (count === 0) {
     return (
@@ -60,6 +63,7 @@ function SlotDetail({ slot, count, set, character }: { slot: BookSlot; count: nu
         <p className="hint">
           <T k="collection.missingHint" params={{ map: same(set.region) }} />
         </p>
+        {travel ? <GoThereButton trip={collectionTrip(set.mapId, travel.quests)} travel={travel} dataId={`book-go-${slot.id}`} label="collection.go" /> : null}
       </div>
     );
   }
@@ -131,9 +135,10 @@ function ClaimCard({ claim, set, name, onClose }: { claim: CollectionClaimRespon
 
 /**
  * The collection book. `startAt`: the region whose page opens first (Home: the first region; the game: where she
- * plays). `onCoins`: her coins after a set reward (badges that show them).
+ * plays). `onCoins`: her coins after a set reward (badges that show them). `travel`: over the game, a thing not found
+ * yet offers "Đi đến" to where it drops.
  */
-export function CollectionBook({ character, startAt, onClose, onCoins }: { character: CharacterDto; startAt?: string; onClose: () => void; onCoins?: (coins: number) => void }) {
+export function CollectionBook({ character, startAt, onClose, onCoins, travel }: { character: CharacterDto; startAt?: string; onClose: () => void; onCoins?: (coins: number) => void; travel?: Travel }) {
   const { collection, failed, set: setCollection, reload } = useCollection();
   const [tab, setTab] = useState(BOOK_SETS.find((s) => s.mapId === startAt)?.mapId ?? BOOK_SETS[0]?.mapId ?? '');
   const [chosen, setChosen] = useState<string | null>(null);
@@ -224,7 +229,7 @@ export function CollectionBook({ character, startAt, onClose, onCoins }: { chara
                   <Slot key={s.id} slot={s} count={state.owned[s.id] ?? 0} chosen={chosen === s.id} onChoose={() => setChosen(s.id)} character={character} />
                 ))}
               </ul>
-              {slot ? <SlotDetail slot={slot} count={state.owned[slot.id] ?? 0} set={page} character={character} /> : null}
+              {slot ? <SlotDetail slot={slot} count={state.owned[slot.id] ?? 0} set={page} character={character} travel={travel} /> : null}
               <div className={`book-reward${state.complete && !state.claimed ? ' book-reward--ready' : ''}`} data-id="book-reward" data-state={state.claimed ? 'claimed' : state.complete ? 'ready' : 'locked'}>
                 <Chest open={state.claimed} size="3.5rem" />
                 <div className="book-reward-text">

@@ -109,12 +109,12 @@
   #btn-run { margin-bottom: 2.5rem; }
 }
 
-/* The minimap (mock panel 14): a round map under the menu buttons, top right; a tap opens the whole map
-   with its legend in the middle of the screen. Under the HUD's own layer, over the game. */
+/* The minimap (mock panel 14): a round map under the HUD's one menu button (3rem, ui/hud/hud-menu.css), top right;
+   a tap opens the whole map with its legend in the middle of the screen. Under the HUD's own layer, over the game. */
 .minimap {
   --disc: 8.5rem;
   position: fixed;
-  top: calc(var(--space-sm, 0.5rem) + 4.25rem);
+  top: calc(var(--space-sm, 0.5rem) + env(safe-area-inset-top, 0px) + 3.75rem);
   right: calc(var(--space-sm, 0.5rem) + env(safe-area-inset-right, 0px));
   z-index: var(--z-hud, 4);
 }
@@ -151,16 +151,12 @@
   pointer-events: none;
 }
 
-/* iPad in portrait and narrower: the menu buttons stand taller (hud.css). */
-@media (max-width: 900px) {
-  .minimap { top: calc(var(--space-sm, 0.5rem) + 4.75rem); }
-}
-/* Phones: under the 2 × 2 menu block, smaller. Short screens (a phone on its side): smaller still. */
+/* Phones: smaller. Short screens (a phone on its side): smaller still. */
 @media (max-width: 600px) {
-  .minimap { --disc: 6rem; top: calc(var(--space-sm, 0.5rem) + 6.6rem); }
+  .minimap { --disc: 6rem; }
 }
 @media (max-height: 500px) {
-  .minimap { --disc: 4.5rem; top: calc(var(--space-sm, 0.5rem) + 4.75rem); }
+  .minimap { --disc: 4.5rem; }
 }
 
 [hidden] { display: none !important; }

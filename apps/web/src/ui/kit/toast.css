@@ -23,3 +23,10 @@ body:has(.modal-backdrop) .toast {
   bottom: auto;
   top: calc(var(--space-sm) + env(safe-area-inset-top, 0px));
 }
+/* Other players' lines ("Đội · Miu: Xin chào bạn!") never cover a dialog: with one open they stay at the bottom, under
+   the dialog's dimmed backdrop. */
+body:has(.modal-backdrop) .toast--behind {
+  top: auto;
+  bottom: calc(9rem + env(safe-area-inset-bottom, 0px));
+  z-index: calc(var(--z-overlay) - 1);
+}

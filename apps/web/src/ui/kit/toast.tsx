@@ -15,14 +15,17 @@ export function clearShown<T>(shown: T): (current: T | null) => T | null {
   return (current) => (current === shown ? null : current);
 }
 
-/** `onDone` gets the line whose time ran out; clear it with `clearShown`, never by setting nothing. */
-export function Toast<T extends string | Bilingual>({ message, onDone, ms = 3200 }: { message: T; onDone: (shown: T) => void; ms?: number }) {
+/**
+ * `onDone` gets the line whose time ran out; clear it with `clearShown`, never by setting nothing. `behind`: a line
+ * that waits under an open dialog (other players' chat) instead of showing over it.
+ */
+export function Toast<T extends string | Bilingual>({ message, onDone, ms = 3200, behind = false }: { message: T; onDone: (shown: T) => void; ms?: number; behind?: boolean }) {
   useEffect(() => {
     const timer = window.setTimeout(() => onDone(message), ms);
     return () => window.clearTimeout(timer);
   }, [message, onDone, ms]);
   return (
-    <p className="toast" role="status" aria-live="polite" data-id="toast">
+    <p className={behind ? 'toast toast--behind' : 'toast'} role="status" aria-live="polite" data-id="toast">
       {typeof message === 'string' ? message : <Bi vi={message.vi} en={message.en} />}
     </p>
   );

@@ -1,6 +1,8 @@
-// M3.2 HUD over the forest: player badge (level, XP, coins from the server), "Nhiệm vụ hiện tại",
-// the Quests / Map / Backpack / Menu buttons, and the Interact button next to Run and Jump. Nothing
-// here changes per frame: the prompt arrives as a discrete bridge event.
+// M3.2 HUD over the game, compact (owner, 25/10/2026: touch HUDs of block games as the model): a small player chip
+// (avatar, level ring, coins from the server), the current quest as a one-line pill that opens into its card, ONE
+// menu button holding Quests / Map / Backpack / Friends / pet / today's lesson / riding / Pause, and the contextual
+// buttons ("Quay lại", "Xuống xe") only while they can be used. There is no Interact button: the label over the target
+// in the world is tapped (play-screen.tsx), or E pressed. Nothing here changes per frame.
 import { Link } from 'react-router';
 import { useEffect, useState, type KeyboardEvent, type ReactNode } from 'react';
 import type { QuestSummary } from '@miu/schema/game';
@@ -15,6 +17,7 @@ import { nextStep, say, stepProgress, type PlayerData } from '../player/player-d
 import { TopicLabel, topicOf } from '../player/topic-label';
 import { Say, stepLineOf, titleOf } from '../quest/content-text';
 import { searchCount } from '../quest/quest-flow';
+import { HudMenu } from './hud-menu';
 import { RideButton } from './ride-button';
 import './hud.css';
 import './autowalk.css';
@@ -29,16 +32,16 @@ const AUTOWALK_LINE: Record<AutowalkState, TextKey> = {
 };
 
 /**
- * The card folds itself away after this long without a touch (owner, 03/10/2026: "10–15 s"), counted from when the
- * map is up (owner, 07/10/2026): on a slow device the loading screen would otherwise eat most of it.
+ * An opened card folds itself away after this long without a touch (owner, 03/10/2026: "10–15 s"), counted from when
+ * the map is up (owner, 07/10/2026): on a slow device the loading screen would otherwise eat most of it.
  */
 export const TRACKER_FOLD_MS = 12_000;
 
 /**
- * The quest card. While the step's target stands on this map, tapping the card walks the character there
- * along the ways (the game finds the route), and tapping it again stops her. It folds to a small "Nhiệm vụ"
- * pill with its "Thu gọn" button or after TRACKER_FOLD_MS untouched, opens again on a tap of the pill, and
- * opens by itself when the quest moves to another step.
+ * The quest card. It starts as a one-line pill (the quest's name and its steps done; owner, 25/10/2026) and opens on
+ * a tap of it. Open, while the step's target stands on this map, tapping the card walks the character there along the
+ * ways (the game finds the route), and tapping it again stops her. It folds back with its "Thu gọn" button, after
+ * TRACKER_FOLD_MS untouched, or when the quest moves on to another step (the pill's count moves with it).
  */
 export function QuestTracker({ quest, data }: { quest: QuestSummary | null; data: PlayerData }) {
   const store = useGameStore();
@@ -47,15 +50,15 @@ export function QuestTracker({ quest, data }: { quest: QuestSummary | null; data
   const ready = useGameState((s) => s.status === 'ready');
   const autowalk = useGameState((s) => s.autowalk);
   const stepKey = quest ? `${quest.quest.id}:${nextStep(quest)?.id ?? 'done'}` : null;
-  /** The step the card was folded at: folded only while the quest is still on that step, so a new step shows it again. */
-  const [foldedAt, setFoldedAt] = useState<string | null>(null);
-  const folded = stepKey !== null && foldedAt === stepKey;
-  const setFolded = (value: boolean): void => setFoldedAt(value ? stepKey : null);
+  /** The step the card was opened at: open only while the quest is still on that step, so a new step folds it. */
+  const [openAt, setOpenAt] = useState<string | null>(null);
+  const folded = stepKey === null || openAt !== stepKey;
+  const setFolded = (value: boolean): void => setOpenAt(value ? null : stepKey);
   /** Bumped by every touch on the card: restarts the countdown to folding. */
   const [touched, setTouched] = useState(0);
   useEffect(() => {
     if (folded || !stepKey || !ready) return;
-    const timer = window.setTimeout(() => setFoldedAt(stepKey), TRACKER_FOLD_MS);
+    const timer = window.setTimeout(() => setOpenAt(null), TRACKER_FOLD_MS);
     return () => window.clearTimeout(timer);
   }, [folded, stepKey, touched, ready]);
   if (!quest) return null;
@@ -68,10 +71,12 @@ export function QuestTracker({ quest, data }: { quest: QuestSummary | null; data
   const toggle = (): void => store.send({ type: going ? 'autowalk-stop' : 'autowalk-start' });
   if (folded) {
     return (
-      <button type="button" className="hud-tracker-pill" data-id="hud-tracker-pill" aria-label={t('hud.openCurrent')} onClick={() => setFolded(false)}>
+      <button type="button" className="hud-tracker-pill" data-id="hud-tracker-pill" aria-label={t('hud.openCurrent')} title={t('hud.openCurrent')} onClick={() => setFolded(false)}>
         <Icon name="scroll" size={24} />
-        <T k="common.quests" />
-        <span className="hud-tracker-pill-count">
+        <span className="hud-tracker-pill-title" data-id="hud-tracker-pill-title">
+          <Say text={titleOf(quest.quest)} fill={(line) => say(line, data.character)} />
+        </span>
+        <span className="hud-tracker-pill-count" data-id="hud-tracker-pill-count">
           {done}/{total}
         </span>
         {going ? <Icon name="runningShoe" size={20} /> : null}
@@ -137,19 +142,6 @@ export function QuestTracker({ quest, data }: { quest: QuestSummary | null; data
   );
 }
 
-/** Shown only while a target is in reach; the game handles E / tap on the label the same way. */
-function InteractButton() {
-  const store = useGameStore();
-  const prompt = useGameState((s) => s.prompt);
-  if (!prompt) return null;
-  return (
-    <button type="button" className="hud-interact" data-id="hud-interact" onClick={() => store.send({ type: 'interact' })}>
-      <Icon name="sparkles" size={32} />
-      <T k="hud.interact" />
-    </button>
-  );
-}
-
 /** Only while Miu is stuck (water, or the stick gets her nowhere): puts her back where she last stood safely. */
 function RescueButton() {
   const store = useGameStore();
@@ -170,20 +162,29 @@ export function Hud({
   onMenu,
   onQuests,
   onBackpack,
+  menu,
+  menuBadge = 0,
+  menuFresh = false,
   children,
 }: {
   data: PlayerData;
   quest: QuestSummary | null;
   /** A screen covers the game: the whole HUD steps aside, so nothing of it shows through or under that screen. */
   covered?: boolean;
+  /** Opens Pause, with the settings. */
   onMenu: () => void;
   /** Opens this map's quest board over the game: every quest can be taken from there. */
   onQuests: () => void;
   onBackpack: () => void;
-  /** More of the left column under the quest card (the online party frame). */
+  /** More actions in the menu's grid after Quests / Map / Backpack (friends, the pet, today's lesson). */
+  menu?: ReactNode;
+  /** Things waiting inside the menu (friend requests): the number on its button. */
+  menuBadge?: number;
+  /** Something new inside the menu without a number (today's lesson): a dot on its button. */
+  menuFresh?: boolean;
+  /** More of the left column under the quest card (the online party frame, contextual buttons). */
   children?: ReactNode;
 }) {
-  const { t } = useT();
   const store = useGameStore();
   if (covered) return null;
   // The prompt label over the world hides while it would sit under these panels (the game reads their boxes).
@@ -194,39 +195,32 @@ export function Hud({
   return (
     <>
       <div className="hud-top-left" ref={avoid('hud-left')}>
-        <PlayerBadge character={data.character} progress={data.progress} />
+        <PlayerBadge character={data.character} progress={data.progress} compact />
         <QuestTracker quest={quest} data={data} />
         {children}
       </div>
-      <nav className="hud-top-right" aria-label={t('hud.menuLabel')} ref={avoid('hud-right')}>
+      <HudMenu badge={menuBadge} fresh={menuFresh} onAvoid={(el) => store.setPromptAvoid('hud-right', el)}>
         <button type="button" className={buttonClass('secondary', { small: true })} data-id="hud-quests" onClick={onQuests}>
           <Icon name="scroll" size={28} />
-          <span className="hud-btn-label">
-            <T k="common.quests" />
-          </span>
+          <T k="common.quests" />
         </button>
         <Link to="/map" className={buttonClass('secondary', { small: true })} data-id="hud-map">
           <Icon name="map" size={28} />
-          <span className="hud-btn-label">
-            <T k="common.map" />
-          </span>
+          <T k="common.map" />
         </Link>
         <button type="button" className={buttonClass('secondary', { small: true })} data-id="hud-backpack" onClick={onBackpack}>
           <Icon name="backpack" size={28} />
-          <span className="hud-btn-label">
-            <T k="common.backpack" />
-          </span>
+          <T k="common.backpack" />
         </button>
+        {menu}
+        <RideButton place="menu" />
         <button type="button" className={buttonClass('primary', { small: true })} data-id="hud-menu" onClick={onMenu}>
-          <Icon name="pause" size={28} />
-          <span className="hud-btn-label">
-            <T k="common.menu" />
-          </span>
+          <Icon name="gear" size={28} />
+          <T k="hud.settings" />
         </button>
-      </nav>
-      <InteractButton />
+      </HudMenu>
       <RescueButton />
-      <RideButton />
+      <RideButton place="screen" />
     </>
   );
 }

@@ -53,3 +53,13 @@
 .party-quest-card { width: min(17rem, calc(100vw - 2 * var(--space-sm))); }
 .party-quest-start { justify-self: start; }
 .party-quest-members { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-xs); font-size: var(--text-sm); font-weight: 700; }
+/* Its actions are pills with their label on one line, wrapping to a second row in the narrow HUD column. */
+.party-quest-card .online-card-actions { flex-wrap: wrap; justify-content: flex-start; gap: var(--space-xs); }
+.party-quest-card .online-card-actions .btn {
+  flex: 1 1 auto;
+  min-height: 2.75rem;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}

@@ -464,7 +464,19 @@ input:focus-visible, select:focus-visible { border-color: var(--color-secondary)
   box-shadow: var(--shadow-label);
   font-size: var(--text-sm);
   white-space: nowrap;
+  /* The only touch control for interacting: a fingertip-sized target. */
+  display: inline-flex;
+  align-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
+.npc-label:focus-visible { box-shadow: var(--focus-ring); outline: none; }
 
 .button-link {
   display: inline-block;

@@ -1,0 +1,9 @@
+/* "Đi tới" / "Đi đến" under something not hers yet: on its own line, never wider than its card (wraps on a phone). */
+.go-there {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+.go-there-where { font-size: var(--text-sm); overflow-wrap: anywhere; }

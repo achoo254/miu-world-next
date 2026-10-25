@@ -3,7 +3,7 @@
 // what is hers (`GET /api/trophies`); the game shows a spot's piece only when its key is among hers, its empty
 // stand otherwise.
 import { z } from 'zod';
-import { AchievementCategory } from './achievement';
+import { AchievementCategory, type AchievementEntry, type AchievementMetricKind } from './achievement';
 import { ContentId } from './content';
 
 /** Stars on an achievement category's plaque. */
@@ -26,6 +26,64 @@ export const trophyKey = {
   star: (category: AchievementCategory, n: number): string => `star:${category}:${n}`,
 };
 
+/**
+ * Where a plaque's next star is earned, for the trophy room's "Đi tới" (navigation only: the server still pays every
+ * claim). `lesson`: the next lesson (in `region` when given); `minigame`: a minigame side quest (in `region` when
+ * given); `collection`: a region whose collection set is not complete yet; `event`: an event on now.
+ */
+export const TROPHY_PLACES = ['lesson', 'minigame', 'collection', 'event'] as const;
+export const TrophyPlace = z.enum(TROPHY_PLACES);
+export type TrophyPlace = z.infer<typeof TrophyPlace>;
+
+/**
+ * The place each kind of achievement goal is worked toward; null where no map place leads to it (the shop, mail,
+ * wearables, co-op play, knowledge gates). Every metric kind is listed, so a new kind must say where it is earned.
+ */
+export const METRIC_PLACES: Readonly<Record<AchievementMetricKind, TrophyPlace | null>> = {
+  lessons: 'lesson',
+  'regions-started': 'lesson',
+  'regions-complete': 'lesson',
+  'three-stars': 'lesson',
+  'quest-runs': 'lesson',
+  'minigame-runs': 'minigame',
+  'minigames-tried': 'minigame',
+  'boss-wins': 'lesson',
+  'player-level': 'lesson',
+  'skill-level': 'lesson',
+  'skills-at-level': 'lesson',
+  'subject-level': 'lesson',
+  'coins-earned': 'lesson',
+  collectibles: 'collection',
+  'collection-sets': 'collection',
+  'region-chests': 'lesson',
+  'region-tiers': 'lesson',
+  'wearables-owned': null,
+  'shop-purchases': null,
+  'olympiad-runs': 'event',
+  'olympiad-awards': 'event',
+  'mail-gifts': null,
+  'gates-opened': null,
+  'skill-gifts': 'lesson',
+  'coop-runs': null,
+  'coop-challenges': null,
+};
+
+export const TrophyGoTo = z.strictObject({ place: TrophyPlace, region: ContentId.nullable() });
+export type TrophyGoTo = z.infer<typeof TrophyGoTo>;
+
+/**
+ * Where a category's next star is earned: the place of its first achievement in catalogue order that she has not
+ * claimed and that a map place leads to (its region when the goal names one); null when none is left.
+ */
+export function plaqueGoTo(entries: readonly AchievementEntry[], claimed: ReadonlySet<string>): TrophyGoTo | null {
+  for (const entry of entries) {
+    if (claimed.has(entry.id)) continue;
+    const place = METRIC_PLACES[entry.metric.kind];
+    if (place) return { place, region: 'region' in entry.metric ? (entry.metric.region ?? null) : null };
+  }
+  return null;
+}
+
 /** When it was earned, ISO; null while not earned yet. */
 const EarnedAt = z.iso.datetime({ offset: true }).nullable();
 
@@ -42,6 +100,8 @@ export const TrophyRoomResponse = z.strictObject({
       total: z.number().int().min(0),
       stars: z.number().int().min(0).max(PLAQUE_STARS),
       lastAt: EarnedAt,
+      /** Where her next star of this category is earned (null: no map place leads to one). */
+      goTo: TrophyGoTo.nullable(),
     }),
   ),
 });

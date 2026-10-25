@@ -160,18 +160,18 @@ function MemberRow({ social, voice, member, self, leader, here, place, canLead, 
 
 /** Where the party frame remembers being folded, on this device. */
 const PARTY_FOLD_KEY = 'miu.party.folded';
-/** A phone (portrait, or landscape with little height) starts with the party folded to a row of faces. */
-const NARROW_SCREEN = '(max-width: 640px), (max-height: 500px)';
-
-/** Folded or open, as last chosen on this device; never chosen: folded on a phone, open on a tablet or computer. */
+/**
+ * Folded or open, as last chosen on this device; never chosen: folded to a chip of faces on every screen (the compact
+ * HUD, owner 25/10/2026: the open frame covered the party's quest card), open on a tap.
+ */
 export function initialPartyFolded(): boolean {
   try {
     const kept = window.localStorage.getItem(PARTY_FOLD_KEY);
     if (kept === '1' || kept === '0') return kept === '1';
   } catch {
-    // Storage blocked (private mode): fall back to the screen size.
+    // Storage blocked (private mode): folded, as on a first visit.
   }
-  return typeof window.matchMedia === 'function' && window.matchMedia(NARROW_SCREEN).matches;
+  return true;
 }
 
 function keepPartyFolded(folded: boolean): void {
@@ -379,7 +379,8 @@ function OnlinePauseCard({ social }: { social: SocialStore }) {
 function OnlineToastLine({ social }: { social: SocialStore }) {
   const toast = useSocial(social, (s) => s.toast);
   if (!toast) return null;
-  return <Toast key={toast.seq} message={toastText(toast)} onDone={() => social.update((s) => (s.toast?.seq === toast.seq ? { toast: null } : {}))} />;
+  // Lines from other players wait under a dialog instead of covering it.
+  return <Toast key={toast.seq} message={toastText(toast)} behind onDone={() => social.update((s) => (s.toast?.seq === toast.seq ? { toast: null } : {}))} />;
 }
 
 /**

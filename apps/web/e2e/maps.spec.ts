@@ -6,7 +6,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, test } from '@playwright/test';
-import { freshChild } from './quest-api';
+import { freshChild, openQuestCard } from './quest-api';
 import { readStats, waitReady } from './stats';
 
 test.use({ storageState: { cookies: [], origins: [] } });
@@ -76,6 +76,7 @@ test('a gate of the hub, Trung tâm, leads onto the mystery island, and the isla
   const [sx = 0, , sz = 0] = (islandMap.chapterSpawns?.[chapter] ?? islandMap.spawn).position;
   const [px = 0, , pz = 0] = (await readStats(page)).player;
   expect(Math.hypot(px - sx, pz - sz)).toBeLessThan(3);
+  await openQuestCard(page);
   await expect(page.locator('[data-id="hud-autowalk"]')).toHaveText('Chạm để tự đi tới');
   await page.goto(`/play?quality=low&region=dao-bi-an&quest=${island.id}&spawnAt=cong-trung-tam`);
   await waitReady(page);

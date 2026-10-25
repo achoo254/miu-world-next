@@ -102,3 +102,16 @@ export async function skipBossBeat(page: Page): Promise<void> {
   await skip.waitFor({ state: 'visible', timeout: 5_000 });
   await skip.click();
 }
+
+/** Opens the HUD's quest card from its one-line pill (the card starts folded, and folds again on each new step). */
+export async function openQuestCard(page: Page): Promise<void> {
+  await page.locator('[data-id="hud-tracker-pill"]').click();
+  await expect(page.locator('[data-id="hud-tracker"]')).toBeVisible();
+}
+
+/** Opens the HUD's one menu (Quests, Map, Backpack, Friends, the pet, Pause…) if it is not open yet. */
+export async function openHudMenu(page: Page): Promise<void> {
+  const toggle = page.locator('[data-id="hud-menu-toggle"]');
+  if ((await toggle.getAttribute('aria-expanded')) !== 'true') await toggle.click();
+  await expect(page.locator('[data-id="hud-menu-sheet"]')).toBeVisible();
+}

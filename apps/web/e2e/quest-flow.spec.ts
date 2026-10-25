@@ -5,7 +5,7 @@
 import { mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { expect, test, type Page } from '@playwright/test';
-import { copied, freshChild, notebookPage, playAt, playUntil } from './quest-api';
+import { copied, freshChild, notebookPage, openQuestCard, playAt, playUntil } from './quest-api';
 import { expectDrawCalls, readStats, waitReady } from './stats';
 
 /** Draw calls of one scene (docs/system-architecture.md, Master Plan §12). */
@@ -38,15 +38,15 @@ test('meet the parrot, follow the arrow, find the three clues, and the letter op
   await expect(dialogue).toBeVisible();
   await expect(dialogue).toContainText('Chào Mochi!'); // the character's name, never "Miu"
   await expect(page.locator('body')).not.toContainText('Chào Miu');
-  // The in-world label and Interact are hidden while the dialogue covers the paused game.
+  // The in-world label (the way to interact by touch) is hidden while the dialogue covers the paused game.
   await expect(page.locator('.npc-label')).toHaveCount(0);
-  await expect(page.locator('[data-id="hud-interact"]')).toHaveCount(0);
   await page.getByRole('button', { name: 'Tiếp' }).click();
   await page.getByRole('button', { name: 'Tiếp' }).click();
   await page.getByRole('button', { name: 'Tớ sẽ giúp!' }).click();
   await expect(dialogue).toContainText('Tuyệt quá! Mình đi thôi!'); // the parrot answers the choice
   await page.getByRole('button', { name: 'Tiếp tục' }).click();
   await expect(dialogue).toHaveCount(0);
+  await openQuestCard(page);
   await expect(page.locator('[data-id="hud-tracker-count"]')).toHaveText(/0\/3/);
   // The quest is under way: adventure music.
   await expect.poll(() => music(page)).toMatchObject({ mood: 'quest' });
@@ -57,9 +57,12 @@ test('meet the parrot, follow the arrow, find the three clues, and the letter op
   for (const clue of ['clue-mushroom', 'clue-letter', 'clue-box']) {
     await page.goto(playAt(clue));
     await waitReady(page);
-    await page.locator('[data-id="hud-interact"]').click();
+    await page.locator('.npc-label').click();
     found += 1;
-    if (found < 3) await expect(page.locator('[data-id="hud-tracker-count"]')).toHaveText(new RegExp(`${found}/3`));
+    if (found < 3) {
+      await openQuestCard(page);
+      await expect(page.locator('[data-id="hud-tracker-count"]')).toHaveText(new RegExp(`${found}/3`));
+    }
   }
   // All three found: the letter step starts without another touch.
   const letter = page.getByRole('dialog', { name: 'Đọc lá thư' });
@@ -79,6 +82,7 @@ test('meet the parrot, follow the arrow, find the three clues, and the letter op
   await page.locator('[data-id="challenge-check"]').click();
   await expect(letter).toHaveCount(0);
   await copied(page);
+  await openQuestCard(page);
   await expect(page.locator('[data-id="hud-tracker-step"]')).toContainText('Hải ly');
   await expect.poll(async () => (await readStats(page)).hintTarget).toBe('animal-beaver');
   expect(pageErrors).toEqual([]);
@@ -89,7 +93,7 @@ test('finishing chapter 1 without seeing an answer: 100 XP, Level Up to 2, the L
   await playUntil(page, baseURL ?? '', 'open-chest');
   await page.goto(playAt('chest'));
   await waitReady(page);
-  await page.locator('[data-id="hud-interact"]').click();
+  await page.locator('.npc-label').click();
 
   // The world cheers first: villagers and animals around join in and confetti flies, before any screen covers it.
   const reward = page.getByRole('dialog', { name: 'Hoàn thành nhiệm vụ!' });

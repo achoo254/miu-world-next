@@ -1,9 +1,11 @@
 import { act, cleanup, fireEvent, render, screen, within } from '@testing-library/react';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { SAFE_CANNED_CHATS, type PartyView } from '@miu/schema/multiplayer';
 import { createSocialStore, type SocialCommand } from '../../game-bridge/social-store';
 import { PartyFrame, SocialLayer, toastText } from './social-layer';
 
+// The party frame starts folded on a first visit; these tests look inside it, as after one tap to open it.
+beforeEach(() => window.localStorage.setItem('miu.party.folded', '0'));
 afterEach(() => {
   cleanup();
   window.localStorage.clear();
@@ -139,8 +141,8 @@ describe('the party frame', () => {
     expect(folded.isConnected).toBe(false);
   });
 
-  it('starts folded on a phone when nothing was chosen yet', () => {
-    vi.stubGlobal('matchMedia', (query: string) => ({ matches: query.includes('max-width'), media: query }));
+  it('starts folded to a chip on any screen when nothing was chosen yet', () => {
+    window.localStorage.removeItem('miu.party.folded');
     const { social } = setup();
     social.update({ party, selfId: 'p-me', mapId: 'trung-tam' });
     render(<PartyFrame social={social} fill={fill} />);

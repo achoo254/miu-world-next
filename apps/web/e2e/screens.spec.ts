@@ -8,16 +8,21 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { expect, test, type Browser, type BrowserContext, type Page } from '@playwright/test';
 import { layoutFacts, type LayoutFacts } from './layout';
-import { notebookPage, playAt, playUntil } from './quest-api';
+import { notebookPage, openHudMenu, playAt, playUntil } from './quest-api';
 import { gameSettled, newPlayer, newScreen, type ScreenSize } from './screen-session';
 import { readStats, waitReady } from './stats';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const SHOT_DIR = path.join(REPO_ROOT, 'assets/generated/review/screens');
-const VIEWPORTS = [
-  { width: 360, height: 740 },
-  { width: 820, height: 1180 },
-] as const;
+/**
+ * The sizes pictured: a phone and an iPad upright. `MIU_SCREENS_SIZES=1600x1000,…` pictures other sizes instead (a
+ * desktop check by hand); only the two default sizes are reviewed before a release (docs/screen-review.md).
+ */
+const VIEWPORTS: ReadonlyArray<{ width: number; height: number }> = (process.env.MIU_SCREENS_SIZES ?? '360x740,820x1180').split(',').map((size) => {
+  const [width = 0, height = 0] = size.split('x').map(Number);
+  if (!(width > 0 && height > 0)) throw new Error(`MIU_SCREENS_SIZES: not a size: ${size}`);
+  return { width, height };
+});
 
 interface Shot {
   shot: string;
@@ -96,7 +101,7 @@ test.afterAll(() => {
 for (const viewport of VIEWPORTS) {
   const size = `${viewport.width}x${viewport.height}`;
   test(`the main screens on ${size}`, async ({ browser, baseURL }) => {
-    // Twenty-seven screens, ten game loads, a second player and a moderator: several minutes on a dev machine.
+    // Thirty screens, ten game loads, a second player and a moderator: several minutes on a dev machine.
     test.setTimeout(15 * 60_000);
     const base = baseURL ?? '';
     const headers = { Origin: new URL(base).origin };
@@ -174,22 +179,33 @@ for (const viewport of VIEWPORTS) {
     await capture(page, '07-play-hud', async () => {
       await page.goto('/play?quality=low&spawnAt=spawn');
       await gameSettled(page);
-      await expect(page.locator('[data-id="hud-tracker"]')).toBeVisible();
+      // The compact HUD: the quest as a one-line pill, one menu button, the minimap and the touch controls.
+      await expect(page.locator('[data-id="hud-tracker-pill"]')).toBeVisible();
+    });
+    await capture(page, '28-play-menu', async () => {
+      await openHudMenu(page);
+      await expect(page.locator('[data-id="hud-backpack"]')).toBeVisible();
+    });
+    await capture(page, '29-pause', async () => {
+      await openHudMenu(page);
+      await page.locator('[data-id="hud-menu"]').click();
+      await expect(page.locator('[data-id="pause"]')).toBeVisible();
+      await expect(page.locator('[data-id="pause-home"]')).toBeAttached();
     });
     await capture(page, '08-play-prompt', async () => {
       await page.goto(playAt('parrot-guide'));
       await gameSettled(page);
-      await expect(page.locator('[data-id="hud-interact"]')).toBeVisible();
+      await expect(page.locator('.npc-label')).toBeVisible();
     });
     await capture(page, '09-dialogue', async () => {
-      await page.locator('[data-id="hud-interact"]').click();
+      await page.locator('.npc-label').click();
       await expect(page.getByRole('dialog', { name: 'Vẹt' })).toBeVisible();
     });
     await capture(page, '10-question', async () => {
       await playUntil(page, base, 'tree-riddle');
       await page.goto(playAt('ancient-tree'));
       await gameSettled(page);
-      await page.locator('[data-id="hud-interact"]').click();
+      await page.locator('.npc-label').click();
       await expect(page.locator('[data-id="challenge"]')).toBeVisible();
     });
     await capture(page, '11-reward', async () => {
@@ -197,7 +213,7 @@ for (const viewport of VIEWPORTS) {
       await playUntil(page, base, 'open-chest');
       await page.goto(playAt('chest'));
       await gameSettled(page);
-      await page.locator('[data-id="hud-interact"]').click();
+      await page.locator('.npc-label').click();
       await notebookPage(page, 5);
       await expect(page.getByRole('dialog', { name: 'Hoàn thành nhiệm vụ!' })).toBeVisible();
       // The XP counts up on screen: pictured once it reaches what the server paid.
@@ -241,6 +257,7 @@ for (const viewport of VIEWPORTS) {
       expect((await page.context().request.put('/api/character', { headers, data: { name: 'Mochi', equipped: [], pet: 'meo-xam' } })).status()).toBe(200);
       await page.goto('/play?quality=low&region=nha-cua-be&quest=nha-cua-be-ch1&spawnAt=spawn');
       await gameSettled(page);
+      await openHudMenu(page);
       await page.locator('[data-id="hud-pet"]').click();
       await expect(page.locator('[data-id="play-pet-care"]')).toBeVisible();
       // The board, not its "calling the pet" line.
@@ -259,14 +276,24 @@ for (const viewport of VIEWPORTS) {
       await page.locator('[data-id="online-invite-accept"]').click();
       await expect(page.locator('[data-id="online-party"]')).toBeVisible();
     });
+    await capture(page, '30-party-quest', async () => {
+      // The friend leads: she asks the party to play the forest's quest; Mochi joins. The party opened from its chip,
+      // and the quest card under it: the two never overlap.
+      await friend.page.locator('[data-id="party-quest-start"]').click();
+      await page.locator('[data-id="party-quest-join"]').click();
+      await expect(page.locator('[data-id="party-quest"]')).toBeVisible();
+      const expand = page.locator('[data-id="online-party-expand"]');
+      if (await expand.isVisible()) await expand.click();
+      await expect(page.locator('[data-id="online-party"][data-folded="false"]')).toBeVisible();
+    });
     // The friend reports her (made up: reason "other"), so the moderator's queue has something in it. A report that
     // could not be sent leaves the queue's screen missing, with this reason.
     const notReported = await (async (): Promise<string | null> => {
       try {
-        // Her menu through the Interact button while the prompt is hers: the name over her head moves with every frame
+        // Her menu through the E key while the prompt is hers: the name over her head moves with every frame
         // drawn under the party bar, too restless for a tap on the phone.
         await expect(friend.page.locator('[data-kind="player"]')).toBeAttached();
-        await friend.page.locator('[data-id="hud-interact"]').click();
+        await friend.page.keyboard.press('KeyE');
         await friend.page.locator('[data-id="online-menu-report"]').click();
         await friend.page.locator('[data-id="online-menu-reason-other"]').check();
         await friend.page.locator('[data-id="online-menu-report-send"]').click();
@@ -334,7 +361,7 @@ for (const viewport of VIEWPORTS) {
       }
       await page.goto(`/play?quality=low&region=${PUZZLE.region}&quest=${PUZZLE.quest}&spawnAt=${PUZZLE.target}`);
       await gameSettled(page);
-      await page.locator('[data-id="hud-interact"]').click();
+      await page.locator('.npc-label').click();
       await expect(page.locator('[data-id="logic-challenge-clues"]')).toBeVisible();
     });
     await context.close();

@@ -1,8 +1,8 @@
 import { randomUUID } from 'node:crypto';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { achievementSource } from '@miu/schema/achievement';
+import { achievementSource, type AchievementEntry } from '@miu/schema/achievement';
 import { collectionSource } from '@miu/schema/collectible';
-import { TrophyRoomResponse, earnedTrophyKeys, plaqueStars, trophyKey } from '@miu/schema/trophy-room';
+import { METRIC_PLACES, TrophyRoomResponse, earnedTrophyKeys, plaqueGoTo, plaqueStars, trophyKey } from '@miu/schema/trophy-room';
 import { createTestApp, parentWithChild, type Agent, type TestApp } from '../../test/test-app';
 import { inventoryItems, rewardLedger } from '../db/schema';
 
@@ -38,6 +38,8 @@ describe('trophy room', () => {
     expect(body.plaques.map((p) => p.category)).toEqual(['kham-pha', 'hoc-tap', 'minigame', 'suu-tam', 'su-kien']);
     expect(body.plaques.reduce((n, p) => n + p.total, 0)).toBe(app.content.achievements.size);
     expect(earnedTrophyKeys(body)).toEqual(new Set());
+    // Every plaque has somewhere on a map its first star is earned.
+    expect(Object.fromEntries(body.plaques.map((p) => [p.category, p.goTo?.place]))).toEqual({ 'kham-pha': 'lesson', 'hoc-tap': 'lesson', minigame: 'minigame', 'suu-tam': 'collection', 'su-kien': 'event' });
   });
 
   it('shows what the ledger paid her, with the day each was first earned', async () => {
@@ -59,6 +61,9 @@ describe('trophy room', () => {
     const plaque = body.plaques.find((p) => p.category === 'hoc-tap');
     expect(plaque).toMatchObject({ claimed: half.length, total: studies.length, stars: 2, lastAt: new Date(Date.UTC(2026, 9, half.length)).toISOString() });
     expect(earnedTrophyKeys(body)).toEqual(new Set([trophyKey.badge(badge.id), trophyKey.cup(set), trophyKey.star('hoc-tap', 1), trophyKey.star('hoc-tap', 2)]));
+    // The next star of the study plaque is the first study achievement not claimed yet.
+    const next = studies.find((a) => !half.includes(a));
+    expect(plaque?.goTo).toEqual(next ? plaqueGoTo([next], new Set()) : null);
   });
 
   it('never shows another player what is not hers', async () => {
@@ -73,6 +78,21 @@ describe('trophy room', () => {
 
   it('asks for a signed-in player', async () => {
     await app.agent().get('/api/trophies').expect(401);
+  });
+});
+
+describe('where a plaque\'s next star is earned', () => {
+  const entry = (id: string, metric: AchievementEntry['metric']): AchievementEntry => ({ id, category: 'su-kien', name: id, description: id, icon: 'trophy', metric, goal: 1, reward: { xp: 0, coin: 0 } });
+
+  it('skips claimed ones and ones no map place leads to, and keeps the region a goal names', () => {
+    const list = [entry('mail', { kind: 'mail-gifts' }), entry('farm', { kind: 'minigame-runs', region: 'nong-trai' }), entry('exam', { kind: 'olympiad-runs' })];
+    expect(plaqueGoTo(list, new Set())).toEqual({ place: 'minigame', region: 'nong-trai' });
+    expect(plaqueGoTo(list, new Set(['farm']))).toEqual({ place: 'event', region: null });
+    expect(plaqueGoTo(list, new Set(['farm', 'exam']))).toBeNull();
+  });
+
+  it('knows a place, or none, for every kind of goal the catalogue uses', () => {
+    for (const a of app.content.achievements.values()) expect(METRIC_PLACES[a.metric.kind]).not.toBeUndefined();
   });
 });
 

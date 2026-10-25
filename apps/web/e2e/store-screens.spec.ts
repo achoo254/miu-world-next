@@ -7,7 +7,7 @@ import { mkdirSync, rmSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { expect, test, type Page } from '@playwright/test';
-import { notebookPage, playAt, playUntil } from './quest-api';
+import { notebookPage, openHudMenu, playAt, playUntil } from './quest-api';
 import { gameSettled, newPlayer, type ScreenSize } from './screen-session';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
@@ -53,13 +53,13 @@ for (const { dir, size } of DEVICES) {
 
     await page.goto(`/play?quality=${QUALITY}&spawnAt=spawn`);
     await gameSettled(page);
-    await expect(page.locator('[data-id="hud-tracker"]')).toBeVisible();
+    await expect(page.locator('[data-id="hud-tracker-pill"]')).toBeVisible();
     await shoot(page, '03-play');
 
     await playUntil(page, base, 'tree-riddle');
     await page.goto(playAt('ancient-tree', QUALITY));
     await gameSettled(page);
-    await page.locator('[data-id="hud-interact"]').click();
+    await page.locator('.npc-label').click();
     await expect(page.locator('[data-id="challenge"]')).toBeVisible();
     await shoot(page, '04-question');
 
@@ -67,7 +67,7 @@ for (const { dir, size } of DEVICES) {
     await playUntil(page, base, 'open-chest');
     await page.goto(playAt('chest', QUALITY));
     await gameSettled(page);
-    await page.locator('[data-id="hud-interact"]').click();
+    await page.locator('.npc-label').click();
     await notebookPage(page, 5);
     await expect(page.getByRole('dialog', { name: 'Hoàn thành nhiệm vụ!' })).toBeVisible();
     // The XP counts up on screen: pictured once it reaches what the server paid.
@@ -82,6 +82,7 @@ for (const { dir, size } of DEVICES) {
     expect((await page.context().request.put('/api/character', { headers, data: { name: 'Mochi', equipped: [], pet: 'meo-xam' } })).status()).toBe(200);
     await page.goto(`/play?quality=${QUALITY}&region=nha-cua-be&quest=nha-cua-be-ch1&spawnAt=spawn`);
     await gameSettled(page);
+    await openHudMenu(page);
     await page.locator('[data-id="hud-pet"]').click();
     await expect(page.locator('[data-id="play-pet-care"]')).toBeVisible();
     await expect(page.locator('[data-id="pet-care-name"]')).toBeVisible();

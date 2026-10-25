@@ -2,7 +2,7 @@ import { act, cleanup, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { createGameStore, type GameCommand } from '../../game-bridge/game-store';
 import { GameStoreContext } from '../../game-bridge/use-game-state';
-import { PetHud } from './pet-hud';
+import { PetHud, PetSniffButton } from './pet-hud';
 
 const json = (body: unknown) => new Response(JSON.stringify(body), { status: 200 });
 
@@ -18,6 +18,7 @@ function renderHud(props: { renamed?: string | null; hidden?: boolean } = {}) {
   const view = render(
     <GameStoreContext.Provider value={store}>
       <PetHud petId="cun-con" onOpen={onOpen} {...props} />
+      <PetSniffButton hidden={props.hidden} />
     </GameStoreContext.Provider>,
   );
   return { store, sent, onOpen, view };
@@ -56,7 +57,9 @@ describe('pet HUD', () => {
   });
 
   it('steps aside while a screen covers the game', () => {
-    const { view } = renderHud({ hidden: true });
+    const { view, store } = renderHud({ hidden: true });
+    act(() => store.emit({ type: 'pet-sniff', available: true, wait: 0 }));
     expect(view.container.querySelector('[data-id="hud-pet"]')).toBeNull();
+    expect(view.container.querySelector('[data-id="hud-pet-sniff"]')).toBeNull();
   });
 });

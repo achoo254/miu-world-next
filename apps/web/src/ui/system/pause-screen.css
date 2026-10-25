@@ -1,0 +1,18 @@
+/* Pause: one column on phones; on tablets and computers the settings in two balanced columns (sound and music across
+   both) and the actions in a grid. Values from tokens.css only. */
+.pause-body { gap: var(--space-md); }
+.pause-actions { display: grid; gap: var(--space-xs); }
+@media (min-width: 720px) {
+  .pause-modal .settings-sections {
+    display: block;
+    column-count: 2;
+    column-gap: var(--space-md);
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
+  }
+  .pause-modal .settings-section { break-inside: avoid; margin-bottom: var(--space-md); }
+  /* Sound and music side by side across the dialog: each label stays on one line. */
+  .pause-modal .settings-section:first-child { column-span: all; }
+  .pause-actions { grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: var(--space-sm); }
+}

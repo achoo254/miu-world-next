@@ -1,8 +1,11 @@
 // NEW SCREEN (owner, 08/10/2026: "Phòng truyền thống đầy đủ"): the list of the child's trophy room, opened before
 // its cabinet in her home. Her event badges, a cup for each collection set she completed, a plaque for each
 // achievement category with its stars, each with how it is earned and the day she earned it; what is not hers
-// yet shows faded. What is hers is the server's (`GET /api/trophies`); the room around her shows the same.
-import { useEffect, useState } from 'react';
+// yet shows faded. What is hers is the server's (`GET /api/trophies`); the room around her shows the same. Each piece
+// not hers yet has "Đi tới" (owner, 25/10/2026): it names the map where it is earned and takes her there
+// (travel/place-trips.ts); navigation only, the server still decides what she earns.
+import { useEffect, useMemo, useState } from 'react';
+import type { QuestSummary } from '@miu/schema/game';
 import { ACHIEVEMENT_CATEGORIES } from '@miu/schema/achievement';
 import { PLAQUE_STARS, type TrophyRoomResponse } from '@miu/schema/trophy-room';
 import { errorMessage } from '../api-client';
@@ -13,7 +16,10 @@ import { Bi, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
-import { loadTrophies } from './trophy-room-api';
+import { useLiveEvents } from '../event/event-api';
+import { GoThereButton, type Travel } from '../travel/go-there-button';
+import { badgeTrip, collectionTrip, plaqueTrip, type PlaceTrip, type TripSources } from '../travel/place-trips';
+import { loadSideQuests, loadTrophies } from './trophy-room-api';
 import './trophy-room.css';
 
 const DAY = new Intl.DateTimeFormat('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh', day: '2-digit', month: '2-digit', year: 'numeric' });
@@ -35,7 +41,18 @@ const CATEGORY_KEYS: Readonly<Record<(typeof ACHIEVEMENT_CATEGORIES)[number], Te
   'su-kien': 'achievements.tab.su-kien',
 };
 
-function Room({ room }: { room: TrophyRoomResponse }) {
+/** How she gets to a piece not hers yet: the play screen's travel, and where each kind of piece is earned. */
+interface Going {
+  travel: Travel;
+  sources: TripSources;
+}
+
+/** "Đi tới" under a piece not hers yet. */
+function GoButton({ trip, going, dataId }: { trip: PlaceTrip | null; going: Going; dataId: string }) {
+  return <GoThereButton trip={trip} travel={going.travel} dataId={dataId} label="trophy.go" />;
+}
+
+function Room({ room, going }: { room: TrophyRoomResponse; going: Going | null }) {
   const badges = room.badges.filter((b) => b.earnedAt).length;
   const cups = room.cups.filter((c) => c.earnedAt).length;
   const stars = room.plaques.reduce((n, p) => n + p.stars, 0);
@@ -61,6 +78,7 @@ function Room({ room }: { room: TrophyRoomResponse }) {
                   </span>
                   <span className="trophy-card-how">{item?.description ?? ''}</span>
                   <When at={b.earnedAt} dataId={`trophy-badge-when-${b.itemId}`} />
+                  {going && !b.earnedAt ? <GoButton trip={badgeTrip(b.itemId, going.sources)} going={going} dataId={`trophy-badge-go-${b.itemId}`} /> : null}
                 </span>
               </div>
             );
@@ -84,6 +102,7 @@ function Room({ room }: { room: TrophyRoomResponse }) {
                     <T k="trophy.cupHow" params={{ region: set?.region ?? c.mapId }} />
                   </span>
                   <When at={c.earnedAt} dataId={`trophy-cup-when-${c.mapId}`} />
+                  {going && !c.earnedAt ? <GoButton trip={collectionTrip(c.mapId, going.sources.quests)} going={going} dataId={`trophy-cup-go-${c.mapId}`} /> : null}
                 </span>
               </div>
             );
@@ -113,6 +132,7 @@ function Room({ room }: { room: TrophyRoomResponse }) {
                   <T k="trophy.plaqueHow" params={{ claimed: p.claimed, total: p.total }} />
                 </span>
                 <When at={p.lastAt} dataId={`trophy-plaque-when-${p.category}`} />
+                {going && p.stars < PLAQUE_STARS ? <GoButton trip={plaqueTrip(p.goTo, going.sources)} going={going} dataId={`trophy-plaque-go-${p.category}`} /> : null}
               </span>
             </div>
           ))}
@@ -122,11 +142,32 @@ function Room({ room }: { room: TrophyRoomResponse }) {
   );
 }
 
-export function TrophyRoomPanel({ onClose }: { onClose: () => void }) {
+/** `travel`: over the game, each piece not hers yet offers "Đi tới" (none where the room is only looked at). */
+export function TrophyRoomPanel({ onClose, travel }: { onClose: () => void; travel?: Travel }) {
   const [room, setRoom] = useState<TrophyRoomResponse | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
   const [loads, setLoads] = useState(0);
   const { t } = useT();
+  // The events on now (a badge is earned at the event that gives it) and the minigame side quests (a minigame
+  // plaque's star): a failed read only leaves those pieces without "Đi tới".
+  const { events } = useLiveEvents();
+  const [sideQuests, setSideQuests] = useState<QuestSummary[]>([]);
+  const travelling = travel !== undefined;
+  useEffect(() => {
+    if (!travelling) return;
+    let live = true;
+    loadSideQuests().then(
+      (list) => live && setSideQuests(list),
+      () => undefined,
+    );
+    return () => {
+      live = false;
+    };
+  }, [travelling]);
+  const going = useMemo<Going | null>(
+    () => (travel && room ? { travel, sources: { quests: travel.quests, events: events ?? [], sideQuests, cups: room.cups } } : null),
+    [travel, room, events, sideQuests],
+  );
 
   useEffect(() => {
     let live = true;
@@ -145,7 +186,7 @@ export function TrophyRoomPanel({ onClose }: { onClose: () => void }) {
         ✕
       </button>
       {room ? (
-        <Room room={room} />
+        <Room room={room} going={going} />
       ) : loadError ? (
         <div className="scene-panel">
           <p role="alert" className="error">

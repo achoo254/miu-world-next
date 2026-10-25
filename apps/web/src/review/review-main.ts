@@ -631,8 +631,8 @@ const SCREEN_NAMES: Record<string, string> = {
   '04-home': 'Home',
   '05-world-map': 'Bản đồ thế giới',
   '06-region': 'Chi tiết vùng',
-  '07-play-hud': 'Chơi: HUD ở chỗ xuất hiện',
-  '08-play-prompt': 'Chơi: nhãn Tương tác cạnh mục tiêu',
+  '07-play-hud': 'Chơi: HUD gọn ở chỗ xuất hiện',
+  '08-play-prompt': 'Chơi: nhãn chạm để tương tác trên mục tiêu',
   '09-dialogue': 'Lời thoại',
   '10-question': 'Câu hỏi (Hướng dẫn, Gợi ý, Đáp án)',
   '11-reward': 'Màn thưởng (có nút Khoe kết quả)',
@@ -652,6 +652,9 @@ const SCREEN_NAMES: Record<string, string> = {
   '25-online-off': 'Thông báo khi tắt chơi online',
   '26-moderation': 'Màn kiểm duyệt (có báo cáo giả trong hàng đợi)',
   '27-puzzle-clues': 'Câu đố logic có manh mối',
+  '28-play-menu': 'Chơi: menu HUD mở (mọi nút cũ trong một menu)',
+  '29-pause': 'Tạm dừng và cài đặt',
+  '30-party-quest': 'Tổ đội mở cùng thẻ chơi cả đội',
 };
 
 /** The screens pictured before a release, phone and iPad side by side, with the agent's findings under each. */

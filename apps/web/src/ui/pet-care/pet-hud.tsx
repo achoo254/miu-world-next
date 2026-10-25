@@ -1,6 +1,6 @@
-// NEW SCREEN element on the M3.2 HUD (under the quest card, by "Bạn bè"): her pet's button, with its picture and
-// the name she gave it, opening its care board; and "Đánh hơi" while a step has things to find on this map, the pet
-// running a few steps toward the nearest (a nudge, then a wait before the next).
+// NEW SCREEN element on the M3.2 HUD: her pet's button, with its picture and the name she gave it, opening its care
+// board (a tile in the HUD menu); and "Đánh hơi" while a step has things to find on this map, the pet running a few
+// steps toward the nearest (a nudge, then a wait before the next), on screen under the quest card only while usable.
 import { useEffect, useState } from 'react';
 import { useGameState, useGameStore } from '../../game-bridge/use-game-state';
 import { T, useT } from '../i18n/use-t';
@@ -14,7 +14,6 @@ export function PetHud({ petId, renamed, hidden = false, onOpen }: { petId: stri
   const store = useGameStore();
   const { t } = useT();
   const ready = useGameState((s) => s.status === 'ready');
-  const sniff = useGameState((s) => s.petSniff);
   /** Its name as read when the game came up (undefined until read). */
   const [loaded, setLoaded] = useState<string | null | undefined>(undefined);
   // A name picked on the care board since: newer than the one read when the game came up.
@@ -39,24 +38,30 @@ export function PetHud({ petId, renamed, hidden = false, onOpen }: { petId: stri
 
   if (!pet || hidden) return null;
   return (
-    <>
-      <button type="button" className={`${buttonClass('secondary', { small: true })} pet-hud-button`} data-id="hud-pet" aria-label={t('hud.pet')} onClick={onOpen}>
-        <img className="pet-hud-art" src={assetUrl(pet.art)} alt="" width={32} height={32} draggable={false} />
-        <span className="hud-btn-label">{name ?? pet.name}</span>
-      </button>
-      {sniff.available ? (
-        <button
-          type="button"
-          className={`${buttonClass('primary', { small: true })} pet-hud-sniff`}
-          data-id="hud-pet-sniff"
-          aria-label={t('petCare.sniffLabel')}
-          disabled={sniff.wait > 0}
-          onClick={() => store.send({ type: 'pet-sniff' })}
-        >
-          <Icon name="pawPrints" size={26} />
-          <span className="hud-btn-label">{sniff.wait > 0 ? <T k="petCare.sniffWait" params={{ seconds: sniff.wait }} /> : <T k="petCare.sniff" />}</span>
-        </button>
-      ) : null}
-    </>
+    <button type="button" className={`${buttonClass('secondary', { small: true })} pet-hud-button`} data-id="hud-pet" aria-label={t('hud.pet')} onClick={onOpen}>
+      <img className="pet-hud-art" src={assetUrl(pet.art)} alt="" width={32} height={32} draggable={false} />
+      <span className="hud-btn-label">{name ?? pet.name}</span>
+    </button>
+  );
+}
+
+/** "Đánh hơi": only while a step has things to find on this map and she has a pet with her. */
+export function PetSniffButton({ hidden = false }: { hidden?: boolean }) {
+  const store = useGameStore();
+  const { t } = useT();
+  const sniff = useGameState((s) => s.petSniff);
+  if (!sniff.available || hidden) return null;
+  return (
+    <button
+      type="button"
+      className={`${buttonClass('primary', { small: true })} pet-hud-sniff`}
+      data-id="hud-pet-sniff"
+      aria-label={t('petCare.sniffLabel')}
+      disabled={sniff.wait > 0}
+      onClick={() => store.send({ type: 'pet-sniff' })}
+    >
+      <Icon name="pawPrints" size={26} />
+      <span className="hud-btn-label">{sniff.wait > 0 ? <T k="petCare.sniffWait" params={{ seconds: sniff.wait }} /> : <T k="petCare.sniff" />}</span>
+    </button>
   );
 }

@@ -45,7 +45,7 @@ import { createTargetArrow } from './entities/target-arrow';
 import { createMinimap } from './hud/minimap';
 import { bossMarkers, minimapMarkers, sideGiverMarkers, type MapBoss } from './hud/minimap-model';
 import { fetchSideGivers } from './hud/side-givers';
-import { promptClearOf, type ScreenBox } from './hud/prompt-placement';
+import { promptClearOf, promptClearOfPanels, type ScreenBox } from './hud/prompt-placement';
 import { fetchStoryTellers } from './hud/story-tellers';
 import { fillPlayerName } from '@miu/quest/player-name';
 import { HOME_REGION } from '../ui/region/regions';
@@ -149,6 +149,11 @@ export interface GameOptions {
   outing?: string | null;
   /** Where the child last stood on this map (`GET /api/player-positions`); the spawn point when absent or no longer open ground. */
   savedSpot?: Pick<PlayerPosition, 'position' | 'facing'> | null;
+  /**
+   * Arriving from afar (the trophy room's "Đi tới"): she starts standing beside this interactable, not where she last
+   * stood; the spawn point when the map has no such place. A `spawnAt` in the URL still wins.
+   */
+  arriveBeside?: string | null;
   /** The child's picks for her home (`GET /api/home-decor`): the map's restyled pieces as she chose them. */
   decor?: Readonly<Record<string, string>>;
   /** The display keys of her trophy room's pieces she earned (`GET /api/trophies`); the others' spots show empty stands. */
@@ -399,7 +404,8 @@ export class Game {
     const entities = { ...chapterEntities, interactables: namedForPlayer(chapterEntities.interactables, this.options.playerName ?? 'bạn') };
     // Where the child starts (a URL spot, next to a target, where she left off, else the spawn): its
     // regions and the patches in view are loaded and drawn before the first frame.
-    const spawnAtParam = params.get('spawnAt');
+    const urlSpawnAt = params.get('spawnAt');
+    const spawnAtParam = urlSpawnAt ?? this.options.arriveBeside ?? null;
     const start =
       spawnAtParam?.split(',').map(Number).filter(Number.isFinite).length === 3
         ? spawnAtParam.split(',').map(Number)
@@ -669,7 +675,8 @@ export class Game {
       castShadow: quality.shadows,
     });
     this.cleanups.push(() => journey.dispose());
-    // Dev/E2E switch: start next to a target (`npc` = the first NPC), or at `x,y,z`, instead of the spawn point.
+    // Start next to a target (arriving from the trophy room, or the dev/E2E switch, where `npc` = the first NPC), or at
+    // `x,y,z` (dev/E2E), instead of the spawn point.
     const spawnAt = spawnAtParam;
     const spawnTarget = entities.interactables.find((t) => (spawnAt === 'npc' ? t.kind === 'npc' : t.id === spawnAt));
     const spawnPoint = spawnAt?.split(',').map(Number) ?? [];
@@ -710,8 +717,9 @@ export class Game {
     this.input = input;
     this.cleanups.push(() => input.dispose());
     const autopilot = params.get('autopilot') === '1' ? new Autopilot(entities) : null;
-    // Autopilot, review shots and URL-placed starts are dev runs: where they end up is nobody's place to come back to.
-    if (!autopilot && !params.has('shot') && spawnAt === null) {
+    // Autopilot, review shots and URL-placed starts are dev runs: where they end up is nobody's place to come back to
+    // (arriving from the trophy room is play: her spot is saved).
+    if (!autopilot && !params.has('shot') && urlSpawnAt === null) {
       this.spotNow = () => {
         const p = controller.position;
         // On a ride she is kept at the last spot she stood on (the stop) until she gets off; seated, where she stood before.
@@ -762,17 +770,14 @@ export class Game {
     // and moves the anchor React registered (per frame, no React render).
     let promptTarget: InteractableObject | null = null;
     /**
-     * Whether the label, its bottom centre at `at`, keeps clear of every HUD panel React registered. Read each frame
-     * a label shows (two boxes; moving the label by transform leaves layout clean), so a panel that just grew counts.
+     * The boxes of the HUD panels React registered, for the label to keep off. Read each frame a label shows (a few
+     * boxes; moving the label by transform leaves layout clean), so a panel that just grew counts.
      */
-    const labelClearOfHud = (at: { x: number; y: number }, width: number, height: number): boolean => {
-      const left = at.x - width / 2;
-      const top = at.y - height;
-      return store.getPromptAvoid().every((el) => {
+    const hudPanels = (): ScreenBox[] =>
+      store.getPromptAvoid().map((el) => {
         const b = el.getBoundingClientRect();
-        return b.width === 0 || left > b.right || left + width < b.left || top > b.bottom || top + height < b.top;
+        return { left: b.left, right: b.right, top: b.top, bottom: b.bottom };
       });
-    };
     const herFeet = new Vector3();
     const herHead = new Vector3();
     /** Her figure on screen this frame, feet to the tips of her ears: the Interact label keeps off her head. */
@@ -1326,11 +1331,12 @@ export class Game {
         const anchor = store.getPromptAnchor();
         if (anchor) {
           const size = { width: anchor.offsetWidth, height: anchor.offsetHeight };
-          const at = character.root.visible ? promptClearOf(anchorAt, size, herOnScreen()) : anchorAt;
+          const overHer = character.root.visible ? promptClearOf(anchorAt, size, herOnScreen()) : anchorAt;
+          // The label is how she interacts by touch: never hidden under a HUD panel, it moves clear of them instead.
+          const at = promptClearOfPanels(overHer, size, hudPanels(), { width: window.innerWidth, height: window.innerHeight });
           anchor.style.transform = `translate(-50%, -100%) translate(${at.x}px, ${at.y}px)`;
-          // Hidden until first positioned (no flash at 0,0), and while it would sit under a HUD panel: the
-          // Interact button does the same, so the label never covers a panel's buttons nor hides under them.
-          anchor.style.visibility = labelClearOfHud(at, size.width, size.height) ? 'visible' : 'hidden';
+          // Hidden until first positioned (no flash at 0,0).
+          anchor.style.visibility = 'visible';
         }
       }
       if (interact && promptTarget?.def.ride) {

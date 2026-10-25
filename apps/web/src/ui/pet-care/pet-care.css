@@ -208,8 +208,7 @@
 }
 .pet-scene-caption-text { font-size: var(--text-lg); white-space: nowrap; }
 
-/* The HUD: her pet's button by "Bạn bè", and "Đánh hơi" while there is something to find. */
-.hud-row { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
+/* The HUD: her pet's tile in the HUD menu, and "Đánh hơi" on screen while there is something to find. */
 .pet-hud-button { gap: var(--space-xs); }
 .pet-hud-art { width: 2rem; height: 2rem; pointer-events: none; }
 .pet-hud-sniff:not(:disabled) { animation: pet-sniff-nudge 2.4s ease-in-out infinite; }

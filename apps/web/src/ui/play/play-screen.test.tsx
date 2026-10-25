@@ -28,14 +28,16 @@ function playApi(character: () => Response = () => json({ species: 'cat', name: 
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status });
 
 // jsdom has no WebGL; the runtime itself is covered by Playwright. Here: lifecycle under StrictMode.
-const games = vi.hoisted(() => ({ live: 0, started: 0, stops: 0, resumes: 0, paused: false, duel: 'unavailable' as 'staged' | 'unavailable', savedSpot: undefined as unknown, decor: undefined as unknown, spot: null as unknown, store: null as GameStore | null }));
+const games = vi.hoisted(() => ({ live: 0, started: 0, stops: 0, resumes: 0, paused: false, duel: 'unavailable' as 'staged' | 'unavailable', savedSpot: undefined as unknown, decor: undefined as unknown, spot: null as unknown, store: null as GameStore | null, region: undefined as string | undefined, arriveBeside: undefined as string | null | undefined }));
 vi.mock('../../game/game', () => ({
   Game: class {
     private alive = true;
     private readonly options: { store: GameStore };
-    constructor(_host: HTMLElement, options: { store: GameStore; savedSpot?: unknown; decor?: unknown }) {
+    constructor(_host: HTMLElement, options: { store: GameStore; savedSpot?: unknown; decor?: unknown; region?: string; arriveBeside?: string | null }) {
       this.options = options;
       games.savedSpot = options.savedSpot;
+      games.region = options.region;
+      games.arriveBeside = options.arriveBeside;
       games.decor = options.decor;
       games.store = options.store;
       // A boss fight asked for: staged in the world, or not possible here (the test says which).
@@ -66,6 +68,12 @@ vi.mock('../../game/game', () => ({
     }
   },
 }));
+
+/** The store of the game built last (read through a call: a test that resets it does not narrow it to null). */
+function liveStore(): GameStore {
+  if (!games.store) throw new Error('no game built');
+  return games.store;
+}
 
 afterEach(() => {
   cleanup();
@@ -119,7 +127,9 @@ describe('PlayScreen under React StrictMode', () => {
         </AccountProvider>
       </MemoryRouter>,
     );
+    // Pause sits in the HUD's menu.
     fireEvent.click(await screen.findByRole('button', { name: /Menu/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Tạm dừng · Cài đặt' }));
     expect(screen.getByRole('dialog', { name: 'Tạm dừng' })).toBeTruthy();
     const stops = games.stops;
     expect(stops).toBeGreaterThan(0);
@@ -281,6 +291,63 @@ describe('PlayScreen under React StrictMode', () => {
     expect(games.savedSpot).toEqual(games.spot);
     expect(screen.queryByRole('dialog', { name: 'Trang trí nhà' })).toBeNull();
     games.spot = null;
+  });
+
+  it('takes her from the trophy room to where a piece is earned: beside it on another map, walking on this one', async () => {
+    const list = questList(1);
+    const first = list.quests[0];
+    if (!first) throw new Error('no fixture quest');
+    // Her home's lesson first (the next lesson is on this map), the forest's after it.
+    const quests = { ...list, quests: [{ ...first, quest: { ...first.quest, id: 'nha-cua-be-ch1', region: 'nha-cua-be' } }, first] };
+    const room = {
+      badges: [],
+      cups: [{ mapId: 'khu-rung-bi-mat', earnedAt: null }],
+      plaques: [{ category: 'hoc-tap', claimed: 0, total: 13, stars: 0, lastAt: null, goTo: { place: 'lesson', region: null } }],
+    };
+    const base = playApi(undefined, quests);
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (url: string, init?: RequestInit) => {
+        if (url === '/api/trophies') return json(room);
+        if (url === '/api/home-decor') return json({ choices: {} });
+        if (url === '/api/home-objects') return json({ objects: {} });
+        if (url === '/api/events') return json({ events: [] });
+        if (url === '/api/quests?category=side') return json({ quests: [] });
+        return base(url, init);
+      }),
+    );
+    games.store = null;
+    games.region = undefined;
+    window.history.replaceState(null, '', '/play?quest=nha-cua-be-ch1');
+    render(
+      <MemoryRouter initialEntries={['/play?quest=nha-cua-be-ch1']}>
+        <AccountProvider>
+          <PlayScreen />
+        </AccountProvider>
+      </MemoryRouter>,
+    );
+    await vi.waitFor(() => expect(games.store).not.toBeNull());
+    expect(games.region).toBe('nha-cua-be');
+    const sent: unknown[] = [];
+    liveStore().onCommand((command) => sent.push(command));
+
+    // The study plaque's next lesson is on this map: the panel closes and she walks there, as the quest card walks.
+    act(() => liveStore().emit({ type: 'interaction', targetId: 'nha-truyen-thong' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Đi tới đó, ngay ở Nhà của Mochi' }));
+    expect(screen.queryByRole('dialog', { name: 'Phòng truyền thống' })).toBeNull();
+    expect(sent).toContainEqual({ type: 'autowalk-to', to: { quest: 'nha-cua-be-ch1' } });
+    expect(games.arriveBeside ?? null).toBeNull();
+
+    // The forest's cup: the forest is built for its lesson, and she arrives beside that lesson's next place.
+    const started = games.started;
+    act(() => liveStore().emit({ type: 'interaction', targetId: 'nha-truyen-thong' }));
+    fireEvent.click(await screen.findByRole('button', { name: 'Đi tới Khu rừng bí mật' }));
+    await vi.waitFor(() => expect(games.started).toBeGreaterThan(started));
+    expect(games.region).toBe('khu-rung-bi-mat');
+    expect(games.arriveBeside).toBe('clue-box');
+    expect(new URL(window.location.href).searchParams.get('quest')).toBe(first.quest.id);
+    expect(screen.queryByRole('dialog', { name: 'Phòng truyền thống' })).toBeNull();
+    window.history.replaceState(null, '', '/');
   });
 
   it('offers a retry when the network is down, and starts the game once it is back', async () => {
