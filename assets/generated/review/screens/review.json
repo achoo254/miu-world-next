@@ -1,99 +1,120 @@
 {
-  "capturedFrom": "15f4babb3f26c8ff3491fdf2d84199147c072422",
-  "capturedAt": "2026-10-25T06:43:40+07:00",
-  "reviewedAt": "2026-10-25T06:46:00+07:00",
-  "reviewer": "agent:general-purpose (5 người duyệt, mỗi người 6–12 ảnh; so với lần duyệt ở 31790027)",
+  "capturedFrom": "63f555f48a74c7c651eee1e6212d3e5b851764a5",
+  "capturedAt": "2026-10-25T13:59:10+07:00",
+  "reviewedAt": "2026-10-25T14:02:11+07:00",
+  "reviewer": "agent:screen-reviewers (5 subagents, 12 ảnh mỗi agent)",
   "verdict": "pass",
   "findings": [
-    {
-      "shot": "360x740/09-dialogue.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/10-question.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/27-puzzle-clues.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/09-dialogue.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/10-question.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/27-puzzle-clues.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Nghe\" không có trong ảnh này. Nút nghe chỉ hiện khi máy có giọng đọc tiếng Việt cài sẵn (apps/web/src/ui/dialogue/speech.ts); lần chụp trước trên Mac có giọng Việt, lần này chụp trên Windows không có. Code hội thoại, câu hỏi, âm thanh không đổi từ lần duyệt trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/20-landing.png",
-      "kind": "off-screen",
-      "severity": "note",
-      "text": "Tiêu đề và mô tả mới dài hơn nên liên kết \"Đăng nhập\" rơi xuống dưới mép màn 740 px; cuộn mới thấy.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/21-lesson-page.png",
-      "kind": "off-screen",
-      "severity": "note",
-      "text": "Nút \"Chơi ở …\" của trang chủ đề nằm sát đáy, bị cắt ngang ở mép màn; trang cuộn được.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/27-puzzle-clues.png",
-      "kind": "shifted",
-      "severity": "note",
-      "text": "Khung Manh mối dịch lên khoảng 7 px vì bong bóng lời không còn nút Nghe; lựa chọn thứ ba vẫn cần cuộn như trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/14-boss.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Dòng gợi ý dưới câu hỏi trùm có chữ mới (\"Mochi giương bùa như ná…\") so với lần duyệt trước; bố cục không đổi.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/25-online-off.png",
-      "kind": "shifted",
-      "severity": "note",
-      "text": "Mèo xám khác tư thế, to hơn một chút so với ảnh trước (nhịp hoạt ảnh lúc chụp); không đè nút.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/18-party.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Biểu tượng micro và \"Nhắn đội\" vẽ bằng phông emoji của Windows nên khác ảnh trước; chữ đọc được, không chồng.",
-      "fixedIn": null
-    },
     {
       "shot": "360x740/13-olympiad-practice.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Khung Olympic cao hơn màn 740 px: tiêu đề, thanh tên bài và tiến độ nằm ngoài màn, dòng đầu của đề sát mép trên; nút quay lại vẫn thấy. Đã có từ lần chụp trước.",
+      "text": "Dòng đầu của đề bị cắt nửa trên sát mép trên màn hình, thanh tiêu đề và tiến độ 1/10 không còn trong khung nhìn; ảnh lần trước cũng vậy. Nên cho cuộn hoặc chừa lề trên.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/15-shop.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Phía trên bảng Cửa hàng lộ chữ \"+80 XP\" bị cắt ngang mép trên, có thể là thông báo XP còn sót lại; nút đóng vẫn rõ.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/24-weekly-share.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Chân thẻ chia sẻ ghi địa chỉ máy chụp (127.0.0.1:4173); bản production phải hiện tên miền thật, cần xem trên production. Ảnh lần trước cũng vậy.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/24-weekly-share.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Chân thẻ chia sẻ cũng ghi địa chỉ máy chụp (xem ghi chú ở 360x740).",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/27-puzzle-clues.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Đáp án thứ ba bị thanh dưới (Hướng dẫn / Kiểm tra) che nửa; danh sách cuộn được và ảnh lần trước cũng vậy, nhưng người chơi có thể không biết cần cuộn.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/25-online-off.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Nút \"Đã hiểu\" của thẻ chơi online tạm nghỉ cao khoảng 42 px, hơi dưới 44 px nhưng vẫn bấm được.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/05-world-map.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Con vẹt trang trí ở mép trái đè lên biểu tượng cạnh tiêu đề danh sách khu; không che chữ hay vùng chạm, ảnh lần trước cũng vậy.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/02-players.png",
+      "kind": "off-screen",
+      "severity": "note",
+      "text": "Hai nút \"Quản lý tài khoản\" và \"Đăng xuất\" (thấy ở 820x1180) nằm dưới khung nhìn 360, phải cuộn mới tới.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/06-region.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dòng phụ xám nhỏ trên nền be (\"Xong 6 nhiệm vụ · 0/6\") hơi nhạt, đọc được nhưng chưa rõ.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/03-creator.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Nút \"Về trang chủ\" cao khoảng 40 px, hơi dưới 44 px.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/07-play-hud.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Thẻ nhiệm vụ chiếm khoảng 70% bề ngang, che gần một phần ba cảnh phía trên; bố cục HUD giống lần trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/08-play-prompt.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Nút Tương tác và nút Chạy chỉ cách nhau khoảng 10 px (cả hai khổ); không chồng nhau nhưng dễ bấm nhầm.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/10-question.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Tên người nói dính liền câu hỏi trong bong bóng, dòng chữ khá chật; chữ đủ dấu, không bị cắt.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/20-landing.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Một mảnh nền be nhỏ nhô lên sát mép trên khung \"Xem các chủ đề có trong game\"; không che chữ hay nút.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/22-friends-invite.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Nút \"Quay lại game\" đè lên viền dưới bảng Bạn bè khoảng 10 px; không che chữ, giống lần trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/19-worksheets.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Tên phiếu dài sát chữ \"3 phần\" bên phải (còn khoảng 8 px), chưa cắt hay đè.",
       "fixedIn": null
     }
   ]
