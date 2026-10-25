@@ -117,7 +117,11 @@
         "tv2-t06-dui-trong",
         "tv2-t06-khan-lau-trong",
         "tv2-t06-chot-gia-trong"
-      ]
+      ],
+      "en": {
+        "title": "Find things for the drum",
+        "goTo": "Search around the meadow by the hut to find the drum's things"
+      }
     },
     {
       "id": "trong-bao-dieu-gi",
@@ -187,6 +191,17 @@
         "answer": {
           "text": "Trống thức dậy để đón các bạn đến trường.",
           "explanation": "Khổ cuối kể sớm nay trống thức dậy, mừng em đến trường và reo vang."
+        },
+        "en": {
+          "guide": [
+            "Find the last verse, where the drum rings out.",
+            "Read the line that says who the drum is greeting, and where."
+          ],
+          "hint": "The last verse is about the day the friends come back to school after summer.",
+          "answer": {
+            "text": "The drum wakes up to welcome the friends to school.",
+            "explanation": "The last verse tells how this morning the drum wakes, greets the child coming to school and rings out."
+          }
         }
       },
       "feedback": {
@@ -199,9 +214,31 @@
           "Chưa đúng đâu. Tìm khổ cuối, nơi trống reo vang nhé.",
           "Ra chơi cũng đánh trống thật, nhưng khổ cuối nói chuyện khác cơ.",
           "Bài thơ kể lúc các bạn trở lại trường sau hè, đọc lại khổ cuối xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Lu Dog wags his tail so hard it thumps the drum stand with a “bop”.",
+            "Spot on! With the friends back, the drum has work to do again.",
+            "Well done! Give a big “Woof!” to welcome {name}!"
+          ],
+          "wrong": [
+            "Not quite. Find the last verse, where the drum rings out.",
+            "The drum is beaten for break time too, but the last verse is about something else.",
+            "The poem tells of the time the friends return to school after summer. Read the last verse again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem carved on the drum stand",
+        "goTo": "Step into the drum hut, where the poem is carved right on the drum stand",
+        "question": "Lu Dog presses his nose to the drum stand and sniffs: the poem is carved right here, read it out loud for the drum to hear!\nThis morning, what is the drum's sound waking up for?",
+        "choices": [
+          "To welcome friends to school.",
+          "To signal break time.",
+          "To call friends to go home."
+        ]
+      }
     },
     {
       "id": "trong-mua-he-va-khai-giang",
@@ -266,6 +303,17 @@
         "answer": {
           "text": "Ngày hè: Hè về nắng gắt; Sân trường vắng em; Nghe ve rả rích. Khai giảng: Sớm nay trống thức; Mừng em đến trường; Vui cả mùa thu.",
           "explanation": "Khổ đầu kể trống nằm một mình giữa mùa hè; khổ cuối kể trống thức dậy mừng các bạn trong ngày khai giảng."
+        },
+        "en": {
+          "guide": [
+            "The first verse tells about the drum during summer.",
+            "The last verse tells about the drum on the first day of school."
+          ],
+          "hint": "The three lines about fierce sun, the empty yard and the cicadas are all about summer days.",
+          "answer": {
+            "text": "Summer days: Hè về nắng gắt; Sân trường vắng em; Nghe ve rả rích. First day of school: Sớm nay trống thức; Mừng em đến trường; Vui cả mùa thu.",
+            "explanation": "The first verse tells how the drum lay alone all summer; the last verse tells how the drum woke to welcome friends on the first day of school."
+          }
         }
       },
       "feedback": {
@@ -278,9 +326,25 @@
           "Dòng nói trống thức dậy là chuyện ngày khai giảng rồi đấy.",
           "Tiếng ve rả rích vang lên vào lúc nào nhỉ? Đọc lại khổ thơ đầu nhé.",
           "Có một dòng của ngày hè đang lạc sang giỏ ngày khai giảng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two tidy baskets! Lu Dog nods like a wise little old man.",
+            "All right! In summer the drum lies listening to cicadas, and at the start of school it wakes and rings out.",
+            "Brilliant! Lu Dog says {name} understands the drum better than he does."
+          ],
+          "wrong": [
+            "The line about the drum waking up belongs to the first day of school.",
+            "When do the cicadas chirp “rả rích”? Read the first verse again.",
+            "One summer line has wandered into the first-day-of-school basket."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Summer drum, back-to-school drum",
+        "prompt": "Lu Dog wants to know how the drum lived while the friends were away, and how happy it was when they came back.\nWhich poem lines tell about summer and which tell about the first day of school?\nDrag each poem line into the right basket."
+      }
     },
     {
       "id": "kho-tho-tro-chuyen",
@@ -321,6 +385,17 @@
         "answer": {
           "text": "Khổ 3: Trống ơi đừng nhớ / Sắp hết mùa hè / Mai em trở lại / Mang theo tiếng cười.",
           "explanation": "Bạn nhỏ gọi “Trống ơi”, nhắn trống đừng nhớ và hứa mai quay lại, như nói với một người bạn."
+        },
+        "en": {
+          "guide": [
+            "Talking to a friend means calling their name and giving them a message.",
+            "Find the verse where the drum is addressed directly."
+          ],
+          "hint": "That verse begins with the two calling words “Trống ơi”.",
+          "answer": {
+            "text": "Verse 3: Trống ơi đừng nhớ / Sắp hết mùa hè / Mai em trở lại / Mang theo tiếng cười.",
+            "explanation": "The child calls “Trống ơi”, tells the drum not to miss them and promises to come back tomorrow, as if speaking to a friend."
+          }
         }
       },
       "feedback": {
@@ -333,9 +408,32 @@
           "Tìm khổ thơ có tiếng gọi “ơi” dành cho trống nhé.",
           "Khổ này chỉ kể về trống thôi. Khổ nào bạn nhỏ gọi thẳng trống cơ?",
           "Bạn nhỏ hứa “mai em trở lại” ở khổ nào? Đọc lại thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! “Trống ơi” sounds as close as calling your desk mate.",
+            "Right! Lu Dog is so happy he runs into the hut and gives the drum a big hug.",
+            "Great! That child sends the drum a message just as Lu Dog does."
+          ],
+          "wrong": [
+            "Find the verse with the calling word “ơi” addressed to the drum.",
+            "This verse only tells about the drum. In which verse does the child call out to the drum directly?",
+            "In which verse does the child promise “mai em trở lại” (I'll be back tomorrow)? Read it again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Talk with the drum",
+        "goTo": "Out on the hut porch, Lu Dog flattens his ears, ready to confess something",
+        "prompt": "Lu Dog confesses: I often invite the drum to chat like a best friend, but it has never answered once. So there's someone in the poem just like me!\nWhich verse shows the child talking warmly to the drum as if to a friend?",
+        "choices": [
+          "Verse 1: Hè về nắng gắt…",
+          "Verse 2: Trống nhớ các bạn…",
+          "Verse 3: Trống ơi đừng nhớ…",
+          "Verse 4: Sớm nay trống thức…"
+        ]
+      }
     },
     {
       "id": "tinh-cam-voi-trong",
@@ -383,6 +481,17 @@
         "answer": {
           "text": "Quý trống như một người bạn; thương trống nằm một mình suốt mùa hè; hứa sẽ trở lại với trống.",
           "explanation": "Bạn nhỏ nhắn trống đừng nhớ, hứa mai quay lại và mừng khi trống reo vang: đó là tình cảm yêu quý, thân thiết."
+        },
+        "en": {
+          "guide": [
+            "The child calls to the drum and sends it messages: what does the child think of it?",
+            "At the end of the poem, how do the child and drum meet again?"
+          ],
+          "hint": "Three ideas show warm feelings for the drum.",
+          "answer": {
+            "text": "Cherishes the drum like a friend; feels sorry that it lies alone all summer; promises to come back to the drum.",
+            "explanation": "The child tells the drum not to miss them, promises to return tomorrow and is glad when the drum rings out: those show fondness and closeness."
+          }
         }
       },
       "feedback": {
@@ -395,9 +504,32 @@
           "Bạn nhỏ còn nhắn trống đừng nhớ, vậy là có nghĩ tới trống chứ.",
           "Còn sót một ý: bạn nhỏ hứa với trống điều gì?",
           "Ồn ào, khó chịu ư? Trong thơ tiếng trống “reo vang”, vui lắm cơ mà."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three! Lu Dog is so thrilled he rolls over on the grass.",
+            "Right! Fond of the drum like a best friend.",
+            "Wonderful, no extra idea chosen! Woof woof!"
+          ],
+          "wrong": [
+            "The child even tells the drum not to miss them, so they do think of the drum.",
+            "There's still one idea missing: what does the child promise the drum?",
+            "Noisy and annoying? In the poem the drum's sound “rings out”, which is joyful."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The child loves the drum",
+        "prompt": "What does the child think and do that shows how fond they are of the drum?\nLu Dog wags his tail like mad: pick all the right ideas for me, my tail can't keep count!",
+        "choices": [
+          "The child cherishes the drum like a friend",
+          "The child finds the drum's sound too noisy",
+          "The child feels sorry that the drum lies alone all summer",
+          "The child forgets the drum completely during the holiday",
+          "The child promises to come back to the drum"
+        ]
+      }
     },
     {
       "id": "ngam-nghi-la-gi",
@@ -434,6 +566,17 @@
         "answer": {
           "text": "Rả rích là kêu đều đều và kéo dài mãi.",
           "explanation": "Phần giải nghĩa của bài ghi: rả rích là kêu đều đều, kéo dài mãi không dứt."
+        },
+        "en": {
+          "guide": [
+            "Under the poem there is a box explaining hard words.",
+            "The cicadas call all summer, day after day."
+          ],
+          "hint": "The “rả rích” of cicadas can be heard all day, with no rest.",
+          "answer": {
+            "text": "“Rả rích” means a steady sound that goes on and on.",
+            "explanation": "The poem's explanation says: rả rích means making a steady sound that goes on without ending."
+          }
         }
       },
       "feedback": {
@@ -446,9 +589,31 @@
           "Tiếng ve đâu có im bặt sau một tiếng! Xem lại phần giải nghĩa nhé.",
           "Ve kêu suốt mùa hè, không phải lúc có lúc không. Chọn lại thử xem.",
           "Đọc ô giải nghĩa từ dưới bài thơ, nghĩa của “rả rích” nằm ngay đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Woodworker Beaver tries “rả rích” with gnawing sounds and it sounds quite convincing.",
+            "Spot on! A steady, lasting sound, not just one sound and done.",
+            "Great! Woodworker Beaver remembers the new word and slaps his flat tail twice on the fence plank."
+          ],
+          "wrong": [
+            "Cicadas don't go quiet after one sound! Look at the explanation again.",
+            "Cicadas call all summer, not on and off. Try choosing again.",
+            "Read the word box under the poem, the meaning of “rả rích” is right there."
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "What does \"rả rích\" mean?",
+        "goTo": "Go to the wooden fence, where Woodworker Beaver is gnawing half a plank",
+        "prompt": "Woodworker Beaver tilts his head to listen to the cicadas beyond the fence: “How does one go ‘rả rích’? I'm only used to the sound of gnawing wood.”\nRead the word explanation under the poem, then choose the right meaning of “rả rích”.",
+        "choices": [
+          "to make one loud sound and then go completely quiet",
+          "to make a steady, regular sound that goes on without ending",
+          "to make a soft sound that comes and goes"
+        ]
+      }
     },
     {
       "id": "trong-giong-con-nguoi",
@@ -492,6 +657,17 @@
         "answer": {
           "text": "nhớ, ngóng, buồn",
           "explanation": "Trống được tả biết nhớ bạn, ngóng bạn và biết buồn như con người; “rả rích” là tiếng của con ve."
+        },
+        "en": {
+          "guide": [
+            "Which words are usually used for people's feelings: missing someone, longing, sadness…?",
+            "In the poem, who goes “rả rích”, the drum or the cicada?"
+          ],
+          "hint": "The “rả rích” sound belongs to the cicada, not to the drum.",
+          "answer": {
+            "text": "Words for feelings: nhớ, ngóng, buồn",
+            "explanation": "The drum is described as missing friends, longing for them and feeling sad like a person; “rả rích” is the cicada's sound."
+          }
         }
       },
       "feedback": {
@@ -504,9 +680,31 @@
           "Ai kêu rả rích suốt mùa hè? Trống hay con ve?",
           "Còn sót một từ chỉ cảm xúc của trống đấy, đọc lại khổ hai nhé.",
           "Trống “ngóng mãi cổng trường”, từ đó cũng là cách nói về con người."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three words! The drum misses, longs and feels sad just like a person.",
+            "Right! Woodworker Beaver taps his tail on the fence: Drum, you're just like me.",
+            "Well done! Not fooled by the cicada's “rả rích” at all."
+          ],
+          "wrong": [
+            "Who goes “rả rích” all summer? The drum or the cicada?",
+            "One more word about the drum's feelings is missing, read the second verse again.",
+            "The drum “ngóng mãi cổng trường” (longs for the school gate), and that word is also a way of speaking about people."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-tim-tu"
+      "objective": "tu-ngu-tinh-cam-tim-tu",
+      "en": {
+        "title": "The drum is like a person",
+        "prompt": "Woodworker Beaver is delighted: the poem talks about the drum as if it were a person, just like people talk about me!\nWhich of these words describe the drum as if it were a person?",
+        "choices": [
+          "nhớ",
+          "ngóng",
+          "buồn",
+          "rả rích"
+        ]
+      }
     },
     {
       "id": "loi-tam-biet-trong",
@@ -547,6 +745,17 @@
         "answer": {
           "text": "Trống ơi, nghỉ hè vui nhé, hết hè em lại đến chơi với trống!",
           "explanation": "Lời tạm biệt có câu chúc trống nghỉ hè vui và lời hẹn sẽ quay lại khi hết hè."
+        },
+        "en": {
+          "guide": [
+            "The card with the capital letter begins the goodbye.",
+            "The card with the exclamation mark closes it."
+          ],
+          "hint": "Greet first, promise after: Trống ơi… then hết hè… then em lại đến.",
+          "answer": {
+            "text": "Drum, have a lovely holiday, when summer ends, I'll come to play with you again!",
+            "explanation": "The goodbye wishes the drum a happy holiday and promises to come back when summer ends."
+          }
         }
       },
       "feedback": {
@@ -559,9 +768,31 @@
           "Thẻ viết hoa phải đứng đầu, đó là lời chào.",
           "Dấu chấm than nằm cuối lời chào nhé, chuyển nó về sau cùng.",
           "Đọc thử: trống ơi, nghỉ hè vui nhé… rồi bao giờ em lại đến?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "A rounded goodbye! The drum seems to quiver in reply.",
+            "Right! Greet first and promise to meet again after, very polite.",
+            "Lovely! Lu Dog reads along with misty eyes."
+          ],
+          "wrong": [
+            "The card with the capital letter must go first, it's the greeting.",
+            "The exclamation mark belongs at the end of the goodbye, so move it last.",
+            "Try saying it: trống ơi, nghỉ hè vui nhé… and when will you come again?"
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "Saying goodbye to the drum",
+        "goTo": "Back to the drum hut, where the goodbye words were blown around the stand by the wind",
+        "prompt": "Lu Dog tells how at the start of the holiday a child ran over to hug the drum and say goodbye. Sadly the wind scattered the goodbye words.\nPut the child's goodbye back in the right order.",
+        "items": [
+          "I'll come to play with you again!",
+          "when summer ends,",
+          "Drum, have a lovely holiday,"
+        ]
+      }
     },
     {
       "id": "noi-va-dap-tam-biet",
@@ -692,6 +923,17 @@
         "answer": {
           "text": "Sớm nay trống thức / Mừng em đến trường / Tùng tùng reo vang / Vui cả mùa thu.",
           "explanation": "Khổ thơ cuối kể sớm nay trống thức dậy, mừng em đến trường, reo vang cả mùa thu."
+        },
+        "en": {
+          "guide": [
+            "Remember the last verse of the poem.",
+            "On the first day of school, is the drum awake or asleep?"
+          ],
+          "hint": "If the drum “reo” (rings out), its sound must carry far.",
+          "answer": {
+            "text": "The verse: Sớm nay trống thức / Mừng em đến trường / Tùng tùng reo vang / Vui cả mùa thu.",
+            "explanation": "The last verse tells how this morning the drum wakes, welcomes the child to school and rings out all autumn."
+          }
         }
       },
       "feedback": {
@@ -704,9 +946,26 @@
           "Trống đang ngủ thì làm sao reo được? Thử chữ khác nhé.",
           "Em đến đâu để học: nhà hay trường nhỉ?",
           "Tiếng trống reo vang hay reo vàng? Đọc lại dòng thơ thật to xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "BOOM! BOOM! The drum is awake! Lu Dog bounces three times round the hut.",
+            "All right! The drum beat carries as far as Woodworker Beaver's fence.",
+            "Wonderful! The whole school hears the drum call, and the sparrows on the roof fly up to greet it."
+          ],
+          "wrong": [
+            "How can a sleeping drum ring out? Try another word.",
+            "Where do you come to learn: home or school?",
+            "Does the drum ring out “vang” or “vàng”? Read the line aloud again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Boom! Boom! The drum wakes up",
+        "goTo": "Step into the drum hut and pick up the drumstick to wake the drum",
+        "prompt": "Every letter {name} fills in correctly makes a drum beat ring out. Read the last verse aloud and wake the drum!"
+      }
     },
     {
       "id": "truong-em-co-gi-vui",
@@ -812,5 +1071,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Wake Up the School Drum",
+    "summary": "The school drum in the drum hut has been silent all summer. {name} and Lu Dog find the drumstick again, read the poem “Chiếc trống ngủ quên” (The Drum That Fell Asleep) carved on the stand, go to the wooden fence with Woodworker Beaver to find words that speak of a drum as if it were a person, and then beat out the drum for the new school year so Pink Carp in the fish pond can hear it too."
   }
 }

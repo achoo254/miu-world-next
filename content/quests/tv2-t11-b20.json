@@ -114,7 +114,11 @@
         "tv2-t11-qua-dai-chin",
         "tv2-t11-hang-da-nho",
         "tv2-t11-sach-nhim-nau"
-      ]
+      ],
+      "en": {
+        "title": "Things on the trail",
+        "goTo": "Walk along the trail behind the thorn bush and look for things"
+      }
     },
     {
       "id": "duc-tinh-ban-tot",
@@ -175,6 +179,17 @@
         "answer": {
           "text": "Rùa giật mình, rụt người vào mai và im lặng.",
           "explanation": "Sẻ chào rất vui vẻ nhưng rùa thu cả người vào mai, không dám đáp lại: đó là dấu hiệu rùa rất nhút nhát."
+        },
+        "en": {
+          "guide": [
+            "Read the second paragraph of the story again.",
+            "See what the tortoise did right after the sparrow greeted it."
+          ],
+          "hint": "The tortoise pulled itself into its shell and stayed silent.",
+          "answer": {
+            "text": "The tortoise was startled, pulled into its shell and stayed silent.",
+            "explanation": "The sparrow greeted it cheerfully, but the tortoise pulled its whole body into its shell and did not dare reply: a sign that it is very shy."
+          }
         }
       },
       "feedback": {
@@ -187,9 +202,31 @@
           "Câu đó là lời chào vui vẻ của sẻ, sẻ đâu có nhút nhát.",
           "Gọi bạn vào trú mưa là chuyện về sau, lúc đầu rùa còn sợ lắm.",
           "Tìm câu nói rùa làm gì sau tiếng chào đầu tiên của sẻ nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Fluffy Lion nods so hard he bumps the cave roof: bonk!",
+            "Right! Hiding in its shell and staying silent is shy, just like Fluffy Lion.",
+            "{name} found the detail as skilfully as Ki the Dog sniffs out an envelope."
+          ],
+          "wrong": [
+            "That is the sparrow's cheerful greeting, and the sparrow is not shy.",
+            "Calling a friend in to shelter comes later, at first the tortoise was still scared.",
+            "Find what the tortoise did after the sparrow's first greeting."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Read the story in the rock cave",
+        "goTo": "Crawl into the little cave by the trail to read the story and keep warm",
+        "question": "Fluffy Lion crawls in after you, head in but bottom stuck outside the cave. After the first part he whispers: that's just like me! Which detail shows that the little tortoise is very shy?",
+        "choices": [
+          "The sparrow swooped down and greeted the tortoise cheerfully.",
+          "The tortoise was startled, pulled its whole body into its shell and did not dare reply.",
+          "The tortoise called the sparrow into a taro leaf to shelter from the rain."
+        ]
+      }
     },
     {
       "id": "nhung-lan-gap-nhau",
@@ -254,6 +291,17 @@
         "answer": {
           "text": "Lúc đầu: sẻ chào, rùa thu vào mai, hôm sau sẻ lại chào. Mùa mưa: rùa thấy sẻ co ro, gọi sẻ vào trú, hai bạn chung lá khoai.",
           "explanation": "Những lần đầu rùa còn sợ nên nấp vào mai; đến mùa mưa, rùa tự gọi sẻ vào trú và hai bạn ngồi chung tàu lá."
+        },
+        "en": {
+          "guide": [
+            "The second and third paragraphs tell of the first meetings, and the fourth tells of meeting again.",
+            "Which deed happened when the rain was cold?"
+          ],
+          "hint": "Each group has three events.",
+          "answer": {
+            "text": "At first: the sparrow greets, the tortoise pulls into its shell, the next day the sparrow greets again. In the rainy season: the tortoise sees the sparrow shivering, calls it in to shelter, and they share a taro leaf.",
+            "explanation": "At first the tortoise was scared and hid in its shell; in the rainy season it invited the sparrow in and they sat together under the leaf."
+          }
         }
       },
       "feedback": {
@@ -266,9 +314,25 @@
           "Chuyện chung tàu lá khoai để tránh mưa là lúc gặp lại, vào mùa mưa đấy.",
           "Lúc sẻ sà xuống chào lần đầu là chuyện của bờ ao, trước mùa mưa nhiều.",
           "Có một việc đang nằm nhầm nhóm, đọc lại đoạn bốn nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two meetings are clear as day! Fluffy Lion counts again and mixes up no claws this time.",
+            "Right, at first it hid in its shell, but in the rainy season it called its friend in to shelter.",
+            "Well done, Fluffy Lion wags his tail and thumps the cave wall."
+          ],
+          "wrong": [
+            "Sharing a taro leaf to keep off the rain happened when they met again in the rainy season.",
+            "The sparrow swooping down to greet the tortoise the first time happened by the pond, long before the rainy season.",
+            "One event is in the wrong group, read the fourth paragraph again."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Two times they met",
+        "prompt": "Fluffy Lion counts on his claws: one time, two times… oops, he has counted onto his toes! Help me sort what the tortoise and the sparrow did into the time it happened."
+      }
     },
     {
       "id": "vi-sao-nhan-loi",
@@ -305,6 +369,17 @@
         "answer": {
           "text": "Sẻ kiên nhẫn chào mãi, còn rùa thấy có bạn thì ấm lòng.",
           "explanation": "Rùa thấy sẻ kiên nhẫn đến vậy, lại nếm được cảm giác ấm lòng khi có bạn, nên mới nói lời làm bạn."
+        },
+        "en": {
+          "guide": [
+            "Open the last lines of the story of the tortoise and the sparrow.",
+            "Find what the tortoise thought to itself before saying yes."
+          ],
+          "hint": "The tortoise thought: “The sparrow is so patient…”",
+          "answer": {
+            "text": "The sparrow kept greeting patiently, and the tortoise found it warm to have a friend.",
+            "explanation": "Seeing how patient the sparrow was, and tasting the warmth of having a friend, the tortoise agreed to be its friend."
+          }
         }
       },
       "feedback": {
@@ -317,9 +392,31 @@
           "Truyện không nói gì về hạt kê đâu, đọc đoạn cuối nhé.",
           "Sẻ đâu có giận ai, sẻ chỉ vui vẻ chào thôi mà.",
           "Tìm câu rùa tự nghĩ, câu có chữ “kiên nhẫn”."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Fluffy Lion mutters: having a friend is warm, I knew it.",
+            "Right, the sparrow's patience made the tortoise less afraid.",
+            "{name} understands the tortoise so well that Fluffy Lion blinks, moved."
+          ],
+          "wrong": [
+            "The story says nothing about millet seeds, read the last part.",
+            "The sparrow was not cross at all, it just greeted cheerfully.",
+            "Find the sentence the tortoise thinks to itself, the one with the word “kiên nhẫn”."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Why the turtle said yes",
+        "goTo": "Out to the rock at the cave mouth, where Silky Caterpillar is puffing up his fur, waiting for more of the story",
+        "question": "In your opinion, why did the little tortoise agree to be the sparrow's friend?",
+        "choices": [
+          "Because the sparrow gave the tortoise lots of tasty millet seeds.",
+          "Because the sparrow was very patient, and having a friend nearby felt warm.",
+          "Because the tortoise was afraid the sparrow would be cross if it refused."
+        ]
+      }
     },
     {
       "id": "mua-dong-am-ap",
@@ -356,6 +453,17 @@
         "answer": {
           "text": "Hai bạn có nhau và cùng che chung một tàu lá.",
           "explanation": "Mưa vẫn rơi lộp độp, trời vẫn lạnh, nhưng hai bạn ở bên nhau dưới cùng một chiếc lá nên thấy ấm và vui."
+        },
+        "en": {
+          "guide": [
+            "Read the fourth paragraph of the story again.",
+            "What made the two feel warm even though it was cold?"
+          ],
+          "hint": "The answer lies in the two crawling under the same leaf.",
+          "answer": {
+            "text": "The two had each other and shared one leaf.",
+            "explanation": "The rain still pattered and it was still cold, but the two were together under the same leaf, so they felt warm and happy."
+          }
         }
       },
       "feedback": {
@@ -368,9 +476,31 @@
           "Dưới tàu lá khoai làm gì có hơi nóng, đọc lại đoạn bốn nhé.",
           "Truyện nói mưa rơi lộp độp trên tàu lá, đâu phải mưa tạnh.",
           "Hai bạn chui xuống lá để làm gì cùng nhau? Tìm chỗ đó xem sao."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, having a friend beside you is warmer than a blanket!",
+            "Exactly! Fluffy Lion decides: next time it rains I must have a friend too.",
+            "Well done, {name} found where the two shared the leaf."
+          ],
+          "wrong": [
+            "There is no heat under a taro leaf, read the fourth paragraph again.",
+            "The story says the rain pattered on the leaf, it did not stop.",
+            "What did the two crawl under the leaf to do together? Find that part."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The two friends' warm rainy season",
+        "goTo": "Crawl back into the little cave, where the end of the story is still waiting",
+        "prompt": "Fluffy Lion cups his cheeks dreamily: a rainy day that is warm… sounds lovely, I want a day like that too. What made the tortoise and the sparrow's bitterly cold rainy day so happy and warm?",
+        "choices": [
+          "Because heat was rising from under the taro leaf.",
+          "Because the two were together, sheltering under one leaf.",
+          "Because the rain stopped right afterwards."
+        ]
+      }
     },
     {
       "id": "dong-vai-gap-lai",
@@ -490,6 +620,17 @@
         "answer": {
           "text": "iu: cái địu, bé xíu; ưu: bưu thiếp, mưu trí; iên: con kiến, điện thoại; iêng: miếng bánh, cái chiêng",
           "explanation": "Địu, xíu có vần iu; bưu, mưu có vần ưu; kiến, điện có vần iên; miếng, chiêng có vần iêng."
+        },
+        "en": {
+          "guide": [
+            "Say each word out loud and listen closely to the rhyme.",
+            "Notice the ending of the rhyme: n or ng, and whether the u has a little hook."
+          ],
+          "hint": "Each basket holds exactly two words.",
+          "answer": {
+            "text": "iu: cái địu (baby carrier), bé xíu (tiny); ưu: bưu thiếp (postcard), mưu trí (clever); iên: con kiến (ant), điện thoại (phone); iêng: miếng bánh (a piece of cake), cái chiêng (gong)",
+            "explanation": "Địu and xíu have the rhyme iu; bưu and mưu have ưu; kiến and điện have iên; miếng and chiêng have iêng."
+          }
         }
       },
       "feedback": {
@@ -502,9 +643,26 @@
           "Bưu thiếp có vần ưu với dấu móc, còn bé xíu mới là vần iu đấy.",
           "Nghe cuối tiếng nhé: “miếng” có ng, còn “kiến” thì kết thúc bằng n.",
           "Có từ lạc giỏ rồi, đọc chậm phần vần thêm lần nữa."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four baskets are full! Tiny claps: ah, so that's it, so that's it!",
+            "All correct, Tiny even forgets his next “why”.",
+            "Tiny hops about: {name} tells rhymes apart brilliantly!"
+          ],
+          "wrong": [
+            "“Bưu thiếp” has ưu with the hook, while “bé xíu” has iu.",
+            "Listen to the end: “miếng” ends in ng, but “kiến” ends in n.",
+            "A word is in the wrong basket, read the rhyme slowly once more."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Four rhyme baskets",
+        "goTo": "Cross to the oak tree at the head of the trail, where Tiny is poking out his long ears",
+        "prompt": "Tiny is not scared any more, and asks: why do iu and ưu look so alike? Why are iên and iêng different? Let us sort the words into the right baskets together!"
+      }
     },
     {
       "id": "ba-manh-tho-g-gh",
@@ -600,6 +758,17 @@
         "answer": {
           "text": "gió; ghé; gạo; ghi; ghế",
           "explanation": "Gió, gạo đứng trước i, a nên viết g; ghé, ghi, ghế đứng trước e, i, ê nên viết gh."
+        },
+        "en": {
+          "guide": [
+            "Look at the letter right after each gap.",
+            "Before e, ê, i we write gh; before the other letters we write g."
+          ],
+          "hint": "Three gaps need gh: before the letters é, i and ế.",
+          "answer": {
+            "text": "gió (wind); ghé (drop by); gạo (rice); ghi (write down); ghế (chair)",
+            "explanation": "Gió and gạo come before i and a so they take g; ghé, ghi and ghế come before e, i and ê so they take gh."
+          }
         }
       },
       "feedback": {
@@ -612,9 +781,25 @@
           "Chỗ trước chữ é, ế thì cần thêm h đấy.",
           "Trước a, ơ, o thì chỉ cần g thôi, không cần h đâu.",
           "Đọc to chữ “ghi” lên, âm đầu viết thế nào cho đủ chữ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "All five gaps are right! Tiny nods, and for once forgets to ask “why”.",
+            "Right, gh goes only with e, ê, i, and {name} remembers it well.",
+            "The three scraps of poem flow, and Tiny reads so loudly that Fluffy Lion applauds."
+          ],
+          "wrong": [
+            "Before é and ế you need an h as well.",
+            "Before a, ơ, o just g is enough, no h needed.",
+            "Say “ghi” out loud: how must the first sound be written in full?"
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Three poem bits: g or gh",
+        "prompt": "Tiny holds out three scraps of poem picked up under the oak: why is it g here and gh there? Choose g or gh for each gap."
+      }
     },
     {
       "id": "la-tu-ngu-ho-van",
@@ -680,6 +865,17 @@
         "answer": {
           "text": "Việc làm: an ủi, đỡ dậy, nhắc nhở. Tính nết: điềm đạm, vui tính, chân thành.",
           "explanation": "An ủi, đỡ dậy, nhắc nhở là những việc ta làm với bạn; điềm đạm, vui tính, chân thành cho biết một người có tính nết ra sao."
+        },
+        "en": {
+          "guide": [
+            "A word about deeds tells what we do for a friend.",
+            "A word about character tells what kind of person someone is."
+          ],
+          "hint": "Each group has three words.",
+          "answer": {
+            "text": "Deeds: an ủi, đỡ dậy, nhắc nhở. Character: điềm đạm, vui tính, chân thành.",
+            "explanation": "An ủi, đỡ dậy and nhắc nhở are things we do for a friend; điềm đạm, vui tính and chân thành tell what kind of person someone is."
+          }
         }
       },
       "feedback": {
@@ -692,9 +888,26 @@
           "An ủi là việc mình làm với bạn, nên nó thuộc nhóm việc làm.",
           "Điềm đạm nói một bạn như thế nào, đó là tính nết đấy.",
           "Mỗi nhóm có đúng ba chiếc lá, đếm lại xem nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two tidy groups! Fluffy Lion sticks the six leaves on his chest like medals.",
+            "Right, deeds on one side, character on the other.",
+            "Fluffy Lion promises to be “vui tính” instead of growling from today."
+          ],
+          "wrong": [
+            "Comforting (an ủi) is something we do for a friend, so it belongs with deeds.",
+            "Điềm đạm tells what a friend is like, that is character.",
+            "Each group has exactly three leaves, count again."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Fluffy Lion's six leaves",
+        "goTo": "Back to the thorn bush at the forest's end, where Fluffy Lion has a favour to ask",
+        "prompt": "Fluffy Lion wrote six words on six leaves to practise being a good friend, but the wind jumbled them all. Grừ… oh no, please help! Which words are about a friend's deeds, and which are about a friend's character?"
+      }
     },
     {
       "id": "chuyen-hai-xuan-ha",
@@ -775,6 +988,17 @@
         "answer": {
           "text": "a. cho mượn; b. an ủi; c. nhường chỗ",
           "explanation": "Nga đưa bút cho Tú dùng là cho mượn; vỗ vai nói lời dịu dàng là an ủi; đứng dậy cho bà cụ ngồi là nhường chỗ."
+        },
+        "en": {
+          "guide": [
+            "Read each story and see what Nga did for her friend.",
+            "Handing over a pen, patting a shoulder with gentle words, getting up for an old lady."
+          ],
+          "hint": "The three gaps use three different words: cho mượn, an ủi, nhường chỗ.",
+          "answer": {
+            "text": "a. cho mượn (lending); b. an ủi (comforting); c. nhường chỗ (giving up a seat)",
+            "explanation": "Nga handing her pen to Tú is cho mượn (lending); patting a shoulder with gentle words is an ủi (comforting); getting up so the old lady could sit is nhường chỗ (giving up a seat)."
+          }
         }
       },
       "feedback": {
@@ -787,9 +1011,26 @@
           "Đưa bút của mình cho bạn dùng là biết làm gì nhỉ?",
           "Nga vỗ vai và nói lời dịu dàng khi Tú buồn, vậy Nga đã làm gì cho bạn?",
           "Đứng dậy để bà cụ có chỗ ngồi, đó là biết nhường chỗ hay an ủi?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three round little stories! Fluffy Lion rubs his tummy, feeling warm inside.",
+            "All three are right, cho mượn, an ủi and nhường chỗ are in the right places.",
+            "Fluffy Lion cries: I will try all three good deeds with Tiny!"
+          ],
+          "wrong": [
+            "What do you call handing your own pen to a friend to use?",
+            "Nga pats Tú's shoulder and speaks gently when he is sad. What did she do for her friend?",
+            "Getting up so an old lady has a seat: is that giving up a seat or comforting?"
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Tú and Nga's story",
+        "goTo": "Go to the mushroom patch by the trail, where Uncle Năm the Mushroom Picker has three stories to tell",
+        "prompt": "Fluffy Lion reads three little stories about Tú and Nga and nods: I want to be praised like that too! Choose the word for a good deed to fill each gap."
+      }
     },
     {
       "id": "tranh-tren-bui-gai",
@@ -973,5 +1214,9 @@
       "chinh-ta": 2,
       "tu-ngu": 2
     }
+  },
+  "en": {
+    "title": "Fluffy Lion Wants a Friend",
+    "summary": "Fluffy Lion roars “Grừ!” to look fierce, but he is really very shy, and everyone runs away when he tries to make friends. {name} reads the story “Rùa con làm quen” with Fluffy Lion, then learns words for good deeds and how to say sorry in order to make friends with Tiny Rabbit."
   }
 }

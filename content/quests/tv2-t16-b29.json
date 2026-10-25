@@ -117,7 +117,11 @@
         "tv2-t16-then-cua-tre",
         "tv2-t16-ghe-may-cua-ba",
         "tv2-t16-canh-cua-go"
-      ]
+      ],
+      "en": {
+        "title": "Search around the hut",
+        "goTo": "Search the sandy patch by the hut: the door latch, the rattan chair, the wooden door"
+      }
     },
     {
       "id": "noi-ve-ong-ba",
@@ -169,6 +173,17 @@
         "answer": {
           "text": "Ở chỗ thấp nhất, ngang đầu gối cháu.",
           "explanation": "Khổ đầu cho biết bà cúi bên cột nhà, vạch nét than thấp, vừa ngang đầu gối cháu bé."
+        },
+        "en": {
+          "guide": [
+            "Read the first verse, when the grandchild was tiny beside the house pillar.",
+            "Grandma bent down to draw the charcoal line, so is it low or high?"
+          ],
+          "hint": "Grandma had to bend down to draw it, so the charcoal line is low.",
+          "answer": {
+            "text": "At the lowest spot, level with the child's knees.",
+            "explanation": "The first verse says Grandma bent by the house pillar and drew a low charcoal line, just at the little child's knees."
+          }
         }
       },
       "feedback": {
@@ -181,9 +196,31 @@
           "Vai là chỗ bà vạch ở khổ sau, khi cháu đã cao hơn. Đọc lại khổ một nhé.",
           "Đỉnh đầu thì cao quá, cháu bé xíu mà. Tìm dòng cuối của khổ thứ nhất xem.",
           "Gần lắm rồi! Dòng thơ thứ tư của khổ đầu nói rõ nét than nằm ở đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, the first charcoal line is really low! Big Claw Crab clacks both claws like drumming.",
+            "Correct! The child was tiny, so the line only reached the knees.",
+            "Big Claw Crab scuttles three joyful circles sideways: you really read carefully!"
+          ],
+          "wrong": [
+            "The shoulder is where Grandma drew in a later verse, when the child was taller. Read verse one again.",
+            "The top of the head is far too high, the child was tiny. Look at the last line of the first verse.",
+            "Very close! The fourth line of the first verse says exactly where the charcoal line is."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem stuck beside the door latch",
+        "goTo": "Go to the hut's wooden door, where a poem is stuck beside an old mark",
+        "question": "When the grandchild was tiny, where on the child did Grandma draw the charcoal line?",
+        "choices": [
+          "Level with the child's knees",
+          "Level with the child's shoulders",
+          "Level with the top of the child's head"
+        ]
+      }
     },
     {
       "id": "vi-sao-ba-cai-then-duoi",
@@ -219,6 +256,17 @@
         "answer": {
           "text": "Cháu mỗi năm một cao, nét than cũng lên cao nên bà phải kiễng chân.",
           "explanation": "Khổ hai kể nét than lên từng chút theo chiều cao của cháu, vì vậy bà phải nhón chân mới vạch tới vai cháu."
+        },
+        "en": {
+          "guide": [
+            "Read the second verse, where each year the child grows taller.",
+            "When the child grows, does the line go lower or higher than before?"
+          ],
+          "hint": "Two lines of the poem say the child grew taller and the charcoal line climbed.",
+          "answer": {
+            "text": "The child grows a bit taller each year and the line rises too, so Grandma has to stand on tiptoe.",
+            "explanation": "The second verse tells how the line climbs little by little with the child's height, so Grandma has to stand on tiptoe to reach the child's shoulder."
+          }
         }
       },
       "feedback": {
@@ -231,9 +279,30 @@
           "Bài thơ không hề kể bà làm rơi cục than. Đọc lại khổ hai nhé.",
           "Bà đứng cạnh cột chứ có nhìn ra vườn đâu. Tìm dòng nhắc chuyện kiễng chân xem.",
           "Thử nghĩ: mỗi năm cháu cao hơn hay thấp đi? Nét than nằm ở đâu theo đó?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! The child stretches up and the line follows, so Grandma must stand on tiptoe.",
+            "Big Claw Crab nods, eyes a little misty: my grandma stood on tiptoe like that too.",
+            "Exactly! {name} understands even what the poem doesn't say outright."
+          ],
+          "wrong": [
+            "The poem never says Grandma dropped any charcoal. Read the second verse again.",
+            "Grandma stands by the pillar, not looking out at the garden. Find the line about standing on tiptoe.",
+            "Think: does the child grow taller or shorter each year? And where does the line go?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Why Grandma has to stand on tiptoe",
+        "prompt": "Big Claw Crab stands on tiptoe and stretches a claw up high: I reached it! Why did Grandma have to stand on tiptoe to draw the charcoal line when the grandchild grew?",
+        "choices": [
+          "Because the child grew taller, so the line had to go higher.",
+          "Because Grandma dropped a lump of charcoal on the ground.",
+          "Because Grandma liked to stand and look out at the garden through the window."
+        ]
+      }
     },
     {
       "id": "xep-tranh-ba-kho-tho",
@@ -298,6 +367,17 @@
         "answer": {
           "text": "Tranh 3, rồi tranh 1, rồi tranh 2.",
           "explanation": "Tranh 3 vẽ bà cúi vạch ngang đầu gối (khổ một), tranh 1 vẽ bà nhón chân vạch ngang vai (khổ hai), tranh 2 vẽ cháu lớn lần theo vạch cũ (khổ ba)."
+        },
+        "en": {
+          "guide": [
+            "Verse one: the child is tiny. Verse two: the child grows taller. Verse three: the child goes far away and returns.",
+            "Find the picture that matches each verse."
+          ],
+          "hint": "The picture with the tiny child and Grandma bending down belongs to the first verse.",
+          "answer": {
+            "text": "Picture 3, then picture 1, then picture 2.",
+            "explanation": "Picture 3 shows Grandma bending to draw at the knees (verse one), picture 1 shows Grandma on tiptoe drawing at the shoulder (verse two), and picture 2 shows the grown child tracing the old marks (verse three)."
+          }
         }
       },
       "feedback": {
@@ -310,9 +390,31 @@
           "Hình như có tranh đang đứng ngược như Cua rồi. Khổ đầu cháu còn bé xíu cơ.",
           "Cảnh cháu đã lớn lần theo vạch cũ là chuyện ở khổ cuối, đừng xếp lên đầu nhé.",
           "Thử tìm tranh bà cúi xuống vạch thật thấp, đặt nó trước tiên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three pictures in the right place, going forwards at last!",
+            "Big Claw Crab cheers: for the first time I've sorted something without getting it backwards!",
+            "Brilliant! Looking at the pictures you can see the child growing taller through each verse."
+          ],
+          "wrong": [
+            "It looks like a picture is standing backwards like Crab. In the first verse, the child is still tiny.",
+            "The scene of the grown child tracing old marks is in the last verse, don't put it first.",
+            "Try finding the picture where Grandma bends down to draw very low, and put it first."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Three pictures hung by the door",
+        "goTo": "The pictures blow out to the pebble beach at the lake edge, where Khơi the Fisher Uncle has just scooped up all three",
+        "prompt": "The lake wind blew the three pictures Grandma hung by the door into a muddle. Big Claw Crab was going to sort them from last to first… oh no, forwards, of course! Put the pictures in the order of the three verses.",
+        "items": [
+          "Picture 1",
+          "Picture 2",
+          "Picture 3"
+        ]
+      }
     },
     {
       "id": "cau-tho-nho-ba",
@@ -349,6 +451,17 @@
         "answer": {
           "text": "Hai dòng kết bài, nơi cháu nói mình nhớ bà.",
           "explanation": "Về lại cột nhà, thấy vạch than vẫn còn đen, cháu nhớ bà mãi không nguôi."
+        },
+        "en": {
+          "guide": [
+            "Read the last verse, when the child has gone far away to school.",
+            "Find the lines with the words \"nhớ bà\"."
+          ],
+          "hint": "The answer is in the last two lines of the poem.",
+          "answer": {
+            "text": "The two closing lines, where the child says they miss Grandma.",
+            "explanation": "Back at the house pillar, seeing the charcoal lines still black, the child misses Grandma endlessly."
+          }
         }
       },
       "feedback": {
@@ -361,9 +474,31 @@
           "Hai dòng này kể hồi cháu còn bé, chưa đi xa đâu.",
           "Dòng này tả bà phải kiễng chân. Tìm dòng có chữ \"nhớ\" nhé.",
           "Gợi ý nhỏ: câu thơ cần tìm nằm ở cuối cùng của bài."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, seeing the charcoal lines is missing Grandma. Big Claw Crab softly presses a claw to the old door.",
+            "Correct! \"Da diết\" means missing someone deeply, without end.",
+            "Big Claw Crab whispers: me too, every mark I see I miss Grandma."
+          ],
+          "wrong": [
+            "These lines tell about when the child was small, before going far away.",
+            "These lines describe Grandma on tiptoe. Look for the line with the word \"nhớ\".",
+            "A small hint: the lines you need are at the very end of the poem."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem line missing Grandma at the new home",
+        "goTo": "Carry the pictures back to the hut's wooden door and read the last verse again",
+        "question": "Which lines of the poem show that the grown child misses Grandma every time they come back and touch the house pillar?",
+        "choices": [
+          "When I was tiny\nGrandma bent by the pillar",
+          "Grandma had to stand higher on tiptoe\nTo draw at my shoulder",
+          "Seeing the charcoal lines still black\nI miss Grandma with all my heart"
+        ]
+      }
     },
     {
       "id": "tu-chi-hoat-dong",
@@ -420,6 +555,17 @@
         "answer": {
           "text": "Từ chỉ hoạt động: cúi, vạch, chạm.",
           "explanation": "Cúi (xuống), vạch (nét), chạm (cột) là việc làm; cột nhà, than, vai, cháu là tên người hoặc vật."
+        },
+        "en": {
+          "guide": [
+            "An action word is a word for something you do, and you can do it.",
+            "Try saying \"Bà ... xuống\" or \"Cháu ... vào cột\": which word fits in the blank?"
+          ],
+          "hint": "Three words are actions; «than» and «vai» are names of things.",
+          "answer": {
+            "text": "Action words: cúi, vạch, chạm.",
+            "explanation": "«Cúi» (bend down), «vạch» (draw a line) and «chạm» (touch the pillar) are things you do; «cột nhà», «than», «vai» and «cháu» are names of people or things."
+          }
         }
       },
       "feedback": {
@@ -432,9 +578,35 @@
           "\"Vai\" là một phần cơ thể, đâu phải việc làm. Thử bỏ ra xem.",
           "Còn thiếu một từ đấy! Bà làm gì với cục than để có nét kẻ?",
           "\"Cột nhà\" và \"than\" là đồ vật nhé. Từ nào chỉ việc tay ta làm?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three action words, none missed! Big Claw Crab celebrates with a sideways hop.",
+            "Right: «cúi», «vạch», «chạm» are all things you can do.",
+            "Big Claw Crab claps his claws: I said it backwards but you still picked it forwards, so clever!"
+          ],
+          "wrong": [
+            "«Vai» is a part of the body, not something you do. Try taking it out.",
+            "One word is still missing! What does Grandma do with the charcoal to make a line?",
+            "«Cột nhà» and «than» are objects. Which word is something our hands do?"
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Big Claw Crab's jumping game",
+        "goTo": "Out onto the porch of the old hut by the shore, where Big Claw Crab sets up a word game",
+        "prompt": "Big Claw Crab sets up a game: if a word is something you do, jump up! But wait, I often say things backwards. Please pick for me the cards that show things a person does: cột nhà, cúi, than, vạch, vai, chạm, cháu",
+        "choices": [
+          "cột nhà",
+          "cúi",
+          "than",
+          "vạch",
+          "vai",
+          "chạm",
+          "cháu"
+        ]
+      }
     },
     {
       "id": "viec-lam-voi-cua",
@@ -505,6 +677,17 @@
         "answer": {
           "text": "Việc làm: trồng cây, tưới cây, chăm cây, nhổ cây. Tên cây: cây cau, cây tre, cây ổi.",
           "explanation": "Trồng, tưới, chăm, nhổ là từ chỉ hoạt động đi với \"cây\"; cau, tre, ổi là tên các loại cây."
+        },
+        "en": {
+          "guide": [
+            "Try \"Em ... cây\" (I ... a plant): if it makes an action, it is an action word.",
+            "A word that names a kind of tree goes into the basket of tree names."
+          ],
+          "hint": "Planting, watering, tending and pulling up are things our hands do with a plant.",
+          "answer": {
+            "text": "Things you do: trồng cây, tưới cây, chăm cây, nhổ cây. Tree names: cây cau, cây tre, cây ổi.",
+            "explanation": "«Trồng», «tưới», «chăm» and «nhổ» are action words that go with «cây»; «cau», «tre» and «ổi» are names of kinds of trees."
+          }
         }
       },
       "feedback": {
@@ -517,9 +700,26 @@
           "\"Cây tre\" là tên một loại cây, mình đâu làm việc \"tre\" được. Đổi giỏ nhé.",
           "Có một việc làm đang lạc sang giỏ tên cây. Thử nói \"Em ... cây\" xem.",
           "\"Nhổ cây\" là việc làm, nghe phựt một cái! Xếp nó vào giỏ việc làm nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two neat baskets! Big Claw Crab plants, waters and tends a tree all in one go.",
+            "All right! Planting, watering, tending, pulling up are all things you do with a plant.",
+            "Big Claw Crab giggles: and I always thought «cây cau» meant to be… frowning at a tree!"
+          ],
+          "wrong": [
+            "«Cây tre» is a kind of tree, you can't do «tre» to anything. Change baskets.",
+            "An action has strayed into the basket of tree names. Try saying \"Em ... cây\".",
+            "«Nhổ cây» is an action, it goes pop! Put it into the basket of things you do."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "The tree's two baskets of letters",
+        "goTo": "Big Claw Crab scuttles to the guava tree beside the hut's wooden door, tapping tock-tock on the trunk",
+        "prompt": "Big Claw Crab taps tock-tock on the guava trunk: tree, may I ask you something? Help Crab sort the words into the right basket: the basket of things you do with plants, and the basket of kinds of trees."
+      }
     },
     {
       "id": "tim-thay-vet-khac",
@@ -676,6 +876,17 @@
         "answer": {
           "text": "Bà đi dép mòn, rồi cô bé đếm xu, rồi giấu hộp dép, rồi bà đi dép mới.",
           "explanation": "Cô bé thấy dép bà mòn gót, dành xu mua đôi mới, giấu quà chờ bà, và cuối cùng bà cùng cháu đi trong vườn với đôi dép mới."
+        },
+        "en": {
+          "guide": [
+            "The story begins when the girl sees that Grandma's sandals are worn.",
+            "She needs money to buy sandals, and she has the sandals before she can give them to Grandma."
+          ],
+          "hint": "The picture of Grandma wearing the new sandals with her grandchild is the ending scene.",
+          "answer": {
+            "text": "Grandma in worn sandals, then the girl counts coins, then she hides the sandal box, then Grandma wears the new sandals.",
+            "explanation": "The girl sees Grandma's sandals worn at the heels, saves coins to buy a new pair, hides the present to wait for Grandma, and finally Grandma and her grandchild walk in the garden in the new sandals."
+          }
         }
       },
       "feedback": {
@@ -688,9 +899,31 @@
           "Phải thấy dép mòn thì cô bé mới nghĩ tới chuyện đi mua chứ.",
           "Cô bé đếm xu trước khi có hộp dép nhé, đừng đặt cảnh giấu quà lên trước.",
           "Cảnh bà cùng cháu đi dép mới là cái kết, để nó đứng cuối cùng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The right order! Big Claw Crab is so moved that he scuttles three steps straight ahead.",
+            "Four pictures link up into the whole story of the sandals.",
+            "You listened carefully! The sandal box hidden behind her back surprised Grandma, so warm."
+          ],
+          "wrong": [
+            "The girl has to see the worn sandals before she thinks of going to buy some.",
+            "The girl counts coins before there is a sandal box, so don't put the hiding scene first.",
+            "The scene of Grandma and her grandchild in the new sandals is the ending, so put it last."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Big Claw Crab tells the story of the sandals",
+        "prompt": "Big Claw Crab clears his throat, this time telling it forwards from the start: Once upon a time, a little girl lived with her grandma by a pond. Grandma's sandals were worn down at the heels, yet every morning she went out to the garden. Loving her grandma, the girl broke open her bamboo tube, counted out the coins, and asked Mum to take her to the market to buy a new pair of sandals. Back home, she hid the sandal box behind her back and stood waiting for Grandma at the gate. Grandma slipped the sandals on, her steps lighter, and took her granddaughter's hand to go out into the garden. Now put the four pictures in the order of the story!",
+        "items": [
+          "The girl hides the box of sandals behind her back, waiting for Grandma at the gate",
+          "Grandma goes to the garden in sandals with worn-down heels",
+          "Grandma wears the new sandals and holds her grandchild's hand to the garden",
+          "The girl empties the bamboo tube and counts every coin"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-ba-chau",
@@ -855,5 +1088,9 @@
       "ke-chuyen": 2,
       "tu-ngu": 1
     }
+  },
+  "en": {
+    "title": "The Marks on the Hut Door",
+    "summary": "Big Claw Crab scuttles sideways back to the old hut by the lotus pond of the hamlet, looking for the height marks Grandma made long ago. {name} and Crab read the poem about charcoal marks on the house pillar, hunt for action words, hear Crab tell the story of Grandma's sandals, and meet Grandma Brown Bear, who still remembers Crab's grandma from the old days."
   }
 }

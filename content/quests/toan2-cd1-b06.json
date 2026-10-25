@@ -94,7 +94,11 @@
         "toan2-cd1-ve-do",
         "toan2-cd1-ve-tim",
         "toan2-cd1-ve-cam"
-      ]
+      ],
+      "en": {
+        "title": "Three fair tickets",
+        "goTo": "Find the three fair tickets that blew around the games corner"
+      }
     },
     {
       "id": "luat-hoi-cho",
@@ -407,6 +411,17 @@
         "answer": {
           "text": "Dải 1: 27, 30, 31, 33; dải 2: 67, 69, 72, 73, 75; bảng: 29–31, 88–90, 51–53",
           "explanation": "Hai vạch kề nhau hơn kém đúng 1 đơn vị; qua 29 sang 30 và qua 69 sang 70 thì chữ số hàng chục tăng lên."
+        },
+        "en": {
+          "guide": [
+            "On a number-line strip, one mark to the right adds 1.",
+            "In the table, the left column takes away 1 and the right column adds 1."
+          ],
+          "hint": "After 29 comes 30, and before 30 comes 29.",
+          "answer": {
+            "text": "Strip 1: 27, 30, 31, 33; strip 2: 67, 69, 72, 73, 75; table: 29–31, 88–90, 51–53",
+            "explanation": "Two neighbouring marks differ by exactly 1; going from 29 to 30 and from 69 to 70, the tens digit goes up."
+          }
         }
       },
       "feedback": {
@@ -419,7 +434,19 @@
           "Dò từng vạch một, mỗi vạch chỉ hơn vạch trước đúng 1.",
           "Liền trước của 30 là số có 2 chục đấy.",
           "Một ô đang nhảy cóc mất một số, xem lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The first stall is passed, and Cheeky Fox stamps a fox tail on the ticket.",
+            "The strips run smoothly and the neighbour table is full, so neat.",
+            "You crossed from 69 to 70 without blinking, so super."
+          ],
+          "wrong": [
+            "Check one mark at a time; each mark is exactly 1 more than the one before.",
+            "The number just before 30 has 2 tens.",
+            "One box has skipped a number, so look again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -457,7 +484,12 @@
         "b14": "52 - 1",
         "b15": "52 + 1"
       },
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Number strip and neighbour table",
+        "goTo": "Enter the neighbour-number stall, where two number-line strips hang on the wall",
+        "prompt": "The first stall has two number-line strips with bits stuck over them and a neighbour table. Fill in the covered numbers again."
+      }
     },
     {
       "id": "gian-tach-so",
@@ -684,6 +716,17 @@
         "answer": {
           "text": "64 = 60 + 4; 79 = 70 + 9; 47 = 40 + 7; 82 = 80 + 2; 26 = 20 + 6; 63 = 60 + 3; 95 = 90 + 5; 48 = 40 + 8",
           "explanation": "Phần chục viết thành số tròn chục, phần còn lại là số đơn vị: 64 là 60 và 4, 79 là 70 và 9, 47 là 40 và 7, 82 là 80 và 2."
+        },
+        "en": {
+          "guide": [
+            "The tens digit tells you the whole ten.",
+            "The units digit stands alone in the second part."
+          ],
+          "hint": "79 is made of 7 tens and 9 units: 70 + 9.",
+          "answer": {
+            "text": "64 = 60 + 4; 79 = 70 + 9; 47 = 40 + 7; 82 = 80 + 2; 26 = 20 + 6; 63 = 60 + 3; 95 = 90 + 5; 48 = 40 + 8",
+            "explanation": "Write the tens as a whole ten, and the rest is the units: 64 is 60 and 4, 79 is 70 and 9, 47 is 40 and 7, 82 is 80 and 2."
+          }
         }
       },
       "feedback": {
@@ -696,7 +739,19 @@
           "Phần chục phải là số tròn chục, như 70 chứ không phải 7.",
           "Cộng hai phần lại xem có bằng số ban đầu không.",
           "63 = ? + 3: phần còn thiếu là 6 chục đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You split numbers as sweetly as pulling apart grapefruit segments, and Cheeky Fox drools.",
+            "Tens go with tens and units with units, with no mix-up at all.",
+            "The second stall is done, and your ticket gets another fox-tail stamp."
+          ],
+          "wrong": [
+            "The tens part must be a whole ten, like 70 and not 7.",
+            "Add the two parts to see whether they equal the original number.",
+            "63 = ? + 3: the missing part is 6 tens."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -728,7 +783,12 @@
         "b11": "? + 5 = 95",
         "b12": "40 + ? = 48"
       },
-      "objective": "so-den-100-chuc-don-vi"
+      "objective": "so-den-100-chuc-don-vi",
+      "en": {
+        "title": "Splitting Stall",
+        "goTo": "Go over to the splitting stall, where Cheeky Fox has laid out pens and little boards",
+        "prompt": "The second stall asks you to split numbers into whole tens plus units. Cheeky Fox does 31 as the sample, and you finish the rest."
+      }
     },
     {
       "id": "xe-dua-be-den-lon",
@@ -766,6 +826,17 @@
         "answer": {
           "text": "32, 41, 53, 56",
           "explanation": "3 chục < 4 chục < 5 chục; hai số 53 và 56 cùng 5 chục nên so tiếp đơn vị 3 < 6."
+        },
+        "en": {
+          "guide": [
+            "Compare the tens digits first, and if they are equal, compare the units.",
+            "The car with the smallest number stands at the front of the line."
+          ],
+          "hint": "53 and 56 both have 5 tens; 3 is less than 6.",
+          "answer": {
+            "text": "32, 41, 53, 56",
+            "explanation": "3 tens < 4 tens < 5 tens; 53 and 56 both have 5 tens, so compare the units: 3 < 6."
+          }
         }
       },
       "feedback": {
@@ -778,7 +849,19 @@
           "Xe mang số bé nhất phải đứng đầu hàng nhé.",
           "53 và 56 cùng hàng chục, so tiếp hàng đơn vị.",
           "Lần này xếp từ bé đến lớn chứ không phải ngược lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Vroom vroom! The four cars take the starting line in the right order.",
+            "Car 32 is the smallest and leads the way, and car 56 brings up the rear, perfect!",
+            "Cheeky Fox waves a chequered flag: you line up cars like a professional."
+          ],
+          "wrong": [
+            "The car with the smallest number must stand at the front of the line.",
+            "53 and 56 have the same tens, so compare the units next.",
+            "This time we go from smallest to biggest, not the other way round."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -788,7 +871,18 @@
           "xe-56"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Race Car Stall",
+        "goTo": "Run to the race car stall, where four toy cars are revving their engines",
+        "prompt": "Four race cars are parked in a jumble, and each wants to be first. Put the numbers on the cars in order from smallest to biggest.",
+        "items": [
+          "53",
+          "32",
+          "56",
+          "41"
+        ]
+      }
     },
     {
       "id": "tong-xe-dua",
@@ -807,6 +901,17 @@
         "answer": {
           "text": "88",
           "explanation": "56 + 32 = 88."
+        },
+        "en": {
+          "guide": [
+            "The biggest number is 56 and the smallest is 32.",
+            "Add those two numbers."
+          ],
+          "hint": "56 + 32.",
+          "answer": {
+            "text": "88",
+            "explanation": "56 + 32 = 88."
+          }
         }
       },
       "feedback": {
@@ -819,13 +924,30 @@
           "Tìm đúng xe lớn nhất và xe bé nhất trước nhé.",
           "Lần này là cộng, nên mình làm phép cộng.",
           "Hàng đơn vị: 6 cộng 2 bằng mấy?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The sum is 88, and the first car and the last car give each other a high five.",
+            "You picked the biggest car and the smallest car and added them, nice and neat.",
+            "The stopwatch hadn't even started and you were done."
+          ],
+          "wrong": [
+            "Find the biggest car and the smallest car first.",
+            "This time it is adding, so do an addition.",
+            "In the units: what is 6 plus 2?"
+          ]
+        }
       },
       "answer": {
         "value": 88
       },
       "expression": "56 + 32",
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "Total of two cars",
+        "goTo": "Stop by the candy-floss cart, where Uncle Phúc sets a puzzle about the sum of two race cars",
+        "question": "The four race cars carry the numbers 53, 32, 56, 41. What do you get when you add the biggest of the numbers on the cars to the smallest?"
+      }
     },
     {
       "id": "cay-hai-lop",
@@ -844,6 +966,17 @@
         "answer": {
           "text": "5 cây",
           "explanation": "47 – 42 = 5, vườn rau trồng hơn vườn hoa 5 cây."
+        },
+        "en": {
+          "guide": [
+            "To find how many plants the two gardens differ by, take the smaller number of plants from the bigger one.",
+            "The vegetable garden planted more."
+          ],
+          "hint": "47 – 42.",
+          "answer": {
+            "text": "5 plants",
+            "explanation": "47 – 42 = 5, so the vegetable garden planted 5 more than the flower garden."
+          }
         }
       },
       "feedback": {
@@ -856,13 +989,30 @@
           "Lấy số cây vườn rau trừ số cây vườn hoa nhé.",
           "Chỉ cần trừ hàng đơn vị: 7 bớt 2.",
           "Hỏi hơn bao nhiêu chứ không hỏi tất cả bao nhiêu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "5 more plants, and the vegetable garden is given an extra watering can.",
+            "Bigger number take away smaller number, and you remembered the way exactly.",
+            "Cheeky Fox plants a seedling in the corner of the fair at once."
+          ],
+          "wrong": [
+            "Take the flower garden's number of plants away from the vegetable garden's.",
+            "You only need to subtract the units: 7 take away 2.",
+            "It asks how many more, not how many altogether."
+          ]
+        }
       },
       "answer": {
         "value": 5
       },
       "expression": "47 - 42",
-      "objective": "bai-toan-co-loi-van-hon-kem"
+      "objective": "bai-toan-co-loi-van-hon-kem",
+      "en": {
+        "title": "The green plant prize",
+        "goTo": "Back to the race car stall, where a green-tree prize board has just been put up",
+        "question": "The prize of the race car stall is saplings for the school's two gardens. The vegetable garden planted 47 plants and the flower garden planted 42. How many more plants did the vegetable garden plant than the flower garden?"
+      }
     },
     {
       "id": "cao-lem-ra-cua",
@@ -940,6 +1090,17 @@
         "answer": {
           "text": "Tổng là bốn mươi tám",
           "explanation": "41 + 7 = 48, đó là chiếc chìa khóa của cửa thứ nhất."
+        },
+        "en": {
+          "guide": [
+            "The sum is the result of an addition.",
+            "Add 41 and 7."
+          ],
+          "hint": "1 + 7 = 8, and the tens stay as 4.",
+          "answer": {
+            "text": "The sum is forty-eight",
+            "explanation": "41 + 7 = 48, and that is the key to the first door."
+          }
         }
       },
       "feedback": {
@@ -952,13 +1113,34 @@
           "Tổng là cộng chứ không phải trừ nhé.",
           "Số 7 cộng vào hàng đơn vị, không cộng vào hàng chục.",
           "Cửa vẫn đóng, tính lại 41 + 7 xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Creak... click! The first door swings wide open.",
+            "The sum is 48, and you chose correctly.",
+            "Cheeky Fox mutters: it's the easiest door, hmph."
+          ],
+          "wrong": [
+            "A sum means adding, not subtracting.",
+            "The 7 is added to the units, not to the tens.",
+            "The door is still shut, so work out 41 + 7 again."
+          ]
+        }
       },
       "answer": {
         "choice": "b-48"
       },
       "expression": "41 + 7",
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "First Door",
+        "prompt": "The first door creaks, and written on it is: what is the sum of 41 and 7?",
+        "choices": [
+          "34",
+          "48",
+          "58"
+        ]
+      }
     },
     {
       "id": "cua-thu-hai",
@@ -992,6 +1174,17 @@
         "answer": {
           "text": "Hiệu là ba mươi lăm",
           "explanation": "68 – 33 = 35, đó là chìa khóa của cửa thứ hai."
+        },
+        "en": {
+          "guide": [
+            "The difference is the result of a subtraction.",
+            "Take 33 away from 68."
+          ],
+          "hint": "8 – 3 = 5 and 6 – 3 = 3.",
+          "answer": {
+            "text": "The difference is thirty-five",
+            "explanation": "68 – 33 = 35, and that is the key to the second door."
+          }
         }
       },
       "feedback": {
@@ -1004,13 +1197,35 @@
           "Hiệu là trừ, đừng cộng hai số lại nhé.",
           "Trừ hàng đơn vị: 8 bớt 3 còn 5.",
           "35 hay 36? Tính lại thật chậm xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ting-a-ling! The wind chimes ring out the difference 35.",
+            "The difference means subtracting, and the number 101 didn't tempt you.",
+            "Door two opens, and Wobbly Fox rings the chimes in praise."
+          ],
+          "wrong": [
+            "The difference is a subtraction, so don't add the two numbers.",
+            "Subtract the units: 8 take away 3 leaves 5.",
+            "35 or 36? Work it out again, very slowly."
+          ]
+        }
       },
       "answer": {
         "choice": "c-35"
       },
       "expression": "68 - 33",
-      "objective": "thanh-phan-phep-tinh-phep-tru"
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "en": {
+        "title": "Second Door",
+        "goTo": "Go to the wind-chime rack, where Wobbly Fox keeps the key to the second door",
+        "prompt": "The second door is hung all over with wind chimes, and written on it is: what is the difference of 68 and 33?",
+        "choices": [
+          "101",
+          "36",
+          "35"
+        ]
+      }
     },
     {
       "id": "cua-thu-ba",
@@ -1043,6 +1258,17 @@
         "answer": {
           "text": "Sáu mươi chín",
           "explanation": "70 – 1 = 69, vì số liền trước của 70 là 69."
+        },
+        "en": {
+          "guide": [
+            "Counting back means taking away 1 each time.",
+            "The next number is the number just before 70."
+          ],
+          "hint": "The number just before 70 goes back into the previous ten.",
+          "answer": {
+            "text": "Sixty-nine",
+            "explanation": "70 – 1 = 69, because the number just before 70 is 69."
+          }
         }
       },
       "feedback": {
@@ -1055,13 +1281,34 @@
           "Đếm lùi là bớt 1, không phải thêm 1.",
           "Liền trước của 70 có 6 chục, không phải 7 chục.",
           "60 là bớt tới 10 rồi, mỗi bước chỉ bớt 1 thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The number 69! The purple door swings open and a bunch of balloons spills out.",
+            "You crossed back over the ten without a slip, a steady counter-back.",
+            "Wobbly Fox scratches his head: Cheeky Fox thought about that question for ages."
+          ],
+          "wrong": [
+            "Counting back means taking away 1, not adding 1.",
+            "The number just before 70 has 6 tens, not 7 tens.",
+            "60 goes back a whole 10, but each step takes away only 1."
+          ]
+        }
       },
       "answer": {
         "choice": "c-69"
       },
       "expression": "70 - 1",
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Third Door",
+        "prompt": "The third door is painted purple, with big writing: counting back 72, 71, 70, what number comes next?",
+        "choices": [
+          "60",
+          "71",
+          "69"
+        ]
+      }
     },
     {
       "id": "cua-thu-tu",
@@ -1095,6 +1342,17 @@
         "answer": {
           "text": "Một trăm",
           "explanation": "99 + 1 = 100, vì số liền sau của 99 là 100."
+        },
+        "en": {
+          "guide": [
+            "Counting on means adding 1 each time.",
+            "The next number is the number just after 99."
+          ],
+          "hint": "The number just after 99 becomes a three-digit number.",
+          "answer": {
+            "text": "One hundred",
+            "explanation": "99 + 1 = 100, because the number just after 99 is 100."
+          }
         }
       },
       "feedback": {
@@ -1107,13 +1365,35 @@
           "Mỗi lần đếm xuôi chỉ thêm 1 thôi.",
           "99 vẫn đang là số đã đọc rồi, cần số tiếp theo.",
           "110 là nhảy quá xa, thêm đúng 1 thôi nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A full one hundred! The golden-star door swings open.",
+            "All four doors are open, and Cheeky Fox has to respect you now.",
+            "99 plus 1 is 100, and you remembered so well."
+          ],
+          "wrong": [
+            "Each time you count on, you add just 1.",
+            "99 has already been said; you need the next number.",
+            "110 jumps too far, so add exactly 1."
+          ]
+        }
       },
       "answer": {
         "choice": "c-100"
       },
       "expression": "99 + 1",
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Fourth Door",
+        "goTo": "Back at the four-door stall, Cheeky Fox is standing in front of the golden-star door",
+        "prompt": "The last door has a golden star stuck on it: Cheeky Fox counts on 97, 98, 99, and what number comes next?",
+        "choices": [
+          "99",
+          "110",
+          "100"
+        ]
+      }
     },
     {
       "id": "ghep-the-0-3-5",
@@ -1171,6 +1451,17 @@
         "answer": {
           "text": "40, 47, 70, 74",
           "explanation": "Thẻ 4 đứng đầu cho 40 và 47, thẻ 7 cho 70 và 74; 04 và 07 không phải số hai chữ số, còn 44 và 77 cần dùng một thẻ hai lần."
+        },
+        "en": {
+          "guide": [
+            "Each card is used only once in a number, never twice.",
+            "Card 0 cannot come first in a two-digit number."
+          ],
+          "hint": "Card 4 first makes 40 and 47.",
+          "answer": {
+            "text": "40, 47, 70, 74",
+            "explanation": "Card 4 first makes 40 and 47, and card 7 makes 70 and 74; 04 and 07 are not two-digit numbers, and 44 and 77 would use one card twice."
+          }
         }
       },
       "feedback": {
@@ -1183,7 +1474,19 @@
           "Thẻ 0 đứng đầu thì không thành số hai chữ số.",
           "Mỗi tấm thẻ chỉ có một chiếc, không dùng hai lần được.",
           "Còn sót một số có thẻ 7 đứng đầu đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four numbers are found, and you didn't fall into the trap of card 0 coming first.",
+            "Cheeky Fox collects the cards, looking as glum as a cat who lost its fish.",
+            "Each card is used exactly once, and you paired them so well."
+          ],
+          "wrong": [
+            "A number that starts with 0 does not count as a two-digit number.",
+            "You only have one copy of each card, so repeating a card is not allowed.",
+            "You missed a number with card 7 first."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1193,7 +1496,23 @@
           "o74"
         ]
       },
-      "objective": "so-den-100-doc-viet-dem"
+      "objective": "so-den-100-doc-viet-dem",
+      "en": {
+        "title": "Number Card Stall",
+        "goTo": "Go to the number card stall, where three cards lie on the table",
+        "prompt": "Cheeky Fox flips over three number cards, 0, 4 and 7. Each two-digit number is made from two different cards; choose every number you can make.",
+        "choices": [
+          "40",
+          "47",
+          "70",
+          "74",
+          "04",
+          "07",
+          "44",
+          "77",
+          "407"
+        ]
+      }
     },
     {
       "id": "hieu-the-so",
@@ -1212,6 +1531,17 @@
         "answer": {
           "text": "34",
           "explanation": "74 – 40 = 34."
+        },
+        "en": {
+          "guide": [
+            "The biggest number made is 74 and the smallest is 40.",
+            "Take the smallest away from the biggest."
+          ],
+          "hint": "74 – 40.",
+          "answer": {
+            "text": "34",
+            "explanation": "74 – 40 = 34."
+          }
         }
       },
       "feedback": {
@@ -1224,13 +1554,30 @@
           "Lấy số lớn nhất 74 trừ số bé nhất 40 nhé.",
           "Lần này là trừ, đừng cộng lại.",
           "Hàng đơn vị của 74 giữ nguyên là 4."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The difference is 34, and the number cards line up by themselves to greet you.",
+            "Subtracting whole tens only changes the tens, and you know the trick now.",
+            "One more fox-tail stamp for your ticket."
+          ],
+          "wrong": [
+            "Take the smallest, 40, away from the biggest, 74.",
+            "This time it is subtracting, so don't add.",
+            "The units digit of 74 stays as 4."
+          ]
+        }
       },
       "answer": {
         "value": 34
       },
       "expression": "74 - 40",
-      "objective": "thanh-phan-phep-tinh-phep-tru"
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "en": {
+        "title": "Differences of the numbers just matched",
+        "goTo": "Take the four numbers you made to the candy-floss cart for Uncle Phúc",
+        "question": "The four numbers you just made from the cards 0, 4 and 7 differ by the most how many units, that is, how much more is the biggest number than the smallest?"
+      }
     },
     {
       "id": "dau-so-sanh-hoi-cho",
@@ -1321,6 +1668,17 @@
         "answer": {
           "text": "46 + 3 < 52; 76 – 4 > 70; 65 – 23 = 40 + 2; 31 + 56 < 98 – 10",
           "explanation": "49 < 52; 72 > 70; 42 = 42; 87 < 88."
+        },
+        "en": {
+          "guide": [
+            "Work out each side first, and only then compare.",
+            "If the two sides are equal, put the sign =."
+          ],
+          "hint": "65 – 23 = 42 and 40 + 2 = 42.",
+          "answer": {
+            "text": "46 + 3 < 52; 76 – 4 > 70; 65 – 23 = 40 + 2; 31 + 56 < 98 – 10",
+            "explanation": "49 < 52; 72 > 70; 42 = 42; 87 < 88."
+          }
         }
       },
       "feedback": {
@@ -1333,7 +1691,19 @@
           "Tính cả hai vế trước khi chọn dấu nhé.",
           "Mũi nhọn của dấu chĩa về phía vế có kết quả bé hơn.",
           "65 – 23 và 40 + 2 có bằng nhau không nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four signs in neat order, and Cheeky Fox's pocket is empty.",
+            "Working out both sides and then comparing is the champion's way.",
+            "Even the equals sign didn't trouble you."
+          ],
+          "wrong": [
+            "Work out both sides before choosing the sign.",
+            "The point of the sign faces the side with the smaller result.",
+            "Are 65 – 23 and 40 + 2 equal?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1349,7 +1719,12 @@
         "b3": "65 - 23 ? 40 + 2",
         "b4": "31 + 56 ? 98 - 10"
       },
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Which sign fits?",
+        "goTo": "Back to the number card stall, where Cheeky Fox still has a few signs hidden in his pocket",
+        "prompt": "The last puzzle at the number card stall: Cheeky Fox has hidden three kinds of signs in his pocket. Choose the right sign for each comparison."
+      }
     },
     {
       "id": "dua-ong-ve-to",
@@ -1593,6 +1968,17 @@
         "answer": {
           "text": "Kết quả các ô theo thứ tự: 44, 50, 34, 12, 46, 40, 49, 80, 84, 77, 65, 8, 78",
           "explanation": "Mỗi ô chỉ có một phép tính đúng; kết quả các ô là 44, 50, 34, 12, 46, 40, 49, 80, 84, 77, 65, 8, 78."
+        },
+        "en": {
+          "guide": [
+            "Work out the sum on each square before choosing.",
+            "Cheeky Fox likes to prompt an answer that is off by 1 or by 10, so be careful."
+          ],
+          "hint": "Square 1: 30 + 14, units 0 + 4 = 4, tens 3 + 1 = 4.",
+          "answer": {
+            "text": "The results of the squares in order: 44, 50, 34, 12, 46, 40, 49, 80, 84, 77, 65, 8, 78",
+            "explanation": "Each square has only one correct sum; the results of the squares are 44, 50, 34, 12, 46, 40, 49, 80, 84, 77, 65, 8, 78."
+          }
         }
       },
       "feedback": {
@@ -1605,7 +1991,19 @@
           "Ối, ô này nêu sai rồi, ong phải lùi về ô cũ.",
           "Cáo Lém lại nhắc lệch 10 đấy, tính lại hàng chục nhé.",
           "Kiểm tra hàng đơn vị của ô vừa chọn xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Whoosh! The wooden bee flies straight home, and you win the game.",
+            "Not one square tricked you, and Cheeky Fox has to wave the white flag.",
+            "Honey Bear Nhi gives you a spoonful of sweet honey."
+          ],
+          "wrong": [
+            "Oops, this square was called wrong, and the bee must go back a square.",
+            "Cheeky Fox prompted an answer off by 10 again, so work out the tens once more.",
+            "Check the units of the square you just chose."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1624,7 +2022,12 @@
           "b13": "o4236bang78"
         }
       },
-      "objective": "cong-tru-khong-nho-dat-tinh"
+      "objective": "cong-tru-khong-nho-dat-tinh",
+      "en": {
+        "title": "Bring the bees home",
+        "goTo": "Go to the bee board game, where Honey Bear Nhi and Cheeky Fox are already on the starting square",
+        "prompt": "Honey Bear Nhi sets out a bee board game of thirteen squares. You and Cheeky Fox take turns rolling the dice and stepping to the matching square; whichever square you land on, you must say the right answer to the sum on it, and if you say it wrong, you go back to where you were. The two squares with a bee are lucky squares. On each square Cheeky Fox likes to prompt the wrong answer to trick you, so choose the sum with the correct result."
+      }
     },
     {
       "id": "huy-hieu-hoi-cho",
@@ -1657,5 +2060,9 @@
       "phep-cong": 1,
       "so-sanh-so": 1
     }
+  },
+  "en": {
+    "title": "Cheeky Fox's Number Fair",
+    "summary": "Cheeky Fox promises no more tricks and opens a proper number fair in the folk games corner. {name} visits each puzzle stall, stops by Uncle Phúc's candy-floss cart and Wobbly Fox's wind-chime rack, then plays \"Bring the Bee Home\" against Cheeky Fox and Honey Bear Nhi."
   }
 }

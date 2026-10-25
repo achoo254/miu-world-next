@@ -94,7 +94,11 @@
         "toan2-cd5-thuoc-ke",
         "toan2-cd5-but-chi",
         "toan2-cd5-hop-sao-giay"
-      ]
+      ],
+      "en": {
+        "title": "Find Giraffe's drawing things",
+        "goTo": "Find the ruler, the pencil and the box of paper stars around the big easel"
+      }
     },
     {
       "id": "diem-la-cham-nho",
@@ -213,6 +217,17 @@
         "answer": {
           "text": "Điểm: P, Q, R, S, K, L; Đoạn thẳng: PQ, RS",
           "explanation": "Hình có sáu điểm P, Q, R, S, K, L và hai đoạn thẳng PQ, RS. K và L chưa được nối nên KL không phải đoạn thẳng trong hình; hình cũng không có điểm T hay nét PR."
+        },
+        "en": {
+          "guide": [
+            "The two ends of a line segment are also points in the picture.",
+            "Only the strokes Giraffe drew straight with the ruler count as line segments."
+          ],
+          "hint": "Four of the points are the ends of the two line segments, plus the two lone points K and L.",
+          "answer": {
+            "text": "Points: P, Q, R, S, K, L; Line segments: PQ, RS",
+            "explanation": "The picture has six points P, Q, R, S, K, L and two line segments PQ, RS. K and L are not joined, so KL is not a line segment in the picture; there is no point T or stroke PR either."
+          }
         }
       },
       "feedback": {
@@ -225,7 +240,19 @@
           "Hai đầu của một đoạn thẳng cũng là điểm, đừng bỏ sót chúng nhé.",
           "K và L đã có nét nào nối với nhau chưa? Nhìn lại giá vẽ xem.",
           "Trong hình có điểm T không? Đối chiếu từng tên với bức vẽ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six points and two line segments all found their places, and Giraffe nods so hard she touches the ceiling!",
+            "You didn't fall for the trap of KL not being joined, sharp eyes.",
+            "The easel is starting to look like a constellation."
+          ],
+          "wrong": [
+            "The two ends of a line segment are points too, so don't leave them out.",
+            "Is there any stroke joining K and L? Look at the easel again.",
+            "Is there a point T in the picture? Check each name against the painting."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -242,7 +269,11 @@
           "ten-pr": "nhom-khong-co-trong-hinh"
         }
       },
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Point or line segment?",
+        "prompt": "Giraffe draws line segment PQ and line segment RS on the easel, then dots two more points, K and L, standing alone and not joined. Sort each name into the right group: a point, a line segment, or not in the picture."
+      }
     },
     {
       "id": "canh-chom-sao-tam-giac",
@@ -279,6 +310,17 @@
         "answer": {
           "text": "XY, YZ, XZ",
           "explanation": "Ba đoạn thẳng là XY, YZ, XZ. XYZ là tên của cả hình tam giác, chứ không phải của một đoạn thẳng."
+        },
+        "en": {
+          "guide": [
+            "Each side of a triangle is a line segment.",
+            "A line segment is named with two letters, the names of its two ends."
+          ],
+          "hint": "A triangle has three sides, so three line segments.",
+          "answer": {
+            "text": "XY, YZ, XZ",
+            "explanation": "The three line segments are XY, YZ, XZ. XYZ is the name of the whole triangle, not of a line segment."
+          }
         }
       },
       "feedback": {
@@ -291,7 +333,19 @@
           "Một đoạn thẳng chỉ cần hai chữ cái, không hơn.",
           "Tam giác có mấy cạnh nhỉ? Hình như còn thiếu một nét.",
           "Mỗi cạnh nối hai ngôi sao với nhau là một đoạn thẳng, đếm lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three sides light up like three shooting stars joined together!",
+            "Giraffe colours all three strokes golden at once.",
+            "XYZ is just the name of the whole shape, and you told them apart so neatly."
+          ],
+          "wrong": [
+            "A line segment needs just two letters, no more.",
+            "How many sides does a triangle have? One stroke seems to be missing.",
+            "Each side joining two stars is a line segment, count again."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -301,7 +355,18 @@
         ]
       },
       "goTo": "Sang góc bản đồ sao, Bác Ngân trải bản đồ, Hươu Cao thò cổ dài theo",
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Three-sided constellation",
+        "goTo": "Go to the star-map corner, where Uncle Ngân spreads out the map and Giraffe stretches her long neck after it",
+        "prompt": "Giraffe's first constellation has three stars X, Y, Z joined into a triangle. Choose every name that is a line segment in the picture.",
+        "choices": [
+          "XY",
+          "YZ",
+          "XZ",
+          "XYZ"
+        ]
+      }
     },
     {
       "id": "noi-chom-sao-gau",
@@ -346,6 +411,17 @@
         "answer": {
           "text": "KL, LM, MN",
           "explanation": "Đường đi qua bốn điểm K, L, M, N gồm ba đoạn thẳng KL, LM và MN."
+        },
+        "en": {
+          "guide": [
+            "Tap one star, then tap the next star to draw a line segment.",
+            "Go in the order K, L, M, N and don't turn back."
+          ],
+          "hint": "You only need three strokes: K to L, L to M, M to N.",
+          "answer": {
+            "text": "KL, LM, MN",
+            "explanation": "The path through the four points K, L, M, N is made of three line segments KL, LM and MN."
+          }
         }
       },
       "feedback": {
@@ -358,7 +434,19 @@
           "Có một nét đang nhảy cóc qua mất một ngôi sao.",
           "Đi theo thứ tự K, L, M, N thôi, đừng vòng ngược về K.",
           "Còn thiếu một nét để đi đủ bốn ngôi sao."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The zigzag constellation appears, and Giraffe cheers: it looks like a flying snake!",
+            "Three straight strokes, and none joined at random.",
+            "Uncle Ngân whistles: you join stars more neatly than I thread beads."
+          ],
+          "wrong": [
+            "One stroke is skipping over a star.",
+            "Just go in the order K, L, M, N, and don't loop back to K.",
+            "One stroke is still missing to pass through all four stars."
+          ]
+        }
       },
       "answer": {
         "edges": [
@@ -376,7 +464,11 @@
           ]
         ]
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Connect the second constellation",
+        "prompt": "The second constellation has four stars K, L, M, N in a zigzag. Draw the strokes one by one: K to L, L to M, then M to N."
+      }
     },
     {
       "id": "ten-doan-chom-sao",
@@ -417,6 +509,17 @@
         "answer": {
           "text": "KL, LM, MN",
           "explanation": "Các đoạn thẳng là KL, LM, MN. KM không được kẻ; KLMN là tên của cả con đường."
+        },
+        "en": {
+          "guide": [
+            "Each stroke you just drew is a line segment.",
+            "K and M are not joined directly."
+          ],
+          "hint": "You drew three strokes, so there are three line segments.",
+          "answer": {
+            "text": "KL, LM, MN",
+            "explanation": "The line segments are KL, LM, MN. KM was not drawn; KLMN is the name of the whole path."
+          }
         }
       },
       "feedback": {
@@ -429,7 +532,19 @@
           "Giữa K và M có nét kẻ thẳng nào không?",
           "KLMN là tên cả đường đi, chưa phải một đoạn thẳng.",
           "Đếm số nét đã kẻ rồi gọi tên từng nét."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three names match your three strokes of the pen!",
+            "Giraffe writes each name in the corner of the picture in slanting letters.",
+            "You didn't pick KM by mistake, your eyes are as bright as stars."
+          ],
+          "wrong": [
+            "Is there a straight stroke between K and M?",
+            "KLMN is the name of the whole path, not yet a line segment.",
+            "Count the strokes you drew, then name each one."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -439,7 +554,19 @@
         ]
       },
       "goTo": "Về giá vẽ lớn, Hươu Cao cúi cổ ngắm chòm sao vừa nối",
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Name each star stroke",
+        "goTo": "Back at the big easel, Giraffe bends her neck to admire the constellation you just joined",
+        "prompt": "Look at the constellation you just joined. Choose every name that is a line segment in the picture.",
+        "choices": [
+          "KL",
+          "LM",
+          "MN",
+          "KM",
+          "KLMN"
+        ]
+      }
     },
     {
       "id": "doc-thuoc-cua-khi",
@@ -495,6 +622,17 @@
         "answer": {
           "text": "GH dài 8 cm; KL dài 4 cm",
           "explanation": "Đầu của GH chạm vạch 8 nên GH dài 8 cm; đầu của KL chạm vạch 4 nên KL dài 4 cm."
+        },
+        "en": {
+          "guide": [
+            "When the 0 mark is at one end of the segment, the number at the other end is its length.",
+            "The mark just after 7 is 8, and the mark just before 5 is 4."
+          ],
+          "hint": "Read the number at the mark where the other end of the segment touches.",
+          "answer": {
+            "text": "GH is 8 cm long; KL is 4 cm long",
+            "explanation": "The end of GH touches the 8 mark, so GH is 8 cm long; the end of KL touches the 4 mark, so KL is 4 cm long."
+          }
         }
       },
       "feedback": {
@@ -507,7 +645,19 @@
           "Vạch ngay sau vạch 7 là vạch số mấy nhỉ?",
           "Nhớ đặt vạch 0 ở điểm đầu của đoạn thẳng, không phải vạch 1.",
           "Vạch ngay trước vạch 5 thì nhỏ hơn 5 đúng một đơn vị."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You read the ruler spot on, and White Fox wags his tail happily!",
+            "Both lengths are exact, and the ruler seems to glow.",
+            "Giraffe bends all the way down to the ruler table to watch {name} read the numbers."
+          ],
+          "wrong": [
+            "What number is the mark just after the 7 mark?",
+            "Remember to put the 0 mark at the start of the segment, not the 1 mark.",
+            "The mark just before 5 is exactly one less than 5."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -520,6 +670,11 @@
       "expression": {
         "b1": "7 + 1",
         "b2": "5 - 1"
+      },
+      "en": {
+        "title": "Read the number on the ruler",
+        "goTo": "Go to the ruler table, where White Fox has set a ruler under each line segment",
+        "prompt": "White Fox places the ruler under each line segment with the 0 mark on the left end. The right end of GH touches the mark just after 7; the right end of KL touches the mark just before 5. Read the length of each segment."
       }
     },
     {
@@ -645,6 +800,17 @@
         "answer": {
           "text": "Đường thẳng: UV, WZ; Đường cong: x, y",
           "explanation": "Các đường thẳng là UV và WZ; các đường cong là x và y."
+        },
+        "en": {
+          "guide": [
+            "A straight line is named after two points on it.",
+            "A winding curve is named with a small letter such as x or y."
+          ],
+          "hint": "UV and WZ are drawn with a ruler; x and y wind about.",
+          "answer": {
+            "text": "Straight lines: UV, WZ; Curves: x, y",
+            "explanation": "The straight lines are UV and WZ; the curves are x and y."
+          }
         }
       },
       "feedback": {
@@ -657,7 +823,19 @@
           "Nét nào kẻ được bằng thước thì là đường thẳng.",
           "x và y uốn éo như sợi dây, vậy chúng thuộc nhóm nào?",
           "Có một tên đang đứng nhầm nhóm, nhìn kĩ lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two straight beams and two winding trails, and the sky in the picture sparkles!",
+            "You tell straight from curved in a flash.",
+            "Giraffe paints a little crescent moon as your reward."
+          ],
+          "wrong": [
+            "Any stroke you can draw with a ruler is a straight line.",
+            "x and y wriggle like pieces of string, so which group are they in?",
+            "One name is standing in the wrong group, look again carefully."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -667,7 +845,11 @@
           "duong-wz": "nhom-duong-thang"
         }
       },
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Sort the shooting-star trails",
+        "prompt": "In the picture there is one straight line through two points U and V, another straight line through two points W and Z, and two curves named x and y. Sort each name into straight lines or curves."
+      }
     },
     {
       "id": "dung-sai-thang-hang",
@@ -696,6 +878,17 @@
         "answer": {
           "text": "Chỉ câu về O, P, Q là đúng",
           "explanation": "O, P, Q cùng nằm trên một mép thước nên thẳng hàng; T nằm ngoài đường thẳng qua R, S nên R, S, T không thẳng hàng."
+        },
+        "en": {
+          "guide": [
+            "Three points are in a row when they all lie on one straight line.",
+            "Lay the ruler through two points and see whether the third point is on the edge."
+          ],
+          "hint": "Point T sits off the edge of the first ruler.",
+          "answer": {
+            "text": "Only the statement about O, P, Q is true",
+            "explanation": "O, P, Q all lie along one ruler edge, so they are in a row; T is off the line through R and S, so R, S, T are not in a row."
+          }
         }
       },
       "feedback": {
@@ -708,7 +901,19 @@
           "Điểm T có nằm trên mép thước thứ nhất không nhỉ?",
           "Ba điểm thẳng hàng phải cùng nằm trên một đường thẳng.",
           "Thử áp thước vào câu nói còn lại xem nó có đúng không."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The stray point T was spotted at once!",
+            "Three points on one ruler edge stand in line like three guards.",
+            "White Fox puts the rulers back in the box: you've got this one down."
+          ],
+          "wrong": [
+            "Is point T on the edge of the first ruler?",
+            "Three points in a row must all lie on one straight line.",
+            "Try pressing the ruler against the other statement and see whether it is true."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -716,7 +921,16 @@
         ]
       },
       "goTo": "Chạy sang bàn thước kẻ, Cáo Bạch đang xếp hai cây thước song song",
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Three points on the edge of the ruler",
+        "goTo": "Run over to the ruler table, where White Fox is lining up two rulers side by side",
+        "prompt": "White Fox lays down two rulers. The edge of the first ruler passes through two points R and S, while point T sits off to the side of the edge. Along the edge of the second ruler there are three points O, P, Q. Choose the true statements; any you do not choose are false.",
+        "choices": [
+          "The three points R, S, T are in a row.",
+          "The three points O, P, Q are in a row."
+        ]
+      }
     },
     {
       "id": "bo-ba-thang-hang",
@@ -757,6 +971,17 @@
         "answer": {
           "text": "D, L, K; E, K, F",
           "explanation": "D, L, K cùng nằm trên đoạn DK; E, K, F cùng nằm trên cạnh EF. Ba đỉnh D, E, F của tam giác không thẳng hàng."
+        },
+        "en": {
+          "guide": [
+            "Look for points that lie on the same line segment.",
+            "L lies on DK, and K lies on EF."
+          ],
+          "hint": "There are two sets: one along segment DK and one along side EF.",
+          "answer": {
+            "text": "Answers: D, L, K; E, K, F",
+            "explanation": "D, L, K all lie on segment DK; E, K, F all lie on side EF. The three corners D, E, F of the triangle are not in a row."
+          }
         }
       },
       "feedback": {
@@ -769,7 +994,19 @@
           "Ba đỉnh của hình tam giác không cùng nằm trên một đường thẳng.",
           "Còn một bộ ba nằm dọc cạnh EF chưa được chọn.",
           "L có nằm trên cạnh EF không? Xem lại hình nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two sets of three in a row, and you found them all without missing one!",
+            "You even spotted point L hiding in the middle of segment DK, sharp-eyed indeed.",
+            "Giraffe bows her neck very low to clap for {name}."
+          ],
+          "wrong": [
+            "The three corners of a triangle do not lie on one straight line.",
+            "One set along side EF has not been chosen yet.",
+            "Is L on side EF? Look at the picture again."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -778,7 +1015,19 @@
         ]
       },
       "goTo": "Về giá vẽ lớn, Hươu Cao vừa vẽ xong một hình tam giác to",
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Find the three points in a line",
+        "goTo": "Back at the big easel, where Giraffe has just finished a large triangle",
+        "prompt": "Giraffe draws triangle DEF, dots point K on side EF, draws line segment DK, then dots point L on segment DK. Choose every set of three points in a row in the picture.",
+        "choices": [
+          "D, L, K",
+          "E, K, F",
+          "D, E, F",
+          "D, L, F",
+          "E, L, K"
+        ]
+      }
     },
     {
       "id": "nhin-ra-san-truong",
@@ -823,5 +1072,9 @@
     "skillXp": {
       "hinh-phang": 2
     }
+  },
+  "en": {
+    "title": "Giraffe Draws the Constellations",
+    "summary": "Giraffe wants to paint a huge constellation on the easel in the castle's painting room, but her neck is so long that every dot lands crooked. {name} joins Giraffe, White Fox at the ruler table and Uncle Ngân at the star-map corner to name points, line segments, straight lines and curves and to spot three points in a row, then goes to the window with Marble Rabbit to look out over the shapes courtyard."
   }
 }

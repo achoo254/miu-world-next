@@ -96,7 +96,11 @@
         "toan2-cd2-bo-que-do",
         "toan2-cd2-bo-que-xanh",
         "toan2-cd2-ro-tao-nho"
-      ]
+      ],
+      "en": {
+        "title": "Pick up sticks around the flower stall",
+        "goTo": "Pick up two bundles of counting sticks and a small basket of apples around the Sunflower Stall"
+      }
     },
     {
       "id": "tach-cho-du-chuc",
@@ -306,6 +310,17 @@
         "answer": {
           "text": "a) Tính 9 + 8.; • Bước tách: 8 = 1 + 7; • 9 + 1 = 10; • 10 + 7 = 17; 9 + 8 = 17; b) Tính 8 + 7.; • Bước tách: 7 = 2 + 5; • 8 + 2 = 10; • 10 + 5 = 15; 8 + 7 = 15",
           "explanation": "9 + 8: tách 8 = 1 + 7, 9 + 1 = 10, 10 + 7 = 17. 8 + 7: tách 7 = 2 + 5, 8 + 2 = 10, 10 + 5 = 15."
+        },
+        "en": {
+          "guide": [
+            "9 needs 1 more to make 10; 8 needs 2 more to make 10.",
+            "Split the second number into the part that completes 10 and the part left over, then add 10 and the leftover part."
+          ],
+          "hint": "8 + 7: split 7 = 2 + 5, because 8 + 2 = 10, then 10 + 5 = 15.",
+          "answer": {
+            "text": "a) Work out 9 + 8.; • Splitting step: 8 = 1 + 7; • 9 + 1 = 10; • 10 + 7 = 17; 9 + 8 = 17; b) Work out 8 + 7.; • Splitting step: 7 = 2 + 5; • 8 + 2 = 10; • 10 + 5 = 15; 8 + 7 = 15",
+            "explanation": "9 + 8: split 8 = 1 + 7, 9 + 1 = 10, 10 + 7 = 17. 8 + 7: split 7 = 2 + 5, 8 + 2 = 10, 10 + 5 = 15."
+          }
         }
       },
       "feedback": {
@@ -318,7 +333,19 @@
           "Hỏi thử: 8 còn thiếu mấy để thành 10 nhỉ?",
           "Hai phần tách ra cộng lại phải đúng bằng số ban đầu.",
           "Đã đủ 10 thì chỉ còn cộng phần dư thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both hive cells have ten flowers now, and Golden Bee spins around buzzing with joy!",
+            "Make 10 first, then add the rest, as neat as bees stacking wax!",
+            "Golden Bee nods: you split numbers so cleverly."
+          ],
+          "wrong": [
+            "Try asking: how many more does 8 need to make 10?",
+            "The two parts you split off must add up to the original number.",
+            "Once you have 10, there is only the leftover part to add."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -343,6 +370,11 @@
         "b8": "8 + 2",
         "b10": "10 + 5",
         "b11": "8 + 7"
+      },
+      "en": {
+        "title": "Split to make ten",
+        "goTo": "Bring the counting sticks back to Golden Bee at the Sunflower Stall",
+        "prompt": "Golden Bee lays counting sticks on a sunflower leaf: split off part of the second number so the first number makes exactly 10, then add the rest."
       }
     },
     {
@@ -603,6 +635,17 @@
         "answer": {
           "text": "a) 8 + 3: đếm tiếp từ 8 được 9, 10, 11; 8 + 3 = 11; b) 9 + 4: tách 4 = 1 + 3; • 9 + 1 = 10; • 10 + 3 = 13; 9 + 4 = 13; c) 9 + 6: tách 6 = 1 + 5; • 9 + 1 = 10; • 10 + 5 = 15; 9 + 6 = 15",
           "explanation": "8 + 3: đếm 9, 10, 11 nên bằng 11. 9 + 4 = 10 + 3 = 13. 9 + 6: 6 = 1 + 5, 9 + 1 = 10, 10 + 5 = 15."
+        },
+        "en": {
+          "guide": [
+            "Counting on: start right after the bigger number, then count on one flower at a time.",
+            "9 + 6: split 6 into 1 and 5 so that 9 + 1 = 10."
+          ],
+          "hint": "When you add to 9, borrow 1 from the other number to fill the 9 first.",
+          "answer": {
+            "text": "a) 8 + 3: counting on from 8 gives 9, 10, 11; 8 + 3 = 11; b) 9 + 4: split 4 = 1 + 3; • 9 + 1 = 10; • 10 + 3 = 13; 9 + 4 = 13; c) 9 + 6: split 6 = 1 + 5; • 9 + 1 = 10; • 10 + 5 = 15; 9 + 6 = 15",
+            "explanation": "8 + 3: counting 9, 10, 11 gives 11. 9 + 4 = 10 + 3 = 13. 9 + 6: 6 = 1 + 5, 9 + 1 = 10, 10 + 5 = 15."
+          }
         }
       },
       "feedback": {
@@ -615,7 +658,19 @@
           "Đếm tiếp thì bắt đầu ngay sau số 8, là 9.",
           "Số 6 tách ra phải có một phần bằng 1 đó.",
           "Kiểm lại dòng 10 + ? xem phần còn lại là mấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Counting on or splitting, you get it right either way!",
+            "Golden Bee scribbles on a wing: when you add to 9, borrow 1 first!",
+            "The sunflowers nod and praise {name} for clever counting."
+          ],
+          "wrong": [
+            "When counting on, start right after 8, which is 9.",
+            "When you split 6, one part has to be 1.",
+            "Check the line 10 + ? to see what the leftover part is."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -644,6 +699,10 @@
         "b11": "9 + 1",
         "b13": "10 + 5",
         "b14": "9 + 6"
+      },
+      "en": {
+        "title": "Count on and split the number",
+        "prompt": "Golden Bee tries two ways: counting on flower by flower, or splitting the number to make 10."
       }
     },
     {
@@ -888,6 +947,17 @@
         "answer": {
           "text": "Thẻ 1: 6 + 5 = 11; Thẻ 2: 8 + 6 = 14; Thẻ 3: 9 + 7 = 16; Tính 5 + 8 theo cách 1 (tách 5 = 2 + 3): 8 + 2 = 10, rồi 10 + 3 = 13 | 5 + 8 = 13; Tính 5 + 8 theo cách 2 (tách 8 = 5 + 3): 5 + 5 = 10, rồi 10 + 3 = 13 | 5 + 8 = 13; Dãy ba số, tính từ trái sang phải:; 8 + 4 + 5 = 17; 7 + 2 + 6 = 15; 10 – 3 + 6 = 13; Đàn cò bên bờ kênh (8 con đang đậu, 5 con vừa bay tới). Số ? 8 + 5 = 13",
           "explanation": "6 + 5 = 11, 8 + 6 = 14, 9 + 7 = 16; 5 + 8 = 13 theo cả hai cách; 8 + 4 + 5 = 17, 7 + 2 + 6 = 15, 10 – 3 + 6 = 13; đàn cò có 8 + 5 = 13 con."
+        },
+        "en": {
+          "guide": [
+            "Way 1 splits the 5, way 2 splits the 8: the answer is still the same.",
+            "A row of three numbers is worked out from left to right."
+          ],
+          "hint": "8 + 4 + 5: do 8 + 4 = 12 first, then 12 + 5.",
+          "answer": {
+            "text": "Card 1: 6 + 5 = 11; Card 2: 8 + 6 = 14; Card 3: 9 + 7 = 16; Work out 5 + 8 by way 1 (split 5 = 2 + 3): 8 + 2 = 10, then 10 + 3 = 13 | 5 + 8 = 13; Work out 5 + 8 by way 2 (split 8 = 5 + 3): 5 + 5 = 10, then 10 + 3 = 13 | 5 + 8 = 13; Three numbers in a row, from left to right:; 8 + 4 + 5 = 17; 7 + 2 + 6 = 15; 10 – 3 + 6 = 13; The egrets by the canal (8 standing, 5 just flew in). Number? 8 + 5 = 13",
+            "explanation": "6 + 5 = 11, 8 + 6 = 14, 9 + 7 = 16; 5 + 8 = 13 both ways; 8 + 4 + 5 = 17, 7 + 2 + 6 = 15, 10 – 3 + 6 = 13; the flock has 8 + 5 = 13 egrets."
+          }
         }
       },
       "feedback": {
@@ -900,7 +970,19 @@
           "Dãy ba số thì làm phép tính đầu tiên trước nhé.",
           "10 – 3 là trừ đấy, đừng cộng nhầm nha.",
           "Cò đậu ghi trước, cò mới bay tới ghi sau."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Potato Cat claps: every card is as round and pretty as a flower!",
+            "Left to right without tripping on a single sum, well done!",
+            "The egrets call \"coo coo\" as if praising {name} for counting right."
+          ],
+          "wrong": [
+            "With three numbers, do the first sum first.",
+            "10 – 3 is a subtraction, so don't add by mistake.",
+            "Write the egrets standing first and the newly arrived ones second."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -932,6 +1014,11 @@
         "b9": "7 + 2 + 6",
         "b10": "10 - 3 + 6",
         "b13": "8 + 5"
+      },
+      "en": {
+        "title": "Calculation cards on the seed bags",
+        "goTo": "Go to the Seed Stall, where Uncle Cẩn is pinning sum cards onto every seed bag",
+        "prompt": "Uncle Cẩn's Potato Cat jumps onto the stall and curiously reads each sum card aloud. A flock of egrets by the canal is waiting to be counted too."
       }
     },
     {
@@ -1125,6 +1212,17 @@
         "answer": {
           "text": "Cánh hoa A, cộng với 7: 7 + 4 → 11 | 7 + 5 → 12 | 7 + 6 → 13 | 7 + 7 → 14 | 7 + 8 → 15 | 7 + 9 → 16; Cánh hoa B, cộng với 6: 6 + 5 → 11 | 6 + 6 → 12 | 6 + 7 → 13 | 6 + 8 → 14 | 6 + 9 → 15; Cánh hoa C, cộng với 5: 5 + 6 → 11 | 5 + 7 → 12 | 5 + 8 → 13 | 5 + 9 → 14",
           "explanation": "7 + 5 = 12, 7 + 6 = 13, 7 + 7 = 14, 7 + 8 = 15; 6 + 6 = 12, 6 + 7 = 13, 6 + 8 = 14, 6 + 9 = 15; 5 + 7 = 12, 5 + 8 = 13."
+        },
+        "en": {
+          "guide": [
+            "In each row, when the number you add goes up by 1, the answer goes up by 1 too.",
+            "The first box of each row already shows 11 as a starting mark."
+          ],
+          "hint": "The row adding 7: 11, 12, 13… just keep counting on.",
+          "answer": {
+            "text": "Petal A, adding 7: 7 + 4 → 11 | 7 + 5 → 12 | 7 + 6 → 13 | 7 + 7 → 14 | 7 + 8 → 15 | 7 + 9 → 16; Petal B, adding 6: 6 + 5 → 11 | 6 + 6 → 12 | 6 + 7 → 13 | 6 + 8 → 14 | 6 + 9 → 15; Petal C, adding 5: 5 + 6 → 11 | 5 + 7 → 12 | 5 + 8 → 13 | 5 + 9 → 14",
+            "explanation": "7 + 5 = 12, 7 + 6 = 13, 7 + 7 = 14, 7 + 8 = 15; 6 + 6 = 12, 6 + 7 = 13, 6 + 8 = 14, 6 + 9 = 15; 5 + 7 = 12, 5 + 8 = 13."
+          }
         }
       },
       "feedback": {
@@ -1137,7 +1235,19 @@
           "Kết quả trong một hàng tăng dần từng 1 đấy.",
           "Ô sau 6 + 8 trong hàng B là 6 + 9.",
           "Thử gom đủ 10 cho ô còn lấn cấn xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three rows of sums shimmering with pollen, pretty as a picture!",
+            "Every row grows steadily step by step, spot on.",
+            "Golden Bee wants to copy all three rows and stick them up in the hive."
+          ],
+          "wrong": [
+            "The answers in one row go up by 1 each time.",
+            "After 6 + 8 in row B comes 6 + 9.",
+            "Try making 10 for the box that is giving you trouble."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1165,6 +1275,11 @@
         "b8": "6 + 9",
         "b9": "5 + 7",
         "b10": "5 + 8"
+      },
+      "en": {
+        "title": "Two addition tables on the petals",
+        "goTo": "Go back to the Sunflower Stall, where Golden Bee is sprinkling pollen to draw addition tables",
+        "prompt": "Golden Bee writes three rows of sums on the sunflower petals with flower pollen, but the wind has swept a few boxes away. Fill in the missing numbers."
       }
     },
     {
@@ -1217,6 +1332,17 @@
         "answer": {
           "text": "8 + 4 – cá 12; 9 + 7 – cá 16; 6 + 7 – cá 13",
           "explanation": "8 + 4 = 12, 9 + 7 = 16, 6 + 7 = 13."
+        },
+        "en": {
+          "guide": [
+            "Work out the sum the kitten wears, then find the fish plate showing the answer.",
+            "The Fish 15 plate already has a sample kitten wearing 8 + 7."
+          ],
+          "hint": "9 + 7: make 9 + 1 = 10, 6 are left, so 16.",
+          "answer": {
+            "text": "8 + 4 – Fish 12; 9 + 7 – Fish 16; 6 + 7 – Fish 13",
+            "explanation": "8 + 4 = 12, 9 + 7 = 16, 6 + 7 = 13."
+          }
         }
       },
       "feedback": {
@@ -1229,7 +1355,19 @@
           "Có bạn mèo đang ôm nhầm đĩa cá của bạn khác rồi.",
           "Tính phép cộng trên cổ mèo trước khi chọn đĩa nha.",
           "8 + 4 chưa tới 13 đâu, đếm tiếp từ 8 xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Meow meow! The three kittens hug their plates, full and happy. Thank you, {name}!",
+            "Every kitten has the right plate, and nobody has to fight over one.",
+            "Potato Cat licks its lips: with counting this quick, lunch in the middle of the market is ready."
+          ],
+          "wrong": [
+            "One kitten is hugging another kitten's plate by mistake.",
+            "Work out the sum on the kitten's neck before choosing a plate.",
+            "8 + 4 is not up to 13 yet; count on from 8 and see."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1238,7 +1376,12 @@
           "meo-6-7": "nhom-ca-13"
         }
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Potato Cat picks fish",
+        "goTo": "Go to the Seed Stall, where three kittens are crowding round Uncle Cẩn's basket of dried fish",
+        "prompt": "Potato Cat is starving, and each of the three kittens wears a sum around its neck. Find the fish plate with exactly that number for each one."
+      }
     },
     {
       "id": "bo-mo-goi-sang",
@@ -1497,6 +1640,17 @@
         "answer": {
           "text": "a) Phép 6 + 7: lấy 4 của số 7 cho đủ 10, nên 6 + 7 = 10 + 3 = 13 |; Vậy 6 + 7 = 13; Sơ đồ tách: 7 = 4 + 3; b) Phép 6 + 9: lấy 4 của số 9 cho đủ 10, nên 6 + 9 = 10 + 5 = 15 |; Vậy 6 + 9 = 15; Sơ đồ tách: 9 = 4 + 5; c) Bé Mai chia 15 que tính thành hai nhóm. Em hãy điền số que ở nhóm 2:; Nhóm 1 | Nhóm 2; 10 | 5; 9 | 6; 8 | 7; 7 | 8",
           "explanation": "6 + 7 = 10 + 3 = 13; 6 + 9 = 10 + 5 = 15. Chia 15 que: 9 và 6, 8 và 7, 7 và 8."
+        },
+        "en": {
+          "guide": [
+            "6 needs 4 more to make 10, so the other number splits into 4 and the leftover.",
+            "Group 1 plus Group 2 must make exactly 15 sticks."
+          ],
+          "hint": "6 + 7: 7 = 4 + 3, 6 + 4 = 10, 10 + 3 = 13.",
+          "answer": {
+            "text": "a) Sum 6 + 7: take 4 from 7 to make 10, so 6 + 7 = 10 + 3 = 13 |; So 6 + 7 = 13; Splitting diagram: 7 = 4 + 3; b) Sum 6 + 9: take 4 from 9 to make 10, so 6 + 9 = 10 + 5 = 15 |; So 6 + 9 = 15; Splitting diagram: 9 = 4 + 5; c) Little Mai splits 15 sticks into two groups. Fill in the number of sticks in group 2:; Group 1 | Group 2; 10 | 5; 9 | 6; 8 | 7; 7 | 8",
+            "explanation": "6 + 7 = 10 + 3 = 13; 6 + 9 = 10 + 5 = 15. Sharing 15 sticks: 9 and 6, 8 and 7, 7 and 8."
+          }
         }
       },
       "feedback": {
@@ -1509,7 +1663,19 @@
           "6 cần thêm mấy để thành 10? Bắt đầu từ đó nhé.",
           "Hai nhóm cộng lại phải đúng 15 que đấy.",
           "Nhóm 1 càng ít thì nhóm 2 càng nhiều nha."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every diagram is filled in, and Auntie Thơm lets out a long sigh of relief.",
+            "The groups share exactly fifteen sticks, none left over and none missing!",
+            "If little Mai saw this, she would have to learn {name}'s way of sharing."
+          ],
+          "wrong": [
+            "How many more does 6 need to make 10? Start there.",
+            "The two groups together must make exactly 15 sticks.",
+            "The smaller Group 1 is, the bigger Group 2 gets."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1535,6 +1701,10 @@
         "b9": "15 - 9",
         "b10": "15 - 8",
         "b11": "15 - 7"
+      },
+      "en": {
+        "title": "Auntie Thơm's number-splitting diagram",
+        "prompt": "Counting sticks have fallen all over the chrysanthemum pots and the splitting diagrams are empty. Little Mai is also sitting beside them, sharing out sticks."
       }
     },
     {
@@ -1728,6 +1898,17 @@
         "answer": {
           "text": "a) Tính 9 + 6.; 9 + 6 = 15; Sơ đồ: 6 = 1 + 5; b) Tính 7 + 6.; 7 + 6 = 13; Sơ đồ: 6 = 3 + 3; c) Tính 8 + 4.; 8 + 4 = 12; Sơ đồ: 4 = 2 + 2; d) Tính 9 + 9.; 9 + 9 = 18; Sơ đồ: 9 = 1 + 8",
           "explanation": "9 + 6 = 15 (6 = 1 + 5); 7 + 6 = 13 (6 = 3 + 3); 8 + 4 = 12 (4 = 2 + 2); 9 + 9 = 18 (9 = 1 + 8)."
+        },
+        "en": {
+          "guide": [
+            "For 9 plus a number: split off 1 for the 9 first. For 7: split off 3. For 8: split off 2.",
+            "The two parts of a diagram must add up to the number being split."
+          ],
+          "hint": "9 + 9: 9 + 1 = 10, then 10 + 8 = 18.",
+          "answer": {
+            "text": "a) Work out 9 + 6.; 9 + 6 = 15; Diagram: 6 = 1 + 5; b) Work out 7 + 6.; 7 + 6 = 13; Diagram: 6 = 3 + 3; c) Work out 8 + 4.; 8 + 4 = 12; Diagram: 4 = 2 + 2; d) Work out 9 + 9.; 9 + 9 = 18; Diagram: 9 = 1 + 8",
+            "explanation": "9 + 6 = 15 (6 = 1 + 5); 7 + 6 = 13 (6 = 3 + 3); 8 + 4 = 12 (4 = 2 + 2); 9 + 9 = 18 (9 = 1 + 8)."
+          }
         }
       },
       "feedback": {
@@ -1740,7 +1921,19 @@
           "Hai phần trong sơ đồ cộng lại phải bằng số được tách.",
           "7 cần thêm 3 mới thành 10, không phải 2 đâu.",
           "Xem lại quả bí 9 + 9: phần đầu tiên bù cho 9 đủ 10."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four squashes go \"plop\" and roll into the basket nicely!",
+            "Splitting as neatly as Inching Inchworm measuring every leaf span.",
+            "Every diagram fills in exactly what is missing to make 10."
+          ],
+          "wrong": [
+            "The two parts in a diagram must add up to the number being split.",
+            "7 needs 3 more to make 10, not 2.",
+            "Look again at the squash 9 + 9: the first part completes the 9 to 10."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1762,6 +1955,11 @@
         "b3": "7 + 6",
         "b5": "8 + 4",
         "b8": "9 + 9"
+      },
+      "en": {
+        "title": "Splitting numbers on the pumpkin basket",
+        "goTo": "Go to the Squash and Loofah Stall, where Inching Inchworm is inching squashes up onto the shelf",
+        "prompt": "Inching Inchworm hangs up four squashes, each with a sum and a splitting diagram."
       }
     },
     {
@@ -2005,6 +2203,17 @@
         "answer": {
           "text": "Bảng 1; Số hạng thứ nhất: 8 | 8 | 8 | 8 | 8; Số hạng thứ hai: 3 | 5 | 6 | 7 | 9; Tổng: 11 | 13 | 14 | 15 | 17; Bảng 2; Số hạng thứ nhất: 9 | 9 | 9 | 9 | 9; Số hạng thứ hai: 2 | 5 | 6 | 8 | 9; Tổng: 11 | 14 | 15 | 17 | 18; Bảng 3; Số hạng thứ nhất: 7 | 9 | 6 | 8 | 7 | 5; Số hạng thứ hai: 4 | 7 | 9 | 8 | 7 | 8; Tổng: 11 | 16 | 15 | 16 | 14 | 13",
           "explanation": "Bảng 1: 13, 14, 15, 17. Bảng 2: 14, 15, 17, 18. Bảng 3: 16, 15, 16, 14, 13."
+        },
+        "en": {
+          "guide": [
+            "The sum is the first addend plus the second addend.",
+            "The first column of each board is already filled in as an example."
+          ],
+          "hint": "9 + 8: split 8 = 1 + 7, giving 10 + 7 = 17.",
+          "answer": {
+            "text": "Board 1; First addend: 8 | 8 | 8 | 8 | 8; Second addend: 3 | 5 | 6 | 7 | 9; Sum: 11 | 13 | 14 | 15 | 17; Board 2; First addend: 9 | 9 | 9 | 9 | 9; Second addend: 2 | 5 | 6 | 8 | 9; Sum: 11 | 14 | 15 | 17 | 18; Board 3; First addend: 7 | 9 | 6 | 8 | 7 | 5; Second addend: 4 | 7 | 9 | 8 | 7 | 8; Sum: 11 | 16 | 15 | 16 | 14 | 13",
+            "explanation": "Board 1: 13, 14, 15, 17. Board 2: 14, 15, 17, 18. Board 3: 16, 15, 16, 14, 13."
+          }
         }
       },
       "feedback": {
@@ -2017,7 +2226,19 @@
           "Tổng là kết quả của phép cộng hai số hạng cùng cột.",
           "Ở bảng 2, số hạng thứ nhất luôn là 9 đấy.",
           "Một ô tổng đang lệch 1, thử cộng lại từng cột."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three boards shine clearly again, and the sun can't fade them any more!",
+            "Addend plus addend gives the sum, and {name} remembers it well.",
+            "Inching Inchworm hangs the boards on the awning post so shoppers can learn along."
+          ],
+          "wrong": [
+            "Add the two addends that sit in the same column to get the sum.",
+            "On board 2 the first addend is always 9.",
+            "One sum box is off by 1, so try adding each column again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -2051,6 +2272,10 @@
         "b11": "8 + 8",
         "b12": "7 + 7",
         "b13": "5 + 8"
+      },
+      "en": {
+        "title": "Addend and sum table at the pumpkin stall",
+        "prompt": "On the wall of the squash stall hang three boards showing two addends and a sum, and the sun has faded the sums. Fill them back in for Inching Inchworm."
       }
     },
     {
@@ -2070,6 +2295,17 @@
         "answer": {
           "text": "15 giỏ",
           "explanation": "Cả hai loại hoa: 9 + 6 = 15 (giỏ)."
+        },
+        "en": {
+          "guide": [
+            "Put the yellow and white chrysanthemum baskets together, which is an addition.",
+            "Split 6 = 1 + 5 so that 9 + 1 = 10."
+          ],
+          "hint": "9 baskets plus 6 baskets.",
+          "answer": {
+            "text": "15 baskets",
+            "explanation": "Both kinds of flowers: 9 + 6 = 15 (baskets)."
+          }
         }
       },
       "feedback": {
@@ -2082,13 +2318,30 @@
           "Hỏi \"cả hai loại\" là gộp lại đó nha.",
           "Thử 9 + 1 = 10 trước, rồi cộng thêm 5.",
           "Đếm lại số giỏ cúc trắng trong đề bài nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fifteen flower baskets go on the cart, and the next village will have a lovely festival!",
+            "Putting together means adding, and {name} picked exactly the right sum.",
+            "Auntie Thơm ties a yellow bow on the fifteenth basket."
+          ],
+          "wrong": [
+            "Asking about \"both kinds\" means putting them together.",
+            "Try 9 + 1 = 10 first, then add 5 more.",
+            "Count the baskets of white chrysanthemums in the problem again."
+          ]
+        }
       },
       "answer": {
         "value": 15
       },
       "objective": "bai-toan-co-loi-van-them-bot",
-      "expression": "9 + 6"
+      "expression": "9 + 6",
+      "en": {
+        "title": "Baskets of flowers waiting for the truck",
+        "goTo": "Go back to the Chrysanthemum Stall, where Auntie Thơm points to a pile of flower baskets already arranged",
+        "question": "Auntie Thơm points to a row of flower baskets under the awning, waiting for a cart to take them to the flower festival in the next village. She has arranged 9 baskets of yellow chrysanthemums and 6 baskets of white ones. How many baskets has she arranged with both kinds of flowers?"
+      }
     },
     {
       "id": "thap-tron-va-hat-mam",
@@ -2281,6 +2534,17 @@
         "answer": {
           "text": "Tháp sỏi xanh: hàng đáy 2, 4, 5; hàng giữa 6, 9; đỉnh 15; Tháp sỏi hồng: đỉnh 16; hàng ba 7, 9; hàng hai 4, 3, 6; hàng đáy 3, 1, 2, 4; Hạt giống 5 → cộng 8 → hạt nảy mầm 13 → cộng 6 → cây con 19; Trứng trên lá 4 → cộng 5 → sâu 9 → cộng 6 → kén 15 → cộng 3 → bướm 18",
           "explanation": "Tháp xanh: 6 + 9 = 15. Tháp hồng: hàng hai 4, 3, 6; hàng ba 7, 9; đỉnh 16. Hạt: 5 + 8 = 13, 13 + 6 = 19. Bướm: 4 + 5 = 9, 9 + 6 = 15, 15 + 3 = 18."
+        },
+        "en": {
+          "guide": [
+            "In the tower, each pebble is the two pebbles right below it added together; work from the bottom up.",
+            "In the row of arrows, add on to the number you just found."
+          ],
+          "hint": "Pink tower: 2 + 4 = 6, then 4 + 3 = 7 and 3 + 6 = 9, top 7 + 9.",
+          "answer": {
+            "text": "Blue pebble tower: bottom row 2, 4, 5; middle row 6, 9; top 15; Pink pebble tower: top 16; third row 7, 9; second row 4, 3, 6; bottom row 3, 1, 2, 4; Seed 5 → add 8 → sprouting seed 13 → add 6 → seedling 19; Egg on a leaf 4 → add 5 → caterpillar 9 → add 6 → cocoon 15 → add 3 → butterfly 18",
+            "explanation": "Blue tower: 6 + 9 = 15. Pink tower: second row 4, 3, 6; third row 7, 9; top 16. Seed: 5 + 8 = 13, 13 + 6 = 19. Butterfly: 4 + 5 = 9, 9 + 6 = 15, 15 + 3 = 18."
+          }
         }
       },
       "feedback": {
@@ -2293,7 +2557,19 @@
           "Tháp tính từ hàng đáy đi lên nhé.",
           "Mỗi mũi tên cộng vào số ngay trước nó đấy.",
           "Ô 2 + 4 ở hàng hai bằng mấy nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The pebble tower stands firm, the seed sprouts and the caterpillar becomes a butterfly, wonderful!",
+            "Right row by row from the bottom up, here comes engineer {name}.",
+            "The butterfly has barely left its cocoon and flies circles around {name}."
+          ],
+          "wrong": [
+            "The tower is worked out from the bottom row upwards.",
+            "Each arrow adds to the number right before it.",
+            "What does the box 2 + 4 in the second row equal?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -2321,6 +2597,11 @@
         "b8": "4 + 5",
         "b9": "4 + 5 + 6",
         "b10": "4 + 5 + 6 + 3"
+      },
+      "en": {
+        "title": "Round tower and sprouting seeds",
+        "goTo": "Fly back to the Sunflower Stall, where Golden Bee is stacking a tower of round pebbles",
+        "prompt": "Golden Bee stacks a tower of round pebbles, each one equal to the two pebbles right below it. Beside it, a big seed is growing and a caterpillar is turning into a butterfly. Fill in the missing numbers."
       }
     },
     {
@@ -2340,6 +2621,17 @@
         "answer": {
           "text": "14 chiếc",
           "explanation": "Đoàn thuyền có tất cả: 8 + 6 = 14 (chiếc)."
+        },
+        "en": {
+          "guide": [
+            "The boats that came out from under the bridge and the boats still under it make up the whole fleet.",
+            "Add 8 and 6, or swap them to 6 + 8 to count in your head more easily."
+          ],
+          "hint": "8 + 2 = 10, with 4 more boats.",
+          "answer": {
+            "text": "14 boats",
+            "explanation": "The fleet has altogether: 8 + 6 = 14 (boats)."
+          }
         }
       },
       "feedback": {
@@ -2352,13 +2644,30 @@
           "Đừng quên mấy chiếc còn nằm dưới gầm cầu nhé.",
           "Hỏi \"có tất cả\" thì gộp hai phần lại.",
           "Thử đổi chỗ: 6 + 8 nhẩm có dễ hơn không?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fourteen flower boats in a line, making the whole canal smell sweet!",
+            "Auntie Thơm picks her counting sticks back up: you counted the boats under the bridge too, very good.",
+            "Such a long fleet and {name} didn't miss a single boat."
+          ],
+          "wrong": [
+            "Don't forget the boats still under the bridge.",
+            "Asking \"altogether\" means putting the two parts together.",
+            "Try swapping them: is 6 + 8 easier to work out in your head?"
+          ]
+        }
       },
       "answer": {
         "value": 14
       },
       "objective": "bai-toan-co-loi-van-them-bot",
-      "expression": "8 + 6"
+      "expression": "8 + 6",
+      "en": {
+        "title": "Flower boats under the bridge",
+        "goTo": "Back at the Chrysanthemum Stall, the sound of oars splashing rises from the canal",
+        "question": "Splash... the sound of oars rises from the canal beside the market, and Auntie Thơm jumps, dropping her bundle of counting sticks. 8 boats carrying flowers have rowed out from under the bridge, and 6 boats are still under it. How many flower boats are there altogether?"
+      }
     },
     {
       "id": "cau-thang-nha-san",
@@ -2466,6 +2775,17 @@
         "answer": {
           "text": "Tính nhẩm phép cộng ghi trên từng bậc thang.; 8 + 7 = 15; 9 + 4 = 13; 6 + 9 = 15; 7 + 5 = 12; 8 + 8 = 16",
           "explanation": "8 + 7 = 15, 9 + 4 = 13, 6 + 9 = 15, 7 + 5 = 12, 8 + 8 = 16."
+        },
+        "en": {
+          "guide": [
+            "Work out each step from the bottom up.",
+            "Remember the way to make 10 with 9, 8 and 7."
+          ],
+          "hint": "6 + 9: 9 + 1 = 10, 5 are left, so 15.",
+          "answer": {
+            "text": "Work out the sum on each step in your head.; 8 + 7 = 15; 9 + 4 = 13; 6 + 9 = 15; 7 + 5 = 12; 8 + 8 = 16",
+            "explanation": "8 + 7 = 15, 9 + 4 = 13, 6 + 9 = 15, 7 + 5 = 12, 8 + 8 = 16."
+          }
         }
       },
       "feedback": {
@@ -2478,7 +2798,19 @@
           "Có một bậc thang tính hụt mất 1 rồi.",
           "7 + 5: gom 7 + 3 = 10, còn 2 nữa nhé.",
           "Leo chậm thôi, nhẩm lại bậc cuối cùng xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All five steps light up, so you can climb without slipping!",
+            "Climbing the stairs and working things out in your head in a flash, {name} is amazing.",
+            "Uncle Mạnh pokes his head out and praises you: every step is right."
+          ],
+          "wrong": [
+            "One step is short by 1.",
+            "7 + 5: make 7 + 3 = 10, with 2 more.",
+            "Climb slowly and work out the last step again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -2496,6 +2828,11 @@
         "b3": "6 + 9",
         "b4": "7 + 5",
         "b5": "8 + 8"
+      },
+      "en": {
+        "title": "Lookout hut stairs",
+        "goTo": "Go over to the Market Gate Lookout Hut, where Uncle Mạnh is sweeping the steps",
+        "prompt": "Beside the market gate stands Uncle Mạnh's lookout hut, and every step up to it has a sum stuck on it."
       }
     },
     {
@@ -2537,6 +2874,17 @@
         "answer": {
           "text": "8 + 7 và 6 + 9",
           "explanation": "8 + 7 = 15 và 6 + 9 = 15; các bậc khác là 13, 12, 16."
+        },
+        "en": {
+          "guide": [
+            "Use the answers you just worked out on the stairs.",
+            "Find the two steps with the same answer."
+          ],
+          "hint": "Two steps both equal 15.",
+          "answer": {
+            "text": "8 + 7 and 6 + 9",
+            "explanation": "8 + 7 = 15 and 6 + 9 = 15; the other steps are 13, 12 and 16."
+          }
         }
       },
       "feedback": {
@@ -2549,7 +2897,19 @@
           "Hai bậc \"song sinh\" phải có kết quả bằng nhau đấy.",
           "Xem lại: bậc 9 + 4 bằng 13 cơ.",
           "Chỉ có đúng hai bậc thôi, cậu chọn thừa rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly the fifteen twins, as alike as two drops of water!",
+            "Uncle Mạnh laughs: market shoppers often mistake these two steps for one.",
+            "You caught the pair with the same answer straight away."
+          ],
+          "wrong": [
+            "The two \"twin\" steps must have equal answers.",
+            "Look again: the step 9 + 4 is 13.",
+            "There are exactly two steps, and you picked too many."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -2557,7 +2917,18 @@
           "6-9"
         ]
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Twin steps",
+        "prompt": "Uncle Mạnh says there are two \"twin\" steps with different sums that give the same answer. Choose those two steps.",
+        "choices": [
+          "8 + 7",
+          "9 + 4",
+          "6 + 9",
+          "7 + 5",
+          "8 + 8"
+        ]
+      }
     },
     {
       "id": "nam-cua-ban-sao",
@@ -2576,6 +2947,17 @@
         "answer": {
           "text": "3 cây nấm",
           "explanation": "6 + 7, 9 + 4 và 10 + 3 đều bằng 13, nên bạn Sao hái được 3 cây nấm."
+        },
+        "en": {
+          "guide": [
+            "Work out each mushroom and keep the ones that equal 13.",
+            "Count the mushrooms you kept."
+          ],
+          "hint": "6 + 7 = 13 is one mushroom already, so how many more are there?",
+          "answer": {
+            "text": "3 mushrooms",
+            "explanation": "6 + 7, 9 + 4 and 10 + 3 all equal 13, so Sao picks 3 mushrooms."
+          }
         }
       },
       "feedback": {
@@ -2588,12 +2970,29 @@
           "8 + 6 chỉ bằng 14 thôi, không hái cây đó.",
           "Đếm số cây nấm có kết quả 13, không cộng chúng lại.",
           "Còn sót một cây nấm bằng 13 đấy, soi lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Sao's basket is full of thirteen mushrooms, smelling wonderful!",
+            "Not one wrong mushroom picked, {name} has sharp eyes.",
+            "Three mushrooms fit the little basket just right."
+          ],
+          "wrong": [
+            "8 + 6 is only 14, so don't pick that mushroom.",
+            "Count the mushrooms whose answer is 13, don't add them up.",
+            "A mushroom equal to 13 has been missed, so look again."
+          ]
+        }
       },
       "answer": {
         "value": 3
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Sao's mushroom basket",
+        "goTo": "Back out at the Squash and Loofah Stall, where Inching Inchworm is counting a basket of mushrooms for sale",
+        "question": "Inching Inchworm's basket holds mushrooms marked 6 + 7, 5 + 7, 9 + 4, 8 + 6, 4 + 8, 10 + 3 and 7 + 7. Sao only picks the mushrooms whose answer is 13. How many mushrooms does Sao pick?"
+      }
     },
     {
       "id": "xuc-xac-muoi-mot",
@@ -2631,6 +3030,17 @@
         "answer": {
           "text": "B và D",
           "explanation": "Xúc xắc B có 6 chấm, D có 5 chấm: 6 + 5 = 11."
+        },
+        "en": {
+          "guide": [
+            "Try adding the dots of each pair of dice.",
+            "The total has to be exactly 11."
+          ],
+          "hint": "6 plus what makes 11?",
+          "answer": {
+            "text": "B and D",
+            "explanation": "Die B has 6 dots and die D has 5 dots: 6 + 5 = 11."
+          }
         }
       },
       "feedback": {
@@ -2643,7 +3053,19 @@
           "Hai con đó cộng lại chưa ra 11 đâu.",
           "Bắt đầu từ con có nhiều chấm nhất xem.",
           "Chỉ chọn đúng hai con xúc xắc thôi nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six dots and five dots, a nice round eleven!",
+            "Auntie Thơm cheers because {name} guessed it straight away.",
+            "The lucky pair of dice has been found."
+          ],
+          "wrong": [
+            "Those two dice don't add up to 11 yet.",
+            "Start with the die that has the most dots.",
+            "Choose exactly two dice."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -2651,7 +3073,18 @@
           "d"
         ]
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Lucky dice",
+        "goTo": "Back to the Chrysanthemum Stall, where Auntie Thơm has just dropped four dice onto the counter",
+        "prompt": "Auntie Thơm tosses four dice onto the counter: A shows 3 dots, B shows 6 dots, C shows 4 dots and D shows 5 dots. Choose the two dice whose dots add up to 11.",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
     },
     {
       "id": "ong-ve-dung-hoa",
@@ -2711,6 +3144,17 @@
         "answer": {
           "text": "8 + 5 – 5 + 8; 7 + 8 – 9 + 6; 9 + 2 – 4 + 7; 7 + 7 – 5 + 9",
           "explanation": "8 + 5 = 13 = 5 + 8; 7 + 8 = 15 = 9 + 6; 9 + 2 = 11 = 4 + 7; 7 + 7 = 14 = 5 + 9."
+        },
+        "en": {
+          "guide": [
+            "Work out the answer to the bee's sum and to each flower's sum.",
+            "A sample bee has already landed on the flower 6 + 6."
+          ],
+          "hint": "8 + 5 and 5 + 8: swap the two numbers and the answer stays the same.",
+          "answer": {
+            "text": "8 + 5 – 5 + 8; 7 + 8 – 9 + 6; 9 + 2 – 4 + 7; 7 + 7 – 5 + 9",
+            "explanation": "8 + 5 = 13 = 5 + 8; 7 + 8 = 15 = 9 + 6; 9 + 2 = 11 = 4 + 7; 7 + 7 = 14 = 5 + 9."
+          }
         }
       },
       "feedback": {
@@ -2723,7 +3167,19 @@
           "Có một chú ong đậu nhầm bông, kết quả chưa bằng nhau.",
           "Tính cả phép cộng ghi trên bông hoa nữa nhé.",
           "Đổi chỗ hai số hạng thì tổng vẫn giữ nguyên đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four bees land on the right flowers, and the new hive opens with a cheer!",
+            "Buzz buzz buzz! The whole swarm flies in circles to thank {name}.",
+            "Golden Bee announces: from now on I'll make ten first and then count!"
+          ],
+          "wrong": [
+            "One bee has landed on the wrong flower, since the answers aren't equal.",
+            "Work out the sum written on the flower too.",
+            "If you swap the two addends, the sum stays the same."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -2733,7 +3189,12 @@
           "ong-7-7": "nhom-5-9"
         }
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Bees return to the right flower",
+        "goTo": "Fly to the Beehive under the Awning, where the bees are waiting at the hive door",
+        "prompt": "The new hive is opening right in the middle of the market! Each bee carries a sum and must land on the flower with the same answer. Help each bee find the right flower."
+      }
     },
     {
       "id": "huy-hieu-gom-chuc",
@@ -2765,5 +3226,9 @@
       "phep-cong": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Golden Bee Gathers Ten Flowers",
+    "summary": "Golden Bee needs ten sunflowers for every cell of the new hive hanging under the flower stall's awning, but keeps counting too many. {name} follows Golden Bee around the vegetable and flower market, meeting Uncle Cẩn, Auntie Thơm, Inching Inchworm and Uncle Mạnh to learn how to make 10 first and then add the rest."
   }
 }

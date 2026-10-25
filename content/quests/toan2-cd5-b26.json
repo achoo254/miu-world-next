@@ -95,7 +95,11 @@
         "toan2-cd5-manh-kinh-xanh",
         "toan2-cd5-manh-kinh-do",
         "toan2-cd5-manh-kinh-tim"
-      ]
+      ],
+      "en": {
+        "title": "Pick up pieces of coloured glass",
+        "goTo": "Pick up the three pieces of coloured glass that have fallen around the stained glass window sill"
+      }
     },
     {
       "id": "duong-gay-khuc-la-gi",
@@ -180,6 +184,17 @@
         "answer": {
           "text": "RS, ST, TU",
           "explanation": "Lối bay gồm ba đoạn thẳng RS, ST, TU nối tiếp nhau, tạo thành đường gấp khúc RSTU."
+        },
+        "en": {
+          "guide": [
+            "Join each pair of neighbouring points in the order Little Bee flies.",
+            "Do not join the last point back to the first."
+          ],
+          "hint": "Three strokes: R to S, S to T, T to U.",
+          "answer": {
+            "text": "RS, ST, TU",
+            "explanation": "The flight path is made of three line segments RS, ST, TU joined one after another, forming the broken line RSTU."
+          }
         }
       },
       "feedback": {
@@ -192,7 +207,19 @@
           "Ong không bay xuyên thẳng từ R tới U đâu, hãy nối từng chặng.",
           "Còn thiếu một nét để Ong tới được điểm U.",
           "Đừng nối U quay về R, Ong đâu có bay vòng tròn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Buzz, whoosh! Little Bee flies the right path and no longer bumps into the glass.",
+            "Three segments joined neatly, exactly a broken line.",
+            "The whole hive wants you to draw their flight map."
+          ],
+          "wrong": [
+            "Little Bee does not fly straight from R to U, so join it stage by stage.",
+            "One stroke is still missing for Little Bee to reach point U.",
+            "Don't join U back to R, Little Bee isn't flying in circles."
+          ]
+        }
       },
       "answer": {
         "edges": [
@@ -210,7 +237,11 @@
           ]
         ]
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Connect Bee's flight path",
+        "prompt": "Little Bee practises a new flight path through four points R, S, T, U: from R up to S, down to T, then up again to U. Join the points in the order Little Bee flies to draw the path."
+      }
     },
     {
       "id": "ten-loi-bay-a",
@@ -243,6 +274,17 @@
         "answer": {
           "text": "PQR",
           "explanation": "Đường đi qua P, rồi Q, rồi R nên tên là đường gấp khúc PQR."
+        },
+        "en": {
+          "guide": [
+            "Read the names of the points in the order along the path.",
+            "A broken line with two segments passes through three points."
+          ],
+          "hint": "It starts at P, passes through Q and ends at R.",
+          "answer": {
+            "text": "PQR",
+            "explanation": "The path goes through P, then Q, then R, so it is called the broken line PQR."
+          }
         }
       },
       "feedback": {
@@ -255,13 +297,35 @@
           "Điểm Q nằm giữa đường đi, nên đọc nó ở vị trí giữa.",
           "PR chỉ có hai điểm, bỏ mất chỗ gãy rồi.",
           "Thử chạm ngón tay lần lượt vào từng điểm rồi đọc."
-        ]
+        ],
+        "en": {
+          "right": [
+            "PQR, short and sweet like a bee's buzz!",
+            "You read the name along the flight path, spot on.",
+            "Little Bee writes PQR on its wing, so proud."
+          ],
+          "wrong": [
+            "Point Q is in the middle of the path, so read it in the middle.",
+            "PR has only two points and leaves out the bend.",
+            "Touch each point with your finger in turn, then read them out."
+          ]
+        }
       },
       "answer": {
         "choice": "pqr"
       },
       "goTo": "Sang giá để kính màu, Bác Tâm thợ kính đang chép lại lối bay lên giấy",
-      "objective": "hinh-phang-gap-khuc"
+      "objective": "hinh-phang-gap-khuc",
+      "en": {
+        "title": "The name of the first flight path",
+        "goTo": "Go over to the stained glass shelf, where Uncle Tâm the glassmaker is copying the flight path onto paper",
+        "prompt": "Little Bee's first flight path is made of two line segments PQ and QR joined one after another. Which broken line is that path called?",
+        "choices": [
+          "QPR",
+          "PQR",
+          "PR"
+        ]
+      }
     },
     {
       "id": "ten-loi-bay-b",
@@ -294,6 +358,17 @@
         "answer": {
           "text": "RSTU",
           "explanation": "Lối bay đi qua R, S, T, U nên tên là đường gấp khúc RSTU."
+        },
+        "en": {
+          "guide": [
+            "Read the points one after another from the start to the end of the path.",
+            "Three line segments pass through four points."
+          ],
+          "hint": "R, then S, then T, then U.",
+          "answer": {
+            "text": "RSTU",
+            "explanation": "The path goes through R, S, T, U, so it is called the broken line RSTU."
+          }
         }
       },
       "feedback": {
@@ -306,12 +381,33 @@
           "Ong bay qua S trước rồi mới tới T nhé.",
           "Tên đường gấp khúc phải có đủ các điểm gãy.",
           "Dò ngón tay theo lối bay rồi đọc lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "RSTU! Read as smoothly as Little Bee sings.",
+            "Four points in the right order, not a letter swapped.",
+            "Uncle Tâm writes RSTU into his sketchbook at once."
+          ],
+          "wrong": [
+            "Little Bee flies through S first and only then T.",
+            "The name of a broken line must include all its bend points.",
+            "Trace the flight path with your finger, then read it again."
+          ]
+        }
       },
       "answer": {
         "choice": "rstu"
       },
-      "objective": "hinh-phang-gap-khuc"
+      "objective": "hinh-phang-gap-khuc",
+      "en": {
+        "title": "The name of the path just connected",
+        "prompt": "Look back at the flight path you just joined through the four points R, S, T, U. Which broken line is that path called?",
+        "choices": [
+          "RTSU",
+          "RU",
+          "RSTU"
+        ]
+      }
     },
     {
       "id": "san-o-kinh-tu-giac",
@@ -460,6 +556,17 @@
         "answer": {
           "text": "Hình tứ giác: ô kính 1, 4, 6; không phải: ô kính 2, 3, 5",
           "explanation": "Ô kính 1, 4, 6 đều có bốn cạnh nên là hình tứ giác; ô 2 và ô 5 là hình tam giác, ô 3 có năm cạnh."
+        },
+        "en": {
+          "guide": [
+            "Count the sides of each pane.",
+            "A quadrilateral has four sides and four corners."
+          ],
+          "hint": "A pane with three sides and a pane with five sides are not quadrilaterals.",
+          "answer": {
+            "text": "Quadrilaterals: panes 1, 4, 6; not: panes 2, 3, 5",
+            "explanation": "Panes 1, 4 and 6 each have four sides, so they are quadrilaterals; panes 2 and 5 are triangles, and pane 3 has five sides."
+          }
         }
       },
       "feedback": {
@@ -472,7 +579,19 @@
           "Đếm số cạnh của từng ô kính thật chậm xem.",
           "Ô kính nhiều hơn bốn cạnh có phải hình tứ giác không nhỉ?",
           "Một ô bốn cạnh nhưng hơi lệch đang bị bỏ quên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three four-sided panes in the right group, and the frame lights up!",
+            "A slanted pane is still a quadrilateral, and you weren't fooled.",
+            "Little Bee counts the sides with you: one, two, three, four!"
+          ],
+          "wrong": [
+            "Count the sides of each pane very slowly.",
+            "Is a pane with more than four sides a quadrilateral?",
+            "A four-sided pane that leans a little has been forgotten."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -485,7 +604,20 @@
         }
       },
       "goTo": "Về cửa sổ kính màu, Ong Nhí đang lắp sáu ô kính vào khung",
-      "objective": "hinh-phang-tu-giac"
+      "objective": "hinh-phang-tu-giac",
+      "en": {
+        "title": "Hunt for four-sided panes",
+        "goTo": "Back at the stained glass window, where Little Bee is fitting six panes into the frame",
+        "prompt": "The six coloured panes are back in the frame. Sort each pane into the group of quadrilaterals or the group of shapes that are not quadrilaterals.",
+        "items": [
+          "Glass pane 1",
+          "Glass pane 2",
+          "Glass pane 3",
+          "Glass pane 4",
+          "Glass pane 5",
+          "Glass pane 6"
+        ]
+      }
     },
     {
       "id": "dem-o-kinh-tu-giac",
@@ -502,6 +634,16 @@
         "answer": {
           "text": "3 ô kính",
           "explanation": "Có 3 ô kính hình tứ giác."
+        },
+        "en": {
+          "guide": [
+            "Count the panes you put in the group of quadrilaterals."
+          ],
+          "hint": "The group of quadrilaterals holds panes 1, 4, 6.",
+          "answer": {
+            "text": "3 panes",
+            "explanation": "There are 3 quadrilateral panes."
+          }
         }
       },
       "feedback": {
@@ -514,12 +656,28 @@
           "Quay lại nhóm hình tứ giác vừa xếp rồi đếm các ô trong đó.",
           "Ô ba cạnh và ô năm cạnh không được tính vào đâu.",
           "Chạm tay vào từng ô kính mà đếm cho chắc ăn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Little Bee carves a 3 on the frame, the letters a bit shaky with joy.",
+            "Counted spot on, the glass frame fits just right.",
+            "Three quadrilaterals, none too many and none too few!"
+          ],
+          "wrong": [
+            "Go back to the group of quadrilaterals you sorted and count the panes in it.",
+            "The three-sided pane and the five-sided pane don't count at all.",
+            "Touch each pane as you count, to be sure."
+          ]
+        }
       },
       "answer": {
         "value": 3
       },
-      "objective": "hinh-phang-tu-giac"
+      "objective": "hinh-phang-tu-giac",
+      "en": {
+        "title": "Count the quadrilateral panes",
+        "question": "Little Bee wants to carve a number on the window frame: of the six panes you just sorted, how many are quadrilaterals?"
+      }
     },
     {
       "id": "do-duong-bay-abcd",
@@ -626,6 +784,17 @@
         "answer": {
           "text": "6 + 5 + 3 = 14 (cm); lối bay dài 14 cm",
           "explanation": "EF + FG + GH = 6 + 5 + 3 = 14, nên đường gấp khúc EFGH dài 14 cm."
+        },
+        "en": {
+          "guide": [
+            "To find how long the path is, add the lengths of its joined sections.",
+            "Write EF, FG, GH in turn, then add."
+          ],
+          "hint": "6 + 5 = 11, then add 3.",
+          "answer": {
+            "text": "6 + 5 + 3 = 14 (cm); the flight path is 14 cm long",
+            "explanation": "EF + FG + GH = 6 + 5 + 3 = 14, so the broken line EFGH is 14 cm long."
+          }
         }
       },
       "feedback": {
@@ -638,7 +807,19 @@
           "Nhớ cộng đủ cả ba đoạn EF, FG, GH nhé.",
           "Phần trả lời phải bằng kết quả của phép cộng.",
           "Thử cộng 6 với 5 trước, rồi thêm 3 nữa."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fourteen centimetres, and Little Bee flew the whole path without tiring its wings!",
+            "Neat as the model, and every addition is right.",
+            "You added the three segments in one go, well done {name}."
+          ],
+          "wrong": [
+            "Remember to add all three segments EF, FG, GH.",
+            "Your answer has to match what the addition gives.",
+            "Try adding 6 and 5 first, then add 3 more."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -654,6 +835,11 @@
       "expression": {
         "b4": "6 + 5 + 3",
         "b5": "6 + 5 + 3"
+      },
+      "en": {
+        "title": "How long is flight path ABCD?",
+        "goTo": "Go to the stained glass shelf, where Uncle Tâm the glassmaker stretches a ruler along the new flight path",
+        "prompt": "Little Bee flies a new path through four points E, F, G, H: segment EF is 6 cm long, segment FG is 5 cm long, segment GH is 3 cm long. Work out the length of the broken line EFGH."
       }
     },
     {
@@ -789,6 +975,17 @@
         "answer": {
           "text": "Ngôi nhà gỗ: 3; con diều: 1; tàu hỏa: 4",
           "explanation": "Ngôi nhà có tường, cửa ra vào, cửa sổ là 3 hình tứ giác; con diều chỉ có thân diều là 1; tàu hỏa có đầu tàu và ba toa là 4."
+        },
+        "en": {
+          "guide": [
+            "Trapeziums, rhombuses and rectangles all have four sides, so they are all quadrilaterals.",
+            "Don't count the triangles or the circles."
+          ],
+          "hint": "The train: one engine plus three carriages; the kite has only its body.",
+          "answer": {
+            "text": "Wooden house: 3; kite: 1; train: 4",
+            "explanation": "The house has a wall, a door and a window, which is 3 quadrilaterals; the kite has only its body, which is 1; the train has an engine and three carriages, which is 4."
+          }
         }
       },
       "feedback": {
@@ -801,7 +998,19 @@
           "Bánh xe tròn và mái nhà tam giác không phải hình tứ giác.",
           "Đuôi diều gồm các hình tam giác, chúng có tính không nhỉ?",
           "Tàu hỏa có đầu tàu và cả ba toa, đừng bỏ sót toa nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "House, kite and train were all checked closely, not a piece missed!",
+            "A trapezium is a quadrilateral too, and you remembered it firmly.",
+            "Snow Cat hangs up the three pictures, and everyone who passes praises them."
+          ],
+          "wrong": [
+            "Round wheels and a triangular roof are not quadrilaterals.",
+            "The kite's tail is made of triangles, so do they count?",
+            "The train has an engine and all three carriages, so don't leave any carriage out."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -811,7 +1020,12 @@
         }
       },
       "goTo": "Sang bàn ghép tranh, Mèo Tuyết đang xếp ba bức tranh mảnh hình",
-      "objective": "hinh-phang-tu-giac"
+      "objective": "hinh-phang-tu-giac",
+      "en": {
+        "title": "Quadrilaterals hiding in the puzzle picture",
+        "goTo": "Go to the picture-puzzle table, where Snow Cat is arranging three pictures made of shaped pieces",
+        "prompt": "Snow Cat has put together three pictures from shaped pieces. Count how many quadrilaterals there are in each picture."
+      }
     },
     {
       "id": "doc-ten-duong-chay",
@@ -858,6 +1072,17 @@
         "answer": {
           "text": "Thỏ Mây: XY; Hổ Con Đậu: MNPQ; Gấu Nút: STU",
           "explanation": "Đường chạy của từng bạn: Thỏ Mây chạy theo XY; Hổ Con Đậu chạy theo MNPQ; Gấu Nút chạy theo STU."
+        },
+        "en": {
+          "guide": [
+            "A track's name is the points the runner passes through, read in order.",
+            "Match each track name to the runner who ran along it."
+          ],
+          "hint": "Cloud Rabbit passes through only two points, X and Y.",
+          "answer": {
+            "text": "Cloud Rabbit: XY; Bean Tiger Cub: MNPQ; Button Bear: STU",
+            "explanation": "Each runner's track: Cloud Rabbit runs along XY; Bean Tiger Cub runs along MNPQ; Button Bear runs along STU."
+          }
         }
       },
       "feedback": {
@@ -870,7 +1095,19 @@
           "Hổ Con Đậu qua bốn điểm, tên đường phải có bốn chữ cái.",
           "Tên đường của Gấu Nút bắt đầu bằng chữ S đấy.",
           "Thỏ Mây chạy thẳng một mạch, đường nào chỉ có hai điểm?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three tracks found their owners, and nobody ran in the wrong lane!",
+            "You read the track names faster than Bean Tiger Cub runs.",
+            "Little Bee circles once in the air to congratulate the three athletes."
+          ],
+          "wrong": [
+            "Bean Tiger Cub passes through four points, so the track name needs four letters.",
+            "Button Bear's track name starts with the letter S.",
+            "Cloud Rabbit ran straight in one go, so which track has only two points?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -880,7 +1117,12 @@
         }
       },
       "goTo": "Ra hiên đá nhìn ra bãi cỏ, Bò Cỏ Non đang làm trọng tài cuộc chạy thi",
-      "objective": "hinh-phang-gap-khuc"
+      "objective": "hinh-phang-gap-khuc",
+      "en": {
+        "title": "Whose running path is it?",
+        "goTo": "Go out onto the stone porch overlooking the lawn, where Young Grass Cow is refereeing the race",
+        "prompt": "Cloud Rabbit, Bean Tiger Cub and Button Bear race across a lawn along three different tracks. Cloud Rabbit runs straight from X to Y; Bean Tiger Cub runs through M, N, P and on to Q; Button Bear runs through S, T and on to U. Match each track's name to its runner."
+      }
     },
     {
       "id": "ai-chay-gap-khuc",
@@ -913,6 +1155,17 @@
         "answer": {
           "text": "Hổ Con Đậu, Gấu Nút",
           "explanation": "Hổ Con Đậu (MNPQ) và Gấu Nút (STU) chạy theo đường gấp khúc; Thỏ Mây chạy theo đoạn thẳng XY."
+        },
+        "en": {
+          "guide": [
+            "A broken line is made of two or more line segments joined one after another.",
+            "A track with only one line segment is not broken."
+          ],
+          "hint": "Cloud Rabbit ran in one dead-straight go.",
+          "answer": {
+            "text": "Bean Tiger Cub, Button Bear",
+            "explanation": "Bean Tiger Cub (MNPQ) and Button Bear (STU) ran along broken lines; Cloud Rabbit ran along the line segment XY."
+          }
         }
       },
       "feedback": {
@@ -925,7 +1178,19 @@
           "Đường của Thỏ Mây có chỗ nào gãy không nhỉ?",
           "Còn một bạn chạy gãy khúc chưa được chọn.",
           "Đếm số đoạn thẳng trên mỗi đường chạy xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Bean Tiger Cub and Button Bear turn this way and that, exactly broken lines!",
+            "Cloud Rabbit ran dead straight so was not chosen, and you chose just right.",
+            "Young Grass Cow plants two more flags for the two runners who turned."
+          ],
+          "wrong": [
+            "Is there a bend anywhere on Cloud Rabbit's track?",
+            "One runner who ran a bent track has not been chosen yet.",
+            "Count the line segments on each track."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -933,7 +1198,16 @@
           "gau-nut"
         ]
       },
-      "objective": "hinh-phang-gap-khuc"
+      "objective": "hinh-phang-gap-khuc",
+      "en": {
+        "title": "Who runs along a broken line?",
+        "prompt": "Cloud Rabbit, Bean Tiger Cub and Button Bear race across the lawn along the three tracks above. Who ran along a broken line? Choose all of them.",
+        "choices": [
+          "Cloud Rabbit",
+          "Bean Tiger Cub",
+          "Button Bear"
+        ]
+      }
     },
     {
       "id": "dem-doan-duong-chay",
@@ -980,6 +1254,17 @@
         "answer": {
           "text": "Một đoạn: Thỏ Mây; hai đoạn: Gấu Nút; ba đoạn: Hổ Con Đậu",
           "explanation": "Gấu Nút (STU) chạy hai đoạn ST, TU; Hổ Con Đậu (MNPQ) chạy ba đoạn MN, NP, PQ; Thỏ Mây chỉ chạy đoạn XY."
+        },
+        "en": {
+          "guide": [
+            "The number of line segments is always one fewer than the number of points on the path.",
+            "STU has three points, MNPQ has four points."
+          ],
+          "hint": "Button Bear passes through three points S, T, U.",
+          "answer": {
+            "text": "One segment: Cloud Rabbit; two segments: Button Bear; three segments: Bean Tiger Cub",
+            "explanation": "Button Bear (STU) ran two segments ST, TU; Bean Tiger Cub (MNPQ) ran three segments MN, NP, PQ; Cloud Rabbit ran only the segment XY."
+          }
         }
       },
       "feedback": {
@@ -992,7 +1277,19 @@
           "Đường STU có mấy khúc? Đếm từ S tới U xem.",
           "Hổ Con Đậu rẽ hai lần nên đường có ba đoạn đấy.",
           "Một bạn đang đứng nhầm nhóm rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three tracks' segments counted right, and Ink Bear nods at the drawing table!",
+            "Cloud Rabbit one segment, Button Bear two, Bean Tiger Cub three, so tidy!",
+            "Little Bee appoints you referee of the whole lawn."
+          ],
+          "wrong": [
+            "How many stretches does the track STU have? Count from S to U.",
+            "Bean Tiger Cub turns twice, so the track has three segments.",
+            "One runner is standing in the wrong group."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1002,7 +1299,17 @@
         }
       },
       "goTo": "Về góc bàn vẽ, Gấu Mực chấm bút lông đếm từng khúc đường chạy",
-      "objective": "hinh-phang-gap-khuc"
+      "objective": "hinh-phang-gap-khuc",
+      "en": {
+        "title": "How many segments in each path?",
+        "goTo": "Back to the corner of the drawing table, where Ink Bear dabs a brush to count each stretch of the tracks",
+        "prompt": "Cloud Rabbit, Bean Tiger Cub and Button Bear ran along the three tracks given. How many line segments does each track have? Sort each runner into the right group.",
+        "items": [
+          "Cloud Rabbit",
+          "Bean Tiger Cub",
+          "Button Bear"
+        ]
+      }
     },
     {
       "id": "tinh-hai-loi-bay",
@@ -1143,6 +1450,17 @@
         "answer": {
           "text": "EFG: 5 + 4 = 9 (cm); HIKL: 5 + 5 + 5 = 15 (cm)",
           "explanation": "Đường EFG dài 5 + 4 = 9 cm; đường HIKL dài 5 + 5 + 5 = 15 cm."
+        },
+        "en": {
+          "guide": [
+            "Add the lengths of all the line segments of each path.",
+            "Path HIKL has three equal segments."
+          ],
+          "hint": "5 + 5 = 10, then add 5 more.",
+          "answer": {
+            "text": "Answers: EFG: 5 + 4 = 9 (cm); HIKL: 5 + 5 + 5 = 15 (cm)",
+            "explanation": "Path EFG is 5 + 4 = 9 cm long; path HIKL is 5 + 5 + 5 = 15 cm long."
+          }
         }
       },
       "feedback": {
@@ -1155,7 +1473,19 @@
           "Đường HIKL có ba đoạn, đừng quên đoạn thứ ba.",
           "Cộng lại đường EFG xem: 5 với 4.",
           "Mỗi ô trống ghi đúng độ dài từng đoạn của đường đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Nine and fifteen, added without a single slip!",
+            "Both flight paths measured, and Little Bee flies off to try them.",
+            "Three equal segments and you add them as fast as lightning."
+          ],
+          "wrong": [
+            "Path HIKL has three segments, so don't forget the third one.",
+            "Add path EFG again: 5 and 4.",
+            "Each blank holds the right length of one segment of that path."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1172,6 +1502,10 @@
       "expression": {
         "b3": "5 + 4",
         "b7": "5 + 5 + 5"
+      },
+      "en": {
+        "title": "How long are the two flight paths?",
+        "prompt": "Ink Bear draws two new flight paths: path EFG has EF 5 cm long and FG 4 cm long; path HIKL has HI, IK, KL all 5 cm long. Work out the length of the two broken lines."
       }
     },
     {
@@ -1242,6 +1576,17 @@
         "answer": {
           "text": "Đường màu vàng dài 9 cạnh ô; đường màu tím dài 8 cạnh ô; đường màu vàng dài hơn",
           "explanation": "Đường vàng dài 9 cạnh ô, đường tím dài 8 cạnh ô, nên đường gấp khúc màu vàng dài hơn."
+        },
+        "en": {
+          "guide": [
+            "Add up the squares of each path.",
+            "The path with the bigger total is longer."
+          ],
+          "hint": "Yellow: 3 + 4 + 2; purple: 2 + 1 + 2 + 1 + 2.",
+          "answer": {
+            "text": "The yellow path is 9 squares long; the purple path is 8 squares long; the yellow path is longer",
+            "explanation": "The yellow path is 9 squares long and the purple path is 8 squares long, so the yellow broken line is longer."
+          }
         }
       },
       "feedback": {
@@ -1254,7 +1599,19 @@
           "Cộng lại các đoạn của đường tím, có tới năm đoạn đấy.",
           "Đường nhiều đoạn chưa chắc dài hơn, phải cộng mới biết.",
           "So hai tổng rồi chọn đường dài hơn nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Little Bee's yellow path is one square longer, and Little Bee buzzes with pride!",
+            "Nine is more than eight, and you compared without a mistake.",
+            "Little Bee gives you a drop of honey for flying so well."
+          ],
+          "wrong": [
+            "Add the segments of the purple path again, there are five of them.",
+            "A path with more segments is not necessarily longer, you have to add to know.",
+            "Compare the two totals, then choose the longer path."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1267,6 +1624,11 @@
       "expression": {
         "b1": "3 + 4 + 2",
         "b2": "2 + 1 + 2 + 1 + 2"
+      },
+      "en": {
+        "title": "Flying contest: which path is longer?",
+        "goTo": "Back at the stained glass window, where Little Bee challenges you to a flying contest",
+        "prompt": "Little Bee flies the yellow broken line made of segments 3, 4 and 2 squares long. {name} flies the purple broken line made of segments 2, 1, 2, 1 and 2 squares long. Which broken line is longer?"
       }
     },
     {
@@ -1299,5 +1661,9 @@
       "hinh-phang": 2,
       "phep-cong": 1
     }
+  },
+  "en": {
+    "title": "Little Bee Flies Through the Coloured Glass",
+    "summary": "Little Bee is just learning to fly and zigzags past the castle's stained glass window until everything is dazzling. {name} joins Little Bee, Uncle Tâm the glassmaker and the painter Ink Bear to name broken lines and work out the length of a flight path, hunts for four-sided shapes with Snow Cat at the picture-puzzle table, and goes with Young Grass Cow to look over the race tracks on the lawn."
   }
 }

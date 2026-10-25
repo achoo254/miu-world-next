@@ -110,7 +110,26 @@
           "clue": "Mảnh bản đồ mang sắc xanh của biển khơi",
           "target": "dba-manh-ban-do-xanh"
         }
-      ]
+      ],
+      "en": {
+        "title": "Pick up 3 map pieces",
+        "goTo": "Search the white sandy beach: three map pieces",
+        "prompt": "Look closely along the white sand to find 3 map pieces:",
+        "items": [
+          {
+            "name": "Rolled map piece",
+            "clue": "A rolled-up scrap of parchment lying near the water's edge"
+          },
+          {
+            "name": "Corner map piece",
+            "clue": "A creased map corner tucked beside a rock"
+          },
+          {
+            "name": "Blue map piece",
+            "clue": "A piece of map in the blue of the open sea"
+          }
+        ]
+      }
     },
     {
       "id": "doc-nhat-ki",
@@ -148,6 +167,18 @@
         "answer": {
           "text": "Cần đi theo vỏ ốc mang số lớn hơn 50",
           "explanation": "Nhật kí viết rõ: \"đi theo những vỏ ốc có số lớn hơn 50\"."
+        },
+        "en": {
+          "guide": [
+            "Read the third line of the diary again.",
+            "Find which number the diary mentions.",
+            "Is that number bigger or smaller than 50?"
+          ],
+          "hint": "Line 3 has the words \"bigger than 50\".",
+          "answer": {
+            "text": "Follow the shells with a number bigger than 50",
+            "explanation": "The diary says clearly: \"follow the shells with numbers bigger than 50\"."
+          }
         }
       },
       "feedback": {
@@ -160,6 +191,29 @@
           "Đọc lại dòng thứ ba của nhật kí nhé {name}.",
           "Nhật kí dặn đi theo số lớn hơn hay bé hơn?",
           "Thử dò từng dòng xem số năm mươi đi với chữ nào."
+        ],
+        "en": {
+          "right": [
+            "Exactly! Now let's go and find the shells bigger than fifty.",
+            "{name} read the diary so carefully, not a detail missed!",
+            "Yes, the shells bigger than fifty will lead the way."
+          ],
+          "wrong": [
+            "Read the third line of the diary again, {name}.",
+            "Does the diary say to follow numbers bigger or smaller?",
+            "Go through each line and see which word goes with fifty."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the captain's diary",
+        "goTo": "Take the map pieces to the captain's tent",
+        "text": "CAPTAIN'S DIARY\nDay one: the ship reached Mystery Island at dawn.\nFrom the leaning coconut tree, follow the shells with numbers bigger than 50.\nThe shells will lead to a chest buried in the sand.\nCaptain Monkey",
+        "question": "According to the diary, which shells should you follow?",
+        "choices": [
+          "Shells with a number smaller than 50",
+          "Shells with a number bigger than 50",
+          "Pink shells"
         ]
       }
     },
@@ -174,16 +228,40 @@
       "logicType": "pattern",
       "prompt": "Quy luật vỏ ốc theo triều dâng: 4, 8, 12, 16, ... Vỏ ốc tiếp theo mang số mấy?",
       "elements": [
-        { "id": "e1", "label": "4" },
-        { "id": "e2", "label": "8" },
-        { "id": "e3", "label": "12" },
-        { "id": "e4", "label": "16" }
+        {
+          "id": "e1",
+          "label": "4"
+        },
+        {
+          "id": "e2",
+          "label": "8"
+        },
+        {
+          "id": "e3",
+          "label": "12"
+        },
+        {
+          "id": "e4",
+          "label": "16"
+        }
       ],
       "choices": [
-        { "id": "c1", "text": "18" },
-        { "id": "c2", "text": "20" },
-        { "id": "c3", "text": "22" },
-        { "id": "c4", "text": "24" }
+        {
+          "id": "c1",
+          "text": "18"
+        },
+        {
+          "id": "c2",
+          "text": "20"
+        },
+        {
+          "id": "c3",
+          "text": "22"
+        },
+        {
+          "id": "c4",
+          "text": "24"
+        }
       ],
       "answer": {
         "choice": "c2"
@@ -198,6 +276,18 @@
         "answer": {
           "text": "20",
           "explanation": "Dãy số đếm thêm 4: 4, 8, 12, 16, 20."
+        },
+        "en": {
+          "guide": [
+            "Each shell goes up by 4.",
+            "16 + 4 = 20.",
+            "Choose the answer 20 on the screen."
+          ],
+          "hint": "What is 16 plus 4?",
+          "answer": {
+            "text": "20",
+            "explanation": "The numbers count on in fours: 4, 8, 12, 16, 20."
+          }
         }
       },
       "feedback": {
@@ -210,6 +300,35 @@
           "Thử lấy 16 cộng thêm 4 nhé {name}.",
           "Đếm thêm 4 từ số 16 xem nào.",
           "Quan sát kỹ bước nhảy của các vỏ ốc nha."
+        ],
+        "en": {
+          "right": [
+            "Wonderful! Shell number 20 shines jade green!",
+            "{name} cracked the add-four pattern so precisely!",
+            "The sea waves clap for such a sharp mind!"
+          ],
+          "wrong": [
+            "Try adding 4 to 16, {name}.",
+            "Count on 4 from 16 and see.",
+            "Look closely at how far each shell jumps."
+          ]
+        }
+      },
+      "en": {
+        "title": "The sea shell pattern",
+        "goTo": "Go to the leaning coconut tree, where Grandma Mực the Fisher is mending her net",
+        "prompt": "The shells follow the rising tide: 4, 8, 12, 16, ... What number is on the next shell?",
+        "elements": [
+          "4",
+          "8",
+          "12",
+          "16"
+        ],
+        "choices": [
+          "18",
+          "20",
+          "22",
+          "24"
         ]
       }
     },
@@ -268,11 +387,22 @@
           "prompt": "So sánh hai xô sò biển: Xô A có 28 con sò, xô B có 35 con sò. Xô nào nhiều hơn?",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "Xô A nhiều hơn" },
-            { "id": "b", "text": "Xô B nhiều hơn" },
-            { "id": "c", "text": "Hai xô bằng nhau" }
+            {
+              "id": "a",
+              "text": "Xô A nhiều hơn"
+            },
+            {
+              "id": "b",
+              "text": "Xô B nhiều hơn"
+            },
+            {
+              "id": "c",
+              "text": "Hai xô bằng nhau"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Ghi ra hai số sò: 28 con ở xô A, 35 con ở xô B.",
@@ -290,10 +420,18 @@
               ],
               "hint": "28 has 2 tens and 35 has 3 tens; which bucket has more tens?",
               "answer": {
-                "text": "Bucket B has more (35 shells)",
+                "text": "Bucket B has more",
                 "explanation": "35 > 28 because 3 tens beat 2 tens, so bucket B holds more shells; the 8 ones in 28 cannot make up a missing ten."
               }
             }
+          },
+          "en": {
+            "prompt": "Compare two buckets of sea clams: bucket A has 28 clams, bucket B has 35 clams. Which bucket has more?",
+            "choices": [
+              "Bucket A has more",
+              "Bucket B has more",
+              "The two buckets are equal"
+            ]
           }
         },
         {
@@ -303,11 +441,22 @@
           "prompt": "Trên bãi cát có 14 chú còng gió, 5 chú nữa chạy lại. Có tất cả bao nhiêu chú? (14 + 5 = ?)",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "17 chú" },
-            { "id": "b", "text": "18 chú" },
-            { "id": "c", "text": "19 chú" }
+            {
+              "id": "a",
+              "text": "17 chú"
+            },
+            {
+              "id": "b",
+              "text": "18 chú"
+            },
+            {
+              "id": "c",
+              "text": "19 chú"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Bắt đầu từ 14 chú còng gió đang có trên bãi cát.",
@@ -329,6 +478,14 @@
                 "explanation": "14 + 5 = 19 because 4 + 5 = 9 ones and the ten stays; 17 and 18 stop counting on before all 5 crabs arrive."
               }
             }
+          },
+          "en": {
+            "prompt": "There are 14 ghost crabs on the sand, and 5 more run over. How many crabs are there altogether? (14 + 5 = ?)",
+            "choices": [
+              "17 crabs",
+              "18 crabs",
+              "19 crabs"
+            ]
           }
         },
         {
@@ -338,11 +495,22 @@
           "prompt": "Có 20 quả dừa trên cây, gió làm rụng 8 quả. Còn lại bao nhiêu quả dừa? (20 - 8 = ?)",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "12 quả" },
-            { "id": "b", "text": "13 quả" },
-            { "id": "c", "text": "14 quả" }
+            {
+              "id": "a",
+              "text": "12 quả"
+            },
+            {
+              "id": "b",
+              "text": "13 quả"
+            },
+            {
+              "id": "c",
+              "text": "14 quả"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Từ 20 quả dừa trên cây, bớt đi 8 quả bị gió làm rụng.",
@@ -364,6 +532,14 @@
                 "explanation": "20 - 8 = 12 because 10 - 8 = 2 and the other 10 makes 12; check it: 12 + 8 = 20."
               }
             }
+          },
+          "en": {
+            "prompt": "There are 20 coconuts on the tree and the wind knocks down 8. How many coconuts are left? (20 - 8 = ?)",
+            "choices": [
+              "12 coconuts",
+              "13 coconuts",
+              "14 coconuts"
+            ]
           }
         },
         {
@@ -373,11 +549,22 @@
           "prompt": "Dãy số sóng biển: 10, 20, 30, 40, ... Con số tiếp theo là số mấy?",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "45" },
-            { "id": "b", "text": "50" },
-            { "id": "c", "text": "60" }
+            {
+              "id": "a",
+              "text": "45"
+            },
+            {
+              "id": "b",
+              "text": "50"
+            },
+            {
+              "id": "c",
+              "text": "60"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Xem hai số liền nhau trong dãy số sóng biển cách nhau bao nhiêu.",
@@ -399,6 +586,14 @@
                 "explanation": "The wave pattern adds 10 each time, so 40 + 10 = 50; 45 adds only 5 and 60 skips a step."
               }
             }
+          },
+          "en": {
+            "prompt": "The wave pattern: 10, 20, 30, 40, ... What number comes next?",
+            "choices": [
+              "45",
+              "50",
+              "60"
+            ]
           }
         },
         {
@@ -408,11 +603,22 @@
           "prompt": "Ai là thuyền trưởng dũng cảm của con tàu thám hiểm Đảo bí ẩn?",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "Khỉ Thuyền Trưởng" },
-            { "id": "b", "text": "Bạn Rùa Biển" },
-            { "id": "c", "text": "Cá Heo Con" }
+            {
+              "id": "a",
+              "text": "Khỉ Thuyền Trưởng"
+            },
+            {
+              "id": "b",
+              "text": "Bạn Rùa Biển"
+            },
+            {
+              "id": "c",
+              "text": "Cá Heo Con"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Nhớ lại lúc tàu vừa cập bến Đảo bí ẩn: ai ra chào {name} đầu tiên?",
@@ -434,9 +640,23 @@
                 "explanation": "The Monkey Captain met {name} at the pier and asked for help with the map; neither the sea turtle nor the baby dolphin sails that ship."
               }
             }
+          },
+          "en": {
+            "prompt": "Who is the brave captain of the Mystery Island expedition ship?",
+            "choices": [
+              "Captain Monkey",
+              "Sea Turtle",
+              "Baby Dolphin"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Big Quiz Battle with the Sea Crab",
+        "bossName": "Giant Sea Crab",
+        "introDialogue": "Click-clack! I have 5 questions about the sea and the island, and each right answer takes 100 HP from me!",
+        "winDialogue": "I bow to you, sailor {name}! You are the cleverest and bravest on this island!"
+      }
     },
     {
       "id": "mo-ruong-cat",
@@ -472,5 +692,9 @@
       "so-sanh-so": 1,
       "phep-cong": 2
     }
+  },
+  "en": {
+    "title": "Mystery Island – Chapter 1: The Map Blown by the Wind",
+    "summary": "Just after landing, Captain Monkey's treasure map is blown all over the beach by the wind. {name} gathers the map pieces, reads the captain's diary, follows the right shells and opens the chest buried in the sand."
   }
 }

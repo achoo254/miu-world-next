@@ -95,7 +95,11 @@
         "toan2-cd2-da-cuoi-tron",
         "toan2-cd2-da-cuoi-det",
         "toan2-cd2-da-cuoi-vang"
-      ]
+      ],
+      "en": {
+        "title": "Pick up pebbles",
+        "goTo": "Pick up three pebbles on the Canal Pebble Bank"
+      }
     },
     {
       "id": "vien-da-so-hang",
@@ -254,6 +258,17 @@
         "answer": {
           "text": "Cặp 1: 5 + 7 = 12; Cặp 2: 9 + 4 = 13; Cặp 3: 6 + 5 = 11; Cặp 4: 8 + 6 = 14; Cặp 5: 5 + 8 = 13; Cặp 6: 7 + 7 = 14; Cặp 7: 9 + 6 = 15; Dây chuyền: 8 → (+ 7) → 15 → (– 2) → 13",
           "explanation": "Các tổng: 9 + 4 = 13, 6 + 5 = 11, 8 + 6 = 14, 5 + 8 = 13, 7 + 7 = 14, 9 + 6 = 15. Dây chuyền: 8 + 7 = 15, rồi 15 – 2 = 13."
+        },
+        "en": {
+          "guide": [
+            "The two addends on either side add up to the sum stone in the middle; pair 1 is the example.",
+            "In the chain, take the result of the stone before as the starting number for the next arrow."
+          ],
+          "hint": "6 + 5: take 4 from the 5 to make 6 up to 10, with 1 left, so it's 11.",
+          "answer": {
+            "text": "Pair 1: 5 + 7 = 12; Pair 2: 9 + 4 = 13; Pair 3: 6 + 5 = 11; Pair 4: 8 + 6 = 14; Pair 5: 5 + 8 = 13; Pair 6: 7 + 7 = 14; Pair 7: 9 + 6 = 15; Chain: 8 → (+ 7) → 15 → (– 2) → 13",
+            "explanation": "The sums: 9 + 4 = 13, 6 + 5 = 11, 8 + 6 = 14, 5 + 8 = 13, 7 + 7 = 14, 9 + 6 = 15. The chain: 8 + 7 = 15, then 15 – 2 = 13."
+          }
         }
       },
       "feedback": {
@@ -266,7 +281,19 @@
           "Một viên tổng bị khắc lệch nên nước vẫn rỉ, tính lại cặp đó nhé.",
           "Mũi tên có dấu trừ nghĩa là bớt đi chứ không thêm.",
           "Chỉ cộng hai số hạng của cùng một cặp với nhau thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Seven pairs of stones fit tightly, and the pond water has stopped trickling!",
+            "Beaver thumps his tail: every stone is in the right place.",
+            "The chain of stones runs smoothly, and Little Linh Fish flicks its tail in approval."
+          ],
+          "wrong": [
+            "One sum stone is carved wrongly so water still leaks; work that pair out again.",
+            "An arrow with a minus sign means taking away, not adding.",
+            "Only add the two addends of the same pair together."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -290,7 +317,12 @@
         "b7": "8 + 7",
         "b8": "8 + 7 - 2"
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "The addend stone",
+        "goTo": "Bring the stones back to the Canal Bank by the Market for Beaver",
+        "prompt": "Beaver lays the stones in pairs: the two outer stones are addends, and the stone placed in the middle is carved with the sum. The first pair is already carved. Carve the rest, then follow the arrows along the chain to the end."
+      }
     },
     {
       "id": "quat-chung-o-cam",
@@ -346,6 +378,17 @@
         "answer": {
           "text": "8 + 4 và 9 + 3 – ổ 12; 6 + 7 – ổ 13; 7 + 4 – ổ 11",
           "explanation": "8 + 4 = 12 và 9 + 3 = 12 nên hai quạt này chung ổ 12; 6 + 7 = 13; 7 + 4 = 11."
+        },
+        "en": {
+          "guide": [
+            "Work out the result written on each fan.",
+            "Two fans with the same result plug into one socket."
+          ],
+          "hint": "8 + 4 and 9 + 3 give the same result.",
+          "answer": {
+            "text": "8 + 4 and 9 + 3 – Socket 12; 6 + 7 – Socket 13; 7 + 4 – Socket 11",
+            "explanation": "8 + 4 = 12 and 9 + 3 = 12, so these two fans share Socket 12; 6 + 7 = 13; 7 + 4 = 11."
+          }
         }
       },
       "feedback": {
@@ -358,7 +401,19 @@
           "Một chiếc quạt cắm nhầm ổ nên đứng im không chạy.",
           "Chỉ những quạt có cùng kết quả mới chung một ổ.",
           "7 + 4: lấy 3 của số 4 bù cho 7 thành 10, còn 1, vậy được mấy?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Whirr! Every fan spins fast, and the wooden shed is lovely and cool!",
+            "The two twelve fans share one socket, and Beaver nods to praise your sharp eyes.",
+            "Beaver stands in front of the fan, his fur flapping."
+          ],
+          "wrong": [
+            "One fan is plugged into the wrong socket so it stands still.",
+            "Only fans with the same result share a socket.",
+            "7 + 4: take 3 from the 4 to make 7 up to 10, with 1 left. What does that make?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -368,7 +423,12 @@
           "quat-7-4": "nhom-o-cam-11"
         }
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Fans sharing one socket",
+        "goTo": "Step into the Canal Wooden Shed, where it is sweltering inside",
+        "prompt": "The wooden shed has five electric rattan fans. The sample fan 9 + 6 is already plugged into Socket 15. Every other fan must be plugged into the socket marked with the result of its sum, and two fans have to share one socket. Please plug them in for Beaver!"
+      }
     },
     {
       "id": "toa-cho-go-lon-nhat",
@@ -412,6 +472,17 @@
         "answer": {
           "text": "Toa 7 + 8 (bằng 15)",
           "explanation": "9 + 5 = 14, 7 + 8 = 15, 6 + 6 = 12, 8 + 5 = 13; kết quả lớn nhất là 15, của toa 7 + 8."
+        },
+        "en": {
+          "guide": [
+            "Work out the result for each car.",
+            "Compare the four results: 14, 15, 12, 13."
+          ],
+          "hint": "The car with the greatest result is not the first one.",
+          "answer": {
+            "text": "The car 7 + 8 (equal to 15)",
+            "explanation": "9 + 5 = 14, 7 + 8 = 15, 6 + 6 = 12, 8 + 5 = 13; the greatest result is 15, on the car 7 + 8."
+          }
         }
       },
       "feedback": {
@@ -424,14 +495,31 @@
           "Toa đó chưa phải lớn nhất, còn toa khác hơn nữa.",
           "Tính đủ cả bốn toa rồi mới so sánh nha.",
           "9 + 5 bằng 14, còn 7 + 8 thì sao?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The fifteen car carries the most stones, and the train chugs off!",
+            "You compared all four cars without mixing one up, {name} is really good.",
+            "Jackfruit Elephant lifts the biggest rock with his trunk and sets it on the 7 + 8 car."
+          ],
+          "wrong": [
+            "That car is not the greatest yet, since another one is bigger still.",
+            "Work out all four cars before comparing.",
+            "9 + 5 equals 14, so what about 7 + 8?"
+          ]
+        }
       },
       "answer": {
         "fills": {
           "b1": "7-8"
         }
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "The heaviest wood wagon",
+        "goTo": "Run to the Wooden Boat Stall by the Gourd Stalls, where Jackfruit Elephant is pushing a wooden train with his trunk",
+        "prompt": "Jackfruit Elephant herds four wooden train cars onto the field to carry stones for Beaver. Each car carries a sum: 9 + 5, 7 + 8, 6 + 6, 8 + 5. The car with the greatest result carries the most stones."
+      }
     },
     {
       "id": "toa-nhe-hon-15",
@@ -468,6 +556,17 @@
         "answer": {
           "text": "9 + 3 và 5 + 8",
           "explanation": "9 + 3 = 12 và 5 + 8 = 13 bé hơn 14; 6 + 8 = 14 và 7 + 9 = 16 thì không."
+        },
+        "en": {
+          "guide": [
+            "Work out each car, then compare it with 14.",
+            "Equal to 14 is not less than 14."
+          ],
+          "hint": "The car 6 + 8 is exactly 14, too heavy for the bridge.",
+          "answer": {
+            "text": "9 + 3 and 5 + 8",
+            "explanation": "9 + 3 = 12 and 5 + 8 = 13 are less than 14; 6 + 8 = 14 and 7 + 9 = 16 are not."
+          }
         }
       },
       "feedback": {
@@ -480,7 +579,19 @@
           "Bằng 14 thì chưa bé hơn 14 đâu nha.",
           "Còn một toa nhẹ hơn 14 chưa được chọn.",
           "7 + 9 bằng 16, lớn hơn 14 rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two light cars roll smoothly over the wooden bridge, correct!",
+            "The car 6 + 8 equals exactly 14, and you weren't fooled.",
+            "Jackfruit Elephant trumpets, and the second train crosses the canal slowly."
+          ],
+          "wrong": [
+            "Being equal to 14 is not the same as being less than 14.",
+            "One car lighter than 14 has not been chosen yet.",
+            "7 + 9 equals 16, which is already bigger than 14."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -488,7 +599,17 @@
           "5-8"
         ]
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Wagons lighter than fifteen",
+        "prompt": "The second train pulls four cars of firewood, each marked with a sum. The wooden bridge over the canal can only take a car whose result is less than 14. Choose the cars that are allowed over the bridge.",
+        "choices": [
+          "6 + 8",
+          "9 + 3",
+          "7 + 9",
+          "5 + 8"
+        ]
+      }
     },
     {
       "id": "hai-ly-hoi-cach-xep",
@@ -594,6 +715,17 @@
         "answer": {
           "text": "Chồng có nhiều khối gỗ nhất là chồng Xanh.; Chồng xanh và chồng vàng có tất cả 13 khối gỗ.",
           "explanation": "Chồng đỏ có 6 khối, chồng xanh có 8 khối, chồng vàng có 5 khối nên chồng xanh nhiều nhất; xanh và vàng có 8 + 5 = 13 khối."
+        },
+        "en": {
+          "guide": [
+            "Count the blocks in each stack: the top layer plus the bottom layer.",
+            "The second sentence only adds the blue stack and the yellow stack, not the red stack."
+          ],
+          "hint": "The blue stack has 8 blocks and the yellow stack has 5 blocks.",
+          "answer": {
+            "text": "The stack with the most wooden blocks is the Blue stack.; The blue stack and the yellow stack have 13 wooden blocks altogether.",
+            "explanation": "The red stack has 6 blocks, the blue stack has 8 blocks and the yellow stack has 5 blocks, so blue has the most; blue and yellow have 8 + 5 = 13 blocks."
+          }
         }
       },
       "feedback": {
@@ -606,7 +738,19 @@
           "Đừng quên mấy khối nằm ở tầng dưới bị che khuất.",
           "Câu sau chỉ lấy chồng xanh cộng chồng vàng thôi.",
           "Chồng nhiều khối nhất có bậc thang cao nhất đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The blue stack plugs the leak completely, and the pond water rises with a gurgle!",
+            "Beaver nails the thirteen wooden blocks firmly in place.",
+            "You counted the top and bottom layers without missing a block."
+          ],
+          "wrong": [
+            "Don't forget the blocks hidden in the lower layer.",
+            "The second sentence only adds the blue stack and the yellow stack.",
+            "The stack with the most blocks has the tallest steps."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -617,7 +761,11 @@
       "expression": {
         "b2": "8 + 5"
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Stack of wooden blocks",
+        "prompt": "Beaver piles wooden blocks into three stacks. The red stack: 6 blocks in two layers, 3 blocks on each. The blue stack: 8 blocks arranged as steps of 4, 3, 1. The yellow stack: 5 blocks in one long row."
+      }
     },
     {
       "id": "san-bong-ro-ven-ao",
@@ -636,6 +784,17 @@
         "answer": {
           "text": "8 chú vịt",
           "explanation": "Hàng vịt có tất cả 5 + 3 = 8 (chú)."
+        },
+        "en": {
+          "guide": [
+            "When more ducks run over, the line gets longer: it's an addition.",
+            "Both numbers are small, so work out 5 + 3 in your head."
+          ],
+          "hint": "Count on from 5 for three steps.",
+          "answer": {
+            "text": "8 ducklings",
+            "explanation": "The line of ducks has 5 + 3 = 8 (ducklings) altogether."
+          }
         }
       },
       "feedback": {
@@ -648,13 +807,30 @@
           "Có thêm vịt chạy tới thì đông hơn, không ít đi.",
           "Đếm tiếp: 6, 7, 8 là xong.",
           "Cộng số vịt đang xếp hàng với số vịt mới tới nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eight ducklings in single file, and their quacks ring all over the pond bank!",
+            "Adding friends means adding, and {name} worked it out in a flash.",
+            "Stretchy Giraffe cranes her neck to count along, then nods to praise you."
+          ],
+          "wrong": [
+            "When more ducks run over, there are more, not fewer.",
+            "Count on: 6, 7, 8 and you're done.",
+            "Add the ducks lining up to the ducks that have just arrived."
+          ]
+        }
       },
       "answer": {
         "value": 8
       },
       "expression": "5 + 3",
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "Throw the ball into the bamboo basket",
+        "goTo": "Go to the Bamboo Basket Toss Ground, where Stretchy Giraffe is stretching her neck to throw balls with a thump",
+        "question": "Stretchy Giraffe peers down at the pond bank: 5 ducklings are lining up to bathe, then 3 more waddle over to join the line. How many ducklings are in the line then?"
+      }
     },
     {
       "id": "bang-cong-tren-van",
@@ -762,6 +938,17 @@
         "answer": {
           "text": "Tấm mẫu: 9 và 3, tổng 12; Tấm 2: 8 và 5, tổng 13; Tấm 3: 7 và 7, tổng 14; Tấm 4: 9 và 4, tổng 13; Tấm 5: 6 và 8, tổng 14; Tấm 6: 5 và 6, tổng 11",
           "explanation": "8 + 5 = 13, 7 + 7 = 14, 9 + 4 = 13, 6 + 8 = 14, 5 + 6 = 11."
+        },
+        "en": {
+          "guide": [
+            "For each plank, add the two addends to get the sum.",
+            "The sample plank 9 + 3 = 12 shows you how."
+          ],
+          "hint": "9 + 4: take 1 from the 4 to make 9 up to 10, with 3 left, so it's 13.",
+          "answer": {
+            "text": "Sample plank: 9 and 3, sum 12; Plank 2: 8 and 5, sum 13; Plank 3: 7 and 7, sum 14; Plank 4: 9 and 4, sum 13; Plank 5: 6 and 8, sum 14; Plank 6: 5 and 6, sum 11",
+            "explanation": "8 + 5 = 13, 7 + 7 = 14, 9 + 4 = 13, 6 + 8 = 14, 5 + 6 = 11."
+          }
         }
       },
       "feedback": {
@@ -774,7 +961,19 @@
           "Một tấm ván bị khắc lệch, cộng lại tấm đó nhé.",
           "Hai số hạng của cùng một tấm mới cộng với nhau.",
           "6 + 8 đổi chỗ thành 8 + 6 cho dễ nhẩm."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The sluice gate opens and shuts smoothly thanks to the sums carved right on every plank!",
+            "All five planks match, so Beaver doesn't have to carve any again.",
+            "Little Linh Fish pops up to look, then flicks its tail in approval."
+          ],
+          "wrong": [
+            "One plank is carved wrongly, so add that plank again.",
+            "Only the two addends of the same plank are added together.",
+            "Swap 6 + 8 round to 8 + 6 to make it easier in your head."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -792,7 +991,12 @@
         "b4": "6 + 8",
         "b5": "5 + 6"
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Addition table on the plank",
+        "goTo": "Back at the Canal Bank by the Market, Reed Beaver is carving numbers onto the plank for the sluice gate",
+        "prompt": "Beaver carves more pairs of numbers onto planks to make a sluice gate. Each plank is carved with two addends, and the sum is carved below."
+      }
     },
     {
       "id": "ca-sau-len-bo",
@@ -810,6 +1014,17 @@
         "answer": {
           "text": "14 chú ếch",
           "explanation": "Dưới ao còn 18 – 4 = 14 (chú ếch)."
+        },
+        "en": {
+          "guide": [
+            "When frogs hop onto the bank, the pond has fewer: it's a subtraction.",
+            "Take the number of frogs at the start and subtract the ones that went onto the bank."
+          ],
+          "hint": "18 take away 4: only the ones digit changes.",
+          "answer": {
+            "text": "14 frogs",
+            "explanation": "The pond has 18 – 4 = 14 (frogs) left."
+          }
         }
       },
       "feedback": {
@@ -822,13 +1037,29 @@
           "Ếch nhảy lên bờ rồi thì dưới ao ít đi chứ.",
           "Lấy 18 bớt 4 nhé, không cộng đâu.",
           "8 bớt 4 còn 4, vậy 18 bớt 4 còn bao nhiêu?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fourteen frogs are left in the pond, croaking across the water!",
+            "Going onto the bank means taking away, and {name} subtracted without a slip.",
+            "Little Linh Fish breathes out in relief and blows a string of bubbles."
+          ],
+          "wrong": [
+            "Once the frogs hop onto the bank, the pond has fewer.",
+            "Take 4 away from 18, don't add.",
+            "8 take away 4 leaves 4, so how many does 18 take away 4 leave?"
+          ]
+        }
       },
       "answer": {
         "value": 14
       },
       "expression": "18 - 4",
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "Crocodile sunbathing",
+        "question": "Little Linh Fish pops up to boast: there were 18 frogs in the pond, then 4 of them hopped onto the bank to sunbathe. How many frogs are left in the pond?"
+      }
     },
     {
       "id": "dau-bat-vit",
@@ -924,6 +1155,17 @@
         "answer": {
           "text": "7 + 4 – vịt 11; 8 + 5 – vịt 13; 7 + 6 – vịt 13; 6 + 9 – vịt 15; 8 + 6 – vịt 14; 7 + 9 – vịt 16; 5 + 7 – vịt 12; 9 + 4 – vịt 13; 8 + 9 – vịt 17; 7 + 8 – vịt 15",
           "explanation": "7 + 4 = 11, 8 + 5 = 13, 7 + 6 = 13, 6 + 9 = 15, 8 + 6 = 14, 7 + 9 = 16, 5 + 7 = 12, 9 + 4 = 13, 8 + 9 = 17, 7 + 8 = 15."
+        },
+        "en": {
+          "guide": [
+            "Work out the result of the sum on the square where the piece stopped.",
+            "Catch the duck marked with exactly that number."
+          ],
+          "hint": "The square 8 + 9: take 1 from the 9 to make 8 up to 9, then carry on, giving 17.",
+          "answer": {
+            "text": "7 + 4 – Duck 11; 8 + 5 – Duck 13; 7 + 6 – Duck 13; 6 + 9 – Duck 15; 8 + 6 – Duck 14; 7 + 9 – Duck 16; 5 + 7 – Duck 12; 9 + 4 – Duck 13; 8 + 9 – Duck 17; 7 + 8 – Duck 15",
+            "explanation": "7 + 4 = 11, 8 + 5 = 13, 7 + 6 = 13, 6 + 9 = 15, 8 + 6 = 14, 7 + 9 = 16, 5 + 7 = 12, 9 + 4 = 13, 8 + 9 = 17, 7 + 8 = 15."
+          }
         }
       },
       "feedback": {
@@ -936,7 +1178,19 @@
           "Con vịt đó ghi số khác với kết quả của ô rồi.",
           "Tính phép cộng ở ô trước khi chộp vịt nha.",
           "Hai ô khác nhau vẫn có thể cùng bắt một loại vịt đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Quack quack! Every duck is caught with the right number, and {name} wins this round!",
+            "Beaver throws up both hands in surrender: you work so fast.",
+            "The ducks line up and waddle back to their pen, a wonderful round."
+          ],
+          "wrong": [
+            "That duck is marked with a different number from the square's result.",
+            "Work out the sum on the square before grabbing a duck.",
+            "Two different squares can still catch the same kind of duck."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -952,7 +1206,12 @@
           "o-7-8": "nhom-vit-15"
         }
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "The duck-catching game",
+        "goTo": "Over to the Duck Pond Bank, where Beaver has finished drawing the game board",
+        "prompt": "Beaver draws a CATCH THE DUCK game board for {name} to play against him. When a piece stops on a square, say the result of that square's sum and catch the duck marked with exactly that number. In this round both players' pieces stop on the ten squares below: take each square to the duck marked with the right result."
+      }
     },
     {
       "id": "huy-hieu-ky-su-dap",
@@ -984,5 +1243,9 @@
       "phep-cong": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Reed Beaver's Stone Dam",
+    "summary": "Reed Beaver builds a small dam by the canal to keep water in the duck pond beside the market, and every stone is carved with a sum. {name} works out each stone, plugs in fans for the wooden shed, picks train cars with Jackfruit Elephant, counts friends tossing balls with Stretchy Giraffe, then plays Catch the Duck against Beaver."
   }
 }

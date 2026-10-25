@@ -112,7 +112,11 @@
         "tv2-t15-mam-la",
         "tv2-t15-bat-go",
         "tv2-t15-dua-tre"
-      ]
+      ],
+      "en": {
+        "title": "Trays and bowls scattered about",
+        "goTo": "Look for the leaf tray, the wooden bowls and the bamboo chopsticks on the rocky ground before the cave"
+      }
     },
     {
       "id": "khoi-dong",
@@ -164,6 +168,17 @@
         "answer": {
           "text": "Hai bố con chơi trò mở một quán nhỏ trong nhà.",
           "explanation": "Bố rủ: hôm nay nhà mình mở quán, Bin làm chủ quán còn bố làm khách."
+        },
+        "en": {
+          "guide": [
+            "Read Dad's words at the start of the story.",
+            "The name of the game is in the sentence where Dad invites Bin."
+          ],
+          "hint": "In the game, plane-tree leaves are money and white pebbles are sweets.",
+          "answer": {
+            "text": "Father and son play a game of running a little shop at home.",
+            "explanation": "Dad invites: today our house opens a shop, Bin is the shopkeeper and Dad is the customer."
+          }
         }
       },
       "feedback": {
@@ -176,9 +191,31 @@
           "Ngoài trời đang mưa rả rích, thả diều sao được nhỉ? Đọc lại đoạn đầu nhé.",
           "Hai bố con ở trong nhà, đâu có ra bờ ao câu cá.",
           "Tìm câu bố rủ Bin ngay sau đoạn mở đầu xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, the shop game! The lion cub's tummy rumbles when he hears the word sweets.",
+            "Correct! Leaves for money, pebbles for sweets, it's a proper shop.",
+            "Papa Maned Lion nods: {name} reads faster than Dad reads the morning paper."
+          ],
+          "wrong": [
+            "It's drizzling outside, so how could they fly a kite? Read the beginning again.",
+            "Father and son are indoors, not fishing at the pond.",
+            "Look for the sentence where Dad invites Bin, just after the opening."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The story on the rock wall",
+        "goTo": "Go to the letter-carved rock wall, where Papa Maned Lion has copied the story «Quán nhỏ» about a father and son",
+        "question": "What game do Bin and his dad play together?",
+        "choices": [
+          "flying a kite",
+          "running a shop",
+          "going fishing"
+        ]
+      }
     },
     {
       "id": "xung-ho",
@@ -215,6 +252,17 @@
         "answer": {
           "text": "Bin gọi bố là quý khách.",
           "explanation": "Trong trò chơi, Bin là chủ quán nên gọi người mua hàng lịch sự là quý khách."
+        },
+        "en": {
+          "guide": [
+            "Read Bin's greeting when Dad knocks at the door.",
+            "What word does Bin use for the person who comes to buy?"
+          ],
+          "hint": "Bin asks: \"Quý khách muốn mua gì ạ?\"",
+          "answer": {
+            "text": "Bin calls Dad «quý khách».",
+            "explanation": "In the game, Bin is the shopkeeper, so he politely calls the person buying «quý khách»."
+          }
         }
       },
       "feedback": {
@@ -227,9 +275,31 @@
           "Ở nhà thì gọi bố, nhưng trong quán thì khác cơ.",
           "\"Cậu\" là cách bạn bè gọi nhau, đọc lại lời chào của Bin nhé.",
           "Tìm câu Bin hỏi bố muốn mua gì xem Bin gọi ra sao."
-        ]
+        ],
+        "en": {
+          "right": [
+            "«Quý khách»! It sounds as formal as a very important guest.",
+            "The lion cub tries it at once: \"Xin chào quý khách!\" and rolls on the ground laughing.",
+            "Right, in role play you have to address people properly."
+          ],
+          "wrong": [
+            "At home you say «bố», but in the shop it's different.",
+            "«Cậu» is how friends call each other. Read Bin's greeting again.",
+            "Find what Bin asks Dad he wants to buy, and see what he calls him."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "What does Bin call Dad?",
+        "goTo": "Dash out to the rock ledge at the cave mouth, where Tũn the Lion Cub is clutching his tummy laughing",
+        "prompt": "The lion cub giggles: Dad being called a customer? When they play shop, what word does Bin call Dad?",
+        "choices": [
+          "bố",
+          "cậu",
+          "quý khách"
+        ]
+      }
     },
     {
       "id": "me-nho-lai",
@@ -266,6 +336,17 @@
         "answer": {
           "text": "Mẹ nhớ bố từng hứa sẽ dạy Bin cách nói lễ phép qua một trò chơi.",
           "explanation": "Thấy con đón làn bằng hai tay và nói năng nhẹ nhàng, mẹ nhớ lời bố hứa và hiểu trò chơi ấy là quán nhỏ."
+        },
+        "en": {
+          "guide": [
+            "Read the end of the story.",
+            "After Bin says \"Mẹ vất vả rồi ạ\", what does Mum think?"
+          ],
+          "hint": "Mum realises that the game Dad mentioned the other day was the little shop.",
+          "answer": {
+            "text": "Mum remembers Dad promised to teach Bin to speak politely through a game.",
+            "explanation": "Seeing her son take the basket with both hands and speak gently, Mum remembers Dad's promise and understands the game was the little shop."
+          }
         }
       },
       "feedback": {
@@ -278,9 +359,31 @@
           "Chuyện rau cỏ truyện đâu có nhắc, đọc lại đoạn cuối nhé.",
           "Mẹ đang vui vì con ngoan, chưa nghĩ tới chuyện đón bà đâu.",
           "Tìm câu có chữ \"mẹ chợt nhớ ra\" xem mẹ nhớ điều gì."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, Mum remembers Dad's promise and understands why her child is so well-behaved.",
+            "Bờm tears up: Dad wants the cub to remember the times we play together too.",
+            "Lovely, {name}, this ending is so warm."
+          ],
+          "wrong": [
+            "The story doesn't mention vegetables. Read the ending again.",
+            "Mum is happy her child is well-behaved, and isn't thinking about fetching Grandma.",
+            "Find the sentence with the words \"mẹ chợt nhớ ra\" to see what Mum remembers."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The basket that makes Mum remember",
+        "goTo": "Back to the letter-carved rock wall to read on to the part where Mum comes home from the market",
+        "question": "Seeing Bin take the basket with both hands, what does Mum suddenly remember?",
+        "choices": [
+          "Mum remembers she hasn't bought enough vegetables",
+          "Mum remembers Dad's promise to teach their son manners through a game",
+          "Mum remembers she has to go and fetch Grandma"
+        ]
+      }
     },
     {
       "id": "net-ngoan",
@@ -317,6 +420,17 @@
         "answer": {
           "text": "Bin biết nói năng và cư xử lễ phép.",
           "explanation": "Trong trò chơi Bin dùng lời xin chào, xin phép, cảm ơn và nhận đồ bằng hai tay, đó là lễ phép trong lời nói và cử chỉ."
+        },
+        "en": {
+          "guide": [
+            "What words does Bin use to greet and answer customers?",
+            "How does Bin take money and receive the basket?"
+          ],
+          "hint": "Bin says \"xin chào\", \"xin phép\", \"cảm ơn\" and receives things with both hands.",
+          "answer": {
+            "text": "Bin learns to speak and behave politely.",
+            "explanation": "In the game Bin uses words of greeting, asking permission and thanks and receives things with both hands, which is politeness in both words and gestures."
+          }
         }
       },
       "feedback": {
@@ -329,9 +443,31 @@
           "Truyện không nói chuyện tính tiền nhanh hay chậm đâu.",
           "Dọn đồ chơi là việc tốt, nhưng truyện kể về lời nói và cách đón đồ cơ.",
           "Nhớ lại những lời Bin nói với khách nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Hello, may I, thank you, so well-behaved.",
+            "The lion cub tries taking a plane-tree leaf with both front paws, trembling but looking quite the part.",
+            "Exactly, Bin carries that good manner with him even outside the shop."
+          ],
+          "wrong": [
+            "The story doesn't say anything about counting money fast or slow.",
+            "Tidying toys is good, but the story is about words and how to receive things.",
+            "Remember the words Bin says to customers."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Good manners Dad teaches",
+        "goTo": "Into the warm stone cave, where Papa Maned Lion is smoothing his mane and waiting for {name}",
+        "prompt": "Bờm strokes his mane and winks at {name}: you can learn while you play. Through the shop game, what good manner did Dad help Bin learn?",
+        "choices": [
+          "Counting money very fast",
+          "Speaking gently and politely to everyone",
+          "Tidying up toys by himself after playing"
+        ]
+      }
     },
     {
       "id": "loi-noi-lich-su",
@@ -371,6 +507,17 @@
         "answer": {
           "text": "Cho tôi xin một đĩa kẹo; và: Dạ, xin phép bác cho cháu mua một viên kẹo ạ.",
           "explanation": "Hai câu đầu và cuối có \"xin\", \"xin phép\", \"dạ\", \"ạ\"; câu \"Đưa kẹo đây mau!\" nghe như ra lệnh nên chưa lịch sự."
+        },
+        "en": {
+          "guide": [
+            "Read each sentence aloud in a gentle voice.",
+            "Polite sentences often have «xin», «xin phép», «dạ» or «ạ»."
+          ],
+          "hint": "Two sentences are polite; the other sounds like an order.",
+          "answer": {
+            "text": "May I please have a plate of sweets?; and: Excuse me, Auntie, may I please buy one sweet?",
+            "explanation": "The first and last sentences have «xin», «xin phép», «dạ» and «ạ»; \"Đưa kẹo đây mau!\" sounds like an order, so it isn't polite."
+          }
         }
       },
       "feedback": {
@@ -383,9 +530,31 @@
           "Câu \"Đưa kẹo đây mau!\" nghe như quát ấy, chủ quán sợ mất.",
           "Còn một câu lịch sự nữa chưa được chọn đâu.",
           "Tìm những câu có chữ \"xin\" nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Vịt Bầu is so touched, and quacks thank you three times in a row.",
+            "Exactly the two polite sentences! The lion cub shopkeeper sets out the sweets at once.",
+            "There's «xin», «dạ» and «ạ»… {name} has sharp ears."
+          ],
+          "wrong": [
+            "\"Đưa kẹo đây mau!\" sounds like shouting, and the shopkeeper is scared.",
+            "There's one more polite sentence you haven't picked.",
+            "Look for the sentences with the word «xin»."
+          ]
+        }
       },
-      "objective": "cau-gioi-thieu"
+      "objective": "cau-gioi-thieu",
+      "en": {
+        "title": "Three ways to ask for candy",
+        "goTo": "Out to the feast tray in the middle of the cave, where Plum Fox is leading the guest Vịt Bầu to a seat",
+        "prompt": "The guest of honour Vịt Bầu waddles into the shop! The lion cub practises being a shopkeeper and hears the customer ask to buy sweets in three different ways. Which of these sentences are polite?",
+        "choices": [
+          "May I please have a plate of sweets?",
+          "Hand over the sweets, now!",
+          "Excuse me, Auntie, may I please buy one sweet?"
+        ]
+      }
     },
     {
       "id": "dong-vai-goi-mon",
@@ -509,6 +678,17 @@
         "answer": {
           "text": "nến, nai, nước chanh; cháu; cháo; lau",
           "explanation": "Nến, nai, nước chanh là tên ba vật; cháu chào ông bà, cháo gà nóng hổi và lau bàn là ba từ đúng vần."
+        },
+        "en": {
+          "guide": [
+            "Say the name of each thing aloud and listen: does it begin with l or n?",
+            "Say the whole sentence aloud and listen to the end: is it «au» or «ao»?"
+          ],
+          "hint": "A candle lights up on a birthday cake; a child greets Grandpa and Grandma; porridge is cooked from rice; «lau» means to wipe clean.",
+          "answer": {
+            "text": "nến (candle), nai (deer), nước chanh (lemonade); cháu (grandchild); cháo (porridge); lau (wipe)",
+            "explanation": "«Nến», «nai» and «nước chanh» name the three things; \"cháu chào ông bà\", \"cháo gà nóng hổi\" and \"lau bàn\" are the three words with the right rhyme."
+          }
         }
       },
       "feedback": {
@@ -521,9 +701,26 @@
           "Đọc to lên nào: nến hay lến? Tai mình sẽ mách đấy.",
           "Người nhỏ chào ông bà bằng tiếng \"cháu\", viết vần au nhé.",
           "Lau bàn cho sạch là \"lau\", thử đổi vần xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All right! The lion cub praises: {name} never mixes up sounds!",
+            "Cháu chào, cháo thơm, lau sạch bàn, it sounds like a meal at Grandma's house.",
+            "The three riddle things have names now, and Dad Lion nods happily."
+          ],
+          "wrong": [
+            "Say it aloud: «nến» or «lến»? Your ears will tell you.",
+            "A little one greets grandparents with the word «cháu», written with «au».",
+            "Wiping a table clean is «lau»; try swapping the rhyme."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Words nến and nai, and rhymes ao and au",
+        "goTo": "Tũn the Lion Cub drags three things up to the rock ledge at the cave mouth to show off",
+        "prompt": "The lion cub brings out three riddle things and three of Dad's sentences. Read carefully and choose the correct spelling: the first three begin with l or n, and for the last three choose the rhyme «ao» or «au»."
+      }
     },
     {
       "id": "tu-chi-tinh-cam",
@@ -577,6 +774,17 @@
         "answer": {
           "text": "thương yêu, biết ơn, che chở, đùm bọc",
           "explanation": "Bốn từ ấy nói về tình cảm giữa người thân; gọn gàng chỉ nếp sống, chạy nhảy chỉ hoạt động."
+        },
+        "en": {
+          "guide": [
+            "Words for feelings show how one person treats another.",
+            "Try saying: \"Con … bố mẹ\" or \"Bố mẹ … con\" with each word."
+          ],
+          "hint": "«Gọn gàng» is about tidy habits and «chạy nhảy» is an action; neither is a feeling.",
+          "answer": {
+            "text": "thương yêu (love), biết ơn (gratitude), che chở (protect), đùm bọc (look after)",
+            "explanation": "Those four words are about feelings between family members; «gọn gàng» describes habits and «chạy nhảy» describes an action."
+          }
         }
       },
       "feedback": {
@@ -589,9 +797,34 @@
           "Thử nói \"Bố mẹ gọn gàng con\" xem, nghe có lạ không?",
           "Chạy nhảy là việc mình làm, chưa phải tình cảm với người thân.",
           "Còn thiếu một từ chỉ tình cảm đấy, đọc lại cả sáu từ nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four warm words carved on the wall! The stone cave feels a few degrees warmer.",
+            "All of them, and the lion cub reads out: \"Con biết ơn bố!\"",
+            "Perfectly chosen, not one word wrong, well done {name}."
+          ],
+          "wrong": [
+            "Try saying \"Bố mẹ gọn gàng con\": doesn't it sound strange?",
+            "Running about is something you do, not a feeling for family.",
+            "One word for a feeling is still missing; read all six words again."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-tim-tu"
+      "objective": "tu-ngu-tinh-cam-tim-tu",
+      "en": {
+        "title": "Words for family feelings",
+        "goTo": "Follow Papa Maned Lion to the letter-carved rock wall, to a blank space for carving words",
+        "prompt": "Bờm wants to carve on the cave wall words about the love the whole lion family has for each other. Choose all the words for feelings between family members.",
+        "choices": [
+          "thương yêu",
+          "gọn gàng",
+          "biết ơn",
+          "che chở",
+          "chạy nhảy",
+          "đùm bọc"
+        ]
+      }
     },
     {
       "id": "tinh-cach-cua-bo",
@@ -667,6 +900,17 @@
         "answer": {
           "text": "kiên nhẫn, hóm hỉnh, nghiêm khắc, công bằng, hiền hậu",
           "explanation": "Năm từ ấy nói bố là người thế nào; đóng ghế, đùa với mình, nói dối là những việc xảy ra, không phải tính cách của bố."
+        },
+        "en": {
+          "guide": [
+            "Words for character show what kind of person Dad is.",
+            "Try saying: \"Dad is very …\" with each card."
+          ],
+          "hint": "Five words are character; the other three cards are actions.",
+          "answer": {
+            "text": "kiên nhẫn (patient), hóm hỉnh (witty), nghiêm khắc (strict), công bằng (fair), hiền hậu (kind)",
+            "explanation": "Those five words say what kind of person Dad is; «đóng ghế», «đùa với mình» and «nói dối» are things that happen, not Dad's character."
+          }
         }
       },
       "feedback": {
@@ -679,9 +923,26 @@
           "Thử nói \"Bố rất đóng ghế\" xem, nghe có xuôi không?",
           "Nói dối là việc của bạn nhỏ, đâu phải tính cách của bố.",
           "Còn một tính cách nằm nhầm giỏ, đọc lại câu cuối đoạn văn nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five character words in the right basket! Bờm accepts all five, especially \"witty\".",
+            "Right! Vịt Bầu is so impressed that he asks {name} to describe his dad too.",
+            "Neatly sorted, no card went astray."
+          ],
+          "wrong": [
+            "Try saying \"Dad is very building a chair\": does it sound right?",
+            "Telling a lie is what the child did, not Dad's character.",
+            "One character word is in the wrong basket; read the last sentence of the paragraph again."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "What kind of person is Dad?",
+        "goTo": "Back to the feast tray in the middle of the cave, where Vịt Bầu is slurping noodles and posing a riddle",
+        "prompt": "Vịt Bầu challenges the lion cub: what kind of person is your dad? He reads out a paragraph a child wrote about their own dad: \"My dad is a carpenter. When he shows me how to make a little chair, he is very patient, or «kiên nhẫn». When he jokes with me, he is witty, or «hóm hỉnh», and the whole family laughs. The day I told a lie, he was strict, or «nghiêm khắc», but never raised his voice. With the two of us siblings, he is always fair, or «công bằng», and kind, or «hiền hậu».\"\nDrag each card into the right basket."
+      }
     },
     {
       "id": "chuyen-cuoi-tu-duong",
@@ -779,6 +1040,17 @@
         "answer": {
           "text": "Bin ơi! … chưa? … rồi. … mứt dâu!",
           "explanation": "Lời gọi \"Bin ơi\" và lời mẹ ngạc nhiên dùng dấu chấm than, câu kể của Bin dùng dấu chấm, câu hỏi \"rửa tay chưa\" dùng dấu chấm hỏi."
+        },
+        "en": {
+          "guide": [
+            "Calling out and exclaiming use an exclamation mark.",
+            "Statements use a full stop; questions use a question mark."
+          ],
+          "hint": "When Mum asks \"have you washed your hands\", what comes at the end of the sentence?",
+          "answer": {
+            "text": "Bin ơi! (Bin!) … chưa? (yet?) … rồi. (done.) … mứt dâu! (strawberry jam!)",
+            "explanation": "The call \"Bin ơi\" and Mum's surprise use an exclamation mark, Bin's statement uses a full stop, and the question \"rửa tay chưa\" uses a question mark."
+          }
         }
       },
       "feedback": {
@@ -791,9 +1063,25 @@
           "Mẹ đang hỏi \"rửa tay chưa\" thì cuối câu phải là dấu hỏi chứ.",
           "Lời gọi \"Bin ơi\" cần dấu chấm than cho thật to.",
           "Câu Bin kể mình đã rửa tay là câu kể, dùng dấu gì nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Each mark in its place! Vịt Bầu rolls about laughing, and the strawberry jam is already smeared on his cheek.",
+            "Right! A question gets a question mark and a call gets an exclamation mark.",
+            "Papa Maned Lion laughs so hard his mane shakes."
+          ],
+          "wrong": [
+            "Mum is asking whether the hands are washed, so the end of that sentence needs a question mark.",
+            "The call \"Bin ơi\" needs an exclamation mark to be heard loud.",
+            "Bin telling that he has washed his hands is a statement; what mark does it take?"
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "The jam smear on the cheek",
+        "prompt": "Vịt Bầu tells a funny story and laughs first, so some punctuation marks have gone missing. Put a suitable mark at the end of each line of speech: full stop, question mark or exclamation mark?"
+      }
     },
     {
       "id": "bo-con-lam-lanh",
@@ -888,6 +1176,17 @@
         "answer": {
           "text": "Bạn Bin kể về bà của mình.",
           "explanation": "Câu nào trong đoạn văn cũng nói về bà: bà vá áo, kể chuyện, chăm sóc khi bạn sốt, và bạn rất thương bà."
+        },
+        "en": {
+          "guide": [
+            "Read the first sentence of the paragraph.",
+            "Which person is mentioned most often?"
+          ],
+          "hint": "The last sentence: \"I love … very much.\"",
+          "answer": {
+            "text": "Bin's paragraph is about his own grandma.",
+            "explanation": "Every sentence in the paragraph is about Grandma: she mends clothes, tells stories, looks after him when he has a fever, and he loves her very much."
+          }
         }
       },
       "feedback": {
@@ -900,9 +1199,31 @@
           "Ông chưa xuất hiện trong đoạn này, đọc lại câu đầu nhé.",
           "Cô giáo ở trường cơ, còn người ngồi vá áo kể chuyện trong nhà là ai?",
           "Đếm xem chữ nào lặp lại nhiều nhất trong đoạn văn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, the paragraph is about Grandma! The lion cub nods: I miss my mum too.",
+            "Correct! The word for Grandma appears in almost every sentence.",
+            "{name} read it once and knew straight away."
+          ],
+          "wrong": [
+            "Grandpa doesn't appear in this paragraph. Read the first sentence again.",
+            "A teacher is at school, but who sits at home mending clothes and telling stories?",
+            "Count which word is repeated most in the paragraph."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Who is the paragraph about?",
+        "goTo": "Tũn the Lion Cub climbs onto the rock ledge at the cave mouth, watching for Mum to come back from hunting",
+        "prompt": "The lion cub has waited and waited for Mum to come back from hunting, so to miss her less he reads a paragraph Bin wrote about his grandmother: \"My grandma's hair is already grey but her hands are very skilful. Every rainy afternoon, Grandma sits mending clothes and tells me stories. The day I had a fever, Grandma sat beside me and wiped my forehead with a warm cloth all night. Wherever I go far away, I miss Grandma little by little. I only wish Grandma stays healthy always. I love Grandma very much.\" Who is Bin's paragraph about?",
+        "choices": [
+          "Grandpa",
+          "Grandma",
+          "a teacher"
+        ]
+      }
     },
     {
       "id": "cau-tinh-cam-voi-me",
@@ -963,6 +1284,17 @@
         "answer": {
           "text": "Tình cảm: Đi đâu xa, tôi cũng nhớ bà…; Tôi chỉ mong bà luôn khỏe mạnh; Tôi rất thương bà. Việc bà làm: Mỗi chiều mưa, bà ngồi vá áo…; Hôm tôi sốt, bà ngồi cạnh…",
           "explanation": "Ba câu kể nỗi nhớ, lời mong và lòng thương của bạn Bin; hai câu còn lại kể việc bà đã làm cho bạn nên bạn mới thương bà."
+        },
+        "en": {
+          "guide": [
+            "A sentence about feelings tells what Bin thinks and feels about Grandma.",
+            "A sentence about actions tells what Grandma has done for Bin."
+          ],
+          "hint": "The sentences about Grandma mending clothes, telling stories and wiping Bin's forehead are what Grandma does.",
+          "answer": {
+            "text": "Feelings: Đi đâu xa, tôi cũng nhớ bà…; Tôi chỉ mong bà luôn khỏe mạnh; Tôi rất thương bà. What Grandma does: Mỗi chiều mưa, bà ngồi vá áo…; Hôm tôi sốt, bà ngồi cạnh…",
+            "explanation": "Three sentences tell Bin's longing, wish and love; the other two tell what Grandma did for him, which is why he loves her."
+          }
         }
       },
       "feedback": {
@@ -975,9 +1307,26 @@
           "Câu kể bà lau trán suốt đêm là việc bà làm, chưa phải tình cảm của bạn Bin.",
           "Câu \"Tôi rất thương bà.\" nói thẳng ra tình cảm rồi còn gì.",
           "Hai câu có việc vá áo và lau trán trả lời bà đã làm gì, thử lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All five sentences! The lion cub hugs Dad tightly and wants to write to Mum tonight.",
+            "Great at telling them apart: which sentence is a feeling and which is what Grandma does.",
+            "Bờm praises: {name} understands what you read even deeper than our cave."
+          ],
+          "wrong": [
+            "The sentence about wiping his forehead all night is what Grandma does, not Bin's feeling.",
+            "The sentence \"Tôi rất thương bà.\" says the feeling straight out.",
+            "The two sentences about mending clothes and wiping a forehead answer what Grandma did. Try again."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Loving sentences and sentences about what Grandma does",
+        "goTo": "Back into the warm stone cave, where Papa Maned Lion has two more riddles",
+        "prompt": "Bờm asks one more question about Bin's paragraph: \"My grandma's hair is already grey but her hands are very skilful. Every rainy afternoon, Grandma sits mending clothes and tells me stories. The day I had a fever, Grandma sat beside me and wiped my forehead with a warm cloth all night. Wherever I go far away, I miss Grandma little by little. I only wish Grandma stays healthy always. I love Grandma very much.\"\nDrag each sentence to the right place."
+      }
     },
     {
       "id": "chia-se-bai-doc",
@@ -1060,5 +1409,9 @@
       "chinh-ta": 1,
       "dau-cau": 1
     }
+  },
+  "en": {
+    "title": "The Feast Stall in the Lion's Den",
+    "summary": "Tũn the Lion Cub is sulking because Papa Maned Lion has been busy with hamlet chores all day. Dad sets up a shop game at once in the warm stone cave at the foot of the hill. {name} lays out the trays and bowls, reads the story «Quán nhỏ» about a father and son, practises polite words with the customer Vịt Bầu, and helps father and son make up."
   }
 }

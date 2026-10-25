@@ -95,22 +95,22 @@
         }
       ],
       "en": {
-        "title": "Sesame Pup barking at the bottom of the slope",
-        "goTo": "Run to the bottom of the slope, Sesame Pup is barking loudly for someone to help Grandpa",
+        "title": "Sesame Pup Barks at the Foot of the Slope",
+        "goTo": "Run to the foot of the slope, where Sesame Pup is barking loudly for help",
         "lines": [
-          "Woof! {name}, thank goodness! My grandpa's leg hurts; he's plonked down at the bottom of the slope and won't admit it hurts.",
-          "Hurts? Nonsense! When I was young I ran up this slope faster than the wind, and the wind had to beg me to slow down.",
-          "Then why have you been sitting here since morning, Grandpa?",
-          "I'm… I'm resting so the wind can catch up. Besides, my walking stick, my glasses and my straw hat have rolled off somewhere."
+          "Woof! {name}, thank goodness! My grandpa has hurt his foot and plopped down at the foot of the slope, but he won't admit it hurts.",
+          "Hurts? Nothing hurts! When I was young I ran up this slope faster than the wind, and the wind had to beg me to slow down.",
+          "Then why have you been sitting here since morning?",
+          "I'm... I'm resting so the wind can catch up. Besides, my walking stick, my glasses and my straw hat have rolled off somewhere."
         ],
         "choices": [
           {
-            "text": "You rest, Grandpa, I'll go find your things!",
-            "reply": "Grandpa Vện strokes his beard: what a good child. Find the stick first, it's my wooden horse."
+            "text": "Please rest, Grandpa, I'll go and find your things!",
+            "reply": "Old Vện strokes his whiskers: what a good child. Find the stick first, it's his wooden horse."
           },
           {
             "text": "Sesame Pup, let's split up and search!",
-            "reply": "Sesame Pup wags his tail like mad: I'll sniff, you look carefully. To the bamboo by the slope!"
+            "reply": "Sesame Pup wags his tail like mad: I'll sniff, you look closely. Off to the bamboo by the slope!"
           }
         ]
       }
@@ -124,7 +124,11 @@
         "tv2-t16-gay-ong-ven",
         "tv2-t16-kinh-ong-ven",
         "tv2-t16-mu-coi-ong-ven"
-      ]
+      ],
+      "en": {
+        "title": "Find Grandpa's cane, glasses and hat",
+        "goTo": "Find Old Vện's stick, glasses and straw hat, which rolled into the bamboo by the slope"
+      }
     },
     {
       "id": "viec-lam-nguoi-than-vui",
@@ -176,6 +180,17 @@
         "answer": {
           "text": "Bà trượt chân trên đá nên cổ chân sưng đỏ.",
           "explanation": "Khổ một kể bà trượt chân trên đá bờ suối, cổ chân sưng đỏ, đi tập tễnh."
+        },
+        "en": {
+          "guide": [
+            "Read the first verse.",
+            "Find where the poem says Grandma went to the stream and what happened."
+          ],
+          "hint": "The first four lines answer this question straight away.",
+          "answer": {
+            "text": "Grandma slipped on the stones and her ankle swelled up red.",
+            "explanation": "Verse one tells how Grandma slipped on the rocks by the stream, leaving her ankle swollen, red and limping."
+          }
         }
       },
       "feedback": {
@@ -188,9 +203,31 @@
           "Bà vẫn cúi xuống xoa đầu cháu được mà, đâu phải đau lưng.",
           "Bài thơ không kể bà làm rơi gánh nước đâu. Đọc lại khổ một xem.",
           "Mấy dòng đầu bài thơ nói rõ bà đau ở đâu, dò lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right, Grandma hurt her foot. Old Vện winces: just like me right now!",
+            "Spot on! She slipped on the rocks, so her ankle swelled up red.",
+            "Sesame Pup nods: {name} read the first verse once and remembered it at once."
+          ],
+          "wrong": [
+            "Grandma can still bend down to pat her grandchild's head, so it isn't her back.",
+            "The poem doesn't say Grandma dropped her water poles. Read verse one again.",
+            "The first lines of the poem say exactly where she hurt, so check again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Read the poem on the rock",
+        "goTo": "Help Grandpa up to the rock halfway up the slope to rest and read the poem",
+        "question": "Old Vện says he has known this poem since he was little because it is like his own grandmother's story. In the poem, what happened to Na's grandmother?",
+        "choices": [
+          "She slipped on the rocks and her ankle is swollen and red.",
+          "She has a bad back, so she cannot bend down.",
+          "She dropped her water carrying poles, so she cannot walk."
+        ]
+      }
     },
     {
       "id": "viet-giup-ong",
@@ -226,6 +263,17 @@
         "answer": {
           "text": "Na nắm tay và dìu bà bước qua đá, lên thềm nhà.",
           "explanation": "Khổ ba cho thấy Na nắm tay bà, dìu từng bước qua phiến đá cho tới thềm nhà."
+        },
+        "en": {
+          "guide": [
+            "Read the third verse, where the words “dìu bước” appear.",
+            "Does Na stand far from Grandma or stay close beside her?"
+          ],
+          "hint": "Na took Grandma's hand and walked with her across the stepping stones.",
+          "answer": {
+            "text": "Na held Grandma's hand and helped her across the stones and up to the doorstep.",
+            "explanation": "Verse three shows Na holding Grandma's hand and helping her step by step over the stones to the doorstep."
+          }
         }
       },
       "feedback": {
@@ -238,9 +286,30 @@
           "Na không đi gọi cả xóm đâu, bé tự tới bên bà ngay.",
           "Hái rau là việc Na làm trước khi gặp bà, chưa phải lúc giúp bà.",
           "Đọc khổ thơ thứ ba: Na làm gì bằng đôi tay của mình?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly! Sesame Pup holds out his paw at once: Grandpa, hold my paw!",
+            "Spot on, Na held her hand and helped her step by step.",
+            "Old Vện slaps his knee: whose grandchild reads poems so sharply!"
+          ],
+          "wrong": [
+            "Na doesn't go to call the whole village, she goes straight to Grandma's side.",
+            "Picking greens is what Na did before meeting Grandma, not how she helped her.",
+            "Read verse three: what does Na do with her own two hands?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "How Na helps Grandma",
+        "prompt": "When Old Vện reaches the part about little Na, he rests his chin on his hand and asks Sesame Pup: \"So could you do what she did?\". Sesame Pup goes red to the tips of his ears and asks {name} to answer first.\nWhen she saw Grandma wince in pain, what did little Na do?",
+        "choices": [
+          "Na held Grandma's hand and gently helped her step by step up to the doorstep.",
+          "Na ran off to call the whole village to help.",
+          "Na sat down to pick more wild greens for Grandma."
+        ]
+      }
     },
     {
       "id": "dang-ve-cua-viet",
@@ -289,6 +358,17 @@
         "answer": {
           "text": "nhanh nhẹn; ân cần; tíu tít",
           "explanation": "Na \"nhanh nhẹn chạy tới\", \"tíu tít gọi\", \"ân cần dìu bước\"; còn \"tập tễnh\", \"nhăn mặt\" là dáng vẻ của bà khi đau."
+        },
+        "en": {
+          "guide": [
+            "Read verses two and three, where little Na runs to Grandma's side.",
+            "Do not choose a word that describes Grandma in pain."
+          ],
+          "hint": "Three words describe Na; the other two describe Grandma when her foot hurts.",
+          "answer": {
+            "text": "nhanh nhẹn (quick); ân cần (caring); tíu tít (fussing)",
+            "explanation": "Na is “nhanh nhẹn” as she runs over, calls “tíu tít” and helps “ân cần” step by step; “tập tễnh” and “nhăn mặt” are how Grandma looks in pain."
+          }
         }
       },
       "feedback": {
@@ -301,9 +381,33 @@
           "Nhăn mặt là nét mặt của bà lúc đau, đâu phải của Na.",
           "Tập tễnh là dáng bà đi, bỏ từ đó ra nhé.",
           "Còn sót một từ tả Na đấy, đọc lại dòng có chữ \"tíu tít\"."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three perfect words, no changes needed! Sesame Pup scampers “tíu tít” around the rock.",
+            "Just how Na is: nhanh nhẹn, ân cần, tíu tít.",
+            "Old Vện chuckles: every child in this family is that quick."
+          ],
+          "wrong": [
+            "“nhăn mặt” is how Grandma's face looks in pain, not Na's.",
+            "“tập tễnh” is how Grandma walks, so leave that one out.",
+            "One word describing Na is still missing: read the line with “tíu tít” again."
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "Find words describing little Na",
+        "goTo": "Go up to the grassy patch on the slope, where Young Rice Calf looks up to watch Sesame Pup practise being like Na",
+        "prompt": "Sesame Pup wants to describe himself just like Na so Grandpa will praise him. Help him choose correctly.\nWhich of these words describe Na, not Grandma? nhanh nhẹn, tập tễnh, ân cần, nhăn mặt, tíu tít",
+        "choices": [
+          "nhanh nhẹn",
+          "tập tễnh",
+          "ân cần",
+          "nhăn mặt",
+          "tíu tít"
+        ]
+      }
     },
     {
       "id": "vi-sao-be-ma-khoe",
@@ -340,6 +444,17 @@
         "answer": {
           "text": "Bà bảo Na khoẻ là vì Na thương bà.",
           "explanation": "Sau lời khen, bài thơ nói rõ: vì cháu thương bà, nên cháu có sức dìu bà đi."
+        },
+        "en": {
+          "guide": [
+            "Read the very last verse.",
+            "Grandma says “Nhỏ mà khoẻ” and then explains why."
+          ],
+          "hint": "The line right after the praise gives the reason.",
+          "answer": {
+            "text": "Grandma says Na is strong because she loves her grandma.",
+            "explanation": "After the praise, the poem says it plainly: because she loves her grandma, she has the strength to help her walk."
+          }
         }
       },
       "feedback": {
@@ -352,9 +467,31 @@
           "Bài thơ không kể Na gánh nước giúp mẹ đâu.",
           "Rau dại là thứ Na đang hái thôi, đọc dòng thơ cuối cùng xem.",
           "Bà giải thích ở khổ cuối, có chữ \"Vì\" ở đầu dòng đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, because Na loves Grandma! Old Vện sniffles: such a lovely poem, dust got in my eyes.",
+            "Spot on, love made the little one strong.",
+            "Sesame Pup whispers: then I'll love Grandpa lots and lots to be as strong as Na."
+          ],
+          "wrong": [
+            "The poem doesn't say Na carries water for her mum.",
+            "Wild greens are just what Na was picking. Look at the last lines of the poem.",
+            "Grandma explains in the last verse, in the line that begins with “Vì”."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Small but strong",
+        "goTo": "Back on the rock halfway up the slope, Old Vện reads the next verse",
+        "question": "According to Grandma, why is little Na small but strong?",
+        "choices": [
+          "Because Na loves her grandma",
+          "Because Na carries water for her mum every day",
+          "Because Na eats lots of wild greens"
+        ]
+      }
     },
     {
       "id": "loi-khen-cua-ong",
@@ -390,6 +527,17 @@
         "answer": {
           "text": "Hai dòng \"Khen: Nhỏ mà khoẻ! / Vì cháu thương bà\".",
           "explanation": "Lời khen của bà nằm ở khổ cuối: bà khen cháu nhỏ mà khoẻ rồi nói vì cháu thương bà."
+        },
+        "en": {
+          "guide": [
+            "The praise is what Grandma says to her grandchild, and it begins with the word “Khen”.",
+            "The other pairs only tell what the grandchild and Grandma do."
+          ],
+          "hint": "Look for the word “Khen” at the start of the line.",
+          "answer": {
+            "text": "The two lines “Khen: Nhỏ mà khoẻ! / Vì cháu thương bà”.",
+            "explanation": "Grandma's praise is in the last verse: she says her grandchild is small but strong, because she loves her grandma."
+          }
         }
       },
       "feedback": {
@@ -402,9 +550,30 @@
           "Hai dòng ấy kể Na dìu bà, chưa phải lời bà khen.",
           "Hai dòng ấy kể bà ngồi nghỉ, bà chưa khen gì cả.",
           "Tìm chữ \"Khen\" nhé, lời khen bắt đầu từ đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Hooray, {name}! Old Vện reads along so loudly that the birds on the bamboo flap their wings.",
+            "Those are the two praise lines! Sesame Pup wags his tail like a fan.",
+            "Spot on! The praise is right in the last verse."
+          ],
+          "wrong": [
+            "Those two lines tell how Na helps Grandma, not how Grandma praises her.",
+            "Those two lines tell how Grandma sits down to rest, she hasn't praised anyone yet.",
+            "Look for the word “Khen”: the praise begins there."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Grandma's praise for Na",
+        "question": "Old Vện clears his throat, planning to read the praise aloud so he can practise praising Sesame Pup. Which pair of poem lines is the praise Grandma gives Na?",
+        "choices": [
+          "You hold Grandma's hand\nAnd gently help her along",
+          "Khen: Small but strong!\nBecause you love Grandma",
+          "Grandma sits down on a chair\nAnd pats her little grandchild's head"
+        ]
+      }
     },
     {
       "id": "hoc-thuoc-kho-tho",
@@ -515,6 +684,17 @@
         "answer": {
           "text": "trời; chạy; chiếc; trước; trồng",
           "explanation": "Các tiếng cần điền lần lượt là trời (tr), chạy (ch), chiếc (ch), trước (tr), trồng (tr)."
+        },
+        "en": {
+          "guide": [
+            "Read each line of the poem aloud and pause at every box.",
+            "Trời, chạy, chiếc, trước, trồng: which begin with ch and which with tr?"
+          ],
+          "hint": "There are three tr and two ch.",
+          "answer": {
+            "text": "trời (sky); chạy (run); chiếc (a); trước (before); trồng (plant)",
+            "explanation": "The words to fill in are trời (tr), chạy (ch), chiếc (ch), trước (tr) and trồng (tr)."
+          }
         }
       },
       "feedback": {
@@ -527,9 +707,26 @@
           "Bầu trời trong vắt viết bằng tr, còn chạy ra sân thì sao nhỉ?",
           "Có một ô đang đội nhầm chữ, đọc to cả dòng thơ nghe thử nhé.",
           "\"Chiếc lá\" và \"trước ngõ\" cùng một dòng nhưng hai chữ đầu khác nhau đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The little poem shows up clearly on the rock! Old Vện claps along.",
+            "Trời, chạy, chiếc, trước, trồng: not a single letter wrong!",
+            "Sesame Pup barks “woof woof” with joy, as if reading the poem with {name}."
+          ],
+          "wrong": [
+            "A clear sky is written with tr, but what about running out to the yard?",
+            "One box is wearing the wrong letters. Read the whole line aloud to hear it.",
+            "“chiếc lá” and “trước ngõ” share a line, but their first letters are different."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Fill in letters on the stone",
+        "goTo": "Go back down to the rock halfway up the slope, where Sesame Pup is scratching letters with his claws",
+        "prompt": "Sesame Pup scratches a little poem onto the rock with his claws, but he scratches so quickly that some letters go missing. Old Vện says: \"Let's see who can fill them in!\". Fill in ch or tr in each box to make the right word."
+      }
     },
     {
       "id": "tui-ac-tui-at",
@@ -640,6 +837,17 @@
         "answer": {
           "text": "bãi cát, gác nhỏ, gió mát, thác nước, hạt thóc, đi lạc đường",
           "explanation": "Cát, mát, hạt viết vần at; gác, thác, lạc viết vần ac."
+        },
+        "en": {
+          "guide": [
+            "Say the whole word aloud and listen: does it end in “c” or in “t”?",
+            "Sandy beach (bãi cát), cool breeze (gió mát), grain of rice (hạt thóc); small loft (gác nhỏ), waterfall (thác nước), get lost (đi lạc)."
+          ],
+          "hint": "Three words have the rhyme at and three have the rhyme ac.",
+          "answer": {
+            "text": "bãi cát (sandy beach), gác nhỏ (small loft), gió mát (cool breeze), thác nước (waterfall), hạt thóc (rice grain), đi lạc đường (lose the way)",
+            "explanation": "Cát, mát and hạt are written with at; gác, thác and lạc are written with ac."
+          }
         }
       },
       "feedback": {
@@ -652,9 +860,26 @@
           "Hạt thóc cần vần at, nghe tiếng cuối là \"t\" nhé.",
           "Thác nước và đi lạc đường cùng chung một vần, đọc to lên nghe thử.",
           "Có một vần đang chui nhầm túi, kiểm tra từng dòng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both bags of rhymes are back in place, and Sesame Pup bursts into song!",
+            "Bãi cát, gió mát, thác nước... all six right, and Old Vện gives a thumbs-up.",
+            "{name}'s ears tell ac from at even better than a dog's nose."
+          ],
+          "wrong": [
+            "Hạt thóc needs the rhyme at, listen for the “t” at the end.",
+            "Thác nước and đi lạc đường share one rhyme, so say them aloud to hear it.",
+            "One rhyme has crept into the wrong bag, so check line by line."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Two bags of rhymes ac and at",
+        "goTo": "Rhymes have rolled all over the grassy patch on the slope, and Young Rice Calf helps gather every letter",
+        "prompt": "Sesame Pup carries two leaf bags: the red one holds the rhyme ac and the green one holds the rhyme at. He jumped up and spilled them all, so now the rhymes must be put back to make the right words.\nFill in ac or at in each box to make a correct word."
+      }
     },
     {
       "id": "nha-ong-ven-ban-ron",
@@ -740,6 +965,17 @@
         "answer": {
           "text": "Sự vật: cái xoong, móc áo, bình tưới, cờ lê, khối gỗ. Hoạt động: nấu cháo, phơi áo, tưới rau, sửa xe, xếp khối.",
           "explanation": "Mỗi người trong nhà đang làm một việc (hoạt động) với một đồ vật (sự vật)."
+        },
+        "en": {
+          "guide": [
+            "A word for a thing is the name of something you can hold and see.",
+            "A word for an action is something people are doing."
+          ],
+          "hint": "Try saying “đang...” before the word: if “đang tưới rau” sounds right, it is an action.",
+          "answer": {
+            "text": "Things: cái xoong, móc áo, bình tưới, cờ lê, khối gỗ. Actions: nấu cháo, phơi áo, tưới rau, sửa xe, xếp khối.",
+            "explanation": "Everyone in the family is doing something (an action) with an object (a thing)."
+          }
         }
       },
       "feedback": {
@@ -752,9 +988,26 @@
           "Có một đồ vật đang ngồi nhầm giỏ hoạt động rồi.",
           "Thử nói \"đang\" trước từ ấy xem có thành việc làm không.",
           "Cờ lê và sửa xe khác nhau đấy: một cái để cầm, một việc để làm."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both baskets are full, and not a word is in the wrong one!",
+            "Cái xoong is a thing and nấu cháo is an action: {name} tells them apart perfectly.",
+            "Sesame Pup barks twice to praise you, a loud one for the things basket and a soft one for the actions basket."
+          ],
+          "wrong": [
+            "An object has sat down in the actions basket by mistake.",
+            "Say “đang” before the word to see whether it becomes something being done.",
+            "Cờ lê and sửa xe are different: one is to hold, the other is to do."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Old Vện's whole family is busy",
+        "goTo": "Climb the rock halfway up the slope and look down at Sesame Pup's whole family",
+        "prompt": "From the rock you can see Sesame Pup's whole family: Mum cooking porridge in a pot, Grandma hanging clothes on hangers, Grandpa watering vegetables with a can, Dad mending a bike with a spanner and the baby stacking wooden blocks. Sesame Pup challenges {name} to put each word in the right basket: one basket for things, one for actions."
+      }
     },
     {
       "id": "me-may-ba-noi",
@@ -810,6 +1063,17 @@
         "answer": {
           "text": "đan; khâu; vác",
           "explanation": "Bà đan rổ, mẹ khâu nón, bố vác thang. Đó là ba hoạt động; các thẻ còn lại là sự vật."
+        },
+        "en": {
+          "guide": [
+            "Words for actions are what Grandma, Mum and Dad do.",
+            "Rổ, nón, thang and bóng đèn are names of objects."
+          ],
+          "hint": "Each person in the poem does exactly one job.",
+          "answer": {
+            "text": "đan; khâu; vác",
+            "explanation": "Grandma weaves (đan) a basket, Mum stitches (khâu) a hat, Dad carries (vác) a ladder. Those are the three actions; the other cards are things."
+          }
         }
       },
       "feedback": {
@@ -822,9 +1086,34 @@
           "Chiếc rổ là đồ được đan ra, còn việc đan mới là hoạt động.",
           "Thang và bóng đèn là đồ vật, bố làm gì với cái thang nhỉ?",
           "Mẹ làm một việc với chiếc nón, tìm đúng việc ấy nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Đan, khâu, vác: all three jobs! Old Vện goes on to tell the story of his own hat.",
+            "You picked exactly the three actions, with no object by mistake.",
+            "Sesame Pup wags his tail whirr-whirr as if weaving a basket."
+          ],
+          "wrong": [
+            "The rổ is what gets woven, while đan, the weaving, is the action.",
+            "The ladder and the lamp are objects, so what does Dad do with the ladder?",
+            "Mum does one thing with the hat, so find exactly that word."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Three jobs in the poem",
+        "prompt": "Old Vện says: when he was little his family was the same, Grandma wove baskets, Mum stitched hats and Dad set up a ladder to hang a lamp at the gate. Help him find all three words.\nFind 3 words for actions in the poem below:\nBà đan thêm cái rổ\nMẹ khâu lại chiếc nón\nBố vác thang ra ngõ\nBóng đèn sáng trước nhà",
+        "choices": [
+          "rổ",
+          "đan",
+          "nón",
+          "khâu",
+          "thang",
+          "vác",
+          "bóng đèn"
+        ]
+      }
     },
     {
       "id": "ca-nha-lam-gi",
@@ -920,6 +1209,17 @@
         "answer": {
           "text": "Ông tưới hoa; bà đan khăn; bố mẹ nấu cơm; bạn nhỏ vẽ tranh.",
           "explanation": "Mỗi tranh vẽ một người (hoặc hai người) đang làm một việc; câu trả lời gọi đúng việc đó."
+        },
+        "en": {
+          "guide": [
+            "Look at the picture on each card: who is in it?",
+            "The answer says exactly what that person is doing."
+          ],
+          "hint": "The picture with two people in the kitchen belongs to Mum and Dad.",
+          "answer": {
+            "text": "Grandpa waters the flowers; Grandma knits a scarf; Mum and Dad cook rice; the child draws a picture.",
+            "explanation": "Each picture shows one person (or two) doing one thing, and the answer names exactly that thing."
+          }
         }
       },
       "feedback": {
@@ -932,9 +1232,26 @@
           "Bà đang ngồi ghế đấy, việc nào hợp với bà nhỉ?",
           "Tranh có bếp và rau là của hai người cùng làm.",
           "Bạn nhỏ cầm bút màu, xếp lại câu ấy nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four questions have their right answers, and the neighbours wave hello to {name}!",
+            "Old Vện nods: every answer says clearly who is doing what.",
+            "Matched perfectly! Sesame Pup barks once for each picture."
+          ],
+          "wrong": [
+            "Grandma is sitting on a chair, so which job suits her?",
+            "The picture with a kitchen and vegetables belongs to the two people cooking together.",
+            "The child is holding coloured pens, so match that line again."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong",
+      "en": {
+        "title": "What is each person doing?",
+        "goTo": "Stop at the neighbour's porch, where Sesame Pup holds out pictures of Auntie Lựu's house as a puzzle",
+        "prompt": "Sesame Pup holds out four pictures of the neighbours' house: Grandpa watering orchids, Grandma sitting knitting a scarf, Mum and Dad picking vegetables and cooking rice, and a child sitting drawing. Match each answer with its question."
+      }
     },
     {
       "id": "buoc-len-them",
@@ -967,24 +1284,24 @@
         }
       ],
       "en": {
-        "title": "The very last step",
-        "goTo": "Help Grandpa Vện home to his doorstep",
+        "title": "The Last Step",
+        "goTo": "Help Old Vện up to the doorstep of his house",
         "lines": [
-          "We've reached the doorstep! But has this step grown taller today, or have my legs got shorter?",
-          "{name}, it's just like little Na helping her grandma. What can we do to help Grandpa now?"
+          "We're at the doorstep! But has this step grown taller today, or have my legs got shorter?",
+          "{name}, it's just like little Na helping her grandma! What can we do to help Grandpa now?"
         ],
         "choices": [
           {
             "text": "Hold my hand, Grandpa, and Sesame Pup will go ahead to check the way!",
-            "reply": "One, two, three… up! Grandpa Vện is on the step; he lets go of his stick and ruffles both their heads."
+            "reply": "One, two, three... up! Old Vện steps onto the doorstep, lets go of the stick and hugs and pats both of you on the head."
           },
           {
-            "text": "I'll hold your stick, Grandpa, just take it really slowly.",
-            "reply": "Grandpa takes one step at a time, counting aloud like he did at army drill. At the top he chuckles heartily."
+            "text": "I'll carry the stick and you step very slowly, Grandpa.",
+            "reply": "He steps one step at a time, counting aloud as if on parade. Once at the top, he chuckles."
           },
           {
-            "text": "I'll tell you a funny story so you forget the pain!",
-            "reply": "Hearing about the frog singing in the pond on a rainy night, Grandpa laughs so hard his beard shakes, and he's up the step before he knows it."
+            "text": "I'll tell you a funny story so you forget the pain, Grandpa!",
+            "reply": "Listening to the story of the frog singing in the pond on a rainy night, he laughs until his whiskers shake and steps up before he knows it."
           }
         ]
       }
@@ -1096,8 +1413,8 @@
       "trigger": "auto",
       "text": "Ông Vện tặng {name} một khúc tre nhỏ ông tự gọt thành chiếc còi, thổi lên kêu \"toe toe\" như tiếng gió hồi ông còn trẻ. Cún Vừng thì tặng một cái vẫy đuôi dài nhất từ trước tới nay.",
       "en": {
-        "title": "A gift from Grandpa Vện",
-        "text": "Grandpa Vện gives {name} a little piece of bamboo he whittled into a whistle; blow it and it goes “toot toot” like the wind when he was young. Sesame Pup gives the longest tail wag ever."
+        "title": "Old Vện's Gift",
+        "text": "Old Vện gives {name} a small piece of bamboo he has whittled into a whistle, which goes “toe toe” like the wind in his youth. Sesame Pup gives the longest tail wag ever."
       }
     },
     {
@@ -1107,8 +1424,8 @@
       "trigger": "auto",
       "text": "Hoàng hôn buông xuống hồ sen cuối xóm. Một đàn đom đóm bay ngang, rủ nhau đi soi đường cho Cá Bống: mẹ của Bống ốm rồi, cần tìm thuốc gấp.",
       "en": {
-        "title": "Fireflies fly to the lake",
-        "text": "Dusk settles over the lotus lake at the end of the hamlet. A swarm of fireflies flits past, off to light the way for Goby Fish: Bống's mum is ill and needs medicine fast."
+        "title": "Fireflies Fly Back to the Pond",
+        "text": "Dusk falls over the lotus pond at the end of the village. A swarm of fireflies flies by, calling each other to light the way for Goby: Goby's mum is ill and needs medicine quickly."
       }
     }
   ],
@@ -1121,5 +1438,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Helping Old Vện Over the Slope",
+    "summary": "Old Vện, Sesame Pup's grandfather, has hurt his foot on the bumpy slope up to his house, yet he still boasts that in his youth he ran faster than the wind. {name} finds his walking stick, reads the poem “Cháu dìu bà qua suối” with the two of them, then helps Old Vện home to his doorstep."
   }
 }

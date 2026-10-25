@@ -107,7 +107,11 @@
         "tv2-t06-trang-giay-uot",
         "tv2-t06-but-chi-tre",
         "tv2-t06-kinh-lup-gau-truc"
-      ]
+      ],
+      "en": {
+        "title": "Pick up the papers the wind blew away",
+        "goTo": "Go to the yard in front of the reading room and pick up three things the wind blew away"
+      }
     },
     {
       "id": "da-doc-danh-sach-nao",
@@ -159,6 +163,17 @@
         "answer": {
           "text": "Tổ Bốn có 8 bạn đã ghi tên đọc truyện.",
           "explanation": "Số thứ tự đi từ 1 tới 8, mỗi số là một bạn, nên tổ Bốn có 8 bạn."
+        },
+        "en": {
+          "guide": [
+            "Look at the first column, the one numbering the names.",
+            "The number on the last row tells you how many friends there are."
+          ],
+          "hint": "The last friend on the list is Bùi Quang Hải. What number is he?",
+          "answer": {
+            "text": "Group Four has 8 friends signed up to read.",
+            "explanation": "The numbers go from 1 to 8, one for each friend, so Group Four has 8 friends."
+          }
         }
       },
       "feedback": {
@@ -171,9 +186,31 @@
           "Ồ, đếm hụt mất rồi. Thử dò lại cột đánh số từ trên xuống nhé.",
           "Cô Mèo Kính khẽ nhắc: hàng cuối ghi số mấy, con nhìn kĩ giúp cô nhé?",
           "Mỗi dòng tên là một bạn, đếm lại từng dòng một xem nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A round eight! Glasses Cat pushes up her frames and nods in satisfaction.",
+            "Counted like a seasoned librarian! Tiny Monkey holds up eight fingers to show off.",
+            "Right, the last row is number 8. {name} has sharp eyes."
+          ],
+          "wrong": [
+            "Oh, a miscount. Check the numbering column again from top to bottom.",
+            "Glasses Cat gently reminds you: what number is on the last row? Look carefully for me?",
+            "Each name line is one friend, so count the lines one at a time."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Read Group Four's list",
+        "goTo": "Go to the reading table, where Group Four's list lies spread out under the table lamp",
+        "question": "How many friends are on Group Four's list?",
+        "choices": [
+          "6 friends",
+          "8 friends",
+          "10 friends"
+        ]
+      }
     },
     {
       "id": "truyen-cua-ban-so-6",
@@ -209,6 +246,17 @@
         "answer": {
           "text": "Bạn Trần Quốc Dũng đăng kí truyện Cánh diều mùa gió.",
           "explanation": "Dòng số 6 ghi: Trần Quốc Dũng – Cánh diều mùa gió."
+        },
+        "en": {
+          "guide": [
+            "Find the line with number 6.",
+            "Read the cell in the Truyện (story) column on that same line."
+          ],
+          "hint": "The friend at number 6 is Trần Quốc Dũng.",
+          "answer": {
+            "text": "Trần Quốc Dũng signed up for the story Cánh diều mùa gió.",
+            "explanation": "Line 6 reads: Trần Quốc Dũng – Cánh diều mùa gió."
+          }
         }
       },
       "feedback": {
@@ -221,9 +269,30 @@
           "Hình như {name} đọc nhầm sang dòng bên cạnh mất rồi.",
           "Chiếc thuyền giấy là truyện của các bạn số 2, 5 và 7 cơ.",
           "Đặt ngón tay vào số 6, rồi trượt sang phải tới cột Truyện thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Knock knock, bullseye! Dũng chose the story Cánh diều mùa gió.",
+            "Tiny Monkey does a somersault: right, Cánh diều mùa gió!",
+            "Finding the line that fast, {name} must have owl eyes."
+          ],
+          "wrong": [
+            "It looks like {name} read the line next door by mistake.",
+            "Chiếc thuyền giấy is the story of friends 2, 5 and 7.",
+            "Put your finger on number 6, then slide right to the Truyện column."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "What story does number 6 read?",
+        "prompt": "Tiny Monkey swings down from the bookshelf and taps the sixth line with a finger: knock knock!\nWhich story did the friend at number 6 sign up to read?",
+        "choices": [
+          "Chiếc thuyền giấy (The Paper Boat)",
+          "Cánh diều mùa gió (The Windy-Season Kite)",
+          "Cậu sóc làm thợ mộc (The Squirrel Carpenter)"
+        ]
+      }
     },
     {
       "id": "ban-cung-truyen",
@@ -271,6 +340,17 @@
         "answer": {
           "text": "Đó là Phạm Gia Ân (số 1) và Vũ Thanh Bình (số 3).",
           "explanation": "Ngoài bạn Dũng, dòng số 1 và dòng số 3 cũng ghi truyện Cánh diều mùa gió."
+        },
+        "en": {
+          "guide": [
+            "Friend number 6 reads Cánh diều mùa gió.",
+            "Find every other line that says Cánh diều mùa gió in the Truyện column."
+          ],
+          "hint": "Two more friends, and one of them is at the top of the list.",
+          "answer": {
+            "text": "They are Phạm Gia Ân (no. 1) and Vũ Thanh Bình (no. 3).",
+            "explanation": "Besides Dũng, lines 1 and 3 also list the story Cánh diều mùa gió."
+          }
         }
       },
       "feedback": {
@@ -283,9 +363,33 @@
           "Còn thiếu hoặc thừa một bạn đấy, dò lại cột Truyện nhé.",
           "Bạn Bảo Chi thích truyện chiếc thuyền cơ mà.",
           "Có một bạn đứng ngay dòng đầu tiên mà {name} chưa chọn kìa."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both friends! Glasses Cat has already put three stools side by side.",
+            "Ân and Bình, nobody missed and nobody extra.",
+            "The Cánh diều group is complete, and Tiny Monkey calls: assemble!"
+          ],
+          "wrong": [
+            "One friend is missing or extra, check the Truyện column again.",
+            "Bảo Chi likes the story of the paper boat.",
+            "There's a friend on the very first line that {name} hasn't chosen yet."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Who reads the same story as Cúc?",
+        "goTo": "Back to the librarian's desk, where Glasses Cat is setting out some stools",
+        "prompt": "Glasses Cat wants to seat friends with the same story at one table, so she doesn't have to check each name.\nWhich friends signed up for the same story as the friend at number 6?",
+        "choices": [
+          "Phạm Gia Ân",
+          "Đỗ Ngọc Bích",
+          "Vũ Thanh Bình",
+          "Lê Bảo Chi",
+          "Bùi Quang Hải"
+        ]
+      }
     },
     {
       "id": "tac-dung-danh-sach",
@@ -322,6 +426,17 @@
         "answer": {
           "text": "Nhờ danh sách, cô biết ai chọn truyện nào và gom các bạn thành ba nhóm.",
           "explanation": "Bài đọc cho biết cô thủ thư nhìn danh sách để gom các bạn chọn cùng một truyện vào một nhóm."
+        },
+        "en": {
+          "guide": [
+            "Read the last part of the passage, after the list.",
+            "What does the librarian use the list for?"
+          ],
+          "hint": "She gathers friends who chose the same story into three groups.",
+          "answer": {
+            "text": "With the list, she knows who chose which story and can group the friends into three groups.",
+            "explanation": "The passage says the librarian uses the list to gather friends who chose the same story into one group."
+          }
         }
       },
       "feedback": {
@@ -334,9 +449,31 @@
           "Danh sách không ghi điểm của ai đâu, chỉ ghi truyện các bạn chọn thôi.",
           "Giờ ra chơi thì nghe tiếng trống, đâu cần danh sách nhỉ?",
           "Đọc lại đoạn cuối của bài xem cô thủ thư làm gì với danh sách."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly! Bean Bunny scratches his ear: so writing it down is so you don't forget, how clever.",
+            "Spot on, with the list she makes groups in a flash.",
+            "Glasses Cat gives a thumbs-up: right, not a hair off."
+          ],
+          "wrong": [
+            "The list doesn't record anyone's marks, only the stories the friends chose.",
+            "Break time is announced by the drum, so who needs a list for it?",
+            "Read the last part of the passage again to see what the librarian does with the list."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "What is a list for?",
+        "goTo": "Bean Bunny pokes his head out of the reading nook behind the bookshelf, curious",
+        "prompt": "Bean Bunny pokes his head out of the reading nook and asks, cool as can be: \"Why write names on paper? Can't you just remember them?\" Glasses Cat nearly drops her glasses.\nWhy does the librarian need this list?",
+        "choices": [
+          "To know which friend chose which story and to group the friends into three groups.",
+          "To write down each friend's reading marks.",
+          "To know when break time begins."
+        ]
+      }
     },
     {
       "id": "xep-ten-the-nao",
@@ -373,6 +510,17 @@
         "answer": {
           "text": "Tên các bạn xếp lần lượt theo chữ cái đầu của tên, đúng thứ tự bảng chữ cái.",
           "explanation": "Chữ cái đầu của tên lần lượt là Â, B, B, C, C, D, G, H, đúng thứ tự trong bảng chữ cái."
+        },
+        "en": {
+          "guide": [
+            "Read the first letter of each given name (Ân, Bích, Châu…).",
+            "Compare those letters with the order a, b, c… of the alphabet."
+          ],
+          "hint": "Ân, Bích, Bình, and only then Châu, Chi, Dũng, Giang, Hải.",
+          "answer": {
+            "text": "The names are in order of the first letter of the name, following the alphabet.",
+            "explanation": "The first letters of the names are Â, B, B, C, C, D, G, H, in alphabet order."
+          }
         }
       },
       "feedback": {
@@ -385,9 +533,31 @@
           "Danh sách không ghi chiều cao của ai cả, nhìn chữ đầu của tên xem.",
           "Sinh nhật các bạn đâu có trong danh sách nhỉ? Thử lại nhé.",
           "Đọc chữ cái đầu của tên: Â, B, B, C… có quen không nào?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Secret discovered! Â comes before B, and B comes before C.",
+            "Tiny Monkey sings out: a, ă, â, bê, xê… {name} is right!",
+            "Great, now {name} can copy any list in a straight line."
+          ],
+          "wrong": [
+            "The list doesn't give anyone's height, look at the first letter of the names.",
+            "Birthdays aren't in the list, are they? Try again.",
+            "Read the first letters of the names: Â, B, B, C… do they look familiar?"
+          ]
+        }
       },
-      "objective": "bang-chu-cai-xep-ten"
+      "objective": "bang-chu-cai-xep-ten",
+      "en": {
+        "title": "How are the names ordered?",
+        "goTo": "Run to the reading table, where Tiny Monkey is reading out the first letter of each name",
+        "prompt": "Tiny Monkey reads aloud the first letter of each friend's name: Ân, Bích, Bình, Châu, Chi… Â, B, B, C, C! There's a secret here!\nHow are the friends' names ordered in the list?",
+        "choices": [
+          "by whoever is taller going first",
+          "by the friends' birthdays",
+          "in alphabetical order of the first letter of the name"
+        ]
+      }
     },
     {
       "id": "chep-lai-danh-sach-rung",
@@ -438,6 +608,17 @@
         "answer": {
           "text": "Cáo Lém → Gà Con Chíp → Hải Ly Mộc → Mèo Mun → Thỏ Vội",
           "explanation": "Chữ cái đầu C, G, H, M, T nằm theo đúng thứ tự ấy trong bảng chữ cái tiếng Việt."
+        },
+        "en": {
+          "guide": [
+            "Look at the first letter of each name: T, H, C, M, G.",
+            "Remember the alphabet order: c, d, đ, e, ê, g, h, i, k, l, m, n… t."
+          ],
+          "hint": "The name that begins with C goes first and the name that begins with T goes last.",
+          "answer": {
+            "text": "In order: Cáo Lém → Gà Con Chíp → Hải Ly Mộc → Mèo Mun → Thỏ Vội",
+            "explanation": "The first letters C, G, H, M, T follow exactly that order in the Vietnamese alphabet."
+          }
         }
       },
       "feedback": {
@@ -450,9 +631,33 @@
           "Ơ, chữ G đứng trước chữ H trong bảng chữ cái đấy {name} ạ.",
           "Thẻ tên Thỏ Vội mà đứng đầu thì lạ quá: chữ T ở gần cuối bảng cơ mà.",
           "Đọc nhẩm bảng chữ cái từ đầu, gặp chữ nào thì đặt tên ấy vào hàng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The new list is dead straight! Glasses Cat hugs it, her glasses sparkling.",
+            "Fox first, Rabbit last, right by the alphabet!",
+            "The five names are back in place, and even if it rains again there's nothing to worry about."
+          ],
+          "wrong": [
+            "Hmm, the letter G comes before the letter H in the alphabet, {name}.",
+            "It would be odd for Thỏ Vội's name card to go first: T is near the end of the alphabet.",
+            "Say the alphabet in your head from the start, and put each name in line when you reach its letter."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-xep-ten"
+      "objective": "bang-chu-cai-xep-ten",
+      "en": {
+        "title": "Copy out the school list",
+        "goTo": "Back to the librarian's desk, where Glasses Cat has finished sharpening her bamboo pencil",
+        "prompt": "The story club list for the whole school has only five names left that can be read, and every one is smudged and jumbled. Glasses Cat wants to copy it out like Group Four's list: arrange the friends' names in alphabetical order.",
+        "items": [
+          "Thỏ Vội",
+          "Hải Ly Mộc",
+          "Cáo Lém",
+          "Mèo Mun",
+          "Gà Con Chíp"
+        ]
+      }
     },
     {
       "id": "doc-thuoc-bang-chu-cai",
@@ -534,6 +739,17 @@
         "answer": {
           "text": "con ghẹ; hạt gạo; ghi bài",
           "explanation": "Gh đi với e, ê, i (ghẹ, ghi); g đi với a, o, ô, ơ, u, ư (gạo)."
+        },
+        "en": {
+          "guide": [
+            "Say aloud the name of the animal, object or action in each picture.",
+            "Before e, ê, i the g sound is written gh; before other vowels it is written g."
+          ],
+          "hint": "“Ghẹ” has e and “ghi” has i, so they take gh; “gạo” has a, so it only needs g.",
+          "answer": {
+            "text": "Spellings: con ghẹ; hạt gạo; ghi bài",
+            "explanation": "Gh goes with e, ê, i (ghẹ, ghi); g goes with a, o, ô, ơ, u, ư (gạo)."
+          }
         }
       },
       "feedback": {
@@ -546,9 +762,26 @@
           "Chữ gh chỉ đứng trước e, ê, i thôi, gạo thì không cần chữ h đâu.",
           "Ghẹ có âm e, vậy phải viết gờ-hát mới đúng.",
           "Đọc lại việc trong tranh 3, nghe xem có âm i sau chữ gờ không nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "G-h for the crab, plain g for the rice, g-h for taking notes, correct!",
+            "Tiny Monkey swings round the bookshelf once: that follows the rule!",
+            "The three pictures have names now, and the crab raises a claw to thank {name}."
+          ],
+          "wrong": [
+            "The letters gh only stand before e, ê, i; “gạo” doesn't need an h.",
+            "“Ghẹ” has the sound e, so it must be written g-h.",
+            "Look at the action in picture 3 again and listen: is there an i sound after the g?"
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Three pictures by Tiny Monkey",
+        "goTo": "Look up at the tall bookshelf, where Tiny Monkey has hung picture riddles",
+        "prompt": "Tiny Monkey hangs three pictures on the tall bookshelf: a red swimming crab in a basket, a bowl of white rice and a child bending down to take notes. “G or g-h? G or g-h?”\nLook at the pictures and choose the right spelling for each: which words start with g and which with gh?"
+      }
     },
     {
       "id": "cau-do-s-x",
@@ -680,6 +913,17 @@
         "answer": {
           "text": "xanh, sắp, xóm – quả xoài; xuống, suốt – con suối",
           "explanation": "Cây cao, trái vàng thơm cả xóm là quả xoài; thứ chạy xuống núi và ca suốt ngày là con suối."
+        },
+        "en": {
+          "guide": [
+            "Read the whole line and think which word it is: xanh, sắp, xóm, xuống, suốt…",
+            "The first riddle describes a golden, fragrant fruit; the second describes a little stream of water."
+          ],
+          "hint": "Green leaves, the village neighbourhood and going down the mountain take x; nearly ripe and singing all day take s.",
+          "answer": {
+            "text": "xanh, sắp, xóm – quả xoài (mango); xuống, suốt – con suối (stream)",
+            "explanation": "A tall tree with golden fruit that scents the whole neighbourhood is the mango; the thing that runs down the mountain and sings all day is a stream."
+          }
         }
       },
       "feedback": {
@@ -692,9 +936,25 @@
           "Lá cây có màu “xanh” với chữ x, đọc lại xem nào.",
           "“Sắp chín” và “ca suốt ngày” đều mở đầu bằng chữ s.",
           "Thứ không chân mà chạy xuống núi, róc rách suốt ngày, hay gặp ở trong rừng đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both riddles solved! Tiny Monkey gives {name} a round of applause.",
+            "The mango and the stream, just as Tiny Monkey had hidden in mind!",
+            "Every letter in its place, and even rain couldn't wash away {name}'s skill."
+          ],
+          "wrong": [
+            "Leaves are “xanh” (green), spelled with x. Read it again.",
+            "“Sắp chín” (nearly ripe) and “ca suốt ngày” (singing all day) both begin with s.",
+            "The thing that has no legs but runs down the mountain, babbling all day, is found in the forest."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Two riddles with letters s and x",
+        "prompt": "Tiny Monkey sways: I have two riddles, but the rain has washed away some letters! Fill in the letters first, then solve the riddles.\nChoose s or x to fill in the blanks, then solve the riddle."
+      }
     },
     {
       "id": "mat-cua-ngoi-nha",
@@ -791,6 +1051,17 @@
         "answer": {
           "text": "nhỏ, Mỗi, mở, vẽ, chữ",
           "explanation": "Cuốn vở em nhỏ nhắn / Mỗi sáng em lại mở / Có hình vẽ và chữ."
+        },
+        "en": {
+          "guide": [
+            "Read the whole line aloud and listen to how the voice rises and falls on the word to fill in.",
+            "The hỏi tone sounds like asking; the ngã tone sounds as if it breaks in the middle."
+          ],
+          "hint": "“Nhỏ” and “mở” take the hỏi tone; “mỗi”, “vẽ” and “chữ” take the ngã tone.",
+          "answer": {
+            "text": "Missing words: nhỏ, Mỗi, mở, vẽ, chữ",
+            "explanation": "The verse reads: Cuốn vở em nhỏ nhắn / Mỗi sáng em lại mở / Có hình vẽ và chữ."
+          }
         }
       },
       "feedback": {
@@ -803,9 +1074,26 @@
           "Cuốn vở khép rồi lại mở, chữ “mở” mang dấu hỏi đấy.",
           "Đọc to “mỗi” lên, giọng có bị gãy ở giữa không nào?",
           "“Hình vẽ” dùng dấu ngã, thử nghe lại thật kĩ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The notebook opens up smelling lovely! Tiny Monkey recites the whole poem again for {name}.",
+            "All five tone marks are right, and the notebook page shines.",
+            "Hỏi is hỏi and ngã is ngã, {name} tells them apart well."
+          ],
+          "wrong": [
+            "The notebook closes and then opens again, and the word “mở” has the hỏi tone.",
+            "Say “mỗi” aloud: does your voice break in the middle?",
+            "“Hình vẽ” takes the ngã tone, listen closely again."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Your notebook",
+        "goTo": "Tiny Monkey swings over to Bean Bunny's reading nook to recite a poem about a notebook",
+        "prompt": "Tiny Monkey recites a poem about a notebook, but the rain has washed out the tone marks of some words.\nChoose the question mark tone (dấu hỏi) or the tilde tone (dấu ngã) correctly."
+      }
     },
     {
       "id": "doan-do-vat",
@@ -860,6 +1148,17 @@
         "answer": {
           "text": "a – kính lúp; b – con dấu; c – cái chuông",
           "explanation": "Kính lúp làm chữ bé thành to; con dấu để lại vệt đỏ có tên thư viện; chuông treo hiên kêu leng keng khi gió lay."
+        },
+        "en": {
+          "guide": [
+            "Read each riddle and find the key details: a clear circle, a red mark, a jingling sound.",
+            "Think which object on the librarian's desk has those features."
+          ],
+          "hint": "The thing that makes smudged writing readable by making it bigger has a clear circle.",
+          "answer": {
+            "text": "a – kính lúp (magnifying glass); b – con dấu (stamp); c – cái chuông (bell)",
+            "explanation": "A magnifying glass makes small writing big; a stamp leaves a red mark with the library's name; a bell hung on the porch jingles when the wind sways it."
+          }
         }
       },
       "feedback": {
@@ -872,9 +1171,26 @@
           "Thứ kêu “leng keng” khi gió lay thì treo trên hiên hay nằm trong hộp bút nhỉ?",
           "Vệt đỏ có tên thư viện hiện lên khi ấn xuống giấy, đó không phải cái kính đâu.",
           "Vòng tròn trong suốt làm chữ bé thành to là thứ cô dùng để đọc chữ nhoè đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three objects pulled from their hiding places! Tiny Monkey gives up.",
+            "Magnifying glass, stamp, bell, every guess a hit!",
+            "Glasses Cat's eyes grow round behind her glasses: she hasn't even wiped them and {name} has already guessed."
+          ],
+          "wrong": [
+            "The thing that jingles when the wind sways it: does it hang on the porch or lie in a pencil case?",
+            "The red mark with the library's name appears when pressed on paper, and that isn't a magnifying glass.",
+            "A clear circle that makes small writing big is what she uses to read smudged words."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Objects hiding in the riddles",
+        "goTo": "Go to the reading table, where Tiny Monkey challenges you to find three hiding objects",
+        "prompt": "Tiny Monkey still isn't done with riddles: three objects on Glasses Cat's desk have hidden themselves in three little poems!\nSolve the riddles to find the objects' names.\nDrag each riddle to the right object."
+      }
     },
     {
       "id": "tu-chi-dac-diem",
@@ -937,6 +1253,17 @@
         "answer": {
           "text": "trong suốt, bé, to, đỏ tươi, rõ ràng",
           "explanation": "Các từ này tả kính lúp, chữ viết và vệt dấu; “cầm lên”, “xếp hàng” là hoạt động, “thư viện” là tên nơi chốn."
+        },
+        "en": {
+          "guide": [
+            "A describing word tells how something looks: big, small, what colour, clear or blurred…",
+            "Action words (cầm lên, xếp hàng) and place names (thư viện) are not chosen."
+          ],
+          "hint": "Five words are right, all used to describe objects.",
+          "answer": {
+            "text": "Describing words: trong suốt, bé, to, đỏ tươi, rõ ràng",
+            "explanation": "These words describe the magnifying glass, the writing and the stamp mark; “cầm lên” and “xếp hàng” are actions, and “thư viện” is a place name."
+          }
         }
       },
       "feedback": {
@@ -949,9 +1276,36 @@
           "Cầm lên, xếp hàng là việc người ta làm, chưa phải đặc điểm đâu.",
           "Thư viện là tên một nơi chốn, không phải từ tả đồ vật nhé.",
           "Còn sót một từ tả màu của vệt dấu đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five describing words sit snugly in Tiny Monkey's basket!",
+            "Not one action word mixed in, {name} has sharp eyes.",
+            "Tiny Monkey mutters: trong suốt, bé, to, đỏ tươi, rõ ràng, wonderful!"
+          ],
+          "wrong": [
+            "Cầm lên and xếp hàng are things people do, not describing words.",
+            "Thư viện is the name of a place, not a word that describes an object.",
+            "One word describing the colour of the stamp mark is still missing."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "Hunt for describing words",
+        "goTo": "Look up at the tall bookshelf, where Tiny Monkey holds up an empty banana basket",
+        "prompt": "Tiny Monkey says he's not picking bananas today but picking words: this basket holds only describing words (từ chỉ đặc điểm).\nFind the describing words in the three riddles you just solved.",
+        "choices": [
+          "trong suốt",
+          "xếp hàng",
+          "bé",
+          "cầm lên",
+          "to",
+          "đỏ tươi",
+          "thư viện",
+          "rõ ràng"
+        ]
+      }
     },
     {
       "id": "cau-ve-bang-lop",
@@ -996,6 +1350,17 @@
         "answer": {
           "text": "Chiếc chuông phòng đọc nhỏ xinh và sáng loáng.",
           "explanation": "Câu nói tên đồ vật (chiếc chuông phòng đọc) rồi nêu đặc điểm của nó (nhỏ xinh, sáng loáng)."
+        },
+        "en": {
+          "guide": [
+            "The piece with the capital letter begins the sentence and the piece with the full stop ends it.",
+            "A sentence about a feature: say the object's name first, then what it is like."
+          ],
+          "hint": "The object's name goes first (Chiếc chuông phòng đọc), then its features.",
+          "answer": {
+            "text": "The reading-room bell is tiny and pretty and gleaming.",
+            "explanation": "The sentence gives the object's name (chiếc chuông phòng đọc) and then its features (nhỏ xinh, sáng loáng)."
+          }
         }
       },
       "feedback": {
@@ -1008,9 +1373,31 @@
           "Mảnh có chữ C viết hoa phải đứng đầu chứ.",
           "Chữ “và” nằm giữa hai đặc điểm, không đứng đầu câu được.",
           "Dấu chấm báo hết câu, mảnh “sáng loáng.” xuống cuối nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Hearing that praise, the bell shines three times brighter!",
+            "A rounded sentence about a feature, no piece missing.",
+            "Tiny Monkey was about to tear up more, but this sentence is too good."
+          ],
+          "wrong": [
+            "The piece with the capital C has to go first.",
+            "The word “và” sits between two features and cannot start the sentence.",
+            "The full stop marks the end, so move “sáng loáng.” to the bottom."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-cau-dac-diem"
+      "objective": "tu-chi-dac-diem-cau-dac-diem",
+      "en": {
+        "title": "Sentences praising the bell",
+        "prompt": "The last picture: Glasses Cat is hanging a brass bell on the reading room porch. Tiny Monkey tears his sentence into four pieces.\nMake a sentence that gives a feature of an object in the reading room.\nPut the four pieces together into a sentence.",
+        "items": [
+          "gleaming.",
+          "and",
+          "The reading-room bell",
+          "is tiny and pretty"
+        ]
+      }
     },
     {
       "id": "ten-tho-ti-nhoe",
@@ -1109,6 +1496,17 @@
         "answer": {
           "text": "Tổ Hai có tám bạn ghi tên.",
           "explanation": "Danh sách đánh số từ 1 tới 8, dòng cuối là bạn Bùi Phương Thảo ở số 8."
+        },
+        "en": {
+          "guide": [
+            "Look at the No. column of Group Two's list.",
+            "The number on the last line tells how many friends are in the group."
+          ],
+          "hint": "The last friend is Bùi Phương Thảo.",
+          "answer": {
+            "text": "Group Two has eight friends signed up.",
+            "explanation": "The list is numbered 1 to 8, and the last line is Bùi Phương Thảo at number 8."
+          }
         }
       },
       "feedback": {
@@ -1121,9 +1519,30 @@
           "Năm bạn mới chỉ là số bạn chọn vườn dâu thôi, còn các bạn khác nữa.",
           "Dò xuống tận dòng cuối cùng của danh sách xem có số mấy.",
           "Đếm hết các dòng tên, đừng bỏ sót ai nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Here's the list-reading expert! Eight friends in all.",
+            "Glasses Cat stamps “passed” with a stamp shaped like a pair of glasses.",
+            "Reading the last number gives it right away, {name} is quick as a squirrel."
+          ],
+          "wrong": [
+            "Five is only the number who chose the berry garden, and there are other friends too.",
+            "Check right down to the very last line of the list for its number.",
+            "Count all the name lines, and don't skip anyone."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "The outing list",
+        "prompt": "In the drawer of the librarian's desk there is one more dry list, from Group Two. Glasses Cat wants to check whether {name} has become a \"list-reading expert\".\nRead the list below and answer.\nGroup Two's outing sign-up list\nNo. | Full name | Where they want to go\n1 | Trần Thùy Dương | Berry garden\n2 | Lê Minh Hạnh | Lotus pond\n3 | Vũ Anh Khôi | Berry garden\n4 | Đặng Quang Lâm | Berry garden\n5 | Ngô Hà Mai | Lotus pond\n6 | Phan Hoài Nam | Berry garden\n7 | Cao Gia Phúc | Lotus pond\n8 | Bùi Phương Thảo | Berry garden\nHow many friends in Group Two signed up?",
+        "choices": [
+          "5 friends",
+          "8 friends",
+          "6 friends"
+        ]
+      }
     },
     {
       "id": "chia-nhom-tham-quan",
@@ -1199,6 +1618,17 @@
         "answer": {
           "text": "Vườn dâu: Thùy Dương, Anh Khôi, Quang Lâm, Hoài Nam, Phương Thảo (5 bạn). Ao sen: Minh Hạnh, Hà Mai, Gia Phúc (3 bạn).",
           "explanation": "Có 5 bạn muốn đến vườn dâu và 3 bạn muốn đến ao sen."
+        },
+        "en": {
+          "guide": [
+            "Read each friend's name, then look across to the Where they want to go column on the same line.",
+            "When you have sorted them, count the cards in each group."
+          ],
+          "hint": "Friends numbers 1, 3, 4, 6 and 8 chose the berry garden.",
+          "answer": {
+            "text": "Berry garden (Vườn dâu): Thùy Dương, Anh Khôi, Quang Lâm, Hoài Nam, Phương Thảo (5 friends). Lotus pond (Ao sen): Minh Hạnh, Hà Mai, Gia Phúc (3 friends).",
+            "explanation": "Five friends want to go to the berry garden and 3 want to go to the lotus pond."
+          }
         }
       },
       "feedback": {
@@ -1211,9 +1641,26 @@
           "Một tấm thẻ đang đứng nhầm nhóm, dò lại cột Nơi muốn đến nhé.",
           "Bạn Minh Hạnh chọn ao sen cơ, xem lại dòng số 2.",
           "Bạn Quang Lâm ở dòng số 4 chọn vườn dâu đấy, thử lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two tidy groups: five friends picking berries and three admiring lotuses!",
+            "Nobody gets lost, and Glasses Cat can put her glasses away in peace.",
+            "Every card sorted right, every group counted right, brilliant!"
+          ],
+          "wrong": [
+            "One card is standing in the wrong group, check the Where they want to go column again.",
+            "Minh Hạnh chose the lotus pond, look at line 2 again.",
+            "Quang Lâm on line 4 chose the berry garden, try again."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Who goes where on the outing?",
+        "goTo": "Spread eight name cards on the reading table and split them into groups",
+        "prompt": "Read the list below and answer.\nGroup Two's outing sign-up list\nNo. | Full name | Where they want to go\n1 | Trần Thùy Dương | Berry garden\n2 | Lê Minh Hạnh | Lotus pond\n3 | Vũ Anh Khôi | Berry garden\n4 | Đặng Quang Lâm | Berry garden\n5 | Ngô Hà Mai | Lotus pond\n6 | Phan Hoài Nam | Berry garden\n7 | Cao Gia Phúc | Lotus pond\n8 | Bùi Phương Thảo | Berry garden\nGlasses Cat hands {name} eight name cards. Drag each friend to the place they want to go, then count how many friends are in each group."
+      }
     },
     {
       "id": "tim-doc-ve-thay-co",
@@ -1309,5 +1756,9 @@
       "bang-chu-cai": 1,
       "tu-ngu": 1
     }
+  },
+  "en": {
+    "title": "Glasses Cat Auntie and the Rain-Smudged List",
+    "summary": "A sudden shower blows through the reading room window and smudges Librarian Glasses Cat's story-club sign-up list, and some pages even get swept out into the yard. {name} picks up the papers, reads Group Four's list at the reading table, solves riddles with Tiny Monkey on the tall bookshelf, visits Bean Bunny's reading nook and helps Glasses Cat copy the list in alphabetical order."
   }
 }

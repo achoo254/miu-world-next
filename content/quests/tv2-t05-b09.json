@@ -109,7 +109,11 @@
         "tv2-t05-bui-hoa-nhai",
         "tv2-t05-chuong-gio-tre",
         "tv2-t05-vo-tap-viet"
-      ]
+      ],
+      "en": {
+        "title": "Find poem ideas around the jasmine bed",
+        "goTo": "Go to the jasmine bed in the corridor and find three things that give Mist Deer ideas for her poem"
+      }
     },
     {
       "id": "hat-ve-thay-co",
@@ -160,6 +164,17 @@
         "answer": {
           "text": "Cô đến lớp từ rất sớm rồi mở cửa đón nắng.",
           "explanation": "Hai dòng đầu bài thơ cho biết cô đến lớp thật sớm, rồi mở cửa để nắng vàng ùa vào."
+        },
+        "en": {
+          "guide": [
+            "Look at the first verse and read the two opening lines.",
+            "What does the teacher do with the classroom door?"
+          ],
+          "hint": "She arrives before the children, so the door is already open.",
+          "answer": {
+            "text": "She comes to class very early and opens the door to welcome the sun.",
+            "explanation": "The first two lines of the poem say the teacher comes to class very early, then opens the door so the golden sun can pour in."
+          }
         }
       },
       "feedback": {
@@ -172,9 +187,31 @@
           "Chưa đúng. Đọc lại hai dòng đầu của khổ thơ thứ nhất nhé.",
           "Trong thơ cô đâu đứng chờ ngoài sân. Tìm xem cô làm gì với cánh cửa.",
           "Gần đúng thôi, nhưng cô đến lớp trước cả các bạn cơ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Mist Deer taps her hooves on the floor, as happy as if the teacher had praised her.",
+            "Spot on! The teacher arrives before the sun, and Mist Deer writes it in her poem notebook at once.",
+            "Well done! The two opening lines say exactly that."
+          ],
+          "wrong": [
+            "Not quite. Read the first two lines of verse one again.",
+            "In the poem the teacher isn't waiting out in the yard. Find what she does with the door.",
+            "Nearly, but the teacher gets to class before the children."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem by the classroom window",
+        "goTo": "Look up at the Sparrow classroom window, where the poem “Tiếng cô trong nắng sớm” is pinned beside the glass",
+        "question": "Mist Deer points to the window: an older friend copied this poem out for the whole class and pinned it here. Read it with me!\nHow does the teacher arrive in the morning?",
+        "choices": [
+          "She comes to class very early and opens the door to welcome the golden sun.",
+          "She stands in the yard waiting for the drum to sound.",
+          "She walks in once the children are already at their desks."
+        ]
+      }
     },
     {
       "id": "gio-nang-ghe-lop",
@@ -226,6 +263,17 @@
         "answer": {
           "text": "Phấn trắng chạy trên bảng; Gió lật trang vở em; Nắng ngồi yên cửa sổ.",
           "explanation": "Lúc cô giảng bài, phấn chạy trên bảng, gió lật vở, nắng ngồi bên cửa sổ. Ba dòng còn lại kể chuyện buổi đầu ngày."
+        },
+        "en": {
+          "guide": [
+            "Read the second verse, when the teacher stands at the board.",
+            "Scene lines talk about chalk, wind or sunshine; lines about the teacher or about the child stay behind."
+          ],
+          "hint": "Three lines are right, one after another in the second verse.",
+          "answer": {
+            "text": "White chalk runs across the board; The wind turns my notebook pages; The sunshine sits still at the window.",
+            "explanation": "While the teacher teaches, the chalk runs along the board, the wind turns the notebook pages and the sunshine sits by the window. The other three lines tell about the start of the day."
+          }
         }
       },
       "feedback": {
@@ -238,9 +286,33 @@
           "Còn sót một dòng tả nắng đấy, đọc kĩ khổ thơ thứ hai nhé.",
           "Dòng nào nói về cô hay về em thì để lại, mình chỉ tìm dòng tả cảnh thôi.",
           "Khổ thứ hai là khổ có tiếng phấn, tiếng gió, bóng nắng. Đọc lại thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Chalk, wind and sunshine, all there! Mist Deer copies furiously and her notebook rustles.",
+            "Wonderful! The classroom has chalk running, wind turning pages and sunshine listening. So poetic!",
+            "Three lines exactly right! Mist Deer wags her tail as if she had top marks."
+          ],
+          "wrong": [
+            "One line about the sunshine is still missing. Read the second verse carefully.",
+            "Leave behind any line about the teacher or the child, we're only looking for scene lines.",
+            "The second verse is the one with the sound of chalk, the wind and the sun's shadow. Read it again."
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "Wind and sunshine visit the classroom",
+        "prompt": "Mist Deer jumps up and down: chalk, wind, sunshine… they're all poem ideas! I have to copy them right now.\nFind the poem lines that describe the scene in the classroom while the teacher is teaching.",
+        "choices": [
+          "White chalk runs across the board",
+          "The teacher's smile is so gentle",
+          "The wind turns my notebook pages",
+          "The teacher comes to class so early",
+          "The sunshine sits still at the window",
+          "I greet her, my heart fluttering."
+        ]
+      }
     },
     {
       "id": "ban-nho-ke-ve-co",
@@ -316,6 +388,17 @@
         "answer": {
           "text": "Có kể: cô đến lớp sớm, mở cửa đón nắng, có nụ cười hiền, viết phấn lên bảng, dặn những lời nho nhỏ.",
           "explanation": "Chở em bằng xe đạp, kể chuyện cổ tích và dạy bơi không có trong bài thơ."
+        },
+        "en": {
+          "guide": [
+            "Read all three verses one by one.",
+            "If a card matches something in the poem, put it in the “Bài thơ có kể” (The poem tells) basket."
+          ],
+          "hint": "The poem has five things: coming early, opening the door, the smile, writing with chalk, the little words of advice.",
+          "answer": {
+            "text": "The poem tells: the teacher comes early, opens the door to the sun, has a gentle smile, writes with chalk on the board, and gives little words of advice.",
+            "explanation": "Taking the child home by bike, telling fairy tales and teaching swimming are not in the poem."
+          }
         }
       },
       "feedback": {
@@ -328,9 +411,26 @@
           "Cô dạy bơi ư? Trong thơ đâu có cái hồ nào! Xem lại giỏ nhé.",
           "Còn một điều có trong bài thơ đang lạc sang giỏ bên kia đấy.",
           "Khổ cuối nói về lời cô dặn, còn khổ đầu nói chuyện cửa lớp. Đọc lại thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two neat baskets! Mist Deer twirls with her notebook.",
+            "Exactly! Early, smiling, chalk, advice… all five things.",
+            "Brilliant! Mist Deer says {name} reads the poem even more carefully than she does."
+          ],
+          "wrong": [
+            "The teacher teaching swimming? There's no lake in the poem! Check the baskets again.",
+            "One thing that is in the poem has wandered into the other basket.",
+            "The last verse is about the teacher's advice and the first is about the classroom door. Read them again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Things about the teacher",
+        "goTo": "Back to your seat in the Sparrow classroom, where Mist Deer hugs a notebook as plump as a steamed bun",
+        "prompt": "Mist Deer wants to cram as many things about her teacher into the poem as she can, so many that her notebook bulges like a steamed bun.\nWhich things does the poem say about the teacher, and which does it not?\nDrag each card into the right basket."
+      }
     },
     {
       "id": "tinh-cam-voi-co",
@@ -366,6 +466,17 @@
         "answer": {
           "text": "Bạn nhỏ rất quý mến cô và nhớ lời cô mãi.",
           "explanation": "Bạn nhỏ chào cô vui vẻ, thấy lời cô làm vở thêm thơm và giữ mãi tiếng cô trong lòng."
+        },
+        "en": {
+          "guide": [
+            "Read the last verse again.",
+            "What does the child do with the teacher's voice and advice?"
+          ],
+          "hint": "Look at the final line, where the child says what they keep in their heart for ever.",
+          "answer": {
+            "text": "The child cares for the teacher very much and remembers her words for ever.",
+            "explanation": "The child greets the teacher happily, finds that her words make the notebook smell sweeter, and keeps her voice in their heart for ever."
+          }
         }
       },
       "feedback": {
@@ -378,9 +489,30 @@
           "Bạn nhỏ chào cô rất rộn ràng, đâu có ngại. Đọc lại khổ đầu nhé.",
           "Tìm dòng cuối bài rồi chọn lại xem bạn nhỏ giữ mãi điều gì.",
           "Đi học mà bạn nhỏ còn nhớ từng lời cô dặn, đâu phải chán học."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Mist Deer is moved and sniffles with a little “khịt khịt”.",
+            "Right! Remembering the teacher's voice for ever shows how much the child cares.",
+            "Lovely! Mist Deer will put this idea into her poem for the teacher."
+          ],
+          "wrong": [
+            "The child greets the teacher so cheerfully, not shyly. Read the first verse again.",
+            "Find the last line of the poem and choose again: what does the child keep for ever?",
+            "The child remembers every word of the teacher's advice, so it's not about being tired of school."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "How does the child love the teacher?",
+        "prompt": "From the poem, what do you think the child feels about the teacher?\nMist Deer blinks her long lashes: I've guessed it already, which sentence will {name} pick?",
+        "choices": [
+          "The child cares for the teacher and will always remember her",
+          "The child is a bit shy and afraid of the teacher",
+          "The child only wishes to skip school"
+        ]
+      }
     },
     {
       "id": "gio-thoi-dong-tho",
@@ -426,6 +558,17 @@
         "answer": {
           "text": "Lời cô dặn nho nhỏ / Thơm vở em, thơm bài / Tiếng cô trong nắng sớm / Em giữ mãi không phai.",
           "explanation": "Đây là khổ thơ cuối của bài “Tiếng cô trong nắng sớm”, xếp theo đúng thứ tự trong bài."
+        },
+        "en": {
+          "guide": [
+            "The last verse begins with the teacher's advice.",
+            "The line with a full stop is the one that closes the verse."
+          ],
+          "hint": "The advice comes first and the sweet-smelling notebook next; the teacher's voice in the sun comes right before the line about keeping it for ever.",
+          "answer": {
+            "text": "My teacher's gentle words of advice / My notebook smells sweet, my lessons too / Her voice in the early sunshine / I will keep it for ever, never fading.",
+            "explanation": "This is the last verse of the poem “Tiếng cô trong nắng sớm”, in the order it appears."
+          }
         }
       },
       "feedback": {
@@ -438,9 +581,32 @@
           "Dòng có dấu chấm phải nằm cuối cùng đấy.",
           "Lời cô dặn là dòng mở đầu, kéo nó lên đầu hàng nhé.",
           "Cô dặn xong thì vở mới thơm, dòng nào kể điều đó? Đặt nó ngay sau lời dặn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The verse is back where it belongs! Mist Deer sets an eraser on top so the wind stops playing.",
+            "Right order! {name} learns the poem as quickly as a squirrel climbs a tree.",
+            "Wonderful, it sounds as gentle as the teacher's lesson."
+          ],
+          "wrong": [
+            "The line with a full stop has to go last.",
+            "The teacher's advice is the opening line, so drag it to the top.",
+            "The notebook only smells sweet after the teacher's advice. Which line tells that? Put it right after the advice."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The wind blew the poem lines away",
+        "goTo": "The wind has blown four lines of the poem to the end of the corridor, and Milk Cat leaps up to catch them",
+        "prompt": "Whoosh! A mischievous gust rushed through the classroom window and blew about the four lines of the last verse that Mist Deer had just copied. Put them back in the right order.",
+        "items": [
+          "I will keep it for ever, never fading.",
+          "My teacher's gentle words of advice",
+          "Her voice in the early sunshine",
+          "My notebook smells sweet, my lessons too"
+        ]
+      }
     },
     {
       "id": "doc-thuoc-long",
@@ -509,6 +675,17 @@
         "answer": {
           "text": "Lúc nghe hát: Ôi, thầy hát hay quá chừng!; Chà, giọng thầy ngọt như mật ong! Lúc mở quà: Ôi, món quà này đẹp quá, em cảm ơn!; Ồ, sao lại có hộp quà ở đây nhỉ!",
           "explanation": "Cả bốn câu đều reo lên ngạc nhiên; hai câu khen giọng hát, hai câu nói về món quà bất ngờ."
+        },
+        "en": {
+          "guide": [
+            "Read each sentence and see whether it praises a singing voice or talks about a gift.",
+            "Surprised sentences often begin with Ôi, Ồ, Chà."
+          ],
+          "hint": "A sentence with “hát” (sing) or “giọng” (voice) is for hearing singing.",
+          "answer": {
+            "text": "Hearing singing: Ôi, thầy hát hay quá chừng!; Chà, giọng thầy ngọt như mật ong! Opening a gift: Ôi, món quà này đẹp quá, em cảm ơn!; Ồ, sao lại có hộp quà ở đây nhỉ!",
+            "explanation": "All four sentences cry out in surprise; two praise the singing voice and two are about a surprise gift."
+          }
         }
       },
       "feedback": {
@@ -521,9 +698,26 @@
           "Câu nhắc tới hộp quà là lúc mở quà, đâu phải lúc nghe hát.",
           "Ối, thầy đâu có mang hộp quà nào! Xem lại câu khen giọng hát nhé.",
           "Tìm chữ “hát” và chữ “giọng” trong thẻ, hai thẻ đó đi cùng nhau."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Golden Lion chuckles, his mane quivering: that's just the praise I like!",
+            "Spot on! He puffs out his chest and says that as a child he led the choir.",
+            "Cleverly matched! Mist Deer says every one of them makes her eyes go round."
+          ],
+          "wrong": [
+            "A sentence mentioning a gift box is for opening a gift, not for hearing singing.",
+            "Oh, he has not brought any gift box! Look again at the sentences praising the singing.",
+            "Look for the words “hát” and “giọng” on the cards, those two go together."
+          ]
+        }
       },
-      "objective": "noi-va-nghe-chia-se"
+      "objective": "noi-va-nghe-chia-se",
+      "en": {
+        "title": "The principal's surprise song",
+        "goTo": "Singing rings out at the foot of the stairs, run and see",
+        "prompt": "Suddenly Golden Lion the principal comes up the stairs singing, his voice so warm and sweet that Mist Deer drops her pencil. The whole class thought he could only roar!\nEvery sentence below cries out in surprise. Match each sentence to the moment you would say it."
+      }
     },
     {
       "id": "khen-vet-xanh",
@@ -582,6 +776,17 @@
         "answer": {
           "text": "Em rất biết ơn cô giáo của em!",
           "explanation": "Câu nói rõ lòng biết ơn của em với cô: rất biết ơn cô giáo của em."
+        },
+        "en": {
+          "guide": [
+            "The card with a capital letter begins the sentence.",
+            "The card with an exclamation mark closes it."
+          ],
+          "hint": "Who feels what about whom: Em biết ơn cô giáo.",
+          "answer": {
+            "text": "Em rất biết ơn cô giáo của em! (I am very grateful to my teacher!)",
+            "explanation": "The sentence shows the child's gratitude to the teacher: rất biết ơn cô giáo của em."
+          }
         }
       },
       "feedback": {
@@ -594,9 +799,32 @@
           "Thẻ “Em” viết hoa, phải đứng đầu câu cơ.",
           "Dấu chấm than đang lạc giữa câu rồi, đưa nó về cuối nhé.",
           "Đọc thử thành tiếng: em biết ơn ai? Thẻ đó đứng ngay sau “rất biết ơn”."
-        ]
+        ],
+        "en": {
+          "right": [
+            "What a warm sentence! Mist Deer copies it as the last line, writing every letter neatly.",
+            "Right! It sounds as fragrant as a jasmine just in bloom.",
+            "Wonderful! The teacher will surely smile broadly when she reads this."
+          ],
+          "wrong": [
+            "The card “Em” has a capital letter, so it must begin the sentence.",
+            "The exclamation mark has strayed into the middle. Send it back to the end.",
+            "Read it aloud: who is grateful? That card comes right after “rất biết ơn”."
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "The last line of the poem",
+        "goTo": "Milk Cat waves {name} to the end of the corridor, clutching a jumble of word cards",
+        "prompt": "Mist Deer wants to end the poem with a warm line, but the word cards have all got jumbled up.\nSay a sentence that thanks a teacher.\nArrange the cards into a sentence, then read it aloud.",
+        "items": [
+          "cô giáo",
+          "Em",
+          "của em!",
+          "rất biết ơn"
+        ]
+      }
     },
     {
       "id": "tang-tho-the-nao",
@@ -741,6 +969,17 @@
         "answer": {
           "text": "Bò dưới sao → trú mưa trong vỏ → cả lớp vỗ tay → các bạn chờ ở đầu đường.",
           "explanation": "Bốn tranh theo đúng lời cô Gấu Mật kể: lên đường lúc sao còn sáng, gặp mưa, được cả lớp khen, rồi có bạn chờ cùng đi."
+        },
+        "en": {
+          "guide": [
+            "At the beginning it is still dark when Bean sets off.",
+            "At the end of the story, the friends wait to walk with Bean."
+          ],
+          "hint": "The rain comes before Bean reaches the classroom, while the praise comes after Bean arrives.",
+          "answer": {
+            "text": "Crawling under the stars → sheltering from the rain in its shell → the whole class claps → the friends wait at the start of the road.",
+            "explanation": "The four pictures follow Auntie Honey Bear's tale: setting out while the stars are still bright, meeting rain, being praised by the whole class, then having friends who wait to walk together."
+          }
         }
       },
       "feedback": {
@@ -753,9 +992,32 @@
           "Các bạn chờ ở đầu đường là chuyện của sáng hôm sau, để tranh ấy về cuối nhé.",
           "Trước khi được cả lớp khen, Đậu phải bò tới lớp đã chứ.",
           "Mở đầu câu chuyện, trên trời còn đầy sao đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four pictures in a row! The story runs from start to end without a hitch.",
+            "Right! Mist Deer pins the pictures up firmly with four pushpins.",
+            "Brilliant, {name} remembers the story even better than Mist Deer's poem notebook."
+          ],
+          "wrong": [
+            "The friends waiting at the start of the road belongs to the next morning, so put that picture last.",
+            "Before the whole class praises Bean, Bean has to crawl to school first.",
+            "At the start of the story the sky is still full of stars."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Put the snail pictures in order",
+        "goTo": "Go to the storytelling corner in the classroom and hang the four pictures the wind blew down",
+        "prompt": "That mischievous wind has come back and knocked the four pictures into a jumble. Hang them again in the order of the story Auntie Honey Bear just told.",
+        "items": [
+          "The whole class claps in front of the classroom door",
+          "Bean the Snail crawls under the stars",
+          "The friends wait for Bean at the start of the road",
+          "Bean the Snail pulls into its shell to shelter from the rain"
+        ]
+      }
     },
     {
       "id": "ke-cho-nguoi-than",
@@ -873,5 +1135,9 @@
       "cau": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "Mist Deer's Poem for Teacher",
+    "summary": "Mist Deer wants to write a poem for her teacher but is stuck for rhymes. {name} helps her find ideas around the jasmine bed in the corridor, reads “Tiếng cô trong nắng sớm” (Teacher's Voice in the Morning Sun) pinned by the classroom window, asks Milk Cat to fetch the lines the wind blew away, listens wide-eyed to Golden Lion the principal sing, and hears Auntie Honey Bear tell the story of Bean the snail going to school."
   }
 }

@@ -95,7 +95,11 @@
         "toan2-cd6-to-lich-thang-12",
         "toan2-cd6-to-lich-thang-2",
         "toan2-cd6-the-ngay-sinh"
-      ]
+      ],
+      "en": {
+        "title": "Pick up flying calendar pieces",
+        "goTo": "Pick up the scraps of calendar that have fallen along the tower's spiral staircase"
+      }
     },
     {
       "id": "doc-ngay-thang",
@@ -184,6 +188,17 @@
         "answer": {
           "text": "Chín tháng Hai thuộc Vịt; hai mươi mốt tháng Bảy thuộc Ếch; mười ba tháng Mười thuộc Dê.",
           "explanation": "Ngày chín tháng Hai là ngày 9 tháng 2 của Vịt, ngày hai mươi mốt tháng Bảy là ngày 21 tháng 7 của Ếch, ngày mười ba tháng Mười là ngày 13 tháng 10 của Dê."
+        },
+        "en": {
+          "guide": [
+            "Turn the words into numbers first: \"nine\" is 9, \"February\" is month 2.",
+            "A word card and a number card can only be matched when both the day and the month are the same."
+          ],
+          "hint": "\"The thirteenth of October\" written in numbers is 13 October.",
+          "answer": {
+            "text": "The ninth of February belongs to the Duck; the twenty-first of July belongs to the Frog; the thirteenth of October belongs to the Goat.",
+            "explanation": "The ninth of February is the Duck's 9 February, the twenty-first of July is the Frog's 21 July, and the thirteenth of October is the Goat's 13 October."
+          }
         }
       },
       "feedback": {
@@ -196,7 +211,19 @@
           "Có một tấm thẻ ghép nhầm tháng, đọc lại phần chữ chỉ tháng nhé.",
           "Hãy đổi \"mười ba\" thành số trước, sau đó tìm bạn có số 13.",
           "Cùng ngày nhưng khác tháng thì chưa phải cùng ngày sinh đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three cards are back with their owners, and Bảo Elephant is thinking of throwing one big joint birthday party!",
+            "Word card or number card, you read out the same day every time, super.",
+            "Even if the wind shuffles them again, you will match them right all the same."
+          ],
+          "wrong": [
+            "One card has been matched to the wrong month, so reread the word for the month.",
+            "Turn \"thirteen\" into a number first, then look for the friend with 13.",
+            "The same day in a different month is not yet the same birthday."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -205,7 +232,16 @@
           "the-ngay-muoi-ba-thang-muoi": "nhom-de-ngay-13-thang-10"
         }
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Two friends with the same birthday",
+        "prompt": "The wind has shuffled the birthday cards: some are written in words and some in numbers. Match each word card with the friend who has the same birthday.",
+        "items": [
+          "The ninth of February",
+          "The twenty-first of July",
+          "The thirteenth of October"
+        ]
+      }
     },
     {
       "id": "o-trong-thang-muoi-hai",
@@ -229,6 +265,17 @@
         "answer": {
           "text": "Ngày 13",
           "explanation": "Ngày liền sau ngày 12 là ngày 13, đó là ô rách đầu tiên của tờ lịch."
+        },
+        "en": {
+          "guide": [
+            "The days of a month come one after another, each square one day more than the one before.",
+            "Find the square right after the 12th."
+          ],
+          "hint": "What day is it one day after the 12th?",
+          "answer": {
+            "text": "The 13th",
+            "explanation": "The day right after the 12th is the 13th, and that is the first torn square on the page."
+          }
         }
       },
       "feedback": {
@@ -241,12 +288,30 @@
           "Ô cậu chạm vẫn còn số nguyên vẹn, tìm ô bị rách thôi.",
           "Lấy 12 cộng một ngày, ô cần tìm mang con số đó.",
           "Đi theo hàng của ngày 12 sang phải, ô trống nào gặp trước?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The square for the 13th lights up, and the first stitch is done!",
+            "You followed the order of the days very clearly and found it at once.",
+            "Needle-and-Thread Bunny sticks the first patch onto the square for the 13th."
+          ],
+          "wrong": [
+            "The square you touched still has its number, so look for the torn one.",
+            "Add one day to 12, and the square you need has that number.",
+            "Follow the row of the 12th to the right: which blank square do you meet first?"
+          ]
+        }
       },
       "answer": {
         "day": 13
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "The first torn square of July",
+        "goTo": "Go to the mending table, where Needle-and-Thread Bunny threads a needle ready to patch the July page",
+        "prompt": "Needle-and-Thread Bunny spreads the July calendar page on the mending table. The wind has torn a few squares out of this page.",
+        "question": "The calendar page shows day 12, but the square right after it has lost its number. Tap the square of that missing day."
+      }
     },
     {
       "id": "va-lich-thang-muoi-hai",
@@ -387,6 +452,17 @@
         "answer": {
           "text": "Các ngày bị mất lần lượt là 5, 9, 15, 18, 23, 26 và 30.",
           "explanation": "Ngày 5 nằm giữa 4 và 6, ngày 9 giữa 8 và 10, ngày 15 giữa 14 và 16, ngày 18 giữa 17 và 19, ngày 23 giữa 22 và 24, ngày 26 giữa 25 và 27, ngày 30 giữa 29 và 31."
+        },
+        "en": {
+          "guide": [
+            "Each hole sits between two intact days, and the missing day is exactly 1 more than the one on its left.",
+            "Check again: the day you filled in plus 1 must give the day on the right."
+          ],
+          "hint": "Which number is between 4 and 6, and which is between 8 and 10?",
+          "answer": {
+            "text": "The missing days are 5, 9, 15, 18, 23, 26 and 30 in turn.",
+            "explanation": "The 5th is between 4 and 6, the 9th between 8 and 10, the 15th between 14 and 16, the 18th between 17 and 19, the 23rd between 22 and 24, the 26th between 25 and 27, and the 30th between 29 and 31."
+          }
         }
       },
       "feedback": {
@@ -399,7 +475,19 @@
           "Có một miếng vá bị dán lệch sang ô bên cạnh.",
           "Nhìn ngày bên trái ô trống, thêm 1 là ra số cần điền.",
           "Đọc lại từng cặp ngày kẹp ô thủng theo thứ tự từ trái sang phải."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Seven patches sit in the right squares, and the July page is whole as if freshly printed!",
+            "Needle-and-Thread Bunny wiggles her long ears: not a single square was missed.",
+            "July has all its days again, and no wind could blow this page away."
+          ],
+          "wrong": [
+            "One patch has been stuck on the square next to the right one.",
+            "Look at the day to the left of the blank square, and add 1 to get the number to fill in.",
+            "Reread each pair of days around a hole in order from left to right."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -412,7 +500,11 @@
           "b7": "o30"
         }
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Patch up the July calendar",
+        "prompt": "The wind has torn seven holes in the July calendar page. Bảo Elephant reads out the two intact days on either side of each hole, and {name} fills in the missing day."
+      }
     },
     {
       "id": "thang-muoi-hai-may-ngay",
@@ -436,6 +528,17 @@
         "answer": {
           "text": "Tháng 7 có 31 ngày.",
           "explanation": "Tờ lịch tháng 7 kết thúc ở ngày 31, nên tháng 7 có 31 ngày."
+        },
+        "en": {
+          "guide": [
+            "The last day of the month tells you how many days the month has.",
+            "Find the square with the biggest number on the calendar page."
+          ],
+          "hint": "The last square is in the bottom right corner of the page.",
+          "answer": {
+            "text": "July has 31 days.",
+            "explanation": "The July calendar page ends on the 31st, so July has 31 days."
+          }
         }
       },
       "feedback": {
@@ -448,12 +551,30 @@
           "Ô cậu chạm chưa phải ngày cuối của tháng đâu.",
           "Kéo mắt xuống hàng dưới cùng của tờ lịch xem.",
           "Ngày lớn nhất in trên tờ lịch này là ngày mấy nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty-one days! July really is long, with room for a whole busy summer.",
+            "You touched the last square exactly, and Bảo Elephant writes it in his notebook.",
+            "Right: the biggest number on the calendar page is the number of days in the month."
+          ],
+          "wrong": [
+            "The square you touched is not the last day of the month.",
+            "Run your eyes down to the very bottom row of the page.",
+            "What is the biggest day printed on this calendar page?"
+          ]
+        }
       },
       "answer": {
         "day": 31
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "How long is July?",
+        "goTo": "Take the July page back to the calendar room at the top of the tower, where Bảo Elephant waits with raised trunk",
+        "prompt": "Bảo Elephant opens the mended July calendar page and wants to count how far this month stretches.",
+        "question": "How many days does July have? Tap the square of the last day to answer."
+      }
     },
     {
       "id": "mung-mot-thang-muoi-hai",
@@ -477,6 +598,17 @@
         "answer": {
           "text": "Ngày 1 tháng 7 là thứ Sáu.",
           "explanation": "Ô ngày 1 tháng 7 nằm dưới cột thứ Sáu."
+        },
+        "en": {
+          "guide": [
+            "The first day of the month is the 1st.",
+            "From the square for the 1st, trace straight up to the weekday at the top of the column."
+          ],
+          "hint": "The 1st is near the end of the first row, but not yet a weekend day.",
+          "answer": {
+            "text": "1 July is a Friday.",
+            "explanation": "The square for 1 July is under the Friday column."
+          }
         }
       },
       "feedback": {
@@ -489,12 +621,30 @@
           "Tìm ô số 1 trước, rồi mới nhìn lên đầu cột.",
           "Cột cậu chọn không chứa ngày 1 của tháng 7.",
           "Ngón tay đi thẳng lên trên, đừng đi chéo sang cột khác."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Friday! July opens at the end of the week so the whole library can rest.",
+            "You traced the column as straight as a ruler, and Brown Bear Cốm praises you to the skies.",
+            "The Friday column is right: the word at the top matches the square for the 1st."
+          ],
+          "wrong": [
+            "Find the square numbered 1 first, then look up to the top of the column.",
+            "The column you chose does not hold the 1st of July.",
+            "Run your finger straight up, and don't go diagonally into another column."
+          ]
+        }
       },
       "answer": {
         "weekday": "thu-sau"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "What day is July 1?",
+        "goTo": "Go to the calendar stand, where Brown Bear Cốm is tracing each weekday column",
+        "prompt": "Brown Bear Cốm hangs the July calendar page on the stand and practises tracing along each weekday column.",
+        "question": "Which weekday is the first day of July? Tap the weekday of day 1."
+      }
     },
     {
       "id": "ngay-cuoi-thang-muoi-hai",
@@ -517,6 +667,17 @@
         "answer": {
           "text": "Ngày 31 tháng 7 là Chủ nhật.",
           "explanation": "Ô ngày 31 tháng 7 nằm dưới cột Chủ nhật."
+        },
+        "en": {
+          "guide": [
+            "The last day of July is the 31st.",
+            "From the square for the 31st, trace straight up to the top of the column to read the weekday."
+          ],
+          "hint": "The 31st is in the last column of the page.",
+          "answer": {
+            "text": "31 July is a Sunday.",
+            "explanation": "The square for 31 July is under the Sunday column."
+          }
         }
       },
       "feedback": {
@@ -529,12 +690,29 @@
           "Hãy tìm ô số 31 ở hàng dưới cùng trước đã.",
           "Cột cậu chọn không chứa ngày 31.",
           "Nhìn lên đầu cột có ngày 31 để đọc đúng thứ nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Sunday at the end of the month, and the library hangs lanterns to welcome the new month!",
+            "The square for the 31st is under the Sunday column, and you found it without a slip.",
+            "Brown Bear Cốm marks the 31st with a blue star."
+          ],
+          "wrong": [
+            "First find the square numbered 31 in the bottom row.",
+            "The column you chose does not hold the 31st.",
+            "Look up to the top of the column with the 31st to read the right weekday."
+          ]
+        }
       },
       "answer": {
         "weekday": "chu-nhat"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "What day is July 31?",
+        "prompt": "Brown Bear Cốm flips down to the last row of the July page to see which day the month ends on.",
+        "question": "Which weekday is the last day of July? Tap the weekday of day 31."
+      }
     },
     {
       "id": "koala-dap-lich",
@@ -607,6 +785,17 @@
         "answer": {
           "text": "Tháng 8 có 31 ngày.",
           "explanation": "Tờ lịch tháng 8 có ô cuối là ngày 31, vậy tháng 8 có 31 ngày."
+        },
+        "en": {
+          "guide": [
+            "The number of days in the month is the number in the last square.",
+            "August ends in the bottom row of the page."
+          ],
+          "hint": "August is as long as the July you just looked at.",
+          "answer": {
+            "text": "August has 31 days.",
+            "explanation": "The August page has the 31st as its last square, so August has 31 days."
+          }
         }
       },
       "feedback": {
@@ -619,12 +808,29 @@
           "Gấu Trúc Khò lắc đầu: sau ô đó vẫn còn ngày khác nữa cơ.",
           "Ngày cuối của tháng 8 nằm ở hàng dưới cùng đấy.",
           "Tìm con số lớn nhất trên tờ lịch tháng 8 nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty-one days to play, to learn, and for Snoring Panda's afternoon naps!",
+            "Snoring Panda opens one eye: yes, it really is 31.",
+            "Here is the last square of August, and your hand was quick."
+          ],
+          "wrong": [
+            "Snoring Panda shakes his head: there are more days after that square.",
+            "The last day of August is in the bottom row.",
+            "Look for the biggest number on the August page."
+          ]
+        }
       },
       "answer": {
         "day": 31
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "How many days in January?",
+        "prompt": "Snoring Panda hands over the August calendar page, still smelling of sleep.",
+        "question": "How long is August? Snoring Panda, half asleep, asks you to tap the square of the last day."
+      }
     },
     {
       "id": "tet-duong-lich-thu-may",
@@ -648,6 +854,17 @@
         "answer": {
           "text": "Ngày 19 tháng 8 là thứ Sáu.",
           "explanation": "Ô ngày 19 tháng 8 nằm dưới cột thứ Sáu."
+        },
+        "en": {
+          "guide": [
+            "Find the square numbered 19 on the August page.",
+            "From that square, trace straight up to the top of the column to read the weekday."
+          ],
+          "hint": "The 19th is in the same column as the 5th and the 12th.",
+          "answer": {
+            "text": "19 August is a Friday.",
+            "explanation": "The square for 19 August is under the Friday column."
+          }
         }
       },
       "feedback": {
@@ -660,12 +877,30 @@
           "Ngày hội là ngày 19, tìm ô số 19 trước nhé.",
           "Ô số 19 ở hàng thứ ba của tờ lịch, thử nhìn lại.",
           "Đọc chữ trên đầu cột chứa ngày 19 thật kĩ thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Friday! Kites fill the sky, and even Snoring Panda wakes up to watch.",
+            "The Friday column is right, and you read the calendar so well.",
+            "Wobbly Calf's bell jingles to celebrate the kite festival."
+          ],
+          "wrong": [
+            "The festival is on the 19th, so find the square numbered 19 first.",
+            "The square numbered 19 is in the third row of the page, so look again.",
+            "Read the word at the top of the column holding the 19th very carefully."
+          ]
+        }
       },
       "answer": {
         "weekday": "thu-sau"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "What day is the kite festival?",
+        "goTo": "Run to the east-facing window, where Wobbly Calf rings a bell with news of the kite festival",
+        "prompt": "Wobbly Calf holds the August calendar page and circles the 19th, the day the library holds a kite festival on the hill.",
+        "question": "The kite festival is on 19 August. Which weekday is it? Tap the weekday of day 19."
+      }
     },
     {
       "id": "mung-mot-thang-hai-thu-may",
@@ -689,6 +924,17 @@
         "answer": {
           "text": "Ngày 1 tháng 9 là thứ Năm.",
           "explanation": "Ngày 31 tháng 8 là thứ Tư, nên hôm sau, ngày 1 tháng 9, là thứ Năm."
+        },
+        "en": {
+          "guide": [
+            "The 1st of September comes right after the 31st of August.",
+            "Find the weekday of the 31st, then take the weekday after it."
+          ],
+          "hint": "31 August is a Wednesday.",
+          "answer": {
+            "text": "1 September is a Thursday.",
+            "explanation": "31 August is a Wednesday, so the next day, 1 September, is a Thursday."
+          }
         }
       },
       "feedback": {
@@ -701,12 +947,30 @@
           "Ngày 1 tháng 9 không in trên tờ này, hãy nhìn ngày 31 trước.",
           "Ngày 31 tháng 8 là thứ mấy? Ngày hôm sau là thứ kế tiếp.",
           "Sau thứ Tư là thứ mấy nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thursday! You can see right across into next month, and Snoring Panda is amazed.",
+            "Wednesday and then Thursday, you linked the two months without a stumble.",
+            "Snoring Panda wakes up completely at how quick your answer was."
+          ],
+          "wrong": [
+            "1 September isn't printed on this page, so look at the 31st first.",
+            "What weekday is 31 August? The next day is the next weekday.",
+            "What comes after Wednesday?"
+          ]
+        }
       },
       "answer": {
         "weekday": "thu-nam"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "What day is it when September begins?",
+        "goTo": "Go back out onto the tower balcony, where Snoring Panda waves the August calendar page",
+        "prompt": "Snoring Panda folds the August calendar page shut and sticks his head out to ask a riddle that looks across into the next month.",
+        "question": "Which weekday is 1 September of the same year? Snoring Panda's hint: it comes right after the last day of August."
+      }
     },
     {
       "id": "tranh-ngay-le",
@@ -757,6 +1021,17 @@
         "answer": {
           "text": "20/10 thuộc ô hai mươi tháng Mười; 1/5 thuộc ô một tháng Năm; 22/12 thuộc ô hai mươi hai tháng Mười hai.",
           "explanation": "Ngày 20 tháng 10 đọc là hai mươi tháng Mười, ngày 1 tháng 5 đọc là một tháng Năm, ngày 22 tháng 12 đọc là hai mươi hai tháng Mười hai. Ô hai mươi tháng Chín không có tranh nào."
+        },
+        "en": {
+          "guide": [
+            "Read the day and month written under the picture, then find the word box that reads the same.",
+            "One word box is left over, with the same twentieth day but a different month, so don't let it fool you."
+          ],
+          "hint": "Month 10 is read \"tháng Mười\" and only month 9 is read \"tháng Chín\".",
+          "answer": {
+            "text": "20/10 goes with the box \"the twentieth of October\"; 1/5 goes with the box \"the first of May\"; 22/12 goes with the box \"the twenty-second of December\".",
+            "explanation": "20 October is read as the twentieth of October, 1 May as the first of May, and 22 December as the twenty-second of December. No picture goes with the box \"the twentieth of September\"."
+          }
         }
       },
       "feedback": {
@@ -769,7 +1044,19 @@
           "Có một bức tranh đang nằm nhầm ô chữ của ngày khác.",
           "Kiểm tra lại số tháng dưới tranh: tháng 10 hay tháng 9?",
           "Ô chữ phải đọc đúng cả ngày lẫn tháng mới ghép được."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three pictures went back to the right word boxes, and Snoring Panda hangs them on the wall to look pretty.",
+            "The spare box for September could not fool you.",
+            "You turn numbers into words smoothly, and Bảo Elephant nods with delight."
+          ],
+          "wrong": [
+            "One picture is lying in the word box of a different day.",
+            "Check the month number under the picture again: month 10 or month 9?",
+            "A word box matches only when both the day and the month are right."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -778,7 +1065,16 @@
           "tranh-ngay-quan-doi-22-thang-12": "nhom-ngay-hai-muoi-hai-thang-muoi-hai"
         }
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Match the holiday pictures",
+        "prompt": "Snoring Panda brings back the calendar page, with three pictures of holidays still stuck to his back. Match each picture to the word box that reads out its date.",
+        "items": [
+          "Vietnamese Women's Day, 20 October",
+          "International Workers' Day, 1 May",
+          "Founding Day of the Vietnam People's Army, 22 December"
+        ]
+      }
     },
     {
       "id": "o-trong-thang-hai",
@@ -802,6 +1098,17 @@
         "answer": {
           "text": "Ngày 12",
           "explanation": "Ô nằm ngay sau ngày 11 là ngày 12, đó là ô thủng đầu tiên."
+        },
+        "en": {
+          "guide": [
+            "The first torn square sits right after a day that is still clearly printed.",
+            "The day right after the 11th is the 12th."
+          ],
+          "hint": "Find the 11th, then move one square to the right.",
+          "answer": {
+            "text": "The 12th",
+            "explanation": "The square right after the 11th is the 12th, and that is the first hole."
+          }
         }
       },
       "feedback": {
@@ -814,12 +1121,30 @@
           "Ô đó vẫn còn số, hãy tìm ô thủng nằm sau ngày 11.",
           "Ngày 11 cộng thêm một ngày là ngày nào?",
           "Đi dọc hàng của ngày 11 sang bên phải nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The square for the 12th is patched first, and Needle-and-Thread Bunny breathes a sigh of relief.",
+            "You found the hole faster than a little mouse.",
+            "The 12th is back in its place, only two squares to go."
+          ],
+          "wrong": [
+            "That square still has its number, so look for the hole after the 11th.",
+            "Which day is the 11th plus one day?",
+            "Follow the row of the 11th to the right."
+          ]
+        }
       },
       "answer": {
         "day": 12
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "The hole in the February page",
+        "goTo": "Go to the mending table, where Needle-and-Thread Bunny spreads out the February page, full of holes",
+        "prompt": "Needle-and-Thread Bunny spreads out the February calendar page, full of holes like a net.",
+        "question": "The February page has three holes. Tap the first hole, right after day 11."
+      }
     },
     {
       "id": "va-lich-thang-hai",
@@ -892,6 +1217,17 @@
         "answer": {
           "text": "Các ô thủng là ngày 12, ngày 20 và ngày 21.",
           "explanation": "Ngày 12 nằm sau ngày 11. Giữa ngày 19 và ngày 22 là hai ngày liền nhau 20 và 21."
+        },
+        "en": {
+          "guide": [
+            "If two holes sit side by side, their two days follow each other too.",
+            "The last missing day plus 1 must give the 22nd, which is still printed on the calendar."
+          ],
+          "hint": "What day comes after the 19th, and what comes after that?",
+          "answer": {
+            "text": "The holes are the 12th, the 20th and the 21st.",
+            "explanation": "The 12th comes after the 11th. Between the 19th and the 22nd are the two consecutive days 20 and 21."
+          }
         }
       },
       "feedback": {
@@ -904,7 +1240,19 @@
           "Hai ô liền nhau thì hai số cũng liền nhau, xem lại nhé.",
           "Ô đứng ngay trước ngày 22 là ngày mấy nhỉ?",
           "Một miếng vá đang mang số của ô bên cạnh, thử đổi lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The February page is sealed tight, and not even the wind can get in.",
+            "Two holes side by side and you didn't swap their order, very good.",
+            "Needle-and-Thread Bunny smooths the February page flat and hangs it on the wall."
+          ],
+          "wrong": [
+            "Two squares side by side have numbers side by side too, so look again.",
+            "What day comes right before the 22nd?",
+            "One patch has the number of the square next to it, so try swapping it."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -913,7 +1261,11 @@
           "b3": "o21"
         }
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Patch three squares of February",
+        "prompt": "The February calendar page has three holes. {name} fills in the missing days as Bảo Elephant reads them out."
+      }
     },
     {
       "id": "thang-hai-may-ngay",
@@ -937,6 +1289,17 @@
         "answer": {
           "text": "Tháng 2 có 28 ngày.",
           "explanation": "Tờ lịch tháng 2 dừng ở ngày 28, nên tháng 2 có 28 ngày."
+        },
+        "en": {
+          "guide": [
+            "February is shorter than most other months.",
+            "The last square on the page tells you how many days the month has."
+          ],
+          "hint": "This year February stops before the 30th.",
+          "answer": {
+            "text": "February has 28 days.",
+            "explanation": "The February page stops at the 28th, so February has 28 days."
+          }
         }
       },
       "feedback": {
@@ -949,12 +1312,30 @@
           "Tháng 2 ngắn lắm, không kéo dài tới 30 hay 31 đâu.",
           "Ô cậu chạm chưa phải ô cuối của tháng 2.",
           "Nhìn hàng cuối cùng của tờ lịch tháng 2 nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Only twenty-eight days, February really does skimp!",
+            "You weren't fooled into counting up to 30, very good.",
+            "The 28th is the last square, and Bảo Elephant's trunk shakes with laughter."
+          ],
+          "wrong": [
+            "February is very short and doesn't stretch to 30 or 31.",
+            "The square you touched is not the last square of February.",
+            "Look at the very last row of the February page."
+          ]
+        }
       },
       "answer": {
         "day": 28
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Short February",
+        "goTo": "Go back into the calendar room on the tower, where Bảo Elephant waits to count the days of February",
+        "prompt": "Bảo Elephant lays the February calendar page on the table and whispers that this month likes to skimp on days.",
+        "question": "How many days does February have this year? Tap the square of the last day to see how much shorter the month is."
+      }
     },
     {
       "id": "ngay-thay-thuoc",
@@ -977,6 +1358,17 @@
         "answer": {
           "text": "Ngày 14 tháng 2 là thứ Ba.",
           "explanation": "Ô ngày 14 tháng 2 nằm dưới cột thứ Ba."
+        },
+        "en": {
+          "guide": [
+            "Find the square for the 14th on the February page.",
+            "Read the word at the top of the column that holds that square."
+          ],
+          "hint": "The 14th is in the same column as the 7th and the 21st.",
+          "answer": {
+            "text": "14 February is a Tuesday.",
+            "explanation": "The square for 14 February is under the Tuesday column."
+          }
         }
       },
       "feedback": {
@@ -989,12 +1381,29 @@
           "Tìm ô số 14 trước, nó nằm ở hàng thứ ba.",
           "Ngày 14 không ở cột đó đâu, dò lại nhé.",
           "Chữ ở đầu cột thứ ba tính từ trái ghi gì nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tuesday! Bảo Elephant will light the red lanterns right at the start of the week.",
+            "The 14th is right in the Tuesday column, and this time you found it in one go.",
+            "Reading a calendar this well, you will never miss a lantern festival."
+          ],
+          "wrong": [
+            "Find the square numbered 14 first, which is in the third row.",
+            "The 14th is not in that column, so trace it again.",
+            "What does the word at the top of the third column from the left say?"
+          ]
+        }
       },
       "answer": {
         "weekday": "thu-ba"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Lantern festival on February 14",
+        "prompt": "Bảo Elephant draws a red circle around the 14th on the February page to remind himself of the library's lantern festival.",
+        "question": "The library's lantern festival is on 14 February. Which weekday is it? Tap the weekday of day 14."
+      }
     },
     {
       "id": "thang-ba-may-ngay",
@@ -1018,6 +1427,17 @@
         "answer": {
           "text": "Tháng 3 có 31 ngày.",
           "explanation": "Tờ lịch tháng 3 kết thúc ở ngày 31, nên tháng 3 có 31 ngày."
+        },
+        "en": {
+          "guide": [
+            "See which day the March page stops at.",
+            "March is quite a lot longer than February."
+          ],
+          "hint": "March is as long as July and August.",
+          "answer": {
+            "text": "March has 31 days.",
+            "explanation": "The March page ends on the 31st, so March has 31 days."
+          }
         }
       },
       "feedback": {
@@ -1030,12 +1450,30 @@
           "Tháng 3 dài hơn tháng 2, tìm tiếp nhé.",
           "Ô cuối nằm ở hàng dưới cùng cơ.",
           "Ngày lớn nhất in trên tờ tháng 3 là ngày mấy?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "March has all 31 days, not skimped like February.",
+            "You turned the pages as fast as the wind from Bảo Elephant's sneeze.",
+            "Here is the square for the 31st of March!"
+          ],
+          "wrong": [
+            "March is longer than February, so keep looking.",
+            "The last square is in the bottom row.",
+            "What is the biggest day printed on the March page?"
+          ]
+        }
       },
       "answer": {
         "day": 31
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "How many days in March?",
+        "goTo": "Back at the calendar stand, where Brown Bear Cốm turns to the March page",
+        "prompt": "Brown Bear Cốm turns to the March calendar page on the stand and waits for you to count.",
+        "question": "How many days does March last? Turn to the March page and tap the last day."
+      }
     },
     {
       "id": "thu-hai-dau-thang-ba",
@@ -1058,6 +1496,17 @@
         "answer": {
           "text": "Ngày 6 tháng 3",
           "explanation": "Hàng đầu tháng 3 bắt đầu từ thứ Tư (ngày 1), ngày 5 là Chủ nhật, nên thứ Hai đầu tiên rơi vào ngày 6."
+        },
+        "en": {
+          "guide": [
+            "Find the Monday column on the calendar page.",
+            "The first number in the Monday column is the first Monday."
+          ],
+          "hint": "1 March is a Wednesday, so the Monday square in the first row is still empty.",
+          "answer": {
+            "text": "6 March",
+            "explanation": "The first row of March starts on Wednesday (the 1st) and the 5th is a Sunday, so the first Monday falls on the 6th."
+          }
         }
       },
       "feedback": {
@@ -1070,12 +1519,29 @@
           "Ô thứ Hai ở hàng đầu còn trống, hãy nhìn xuống hàng dưới.",
           "Đi dọc cột thứ Hai, ô đầu tiên có số là ô nào?",
           "Ngày 1 là thứ Tư, vậy thứ Hai tới còn phải đợi mấy ngày?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 6th! You weren't fooled by the two empty squares in the first row.",
+            "The first Monday is found, so off to the flag salute!",
+            "Brown Bear Cốm circles the 6th with a big red pen."
+          ],
+          "wrong": [
+            "The Monday square in the first row is empty, so look at the row below.",
+            "Go down the Monday column: which is the first square with a number?",
+            "The 1st is a Wednesday, so how many days must you wait for the next Monday?"
+          ]
+        }
       },
       "answer": {
         "day": 6
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "The first Monday of March",
+        "prompt": "Brown Bear Cốm holds a red pen, about to circle the first day of the first week of March.",
+        "question": "The first flag ceremony of March is on the earliest Monday of the month. Which day is it? Tap its square."
+      }
     },
     {
       "id": "ngay-quoc-te-phu-nu",
@@ -1099,6 +1565,17 @@
         "answer": {
           "text": "Ngày 15 tháng 3 là thứ Tư.",
           "explanation": "Ngày 13 là thứ Hai, ngày 14 là thứ Ba, nên ngày 15 là thứ Tư."
+        },
+        "en": {
+          "guide": [
+            "The 6th and the 13th are both Mondays, exactly one week apart.",
+            "The 15th is two days more than the 13th."
+          ],
+          "hint": "From Monday the 13th, count two more days.",
+          "answer": {
+            "text": "15 March is a Wednesday.",
+            "explanation": "The 13th is a Monday and the 14th is a Tuesday, so the 15th is a Wednesday."
+          }
         }
       },
       "feedback": {
@@ -1111,12 +1588,30 @@
           "Ngày 13 là thứ Hai, vậy ngày 15 thì sao?",
           "Cột cậu chọn không chứa ô ngày 15.",
           "Tìm ô số 15 rồi đọc chữ trên đầu cột thật chậm nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Wednesday! Mum Elephant will receive the bunch of lotus flowers in the middle of the week.",
+            "You counted on from Monday the 13th, how clever.",
+            "The flower festival day is circled on the calendar."
+          ],
+          "wrong": [
+            "The 13th is a Monday, so what about the 15th?",
+            "The column you chose does not hold the square for the 15th.",
+            "Find the square numbered 15, then read the word at the top of the column slowly."
+          ]
+        }
       },
       "answer": {
         "weekday": "thu-tu"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Bảo Elephant's lotus festival",
+        "goTo": "Go back to the calendar room on the tower, where Bảo Elephant is hugging a bunch of lotus flowers",
+        "prompt": "Bảo Elephant hugs a bunch of lotus flowers and opens the March page to find the day of the flower festival he wants to go to with his mum.",
+        "question": "The lotus festival is on 15 March. Which weekday is it? Tap the weekday of day 15."
+      }
     },
     {
       "id": "thang-tu-may-ngay",
@@ -1140,6 +1635,17 @@
         "answer": {
           "text": "Tháng 9 có 30 ngày.",
           "explanation": "Tờ lịch tháng 9 kết thúc ở ngày 30, nên tháng 9 có 30 ngày."
+        },
+        "en": {
+          "guide": [
+            "Not every month has a full 31 days.",
+            "The last square of the September page tells you the number of days."
+          ],
+          "hint": "September has no 31st.",
+          "answer": {
+            "text": "September has 30 days.",
+            "explanation": "The September page ends on the 30th, so September has 30 days."
+          }
         }
       },
       "feedback": {
@@ -1152,12 +1658,30 @@
           "Tháng 9 không có ngày 31 đâu nhé.",
           "Chạm vào ô mang số lớn nhất của tờ tháng 9.",
           "Nhìn kĩ hàng cuối của tờ lịch thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty days, nice and round, September is so tidy.",
+            "You didn't mix it up with a 31-day month, spot on.",
+            "The square for the 30th lights up, and Wobbly Calf jingles his bell."
+          ],
+          "wrong": [
+            "September has no 31st, you know.",
+            "Touch the square with the biggest number on the September page.",
+            "Look closely at the last row of the page."
+          ]
+        }
       },
       "answer": {
         "day": 30
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "How many days in April?",
+        "goTo": "Stop by the east-facing window, where Wobbly Calf keeps the very last calendar page",
+        "prompt": "Wobbly Calf holds the very last calendar page, the one for September, and asks you to count the last one.",
+        "question": "How many days does September have? This is the last page: tap the day the month ends."
+      }
     },
     {
       "id": "thu-bay-tuan-truoc",
@@ -1181,6 +1705,17 @@
         "answer": {
           "text": "Ngày 17 tháng 9",
           "explanation": "Thứ Bảy tuần trước cách ngày 24 đúng 7 ngày: 24 – 7 = 17, đó là ngày 17 tháng 9."
+        },
+        "en": {
+          "guide": [
+            "A week has 7 days.",
+            "From the square for the 24th, go up one row in the same Saturday column."
+          ],
+          "hint": "What is left when you take 7 days from 24?",
+          "answer": {
+            "text": "17 September",
+            "explanation": "The Saturday of last week is exactly 7 days before the 24th: 24 - 7 = 17, so it is 17 September."
+          }
         }
       },
       "feedback": {
@@ -1193,12 +1728,30 @@
           "Thứ Bảy tuần trước nằm cùng cột thứ Bảy, nhưng ở hàng phía trên.",
           "Thử lùi 7 ngày từ ngày 24 xem sao.",
           "Ô cậu chọn chưa phải thứ Bảy đâu, kiểm tra lại đầu cột."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 17th! Bong bong, the tower bell rings for {name}!",
+            "You stepped back exactly one week, like a time traveller.",
+            "Bảo Elephant and Snoring Panda clap together noisily."
+          ],
+          "wrong": [
+            "Last week's Saturday is in the same Saturday column, but in the row above.",
+            "Try stepping back 7 days from the 24th.",
+            "The square you chose is not a Saturday, so check the top of the column again."
+          ]
+        }
       },
       "answer": {
         "day": 17
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "What date was last Saturday?",
+        "goTo": "Run back to the calendar room on the tower, where Bảo Elephant waits with the final riddle",
+        "prompt": "Bảo Elephant opens the September calendar page and gets ready to set the final riddle of the calendar-mending session.",
+        "question": "Bảo Elephant's last riddle, and whoever gets it right rings the tower bell: Saturday this week is 24 September, so which day was Saturday of the week before?"
+      }
     },
     {
       "id": "huy-hieu-giu-lich",
@@ -1229,5 +1782,9 @@
     "skillXp": {
       "xem-lich": 2
     }
+  },
+  "en": {
+    "title": "Bảo Elephant and the Torn Calendar",
+    "summary": "Bảo Elephant sneezes, and the calendar pages in the clock tower's calendar room fly everywhere and lose a few days. {name} gathers the scraps of calendar, matches birthdays, fills in the missing dates and answers all of Bảo Elephant's calendar riddles."
   }
 }

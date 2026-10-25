@@ -94,7 +94,11 @@
         "toan2-cd2-binh-tuoi",
         "toan2-cd2-bien-ten-luong",
         "toan2-cd2-ca-rot-khong-lo"
-      ]
+      ],
+      "en": {
+        "title": "Lost market goods",
+        "goTo": "Find the watering can, the stall's name board and the giant carrot around the Carrot Stall"
+      }
     },
     {
       "id": "nhieu-hon-la-cong",
@@ -225,6 +229,17 @@
         "answer": {
           "text": "Nhân đậu: 7 chiếc; nhân thịt hơn nhân đậu: 5 chiếc; Số bánh nhân thịt là: 7 + 5 = 12 (chiếc); Đáp số: 12 chiếc.",
           "explanation": "Bánh nhân thịt nhiều hơn bánh nhân đậu 5 chiếc, nên số bánh nhân thịt là 7 + 5 = 12 (chiếc)."
+        },
+        "en": {
+          "guide": [
+            "There are more meat buns, so take the number of bean buns and add 5.",
+            "The answer should repeat the result of the addition."
+          ],
+          "hint": "The calculation is 7 + 5.",
+          "answer": {
+            "text": "Bean: 7 buns; meat buns are 5 more than bean buns; The number of meat buns is: 7 + 5 = 12 (buns); Answer: 12 buns.",
+            "explanation": "There are 5 more meat buns than bean buns, so the number of meat buns is 7 + 5 = 12 (buns)."
+          }
         }
       },
       "feedback": {
@@ -237,7 +252,19 @@
           "Nhiều hơn thì thêm vào, mình dùng phép cộng nhé.",
           "Hai ô đầu là số bánh nhân đậu và số bánh nhiều hơn.",
           "Đáp số phải bằng kết quả của phép tính ở dòng trên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Twelve steaming, fragrant buns, and Striped Tiger licks his lips!",
+            "Chalk Koala nods: the solution has a summary, a calculation and an answer, as clear as my price board.",
+            "Striped Tiger whispers: so \"more\" means adding on, it really is easy."
+          ],
+          "wrong": [
+            "More means adding on, so let's use addition.",
+            "The first two boxes are the number of bean buns and the extra buns.",
+            "The answer must equal the result of the calculation on the line above."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -251,6 +278,11 @@
       "expression": {
         "b3": "7 + 5",
         "b4": "7 + 5"
+      },
+      "en": {
+        "title": "Chalk Koala's steamed buns",
+        "goTo": "Go to the Price Board at the Guava Stall, where Chalk Koala has copied out the steamed bun problem for Striped Tiger",
+        "prompt": "Striped Tiger loves steamed buns, so he picks this problem first. Read it, look at the summary, then fill in the solution."
       }
     },
     {
@@ -355,6 +387,17 @@
         "answer": {
           "text": "Lá sen: 13 chiếc; thuyền giấy hơn lá sen: 5 chiếc; Số thuyền giấy trong máng là: 13 + 5 = 18 (chiếc); Đáp số: 18 chiếc thuyền giấy.",
           "explanation": "Số thuyền giấy trong máng là 13 + 5 = 18 (chiếc)."
+        },
+        "en": {
+          "guide": [
+            "There are more paper boats than lotus leaves, so choose the plus sign.",
+            "Take the number of lotus leaves and add 5."
+          ],
+          "hint": "13 + 5 = 18.",
+          "answer": {
+            "text": "Lotus leaves: 13; paper boats are 5 more than lotus leaves; The number of paper boats in the trough is: 13 + 5 = 18 (boats); Answer: 18 paper boats.",
+            "explanation": "The number of paper boats in the trough is 13 + 5 = 18 (boats)."
+          }
         }
       },
       "feedback": {
@@ -367,7 +410,19 @@
           "Thuyền giấy nhiều hơn lá sen, vậy mình thêm vào hay bớt đi?",
           "Ô dấu phải là dấu cộng vì có chữ \"nhiều hơn\" nhé.",
           "Kiểm tra lại kết quả 13 cộng 5 xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The plus sign is in the right place, and eighteen paper boats bob along, thank you!",
+            "You chose the sign without a moment's doubt, brilliant.",
+            "Young Rice Rabbit is impressed: I set the puzzle and you still win."
+          ],
+          "wrong": [
+            "There are more paper boats than lotus leaves, so do we add or take away?",
+            "The sign box must be a plus sign because of the words \"more than\".",
+            "Check the result of 13 plus 5 again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -382,6 +437,11 @@
       "expression": {
         "b4": "13 + 5",
         "b5": "13 + 5"
+      },
+      "en": {
+        "title": "Paper boats in the trough",
+        "goTo": "Young Rice Rabbit tugs {name}'s hand to the vegetable washing trough for a harder problem",
+        "prompt": "Young Rice Rabbit sets a harder one: this time {name} chooses the sign too."
       }
     },
     {
@@ -518,6 +578,17 @@
         "answer": {
           "text": "Giàn trái: 8 quả; giàn phải ít hơn giàn trái: 3 quả; Số mướp ở giàn phải là: 8 – 3 = 5 (quả); Đáp số: 5 quả mướp.",
           "explanation": "Giàn bên phải ít hơn giàn bên trái 3 quả, nên có 8 – 3 = 5 (quả) mướp."
+        },
+        "en": {
+          "guide": [
+            "The right trellis has fewer, so we subtract.",
+            "Take the loofahs on the left trellis and subtract 3."
+          ],
+          "hint": "The calculation is 8 – 3.",
+          "answer": {
+            "text": "Left trellis: 8 loofahs; the right trellis has 3 fewer than the left; The number of loofahs on the right trellis is: 8 – 3 = 5 (loofahs); Answer: 5 loofahs.",
+            "explanation": "The right trellis has 3 fewer than the left, so it has 8 – 3 = 5 (loofahs)."
+          }
         }
       },
       "feedback": {
@@ -530,7 +601,19 @@
           "Ít hơn thì mình bớt đi, thử phép trừ nhé.",
           "Số bị trừ là số mướp của giàn bên trái.",
           "Đáp số phải ghi đúng kết quả 8 – 3."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The right trellis has 5 loofahs left, and Young Rice Rabbit sings you an extra verse!",
+            "Pink Calf jingles her neck bell: fewer means take away, and you didn't slip into addition.",
+            "Striped Tiger sings along, off key but happy as can be."
+          ],
+          "wrong": [
+            "Fewer means we take away, so try subtraction.",
+            "The number you subtract from is the loofahs on the left trellis.",
+            "The answer must be exactly the result of 8 – 3."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -544,6 +627,11 @@
       "expression": {
         "b3": "8 - 3",
         "b4": "8 - 3"
+      },
+      "en": {
+        "title": "Two luffa trellises",
+        "goTo": "Follow the humming to the Loofah Stall under the Awning, where Pink Calf is counting for Young Rice Rabbit",
+        "prompt": "Pink Calf counts the loofahs one by one, Young Rice Rabbit hums along and Striped Tiger sways and nods. Read the problem and fill in the solution."
       }
     },
     {
@@ -587,6 +675,17 @@
         "answer": {
           "text": "Đủ 39 quả bí (30 + 9)",
           "explanation": "Thuyền thứ hai chở 30 + 9 = 39 quả bí, đó là giỏ 30 quả và giỏ 9 quả."
+        },
+        "en": {
+          "guide": [
+            "The second boat carries the same as the first, plus 9 more.",
+            "The baskets you drag on must add up to exactly the second boat's number of pumpkins."
+          ],
+          "hint": "30 pumpkins like the first boat, plus 9 more.",
+          "answer": {
+            "text": "Exactly 39 pumpkins (30 + 9)",
+            "explanation": "The second boat carries 30 + 9 = 39 pumpkins, that is the basket of 30 and the basket of 9."
+          }
         }
       },
       "feedback": {
@@ -599,13 +698,30 @@
           "Thuyền chở nặng quá, sắp chìm rồi, bớt giỏ ra nhé.",
           "Còn thiếu bí, thuyền thứ hai phải chở nhiều hơn thuyền thứ nhất.",
           "Cộng số quả trong các giỏ cậu đã kéo xem được bao nhiêu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The second boat is loaded perfectly, and the water in the trough ripples!",
+            "Young Rice Rabbit blows a whistle \"toot... oot\", and the pumpkin boat sets off!",
+            "Not one too many, not one too few, wonderful!"
+          ],
+          "wrong": [
+            "The boat is too heavy and about to sink, take a basket off.",
+            "There aren't enough pumpkins yet, the second boat must carry more than the first.",
+            "Add up the pumpkins in the baskets you dragged and see how many there are."
+          ]
+        }
       },
       "answer": {
         "total": 39
       },
       "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
-      "expression": "30 + 9"
+      "expression": "30 + 9",
+      "en": {
+        "title": "Load pumpkins onto the second boat",
+        "goTo": "Go to the vegetable washing trough, where Young Rice Rabbit is floating boats full of pumpkins",
+        "prompt": "Young Rice Rabbit sets two wooden boats on the water to carry pumpkins. Summary: the first boat carries 30 pumpkins; the second boat carries 9 more than the first. Drag baskets of pumpkins onto the second boat to make exactly the right number."
+      }
     },
     {
       "id": "tau-thu-hai-cho-gi",
@@ -623,6 +739,17 @@
         "answer": {
           "text": "30 + 9 = 39. Đáp số: 39 quả bí",
           "explanation": "Thuyền thứ hai chở 30 + 9 = 39 (quả bí)."
+        },
+        "en": {
+          "guide": [
+            "Read carefully: the second boat carries 9 more than the first boat.",
+            "More means we add: 30 + 9."
+          ],
+          "hint": "Three tens plus nine ones.",
+          "answer": {
+            "text": "30 + 9 = 39. Answer: 39 pumpkins",
+            "explanation": "The second boat carries 30 + 9 = 39 (pumpkins)."
+          }
         }
       },
       "feedback": {
@@ -635,13 +762,29 @@
           "Nhiều hơn thì cộng thêm 9 vào số bí của thuyền thứ nhất.",
           "Thuyền thứ hai phải chở nhiều hơn 30 quả chứ.",
           "Ba chục thêm chín đơn vị là bao nhiêu nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty-nine, just as many as you loaded onto the boat!",
+            "A neat solution, and Young Rice Rabbit copies it into her notebook straight away.",
+            "Young Rice Rabbit writes the answer in her notebook, and this time she won't forget."
+          ],
+          "wrong": [
+            "More means adding 9 to the first boat's pumpkins.",
+            "The second boat must carry more than 30 pumpkins.",
+            "What do three tens and nine ones make?"
+          ]
+        }
       },
       "answer": {
         "value": 39
       },
       "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
-      "expression": "30 + 9"
+      "expression": "30 + 9",
+      "en": {
+        "title": "How much does the second boat carry?",
+        "question": "The first boat carries 30 pumpkins and the second boat carries 9 more than the first. Type how many pumpkins the second boat carries."
+      }
     },
     {
       "id": "cong-chieng-nhan-dinh",
@@ -683,6 +826,17 @@
         "answer": {
           "text": "Đội Đỏ ít người hơn; phép trừ 14 – 6; đội Đỏ có 8 người",
           "explanation": "Đội Đỏ ít hơn đội Xanh 6 người nên lấy 14 – 6 = 8; đội Đỏ có 8 người."
+        },
+        "en": {
+          "guide": [
+            "\"Fewer than the Blue team\" tells us the Red team is smaller.",
+            "Fewer means subtraction, not addition."
+          ],
+          "hint": "Three statements are true.",
+          "answer": {
+            "text": "The Red team has fewer people; subtract 14 – 6; the Red team has 8 people",
+            "explanation": "The Red team has 6 fewer than the Blue team, so take 14 – 6 = 8; the Red team has 8 people."
+          }
         }
       },
       "feedback": {
@@ -695,7 +849,19 @@
           "\"Ít hơn\" thì có phải thêm vào không nhỉ?",
           "Còn một câu đúng đang chờ cậu chọn đấy.",
           "Câu nói đội Đỏ đông 20 người là chưa đúng rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three true statements, shining like the golden gong!",
+            "You didn't fall into the addition trap, and Striped Tiger nods in admiration.",
+            "Every statement picked just right, now all that's left is to strike the gong."
+          ],
+          "wrong": [
+            "Does \"fewer\" mean adding on?",
+            "There is still one true statement waiting for you to pick it.",
+            "The statement that the Red team has 20 people isn't right."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -704,7 +870,19 @@
           "doi-do-co-8-nguoi"
         ]
       },
-      "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon"
+      "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
+      "en": {
+        "title": "Tug-of-war festival",
+        "goTo": "Back at the Carrot Stall, Striped Tiger has hung up a gong",
+        "prompt": "Striped Tiger hangs the gong on the awning pole to open the tug-of-war festival. The Blue team has 14 people and the Red team has 6 fewer than the Blue team. How many people are on the Red team? Before solving, choose all the true statements about this problem.",
+        "choices": [
+          "The Red team has fewer people than the Blue team.",
+          "To find the number on the Red team, we subtract: 14 – 6.",
+          "To find the number on the Red team, we add: 14 + 6.",
+          "The Red team has 20 people.",
+          "The Red team has 8 people."
+        ]
+      }
     },
     {
       "id": "cong-chieng-cua-ho",
@@ -722,6 +900,17 @@
         "answer": {
           "text": "14 – 6 = 8. Đáp số: 8 người",
           "explanation": "Đội Đỏ có 14 – 6 = 8 (người)."
+        },
+        "en": {
+          "guide": [
+            "The Red team has 6 fewer than the Blue team.",
+            "Take 14 – 6."
+          ],
+          "hint": "Take away 4 to reach 10, then take away 2 more.",
+          "answer": {
+            "text": "14 – 6 = 8. Answer: 8 people",
+            "explanation": "The Red team has 14 – 6 = 8 (people)."
+          }
         }
       },
       "feedback": {
@@ -734,13 +923,29 @@
           "Đội Đỏ ít hơn, vậy số người phải bé hơn 14.",
           "Lấy 14 bớt đi 6 người nhé.",
           "Đếm lùi từ 14: 13, 12, 11… tới đủ sáu bước."
-        ]
+        ],
+        "en": {
+          "right": [
+            "BOONG! Striped Tiger strikes the gong so it rings across the market, not shy at all any more!",
+            "The eight Red team members grip the rope tight, as happy as at a real festival.",
+            "Young Rice Rabbit hugs Striped Tiger: from now on let's share one stall!"
+          ],
+          "wrong": [
+            "The Red team has fewer, so the number must be smaller than 14.",
+            "Take 6 people away from 14.",
+            "Count back from 14: 13, 12, 11... for six steps."
+          ]
+        }
       },
       "answer": {
         "value": 8
       },
       "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
-      "expression": "14 - 6"
+      "expression": "14 - 6",
+      "en": {
+        "title": "Striped Tiger strikes the gong",
+        "question": "Striped Tiger grips the mallet and takes a deep breath. At today's tug-of-war, the Blue team has 14 people and the Red team has 6 fewer than the Blue team. How many people are on the Red team?"
+      }
     },
     {
       "id": "huy-hieu-ca-rot",
@@ -772,5 +977,9 @@
       "bai-toan-loi-van": 2,
       "phep-cong": 1
     }
+  },
+  "en": {
+    "title": "Striped Tiger Compares Carrots with Young Rice Rabbit",
+    "summary": "Striped Tiger and Young Rice Rabbit are arguing about who brought more carrots to market; {name} helps them see that \"more\" means add and \"fewer\" means subtract, then solves problems at the Carrot Stall, Chalk Koala's price board, Pink Calf's loofah stall and the vegetable washing trough."
   }
 }

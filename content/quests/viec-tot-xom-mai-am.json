@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "vt-xma-ba-muop",
       "lines": [
-        { "speaker": "Bà Mèo Mướp", "text": "Meo… Cháu đấy à? Bà vừa nhận thư của cháu Mít mà chẳng biết cặp kính rơi đâu mất, mắt bà mờ không đọc nổi." },
-        { "speaker": "Bà Mèo Mướp", "text": "Ban nãy bà ra góc vườn hái mấy quả na, chắc rơi ngoài đó cả." }
+        {
+          "speaker": "Bà Mèo Mướp",
+          "text": "Meo… Cháu đấy à? Bà vừa nhận thư của cháu Mít mà chẳng biết cặp kính rơi đâu mất, mắt bà mờ không đọc nổi."
+        },
+        {
+          "speaker": "Bà Mèo Mướp",
+          "text": "Ban nãy bà ra góc vườn hái mấy quả na, chắc rơi ngoài đó cả."
+        }
       ],
       "choices": [
-        { "text": "Bà ngồi nghỉ, cháu đi tìm ạ!", "reply": "Ngoan quá. Trăng sáng thế này chắc cháu tìm nhanh thôi." }
+        {
+          "text": "Bà ngồi nghỉ, cháu đi tìm ạ!",
+          "reply": "Ngoan quá. Trăng sáng thế này chắc cháu tìm nhanh thôi."
+        }
       ],
       "en": {
         "title": "Granny Mướp looks for her glasses",
@@ -87,7 +96,26 @@
           "clue": "Xòe ra như đuôi công, phe phẩy mấy cái là gió mát ngay.",
           "target": "vt-xma-quat-nan"
         }
-      ]
+      ],
+      "en": {
+        "title": "Find Grandma's things",
+        "goTo": "Go to the moonlit corner of the garden to find what Grandma dropped",
+        "prompt": "Grandma dropped three things. Read her descriptions and help find them:",
+        "items": [
+          {
+            "name": "Reading glasses",
+            "clue": "Two round lenses in a frame, and when you put them on, even tiny writing looks big and clear."
+          },
+          {
+            "name": "Red yarn ball",
+            "clue": "Round like a little ball, wound with soft red thread, which Grandma uses to knit scarves."
+          },
+          {
+            "name": "Palm-leaf fan",
+            "clue": "It spreads out like a peacock's tail, and a few waves bring a cool breeze."
+          }
+        ]
+      }
     },
     {
       "id": "doc-thu-chau-mit",
@@ -99,22 +127,78 @@
       "text": "Bà ơi,\nCháu nhớ bà lắm! Chủ nhật này bố mẹ cho cháu về thăm bà. Cháu sẽ mang theo chiếc khăn len cháu tự đan để bà quàng khi trời trở lạnh. Bà nhớ giữ gìn sức khỏe nhé.\nCháu của bà,\nMít",
       "question": "Khi nào cháu Mít về thăm bà?",
       "choices": [
-        { "id": "a", "text": "Sáng mai" },
-        { "id": "b", "text": "Chủ nhật này" },
-        { "id": "c", "text": "Tết năm sau" }
+        {
+          "id": "a",
+          "text": "Sáng mai"
+        },
+        {
+          "id": "b",
+          "text": "Chủ nhật này"
+        },
+        {
+          "id": "c",
+          "text": "Tết năm sau"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm câu có chữ «về thăm bà».", "Đọc phần đầu câu đó để biết thời gian."],
+        "guide": [
+          "Tìm câu có chữ «về thăm bà».",
+          "Đọc phần đầu câu đó để biết thời gian."
+        ],
         "hint": "Mít nhắc tới một ngày trong tuần.",
         "answer": {
           "text": "Mít về vào Chủ nhật này",
           "explanation": "Thư viết: Chủ nhật này bố mẹ cho cháu về thăm bà."
+        },
+        "en": {
+          "guide": [
+            "Find the sentence with the words «come to visit».",
+            "Read the start of that sentence to find the time."
+          ],
+          "hint": "Mít mentions a day of the week.",
+          "answer": {
+            "text": "Mít is coming this Sunday",
+            "explanation": "The letter says: This Sunday Mum and Dad will let me come to visit you."
+          }
         }
       },
       "feedback": {
-        "right": ["Bà cười móm mém: Chủ nhật này cháu bà về rồi!", "{name} đọc thư rõ ràng, bà nghe rành rọt từng chữ.", "Đúng rồi, bà phải chuẩn bị bánh đón cháu thôi."],
-        "wrong": ["Thư không nhắc tới ngày ấy đâu, đọc lại câu thứ hai nhé.", "Tìm chữ «về thăm bà» xem đi kèm ngày nào {name}.", "Đọc chậm câu đầu tiên sau lời chào nha."]
+        "right": [
+          "Bà cười móm mém: Chủ nhật này cháu bà về rồi!",
+          "{name} đọc thư rõ ràng, bà nghe rành rọt từng chữ.",
+          "Đúng rồi, bà phải chuẩn bị bánh đón cháu thôi."
+        ],
+        "wrong": [
+          "Thư không nhắc tới ngày ấy đâu, đọc lại câu thứ hai nhé.",
+          "Tìm chữ «về thăm bà» xem đi kèm ngày nào {name}.",
+          "Đọc chậm câu đầu tiên sau lời chào nha."
+        ],
+        "en": {
+          "right": [
+            "Grandma smiles toothlessly: her grandchild is coming this Sunday!",
+            "{name} reads the letter clearly, and Grandma hears every word.",
+            "That's right, Grandma will have to get cakes ready to welcome her grandchild."
+          ],
+          "wrong": [
+            "The letter doesn't mention that day, read the second sentence again.",
+            "Find the words «come to visit» and see which day goes with them, {name}.",
+            "Read the first sentence after the greeting slowly."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the letter to Grandma",
+        "goTo": "Grandma left the letter on the stone table under the trellis, read it to her",
+        "text": "Dear Grandma,\nI miss you so much! This Sunday Mum and Dad will let me come to visit you. I'll bring the woolly scarf I knitted myself for you to wear when it turns cold. Please take care of your health.\nYour grandchild,\nMít",
+        "question": "When is Mít coming to visit Grandma?",
+        "choices": [
+          "Tomorrow morning",
+          "This Sunday",
+          "At Tết next year"
+        ]
       }
     },
     {
@@ -128,28 +212,103 @@
       "skill": "logic",
       "prompt": "Mỗi tối bà đan nhiều hơn tối hôm trước cùng một số hàng len. Tối nay bà đan bao nhiêu hàng?",
       "elements": [
-        { "id": "t1", "label": "3 hàng" },
-        { "id": "t2", "label": "5 hàng" },
-        { "id": "t3", "label": "7 hàng" },
-        { "id": "t4", "label": "9 hàng" }
+        {
+          "id": "t1",
+          "label": "3 hàng"
+        },
+        {
+          "id": "t2",
+          "label": "5 hàng"
+        },
+        {
+          "id": "t3",
+          "label": "7 hàng"
+        },
+        {
+          "id": "t4",
+          "label": "9 hàng"
+        }
       ],
       "choices": [
-        { "id": "a", "text": "10 hàng" },
-        { "id": "b", "text": "11 hàng" },
-        { "id": "c", "text": "12 hàng" }
+        {
+          "id": "a",
+          "text": "10 hàng"
+        },
+        {
+          "id": "b",
+          "text": "11 hàng"
+        },
+        {
+          "id": "c",
+          "text": "12 hàng"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["So sánh hai tối liền nhau: tăng thêm mấy hàng?", "Các tối sau cũng tăng đúng chừng ấy.", "Cộng thêm vào số hàng của tối cuối."],
+        "guide": [
+          "So sánh hai tối liền nhau: tăng thêm mấy hàng?",
+          "Các tối sau cũng tăng đúng chừng ấy.",
+          "Cộng thêm vào số hàng của tối cuối."
+        ],
         "hint": "Mỗi tối bà đan thêm 2 hàng so với tối trước.",
         "answer": {
           "text": "Tối nay bà đan 11 hàng",
           "explanation": "Dãy tăng đều 2: 3, 5, 7, 9, nên tối tiếp theo là 9 + 2 = 11."
+        },
+        "en": {
+          "guide": [
+            "Compare two evenings in a row: how many rows more?",
+            "The later evenings go up by the same amount.",
+            "Add that to the last evening's rows."
+          ],
+          "hint": "Each evening Grandma knits 2 more rows than the evening before.",
+          "answer": {
+            "text": "Tonight Grandma knits 11 rows",
+            "explanation": "The pattern goes up evenly by 2: 3, 5, 7, 9, so the next evening is 9 + 2 = 11."
+          }
         }
       },
       "feedback": {
-        "right": ["Đom Đóm nhấp nháy mừng, khăn len của bà sắp xong rồi!", "{name} nhìn ra ngay mỗi tối thêm hai hàng.", "Mười một hàng, đúng y như bà đếm!"],
-        "wrong": ["Thử lấy 5 trừ 3 xem mỗi tối thêm mấy hàng nhé.", "Tối cuối là 9 hàng, thêm bao nhiêu nữa nhỉ {name}?", "Dãy này tăng đều, không nhảy cóc đâu."]
+        "right": [
+          "Đom Đóm nhấp nháy mừng, khăn len của bà sắp xong rồi!",
+          "{name} nhìn ra ngay mỗi tối thêm hai hàng.",
+          "Mười một hàng, đúng y như bà đếm!"
+        ],
+        "wrong": [
+          "Thử lấy 5 trừ 3 xem mỗi tối thêm mấy hàng nhé.",
+          "Tối cuối là 9 hàng, thêm bao nhiêu nữa nhỉ {name}?",
+          "Dãy này tăng đều, không nhảy cóc đâu."
+        ],
+        "en": {
+          "right": [
+            "Firefly flickers with joy, Grandma's scarf is almost finished!",
+            "{name} saw straight away that each evening adds two rows.",
+            "Eleven rows, exactly as Grandma counted!"
+          ],
+          "wrong": [
+            "Try 5 take away 3 to see how many more each evening.",
+            "The last evening was 9 rows, how many more now, {name}?",
+            "This pattern grows evenly, with no skipping."
+          ]
+        }
+      },
+      "en": {
+        "title": "Grandma's knitting rows",
+        "goTo": "Past the bamboo grove, Lantern Firefly lights the way so Grandma can count her rows of wool",
+        "prompt": "Every evening Grandma knits the same number of rows more than the evening before. How many rows does she knit tonight?",
+        "elements": [
+          "3 rows",
+          "5 rows",
+          "7 rows",
+          "9 rows"
+        ],
+        "choices": [
+          "10 rows",
+          "11 rows",
+          "12 rows"
+        ]
       }
     },
     {
@@ -204,9 +363,16 @@
       "kind": "dialogue",
       "target": "vt-xma-meo-mun",
       "lines": [
-        { "speaker": "Mèo Mun Hàng Xóm", "text": "Sang chơi với bà Mướp hả? Tớ đi ngay! Tớ còn mang theo đĩa ổi chín mẹ vừa hái để biếu bà." }
+        {
+          "speaker": "Mèo Mun Hàng Xóm",
+          "text": "Sang chơi với bà Mướp hả? Tớ đi ngay! Tớ còn mang theo đĩa ổi chín mẹ vừa hái để biếu bà."
+        }
       ],
-      "choices": [{ "text": "Bà chắc vui lắm đây!" }],
+      "choices": [
+        {
+          "text": "Bà chắc vui lắm đây!"
+        }
+      ],
       "en": {
         "title": "Invite Black Cat over",
         "goTo": "Go down Black Cat's lane and invite her over to keep Granny company",
@@ -230,24 +396,91 @@
       "skill": "tu-ngu",
       "prompt": "Bà hỏi đố: những việc nào thể hiện sự quan tâm tới ông bà? Chọn tất cả việc đúng.",
       "choices": [
-        { "id": "doc-bao", "text": "Đọc báo cho ông nghe" },
-        { "id": "lay-nuoc", "text": "Lấy nước mời bà uống" },
-        { "id": "on-ao", "text": "Chạy nhảy ầm ĩ khi bà đang ngủ" },
-        { "id": "hoi-tham", "text": "Hỏi thăm sức khỏe ông bà" },
-        { "id": "gianh-tivi", "text": "Giành điều khiển ti vi với ông" }
+        {
+          "id": "doc-bao",
+          "text": "Đọc báo cho ông nghe"
+        },
+        {
+          "id": "lay-nuoc",
+          "text": "Lấy nước mời bà uống"
+        },
+        {
+          "id": "on-ao",
+          "text": "Chạy nhảy ầm ĩ khi bà đang ngủ"
+        },
+        {
+          "id": "hoi-tham",
+          "text": "Hỏi thăm sức khỏe ông bà"
+        },
+        {
+          "id": "gianh-tivi",
+          "text": "Giành điều khiển ti vi với ông"
+        }
       ],
-      "answer": { "choices": ["doc-bao", "lay-nuoc", "hoi-tham"] },
+      "answer": {
+        "choices": [
+          "doc-bao",
+          "lay-nuoc",
+          "hoi-tham"
+        ]
+      },
       "support": {
-        "guide": ["Đọc từng việc và tự hỏi: ông bà có vui khi em làm thế không?", "Chọn mọi việc làm ông bà vui, bỏ qua việc làm ông bà mệt."],
+        "guide": [
+          "Đọc từng việc và tự hỏi: ông bà có vui khi em làm thế không?",
+          "Chọn mọi việc làm ông bà vui, bỏ qua việc làm ông bà mệt."
+        ],
         "hint": "Có ba việc đúng và hai việc nên tránh.",
         "answer": {
           "text": "Đọc báo cho ông, lấy nước mời bà, hỏi thăm sức khỏe",
           "explanation": "Ba việc ấy giúp ông bà vui và khỏe; chạy nhảy ồn ào hay giành ti vi làm ông bà mệt và buồn."
+        },
+        "en": {
+          "guide": [
+            "Read each action and ask yourself: would grandparents be happy if you did this?",
+            "Choose every action that makes them happy, and skip the ones that tire them."
+          ],
+          "hint": "Three actions are right and two should be avoided.",
+          "answer": {
+            "text": "Read the newspaper to Grandpa, fetch water for Grandma, ask how they are feeling",
+            "explanation": "Those three actions make grandparents happy and well; running around noisily or fighting for the TV tires and upsets them."
+          }
         }
       },
       "feedback": {
-        "right": ["Bà ôm {name} vào lòng: cháu hiểu chuyện quá!", "Ba việc ấy làm ông bà nào cũng vui.", "Đúng hết rồi, bà sẽ kể cho cháu Mít nghe về cháu."],
-        "wrong": ["Có một việc làm bà mệt đấy, bỏ ra nhé.", "Còn sót một việc quan tâm chưa chọn kìa {name}.", "Hỏi lại từng việc: ông bà có vui không nào?"]
+        "right": [
+          "Bà ôm {name} vào lòng: cháu hiểu chuyện quá!",
+          "Ba việc ấy làm ông bà nào cũng vui.",
+          "Đúng hết rồi, bà sẽ kể cho cháu Mít nghe về cháu."
+        ],
+        "wrong": [
+          "Có một việc làm bà mệt đấy, bỏ ra nhé.",
+          "Còn sót một việc quan tâm chưa chọn kìa {name}.",
+          "Hỏi lại từng việc: ông bà có vui không nào?"
+        ],
+        "en": {
+          "right": [
+            "Grandma gives {name} a hug: what a thoughtful child!",
+            "Those three actions would make any grandparent happy.",
+            "All correct, and Grandma will tell her grandchild Mít all about you."
+          ],
+          "wrong": [
+            "One action tires Grandma out, take it out.",
+            "There's still a caring action you haven't chosen, {name}.",
+            "Ask about each action again: would grandparents be happy?"
+          ]
+        }
+      },
+      "en": {
+        "title": "Caring actions",
+        "goTo": "Go back to the steps of Grandma Tabby Cat's porch",
+        "prompt": "Grandma asks a riddle: which actions show care for grandparents? Choose all the right ones.",
+        "choices": [
+          "Read the newspaper to Grandpa",
+          "Fetch water for Grandma to drink",
+          "Run around noisily while Grandma is sleeping",
+          "Ask how Grandma and Grandpa are feeling",
+          "Fight Grandpa for the TV remote"
+        ]
       }
     },
     {
@@ -276,6 +509,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "tu-ngu": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "tu-ngu": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: Grandma Mướp's Glasses",
+    "summary": "Grandma Tabby Cat dropped her glasses, so she can't read the letter from her grandchild. {name} finds her things, reads the letter aloud to her, counts the rows of wool she knits, chooses how to cheer her up and then picks the actions that show care for grandparents."
   }
 }

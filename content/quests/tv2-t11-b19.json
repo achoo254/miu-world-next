@@ -114,7 +114,11 @@
         "tv2-t11-chu-c-truot-van",
         "tv2-t11-chu-e-tron-bui",
         "tv2-t11-chu-g-treo-canh"
-      ]
+      ],
+      "en": {
+        "title": "Collect the runaway letters",
+        "goTo": "Gather the runaway letters in the meadow by the Alphabet Road"
+      }
     },
     {
       "id": "doan-noi-dung",
@@ -174,6 +178,17 @@
         "answer": {
           "text": "Chữ Đ đứng sau bạn D, trước bạn E.",
           "explanation": "Đoạn hai kể: trong bảng chữ cái tiếng Việt, chữ Đ đứng ngay sau bạn D và ngay trước bạn E."
+        },
+        "en": {
+          "guide": [
+            "Open the second paragraph again, where Đ talks about its neighbours.",
+            "Find the sentence about the two friends standing on either side of Đ."
+          ],
+          "hint": "The two friends beside Đ are D and E.",
+          "answer": {
+            "text": "Đ stands after D and before E.",
+            "explanation": "The second paragraph says that in the Vietnamese alphabet, Đ stands right after D and right before E."
+          }
         }
       },
       "feedback": {
@@ -186,9 +201,30 @@
           "Đầu bảng là chỗ của chữ A cơ, chữ Đ thì đứng chỗ khác.",
           "Chữ Đ không đứng giữa M và N đâu, đọc lại đoạn hai nhé.",
           "Chữ Đ giống chữ nào nhất? Bạn ấy đứng ngay cạnh đó đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "After D, before E! Green Parrot does a somersault on the spine of the book.",
+            "Yes, Đ puffs out its chest with pride and nearly topples over backwards.",
+            "Right! {name} read the second paragraph as fast as C on a skateboard."
+          ],
+          "wrong": [
+            "The head of the alphabet belongs to A, Đ stands somewhere else.",
+            "Đ does not stand between M and N, read the second paragraph again.",
+            "Which letter does Đ look most like? It stands right beside it."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The letter Đ introduces itself",
+        "question": "The letter Đ clears its throat, “ahem”, and stands straight as a ladder. In the Vietnamese alphabet, where does the letter Đ stand?",
+        "choices": [
+          "Đ stands at the head of the alphabet, right before A.",
+          "Đ stands between M and N.",
+          "Đ stands right after D and right before E."
+        ]
+      }
     },
     {
       "id": "xep-hang-chu-cai",
@@ -249,6 +285,17 @@
         "answer": {
           "text": "B, C, D, Đ, E, Ê, G",
           "explanation": "Trong bảng chữ cái tiếng Việt, các chữ này nối nhau theo thứ tự B, C, D, Đ, E, Ê, G."
+        },
+        "en": {
+          "guide": [
+            "Quietly recite the alphabet from the start: a, á, â, bê, xê…",
+            "Đ stands right after D, and Ê stands right after E."
+          ],
+          "hint": "These seven letters stand side by side in the alphabet, starting from B.",
+          "answer": {
+            "text": "B, C, D, Đ, E, Ê, G, in alphabet order",
+            "explanation": "In the Vietnamese alphabet these letters follow one another in the order B, C, D, Đ, E, Ê, G."
+          }
         }
       },
       "feedback": {
@@ -261,9 +308,35 @@
           "Ối, chữ Đ chen lên trước chữ D rồi, thanh ngang phải đứng sau.",
           "Chữ G đứng hơi xa đấy, nó đứng sau cả chữ Ê cơ.",
           "Thử hát nhỏ bảng chữ cái từ đầu, rồi xếp theo lời hát nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A perfectly straight line! Đ straightens the bar on its head and stands to attention.",
+            "Green Parrot calls the roll: B, C, D, Đ, E, Ê, G… all here, all here!",
+            "The alphabet is in order, and the letters clap with a clatter."
+          ],
+          "wrong": [
+            "Oops, Đ has pushed in front of D, but the bar must come after it.",
+            "G stands a bit further on, even after Ê.",
+            "Try humming the alphabet from the start, then line up to the tune."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-chu-cai"
+      "objective": "bang-chu-cai-chu-cai",
+      "en": {
+        "title": "The letters line up again",
+        "goTo": "Run to the bamboo clump by the road, where Bamboo Giraffe is stretching her neck to herd the jostling letters",
+        "prompt": "After hearing Đ boast about its place, the letters push and shove and the line is in a mess. Green Parrot calls: line up, line up! Help these seven letters stand back in their places as in the Vietnamese alphabet.",
+        "items": [
+          "G",
+          "D",
+          "Ê",
+          "B",
+          "Đ",
+          "C",
+          "E"
+        ]
+      }
     },
     {
       "id": "uoc-mo-chu-a",
@@ -300,6 +373,17 @@
         "answer": {
           "text": "Chữ Đ mong mình y hệt chữ D, không có thanh ngang.",
           "explanation": "Vì bị trêu nên chữ Đ ngượng ngùng, chỉ ước mình giống hệt bạn D."
+        },
+        "en": {
+          "guide": [
+            "Go back to the second paragraph, where Đ is teased.",
+            "Find the sentence about Đ hanging its head in embarrassment."
+          ],
+          "hint": "Đ did not want anyone to see its bar.",
+          "answer": {
+            "text": "Đ wished it were just like D, with no bar.",
+            "explanation": "Because it was teased, Đ felt embarrassed and only wished it looked exactly like D."
+          }
         }
       },
       "feedback": {
@@ -312,9 +396,31 @@
           "Đứng đầu bảng là chỗ của chữ A, chữ Đ đâu mơ chuyện đó.",
           "Chữ Đ đang ngại thanh ngang, đâu muốn thêm nhiều cái nữa.",
           "Tìm câu nói về lúc chữ Đ cúi gằm mặt trong đoạn hai nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! At that moment Đ only wanted to look exactly like D.",
+            "Exactly, that small wish is right there in the second paragraph.",
+            "Green Parrot notes it down: “ngượng ngùng”, what a good word, what a good word!"
+          ],
+          "wrong": [
+            "The head of the alphabet is A's place, Đ never dreamed of that.",
+            "Đ is shy about its bar and does not want more of them.",
+            "Find the sentence about Đ hanging its head in the second paragraph."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "What the letter Đ once wished for",
+        "goTo": "Back to the giant book, where A has just turned to a new page",
+        "question": "When it was embarrassed at being teased, what did the letter Đ once wish for?",
+        "choices": [
+          "Đ wished it looked exactly like D.",
+          "Đ wished it could stand at the head of the alphabet.",
+          "Đ wished it had many more bars."
+        ]
+      }
     },
     {
       "id": "chu-a-nhan-ra",
@@ -357,6 +463,17 @@
         "answer": {
           "text": "Bỏ thanh ngang thì mấy tiếng đổi nghĩa; thanh ngang giúp Đ có tiếng riêng.",
           "explanation": "Chữ Đ hiểu rằng thiếu thanh ngang thì “đi”, “đẹp”, “đỏ” đổi hẳn nghĩa, nên thanh ngang giúp mình làm nên những tiếng riêng."
+        },
+        "en": {
+          "guide": [
+            "Read the third paragraph, from where the parrot writes three words on the page.",
+            "Đ realises two things about its bar."
+          ],
+          "hint": "Two ideas are correct, and both show the bar is useful.",
+          "answer": {
+            "text": "Without the bar the words change meaning; the bar gives Đ words of its own.",
+            "explanation": "Đ understood that without the bar “đi”, “đẹp”, “đỏ” would change meaning completely, so the bar helps it make words of its own."
+          }
         }
       },
       "feedback": {
@@ -369,9 +486,31 @@
           "Còn thiếu một ý nữa, đọc tiếp đoạn ba nhé.",
           "Thanh ngang đâu phải nét thừa, bỏ đi là tiếng đổi nghĩa ngay.",
           "Trong bài chẳng chữ nào giỏi hơn chữ nào, chỉ là mỗi chữ một vẻ thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both ideas! Đ nods, its face red with joy.",
+            "Right, such a tiny bar and so useful!",
+            "Green Parrot repeats twice to remember: words of its own, words of its own!"
+          ],
+          "wrong": [
+            "One more idea is missing, read on in the third paragraph.",
+            "The bar is not an extra stroke, take it off and the word changes meaning at once.",
+            "In the story no letter is better than another, each is just different."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The letter Đ understands now",
+        "prompt": "Green Parrot turns the page with a flutter: this part is important, important! What does Đ realise about its bar? Choose all the correct ideas.",
+        "choices": [
+          "Without the bar, “đi”, “đẹp”, “đỏ” would change meaning completely.",
+          "The bar is just an extra stroke and should be dropped to keep things neat.",
+          "The bar helps Đ make words that are truly its own.",
+          "D is better than Đ, so Đ must give way."
+        ]
+      }
     },
     {
       "id": "loi-nhan-nhu",
@@ -408,6 +547,17 @@
         "answer": {
           "text": "Điều riêng của mình đáng để tự hào.",
           "explanation": "Chữ Đ nhắn rằng điều riêng của mỗi người cũng như thanh ngang của mình, hãy tự hào về nó."
+        },
+        "en": {
+          "guide": [
+            "Read the last two lines of the text.",
+            "What does Đ compare each person's difference to?"
+          ],
+          "hint": "Đ is no longer shy, and holds its head high.",
+          "answer": {
+            "text": "What makes you different is worth being proud of.",
+            "explanation": "Đ says that what makes each person special is like its own bar, so be proud of it."
+          }
         }
       },
       "feedback": {
@@ -420,9 +570,31 @@
           "Cố giống hệt mọi người thì chữ Đ đã chẳng hóa thành chữ Đ rồi.",
           "Giấu đi thì chữ Đ vẫn ngượng mãi, mà lời nhắn thì ngược lại cơ.",
           "Đọc lại câu cuối bài, chữ Đ nhắn các bạn nhỏ điều gì về nét riêng của mình?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Proud of what makes you different! Đ hugs a book from Glasses Bear's pile, beaming.",
+            "Right, being different is as precious as the bar on Đ's head.",
+            "Green Parrot cries: proud, proud! I am proud of my curved beak!"
+          ],
+          "wrong": [
+            "If Đ tried to look like everyone else, it would never have become Đ.",
+            "If Đ hid it, it would feel shy forever, but its message is the opposite.",
+            "Read the last line again: what does Đ say to children about being different?"
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The letter A's message",
+        "goTo": "Follow A to the reading corner under the oak, where Glasses Bear is stacking books sky-high",
+        "prompt": "Đ whispers and asks Green Parrot to ask for it, because it is too shy. In the last line of the text, what does Đ want to say to children?",
+        "choices": [
+          "Be proud of what makes you different",
+          "Try hard to look just like everyone else",
+          "Hide what makes you different"
+        ]
+      }
     },
     {
       "id": "so-tu-cam-xuc",
@@ -461,6 +633,17 @@
         "answer": {
           "text": "ngượng ngùng, bất ngờ",
           "explanation": "Ngượng ngùng và bất ngờ là cảm xúc trong lòng; kỳ cục nói một vật trông lạ, không phải cảm xúc."
+        },
+        "en": {
+          "guide": [
+            "A word for a feeling tells how you feel inside.",
+            "Reread the second and third paragraphs: when was Đ embarrassed, and when was Đ surprised?"
+          ],
+          "hint": "Two words are feelings; the other describes something that looks strange.",
+          "answer": {
+            "text": "ngượng ngùng (shy), bất ngờ (surprised)",
+            "explanation": "Ngượng ngùng (embarrassed) and bất ngờ (surprised) are feelings inside; kỳ cục (odd) describes something that looks strange, not a feeling."
+          }
         }
       },
       "feedback": {
@@ -473,9 +656,30 @@
           "“Kỳ cục” là nói một thứ trông lạ, chứ đâu phải cảm xúc.",
           "Còn một từ cảm xúc nữa, nghĩ xem lúc cúi gằm mặt chữ Đ thấy thế nào?",
           "Đọc lại đoạn ba: khi nhận ra điều mới, chữ Đ thấy sao nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two feeling words go into the notebook! Green Parrot is surprised, so surprised!",
+            "Yes, ngượng ngùng and bất ngờ are both feelings inside.",
+            "Green Parrot ruffles its feathers, embarrassed by your praise."
+          ],
+          "wrong": [
+            "“Kỳ cục” describes something that looks strange, not a feeling.",
+            "One more feeling word is left: how did Đ feel while hanging its head?",
+            "Reread the third paragraph: when Đ realised something new, how did it feel?"
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-tim-tu"
+      "objective": "tu-ngu-tinh-cam-tim-tu",
+      "en": {
+        "title": "Green Parrot's collection book",
+        "prompt": "Green Parrot opens its word-collecting notebook: today I found three words in the text, three! Please pick the words that tell how you feel inside.",
+        "choices": [
+          "ngượng ngùng",
+          "bất ngờ",
+          "kỳ cục"
+        ]
+      }
     },
     {
       "id": "loi-cam-on-chu-a",
@@ -682,5 +886,9 @@
       "tu-ngu": 1,
       "bang-chu-cai": 1
     }
+  },
+  "en": {
+    "title": "The Letters Argue",
+    "summary": "On the Alphabet Road the letters argue about who matters most, and the letter Đ, teased for its bar, sulks off alone with a book. {name} and the chatty Green Parrot read “Tôi là chữ Đ”, line up the alphabet with Bamboo Giraffe, visit Glasses Bear's reading corner and help everyone make up."
   }
 }

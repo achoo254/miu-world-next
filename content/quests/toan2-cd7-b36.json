@@ -101,7 +101,11 @@
         "toan2-cd7-hop-huy-hieu-vang",
         "toan2-cd7-hop-huy-hieu-bac",
         "toan2-cd7-hop-huy-hieu-dong"
-      ]
+      ],
+      "en": {
+        "title": "Box of badges under the confetti",
+        "goTo": "Dig through the paper streamers all over the auditorium to find three badge boxes"
+      }
     },
     {
       "id": "luat-bay-cau-do",
@@ -172,6 +176,17 @@
         "answer": {
           "text": "Số 65",
           "explanation": "Đếm từ 57 là vạch thứ nhất: 57, 58, 59, 60, 61, 62, 63, 64, 65. Vạch thứ chín mang số 65."
+        },
+        "en": {
+          "guide": [
+            "The mark 57 counts as the first mark, and each mark after it goes up by 1.",
+            "To reach the ninth mark, you need to step eight marks on from the first mark."
+          ],
+          "hint": "The second mark is 58, the third mark is 59, and so on, hopping one step at a time.",
+          "answer": {
+            "text": "The number 65",
+            "explanation": "Counting from 57 as the first mark: 57, 58, 59, 60, 61, 62, 63, 64, 65. The ninth mark is 65."
+          }
         }
       },
       "feedback": {
@@ -184,13 +199,35 @@
           "Hãy coi 57 là vạch số một rồi mới đếm tiếp nhé.",
           "Gà Lóc Cóc nhắc: mỗi bước sang phải chỉ tăng đúng một đơn vị.",
           "Thử chỉ ngón tay lên từng vạch và đọc to số của nó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Clucking Hen taps her beak right on the mark 65, and the tap sounds so cheerful!",
+            "You counted the marks neatly without skipping a step.",
+            "Some little chicks line up beside the number line to congratulate {name}."
+          ],
+          "wrong": [
+            "Treat 57 as mark number one and then keep counting.",
+            "Clucking Hen reminds you: each step to the right goes up by exactly one.",
+            "Try pointing your finger at each mark and reading its number aloud."
+          ]
+        }
       },
       "answer": {
         "choice": "so-65"
       },
       "objective": "so-den-100-tia-so",
-      "expression": "57 + 8"
+      "expression": "57 + 8",
+      "en": {
+        "title": "Clucking Hen's riddle",
+        "goTo": "Stop by the number-line room, where Clucking Hen has already drawn the number line",
+        "prompt": "Clucking Hen draws a number line with evenly spaced marks, starting at the mark 57 and stopping at the mark 67. She puts a question mark on the ninth mark counting from 57 (the mark 57 is the first mark). Which number is the question mark on?",
+        "choices": [
+          "64",
+          "65",
+          "66"
+        ]
+      }
     },
     {
       "id": "lich-cua-voi-bao",
@@ -224,6 +261,17 @@
         "answer": {
           "text": "Thứ Bảy",
           "explanation": "Ngày 6 là thứ Tư, ngày 7 là thứ Năm, ngày 8 là thứ Sáu, ngày 9 là thứ Bảy."
+        },
+        "en": {
+          "guide": [
+            "With each day that passes, the day of the week moves on to the next name in the week.",
+            "From the 6th to the 9th is three more days."
+          ],
+          "hint": "The 7th is a Thursday.",
+          "answer": {
+            "text": "Saturday",
+            "explanation": "The 6th is a Wednesday, the 7th is a Thursday, the 8th is a Friday, the 9th is a Saturday."
+          }
         }
       },
       "feedback": {
@@ -236,12 +284,34 @@
           "Từ ngày 6 sang ngày 9 phải bước qua mấy ngày, đếm lại thử.",
           "Sau thứ Năm là thứ mấy nhỉ? Cứ đọc nối tiếp từng thứ.",
           "Bác Ngân gợi ý: viết ngày bên cạnh thứ cho dễ theo dõi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Uncle Ngân sticks one more paper star right in the Saturday box.",
+            "You counted the days of the week one by one without missing a beat, very praiseworthy!",
+            "The December calendar lights up thanks to {name}'s answer."
+          ],
+          "wrong": [
+            "How many days do you step over from the 6th to the 9th? Try counting again.",
+            "What day comes after Thursday? Just read the days one after another.",
+            "Uncle Ngân's tip: write the date beside the day of the week to keep track."
+          ]
+        }
       },
       "answer": {
         "choice": "thu-bay"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Uncle Ngân's riddle",
+        "goTo": "Go over to the calendar table next to the clock room, where Uncle Ngân holds up the December calendar",
+        "prompt": "Uncle Ngân has just turned over the December calendar beside the star map and asks a riddle: the 6th of December falls on a Wednesday, so what day of the week is the 9th of December in the same month?",
+        "choices": [
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ]
+      }
     },
     {
       "id": "mot-ngay-cua-nam",
@@ -297,6 +367,17 @@
         "answer": {
           "text": "06:30 – tưới rau; 13:00 – ngủ trưa; 17:30 – xếp cà rốt; 21:00 – nghe kể chuyện",
           "explanation": "Tưới rau lúc 6 giờ 30 phút sáng là 06:30; ngủ trưa lúc 1 giờ chiều là 13:00; xếp cà rốt lúc 5 giờ 30 phút chiều là 17:30; nghe kể chuyện lúc 9 giờ tối là 21:00."
+        },
+        "en": {
+          "guide": [
+            "In the morning the hour number stays the same, but in the afternoon and evening you add 12 to read it on a digital clock.",
+            "1 o'clock in the afternoon is 13:00, and 9 o'clock in the evening is 21:00."
+          ],
+          "hint": "5:30 in the afternoon is 17:30.",
+          "answer": {
+            "text": "06:30 – watering vegetables; 13:00 – nap; 17:30 – arranging carrots; 21:00 – listening to the story",
+            "explanation": "Watering at 6:30 in the morning is 06:30; napping at 1 in the afternoon is 13:00; arranging carrots at 5:30 in the afternoon is 17:30; the story at 9 in the evening is 21:00."
+          }
         }
       },
       "feedback": {
@@ -309,7 +390,19 @@
           "Giờ chiều khi lên đồng hồ điện tử thì số giờ phải lớn hơn 12.",
           "9 giờ tối hiện thành số nào trên đồng hồ điện tử nhỉ?",
           "Một việc đang nằm lạc sang đồng hồ khác, kiểm tra lại từng việc."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four activities go back to their own clock, and the magic clock goes tick-tock happily!",
+            "Afternoon and evening times are both turned into digital numbers exactly right.",
+            "Uncle Thìn rubs his hands: Cotton Rabbit's day is all in order thanks to {name}."
+          ],
+          "wrong": [
+            "Afternoon times on a digital clock must have an hour number bigger than 12.",
+            "What number does 9 o'clock in the evening show on a digital clock?",
+            "One activity has wandered off to a different clock, so check each activity again."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -319,7 +412,18 @@
           "tho-gon-nghe-ke-chuyen-luc-9-gio-toi": "nhom-dong-ho-21-00"
         }
       },
-      "objective": "gio-va-lich-ngay-gio"
+      "objective": "gio-va-lich-ngay-gio",
+      "en": {
+        "title": "Cotton Rabbit's day",
+        "goTo": "Step into the clock room, where Uncle Thìn polishes the magic clock and lays out four activity cards",
+        "prompt": "Uncle Thìn lays out four activities from a day in Cotton Rabbit's life beside the magic clock: \"Only when an activity goes back to its own clock will the magic clock go tick-tock!\" Put each activity on the digital clock that shows exactly its time.",
+        "items": [
+          "Cotton Rabbit waters the vegetables in the garden at 6:30 in the morning.",
+          "Cotton Rabbit naps under a tree at 1 o'clock in the afternoon.",
+          "Cotton Rabbit arranges carrots on the shelf at 5:30 in the afternoon.",
+          "Cotton Rabbit listens to a bedtime story at 9 o'clock in the evening."
+        ]
+      }
     },
     {
       "id": "dong-ho-cung-gio",
@@ -352,6 +456,17 @@
         "answer": {
           "text": "P và X",
           "explanation": "P chỉ 5 giờ 30 phút, buổi chiều là 17:30, trùng với đồng hồ X. Q chỉ 7 giờ tối tức 19:00, chưa phải 20:00 của đồng hồ Y."
+        },
+        "en": {
+          "guide": [
+            "The minute hand stopping on 6 means half an hour, which is 30 minutes, has passed.",
+            "An afternoon time on a digital clock is the hour on the hand clock plus 12."
+          ],
+          "hint": "Clock P shows 5:30.",
+          "answer": {
+            "text": "P and X",
+            "explanation": "P shows 5:30, which in the afternoon is 17:30, matching clock X. Q shows 7 in the evening, which is 19:00, not the 20:00 of clock Y."
+          }
         }
       },
       "feedback": {
@@ -364,12 +479,33 @@
           "Đồng hồ Q chỉ 7 giờ tối, đổi ra số điện tử xem có bằng 20:00 không.",
           "Kim phút chỉ số 6 ứng với bao nhiêu phút, nghĩ lại nhé.",
           "Hãy đổi giờ trên đồng hồ P sang dạng điện tử rồi so với X và Y."
-        ]
+        ],
+        "en": {
+          "right": [
+            "P and X are like two drops of water, and Uncle Thìn taps lightly on the glass to praise you!",
+            "The minute hand on 6 is 30 minutes, and you read it correctly straight away.",
+            "The two clocks tick-tock in the same beat to celebrate {name}."
+          ],
+          "wrong": [
+            "Clock Q shows 7 in the evening, so turn it into a digital number and see if it equals 20:00.",
+            "How many minutes does the minute hand on 6 stand for? Think again.",
+            "Turn the time on clock P into digital form and compare it with X and Y."
+          ]
+        }
       },
       "answer": {
         "choice": "p-va-x"
       },
-      "objective": "gio-va-lich-ngay-gio"
+      "objective": "gio-va-lich-ngay-gio",
+      "en": {
+        "title": "Two clocks at the same time",
+        "prompt": "Uncle Thìn sets two hand clocks and two digital clocks in front of you. Hand clock P has its short hand half way between the 5 and the 6, and its long hand pointing down at the 6. Hand clock Q has its short hand exactly on the 7 and its long hand pointing up at the 12. The two digital clocks show X = 17:30 and Y = 20:00. Which pair shows the same time in the afternoon or evening?",
+        "choices": [
+          "P and X",
+          "P and Y",
+          "Q and Y"
+        ]
+      }
     },
     {
       "id": "dat-tinh-cua-dom",
@@ -494,6 +630,17 @@
         "answer": {
           "text": "28 + 6 = 34; 7 + 56 = 63; 38 + 45 = 83; 52 – 8 = 44; 71 – 38 = 33; 62 – 57 = 5",
           "explanation": "Sáu kết quả lần lượt là 34, 63, 83, 44, 33 và 5."
+        },
+        "en": {
+          "guide": [
+            "Line up the digits in columns: ones under ones, tens under tens.",
+            "If the ones add up to more than 9, carry 1 to the tens; if you can't subtract, borrow 1 ten."
+          ],
+          "hint": "Key 2: line up the 7 with the 6 of 56.",
+          "answer": {
+            "text": "28 + 6 = 34; 7 + 56 = 63; 38 + 45 = 83; 52 – 8 = 44; 71 – 38 = 33; 62 – 57 = 5",
+            "explanation": "The six answers are 34, 63, 83, 44, 33 and 5 in turn."
+          }
         }
       },
       "feedback": {
@@ -506,7 +653,19 @@
           "Có phím kêu lạc tông vì chưa nhớ 1 sang hàng chục.",
           "Trừ mà số ở hàng đơn vị của số bị trừ nhỏ hơn thì phải mượn 1 chục.",
           "Kết quả của phép 62 – 57 chỉ có một chữ số, kiểm tra lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six keys ring out together, and the music box sings a sweet tune!",
+            "Little Orange Cat wags his tail in time and praises your careful column sums.",
+            "Carrying and borrowing are both in the right places, and not a single digit is dropped."
+          ],
+          "wrong": [
+            "A key sounds off-key because you haven't carried 1 to the tens.",
+            "If the ones digit of the top number is smaller, you must borrow 1 ten.",
+            "The answer to 62 – 57 has only one digit, so check again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -526,6 +685,11 @@
         "b4": "52 - 8",
         "b5": "71 - 38",
         "b6": "62 - 57"
+      },
+      "en": {
+        "title": "Little Orange Cat's riddle",
+        "goTo": "Go through the column-sums room, where Little Orange Cat is putting together a music box",
+        "prompt": "Little Orange Cat is putting together a music box with six keys, and a key only goes \"ting\" if it is worked out correctly. Set out the sums in columns on scrap paper, then fill in the answer for each key."
       }
     },
     {
@@ -545,6 +709,17 @@
         "answer": {
           "text": "75 cm",
           "explanation": "Mèo Mướp cao: 67 + 8 = 75 (cm)."
+        },
+        "en": {
+          "guide": [
+            "The word \"taller\" tells you to add the difference to the height of the shorter friend.",
+            "7 plus 8 goes past 10, so carry 1 to the tens."
+          ],
+          "hint": "7 + 8 = 15, write 5 and carry 1, then 6 + 1 = 7.",
+          "answer": {
+            "text": "75 cm",
+            "explanation": "Tabby Cat is: 67 + 8 = 75 (cm) tall."
+          }
         }
       },
       "feedback": {
@@ -557,13 +732,30 @@
           "Mèo Mướp cao hơn nên kết quả phải lớn hơn 67 cm.",
           "Hàng đơn vị 7 cộng 8 qua 10 rồi, đừng quên nhớ 1.",
           "Bài này cần phép cộng, chưa phải phép trừ đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "White Fox wags his white tail: Tabby Cat is 75 cm, measured exact to the millimetre!",
+            "Taller means add, and you remember it so firmly.",
+            "White Fox's measuring rod seems to give a happy click."
+          ],
+          "wrong": [
+            "Tabby Cat is taller, so the answer must be more than 67 cm.",
+            "In the ones, 7 plus 8 goes past 10, so don't forget to carry 1.",
+            "This problem needs addition, not subtraction."
+          ]
+        }
       },
       "answer": {
         "value": 75
       },
       "objective": "bai-toan-co-loi-van-hon-kem",
-      "expression": "67 + 8"
+      "expression": "67 + 8",
+      "en": {
+        "title": "White Fox's riddle",
+        "goTo": "Walk over to the height-measuring room, where White Fox has already set up the measuring rod",
+        "question": "White Fox sets up the measuring rod beside two little friends: Cotton Rabbit is 67 cm tall, and Tabby Cat is 8 cm taller than Cotton Rabbit. How many centimetres tall is Tabby Cat?"
+      }
     },
     {
       "id": "hai-loi-mi-thuat",
@@ -677,6 +869,17 @@
         "answer": {
           "text": "Lối ABC dài 83 cm; lối MNPQ dài 79 cm; lối MNPQ ngắn hơn",
           "explanation": "ABC dài 45 + 38 = 83 cm; MNPQ dài 26 + 24 + 29 = 79 cm; 79 < 83 nên lối MNPQ ngắn hơn."
+        },
+        "en": {
+          "guide": [
+            "The length of a path is the total of the lengths of all its connected line segments.",
+            "After working out the two totals, compare them to see which number is smaller."
+          ],
+          "hint": "Path MNPQ: 26 + 24 = 50, then add on 29.",
+          "answer": {
+            "text": "Path ABC is 83 cm long; path MNPQ is 79 cm long; path MNPQ is shorter",
+            "explanation": "ABC is 45 + 38 = 83 cm long; MNPQ is 26 + 24 + 29 = 79 cm long; 79 < 83 so path MNPQ is shorter."
+          }
         }
       },
       "feedback": {
@@ -689,7 +892,19 @@
           "Lối nhiều đoạn chưa chắc dài hơn, phải cộng đủ mọi đoạn mới biết.",
           "Lối MNPQ có ba đoạn, đừng bỏ sót đoạn PQ.",
           "So hai số vừa tính được, số bé hơn là lối ngắn hơn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three-segment path is shorter after all! The ant chose the right way and gets back to its nest before dinner.",
+            "You added instead of guessing, so you didn't fall into the trap.",
+            "Auntie Hằng paints extra sparkling sugar grains at the end of the path for {name}."
+          ],
+          "wrong": [
+            "A path with more segments isn't necessarily longer, so you have to add up every segment to know.",
+            "Path MNPQ has three segments, so don't miss the segment PQ.",
+            "Compare the two numbers you just worked out, and the smaller number is the shorter path."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -702,6 +917,10 @@
       "expression": {
         "b1": "45 + 38",
         "b2": "26 + 24 + 29"
+      },
+      "en": {
+        "title": "Ants carry sugar home",
+        "prompt": "In Auntie Hằng's picture, an ant has two ways back to its nest. Path ABC has two segments: AB is 45 cm long and BC is 38 cm long. Path MNPQ has three segments: MN is 26 cm long, NP is 24 cm long and PQ is 29 cm long. Work out the length of each path and choose the shorter one. Path ABC is _ cm long. Path MNPQ is _ cm long. The shorter path is path _."
       }
     },
     {
@@ -736,6 +955,17 @@
         "answer": {
           "text": "15 cm",
           "explanation": "Sợi dây dài 6 + 5 + 4 = 15 (cm)."
+        },
+        "en": {
+          "guide": [
+            "The length of the string equals the total of the three connected segments.",
+            "The answer is measured in centimetres."
+          ],
+          "hint": "6 + 5 = 11, then add 4 more.",
+          "answer": {
+            "text": "15 cm",
+            "explanation": "The string is 6 + 5 + 4 = 15 (cm) long."
+          }
         }
       },
       "feedback": {
@@ -748,13 +978,35 @@
           "Số này mới là tổng của hai đoạn, còn đoạn CD nữa.",
           "Cộng đủ AB, BC rồi CD theo thứ tự từ trái sang phải.",
           "Đáp án phải lớn hơn từng đoạn riêng lẻ, kiểm tra lại phép cộng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tabby Cat strokes his whiskers: fifteen centimetres, a perfect fit for the picture frame!",
+            "All three segments added, and none missed.",
+            "The string is curvy, but {name} measured it so neatly."
+          ],
+          "wrong": [
+            "That number is only the total of two segments, and there is still the segment CD.",
+            "Add AB, BC and then CD in order from left to right.",
+            "The answer must be bigger than any single segment, so check the addition again."
+          ]
+        }
       },
       "answer": {
         "choice": "so-15"
       },
       "objective": "hinh-phang-gap-khuc",
-      "expression": "6 + 5 + 4"
+      "expression": "6 + 5 + 4",
+      "en": {
+        "title": "The string that pins up pictures",
+        "goTo": "Step over to the picture-pinning rack, where Tabby Cat points at the broken line ABCD",
+        "prompt": "To hang pictures, Tabby Cat pulls a picture-pinning string bent into three parts, passing in turn through four nails A, B, C, D. The first part is 6 cm long, the middle part is 5 cm long, and the last part is 4 cm long. How many centimetres long is the whole string?",
+        "choices": [
+          "11",
+          "14",
+          "15"
+        ]
+      }
     },
     {
       "id": "dem-hinh-tu-giac",
@@ -792,6 +1044,17 @@
         "answer": {
           "text": "6 hình",
           "explanation": "Có 3 hình nhỏ, 2 hình ghép từ hai mảnh liền nhau và 1 hình lớn bao cả ba mảnh: 3 + 2 + 1 = 6 hình tứ giác."
+        },
+        "en": {
+          "guide": [
+            "Count each small piece first, then the shapes joined from two neighbouring pieces, and finally the big shape around the outside.",
+            "A quadrilateral has four sides."
+          ],
+          "hint": "There are three small pieces; two neighbouring pieces can be joined in two ways.",
+          "answer": {
+            "text": "6 shapes",
+            "explanation": "There are 3 small shapes, 2 shapes joined from two neighbouring pieces and 1 big shape around all three: 3 + 2 + 1 = 6 quadrilaterals."
+          }
         }
       },
       "feedback": {
@@ -804,13 +1067,36 @@
           "Đừng quên hình lớn bao trọn cả ba mảnh nhé.",
           "Hai mảnh liền nhau ghép lại cũng thành một hình tứ giác.",
           "Thử đếm theo thứ tự: mảnh đơn, rồi cặp liền nhau, rồi cả ba."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six quadrilaterals, and you even found the joined shapes hiding away!",
+            "Auntie Hằng squints and smiles: you count more carefully than I drew.",
+            "You counted level by level, single pieces, pairs, then the triple, which is really methodical."
+          ],
+          "wrong": [
+            "Don't forget the big shape that wraps all three pieces.",
+            "Two neighbouring pieces joined together also make a quadrilateral.",
+            "Try counting in order: single pieces, then neighbouring pairs, then all three."
+          ]
+        }
       },
       "answer": {
         "choice": "so-6"
       },
       "objective": "hinh-phang-tu-giac",
-      "expression": "3 + 2 + 1"
+      "expression": "3 + 2 + 1",
+      "en": {
+        "title": "Count the quadrilaterals",
+        "goTo": "Go back to the flat-shapes room, where Auntie Hằng has just finished drawing a trapezium",
+        "prompt": "The last question of the flat-shapes room: Auntie Hằng draws one big rectangle and then draws two vertical lines, dividing it into three small rectangles standing side by side. How many quadrilaterals are there in all in the drawing, including shapes made by joining several neighbouring parts?",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "7"
+        ]
+      }
     },
     {
       "id": "mit-va-can-nuoc",
@@ -867,6 +1153,17 @@
         "answer": {
           "text": "Quả bí nặng 9 kg; trong thùng còn 8 l",
           "explanation": "Quả bí nặng 3 kg + 6 kg = 9 kg; thùng còn 18 l – 5 l – 5 l = 8 l nước."
+        },
+        "en": {
+          "guide": [
+            "The scale is balanced, so the pumpkin weighs the same as the two weights added together.",
+            "Each cup poured out makes the tank lose 5 l, so pouring two cups takes away 5 l twice."
+          ],
+          "hint": "18 l take away 5 l, then take away another 5 l.",
+          "answer": {
+            "text": "The pumpkin weighs 9 kg; 8 l is left in the tank",
+            "explanation": "The pumpkin weighs 3 kg + 6 kg = 9 kg; the tank has 18 l – 5 l – 5 l = 8 l of water left."
+          }
         }
       },
       "feedback": {
@@ -879,7 +1176,19 @@
           "Rót hai ca chứ không phải một ca đâu nhé.",
           "Quả bí nặng bằng cả hai quả cân cộng lại.",
           "Hai ca 5 l tức là bớt đi tất cả bao nhiêu lít?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Cotton Rabbit ticks the notebook: pumpkin 9 kg, tank 8 l left, bang on!",
+            "Weighing and measuring are both exact, and you deserve to be inspector of the weighing room.",
+            "The pumpkin is cut up to offer the whole great hall a taste."
+          ],
+          "wrong": [
+            "Pour two cups, not just one.",
+            "The pumpkin weighs the same as both weights added together.",
+            "Two 5 l cups take away how many litres altogether?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -891,6 +1200,11 @@
       "expression": {
         "b1": "3 + 6",
         "b2": "18 - 5 - 5"
+      },
+      "en": {
+        "title": "Cotton Rabbit's riddle",
+        "goTo": "Go back to the weighing-and-measuring room, where Cotton Rabbit has set up the scale and cans",
+        "prompt": "Cotton Rabbit sets two challenges. One: the pan scale is balanced, with a 3 kg weight and a 6 kg weight on one pan and a pumpkin on the other. Two: a tank holds 18 l of water and there are two 5 l cups. The pumpkin weighs _ kg. After pouring two full cups from the tank, _ l of water is left in the tank."
       }
     },
     {
@@ -910,6 +1224,17 @@
         "answer": {
           "text": "45 quyển truyện",
           "explanation": "Tổ Trăng góp: 71 – 26 = 45 (quyển)."
+        },
+        "en": {
+          "guide": [
+            "\"Fewer\" means you take the difference away from the Star group's number.",
+            "The ones digit 1 is smaller than 6, so you must borrow 1 ten."
+          ],
+          "hint": "11 – 6 = 5, then 6 – 2 = 4.",
+          "answer": {
+            "text": "45 storybooks",
+            "explanation": "The Moon group donated: 71 – 26 = 45 (books)."
+          }
         }
       },
       "feedback": {
@@ -922,13 +1247,30 @@
           "Tổ Trăng góp ít hơn nên kết quả phải bé hơn 71.",
           "Hàng đơn vị 1 không trừ được 6, mượn 1 chục nhé.",
           "Đây là bài toán dùng phép trừ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Forty-five storybooks set off on their way, and Uncle Thuận smiles until his eyes disappear!",
+            "Fewer means subtract, and you even borrowed the ten in the right place. Great!",
+            "The little friends in the mountains will soon have lots more good stories to read."
+          ],
+          "wrong": [
+            "The Moon group donated fewer, so the answer must be smaller than 71.",
+            "In the ones, 1 can't take away 6, so borrow 1 ten.",
+            "This is a problem that uses subtraction."
+          ]
+        }
       },
       "answer": {
         "value": 45
       },
       "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
-      "expression": "71 - 26"
+      "expression": "71 - 26",
+      "en": {
+        "title": "Uncle Thuận's riddle",
+        "goTo": "Go over to the problem room, where Uncle Thuận is tying up a pile of books",
+        "question": "Uncle Thuận gathers storybooks to send to little friends in the mountains. The Star group donated 71 books, and the Moon group donated 26 fewer than the Star group. How many books did the Moon group donate?"
+      }
     },
     {
       "id": "duong-bay-ong-vang",
@@ -1053,6 +1395,17 @@
         "answer": {
           "text": "Lối 1: 75 → 67 → 86 → 36; Lối 2: 18 → 25 → 16 → 36",
           "explanation": "Lối 1: 75 – 8 = 67, 67 + 19 = 86, 86 – 50 = 36. Lối 2: 18 + 7 = 25, 25 – 9 = 16, 16 + 20 = 36. Hai lối cùng về số 36."
+        },
+        "en": {
+          "guide": [
+            "Fly along the arrows, work out one sum at a time and carry the answer into the next box.",
+            "Every box uses the number you just worked out as the starting number for the next sum."
+          ],
+          "hint": "75 – 8 = 67, then 67 + 19.",
+          "answer": {
+            "text": "Path 1: 75 → 67 → 86 → 36; Path 2: 18 → 25 → 16 → 36",
+            "explanation": "Path 1: 75 – 8 = 67, 67 + 19 = 86, 86 – 50 = 36. Path 2: 18 + 7 = 25, 25 – 9 = 16, 16 + 20 = 36. Both paths end at 36."
+          }
         }
       },
       "feedback": {
@@ -1065,7 +1418,19 @@
           "Ong Rù Rì lạc đường rồi, rà lại từng ô một nhé.",
           "Phép 75 – 8 cần mượn 1 chục ở hàng chục.",
           "Lấy kết quả ô trước làm số đầu của ô sau, đừng quay lại số ban đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Buzz buzz... the two flight paths meet at 36, and the badge lights up!",
+            "Buzzing Bee does a circle in the air to celebrate {name}.",
+            "All six arrow boxes are right, and no flight went off course."
+          ],
+          "wrong": [
+            "Buzzing Bee is lost, so go back over the boxes one by one.",
+            "The sum 75 – 8 needs you to borrow 1 ten from the tens.",
+            "Use the answer of the box before as the first number of the next box, and don't go back to the starting number."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1085,6 +1450,11 @@
         "b4": "18 + 7",
         "b5": "18 + 7 - 9",
         "b6": "18 + 7 - 9 + 20"
+      },
+      "en": {
+        "title": "Buzzing Bee's flight path",
+        "goTo": "Arrive at the paper-flower trellis, where Buzzing Bee is flying about buzzing and waiting for {name}",
+        "prompt": "The riddle that closes the ceremony: Buzzing Bee flies buzzing along two arrow paths, and at the end of each path is a sparkling badge. Work out each box in the order of the arrows. Path 1: 75, – 8, _, + 19, _, – 50, _. Path 2: 18, + 7, _, – 9, _, + 20, _."
       }
     },
     {
@@ -1120,5 +1490,9 @@
       "hinh-phang": 1,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Closing Ceremony in the Great Hall",
+    "summary": "The closing ceremony in the castle's great hall: every review room sends one last riddle, from Clucking Hen's number line to Buzzing Bee's flight path. {name} solves them all to receive the closing badge from Teacher Quang."
   }
 }

@@ -107,7 +107,11 @@
         "tv2-t08-sach-de-men",
         "tv2-t08-sach-the-gioi-quanh-em",
         "tv2-t08-trang-muc-luc"
-      ]
+      ],
+      "en": {
+        "title": "Pick up books scattered along the aisle",
+        "goTo": "Pick up the books and the contents page scattered in the Aisle Between the Bookshelves"
+      }
     },
     {
       "id": "bia-sach-de-men",
@@ -168,6 +172,17 @@
         "answer": {
           "text": "Đọc tên sách là đoán được nội dung sách.",
           "explanation": "Bài viết rằng chỉ cần đọc tên, em đã đoán được sách kể chuyện gì hoặc bàn về điều gì."
+        },
+        "en": {
+          "guide": [
+            "Read the start of the text, the part about the big line of letters in the middle of the cover.",
+            "Find the sentence that mentions «reading the title» and then «guessing»."
+          ],
+          "hint": "The title is the first door into the book's contents.",
+          "answer": {
+            "text": "Reading the title lets you guess what the book is about.",
+            "explanation": "The text says that just by reading the title, you can guess what story the book tells or what it is about."
+          }
         }
       },
       "feedback": {
@@ -180,9 +195,31 @@
           "Muốn biết sách nặng bao nhiêu thì phải đặt lên cân, đâu cần đọc tên.",
           "Dày hay mỏng thì sờ vào là biết, còn tên sách cho biết điều khác cơ.",
           "Đọc lại câu cuối của đoạn đầu, chỗ có chữ \"đoán\" nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Spring Bunny writes it on his ear at once: the title is the first clue.",
+            "Mama Bear nods: from the title you can guess the story inside.",
+            "Spot on! A book with a frog on the cover is surely a story about a frog."
+          ],
+          "wrong": [
+            "To find out how heavy a book is you have to put it on scales, no need to read the title.",
+            "Thick or thin you can tell by touching it, while the title tells something else.",
+            "Read the last sentence of the first paragraph again, the one with the word «guess»."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Read about the book",
+        "goTo": "Go to the Reading Room Bookshelf, where the reading text is pinned right beside the top shelf",
+        "question": "Before you open a book, what can you guess just by looking at its title?",
+        "choices": [
+          "How many grams the book weighs",
+          "What story the book tells or what it is about",
+          "Whether the book is thick or thin"
+        ]
+      }
     },
     {
       "id": "nhan-ten-sach",
@@ -231,6 +268,17 @@
         "answer": {
           "text": "tên sách – hàng chữ to nhất giữa bìa, cho biết sách nói về gì",
           "explanation": "Bài đọc nói tên sách in to ở giữa bìa và giúp em đoán nội dung cuốn sách."
+        },
+        "en": {
+          "guide": [
+            "Read the first paragraph: where is the title, and how big is it?",
+            "Find the sentence with the words «tên sách» in the text."
+          ],
+          "hint": "The title is the most eye-catching line of letters on the cover.",
+          "answer": {
+            "text": "«tên sách»: «chữ to giữa bìa», the biggest line of letters in the middle of the cover, telling what the book is about",
+            "explanation": "The text says the title is printed large in the middle of the cover and helps you guess what the book is about."
+          }
         }
       },
       "feedback": {
@@ -243,9 +291,26 @@
           "Tên sách không phải là một con người, đọc lại đoạn đầu xem nào.",
           "Hàng chữ to giữa bìa là thứ cần dán nhãn này, tìm lời giải thích nói về nó.",
           "Nơi sách được in là chuyện của nhãn khác cơ, thử lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The title is the biggest line of letters in the middle of the cover, right! The first label is stuck on.",
+            "Spring Bunny sticks the label with a smack, and this time not upside down.",
+            "Spot on! The big line in the middle really is the door into the book."
+          ],
+          "wrong": [
+            "A title is not a person. Read the first paragraph again.",
+            "The big line in the middle of the cover is what this label is for. Find the explanation about it.",
+            "Where a book is printed is a matter for another label. Try again."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Label for the book title shelf",
+        "goTo": "Go to the Book Loft Stairs, where Spring Bunny is bouncing about holding a label",
+        "prompt": "Spring Bunny holds up the first label and turns it this way and that: this one will be stuck on the «tên sách» shelf. What is a «tên sách»? Choose the right explanation."
+      }
     },
     {
       "id": "nhan-tac-gia",
@@ -293,6 +358,17 @@
         "answer": {
           "text": "tác giả – người đã nghĩ ra và viết nên sách",
           "explanation": "Bài đọc giải thích tác giả là người nghĩ ra và viết nên cuốn sách."
+        },
+        "en": {
+          "guide": [
+            "Read the sentence that mentions the author's name in the first paragraph.",
+            "Ask yourself: who sat down and wrote the book?"
+          ],
+          "hint": "An author is a person, not a place.",
+          "answer": {
+            "text": "«tác giả»: «người viết sách», the person who thought up and wrote the book",
+            "explanation": "The text explains that an author is the person who thought up and wrote the book."
+          }
         }
       },
       "feedback": {
@@ -305,9 +381,25 @@
           "Tác giả là một người cơ, không phải một trang sách.",
           "Đọc lại đoạn đầu: ai là người nghĩ ra câu chuyện trong sách?",
           "Mục lục thì không biết cầm bút viết sách đâu, chọn lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The author is the person who wrote the book, spot on, no correction needed!",
+            "Mama Bear whispers from the reading nook: Brown Squirrel is the author of the book with the frog.",
+            "The second label is in place, and the bookshelf has one more tidy shelf."
+          ],
+          "wrong": [
+            "An author is a person, not a page of the book.",
+            "Read the first paragraph again: who thought up the story in the book?",
+            "A table of contents has no idea how to hold a pen and write a book. Choose again."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Label for the author shelf",
+        "prompt": "The second label is covered in leaf crumbs and Spring Bunny puffs on it: this label is for the «tác giả» shelf. Choose the right explanation of the word «tác giả»."
+      }
     },
     {
       "id": "nhan-nha-xuat-ban",
@@ -356,6 +448,17 @@
         "answer": {
           "text": "nhà xuất bản – nơi in sách và đưa sách đến bạn đọc",
           "explanation": "Bài đọc cho biết nhà xuất bản là nơi in và phát hành sách đến tay bạn đọc."
+        },
+        "en": {
+          "guide": [
+            "Paragraph two is about the place that prints and publishes books.",
+            "Find the sentence with the words «nhà xuất bản» in the text."
+          ],
+          "hint": "A publisher is a place, not a person.",
+          "answer": {
+            "text": "«nhà xuất bản»: «nơi in sách», the place that prints books and brings them to readers",
+            "explanation": "The text says a publisher is the place that prints and publishes books so that they reach readers."
+          }
         }
       },
       "feedback": {
@@ -368,9 +471,26 @@
           "Nhà xuất bản không phải người viết, mà là một nơi chốn.",
           "Đọc lại đoạn hai: nơi in và phát hành sách có tên là gì?",
           "Dòng chữ nhỏ sát mép dưới bìa là tên của nơi ấy đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A publisher is where books are printed and published, well done!",
+            "Spring Bunny cheers: so books have a birthplace, too, and it is the publisher!",
+            "Three shelves have labels, only one shelf left."
+          ],
+          "wrong": [
+            "A publisher is not the person who writes, it is a place.",
+            "Read paragraph two again: what is the place that prints and publishes books called?",
+            "The small line of letters at the very bottom edge of the cover is the name of that place."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Label for the publisher shelf",
+        "goTo": "Carry the longest label to the Reading Room Bookshelf",
+        "prompt": "The third label is the longest, and Spring Bunny has to hold it with both ears: this label is for the «nhà xuất bản» shelf. Choose the right explanation."
+      }
     },
     {
       "id": "nhan-muc-luc",
@@ -419,6 +539,17 @@
         "answer": {
           "text": "mục lục – bảng các phần của sách và số trang mở đầu",
           "explanation": "Mục lục liệt kê các phần của sách và ghi số trang bắt đầu của từng phần để em dò tìm."
+        },
+        "en": {
+          "guide": [
+            "The last paragraph is about the page that helps you find a place in the book quickly.",
+            "Find the sentence with the words «mục lục» in the text."
+          ],
+          "hint": "A table of contents shows which page each part starts on.",
+          "answer": {
+            "text": "«mục lục»: «bảng chỉ trang», a list of the book's parts with the page where each starts",
+            "explanation": "The table of contents lists the book's parts and the page number each one starts on, so you can look things up."
+          }
         }
       },
       "feedback": {
@@ -431,9 +562,26 @@
           "Mục lục không phải người viết sách đâu, nó là một trang trong sách.",
           "Đọc lại đoạn cuối: mục lục giúp em làm việc gì khi cần tìm nhanh?",
           "Mục lục ghi mỗi phần bắt đầu từ trang số mấy đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A table of contents is a list of parts with page numbers, spot on!",
+            "Spring Bunny droops: you really can't eat it? But it finds places so fast!",
+            "All four labels are done! Mama Bear hammers in a nail very gently: tok, tok, tok."
+          ],
+          "wrong": [
+            "A table of contents is not the person who writes the book, it is a page inside the book.",
+            "Read the last paragraph again: what does it help you do when you need to find something fast?",
+            "A table of contents says which page each part starts on."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Label for the contents shelf",
+        "goTo": "Spring Bunny bounces onto the Book Loft Stairs, holding up the last label",
+        "prompt": "The last label is the very thing Spring Bunny asked if you could eat: this one is for the «mục lục» shelf. Choose the right explanation."
+      }
     },
     {
       "id": "thu-tu-trong-bai",
@@ -478,6 +626,17 @@
         "answer": {
           "text": "Tên sách, rồi tác giả, rồi nhà xuất bản, cuối cùng là mục lục.",
           "explanation": "Bài đọc đi từ ngoài bìa vào trong: tên sách, tác giả, nhà xuất bản, rồi tới mục lục."
+        },
+        "en": {
+          "guide": [
+            "Each paragraph of the text introduces one part of the book.",
+            "Run down the text from the top and see which part is mentioned first."
+          ],
+          "hint": "The text begins with the biggest line of letters in the middle of the cover.",
+          "answer": {
+            "text": "The title, then the author, then the publisher, and last of all the table of contents.",
+            "explanation": "The text goes from the outside cover to the inside: the title («tên sách»), the author («tác giả»), the publisher («nhà xuất bản»), and then the table of contents («mục lục»)."
+          }
         }
       },
       "feedback": {
@@ -490,9 +649,31 @@
           "Bài đọc mở đầu bằng tên sách, đặt nó lên trước nhé.",
           "Mục lục được nhắc tới ở đoạn cuối cùng cơ mà.",
           "Nhà xuất bản đứng sau tác giả, thử đọc lại hai đoạn đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The right order! Spring Bunny can retell it to his mum without stumbling over a single word.",
+            "From the cover to the table of contents, as tidy as a new bookshelf.",
+            "Mama Bear praises softly: {name} remembers the text faster than Spring Bunny can bounce."
+          ],
+          "wrong": [
+            "The text begins with the title, so put it first.",
+            "The table of contents is mentioned in the very last paragraph.",
+            "The publisher comes after the author. Try reading the first two paragraphs again."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "The order of the four facts",
+        "prompt": "Spring Bunny wants to retell the text to his mum, but he has muddled everything up. Put these four things in the same order as the text introduces each part.",
+        "items": [
+          "The person who writes the book",
+          "A list of parts with page numbers",
+          "The biggest line of letters in the middle of the cover",
+          "The place that prints and publishes the book"
+        ]
+      }
     },
     {
       "id": "cho-dat-ten-sach",
@@ -547,6 +728,17 @@
         "answer": {
           "text": "Tên sách – giữa bìa; tên tác giả – phía trên tên sách; tên nhà xuất bản – sát mép dưới của bìa.",
           "explanation": "Theo bài đọc, tên sách in giữa bìa, tác giả nằm phía trên, còn nhà xuất bản nằm sát mép dưới."
+        },
+        "en": {
+          "guide": [
+            "Look at the cover of the frog book again: the author's name is small at the top, the title is big in the middle, and the publisher's name is at the very bottom.",
+            "Read the first and second paragraphs of the text again."
+          ],
+          "hint": "The title is the biggest line of letters, in the middle of the cover.",
+          "answer": {
+            "text": "Title («tên sách»): in the middle of the cover. Author («tác giả»): above the title. Publisher («nhà xuất bản»): at the very bottom edge of the cover.",
+            "explanation": "According to the text, the title is printed in the middle of the cover, the author is above it, and the publisher is at the very bottom edge."
+          }
         }
       },
       "feedback": {
@@ -559,9 +751,31 @@
           "Tên sách to nhất, nằm ngay giữa bìa cơ.",
           "Tên người viết sách ghi phía trên tên sách, kéo lại nào.",
           "Nhà xuất bản ghi sát mép dưới bìa, thử kéo lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Top, middle, bottom, all in the right place, and the cover is as neat as a drum skin!",
+            "Mama Bear hugs the book to her chest: perfect, just like a printed book.",
+            "From now on, whichever book {name} picks up, the author's name will be found at once."
+          ],
+          "wrong": [
+            "The title is the biggest, right in the middle of the cover.",
+            "The name of the person who wrote the book is above the title. Drag it again.",
+            "The publisher is written at the very bottom edge of the cover. Try dragging again."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Where is the name on the book cover?",
+        "goTo": "Back at the Cushion Reading Nook, Mama Bear holds up the book with the frog",
+        "prompt": "Mama Bear holds the book up high: look at this cover, every line of letters has its own place. Drag each position to the sentence that matches it.",
+        "items": [
+          "at the very bottom edge of the cover",
+          "right in the middle of the cover",
+          "above the title"
+        ]
+      }
     },
     {
       "id": "trang-muc-luc",
@@ -614,6 +828,17 @@
         "answer": {
           "text": "Phần 2 gồm ba mục: ốc sên, bọ rùa và sâu róm.",
           "explanation": "Phần 2 BẠN BÒ DƯỚI GỐC CÂY có Ốc sên (trang 22), Bọ rùa (trang 27), Sâu róm (trang 31)."
+        },
+        "en": {
+          "guide": [
+            "Find the line «Phần 2» on the contents page.",
+            "The entries written right after Part 2 are the entries of that part."
+          ],
+          "hint": "Part 2 is about friends that crawl at the foot of the tree, and none of them can fly.",
+          "answer": {
+            "text": "Part 2 has three entries: snail, ladybird and caterpillar.",
+            "explanation": "Part 2, FRIENDS THAT CRAWL AT THE FOOT OF THE TREE, has Snail (page 22), Ladybird (page 27) and Caterpillar (page 31)."
+          }
         }
       },
       "feedback": {
@@ -626,9 +851,34 @@
           "Chim sẻ, bướm, ong thuộc Phần 1 cơ, bay được mà.",
           "Phần 2 là các bạn bò dưới gốc cây, chỉ chọn những bạn ấy thôi nhé.",
           "Còn sót một bạn nhỏ ở trang 31 đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Here are the three friends of Part 2! Mama Bear licks her lips: is there a tasty snail?",
+            "Not a single flying friend mixed in, {name} reads a contents page like a real librarian.",
+            "Snail, ladybird, caterpillar, all there, none missing and none extra."
+          ],
+          "wrong": [
+            "Sparrow, butterfly and bee belong to Part 1, the ones that can fly.",
+            "Part 2 is the friends that crawl at the foot of the tree, so choose only those.",
+            "You are still missing one little friend, on page 31."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "The contents page flies back",
+        "goTo": "Go to the Reading Room Bookshelf and smooth out the contents page",
+        "prompt": "{name} smooths out the contents page found in the aisle between the shelves. It says: Part 1. FLYING FRIENDS – Sparrow 4, Dragonfly 9, Butterfly 14, Bee 18; Part 2. FRIENDS THAT CRAWL AT THE FOOT OF THE TREE – Snail 22, Ladybird 27, Caterpillar 31. Read the contents and choose every entry that belongs to Part 2.",
+        "choices": [
+          "Sparrow",
+          "Snail",
+          "Butterfly",
+          "Ladybird",
+          "Bee",
+          "Caterpillar"
+        ]
+      }
     },
     {
       "id": "trang-xuong-rong",
@@ -665,6 +915,17 @@
         "answer": {
           "text": "Muốn đọc về bọ rùa, em mở sách tới trang 27.",
           "explanation": "Trong mục lục, ngay cạnh chữ Bọ rùa có ghi số 27."
+        },
+        "en": {
+          "guide": [
+            "Find the words «Bọ rùa» on the contents page.",
+            "The number written beside the entry is the page number."
+          ],
+          "hint": "The ladybird is the second entry in Part 2.",
+          "answer": {
+            "text": "To read about the ladybird, open the book at page 27.",
+            "explanation": "In the contents, right next to the words «Bọ rùa» is the number 27."
+          }
         }
       },
       "feedback": {
@@ -677,9 +938,31 @@
           "Trang 9 là chuồn chuồn cơ, bọ rùa đâu có cánh dài thế.",
           "Trang 31 là sâu róm, nhìn lại số cạnh chữ Bọ rùa nhé.",
           "Dò ngón tay theo dòng Bọ rùa sang tới con số bên cạnh xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Page 27! Spring Bunny flips straight to it, and this time he tears no page.",
+            "Right, a table of contents shows the way faster than running along ten rows of shelves.",
+            "Mama Bear marks page 27 with a young tamarind leaf."
+          ],
+          "wrong": [
+            "Page 9 is the dragonfly, and a ladybird doesn't have wings that long.",
+            "Page 31 is the caterpillar. Look at the number beside «Bọ rùa» again.",
+            "Run your finger along the line «Bọ rùa» to the number beside it."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Which page has the ladybug?",
+        "goTo": "Go to the Book Loft Stairs, where Spring Bunny is bouncing with the book in his arms",
+        "prompt": "Spring Bunny pokes the picture of the ladybird: it tickles, and he giggles! He wants to read more about this tiny creature with red spots. Using the contents, which page do you open to read about the ladybird?",
+        "choices": [
+          "page 9",
+          "page 27",
+          "page 31"
+        ]
+      }
     },
     {
       "id": "nguoi-vat-hay-viec",
@@ -740,6 +1023,17 @@
         "answer": {
           "text": "Chỉ người, chỉ vật: thủ thư, kệ sách, mục lục. Chỉ hoạt động: lật trang, dán nhãn.",
           "explanation": "Thủ thư là người, kệ sách và mục lục là vật; lật trang và dán nhãn là những việc làm."
+        },
+        "en": {
+          "guide": [
+            "A word for a person or thing names someone or an object.",
+            "A word for an action tells what your hands do: try putting the word «đang» in front."
+          ],
+          "hint": "«Đang lật trang» and «đang dán nhãn» sound right, but «đang kệ sách» does not.",
+          "answer": {
+            "text": "People and things: thủ thư, kệ sách, mục lục. Actions: lật trang, dán nhãn.",
+            "explanation": "«Thủ thư» is a person, «kệ sách» and «mục lục» are things; «lật trang» and «dán nhãn» are things you do."
+          }
         }
       },
       "feedback": {
@@ -752,9 +1046,33 @@
           "Thử nói \"đang thủ thư\" xem, nghe có kì không nào?",
           "\"Dán nhãn\" là việc tay mình làm, đưa nó về giỏ hoạt động nhé.",
           "Mục lục là một thứ có thật trong sách, không phải việc làm đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two wicker baskets full of exactly the right words! Spring Bunny puts one on his head.",
+            "People and things on one side, actions on the other, as tidy as a new bookshelf.",
+            "Mama Bear nods three times very gently, which means she is very pleased."
+          ],
+          "wrong": [
+            "Try saying «đang thủ thư». Does that sound odd?",
+            "«Dán nhãn» is something your hands do. Put it in the action basket.",
+            "A table of contents is a real thing in a book, not an action."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Sort five words into two baskets",
+        "goTo": "Back at the Cushion Reading Nook, Mama Bear puts two wicker baskets down on the rug",
+        "prompt": "Five word cards have fallen out of the new book. Mama Bear puts two wicker baskets down on the rug: the first holds words for people or things, the second holds words for actions. Help her sort the five cards into the two baskets.",
+        "items": [
+          "lật trang",
+          "thủ thư",
+          "dán nhãn",
+          "kệ sách",
+          "mục lục"
+        ]
+      }
     },
     {
       "id": "chat-cua-vet",
@@ -902,6 +1220,17 @@
         "answer": {
           "text": "Đàn kiến bên bờ suối, rồi cả đàn bám lên lá, rồi kiến con suýt rơi, cuối cùng lá cập bờ bên kia.",
           "explanation": "Bốn tranh đi theo lời bác Gấu Trúc: đứng bên suối, bám lên lá, giữa dòng suýt rơi, sang tới bờ bên kia."
+        },
+        "en": {
+          "guide": [
+            "The story begins while the ants are still standing on the stream bank.",
+            "The little ant almost falling happens in the middle of the stream, before the leaf reaches the bank."
+          ],
+          "hint": "The picture of the leaf reaching the other bank is the last one.",
+          "answer": {
+            "text": "The ants by the stream, then the whole colony climbs onto the leaf, then the little ant almost falls, and last the leaf reaches the other bank.",
+            "explanation": "The four pictures follow Round Panda's story: standing by the stream, climbing onto the leaf, almost falling in the middle, and arriving at the other bank."
+          }
         }
       },
       "feedback": {
@@ -914,9 +1243,32 @@
           "Kiến chưa thể sang bờ bên kia khi cả đàn còn chưa bám lên lá mà.",
           "Tranh kiến con cảm ơn các bạn là đoạn kết, đặt xuống cuối nhé.",
           "Chuyện mở đầu bằng cảnh đàn kiến đứng bên bờ suối nhìn chiếc lá."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four pictures follow each other like four train carriages! Round Panda puts on his glasses, ready to retell it.",
+            "The right order, a story with a beginning, a middle and a gentle ending.",
+            "Mama Bear stands the four pictures on a stand by the bookshelf, perfectly straight."
+          ],
+          "wrong": [
+            "The ants can't reach the other bank before the whole colony has climbed onto the leaf.",
+            "The picture of the little ant thanking its friends is the ending, so put it last.",
+            "The story begins with the ants standing by the stream, looking at the leaf."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Put four ant pictures in order",
+        "goTo": "Four pictures have fallen at the foot of the Reading Room Bookshelf. Pick them up and put them in order",
+        "prompt": "Spring Bunny has bounced right onto the four pictures of the story Round Panda just told, and the pictures have fallen in a jumble. Put them back in the right order so the whole Reading Room can see them.",
+        "items": [
+          "The little ant almost falls",
+          "The ants by the stream",
+          "The leaf reaches the other bank",
+          "The whole colony climbs onto the leaf"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-hoa-mi",
@@ -1039,5 +1391,9 @@
       "tu-ngu": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "The Bookshelf Crashes Down in the Reading Room",
+    "summary": "Spring Bunny bounces so hard that the bookshelf in Mama Bear's Reading Room topples over, books fly into the aisle and the contents page blows away. {name} picks up the books, reads an article on the parts of a book to learn where each piece of information sits on the cover and inside, then helps Round Panda the librarian arrange pictures and retell the story of the ants crossing the stream."
   }
 }

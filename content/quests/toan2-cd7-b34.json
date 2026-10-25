@@ -94,7 +94,11 @@
         "toan2-cd7-manh-tam-giac",
         "toan2-cd7-manh-tu-giac",
         "toan2-cd7-thuoc-ke"
-      ]
+      ],
+      "en": {
+        "title": "Pick up backdrop pieces",
+        "goTo": "Pick up the pieces of backdrop that flew into the wings of the stage"
+      }
     },
     {
       "id": "hinh-phang-la-gi",
@@ -226,6 +230,17 @@
         "answer": {
           "text": "Tấm a có 4, tấm b có 5, tấm c có 3, tấm d có 5.",
           "explanation": "Đường gấp khúc bốn khúc có 4 đoạn, hình năm cạnh có 5 đoạn, hình tam giác có 3 đoạn, hình chữ nhật cộng một đường chéo là 4 + 1 = 5 đoạn."
+        },
+        "en": {
+          "guide": [
+            "Each side of a shape is a line segment, and so is each part of a broken line.",
+            "A diagonal joining two opposite corners is one more line segment."
+          ],
+          "hint": "A rectangle has 4 sides. How many segments are there once a diagonal is drawn in?",
+          "answer": {
+            "text": "Panel a has 4, panel b has 5, panel c has 3, panel d has 5.",
+            "explanation": "A broken line with four parts has 4 segments, a five-sided shape has 5, a triangle has 3, and a rectangle plus one diagonal makes 4 + 1 = 5 segments."
+          }
         }
       },
       "feedback": {
@@ -238,7 +253,19 @@
           "Thử chạm ngón tay vào từng nét một khi đếm nhé.",
           "Đường chéo của tấm d là một đoạn thẳng nữa, đừng quên.",
           "Hình tam giác có mấy cạnh nhỉ? Mỗi cạnh là một đoạn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four panels counted correctly, and Giraffe nods her long neck in satisfaction.",
+            "You counted the added diagonal too, such sharp eyes.",
+            "The number of segments is written on every panel, so the backdrop can be put together."
+          ],
+          "wrong": [
+            "Try touching each line with your finger as you count.",
+            "The diagonal of panel d is one more line segment, so don't forget it.",
+            "How many sides does a triangle have? Each side is one segment."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -248,7 +275,11 @@
           "b4": "o5"
         }
       },
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "How many line segments in each piece",
+        "prompt": "Four small backdrop panels lie face up on the stage floor. Count how many line segments each panel is made from, then fill in the numbers. Panel a is a broken line with four parts. Panel b is a five-sided shape. Panel c is a triangle. Panel d is a rectangle with one diagonal drawn in."
+      }
     },
     {
       "id": "do-bon-doan-thang",
@@ -339,6 +370,17 @@
         "answer": {
           "text": "EF dài 3 cm, GH dài 6 cm, KL dài 6 cm, RS dài 8 cm.",
           "explanation": "Đọc vạch ở đầu bên phải mỗi thanh: EF chạm vạch 3, GH chạm vạch 6, KL chạm vạch 6, RS chạm vạch 8."
+        },
+        "en": {
+          "guide": [
+            "The 0 mark on the ruler must line up with one end of the plank.",
+            "The number the other end touches is the length of the plank in centimetres."
+          ],
+          "hint": "Plank RS is the longest of the four.",
+          "answer": {
+            "text": "EF is 3 cm long, GH is 6 cm long, KL is 6 cm long, RS is 8 cm long.",
+            "explanation": "Read the mark at the right end of each plank: EF touches 3, GH touches 6, KL touches 6, RS touches 8."
+          }
         }
       },
       "feedback": {
@@ -351,7 +393,19 @@
           "Nhớ bắt đầu đếm từ vạch 0, đừng bắt đầu từ vạch 1.",
           "Một thanh đang bị đọc lệch sang vạch bên cạnh rồi.",
           "Đầu bên phải của thanh chạm vào vạch số mấy?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four planks are measured, and Little Orange Cat writes the numbers with a blue chalk!",
+            "You put the 0 mark in the right place, and not one mark is out.",
+            "Measuring this carefully makes the frame stand perfectly straight."
+          ],
+          "wrong": [
+            "Remember to start counting from the 0 mark, not from 1.",
+            "One plank has been read off the mark next to it.",
+            "What number does the right end of the plank touch?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -361,7 +415,12 @@
           "b4": "o8"
         }
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Ruler measures four wooden bars",
+        "goTo": "Go over to the pile of backdrop frame planks, where Little Orange Cat pulls out a ruler ready to measure",
+        "prompt": "Four planks for the backdrop frame are laid along the ruler, with the left end of each plank on the 0 mark. Read the mark at the right end to find out how many centimetres long each plank is. Plank EF is _ cm, plank GH is _ cm, plank KL is _ cm and plank RS is _ cm."
+      }
     },
     {
       "id": "hai-doan-bang-nhau",
@@ -399,6 +458,17 @@
         "answer": {
           "text": "Thanh GH và thanh KL",
           "explanation": "GH và KL đều dài 6 cm nên hai thanh này dài bằng nhau."
+        },
+        "en": {
+          "guide": [
+            "Look again at the number of centimetres of each plank.",
+            "Two planks with the same measurement are equally long."
+          ],
+          "hint": "Two planks are both 6 cm long.",
+          "answer": {
+            "text": "Plank GH and plank KL",
+            "explanation": "GH and KL are both 6 cm long, so these two planks are equally long."
+          }
         }
       },
       "feedback": {
@@ -411,7 +481,19 @@
           "Hai thanh bằng nhau thì phải có cùng số đo.",
           "Chỉ cần chọn đúng hai thanh, không nhiều hơn.",
           "Thử xem lại: thanh nào dài 6 cm?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two posts stand the same height, firm as two bamboo trees!",
+            "Six centimetres meets six centimetres, a perfect pair.",
+            "Giraffe puts up the two posts in a single beat."
+          ],
+          "wrong": [
+            "Two equal planks must have the same measurement.",
+            "You only need to choose exactly two planks, no more.",
+            "Look again: which planks are 6 cm long?"
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -419,7 +501,18 @@
           "kl"
         ]
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Two bars equally long",
+        "goTo": "Go back to the stage backdrop, where Giraffe waits to put up the two posts",
+        "prompt": "Giraffe needs two planks of the same length to make the two posts that hold up the backdrop. Using the measurements you just found, pick the two planks that are equally long.",
+        "choices": [
+          "EF",
+          "GH",
+          "KL",
+          "RS"
+        ]
+      }
     },
     {
       "id": "doan-dai-nhat-ngan-nhat",
@@ -484,6 +577,17 @@
         "answer": {
           "text": "Dài nhất là RS, ngắn nhất là EF.",
           "explanation": "RS dài 8 cm nên dài nhất, EF dài 3 cm nên ngắn nhất."
+        },
+        "en": {
+          "guide": [
+            "The plank with the biggest measurement is the longest.",
+            "The plank with the smallest measurement is the shortest."
+          ],
+          "hint": "Compare the measurements 3 cm, 6 cm, 6 cm and 8 cm.",
+          "answer": {
+            "text": "The longest is RS, the shortest is EF.",
+            "explanation": "RS is 8 cm long so it is the longest, and EF is 3 cm long so it is the shortest."
+          }
         }
       },
       "feedback": {
@@ -496,7 +600,19 @@
           "Thanh dài nhất là thanh có số đo lớn nhất.",
           "3 cm và 6 cm, số nào bé hơn thì thanh đó ngắn hơn.",
           "Hai ô trống đang bị đổi chỗ cho nhau, thử đổi lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The crossbeam is RS and the support leg is EF, and you didn't mix up a single plank.",
+            "You compare measurements in a flash, and Little Orange Cat is hugely impressed.",
+            "This time nobody picks up the wrong plank thanks to you."
+          ],
+          "wrong": [
+            "The longest plank is the one with the biggest measurement.",
+            "3 cm and 6 cm: whichever number is smaller is the shorter plank.",
+            "The two blanks have swapped places, so try swapping them back."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -504,7 +620,12 @@
           "b2": "ef"
         }
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "The longest bar and the shortest bar",
+        "goTo": "Back at the pile of frame planks, Little Orange Cat lines the planks up in a row",
+        "prompt": "The longest plank will be the crossbeam and the shortest will be the support leg. Using the measurements, fill in the names of those two planks: the longest plank is _ and the shortest plank is _."
+      }
     },
     {
       "id": "tim-hinh-tu-giac",
@@ -616,6 +737,17 @@
         "answer": {
           "text": "Gắn lên phông: hình B và hình D.",
           "explanation": "Hình B và hình D có bốn cạnh nên là hình tứ giác; hình A có năm cạnh, hình C có ba cạnh."
+        },
+        "en": {
+          "guide": [
+            "Count the number of sides of each backdrop piece.",
+            "Only a piece with exactly four sides is a quadrilateral."
+          ],
+          "hint": "One piece has three sides and one piece has five sides, so those two come off.",
+          "answer": {
+            "text": "Put on the backdrop: shape B and shape D.",
+            "explanation": "Shape B and shape D have four sides so they are quadrilaterals; shape A has five sides and shape C has three sides."
+          }
         }
       },
       "feedback": {
@@ -628,7 +760,19 @@
           "Thử đếm lại số cạnh của mảnh có hình ngôi nhà nhé.",
           "Tứ giác thì phải đúng bốn cạnh, không thừa không thiếu.",
           "Còn một mảnh tứ giác đang nằm nhầm nhóm đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two quadrilaterals go up on the backdrop and fit exactly, and Uncle Phong switches on the light to praise you!",
+            "You counted sides without missing a line, a really good backdrop builder.",
+            "The five-sided piece couldn't get past you either."
+          ],
+          "wrong": [
+            "Try counting again the sides of the piece shaped like a house.",
+            "A quadrilateral must have exactly four sides, no more and no fewer.",
+            "One quadrilateral is still sitting in the wrong group."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -638,7 +782,18 @@
           "manh-hinh-d": "nhom-tu-giac-gan-len-phong"
         }
       },
-      "objective": "hinh-phang-tu-giac"
+      "objective": "hinh-phang-tu-giac",
+      "en": {
+        "title": "Which piece is a quadrilateral",
+        "goTo": "Climb up onto the stage lighting rig, where Uncle Phong shines a lamp on four coloured backdrop pieces",
+        "prompt": "Uncle Phong shines his lamp on four multicoloured pieces of backdrop. Any piece that is a quadrilateral goes up on the backdrop, and any piece that is not comes off.",
+        "items": [
+          "Shape A",
+          "Shape B",
+          "Shape C",
+          "Shape D"
+        ]
+      }
     },
     {
       "id": "ba-diem-thang-hang",
@@ -688,6 +843,17 @@
         "answer": {
           "text": "A, E, B; B, F, C; A, I, C; B, I, D.",
           "explanation": "E nằm trên AB nên A, E, B thẳng hàng; F nằm trên BC nên B, F, C thẳng hàng; I nằm trên cả AC và BD nên A, I, C và B, I, D cũng thẳng hàng. Các bộ ba còn lại tạo thành hình tam giác."
+        },
+        "en": {
+          "guide": [
+            "Three points are in a straight line when they all lie on the same side or the same diagonal of the frame.",
+            "Check each side in turn, and then each diagonal, to see which points lie between."
+          ],
+          "hint": "Each side has a point lying between, and each diagonal passes through I.",
+          "answer": {
+            "text": "Answers: A, E, B; B, F, C; A, I, C; B, I, D.",
+            "explanation": "E lies on AB so A, E, B are in a line; F lies on BC so B, F, C are in a line; I lies on both AC and BD so A, I, C and B, I, D are in a line too. The other sets of three make triangles."
+          }
         }
       },
       "feedback": {
@@ -700,7 +866,19 @@
           "Ba điểm phải cùng nằm trên một đường thẳng của khung mới được chọn.",
           "Trên đường chéo còn một bộ ba nữa chưa được chọn.",
           "A, I, B tạo thành một góc chứ không nằm trên một đường thẳng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four sets of three in a line found, and the backdrop frame is rock solid!",
+            "You checked both diagonals, such sharp eyes.",
+            "Even looking down from high above, Giraffe has to agree you're right."
+          ],
+          "wrong": [
+            "Three points must lie on the same straight line of the frame to be chosen.",
+            "There is one more set of three on a diagonal that hasn't been chosen.",
+            "A, I, B make an angle and do not lie on one straight line."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -710,7 +888,21 @@
           "b-f-c"
         ]
       },
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Three points in a line on the frame",
+        "goTo": "Go back to the stage backdrop, where Giraffe points at frame ABCD",
+        "prompt": "The backdrop frame is the quadrilateral ABCD. Point E lies on side AB, point F lies on side BC, and the two diagonals AC and BD meet at point I. Pick every set of three points in a straight line in the frame.",
+        "choices": [
+          "A, E, B",
+          "A, I, B",
+          "A, I, C",
+          "D, I, E",
+          "B, I, D",
+          "B, F, C",
+          "E, F, C"
+        ]
+      }
     },
     {
       "id": "dom-muon-ve",
@@ -806,6 +998,17 @@
         "answer": {
           "text": "Nối E với vạch 6.",
           "explanation": "Đặt E ở vạch 0, chấm F ở vạch 6 rồi nối E với F, ta được đoạn thẳng EF dài 6 cm."
+        },
+        "en": {
+          "guide": [
+            "E is at the 0 mark, and the other end of the segment must be at the 6 mark.",
+            "You only need to join one line segment."
+          ],
+          "hint": "A segment 6 cm long ends at the number 6 mark.",
+          "answer": {
+            "text": "Join E to the 6 mark.",
+            "explanation": "Put E at the 0 mark, put F at the 6 mark and join E to F, and we get the line segment EF, 6 cm long."
+          }
         }
       },
       "feedback": {
@@ -818,7 +1021,19 @@
           "Đoạn cậu nối dài hơn hay ngắn hơn 6 cm nhỉ?",
           "E nằm ở vạch 0, vậy F phải nằm ở vạch số mấy?",
           "Đếm số xăng-ti-mét từ E đến điểm cậu vừa nối xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Segment EF is dead straight and exactly 6 cm, and no line looks like a worm any more!",
+            "Bum the Bear's eyes go round: so with a ruler, drawing is this easy!",
+            "The first outline of the backdrop panel is done."
+          ],
+          "wrong": [
+            "Is the segment you joined longer or shorter than 6 cm?",
+            "E is at the 0 mark, so which mark must F be at?",
+            "Count the centimetres from E to the point you just joined."
+          ]
+        }
       },
       "answer": {
         "edges": [
@@ -828,7 +1043,11 @@
           ]
         ]
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Draw segment EF, 6 cm long",
+        "prompt": "Bum the Bear puts point E on the 0 mark of the ruler and has marked the 4, 6 and 8 marks. Join E to the right mark to make the line segment EF, 6 cm long."
+      }
     },
     {
       "id": "do-dai-doan-bc",
@@ -847,6 +1066,17 @@
         "answer": {
           "text": "8 cm",
           "explanation": "XY + YZ = XZ, tức là 9 + ? = 17, nên YZ dài 17 – 9 = 8 (cm)."
+        },
+        "en": {
+          "guide": [
+            "The two segments XY and YZ join together to make the whole string XZ.",
+            "Take the length of the whole string and subtract the part XY."
+          ],
+          "hint": "9 plus what makes 17?",
+          "answer": {
+            "text": "8 cm",
+            "explanation": "XY + YZ = XZ, which means 9 + ? = 17, so YZ is 17 – 9 = 8 (cm) long."
+          }
         }
       },
       "feedback": {
@@ -859,13 +1089,30 @@
           "Cả sợi dây dài 17 cm, mà đoạn XY đã chiếm 9 cm rồi.",
           "Thử lấy 17 bớt đi 9 xem sao.",
           "YZ chỉ là một phần của sợi dây XZ thôi nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "YZ is 8 cm, and the rest of the string hangs up exactly!",
+            "You found the missing part as fast as flipping a light switch.",
+            "Uncle Phong nods, and the bulbs on the rig flash on and off."
+          ],
+          "wrong": [
+            "The whole string is 17 cm, and the segment XY already takes up 9 cm.",
+            "Try taking 9 away from 17 and see.",
+            "YZ is only a part of the string XZ."
+          ]
+        }
       },
       "answer": {
         "value": 8
       },
       "objective": "hinh-phang-ve-xep",
-      "expression": "17 - 9"
+      "expression": "17 - 9",
+      "en": {
+        "title": "How long is segment YZ",
+        "goTo": "Go up to the stage lighting rig, where Uncle Phong holds the lamp string XZ",
+        "question": "The lamp string XZ is 17 cm long. Point Y lies on the string, and the segment XY is 9 cm long. How many centimetres long is the line segment YZ?"
+      }
     },
     {
       "id": "duong-vien-gap-khuc",
@@ -905,6 +1152,17 @@
         "answer": {
           "text": "Cả đường viền dài 17 cm.",
           "explanation": "Đường gấp khúc STUV gồm ba đoạn ST, TU, UV nên dài 4 + 6 + 7 = 17 (cm)."
+        },
+        "en": {
+          "guide": [
+            "The length of a broken line equals the total of the lengths of its segments.",
+            "Add the first two segments together and then add the last segment."
+          ],
+          "hint": "4 + 6 = 10, then add 7 more.",
+          "answer": {
+            "text": "The whole border is 17 cm long.",
+            "explanation": "The broken line STUV has three segments ST, TU, UV so it is 4 + 6 + 7 = 17 (cm) long."
+          }
         }
       },
       "feedback": {
@@ -917,7 +1175,19 @@
           "Phải cộng đủ cả ba đoạn ST, TU và UV.",
           "Cộng 4 với 6 trước, được bao nhiêu rồi cộng tiếp đoạn cuối.",
           "Đừng bỏ sót đoạn UV ở cuối đường gấp khúc."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Seventeen centimetres of border, and Bum the Bear cuts the ribbon to fit exactly!",
+            "You added three segments in one go, how skilful.",
+            "The broken-line border hugs the backdrop and looks lovely."
+          ],
+          "wrong": [
+            "You must add all three segments ST, TU and UV.",
+            "Add 4 and 6 first, then add on the last segment.",
+            "Don't leave out the segment UV at the end of the broken line."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -927,6 +1197,11 @@
       "objective": "hinh-phang-gap-khuc",
       "expression": {
         "b1": "4 + 6 + 7"
+      },
+      "en": {
+        "title": "Broken-line outline STUV",
+        "goTo": "Go down to the steps up to the stage, where Bum the Bear hugs a roll of ribbon",
+        "prompt": "Giraffe measures the broken-line border STUV on the backdrop: segment ST is 4 cm long, segment TU is 6 cm long, segment UV is 7 cm long. Work out how many centimetres long the whole border is: 4 + 6 + 7 = _ (cm)."
       }
     },
     {
@@ -965,6 +1240,17 @@
         "answer": {
           "text": "Thẻ A.",
           "explanation": "Mỗi nhóm lặp lại theo thứ tự tam giác, tròn, vuông, thoi. Ô trống nằm sau hình tròn nên là hình vuông, tức thẻ A."
+        },
+        "en": {
+          "guide": [
+            "Find the group of shapes that repeats again and again along the strip.",
+            "The empty box comes after the circle and before the diamond."
+          ],
+          "hint": "Each group has four shapes, always in the same order.",
+          "answer": {
+            "text": "Card A.",
+            "explanation": "Each group repeats in the order triangle, circle, square, diamond. The empty box comes after the circle so it is a square, which is card A."
+          }
         }
       },
       "feedback": {
@@ -977,12 +1263,35 @@
           "Nhìn hai nhóm đầu: sau hình tròn là hình gì?",
           "Cả dải lặp lại theo từng nhóm bốn hình đấy.",
           "Hình thoi đã đứng ngay sau ô trống rồi, ô trống phải là hình khác."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The square goes in the right place, and the decorative strip runs on without a break!",
+            "You spotted the repeating pattern at once, and Giraffe keeps praising you.",
+            "Giraffe sticks the square in the empty box, fitting like a print."
+          ],
+          "wrong": [
+            "Look at the first two groups: what comes after the circle?",
+            "The whole strip repeats in groups of four shapes.",
+            "The diamond already stands right after the empty box, so the empty box must be a different shape."
+          ]
+        }
       },
       "answer": {
         "choice": "a"
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Which shape fills the gap",
+        "goTo": "Back at the stage backdrop, one box is still empty on the decorative strip",
+        "prompt": "The decorative strip on the backdrop repeats in groups of four shapes: triangle, circle, square, diamond; then triangle, circle, square, diamond again; the third group has only triangle, circle, an empty box, diamond. The shape cards: A is a square, B is a diamond, C is a triangle, D is a circle. Choose the card to put in the empty box.",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
     },
     {
       "id": "ghep-nua-o-vuong",
@@ -1001,6 +1310,17 @@
         "answer": {
           "text": "7 mảnh",
           "explanation": "Hai ô vuông cần 2 + 2 = 4 mảnh hình A, ba nửa ô vuông cần thêm 3 mảnh nữa, tất cả 4 + 3 = 7 mảnh."
+        },
+        "en": {
+          "guide": [
+            "Each square can be made from 2 pieces of shape A.",
+            "Each half-square is exactly 1 piece of shape A."
+          ],
+          "hint": "Two squares need 4 pieces, then add the three half-squares.",
+          "answer": {
+            "text": "7 pieces",
+            "explanation": "Two squares need 2 + 2 = 4 pieces of shape A, and three half-squares need 3 more pieces, so 4 + 3 = 7 pieces in all."
+          }
         }
       },
       "feedback": {
@@ -1013,13 +1333,30 @@
           "Mỗi ô vuông cần hai mảnh tam giác nhỏ nhé.",
           "Đừng quên ba nửa ô vuông xếp quanh hai ô vuông.",
           "Đếm lại: hai ô vuông và ba nửa ô vuông."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Seven triangle pieces cover shape B completely, and Uncle Phong tries them and finds they fit exactly!",
+            "You remembered to add all three half-squares, and your calculation needs no correcting.",
+            "Uncle Phong puts the last piece in place and shape B lights up under the lamp."
+          ],
+          "wrong": [
+            "Each square needs two small triangle pieces.",
+            "Don't forget the three half-squares arranged around the two squares.",
+            "Count again: two squares and three half-squares."
+          ]
+        }
       },
       "answer": {
         "value": 7
       },
       "objective": "hinh-phang-ve-xep",
-      "expression": "2 + 2 + 1 + 1 + 1"
+      "expression": "2 + 2 + 1 + 1 + 1",
+      "en": {
+        "title": "How many small triangle pieces",
+        "goTo": "Stop by the stage lighting rig, where Uncle Phong arranges triangle pieces into a pine tree",
+        "question": "Shape A is a triangle piece whose area is half of a square. Shape B is made from two squares side by side and three half-squares around them. How many pieces of shape A are needed to cover shape B completely?"
+      }
     },
     {
       "id": "phieu-ve-hinh",
@@ -1107,6 +1444,17 @@
         "answer": {
           "text": "Có 8 hình tam giác.",
           "explanation": "Hai đường chéo cho 4 tam giác nhỏ. Hai tam giác nhỏ kề nhau ghép thành một tam giác lớn hơn, có 4 cặp như vậy. Tất cả là 4 + 4 = 8 tam giác."
+        },
+        "en": {
+          "guide": [
+            "Count the small triangles first.",
+            "Then count the bigger triangles, each made of two small triangles side by side."
+          ],
+          "hint": "There are 4 small triangles, and 4 pairs of neighbouring small triangles make bigger triangles.",
+          "answer": {
+            "text": "There are 8 triangles.",
+            "explanation": "The two diagonals make 4 small triangles. Two neighbouring small triangles join to make a bigger triangle, and there are 4 such pairs. In all that is 4 + 4 = 8 triangles."
+          }
         }
       },
       "feedback": {
@@ -1119,13 +1467,36 @@
           "Còn những tam giác ghép từ hai tam giác nhỏ nữa đấy.",
           "Gấu Bum cũng đếm thiếu như thế, cùng đếm lại nào!",
           "Có 4 tam giác nhỏ, đếm thêm các tam giác ghép từ hai hình kề nhau."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eight triangles! {name} wins, and the velvet curtain goes up with a cheer!",
+            "Bum the Bear could only count four, and you counted far more with the joined triangles.",
+            "You counted small triangles and joined triangles alike, a real geometry expert."
+          ],
+          "wrong": [
+            "There are still the triangles made from two small triangles.",
+            "Bum the Bear missed some like that too, so let's count again together!",
+            "There are 4 small triangles, so count the triangles made of two neighbouring shapes too."
+          ]
+        }
       },
       "answer": {
         "choice": "c-8"
       },
       "objective": "hinh-phang-nhan-dien",
-      "expression": "4 + 4"
+      "expression": "4 + 4",
+      "en": {
+        "title": "Triangle counting contest with Bum the Bear",
+        "goTo": "Out to the steps up to the stage, where Bum the Bear challenges {name} to count triangles",
+        "prompt": "The final challenge: Bum the Bear challenges {name} to count the triangles at the top of the backdrop, and whoever counts correctly gets to pull the curtain! At the top of the backdrop is a square, and its two diagonals divide it into four small triangles. Choose the number of triangles in the picture.",
+        "choices": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ]
+      }
     },
     {
       "id": "huy-hieu-dung-phong",
@@ -1157,5 +1528,9 @@
       "hinh-phang": 2,
       "logic": 1
     }
+  },
+  "en": {
+    "title": "Backdrop Made of Flat Shapes",
+    "summary": "Bum the Bear trips and sends the great hall's stage backdrop, made of flat shapes, crashing down. {name} helps Giraffe, Little Orange Cat and Uncle Phong count line segments, measure, find quadrilaterals and three points in a line, and put the backdrop back up for the castle's end-of-term talent show."
   }
 }

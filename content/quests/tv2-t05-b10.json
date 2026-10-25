@@ -112,7 +112,11 @@
         "tv2-t05-thuoc-ke",
         "tv2-t05-cai-keo",
         "tv2-t05-cap-sach"
-      ]
+      ],
+      "en": {
+        "title": "Pick up what Hurry Bunny dropped",
+        "goTo": "Pick up what Hurry Bunny dropped along the stairs"
+      }
     },
     {
       "id": "cach-biet-mon-hoc",
@@ -163,6 +167,17 @@
         "answer": {
           "text": "Chiều thứ Ba có ba tiết học.",
           "explanation": "Chiều thứ Ba có Tiếng Anh, Hoạt động trải nghiệm và Tự học: đủ 3 tiết."
+        },
+        "en": {
+          "guide": [
+            "Find the Thứ Ba (Tuesday) column, then look at the BUỔI CHIỀU (afternoon) part.",
+            "Count the rows with a subject name in the Tuesday column."
+          ],
+          "hint": "The afternoon lessons are numbered from 1; the last row of Tuesday still has a subject.",
+          "answer": {
+            "text": "Tuesday afternoon has three lessons.",
+            "explanation": "Tuesday afternoon has Tiếng Anh, Hoạt động trải nghiệm and Tự học: three lessons in all."
+          }
         }
       },
       "feedback": {
@@ -175,9 +190,31 @@
           "Đếm lại các hàng buổi chiều của thứ Ba nhé, Thỏ Vội cũng đếm hụt một hàng.",
           "Buổi sáng chưa tính đâu, chiều nay thôi, kẻo đói bụng giữa chừng.",
           "Dò ngón tay dọc cột Thứ Ba từ phần BUỔI CHIỀU trở xuống, chậm như rùa cũng được."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, Tuesday afternoon has 3 lessons! Hurry Bunny counts again on three toes to be sure.",
+            "Corn Bear hugs his notebook and hurries over, nodding: right column, right rows, well done!",
+            "Spot on, from period 1 to period 3, not one too many or too few."
+          ],
+          "wrong": [
+            "Count the rows of Tuesday afternoon again. Hurry Bunny missed a row too.",
+            "The morning doesn't count, only this afternoon, or you'll get hungry halfway through.",
+            "Run your finger down the Tuesday column from the afternoon part, as slow as a tortoise if you like."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Read the timetable in the hallway",
+        "goTo": "Go to the timetable board, where the class schedule is pinned up in the middle of the corridor",
+        "question": "Look at the board, find the Tuesday column and follow it down to the afternoon.\nOn Tuesday afternoon, how many lessons does Sparrow Class have?",
+        "choices": [
+          "2 lessons",
+          "3 lessons",
+          "4 lessons"
+        ]
+      }
     },
     {
       "id": "mon-hoc-thu-nam",
@@ -262,6 +299,17 @@
         "answer": {
           "text": "Có vào thứ Năm: Toán, Tiếng Việt, Tiếng Anh, Giáo dục thể chất, Tự học.",
           "explanation": "Cột Thứ Năm ghi Toán, Tiếng Việt, Tiếng Anh ở buổi sáng; Giáo dục thể chất và Tự học ở buổi chiều."
+        },
+        "en": {
+          "guide": [
+            "Find the Thứ Năm (Thursday) column on the board.",
+            "Read every lesson in that column, morning and afternoon."
+          ],
+          "hint": "Thursday has five different subjects; Mĩ thuật (Art) is on another day.",
+          "answer": {
+            "text": "On Thursday: Toán, Tiếng Việt, Tiếng Anh, Giáo dục thể chất, Tự học.",
+            "explanation": "The Thursday column lists Toán, Tiếng Việt and Tiếng Anh in the morning; Giáo dục thể chất and Tự học in the afternoon."
+          }
         }
       },
       "feedback": {
@@ -274,9 +322,25 @@
           "Có một môn đang ngồi nhầm giỏ, như Thỏ Vội ngồi nhầm lớp hôm trước ấy.",
           "Mĩ thuật học vào ngày nào nhỉ? Liếc sang các cột khác xem.",
           "Đừng bỏ quên các tiết buổi chiều của thứ Năm, chúng buồn đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Hurry Bunny cheers: so I need my maths book, my Vietnamese book and my PE kit, but no carrot!",
+            "All five Thursday subjects, as good as a bag-packing expert.",
+            "Not one afternoon subject missed. Corn Bear will have to write {name}'s name in the calendar book."
+          ],
+          "wrong": [
+            "One subject is sitting in the wrong basket, like Hurry Bunny sitting in the wrong class the other day.",
+            "Which day is Mĩ thuật on? Glance across at the other columns.",
+            "Don't forget Thursday's afternoon lessons, they would be sad."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "What do we study today, Thursday?",
+        "prompt": "Hurry Bunny clutches his ears: “Today is Thursday, which books do I pack? Not my pillow, surely?”\nUsing the timetable, which subjects are taught on Thursday and which are not?\nDrag each subject into the right basket."
+      }
     },
     {
       "id": "kho-khan-khi-thieu-tkb",
@@ -325,6 +389,17 @@
         "answer": {
           "text": "Không nhớ ngày mai học những môn nào; Soạn thừa hoặc thiếu sách vở; Quên đồ dùng cho tiết cần dùng.",
           "explanation": "Thời khoá biểu cho biết môn học của từng buổi, nên thiếu nó em dễ quên môn, soạn nhầm sách vở và đồ dùng. Đường tới trường hay bạn chơi cùng thì tờ giấy ấy không giúp được."
+        },
+        "en": {
+          "guide": [
+            "Think about what a timetable tells you.",
+            "Remember Hurry Bunny's muddled morning today."
+          ],
+          "hint": "The three right answers are all about subjects and school books.",
+          "answer": {
+            "text": "Not remembering which subjects are on tomorrow; packing too many or too few books; forgetting the things you need for a lesson.",
+            "explanation": "A timetable tells you each session's subjects, so without it you easily forget subjects and pack the wrong books and equipment. It can't help with the way to school or with friends to play with."
+          }
         }
       },
       "feedback": {
@@ -337,9 +412,33 @@
           "Thời khoá biểu đâu phải tấm bản đồ, nó đâu chỉ đường tới trường.",
           "Còn sót một chuyện về đồ dùng học tập, như cái gối của Thỏ Vội ấy.",
           "Lựa chọn nào chẳng dính gì đến môn học nhỉ? Gạt nó ra."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three, exactly like Hurry Bunny's muddled morning.",
+            "Hurry Bunny sticks out his tongue: I had all three of those, first prize!",
+            "Not one choice too many. Hurry Bunny pats his feet together: thump, thump."
+          ],
+          "wrong": [
+            "A timetable is not a map, it doesn't show the way to school.",
+            "You've missed one about school things, like Hurry Bunny's pillow.",
+            "Which choice has nothing to do with subjects? Leave that one out."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "What if there is no timetable?",
+        "goTo": "Back to the corridor bench, where Hurry Bunny is scratching his ears",
+        "prompt": "Hurry Bunny scratches his ears: suppose the timetable blew away, this morning I'd have all those troubles, except getting lost. Pick everything that could happen.",
+        "choices": [
+          "Not remembering which subjects are on tomorrow",
+          "Not finding the way to the school gate",
+          "Packing too many or too few books",
+          "Having nobody to play with at break",
+          "Forgetting the things you need for a lesson"
+        ]
+      }
     },
     {
       "id": "hoi-dap-tiet-mi-thuat",
@@ -366,6 +465,17 @@
         "answer": {
           "text": "Tiết Mĩ thuật học vào thứ Ba.",
           "explanation": "Ô Mĩ thuật nằm ở tiết 2 buổi sáng, trong cột Thứ Ba."
+        },
+        "en": {
+          "guide": [
+            "Find the cell with the word Mĩ thuật (Art) on the board.",
+            "Look at the top of the column that holds that cell to see which day it is."
+          ],
+          "hint": "Art is period 2 of a morning early in the week.",
+          "answer": {
+            "text": "Art is on Tuesday (Thứ Ba).",
+            "explanation": "The Mĩ thuật cell is in period 2 of the morning, in the Thứ Ba (Tuesday) column."
+          }
         }
       },
       "feedback": {
@@ -378,9 +488,27 @@
           "Hôm nay thứ Năm đâu có tiết Mĩ thuật, bút màu cứ cất trong hộp đã.",
           "Dò lại hàng tiết 2 của buổi sáng, chỗ có chữ Mĩ thuật ấy.",
           "Tìm chữ Mĩ thuật trước, rồi ngẩng lên đọc tên cột phía trên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tuesday, exactly! Corn Bear puts a golden corn kernel on the Tuesday square as a marker.",
+            "No wonder Hurry Bunny needs crayons on Tuesday but keeps asking to pack his pillow.",
+            "Smooth questions and answers. Hurry Bunny listens and remembers… at least until lunch."
+          ],
+          "wrong": [
+            "There is no Art lesson on Thursday, so keep the crayons in their box for now.",
+            "Check the row for period 2 of the morning again, where the word Mĩ thuật is.",
+            "Find the word Mĩ thuật first, then look up to read the column name above it."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Which day is Art class?",
+        "goTo": "Go to the duty desk, where Corn Bear has spread out the October calendar",
+        "prompt": "Corn Bear spreads out the school's October calendar, as big as a little blanket, and starts a game of questions and answers.\nLook at Sparrow Class's timetable and find which day each special subject falls on.",
+        "question": "Your turn, {name}: on which weekday is the Sparrow class's art period? Tap the right weekday on the calendar page."
+      }
     },
     {
       "id": "hoi-dap-cung-tho-ti",
@@ -479,6 +607,17 @@
         "answer": {
           "text": "thước kẻ; cái kéo; cặp sách",
           "explanation": "Âm cờ trước e, ê, i viết là k (kẻ, kéo); trước a, ă, â, o, ô, ơ, u, ư viết là c (cái, cặp)."
+        },
+        "en": {
+          "guide": [
+            "Say aloud the name of each thing you picked up: ruler, scissors, school bag.",
+            "The sound “c” before e, ê, i is written with k; before other vowels it is written with c."
+          ],
+          "hint": "Before e write k, as in “kẻ” and “kéo”; before ă write c, as in “cặp”.",
+          "answer": {
+            "text": "Spellings: thước kẻ; cái kéo; cặp sách",
+            "explanation": "The “c” sound before e, ê, i is written k (kẻ, kéo); before a, ă, â, o, ô, ơ, u, ư it is written c (cái, cặp)."
+          }
         }
       },
       "feedback": {
@@ -491,9 +630,26 @@
           "Chữ k chỉ thích đi với e, ê, i thôi, thử lại nhé.",
           "Có một nhãn đang nhầm c với k, nhãn ấy đỏ mặt rồi kìa.",
           "Đọc chậm từng tiếng, xem âm đầu đứng trước vần gì."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every label is spelled right! Scissors Crab sticks them on in a flurry, nearly onto his own shell.",
+            "{name} knows the c and k rule as firmly as Scissors Crab's two claws.",
+            "Three labels in a row, as neat as the teacher's writing on the board."
+          ],
+          "wrong": [
+            "The letter k only likes to go with e, ê, i. Try again.",
+            "One label has mixed up c and k, and it's blushing.",
+            "Read slowly, one word at a time, and see which vowel comes after the first sound."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Label the things you picked up",
+        "goTo": "Take the three things to the craft corner at the end of the corridor, where Scissors Crab is snipping labels",
+        "prompt": "The three things {name} picked up are still dusty from the stairs. Hurry Bunny wants to stick a name label on each one, so that next time something goes missing, whoever finds it knows where to return it.\nChoose the correct spelling for each label: which names are written with c and which with k?"
+      }
     },
     {
       "id": "hai-chan-troi",
@@ -590,6 +746,17 @@
         "answer": {
           "text": "Đêm nay trăng sáng rõ / Chim sâu ngủ trên cành / Sớm mai em đến trường / Chân bước vui, chào cô!",
           "explanation": "Các tiếng cần điền lần lượt là trăng, Chim, trường, Chân, chào."
+        },
+        "en": {
+          "guide": [
+            "Read aloud each word with a blank.",
+            "Moonlight (trăng), a bird (chim), the way to school (trường) are words you meet every day."
+          ],
+          "hint": "The first letter of each line must be a capital: Tr or Ch.",
+          "answer": {
+            "text": "The poem: Đêm nay trăng sáng rõ / Chim sâu ngủ trên cành / Sớm mai em đến trường / Chân bước vui, chào cô!",
+            "explanation": "The words to fill in are, in order, trăng, Chim, trường, Chân, chào."
+          }
         }
       },
       "feedback": {
@@ -602,9 +769,26 @@
           "Ánh trăng viết bằng tr, còn tiếng chim thì đi với chữ gì?",
           "Chỗ trống đầu dòng cần chữ viết hoa, như đội mũ ấy.",
           "Một tiếng đang lưỡng lự giữa ch và tr, đọc lại thật to nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The lines are clear again, bright as the moonlight in the poem!",
+            "Corn Bear holds his book up high: trăng, chim, trường, chân, chào, not a letter wrong!",
+            "{name}'s ears can tell ch from tr even better than a rabbit's."
+          ],
+          "wrong": [
+            "Moonlight is written with tr, but which letters go with the word for a bird?",
+            "A blank at the start of a line needs a capital letter, like wearing a hat.",
+            "One word is hesitating between ch and tr. Read it aloud again."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "The poem with smudged words",
+        "goTo": "Turn to the duty desk, where Corn Bear is reciting poetry about the sun",
+        "prompt": "Corn Bear recites a few lines about a moonlit night and going to school for the whole class, but a spilled cup has smudged some letters, as if someone had rubbed them out in a hurry.\nChoose ch or tr to fill in the blanks."
+      }
     },
     {
       "id": "tim-tu-trong-tranh",
@@ -695,6 +879,17 @@
         "answer": {
           "text": "Chỉ sự vật: chiếc trống, quyển truyện, bình hoa, hộp bút, sợi dây thừng. Chỉ hoạt động: đọc truyện, tưới cây, vẽ tranh, kéo co, xếp hàng, đánh trống.",
           "explanation": "Chiếc trống, quyển truyện, bình hoa… là tên đồ vật; đọc truyện, tưới cây, đánh trống… là việc các bạn làm trong tranh."
+        },
+        "en": {
+          "guide": [
+            "A word for a thing names a person, an object, a plant or an animal.",
+            "A word for an action tells what the friends are doing."
+          ],
+          "hint": "Try putting “đang” (is/are doing) before the word: if it sounds natural, it is an action word.",
+          "answer": {
+            "text": "Things: chiếc trống, quyển truyện, bình hoa, hộp bút, sợi dây thừng. Actions: đọc truyện, tưới cây, vẽ tranh, kéo co, xếp hàng, đánh trống.",
+            "explanation": "Chiếc trống, quyển truyện, bình hoa… name objects; đọc truyện, tưới cây, đánh trống… are what the friends do in the pictures."
+          }
         }
       },
       "feedback": {
@@ -707,9 +902,26 @@
           "Có thẻ gọi tên đồ vật đang lạc sang nhóm hoạt động.",
           "Thử nói “các bạn đang…” trước từ đó xem có xuôi không.",
           "Quyển truyện và đọc truyện giống chữ nhưng khác nhóm, khéo nhầm như Thỏ Vội đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two neat groups, like a newly packed bag compartment!",
+            "“Chiếc trống” is a thing but “đánh trống” is an action, and {name} was not fooled!",
+            "Corn Bear says {name} studies pictures even more closely than an owl."
+          ],
+          "wrong": [
+            "A card naming an object has wandered into the action group.",
+            "Try saying “các bạn đang…” (the friends are…) before the word and see if it sounds right.",
+            "“Quyển truyện” and “đọc truyện” look alike but belong to different groups, an easy mix-up just like Hurry Bunny's."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Find words in five pictures",
+        "goTo": "Go to the timetable board, where five pictures hang all around",
+        "prompt": "Corn Bear stands on tiptoe to hang five pictures of a school session on the corridor board: reading a story, watering plants in the yard, drawing, playing tug of war and lining up for class.\nLook at the pictures and pick out the words that name things and the words that tell what the friends are doing."
+      }
     },
     {
       "id": "dat-cau-hoat-dong",
@@ -755,6 +967,17 @@
         "answer": {
           "text": "Chiều thứ Sáu, cả lớp đọc truyện trong phòng đọc.",
           "explanation": "Câu có từ chỉ hoạt động “đọc truyện”, nói rõ lúc nào, ai làm và làm ở đâu."
+        },
+        "en": {
+          "guide": [
+            "The card with the capital letter begins the sentence.",
+            "The card with the full stop closes it."
+          ],
+          "hint": "A telling sentence: when, who, what they do, where.",
+          "answer": {
+            "text": "On Friday afternoon, the whole class read stories in the reading room.",
+            "explanation": "The sentence has the action phrase “đọc truyện” and says when, who does it and where."
+          }
         }
       },
       "feedback": {
@@ -767,9 +990,32 @@
           "Thẻ nào có chữ viết hoa nhỉ? Nó phải chạy lên đầu hàng.",
           "Dấu chấm đang đi lạc, nó chỉ thích đứng cuối câu thôi.",
           "Đọc thử câu vừa xếp xem có xuôi tai không, hay nghe như Thỏ Vội nói vội."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A rounded sentence! Hurry Bunny reads it so loudly that the whole corridor jumps.",
+            "Well arranged: when, who, what, where, all four.",
+            "The sentence about the activity is done and the word cards stop hopping about."
+          ],
+          "wrong": [
+            "Which card has a capital letter? It must run to the front of the line.",
+            "The full stop has wandered off, and it only likes standing at the end.",
+            "Read your sentence aloud to hear if it sounds right, or whether it sounds like Hurry Bunny talking in a rush."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong",
+      "en": {
+        "title": "Build sentences about activities",
+        "goTo": "Go to the corridor bench, where Hurry Bunny is skipping and sending the word cards flying",
+        "prompt": "Hurry Bunny picked the phrase đọc truyện (reading a story), then bounced with excitement and sent the word cards flying everywhere. Help him arrange them into a sentence about an activity.",
+        "items": [
+          "read stories",
+          "in the reading room.",
+          "On Friday afternoon,",
+          "the whole class"
+        ]
+      }
     },
     {
       "id": "chim-vanh-khuyen",
@@ -851,6 +1097,17 @@
         "answer": {
           "text": "Trong vườn đêm hè mát / Dế nhỏ gảy đàn ca / Em nghe mà vui lắm / Mai dậy sớm đi học",
           "explanation": "Các tiếng cần điền lần lượt là vườn, Dế, vui, dậy."
+        },
+        "en": {
+          "guide": [
+            "Read the whole line of the poem before choosing a letter.",
+            "Think what the word means: a garden, a cricket, joy, waking up."
+          ],
+          "hint": "The cricket is written with d, while the place where plants grow is written with v.",
+          "answer": {
+            "text": "The poem: Trong vườn đêm hè mát / Dế nhỏ gảy đàn ca / Em nghe mà vui lắm / Mai dậy sớm đi học",
+            "explanation": "The words to fill in are, in order, vườn, Dế, vui, dậy."
+          }
         }
       },
       "feedback": {
@@ -863,9 +1120,25 @@
           "Vui và vườn không mở đầu bằng cùng một chữ với dế đâu.",
           "Ô đầu dòng thứ hai cần chữ viết hoa đứng ngay ngắn.",
           "Tiếng thức dậy mở đầu bằng chữ gì? Ngó lại ô cuối nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The cricket's song rings out as if to thank {name}!",
+            "Vườn, Dế, vui, dậy: {name} got them all right, with ears sharp as a cricket's.",
+            "Hurry Bunny recites the whole poem smoothly, and this time forgets no word."
+          ],
+          "wrong": [
+            "“Vui” and “vườn” don't begin with the same letter as “dế”.",
+            "The blank at the start of the second line needs a standing-tall capital letter.",
+            "What letter does the word for waking up begin with? Look at the last blank again."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "The little cricket poem",
+        "prompt": "Outside the corridor window, a little cricket is strumming a greeting to {name}. Hurry Bunny knows a poem about this cricket, or rather, he knows… most of it, because he has forgotten a few letters.\nChoose v or d to fill in the blanks."
+      }
     },
     {
       "id": "hua-voi-voi-bao",
@@ -944,6 +1217,17 @@
         "answer": {
           "text": "10 giờ 30 phút",
           "explanation": "Kim ngắn đã qua số 10, kim dài chỉ số 6: đồng hồ chỉ 10 giờ 30 phút, giờ các bạn tập thể dục."
+        },
+        "en": {
+          "guide": [
+            "The short hand shows the hour and the long hand shows the minutes.",
+            "The long hand pointing to 6 means 30 minutes."
+          ],
+          "hint": "The short hand sits between 10 and 11.",
+          "answer": {
+            "text": "10:30 (half past ten)",
+            "explanation": "The short hand has passed 10 and the long hand points at 6: the clock shows half past ten, the time for exercise."
+          }
         }
       },
       "feedback": {
@@ -956,9 +1240,25 @@
           "Kim ngắn đã đi qua số 10 chưa nhỉ?",
           "Nhìn lại kim dài đang chỉ vào số mấy, nó dài nên dễ thấy lắm.",
           "Kim ngắn là giờ, kim dài là phút, đừng để hai kim đổi việc cho nhau."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past ten, right on time to line up, and Hurry Bunny has already dashed to the yard!",
+            "Corn Bear rings his brass bell with a clang: {name} reads clocks well.",
+            "The long hand on 6 means 30 minutes, spot on and no adjustment needed."
+          ],
+          "wrong": [
+            "Has the short hand gone past 10 yet?",
+            "Look again at where the long hand points, it's long so easy to spot.",
+            "The short hand is the hour and the long hand is the minutes, so don't let them swap jobs."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "The clock for exercise time",
+        "prompt": "Corn Bear tells about a day at school for a friend called Hoa, and every picture has a clock. Hurry Bunny whispers: Hoa surely never packs her pillow by mistake.\nIn picture 3, the friends line up in the yard for exercise. What time does the clock in the picture show?"
+      }
     },
     {
       "id": "ke-mot-ngay-cua-nam",
@@ -1099,5 +1399,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Hurry Bunny Packs the Wrong Books",
+    "summary": "On Thursday morning Hurry Bunny races into the corridor with an empty bag and a carrot instead of a ruler. {name} dashes along the corridor: reads the timetable pinned up on the board, asks Corn Bear who keeps the school calendar at the duty desk, asks Scissors Crab in the craft corner to cut labels for school things, and helps Hurry Bunny pack a neat bag."
   }
 }

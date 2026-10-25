@@ -95,7 +95,11 @@
         "toan2-cd2-chia-khoa-do",
         "toan2-cd2-chia-khoa-xanh",
         "toan2-cd2-chia-khoa-vang"
-      ]
+      ],
+      "en": {
+        "title": "Three small keys",
+        "goTo": "Find the three little keys Battery Penguin dropped around the Greenhouse Door"
+      }
     },
     {
       "id": "vet-on-bai",
@@ -356,6 +360,17 @@
         "answer": {
           "text": "a) 8 + 3 = 11; a) 7 + 6 = 13; a) 9 + 5 = 14; a) 6 + 9 = 15; a) 9 + 3 = 12; a) 7 + 4 = 11; b) 12 – 3 = 9; b) 15 – 8 = 7; b) 11 – 5 = 6; b) 14 – 9 = 5; b) 13 – 6 = 7; b) 17 – 8 = 9",
           "explanation": "Cột a: 11, 13, 14, 15, 12, 11. Cột b: 9, 7, 6, 5, 7, 9."
+        },
+        "en": {
+          "guide": [
+            "Column a is addition through 10, column b is subtraction through 10.",
+            "When adding, make 10 first; when subtracting, subtract down to 10 first."
+          ],
+          "hint": "6 + 9: 6 + 4 = 10, and 5 more is 15.",
+          "answer": {
+            "text": "Answers: a) 8 + 3 = 11; a) 7 + 6 = 13; a) 9 + 5 = 14; a) 6 + 9 = 15; a) 9 + 3 = 12; a) 7 + 4 = 11; b) 12 – 3 = 9; b) 15 – 8 = 7; b) 11 – 5 = 6; b) 14 – 9 = 5; b) 13 – 6 = 7; b) 17 – 8 = 9",
+            "explanation": "Column a: 11, 13, 14, 15, 12, 11. Column b: 9, 7, 6, 5, 7, 9."
+          }
         }
       },
       "feedback": {
@@ -368,7 +383,19 @@
           "Cột a là cộng, cột b là trừ, đừng lẫn hai cột nhé.",
           "Gom đủ 10 trước rồi cộng phần còn lại.",
           "Một kết quả lệch, Pin đang nghiêng đầu chờ cậu sửa."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Whatever Pin reads, you keep up, impressive!",
+            "All twelve calculations are right, and Pin scratches all twelve tallies.",
+            "Pin checks both columns again and nods: not a single slip."
+          ],
+          "wrong": [
+            "Column a is adding and column b is subtracting, don't mix up the columns.",
+            "Make 10 first, then add the rest.",
+            "One result is off, and Pin is tilting his head, waiting for you to fix it."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -400,7 +427,11 @@
         "b11": "13 - 6",
         "b12": "17 - 8"
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Two columns of mental maths",
+        "prompt": "Battery Penguin reads out one calculation at a time and scratches a tally in his notebook after each. Column a is all additions, column b is all subtractions. Work them out in your head along with him."
+      }
     },
     {
       "id": "chim-bo-cau-ve-chuong",
@@ -456,6 +487,17 @@
         "answer": {
           "text": "Chuồng 14: 9 + 5, 6 + 8; chuồng 8: 15 – 7, 14 – 6; chuồng 12: 3 + 9",
           "explanation": "9 + 5 = 14, 15 – 7 = 8, 6 + 8 = 14, 14 – 6 = 8, 3 + 9 = 12."
+        },
+        "en": {
+          "guide": [
+            "Work out the calculation on each bird.",
+            "Each bird goes into the coop showing its result; the sample bird 7 + 5 is already in coop 12."
+          ],
+          "hint": "9 + 5 and 6 + 8 both equal 14.",
+          "answer": {
+            "text": "Coop 14: 9 + 5, 6 + 8; coop 8: 15 – 7, 14 – 6; coop 12: 3 + 9",
+            "explanation": "9 + 5 = 14, 15 – 7 = 8, 6 + 8 = 14, 14 – 6 = 8, 3 + 9 = 12."
+          }
         }
       },
       "feedback": {
@@ -468,7 +510,19 @@
           "Có chú bồ câu đang gõ nhầm cửa chuồng hàng xóm.",
           "Xem kĩ dấu cộng hay dấu trừ trên mỗi chú chim.",
           "Hai chú chim cùng về chuồng 8 đấy, tìm lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Coo coo coo! The whole flock tucks into their warm coops.",
+            "Not one bird has landed on the wrong roof, and Grandpa Sáu strokes his beard, chuckling.",
+            "You get addition and subtraction right every time."
+          ],
+          "wrong": [
+            "One pigeon is knocking on a neighbour's coop door.",
+            "Look carefully at the plus or minus sign on each bird.",
+            "Two birds go into coop 8 together, look again."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -479,7 +533,12 @@
           "bo-cau-3-9": "nhom-chuong-12"
         }
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Pigeons go back to the coop",
+        "goTo": "Go round to the Pigeon Cage in the Market Corner, where Grandpa Sáu is scattering grain to call the birds",
+        "prompt": "Grandpa Sáu's pigeons are flying around the glass roof, each wearing a calculation. The sample bird 7 + 5 has already gone into coop 12. Find the right coop for the other birds."
+      }
     },
     {
       "id": "gia-sach-vo",
@@ -498,6 +557,17 @@
         "answer": {
           "text": "6 + 9 = 15. Đáp số: 15 chậu hoa",
           "explanation": "Giá hoa có tất cả 6 + 9 = 15 (chậu hoa)."
+        },
+        "en": {
+          "guide": [
+            "\"Altogether\" means putting together, so we add.",
+            "The calculation is 6 + 9."
+          ],
+          "hint": "9 + 1 = 10, then 5 more.",
+          "answer": {
+            "text": "6 + 9 = 15. Answer: 15 pots of flowers",
+            "explanation": "The flower shelf has 6 + 9 = 15 (pots of flowers) altogether."
+          }
         }
       },
       "feedback": {
@@ -510,13 +580,30 @@
           "Hỏi \"tất cả\" thì mình gộp lại bằng phép cộng.",
           "Lấy 6 cộng 9, gom 1 từ số 6 để đủ 10 trước.",
           "Thử đếm thêm 6 bước từ số 9 xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fifteen pots of flowers, and Butter Bear counts again on her chubby fingers: spot on!",
+            "Putting roses and daisies together is as neat as setting them on the shelf.",
+            "You solved it before Pin could even flip his notebook."
+          ],
+          "wrong": [
+            "The question says \"altogether\", so we put them together by adding.",
+            "Take 6 plus 9, borrowing 1 from the 6 to make 10 first.",
+            "Try counting on 6 steps from 9."
+          ]
+        }
       },
       "answer": {
         "value": 15
       },
       "expression": "6 + 9",
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "Flowerpot shelf in the greenhouse",
+        "goTo": "Go to the Side Glass Window, where Butter Bear has pressed her nose against the pane",
+        "question": "Butter Bear presses her nose to the glass and looks inside the greenhouse: the flower shelf has 6 pots of roses and 9 pots of daisies. How many pots of flowers are on the shelf altogether?"
+      }
     },
     {
       "id": "mui-ten-quanh-chau",
@@ -589,6 +676,17 @@
         "answer": {
           "text": "6 → (+ 8) → 14 → (– 9) → 5 → (+ 7) → 12",
           "explanation": "6 + 8 = 14; 14 – 9 = 5; 5 + 7 = 12."
+        },
+        "en": {
+          "guide": [
+            "Each arrow does one calculation with the number in the pot before.",
+            "This pot's result is the starting number for the next pot."
+          ],
+          "hint": "6 + 8 = 14.",
+          "answer": {
+            "text": "6 → (+ 8) → 14 → (– 9) → 5 → (+ 7) → 12",
+            "explanation": "6 + 8 = 14; 14 – 9 = 5; 5 + 7 = 12."
+          }
         }
       },
       "feedback": {
@@ -601,7 +699,19 @@
           "Lấy kết quả chậu trước để làm phép tính tiếp theo nhé.",
           "Mũi tên thứ hai là trừ 9 đấy.",
           "Kiểm tra lại 6 + 8 trước tiên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You followed every arrow, and the last pot even bloomed!",
+            "Three pots, three numbers, and no arrow lost.",
+            "Pin flaps his wings: a relay of sums without missing a step!"
+          ],
+          "wrong": [
+            "Use the result of the pot before for the next calculation.",
+            "The second arrow is subtract 9.",
+            "Check 6 + 8 first."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -615,7 +725,11 @@
         "b2": "6 + 8 - 9",
         "b3": "6 + 8 - 9 + 7"
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Arrows around the plant pot",
+        "prompt": "Battery Penguin draws arrows linking four seedling pots in the greenhouse: start at pot number 6, add 8, subtract 9, then add 7. Fill in the numbers for the other pots."
+      }
     },
     {
       "id": "de-truoc-kho-sau",
@@ -886,6 +1000,17 @@
         "answer": {
           "text": "8 + 5 = 13; 9 + 4 = 13; 6 + 9 = 15; 7 + 8 = 15; 11 – 7 = 4; 15 – 6 = 9; 12 – 5 = 7; 17 – 9 = 8; 13 – 4 = 9; 14 – 7 = 7; 16 – 8 = 8; 12 – 6 = 6",
           "explanation": "13, 13, 15, 15; 4, 9, 7, 8, 9, 7, 8, 6."
+        },
+        "en": {
+          "guide": [
+            "Look at the sign first: the first four add, the last eight subtract.",
+            "If you forget, split the number to make 10 or to get down to 10."
+          ],
+          "hint": "15 – 6: 15 – 5 = 10, 10 – 1 = 9.",
+          "answer": {
+            "text": "8 + 5 = 13; 9 + 4 = 13; 6 + 9 = 15; 7 + 8 = 15; 11 – 7 = 4; 15 – 6 = 9; 12 – 5 = 7; 17 – 9 = 8; 13 – 4 = 9; 14 – 7 = 7; 16 – 8 = 8; 12 – 6 = 6",
+            "explanation": "13, 13, 15, 15; 4, 9, 7, 8, 9, 7, 8, 6."
+          }
         }
       },
       "feedback": {
@@ -898,7 +1023,19 @@
           "Chậm lại một chút, Pin bấm giờ nhưng không giục đâu.",
           "Nhìn dấu trước khi tính: cộng hay trừ nào?",
           "Một ô lệch rồi, dùng mẹo về 10 tính lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Super-fast indeed! Pin stares at the clock with round eyes.",
+            "You calculate even faster than Pin reads, a new market record!",
+            "Not a single one missed, and the greenhouse door clicks open a little more."
+          ],
+          "wrong": [
+            "Slow down a little, Pin is timing you but he isn't rushing you.",
+            "Look at the sign before you calculate: add or subtract?",
+            "One box is off, use the trick of going through 10 and try again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -930,7 +1067,11 @@
         "b11": "16 - 8",
         "b12": "12 - 6"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Super-fast mental maths",
+        "prompt": "Battery Penguin starts his stopwatch and reads the calculations steadily, like the tap of a weight. The first four are additions and the last eight are subtractions. Work them out in your head, as fast as you can."
+      }
     },
     {
       "id": "cau-bay-dung-sai",
@@ -968,6 +1109,17 @@
         "answer": {
           "text": "Đúng: b, c; sai: a, d",
           "explanation": "a) sai vì 7 + 8 = 15; b) đúng vì đổi chỗ số hạng; c) đúng vì 14 – 6 = 8 < 9; d) sai vì 7 không lớn hơn 8."
+        },
+        "en": {
+          "guide": [
+            "Work out each side of every statement.",
+            "Swapping the numbers being added does not change the total."
+          ],
+          "hint": "12 – 5 = 7 but 16 – 8 = 8.",
+          "answer": {
+            "text": "True: b, c; false: a, d",
+            "explanation": "a) is false because 7 + 8 = 15; b) is true because you can swap the numbers being added; c) is true because 14 – 6 = 8 < 9; d) is false because 7 is not greater than 8."
+          }
         }
       },
       "feedback": {
@@ -980,7 +1132,19 @@
           "Tính 7 + 8 cẩn thận xem có phải 16 không.",
           "Một câu đúng về đổi chỗ số hạng chưa được chọn.",
           "So 12 – 5 với 16 – 8: bên nào lớn hơn?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "You cleared Pin's traps completely, and his notebook says: all correct!",
+            "Pin mutters as he writes: next time I need harder traps.",
+            "Two true, two traps, and you tell them apart clearly."
+          ],
+          "wrong": [
+            "Work out 7 + 8 carefully, is it really 16?",
+            "One true statement about swapping the numbers hasn't been chosen.",
+            "Compare 12 – 5 with 16 – 8: which side is bigger?"
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -988,7 +1152,18 @@
           "c-14-6-9"
         ]
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Battery Penguin's trick question",
+        "goTo": "Go out to the Brick Yard in Front of the Greenhouse, where Battery Penguin has marked out four trick-question squares",
+        "prompt": "Battery Penguin puts on a stern face and gives four statements: some are true, some are traps. Choose all the true ones; any you don't choose count as false.",
+        "choices": [
+          "a) 7 + 8 = 16",
+          "b) 6 + 9 is the same as 9 + 6",
+          "c) 14 – 6 < 9",
+          "d) 12 – 5 is greater than 16 – 8"
+        ]
+      }
     },
     {
       "id": "tranh-trai-he",
@@ -1007,6 +1182,17 @@
         "answer": {
           "text": "15 – 8 = 7. Đáp số: 7 bức tranh",
           "explanation": "Gấu Bơ vẽ được 15 – 8 = 7 (bức tranh)."
+        },
+        "en": {
+          "guide": [
+            "Butter Bear painted fewer than Flower Fox, so take 8 away from Flower Fox's number.",
+            "Subtract 8 pictures from Flower Fox's number of pictures."
+          ],
+          "hint": "Break 15 into 10 + 5 and take 8 from 10 first.",
+          "answer": {
+            "text": "15 – 8 = 7. Answer: 7 pictures",
+            "explanation": "Butter Bear painted 15 – 8 = 7 (pictures)."
+          }
         }
       },
       "feedback": {
@@ -1019,13 +1205,30 @@
           "Gấu Bơ vẽ ít hơn Cáo Hoa, vậy kết quả phải bé hơn 15.",
           "Ít hơn 8 bức thì lấy 15 trừ 8 nhé.",
           "Đây không phải bài gộp lại, đừng cộng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Butter Bear's seven pictures are hung by Flower Fox across a whole glass wall!",
+            "Fewer means take away, you remembered what you learnt yesterday.",
+            "Flower Fox paints an eighth picture... of you!"
+          ],
+          "wrong": [
+            "Butter Bear painted fewer than Flower Fox, so the result must be smaller than 15.",
+            "Eight fewer means 15 take away 8.",
+            "This isn't putting together, so don't add."
+          ]
+        }
       },
       "answer": {
         "value": 7
       },
       "expression": "15 - 8",
-      "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon"
+      "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
+      "en": {
+        "title": "Flower Fox and Butter Bear's painting",
+        "goTo": "Slip through the door left half open into the Greenhouse Aisle, where Flower Fox is hanging paintings",
+        "question": "Flower Fox shows off a painting hung among the plant pots. She painted 15 pictures and Butter Bear painted 8 fewer than she did. How many pictures did Butter Bear paint?"
+      }
     },
     {
       "id": "thuc-an-cho-thu",
@@ -1084,6 +1287,17 @@
         "answer": {
           "text": "Thỏ – củ cà rốt; khỉ – chùm nho; dê – nắm cỏ khô; sóc – nắm hạt dẻ",
           "explanation": "Thỏ 15 – 9 = 6: củ cà rốt; khỉ 8 + 4 = 12: chùm nho; dê 16 – 7 = 9: nắm cỏ khô; sóc 6 + 7 = 13: nắm hạt dẻ."
+        },
+        "en": {
+          "guide": [
+            "Work out the calculation each animal wears around its neck.",
+            "Each food shows a number equal to the result; the sample horse already has its straw."
+          ],
+          "hint": "Squirrel: 6 + 7 = 13, which fits the handful of chestnuts.",
+          "answer": {
+            "text": "Rabbit – carrot; monkey – bunch of grapes; goat – handful of hay; squirrel – handful of chestnuts",
+            "explanation": "Rabbit 15 – 9 = 6: carrot; monkey 8 + 4 = 12: bunch of grapes; goat 16 – 7 = 9: handful of hay; squirrel 6 + 7 = 13: handful of chestnuts."
+          }
         }
       },
       "feedback": {
@@ -1096,7 +1310,19 @@
           "Con dê đâu có ăn chùm nho, tính lại phép của dê nhé.",
           "Có con vật đang cầm nhầm phần ăn của bạn rồi.",
           "Bó rơm đã thuộc về ngựa mẫu, đừng chia thêm cho ai."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yum yum! The rabbit nibbles a carrot, the monkey hugs the grapes and the squirrel munches chestnuts.",
+            "Everyone is full to bursting, and Pin only asks for one tiny dried fish.",
+            "Four animals, four foods, and nobody goes hungry."
+          ],
+          "wrong": [
+            "A goat doesn't eat a bunch of grapes, work out the goat's calculation again.",
+            "An animal is holding another's share of food.",
+            "The straw already belongs to the sample horse, don't share it out to anyone else."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1106,7 +1332,11 @@
           "con-soc-6-7": "nhom-13-hat-de"
         }
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "The animals' lunch",
+        "prompt": "It's lunchtime, and the animals who came to market have gathered at the greenhouse door asking for food. Each animal wears a calculation; the sample horse 7 + 8 has already received the bundle of straw marked 15. Work them out and share out the food for the other animals."
+      }
     },
     {
       "id": "phep-tinh-be-nhat",
@@ -1140,6 +1370,17 @@
         "answer": {
           "text": "C. 12 – 8",
           "explanation": "13 – 7 = 6, 15 – 6 = 9, 12 – 8 = 4; bé nhất là 12 – 8."
+        },
+        "en": {
+          "guide": [
+            "Work out the results of all three cards.",
+            "Choose the card with the smallest result."
+          ],
+          "hint": "The results are 6, 9, 4.",
+          "answer": {
+            "text": "C. 12 – 8",
+            "explanation": "13 – 7 = 6, 15 – 6 = 9, 12 – 8 = 4; the smallest is 12 – 8."
+          }
         }
       },
       "feedback": {
@@ -1152,12 +1393,34 @@
           "Tính cả ba thẻ rồi mới chọn nhé.",
           "Thẻ A ra 6, vẫn còn thẻ bé hơn nữa đấy.",
           "Thử tính lại 12 – 8 xem ra mấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Card C is the smallest, and Pin flips the card with a \"snap\"!",
+            "You compared the three results in a flash.",
+            "The smallest is 4, and you picked it dead on."
+          ],
+          "wrong": [
+            "Work out all three cards before you choose.",
+            "Card A gives 6, there's a smaller card still.",
+            "Try working out 12 – 8 again, what does it make?"
+          ]
+        }
       },
       "answer": {
         "choice": "c-12-8"
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "The smallest calculation",
+        "goTo": "Run out to the Brick Yard in Front of the Greenhouse, where Battery Penguin is holding up three cards for you",
+        "prompt": "Pin puts three subtraction cards face down on the table, then flips them over. Point to the card with the smallest difference: A. 13 – 7, B. 15 – 6 or C. 12 – 8?",
+        "choices": [
+          "A. 13 – 7",
+          "B. 15 – 6",
+          "C. 12 – 8"
+        ]
+      }
     },
     {
       "id": "phep-tinh-lon-nhat",
@@ -1190,6 +1453,17 @@
         "answer": {
           "text": "A. 9 + 7",
           "explanation": "9 + 7 = 16, 6 + 8 = 14, 5 + 9 = 14; lớn nhất là 9 + 7."
+        },
+        "en": {
+          "guide": [
+            "Work out the total on each card.",
+            "This time choose the biggest total."
+          ],
+          "hint": "The totals are 16, 14, 14.",
+          "answer": {
+            "text": "A. 9 + 7",
+            "explanation": "9 + 7 = 16, 6 + 8 = 14, 5 + 9 = 14; the biggest is 9 + 7."
+          }
         }
       },
       "feedback": {
@@ -1202,12 +1476,33 @@
           "Lần này tìm lớn nhất, không phải bé nhất nhé.",
           "Tính lại tổng 9 + 7 xem.",
           "14 chưa phải tổng lớn nhất đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Card A is the biggest, and Pin tosses his cards in the air to celebrate!",
+            "Sixteen is the biggest, you've won the card game.",
+            "The question changed and you didn't falter one bit."
+          ],
+          "wrong": [
+            "This time find the biggest, not the smallest.",
+            "Work out the total of 9 + 7 again.",
+            "14 isn't the biggest total."
+          ]
+        }
       },
       "answer": {
         "choice": "a-9-7"
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "The biggest calculation",
+        "prompt": "Pin flips over three more cards, this time additions. Which card has the highest total: A. 9 + 7, B. 6 + 8 or C. 5 + 9?",
+        "choices": [
+          "A. 9 + 7",
+          "B. 6 + 8",
+          "C. 5 + 9"
+        ]
+      }
     },
     {
       "id": "tinh-ba-so",
@@ -1298,6 +1593,17 @@
         "answer": {
           "text": "8 + 5 – 6 = 7; 4 + 7 + 5 = 16; 17 – 7 – 5 = 5; 15 – 7 + 6 = 14",
           "explanation": "8 + 5 – 6 = 7; 4 + 7 + 5 = 16; 17 – 7 – 5 = 5; 15 – 7 + 6 = 14."
+        },
+        "en": {
+          "guide": [
+            "Work out the first two numbers first.",
+            "Then use that result with the third number."
+          ],
+          "hint": "8 + 5 = 13, then 13 – 6.",
+          "answer": {
+            "text": "8 + 5 – 6 = 7; 4 + 7 + 5 = 16; 17 – 7 – 5 = 5; 15 – 7 + 6 = 14",
+            "explanation": "8 + 5 – 6 = 7; 4 + 7 + 5 = 16; 17 – 7 – 5 = 5; 15 – 7 + 6 = 14."
+          }
         }
       },
       "feedback": {
@@ -1310,7 +1616,19 @@
           "Tính lần lượt từ trái sang phải nhé.",
           "Có dòng vừa cộng vừa trừ, nhìn kĩ từng dấu.",
           "Kết quả bước đầu của dòng đó đã đúng chưa?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Click! The last lock springs open and the greenhouse welcomes you!",
+            "Working left to right, steady as a drum, without a single misstep.",
+            "Battery Penguin closes his notebook: the puzzle challenge is passed, without a single wrong answer!"
+          ],
+          "wrong": [
+            "Work through them in turn from left to right.",
+            "One line mixes adding and subtracting, look carefully at each sign.",
+            "Is the first step of that line right?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1326,7 +1644,12 @@
         "b3": "17 - 7 - 5",
         "b4": "15 - 7 + 6"
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Three numbers in a row",
+        "goTo": "Back at the Greenhouse Door, only one lock is still closed",
+        "prompt": "The last puzzle of the challenge: each calculation has three numbers, and you work from left to right."
+      }
     },
     {
       "id": "cau-thang-cau-truot",
@@ -1536,6 +1859,17 @@
         "answer": {
           "text": "Lượt 1, em gieo 3 chấm, quân dừng ở ô 15 – 9 = 6; Lượt 2, Pin gieo 4 chấm, quân dừng ở ô 12 – 5 = 7; Lượt 3, em gieo 2 chấm, quân dừng ở ô 17 – 8 = 9; Đây là chân thang, em leo lên ô 14 – 6 = 8; Lượt 4, Pin gieo 5 chấm, quân dừng ở ô 13 – 4 = 9; Lượt 5, em gieo 1 chấm, quân dừng ở ô 16 – 9 = 7; Lại gặp chân thang, em leo lên ô 9 + 5 = 14; Lượt 6, Pin gieo 6 chấm, quân dừng ở ô 7 + 6 = 13; Lượt 7, em gieo 1 chấm, quân dừng ở ô 8 + 7 = 15; Lượt 8, Pin gieo 6 chấm, quân dừng ở ô 15 – 6 = 9; Đây là đỉnh dốc, Pin trượt xuống ô 6 + 8 = 14; Lượt 9, em gieo 1 chấm và về ĐÍCH!",
           "explanation": "Kết quả các ô theo lượt: 6, 7, 9, 8, 9, 7, 14, 13, 15, 9, 14. Em leo hai lần thang và về đích trước, Pin bị trượt từ ô 15 – 6 xuống ô 6 + 8."
+        },
+        "en": {
+          "guide": [
+            "Each turn, work out the calculation on the square where the counter just stopped.",
+            "After climbing a ladder or sliding down a slide, work out the new square too."
+          ],
+          "hint": "The square 17 – 8 is the foot of the first ladder.",
+          "answer": {
+            "text": "Turn 1, you roll 3 and your counter stops on the square 15 – 9 = 6; Turn 2, Pin rolls 4 and his counter stops on the square 12 – 5 = 7; Turn 3, you roll 2 and your counter stops on the square 17 – 8 = 9; This is a ladder foot, so you climb up to the square 14 – 6 = 8; Turn 4, Pin rolls 5 and his counter stops on the square 13 – 4 = 9; Turn 5, you roll 1 and your counter stops on the square 16 – 9 = 7; Another ladder foot, so you climb up to the square 9 + 5 = 14; Turn 6, Pin rolls 6 and his counter stops on the square 7 + 6 = 13; Turn 7, you roll 1 and your counter stops on the square 8 + 7 = 15; Turn 8, Pin rolls 6 and his counter stops on the square 15 – 6 = 9; This is the top of a slide, so Pin slides down to the square 6 + 8 = 14; Turn 9, you roll 1 and reach the FINISH!",
+            "explanation": "The results of the squares in order: 6, 7, 9, 8, 9, 7, 14, 13, 15, 9, 14. You climbed two ladders and reached the finish first, while Pin slid from the square 15 – 6 down to the square 6 + 8."
+          }
         }
       },
       "feedback": {
@@ -1548,7 +1882,19 @@
           "Nêu sai là phải quay về ô cũ, tính lại cẩn thận nhé.",
           "Leo lên đỉnh thang thì tính phép tính của ô mới ở đỉnh thang.",
           "Có một lượt của Pin cậu tính chưa đúng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "FINISH! Pin lost but still writes in his notebook: \"Won fair and square, accurate!\"",
+            "Two ladders climbed, and not once did you say a wrong result, champion!",
+            "Pin slides down the slide shouting \"Oops oops\", and the whole row of stalls bursts out laughing."
+          ],
+          "wrong": [
+            "Saying a wrong result sends you back to your old square, so calculate carefully.",
+            "When you climb to the top of a ladder, work out the calculation on the new square at the top.",
+            "There's one of Pin's turns you haven't worked out right."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1578,7 +1924,12 @@
         "b10": "15 - 6",
         "b11": "6 + 8"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Ladders and slides game",
+        "goTo": "Go out to the Brick Yard in Front of the Greenhouse, where Battery Penguin has drawn a game board",
+        "prompt": "Battery Penguin challenges you to a game of LADDERS AND SLIDES on a ready-made board. Each player has a counter and takes turns rolling a die, then moves as many squares as the dots. Whichever square your counter stops on, you must say the correct result of the calculation on that square; if you get it wrong, you go back to your old square. At the foot of a ladder you climb up, at the top of a slide you slide down, and whoever reaches the finish first wins. Below is the whole game; fill in the results on the squares where the counters stop, Pin's squares included."
+      }
     },
     {
       "id": "huy-hieu-nha-kinh",
@@ -1611,5 +1962,9 @@
       "phep-tru": 1,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "The Riddle at the Greenhouse Door",
+    "summary": "Battery Penguin guards the key to the plant nursery greenhouse and is so fussy that he will only open the door once every add-and-subtract-through-10 puzzle has been checked; {name} runs around the greenhouse helping Grandpa Sáu round up pigeons, peeks through the glass with Butter Bear, looks at paintings with Flower Fox, then plays a game of Ladders and Slides against Pin."
   }
 }

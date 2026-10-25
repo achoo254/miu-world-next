@@ -96,7 +96,11 @@
         "toan2-cd3-qua-can-1kg",
         "toan2-cd3-qua-can-2kg",
         "toan2-cd3-qua-can-5kg"
-      ]
+      ],
+      "en": {
+        "title": "Three weights rolled away",
+        "goTo": "Find the three weights that rolled around the Balance Scale Stall"
+      }
     },
     {
       "id": "nang-hon-nhe-hon",
@@ -169,6 +173,17 @@
         "answer": {
           "text": "Bao gạo nhẹ hơn, vì đĩa của nó đang ở trên cao.",
           "explanation": "Đĩa bí ngô thấp hơn nên bốn quả bí nặng hơn, tức là bao gạo nhẹ hơn."
+        },
+        "en": {
+          "guide": [
+            "The pan that sinks lower is the heavier side.",
+            "Look at whether the pan with the rice is high or low."
+          ],
+          "hint": "The rice pan is sitting higher than the pan of pumpkins.",
+          "answer": {
+            "text": "The bag of rice is lighter, because its pan is up high.",
+            "explanation": "The pumpkin pan is lower, so the four pumpkins are heavier, which means the bag of rice is lighter."
+          }
         }
       },
       "feedback": {
@@ -181,12 +196,33 @@
           "Nhìn lại xem đĩa nào đang sà xuống thấp hơn.",
           "Hai đĩa lệch nhau rõ ràng, chúng không thể nặng bằng nhau.",
           "Đĩa bao gạo đang ở trên cao, vậy bao gạo nặng hay nhẹ hơn?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The pumpkins roll around happily, having won the weigh-off!",
+            "Pin adjusts his glasses: you look at the pans very sharply.",
+            "Right, the lower pan always belongs to the heavier side."
+          ],
+          "wrong": [
+            "Look again at which pan is dropping lower.",
+            "The two pans are clearly uneven, so they can't weigh the same.",
+            "The rice pan is up high, so is the rice heavier or lighter?"
+          ]
+        }
       },
       "answer": {
         "choice": "b-bao-gao-nhe-hon-4-qua-bi"
       },
-      "objective": "khoi-luong-dung-tich-nang-nhe"
+      "objective": "khoi-luong-dung-tich-nang-nhe",
+      "en": {
+        "title": "A bag of rice against four pumpkins",
+        "prompt": "Pin shows a funny picture: the left pan holds 4 pumpkins and the right pan holds a bag of rice. The pan with the four pumpkins sinks low, and the rice pan rises high. Look at the picture and choose the true statement.",
+        "choices": [
+          "The bag of rice is heavier than four pumpkins.",
+          "The bag of rice is lighter than four pumpkins.",
+          "The bag of rice and four pumpkins weigh the same."
+        ]
+      }
     },
     {
       "id": "meo-cho-tho-len-can",
@@ -269,6 +305,17 @@
         "answer": {
           "text": "a) Giữa gà và ngỗng, con nặng hơn là ngỗng.; b) Giữa gà và thỏ, con nặng hơn là gà.; c) Trong cả ba con, con nặng nhất là ngỗng, con nhẹ nhất là thỏ.",
           "explanation": "Ngỗng nặng hơn gà, gà nặng hơn thỏ, nên ngỗng nặng nhất và thỏ nhẹ nhất."
+        },
+        "en": {
+          "guide": [
+            "In each weighing, the animal on the low pan is the heavier one.",
+            "The goose is heavier than the chicken, and the chicken is heavier than the rabbit."
+          ],
+          "hint": "The chicken is in the middle: heavier than the rabbit but lighter than the goose.",
+          "answer": {
+            "text": "a) Of the chicken and the goose, the heavier one is the goose.; b) Of the chicken and the rabbit, the heavier one is the chicken.; c) Of all three animals, the heaviest is the goose and the lightest is the rabbit.",
+            "explanation": "The goose is heavier than the chicken, and the chicken is heavier than the rabbit, so the goose is heaviest and the rabbit is lightest."
+          }
         }
       },
       "feedback": {
@@ -281,7 +328,19 @@
           "Ở lần cân sau, đĩa của ngỗng mới là đĩa thấp.",
           "Con nhẹ nhất phải nhẹ hơn cả gà lẫn ngỗng.",
           "Hãy so từng cặp trước, rồi mới chọn con nặng nhất."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The goose is top of the chart and the featherlight rabbit is at the bottom!",
+            "You put the two weighings together very neatly.",
+            "Tangerine Cat cries out: so the chicken is in the middle!"
+          ],
+          "wrong": [
+            "In the second weighing, the goose's pan is the low one.",
+            "The lightest must be lighter than both the chicken and the goose.",
+            "Compare each pair first, then pick the heaviest."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -291,7 +350,12 @@
           "b4": "tho"
         }
       },
-      "objective": "khoi-luong-dung-tich-nang-nhe"
+      "objective": "khoi-luong-dung-tich-nang-nhe",
+      "en": {
+        "title": "Chicken, goose and rabbit take turns on the scale",
+        "goTo": "Go over to the Platform Scale Stall, where Tangerine Cat has carried the chicken, goose and rabbit to be weighed",
+        "prompt": "Two weighings: the first time, the chicken is on the low pan and the rabbit on the high pan. The second time, the chicken is on the high pan and the goose on the low pan. Look at both scales and fill in the blanks."
+      }
     },
     {
       "id": "cam-tao-buoi-va-chanh",
@@ -365,6 +429,17 @@
         "answer": {
           "text": "a) Một quả ổi nặng bằng 3 quả mận.; b) Một quả lê nặng bằng 5 quả mận.; c) Một quả thơm nặng bằng 8 quả mận.",
           "explanation": "Quả thơm nặng bằng quả ổi và quả lê, tức là 3 + 5 = 8 quả mận."
+        },
+        "en": {
+          "guide": [
+            "Balanced means both sides weigh the same.",
+            "The pineapple weighs as much as the guava and the pear together."
+          ],
+          "hint": "The guava is 3 plums, the pear is 5 plums; the pineapple is both added together.",
+          "answer": {
+            "text": "a) One guava weighs the same as 3 plums.; b) One pear weighs the same as 5 plums.; c) One pineapple weighs the same as 8 plums.",
+            "explanation": "The pineapple weighs the same as the guava and the pear, that is 3 + 5 = 8 plums."
+          }
         }
       },
       "feedback": {
@@ -377,7 +452,19 @@
           "Hai đĩa ngang nhau thì số mận bên này chính là cân nặng của quả bên kia.",
           "Quả thơm ngang bằng quả ổi cộng với quả lê đấy.",
           "Thử cộng số mận của ổi với số mận của lê xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The plums are tiny but the weighing is spot on, the pineapple is exactly 8 plums!",
+            "You add plums faster than Lemon Fox counts money.",
+            "All three scales balance perfectly, without a wobble."
+          ],
+          "wrong": [
+            "When the two pans are level, the number of plums on one side is the weight of the fruit on the other.",
+            "The pineapple equals the guava plus the pear.",
+            "Try adding the plums for the guava and the plums for the pear."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -389,6 +476,11 @@
       "objective": "khoi-luong-dung-tich-nang-nhe",
       "expression": {
         "b3": "3 + 5"
+      },
+      "en": {
+        "title": "How many plums to balance?",
+        "goTo": "Stop by the Fruit Stall, where Lemon Fox hands Pin a basket of plums to weigh",
+        "prompt": "Pin uses plums as tiny weights. The two pans balance when: 1 guava weighs the same as 3 plums; 1 pear weighs the same as 5 plums; 1 pineapple weighs the same as the guava and the pear together. Fill in the numbers."
       }
     },
     {
@@ -431,6 +523,17 @@
         "answer": {
           "text": "Đúng: a, b, c, e. Sai: d.",
           "explanation": "Câu a, b, c, e đúng. Câu d sai vì mũ rơm nhẹ hơn 1 kg còn mớ rau nặng đúng 1 kg."
+        },
+        "en": {
+          "guide": [
+            "First compare each thing with the 1 kg weight.",
+            "The hat is lighter than 1 kg, the greens are exactly 1 kg, the sugar is heavier than 1 kg."
+          ],
+          "hint": "The straw hat is lighter than 1 kg and the greens weigh exactly 1 kg: do these two weigh the same?",
+          "answer": {
+            "text": "True: a, b, c, e. False: d.",
+            "explanation": "Statements a, b, c and e are true. Statement d is false because the straw hat is lighter than 1 kg while the greens weigh exactly 1 kg."
+          }
         }
       },
       "feedback": {
@@ -443,7 +546,19 @@
           "Mũ rơm và mớ rau muống có thật sự nặng ngang nhau không?",
           "Vẫn còn một câu đúng về bao đường chưa được chọn.",
           "Hãy so từng món với quả cân 1 kg rồi mới so hai món với nhau."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You caught the one false statement, and Pin nods in satisfaction!",
+            "The hat is light, the sugar is heavy, and the greens are exactly one kilogram.",
+            "You compare against the 1 kg weight like a seasoned weigher."
+          ],
+          "wrong": [
+            "Do the straw hat and the water spinach really weigh the same?",
+            "There is still a true statement about the sugar that you haven't picked.",
+            "Compare each item with the 1 kg weight first, then compare the two items with each other."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -453,7 +568,19 @@
           "e-bao-duong-nang-hon-mo-rau"
         ]
       },
-      "objective": "khoi-luong-dung-tich-nang-nhe"
+      "objective": "khoi-luong-dung-tich-nang-nhe",
+      "en": {
+        "title": "Compare with the 1 kg weight",
+        "goTo": "Back at the Balance Scale Stall, Pin has set three scales side by side",
+        "prompt": "Pin lines up three scales side by side, each with a 1 kg weight on one pan: the straw hat is on the pan that sits higher than the weight; the bag of sugar is on the pan that sits lower than the weight; the bunch of water spinach balances with the weight. Choose all the true statements; any you don't choose are false.",
+        "choices": [
+          "a) The straw hat is lighter than 1 kg.",
+          "b) The bag of sugar is heavier than 1 kg.",
+          "c) The bunch of water spinach weighs exactly 1 kg.",
+          "d) The straw hat weighs the same as the bunch of water spinach.",
+          "e) The bag of sugar is heavier than the bunch of water spinach."
+        ]
+      }
     },
     {
       "id": "doc-nhan-can-nang",
@@ -560,6 +687,17 @@
         "answer": {
           "text": "Quả dưa hấu: 6 kg; Hũ mật ong: 2 kg; Bắp cải: 4 kg; Bao ngô: 20 kg; Túi đậu: 7 kg",
           "explanation": "Dưa hấu 6 kg, hũ mật ong 2 kg, bắp cải 4 kg, bao ngô 20 kg, túi đậu 7 kg."
+        },
+        "en": {
+          "guide": [
+            "Kilogram is shortened to kg.",
+            "Listen to the number Pin reads and write it in digits."
+          ],
+          "hint": "Twenty kilograms is written 20 kg.",
+          "answer": {
+            "text": "Watermelon: 6 kg; Jar of honey: 2 kg; Cabbage: 4 kg; Sack of corn: 20 kg; Bag of beans: 7 kg",
+            "explanation": "Watermelon 6 kg, jar of honey 2 kg, cabbage 4 kg, sack of corn 20 kg, bag of beans 7 kg."
+          }
         }
       },
       "feedback": {
@@ -572,7 +710,19 @@
           "Nghe lại nhãn Pin đọc rồi đổi sang chữ số nhé.",
           "Hai mươi gồm hai chữ số, đừng viết thiếu.",
           "Có một nhãn đang dán nhầm số, dò lại từng món xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five labels stuck on neatly, and the stall looks much smarter!",
+            "Pin praises you: the digits are clear and can't be mistaken.",
+            "Wobbly Pig hugs the 20 kg sack of corn and staggers, it really is heavy!"
+          ],
+          "wrong": [
+            "Listen to the labels Pin read again and change each one to digits.",
+            "Twenty has two digits, don't write too few.",
+            "One label has the wrong number, check each item again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -583,7 +733,11 @@
           "b5": "o7"
         }
       },
-      "objective": "khoi-luong-dung-tich-ki-lo-gam"
+      "objective": "khoi-luong-dung-tich-ki-lo-gam",
+      "en": {
+        "title": "Read the weight label",
+        "prompt": "Pin reads out each label: watermelon six kilograms, jar of honey two kilograms, cabbage four kilograms, sack of corn twenty kilograms, bag of beans seven kilograms. Write each weight using digits."
+      }
     },
     {
       "id": "phieu-doc-nhan-o-nha",
@@ -766,6 +920,17 @@
         "answer": {
           "text": "a) Hộp A nặng 7 kg, hộp B nặng 6 kg, hộp C nặng 5 kg.; b) Hộp nặng nhất là Hộp A; hộp nhẹ nhất là Hộp C.",
           "explanation": "Hộp A nặng 7 kg, hộp B nặng 6 kg, hộp C nặng 5 kg; hộp A nặng nhất, hộp C nhẹ nhất."
+        },
+        "en": {
+          "guide": [
+            "Add the weights on the other pan to find how many kg each box weighs.",
+            "Compare the three numbers of kg to find the heaviest and lightest box."
+          ],
+          "hint": "Box A: 2 kg + 5 kg; box B: 3 kg + 3 kg.",
+          "answer": {
+            "text": "a) Box A weighs 7 kg, box B weighs 6 kg, box C weighs 5 kg.; b) The heaviest box is Box A; the lightest box is Box C.",
+            "explanation": "Box A weighs 7 kg, box B weighs 6 kg, box C weighs 5 kg; box A is the heaviest and box C is the lightest."
+          }
         }
       },
       "feedback": {
@@ -778,7 +943,19 @@
           "Hộp A cân bằng với cả quả 2 kg lẫn quả 5 kg đấy.",
           "Hai quả cân 3 kg gộp lại là bao nhiêu nhỉ?",
           "Số kg lớn nhất là hộp nặng nhất, xem lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Box A is the heaviest, and Wobbly Pig hugs it straight away!",
+            "You added the weights correctly kilogram by kilogram, well done.",
+            "All three boxes are labelled, and Pin lets the Cake Stall open for business."
+          ],
+          "wrong": [
+            "Box A balances with both the 2 kg and the 5 kg weights.",
+            "What do two 3 kg weights make together?",
+            "The biggest number of kg is the heaviest box, look again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -793,6 +970,10 @@
       "expression": {
         "b1": "2 + 5",
         "b2": "3 + 3"
+      },
+      "en": {
+        "title": "Which cake box is heaviest?",
+        "prompt": "Three cake boxes are put on scales and all balance: box A balances with a 2 kg weight and a 5 kg weight; box B balances with two 3 kg weights; box C balances with a single 5 kg weight. Fill in the numbers and then choose the box."
       }
     },
     {
@@ -918,6 +1099,17 @@
         "answer": {
           "text": "Ví dụ: 6 kg + 3 kg = 9 kg; 12 kg – 5 kg = 7 kg; 31 kg + 24 kg = 55 kg; 38 kg + 40 kg = 78 kg; 8 kg + 6 kg = 14 kg; 57 kg – 20 kg = 37 kg; 15 kg – 7 kg = 8 kg; 80 kg – 30 kg = 50 kg",
           "explanation": "31 + 24 = 55, 38 + 40 = 78, 8 + 6 = 14, 57 – 20 = 37, 15 – 7 = 8, 80 – 30 = 50; mỗi kết quả đều kèm đơn vị kg."
+        },
+        "en": {
+          "guide": [
+            "Work out the numbers as usual and then add \"kg\".",
+            "See the example: 6 kg + 3 kg = 9 kg."
+          ],
+          "hint": "15 – 7: split 7 = 5 + 2; 15 – 5 = 10, then 10 – 2 = 8.",
+          "answer": {
+            "text": "Example: 6 kg + 3 kg = 9 kg; 12 kg – 5 kg = 7 kg; 31 kg + 24 kg = 55 kg; 38 kg + 40 kg = 78 kg; 8 kg + 6 kg = 14 kg; 57 kg – 20 kg = 37 kg; 15 kg – 7 kg = 8 kg; 80 kg – 30 kg = 50 kg",
+            "explanation": "31 + 24 = 55, 38 + 40 = 78, 8 + 6 = 14, 57 – 20 = 37, 15 – 7 = 8, 80 – 30 = 50; every result comes with the unit kg."
+          }
         }
       },
       "feedback": {
@@ -930,7 +1122,19 @@
           "Tính phần số trước, đơn vị kg cứ giữ nguyên.",
           "Phép 15 kg – 7 kg cần tách số cẩn thận nhé.",
           "Có một dòng chưa đúng, dò lại từng dòng một."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The notebook is as clean as new, with not a single ink blot left!",
+            "Six calculations with kilograms, and every one fits.",
+            "Pin stamps \"Checked\" with a loud thump."
+          ],
+          "wrong": [
+            "Work out the numbers first and keep the unit kg as it is.",
+            "The calculation 15 kg – 7 kg needs the number split carefully.",
+            "One line isn't right yet, check them one by one."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -950,6 +1154,11 @@
         "b4": "57 - 20",
         "b5": "15 - 7",
         "b6": "80 - 30"
+      },
+      "en": {
+        "title": "Battery Penguin's weighing book",
+        "goTo": "Back at the Ledger Table, Pin's weighing book has a few ink blots",
+        "prompt": "Pin writes in his weighing book, but Wobbly Pig knocked over the ink and covered a few places. Work them out to fill them in again."
       }
     },
     {
@@ -1007,6 +1216,17 @@
         "answer": {
           "text": "a) Con ngan nặng 6 kg.; b) Con dê con nặng 9 kg.",
           "explanation": "Con ngan nặng 4 kg + 2 kg = 6 kg; con dê con nặng 5 kg + 4 kg = 9 kg."
+        },
+        "en": {
+          "guide": [
+            "An animal weighs the same as the total of the weights on the other pan.",
+            "Add 4 kg and 2 kg, then 5 kg and 4 kg."
+          ],
+          "hint": "Duck: 4 + 2; kid goat: 5 + 4.",
+          "answer": {
+            "text": "a) The duck weighs 6 kg.; b) The kid goat weighs 9 kg.",
+            "explanation": "The duck weighs 4 kg + 2 kg = 6 kg; the kid goat weighs 5 kg + 4 kg = 9 kg."
+          }
         }
       },
       "feedback": {
@@ -1019,7 +1239,19 @@
           "Nhớ cộng cả hai quả cân ở đĩa bên kia nhé.",
           "Con dê con thăng bằng với 5 kg và còn thêm 4 kg nữa.",
           "Ngan nhẹ hơn dê con, xem lại phép cộng của ngan."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The duck quacks proudly about its weight!",
+            "The kid goat bleats: exactly 9 kg, just like at home.",
+            "Neatly added, and Sprout Calf thanks {name}."
+          ],
+          "wrong": [
+            "Remember to add both weights on the other pan.",
+            "The kid goat balances with 5 kg and another 4 kg besides.",
+            "The duck is lighter than the kid goat, check the duck's addition again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1031,6 +1263,11 @@
       "expression": {
         "b1": "4 + 2",
         "b2": "5 + 4"
+      },
+      "en": {
+        "title": "Duck and kid goat on the scale",
+        "goTo": "Go to the Warehouse Door, where Sprout Calf has just led the duck and kid goat up from the canal",
+        "prompt": "Sprout Calf leads the duck and kid goat to market to be weighed. The duck balances with a 4 kg weight and a 2 kg weight; the kid goat balances with a 5 kg weight and a 4 kg weight. Fill in the numbers."
       }
     },
     {
@@ -1049,6 +1286,17 @@
         "answer": {
           "text": "70 kg",
           "explanation": "Hai bao ngô nặng 40 kg + 30 kg = 70 kg."
+        },
+        "en": {
+          "guide": [
+            "Putting the two sacks together means addition.",
+            "Four tens plus three tens makes how many tens?"
+          ],
+          "hint": "Try: 40 kg + 30 kg = ? kg",
+          "answer": {
+            "text": "70 kg",
+            "explanation": "The two sacks of corn weigh 40 kg + 30 kg = 70 kg."
+          }
         }
       },
       "feedback": {
@@ -1061,13 +1309,29 @@
           "Cả hai bao nặng bao nhiêu thì phải cộng hai bao lại.",
           "Bốn chục cộng ba chục, đếm chục thử xem.",
           "Kết quả phải lớn hơn bao to 40 kg chứ nhỉ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Seventy kilograms of corn, enough to pop for the whole market!",
+            "Sprout Calf writes it straight into the book: corn 70 kg, exactly right.",
+            "Neat and quick, and the farmer smiles broadly."
+          ],
+          "wrong": [
+            "To find how much both weigh, add the two sacks together.",
+            "Four tens plus three tens, try counting the tens.",
+            "The result must be more than the big sack's 40 kg, mustn't it?"
+          ]
+        }
       },
       "answer": {
         "value": 70
       },
       "objective": "khoi-luong-dung-tich-tinh",
-      "expression": "40 + 30"
+      "expression": "40 + 30",
+      "en": {
+        "title": "Two sacks of corn at the storehouse door",
+        "question": "Two freshly harvested sacks of corn are lined up at the storehouse door: the big sack weighs 40 kg and the small sack weighs 30 kg. How many kilograms do the two sacks weigh together?"
+      }
     },
     {
       "id": "ba-chu-ro-bot-di-can",
@@ -1124,6 +1388,17 @@
         "answer": {
           "text": "a) Rô-bốt B nặng 49 kg.; b) Rô-bốt C nặng 42 kg.",
           "explanation": "Rô-bốt B nặng 46 kg + 3 kg = 49 kg; rô-bốt C nặng 46 kg – 4 kg = 42 kg."
+        },
+        "en": {
+          "guide": [
+            "Heavier means add on, lighter means take away.",
+            "Use robot A's weight as the starting point."
+          ],
+          "hint": "Robot B: 46 + 3; robot C: 46 – 4.",
+          "answer": {
+            "text": "a) Robot B weighs 49 kg.; b) Robot C weighs 42 kg.",
+            "explanation": "Robot B weighs 46 kg + 3 kg = 49 kg; robot C weighs 46 kg – 4 kg = 42 kg."
+          }
         }
       },
       "feedback": {
@@ -1136,7 +1411,19 @@
           "Rô-bốt B nặng hơn A, vậy phải thêm 3 kg vào.",
           "Rô-bốt C nhẹ hơn, nên lấy 46 kg bớt đi 4 kg.",
           "Một chú rô-bốt đang báo đèn đỏ, tính lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Beep beep! Two robots flash their green lights to thank {name}.",
+            "Heavier means add, lighter means subtract, you've got it firmly.",
+            "Wobbly Pig reads the numbers out loud: forty-nine and forty-two!"
+          ],
+          "wrong": [
+            "Robot B is heavier than A, so add 3 kg on.",
+            "Robot C is lighter, so take 4 kg away from 46 kg.",
+            "One robot is showing a red light, work it out again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1148,6 +1435,11 @@
       "expression": {
         "b1": "46 + 3",
         "b2": "46 - 4"
+      },
+      "en": {
+        "title": "Three robots line up to be weighed",
+        "goTo": "Run back to the Cake Stall, where three robots are lined up waiting for Wobbly Pig",
+        "prompt": "The finale: three robots line up to be weighed, with Wobbly Pig reading out the numbers. Robot A weighs 46 kg. Robot B is 3 kg heavier than robot A. Robot C is 4 kg lighter than robot A."
       }
     },
     {
@@ -1180,5 +1472,9 @@
       "khoi-luong": 2,
       "phep-cong": 1
     }
+  },
+  "en": {
+    "title": "Battery Penguin's Crooked Scale",
+    "summary": "On market morning the balance scale at the stall is crooked, and fussy Battery Penguin won't let anyone buy or sell until it has been rebalanced; {name} finds the weights, compares heavy and light at Tangerine Cat's Platform Scale Stall and Lemon Fox's Fruit Stall, reads kilograms, and weighs the duck and kid goat that Sprout Calf has led up from the canal, while Wobbly Pig keeps trying to sneak a bite of the goods to be weighed."
   }
 }

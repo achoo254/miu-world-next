@@ -109,7 +109,26 @@
           "clue": "Chậu cây đất nung xinh xắn đặt gần góc sân vườn",
           "target": "nha-chau-cay"
         }
-      ]
+      ],
+      "en": {
+        "title": "Pick up 3 things in the yard",
+        "goTo": "Search around the front yard: a letter, a yellow daisy, a seedling pot",
+        "prompt": "Look closely around the garden to pick up 3 things:",
+        "items": [
+          {
+            "name": "Family letter",
+            "clue": "A small yellow letter lying on the grass in front of the house"
+          },
+          {
+            "name": "Yellow daisy",
+            "clue": "A bright yellow daisy in the flower bed beside the path"
+          },
+          {
+            "name": "Seedling pot",
+            "clue": "A pretty clay pot of seedlings near the corner of the garden"
+          }
+        ]
+      }
     },
     {
       "id": "doc-bien-ten",
@@ -147,6 +166,18 @@
         "answer": {
           "text": "Buổi chiều hái rau nấu cơm và đóng chuồng gà",
           "explanation": "Biển viết: \"Buổi chiều: hái rau nấu cơm, đóng cửa chuồng gà.\""
+        },
+        "en": {
+          "guide": [
+            "Find the line that starts with \"Afternoon\".",
+            "Read the whole line.",
+            "Choose the answer that matches the line you just read."
+          ],
+          "hint": "In the morning they water the vegetables, but the afternoon is different.",
+          "answer": {
+            "text": "In the afternoon they pick vegetables for dinner and close the chicken coop",
+            "explanation": "The sign says: \"Afternoon: pick vegetables for dinner, close the chicken coop door.\""
+          }
         }
       },
       "feedback": {
@@ -159,6 +190,29 @@
           "Đọc lại dòng thứ ba của biển tên nhé {name}.",
           "Buổi sáng mới tưới rau, buổi chiều làm việc khác.",
           "Dò lại chữ \"Buổi chiều\" xem cả nhà làm gì nha."
+        ],
+        "en": {
+          "right": [
+            "That's right, this afternoon we go and pick vegetables!",
+            "{name} reads our house sign so clearly.",
+            "Exactly, the afternoon jobs are on the third line."
+          ],
+          "wrong": [
+            "Read the third line of the name sign again, {name}.",
+            "Watering the vegetables is for the morning; the afternoon is something else.",
+            "Look for the word \"Afternoon\" again and see what the family does."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the name sign at the gate",
+        "goTo": "Take the things to the wooden sign with the cat's head beside the gate",
+        "text": "{name}'S HOME\nMorning: water the vegetables, feed the chickens.\nAfternoon: pick vegetables for dinner, close the chicken coop door.\nAnyone in the garden, please walk on the stone path so the vegetables aren't squashed.\nDad",
+        "question": "According to the note, what does the family do in the afternoon?",
+        "choices": [
+          "Water the vegetables and feed the chickens",
+          "Pick vegetables for dinner and close the chicken coop door",
+          "Walk on the stone path in the garden"
         ]
       }
     },
@@ -173,16 +227,40 @@
       "logicType": "pattern",
       "prompt": "Quy luật bậc thang trước hiên nhà: 5, 10, 15, 20, ... Bậc tiếp theo mang số mấy?",
       "elements": [
-        { "id": "e1", "label": "5" },
-        { "id": "e2", "label": "10" },
-        { "id": "e3", "label": "15" },
-        { "id": "e4", "label": "20" }
+        {
+          "id": "e1",
+          "label": "5"
+        },
+        {
+          "id": "e2",
+          "label": "10"
+        },
+        {
+          "id": "e3",
+          "label": "15"
+        },
+        {
+          "id": "e4",
+          "label": "20"
+        }
       ],
       "choices": [
-        { "id": "c1", "text": "21" },
-        { "id": "c2", "text": "22" },
-        { "id": "c3", "text": "25" },
-        { "id": "c4", "text": "30" }
+        {
+          "id": "c1",
+          "text": "21"
+        },
+        {
+          "id": "c2",
+          "text": "22"
+        },
+        {
+          "id": "c3",
+          "text": "25"
+        },
+        {
+          "id": "c4",
+          "text": "30"
+        }
       ],
       "answer": {
         "choice": "c3"
@@ -197,6 +275,18 @@
         "answer": {
           "text": "25",
           "explanation": "Dãy số đếm thêm 5: 5, 10, 15, 20, 25."
+        },
+        "en": {
+          "guide": [
+            "Each step goes up by 5.",
+            "20 + 5 = 25.",
+            "Choose the number 25 on the screen."
+          ],
+          "hint": "Count on 5 from 20.",
+          "answer": {
+            "text": "25",
+            "explanation": "The numbers count on in fives: 5, 10, 15, 20, 25."
+          }
         }
       },
       "feedback": {
@@ -209,6 +299,35 @@
           "Thử lấy 20 cộng thêm 5 nhé {name}.",
           "20 cộng 5 bằng bao nhiêu nào?",
           "Nhìn kỹ bước đếm cách 5 của các bậc thang nhé."
+        ],
+        "en": {
+          "right": [
+            "Exactly! Step number 25 lights up to welcome your foot!",
+            "{name} counts in fives so skilfully!",
+            "Dad claps, what sharp eyes you have, sweetheart!"
+          ],
+          "wrong": [
+            "Start at 20 and add 5, {name}.",
+            "What is 20 plus 5?",
+            "Look closely at the jump of 5 between the steps."
+          ]
+        }
+      },
+      "en": {
+        "title": "The stair pattern",
+        "goTo": "Go to the porch, where Dad is fixing the steps",
+        "prompt": "The pattern of the steps in front of the porch: 5, 10, 15, 20, ... What number is on the next step?",
+        "elements": [
+          "5",
+          "10",
+          "15",
+          "20"
+        ],
+        "choices": [
+          "21",
+          "22",
+          "25",
+          "30"
         ]
       }
     },
@@ -267,11 +386,22 @@
           "prompt": "Trong bếp có 9 quả trứng gà, Mẹ nhặt thêm 7 quả nữa. Có tất cả bao nhiêu quả trứng? (9 + 7 = ?)",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "15 quả" },
-            { "id": "b", "text": "16 quả" },
-            { "id": "c", "text": "17 quả" }
+            {
+              "id": "a",
+              "text": "15 quả"
+            },
+            {
+              "id": "b",
+              "text": "16 quả"
+            },
+            {
+              "id": "c",
+              "text": "17 quả"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Cộng 9 quả trứng gà trong bếp với 7 quả Mẹ nhặt thêm.",
@@ -293,6 +423,14 @@
                 "explanation": "9 + 7 = 16 because 9 + 1 = 10 and 6 more makes 16; 15 and 17 are each one egg off."
               }
             }
+          },
+          "en": {
+            "prompt": "There are 9 eggs in the kitchen and Mum gathers 7 more. How many eggs are there altogether? (9 + 7 = ?)",
+            "choices": [
+              "15 eggs",
+              "16 eggs",
+              "17 eggs"
+            ]
           }
         },
         {
@@ -302,11 +440,22 @@
           "prompt": "Trong xô có 18 con cá rô, Mẹ mang 6 con đi nấu canh. Còn lại bao nhiêu con cá? (18 - 6 = ?)",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "11 con" },
-            { "id": "b", "text": "12 con" },
-            { "id": "c", "text": "13 con" }
+            {
+              "id": "a",
+              "text": "11 con"
+            },
+            {
+              "id": "b",
+              "text": "12 con"
+            },
+            {
+              "id": "c",
+              "text": "13 con"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Từ 18 con cá rô trong xô, bớt đi 6 con Mẹ mang đi nấu canh.",
@@ -328,6 +477,14 @@
                 "explanation": "18 - 6 = 12 because 8 - 6 = 2 and the ten stays; check it: 12 + 6 = 18."
               }
             }
+          },
+          "en": {
+            "prompt": "There are 18 climbing perch in the bucket and Mum takes 6 to cook soup. How many fish are left? (18 - 6 = ?)",
+            "choices": [
+              "11 fish",
+              "12 fish",
+              "13 fish"
+            ]
           }
         },
         {
@@ -337,11 +494,22 @@
           "prompt": "So sánh hai giỏ hoa quả: Giỏ A có 65 quả dâu, giỏ B có 56 quả dâu. Giỏ nào nhiều hơn?",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "Giỏ A nhiều hơn" },
-            { "id": "b", "text": "Giỏ B nhiều hơn" },
-            { "id": "c", "text": "Hai giỏ bằng nhau" }
+            {
+              "id": "a",
+              "text": "Giỏ A nhiều hơn"
+            },
+            {
+              "id": "b",
+              "text": "Giỏ B nhiều hơn"
+            },
+            {
+              "id": "c",
+              "text": "Hai giỏ bằng nhau"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Ghi số dâu của hai giỏ: giỏ A 65 quả, giỏ B 56 quả.",
@@ -359,10 +527,18 @@
               ],
               "hint": "65 has 6 tens and 56 has only 5; more tens means a bigger number.",
               "answer": {
-                "text": "Basket A has more (65 strawberries)",
+                "text": "Basket A has more",
                 "explanation": "65 > 56 because 6 tens beat 5 tens, so basket A has more strawberries; sharing digits does not make them equal."
               }
             }
+          },
+          "en": {
+            "prompt": "Compare two fruit baskets: basket A has 65 strawberries, basket B has 56 strawberries. Which basket has more?",
+            "choices": [
+              "Basket A has more",
+              "Basket B has more",
+              "The two baskets are equal"
+            ]
           }
         },
         {
@@ -372,11 +548,22 @@
           "prompt": "Dãy số lùi đếm bước: 20, 18, 16, 14, ... Số tiếp theo là số mấy?",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "11" },
-            { "id": "b", "text": "12" },
-            { "id": "c", "text": "13" }
+            {
+              "id": "a",
+              "text": "11"
+            },
+            {
+              "id": "b",
+              "text": "12"
+            },
+            {
+              "id": "c",
+              "text": "13"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Xem mỗi bước dãy số giảm đi bao nhiêu: 20 xuống 18, 18 xuống 16.",
@@ -398,6 +585,14 @@
                 "explanation": "Each step takes away 2, so 14 - 2 = 12; 13 takes away only 1 and 11 takes away 3."
               }
             }
+          },
+          "en": {
+            "prompt": "The counting-back pattern: 20, 18, 16, 14, ... What number comes next?",
+            "choices": [
+              "11",
+              "12",
+              "13"
+            ]
           }
         },
         {
@@ -407,11 +602,22 @@
           "prompt": "Chiều nay cả nhà cùng quây quần bên nhau chuẩn bị bữa gì?",
           "damage": 100,
           "choices": [
-            { "id": "a", "text": "Bữa cơm chiều gia đình" },
-            { "id": "b", "text": "Bữa tiệc nửa đêm" },
-            { "id": "c", "text": "Bữa điểm tâm sáng sớm" }
+            {
+              "id": "a",
+              "text": "Bữa cơm chiều gia đình"
+            },
+            {
+              "id": "b",
+              "text": "Bữa tiệc nửa đêm"
+            },
+            {
+              "id": "c",
+              "text": "Bữa điểm tâm sáng sớm"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Nhớ lại lời Mèo Bánh Bao kể lúc đầu: chiều nay cả nhà nấu gì để đón {name}?",
@@ -429,13 +635,27 @@
               ],
               "hint": "Mum gathers eggs, Dad sorts the shed, everyone counts fish: all for one meal later today.",
               "answer": {
-                "text": "The family dinner (bữa cơm chiều gia đình)",
+                "text": "The family dinner",
                 "explanation": "The whole family cooks an afternoon meal to welcome {name}; a midnight party and an early breakfast are at the wrong time."
               }
             }
+          },
+          "en": {
+            "prompt": "This afternoon the whole family is gathering to get which meal ready?",
+            "choices": [
+              "The family dinner",
+              "A midnight party",
+              "An early breakfast"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Big Quiz Battle with Steamed-Bun Cat",
+        "bossName": "King Steamed-Bun Cat",
+        "introDialogue": "Meow meow! I have 5 fun family riddles, and each right answer takes 100 HP from me!",
+        "winDialogue": "Hooray! You have beaten all 500 of my HP!"
+      }
     },
     {
       "id": "bua-com-chieu",
@@ -472,5 +692,9 @@
       "so-sanh-so": 1,
       "phep-cong": 1
     }
+  },
+  "en": {
+    "title": "{name}'s Home – Chapter 1: Welcome Home",
+    "summary": "This afternoon the whole family is getting dinner ready to welcome {name} home. Steamed-Bun Cat leads {name} to pick things up in the yard, read the name sign at the gate, help Dad sort the little shed, count eggs with Mum at the chicken coop and count fish at the jetty by the pond."
   }
 }

@@ -120,7 +120,11 @@
         "tv2-t08-nhanh-co-dai",
         "tv2-t08-long-chim-bay",
         "tv2-t08-canh-buom-giay"
-      ]
+      ],
+      "en": {
+        "title": "Pick up what flew out of the book",
+        "goTo": "Search the Wild Grass Around the Rock for a blade of grass, a feather and a paper sail"
+      }
     },
     {
       "id": "ke-sach-da-doc",
@@ -172,6 +176,17 @@
         "answer": {
           "text": "Sau cánh chim là dòng suối.",
           "explanation": "Khổ đầu kể lần lượt: trước hết cánh chim, kế đến dòng suối, rồi cánh buồm, sau cùng là ngọn núi."
+        },
+        "en": {
+          "guide": [
+            "Read the first verse of the poem again.",
+            "Find the line with the words «Kế đến là»."
+          ],
+          "hint": "The third line of the poem mentions something that gurgles as it flows.",
+          "answer": {
+            "text": "After the bird's wing comes the stream.",
+            "explanation": "The first verse names them one by one: first the bird's wing, next the stream, then the sail, and last the mountain."
+          }
         }
       },
       "feedback": {
@@ -184,9 +199,31 @@
           "Ối, ngọn núi còn ở tận cuối khổ cơ. Đọc lại dòng thứ ba nhé.",
           "Cánh buồm chưa ra đâu! Tìm chữ đứng ngay sau \"Kế đến là\" xem.",
           "Gần lắm rồi, thứ cần tìm nằm ngay dưới cánh chim, nhìn xuống thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Round Panda taps the stone gently: next comes the stream, that's right.",
+            "Dream Deer looks up and hears the stream gurgling out of the page.",
+            "Spot on, the stream comes right after the bird's wing in the poem."
+          ],
+          "wrong": [
+            "Oops, the mountain is still way down at the end of the verse. Read the third line again.",
+            "The sail is not out yet! Look for the word right after «Kế đến là».",
+            "So close, what you need is right below the bird's wing. Try looking down."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-to"
+      "objective": "doc-tho-doc-to",
+      "en": {
+        "title": "Read the poem on the Flat Rock",
+        "goTo": "Cross to the Flat Rock, where a poem appears on the stone",
+        "question": "Round Panda sits down beside the rock, reads the words «dòng suối» very slowly and asks: in the first verse, right after the bird's wing, what steps out of the book?",
+        "choices": [
+          "The stream",
+          "The mountain",
+          "The sail"
+        ]
+      }
     },
     {
       "id": "xep-hang-buoc-ra",
@@ -232,6 +269,17 @@
         "answer": {
           "text": "cánh chim, dòng suối, cánh buồm, ngọn núi",
           "explanation": "Khổ đầu viết theo thứ tự: trước hết là cánh chim, kế đến dòng suối, rồi cánh buồm, sau cùng là ngọn núi."
+        },
+        "en": {
+          "guide": [
+            "Read the first verse again, one line at a time.",
+            "Notice the words that open each line: «Trước hết là», «Kế đến là», «Rồi đến», «Sau cùng là»."
+          ],
+          "hint": "The first visitor can fly.",
+          "answer": {
+            "text": "bird's wing, stream, sail, mountain",
+            "explanation": "The first verse goes in order: first the bird's wing, next the stream, then the sail, and last the mountain."
+          }
         }
       },
       "feedback": {
@@ -244,9 +292,32 @@
           "Ai bước ra đầu tiên nhỉ? Đọc lại dòng có chữ \"Trước hết là\" nhé.",
           "Ngọn núi to nên ra sau cùng đấy, xem dòng \"Sau cùng là\".",
           "Cánh buồm nằm ở dòng \"Rồi đến\", thử dò lại từng dòng một."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Wing, stream, sail, mountain: Dream Deer stamps a hoof in praise!",
+            "The right order of the verse, like visitors lining up to step out of the book.",
+            "Dream Deer is so moved she wants to write a whole new verse!"
+          ],
+          "wrong": [
+            "Who steps out first? Read the line with «Trước hết là» again.",
+            "The mountain is big, so it comes out last. Look at the line «Sau cùng là».",
+            "The sail is on the line «Rồi đến». Check the lines one by one."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Who stepped out of the book first?",
+        "goTo": "Back to the Purple Myrtle Tree Base, where Dream Deer is reading the first verse",
+        "prompt": "Dream Deer reads the first verse, and with every line a visitor steps out of the page. Who comes out first and who last? Put the four visitors in the order they appear in the first verse.",
+        "items": [
+          "bird's wing",
+          "sail",
+          "mountain",
+          "stream"
+        ]
+      }
     },
     {
       "id": "bien-hien-ra-ben-suoi",
@@ -314,6 +385,17 @@
         "answer": {
           "text": "đồng cỏ, đàn bò, cơn gió, đêm, ngôi sao, ngọn đèn",
           "explanation": "Khổ hai có đồng cỏ, đàn bò, cơn gió; khổ ba có đêm, ngôi sao, ngọn đèn. Cánh chim và ngọn núi ở khổ đầu, còn cơn bão thì không có."
+        },
+        "en": {
+          "guide": [
+            "Read only the second verse and the third verse.",
+            "Each line with the word «có» tells you one thing that is in the book."
+          ],
+          "hint": "There are six things: three in verse two and three in verse three.",
+          "answer": {
+            "text": "meadow, herd of cows, breeze, night, star, lamp",
+            "explanation": "Verse two has the meadow, the herd of cows and the breeze; verse three has the night, the star and the lamp. The bird's wing and the mountain are in the first verse, and the storm is not there at all."
+          }
         }
       },
       "feedback": {
@@ -326,9 +408,37 @@
           "Có vị khách lạc từ khổ đầu sang đây rồi, kiểm tra lại nhé.",
           "Còn sót một thứ ở khổ ba: thứ nhỏ xíu, soi giấc mơ ấy.",
           "Cơn bão thì bài thơ đâu có nhắc, chỉ chọn trong khổ hai và khổ ba thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six! The red sail tilts to greet {name} and glides on.",
+            "A meadow, a starry night, a lamp: a book really is a whole world!",
+            "Round Panda counts them slowly on his fingers: all six, not one missed."
+          ],
+          "wrong": [
+            "A visitor has wandered over from the first verse. Check again.",
+            "You've missed one thing in verse three: a tiny thing that lights up a dream.",
+            "The poem never mentions a storm. Choose only from verses two and three."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The sea appears by the stream",
+        "goTo": "Hear the waves whooshing, then run to the little stream behind the rock",
+        "prompt": "Whoosh… whoosh! The stream behind the rock suddenly turns into a little sea, and a red sail glides right past {name}'s nose. Look back at verses two and three of the poem: what did the child see in the book? Pick everything that appears in those two verses.",
+        "choices": [
+          "meadow",
+          "bird's wing",
+          "herd of cows",
+          "breeze",
+          "mountain",
+          "night",
+          "star",
+          "storm",
+          "lamp"
+        ]
+      }
     },
     {
       "id": "the-chu-ben-suoi",
@@ -418,6 +528,17 @@
         "answer": {
           "text": "Chỉ sự vật: dòng suối, cánh buồm, đồng cỏ, đàn bò, ngôi sao, ngọn đèn, ngọn núi, trang sách. Không phải: gặm, thổi, soi.",
           "explanation": "Tám thẻ đầu gọi tên cảnh vật và đồ vật; ba thẻ còn lại là việc làm."
+        },
+        "en": {
+          "guide": [
+            "A word for a thing names a person, an animal, an object, a plant or a piece of scenery.",
+            "Try putting the word «một» in front: if it sounds right, it may be a thing."
+          ],
+          "hint": "«Gặm», «thổi» and «soi» are things you do, and do not name any thing.",
+          "answer": {
+            "text": "Things: dòng suối, cánh buồm, đồng cỏ, đàn bò, ngôi sao, ngọn đèn, ngọn núi, trang sách. Not things: gặm, thổi, soi.",
+            "explanation": "The first eight cards name scenery and objects; the other three are actions."
+          }
         }
       },
       "feedback": {
@@ -430,9 +551,38 @@
           "Có thẻ \"nói về việc làm\" đang nằm nhầm giỏ rồi.",
           "Thử nói \"một cái …\" trước từ đó: nghe hợp thì là sự vật.",
           "\"Soi\" là chiếu sáng, một việc làm, bỏ nó sang giỏ còn lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The leaf basket is full of things, and Dream Deer has enough words for three poems!",
+            "Right, «gặm» and «thổi» are not objects to put in a basket.",
+            "The red sail waves as if praising {name}'s sharp eyes."
+          ],
+          "wrong": [
+            "A card about something you do has landed in the wrong basket.",
+            "Try saying «một cái …» before the word: if it sounds right, it is a thing.",
+            "«Soi» means to shine a light on, an action. Move it to the other basket."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Collect word cards by the stream",
+        "prompt": "Everything that appears by the stream drops down a word card. Dream Deer wants to gather the cards that name things into a leaf basket to write poems. Drag each card into the basket that suits it.",
+        "items": [
+          "gặm",
+          "dòng suối",
+          "cánh buồm",
+          "thổi",
+          "đồng cỏ",
+          "đàn bò",
+          "soi",
+          "ngôi sao",
+          "ngọn đèn",
+          "ngọn núi",
+          "trang sách"
+        ]
+      }
     },
     {
       "id": "song-vo-kho-cuoi",
@@ -469,6 +619,17 @@
         "answer": {
           "text": "Đọc sách giúp em biết thêm nhiều điều mới mẻ dù sách không nói thành lời.",
           "explanation": "Khổ cuối so sánh việc đọc với những bước chân đi mãi về cõi mênh mang: sách mở ra cho em rất nhiều điều mới."
+        },
+        "en": {
+          "guide": [
+            "Read the last verse again: the book says nothing, yet you still hear something.",
+            "«Footsteps that go on and on» is only a picture in words, not a real sound."
+          ],
+          "hint": "The meaning of the whole verse is as wide as a vast world, not one small sound.",
+          "answer": {
+            "text": "Reading helps you learn many new things, even though a book does not speak aloud.",
+            "explanation": "The last verse compares reading with footsteps going on forever into a vast world: a book opens up so many new things for you."
+          }
         }
       },
       "feedback": {
@@ -481,9 +642,31 @@
           "Tiếng chân đi mãi chỉ là hình ảnh thôi, ý thơ còn rộng hơn nhiều.",
           "Bài thơ có nói sách to đến mức ôm không xuể đâu nhỉ? Đọc lại khổ cuối nhé.",
           "Nghĩ xem: trang sách mở ra cho em thấy những gì mới mẻ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! The breeze steps back and gives {name} a little bow.",
+            "Dream Deer nods: a vast world means all the wonderful things in a book.",
+            "Round Panda writes the words «mênh mang» in his notebook, every stroke nice and round."
+          ],
+          "wrong": [
+            "Footsteps that go on and on are only a picture, and the poem means much more.",
+            "Does the poem say the book is so big no one can hug it? Read the last verse again.",
+            "Think: what new things does the book open up for you?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "What the last verse says",
+        "goTo": "Go to the Little Sandy Patch, where Float Penguin has just waddled out of the book",
+        "prompt": "A gentle breeze blows across the sand, cool but not turning a single page. Dream Deer whispers the last verse. What do you think the last verse is trying to say?",
+        "choices": [
+          "There are footsteps of a real person walking in the book.",
+          "The book cannot speak, but it opens up so many new things for you.",
+          "The book is so big that nobody can hug it."
+        ]
+      }
     },
     {
       "id": "vet-xanh-suu-tam-van",
@@ -564,6 +747,17 @@
         "answer": {
           "text": "ra với xa; cao với nào; ràng với mang",
           "explanation": "Mở ra – buồm xa có vần a; treo rất cao – hôm nào có vần ao; nghe rõ ràng – cõi mênh mang có vần ang."
+        },
+        "en": {
+          "guide": [
+            "Read aloud the last word of each line of the verse.",
+            "Two words with the same rhyme sound lovely read together."
+          ],
+          "hint": "First verse: which word on the fourth line goes with «ra»?",
+          "answer": {
+            "text": "Rhyming pairs: ra với xa; cao với nào; ràng với mang",
+            "explanation": "«Mở ra» and «buồm xa» share the rhyme «a»; «treo rất cao» and «hôm nào» share «ao»; «nghe rõ ràng» and «cõi mênh mang» share «ang»."
+          }
         }
       },
       "feedback": {
@@ -576,9 +770,26 @@
           "\"Chim\" với \"ra\" đọc lên đâu có giống nhau, thử cặp khác nhé.",
           "Khổ ba: tìm tiếng cuối dòng đi cùng vần với \"cao\".",
           "Khổ cuối: \"nói\" với \"mãi\" chẳng ăn vần gì cả, nghe lại tiếng \"ràng\" xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Round Panda writes three rhyming pairs in his notebook: ra xa, cao nào, ràng mang!",
+            "So pleasant to hear! Dream Deer reads it again and it sounds like a song.",
+            "Three perfect pairs, and the librarian nods: listen slowly and you'll find them all!"
+          ],
+          "wrong": [
+            "«Chim» and «ra» don't sound the same when read. Try another pair.",
+            "Verse three: look for the last word of the line that rhymes with «cao».",
+            "Last verse: «nói» and «mãi» share no rhyme at all. Listen again to the sound of «ràng»."
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "The Librarian listens for rhymes",
+        "goTo": "Go to the Steps to the Garden, where Round Panda is murmuring each line of the poem",
+        "prompt": "Round Panda reads each line slowly: only when you read slowly can your ear pick out the ends of lines that sound alike. Give it a try. For each verse, choose the pair of words that rhyme."
+      }
     },
     {
       "id": "cau-ve-cuon-truyen",
@@ -688,6 +899,17 @@
         "answer": {
           "text": "lắng; nức; Nắng; Lặng lẽ",
           "explanation": "Nai nhỏ lắng nghe tiếng suối, sách mới thơm nức, nắng chiều tắt sau núi, cánh buồm trôi lặng lẽ."
+        },
+        "en": {
+          "guide": [
+            "Read the whole sentence aloud before you choose the letter.",
+            "Think about the meaning of each word: «lắng nghe», «thơm nức», «nắng chiều», «lặng lẽ»."
+          ],
+          "hint": "The first letter of a poem line must be a capital: «N» or «L».",
+          "answer": {
+            "text": "Completed words: lắng; nức; Nắng; Lặng lẽ",
+            "explanation": "The little deer listens («lắng nghe») to the stream, the new book smells lovely («thơm nức»), the evening sun («nắng chiều») sets behind the mountain, and the sail drifts silently («lặng lẽ»)."
+          }
         }
       },
       "feedback": {
@@ -700,9 +922,25 @@
           "\"Lặng lẽ\" có hai tiếng cùng một chữ đầu đấy, thử lại nhé.",
           "Thơm nức hay thơm lức? Đọc to lên nghe xem tiếng nào xuôi tai.",
           "Nắng chiều tắt sau núi: tiếng \"nắng\" bắt đầu bằng chữ gì nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The letters «l» and «n» are back in place, and the leaf notebook smells of new paper!",
+            "«Lắng nghe», «lặng lẽ»: {name} hears «l» and «n» as sharply as a deer's ear.",
+            "Dream Deer reads both lines aloud, and Round Panda follows slowly, word by word."
+          ],
+          "wrong": [
+            "«Lặng lẽ» has two words with the same first letter, so try again.",
+            "«Thơm nức» or «thơm lức»? Read it aloud and hear which word sounds right.",
+            "«Nắng chiều tắt sau núi»: what letter does the word «nắng» begin with?"
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Letters l and n run wild",
+        "prompt": "Dream Deer has copied a few sentences into her leaf notebook in a hurry, and the letters «l» and «n» keep scurrying about like ants carrying food. Choose «l» or «n» to fill each square, and remember to use a capital at the start of the poem line."
+      }
     },
     {
       "id": "tang-tu-cho-do-dung",
@@ -798,6 +1036,17 @@
         "answer": {
           "text": "Từ điển: dày cộp; hộp màu: sặc sỡ; cái kéo: sáng loáng; tờ giấy: mỏng tang.",
           "explanation": "Từ điển rất dày, hộp màu nhiều màu rực rỡ, cái kéo sáng bóng và tờ giấy rất mỏng, nên mỗi đồ vật nhận một từ chỉ đặc điểm."
+        },
+        "en": {
+          "guide": [
+            "Look closely at how thick, how shiny and what colour each thing is.",
+            "Read each word: which one is about colour, which about thickness, which about shininess?"
+          ],
+          "hint": "A sheet of paper is very thin.",
+          "answer": {
+            "text": "Dictionary: «dày cộp» (thick). Box of colours: «sặc sỡ» (brightly coloured). Scissors: «sáng loáng» (shiny). Sheet of paper: «mỏng tang» (paper-thin).",
+            "explanation": "A dictionary is very thick, a box of colours holds many bright colours, scissors are shiny and a sheet of paper is very thin, so each thing gets a word describing it."
+          }
         }
       },
       "feedback": {
@@ -810,9 +1059,32 @@
           "Ối, hộp màu đâu có mỏng tang! Nhìn lại nhiều sắc của nó nhé.",
           "Từ nào nói về vật bằng thép bóng lên? Thử đổi chỗ xem.",
           "Tờ giấy không dày cộp đâu, nó nổi tiếng vì rất mỏng cơ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The dictionary puffs out its «dày cộp» tummy, the paper shows off how «mỏng tang» it is: everyone is happy!",
+            "Four words home to four houses, and Dream Deer sees her pencil case light up.",
+            "The shiny scissors nearly snip Float Penguin's whisker in sheer delight!"
+          ],
+          "wrong": [
+            "Oops, the box of colours is not «mỏng tang»! Look at all its colours again.",
+            "Which word is about something steel that shines? Try swapping them.",
+            "A sheet of paper is not «dày cộp». It is famous for being very thin."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "Give nice words to school supplies",
+        "goTo": "Go to the Flat Rock, where Dream Deer has just tipped her pencil case onto the stone",
+        "prompt": "Dream Deer tips her pencil case onto the rock: the dictionary, the box of colours, the scissors and a sheet of paper roll everywhere. I want to give every friend a really great word! Drag each picture to the word for a feature that suits it best.",
+        "items": [
+          "Scissors",
+          "Sheet of paper",
+          "Dictionary",
+          "Box of colours"
+        ]
+      }
     },
     {
       "id": "tieng-sinh-doi",
@@ -1007,6 +1279,17 @@
         "answer": {
           "text": "cầu thang, than củi, than thở; con trăn, vầng trăng, ánh trăng; tầng mây, tần ngần, tầng lầu; khăn len, khăng khăng, khăn tay",
           "explanation": "Mỗi cặp tiếng chỉ khác nhau chữ g ở cuối, đọc kĩ và nghĩ nghĩa của cả cụm từ thì chọn được."
+        },
+        "en": {
+          "guide": [
+            "Read the whole phrase aloud and listen for which word ends in «ng».",
+            "Think about the meaning: a «cầu thang» is for stepping up, «than củi» is burnt, «vầng trăng» is the round moon in the sky, and «khăn len» is worn round your neck."
+          ],
+          "hint": "A «trăn» is a big snake; the «trăng» shines in the sky.",
+          "answer": {
+            "text": "The right words: cầu thang, than củi, than thở; con trăn, vầng trăng, ánh trăng; tầng mây, tần ngần, tầng lầu; khăn len, khăng khăng, khăn tay",
+            "explanation": "Each pair of words differs only by a final «g», so read carefully and think about the meaning of the whole phrase to choose."
+          }
         }
       },
       "feedback": {
@@ -1019,9 +1302,26 @@
           "Có một tiếng đang thiếu hoặc thừa chữ g ở cuối, đọc chậm lại nhé.",
           "Than củi để nhóm bếp, còn cầu thang để bước lên cao đấy.",
           "Ánh trăng chiếu từ trời xuống, con trăn bò dưới đất: thử nói to lên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All twelve squares are right! Round Panda tucks the cards into the box, perfectly straight.",
+            "«Cầu thang», «vầng trăng», «khăn len»: {name} tells them apart like a word detective.",
+            "The librarian pins a badge on {name}: «Best Ears»."
+          ],
+          "wrong": [
+            "One word is missing or has an extra final «g». Read slowly again.",
+            "«Than củi» is for lighting the stove, while a «cầu thang» is for climbing up.",
+            "Moonlight shines down from the sky, a «trăn» crawls on the ground: say them aloud."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "The box of twin-word cards",
+        "goTo": "Back to the Steps to the Garden, where Round Panda opens the box of twin-word cards",
+        "prompt": "Round Panda opens the card box and draws out one card at a time, very slowly: «thang» and «than», «trăn» and «trăng», sounding almost alike but meaning something quite different. For each phrase, choose the right word out of the two suggested in brackets."
+      }
     },
     {
       "id": "goc-hoc-tap-cua-bong",
@@ -1076,6 +1376,17 @@
         "answer": {
           "text": "Ngọn đèn bàn sáng dịu hiền. Hộp bút đầy ắp bút màu. Chồng sách cao ngất.",
           "explanation": "Đèn bàn toả ánh sáng dịu, hộp bút chứa nhiều bút màu, chồng sách xếp thật cao: mỗi câu nêu một đặc điểm."
+        },
+        "en": {
+          "guide": [
+            "Try each pair, then read the whole sentence aloud.",
+            "The sentence that makes the most sense is the right one."
+          ],
+          "hint": "What stacks up and gets taller?",
+          "answer": {
+            "text": "Ngọn đèn bàn sáng dịu hiền. Hộp bút đầy ắp bút màu. Chồng sách cao ngất. (The desk lamp shines softly. The pencil box is full of coloured pencils. The pile of books is sky-high.)",
+            "explanation": "The desk lamp gives a soft light, the pencil case holds many coloured pencils and the stack of books is piled very high: each sentence describes a feature."
+          }
         }
       },
       "feedback": {
@@ -1088,9 +1399,31 @@
           "Ngọn đèn mà đầy ắp bút màu thì lạ quá, đổi thử nhé.",
           "Thứ gì cao vút như tháp? Nhìn lại ba đồ vật xem.",
           "Đọc to cả câu sau khi ghép, câu nào nghe kì kì là chưa đúng đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three neat sentences, and Dream Deer's study corner lights up!",
+            "A towering stack of books: Float Penguin cranes his neck until it aches.",
+            "Dream Deer praises you: well paired, like shelving books!"
+          ],
+          "wrong": [
+            "A lamp full of coloured pencils would be odd. Try swapping.",
+            "Which thing rises like a tower? Look at the three objects again.",
+            "Read each sentence aloud after pairing: if one sounds strange, it isn't right yet."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-cau-dac-diem"
+      "objective": "tu-chi-dac-diem-cau-dac-diem",
+      "en": {
+        "title": "Dream Deer's Study Corner",
+        "goTo": "Back to the Purple Myrtle Tree Base, where Dream Deer turns another page",
+        "prompt": "Dream Deer turns another page, and it opens into a lovely little study corner right on the rock. Drag each card to the right object to make a sentence describing a feature.",
+        "items": [
+          "cao ngất.",
+          "sáng dịu hiền.",
+          "đầy ắp bút màu."
+        ]
+      }
     },
     {
       "id": "danh-thuc-hop-but",
@@ -1159,6 +1492,17 @@
         "answer": {
           "text": "cao rồi. / dậy chưa? / ở đâu?",
           "explanation": "Câu đầu kể mặt trời đã lên nên dùng dấu chấm; hai câu sau hỏi thước kẻ và bút chì nên dùng dấu chấm hỏi."
+        },
+        "en": {
+          "guide": [
+            "Read each sentence and decide whether it is asking or telling.",
+            "A sentence with «chưa» or «ở đâu» is usually a question."
+          ],
+          "hint": "A question ends with a question mark, and a telling sentence ends with a full stop.",
+          "answer": {
+            "text": "Endings: cao rồi. / dậy chưa? / ở đâu?",
+            "explanation": "The first sentence tells that the sun has risen, so it takes a full stop; the other two ask the ruler and the pencil, so they take a question mark."
+          }
         }
       },
       "feedback": {
@@ -1171,9 +1515,26 @@
           "\"Dậy chưa\" là đang hỏi hay đang kể nhỉ?",
           "Câu đầu chỉ kể mặt trời đã lên, không hỏi ai cả đâu.",
           "Bút chì trốn ở đâu? Câu ấy cần dấu để hỏi đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The ruler springs up straight and the pencil crawls out of the case: we're awake!",
+            "All marks right! The whole pencil case lines up, begging to go to school with {name}.",
+            "Dream Deer reads it again, her voice rising and falling in the right places like a teacher."
+          ],
+          "wrong": [
+            "Is «dậy chưa» asking or telling?",
+            "The first sentence only tells that the sun has risen, it asks nobody anything.",
+            "Where is the pencil hiding? That sentence needs a mark to ask."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "Wake up the sleepy pencil case",
+        "goTo": "Go to the Flat Rock, where the whole pencil case is fast asleep",
+        "prompt": "A soft breeze lulls the whole pencil case to sleep on the rock, and the ruler is even snoring. Dream Deer reads a few sentences to wake them, but she dropped some punctuation. Does each square need a full stop or a question mark?"
+      }
     },
     {
       "id": "nai-mo-luyen-tiec-sach",
@@ -1281,6 +1642,17 @@
         "answer": {
           "text": "Ngày đọc; tựa sách; người viết; chỗ em thích nhất",
           "explanation": "Phiếu của Sóc Nâu ghi ngày đọc, tựa sách, người viết và chỗ bạn ấy thích nhất; không ghi số trang, giá tiền hay màu bìa."
+        },
+        "en": {
+          "guide": [
+            "Read each line of the slip and look at the part before the colon.",
+            "Each line of the slip is one piece of information."
+          ],
+          "hint": "The slip has four lines of information, so there are four items.",
+          "answer": {
+            "text": "Date read; title; written by; my favourite part",
+            "explanation": "Brown Squirrel's slip gives the date read, the title, who wrote it and the favourite part; it does not say the number of pages, the price or the colour of the cover."
+          }
         }
       },
       "feedback": {
@@ -1293,9 +1665,35 @@
           "Phiếu có ghi giá tiền đâu nhỉ? Đọc lại từng dòng nhé.",
           "Còn sót một dòng ở cuối phiếu, dòng nói về chỗ bạn Sóc thích.",
           "Đếm các dòng có dấu hai chấm: bao nhiêu dòng thì bấy nhiêu nội dung."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four items! Mama Bear quietly gives a thumbs-up.",
+            "Date, title, writer, favourite part: such a short slip, yet so complete.",
+            "Dream Deer cheers: I'm going to make one just like it!"
+          ],
+          "wrong": [
+            "Does the slip give a price? Read each line again.",
+            "You've missed one line at the bottom of the slip, the one about what the squirrel likes.",
+            "Count the lines with a colon: as many lines, as many items."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "The card tucked in the book",
+        "goTo": "Carry the book into the Reading Room and give it back to Mama Bear at the Book Return Counter",
+        "prompt": "Mama Bear gently pulls out a slip someone left tucked in the book. “Ah, this is Brown Squirrel's slip.” The slip says: READING SLIP. Date read: 8 March. Title: Hạt dẻ lên đường. Written by: Round Porcupine. My favourite part: Hạt dẻ không sợ đường xa. Choose everything that is on the slip.",
+        "choices": [
+          "Date read",
+          "Number of pages",
+          "Title",
+          "Price",
+          "Written by",
+          "Colour of the cover",
+          "My favourite part"
+        ]
+      }
     },
     {
       "id": "ke-dieu-thich-nhat",
@@ -1391,5 +1789,9 @@
       "cau": 1,
       "dau-cau": 1
     }
+  },
+  "en": {
+    "title": "The Book Opens in the Reading Garden",
+    "summary": "Dream Deer takes a book borrowed from Mama Bear out to the Reading Garden, and the moment it opens, wild grass, a bird's wing and a sail fly off the page, and even a little penguin waddles out. {name}, Dream Deer and Round Panda the librarian read the poem, follow the scenes that appear beside the little stream, then make a reading slip before the book goes back."
   }
 }

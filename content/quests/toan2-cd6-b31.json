@@ -95,7 +95,11 @@
         "toan2-cd6-dong-ho-mo-hinh",
         "toan2-cd6-to-lich-thang-5",
         "toan2-cd6-to-lich-thang-6"
-      ]
+      ],
+      "en": {
+        "title": "Find the bell duty things",
+        "goTo": "Find the model clock and two calendar sheets around the bell post at the top of the tower"
+      }
     },
     {
       "id": "quay-kim-hai-gio",
@@ -117,6 +121,17 @@
         "answer": {
           "text": "Kim giờ ở số 4, kim phút ở số 12.",
           "explanation": "Đồng hồ chỉ 4 giờ khi kim giờ nằm đúng ở số 4 và kim phút nằm đúng ở số 12."
+        },
+        "en": {
+          "guide": [
+            "To show an o'clock time, point the long hand straight up at the 12.",
+            "The short hand must point at the number of the hour you want."
+          ],
+          "hint": "The short hand points at 4, the long hand at 12.",
+          "answer": {
+            "text": "The hour hand is on 4 and the minute hand is on 12.",
+            "explanation": "The clock shows 4 o'clock when the hour hand is exactly on 4 and the minute hand is exactly on 12."
+          }
         }
       },
       "feedback": {
@@ -129,13 +144,30 @@
           "Muốn chỉ giờ tròn thì kim dài phải hướng thẳng lên số 12.",
           "Kim ngắn cần dừng đúng ở số 4 nhé.",
           "Có vẻ hai cây kim đang đổi chỗ cho nhau, thử hoán đổi lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "It's four in the afternoon! Boong the Spotted Dog tries one very gentle bong.",
+            "The long hand stands straight up on 12, a perfect o'clock time.",
+            "Your first time turning the hands and you did it so neatly."
+          ],
+          "wrong": [
+            "To show an o'clock time, the long hand must point straight up at 12.",
+            "The short hand needs to stop exactly on 4.",
+            "It looks like the two hands have swapped places. Try swapping them back."
+          ]
+        }
       },
       "answer": {
         "hour": 4,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Turn the hands to 4 o'clock",
+        "goTo": "Take the things back to the top of the bell tower, where Boong the Spotted Dog is already waiting",
+        "prompt": "Boong the Spotted Dog hands you the model clock to practise before the afternoon tea bell. Turn the hands so the clock shows exactly 4 o'clock."
+      }
     },
     {
       "id": "quay-kim-chin-gio-ruoi",
@@ -156,6 +188,17 @@
         "answer": {
           "text": "Kim phút ở số 6, kim giờ ở giữa số 8 và số 9.",
           "explanation": "Lúc 8 giờ 30 phút, kim phút chỉ số 6 còn kim giờ đứng giữa số 8 và số 9."
+        },
+        "en": {
+          "guide": [
+            "Half past, which is 30 minutes, means the long hand points at 6.",
+            "At 8:30 the short hand sits between the 8 and the 9."
+          ],
+          "hint": "The long hand goes half way round, from 12 down to 6.",
+          "answer": {
+            "text": "The minute hand is on 6 and the hour hand is between 8 and 9.",
+            "explanation": "At 8:30 the minute hand points at 6 and the hour hand stands between 8 and 9."
+          }
         }
       },
       "feedback": {
@@ -168,13 +211,29 @@
           "Nửa giờ thì kim dài phải nằm ở số 6 cơ.",
           "Kim ngắn cần nằm lưng chừng giữa số 8 và số 9.",
           "Kim dài chỉ quay nửa vòng thôi, đừng quay trọn một vòng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past eight, it's book-handing-out time! Boong the Spotted Dog goes bong bong.",
+            "The long hand dropped to exactly 6, pretty as a picture.",
+            "The whole reading room will get their books on time thanks to you."
+          ],
+          "wrong": [
+            "For half past, the long hand has to be on 6.",
+            "The short hand needs to sit half way between 8 and 9.",
+            "The long hand only goes half way round, not a whole circle."
+          ]
+        }
       },
       "answer": {
         "hour": 8,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Turn the hands to 8:30",
+        "prompt": "Handing out the books in the reading room this morning needs a really loud bell. Turn the hands so the clock shows 8:30."
+      }
     },
     {
       "id": "quay-kim-bay-gio-muoi-lam",
@@ -196,6 +255,17 @@
         "answer": {
           "text": "Kim phút ở số 3, kim giờ vừa qua số 6.",
           "explanation": "Lúc 6 giờ 15 phút, kim phút chỉ số 3 còn kim giờ vừa đi quá số 6."
+        },
+        "en": {
+          "guide": [
+            "Fifteen minutes means the long hand points at 3.",
+            "The short hand has just passed the 6."
+          ],
+          "hint": "The long hand goes a quarter of the way round, to the 3.",
+          "answer": {
+            "text": "The minute hand is on 3 and the hour hand has just passed 6.",
+            "explanation": "At 6:15 the minute hand points at 3 and the hour hand has just gone past 6."
+          }
         }
       },
       "feedback": {
@@ -208,13 +278,30 @@
           "Mười lăm phút thì kim dài nằm ở số 3 nhé.",
           "Kim ngắn chỉ vừa qua số 6 thôi, đừng đẩy nó quá xa.",
           "Kim dài đang ở số 6 là đã sang 30 phút, hãy quay ngược lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A quarter past six, the wake-up bell is ready to ring!",
+            "A perfect quarter turn, and Milky White Cat's eyes go round.",
+            "You turn the hands more skilfully than a clockmaker."
+          ],
+          "wrong": [
+            "For fifteen minutes, the long hand is on the 3.",
+            "The short hand has only just passed 6, so don't push it too far.",
+            "The long hand on 6 means 30 minutes already. Turn it back."
+          ]
+        }
       },
       "answer": {
         "hour": 6,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Turn the hands to 6:15",
+        "goTo": "Step out onto the railing at the top of the tower, where Milky White Cat is waiting with the model clock",
+        "prompt": "The bell that wakes the whole tower rings at the crack of dawn. Turn the hands so the clock shows 6:15."
+      }
     },
     {
       "id": "doc-dong-ho-a",
@@ -240,6 +327,17 @@
         "answer": {
           "text": "1 giờ 15 phút",
           "explanation": "Kim giờ vừa quá số 1, kim phút chỉ số 3, vậy đồng hồ chỉ 1 giờ 15 phút."
+        },
+        "en": {
+          "guide": [
+            "The minute hand on 3 means 15 minutes past.",
+            "Read the number the hour hand has just passed."
+          ],
+          "hint": "The hour hand has just passed the 1.",
+          "answer": {
+            "text": "1:15",
+            "explanation": "The hour hand has just passed 1 and the minute hand points at 3, so the clock shows 1:15."
+          }
         }
       },
       "feedback": {
@@ -252,13 +350,30 @@
           "Kim phút chỉ vào số 3 thì là bao nhiêu phút nhỉ?",
           "Kim giờ mới qua số 1 một chút, chưa tới số 2 đâu.",
           "Nhìn kim ngắn trước để biết giờ, kim dài sau để biết phút."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A quarter past one! Boong the Spotted Dog wags his spotty tail like mad!",
+            "Clock A is read perfectly, on to the next one.",
+            "The long hand on 3 is 15 minutes, you remembered well."
+          ],
+          "wrong": [
+            "The minute hand on 3 means how many minutes?",
+            "The hour hand has only just passed 1, it hasn't reached 2.",
+            "Look at the short hand first for the hour, then the long hand for the minutes."
+          ]
+        }
       },
       "answer": {
         "hour": 1,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does clock A show?",
+        "goTo": "Go back into the bell tower, where Boong the Spotted Dog holds up the first clock",
+        "prompt": "Boong the Spotted Dog holds up the clock hanging from the bell post for you to see. What time does clock A show?"
+      }
     },
     {
       "id": "doc-dong-ho-b",
@@ -283,6 +398,17 @@
         "answer": {
           "text": "4 giờ 15 phút",
           "explanation": "Kim giờ quá số 4, kim phút chỉ số 3, nên đồng hồ chỉ 4 giờ 15 phút."
+        },
+        "en": {
+          "guide": [
+            "The hour hand has just passed the 4.",
+            "The minute hand stands on the 3."
+          ],
+          "hint": "The hour is 4 and the minutes are 15.",
+          "answer": {
+            "text": "4:15",
+            "explanation": "The hour hand is past 4 and the minute hand points at 3, so the clock shows 4:15."
+          }
         }
       },
       "feedback": {
@@ -295,13 +421,29 @@
           "Kim ngắn vừa qua số mấy? Nhìn thật kĩ nhé.",
           "Kim dài ở số 3 chứ không phải số 6.",
           "Phủi hết lông đi rồi đọc lại kim giờ xem sao."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A quarter past four, time for Boong the Spotted Dog's patrol round the reading garden!",
+            "Dog fur can't hide anything from your sharp eyes.",
+            "Clock B is done. You read the time steadily."
+          ],
+          "wrong": [
+            "What number has the short hand just passed? Look carefully.",
+            "The long hand is on 3, not 6.",
+            "Brush off all the fur and read the hour hand again."
+          ]
+        }
       },
       "answer": {
         "hour": 4,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does clock B show?",
+        "prompt": "The second clock is covered in dog fur, so Boong the Spotted Dog brushes it off and holds it out. What time does clock B show?"
+      }
     },
     {
       "id": "doc-dong-ho-c",
@@ -327,6 +469,17 @@
         "answer": {
           "text": "8 giờ 15 phút",
           "explanation": "Kim giờ quá số 8, kim phút chỉ số 3, nên đồng hồ chỉ 8 giờ 15 phút."
+        },
+        "en": {
+          "guide": [
+            "The hour hand has just passed the 8.",
+            "The long hand on 3 means you add 15 minutes."
+          ],
+          "hint": "It's morning, a little after breakfast.",
+          "answer": {
+            "text": "8:15",
+            "explanation": "The hour hand is past 8 and the minute hand points at 3, so the clock shows 8:15."
+          }
         }
       },
       "feedback": {
@@ -339,13 +492,30 @@
           "Kim giờ vừa đi qua số 8 đấy.",
           "Đừng đọc lẫn kim ngắn với kim dài nhé.",
           "Số 3 trên mặt đồng hồ ứng với 15 phút cơ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A quarter past eight, the library is about to open for visitors!",
+            "Ticking in perfect time, and you read it perfectly.",
+            "Clock C obediently shows exactly what you said."
+          ],
+          "wrong": [
+            "The hour hand has just gone past the 8.",
+            "Don't mix up the short hand and the long hand.",
+            "The 3 on the clock face means 15 minutes."
+          ]
+        }
       },
       "answer": {
         "hour": 8,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does clock C show?",
+        "goTo": "Go out onto the railing at the top of the tower, where Milky White Cat points at the clock hanging on a hook",
+        "prompt": "The third clock hangs on the bell hook, going tick-tock, tick-tock. What time does clock C show?"
+      }
     },
     {
       "id": "doc-dong-ho-d",
@@ -371,6 +541,17 @@
         "answer": {
           "text": "10 giờ 15 phút",
           "explanation": "Kim giờ quá số 10, kim phút chỉ số 3, nên đồng hồ chỉ 10 giờ 15 phút."
+        },
+        "en": {
+          "guide": [
+            "The hour hand has just passed the 10.",
+            "The long hand still stands on the 3."
+          ],
+          "hint": "It's nearly the middle of the morning.",
+          "answer": {
+            "text": "10:15",
+            "explanation": "The hour hand is past 10 and the minute hand points at 3, so the clock shows 10:15."
+          }
         }
       },
       "feedback": {
@@ -383,13 +564,30 @@
           "Kim giờ đang đứng ngay sau số 10 trên mặt đồng hồ.",
           "Kim phút chỉ số 3, tức là 15 phút.",
           "Nhìn kim ngắn kĩ hơn nữa nhé, nó là kim giờ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A quarter past ten, Boong the Spotted Dog can smell freshly baked cakes!",
+            "All four clocks are read. You're a real clockmaker now.",
+            "Clock D was picked up and read perfectly, not a minute wrong."
+          ],
+          "wrong": [
+            "The hour hand is standing just after the 10 on the clock face.",
+            "The minute hand is on 3, which means 15 minutes.",
+            "Look at the short hand more carefully. It's the hour hand."
+          ]
+        }
       },
       "answer": {
         "hour": 10,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does clock D show?",
+        "goTo": "Crawl under the big bell, where Jingle Fox has just found the last clock",
+        "prompt": "The very last clock is lying under the big bell. What time does clock D show?"
+      }
     },
     {
       "id": "koala-chay-toi",
@@ -460,6 +658,17 @@
         "answer": {
           "text": "Cáo Leng Keng tới cửa phòng đọc lúc 15:30, đó là bạn đến muộn.",
           "explanation": "Giờ đọc truyện bắt đầu lúc 15:00. Cáo Leng Keng tới lúc 15:30, muộn nửa tiếng."
+        },
+        "en": {
+          "guide": [
+            "3 o'clock in the afternoon is written 15:00 on a digital clock.",
+            "Whoever arrives after 15:00 is late."
+          ],
+          "hint": "14:45 is early, 15:00 is just in time.",
+          "answer": {
+            "text": "Jingle Fox reached the reading room door at 15:30, so Jingle Fox was late.",
+            "explanation": "Story time starts at 15:00. Jingle Fox arrived at 15:30, half an hour late."
+          }
         }
       },
       "feedback": {
@@ -472,13 +681,29 @@
           "3 giờ chiều là 15:00, bạn nào tới sau giờ đó nhỉ?",
           "14:45 vẫn còn sớm, chưa tính là muộn đâu.",
           "Bạn đã ngồi vào ghế lúc 15:00 là vừa kịp giờ rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Jingle Fox at 15:30 is the late one. Plump Polar Bear sighs with relief at not being the only one.",
+            "You compare times like a detective and caught it straight away.",
+            "That's right, a whole half an hour late!"
+          ],
+          "wrong": [
+            "3 o'clock in the afternoon is 15:00. Who arrived after that?",
+            "14:45 is still early, so that doesn't count as late.",
+            "Someone sitting in their seat at 15:00 is just in time."
+          ]
+        }
       },
       "answer": {
         "hour": 15,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Who is late for story time?",
+        "prompt": "Three photos were taken in the reading room: Milky White Cat was already in her seat at 15:00; Tick-Tock Bunny ran through the gate at 14:45; Jingle Fox only reached the reading room door at 15:30. Story time starts at 3 o'clock in the afternoon. Who was late? Set the digital clock to the time that friend arrived."
+      }
     },
     {
       "id": "ngay-nghi-cua-nam-1",
@@ -504,6 +729,17 @@
         "answer": {
           "text": "7 giờ 30 phút sáng",
           "explanation": "Kim giờ nằm giữa 7 và 8, kim phút chỉ số 6, nên đồng hồ chỉ 7 giờ 30 phút sáng."
+        },
+        "en": {
+          "guide": [
+            "The minute hand on 6 means half an hour has passed.",
+            "When the hour hand sits between two numbers, read the smaller one."
+          ],
+          "hint": "The hour hand is half way between the 7 and the 8.",
+          "answer": {
+            "text": "7:30 in the morning",
+            "explanation": "The hour hand is between 7 and 8 and the minute hand points at 6, so the clock shows 7:30 in the morning."
+          }
         }
       },
       "feedback": {
@@ -516,13 +752,30 @@
           "Kim phút chỉ số 6, vậy là bao nhiêu phút nhỉ?",
           "Kim giờ đã qua số 7 nhưng chưa chạm số 8 đâu.",
           "Đọc số nhỏ hơn trong hai số kẹp kim giờ nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past seven, the vegetables are green and fresh thanks to Bunny's watering can!",
+            "You read half past so smoothly. Tick-Tock Bunny turns to the next page.",
+            "Exactly 7:30, the vegetable garden is lovely in the morning."
+          ],
+          "wrong": [
+            "The minute hand is on 6. How many minutes is that?",
+            "The hour hand is past 7 but hasn't reached 8.",
+            "Read the smaller of the two numbers the hour hand sits between."
+          ]
+        }
       },
       "answer": {
         "hour": 7,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Tick-Tock Bunny water the vegetables?",
+        "goTo": "Go over to the corner where the photo albums hang, where Tick-Tock Bunny opens her own holiday album",
+        "prompt": "Page one of Tick-Tock Bunny's holiday album: Bunny carries a watering can out to water the vegetables. What time in the morning does the clock in the photo show?"
+      }
     },
     {
       "id": "ngay-nghi-cua-nam-2",
@@ -547,6 +800,17 @@
         "answer": {
           "text": "9 giờ 30 phút sáng",
           "explanation": "Kim giờ nằm giữa 9 và 10, kim phút chỉ số 6, nên đồng hồ chỉ 9 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "Look at the short hand first to get the hour.",
+            "The long hand on 6 means another 30 minutes."
+          ],
+          "hint": "The hour hand is between the 9 and the 10.",
+          "answer": {
+            "text": "9:30 in the morning",
+            "explanation": "The hour hand is between 9 and 10 and the minute hand points at 6, so the clock shows 9:30."
+          }
         }
       },
       "feedback": {
@@ -559,13 +823,29 @@
           "Kim giờ chưa chạm tới số 10 đâu, đọc số đứng trước nhé.",
           "Kim dài ở số 6 là 30 phút đấy.",
           "Đồng hồ này chỉ khác ảnh trước đúng hai tiếng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past nine, and the snail on the paper now has both of its feelers!",
+            "Tick-Tock Bunny dabs a spot of colour: what a lovely photo.",
+            "Right on drawing practice time, you read it so well."
+          ],
+          "wrong": [
+            "The hour hand hasn't reached the 10 yet. Read the number before it.",
+            "The long hand on 6 is 30 minutes.",
+            "This clock is exactly two hours different from the last photo."
+          ]
+        }
       },
       "answer": {
         "hour": 9,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Tick-Tock Bunny practise drawing?",
+        "prompt": "Page two: Tick-Tock Bunny sits by the window practising drawing a snail. What time in the morning does the clock in the photo show?"
+      }
     },
     {
       "id": "ngay-nghi-cua-nam-3",
@@ -591,6 +871,17 @@
         "answer": {
           "text": "13 giờ 30 phút",
           "explanation": "Kim giờ nằm giữa 1 và 2, kim phút chỉ số 6, lại là buổi chiều, nên đồng hồ chỉ 13 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "In the afternoon, times can also be read as 13, 14, 15...",
+            "The hour hand is between the 1 and the 2, and it's afternoon, so read it as a bit past 13."
+          ],
+          "hint": "1 in the afternoon is also called 13:00.",
+          "answer": {
+            "text": "13:30",
+            "explanation": "The hour hand is between 1 and 2, the minute hand points at 6, and it's afternoon, so the clock shows 13:30."
+          }
         }
       },
       "feedback": {
@@ -603,13 +894,30 @@
           "Kim giờ nằm giữa số 1 và số 2 cơ.",
           "Kim phút chỉ số 6, đừng quên 30 phút nhé.",
           "Ảnh chụp buổi chiều, giờ chiều được đọc thế nào nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past one in the afternoon, and Bunny sleeps as soundly as a cotton ball!",
+            "You even remembered how to read afternoon times. Well done.",
+            "The hammock is swinging in time at 13:30."
+          ],
+          "wrong": [
+            "The hour hand is between the 1 and the 2.",
+            "The minute hand is on 6, so don't forget the 30 minutes.",
+            "The photo was taken in the afternoon. How do we read afternoon times?"
+          ]
+        }
       },
       "answer": {
         "hour": 13,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Tick-Tock Bunny take a nap?",
+        "goTo": "Run down to the foot of the clock tower, where Plump Polar Bear is holding the photo of Tick-Tock Bunny's nap",
+        "prompt": "Page three: Tick-Tock Bunny lies in a hammock under a tree for a nap, with the sun shining through the leaves. What time in the afternoon does the clock in the photo show?"
+      }
     },
     {
       "id": "ngay-nghi-cua-nam-4",
@@ -634,6 +942,17 @@
         "answer": {
           "text": "15 giờ 30 phút",
           "explanation": "Kim giờ nằm giữa 3 và 4, kim phút chỉ số 6, lại là buổi chiều, nên đồng hồ chỉ 15 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "The hour hand is between the 3 and the 4.",
+            "It's afternoon, so it can also be read as a bit past 15."
+          ],
+          "hint": "Exactly two hours after the nap photo.",
+          "answer": {
+            "text": "15:30",
+            "explanation": "The hour hand is between 3 and 4, the minute hand points at 6, and it's afternoon, so the clock shows 15:30."
+          }
         }
       },
       "feedback": {
@@ -646,13 +965,29 @@
           "Kim ngắn đang đứng giữa số 3 và số 4 đấy.",
           "Kim dài ở số 6 là nửa giờ, tức 30 phút.",
           "Ảnh này sau ảnh ngủ trưa đúng hai giờ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past three in the afternoon, and the red kite soars up to the clouds!",
+            "Exactly 15:30! Plump Polar Bear holds up a big paw to praise you.",
+            "You read the time as fast as the wind blows a kite."
+          ],
+          "wrong": [
+            "The short hand is standing between the 3 and the 4.",
+            "The long hand on 6 is half an hour, which is 30 minutes.",
+            "This photo comes exactly two hours after the nap photo."
+          ]
+        }
       },
       "answer": {
         "hour": 15,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Tick-Tock Bunny fly a kite?",
+        "prompt": "Page four: Tick-Tock Bunny scampers over the hill, flying her red kite high. What time in the afternoon does the clock in the photo show?"
+      }
     },
     {
       "id": "ngay-nghi-cua-nam-5",
@@ -678,6 +1013,17 @@
         "answer": {
           "text": "18 giờ 30 phút",
           "explanation": "Kim giờ nằm giữa 6 và 7, kim phút chỉ số 6, buổi tối, nên đồng hồ chỉ 18 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "The hour hand is between the 6 and the 7.",
+            "It's getting dark, and 6 o'clock is also called 18:00."
+          ],
+          "hint": "The long hand is on 6, so that is 30 minutes.",
+          "answer": {
+            "text": "18:30",
+            "explanation": "The hour hand is between 6 and 7, the minute hand points at 6, and it's evening, so the clock shows 18:30."
+          }
         }
       },
       "feedback": {
@@ -690,13 +1036,30 @@
           "Kim giờ đã qua số 6 rồi, nhưng chưa tới số 7.",
           "Buổi tối thì giờ được đọc cộng thêm 12 đấy.",
           "Kim dài ở số 6 là mấy phút, cậu nhớ lại chưa?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past six in the evening, and Grandma's pot of rice smells lovely all through the kitchen!",
+            "You read the evening time without a single slip. Great!",
+            "Jingle Fox wags his tail: my tummy is rumbling loudly right now too."
+          ],
+          "wrong": [
+            "The hour hand has passed the 6 but hasn't reached the 7.",
+            "In the evening, we read the time by adding 12.",
+            "The long hand on 6 is how many minutes? Do you remember now?"
+          ]
+        }
       },
       "answer": {
         "hour": 18,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Tick-Tock Bunny cook rice?",
+        "goTo": "Go back under the big bell, where Jingle Fox is examining the photo under the lamp",
+        "prompt": "Page five: Tick-Tock Bunny helps Grandma pick vegetables and cook rice, and it is already getting dark outside the window. What time in the evening does the clock in the photo show?"
+      }
     },
     {
       "id": "ngay-nghi-cua-nam-6",
@@ -721,6 +1084,17 @@
         "answer": {
           "text": "20 giờ 30 phút",
           "explanation": "Kim giờ nằm giữa 8 và 9, kim phút chỉ số 6, buổi tối, nên đồng hồ chỉ 20 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "The hour hand is between the 8 and the 9.",
+            "At night, 8 o'clock is also called 20:00."
+          ],
+          "hint": "The long hand is still pointing at 6.",
+          "answer": {
+            "text": "20:30",
+            "explanation": "The hour hand is between 8 and 9, the minute hand points at 6, and it's evening, so the clock shows 20:30."
+          }
         }
       },
       "feedback": {
@@ -733,13 +1107,29 @@
           "Kim giờ nằm giữa số 8 và số 9, nhìn kĩ lại nhé.",
           "Đã tối rồi, giờ buổi tối được đọc lớn hơn 12.",
           "Kim phút không ở số 12 đâu, nhìn lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past eight in the evening. Read your story, Bunny, and sleep well!",
+            "You read the last page correctly too, and Jingle Fox claps softly.",
+            "You have now read Tick-Tock Bunny's whole holiday day."
+          ],
+          "wrong": [
+            "The hour hand is between the 8 and the 9. Look again carefully.",
+            "It's already evening, so the time is read as more than 12.",
+            "The minute hand isn't on 12. Look again."
+          ]
+        }
       },
       "answer": {
         "hour": 20,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Tick-Tock Bunny read stories?",
+        "prompt": "The last page: Tick-Tock Bunny lies in bed reading a story by the light of a small night lamp. What time in the evening does the clock in the photo show?"
+      }
     },
     {
       "id": "gio-giac-cua-em",
@@ -790,6 +1180,17 @@
         "answer": {
           "text": "Tháng 12 có 31 ngày.",
           "explanation": "Tờ lịch tháng 12 kết thúc ở ngày 31, nên tháng 12 có 31 ngày."
+        },
+        "en": {
+          "guide": [
+            "The last box on the calendar is the last day of the month.",
+            "The number on the last day of the month is the number of days in the whole month."
+          ],
+          "hint": "December ends on a Saturday.",
+          "answer": {
+            "text": "December has 31 days.",
+            "explanation": "The December calendar ends on the 31st, so December has 31 days."
+          }
         }
       },
       "feedback": {
@@ -802,12 +1203,29 @@
           "Sau ô cậu chọn vẫn còn ngày khác nữa.",
           "Ngày cuối tháng nằm ở hàng dưới cùng của tờ lịch.",
           "Tìm con số lớn nhất in trên tờ tháng 12 nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty-one days of bell watching, and Boong the Spotted Dog rolls up his sleeves right away!",
+            "There's the 31st box. You found it as quickly as a hound.",
+            "December is long, enough shifts for the whole group to guard the tower."
+          ],
+          "wrong": [
+            "There are still other days after the box you chose.",
+            "The last day of the month is on the very bottom row of the calendar.",
+            "Look for the biggest number printed on the December sheet."
+          ]
+        }
       },
       "answer": {
         "day": 31
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "How many duty days in December?",
+        "prompt": "Boong the Spotted Dog spreads the December calendar over the bell-tower floor to share out the duty shifts for the whole group. How many days in December need someone on duty? Tap the box of the last day of the month.",
+        "question": "How many days in December need someone on duty? Tap the square of the last day of the month."
+      }
     },
     {
       "id": "thu-ba-dau-thang-nam",
@@ -831,6 +1249,17 @@
         "answer": {
           "text": "Ngày 2 tháng 12",
           "explanation": "Ngày 1 tháng 12 là thứ Năm, nên ngày liền sau, ngày 2, là thứ Sáu đầu tiên."
+        },
+        "en": {
+          "guide": [
+            "Find the Friday column on the calendar.",
+            "The first box with a number in the Friday column is the first Friday."
+          ],
+          "hint": "The 1st of December is a Thursday.",
+          "answer": {
+            "text": "2 December",
+            "explanation": "The 1st of December is a Thursday, so the very next day, the 2nd, is the first Friday."
+          }
         }
       },
       "feedback": {
@@ -843,12 +1272,30 @@
           "Ngày 1 là thứ Năm, đếm tiếp xem thứ Sáu là ngày mấy.",
           "Ô cậu chọn không nằm trong cột thứ Sáu.",
           "Tìm chữ thứ Sáu trên đầu cột trước nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 2nd! Boong the Spotted Dog's first shift has its place.",
+            "You traced the Friday column perfectly. Great job.",
+            "Milky White Cat stamps a cute little paw print on the 2nd."
+          ],
+          "wrong": [
+            "The 1st is a Thursday. Count on to find which day is Friday.",
+            "The box you chose isn't in the Friday column.",
+            "First find the word Friday at the top of the column."
+          ]
+        }
       },
       "answer": {
         "day": 2
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "The first Friday of December",
+        "goTo": "Go out onto the railing at the top of the tower, where Milky White Cat waits with a pen to circle all the Fridays",
+        "prompt": "Milky White Cat spreads out the December calendar, ready to circle every Friday to plan the duty shifts. Boong the Spotted Dog will ring the bell on Fridays. First tap the first Friday in December.",
+        "question": "Boong the Spotted Dog will ring the bell on Fridays. First, tap the first Friday of December."
+      }
     },
     {
       "id": "cac-thu-ba-thang-nam",
@@ -972,6 +1419,17 @@
         "answer": {
           "text": "Có 5 ngày thứ Sáu: 2, 9, 16, 23 và 30.",
           "explanation": "Các ngày thứ Sáu là 2, 9, 16, 23, 30 (mỗi lần thêm 7 ngày), tất cả có 5 ngày."
+        },
+        "en": {
+          "guide": [
+            "Two Fridays in a row are exactly 7 days apart.",
+            "Starting from the 2nd, keep adding 7 to get the next Friday."
+          ],
+          "hint": "2, 9, 16... what is the next day?",
+          "answer": {
+            "text": "There are 5 Fridays: the 2nd, 9th, 16th, 23rd and 30th.",
+            "explanation": "The Fridays are the 2nd, 9th, 16th, 23rd and 30th (adding 7 days each time), so there are 5 in all."
+          }
         }
       },
       "feedback": {
@@ -984,7 +1442,19 @@
           "Hai thứ Sáu liền nhau cách nhau đúng 7 ngày đấy.",
           "Đừng quên ngày thứ Sáu ở hàng cuối cùng.",
           "Đếm lại xem cột thứ Sáu có mấy ô mang số."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five Friday shifts, all the way to the 30th!",
+            "You add 7 so evenly that Milky White Cat is amazed.",
+            "The December Friday duty book is all written."
+          ],
+          "wrong": [
+            "Fridays that follow each other are exactly 7 days apart.",
+            "Don't forget the Friday on the bottom row.",
+            "Count again how many boxes in the Friday column have numbers."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -996,7 +1466,11 @@
           "b6": "o30"
         }
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "All the Fridays in December",
+        "prompt": "Milky White Cat wants to write down all the Friday shifts in December in her little notebook. Fill the gaps: December has _ Fridays, and they are the days _, _, _, _ and _."
+      }
     },
     {
       "id": "sinh-nhat-bac-ho",
@@ -1020,6 +1494,17 @@
         "answer": {
           "text": "Ngày 24 tháng 12 là thứ Bảy.",
           "explanation": "Ngày 23 tháng 12 là thứ Sáu, nên ngày 24 tháng 12 là thứ Bảy."
+        },
+        "en": {
+          "guide": [
+            "Find the box for the 24th on the December calendar.",
+            "Read the word at the top of the column that box is in."
+          ],
+          "hint": "The 23rd is a Friday, and the 24th comes right after it.",
+          "answer": {
+            "text": "24 December is a Saturday.",
+            "explanation": "The 23rd of December is a Friday, so the 24th of December is a Saturday."
+          }
         }
       },
       "feedback": {
@@ -1032,12 +1517,30 @@
           "Ô số 24 nằm ở cột khác cơ, dò lại nhé.",
           "Ngày 23 là thứ Sáu, thêm một ngày nữa là thứ mấy?",
           "Đọc chữ đầu cột của ngày 24 thật chậm nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Saturday! Boong the Spotted Dog will ring the longest bell of the winter.",
+            "You went from Friday to Saturday, how quick-witted.",
+            "The 24th of December is now circled in red on the calendar."
+          ],
+          "wrong": [
+            "The 24th is in a different column. Check again.",
+            "The 23rd is a Friday. What day comes one day later?",
+            "Read the word at the top of the column for the 24th very slowly."
+          ]
+        }
       },
       "answer": {
         "weekday": "thu-bay"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Star lantern night",
+        "goTo": "Go into the bell tower, where Boong the Spotted Dog is polishing the bell until it shines",
+        "prompt": "While polishing the bell until it gleams, Boong the Spotted Dog mentions the library's star-lantern night. The star-lantern night is on 24 December. What day of the week is that? The tower bell will ring extra long that day.",
+        "question": "The library's star lantern night is on 24 December. Which weekday is it? That day the tower bell will ring for a long time."
+      }
     },
     {
       "id": "o-trong-thang-sau",
@@ -1061,6 +1564,17 @@
         "answer": {
           "text": "Ngày 1",
           "explanation": "Ô mất số đầu tiên nằm ngay trước ngày 2, đó là ngày 1 tháng 11."
+        },
+        "en": {
+          "guide": [
+            "The first missing box could be the first day of the month.",
+            "Which day comes right before the 2nd?"
+          ],
+          "hint": "The first day of the month has lost its number too.",
+          "answer": {
+            "text": "The 1st",
+            "explanation": "The first box with a missing number is right before the 2nd. It is the 1st of November."
+          }
         }
       },
       "feedback": {
@@ -1073,12 +1587,30 @@
           "Ô mất số đầu tiên nằm ngay trước ngày 2.",
           "Nhìn vào hàng trên cùng của tờ lịch nhé.",
           "Tháng nào cũng bắt đầu từ ngày bao nhiêu nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 1st lost its number and you still found it. Brilliant!",
+            "The first box of November has been patched up.",
+            "Tick-Tock Bunny cheers: tick, there's the first day of the month!"
+          ],
+          "wrong": [
+            "The first missing box is right before the 2nd.",
+            "Look at the top row of the calendar.",
+            "Which day number does every month start from?"
+          ]
+        }
       },
       "answer": {
         "day": 1
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Empty squares on the November page",
+        "goTo": "Stop by the corner where the photo albums hang, where Tick-Tock Bunny holds the November sheet with missing numbers",
+        "prompt": "Plump Polar Bear used the November calendar as a fan, so some of its numbers got lost. Tap the first box with a missing number on the November calendar.",
+        "question": "Tap the first square that has lost its number on the November page."
+      }
     },
     {
       "id": "quoc-te-thieu-nhi",
@@ -1101,6 +1633,17 @@
         "answer": {
           "text": "Ngày 1 tháng 11 là thứ Ba.",
           "explanation": "Ô ngày 1 tháng 11 nằm dưới cột thứ Ba."
+        },
+        "en": {
+          "guide": [
+            "The 1st of November is the box you just patched.",
+            "Follow it straight up to the top of its column."
+          ],
+          "hint": "The 1st is at the start of the first row, near the start of the week.",
+          "answer": {
+            "text": "1 November is a Tuesday.",
+            "explanation": "The box for the 1st of November is under the Tuesday column."
+          }
         }
       },
       "feedback": {
@@ -1113,12 +1656,29 @@
           "Ngày 1 ở đầu hàng thứ nhất, sát đầu tuần đấy.",
           "Cột cậu chọn không chứa ngày 1 của tháng 11.",
           "Đọc chữ trên đầu cột của ô vừa vá nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tuesday! The seeds will sprout right at the start of the week.",
+            "You remembered the box you just patched. How quick-witted.",
+            "Boong the Spotted Dog wrote in his book: Tuesday off duty, going to sow seeds."
+          ],
+          "wrong": [
+            "The 1st is at the start of the first row, close to the start of the week.",
+            "The column you chose doesn't contain the 1st of November.",
+            "Read the word at the top of the column of the box you just patched."
+          ]
+        }
       },
       "answer": {
         "weekday": "thu-ba"
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Seed-sowing festival at the start of November",
+        "prompt": "Tick-Tock Bunny points at the box for the 1st, the day the library opens its seed-sowing festival in the garden. The 1st of November is the day the seed-sowing festival opens. What day of the week is it? Boong the Spotted Dog will take the day off from duty to go sowing seeds.",
+        "question": "1 November opens the seed-sowing festival. Which weekday is it? Boong the Spotted Dog will take the day off duty to sow seeds."
+      }
     },
     {
       "id": "thu-nam-tuan-truoc",
@@ -1142,6 +1702,17 @@
         "answer": {
           "text": "Ngày 16 tháng 11",
           "explanation": "Thứ Tư tuần trước là 23 – 7 = 16, tức ngày 16 tháng 11."
+        },
+        "en": {
+          "guide": [
+            "Last week is exactly 7 days before today.",
+            "Go up one row in the same Wednesday column."
+          ],
+          "hint": "What is left when you take 7 away from 23?",
+          "answer": {
+            "text": "16 November",
+            "explanation": "The Wednesday of last week is 23 – 7 = 16, which is the 16th of November."
+          }
         }
       },
       "feedback": {
@@ -1154,12 +1725,30 @@
           "Tuần trước nghĩa là lùi lại đúng 7 ngày.",
           "Ô cậu chọn không thuộc cột thứ Tư.",
           "Hãy đi lên một hàng, giữ nguyên cột thứ Tư nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 16th! You went back one week as precisely as the tower clock.",
+            "You went up exactly one row in the Wednesday column.",
+            "Boong the Spotted Dog writes the 16th in the duty book right away."
+          ],
+          "wrong": [
+            "Last week means going back exactly 7 days.",
+            "The box you chose isn't in the Wednesday column.",
+            "Go up one row, staying in the Wednesday column."
+          ]
+        }
       },
       "answer": {
         "day": 16
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Wednesday last week",
+        "goTo": "Climb back up to the top of the bell tower, where Boong the Spotted Dog waits with the duty book open",
+        "prompt": "Boong the Spotted Dog opens the duty book, points at the November calendar and sets a riddle about last week and next week. Today is Wednesday the 23rd of November. What date is the Wednesday of the week just before, and what date is the Wednesday of the week just after? First, tap the Wednesday of the week just before.",
+        "question": "Today is Wednesday 23 November. Which day was Wednesday of the week before, and which day is Wednesday of the week after? First, tap Wednesday of the week before."
+      }
     },
     {
       "id": "lich-truc-thang-sau",
@@ -1317,6 +1906,17 @@
         "answer": {
           "text": "Các ngày mất là 1, 4, 5, 12, 19 và 27; thứ Tư tuần trước là 16 tháng 11, thứ Tư tuần sau là 30 tháng 11.",
           "explanation": "Tờ lịch tháng 11 thiếu các ngày 1, 4, 5, 12, 19, 27. Thứ Tư tuần trước là 23 – 7 = 16, thứ Tư tuần sau là 23 + 7 = 30."
+        },
+        "en": {
+          "guide": [
+            "Each missing box sits between two complete days, exactly 1 more than the day on its left.",
+            "For next Wednesday add 7 days, and for last Wednesday take away 7 days."
+          ],
+          "hint": "23 + 7 = 30 and 23 – 7 = 16.",
+          "answer": {
+            "text": "The missing days are 1, 4, 5, 12, 19 and 27; last Wednesday is 16 November and next Wednesday is 30 November.",
+            "explanation": "The November sheet is missing the days 1, 4, 5, 12, 19, 27. Last Wednesday is 23 – 7 = 16 and next Wednesday is 23 + 7 = 30."
+          }
         }
       },
       "feedback": {
@@ -1329,7 +1929,19 @@
           "Có một ô vá đang mang số của ô nằm cạnh.",
           "Tuần sau nghĩa là cộng thêm 7 ngày vào ngày 23.",
           "Hai ô liền nhau thì hai số cũng phải liền nhau."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The November duty calendar is full, and Boong the Spotted Dog rings the bell to celebrate, bong bong!",
+            "You patched every box and worked out last week and next week. You did both jobs in full.",
+            "Nobody will miss a duty shift all through November now."
+          ],
+          "wrong": [
+            "One patched box has the number of the box next to it.",
+            "Next week means adding 7 days to the 23rd.",
+            "Two boxes side by side must have numbers side by side too."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1343,7 +1955,11 @@
           "b8": "30-thang-11"
         }
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "Complete the November duty calendar",
+        "prompt": "Boong the Spotted Dog holds a pen, waiting for {name} to read out the days to write into the duty calendar. The November sheet is missing six days: the day _ (right before the 2nd), the days _ and _ (two boxes side by side, between the 3rd and the 6th), the day _ (between the 11th and the 13th), the day _ (between the 18th and the 20th), the day _ (between the 26th and the 28th). Today is Wednesday the 23rd of November, so last week's Wednesday is the _ and next week's Wednesday is the _."
+      }
     },
     {
       "id": "huy-hieu-truc-chuong",
@@ -1364,7 +1980,7 @@
       "text": "Trên ban công tháp, Sâu Xanh nằm ngắm trời, đếm từng ngày chờ hóa bướm: \"Còn bao nhiêu ngày nữa nhỉ? Tớ đếm mãi mà cứ quên mất!\"",
       "en": {
         "title": "Green Caterpillar counts the days",
-        "text": "On the tower balcony, Green Caterpillar caterpillar lies gazing at the sky, counting the days until she turns into a butterfly: \"How many days are left? I keep counting and I keep forgetting!\""
+        "text": "On the tower balcony, Green Caterpillar lies gazing at the sky, counting the days until it turns into a butterfly: \"How many days are left? I keep counting and I keep forgetting!\""
       }
     }
   ],
@@ -1375,5 +1991,9 @@
       "xem-dong-ho": 2,
       "xem-lich": 1
     }
+  },
+  "en": {
+    "title": "Boong the Spotted Dog's Bell Duty Calendar",
+    "summary": "Nobody has signed up for bell duty on the library's clock tower next week. {name} helps Boong the Spotted Dog turn the clock hands, read the time, work out who is late, and read the December and November calendars to plan who rings the bell for opening time and story time."
   }
 }

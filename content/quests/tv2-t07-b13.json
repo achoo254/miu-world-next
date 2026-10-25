@@ -118,7 +118,11 @@
         "tv2-t07-day-nhay",
         "tv2-t07-long-chim-xanh",
         "tv2-t07-qua-cau-long"
-      ]
+      ],
+      "en": {
+        "title": "Three joys hiding around the yard",
+        "goTo": "Search around the slide for the three joys that are hiding"
+      }
     },
     {
       "id": "hat-em-yeu-truong-em",
@@ -183,6 +187,17 @@
         "answer": {
           "text": "Sân trường rộn tiếng reo, các bạn nô đùa đến ướt cả vai áo.",
           "explanation": "Cặp câu thứ hai tả giờ chơi có tiếng reo vang dài, và ai cũng đẫm mồ hôi vì mải vui."
+        },
+        "en": {
+          "guide": [
+            "Read the second pair of lines of the poem again.",
+            "The cheering and the sweaty shoulders tell you what the friends are doing."
+          ],
+          "hint": "If both shoulders are damp with sweat, they must have been running and jumping a lot.",
+          "answer": {
+            "text": "The schoolyard rings with cheers, and the friends play until their shirt shoulders are damp.",
+            "explanation": "The second pair of lines describes break time with a long, ringing cheer, and everyone is soaked in sweat from having so much fun."
+          }
         }
       },
       "feedback": {
@@ -195,9 +210,31 @@
           "Ối, trượt mất rồi! Đọc lại cặp câu bắt đầu bằng \"Giờ ra chơi\" nhé.",
           "Bài thơ đâu có nhắc tới mưa hay sân vắng, tìm lại hai dòng thơ ấy xem.",
           "Gần lắm! Bạn nào cũng ướt vai thì đang chơi hay đang ngồi yên nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ri flaps her wings: every break time is that noisy!",
+            "Spot on! Smoky Cat nods, and his whiskers nod along.",
+            "Yes, the long, ringing cheer across the yard belongs to break time."
+          ],
+          "wrong": [
+            "Oops, missed! Read the pair of lines that begins with «Giờ ra chơi» again.",
+            "The poem never mentions rain or an empty yard. Look at those two lines again.",
+            "Close! If every friend has damp shoulders, are they playing or sitting still?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-to"
+      "objective": "doc-tho-doc-to",
+      "en": {
+        "title": "The poem by the window frame",
+        "goTo": "Stop by the Art Room window, where a big leafy branch is waving",
+        "question": "The big leaf outside the window sways as if fanning the whole room. The poem is carved right on the wooden frame, and as soon as Ri has read it she asks: what is break time like in the poem?",
+        "choices": [
+          "A long, ringing cheer, and every friend is sweaty from playing so hard.",
+          "The schoolyard is silent, and everyone sits quietly indoors.",
+          "Rain pours down and the friends shelter under the eaves, waiting for it to stop."
+        ]
+      }
     },
     {
       "id": "khop-kho-tho-voi-tranh",
@@ -265,6 +302,17 @@
         "answer": {
           "text": "Tranh 1: cặp thơ thứ hai. Tranh 2: cặp thơ thứ ba. Tranh 3: cặp thơ cuối cùng.",
           "explanation": "Mỗi tranh vẽ đúng điều cặp thơ kể: sân chơi ồn ã, bạn ngồi cạnh cửa sổ, đoàn bạn qua cầu về trường."
+        },
+        "en": {
+          "guide": [
+            "Picture 1 shows break time: find the pair of lines with «giờ ra chơi».",
+            "Picture 2 has a window, and picture 3 has a bridge and the sound of a drum."
+          ],
+          "hint": "No picture shows the very first pair of lines, or the pair about the teacher.",
+          "answer": {
+            "text": "Picture 1: the second pair of lines. Picture 2: the third pair. Picture 3: the last pair.",
+            "explanation": "Each picture shows exactly what its pair of lines tells: a noisy playground, a friend sitting by a window, and a group of friends crossing the bridge back to school."
+          }
         }
       },
       "feedback": {
@@ -277,9 +325,32 @@
           "Có cặp thơ đi lạc tranh rồi. Tranh nào có một bạn ngồi bên cửa sổ nhỉ?",
           "Cặp thơ có nhành hoa tím và mây trôi hợp với tranh ngồi bên cửa sổ đấy.",
           "Cặp thơ nói về bờ sông và về lời cô giảng thì chưa có tranh nào đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three pictures found their lines, and Ri could gaze at them forever!",
+            "Every one matches! Smoky Cat gives a soft “meow”, which is big praise from him.",
+            "Brilliant, the drum and the bridge have gone to picture three."
+          ],
+          "wrong": [
+            "A pair of lines has wandered into the wrong picture. Which picture shows a friend sitting by a window?",
+            "The pair with the purple branch and the drifting clouds fits the picture of the friend by the window.",
+            "The pairs about the riverbank and about the teacher's words have no picture yet."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Match each verse to a picture",
+        "prompt": "Smoky Cat takes out three pictures of school life. Ri asks at once: why does every picture have a friend smiling? Drag each pair of poem lines to the picture that tells the same thing. A pair with no picture goes in the «Chưa có tranh» basket.",
+        "items": [
+          "The teacher's words are sweet as a poem,\nThe pages smell lovely, I wait for the next lesson.",
+          "At break time, a long cheer rings out,\nEvery friend has damp shoulders from sweat.",
+          "In the holidays I miss school for so long,\nThe drum sounds and calls friends across the bridge to the yard.",
+          "The school lies right beside the river,\nCasuarinas whisper in the wind over the fields in the early morning.",
+          "At the window desk I sit,\nThe crape myrtle branch waves and clouds drift by, carrying my dreams."
+        ]
+      }
     },
     {
       "id": "ban-nho-yeu-gi",
@@ -337,6 +408,17 @@
         "answer": {
           "text": "Gió trong hàng phi lao, tiếng reo giờ chơi, nhành bằng lăng và lời cô giảng.",
           "explanation": "Bốn điều ấy nằm ở các cặp câu một, hai, ba và bốn; ba thứ còn lại không có chữ nào trong bài."
+        },
+        "en": {
+          "guide": [
+            "Read each pair of lines and underline what the child sees or hears.",
+            "Choose only what is in the poem, not what you imagine."
+          ],
+          "hint": "The poem never mentions a slide, a swimming pool or a statue.",
+          "answer": {
+            "text": "The wind in the casuarinas, the cheering at break time, the crape myrtle branch and the teacher's words.",
+            "explanation": "Those four things are in the first, second, third and fourth pairs of lines; the other three do not appear anywhere in the poem."
+          }
         }
       },
       "feedback": {
@@ -349,9 +431,35 @@
           "Có lựa chọn không hề xuất hiện trong bài. Đọc lại từng cặp câu xem.",
           "Còn sót một điều ở cặp câu nói về cô giáo đấy.",
           "Ri thì thầm: bể bơi với tượng đá là tớ mơ thôi, bài thơ đâu có kể."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four! Ri counts again on her wing, and this time she doesn't get muddled.",
+            "Well picked! The crape myrtle branch outside waves hello to {name} too.",
+            "Exactly, the poem mentions everything from the wind in the casuarinas to the teacher's words."
+          ],
+          "wrong": [
+            "One choice is not in the poem at all. Read each pair of lines again.",
+            "You've missed one thing, in the pair of lines about the teacher.",
+            "Ri whispers: the swimming pool and the statue were only my dreams, the poem doesn't mention them."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "What does the child mention?",
+        "goTo": "Run back to the Flame Tree, where Ri is counting on her wing tips",
+        "prompt": "Ri counts on her wing tips: casuarinas, swimming pool… and gets in a complete muddle. Help her! Which things at school does the child in the poem mention? Pick them all.",
+        "choices": [
+          "Casuarinas whispering in the wind over the fields",
+          "A really tall slide",
+          "A long, ringing cheer at break time",
+          "A swimming pool with crystal clear water",
+          "A crape myrtle branch outside the window",
+          "A stone statue by the gate",
+          "The teacher's words, sweet as a poem"
+        ]
+      }
     },
     {
       "id": "nho-loi-co",
@@ -388,6 +496,17 @@
         "answer": {
           "text": "Lời cô được so sánh với thơ.",
           "explanation": "Dòng bảy viết lời cô giảng ngọt như thơ, nghĩa là nghe êm tai và dễ thương như câu thơ."
+        },
+        "en": {
+          "guide": [
+            "Find the pair of lines that mentions the teacher.",
+            "That line ends with a word for the kind of text you are reading right now."
+          ],
+          "hint": "The line says how sweet the teacher's words are.",
+          "answer": {
+            "text": "The teacher's words are compared to a poem.",
+            "explanation": "Line seven says the teacher's words are sweet as a poem, which means they sound soft and lovely like lines of verse."
+          }
         }
       },
       "feedback": {
@@ -400,9 +519,31 @@
           "Chưa đúng rồi. Đọc lại cặp câu thứ tư thật chậm nhé.",
           "Bài thơ không nhắc mưa rào hay chuông, tìm chữ đứng sau \"ngọt như\".",
           "Gần rồi! Dòng thơ có chữ \"giảng\" sẽ mách em đáp án."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Smoky Cat narrows his eyes in a smile: few words, much joy.",
+            "The teacher's words are as soft as a poem, and Ri scribbles it in her notebook with her beak.",
+            "Right, that comparison is in the first line of the fourth pair."
+          ],
+          "wrong": [
+            "Not quite. Read the fourth pair of lines again, slowly.",
+            "The poem doesn't mention a shower or a bell. Look for the words after «ngọt như».",
+            "Nearly! The line with the word «giảng» will tell you the answer."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "What is the teacher's voice like?",
+        "goTo": "Go to the Playground Steps, where Smoky Cat is sitting and licking his paw to wash his face",
+        "prompt": "Smoky Cat finishes washing his face and then asks exactly one question, not a word too many. In the poem, what are the teacher's words compared to?",
+        "choices": [
+          "A poem",
+          "A shower of rain",
+          "A ringing bell"
+        ]
+      }
     },
     {
       "id": "tu-the-hien-tinh-cam",
@@ -450,6 +591,17 @@
         "answer": {
           "text": "Bạn nhỏ nhớ trường dù đang nghỉ hè.",
           "explanation": "Cặp câu cuối nói: nghỉ hè, em nhớ trường lâu; từ \"nhớ\" chỉ tình cảm gắn bó với ngôi trường."
+        },
+        "en": {
+          "guide": [
+            "Read the first line of the last pair of lines in the poem.",
+            "The missing word says how the child feels when away from school."
+          ],
+          "hint": "People often feel this way when they are far from a place they know well.",
+          "answer": {
+            "text": "The child «nhớ» school, even during the holidays.",
+            "explanation": "The last pair says: in the holidays, I miss school for so long; the word «nhớ» names the feeling of being attached to the school."
+          }
         }
       },
       "feedback": {
@@ -462,9 +614,25 @@
           "Từ này chưa hợp với một bạn rất yêu trường. Đọc lại câu cuối bài nhé.",
           "Thử đọc to cả câu sau khi điền, nghe có xuôi tai không?",
           "Người ở xa một nơi mình thương thường thấy gì nhỉ? Thử lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "«Nhớ»! Ri shouts so loudly that the birds in the tree jump and fly off.",
+            "That's the word, short but holding a whole heart-full of feeling.",
+            "Smoky Cat swishes his tail very slowly: spot on."
+          ],
+          "wrong": [
+            "That word doesn't suit a child who loves school so much. Read the last line again.",
+            "Try reading the whole sentence aloud after filling in. Does it sound right?",
+            "What does a person usually feel far from a place they love? Try again."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-dien-tu"
+      "objective": "tu-ngu-tinh-cam-dien-tu",
+      "en": {
+        "title": "One word full of heart",
+        "prompt": "Ri chirps: why does the child in the poem keep talking about school even in the holidays? Smoky Cat answers shortly: fill in the one right word for a feeling and you'll understand."
+      }
     },
     {
       "id": "ghep-cau-dac-diem",
@@ -519,6 +687,17 @@
         "answer": {
           "text": "Giọng cô giáo ấm áp. Sân trường giờ ra chơi ồn ã. Nhành bằng lăng tím biếc.",
           "explanation": "Mỗi câu nêu đặc điểm: giọng cô nghe ấm áp, sân chơi đông nên ồn ã, hoa bằng lăng có màu tím biếc."
+        },
+        "en": {
+          "guide": [
+            "Read aloud each sentence you make and see if it sounds right.",
+            "Is a voice warm or purple? Is a break-time yard quiet or noisy?"
+          ],
+          "hint": "A colour suits a flower.",
+          "answer": {
+            "text": "Giọng cô giáo ấm áp. Sân trường giờ ra chơi ồn ã. Nhành bằng lăng tím biếc. (The teacher's voice is warm; the break-time playground is noisy; the crape myrtle branch is deep purple.)",
+            "explanation": "Each sentence describes something: the teacher's voice sounds «ấm áp», a busy playground is «ồn ã», and a crape myrtle flower is «tím biếc»."
+          }
         }
       },
       "feedback": {
@@ -531,9 +710,31 @@
           "Có một câu nghe chưa xuôi tai. Đọc to từng câu thử xem.",
           "Thử ghép \"tím biếc\" với thứ có màu sắc, như một loài hoa.",
           "Sân trường giờ ra chơi đông vui, tìm thẻ hợp với nó nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three sentences fit together like joints in wood!",
+            "Ri reads all three aloud, and her voice no longer trembles.",
+            "Wonderful, the schoolyard at break time is just as «ồn ã» as it is right now."
+          ],
+          "wrong": [
+            "One sentence doesn't sound right. Read each one aloud.",
+            "Try pairing «tím biếc» with something that has a colour, like a flower.",
+            "The schoolyard at break time is busy and cheerful. Find the card that fits it."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-cau-dac-diem"
+      "objective": "tu-chi-dac-diem-cau-dac-diem",
+      "en": {
+        "title": "Three wooden pieces missing their second half",
+        "goTo": "Cross to the Flame Tree, where Ri has found three wooden pieces with carved words",
+        "prompt": "Ri has found three wooden pieces with carved words, and every piece is missing its second half. Why are they missing? Drag each card onto the right wooden piece to make a sentence describing something.",
+        "items": [
+          "ồn ã.",
+          "tím biếc.",
+          "ấm áp."
+        ]
+      }
     },
     {
       "id": "heo-un-goi-an-trua",
@@ -672,6 +873,17 @@
         "answer": {
           "text": "Thỏ Mơ mở cặp, rồi các bạn góp thức ăn, rồi cả nhóm ăn chung, cuối cùng là hôm sau Thỏ Mơ chia cơm.",
           "explanation": "Bốn tranh đi theo lời Heo Bột: quên cơm, được bạn chia, ăn chung vui vẻ, rồi hôm sau tới lượt Thỏ Mơ chia lại."
+        },
+        "en": {
+          "guide": [
+            "The story begins when Mơ the Rabbit finds he has forgotten his lunch.",
+            "The friends add their food first, and only then do they eat together."
+          ],
+          "hint": "The last picture is the next day, when Mơ the Rabbit has a big lunchbox.",
+          "answer": {
+            "text": "Mơ the Rabbit opens his bag, then the friends add their food, then the whole group eats together, and last of all, the next day, Mơ the Rabbit shares his lunch.",
+            "explanation": "The four pictures follow Flour Pig's story: a forgotten lunch, friends sharing, a happy meal together, and the next day it is Mơ the Rabbit's turn to share."
+          }
         }
       },
       "feedback": {
@@ -684,9 +896,32 @@
           "Các bạn phải biết Thỏ Mơ thiếu cơm rồi mới góp thức ăn được chứ.",
           "Hôm sau là lúc cuối cùng, để tranh Thỏ Mơ bê hộp cơm xuống chót nhé.",
           "Cả nhóm chỉ ăn chung sau khi mọi người đã góp món, tìm lại tranh ấy xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Oink! Perfect order, and Flour Pig rewards you with the loudest oink of the day.",
+            "Right order, and the story smells as lovely as a pot of pumpkin soup.",
+            "Ri gasps: how did {name} sort them so fast?"
+          ],
+          "wrong": [
+            "The friends have to know Mơ the Rabbit has no lunch before they can add their food.",
+            "The next day comes last, so put the picture of Mơ the Rabbit carrying his lunchbox at the end.",
+            "The group only eats together after everyone has added a dish. Look for that picture again."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four pictures on the Canteen Wall",
+        "goTo": "Look up at the Canteen Wall, where four pictures are stuck up all jumbled",
+        "prompt": "The four pictures of the lunchbox story Flour Pig has just told have been blown about on the Canteen Wall, and Flour Pig, busy tasting the soup, stuck them all up in the wrong order. Put them back in the right order for the story.",
+        "items": [
+          "The whole group eats together",
+          "Mơ the Rabbit opens his bag",
+          "The next day Mơ the Rabbit shares his lunch",
+          "Friends add their food"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-bua-trua",
@@ -807,5 +1042,9 @@
       "cau": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "Ri the Chick Misses Home at Playtime",
+    "summary": "At break time Ri the Chick sits alone under the Flame Tree, missing her straw nest and asking “why” non-stop. {name}, Smoky Cat and Flour Pig look for fun around the slide, read a six-eight verse poem by the Art Room window and hear the lunchbox story in the Canteen, so that Ri comes to love her new school."
   }
 }

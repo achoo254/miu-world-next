@@ -125,7 +125,11 @@
         "tv2-t14-ngoi-sao-giay",
         "tv2-t14-vo-oc-bien",
         "tv2-t14-chum-nhan"
-      ]
+      ],
+      "en": {
+        "title": "Mẩy's three clues",
+        "goTo": "Search all over the straw yard around the nest for the three clues Mẩy dropped"
+      }
     },
     {
       "id": "ke-ve-em-be",
@@ -176,6 +180,17 @@
         "answer": {
           "text": "Bạn nhỏ hỏi mẹ xem em bé đã đến nhà từ nơi nào.",
           "explanation": "Dòng \"Mẹ ơi, em từ đâu\" mở đầu khổ hai là câu hỏi của bạn nhỏ, sau đó bạn đoán nhiều nơi em có thể đến."
+        },
+        "en": {
+          "guide": [
+            "Read the second verse again.",
+            "After calling \"Mẹ ơi\", what does the child ask?"
+          ],
+          "hint": "The child's question is also what Mẩy has been wondering since morning.",
+          "answer": {
+            "text": "The child asks Mum where the baby came from before arriving at home.",
+            "explanation": "The line \"Mẹ ơi, em từ đâu\" opens the second verse; it is the child's question, and then the child guesses at many places the baby might have come from."
+          }
         }
       },
       "feedback": {
@@ -188,9 +203,30 @@
           "Bài thơ chưa hỏi chuyện biết nói đâu. Đọc lại khổ thơ thứ hai nhé.",
           "Diều chỉ là một nơi bạn nhỏ đoán thôi. Bạn hỏi em bé từ đâu tới cơ.",
           "Gần rồi! Tìm dòng có tiếng gọi \"Mẹ ơi\" xem bạn nhỏ hỏi gì."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Mẩy nods again and again: I've asked Mum this question twenty times!",
+            "Right! The child in the poem is as curious as a chick.",
+            "Well done, {name} found the question at the start of verse two."
+          ],
+          "wrong": [
+            "The poem doesn't ask about talking yet. Read the second verse again.",
+            "A kite is just one place the child guesses. The child asks where the baby came from.",
+            "Close! Find the line with \"Mẹ ơi\" and see what the child asks."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem by the egg",
+        "question": "Mẩy cries out: \"This child asked exactly what I did!\" What did the child in the poem ask Mum?",
+        "choices": [
+          "Where did the baby come from?",
+          "When will the baby learn to talk?",
+          "Does the baby like flying kites?"
+        ]
+      }
     },
     {
       "id": "ta-em-be",
@@ -254,6 +290,17 @@
         "answer": {
           "text": "Má em hồng quả đào / Mắt đen như hạt na / Tay mềm như bông gòn / Chân đi còn chập chững",
           "explanation": "Bạn nhỏ tả má hồng như quả đào, mắt đen như hạt na, tay mềm như bông gòn và đôi chân còn chập chững."
+        },
+        "en": {
+          "guide": [
+            "Read the first verse again, starting from the line \"Má em…\".",
+            "Each line describes one part of the baby: cheeks, eyes, hands, feet."
+          ],
+          "hint": "The baby has only just started to walk, so the steps are not steady yet, which is called «chập chững».",
+          "answer": {
+            "text": "My cheeks are pink as a peach / My eyes are black as a custard-apple seed / My hands are soft as cotton wool / My feet still wobble as I walk",
+            "explanation": "The child describes cheeks pink as a peach, eyes black as custard-apple seeds, hands soft as cotton wool and feet still toddling."
+          }
         }
       },
       "feedback": {
@@ -266,9 +313,26 @@
           "Bàn tay em bé mềm như cái gì nhỉ? Đọc lại dòng thứ ba nhé.",
           "Đôi má thì không biết đi chập chững đâu! Mảnh đó thuộc về bước chân.",
           "Đôi mắt đen như hạt gì nhỉ? Xem lại dòng thứ hai của khổ đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The verse is whole again! Papa Rooster is embarrassed and promises to crow more quietly from now on.",
+            "All correct! Mẩy imagines her little sibling pink like a peach and her comb quivers with joy.",
+            "Four pieces in the right place, {name} knows the poem so well!"
+          ],
+          "wrong": [
+            "What are the baby's hands as soft as? Read the third line again.",
+            "Cheeks can't toddle! That piece belongs to the footsteps.",
+            "Eyes as black as which seeds? Look at the second line of the first verse."
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "The verse with missing words",
+        "goTo": "The wind blows the scrap of poem to the bamboo clump at the head of the lane, where Chestnut Fox is bending down to help pick it up",
+        "prompt": "Papa Rooster is reading the first verse out to Mẩy, but he's so nervous that he keeps crowing \"Cock-a-doodle-doo!\" and the pieces of the poem scatter. Match each piece with the part of the baby it describes."
+      }
     },
     {
       "id": "em-tu-dau-den",
@@ -317,6 +381,17 @@
         "answer": {
           "text": "ngôi sao, cánh diều, vỏ ốc, đám mây",
           "explanation": "Khổ hai đoán em từ ngôi sao hoặc cánh diều đến; khổ ba đoán em nằm trong vỏ ốc hoặc ngồi trên đám mây."
+        },
+        "en": {
+          "guide": [
+            "Read the second verse: \"Phải từ ngôi sao xa…\".",
+            "Then read the third verse: \"Hay nằm trong vỏ ốc…\"."
+          ],
+          "hint": "Four places are right. «Bông gòn» (cotton wool) only appears in the first verse, describing the baby's hands.",
+          "answer": {
+            "text": "star, kite, snail shell, cloud",
+            "explanation": "Verse two guesses the baby came from a star or a kite; verse three guesses the baby lay in a snail shell or sat on a cloud."
+          }
         }
       },
       "feedback": {
@@ -329,9 +404,32 @@
           "\"Bông gòn\" ở khổ đầu là để tả bàn tay em, chưa phải nơi em đến.",
           "Còn sót một nơi ở khổ ba: em \"ngồi trên\" cái gì nhỉ?",
           "Đếm lại nhé: khổ hai có hai nơi, khổ ba cũng có hai nơi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four! Mẩy hugs her three clues tight: so I guess as well as a poet!",
+            "Right! Star, kite, shell, cloud: the child guessed so cleverly.",
+            "Mother Hen smiles: {name} reads more carefully than Mẩy does."
+          ],
+          "wrong": [
+            "The cotton wool in the first verse describes the baby's hands, it isn't a place the baby came from.",
+            "There's one place left in verse three: what does the baby \"sit on\"?",
+            "Count again: verse two has two places, and verse three has two places as well."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Which clue is right?",
+        "prompt": "Mẩy holds up the paper star, the snail shell and the cluster of longan high: \"Why did that child guess so many places?\" Which places did the child in the poem guess the baby might have come from? Choose all of them.",
+        "choices": [
+          "star",
+          "kite",
+          "snail shell",
+          "cotton wool",
+          "cloud"
+        ]
+      }
     },
     {
       "id": "em-mang-den-gi",
@@ -368,6 +466,17 @@
         "answer": {
           "text": "Em mang đến tiếng bi bô cười nói và niềm vui lớn.",
           "explanation": "Trong khổ cuối, mẹ cười và nói em bé mang đến cho nhà tiếng nói cười bi bô cùng niềm vui thật lớn."
+        },
+        "en": {
+          "guide": [
+            "Read the last verse, especially Mum's reply.",
+            "Stars, clouds, kites and shells are just the child's guesses; what does Mum say the baby brings?"
+          ],
+          "hint": "The last two lines of the poem answer this question.",
+          "answer": {
+            "text": "The baby brings babbling, laughing voices and great joy.",
+            "explanation": "In the last verse, Mum smiles and says the baby brings the home the sound of babbling talk and laughter, and great joy."
+          }
         }
       },
       "feedback": {
@@ -380,9 +489,31 @@
           "Sao và mây chỉ là những nơi bạn nhỏ đoán thôi. Đọc lại lời mẹ đáp ở khổ cuối nhé.",
           "Diều và ốc cũng là điều bạn nhỏ đoán, còn mẹ thì trả lời khác cơ.",
           "Gợi ý: thứ em mang đến khiến Mẩy hết lo bị quên đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Mother Hen kisses the top of Mẩy's head: with the baby the house gets merrier and nobody is forgotten.",
+            "Mẩy sighs with relief: so the baby brings more joy, not takes away my share!",
+            "{name} heard Mum's reply in the last verse just right, so warm."
+          ],
+          "wrong": [
+            "Stars and clouds are only places the child guessed. Read Mum's reply in the last verse again.",
+            "Kites and shells are the child's guesses too, while Mum answers differently.",
+            "Hint: what the baby brings is what makes Mẩy stop worrying about being forgotten."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Mẩy is afraid of being forgotten",
+        "goTo": "Mẩy dashes back to her straw nest, hugging the egg tightly",
+        "prompt": "Mẩy hugs the egg and whispers: \"Now the baby's here, will Mum love me less?\" Mother Hen spreads her wing around Mẩy and reads the last verse. According to Mum's words in the poem, what does the baby bring to the whole family?",
+        "choices": [
+          "The sound of talking and laughing, and joy",
+          "Stars and clouds",
+          "A kite and a snail shell"
+        ]
+      }
     },
     {
       "id": "tu-ta-em-be",
@@ -440,6 +571,17 @@
         "answer": {
           "text": "bụ bẫm, ngộ nghĩnh, mềm mại, tròn trịa",
           "explanation": "Bốn từ ấy tả dáng vẻ dễ thương của em bé; gân guốc, còng lưng, bạc phơ thường dùng cho người lớn tuổi hoặc người rắn rỏi."
+        },
+        "en": {
+          "guide": [
+            "Think of a real baby: how do the skin, cheeks and hands look?",
+            "Words that sound round, soft and cute suit a baby."
+          ],
+          "hint": "Four words are right. «Bạc phơ» is snow-white hair of an old person, «gân guốc» is a strong wiry person, and «còng lưng» is the posture of an elderly person.",
+          "answer": {
+            "text": "bụ bẫm (chubby), ngộ nghĩnh (cute), mềm mại (soft), tròn trịa (round)",
+            "explanation": "Those four words describe a baby's cute looks; «gân guốc», «còng lưng» and «bạc phơ» are usually used for elderly or tough people."
+          }
         }
       },
       "feedback": {
@@ -452,9 +594,35 @@
           "Em bé mà gân guốc thì Mẩy giật mình mất! Bỏ từ đó ra nhé.",
           "Em bé đâu có còng lưng như ông bà, chọn từ tả em tròn trịa, dễ thương thôi.",
           "Còn sót một từ tả làn da em bé mềm như bông đấy, tìm lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A word store full to the brim! Mẩy mumbles them to learn them by heart, to praise the baby loudly.",
+            "All four words! Papa Rooster was about to crow a celebration, and just managed to shut his beak.",
+            "Wonderful, every word {name} chose is as round and lovely as a baby."
+          ],
+          "wrong": [
+            "A wiry baby would give Mẩy a fright! Take that word out.",
+            "A baby doesn't have a bent back like Grandpa and Grandma. Choose words for a round, cute baby.",
+            "One more word describes a baby's skin as soft as cotton. Look again."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "A treasure of words to praise a baby",
+        "goTo": "Out to the empty lot by the fence, where Steamed Bun Panda keeps a whole bag of words for praising a baby",
+        "prompt": "Mẩy wants to collect lots of words to praise the baby the moment she hatches. Choose the words that suit a baby.",
+        "choices": [
+          "bụ bẫm",
+          "gân guốc",
+          "ngộ nghĩnh",
+          "còng lưng",
+          "mềm mại",
+          "bạc phơ",
+          "tròn trịa"
+        ]
+      }
     },
     {
       "id": "cau-khen-em",
@@ -582,6 +750,17 @@
         "answer": {
           "text": "Dì Hạnh là chị gái của mẹ. Bác Sáu là anh trai của bố. Ông bà ngoại, dì và cậu đều thuộc họ ngoại. Ông bà nội, cô và chú đều thuộc họ nội.",
           "explanation": "Ông bà ngoại, dì, cậu là người nhà bên mẹ nên thuộc họ ngoại; ông bà nội, cô, chú là người nhà bên bố nên thuộc họ nội."
+        },
+        "en": {
+          "guide": [
+            "«Dì» is Mum's older or younger sister; «bác» is Dad's older brother or sister.",
+            "Relatives on Mum's side are «họ ngoại», relatives on Dad's side are «họ nội»."
+          ],
+          "hint": "«Dì» goes with Mum, «bác» goes with Dad. Mum's side is «ngoại», Dad's side is «nội».",
+          "answer": {
+            "text": "Dì Hạnh is Mum's older sister. Bác Sáu is Dad's older brother. Maternal grandparents, dì and cậu all belong to the mother's side. Paternal grandparents, cô and chú all belong to the father's side.",
+            "explanation": "Maternal grandparents, «dì» and «cậu» are family on Mum's side, so they are «họ ngoại»; paternal grandparents, «cô» and «chú» are family on Dad's side, so they are «họ nội»."
+          }
         }
       },
       "feedback": {
@@ -594,9 +773,26 @@
           "Dì Hạnh là chị gái của mẹ hay của bố nhỉ? Dì thân với mẹ lắm đấy.",
           "Ô thứ ba có ông bà ngoại, dì và cậu: họ là người nhà bên mẹ, vậy thuộc họ nào?",
           "Ông bà nội, cô và chú là người nhà bên bố. Bên bố là họ nội, thử lại ô cuối nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All correct! Mẩy lines up the relatives in two rows: Dad's side in one, Mum's side in the other.",
+            "Right! For the first time Mẩy doesn't ask \"Why?\" because she understands.",
+            "{name} is so good, remembering both sides of the family."
+          ],
+          "wrong": [
+            "Is Auntie Hạnh the older sister of Mum or of Dad? She's very close to Mum.",
+            "In the third gap, maternal grandparents, «dì» and «cậu» are on Mum's side. Which side is that?",
+            "Paternal grandparents, «cô» and «chú» are on Dad's side. Dad's side is «họ nội», try the last gap again."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-dien-tu"
+      "objective": "tu-ngu-tinh-cam-dien-tu",
+      "en": {
+        "title": "Relatives come to visit the baby",
+        "goTo": "Back to Mẩy's straw nest, where relatives from both sides have crowded into the yard",
+        "prompt": "Mẩy's relatives all come together to visit the egg. Mẩy asks in one breath: \"Why is Auntie on Mum's side? Why is Uncle on Dad's side? Why…\" Fill in the blanks with the words in brackets."
+      }
     },
     {
       "id": "ghep-cau-thiep-moi",
@@ -651,6 +847,17 @@
         "answer": {
           "text": "Em bé đang tập bò. Anh trai của em chăm đọc sách. Bà ngoại của em tóc đã bạc.",
           "explanation": "Mỗi câu ghép người ở cột A với điều hợp với người đó ở cột B."
+        },
+        "en": {
+          "guide": [
+            "Column A is people, column B says what the person is like or is doing.",
+            "Match each pair, then read the whole sentence aloud to see if it fits."
+          ],
+          "hint": "Grandma's hair is already grey, the older brother who goes to school loves reading, and the baby is learning to crawl.",
+          "answer": {
+            "text": "The baby is learning to crawl. My older brother loves reading. My maternal grandmother's hair has gone grey.",
+            "explanation": "Each sentence matches a person in column A with what suits that person in column B."
+          }
         }
       },
       "feedback": {
@@ -663,9 +870,26 @@
           "\"Em bé tóc đã bạc\" nghe buồn cười quá! Đổi mảnh khác cho em bé nhé.",
           "Ai đi học mới cần chăm đọc sách? Thử ghép lại cho anh trai của em.",
           "Bà ngoại thì tóc bạc rồi. Mảnh nào hợp với bà nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three sentences fit like three pieces of the card! Papa Rooster sticks them back at once.",
+            "Lovely! It sounds smooth, and Mother Hen nods with praise.",
+            "Right, {name} puts sentences together faster than Mẩy runs off to ask questions."
+          ],
+          "wrong": [
+            "\"The baby's hair is already grey\" sounds funny! Swap in another piece for the baby.",
+            "Who goes to school and so needs to love reading? Try matching it to the older brother.",
+            "Grandma's hair is grey already. Which piece suits her?"
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "The card the wind blew apart",
+        "goTo": "Chase the scrap of card to the fig tree by the lane, where Thơm the Mushroom Picker Sister has caught it",
+        "prompt": "Papa Rooster wrote invitation cards for the relatives, but flapped his wings so hard that the pieces flew everywhere. Match each person in column A with something that suits them in column B to make sentences."
+      }
     },
     {
       "id": "van-ien-yen-uyen",
@@ -764,6 +988,17 @@
         "answer": {
           "text": "khuyên; yên; tiên; biên",
           "explanation": "Chim khuyên viết vần uyên; ngủ yên viết yên vì không có âm đầu; cô tiên và biên giới viết vần iên."
+        },
+        "en": {
+          "guide": [
+            "Read each word with the missing rhyme aloud: kh…, ngủ …, t…, b….",
+            "The rhyme «yên» stands alone with no starting sound; «uyên» has a «u» in front."
+          ],
+          "hint": "Sleeping soundly with no noise is written «yên»; the little bird called «khuyên» has the rhyme «uyên».",
+          "answer": {
+            "text": "khuyên (finch); yên (peace); tiên (fairy); biên (border)",
+            "explanation": "The «khuyên» bird is spelt with «uyên»; «ngủ yên» is spelt «yên» with no starting sound; «cô tiên» and «biên giới» are spelt with «iên»."
+          }
         }
       },
       "feedback": {
@@ -776,9 +1011,26 @@
           "\"Ngủ yên\" không có âm đầu nào đứng trước, nên dùng vần nào nhỉ?",
           "Chim \"kh…\" hót trên cành có chữ u đứng trước vần, thử lại ô đầu nhé.",
           "\"Cô tiên\" và \"biên giới\" dùng chung một vần, kiểm lại hai ô cuối nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The lullaby is complete! The egg rocks gently as if listening.",
+            "All four rhymes right, and Mother Hen sings it again without stumbling once.",
+            "{name} tells «iên», «yên» and «uyên» apart as sure as a nail hammered in!"
+          ],
+          "wrong": [
+            "«Ngủ yên» has no starting sound in front. Which rhyme is it?",
+            "The bird «kh…» singing on the branch has a «u» before the rhyme. Try the first gap again.",
+            "«Cô tiên» and «biên giới» use the same rhyme. Check the last two gaps again."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "The lullaby for the egg",
+        "goTo": "Back to Mẩy's straw nest, where Mother Hen is softly singing a lullaby to the egg",
+        "prompt": "Mother Hen sings a four-line lullaby to the egg, but Mẩy keeps butting in with \"Why?\" so some rhymes got lost. Fill in «iên», «yên» or «uyên» at each gap."
+      }
     },
     {
       "id": "dat-hay-rat",
@@ -860,6 +1112,17 @@
         "answer": {
           "text": "Em bé có làn da mịn màng. Mẹ ra chợ từ sớm. Bà úp chiếc rá tre lên chạn bát. Mẹ mua một nắm giá đỗ về xào.",
           "explanation": "Da (phần bọc ngoài cơ thể), ra (đi ra), rá (đồ đan bằng tre), giá (giá đỗ) là bốn từ viết đúng chính tả."
+        },
+        "en": {
+          "guide": [
+            "«Da» is the skin covering the body; «ra» means to go from inside to outside.",
+            "«Rá» is a woven container for holding and rinsing vegetables; «giá» is bean sprouts."
+          ],
+          "hint": "A baby has smooth skin («da»); Mum goes out («ra») to the market; bean sprouts are «giá đỗ»; a bamboo «rá» is for holding things.",
+          "answer": {
+            "text": "The baby has smooth skin. Mum went to the market early. Grandma put a bamboo basket over the dish cupboard. Mum bought a handful of bean sprouts to stir-fry. (da, ra, rá, giá)",
+            "explanation": "«Da» (the skin covering the body), «ra» (to go out), «rá» (a woven bamboo container) and «giá» (bean sprouts) are the four correctly spelt words."
+          }
         }
       },
       "feedback": {
@@ -872,9 +1135,25 @@
           "Làn gì mịn màng của em bé nhỉ? Thử lại ô đầu nhé.",
           "Mẹ đi từ nhà tới chợ thì dùng \"ra\" hay \"da\"? Đọc to xem sao.",
           "Một nắm rau mầm để xào là \"giá\" đỗ, còn \"rá\" dùng để đựng, đổi lại hai ô cuối xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Reading smoothly now! A soft tap sounds from inside the egg like applause.",
+            "All right! Mẩy's tongue stops tripping, and she reads out loud like a real big sibling.",
+            "Four words spot on, {name} has such sharp ears!"
+          ],
+          "wrong": [
+            "What is smooth on a baby? Try the first gap again.",
+            "Mum goes from the house to the market: is it «ra» or «da»? Read it aloud.",
+            "A handful of sprouts for stir-frying is «giá» đỗ, and «rá» is for holding things. Swap the last two gaps and see."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Practise reading to the baby",
+        "prompt": "Mẩy practises being a big sibling: reading aloud to the little one inside the egg, but keeps tripping over «d» and «r», «gi» and «r». Fill in the right word at each gap."
+      }
     },
     {
       "id": "ai-hay-ay",
@@ -957,6 +1236,17 @@
         "answer": {
           "text": "mai, mây, hai, chai",
           "explanation": "Mai, hai, chai có vần ai; mây có vần ây."
+        },
+        "en": {
+          "guide": [
+            "Read each riddle aloud and listen to the end rhyme: «ai» or «ay».",
+            "Think of the apricot blossom at Tết, a cloud in the sky, the number two, a bottle."
+          ],
+          "hint": "Yellow flowers at Tết are «mai»; drifting in the sky is «mây»; after one comes «hai»; holding water is a «chai».",
+          "answer": {
+            "text": "mai (apricot blossom), mây (cloud), hai (two), chai (bottle)",
+            "explanation": "«Mai», «hai» and «chai» have the rhyme «ai»; «mây» has the rhyme «ây»."
+          }
         }
       },
       "feedback": {
@@ -969,9 +1259,26 @@
           "Hoa vàng nở dịp Tết là hoa gì nhỉ? Đọc to nghe vần cuối xem.",
           "Thứ trôi lững lờ trên trời có dáng bồng bềnh, không phải mái nhà đâu.",
           "Số đứng sau số một, đếm lên: một, …? Đọc thật chậm xem vần ai hay ay."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four right! Mẩy flaps her wings: how are you so good?",
+            "Yes, mai, mây, hai, chai, no rhyme mixed up!",
+            "{name} reads riddles more sharply than a chick's eyes."
+          ],
+          "wrong": [
+            "What yellow flower blooms at Tết? Read it aloud and listen to the end rhyme.",
+            "The thing that drifts in the sky is fluffy and floating, not a roof.",
+            "The number after one: count up: one, …? Say it very slowly and hear «ai» or «ay»."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Mẩy's puzzle picture",
+        "goTo": "Out to the empty lot by the fence, where Steamed Bun Panda makes room for Mẩy to draw riddle pictures",
+        "prompt": "Mẩy scratches four riddles on the ground with her beak, numbers them 1, 2, 3, 4 and challenges {name}. Choose the correctly spelt word for each number."
+      }
     },
     {
       "id": "qua-trung-nut",
@@ -1114,6 +1421,17 @@
         "answer": {
           "text": "Em hay nằm nói bi bô một mình. Đôi mắt em tròn xoe nhìn quanh. Hai má em mũm mĩm.",
           "explanation": "Bi bô hợp với tiếng nói, tròn xoe hợp với đôi mắt, mũm mĩm hợp với đôi má của em bé."
+        },
+        "en": {
+          "guide": [
+            "«Bi bô» is the sound of a baby learning to talk; «tròn xoe» describes wide-open eyes; «mũm mĩm» describes chubby cheeks.",
+            "Try each word in the sentence; keep the one that sounds natural and fits the meaning."
+          ],
+          "hint": "A baby babbles («bi bô»); eyes are round («tròn xoe»); cheeks are chubby («mũm mĩm»).",
+          "answer": {
+            "text": "The baby often lies babbling to herself. Her eyes are wide and round as she looks around. Both her cheeks are chubby.",
+            "explanation": "«Bi bô» fits talking, «tròn xoe» fits the eyes, and «mũm mĩm» fits a baby's cheeks."
+          }
         }
       },
       "feedback": {
@@ -1126,9 +1444,25 @@
           "Nói thì phải đi với từ chỉ tiếng nói của em bé, chứ không phải tả má đâu.",
           "Đôi mắt thì tròn chứ đâu mũm mĩm. Đổi chỗ hai từ xem sao.",
           "Hai má bụ bẫm thì hợp với từ nào nhất? Thử lại ô cuối nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! The chick blinks her round eyes and Mẩy jumps for joy.",
+            "All three gaps right! Mother Hen praises {name} for describing a baby so sweetly.",
+            "Lovely, reading it you can see a sweet little baby."
+          ],
+          "wrong": [
+            "Talking goes with a word for a baby's voice, not a word describing cheeks.",
+            "Eyes are round, not chubby. Swap the two words and see.",
+            "Which word suits chubby cheeks best? Try the last gap again."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-dien-tu"
+      "objective": "tu-ngu-tinh-cam-dien-tu",
+      "en": {
+        "title": "The baby chick's eyes",
+        "prompt": "The golden-feathered chick opens her eyes and stares at Mẩy without blinking. Mother Hen smiles and tells Mẩy about little Bống next door. Choose the words in brackets to fill the blanks."
+      }
     },
     {
       "id": "doc-tho-cho-em",
@@ -1212,5 +1546,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Mẩy the Chick Welcomes the Baby",
+    "summary": "In the little lane of the hamlet, Mẩy the Chick's family is about to welcome a baby from an egg, and Mẩy worries about being forgotten. {name} and Mẩy read the poem «Em bé từ đâu đến», ask all the neighbours along the lane, and wait for the baby to hatch."
   }
 }

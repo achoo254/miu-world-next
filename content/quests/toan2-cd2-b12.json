@@ -95,7 +95,11 @@
         "toan2-cd2-long-tre-xanh",
         "toan2-cd2-long-tre-vang",
         "toan2-cd2-long-tre-cut"
-      ]
+      ],
+      "en": {
+        "title": "Pick up the faraway bamboo sections",
+        "goTo": "Pick up three bamboo joints that flew all over the Bamboo Stall"
+      }
     },
     {
       "id": "robot-va-gau-truc",
@@ -168,6 +172,17 @@
         "answer": {
           "text": "12 – 9 = 3; 14 – 5 = 9; 11 – 7 = 4; 13 – 8 = 5",
           "explanation": "14 – 5 = 9, 11 – 7 = 4, 13 – 8 = 5: đều là phép trừ qua 10."
+        },
+        "en": {
+          "guide": [
+            "Break the starting number into 10 and the ones.",
+            "Take the number being subtracted from 10 first and then add the ones, like the example 12 – 9."
+          ],
+          "hint": "13 – 8: 10 – 8 = 2, then add 3 to get 5.",
+          "answer": {
+            "text": "12 – 9 = 3; 14 – 5 = 9; 11 – 7 = 4; 13 – 8 = 5",
+            "explanation": "14 – 5 = 9, 11 – 7 = 4, 13 – 8 = 5: all are subtractions past 10."
+          }
         }
       },
       "feedback": {
@@ -180,7 +195,19 @@
           "Thử gạch bớt từng chấm tròn trên lóng tre xem còn mấy.",
           "Lấy 10 trừ trước, phần lẻ cộng vào sau nhé.",
           "Hiệu không thể lớn hơn số bị trừ, kiểm tra lại ô đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The first three bamboo joints lie neatly, and Bamboo Panda slowly claps... pat... pat.",
+            "Break the number, then subtract: you did it as smoothly as wind slipping through a bamboo grove.",
+            "The example hasn't even cooled, and you've carved three new sums."
+          ],
+          "wrong": [
+            "Try crossing off the dots on the bamboo joint one by one to see how many are left.",
+            "Take away from 10 first, then add the ones after.",
+            "The difference can't be bigger than the number you start with, so check that box."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -194,7 +221,11 @@
         "b2": "11 - 7",
         "b3": "13 - 8"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "The first few bamboo sections",
+        "prompt": "On the first bamboo joint, Bamboo Panda has already carved one subtraction as an example. Carve the other three by breaking the number you start with into a ten and the ones."
+      }
     },
     {
       "id": "bang-tru-tren-tre",
@@ -284,6 +315,17 @@
         "answer": {
           "text": "Cột số trừ 9: 11 – 9 = 2 | 12 – 9 = 3 | 13 – 9 = 4 | 14 – 9 = 5 | 15 – 9 = 6 | 16 – 9 = 7 | 17 – 9 = 8 | 18 – 9 = 9; Cột số trừ 8: 11 – 8 = 3 | 12 – 8 = 4 | 13 – 8 = 5 | 14 – 8 = 6 | 15 – 8 = 7 | 16 – 8 = 8 | 17 – 8 = 9; Cột số trừ 7: 11 – 7 = 4 | 12 – 7 = 5 | 13 – 7 = 6 | 14 – 7 = 7 | 15 – 7 = 8 | 16 – 7 = 9",
           "explanation": "Bốn lóng khắc dở: 13 – 9 = 4, 17 – 9 = 8, 14 – 8 = 6, 12 – 7 = 5."
+        },
+        "en": {
+          "guide": [
+            "In each column, the number being subtracted stays the same while the starting number goes up.",
+            "When the starting number goes up by 1, the difference goes up by 1 too."
+          ],
+          "hint": "Column 9: 12 – 9 = 3, so 13 – 9 = 4.",
+          "answer": {
+            "text": "Column subtracting 9: 11 – 9 = 2 | 12 – 9 = 3 | 13 – 9 = 4 | 14 – 9 = 5 | 15 – 9 = 6 | 16 – 9 = 7 | 17 – 9 = 8 | 18 – 9 = 9; Column subtracting 8: 11 – 8 = 3 | 12 – 8 = 4 | 13 – 8 = 5 | 14 – 8 = 6 | 15 – 8 = 7 | 16 – 8 = 8 | 17 – 8 = 9; Column subtracting 7: 11 – 7 = 4 | 12 – 7 = 5 | 13 – 7 = 6 | 14 – 7 = 7 | 15 – 7 = 8 | 16 – 7 = 9",
+            "explanation": "The four half-carved joints: 13 – 9 = 4, 17 – 9 = 8, 14 – 8 = 6, 12 – 7 = 5."
+          }
         }
       },
       "feedback": {
@@ -296,7 +338,19 @@
           "Nhìn lóng tre bên cạnh trong cùng cột, hiệu chỉ hơn kém 1.",
           "Cùng một cột thì số trừ không đổi, chỉ số bị trừ thay đổi.",
           "Có một lóng tre đang khắc nhầm số, kiểm tra lại cột đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three columns of bamboo stand dead straight, and the wind can't knock them over!",
+            "Bamboo Panda hugs the whole table... oh no, this time he only stands and admires it.",
+            "The four half-carved joints are carved with their own numbers at last."
+          ],
+          "wrong": [
+            "Look at the next bamboo joint in the same column: the differences differ by just 1.",
+            "In one column the number being subtracted does not change; only the starting number does.",
+            "One bamboo joint has been carved with the wrong number, so check that column."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -312,7 +366,11 @@
         "b3": "14 - 8",
         "b4": "12 - 7"
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Rebuild the subtraction table",
+        "prompt": "Bamboo Panda stands the bamboo joints up in columns by the number subtracted: the 9 column, the 8 column, the 7 column. Each joint is carved with a subtraction past 10, and four of them are half carved. Help Panda finish carving."
+      }
     },
     {
       "id": "nham-long-tre",
@@ -437,6 +495,17 @@
         "answer": {
           "text": "12 – 4 = 8; 15 – 9 = 6; 17 – 8 = 9; 11 – 5 = 6; 16 – 9 = 7; 13 – 6 = 7",
           "explanation": "12 – 4 = 8, 15 – 9 = 6, 17 – 8 = 9, 11 – 5 = 6, 16 – 9 = 7, 13 – 6 = 7."
+        },
+        "en": {
+          "guide": [
+            "Remember the columns you just stood up.",
+            "If you forget, break the starting number into 10 and the ones, then subtract."
+          ],
+          "hint": "16 – 9 = 7 because 10 – 9 = 1, then 1 + 6 = 7.",
+          "answer": {
+            "text": "12 – 4 = 8; 15 – 9 = 6; 17 – 8 = 9; 11 – 5 = 6; 16 – 9 = 7; 13 – 6 = 7",
+            "explanation": "12 – 4 = 8, 15 – 9 = 6, 17 – 8 = 9, 11 – 5 = 6, 16 – 9 = 7, 13 – 6 = 7."
+          }
         }
       },
       "feedback": {
@@ -449,7 +518,19 @@
           "Từ từ thôi, Gấu Trúc còn chậm hơn cậu nhiều mà.",
           "Xem lại cột vừa dựng, trong đó có sẵn kết quả.",
           "Một kết quả còn lệch, bẻ số ra tính lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Before Bamboo Panda can blink, you've read out the whole bundle!",
+            "Mist Cat's eyes go round: six bamboo joints, six results, all right.",
+            "As quick as this, Bamboo Panda will have to call you \"bamboo lightning\"."
+          ],
+          "wrong": [
+            "Take it slowly, Bamboo Panda is much slower than you.",
+            "Look back at the columns you just stood up, since the results are already there.",
+            "One result is still off, so break the number and work it out again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -469,7 +550,12 @@
         "b5": "16 - 9",
         "b6": "13 - 6"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Read the bamboo sections aloud",
+        "goTo": "Carry the bundle of bamboo joints to the Star Lantern Stall under the Awning, where Mist Cat waves her tail, waiting to play the quiz",
+        "prompt": "Bamboo Panda pulls bamboo joints out of the bundle at random and challenges {name} to read out the results very fast. Work them out in your head."
+      }
     },
     {
       "id": "den-ong-sao",
@@ -516,6 +602,17 @@
         "answer": {
           "text": "Hiệu bé nhất: 14 – 9 (bằng 5)",
           "explanation": "14 – 9 = 5 bé nhất; 12 – 5 = 7, 16 – 7 = 9, 13 – 7 = 6."
+        },
+        "en": {
+          "guide": [
+            "Work out the difference of each lantern.",
+            "Only one lantern has the smallest difference."
+          ],
+          "hint": "The differences are 7, 5, 9, 6.",
+          "answer": {
+            "text": "Smallest difference: 14 – 9 (equal to 5)",
+            "explanation": "14 – 9 = 5 is the smallest; 12 – 5 = 7, 16 – 7 = 9, 13 – 7 = 6."
+          }
         }
       },
       "feedback": {
@@ -528,7 +625,19 @@
           "Tính hết bốn chiếc đèn rồi mới so sánh nhé.",
           "Hiệu 6 chưa phải bé nhất đâu.",
           "Có chiếc đèn nào ra hiệu là 5 không nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The lantern 14 – 9 hangs in the middle of the awning, glittering, and you found it straight away!",
+            "Bamboo Panda hums a Mid-Autumn lantern song.",
+            "The smallest is 5, and you compared as accurately as a ruler."
+          ],
+          "wrong": [
+            "Work out all four lanterns before comparing.",
+            "A difference of 6 is not the smallest yet.",
+            "Is there a lantern whose difference is 5?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -538,7 +647,11 @@
           "den-13-7": "nhom-khong-phai-be-nhat"
         }
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Star lanterns at Mist Cat's stall",
+        "prompt": "Mist Cat's stall hangs four star lanterns, and each one is marked with a subtraction. The one with the smallest difference will be hung right in the middle of the awning. Sort each lantern into the right group."
+      }
     },
     {
       "id": "phong-bi-hop-thu-7",
@@ -646,6 +759,17 @@
         "answer": {
           "text": "13 – 5 = 8; 11 – 3 = 8; 17 – 9 = 8; 14 – 6 = 8; 12 – 4 = 8; 16 – 8 = 8",
           "explanation": "11 – 3 = 8, 17 – 9 = 8, 14 – 6 = 8, 12 – 4 = 8, 16 – 8 = 8."
+        },
+        "en": {
+          "guide": [
+            "Find the number being subtracted so that the difference is 8.",
+            "Number being subtracted = starting number – 8."
+          ],
+          "hint": "11 – 3 = 8, so the first box is 3.",
+          "answer": {
+            "text": "13 – 5 = 8; 11 – 3 = 8; 17 – 9 = 8; 14 – 6 = 8; 12 – 4 = 8; 16 – 8 = 8",
+            "explanation": "11 – 3 = 8, 17 – 9 = 8, 14 – 6 = 8, 12 – 4 = 8, 16 – 8 = 8."
+          }
         }
       },
       "feedback": {
@@ -658,7 +782,19 @@
           "Thử lấy số bị trừ trừ đi 8 xem số trừ là mấy.",
           "Kiểm tra lại: số bị trừ trừ số cậu chọn có ra 8 không?",
           "Phong bì này chưa vào được hòm, sửa một ô nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five envelopes drop into the mailbox with a \"click\"!",
+            "Postman Bamboo Panda sticks a thank-you stamp on your hand.",
+            "Every number being subtracted fits exactly to make a difference of 8."
+          ],
+          "wrong": [
+            "Try taking 8 away from the starting number to see what the number being subtracted is.",
+            "Check again: does the starting number minus your choice give 8?",
+            "This envelope can't go in the box yet, so fix one box."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -676,7 +812,12 @@
         "b4": "12 - ? = 8",
         "b5": "16 - ? = 8"
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Letter to mailbox number 7",
+        "goTo": "Run to the Mailbox by the Bamboo Stall, where Chestnut Rabbit is holding five envelopes waiting to be posted",
+        "prompt": "Postman Bamboo Panda only accepts letters whose difference is 8. The sample letter 13 – 5 = 8 is already in the box. Fill in the missing number being subtracted on the other envelopes."
+      }
     },
     {
       "id": "hoc-thuoc-hay-tach",
@@ -998,6 +1139,17 @@
         "answer": {
           "text": "12 – 8 = 4; 15 – 7 = 8; 11 – 9 = 2; 17 – 8 = 9; 13 – 9 = 4; 16 – 7 = 9; 14 – 8 = 6; 12 – 9 = 3; 15 – 6 = 9; a) 14 – 4 – 2 = 8; a) 14 – 6 = 8; b) 11 – 1 – 5 = 5; b) 11 – 6 = 5; c) 13 – 3 – 6 = 4; c) 13 – 9 = 4",
           "explanation": "Chín phép đầu: 4, 8, 2, 9, 4, 9, 6, 3, 9. Ba cặp cuối: 8 và 8, 5 và 5, 4 và 4: trừ hai lần liền bằng trừ một lần tổng của hai số trừ."
+        },
+        "en": {
+          "guide": [
+            "Use the subtraction columns you stood up.",
+            "When subtracting twice in a row, work from left to right, subtracting to a round 10 first."
+          ],
+          "hint": "14 – 4 – 2: 14 – 4 = 10, then 10 – 2 = 8.",
+          "answer": {
+            "text": "Answers: 12 – 8 = 4; 15 – 7 = 8; 11 – 9 = 2; 17 – 8 = 9; 13 – 9 = 4; 16 – 7 = 9; 14 – 8 = 6; 12 – 9 = 3; 15 – 6 = 9; a) 14 – 4 – 2 = 8; a) 14 – 6 = 8; b) 11 – 1 – 5 = 5; b) 11 – 6 = 5; c) 13 – 3 – 6 = 4; c) 13 – 9 = 4",
+            "explanation": "The first nine sums: 4, 8, 2, 9, 4, 9, 6, 3, 9. The last three pairs: 8 and 8, 5 and 5, 4 and 4: subtracting twice in a row equals subtracting the total of the two numbers once."
+          }
         }
       },
       "feedback": {
@@ -1010,7 +1162,19 @@
           "Ở dòng trừ hai lần, trừ cho tròn 10 trước đã.",
           "Một kết quả lệch rồi, dò lại các cột trừ nhé.",
           "Nhìn kĩ dấu trừ, đừng lỡ tay cộng vào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fifteen subtractions without tripping on a single one, and Bamboo Panda gapes!",
+            "You remember the subtraction columns better than the one who carved them.",
+            "Subtract to a round 10 first. What a clever trick."
+          ],
+          "wrong": [
+            "In the line with two subtractions, subtract to a round 10 first.",
+            "One result is off, so check the subtraction columns again.",
+            "Look carefully at the minus sign, and don't slip and add."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1048,7 +1212,11 @@
         "b14": "13 - 3 - 6",
         "b15": "13 - 9"
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Nine subtractions in a row",
+        "prompt": "Bamboo Panda tests both your memories. Work out nine subtractions in your head, then work out the last three pairs two ways."
+      }
     },
     {
       "id": "dau-so-sanh-tre",
@@ -1139,6 +1307,17 @@
         "answer": {
           "text": "a) 13 – 6 < 8; a) 16 – 8 > 7; b) 15 – 9 = 12 – 6; b) 14 – 5 > 17 – 9",
           "explanation": "a) 13 – 6 = 7 < 8; 16 – 8 = 8 > 7. b) 15 – 9 = 6 = 12 – 6; 14 – 5 = 9 > 17 – 9 = 8."
+        },
+        "en": {
+          "guide": [
+            "Work out the result of each side.",
+            "The sign's mouth opens towards the side that is bigger."
+          ],
+          "hint": "15 – 9 = 6 and 12 – 6 = 6, so both sides are equal.",
+          "answer": {
+            "text": "Answers: a) 13 – 6 < 8; a) 16 – 8 > 7; b) 15 – 9 = 12 – 6; b) 14 – 5 > 17 – 9",
+            "explanation": "Check: a) 13 – 6 = 7 < 8; 16 – 8 = 8 > 7. b) 15 – 9 = 6 = 12 – 6; 14 – 5 = 9 > 17 – 9 = 8."
+          }
         }
       },
       "feedback": {
@@ -1151,7 +1330,19 @@
           "Hai vế ra cùng số thì phải dùng dấu bằng.",
           "Số lớn nằm ở phía miệng dấu mở ra.",
           "Tính xong hai vế rồi hẵng đặt dấu nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four bamboo signs fit snugly into the gaps, as lovely as handicrafts!",
+            "Every sign is in the right place, and Uncle Khang taps a bamboo joint, which goes tock tock.",
+            "You have such sharp eyes that Uncle Khang wants to take you on as an assistant."
+          ],
+          "wrong": [
+            "If both sides come to the same number, use the equals sign.",
+            "The bigger number is on the side where the sign opens.",
+            "Work out both sides first, then put in the sign."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1167,7 +1358,12 @@
         "b3": "15 - 9 ? 12 - 6",
         "b4": "14 - 5 ? 17 - 9"
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Which sign for the bamboo sections?",
+        "goTo": "Over to the Bamboo Goods Stall, where Uncle Khang the Carpenter has already whittled a few bamboo signs",
+        "prompt": "Between each pair of bamboo joints there is a small gap, and Uncle Khang the Carpenter wants to fit a bamboo sign into it. Choose >, < or = for each gap."
+      }
     },
     {
       "id": "chia-bong-tren-co",
@@ -1186,6 +1382,17 @@
         "answer": {
           "text": "15 – 9 = 6. Đáp số: 6 bạn",
           "explanation": "Có 15 – 9 = 6 (bạn) chưa có ghế."
+        },
+        "en": {
+          "guide": [
+            "Each chair is for exactly one friend.",
+            "Friends without a seat = number of friends – number of chairs."
+          ],
+          "hint": "The sum is 15 – 9.",
+          "answer": {
+            "text": "15 – 9 = 6. Answer: 6 friends",
+            "explanation": "15 – 9 = 6 (friends) have no seat."
+          }
         }
       },
       "feedback": {
@@ -1198,13 +1405,30 @@
           "Ghế ít hơn người, vậy dư ra mấy bạn?",
           "Lấy số bạn trừ đi số ghế nhé.",
           "Thử bẻ 15 thành 10 và 5 rồi trừ 9."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six friends have no seat, so Tall Deer quickly carries in six more stools. Everyone gets to play!",
+            "Bamboo Panda is one of the slow ones, so it's lucky you worked it out.",
+            "Peep peep! The referee praises you for working it out faster than running."
+          ],
+          "wrong": [
+            "There are fewer chairs than friends, so how many are left over?",
+            "Take the number of chairs away from the number of friends.",
+            "Try breaking 15 into 10 and 5, then subtract 9."
+          ]
+        }
       },
       "answer": {
         "value": 6
       },
       "expression": "15 - 9",
-      "objective": "bai-toan-co-loi-van-hon-kem"
+      "objective": "bai-toan-co-loi-van-hon-kem",
+      "en": {
+        "title": "Who has no chair yet?",
+        "goTo": "Dash to the Empty Lot behind the Bamboo Stall, where Tall Deer is setting out a row of stools and holding a whistle",
+        "question": "Tall Deer blows a whistle to start a musical-chairs game: 15 friends are taking part but there are only 9 chairs, and each friend can only sit on one chair. How many friends have no seat yet?"
+      }
     },
     {
       "id": "huy-hieu-long-tre",
@@ -1236,5 +1460,9 @@
       "phep-tru": 2,
       "so-sanh-so": 1
     }
+  },
+  "en": {
+    "title": "Bamboo Panda and the Bamboo Sections",
+    "summary": "Bamboo Panda hugs bamboo joints carved with a subtraction table and naps on the stall, and one roll over leaves the joints all jumbled. {name} helps Panda rebuild the subtraction table past 10, quiz the bamboo joints and pick lanterns with Mist Cat, post letters with Chestnut Rabbit, fit signs at Uncle Khang the Carpenter's Bamboo Goods Stall, then share out seats with Tall Deer."
   }
 }

@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "trum-ntr-tho-trang",
       "lines": [
-        { "speaker": "Thỏ Trắng Trồng Rau", "text": "{name} ơi, Gà Trống Choai Khổng Lồ ôm chiếc chiêng mùa lên đống rơm rồi. Chưa đánh chiêng thì chưa mở hội gặt được!" },
-        { "speaker": "Thỏ Trắng Trồng Rau", "text": "Anh ấy bảo ai mang đủ nông sản tới mừng và tính giỏi hơn anh ấy thì mới trả chiêng." }
+        {
+          "speaker": "Thỏ Trắng Trồng Rau",
+          "text": "{name} ơi, Gà Trống Choai Khổng Lồ ôm chiếc chiêng mùa lên đống rơm rồi. Chưa đánh chiêng thì chưa mở hội gặt được!"
+        },
+        {
+          "speaker": "Thỏ Trắng Trồng Rau",
+          "text": "Anh ấy bảo ai mang đủ nông sản tới mừng và tính giỏi hơn anh ấy thì mới trả chiêng."
+        }
       ],
       "choices": [
-        { "text": "Nông sản ở đâu, tớ đi gom ngay!", "reply": "Ở ruộng gặt nhỏ ấy, mọi người gặt dở thì trời đổ mưa nên bỏ lại cả." }
+        {
+          "text": "Nông sản ở đâu, tớ đi gom ngay!",
+          "reply": "Ở ruộng gặt nhỏ ấy, mọi người gặt dở thì trời đổ mưa nên bỏ lại cả."
+        }
       ],
       "en": {
         "title": "Thỏ Trắng is worried",
@@ -87,7 +96,26 @@
           "clue": "Bọc trong lớp áo lá xanh, đầu có chùm râu mềm, bóc ra thấy hạt vàng xếp hàng.",
           "target": "trum-ntr-bap-ngo"
         }
-      ]
+      ],
+      "en": {
+        "title": "Gather farm produce for the harvest",
+        "goTo": "Go to the little harvest field and gather three kinds of produce",
+        "prompt": "The harvest festival needs three kinds of produce. Read the clues and find them all:",
+        "items": [
+          {
+            "name": "A sheaf of ripe rice",
+            "clue": "Heavy golden ears hanging down, neatly tied with a strip of bamboo."
+          },
+          {
+            "name": "An orange pumpkin",
+            "clue": "Big and round with orange skin in ridged segments, and a short, curved stalk."
+          },
+          {
+            "name": "A young corn cob",
+            "clue": "Wrapped in green leafy layers with a tuft of soft silk on top; peel it back and golden kernels sit in rows."
+          }
+        ]
+      }
     },
     {
       "id": "doc-lich-mua-gat",
@@ -99,22 +127,78 @@
       "text": "LỊCH MÙA GẶT\nSáng sớm: gặt lúa ở ruộng phía tây.\nTrưa: hái bí ngô và bẻ ngô.\nChiều: đánh chiêng mừng mùa, mời cả nông trại ăn cơm mới.\nChiêng đang được Gà Trống Choai giữ trên đống rơm.",
       "question": "Theo lịch, buổi trưa nông trại làm gì?",
       "choices": [
-        { "id": "a", "text": "Gặt lúa ở ruộng phía tây" },
-        { "id": "b", "text": "Hái bí ngô và bẻ ngô" },
-        { "id": "c", "text": "Đánh chiêng mừng mùa" }
+        {
+          "id": "a",
+          "text": "Gặt lúa ở ruộng phía tây"
+        },
+        {
+          "id": "b",
+          "text": "Hái bí ngô và bẻ ngô"
+        },
+        {
+          "id": "c",
+          "text": "Đánh chiêng mừng mùa"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm dòng bắt đầu bằng chữ «Trưa».", "Đọc phần sau dấu hai chấm của dòng đó."],
+        "guide": [
+          "Tìm dòng bắt đầu bằng chữ «Trưa».",
+          "Đọc phần sau dấu hai chấm của dòng đó."
+        ],
         "hint": "Buổi trưa làm việc với hai thứ nông sản.",
         "answer": {
           "text": "Trưa hái bí ngô và bẻ ngô",
           "explanation": "Lịch ghi: Trưa: hái bí ngô và bẻ ngô."
+        },
+        "en": {
+          "guide": [
+            "Find the line that starts with the word «Midday».",
+            "Read the part after the colon on that line."
+          ],
+          "hint": "At midday the work is with two kinds of produce.",
+          "answer": {
+            "text": "At noon, pick pumpkins and snap corn",
+            "explanation": "The calendar says: Midday: pick pumpkins and snap corn."
+          }
         }
       },
       "feedback": {
-        "right": ["Chuẩn rồi, bí ngô với ngô là việc buổi trưa!", "{name} đọc lịch mùa gặt rõ từng buổi.", "Thỏ Trắng ghi nhớ ngay: trưa nay bẻ ngô!"],
-        "wrong": ["Việc ấy làm vào buổi khác đấy, dò lại nhé.", "Tìm dòng có chữ «Trưa» nha {name}.", "Đánh chiêng là việc buổi chiều mà, đọc lại xem."]
+        "right": [
+          "Chuẩn rồi, bí ngô với ngô là việc buổi trưa!",
+          "{name} đọc lịch mùa gặt rõ từng buổi.",
+          "Thỏ Trắng ghi nhớ ngay: trưa nay bẻ ngô!"
+        ],
+        "wrong": [
+          "Việc ấy làm vào buổi khác đấy, dò lại nhé.",
+          "Tìm dòng có chữ «Trưa» nha {name}.",
+          "Đánh chiêng là việc buổi chiều mà, đọc lại xem."
+        ],
+        "en": {
+          "right": [
+            "Right, pumpkins and corn are the midday jobs!",
+            "{name} read the harvest calendar clearly, time by time.",
+            "White Bunny makes a note straight away: snap corn at midday!"
+          ],
+          "wrong": [
+            "That job is done at a different time, check again.",
+            "Look for the line with the word «Midday», {name}.",
+            "Striking the gong is an afternoon job, read it again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Harvest calendar",
+        "goTo": "Take the produce to the storeroom porch, where the harvest calendar hangs",
+        "text": "HARVEST CALENDAR\nEarly morning: cut the rice in the west field.\nMidday: pick pumpkins and snap corn.\nAfternoon: strike the gong to welcome the season, and invite the whole farm to a meal of new rice.\nThe gong is being kept by the Young Rooster on the haystack.",
+        "question": "According to the calendar, what does the farm do at midday?",
+        "choices": [
+          "Cut the rice in the west field",
+          "Pick pumpkins and snap corn",
+          "Strike the gong to welcome the season"
+        ]
       }
     },
     {
@@ -128,29 +212,116 @@
       "skill": "logic",
       "prompt": "Lợn Ỉ vẽ lối qua ruộng ngô tới đống rơm: đi từ ô chú mèo tới ô ngôi sao, ô tường gạch là ngô mọc dày không lách được. Dãy bước nào đúng? (→ sang phải, ↓ đi xuống)",
       "grid": [
-        ["S", ".", "#", ".", "."],
-        ["#", ".", "#", ".", "#"],
-        [".", ".", ".", ".", "#"],
-        [".", "#", "#", ".", "."],
-        [".", ".", "#", "#", "G"]
+        [
+          "S",
+          ".",
+          "#",
+          ".",
+          "."
+        ],
+        [
+          "#",
+          ".",
+          "#",
+          ".",
+          "#"
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          ".",
+          "#"
+        ],
+        [
+          ".",
+          "#",
+          "#",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          "#",
+          "#",
+          "G"
+        ]
       ],
       "choices": [
-        { "id": "a", "text": "→ ↓ ↓ → → ↓ → ↓" },
-        { "id": "b", "text": "→ ↓ ↓ ↓ → → → ↓" },
-        { "id": "c", "text": "→ → ↓ ↓ → ↓ → ↓" }
+        {
+          "id": "a",
+          "text": "→ ↓ ↓ → → ↓ → ↓"
+        },
+        {
+          "id": "b",
+          "text": "→ ↓ ↓ ↓ → → → ↓"
+        },
+        {
+          "id": "c",
+          "text": "→ → ↓ ↓ → ↓ → ↓"
+        }
       ],
-      "answer": { "choice": "a" },
+      "answer": {
+        "choice": "a"
+      },
       "support": {
-        "guide": ["Đặt ngón tay lên ô chú mèo ở góc trên bên trái.", "Đi theo từng mũi tên của một dãy, chạm ô tường gạch là dãy đó sai.", "Dãy đúng đi qua hàng thứ ba rồi mới xuống."],
+        "guide": [
+          "Đặt ngón tay lên ô chú mèo ở góc trên bên trái.",
+          "Đi theo từng mũi tên của một dãy, chạm ô tường gạch là dãy đó sai.",
+          "Dãy đúng đi qua hàng thứ ba rồi mới xuống."
+        ],
         "hint": "Ở hàng thứ hai chỉ có một ô trống ngay dưới ô cạnh chú mèo.",
         "answer": {
           "text": "Phải một, xuống hai, phải hai, xuống, phải, xuống",
           "explanation": "Sang phải một ô, xuống hai ô tới hàng ba, đi sang phải hai ô, xuống một ô, sang phải rồi xuống là tới ngôi sao."
+        },
+        "en": {
+          "guide": [
+            "Put your finger on the cat square in the top left corner.",
+            "Follow each arrow of a row; touching a brick wall square means that row is wrong.",
+            "The right row passes along the third row before going down."
+          ],
+          "hint": "In the second row there is only one free square, right below the square next to the cat.",
+          "answer": {
+            "text": "Right one, down two, right two, down, right, down",
+            "explanation": "Right one square, down two squares to row three, right two squares, down one square, then right and down to reach the star."
+          }
         }
       },
       "feedback": {
-        "right": ["Lách qua ruộng ngô gọn gàng, đống rơm hiện ra rồi!", "Lợn Ỉ khịt mũi khen: lối tắt chuẩn không cần chỉnh!", "{name} đọc bản đồ giỏi như người làm vườn lâu năm."],
-        "wrong": ["Ối, ngô dày quá không lách qua được, thử dãy khác nhé.", "Dò lại từng mũi tên bằng ngón tay xem nào {name}.", "Xuống tới hàng ba rồi thì đi sang phải trước đã."]
+        "right": [
+          "Lách qua ruộng ngô gọn gàng, đống rơm hiện ra rồi!",
+          "Lợn Ỉ khịt mũi khen: lối tắt chuẩn không cần chỉnh!",
+          "{name} đọc bản đồ giỏi như người làm vườn lâu năm."
+        ],
+        "wrong": [
+          "Ối, ngô dày quá không lách qua được, thử dãy khác nhé.",
+          "Dò lại từng mũi tên bằng ngón tay xem nào {name}.",
+          "Xuống tới hàng ba rồi thì đi sang phải trước đã."
+        ],
+        "en": {
+          "right": [
+            "Squeezed neatly through the corn, and the haystack appears!",
+            "Ỉ Pig snorts with praise: the shortcut is spot on!",
+            "{name} reads a map as well as a long-time gardener."
+          ],
+          "wrong": [
+            "Oops, the corn is too thick to squeeze through, try another row.",
+            "Trace each arrow with your finger, {name}.",
+            "Once you're down at row three, go right first."
+          ]
+        }
+      },
+      "en": {
+        "title": "The path through the Corn Field",
+        "goTo": "Go to the edge of the corn field, where Muddy Ỉ Pig knows a shortcut",
+        "prompt": "Ỉ Pig draws a path through the corn field to the haystack: go from the cat square to the star square, and the brick wall squares are corn too thick to squeeze through. Which row of steps is right? (→ right, ↓ down)",
+        "choices": [
+          "→ ↓ ↓ → → ↓ → ↓",
+          "→ ↓ ↓ ↓ → → → ↓",
+          "→ → ↓ ↓ → ↓ → ↓"
+        ]
       }
     },
     {
@@ -215,11 +386,22 @@
           "move": "orbs",
           "prompt": "Gà Trống hỏi: 38 + 25 bằng bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "53" },
-            { "id": "b", "text": "63" },
-            { "id": "c", "text": "513" }
+            {
+              "id": "a",
+              "text": "53"
+            },
+            {
+              "id": "b",
+              "text": "63"
+            },
+            {
+              "id": "c",
+              "text": "513"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đặt 38 và 25 thẳng cột, cộng hàng đơn vị 8 + 5 trước.",
@@ -241,6 +423,14 @@
                 "explanation": "38 + 25 = 63: 8 + 5 = 13, write 3 carry 1, 3 + 2 = 5 plus 1 is 6; 53 forgets to carry, 513 writes the whole 13."
               }
             }
+          },
+          "en": {
+            "prompt": "Rooster asks: what is 38 + 25?",
+            "choices": [
+              "53",
+              "63",
+              "513"
+            ]
           }
         },
         {
@@ -249,11 +439,22 @@
           "move": "gem",
           "prompt": "Tính nhẩm cho nhanh: 72 − 18 bằng bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "54" },
-            { "id": "b", "text": "64" },
-            { "id": "c", "text": "66" }
+            {
+              "id": "a",
+              "text": "54"
+            },
+            {
+              "id": "b",
+              "text": "64"
+            },
+            {
+              "id": "c",
+              "text": "66"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Nhẩm 72 − 18 bằng cách bớt 18 làm hai lần: bớt 10 trước, rồi bớt 8.",
@@ -275,6 +476,14 @@
                 "explanation": "72 − 18 = 54 because 72 − 10 = 62 and 62 − 8 = 54; 64 only takes away the 8 and forgets the ten."
               }
             }
+          },
+          "en": {
+            "prompt": "Quick mental sum: what is 72 − 18?",
+            "choices": [
+              "54",
+              "64",
+              "66"
+            ]
           }
         },
         {
@@ -283,11 +492,22 @@
           "move": "charge",
           "prompt": "Đặt tính rồi tính 46 + 37. Kết quả là bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "73" },
-            { "id": "b", "text": "713" },
-            { "id": "c", "text": "83" }
+            {
+              "id": "a",
+              "text": "73"
+            },
+            {
+              "id": "b",
+              "text": "713"
+            },
+            {
+              "id": "c",
+              "text": "83"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Viết 37 dưới 46 sao cho 7 thẳng dưới 6, 3 thẳng dưới 4.",
@@ -309,6 +529,14 @@
                 "explanation": "46 + 37 = 83: 6 + 7 = 13, write 3 carry 1, then 4 + 3 + 1 = 8; 73 forgets the carry, 713 writes all of 13."
               }
             }
+          },
+          "en": {
+            "prompt": "Set out the sum and work out 46 + 37. What is the answer?",
+            "choices": [
+              "73",
+              "713",
+              "83"
+            ]
           }
         },
         {
@@ -317,11 +545,22 @@
           "move": "fling",
           "prompt": "Đặt tính rồi tính 90 − 45. Kết quả là bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "45" },
-            { "id": "b", "text": "55" },
-            { "id": "c", "text": "65" }
+            {
+              "id": "a",
+              "text": "45"
+            },
+            {
+              "id": "b",
+              "text": "55"
+            },
+            {
+              "id": "c",
+              "text": "65"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đặt 45 dưới 90 thẳng cột rồi trừ từ hàng đơn vị.",
@@ -343,6 +582,14 @@
                 "explanation": "90 − 45 = 45 because 10 − 5 = 5 and 8 − 4 = 4; check 45 + 45 = 90; 55 forgets the borrowed ten."
               }
             }
+          },
+          "en": {
+            "prompt": "Set out the sum and work out 90 − 45. What is the answer?",
+            "choices": [
+              "45",
+              "55",
+              "65"
+            ]
           }
         },
         {
@@ -351,11 +598,22 @@
           "move": "orbs",
           "prompt": "Chuồng có 35 con gà mái và 27 con gà trống. Chuồng có tất cả bao nhiêu con gà?",
           "choices": [
-            { "id": "a", "text": "52 con" },
-            { "id": "b", "text": "62 con" },
-            { "id": "c", "text": "8 con" }
+            {
+              "id": "a",
+              "text": "52 con"
+            },
+            {
+              "id": "b",
+              "text": "62 con"
+            },
+            {
+              "id": "c",
+              "text": "8 con"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Gộp gà mái và gà trống lại thì ra cả chuồng, nên làm tính cộng 35 + 27.",
@@ -373,10 +631,18 @@
               ],
               "hint": "5 + 7 = 12, write 2 carry 1; 3 tens and 2 tens plus the carried ten.",
               "answer": {
-                "text": "62 chickens (62 con)",
+                "text": "62 chickens",
                 "explanation": "35 + 27 = 62 since 5 + 7 = 12, write 2 carry 1, and 3 + 2 + 1 = 6; 8 is the difference, not the whole coop."
               }
             }
+          },
+          "en": {
+            "prompt": "A coop has 35 hens and 27 roosters. How many chickens are in the coop altogether?",
+            "choices": [
+              "52 chickens",
+              "62 chickens",
+              "8 chickens"
+            ]
           }
         },
         {
@@ -385,11 +651,22 @@
           "move": "gem",
           "prompt": "Nông trại thu được 64 quả trứng, đã bán 29 quả. Còn lại bao nhiêu quả trứng?",
           "choices": [
-            { "id": "a", "text": "35 quả" },
-            { "id": "b", "text": "45 quả" },
-            { "id": "c", "text": "93 quả" }
+            {
+              "id": "a",
+              "text": "35 quả"
+            },
+            {
+              "id": "b",
+              "text": "45 quả"
+            },
+            {
+              "id": "c",
+              "text": "93 quả"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đã bán thì số trứng giảm, nên tính 64 − 29.",
@@ -407,10 +684,18 @@
               ],
               "hint": "64 − 30 = 34, but that took 1 egg too many, so add 1 back.",
               "answer": {
-                "text": "35 eggs (35 quả)",
+                "text": "35 eggs",
                 "explanation": "64 − 29 = 35 since 64 − 30 = 34 and giving 1 back makes 35; check 35 + 29 = 64; 93 adds by mistake."
               }
             }
+          },
+          "en": {
+            "prompt": "The farm collected 64 eggs and has sold 29. How many eggs are left?",
+            "choices": [
+              "35 eggs",
+              "45 eggs",
+              "93 eggs"
+            ]
           }
         },
         {
@@ -419,11 +704,22 @@
           "move": "charge",
           "prompt": "So sánh 47 + 8 với 56. Câu nào đúng?",
           "choices": [
-            { "id": "a", "text": "47 + 8 lớn hơn 56" },
-            { "id": "b", "text": "47 + 8 bằng 56" },
-            { "id": "c", "text": "47 + 8 bé hơn 56" }
+            {
+              "id": "a",
+              "text": "47 + 8 lớn hơn 56"
+            },
+            {
+              "id": "b",
+              "text": "47 + 8 bằng 56"
+            },
+            {
+              "id": "c",
+              "text": "47 + 8 bé hơn 56"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Tính tổng 47 + 8 trước, rồi đặt kết quả cạnh 56 để so.",
@@ -445,9 +741,24 @@
                 "explanation": "47 + 8 = 55 (7 + 8 = 15, write 5 carry 1), and 55 is less than 56 because 5 ones are fewer than 6."
               }
             }
+          },
+          "en": {
+            "prompt": "Compare 47 + 8 with 56. Which statement is right?",
+            "choices": [
+              "47 + 8 is greater than 56",
+              "47 + 8 is equal to 56",
+              "47 + 8 is less than 56"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Maths duel with the Young Rooster",
+        "goTo": "Climb up the golden haystack, where the Young Rooster is waiting",
+        "bossName": "Giant Young Rooster",
+        "introDialogue": "Cock-a-doodle-doo! Here are seven sums with carrying. Every right answer, my crow gets a little quieter and the gong comes down a little closer!",
+        "winDialogue": "Cock-a-doodle... I give in! {name} remembers sums better than I remember my crowing time, so I hand back the season gong."
+      }
     },
     {
       "id": "chieng-mua-vang",
@@ -475,6 +786,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "phep-cong": 1, "phep-tru": 1, "bai-toan-loi-van": 1, "logic": 1 }
+    "skillXp": {
+      "phep-cong": 1,
+      "phep-tru": 1,
+      "bai-toan-loi-van": 1,
+      "logic": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Giant Young Rooster",
+    "summary": "The harvest festival only opens when the season gong rings, but the gong is under the wing of the Giant Young Rooster on the haystack. {name} gathers farm produce, reads the harvest calendar, finds a path through the corn field, then takes on seven sums with carrying."
   }
 }

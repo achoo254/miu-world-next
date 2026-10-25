@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "vt-lvs-ba-cu",
       "lines": [
-        { "speaker": "Bà Cụ Hái Rau", "text": "Ối giời, bà vấp phải hòn đá, rau trong giỏ rơi hết ra bãi cỏ rồi cháu ạ." },
-        { "speaker": "Bà Cụ Hái Rau", "text": "Chân bà mỏi quá, cháu nhặt giúp bà mấy thứ rau với nhé." }
+        {
+          "speaker": "Bà Cụ Hái Rau",
+          "text": "Ối giời, bà vấp phải hòn đá, rau trong giỏ rơi hết ra bãi cỏ rồi cháu ạ."
+        },
+        {
+          "speaker": "Bà Cụ Hái Rau",
+          "text": "Chân bà mỏi quá, cháu nhặt giúp bà mấy thứ rau với nhé."
+        }
       ],
       "choices": [
-        { "text": "Bà cứ ngồi nghỉ, cháu nhặt ngay ạ!", "reply": "Cháu ngoan quá. Rau lăn xuống bãi rau dại đằng kia đấy." }
+        {
+          "text": "Bà cứ ngồi nghỉ, cháu nhặt ngay ạ!",
+          "reply": "Cháu ngoan quá. Rau lăn xuống bãi rau dại đằng kia đấy."
+        }
       ],
       "en": {
         "title": "Granny trips over",
@@ -87,7 +96,26 @@
           "clue": "Dài, xanh thẫm, vỏ lấm tấm gai nhỏ, bổ ra mát rượi những hạt trắng.",
           "target": "vt-lvs-dua-chuot"
         }
-      ]
+      ],
+      "en": {
+        "title": "Pick up vegetables to help Grandma",
+        "goTo": "Go down to the patch of wild greens to pick up vegetables for Grandma",
+        "prompt": "Grandma describes three vegetables that fell. Read carefully and pick up the right ones:",
+        "items": [
+          {
+            "name": "Orange carrot",
+            "clue": "A long, orange root with a pointed tip and a tuft of green leaves on top like a little broom."
+          },
+          {
+            "name": "White radish",
+            "clue": "Plump and snowy white, with a purple blush at the top, crunchy and a little spicy."
+          },
+          {
+            "name": "Cucumber",
+            "clue": "Long and deep green, its skin dotted with tiny prickles, and cool white seeds inside when cut open."
+          }
+        ]
+      }
     },
     {
       "id": "doc-to-dan",
@@ -99,22 +127,78 @@
       "text": "Dặn hái rau cho bữa tối:\n2 củ cà rốt nấu canh.\n3 củ cải trắng muối dưa.\n1 quả dưa chuột ăn sống.\nNhớ về nhà trước khi trời đổ mưa.",
       "question": "Bà cần hái mấy củ cải trắng?",
       "choices": [
-        { "id": "a", "text": "1 củ" },
-        { "id": "b", "text": "2 củ" },
-        { "id": "c", "text": "3 củ" }
+        {
+          "id": "a",
+          "text": "1 củ"
+        },
+        {
+          "id": "b",
+          "text": "2 củ"
+        },
+        {
+          "id": "c",
+          "text": "3 củ"
+        }
       ],
-      "answer": { "choice": "c" },
+      "answer": {
+        "choice": "c"
+      },
       "support": {
-        "guide": ["Tìm dòng có chữ «củ cải trắng».", "Con số đứng đầu dòng cho biết cần bao nhiêu."],
+        "guide": [
+          "Tìm dòng có chữ «củ cải trắng».",
+          "Con số đứng đầu dòng cho biết cần bao nhiêu."
+        ],
         "hint": "Củ cải trắng dùng để muối dưa.",
         "answer": {
           "text": "Ba củ cải trắng",
           "explanation": "Tờ dặn ghi: 3 củ cải trắng muối dưa."
+        },
+        "en": {
+          "guide": [
+            "Find the line with the words «white radishes».",
+            "The number at the start of the line tells you how many are needed."
+          ],
+          "hint": "White radishes are used for pickling.",
+          "answer": {
+            "text": "Three white radishes",
+            "explanation": "The note says: 3 white radishes for pickling."
+          }
         }
       },
       "feedback": {
-        "right": ["Đủ ba củ cải để muối dưa rồi, bà gật gù.", "{name} đọc tờ dặn chẳng sót chữ nào.", "Chuẩn, dòng thứ ba ghi rõ con số ấy!"],
-        "wrong": ["Con số ấy là của cà rốt hoặc dưa chuột đấy, xem lại nhé.", "Dò dòng có chữ «củ cải» nha {name}.", "Đọc chậm từng dòng một, con số đứng ở đầu dòng."]
+        "right": [
+          "Đủ ba củ cải để muối dưa rồi, bà gật gù.",
+          "{name} đọc tờ dặn chẳng sót chữ nào.",
+          "Chuẩn, dòng thứ ba ghi rõ con số ấy!"
+        ],
+        "wrong": [
+          "Con số ấy là của cà rốt hoặc dưa chuột đấy, xem lại nhé.",
+          "Dò dòng có chữ «củ cải» nha {name}.",
+          "Đọc chậm từng dòng một, con số đứng ở đầu dòng."
+        ],
+        "en": {
+          "right": [
+            "Three radishes for pickling, Grandma nods.",
+            "{name} read the note without missing a word.",
+            "Spot on, the third line shows that number clearly!"
+          ],
+          "wrong": [
+            "That number belongs to the carrots or the cucumber, look again.",
+            "Find the line with the words «white radishes», {name}.",
+            "Read slowly line by line, the number is at the start of the line."
+          ]
+        }
+      },
+      "en": {
+        "title": "Grandma's market note",
+        "goTo": "Grandma's market note has blown to the foot of the willow tree by the river",
+        "text": "Vegetables to pick for dinner:\n2 carrots for soup.\n3 white radishes for pickling.\n1 cucumber to eat raw.\nRemember to be home before it rains.",
+        "question": "How many white radishes does Grandma need to pick?",
+        "choices": [
+          "1",
+          "2",
+          "3"
+        ]
       }
     },
     {
@@ -128,29 +212,108 @@
       "skill": "logic",
       "prompt": "Ong Thợ xếp rau vào giỏ thành một hàng có quy luật. Thứ rau tiếp theo là gì?",
       "elements": [
-        { "id": "r1", "label": "Cà rốt" },
-        { "id": "r2", "label": "Củ cải" },
-        { "id": "r3", "label": "Dưa chuột" },
-        { "id": "r4", "label": "Cà rốt" },
-        { "id": "r5", "label": "Củ cải" }
+        {
+          "id": "r1",
+          "label": "Cà rốt"
+        },
+        {
+          "id": "r2",
+          "label": "Củ cải"
+        },
+        {
+          "id": "r3",
+          "label": "Dưa chuột"
+        },
+        {
+          "id": "r4",
+          "label": "Cà rốt"
+        },
+        {
+          "id": "r5",
+          "label": "Củ cải"
+        }
       ],
       "choices": [
-        { "id": "ca-rot", "text": "Cà rốt" },
-        { "id": "cu-cai", "text": "Củ cải" },
-        { "id": "dua-chuot", "text": "Dưa chuột" }
+        {
+          "id": "ca-rot",
+          "text": "Cà rốt"
+        },
+        {
+          "id": "cu-cai",
+          "text": "Củ cải"
+        },
+        {
+          "id": "dua-chuot",
+          "text": "Dưa chuột"
+        }
       ],
-      "answer": { "choice": "dua-chuot" },
+      "answer": {
+        "choice": "dua-chuot"
+      },
       "support": {
-        "guide": ["Nhìn ba thứ rau đầu tiên của hàng.", "Ba thứ ấy lặp lại theo đúng thứ tự.", "Sau củ cải thì tới thứ gì?"],
+        "guide": [
+          "Nhìn ba thứ rau đầu tiên của hàng.",
+          "Ba thứ ấy lặp lại theo đúng thứ tự.",
+          "Sau củ cải thì tới thứ gì?"
+        ],
         "hint": "Hàng rau lặp lại từng nhóm ba thứ.",
         "answer": {
           "text": "Tới lượt dưa chuột",
           "explanation": "Hàng lặp lại cà rốt – củ cải – dưa chuột. Nhóm thứ hai đã có cà rốt và củ cải nên tiếp theo là dưa chuột."
+        },
+        "en": {
+          "guide": [
+            "Look at the first three vegetables in the row.",
+            "Those three repeat in the same order.",
+            "What comes after the radish?"
+          ],
+          "hint": "The row repeats in groups of three.",
+          "answer": {
+            "text": "Cucumber's turn",
+            "explanation": "The row repeats carrot – radish – cucumber. The second group already has the carrot and the radish, so next comes the cucumber."
+          }
         }
       },
       "feedback": {
-        "right": ["Vo ve vo ve, Ong Thợ múa một vòng mừng {name}!", "Giỏ rau xếp đều tăm tắp, nhìn là thấy quy luật.", "Đúng thứ tự rồi, rau nằm gọn trong giỏ."],
-        "wrong": ["Thứ ấy vừa xuất hiện ngay trước rồi, nhìn lại nhé.", "Đếm từng nhóm ba thứ rau xem nào {name}.", "Sau cà rốt và củ cải, hàng đầu tiên có gì?"]
+        "right": [
+          "Vo ve vo ve, Ong Thợ múa một vòng mừng {name}!",
+          "Giỏ rau xếp đều tăm tắp, nhìn là thấy quy luật.",
+          "Đúng thứ tự rồi, rau nằm gọn trong giỏ."
+        ],
+        "wrong": [
+          "Thứ ấy vừa xuất hiện ngay trước rồi, nhìn lại nhé.",
+          "Đếm từng nhóm ba thứ rau xem nào {name}.",
+          "Sau cà rốt và củ cải, hàng đầu tiên có gì?"
+        ],
+        "en": {
+          "right": [
+            "Buzz, buzz, Worker Bee does a loop to celebrate with {name}!",
+            "The vegetable row is perfectly even, you can see the pattern.",
+            "Right order, and the vegetables sit neatly in the basket."
+          ],
+          "wrong": [
+            "That vegetable just came right before, look again.",
+            "Count each group of three vegetables, {name}.",
+            "After the carrot and the radish, what was in the first row?"
+          ]
+        }
+      },
+      "en": {
+        "title": "Worker Bee's vegetable row",
+        "goTo": "Past the beehive flower garden, Hardworking Worker Bee is arranging vegetables to help",
+        "prompt": "Worker Bee arranges vegetables in a basket in a row with a pattern. What vegetable comes next?",
+        "elements": [
+          "Carrot",
+          "Radish",
+          "Cucumber",
+          "Carrot",
+          "Radish"
+        ],
+        "choices": [
+          "Carrot",
+          "Radish",
+          "Cucumber"
+        ]
       }
     },
     {
@@ -205,9 +368,16 @@
       "kind": "dialogue",
       "target": "vt-lvs-bo-vang",
       "lines": [
-        { "speaker": "Bò Vàng Kéo Xe", "text": "Ụm bò, giúp bà cụ thì tớ sẵn lòng! Đặt giỏ rau lên xe, tớ kéo một mạch tới cổng nhà bà." }
+        {
+          "speaker": "Bò Vàng Kéo Xe",
+          "text": "Ụm bò, giúp bà cụ thì tớ sẵn lòng! Đặt giỏ rau lên xe, tớ kéo một mạch tới cổng nhà bà."
+        }
       ],
-      "choices": [{ "text": "Cảm ơn Bò Vàng nhiều lắm!" }],
+      "choices": [
+        {
+          "text": "Cảm ơn Bò Vàng nhiều lắm!"
+        }
+      ],
       "en": {
         "title": "Ask Golden Cow to pull the cart",
         "goTo": "Go to the bamboo by the riverbank and ask Cart-Pulling Golden Cow",
@@ -232,23 +402,119 @@
       "prompt": "Bà tặng quà và dặn dò. Chọn chữ đúng điền vào chỗ trống trong lời bà:",
       "template": "Bà gửi cháu một {{b1}}ói xôi, ba {{b2}}ủ khoai và mấy viên {{b3}}ẹo lạc. Hôm nào rảnh, cháu lại {{b4}}é thăm bà nhé.",
       "blanks": [
-        { "id": "b1", "options": [{ "id": "g", "text": "g" }, { "id": "gh", "text": "gh" }] },
-        { "id": "b2", "options": [{ "id": "c", "text": "c" }, { "id": "k", "text": "k" }] },
-        { "id": "b3", "options": [{ "id": "c", "text": "c" }, { "id": "k", "text": "k" }] },
-        { "id": "b4", "options": [{ "id": "g", "text": "g" }, { "id": "gh", "text": "gh" }] }
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "g",
+              "text": "g"
+            },
+            {
+              "id": "gh",
+              "text": "gh"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "c",
+              "text": "c"
+            },
+            {
+              "id": "k",
+              "text": "k"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "c",
+              "text": "c"
+            },
+            {
+              "id": "k",
+              "text": "k"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "g",
+              "text": "g"
+            },
+            {
+              "id": "gh",
+              "text": "gh"
+            }
+          ]
+        }
       ],
-      "answer": { "fills": { "b1": "g", "b2": "c", "b3": "k", "b4": "gh" } },
+      "answer": {
+        "fills": {
+          "b1": "g",
+          "b2": "c",
+          "b3": "k",
+          "b4": "gh"
+        }
+      },
       "support": {
-        "guide": ["Viết k và gh khi đứng trước i, e, ê.", "Trước các vần còn lại thì viết c và g.", "Nhìn chữ cái đứng ngay sau chỗ trống để chọn."],
+        "guide": [
+          "Viết k và gh khi đứng trước i, e, ê.",
+          "Trước các vần còn lại thì viết c và g.",
+          "Nhìn chữ cái đứng ngay sau chỗ trống để chọn."
+        ],
         "hint": "«ẹo» bắt đầu bằng e, «é» cũng bắt đầu bằng e.",
         "answer": {
           "text": "gói xôi, củ khoai, kẹo lạc, ghé thăm",
           "explanation": "Trước o, u viết g và c (gói, củ); trước e viết k và gh (kẹo, ghé)."
+        },
+        "en": {
+          "guide": [
+            "Write k and gh before i, e, ê.",
+            "Before the other vowels, write c and g.",
+            "Look at the letter right after the blank to choose."
+          ],
+          "hint": "«ẹo» (in kẹo) starts with e, and «é» (in ghé) also starts with e.",
+          "answer": {
+            "text": "gói xôi (parcel of sticky rice), củ khoai (sweet potato), kẹo lạc (peanut candy), ghé thăm (visit)",
+            "explanation": "Before o and u, write g and c (gói, củ); before e, write k and gh (kẹo, ghé)."
+          }
         }
       },
       "feedback": {
-        "right": ["Bà xoa đầu {name}: chữ cháu viết đúng hết rồi!", "Gói xôi, củ khoai, kẹo lạc, ghé thăm, không sai một chữ.", "Nhớ luật k, gh đứng trước e là chẳng bao giờ nhầm."],
-        "wrong": ["Nhìn chữ cái ngay sau chỗ trống rồi chọn lại nhé.", "Trước chữ e thì dùng k hay c nhỉ {name}?", "Có một chỗ trống chưa đúng luật, soát lại từng chữ nha."]
+        "right": [
+          "Bà xoa đầu {name}: chữ cháu viết đúng hết rồi!",
+          "Gói xôi, củ khoai, kẹo lạc, ghé thăm, không sai một chữ.",
+          "Nhớ luật k, gh đứng trước e là chẳng bao giờ nhầm."
+        ],
+        "wrong": [
+          "Nhìn chữ cái ngay sau chỗ trống rồi chọn lại nhé.",
+          "Trước chữ e thì dùng k hay c nhỉ {name}?",
+          "Có một chỗ trống chưa đúng luật, soát lại từng chữ nha."
+        ],
+        "en": {
+          "right": [
+            "Grandma pats {name}'s head: you wrote every letter right!",
+            "Gói xôi, củ khoai, kẹo lạc, ghé thăm: not one letter wrong.",
+            "Remember the rule: k and gh before e, and you'll never mix them up."
+          ],
+          "wrong": [
+            "Look at the letter right after the blank and choose again.",
+            "Before the letter e, do we use k or c, {name}?",
+            "One blank doesn't follow the rule yet, check each letter again."
+          ]
+        }
+      },
+      "en": {
+        "title": "A thank-you for Grandma",
+        "goTo": "Return the basket of vegetables to Grandma on the grassy path by the river",
+        "prompt": "Grandma gives a gift and some words of advice. Choose the right letters to fill the blanks in her words:"
       }
     },
     {
@@ -277,6 +543,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "chinh-ta": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "chinh-ta": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: Grandma's Vegetable Basket",
+    "summary": "Crossing the grassy riverbank, Veggie-Picking Grandma trips and her vegetables scatter everywhere. {name} picks up the vegetables, reads her market note, works out the vegetable row pattern, chooses how to carry the heavy basket home and writes a thank-you to Grandma with the right spelling."
   }
 }

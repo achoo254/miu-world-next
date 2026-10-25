@@ -119,7 +119,11 @@
         "tv2-t15-quat-nan",
         "tv2-t15-goi-bong-lau",
         "tv2-t15-ong-nuoc-mat"
-      ]
+      ],
+      "en": {
+        "title": "The bamboo fan under the moon",
+        "goTo": "Follow the moonlit lane to find the palm-leaf fan, the reed-flower pillow and the tube of cool water"
+      }
     },
     {
       "id": "khoi-dong",
@@ -201,6 +205,17 @@
         "answer": {
           "text": "Lên non mới biết non cao / Nuôi con mới biết công lao mẫu từ.",
           "explanation": "Câu ca dao so sánh: leo núi mới biết núi cao, nuôi con mới thấy hết công lao của người mẹ hiền."
+        },
+        "en": {
+          "guide": [
+            "Find the lines with the words \"nuôi con\" (raising a child).",
+            "Which line mentions a mother's hard work?"
+          ],
+          "hint": "You must climb the mountain to know how high it is, just as you must raise a child to know how hard Mum works.",
+          "answer": {
+            "text": "Climb the mountain to know how high it is / Raise a child to know a mother's toil.",
+            "explanation": "The folk verse compares: only by climbing do you know how high a mountain is, and only by raising a child do you see all a loving mother has done."
+          }
         }
       },
       "feedback": {
@@ -213,9 +228,31 @@
           "Hai dòng ấy kể chuyện bà Triệu cưỡi voi, chưa nói tới công lao của mẹ đâu.",
           "Hai dòng này nói mẹ ru con và gánh nước, còn chuyện công lao thì ở chỗ khác cơ.",
           "Tìm cặp dòng có hai chữ \"nuôi con\" xem nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Na whispers: only raising a child shows what Mum does, now I understand.",
+            "Spot on! Grandma Brown Bear nods: I've known this verse since I was tiny.",
+            "Well chosen! {name} found the line about a mother's hard work as fast as a firefly flashes."
+          ],
+          "wrong": [
+            "Those two lines tell about Lady Triệu riding an elephant, nothing about a mother's hard work yet.",
+            "Those two lines say Mum lulls her child and carries water, while the mother's hard work is somewhere else.",
+            "Look for the pair of lines with the words \"nuôi con\"."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The lullaby on the leaf",
+        "goTo": "Go up to the leaf with the copied verse hanging beside the hammock",
+        "question": "Which line of the verse shows that you only fully understand a mother's hard work when you raise a child yourself?",
+        "choices": [
+          "Lull your child to a peaceful sleep\nSo Mum can carry water to wash the elephant's howdah",
+          "Only when you climb the mountain do you know how high it is\nOnly by raising a child do you know a mother's loving labour.",
+          "If you want to see, climb the mountain and see\nLady Triệu the general riding an elephant, striking the gong."
+        ]
+      }
     },
     {
       "id": "me-lam-gi",
@@ -263,6 +300,17 @@
         "answer": {
           "text": "Mẹ ru con ngủ, đi gánh nước và nuôi con khôn lớn.",
           "explanation": "Ca dao kể: ru con cho ngủ lành để mẹ gánh nước, và phải nuôi con mới biết công lao của mẹ."
+        },
+        "en": {
+          "guide": [
+            "Read the first pair of lines: Mum lulls the child and what does she do with her shoulders?",
+            "Read the second pair: what is Mum's hard work about?"
+          ],
+          "hint": "Mum does three things. The fan and the fairy tales belong only to Na's night tonight, not to the verse.",
+          "answer": {
+            "text": "Mum lulls her child to sleep, goes to carry water and raises her child to grow up.",
+            "explanation": "The verse says: lull the child to a peaceful sleep so Mum can carry water, and only by raising a child do you know a mother's hard work."
+          }
         }
       },
       "feedback": {
@@ -275,9 +323,32 @@
           "Chiếc quạt có trong đêm nay của Na, nhưng lời ca dao thì không nhắc tới đâu.",
           "Lời ca dao không kể chuyện cổ tích đâu, chỉ có lời ru và việc nhà thôi.",
           "Còn thiếu một việc mẹ làm bằng đôi vai đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three of Mum's jobs! Grandma Brown Bear nods: my mum lulled me exactly like that.",
+            "Lulling, carrying water, raising a child… just hearing it makes you love Mum.",
+            "Na smiles: just like my mum does every day."
+          ],
+          "wrong": [
+            "The fan is part of Na's night, but the verse doesn't mention it.",
+            "The verse doesn't tell fairy tales, only the lullaby and the housework.",
+            "One thing Mum does with her shoulders is still missing."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "What Mum does for her child",
+        "prompt": "Grandma Brown Bear waves a banana leaf as big as an umbrella and asks very softly so as not to startle Na: In the folk verse, what does Mum do for her child?\nChoose everything Mum does.",
+        "choices": [
+          "lulls the child to sleep",
+          "fans the child",
+          "carries water",
+          "tells fairy tales",
+          "raises the child"
+        ]
+      }
     },
     {
       "id": "cau-tho-cuoi",
@@ -314,6 +385,17 @@
         "answer": {
           "text": "Làm con phải một lòng kính trọng, biết ơn cha mẹ.",
           "explanation": "\"Thờ mẹ kính cha\", \"tròn chữ hiếu\" nghĩa là người con phải yêu kính và biết ơn cha mẹ mới đúng đạo làm con."
+        },
+        "en": {
+          "guide": [
+            "Read the last two lines: \"Một lòng thờ mẹ kính cha / Cho tròn chữ hiếu mới là đạo con.\"",
+            "The word «hiếu» (filial duty) is love, respect and gratitude to parents."
+          ],
+          "hint": "These two lines are about a child's duty towards their parents.",
+          "answer": {
+            "text": "A child must wholeheartedly respect and be grateful to their parents.",
+            "explanation": "\"Thờ mẹ kính cha\" and \"tròn chữ hiếu\" mean a child must love, respect and thank their parents to be a good child."
+          }
         }
       },
       "feedback": {
@@ -326,9 +408,31 @@
           "Học giỏi là điều tốt, nhưng hai dòng cuối nói tới chữ hiếu cơ.",
           "Hai dòng cuối nhắn người con, đâu phải nhắn cha mẹ phải làm hết mọi việc.",
           "Hãy nghĩ tới chữ \"hiếu\" xem người con cần làm gì."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, a child should love and respect their parents.",
+            "Na tears up: filial duty, and not just for today.",
+            "What deep understanding, {name} reads folk verse like a little poet."
+          ],
+          "wrong": [
+            "Doing well at school is good, but the last two lines are about «hiếu», filial duty.",
+            "The last two lines speak to the child, they don't tell parents to do everything.",
+            "Think about the word «hiếu»: what does a child need to do?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The message of the last two lines",
+        "goTo": "Na hugs the fan and runs back to the hammock under the porch, wanting to read the last lines aloud",
+        "prompt": "Na reads the last two lines aloud and clutches the palm-leaf fan. What do you think the last two lines of the verse want to say?",
+        "choices": [
+          "As a child, it is enough to do well at school.",
+          "Children must love and respect their parents with all their heart.",
+          "Parents must do everything for their children."
+        ]
+      }
     },
     {
       "id": "tu-kho-dem-he",
@@ -391,6 +495,17 @@
         "answer": {
           "text": "người mẹ hiền là mẫu từ; chỗ ngồi trên lưng voi là bành",
           "explanation": "Ô Từ ngữ giải nghĩa: mẫu từ là người mẹ hiền, thương con; bành là chỗ ngồi đặt trên lưng voi."
+        },
+        "en": {
+          "guide": [
+            "«Mẫu từ» is a kind mother who loves her child dearly.",
+            "«Bành» is the seat set on an elephant's back, not a part of the elephant itself."
+          ],
+          "hint": "Both words are explained in the Words box under the verse. «Bờm» and «ngà» are parts of an animal.",
+          "answer": {
+            "text": "mẫu từ is a kind mother; bành is the seat on an elephant's back",
+            "explanation": "The Words box explains: «mẫu từ» is a kind mother who loves her child; «bành» is the seat set on an elephant's back."
+          }
         }
       },
       "feedback": {
@@ -403,9 +518,26 @@
           "Thầy giáo hay hàng xóm đâu phải người mẹ hiền, cháu ạ. Thử lại nhé.",
           "Bờm và ngà là của con voi, còn chỗ ngồi để người cưỡi thì tên khác cơ.",
           "Nhớ ô Từ ngữ dưới bài nhé, thử lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Grandma Brown Bear laughs toothlessly: you use the old words as properly as a grown-up!",
+            "Both words in the right place, and the sentences sound smooth.",
+            "Mẫu từ! Na yawned a very long yawn when she heard it."
+          ],
+          "wrong": [
+            "A teacher or a neighbour isn't a kind mother, dear. Try again.",
+            "«Bờm» and «ngà» belong to the elephant, but the seat for riding has another name.",
+            "Remember the Words box under the verse, and try again."
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "Two words in the Words box",
+        "goTo": "Grandma Brown Bear beckons {name} over to the rattan chair on the porch, holding the leaf with the copied verse",
+        "prompt": "Grandma Brown Bear says: in the old days a kind mother was called \"mẫu từ\" and the seat set on an elephant's back was called \"bành\", but young ones hardly say them now. Help Grandma put each word in the right place, {name}."
+      }
     },
     {
       "id": "tu-chi-hoat-dong",
@@ -481,6 +613,17 @@
         "answer": {
           "text": "Hoạt động: ru, gánh, nuôi, coi, ngủ; không chỉ hoạt động: núi, nước, voi.",
           "explanation": "Ru, gánh, nuôi, coi, ngủ là những việc người ta làm; núi, nước, voi là tên sự vật, con vật."
+        },
+        "en": {
+          "guide": [
+            "Action words are things you can do: run, jump, sing…",
+            "Try putting \"đang\" (\"-ing\") before each word: \"đang gánh\" sounds fine, \"đang núi\" doesn't."
+          ],
+          "hint": "Five words are actions, and the other three are names of things.",
+          "answer": {
+            "text": "Actions: ru, gánh, nuôi, coi, ngủ; not actions: núi, nước, voi.",
+            "explanation": "«Ru», «gánh», «nuôi», «coi» and «ngủ» are things people do; «núi», «nước» and «voi» are names of things and animals."
+          }
         }
       },
       "feedback": {
@@ -493,9 +636,26 @@
           "Thử nói \"đang voi\" xem, nghe có kì không?",
           "Gánh là việc đôi vai mẹ làm đấy, xếp lại nhé.",
           "Còn một thẻ đứng nhầm giỏ, đặt chữ \"đang\" phía trước để thử."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ash Cat swishes her tail so hard that she blows away Grandma Brown Bear's fan!",
+            "Five actions in the right basket, not one card out of place.",
+            "{name} is so good that even sharp-eyed Ash Cat has to praise you."
+          ],
+          "wrong": [
+            "Try saying \"đang voi\": doesn't that sound odd?",
+            "«Gánh» is something Mum's shoulders do, so sort it again.",
+            "One card is in the wrong basket. Put \"đang\" in front to test it."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Find action words",
+        "goTo": "Out to the star fruit tree at the head of the lane, where Ash Cat wags her tail and invites everyone to play a word riddle",
+        "prompt": "Ash Cat saunters by, swishing her long tail like a fan, and challenges everyone: which words in the folk verse name something people do?\nDrag each card into the right basket."
+      }
     },
     {
       "id": "dat-cau-hoat-dong",
@@ -564,6 +724,17 @@
         "answer": {
           "text": "Lên non mới biết non cao → Nuôi con mới biết công lao mẫu từ → Công cha như núi Thái Sơn → Nghĩa mẹ như nước trong nguồn chảy ra → Một lòng thờ mẹ kính cha → Cho tròn chữ hiếu mới là đạo con.",
           "explanation": "Sáu dòng đi từ chuyện nuôi con mới biết công mẹ, tới công cha nghĩa mẹ, rồi lời dặn làm con phải tròn chữ hiếu."
+        },
+        "en": {
+          "guide": [
+            "Start with the pair of lines about the high mountain.",
+            "The line with Mount Thái Sơn comes before the line with water from the spring."
+          ],
+          "hint": "The line \"Cho tròn chữ hiếu mới là đạo con.\" is the closing line.",
+          "answer": {
+            "text": "Only when you climb the mountain do you know how high it is → Only by raising a child do you know a mother's loving labour → A father's merit is like Mount Thái Sơn → A mother's love is like water flowing from the spring → Wholeheartedly honour your mother and respect your father → Only by fulfilling filial duty do you complete a child's way.",
+            "explanation": "The six lines go from raising a child to know a mother's hard work, to a father's merit and a mother's love, then the advice that a child must fulfil filial duty."
+          }
         }
       },
       "feedback": {
@@ -576,9 +747,34 @@
           "Dòng núi Thái Sơn phải đứng trước dòng nước trong nguồn đấy.",
           "Câu kết của bài là câu nói về chữ hiếu, để nó cuối cùng.",
           "Cặp dòng về non cao mở đầu sáu dòng này, thử lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six lines in a row! Na silently reads along, lips moving.",
+            "Every line right, and the leaf is whole again as before.",
+            "Wind, stop blowing now, {name} has finished sorting!"
+          ],
+          "wrong": [
+            "The Mount Thái Sơn line has to come before the water-from-the-spring line.",
+            "The closing line is the one about filial duty, so put it last.",
+            "The pair of lines about the high mountain opens these six. Try again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Six poem lines blown by the wind",
+        "goTo": "A gust of wind sweeps over the poem leaf, so hurry to pick up the lines of verse",
+        "prompt": "A rare breeze blows by, cool but it scatters the last six lines on the leaf. Put them back in the right order so Na can learn them by heart.",
+        "items": [
+          "A mother's love is like water flowing from the spring",
+          "Only by raising a child do you know a mother's loving labour.",
+          "Only by fulfilling filial duty do you complete a child's way.",
+          "Only when you climb the mountain do you know how high it is",
+          "A father's merit is like Mount Thái Sơn",
+          "Wholeheartedly honour your mother and respect your father"
+        ]
+      }
     },
     {
       "id": "hoc-thuoc-long",
@@ -788,6 +984,17 @@
         "answer": {
           "text": "Bỏ nhà ra đi → về ôm cây khóc → cây cho quả chín mọng → ngẩng nhìn tán lá nhớ mẹ",
           "explanation": "Cậu bé giận dỗi bỏ đi, khi về không thấy mẹ chỉ thấy cây lạ, cây cho quả ngọt như sữa mẹ, cậu ngẩng nhìn tán lá mà nhớ mẹ."
+        },
+        "en": {
+          "guide": [
+            "The story begins when the boy sulks and leaves home.",
+            "The boy has to go far away before he comes back home."
+          ],
+          "hint": "The tree only gives fruit after the boy has hugged its trunk and cried for his mother.",
+          "answer": {
+            "text": "Leaves home → comes back and hugs the tree, crying → the tree gives juicy ripe fruit → looks up at the leaves and misses his mother",
+            "explanation": "The boy sulks and leaves; when he returns he doesn't find his mother, only a strange tree; the tree gives fruit as sweet as mother's milk, and he looks up at the leaves and misses her."
+          }
         }
       },
       "feedback": {
@@ -800,9 +1007,31 @@
           "Cậu bé phải bỏ đi trước thì mới có lúc quay về chứ.",
           "Cây chưa cho quả khi cậu bé chưa về khóc bên gốc đâu.",
           "Tranh cậu bé ngẩng nhìn tán lá là đoạn kết đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four pictures back in place, and Sunshine Giraffe stands very still so her neck won't knock them again.",
+            "Right order! The story is sad but so beautiful.",
+            "Grain Brown Bear wipes away tears: {name} sorts well, I could only cry."
+          ],
+          "wrong": [
+            "The boy has to leave first before he can come back.",
+            "The tree won't give fruit before the boy has come home and cried by its trunk.",
+            "The picture of the boy looking up at the leaves is the ending."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four star apple tree pictures",
+        "prompt": "Sunshine Giraffe carelessly turns her neck too hard, and four pictures fly everywhere. Remembering the story Sunshine Giraffe just told, put the pictures in the right order.",
+        "items": [
+          "The boy comes home, hugs the tree and cries for his mother",
+          "The boy looks up at the leaves and misses his mother",
+          "The boy sulks and leaves home",
+          "The tree gives the boy juicy ripe fruit"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-vu-sua",
@@ -921,5 +1150,9 @@
       "tu-ngu": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "Na the Koala Can't Sleep on a Summer Night",
+    "summary": "On a hot summer night, Na the Koala, the best sleeper in the hamlet, lies awake in the hammock under the porch, missing Mum fanning her. {name} finds a palm-leaf fan, reads the lullaby folk verse on the leaf, learns two old words from Grandma Brown Bear, then listens to Sunshine Giraffe tell the story of the star apple tree under the moon."
   }
 }

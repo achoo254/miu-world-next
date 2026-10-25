@@ -41,11 +41,20 @@
       "kind": "dialogue",
       "target": "trum-lvs-vit-con",
       "lines": [
-        { "speaker": "Vịt Con Lạch Bạch", "text": "Cạp cạp! {name} ơi, giỏ đèn hoa sen của hội làng đang nằm cạnh Trâu Đen Đố Chữ dưới gốc gạo." },
-        { "speaker": "Vịt Con Lạch Bạch", "text": "Bác ấy hiền lắm nhưng mê đố chữ, chưa ai trả lời hết bảy câu thì bác chưa trao giỏ đèn đâu." }
+        {
+          "speaker": "Vịt Con Lạch Bạch",
+          "text": "Cạp cạp! {name} ơi, giỏ đèn hoa sen của hội làng đang nằm cạnh Trâu Đen Đố Chữ dưới gốc gạo."
+        },
+        {
+          "speaker": "Vịt Con Lạch Bạch",
+          "text": "Bác ấy hiền lắm nhưng mê đố chữ, chưa ai trả lời hết bảy câu thì bác chưa trao giỏ đèn đâu."
+        }
       ],
       "choices": [
-        { "text": "Đố chữ thì tớ không sợ!", "reply": "Giỏi quá! Nhưng nhớ hái sen ở mép đầm trước, hội thả đèn cần sen mà." }
+        {
+          "text": "Đố chữ thì tớ không sợ!",
+          "reply": "Giỏi quá! Nhưng nhớ hái sen ở mép đầm trước, hội thả đèn cần sen mà."
+        }
       ],
       "en": {
         "title": "Vịt Con tells the tale",
@@ -88,7 +97,26 @@
           "clue": "Hình chóp nhọn, đan bằng lá cọ trắng ngà, đội lên đầu che nắng che mưa.",
           "target": "trum-lvs-non-la"
         }
-      ]
+      ],
+      "en": {
+        "title": "Get ready to float the lanterns",
+        "goTo": "Go to the edge of the lotus pond and find three things for the lantern festival",
+        "prompt": "The lantern festival needs three things. Read Duckling's clues and find them:",
+        "items": [
+          {
+            "name": "A pink lotus flower",
+            "clue": "Soft pink petals in many layers with a golden centre, rising above the water."
+          },
+          {
+            "name": "A big lotus leaf",
+            "clue": "Round like a green tray, where raindrops roll about like pearls without soaking in."
+          },
+          {
+            "name": "The conical hat",
+            "clue": "Pointed like a cone, woven from pale palm leaves and worn on the head against sun and rain."
+          }
+        ]
+      }
     },
     {
       "id": "doc-bang-tin-hoi",
@@ -100,22 +128,78 @@
       "text": "HỘI ĐẦM SEN TỐI NAY\nKhi trăng lên, cả làng thả đèn hoa sen trên mặt đầm. Đèn đang nằm trong giỏ của Trâu Đen. Bác Trâu chỉ trao giỏ cho bạn nào giải được bảy câu đố chữ. Mỗi bạn nhớ mang một bông sen để thả cùng đèn.",
       "question": "Đèn hoa sen của hội làng đang ở đâu?",
       "choices": [
-        { "id": "a", "text": "Dưới gốc đa đầu làng" },
-        { "id": "b", "text": "Trong giỏ của Trâu Đen" },
-        { "id": "c", "text": "Trên mái lớp học nhỏ" }
+        {
+          "id": "a",
+          "text": "Dưới gốc đa đầu làng"
+        },
+        {
+          "id": "b",
+          "text": "Trong giỏ của Trâu Đen"
+        },
+        {
+          "id": "c",
+          "text": "Trên mái lớp học nhỏ"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm câu có chữ «đèn đang nằm».", "Đọc hết câu đó."],
+        "guide": [
+          "Tìm câu có chữ «đèn đang nằm».",
+          "Đọc hết câu đó."
+        ],
         "hint": "Đèn nằm ở chỗ một nhân vật mê đố chữ.",
         "answer": {
           "text": "Đèn ở trong giỏ của bác Trâu Đen",
           "explanation": "Bảng tin viết: đèn đang nằm trong giỏ của Trâu Đen."
+        },
+        "en": {
+          "guide": [
+            "Find the sentence with the words «lanterns are in».",
+            "Read that whole sentence."
+          ],
+          "hint": "The lanterns are with a character who loves word riddles.",
+          "answer": {
+            "text": "Inside Trâu Đen's basket",
+            "explanation": "The notice says: the lanterns are in Trâu Đen's basket."
+          }
         }
       },
       "feedback": {
-        "right": ["Đúng rồi, mình phải tới gặp bác Trâu Đen thôi!", "{name} tìm ra câu quan trọng nhất của bảng tin.", "Giỏ đèn ở chỗ bác Trâu, chẳng chạy đi đâu được!"],
-        "wrong": ["Bảng tin không nhắc tới gốc đa đâu, đọc lại nhé.", "Tìm chữ «giỏ» trong bảng tin xem nào {name}.", "Câu thứ hai nói rõ đèn ở đâu đấy, thử lại nha."]
+        "right": [
+          "Đúng rồi, mình phải tới gặp bác Trâu Đen thôi!",
+          "{name} tìm ra câu quan trọng nhất của bảng tin.",
+          "Giỏ đèn ở chỗ bác Trâu, chẳng chạy đi đâu được!"
+        ],
+        "wrong": [
+          "Bảng tin không nhắc tới gốc đa đâu, đọc lại nhé.",
+          "Tìm chữ «giỏ» trong bảng tin xem nào {name}.",
+          "Câu thứ hai nói rõ đèn ở đâu đấy, thử lại nha."
+        ],
+        "en": {
+          "right": [
+            "Right, we must go and meet Uncle Buffalo!",
+            "{name} found the most important sentence on the notice.",
+            "The lantern basket is with Uncle Buffalo, it can't go anywhere!"
+          ],
+          "wrong": [
+            "The notice doesn't mention a banyan tree, read it again.",
+            "Look for the word «basket» in the notice, {name}.",
+            "The second sentence says clearly where the lanterns are, try again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Lotus pond festival notice board",
+        "goTo": "Stop by the bamboo post beside the pond and read the festival notice",
+        "text": "TONIGHT AT THE LOTUS POND FESTIVAL\nWhen the moon rises, the whole village floats lotus lanterns on the pond. The lanterns are in Trâu Đen's basket. Uncle Buffalo will only hand the basket to someone who can answer seven word riddles. Everyone, remember to bring a lotus flower to float with the lanterns.",
+        "question": "Where are the festival's lotus lanterns?",
+        "choices": [
+          "At the foot of the banyan by the village entrance",
+          "In Trâu Đen's basket",
+          "On the roof of the little classroom"
+        ]
       }
     },
     {
@@ -129,28 +213,105 @@
       "skill": "logic",
       "prompt": "Cò Trắng vẽ những hòn đá kê qua đầm: đi từ ô chú mèo tới ô ngôi sao, ô tường gạch là chỗ nước sâu. Dãy bước nào đi được? (→ sang phải, ↓ đi xuống)",
       "grid": [
-        ["S", ".", ".", "#"],
-        ["#", "#", ".", "#"],
-        [".", ".", ".", "."],
-        [".", "#", "#", "G"]
+        [
+          "S",
+          ".",
+          ".",
+          "#"
+        ],
+        [
+          "#",
+          "#",
+          ".",
+          "#"
+        ],
+        [
+          ".",
+          ".",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          "#",
+          "#",
+          "G"
+        ]
       ],
       "choices": [
-        { "id": "a", "text": "↓ ↓ → → → ↓" },
-        { "id": "b", "text": "→ → ↓ ↓ → ↓" },
-        { "id": "c", "text": "→ → → ↓ ↓ ↓" }
+        {
+          "id": "a",
+          "text": "↓ ↓ → → → ↓"
+        },
+        {
+          "id": "b",
+          "text": "→ → ↓ ↓ → ↓"
+        },
+        {
+          "id": "c",
+          "text": "→ → → ↓ ↓ ↓"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Bắt đầu từ ô chú mèo ở góc trên bên trái.", "Đi thử từng dãy, gặp ô tường gạch là rơi xuống nước.", "Dãy đúng dừng đúng ô ngôi sao ở góc dưới."],
+        "guide": [
+          "Bắt đầu từ ô chú mèo ở góc trên bên trái.",
+          "Đi thử từng dãy, gặp ô tường gạch là rơi xuống nước.",
+          "Dãy đúng dừng đúng ô ngôi sao ở góc dưới."
+        ],
         "hint": "Hàng thứ hai chỉ có một ô đá để bước xuống.",
         "answer": {
           "text": "Sang phải hai bước, xuống hai bước, rồi phải, xuống",
           "explanation": "Đi hết hai ô đá hàng trên, bước xuống ô đá duy nhất của hàng hai, xuống tiếp hàng ba, sang phải rồi xuống là tới ngôi sao."
+        },
+        "en": {
+          "guide": [
+            "Start at the cat square in the top left corner.",
+            "Try each row of steps; a brick wall square means falling into the water.",
+            "The right row stops exactly on the star square in the bottom corner."
+          ],
+          "hint": "The second row has only one stone to step down onto.",
+          "answer": {
+            "text": "Right two steps, down two steps, then right, down",
+            "explanation": "Cross both stones of the top row, step down onto the only stone of row two, down again to row three, then right and down to reach the star."
+          }
         }
       },
       "feedback": {
-        "right": ["Bõm bõm… không, chẳng bõm tí nào! {name} sang bờ khô ráo.", "Cò Trắng gật gù: bước đá vững vàng lắm!", "Qua đầm an toàn, gốc gạo hiện ra trước mặt rồi."],
-        "wrong": ["Ối, ô đó là nước sâu, thử dãy khác nhé.", "Xem hàng thứ hai còn ô đá nào để bước xuống không {name}.", "Đi thẳng một mạch sang phải sẽ gặp nước đấy."]
+        "right": [
+          "Bõm bõm… không, chẳng bõm tí nào! {name} sang bờ khô ráo.",
+          "Cò Trắng gật gù: bước đá vững vàng lắm!",
+          "Qua đầm an toàn, gốc gạo hiện ra trước mặt rồi."
+        ],
+        "wrong": [
+          "Ối, ô đó là nước sâu, thử dãy khác nhé.",
+          "Xem hàng thứ hai còn ô đá nào để bước xuống không {name}.",
+          "Đi thẳng một mạch sang phải sẽ gặp nước đấy."
+        ],
+        "en": {
+          "right": [
+            "Splash splash... no, not a single splash! {name} reaches the dry bank.",
+            "White Egret nods: very steady stepping!",
+            "Across the pond safely, the kapok tree appears ahead."
+          ],
+          "wrong": [
+            "Oops, that square is deep water, try another row.",
+            "Look at the second row, is there a stone to step down onto, {name}?",
+            "Going straight right will land you in the water."
+          ]
+        }
+      },
+      "en": {
+        "title": "Hop across the pond on stones",
+        "goTo": "Go to the rocky shoal in the middle of the pond, where Long-Legged White Egret shows the way",
+        "prompt": "White Egret draws stepping stones across the pond: go from the cat square to the star square, and the brick wall squares are deep water. Which row of steps works? (→ right, ↓ down)",
+        "choices": [
+          "↓ ↓ → → → ↓",
+          "→ → ↓ ↓ → ↓",
+          "→ → → ↓ ↓ ↓"
+        ]
       }
     },
     {
@@ -215,26 +376,51 @@
           "move": "fling",
           "prompt": "Chữ còn thiếu trong «…on kiến» là chữ gì?",
           "choices": [
-            { "id": "a", "text": "c" },
-            { "id": "b", "text": "k" },
-            { "id": "c", "text": "q" }
+            {
+              "id": "a",
+              "text": "c"
+            },
+            {
+              "id": "b",
+              "text": "k"
+            },
+            {
+              "id": "c",
+              "text": "q"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đọc to «…on kiến» và nhìn nguyên âm đứng ngay sau chỗ trống.",
               "Nhớ: âm «cờ» đứng trước o được viết khác với khi đứng trước e, ê, i."
             ],
             "hint": "Sau chỗ trống là chữ o; trước a, o, u ta không dùng k, còn q phải đi với u.",
-            "answer": { "text": "c", "explanation": "Trước o, âm «cờ» viết là c nên có «con kiến»; k chỉ đứng trước e, ê, i (như «kiến»), q luôn đi với u." },
+            "answer": {
+              "text": "c",
+              "explanation": "Trước o, âm «cờ» viết là c nên có «con kiến»; k chỉ đứng trước e, ê, i (như «kiến»), q luôn đi với u."
+            },
             "en": {
               "guide": [
                 "Say «…on kiến» (the ant) aloud and look at the vowel straight after the gap.",
                 "Remember: the «k» sound before o is spelt differently from before e, ê and i."
               ],
               "hint": "The gap comes before o; k is never used before a, o, u, and q must go with u.",
-              "answer": { "text": "c", "explanation": "Before o the «k» sound is written c, giving «con kiến»; k only goes before e, ê, i (as in «kiến») and q always pairs with u." }
+              "answer": {
+                "text": "c",
+                "explanation": "Before o the «k» sound is written c, giving «con kiến»; k only goes before e, ê, i (as in «kiến») and q always pairs with u."
+              }
             }
+          },
+          "en": {
+            "prompt": "Which letter is missing in «…on kiến»?",
+            "choices": [
+              "c",
+              "k",
+              "q"
+            ]
           }
         },
         {
@@ -243,26 +429,51 @@
           "move": "orbs",
           "prompt": "Đường làng sau mưa lồi lõm. Từ nào viết đúng chính tả?",
           "choices": [
-            { "id": "a", "text": "gồ ghề" },
-            { "id": "b", "text": "ghồ gề" },
-            { "id": "c", "text": "gồ gề" }
+            {
+              "id": "a",
+              "text": "gồ ghề"
+            },
+            {
+              "id": "b",
+              "text": "ghồ gề"
+            },
+            {
+              "id": "c",
+              "text": "gồ gề"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Tách từ thành hai tiếng và nhìn nguyên âm đứng sau âm «gờ» của mỗi tiếng.",
               "Áp luật: trước e, ê, i viết gh; trước o, ô, a, u và các nguyên âm khác viết g."
             ],
             "hint": "Tiếng đầu có ô, tiếng sau có ê, nên mỗi tiếng dùng một cách viết «gờ» riêng.",
-            "answer": { "text": "gồ ghề", "explanation": "«Gồ» có ô nên viết g, «ghề» có ê nên viết gh, vậy «gồ ghề» đúng; «ghồ» và «gề» viết sai luật." },
+            "answer": {
+              "text": "gồ ghề",
+              "explanation": "«Gồ» có ô nên viết g, «ghề» có ê nên viết gh, vậy «gồ ghề» đúng; «ghồ» và «gề» viết sai luật."
+            },
             "en": {
               "guide": [
                 "Split the word into two syllables and check the vowel after the «g» sound in each.",
                 "Apply the rule: before e, ê, i write gh; before o, ô, a, u and the rest write g."
               ],
               "hint": "The first syllable has ô and the second has ê, so each takes its own spelling of «g».",
-              "answer": { "text": "gồ ghề", "explanation": "«gồ» has ô so it takes g, «ghề» has ê so it takes gh, making «gồ ghề» (bumpy) right; «ghồ» and «gề» break the rule." }
+              "answer": {
+                "text": "gồ ghề",
+                "explanation": "«gồ» has ô so it takes g, «ghề» has ê so it takes gh, making «gồ ghề» (bumpy) right; «ghồ» and «gề» break the rule."
+              }
             }
+          },
+          "en": {
+            "prompt": "The village road is bumpy after the rain. Which word is spelt correctly?",
+            "choices": [
+              "gồ ghề",
+              "ghồ gề",
+              "gồ gề"
+            ]
           }
         },
         {
@@ -271,26 +482,51 @@
           "move": "gem",
           "prompt": "Xếp ba tên Hoa, Bình, Lan theo thứ tự bảng chữ cái. Tên nào đứng đầu?",
           "choices": [
-            { "id": "a", "text": "Hoa" },
-            { "id": "b", "text": "Bình" },
-            { "id": "c", "text": "Lan" }
+            {
+              "id": "a",
+              "text": "Hoa"
+            },
+            {
+              "id": "b",
+              "text": "Bình"
+            },
+            {
+              "id": "c",
+              "text": "Lan"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Viết ra chữ cái đầu của ba tên: H, B, L.",
               "So vị trí của ba chữ ấy trong bảng chữ cái; chữ nào đứng trước thì tên đó lên đầu."
             ],
             "hint": "Trong ba chữ H, B, L, chữ nào bạn gặp sớm nhất khi đọc bảng chữ cái từ a?",
-            "answer": { "text": "Bình", "explanation": "B đứng trước H, H đứng trước L, nên thứ tự là Bình, Hoa, Lan và Bình đứng đầu." },
+            "answer": {
+              "text": "Bình",
+              "explanation": "B đứng trước H, H đứng trước L, nên thứ tự là Bình, Hoa, Lan và Bình đứng đầu."
+            },
             "en": {
               "guide": [
                 "Write down the first letter of the three names: H, B, L.",
                 "Compare where those letters sit in the alphabet; the earliest letter puts its name first."
               ],
               "hint": "Of H, B and L, which do you reach first when saying the alphabet from a?",
-              "answer": { "text": "Bình", "explanation": "B comes before H and H before L, so the order is Bình, Hoa, Lan, with Bình first." }
+              "answer": {
+                "text": "Bình",
+                "explanation": "B comes before H and H before L, so the order is Bình, Hoa, Lan, with Bình first."
+              }
             }
+          },
+          "en": {
+            "prompt": "Put the three names Hoa, Bình and Lan in alphabet order. Which name comes first?",
+            "choices": [
+              "Hoa",
+              "Bình",
+              "Lan"
+            ]
           }
         },
         {
@@ -299,26 +535,51 @@
           "move": "charge",
           "prompt": "Trong ba từ sau, từ nào chỉ hoạt động?",
           "choices": [
-            { "id": "a", "text": "con trâu" },
-            { "id": "b", "text": "xanh mướt" },
-            { "id": "c", "text": "cày ruộng" }
+            {
+              "id": "a",
+              "text": "con trâu"
+            },
+            {
+              "id": "b",
+              "text": "xanh mướt"
+            },
+            {
+              "id": "c",
+              "text": "cày ruộng"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Đọc ba từ và hỏi: từ nào là một việc làm, không phải tên con vật hay màu sắc?",
               "Thử đặt từng từ sau «Con trâu đang…» xem từ nào nghe hợp."
             ],
             "hint": "Từ chỉ hoạt động là việc làm, như việc trâu vẫn giúp bác nông dân ngoài đồng.",
-            "answer": { "text": "cày ruộng", "explanation": "«Cày ruộng» là việc trâu làm ngoài đồng nên chỉ hoạt động; «con trâu» là con vật, «xanh mướt» là đặc điểm." },
+            "answer": {
+              "text": "cày ruộng",
+              "explanation": "«Cày ruộng» là việc trâu làm ngoài đồng nên chỉ hoạt động; «con trâu» là con vật, «xanh mướt» là đặc điểm."
+            },
             "en": {
               "guide": [
                 "Read the three words and ask: which is something done, not an animal or a colour?",
                 "Try each word after «Con trâu đang…» (the buffalo is…) and see which fits."
               ],
               "hint": "An action word is something done, like the work a buffalo helps farmers with in the fields.",
-              "answer": { "text": "cày ruộng (plough the field)", "explanation": "«cày ruộng» (plough the field) is the work the buffalo does, so it is an action; «con trâu» is an animal and «xanh mướt» a feature." }
+              "answer": {
+                "text": "cày ruộng",
+                "explanation": "«cày ruộng» (plough the field) is the work the buffalo does, so it is an action; «con trâu» is an animal and «xanh mướt» a feature."
+              }
             }
+          },
+          "en": {
+            "prompt": "Of the three words below, which one is an action word?",
+            "choices": [
+              "con trâu",
+              "xanh mướt",
+              "cày ruộng"
+            ]
           }
         },
         {
@@ -327,26 +588,51 @@
           "move": "fling",
           "prompt": "Câu nào là câu giới thiệu?",
           "choices": [
-            { "id": "a", "text": "Tôi là Trâu Đen, nhà ở đầm sen." },
-            { "id": "b", "text": "Trâu Đen đang gặm cỏ bên bờ đầm." },
-            { "id": "c", "text": "Hoa sen nở thơm ngát cả một vùng." }
+            {
+              "id": "a",
+              "text": "Tôi là Trâu Đen, nhà ở đầm sen."
+            },
+            {
+              "id": "b",
+              "text": "Trâu Đen đang gặm cỏ bên bờ đầm."
+            },
+            {
+              "id": "c",
+              "text": "Hoa sen nở thơm ngát cả một vùng."
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Câu giới thiệu là câu người nói tự cho biết tên mình và vài điều về mình.",
               "Đọc ba câu, loại câu kể việc đang làm và câu tả hoa sen."
             ],
             "hint": "Trong câu giới thiệu, chính người nói xưng «tôi», «tớ» hay «em» rồi nói tên mình.",
-            "answer": { "text": "Tôi là Trâu Đen, nhà ở đầm sen.", "explanation": "«Tôi là Trâu Đen, nhà ở đầm sen.» nói tên và chỗ ở của Trâu Đen nên là câu giới thiệu; hai câu kia kể việc và tả hoa." },
+            "answer": {
+              "text": "Tôi là Trâu Đen, nhà ở đầm sen.",
+              "explanation": "«Tôi là Trâu Đen, nhà ở đầm sen.» nói tên và chỗ ở của Trâu Đen nên là câu giới thiệu; hai câu kia kể việc và tả hoa."
+            },
             "en": {
               "guide": [
                 "An introduction is when the speaker tells their own name and something about themselves.",
                 "Read the three sentences and rule out the one about grazing and the one about lotus flowers."
               ],
               "hint": "In an introduction the speaker says «tôi», «tớ» or «em» (I) and then gives their name.",
-              "answer": { "text": "Tôi là Trâu Đen, nhà ở đầm sen. (I'm Trâu Đen, I live by the lotus pond.)", "explanation": "«Tôi là Trâu Đen, nhà ở đầm sen.» gives Trâu Đen's name and home, so it introduces; the others tell an action and describe flowers." }
+              "answer": {
+                "text": "I am Trâu Đen, and my home is by the lotus pond.",
+                "explanation": "«Tôi là Trâu Đen, nhà ở đầm sen.» gives Trâu Đen's name and home, so it introduces; the others tell an action and describe flowers."
+              }
             }
+          },
+          "en": {
+            "prompt": "Which sentence is an introducing sentence?",
+            "choices": [
+              "I am Trâu Đen, and my home is by the lotus pond.",
+              "Trâu Đen is grazing on the bank of the pond.",
+              "The lotus flowers bloom, scenting the whole area."
+            ]
           }
         },
         {
@@ -355,26 +641,51 @@
           "move": "orbs",
           "prompt": "Câu kể «Đầm sen làng em nở hoa thơm ngát» cần đặt dấu gì ở cuối?",
           "choices": [
-            { "id": "a", "text": "Dấu chấm hỏi" },
-            { "id": "b", "text": "Dấu chấm" },
-            { "id": "c", "text": "Dấu phẩy" }
+            {
+              "id": "a",
+              "text": "Dấu chấm hỏi"
+            },
+            {
+              "id": "b",
+              "text": "Dấu chấm"
+            },
+            {
+              "id": "c",
+              "text": "Dấu phẩy"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đọc «Đầm sen làng em nở hoa thơm ngát» và hỏi: câu này kể một điều hay hỏi một điều?",
               "Nhớ: câu kể kết thúc bằng một dấu khác với câu hỏi và câu cảm."
             ],
             "hint": "Câu này chỉ kể lại một điều có thật, không hỏi ai và không cần ai trả lời.",
-            "answer": { "text": "Dấu chấm", "explanation": "Câu kể về đầm sen, không hỏi gì, nên cuối câu đặt dấu chấm; dấu chấm hỏi dành cho câu hỏi, dấu phẩy để ngắt giữa câu." },
+            "answer": {
+              "text": "Dấu chấm",
+              "explanation": "Câu kể về đầm sen, không hỏi gì, nên cuối câu đặt dấu chấm; dấu chấm hỏi dành cho câu hỏi, dấu phẩy để ngắt giữa câu."
+            },
             "en": {
               "guide": [
                 "Read «Lotus Pond làng em nở hoa thơm ngát» and ask: does it tell something or ask something?",
                 "Remember: a telling sentence ends with a different mark from a question or an exclamation."
               ],
               "hint": "This sentence just reports something true; it asks nobody and needs no reply.",
-              "answer": { "text": "Full stop", "explanation": "It tells about the lotus pond and asks nothing, so it ends with a full stop; question marks end questions and commas split sentences." }
+              "answer": {
+                "text": "Full stop",
+                "explanation": "It tells about the lotus pond and asks nothing, so it ends with a full stop; question marks end questions and commas split sentences."
+              }
             }
+          },
+          "en": {
+            "prompt": "Which mark goes at the end of the telling sentence «Đầm sen làng em nở hoa thơm ngát»?",
+            "choices": [
+              "Question mark",
+              "Full stop",
+              "Comma"
+            ]
           }
         },
         {
@@ -383,29 +694,61 @@
           "move": "gem",
           "prompt": "Đọc câu: «Chiều nay, Vịt Con bơi quanh đầm sen tìm chiếc lá to nhất.» Vịt Con bơi ở đâu?",
           "choices": [
-            { "id": "a", "text": "Quanh đầm sen" },
-            { "id": "b", "text": "Dưới chân cầu đá" },
-            { "id": "c", "text": "Ngoài bến đò" }
+            {
+              "id": "a",
+              "text": "Quanh đầm sen"
+            },
+            {
+              "id": "b",
+              "text": "Dưới chân cầu đá"
+            },
+            {
+              "id": "c",
+              "text": "Ngoài bến đò"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đọc lại câu về Vịt Con và tìm phần nói về nơi chốn.",
               "Câu hỏi «ở đâu» hỏi về chỗ, nên tìm cụm từ đứng ngay sau từ «bơi»."
             ],
             "hint": "Câu không hề nhắc tới cầu đá hay bến đò; chỉ chọn nơi có trong chính câu đã đọc.",
-            "answer": { "text": "Quanh đầm sen", "explanation": "Câu viết «Vịt Con bơi quanh đầm sen», nên Vịt Con bơi quanh đầm sen; cầu đá và bến đò không có trong câu." },
+            "answer": {
+              "text": "Quanh đầm sen",
+              "explanation": "Câu viết «Vịt Con bơi quanh đầm sen», nên Vịt Con bơi quanh đầm sen; cầu đá và bến đò không có trong câu."
+            },
             "en": {
               "guide": [
                 "Reread the sentence about Vịt Con (the duckling) and find the part that names a place.",
                 "A «where» question asks about a place, so look at the words straight after «bơi» (swims)."
               ],
               "hint": "The sentence never mentions a stone bridge or a ferry landing; pick only a place that is in it.",
-              "answer": { "text": "Around the lotus pond (Quanh đầm sen)", "explanation": "The sentence says «Vịt Con bơi quanh đầm sen», so the duckling swims around the lotus pond; the bridge and landing are not in it." }
+              "answer": {
+                "text": "Around the lotus pond",
+                "explanation": "The sentence says «Vịt Con bơi quanh đầm sen», so the duckling swims around the lotus pond; the bridge and landing are not in it."
+              }
             }
+          },
+          "en": {
+            "prompt": "Read the sentence: «Chiều nay, Vịt Con bơi quanh đầm sen tìm chiếc lá to nhất.» Where does Vịt Con swim?",
+            "choices": [
+              "Around the lotus pond",
+              "At the foot of the stone bridge",
+              "Out at the ferry landing"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Word riddles with the Water Buffalo",
+        "goTo": "Go to the kapok tree beside the ball field, where Trâu Đen is awake and waiting",
+        "bossName": "Riddle Water Buffalo",
+        "introDialogue": "Moo-hmm! I have seven word riddles, and every right answer, I nudge the lantern basket a little closer to you.",
+        "winDialogue": "Well done, young one! {name}'s words are as steady as the dyke, and the whole village's lantern basket is thanks to you."
+      }
     },
     {
       "id": "gio-den-sen",
@@ -433,6 +776,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "chinh-ta": 1, "bang-chu-cai": 1, "cau": 1, "doc-hieu": 1 }
+    "skillXp": {
+      "chinh-ta": 1,
+      "bang-chu-cai": 1,
+      "cau": 1,
+      "doc-hieu": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Riddle Water Buffalo",
+    "summary": "Tonight the village floats lotus lanterns, but the basket of lanterns is with Trâu Đen the word-riddle buffalo. {name} picks lotus flowers, reads the festival notice, hops across the pond on stones, then solves seven word riddles to bring the lantern basket back to the village."
   }
 }

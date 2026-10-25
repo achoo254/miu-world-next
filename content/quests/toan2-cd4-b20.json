@@ -100,7 +100,11 @@
         "toan2-cd4-toa-hang-do",
         "toan2-cd4-toa-hang-xanh",
         "toan2-cd4-toa-hang-vang"
-      ]
+      ],
+      "en": {
+        "title": "Three hidden carriages",
+        "goTo": "Find the three cart carriages hiding around the Cart Park"
+      }
     },
     {
       "id": "nho-mot-hai-chu-so",
@@ -303,6 +307,17 @@
         "answer": {
           "text": "26 + 35 = 61; 48 + 27 = 75; 34 + 56 = 90; 69 + 14 = 83; 17 + 43 = 60; 55 + 28 = 83; 38 + 39 = 77; 47 + 25 = 72",
           "explanation": "26 + 35 = 61, 48 + 27 = 75, 34 + 56 = 90, 69 + 14 = 83, 17 + 43 = 60, 55 + 28 = 83, 38 + 39 = 77, 47 + 25 = 72."
+        },
+        "en": {
+          "guide": [
+            "Add the ones first; if they make 10, write the ones digit and carry 1 to the tens.",
+            "After adding the tens, add the 1 you carried."
+          ],
+          "hint": "48 + 27: 8 + 7 = 15, write 5 and carry 1; 4 + 2 = 6, plus 1 is 7.",
+          "answer": {
+            "text": "26 + 35 = 61; 48 + 27 = 75; 34 + 56 = 90; 69 + 14 = 83; 17 + 43 = 60; 55 + 28 = 83; 38 + 39 = 77; 47 + 25 = 72",
+            "explanation": "26 + 35 = 61, 48 + 27 = 75, 34 + 56 = 90, 69 + 14 = 83, 17 + 43 = 60, 55 + 28 = 83, 38 + 39 = 77, 47 + 25 = 72."
+          }
         }
       },
       "feedback": {
@@ -315,7 +330,19 @@
           "Hàng đơn vị đủ mười thì nhớ 1 sang hàng chục nhé.",
           "Có một toa cộng xong mà quên thêm số 1 đã nhớ.",
           "34 + 56 ra số tròn chục, hàng đơn vị là 0."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every carriage is loaded with exactly the right number of crates, and Guava Monkey hangs upside down from a branch, cheering.",
+            "Not a single pumpkin fell while carrying to the tens, and the cart train rolls along smoothly.",
+            "Uncle Khải the Driver straightens his cap and praises you for adding as fast as a train pulling into the station."
+          ],
+          "wrong": [
+            "When the ones make ten, carry 1 to the tens.",
+            "One carriage was added up but the carried 1 was forgotten.",
+            "34 + 56 gives round tens, so the ones digit is 0."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -339,7 +366,11 @@
         "b7": "38 + 39",
         "b8": "47 + 25"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Load the first carriage",
+        "prompt": "Each cart carriage has an addition stuck on it, and the result is the number of crates of farm produce to load. Work them out."
+      }
     },
     {
       "id": "con-tau-ghi-dung",
@@ -372,6 +403,17 @@
         "answer": {
           "text": "Tấm ghi 38 cộng 25 bằng 63",
           "explanation": "Chỉ 38 + 25 = 63 đúng; 27 + 46 = 73 chứ không phải 74; 52 + 9 = 61 chứ không phải 62."
+        },
+        "en": {
+          "guide": [
+            "Work out the sum on each sign yourself.",
+            "Compare your result with the number on the sign."
+          ],
+          "hint": "27 + 46 = 73 and 52 + 9 = 61.",
+          "answer": {
+            "text": "The sign saying 38 plus 25 equals 63",
+            "explanation": "Only 38 + 25 = 63 is right; 27 + 46 = 73, not 74; 52 + 9 = 61, not 62."
+          }
         }
       },
       "feedback": {
@@ -384,13 +426,35 @@
           "Hãy tự cộng lại từng biển rồi so, đừng đoán.",
           "Có hai tấm biển lệch đúng 1 so với kết quả thật.",
           "Biển nào hàng đơn vị cộng ra 13 thì hàng chục phải thêm 1."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Uncle Khải the Driver polishes the correct sign until it shines and hangs it highest.",
+            "You checked every sum so sharply that no sign could fool you.",
+            "Guava Monkey scratches his head: next time I must write more carefully."
+          ],
+          "wrong": [
+            "Add each sign up again yourself and compare. Don't guess.",
+            "Two of the signs are out by exactly 1 from the real result.",
+            "When the ones add up to 13, the tens must go up by 1."
+          ]
+        }
       },
       "answer": {
         "choice": "38-25-63"
       },
       "goTo": "Chạy tới cổng nông trại, Bác tài Khải đang soi ba tấm biển hình con tàu",
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Which carriage shows the right sum?",
+        "goTo": "Run to the Farm Gate, where Uncle Khải the Driver is inspecting three train-shaped signs",
+        "prompt": "Guava Monkey hurriedly wrote three sums on three carriage-shaped signs hanging at the gate, and one of them is wrong. Which sign shows the right sum?",
+        "choices": [
+          "27 + 46 = 74",
+          "38 + 25 = 63",
+          "52 + 9 = 62"
+        ]
+      }
     },
     {
       "id": "may-bay-cho-hang",
@@ -441,6 +505,17 @@
         "answer": {
           "text": "48 kg + 24 kg - Thùng 72 kg; 19 kg + 22 kg - Bao 41 kg; 35 kg + 35 kg - Bao 70 kg",
           "explanation": "48 kg + 24 kg = 72 kg, 19 kg + 22 kg = 41 kg, 35 kg + 35 kg = 70 kg."
+        },
+        "en": {
+          "guide": [
+            "Work out each plane's addition first.",
+            "Crate 55 kg is for the sample plane 27 kg + 28 kg, and none of these planes brings that much."
+          ],
+          "hint": "35 kg + 35 kg: 5 + 5 = 10, write 0 and carry 1.",
+          "answer": {
+            "text": "48 kg + 24 kg - Crate 72 kg; 19 kg + 22 kg - Sack 41 kg; 35 kg + 35 kg - Sack 70 kg",
+            "explanation": "Working: 48 kg + 24 kg = 72 kg, 19 kg + 22 kg = 41 kg, 35 kg + 35 kg = 70 kg."
+          }
         }
       },
       "feedback": {
@@ -453,7 +528,19 @@
           "Máy bay nào chưa tính xong thì chưa tìm được thùng của nó.",
           "Thùng 55 kg không phải của máy bay nào trong ba chiếc này.",
           "19 kg + 22 kg: 9 + 2 = 11, đừng quên nhớ 1."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three planes land on the right crate, and the Cart Park buzzes with cheers.",
+            "Every load in its place, and Uncle Khải the Driver signs for it on the spot.",
+            "Guava Monkey throws all four arms into the air because the cargo is loaded right."
+          ],
+          "wrong": [
+            "A plane whose sum isn't worked out yet can't find its crate.",
+            "Crate 55 kg doesn't belong to any of these three planes.",
+            "19 kg + 22 kg: 9 + 2 = 11, don't forget to carry 1."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -462,7 +549,11 @@
           "may-bay-35-kg-35-kg": "nhom-bao-70-kg"
         }
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Small cargo planes",
+        "prompt": "Three little drones come buzzing in, each carrying a sum. Work it out, then find the crate or sack that matches."
+      }
     },
     {
       "id": "buu-thiep-cua-mai",
@@ -480,6 +571,17 @@
         "answer": {
           "text": "83 tấm thiệp",
           "explanation": "Cả hai ngày bác Khải gấp được 38 + 45 = 83 (tấm thiệp)."
+        },
+        "en": {
+          "guide": [
+            "Over both days means adding them together.",
+            "38 + 45: 8 + 5 = 13, write 3 and carry 1."
+          ],
+          "hint": "3 + 4 = 7, and the carried 1 makes 8 tens.",
+          "answer": {
+            "text": "83 invitations",
+            "explanation": "Over both days Uncle Khải folded 38 + 45 = 83 (invitations)."
+          }
         }
       },
       "feedback": {
@@ -492,14 +594,31 @@
           "Cả hai ngày thì nhiều hơn mỗi ngày, đáp án phải lớn hơn 45.",
           "Hàng đơn vị 8 + 5 chưa tới 13 sao?",
           "Gộp hai ngày bằng phép cộng, không bớt đi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eighty-three invitations stacked neatly, and the last carriage is filled with pink.",
+            "Both days together by addition. You picked exactly the right operation.",
+            "Guava Monkey holds up the top invitation and reads the harvest festival invitation out loud."
+          ],
+          "wrong": [
+            "Both days is more than either day, so the answer must be bigger than 45.",
+            "Doesn't 8 + 5 in the ones come to 13?",
+            "Put the two days together with addition, don't take away."
+          ]
+        }
       },
       "answer": {
         "value": 83
       },
       "goTo": "Quay về bãi xe kéo, Khỉ Ổi vẫy xấp thiệp mời hội mùa cho toa cuối",
       "expression": "38 + 45",
-      "objective": "cong-tru-co-nho-bai-toan"
+      "objective": "cong-tru-co-nho-bai-toan",
+      "en": {
+        "title": "Harvest festival invitation",
+        "goTo": "Back at the Cart Park, Guava Monkey waves a stack of harvest festival invitations for the last carriage",
+        "question": "The last carriage carries harvest festival invitations all over the farm. Yesterday Uncle Khải the Driver folded 38 invitations. Today he folded 45 invitations. How many invitations did he fold over the two days?"
+      }
     },
     {
       "id": "meo-mun-goi-tau-ngam",
@@ -634,6 +753,17 @@
         "answer": {
           "text": "36 + 54 = 90; 54 + 36 = 90; 47 + 26 = 73; 26 + 47 = 73",
           "explanation": "36 + 54 = 54 + 36 = 90; 47 + 26 = 26 + 47 = 73. Đổi chỗ hai số hạng thì tổng không đổi."
+        },
+        "en": {
+          "guide": [
+            "Work out each sum as usual.",
+            "Compare the results of the two sums in each pair."
+          ],
+          "hint": "Do the first pair, then look at the second: the numbers are the same, only swapped.",
+          "answer": {
+            "text": "36 + 54 = 90; 54 + 36 = 90; 47 + 26 = 73; 26 + 47 = 73",
+            "explanation": "36 + 54 = 54 + 36 = 90; 47 + 26 = 26 + 47 = 73. When you swap the two addends, the sum stays the same."
+          }
         }
       },
       "feedback": {
@@ -646,7 +776,19 @@
           "Hai phép trong một cặp có cùng số, chỉ đổi chỗ; kết quả phải bằng nhau.",
           "Một phép trong cặp ra kết quả khác phép còn lại, tính lại thử.",
           "47 + 26: 7 + 6 = 13, viết 3 nhớ 1."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Bubble Elephant sprays a tall column of water: the sums swapped and the result stayed the same!",
+            "You've found the magic: swap the addends and the sum stays put.",
+            "The pond surface ripples as if clapping for you."
+          ],
+          "wrong": [
+            "The two sums in a pair have the same numbers, just swapped, so the results must be equal.",
+            "One sum in a pair gave a different result from the other. Try it again.",
+            "47 + 26: 7 + 6 = 13, write 3 and carry 1."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -662,7 +804,11 @@
         "b3": "47 + 26",
         "b4": "26 + 47"
       },
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "Swap the two addends",
+        "prompt": "Bubble Elephant shows off two pairs of sums, and in each pair the two numbers have swapped places. Work them out in columns and see whether the result changes."
+      }
     },
     {
       "id": "tau-ngam-noi-len",
@@ -699,6 +845,17 @@
         "answer": {
           "text": "D, A, B, C",
           "explanation": "A: 34 + 49 = 83; B: 27 + 58 = 85; C: 60 + 30 = 90; D: 45 + 28 = 73. Từ bé đến lớn: D, A, B, C."
+        },
+        "en": {
+          "guide": [
+            "Work out the result on each submarine.",
+            "Order them from the smallest result to the biggest."
+          ],
+          "hint": "Submarine D gives 73, submarine A gives 83.",
+          "answer": {
+            "text": "D, A, B, C",
+            "explanation": "A: 34 + 49 = 83; B: 27 + 58 = 85; C: 60 + 30 = 90; D: 45 + 28 = 73. From smallest to biggest: D, A, B, C."
+          }
         }
       },
       "feedback": {
@@ -711,7 +868,19 @@
           "Tính xong cả bốn tàu rồi hãy xếp, đừng xếp theo mặt chữ.",
           "Tàu nổi trước là tàu có kết quả bé nhất.",
           "27 + 58 và 34 + 49 chỉ chênh nhau 2, tính cẩn thận nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four submarines bob up in the right order, and Bamboo Shoot Panda slaps his float and cheers.",
+            "Smallest to biggest, without one submarine out of place. Very neat.",
+            "Bubble Elephant sprays a jet of water to welcome each submarine as it surfaces."
+          ],
+          "wrong": [
+            "Work out all four submarines before ordering them. Don't order them by how they look.",
+            "The submarine that surfaces first has the smallest result.",
+            "27 + 58 and 34 + 49 are only 2 apart, so work them out carefully."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -722,7 +891,18 @@
         ]
       },
       "goTo": "Ra cầu ao, Gấu Trúc Măng ôm phao ngồi chờ tàu ngầm nổi lên",
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Which submarine surfaces first?",
+        "goTo": "Go to the Pond Bridge, where Bamboo Shoot Panda sits hugging a float, waiting for the submarines to surface",
+        "prompt": "The submarine with the smallest sum surfaces first. Put the submarines in the order they surface, from the smallest result to the biggest.",
+        "items": [
+          "Submarine A: 34 + 49",
+          "Submarine B: 27 + 58",
+          "Submarine C: 60 + 30",
+          "Submarine D: 45 + 28"
+        ]
+      }
     },
     {
       "id": "duong-ngan-cho-kien-vang",
@@ -755,6 +935,17 @@
         "answer": {
           "text": "Đường màu xám",
           "explanation": "Đường nâu: 29 + 47 = 76 cm; đường vàng: 45 + 33 = 78 cm; đường xám: 38 + 36 = 74 cm. Đường xám ngắn nhất."
+        },
+        "en": {
+          "guide": [
+            "Add the lengths of the two parts of each path.",
+            "The path with the smallest total is the shortest."
+          ],
+          "hint": "The brown path is 76 cm long, the yellow path 78 cm.",
+          "answer": {
+            "text": "The grey path",
+            "explanation": "Brown path: 29 + 47 = 76 cm; yellow path: 45 + 33 = 78 cm; grey path: 38 + 36 = 74 cm. The grey path is the shortest."
+          }
         }
       },
       "feedback": {
@@ -767,13 +958,35 @@
           "Phải cộng hai đoạn của từng đường rồi mới so được.",
           "Ngắn nhất là tổng nhỏ nhất, không phải đoạn đầu nhỏ nhất.",
           "Hai đường nâu và vàng chỉ hơn kém nhau chút, tính cẩn thận nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The black ant takes the grey path and reaches the grain before the whole colony.",
+            "You added all three paths and compared them, and picked the shortest without a slip.",
+            "Grass-Seed Bunny lies down to watch the ants, delighted."
+          ],
+          "wrong": [
+            "Add the two parts of each path before you can compare.",
+            "The shortest is the smallest total, not the smallest first part.",
+            "The brown and yellow paths differ only a little, so work them out carefully."
+          ]
+        }
       },
       "answer": {
         "choice": "c-duong-mau-xam"
       },
       "goTo": "Ra bờ ruộng rau, Thỏ Cỏ May đang nằm bò xem đàn kiến",
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "A shortcut for the black ant",
+        "goTo": "Go to the Vegetable Field Edge, where Grass-Seed Bunny is lying on his tummy watching the ants",
+        "prompt": "Three paths lead to a fallen grain of rice: the brown path is 29 cm and 47 cm; the yellow path is 45 cm and 33 cm; the grey path is 38 cm and 36 cm. Which path is the shortest for the black ant to crawl to the grain? A. Brown path B. Yellow path C. Grey path",
+        "choices": [
+          "A. Brown path",
+          "B. Yellow path",
+          "C. Grey path"
+        ]
+      }
     },
     {
       "id": "kien-do-qua-bui-co",
@@ -791,6 +1004,17 @@
         "answer": {
           "text": "84 cm",
           "explanation": "Kiến đen phải bò 58 + 26 = 84 (cm)."
+        },
+        "en": {
+          "guide": [
+            "Add the lengths of the two stretches the ant crawls.",
+            "8 + 6 = 14, write 4 and carry 1."
+          ],
+          "hint": "58 + 26 = ? cm",
+          "answer": {
+            "text": "84 cm",
+            "explanation": "The black ant must crawl 58 + 26 = 84 (cm)."
+          }
         }
       },
       "feedback": {
@@ -803,13 +1027,29 @@
           "Tất cả quãng đường là hai đoạn gộp lại, không phải một đoạn.",
           "Bắt đầu từ cột đơn vị của kiến: 8 cộng 6 được bao nhiêu, nhớ mấy?",
           "Quãng đường dài hơn mỗi đoạn, đáp án phải lớn hơn 58."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eighty-four centimetres, and the black ant carries the grain home without getting tired.",
+            "Add the two stretches and you get the whole journey. You did it right.",
+            "Grass-Seed Bunny rests his chin on his paw and says: if ants could count, they'd be as clever as you."
+          ],
+          "wrong": [
+            "The whole journey is the two stretches put together, not just one.",
+            "Start with the ant's ones column: what do 8 and 6 make, and what do you carry?",
+            "The journey is longer than either stretch, so the answer must be bigger than 58."
+          ]
+        }
       },
       "answer": {
         "value": 84
       },
       "expression": "58 + 26",
-      "objective": "cong-tru-co-nho-bai-toan"
+      "objective": "cong-tru-co-nho-bai-toan",
+      "en": {
+        "title": "The black ant crosses the grass",
+        "question": "The black ant wants to carry a grain of rice that fell on the other side of the grass: it crawls 58 cm and then another 26 cm. How many centimetres must the black ant crawl altogether?"
+      }
     },
     {
       "id": "ba-so-cong-lien",
@@ -900,6 +1140,17 @@
         "answer": {
           "text": "34 + 16 + 5 = 55; 47 + 43 + 6 = 96; 62 + 18 + 4 = 84; 55 + 25 + 9 = 89",
           "explanation": "34 + 16 + 5 = 55, 47 + 43 + 6 = 96, 62 + 18 + 4 = 84, 55 + 25 + 9 = 89."
+        },
+        "en": {
+          "guide": [
+            "Add the first two numbers first, which gives a round number of tens.",
+            "Then add the last number."
+          ],
+          "hint": "34 + 16 = 50, 47 + 43 = 90.",
+          "answer": {
+            "text": "34 + 16 + 5 = 55; 47 + 43 + 6 = 96; 62 + 18 + 4 = 84; 55 + 25 + 9 = 89",
+            "explanation": "34 + 16 + 5 = 55, 47 + 43 + 6 = 96, 62 + 18 + 4 = 84, 55 + 25 + 9 = 89."
+          }
         }
       },
       "feedback": {
@@ -912,7 +1163,19 @@
           "Cộng hai số đầu trước, rồi mới thêm số cuối.",
           "Hai số đầu cộng ra số tròn chục, kiểm tra xem.",
           "Một dòng lệch vài sọt, thử tính lại từng bước."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Guava Monkey counts the crates on the last carriages without missing one.",
+            "Join two numbers into round tens and then add the last. That trick is quick.",
+            "The last four carriages are fully loaded and the cart train is ready to roll."
+          ],
+          "wrong": [
+            "Add the first two numbers first, then the last number.",
+            "The first two numbers add up to round tens. Check it.",
+            "One line is out by a few crates. Try working through it again step by step."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -928,7 +1191,12 @@
         "b3": "62 + 18 + 4",
         "b4": "55 + 25 + 9"
       },
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Three numbers added in a row",
+        "goTo": "Back at the Cart Park, Guava Monkey is counting the crates on the last three carriages",
+        "prompt": "Each of the last carriages carries three kinds of goods, and Guava Monkey adds them all in one go. Work them out."
+      }
     },
     {
       "id": "dat-tinh-toa-hang",
@@ -1086,6 +1354,17 @@
         "answer": {
           "text": "27 + 27 = 54; 64 + 26 = 90; 39 + 44 = 83; 15 + 45 = 60; 56 + 34 = 90; 18 + 18 = 36; 49 + 26 = 75; 68 + 19 = 87",
           "explanation": "27 + 27 = 54, 64 + 26 = 90, 39 + 44 = 83, 15 + 45 = 60, 56 + 34 = 90, 18 + 18 = 36, 49 + 26 = 75, 68 + 19 = 87."
+        },
+        "en": {
+          "guide": [
+            "Write the two numbers in a column: tens under tens, ones under ones.",
+            "Add from the ones, and if you carry, add 1 to the tens."
+          ],
+          "hint": "68 + 19: 8 + 9 = 17, write 7 and carry 1; 6 + 1 = 7, plus 1 is 8.",
+          "answer": {
+            "text": "27 + 27 = 54; 64 + 26 = 90; 39 + 44 = 83; 15 + 45 = 60; 56 + 34 = 90; 18 + 18 = 36; 49 + 26 = 75; 68 + 19 = 87",
+            "explanation": "27 + 27 = 54, 64 + 26 = 90, 39 + 44 = 83, 15 + 45 = 60, 56 + 34 = 90, 18 + 18 = 36, 49 + 26 = 75, 68 + 19 = 87."
+          }
         }
       },
       "feedback": {
@@ -1098,7 +1377,19 @@
           "Hai số phải thẳng cột đơn vị, nếu lệch là tính sai ngay.",
           "Có phép đủ mười ở hàng đơn vị mà chưa nhớ 1.",
           "18 + 18 cũng có nhớ: 8 + 8 là 16 đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eight column sums in a row, like eight carriages coupled one after another.",
+            "The wooden board at the Cart Park is now full of right results, and Guava Monkey is delighted.",
+            "With columns this careful, Uncle Khải the Driver wants to hire you as his accountant."
+          ],
+          "wrong": [
+            "The two numbers must line up in the ones column. Crooked columns go wrong at once.",
+            "One sum made ten in the ones but the 1 wasn't carried.",
+            "18 + 18 carries too: 8 + 8 is 16."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1122,7 +1413,11 @@
         "b7": "49 + 26",
         "b8": "68 + 19"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Column-sum table at the Cart Park",
+        "prompt": "Guava Monkey copied eight additions onto the wooden board at the Cart Park, four in each row. Write them in columns on scrap paper, then fill in the results."
+      }
     },
     {
       "id": "khinh-khi-cau-noi-so",
@@ -1155,6 +1450,17 @@
         "answer": {
           "text": "Đúng: 36 + 28 nối với 64; sai: 47 + 15 nối với 63, 29 + 58 nối với 86",
           "explanation": "47 + 15 = 62 nên nối với 63 là sai; 29 + 58 = 87 nên nối với 86 là sai; 36 + 28 = 64 nên nối với 64 là đúng."
+        },
+        "en": {
+          "guide": [
+            "Work out the addition on each balloon.",
+            "Compare the result with the number the rope is tied to."
+          ],
+          "hint": "47 + 15 = 62 and 29 + 58 = 87.",
+          "answer": {
+            "text": "Right: 36 + 28 tied to 64; wrong: 47 + 15 tied to 63, 29 + 58 tied to 86",
+            "explanation": "47 + 15 = 62, so tying it to 63 is wrong; 29 + 58 = 87, so tying it to 86 is wrong; 36 + 28 = 64, so tying it to 64 is right."
+          }
         }
       },
       "feedback": {
@@ -1167,7 +1473,19 @@
           "Hãy tính từng khinh khí cầu rồi so với số trên cột mốc.",
           "Có hai sợi dây nối lệch đúng 1 so với kết quả.",
           "Chiếc không chọn là chiếc nối sai; hãy tính lại xem còn sót chiếc nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The rope hits the right marker, and the balloon floats up high, wonderfully pretty.",
+            "You checked every rope exactly, and Uncle Khải the Driver tips his hat.",
+            "A light breeze sets the three balloons swaying as if nodding."
+          ],
+          "wrong": [
+            "Work out each balloon and compare it with the number on the marker.",
+            "Two ropes are tied exactly 1 away from the result.",
+            "The one you don't choose is the one tied wrongly. Work it out again to see if you missed one."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1175,7 +1493,17 @@
         ]
       },
       "goTo": "Lên cổng nông trại, Bác tài Khải chỉ ba khinh khí cầu lơ lửng",
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Hot air balloons on the number line",
+        "goTo": "Climb up to the Farm Gate, where Uncle Khải the Driver points at three floating hot air balloons",
+        "prompt": "Three hot air balloons float over the farm, each tied by a rope to a marker showing a number. Choose the balloons tied to the right result of their addition; the ones you don't choose are tied wrongly.",
+        "choices": [
+          "Balloon 36 + 28 tied to the number 64",
+          "Balloon 47 + 15 tied to the number 63",
+          "Balloon 29 + 58 tied to the number 86"
+        ]
+      }
     },
     {
       "id": "dan-cuu-qua-cau",
@@ -1265,6 +1593,17 @@
         "answer": {
           "text": "a) 38 → + 26 → 64 → + 17 → 81; b) 38 → + 17 → 55 → + 26 → 81",
           "explanation": "a) 38 + 26 = 64, 64 + 17 = 81. b) 38 + 17 = 55, 55 + 26 = 81. Hai đường đi đều ra 81."
+        },
+        "en": {
+          "guide": [
+            "Follow the arrows one at a time.",
+            "The result of one step is the starting number of the next."
+          ],
+          "hint": "38 + 26 = 64; 38 + 17 = 55.",
+          "answer": {
+            "text": "Answers: a) 38 → + 26 → 64 → + 17 → 81; b) 38 → + 17 → 55 → + 26 → 81",
+            "explanation": "a) 38 + 26 = 64, 64 + 17 = 81. b) 38 + 17 = 55, 55 + 26 = 81. Both routes give 81."
+          }
         }
       },
       "feedback": {
@@ -1277,7 +1616,19 @@
           "Mỗi mũi tên là một lần cộng, làm từng bước một.",
           "Số sau mũi tên đầu là số bắt đầu cho mũi tên thứ hai.",
           "Hai đường đi cuối cùng phải ra cùng một số, thử so lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The sheep cross both bridges, and by either route there are 81 of them.",
+            "Swap the order of the two bridges and the total is the same. You've spotted the pattern.",
+            "Uncle Khải the Driver counts the flock again and smiles: they're all here."
+          ],
+          "wrong": [
+            "Each arrow is one addition, so do them one step at a time.",
+            "The number after the first arrow is the starting number for the second arrow.",
+            "The two routes must end on the same number. Try comparing them again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1293,7 +1644,11 @@
         "b3": "38 + 17",
         "b4": "38 + 17 + 26"
       },
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Sheep cross two bridges",
+        "prompt": "The farm's flock of sheep boards the cart and crosses two bridges: at first there are 38 sheep, and after each bridge more sheep join the flock. Fill in the missing numbers."
+      }
     },
     {
       "id": "bi-cua-nam",
@@ -1311,6 +1666,17 @@
         "answer": {
           "text": "65 quả ổi",
           "explanation": "Lúc này Khỉ Ổi có 39 + 26 = 65 (quả ổi)."
+        },
+        "en": {
+          "guide": [
+            "Being given more means we add.",
+            "39 + 26: 9 + 6 = 15, write 5 and carry 1."
+          ],
+          "hint": "3 + 2 = 5, and the carried 1 makes 6 tens.",
+          "answer": {
+            "text": "65 guavas",
+            "explanation": "Now Guava Monkey has 39 + 26 = 65 (guavas)."
+          }
         }
       },
       "feedback": {
@@ -1323,14 +1689,31 @@
           "Được biếu thêm thì ổi nhiều lên, đáp án phải lớn hơn 39.",
           "Cộng hàng đơn vị 9 + 6 trước, nhớ 1 sang hàng chục.",
           "Bài này thêm vào, không phải bớt đi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Sixty-five fragrant guavas, and Guava Monkey sits in the middle of the basket sniffing them.",
+            "Given more means add. You sorted that out neatly.",
+            "Uncle Khải the Driver laughs: even with extra guavas, Guava Monkey doesn't miscount a single one."
+          ],
+          "wrong": [
+            "With more guavas given, there are more, so the answer must be bigger than 39.",
+            "Add the ones 9 + 6 first, then carry 1 to the tens.",
+            "This problem adds on, it doesn't take away."
+          ]
+        }
       },
       "answer": {
         "value": 65
       },
       "goTo": "Về bãi xe kéo, Khỉ Ổi mời cậu lên toa cuối xem rổ ổi",
       "expression": "39 + 26",
-      "objective": "cong-tru-co-nho-bai-toan"
+      "objective": "cong-tru-co-nho-bai-toan",
+      "en": {
+        "title": "Guava Monkey's guava basket",
+        "goTo": "Back at the Cart Park, Guava Monkey invites you up onto the last carriage to see the guava basket",
+        "question": "On the last carriage of the cart, Guava Monkey sits counting a basket of guavas. Guava Monkey has 39 guavas. Uncle Khải the Driver gives him 26 more guavas. How many guavas does Guava Monkey have now?"
+      }
     },
     {
       "id": "que-tinh-dat-sai",
@@ -1386,6 +1769,17 @@
         "answer": {
           "text": "a) 28 + 37 = 65; b) 54 + 20 = 74",
           "explanation": "a) 28 + 37 = 65: dời một que trong chữ số 3 của kết quả để thành chữ số 5. b) 54 + 20 = 74: dời một que trong chữ số 6 để thành chữ số 0."
+        },
+        "en": {
+          "guide": [
+            "Work the addition out again to find the right number.",
+            "Move one stick within the same digit: a 3 becomes a 5, a 6 becomes a 0."
+          ],
+          "hint": "28 + 37 = 65; 74 - 54 = 20.",
+          "answer": {
+            "text": "Answers: a) 28 + 37 = 65; b) 54 + 20 = 74",
+            "explanation": "a) 28 + 37 = 65: move one stick inside the digit 3 of the result to make it a 5. b) 54 + 20 = 74: move one stick inside the digit 6 to make it a 0."
+          }
         }
       },
       "feedback": {
@@ -1398,7 +1792,19 @@
           "Tính lại 28 + 37 trước để biết kết quả đúng là số nào.",
           "Chỉ được dời một que, đổi chữ số 6 thành chữ số khác chỉ đúng một cách.",
           "Dời trong cùng một chữ số thì số lượng que không đổi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both sums are fixed, and Guava Monkey gives up the driver's seat for you.",
+            "You moved exactly one stick and the sum is no longer wrong. Very clever.",
+            "The cart honks beep beep to celebrate your win at the stick game."
+          ],
+          "wrong": [
+            "Work out 28 + 37 first to see what the right result is.",
+            "Only one stick may move, and there's only one way to turn a 6 into another digit.",
+            "Moving inside the same digit doesn't change the number of sticks."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1410,7 +1816,11 @@
         "b1": "28 + 37",
         "b2": "54 + ? = 74"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "The misplaced counting sticks game",
+        "prompt": "The last game: Guava Monkey lays out sums with sticks on a wooden board, then mischievously moves one stick out of place in each sum. Whoever puts it right first gets to sit in the driver's seat of the cart! You know that:"
+      }
     },
     {
       "id": "coi-tau-truong-ga",
@@ -1442,5 +1852,9 @@
       "phep-cong": 2,
       "logic": 1
     }
+  },
+  "en": {
+    "title": "Guava Monkey Hitches the Cart Train",
+    "summary": "Guava Monkey's cart carriages have run off and every one of them wants to go first. {name} hunts them down, adds two two-digit numbers with carrying to load the right number of crates with Uncle Khải the Driver, puts Bubble Elephant's toy submarines in surfacing order, picks the shortest path for Grass-Seed Bunny's ants and fixes Guava Monkey's counting-stick sums."
   }
 }

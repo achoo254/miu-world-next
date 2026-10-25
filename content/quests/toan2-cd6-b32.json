@@ -94,7 +94,11 @@
         "toan2-cd6-buu-anh-hue",
         "toan2-cd6-buu-anh-nam-can",
         "toan2-cd6-buu-anh-mu-cang-chai"
-      ]
+      ],
+      "en": {
+        "title": "Pick up Robot's postcards",
+        "goTo": "Pick up the three postcards that blew out onto the tower porch roof"
+      }
     },
     {
       "id": "kim-dai-chay-vong",
@@ -169,6 +173,17 @@
         "answer": {
           "text": "Lúc này là tám giờ rưỡi.",
           "explanation": "Kim dài đi từ số 3 tới số 6 thì chỉ 30 phút; kim ngắn vẫn nằm giữa số 8 và số 9, nên đồng hồ chỉ 8 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "The long hand stopping on 6 means half an hour, which is 30 minutes, has passed.",
+            "The short hand hasn't reached the 9 yet, so the hour is still 8."
+          ],
+          "hint": "The long hand has only moved a short way, and the short hand hasn't moved on to a new hour.",
+          "answer": {
+            "text": "It is half past eight.",
+            "explanation": "The long hand going from 3 to 6 is only 30 minutes; the short hand is still between 8 and 9, so the clock shows 8:30."
+          }
         }
       },
       "feedback": {
@@ -181,12 +196,33 @@
           "Kim dài dừng ở số 6 thì đã qua bao nhiêu phút?",
           "Kim ngắn vẫn chưa chạm số 9 đâu nhé.",
           "Kim dài đi qua số 4, số 5 nhưng dừng hẳn ở số 6."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past eight! Green Caterpillar sticks out its tongue in admiration: the long hand really does crawl fast.",
+            "The 4 and the 5 didn't fool you, well done.",
+            "The short hand hasn't reached 9 yet, and you noticed that perfectly."
+          ],
+          "wrong": [
+            "The long hand stopping on 6 means how many minutes have passed?",
+            "The short hand still hasn't touched the 9.",
+            "The long hand goes past the 4 and the 5 but stops right on the 6."
+          ]
+        }
       },
       "answer": {
         "choice": "b-8-gio-30-phut"
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "The long hand crawls to number 6",
+        "prompt": "Green Caterpillar looks at the clock on the balcony when it shows 8:15, then lies counting for a little while longer until the minute hand reaches the 6. What time does the clock show then?",
+        "choices": [
+          "8:15",
+          "8:30",
+          "9:30"
+        ]
+      }
     },
     {
       "id": "ruong-bac-thang",
@@ -210,6 +246,17 @@
         "answer": {
           "text": "Ngày 29 tháng 10",
           "explanation": "Bốn ngày khoanh xếp theo thứ tự chuyến đi là 5, 12, 20, 29; Mù Cang Chải là nơi đến cuối cùng nên ứng với ngày 29 tháng 10."
+        },
+        "en": {
+          "guide": [
+            "The first marked date matches the first postcard of the trip.",
+            "Mù Cang Chải is the postcard that came last."
+          ],
+          "hint": "The last postcard matches the latest marked date in the month.",
+          "answer": {
+            "text": "29 October",
+            "explanation": "The four marked dates in trip order are the 5th, 12th, 20th and 29th; Mù Cang Chải is the last stop, so it matches 29 October."
+          }
         }
       },
       "feedback": {
@@ -222,12 +269,30 @@
           "Mù Cang Chải là nơi Rô-bốt đặt chân đến sau cùng.",
           "Hãy tìm ngày khoanh nằm xa nhất trong tháng.",
           "Ngày 5 đã là bưu ảnh Đà Lạt ở ví dụ rồi mà."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 29th! The terraced fields are golden, just in harvest time.",
+            "The last postcard matches the last marked date. You matched them perfectly.",
+            "Green Caterpillar dreams of flying to Mù Cang Chải to see the ripe rice."
+          ],
+          "wrong": [
+            "Mù Cang Chải is the last place Rô-bốt set foot.",
+            "Look for the marked date furthest along in the month.",
+            "The 5th is already the Đà Lạt postcard in the example."
+          ]
+        }
       },
       "answer": {
         "day": 29
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "The day we arrive at Mù Cang Chải",
+        "goTo": "Go to the postbox on the tower, where Stamp Red Fox is stamping Rô-bốt's postcards",
+        "prompt": "Rô-bốt marked four dates on the October calendar: the 5th, 12th, 20th and 29th, each matching one postcard. The trip began in Đà Lạt, then went to Huế, then Năm Căn, and finally stopped at Mù Cang Chải. For example: the 5th of October is the day the Đà Lạt postcard was sent. On which date did Rô-bốt visit Mù Cang Chải? Tap that date on the calendar.",
+        "question": "On which day did Rô-bốt visit Mù Cang Chải? Tap that day on the calendar page."
+      }
     },
     {
       "id": "cho-noi-nam-can",
@@ -250,6 +315,17 @@
         "answer": {
           "text": "Ngày 20 tháng 10",
           "explanation": "Các ngày khoanh theo thứ tự là 5, 12, 20, 29; ngày khoanh thứ ba là ngày 20 tháng 10."
+        },
+        "en": {
+          "guide": [
+            "Count the marked dates in order from the start of the month.",
+            "The third marked date matches the floating market."
+          ],
+          "hint": "The third marked date is in the second half of the month.",
+          "answer": {
+            "text": "20 October",
+            "explanation": "The marked dates in order are the 5th, 12th, 20th and 29th; the third marked date is 20 October."
+          }
         }
       },
       "feedback": {
@@ -262,12 +338,29 @@
           "Đếm lần lượt: ngày khoanh thứ nhất, thứ hai, rồi mới tới thứ ba.",
           "Ngày cậu chạm không nằm trong số các ngày Rô-bốt khoanh.",
           "Chợ nổi đứng sau Huế trong hành trình đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 20th, with boats bustling and jostling on the floating market!",
+            "You counted out the third marked date, and Stamp Red Fox nods happily.",
+            "The floating market postcard has found its date."
+          ],
+          "wrong": [
+            "Count one by one: the first marked date, the second, and only then the third.",
+            "The date you tapped isn't one of the dates Rô-bốt marked.",
+            "The floating market comes after Huế on the journey."
+          ]
+        }
       },
       "answer": {
         "day": 20
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "The day we go to Năm Căn floating market",
+        "prompt": "Rô-bốt underlined the 5th, 12th, 20th and 29th on the October calendar; the order of the places he visited is Đà Lạt, Huế, Năm Căn, then Mù Cang Chải. Năm Căn is the third place on the trip. Tap the date Rô-bốt was in Năm Căn.",
+        "question": "Năm Căn is the third stop of the trip. Tap the day Rô-bốt was in Năm Căn."
+      }
     },
     {
       "id": "co-do-hue",
@@ -291,6 +384,17 @@
         "answer": {
           "text": "Ngày 12 tháng 10",
           "explanation": "Sau ngày 5 (Đà Lạt), ngày khoanh kế tiếp là ngày 12 tháng 10, ứng với Huế."
+        },
+        "en": {
+          "guide": [
+            "Huế comes right after Đà Lạt on the trip.",
+            "The second marked date is the day Rô-bốt was in Huế."
+          ],
+          "hint": "The second marked date is around the middle of the month.",
+          "answer": {
+            "text": "12 October",
+            "explanation": "After the 5th (Đà Lạt), the next marked date is 12 October, which matches Huế."
+          }
         }
       },
       "feedback": {
@@ -303,12 +407,30 @@
           "Huế là chặng thứ hai, ngay sau Đà Lạt.",
           "Ngày 5 là Đà Lạt rồi, tìm ngày khoanh kế tiếp.",
           "Ngày cậu chạm chưa được Rô-bốt khoanh tròn đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The 12th, and Rô-bốt sits in a boat looking at the peaceful Perfume River!",
+            "All four postcards have dates now, and Green Caterpillar sticks them on the wall.",
+            "You read the travel calendar more skilfully than a tour guide."
+          ],
+          "wrong": [
+            "Huế is the second stop, right after Đà Lạt.",
+            "The 5th is Đà Lạt, so look for the next marked date.",
+            "The date you tapped hasn't been circled by Rô-bốt."
+          ]
+        }
       },
       "answer": {
         "day": 12
       },
-      "objective": "gio-va-lich-lich"
+      "objective": "gio-va-lich-lich",
+      "en": {
+        "title": "The day we visit the old capital Huế",
+        "goTo": "Take the calendar back to the sky-watching balcony, where Green Caterpillar waits to stick up the Huế postcard",
+        "prompt": "Green Caterpillar wants to stick the Huế postcard on the wall but doesn't know which date to write. On the October calendar, Rô-bốt underlined the 5th, 12th, 20th and 29th, in the order Đà Lạt, Huế, Năm Căn, Mù Cang Chải. Huế is the second place Rô-bốt stopped. Tap the date Rô-bốt was in Huế.",
+        "question": "Huế is the second place Rô-bốt visited. Tap the day Rô-bốt was in Huế."
+      }
     },
     {
       "id": "di-bao-tang-khong",
@@ -437,6 +559,17 @@
         "answer": {
           "text": "Vào được: hai chú chim sẻ (9 giờ 30 phút) và Sâu Xanh (12 giờ 30 phút). Không vào được: Cáo Đỏ Tem (7 giờ 15 phút) và Rô-bốt (16 giờ 15 phút).",
           "explanation": "Chim sẻ tới lúc 9 giờ 30 phút và Sâu Xanh tới lúc 12 giờ 30 phút, cả hai đều trong giờ mở cửa. Cáo Đỏ Tem tới lúc 7 giờ 15 phút nên bảo tàng chưa mở; Rô-bốt tới lúc 16 giờ 15 phút nên bảo tàng đã đóng."
+        },
+        "en": {
+          "guide": [
+            "Read the time on each friend's clock, and notice whether they come in the morning or the afternoon.",
+            "Only friends who arrive between 9:00 and 15:30 can get in."
+          ],
+          "hint": "One friend arrives before opening time and one arrives after closing time.",
+          "answer": {
+            "text": "Can get in: the two sparrows (9:30) and Green Caterpillar (12:30). Cannot get in: Stamp Red Fox (7:15) and Rô-bốt (16:15).",
+            "explanation": "The sparrows arrive at 9:30 and Green Caterpillar at 12:30, both within opening hours. Stamp Red Fox arrives at 7:15, so the museum is not open yet; Rô-bốt arrives at 16:15, so the museum has closed."
+          }
         }
       },
       "feedback": {
@@ -449,7 +582,19 @@
           "Có bạn tới khi bảo tàng chưa mở, có bạn tới khi đã đóng cửa đấy.",
           "16 giờ 15 phút là sau giờ đóng cửa 15 giờ 30 phút.",
           "Xem lại chiếc đồng hồ có kim giờ vừa qua số 7 xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two friends go into the museum and two have to come back another day. You sorted them perfectly!",
+            "You examined every clock as carefully as the gate guard.",
+            "Exactly: only those who arrive during opening hours may go in."
+          ],
+          "wrong": [
+            "Some friends arrive before the museum opens and some after it closes.",
+            "16:15 is after the 15:30 closing time.",
+            "Look again at the clock whose short hand has just passed the 7."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -459,7 +604,17 @@
           "ban-ro-bot-khi-nang-xe": "nhom-khong-vao-duoc"
         }
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Which friends can enter the museum?",
+        "prompt": "Four friends arrive at the Fossil Museum at different times; the clock in each photo shows the time that friend reaches the gate. The museum is open from 9:00 to 15:30. Sort each friend into the group that can get in or the group that cannot.",
+        "items": [
+          "Red Stamp Fox arrives at the gate while the morning dew still lingers",
+          "Two sparrows perch on the flagpole in the middle of the morning",
+          "Green Caterpillar crawls across the hall at noon when the sun is overhead",
+          "Robot comes to look at the fossils when the sun is low in the afternoon"
+        ]
+      }
     },
     {
       "id": "gio-dong-cua-bao-tang",
@@ -481,6 +636,17 @@
         "answer": {
           "text": "15:30",
           "explanation": "Bảo tàng đóng cửa lúc 15 giờ 30 phút, nên chiếc đồng hồ điện tử phải hiện 15:30."
+        },
+        "en": {
+          "guide": [
+            "The closing time is the second time in the sentence about opening hours.",
+            "A digital clock shows the hour first, then the minutes."
+          ],
+          "hint": "15:30 is written on a digital clock as 15:30.",
+          "answer": {
+            "text": "15:30",
+            "explanation": "The museum closes at 15:30, so the digital clock must show 15:30."
+          }
         }
       },
       "feedback": {
@@ -493,13 +659,30 @@
           "Giờ đóng cửa là giờ nói sau trong câu về giờ mở cửa đấy.",
           "Đồng hồ điện tử ghi giờ trước rồi mới tới phút.",
           "30 phút chứ không phải 15 phút nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The clock at the gate lights up 15:30, and nobody will be late going home!",
+            "Hour first, minutes second, you set it so neatly.",
+            "Sister Thảo gives a thumbs up: the time board at the museum gate is done."
+          ],
+          "wrong": [
+            "The closing time is the time mentioned second in the sentence about opening hours.",
+            "A digital clock shows the hour first and then the minutes.",
+            "It's 30 minutes, not 15 minutes."
+          ]
+        }
       },
       "answer": {
         "hour": 15,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "When the museum closes",
+        "goTo": "Go down to the foot of the spiral staircase, where Sister Thảo stands next to the digital clock",
+        "prompt": "Sister Thảo says: set the digital clock at the museum gate to show exactly the closing time, so everyone knows when to go home. The museum is open from 9:00 to 15:30."
+      }
     },
     {
       "id": "lich-hoc-thu-bay",
@@ -569,6 +752,17 @@
         "answer": {
           "text": "Đàn, bơi, cờ vua rồi mới đến múa.",
           "explanation": "Học đàn lúc 7 giờ 30 phút, học bơi lúc 8 giờ 15 phút, học cờ vua lúc 9 giờ, học múa lúc 10 giờ 15 phút."
+        },
+        "en": {
+          "guide": [
+            "Read the time on each clock first.",
+            "The class with the earlier time comes first."
+          ],
+          "hint": "The earliest class starts at 7:30.",
+          "answer": {
+            "text": "Instrument, swimming, chess, then dancing.",
+            "explanation": "The instrument class is at 7:30, swimming at 8:15, chess at 9:00, dancing at 10:15."
+          }
         }
       },
       "feedback": {
@@ -581,7 +775,19 @@
           "Có một môn đang chen lên trước giờ thật của nó.",
           "So kim ngắn trước: số nhỏ hơn thì học sớm hơn.",
           "Hai môn có giờ gần nhau, hãy so tiếp kim dài nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The timetable is in a perfectly straight line. Rô-bốt's Saturday morning is busy indeed!",
+            "You read four clocks without mixing up a single one, super!",
+            "Green Caterpillar copies this timetable into its leaf notebook right away."
+          ],
+          "wrong": [
+            "One class is pushing in front of its real time.",
+            "Compare the short hands first: the smaller number is earlier.",
+            "Two classes are close together in time, so compare the long hands next."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -591,7 +797,18 @@
           "gio-hoc-mua"
         ]
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Order the Saturday morning classes",
+        "goTo": "Go back to the sky-watching balcony, where Green Caterpillar is waiting",
+        "prompt": "Green Caterpillar wants to copy Rô-bốt and go to hobby classes. On Saturday morning, Rô-bốt has four classes: an instrument, swimming, chess and dancing, each starting at its own time. Put the four classes in order of their start time, from earliest to latest.",
+        "items": [
+          "Learn chess",
+          "Learn to dance",
+          "Learn an instrument",
+          "Learn to swim"
+        ]
+      }
     },
     {
       "id": "gio-hoc-bong-ro",
@@ -617,6 +834,17 @@
         "answer": {
           "text": "9 giờ đúng",
           "explanation": "Kim giờ chỉ số 9, kim phút chỉ số 12, nên buổi học cờ vua bắt đầu lúc 9 giờ đúng."
+        },
+        "en": {
+          "guide": [
+            "The long hand standing straight at 12 means an o'clock time.",
+            "The short hand points at the number of the hour."
+          ],
+          "hint": "The short hand points at 9.",
+          "answer": {
+            "text": "9 o'clock exactly",
+            "explanation": "The hour hand points at 9 and the minute hand at 12, so the chess class starts at exactly 9 o'clock."
+          }
         }
       },
       "feedback": {
@@ -629,13 +857,30 @@
           "Kim ngắn đang chỉ vào số 9, đúng không nhỉ?",
           "Kim dài ở số 12 nghĩa là mấy phút?",
           "Đừng đọc kim dài thành kim giờ nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Nine o'clock exactly, the chess pieces are ready on the board!",
+            "You read the o'clock time like a chess master's move.",
+            "You looked at the short hand and then the long hand, in the right order."
+          ],
+          "wrong": [
+            "The short hand points at the 9, doesn't it?",
+            "The long hand on 12 means how many minutes?",
+            "Don't read the long hand as the hour hand."
+          ]
+        }
       },
       "answer": {
         "hour": 9,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Time of the chess class",
+        "goTo": "Run down to the foot of the spiral staircase, where Sister Thảo is clicking the chess pieces into place",
+        "prompt": "Rô-bốt goes to chess class by this clock. Read it: what time does the chess class start?"
+      }
     },
     {
       "id": "truoc-gio-bong-ro",
@@ -669,6 +914,17 @@
         "answer": {
           "text": "Đàn và bơi",
           "explanation": "Đàn (7 giờ 30 phút) và bơi (8 giờ 15 phút) bắt đầu sớm hơn cờ vua (9 giờ); múa (10 giờ 15 phút) học sau."
+        },
+        "en": {
+          "guide": [
+            "The chess class starts at 9 o'clock.",
+            "Any class that starts earlier than 9 o'clock comes before chess."
+          ],
+          "hint": "Two classes come before chess.",
+          "answer": {
+            "text": "Instrument and swimming",
+            "explanation": "The instrument (7:30) and swimming (8:15) start earlier than chess (9:00); dancing (10:15) comes after."
+          }
         }
       },
       "feedback": {
@@ -681,7 +937,19 @@
           "Múa học lúc 10 giờ 15 phút, sau cờ vua đấy.",
           "Còn một môn học sớm nữa chưa được chọn.",
           "So từng giờ bắt đầu với 9 giờ của cờ vua nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Instrument, then swimming, and only then chess. Green Caterpillar remembers it all!",
+            "Two classes, none too many or too few. You're brilliant.",
+            "The last question is done, and Green Caterpillar rolls over in delight!"
+          ],
+          "wrong": [
+            "Dancing is at 10:15, after chess.",
+            "There is one more early class you haven't picked.",
+            "Compare each start time with chess's 9 o'clock."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -689,7 +957,17 @@
           "boi"
         ]
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What comes before chess?",
+        "goTo": "Go up to the sky-watching balcony, where Green Caterpillar waits with the last question",
+        "prompt": "Rô-bốt has chess class at 9 o'clock. Pick every class that Rô-bốt has finished before chess class.",
+        "choices": [
+          "swimming",
+          "instrument",
+          "dancing"
+        ]
+      }
     },
     {
       "id": "huy-hieu-dem-ngay",
@@ -721,5 +999,9 @@
       "xem-dong-ho": 2,
       "xem-lich": 1
     }
+  },
+  "en": {
+    "title": "Green Caterpillar Counts the Days to Become a Butterfly",
+    "summary": "Green Caterpillar lies on the balcony of the clock tower next to the library, counting the days until it turns into a butterfly. {name} helps Green Caterpillar read the clock, find dates on the calendar from Rô-bốt's postcards, check the museum's opening hours and arrange the hobby-class timetable."
   }
 }

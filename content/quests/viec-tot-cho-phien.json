@@ -41,11 +41,20 @@
       "kind": "dialogue",
       "target": "vt-cp-be-mi",
       "lines": [
-        { "speaker": "Bé Gấu Mi", "text": "Hu hu… Mi mải nhìn chùm bóng bay, quay lại đã chẳng thấy mẹ đâu. Đồ của Mi cũng rơi mất trên đường chạy rồi." }
+        {
+          "speaker": "Bé Gấu Mi",
+          "text": "Hu hu… Mi mải nhìn chùm bóng bay, quay lại đã chẳng thấy mẹ đâu. Đồ của Mi cũng rơi mất trên đường chạy rồi."
+        }
       ],
       "choices": [
-        { "text": "Nín đi Mi, mình cùng tìm mẹ nhé!", "reply": "Thật hả? Đồ của Mi rơi ở lối giữa các sạp ấy." },
-        { "text": "Mi còn nhớ mẹ mặc áo gì không?", "reply": "Mẹ mặc áo hoa, tay xách giỏ cá. Nhưng nhặt đồ của Mi trước đã nhé." }
+        {
+          "text": "Nín đi Mi, mình cùng tìm mẹ nhé!",
+          "reply": "Thật hả? Đồ của Mi rơi ở lối giữa các sạp ấy."
+        },
+        {
+          "text": "Mi còn nhớ mẹ mặc áo gì không?",
+          "reply": "Mẹ mặc áo hoa, tay xách giỏ cá. Nhưng nhặt đồ của Mi trước đã nhé."
+        }
       ],
       "en": {
         "title": "Little Mi is crying",
@@ -91,7 +100,26 @@
           "clue": "Tròn xoe, xoắn nhiều màu, cắm trên một chiếc que, ngọt lịm.",
           "target": "vt-cp-keo"
         }
-      ]
+      ],
+      "en": {
+        "title": "Pick up Little Mi's things",
+        "goTo": "Search along the aisle between the stalls for what Mi dropped",
+        "prompt": "Mi dropped three things. Read Mi's description and pick them up for the little bear:",
+        "items": [
+          {
+            "name": "Yellow balloon",
+            "clue": "Round and full, yellow as sunshine, tied to a long string, always ready to float up into the sky."
+          },
+          {
+            "name": "Green shoe",
+            "clue": "A small leaf-green shoe with a strap, slipped off Mi's foot while running."
+          },
+          {
+            "name": "Lollipop",
+            "clue": "Round, swirled with many colours, stuck on a stick, and super sweet."
+          }
+        ]
+      }
     },
     {
       "id": "doc-bien-chi-dan",
@@ -103,22 +131,78 @@
       "text": "LẠC NGƯỜI THÂN?\nĐừng chạy lung tung. Hãy tới chốt bảo vệ chợ. Chú bảo vệ sẽ đọc loa tìm người thân cho bạn. Người lớn đi tìm con thì tới nhà lồng chợ chờ.",
       "question": "Bạn nhỏ bị lạc nên tới đâu?",
       "choices": [
-        { "id": "a", "text": "Chạy khắp các sạp tìm" },
-        { "id": "b", "text": "Tới chốt bảo vệ chợ" },
-        { "id": "c", "text": "Ra cổng chợ đứng khóc" }
+        {
+          "id": "a",
+          "text": "Chạy khắp các sạp tìm"
+        },
+        {
+          "id": "b",
+          "text": "Tới chốt bảo vệ chợ"
+        },
+        {
+          "id": "c",
+          "text": "Ra cổng chợ đứng khóc"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm câu bắt đầu bằng chữ «Hãy».", "Câu đó chỉ nơi bạn nhỏ cần tới."],
+        "guide": [
+          "Tìm câu bắt đầu bằng chữ «Hãy».",
+          "Câu đó chỉ nơi bạn nhỏ cần tới."
+        ],
         "hint": "Biển dặn đừng chạy lung tung.",
         "answer": {
           "text": "Đi tới chốt bảo vệ chợ",
           "explanation": "Biển viết: hãy tới chốt bảo vệ chợ, chú bảo vệ sẽ đọc loa tìm người thân cho bạn."
+        },
+        "en": {
+          "guide": [
+            "Find the sentence that begins with the word «Go».",
+            "That sentence says where a child needs to go."
+          ],
+          "hint": "The sign says not to run around.",
+          "answer": {
+            "text": "Head for the market's security post",
+            "explanation": "The sign says: go to the market security post, the guard will call out for your family over the loudspeaker."
+          }
         }
       },
       "feedback": {
-        "right": ["Đúng rồi, chú bảo vệ sẽ giúp Mi ngay!", "{name} đọc biển chỉ dẫn bình tĩnh ghê.", "Mi nín khóc, nắm tay {name} đi tới chốt bảo vệ."],
-        "wrong": ["Biển dặn đừng chạy lung tung đấy, đọc lại nhé.", "Tìm câu có chữ «Hãy» nha {name}.", "Đứng khóc thì mẹ khó tìm lắm, chọn lại nào."]
+        "right": [
+          "Đúng rồi, chú bảo vệ sẽ giúp Mi ngay!",
+          "{name} đọc biển chỉ dẫn bình tĩnh ghê.",
+          "Mi nín khóc, nắm tay {name} đi tới chốt bảo vệ."
+        ],
+        "wrong": [
+          "Biển dặn đừng chạy lung tung đấy, đọc lại nhé.",
+          "Tìm câu có chữ «Hãy» nha {name}.",
+          "Đứng khóc thì mẹ khó tìm lắm, chọn lại nào."
+        ],
+        "en": {
+          "right": [
+            "That's right, the guard will help Mi right away!",
+            "{name} reads the information sign so calmly.",
+            "Mi stops crying and takes {name}'s hand to go to the security post."
+          ],
+          "wrong": [
+            "The sign says not to run around, read it again.",
+            "Find the sentence with the word «Go», {name}.",
+            "Standing crying makes it hard for Mum to find you, choose again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the signs",
+        "goTo": "Lead Mi to the market's information sign",
+        "text": "LOST FROM YOUR FAMILY?\nDon't run around. Go to the market security post. The guard will call out for your family over the loudspeaker. Grown-ups looking for a child should wait at the market hall.",
+        "question": "Where should a lost child go?",
+        "choices": [
+          "Run around all the stalls looking",
+          "Go to the market security post",
+          "Stand crying at the market gate"
+        ]
       }
     },
     {
@@ -132,33 +216,128 @@
       "skill": "logic",
       "prompt": "Chú bảo vệ treo bóng bay thành chuỗi có quy luật để Mi dễ nhìn thấy. Quả tiếp theo màu gì?",
       "elements": [
-        { "id": "b1", "label": "Đỏ" },
-        { "id": "b2", "label": "Xanh" },
-        { "id": "b3", "label": "Đỏ" },
-        { "id": "b4", "label": "Xanh" },
-        { "id": "b5", "label": "Xanh" },
-        { "id": "b6", "label": "Đỏ" },
-        { "id": "b7", "label": "Xanh" },
-        { "id": "b8", "label": "Xanh" },
-        { "id": "b9", "label": "Xanh" }
+        {
+          "id": "b1",
+          "label": "Đỏ"
+        },
+        {
+          "id": "b2",
+          "label": "Xanh"
+        },
+        {
+          "id": "b3",
+          "label": "Đỏ"
+        },
+        {
+          "id": "b4",
+          "label": "Xanh"
+        },
+        {
+          "id": "b5",
+          "label": "Xanh"
+        },
+        {
+          "id": "b6",
+          "label": "Đỏ"
+        },
+        {
+          "id": "b7",
+          "label": "Xanh"
+        },
+        {
+          "id": "b8",
+          "label": "Xanh"
+        },
+        {
+          "id": "b9",
+          "label": "Xanh"
+        }
       ],
       "choices": [
-        { "id": "do", "text": "Đỏ" },
-        { "id": "xanh", "text": "Xanh" },
-        { "id": "tim", "text": "Tím" }
+        {
+          "id": "do",
+          "text": "Đỏ"
+        },
+        {
+          "id": "xanh",
+          "text": "Xanh"
+        },
+        {
+          "id": "tim",
+          "text": "Tím"
+        }
       ],
-      "answer": { "choice": "do" },
+      "answer": {
+        "choice": "do"
+      },
       "support": {
-        "guide": ["Mỗi quả đỏ mở đầu một nhóm.", "Đếm số quả xanh sau mỗi quả đỏ: 1, rồi 2, rồi 3.", "Nhóm có 3 quả xanh đã đủ, nhóm mới bắt đầu thế nào?"],
+        "guide": [
+          "Mỗi quả đỏ mở đầu một nhóm.",
+          "Đếm số quả xanh sau mỗi quả đỏ: 1, rồi 2, rồi 3.",
+          "Nhóm có 3 quả xanh đã đủ, nhóm mới bắt đầu thế nào?"
+        ],
         "hint": "Số quả xanh sau mỗi quả đỏ tăng dần thêm một.",
         "answer": {
           "text": "Một quả màu đỏ",
           "explanation": "Chuỗi là đỏ – 1 xanh, đỏ – 2 xanh, đỏ – 3 xanh. Nhóm thứ ba đã đủ 3 quả xanh nên tiếp theo là quả đỏ mở nhóm mới."
+        },
+        "en": {
+          "guide": [
+            "Each red balloon starts a group.",
+            "Count the blue balloons after each red one: 1, then 2, then 3.",
+            "The group with 3 blue balloons is complete, so how does a new group begin?"
+          ],
+          "hint": "The number of blue balloons after each red one goes up by one.",
+          "answer": {
+            "text": "A red balloon",
+            "explanation": "The string goes red – 1 blue, red – 2 blue, red – 3 blue. The third group already has 3 blue balloons, so next comes a red one to start a new group."
+          }
         }
       },
       "feedback": {
-        "right": ["Chuỗi bóng bay dài thêm, nhìn từ xa cũng thấy!", "{name} nhìn ra quy luật tăng dần, giỏi thật đấy.", "Chú bảo vệ giơ ngón cái: đúng quả đỏ rồi!"],
-        "wrong": ["Đếm số quả xanh sau mỗi quả đỏ xem nào.", "Trong chuỗi chẳng có quả tím nào đâu {name}.", "Nhóm cuối đã có ba quả xanh rồi, tiếp theo là gì nhỉ?"]
+        "right": [
+          "Chuỗi bóng bay dài thêm, nhìn từ xa cũng thấy!",
+          "{name} nhìn ra quy luật tăng dần, giỏi thật đấy.",
+          "Chú bảo vệ giơ ngón cái: đúng quả đỏ rồi!"
+        ],
+        "wrong": [
+          "Đếm số quả xanh sau mỗi quả đỏ xem nào.",
+          "Trong chuỗi chẳng có quả tím nào đâu {name}.",
+          "Nhóm cuối đã có ba quả xanh rồi, tiếp theo là gì nhỉ?"
+        ],
+        "en": {
+          "right": [
+            "The balloon string grows longer, and you can see it from far away!",
+            "{name} spotted the growing pattern, really clever.",
+            "The guard gives a thumbs up: the red balloon it is!"
+          ],
+          "wrong": [
+            "Count the blue balloons after each red one.",
+            "There isn't a single purple balloon in the string, {name}.",
+            "The last group already has three blue balloons, so what comes next?"
+          ]
+        }
+      },
+      "en": {
+        "title": "The balloon string at the security post",
+        "goTo": "Go to the market security post, where the Market Guard is hanging a string of balloons",
+        "prompt": "The guard hangs balloons in a pattern so Mi can see them easily. What colour is the next balloon?",
+        "elements": [
+          "Red",
+          "Blue",
+          "Red",
+          "Blue",
+          "Blue",
+          "Red",
+          "Blue",
+          "Blue",
+          "Blue"
+        ],
+        "choices": [
+          "Red",
+          "Blue",
+          "Purple"
+        ]
       }
     },
     {
@@ -213,9 +392,16 @@
       "kind": "dialogue",
       "target": "vt-cp-co-ban-hoa",
       "lines": [
-        { "speaker": "Cô Bán Hoa Ly", "text": "Mẹ bé Mi mặc áo hoa phải không? Cô thấy chị ấy vừa đi vội về phía nhà lồng chợ, vừa đi vừa gọi tên con." }
+        {
+          "speaker": "Cô Bán Hoa Ly",
+          "text": "Mẹ bé Mi mặc áo hoa phải không? Cô thấy chị ấy vừa đi vội về phía nhà lồng chợ, vừa đi vừa gọi tên con."
+        }
       ],
-      "choices": [{ "text": "Cảm ơn cô, cháu đưa Mi qua đó ngay!" }],
+      "choices": [
+        {
+          "text": "Cảm ơn cô, cháu đưa Mi qua đó ngay!"
+        }
+      ],
       "en": {
         "title": "Ask the flower seller",
         "goTo": "Go to the lily stall and ask the Lily Seller",
@@ -240,23 +426,82 @@
       "prompt": "Mẹ Gấu Hoa muốn cắm một bình đúng 13 bông hoa tặng {name}. Kéo các bó hoa vào bình cho vừa đủ 13 bông:",
       "container": "Bình hoa cảm ơn",
       "pieces": [
-        { "id": "bo-tam", "label": "Bó 8 bông", "value": 8 },
-        { "id": "bo-bon", "label": "Bó 4 bông", "value": 4 },
-        { "id": "bo-nam", "label": "Bó 5 bông", "value": 5 },
-        { "id": "bo-bay", "label": "Bó 7 bông", "value": 7 }
+        {
+          "id": "bo-tam",
+          "label": "Bó 8 bông",
+          "value": 8
+        },
+        {
+          "id": "bo-bon",
+          "label": "Bó 4 bông",
+          "value": 4
+        },
+        {
+          "id": "bo-nam",
+          "label": "Bó 5 bông",
+          "value": 5
+        },
+        {
+          "id": "bo-bay",
+          "label": "Bó 7 bông",
+          "value": 7
+        }
       ],
-      "answer": { "total": 13 },
+      "answer": {
+        "total": 13
+      },
       "support": {
-        "guide": ["Thử ghép bó lớn nhất với một bó khác.", "Tính nhẩm xem tổng có đúng 13 không.", "Nhớ cách cộng qua 10: 8 + 2 = 10, rồi thêm phần còn lại."],
+        "guide": [
+          "Thử ghép bó lớn nhất với một bó khác.",
+          "Tính nhẩm xem tổng có đúng 13 không.",
+          "Nhớ cách cộng qua 10: 8 + 2 = 10, rồi thêm phần còn lại."
+        ],
         "hint": "8 cộng mấy thì bằng 13?",
         "answer": {
           "text": "Bó 8 bông và bó 5 bông",
           "explanation": "8 + 5 = 13: tách 5 thành 2 và 3, 8 + 2 = 10, 10 + 3 = 13."
+        },
+        "en": {
+          "guide": [
+            "Try pairing the biggest bunch with another one.",
+            "Work out in your head whether the total is exactly 13.",
+            "Remember adding across 10: 8 + 2 = 10, then add the rest."
+          ],
+          "hint": "8 plus what makes 13?",
+          "answer": {
+            "text": "The bunch of 8 and the bunch of 5",
+            "explanation": "8 + 5 = 13: split 5 into 2 and 3, 8 + 2 = 10, 10 + 3 = 13."
+          }
         }
       },
       "feedback": {
-        "right": ["Mười ba bông vừa khít bình, đẹp rực rỡ!", "{name} cộng qua mười nhanh như người bán hoa.", "Mẹ Gấu Hoa cảm động, ôm cả Mi lẫn {name}."],
-        "wrong": ["Bình đang thừa hoặc thiếu bông rồi, đếm lại nhé.", "Thử bó 8 bông với một bó khác xem tổng bao nhiêu {name}.", "Tổng phải đúng mười ba, không hơn không kém."]
+        "right": [
+          "Mười ba bông vừa khít bình, đẹp rực rỡ!",
+          "{name} cộng qua mười nhanh như người bán hoa.",
+          "Mẹ Gấu Hoa cảm động, ôm cả Mi lẫn {name}."
+        ],
+        "wrong": [
+          "Bình đang thừa hoặc thiếu bông rồi, đếm lại nhé.",
+          "Thử bó 8 bông với một bó khác xem tổng bao nhiêu {name}.",
+          "Tổng phải đúng mười ba, không hơn không kém."
+        ],
+        "en": {
+          "right": [
+            "Thirteen flowers fit the vase perfectly, so lovely!",
+            "{name} adds across ten as fast as a flower seller.",
+            "Mama Bear Hoa is moved and hugs both Mi and {name}."
+          ],
+          "wrong": [
+            "The vase has too many or too few flowers, count again.",
+            "Try the bunch of 8 with another bunch and see the total, {name}.",
+            "The total must be exactly thirteen, no more and no less."
+          ]
+        }
+      },
+      "en": {
+        "title": "The thank-you vase",
+        "goTo": "Take Mi to the market hall, where Mi's mum is waiting",
+        "prompt": "Mama Bear Hoa wants to arrange a vase of exactly 13 flowers as a gift for {name}. Drag bunches of flowers into the vase to make exactly 13:"
       }
     },
     {
@@ -285,6 +530,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "phep-cong": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "phep-cong": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: Little Mi Gets Lost from Mum at the Market",
+    "summary": "The fair is packed, and Little Bear Mi gets lost from Mum while gazing at the balloons. {name} picks up what Mi dropped, reads the information sign, works out the balloon string pattern, chooses how to find Mum and then helps Mi's mum arrange a thank-you vase of flowers."
   }
 }

@@ -82,7 +82,10 @@
         "clue-box",
         "clue-letter",
         "clue-mushroom"
-      ]
+      ],
+      "en": {
+        "title": "Find 3 clues"
+      }
     },
     {
       "id": "read-letter",
@@ -120,6 +123,18 @@
         "answer": {
           "text": "Bạn Hải ly",
           "explanation": "Lá thư viết: \"Hải ly sẽ chỉ đường cho bạn.\" Bác Cú già là người viết thư."
+        },
+        "en": {
+          "guide": [
+            "Read the letter slowly, one sentence at a time.",
+            "Find the sentence with the words \"show you the way\".",
+            "See who is doing that."
+          ],
+          "hint": "Look for the sentence about the friend by the stream.",
+          "answer": {
+            "text": "Beaver",
+            "explanation": "The letter says: \"Beaver will show you the way.\" Old Owl is the one who wrote the letter."
+          }
         }
       },
       "feedback": {
@@ -132,6 +147,28 @@
           "Đọc lại câu có chữ \"chỉ đường\" nhé {name}.",
           "Người viết thư chưa chắc là người chỉ đường đâu.",
           "Thử dò từng dòng của lá thư thêm lần nữa xem."
+        ],
+        "en": {
+          "right": [
+            "That's right! Beaver by the stream will lead {name} there.",
+            "{name} read it carefully and found the guide straight away!",
+            "Exactly! Now let's go and find Beaver."
+          ],
+          "wrong": [
+            "Read the sentence with \"show you the way\" again, {name}.",
+            "The person who wrote the letter isn't necessarily the one showing the way.",
+            "Try going through each line of the letter once more."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the letter",
+        "text": "To the brave little one,\nThe Magic Leaf lies in the chest beside the great old tree. To get there, find Beaver by the stream. Beaver will show you the way.\nOld Owl",
+        "question": "According to the letter, who will show {name} the way?",
+        "choices": [
+          "Old Owl",
+          "Beaver",
+          "Parrot"
         ]
       }
     },
@@ -252,6 +289,18 @@
         "answer": {
           "text": "10 quả táo",
           "explanation": "Đếm 1, 2, 3, 4, 5, 6, 7, 8, 9, 10: đủ 10 quả thì dừng. 3 quả còn lại để trên cây."
+        },
+        "en": {
+          "guide": [
+            "Drag the apples into the basket one by one.",
+            "Each time, count out loud: 1, 2, 3...",
+            "Stop when you reach 10."
+          ],
+          "hint": "If you drag too many, take some out of the basket and count again.",
+          "answer": {
+            "text": "10 apples",
+            "explanation": "Count 1, 2, 3, 4, 5, 6, 7, 8, 9, 10: stop at 10 apples. The other 3 stay on the tree."
+          }
         }
       },
       "feedback": {
@@ -264,7 +313,23 @@
           "Giỏ chưa đúng mười quả, {name} đếm lại từng quả nhé.",
           "Thử đếm to từ một nhé, lỡ thừa thì kéo bớt ra.",
           "Hải ly cần vừa đúng mười quả, không hơn không kém."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ten apples! Beaver thanks {name} so much.",
+            "The basket is full to the brim, {name} counted perfectly!",
+            "Ten rosy apples, and Beaver's whole family has a pie!"
+          ],
+          "wrong": [
+            "That's not ten apples yet, {name}. Count them one by one again.",
+            "Try counting out loud from one. If there are too many, take some out.",
+            "Beaver needs exactly ten apples, no more and no less."
+          ]
+        }
+      },
+      "en": {
+        "title": "Pick 10 apples",
+        "prompt": "Drag exactly 10 apples into Beaver's basket."
       }
     },
     {
@@ -306,6 +371,18 @@
         "answer": {
           "text": "5 viên kẹo",
           "explanation": "8 − 3 = 5. Tặng đi 3 viên thì Hải ly còn 5 viên."
+        },
+        "en": {
+          "guide": [
+            "Beaver has 8 sweets.",
+            "Giving some away leaves fewer, so we subtract.",
+            "Work out 8 − 3."
+          ],
+          "hint": "Count back 3 steps from 8: 7, 6, 5.",
+          "answer": {
+            "text": "5 sweets",
+            "explanation": "8 − 3 = 5. After giving away 3 sweets, Beaver has 5 left."
+          }
         }
       },
       "feedback": {
@@ -318,6 +395,28 @@
           "Tặng đi thì kẹo ít đi, {name} thử phép trừ xem.",
           "Đếm lùi ba bước từ số tám thử nào.",
           "Hải ly vẫn giữ lại vài viên, mình tính lại nhé."
+        ],
+        "en": {
+          "right": [
+            "Spot on! Eight take away three leaves five sweets.",
+            "{name} subtracts so fast in their head, Beaver is impressed!",
+            "Yes, Beaver has five yummy sweets left."
+          ],
+          "wrong": [
+            "Giving some away leaves fewer. Try subtracting, {name}.",
+            "Count back three steps from eight.",
+            "Beaver still keeps a few sweets, so let's work it out again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Share candy with Beaver",
+        "prompt": "Beaver has 8 sweets and gives {name} 3. How many sweets does Beaver have left?",
+        "choices": [
+          "3",
+          "5",
+          "6",
+          "11"
         ]
       }
     },
@@ -365,6 +464,18 @@
         "answer": {
           "text": "9, 15, 27, 34",
           "explanation": "9 < 15 < 27 < 34. So hàng chục: 1 chục < 2 chục < 3 chục, còn 9 chưa đủ 1 chục."
+        },
+        "en": {
+          "guide": [
+            "Find the smallest number first.",
+            "Compare the tens digits: fewer tens means a smaller number.",
+            "Then put the other numbers in order from smallest to biggest."
+          ],
+          "hint": "The number 9 has only one digit, so it is the smallest.",
+          "answer": {
+            "text": "9, 15, 27, 34",
+            "explanation": "9 < 15 < 27 < 34. Comparing the tens: 1 ten < 2 tens < 3 tens, and 9 is not even 1 ten yet."
+          }
         }
       },
       "feedback": {
@@ -377,6 +488,28 @@
           "Hòn đá bé nhất phải đi trước, {name} nhìn kỹ nhé.",
           "So chữ số hàng chục trước để biết số nào lớn hơn.",
           "Nước suối vỗ nhẹ: xếp lại thứ tự từ bé đến lớn nào."
+        ],
+        "en": {
+          "right": [
+            "Steady steps, {name} crossed the stream safely!",
+            "From smallest to biggest, in perfect order!",
+            "Plop, plop, plop, four stepping stones carry {name} to the bank."
+          ],
+          "wrong": [
+            "The smallest stone goes first, look closely, {name}.",
+            "Compare the tens digits first to see which number is bigger.",
+            "The stream splashes gently: put them in order from smallest to biggest again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Cross the stream",
+        "prompt": "Step on the stones in order of number, from smallest to biggest, to cross the stream.",
+        "items": [
+          "27",
+          "15",
+          "9",
+          "34"
         ]
       }
     },
@@ -443,6 +576,18 @@
         "answer": {
           "text": "13",
           "explanation": "8 + 5 = 13. Có thể tính 8 + 2 = 10, rồi 10 + 3 = 13."
+        },
+        "en": {
+          "guide": [
+            "Start from the number 8.",
+            "Count on 5 more: 9, 10, 11, 12, 13.",
+            "The last number is the answer."
+          ],
+          "hint": "Split 5 into 2 and 3: 8 + 2 = 10, then add 3 more.",
+          "answer": {
+            "text": "13",
+            "explanation": "8 + 5 = 13. You can work out 8 + 2 = 10, then 10 + 3 = 13."
+          }
         }
       },
       "feedback": {
@@ -455,7 +600,23 @@
           "Cây cổ thụ lắc cành: đếm thêm từ số tám nhé.",
           "Tách năm thành hai và ba để tính cho dễ nè.",
           "Chưa phải rồi, {name} thử gộp cho tròn mười trước."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirteen leaves! The great old tree smiles at {name}.",
+            "Riddle solved, and the trunk gives a happy little shake.",
+            "Eight plus five is thirteen, {name} got it right!"
+          ],
+          "wrong": [
+            "The great old tree shakes its branches: count on from eight.",
+            "Split five into two and three to make it easier.",
+            "Not quite, {name}. Try making a round ten first."
+          ]
+        }
+      },
+      "en": {
+        "title": "Solve the tree's riddle",
+        "question": "There are 8 leaves on a branch, and 5 more leaves grow. How many leaves are on the branch altogether? (8 + 5 = ?)"
       }
     },
     {
@@ -494,5 +655,9 @@
     "items": {
       "la-than": 1
     }
+  },
+  "en": {
+    "title": "Secret Forest – Chapter 1: The Magic Leaf",
+    "summary": "The great old tree of the forest is wilting. {name}, Parrot and Beaver set off to find the Magic Leaf to heal it."
   }
 }

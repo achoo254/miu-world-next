@@ -124,7 +124,11 @@
         "tv2-t13-gao-nuoc",
         "tv2-t13-la-chuoi",
         "tv2-t13-que-nan"
-      ]
+      ],
+      "en": {
+        "title": "Things for storing clay",
+        "goTo": "Find the water scoop, the banana leaf and the modelling stick in the reed bed by the stream"
+      }
     },
     {
       "id": "khoi-dong",
@@ -185,6 +189,17 @@
         "answer": {
           "text": "Bé ngồi ngoài hiên khi trời mới sáng.",
           "explanation": "Hai dòng đầu kể: sáng nay bên hiên, bé ngồi nhào đất."
+        },
+        "en": {
+          "guide": [
+            "Read the first two lines of the poem.",
+            "Those lines tell you where the child sits, and when."
+          ],
+          "hint": "The place is right in front of the house, where the early sun shines in.",
+          "answer": {
+            "text": "The child sits out on the porch just as it gets light.",
+            "explanation": "The first two lines say: this morning, on the porch, the child sits kneading clay."
+          }
         }
       },
       "feedback": {
@@ -197,9 +212,31 @@
           "Trong bài chẳng có cây đa nào đâu, đọc lại dòng thơ đầu nhé.",
           "Bếp thì nóng lắm, bé ngồi chỗ có nắng sớm cơ.",
           "Thử đọc to hai dòng đầu bài thơ xem bé ngồi ở đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, on the porch! Hải Ly would love to knead clay there too, where it's warm.",
+            "Spot on! The very first line of the poem says where the child sits.",
+            "Mèo Bùn opens one eye, nods, and goes back to sleep."
+          ],
+          "wrong": [
+            "There's no banyan tree in the poem. Read the first line again.",
+            "The kitchen is far too hot. The child sits where the morning sun shines.",
+            "Try reading the first two lines out loud to see where the child sits."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem on the Mossy Slab",
+        "goTo": "Go to the mossy slab, where Hải Ly has copied out the poem «Bé nhào đất»",
+        "question": "Diligent Beaver asks in a whisper, afraid of waking Mèo Bùn: where is the child in the poem sitting to knead clay?",
+        "choices": [
+          "Under the banyan tree at the village gate",
+          "On the porch in the early morning sun",
+          "In the kitchen, beside Mum's rice pot"
+        ]
+      }
     },
     {
       "id": "do-be-da-nan",
@@ -265,6 +302,17 @@
         "answer": {
           "text": "Bé nặn chiếc bát, con cá, con chim, chú voi; cây cầu nhỏ và quả dừa là của Hải Ly.",
           "explanation": "Bài thơ kể bé nặn chiếc bát cho bố mẹ, cá và chim cho ông bà, chú voi cho bạn thân; cây cầu và quả dừa không có trong bài."
+        },
+        "en": {
+          "guide": [
+            "Read the poem verse by verse and underline everything the child makes.",
+            "Anything that isn't in the poem was made by Hải Ly."
+          ],
+          "hint": "The child makes four things: a bowl for food, two animals in the third verse and one big animal in the last verse.",
+          "answer": {
+            "text": "The child made the bowl, the fish, the bird and the elephant. The little bridge and the coconut are Hải Ly's.",
+            "explanation": "The poem says the child made a bowl for Mum and Dad, a fish and a bird for Grandpa and Grandma, and an elephant for a best friend. The bridge and the coconut are not in the poem."
+          }
         }
       },
       "feedback": {
@@ -277,9 +325,26 @@
           "Bài thơ có nhắc tới quả dừa đâu nhỉ? Đọc lại các khổ nói về món quà.",
           "Còn một món của bé đang nằm nhầm rổ, tìm lại xem.",
           "Chú voi bé xíu ở khổ cuối là bé nặn đấy, đừng bỏ sót nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four of the child's things! Hải Ly slaps her tail on the water with a splash.",
+            "Sorted perfectly! The bridge and the coconut really are Hải Ly's own work.",
+            "{name} reads poems more carefully than the forest teacher."
+          ],
+          "wrong": [
+            "Is there a coconut in the poem? Read the verses about the presents again.",
+            "One of the child's things is in the wrong basket. Find it.",
+            "The tiny elephant in the last verse is the child's. Don't leave it out."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The mixed-up tray of clay figures",
+        "goTo": "Run back to the clay bank, where Hải Ly has just laid out a tray of clay figures",
+        "prompt": "Diligent Beaver has laid out a tray of clay figures: some the child in the poem made, and some Hải Ly made for fun. Drag each one into the right basket."
+      }
     },
     {
       "id": "tang-cho-ai",
@@ -333,6 +398,17 @@
         "answer": {
           "text": "Bé tặng bố mẹ, ông, bà và bạn thân.",
           "explanation": "Chiếc bát dành cho bố mẹ, cá và chim nặn tặng ông bà, chú voi dành cho bạn thân."
+        },
+        "en": {
+          "guide": [
+            "Look for the words «dành cho» and «tặng» in the poem.",
+            "Each present has one or two people to receive it."
+          ],
+          "hint": "There are four groups of people: the two who serve the meal, the two with white hair, and one friend.",
+          "answer": {
+            "text": "The child makes presents for Mum and Dad, Grandpa, Grandma and a best friend.",
+            "explanation": "The bowl is for Mum and Dad, the fish and the bird are for Grandpa and Grandma, and the elephant is for a best friend."
+          }
         }
       },
       "feedback": {
@@ -345,9 +421,34 @@
           "Cô giáo và chú bảo vệ không có trong bài thơ này đâu.",
           "Còn sót một người nhận quà đấy, đọc lại khổ cuối xem.",
           "Đọc lại khổ có cá, gà, thỏ, chim xem bé nặn tặng ai nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Everyone who gets a present! Mèo Bùn miaows, sounding very pleased.",
+            "Exactly right, nobody extra. Well done, {name}!",
+            "Hải Ly jots it down at once: the child in the poem is so thoughtful."
+          ],
+          "wrong": [
+            "The teacher and the security guard aren't in this poem.",
+            "You've missed someone who gets a present. Read the last verse again.",
+            "Read the verse with the fish, hen, rabbit and bird again to see who the child makes them for."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "People who get the child's gifts",
+        "goTo": "Go back to the mossy slab, where Mèo Bùn is curled up asleep",
+        "prompt": "Mèo Bùn stretches awake, asks just one question and waits: who does the child in the poem make presents for?",
+        "choices": [
+          "Mum and Dad",
+          "Grandpa",
+          "the teacher",
+          "Grandma",
+          "the security guard",
+          "a best friend"
+        ]
+      }
     },
     {
       "id": "tam-long-cua-be",
@@ -384,6 +485,17 @@
         "answer": {
           "text": "Bé quan tâm tới những người xung quanh và thích làm họ vui.",
           "explanation": "Món nào bé nặn cũng dành tặng người thân hay bạn bè, nên bé là người có lòng yêu thương."
+        },
+        "en": {
+          "guide": [
+            "Who does the child make each present for?",
+            "Does the child keep any of them?"
+          ],
+          "hint": "The child thinks of the person first, and only then decides what to make.",
+          "answer": {
+            "text": "The child cares about the people around them and loves making them happy.",
+            "explanation": "Every figure the child makes is a present for family or a friend, so the child is a loving person."
+          }
         }
       },
       "feedback": {
@@ -396,9 +508,31 @@
           "Bé đâu có giấu đồ nặn, bé mang đi tặng hết cơ mà.",
           "Bé nặn rất chăm chút, đâu phải chỉ nghịch cho vui tay.",
           "Thử nghĩ xem: nặn quà để tặng là nghĩ tới ai nào?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, every present is a tiny, warm kindness.",
+            "Hải Ly nods: then I'll make presents for the whole beaver family!",
+            "Lovely, {name} understands what the poem wants to say."
+          ],
+          "wrong": [
+            "The child doesn't hide the figures, they give them all away.",
+            "The child shapes them with great care, not just for messy fun.",
+            "Think: when you make a present to give, who are you thinking of?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "What the gift says",
+        "goTo": "Carry the clay to the pottery kiln by the stream, where Uncle Hai the Potter is finishing a vase",
+        "prompt": "Diligent Beaver muses, hands still kneading: I'd like to make presents like the child does. From the way the child makes presents for so many people, what kind of person is the child?",
+        "choices": [
+          "The child likes to keep the clay figures for themselves and not let anyone see.",
+          "The child thinks of other people and wants to make everyone happy.",
+          "The child kneads clay just to get their hands messy."
+        ]
+      }
     },
     {
       "id": "em-thich-nan-gi",
@@ -457,6 +591,17 @@
         "answer": {
           "text": "Bạn đưa hai tay đón quà thật hớn hở.",
           "explanation": "Người nhận vui mừng hiện rõ trên mặt nên bé mới vui lây; từ đúng là hớn hở."
+        },
+        "en": {
+          "guide": [
+            "Read the last verse, where the friend holds out both hands.",
+            "In the Words box: «hớn hở» means joy showing clearly on the face."
+          ],
+          "hint": "The child is happy too, so the friend taking the present must be very happy.",
+          "answer": {
+            "text": "The friend holds out both hands and takes the present, so «hớn hở» (full of joy).",
+            "explanation": "The friend's joy shows clearly on their face, which makes the child happy too; the right word is «hớn hở»."
+          }
         }
       },
       "feedback": {
@@ -469,9 +614,26 @@
           "E dè là còn ngại ngùng, mà bé thì vui lây cơ.",
           "Lo lắng làm sao hợp với người đang nhận quà vui vẻ được?",
           "Tìm từ nghĩa là vui mừng hiện rõ trên nét mặt nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "It really is «hớn hở»! Mèo Bùn is as full of joy as the friend in the poem.",
+            "Right, and that word is even in the Words box.",
+            "Hải Ly claps: two hands held out, eyes smiling, that's «hớn hở»!"
+          ],
+          "wrong": [
+            "«E dè» means shy and hesitant, but the child is happy too.",
+            "How could «lo lắng» fit someone happily taking a present?",
+            "Look for the word meaning joy showing clearly on the face."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-dien-tu"
+      "objective": "tu-ngu-tinh-cam-dien-tu",
+      "en": {
+        "title": "How happy is the friend who gets the gift?",
+        "goTo": "Take the clay elephant to the mossy slab to show Mèo Bùn",
+        "prompt": "Hải Ly has shaped a tiny clay elephant, and Mèo Bùn cannot take her eyes off it. In the last verse, how does the best friend look when taking the present? Pick the word for the blank."
+      }
     },
     {
       "id": "tu-vui-mung",
@@ -529,6 +691,17 @@
         "answer": {
           "text": "mừng rỡ, phấn khởi, vui sướng, hân hoan",
           "explanation": "Bốn từ ấy đều chỉ lúc lòng mình vui; buồn bã, lo lắng, giận dỗi là những cảm xúc không vui."
+        },
+        "en": {
+          "guide": [
+            "Read each word and try making a face to match it.",
+            "Which word makes you want to smile?"
+          ],
+          "hint": "Four words are happy; the other three pull your face down.",
+          "answer": {
+            "text": "mừng rỡ (overjoyed), phấn khởi (excited), vui sướng (delighted), hân hoan (jubilant)",
+            "explanation": "All four of those words are for when you feel happy; «buồn bã», «lo lắng» and «giận dỗi» are feelings that aren't happy."
+          }
         }
       },
       "feedback": {
@@ -541,9 +714,35 @@
           "Ối, có một từ buồn lẻn vào trang sổ vui rồi kìa!",
           "Thử làm nét mặt theo từng từ, từ nào làm em mếu thì bỏ ra nhé.",
           "Còn một từ vui chưa được chọn, tìm thêm xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The whole page is smiling! Hải Ly reads each word aloud and catches the joy.",
+            "All four happy words, and not one sad word slipped in.",
+            "Cheerful as {name} is right now!"
+          ],
+          "wrong": [
+            "Oops, a sad word has sneaked onto the happy page!",
+            "Make a face for each word, and take out any that makes you pout.",
+            "There's still a happy word you haven't picked. Look again."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-tim-tu"
+      "objective": "tu-ngu-tinh-cam-tim-tu",
+      "en": {
+        "title": "A notebook page full of happy words",
+        "goTo": "Climb up the guava branch by the stream, where Toe the Monkey is grinning, ready to read out happy words",
+        "prompt": "Diligent Beaver turns to a new page in her notebook and wants to fill it with happy words. Choose all the words for feeling glad.",
+        "choices": [
+          "mừng rỡ",
+          "buồn bã",
+          "phấn khởi",
+          "lo lắng",
+          "vui sướng",
+          "giận dỗi",
+          "hân hoan"
+        ]
+      }
     },
     {
       "id": "da-hay-gia",
@@ -626,6 +825,17 @@
         "answer": {
           "text": "gia súc, gia sư, da bò, gia nhập",
           "explanation": "Gia súc là vật nuôi lớn, gia sư là thầy cô dạy kèm tại nhà, gia nhập là tham gia vào nhóm; da bò là làn da của con bò."
+        },
+        "en": {
+          "guide": [
+            "Read each compound word aloud and see if it sounds familiar.",
+            "«Gia súc» are cattle, buffalo and pigs kept at home; «da bò» is a cow's skin."
+          ],
+          "hint": "Only one word goes with «da»; the other three go with «gia».",
+          "answer": {
+            "text": "gia súc (livestock), gia sư (tutor), da bò (cowhide), gia nhập (join)",
+            "explanation": "«Gia súc» means farm animals, «gia sư» is a tutor who teaches at home, «gia nhập» means joining a group; «da bò» is a cow's skin."
+          }
         }
       },
       "feedback": {
@@ -638,9 +848,26 @@
           "Trâu, bò, lợn nuôi trong nhà gọi là gia súc hay da súc nhỉ?",
           "Làn da bọc ngoài con bò mới là “da bò”, sửa lại thẻ ấy nhé.",
           "Người vào một nhóm để cùng làm việc là “gia nhập”, thử đọc to xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four shiny cards! Hải Ly sets them out to dry in the sun.",
+            "Every card right, no mixing up «da» and «gia».",
+            "{name} puts words together better than Hải Ly puts logs together for a bridge."
+          ],
+          "wrong": [
+            "Buffalo, cows and pigs kept at home are «gia súc» or «da súc»?",
+            "The skin covering a cow is «da bò». Fix that card.",
+            "Joining a group to work together is «gia nhập». Try reading it aloud."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Five smudged clay cards",
+        "goTo": "Back to the clay bank, where the clay is soft and Hải Ly is shaping letter cards",
+        "prompt": "The clay is soft now! Hải Ly has shaped some letter cards, but her clumsy hand smudged the first half of each word: «da» or «gia»? Choose the right compound word for each card."
+      }
     },
     {
       "id": "tro-choi-dan-gian",
@@ -778,6 +1005,17 @@
         "answer": {
           "text": "xếp, sáo; vườn, thương, mương, lượn, hương, xương",
           "explanation": "Xếp hình viết x, thổi sáo viết s; vườn, thương, mương, lượn, hương, xương là những từ đúng chính tả của sáu câu còn lại."
+        },
+        "en": {
+          "guide": [
+            "Read each word aloud and listen: is it the sound you usually say?",
+            "Jasmine smells sweet: it has «hương»; fish have lots of tiny «xương»."
+          ],
+          "hint": "Just remember what the word means: where you grow vegetables is a «vườn», and loving someone is «thương».",
+          "answer": {
+            "text": "xếp (arrange), sáo (flute); vườn (garden), thương (love), mương (ditch), lượn (glide), hương (scent), xương (bone)",
+            "explanation": "Arranging a picture is written with x and blowing a flute with s; «vườn», «thương», «mương», «lượn», «hương» and «xương» are the correctly spelt words for the other six sentences."
+          }
         }
       },
       "feedback": {
@@ -790,9 +1028,25 @@
           "Xếp hình và thổi sáo viết hai chữ khác nhau đấy, thử lại nhé.",
           "Đọc to “Hải Ly rất thương các bạn”, tiếng nào có âm “ng” ở cuối?",
           "Hoa nhài tỏa hương, cá có xương, thử soát lại vần hai từ ấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All correct! Mèo Bùn rarely smiles, but now she is smiling softly.",
+            "Eight sentences, every letter right, and they read as smoothly as a flowing stream.",
+            "Hải Ly wants to play the flute with {name} right now!"
+          ],
+          "wrong": [
+            "Arranging pictures and blowing a flute are written with different letters. Try again.",
+            "Read aloud «Hải Ly rất thương các bạn»: which word ends in «ng»?",
+            "Jasmine gives off «hương», fish have «xương»: check the rhyme of those two words."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Eight sentences smudged by rain",
+        "prompt": "Mèo Bùn holds up eight short sentences with letters smudged by the rain. For the first two, choose s or x. For the other six, choose the right word with the rhyme «ươn» or «ương»."
+      }
     },
     {
       "id": "ta-do-choi-tren-gia",
@@ -856,6 +1110,17 @@
         "answer": {
           "text": "Ô tô có bốn bánh tròn, búp bê tóc dài mượt, xúc xắc có sáu mặt vuông, chong chóng có cánh xoay tít.",
           "explanation": "Mỗi nhãn nêu một đặc điểm dễ thấy của đồ chơi: hình dạng, bộ phận hoặc cách chuyển động."
+        },
+        "en": {
+          "guide": [
+            "Look at each toy on the shelf.",
+            "Which has wheels to roll on? Which spins when the wind blows?"
+          ],
+          "hint": "Each toy has something special that's easy to spot: wheels, hair, faces or blades.",
+          "answer": {
+            "text": "The car has four round wheels, the doll has long silky hair, the dice have six square faces, and the pinwheel has blades that spin fast.",
+            "explanation": "Each label gives an easy-to-see feature of a toy: its shape, a part, or how it moves."
+          }
         }
       },
       "feedback": {
@@ -868,9 +1133,26 @@
           "Búp bê có thứ gì dài và mượt nhỉ? Tìm nhãn hợp với bạn ấy.",
           "Món nào lăn đi được nhờ có bốn cái bánh?",
           "Xúc xắc có hình khối gì? Đếm thử số mặt xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every label on its toy! Đốm breathes out, and his nose stops being red.",
+            "Perfect! The toy shelf is as tidy as a real shop.",
+            "Đốm promises {name} the prettiest label to stick on a schoolbag."
+          ],
+          "wrong": [
+            "What is long and silky on a doll? Find the label that fits her.",
+            "Which toy rolls along on four wheels?",
+            "What shape are the dice? Count their faces."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "Spotted Boar's toy shelf",
+        "goTo": "Go over to the wooden toy rack, where Spotted Boar is struggling to label things",
+        "prompt": "Spotted Boar knocked over a whole box of labels with descriptions, and his pink nose turns red with embarrassment. Drag each description label to the right toy on the shelf."
+      }
     },
     {
       "id": "dau-phay-do-choi",
@@ -994,6 +1276,17 @@
         "answer": {
           "text": "quả cam, quả bưởi; rửa bát, lau bàn; nhảy dây, đá cầu, chơi cờ",
           "explanation": "Khi kể nhiều việc hay nhiều vật liền nhau, ta đặt dấu phẩy giữa chúng để đọc rõ từng thứ."
+        },
+        "en": {
+          "guide": [
+            "A comma separates things or actions that come one after another.",
+            "Read the sentence aloud and put a comma where you pause for breath."
+          ],
+          "hint": "Sentence c has three games in a row, so it needs two commas.",
+          "answer": {
+            "text": "quả cam (orange), quả bưởi (pomelo); rửa bát (wash up), lau bàn (wipe the table); nhảy dây (skipping), đá cầu (shuttlecock), chơi cờ (chess)",
+            "explanation": "When you list several actions or things in a row, put a comma between them so each one is clear to read."
+          }
         }
       },
       "feedback": {
@@ -1006,9 +1299,25 @@
           "Có một dấu phẩy đứng nhầm chỗ, câu đọc lên bị gãy làm đôi rồi.",
           "Dấu phẩy chỉ đứng giữa hai thứ hay hai việc liền nhau thôi.",
           "Đếm xem câu c có mấy trò chơi đứng liền nhau nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Đốm reads the three sentences again, pausing in the right places, not out of breath at all!",
+            "Every comma stands in the right place like a guard on duty.",
+            "Brilliant! {name} can lend Đốm a few commas."
+          ],
+          "wrong": [
+            "A comma is in the wrong place, and the sentence breaks in half when you read it.",
+            "A comma only goes between two things or two actions in a row.",
+            "Count how many games stand in a row in sentence c."
+          ]
+        }
       },
-      "objective": "dau-cau-dau-phay"
+      "objective": "dau-cau-dau-phay",
+      "en": {
+        "title": "Three sentences missing commas",
+        "prompt": "Đốm wrote three sentences boasting about his things, but forgot every comma, so you run out of breath reading them. At each gap, choose to put a comma or no mark at all."
+      }
     },
     {
       "id": "qua-sinh-nhat-chi",
@@ -1077,6 +1386,17 @@
         "answer": {
           "text": "Mèo Nơ gói tặng Đốm: mũ len, găng tay, khăn quàng và đôi tất ấm.",
           "explanation": "Dấu phẩy ngăn cách các món quà; món cuối đã có chữ “và” nối vào nên không đặt thêm dấu phẩy."
+        },
+        "en": {
+          "guide": [
+            "Count how many presents Bow Cat wraps.",
+            "Before the word «và» no comma is needed."
+          ],
+          "hint": "There are four presents, but only two commas are needed.",
+          "answer": {
+            "text": "Mèo Nơ wraps presents for Đốm: a woolly hat, gloves, a scarf and a pair of warm socks.",
+            "explanation": "Commas separate the presents; the last one already has «và» joining it, so no more comma is added."
+          }
         }
       },
       "feedback": {
@@ -1089,9 +1409,26 @@
           "Trước chữ “và” thì mình không đặt dấu phẩy đâu.",
           "Mũ len với găng tay là hai món khác nhau, cần ngăn cách chứ.",
           "Đếm lại số món quà rồi đặt dấu phẩy giữa chúng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The greeting card reads smoothly now! Đốm shouts: thank you, Bow Cat!",
+            "All correct! The word «và» already joins the last present, so no comma.",
+            "Four presents, each one clear. Đốm will be so happy to read it."
+          ],
+          "wrong": [
+            "Before the word «và» we don't put a comma.",
+            "A woolly hat and gloves are two different presents, so they need a separator.",
+            "Count the presents again and put a comma between them."
+          ]
+        }
       },
-      "objective": "dau-cau-dau-phay"
+      "objective": "dau-cau-dau-phay",
+      "en": {
+        "title": "The gifts in the greeting card",
+        "goTo": "Out to the rose bush by the stream, where Bow Cat is tying a bow on a present for a friend",
+        "prompt": "Bow Cat wraps presents for Đốm's birthday and reads the greeting card, but isn't sure where to pause. Choose where to put commas in the sentence listing the presents."
+      }
     },
     {
       "id": "chia-qua-dat-set",
@@ -1254,5 +1591,9 @@
       "chinh-ta": 1,
       "dau-cau": 1
     }
+  },
+  "en": {
+    "title": "Diligent Beaver Shapes Gifts by the Stream",
+    "summary": "The clay by the stream has gone rock hard, and Diligent Beaver nearly chipped a tooth trying to chew it. {name} finds water and banana leaves to soften the clay, reads the poem «Bé nhào đất» on the mossy slab, helps Spotted Boar describe the toys on his shelf, then shares the clay presents with the whole forest. Uncle Hai the Potter, Toe the Monkey, Bow Cat and Golden Carp are waiting along the stream to join in."
   }
 }

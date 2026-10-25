@@ -122,7 +122,11 @@
         "tv2-t03-kinh-voi-bao",
         "tv2-t03-canh-cay-kho",
         "tv2-t03-khom-co-dai"
-      ]
+      ],
+      "en": {
+        "title": "Find Tùng the Elephant's glasses",
+        "goTo": "Look for Tùng the Elephant's glasses along the pebble beach by the landing"
+      }
     },
     {
       "id": "khoi-dong",
@@ -204,6 +208,17 @@
         "answer": {
           "text": "Voi con hỏi mình thiếu gì để giỏi như bạn.",
           "explanation": "Gặp chim sẻ, sóc, khỉ, voi con đều hỏi cùng một ý: mình cần gì để được như các bạn."
+        },
+        "en": {
+          "guide": [
+            "Find the question the baby elephant asked when he met the sparrow.",
+            "The baby elephant asked all three friends the same thing."
+          ],
+          "hint": "The baby elephant wanted to know what he was missing compared with his friends.",
+          "answer": {
+            "text": "The baby elephant asked what he was missing to be as good as his friends.",
+            "explanation": "Meeting the sparrow, the squirrel and the monkey, the baby elephant asked the same thing each time: what do I need to be like you?"
+          }
         }
       },
       "feedback": {
@@ -216,9 +231,31 @@
           "Voi con không hỏi chuyện ăn uống hay nhà cửa đâu, đọc lại lời voi con nói với chim sẻ nhé.",
           "Voi con chỉ muốn biết mình cần thêm gì thôi, tìm câu hỏi lặp đi lặp lại trong bài xem.",
           "Câu hỏi nằm ngay sau chỗ voi con gặp chim sẻ, dò lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Youngest Elephant blushes on hearing it: she asked exactly like the baby elephant.",
+            "Spot on, that question comes up three times in the story!",
+            "Tùng the Elephant pushes his glasses up his trunk and praises you: {name} reads more carefully than I remember!"
+          ],
+          "wrong": [
+            "The baby elephant does not ask about food or homes, read again what he says to the sparrow.",
+            "The baby elephant only wants to know what else he needs, find the question repeated over and over in the story.",
+            "The question comes right after the baby elephant meets the sparrow, check there."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-to"
+      "objective": "doc-truyen-doc-to",
+      "en": {
+        "title": "Read the story of the baby elephant",
+        "goTo": "Follow the riverbank to the rock by the landing and read the story of the baby elephant",
+        "question": "What did the baby elephant ask the sparrow, the squirrel and the monkey?",
+        "choices": [
+          "What do you eat to be so good at it?",
+          "What do I need to be like you?",
+          "Where is your home?"
+        ]
+      }
     },
     {
       "id": "ba-loi-dap",
@@ -272,6 +309,17 @@
         "answer": {
           "text": "Chim sẻ: cần một đôi cánh. Sóc: cần một cái đuôi thật xinh. Khỉ: thấy cậu thế nào cũng được.",
           "explanation": "Chim sẻ nghĩ tới cánh, sóc nghĩ tới đuôi, còn khỉ thấy voi con thế nào cũng ổn."
+        },
+        "en": {
+          "guide": [
+            "The sparrow has wings and the squirrel has a bushy tail: each friend mentions what he has himself.",
+            "The monkey is the friend who does not ask the baby elephant to change."
+          ],
+          "hint": "The answer that mentions wings is the sparrow's, the one that mentions a tail is the squirrel's.",
+          "answer": {
+            "text": "Sparrow: you need a pair of wings. Squirrel: you need a really lovely tail. Monkey: you're fine whatever you are.",
+            "explanation": "The sparrow thinks of wings, the squirrel of a tail, and the monkey thinks the baby elephant is fine as he is."
+          }
         }
       },
       "feedback": {
@@ -284,9 +332,30 @@
           "Ai có đôi cánh nhỉ? Câu nói về cánh phải là của chim sẻ đấy.",
           "Sóc mới có chiếc đuôi bông xù, đưa chiếc lá nói về đuôi sang cho sóc nhé.",
           "Khỉ chẳng đòi voi con thêm gì cả, tìm câu dễ tính nhất xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three leaves are back with their owners! Youngest Elephant nods: every friend wants the baby elephant to be like himself.",
+            "Spot on! The sparrow shows off wings, the squirrel a tail, and the monkey is the most easy-going.",
+            "Young-Antler Deer jumps and bumps his head into a branch: {name} reads so fast!"
+          ],
+          "wrong": [
+            "Who has wings? The sentence about wings must be the sparrow's.",
+            "Only the squirrel has a bushy tail, hand the leaf about the tail to the squirrel.",
+            "The monkey asks the baby elephant for nothing, find the most easy-going sentence."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Three leaves with answers",
+        "prompt": "Youngest Elephant copied three answers onto three leaves, and the river's waves lapped the bank and washed them into a muddle. Which friend gave each answer to the baby elephant?",
+        "items": [
+          "I think you're fine whatever you are.",
+          "You need a pair of wings!",
+          "You need a really lovely tail!"
+        ]
+      }
     },
     {
       "id": "loi-khuyen-cua-ai",
@@ -323,6 +392,17 @@
         "answer": {
           "text": "Voi mẹ. Voi con thôi đeo đồ giả và giúp sóc tưới vườn.",
           "explanation": "Voi mẹ bật cười vì voi con đi vụng. Voi con gỡ lá và quả xuống, hút nước bằng vòi để tưới vườn dâu cho sóc."
+        },
+        "en": {
+          "guide": [
+            "Read the last part, from when the mother elephant runs out.",
+            "What did the baby elephant do after taking off the leaves and fruit?"
+          ],
+          "hint": "After listening to his mother, the baby elephant took off all the fakes and then helped the squirrel.",
+          "answer": {
+            "text": "His mother. The baby elephant stopped wearing fakes and helped the squirrel water the garden.",
+            "explanation": "The mother elephant burst out laughing because the baby elephant was walking so clumsily. The baby elephant took off the leaves and fruit and sucked up water with his trunk to water the squirrel's strawberry patch."
+          }
         }
       },
       "feedback": {
@@ -335,9 +415,31 @@
           "Đôi cánh lá làm voi con vấp ngã đấy, nhớ cảnh ở cổng nhà chứ?",
           "Chùm quả sau mông làm voi con đi lạch bạch, đâu có chạy nhanh hơn.",
           "Đọc lại đoạn voi con tưới vườn dâu ở cuối bài nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right! Listening to his mother, the baby elephant found what he does best.",
+            "Tùng the Elephant puffs out his chest proudly: family really does know best!",
+            "Exactly, {name} found the last part of the story."
+          ],
+          "wrong": [
+            "The leaf wings made the baby elephant trip, remember the scene at the gate?",
+            "The bunch of fruit behind made the baby elephant waddle, he did not run faster.",
+            "Read again the part where the baby elephant waters the strawberry patch at the end."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Whose advice does little Elephant follow?",
+        "goTo": "Run back to the fig tree by the landing, where Tùng the Elephant wants to hear the end of the story",
+        "prompt": "Tùng the Elephant pushes his glasses all the way up to his forehead and waits intently for the answer. In the end, whom did the baby elephant listen to, and what was the result?",
+        "choices": [
+          "The sparrow. The baby elephant had leaf wings and soared up to a branch.",
+          "The squirrel. The baby elephant hung a bunch of fruit as a tail and ran faster.",
+          "His mother. The baby elephant took off the leaves and fruit, then used his trunk to water the strawberry patch for the squirrel."
+        ]
+      }
     },
     {
       "id": "sung-rau-gia",
@@ -400,6 +502,17 @@
         "answer": {
           "text": "Lá chuối buộc ở lưng; chùm quả treo ở sau.",
           "explanation": "Trong bài, voi con làm cánh giả bằng tàu lá chuối và đuôi giả bằng một chùm quả."
+        },
+        "en": {
+          "guide": [
+            "What did the baby elephant tie to his back to look like bird wings?",
+            "What did the baby elephant hang behind him to look like the squirrel's tail?"
+          ],
+          "hint": "The fake wings are made of big leaves, the fake tail of something with lots of fruit.",
+          "answer": {
+            "text": "Banana leaves tied to his back; a bunch of fruit hanging behind him.",
+            "explanation": "In the passage, the baby elephant made fake wings from banana leaves and a fake tail from a bunch of fruit."
+          }
         }
       },
       "feedback": {
@@ -412,9 +525,26 @@
           "Bông hoa đỏ thì đẹp thật, nhưng voi con buộc thứ khác cơ.",
           "Đuôi giả mà làm bằng sỏi thì nặng trĩu mất! Đọc lại nhé.",
           "Cái gì treo lủng lẳng trên cây mà hái được? Thử chọn lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Filled in perfectly! Youngest Elephant takes the leaf off her back at once: flap!",
+            "Just as in the passage, wings of banana leaf and a tail of a bunch of fruit.",
+            "{name} remembers the story so well, Tùng the Elephant has to wipe his glasses and look again."
+          ],
+          "wrong": [
+            "A red flower is lovely, but the baby elephant tied something else.",
+            "A fake tail made of pebbles would be very heavy! Read it again.",
+            "What dangles from a tree and can be picked? Try choosing again."
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "Leaf wings and fruit tail",
+        "goTo": "Go to the mirror water landing, where Youngest Elephant is busily pulling branches off",
+        "prompt": "Youngest Elephant takes the banana leaves off her back, reading again the part where the baby elephant copies his friends and looks so much like her. Choose the words exactly as in the passage."
+      }
     },
     {
       "id": "hoat-dong-voi-em",
@@ -463,6 +593,17 @@
         "answer": {
           "text": "buộc lá lên lưng; treo chùm quả; phun nước lên luống dâu",
           "explanation": "Voi con buộc lá làm cánh, treo quả làm đuôi và phun nước tưới dâu. Chim sẻ vỗ cánh, sóc xoè đuôi."
+        },
+        "en": {
+          "guide": [
+            "Choose the main things the baby elephant did.",
+            "Flapping wings is what the sparrow does, spreading a tail is what the squirrel does."
+          ],
+          "hint": "Three phrases are right.",
+          "answer": {
+            "text": "tied leaves to his back; hung a bunch of fruit; sprayed water on the strawberry bed",
+            "explanation": "The baby elephant tied leaves on as wings, hung fruit as a tail and sprayed water to water the strawberries. The sparrow flaps wings and the squirrel spreads its tail."
+          }
         }
       },
       "feedback": {
@@ -475,9 +616,33 @@
           "Ai vỗ cánh bay vút lên cành nhỉ? Là chim sẻ chứ đâu phải voi con.",
           "Xoè đuôi bông xù là việc của sóc, bỏ chọn nó đi nhé.",
           "Còn thiếu một việc voi con làm ở cuối truyện, lúc giúp sóc đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three things the baby elephant did! Rice Pup wags his tail thumping on the rock.",
+            "All right, with no mix-up with what the sparrow or squirrel did.",
+            "Youngest Elephant raises her trunk: I tie leaves on just like that too!"
+          ],
+          "wrong": [
+            "Who flaps wings and soars up to a branch? The sparrow, not the baby elephant.",
+            "Spreading a bushy tail is the squirrel's job, unselect it.",
+            "One thing is still missing, from the end of the story when he helps the squirrel."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "What did the baby elephant do?",
+        "goTo": "Rice Pup calls {name} back to the rock by the landing for another riddle",
+        "prompt": "Rice Pup runs around the rock, plops down and tilts his head to quiz {name}: which phrases below tell what the baby elephant did?",
+        "choices": [
+          "tied leaves to his back",
+          "hung a bunch of fruit",
+          "flapped his wings",
+          "sprayed water on the strawberry bed",
+          "spread his tail"
+        ]
+      }
     },
     {
       "id": "khen-voi-ut",
@@ -637,6 +802,17 @@
         "answer": {
           "text": "Ngắm các bạn → hỏi ba người bạn → buộc lá, treo quả → phun nước giúp sóc",
           "explanation": "Bốn bức tranh đi đúng thứ tự bài đọc: ngắm bạn, đi hỏi, làm cánh và đuôi giả, rồi tưới vườn dâu."
+        },
+        "en": {
+          "guide": [
+            "The story begins with the baby elephant sitting and watching his friends.",
+            "The baby elephant asks his friends first, and only then ties leaves and hangs fruit."
+          ],
+          "hint": "The picture of the baby elephant spraying water is the last scene.",
+          "answer": {
+            "text": "Watch his friends → ask three friends → tie leaves, hang fruit → spray water to help the squirrel",
+            "explanation": "The four pictures follow the passage in order: watching his friends, asking around, making fake wings and tail, then watering the strawberry patch."
+          }
         }
       },
       "feedback": {
@@ -649,9 +825,32 @@
           "Voi con phải đi hỏi bạn trước mới biết buộc lá làm cánh chứ.",
           "Lúc voi con phun nước giúp sóc là cảnh cuối, đưa nó xuống cuối hàng.",
           "Câu chuyện mở đầu bên bờ suối với voi con đang thở dài, tìm bức tranh ấy trước nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four leaf pictures lie still in the right order, and the water has stopped rippling!",
+            "Perfect order! Youngest Elephant looks down and sees the whole story of the baby elephant.",
+            "Young-Antler Deer bends down to look, and this time bumps his head on nothing at all!"
+          ],
+          "wrong": [
+            "The baby elephant must ask his friends first, or he would not know to tie leaves for wings.",
+            "The baby elephant spraying water to help the squirrel is the last scene, move it to the end of the row.",
+            "The story opens beside the stream with the baby elephant sighing, find that picture first."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four pictures on the water",
+        "goTo": "Go down to the clear pool, where four pictures appear on the water",
+        "prompt": "Youngest Elephant floats four leaf pictures on the clear pool, and ripples on the water set the pictures drifting everywhere. Put the pictures in the order of the story.",
+        "items": [
+          "The baby elephant ties on leaves, hangs fruit and goes home",
+          "The baby elephant watches his friends and sighs",
+          "The baby elephant sprays water to help the squirrel",
+          "The baby elephant asks three friends"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-theo-tranh",
@@ -768,5 +967,9 @@
       "ke-chuyen": 2,
       "tu-ngu": 1
     }
+  },
+  "en": {
+    "title": "Youngest Elephant Sees Its Reflection at the River Dock",
+    "summary": "Youngest Elephant, the smallest little sister of Tùng the Elephant, has tied leaves to her back to make wings like a bird, while Tùng has lost his glasses and cannot see her clearly. {name} searches for the glasses along the river dock, reads the story of a baby elephant who asked everyone around, and helps Youngest see that being herself is something special."
   }
 }

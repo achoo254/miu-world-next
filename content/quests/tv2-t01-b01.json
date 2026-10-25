@@ -123,7 +123,11 @@
         "tv2-t01-giay-sau-xanh",
         "tv2-t01-cap-la-sau-xanh",
         "tv2-t01-hop-but-hat-de"
-      ]
+      ],
+      "en": {
+        "title": "Pick up things Peppercorn Rabbit dropped",
+        "goTo": "Pick up the things Peppercorn Rabbit dropped along the dirt road in front of the village gate"
+      }
     },
     {
       "id": "chuan-bi-khai-giang",
@@ -184,6 +188,17 @@
         "answer": {
           "text": "Na mong đến trường nên muốn đi thật sớm.",
           "explanation": "Na dậy từ lúc gà gáy, ăn vội rồi đứng chờ dù mẹ bảo còn sớm: em rất mong tới trường."
+        },
+        "en": {
+          "guide": [
+            "Read paragraph two again, the one about Na's morning.",
+            "What did her mum say when she saw Na waiting at the door?"
+          ],
+          "hint": "Her mum said it was still early, so it was not mum hurrying Na out.",
+          "answer": {
+            "text": "Na was longing to go to school, so she wanted to set off very early.",
+            "explanation": "Na got up when the rooster crowed, ate in a rush and waited at the door even though her mum said it was early: she was really looking forward to school."
+          }
         }
       },
       "feedback": {
@@ -196,9 +211,31 @@
           "Mẹ bảo còn sớm lắm cơ mà, đâu phải mẹ giục. Đọc lại đoạn hai nhé.",
           "Na đã ăn vội bát cháo rồi đấy, không phải quên ăn sáng. Thử lại xem.",
           "Vì sao một cô bé lại đứng đợi từ lúc gà gáy nhỉ? Thỏ Hạt Tiêu đoán cùng {name} đây."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Spot on! Na was so keen on school that she waited at the door. Rice Pup wags his tail like mad.",
+            "Peppercorn Rabbit nods so hard his ears wobble: {name} understands the story so quickly!",
+            "Well done! Na was just as fluttery as Peppercorn Rabbit this morning."
+          ],
+          "wrong": [
+            "Her mum said it was still very early, she was not hurrying her. Read paragraph two again.",
+            "Na had already gulped down her bowl of porridge, she did not forget breakfast. Try again.",
+            "Why would a little girl wait since the rooster crowed? Peppercorn Rabbit is guessing along with {name}."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-to"
+      "objective": "doc-truyen-doc-to",
+      "en": {
+        "title": "Read the passage on the wooden board",
+        "goTo": "Follow the arrow to the wooden sign at the village entrance and read the passage",
+        "question": "Why was Na already waiting at the door with her school bag when it was still early?",
+        "choices": [
+          "Because Na was longing to go to school and wanted to set off very early.",
+          "Because her mum hurried her to leave right away.",
+          "Because Na had forgotten to eat breakfast."
+        ]
+      }
     },
     {
       "id": "chon-chi-tiet",
@@ -242,6 +279,17 @@
         "answer": {
           "text": "gà vừa gáy đã ngồi bật dậy; đeo cặp đứng chờ ở cửa; ăn vội bát cháo",
           "explanation": "Nhặt sáp màu là việc tốt Na làm cho em bé trên đường, không phải dấu hiệu mong đến trường."
+        },
+        "en": {
+          "guide": [
+            "Look for what Na did at home that morning.",
+            "Which things show Na was in a hurry and eager to go?"
+          ],
+          "hint": "Three things are right; the other one Na did on the way to school to help a little child.",
+          "answer": {
+            "text": "sat bolt upright as soon as the rooster crowed; waited at the door with her school bag on; gulped down a bowl of porridge",
+            "explanation": "Picking up the crayons was a kind thing Na did for the little child on the road, not a sign that she was looking forward to school."
+          }
         }
       },
       "feedback": {
@@ -254,9 +302,31 @@
           "Còn thiếu hoặc thừa một việc đấy, đếm lại trên đầu ngón tay nhé.",
           "Nhặt sáp màu là Na giúp em bé trên đường, đâu phải lúc còn ở nhà.",
           "Na làm gì ngay khi gà vừa gáy? Tìm lại câu ấy trong đoạn hai xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three excited things! Peppercorn Rabbit thumps his back foot.",
+            "Rice Pup is so pleased he barks twice: {name} picked all three right!",
+            "Spot on, not one too many and not one too few."
+          ],
+          "wrong": [
+            "One is missing or one is too many, count them on your fingers.",
+            "Picking up the crayons was Na helping the little child on the road, not at home.",
+            "What did Na do the moment the rooster crowed? Find that sentence in paragraph two."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Find the excited details",
+        "prompt": "Peppercorn Rabbit whispers: Na is even more excited than me! Which things show that Na was really looking forward to school?",
+        "choices": [
+          "sat bolt upright as soon as the rooster crowed",
+          "waited at the door with her school bag on",
+          "gulped down a bowl of porridge",
+          "picked up the crayons one by one"
+        ]
+      }
     },
     {
       "id": "doan-va-tranh",
@@ -335,6 +405,17 @@
         "answer": {
           "text": "Đoạn 1 – tranh 3; đoạn 2 – tranh 2; đoạn 3 – tranh 1",
           "explanation": "Mỗi đoạn diễn ra vào một lúc: tối hôm trước, sáng hôm sau ở nhà, rồi trên đường tới trường."
+        },
+        "en": {
+          "guide": [
+            "Paragraph 1 is about the evening, paragraph 2 about the morning at home, paragraph 3 about the way to school.",
+            "Find the picture that shows that time and place."
+          ],
+          "hint": "The picture with a lamp and an open school bag is the evening.",
+          "answer": {
+            "text": "Paragraph 1 – picture 3; paragraph 2 – picture 2; paragraph 3 – picture 1",
+            "explanation": "Each paragraph happens at a different time: the evening before, the next morning at home, then on the way to school."
+          }
         }
       },
       "feedback": {
@@ -347,9 +428,31 @@
           "Đoạn nào kể chuyện buổi tối, khi Na còn ngồi xếp cặp nhỉ?",
           "Một bức tranh đang đi lạc sang đoạn khác, y như chiếc giày của Thỏ Hạt Tiêu sáng nay.",
           "Tranh nào có những thỏi sáp màu lăn trên cỏ? Đó là đoạn cuối đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three pictures are back in the right place! Rice Pup happily runs a lap round the banyan tree.",
+            "Na's story appears in the right order, from the evening before to the school gate.",
+            "{name} reads pictures even better than Rice Pup sniffs!"
+          ],
+          "wrong": [
+            "Which paragraph is about the evening, when Na was still packing her bag?",
+            "One picture has wandered off to the wrong paragraph, just like Peppercorn Rabbit's shoe this morning.",
+            "Which picture has crayons rolling on the grass? That is the last paragraph."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Match pictures to paragraphs",
+        "goTo": "Rice Pup is carrying three pictures to the banyan tree at the village gate, come and help",
+        "prompt": "The wind blew three pictures off the wooden board. Rice Pup fetched them all back but does not know where to hang them. Which picture shows which paragraph of the passage?",
+        "items": [
+          "Picture 1",
+          "Picture 2",
+          "Picture 3"
+        ]
+      }
     },
     {
       "id": "lon-hon-mot-chut",
@@ -386,6 +489,17 @@
         "answer": {
           "text": "Na thấy mình như lớn hơn, cao hơn.",
           "explanation": "Vừa giúp được em bé, lại được vào năm học mới, Na thấy tự hào, như mình đã lớn hơn."
+        },
+        "en": {
+          "guide": [
+            "Look again at the closing sentence of the passage.",
+            "How did Na stand when she joined the line?"
+          ],
+          "hint": "Na puffed out her chest and felt different from every other day.",
+          "answer": {
+            "text": "Na felt as if she had grown bigger and taller.",
+            "explanation": "She had helped a little child and was starting a new school year, so Na felt proud, as if she had grown up a little."
+          }
         }
       },
       "feedback": {
@@ -398,9 +512,31 @@
           "Na ưỡn ngực đứng vào hàng, đâu có sợ tiếng trống.",
           "Thử đọc lại câu cuối cùng, chỗ Na đứng vào hàng xem.",
           "Na dậy sớm nhưng vui lắm, chẳng buồn ngủ chút nào đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, Na felt a little taller!",
+            "Peppercorn Rabbit stretches up on his back legs: I want to grow taller like Na!",
+            "Exactly, the last sentence says that feeling clearly."
+          ],
+          "wrong": [
+            "Na puffed out her chest in line, she was not afraid of the drum.",
+            "Try reading the very last sentence, where Na joins the line.",
+            "Na got up early but she was happy, not sleepy at all."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "How the child changes",
+        "goTo": "Go back to the wooden sign at the village entrance and look again at the end of the passage",
+        "question": "When she stood in line and heard the drum, how did Na feel?",
+        "choices": [
+          "She felt a little taller.",
+          "She felt scared of the school drum.",
+          "She felt sleepy from getting up so early."
+        ]
+      }
     },
     {
       "id": "xep-buoi-sang",
@@ -446,6 +582,17 @@
         "answer": {
           "text": "Xếp cặp → ngồi bật dậy → nhặt sáp màu → đứng vào hàng",
           "explanation": "Bài đọc đi từ tối hôm trước, sang sáng hôm sau ở nhà, ra đường đến trường rồi vào hàng."
+        },
+        "en": {
+          "guide": [
+            "Which sentence is about the evening before?",
+            "In the morning Na got up at home first, and only then met the little child on the road."
+          ],
+          "hint": "The sentence where Na stands in line comes at the end of the passage.",
+          "answer": {
+            "text": "Pack the bag → sit bolt upright → pick up the crayons → stand in line",
+            "explanation": "The passage goes from the evening before, to the next morning at home, to the road to school and then the line."
+          }
         }
       },
       "feedback": {
@@ -458,9 +605,32 @@
           "Na phải xếp cặp từ tối hôm trước, rồi sáng ra mới dậy chứ.",
           "Câu đứng vào hàng là câu kết, đặt nó xuống cuối hàng nhé.",
           "Na gặp em bé trên đường, tức là sau khi đã ra khỏi nhà đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four slips line up in a row, and Uncle Khải leans on his broom and laughs: no more sweeping!",
+            "In the right order! Na's day zips by like a film.",
+            "Rice Pup sits up straight like a pupil, his tail thumping the ground: every sentence is right!"
+          ],
+          "wrong": [
+            "Na packs her bag the evening before, and only gets up the next morning.",
+            "The line sentence is the closing one, put it at the end.",
+            "Na meets the little child on the road, which is after she has left home."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Put the child's morning in order",
+        "goTo": "The wind swirls four slips of paper to the bamboo hedge, where Uncle Khải is gathering them",
+        "prompt": "Peppercorn Rabbit copied four sentences from the passage onto four slips of paper, and the wind mixed them all up. Put the sentences in the order of the passage.",
+        "items": [
+          "Na bent down to pick up each crayon and put them back in the box.",
+          "Na packed her books into the sunshine-yellow school bag.",
+          "Na stood in line and felt a little taller.",
+          "The rooster had just crowed when Na sat bolt upright."
+        ]
+      }
     },
     {
       "id": "tu-moi-cua-vet",
@@ -541,6 +711,17 @@
         "answer": {
           "text": "…nằm ngay ngắn trong hộp; …Na vẫn nhún nhảy…; Em bé lí nhí cảm ơn…",
           "explanation": "Ba từ đều được giải nghĩa dưới bài đọc, và mỗi từ nằm đúng một câu của bài."
+        },
+        "en": {
+          "guide": [
+            "«Ngay ngắn» means in a straight, tidy row; «nhún nhảy» means bouncing on your feet with joy; «lí nhí» means speaking too quietly.",
+            "Read the whole sentence out loud to see which word fits best."
+          ],
+          "hint": "The little child was shy, so she spoke in a tiny voice.",
+          "answer": {
+            "text": "…nằm «ngay ngắn» trong hộp; …Na vẫn «nhún nhảy»…; Em bé «lí nhí» cảm ơn…",
+            "explanation": "All three words are explained under the passage, and each one sits in exactly one sentence of it."
+          }
         }
       },
       "feedback": {
@@ -553,9 +734,26 @@
           "Na xếp bút cẩn thận lắm, \"lộn xộn\" thì ngược hẳn rồi.",
           "Na vui quá nên chẳng chịu đứng yên đâu, thử từ khác xem.",
           "Em bé còn ngượng, nói to hay nói nhỏ nhỉ? Thử lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three words are home! Rice Pup is so happy he rolls on the grass by the village gate.",
+            "Filled in as neatly as a teacher marking homework, not a hair out of place.",
+            "{name} is really good, next time Rice Pup will have to sniff out harder words to stump you."
+          ],
+          "wrong": [
+            "Na lined up her pencils very carefully, so «lộn xộn» (messy) is the opposite.",
+            "Na was too happy to stand still, try another word.",
+            "The little child was shy: loud or quiet? Try again."
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "Three words Rice Pup sniffed out",
+        "goTo": "Rice Pup is barking under the banyan tree at the village gate: found them! Come and see",
+        "prompt": "Rice Pup nosed all through the passage and sniffed out three tricky words, hidden like three bones: «ngay ngắn», «nhún nhảy», «lí nhí». Put each word back in its right place in the passage."
+      }
     },
     {
       "id": "tu-chi-lop-mot",
@@ -592,6 +790,17 @@
         "answer": {
           "text": "Từ \"lí nhí\".",
           "explanation": "Bài đọc viết: em bé lí nhí cảm ơn. Nói lí nhí là nói nhỏ quá, vì em còn ngại."
+        },
+        "en": {
+          "guide": [
+            "Find the sentence about the little child at the end of paragraph three.",
+            "In what kind of voice did the child thank Na?"
+          ],
+          "hint": "Someone who is shy usually speaks very quietly.",
+          "answer": {
+            "text": "Từ \"lí nhí\".",
+            "explanation": "The passage says the child «lí nhí» thanked Na. Speaking «lí nhí» means speaking too quietly, because she was shy."
+          }
         }
       },
       "feedback": {
@@ -604,9 +813,31 @@
           "Ríu rít là nói vui, liến thoắng, đâu phải đang ngại.",
           "Oang oang là nói to lắm, em bé còn ngượng mà.",
           "Tìm lại câu em bé cảm ơn Na rồi chọn lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, the little child was shy so she could only thank her in a tiny voice!",
+            "Peppercorn Rabbit whispers, copying: thank... you... is that «lí nhí» enough?",
+            "You picked the word that shows the little one is shy!"
+          ],
+          "wrong": [
+            "«Ríu rít» means chattering happily, not shy at all.",
+            "«Oang oang» means very loud, but the little child was shy.",
+            "Find the sentence where the child thanks Na and choose again."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "Choose the word showing the little one is shy",
+        "goTo": "Back at the village gate, Peppercorn Rabbit points at some little ones hiding behind their mums",
+        "prompt": "At the village gate, Peppercorn Rabbit points at some tiny children hiding behind their mums, as shy as the little child in the passage. In the passage, which word shows that the child who dropped the crayons was shy?",
+        "choices": [
+          "ríu rít",
+          "oang oang",
+          "lí nhí"
+        ]
+      }
     },
     {
       "id": "chip-rut-re",
@@ -784,5 +1015,9 @@
       "doc-hieu": 2,
       "tu-ngu": 1
     }
+  },
+  "en": {
+    "title": "Peppercorn Rabbit Welcomes the New School Year",
+    "summary": "Opening day: Peppercorn Rabbit hops to the village gate in a rush and drops a shoe and a school bag. {name} picks up the things, reads the story of Na and her sunshine-yellow school bag, meets Uncle Khải sweeping banyan leaves, Tíu the Chick and Jade Rabbit Auntie, then practises saying hello with Peppercorn Rabbit."
   }
 }

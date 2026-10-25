@@ -93,7 +93,11 @@
         "tt-ve-ngay-hoi",
         "tt-bong-bay-xanh",
         "tt-hop-qua-do"
-      ]
+      ],
+      "en": {
+        "title": "Pick up 3 decorations",
+        "goTo": "Search the flower beds around the fountain: a ticket, a balloon, a gift box"
+      }
     },
     {
       "id": "doc-thong-bao",
@@ -131,6 +135,18 @@
         "answer": {
           "text": "Ở chòi chờ",
           "explanation": "Thông báo viết: \"Ba giờ chiều: các tổ đội xếp hàng ở chòi chờ.\""
+        },
+        "en": {
+          "guide": [
+            "Read the first line after the title of the notice.",
+            "Find the words \"line up\".",
+            "See where that happens."
+          ],
+          "hint": "The line with the earliest time is about the teams.",
+          "answer": {
+            "text": "By the waiting hut",
+            "explanation": "The notice says: \"3 pm: the teams line up at the waiting hut.\""
+          }
         }
       },
       "feedback": {
@@ -143,6 +159,29 @@
           "{name} dò lại dòng có chữ \"xếp hàng\" nhé.",
           "Cửa hàng bán đèn lồng cơ, còn tổ đội thì ở chỗ khác.",
           "Đọc chậm dòng đầu của thông báo thêm lần nữa xem."
+        ],
+        "en": {
+          "right": [
+            "That's right, the waiting hut is where the teams gather!",
+            "{name} reads the notice as fast as a junior ambassador.",
+            "Spot on! At 3 pm, off to the waiting hut to line up."
+          ],
+          "wrong": [
+            "{name}, look again at the line with the words \"line up\".",
+            "It's the shop that sells lanterns, the teams are somewhere else.",
+            "Read the first line of the notice slowly once more."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the festival notice",
+        "goTo": "Take the things to the quest board with the yellow exclamation mark",
+        "text": "GET-TOGETHER FESTIVAL NOTICE\n3 pm: the teams line up at the waiting hut.\n4 pm: the shop sells lanterns to anyone who wants to light a gate.\n5 pm: everyone lights up the row of teleport gates together.\nAmbassador Cat",
+        "question": "According to the notice, where do the teams line up?",
+        "choices": [
+          "At the shop",
+          "At the waiting hut",
+          "At the row of teleport gates"
         ]
       }
     },
@@ -191,6 +230,18 @@
         "answer": {
           "text": "12, 38, 45, 70",
           "explanation": "1 chục < 3 chục < 4 chục < 7 chục, nên 12 < 38 < 45 < 70."
+        },
+        "en": {
+          "guide": [
+            "Find the smallest shirt number.",
+            "Check the tens digits: if one number has fewer tens, it is the smaller one.",
+            "Then put the other numbers in order."
+          ],
+          "hint": "The number 12 has 1 ten, so it is the smallest.",
+          "answer": {
+            "text": "12, 38, 45, 70",
+            "explanation": "1 ten < 3 tens < 4 tens < 7 tens, so 12 < 38 < 45 < 70."
+          }
         }
       },
       "feedback": {
@@ -203,6 +254,29 @@
           "Thỏ Bông nghiêng tai: {name} so hàng chục trước nhé.",
           "Có bạn đứng nhầm chỗ, thử tìm số bé nhất lại xem.",
           "Số có ít chục hơn thì đứng lên trước nè."
+        ],
+        "en": {
+          "right": [
+            "The whole team stands in a perfect line by shirt number, and Fluffy Bunny claps happily!",
+            "From twelve to seventy, nobody is out of place!",
+            "The line is neat, the team is ready!"
+          ],
+          "wrong": [
+            "Fluffy Bunny tilts her ears: compare the tens first, {name}.",
+            "Somebody is in the wrong place, try finding the smallest number again.",
+            "The number with fewer tens stands in front."
+          ]
+        }
+      },
+      "en": {
+        "title": "Line up for the teams",
+        "goTo": "Go to the green-roofed teams' waiting hut, where Captain Fluffy Bunny is calling",
+        "prompt": "The team members stand in order of shirt number, from smallest to biggest. Help Captain Fluffy Bunny line up these four shirt numbers.",
+        "items": [
+          "45",
+          "12",
+          "70",
+          "38"
         ]
       }
     },
@@ -261,6 +335,18 @@
         "answer": {
           "text": "Đủ 50 xu, ví dụ 20 + 20 + 10",
           "explanation": "20 + 20 + 10 = 50. Cũng có thể trả 20 + 10 + 10 + 5 + 5 = 50."
+        },
+        "en": {
+          "guide": [
+            "Put the bigger coins down first.",
+            "Each time, add up the coins on the tray.",
+            "Stop when the tray holds exactly 50 coins."
+          ],
+          "hint": "20 + 20 = 40, so you need 10 more coins.",
+          "answer": {
+            "text": "Exactly 50 coins, for example 20 + 20 + 10",
+            "explanation": "20 + 20 + 10 = 50. You could also pay 20 + 10 + 10 + 5 + 5 = 50."
+          }
         }
       },
       "feedback": {
@@ -273,7 +359,24 @@
           "Khay chưa đúng năm mươi xu, {name} đếm lại tổng nhé.",
           "Thừa hay thiếu rồi nè, cộng dồn từng đồng xem.",
           "Thử bắt đầu từ hai đồng hai mươi xu nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly fifty coins, and Dimple Fox hands {name} the lantern!",
+            "Coins paid, lantern ready, and it shines brightly!",
+            "Great adding up, the tray has no more and no less!"
+          ],
+          "wrong": [
+            "The tray isn't fifty coins yet, {name}, count the total again.",
+            "Too many or too few, add them up coin by coin.",
+            "Try starting with the two twenty-coin pieces."
+          ]
+        }
+      },
+      "en": {
+        "title": "Buy lanterns to light the gate",
+        "goTo": "Stop at the striped-roof shop, where Dimple Fox Saleswoman has lanterns",
+        "prompt": "One lantern costs 50 coins. Drag coins onto the tray to make exactly 50 coins."
       }
     },
     {
@@ -341,6 +444,18 @@
         "answer": {
           "text": "6",
           "explanation": "10 − 4 = 6. Còn 6 cổng chưa sáng."
+        },
+        "en": {
+          "guide": [
+            "There are 10 gates altogether.",
+            "Take away the 4 gates that are already lit.",
+            "Work out 10 − 4."
+          ],
+          "hint": "Count back 4 steps from 10: 9, 8, 7, 6.",
+          "answer": {
+            "text": "6",
+            "explanation": "10 − 4 = 6. There are 6 gates not lit yet."
+          }
         }
       },
       "feedback": {
@@ -353,7 +468,23 @@
           "Chú Tròn gãi đầu: cổng đã sáng thì không cần thắp nữa đâu.",
           "Bớt đi số cổng đã sáng, {name} thử lại nhé.",
           "Đếm lùi từ mười, bốn bước thôi nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six gates light up at once, and the square cheers!",
+            "Ten take away four leaves six, {name} worked it out perfectly!",
+            "The whole row of gates glows in seven colours!"
+          ],
+          "wrong": [
+            "Uncle Tròn scratches his head: the gates already lit don't need lighting again.",
+            "Take away the gates already lit, try again, {name}.",
+            "Count back from ten, only four steps."
+          ]
+        }
+      },
+      "en": {
+        "title": "Light up the row of gates",
+        "question": "The row has 10 teleport gates and 4 are already lit. How many gates are not lit yet? (10 − 4 = ?)"
       }
     },
     {
@@ -390,5 +521,9 @@
       "phep-cong": 1,
       "phep-tru": 1
     }
+  },
+  "en": {
+    "title": "Town Centre – Chapter 1: The Get-Together Festival",
+    "summary": "The square is about to open the Get-Together Festival, but the row of teleport gates isn't fully lit yet. {name} and Ambassador Cat gather decorations, line up the teams, buy lanterns and light the gates."
   }
 }

@@ -41,12 +41,24 @@
       "kind": "dialogue",
       "target": "trum-th-chim-sau",
       "lines": [
-        { "speaker": "Chim Sâu Lớp Trưởng", "text": "{name} ơi, Voi Tính Nhẩm ngồi chắn giữa sân chơi rồi! Chú ấy bảo chưa ai thắng trận đố toán thì Hội khỏe của trường chưa được khai mạc." },
-        { "speaker": "Chim Sâu Lớp Trưởng", "text": "Mà muốn vào sân còn phải mang đủ đồ thi đấu nữa. Lớp mình trông cả vào cậu đấy!" }
+        {
+          "speaker": "Chim Sâu Lớp Trưởng",
+          "text": "{name} ơi, Voi Tính Nhẩm ngồi chắn giữa sân chơi rồi! Chú ấy bảo chưa ai thắng trận đố toán thì Hội khỏe của trường chưa được khai mạc."
+        },
+        {
+          "speaker": "Chim Sâu Lớp Trưởng",
+          "text": "Mà muốn vào sân còn phải mang đủ đồ thi đấu nữa. Lớp mình trông cả vào cậu đấy!"
+        }
       ],
       "choices": [
-        { "text": "Đồ thi đấu để ở đâu thế?", "reply": "Hôm qua các bạn chơi xong để quanh cầu trượt, cậu ra đó tìm nhé." },
-        { "text": "Tớ nhận lời, lớp mình sẽ thắng!", "reply": "Cả lớp tin cậu! Ra quanh cầu trượt tìm đồ thi đấu trước đã." }
+        {
+          "text": "Đồ thi đấu để ở đâu thế?",
+          "reply": "Hôm qua các bạn chơi xong để quanh cầu trượt, cậu ra đó tìm nhé."
+        },
+        {
+          "text": "Tớ nhận lời, lớp mình sẽ thắng!",
+          "reply": "Cả lớp tin cậu! Ra quanh cầu trượt tìm đồ thi đấu trước đã."
+        }
       ],
       "en": {
         "title": "Class monitor Chim Sâu calls",
@@ -93,7 +105,26 @@
           "clue": "Mềm, dài và đỏ thắm, căng ngang vạch đích chờ người chạy nhanh nhất chạm vào.",
           "target": "trum-th-ruy-bang"
         }
-      ]
+      ],
+      "en": {
+        "title": "Find the competition gear",
+        "goTo": "Go around the slide and find three pieces of competition gear",
+        "prompt": "Sports Day needs three things. Read each clue carefully and find the right ones:",
+        "items": [
+          {
+            "name": "The football",
+            "clue": "Perfectly round, stitched from black and white patches; wherever it rolls, everyone chases after it."
+          },
+          {
+            "name": "The badminton racket",
+            "clue": "A long handle and a taut round net face for hitting the shuttlecock over the net."
+          },
+          {
+            "name": "The finish-line ribbon",
+            "clue": "Soft, long and bright red, stretched across the finish line waiting for the fastest runner to touch it."
+          }
+        ]
+      }
     },
     {
       "id": "doc-chuong-trinh-hoi",
@@ -105,22 +136,78 @@
       "text": "CHƯƠNG TRÌNH HỘI KHỎE CỦA TRƯỜNG\n8 giờ: chạy tiếp sức quanh sân trường.\n9 giờ: nhảy dây ở góc trò chơi.\n10 giờ: đấu trí với Voi Tính Nhẩm giữa sân chơi.\nAi mang đủ bóng, vợt và ruy băng thì được vào sân.",
       "question": "Theo bảng, cuộc đấu trí với Voi Tính Nhẩm bắt đầu lúc mấy giờ?",
       "choices": [
-        { "id": "a", "text": "8 giờ" },
-        { "id": "b", "text": "9 giờ" },
-        { "id": "c", "text": "10 giờ" }
+        {
+          "id": "a",
+          "text": "8 giờ"
+        },
+        {
+          "id": "b",
+          "text": "9 giờ"
+        },
+        {
+          "id": "c",
+          "text": "10 giờ"
+        }
       ],
-      "answer": { "choice": "c" },
+      "answer": {
+        "choice": "c"
+      },
       "support": {
-        "guide": ["Tìm dòng có tên Voi Tính Nhẩm.", "Đọc con số đứng đầu dòng đó."],
+        "guide": [
+          "Tìm dòng có tên Voi Tính Nhẩm.",
+          "Đọc con số đứng đầu dòng đó."
+        ],
         "hint": "Mỗi dòng bắt đầu bằng một giờ, rồi mới tới việc làm.",
         "answer": {
           "text": "Lúc 10 giờ",
           "explanation": "Bảng ghi: 10 giờ, đấu trí với Voi Tính Nhẩm giữa sân chơi."
+        },
+        "en": {
+          "guide": [
+            "Find the line with Mental Math Elephant's name.",
+            "Read the number at the start of that line."
+          ],
+          "hint": "Each line starts with a time, then comes the activity.",
+          "answer": {
+            "text": "At 10 o'clock",
+            "explanation": "The board says: 10 o'clock, battle of wits with Mental Math Elephant in the middle of the playground."
+          }
         }
       },
       "feedback": {
-        "right": ["Mười giờ đúng, mình còn kịp khởi động kĩ!", "{name} dò đúng dòng có tên Voi Tính Nhẩm rồi.", "Chuẩn giờ! Chim Sâu Lớp Trưởng ghi ngay vào sổ."],
-        "wrong": ["Giờ ấy là của chạy tiếp sức hoặc nhảy dây đấy, đọc lại nhé.", "Tìm dòng nhắc tới Voi Tính Nhẩm xem nào {name}.", "Con số đứng trước chữ «đấu trí» là mấy nhỉ?"]
+        "right": [
+          "Mười giờ đúng, mình còn kịp khởi động kĩ!",
+          "{name} dò đúng dòng có tên Voi Tính Nhẩm rồi.",
+          "Chuẩn giờ! Chim Sâu Lớp Trưởng ghi ngay vào sổ."
+        ],
+        "wrong": [
+          "Giờ ấy là của chạy tiếp sức hoặc nhảy dây đấy, đọc lại nhé.",
+          "Tìm dòng nhắc tới Voi Tính Nhẩm xem nào {name}.",
+          "Con số đứng trước chữ «đấu trí» là mấy nhỉ?"
+        ],
+        "en": {
+          "right": [
+            "Ten o'clock exactly, there's still time for a good warm-up!",
+            "{name} found the line with Mental Math Elephant's name.",
+            "Right on time! Class Monitor Sparrow writes it in the notebook at once."
+          ],
+          "wrong": [
+            "That time is for the relay race or the skipping, read it again.",
+            "Find the line that mentions Mental Math Elephant, {name}.",
+            "What is the number in front of the words «battle of wits»?"
+          ]
+        }
+      },
+      "en": {
+        "title": "The Sports Festival programme",
+        "goTo": "Take the gear to the programme board hanging on the wooden fence",
+        "text": "SCHOOL SPORTS DAY PROGRAMME\n8 o'clock: relay race around the schoolyard.\n9 o'clock: skipping in the games corner.\n10 o'clock: battle of wits with Mental Math Elephant in the middle of the playground.\nAnyone who brings the ball, the racket and the ribbon may enter the field.",
+        "question": "According to the board, what time does the battle of wits with Mental Math Elephant start?",
+        "choices": [
+          "8 o'clock",
+          "9 o'clock",
+          "10 o'clock"
+        ]
       }
     },
     {
@@ -134,22 +221,79 @@
       "skill": "logic",
       "prompt": "Hươu Trọng Tài xếp ba bạn đứng từ thấp đến cao. Thỏ cao hơn Sóc. Sóc cao hơn Chuột. Bạn nào đứng đầu hàng?",
       "choices": [
-        { "id": "tho", "text": "Thỏ" },
-        { "id": "soc", "text": "Sóc" },
-        { "id": "chuot", "text": "Chuột" }
+        {
+          "id": "tho",
+          "text": "Thỏ"
+        },
+        {
+          "id": "soc",
+          "text": "Sóc"
+        },
+        {
+          "id": "chuot",
+          "text": "Chuột"
+        }
       ],
-      "answer": { "choice": "chuot" },
+      "answer": {
+        "choice": "chuot"
+      },
       "support": {
-        "guide": ["Hàng xếp từ thấp đến cao, nên bạn thấp nhất đứng đầu.", "Thỏ cao hơn Sóc, vậy Thỏ không thấp nhất.", "Sóc lại cao hơn Chuột, vậy ai thấp nhất?"],
+        "guide": [
+          "Hàng xếp từ thấp đến cao, nên bạn thấp nhất đứng đầu.",
+          "Thỏ cao hơn Sóc, vậy Thỏ không thấp nhất.",
+          "Sóc lại cao hơn Chuột, vậy ai thấp nhất?"
+        ],
         "hint": "Tìm bạn không cao hơn ai cả.",
         "answer": {
           "text": "Chuột đứng đầu hàng",
           "explanation": "Thỏ cao hơn Sóc, Sóc cao hơn Chuột, nên Chuột thấp nhất và đứng đầu hàng từ thấp đến cao."
+        },
+        "en": {
+          "guide": [
+            "The line goes from shortest to tallest, so the shortest friend stands first.",
+            "Rabbit is taller than Squirrel, so Rabbit is not the shortest.",
+            "Squirrel is taller than Mouse, so who is the shortest?"
+          ],
+          "hint": "Look for the friend who isn't taller than anyone.",
+          "answer": {
+            "text": "Mouse stands first in the line",
+            "explanation": "Rabbit is taller than Squirrel and Squirrel is taller than Mouse, so Mouse is the shortest and stands first in the line from shortest to tallest."
+          }
         }
       },
       "feedback": {
-        "right": ["Tuýt! Hàng tiếp sức đã thẳng tắp rồi!", "{name} so chiều cao nhanh hơn cả Hươu Trọng Tài.", "Chuột nhỏ nhất đứng đầu, đúng luật rồi!"],
-        "wrong": ["Bạn ấy còn cao hơn một bạn khác đấy, thử lại nhé.", "Tìm bạn thấp nhất trong ba bạn xem nào {name}.", "Đọc lại hai câu so sánh, ai luôn đứng sau chữ «hơn»?"]
+        "right": [
+          "Tuýt! Hàng tiếp sức đã thẳng tắp rồi!",
+          "{name} so chiều cao nhanh hơn cả Hươu Trọng Tài.",
+          "Chuột nhỏ nhất đứng đầu, đúng luật rồi!"
+        ],
+        "wrong": [
+          "Bạn ấy còn cao hơn một bạn khác đấy, thử lại nhé.",
+          "Tìm bạn thấp nhất trong ba bạn xem nào {name}.",
+          "Đọc lại hai câu so sánh, ai luôn đứng sau chữ «hơn»?"
+        ],
+        "en": {
+          "right": [
+            "Tweet! The relay line is dead straight now!",
+            "{name} compared heights faster than Referee Giraffe.",
+            "Mouse is smallest and stands first, just as the rules say!"
+          ],
+          "wrong": [
+            "That friend is taller than another one, try again.",
+            "Find the shortest of the three, {name}.",
+            "Read the two comparisons again, who always comes after the word «taller than»?"
+          ]
+        }
+      },
+      "en": {
+        "title": "Line up for the relay race",
+        "goTo": "Go to the sandpit in the middle of the yard, where Referee Giraffe is lining up the teams",
+        "prompt": "Referee Giraffe lines up three friends from shortest to tallest. Rabbit is taller than Squirrel. Squirrel is taller than Mouse. Who stands first in the line?",
+        "choices": [
+          "Rabbit",
+          "Squirrel",
+          "Mouse"
+        ]
       }
     },
     {
@@ -214,11 +358,22 @@
           "move": "fling",
           "prompt": "Số 58 gồm mấy chục và mấy đơn vị?",
           "choices": [
-            { "id": "a", "text": "5 chục và 8 đơn vị" },
-            { "id": "b", "text": "8 chục và 5 đơn vị" },
-            { "id": "c", "text": "58 chục" }
+            {
+              "id": "a",
+              "text": "5 chục và 8 đơn vị"
+            },
+            {
+              "id": "b",
+              "text": "8 chục và 5 đơn vị"
+            },
+            {
+              "id": "c",
+              "text": "58 chục"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Chữ số bên trái của 58 ở hàng chục, chữ số bên phải ở hàng đơn vị.",
@@ -236,10 +391,18 @@
               ],
               "hint": "58 is read «năm mươi tám» (fifty-eight): the «fifty» tells you the tens.",
               "answer": {
-                "text": "5 tens and 8 ones (5 chục và 8 đơn vị)",
+                "text": "5 tens and 8 ones",
                 "explanation": "58 = 50 + 8, so 5 tens and 8 ones; 8 tens and 5 ones would be 85."
               }
             }
+          },
+          "en": {
+            "prompt": "How many tens and how many ones are in the number 58?",
+            "choices": [
+              "5 tens and 8 ones",
+              "8 tens and 5 ones",
+              "58 tens"
+            ]
           }
         },
         {
@@ -248,11 +411,22 @@
           "move": "orbs",
           "prompt": "Trên tia số, số liền sau của 69 là số nào?",
           "choices": [
-            { "id": "a", "text": "68" },
-            { "id": "b", "text": "70" },
-            { "id": "c", "text": "79" }
+            {
+              "id": "a",
+              "text": "68"
+            },
+            {
+              "id": "b",
+              "text": "70"
+            },
+            {
+              "id": "c",
+              "text": "79"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Muốn tìm số liền sau, nhảy thêm đúng một vạch về bên phải từ 69 trên tia số.",
@@ -274,6 +448,14 @@
                 "explanation": "69 + 1 = 70: nine ones plus one make a ten, so 6 tens become 7; 68 comes before, and 79 is 10 more."
               }
             }
+          },
+          "en": {
+            "prompt": "On the number line, which number comes straight after 69?",
+            "choices": [
+              "68",
+              "70",
+              "79"
+            ]
           }
         },
         {
@@ -282,11 +464,22 @@
           "move": "gem",
           "prompt": "Trong phép cộng 32 + 15 = 47, số 47 được gọi là gì?",
           "choices": [
-            { "id": "a", "text": "Số hạng" },
-            { "id": "b", "text": "Tổng" },
-            { "id": "c", "text": "Hiệu" }
+            {
+              "id": "a",
+              "text": "Số hạng"
+            },
+            {
+              "id": "b",
+              "text": "Tổng"
+            },
+            {
+              "id": "c",
+              "text": "Hiệu"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Dấu + giữa 32 và 15 cho biết đây là một phép cộng.",
@@ -304,10 +497,18 @@
               ],
               "hint": "«Hiệu» only names the result of a subtraction, so rule it out first.",
               "answer": {
-                "text": "Tổng (the sum)",
+                "text": "Sum",
                 "explanation": "In 32 + 15 = 47, 32 and 15 are «số hạng» (addends) and 47 is «tổng» (the sum); «hiệu» is a difference."
               }
             }
+          },
+          "en": {
+            "prompt": "In the addition 32 + 15 = 47, what is the number 47 called?",
+            "choices": [
+              "Addend",
+              "Sum",
+              "Difference"
+            ]
           }
         },
         {
@@ -316,11 +517,22 @@
           "move": "charge",
           "prompt": "Hiệu của 86 và 34 là bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "52" },
-            { "id": "b", "text": "42" },
-            { "id": "c", "text": "120" }
+            {
+              "id": "a",
+              "text": "52"
+            },
+            {
+              "id": "b",
+              "text": "42"
+            },
+            {
+              "id": "c",
+              "text": "120"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Hiệu của hai số là kết quả khi lấy số lớn trừ số bé: 86 − 34.",
@@ -342,6 +554,14 @@
                 "explanation": "86 − 34 = 52 because 6 − 4 = 2 and 8 − 3 = 5; 120 adds them, and 42 slips in the tens."
               }
             }
+          },
+          "en": {
+            "prompt": "What is the difference between 86 and 34?",
+            "choices": [
+              "52",
+              "42",
+              "120"
+            ]
           }
         },
         {
@@ -350,11 +570,22 @@
           "move": "fling",
           "prompt": "Đội Thỏ ghi 27 điểm, đội Sóc ghi 23 điểm. Đội Thỏ nhiều hơn đội Sóc bao nhiêu điểm?",
           "choices": [
-            { "id": "a", "text": "4 điểm" },
-            { "id": "b", "text": "5 điểm" },
-            { "id": "c", "text": "50 điểm" }
+            {
+              "id": "a",
+              "text": "4 điểm"
+            },
+            {
+              "id": "b",
+              "text": "5 điểm"
+            },
+            {
+              "id": "c",
+              "text": "50 điểm"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "So xem đội Thỏ hơn đội Sóc bao nhiêu thì lấy 27 trừ 23.",
@@ -376,6 +607,14 @@
                 "explanation": "27 − 23 = 4, so Rabbit's team is 4 points ahead; 50 adds both teams' points."
               }
             }
+          },
+          "en": {
+            "prompt": "Team Rabbit scored 27 points and Team Squirrel scored 23 points. How many more points did Team Rabbit score than Team Squirrel?",
+            "choices": [
+              "4 points",
+              "5 points",
+              "50 points"
+            ]
           }
         },
         {
@@ -384,11 +623,22 @@
           "move": "orbs",
           "prompt": "Ba chiếc áo số 67, 76 và 69. Áo nào mang số lớn nhất?",
           "choices": [
-            { "id": "a", "text": "Áo số 67" },
-            { "id": "b", "text": "Áo số 76" },
-            { "id": "c", "text": "Áo số 69" }
+            {
+              "id": "a",
+              "text": "Áo số 67"
+            },
+            {
+              "id": "b",
+              "text": "Áo số 76"
+            },
+            {
+              "id": "c",
+              "text": "Áo số 69"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "So hàng chục của ba số áo trước: 6, 7 và 6.",
@@ -406,10 +656,18 @@
               ],
               "hint": "67 and 69 both have 6 tens; the other shirt has more tens than either.",
               "answer": {
-                "text": "Shirt number 76 (Áo số 76)",
+                "text": "Shirt number 76",
                 "explanation": "76 has 7 tens, more than the 6 tens of 67 and 69, so shirt 76 is biggest; 69 only beats 67."
               }
             }
+          },
+          "en": {
+            "prompt": "Three shirts are numbered 67, 76 and 69. Which shirt has the biggest number?",
+            "choices": [
+              "Shirt number 67",
+              "Shirt number 76",
+              "Shirt number 69"
+            ]
           }
         },
         {
@@ -418,11 +676,22 @@
           "move": "gem",
           "prompt": "Câu cuối cùng: 41 + 37 bằng bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "68" },
-            { "id": "b", "text": "77" },
-            { "id": "c", "text": "78" }
+            {
+              "id": "a",
+              "text": "68"
+            },
+            {
+              "id": "b",
+              "text": "77"
+            },
+            {
+              "id": "c",
+              "text": "78"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Cộng hàng đơn vị trước: 1 + 7.",
@@ -444,9 +713,24 @@
                 "explanation": "41 + 37 = 78 since 1 + 7 = 8 and 4 + 3 = 7; 68 gets the tens wrong, 77 the ones."
               }
             }
+          },
+          "en": {
+            "prompt": "The very last question: what is 41 + 37?",
+            "choices": [
+              "68",
+              "77",
+              "78"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Battle of wits with Mental Math Elephant",
+        "goTo": "Go to the middle of the playground, where Mental Math Elephant is waving his trunk",
+        "bossName": "Mental Math Elephant",
+        "introDialogue": "Thump thump! I have seven maths riddles, and every right answer makes me step back once. After seven steps, the playground belongs to Sports Day!",
+        "winDialogue": "I bow to you! {name} does mental sums as quick as lightning, so let's invite everyone onto the field for the opening!"
+      }
     },
     {
       "id": "ngoi-sao-thi-dua",
@@ -474,6 +758,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "so-den-100": 1, "thanh-phan-phep-tinh": 1, "hon-kem": 1, "logic": 1 }
+    "skillXp": {
+      "so-den-100": 1,
+      "thanh-phan-phep-tinh": 1,
+      "hon-kem": 1,
+      "logic": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Mental Math Elephant",
+    "summary": "The school Sports Day only opens once someone beats Mental Math Elephant, the giant elephant who loves maths puzzles, on the playground. {name} gathers the competition gear, reads the festival programme, lines up for the relay race, then takes on seven questions in a battle of wits."
   }
 }

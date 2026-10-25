@@ -120,7 +120,11 @@
         "tv2-t12-khoi-do",
         "tv2-t12-khoi-vang",
         "tv2-t12-banh-xe-le-go"
-      ]
+      ],
+      "en": {
+        "title": "Pick up building blocks rolled into the yard",
+        "goTo": "Pick up the building blocks that rolled into the yard in front of the workshop"
+      }
     },
     {
       "id": "do-choi-cua-em",
@@ -181,6 +185,17 @@
         "answer": {
           "text": "Quen miệng gọi là món đồ để ghép hình.",
           "explanation": "Ngay đầu bài, Tí Hon nói có những bạn quen miệng gọi mình là đồ chơi ghép hình."
+        },
+        "en": {
+          "guide": [
+            "Read the first paragraph, where Tí Hon greets everyone.",
+            "Find the sentence about what friends are used to calling Tí Hon."
+          ],
+          "hint": "This toy is put together from lots of small pieces.",
+          "answer": {
+            "text": "Friends are used to calling it a toy for fitting pieces together.",
+            "explanation": "Right at the start, Tí Hon says that some friends are used to calling it a fit-together toy."
+          }
         }
       },
       "feedback": {
@@ -193,9 +208,31 @@
           "Tí Hon cứng đơ như gạch, đâu mềm như đồ chơi nhồi bông.",
           "Bài đọc không nhắc gì đến pin hay chạy bằng điện cả. Đọc lại đoạn đầu nhé.",
           "Tìm câu có chữ “quen miệng” ở đầu bài xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Tí Hon bows: a fit-together toy, delighted to meet you!",
+            "Đốm slaps his thigh: no wonder my stacks never fit snugly together!",
+            "Right from the first paragraph, {name} reads fast and surely."
+          ],
+          "wrong": [
+            "Tí Hon is stiff as a brick, not soft like a stuffed toy.",
+            "The text says nothing about batteries or electricity. Read the first paragraph again.",
+            "Find the sentence with the words “quen miệng” at the start of the text."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "Tí Hon introduces himself",
+        "goTo": "Go to the assembly table, where Tí Hon has climbed up to stand in the middle, ready to tell its story",
+        "question": "Besides “building blocks”, what do many children also like to call Tí Hon?",
+        "choices": [
+          "a stuffed toy",
+          "a toy for fitting pieces together",
+          "a battery-powered toy"
+        ]
+      }
     },
     {
       "id": "cach-choi-le-go",
@@ -231,6 +268,17 @@
         "answer": {
           "text": "Dựng thành nhà, cầu hay tàu tuỳ ý, chán thì tháo ra dựng món mới.",
           "explanation": "Đoạn ba kể cách chơi: ấn các khối vào nhau cho khít để dựng đồ vật, rồi tháo ra khi muốn làm cái khác."
+        },
+        "en": {
+          "guide": [
+            "Read again where Tí Hon says playing with it is very easy.",
+            "What do the friends do with the small blocks, and what do they do when bored?"
+          ],
+          "hint": "Press them together tight, and when you have finished, take them apart to make something else.",
+          "answer": {
+            "text": "Build a house, bridge or ship as you like, and when bored take it apart to build something new.",
+            "explanation": "The third paragraph tells how to play: press the blocks together snugly to build things, then take them apart when you want to make something else."
+          }
         }
       },
       "feedback": {
@@ -243,9 +291,30 @@
           "Đẩy cho đổ là cách chơi riêng của Đốm thôi, bài đọc nói khác cơ.",
           "Khối xếp hình đâu phải quả bóng mà ném vào rổ, đọc lại đoạn ba nhé.",
           "Tìm câu có chữ “ấn các khối vào nhau” trong bài xem nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Build and take apart, take apart and build, never boring! Tí Hon bounces with joy.",
+            "Đốm nods: so I do not need to push them over, which saves picking them up.",
+            "Right way to play: a bridge today, a ship tomorrow."
+          ],
+          "wrong": [
+            "Pushing them over is only Đốm's own way of playing, the text says something else.",
+            "Blocks are not balls to throw into a basket, read the third paragraph again.",
+            "Find the words “ấn các khối vào nhau” in the text."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "How do you play with building blocks?",
+        "prompt": "Đốm raises a hand: I know, playing with blocks means stacking them very high and letting them fall! Tí Hon shakes his head hard. According to the text, what is the right way to play?",
+        "choices": [
+          "Stack the blocks very high and push them over with a crash.",
+          "Press the blocks snugly together to build houses, bridges and ships, and take them apart to make something else when you get bored.",
+          "Throw the blocks into a basket one by one like a ball game."
+        ]
+      }
     },
     {
       "id": "loi-ich-le-go",
@@ -294,6 +363,17 @@
         "answer": {
           "text": "Ba điều: nghĩ ra ý tưởng hay, làm việc chăm chỉ và biết chờ đợi.",
           "explanation": "Đoạn cuối viết rõ ba điều có được khi chơi: nhiều ý tưởng hay, sự chăm chỉ và biết chờ đợi cho đến khi xong việc."
+        },
+        "en": {
+          "guide": [
+            "Read the last paragraph, where Tí Hon invites friends to start playing.",
+            "Find the sentence that begins “Chơi cùng tớ”."
+          ],
+          "hint": "There are three things, and the last is what Đốm needs most.",
+          "answer": {
+            "text": "Three things: coming up with good ideas, working hard and learning to wait.",
+            "explanation": "The last paragraph names three things you gain: many good ideas, hard work, and learning to wait until the job is done."
+          }
         }
       },
       "feedback": {
@@ -306,9 +386,33 @@
           "Ngồi một chỗ dựng nhà thì đâu giúp mình chạy nhanh hơn nhỉ?",
           "Bài đọc không nhắc gì đến chuyện ngủ ngon cả.",
           "Còn thiếu một điều, nằm ngay sau chữ “biết” trong câu cuối đoạn đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three precious things! Đốm whispers: waiting is what I need most.",
+            "Tí Hon holds up three plastic fingers: ideas, hard work, waiting!",
+            "Not one choice too many, {name} read the last paragraph carefully."
+          ],
+          "wrong": [
+            "Building a house while sitting still would not make you run faster, would it?",
+            "The text says nothing about sleeping better.",
+            "One is still missing, right after the word “biết” in the last sentence of the paragraph."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "What do you get from building?",
+        "goTo": "Out to the stone step behind the workshop, where Bin the Fox is building a very tall tower",
+        "prompt": "Tí Hon puts hands on hips: playing with me is not just fun, you get lots of things! Choose all the things the text says you gain by playing with the blocks.",
+        "choices": [
+          "come up with lots of good ideas",
+          "run faster",
+          "work hard",
+          "sleep better",
+          "learn to wait"
+        ]
+      }
     },
     {
       "id": "noi-dung-tung-doan",
@@ -372,6 +476,17 @@
         "answer": {
           "text": "Đoạn 1 – chào hỏi, tên gọi; đoạn 2 – tả hình dáng; đoạn 3 – cách dựng, tháo; đoạn 4 – điều có ích",
           "explanation": "Đoạn 1 chào và nêu tên, đoạn 2 tả những khối bé xíu nhiều màu, đoạn 3 kể cách ấn khít rồi tháo ra, đoạn 4 nói về điều các bạn có được khi chơi."
+        },
+        "en": {
+          "guide": [
+            "Read each paragraph in turn and ask: what is this paragraph about?",
+            "One paragraph greets, one describes the shape, one tells how to play and one says what is useful."
+          ],
+          "hint": "The first paragraph has the greeting “Chào các bạn, tớ là…”.",
+          "answer": {
+            "text": "Paragraph 1 – greeting, name; paragraph 2 – shape; paragraph 3 – building and taking apart; paragraph 4 – what is useful",
+            "explanation": "Paragraph 1 greets and names the toy, paragraph 2 describes the tiny colourful blocks, paragraph 3 tells how to press them snug and take them apart, paragraph 4 says what you gain from playing."
+          }
         }
       },
       "feedback": {
@@ -384,9 +499,32 @@
           "Đoạn đầu có lời chào, nó nói về điều gì nhỉ?",
           "Điều có ích khi chơi nằm ở đoạn cuối cùng cơ.",
           "Đoạn nói về các khối bé xíu, nhiều màu là đoạn tả hình dáng đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four pieces fit with a click, like real building blocks!",
+            "Tí Hon yells with joy: my introduction is whole again!",
+            "Đốm learns a trick: to know what a paragraph says, read its opening sentence carefully."
+          ],
+          "wrong": [
+            "The first paragraph has a greeting, so what is it about?",
+            "What is useful about playing comes in the very last paragraph.",
+            "The paragraph about tiny, colourful blocks is the one describing their shape."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "What does each paragraph say?",
+        "goTo": "Back to the assembly table, where Tí Hon is tearing his introduction into four pieces",
+        "prompt": "Tí Hon tears his introduction into four pieces to quiz Đốm, who puts them together all wrong. Help him, {name}! Which of the points below does each paragraph of the text talk about?",
+        "items": [
+          "Tells how to build and take apart the blocks",
+          "Says what playing with blocks is good for",
+          "Greets everyone and gives its name",
+          "Describes the blocks' shape and colour"
+        ]
+      }
     },
     {
       "id": "tu-dac-diem-le-go",
@@ -439,6 +577,17 @@
         "answer": {
           "text": "Từ chỉ đặc điểm: bé xíu, rực rỡ sắc màu, vuông vức, tí hon.",
           "explanation": "Đoạn hai tả các khối bé xíu, nhiều màu, vuông vức và có chú người tí hon; ấn vào nhau, tháo ra là hoạt động."
+        },
+        "en": {
+          "guide": [
+            "A describing word tells how the blocks look: big or small, what colour, what shape.",
+            "Pressing together and taking apart are things we do, not how the blocks look."
+          ],
+          "hint": "Reread the second paragraph: bé xíu, rực rỡ sắc màu, vuông vức, a tí hon figure.",
+          "answer": {
+            "text": "bé xíu, rực rỡ sắc màu, vuông vức, tí hon",
+            "explanation": "The second paragraph describes blocks that are tiny, colourful and square, with a little figure; “ấn vào nhau” and “tháo ra” are actions."
+          }
         }
       },
       "feedback": {
@@ -451,9 +600,33 @@
           "Ấn vào nhau là việc mình làm, chưa tả được khối trông thế nào.",
           "Tháo ra là hoạt động, bỏ nó ra khỏi giỏ đặc điểm nhé.",
           "Còn sót một từ tả các nhân vật nhỏ xíu trong đoạn hai đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tí Hon blushes: called square, how shy!",
+            "Four describing words and no action mixed in, well done.",
+            "Đốm quickly writes on the board: bé xíu, rực rỡ, vuông vức, tí hon."
+          ],
+          "wrong": [
+            "“Ấn vào nhau” is something we do, it does not tell how a block looks.",
+            "“Tháo ra” is an action, take it out of the basket of describing words.",
+            "One word that describes the tiny characters in the second paragraph is still missing."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "What do building blocks look like?",
+        "prompt": "Tí Hon spins round to show off: describe me, describe me! Find the words in the text that describe the building blocks.",
+        "choices": [
+          "bé xíu",
+          "tháo ra",
+          "rực rỡ sắc màu",
+          "vuông vức",
+          "ấn vào nhau",
+          "tí hon"
+        ]
+      }
     },
     {
       "id": "ngang-hay-nghieng",
@@ -564,6 +737,17 @@
         "answer": {
           "text": "ngồi – nghe; ngày – nghỉ; ngủ – nghĩ",
           "explanation": "Sau ô trống là ô, a, u thì viết ng (ngồi, ngày, ngủ); là e, i, ĩ thì viết ngh (nghe, nghỉ, nghĩ)."
+        },
+        "en": {
+          "guide": [
+            "Look at the letter right after the gap.",
+            "Before e, ê, i write ngh; before a, o, ô, ơ, u, ư write ng."
+          ],
+          "hint": "Ngồi, ngày, ngủ take ng; nghe, nghỉ, nghĩ take ngh.",
+          "answer": {
+            "text": "ngồi (sit) – nghe (listen); ngày (day) – nghỉ (rest); ngủ (sleep) – nghĩ (think)",
+            "explanation": "If the letter after the gap is ô, a or u, write ng (ngồi, ngày, ngủ); if it is e, i or ĩ, write ngh (nghe, nghỉ, nghĩ)."
+          }
         }
       },
       "feedback": {
@@ -576,9 +760,26 @@
           "Trước chữ e và i phải dùng ngh đấy, nhìn lại tiếng đứng ngay sau ô trống nhé.",
           "Trước chữ a, u thì viết ng thôi, không cần thêm h.",
           "Đọc to “ngày nghỉ”: tiếng nào đứng trước i thì mới có h."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three signs with all their letters! Đốm hangs them on the workshop door, just a tiny bit crooked.",
+            "Ng and ngh are not mixed up anywhere, wonderful!",
+            "Tí Hon reads each sentence aloud, every word clear and round."
+          ],
+          "wrong": [
+            "Before e and i you need ngh, look at the word right after the gap.",
+            "Before a and u just write ng, no extra h.",
+            "Say “ngày nghỉ” out loud: only the word before i has the h."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Three sentences missing letters ng",
+        "goTo": "Run to the bamboo fence gate, where Uncle Sáu the Carpenter is holding up three boards Đốm carved",
+        "prompt": "Đốm carved three sentences on three boards for workshop signs, but his hands were so clumsy that he missed the first letters. Choose ng or ngh for each gap."
+      }
     },
     {
       "id": "do-choi-trong-tranh",
@@ -642,6 +843,17 @@
         "answer": {
           "text": "Đồ chơi trong tranh: ngựa gỗ, xe cứu hỏa, tàu hỏa, con quay, trống lắc, xe kéo.",
           "explanation": "Trên kệ có ngựa gỗ, xe cứu hỏa, tàu hỏa, trống lắc; dưới sàn có xe kéo và con quay. Chổi quét nhà, nồi cơm điện là đồ dùng trong nhà."
+        },
+        "en": {
+          "guide": [
+            "Look at each shelf of toys, then look down at the floor.",
+            "Choose only things used for playing."
+          ],
+          "hint": "There are six toys; nobody takes a broom or a rice cooker out to play.",
+          "answer": {
+            "text": "wooden horse, fire engine, train, spinning top, rattle drum, pull-cart",
+            "explanation": "The shelf holds a wooden horse, fire engine, train and rattle drum; the floor has a pull-cart and a spinning top. A broom and rice cooker are household items."
+          }
         }
       },
       "feedback": {
@@ -654,9 +866,36 @@
           "Chổi quét nhà dùng để quét nhà, đâu phải để chơi.",
           "Ai lại chơi trò ôm nồi cơm điện bao giờ, chọn lại nhé.",
           "Còn sót một món đồ chơi nằm dưới sàn, người ta kéo nó đi đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six toys are in! Đốm promises to try making each one from wood.",
+            "Tí Hon beams: they are all friends of mine!",
+            "Not one household item chosen by mistake, {name} knows toys so well."
+          ],
+          "wrong": [
+            "A broom is for sweeping the floor, not for playing.",
+            "Who ever plays hugging a rice cooker? Choose again.",
+            "One toy is still left on the floor, the kind people pull along."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "The two children's toy shelf",
+        "goTo": "Back into the wood workshop, where Đốm is admiring a picture hanging on the wall",
+        "prompt": "Tí Hon points to the picture in the workshop: a wooden shelf piled full, and on the floor a pull-cart and a spinning top. Đốm drools at the sight. Which of the items below are toys drawn in the picture?",
+        "choices": [
+          "ngựa gỗ",
+          "chổi quét nhà",
+          "xe cứu hỏa",
+          "tàu hỏa",
+          "nồi cơm điện",
+          "con quay",
+          "trống lắc",
+          "xe kéo"
+        ]
+      }
     },
     {
       "id": "cau-ve-le-go",
@@ -701,6 +940,17 @@
         "answer": {
           "text": "Những khối xếp hình bé xíu và rực rỡ sắc màu.",
           "explanation": "Câu có tên đồ chơi (khối xếp hình) và hai từ chỉ đặc điểm (bé xíu, rực rỡ sắc màu) nối với nhau bằng “và”."
+        },
+        "en": {
+          "guide": [
+            "The card with the capital letter starts the sentence, the card with the full stop ends it.",
+            "Name the toy first, then describe it."
+          ],
+          "hint": "The word “và” joins the two describing words.",
+          "answer": {
+            "text": "The building blocks are tiny and bursting with colour.",
+            "explanation": "The sentence has the toy's name (khối xếp hình) and two describing words (bé xíu, rực rỡ sắc màu) joined by “và”."
+          }
         }
       },
       "feedback": {
@@ -713,9 +963,31 @@
           "Thẻ viết hoa “Những khối xếp hình” phải đứng ở đầu câu.",
           "Chữ “và” đứng giữa hai đặc điểm, đừng để nó lạc ra cuối.",
           "Dấu chấm là dấu kết, đưa thẻ “rực rỡ sắc màu.” về cuối hàng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Đốm's first ever sentence is quite good! He is so pleased he bumps over a chair.",
+            "The toy's name comes first and the description after, perfect.",
+            "Tí Hon is praised so much that the studs on his head glow red."
+          ],
+          "wrong": [
+            "The capitalised card “Những khối xếp hình” must go at the start.",
+            "The word “và” goes between the two describing words, don't let it stray to the end.",
+            "The full stop closes the sentence, move the card “rực rỡ sắc màu.” to the end."
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "Đốm's first sentence",
+        "prompt": "Đốm wants to make a really good sentence about Tí Hon, using both the toy's name and the describing words just found. Put the four cards together into a sentence for Đốm.",
+        "items": [
+          "tiny",
+          "bursting with colour.",
+          "The building blocks are",
+          "and"
+        ]
+      }
     },
     {
       "id": "cau-gau-bong",
@@ -756,6 +1028,17 @@
         "answer": {
           "text": "Chú gấu bông rất đáng yêu.",
           "explanation": "Câu nêu đặc điểm của chú gấu bông: rất đáng yêu."
+        },
+        "en": {
+          "guide": [
+            "The sentence starts with the toy's name, with a capital first letter.",
+            "The word “rất” goes right before the describing word."
+          ],
+          "hint": "Who is how: the teddy bear… how?",
+          "answer": {
+            "text": "The teddy bear is very lovable.",
+            "explanation": "The sentence gives the teddy bear's quality: very lovable."
+          }
         }
       },
       "feedback": {
@@ -768,9 +1051,31 @@
           "“Rất” phải đứng trước “đáng yêu” thì câu mới thuận tai.",
           "Thẻ viết hoa là thẻ mở đầu, đặt “Chú gấu bông” lên trước.",
           "Dấu chấm nằm cuối thẻ “đáng yêu.” nên thẻ ấy đứng cuối câu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The teddy bear is very lovable, and Đốm nuzzles it for one more hug.",
+            "The three cards line up and the sentence sounds soft as cotton.",
+            "Tí Hon is jealous: why does nobody call me lovable?"
+          ],
+          "wrong": [
+            "“Rất” must come before “đáng yêu” for the sentence to sound right.",
+            "The capitalised card opens the sentence, put “Chú gấu bông” first.",
+            "The full stop is at the end of “đáng yêu.” so that card goes last."
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "The workshop's teddy bear",
+        "goTo": "Out to the pine tree at the corner of the yard, where Chestnut Bear wants to see the new teddy bear",
+        "prompt": "Đốm has just sewn a teddy bear and will not let go of it. The three word cards on the table are all jumbled. Put them together into a sentence about the teddy bear for Đốm.",
+        "items": [
+          "đáng yêu.",
+          "Chú gấu bông",
+          "rất"
+        ]
+      }
     },
     {
       "id": "chung-suc-trung-thu",
@@ -867,6 +1172,17 @@
         "answer": {
           "text": "chú Cuội, trăng rằm, trò chơi, chiếc đèn",
           "explanation": "Trăng và trò viết tr; chú, chơi và chiếc viết ch."
+        },
+        "en": {
+          "guide": [
+            "Read the whole word aloud and think what it means.",
+            "On a full-moon night there is Lady Moon and Uncle Cuội under the banyan; children carry lanterns and play games."
+          ],
+          "hint": "The full moon is perfectly round; the hand-held thing carried on full-moon night is a lantern.",
+          "answer": {
+            "text": "chú Cuội (Uncle Cuội), trăng rằm (full moon), trò chơi (game), chiếc đèn (lantern)",
+            "explanation": "Trăng and trò take tr; chú, chơi and chiếc take ch."
+          }
         }
       },
       "feedback": {
@@ -879,9 +1195,26 @@
           "Chú Cuội ngồi gốc đa, tiếng đầu của “chú” viết ch đấy.",
           "Mặt trăng tròn vành vạnh trên trời viết với tr, đọc to lại xem.",
           "“Chiếc đèn” và “chơi” cùng bắt đầu bằng ch, thử đổi lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five bright signs! Đốm hangs them beside the star lantern.",
+            "Tr and ch are not mixed up anywhere, {name} has eyes as sharp as an owl.",
+            "Tí Hon cheers: our workshop will be the prettiest in the forest on festival night!"
+          ],
+          "wrong": [
+            "Uncle Cuội sits under the banyan, and the first sound of “chú” is written ch.",
+            "The perfectly round moon in the sky takes tr, say it aloud again.",
+            "“Chiếc đèn” and “chơi” both begin with ch, try swapping them."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Signs hung on Mid-Autumn night",
+        "goTo": "Cross to the lantern-hung banyan tree, where Moon Rabbit is fumbling with the lantern string",
+        "prompt": "The festival night is near, and Đốm made five lantern signs, but his chisel slipped and he lost the first letters. Choose ch or tr for each gap."
+      }
     },
     {
       "id": "cau-le-go-sac-so",
@@ -922,6 +1255,17 @@
         "answer": {
           "text": "Ngôi nhà xếp hình có mái đỏ rực.",
           "explanation": "Câu nói ngôi nhà xếp hình có phần mái, và mái ấy mang màu đỏ rực."
+        },
+        "en": {
+          "guide": [
+            "Open the sentence with the name of the thing just built.",
+            "The words “đỏ rực” describe the colour of the roof and come at the end."
+          ],
+          "hint": "The house… has what… and looks how?",
+          "answer": {
+            "text": "The block house has a roof glowing red.",
+            "explanation": "The sentence says the block house has a roof, and the roof is bright red."
+          }
         }
       },
       "feedback": {
@@ -934,9 +1278,31 @@
           "Tên ngôi nhà phải đứng đầu, thẻ ấy có chữ viết hoa đấy.",
           "Thẻ có dấu chấm là thẻ kết câu nhé.",
           "Nói nhà có mái trước, rồi mới tả mái ấy đỏ rực."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The whole block family lines up and applauds with a clatter!",
+            "A sentence showing off a roof as bright as sunset, lovely.",
+            "Đốm reads it over and over, and this time knocks nothing over."
+          ],
+          "wrong": [
+            "The house's name must come first; that card has the capital letter.",
+            "The card with the full stop closes the sentence.",
+            "Say the house has a roof first, then describe the roof as bright red."
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "Sentences showing off the block house",
+        "goTo": "Back to the assembly table, where the whole block family has lined up for its debut",
+        "prompt": "Tí Hon calls the whole building-block family out to show off to {name}. Đốm wants to make a really striking sentence about the house he just built. Put the three cards together into a sentence.",
+        "items": [
+          "glowing red.",
+          "has a roof",
+          "The block house"
+        ]
+      }
     },
     {
       "id": "dan-keo-hay-thao",
@@ -1069,6 +1435,17 @@
         "answer": {
           "text": "chuồng gà, buồn, vuông, cuốn",
           "explanation": "Chuồng và vuông kết thúc bằng vần uông; buồn và cuốn kết thúc bằng vần uôn."
+        },
+        "en": {
+          "guide": [
+            "Read each word aloud and listen for an “ng” sound at the end.",
+            "Chuồng and vuông end in “ng”; buồn and cuốn do not."
+          ],
+          "hint": "The place where chickens are kept is a chuồng; a wooden piece with four equal sides is a square (vuông).",
+          "answer": {
+            "text": "chuồng gà (hen house), buồn (sad), vuông (square), cuốn (roll up)",
+            "explanation": "Chuồng and vuông end in the rhyme uông; buồn and cuốn end in the rhyme uôn."
+          }
         }
       },
       "feedback": {
@@ -1081,9 +1458,26 @@
           "Đọc to “chuồng”: cuối tiếng nghe có âm “ng” đấy.",
           "“Buồn” không có âm “ng” ở cuối, thử chọn lại nhé.",
           "“Cuốn sách” đọc là “cuốn”, vần uôn, không phải uông."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Click clack! The chicken coop door swings open to celebrate {name} filling in everything right.",
+            "Squirrel is not sad any more and happily carries off the wheel to fit.",
+            "Curled-Up Cat taps her claws in praise: uôn, uông, never mixed up!"
+          ],
+          "wrong": [
+            "Say “chuồng” aloud: you can hear an “ng” at the end.",
+            "“Buồn” has no “ng” at the end, try choosing again.",
+            "“Cuốn sách” is read “cuốn”, the rhyme uôn, not uông."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "The Chicken Coop and the book",
+        "goTo": "Out to the workshop porch, where Curled-Up Cat is pouncing at a ball of green thread",
+        "prompt": "Outside the workshop door, Curled-Up Cat is rearranging a chicken coop, a book and some wooden boards. Đốm wrote their names on paper but missed the rhymes. Choose uôn or uông with the right tone mark for each gap."
+      }
     },
     {
       "id": "cau-bup-be",
@@ -1124,6 +1518,17 @@
         "answer": {
           "text": "Chú rô-bốt to khỏe và vui tính.",
           "explanation": "Câu nêu hai đặc điểm của chú rô-bốt: to khỏe và vui tính."
+        },
+        "en": {
+          "guide": [
+            "The toy's name comes first, with a capital letter.",
+            "Two describing words are joined by “và”."
+          ],
+          "hint": "The robot… how and how?",
+          "answer": {
+            "text": "The robot is big, strong and cheerful.",
+            "explanation": "The sentence gives two qualities of the robot: strong and cheerful."
+          }
         }
       },
       "feedback": {
@@ -1136,9 +1541,31 @@
           "“Và vui tính.” có dấu chấm, nên đứng cuối câu.",
           "Câu phải mở đầu bằng thẻ viết hoa “Chú rô-bốt”.",
           "“To khỏe” đứng trước, rồi mới đến “và vui tính” nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The robot blinks its eye-lights in thanks, and Đốm nearly falls over in surprise.",
+            "Strong and cheerful, a sentence as good as the robot itself.",
+            "The three cards fit together, and Tí Hon gives {name} a round of plastic applause."
+          ],
+          "wrong": [
+            "“Và vui tính.” has a full stop so it goes at the end.",
+            "The sentence must open with the capitalised card “Chú rô-bốt”.",
+            "“To khỏe” goes first, then “và vui tính”."
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "The robot on the shelf",
+        "goTo": "Back to the assembly table, where Tí Hon points up to the highest shelf",
+        "prompt": "Tí Hon introduces another friend on the high shelf: a robot painted blue. Đốm fumbles with the cards and cannot finish. Put the three cards together into a sentence for Đốm.",
+        "items": [
+          "và vui tính.",
+          "to khỏe",
+          "Chú rô-bốt"
+        ]
+      }
     },
     {
       "id": "gioi-thieu-do-choi",
@@ -1289,5 +1716,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Spotted Boar and the Talking Wooden Block",
+    "summary": "Spotted Boar stacks wooden blocks for ages without making any shape, and the whole heap comes crashing down. From the heap a tiny building block stands up and introduces itself. {name} reads “Tớ là khối xếp hình”, finds describing words, fills in ng/ngh, ch/tr and uôn/uông, and helps Đốm build sentences and present toys, running all over the workshop to meet Bin the Fox, Uncle Sáu the Carpenter, Chestnut Bear, Moon Rabbit and Curled-Up Cat."
   }
 }

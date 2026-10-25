@@ -145,7 +145,11 @@
         "tv2-t09-ve-la-vang-1",
         "tv2-t09-ve-la-vang-2",
         "tv2-t09-ve-la-vang-3"
-      ]
+      ],
+      "en": {
+        "title": "Pick up golden leaf tickets",
+        "goTo": "Pick up the golden leaf tickets Dusty Bear dropped along the Golden Leaf Road"
+      }
     },
     {
       "id": "bong-hoa-bai-doc",
@@ -218,6 +222,17 @@
         "answer": {
           "text": "1 – c; 2 – a; 3 – e; 4 – d; 5 – b",
           "explanation": "Chiếc cặp màu nắng kể buổi sáng náo nức của Na; Kho báu dưới chân cầu vồng kể hai bạn chuột vẽ quà tặng nhau; Bông hoa của Bích kể cô bé hết run khi nói trước lớp; Chiếc trống ngủ quên là bài thơ về cái trống nhớ học trò; Các phần của một cuốn sách giới thiệu bìa, tên sách, nhà xuất bản và mục lục."
+        },
+        "en": {
+          "guide": [
+            "Think back over each text: which has a little one who dropped the box of crayons, which has a girl hugging a pot of chrysanthemums, which is about a drum?",
+            "The text about books mentions the title, the author, the publisher and the table of contents."
+          ],
+          "hint": "Tí and Tép are two little mice; the girl hugging the chrysanthemum pot and standing before the class is Bích.",
+          "answer": {
+            "text": "Matches: 1 – c; 2 – a; 3 – e; 4 – d; 5 – b",
+            "explanation": "«Chiếc cặp màu nắng» tells of Na's excited morning; «Kho báu dưới chân cầu vồng» tells how two mice draw presents for each other; «Bông hoa của Bích» tells how a girl stops trembling when she speaks before the class; «Chiếc trống ngủ quên» is a poem about a drum that misses its pupils; «Các phần của một cuốn sách» introduces the cover, title, publisher and table of contents."
+          }
         }
       },
       "feedback": {
@@ -230,9 +245,33 @@
           "Cô bé run run trước cả lớp là Bích, ghép cánh ấy vào bài về bông hoa nhé.",
           "Bài nào kể về chiếc trống nằm lặng im suốt kì nghỉ hè nhỉ?",
           "Hai chú chuột ngắm cầu vồng là nhân vật của bài về kho báu đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The flower blooms with all five pink petals! Ginger Cat leaps around in a figure of eight to celebrate.",
+            "The five texts have met the right five descriptions, not a petal lost.",
+            "Ginger Cat gives {name} the very first golden leaf, smelling of warm ginger."
+          ],
+          "wrong": [
+            "The girl who trembles before the class is Bích. Match that petal to the text about the flower.",
+            "Which text is about the drum lying silent through the whole summer holiday?",
+            "The two mice gazing at the rainbow are the characters of the treasure text."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The five-petal flower",
+        "goTo": "Go to the Flower Station, where Ginger Cat is circling a paper flower",
+        "prompt": "Ginger Cat swishes her tail: the flower with five yellow petals carries the names of five reading texts, the five pink petals carry what each is about, and the wind has blown all the pink petals loose!\nRemember the texts you read along the way and match each description with the name of its text.\nDrag each pink petal back to the right text name.",
+        "items": [
+          "a. Two little friends gaze at the rainbow, then draw presents for each other.",
+          "b. It introduces the familiar parts you meet when you open a book.",
+          "c. A girl is bubbling with excitement as she gets ready for her first day at school.",
+          "d. A drum misses its pupils through the whole quiet summer.",
+          "e. A girl trembles, then speaks confidently in front of the whole class."
+        ]
+      }
     },
     {
       "id": "the-mau-cau-hoi",
@@ -348,6 +387,17 @@
         "answer": {
           "text": "a. chuông; b. sách; c. thước; d. cặp",
           "explanation": "Chuông bắt đầu bằng ch, rung báo giờ mở cửa; sách bắt đầu bằng s, để đọc truyện; thước có vần ươc, để kẻ đường thẳng; cặp có vần ăp, để đựng sách vở."
+        },
+        "en": {
+          "guide": [
+            "Each word has three clues: the first sound or rhyme, where the object is, and what it is used for.",
+            "Read the «Dùng để…» clue first, then check the first sound or rhyme of the word."
+          ],
+          "hint": "The thing that rings at the library gate; the thing worn on the shoulder to carry books has the rhyme «ăp».",
+          "answer": {
+            "text": "Answers: a. chuông; b. sách; c. thước; d. cặp",
+            "explanation": "«Chuông» begins with «ch» and rings to say when the doors open; «sách» begins with «s» and is for reading stories; «thước» has the rhyme «ươc» and is for drawing straight lines; «cặp» has the rhyme «ăp» and holds books and notebooks."
+          }
         }
       },
       "feedback": {
@@ -360,9 +410,26 @@
           "Chuối là một loại quả, không rung báo giờ được đâu.",
           "Đồ vật kẻ đường thẳng có vần ươc, nghĩ thêm chút nữa nhé.",
           "Đồ đeo trên vai để đựng sách vở có vần ăp, không phải bắp ngô."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four guessed! Plum Monkey has to hop on one leg all the way round because he lost.",
+            "Plum Monkey scratches his head: you guess faster than I can think up the riddles!",
+            "«Chuông, sách, thước, cặp»: not a word missed, excellent."
+          ],
+          "wrong": [
+            "«Chuối» is a fruit, and it can't ring to tell the time.",
+            "The thing for drawing straight lines has the rhyme «ươc». Think a little more.",
+            "The thing on your shoulder for carrying books has the rhyme «ăp», not «bắp» corn."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Plum Monkey's four-word riddles",
+        "goTo": "Stop by the Word Guessing Station, where Plum Monkey is swinging on a branch calling for visitors",
+        "prompt": "Plum Monkey winks: this game is mine, I've hidden four words, and a wrong guess means hopping on one leg all the way round!\nWord guessing game: read the clues, then choose the right word."
+      }
     },
     {
       "id": "ten-do-vat",
@@ -473,6 +540,17 @@
         "answer": {
           "text": "chổi, kính, ghế, xô, giỏ, đèn",
           "explanation": "Sáu món là cái chổi, chiếc kính, cái ghế, cái xô, cái giỏ tre và chiếc đèn trên trần."
+        },
+        "en": {
+          "guide": [
+            "Read the description of each object and think what you call it at home.",
+            "Watch the spelling: «k» before «i», «gh» before «e», «x» is different from «s», «ch» is different from «tr»."
+          ],
+          "hint": "The thing worn in front of the eyes to see letters clearly is written with «k»; the thing to sit on has «gh» before «e».",
+          "answer": {
+            "text": "The six words: chổi, kính, ghế, xô, giỏ, đèn",
+            "explanation": "The six objects are a broom («chổi»), glasses («kính»), a chair («ghế»), a bucket («xô»), a bamboo basket («giỏ») and the lamp on the ceiling («đèn»)."
+          }
         }
       },
       "feedback": {
@@ -485,9 +563,26 @@
           "Âm cờ đứng trước i phải viết k: kính chứ không phải cính.",
           "Âm gờ đứng trước e phải viết gh, nên là ghế chứ không phải gế.",
           "Xách nước tưới cây bằng cái xô viết với x, còn s là một chữ khác đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six objects with their full names! Dusty Bear hugs his basket tighter and promises not to drop it again.",
+            "You wrote «k», «gh» and «x» all correctly, and Dusty Bear is amazed.",
+            "The basket is tidy now, and Dusty Bear gives {name} another golden leaf."
+          ],
+          "wrong": [
+            "The sound «c» before «i» must be written «k»: «kính», not «cính».",
+            "The sound «g» before «e» must be written «gh», so it is «ghế», not «gế».",
+            "Carrying water to water the plants uses a «xô» written with «x», while «s» is a different letter."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Dusty Bear dropped six things",
+        "goTo": "Run to the Objects Station, where Dusty Bear has knocked over his basket again",
+        "prompt": "Dusty Bear hurries off hugging his basket of objects, and… everything tumbles out. Help him stick the name back onto each one.\nRead each description, then choose the correct spelling of each object's name."
+      }
     },
     {
       "id": "cong-dung-do-vat",
@@ -527,6 +622,17 @@
         "answer": {
           "text": "Chiếc xô dùng để xách nước.",
           "explanation": "Câu gọi tên đồ vật (chiếc xô) rồi nói việc nó làm được (xách nước)."
+        },
+        "en": {
+          "guide": [
+            "A sentence about use has three parts: the name of the object, the link words, and what it does.",
+            "The name of the object comes first, and what it does comes last."
+          ],
+          "hint": "The bucket… is used for… doing what?",
+          "answer": {
+            "text": "Chiếc xô dùng để xách nước. (A bucket is used for carrying water.)",
+            "explanation": "The sentence names the object («chiếc xô») and then says what it can do («xách nước»)."
+          }
         }
       },
       "feedback": {
@@ -539,9 +645,30 @@
           "Câu phải mở đầu bằng tên đồ vật viết hoa.",
           "Hai chữ \"dùng để\" đứng giữa tên đồ vật và việc nó làm.",
           "Thẻ có dấu chấm là thẻ kết câu, hãy đặt nó cuối cùng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Dusty Bear takes the bucket off his head and tries carrying water: oh, so that's it!",
+            "Object first, use second: {name} has ordered the cards just right.",
+            "The sentence flows as smoothly as water running into a bucket."
+          ],
+          "wrong": [
+            "The sentence must begin with the name of the object, with a capital letter.",
+            "The two words «dùng để» come between the name of the object and what it does.",
+            "The card with the full stop ends the sentence, so put it last."
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "What is the bucket used for?",
+        "prompt": "Dusty Bear puts the bucket upside down on his head and asks, quite calmly: is this a hat? {name} answers for him with one sentence.\nPut three cards in order to make a sentence saying what the bucket is used for.",
+        "items": [
+          "xách nước.",
+          "Chiếc xô",
+          "dùng để"
+        ]
+      }
     },
     {
       "id": "ghep-may-dac-diem",
@@ -605,6 +732,17 @@
         "answer": {
           "text": "Chú mèo con mềm như bông. Dòng suối trong veo, chảy róc rách. Chiếc đèn lồng đỏ rực trong đêm hội. Những trang sách thơm mùi giấy mới.",
           "explanation": "Mỗi câu nêu đặc điểm của một sự vật: mèo con mềm, suối trong veo, đèn lồng đỏ rực, trang sách thơm mùi giấy."
+        },
+        "en": {
+          "guide": [
+            "Try reading each pair as a sentence and see if it makes sense.",
+            "What gurgles as it flows? What is hung up on festival night?"
+          ],
+          "hint": "A kitten is soft as cotton; new pages smell of paper.",
+          "answer": {
+            "text": "The kitten is soft as cotton. The stream is crystal clear and gurgles along. The lantern glows red on festival night. The pages smell of new paper.",
+            "explanation": "Each sentence gives a feature of one thing: the kitten is soft, the stream is crystal clear, the lantern glows red, and the pages smell of paper."
+          }
         }
       },
       "feedback": {
@@ -617,9 +755,32 @@
           "Dòng suối mới chảy róc rách, hãy đưa đám mây ấy về chỗ suối nhé.",
           "Đèn lồng treo lên trong đêm hội mới đỏ rực, ghép lại xem.",
           "Chú mèo con thì mềm như bông, không thơm mùi giấy đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four pairs of clouds make four sentences as lovely as poems!",
+            "Cream Polar Bear tilts her head back to the sky: the lantern really does glow red!",
+            "Every match is right, and each cloud has found its partner."
+          ],
+          "wrong": [
+            "Only a stream gurgles as it flows, so take that cloud to the stream.",
+            "A lantern hung on festival night glows red. Match them again.",
+            "A kitten is soft as cotton, it doesn't smell of paper."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-cau-dac-diem"
+      "objective": "tu-chi-dac-diem-cau-dac-diem",
+      "en": {
+        "title": "Eight clouds to pair up",
+        "goTo": "Go to the Cloud-Hanging Tree beside the Objects Station, where Cream Polar Bear holds eight strings",
+        "prompt": "Eight paper clouds hang on the tree, four in the top row and four in the bottom row. Dusty Bear jumps and jumps but can't reach, so he asks {name} to match them.\nMatch the clouds to make 4 sentences describing a feature.\nchú mèo con; dòng suối; chiếc đèn lồng; những trang sách; mềm như bông; trong veo, chảy róc rách; đỏ rực trong đêm hội; thơm mùi giấy mới",
+        "items": [
+          "smells of new paper",
+          "crystal clear, gurgling along",
+          "soft as cotton",
+          "glowing red on festival night"
+        ]
+      }
     },
     {
       "id": "dong-vai-cung-meo",
@@ -679,6 +840,17 @@
         "answer": {
           "text": "Cô Thu là người giữ kho truyện. → Câu giới thiệu",
           "explanation": "Câu cho biết cô Thu là ai (người giữ kho truyện), nên là câu giới thiệu."
+        },
+        "en": {
+          "guide": [
+            "A sentence that answers «Ai là gì?» («Who is what?») is usually used to introduce someone.",
+            "Read the sentence on the board aloud and ask yourself what it tells you about Teacher Thu."
+          ],
+          "hint": "An introduction says who someone is, an action says what they do, a feature says what they are like: which type is the sentence «Cô Thu là người giữ kho truyện.»?",
+          "answer": {
+            "text": "Cô Thu là người giữ kho truyện. → an introducing sentence (câu giới thiệu)",
+            "explanation": "The sentence tells who Teacher Thu is (the keeper of the story room), so it is an introducing sentence («câu giới thiệu»)."
+          }
         }
       },
       "feedback": {
@@ -691,9 +863,26 @@
           "Câu này không kể cô đang làm gì, chỉ cho biết cô là ai thôi.",
           "Câu trên ván giới thiệu hay tả tính nết nhỉ? Đọc lại thử xem.",
           "Tìm chữ \"là\" trong câu, câu có \"là\" thường để giới thiệu đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "An introducing sentence, bang on! Planer Beaver swishes her tail and a rainbow appears over the pond.",
+            "Who is Teacher Thu? The keeper of the story room! This sentence introduces her.",
+            "Right, the word «là» links a person's name to what introduces that person."
+          ],
+          "wrong": [
+            "This sentence doesn't tell what she is doing, only who she is.",
+            "Does the sentence on the board introduce her or describe her character? Read it again.",
+            "Look for the word «là» in the sentence: a sentence with «là» is often used to introduce."
+          ]
+        }
       },
-      "objective": "cau-gioi-thieu"
+      "objective": "cau-gioi-thieu",
+      "en": {
+        "title": "Floating board 1",
+        "goTo": "Go to the Water Tank Station, where Planer Beaver is pushing some floating boards",
+        "prompt": "Planer Beaver slaps her tail with a splash and reads the first sentence on the board floating in the pond:\nThe three sentences in table A belong to three different sentence types in table B. Which type is the sentence on the board?\nA: Cô Thu là người giữ kho truyện.; Cô đang xếp sách lên kệ.; Cô rất kiên nhẫn và dịu dàng.\nB: Câu giới thiệu; Câu kể hoạt động; Câu tả đặc điểm\nCô Thu là người giữ kho truyện."
+      }
     },
     {
       "id": "kieu-cau-2",
@@ -737,6 +926,17 @@
         "answer": {
           "text": "Cô đang xếp sách lên kệ. → Câu nói về việc làm",
           "explanation": "Câu kể việc cô đang làm (xếp sách lên kệ), nên là câu nêu hoạt động."
+        },
+        "en": {
+          "guide": [
+            "A sentence that answers «Ai làm gì?» («Who does what?») tells about an action.",
+            "Read the sentence on the board aloud and ask yourself what Teacher Thu is doing."
+          ],
+          "hint": "An introduction says who someone is, an action says what they do, a feature says what they are like: which type is the sentence «Cô đang xếp sách lên kệ.»?",
+          "answer": {
+            "text": "Cô đang xếp sách lên kệ. → a sentence about an action (câu nói về việc làm)",
+            "explanation": "The sentence tells what she is doing (putting books on the shelf), so it is a sentence about an action."
+          }
         }
       },
       "feedback": {
@@ -749,9 +949,25 @@
           "Xếp sách là một việc làm, câu này kể cô đang làm gì đấy.",
           "Câu không giới thiệu cô là ai, mà nói cô đang bận việc gì.",
           "Thử nhìn chữ \"đang\": \"đang xếp sách\", nghe là hoạt động rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A sentence about an action, right! Putting books away is what she is doing.",
+            "Planer Beaver swims a circle round the pond to celebrate: it's an action!",
+            "The words «đang xếp» give it away at once as an action. Well done."
+          ],
+          "wrong": [
+            "Putting books away is something she does, and this sentence tells what she is doing.",
+            "The sentence doesn't introduce who she is, it says what she is busy with.",
+            "Look at the word «đang»: «đang xếp sách» sounds like an action already."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong",
+      "en": {
+        "title": "Floating board 2",
+        "prompt": "The second board drifts over, with a golden leaf stuck to it:\nThe three sentences in table A belong to three different sentence types in table B. Which type is the sentence on the board?\nA: Cô Thu là người giữ kho truyện.; Cô đang xếp sách lên kệ.; Cô rất kiên nhẫn và dịu dàng.\nB: Câu giới thiệu; Câu nói về việc làm; Câu nói về tính nết\nCô đang xếp sách lên kệ."
+      }
     },
     {
       "id": "kieu-cau-3",
@@ -796,6 +1012,17 @@
         "answer": {
           "text": "Cô rất kiên nhẫn và dịu dàng. → Câu tả một đặc điểm",
           "explanation": "Câu cho biết cô thế nào (kiên nhẫn, dịu dàng), nên là câu nêu đặc điểm."
+        },
+        "en": {
+          "guide": [
+            "A sentence that answers «Ai thế nào?» («Who is what like?») gives a feature.",
+            "Read the sentence on the board aloud and ask yourself what it says Teacher Thu is like."
+          ],
+          "hint": "An introduction says who someone is, an action says what they do, a feature says what they are like: which type is the sentence «Cô rất kiên nhẫn và dịu dàng.»?",
+          "answer": {
+            "text": "Cô rất kiên nhẫn và dịu dàng. → a sentence giving a feature (câu tả một đặc điểm)",
+            "explanation": "The sentence says what she is like (patient, gentle), so it is a sentence giving a feature."
+          }
         }
       },
       "feedback": {
@@ -808,9 +1035,26 @@
           "Kiên nhẫn, dịu dàng không phải việc làm, mà là tính nết của cô.",
           "Câu này tả cô thế nào, không kể cô đang làm gì.",
           "Hỏi \"Cô thế nào?\" sẽ ra câu trả lời: rất kiên nhẫn và dịu dàng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A sentence giving a feature! Patient and gentle are her nature.",
+            "All three boards done, and Guppy leaps with a splash to congratulate you.",
+            "Here is a «Ai thế nào?» sentence, and {name} tells them apart brilliantly."
+          ],
+          "wrong": [
+            "Patient and gentle are not actions, they describe her nature.",
+            "This sentence says what she is like, it doesn't say what she is doing.",
+            "Ask «Cô thế nào?» («What is she like?») and you get the answer: very patient and gentle."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-cau-dac-diem"
+      "objective": "tu-chi-dac-diem-cau-dac-diem",
+      "en": {
+        "title": "Floating board 3",
+        "goTo": "Cross to the Round Pond Edge, where Guppy is pushing the last board",
+        "prompt": "The last board is the biggest, and Guppy has to push it with both fins:\nThe three sentences in table A belong to three different sentence types in table B. Which type is the sentence on the board?\nA: Cô Thu là người giữ kho truyện.; Cô đang xếp sách lên kệ.; Cô rất kiên nhẫn và dịu dàng.\nB: Câu giới thiệu; Câu kể một hoạt động; Câu tả một đặc điểm\nCô rất kiên nhẫn và dịu dàng."
+      }
     },
     {
       "id": "doc-vit-boi",
@@ -847,6 +1091,17 @@
         "answer": {
           "text": "Bác Tư nghe ai nói chữ thừa cũng xoá, nên hết sạch chữ.",
           "explanation": "Bà hàng xóm rồi cậu đưa thư đều bảo chữ trên biển là thừa, bác xoá theo từng lời, cuối cùng chỉ còn tấm ván trắng tinh, nên truyện mới buồn cười."
+        },
+        "en": {
+          "guide": [
+            "Read again the places where Uncle Tư rubs out words, and see who told him to each time.",
+            "After the last rubbing out, what was left on the board?"
+          ],
+          "hint": "The neighbour and the postman both said that word was unnecessary, and he listened to both.",
+          "answer": {
+            "text": "Uncle Tư rubbed out words every time someone said they were unnecessary, so nothing was left.",
+            "explanation": "The neighbour and then the postman both said the words on the sign were unnecessary, and he rubbed out word after word on their advice, leaving a pure white board, which is why the story is so funny."
+          }
         }
       },
       "feedback": {
@@ -859,9 +1114,30 @@
           "Truyện không hề nhắc tới cơn mưa, đọc lại chỗ bác xoá chữ nhé.",
           "Bác Tư chưa bán hết bánh đâu, bác còn đang hỏi khách kia mà.",
           "Mỗi lần bác xoá là có người góp lời, tìm lại những lời ấy xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ha ha! If you do what everyone says, every sign ends up blank!",
+            "Guppy laughs so hard bubbles fizz all over the pond: yes, Uncle Tư rubbed everything out!",
+            "Spot on! Understanding a funny story takes careful reading."
+          ],
+          "wrong": [
+            "The story never mentions rain. Read the part where he rubs out the words again.",
+            "Uncle Tư hasn't sold all his cakes, he is still asking customers.",
+            "Each time he rubs out, someone has given advice. Look for those words again."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The funny story by the water tank",
+        "question": "Guppy surfaces, laughing and spluttering: this story is so funny! Why is there not a single word left on Uncle Tư's board at the end?",
+        "choices": [
+          "Because he listened to everyone's advice and rubbed words out, and rubbing out again and again left nothing.",
+          "Because a heavy rainstorm washed all the ink off the board.",
+          "Because he sold all his cakes and took the sign down."
+        ]
+      }
     },
     {
       "id": "dau-cau-vit-boi",
@@ -958,6 +1234,17 @@
         "answer": {
           "text": "làm gì? – “nóng hổi”. – làm chi. – bán gì? – biết ngay.",
           "explanation": "Hai câu hỏi (bác ghi làm gì, ai biết quán bán gì) kết thúc bằng dấu chấm hỏi; câu kể việc bác xoá chữ và hai lời đáp của cậu đưa thư kết thúc bằng dấu chấm."
+        },
+        "en": {
+          "guide": [
+            "A sentence used to ask someone something ends with a question mark.",
+            "A telling sentence or an answer ends with a full stop."
+          ],
+          "hint": "Uncle Tư and the neighbour each ask something, so there are two question marks.",
+          "answer": {
+            "text": "Endings: làm gì? – “nóng hổi”. – làm chi. – bán gì? – biết ngay.",
+            "explanation": "The two questions (what is the point of writing it, who would know what the shop sells) end with a question mark; the sentence telling that he rubbed out the words and the postman's two answers end with a full stop."
+          }
         }
       },
       "feedback": {
@@ -970,9 +1257,26 @@
           "\"Bác ghi làm gì\" là lời hỏi, cần dấu chấm hỏi.",
           "Câu kể bác xoá chữ không hỏi ai, nên dùng dấu chấm.",
           "Cậu đưa thư đang trả lời chứ không hỏi lại, kết câu bằng dấu chấm nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All five marks are in the right place, so the story sounds funny when read!",
+            "Questions get question marks and statements get full stops: {name} tells them apart clearly.",
+            "Planer Beaver reads the whole story again, laughing until her two big front teeth shake."
+          ],
+          "wrong": [
+            "«Bác ghi làm gì» is a question, so it needs a question mark.",
+            "The sentence telling that he rubbed out the words asks nobody anything, so use a full stop.",
+            "The postman is answering, not asking back. End his sentence with a full stop."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "Five empty squares",
+        "goTo": "Back to the Water Tank Station, where Planer Beaver is copying the story onto a board",
+        "prompt": "Planer Beaver copies the story onto the board but forgets five punctuation marks. She circles the hardest line right at the top of the board:\nTreo biển\nBác Tư xoá nốt. Nhìn tấm ván trắng tinh, bác hỏi:\nFill in a full stop or a question mark in the five blanks so they are right."
+      }
     },
     {
       "id": "tranh-ten-truyen",
@@ -1068,6 +1372,17 @@
         "answer": {
           "text": "Tranh 1 – Chú dế con tập hát; tranh 2 – Chú ốc sên đi học; tranh 3 – Kho báu dưới chân cầu vồng; tranh 4 – Chú voi con muốn có cánh",
           "explanation": "Dế hát giữa đêm trăng là Chú dế con tập hát; ốc sên bò dưới sao là Chú ốc sên đi học; hai chú chuột ngắm cầu vồng là Kho báu dưới chân cầu vồng; voi con đeo lá chuối là Chú voi con muốn có cánh."
+        },
+        "en": {
+          "guide": [
+            "Remember the stories you met: the little cricket, the snail, the two mice, the little elephant.",
+            "Look at the character in each picture: a lotus leaf, a spiral shell, a rainbow, a banana leaf."
+          ],
+          "hint": "The creature wearing banana leaves as wings is the little elephant; the one sitting singing on a lotus leaf is the cricket.",
+          "answer": {
+            "text": "Picture 1 – «Chú dế con tập hát»; picture 2 – «Chú ốc sên đi học»; picture 3 – «Kho báu dưới chân cầu vồng»; picture 4 – «Chú voi con muốn có cánh»",
+            "explanation": "The cricket singing on a moonlit night is «Chú dế con tập hát»; the snail crawling under the stars is «Chú ốc sên đi học»; the two mice gazing at the rainbow are «Kho báu dưới chân cầu vồng»; the little elephant wearing banana leaves is «Chú voi con muốn có cánh»."
+          }
         }
       },
       "feedback": {
@@ -1080,9 +1395,32 @@
           "Chú vật đeo lá chuối trên lưng là nhân vật của chuyện muốn có cánh đấy.",
           "Chiếc vỏ xoáy tròn là của chú ốc sên đi tới lớp.",
           "Hai chú chuột nhìn cầu vồng đang mơ về một hũ vàng đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four pictures have names! Grandma Tư writes them straight into her leaf notebook.",
+            "What a good memory for stories, even from the earliest stops.",
+            "Grandma Tư hums: every picture shows an old friend."
+          ],
+          "wrong": [
+            "The creature with banana leaves on its back is the hero of the story about wanting wings.",
+            "The round spiral shell belongs to the snail on the way to school.",
+            "The two mice looking at the rainbow are dreaming of a pot of gold."
+          ]
+        }
       },
-      "objective": "doc-truyen-ke-lai"
+      "objective": "doc-truyen-ke-lai",
+      "en": {
+        "title": "Four pictures, four stories",
+        "goTo": "Cross to the Storytelling Station, where Grandma Tư has hung four pictures on a golden-leaf branch",
+        "prompt": "Grandma Tư has hung four pictures of four stories {name} met along the way, but forgot to stick on their names.\nFirst, drag each picture to the name of its story; then pick a story you like and retell it.",
+        "items": [
+          "Picture 3",
+          "Picture 1",
+          "Picture 4",
+          "Picture 2"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-em-thich",
@@ -1183,6 +1521,17 @@
         "answer": {
           "text": "Cả năm thầy bói đều bị mù nên chỉ còn cách lần mò bằng tay.",
           "explanation": "Truyện viết: ai cũng mù cả hai mắt, chẳng nhìn thấy gì, nên các thầy chỉ có thể lần mò bằng tay."
+        },
+        "en": {
+          "guide": [
+            "Read the opening sentences of the story, where the five fortune-tellers are introduced.",
+            "Find the sentence about the men's eyes."
+          ],
+          "hint": "The sentence with the words «mù cả hai mắt» («blind in both eyes»).",
+          "answer": {
+            "text": "All five fortune-tellers are blind, so they can only feel their way with their hands.",
+            "explanation": "The story says each of them is blind in both eyes and sees nothing, so they can only feel their way with their hands."
+          }
         }
       },
       "feedback": {
@@ -1195,9 +1544,31 @@
           "Truyện không nhắc chuyện voi đứng xa, đọc lại đoạn đầu nhé.",
           "Các thầy đi xem voi chứ đâu có đi đo cân nặng.",
           "Tìm câu nói về hai mắt của các thầy xem lí do là gì."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, they are all blind, so they have to feel their way. Uncle Lâm nods: just as in the story.",
+            "You read carefully right from the first sentence, and Uncle Lâm is very pleased with {name}.",
+            "Spot on! The story begins with those eyes that cannot see."
+          ],
+          "wrong": [
+            "The story doesn't mention an elephant standing far away. Read the beginning again.",
+            "The men go to see an elephant, not to weigh it.",
+            "Find the sentence about the men's two eyes to learn the reason."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The Five Blind Men and the Elephant",
+        "goTo": "Go to the Elephant Viewing Station, where Uncle Lâm the Lumberjack lays five elephant cards on the stone table",
+        "question": "Read the following story:\nUncle Lâm asks a warm-up question first: why must the five blind fortune-tellers use their hands to find out the shape of an elephant?",
+        "choices": [
+          "All five of them cannot see anything",
+          "The elephant is standing too far away to see",
+          "The men want to measure how heavy the elephant is"
+        ]
+      }
     },
     {
       "id": "tinh-cam-khi-lon",
@@ -1233,6 +1604,17 @@
         "answer": {
           "text": "Mỗi thầy đều cho rằng mình đúng còn các thầy kia sai.",
           "explanation": "Các thầy chê nhau \"sai rồi\", \"nói bậy\", khăng khăng giữ ý mình, vì thế mới cãi nhau om sòm."
+        },
+        "en": {
+          "guide": [
+            "Read what each fortune-teller says, and see which ones say «Sai rồi», «nói bậy» or «quả quyết».",
+            "At the end of the story, what do they do with their own ideas?"
+          ],
+          "hint": "The story has the line: «Năm thầy khăng khăng giữ ý mình, ai cũng cho mình đúng.»",
+          "answer": {
+            "text": "Each man thinks he is right and the others are wrong.",
+            "explanation": "The men dismiss each other with «sai rồi» and «nói bậy» and cling stubbornly («khăng khăng») to their own ideas, which is why they argue so noisily."
+          }
         }
       },
       "feedback": {
@@ -1245,9 +1627,30 @@
           "Nếu các thầy tin nhau ngay thì đâu có cãi nhau om sòm.",
           "Các thầy không sợ hãi gì, chỉ bực vì ý kiến bị chê thôi.",
           "Tìm câu có chữ \"khăng khăng\" rồi chọn lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, every man believes he is right, so they argue on and on.",
+            "Uncle Lâm nods, amused: that is why the elephant keeper is needed to explain.",
+            "{name} spots the word «khăng khăng» at once, very sharp."
+          ],
+          "wrong": [
+            "If they believed each other at once, they wouldn't be arguing so noisily.",
+            "The men aren't frightened of anything, they are just annoyed that their ideas were dismissed.",
+            "Find the sentence with the word «khăng khăng» and choose again."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "What do the men think about each other?",
+        "prompt": "Uncle Lâm sighs softly: they argued half the day and not one man would listen to another.\nAnswer the question.\nWhen a friend describes the elephant differently from himself, what does each fortune-teller think?",
+        "choices": [
+          "He believes his friend is right and changes his mind at once",
+          "He thinks he is right and his friend is wrong",
+          "He is frightened and runs away"
+        ]
+      }
     },
     {
       "id": "hoi-dap-bo-dua",
@@ -1311,6 +1714,17 @@
         "answer": {
           "text": "vòi – rắn lớn; chân – cột nhà; cãi nhau – mỗi thầy chỉ sờ một chỗ; lời nhắc – xem đủ mọi chỗ",
           "explanation": "Vòi mềm và dài nên thầy thứ nhất tưởng con rắn; chân to tròn như cột nhà; các thầy cãi vì mỗi người chỉ sờ một chỗ; người quản tượng nhắc phải xem đủ mọi chỗ mới biết voi thế nào."
+        },
+        "en": {
+          "guide": [
+            "Read each question, then find the part of the story that tells exactly that.",
+            "A «why» question needs an answer that begins with «Because»."
+          ],
+          "hint": "The first man touches the trunk, the fourth hugs a leg; the elephant keeper's reminder is at the end of the story.",
+          "answer": {
+            "text": "trunk – a big snake; leg – a house post; arguing – each touched only one part; the reminder – look at every part",
+            "explanation": "The trunk is soft and long, so the first man thought it a snake; the leg is big and round like a house post; the men argued because each touched only one part; the keeper reminded them to look at every part to know what an elephant is like."
+          }
         }
       },
       "feedback": {
@@ -1323,9 +1737,32 @@
           "Câu hỏi \"vì sao\" cần một câu trả lời có chữ \"Vì\" đấy.",
           "Thầy ôm lấy cái chân thì thấy to và tròn, xem lại nhé.",
           "Lời nhắc của người quản tượng nằm ở cuối truyện, về việc xem đủ mọi chỗ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four questions met four answers, as upright as the four legs of an elephant!",
+            "Teacher Thu smiles: look at every part, and then you understand!",
+            "You understood the story right down to the final reminder, wonderful."
+          ],
+          "wrong": [
+            "A «why» question needs an answer with «Because».",
+            "The man hugging the leg felt something big and round. Check again.",
+            "The elephant keeper's reminder is at the end of the story, about looking at every part."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Four questions about the elephant",
+        "goTo": "Cross to the stone table, where Teacher Thu is arranging four questions",
+        "prompt": "Teacher Thu remembers the whole story, but the four answers have got mixed up. Drag each answer to the right question.",
+        "items": [
+          "The elephant is big and round like a house post.",
+          "It is like a big snake, soft and long.",
+          "The elephant is made of many parts and you must look at every part to understand it well.",
+          "Because each man touched only one part, but every one of them believed he was right."
+        ]
+      }
     },
     {
       "id": "nghia-tu-1",
@@ -1369,6 +1806,17 @@
         "answer": {
           "text": "lần mò: đưa tay sờ dần từng chỗ để tìm hiểu khi không nhìn thấy rõ",
           "explanation": "Lần mò nghĩa là đưa tay sờ dần từng chỗ để tìm hiểu khi không nhìn thấy rõ."
+        },
+        "en": {
+          "guide": [
+            "«Lần mò» is when you feel and search at the same time, because you can't see clearly.",
+            "Put the meaning you chose in place of the word «lần mò» in the story and read it to see if it fits."
+          ],
+          "hint": "The word «lần mò» appears in «Thầy bói xem voi». Read the sentence with that word again.",
+          "answer": {
+            "text": "lần mò: to feel around bit by bit with your hand when you can't see clearly",
+            "explanation": "«Lần mò» means to feel one place after another with your hand to find out when you can't see clearly."
+          }
         }
       },
       "feedback": {
@@ -1381,9 +1829,25 @@
           "Lần mò chẳng liên quan gì tới mặt nóng bừng, nghĩ lại xem.",
           "Khi lần mò, người ta dùng tay để tìm hiểu, không phải để cãi.",
           "Tìm nghĩa nói về việc dùng tay sờ dần từng chỗ thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "«Lần mò» is feeling one place after another when you can't see clearly, right!",
+            "Teacher Thu nods: the fortune-tellers feel their way exactly like that.",
+            "Spot on! Walking in the dark also means feeling your way step by step."
+          ],
+          "wrong": [
+            "«Lần mò» has nothing to do with a burning face. Think again.",
+            "When people «lần mò», they use their hands to find out, not to argue.",
+            "Look for the meaning about feeling one place after another with your hand."
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "What \"lần mò\" means",
+        "prompt": "Teacher Thu pulls the first card out of her pocket:\nChoose the right meaning of the word in the story.\nWord: lần mò"
+      }
     },
     {
       "id": "nghia-tu-2",
@@ -1428,6 +1892,17 @@
         "answer": {
           "text": "khăng khăng: luôn bám lấy ý riêng, dù ai khuyên cũng không đổi",
           "explanation": "Khăng khăng nghĩa là luôn bám lấy ý riêng, dù ai khuyên cũng không đổi."
+        },
+        "en": {
+          "guide": [
+            "«Khăng khăng» is to hold on tight to your own idea.",
+            "Put the meaning you chose in place of the word «khăng khăng» in the story and read it to see if it fits."
+          ],
+          "hint": "The word «khăng khăng» appears in «Thầy bói xem voi». Read the sentence with that word again.",
+          "answer": {
+            "text": "khăng khăng: to cling to your own idea, whatever anyone advises",
+            "explanation": "«Khăng khăng» means always clinging to your own idea, however much anyone advises you otherwise."
+          }
         }
       },
       "feedback": {
@@ -1440,9 +1915,26 @@
           "Khăng khăng không phải là ngượng ngùng, chọn lại nhé.",
           "Nghĩ xem khi ai đó không chịu nghe lời nào, người ta gọi là gì.",
           "Còn một nghĩa nói về việc giữ chặt ý riêng, thử chọn nó xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "«Khăng khăng» is insisting on keeping your own idea, spot on!",
+            "Uncle Lâm pats {name} on the head with a calloused hand.",
+            "The right meaning: that is how the five fortune-tellers were «khăng khăng» when they argued."
+          ],
+          "wrong": [
+            "«Khăng khăng» is not about being shy. Choose again.",
+            "Think about what we call it when someone won't listen to a single word.",
+            "There is another meaning about holding tight to your own idea. Try choosing it."
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "What \"khăng khăng\" means",
+        "goTo": "Back at the Elephant Viewing Station, Uncle Lâm holds the second card",
+        "prompt": "Uncle Lâm holds the second card as gently as if it were a flower:\nChoose the right meaning of the word in the story.\nWord: khăng khăng"
+      }
     },
     {
       "id": "nghia-tu-3",
@@ -1487,6 +1979,17 @@
         "answer": {
           "text": "ngượng ngùng: thấy xấu hổ vì mình chưa đúng nên đỏ mặt, ngập ngừng",
           "explanation": "Ngượng ngùng nghĩa là thấy xấu hổ vì mình chưa đúng nên đỏ mặt, ngập ngừng."
+        },
+        "en": {
+          "guide": [
+            "«Ngượng ngùng» is the feeling when you realise you are in the wrong.",
+            "Put the meaning you chose in place of the word «ngượng ngùng» in the story and read it to see if it fits."
+          ],
+          "hint": "The word «ngượng ngùng» appears in «Thầy bói xem voi». Read the sentence with that word again.",
+          "answer": {
+            "text": "ngượng ngùng: to feel ashamed at being wrong, so you blush and hesitate",
+            "explanation": "«Ngượng ngùng» means to feel ashamed that you were not right, so you blush and hesitate."
+          }
         }
       },
       "feedback": {
@@ -1499,9 +2002,26 @@
           "Ngượng ngùng không phải là nhất định giữ ý, chọn lại nhé.",
           "Khi ngượng ngùng, mặt nóng bừng và chẳng biết nói gì đấy.",
           "Cuối truyện, các thầy im bặt vì thấy mình chưa đúng, nhớ không?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "«Ngượng ngùng» is when your face burns because you know you were wrong, exactly!",
+            "The five fortune-tellers fall silent, embarrassed, and {name} understands.",
+            "All three cards have their meanings, and Candy Lion tucks them into his extra-thick mane."
+          ],
+          "wrong": [
+            "«Ngượng ngùng» is not about firmly keeping an idea. Choose again.",
+            "When you are «ngượng ngùng», your face burns and you don't know what to say.",
+            "At the end of the story the men go quiet because they see they were wrong. Remember?"
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "What \"ngượng ngùng\" means",
+        "goTo": "Go to the Leaf Candy Stall, where Candy Lion is smoothing out the last card",
+        "prompt": "The last card is a little crumpled, and Candy Lion smooths it for a long time before it lies flat:\nChoose the right meaning of the word in the story.\nWord: ngượng ngùng"
+      }
     },
     {
       "id": "keo-su-vat-hoat-dong",
@@ -1571,6 +2091,17 @@
         "answer": {
           "text": "Sự vật: voi, ngà, đuôi. Hoạt động: sờ, cãi, vuốt, ôm.",
           "explanation": "Voi, ngà, đuôi là tên con vật và các bộ phận của nó; sờ, cãi, vuốt, ôm là những việc các thầy bói làm."
+        },
+        "en": {
+          "guide": [
+            "A word for a thing names an animal, a part or an object: you can see it and touch it.",
+            "A word for an action is something you do: try putting the word «đang» in front."
+          ],
+          "hint": "Three sweets are things and four are actions.",
+          "answer": {
+            "text": "Things: voi, ngà, đuôi. Actions: sờ, cãi, vuốt, ôm.",
+            "explanation": "«Voi», «ngà» and «đuôi» are the animal and its parts; «sờ», «cãi», «vuốt» and «ôm» are things the fortune-tellers did."
+          }
         }
       },
       "feedback": {
@@ -1583,9 +2114,34 @@
           "Thử nói \"đang đuôi\" xem, nghe kì không? Nó là sự vật đấy.",
           "\"Cãi\" là việc các thầy làm với nhau, nó là hoạt động.",
           "Chiếc ngà là một bộ phận của voi, đưa nó về túi sự vật nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two bags full of sweets in the right places! Candy Lion rewards {name} with the very last golden leaf.",
+            "Things in one bag and actions in the other: excellent sorting.",
+            "Not one of the seven sweets has gone astray, and Dusty Bear watches in great admiration."
+          ],
+          "wrong": [
+            "Try saying «đang đuôi»: does it sound odd? It's a thing.",
+            "«Cãi» is something the men do to each other, so it is an action.",
+            "The tusk is a part of the elephant, so put it back in the bag of things."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Seven candies, two bags",
+        "prompt": "Candy Lion brings out seven wrapped sweets, each marked with a word, and two bags. Candy Lion reads the first bag:\nSort the words into the right bag.\nvoi; sờ; ngà; cãi; đuôi; vuốt; ôm\nTừ chỉ sự vật\nThen Candy Lion reads the seven sweets again for the second bag: voi; sờ; ngà; cãi; đuôi; vuốt; ôm\nTừ chỉ hoạt động",
+        "items": [
+          "sờ",
+          "voi",
+          "cãi",
+          "ngà",
+          "vuốt",
+          "đuôi",
+          "ôm"
+        ]
+      }
     },
     {
       "id": "phieu-viet-giua-ki",
@@ -1657,5 +2213,9 @@
       "ke-chuyen": 1,
       "chinh-ta": 1
     }
+  },
+  "en": {
+    "title": "The Golden Leaf Festival in Front of the Library",
+    "summary": "Golden leaves have fallen all over the yard in front of the Library, and Round Panda the librarian opens a revision festival: each station is kept by a new friend and each holds a challenge that recalls what was learnt along the way. {name} tours the festival ground, meets the new friends and gathers enough golden leaves to light, together with the whole class, the biggest leaf lantern in the yard."
   }
 }

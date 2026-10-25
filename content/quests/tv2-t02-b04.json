@@ -123,7 +123,11 @@
         "tv2-t02-dong-ho-goc-cay",
         "tv2-t02-long-ga-trong",
         "tv2-t02-chum-vai-chin"
-      ]
+      ],
+      "en": {
+        "title": "Who is working around the garden",
+        "goTo": "Run once around the whole flower garden to see who is working"
+      }
     },
     {
       "id": "khoi-dong",
@@ -184,6 +188,17 @@
         "answer": {
           "text": "Đồng hồ nhắc cả nhà đã gần đến giờ ăn.",
           "explanation": "Bài đọc viết: chiếc đồng hồ gõ tiếng tích tắc, nhắc mọi người sắp đến giờ ăn. Gáy vang là việc của gà trống, nhỏ giọt là việc của vòi nước."
+        },
+        "en": {
+          "guide": [
+            "Read the sentence about the clock at the start of the passage.",
+            "Find the sentence with the ticking sound."
+          ],
+          "hint": "The clock does not crow, and it does not drip water either.",
+          "answer": {
+            "text": "The clock reminds the whole household that mealtime is near.",
+            "explanation": "The passage says the clock ticks to remind everyone that mealtime is near. Crowing is the rooster's job and dripping is the tap's."
+          }
         }
       },
       "feedback": {
@@ -196,9 +211,31 @@
           "Gáy vang là việc của chú gà trống cơ, đồng hồ đâu có mỏ.",
           "Nhỏ giọt xuống luống rau là việc của vòi nước, đồng hồ thì kêu tiếng khác cơ.",
           "Tìm câu có tiếng tích tắc trong bài rồi chọn lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tick-tock, tick-tock, that's right! Muttering Bear writes the first line in his notebook at once.",
+            "Spot on! The clock reminding everyone of mealtime never takes a break.",
+            "{name} reads as fast as a bee flies, Muttering Bear can't keep count!"
+          ],
+          "wrong": [
+            "Crowing is the rooster's job, the clock has no beak.",
+            "Dripping onto the vegetable bed is the tap's job, the clock makes a different sound.",
+            "Find the sentence with the ticking sound in the passage and choose again."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The passage on the beeswax board",
+        "goTo": "Go to the beeswax board and read the passage A Day in the Flower Garden",
+        "question": "Muttering Bear has just found a clock at the foot of a tree. According to the passage, what does the clock do?",
+        "choices": [
+          "Crows loudly to wake the whole neighbourhood.",
+          "Ticks to remind everyone that mealtime is near.",
+          "Drips onto the vegetable bed to keep the soil damp."
+        ]
+      }
     },
     {
       "id": "con-vat-trong-bai",
@@ -251,6 +288,17 @@
         "answer": {
           "text": "gà trống, ong thợ, chó, chim sâu",
           "explanation": "Bài nói tới chú ong thợ hút mật, chú gà trống gáy, chim sâu bắt sâu và chú chó canh cổng. Bài không nhắc tới con bướm hay con mèo."
+        },
+        "en": {
+          "guide": [
+            "Read the first paragraph and look for the name of each animal.",
+            "Pick only animals named in the passage, not ones you guess."
+          ],
+          "hint": "Four animals are mentioned in the passage.",
+          "answer": {
+            "text": "the rooster, the worker bee, the dog, the tailorbird",
+            "explanation": "The passage speaks of the worker bee sipping nectar, the rooster crowing, the tailorbird catching bugs and the dog guarding the gate. It does not mention the butterfly or the cat."
+          }
         }
       },
       "feedback": {
@@ -263,9 +311,33 @@
           "Gấu Nhẩm buồn thiu: bài không nhắc tới con bướm đâu, tiếc ghê!",
           "Con mèo không có mặt trong vườn của bài đọc đâu nhé.",
           "Còn sót một con vật đấy, đọc lại câu nói về cổng vườn xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four animals! Muttering Bear counts three times to be sure: four, four, still four!",
+            "All right, not one friend from the passage is left out.",
+            "Rice Pup wags his tail in praise: {name} won't be fooled by the butterfly!"
+          ],
+          "wrong": [
+            "Muttering Bear is crestfallen: the butterfly is not in the passage, what a pity!",
+            "The cat is not in the garden of the passage.",
+            "One animal is still missing, read again the sentence about the garden gate."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Count the animals in the passage",
+        "prompt": "Muttering Bear counts legs, counts wings, and then counts the animals in the passage. Which animals are mentioned in the passage?",
+        "choices": [
+          "the rooster",
+          "the worker bee",
+          "the dog",
+          "the tailorbird",
+          "the butterfly",
+          "the cat"
+        ]
+      }
     },
     {
       "id": "viec-cua-be",
@@ -341,6 +413,17 @@
         "answer": {
           "text": "Bạn nhỏ: tưới cây, nhặt lá vàng, hái rau, rửa rổ, dọn mâm cơm. Vật quanh vườn: hút mật, mổ sâu, gáy vang.",
           "explanation": "Đoạn cuối kể bé tưới cây, nhặt lá vàng, rồi chiều đến phụ mẹ hái rau, rửa rổ và dọn mâm cơm."
+        },
+        "en": {
+          "guide": [
+            "Read the last paragraph, starting from the sentence «Bé cũng làm việc như mọi vật quanh mình.» (The child works just like everything around her.)",
+            "Sipping nectar, pecking bugs and crowing are the jobs of the bee, the bird and the rooster."
+          ],
+          "hint": "The child does five jobs, from morning to afternoon.",
+          "answer": {
+            "text": "Child: tưới cây, nhặt lá vàng, hái rau, rửa rổ, dọn mâm cơm. Around the garden: hút mật, mổ sâu, gáy vang.",
+            "explanation": "The last paragraph tells how the child waters the plants, picks up yellow leaves, then in the afternoon helps Mum pick vegetables, wash the basket and lay the meal tray."
+          }
         }
       },
       "feedback": {
@@ -353,9 +436,26 @@
           "Bạn nhỏ đâu có gáy vang, đó là việc của chú gà trống mà.",
           "Rửa rổ cũng là một việc bạn nhỏ làm đấy, đừng bỏ sót.",
           "Hút mật là việc của chú ong thợ, đưa về cột bên kia nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two columns as straight as two rows of wax cells! Muttering Bear counts all five of the child's jobs.",
+            "Right, the child is busy all day and still looks cheerful.",
+            "Muttering Bear scratches his head: the child does five jobs and I've only done one, I'd better try harder!"
+          ],
+          "wrong": [
+            "The child does not crow, that is the rooster's job.",
+            "Washing the basket is also a job the child does, don't leave it out.",
+            "Sipping nectar is the worker bee's job, move it to the other column."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Two columns in Muttering Bear's notebook",
+        "goTo": "Muttering Bear calls {name} back to the beehive flower garden, where the notebook is already ruled in two columns",
+        "prompt": "Muttering Bear rules two columns in his notebook so nothing gets mixed up, then asks {name}: which jobs belong to the child in the passage, and which to the animals and things around the garden?"
+      }
     },
     {
       "id": "dong-vai-con-vat",
@@ -450,6 +550,17 @@
         "answer": {
           "text": "Gà trống gáy gọi xóm thức dậy. Chim sâu mổ sâu cứu lá non. Ong thợ hút mật rồi về tổ.",
           "explanation": "Mỗi câu nói một con vật và việc nó làm, đúng như trong bài đọc."
+        },
+        "en": {
+          "guide": [
+            "Remember from the passage: which animal crows, which pecks bugs, which sips nectar?",
+            "Read the whole sentence out loud to see whether it fits."
+          ],
+          "hint": "The worker bee is famous for looking for flower nectar.",
+          "answer": {
+            "text": "The rooster crows to wake the hamlet. The tit pecks bugs to save the young leaves. The worker bee sips nectar, then flies home.",
+            "explanation": "Each sentence names one animal and the job it does, just as in the passage."
+          }
         }
       },
       "feedback": {
@@ -462,9 +573,26 @@
           "Gà trống mà đi hút mật thì cả vườn phải bật cười mất!",
           "Chú ong thợ làm việc gì suốt từ tờ mờ sáng nhỉ? Tìm nửa thẻ có chữ \"mật\" nhé.",
           "Việc mổ sâu là của chú chim, đọc lại câu đó xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three sentences fit together snugly, like new wax cells!",
+            "All three matched! Muttering Bear reads them out loud and the whole hive buzzes and claps.",
+            "All right, every sentence says clearly who does which job."
+          ],
+          "wrong": [
+            "A rooster sipping nectar would make the whole garden burst out laughing!",
+            "What does the worker bee do from dawn to dusk? Look for the half-card with the word «mật» (nectar).",
+            "Pecking bugs is the bird's job, read that sentence again."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong",
+      "en": {
+        "title": "Three melted wax cards",
+        "goTo": "Go back to the beeswax board, where three cards are melting in the sun",
+        "prompt": "In the sunshine the three cards stuck on with wax have melted, and the first and second halves have slipped apart. Match each first half with the second half that fits, to make a sentence saying who is doing what."
+      }
     },
     {
       "id": "cau-o-truong",
@@ -613,6 +741,17 @@
         "answer": {
           "text": "Điền lần lượt: k, m, ô, q, s, u.",
           "explanation": "Theo thứ tự bảng chữ cái, sau i là k, sau l là m, sau o là ô, sau p là q, sau r là s, sau t là u."
+        },
+        "en": {
+          "guide": [
+            "Each line gives the letter right before it and its name, so find the letter that has that name.",
+            "Recite the alphabet: g, h, i, k, l, m, n, o, ô, ơ, p, q, r, s, t, u, ư."
+          ],
+          "hint": "The letter named «ô» wears a hat; the letter named «u» has no little hook.",
+          "answer": {
+            "text": "Fill in, in order: k, m, ô, q, s, u.",
+            "explanation": "In alphabet order, after i comes k, after l comes m, after o comes ô, after p comes q, after r comes s, after t comes u."
+          }
         }
       },
       "feedback": {
@@ -625,9 +764,26 @@
           "Chữ tên \"ca\" nằm ngay sau chữ i, nhìn lại ô số 11 nhé.",
           "Chữ o tròn xoe không đội mũ, chữ ô thì có thêm chiếc mũ nhỏ trên đầu.",
           "Chữ tên \"u\" và chữ tên \"ư\" dễ lẫn lắm, đọc thật chậm rồi chọn lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six squares shine again! Muttering Bear counts: six out of six, not a cell missing.",
+            "All six letters right, and the hive wall looks as good as new.",
+            "{name} knows the order of the letters faster than a bee flies over the garden!"
+          ],
+          "wrong": [
+            "The letter named «ca» comes right after i, look at square number 11 again.",
+            "The round letter o wears no hat, but ô has a little hat on its head.",
+            "The letters named «u» and «ư» are easy to mix up, read slowly and choose again."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-chu-cai"
+      "objective": "bang-chu-cai-chu-cai",
+      "en": {
+        "title": "Six letter squares covered in honey",
+        "goTo": "Stop by the hive wall, where six letter squares are covered in honey",
+        "prompt": "The hive wall has hexagon cells carved with letters, and last night honey flowed over six of them. Using the letter right before it and its name, fill in the six missing letters."
+      }
     },
     {
       "id": "sach-cua-gau-truc",
@@ -678,6 +834,17 @@
         "answer": {
           "text": "Bầy kiến chăm chỉ, Con ốc biết hát, Đôi guốc của mưa, Hạt dẻ nhảy múa, Mùa gặt vàng",
           "explanation": "Trong bảng chữ cái, b đứng trước c, rồi tới đ, h, và m đứng sau cùng."
+        },
+        "en": {
+          "guide": [
+            "Look at the first letter of each title: H, B, M, Đ, C.",
+            "Arrange them in the order of those letters in the alphabet."
+          ],
+          "hint": "The book whose title begins with B comes first, and the one that begins with M comes last.",
+          "answer": {
+            "text": "In order: Bầy kiến chăm chỉ, Con ốc biết hát, Đôi guốc của mưa, Hạt dẻ nhảy múa, Mùa gặt vàng",
+            "explanation": "In the alphabet, b comes before c, then đ, h, and m comes last."
+          }
         }
       },
       "feedback": {
@@ -690,9 +857,33 @@
           "Nhìn chữ cái đầu tiên của tên sách thôi, chữ B phải đứng đầu đấy.",
           "Cuốn \"Mùa gặt vàng\" bắt đầu bằng chữ M nên phải xếp cuối cùng.",
           "Chữ Đ đứng trước chữ H trong bảng chữ cái, đổi chỗ hai cuốn ấy nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five books stand in a straight line, and Drowsy Koala nods slowly: goood... verrry good!",
+            "In alphabet order, and the bookshelf looks tidy at once.",
+            "Muttering Bear counts from left to right: B, C, Đ, H, M, every book correct!"
+          ],
+          "wrong": [
+            "Look only at the first letter of each title, B has to come first.",
+            "«Mùa gặt vàng» begins with M so it has to go last.",
+            "Đ comes before H in the alphabet, swap those two books."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-xep-ten"
+      "objective": "bang-chu-cai-xep-ten",
+      "en": {
+        "title": "Return the books to Drowsy Koala",
+        "goTo": "Carry five books to the eucalyptus tree, where Drowsy Koala is yawning and waiting",
+        "prompt": "Drowsy Koala lent the hive five books and said: slow... down... and put them back in the right order. Look at the first letter of each book title and arrange the five books in alphabet order.",
+        "items": [
+          "Hạt dẻ nhảy múa (dancing chestnuts)",
+          "Bầy kiến chăm chỉ (the busy ants)",
+          "Mùa gặt vàng (the golden harvest)",
+          "Đôi guốc của mưa (the rain's clogs)",
+          "Con ốc biết hát (the singing snail)"
+        ]
+      }
     },
     {
       "id": "viec-cuoi-ngay",
@@ -818,6 +1009,17 @@
         "answer": {
           "text": "bình tưới, xẻng nhỏ, thúng tre, cái cuốc, rổ nhựa, găng tay",
           "explanation": "Giữa đám cỏ có bình tưới, xẻng nhỏ, thúng tre, cái cuốc, rổ nhựa và găng tay. Xới đất, gieo hạt, hái hoa là hoạt động."
+        },
+        "en": {
+          "guide": [
+            "The name of an object is the name of something you can hold and see.",
+            "Words for jobs, like dig, sow and pick, are words for actions."
+          ],
+          "hint": "There are six names of objects, and the other three words are jobs.",
+          "answer": {
+            "text": "The objects: bình tưới, xẻng nhỏ, thúng tre, cái cuốc, rổ nhựa, găng tay",
+            "explanation": "In the grass lie a watering can, a small spade, a bamboo basket, a hoe, a plastic basket and gloves. Digging, sowing and picking are actions."
+          }
         }
       },
       "feedback": {
@@ -830,9 +1032,37 @@
           "\"Xới đất\" là việc làm, còn cái dùng để xới mới là đồ vật.",
           "Còn sót một đồ dùng làm vườn đấy, nhìn lại danh sách nhé.",
           "Gieo hạt thì vui thật, nhưng đó là hoạt động chứ không phải tên vật."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six objects found! Muttering Bear's eyes go round: even the basket wandered out into the garden!",
+            "Right, every one is an object's name, with no job mixed in.",
+            "Rice Pup barks with joy: {name} finds things better than my nose!"
+          ],
+          "wrong": [
+            "«Xới đất» is a job, and the thing you dig with is the object.",
+            "One gardening tool is still missing, look at the list again.",
+            "Sowing seeds is fun, but it is an action, not the name of an object."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Belongings lost in the grass",
+        "goTo": "Dash out to the overgrown garden corner, where some belongings are lost in the grass",
+        "prompt": "Muttering Bear counts nine things poking out of the overgrown grass, but three of them are not names of objects but jobs to do. Choose the names of the objects you find.",
+        "choices": [
+          "bình tưới",
+          "xới đất",
+          "xẻng nhỏ",
+          "thúng tre",
+          "gieo hạt",
+          "cái cuốc",
+          "rổ nhựa",
+          "hái hoa",
+          "găng tay"
+        ]
+      }
     },
     {
       "id": "vat-va-viec",
@@ -904,6 +1134,17 @@
         "answer": {
           "text": "bình tưới – tưới cây; xẻng nhỏ – xúc đất; kéo tỉa – tỉa cành; rổ tre – đựng rau; mâm tre – phơi hạt",
           "explanation": "Mỗi đồ vật gắn với một hoạt động người ta làm khi dùng nó."
+        },
+        "en": {
+          "guide": [
+            "Ask: what is this object used for?",
+            "For example: a watering can is used to water plants."
+          ],
+          "hint": "The bamboo tray is flat and wide, good for spreading seeds out in the sun.",
+          "answer": {
+            "text": "Pairs: bình tưới – tưới cây; xẻng nhỏ – xúc đất; kéo tỉa – tỉa cành; rổ tre – đựng rau; mâm tre – phơi hạt",
+            "explanation": "Each object goes with an action people do when they use it."
+          }
         }
       },
       "feedback": {
@@ -916,9 +1157,32 @@
           "Dùng kéo để xúc đất thì khó lắm đấy, thử đổi chỗ xem.",
           "Cái gì có vòi, có nước chảy ra cho cây? Đưa nó về nhóm tưới cây nhé.",
           "Đựng rau cần cái rổ chứ không cần cái xẻng, ghép lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every object finds its own job, just like the whole beehive!",
+            "All five pairs right, and Muttering Bear fills a whole page of his notebook.",
+            "{name} is so good, now the little bees know what a spade is for."
+          ],
+          "wrong": [
+            "Using scissors to scoop earth would be hard, try swapping them.",
+            "What has a spout with water running out for the plants? Put it in the watering group.",
+            "To hold vegetables you need a basket, not a spade, match them again."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "One job for each object",
+        "prompt": "Muttering Bear wants to write down what each object is used for, so the little bees can learn from it. Join each object to the job people do when they use it.",
+        "items": [
+          "xẻng nhỏ",
+          "mâm tre",
+          "bình tưới",
+          "rổ tre",
+          "kéo tỉa"
+        ]
+      }
     },
     {
       "id": "cau-viec-o-nha",
@@ -1018,5 +1282,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Muttering Bear Looks for Work",
+    "summary": "The whole beehive is busy, and only Muttering Bear has been given the job of counting bees until his head aches. {name} helps Muttering Bear note down who is working around the flower garden, carve letters on the hive wall, return books to Drowsy Koala, act in a play with Rice Pup and tidy the overgrown corner of the garden."
   }
 }

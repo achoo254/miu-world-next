@@ -323,6 +323,17 @@
         "answer": {
           "text": "Nhẩm rồi điền kết quả.; 51 – 6 = 45   37 – 8 = 29   80 – 3 = 77   94 – 5 = 89; Viết dọc rồi trừ.; 62 – 7 = 55   90 – 4 = 86   45 – 9 = 36   73 – 8 = 65",
           "explanation": "51 – 6 = 45; 37 – 8 = 29; 80 – 3 = 77; 94 – 5 = 89; 62 – 7 = 55; 90 – 4 = 86; 45 – 9 = 36; 73 – 8 = 65."
+        },
+        "en": {
+          "guide": [
+            "If the ones digit of the first number is smaller than the ones digit of the second, borrow a ten before subtracting.",
+            "Round tens like 80 and 90 also borrow a ten: 10 minus the ones digit, and the tens go down by 1."
+          ],
+          "hint": "80 – 3: borrow a ten to make 10, 10 – 3 = 7, and 7 tens are left.",
+          "answer": {
+            "text": "Work them out in your head and fill in the results.; 51 – 6 = 45   37 – 8 = 29   80 – 3 = 77   94 – 5 = 89; Write them in columns and subtract.; 62 – 7 = 55   90 – 4 = 86   45 – 9 = 36   73 – 8 = 65",
+            "explanation": "51 – 6 = 45; 37 – 8 = 29; 80 – 3 = 77; 94 – 5 = 89; 62 – 7 = 55; 90 – 4 = 86; 45 – 9 = 36; 73 – 8 = 65."
+          }
         }
       },
       "feedback": {
@@ -335,7 +346,19 @@
           "Hàng chục phải giảm 1 sau khi mượn, kiểm tra lại nhé.",
           "Số đơn vị bé hơn thì phải mượn một chục trước khi trừ.",
           "Lơ Mơ hé mắt: có túi đang thừa ngô, chắc một phép trừ chưa chuẩn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All eight gift bags have the right amount of corn, and Dreamy Koala hasn't yawned once!",
+            "Borrow a ten, then subtract. {name} works as steadily as someone hauling a bucket from a well.",
+            "Ribbon Bunny nods: eight right subtractions, and not a single cob has fallen on the ground."
+          ],
+          "wrong": [
+            "The tens must go down by 1 after borrowing. Check again.",
+            "If the ones digit is smaller, you must borrow a ten before subtracting.",
+            "Dreamy Koala opens one eye: a bag has too much corn, so one subtraction must be off."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -359,6 +382,10 @@
         "b6": "90 - 4",
         "b7": "45 - 9",
         "b8": "73 - 8"
+      },
+      "en": {
+        "title": "First round of gift bundles",
+        "prompt": "Ribbon Bunny takes some corn out for each gift bag; every subtraction is one taking-out."
       }
     },
     {
@@ -377,6 +404,17 @@
         "answer": {
           "text": "44 lít sữa",
           "explanation": "Hôm nay vắt được: 52 – 8 = 44 (lít sữa)."
+        },
+        "en": {
+          "guide": [
+            "Less than yesterday means taking the difference away from yesterday's litres.",
+            "The sum to do: 52 – 8."
+          ],
+          "hint": "2 is smaller than 8, so borrow a ten: 12 – 8 = 4, and 4 tens are left.",
+          "answer": {
+            "text": "44 litres of milk",
+            "explanation": "Today she gave: 52 – 8 = 44 (litres of milk)."
+          }
         }
       },
       "feedback": {
@@ -389,14 +427,31 @@
           "Hôm nay vắt ÍT hơn, vậy số lít phải bé hơn 52.",
           "Thử trừ có mượn: 12 – 8 rồi hàng chục giảm 1.",
           "Sắp đúng rồi, nhìn lại hàng chục sau khi đã mượn xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Forty-four litres of fragrant white milk, and Dreamy Koala is wide awake after hearing it.",
+            "Less than means subtract. You listened to the riddle and worked it out bang on.",
+            "Dream Dairy Cow lets out a long moo: that's exactly my number of litres!"
+          ],
+          "wrong": [
+            "Today she gave LESS, so the litres must be fewer than 52.",
+            "Try subtracting with borrowing: 12 – 8, then the tens go down by 1.",
+            "Nearly there. Look at the tens again after you have borrowed."
+          ]
+        }
       },
       "answer": {
         "value": 44
       },
       "goTo": "Về ruộng ngô, Koala Lơ Mơ gối đầu lên bó ngô và lẩm nhẩm một câu đố về sữa bò",
       "objective": "cong-tru-co-nho-bai-toan",
-      "expression": "52 - 8"
+      "expression": "52 - 8",
+      "en": {
+        "title": "Dream Dairy Cow's milk",
+        "goTo": "Back at the Corn Field, Dreamy Koala rests his head on a bundle of corn and mutters a riddle about cow's milk",
+        "question": "Dreamy Koala mumbles a riddle: Yesterday Dream Dairy Cow gave 52 litres of milk. Today she gave 8 litres less than yesterday. How many litres of milk did Dream Dairy Cow give today?"
+      }
     },
     {
       "id": "goi-qua-dot-hai",
@@ -554,6 +609,17 @@
         "answer": {
           "text": "71 – 4 = 67   62 – 8 = 54   55 – 9 = 46   84 – 6 = 78; 93 – 5 = 88   47 – 8 = 39   30 – 6 = 24   82 – 7 = 75",
           "explanation": "71 – 4 = 67; 62 – 8 = 54; 55 – 9 = 46; 84 – 6 = 78; 93 – 5 = 88; 47 – 8 = 39; 30 – 6 = 24; 82 – 7 = 75."
+        },
+        "en": {
+          "guide": [
+            "Line up the number you subtract under the ones of the first number, and subtract from right to left.",
+            "If the ones digit is smaller, borrow, and remember to take 1 off the tens."
+          ],
+          "hint": "93 – 5: 13 – 5 = 8, and 8 tens are left.",
+          "answer": {
+            "text": "71 – 4 = 67   62 – 8 = 54   55 – 9 = 46   84 – 6 = 78; 93 – 5 = 88   47 – 8 = 39   30 – 6 = 24   82 – 7 = 75",
+            "explanation": "71 – 4 = 67; 62 – 8 = 54; 55 – 9 = 46; 84 – 6 = 78; 93 – 5 = 88; 47 – 8 = 39; 30 – 6 = 24; 82 – 7 = 75."
+          }
         }
       },
       "feedback": {
@@ -566,7 +632,19 @@
           "Có một thúng đang bị đếm dư, kiểm tra lại chỗ mượn chục.",
           "Viết thẳng cột rồi trừ hàng đơn vị trước nhé.",
           "30 – 6: số tròn chục cũng phải mượn một chục đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two baskets of corn run down by exactly the right amount, and Ribbon Bunny is so happy he nearly kicks an empty basket.",
+            "Eight borrowings, eight right results. {name} has a steady hand.",
+            "Dreamy Koala claps bang bang, and this time he stays awake right to the end of the round."
+          ],
+          "wrong": [
+            "One basket has been counted too many. Check where you borrowed a ten.",
+            "Write them in straight columns and subtract the ones first.",
+            "30 – 6: a round ten has to borrow a ten as well."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -591,6 +669,11 @@
         "b6": "47 - 8",
         "b7": "30 - 6",
         "b8": "82 - 7"
+      },
+      "en": {
+        "title": "Second round of gift bundles",
+        "goTo": "Run to the Gift-Wrapping Hut by the Field, where Ribbon Bunny has just carried in two more baskets of corn",
+        "prompt": "Two more baskets of corn are carried to the gift-wrapping hut. Write the sums in columns and work them out."
       }
     },
     {
@@ -638,6 +721,17 @@
         "answer": {
           "text": "Hoa 37 – lọ 40 – 3; hoa 46 – lọ 52 – 6; hoa 64 – lọ 73 – 9",
           "explanation": "52 – 6 = 46, 40 – 3 = 37, 73 – 9 = 64: mỗi bông hoa vào lọ có kết quả tương ứng."
+        },
+        "en": {
+          "guide": [
+            "Work out the subtraction written on each vase.",
+            "The flower with exactly that result goes into that vase."
+          ],
+          "hint": "40 – 3: borrow a ten, 10 – 3 = 7, and 3 tens are left.",
+          "answer": {
+            "text": "Flower 37 – vase 40 – 3; flower 46 – vase 52 – 6; flower 64 – vase 73 – 9",
+            "explanation": "52 – 6 = 46, 40 – 3 = 37, 73 – 9 = 64: each flower goes into the vase with the matching result."
+          }
         }
       },
       "feedback": {
@@ -650,7 +744,19 @@
           "Có một bông đang cắm nhầm lọ hàng xóm.",
           "Tính phép trừ trên lọ trước rồi hẵng chọn hoa nhé.",
           "Lọ 40 – 3 còn lại mấy? Bông ghi số đó mới vừa."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three sweet-smelling vases, and Dreamy Koala takes a long sniff and almost dozes off again.",
+            "Every vase has the right flower, as pretty as a flower shop at the market.",
+            "Auntie Huệ ties a bow round each vase: perfect to the last detail!"
+          ],
+          "wrong": [
+            "One flower has been put in the neighbour's vase by mistake.",
+            "Work out the subtraction on the vase first, then pick the flower.",
+            "What is left of 40 – 3? The flower with that number fits."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -660,7 +766,12 @@
         }
       },
       "goTo": "Ra hàng rào hoa, Bác Huệ trồng hoa đang tỉa từng bông thật xinh",
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "Arrange the flowers",
+        "goTo": "Go to the Flower Fence, where Auntie Huệ is trimming each bloom beautifully",
+        "prompt": "Dreamy Koala wants every gift bag to come with a pretty vase of flowers. Put each flower into the vase whose difference equals the number on the flower."
+      }
     },
     {
       "id": "duong-ve-nha-soc",
@@ -822,6 +933,17 @@
         "answer": {
           "text": "71 – 5 = 66   33 + 33 = 66   40 + 26 = 66   80 – 9 = 71   72 – 6 = 66   91 – 4 = 87   85 – 8 = 77; Nhà của sóc là nhà mái xanh.",
           "explanation": "71 – 5 = 66, 33 + 33 = 66, 72 – 6 = 66: ba phép tính bằng nhau dẫn tới nhà mái xanh. Lối 40 + 26 cũng bằng 66 nhưng hai đường sau nó là 87 và 77."
+        },
+        "en": {
+          "guide": [
+            "Work out all the sums on the turnings.",
+            "The right path passes through three sums with the same result, joined one after another from the start to the house."
+          ],
+          "hint": "71 – 5 = 66; now look for two more sums that also equal 66 and are joined up.",
+          "answer": {
+            "text": "71 – 5 = 66   33 + 33 = 66   40 + 26 = 66   80 – 9 = 71   72 – 6 = 66   91 – 4 = 87   85 – 8 = 77; The squirrel's home is the blue-roofed house.",
+            "explanation": "71 – 5 = 66, 33 + 33 = 66, 72 – 6 = 66: three equal sums lead to the blue-roofed house. The 40 + 26 turning also equals 66, but the two paths after it give 87 and 77."
+          }
         }
       },
       "feedback": {
@@ -834,7 +956,19 @@
           "Lối rẽ xuống cũng ra 66 đấy, nhưng đi tiếp thì sao?",
           "Ba phép tính trên đường phải cùng một kết quả mới đúng.",
           "Tính lại 80 – 9 và 72 – 6 xem phép nào bằng 66."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The fluffy squirrel rolls home to the blue-roofed house, wagging its tail in thanks.",
+            "Three 66s joined together like three pebbles leading the way!",
+            "You didn't fall for the 40 + 26 turning. Sharp eyes!"
+          ],
+          "wrong": [
+            "The turning that goes down also gives 66, but what about going on from there?",
+            "The three sums on the path must all give the same result to be right.",
+            "Work out 80 – 9 and 72 – 6 again and see which one equals 66."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -858,6 +992,11 @@
         "b5": "72 - 6",
         "b6": "91 - 4",
         "b7": "85 - 8"
+      },
+      "en": {
+        "title": "The way to the squirrel's home",
+        "goTo": "Back to the Corn Field, where Dreamy Koala is hugging a fluffy squirrel that wants to go home",
+        "prompt": "The fluffy squirrel from the toy workshop has wandered into the corn field and wants to go home. The start of the path says 71 – 5; the turning that goes up says 33 + 33, the turning that goes down says 40 + 26. After 33 + 33 there is a path 80 – 9 to the red-roofed house and a path 72 – 6 to the blue-roofed house; after 40 + 26 there is a path 91 – 4 to the purple-roofed house and a path 85 – 8 to the orange-roofed house. Only one route is right: the three sums it passes through all give the same number. Find the squirrel's home."
       }
     },
     {
@@ -876,6 +1015,17 @@
         "answer": {
           "text": "43 cây hoa hồng",
           "explanation": "Số cây hoa hồng: 50 – 7 = 43 (cây)."
+        },
+        "en": {
+          "guide": [
+            "The 50 plants include both roses and chrysanthemums.",
+            "Take away the chrysanthemums and the roses are left."
+          ],
+          "hint": "50 – 7: borrow 10, 10 – 7 = 3, and 4 tens are left.",
+          "answer": {
+            "text": "43 rose plants",
+            "explanation": "The number of rose plants: 50 – 7 = 43 (plants)."
+          }
         }
       },
       "feedback": {
@@ -888,14 +1038,31 @@
           "50 cây tính cả cúc lẫn hồng, phải bớt cây cúc ra.",
           "Phép trừ 50 – 7 có mượn từ hàng chục đấy nhé.",
           "Số cây hồng phải ít hơn 50 chứ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Forty-three blazing red roses, and Dreamy Koala wants to pick one for Dream Dairy Cow.",
+            "Take out the chrysanthemums and the roses are left. You thought in the right direction.",
+            "Auntie Huệ waves her pruning shears: that's spot on!"
+          ],
+          "wrong": [
+            "The 50 plants count both chrysanthemums and roses, so take the chrysanthemums away.",
+            "The subtraction 50 – 7 borrows from the tens.",
+            "The number of roses must be fewer than 50."
+          ]
+        }
       },
       "answer": {
         "value": 43
       },
       "goTo": "Lại ra hàng rào hoa, Bác Huệ chỉ vườn hồng và cúc phía bên trong",
       "objective": "cong-tru-co-nho-bai-toan",
-      "expression": "50 - 7"
+      "expression": "50 - 7",
+      "en": {
+        "title": "The flower garden behind the fence",
+        "goTo": "Back to the Flower Fence, where Auntie Huệ points out the roses and chrysanthemums inside",
+        "question": "Dreamy Koala stands on tiptoe to peek over the flower fence. Auntie Huệ says the garden has 50 roses and chrysanthemums together, and 7 of them are chrysanthemums. So how many rose plants has she planted?"
+      }
     },
     {
       "id": "na-chon-cach-goi",
@@ -1081,6 +1248,17 @@
         "answer": {
           "text": "a) 38 → + 2 → 40 → – 7 → 33; b) 41 → – 6 → 35 → + 46 → 81; Ba chiếc xe đồ chơi che ba số 20, 30 và 60. Mỗi xe che số nào?; 80 – xe đỏ = 60: xe đỏ che 20; xe vàng – xe tím = 30: xe vàng che 60, xe tím che 30",
           "explanation": "38 + 2 = 40; 38 + 2 – 7 = 33; 41 – 6 = 35; 41 – 6 + 46 = 81; 80 – 20 = 60; 60 – 30 = 30; 60 – 30 = 30."
+        },
+        "en": {
+          "guide": [
+            "Do whatever sum each arrow shows; the result of one box is the start of the next.",
+            "Whatever number a car hides, try putting that number in and see whether the sum works."
+          ],
+          "hint": "80 minus what equals 60? The other two numbers are 30 and 60, and the bigger one minus the smaller must give 30.",
+          "answer": {
+            "text": "a) 38 → + 2 → 40 → – 7 → 33; b) 41 → – 6 → 35 → + 46 → 81; Three toy cars hide three numbers 20, 30 and 60. Which number does each car hide?; 80 – red car = 60: the red car hides 20; yellow car – purple car = 30: the yellow car hides 60, the purple car hides 30",
+            "explanation": "38 + 2 = 40; 38 + 2 – 7 = 33; 41 – 6 = 35; 41 – 6 + 46 = 81; 80 – 20 = 60; 60 – 30 = 30; 60 – 30 = 30."
+          }
         }
       },
       "feedback": {
@@ -1093,7 +1271,19 @@
           "Làm lần lượt theo mũi tên, đừng nhảy cóc sang ô sau.",
           "Thử đặt số vào chỗ chiếc xe che xem phép tính có đúng không.",
           "Xe vàng phải che số lớn hơn xe tím mới ra hiệu 30."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You work wherever the arrow goes, as smoothly as a toy car.",
+            "The three cars are flipped over, and the hidden numbers are all revealed.",
+            "The little children take the solved wrapping paper and beam with delight."
+          ],
+          "wrong": [
+            "Follow the arrows one after another, don't skip ahead to the next box.",
+            "Try putting the number where the car hides and see whether the sum is right.",
+            "The yellow car must hide a bigger number than the purple car to give a difference of 30."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1115,6 +1305,10 @@
         "b5": "80 - ? = 60",
         "b6": "? - 30 = 30",
         "b7": "60 - ? = 30"
+      },
+      "en": {
+        "title": "The children's riddle",
+        "prompt": "Some little children have drawn riddles on the corn wrapping paper, and {name} fills in the missing numbers to help them."
       }
     },
     {
@@ -1154,6 +1348,17 @@
         "answer": {
           "text": "Cửa B",
           "explanation": "72 – 8 = 64, 90 – 6 = 84, 83 – 7 = 76; 84 lớn nhất nên mèo nấp sau cửa B."
+        },
+        "en": {
+          "guide": [
+            "Work out the difference written on each door.",
+            "The door with the biggest difference is where the cat is hiding."
+          ],
+          "hint": "72 – 8 = 64, 83 – 7 = 76, and what about 90 – 6?",
+          "answer": {
+            "text": "Door B",
+            "explanation": "72 – 8 = 64, 90 – 6 = 84, 83 – 7 = 76; 84 is the biggest, so the cat is hiding behind door B."
+          }
         }
       },
       "feedback": {
@@ -1166,7 +1371,19 @@
           "Mở cửa ra chỉ thấy cái xô rỗng, tính lại hiệu từng cửa nhé.",
           "76 và 84, số nào lớn hơn?",
           "Mèo chọn cửa có hiệu lớn NHẤT đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Meow! The cat pops out of door B and startles Uncle Lâm so much he drops his broom.",
+            "Door B it is, and the biggest difference is 84.",
+            "However well the cat hides, it can't escape {name}."
+          ],
+          "wrong": [
+            "You opened the door to find an empty bucket. Work out each door's difference again.",
+            "76 and 84: which one is bigger?",
+            "The cat picks the door with the BIGGEST difference."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1174,7 +1391,12 @@
         }
       },
       "goTo": "Tới kho thóc ba cánh cửa, Bác thủ kho Lâm nghe tiếng meo meo sau cửa",
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Which door is the cat hiding behind?",
+        "goTo": "Go to the Three-Door Granary, where Uncle Lâm the Storekeeper hears a meow behind a door",
+        "prompt": "The farm's cat has slipped behind three storeroom doors: door A says 72 – 8, door B says 90 – 6, door C says 83 – 7."
+      }
     },
     {
       "id": "can-mai-va-mi",
@@ -1192,6 +1414,17 @@
         "answer": {
           "text": "35 kg",
           "explanation": "Bao đậu xanh nặng: 42 – 7 = 35 (kg)."
+        },
+        "en": {
+          "guide": [
+            "Lighter means subtracting.",
+            "The sum to do: 42 – 7."
+          ],
+          "hint": "2 is smaller than 7, so borrow a ten: 12 – 7 = 5, and 3 tens are left.",
+          "answer": {
+            "text": "35 kg",
+            "explanation": "The green bean sack weighs: 42 – 7 = 35 (kg)."
+          }
         }
       },
       "feedback": {
@@ -1204,13 +1437,29 @@
           "Bao đậu nhẹ HƠN bao ngô, nên cân nặng phải bé hơn 42.",
           "Mượn 1 chục: 12 – 7 rồi hàng chục còn lại mấy?",
           "Phép tính đúng là 42 – 7 đấy, thử lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The scale needle stops at 35 kilograms, and Uncle Lâm nods and writes it in his book.",
+            "Lighter means take away. Exactly by the book.",
+            "The green bean sack wobbles on the scale: {name} works it out even faster than the scale."
+          ],
+          "wrong": [
+            "The bean sack is LIGHTER than the corn sack, so it must weigh less than 42.",
+            "Borrow 1 ten: 12 – 7, then how many tens are left?",
+            "The right sum is 42 – 7. Try again."
+          ]
+        }
       },
       "answer": {
         "value": 35
       },
       "objective": "cong-tru-co-nho-bai-toan",
-      "expression": "42 - 7"
+      "expression": "42 - 7",
+      "en": {
+        "title": "The scale by the storeroom door",
+        "question": "Uncle Lâm puts two sacks on the scale by the storeroom door. The corn sack weighs 42 kg, and the green bean sack is 7 kg lighter than the corn sack. How many kilograms does the green bean sack weigh?"
+      }
     },
     {
       "id": "bang-hieu-gau",
@@ -1300,6 +1549,17 @@
         "answer": {
           "text": "Số bị trừ | 64 | 80 | 36 | 92 | 70; Số trừ | 7 | 5 | 8 | 4 | 40; Hiệu | 57 | 75 | 28 | 88 | 30",
           "explanation": "80 – 5 = 75; 36 – 8 = 28; 92 – 4 = 88; 70 – 40 = 30."
+        },
+        "en": {
+          "guide": [
+            "The difference is the first number with the second number taken away.",
+            "The first column is the example: 64 – 7 = 57."
+          ],
+          "hint": "80 – 5: borrow 10, 10 – 5 = 5, and 7 tens are left.",
+          "answer": {
+            "text": "First number | 64 | 80 | 36 | 92 | 70; Second number | 7 | 5 | 8 | 4 | 40; Difference | 57 | 75 | 28 | 88 | 30",
+            "explanation": "80 – 5 = 75; 36 – 8 = 28; 92 – 4 = 88; 70 – 40 = 30."
+          }
         }
       },
       "feedback": {
@@ -1312,7 +1572,19 @@
           "Hiệu là lấy số bị trừ trừ đi số trừ nhé.",
           "Cột 70 và 40 là trừ hai số tròn chục, dễ hơn các cột kia.",
           "Có một ô hiệu đang lệch, kiểm tra lại chỗ mượn chục."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The book is complete, and the corn in and corn out are all clear.",
+            "Every difference box matches, and even the example column has to nod.",
+            "Dreamy Koala reads the book out loud: not one cob missing, not one cob extra!"
+          ],
+          "wrong": [
+            "The difference is the first number minus the second number.",
+            "The 70 and 40 column takes away two round tens, which is easier than the others.",
+            "One difference box is off. Check where you borrowed a ten."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1329,6 +1601,11 @@
         "b2": "36 - 8",
         "b3": "92 - 4",
         "b4": "70 - 40"
+      },
+      "en": {
+        "title": "Bunny's account book",
+        "goTo": "Go to the Gift-Wrapping Hut by the Field, where Ribbon Bunny opens the book of corn cob counts",
+        "prompt": "Ribbon Bunny keeps a book of corn cobs: the number at the start, the number given away and the number left. Fill in the empty boxes."
       }
     },
     {
@@ -1376,6 +1653,17 @@
         "answer": {
           "text": "Số 56 – ghế 60 – 4; số 85 – ghế 93 – 8; số 36 – ghế 42 – 6",
           "explanation": "42 – 6 = 36, 60 – 4 = 56, 93 – 8 = 85: mỗi chú lùn ngồi đúng chiếc ghế của mình."
+        },
+        "en": {
+          "guide": [
+            "Work out the difference written on each chair.",
+            "Each dwarf sits on the chair whose difference equals the number on his shirt."
+          ],
+          "hint": "42 – 6 = 36.",
+          "answer": {
+            "text": "Number 56 – chair 60 – 4; number 85 – chair 93 – 8; number 36 – chair 42 – 6",
+            "explanation": "42 – 6 = 36, 60 – 4 = 56, 93 – 8 = 85: each dwarf sits on his own chair."
+          }
         }
       },
       "feedback": {
@@ -1388,7 +1676,19 @@
           "Có chú lùn ngồi nhầm ghế bạn, bị đẩy ra rồi kìa.",
           "Tính hiệu trên ghế trước rồi nhìn số ghi ở áo.",
           "93 – 8 còn lại mấy? Số ấy ở trên áo chú nào?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three dwarves plop down, and the chairs creak in a cheerful way.",
+            "Every chair has its owner, and no dwarf has to stand and wait.",
+            "The dwarf in yellow leans back and snores zzz, just like Dreamy Koala."
+          ],
+          "wrong": [
+            "A dwarf has sat on his friend's chair and been pushed off.",
+            "Work out the difference on the chair first, then look at the number on the shirt.",
+            "What is left of 93 – 8? Whose shirt has that number?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1398,7 +1698,12 @@
         }
       },
       "goTo": "Quay lại kho thóc ba cánh cửa, Bác thủ kho Lâm kê ba chiếc ghế cho chú lùn",
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "Chairs for the dwarf",
+        "goTo": "Back at the Three-Door Granary, Uncle Lâm the Storekeeper sets out three chairs for the dwarves",
+        "prompt": "Three wooden dwarves guard the granary, and each wants the chair whose difference equals the number on his shirt. The chairs say 42 – 6, 60 – 4 and 93 – 8. Find a chair for each dwarf."
+      }
     },
     {
       "id": "chon-ket-qua-dung",
@@ -1443,6 +1748,17 @@
         "answer": {
           "text": "a) C. 63; b) B. 71",
           "explanation": "a) 30 + 40 – 7 = 70 – 7 = 63 (C). b) 52 – 9 + 28 = 43 + 28 = 71 (B)."
+        },
+        "en": {
+          "guide": [
+            "Work from left to right, one step at a time.",
+            "Each line has only one right answer."
+          ],
+          "hint": "30 + 40 = 70, then take away 7.",
+          "answer": {
+            "text": "Answers: a) C. 63; b) B. 71",
+            "explanation": "Working: a) 30 + 40 – 7 = 70 – 7 = 63 (C). b) 52 – 9 + 28 = 43 + 28 = 71 (B)."
+          }
         }
       },
       "feedback": {
@@ -1455,7 +1771,19 @@
           "Dòng a mới cộng xong 30 + 40, còn phải bớt 7 nữa.",
           "Dòng b: trừ 9 trước rồi mới cộng thêm 28 nhé.",
           "Mỗi dòng chỉ chọn một đáp số thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two lines, two right answers, and Dreamy Koala declares he will stay awake to see you work out more!",
+            "You worked from left to right, and every one came out right with no corrections.",
+            "You didn't fall for the answers 70 and 43. Very subtle."
+          ],
+          "wrong": [
+            "In line a you have only added 30 + 40, and you still have to take away 7.",
+            "In line b: subtract 9 first and then add 28.",
+            "Choose only one answer for each line."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1464,7 +1792,20 @@
         ]
       },
       "goTo": "Chạy về ruộng ngô, Koala Lơ Mơ tỉnh như sáo giơ bảng đố",
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Two questions to choose results",
+        "goTo": "Run back to the Corn Field, where Dreamy Koala, wide awake, holds up a riddle board",
+        "prompt": "Dreamy Koala is awake now and excitedly holds up a riddle board with two lines. Each line has three possible answers A, B and C; {name} chooses one right answer for each line. a) 30 + 40 – 7 = ? A. 70 B. 77 C. 63 b) 52 – 9 + 28 = ? A. 43 B. 71 C. 33",
+        "choices": [
+          "a) A. 70",
+          "a) B. 77",
+          "a) C. 63",
+          "b) A. 43",
+          "b) B. 71",
+          "b) C. 33"
+        ]
+      }
     },
     {
       "id": "buc-tranh-dinh-muc",
@@ -1482,6 +1823,17 @@
         "answer": {
           "text": "54 bông hoa",
           "explanation": "Số bông hoa bị khuất: 62 – 8 = 54 (bông)."
+        },
+        "en": {
+          "guide": [
+            "There are 62 flowers altogether, and 8 can be seen.",
+            "The number hidden is 62 – 8."
+          ],
+          "hint": "12 – 8 = 4, and 5 tens are left.",
+          "answer": {
+            "text": "54 flowers",
+            "explanation": "The number of hidden flowers: 62 – 8 = 54 (flowers)."
+          }
         }
       },
       "feedback": {
@@ -1494,13 +1846,29 @@
           "Số bông bị khuất là phần còn lại sau khi bớt 8 bông đang thấy.",
           "Phép trừ 62 – 8 có mượn đấy.",
           "Số bông bị khuất phải ít hơn 62 chứ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fifty-four flowers hiding in the folds, and you found them all!",
+            "The wind politely stops blowing, and the curtain lies still for {name} to count.",
+            "Take the part you can see away from the whole. The right method."
+          ],
+          "wrong": [
+            "The hidden flowers are what is left after taking away the 8 you can see.",
+            "The subtraction 62 – 8 needs borrowing.",
+            "The number of hidden flowers must be fewer than 62."
+          ]
+        }
       },
       "answer": {
         "value": 54
       },
       "objective": "cong-tru-co-nho-bai-toan",
-      "expression": "62 - 8"
+      "expression": "62 - 8",
+      "en": {
+        "title": "The curtain folded by the wind",
+        "question": "Auntie Huệ pins 62 paper flowers on the curtain that decorates the hut. The wind blows the curtain folded over, so only 8 flowers can be seen. How many flowers are hidden in the fold?"
+      }
     },
     {
       "id": "robot-tim-do-choi",
@@ -1624,6 +1992,17 @@
         "answer": {
           "text": "31 – 6 = 25 → 40 – 8 = 32 → 52 – 7 = 45 → 60 – 3 = 57 → 74 – 9 = 65; Rô-bốt sẽ tới ô tô.",
           "explanation": "31 – 6 = 25, 40 – 8 = 32, 52 – 7 = 45, 60 – 3 = 57, 74 – 9 = 65: Rô-bốt đi 25 → 32 ở hàng 1, xuống 45 ở hàng 2, rồi 57 → 65 cũng ở hàng 2 và tới ô tô."
+        },
+        "en": {
+          "guide": [
+            "Work out the five subtractions one after another.",
+            "From the box it stands on, the robot moves to the next column, straight on or one row up or down, as long as that box has the right result."
+          ],
+          "hint": "The numbers the robot passes through: 25, 32, 45, 57, 65.",
+          "answer": {
+            "text": "31 – 6 = 25 → 40 – 8 = 32 → 52 – 7 = 45 → 60 – 3 = 57 → 74 – 9 = 65; The robot will reach the car.",
+            "explanation": "31 – 6 = 25, 40 – 8 = 32, 52 – 7 = 45, 60 – 3 = 57, 74 – 9 = 65: the robot goes 25 → 32 in row 1, drops to 45 in row 2, then 57 → 65 also in row 2 and reaches the car."
+          }
         }
       },
       "feedback": {
@@ -1636,7 +2015,19 @@
           "Rô-bốt va vào hàng rào rồi, tính lại một phép trừ xem.",
           "Bước kế tiếp phải là ô ở cột bên cạnh có đúng số vừa tính.",
           "Dò lại từ ô 25 đầu tiên ở hàng 1 nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The robot climbs into the car and honks loudly, driving circles round the farm!",
+            "Dreamy Koala lost but is still cheerful: I didn't doze off once in this whole round.",
+            "Five subtractions, five right steps, and {name} wins this round."
+          ],
+          "wrong": [
+            "The robot has bumped into the fence. Work out one of the subtractions again.",
+            "The next step must be a box in the next column with exactly the number you just worked out.",
+            "Check again from the first box, 25, in row 1."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1656,6 +2047,11 @@
         "b3": "52 - 7",
         "b4": "60 - 3",
         "b5": "74 - 9"
+      },
+      "en": {
+        "title": "Guide the robot through the number grid",
+        "goTo": "Go to the Number Grid Drying Yard, where Rô Bear switches on the robot and Dreamy Koala follows, hugging a corn cob and reading out the sums",
+        "prompt": "The final round: Rô Bear sets the robot onto the number grid in the drying yard, Dreamy Koala reads out five subtractions one after another, and {name} works them out and finds the way. The grid has 3 rows of 5 boxes: row 1: 25, 32, 54, 75, 56 to the train; row 2: 52, 23, 45, 57, 65 to the car; row 3: 25, 45, 32, 75, 76 to the aeroplane. The robot steps from one column to the next, standing on the box with the result of the sum just read out. Will the robot reach the train, the car or the aeroplane?"
       }
     },
     {
@@ -1688,5 +2084,9 @@
       "phep-tru": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Dreamy Koala Gives Corn",
+    "summary": "Dreamy Koala wants to share the corn he has just picked with the little ones nearby, but he keeps dozing off halfway. {name} runs all over the farm learning subtraction with borrowing: with Ribbon Bunny at the gift-wrapping hut, with Auntie Huệ at the flower fence, with Uncle Lâm the Storekeeper at the three-door granary, and then with Rô Bear guiding a robot across the number grid in the drying yard."
   }
 }

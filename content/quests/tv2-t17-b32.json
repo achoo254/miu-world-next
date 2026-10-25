@@ -98,23 +98,23 @@
         }
       ],
       "en": {
-        "title": "Two brothers tug on a pinwheel",
-        "goTo": "Run to the windy field, where Tí the Bunny and little Tẹo are tugging back and forth",
+        "title": "The Two Siblings Tug at the Pinwheel",
+        "goTo": "Run to the windy field, where Tí the Bunny and Tiny Bunny are tugging at each other",
         "lines": [
-          "{name}, help! Tẹo's clinging to the stick and I'm holding the sails, the pinwheel's about to snap in half!",
-          "It's mine! Tí had it all morning, now it's my turn!",
-          "But I've only… huh, what was I going to say? Oh yes: I've only run ninety-nine laps!",
-          "Whoooosh… Pop! A big gust rips off all four paper sails and blows them up onto the mound.",
-          "Waaah! My pinwheel… I mean, our pinwheel… it's blown away!"
+          "{name}, save me! Tiny Bunny is clutching the handle and I'm holding a blade, and the pinwheel is about to split in two!",
+          "It's mine! Brother Tí has held it all morning, now it must be my turn!",
+          "But I only... huh, what was I about to say? Oh yes: I've only spun ninety-nine times!",
+          "Whooosh... Snap! A huge gust of wind tears off all four paper blades and blows them up onto the mound.",
+          "Waaah! My pinwheel... no, our pinwheel... has blown away!"
         ],
         "choices": [
           {
-            "text": "Don't cry, I'll go and pick them up right now!",
-            "reply": "Tí the Bunny scratches his ear: the red sail flew towards the mound… or was it the blue one? Let's just pick them all up!"
+            "text": "Don't cry, let's go and pick them up right away!",
+            "reply": "Tí the Bunny scratches his ear: the red blade flew towards the mound... or was it the blue one? Never mind, let's pick up them all to be sure!"
           },
           {
             "text": "Stop tugging, you two, the wind can hear you!",
-            "reply": "Tẹo sniffles: I've stopped tugging. {name}, will you help me find the pinwheel sails?"
+            "reply": "Tiny Bunny sniffles: I've stopped tugging. Will {name} help me find the pinwheel blades?"
           }
         ]
       }
@@ -128,7 +128,11 @@
         "tv2-t17-canh-giay-do",
         "tv2-t17-can-tre-nho",
         "tv2-t17-ghim-chong-chong"
-      ]
+      ],
+      "en": {
+        "title": "Pick up the pinwheel pieces",
+        "goTo": "Climb the breezy mound to pick up the red paper blade, the little bamboo handle and the pinwheel pin"
+      }
     },
     {
       "id": "tro-choi-voi-anh-chi-em",
@@ -206,6 +210,17 @@
         "answer": {
           "text": "Chiều nào Tuấn cũng rủ em ra mương thi thuyền.",
           "explanation": "Việc Tuấn chiều nào cũng rủ em đi thi thuyền cho thấy anh rất thích trò chơi này; hai câu kia chỉ tả chiếc thuyền."
+        },
+        "en": {
+          "guide": [
+            "Find the sentence saying Tuấn does something regularly, every afternoon.",
+            "Something done again every day shows how much Tuấn loves boats."
+          ],
+          "hint": "The other two sentences only describe the shape of the boat.",
+          "answer": {
+            "text": "Every afternoon Tuấn invited his sister to the ditch to race boats.",
+            "explanation": "The fact that Tuấn invited his sister to race boats every afternoon shows how much he loves this game; the other two sentences only describe the boat."
+          }
         }
       },
       "feedback": {
@@ -218,9 +233,31 @@
           "Câu này chỉ tả dáng chiếc thuyền, chưa nói Tuấn có thích chơi hay không.",
           "Mùi nhựa lá là của chiếc thuyền, tìm câu nói về việc Tuấn làm mỗi chiều nhé.",
           "Ối, thuyền trôi lạc hướng rồi! Đọc lại đoạn hai xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The straw scarecrow seems to nod: playing every afternoon means he really loves it!",
+            "Tí the Bunny claps: Tuấn loves boats just like I love pinwheels!",
+            "Tiny Bunny stops crying to hear what comes next."
+          ],
+          "wrong": [
+            "This sentence only describes the shape of the boat, not whether Tuấn likes playing.",
+            "The smell of leaf sap belongs to the boat, so look for the sentence about what Tuấn does each afternoon.",
+            "Oops, the boat has drifted off course! Read paragraph two again."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "The story page on the scarecrow's shirt",
+        "goTo": "Go to the cornfield in the middle of the field, where the straw scarecrow has a page of a story pinned on",
+        "question": "The straw scarecrow has a page of a story pinned on, about two siblings who love toys just like the bunnies.\nWhich detail shows that Tuấn really loves playing with banana-leaf boats?",
+        "choices": [
+          "Every afternoon Tuấn invited his little sister to the ditch behind the house to race boats.",
+          "Both ends of the boat curved up like a crescent moon.",
+          "The boat's body was lush green and smelled of leaf sap."
+        ]
+      }
     },
     {
       "id": "vi-sao-an-luon-thang",
@@ -257,6 +294,17 @@
         "answer": {
           "text": "Thuyền của Tuấn gấp chắc tay nên trôi nhanh, luôn tới cầu trước.",
           "explanation": "Thuyền gấp chắc thì trôi thẳng và nhanh, nên Tuấn luôn cập cầu ván trước Na."
+        },
+        "en": {
+          "guide": [
+            "Find the part where the siblings launch their boats on the ditch.",
+            "Whichever boat drifts to the plank bridge first wins."
+          ],
+          "hint": "Read the sentence with the words “gấp chắc tay”.",
+          "answer": {
+            "text": "Tuấn's boat is folded with a firm hand, so it floats fast and always reaches the bridge first.",
+            "explanation": "A firmly folded boat floats straight and fast, so Tuấn always reaches the plank bridge before Na."
+          }
         }
       },
       "feedback": {
@@ -269,9 +317,31 @@
           "Hai anh em thả thuyền cùng một lúc mà, đọc lại đoạn hai nhé.",
           "Mương nước chảy đều cho cả hai thuyền, đâu thiên vị ai.",
           "Thử tìm chữ \"chắc tay\" trong đoạn thứ hai nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tí the Bunny slaps his forehead: oh, it's because his hands are cleverer than Tiny Bunny's!",
+            "Right! A firmly folded boat glides much faster.",
+            "Whoosh! {name}'s answer came as fast as the wind on the field."
+          ],
+          "wrong": [
+            "The two siblings launch their boats at the same time, so read paragraph two again.",
+            "The water in the ditch flows evenly for both boats, favouring nobody.",
+            "Try looking for the words “chắc tay” in the second paragraph."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Tuấn's winning secret",
+        "goTo": "Back on the windy field, Tí the Bunny stands there scratching his ear",
+        "prompt": "Tí the Bunny is puzzled: “Hmm, I often beat Tiny Bunny too, but I've forgotten why...”\nWhy does Tuấn always win when racing boats against Na?",
+        "choices": [
+          "Tuấn's boat is folded with a firm hand, so it always reaches the bridge first.",
+          "Tuấn launches his boat a little before Na.",
+          "The water in the ditch only flows towards Tuấn's boat."
+        ]
+      }
     },
     {
       "id": "cach-an-lam-em-vui",
@@ -309,6 +379,17 @@
         "answer": {
           "text": "Tuấn chỉ cho em cách gấp mũi thuyền nhọn và hai mép thật phẳng.",
           "explanation": "Tuấn không nhường thuyền mà dạy Na gấp cho khéo, nhờ vậy thuyền của Na lướt nhanh và em thắng một lần."
+        },
+        "en": {
+          "guide": [
+            "Find the part that happens after Na sat curled up on the grassy bank.",
+            "Tuấn taught his sister a secret to make a boat go fast."
+          ],
+          "hint": "Read the sentence with the words “vuốt nhọn mũi thuyền”.",
+          "answer": {
+            "text": "Tuấn showed his sister how to fold a pointed bow and perfectly flat edges.",
+            "explanation": "Tuấn did not give up his boat; he taught Na how to fold it neatly, so her boat glided fast and she won once."
+          }
         }
       },
       "feedback": {
@@ -321,9 +402,31 @@
           "Tuấn không cất thuyền đâu, hai anh em vẫn chơi tiếp mà.",
           "Trong truyện không có chiếc thuyền nào được đem tặng cả.",
           "Sau chỗ Na ngồi thu lu là cách của Tuấn đấy, đọc lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Tí the Bunny tries pinching a paper blade into a point.",
+            "Yes, Tuấn taught his sister rather than just letting her win.",
+            "Tiny Bunny grins: brother Tuấn's way is so good!"
+          ],
+          "wrong": [
+            "Tuấn doesn't put his boat away, the two of them keep playing.",
+            "No boat is given away in the story.",
+            "Tuấn's way comes right after Na sat curled up, so read it again."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "How Tuấn makes his sibling happy",
+        "goTo": "Tiny Bunny pulls {name} back to the cornfield to read on",
+        "question": "Tiny Bunny pouts: “Losing all the time is so sad!” Read on to see what brother Tuấn does.\nWhat did Tuấn think of to make Na happy again?",
+        "choices": [
+          "Tuấn sat down and showed Na how to sharpen the bow of the boat and fold both edges flat.",
+          "Tuấn put his boat away so the two of them would stop racing.",
+          "Tuấn gave Na his most beautiful boat to launch."
+        ]
+      }
     },
     {
       "id": "tinh-cam-an-va-mai",
@@ -360,6 +463,17 @@
         "answer": {
           "text": "Tuấn và Na thương yêu nhau: anh dạy em, em vui cùng anh.",
           "explanation": "Tuấn rủ em chơi, thấy em buồn thì dạy em gấp thuyền; Na thắng và Tuấn vui cùng em. Đó là tình anh em."
+        },
+        "en": {
+          "guide": [
+            "Remember what Tuấn did when he saw his sister sad.",
+            "At the end of the story, was Tuấn sorry that she won?"
+          ],
+          "hint": "The brother teaches, the sister wins, and both laugh together.",
+          "answer": {
+            "text": "Tuấn and Na love each other: the brother teaches, the sister shares his joy.",
+            "explanation": "Tuấn invites his sister to play and teaches her to fold boats when she is sad; Na wins and Tuấn is happy for her. That is sibling love."
+          }
         }
       },
       "feedback": {
@@ -372,9 +486,31 @@
           "Giành đồ chơi là chuyện của ai đó lúc sáng cơ, đâu phải Tuấn và Na!",
           "Tuấn rủ Na chơi suốt, sao lại không thích chơi chung?",
           "Nghĩ xem: ai chỉ cách cho ai, để làm gì?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tiny Bunny hugs Brother Tí: our family loves each other like that too!",
+            "Spot on! The brother teaches, the sister's joy rubs off on him.",
+            "Tí the Bunny blushes: I... I will teach you just like Brother Tuấn."
+          ],
+          "wrong": [
+            "Fighting over toys was someone else this morning, not Tuấn and Na!",
+            "Tuấn keeps inviting Na to play, so how could he dislike playing together?",
+            "Think: who shows whom how, and why?"
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Siblings Tuấn and Na",
+        "goTo": "Back on the windy field, Tiny Bunny looks up and asks Brother Tí",
+        "prompt": "Tiny Bunny looks up and asks Brother Tí a very, very hard question.\nIn your opinion, what feelings do the siblings Tuấn and Na have for each other?",
+        "choices": [
+          "They love each other: the brother knows how to teach and the sister knows how to share his joy.",
+          "The siblings often fight over each other's boats.",
+          "The siblings don't want to play together."
+        ]
+      }
     },
     {
       "id": "ta-chiec-chong-chong",
@@ -454,6 +590,17 @@
         "answer": {
           "text": "Chiếc thuyền dài bằng gang tay, hai đầu cong như vầng trăng non, thân xanh mướt.",
           "explanation": "Các từ \"gang tay\", \"vầng trăng non\", \"xanh mướt\" trong truyện tả độ dài, hình dáng và màu của chiếc thuyền."
+        },
+        "en": {
+          "guide": [
+            "Read the second sentence of the story again.",
+            "The words for the boat's length, shape and colour are all in that sentence."
+          ],
+          "hint": "A banana-leaf boat is green, and both ends curve like a crescent moon.",
+          "answer": {
+            "text": "The boat was as long as a hand-span, both ends curved like a crescent moon, its body lush green.",
+            "explanation": "The words “gang tay”, “vầng trăng non” and “xanh mướt” in the story describe the boat's length, shape and colour."
+          }
         }
       },
       "feedback": {
@@ -466,9 +613,25 @@
           "Thuyền nhỏ xíu thế này thì không thể dài một sải tay đâu.",
           "Lá chuối tươi thì không đỏ thẫm hay xám xịt đâu nhé.",
           "Đũa thẳng tắp, còn hai đầu thuyền thì cong lên cơ mà."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tí the Bunny brags at once: my pinwheel is just as pretty as that boat!",
+            "Gang tay, vầng trăng non, xanh mướt: exactly the words in the story.",
+            "Tiny Bunny blows on it, and the pinwheel whirrs round as if praising {name}."
+          ],
+          "wrong": [
+            "A boat this tiny cannot be an arm's length long.",
+            "A fresh banana leaf is not dark red or grey.",
+            "Chopsticks are dead straight, but the two ends of the boat curve up."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "Describe the banana leaf boat",
+        "prompt": "Tí the Bunny has finished putting the pinwheel together and wants to show it off, but forgets how to describe it. The scarecrow suggests borrowing how Tuấn described his banana-leaf boat in the story page!"
+      }
     },
     {
       "id": "sieu-va-phung-phiu",
@@ -551,6 +714,17 @@
         "answer": {
           "text": "bưu điện, líu lo, lưu luyến, chịu khó",
           "explanation": "Bưu điện và lưu luyến viết vần ưu; líu lo và chịu khó viết vần iu."
+        },
+        "en": {
+          "guide": [
+            "Read each word aloud and listen: is the rhyme iu or ưu?",
+            "“Bưu điện” is where you post letters, and “lưu luyến” means not wanting to part."
+          ],
+          "hint": "Two words have the rhyme ưu and two have the rhyme iu.",
+          "answer": {
+            "text": "bưu điện (post office), líu lo (twittering), lưu luyến (reluctant to part), chịu khó (hardworking)",
+            "explanation": "Bưu điện and lưu luyến are written with ưu; líu lo and chịu khó are written with iu."
+          }
         }
       },
       "feedback": {
@@ -563,9 +737,26 @@
           "Chim hót líu lo là vần gì nhỉ? Nghe kĩ nhé.",
           "Chịu khó với líu lo mang cùng một vần đấy.",
           "Ối, có chữ đang đội nhầm vần rồi, đọc to lên nghe thử nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tiny Bunny stops pouting and smiles till his eyes crinkle!",
+            "Bưu điện, lưu luyến: the rhyme ưu is in the right place.",
+            "Tí the Bunny praises: {name}'s ears are sharper than a bunny's!"
+          ],
+          "wrong": [
+            "What rhyme is a bird's chirping “líu lo”? Listen closely.",
+            "Chịu khó and líu lo share the same rhyme.",
+            "Oops, one word is wearing the wrong rhyme. Read aloud to hear it."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "No more pouting",
+        "goTo": "Go to the cornfield in the middle of the field, where Tiny Bunny sits sulking at the scarecrow's feet",
+        "prompt": "Tiny Bunny is pouting again because the pinwheel blades aren't glued yet. Tí the Bunny coaxes: “Fill in these words and you'll stop pouting!”\nFill in iu or ưu in each box to make the right word."
+      }
     },
     {
       "id": "do-choi-van-at-ac",
@@ -623,6 +814,17 @@
         "answer": {
           "text": "xúc xắc, thắt lưng, bậc cầu thang, lọ đất",
           "explanation": "Xắc (ăc), thắt (ăt), bậc (âc), đất (ât) đều chứa vần cần tìm; bóng, diều, bút thì không."
+        },
+        "en": {
+          "guide": [
+            "Read each word and look for the rhymes ăt, ăc, ât or âc.",
+            "The letter ă has an upside-down hat, and the letter â has a hat."
+          ],
+          "hint": "There are four items: one to roll, one to tie round your waist, one to step up and one to hold water.",
+          "answer": {
+            "text": "xúc xắc (dice), thắt lưng (belt), bậc cầu thang (stair), lọ đất (clay pot)",
+            "explanation": "Xắc (ăc), thắt (ăt), bậc (âc) and đất (ât) all contain the rhymes you need; bóng, diều and bút do not."
+          }
         }
       },
       "feedback": {
@@ -635,9 +837,35 @@
           "Quả bóng mang vần ong, chữ ă hay â chưa xuất hiện đâu.",
           "Còn sót một món có vần âc ở chỗ bước lên xuống.",
           "Con diều vần iêu, hộp bút vần ut, đều không phải nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Tí the Bunny ties his belt and rolls the dice, bouncing about!",
+            "All four items: xúc xắc, thắt lưng, bậc cầu thang, lọ đất.",
+            "The toy basket is neat now, thanks to {name}'s sharp eyes."
+          ],
+          "wrong": [
+            "Quả bóng has the rhyme ong, neither ă nor â has appeared yet.",
+            "One more item with the rhyme âc is where you step up and down.",
+            "Con diều has the rhyme iêu and hộp bút has ut, so neither counts."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Tí the Bunny's toy basket",
+        "goTo": "Run back to the windy field, where Tí the Bunny is turning his toy basket upside down",
+        "prompt": "Tí the Bunny rummages through the toy basket for glue and pulls out all sorts of odds and ends, even a box of old colouring pens.\nChoose every item whose words contain one of the rhymes ăt, ăc, ât or âc.",
+        "choices": [
+          "xúc xắc",
+          "thắt lưng",
+          "bậc cầu thang",
+          "lọ đất",
+          "quả bóng",
+          "con diều",
+          "hộp bút"
+        ]
+      }
     },
     {
       "id": "tu-ngu-tinh-cam-nha",
@@ -712,6 +940,17 @@
         "answer": {
           "text": "Tình thân: đùm bọc, san sẻ, dỗ dành, nâng đỡ, âu yếm.",
           "explanation": "Những từ ấy nói người trong nhà thương nhau, lo cho nhau; ganh tị, xô đẩy, hờn mát làm cả nhà buồn."
+        },
+        "en": {
+          "guide": [
+            "Words about family closeness say that people at home love and help each other.",
+            "The example “thương yêu” is one such word."
+          ],
+          "hint": "Three words make a home sad: jealousy, shoving and sulking.",
+          "answer": {
+            "text": "Family closeness: đùm bọc, san sẻ, dỗ dành, nâng đỡ, âu yếm.",
+            "explanation": "Those words say that people at home love and look after each other; ganh tị, xô đẩy and hờn mát make the whole family sad."
+          }
         }
       },
       "feedback": {
@@ -724,9 +963,25 @@
           "“Xô đẩy” mà lên cánh chong chóng thì nó quay ngược mất!",
           "Dỗ dành là việc anh chị làm khi em khóc, hợp với cánh chong chóng đấy.",
           "Đọc lại mẫu “thương yêu” rồi tìm từ cùng nhóm với nó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The “our home” pinwheel spins fast, and every word on it is warm!",
+            "Tiny Bunny whispers: I'm putting “ganh tị” in the rubbish basket for good.",
+            "All correct! Every word on the blades makes the whole family happy."
+          ],
+          "wrong": [
+            "If “xô đẩy” goes on the pinwheel, it will spin backwards!",
+            "Dỗ dành is what older siblings do when a little one cries, so it fits on the blade.",
+            "Read the example “thương yêu” again and find words in the same group."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-tim-tu"
+      "objective": "tu-ngu-tinh-cam-tim-tu",
+      "en": {
+        "title": "Our family's pinwheel",
+        "prompt": "Tiny Bunny wants to stick really warm words on the pinwheel to call it the “our home” pinwheel.\nSort the word cards: a card about family closeness goes onto a blade, and a card that makes the whole family sad goes into the rubbish basket. For example: thương yêu."
+      }
     },
     {
       "id": "cau-noi-anh-chi-em",
@@ -771,6 +1026,17 @@
         "answer": {
           "text": "Ba câu nói về anh chị em: Chị ngã em nâng; Khôn ngoan đối đáp người ngoài…; Anh em như thể tay chân…",
           "explanation": "Ba câu ấy khuyên anh chị em đùm bọc, đừng đánh nhau; câu còn lại nói về lòng biết ơn."
+        },
+        "en": {
+          "guide": [
+            "Find the sayings that mention brother, sister, younger sibling or “chicks of one mother”.",
+            "One saying is about gratitude, not just siblings."
+          ],
+          "hint": "“Ăn quả nhớ kẻ trồng cây” tells us to remember whoever has helped us.",
+          "answer": {
+            "text": "Three sayings are about siblings: When sister falls, little sibling lifts her up; Be clever when answering outsiders...; Brothers and sisters are like hands and feet...",
+            "explanation": "Those three sayings urge brothers and sisters to look after each other and not fight; the other one is about gratitude."
+          }
         }
       },
       "feedback": {
@@ -783,9 +1049,32 @@
           "“Ăn quả nhớ kẻ trồng cây” nói về lòng biết ơn, không phải anh chị em.",
           "Còn sót câu có chữ “gà cùng một mẹ”, chính là anh chị em đấy.",
           "Thử tìm những câu có chữ anh, chị, em hoặc “chân tay” nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "If Grandma Jasmine Bunny heard {name}'s choices, she would give you the biggest carrot!",
+            "All three sayings are about siblings loving each other, correct!",
+            "Tí the Bunny recites it by heart: chị ngã em nâng!"
+          ],
+          "wrong": [
+            "“Ăn quả nhớ kẻ trồng cây” is about gratitude, not brothers and sisters.",
+            "One saying with “gà cùng một mẹ” is still missing, and that is about siblings.",
+            "Try looking for sayings with the words anh, chị, em or “tay chân”."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-tim-tu"
+      "objective": "tu-ngu-tinh-cam-tim-tu",
+      "en": {
+        "title": "Sayings Grandma Bunny often recites",
+        "goTo": "Run to Grandma's carrot patch to ask Grandma Jasmine Bunny for the second half of a saying",
+        "prompt": "Tí the Bunny remembers Grandma Jasmine Bunny often recited folk verses and sayings, but he only half remembers them.\nWhich of the sayings below are about brothers and sisters at home?",
+        "choices": [
+          "When sister falls, little sibling lifts her up.",
+          "When you eat the fruit, remember who planted the tree.",
+          "Be clever when answering outsiders\nChicks of one mother should never peck at each other.",
+          "Brothers and sisters are like hands and feet."
+        ]
+      }
     },
     {
       "id": "dau-phay-nha-soc",
@@ -882,6 +1171,17 @@
         "answer": {
           "text": "Sẻ nâu, sẻ xám bay về mái nhà làm tổ. Hai bạn nhặt rơm khô, lá mềm và lông chim để lót cho tổ thật êm.",
           "explanation": "Dấu phẩy đặt giữa “Sẻ nâu” và “sẻ xám”, giữa “rơm khô” và “lá mềm”; trước chữ “và” không cần dấu phẩy."
+        },
+        "en": {
+          "guide": [
+            "A comma separates two similar words standing next to each other.",
+            "Look for the two sparrows, and the straw and leaves, listed one after another."
+          ],
+          "hint": "There are two commas: one between the two sparrows and one between dry straw and soft leaves.",
+          "answer": {
+            "text": "Brown Sparrow, Grey Sparrow flew back to the roof to build a nest. The two friends picked up dry straw, soft leaves and feathers to line the nest so it would be very snug.",
+            "explanation": "The commas go between “Sẻ nâu” and “sẻ xám”, and between “rơm khô” and “lá mềm”; no comma is needed before “và”."
+          }
         }
       },
       "feedback": {
@@ -894,9 +1194,26 @@
           "“Hai bạn” là một cụm, đừng chẻ đôi bằng dấu phẩy nhé.",
           "Chỗ “rơm khô” với “lá mềm” đang cần một dấu phẩy đấy.",
           "Trước chữ “và” thì không cần dấu phẩy, thử lại ô gần cuối."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The letter makes sense now, and the straw and feathers line up neatly!",
+            "The comma separates “sẻ nâu” from “sẻ xám”, perfect.",
+            "Tí the Bunny nods: rơm khô, lá mềm, commas in the right places!"
+          ],
+          "wrong": [
+            "“Hai bạn” is one phrase, so do not split it with a comma.",
+            "There should be a comma between “rơm khô” and “lá mềm”.",
+            "No comma is needed before “và”, so try the box near the end again."
+          ]
+        }
       },
-      "objective": "dau-cau-dau-phay"
+      "objective": "dau-cau-dau-phay",
+      "en": {
+        "title": "The nest letter",
+        "goTo": "Back on the windy field, Tí the Bunny has just received a letter from a friend",
+        "prompt": "A sparrow friend sent Tí the Bunny a letter about building a nest, but forgot all the commas. Here is the letter:\nTap each box: where a comma is needed choose “,”, and where it is not needed choose “no mark”."
+      }
     },
     {
       "id": "dau-phay-loi-khen-chi",
@@ -979,6 +1296,17 @@
         "answer": {
           "text": "Anh tớ rất chăm, khéo tay. Anh hay gấp thuyền cho tớ, dạy tớ buộc dây giày, cùng tớ tưới cây. Tớ quý anh lắm!",
           "explanation": "Dấu phẩy ngăn “chăm” với “khéo tay”, và ngăn ba việc “gấp thuyền”, “dạy buộc dây giày”, “cùng tưới cây”."
+        },
+        "en": {
+          "guide": [
+            "Find the things the brother does, listed one after another.",
+            "Each item in the list needs a comma to separate it."
+          ],
+          "hint": "There are three commas: one after “chăm”, and two separating the three things my brother does with me.",
+          "answer": {
+            "text": "My brother is very diligent and good with his hands. He often folds boats for me, teaches me to tie my shoelaces, waters the plants with me. I love my brother so much!",
+            "explanation": "The commas separate “chăm” from “khéo tay”, and the three things “gấp thuyền”, “dạy buộc dây giày” and “cùng tưới cây”."
+          }
         }
       },
       "feedback": {
@@ -991,9 +1319,26 @@
           "“Anh tớ” là một cụm, đừng tách nó ra nhé.",
           "Anh làm ba việc kể liền nhau, cần dấu phẩy ngăn từng việc.",
           "Giữa “chăm” và “khéo tay” còn thiếu một dấu phẩy đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three commas sit in their seats, and the letter reads as smooth as a lullaby!",
+            "Tiny Bunny reads it back in one breath without tripping on a word.",
+            "Gấp thuyền, dạy buộc dây giày, tưới cây: comma, comma, perfect!"
+          ],
+          "wrong": [
+            "“Anh tớ” is one phrase, so do not split it.",
+            "My brother does three things listed together, and a comma must separate each one.",
+            "A comma is still missing between “chăm” and “khéo tay”."
+          ]
+        }
       },
-      "objective": "dau-cau-dau-phay"
+      "objective": "dau-cau-dau-phay",
+      "en": {
+        "title": "A letter praising big brother",
+        "goTo": "Go to the fence next door, where Guava Bunny holds out a letter praising his brother for Tiny Bunny",
+        "prompt": "Tiny Bunny reads the letter that the neighbouring bunny wrote praising his older brother, and it is missing commas too. Have all the commas gone off to play far away today?\nPut “,” in a box that needs one, and leave “no mark” in one that does not."
+      }
     },
     {
       "id": "chia-chong-chong",
@@ -1026,21 +1371,21 @@
         }
       ],
       "en": {
-        "title": "How do we share?",
-        "goTo": "Back in the windy field, the pinwheel is all neatly put back together",
+        "title": "How Shall We Play Together?",
+        "goTo": "Back on the windy field, where the pinwheel is neatly put together",
         "lines": [
-          "The pinwheel's fixed! Now… huh, what was I going to say? Oh, who gets to hold it first?",
-          "I'm the littlest, I go first! … Actually, never mind, I know Tí loves it too.",
-          "{name}, help us pick a way to play so nobody ends up sad like little Na!"
+          "The pinwheel is finished! Now... huh, what was I going to say? Oh yes, who holds it first?",
+          "I'm the smallest, so I go first! ... But then, Brother Tí likes it a lot too, I know.",
+          "{name}, please choose a way for us to play so nobody ends up as gloomy as little Na!"
         ],
         "choices": [
           {
             "text": "Take turns, one lap each",
-            "reply": "Tí the Bunny counts: lap one is Tẹo's, lap two is mine, lap three is… whose again?"
+            "reply": "Tí the Bunny counts: lap one for Tẹo, lap two for me, lap three for... whose was it again?"
           },
           {
-            "text": "Tẹo holds it first, and Tí shows him how to grip the stick firmly, like Tuấn",
-            "reply": "Tí the Bunny nods: a firm grip makes the pinwheel spin like mad, just like Tuấn's banana-leaf boat!"
+            "text": "Tẹo holds it first, and Brother Tí shows him how to hold the handle firmly like Brother Tuấn",
+            "reply": "Tí the Bunny nods: a firm handle makes the pinwheel spin fast, just like Brother Tuấn's banana-leaf boat!"
           }
         ]
       }
@@ -1093,6 +1438,17 @@
         "answer": {
           "text": "Bố",
           "explanation": "Cáo nhỏ mở đầu bằng “Bố ơi!”, nên tin nhắn này gửi cho bố."
+        },
+        "en": {
+          "guide": [
+            "A message usually begins by calling the person it is for.",
+            "At the end of a message comes the name of the writer: Cáo nhỏ."
+          ],
+          "hint": "The first line of the note is “Bố ơi!”.",
+          "answer": {
+            "text": "Bố",
+            "explanation": "Little Fox begins with “Bố ơi!”, so this message is for Dad."
+          }
         }
       },
       "feedback": {
@@ -1105,9 +1461,32 @@
           "Bác Gấu là người rủ Cáo nhỏ đi chơi cơ, còn người nhận tin là ai?",
           "Đọc dòng đầu tiên của tờ giấy xem Cáo nhỏ gọi ai.",
           "Bạn thỏ nào có trong tin nhắn đâu, nhìn lại chữ đầu tờ giấy nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Dad! Tí the Bunny cheers: then I must leave a message for my mum too!",
+            "Spot on, the first line of the message calls “Bố ơi!” loud and clear.",
+            "Tiny Bunny praises {name} for reading the message faster than a bunny runs."
+          ],
+          "wrong": [
+            "Uncle Bear is the one who invited Little Fox to play, so who is the message for?",
+            "Read the first line of the note to see whom Little Fox calls.",
+            "There is no bunny friend in the message, so look at the first words on the note again."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "The paper at the foot of the chestnut tree",
+        "goTo": "Go to the chestnut tree at the edge of the field, where someone has pinned a note on the trunk",
+        "text": "Dad!\nThis afternoon Uncle Bear invited\nme over to his house to play chess.\nI'll eat dinner at his house.\nI'll be back tonight, so don't worry, Dad!\nLove,\nLittle Fox",
+        "question": "It is getting dark, and Tí the Bunny suddenly remembers: “Oh no, I forgot to tell Mum I was going far to play!” See what Little Fox left on the note.\nWho is Little Fox sending the message to?",
+        "choices": [
+          "Dad",
+          "Uncle Bear",
+          "A bunny friend"
+        ]
+      }
     },
     {
       "id": "doc-ve-ca-nha",
@@ -1166,8 +1545,8 @@
       "trigger": "auto",
       "text": "Hai anh em thỏ tặng {name} một chiếc chong chóng có ba cánh ghi “thương”, “nhường”, “chơi chung”. Còn cánh thứ tư ghi gì thì… Thỏ Tí quên mất rồi, {name} tự nghĩ nhé!",
       "en": {
-        "title": "The three-word pinwheel",
-        "text": "The rabbit brothers give {name} a pinwheel whose three sails say “love”, “give way” and “play together”. As for what the fourth sail says… Tí the Bunny has forgotten, so {name} can decide!"
+        "title": "The Three-Word Pinwheel",
+        "text": "The two bunny brothers give {name} a pinwheel with three blades marked “thương”, “nhường” and “chơi chung”. What the fourth blade says... Tí the Bunny has forgotten, so {name} can think of it!"
       }
     },
     {
@@ -1177,8 +1556,8 @@
       "trigger": "auto",
       "text": "Từ phía Lâu đài vọng lại tiếng kèn rộn ràng: cây cầu treo trước cổng thành sắp khánh thành! Muốn cắt băng, {name} sẽ vượt từng nhịp cầu bằng một thử thách ôn tập chặng cuối.",
       "en": {
-        "title": "Trumpets at the Castle",
-        "text": "Trumpets ring out from the Castle: the suspension bridge before the castle gate is about to open! To cut the ribbon, {name} will cross each span of the bridge with a final-stretch review challenge."
+        "title": "Bugles at the Castle",
+        "text": "A lively bugle call drifts from the Castle: the suspension bridge in front of the castle gate is about to be opened! To cut the ribbon, {name} will cross the bridge span by span with a final review challenge each time."
       }
     }
   ],
@@ -1191,5 +1570,9 @@
       "tu-ngu": 1,
       "dau-cau": 1
     }
+  },
+  "en": {
+    "title": "Tí the Bunny Fights Over the Pinwheel with Little Sibling",
+    "summary": "On the windy field behind the village, Tí the Bunny and Tiny Bunny tug at a pinwheel so hard that the wind snatches all four of its blades. {name} gathers the pieces, reads the story of brothers and sisters Tuấn and Na racing banana-leaf boats, then helps the two bunnies find a way to play together happily."
   }
 }

@@ -41,11 +41,20 @@
       "kind": "dialogue",
       "target": "vt-kr-se-con",
       "lines": [
-        { "speaker": "Sẻ Con", "text": "Chiếp chiếp… Cơn gió ban sáng hất tớ khỏi tổ, cánh tớ còn non chưa bay lên nổi." },
-        { "speaker": "Sẻ Con", "text": "Tổ của tớ cũng bị gió làm xô lệch rồi. {name} giúp tớ làm lại tổ và đưa tớ về được không?" }
+        {
+          "speaker": "Sẻ Con",
+          "text": "Chiếp chiếp… Cơn gió ban sáng hất tớ khỏi tổ, cánh tớ còn non chưa bay lên nổi."
+        },
+        {
+          "speaker": "Sẻ Con",
+          "text": "Tổ của tớ cũng bị gió làm xô lệch rồi. {name} giúp tớ làm lại tổ và đưa tớ về được không?"
+        }
       ],
       "choices": [
-        { "text": "Đừng lo, tớ giúp cậu ngay!", "reply": "Cảm ơn cậu! Đồ làm tổ hay rơi ở bãi lá khô gần đây đấy." }
+        {
+          "text": "Đừng lo, tớ giúp cậu ngay!",
+          "reply": "Cảm ơn cậu! Đồ làm tổ hay rơi ở bãi lá khô gần đây đấy."
+        }
       ],
       "en": {
         "title": "A baby sparrow lost from the nest",
@@ -88,7 +97,26 @@
           "clue": "Nhẹ tênh, trắng muốt, chỉ một làn gió thoảng là bay lên.",
           "target": "vt-kr-long-vu"
         }
-      ]
+      ],
+      "en": {
+        "title": "Pick up nest-building things",
+        "goTo": "Go to the pile of dry leaves to find nest-building things for Baby Sparrow",
+        "prompt": "A cosy nest needs three things. Read the hints and find each one:",
+        "items": [
+          {
+            "name": "Bundle of dry twigs",
+            "clue": "Small, crisp, dry sticks snapped off the branches, used to build the frame of the nest."
+          },
+          {
+            "name": "Handful of golden straw",
+            "clue": "Long, pale yellow strands, soft and smelling of sunshine, laid inside the nest to make it snug."
+          },
+          {
+            "name": "White feather",
+            "clue": "Light as air and snowy white, it floats up at the slightest breeze."
+          }
+        ]
+      }
     },
     {
       "id": "doc-loi-nhan-se-me",
@@ -100,22 +128,78 @@
       "text": "Con yêu của mẹ,\nMẹ bay đi tìm thóc, chiều mẹ về. Tổ nhà mình ở trên cây dẻ cao nhất, cạnh xưởng gỗ của bác Hải Ly. Nếu lạc đường, con cứ hỏi bác Hải Ly, bác biết lối đi tránh bụi gai.\nMẹ của con.",
       "question": "Theo lời nhắn, ai biết lối đi tới cây dẻ mà tránh được bụi gai?",
       "choices": [
-        { "id": "a", "text": "Sẻ Mẹ" },
-        { "id": "b", "text": "Bác Hải Ly" },
-        { "id": "c", "text": "Sẻ Con" }
+        {
+          "id": "a",
+          "text": "Sẻ Mẹ"
+        },
+        {
+          "id": "b",
+          "text": "Bác Hải Ly"
+        },
+        {
+          "id": "c",
+          "text": "Sẻ Con"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm câu có chữ «lạc đường».", "Xem lời nhắn bảo con hỏi ai."],
+        "guide": [
+          "Tìm câu có chữ «lạc đường».",
+          "Xem lời nhắn bảo con hỏi ai."
+        ],
         "hint": "Người đó có một xưởng gỗ ngay cạnh cây dẻ.",
         "answer": {
           "text": "Bác Hải Ly",
           "explanation": "Lời nhắn viết: nếu lạc đường, con cứ hỏi bác Hải Ly, bác biết lối đi tránh bụi gai."
+        },
+        "en": {
+          "guide": [
+            "Find the sentence with the words «lose your way».",
+            "See who the note tells the little one to ask."
+          ],
+          "hint": "That person has a wood workshop right next to the chestnut tree.",
+          "answer": {
+            "text": "Uncle Beaver",
+            "explanation": "The note says: if you lose your way, just ask Uncle Beaver, he knows the path that avoids the thorn bushes."
+          }
         }
       },
       "feedback": {
-        "right": ["Phải rồi, mình sang xưởng gỗ hỏi bác Hải Ly thôi!", "{name} tìm đúng câu dặn dò của Sẻ Mẹ rồi.", "Đọc chậm mà chắc, lời nhắn chẳng giấu được gì!"],
-        "wrong": ["Sẻ Mẹ đang bay đi tìm thóc mà, đọc lại câu cuối nhé {name}.", "Sẻ Con đang lạc nên chưa biết đường đâu.", "Tìm chữ «hỏi» trong lời nhắn xem ai được nhắc tới nha."]
+        "right": [
+          "Phải rồi, mình sang xưởng gỗ hỏi bác Hải Ly thôi!",
+          "{name} tìm đúng câu dặn dò của Sẻ Mẹ rồi.",
+          "Đọc chậm mà chắc, lời nhắn chẳng giấu được gì!"
+        ],
+        "wrong": [
+          "Sẻ Mẹ đang bay đi tìm thóc mà, đọc lại câu cuối nhé {name}.",
+          "Sẻ Con đang lạc nên chưa biết đường đâu.",
+          "Tìm chữ «hỏi» trong lời nhắn xem ai được nhắc tới nha."
+        ],
+        "en": {
+          "right": [
+            "That's right, let's go to the workshop and ask Uncle Beaver!",
+            "{name} found Mother Sparrow's instruction.",
+            "Slow and sure reading, the note can't hide anything!"
+          ],
+          "wrong": [
+            "Mother Sparrow has flown off to find grain, read the last sentence again, {name}.",
+            "Baby Sparrow is lost and doesn't know the way yet.",
+            "Look for the word «ask» in the note and see who is mentioned."
+          ]
+        }
+      },
+      "en": {
+        "title": "Mother Sparrow's note",
+        "goTo": "Mother Sparrow left a note on the rock at the foot of the pine tree",
+        "text": "My darling,\nI've flown off to look for grain and I'll be back this afternoon. Our nest is in the tallest chestnut tree, next to Uncle Beaver's wood workshop. If you lose your way, just ask Uncle Beaver, he knows the path that avoids the thorn bushes.\nYour mum.",
+        "question": "According to the note, who knows the way to the chestnut tree that avoids the thorn bushes?",
+        "choices": [
+          "Mother Sparrow",
+          "Uncle Beaver",
+          "Baby Sparrow"
+        ]
       }
     },
     {
@@ -129,28 +213,105 @@
       "skill": "logic",
       "prompt": "Hải Ly vẽ bản đồ: đi từ ô có chú mèo tới ô ngôi sao, không bước vào ô tường gạch là bụi gai. Dãy bước nào đi được? (→ sang phải, ↓ đi xuống)",
       "grid": [
-        ["S", ".", "#", "."],
-        ["#", ".", ".", "#"],
-        [".", "#", ".", "."],
-        [".", ".", "#", "G"]
+        [
+          "S",
+          ".",
+          "#",
+          "."
+        ],
+        [
+          "#",
+          ".",
+          ".",
+          "#"
+        ],
+        [
+          ".",
+          "#",
+          ".",
+          "."
+        ],
+        [
+          ".",
+          ".",
+          "#",
+          "G"
+        ]
       ],
       "choices": [
-        { "id": "a", "text": "→ ↓ → ↓ → ↓" },
-        { "id": "b", "text": "↓ → → ↓ ↓ →" },
-        { "id": "c", "text": "→ → ↓ ↓ → ↓" }
+        {
+          "id": "a",
+          "text": "→ ↓ → ↓ → ↓"
+        },
+        {
+          "id": "b",
+          "text": "↓ → → ↓ ↓ →"
+        },
+        {
+          "id": "c",
+          "text": "→ → ↓ ↓ → ↓"
+        }
       ],
-      "answer": { "choice": "a" },
+      "answer": {
+        "choice": "a"
+      },
       "support": {
-        "guide": ["Đặt ngón tay lên ô có chú mèo.", "Thử từng dãy bước, gặp ô tường gạch là dãy đó sai.", "Dãy đúng đưa ngón tay tới ô ngôi sao."],
+        "guide": [
+          "Đặt ngón tay lên ô có chú mèo.",
+          "Thử từng dãy bước, gặp ô tường gạch là dãy đó sai.",
+          "Dãy đúng đưa ngón tay tới ô ngôi sao."
+        ],
         "hint": "Ngay dưới ô xuất phát là bụi gai, nên bước đầu tiên phải sang phải.",
         "answer": {
           "text": "Đi bậc thang: sang phải rồi xuống, ba lần liền",
           "explanation": "Đường đi bậc thang: cứ sang phải một ô rồi xuống một ô, ba lần là tới ngôi sao mà không chạm bụi gai."
+        },
+        "en": {
+          "guide": [
+            "Put your finger on the square with the cat.",
+            "Try each row of steps; if you meet a brick-wall square, that row is wrong.",
+            "The right row takes your finger to the square with the star."
+          ],
+          "hint": "Right below the starting square is a thorn bush, so the first step must be to the right.",
+          "answer": {
+            "text": "Go like a staircase: right then down, three times in a row",
+            "explanation": "A staircase path: go right one square then down one square, three times, and you reach the star without touching a thorn bush."
+          }
         }
       },
       "feedback": {
-        "right": ["Bác Hải Ly gật gù: đường bậc thang ấy an toàn nhất!", "{name} dò bản đồ chẳng sai một ô nào.", "Tránh hết bụi gai rồi, cây dẻ ở ngay trước mặt!"],
-        "wrong": ["Ối, dãy này bước vào bụi gai mất rồi, thử dãy khác nhé.", "Dò lại từng bước bằng ngón tay xem nào {name}.", "Bước đầu tiên đi xuống là vướng gai đấy, xem lại nha."]
+        "right": [
+          "Bác Hải Ly gật gù: đường bậc thang ấy an toàn nhất!",
+          "{name} dò bản đồ chẳng sai một ô nào.",
+          "Tránh hết bụi gai rồi, cây dẻ ở ngay trước mặt!"
+        ],
+        "wrong": [
+          "Ối, dãy này bước vào bụi gai mất rồi, thử dãy khác nhé.",
+          "Dò lại từng bước bằng ngón tay xem nào {name}.",
+          "Bước đầu tiên đi xuống là vướng gai đấy, xem lại nha."
+        ],
+        "en": {
+          "right": [
+            "Uncle Beaver nods: the staircase path is the safest!",
+            "{name} followed the map without a single wrong square.",
+            "All the thorn bushes avoided, the chestnut tree is right ahead!"
+          ],
+          "wrong": [
+            "Oops, this row steps into a thorn bush, try another.",
+            "Trace each step with your finger, {name}.",
+            "Going down as the first step runs into thorns, have another look."
+          ]
+        }
+      },
+      "en": {
+        "title": "A path around the thorn bushes",
+        "goTo": "Go to Beaver's wood workshop and ask the way to the chestnut tree",
+        "prompt": "Beaver draws a map: go from the square with the cat to the square with the star, without stepping on a brick-wall square, which is a thorn bush. Which row of steps works? (→ right, ↓ down)",
+        "choices": [
+          "→ ↓ → ↓ → ↓",
+          "↓ → → ↓ ↓ →",
+          "→ → ↓ ↓ → ↓"
+        ]
       }
     },
     {
@@ -205,9 +366,16 @@
       "kind": "dialogue",
       "target": "vt-kr-khi-leo-treo",
       "lines": [
-        { "speaker": "Khỉ Leo Trèo", "text": "Leo cây là nghề của tớ! Cậu cứ chuẩn bị tổ dưới gốc, tớ sẽ đỡ Sẻ Con lên cành thật nhẹ nhàng." }
+        {
+          "speaker": "Khỉ Leo Trèo",
+          "text": "Leo cây là nghề của tớ! Cậu cứ chuẩn bị tổ dưới gốc, tớ sẽ đỡ Sẻ Con lên cành thật nhẹ nhàng."
+        }
       ],
-      "choices": [{ "text": "Cảm ơn cậu, mình cùng ra gốc dẻ nhé!" }],
+      "choices": [
+        {
+          "text": "Cảm ơn cậu, mình cùng ra gốc dẻ nhé!"
+        }
+      ],
       "en": {
         "title": "Ask Climbing Monkey",
         "goTo": "Go to the wild guava tree and ask Climbing Monkey for help",
@@ -231,23 +399,89 @@
       "skill": "ke-chuyen",
       "prompt": "Xếp các việc theo đúng thứ tự để chiếc tổ vừa chắc vừa ấm:",
       "items": [
-        { "id": "dat-se", "label": "Đặt Sẻ Con vào tổ" },
-        { "id": "lot-rom", "label": "Lót rơm vàng vào lòng tổ" },
-        { "id": "dung-khung", "label": "Đan cành khô thành khung tổ" },
-        { "id": "trai-long", "label": "Trải lông vũ lên trên cùng" }
+        {
+          "id": "dat-se",
+          "label": "Đặt Sẻ Con vào tổ"
+        },
+        {
+          "id": "lot-rom",
+          "label": "Lót rơm vàng vào lòng tổ"
+        },
+        {
+          "id": "dung-khung",
+          "label": "Đan cành khô thành khung tổ"
+        },
+        {
+          "id": "trai-long",
+          "label": "Trải lông vũ lên trên cùng"
+        }
       ],
-      "answer": { "order": ["dung-khung", "lot-rom", "trai-long", "dat-se"] },
+      "answer": {
+        "order": [
+          "dung-khung",
+          "lot-rom",
+          "trai-long",
+          "dat-se"
+        ]
+      },
       "support": {
-        "guide": ["Việc nào làm cho tổ có hình dáng trước tiên?", "Sau khung tổ là lớp lót mềm, rồi tới lớp ấm nhất.", "Tổ xong xuôi mới đặt Sẻ Con vào."],
+        "guide": [
+          "Việc nào làm cho tổ có hình dáng trước tiên?",
+          "Sau khung tổ là lớp lót mềm, rồi tới lớp ấm nhất.",
+          "Tổ xong xuôi mới đặt Sẻ Con vào."
+        ],
         "hint": "Làm tổ giống xây nhà: dựng khung trước, trải nệm sau.",
         "answer": {
           "text": "Đan khung, lót rơm, trải lông vũ, đặt Sẻ Con",
           "explanation": "Cành khô làm khung giữ tổ chắc, rơm lót cho êm, lông vũ trên cùng cho ấm, cuối cùng mới đặt Sẻ Con vào."
+        },
+        "en": {
+          "guide": [
+            "Which job gives the nest its shape first?",
+            "After the frame comes a soft lining, then the warmest layer.",
+            "Only when the nest is finished do you put Baby Sparrow in."
+          ],
+          "hint": "Building a nest is like building a house: frame first, bedding afterwards.",
+          "answer": {
+            "text": "Weave the frame, line with straw, spread the feather, put Baby Sparrow in",
+            "explanation": "Dry twigs make a frame to hold the nest firm, straw lines it to make it soft, the feather on top keeps it warm, and last of all Baby Sparrow goes in."
+          }
         }
       },
       "feedback": {
-        "right": ["Chiếc tổ tròn xoe, chắc chắn và ấm áp quá!", "{name} làm tổ khéo như một chú chim thợ.", "Sẻ Con rúc vào lông vũ, kêu chiêm chiếp sung sướng!"],
-        "wrong": ["Chưa có khung thì rơm rơi mất, xếp lại nha {name}.", "Sẻ Con phải chờ tổ làm xong đã chứ!", "Lông vũ ấm nhất nên nằm ở lớp nào nhỉ? Thử lại nhé."]
+        "right": [
+          "Chiếc tổ tròn xoe, chắc chắn và ấm áp quá!",
+          "{name} làm tổ khéo như một chú chim thợ.",
+          "Sẻ Con rúc vào lông vũ, kêu chiêm chiếp sung sướng!"
+        ],
+        "wrong": [
+          "Chưa có khung thì rơm rơi mất, xếp lại nha {name}.",
+          "Sẻ Con phải chờ tổ làm xong đã chứ!",
+          "Lông vũ ấm nhất nên nằm ở lớp nào nhỉ? Thử lại nhé."
+        ],
+        "en": {
+          "right": [
+            "What a round, sturdy and warm nest!",
+            "{name} builds a nest as skilfully as a bird builder.",
+            "Baby Sparrow snuggles into the feather and cheeps happily!"
+          ],
+          "wrong": [
+            "Without a frame the straw falls out, put them in order again, {name}.",
+            "Baby Sparrow has to wait until the nest is finished!",
+            "Which layer should the warmest feather go in? Try again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Rebuild the nest for Baby Sparrow",
+        "goTo": "Take the nest-building things to the foot of the tall chestnut tree",
+        "prompt": "Put the jobs in the right order so the nest is both sturdy and warm:",
+        "items": [
+          "Put Baby Sparrow in the nest",
+          "Line the nest with golden straw",
+          "Weave dry twigs into the frame of the nest",
+          "Spread the feather on top"
+        ]
       }
     },
     {
@@ -276,6 +510,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "ke-chuyen": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "ke-chuyen": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: Take Baby Sparrow Home to Its Nest",
+    "summary": "A big gust of wind knocks Baby Sparrow out of its nest in the tall chestnut tree. {name} gathers nest-building things, reads Mother Sparrow's note, finds the way to the foot of the chestnut tree, chooses how to climb up and rebuilds the cosy nest."
   }
 }

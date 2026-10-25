@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "trum-cp-cua-dong",
       "lines": [
-        { "speaker": "Cua Đồng Gánh Hàng", "text": "{name} ơi, Heo Đất Khổng Lồ ở bến hàng tỉnh dậy rồi! Bạn ấy đứng chắn lối, chẳng sạp nào dọn hàng về được." },
-        { "speaker": "Cua Đồng Gánh Hàng", "text": "Heo Đất bảo ai tính nhẩm giỏi hơn mới chịu tránh đường. Mà muốn đấu thì phải có đủ đồ đong đếm của chợ." }
+        {
+          "speaker": "Cua Đồng Gánh Hàng",
+          "text": "{name} ơi, Heo Đất Khổng Lồ ở bến hàng tỉnh dậy rồi! Bạn ấy đứng chắn lối, chẳng sạp nào dọn hàng về được."
+        },
+        {
+          "speaker": "Cua Đồng Gánh Hàng",
+          "text": "Heo Đất bảo ai tính nhẩm giỏi hơn mới chịu tránh đường. Mà muốn đấu thì phải có đủ đồ đong đếm của chợ."
+        }
       ],
       "choices": [
-        { "text": "Đồ đong đếm để ở đâu hả Cua?", "reply": "Sạp tạp hóa nhỏ đằng kia vừa đổ cả ra đất, cậu nhặt giúp nhé." }
+        {
+          "text": "Đồ đong đếm để ở đâu hả Cua?",
+          "reply": "Sạp tạp hóa nhỏ đằng kia vừa đổ cả ra đất, cậu nhặt giúp nhé."
+        }
       ],
       "en": {
         "title": "Cua Đồng calls for help",
@@ -87,7 +96,26 @@
           "clue": "Có quai cầm, thành ca vạch những nấc nhỏ để đong nước cho chuẩn.",
           "target": "trum-cp-ca-dong"
         }
-      ]
+      ],
+      "en": {
+        "title": "Gather measuring things",
+        "goTo": "Go to the little general store and pick up the measuring things",
+        "prompt": "Three measuring things have fallen. Read the clues and pick them all up:",
+        "items": [
+          {
+            "name": "A 1-litre bottle of cooking oil",
+            "clue": "A clear plastic bottle holding golden, sloshing liquid for frying, with 1 litre on the label."
+          },
+          {
+            "name": "A 1-kilogram bag of rice",
+            "clue": "A cloth bag tied at the top, full of tiny white grains, and exactly 1 kilogram on the scales."
+          },
+          {
+            "name": "The measuring jug",
+            "clue": "It has a handle, and little lines up its side for measuring water exactly."
+          }
+        ]
+      }
     },
     {
       "id": "doc-noi-quy",
@@ -99,22 +127,78 @@
       "text": "NỘI QUY DÃY HÀNG CÂN ĐONG\nGạo, đường, hoa quả cân bằng ki-lô-gam.\nNước mắm, dầu ăn đong bằng lít.\nCân xong nhớ trả quả cân về đúng chỗ.\nMuốn dọn hàng khi Heo Đất còn thức, phải trả lời đúng bảy câu đố của Heo Đất.",
       "question": "Theo nội quy, dầu ăn được đong bằng đơn vị nào?",
       "choices": [
-        { "id": "a", "text": "Ki-lô-gam" },
-        { "id": "b", "text": "Lít" },
-        { "id": "c", "text": "Xăng-ti-mét" }
+        {
+          "id": "a",
+          "text": "Ki-lô-gam"
+        },
+        {
+          "id": "b",
+          "text": "Lít"
+        },
+        {
+          "id": "c",
+          "text": "Xăng-ti-mét"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm dòng có chữ «dầu ăn».", "Đọc chữ đứng sau chữ «bằng» ở dòng đó."],
+        "guide": [
+          "Tìm dòng có chữ «dầu ăn».",
+          "Đọc chữ đứng sau chữ «bằng» ở dòng đó."
+        ],
         "hint": "Dầu ăn là chất lỏng, đổ vào chai, vào ca.",
         "answer": {
           "text": "Dầu ăn đong bằng lít",
           "explanation": "Nội quy ghi: nước mắm, dầu ăn đong bằng lít."
+        },
+        "en": {
+          "guide": [
+            "Find the line with the words «dầu ăn» (cooking oil).",
+            "Read the word that comes after «bằng» (in) on that line."
+          ],
+          "hint": "Cooking oil is a liquid, poured into bottles and jugs.",
+          "answer": {
+            "text": "Cooking oil is measured in litres",
+            "explanation": "The rules say: fish sauce and cooking oil are measured in litres."
+          }
         }
       },
       "feedback": {
-        "right": ["Chất lỏng thì đong bằng lít, {name} nhớ chuẩn quá!", "Đúng dòng thứ hai của nội quy rồi.", "Cua Đồng giơ càng khen: đọc nhanh mà kĩ!"],
-        "wrong": ["Ki-lô-gam dùng để cân gạo, đường cơ, đọc lại nhé.", "Tìm dòng nhắc tới dầu ăn nha {name}.", "Xăng-ti-mét để đo độ dài, đâu phải để đong."]
+        "right": [
+          "Chất lỏng thì đong bằng lít, {name} nhớ chuẩn quá!",
+          "Đúng dòng thứ hai của nội quy rồi.",
+          "Cua Đồng giơ càng khen: đọc nhanh mà kĩ!"
+        ],
+        "wrong": [
+          "Ki-lô-gam dùng để cân gạo, đường cơ, đọc lại nhé.",
+          "Tìm dòng nhắc tới dầu ăn nha {name}.",
+          "Xăng-ti-mét để đo độ dài, đâu phải để đong."
+        ],
+        "en": {
+          "right": [
+            "Liquids are measured in litres, {name} remembered perfectly!",
+            "Right, the second line of the rules.",
+            "Cua Đồng raises a claw to praise you: quick and careful reading!"
+          ],
+          "wrong": [
+            "Kilograms are for weighing rice and sugar, read again.",
+            "Look for the line that mentions cooking oil, {name}.",
+            "Centimetres measure length, not liquid."
+          ]
+        }
+      },
+      "en": {
+        "title": "Rules of the weighing row",
+        "goTo": "Stop by the market notice post and read the row's rules",
+        "text": "RULES OF THE WEIGHING ROW\nRice, sugar and fruit are weighed in kilograms.\nFish sauce and cooking oil are measured in litres.\nWhen you have finished weighing, put the weights back in the right place.\nTo pack up while Heo Đất is still awake, you must answer his seven riddles correctly.",
+        "question": "According to the rules, which unit is cooking oil measured in?",
+        "choices": [
+          "Kilogram",
+          "Litre",
+          "Centimetre"
+        ]
       }
     },
     {
@@ -128,22 +212,79 @@
       "skill": "khoi-luong",
       "prompt": "Thỏ Nâu thử cân: một quả dưa nặng bằng 3 quả cam, một quả cam nặng bằng 2 quả chanh. Vậy một quả dưa nặng bằng mấy quả chanh?",
       "choices": [
-        { "id": "a", "text": "5 quả chanh" },
-        { "id": "b", "text": "6 quả chanh" },
-        { "id": "c", "text": "3 quả chanh" }
+        {
+          "id": "a",
+          "text": "5 quả chanh"
+        },
+        {
+          "id": "b",
+          "text": "6 quả chanh"
+        },
+        {
+          "id": "c",
+          "text": "3 quả chanh"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Thay mỗi quả cam bằng 2 quả chanh.", "Quả dưa nặng bằng 3 quả cam, tức là 3 lần 2 quả chanh.", "Cộng: 2 + 2 + 2."],
+        "guide": [
+          "Thay mỗi quả cam bằng 2 quả chanh.",
+          "Quả dưa nặng bằng 3 quả cam, tức là 3 lần 2 quả chanh.",
+          "Cộng: 2 + 2 + 2."
+        ],
         "hint": "Đổi từng quả cam ra chanh rồi đếm tất cả.",
         "answer": {
           "text": "Một quả dưa bằng 6 quả chanh",
           "explanation": "Mỗi quả cam bằng 2 quả chanh, ba quả cam là 2 + 2 + 2 = 6 quả chanh, nên quả dưa nặng bằng 6 quả chanh."
+        },
+        "en": {
+          "guide": [
+            "Swap each orange for 2 lemons.",
+            "The melon weighs 3 oranges, which is 3 lots of 2 lemons.",
+            "Add: 2 + 2 + 2."
+          ],
+          "hint": "Change each orange into lemons, then count them all.",
+          "answer": {
+            "text": "One melon is 6 lemons",
+            "explanation": "Each orange is 2 lemons, and three oranges are 2 + 2 + 2 = 6 lemons, so the melon weighs as much as 6 lemons."
+          }
         }
       },
       "feedback": {
-        "right": ["Đĩa cân thăng bằng tăm tắp, Thỏ Nâu vỗ tay!", "{name} đổi cam ra chanh khéo như người bán hàng lâu năm.", "Sáu quả chanh, cân không lệch chút nào!"],
-        "wrong": ["Mỗi quả cam bằng mấy quả chanh nhỉ? Đổi từng quả nhé.", "Đừng cộng 3 với 2, hãy đếm 2 quả chanh ba lần {name} ạ.", "Quả dưa nặng hơn 3 quả chanh nhiều đấy, thử lại nha."]
+        "right": [
+          "Đĩa cân thăng bằng tăm tắp, Thỏ Nâu vỗ tay!",
+          "{name} đổi cam ra chanh khéo như người bán hàng lâu năm.",
+          "Sáu quả chanh, cân không lệch chút nào!"
+        ],
+        "wrong": [
+          "Mỗi quả cam bằng mấy quả chanh nhỉ? Đổi từng quả nhé.",
+          "Đừng cộng 3 với 2, hãy đếm 2 quả chanh ba lần {name} ạ.",
+          "Quả dưa nặng hơn 3 quả chanh nhiều đấy, thử lại nha."
+        ],
+        "en": {
+          "right": [
+            "The scale pans balance perfectly, Brown Rabbit claps!",
+            "{name} swaps oranges for lemons like a seasoned seller.",
+            "Six lemons, not a gram out!"
+          ],
+          "wrong": [
+            "How many lemons is each orange? Swap them one at a time.",
+            "Don't add 3 and 2, count 2 lemons three times, {name}.",
+            "The melon is much heavier than 3 lemons, try again."
+          ]
+        }
+      },
+      "en": {
+        "title": "The weights puzzle",
+        "goTo": "Go to the pan-scale stall, where Brown Rabbit the Scale Keeper is putting fruit on the pan",
+        "prompt": "Brown Rabbit tries the scales: one melon weighs as much as 3 oranges, and one orange weighs as much as 2 lemons. So one melon weighs as much as how many lemons?",
+        "choices": [
+          "5 lemons",
+          "6 lemons",
+          "3 lemons"
+        ]
       }
     },
     {
@@ -208,11 +349,22 @@
           "move": "orbs",
           "prompt": "Heo Đất hỏi nhanh: 9 + 5 bằng bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "13" },
-            { "id": "b", "text": "14" },
-            { "id": "c", "text": "15" }
+            {
+              "id": "a",
+              "text": "13"
+            },
+            {
+              "id": "b",
+              "text": "14"
+            },
+            {
+              "id": "c",
+              "text": "15"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Cộng 9 với 5 bằng cách làm tròn 9 thành 10 trước.",
@@ -234,6 +386,14 @@
                 "explanation": "9 + 5 = 14 because 9 + 1 = 10 and 4 more makes 14; 13 is one short and 15 one too many."
               }
             }
+          },
+          "en": {
+            "prompt": "Heo Đất asks quickly: what is 9 + 5?",
+            "choices": [
+              "13",
+              "14",
+              "15"
+            ]
           }
         },
         {
@@ -242,11 +402,22 @@
           "move": "gem",
           "prompt": "Còn câu này thì sao: 17 − 9 bằng bao nhiêu?",
           "choices": [
-            { "id": "a", "text": "7" },
-            { "id": "b", "text": "8" },
-            { "id": "c", "text": "9" }
+            {
+              "id": "a",
+              "text": "7"
+            },
+            {
+              "id": "b",
+              "text": "8"
+            },
+            {
+              "id": "c",
+              "text": "9"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Trừ 9 khỏi 17 bằng hai bước, đi qua số 10.",
@@ -268,6 +439,14 @@
                 "explanation": "17 − 9 = 8 because 17 − 7 = 10 and 2 fewer is 8; check: 8 + 9 = 17."
               }
             }
+          },
+          "en": {
+            "prompt": "And this one: what is 17 − 9?",
+            "choices": [
+              "7",
+              "8",
+              "9"
+            ]
           }
         },
         {
@@ -276,11 +455,22 @@
           "move": "charge",
           "prompt": "Sạp có 8 quả bưởi, bác bán hàng mang thêm 6 quả nữa. Sạp có tất cả bao nhiêu quả bưởi?",
           "choices": [
-            { "id": "a", "text": "2 quả" },
-            { "id": "b", "text": "13 quả" },
-            { "id": "c", "text": "14 quả" }
+            {
+              "id": "a",
+              "text": "2 quả"
+            },
+            {
+              "id": "b",
+              "text": "13 quả"
+            },
+            {
+              "id": "c",
+              "text": "14 quả"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "«Mang thêm» nghĩa là số bưởi nhiều lên, nên làm phép cộng 8 + 6.",
@@ -302,6 +492,14 @@
                 "explanation": "8 + 6 = 14 because 8 + 2 = 10 and 4 more makes 14 pomelos; 13 is one short and 2 is 8 minus 6."
               }
             }
+          },
+          "en": {
+            "prompt": "A stall has 8 pomelos and the seller brings 6 more. How many pomelos does the stall have altogether?",
+            "choices": [
+              "2 pomelos",
+              "13 pomelos",
+              "14 pomelos"
+            ]
           }
         },
         {
@@ -310,11 +508,22 @@
           "move": "fling",
           "prompt": "Rổ có 16 quả trứng, cô bán hàng đã bán 9 quả. Rổ còn lại mấy quả trứng?",
           "choices": [
-            { "id": "a", "text": "7 quả" },
-            { "id": "b", "text": "8 quả" },
-            { "id": "c", "text": "25 quả" }
+            {
+              "id": "a",
+              "text": "7 quả"
+            },
+            {
+              "id": "b",
+              "text": "8 quả"
+            },
+            {
+              "id": "c",
+              "text": "25 quả"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đã bán 9 quả nên trứng trong rổ ít đi: làm phép trừ 16 − 9.",
@@ -336,6 +545,14 @@
                 "explanation": "16 − 9 = 7 because 16 − 6 = 10 and 3 fewer leaves 7 eggs; 25 adds by mistake and 8 is one short."
               }
             }
+          },
+          "en": {
+            "prompt": "A basket has 16 eggs and the seller has sold 9. How many eggs are left in the basket?",
+            "choices": [
+              "7 eggs",
+              "8 eggs",
+              "25 eggs"
+            ]
           }
         },
         {
@@ -344,11 +561,22 @@
           "move": "orbs",
           "prompt": "Túi gạo nặng 5 kg, túi đường nặng 2 kg. Cả hai túi nặng bao nhiêu ki-lô-gam?",
           "choices": [
-            { "id": "a", "text": "3 kg" },
-            { "id": "b", "text": "7 kg" },
-            { "id": "c", "text": "10 kg" }
+            {
+              "id": "a",
+              "text": "3 kg"
+            },
+            {
+              "id": "b",
+              "text": "7 kg"
+            },
+            {
+              "id": "c",
+              "text": "10 kg"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Muốn biết cả túi gạo lẫn túi đường nặng bao nhiêu, ta cộng 5 kg với 2 kg.",
@@ -370,6 +598,14 @@
                 "explanation": "5 kg + 2 kg = 7 kg; 3 kg is 5 minus 2, and 10 kg doubles the 5 kg instead of adding 2 kg."
               }
             }
+          },
+          "en": {
+            "prompt": "The bag of rice weighs 5 kg and the bag of sugar weighs 2 kg. How many kilograms do the two bags weigh together?",
+            "choices": [
+              "3 kg",
+              "7 kg",
+              "10 kg"
+            ]
           }
         },
         {
@@ -378,11 +614,22 @@
           "move": "gem",
           "prompt": "Can nước mắm có 10 lít, bác rót ra 4 lít để bán. Can còn lại bao nhiêu lít?",
           "choices": [
-            { "id": "a", "text": "6 lít" },
-            { "id": "b", "text": "14 lít" },
-            { "id": "c", "text": "4 lít" }
+            {
+              "id": "a",
+              "text": "6 lít"
+            },
+            {
+              "id": "b",
+              "text": "14 lít"
+            },
+            {
+              "id": "c",
+              "text": "4 lít"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Bác rót ra 4 lít để bán nên nước mắm trong can bớt đi: tính 10 − 4.",
@@ -404,6 +651,14 @@
                 "explanation": "10 litres − 4 litres = 6 litres because 6 + 4 = 10; 14 litres adds by mistake, and 4 litres is just what was poured out."
               }
             }
+          },
+          "en": {
+            "prompt": "A can holds 10 litres of fish sauce and the seller pours out 4 litres to sell. How many litres are left in the can?",
+            "choices": [
+              "6 litres",
+              "14 litres",
+              "4 litres"
+            ]
           }
         },
         {
@@ -412,11 +667,22 @@
           "move": "charge",
           "prompt": "Quả dưa hấu nặng 3 kg, quả bí ngô nặng 5 kg. Quả nào nặng hơn?",
           "choices": [
-            { "id": "a", "text": "Quả dưa hấu" },
-            { "id": "b", "text": "Quả bí ngô" },
-            { "id": "c", "text": "Hai quả nặng bằng nhau" }
+            {
+              "id": "a",
+              "text": "Quả dưa hấu"
+            },
+            {
+              "id": "b",
+              "text": "Quả bí ngô"
+            },
+            {
+              "id": "c",
+              "text": "Hai quả nặng bằng nhau"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "So sánh hai số cân: 3 kg của dưa hấu và 5 kg của bí ngô.",
@@ -434,13 +700,28 @@
               ],
               "hint": "5 is greater than 3, so look for the fruit the question says weighs 5 kg.",
               "answer": {
-                "text": "The pumpkin (quả bí ngô)",
+                "text": "The pumpkin",
                 "explanation": "The pumpkin weighs 5 kg and the watermelon 3 kg; since 5 > 3 the pumpkin is heavier, so they are not equal."
               }
             }
+          },
+          "en": {
+            "prompt": "The watermelon weighs 3 kg and the pumpkin weighs 5 kg. Which is heavier?",
+            "choices": [
+              "The watermelon",
+              "The pumpkin",
+              "They weigh the same"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Mental maths with Piggy Bank",
+        "goTo": "Go to the canal landing, where the Giant Piggy Bank is waiting",
+        "bossName": "Giant Piggy Bank",
+        "introDialogue": "Oink-oink! Here are the market's seven mental-maths questions. Every right answer, I shuffle aside to let one stall pack up!",
+        "winDialogue": "Oink-oink, I give in! {name} counts faster than the market abacus, so I'll move out of the way for the whole row."
+      }
     },
     {
       "id": "heo-dat-tang-qua",
@@ -468,6 +749,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "phep-cong": 1, "phep-tru": 1, "khoi-luong": 1, "dung-tich": 1 }
+    "skillXp": {
+      "phep-cong": 1,
+      "phep-tru": 1,
+      "khoi-luong": 1,
+      "dung-tich": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Giant Piggy Bank",
+    "summary": "At the end of market day, the Giant Piggy Bank of the weighing-stall row wakes up and blocks the way so no stall can pack up. {name} gathers the measuring things, reads the rules, solves the weights puzzle, then answers seven mental-maths questions so the market can rest."
   }
 }

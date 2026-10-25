@@ -114,7 +114,11 @@
         "tv2-t10-to-giay-xanh",
         "tv2-t10-but-long-chim",
         "tv2-t10-phong-bi-bong-tuyet"
-      ]
+      ],
+      "en": {
+        "title": "Paper and pens lost in the reeds",
+        "goTo": "Look for paper, a pen and an envelope around the reedy lakeshore"
+      }
     },
     {
       "id": "cam-xuc-ben-ban",
@@ -166,6 +170,17 @@
         "answer": {
           "text": "Én con rất buồn, buồn tới mức khó nói thành lời.",
           "explanation": "Phải rời xa ếch xanh bên ao sen nên én con buồn đến nghẹn lại."
+        },
+        "en": {
+          "guide": [
+            "Read the second paragraph of the story.",
+            "Find the sentence about the little swallow saying goodbye to the green frog."
+          ],
+          "hint": "The swallow's feeling is right there in the sentence about saying goodbye.",
+          "answer": {
+            "text": "The little swallow was very sad, so sad it was hard to put into words.",
+            "explanation": "Leaving the green frog by the lotus pond made the little swallow so sad that it could hardly speak."
+          }
         }
       },
       "feedback": {
@@ -178,9 +193,31 @@
           "Xa người bạn thân của mình thì sao mà vui nổi, đọc lại đoạn hai nhé.",
           "Én không hề mải ngắm trời đâu, én đang nói lời chia tay mà.",
           "Tìm câu kể lúc bầy én lên đường xem én con thấy thế nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes, the little swallow was very sad! Bông felt just as choked up when leaving the ice lands.",
+            "Right! Bông nods, nose dotted with sweat from the heat.",
+            "{name} found the goodbye sentence as fast as the wind carries a letter."
+          ],
+          "wrong": [
+            "How could anyone be happy leaving their best friend? Read the second paragraph again.",
+            "The swallow was not busy gazing at the sky, it was saying goodbye.",
+            "Find the sentence about the flock setting off to see how the little swallow felt."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The storybook on the Letter Boat",
+        "goTo": "Step aboard the letter boat and read the story “Thư của chim én”",
+        "question": "Bông flips through the book on the letter boat: oh, this story has two friends who must say goodbye too! When the flock of swallows set off, how did the little swallow feel?",
+        "choices": [
+          "The little swallow was very happy because the warm land was near.",
+          "The little swallow was so sad that it could hardly speak.",
+          "The little swallow did not notice anything because it was busy gazing at the sky."
+        ]
+      }
     },
     {
       "id": "soc-nhan-loi",
@@ -216,6 +253,17 @@
         "answer": {
           "text": "Ếch hứa đợi thư của én bên bờ ao rồi viết thư lại.",
           "explanation": "Én con hẹn sẽ viết thư và nhờ ếch trả lời. Ếch xanh gật đầu, hứa ngồi đợi thư bên bờ ao."
+        },
+        "en": {
+          "guide": [
+            "Find what the little swallow asked at the goodbye.",
+            "See what the green frog did after being asked."
+          ],
+          "hint": "The frog nodded and promised right after the swallow mentioned the letter.",
+          "answer": {
+            "text": "The frog promised to wait for the swallow's letter by the pond and write back.",
+            "explanation": "The little swallow said it would write and asked the frog to reply. The green frog nodded and promised to wait for the letter by the pond."
+          }
         }
       },
       "feedback": {
@@ -228,9 +276,30 @@
           "Ếch xanh vẫn ở lại ao sen, không bay theo bầy én đâu.",
           "Trong truyện chẳng có cánh sen nào được mang đi tặng, tìm lời én dặn nhé.",
           "Đọc lại câu én nói ngay trước khi ếch gật đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! The frog nodded and promised to wait for the letter by the pond.",
+            "Exactly, Bông writes that promise in his notebook at once.",
+            "Well done, {name} reads as carefully as a postman checking an address."
+          ],
+          "wrong": [
+            "The green frog stayed by the lotus pond and did not fly with the swallows.",
+            "No lotus petal gets carried away in the story. Find what the swallow asked.",
+            "Read again the sentence the swallow says just before the frog nods."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "The green frog nods and promises",
+        "question": "What did the green frog agree to do for the little swallow?",
+        "choices": [
+          "The frog agreed to fly south with the flock.",
+          "The frog agreed to bring the swallow a lotus petal every day.",
+          "The frog promised to wait for the swallow's letter and write back."
+        ]
+      }
     },
     {
       "id": "kien-viet-di-viet-lai",
@@ -267,6 +336,17 @@
         "answer": {
           "text": "Én con muốn lá thư nói được nỗi nhớ bạn, nhưng câu nào cũng chưa vừa ý.",
           "explanation": "Mỗi lần đọc lại, én thấy câu chữ chưa ưng ý vì chưa nói hết nỗi nhớ, nên mới gạch đi viết lại."
+        },
+        "en": {
+          "guide": [
+            "Read the third paragraph, where the little swallow writes on dry leaves.",
+            "See what the swallow was not happy with in its sentences."
+          ],
+          "hint": "Every sentence the swallow read back did not say how much it missed the frog.",
+          "answer": {
+            "text": "The little swallow wanted the letter to show how much it missed its friend, but no sentence felt right.",
+            "explanation": "Each time it read a sentence back, it did not say enough about the missing, so the swallow crossed it out and wrote again."
+          }
         }
       },
       "feedback": {
@@ -279,9 +359,31 @@
           "Truyện không nói én viết sai chữ đâu, đọc đoạn ba nhé.",
           "Gió chỉ mang lá thư đã viết xong đi thôi, đâu cuốn mất lá nào lúc én đang viết.",
           "Tìm chỗ én đọc lại câu mình viết và thấy chưa ưng ý xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! The little swallow wanted its words to match its feelings exactly.",
+            "Bông cheers: so I am like the little swallow, only a bit bigger… no, a lot bigger!",
+            "Spot on, {name} understands the little swallow's heart."
+          ],
+          "wrong": [
+            "The story does not say the swallow misspelled words. Read the third paragraph.",
+            "The wind only carried off the finished letter, not the leaves while the swallow was writing.",
+            "Find where the swallow reads a sentence back and is not happy with it."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The baby swallow writes again and again",
+        "goTo": "Hurry back to the lakeside letter landing, where Bông is scratching his head over a pile of drafts",
+        "question": "Bông looks at his own pile of drafts, a little embarrassed: I rewrote mine a few times too. Why did the little swallow have to write and rewrite the letter to the frog?",
+        "choices": [
+          "Because the little swallow made too many spelling mistakes.",
+          "Because the little swallow could not find words that matched how much it missed its friend.",
+          "Because the wind blew away the first leaves."
+        ]
+      }
     },
     {
       "id": "neu-khong-co-thu",
@@ -413,6 +515,17 @@
         "answer": {
           "text": "cáo, két, cò, kiến — viết c hoặc k tùy chữ đứng sau.",
           "explanation": "Cáo và cò viết c vì sau âm đầu là a, o; két và kiến viết k vì sau âm đầu là e, iê."
+        },
+        "en": {
+          "guide": [
+            "Say each animal's name out loud.",
+            "The “cờ” sound is written k before e, ê, i; before the other letters it is written c."
+          ],
+          "hint": "Két and kiến have e and iê after the first sound, so they begin with k.",
+          "answer": {
+            "text": "cáo, két, cò, kiến — c or k depending on the letter that follows.",
+            "explanation": "Cáo and cò start with c because a and o follow; két and kiến start with k because e and iê follow."
+          }
         }
       },
       "feedback": {
@@ -425,9 +538,26 @@
           "Ối, có con vật bị ghi nhầm chữ rồi, thư mà đến nhầm nhà thì gay!",
           "Nhớ luật nhé: trước e, ê, i thì viết k, như trong chữ két.",
           "Cáo với cò thì viết c, vì sau âm đầu là a và o."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Woof woof! All four envelopes have names, and Ki the Dog dashes off to deliver them!",
+            "All correct! The letters c and k stand as neat as a fence.",
+            "Ki the Dog wags his tail so hard the letter bag spins right round."
+          ],
+          "wrong": [
+            "Oops, one animal got the wrong letter. Letters sent to the wrong house are a mess!",
+            "Remember the rule: before e, ê, i we write k, as in “két”.",
+            "“Cáo” and “cò” start with c, because a and o come after the first sound."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Four envelopes with no names yet",
+        "goTo": "Go to the landing mailbox, where Ki the Dog is wagging his tail with the letter bag",
+        "prompt": "Woof! Ki the Dog wags his tail so fast that the letter bag thuds onto the grass. Four envelopes have animals drawn on them but no names yet. Choose the right spelling of each animal's name, remembering that the “cờ” sound is sometimes written c and sometimes k."
+      }
     },
     {
       "id": "buu-thiep-cua-soc",
@@ -507,6 +637,17 @@
         "answer": {
           "text": "bướu; diều; chiều",
           "explanation": "Lạc đà có hai cái bướu trên lưng, ta thả diều giấy lên trời, còn buổi chiều là lúc ngồi ngắm hồ."
+        },
+        "en": {
+          "guide": [
+            "Read each sentence and see whether the gap names a body part, a toy or a time of day.",
+            "What sticks up on a camel's back? What do you fly in the sky? Which part of the day is when the sun is about to set?"
+          ],
+          "hint": "A camel's hump, a paper kite, the evening.",
+          "answer": {
+            "text": "bướu (hump); diều (kite); chiều (evening)",
+            "explanation": "A camel has two humps (bướu) on its back, you fly a paper kite (diều) in the sky, and the evening (chiều) is when you sit looking at the lake."
+          }
         }
       },
       "feedback": {
@@ -519,9 +660,25 @@
           "Lạc đà đâu có “diều” trên lưng, đọc lại câu đầu nhé.",
           "Thứ nào bay được trên trời khi có gió? Thử đặt vào chỗ trống thứ hai xem.",
           "Chữ nào hợp với “buổi” để chỉ lúc mặt trời sắp lặn?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The postcard glows again! Ki the Dog barks two thank-yous.",
+            "All three words are right, and the rhymes «iêu» and «ươu» are not mixed up at all.",
+            "Bông claps, and the snow on his fur flutters down."
+          ],
+          "wrong": [
+            "A camel has no kite on its back, read the first sentence again.",
+            "What can fly in the sky when there is wind? Try it in the second gap.",
+            "Which word goes with “buổi” to mean when the sun is about to set?"
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "The postcard with smudged words",
+        "prompt": "Ki the Dog sniffs: the postcard Bông wrote to Bạc has three words smudged by the rain. Woof, we must rescue it! Choose the word with the rhyme «iêu» or «ươu» for each gap."
+      }
     },
     {
       "id": "ngan-chu-en-eng",
@@ -587,6 +744,17 @@
         "answer": {
           "text": "en: con sên, cây nến, lời khen; eng: reng reng, cái xẻng, eng éc",
           "explanation": "Sên, nến, khen khép môi lại ở âm n; reng, xẻng, eng ngân lên ở âm ng."
+        },
+        "en": {
+          "guide": [
+            "Read each word slowly.",
+            "Listen to whether the word ends in the “ngờ” sound (ng) or just “nờ” (n)."
+          ],
+          "hint": "Sên, nến, khen end in n; reng, xẻng, eng end in ng.",
+          "answer": {
+            "text": "en: con sên (snail), cây nến (candle), lời khen (praise); eng: reng reng (ring-ring), cái xẻng (spade), eng éc (squeal)",
+            "explanation": "Sên, nến, khen close the lips on the n sound; reng, xẻng, eng ring out on the ng sound."
+          }
         }
       },
       "feedback": {
@@ -599,9 +767,26 @@
           "Có từ đang nằm nhầm ngăn, đọc to lên nghe cuối tiếng nhé.",
           "Cây nến kết thúc bằng n, còn cái xẻng kết thúc bằng ng, nghe kỹ là thấy khác.",
           "Lời khen có ng hay chỉ có n ở cuối? Thử đọc chậm lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two tidy compartments! Roe Crab scuttles sideways, the letters jingling happily.",
+            "Right, {name} never mixes up en and eng.",
+            "Roe Crab tried saying “eng éc” three times without tripping, thanks to you!"
+          ],
+          "wrong": [
+            "A word is in the wrong compartment, say it out loud and listen to the end.",
+            "“Nến” ends in n, but “xẻng” ends in ng, listen closely and you will hear the difference.",
+            "Does “khen” end in ng or just n? Try reading it slowly."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "The bag of en and eng words",
+        "goTo": "Follow the lakeside rock, where Roe Crab is dragging a jingling bag of letters",
+        "prompt": "Roe Crab pulls a jumbled bag of letters from a crack in the rock. Help me sort them into two compartments: which words have the rhyme «en» and which have the rhyme «eng»?"
+      }
     },
     {
       "id": "tu-ngu-am-ap",
@@ -655,6 +840,17 @@
         "answer": {
           "text": "tin cậy, sẻ chia, nhớ thương, quan tâm",
           "explanation": "Tin cậy, sẻ chia, nhớ thương, quan tâm là những điều bạn tốt dành cho nhau; bỏ mặc và ganh ghét thì làm bạn xa nhau."
+        },
+        "en": {
+          "guide": [
+            "Read each word and ask yourself: does it bring friends closer?",
+            "Leave out any word that makes a friend sad."
+          ],
+          "hint": "Four words are about good feelings; the other two make friends sad.",
+          "answer": {
+            "text": "tin cậy (trust), sẻ chia (sharing), nhớ thương (missing), quan tâm (caring)",
+            "explanation": "Tin cậy, sẻ chia, nhớ thương and quan tâm are what good friends give each other; bỏ mặc and ganh ghét push friends apart."
+          }
         }
       },
       "feedback": {
@@ -667,9 +863,34 @@
           "Ối, “bỏ mặc” mà gửi cho bạn thì bạn buồn thiu mất.",
           "Còn sót một từ nói về tình bạn tốt đẹp đấy, tìm thêm nhé.",
           "Bạn thân thì đâu có “ganh ghét” nhau, bỏ từ đó ra nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four warm words are in the letter! Bông hugs the paper and feels cooler already.",
+            "Right, all words that bring friends closer together.",
+            "Bông says: if this letter reaches the ice lands, Bạc will smile from ear to ear."
+          ],
+          "wrong": [
+            "Oh dear, “bỏ mặc” would make a friend very sad.",
+            "One word about good friendship is still missing, find another.",
+            "Best friends do not “ganh ghét” each other, leave that word out."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-tim-tu"
+      "objective": "tu-ngu-tinh-cam-tim-tu",
+      "en": {
+        "title": "Words as warm as a quilt",
+        "goTo": "Back to the lakeside landing, where Bông is carefully smoothing a new sheet of paper",
+        "prompt": "Bông wants a reply so warm it melts the ice on Bạc's back. Help me pick out the words about good feelings between friends!",
+        "choices": [
+          "tin cậy",
+          "bỏ mặc",
+          "sẻ chia",
+          "nhớ thương",
+          "ganh ghét",
+          "quan tâm"
+        ]
+      }
     },
     {
       "id": "thu-cua-ca-bong",
@@ -761,6 +982,17 @@
         "answer": {
           "text": "gắn bó; mong ngóng; trò chuyện",
           "explanation": "Hai bạn gắn bó với nhau, ốc sên mong ngóng bạn mỗi khi mưa, gặp lại thì trò chuyện cả buổi. Hờn dỗi không hợp với câu chuyện nào."
+        },
+        "en": {
+          "guide": [
+            "Read the whole passage once before filling in.",
+            "The first gap says how close the two friends are, the second how the snail waits, the third what they do when they meet again."
+          ],
+          "hint": "One word is not used: hờn dỗi.",
+          "answer": {
+            "text": "gắn bó (close); mong ngóng (longing); trò chuyện (chatting)",
+            "explanation": "The two are close (gắn bó), the snail waits for its friend whenever it rains (mong ngóng), and when they meet again they chat (trò chuyện) all afternoon. “Hờn dỗi” fits nowhere in this story."
+          }
         }
       },
       "feedback": {
@@ -773,9 +1005,25 @@
           "Thử lại nhé: ốc sên chờ chim sâu về thì làm gì mỗi khi mưa rơi?",
           "Gặp lại sau bao ngày xa mà hờn dỗi nghe hơi lạ, có từ hợp hơn đấy.",
           "Chỗ trống đầu tiên nói hai bạn gần gũi với nhau thế nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The story flows again! Golden Carp flicks its tail and splashes Bông's nose.",
+            "All three gaps are right, the snail misses its friend just like Bông misses Bạc.",
+            "Nicely done, Golden Carp blows a string of bubbles to praise {name}."
+          ],
+          "wrong": [
+            "Try again: what does the snail do whenever rain falls while waiting for the little bird?",
+            "Sulking after being apart for so long sounds odd, there is a better word.",
+            "The first gap says how close the two friends are."
+          ]
+        }
       },
-      "objective": "tu-ngu-tinh-cam-dien-tu"
+      "objective": "tu-ngu-tinh-cam-dien-tu",
+      "en": {
+        "title": "The story of the snail and the little bird",
+        "prompt": "Golden Carp pops up to pass on a little story, but the lake water licked away three words. Bông asks {name} to fill them in. Choose the word that fits best in each gap, and remember that one word is not used."
+      }
     },
     {
       "id": "cau-nao-de-lam-gi",
@@ -830,6 +1078,17 @@
         "answer": {
           "text": "Kể: Sáng nào hai bạn cũng chào nhau bên ao sen. Hỏi: Vì sao én con phải gạch đi nhiều lá thư? Bộc lộ cảm xúc: Ếch ơi, ngày nào tớ cũng nhớ cậu!",
           "explanation": "Câu kể việc hằng ngày kết thúc bằng dấu chấm; câu có từ “vì sao” kết thúc bằng dấu chấm hỏi; câu nói nỗi nhớ kết thúc bằng dấu chấm than."
+        },
+        "en": {
+          "guide": [
+            "Read each sentence, noticing the mark at its end.",
+            "Which one asks? Which one tells about everyday life? Which one cries out about missing a friend?"
+          ],
+          "hint": "A sentence with a question mark asks; one with an exclamation mark usually shows feeling.",
+          "answer": {
+            "text": "Telling: Sáng nào hai bạn cũng chào nhau bên ao sen. Asking: Vì sao én con phải gạch đi nhiều lá thư? Showing feeling: Ếch ơi, ngày nào tớ cũng nhớ cậu!",
+            "explanation": "A sentence telling daily life ends with a full stop; the one with “vì sao” ends with a question mark; the one about missing a friend ends with an exclamation mark."
+          }
         }
       },
       "feedback": {
@@ -842,9 +1101,26 @@
           "Câu có chữ “vì sao” đang muốn biết điều gì đó đấy.",
           "Câu “Ếch ơi, ngày nào tớ cũng nhớ cậu!” nghe như đang reo lên, đúng không?",
           "Việc hai bạn chào nhau mỗi sáng là chuyện kể lại thôi, thử đổi chỗ xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three sentences are home! Dew Rabbit lines the lotus leaves up straight.",
+            "Right, questions ask, tellings tell and the missing cries out.",
+            "Dew Rabbit praises: {name} sorts sentences even better than Ki the Dog sorts letters!"
+          ],
+          "wrong": [
+            "The sentence with “vì sao” wants to know something.",
+            "“Ếch ơi, ngày nào tớ cũng nhớ cậu!” sounds like a cry of feeling, doesn't it?",
+            "The two friends greeting each other every morning is just a telling, try swapping places."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "What is each sentence for?",
+        "goTo": "Cross to the willow tree by the lake, where Dew Rabbit waves an ear: I have copied three sentences!",
+        "prompt": "Dew Rabbit copied three sentences from the story onto a lotus leaf and scratches an ear: what is each sentence for? Help me put each one into the right group."
+      }
     },
     {
       "id": "ten-dau-cuoi-cau",
@@ -925,6 +1201,17 @@
         "answer": {
           "text": "dấu chấm; dấu chấm hỏi; dấu chấm than",
           "explanation": "Câu kể dùng dấu chấm, câu hỏi dùng dấu chấm hỏi, câu bộc lộ cảm xúc dùng dấu chấm than."
+        },
+        "en": {
+          "guide": [
+            "Look closely at the mark at the end of each sentence.",
+            "The mark with a curved hook is the question mark; the one with a vertical stroke is the exclamation mark."
+          ],
+          "hint": "The three sentences use three different marks.",
+          "answer": {
+            "text": "dấu chấm (full stop); dấu chấm hỏi (question mark); dấu chấm than (exclamation mark)",
+            "explanation": "The telling sentence ends with a full stop, the question with a question mark, and the sentence showing feeling with an exclamation mark."
+          }
         }
       },
       "feedback": {
@@ -937,9 +1224,26 @@
           "Câu hỏi vì sao thì đứng cuối phải là dấu có cái móc cong.",
           "Câu reo lên nhớ bạn cần dấu có gạch đứng, thử lại nhé.",
           "Câu kể chuyện chào nhau mỗi sáng chỉ cần một chấm nhỏ xíu ở cuối thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Not one punctuation mark misnamed! Bông rewards himself with an imaginary fan.",
+            "Right, the full stop, question mark and exclamation mark are all in the right place.",
+            "Exactly! Now Bông knows how to punctuate his letter to Bạc."
+          ],
+          "wrong": [
+            "A question with “vì sao” must end with the mark that has a curved hook.",
+            "The sentence crying out how much you miss someone needs the mark with a vertical stroke, try again.",
+            "The sentence about greeting each other every morning needs only one tiny dot at the end."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "Name the end-of-sentence marks",
+        "goTo": "Back to the lakeside letter landing, where Bông is chewing his pen thinking of the names of punctuation marks",
+        "prompt": "Now for naming the mark at the end of a sentence. Bông whispers: the exclamation mark looks like an upside-down lolly stick, I am so hungry! What mark does each sentence below end with?"
+      }
     },
     {
       "id": "bong-viet-thu",
@@ -1077,5 +1381,9 @@
       "cau": 1,
       "dau-cau": 1
     }
+  },
+  "en": {
+    "title": "A Letter from the Land of Ice",
+    "summary": "Cotton Snow Bear gets a letter from Bạc the seal in the ice lands: “Bông, I miss you!” Bông wants to write back but can never finish. {name} and Bông read the story “Thư của chim én”, help Ki the Dog write names on envelopes, sort letters with Roe Crab, put sentences in order with Dew Rabbit and choose truly warm words for the reply."
   }
 }

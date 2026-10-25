@@ -115,7 +115,11 @@
         "tv2-t10-dau-chan-tho",
         "tv2-t10-cu-ca-rot-roi",
         "tv2-t10-bang-go-goi-ban"
-      ]
+      ],
+      "en": {
+        "title": "Tiny footprints by the stream",
+        "goTo": "Follow Rice Rabbit's footprints along the Dry Streambank"
+      }
     },
     {
       "id": "ke-ve-nguoi-ban",
@@ -167,6 +171,17 @@
         "answer": {
           "text": "Từ ngày xưa, ở một khu rừng sâu thẳm.",
           "explanation": "Khổ đầu mở chuyện bằng \"ngày xưa\" và \"rừng thẳm\": nai vàng, sóc nâu sống cạnh dòng suối nhỏ từ rất lâu rồi."
+        },
+        "en": {
+          "guide": [
+            "Read the first verse again.",
+            "Find the line about the time and the line about where the two friends lived."
+          ],
+          "hint": "The two opening lines of the poem tell both the time and the place.",
+          "answer": {
+            "text": "In the old days, in a deep, deep forest.",
+            "explanation": "The first verse opens the story with «ngày xưa» (long ago) and «rừng thẳm» (a deep forest): the golden deer and the brown squirrel lived beside a little stream a very long time ago."
+          }
         }
       },
       "feedback": {
@@ -179,9 +194,31 @@
           "Hôm qua và triền đồi thì gần quá, bài thơ kể chuyện xa xưa cơ.",
           "Trong khổ đầu không có cánh đồng lúa hay mùa xuân nào đâu, đọc lại thử xem.",
           "Suýt trúng rồi! Hai dòng đầu bài thơ giấu cả thời gian lẫn nơi chốn đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! The story begins long ago, in a deep forest.",
+            "Green Parrot flaps his wings: deep forest, deep forest! You read it right!",
+            "Nai Nhung nods softly: {name} remembers exactly where the two friends lived."
+          ],
+          "wrong": [
+            "Yesterday and the hillside are too close, the poem tells of long ago.",
+            "The first verse has no rice field or spring. Read it again.",
+            "Nearly! The first two lines of the poem hide both the time and the place."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Read the poem on the wooden board",
+        "goTo": "Go to the Poem-Carved Wooden Board and read the poem «Gọi bạn» to Nai Nhung",
+        "question": "When and where does the story in the poem take place?",
+        "choices": [
+          "Only yesterday, on the hillside behind the village.",
+          "Long ago, in a deep forest.",
+          "One spring morning, in the middle of a rice field."
+        ]
+      }
     },
     {
       "id": "vi-sao-be-vang-di",
@@ -229,6 +266,17 @@
         "answer": {
           "text": "Mùa khô tới, nắng rát đường mòn, hạt dẻ ít đi.",
           "explanation": "Khổ hai kể mùa khô kéo đến, nắng rát, hạt dẻ rơi thưa nên sóc phải đi tìm xa. Hai bạn không giận nhau và trong thơ cũng không có bão."
+        },
+        "en": {
+          "guide": [
+            "Read the second verse.",
+            "Find the things that meant the squirrel no longer had enough nuts near home."
+          ],
+          "hint": "Three things are right, and all are in the second verse.",
+          "answer": {
+            "text": "The dry season came, the sun scorched the trail, and the chestnuts grew fewer.",
+            "explanation": "Verse two tells how the dry season came, the sun scorched, and chestnuts fell more sparsely, so the squirrel had to look far away. The two friends were not angry with each other, and the poem has no storm."
+          }
         }
       },
       "feedback": {
@@ -241,9 +289,32 @@
           "Hình như còn sót hoặc thừa một ý, đọc kỹ khổ thơ thứ hai nhé.",
           "Trong thơ nai vàng và sóc nâu chơi với nhau thân thiết, nào có giận nhau.",
           "Khổ hai nhắc tới nắng và hạt dẻ, chứ chẳng có cơn bão nào đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three! Nai Nhung nods, and her two young velvet antlers wobble.",
+            "Yes, the chestnuts grew sparse, so the brown squirrel set out on his journey.",
+            "Well chosen, the three reasons are all in the second verse."
+          ],
+          "wrong": [
+            "One idea seems to be missing or extra. Read the second verse carefully.",
+            "In the poem the golden deer and the brown squirrel play together closely, with no anger.",
+            "Verse two mentions the sun and the chestnuts, but there is no storm."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Why the golden calf has to go far away",
+        "prompt": "Nai Nhung looks at the cracked meadow and sighs deeply: just like in the poem! What happened to make the brown squirrel go far away to look for nuts?",
+        "choices": [
+          "the dry season came",
+          "the scorching sun made the trail burn",
+          "the chestnuts grew fewer and fewer",
+          "the squirrel was angry with the golden deer",
+          "a storm broke all the chestnut trees"
+        ]
+      }
     },
     {
       "id": "de-trang-lam-gi",
@@ -280,6 +351,17 @@
         "answer": {
           "text": "Nai chạy khắp bờ suối, gọi: “Sóc ơi, về nhé!”",
           "explanation": "Nai vàng sốt ruột nên chạy dọc khắp bờ suối, vừa chạy vừa gọi sóc về; tiếng gọi ấy còn vang mãi tới bây giờ."
+        },
+        "en": {
+          "guide": [
+            "Read the last verse.",
+            "See what the golden deer does while feeling anxious."
+          ],
+          "hint": "The deer doesn't sit and wait, the deer runs off and calls out.",
+          "answer": {
+            "text": "The deer ran all along the streambank, calling: “Squirrel, come home!”",
+            "explanation": "The golden deer was anxious, so he ran along the whole streambank, calling the squirrel home as he ran; that call still echoes today."
+          }
         }
       },
       "feedback": {
@@ -292,9 +374,31 @@
           "Nai vàng sốt ruột lắm, đâu có ngồi yên chờ bạn.",
           "Nai chạy đi để tìm sóc, đâu phải đi nhặt hạt cho mình.",
           "Dò lại bốn dòng cuối bài thơ, chỗ nai nghe lòng sốt ruột, xem sao."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly! The golden deer ran until his four legs were tired and still wouldn't stop.",
+            "Sticky Rice Calf sniffles: the deer loved his friend so much he ran all along the streambank.",
+            "{name} found the last verse, as good as a detective of the green forest!"
+          ],
+          "wrong": [
+            "The golden deer was very anxious, he didn't sit still waiting for his friend.",
+            "The deer ran off to find the squirrel, not to pick nuts for himself.",
+            "Look again at the last four lines of the poem, where the deer feels anxious."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "What the white goat does after losing a friend",
+        "goTo": "Sticky Rice Calf in the Foxtail Grass Clump knows the poem too and runs over to read along",
+        "question": "When the brown squirrel lost his way home, what did the golden deer do?",
+        "choices": [
+          "The golden deer sat still by the stream, waiting for the squirrel to find his own way back.",
+          "The golden deer ran along the streambank and called the squirrel home.",
+          "The golden deer went to pick chestnuts just for himself."
+        ]
+      }
     },
     {
       "id": "tam-trang-de-trang",
@@ -339,6 +443,17 @@
         "answer": {
           "text": "sốt ruột",
           "explanation": "Mất bạn, nai lo lắng và nóng lòng nên mới chạy đi gọi mãi, còn hờ hững hay hớn hở đều không hợp với nai."
+        },
+        "en": {
+          "guide": [
+            "Think about whether the deer ran everywhere calling because he was worried or because he was happy.",
+            "Which word means eager and worried, unable to wait quietly?"
+          ],
+          "hint": "«Sốt ruột» means eager and worried; «hờ hững» means indifferent; «hớn hở» means very happy.",
+          "answer": {
+            "text": "sốt ruột",
+            "explanation": "Having lost his friend, the deer was worried and impatient, which is why he kept running off to call; «hờ hững» or «hớn hở» would not suit the deer."
+          }
         }
       },
       "feedback": {
@@ -351,9 +466,26 @@
           "Hờ hững là không để tâm, mà nai thì thương bạn lắm cơ.",
           "Bạn lạc mất rồi thì ai mà hớn hở nổi hả cậu?",
           "Chọn từ nào hợp với một người chạy đi gọi bạn mãi không dừng nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, the golden deer was «sốt ruột»! Nai Nhung rubs her damp muzzle against {name}'s cheek.",
+            "That word says exactly the worry of someone who keeps waiting for a friend.",
+            "I'm «sốt ruột» about Rice Rabbit in just the same way, so, so «sốt ruột»."
+          ],
+          "wrong": [
+            "«Hờ hững» means not caring, but the deer loved his friend very much.",
+            "Who could be «hớn hở» after losing a friend?",
+            "Which word suits someone who runs off calling for a friend without stopping?"
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "The white goat's feelings",
+        "goTo": "Go back to the Dry Meadow and sit beside Nai Nhung",
+        "prompt": "Nai Nhung sniffles, tears as big as beans: Rice Rabbit has been gone so long, I feel just like the golden deer. Choose the word that says how the golden deer felt when his friend had not come back."
+      }
     },
     {
       "id": "xep-dong-tho",
@@ -419,6 +551,17 @@
         "answer": {
           "text": "Ngày xưa trong rừng thẳm / Nai vàng và sóc nâu / Sống bên dòng suối nhỏ / Chơi với nhau từ lâu. // Rồi mùa khô kéo đến / Nắng rát cả đường mòn / Hạt dẻ rơi thưa thớt / Sóc phải đi tìm xa.",
           "explanation": "Khổ một giới thiệu nai vàng, sóc nâu bên suối; khổ hai kể mùa khô tới, hạt dẻ thưa dần nên sóc phải đi xa."
+        },
+        "en": {
+          "guide": [
+            "Verse one introduces the two friends living by the stream, and verse two tells how the dry season came.",
+            "Which line opens the poem? Which line ends verse two?"
+          ],
+          "hint": "The poem opens with «Ngày xưa», and verse two opens with «Rồi mùa khô».",
+          "answer": {
+            "text": "Once upon a time in the deep woods / Golden deer and brown squirrel / Living by a little stream / Playing together for ages. // Then the dry season came / Sun scorched the whole path / Chestnuts fell sparse and few / Squirrel had to search far.",
+            "explanation": "Verse one introduces the golden deer and the brown squirrel by the stream; verse two tells how the dry season came and the chestnuts grew sparse, so the squirrel had to go far away."
+          }
         }
       },
       "feedback": {
@@ -431,9 +574,36 @@
           "Có dòng thơ đang đứng nhầm hàng, như Thỏ Lúa lạc khỏi đường về vậy.",
           "Nhớ nhé: khổ đầu nói về đôi bạn, khổ sau nói chuyện mùa khô.",
           "Dòng nói sóc phải đi tìm xa là dòng chốt cuối khổ hai đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two verses are back in their places, and the wooden board lets out a sigh of relief!",
+            "It sounds as soft as the stream when it was still full.",
+            "Cleverly done! Green Parrot tried to read along and tripped over his tongue twice."
+          ],
+          "wrong": [
+            "A line is standing in the wrong row, just like Rice Rabbit lost from her way home.",
+            "Remember: the first verse is about the two friends, and the second is about the dry season.",
+            "The line about the squirrel having to go far is the closing line of verse two."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-to"
+      "objective": "doc-tho-doc-to",
+      "en": {
+        "title": "The dry wind scatters the poem lines",
+        "goTo": "Run to the Poem-Carved Wooden Board, where the wind has just blown the lines about",
+        "prompt": "Whoosh! A dry wind has blown the lines of the poem off the board, and they fall like dry leaves. Put the first two verses back in the right order, ready to learn by heart.",
+        "items": [
+          "Then the dry season came",
+          "Once upon a time in the deep woods",
+          "Squirrel had to search far.",
+          "Playing together for ages.",
+          "Sun scorched the whole path",
+          "Golden deer and brown squirrel",
+          "Chestnuts fell sparse and few",
+          "Living by a little stream"
+        ]
+      }
     },
     {
       "id": "doc-thuoc-long",
@@ -598,6 +768,17 @@
         "answer": {
           "text": "Đôi bạn bên suối, rồi mùa khô tới, rồi sóc lạc đường, cuối cùng nai vàng cất tiếng gọi.",
           "explanation": "Bốn bức tranh kể lần lượt bốn khổ thơ, từ ngày hai bạn còn bên nhau tới tiếng gọi vang mãi."
+        },
+        "en": {
+          "guide": [
+            "Which picture shows the two friends still happy by the stream?",
+            "After that comes the dry season, then the squirrel loses his way, and last the deer's call."
+          ],
+          "hint": "The pictures follow the four verses in order.",
+          "answer": {
+            "text": "The friends by the stream, then the dry season comes, then the squirrel loses his way, and last the golden deer calls out.",
+            "explanation": "The four pictures tell the four verses one by one, from the days when the two friends were together to the call that echoes on."
+          }
         }
       },
       "feedback": {
@@ -610,9 +791,32 @@
           "Lúc đôi bạn còn vui bên suối thì phải đứng đầu tiên chứ.",
           "Mùa khô đến trước, rồi sóc mới phải đi tìm hạt và lạc đường.",
           "Tiếng gọi “Sóc ơi, về nhé!” là cảnh khép lại câu chuyện đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four pictures tell the story in the right order, and the rock wall seems able to read poems!",
+            "Nai Nhung gently touches her muzzle to the last picture, feeling so sorry for the golden deer.",
+            "What clever picture sorting, {name} is even quicker than Rice Rabbit when she remembers her way."
+          ],
+          "wrong": [
+            "When the friends were still happy by the stream must come first.",
+            "The dry season comes first, and only then does the squirrel have to hunt for nuts and get lost.",
+            "The call «Squirrel, come home!» is the scene that closes the story."
+          ]
+        }
       },
-      "objective": "doc-truyen-ke-lai"
+      "objective": "doc-truyen-ke-lai",
+      "en": {
+        "title": "Four pictures on the rock wall",
+        "goTo": "Go down to the Painted Rock Wall by the dry stream",
+        "prompt": "On the rock wall are four pictures telling the story of the two friends. This morning Rice Rabbit passed by and accidentally jumbled them all. Put the pictures in the right order of the story in the poem «Tiếng vọng bên suối», and then tell it.",
+        "items": [
+          "In the evening, the squirrel was busy hunting for nuts and lost his way.",
+          "Long ago, the golden deer and the brown squirrel lived beside the stream.",
+          "The golden deer ran all along the streambank calling the squirrel home.",
+          "When the dry season came, the chestnuts grew sparse."
+        ]
+      }
     },
     {
       "id": "ke-theo-tranh",
@@ -787,5 +991,9 @@
       "ke-chuyen": 2,
       "tu-ngu": 1
     }
+  },
+  "en": {
+    "title": "The Call Across the Dry Meadow",
+    "summary": "The Dry Meadow is as crisp as a rice cracker, and Rice Rabbit went to pick fresh grass and forgot the way home. {name} and shy Nai Nhung read the poem «Tiếng vọng bên suối», follow tiny footprints, meet Sticky Rice Calf in the Foxtail Grass Clump and retell the story of the golden deer and the big brown squirrel to call Rice Rabbit back."
   }
 }

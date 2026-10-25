@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "vt-th-chon-bong",
       "lines": [
-        { "speaker": "Chồn Bông", "text": "Chào cậu… Tớ là Chồn Bông, hôm nay mới chuyển tới lớp Sơn Ca. Tớ chạy vội quá nên làm rơi hết đồ ngoài sân rồi." },
-        { "speaker": "Chồn Bông", "text": "Tớ cũng chưa biết lớp mình học môn gì, chưa quen bạn nào cả." }
+        {
+          "speaker": "Chồn Bông",
+          "text": "Chào cậu… Tớ là Chồn Bông, hôm nay mới chuyển tới lớp Sơn Ca. Tớ chạy vội quá nên làm rơi hết đồ ngoài sân rồi."
+        },
+        {
+          "speaker": "Chồn Bông",
+          "text": "Tớ cũng chưa biết lớp mình học môn gì, chưa quen bạn nào cả."
+        }
       ],
       "choices": [
-        { "text": "Tớ là {name}, để tớ giúp cậu nhé!", "reply": "Thật hả? Cảm ơn {name}! Hình như đồ rơi ở góc sân rợp bóng kia." }
+        {
+          "text": "Tớ là {name}, để tớ giúp cậu nhé!",
+          "reply": "Thật hả? Cảm ơn {name}! Hình như đồ rơi ở góc sân rợp bóng kia."
+        }
       ],
       "en": {
         "title": "A new friend on the steps",
@@ -87,7 +96,26 @@
           "clue": "Màu xanh như lá non, có hai quai đeo sau lưng và nhiều ngăn đựng đồ.",
           "target": "vt-th-ba-lo"
         }
-      ]
+      ],
+      "en": {
+        "title": "Find things for Fluffy Weasel",
+        "goTo": "Go to the shady corner of the yard to find Fluffy Weasel's things",
+        "prompt": "Fluffy Weasel describes three things that fell. Read carefully and help find them:",
+        "items": [
+          {
+            "name": "Lined notebook",
+            "clue": "The cover has a picture of a weasel, and inside are tiny square-ruled lines for practising writing."
+          },
+          {
+            "name": "Box of crayons",
+            "clue": "A box of many-coloured wax sticks that shine like a rainbow when coloured on paper."
+          },
+          {
+            "name": "Green backpack",
+            "clue": "As green as a young leaf, with two straps for the back and lots of pockets for things."
+          }
+        ]
+      }
     },
     {
       "id": "doc-thoi-khoa-bieu",
@@ -99,22 +127,78 @@
       "text": "THỜI KHÓA BIỂU LỚP SƠN CA\nThứ Hai: Tiếng Việt, Toán, Hoạt động trải nghiệm.\nThứ Ba: Toán, Tiếng Việt, Mĩ thuật.\nThứ Tư: Tiếng Việt, Âm nhạc, Toán.\nThứ Năm: Toán, Tự nhiên và Xã hội, Tiếng Việt.\nThứ Sáu: Tiếng Việt, Giáo dục thể chất, Đạo đức.",
       "question": "Chồn Bông rất thích vẽ. Lớp Sơn Ca học Mĩ thuật vào thứ mấy?",
       "choices": [
-        { "id": "a", "text": "Thứ Hai" },
-        { "id": "b", "text": "Thứ Ba" },
-        { "id": "c", "text": "Thứ Sáu" }
+        {
+          "id": "a",
+          "text": "Thứ Hai"
+        },
+        {
+          "id": "b",
+          "text": "Thứ Ba"
+        },
+        {
+          "id": "c",
+          "text": "Thứ Sáu"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Dò từng dòng, tìm chữ «Mĩ thuật».", "Nhìn chữ đứng đầu dòng đó để biết là thứ mấy."],
+        "guide": [
+          "Dò từng dòng, tìm chữ «Mĩ thuật».",
+          "Nhìn chữ đứng đầu dòng đó để biết là thứ mấy."
+        ],
         "hint": "Môn Mĩ thuật chỉ xuất hiện đúng một lần trong tuần.",
         "answer": {
           "text": "Học Mĩ thuật vào thứ Ba",
           "explanation": "Dòng «Thứ Ba: Toán, Tiếng Việt, Mĩ thuật» có môn Mĩ thuật."
+        },
+        "en": {
+          "guide": [
+            "Go through each line and look for the word «Art».",
+            "Look at the word at the start of that line to know the day."
+          ],
+          "hint": "Art appears only once in the whole week.",
+          "answer": {
+            "text": "Art is on Tuesday",
+            "explanation": "The line «Tuesday: Maths, Vietnamese, Art» has Art in it."
+          }
         }
       },
       "feedback": {
-        "right": ["Chồn Bông reo lên: thứ Ba được vẽ rồi!", "{name} đọc thời khóa biểu thành thạo ghê.", "Đúng dòng thứ Ba rồi, Chồn Bông ghi ngay vào vở."],
-        "wrong": ["Ngày ấy không có môn Mĩ thuật đâu, dò lại nhé.", "Tìm chữ «Mĩ thuật» trước đã nha {name}.", "Đọc từng dòng một, từ thứ Hai xuống thứ Sáu xem nào."]
+        "right": [
+          "Chồn Bông reo lên: thứ Ba được vẽ rồi!",
+          "{name} đọc thời khóa biểu thành thạo ghê.",
+          "Đúng dòng thứ Ba rồi, Chồn Bông ghi ngay vào vở."
+        ],
+        "wrong": [
+          "Ngày ấy không có môn Mĩ thuật đâu, dò lại nhé.",
+          "Tìm chữ «Mĩ thuật» trước đã nha {name}.",
+          "Đọc từng dòng một, từ thứ Hai xuống thứ Sáu xem nào."
+        ],
+        "en": {
+          "right": [
+            "Fluffy Weasel cheers: Tuesday is for drawing!",
+            "{name} reads the timetable so well.",
+            "The Tuesday line it is, and Fluffy Weasel writes it down in the notebook."
+          ],
+          "wrong": [
+            "That day has no Art, check again.",
+            "Find the word «Art» first, {name}.",
+            "Read line by line, from Monday down to Friday."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the timetable",
+        "goTo": "Take Fluffy Weasel to the notice board in the back yard to see the timetable",
+        "text": "SKYLARK CLASS TIMETABLE\nMonday: Vietnamese, Maths, Experiential Activities.\nTuesday: Maths, Vietnamese, Art.\nWednesday: Vietnamese, Music, Maths.\nThursday: Maths, Nature and Society, Vietnamese.\nFriday: Vietnamese, Physical Education, Ethics.",
+        "question": "Fluffy Weasel loves drawing. On which day does Skylark class have Art?",
+        "choices": [
+          "Monday",
+          "Tuesday",
+          "Friday"
+        ]
       }
     },
     {
@@ -128,32 +212,123 @@
       "skill": "logic",
       "prompt": "Bác Bảo Vệ Tư đánh trống theo một nhịp đều. Tiếng tiếp theo là tiếng gì?",
       "elements": [
-        { "id": "n1", "label": "Tùng" },
-        { "id": "n2", "label": "Tùng" },
-        { "id": "n3", "label": "Cắc" },
-        { "id": "n4", "label": "Tùng" },
-        { "id": "n5", "label": "Tùng" },
-        { "id": "n6", "label": "Cắc" },
-        { "id": "n7", "label": "Tùng" },
-        { "id": "n8", "label": "Tùng" }
+        {
+          "id": "n1",
+          "label": "Tùng"
+        },
+        {
+          "id": "n2",
+          "label": "Tùng"
+        },
+        {
+          "id": "n3",
+          "label": "Cắc"
+        },
+        {
+          "id": "n4",
+          "label": "Tùng"
+        },
+        {
+          "id": "n5",
+          "label": "Tùng"
+        },
+        {
+          "id": "n6",
+          "label": "Cắc"
+        },
+        {
+          "id": "n7",
+          "label": "Tùng"
+        },
+        {
+          "id": "n8",
+          "label": "Tùng"
+        }
       ],
       "choices": [
-        { "id": "tung", "text": "Tùng" },
-        { "id": "cac", "text": "Cắc" },
-        { "id": "reng", "text": "Reng" }
+        {
+          "id": "tung",
+          "text": "Tùng"
+        },
+        {
+          "id": "cac",
+          "text": "Cắc"
+        },
+        {
+          "id": "reng",
+          "text": "Reng"
+        }
       ],
-      "answer": { "choice": "cac" },
+      "answer": {
+        "choice": "cac"
+      },
       "support": {
-        "guide": ["Đếm theo từng nhóm ba tiếng.", "Mỗi nhóm có hai tiếng «Tùng» rồi một tiếng «Cắc».", "Nhóm cuối mới có hai tiếng «Tùng»."],
+        "guide": [
+          "Đếm theo từng nhóm ba tiếng.",
+          "Mỗi nhóm có hai tiếng «Tùng» rồi một tiếng «Cắc».",
+          "Nhóm cuối mới có hai tiếng «Tùng»."
+        ],
         "hint": "Cứ hai tiếng Tùng thì tới một tiếng gì?",
         "answer": {
           "text": "Tiếng «Cắc»",
           "explanation": "Nhịp trống lặp lại Tùng – Tùng – Cắc. Nhóm cuối đã có hai tiếng Tùng nên tiếp theo là Cắc."
+        },
+        "en": {
+          "guide": [
+            "Count in groups of three sounds.",
+            "Each group has two «Boom» sounds and then one «Clack».",
+            "Only the last group has just the two «Boom» sounds."
+          ],
+          "hint": "After every two Booms comes which sound?",
+          "answer": {
+            "text": "The «Clack» sound",
+            "explanation": "The drum rhythm repeats Boom – Boom – Clack. The last group already has two Booms, so next comes Clack."
+          }
         }
       },
       "feedback": {
-        "right": ["Tùng tùng cắc! Bác bảo vệ khen {name} có tai nghe nhạc.", "Đúng nhịp rồi, Chồn Bông gõ tay theo luôn.", "Ba tiếng một nhóm, {name} nghe ra ngay!"],
-        "wrong": ["Sau hai tiếng Tùng là tiếng khác đấy, nghe lại nhé.", "Trống trường không kêu reng đâu {name} ơi.", "Chia thành từng nhóm ba tiếng xem nhóm cuối còn thiếu gì."]
+        "right": [
+          "Tùng tùng cắc! Bác bảo vệ khen {name} có tai nghe nhạc.",
+          "Đúng nhịp rồi, Chồn Bông gõ tay theo luôn.",
+          "Ba tiếng một nhóm, {name} nghe ra ngay!"
+        ],
+        "wrong": [
+          "Sau hai tiếng Tùng là tiếng khác đấy, nghe lại nhé.",
+          "Trống trường không kêu reng đâu {name} ơi.",
+          "Chia thành từng nhóm ba tiếng xem nhóm cuối còn thiếu gì."
+        ],
+        "en": {
+          "right": [
+            "Boom boom clack! The guard says {name} has an ear for music.",
+            "Right on the beat, and Fluffy Weasel taps along.",
+            "Three sounds to a group, {name} heard it straight away!"
+          ],
+          "wrong": [
+            "After two Booms comes a different sound, listen again.",
+            "The school drum doesn't go ring, {name}.",
+            "Split it into groups of three sounds and see what the last group is missing."
+          ]
+        }
+      },
+      "en": {
+        "title": "The school drum beat",
+        "goTo": "Stop by the little guard hut, where Uncle Tư the Guard is about to beat the drum",
+        "prompt": "Uncle Tư the Guard beats the drum in a steady rhythm. What sound comes next?",
+        "elements": [
+          "Boom",
+          "Boom",
+          "Clack",
+          "Boom",
+          "Boom",
+          "Clack",
+          "Boom",
+          "Boom"
+        ],
+        "choices": [
+          "Boom",
+          "Clack",
+          "Ring"
+        ]
       }
     },
     {
@@ -208,9 +383,16 @@
       "kind": "dialogue",
       "target": "vt-th-cun-da-cau",
       "lines": [
-        { "speaker": "Cún Đá Cầu", "text": "Bạn mới hả? Hay quá, đội đá cầu đang thiếu một người! Chồn Bông cứ chuyền thử, tớ chỉ cho." }
+        {
+          "speaker": "Cún Đá Cầu",
+          "text": "Bạn mới hả? Hay quá, đội đá cầu đang thiếu một người! Chồn Bông cứ chuyền thử, tớ chỉ cho."
+        }
       ],
-      "choices": [{ "text": "Ra chơi xong mình cùng xếp đồ nhé!" }],
+      "choices": [
+        {
+          "text": "Ra chơi xong mình cùng xếp đồ nhé!"
+        }
+      ],
       "en": {
         "title": "Invite Shuttlecock Pup",
         "goTo": "Go to the shuttlecock court and invite Shuttlecock Pup to play",
@@ -234,16 +416,40 @@
       "skill": "tu-ngu",
       "prompt": "Ngăn lớn đựng đồ dùng học tập, ngăn nhỏ đựng đồ chơi. Xếp từng món vào đúng ngăn:",
       "groups": [
-        { "id": "hoc-tap", "label": "Đồ dùng học tập" },
-        { "id": "do-choi", "label": "Đồ chơi" }
+        {
+          "id": "hoc-tap",
+          "label": "Đồ dùng học tập"
+        },
+        {
+          "id": "do-choi",
+          "label": "Đồ chơi"
+        }
       ],
       "items": [
-        { "id": "thuoc-ke", "label": "Thước kẻ" },
-        { "id": "qua-cau", "label": "Quả cầu" },
-        { "id": "cuc-tay", "label": "Cục tẩy" },
-        { "id": "con-quay", "label": "Con quay" },
-        { "id": "but-muc", "label": "Bút mực" },
-        { "id": "bup-be", "label": "Búp bê vải" }
+        {
+          "id": "thuoc-ke",
+          "label": "Thước kẻ"
+        },
+        {
+          "id": "qua-cau",
+          "label": "Quả cầu"
+        },
+        {
+          "id": "cuc-tay",
+          "label": "Cục tẩy"
+        },
+        {
+          "id": "con-quay",
+          "label": "Con quay"
+        },
+        {
+          "id": "but-muc",
+          "label": "Bút mực"
+        },
+        {
+          "id": "bup-be",
+          "label": "Búp bê vải"
+        }
       ],
       "answer": {
         "assignment": {
@@ -256,16 +462,63 @@
         }
       },
       "support": {
-        "guide": ["Hỏi từng món: dùng để học hay để chơi?", "Món nào dùng khi viết, vẽ, đo thì vào ngăn lớn."],
+        "guide": [
+          "Hỏi từng món: dùng để học hay để chơi?",
+          "Món nào dùng khi viết, vẽ, đo thì vào ngăn lớn."
+        ],
         "hint": "Có ba món dùng trong giờ học và ba món dùng giờ ra chơi.",
         "answer": {
           "text": "Học tập: thước kẻ, cục tẩy, bút mực. Đồ chơi: quả cầu, con quay, búp bê vải",
           "explanation": "Thước kẻ, cục tẩy, bút mực giúp em học bài; quả cầu, con quay, búp bê vải để vui chơi."
+        },
+        "en": {
+          "guide": [
+            "Ask about each item: is it for learning or for playing?",
+            "An item used for writing, drawing or measuring goes in the big pocket."
+          ],
+          "hint": "Three items are used in lessons and three at break time.",
+          "answer": {
+            "text": "School things: thước kẻ, cục tẩy, bút mực. Toys: quả cầu, con quay, búp bê vải",
+            "explanation": "The ruler, the eraser and the ink pen help you learn; the shuttlecock, the spinning top and the rag doll are for fun."
+          }
         }
       },
       "feedback": {
-        "right": ["Ba lô gọn gàng ngăn nắp, Chồn Bông khen mãi.", "{name} phân loại đồ vật đâu ra đấy!", "Ngăn nào ra ngăn nấy, sáng mai đi học chẳng quên gì."],
-        "wrong": ["Món này dùng giờ học hay giờ chơi nhỉ? Xem lại nha.", "Có một món đang nằm nhầm ngăn rồi {name} ơi.", "Con quay với quả cầu để chơi, còn thước kẻ thì sao?"]
+        "right": [
+          "Ba lô gọn gàng ngăn nắp, Chồn Bông khen mãi.",
+          "{name} phân loại đồ vật đâu ra đấy!",
+          "Ngăn nào ra ngăn nấy, sáng mai đi học chẳng quên gì."
+        ],
+        "wrong": [
+          "Món này dùng giờ học hay giờ chơi nhỉ? Xem lại nha.",
+          "Có một món đang nằm nhầm ngăn rồi {name} ơi.",
+          "Con quay với quả cầu để chơi, còn thước kẻ thì sao?"
+        ],
+        "en": {
+          "right": [
+            "A neat, tidy backpack, and Fluffy Weasel keeps praising it.",
+            "{name} sorts things out just right!",
+            "Each item in its own pocket, so nothing gets forgotten at school tomorrow morning."
+          ],
+          "wrong": [
+            "Is this item for lessons or for play? Have another look.",
+            "One item is in the wrong pocket, {name}.",
+            "The spinning top and the shuttlecock are for play, so what about the ruler?"
+          ]
+        }
+      },
+      "en": {
+        "title": "Pack things in the backpack",
+        "goTo": "Go back to the steps of the classroom block and help Fluffy Weasel pack the backpack",
+        "prompt": "The big pocket holds school things and the small pocket holds toys. Put each item in the right pocket:",
+        "items": [
+          "Thước kẻ",
+          "Quả cầu",
+          "Cục tẩy",
+          "Con quay",
+          "Bút mực",
+          "Búp bê vải"
+        ]
       }
     },
     {
@@ -294,6 +547,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "tu-ngu": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "tu-ngu": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: Fluffy Weasel's First Day",
+    "summary": "Fluffy Weasel has just moved to Skylark class, dropped things all over the back yard and doesn't know anyone. {name} finds the things, reads the timetable, works out the school drum beat, chooses how to help Weasel fit in and then packs the backpack with Weasel."
   }
 }

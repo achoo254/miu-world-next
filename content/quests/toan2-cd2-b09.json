@@ -95,7 +95,11 @@
         "toan2-cd2-be-con-dom",
         "toan2-cd2-be-con-nau",
         "toan2-cd2-be-con-khoang"
-      ]
+      ],
+      "en": {
+        "title": "Find the calves hiding in the straw",
+        "goTo": "Find the three calves hiding in the haystack behind the cart"
+      }
     },
     {
       "id": "them-cong-bot-tru",
@@ -261,6 +265,17 @@
         "answer": {
           "text": "Lúc đầu: 8 bông; hái thêm: 5 bông; 8 + 5 = 13 (bông); Đáp số: 13 bông cúc.",
           "explanation": "Có 8 bông, thêm 5 bông. Số bông cúc có tất cả là 8 + 5 = 13 (bông). Đáp số: 13 bông cúc."
+        },
+        "en": {
+          "guide": [
+            "The summary notes the chrysanthemums already in the basket and the ones picked to add.",
+            "Picking more makes the basket fuller, so it is an addition."
+          ],
+          "hint": "8 flowers plus 2 flowers makes 10, with 3 more.",
+          "answer": {
+            "text": "At first: 8 flowers; picked more: 5 flowers; 8 + 5 = 13 (flowers); Answer: 13 chrysanthemums.",
+            "explanation": "There are 8 flowers, with 5 more added. The chrysanthemums altogether are 8 + 5 = 13 (flowers). Answer: 13 chrysanthemums."
+          }
         }
       },
       "feedback": {
@@ -273,7 +288,19 @@
           "Dòng \"Lúc đầu\" ghi số cúc có sẵn trong giỏ đấy.",
           "Hái thêm thì giỏ đầy lên, chọn phép cộng nhé.",
           "Đáp số phải bằng đúng kết quả của phép tính."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A basket glowing yellow with thirteen chrysanthemums, making the whole straw cart smell sweet!",
+            "A clear summary and a neat solution, and Auntie Hươu keeps nodding.",
+            "Mama Rice Cow sniffs happily: picking more means adding, she's got it!"
+          ],
+          "wrong": [
+            "The line \"At first\" holds the flowers already in the basket.",
+            "Picking more fills the basket up, so choose addition.",
+            "The answer must equal exactly the result of the calculation."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -289,6 +316,10 @@
       "expression": {
         "b5": "8 + 5",
         "b6": "8 + 5"
+      },
+      "en": {
+        "title": "Auntie Giraffe's daisy basket",
+        "prompt": "Auntie Hươu the flower seller stops by the straw cart and shows off her basket of freshly picked flowers. There are 8 chrysanthemums in the basket, and she picks 5 more to put in. How many chrysanthemums are in Auntie Hươu's basket altogether?"
       }
     },
     {
@@ -427,6 +458,17 @@
         "answer": {
           "text": "Lúc đầu: 7 bạn; chạy tới thêm: 5 bạn; 7 + 5 = 12 (bạn); Đáp số: 12 bạn.",
           "explanation": "Lúc đầu có 7 bạn, thêm 5 bạn chạy tới. Cả đội có 7 + 5 = 12 (bạn). Đáp số: 12 bạn."
+        },
+        "en": {
+          "guide": [
+            "When friends run over to help, the team gets bigger.",
+            "Bigger means choosing the plus sign."
+          ],
+          "hint": "7 + 3 = 10, with 2 more.",
+          "answer": {
+            "text": "At first: 7 calves; ran over to join: 5 calves; 7 + 5 = 12 (calves); Answer: 12 calves.",
+            "explanation": "At first there are 7 calves, with 5 more running over. The whole team has 7 + 5 = 12 (calves). Answer: 12 calves."
+          }
         }
       },
       "feedback": {
@@ -439,7 +481,19 @@
           "Có bạn chạy tới góp sức thì đâu phải dấu trừ.",
           "Dòng \"Chạy tới thêm\" ghi số bạn mới tới nhé.",
           "Bảy bạn cộng năm bạn, đếm tiếp từ bảy thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Heave ho! Twelve calves pull in one go, and the rope is as tight as a harp string!",
+            "You chose the plus sign straight away and weren't fooled at all.",
+            "Golden Rice Calf cheers: my team has grown so big!"
+          ],
+          "wrong": [
+            "When friends run over to help, it isn't the minus sign.",
+            "The line \"Ran over to join\" holds the number of new arrivals.",
+            "Seven calves plus five calves: try counting on from seven."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -456,6 +510,11 @@
       "expression": {
         "b6": "7 + 5",
         "b7": "7 + 5"
+      },
+      "en": {
+        "title": "Tug of war with more friends",
+        "goTo": "Go to the tug-of-war ground, where Golden Rice Calf is gripping the end of the rope",
+        "prompt": "At the play area beside the market, Cotton Calf invites the other calves to play tug-of-war: \"Heave ho, heave ho!\" At first 7 calves hold the rope, then 5 more calves run over to help. How many calves are pulling altogether then?"
       }
     },
     {
@@ -626,6 +685,17 @@
         "answer": {
           "text": "Sáng nay: 16 con; đã bán: 6 con; 16 – 6 = 10 (con); Đáp số: 10 con lợn.",
           "explanation": "Sáng có 16 con, bác bán 6 con. Trong chuồng còn 16 – 6 = 10 (con). Đáp số: 10 con lợn."
+        },
+        "en": {
+          "guide": [
+            "Selling means the pen has fewer pigs, which is a subtraction.",
+            "The line \"Sold\" holds the number of piglets he sold."
+          ],
+          "hint": "16 take away 6 sends the ones digit to 0.",
+          "answer": {
+            "text": "This morning: 16 pigs; sold: 6 pigs; 16 – 6 = 10 (pigs); Answer: 10 pigs.",
+            "explanation": "In the morning there were 16 pigs, and he sold 6. The pen has 16 – 6 = 10 (pigs) left. Answer: 10 pigs."
+          }
         }
       },
       "feedback": {
@@ -638,7 +708,19 @@
           "Bán đi thì chuồng ít lợn hơn lúc sáng đấy.",
           "Dòng \"Sáng nay\" là 16 con, dòng \"Đã bán\" là số lợn đã đi.",
           "Mười sáu bớt sáu, nhẩm lại xem còn mấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The ten piglets left oink hello to {name}!",
+            "Taking away means subtracting, and {name} chose the sum without hesitating.",
+            "Snorting Pig praises you: this time it was taking away, and you didn't mix it up with adding."
+          ],
+          "wrong": [
+            "Selling means the pen has fewer pigs than in the morning.",
+            "The line \"This morning\" is 16 pigs, and the line \"Sold\" is the number of pigs that went.",
+            "Sixteen take away six, so work it out again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -654,6 +736,11 @@
       "expression": {
         "b5": "16 - 6",
         "b6": "16 - 6"
+      },
+      "en": {
+        "title": "Snorting Pig's pigpen",
+        "goTo": "Go to the Piglet Pen in the Market Corner, where Snorting Pig is counting the piglets",
+        "prompt": "This morning Snorting Pig's pen held 16 piglets. By noon, he had sold 6 of them to the farmers. How many piglets are left in the pen?"
       }
     },
     {
@@ -692,6 +779,17 @@
         "answer": {
           "text": "7 thuyền và 6 thuyền, tất cả 13 thuyền",
           "explanation": "Có 7 thuyền, thêm 6 thuyền: bến có 7 + 6 = 13 thuyền."
+        },
+        "en": {
+          "guide": [
+            "The landing only accepts the boats that are docked and the boats the wind pushed in.",
+            "The boats that drifted far away are not in the summary."
+          ],
+          "hint": "Drag the group of docked boats and the group the wind pushed in.",
+          "answer": {
+            "text": "7 boats and 6 boats, 13 boats altogether",
+            "explanation": "There are 7 boats, with 6 boats more: the landing has 7 + 6 = 13 boats."
+          }
         }
       },
       "feedback": {
@@ -704,13 +802,30 @@
           "Tóm tắt không nhắc tới thuyền đã trôi xa đâu.",
           "Bến còn thiếu nhóm thuyền ở dòng Thêm.",
           "Chỉ kéo những nhóm có trong tóm tắt thôi nha."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirteen leaf boats reach the landing, and Cotton Calf clatters its hooves in applause!",
+            "You didn't drag the boats that drifted away, so you read the summary carefully.",
+            "The leaf-boat landing is as lively as the vegetable stalls."
+          ],
+          "wrong": [
+            "The summary doesn't mention the boats that drifted away.",
+            "The landing is still missing the group of boats in the line \"More\".",
+            "Drag only the groups that are in the summary."
+          ]
+        }
       },
       "answer": {
         "total": 13
       },
       "objective": "bai-toan-co-loi-van-them-bot",
-      "expression": "7 + 6"
+      "expression": "7 + 6",
+      "en": {
+        "title": "Pull the leaf boats to the dock",
+        "goTo": "Run to the Duck Pond, where Cotton Calf is floating leaf boats",
+        "prompt": "Cotton Calf floats leaf boats on the Duck Pond, and the wind pushes a few more over. Drag the right groups of boats in the summary into the landing. Summary: There are 7 boats, with 6 boats more. How many boats are there altogether?"
+      }
     },
     {
       "id": "giai-bai-thuyen-la",
@@ -800,6 +915,17 @@
         "answer": {
           "text": "7 + 6 = 13 (thuyền); Đáp số: 13 thuyền.",
           "explanation": "Số thuyền có tất cả là 7 + 6 = 13 (thuyền). Đáp số: 13 thuyền."
+        },
+        "en": {
+          "guide": [
+            "Write the sum: the number of boats there are plus the number of boats added.",
+            "The answer line gives the result with the name of the unit."
+          ],
+          "hint": "7 + 3 = 10, with 3 more, making 13.",
+          "answer": {
+            "text": "7 + 6 = 13 (boats); Answer: 13 boats.",
+            "explanation": "The boats altogether are 7 + 6 = 13 (boats). Answer: 13 boats."
+          }
         }
       },
       "feedback": {
@@ -812,7 +938,19 @@
           "Số thuyền có sẵn viết trước, số thuyền thêm viết sau.",
           "Đáp số phải bằng kết quả phép cộng nhé.",
           "Thêm thuyền thì cộng, kiểm lại kết quả nha."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The solution on the lotus leaf is as neat as a clean exercise book in lovely writing!",
+            "The sum, the unit and the answer are all there.",
+            "Cotton Calf pins the leaf on the straw cart as a certificate of praise."
+          ],
+          "wrong": [
+            "Write the boats already there first and the boats added after.",
+            "The answer must equal the result of the addition.",
+            "Adding boats means adding, so check the result again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -826,6 +964,10 @@
       "expression": {
         "b3": "7 + 6",
         "b4": "7 + 6"
+      },
+      "en": {
+        "title": "Solve the leaf boat problem",
+        "prompt": "Cotton Calf asks you to write the solution on a big lotus leaf. Summary: There are 7 boats, with 6 boats more. How many boats are there altogether?"
       }
     },
     {
@@ -845,6 +987,17 @@
         "answer": {
           "text": "11 bạn",
           "explanation": "Trên xe còn lại 15 – 4 = 11 (bạn)."
+        },
+        "en": {
+          "guide": [
+            "When calves jump down, the cart has fewer.",
+            "Take the number of calves at the start and subtract the ones that jumped down."
+          ],
+          "hint": "15 take away 4: only the ones digit changes, 5 – 4.",
+          "answer": {
+            "text": "11 calves",
+            "explanation": "The cart has 15 – 4 = 11 (calves) left."
+          }
         }
       },
       "feedback": {
@@ -857,13 +1010,30 @@
           "Bạn nhảy xuống thì trên xe không đông thêm đâu.",
           "Lấy 15 bớt đi 4 bạn nhé.",
           "Thử nhẩm: 5 bớt 4 còn 1, vậy 15 bớt 4 còn?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eleven calves wave their tails goodbye, and the straw cart rattles off!",
+            "Jumping down means taking away, and {name} worked it out exactly.",
+            "Cotton Calf runs after the cart a little way, then comes back to praise you."
+          ],
+          "wrong": [
+            "Calves jumping down does not make the cart any fuller.",
+            "Take away 4 calves from 15.",
+            "Try it in your head: 5 take away 4 leaves 1, so what does 15 take away 4 leave?"
+          ]
+        }
       },
       "answer": {
         "value": 11
       },
       "objective": "bai-toan-co-loi-van-them-bot",
-      "expression": "15 - 4"
+      "expression": "15 - 4",
+      "en": {
+        "title": "The straw cart leaves the market",
+        "goTo": "Go to the Market Gate to see off the straw cart carrying the calves",
+        "question": "Ding-a-ling! Mama Rice Cow's straw cart carrying the calves is about to leave the market gate. There are 15 calves on the cart, and at the banyan tree 4 calves jump down to go home. How many calves are left on the cart?"
+      }
     },
     {
       "id": "huy-hieu-them-bot",
@@ -895,5 +1065,9 @@
       "bai-toan-loi-van": 2,
       "phep-tru": 1
     }
+  },
+  "en": {
+    "title": "The Calves Running In and Out",
+    "summary": "Mama Rice Cow pulls a straw cart to the market fair, and her mischievous calves keep running in and out of the cart-hitching post, making the lady dizzy from counting. {name} runs from the tug-of-war ground to the piglet pen in the market corner, helping her write summaries and solutions for adding and taking-away problems."
   }
 }

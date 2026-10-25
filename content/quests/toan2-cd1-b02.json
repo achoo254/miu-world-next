@@ -95,7 +95,11 @@
         "toan2-cd1-phan-trang",
         "toan2-cd1-phan-vang",
         "toan2-cd1-phan-hong"
-      ]
+      ],
+      "en": {
+        "title": "Find three pieces of chalk",
+        "goTo": "Find the three sticks of chalk that Cheeky Fox hid around the hopscotch court"
+      }
     },
     {
       "id": "vach-so-ke-lai",
@@ -327,6 +331,17 @@
         "answer": {
           "text": "Dải 1: 0 đến 10 đủ cả; Dải 2: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
           "explanation": "Hai vạch kề nhau hơn kém đúng 1 đơn vị, nên mỗi ô trống bằng số bên trái cộng 1."
+        },
+        "en": {
+          "guide": [
+            "Going one mark to the right adds 1.",
+            "Take the number just left of the blank and add 1."
+          ],
+          "hint": "After 5 comes 6; after 18 comes 19.",
+          "answer": {
+            "text": "Strip 1: 0 to 10 in full; Strip 2: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20",
+            "explanation": "Two neighbouring marks differ by exactly 1, so each blank is the number on its left plus 1."
+          }
         }
       },
       "feedback": {
@@ -339,7 +354,19 @@
           "Chíp đáp xuống ô có số lạ hoắc, thử thêm 1 vào số bên trái xem.",
           "Từng vạch chỉ hơn vạch trước 1, không nhảy cóc nhé.",
           "Ô trống ngay sau số 18 là số nào nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both strips run smoothly, and Chip zooms from 0 to 20 in one go.",
+            "Every number is back on its mark, and Cheeky Fox has no excuse to rub them out again.",
+            "Each of Chip's hops now adds exactly one square."
+          ],
+          "wrong": [
+            "Chip landed on a strange number, so try adding 1 to the number on the left.",
+            "Each mark is only 1 more than the one before, so no skipping.",
+            "What number is in the blank right after 18?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -367,7 +394,11 @@
         "b9": "16 + 1",
         "b10": "18 + 1"
       },
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Write numbers on the hopscotch lines",
+        "prompt": "Chip wants to redraw two strips of hopscotch lines: the first runs from 0 to 10 and the second from 10 to 20. Cheeky Fox rubbed out a few numbers, so write them back in."
+      }
     },
     {
       "id": "bong-roi-vach",
@@ -435,6 +466,17 @@
         "answer": {
           "text": "6 về vạch 6; 10 + 3 về vạch 13; 2 về vạch 2; 10 + 9 về vạch 19; 10 + 6 về vạch 16",
           "explanation": "10 + 3 = 13, 10 + 9 = 19, 10 + 6 = 16. Vạch 14 là chỗ của quả bóng mẫu 10 + 4 đã nằm sẵn."
+        },
+        "en": {
+          "guide": [
+            "For a ball with an addition, work out the number first.",
+            "10 plus some more means counting on that many steps from mark 10."
+          ],
+          "hint": "10 + 9 means counting on 9 marks from 10.",
+          "answer": {
+            "text": "6 goes to mark 6; 10 + 3 goes to mark 13; 2 goes to mark 2; 10 + 9 goes to mark 19; 10 + 6 goes to mark 16",
+            "explanation": "10 + 3 = 13, 10 + 9 = 19, 10 + 6 = 16. Mark 14 is where the sample ball 10 + 4 already sits."
+          }
         }
       },
       "feedback": {
@@ -447,7 +489,19 @@
           "Có một quả bóng đậu nhầm vạch hàng xóm.",
           "Tính phép cộng trên quả bóng trước rồi hãy thả.",
           "Quả 10 + 6 lăn về vạch nào? Đếm tiếp từ 10 thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every ball sits neatly on its own mark, and none rolls off anywhere.",
+            "Mango Cat gapes: they were tossed all over, and you still sorted them at once.",
+            "Five balls on five marks, with no need to fix a thing."
+          ],
+          "wrong": [
+            "One ball has landed on a neighbour's mark.",
+            "Work out the addition on the ball first, then drop it.",
+            "Which mark does the ball 10 + 6 roll to? Try counting on from 10."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -458,7 +512,19 @@
           "bong-10-6": "nhom-vach-16"
         }
       },
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Which line does the ball roll to?",
+        "goTo": "Go to the ball basket beside the yard, where Mango Cat is hugging a basket of balls, about to toss them",
+        "prompt": "Mango Cat tosses the whole basket of balls, and they plop down onto the number line. A ball with a number goes to that number's mark; a ball with an addition is worked out first, then goes to its mark. Drop each ball on the right mark.",
+        "items": [
+          "6",
+          "10 + 3",
+          "2",
+          "10 + 9",
+          "10 + 6"
+        ]
+      }
     },
     {
       "id": "dung-sai-lien-truoc-sau",
@@ -503,6 +569,17 @@
         "answer": {
           "text": "Dòng đúng: số liền trước của 14, số liền sau của 19, số liền trước của 20, số liền sau của 0",
           "explanation": "Dòng b sai vì 15 là số liền sau của 14; dòng c sai vì 18 là số liền trước của 19."
+        },
+        "en": {
+          "guide": [
+            "The number just before is exactly 1 less, and the number just after is exactly 1 more.",
+            "Read each line and look at the number line before choosing."
+          ],
+          "hint": "The number just before 14 must be less than 14; the number just after 19 must be greater than 19.",
+          "answer": {
+            "text": "True lines: just before 14, just after 19, just before 20, just after 0",
+            "explanation": "The second line is wrong because 15 is the number just after 14; the third is wrong because 18 is the number just before 19."
+          }
         }
       },
       "feedback": {
@@ -515,7 +592,19 @@
           "Vẫn còn một dòng bịa lọt lưới.",
           "Liền trước thì bé hơn, liền sau thì lớn hơn, soi lại nhé.",
           "Hình như cậu bỏ sót một dòng đúng ở cuối."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You caught Cheeky Fox neatly, and every made-up line gave itself away.",
+            "You are sharper-eyed than a night owl on watch.",
+            "All four true lines chosen, and Mango Cat beams."
+          ],
+          "wrong": [
+            "One made-up line is still slipping through.",
+            "Just before is less and just after is greater, so check again.",
+            "It looks like you missed a true line at the end."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -525,7 +614,19 @@
           "g-lien-sau-0-la-1"
         ]
       },
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Which sentence is true?",
+        "prompt": "Cheeky Fox left six lines of chalk on the ground, some true and some made up. Tap the true lines and leave the made-up ones alone.",
+        "choices": [
+          "The number just before 14 is 13.",
+          "The number just before 14 is 15.",
+          "The number just after 19 is 18.",
+          "The number just after 19 is 20.",
+          "The number just before 20 is 19.",
+          "The number just after 0 is 1."
+        ]
+      }
     },
     {
       "id": "so-be-hon-5",
@@ -591,6 +692,17 @@
         "answer": {
           "text": "0, 1, 2, 3, 4, 5",
           "explanation": "Các số bên trái 6 là 0, 1, 2, 3, 4, 5; chính số 6 không bé hơn 6."
+        },
+        "en": {
+          "guide": [
+            "Numbers less than 6 lie to the left of 6 on the number line.",
+            "Don't forget the 0 at the start of the line."
+          ],
+          "hint": "Six numbers come before the number 6.",
+          "answer": {
+            "text": "0, 1, 2, 3, 4, 5",
+            "explanation": "The numbers to the left of 6 are 0, 1, 2, 3, 4, 5; 6 itself is not less than 6."
+          }
         }
       },
       "feedback": {
@@ -603,7 +715,19 @@
           "Số 6 có bé hơn 6 không nhỉ? Nghĩ lại chút nào.",
           "Còn một ô tận đầu tia số chưa được chọn.",
           "Chỉ lấy những số đứng bên trái số 6 thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The first six squares light up, and Chip hops happily on one foot.",
+            "You didn't forget the 0 either.",
+            "Chip's feet feel much better, thank you {name}."
+          ],
+          "wrong": [
+            "Is 6 less than 6? Think again.",
+            "There is still a square at the very start of the line that isn't chosen.",
+            "Take only the numbers to the left of 6."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -615,7 +739,25 @@
           "o5"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Hopscotch squares less than 5",
+        "goTo": "Back to the hopscotch court, where Chip the Chick is rubbing a tired foot",
+        "prompt": "Chip's feet are tired, so the chick will only hop on the first squares of the number line. Help find the numbers less than 6.",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      }
     },
     {
       "id": "so-giua-3-va-6",
@@ -680,6 +822,17 @@
         "answer": {
           "text": "5, 6, 7, 8",
           "explanation": "Nằm giữa 4 và 9 trên tia số là 5, 6, 7, 8; hai đầu mút 4 và 9 không tính."
+        },
+        "en": {
+          "guide": [
+            "Greater than 4 means to the right of 4.",
+            "Less than 9 means to the left of 9; take the part in between."
+          ],
+          "hint": "There are four numbers between 4 and 9.",
+          "answer": {
+            "text": "5, 6, 7, 8",
+            "explanation": "The numbers between 4 and 9 on the number line are 5, 6, 7, 8; the two ends, 4 and 9, do not count."
+          }
         }
       },
       "feedback": {
@@ -692,7 +845,19 @@
           "Số 4 và số 9 đứng ở hai đầu, không tính đâu.",
           "Lấy số lớn hơn 4 mà vẫn bé hơn 9 cơ.",
           "Cậu chọn thừa một ô rồi, đếm lại đi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Here are the four middle squares, and Chip strikes a super-cool hopping pose.",
+            "Exactly four numbers sit between 4 and 9, and you caught them right on.",
+            "Chip calls out: squares 5, 6, 7, 8, hello to my new friends."
+          ],
+          "wrong": [
+            "4 and 9 stand at the two ends and don't count.",
+            "Take numbers greater than 4 that are still less than 9.",
+            "You've picked one square too many, so count again."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -702,7 +867,24 @@
           "o8"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Squares between 3 and 6",
+        "prompt": "Now Chip wants to hop into the middle of the number line to look impressive. Find the numbers that are both greater than 4 and less than 9.",
+        "choices": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      }
     },
     {
       "id": "ghep-the-so",
@@ -736,6 +918,17 @@
         "answer": {
           "text": "Ghép được 4 số: 60, 68, 80, 86",
           "explanation": "Thẻ 0 không thể đứng đầu, nên chỉ có 60, 68, 80, 86."
+        },
+        "en": {
+          "guide": [
+            "In a two-digit number, the digit 0 cannot come first.",
+            "Put card 6, then card 8, in the tens place in turn."
+          ],
+          "hint": "Card 6 first makes 60 and 68; how many numbers can card 8 first make?",
+          "answer": {
+            "text": "4 numbers can be made: 60, 68, 80, 86",
+            "explanation": "Card 0 cannot come first, so there are only 60, 68, 80, 86."
+          }
         }
       },
       "feedback": {
@@ -748,12 +941,34 @@
           "Số 0 đứng đầu thì không thành số có hai chữ số đâu.",
           "Viết hết các cách ghép ra giấy rồi đếm lại nhé.",
           "Cậu đếm dư rồi, có cách ghép không hợp lệ đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four round numbers, and Cheeky Fox's trick has lost its magic.",
+            "You didn't fall into the trap of 0 coming first, which is super.",
+            "Corn Bunny scratches his ear: I thought you'd count 06 as well."
+          ],
+          "wrong": [
+            "With 0 first, it is not a two-digit number.",
+            "Write out all the ways on paper, then count again.",
+            "You've counted too many, so some of your pairs aren't valid."
+          ]
+        }
       },
       "answer": {
         "choice": "c-4"
       },
-      "objective": "so-den-100-doc-viet-dem"
+      "objective": "so-den-100-doc-viet-dem",
+      "en": {
+        "title": "Match three number cards",
+        "goTo": "Go to the flame tree, where Corn Bunny has just picked up three number cards that Cheeky Fox dropped",
+        "prompt": "Corn Bunny fans out three number cards, 6, 0 and 8, with a sly smile. If you take two of the three cards to make a two-digit number, how many different numbers can you make in all?",
+        "choices": [
+          "6 numbers",
+          "3 numbers",
+          "4 numbers"
+        ]
+      }
     },
     {
       "id": "tau-hoa-cua-cao",
@@ -944,6 +1159,17 @@
         "answer": {
           "text": "Sau 79 là 80; trước 80 là 79; trước 78 là 77; sau 81 là 82; giữa 78 và 80 là 79; giữa 79 và 82 là 80 và 81",
           "explanation": "Các toa đánh số liên tiếp 77 đến 82, nên chỉ cần thêm hoặc bớt 1, hoặc đếm các số nằm giữa."
+        },
+        "en": {
+          "guide": [
+            "The carriage just after adds 1, and the carriage just before takes away 1.",
+            "For the carriage between two carriages, count the numbers in between."
+          ],
+          "hint": "Between carriage 79 and carriage 82 there are just two carriages: 80 and 81.",
+          "answer": {
+            "text": "After 79 is 80; before 80 is 79; before 78 is 77; after 81 is 82; between 78 and 80 is 79; between 79 and 82 are 80 and 81",
+            "explanation": "The carriages are numbered one after another from 77 to 82, so just add or take away 1, or count the numbers in between."
+          }
         }
       },
       "feedback": {
@@ -956,7 +1182,19 @@
           "Có một toa đang bị móc ngược chiều.",
           "Kế sau thì thêm 1, kế trước thì bớt 1 nhé.",
           "Giữa toa 79 và toa 82 có mấy toa? Đếm lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The carriages are coupled neatly, and the whistle toots with delight.",
+            "Every carriage is back in its place, and Bean Bear worries no more about forgetting.",
+            "{name}'s train stops at every station, without missing a beat."
+          ],
+          "wrong": [
+            "One carriage is hooked on the wrong way round.",
+            "Just after adds 1, and just before takes away 1.",
+            "How many carriages are between carriage 79 and carriage 82? Count again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -978,7 +1216,11 @@
         "b6": "79 + 1",
         "b7": "82 - 1"
       },
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Which carriage is next to which?",
+        "prompt": "The train has six carriages numbered one after another from 77 to 82. Fill in the missing carriage numbers."
+      }
     },
     {
       "id": "bang-lien-truoc-lien-sau",
@@ -1137,6 +1379,17 @@
         "answer": {
           "text": "66, 68; 97, 99; 78, 80; 89, 91",
           "explanation": "Mỗi số có người hàng xóm bên trái kém 1 và bên phải hơn 1: 66 – 67 – 68; 97 – 98 – 99; 78 – 79 – 80; 89 – 90 – 91."
+        },
+        "en": {
+          "guide": [
+            "The left column takes away 1 and the right column adds 1.",
+            "The sample row: 39, 40, 41."
+          ],
+          "hint": "The number just after 79 is 80, which is already a new ten.",
+          "answer": {
+            "text": "66, 68; 97, 99; 78, 80; 89, 91",
+            "explanation": "Each number has a left neighbour 1 less and a right neighbour 1 more: 66 – 67 – 68; 97 – 98 – 99; 78 – 79 – 80; 89 – 90 – 91."
+          }
         }
       },
       "feedback": {
@@ -1149,7 +1402,19 @@
           "Cột bên trái phải bé hơn số đã cho đúng 1.",
           "Liền sau của 79 sang tận chục mới, nghĩ kĩ nhé.",
           "Một ô hàng xóm đang dọn nhầm nhà rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every number's neighbours are all there, as cheerful as a street meeting.",
+            "You crossed into the new ten at 79 and 90 without a stumble, so skilful.",
+            "The quiz board is full, and Sister Hà claps loudly."
+          ],
+          "wrong": [
+            "The left column must be exactly 1 less than the given number.",
+            "The number just after 79 crosses into the new ten, so think carefully.",
+            "One neighbour has moved into the wrong house."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1173,7 +1438,12 @@
         "b7": "90 - 1",
         "b8": "90 + 1"
       },
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Neighbour number table",
+        "goTo": "Run out to the running track, where Sister Hà the referee is sticking a quiz board on the marker post",
+        "prompt": "Sister Hà sticks up one more quiz board, each row a number with its two neighbours. Fill in the blanks."
+      }
     },
     {
       "id": "lan-chay-tho-trang",
@@ -1192,6 +1462,17 @@
         "answer": {
           "text": "Làn số 4",
           "explanation": "Làn 1 thỏ xám, làn 2 thỏ nâu, làn 3 thỏ đen, làn 4 thỏ vàng, làn 5 thỏ trắng."
+        },
+        "en": {
+          "guide": [
+            "Lane 1 is the lane next to the fence.",
+            "Count each bunny in turn from the fence out to the yellow bunny."
+          ],
+          "hint": "The yellow bunny is fourth counting from the fence.",
+          "answer": {
+            "text": "Lane 4",
+            "explanation": "Lane 1 grey bunny, lane 2 brown bunny, lane 3 black bunny, lane 4 yellow bunny, lane 5 white bunny."
+          }
         }
       },
       "feedback": {
@@ -1204,12 +1485,29 @@
           "Làn số 1 sát hàng rào, đếm ra từ từ nhé.",
           "Thỏ vàng không đứng cuối hàng đâu.",
           "Đếm lại: thỏ xám, thỏ nâu, thỏ đen, rồi tới ai?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Bang! The yellow bunny shoots out of lane 4, just as you said.",
+            "Referee {name} set the lanes right, and the race begins.",
+            "All five bunnies bow to their sharp-eyed referee."
+          ],
+          "wrong": [
+            "Lane 1 is next to the fence, so count outwards slowly.",
+            "The yellow bunny isn't at the end of the row.",
+            "Count again: grey bunny, brown bunny, black bunny, then who?"
+          ]
+        }
       },
       "answer": {
         "value": 4
       },
-      "objective": "so-den-100-tia-so"
+      "objective": "so-den-100-tia-so",
+      "en": {
+        "title": "Which lane is the white bunny in?",
+        "goTo": "The four bunnies are on the starting line, and Sister Hà hands you the referee's whistle",
+        "question": "Five bunnies stand in five lanes side by side. The lanes are numbered from 1, starting next to the fence and increasing towards the field. From the fence outwards they are: grey bunny, brown bunny, black bunny, yellow bunny, white bunny. Which lane does the yellow bunny run in?"
+      }
     },
     {
       "id": "huy-hieu-lo-co",
@@ -1241,5 +1539,9 @@
       "tia-so": 2,
       "so-sanh-so": 1
     }
+  },
+  "en": {
+    "title": "Chip the Chick plays hopscotch on the number line",
+    "summary": "Cheeky Fox rubbed the numbers off the hopscotch lines with chalk and ran away, so Chip the Chick keeps hopping into the wrong squares. {name} runs around the yard with Mango Cat, Corn Bunny, Bean Bear and Sister Hà to redraw the number line and find the number just before and just after."
   }
 }

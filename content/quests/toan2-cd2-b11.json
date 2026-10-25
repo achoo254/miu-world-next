@@ -99,7 +99,11 @@
         "toan2-cd2-gio-tao-do",
         "toan2-cd2-tao-bui-co",
         "toan2-cd2-tao-la-kho"
-      ]
+      ],
+      "en": {
+        "title": "Pick up apples around the tree",
+        "goTo": "Apples have rolled all over the Meadow behind the Fruit Stalls: pick them up from the spilled basket, the grass clumps and under the dry leaves"
+      }
     },
     {
       "id": "tach-de-tru",
@@ -241,6 +245,17 @@
         "answer": {
           "text": "a) Phép 12 – 7; • Bẻ số: 12 = 10 + 2; • 10 – 7 = 3; • 3 + 2 = 5; • Vậy 12 – 7 = 5; b) Phép 14 – 6; • Bẻ số: 14 = 10 + 4; • 10 – 6 = 4; • 4 + 4 = 8; • Vậy 14 – 6 = 8",
           "explanation": "12 – 7: 10 – 7 = 3, 3 + 2 = 5. 14 – 6: 14 = 10 + 4, 10 – 6 = 4, 4 + 4 = 8."
+        },
+        "en": {
+          "guide": [
+            "Break the starting number into 10 plus the ones.",
+            "Take the number being subtracted from 10 first, then add the ones."
+          ],
+          "hint": "14 – 6: take 10 – 6 to get 4, then add the ones, 4.",
+          "answer": {
+            "text": "a) Sum 12 – 7; • Breaking the number: 12 = 10 + 2; • 10 – 7 = 3; • 3 + 2 = 5; • So 12 – 7 = 5; b) Sum 14 – 6; • Breaking the number: 14 = 10 + 4; • 10 – 6 = 4; • 4 + 4 = 8; • So 14 – 6 = 8",
+            "explanation": "12 – 7: 10 – 7 = 3, 3 + 2 = 5. 14 – 6: 14 = 10 + 4, 10 – 6 = 4, 4 + 4 = 8."
+          }
         }
       },
       "feedback": {
@@ -253,7 +268,19 @@
           "Số lẻ chỉ cộng vào sau khi đã lấy 10 trừ số trừ nhé.",
           "Kiểm tra lại bước 10 trừ số trừ trước.",
           "Phần lẻ của 14 là 4, đừng lẫn với số trừ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both number-breaking sums go smoothly, and Oink Pig pats his round tummy!",
+            "Taking the ten apart to subtract first, you did it as neatly as a baker.",
+            "Oink Pig's trick in your hands runs like the wind."
+          ],
+          "wrong": [
+            "The ones are only added after you take the number being subtracted from 10.",
+            "Check the step 10 minus the number being subtracted again.",
+            "The ones of 14 are 4, so don't mix them up with the number being subtracted."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -275,7 +302,12 @@
         "b6": "4 + 4",
         "b7": "14 - 6"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Oink Pig's number-splitting trick",
+        "goTo": "Carry the basket of apples back to the Apple Tree by the Fruit Stalls, where Oink Pig is holding out both hands",
+        "prompt": "Oink Pig's trick: when you have to subtract past 10, break the number you start with into a ten and the ones. Subtract from the ten first, then add the ones to the result."
+      }
     },
     {
       "id": "nham-tru-11",
@@ -433,6 +465,17 @@
         "answer": {
           "text": "11 – 4 = 7; 11 – 8 = 3; 11 – 6 = 5; 11 – 3 = 8; 11 – 9 = 2; 11 – 5 = 6; 11 – 7 = 4; 11 – 2 = 9",
           "explanation": "Từ 11 trừ đi 4, 8, 6, 3, 9, 5, 7, 2 lần lượt còn 7, 3, 5, 8, 2, 6, 4, 9."
+        },
+        "en": {
+          "guide": [
+            "11 – 1 = 10, and from there keep taking away until you have taken the number of apples eaten.",
+            "The more Oink Pig eats, the emptier the basket gets."
+          ],
+          "hint": "11 – 3 = 8 because 11 – 1 = 10, then take away 2 more.",
+          "answer": {
+            "text": "11 – 4 = 7; 11 – 8 = 3; 11 – 6 = 5; 11 – 3 = 8; 11 – 9 = 2; 11 – 5 = 6; 11 – 7 = 4; 11 – 2 = 9",
+            "explanation": "Taking 4, 8, 6, 3, 9, 5, 7, 2 from 11 leaves 7, 3, 5, 8, 2, 6, 4, 9 in turn."
+          }
         }
       },
       "feedback": {
@@ -445,7 +488,19 @@
           "Ăn càng nhiều quả thì còn lại càng ít, xem lại ô đó nhé.",
           "Từ 11 lùi về 10 trước rồi mới lùi tiếp.",
           "Kết quả phép trừ luôn bé hơn 11, cậu soát lại một ô nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The basket of apples empties exactly apple by apple, and Oink Pig covers his mouth in shame.",
+            "Eight times in your head, eight times right, and you are quicker than Pig chews.",
+            "Not one sum wrong, and Oink Pig promises to share evenly with the whole market next time."
+          ],
+          "wrong": [
+            "The more apples eaten, the fewer are left, so look at that box again.",
+            "Step back from 11 to 10 first, then go back further.",
+            "The result of a subtraction is always less than 11, so check one box again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -469,7 +524,11 @@
         "b7": "11 - 7",
         "b8": "11 - 2"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Basket of eleven apples",
+        "prompt": "The basket holds 11 apples, and Oink Pig lets slip and eats a few each time. Work out in your head how many are left after each time."
+      }
     },
     {
       "id": "tho-ve-chuong",
@@ -537,6 +596,17 @@
         "answer": {
           "text": "15 – 9 → chuồng 6; 12 – 5 → chuồng 7; 14 – 6 → chuồng 8; 13 – 8 → chuồng 5; 12 – 9 → chuồng 3",
           "explanation": "15 – 9 = 6, 12 – 5 = 7, 14 – 6 = 8, 13 – 8 = 5, 12 – 9 = 3."
+        },
+        "en": {
+          "guide": [
+            "Work out the subtraction each rabbit wears.",
+            "A rabbit goes to the pen marked with its result; Pen 4 already has the sample rabbit."
+          ],
+          "hint": "14 – 6: break 14 = 10 + 4, 10 – 6 = 4, 4 + 4 = 8.",
+          "answer": {
+            "text": "15 – 9 → Pen 6; 12 – 5 → Pen 7; 14 – 6 → Pen 8; 13 – 8 → Pen 5; 12 – 9 → Pen 3",
+            "explanation": "15 – 9 = 6, 12 – 5 = 7, 14 – 6 = 8, 13 – 8 = 5, 12 – 9 = 3."
+          }
         }
       },
       "feedback": {
@@ -549,7 +619,19 @@
           "Một chú thỏ đang gõ nhầm cửa chuồng, tính lại phép trừ của chú nhé.",
           "Chuồng ghi số nào thì chú thỏ phải có hiệu bằng số đó.",
           "12 – 9: bẻ 12 = 10 + 2 rồi lấy 10 – 9 trước."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five rabbits creep into the right pens, and Milk Rabbit flaps her ears in praise!",
+            "You herd rabbits as skilfully as someone who has done it for years, and none gets lost.",
+            "The pen doors shut with a click, and the rabbits lie down quietly."
+          ],
+          "wrong": [
+            "One rabbit is knocking at the wrong pen door, so work out its subtraction again.",
+            "Whatever number is on the pen, the rabbit's difference must equal it.",
+            "12 – 9: break 12 = 10 + 2 and do 10 – 9 first."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -560,7 +642,12 @@
           "tho-12-9": "nhom-chuong-3"
         }
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Bunnies go back to the hutch",
+        "goTo": "Chase the rabbits to the Mustard Greens Stall, where Milk Rabbit is opening the cage door",
+        "prompt": "Milk Rabbit lets five little rabbits out at the Mustard Greens Stall, and each one wears a subtraction. The sample rabbit 13 – 9 has already crept into Pen 4. Help Milk Rabbit herd the rest into the pens marked with the right result."
+      }
     },
     {
       "id": "tach-12-va-13",
@@ -753,6 +840,17 @@
         "answer": {
           "text": "a) Phép 13 – 8; • Bẻ số: 13 = 10 + 3; • 10 – 8 = 2; • 2 + 3 = 5; • Vậy 13 – 8 = 5; b) Phép 11 – 4; • Bẻ số: 11 = 10 + 1; • 10 – 4 = 6; • 6 + 1 = 7; • Vậy 11 – 4 = 7",
           "explanation": "13 – 8: 13 = 10 + 3, 10 – 8 = 2, 2 + 3 = 5. 11 – 4: 11 = 10 + 1, 10 – 4 = 6, 6 + 1 = 7."
+        },
+        "en": {
+          "guide": [
+            "Write the starting number as 10 plus the ones.",
+            "Take the number being subtracted from 10 first, then add the ones to whatever you get."
+          ],
+          "hint": "11 – 4: 10 – 4 = 6, then add the ones, 1.",
+          "answer": {
+            "text": "a) Sum 13 – 8; • Breaking the number: 13 = 10 + 3; • 10 – 8 = 2; • 2 + 3 = 5; • So 13 – 8 = 5; b) Sum 11 – 4; • Breaking the number: 11 = 10 + 1; • 10 – 4 = 6; • 6 + 1 = 7; • So 11 – 4 = 7",
+            "explanation": "13 – 8: 13 = 10 + 3, 10 – 8 = 2, 2 + 3 = 5. 11 – 4: 11 = 10 + 1, 10 – 4 = 6, 6 + 1 = 7."
+          }
         }
       },
       "feedback": {
@@ -765,7 +863,19 @@
           "Phần lẻ của 13 là 3, của 11 là 1, soát lại ô bẻ số nhé.",
           "Lấy 10 trừ số trừ rồi mới cộng phần lẻ.",
           "Một ô ở phép thứ hai còn lệch, tính lại từng dòng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Number-breaking as sweet as can be, and both subtractions are tucked into Oink Pig's tummy!",
+            "You added the ones at just the right moment, like a real chef.",
+            "Oink Pig giggles: I know these two sums by heart now."
+          ],
+          "wrong": [
+            "The ones of 13 are 3 and of 11 are 1, so check the number-breaking boxes again.",
+            "Take the number being subtracted from 10, then add the ones.",
+            "A box in the second sum is still off, so work out each line again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -793,7 +903,12 @@
         "b9": "6 + 1",
         "b10": "11 - 4"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Break the number once more",
+        "goTo": "Back at the Apple Tree by the Fruit Stalls, Oink Pig waves for more splitting sums",
+        "prompt": "Oink Pig begs for two more number-breaking sums \"to fill my tummy\". Fill in the missing boxes."
+      }
     },
     {
       "id": "nham-12-bang-13",
@@ -1036,6 +1151,17 @@
         "answer": {
           "text": "13 – 6 = 7; 13 – 2 = 11; 13 – 9 = 4; 13 – 4 = 9; 13 – 7 = 6; 13 – 3 = 10; 13 – 8 = 5; 13 – 5 = 8; Bảng nhỏ của 12; Số trừ 4: hiệu 8; Số trừ 6: hiệu 6; Số trừ 7: hiệu 5; Số trừ 9: hiệu 3; Số trừ 8: hiệu 4",
           "explanation": "13 trừ 6, 2, 9, 4, 7, 3, 8, 5 được 7, 11, 4, 9, 6, 10, 5, 8. Bảng của 12: 12 – 4 = 8, 12 – 6 = 6, 12 – 7 = 5, 12 – 9 = 3, 12 – 8 = 4."
+        },
+        "en": {
+          "guide": [
+            "13 – 3 = 10 is the easiest mark to remember.",
+            "In the small table for 12, take the number written on each line away from 12."
+          ],
+          "hint": "When the number being subtracted goes up by 1, the difference goes down by 1.",
+          "answer": {
+            "text": "13 – 6 = 7; 13 – 2 = 11; 13 – 9 = 4; 13 – 4 = 9; 13 – 7 = 6; 13 – 3 = 10; 13 – 8 = 5; 13 – 5 = 8; Small table for 12; Subtract 4: difference 8; Subtract 6: difference 6; Subtract 7: difference 5; Subtract 9: difference 3; Subtract 8: difference 4",
+            "explanation": "13 minus 6, 2, 9, 4, 7, 3, 8, 5 gives 7, 11, 4, 9, 6, 10, 5, 8. Table of 12: 12 – 4 = 8, 12 – 6 = 6, 12 – 7 = 5, 12 – 9 = 3, 12 – 8 = 4."
+          }
         }
       },
       "feedback": {
@@ -1048,7 +1174,19 @@
           "Có phép nhẩm bị lệch một đơn vị, soát lại nhé.",
           "Số trừ lớn hơn thì hiệu phải bé hơn.",
           "Ở bảng nhỏ, lấy 12 trừ số ghi trên dòng đó chứ không phải 13."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirteen sums in your head without tripping on one, and Oink Pig gapes!",
+            "The small table for 12 is complete, and Pig's handwriting looks prettier too.",
+            "You've finished both the basket and the table. You're the number-one mental calculator."
+          ],
+          "wrong": [
+            "One sum in your head is off by one, so check it again.",
+            "A bigger number being subtracted means a smaller difference.",
+            "In the small table, take the number on that line away from 12, not from 13."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1082,7 +1220,11 @@
         "b12": "12 - 9",
         "b13": "12 - 8"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Basket of thirteen apples and the small table for 12",
+        "prompt": "This time the basket holds 13 apples. Work out each sum in your head. After that, Oink Pig draws a small table for the number 12 for you to fill in the differences."
+      }
     },
     {
       "id": "ong-tim-hoa",
@@ -1138,6 +1280,17 @@
         "answer": {
           "text": "Bông hoa 8: 14 – 6, 13 – 5, 16 – 8; bông hoa 9: 12 – 3, 17 – 8",
           "explanation": "14 – 6 = 8, 13 – 5 = 8, 16 – 8 = 8, 12 – 3 = 9, 17 – 8 = 9. Ong mẫu 15 – 9 = 6 đậu bông hoa 6."
+        },
+        "en": {
+          "guide": [
+            "Work out the subtraction written on each bee.",
+            "A bee flies to the flower marked with its result."
+          ],
+          "hint": "14 – 6 and 16 – 8 give the same result.",
+          "answer": {
+            "text": "Flower 8: 14 – 6, 13 – 5, 16 – 8; Flower 9: 12 – 3, 17 – 8",
+            "explanation": "14 – 6 = 8, 13 – 5 = 8, 16 – 8 = 8, 12 – 3 = 9, 17 – 8 = 9. The sample bee 15 – 9 = 6 lands on Flower 6."
+          }
         }
       },
       "feedback": {
@@ -1150,7 +1303,19 @@
           "Có chú ong đậu nhầm bông hoa, tính lại phép trừ của chú ấy.",
           "Mỗi chú ong chỉ đậu bông hoa ghi đúng hiệu của mình.",
           "12 – 3: bẻ 12 = 10 + 2, 10 – 3 = 7, 7 + 2 = ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Buzz buzz! Every bee lands on its own flower!",
+            "Busy Bee twirls with joy, wings glittering.",
+            "You showed the way so well that the bees didn't need to ask again."
+          ],
+          "wrong": [
+            "A bee has landed on the wrong flower, so work out its subtraction again.",
+            "Each bee only lands on the flower marked with its own difference.",
+            "12 – 3: break 12 = 10 + 2, 10 – 3 = 7, 7 + 2 = ?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1161,7 +1326,12 @@
           "ong-16-8": "nhom-bong-hoa-8"
         }
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Bees go to the right flower",
+        "goTo": "Over at the Hibiscus Stall, Busy Bee is buzzing about, looking for flowers for the whole swarm",
+        "prompt": "Busy Bee buzzes: \"The whole swarm has lost its flowers!\" The sample bee 15 – 9 has landed on Flower 6. Show the other bees the way to the flower marked with the right result."
+      }
     },
     {
       "id": "hoa-dong-ong-nhat",
@@ -1179,6 +1349,17 @@
         "answer": {
           "text": "Bông hoa 8",
           "explanation": "Bông hoa 8 có ba chú ong 14 – 6, 13 – 5, 16 – 8 nên đông nhất."
+        },
+        "en": {
+          "guide": [
+            "Count the bees on each flower.",
+            "Remember to count the sample bee too."
+          ],
+          "hint": "Flower 6 has 1 bee and Flower 9 has 2 bees.",
+          "answer": {
+            "text": "Flower 8",
+            "explanation": "Flower 8 has three bees, 14 – 6, 13 – 5 and 16 – 8, so it is the busiest."
+          }
         }
       },
       "feedback": {
@@ -1191,13 +1372,29 @@
           "Hãy đếm số ong ở từng bông hoa rồi so với nhau.",
           "Bông hoa 6 mới có đúng một chú ong mẫu thôi.",
           "Gõ số ghi trên bông hoa chứ không gõ số ong."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Flower eight is the busiest, and bees hum all round the bush!",
+            "You counted all three bees landing on one flower, you really have sharp eyes.",
+            "Busy Bee counts once more, then nods to agree."
+          ],
+          "wrong": [
+            "Count the bees on each flower, then compare them.",
+            "Flower 6 only has the one sample bee.",
+            "Type the number written on the flower, not the number of bees."
+          ]
+        }
       },
       "answer": {
         "value": 8
       },
       "expression": "14 - 6",
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "The busiest flower",
+        "question": "The whole swarm has finished landing, together with the sample bee 15 – 9 on Flower 6. Which flower number has the most bees? Type the number written on that flower."
+      }
     },
     {
       "id": "giay-mau-cua-mai",
@@ -1216,6 +1413,17 @@
         "answer": {
           "text": "14 – 8 = 6. Đáp số: 6 tờ giấy",
           "explanation": "Mèo Nhung còn lại 14 – 8 = 6 (tờ giấy)."
+        },
+        "en": {
+          "guide": [
+            "\"Has cut up\" means taking away, so we subtract.",
+            "Take the number of sheets at the start and subtract the sheets that were cut."
+          ],
+          "hint": "The sum is 14 – 8, breaking 14 into 10 and 4.",
+          "answer": {
+            "text": "14 – 8 = 6. Answer: 6 sheets of paper",
+            "explanation": "Velvet Cat has 14 – 8 = 6 (sheets of paper) left."
+          }
         }
       },
       "feedback": {
@@ -1228,13 +1436,30 @@
           "Cắt dùng rồi thì giấy ít đi, kết quả phải bé hơn 14.",
           "Lấy 14 trừ 8 nhé, không cộng đâu.",
           "10 – 8 = 2, rồi cộng phần lẻ 4 xem được mấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six sheets are left, so Velvet Cat can cut six more petals!",
+            "Cutting means taking away, and you chose the subtraction straight away.",
+            "The Paper Flower Picture Stall lights up thanks to your tidy sum."
+          ],
+          "wrong": [
+            "Once the paper is used up there is less, so the result must be less than 14.",
+            "Take 8 from 14, don't add.",
+            "10 – 8 = 2, then add the ones, 4, and see what you get."
+          ]
+        }
       },
       "answer": {
         "value": 6
       },
       "expression": "14 - 8",
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "Paper flower cutting",
+        "goTo": "Go to the Paper Flower Picture Stall, where Velvet Cat is pinning pictures to the stall wall",
+        "question": "Velvet Cat cuts coloured paper to make paper-flower pictures to sell. She has 14 sheets of paper and has cut up 8 sheets into petals. How many sheets of paper does she have left?"
+      }
     },
     {
       "id": "heo-chon-cach",
@@ -1471,6 +1696,17 @@
         "answer": {
           "text": "a) Phép 15 – 9; • Bẻ số: 15 = 10 + 5; • 10 – 9 = 1; • 1 + 5 = 6; • Vậy 15 – 9 = 6; b) Phép 16 – 7; • Bẻ số: 16 = 10 + 6; • 10 – 7 = 3; • 3 + 6 = 9; • Vậy 16 – 7 = 9",
           "explanation": "15 – 9: 10 – 9 = 1, 1 + 5 = 6. 16 – 7: 16 = 10 + 6, 10 – 7 = 3, 3 + 6 = 9."
+        },
+        "en": {
+          "guide": [
+            "15 is 10 and 5; 16 is 10 and 6.",
+            "Subtract from 10 first, then add the ones that are left."
+          ],
+          "hint": "16 – 7: 10 – 7 = 3, 3 + 6 = 9.",
+          "answer": {
+            "text": "a) Sum 15 – 9; • Breaking the number: 15 = 10 + 5; • 10 – 9 = 1; • 1 + 5 = 6; • So 15 – 9 = 6; b) Sum 16 – 7; • Breaking the number: 16 = 10 + 6; • 10 – 7 = 3; • 3 + 6 = 9; • So 16 – 7 = 9",
+            "explanation": "15 – 9: 10 – 9 = 1, 1 + 5 = 6. 16 – 7: 16 = 10 + 6, 10 – 7 = 3, 3 + 6 = 9."
+          }
         }
       },
       "feedback": {
@@ -1483,7 +1719,19 @@
           "Phần lẻ của 16 là 6, đừng viết nhầm thành 5.",
           "Lấy 10 trừ số trừ trước, đừng lấy cả 16.",
           "Một ô ở phần b còn lệch, soát lại từng dòng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fifteen and sixteen are both broken neatly, and Oink Pig lines up the apples in order!",
+            "You break numbers quicker than Pig breaks cakes.",
+            "Both subtractions are done, and the basket of apples is still whole."
+          ],
+          "wrong": [
+            "The ones of 16 are 6, so don't write 5 by mistake.",
+            "Take the number being subtracted from 10 first, not from all of 16.",
+            "A box in part b is still off, so check each line."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1511,7 +1759,11 @@
         "b9": "3 + 6",
         "b10": "16 - 7"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Break the numbers fifteen and sixteen",
+        "prompt": "Oink Pig arranges the apples into a full basket of ten and a few loose ones, then does the sums. Fill in the remaining empty boxes."
+      }
     },
     {
       "id": "nham-15-bang-14",
@@ -1704,6 +1956,17 @@
         "answer": {
           "text": "16 – 9 = 7; 16 – 6 = 10; 16 – 8 = 8; 16 – 10 = 6; 16 – 7 = 9; 16 – 5 = 11; Bảng của 17; 17 – 8 = 9; 17 – 9 = 8; 17 – 10 = 7; 17 – 7 = 10",
           "explanation": "16 trừ 9, 6, 8, 10, 7, 5 được 7, 10, 8, 6, 9, 11. Bảng của 17: 17 – 8 = 9, 17 – 9 = 8, 17 – 10 = 7, 17 – 7 = 10."
+        },
+        "en": {
+          "guide": [
+            "16 – 6 = 10: take away all the ones and you're left with a round ten.",
+            "In the table for 17, take the number written on each line away from 17."
+          ],
+          "hint": "17 – 10 = 7 because you take away a whole ten.",
+          "answer": {
+            "text": "16 – 9 = 7; 16 – 6 = 10; 16 – 8 = 8; 16 – 10 = 6; 16 – 7 = 9; 16 – 5 = 11; Table for 17; 17 – 8 = 9; 17 – 9 = 8; 17 – 10 = 7; 17 – 7 = 10",
+            "explanation": "16 minus 9, 6, 8, 10, 7, 5 gives 7, 10, 8, 6, 9, 11. Table for 17: 17 – 8 = 9, 17 – 9 = 8, 17 – 10 = 7, 17 – 7 = 10."
+          }
         }
       },
       "feedback": {
@@ -1716,7 +1979,19 @@
           "Có ô bị lệch một đơn vị, nhẩm lại nhé.",
           "Số trừ càng lớn thì hiệu càng bé.",
           "16 – 10 bớt cả một chục nên còn phần lẻ thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ten subtractions done smoothly, and Bim Caterpillar crawls round in delight!",
+            "Working in your head round the basket of sixteen apples without getting an apple wrong.",
+            "The table for 17 is complete, and it looks as tidy as a row of apples."
+          ],
+          "wrong": [
+            "A box is off by one, so work it out again.",
+            "The bigger the number being subtracted, the smaller the difference.",
+            "16 – 10 takes away a whole ten, so only the ones are left."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1744,7 +2019,12 @@
         "b9": "17 - 10",
         "b10": "17 - 7"
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Basket of sixteen apples and the table for 17",
+        "goTo": "Carry the basket of apples over to the Pumpkin Pile at the Gourd Stalls, where Bim Caterpillar sits up to ask for help counting",
+        "prompt": "Oink Pig has gathered 16 apples. Work out each subtraction in your head, then help Bim Caterpillar fill in the differences for the number 17."
+      }
     },
     {
       "id": "may-bay-hieu-7",
@@ -1790,6 +2070,17 @@
         "answer": {
           "text": "14 – 8, 12 – 6, 15 – 9",
           "explanation": "14 – 8 = 6, 12 – 6 = 6, 15 – 9 = 6; ba chiếc còn lại có hiệu bằng 8."
+        },
+        "en": {
+          "guide": [
+            "Work out the difference marked on each plane.",
+            "Choose every plane whose difference is 6, which may be more than one."
+          ],
+          "hint": "Three planes carry a difference of 6.",
+          "answer": {
+            "text": "14 – 8, 12 – 6, 15 – 9",
+            "explanation": "14 – 8 = 6, 12 – 6 = 6, 15 – 9 = 6; the other three have a difference of 8."
+          }
         }
       },
       "feedback": {
@@ -1802,7 +2093,19 @@
           "Còn một chiếc có hiệu bằng 6 chưa được chọn.",
           "Chiếc máy bay có hiệu khác 6 thì để lại đợt sau.",
           "Tính hiệu từng chiếc trước khi chọn nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three planes glide off the launch pad, and Breeze Fox cheers loudly!",
+            "You chose all three, and didn't miss a single one.",
+            "A strong wind blows, and the plane marked six flies the furthest in the market."
+          ],
+          "wrong": [
+            "There is still a plane with a difference of 6 that you haven't chosen.",
+            "A plane whose difference isn't 6 stays for the next launch.",
+            "Work out each plane's difference before choosing."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1811,7 +2114,20 @@
           "15-9"
         ]
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Paper plane number 6",
+        "goTo": "Run to the Aisle between Two Stall Rows, where Breeze Fox is studying the wind direction to launch paper planes",
+        "prompt": "Breeze Fox sets up a launch pad for six paper planes, each marked with a subtraction. The first launch is only for planes whose difference is 6. Choose all those planes.",
+        "choices": [
+          "14 – 8",
+          "13 – 5",
+          "12 – 6",
+          "16 – 8",
+          "15 – 9",
+          "11 – 3"
+        ]
+      }
     },
     {
       "id": "may-bay-hieu-9",
@@ -1856,6 +2172,17 @@
         "answer": {
           "text": "13 – 5, 16 – 8, 11 – 3",
           "explanation": "13 – 5 = 8, 16 – 8 = 8, 11 – 3 = 8."
+        },
+        "en": {
+          "guide": [
+            "Work out each plane's difference again.",
+            "A difference of 8 belongs to the planes that haven't flown in the last launch."
+          ],
+          "hint": "16 – 8 = 8.",
+          "answer": {
+            "text": "13 – 5, 16 – 8, 11 – 3",
+            "explanation": "13 – 5 = 8, 16 – 8 = 8, 11 – 3 = 8."
+          }
         }
       },
       "feedback": {
@@ -1868,7 +2195,19 @@
           "Hiệu bằng 8 mới được bay đợt này, tính lại nhé.",
           "Có chiếc máy bay vừa bay ở đợt đầu, đừng chọn lại.",
           "11 – 3: lùi từ 11 về 10 rồi lùi thêm 2."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The second launch soars into the blue sky, and all three skim over the stall roofs!",
+            "You chose exactly the planes that hadn't flown last time.",
+            "Breeze Fox looks up and exclaims: what sharp eyes."
+          ],
+          "wrong": [
+            "Only a difference of 8 flies in this launch, so work it out again.",
+            "A plane that just flew in the first launch shouldn't be chosen again.",
+            "11 – 3: step back from 11 to 10, then back 2 more."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1877,7 +2216,19 @@
           "11-3"
         ]
       },
-      "objective": "cong-tru-qua-10-tru"
+      "objective": "cong-tru-qua-10-tru",
+      "en": {
+        "title": "Paper plane number 8",
+        "prompt": "The second launch is for the group of planes left. Choose all the planes whose difference is 8.",
+        "choices": [
+          "14 – 8",
+          "13 – 5",
+          "12 – 6",
+          "16 – 8",
+          "15 – 9",
+          "11 – 3"
+        ]
+      }
     },
     {
       "id": "oi-cua-ba",
@@ -1896,6 +2247,17 @@
         "answer": {
           "text": "16 – 9 = 7. Đáp số: 7 chiếc bánh",
           "explanation": "Bà còn lại 16 – 9 = 7 (chiếc bánh)."
+        },
+        "en": {
+          "guide": [
+            "Giving cakes away leaves Grandma with fewer.",
+            "Subtract 9 from 16."
+          ],
+          "hint": "10 – 9 = 1, then add 6 more.",
+          "answer": {
+            "text": "16 – 9 = 7. Answer: 7 cakes",
+            "explanation": "Grandma has 16 – 9 = 7 (cakes) left."
+          }
         }
       },
       "feedback": {
@@ -1908,13 +2270,30 @@
           "Biếu đi thì còn lại ít hơn 16, đừng cộng nhé.",
           "Lấy số bánh lúc đầu trừ số bánh đã biếu.",
           "Thử bẻ 16 = 10 + 6 rồi lấy 10 trừ 9 trước."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Grandma has seven cakes left, and Oink Pig gulps loudly!",
+            "Giving away means taking away, and you chose a very neat subtraction.",
+            "The smell of apple cake fills the market corner thanks to your sum."
+          ],
+          "wrong": [
+            "Giving away leaves less than 16, so don't add.",
+            "Take the number of cakes given away from the number at the start.",
+            "Try breaking 16 = 10 + 6 and do 10 – 9 first."
+          ]
+        }
       },
       "answer": {
         "value": 7
       },
       "expression": "16 - 9",
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "Grandma's cakes",
+        "goTo": "Back at the Apple Tree by the Fruit Stalls, Oink Pig sits telling a story about his grandma",
+        "question": "Oink Pig tells a story from home: his grandmother baked 16 apple cakes and gave 9 of them to the neighbours. How many cakes does she have left?"
+      }
     },
     {
       "id": "dieu-bang-hieu",
@@ -2209,6 +2588,17 @@
         "answer": {
           "text": "15 – 6 = 9; 14 – 7 = 7; 16 – 9 = 7; 13 – 5 = 8; 17 – 9 = 8; 12 – 8 = 4; Số bị trừ | 13 | 15 | 12 | 16 | 11 | 14; Số trừ | 7 | 8 | 5 | 9 | 6 | 8; Hiệu | 6 | 7 | 7 | 7 | 5 | 6; a) 15 – 7 = 8; a) 14 – 9 < 6; b) 16 – 7 > 12 – 5; b) 17 – 8 = 15 – 6",
           "explanation": "Nhẩm: 9, 7, 7, 8, 8, 4. Hiệu trong bảng: 6, 7, 7, 7, 5, 6. So sánh: 15 – 7 = 8 nên \"=\"; 14 – 9 = 5 < 6; 9 > 7; 17 – 8 = 9 = 15 – 6."
+        },
+        "en": {
+          "guide": [
+            "Difference = the number you start with – the number being subtracted.",
+            "To compare, work out each side as a number first and then put in the sign."
+          ],
+          "hint": "16 – 7 = 9 and 12 – 5 = 7, so 9 > 7.",
+          "answer": {
+            "text": "15 – 6 = 9; 14 – 7 = 7; 16 – 9 = 7; 13 – 5 = 8; 17 – 9 = 8; 12 – 8 = 4; Number to start with | 13 | 15 | 12 | 16 | 11 | 14; Number subtracted | 7 | 8 | 5 | 9 | 6 | 8; Difference | 6 | 7 | 7 | 7 | 5 | 6; a) 15 – 7 = 8; a) 14 – 9 < 6; b) 16 – 7 > 12 – 5; b) 17 – 8 = 15 – 6",
+            "explanation": "In your head: 9, 7, 7, 8, 8, 4. Differences in the table: 6, 7, 7, 7, 5, 6. Comparing: 15 – 7 = 8 so \"=\"; 14 – 9 = 5 < 6; 9 > 7; 17 – 8 = 9 = 15 – 6."
+          }
         }
       },
       "feedback": {
@@ -2221,7 +2611,19 @@
           "Hai vế bằng nhau thì dùng dấu bằng nhé.",
           "Miệng dấu luôn mở về phía số lớn hơn.",
           "Tính từng vế ra số rồi hẵng chọn dấu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The kite's tail is full of right numbers, and the kite soars up into the clouds!",
+            "You put each comparison sign where it belongs, and Cream Cow jingles her bell.",
+            "All the differences in the table match, and no box needs rewriting."
+          ],
+          "wrong": [
+            "If both sides are equal, use the equals sign.",
+            "The mouth of the sign always opens towards the bigger number.",
+            "Work out each side as a number, then choose the sign."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -2261,7 +2663,12 @@
         "b15": "16 - 7 ? 12 - 5",
         "b16": "17 - 8 ? 15 - 6"
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Cream Cow's mental maths notebook",
+        "goTo": "Out on the Canal Bank Meadow, Cream Cow is trotting along tugging a red kite",
+        "prompt": "Cream Cow writes sums on the kite's tail to help her remember. Work out the first six in your head and fill the differences into the table, then put a comparison sign >, < or = in the last four gaps."
+      }
     },
     {
       "id": "canh-dieu-lon-be",
@@ -2316,6 +2723,17 @@
         "answer": {
           "text": "Lớn nhất: 17 – 8; bé nhất: 13 – 9; còn lại: 15 – 8, 16 – 9, 14 – 7",
           "explanation": "17 – 8 = 9 lớn nhất; 13 – 9 = 4 bé nhất; ba cánh diều còn lại đều có hiệu 7."
+        },
+        "en": {
+          "guide": [
+            "Work out the difference of all five kites.",
+            "Compare the differences to find the greatest and the smallest."
+          ],
+          "hint": "The differences are 7, 9, 4, 7, 7.",
+          "answer": {
+            "text": "Greatest: 17 – 8; smallest: 13 – 9; the rest: 15 – 8, 16 – 9, 14 – 7",
+            "explanation": "17 – 8 = 9 is the greatest; 13 – 9 = 4 is the smallest; the other three kites all have a difference of 7."
+          }
         }
       },
       "feedback": {
@@ -2328,7 +2746,19 @@
           "Phải tính cả năm cánh diều rồi mới so sánh.",
           "Hiệu lớn nhất và bé nhất mỗi loại chỉ có một cánh.",
           "Ba cánh diều còn lại có cùng một hiệu, đừng xếp vào nhóm đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The nine kite flies highest and the four kite glides lowest, correct!",
+            "All five kites are sorted into the right places, and the sky over the market fair looks even brighter.",
+            "Cream Cow tugs the string, and the three kites in the middle tip their wings in greeting together."
+          ],
+          "wrong": [
+            "Work out all five kites before comparing.",
+            "There is only one kite each for the greatest and the smallest difference.",
+            "The other three kites have the same difference, so don't put them in the first group."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -2339,7 +2769,11 @@
           "dieu-14-7": "nhom-khong-lon-nhat-cung-khong-be-nhat"
         }
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Which kite stands out?",
+        "prompt": "Cream Cow flies five kites in the sky, each carrying a subtraction. Find the kite with the greatest difference and the kite with the smallest difference; put the rest in the last group."
+      }
     },
     {
       "id": "hoa-cua-mai-mi",
@@ -2358,6 +2792,17 @@
         "answer": {
           "text": "17 – 9 = 8. Đáp số: 8 cây nấm",
           "explanation": "Thỏ Sữa nhặt được hơn Sâu Bim 17 – 9 = 8 (cây nấm)."
+        },
+        "en": {
+          "guide": [
+            "Asking \"how many more\" means taking the smaller number away from the bigger.",
+            "The sum is 17 – 9."
+          ],
+          "hint": "10 – 9 = 1, then add 7.",
+          "answer": {
+            "text": "17 – 9 = 8. Answer: 8 mushrooms",
+            "explanation": "Milk Rabbit picked 17 – 9 = 8 (mushrooms) more than Bim Caterpillar."
+          }
         }
       },
       "feedback": {
@@ -2370,13 +2815,30 @@
           "Hơn bao nhiêu thì phải trừ chứ không cộng.",
           "Lấy số nấm của Thỏ Sữa trừ số nấm của Sâu Bim.",
           "Bẻ 17 = 10 + 7, lấy 10 trừ 9 trước rồi mới cộng tiếp."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Milk Rabbit has exactly eight more mushrooms, and Bim Caterpillar scratches his head and chuckles!",
+            "To find how many more, you take the smaller from the bigger, and you remembered it very well.",
+            "You compared the two friends' baskets of mushrooms so fairly."
+          ],
+          "wrong": [
+            "\"How many more\" needs a subtraction, not an addition.",
+            "Take Bim Caterpillar's mushrooms away from Milk Rabbit's.",
+            "Break 17 = 10 + 7, take 9 from 10 first and then add on."
+          ]
+        }
       },
       "answer": {
         "value": 8
       },
       "expression": "17 - 9",
-      "objective": "bai-toan-co-loi-van-hon-kem"
+      "objective": "bai-toan-co-loi-van-hon-kem",
+      "en": {
+        "title": "Who picked more mushrooms?",
+        "goTo": "Stop by the Mustard Greens Stall again, where Milk Rabbit has just come back from picking flowers",
+        "question": "Milk Rabbit shows off her basket of mushrooms and then sets a puzzle: Milk Rabbit picked 17 mushrooms, and Bim Caterpillar picked 9 mushrooms. How many more mushrooms did Milk Rabbit pick than Bim Caterpillar?"
+      }
     },
     {
       "id": "so-o-trong-heo",
@@ -2637,6 +3099,17 @@
         "answer": {
           "text": "12 – 5 = 7; 13 – 9 = 4; 16 – 7 = 9; 11 – 6 = 5; 15 – 8 = 7; 14 – 9 = 5; 17 – 9 = 8; 12 – 3 = 9; a) 15 – 5 – 2 = 8; a) 15 – 7 = 8; b) 16 – 6 – 3 = 7; b) 16 – 9 = 7; c) 12 – 2 – 5 = 5; c) 12 – 7 = 5",
           "explanation": "Tám ô đầu: 7, 4, 9, 5, 7, 5, 8, 9. Ba cặp cuối: 8 và 8, 7 và 7, 5 và 5: trừ hai lần liền bằng trừ một lần tổng của hai số trừ."
+        },
+        "en": {
+          "guide": [
+            "When you subtract one after another, work from left to right.",
+            "15 – 5 – 2 and 15 – 7 give the same result because 5 + 2 = 7."
+          ],
+          "hint": "15 – 5 = 10, then 10 – 2 = 8.",
+          "answer": {
+            "text": "Answers: 12 – 5 = 7; 13 – 9 = 4; 16 – 7 = 9; 11 – 6 = 5; 15 – 8 = 7; 14 – 9 = 5; 17 – 9 = 8; 12 – 3 = 9; a) 15 – 5 – 2 = 8; a) 15 – 7 = 8; b) 16 – 6 – 3 = 7; b) 16 – 9 = 7; c) 12 – 2 – 5 = 5; c) 12 – 7 = 5",
+            "explanation": "The first eight boxes: 7, 4, 9, 5, 7, 5, 8, 9. The last three pairs: 8 and 8, 7 and 7, 5 and 5: subtracting twice in a row equals subtracting the total of the two numbers once."
+          }
         }
       },
       "feedback": {
@@ -2649,7 +3122,19 @@
           "Trừ hai lần liền thì làm từ trái sang phải.",
           "Mỗi cặp phép tính cuối phải cho cùng một kết quả.",
           "Một ô trong tám ô đầu còn lệch, soát lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The page is full of right numbers, and Oink Pig closes it, satisfied!",
+            "Both ways give the same result, so you've found the secret.",
+            "All fourteen empty boxes have a number, and not one gap is left."
+          ],
+          "wrong": [
+            "When you subtract twice in a row, work from left to right.",
+            "Each of the last pairs of sums must give the same result.",
+            "One of the first eight boxes is still off, so check them again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -2685,7 +3170,12 @@
         "b13": "12 - 2 - 5",
         "b14": "12 - 7"
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Oink Pig's notebook",
+        "goTo": "Run to the Market Back Gate, where Oink Pig is waiting to watch the race",
+        "prompt": "While waiting for the race, Oink Pig opens a notebook with a few empty boxes. Fill in the results, then work out the last pairs of sums two ways."
+      }
     },
     {
       "id": "tinh-cong-tru-heo",
@@ -2962,6 +3452,17 @@
         "answer": {
           "text": "a) 5 + 8 = 13; a) 8 + 5 = 13; a) 13 – 8 = 5; a) 13 – 5 = 8; b) 9 + 7 = 16; b) 7 + 9 = 16; b) 16 – 7 = 9; b) 16 – 9 = 7; c) 6 + 9 = 15; c) 9 + 6 = 15; c) 15 – 9 = 6; c) 15 – 6 = 9; 13 → (– 5) → 8 → (+ 7) → 15 → (– 6) → 9",
           "explanation": "a) 13, 13, 5, 8. b) 16, 16, 9, 7. c) 15, 15, 6, 9. Mũi tên: 8, 15, 9."
+        },
+        "en": {
+          "guide": [
+            "5 + 8 = 13 means 13 – 5 = 8 and 13 – 8 = 5.",
+            "Following the arrows: take the result of the box before as the starting number for the next box."
+          ],
+          "hint": "13 – 5 = 8, 8 + 7 = 15, 15 – 6 = 9.",
+          "answer": {
+            "text": "Answers: a) 5 + 8 = 13; a) 8 + 5 = 13; a) 13 – 8 = 5; a) 13 – 5 = 8; b) 9 + 7 = 16; b) 7 + 9 = 16; b) 16 – 7 = 9; b) 16 – 9 = 7; c) 6 + 9 = 15; c) 9 + 6 = 15; c) 15 – 9 = 6; c) 15 – 6 = 9; 13 → (– 5) → 8 → (+ 7) → 15 → (– 6) → 9",
+            "explanation": "a) 13, 13, 5, 8. b) 16, 16, 9, 7. c) 15, 15, 6, 9. Arrows: 8, 15, 9."
+          }
         }
       },
       "feedback": {
@@ -2974,7 +3475,19 @@
           "Từ phép cộng suy ra phép trừ: lấy tổng bớt một số hạng.",
           "Đổi chỗ hai số hạng thì tổng vẫn như cũ.",
           "Mũi tên thứ hai là cộng 7, đừng nhầm thành trừ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Adding and subtracting hold hands, and all twelve sums are right!",
+            "You followed the arrows to the finish without losing a step.",
+            "Oink Pig cheers: the best friend of addition is subtraction!"
+          ],
+          "wrong": [
+            "From an addition you can get a subtraction: take an addend away from the total.",
+            "Swap the two addends round and the total stays the same.",
+            "The second arrow is plus 7, so don't mistake it for minus."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -3012,7 +3525,11 @@
         "b14": "13 - 5 + 7",
         "b15": "13 - 5 + 7 - 6"
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Addition and subtraction are best friends",
+        "prompt": "Oink Pig discovers that addition and subtraction are best friends. Work out each group of four sums, then follow the arrows: 13 minus 5, plus 7, minus 6."
+      }
     },
     {
       "id": "dua-xe-qua-cau",
@@ -3031,6 +3548,17 @@
         "answer": {
           "text": "14 – 6 = 8. Đáp số: 8 chiếc xe",
           "explanation": "Còn 14 – 6 = 8 (chiếc xe) chưa qua cầu."
+        },
+        "en": {
+          "guide": [
+            "Take the number of bikes that have crossed away from the total number of bikes.",
+            "The sum is 14 – 6."
+          ],
+          "hint": "10 – 6 = 4, 4 + 4 = 8.",
+          "answer": {
+            "text": "14 – 6 = 8. Answer: 8 bikes",
+            "explanation": "14 – 6 = 8 (bikes) have not yet crossed the bridge."
+          }
         }
       },
       "feedback": {
@@ -3043,13 +3571,30 @@
           "Xe đã qua cầu thì phải bớt khỏi đoàn.",
           "Lấy 14 trừ 6 nhé, không phải cộng.",
           "Bẻ 14 thành 10 và 4 rồi trừ 6 xem sao."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The remaining eight bikes rumble onto the dragon bridge, and Uncle Dũng waves his flag wildly!",
+            "The ones that have crossed leave the race, and you chose the right subtraction.",
+            "Oink Pig cheers himself hoarse, thanks to your timely sum."
+          ],
+          "wrong": [
+            "The bikes that have crossed the bridge must be taken away from the group.",
+            "Take 6 from 14, don't add.",
+            "Break 14 into 10 and 4, then take 6 away and see."
+          ]
+        }
       },
       "answer": {
         "value": 8
       },
       "expression": "14 - 6",
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "Racing cars cross the bridge",
+        "goTo": "Run to the Foot of the Dragon Bridge, where Uncle Dũng is waving a flag for the racers",
+        "question": "Uncle Dũng waves a flag for the bicycle race crossing the dragon bridge over the canal, while Oink Pig stands cheering noisily. The race has 14 bikes, and 6 have crossed the bridge. How many bikes have not yet crossed?"
+      }
     },
     {
       "id": "huy-hieu-banh-tao",
@@ -3081,5 +3626,9 @@
       "phep-tru": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Oink Pig and the Falling Apples",
+    "summary": "The old apple tree by the fruit stalls drops apples with a thud, and Oink Pig keeps picking them up and... eating them. {name} helps Pig work out how many are left by subtracting past 10, then wanders the vegetable and flower market solving puzzles with Milk Rabbit, Busy Bee, Velvet Cat, Bim Caterpillar, Breeze Fox, Cream Cow and Uncle Dũng."
   }
 }

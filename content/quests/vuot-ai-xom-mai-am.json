@@ -41,12 +41,24 @@
       "kind": "dialogue",
       "target": "trum-xma-heo-con",
       "lines": [
-        { "speaker": "Heo Con Ủn Ỉn", "text": "Ủn ỉn… {name} ơi, Diều Hâu Gió Lốc vừa sà xuống quắp mất khung ảnh cả nhà, bay lên gò lộng gió rồi!" },
-        { "speaker": "Heo Con Ủn Ỉn", "text": "Bác ấy không xấu đâu, chỉ thích đố về gia đình thôi. Nhưng bữa dã ngoại còn chưa dọn xong, cậu giúp tớ với!" }
+        {
+          "speaker": "Heo Con Ủn Ỉn",
+          "text": "Ủn ỉn… {name} ơi, Diều Hâu Gió Lốc vừa sà xuống quắp mất khung ảnh cả nhà, bay lên gò lộng gió rồi!"
+        },
+        {
+          "speaker": "Heo Con Ủn Ỉn",
+          "text": "Bác ấy không xấu đâu, chỉ thích đố về gia đình thôi. Nhưng bữa dã ngoại còn chưa dọn xong, cậu giúp tớ với!"
+        }
       ],
       "choices": [
-        { "text": "Mình dọn bữa dã ngoại trước nhé!", "reply": "Ừ, đồ để cả trên bãi cỏ cánh đồng gió, gió thổi bay tứ tung." },
-        { "text": "Diều Hâu đố khó lắm không?", "reply": "Khó mà vui! Nhưng dọn bữa dã ngoại trên bãi cỏ đã nhé." }
+        {
+          "text": "Mình dọn bữa dã ngoại trước nhé!",
+          "reply": "Ừ, đồ để cả trên bãi cỏ cánh đồng gió, gió thổi bay tứ tung."
+        },
+        {
+          "text": "Diều Hâu đố khó lắm không?",
+          "reply": "Khó mà vui! Nhưng dọn bữa dã ngoại trên bãi cỏ đã nhé."
+        }
       ],
       "en": {
         "title": "Heo Con is about to cry",
@@ -93,7 +105,26 @@
           "clue": "Cuộn tròn lại thì gọn, trải ra thì cả nhà ngồi vừa, mặt in hoa đỏ.",
           "target": "trum-xma-chieu"
         }
-      ]
+      ],
+      "en": {
+        "title": "Set up the picnic meal",
+        "goTo": "Go to the grass in the windy fields and gather the picnic things",
+        "prompt": "The wind blew away three things for the picnic. Read the clues and find them again:",
+        "items": [
+          {
+            "name": "The sponge cake",
+            "clue": "Soft and fluffy, golden, topped with a layer of white cream, baked by Mum early in the morning."
+          },
+          {
+            "name": "The jug of lemonade",
+            "clue": "A jug full of sweet and sour drink that cools you right down."
+          },
+          {
+            "name": "The flowery mat",
+            "clue": "Rolled up it's neat, spread out the whole family fits on it, with red flowers printed on top."
+          }
+        ]
+      }
     },
     {
       "id": "doc-thu-moi",
@@ -105,22 +136,78 @@
       "text": "THƯ MỜI NGÀY HỘI GIA ĐÌNH\nKính mời ông bà, bố mẹ và các cháu ra cánh đồng gió chiều nay.\n3 giờ: cả nhà ăn bánh.\n4 giờ: thả diều, chơi chong chóng.\n5 giờ: chụp một tấm ảnh cả nhà để treo trong khung.\nXóm Mái Ấm",
       "question": "Theo thư mời, mấy giờ cả nhà chụp ảnh?",
       "choices": [
-        { "id": "a", "text": "3 giờ" },
-        { "id": "b", "text": "4 giờ" },
-        { "id": "c", "text": "5 giờ" }
+        {
+          "id": "a",
+          "text": "3 giờ"
+        },
+        {
+          "id": "b",
+          "text": "4 giờ"
+        },
+        {
+          "id": "c",
+          "text": "5 giờ"
+        }
       ],
-      "answer": { "choice": "c" },
+      "answer": {
+        "choice": "c"
+      },
       "support": {
-        "guide": ["Tìm dòng có chữ «chụp».", "Con số ở đầu dòng chính là giờ chụp ảnh."],
+        "guide": [
+          "Tìm dòng có chữ «chụp».",
+          "Con số ở đầu dòng chính là giờ chụp ảnh."
+        ],
         "hint": "Chụp ảnh là việc cuối cùng của buổi chiều.",
         "answer": {
           "text": "Chụp ảnh lúc 5 giờ",
           "explanation": "Thư mời ghi: 5 giờ, chụp một tấm ảnh cả nhà để treo trong khung."
+        },
+        "en": {
+          "guide": [
+            "Find the line with the word «photo».",
+            "The number at the start of the line is the time of the photo."
+          ],
+          "hint": "The photo is the last thing of the afternoon.",
+          "answer": {
+            "text": "The photo is at 5 o'clock",
+            "explanation": "The invitation says: 5 o'clock, a photo of the whole family to hang in the frame."
+          }
         }
       },
       "feedback": {
-        "right": ["Năm giờ chụp ảnh, còn kịp lấy khung về!", "{name} đọc thư mời nhanh như gió đồng.", "Chuẩn giờ rồi, Heo Con thở phào nhẹ nhõm."],
-        "wrong": ["Giờ đó cả nhà đang ăn bánh hoặc thả diều đấy.", "Tìm chữ «chụp» trong thư mời nhé {name}.", "Việc chụp ảnh nằm ở dòng cuối cùng của lịch."]
+        "right": [
+          "Năm giờ chụp ảnh, còn kịp lấy khung về!",
+          "{name} đọc thư mời nhanh như gió đồng.",
+          "Chuẩn giờ rồi, Heo Con thở phào nhẹ nhõm."
+        ],
+        "wrong": [
+          "Giờ đó cả nhà đang ăn bánh hoặc thả diều đấy.",
+          "Tìm chữ «chụp» trong thư mời nhé {name}.",
+          "Việc chụp ảnh nằm ở dòng cuối cùng của lịch."
+        ],
+        "en": {
+          "right": [
+            "The photo is at five, there's still time to fetch the frame!",
+            "{name} read the invitation as fast as the wind in the field.",
+            "Right on time, Piglet breathes a sigh of relief."
+          ],
+          "wrong": [
+            "At that time the family is eating cake or flying kites.",
+            "Look for the word «photo» in the invitation, {name}.",
+            "The photo is on the last line of the programme."
+          ]
+        }
+      },
+      "en": {
+        "title": "Invitation to Family Day",
+        "goTo": "Stop by the wooden post at the edge of the field and read the festival invitation",
+        "text": "INVITATION TO FAMILY DAY\nGrandparents, parents and children are warmly invited to the windy fields this afternoon.\n3 o'clock: the whole family eats cake.\n4 o'clock: flying kites and playing with pinwheels.\n5 o'clock: a photo of the whole family to hang in the frame.\nCosy Hamlet",
+        "question": "According to the invitation, what time does the family have its photo taken?",
+        "choices": [
+          "3 o'clock",
+          "4 o'clock",
+          "5 o'clock"
+        ]
       }
     },
     {
@@ -134,28 +221,103 @@
       "skill": "logic",
       "prompt": "Chị Thoa gắn hoa giấy lên các cánh quạt, cánh sau nhiều hơn cánh trước cùng một số bông. Cánh tiếp theo có mấy bông?",
       "elements": [
-        { "id": "c1", "label": "2 bông" },
-        { "id": "c2", "label": "5 bông" },
-        { "id": "c3", "label": "8 bông" },
-        { "id": "c4", "label": "11 bông" }
+        {
+          "id": "c1",
+          "label": "2 bông"
+        },
+        {
+          "id": "c2",
+          "label": "5 bông"
+        },
+        {
+          "id": "c3",
+          "label": "8 bông"
+        },
+        {
+          "id": "c4",
+          "label": "11 bông"
+        }
       ],
       "choices": [
-        { "id": "a", "text": "12 bông" },
-        { "id": "b", "text": "13 bông" },
-        { "id": "c", "text": "14 bông" }
+        {
+          "id": "a",
+          "text": "12 bông"
+        },
+        {
+          "id": "b",
+          "text": "13 bông"
+        },
+        {
+          "id": "c",
+          "text": "14 bông"
+        }
       ],
-      "answer": { "choice": "c" },
+      "answer": {
+        "choice": "c"
+      },
       "support": {
-        "guide": ["Lấy số bông cánh thứ hai trừ cánh thứ nhất.", "Kiểm tra các cánh sau có thêm đúng bấy nhiêu không.", "Cộng thêm số đó vào cánh cuối."],
+        "guide": [
+          "Lấy số bông cánh thứ hai trừ cánh thứ nhất.",
+          "Kiểm tra các cánh sau có thêm đúng bấy nhiêu không.",
+          "Cộng thêm số đó vào cánh cuối."
+        ],
         "hint": "Mỗi cánh nhiều hơn cánh trước 3 bông.",
         "answer": {
           "text": "Cánh tiếp theo có 14 bông",
           "explanation": "Dãy tăng đều 3: 2, 5, 8, 11, rồi 11 + 3 = 14."
+        },
+        "en": {
+          "guide": [
+            "Take the number of flowers on the first blade from the second blade.",
+            "Check that each later blade has exactly that many more.",
+            "Add that number to the last blade."
+          ],
+          "hint": "Each blade has 3 more flowers than the one before.",
+          "answer": {
+            "text": "The next blade has 14 flowers",
+            "explanation": "The row goes up by 3 each time: 2, 5, 8, 11, then 11 + 3 = 14."
+          }
         }
       },
       "feedback": {
-        "right": ["Cánh quạt quay tít, hoa giấy rực rỡ cả cánh đồng!", "{name} đếm thêm ba giỏi quá, chị Thoa khen nức nở.", "Mười bốn bông, cánh quạt đẹp nhất xóm rồi!"],
-        "wrong": ["Thử lấy 5 trừ 2 xem mỗi cánh thêm mấy bông nhé.", "Cánh cuối có 11 bông, thêm bao nhiêu nữa nhỉ {name}?", "Các cánh tăng đều nhau, không tăng một bông đâu."]
+        "right": [
+          "Cánh quạt quay tít, hoa giấy rực rỡ cả cánh đồng!",
+          "{name} đếm thêm ba giỏi quá, chị Thoa khen nức nở.",
+          "Mười bốn bông, cánh quạt đẹp nhất xóm rồi!"
+        ],
+        "wrong": [
+          "Thử lấy 5 trừ 2 xem mỗi cánh thêm mấy bông nhé.",
+          "Cánh cuối có 11 bông, thêm bao nhiêu nữa nhỉ {name}?",
+          "Các cánh tăng đều nhau, không tăng một bông đâu."
+        ],
+        "en": {
+          "right": [
+            "The fan whirls and the paper flowers brighten the whole field!",
+            "{name} counted on in threes so well, Sister Thoa is full of praise.",
+            "Fourteen flowers, the prettiest fan in the hamlet!"
+          ],
+          "wrong": [
+            "Try 5 minus 2 to see how many more flowers each blade gets.",
+            "The last blade has 11 flowers, how many more come next, {name}?",
+            "The blades go up by the same amount, and it isn't by one flower."
+          ]
+        }
+      },
+      "en": {
+        "title": "Paper flowers on the fan blades",
+        "goTo": "Go to the little corn field, where Sister Thoa the Corn Picker is fixing flowers onto the wind fan",
+        "prompt": "Sister Thoa fixes paper flowers onto the fan blades, each blade with the same number more flowers than the one before. How many flowers does the next blade have?",
+        "choices": [
+          "12 flowers",
+          "13 flowers",
+          "14 flowers"
+        ],
+        "elements": [
+          "2 flowers",
+          "5 flowers",
+          "8 flowers",
+          "11 flowers"
+        ]
       }
     },
     {
@@ -220,11 +382,22 @@
           "move": "fling",
           "prompt": "Mẹ của bố em, em gọi là gì?",
           "choices": [
-            { "id": "a", "text": "Bà ngoại" },
-            { "id": "b", "text": "Bà nội" },
-            { "id": "c", "text": "Cô" }
+            {
+              "id": "a",
+              "text": "Bà ngoại"
+            },
+            {
+              "id": "b",
+              "text": "Bà nội"
+            },
+            {
+              "id": "c",
+              "text": "Cô"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Xác định người được hỏi là mẹ của bố, tức là người bên họ của bố.",
@@ -242,10 +415,18 @@
               ],
               "hint": "Your dad's father is «ông nội»; his wife is called with the same side's word.",
               "answer": {
-                "text": "Bà nội (dad's mum)",
+                "text": "Bà nội",
                 "explanation": "Dad's mother is on the «họ nội» side, so she is «bà nội»; «bà ngoại» is mum's mother and «cô» is dad's younger sister."
               }
             }
+          },
+          "en": {
+            "prompt": "What do you call your dad's mother?",
+            "choices": [
+              "Bà ngoại",
+              "Bà nội",
+              "Cô"
+            ]
           }
         },
         {
@@ -254,11 +435,22 @@
           "move": "charge",
           "prompt": "Từ nào nói về tình cảm giữa những người trong nhà?",
           "choices": [
-            { "id": "a", "text": "yêu thương" },
-            { "id": "b", "text": "nhanh nhẹn" },
-            { "id": "c", "text": "tròn xoe" }
+            {
+              "id": "a",
+              "text": "yêu thương"
+            },
+            {
+              "id": "b",
+              "text": "nhanh nhẹn"
+            },
+            {
+              "id": "c",
+              "text": "tròn xoe"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đọc ba từ và hỏi: từ nào nói lên tấm lòng người trong nhà dành cho nhau?",
@@ -276,10 +468,18 @@
               ],
               "hint": "A feeling is something in your heart, like how grandparents and parents cherish the children.",
               "answer": {
-                "text": "yêu thương (love)",
+                "text": "yêu thương",
                 "explanation": "«Yêu thương» names the warm feeling in a family; «nhanh nhẹn» describes being quick and «tròn xoe» a round shape."
               }
             }
+          },
+          "en": {
+            "prompt": "Which word is about the feeling between people in a family?",
+            "choices": [
+              "yêu thương",
+              "nhanh nhẹn",
+              "tròn xoe"
+            ]
           }
         },
         {
@@ -288,11 +488,22 @@
           "move": "gem",
           "prompt": "Câu nào nêu đặc điểm của một người?",
           "choices": [
-            { "id": "a", "text": "Mái tóc của bà đã bạc trắng." },
-            { "id": "b", "text": "Bà đang kể chuyện cổ tích." },
-            { "id": "c", "text": "Bà ơi, bà kể chuyện đi!" }
+            {
+              "id": "a",
+              "text": "Mái tóc của bà đã bạc trắng."
+            },
+            {
+              "id": "b",
+              "text": "Bà đang kể chuyện cổ tích."
+            },
+            {
+              "id": "c",
+              "text": "Bà ơi, bà kể chuyện đi!"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đọc từng câu và hỏi: câu nào cho biết bà trông như thế nào?",
@@ -310,10 +521,18 @@
               ],
               "hint": "A sentence about a feature uses a word for colour or shape, describing hair, skin or build.",
               "answer": {
-                "text": "Mái tóc của bà đã bạc trắng. (Grandma's hair has turned white.)",
+                "text": "Grandma's hair has turned silvery white.",
                 "explanation": "«Mái tóc của bà đã bạc trắng.» describes the colour of her hair, a feature; the second tells an action and the last is a request."
               }
             }
+          },
+          "en": {
+            "prompt": "Which sentence describes a feature of a person?",
+            "choices": [
+              "Grandma's hair has turned silvery white.",
+              "Grandma is telling a fairy tale.",
+              "Grandma, please tell us a story!"
+            ]
           }
         },
         {
@@ -322,11 +541,22 @@
           "move": "orbs",
           "prompt": "Câu nào đặt dấu phẩy đúng chỗ?",
           "choices": [
-            { "id": "a", "text": "Em, yêu ông bà bố mẹ." },
-            { "id": "b", "text": "Em yêu ông bà, bố mẹ." },
-            { "id": "c", "text": "Em yêu, ông bà bố mẹ." }
+            {
+              "id": "a",
+              "text": "Em, yêu ông bà bố mẹ."
+            },
+            {
+              "id": "b",
+              "text": "Em yêu ông bà, bố mẹ."
+            },
+            {
+              "id": "c",
+              "text": "Em yêu, ông bà bố mẹ."
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Tìm trong câu những từ cùng loại đứng liền nhau: đó là những người em yêu.",
@@ -344,10 +574,18 @@
               ],
               "hint": "Two groups of people are listed one after the other; the comma belongs between them.",
               "answer": {
-                "text": "Em yêu ông bà, bố mẹ. (I love my grandparents, my parents.)",
+                "text": "I love my grandparents, my mum and dad.",
                 "explanation": "The comma separates the two listed groups «ông bà» and «bố mẹ»; after «Em» or «yêu» it breaks the sentence in the wrong place."
               }
             }
+          },
+          "en": {
+            "prompt": "Which sentence puts the comma in the right place?",
+            "choices": [
+              "I, love my grandparents my mum and dad.",
+              "I love my grandparents, my mum and dad.",
+              "I love, my grandparents my mum and dad."
+            ]
           }
         },
         {
@@ -356,11 +594,22 @@
           "move": "fling",
           "prompt": "Trong câu «Ông tưới cây ngoài vườn», bộ phận nào trả lời câu hỏi «Làm gì?»",
           "choices": [
-            { "id": "a", "text": "Ông" },
-            { "id": "b", "text": "tưới cây ngoài vườn" },
-            { "id": "c", "text": "ngoài vườn" }
+            {
+              "id": "a",
+              "text": "Ông"
+            },
+            {
+              "id": "b",
+              "text": "tưới cây ngoài vườn"
+            },
+            {
+              "id": "c",
+              "text": "ngoài vườn"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Tách câu đã cho thành hai phần: phần chỉ người và phần kể việc người đó làm.",
@@ -382,6 +631,14 @@
                 "explanation": "«Tưới cây ngoài vườn» tells what Grandpa does, so it answers «Làm gì?»; «Ông» answers «Ai?» and «ngoài vườn» is only the place."
               }
             }
+          },
+          "en": {
+            "prompt": "In the sentence «Ông tưới cây ngoài vườn», which part answers the question «Làm gì?» (Does what?)",
+            "choices": [
+              "Ông (Grandpa)",
+              "tưới cây ngoài vườn (waters the plants in the garden)",
+              "ngoài vườn (in the garden)"
+            ]
           }
         },
         {
@@ -390,11 +647,22 @@
           "move": "charge",
           "prompt": "Đọc câu: «Tối nào bố cũng đọc truyện cho em nghe rồi mới tắt đèn.» Ai đọc truyện cho em?",
           "choices": [
-            { "id": "a", "text": "Mẹ" },
-            { "id": "b", "text": "Ông" },
-            { "id": "c", "text": "Bố" }
+            {
+              "id": "a",
+              "text": "Mẹ"
+            },
+            {
+              "id": "b",
+              "text": "Ông"
+            },
+            {
+              "id": "c",
+              "text": "Bố"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Đọc chậm câu đã cho và tìm từ chỉ người đứng ngay trước việc «đọc truyện».",
@@ -412,10 +680,18 @@
               ],
               "hint": "Whoever does it is named right after «Tối nào» (every night) at the start.",
               "answer": {
-                "text": "Bố (Dad)",
+                "text": "Dad",
                 "explanation": "The sentence says «Tối nào bố cũng đọc truyện…», so Dad reads the story; Mum and Grandpa are not mentioned."
               }
             }
+          },
+          "en": {
+            "prompt": "Read the sentence: «Tối nào bố cũng đọc truyện cho em nghe rồi mới tắt đèn.» Who reads stories to the child?",
+            "choices": [
+              "Mum",
+              "Grandpa",
+              "Dad"
+            ]
           }
         },
         {
@@ -424,11 +700,22 @@
           "move": "gem",
           "prompt": "Kể lại cách làm chong chóng: gấp tờ giấy vuông, cắt bốn đường chéo, rồi gắn vào que. Việc nào làm sau cùng?",
           "choices": [
-            { "id": "a", "text": "Gấp tờ giấy vuông" },
-            { "id": "b", "text": "Cắt bốn đường chéo" },
-            { "id": "c", "text": "Gắn chong chóng vào que" }
+            {
+              "id": "a",
+              "text": "Gấp tờ giấy vuông"
+            },
+            {
+              "id": "b",
+              "text": "Cắt bốn đường chéo"
+            },
+            {
+              "id": "c",
+              "text": "Gắn chong chóng vào que"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Đọc lại ba bước theo đúng thứ tự trong đề: bước nào trước, bước nào sau.",
@@ -446,13 +733,28 @@
               ],
               "hint": "The last step is introduced by «rồi» (then); whatever follows that word comes last.",
               "answer": {
-                "text": "Gắn chong chóng vào que (Fix the pinwheel to the stick)",
+                "text": "Fix the pinwheel to the stick",
                 "explanation": "You fold the paper, cut the four diagonals, and only then fix the pinwheel to a stick to play with, so that step comes last."
               }
             }
+          },
+          "en": {
+            "prompt": "Retell how to make a pinwheel: fold a square sheet of paper, cut along the four diagonals, then attach it to a stick. Which step comes last?",
+            "choices": [
+              "Fold the square sheet of paper",
+              "Cut along the four diagonals",
+              "Fix the pinwheel to the stick"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Battle of wits with Whirlwind Hawk",
+        "goTo": "Climb the windswept mound, where the Hawk is waiting",
+        "bossName": "Whirlwind Hawk",
+        "introDialogue": "Whoosh! Here are seven riddles about families. Every right answer, I land a little lower!",
+        "winDialogue": "I'll land! {name} understands families better than I do, so I'll send the photo frame back to the whole family."
+      }
     },
     {
       "id": "khung-anh-ve-tay",
@@ -480,6 +782,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "tu-ngu": 1, "cau": 1, "dau-cau": 1, "ke-chuyen": 1 }
+    "skillXp": {
+      "tu-ngu": 1,
+      "cau": 1,
+      "dau-cau": 1,
+      "ke-chuyen": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Whirlwind Hawk",
+    "summary": "Family Day in the windy fields is in full swing when the Whirlwind Hawk swoops down and snatches the whole family's photo frame. {name} gets the picnic things ready, reads the invitation, counts the paper flowers on the fan, then takes on seven riddles about families to win the frame back."
   }
 }

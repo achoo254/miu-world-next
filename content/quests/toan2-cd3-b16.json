@@ -94,7 +94,11 @@
         "toan2-cd3-ca-mot-lit",
         "toan2-cd3-chai-nuoc",
         "toan2-cd3-coc-thuy-tinh"
-      ]
+      ],
+      "en": {
+        "title": "Jug, bottle and cup",
+        "goTo": "Find the 1 litre jug, the bottle and the cup at the Drinks Stand"
+      }
     },
     {
       "id": "ca-mot-lit",
@@ -174,6 +178,17 @@
         "answer": {
           "text": "Ấm trà chứa ít hơn, vì ca còn dư nước khi ấm đã đầy.",
           "explanation": "Ca 1 l rót không hết vào ấm nên ấm đựng ít hơn 1 l nước."
+        },
+        "en": {
+          "guide": [
+            "She poured the whole 1 l jug and the pot filled up, with water left in the jug.",
+            "The pot only took part of the 1 l."
+          ],
+          "hint": "If the pot held a full 1 l, would there be water left in the jug?",
+          "answer": {
+            "text": "The teapot holds less, because the jug still has water left when the pot is full.",
+            "explanation": "The 1 l jug could not all be poured into the pot, so the teapot holds less than 1 l of water."
+          }
         }
       },
       "feedback": {
@@ -186,12 +201,33 @@
           "Nhìn lại xem trong ca có còn thừa nước không.",
           "Nếu ấm đựng nhiều hơn 1 l thì ca đã cạn từ lâu.",
           "Ca chưa cạn mà ấm đã đầy, vậy ấm chứa ít hay nhiều hơn?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The steaming teapot agrees: it is smaller than one litre!",
+            "Auntie Thoa nods: you spotted the leftover water very sharply.",
+            "Right, the jug has water left over, so the pot holds less."
+          ],
+          "wrong": [
+            "Look again at whether there is still water left in the jug.",
+            "If the pot held more than 1 l, the jug would have run dry long ago.",
+            "The jug isn't empty yet but the pot is full, so does the pot hold less or more?"
+          ]
+        }
       },
       "answer": {
         "choice": "b-am-tra-dung-it-hon-1-l"
       },
-      "objective": "khoi-luong-dung-tich-lit"
+      "objective": "khoi-luong-dung-tich-lit",
+      "en": {
+        "title": "How much water does the teapot hold?",
+        "prompt": "Auntie Thoa pours water from a 1 l jug into a teapot. The teapot is full, but there is still a little water left in the jug. Look at the picture and choose the true statement.",
+        "choices": [
+          "The teapot holds exactly 1 l of water.",
+          "The teapot holds less than 1 l of water.",
+          "The teapot holds more than 1 l of water."
+        ]
+      }
     },
     {
       "id": "doc-nhan-lit",
@@ -282,6 +318,17 @@
         "answer": {
           "text": "Bốn lít: 4 l; Bảy lít: 7 l; Chín lít: 9 l; Ba mươi lít: 30 l",
           "explanation": "Bốn lít là 4 l, bảy lít là 7 l, chín lít là 9 l, ba mươi lít là 30 l."
+        },
+        "en": {
+          "guide": [
+            "Litre is shortened to l.",
+            "Read the label and write the number in digits."
+          ],
+          "hint": "Thirty litres is written 30 l.",
+          "answer": {
+            "text": "Four litres: 4 l; Seven litres: 7 l; Nine litres: 9 l; Thirty litres: 30 l",
+            "explanation": "Four litres is 4 l, seven litres is 7 l, nine litres is 9 l, thirty litres is 30 l."
+          }
         }
       },
       "feedback": {
@@ -294,7 +341,19 @@
           "Đọc lại nhãn rồi đổi từng số sang chữ số nhé.",
           "Ba mươi lít cần hai chữ số, đừng viết thiếu.",
           "Một nhãn đang bị dán nhầm, kiểm từng dòng xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four new labels stuck on dead straight!",
+            "Auntie Thoa praises you: the digits are short and clear, understood in one read.",
+            "Oak Bear gives a thumbs up: thirty litres really is a big barrel."
+          ],
+          "wrong": [
+            "Read the labels again and change each number to digits.",
+            "Thirty litres needs two digits, don't write too few.",
+            "One label is stuck on wrong, check line by line."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -304,7 +363,12 @@
           "b4": "o30"
         }
       },
-      "objective": "khoi-luong-dung-tich-lit"
+      "objective": "khoi-luong-dung-tich-lit",
+      "en": {
+        "title": "Litre labels on the bottle, jug, bucket and barrel",
+        "goTo": "Go to the Jug and Bottle Shelf, where Oak Bear is wiping each bottle, jug and bucket",
+        "prompt": "The water containers all have labels written in words, and Auntie Thoa wants them changed to digits so they're easier to read. For example: fifteen litres is written 15 l. Fill in the numbers."
+      }
     },
     {
       "id": "binh-a-binh-b-rot-coc",
@@ -377,6 +441,17 @@
         "answer": {
           "text": "a) Bình A chứa 5 cốc sữa, bình B chứa 8 cốc sữa.; b) Bình B chứa nhiều hơn bình A 3 cốc.",
           "explanation": "Bình A có 5 cốc, bình B có 8 cốc; bình B nhiều hơn 8 – 5 = 3 cốc."
+        },
+        "en": {
+          "guide": [
+            "Count how many cups each bottle pours.",
+            "To find how many more cups, take the smaller number from the bigger."
+          ],
+          "hint": "8 cups compared with 5 cups is 8 – 5 cups more.",
+          "answer": {
+            "text": "a) Bottle A holds 5 cups of milk, bottle B holds 8 cups of milk.; b) Bottle B holds 3 cups more than bottle A.",
+            "explanation": "Bottle A has 5 cups, bottle B has 8 cups; bottle B has 8 – 5 = 3 cups more."
+          }
         }
       },
       "feedback": {
@@ -389,7 +464,19 @@
           "Đếm lại số cốc của từng bình trước nhé.",
           "Nhiều hơn bao nhiêu thì làm phép trừ, không phải phép cộng.",
           "Lấy 8 cốc bớt đi 5 cốc xem còn mấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both bottles have clear numbers of cups, and Oak Bear grins from ear to ear!",
+            "You subtracted the cups neatly, without spilling a drop.",
+            "Auntie Thoa writes on the board: 8 cups is 3 cups more than 5 cups."
+          ],
+          "wrong": [
+            "Count the cups of each bottle again first.",
+            "How many more is subtraction, not addition.",
+            "Take 5 cups away from 8 cups and see what is left."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -401,6 +488,10 @@
       "objective": "khoi-luong-dung-tich-tinh",
       "expression": {
         "b3": "8 - 5"
+      },
+      "en": {
+        "title": "How many cups from two bottles of milk?",
+        "prompt": "Oak Bear has two bottles of milk: bottle A pours exactly 5 cups and bottle B pours exactly 8 cups. Fill in the numbers."
       }
     },
     {
@@ -526,6 +617,17 @@
         "answer": {
           "text": "Ví dụ: 9 l + 5 l = 14 l; 13 l – 6 l = 7 l; 6 l + 2 l = 8 l; 24 l + 30 l = 54 l; 8 l + 7 l = 15 l; 8 l – 5 l = 3 l; 36 l – 10 l = 26 l; 14 l – 6 l = 8 l",
           "explanation": "6 + 2 = 8, 24 + 30 = 54, 8 + 7 = 15, 8 – 5 = 3, 36 – 10 = 26, 14 – 6 = 8; mỗi kết quả kèm đơn vị l."
+        },
+        "en": {
+          "guide": [
+            "Work out the numbers as usual.",
+            "Remember to write the unit l with the result."
+          ],
+          "hint": "8 + 7: split 7 = 2 + 5, 8 + 2 = 10, 10 + 5 = 15.",
+          "answer": {
+            "text": "Example: 9 l + 5 l = 14 l; 13 l – 6 l = 7 l; 6 l + 2 l = 8 l; 24 l + 30 l = 54 l; 8 l + 7 l = 15 l; 8 l – 5 l = 3 l; 36 l – 10 l = 26 l; 14 l – 6 l = 8 l",
+            "explanation": "6 + 2 = 8, 24 + 30 = 54, 8 + 7 = 15, 8 – 5 = 3, 36 – 10 = 26, 14 – 6 = 8; each result comes with the unit l."
+          }
         }
       },
       "feedback": {
@@ -538,7 +640,19 @@
           "Phần số tính trước, chữ l cứ giữ nguyên.",
           "Phép 8 l + 7 l đi qua 10, nhớ tách số cho gọn.",
           "Có một dòng chưa khớp, dò lại từng dòng xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The blackboard is full of results, and the white chalk dances happily!",
+            "Six litre calculations, and every one fits.",
+            "Auntie Thoa dusts off the chalk and smiles contentedly."
+          ],
+          "wrong": [
+            "Work out the numbers first and keep the letter l as it is.",
+            "The calculation 8 l + 7 l goes through 10, remember to split the number.",
+            "One line doesn't fit, check line by line."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -558,6 +672,11 @@
         "b4": "8 - 5",
         "b5": "36 - 10",
         "b6": "14 - 6"
+      },
+      "en": {
+        "title": "Litre table at the drinks counter",
+        "goTo": "Go to the Drinks Stand Blackboard, where Auntie Thoa has written an example in white chalk",
+        "prompt": "On the Drinks Stand blackboard, Auntie Thoa has written an example and left the results of the other calculations blank."
       }
     },
     {
@@ -675,6 +794,17 @@
         "answer": {
           "text": "Can 6 l đổ chung với can 3 l: 9 l; Xô 7 l đổ chung với xô 9 l: 16 l; Ca 1 l, ca 3 l và ca 6 l đổ chung: 10 l",
           "explanation": "6 l + 3 l = 9 l; 7 l + 9 l = 16 l; 1 l + 3 l + 6 l = 10 l."
+        },
+        "en": {
+          "guide": [
+            "Putting several containers together means adding their litres.",
+            "With three jugs, add from left to right."
+          ],
+          "hint": "1 l + 3 l = 4 l, then add 6 l.",
+          "answer": {
+            "text": "The 6 l can poured together with the 3 l can: 9 l; The 7 l bucket poured together with the 9 l bucket: 16 l; The 1 l, 3 l and 6 l jugs poured together: 10 l",
+            "explanation": "Check: 6 l + 3 l = 9 l; 7 l + 9 l = 16 l; 1 l + 3 l + 6 l = 10 l."
+          }
         }
       },
       "feedback": {
@@ -687,7 +817,19 @@
           "Gộp lại nghĩa là cộng số lít của các đồ đựng.",
           "Với nhóm ba ca, hãy cộng hai ca đầu trước rồi mới cộng ca còn lại.",
           "Xô 7 l và xô 9 l gộp lại phải lớn hơn 10 l đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three barrels full to exactly the right litres, without a drop spilled!",
+            "Auntie Thoa praises you: adding three jugs in a row and still steady-handed.",
+            "Oak Bear claps, and the water in the bucket ripples along."
+          ],
+          "wrong": [
+            "Putting together means adding the litres of the containers.",
+            "With the group of three jugs, add the first two jugs, then add the remaining one.",
+            "The 7 l and 9 l buckets together must be more than 10 l."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -701,6 +843,11 @@
         "b1": "6 + 3",
         "b2": "7 + 9",
         "b3": "1 + 3 + 6"
+      },
+      "en": {
+        "title": "Combine the can, bucket and jug",
+        "goTo": "Carry the jugs and buckets to the Fish Tank at the Drinks Stand, where Betta Fish is waiting with mouth wide open",
+        "prompt": "Auntie Thoa gathers the containers into groups, and each group is poured together into one barrel. How many litres of water are in each barrel?"
       }
     },
     {
@@ -757,6 +904,17 @@
         "answer": {
           "text": "Thùng 16 l, rót sang bình 6 l. Trong thùng còn 10 l nước.; Can 12 l, rót ra ca 5 l. Trong can còn 7 l nước.",
           "explanation": "Thùng 16 l rót ra 6 l còn 10 l; can 12 l rót ra 5 l còn 7 l."
+        },
+        "en": {
+          "guide": [
+            "Pouring some out means subtraction.",
+            "Take the litres poured out away from the starting litres."
+          ],
+          "hint": "16 l – 6 l and 12 l – 5 l.",
+          "answer": {
+            "text": "The 16 l barrel, with 6 l poured into a bottle. There is 10 l of water left in the barrel.; The 12 l can, with 5 l poured into a jug. There is 7 l of water left in the can.",
+            "explanation": "The 16 l barrel with 6 l poured out has 10 l left; the 12 l can with 5 l poured out has 7 l left."
+          }
         }
       },
       "feedback": {
@@ -769,7 +927,19 @@
           "Rót ra thì trong thùng ít đi, nên là phép trừ.",
           "Lấy lượng nước ban đầu trừ đi lượng đã rót.",
           "Kết quả phải bé hơn số lít ban đầu của thùng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The barrel has exactly the water needed left, and Betta Fish cries out with joy!",
+            "Neatly subtracted, without missing a drop in the barrel.",
+            "Auntie Thoa writes it in her book straight away: 10 l and 7 l left."
+          ],
+          "wrong": [
+            "Pouring some out leaves less in the barrel, so it's subtraction.",
+            "Take the amount poured out away from the starting amount of water.",
+            "The result must be smaller than the barrel's starting litres."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -781,6 +951,10 @@
       "expression": {
         "b1": "16 - 6",
         "b2": "12 - 5"
+      },
+      "en": {
+        "title": "How many litres are left in the can?",
+        "prompt": "Auntie Thoa pours some water from the barrels into small bottles to see how much is left in the barrels. Fill in the numbers."
       }
     },
     {
@@ -855,6 +1029,17 @@
         "answer": {
           "text": "Đồ vật | Ấm | Bình | Xô | Can; Số lít nước | 4 | 5 | 8 | 11",
           "explanation": "Bình: 2 + 3 = 5 l; xô: 3 + 3 + 2 = 8 l; can: 4 + 4 + 3 = 11 l."
+        },
+        "en": {
+          "guide": [
+            "Add the litres of the jugs standing next to the object.",
+            "The Kettle column is done for you: 1 + 1 + 2 = 4 l."
+          ],
+          "hint": "Bucket: 3 + 3 + 2; can: 4 + 4 + 3.",
+          "answer": {
+            "text": "Object | Kettle | Bottle | Bucket | Can; Litres of water | 4 | 5 | 8 | 11",
+            "explanation": "Bottle: 2 + 3 = 5 l; bucket: 3 + 3 + 2 = 8 l; can: 4 + 4 + 3 = 11 l."
+          }
         }
       },
       "feedback": {
@@ -867,7 +1052,19 @@
           "Mỗi đồ vật đựng bằng tổng số lít của các ca cạnh nó.",
           "Xô có tới ba ca, đừng bỏ sót ca nào.",
           "Can đựng nhiều nhất, thử cộng lại ba ca của nó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The table is complete, and the four objects line up neatly!",
+            "Adding three jugs in a row and not a litre mistaken.",
+            "Silver Fox nods: exactly right down to the drop."
+          ],
+          "wrong": [
+            "Each object holds the total litres of the jugs next to it.",
+            "The bucket has three jugs, don't leave any out.",
+            "The can holds the most, try adding its three jugs again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -881,6 +1078,11 @@
         "b1": "2 + 3",
         "b2": "3 + 3 + 2",
         "b3": "4 + 4 + 3"
+      },
+      "en": {
+        "title": "How many litres do the kettle, bottle, bucket and can hold?",
+        "goTo": "Go to the Water Measuring Table, where Silver Fox has set out the bottle, kettle, bucket and can next to the jugs",
+        "prompt": "Next to each object there are a few jugs: the kettle has a 1 l jug, a 1 l jug and a 2 l jug; the bottle has a 2 l jug and a 3 l jug; the bucket has a 3 l jug, a 3 l jug and a 2 l jug; the can has a 4 l jug, a 4 l jug and a 3 l jug. Each object holds as many litres as the total of the jugs next to it."
       }
     },
     {
@@ -932,6 +1134,17 @@
         "answer": {
           "text": "Nhiều nhất: Can; ít nhất: Ấm; ở giữa: Bình, Xô",
           "explanation": "Can 11 l nhiều nước nhất, ấm 4 l ít nước nhất; bình 5 l và xô 8 l ở giữa."
+        },
+        "en": {
+          "guide": [
+            "Compare the four litre numbers: 4, 5, 8, 11.",
+            "The biggest number holds the most water and the smallest number holds the least."
+          ],
+          "hint": "The can holds 11 l, the kettle only holds 4 l.",
+          "answer": {
+            "text": "Most: Can; least: Kettle; in the middle: Bottle, Bucket",
+            "explanation": "The can with 11 l holds the most water, the kettle with 4 l holds the least; the bottle with 5 l and the bucket with 8 l are in the middle."
+          }
         }
       },
       "feedback": {
@@ -944,7 +1157,19 @@
           "So bốn số lít trước rồi mới xếp nhóm.",
           "Nhóm ở giữa có đúng hai đồ vật.",
           "Đồ vật đựng ít nước nhất ứng với số lít bé nhất."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The can is first, the kettle is last, and the two in the middle hold hands!",
+            "Silver Fox has sorted all four objects without pouring any water.",
+            "Neat comparing of litres, just like a measurer."
+          ],
+          "wrong": [
+            "Compare the four litre numbers first, then sort into groups.",
+            "The middle group has exactly two objects.",
+            "The object that holds the least water matches the smallest number of litres."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -954,7 +1179,11 @@
           "do-vat-xo": "nhom-o-giua-hai-do-vat-kia"
         }
       },
-      "objective": "khoi-luong-dung-tich-lit"
+      "objective": "khoi-luong-dung-tich-lit",
+      "en": {
+        "title": "Which thing holds the most water?",
+        "prompt": "Using the table you just filled in: kettle 4 l, bottle 5 l, bucket 8 l, can 11 l. Sort each object into the group that fits its amount of water."
+      }
     },
     {
       "id": "can-nuoc-mam-cua-me",
@@ -973,6 +1202,17 @@
         "answer": {
           "text": "9 l",
           "explanation": "Trong can còn lại 16 l – 7 l = 9 l nước mơ."
+        },
+        "en": {
+          "guide": [
+            "Pouring some out into bottles leaves less in the can.",
+            "Do the subtraction: 16 take away 7."
+          ],
+          "hint": "16 – 7: split 7 = 6 + 1; 16 – 6 = 10, then 10 – 1 = 9.",
+          "answer": {
+            "text": "9 l",
+            "explanation": "The can has 16 l – 7 l = 9 l of apricot drink left."
+          }
         }
       },
       "feedback": {
@@ -985,13 +1225,30 @@
           "Rót ra các chai nên trong can phải ít đi.",
           "Lấy 16 trừ 7, đừng cộng nhé.",
           "Kết quả phải bé hơn 16 l, thử tính lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Nine litres of apricot drink left, and Betta Fish's tank is brimming!",
+            "Betta Fish blows bubbles to congratulate {name}.",
+            "You did that subtraction through 10 so neatly."
+          ],
+          "wrong": [
+            "Some was poured out into bottles, so the can must have less.",
+            "Take 7 away from 16, don't add.",
+            "The result must be smaller than 16 l, try working it out again."
+          ]
+        }
       },
       "answer": {
         "value": 9
       },
       "objective": "khoi-luong-dung-tich-tinh",
-      "expression": "16 - 7"
+      "expression": "16 - 7",
+      "en": {
+        "title": "Auntie Thoa's dream water can",
+        "goTo": "Back at the Fish Tank at the Drinks Stand, Betta Fish surfaces with one last riddle",
+        "question": "Betta Fish surfaces with the last riddle, and a right answer fills the tank right away! A can full of 16 l of apricot drink has just had 7 l poured out by Auntie Thoa to sell to customers. How many litres of apricot drink are left in the can?"
+      }
     },
     {
       "id": "vay-bac-ca-bong",
@@ -1023,5 +1280,9 @@
       "dung-tich": 2,
       "phep-tru": 1
     }
+  },
+  "en": {
+    "title": "Betta Fish and the Emptying Water Tank",
+    "summary": "The fish tank at the Drinks Stand in the middle of the market is half empty and Betta Fish is frantic; {name} learns the litre with Auntie Thoa, reads labels on the Jug and Bottle Shelf with Oak Bear, measures at Silver Fox's table, works out litres of water and fills the tank so Betta Fish can swim happily again."
   }
 }

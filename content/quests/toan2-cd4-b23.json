@@ -95,7 +95,11 @@
         "toan2-cd4-may-bay-do",
         "toan2-cd4-may-bay-xanh",
         "toan2-cd4-may-bay-vang"
-      ]
+      ],
+      "en": {
+        "title": "Three lost planes",
+        "goTo": "Pick up the three paper planes that fell around the windmill"
+      }
     },
     {
       "id": "khi-lanh-dat-tinh",
@@ -295,6 +299,17 @@
         "answer": {
           "text": "Nhẩm hoặc viết ra nháp.; 81 – 26 = 55   70 – 34 = 36   92 – 57 = 35   53 – 44 = 9; Viết dọc rồi trừ.; 64 – 38 = 26   83 – 47 = 36   75 – 28 = 47   90 – 52 = 38",
           "explanation": "81 – 26 = 55; 70 – 34 = 36; 92 – 57 = 35; 53 – 44 = 9; 64 – 38 = 26; 83 – 47 = 36; 75 – 28 = 47; 90 – 52 = 38."
+        },
+        "en": {
+          "guide": [
+            "If the ones digit is smaller, borrow a ten before subtracting.",
+            "Once you have borrowed, add 1 to the tens digit of the number you subtract."
+          ],
+          "hint": "53 – 44: 13 – 4 = 9, the tens digit 4 plus 1 is 5, and 5 – 5 = 0.",
+          "answer": {
+            "text": "Work them out in your head or on scrap paper.; 81 – 26 = 55   70 – 34 = 36   92 – 57 = 35   53 – 44 = 9; Write them in columns and subtract.; 64 – 38 = 26   83 – 47 = 36   75 – 28 = 47   90 – 52 = 38",
+            "explanation": "81 – 26 = 55; 70 – 34 = 36; 92 – 57 = 35; 53 – 44 = 9; 64 – 38 = 26; 83 – 47 = 36; 75 – 28 = 47; 90 – 52 = 38."
+          }
         }
       },
       "feedback": {
@@ -307,7 +322,19 @@
           "Hàng chục quên cộng thêm 1 đã nhớ vào số trừ rồi kìa.",
           "53 – 44 ra số chỉ có một chữ số thôi đấy.",
           "Có chuyến bay bị đo dài quá, kiểm tra lại chỗ mượn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All eight flights are measured, and Growly Tiger lets out one contented low growl.",
+            "Borrow and carry, carry and subtract. {name} works as steadily as a machine.",
+            "Breeze Giraffe hangs the board on the pole: not one step out of place!"
+          ],
+          "wrong": [
+            "You forgot to add the carried 1 to the tens of the number you subtract.",
+            "53 – 44 gives a number with only one digit.",
+            "One flight has been measured too long. Check where you borrowed."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -331,6 +358,10 @@
         "b6": "83 - 47",
         "b7": "75 - 28",
         "b8": "90 - 52"
+      },
+      "en": {
+        "title": "Measure eight flights",
+        "prompt": "Breeze Giraffe writes Growly Tiger's eight flights on the board."
       }
     },
     {
@@ -349,6 +380,17 @@
         "answer": {
           "text": "44 quả xoài",
           "explanation": "Trên cây còn: 80 – 36 = 44 (quả xoài)."
+        },
+        "en": {
+          "guide": [
+            "Pecked bad means taking away, so subtract.",
+            "The sum to do: 80 – 36."
+          ],
+          "hint": "10 – 6 = 4, carry 1; in the tens: 3 plus 1 is 4, and 8 – 4 = 4.",
+          "answer": {
+            "text": "44 mangoes",
+            "explanation": "Left on the tree: 80 – 36 = 44 (mangoes)."
+          }
         }
       },
       "feedback": {
@@ -361,14 +403,31 @@
           "Sáo mổ hỏng thì số xoài lành phải ít đi chứ.",
           "80 là số tròn chục, mượn 10 ở hàng đơn vị nhé.",
           "Thử lại: hàng chục 8 trừ 3 rồi trừ thêm 1 đã nhớ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That leaves 44 golden good mangoes, and the starlings are full and fly away.",
+            "Growly Tiger gets the plane down without knocking off a single mango!",
+            "Take away means subtract, and even the mango tree nods in agreement."
+          ],
+          "wrong": [
+            "The starlings pecked some bad, so there must be fewer good mangoes.",
+            "80 is a round ten, so borrow 10 for the ones.",
+            "Try again: in the tens, 8 minus 3, then minus the 1 you carried."
+          ]
+        }
       },
       "answer": {
         "value": 44
       },
       "goTo": "Về bãi cỏ cạnh cối xay gió, Hổ Gừ đang ngó chiếc máy bay mắc trên cây xoài",
       "objective": "cong-tru-co-nho-bai-toan",
-      "expression": "80 - 36"
+      "expression": "80 - 36",
+      "en": {
+        "title": "The plane stuck in the mango tree",
+        "goTo": "Go back to the Meadow by the Windmill, where Growly Tiger is peering at a plane stuck in the mango tree",
+        "question": "A paper plane is stuck in the mango tree, and Growly Tiger looks up and counts: the tree has 80 ripe mangoes. A flock of starlings has pecked 36 of them bad. How many good mangoes are left on the tree?"
+      }
     },
     {
       "id": "bang-bay-thu-hai",
@@ -526,6 +585,17 @@
         "answer": {
           "text": "42 – 35 = 7   61 – 43 = 18   70 – 26 = 44   80 – 47 = 33; 63 – 28 = 35   71 – 39 = 32   90 – 45 = 45   84 – 56 = 28",
           "explanation": "42 – 35 = 7; 61 – 43 = 18; 70 – 26 = 44; 80 – 47 = 33; 63 – 28 = 35; 71 – 39 = 32; 90 – 45 = 45; 84 – 56 = 28."
+        },
+        "en": {
+          "guide": [
+            "Line up the number you subtract with the first number.",
+            "Subtract from the ones, and if you borrow, carry 1 to the tens of the number you subtract."
+          ],
+          "hint": "84 – 56: 14 – 6 = 8, carry 1; in the tens 8 – 6 = 2.",
+          "answer": {
+            "text": "42 – 35 = 7   61 – 43 = 18   70 – 26 = 44   80 – 47 = 33; 63 – 28 = 35   71 – 39 = 32   90 – 45 = 45   84 – 56 = 28",
+            "explanation": "42 – 35 = 7; 61 – 43 = 18; 70 – 26 = 44; 80 – 47 = 33; 63 – 28 = 35; 71 – 39 = 32; 90 – 45 = 45; 84 – 56 = 28."
+          }
         }
       },
       "feedback": {
@@ -538,7 +608,19 @@
           "Có ô đang bay lệch đường băng, tính lại xem.",
           "42 – 35 nhỏ lắm, kết quả chỉ có một chữ số.",
           "Đừng quên nhớ 1 sang hàng chục của số trừ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The second round flies straight, and the eight results stand as neatly as eight planes in a queue.",
+            "Growly Tiger forgets to growl because he is so busy watching {name} work.",
+            "Eight result boxes in a row, like an airport runway."
+          ],
+          "wrong": [
+            "One box has flown off the runway. Work it out again.",
+            "42 – 35 is very small, and the result has only one digit.",
+            "Don't forget to carry 1 to the tens of the number you subtract."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -563,6 +645,11 @@
         "b6": "71 - 39",
         "b7": "90 - 45",
         "b8": "84 - 56"
+      },
+      "en": {
+        "title": "The second flight table",
+        "goTo": "Go over to the Flight Path Measuring Fence, where Breeze Giraffe holds up a ruler, waiting for the second round of flights",
+        "prompt": "In the second round Tiger throws harder. Write the sums in columns and work out each flight."
       }
     },
     {
@@ -600,6 +687,17 @@
         "answer": {
           "text": "A, C",
           "explanation": "91 – 5 = 86 đúng; 64 – 28 = 36 nên bảng B sai; 83 – 49 = 34 đúng; 70 – 33 = 37 nên bảng D sai. Chọn A và C."
+        },
+        "en": {
+          "guide": [
+            "Work out each subtraction on the signs yourself.",
+            "Choose the robot whose sign has the right result."
+          ],
+          "hint": "64 – 28 = 36, not 46.",
+          "answer": {
+            "text": "A, C",
+            "explanation": "91 – 5 = 86 is right; 64 – 28 = 36, so sign B is wrong; 83 – 49 = 34 is right; 70 – 33 = 37, so sign D is wrong. Choose A and C."
+          }
         }
       },
       "feedback": {
@@ -612,7 +710,19 @@
           "Có rô-bốt giơ bảng sai mà cậu vẫn chọn kìa.",
           "Tính lại 70 – 33 xem có phải 47 không.",
           "Còn một bảng đúng chưa được chọn đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Robots A and C jump for joy, their eye lights blinking green.",
+            "You caught the mistakes of robots B and D straight away. So good!",
+            "Growly Tiger whispers: I almost believed sign D."
+          ],
+          "wrong": [
+            "A robot holding a wrong sign is still chosen.",
+            "Work out 70 – 33 again and see if it is 47.",
+            "There is still a right sign that hasn't been chosen."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -621,7 +731,18 @@
         ]
       },
       "goTo": "Tới cây xoài đầu vườn, Koala Mây đu cành chỉ bốn rô-bốt đuổi chim",
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "Which robot holds up the right sign?",
+        "goTo": "Go to the Mango Tree at the Garden Entrance, where Cloud Koala swings on a branch pointing to four bird-scaring robots",
+        "prompt": "Four field-guarding robots stand under the mango tree, each holding up a sign with a sum: robot A holds 91 – 5 = 86, robot B holds 64 – 28 = 46, robot C holds 83 – 49 = 34, robot D holds 70 – 33 = 47. Choose the robots holding up signs that are right.",
+        "choices": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
     },
     {
       "id": "dau-so-sanh-duong-bay",
@@ -711,6 +832,17 @@
         "answer": {
           "text": "a) 63 – 28 > 30; a) 80 – 35 = 45; b) 83 – 29 < 90 – 29; b) 76 – 38 > 67 – 38",
           "explanation": "63 – 28 = 35 > 30; 80 – 35 = 45 = 45; 83 – 29 = 54 < 61 = 90 – 29; 76 – 38 = 38 > 29 = 67 – 38."
+        },
+        "en": {
+          "guide": [
+            "Work out the subtraction first, then compare.",
+            "If both sides subtract the same number, the side with the bigger first number has the bigger difference."
+          ],
+          "hint": "63 – 28 = 35, then compare with 30.",
+          "answer": {
+            "text": "Answers: a) 63 – 28 > 30; a) 80 – 35 = 45; b) 83 – 29 < 90 – 29; b) 76 – 38 > 67 – 38",
+            "explanation": "63 – 28 = 35 > 30; 80 – 35 = 45 = 45; 83 – 29 = 54 < 61 = 90 – 29; 76 – 38 = 38 > 29 = 67 – 38."
+          }
         }
       },
       "feedback": {
@@ -723,7 +855,19 @@
           "Tính kết quả phép trừ trước khi chọn dấu nhé.",
           "80 – 35 và 45, hai bên có bằng nhau không?",
           "Miệng dấu luôn há về phía số lớn hơn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every sign opens its mouth towards the bigger number, spot on with no corrections!",
+            "In part b you spotted the trick of subtracting the same 29 and 38. Sharp-eyed!",
+            "Cloud Koala claps clap clap on the mango branch."
+          ],
+          "wrong": [
+            "Work out the subtraction results before choosing a sign.",
+            "80 – 35 and 45: are the two sides equal?",
+            "The sign always opens its mouth towards the bigger number."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -739,6 +883,10 @@
         "b2": "80 - 35 ? 45",
         "b3": "83 - 29 ? 90 - 29",
         "b4": "76 - 38 ? 67 - 38"
+      },
+      "en": {
+        "title": "Compare two flight paths",
+        "prompt": "Cloud Koala puts >, < or = between the flight paths to compare which one is longer."
       }
     },
     {
@@ -846,6 +994,17 @@
         "answer": {
           "text": "Nhẩm theo chục.; 100 – 30 = 70   100 – 60 = 40   100 – 80 = 20; a) Phép tính của rô-bốt thân khối lập phương có kết quả bằng bao nhiêu? 17; b) Rô-bốt nào có kết quả lớn nhất? Rô-bốt ghi 90 – 52",
           "explanation": "100 – 30 = 70; 100 – 60 = 40; 100 – 80 = 20. Rô-bốt khối lập phương: 62 – 45 = 17. Lớn nhất là 90 – 52 = 38 (73 – 36 = 37)."
+        },
+        "en": {
+          "guide": [
+            "100 is 10 tens: 10 tens take away 3 tens leaves 7 tens.",
+            "Work out the results of the three robots, then compare them."
+          ],
+          "hint": "62 – 45 = 17, 73 – 36 = 37, and what about 90 – 52?",
+          "answer": {
+            "text": "Work them out in tens.; 100 – 30 = 70   100 – 60 = 40   100 – 80 = 20; a) What is the result of the cube-shaped robot's sum? 17; b) Which robot has the biggest result? The robot marked 90 – 52",
+            "explanation": "100 – 30 = 70; 100 – 60 = 40; 100 – 80 = 20. Cube robot: 62 – 45 = 17. The biggest is 90 – 52 = 38 (73 – 36 = 37)."
+          }
         }
       },
       "feedback": {
@@ -858,7 +1017,19 @@
           "100 trừ số tròn chục: nghĩ theo số chục cho dễ nhé.",
           "Rô-bốt khối lập phương là rô-bốt xanh, ghi 62 – 45.",
           "37 và 38 sát nhau lắm, so cẩn thận nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three robots bow, and the yellow robot gets to wear a pilot's cap.",
+            "Mental maths with round tens, as quick as a jet plane!",
+            "Growly Tiger growls softly: you calculate even faster than I run."
+          ],
+          "wrong": [
+            "For 100 minus round tens, think in tens to make it easier.",
+            "The cube-shaped robot is the blue one, marked 62 – 45.",
+            "37 and 38 are very close, so compare carefully."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -876,6 +1047,11 @@
         "b2": "100 - 60",
         "b3": "100 - 80",
         "b4": "62 - 45"
+      },
+      "en": {
+        "title": "Mental maths on the field bank",
+        "goTo": "Run back to the Meadow by the Windmill, where Growly Tiger is leading three robots out to the field bank",
+        "prompt": "On the field bank there are three robots: the blue cube-shaped one carries 62 – 45, the yellow ball-shaped one carries 90 – 52, and the orange cuboid-shaped one carries 73 – 36. Before that, Tiger reads out a few quick mental sums."
       }
     },
     {
@@ -919,6 +1095,17 @@
         "answer": {
           "text": "Áo vàng 60 – 43 – quần 17; áo trắng 52 – 36 – quần 16",
           "explanation": "60 – 43 = 17 nên áo vàng hợp quần 17; 52 – 36 = 16 nên áo trắng hợp quần 16."
+        },
+        "en": {
+          "guide": [
+            "Work out the subtraction on the shirt.",
+            "The trousers with exactly that result match; trousers 18 are already paired with the sample shirt 73 – 55."
+          ],
+          "hint": "60 – 43 = 17.",
+          "answer": {
+            "text": "Yellow shirt 60 – 43 – trousers 17; white shirt 52 – 36 – trousers 16",
+            "explanation": "60 – 43 = 17, so the yellow shirt matches trousers 17; 52 – 36 = 16, so the white shirt matches trousers 16."
+          }
         }
       },
       "feedback": {
@@ -931,7 +1118,19 @@
           "Chiếc quần hơi cộc so với áo, tính lại phép trừ nhé.",
           "52 – 36 bằng mấy? Tìm quần ghi số đó.",
           "Quần 18 đã có áo mẫu mặc rồi đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Growly Tiger strikes a pose in his pilot outfit like a film star.",
+            "Every shirt with its trousers, fitting as if tailor-made!",
+            "Fluffy Bear whistles: Pilot Tiger looks quite something."
+          ],
+          "wrong": [
+            "The trousers look a bit short for that shirt. Work out the subtraction again.",
+            "What is 52 – 36? Look for the trousers with that number.",
+            "Trousers 18 already have a sample shirt on them."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -940,7 +1139,12 @@
         }
       },
       "goTo": "Vào nhà kho cỏ khô, Gấu Xù lôi ra cả chồng áo quần phi công",
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "Pilot outfit",
+        "goTo": "Go into the Hay Barn, where Fluffy Bear drags out a whole pile of pilot clothes",
+        "prompt": "Growly Tiger wants to dress as a pilot to look really impressive. Each shirt shows a subtraction and each pair of trousers shows a number; find the trousers that match each shirt."
+      }
     },
     {
       "id": "ho-van-ru-thi",
@@ -1030,6 +1234,17 @@
         "answer": {
           "text": "a) A. 54; b) C. 84",
           "explanation": "a) 45 + 37 – 28 = 82 – 28 = 54 (A). b) 71 – 35 + 48 = 36 + 48 = 84 (C)."
+        },
+        "en": {
+          "guide": [
+            "Go from left to right, doing one step after another.",
+            "Choose exactly one answer for each line."
+          ],
+          "hint": "45 + 37 = 82, then 82 – 28.",
+          "answer": {
+            "text": "Answers: a) A. 54; b) C. 84",
+            "explanation": "Working: a) 45 + 37 – 28 = 82 – 28 = 54 (A). b) 71 – 35 + 48 = 36 + 48 = 84 (C)."
+          }
         }
       },
       "feedback": {
@@ -1042,7 +1257,19 @@
           "Dòng a cộng 45 với 37 trước rồi mới trừ 28.",
           "Dòng b: 71 – 35 bằng mấy trước đã?",
           "Mỗi dòng chỉ được chọn một đáp số thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two lines, two answers, and Breeze Giraffe gives you an honorary banana.",
+            "Working from left to right in good order. Wonderful!",
+            "Growly Tiger mutters: 71 minus 35 is 36, I'll remember that."
+          ],
+          "wrong": [
+            "In line a, add 45 and 37 first and only then subtract 28.",
+            "In line b: what is 71 – 35 first?",
+            "You may choose only one answer for each line."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1051,7 +1278,20 @@
         ]
       },
       "goTo": "Ra hàng rào đo đường bay, Hươu Gió ngẩng cao cổ giơ bảng đố hai dòng",
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Result choosing table",
+        "goTo": "Go to the Flight Path Measuring Fence, where Breeze Giraffe lifts her long neck high and holds up a two-line riddle board",
+        "prompt": "Breeze Giraffe holds up a two-line riddle board; {name} chooses the right answer for each line. a) 45 + 37 – 28 = ? A. 54 B. 64 C. 44 b) 71 – 35 + 48 = ? A. 74 B. 94 C. 84",
+        "choices": [
+          "a) A. 54",
+          "a) B. 64",
+          "a) C. 44",
+          "b) A. 74",
+          "b) B. 94",
+          "b) C. 84"
+        ]
+      }
     },
     {
       "id": "meo-cau-ca-ben-ao",
@@ -1098,6 +1338,17 @@
         "answer": {
           "text": "Xô 25 – cá 72 – 47; xô 35 – cá 64 – 29; xô 55 – cá 91 – 36",
           "explanation": "64 – 29 = 35, 72 – 47 = 25, 91 – 36 = 55: xô 25 nhận cá 72 – 47, xô 35 nhận cá 64 – 29, xô 55 nhận cá 91 – 36."
+        },
+        "en": {
+          "guide": [
+            "Work out the subtraction on each fish.",
+            "The fish whose difference equals the number on the bucket belongs to that cat."
+          ],
+          "hint": "91 – 36 = 55.",
+          "answer": {
+            "text": "Bucket 25 – fish 72 – 47; bucket 35 – fish 64 – 29; bucket 55 – fish 91 – 36",
+            "explanation": "64 – 29 = 35, 72 – 47 = 25, 91 – 36 = 55: bucket 25 gets fish 72 – 47, bucket 35 gets fish 64 – 29, bucket 55 gets fish 91 – 36."
+          }
         }
       },
       "feedback": {
@@ -1110,7 +1361,19 @@
           "Có chú mèo câu nhầm cá của bạn bên cạnh.",
           "Tính phép trừ trên cá trước rồi nhìn số trên xô.",
           "72 – 47 bằng 25 hay 35? Thử lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Splash splash splash! Three fish jump neatly into three buckets.",
+            "The three cats meow their thanks over and over.",
+            "Growly Tiger's eyes go round: can fish do maths too?"
+          ],
+          "wrong": [
+            "A cat has caught the fish of its neighbour.",
+            "Work out the subtraction on the fish first, then look at the number on the bucket.",
+            "Is 72 – 47 equal to 25 or 35? Try again."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1120,7 +1383,12 @@
         }
       },
       "goTo": "Xuống bờ ao cá, Mèo Cam cùng hai bạn mèo đang ngồi câu",
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "Three cats fishing",
+        "goTo": "Go down to the Fish Pond Bank, where Orange Cat and two cat friends sit fishing",
+        "prompt": "A plane lands on the pond bank, where three cats are sitting fishing. Three fish are marked 64 – 29, 72 – 47 and 91 – 36. Each cat has a bucket with a number on it and will catch the fish whose difference equals the number on its bucket. Find a fish for each cat."
+      }
     },
     {
       "id": "so-ghi-chuyen-bay",
@@ -1210,6 +1478,17 @@
         "answer": {
           "text": "Số bị trừ | 94 | 80 | 63 | 75 | 70; Số trừ | 56 | 45 | 39 | 48 | 40; Hiệu | 38 | 35 | 24 | 27 | 30",
           "explanation": "80 – 45 = 35; 63 – 39 = 24; 75 – 48 = 27; 70 – 40 = 30."
+        },
+        "en": {
+          "guide": [
+            "To find the difference, take the second number away from the first.",
+            "The first column is the example: 94 – 56 = 38."
+          ],
+          "hint": "63 – 39: 13 – 9 = 4, carry 1; in the tens 6 – 4 = 2.",
+          "answer": {
+            "text": "First number | 94 | 80 | 63 | 75 | 70; Second number | 56 | 45 | 39 | 48 | 40; Difference | 38 | 35 | 24 | 27 | 30",
+            "explanation": "80 – 45 = 35; 63 – 39 = 24; 75 – 48 = 27; 70 – 40 = 30."
+          }
         }
       },
       "feedback": {
@@ -1222,7 +1501,19 @@
           "Lấy số hàng trên trừ số hàng giữa nhé.",
           "75 – 48 có mượn ở hàng đơn vị đấy.",
           "Cột 70 và 40 là trừ hai số tròn chục, dễ thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four columns are filled in, and Breeze Giraffe stamps the book as checked.",
+            "Every difference is spot on, and no column is left empty.",
+            "Growly Tiger copies the logbook to take home and show his mum."
+          ],
+          "wrong": [
+            "Take the middle row away from the top row.",
+            "75 – 48 borrows in the ones.",
+            "The 70 and 40 column takes away two round tens. Easy."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1239,6 +1530,11 @@
         "b2": "63 - 39",
         "b3": "75 - 48",
         "b4": "70 - 40"
+      },
+      "en": {
+        "title": "Flight logbook",
+        "goTo": "Back at the Flight Path Measuring Fence, Breeze Giraffe opens the flight logbook",
+        "prompt": "Breeze Giraffe writes down each flight: how far it flew out, how much it flew back, and how far is still left. Fill in the empty difference boxes."
       }
     },
     {
@@ -1388,6 +1684,17 @@
         "answer": {
           "text": "Tìm chữ số thích hợp.; 53 – 19 = 34; 72 – 48 = 24; 81 – 37 = 44; Hộp có hiệu lớn nhất đựng sách vở, hộp có hiệu bé nhất đựng bút chì. Hỏi hộp nào đựng sách vở, hộp nào đựng bút chì?; Hộp đựng sách vở: hộp C. Hộp đựng bút chì: hộp B.",
           "explanation": "53 – 19 = 34; 72 – 48 = 24; 81 – 37 = 44. Hộp A 27, hộp B 20, hộp C 43, hộp D 24: hộp C đựng sách vở, hộp B đựng bút chì."
+        },
+        "en": {
+          "guide": [
+            "Try putting a digit into the blank and work out the subtraction again.",
+            "Gift boxes: work out the differences of all four boxes, then find the biggest and the smallest."
+          ],
+          "hint": "Box A: 60 – 33 = 27, box D: 52 – 28 = 24.",
+          "answer": {
+            "text": "Find the missing digits.; 53 – 19 = 34; 72 – 48 = 24; 81 – 37 = 44; The box with the biggest difference holds school books and the box with the smallest holds pencils. Which box holds the school books and which holds the pencils?; The box with the school books: box C. The box with the pencils: box B.",
+            "explanation": "53 – 19 = 34; 72 – 48 = 24; 81 – 37 = 44. Box A 27, box B 20, box C 43, box D 24: box C holds the school books, box B holds the pencils."
+          }
         }
       },
       "feedback": {
@@ -1400,7 +1707,19 @@
           "Thay chữ số vào rồi tính lại xem phép trừ có đúng không.",
           "Hộp đựng sách vở có hiệu LỚN nhất đấy.",
           "Hộp A và hộp D chênh nhau ít, tính kĩ lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The digits go back in the right places, and the right gift box opens too!",
+            "Growly Tiger hugs the book box and Cloud Koala holds the pencil box, and everyone is delighted.",
+            "You tried digits and checked again. A true number detective."
+          ],
+          "wrong": [
+            "Put a digit in and work out the subtraction again to see if it is right.",
+            "The box with the school books has the BIGGEST difference.",
+            "Boxes A and D are close together, so work them out carefully."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1414,7 +1733,12 @@
         }
       },
       "goTo": "Trèo tới cây xoài đầu vườn, Koala Mây ôm bốn hộp quà phần thưởng",
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "The hidden digit and the gift box",
+        "goTo": "Climb up to the Mango Tree at the Garden Entrance, where Cloud Koala hugs four prize gift boxes",
+        "prompt": "The wind has blown away a few digits on the board, and the four prize gift boxes say: box A 60 – 33, box B 50 – 30, box C 78 – 35, box D 52 – 28."
+      }
     },
     {
       "id": "chia-khoa-mo-hom",
@@ -1447,6 +1771,17 @@
         "answer": {
           "text": "A",
           "explanation": "Hòm C ghi sai (51 – 27 = 24); hòm B ghi đúng 74 – 38 = 36 nhưng là hòm màu xanh; hòm A ghi đúng 80 – 35 = 45. Chìa khoá mở hòm A."
+        },
+        "en": {
+          "guide": [
+            "Check the sum written on each chest.",
+            "Rule out the blue chest."
+          ],
+          "hint": "Chest C is wrong because 51 – 27 = 24.",
+          "answer": {
+            "text": "A",
+            "explanation": "Chest C is wrong (51 – 27 = 24); chest B is right, 74 – 38 = 36, but it is the blue chest; chest A is right, 80 – 35 = 45. The key opens chest A."
+          }
         }
       },
       "feedback": {
@@ -1459,13 +1794,35 @@
           "Hòm đó ghi phép tính sai rồi, chìa không vừa đâu.",
           "Phép tính đúng mà là hòm màu xanh thì chìa cũng không mở được.",
           "Tính lại 51 – 27 xem có ra 34 không."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Click! The yellow chest opens, full of coloured paper for folding planes.",
+            "The blue chest didn't fool you. {name} reads the question carefully.",
+            "Fluffy Bear tosses the key into the air and catches it neatly: perfect!"
+          ],
+          "wrong": [
+            "That chest has a wrong sum, so the key won't fit.",
+            "A right sum on the blue chest still won't open with the key.",
+            "Work out 51 – 27 again and see whether it is 34."
+          ]
+        }
       },
       "answer": {
         "choice": "a"
       },
       "goTo": "Vào nhà kho cỏ khô, Gấu Xù lắc chùm chìa khoá trước ba chiếc hòm",
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "Key to the hay barn",
+        "goTo": "Go into the Hay Barn, where Fluffy Bear jingles a bunch of keys in front of three chests",
+        "prompt": "The hay barn has three chests: the yellow chest A says 80 – 35 = 45, the blue chest B says 74 – 38 = 36, the red chest C says 51 – 27 = 34. The key only opens a chest whose sum is right and which is not the blue chest. Which chest does the key open?",
+        "choices": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
     },
     {
       "id": "bon-bai-toan-cua-ho",
@@ -1555,6 +1912,17 @@
         "answer": {
           "text": "Bao ngô của bác Lâm nặng 51 kg. Bao đậu xanh nhẹ hơn bao ngô 28 kg. Hỏi bao đậu xanh nặng bao nhiêu ki-lô-gam? Bao đậu xanh nặng 23 kg.; Thùng sữa của Bò Sữa Mơ có 74 l sữa. Sáng nay đã bán đi 38 l. Hỏi thùng còn lại bao nhiêu lít sữa? Còn lại 36 l sữa.; Kho có 80 bao thóc. Bác Lâm đã chuyển lên xe 47 bao. Hỏi còn bao nhiêu bao thóc chưa chuyển? Còn 33 bao thóc chưa chuyển.; Đàn vịt có 62 con gồm vịt đực và vịt cái, trong đó có 35 con vịt cái. Hỏi đàn vịt có bao nhiêu con vịt đực? Có 27 con vịt đực.",
           "explanation": "51 – 28 = 23; 74 – 38 = 36; 80 – 47 = 33; 62 – 35 = 27."
+        },
+        "en": {
+          "guide": [
+            "\"Lighter\", \"sold\", \"moved\" and \"of which\" all lead to subtraction.",
+            "Take the part you already know away from the bigger number."
+          ],
+          "hint": "51 – 28, 74 – 38, 80 – 47, 62 – 35.",
+          "answer": {
+            "text": "Uncle Lâm's corn sack weighs 51 kg. The green bean sack is 28 kg lighter than the corn sack. How many kilograms does the green bean sack weigh? The green bean sack weighs 23 kg.; Dream Dairy Cow's milk churn has 74 l of milk. This morning 38 l were sold. How many litres of milk are left in the churn? 36 l of milk are left.; The store has 80 sacks of grain. Uncle Lâm has moved 47 sacks onto the cart. How many sacks of grain have not been moved yet? 33 sacks of grain have not been moved.; The flock has 62 ducks, male and female, of which 35 are female. How many male ducks are in the flock? There are 27 male ducks.",
+            "explanation": "51 – 28 = 23; 74 – 38 = 36; 80 – 47 = 33; 62 – 35 = 27."
+          }
         }
       },
       "feedback": {
@@ -1567,7 +1935,19 @@
           "Bài nào cũng lấy tổng bớt đi phần đã biết nhé.",
           "Bài vịt: 62 con có 35 con vịt cái, còn lại là vịt đực.",
           "Xem lại bài thùng sữa, 74 – 38 có mượn đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four problems, four answers, and Growly Tiger reads them out loud without a tremor!",
+            "You solved them as neatly as a plane landing smoothly.",
+            "Breeze Giraffe sticks a gold star on Tiger's forehead, and on {name}'s."
+          ],
+          "wrong": [
+            "In every problem, take the part you know away from the total.",
+            "The duck problem: 62 ducks, 35 of them female, and the rest are male.",
+            "Look at the milk churn problem again. 74 – 38 borrows."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1584,6 +1964,11 @@
         "b2": "74 - 38",
         "b3": "80 - 47",
         "b4": "62 - 35"
+      },
+      "en": {
+        "title": "Tiger's four riddles",
+        "goTo": "Carry the chest back to the Meadow by the Windmill, where Growly Tiger clears his throat to read the problems",
+        "prompt": "Growly Tiger confidently reads out the four problems found in the chest."
       }
     },
     {
@@ -1729,6 +2114,17 @@
         "answer": {
           "text": "Ở mỗi ngã ba, nhím luôn rẽ vào lối có hiệu lớn hơn. Hỏi cuối cùng nhím sẽ tới món nào?; 71 – 45 = 26   71 – 28 = 43   82 – 49 = 33   90 – 67 = 23   95 – 48 = 47   84 – 57 = 27; Nhím tới chỗ: bắp cải",
           "explanation": "71 – 28 = 43 > 71 – 45 = 26 nên đi đường dưới; 95 – 48 = 47 > 84 – 57 = 27 nên tới bắp cải. (Đường trên: 82 – 49 = 33, 90 – 67 = 23.)"
+        },
+        "en": {
+          "guide": [
+            "At each fork, work out both paths and choose the path with the bigger result.",
+            "Then look only at the two paths after the one you just chose."
+          ],
+          "hint": "71 – 45 = 26 is smaller than 71 – 28 = 43, so the hedgehog turns onto the lower path.",
+          "answer": {
+            "text": "At every fork, the hedgehog always turns onto the path with the bigger difference. Which food does the hedgehog finally reach?; 71 – 45 = 26   71 – 28 = 43   82 – 49 = 33   90 – 67 = 23   95 – 48 = 47   84 – 57 = 27; The hedgehog reaches: cabbage",
+            "explanation": "71 – 28 = 43 > 71 – 45 = 26, so it takes the lower path; 95 – 48 = 47 > 84 – 57 = 27, so it reaches the cabbage. (Upper path: 82 – 49 = 33, 90 – 67 = 23.)"
+          }
         }
       },
       "feedback": {
@@ -1741,7 +2137,19 @@
           "Nhím lạc vào bụi gai rồi, so lại hai đường ở ngã rẽ đi.",
           "Nhớ chọn đường có kết quả LỚN hơn nhé.",
           "Sau khi rẽ xuống dưới thì chỉ xét hai đường phía dưới thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The hedgehog hugs the cabbage and rolls round the meadow, and {name} reaches the finish before Tiger!",
+            "Growly Tiger loses but laughs heartily and promises to win the next game.",
+            "At every fork you chose the bigger number, and the hedgehog is stuffed."
+          ],
+          "wrong": [
+            "The hedgehog has wandered into the brambles. Compare the two paths at the fork again.",
+            "Remember to choose the path with the BIGGER result.",
+            "After turning onto the lower path, look only at the two paths below."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1762,6 +2170,10 @@
         "b4": "90 - 67",
         "b5": "95 - 48",
         "b6": "84 - 57"
+      },
+      "en": {
+        "title": "Guide the hedgehog to find food contest",
+        "prompt": "The final game: Growly Tiger and {name} race to see who guides the hedgehog to the food first. At the first fork the upper path says 71 – 45 and the lower path says 71 – 28; after 71 – 45 there is a path 82 – 49 to a carrot and a path 90 – 67 to a potato; after 71 – 28 there is a path 95 – 48 to a cabbage and a path 84 – 57 to a sweet potato."
       }
     },
     {
@@ -1794,5 +2206,9 @@
       "phep-tru": 2,
       "so-sanh-so": 1
     }
+  },
+  "en": {
+    "title": "Growly Tiger and the Paper Flight Path",
+    "summary": "Growly Tiger growls because his paper planes fly far but land close, when really he is afraid of being laughed at. {name} and Breeze Giraffe use subtraction with borrowing to measure every flight: by the windmill, at Cloud Koala's mango tree, in Fluffy Bear's hay barn, down at the fishing pond with Orange Cat, and finally in a contest to guide a hedgehog to its food with Tiger."
   }
 }

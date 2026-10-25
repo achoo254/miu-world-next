@@ -102,7 +102,11 @@
         "toan2-cd7-xap-ve-do",
         "toan2-cd7-xap-ve-xanh",
         "toan2-cd7-xap-ve-vang"
-      ]
+      ],
+      "en": {
+        "title": "Three bundles of tickets under the seats",
+        "goTo": "Find the three bundles of tickets that fell under the audience seats"
+      }
     },
     {
       "id": "so-ghe-tinh-nham",
@@ -329,6 +333,17 @@
         "answer": {
           "text": "9 + 7 = 16   8 + 6 = 14   6 + 5 = 11   4 + 9 = 13   7 + 8 = 15   3 + 9 = 12; 16 – 7 = 9   12 – 8 = 4   15 – 8 = 7   14 – 6 = 8   11 – 5 = 6   13 – 8 = 5",
           "explanation": "Mỗi phép cộng được làm tròn 10 rồi cộng nốt phần còn lại; mỗi phép trừ thì trừ về 10 rồi trừ tiếp phần còn lại."
+        },
+        "en": {
+          "guide": [
+            "Adding across 10: split the second number to make 10 first. For example 9 + 7 = 9 + 1 + 6.",
+            "Subtracting across 10: take away down to 10 first, then take away the rest. For example 15 – 8 = 15 – 5 – 3."
+          ],
+          "hint": "8 + 6: take 2 from the 6 to make 10, which leaves 4, so the answer is 14.",
+          "answer": {
+            "text": "9 + 7 = 16   8 + 6 = 14   6 + 5 = 11   4 + 9 = 13   7 + 8 = 15   3 + 9 = 12; 16 – 7 = 9   12 – 8 = 4   15 – 8 = 7   14 – 6 = 8   11 – 5 = 6   13 – 8 = 5",
+            "explanation": "Each addition is made up to 10 first and then the rest is added; each subtraction goes down to 10 first and then takes away the rest."
+          }
         }
       },
       "feedback": {
@@ -341,7 +356,19 @@
           "Có khán giả cầm vé đứng ngơ ngác vì số ghế chưa đúng.",
           "Thử làm tròn 10 trước rồi cộng phần còn lại nhé.",
           "Phép trừ qua 10: trừ về 10 trước, rồi trừ tiếp."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Twelve tickets, twelve seats, and the audience bustles into their places!",
+            "Clucking Hen can't keep up checking tickets because {name} works things out so fast.",
+            "The red row is full and nobody sat in someone else's seat."
+          ],
+          "wrong": [
+            "Some audience members are standing about confused because the seat number isn't right.",
+            "Try making 10 first and then adding the rest.",
+            "For subtracting across 10, go down to 10 first, then take away the rest."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -373,6 +400,11 @@
         "b10": "14 - 6",
         "b11": "11 - 5",
         "b12": "13 - 8"
+      },
+      "en": {
+        "title": "Mental maths with seat numbers",
+        "goTo": "Go to the rows of seats, where Clucking Hen stands checking the red tickets",
+        "prompt": "The red bundle of tickets has only sums within 20. Clucking Hen checks the tickets, and whoever hands one over, {name} reads out the seat number. Work out the answers in your head."
       }
     },
     {
@@ -480,6 +512,17 @@
         "answer": {
           "text": "a) 7 + 7 < 15; a) 8 + 7 = 15; a) 9 + 7 > 15; b) 6 + 8 = 8 + 6; b) 9 + 6 > 9 + 5",
           "explanation": "7 + 7 = 14 < 15; 8 + 7 = 15 = 15; 9 + 7 = 16 > 15; 6 + 8 = 8 + 6; 9 + 6 = 15 > 14 = 9 + 5."
+        },
+        "en": {
+          "guide": [
+            "Work out the left-hand side first, then compare it with the right-hand side.",
+            "If you swap the two numbers being added, the total stays the same."
+          ],
+          "hint": "6 + 8 and 8 + 6 have the same numbers, just swapped round.",
+          "answer": {
+            "text": "Answers: a) 7 + 7 < 15; a) 8 + 7 = 15; a) 9 + 7 > 15; b) 6 + 8 = 8 + 6; b) 9 + 6 > 9 + 5",
+            "explanation": "7 + 7 = 14 < 15; 8 + 7 = 15 = 15; 9 + 7 = 16 > 15; 6 + 8 = 8 + 6; 9 + 6 = 15 > 14 = 9 + 5."
+          }
         }
       },
       "feedback": {
@@ -492,7 +535,19 @@
           "Tính tổng bên trái ra số đã rồi hẵng đặt dấu nhé.",
           "6 + 8 với 8 + 6 có khác gì nhau không nhỉ?",
           "Miệng dấu luôn há về phía số lớn hơn đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every sign is clear now, and the blue tickets shine like newly printed!",
+            "Clucking Hen rubs her eyes: so it wasn't my eyes after all, just smudged ink.",
+            "Every ticket compared correctly, none out of line."
+          ],
+          "wrong": [
+            "Work out the total on the left first, then put in the sign.",
+            "Is there any difference between 6 + 8 and 8 + 6?",
+            "The open mouth of the sign faces the bigger number."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -510,6 +565,10 @@
         "b3": "9 + 7 ? 15",
         "b4": "6 + 8 ? 8 + 6",
         "b5": "9 + 6 ? 9 + 5"
+      },
+      "en": {
+        "title": "Comparison signs on the blue ticket",
+        "prompt": "The blue bundle of tickets has smudged comparison signs, and Clucking Hen squints and still can't read them. Fill in the signs >, < or =."
       }
     },
     {
@@ -618,6 +677,17 @@
         "answer": {
           "text": "Đường trên: 6 → + 9 → 15 → – 7 → 8 → + 6 → 14 → – 6 → 8; Đường dưới: 6 → + 7 → 13 → – 5 → về đúng bông hoa cuối",
           "explanation": "6 + 9 = 15, 15 – 7 = 8, 8 + 6 = 14, 14 – 6 = 8; đường dưới 6 + 7 = 13, 13 – 5 = 8, cùng về bông hoa số 8."
+        },
+        "en": {
+          "guide": [
+            "Follow the arrows and do one sum at a time.",
+            "The answer to one box is the starting number of the next."
+          ],
+          "hint": "Add 6 and then take away 6 and you are back at the same number.",
+          "answer": {
+            "text": "Top path: 6 → + 9 → 15 → – 7 → 8 → + 6 → 14 → – 6 → 8; Bottom path: 6 → + 7 → 13 → – 5 → lands on the final flower",
+            "explanation": "6 + 9 = 15, 15 – 7 = 8, 8 + 6 = 14, 14 – 6 = 8; the bottom path 6 + 7 = 13, 13 – 5 = 8, both arriving at flower number 8."
+          }
         }
       },
       "feedback": {
@@ -630,7 +700,19 @@
           "Lấy kết quả ô vừa rồi để làm tiếp ô sau nhé.",
           "Đường dưới cũng phải về đúng bông hoa cuối của đường trên.",
           "Một ô trên vòng hoa đang lệch số, dò lại mũi tên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two flower paths meet at exactly one flower, as pretty as magic!",
+            "You went right round the garland without a wrong step. Great!",
+            "Uncle Thuận pins a flower on {name}'s hat: a prize for good counting!"
+          ],
+          "wrong": [
+            "Use the answer from the last box to do the next box.",
+            "The bottom path must also arrive at the final flower of the top path.",
+            "One box on the garland has a wrong number, so check the arrows again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -648,6 +730,11 @@
         "b3": "6 + 9 - 7 + 6",
         "b4": "6 + 9 - 7 + 6 - 6",
         "b5": "6 + 7"
+      },
+      "en": {
+        "title": "The flower path to the seat",
+        "goTo": "Follow the flower-decked aisle, where Uncle Thuận is watering the garland of sums",
+        "prompt": "The aisle between the rows is decorated with flowers in two arrow paths, both starting at flower number 6 and both ending at the final flower. Fill in the missing numbers. Top path: 6, + 9, _, – 7, _, + 6, _, – 6, _. Bottom path: 6, + 7, _, – 5, which lands on the final flower."
       }
     },
     {
@@ -667,6 +754,17 @@
         "answer": {
           "text": "7 bình hoa",
           "explanation": "Buổi chiều cắm được: 16 – 9 = 7 (bình hoa)."
+        },
+        "en": {
+          "guide": [
+            "If he arranges fewer in the afternoon, take away from the morning's number of vases.",
+            "Take 9 away from the number of vases in the morning."
+          ],
+          "hint": "The calculation is 16 – 9.",
+          "answer": {
+            "text": "7 vases of flowers",
+            "explanation": "In the afternoon he arranged: 16 – 9 = 7 (vases of flowers)."
+          }
         }
       },
       "feedback": {
@@ -679,13 +777,30 @@
           "Buổi chiều cắm ít hơn, vậy kết quả phải bé hơn 16.",
           "Bài này dùng phép trừ chứ không phải phép cộng.",
           "Bớt 9 từ 16 xem còn mấy bình nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Clucking Hen nods like a marker with the register: exactly seven vases!",
+            "Fewer means subtract, and {name} remembers the lesson so well.",
+            "The note has been decoded completely."
+          ],
+          "wrong": [
+            "He arranged fewer in the afternoon, so the answer must be smaller than 16.",
+            "This problem uses subtraction, not addition.",
+            "Take 9 away from 16 and see how many vases are left."
+          ]
+        }
       },
       "answer": {
         "value": 7
       },
       "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
-      "expression": "16 - 9"
+      "expression": "16 - 9",
+      "en": {
+        "title": "Afternoon vase",
+        "goTo": "Go back to the rows of seats, where Clucking Hen points at the note stuck to the back of a seat",
+        "question": "A note is stuck to the back of a seat, and Clucking Hen reads it out loud: Uncle Thuận arranges flowers to decorate the rows of seats. In the morning he arranges 16 vases of flowers, and in the afternoon he arranges 9 vases fewer than in the morning. How many vases of flowers does he arrange in the afternoon?"
+      }
     },
     {
       "id": "banh-quy-giua-gio",
@@ -753,6 +868,17 @@
         "answer": {
           "text": "Số 6: 15 – 9; số 8: 14 – 6, 17 – 9; số 12: 7 + 5, 9 + 3; số 14: 9 + 5, 8 + 6",
           "explanation": "7 + 5 = 9 + 3 = 12; 9 + 5 = 8 + 6 = 14; 14 – 6 = 17 – 9 = 8; 15 – 9 = 6."
+        },
+        "en": {
+          "guide": [
+            "Work out the answer written on each biscuit.",
+            "Each plate can take more than one biscuit."
+          ],
+          "hint": "The sample biscuit 13 – 7 is already on plate 6, so find more biscuits with the same answer.",
+          "answer": {
+            "text": "Plate 6: 15 – 9; plate 8: 14 – 6, 17 – 9; plate 12: 7 + 5, 9 + 3; plate 14: 9 + 5, 8 + 6",
+            "explanation": "7 + 5 = 9 + 3 = 12; 9 + 5 = 8 + 6 = 14; 14 – 6 = 17 – 9 = 8; 15 – 9 = 6."
+          }
         }
       },
       "feedback": {
@@ -765,7 +891,19 @@
           "Có chiếc bánh nằm nhầm đĩa, Heo Mũm Mĩm chưa dám ăn.",
           "Tính phép trên bánh quy trước rồi mới đặt vào đĩa.",
           "Đĩa số 14 cần hai chiếc bánh đấy, tìm thêm đi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The biscuits are on the right plates, and Chubby Pig gets a reward of one, crunching away!",
+            "Four round plates of biscuits and not one biscuit on the wrong plate.",
+            "Chubby Pig sniffles, touched: it's the first time I've seen biscuits so neatly sorted."
+          ],
+          "wrong": [
+            "A biscuit is on the wrong plate, so Chubby Pig doesn't dare eat yet.",
+            "Work out the sum on the biscuit first, then put it on a plate.",
+            "Plate 14 needs two biscuits, so look for another one."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -778,7 +916,21 @@
           "17-9": "nhom-so-8"
         }
       },
-      "objective": "cong-tru-qua-10-bang"
+      "objective": "cong-tru-qua-10-bang",
+      "en": {
+        "title": "Plate of biscuits at break time",
+        "goTo": "Go into the wings, where Chubby Pig is guarding the tray of biscuits",
+        "prompt": "Chubby Pig sets out four plates numbered 6, 8, 12 and 14, and the biscuits have sums on them. \"Once they're sorted I get to taste one!\" Put each biscuit on the plate whose number equals its answer.",
+        "items": [
+          "7 + 5",
+          "9 + 5",
+          "15 – 9",
+          "14 – 6",
+          "8 + 6",
+          "9 + 3",
+          "17 – 9"
+        ]
+      }
     },
     {
       "id": "sot-buoi-sau-buoi-dien",
@@ -852,6 +1004,17 @@
         "answer": {
           "text": "Sọt | A | B | C | D; Số quả bưởi | 4 | 3 | 2 | 3",
           "explanation": "Sọt B: 7 + 6 = 13, có 3 quả; sọt C: 8 + 8 = 16, có 2 quả; sọt D: 6 + 6 = 12, có 3 quả."
+        },
+        "en": {
+          "guide": [
+            "Work out the sum on the basket to see which number of pomelo it takes.",
+            "Count the pomelos with exactly that number."
+          ],
+          "hint": "Basket A says 9 + 5 = 14, and four pomelos have the number 14.",
+          "answer": {
+            "text": "Basket | A | B | C | D; Number of pomelos | 4 | 3 | 2 | 3",
+            "explanation": "Basket B: 7 + 6 = 13, so 3 pomelos; basket C: 8 + 8 = 16, so 2 pomelos; basket D: 6 + 6 = 12, so 3 pomelos."
+          }
         }
       },
       "feedback": {
@@ -864,7 +1027,19 @@
           "Tính phép trên sọt trước, rồi mới đếm quả nhé.",
           "Đếm lại các quả mang số 13, hình như còn sót.",
           "Sọt B ghi 7 + 6, vậy nó nhận quả mang số mấy?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four baskets of fragrant pomelos, and Uncle Thuận keeps sniffing them happily.",
+            "Every pomelo counted correctly, and the guests can eat as much as they like!",
+            "Not one pomelo crept into the neighbour's basket."
+          ],
+          "wrong": [
+            "Work out the sum on the basket first, then count the pomelos.",
+            "Count the pomelos numbered 13 again, it looks like one was missed.",
+            "Basket B says 7 + 6, so which number of pomelo does it take?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -873,7 +1048,12 @@
           "b3": "o3"
         }
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Grapefruits into the basket",
+        "goTo": "Go out to the flower-decked aisle, where Uncle Thuận carries twelve pomelos",
+        "prompt": "Uncle Thuận has picked 12 pomelos numbered 13, 16, 14, 12, 14, 13, 12, 14, 16, 12, 13, 14 to offer the guests. Basket A says 9 + 5, basket B says 7 + 6, basket C says 8 + 8, basket D says 6 + 6. Each basket holds the pomelos whose number equals the answer to the sum on that basket. Fill in how many pomelos each basket holds."
+      }
     },
     {
       "id": "can-gao-nau-che",
@@ -907,6 +1087,17 @@
         "answer": {
           "text": "Túi ① 7 kg và túi ② 8 kg",
           "explanation": "Đĩa trái nặng 15 kg; 7 kg + 8 kg = 15 kg nên chọn túi ① và túi ②."
+        },
+        "en": {
+          "guide": [
+            "Work out how many kilograms the left pan weighs.",
+            "Find two bags that add up to exactly that number."
+          ],
+          "hint": "The left pan weighs 6 kg + 9 kg = 15 kg.",
+          "answer": {
+            "text": "Bag ① 7 kg and bag ② 8 kg",
+            "explanation": "The left pan weighs 15 kg; 7 kg + 8 kg = 15 kg, so choose bag ① and bag ②."
+          }
         }
       },
       "feedback": {
@@ -919,7 +1110,19 @@
           "Cân vẫn nghiêng kìa, tổng hai túi chưa bằng 15 kg.",
           "Tính xem đĩa bên trái nặng mấy ki-lô-gam đã nhé.",
           "Chỉ được lấy đúng hai túi thôi đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both pans are perfectly level, and Chubby Pig cheers: there's enough rice for the sweet soup!",
+            "Fifteen on the left, fifteen on the right, exactly balanced.",
+            "You chose the bags of rice as skilfully as an experienced cook."
+          ],
+          "wrong": [
+            "The scale is still tilting, because the two bags don't add up to 15 kg.",
+            "First work out how many kilograms the left pan weighs.",
+            "You may only take exactly two bags."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -927,7 +1130,17 @@
           "8-kg"
         ]
       },
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "Weigh the rice bag for sweet soup",
+        "goTo": "Go back into the wings, where Chubby Pig lugs in the bags of rice for the sweet soup",
+        "prompt": "On Chubby Pig's two-pan scale, the left pan already holds a 6 kg bag and a 9 kg bag. There are three more bags of rice: ① weighs 7 kg, ② weighs 8 kg, ③ weighs 9 kg. Which two bags go on the right pan to make the scale balance?",
+        "choices": [
+          "① 7 kg",
+          "② 8 kg",
+          "③ 9 kg"
+        ]
+      }
     },
     {
       "id": "hoc-hat-hoc-vo",
@@ -946,6 +1159,17 @@
         "answer": {
           "text": "15 bạn",
           "explanation": "Số bạn nhóm múa là: 9 + 6 = 15 (bạn)."
+        },
+        "en": {
+          "guide": [
+            "If there are that many more than the singing group, add exactly that many.",
+            "Add 6 to the number of children in the singing group."
+          ],
+          "hint": "The calculation is 9 + 6.",
+          "answer": {
+            "text": "15 children",
+            "explanation": "The number of children in the dancing group is: 9 + 6 = 15 (children)."
+          }
         }
       },
       "feedback": {
@@ -958,13 +1182,30 @@
           "Nhóm múa nhiều hơn, nên kết quả phải lớn hơn 9.",
           "Bài này cần phép cộng đấy.",
           "Cộng 9 với 6, qua 10 rồi tính tiếp nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fifteen little children twirl their skirts together, and the stage shakes along!",
+            "Teacher Quang praises you into the microphone, and the curtains flutter again.",
+            "More means add, and {name} answers as neatly as a drumbeat."
+          ],
+          "wrong": [
+            "The dancing group is bigger, so the answer must be greater than 9.",
+            "This problem needs addition.",
+            "Add 9 and 6, going across 10 and then working on."
+          ]
+        }
       },
       "answer": {
         "value": 15
       },
       "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon",
-      "expression": "9 + 6"
+      "expression": "9 + 6",
+      "en": {
+        "title": "Singing and dancing acts",
+        "goTo": "Go back to the great hall stage, where Teacher Quang is taking the register of acts",
+        "question": "Teacher Quang holds the talent-show list, his voice ringing like a trumpet: The singing group has 9 children. The dancing group has 6 more children than the singing group. How many children are in the dancing group?"
+      }
     },
     {
       "id": "doan-tau-dao-cu",
@@ -1104,6 +1345,17 @@
         "answer": {
           "text": "Toa | A | B | C | D | E; Kết quả phép tính | 60 | 70 | 100 | 20 | 80",
           "explanation": "40 + 30 = 70; 30 + 70 = 100; 80 – 60 = 20; 20 + 60 = 80."
+        },
+        "en": {
+          "guide": [
+            "With whole tens: add or subtract the tens with each other.",
+            "7 tens + 3 tens = 10 tens, which is 100."
+          ],
+          "hint": "80 – 60 is 8 tens take away 6 tens.",
+          "answer": {
+            "text": "Carriage | A | B | C | D | E; Answer | 60 | 70 | 100 | 20 | 80",
+            "explanation": "40 + 30 = 70; 30 + 70 = 100; 80 – 60 = 20; 20 + 60 = 80."
+          }
         }
       },
       "feedback": {
@@ -1116,7 +1368,19 @@
           "Đếm theo chục thử xem: 3 chục cộng 7 chục là mấy chục?",
           "Có toa ghi kết quả chưa khớp phép tính.",
           "Số tròn chục cộng trừ thì hàng đơn vị vẫn là 0 đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five carriages light up, and the train chugs along proudly!",
+            "You add and subtract whole tens as fast as an express train.",
+            "Bum the Bear cheers: carriage C carries a whole 100!"
+          ],
+          "wrong": [
+            "Try counting in tens: how many tens is 3 tens plus 7 tens?",
+            "A carriage has an answer that doesn't match its sum.",
+            "When you add or subtract whole tens, the ones digit stays 0."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1132,6 +1396,10 @@
         "b2": "30 + 70",
         "b3": "80 - 60",
         "b4": "20 + 60"
+      },
+      "en": {
+        "title": "Results on each carriage",
+        "prompt": "Carriage A says 90 – 30, carriage B says 40 + 30, carriage C says 30 + 70, carriage D says 80 – 60, carriage E says 20 + 60. Fill in the answer for each carriage."
       }
     },
     {
@@ -1188,6 +1456,17 @@
         "answer": {
           "text": "Bé hơn 70: toa A, toa D; lớn hơn 60 và bé hơn 100: toa B, toa E; toa C không thuộc nhóm nào",
           "explanation": "A (60) và D (20) bé hơn 70; B (70) và E (80) lớn hơn 60 và bé hơn 100; C (100) không thuộc nhóm nào."
+        },
+        "en": {
+          "guide": [
+            "Use the answer you just worked out for each carriage.",
+            "70 is not less than 70; 100 is not less than 100."
+          ],
+          "hint": "Carriage C has the answer 100, so it fits neither group.",
+          "answer": {
+            "text": "Less than 70: carriage A, carriage D; greater than 60 and less than 100: carriage B, carriage E; carriage C fits neither group",
+            "explanation": "A (60) and D (20) are less than 70; B (70) and E (80) are greater than 60 and less than 100; C (100) fits neither group."
+          }
         }
       },
       "feedback": {
@@ -1200,7 +1479,19 @@
           "Số 70 có bé hơn 70 không? Xem lại toa B nhé.",
           "Có toa đang cắm nhầm cờ rồi.",
           "Dò lại kết quả từng toa trước khi xếp nhóm."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Blue and red flags are on the right carriages, and the train looks brilliant!",
+            "Carriage C carrying 100 stands on its own, and you're sharp.",
+            "Uncle Toàn laughs: Bum the Bear's train has never looked so tidy!"
+          ],
+          "wrong": [
+            "Is 70 less than 70? Look at carriage B again.",
+            "A carriage has been given the wrong flag.",
+            "Check each carriage's answer again before sorting into groups."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1211,7 +1502,19 @@
           "toa-e-20-60": "nhom-lon-hon-60-va-be-hon-100"
         }
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Which carriage is small, which is big",
+        "goTo": "Go to the corner where the wooden platform is being put up, where Uncle Toàn hugs a bundle of red and blue flags",
+        "prompt": "Uncle Toàn wants to hang the flags on the right carriages. Sort the five carriages into three groups: answer less than 70; answer greater than 60 and less than 100; or neither group.",
+        "items": [
+          "Carriage A: 90 – 30",
+          "Carriage B: 40 + 30",
+          "Carriage C: 30 + 70",
+          "Carriage D: 80 – 60",
+          "Carriage E: 20 + 60"
+        ]
+      }
     },
     {
       "id": "bai-do-o-to",
@@ -1271,6 +1574,17 @@
         "answer": {
           "text": "25 + 15 – chỗ 40; 62 – 38 – chỗ 24; 78 – 23 – chỗ 55; 47 + 13 – chỗ 60",
           "explanation": "25 + 15 = 40; 62 – 38 = 24; 78 – 23 = 55; 47 + 13 = 60."
+        },
+        "en": {
+          "guide": [
+            "Work out the sum on the roof of each car.",
+            "Space 36 already has the sample car 19 + 17."
+          ],
+          "hint": "62 – 38: written in columns, 2 can't take away 8, so borrow 1 ten.",
+          "answer": {
+            "text": "25 + 15 – space 40; 62 – 38 – space 24; 78 – 23 – space 55; 47 + 13 – space 60",
+            "explanation": "25 + 15 = 40; 62 – 38 = 24; 78 – 23 = 55; 47 + 13 = 60."
+          }
         }
       },
       "feedback": {
@@ -1283,7 +1597,19 @@
           "Có ô tô đỗ nhầm chỗ, bác tài gãi đầu kìa.",
           "Phép trừ có nhớ: mượn 1 chục khi đơn vị không đủ trừ.",
           "Tính kĩ phép cộng có nhớ trên xe 47 + 13 nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Beep beep! Four cars are parked in a row, and none scrapes another.",
+            "Uncle Hùng stops waving round and round, and the car park is neat as a pin.",
+            "You direct traffic even better than a police officer."
+          ],
+          "wrong": [
+            "A car is parked in the wrong space and the driver is scratching his head.",
+            "Subtraction with borrowing: borrow 1 ten when the ones can't be taken away.",
+            "Work carefully through the addition with carrying on the car 47 + 13."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1293,7 +1619,18 @@
           "47-13": "nhom-cho-do-60"
         }
       },
-      "objective": "cong-tru-co-nho-tru"
+      "objective": "cong-tru-co-nho-tru",
+      "en": {
+        "title": "Audience car park",
+        "goTo": "Run out to the car park in front of the great hall, where Uncle Hùng waves the flags at the gate",
+        "prompt": "Cars full of guests come to watch the rehearsal, and the crowd is thick, so Uncle Hùng waves his flags round and round. Each car has a sum written on its roof and each parking space has a number. Find a space for each car.",
+        "items": [
+          "25 + 15",
+          "62 – 38",
+          "78 – 23",
+          "47 + 13"
+        ]
+      }
     },
     {
       "id": "dat-tinh-ve-vang",
@@ -1418,6 +1755,17 @@
         "answer": {
           "text": "a) 38 + 44 = 82; a) 82 – 38 = 44; a) 82 – 44 = 38; b) 29 + 56 = 85; b) 85 – 29 = 56; b) 85 – 56 = 29",
           "explanation": "38 + 44 = 82, 82 – 38 = 44, 82 – 44 = 38; 29 + 56 = 85, 85 – 29 = 56, 85 – 56 = 29."
+        },
+        "en": {
+          "guide": [
+            "Line up ones under ones and tens under tens.",
+            "Add and subtract starting from the ones; carry 1 to the tens when needed."
+          ],
+          "hint": "The three numbers 38, 44 and 82 are a \"family\": 38 + 44 = 82, so 82 – 38 = 44.",
+          "answer": {
+            "text": "Answers: a) 38 + 44 = 82; a) 82 – 38 = 44; a) 82 – 44 = 38; b) 29 + 56 = 85; b) 85 – 29 = 56; b) 85 – 56 = 29",
+            "explanation": "38 + 44 = 82, 82 – 38 = 44, 82 – 44 = 38; 29 + 56 = 85, 85 – 29 = 56, 85 – 56 = 29."
+          }
         }
       },
       "feedback": {
@@ -1430,7 +1778,19 @@
           "Kiểm tra lại chỗ nhớ 1 sang hàng chục nhé.",
           "Lấy tổng trừ đi một số hạng thì được số hạng kia.",
           "Có vé vàng đang ghi sai số ghế rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The gold tickets have their owners, and the guests of honour in the front row clap loudly.",
+            "You've found the family of sums!",
+            "Written in columns as straight as the rows of seats in the great hall."
+          ],
+          "wrong": [
+            "Check the place where you carry 1 to the tens again.",
+            "If you take one of the numbers away from the total, you get the other number.",
+            "A gold ticket has the wrong seat number written on it."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1450,6 +1810,11 @@
         "b4": "29 + 56",
         "b5": "85 - 29",
         "b6": "85 - 56"
+      },
+      "en": {
+        "title": "Column sums on the gold ticket",
+        "goTo": "Go back to the rows of seats, where Clucking Hen keeps the gold tickets for the guests of honour",
+        "prompt": "The gold tickets are for guests of honour, and the sums are much longer. Write them in columns and work them out."
       }
     },
     {
@@ -1469,6 +1834,17 @@
         "answer": {
           "text": "83 bạn",
           "explanation": "Đội có tất cả: 47 + 36 = 83 (bạn)."
+        },
+        "en": {
+          "guide": [
+            "For the total, put the two groups together by adding.",
+            "Write 47 + 36 in columns, carrying 1 to the tens."
+          ],
+          "hint": "In the ones: 7 + 6 = 13, write 3 and carry 1 into the tens.",
+          "answer": {
+            "text": "83 children",
+            "explanation": "The band has altogether: 47 + 36 = 83 (children)."
+          }
         }
       },
       "feedback": {
@@ -1481,13 +1857,30 @@
           "Hàng đơn vị 7 + 6 vượt 10, nhớ thêm 1 chục nhé.",
           "Gộp cả khăn đỏ lẫn khăn vàng lại thì làm phép gì?",
           "Kết quả phải lớn hơn 47 chứ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eighty-three children wave together, as lovely as one giant flower.",
+            "You carried without forgetting to carry. Wonderful!",
+            "The band gives {name} a round of perfectly steady applause."
+          ],
+          "wrong": [
+            "In the ones, 7 + 6 goes over 10, so carry 1 more ten.",
+            "What sum do you do to put the red scarves and yellow scarves together?",
+            "The answer must be bigger than 47."
+          ]
+        }
       },
       "answer": {
         "value": 83
       },
       "objective": "cong-tru-co-nho-bai-toan",
-      "expression": "47 + 36"
+      "expression": "47 + 36",
+      "en": {
+        "title": "Drum and bugle band with red and yellow scarves",
+        "goTo": "Go to the door of the great hall, where Bum the Bear points at the brass band practising",
+        "question": "Outside the door, the brass band is practising a march, with red and yellow scarves brightening the whole yard. 47 children wear red scarves and 36 children wear yellow scarves. How many children are in the band altogether?"
+      }
     },
     {
       "id": "so-do-mui-ten-tong",
@@ -1611,6 +2004,17 @@
         "answer": {
           "text": "27 → + 15 → 42 → – 8 → 34; 51 → – 7 → 44 → + 28 → 72; Cộng các số hạng bằng nhau.; 26 + 26 + 26 = 78; 5 + 5 + 5 + 5 = 20",
           "explanation": "27 + 15 = 42; 27 + 15 – 8 = 34; 51 – 7 = 44; 51 – 7 + 28 = 72; 26 + 26 + 26 = 78; 5 + 5 + 5 + 5 = 20."
+        },
+        "en": {
+          "guide": [
+            "Work in order along the arrows.",
+            "Adding many equal numbers: add up gradually from left to right."
+          ],
+          "hint": "26 + 26 = 52, and then add another 26.",
+          "answer": {
+            "text": "27 → + 15 → 42 → – 8 → 34; 51 → – 7 → 44 → + 28 → 72; Adding equal numbers.; 26 + 26 + 26 = 78; 5 + 5 + 5 + 5 = 20",
+            "explanation": "27 + 15 = 42; 27 + 15 – 8 = 34; 51 – 7 = 44; 51 – 7 + 28 = 72; 26 + 26 + 26 = 78; 5 + 5 + 5 + 5 = 20."
+          }
         }
       },
       "feedback": {
@@ -1623,7 +2027,19 @@
           "Ô sau dùng kết quả của ô trước đấy.",
           "Đếm lại xem có mấy số 5 trong tổng nhé.",
           "26 + 26 + 26: cộng hai số đầu trước rồi cộng tiếp."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both chains of arrows reach the finish, and two gift boxes pop open!",
+            "You added each number in turn without missing one. Perfect!",
+            "Bum the Bear slaps his thigh: the great hall's door has turned into a maths board!"
+          ],
+          "wrong": [
+            "The next box uses the answer of the box before it.",
+            "Count again how many 5s there are in the total.",
+            "26 + 26 + 26: add the first two first and then add on."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1643,6 +2059,10 @@
         "b4": "51 - 7 + 28",
         "b5": "26 + 26 + 26",
         "b6": "5 + 5 + 5 + 5"
+      },
+      "en": {
+        "title": "Arrows and equal sums",
+        "prompt": "On the great hall's wooden door, Bum the Bear drew two chains of arrows and two additions with many numbers. Fill in the missing numbers. First chain: 27, + 15, _, – 8, _. Second chain: 51, – 7, _, + 28, _. Adding equal numbers: 26 + 26 + 26 = _ and 5 + 5 + 5 + 5 = _."
       }
     },
     {
@@ -1751,6 +2171,17 @@
         "answer": {
           "text": "5 | 6 | 7 | 8 | 9 | 10 | 11; 12 | 13 | 14 | 15 | 16 | 17 | 18; 19 | 20 | 21 | 22 | 23 | 24 | 25; 26 | 27 | 28 | 29 | 30 | 31 | 32; 33 | 34 | 35 | 36 | 37 | 38 | 39; a) Cộng ba số tròn chục có trong bảng. 60; b) Hai số nào trong bảng cộng lại bằng 11? 5 và 6; c) Chọn hai số trong bảng sao cho tổng của chúng lớn nhất. 38 và 39",
           "explanation": "10 + 20 + 30 = 60; 5 + 6 = 11 (hai số bé nhất trong bảng nên chỉ có cặp này); 38 + 39 là tổng lớn nhất vì đó là hai số lớn nhất."
+        },
+        "en": {
+          "guide": [
+            "A whole ten has a 0 in the ones place.",
+            "Write the smaller number first and the bigger number second."
+          ],
+          "hint": "The whole tens in the chart are 10, 20, 30.",
+          "answer": {
+            "text": "a) 60; b) 5 and 6; c) 38 and 39",
+            "explanation": "10 + 20 + 30 = 60; 5 + 6 = 11 (the two smallest numbers in the chart, so this is the only pair); 38 + 39 is the biggest total because they are the two biggest numbers."
+          }
         }
       },
       "feedback": {
@@ -1763,7 +2194,19 @@
           "Tìm các số có hàng đơn vị là 0 trong bảng nhé.",
           "Tổng 11 thì hai số phải rất bé, nhìn hàng đầu tiên xem.",
           "Hai số lớn nhất nằm ở cuối bảng đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The number chart answers smoothly, and the audience lines up neatly.",
+            "For the biggest total, take the two biggest numbers. You're so clever!",
+            "Three whole tens add up to exactly 6 tens, lovely."
+          ],
+          "wrong": [
+            "Look for numbers with 0 in the ones place on the chart.",
+            "For a total of 11 the two numbers must be very small, so look at the first row.",
+            "The two biggest numbers are at the end of the chart."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1777,6 +2220,11 @@
       "objective": "cong-tru-co-nho-cong",
       "expression": {
         "b1": "10 + 20 + 30"
+      },
+      "en": {
+        "title": "Number sign on the door",
+        "goTo": "Stop by the corner where the wooden platform is built, where Uncle Toàn is putting up a number chart",
+        "prompt": "A chart of numbers from 5 to 39 hangs by the door, which Uncle Toàn put up so the audience can queue. Use the chart: a) add the three whole tens in the chart; b) which two numbers in the chart add up to 11?; c) pick two numbers in the chart so that their total is the biggest."
       }
     },
     {
@@ -1795,6 +2243,17 @@
         "answer": {
           "text": "45 cm",
           "explanation": "Thanh gỗ còn lại dài: 84 – 39 = 45 (cm)."
+        },
+        "en": {
+          "guide": [
+            "If a piece is sawn off, what is left is shorter: do a subtraction.",
+            "Write 84 – 39 in columns, borrowing 1 ten from the tens."
+          ],
+          "hint": "14 – 9 = 5, then 8 – 4 = 4.",
+          "answer": {
+            "text": "45 cm",
+            "explanation": "The remaining plank is: 84 – 39 = 45 (cm)."
+          }
         }
       },
       "feedback": {
@@ -1807,13 +2266,29 @@
           "Đoạn đã cưa bỏ thì phải bớt ra chứ.",
           "Hàng đơn vị 4 không trừ được 9, mượn 1 chục nhé.",
           "Phần còn lại phải ngắn hơn 84 cm."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The wooden platform stands firm, and the child singer steps up and sings out loud!",
+            "Uncle Toàn sawed it right thanks to {name} working out each centimetre.",
+            "Subtracting with borrowing, as neat as a straight saw cut."
+          ],
+          "wrong": [
+            "The part that was sawn off has to be taken away.",
+            "In the ones, 4 can't take away 9, so borrow 1 ten.",
+            "What's left must be shorter than 84 cm."
+          ]
+        }
       },
       "answer": {
         "value": 45
       },
       "objective": "cong-tru-co-nho-bai-toan",
-      "expression": "84 - 39"
+      "expression": "84 - 39",
+      "en": {
+        "title": "Wooden plank for the stage",
+        "question": "Uncle Toàn saws away at the wood to build a platform for the child singers. His plank is 84 cm long, and he cuts off a piece 39 cm long. How many centimetres long is the plank now?"
+      }
     },
     {
       "id": "thap-so-san-khau",
@@ -1938,6 +2413,17 @@
         "answer": {
           "text": "Đỉnh tháp: 75; Hàng bốn: 35 | 40; Hàng ba: 16 | 19 | 21; Hàng hai: 7 | 9 | 10 | 11; Hàng dưới: 3 | 4 | 5 | 5 | 6",
           "explanation": "Hàng hai: 10, 11; hàng ba: 9 + 10 = 19, 10 + 11 = 21; hàng bốn: 19 + 21 = 40; đỉnh: 35 + 40 = 75."
+        },
+        "en": {
+          "guide": [
+            "Build from the bottom up: each brick equals the sum of the two bricks right below it.",
+            "Fill in the second row before going up to the third row."
+          ],
+          "hint": "Second row: 5 + 5 = 10 and 5 + 6 = 11.",
+          "answer": {
+            "text": "Top of the tower: 75; Fourth row: 35 | 40; Third row: 16 | 19 | 21; Second row: 7 | 9 | 10 | 11; Bottom row: 3 | 4 | 5 | 5 | 6",
+            "explanation": "Second row: 10, 11; third row: 9 + 10 = 19, 10 + 11 = 21; fourth row: 19 + 21 = 40; top: 35 + 40 = 75."
+          }
         }
       },
       "feedback": {
@@ -1950,7 +2436,19 @@
           "Một viên gạch chưa bằng tổng hai viên ngay dưới nó.",
           "Xây từ hàng dưới lên nhé, đừng vội lên đỉnh.",
           "Tháp hơi chao rồi, kiểm tra lại hàng ba xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The number tower stands tall, and the stage lights come on brightly!",
+            "Teacher Quang finally shouts out loud: WONDERFUL! The tower is still standing.",
+            "From the bottom row to the very top, not a single brick is wrong."
+          ],
+          "wrong": [
+            "A brick isn't equal to the sum of the two bricks right below it.",
+            "Build from the bottom row up, and don't rush to the top.",
+            "The tower is wobbling a bit, so check the third row."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1970,6 +2468,11 @@
         "b4": "10 + 11",
         "b5": "5 + 5",
         "b6": "5 + 6"
+      },
+      "en": {
+        "title": "Opening-curtain number tower",
+        "goTo": "Climb back onto the great hall stage, where Teacher Quang waits to build the opening tower",
+        "prompt": "The final act of the rehearsal: the whole castle stacks a tower of number bricks, each brick equal to the sum of the two bricks right below it. Teacher Quang holds his breath, afraid that saying one loud word will topple the tower. Fill in the missing numbers. Bottom row: 3, 4, 5, 5, 6. Second row: 7, 9, _, _. Third row: 16, _, _. Fourth row: 35, _. Top of the tower: _."
       }
     },
     {
@@ -2003,5 +2506,9 @@
       "phep-tru": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Seat Tickets for the Talent Show Rehearsal",
+    "summary": "At the end-of-term talent show rehearsal in the castle's great hall, every seat ticket has a sum printed on it. {name} helps Teacher Quang, Clucking Hen, Chubby Pig, Bum the Bear, Uncle Thuận, Uncle Toàn and Uncle Hùng with mental sums, column sums and building number towers before the curtain goes up."
   }
 }

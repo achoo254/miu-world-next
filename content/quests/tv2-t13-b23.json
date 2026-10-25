@@ -121,7 +121,11 @@
         "tv2-t13-manh-la-dau",
         "tv2-t13-manh-la-giua",
         "tv2-t13-manh-la-duoi"
-      ]
+      ],
+      "en": {
+        "title": "Three leaf scraps with the rules",
+        "goTo": "Search the bushes around the field for the three pieces of the rule leaf"
+      }
     },
     {
       "id": "khoi-dong",
@@ -182,6 +186,17 @@
         "answer": {
           "text": "Chạm ngón trỏ vào lòng bàn tay của bạn ngồi giữa.",
           "explanation": "Đoạn hai kể người xòe tay ngửa một bàn tay, còn các bạn khác ngồi vây quanh và mỗi người chạm một ngón trỏ vào lòng bàn tay ấy."
+        },
+        "en": {
+          "guide": [
+            "Look again at the paragraph about how to sit and touch fingers.",
+            "Find the sentence with the words “ngón trỏ”."
+          ],
+          "hint": "The hand-holder turns a palm up, and the other players each put in one finger.",
+          "answer": {
+            "text": "Touch an index finger (ngón trỏ) to the palm of the friend sitting in the middle.",
+            "explanation": "The second paragraph says the hand-holder turns up one palm, and the other players sit around and each touch an index finger to that palm."
+          }
         }
       },
       "feedback": {
@@ -194,9 +209,31 @@
           "Nắm tay thành vòng tròn là trò chơi khác rồi. Đọc lại đoạn hai nhé.",
           "Bịt mắt thì đâu còn thấy gì mà chơi. Tìm chữ “ngón trỏ” xem nào.",
           "Gần lắm rồi, người xòe tay ngửa bàn tay ra để làm gì nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! An index finger touches the palm, and the game starts at once.",
+            "Tũn the Fox sticks out an index finger to try: I get it, I get it!",
+            "{name} reads even faster than Tũn running away from the rain."
+          ],
+          "wrong": [
+            "Holding hands in a circle is another game. Read the second paragraph again.",
+            "With eyes covered you could not play at all. Find the words “ngón trỏ”.",
+            "Nearly there! What does the hand-holder turn the palm up for?"
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "The rules hung on the tree",
+        "goTo": "Follow Tũn the Fox to the tree where the rules hang, now that the leaf is pieced together",
+        "question": "While playing, where does each player put their finger?",
+        "choices": [
+          "Each player touches one index finger to the palm of the player holding out a hand.",
+          "The players hold hands and stand in a circle.",
+          "Each player covers the eyes of the player holding out a hand."
+        ]
+      }
     },
     {
       "id": "xin-thuoc",
@@ -233,6 +270,17 @@
         "answer": {
           "text": "Nắm bàn tay lại thật nhanh để giữ ngón trỏ.",
           "explanation": "Bài đọc nói đọc đến tiếng cuối, người xòe tay nắm bàn tay lại thật nhanh, hy vọng bắt được một ngón."
+        },
+        "en": {
+          "guide": [
+            "Read the last paragraph, about what happens after the rhyme.",
+            "What does the hand-holder do with the hand?"
+          ],
+          "hint": "The open palm has to close to catch an index finger.",
+          "answer": {
+            "text": "Close the hand very fast to catch an index finger.",
+            "explanation": "The text says that on the last word the hand-holder closes the hand very fast, hoping to catch a finger."
+          }
         }
       },
       "feedback": {
@@ -245,9 +293,31 @@
           "Xoa đầu và đứng dậy thì trò chơi đâu có người bị bắt. Thử lại nhé.",
           "Rút tay về ngồi xem thì ai chơi tiếp? Đọc lại đoạn cuối xem.",
           "Tìm câu có chữ “nắm bàn tay lại” trong bài xem nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! You have to close the hand fast to catch an index finger.",
+            "Tiny Rabbit nods: so that is why everybody must pull their hands back so quickly!",
+            "Well done! Uncle Bảy the Healer gives {name} a thumbs up."
+          ],
+          "wrong": [
+            "With patting heads and standing up, nobody is caught in the game. Try again.",
+            "If the hand pulled back and just watched, who would keep playing? Read the last paragraph again.",
+            "Find the words “nắm bàn tay lại” in the text."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "What the person with the open hand does",
+        "goTo": "Cross to the herb garden by the field, where Uncle Bảy the Healer is demonstrating the hand-holder",
+        "prompt": "Tiny Rabbit stands on tiptoe and asks: the group chants the rhyme, but what does the hand-holder actually do at the end? When the last word of the rhyme is heard, what does the hand-holder do?",
+        "choices": [
+          "pats each friend on the head and stands up",
+          "closes the hand very fast",
+          "pulls the hand back and sits watching"
+        ]
+      }
     },
     {
       "id": "bat-khuc-duoi",
@@ -284,6 +354,17 @@
         "answer": {
           "text": "Bạn có ngón bị giữ sẽ ngồi xòe tay ở lượt sau.",
           "explanation": "Luật nói ngón trỏ của ai bị giữ lại thì bạn ấy chuyển sang làm người xòe tay, và trò chơi cứ thế tiếp tục."
+        },
+        "en": {
+          "guide": [
+            "Read the last paragraph of the text.",
+            "Find the sentence that begins “Nếu ngón trỏ của ai”."
+          ],
+          "hint": "Being caught does not mean sitting out, but switching to another role.",
+          "answer": {
+            "text": "The friend whose finger is caught sits as the hand-holder in the next round.",
+            "explanation": "The rule says whoever's index finger is caught becomes the hand-holder, and the game carries on like that."
+          }
         }
       },
       "feedback": {
@@ -296,9 +377,31 @@
           "Trong trò này chẳng ai bị mời ra ngoài đâu, đọc lại đoạn cuối nhé.",
           "Đọc lại từ đầu thì mỏi miệng lắm! Tìm câu “Nếu ngón trỏ của ai…” xem.",
           "Ngón bị giữ thì đổi vai, nhưng đổi sang vai nào nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly! A caught finger means becoming the hand-holder, so nobody has to sit sadly.",
+            "Fluffy Lion thinks happily: then I will touch a finger, and if I am caught I get to hold out my hand!",
+            "You read carefully, every point of the rule is right."
+          ],
+          "wrong": [
+            "Nobody is sent out in this game, read the last paragraph again.",
+            "Chanting it all again would tire your mouth! Find the sentence “Nếu ngón trỏ của ai…”.",
+            "A caught finger swaps roles, but into which role?"
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "When a finger is caught",
+        "goTo": "Back to the tree where the rules hang, with two lines still unread",
+        "question": "If one friend's index finger is caught, what happens?",
+        "choices": [
+          "That friend has to sit out and watch until the end of the session.",
+          "The whole group must chant the rhyme again from the start.",
+          "That friend becomes the hand-holder in the next round."
+        ]
+      }
     },
     {
       "id": "dut-khuc-giua",
@@ -334,6 +437,17 @@
         "answer": {
           "text": "Người xòe tay ngồi lại và bắt đầu lượt mới.",
           "explanation": "Luật chơi nói nếu mọi ngón đều rút ra kịp thì người xòe tay làm lại lượt mới, không ai phải đổi vai."
+        },
+        "en": {
+          "guide": [
+            "Read the last sentence of the text.",
+            "Find the sentence with the words “rút ra kịp”."
+          ],
+          "hint": "If nobody is caught, the hand-holder is not changed yet.",
+          "answer": {
+            "text": "The hand-holder stays and starts a new round.",
+            "explanation": "The rule says if every finger is pulled out in time, the hand-holder starts a new round and nobody changes role."
+          }
         }
       },
       "feedback": {
@@ -346,9 +460,30 @@
           "Cả nhóm không thể cùng xòe tay một lúc được, trò chơi sẽ rối mất!",
           "Chơi mới được một lượt mà đã giải tán thì uổng quá. Đọc lại câu cuối nhé.",
           "Tìm câu bắt đầu bằng “Nếu mọi ngón” thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "By the rules! If nobody is caught, the hand-holder goes again, and Butter Rabbit breathes out in relief.",
+            "Butter Rabbit scribbles on his ear: pulled out in time means a new round, pulled out in time means a new round…",
+            "Brilliant, as clever as an owl, oh no, as clever as a fox!"
+          ],
+          "wrong": [
+            "The whole group cannot hold out hands at once, the game would be a muddle!",
+            "Breaking up after only one round would be a waste. Read the last sentence again.",
+            "Try finding the sentence that begins “Nếu mọi ngón”."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-tim-thong-tin"
+      "objective": "doc-van-ban-thong-tin-tim-thong-tin",
+      "en": {
+        "title": "When every finger pulls away in time",
+        "prompt": "Butter Rabbit perks up his ears and asks: I pull my hand back very fast, so what if everybody pulls back in time? If every index finger is pulled out in time, what happens?",
+        "choices": [
+          "The whole group becomes hand-holders.",
+          "The hand-holder starts a new round.",
+          "The game ends and everybody goes home."
+        ]
+      }
     },
     {
       "id": "noi-tiep-luat",
@@ -412,6 +547,17 @@
         "answer": {
           "text": "a – bạn bị giữ ngón làm người xòe tay lượt sau; b – người xòe tay làm lại lượt mới; c – nắm bàn tay lại; d – chạm ngón trỏ để chơi ván mới",
           "explanation": "Mỗi câu “Nếu… thì…” ghép điều kiện với kết quả, đúng như luật chơi trong bài đọc."
+        },
+        "en": {
+          "guide": [
+            "Read the last paragraph of the text again, about when to close the hand and when to pull fingers out.",
+            "Each “if… then…” sentence joins something that happens to what must be done."
+          ],
+          "hint": "When the last word is reached, the hand-holder must act very fast.",
+          "answer": {
+            "text": "a – the friend whose finger is caught becomes the hand-holder next round; b – the hand-holder starts a new round; c – close the hand; d – touch index fingers to play a new game",
+            "explanation": "Each “if… then…” sentence matches a condition with its result, exactly as the rules in the text say."
+          }
         }
       },
       "feedback": {
@@ -424,9 +570,26 @@
           "Có một nửa câu đi lạc thẻ rồi. Đọc to cả câu lên nghe thử xem.",
           "Người xòe tay nắm kịp một ngón thì có nghĩa là chuyện gì xảy ra với bạn ấy nhỉ?",
           "Lúc cả nhóm đọc đến tiếng cuối và lúc rút ngón kịp là hai chuyện khác nhau, xem lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four rule cards, good as new! Tũn the Fox toots a leaf trumpet.",
+            "Fluffy Lion says sorry for the sneeze, then praises {name} for matching as fast as lightning.",
+            "The rules are complete, and the game of chi chi chành chành is about to start for real!"
+          ],
+          "wrong": [
+            "One half-sentence has strayed to the wrong card. Read the whole sentence aloud and listen.",
+            "What happens to the friend when the hand-holder closes the hand in time on one finger?",
+            "When the group reaches the last word and when fingers are pulled out in time are two different things, look again."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-lam-theo"
+      "objective": "doc-van-ban-thong-tin-lam-theo",
+      "en": {
+        "title": "Four rule cards missing their second half",
+        "goTo": "Back to the open field, where the whole crowd sits around waiting",
+        "prompt": "Tũn the Fox copied the rules onto four cards. Fluffy Lion gave a huge sneeze and the second halves of the sentences flew everywhere! Drag each half-sentence back to its own card so each sentence makes sense."
+      }
     },
     {
       "id": "xep-buoc-choi",
@@ -477,6 +640,17 @@
         "answer": {
           "text": "Ngửa bàn tay, chạm ngón trỏ, đọc đồng dao, nắm tay ở tiếng cuối, rồi đổi người xòe tay.",
           "explanation": "Bản luật dặn chuẩn bị bàn tay và ngón trỏ trước, đọc đồng dao, đến tiếng cuối mới nắm tay; người bị giữ ngón làm người xòe tay lượt tiếp."
+        },
+        "en": {
+          "guide": [
+            "The rules tell the steps in order: who does what first, then what comes after.",
+            "Read from the start, underlining each thing the players must do."
+          ],
+          "hint": "The palm must be turned up first, so the friends have somewhere to touch their fingers.",
+          "answer": {
+            "text": "Turn up the palm, touch index fingers, chant the rhyme, close the hand at the last word, then swap the hand-holder.",
+            "explanation": "The rules say to prepare the palm and index fingers first, chant the rhyme, close the hand only at the last word; whoever is caught becomes the next hand-holder."
+          }
         }
       },
       "feedback": {
@@ -489,9 +663,33 @@
           "Hình như có bước bị đặt sớm quá. Ai chưa có bàn tay để chạm vào thì làm sao chạm?",
           "Lời đồng dao vang lên lúc nào nhỉ: trước hay sau khi các ngón trỏ đã vào chỗ?",
           "Việc đổi người xòe tay chỉ xảy ra khi lượt chơi đã kết thúc rồi đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Bouncy Calf nods: so you touch fingers first and then chant!",
+            "Five cards in a dead straight line, and Tũn the Fox wags his tail like mad.",
+            "Every step right, and the whole field is ready for the first round."
+          ],
+          "wrong": [
+            "One step seems to be too early. How can you touch a palm that is not there yet?",
+            "When does the rhyme ring out: before or after the index fingers are in place?",
+            "Swapping the hand-holder only happens once the round is over."
+          ]
+        }
       },
-      "objective": "doc-van-ban-thong-tin-lam-theo"
+      "objective": "doc-van-ban-thong-tin-lam-theo",
+      "en": {
+        "title": "The five steps of one round",
+        "goTo": "Out to the tree where the rules hang, where Bouncy Calf is on tiptoe reading the cards",
+        "prompt": "Bouncy Calf has just arrived and knows nothing about the game. The cards on the tree have been blown into a mess. Put the five steps of one round of chi chi chành chành in the order the rules give, to show him.",
+        "items": [
+          "The whole group chants the rhyme together",
+          "One friend sits down, turns up a palm and spreads the fingers",
+          "Whoever is caught becomes the hand-holder next round",
+          "The other friends touch index fingers to that palm",
+          "At the last word, the hand-holder closes the hand very fast"
+        ]
+      }
     },
     {
       "id": "tu-kho-cua-cao",
@@ -553,6 +751,17 @@
         "answer": {
           "text": "Bạn ngồi giữa xòe tay ra; cả nhóm cùng đọc lời đồng dao.",
           "explanation": "Người ngồi giữa mở rộng các ngón tay nên dùng từ “xòe”; lời hát có vần của trẻ em gọi là đồng dao."
+        },
+        "en": {
+          "guide": [
+            "Read the Words box at the end of the text again.",
+            "The friend sitting in the middle has to spread out the fingers."
+          ],
+          "hint": "Xòe means to spread the fingers wide; đồng dao is a children's chant.",
+          "answer": {
+            "text": "The friend in the middle xòe their hand; the whole group chants the đồng dao.",
+            "explanation": "The person in the middle spreads the fingers wide so “xòe” fits; a rhyming children's chant is called đồng dao."
+          }
         }
       },
       "feedback": {
@@ -565,10 +774,27 @@
           "Xoay là quay tròn, đâu phải mở các ngón tay ra.",
           "Đồng hồ thì chỉ giờ, đâu ai đọc đồng hồ có vần dễ thuộc.",
           "Nhớ ô Từ ngữ: xòe là mở rộng các ngón tay. Thử lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two hard words are home! Tũn the Fox has to find even harder words to quiz you.",
+            "Xòe, đồng dao… {name} says them more smoothly than Tũn.",
+            "Every word filled in right, and even the rule tree nods."
+          ],
+          "wrong": [
+            "Xoay means to turn round, not to spread the fingers.",
+            "Đồng hồ tells the time, and nobody chants a clock with easy rhymes.",
+            "Remember the Words box: xòe means to spread the fingers wide. Try again."
+          ]
+        }
       },
       "objective": "doc-van-ban-thong-tin-tim-thong-tin",
-      "goTo": "Về bãi đất trống, Cáo Tũn vẫy cậu lại khoe hai từ mới học"
+      "goTo": "Về bãi đất trống, Cáo Tũn vẫy cậu lại khoe hai từ mới học",
+      "en": {
+        "title": "Tũn the Fox's two hard words",
+        "goTo": "Back to the open field, where Tũn the Fox waves you over to show two new words",
+        "prompt": "Tũn the Fox boasts that he has just learned two hard words from the Words box: xòe means to spread the fingers wide, and đồng dao is a short rhyming children's chant. He challenges {name} to put each word in its right place in the sentence."
+      }
     },
     {
       "id": "cau-tro-choi",
@@ -766,6 +992,17 @@
         "answer": {
           "text": "Bi gấp thuyền → thuyền trôi tới miệng cống → Ếch Xanh đẩy thuyền vào bờ → hai bạn cùng thả thuyền",
           "explanation": "Câu chuyện đi theo thời gian: gấp thuyền, thuyền trôi xa, được Ếch Xanh giúp, rồi hai bạn cùng chơi."
+        },
+        "en": {
+          "guide": [
+            "The story begins when Bi folds the boat on the porch.",
+            "The boat floats away first, and only then does Green Frog come out to help."
+          ],
+          "hint": "The picture of the two friends sailing boats together is the end of the story.",
+          "answer": {
+            "text": "Bi folds the boat → the boat floats to the drain → Green Frog pushes the boat to the bank → the two friends sail boats together",
+            "explanation": "The story follows time: folding the boat, the boat drifting far, Green Frog helping, then the two friends playing."
+          }
         }
       },
       "feedback": {
@@ -778,9 +1015,31 @@
           "Bi phải gấp thuyền trước thì thuyền mới trôi đi được chứ.",
           "Ếch Xanh chỉ xuất hiện sau khi thuyền đã trôi xa đấy.",
           "Tranh hai bạn cùng thả thuyền là đoạn kết, để nó cuối hàng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four pictures in a line! Butter Rabbit promises to remember every story he hears from now on… he will try.",
+            "In the right order, and the story flows as gently as a little stream.",
+            "Butter Rabbit claps: {name} remembers a hundred times better than I do!"
+          ],
+          "wrong": [
+            "Bi has to fold the boat first before it can float away.",
+            "Green Frog only appears after the boat has floated far off.",
+            "The picture of the two friends sailing boats together is the end, put it last."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four pictures fallen out of order",
+        "prompt": "Butter Rabbit bounces about hugging the pictures and drops all four. Picked up again they are in a muddle, typical of Butter Rabbit. As he picks them up he tells the story: “When the rain stopped, Bi sat on the porch folding a blue paper boat. Bi set the boat on a little stream of water, and it floated on and on until it reached the drain, and Bi ran after it, very worried. Green Frog jumped out, used a leaf as a paddle and pushed the boat to the bank. To say thank you, Bi folded another boat for Frog, and the two friends sailed boats together.” Now {name}, put the pictures in the order of the story.",
+        "items": [
+          "Green Frog pushes the boat to the bank",
+          "Bi folds a paper boat on the porch",
+          "The two friends sail boats together",
+          "The boat floats to the drain"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-bup-be",
@@ -904,5 +1163,9 @@
       "tu-ngu": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "Tũn the Fox Forgets the Rules of Chi Chi Chành Chành",
+    "summary": "Tũn the Fox invites the whole forest to play chi chi chành chành, but forgets every rule, and the leaf with the rules is torn in three by the wind. {name} gathers the rules, reads how to play, asks Uncle Bảy the Healer, shows the game to Bouncy Calf, hands out roles to the whole crowd, then goes to Butter Rabbit's burrow to see the pictures of the paper boat story and tell it to Rice Grain Bear."
   }
 }

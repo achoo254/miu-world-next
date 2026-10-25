@@ -96,7 +96,11 @@
         "toan2-cd1-phong-bi-do",
         "toan2-cd1-phong-bi-xanh",
         "toan2-cd1-phong-bi-vang"
-      ]
+      ],
+      "en": {
+        "title": "Pick up the fallen envelopes",
+        "goTo": "Pick up the three envelopes that fell around the school gate"
+      }
     },
     {
       "id": "phong-bi-phep-tinh",
@@ -260,6 +264,17 @@
         "answer": {
           "text": "Bó cộng: 40 + 60 = 100, 80 + 20 = 100, 90 + 10 = 100. Bó trừ: 100 – 60 = 40, 100 – 80 = 20, 100 – 10 = 90.",
           "explanation": "Nghĩ theo chục: 4 + 6, 8 + 2, 9 + 1 đều bằng 10 chục, tức là 100; 10 chục bớt 6 chục còn 4 chục, bớt 8 chục còn 2 chục, bớt 1 chục còn 9 chục."
+        },
+        "en": {
+          "guide": [
+            "Turn a whole ten into a number of tens: 60 is 6 tens.",
+            "100 is 10 tens."
+          ],
+          "hint": "4 tens + 6 tens = 10 tens; 10 tens – 6 tens = 4 tens.",
+          "answer": {
+            "text": "Adding bundle: 40 + 60 = 100, 80 + 20 = 100, 90 + 10 = 100. Subtracting bundle: 100 – 60 = 40, 100 – 80 = 20, 100 – 10 = 90.",
+            "explanation": "Think in tens: 4 + 6, 8 + 2 and 9 + 1 all make 10 tens, which is 100; 10 tens take away 6 tens leaves 4 tens, take away 8 tens leaves 2 tens, and take away 1 ten leaves 9 tens."
+          }
         }
       },
       "feedback": {
@@ -272,7 +287,19 @@
           "Đổi ra chục rồi tính: 100 là 10 chục đấy.",
           "Có một phong bì còn nằm sai ô thư, nhẩm lại xem.",
           "10 chục bớt 1 chục còn mấy chục nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six envelopes find their right mail slots, and Inky Dog barks with joy!",
+            "You turned them into tens and worked them out in your head, quick as a hound sniffing out a trail.",
+            "If the postman saw you, he would surely ask you to be his assistant."
+          ],
+          "wrong": [
+            "Turn them into tens first: 100 is 10 tens.",
+            "One envelope is still in the wrong mail slot, so work it out again.",
+            "What is left when you take 1 ten away from 10 tens?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -292,7 +319,11 @@
         "b5": "100 - 80",
         "b6": "100 - 10"
       },
-      "objective": "cong-tru-khong-nho-tinh-nham"
+      "objective": "cong-tru-khong-nho-tinh-nham",
+      "en": {
+        "title": "Round-ten envelopes",
+        "prompt": "The first six envelopes carry sums with whole tens. Turn them into tens, work out the answers in your head and fill in each blank."
+      }
     },
     {
       "id": "dat-tinh-phong-bi",
@@ -383,6 +414,17 @@
         "answer": {
           "text": "26 + 3 = 29; 41 + 56 = 97; 87 – 5 = 82; 96 – 63 = 33",
           "explanation": "Đặt thẳng cột rồi tính: 6 + 3 = 9 nên được 29; 1 + 6 = 7 và 4 + 5 = 9 nên được 97; 7 – 5 = 2 nên được 82; 6 – 3 = 3 và 9 – 6 = 3 nên được 33."
+        },
+        "en": {
+          "guide": [
+            "Write a one-digit number in line with the units column.",
+            "Work from the units first, and only then the tens."
+          ],
+          "hint": "26 + 3: the number 3 goes under the 6, not under the 2.",
+          "answer": {
+            "text": "26 + 3 = 29; 41 + 56 = 97; 87 – 5 = 82; 96 – 63 = 33",
+            "explanation": "Set them out in columns and work: 6 + 3 = 9 makes 29; 1 + 6 = 7 and 4 + 5 = 9 make 97; 7 – 5 = 2 makes 82; 6 – 3 = 3 and 9 – 6 = 3 make 33."
+          }
         }
       },
       "feedback": {
@@ -395,7 +437,19 @@
           "Số 3 phải đứng thẳng hàng đơn vị với số 6 nhé.",
           "Trừ hàng đơn vị trước, rồi mới tới hàng chục.",
           "Một phong bì bị lệch số, xem lại phép trừ thứ nhất."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four sums in neat columns, and every envelope finds its owner.",
+            "Uncle Lộc stamps \"Worked out correctly\" with a loud thump.",
+            "You did adding and subtracting without carrying as if you were dancing."
+          ],
+          "wrong": [
+            "The number 3 must line up with the 6 in the units column.",
+            "Subtract the units first, and only then the tens.",
+            "One envelope has a number out of line, so check the first subtraction again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -411,7 +465,12 @@
         "b3": "87 - 5",
         "b4": "96 - 63"
       },
-      "objective": "cong-tru-khong-nho-dat-tinh"
+      "objective": "cong-tru-khong-nho-dat-tinh",
+      "en": {
+        "title": "Four envelopes to add in columns",
+        "goTo": "Go over to the security booth, where Uncle Lộc is keeping four thick envelopes",
+        "prompt": "Uncle Lộc hands over four envelopes with bigger numbers, which you can only work out by writing the numbers in columns. Set them out in columns and fill in the results."
+      }
     },
     {
       "id": "may-cung-ket-qua",
@@ -458,6 +517,17 @@
         "answer": {
           "text": "Ghép 50 + 30 với 30 + 50; 45 + 1 với 40 + 6; 70 – 20 với 90 – 40.",
           "explanation": "50 + 30 = 30 + 50 = 80; 45 + 1 = 40 + 6 = 46; 70 – 20 = 90 – 40 = 50."
+        },
+        "en": {
+          "guide": [
+            "Work out the answer for each cloud first.",
+            "Two clouds with the same answer go together."
+          ],
+          "hint": "90 – 40 = 50; find which cloud also equals 50.",
+          "answer": {
+            "text": "Match 50 + 30 with 30 + 50; 45 + 1 with 40 + 6; 70 – 20 with 90 – 40.",
+            "explanation": "50 + 30 = 30 + 50 = 80; 45 + 1 = 40 + 6 = 46; 70 – 20 = 90 – 40 = 50."
+          }
         }
       },
       "feedback": {
@@ -470,7 +540,19 @@
           "Tính ra kết quả của từng đám mây trước nhé.",
           "45 + 1 bằng bao nhiêu? Đám mây nào cũng bằng số đó?",
           "Có một cặp mây đang ghép nhầm bạn rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three pairs of clouds float hand in hand, and the balloon lands as smooth as silk.",
+            "Swap the addends and the sum stays the same, and you spotted it at once!",
+            "Mi's postcard becomes a picture of clouds in pairs."
+          ],
+          "wrong": [
+            "Work out the answer of each cloud first.",
+            "What is 45 + 1? Which other cloud equals that number?",
+            "One pair of clouds has been matched with the wrong friend."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -479,7 +561,16 @@
           "may-70-20": "nhom-90-40"
         }
       },
-      "objective": "cong-tru-khong-nho-tinh-nham"
+      "objective": "cong-tru-khong-nho-tinh-nham",
+      "en": {
+        "title": "Sky postcards",
+        "prompt": "In the bag is a postcard from Mi the Snow Fox: a hot-air balloon floats among six clouds, and each cloud carries a sum. Which two clouds give the same answer? Drag each cloud below to its friend cloud.",
+        "items": [
+          "50 + 30",
+          "45 + 1",
+          "70 – 20"
+        ]
+      }
     },
     {
       "id": "so-do-con-tem",
@@ -553,6 +644,17 @@
         "answer": {
           "text": "Qua ba trạm con tem lần lượt mang số 90, 40 rồi 64.",
           "explanation": "30 + 60 = 90; 90 – 50 = 40; 40 + 24 = 64."
+        },
+        "en": {
+          "guide": [
+            "Follow the arrows, doing just one sum each time.",
+            "The stamp carries the result of one station to the next."
+          ],
+          "hint": "30 + 60 = 90, then take 50 away from 90.",
+          "answer": {
+            "text": "Through the three stations the stamp carries 90, then 40, then 64.",
+            "explanation": "30 + 60 = 90; 90 – 50 = 40; 40 + 24 = 64."
+          }
         }
       },
       "feedback": {
@@ -565,7 +667,19 @@
           "Lấy kết quả ô trước để tính tiếp ô sau nhé.",
           "Mũi tên thứ hai là trừ 50 chứ không phải cộng đâu.",
           "Kiểm tra lại ô đầu: 30 cộng 60 là mấy?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The stamp reaches the finish at 64, right at every station!",
+            "With arrows linked this well, any post office would hire you.",
+            "Three stations, three sums, and not one station missed."
+          ],
+          "wrong": [
+            "Use the result of the box before to work out the next box.",
+            "The second arrow is minus 50, not plus.",
+            "Check the first box again: what is 30 plus 60?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -579,7 +693,12 @@
         "b2": "30 + 60 - 50",
         "b3": "30 + 60 - 50 + 24"
       },
-      "objective": "cong-tru-khong-nho-tinh-nham"
+      "objective": "cong-tru-khong-nho-tinh-nham",
+      "en": {
+        "title": "The stamp that goes around",
+        "goTo": "Go to the bicycle stand for the post, where postie Auntie Yến is checking the route for the stamp",
+        "prompt": "The stamp starts at 30 and travels through three post stations; at each station it adds or subtracts a number and passes on. Fill in the number at the end of each station."
+      }
     },
     {
       "id": "thuyen-cho-khach",
@@ -597,6 +716,17 @@
         "answer": {
           "text": "19 lá thư",
           "explanation": "14 + 5 = 19, trong giỏ có tất cả 19 lá thư."
+        },
+        "en": {
+          "guide": [
+            "Uncle Lộc adds more letters to the basket, so there are more: do an addition.",
+            "Add the number of letters at the start to the number of letters Uncle Lộc gave."
+          ],
+          "hint": "14 + 5.",
+          "answer": {
+            "text": "19 letters",
+            "explanation": "14 + 5 = 19, so there are 19 letters in the basket altogether."
+          }
         }
       },
       "feedback": {
@@ -609,13 +739,29 @@
           "Bác Lộc bỏ thêm thư thì giỏ nặng lên đấy.",
           "Cộng 14 với 5 thử xem.",
           "Đừng trừ nhé, có lá thư nào bị lấy ra đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The basket holds 19 letters, and Auntie Yến ties the string firmly!",
+            "Adding letters to the basket means adding, and you understood at once.",
+            "Auntie Yến pins the postcard on the handlebars: a spot-on solution!"
+          ],
+          "wrong": [
+            "When Uncle Lộc adds more letters, the basket gets heavier.",
+            "Try adding 14 and 5.",
+            "Don't subtract; no letter was taken out."
+          ]
+        }
       },
       "answer": {
         "value": 19
       },
       "expression": "14 + 5",
-      "objective": "cong-tru-khong-nho-bai-toan"
+      "objective": "cong-tru-khong-nho-bai-toan",
+      "en": {
+        "title": "The postal bicycle basket",
+        "question": "Mi's second postcard mentions the post bicycle. Auntie Yến puts 14 letters in the bicycle basket. Passing the security booth, Uncle Lộc adds 5 more. How many letters are in the basket altogether?"
+      }
     },
     {
       "id": "dung-sai-dat-tinh",
@@ -649,6 +795,17 @@
         "answer": {
           "text": "Phép đúng là b và c; phép a bị sai.",
           "explanation": "a) sai vì 24 + 5 = 29; b) 78 – 6 = 72 đúng; c) 95 – 41 = 54 đúng."
+        },
+        "en": {
+          "guide": [
+            "Set out each sum in columns yourself and compare it with the answer written.",
+            "Note that a one-digit number must line up with the units column."
+          ],
+          "hint": "24 + 5 giving 74 happens because the 5 was written in the tens column.",
+          "answer": {
+            "text": "The correct sums are b and c; sum a is wrong.",
+            "explanation": "a) is wrong because 24 + 5 = 29; b) 78 – 6 = 72 is correct; c) 95 – 41 = 54 is correct."
+          }
         }
       },
       "feedback": {
@@ -661,7 +818,19 @@
           "Thử tự tính lại 24 + 5 xem có ra 74 không.",
           "Còn một phép tính đúng chưa được chọn đấy.",
           "Đặt tính thẳng cột lại từng phép rồi hẵng chọn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Inky Dog's nose is sharp, and {name}'s eyes are even sharper!",
+            "You caught the sum written out of line, so well done.",
+            "The two correct envelopes are sent off, and the wrong one is corrected."
+          ],
+          "wrong": [
+            "Try working out 24 + 5 yourself and see whether you get 74.",
+            "There is still a correct sum you haven't chosen.",
+            "Set out each sum in columns again before you choose."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -669,7 +838,17 @@
           "c-95-41-54"
         ]
       },
-      "objective": "cong-tru-khong-nho-dat-tinh"
+      "objective": "cong-tru-khong-nho-dat-tinh",
+      "en": {
+        "title": "Whose envelope to work out?",
+        "goTo": "Run back to the school gate, where Inky Dog is sniffing three strange envelopes",
+        "prompt": "Someone has already written the answers on three envelopes, but Inky Dog sniffs that something is wrong. Choose the sums that were written correctly.",
+        "choices": [
+          "a) 24 + 5 = 74",
+          "b) 78 – 6 = 72",
+          "c) 95 – 41 = 54"
+        ]
+      }
     },
     {
       "id": "phong-bi-tinh-nhanh",
@@ -827,6 +1006,17 @@
         "answer": {
           "text": "30 + 5 = 35; 68 – 8 = 60; 4 + 50 = 54; 32 + 40 = 72; 86 – 80 = 6; 78 – 28 = 50; 40 + 27 – 34 = 33; 85 – 65 + 34 = 54",
           "explanation": "Sáu phép đầu chỉ đổi một hàng; phép có hai dấu tính từng bước: 40 + 27 = 67 rồi 67 – 34 = 33; 85 – 65 = 20 rồi 20 + 34 = 54."
+        },
+        "en": {
+          "guide": [
+            "When adding or subtracting whole tens, only the tens change.",
+            "A sum with two signs is worked out step by step from left to right."
+          ],
+          "hint": "40 + 27 = 67, then 67 – 34.",
+          "answer": {
+            "text": "30 + 5 = 35; 68 – 8 = 60; 4 + 50 = 54; 32 + 40 = 72; 86 – 80 = 6; 78 – 28 = 50; 40 + 27 – 34 = 33; 85 – 65 + 34 = 54",
+            "explanation": "The first six sums change only one place; a sum with two signs goes step by step: 40 + 27 = 67 then 67 – 34 = 33; 85 – 65 = 20 then 20 + 34 = 54."
+          }
         }
       },
       "feedback": {
@@ -839,7 +1029,19 @@
           "Phép tính có hai dấu thì làm từ trái sang phải nhé.",
           "86 bớt 80 chỉ còn ít thôi, tính lại xem.",
           "Cộng với số tròn chục thì hàng đơn vị giữ nguyên đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The mailbag is feather-light, and Inky Dog runs a lap to celebrate!",
+            "Working from left to right by the rules, you didn't slip anywhere.",
+            "Eight envelopes, eight answers, and the post is delivered like the wind."
+          ],
+          "wrong": [
+            "A sum with two signs is done from left to right.",
+            "86 take away 80 leaves only a little, so work it out again.",
+            "When you add a whole ten, the units stay the same."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -863,7 +1065,11 @@
         "b7": "40 + 27 - 34",
         "b8": "85 - 65 + 34"
       },
-      "objective": "cong-tru-khong-nho-dat-tinh"
+      "objective": "cong-tru-khong-nho-dat-tinh",
+      "en": {
+        "title": "The last pile of envelopes",
+        "prompt": "The last stack of envelopes is tied with a rubber band, and Inky Dog reads out each sum. The last two sums have two signs, so work from left to right. Fill in the results."
+      }
     },
     {
       "id": "o-du-bai-bien",
@@ -919,6 +1125,17 @@
         "answer": {
           "text": "Bé hơn 50: 23 + 24, 80 – 40, 65 – 30. Lớn hơn 50: 41 + 13, 20 + 50, 98 – 6.",
           "explanation": "Bé hơn 50: 23 + 24 = 47, 80 – 40 = 40, 65 – 30 = 35. Lớn hơn 50: 41 + 13 = 54, 20 + 50 = 70, 98 – 6 = 92."
+        },
+        "en": {
+          "guide": [
+            "Work out the answer for each kite, then compare it with 50.",
+            "No kite is exactly 50."
+          ],
+          "hint": "23 + 24 = 47, and 98 – 6 = 92.",
+          "answer": {
+            "text": "Less than 50: 23 + 24, 80 – 40, 65 – 30. Greater than 50: 41 + 13, 20 + 50, 98 – 6.",
+            "explanation": "Less than 50: 23 + 24 = 47, 80 – 40 = 40, 65 – 30 = 35. Greater than 50: 41 + 13 = 54, 20 + 50 = 70, 98 – 6 = 92."
+          }
         }
       },
       "feedback": {
@@ -931,7 +1148,19 @@
           "Tính kết quả của cánh diều trước rồi mới so với 50.",
           "41 + 13 lớn hơn hay bé hơn 50 nhỉ?",
           "Có một cánh diều đang bay lạc sang nhóm kia rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The field splits into two neat teams of kites, and Mi must be delighted!",
+            "Compared with 50 correctly for every kite, and even the wind has to praise you.",
+            "Small kites and big kites join the right groups, and the whole field cheers."
+          ],
+          "wrong": [
+            "Work out the kite's answer first, and then compare it with 50.",
+            "Is 41 + 13 greater or less than 50?",
+            "One kite has drifted off into the other group."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -943,7 +1172,20 @@
           "dieu-98-tru-6": "nhom-ket-qua-lon-hon-50"
         }
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Kite field postcards",
+        "goTo": "Go out to the almond tree, where Mint Cat is admiring the kite-field postcard",
+        "prompt": "The third postcard shows six kites flying over a grassy field, and each kite carries a sum. Which kites have an answer less than 50? Which kites have an answer greater than 50? Sort the six kites into the two groups.",
+        "items": [
+          "23 + 24",
+          "41 + 13",
+          "80 – 40",
+          "65 – 30",
+          "20 + 50",
+          "98 – 6"
+        ]
+      }
     },
     {
       "id": "chu-so-bi-nhoe",
@@ -1136,6 +1378,17 @@
         "answer": {
           "text": "Nhòe một chữ số: 24 + 53 = 77; 77 – 35 = 42; 76 + 13 = 89. Nhòe cả số: 20 + 70 = 90; 100 – 60 = 40; 50 + 30 = 80; 70 – 50 = 20.",
           "explanation": "24 + 53 = 77; 77 – 35 = 42; 76 + 13 = 89; 90 – 20 = 70; 100 – 40 = 60; 80 – 50 = 30; 70 – 20 = 50."
+        },
+        "en": {
+          "guide": [
+            "Think place by place: the units first, then the tens.",
+            "A missing addend in an addition equals the sum take away the addend you know."
+          ],
+          "hint": "First sum: 4 + 3 = 7, so the units digit of the sum is 7.",
+          "answer": {
+            "text": "One digit smudged: 24 + 53 = 77; 77 – 35 = 42; 76 + 13 = 89. Whole number smudged: 20 + 70 = 90; 100 – 60 = 40; 50 + 30 = 80; 70 – 50 = 20.",
+            "explanation": "24 + 53 = 77; 77 – 35 = 42; 76 + 13 = 89; 90 – 20 = 70; 100 – 40 = 60; 80 – 50 = 30; 70 – 20 = 50."
+          }
         }
       },
       "feedback": {
@@ -1148,7 +1401,19 @@
           "Thử điền rồi tính lại xem phép tính có đúng không.",
           "Hàng đơn vị: 7 trừ 5 còn mấy?",
           "Muốn tìm số hạng còn thiếu, lấy tổng trừ số hạng kia."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The smudged digits show clearly again, and the envelopes look as good as new!",
+            "You find missing numbers like a detective reading a secret letter.",
+            "Inky Dog barks three times in admiration: woof, woof, woof!"
+          ],
+          "wrong": [
+            "Try filling it in and work the sum again to see whether it is right.",
+            "In the units: what is left when you take 5 from 7?",
+            "To find a missing addend, take the other addend away from the sum."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1170,7 +1435,12 @@
         "b9": "50 + ? = 80",
         "b10": "70 - ? = 20"
       },
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "The smudged digit",
+        "goTo": "Back at the school gate, Inky Dog is pushing his nose into a wet envelope",
+        "prompt": "Rain smudged some digits on the envelopes, and Inky Dog has sniffed and sniffed without working them out. Help him read them again."
+      }
     },
     {
       "id": "trau-bo-bac-binh",
@@ -1189,6 +1459,17 @@
         "answer": {
           "text": "25 lá thư",
           "explanation": "46 – 21 = 25, có 25 lá thư gửi cho bác Lộc."
+        },
+        "en": {
+          "guide": [
+            "The whole pile is made of Dream Dairy Cow's letters and Uncle Lộc's letters.",
+            "Take Dream Dairy Cow's letters away from the whole pile to get Uncle Lộc's letters."
+          ],
+          "hint": "46 – 21.",
+          "answer": {
+            "text": "25 letters",
+            "explanation": "46 – 21 = 25, so 25 letters are for Uncle Lộc."
+          }
         }
       },
       "feedback": {
@@ -1201,13 +1482,30 @@
           "Cả chồng có 46 lá, trong đó 21 lá của Bò Sữa Mơ.",
           "Muốn tìm số thư của bác Lộc thì bớt số thư của Bò Sữa Mơ đi nhé.",
           "Hàng đơn vị: 6 bớt 1 còn mấy?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Twenty-five letters for Uncle Lộc! Mint Cat ties them into one bundle.",
+            "Taking out Dream Dairy Cow's share to find Uncle Lộc's share, how clever.",
+            "The pile of letters is sorted, and everybody gets the right share."
+          ],
+          "wrong": [
+            "The whole pile has 46 letters, and 21 of them are Dream Dairy Cow's.",
+            "To find Uncle Lộc's letters, take away Dream Dairy Cow's letters.",
+            "In the units: what is left when you take 1 from 6?"
+          ]
+        }
       },
       "answer": {
         "value": 25
       },
       "expression": "46 - 21",
-      "objective": "cong-tru-khong-nho-bai-toan"
+      "objective": "cong-tru-khong-nho-bai-toan",
+      "en": {
+        "title": "The unsorted pile of letters",
+        "goTo": "Go to the almond tree, where Mint Cat is hugging a thick pile of letters",
+        "question": "Mint Cat receives a pile of 46 letters. 21 of them are for Dream Dairy Cow, and the rest are for Uncle Lộc. How many letters are for Uncle Lộc?"
+      }
     },
     {
       "id": "bong-ghe-tham",
@@ -1290,6 +1588,17 @@
         "answer": {
           "text": "Quả ghi 6 + 70 và quả ghi 79 – 3 cùng cho 76.",
           "explanation": "6 + 70 = 76 và 79 – 3 = 76; còn 84 – 4 = 80."
+        },
+        "en": {
+          "guide": [
+            "Work out the answer for each orange.",
+            "Choose the two oranges whose answers are equal."
+          ],
+          "hint": "84 – 4 = 80; what are the other two?",
+          "answer": {
+            "text": "The oranges marked 6 + 70 and 79 – 3 both give 76.",
+            "explanation": "6 + 70 = 76 and 79 – 3 = 76; 84 – 4 = 80."
+          }
         }
       },
       "feedback": {
@@ -1302,7 +1611,19 @@
           "84 – 4 ra 80 thôi, đem so với hai quả kia xem.",
           "Phải chọn đủ hai quả có cùng kết quả nhé.",
           "Tính lại 79 – 3 thử nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two oranges with 76, and Mi rewards you with a segment of orange!",
+            "You chose the twins in the orange basket.",
+            "Super-quick mental sums, before the oranges could even roll."
+          ],
+          "wrong": [
+            "84 – 4 is just 80, so compare it with the other two.",
+            "You must choose both oranges that have the same answer.",
+            "Work out 79 – 3 again."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1310,7 +1631,16 @@
           "79-3"
         ]
       },
-      "objective": "cong-tru-khong-nho-tinh-nham"
+      "objective": "cong-tru-khong-nho-tinh-nham",
+      "en": {
+        "title": "Basket of oranges from far away",
+        "prompt": "There are three oranges in the basket, and each carries a sum. Which two give the same answer? Choose both.",
+        "choices": [
+          "84 – 4",
+          "6 + 70",
+          "79 – 3"
+        ]
+      }
     },
     {
       "id": "gio-tao-be-nhat",
@@ -1344,6 +1674,17 @@
         "answer": {
           "text": "Quả táo ghi 56 – 30 có kết quả bé nhất.",
           "explanation": "56 – 30 = 26 bé hơn 28 và 31."
+        },
+        "en": {
+          "guide": [
+            "Work out the answers of all three apples.",
+            "Compare the answers and choose the smallest number."
+          ],
+          "hint": "21 + 7 = 28, 41 – 10 = 31.",
+          "answer": {
+            "text": "The apple marked 56 – 30 has the smallest answer.",
+            "explanation": "56 – 30 = 26, which is less than 28 and 31."
+          }
         }
       },
       "feedback": {
@@ -1356,12 +1697,34 @@
           "Tính hết ba quả rồi hẵng so nhé.",
           "28, 26, 31: số nào bé nhất?",
           "Quả táo đó chưa phải bé nhất đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Apple 26 is the smallest, and Tò Te the Clown takes a crunchy bite to celebrate!",
+            "Three apples, one right choice, excellent.",
+            "You compared the answers as neatly as peeling an apple."
+          ],
+          "wrong": [
+            "Work out all three apples before comparing.",
+            "28, 26, 31: which number is the smallest?",
+            "That apple isn't the smallest."
+          ]
+        }
       },
       "answer": {
         "choice": "56-30"
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "The smallest apple",
+        "goTo": "Go over to the little stage, where Tò Te the Clown is juggling Mi's basket of apples",
+        "prompt": "The three apples in the basket also carry sums. Which apple has the smallest answer?",
+        "choices": [
+          "21 + 7",
+          "56 – 30",
+          "41 – 10"
+        ]
+      }
     },
     {
       "id": "rap-xiec-ghe-trong",
@@ -1379,6 +1742,17 @@
         "answer": {
           "text": "36 quả bóng bay",
           "explanation": "79 – 43 = 36, sân khấu còn lại 36 quả bóng bay."
+        },
+        "en": {
+          "guide": [
+            "The wind blowing some away leaves fewer: do a subtraction.",
+            "Take the number of balloons blown away by the wind from the number at the start."
+          ],
+          "hint": "79 – 43.",
+          "answer": {
+            "text": "36 balloons",
+            "explanation": "79 – 43 = 36, so 36 balloons are left on the stage."
+          }
         }
       },
       "feedback": {
@@ -1391,13 +1765,29 @@
           "Bóng bị gió thổi đi thì còn lại ít hơn, hãy làm phép trừ nhé.",
           "79 – 43: hàng đơn vị 9 – 3, hàng chục 7 – 4.",
           "Số bóng còn lại phải ít hơn số bóng ban đầu nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "36 balloons are left, and the stage is still bright with colour!",
+            "Tò Te the Clown tosses you a balloon as a reward.",
+            "Tò Te honks his horn: just as I counted!"
+          ],
+          "wrong": [
+            "When the wind blows balloons away, fewer are left, so do a subtraction.",
+            "79 – 43: 9 – 3 in the units and 7 – 4 in the tens.",
+            "The balloons left must be fewer than the balloons at the start."
+          ]
+        }
       },
       "answer": {
         "value": 36
       },
       "expression": "79 - 43",
-      "objective": "cong-tru-khong-nho-bai-toan"
+      "objective": "cong-tru-khong-nho-bai-toan",
+      "en": {
+        "title": "Tò Te's balloons",
+        "question": "Tò Te the Clown ties 79 balloons around the little stage. A gust of wind blows away 43 of them. How many balloons are left on the stage?"
+      }
     },
     {
       "id": "tem-tam-giac",
@@ -1437,6 +1827,17 @@
         "answer": {
           "text": "Số ở giữa tem xanh lá là 77.",
           "explanation": "Số ở giữa là tổng ba góc: 42 + 5 + 30 = 77."
+        },
+        "en": {
+          "guide": [
+            "Find the rule on the first two stamps.",
+            "The middle number equals the sum of the three corner numbers."
+          ],
+          "hint": "21 + 5 + 2 = 28. Do the same with the green stamp.",
+          "answer": {
+            "text": "The middle number of the green stamp is 77.",
+            "explanation": "The middle number is the sum of the three corners: 42 + 5 + 30 = 77."
+          }
         }
       },
       "feedback": {
@@ -1449,7 +1850,19 @@
           "Thử cộng ba số ở góc tem vàng xem có ra 28 không.",
           "Cộng lần lượt: 42 + 5 rồi cộng thêm 30.",
           "Quy luật ở đây là cộng, không phải trừ đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The gift box pops open: a tiny snow globe from Mi's home!",
+            "You found the rule of adding the three corners, a real explorer.",
+            "77! Both Inky Dog and Mi jump for joy."
+          ],
+          "wrong": [
+            "Try adding the three corner numbers of the yellow stamp to see whether you get 28.",
+            "Add in turn: 42 + 5, then add 30.",
+            "The rule here is adding, not subtracting."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1459,7 +1872,12 @@
       "expression": {
         "b1": "42 + 5 + 30"
       },
-      "objective": "cong-tru-khong-nho-dat-tinh"
+      "objective": "cong-tru-khong-nho-dat-tinh",
+      "en": {
+        "title": "The three-cornered stamp",
+        "goTo": "Back to the school mailbox, where Mi the Snow Fox is opening three triangle stamps",
+        "prompt": "Mi's last gift is three triangle stamps. Each stamp has three numbers at its corners and one number printed in the middle. The first two stamps are complete, so find the rule and fill in the middle number of the last stamp to open the gift box!"
+      }
     },
     {
       "id": "huy-hieu-buu-ta",
@@ -1492,5 +1910,9 @@
       "phep-tru": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Inky Dog's Mail Bag",
+    "summary": "Inky Dog delivers the post in a new way: the envelopes carry sums instead of the receiver's name, and there is a pile of postcards sent from far away by Mi the Snow Fox. {name} runs all around the school gate to help Inky Dog, Uncle Lộc and postie Auntie Yến with mental sums, column sums and smudged digits, so that no letter is delivered to the wrong place."
   }
 }

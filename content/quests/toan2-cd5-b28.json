@@ -94,7 +94,11 @@
         "toan2-cd5-dinh-treo-tranh",
         "toan2-cd5-thuoc-ke-dai",
         "toan2-cd5-khung-tranh-go"
-      ]
+      ],
+      "en": {
+        "title": "Pick up nails, rulers and picture frames",
+        "goTo": "Pick up the things Dangling Caterpillar dropped in the corner of the picture gallery"
+      }
     },
     {
       "id": "huou-nhac-bai",
@@ -174,6 +178,17 @@
         "answer": {
           "text": "Đúng: a, b, c. Sai: d.",
           "explanation": "Câu a, b, c đúng. Câu d sai vì W nằm ngoài đường thẳng ST, nên S, T, W không thẳng hàng."
+        },
+        "en": {
+          "guide": [
+            "Read each statement, then check it against what is in the painting.",
+            "Three points are in a row only when they all lie on one straight line."
+          ],
+          "hint": "Which point sits off to the side of the straight line ST?",
+          "answer": {
+            "text": "True: a, b, c. False: d.",
+            "explanation": "Statements a, b and c are true. Statement d is false because W is off the straight line ST, so S, T, W are not in a row."
+          }
         }
       },
       "feedback": {
@@ -186,7 +201,19 @@
           "Thử đặt thước dọc theo đường ST, điểm W có chạm vào thước không?",
           "Vẫn còn một câu đúng chưa được chọn, đọc lại cả bốn câu nhé.",
           "Điểm K nằm ngay trên đường thẳng ST, vậy câu c nói đúng hay sai?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "You caught statement d red-handed, and the first painting can hang the right way up!",
+            "Dangling Caterpillar twirls its thread for joy: three true, one false, and you chose without a hair out of place.",
+            "Point W stands alone off the straight line and you still spotted it."
+          ],
+          "wrong": [
+            "Try laying a ruler along line ST: does point W touch the ruler?",
+            "There is still a true statement you haven't chosen, so read all four again.",
+            "Point K lies right on the straight line ST, so is statement c true or false?"
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -195,7 +222,18 @@
           "c-ba-diem-s-t-k-thang-hang"
         ]
       },
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Dangling Caterpillar's four sentences",
+        "goTo": "Run back to the picture rail, where Dangling Caterpillar swings upside down reading out four statements",
+        "prompt": "The first painting in the gallery has line segment GH, a curve y, a straight line ST with a point K right on it, and a point W off to the side of the straight line ST. Dangling Caterpillar swings upside down on its thread and reads four statements about the painting. Choose every true statement; any you do not choose are false.",
+        "choices": [
+          "a) There is a line segment GH in the painting.",
+          "b) The stroke y is a curve.",
+          "c) S, T, K are three points in a row.",
+          "d) S, T, W are three points in a row."
+        ]
+      }
     },
     {
       "id": "doan-thang-mnp",
@@ -240,6 +278,17 @@
         "answer": {
           "text": "Ba đoạn: XY, YZ và XZ",
           "explanation": "Ba điểm X, Y, Z cho ba đoạn thẳng là XY, YZ và XZ. Các điểm T, K, B không có trong tranh."
+        },
+        "en": {
+          "guide": [
+            "Each line segment joins two of the three points X, Y, Z.",
+            "The segment joining the two outer ends counts too."
+          ],
+          "hint": "Besides the two short segments there is a long one running the whole length of the stroke.",
+          "answer": {
+            "text": "Three segments: XY, YZ and XZ",
+            "explanation": "The three points X, Y, Z give three line segments XY, YZ and XZ. The points T, K, B are not in the painting."
+          }
         }
       },
       "feedback": {
@@ -252,7 +301,19 @@
           "Tranh này chẳng có điểm T, K hay B nào cả.",
           "Chưa có đoạn nối thẳng hai đầu X và Z trong lựa chọn của cậu.",
           "Cứ lần lượt lấy hai điểm bất kì rồi xem chúng tạo thành đoạn nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three segments, even the long one running the whole stroke, and the second painting goes up on the wall!",
+            "You paired up the points without missing a pair, and Dangling Caterpillar loves it.",
+            "Dangling Caterpillar swings in a circle on its thread to praise your sharp eyes."
+          ],
+          "wrong": [
+            "This painting has no point T, K or B at all.",
+            "There is no segment joining the two ends X and Z in your choices yet.",
+            "Take any two points in turn and see which segment they make."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -261,7 +322,19 @@
           "xz"
         ]
       },
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Three points on one line",
+        "prompt": "The second painting has just one horizontal stroke, with three points on it: X at the left end, Y in the middle and Z at the right end. Choose the names of all the line segments in the painting.",
+        "choices": [
+          "XY",
+          "XT",
+          "YZ",
+          "YK",
+          "XZ",
+          "ZB"
+        ]
+      }
     },
     {
       "id": "dem-hinh-tu-giac",
@@ -318,6 +391,17 @@
         "answer": {
           "text": "Bức a: 3 hình; bức b: 1 hình.",
           "explanation": "Bức a có hai hình chữ nhật nhỏ và cả hình vuông lớn, tất cả 3 hình tứ giác. Bức b chỉ có 1 hình tứ giác, phần còn lại là hình tam giác."
+        },
+        "en": {
+          "guide": [
+            "A quadrilateral always has four sides joined in a closed loop.",
+            "A big shape made of smaller shapes counts too if it has four sides."
+          ],
+          "hint": "In painting a, the outer square is also a quadrilateral.",
+          "answer": {
+            "text": "Painting a: 3 shapes; painting b: 1 shape.",
+            "explanation": "Painting a has two small rectangles and the big square, 3 quadrilaterals in all. Painting b has only 1 quadrilateral, and the rest is a triangle."
+          }
         }
       },
       "feedback": {
@@ -330,7 +414,19 @@
           "Hình tam giác chỉ có ba cạnh, đừng tính vào số hình tứ giác nhé.",
           "Hình vuông lớn bao ngoài cũng có bốn cạnh, cậu đã đếm nó chưa?",
           "Đếm từng hình nhỏ trước, rồi kiểm tra xem hình lớn ghép lại có thành tứ giác không."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You didn't miss the big square around the outside, and Miss Hằng nods with satisfaction.",
+            "The little triangle was left out in just the right place, and the shape frame is the right way up.",
+            "Dangling Caterpillar whispers: I hang upside down and still admire how well you count."
+          ],
+          "wrong": [
+            "A triangle has only three sides, so don't count it among the quadrilaterals.",
+            "The big square around the outside has four sides too, have you counted it?",
+            "Count each small shape first, then check whether the big shape they make is a quadrilateral."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -338,7 +434,12 @@
           "b2": "o1"
         }
       },
-      "objective": "hinh-phang-tu-giac"
+      "objective": "hinh-phang-tu-giac",
+      "en": {
+        "title": "Count the quadrilaterals in the frame",
+        "goTo": "Stop by the coloured-paper cutting table, where Reed Flower Rabbit is hugging two frames",
+        "prompt": "Two more shape paintings: painting a is a square with a line segment joining the midpoint of the top side to the midpoint of the bottom side; painting b is a five-sided shape with a line segment joining two corners to split it into a triangle and a quadrilateral. Fill in how many quadrilaterals you count in each painting."
+      }
     },
     {
       "id": "tro-dung-thang-hang",
@@ -420,6 +521,17 @@
         "answer": {
           "text": "Nhóm Bông Lau, Mướp, Ốc Sên và nhóm Gà Con, Mướp, Vịt Bầu.",
           "explanation": "Thỏ Bông Lau, Mèo Mướp, Ốc Sên cùng nằm trên đường dọc; Gà Con, Mèo Mướp, Vịt Bầu cùng nằm trên hàng ngang. Hai nhóm còn lại không cùng nằm trên một đường thẳng nào."
+        },
+        "en": {
+          "guide": [
+            "Three friends are in a row when they all stand on one straight line.",
+            "Tabby Cat stands exactly where the two rows cross."
+          ],
+          "hint": "There are two groups in a row, and Tabby Cat is in both.",
+          "answer": {
+            "text": "The group Reed Flower Rabbit, Tabby Cat, Snail and the group Chick, Tabby Cat, Duckling.",
+            "explanation": "Reed Flower Rabbit, Tabby Cat and Snail all lie on the vertical line; Chick, Tabby Cat and Duckling all lie on the horizontal row. The other two groups do not lie on any one straight line."
+          }
         }
       },
       "feedback": {
@@ -432,7 +544,19 @@
           "Nhóm cậu chọn có đủ ba bạn nằm trên cùng một đường thẳng chưa?",
           "Còn một nhóm nữa có Mèo Mướp đứng chung, tìm thêm nhé.",
           "Thỏ Bông Lau và Vịt Bầu không nằm chung hàng nào cả."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two groups as straight as two taut strings, and Miss Hằng praises you non-stop!",
+            "Tabby Cat stands where the two rows cross, and you saw it at once.",
+            "Dangling Caterpillar holds the ruler for Miss Hằng, and now everyone is standing in the right place."
+          ],
+          "wrong": [
+            "Does the group you chose have all three friends on one straight line?",
+            "There is one more group with Tabby Cat in it, so look for it.",
+            "Reed Flower Rabbit and Duckling do not share any row."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -440,7 +564,17 @@
           "ga-muop-vit"
         ]
       },
-      "objective": "hinh-phang-nhan-dien"
+      "objective": "hinh-phang-nhan-dien",
+      "en": {
+        "title": "Which three friends are in a line?",
+        "prompt": "On the squared playground, Reed Flower Rabbit, Tabby Cat and Snail stand on one vertical line; Chick, Tabby Cat and Duckling stand on one horizontal row. Choose every group of three friends standing in a row.",
+        "choices": [
+          "Reed Flower Rabbit, Tabby Cat, Snail",
+          "Reed Flower Rabbit, Chick, Duckling",
+          "Chick, Tabby Cat, Duckling",
+          "Snail, Tabby Cat, Duckling"
+        ]
+      }
     },
     {
       "id": "duong-oc-sen-bo",
@@ -486,6 +620,17 @@
         "answer": {
           "text": "Cổng lâu đài, giếng nước, vườn hồng, rồi phòng tranh.",
           "explanation": "Lối ốc sên bò là một đường gấp khúc gồm ba đoạn: cổng lâu đài tới giếng nước, giếng nước tới vườn hồng, vườn hồng tới phòng tranh."
+        },
+        "en": {
+          "guide": [
+            "Go in turn: castle gate, well, rose garden, picture gallery.",
+            "Each stage is a line segment joining two neighbouring places."
+          ],
+          "hint": "The snail does not take a shortcut from the gate straight to the picture gallery but stops at two places on the way.",
+          "answer": {
+            "text": "Castle gate, well, rose garden, then picture gallery.",
+            "explanation": "The snail's path is a broken line of three segments: castle gate to well, well to rose garden, rose garden to picture gallery."
+          }
         }
       },
       "feedback": {
@@ -498,7 +643,19 @@
           "Ốc sên ghé giếng nước trước, rồi mới tới vườn hồng.",
           "Nối thẳng cổng với phòng tranh là bỏ qua hai chặng đường rồi.",
           "Mỗi nét chỉ nối hai nơi đứng cạnh nhau trên lối đi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three segments joined one after another make a broken line, and the snail crawls along it at its leisure.",
+            "The snail waggles its two feelers: that's the way I went!",
+            "The strokes join up neatly and the snail painting is done."
+          ],
+          "wrong": [
+            "The snail stops at the well first and only then reaches the rose garden.",
+            "Joining the gate straight to the picture gallery skips two stages of the way.",
+            "Each stroke joins only two places that are next to each other on the path."
+          ]
+        }
       },
       "answer": {
         "edges": [
@@ -516,7 +673,12 @@
           ]
         ]
       },
-      "objective": "hinh-phang-gap-khuc"
+      "objective": "hinh-phang-gap-khuc",
+      "en": {
+        "title": "Draw the snail's path",
+        "goTo": "Go to the picture-room window sill, where Tabby Cat has just finished drawing a snail",
+        "prompt": "Tabby Cat adds a tiny snail to the corner of the painting. It crawls from the castle gate to the well, turns to the rose garden and then goes into the picture gallery. Join the points in the order the snail crawled."
+      }
     },
     {
       "id": "quang-duong-oc-sen",
@@ -534,6 +696,17 @@
         "answer": {
           "text": "90 cm",
           "explanation": "Cả quãng đường ốc sên bò dài 30 + 20 + 40 = 90 (cm)."
+        },
+        "en": {
+          "guide": [
+            "The snail's path is a broken line of three segments.",
+            "To find how long the whole path is, add the lengths of the three segments."
+          ],
+          "hint": "The sum you need is 30 + 20 + 40.",
+          "answer": {
+            "text": "90 cm",
+            "explanation": "The snail's whole path is 30 + 20 + 40 = 90 (cm) long."
+          }
         }
       },
       "feedback": {
@@ -546,13 +719,29 @@
           "Phải cộng cả ba chặng, đừng bỏ chặng nào.",
           "Thử cộng 30 với 20 trước, rồi cộng tiếp 40.",
           "Chặng vào phòng tranh dài 40 cm, cậu đã cộng vào chưa?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ninety centimetres, and the snail's feelers were tired out by the time it arrived!",
+            "You added the three stages neatly, and Tabby Cat dips its tail in paint and writes the number on the frame.",
+            "Dangling Caterpillar swings a circle on its thread and cries: I got that number too!"
+          ],
+          "wrong": [
+            "You have to add all three stages, don't leave any out.",
+            "Try adding 30 and 20 first, then add 40 more.",
+            "The stage into the picture gallery is 40 cm long, have you added it in?"
+          ]
+        }
       },
       "answer": {
         "value": 90
       },
       "objective": "hinh-phang-gap-khuc",
-      "expression": "30 + 20 + 40"
+      "expression": "30 + 20 + 40",
+      "en": {
+        "title": "How far does the snail crawl?",
+        "question": "Tabby Cat writes down the length of each stage: castle gate to well 30 cm, well to rose garden 20 cm, rose garden to picture gallery 40 cm. How many centimetres long is the snail's whole path? (Write the number.)"
+      }
     },
     {
       "id": "huy-hieu-phong-tranh",
@@ -584,5 +773,9 @@
       "hinh-phang": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Dangling Caterpillar's Upside-Down Gallery",
+    "summary": "Dangling Caterpillar hangs from a silk thread, swinging upside down on a beam in the castle's picture gallery, and every painting looks the right way up to it, so every painting gets hung upside down. {name} joins Miss Hằng, who teaches drawing, Reed Flower Rabbit and Tabby Cat to examine each painting for line segments, straight lines, quadrilaterals, three friends in a row, and to measure the snail's path."
   }
 }

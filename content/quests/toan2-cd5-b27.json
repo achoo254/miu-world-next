@@ -94,7 +94,11 @@
         "toan2-cd5-giay-mau",
         "toan2-cd5-keo-nho",
         "toan2-cd5-lo-ho-dan"
-      ]
+      ],
+      "en": {
+        "title": "Gather craft supplies",
+        "goTo": "Find the coloured paper, the small scissors and the pot of glue around the craft table"
+      }
     },
     {
       "id": "meo-mun-chi-cach",
@@ -260,6 +264,17 @@
         "answer": {
           "text": "Mảnh 1 và mảnh 2",
           "explanation": "Mảnh 2 (hình thang) làm phần dưới, mảnh 1 (tam giác đáy 3 ô, cao 2 ô) đặt lên trên là được tam giác đáy 9 ô, cao 6 ô."
+        },
+        "en": {
+          "guide": [
+            "Put the trapezium down as the base of the big triangle.",
+            "The missing piece must fit the peak on top exactly."
+          ],
+          "hint": "The trapezium has a bottom side of 9 squares and a top side of 3 squares; the missing peak is a triangle with a base of 3 squares.",
+          "answer": {
+            "text": "Piece 1 and piece 2",
+            "explanation": "Piece 2 (the trapezium) makes the lower part, and piece 1 (a triangle with a base of 3 squares and a height of 2 squares) goes on top to make a triangle with a base of 9 squares and a height of 6 squares."
+          }
         }
       },
       "feedback": {
@@ -272,7 +287,19 @@
           "Mảnh hẹp mà cao kia có vừa với phần chóp không nhỉ?",
           "Thử đặt hình thang xuống phía dưới trước xem.",
           "Phần chóp còn thiếu có đáy 3 ô, cao 2 ô đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A snug fit without a single gap, and the big triangle appears on the card!",
+            "The trapezium as the body and the small triangle as the peak, exactly right.",
+            "Đậu sticks it down at once, not a square out of place."
+          ],
+          "wrong": [
+            "Does that narrow tall piece fit the peak, do you think?",
+            "Try putting the trapezium at the bottom first.",
+            "The missing peak has a base of 3 squares and a height of 2 squares."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -282,7 +309,17 @@
         }
       },
       "goTo": "Về bàn thủ công, Hổ Con Đậu đã trải sẵn mặt thiệp chờ dán",
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Two big triangle pieces",
+        "goTo": "Back at the craft table, where Bean Tiger Cub has laid out the front of the card, ready for sticking",
+        "prompt": "Đậu wants to stick a big triangle (base 9 squares, height 6 squares) onto the front of the card. Of the three pieces on the left, which two fit together exactly to make the big triangle? Put the two pieces that fit into one group and leave the other piece apart.",
+        "items": [
+          "Piece 1",
+          "Piece 2",
+          "Piece 3"
+        ]
+      }
     },
     {
       "id": "ghep-thanh-hinh-vuong",
@@ -369,6 +406,17 @@
         "answer": {
           "text": "Mảnh 1 và mảnh 3",
           "explanation": "Mảnh 1 (hình thang cạnh trên 5 ô, cạnh dưới 8 ô) ghép với mảnh 3 (tam giác vuông có hai cạnh góc vuông 3 ô và 8 ô) thành hình vuông 8 × 8 ô."
+        },
+        "en": {
+          "guide": [
+            "The right-angled trapezium already fills most of the square.",
+            "Look for the triangle that fits the empty corner exactly."
+          ],
+          "hint": "The empty part is a triangle whose two short sides at the right angle are 3 squares and 8 squares long.",
+          "answer": {
+            "text": "Piece 1 and piece 3",
+            "explanation": "Piece 1 (a trapezium with a top side of 5 squares and a bottom side of 8 squares) fits with piece 3 (a right-angled triangle whose two sides at the right angle are 3 squares and 8 squares) to make a square of 8 × 8 squares."
+          }
         }
       },
       "feedback": {
@@ -381,7 +429,19 @@
           "Mảnh tam giác chỉ rộng 2 ô thì nhỏ quá, phần trống rộng 3 ô cơ.",
           "Đo phần góc còn trống của hình vuông rồi chọn mảnh vừa.",
           "Hình thang vuông chắc chắn phải có mặt, tìm mảnh đi cùng nó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Square as a sticky rice cake, and the back of the card looks lovely!",
+            "The two pieces slot together without a single gap.",
+            "Cloud Rabbit gives a thumbs up: you fit shapes with sharp eyes."
+          ],
+          "wrong": [
+            "A triangle only 2 squares wide is too small, the empty part is 3 squares wide.",
+            "Measure the empty corner of the square, then choose the piece that fits.",
+            "The right-angled trapezium must be there, so find the piece that goes with it."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -391,7 +451,17 @@
         }
       },
       "goTo": "Ra góc ghép hình, Thỏ Mây xếp các mảnh hình thành một hàng dài",
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Two square pieces",
+        "goTo": "Go to the shape-fitting corner, where Cloud Rabbit lines the pieces up in one long row",
+        "prompt": "The back of the card needs a square of 8 × 8 squares. Of the three pieces on the left, which two fit together to make that square? Put the two pieces that fit into one group and leave the other piece apart.",
+        "items": [
+          "Piece 1",
+          "Piece 2",
+          "Piece 3"
+        ]
+      }
     },
     {
       "id": "ke-hay-do-truoc",
@@ -511,6 +581,17 @@
         "answer": {
           "text": "EQ dài 8 cm (Q là F); GT dài 11 cm (T là H)",
           "explanation": "Nối E với Q được đoạn dài 8 cm (Q chính là điểm F); nối G với T được đoạn dài 11 cm (T chính là điểm H)."
+        },
+        "en": {
+          "guide": [
+            "Segment EF must be exactly 8 cm long, and segment GH exactly 11 cm long.",
+            "Draw a trial stroke and see what length the magic ruler shows."
+          ],
+          "hint": "The dot exactly 8 cm from E is the middle one of the three dots P, Q, R.",
+          "answer": {
+            "text": "EQ is 8 cm long (Q is F); GT is 11 cm long (T is H)",
+            "explanation": "Joining E to Q gives a segment 8 cm long (Q is the point F); joining G to T gives a segment 11 cm long (T is the point H)."
+          }
         }
       },
       "feedback": {
@@ -523,7 +604,19 @@
           "Thước thần đang hiện số đo khác 8 cm, thử chấm chấm khác nhé.",
           "Đoạn GH cần dài 11 cm, xem lại nét dưới.",
           "Xóa nét vừa kẻ rồi nối sang chấm bên cạnh thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both border strokes are exactly the right number of centimetres, and the card looks grand!",
+            "The magic ruler goes ting ting: 8 cm and 11 cm, just right.",
+            "Đậu draws along with you and his claws don't shake any more."
+          ],
+          "wrong": [
+            "The magic ruler is showing a length other than 8 cm, so try another dot.",
+            "Segment GH needs to be 11 cm long, look at the lower stroke again.",
+            "Erase the stroke you just drew and try joining to the dot next to it."
+          ]
+        }
       },
       "answer": {
         "edges": [
@@ -537,7 +630,11 @@
           ]
         ]
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Draw the card border to the right length",
+        "prompt": "Draw two line segments as the card's border: EF must be 8 cm long and GH must be 11 cm long. Touch point E and then touch one of the dots P, Q, R; touch point G and then touch one of the dots S, T, U. The magic ruler shows the length of each stroke you draw; erase any wrong stroke and draw it again."
+      }
     },
     {
       "id": "thuoc-than-do-que",
@@ -595,6 +692,17 @@
         "answer": {
           "text": "ST, UV, XY",
           "explanation": "Ba que là ba đoạn thẳng ST, UV, XY; thước thần hiện độ dài của chúng."
+        },
+        "en": {
+          "guide": [
+            "Draw exactly three sticks: S to T, U to V, X to Y.",
+            "Look at the length the magic ruler shows on each stroke."
+          ],
+          "hint": "Stick XY stands upright, joining X at the top to Y at the bottom.",
+          "answer": {
+            "text": "ST, UV, XY",
+            "explanation": "The three sticks are the three line segments ST, UV, XY; the magic ruler shows their lengths."
+          }
         }
       },
       "feedback": {
@@ -607,7 +715,19 @@
           "Mỗi que nối hai điểm có chữ cái đi cặp với nhau, như S với T.",
           "Đừng nối chéo sang que khác nhé.",
           "Còn một que chưa được đo kìa."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three sticks show their lengths brightly, quick as a flash!",
+            "The upright stick XY didn't trouble you either.",
+            "Cloud Rabbit copies the lengths into his notebook in round writing."
+          ],
+          "wrong": [
+            "Each stick joins two points whose letters go together, like S with T.",
+            "Don't join across to another stick.",
+            "One stick has not been measured yet."
+          ]
+        }
       },
       "answer": {
         "edges": [
@@ -626,7 +746,12 @@
         ]
       },
       "goTo": "Ôm que sang góc ghép hình, Thỏ Mây đã bày sẵn ba que trang trí",
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "The magic ruler measures sticks",
+        "goTo": "Carry the sticks over to the shape-fitting corner, where Cloud Rabbit has laid out three decorating sticks",
+        "prompt": "Three decorating sticks ST, UV, XY lie on the table. Draw over each stick with the magic ruler so the ruler shows its length."
+      }
     },
     {
       "id": "ghi-so-do-que",
@@ -699,6 +824,17 @@
         "answer": {
           "text": "ST: 6 cm; UV: 10 cm; XY: 5 cm",
           "explanation": "ST dài 6 cm, UV dài 10 cm, XY dài 5 cm."
+        },
+        "en": {
+          "guide": [
+            "Write exactly the length the magic ruler just showed on each stick.",
+            "Lengths are measured in centimetres."
+          ],
+          "hint": "Stick UV is the longest and stick XY is the shortest.",
+          "answer": {
+            "text": "Answers: ST: 6 cm; UV: 10 cm; XY: 5 cm",
+            "explanation": "ST is 6 cm long, UV is 10 cm long, XY is 5 cm long."
+          }
         }
       },
       "feedback": {
@@ -711,7 +847,19 @@
           "Que đứng dọc XY ngắn hơn hai que còn lại.",
           "Nhìn lại số thước thần hiện trên que UV xem.",
           "Một số đo đang bị đổi chỗ sang que khác rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three numbers written neatly, and Đậu sticks the sticks onto the card at once!",
+            "You read the magic ruler without one wrong number.",
+            "Cloud Rabbit's notebook has three more lovely lines."
+          ],
+          "wrong": [
+            "The upright stick XY is shorter than the other two.",
+            "Look again at the length the magic ruler showed on stick UV.",
+            "One length has been swapped over to another stick."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -721,7 +869,12 @@
         }
       },
       "goTo": "Quay về bàn thủ công, Hổ Con Đậu kẹp thước thần giữa hai chân trước chờ đọc số",
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Write the lengths of three sticks",
+        "goTo": "Back at the craft table, where Bean Tiger Cub holds the magic ruler between his front paws, ready to read it",
+        "prompt": "Đậu reads the lengths on the magic ruler and writes them down for each stick."
+      }
     },
     {
       "id": "que-trang-tri-ngan-dai",
@@ -837,6 +990,17 @@
         "answer": {
           "text": "Que xanh, que cam, que tím, que đỏ, que vàng",
           "explanation": "Số đo các que: xanh 4 cm, cam 6 cm, tím 9 cm, đỏ 11 cm, vàng 13 cm; xếp từ ngắn đến dài được xanh, cam, tím, đỏ, vàng."
+        },
+        "en": {
+          "guide": [
+            "Read the length written on each stick.",
+            "The stick with the smallest length goes first in the row."
+          ],
+          "hint": "The blue stick is the shortest and the yellow stick is the longest.",
+          "answer": {
+            "text": "Blue stick, orange stick, purple stick, red stick, yellow stick",
+            "explanation": "The lengths of the sticks: blue 4 cm, orange 6 cm, purple 9 cm, red 11 cm, yellow 13 cm; from shortest to longest that is blue, orange, purple, red, yellow."
+          }
         }
       },
       "feedback": {
@@ -849,7 +1013,19 @@
           "Que 9 cm và que 11 cm, que nào ngắn hơn nhỉ?",
           "Que dài nhất phải nằm ở cuối hàng nhé.",
           "So từng cặp số đo một rồi đổi chỗ cho đúng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You finished a beat ahead of Đậu, you win!",
+            "Five sticks in a straight row from shortest to longest, as pretty as a staircase.",
+            "Đậu loses but grins: next time I'll practise more."
+          ],
+          "wrong": [
+            "The 9 cm stick and the 11 cm stick, which one is shorter?",
+            "The longest stick must go at the end of the row.",
+            "Compare the lengths pair by pair and swap places until it is right."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -860,7 +1036,18 @@
           "que-vang"
         ]
       },
-      "objective": "hinh-phang-ve-xep"
+      "objective": "hinh-phang-ve-xep",
+      "en": {
+        "title": "Sort sticks from shortest to longest",
+        "prompt": "Đậu challenges {name}: I've cut five coloured decorating sticks, and whoever lines them up fastest from shortest to longest wins! Put the five sticks in order from shortest to longest.",
+        "items": [
+          "Red stick",
+          "Orange stick",
+          "Yellow stick",
+          "Blue stick",
+          "Purple stick"
+        ]
+      }
     },
     {
       "id": "phieu-ve-va-do",
@@ -923,5 +1110,9 @@
     "skillXp": {
       "hinh-phang": 2
     }
+  },
+  "en": {
+    "title": "Bean Tiger Cub's Thank-You Card",
+    "summary": "Bean Tiger Cub wants to fold a thank-you card for Miss Hằng, who teaches drawing, but his claws are so big that the paper keeps going crooked. {name} learns folding and cutting with Button Bear and fitting shapes with Cloud Rabbit, draws the border with Uncle Thìn's magic ruler, measures the decorating sticks, then takes a sheet home to do some real folding and cutting."
   }
 }

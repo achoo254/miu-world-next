@@ -41,12 +41,24 @@
       "kind": "dialogue",
       "target": "trum-kr-tho-ken-la",
       "lines": [
-        { "speaker": "Thỏ Kèn Lá", "text": "{name} ơi, Thần Rừng Tinh Nghịch vừa móc chiếc chuông gió của hội rừng lên bộ gạc rồi chạy tót vào khoảng rừng trăng!" },
-        { "speaker": "Thỏ Kèn Lá", "text": "Ngài bảo chỉ trả chuông cho ai mang quà tới mời và thắng trận đố vui của ngài. Không có chuông, tối nay muông thú chẳng biết lúc nào khai hội." }
+        {
+          "speaker": "Thỏ Kèn Lá",
+          "text": "{name} ơi, Thần Rừng Tinh Nghịch vừa móc chiếc chuông gió của hội rừng lên bộ gạc rồi chạy tót vào khoảng rừng trăng!"
+        },
+        {
+          "speaker": "Thỏ Kèn Lá",
+          "text": "Ngài bảo chỉ trả chuông cho ai mang quà tới mời và thắng trận đố vui của ngài. Không có chuông, tối nay muông thú chẳng biết lúc nào khai hội."
+        }
       ],
       "choices": [
-        { "text": "Để tớ mang chuông gió về!", "reply": "Hay quá! Ngài mê quà của rừng lắm, cậu ra bãi cỏ dưới tán dẻ tìm thử nhé." },
-        { "text": "Thần Rừng có đáng sợ không?", "reply": "Không đâu, ngài chỉ ham đố vui thôi. Cứ ra bãi cỏ dưới tán dẻ tìm quà trước đã." }
+        {
+          "text": "Để tớ mang chuông gió về!",
+          "reply": "Hay quá! Ngài mê quà của rừng lắm, cậu ra bãi cỏ dưới tán dẻ tìm thử nhé."
+        },
+        {
+          "text": "Thần Rừng có đáng sợ không?",
+          "reply": "Không đâu, ngài chỉ ham đố vui thôi. Cứ ra bãi cỏ dưới tán dẻ tìm quà trước đã."
+        }
       ],
       "en": {
         "title": "Leaf Horn Rabbit brings news",
@@ -93,7 +105,26 @@
           "clue": "Đội chiếc mũ đỏ lấm tấm chấm trắng, mọc lên sau cơn mưa đêm qua.",
           "target": "trum-kr-nam-do"
         }
-      ]
+      ],
+      "en": {
+        "title": "Find three invitation gifts",
+        "goTo": "Go to the grass under the chestnut trees and find three gifts to invite the Forest Spirit",
+        "prompt": "Read each clue and find the three gifts the Forest Spirit likes best:",
+        "items": [
+          {
+            "name": "The bamboo flute",
+            "clue": "Round and hollow with a row of little holes; blow into it and it sings out brightly."
+          },
+          {
+            "name": "A pot of wild forest honey",
+            "clue": "Golden and sweet, filled by hardworking bees over a whole season of flowers."
+          },
+          {
+            "name": "The red-capped mushroom",
+            "clue": "It wears a red cap dotted with white spots, and sprang up after last night's rain."
+          }
+        ]
+      }
     },
     {
       "id": "doc-loi-thach",
@@ -105,22 +136,78 @@
       "text": "Lời thách của Thần Rừng\nAi muốn lấy lại chuông gió thì hãy tới khoảng rừng trăng lúc hoàng hôn. Ta sẽ hỏi bảy câu. Mỗi câu trả lời đúng làm sức tinh nghịch của ta vơi đi một ít. Đúng đủ bảy câu, ta trả chuông và cùng muông thú mở hội.\nKí tên: Thần Rừng Tinh Nghịch",
       "question": "Muốn lấy lại chuông gió, {name} phải làm gì?",
       "choices": [
-        { "id": "a", "text": "Tới khoảng rừng trăng và trả lời đúng đủ bảy câu" },
-        { "id": "b", "text": "Chạy thật nhanh đuổi theo Thần Rừng" },
-        { "id": "c", "text": "Đợi tới sáng mai rồi xin lại chuông" }
+        {
+          "id": "a",
+          "text": "Tới khoảng rừng trăng và trả lời đúng đủ bảy câu"
+        },
+        {
+          "id": "b",
+          "text": "Chạy thật nhanh đuổi theo Thần Rừng"
+        },
+        {
+          "id": "c",
+          "text": "Đợi tới sáng mai rồi xin lại chuông"
+        }
       ],
-      "answer": { "choice": "a" },
+      "answer": {
+        "choice": "a"
+      },
       "support": {
-        "guide": ["Đọc câu thứ nhất để biết Thần Rừng hẹn gặp ở đâu.", "Đọc câu cuối để biết cần đúng bao nhiêu câu."],
+        "guide": [
+          "Đọc câu thứ nhất để biết Thần Rừng hẹn gặp ở đâu.",
+          "Đọc câu cuối để biết cần đúng bao nhiêu câu."
+        ],
         "hint": "Lời thách có nhắc tới một nơi và một con số.",
         "answer": {
           "text": "Tới khoảng rừng trăng, trả lời đúng cả bảy câu",
           "explanation": "Lời thách viết: hãy tới khoảng rừng trăng; đúng đủ bảy câu, ta trả chuông."
+        },
+        "en": {
+          "guide": [
+            "Read the first sentence to find where the Forest Spirit wants to meet.",
+            "Read the last part to see how many answers must be right."
+          ],
+          "hint": "The challenge mentions a place and a number.",
+          "answer": {
+            "text": "Head for the moonlit glade and get all seven answers right",
+            "explanation": "The challenge says: come to the moonlit glade; answer all seven and I will give back the chime."
+          }
         }
       },
       "feedback": {
-        "right": ["Chuẩn rồi, bảy câu đố đang chờ {name} đấy!", "Đọc kĩ thế này thì Thần Rừng phải dè chừng rồi.", "Đúng ý lời thách, mình lên đường tới khoảng rừng trăng thôi!"],
-        "wrong": ["Thần Rừng có bảo chạy đuổi đâu, đọc lại câu đầu nha {name}.", "Lời thách hẹn lúc hoàng hôn, chẳng phải sáng mai đâu.", "Tìm con số bảy trong lời thách rồi chọn lại nhé."]
+        "right": [
+          "Chuẩn rồi, bảy câu đố đang chờ {name} đấy!",
+          "Đọc kĩ thế này thì Thần Rừng phải dè chừng rồi.",
+          "Đúng ý lời thách, mình lên đường tới khoảng rừng trăng thôi!"
+        ],
+        "wrong": [
+          "Thần Rừng có bảo chạy đuổi đâu, đọc lại câu đầu nha {name}.",
+          "Lời thách hẹn lúc hoàng hôn, chẳng phải sáng mai đâu.",
+          "Tìm con số bảy trong lời thách rồi chọn lại nhé."
+        ],
+        "en": {
+          "right": [
+            "Spot on, seven riddles are waiting for {name}!",
+            "Reading this carefully, the Forest Spirit had better watch out.",
+            "Just what the challenge says, off to the moonlit glade!"
+          ],
+          "wrong": [
+            "The Forest Spirit never said to chase him, read the first sentence again, {name}.",
+            "The challenge says at dusk, not tomorrow morning.",
+            "Find the number seven in the challenge and choose again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the Forest Spirit's challenge",
+        "goTo": "Take the gifts to the marker post at the start of the path, where the Forest Spirit left his challenge",
+        "text": "The Forest Spirit's challenge\nWhoever wants the wind chime back must come to the moonlit glade at dusk. I will ask seven questions. Every right answer makes my mischief fade a little. Answer all seven and I will give back the chime and hold a festival with the animals.\nSigned: the Mischievous Forest Spirit",
+        "question": "What must {name} do to get the wind chime back?",
+        "choices": [
+          "Go to the moonlit glade and answer all seven questions correctly",
+          "Run as fast as possible after the Forest Spirit",
+          "Wait until tomorrow morning and ask for the chime back"
+        ]
       }
     },
     {
@@ -134,31 +221,118 @@
       "skill": "logic",
       "prompt": "Gấu Trúc xếp vòng lá mời khách theo một quy luật. Chiếc lá tiếp theo màu gì?",
       "elements": [
-        { "id": "l1", "label": "Lá đỏ" },
-        { "id": "l2", "label": "Lá vàng" },
-        { "id": "l3", "label": "Lá vàng" },
-        { "id": "l4", "label": "Lá đỏ" },
-        { "id": "l5", "label": "Lá vàng" },
-        { "id": "l6", "label": "Lá vàng" },
-        { "id": "l7", "label": "Lá đỏ" }
+        {
+          "id": "l1",
+          "label": "Lá đỏ"
+        },
+        {
+          "id": "l2",
+          "label": "Lá vàng"
+        },
+        {
+          "id": "l3",
+          "label": "Lá vàng"
+        },
+        {
+          "id": "l4",
+          "label": "Lá đỏ"
+        },
+        {
+          "id": "l5",
+          "label": "Lá vàng"
+        },
+        {
+          "id": "l6",
+          "label": "Lá vàng"
+        },
+        {
+          "id": "l7",
+          "label": "Lá đỏ"
+        }
       ],
       "choices": [
-        { "id": "do", "text": "Lá đỏ" },
-        { "id": "vang", "text": "Lá vàng" },
-        { "id": "xanh", "text": "Lá xanh" }
+        {
+          "id": "do",
+          "text": "Lá đỏ"
+        },
+        {
+          "id": "vang",
+          "text": "Lá vàng"
+        },
+        {
+          "id": "xanh",
+          "text": "Lá xanh"
+        }
       ],
-      "answer": { "choice": "vang" },
+      "answer": {
+        "choice": "vang"
+      },
       "support": {
-        "guide": ["Chia dãy lá thành từng nhóm ba chiếc.", "Mỗi nhóm mở đầu bằng một lá đỏ, theo sau là hai lá vàng.", "Chiếc lá cuối là lá đỏ mở đầu một nhóm mới."],
+        "guide": [
+          "Chia dãy lá thành từng nhóm ba chiếc.",
+          "Mỗi nhóm mở đầu bằng một lá đỏ, theo sau là hai lá vàng.",
+          "Chiếc lá cuối là lá đỏ mở đầu một nhóm mới."
+        ],
         "hint": "Sau mỗi chiếc lá đỏ luôn có hai chiếc lá vàng.",
         "answer": {
           "text": "Lá vàng",
           "explanation": "Quy luật lặp lại đỏ – vàng – vàng. Nhóm mới vừa mở bằng lá đỏ nên chiếc tiếp theo là lá vàng."
+        },
+        "en": {
+          "guide": [
+            "Split the row of leaves into groups of three.",
+            "Each group starts with a red leaf followed by two yellow leaves.",
+            "The last leaf is the red one that starts a new group."
+          ],
+          "hint": "After every red leaf there are always two yellow leaves.",
+          "answer": {
+            "text": "A yellow leaf",
+            "explanation": "The pattern repeats red, yellow, yellow. A new group has just started with a red leaf, so the next leaf is yellow."
+          }
         }
       },
       "feedback": {
-        "right": ["Vòng lá khép kín rồi, Gấu Trúc vỗ bụng khen giỏi!", "{name} nhìn ra nhịp đỏ – vàng – vàng thật nhanh.", "Đúng quy luật, vòng lá đẹp như vương miện!"],
-        "wrong": ["Đếm từng nhóm ba chiếc lá xem nào {name}.", "Sau lá đỏ có mấy lá vàng nhỉ? Nhìn lại nhóm đầu nhé.", "Trong vòng này chưa có lá xanh nào đâu, chọn lại nha."]
+        "right": [
+          "Vòng lá khép kín rồi, Gấu Trúc vỗ bụng khen giỏi!",
+          "{name} nhìn ra nhịp đỏ – vàng – vàng thật nhanh.",
+          "Đúng quy luật, vòng lá đẹp như vương miện!"
+        ],
+        "wrong": [
+          "Đếm từng nhóm ba chiếc lá xem nào {name}.",
+          "Sau lá đỏ có mấy lá vàng nhỉ? Nhìn lại nhóm đầu nhé.",
+          "Trong vòng này chưa có lá xanh nào đâu, chọn lại nha."
+        ],
+        "en": {
+          "right": [
+            "The wreath closes up, Panda pats his tummy and cheers!",
+            "{name} spotted the red – yellow – yellow beat so fast.",
+            "Right pattern, the wreath looks like a crown!"
+          ],
+          "wrong": [
+            "Count the leaves in groups of three, {name}.",
+            "How many yellow leaves follow a red one? Look at the first group again.",
+            "There's no green leaf in this wreath yet, choose again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Panda's leaf wreath",
+        "goTo": "Go to the mossy green stone steps, where Leaf-Counting Panda is arranging leaves into a wreath",
+        "prompt": "Panda arranges a wreath of leaves for guests following a pattern. What colour is the next leaf?",
+        "choices": [
+          "A red leaf",
+          "A yellow leaf",
+          "A green leaf"
+        ],
+        "elements": [
+          "Red leaf",
+          "Yellow leaf",
+          "Yellow leaf",
+          "Red leaf",
+          "Yellow leaf",
+          "Yellow leaf",
+          "Red leaf"
+        ]
       }
     },
     {
@@ -213,9 +387,16 @@
       "kind": "dialogue",
       "target": "trum-kr-tho-ken-la",
       "lines": [
-        { "speaker": "Thỏ Kèn Lá", "text": "Cậu quay lại rủ tớ thật à? Vui quá! Mỗi lần cậu trả lời đúng, tớ sẽ thổi một hồi kèn lá thật to." }
+        {
+          "speaker": "Thỏ Kèn Lá",
+          "text": "Cậu quay lại rủ tớ thật à? Vui quá! Mỗi lần cậu trả lời đúng, tớ sẽ thổi một hồi kèn lá thật to."
+        }
       ],
-      "choices": [{ "text": "Mình cùng tới khoảng rừng trăng nào!" }],
+      "choices": [
+        {
+          "text": "Mình cùng tới khoảng rừng trăng nào!"
+        }
+      ],
       "en": {
         "title": "Bring Leaf Horn Rabbit along",
         "goTo": "Go back to the hollow oak and ask Leaf Horn Rabbit to come with you",
@@ -248,26 +429,51 @@
           "move": "orbs",
           "prompt": "Trong bảng chữ cái tiếng Việt, chữ nào đứng ngay sau chữ A?",
           "choices": [
-            { "id": "a", "text": "Ă" },
-            { "id": "b", "text": "B" },
-            { "id": "c", "text": "Â" }
+            {
+              "id": "a",
+              "text": "Ă"
+            },
+            {
+              "id": "b",
+              "text": "B"
+            },
+            {
+              "id": "c",
+              "text": "Â"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đọc thật chậm ba chữ đầu tiên của bảng chữ cái tiếng Việt.",
               "Nhớ rằng có hai chữ cái mang dấu phụ đi liền ngay sau A."
             ],
             "hint": "Ngay sau A là hai chữ có dấu phụ; chữ đội «vầng trăng» đứng trước chữ đội «mũ».",
-            "answer": { "text": "Ă", "explanation": "Bảng chữ cái mở đầu bằng a, ă, â, b…, nên ngay sau A là Ă; Â đứng thứ ba, B đứng thứ tư." },
+            "answer": {
+              "text": "Ă",
+              "explanation": "Bảng chữ cái mở đầu bằng a, ă, â, b…, nên ngay sau A là Ă; Â đứng thứ ba, B đứng thứ tư."
+            },
             "en": {
               "guide": [
                 "Say the first three letters of the Vietnamese alphabet very slowly.",
                 "Remember that two letters with extra marks follow A straight away."
               ],
               "hint": "Right after A come two marked letters; the one with the moon-shaped mark goes before the one with the hat.",
-              "answer": { "text": "Ă", "explanation": "The alphabet opens a, ă, â, b…, so Ă comes right after A; Â is third and B is fourth." }
+              "answer": {
+                "text": "Ă",
+                "explanation": "The alphabet opens a, ă, â, b…, so Ă comes right after A; Â is third and B is fourth."
+              }
             }
+          },
+          "en": {
+            "prompt": "In the Vietnamese alphabet, which letter comes right after A?",
+            "choices": [
+              "Ă",
+              "B",
+              "Â"
+            ]
           }
         },
         {
@@ -276,26 +482,51 @@
           "move": "fling",
           "prompt": "Từ nào gọi tên một món đồ chơi của các bạn nhỏ trong rừng?",
           "choices": [
-            { "id": "a", "text": "dòng suối" },
-            { "id": "b", "text": "con diều" },
-            { "id": "c", "text": "chạy nhảy" }
+            {
+              "id": "a",
+              "text": "dòng suối"
+            },
+            {
+              "id": "b",
+              "text": "con diều"
+            },
+            {
+              "id": "c",
+              "text": "chạy nhảy"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đọc từng từ và hỏi: đây có phải thứ các bạn nhỏ cầm lên để chơi không?",
               "Gạt từ chỉ cảnh vật trong rừng và từ chỉ hoạt động."
             ],
             "hint": "Đồ chơi là vật dùng để chơi, nhất là khi trời lộng gió trên một bãi trống.",
-            "answer": { "text": "con diều", "explanation": "«Con diều» là đồ chơi thả bay nhờ gió; «dòng suối» là cảnh vật, «chạy nhảy» là hoạt động." },
+            "answer": {
+              "text": "con diều",
+              "explanation": "«Con diều» là đồ chơi thả bay nhờ gió; «dòng suối» là cảnh vật, «chạy nhảy» là hoạt động."
+            },
             "en": {
               "guide": [
                 "Read each word and ask: is this something children pick up and play with?",
                 "Set aside the word for part of the forest scenery and the word for an activity."
               ],
               "hint": "A toy is an object for playing with, especially on a windy open field.",
-              "answer": { "text": "The kite (con diều)", "explanation": "«con diều» (the kite) is a toy flown on the wind; «dòng suối» (the stream) is scenery and «chạy nhảy» (running about) an activity." }
+              "answer": {
+                "text": "con diều",
+                "explanation": "«con diều» (the kite) is a toy flown on the wind; «dòng suối» (the stream) is scenery and «chạy nhảy» (running about) an activity."
+              }
             }
+          },
+          "en": {
+            "prompt": "Which word names a toy that the little friends in the forest play with?",
+            "choices": [
+              "dòng suối",
+              "con diều",
+              "chạy nhảy"
+            ]
           }
         },
         {
@@ -304,26 +535,51 @@
           "move": "charge",
           "prompt": "Thần Rừng viết ba lần mà chỉ một lần đúng. Từ nào viết đúng chính tả?",
           "choices": [
-            { "id": "a", "text": "ngỉ ngơi" },
-            { "id": "b", "text": "nghỉ nghơi" },
-            { "id": "c", "text": "nghỉ ngơi" }
+            {
+              "id": "a",
+              "text": "ngỉ ngơi"
+            },
+            {
+              "id": "b",
+              "text": "nghỉ nghơi"
+            },
+            {
+              "id": "c",
+              "text": "nghỉ ngơi"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Tách từ thành hai tiếng rồi nhìn nguyên âm đứng sau âm «ngờ» ở mỗi tiếng.",
               "Áp luật: trước i, e, ê viết ngh; trước các nguyên âm khác viết ng."
             ],
             "hint": "Tiếng đầu đi với i, tiếng sau đi với ơ, nên hai tiếng dùng hai cách viết «ngờ» khác nhau.",
-            "answer": { "text": "nghỉ ngơi", "explanation": "«Nghỉ» có i nên viết ngh, «ngơi» có ơ nên viết ng, vậy «nghỉ ngơi» đúng; «ngỉ» và «nghơi» đều sai luật." },
+            "answer": {
+              "text": "nghỉ ngơi",
+              "explanation": "«Nghỉ» có i nên viết ngh, «ngơi» có ơ nên viết ng, vậy «nghỉ ngơi» đúng; «ngỉ» và «nghơi» đều sai luật."
+            },
             "en": {
               "guide": [
                 "Split the word into its two syllables and look at the vowel after the «ng» sound in each.",
                 "Apply the rule: before i, e and ê write ngh; before any other vowel write ng."
               ],
               "hint": "The first syllable takes i and the second takes ơ, so they need different spellings of «ng».",
-              "answer": { "text": "nghỉ ngơi", "explanation": "«nghỉ» has i so it takes ngh, «ngơi» has ơ so it takes ng, making «nghỉ ngơi» (to rest) right; «ngỉ» and «nghơi» break the rule." }
+              "answer": {
+                "text": "nghỉ ngơi",
+                "explanation": "«nghỉ» has i so it takes ngh, «ngơi» has ơ so it takes ng, making «nghỉ ngơi» (to rest) right; «ngỉ» and «nghơi» break the rule."
+              }
             }
+          },
+          "en": {
+            "prompt": "The Forest Spirit wrote a word three ways but only one is right. Which is spelt correctly?",
+            "choices": [
+              "ngỉ ngơi",
+              "nghỉ nghơi",
+              "nghỉ ngơi"
+            ]
           }
         },
         {
@@ -332,26 +588,51 @@
           "move": "gem",
           "prompt": "Cuối câu «Bạn có muốn cùng tớ thả diều không» phải đặt dấu gì?",
           "choices": [
-            { "id": "a", "text": "Dấu chấm" },
-            { "id": "b", "text": "Dấu chấm hỏi" },
-            { "id": "c", "text": "Dấu phẩy" }
+            {
+              "id": "a",
+              "text": "Dấu chấm"
+            },
+            {
+              "id": "b",
+              "text": "Dấu chấm hỏi"
+            },
+            {
+              "id": "c",
+              "text": "Dấu phẩy"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đọc to «Bạn có muốn cùng tớ thả diều không» và để ý người nói đang chờ điều gì.",
               "Câu dùng để rủ và hỏi ý bạn cần một dấu khác với câu kể."
             ],
             "hint": "Thấy cặp «có muốn… không» là biết người nói đang chờ bạn đáp «có» hay «không».",
-            "answer": { "text": "Dấu chấm hỏi", "explanation": "Câu hỏi xem bạn có muốn thả diều không, nên cuối câu là dấu chấm hỏi; dấu chấm dành cho câu kể, dấu phẩy để ngắt giữa câu." },
+            "answer": {
+              "text": "Dấu chấm hỏi",
+              "explanation": "Câu hỏi xem bạn có muốn thả diều không, nên cuối câu là dấu chấm hỏi; dấu chấm dành cho câu kể, dấu phẩy để ngắt giữa câu."
+            },
             "en": {
               "guide": [
                 "Read «Bạn có muốn cùng tớ thả diều không» aloud and notice what the speaker is waiting for.",
                 "A sentence that invites a friend and asks their wish needs a different mark from a telling sentence."
               ],
               "hint": "The pair «có muốn… không» shows the speaker expects a «yes» or a «no» back.",
-              "answer": { "text": "Question mark", "explanation": "The sentence asks whether the friend wants to fly a kite, so it ends with a question mark; full stops end telling sentences and commas split them." }
+              "answer": {
+                "text": "Question mark",
+                "explanation": "The sentence asks whether the friend wants to fly a kite, so it ends with a question mark; full stops end telling sentences and commas split them."
+              }
             }
+          },
+          "en": {
+            "prompt": "Which mark goes at the end of «Bạn có muốn cùng tớ thả diều không»?",
+            "choices": [
+              "Full stop",
+              "Question mark",
+              "Comma"
+            ]
           }
         },
         {
@@ -360,26 +641,51 @@
           "move": "orbs",
           "prompt": "Câu nào kể về một hoạt động đang diễn ra?",
           "choices": [
-            { "id": "a", "text": "Chú nhím có bộ lông nâu sẫm." },
-            { "id": "b", "text": "Các bạn nhỏ chơi rồng rắn lên mây." },
-            { "id": "c", "text": "Khu rừng chiều nay rất yên tĩnh." }
+            {
+              "id": "a",
+              "text": "Chú nhím có bộ lông nâu sẫm."
+            },
+            {
+              "id": "b",
+              "text": "Các bạn nhỏ chơi rồng rắn lên mây."
+            },
+            {
+              "id": "c",
+              "text": "Khu rừng chiều nay rất yên tĩnh."
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đọc ba câu, tìm câu có người hay con vật đang làm một việc gì đó.",
               "Loại câu chỉ tả bộ lông và câu chỉ tả khu rừng yên tĩnh."
             ],
             "hint": "Câu kể hoạt động trả lời câu hỏi «Ai đang làm gì?» và có một từ chỉ việc làm như chạy, hát.",
-            "answer": { "text": "Các bạn nhỏ chơi rồng rắn lên mây.", "explanation": "Câu về các bạn nhỏ có từ «chơi» chỉ việc đang làm nên kể hoạt động; câu về nhím và về khu rừng chỉ tả đặc điểm." },
+            "answer": {
+              "text": "Các bạn nhỏ chơi rồng rắn lên mây.",
+              "explanation": "Câu về các bạn nhỏ có từ «chơi» chỉ việc đang làm nên kể hoạt động; câu về nhím và về khu rừng chỉ tả đặc điểm."
+            },
             "en": {
               "guide": [
                 "Read the three sentences and find one where someone is busy doing something.",
                 "Rule out the sentence about the hedgehog's coat and the one about the quiet forest."
               ],
               "hint": "An action sentence answers «who is doing what?» and has a doing word such as run or sing.",
-              "answer": { "text": "Các bạn nhỏ chơi rồng rắn lên mây. (The children play dragon-and-snake.)", "explanation": "The sentence about the children has «chơi» (play), a doing word, so it tells an action; the hedgehog and forest sentences only describe." }
+              "answer": {
+                "text": "The children are playing the dragon-snake game.",
+                "explanation": "The sentence about the children has «chơi» (play), a doing word, so it tells an action; the hedgehog and forest sentences only describe."
+              }
             }
+          },
+          "en": {
+            "prompt": "Which sentence tells about an action that is happening?",
+            "choices": [
+              "The hedgehog has a dark brown coat.",
+              "The children are playing the dragon-snake game.",
+              "The forest is very quiet this evening."
+            ]
           }
         },
         {
@@ -388,26 +694,51 @@
           "move": "fling",
           "prompt": "Từ nào nói về tình cảm giữa hai người bạn?",
           "choices": [
-            { "id": "a", "text": "lấp lánh" },
-            { "id": "b", "text": "thân thiết" },
-            { "id": "c", "text": "cao vút" }
+            {
+              "id": "a",
+              "text": "lấp lánh"
+            },
+            {
+              "id": "b",
+              "text": "thân thiết"
+            },
+            {
+              "id": "c",
+              "text": "cao vút"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đọc ba từ và hỏi: từ nào nói hai người bạn đối với nhau thế nào?",
               "Loại từ tả ánh sáng và từ tả chiều cao của sự vật."
             ],
             "hint": "Từ chỉ tình cảm bạn bè đặt vừa vào câu «Hai bạn rất … với nhau».",
-            "answer": { "text": "thân thiết", "explanation": "«Thân thiết» nói hai người bạn gần gũi, quý mến nhau; «lấp lánh» tả ánh sáng, «cao vút» tả độ cao." },
+            "answer": {
+              "text": "thân thiết",
+              "explanation": "«Thân thiết» nói hai người bạn gần gũi, quý mến nhau; «lấp lánh» tả ánh sáng, «cao vút» tả độ cao."
+            },
             "en": {
               "guide": [
                 "Read the three words and ask: which says how two friends feel about each other?",
                 "Rule out the word describing light and the one describing height."
               ],
               "hint": "A friendship word fits the sentence «Hai bạn rất … với nhau» (the two are very … with each other).",
-              "answer": { "text": "thân thiết (close)", "explanation": "«thân thiết» (close) means the friends are near and dear to each other; «lấp lánh» describes sparkle and «cao vút» great height." }
+              "answer": {
+                "text": "thân thiết",
+                "explanation": "«thân thiết» (close) means the friends are near and dear to each other; «lấp lánh» describes sparkle and «cao vút» great height."
+              }
             }
+          },
+          "en": {
+            "prompt": "Which word is about the feeling between two friends?",
+            "choices": [
+              "lấp lánh",
+              "thân thiết",
+              "cao vút"
+            ]
           }
         },
         {
@@ -416,29 +747,61 @@
           "move": "charge",
           "prompt": "Đố vui: thân mỏng và nhẹ, đuôi dài phấp phới, bay cao nhờ gió, sợi dây nằm trong tay bạn nhỏ. Đó là gì?",
           "choices": [
-            { "id": "a", "text": "Chiếc lá khô" },
-            { "id": "b", "text": "Quả bóng bay" },
-            { "id": "c", "text": "Con diều" }
+            {
+              "id": "a",
+              "text": "Chiếc lá khô"
+            },
+            {
+              "id": "b",
+              "text": "Quả bóng bay"
+            },
+            {
+              "id": "c",
+              "text": "Con diều"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Đọc lần lượt từng gợi ý: thân mỏng nhẹ, đuôi dài, bay nhờ gió, có sợi dây.",
               "Thử từng lựa chọn với cả bốn gợi ý; vật nào khớp đủ cả bốn mới đúng."
             ],
             "hint": "Lá khô không có dây, bóng bay không có đuôi dài phấp phới; còn vật cuối cùng thì sao?",
-            "answer": { "text": "Con diều", "explanation": "Con diều thân mỏng nhẹ, có đuôi dài, bay lên nhờ gió và được giữ bằng sợi dây, khớp đủ mọi gợi ý." },
+            "answer": {
+              "text": "Con diều",
+              "explanation": "Con diều thân mỏng nhẹ, có đuôi dài, bay lên nhờ gió và được giữ bằng sợi dây, khớp đủ mọi gợi ý."
+            },
             "en": {
               "guide": [
                 "Go through the clues one by one: thin and light, long tail, flies on the wind, held by a string.",
                 "Test each choice against all four clues; only one fits every clue."
               ],
               "hint": "A dry leaf has no string and a balloon has no fluttering tail, so what about the last one?",
-              "answer": { "text": "A kite (Con diều)", "explanation": "A kite is thin and light, has a long tail, rises on the wind and is held by a string, matching every clue." }
+              "answer": {
+                "text": "A kite",
+                "explanation": "A kite is thin and light, has a long tail, rises on the wind and is held by a string, matching every clue."
+              }
             }
+          },
+          "en": {
+            "prompt": "Riddle: thin and light, with a long fluttering tail, it flies high on the wind and its string is held in a child's hand. What is it?",
+            "choices": [
+              "A dry leaf",
+              "A balloon",
+              "A kite"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Battle of wits with the Forest Spirit",
+        "goTo": "Step into the moonlit forest, where the Forest Spirit is waiting",
+        "bossName": "Mischievous Forest Spirit",
+        "introDialogue": "Ha ha, a welcome guest! Here are seven riddles about words and friends, and every right answer makes me a little less mischievous!",
+        "winDialogue": "I give up! {name} reads fast and thinks well, a true friend of the whole forest."
+      }
     },
     {
       "id": "trao-chuong-gio",
@@ -466,6 +829,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "doc-hieu": 1, "tu-ngu": 1, "chinh-ta": 1, "logic": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "tu-ngu": 1,
+      "chinh-ta": 1,
+      "logic": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Mischievous Forest Spirit",
+    "summary": "The Mischievous Forest Spirit hooks the forest festival's wind chime on his antlers and darts off into the moonlit glade. {name} gathers invitation gifts, reads his challenge, solves the leaf wreath, then wins a seven-question quiz to bring the chime home."
   }
 }

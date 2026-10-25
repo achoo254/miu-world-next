@@ -95,7 +95,11 @@
         "toan2-cd1-bien-so-hang",
         "toan2-cd1-bien-tong",
         "toan2-cd1-bien-hieu"
-      ]
+      ],
+      "en": {
+        "title": "Pick up the name tags",
+        "goTo": "Pick up the three name signs the wind blew around the schoolyard notice board"
+      }
     },
     {
       "id": "so-hang-la-ai",
@@ -208,6 +212,17 @@
         "answer": {
           "text": "Tổng của ba cột lần lượt là 29, 90, 89",
           "explanation": "Cộng hai số hạng trong từng cột: 23 + 6 = 29, 40 + 50 = 90, 51 + 38 = 89."
+        },
+        "en": {
+          "guide": [
+            "The sum is the result of adding the two addends in the same column.",
+            "Add the units first, then the tens."
+          ],
+          "hint": "Second column: 23 + 6. Last column: 51 + 38.",
+          "answer": {
+            "text": "The sums of the three columns are 29, 90, 89",
+            "explanation": "Add the two addends in each column: 23 + 6 = 29, 40 + 50 = 90, 51 + 38 = 89."
+          }
         }
       },
       "feedback": {
@@ -220,7 +235,19 @@
           "Chỉ cộng hai số cùng một cột thôi nhé.",
           "Thử cộng hàng đơn vị trước, hàng chục sau.",
           "Có một ô tổng lệch mất, tính lại cột ấy xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three sum boxes light up, and the notice board looks as good as new.",
+            "Black Cat swishes her tail: all correct, no need to check again.",
+            "Tiny Monkey shouts: Sum, sum! This time he really got it right."
+          ],
+          "wrong": [
+            "Only add the two numbers in the same column.",
+            "Try adding the units first and the tens after.",
+            "One sum box is off, so work that column out again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -234,7 +261,11 @@
         "b2": "40 + 50",
         "b3": "51 + 38"
       },
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "Table of addends and sums",
+        "prompt": "The \"Số hạng\" sign is already up, but the \"Tổng\" sign is missing a few boxes. The first column is the sample, so work out the next three columns."
+      }
     },
     {
       "id": "dat-tinh-tong",
@@ -308,6 +339,17 @@
         "answer": {
           "text": "1) 68; 2) 89; 3) 79",
           "explanation": "Đặt tính thẳng cột rồi cộng: 40 + 28 = 68, 72 + 17 = 89, 35 + 44 = 79."
+        },
+        "en": {
+          "guide": [
+            "Write the second addend under the first, units under units and tens under tens.",
+            "Add from right to left."
+          ],
+          "hint": "40 + 28: 0 plus 8 is 8, and 4 plus 2 is 6.",
+          "answer": {
+            "text": "1) 68; 2) 89; 3) 79",
+            "explanation": "Set them out in columns and add: 40 + 28 = 68, 72 + 17 = 89, 35 + 44 = 79."
+          }
         }
       },
       "feedback": {
@@ -320,7 +362,19 @@
           "Chục phải thẳng với chục, đơn vị thẳng với đơn vị nhé.",
           "Cộng hàng đơn vị trước, sau đó mới tới hàng chục.",
           "Một phép cộng bị hụt mất vài đơn vị, kiểm tra lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The columns are dead straight, and Pepper Bunny bows to the ground.",
+            "All three sums are spot on, and Black Cat's card is full of numbers.",
+            "Units and tens stand in the right places, which looks lovely."
+          ],
+          "wrong": [
+            "Tens must line up with tens, and units with units.",
+            "Add the units first, and only then the tens.",
+            "One addition came up a few units short, so check it again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -334,7 +388,12 @@
         "b2": "72 + 17",
         "b3": "35 + 44"
       },
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "Add in columns to find the sum",
+        "goTo": "Go to the sandpit, where Pepper Bunny is holding Black Cat's addition card",
+        "prompt": "Black Cat draws three additions on a card. The sample: addends 36 and 21 have the sum 57. Set out each addition in columns, then find the sum for each pair of addends."
+      }
     },
     {
       "id": "vo-so-sao-bien",
@@ -390,6 +449,17 @@
         "answer": {
           "text": "Sao biển 44: 41 + 3; sao biển 47: 15 + 32",
           "explanation": "41 + 3 = 44 và 15 + 32 = 47; các cặp còn lại cho tổng 73 hoặc 18 nên không khớp."
+        },
+        "en": {
+          "guide": [
+            "Choose one blue shell and one yellow shell as the two addends.",
+            "Try adding them to see whether the sum matches the number on the starfish."
+          ],
+          "hint": "What is 41 + 3? And what is 15 + 32?",
+          "answer": {
+            "text": "Starfish 44: 41 + 3; starfish 47: 15 + 32",
+            "explanation": "41 + 3 = 44 and 15 + 32 = 47; the other pairs give sums of 73 or 18, so they don't match."
+          }
         }
       },
       "feedback": {
@@ -402,7 +472,19 @@
           "Cộng thử hai số hạng xem có ra số trên sao biển không.",
           "Mỗi phép cộng cần một vỏ sò xanh với một vỏ sò vàng.",
           "Tổng ấy chưa khớp với sao biển, thử cặp khác nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Each shell meets the right starfish, as pretty as a picture.",
+            "Tiny Monkey swings up and hangs both starfish on the notice board at once.",
+            "Two additions matched cleverly, and Pepper Bunny gives you ten out of ten."
+          ],
+          "wrong": [
+            "Add the two addends and see whether you get the number on the starfish.",
+            "Each addition needs one blue shell and one yellow shell.",
+            "That sum doesn't match the starfish, so try another pair."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -410,7 +492,11 @@
           "b2": "o1532bang47"
         }
       },
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "Shells and starfish",
+        "prompt": "Tiny Monkey has collected two blue shells marked 41 and 15, two yellow shells marked 32 and 3 (all addends), and two red starfish marked 44 and 47 (the sums). Each starfish needs one blue shell and one yellow shell. Choose the right addition for each starfish."
+      }
     },
     {
       "id": "so-bi-tru-goi-ten",
@@ -566,6 +652,17 @@
         "answer": {
           "text": "78 – 25 = 53: bị trừ 78, trừ 25, hiệu 53; 64 – 30 = 34: bị trừ 64, trừ 30, hiệu 34",
           "explanation": "Số bị trừ là số đứng đầu, số trừ đứng sau dấu trừ, hiệu đứng sau dấu bằng."
+        },
+        "en": {
+          "guide": [
+            "The first number in a subtraction is the minuend, \"số bị trừ\".",
+            "The number after the minus sign is the subtrahend, \"số trừ\", and the result after the equals sign is the difference, \"hiệu\"."
+          ],
+          "hint": "In 78 – 25 = 53, the number 53 comes after the equals sign.",
+          "answer": {
+            "text": "78 – 25 = 53: minuend 78, subtrahend 25, difference 53; 64 – 30 = 34: minuend 64, subtrahend 30, difference 34",
+            "explanation": "The minuend is the first number, the subtrahend comes after the minus sign, and the difference comes after the equals sign."
+          }
         }
       },
       "feedback": {
@@ -578,7 +675,19 @@
           "Số đứng sau dấu bằng mới là hiệu nhé.",
           "Số bị trừ luôn đứng đầu tiên trong phép trừ.",
           "Hình như số trừ và hiệu bị đổi chỗ cho nhau rồi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The minuend, subtrahend and difference all get their own signs.",
+            "Tiny Monkey mumbles along with you, and this time he doesn't misread a thing.",
+            "The \"Hiệu\" sign hangs in the right place, and the whole notice board applauds."
+          ],
+          "wrong": [
+            "Only the number after the equals sign is the difference.",
+            "The minuend always comes first in a subtraction.",
+            "It looks as if the subtrahend and the difference have swapped places."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -594,7 +703,11 @@
         "b3": "78 - 25",
         "b6": "64 - 30"
       },
-      "objective": "thanh-phan-phep-tinh-phep-tru"
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "en": {
+        "title": "Name the parts of a subtraction",
+        "prompt": "Two subtractions on the notice board are waiting for name signs on each of their numbers. Put each number on the right sign."
+      }
     },
     {
       "id": "bang-hieu",
@@ -668,6 +781,17 @@
         "answer": {
           "text": "Hiệu của ba cột lần lượt là 43, 30, 62",
           "explanation": "Lấy số bị trừ trừ số trừ: 85 – 42 = 43, 60 – 30 = 30, 97 – 35 = 62."
+        },
+        "en": {
+          "guide": [
+            "The difference is the minuend take away the subtrahend in the same column.",
+            "The sample column: 76 – 34 = 42."
+          ],
+          "hint": "97 – 35: 7 take away 5 is 2, and 9 take away 3 is 6.",
+          "answer": {
+            "text": "The differences of the three columns are 43, 30, 62",
+            "explanation": "Take the subtrahend from the minuend: 85 – 42 = 43, 60 – 30 = 30, 97 – 35 = 62."
+          }
         }
       },
       "feedback": {
@@ -680,7 +804,19 @@
           "Lấy số bị trừ bớt đi số trừ trong cùng một cột.",
           "Trừ hàng đơn vị trước rồi trừ hàng chục nào.",
           "Một ô hiệu đang lớn quá, tính lại cột đó xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Every column gives the right difference, and Auntie Duyên nods in satisfaction.",
+            "Black Cat purrs happily: she subtracts as fast as she pounces on a toy mouse.",
+            "All three difference boxes are correct, and the duty table is full of numbers."
+          ],
+          "wrong": [
+            "Take the subtrahend away from the minuend in the same column.",
+            "Subtract the units first, then the tens.",
+            "One difference is too big, so work out that column again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -694,7 +830,12 @@
         "b2": "60 - 30",
         "b3": "97 - 35"
       },
-      "objective": "thanh-phan-phep-tinh-phep-tru"
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "en": {
+        "title": "Minuend and difference table",
+        "goTo": "Go to the duty desk, where Auntie Duyên is copying out Black Cat's subtraction table",
+        "prompt": "Auntie Duyên brings out another subtraction table. The first column is complete as a sample, and the next three columns are missing their differences."
+      }
     },
     {
       "id": "dat-tinh-hieu",
@@ -767,6 +908,17 @@
         "answer": {
           "text": "1) 35; 2) 42; 3) 26",
           "explanation": "Đặt tính thẳng cột rồi trừ: 58 – 23 = 35, 96 – 54 = 42, 87 – 61 = 26."
+        },
+        "en": {
+          "guide": [
+            "Write the minuend on top and the subtrahend underneath, in columns.",
+            "Subtract from the units to the tens."
+          ],
+          "hint": "58 – 23: 8 take away 3 is 5, and 5 take away 2 is 3.",
+          "answer": {
+            "text": "1) 35; 2) 42; 3) 26",
+            "explanation": "Set them out in columns and subtract: 58 – 23 = 35, 96 – 54 = 42, 87 – 61 = 26."
+          }
         }
       },
       "feedback": {
@@ -779,7 +931,19 @@
           "Số bị trừ viết ở trên, số trừ viết ở dưới nhé.",
           "Hàng đơn vị trừ hàng đơn vị, hàng chục trừ hàng chục.",
           "Kiểm lại: cộng hiệu với số trừ phải ra số bị trừ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three subtractions are set out as neatly as rows of seats at the flag salute.",
+            "Auntie Duyên copies your solutions straight into the duty book.",
+            "You subtracted in columns without slipping a single place."
+          ],
+          "wrong": [
+            "Write the minuend on top and the subtrahend underneath.",
+            "Units take away units, and tens take away tens.",
+            "Check: the difference plus the subtrahend must give the minuend."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -793,7 +957,11 @@
         "b2": "96 - 54",
         "b3": "87 - 61"
       },
-      "objective": "thanh-phan-phep-tinh-phep-tru"
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "en": {
+        "title": "Subtract in columns to find the difference",
+        "prompt": "Black Cat shows the sample: minuend 79 and subtrahend 34 give the difference 45. Set out the subtractions in columns and find the difference for the three pairs below."
+      }
     },
     {
       "id": "ben-xe-do-choi",
@@ -884,6 +1052,17 @@
         "answer": {
           "text": "18 – 5 = 13, trên kệ còn 13 chiếc thuyền",
           "explanation": "Số thuyền còn lại bằng số lúc đầu trừ số bị lấy đi: 18 – 5 = 13."
+        },
+        "en": {
+          "guide": [
+            "Taking boats away leaves fewer boats, so do a subtraction.",
+            "The number of boats at the start is the minuend."
+          ],
+          "hint": "There were 18 boats and 5 were taken away.",
+          "answer": {
+            "text": "18 – 5 = 13, 13 boats are left on the shelf",
+            "explanation": "The boats left equal the number at the start minus the number taken away: 18 – 5 = 13."
+          }
         }
       },
       "feedback": {
@@ -896,7 +1075,19 @@
           "Thả bớt xuống chậu thì kệ ít đi, mình làm phép trừ nhé.",
           "Số thuyền lúc đầu phải viết trước dấu trừ.",
           "Còn lại bao nhiêu? Tính lại 18 bớt 5 xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly 13 boats are left on the shelf, and Tiny Monkey lines them up straight.",
+            "A correct subtraction, and a few more boats are sailing in the basin.",
+            "You count boats better than the old ferryman."
+          ],
+          "wrong": [
+            "Floating some in the basin leaves fewer on the shelf, so we subtract.",
+            "The number of boats at the start must be written before the minus sign.",
+            "How many are left? Work out 18 take away 5 again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -910,7 +1101,12 @@
         "b3": "18 - 5",
         "b4": "18 - 5"
       },
-      "objective": "bai-toan-co-loi-van-them-bot"
+      "objective": "bai-toan-co-loi-van-them-bot",
+      "en": {
+        "title": "The toy bus stop",
+        "goTo": "Back to the foot of the notice board, where the toy station is deserted",
+        "prompt": "At the foot of the notice board stands a shelf of the school's paper boats, and Tiny Monkey takes a few to float in the water basin."
+      }
     },
     {
       "id": "vet-xanh-thach-do",
@@ -1084,6 +1280,17 @@
         "answer": {
           "text": "52 = 50 + 2; 96 = 90 + 6; 67 = 60 + 7",
           "explanation": "Mỗi số bằng số tròn chục của nó cộng với số đơn vị."
+        },
+        "en": {
+          "guide": [
+            "The whole ten comes first and the units come after.",
+            "52 is made of 5 tens and 2 units."
+          ],
+          "hint": "96 is made of 9 tens, which is 90, and 6 units.",
+          "answer": {
+            "text": "52 = 50 + 2; 96 = 90 + 6; 67 = 60 + 7",
+            "explanation": "Each number equals its whole tens plus its units."
+          }
         }
       },
       "feedback": {
@@ -1096,7 +1303,19 @@
           "Phần chục viết thành số tròn chục, như 90 chứ không phải 9.",
           "Cộng hai phần lại xem có ra số ban đầu không.",
           "Nhìn mẫu 38 = 30 + 8 rồi làm giống nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three numbers split neatly, and Tiny Monkey claps and praises you again and again.",
+            "Whole tens first and loose units after, exactly right.",
+            "With splitting like this, the carriage could carry a hundred numbers."
+          ],
+          "wrong": [
+            "The tens part is written as a whole ten, like 90 and not 9.",
+            "Add the two parts to see whether you get the original number.",
+            "Look at the sample 38 = 30 + 8 and do the same."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1116,7 +1335,11 @@
         "b5": "? + 7 = 67",
         "b6": "60 + ? = 67"
       },
-      "objective": "so-den-100-chuc-don-vi"
+      "objective": "so-den-100-chuc-don-vi",
+      "en": {
+        "title": "Split a number into a sum",
+        "prompt": "Tiny Monkey writes four numbers on the carriage roof, along with the sample for 38. Split the other three numbers into a whole ten plus the units."
+      }
     },
     {
       "id": "day-ngoi-sao",
@@ -1224,6 +1447,17 @@
         "answer": {
           "text": "Đỏ 12, vàng 6, xanh 9; đỏ cộng vàng được 18; xanh hơn vàng 3 ngôi",
           "explanation": "Dây có 12 sao đỏ, 6 sao vàng, 9 sao xanh; 12 + 6 = 18 và 9 – 6 = 3."
+        },
+        "en": {
+          "guide": [
+            "Count each colour separately, tapping each star you have counted.",
+            "Add the red stars and the yellow stars; then take the yellow stars away from the blue stars."
+          ],
+          "hint": "There are 12 red stars; now count on with the yellow stars and the blue stars.",
+          "answer": {
+            "text": "Red 12, yellow 6, blue 9; red plus yellow makes 18; blue is 3 more than yellow",
+            "explanation": "The garland has 12 red stars, 6 yellow stars and 9 blue stars; 12 + 6 = 18 and 9 – 6 = 3."
+          }
         }
       },
       "feedback": {
@@ -1236,7 +1470,19 @@
           "Đếm lại từng màu một, đừng trộn đỏ với vàng nhé.",
           "Cộng sao đỏ với sao vàng, không lấy sao xanh.",
           "Muốn biết nhiều hơn mấy ngôi, hãy lấy sao xanh trừ sao vàng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You counted the stars without missing one, and your eyes are as bright as stars.",
+            "The adding and taking away on the garland both hit the mark.",
+            "Butter Koala winds the star garland round the flowerbed, the prettiest in the schoolyard."
+          ],
+          "wrong": [
+            "Count each colour again one at a time, and don't mix red with yellow.",
+            "Add the red stars and the yellow stars, and leave out the blue stars.",
+            "To find how many more, take the yellow stars away from the blue stars."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1251,7 +1497,12 @@
         "b4": "12 + 6",
         "b5": "9 - 6"
       },
-      "objective": "thanh-phan-phep-tinh-phep-cong"
+      "objective": "thanh-phan-phep-tinh-phep-cong",
+      "en": {
+        "title": "String of twinkling stars",
+        "goTo": "Go out to the flowerbed, where Butter Koala is hugging the star garland Tiny Monkey was stringing up",
+        "prompt": "Tiny Monkey strings a star garland around the flowerbed, and each coloured dot is one star: 🔴🟡🔵🔴🟡🔵🔴🟡🔵🔴🟡🔵🔴🟡🔵🔴🟡🔵🔴🔵🔴🔵🔴🔵🔴🔴🔴"
+      }
     },
     {
       "id": "doi-cho-toa-tau-a",
@@ -1289,6 +1540,17 @@
         "answer": {
           "text": "80, 70, 60, 50 (đổi chỗ toa 60 và toa 80)",
           "explanation": "Đoàn tàu ghi 60, 70, 80, 50; đổi chỗ toa 60 và toa 80 được 80, 70, 60, 50."
+        },
+        "en": {
+          "guide": [
+            "The carriage with the biggest number must go to the front of the train.",
+            "You only need to swap the two carriages that are in the wrong places."
+          ],
+          "hint": "Carriage 80 is in the middle of the train, and carriage 60 is at the front.",
+          "answer": {
+            "text": "80, 70, 60, 50 (swap carriage 60 and carriage 80)",
+            "explanation": "Train A reads 60, 70, 80, 50; swapping carriage 60 and carriage 80 gives 80, 70, 60, 50."
+          }
         }
       },
       "feedback": {
@@ -1301,7 +1563,19 @@
           "Toa mang số lớn nhất còn đang đứng sau, đưa nó lên đầu đi.",
           "Lượt này xếp từ lớn đến bé chứ không phải từ bé đến lớn.",
           "Chỉ có hai toa đứng sai chỗ thôi, tìm chúng xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Choo choo! Train A runs straight from biggest to smallest.",
+            "Only two carriages swapped and the whole train is done, so clever.",
+            "Tiny Monkey stands on carriage 80 and cries: I'm leading!"
+          ],
+          "wrong": [
+            "The carriage with the biggest number is still at the back, so bring it to the front.",
+            "This time we go from biggest to smallest, not smallest to biggest.",
+            "Only two carriages are in the wrong places, so find them."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -1311,7 +1585,18 @@
           "toa-50"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Train A rearranged",
+        "goTo": "Back to the corner of the yard with the wooden train, where Tiny Monkey is standing on the front carriage",
+        "prompt": "On the carriages of train A are the numbers 60, 70, 80, 50, from the engine to the end. If you swap exactly two carriages, the numbers go from biggest to smallest. Rearrange the whole train.",
+        "items": [
+          "60",
+          "70",
+          "80",
+          "50"
+        ]
+      }
     },
     {
       "id": "hieu-doan-tau-b",
@@ -1329,6 +1614,17 @@
         "answer": {
           "text": "32",
           "explanation": "78 – 46 = 32."
+        },
+        "en": {
+          "guide": [
+            "Find the biggest number and the smallest number first.",
+            "Take the smallest number away from the biggest number."
+          ],
+          "hint": "The biggest number is 78 and the smallest is 46.",
+          "answer": {
+            "text": "32",
+            "explanation": "78 – 46 = 32."
+          }
         }
       },
       "feedback": {
@@ -1341,13 +1637,29 @@
           "Số lớn nhất trong đoàn tàu B là số mấy nhỉ?",
           "Lấy số lớn nhất trừ đi số bé nhất nhé.",
           "Hai số 53 và 62 không phải số bé nhất đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The difference is 32, and train B blows its whistle to greet you.",
+            "You found the biggest and smallest numbers and subtracted, neat and tidy.",
+            "Tiny Monkey stammers: I haven't even finished asking."
+          ],
+          "wrong": [
+            "What is the biggest number on train B?",
+            "Subtract the smaller number from the larger one.",
+            "53 and 62 are not the smallest number."
+          ]
+        }
       },
       "answer": {
         "value": 32
       },
       "expression": "78 - 46",
-      "objective": "thanh-phan-phep-tinh-phep-tru"
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "en": {
+        "title": "Train B",
+        "question": "Train B carries four carriages marked 46, 78, 53, 62. What do you get when you take the carriage with the smallest number away from the carriage with the biggest number?"
+      }
     },
     {
       "id": "lap-phep-tru-the-so",
@@ -1404,6 +1716,17 @@
         "answer": {
           "text": "Hiệu 63: 68 trừ 5; hiệu 33: 79 trừ 46",
           "explanation": "68 – 5 = 63 và 79 – 46 = 33; các cách ghép khác cho hiệu 74 hoặc 22."
+        },
+        "en": {
+          "guide": [
+            "Pair a minuend with a subtrahend and subtract to see which difference you get.",
+            "The difference must be one of the two cards 63 and 33."
+          ],
+          "hint": "What is left when you take 5 away from 68?",
+          "answer": {
+            "text": "Difference 63: 68 take away 5; difference 33: 79 take away 46",
+            "explanation": "68 – 5 = 63 and 79 – 46 = 33; the other pairings give the differences 74 or 22."
+          }
         }
       },
       "feedback": {
@@ -1416,7 +1739,19 @@
           "Trừ thử từng cặp số rồi so với thẻ hiệu nhé.",
           "Mỗi thẻ chỉ dùng một lần thôi đấy.",
           "Hiệu ấy chưa khớp, thử đổi số trừ khác xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You beat the secret card box, and Butter Koala hugs it and giggles.",
+            "The two subtractions match each card, with no card left over.",
+            "Black Cat smiles: truly a master at naming the parts of a calculation."
+          ],
+          "wrong": [
+            "Subtract each pair of numbers and compare with the difference cards.",
+            "Each card can only be used once.",
+            "That difference doesn't match, so try a different subtrahend."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1424,7 +1759,12 @@
           "b2": "o7946bang33"
         }
       },
-      "objective": "thanh-phan-phep-tinh-phep-tru"
+      "objective": "thanh-phan-phep-tinh-phep-tru",
+      "en": {
+        "title": "The secret number card box",
+        "goTo": "Run out to the flowerbed, where Butter Koala is clutching the secret number card box tightly",
+        "prompt": "Butter Koala opens the secret card box: minuend cards 68 and 79, subtrahend cards 5 and 46, difference cards 63 and 33. Match exactly one subtraction to each difference card."
+      }
     },
     {
       "id": "huy-hieu-bang-tin",
@@ -1457,5 +1797,9 @@
       "phep-cong": 1,
       "phep-tru": 1
     }
+  },
+  "en": {
+    "title": "Name tags on the notice board",
+    "summary": "The wind has blown the \"Số hạng\", \"Tổng\", \"Số bị trừ\" and \"Hiệu\" signs all over the notice board. {name} and Black Cat name each part of an addition and a subtraction correctly, while Tiny Monkey keeps reading them out all wrong."
   }
 }

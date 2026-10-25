@@ -94,7 +94,11 @@
         "toan2-cd3-thung-qua-xanh",
         "toan2-cd3-thung-qua-do",
         "toan2-cd3-thung-qua-vang"
-      ]
+      ],
+      "en": {
+        "title": "Three gift boxes mixed among rice sacks",
+        "goTo": "Find three gift boxes mixed in among the rice sacks in the warehouse"
+      }
     },
     {
       "id": "kg-di-voi-kg",
@@ -260,6 +264,17 @@
         "answer": {
           "text": "30 kg + 50 kg = 80 kg; 9 kg + 6 kg = 15 kg; 43 kg + 25 kg = 68 kg; 90 kg – 30 kg = 60 kg; 15 kg – 8 kg = 7 kg; 78 kg – 42 kg = 36 kg",
           "explanation": "30 + 50 = 80, 9 + 6 = 15, 43 + 25 = 68, 90 – 30 = 60, 15 – 8 = 7, 78 – 42 = 36; tất cả kèm kg."
+        },
+        "en": {
+          "guide": [
+            "Work out the numbers and keep the unit kg.",
+            "For round tens, add and subtract by the tens."
+          ],
+          "hint": "15 – 8: split 8 = 5 + 3; 15 – 5 = 10, then 10 – 3 = 7.",
+          "answer": {
+            "text": "Answers: 30 kg + 50 kg = 80 kg; 9 kg + 6 kg = 15 kg; 43 kg + 25 kg = 68 kg; 90 kg – 30 kg = 60 kg; 15 kg – 8 kg = 7 kg; 78 kg – 42 kg = 36 kg",
+            "explanation": "30 + 50 = 80, 9 + 6 = 15, 43 + 25 = 68, 90 – 30 = 60, 15 – 8 = 7, 78 – 42 = 36; all with kg."
+          }
         }
       },
       "feedback": {
@@ -272,7 +287,19 @@
           "Tính phần số trước, đơn vị kg để nguyên.",
           "Phép 9 kg + 6 kg đi qua 10, nhớ tách số cho dễ.",
           "Có một nhãn đang sai số, dò lại từng phép."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six boxes now have clear labels, and Ice Bear is so happy he forgets to sneeze!",
+            "Neat kilogram sums, and Uncle Lượm stamps them straight away.",
+            "Every result fits, and the labels are stuck on straight as a ruler."
+          ],
+          "wrong": [
+            "Work out the numbers first and leave the unit kg as it is.",
+            "The sum 9 kg + 6 kg goes through 10, remember to split the number to make it easy.",
+            "One label has the wrong number, check each calculation."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -292,6 +319,10 @@
         "b4": "90 - 30",
         "b5": "15 - 8",
         "b6": "78 - 42"
+      },
+      "en": {
+        "title": "Kilogram labels for gift boxes",
+        "prompt": "Each gift box has a kilogram calculation stuck on it, and Ice Bear needs the results to write the labels. Work them out and fill in the numbers."
       }
     },
     {
@@ -417,6 +448,17 @@
         "answer": {
           "text": "50 l + 20 l = 70 l; 8 l + 9 l = 17 l; 54 l + 35 l = 89 l; 80 l – 30 l = 50 l; 16 l – 9 l = 7 l; 87 l – 52 l = 35 l",
           "explanation": "50 + 20 = 70, 8 + 9 = 17, 54 + 35 = 89, 80 – 30 = 50, 16 – 9 = 7, 87 – 52 = 35; tất cả kèm l."
+        },
+        "en": {
+          "guide": [
+            "Work out the numbers and then add the unit l.",
+            "A subtraction can be checked with an addition."
+          ],
+          "hint": "87 – 52: 7 – 2 = 5, 8 – 5 = 3.",
+          "answer": {
+            "text": "Answers: 50 l + 20 l = 70 l; 8 l + 9 l = 17 l; 54 l + 35 l = 89 l; 80 l – 30 l = 50 l; 16 l – 9 l = 7 l; 87 l – 52 l = 35 l",
+            "explanation": "50 + 20 = 70, 8 + 9 = 17, 54 + 35 = 89, 80 – 30 = 50, 16 – 9 = 7, 87 – 52 = 35; all with l."
+          }
         }
       },
       "feedback": {
@@ -429,7 +471,19 @@
           "Tính phần số trước, chữ l viết sau.",
           "Trừ hai số có hai chữ số thì trừ hàng đơn vị rồi hàng chục.",
           "Một bình đang mang nhãn sai, kiểm từng phép xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The milk and oil bottles all have the right labels, and Ice Bear's eyes crinkle with a smile!",
+            "Six litre calculations done as neatly as stacking boxes.",
+            "You checked with addition and it fitted straight away."
+          ],
+          "wrong": [
+            "Work out the numbers first and write the letter l after.",
+            "For subtracting two two-digit numbers, subtract the ones and then the tens.",
+            "One bottle has the wrong label, check each calculation."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -449,6 +503,11 @@
         "b4": "80 - 30",
         "b5": "16 - 9",
         "b6": "87 - 52"
+      },
+      "en": {
+        "title": "Litre labels for milk and oil bottles",
+        "goTo": "Back in the Cool Corner in the Warehouse, Ice Bear is hugging some bottles of milk and cooking oil",
+        "prompt": "Ice Bear is also sending a few bottles of milk and cooking oil for the whole family. Each bottle comes with a litre calculation. Work them out and fill in the numbers."
       }
     },
     {
@@ -505,6 +564,17 @@
         "answer": {
           "text": "a) Con gấu bông nặng bằng 3 con vịt.; b) Con voi bông nặng bằng 6 con vịt.",
           "explanation": "Con gấu bông nặng bằng 3 con vịt; con voi nặng bằng 2 con gấu, tức là 3 + 3 = 6 con vịt."
+        },
+        "en": {
+          "guide": [
+            "A level bridge means both sides weigh the same.",
+            "One bear equals 3 ducks, and the elephant equals 2 bears."
+          ],
+          "hint": "Two bears are 3 + 3 ducks.",
+          "answer": {
+            "text": "a) The stuffed bear weighs the same as 3 ducks.; b) The stuffed elephant weighs the same as 6 ducks.",
+            "explanation": "The stuffed bear weighs the same as 3 ducks; the elephant weighs the same as 2 bears, that is 3 + 3 = 6 ducks."
+          }
         }
       },
       "feedback": {
@@ -517,7 +587,19 @@
           "Cầu thăng bằng nghĩa là hai bên nặng như nhau.",
           "Con voi cân bằng với hai con gấu, mỗi gấu bằng mấy con vịt?",
           "Tính số vịt bằng hai lần con gấu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The stuffed elephant weighs as much as six ducks, and the bridge stays level!",
+            "You turned everything into ducks, just like a puzzle solver.",
+            "Ice Bear hugs the stuffed elephant with delight."
+          ],
+          "wrong": [
+            "When the bridge is level, both sides weigh the same.",
+            "The elephant balances with two bears, so how many ducks is each bear?",
+            "Work out the number of ducks as two times the bear."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -528,6 +610,10 @@
       "objective": "khoi-luong-dung-tich-nang-nhe",
       "expression": {
         "b2": "3 + 3"
+      },
+      "en": {
+        "title": "Stuffed toys on the balance bridge",
+        "prompt": "Ice Bear has three stuffed toys to send as presents: a duck, a bear and an elephant. The first time, 1 stuffed bear balances with 3 ducks; the second time, 1 stuffed elephant balances with 2 stuffed bears. Both times the bridge is level. Fill in the numbers."
       }
     },
     {
@@ -615,6 +701,17 @@
         "answer": {
           "text": "Hai túi nặng 8 kg và 6 kg",
           "explanation": "Túi 8 kg và túi 6 kg: 8 kg + 6 kg = 14 kg."
+        },
+        "en": {
+          "guide": [
+            "Choose exactly two bags.",
+            "The two bags added together must equal 14 kg."
+          ],
+          "hint": "How many more kilograms does the 8 kg bag need to make 14 kg?",
+          "answer": {
+            "text": "The two bags weigh 8 kg and 6 kg",
+            "explanation": "The 8 kg bag and the 6 kg bag: 8 kg + 6 kg = 14 kg."
+          }
         }
       },
       "feedback": {
@@ -627,7 +724,19 @@
           "Phải chọn đúng hai túi, không nhiều không ít.",
           "Cộng hai túi đã chọn xem có tới 14 kg chưa.",
           "Túi nhỏ nhất ghép với túi nào cũng không đủ 14 kg."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The two bags make exactly 14 kg, and Granny will be delighted!",
+            "Sticky Rice Bear lifts the two bags onto her shoulder as if they weighed nothing.",
+            "You paired the right bags at your very first try."
+          ],
+          "wrong": [
+            "You must choose exactly two bags, no more and no fewer.",
+            "Add the two bags you chose and see if they reach 14 kg.",
+            "The smallest bag can't reach 14 kg with any other bag."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -635,7 +744,19 @@
           "6-kg"
         ]
       },
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "Two bags make 14 kg",
+        "goTo": "Go to the Rice Sack Rack, where Sticky Rice Bear is waiting with a bag of rice in her arms",
+        "prompt": "Five bags of rice weigh 3 kg, 5 kg, 4 kg, 8 kg and 6 kg. Sticky Rice Bear must choose exactly two bags to make a total of 14 kg of rice to send to her uncle's house. Choose those two bags.",
+        "choices": [
+          "3 kg",
+          "5 kg",
+          "4 kg",
+          "8 kg",
+          "6 kg"
+        ]
+      }
     },
     {
       "id": "ba-tui-chin-kg",
@@ -677,6 +798,17 @@
         "answer": {
           "text": "Ba túi nặng 3 kg, 4 kg và 6 kg",
           "explanation": "Túi 3 kg, 4 kg và 6 kg: 3 kg + 4 kg + 6 kg = 13 kg."
+        },
+        "en": {
+          "guide": [
+            "This time take exactly three bags.",
+            "The three bags added together equal 13 kg."
+          ],
+          "hint": "Try three light bags first, and see how much the total is short by.",
+          "answer": {
+            "text": "The three bags weigh 3 kg, 4 kg and 6 kg",
+            "explanation": "The 3 kg, 4 kg and 6 kg bags: 3 kg + 4 kg + 6 kg = 13 kg."
+          }
         }
       },
       "feedback": {
@@ -689,7 +821,19 @@
           "Phải chọn đúng ba túi, đếm lại xem đã đủ chưa.",
           "Cộng ba túi đã chọn, tổng phải đúng 13 kg.",
           "Túi 8 kg lớn quá, thử bỏ nó ra xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three bags make exactly 13 kg, and Ice Bear cheers without sneezing!",
+            "You added three bags in one smooth go without losing the beat.",
+            "Uncle Lượm stamps \"full weight\" with a loud thump."
+          ],
+          "wrong": [
+            "You must choose exactly three bags, count again to see if you have enough.",
+            "Add the three bags you chose, the total must be exactly 13 kg.",
+            "The 8 kg bag is too big, try leaving it out."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -698,7 +842,19 @@
           "6-kg"
         ]
       },
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "Three bags make 13 kg",
+        "goTo": "Carry the rice into the Cool Corner in the Warehouse, where Ice Bear is waiting for the rice for Auntie's family",
+        "prompt": "Now for the rice for Auntie's family. The five bags still weigh 3 kg, 5 kg, 4 kg, 8 kg and 6 kg. Ice Bear must choose exactly three bags to make a total of 13 kg. Choose those three bags.",
+        "choices": [
+          "3 kg",
+          "5 kg",
+          "4 kg",
+          "8 kg",
+          "6 kg"
+        ]
+      }
     },
     {
       "id": "xang-cho-xe-cho-hang",
@@ -717,6 +873,17 @@
         "answer": {
           "text": "39 l",
           "explanation": "Hai xe đổ tất cả 34 l + 5 l = 39 l xăng."
+        },
+        "en": {
+          "guide": [
+            "Both vehicles altogether means putting together: addition.",
+            "Add 34 and 5: only add in the ones place."
+          ],
+          "hint": "Try: 34 l + 5 l = ? l",
+          "answer": {
+            "text": "39 l",
+            "explanation": "The two vehicles take 34 l + 5 l = 39 l of petrol altogether."
+          }
         }
       },
       "feedback": {
@@ -729,13 +896,30 @@
           "Hai xe đổ cộng lại thì làm phép cộng.",
           "Chữ số hàng chục giữ nguyên, chỉ cộng hàng đơn vị.",
           "Kết quả phải lớn hơn 34 l đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The tank is full, and Bon Lion revs the engine with excitement!",
+            "Thirty-nine litres, worked out as quick as the wind.",
+            "Sticky Rice Bear writes it in her spending book: every litre added right."
+          ],
+          "wrong": [
+            "Both vehicles' petrol added together is an addition.",
+            "The tens digit stays the same, only add the ones.",
+            "The result must be more than 34 l."
+          ]
+        }
       },
       "answer": {
         "value": 39
       },
       "objective": "khoi-luong-dung-tich-tinh",
-      "expression": "34 + 5"
+      "expression": "34 + 5",
+      "en": {
+        "title": "Petrol for the delivery truck",
+        "goTo": "Carry the gift boxes out to the Canal Loading Dock, where Bon Lion is waiting with the delivery truck",
+        "question": "Bon Lion honks beep beep: \"To drive to the north we must fill up with petrol first! Here is a riddle for {name}.\" At the petrol station next to the dock, Sticky Rice Bear's lorry takes 34 l of petrol and Bon's motorbike takes 5 l of petrol. How many litres of petrol do the two vehicles take altogether?"
+      }
     },
     {
       "id": "khan-len-tuyet-trang",
@@ -768,5 +952,9 @@
       "dung-tich": 1,
       "phep-cong": 1
     }
+  },
+  "en": {
+    "title": "The Parcel Sent Far Away",
+    "summary": "Ice Bear is packing gift boxes to send to the freezing north, but the kilogram and litre labels are still blank; {name} works out the labels for each box at Uncle Lượm the Storekeeper's table, weighs stuffed toys on the balance bridge, picks bags of rice with Sticky Rice Bear and works out petrol for Bon Lion's delivery truck at the Canal Loading Dock."
   }
 }

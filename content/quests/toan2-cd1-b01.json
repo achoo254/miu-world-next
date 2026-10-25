@@ -276,6 +276,17 @@
         "answer": {
           "text": "6, 2, 62; 3, 8, Ba mươi tám; 4, 5, 45, Bốn mươi lăm",
           "explanation": "Đếm bó cho số chục, đếm que lẻ cho số đơn vị; 4 bó và 5 que lẻ là 45, đọc \"Bốn mươi lăm\"."
+        },
+        "en": {
+          "guide": [
+            "Each bundle is one ten, and each loose stick is one unit.",
+            "Write the tens first and the units after; a final 5 is read \"lăm\"."
+          ],
+          "hint": "In the sample row, 2 bundles and 7 loose sticks make 27.",
+          "answer": {
+            "text": "Answers: 6, 2, 62; 3, 8, Ba mươi tám; 4, 5, 45, Bốn mươi lăm",
+            "explanation": "Count the bundles for the tens and the loose sticks for the units; 4 bundles and 5 loose sticks make 45, read \"Bốn mươi lăm\"."
+          }
         }
       },
       "feedback": {
@@ -288,7 +299,19 @@
           "Có một ô lệch, so lại với dòng mẫu 27 xem.",
           "Số 45 đọc là \"bốn mươi lăm\", đừng nhầm với \"năm\".",
           "Đếm lại bó mười trước, rồi mới đếm que lẻ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The sticks sit snugly in their bundles, and Golden Lion rumbles softly with joy.",
+            "You read the numbers smoothly, even the tricky \"lăm\".",
+            "The counting-stick table is full, and no wind can blow it away now."
+          ],
+          "wrong": [
+            "One box is off. Compare it with the sample row, 27.",
+            "45 is read \"bốn mươi lăm\", not \"năm\".",
+            "Count the bundles of ten first, then the loose sticks."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -308,7 +331,11 @@
         "a3": "60 + 2",
         "c3": "40 + 5"
       },
-      "objective": "so-den-100-doc-viet-dem"
+      "objective": "so-den-100-doc-viet-dem",
+      "en": {
+        "title": "Count the bundles of sticks",
+        "prompt": "Golden Lion ties counting sticks into bundles of ten. Each row of the table shows only part of the number, so fill in what is missing. The last row is 4 bundles and 5 single sticks."
+      }
     },
     {
       "id": "ca-rot-cho-tho",
@@ -360,6 +387,17 @@
         "answer": {
           "text": "81, 50, 38",
           "explanation": "Ghép số chục với số đơn vị: 8 chục 1 đơn vị là 81, 5 chục 0 đơn vị là 50, 3 chục 8 đơn vị là 38."
+        },
+        "en": {
+          "guide": [
+            "The tens are the digit on the left and the units the digit on the right.",
+            "Carrot 63 is the spare, and no card matches it."
+          ],
+          "hint": "The card with 5 tens and 0 units has just one 0 at the end.",
+          "answer": {
+            "text": "81, 50, 38",
+            "explanation": "Put the tens and units together: 8 tens 1 unit is 81, 5 tens 0 units is 50, 3 tens 8 units is 38."
+          }
         }
       },
       "feedback": {
@@ -372,7 +410,19 @@
           "Có bạn thỏ ôm nhầm củ, mặt ngơ ngác kìa.",
           "81 và 18 khác nhau, xem chữ số nào đứng bên trái.",
           "Thẻ không có đơn vị thì chữ số cuối là 0 nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three bunnies hug the right carrot and hop for joy.",
+            "Dimple Bunny wiggles her ears: every carrot has its owner, and only 63 is left out.",
+            "You matched the cards so neatly that even Chip nods approvingly."
+          ],
+          "wrong": [
+            "One bunny has the wrong carrot and looks puzzled.",
+            "81 and 18 are different, so look at which digit comes first on the left.",
+            "A card with no units ends in the digit 0."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -381,7 +431,17 @@
           "tho-38": "ca-rot-38"
         }
       },
-      "objective": "so-den-100-chuc-don-vi"
+      "objective": "so-den-100-chuc-don-vi",
+      "en": {
+        "title": "Find carrots for the bunny",
+        "goTo": "Go to the stone bench in the schoolyard, where Dimple Bunny is hugging a bunch of numbered carrots",
+        "prompt": "Dimple Bunny holds three cards showing tens and units. Each card matches exactly one numbered carrot; carrot 63 is the spare one that Chip nibbled.",
+        "items": [
+          "8 tens and 1 unit",
+          "5 tens and 0 units",
+          "3 tens and 8 units"
+        ]
+      }
     },
     {
       "id": "so-gom-chuc-don-vi",
@@ -505,6 +565,17 @@
         "answer": {
           "text": "85; 71 – Bảy mươi mốt; 5 chục và 6 đơn vị – Năm mươi sáu",
           "explanation": "8 chục 5 đơn vị viết 85; 7 chục 1 đơn vị viết 71, đọc \"bảy mươi mốt\"; số 56 gồm 5 chục và 6 đơn vị."
+        },
+        "en": {
+          "guide": [
+            "Write the tens first and the units after.",
+            "When the units are 1, it is read \"mốt\"; when they are 5, it is read \"lăm\"."
+          ],
+          "hint": "56 is made of 5 tens and 6 units.",
+          "answer": {
+            "text": "85; 71 – Bảy mươi mốt; 5 tens and 6 units – Năm mươi sáu",
+            "explanation": "8 tens 5 units is written 85; 7 tens 1 unit is written 71, read \"bảy mươi mốt\"; the number 56 is made of 5 tens and 6 units."
+          }
         }
       },
       "feedback": {
@@ -517,7 +588,19 @@
           "85 và 58 khác nhau đấy, xem số chục đứng ở đâu.",
           "Chữ số 1 ở cuối thì đọc là \"mốt\", không phải \"một\".",
           "Số 56 có mấy chục, mấy đơn vị? Đếm lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three rows are read correctly, and Dimple Bunny swallows her carrot at last.",
+            "You use \"mốt\" and \"lăm\" in just the right places, like a native speaker.",
+            "Tens first, units after, all lined up neatly."
+          ],
+          "wrong": [
+            "85 and 58 are different, so check where the tens go.",
+            "A last digit 1 is read \"mốt\", not \"một\".",
+            "How many tens and how many units does 56 have? Count again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -533,7 +616,11 @@
         "a": "80 + 5",
         "b1": "70 + 1"
       },
-      "objective": "so-den-100-doc-viet-dem"
+      "objective": "so-den-100-doc-viet-dem",
+      "en": {
+        "title": "How many tens in the number",
+        "prompt": "Dimple Bunny wrote half the table, then choked on a carrot. Fill in the missing boxes for her."
+      }
     },
     {
       "id": "binh-hoa-huong-duong",
@@ -601,6 +688,17 @@
         "answer": {
           "text": "Giỏ trên 70: 76, 98. Giỏ dưới 40: 39, 17. Giỏ giữa 40 và 50: 43, 48. Để riêng: 40.",
           "explanation": "76 và 98 đều hơn 70; 39 và 17 đều kém 40; 43 và 48 nằm trong khoảng 40 đến 50; bông 40 bằng mốc nên ở riêng."
+        },
+        "en": {
+          "guide": [
+            "Look at the tens digit first, and if the tens are equal, compare the units.",
+            "40 is exactly the mark, so it is neither greater than 40 nor less than 40."
+          ],
+          "hint": "The basket between 40 and 50 takes only numbers with 4 tens that are not 40.",
+          "answer": {
+            "text": "Over 70: 76, 98. Under 40: 39, 17. Between 40 and 50: 43, 48. Set aside: 40.",
+            "explanation": "76 and 98 are both more than 70; 39 and 17 are both less than 40; 43 and 48 lie between 40 and 50; the flower 40 equals the mark, so it is set aside."
+          }
         }
       },
       "feedback": {
@@ -613,7 +711,19 @@
           "Còn một bông nằm sai giỏ, so lại hàng chục nhé.",
           "Số 40 có bé hơn 40 không nhỉ? Nghĩ lại chút.",
           "Giỏ giữa chỉ chứa số lớn hơn 40 và bé hơn 50 thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three baskets are full, and the Sparrow Class door is bright again.",
+            "Setting the 40 flower aside is spot on, and Auntie Nguyệt nods.",
+            "You compare numbers faster than the wind changes direction."
+          ],
+          "wrong": [
+            "One flower is in the wrong basket, so compare the tens again.",
+            "Is 40 less than 40? Think again.",
+            "The middle basket holds only numbers greater than 40 and less than 50."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -626,7 +736,21 @@
           "hoa-40": "de-rieng"
         }
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "The sunflower vase",
+        "goTo": "Run to the Sparrow Class door, where Auntie Nguyệt is setting the vase upright after the wind knocked it over",
+        "prompt": "The wind sneezed and tipped the vase at the Sparrow Class door, and the flowers are rolling around. Auntie Nguyệt asks you to put the flowers into baskets by the number on their petals: the first basket is for numbers greater than 70, the second for numbers less than 40, the third for numbers between 40 and 50. A flower that fits no basket is set aside.",
+        "items": [
+          "76",
+          "98",
+          "39",
+          "17",
+          "43",
+          "48",
+          "40"
+        ]
+      }
     },
     {
       "id": "tach-so",
@@ -716,6 +840,17 @@
         "answer": {
           "text": "73 = 70 + 3; 92 = 90 + 2; 66 = 60 + 6",
           "explanation": "Mỗi số bằng số tròn chục của nó cộng với số đơn vị: 70 + 3, 90 + 2, 60 + 6."
+        },
+        "en": {
+          "guide": [
+            "A whole ten ends in the digit 0, and the units are the last digit of the original number.",
+            "Look at the sample: 48 is 40 and 8."
+          ],
+          "hint": "92 has 9 tens, which is 90.",
+          "answer": {
+            "text": "73 = 70 + 3; 92 = 90 + 2; 66 = 60 + 6",
+            "explanation": "Each number equals its whole tens plus its units: 70 + 3, 90 + 2, 60 + 6."
+          }
         }
       },
       "feedback": {
@@ -728,7 +863,19 @@
           "Phần tròn chục phải có số 0 ở cuối, như 90 chứ không phải 9.",
           "Cộng hai phần lại xem có ra đúng số trên thẻ không.",
           "Nhìn mẫu 48 = 40 + 8 rồi làm theo nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The flower cards split neatly, like a bun broken in half.",
+            "Tens are whole and units are single, and Auntie Nguyệt praises you warmly.",
+            "Added back together, they make the original number exactly."
+          ],
+          "wrong": [
+            "The whole-ten part must end in 0, like 90 and not 9.",
+            "Add the two parts and see if you get the number on the card.",
+            "Look at the sample 48 = 40 + 8 and follow it."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -744,7 +891,11 @@
         "c1": "? + 6 = 66",
         "c2": "60 + ? = 66"
       },
-      "objective": "so-den-100-chuc-don-vi"
+      "objective": "so-den-100-chuc-don-vi",
+      "en": {
+        "title": "Split a number into tens and ones",
+        "prompt": "Auntie Nguyệt splits the numbers on the flower cards into whole tens plus units, but the ink smudged a few. Fill in the missing parts."
+      }
     },
     {
       "id": "doi-bong-xep-hang",
@@ -826,6 +977,17 @@
         "answer": {
           "text": "26, 27, 29, 31",
           "explanation": "Ba số 26, 27, 29 đều có 2 chục, xếp theo đơn vị 6, 7, 9; số 31 có 3 chục nên đứng sau cùng."
+        },
+        "en": {
+          "guide": [
+            "The player with the smallest number stands at the front of the line.",
+            "Numbers with the same 2 tens are compared by their units."
+          ],
+          "hint": "31 has 3 tens, so it stands at the end.",
+          "answer": {
+            "text": "26, 27, 29, 31",
+            "explanation": "26, 27 and 29 all have 2 tens, so order them by the units 6, 7, 9; 31 has 3 tens, so it stands last."
+          }
         }
       },
       "feedback": {
@@ -838,7 +1000,19 @@
           "Số bé nhất phải đứng đầu hàng nhé.",
           "Hai áo 27 và 29, áo nào mang số bé hơn?",
           "Số 31 có mấy chục? Thử đặt nó ở cuối xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The line is dead straight, and Coach Nai Phi blows the whistle in praise.",
+            "All four shirts are in the right place, and nobody pushes in any more.",
+            "Smallest first, biggest last, and the team is as neat as a row of cones."
+          ],
+          "wrong": [
+            "The smallest number must stand at the front of the line.",
+            "Of shirts 27 and 29, which has the smaller number?",
+            "How many tens does 31 have? Try putting it at the end."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -848,7 +1022,17 @@
           "ao-31"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Sort shirts from smallest to biggest",
+        "prompt": "Coach Nai Phi wants four players to line up by shirt number: the smallest number first and the biggest number last.",
+        "items": [
+          "27",
+          "31",
+          "26",
+          "29"
+        ]
+      }
     },
     {
       "id": "ao-lon-den-be",
@@ -886,6 +1070,17 @@
         "answer": {
           "text": "53, 49, 48, 47",
           "explanation": "53 có 5 chục nên lớn nhất; ba số còn lại cùng 4 chục, xếp theo đơn vị 9, 8, 7."
+        },
+        "en": {
+          "guide": [
+            "This time the biggest number stands at the front.",
+            "The order you need is the reverse of the smallest-to-biggest line."
+          ],
+          "hint": "Shirt 53 has 5 tens, the most, so it leads.",
+          "answer": {
+            "text": "53, 49, 48, 47",
+            "explanation": "53 has 5 tens, so it is the biggest; the other three have 4 tens, so order them by the units 9, 8, 7."
+          }
         }
       },
       "feedback": {
@@ -898,7 +1093,19 @@
           "Lượt này người mang số lớn đứng trước cơ.",
           "47 và 49, số nào lớn hơn thì ra trước.",
           "Áo 47 bé nhất trong bốn áo, nó phải đứng cuối."
-        ]
+        ],
+        "en": {
+          "right": [
+            "You switched direction without a mistake, and Strong Bear gives a thumbs up.",
+            "Shirt 53 leads, and the whole team runs in step.",
+            "Your biggest-to-smallest order is right for every player."
+          ],
+          "wrong": [
+            "This time the player with the bigger number stands in front.",
+            "Of 47 and 49, the bigger one goes first.",
+            "Shirt 47 is the smallest of the four, so it must stand last."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -908,7 +1115,18 @@
           "ao-47"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "Sort shirts from biggest to smallest",
+        "goTo": "Go over to the goal, where captain Strong Bear wants the shirts in the opposite order",
+        "prompt": "Captain Strong Bear wants the line the other way round: the biggest number leads and the smallest brings up the rear.",
+        "items": [
+          "48",
+          "53",
+          "47",
+          "49"
+        ]
+      }
     },
     {
       "id": "so-chuc-don-vi",
@@ -1067,6 +1285,17 @@
         "answer": {
           "text": "72: 7 chục 2 đơn vị; 95: 9 chục 5 đơn vị; 60: 6 chục 0 đơn vị; 88: 8 chục 8 đơn vị",
           "explanation": "Mỗi số hai chữ số gồm chữ số hàng chục ở bên trái và chữ số hàng đơn vị ở bên phải."
+        },
+        "en": {
+          "guide": [
+            "The digit on the left is the tens and the digit on the right is the units.",
+            "72 and 27 use the same two digits, but the tens and units swap places."
+          ],
+          "hint": "A whole ten like 60 has 0 units.",
+          "answer": {
+            "text": "72: 7 tens 2 units; 95: 9 tens 5 units; 60: 6 tens 0 units; 88: 8 tens 8 units",
+            "explanation": "Every two-digit number has its tens digit on the left and its units digit on the right."
+          }
         }
       },
       "feedback": {
@@ -1079,7 +1308,19 @@
           "72 và 27 không giống nhau, nhìn chữ số bên trái.",
           "Số tròn chục thì đơn vị bằng mấy nhỉ?",
           "Hai chữ số của 88 giống nhau nhưng vẫn là chục và đơn vị."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The tens and units columns are back in place, and the board shines.",
+            "The number 60 has no loose units, and you remembered that well.",
+            "Auntie Nguyệt writes a ten out of ten in the corner of the board."
+          ],
+          "wrong": [
+            "72 and 27 are not the same, so look at the digit on the left.",
+            "What are the units of a whole ten?",
+            "The two digits of 88 are the same, but they are still tens and units."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1093,7 +1334,12 @@
           "d2": "o8"
         }
       },
-      "objective": "so-den-100-chuc-don-vi"
+      "objective": "so-den-100-chuc-don-vi",
+      "en": {
+        "title": "Tens and ones",
+        "goTo": "Back to the flagpole, where the number board still has gaps",
+        "prompt": "Auntie Nguyệt wiped the board too hard and lost the tens and units columns of a few numbers. Write them back in for her."
+      }
     },
     {
       "id": "the-so-lap-so",
@@ -1150,6 +1396,17 @@
         "answer": {
           "text": "26, 28, 62, 68, 82, 86",
           "explanation": "Thẻ 2 đứng đầu cho 26 và 28; thẻ 6 cho 62 và 68; thẻ 8 cho 82 và 86."
+        },
+        "en": {
+          "guide": [
+            "There is only one of each card, so you cannot use one twice.",
+            "A two-digit number uses just two cards, not all three."
+          ],
+          "hint": "Each card can stand in the tens place twice, paired with each of the other two cards.",
+          "answer": {
+            "text": "26, 28, 62, 68, 82, 86",
+            "explanation": "Card 2 first makes 26 and 28; card 6 makes 62 and 68; card 8 makes 82 and 86."
+          }
         }
       },
       "feedback": {
@@ -1162,7 +1419,19 @@
           "22 và 88 cần dùng một thẻ tới hai lần, không được đâu.",
           "Số có ba chữ số thì không phải số hai chữ số nhé.",
           "Còn thiếu một số, thử cho thẻ 8 đứng đầu xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six numbers are found, and Chip counts again and again to be sure they fit.",
+            "Every card is used properly, and no number cheats.",
+            "You pair the cards in a flash, and Chip stares in admiration."
+          ],
+          "wrong": [
+            "22 and 88 would use one card twice, which is not allowed.",
+            "A three-digit number is not a two-digit number.",
+            "One number is missing, so try putting card 8 first."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -1174,7 +1443,22 @@
           "so-86"
         ]
       },
-      "objective": "so-den-100-doc-viet-dem"
+      "objective": "so-den-100-doc-viet-dem",
+      "en": {
+        "title": "Make a number from three cards",
+        "prompt": "Chip the Chick brings back three cards showing 2, 6 and 8. Each two-digit number is made from two different cards; choose every number you can make.",
+        "choices": [
+          "26",
+          "28",
+          "62",
+          "68",
+          "82",
+          "86",
+          "22",
+          "88",
+          "268"
+        ]
+      }
     },
     {
       "id": "uoc-luong-dem",
@@ -1265,6 +1549,17 @@
         "answer": {
           "text": "Bi: khoảng 3 chục, đếm được 29. Cà chua: khoảng 5 chục, đếm được 53.",
           "explanation": "Hai nhóm mười là 20, thêm 9 viên rời được 29; năm giỏ là 50, thêm 3 quả ngoài được 53."
+        },
+        "en": {
+          "guide": [
+            "To estimate, judge roughly how many tens there are without counting carefully.",
+            "To count exactly, add the groups of ten to the loose ones."
+          ],
+          "hint": "29 is nearly 30, and 53 is a little more than 50.",
+          "answer": {
+            "text": "Marbles: about 3 tens, counted 29. Tomatoes: about 5 tens, counted 53.",
+            "explanation": "Two groups of ten make 20, and 9 loose marbles make 29; five baskets make 50, and 3 tomatoes outside make 53."
+          }
         }
       },
       "feedback": {
@@ -1277,7 +1572,19 @@
           "Đếm từng nhóm mười trước rồi mới tới phần rời.",
           "Ước chừng chỉ cần gần đúng số chục, không cần chính xác.",
           "Phần rời đếm chậm lại một chút xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A good estimate and an even better count, and Auntie Thắm writes it straight in her notebook.",
+            "The marble jar is complete, and the tomato basket is not missing a single one.",
+            "If Oink Pig knew, he would invite you into the kitchen as his assistant."
+          ],
+          "wrong": [
+            "Count the groups of ten first, then the loose ones.",
+            "An estimate only needs to be close to the tens, not exact.",
+            "Count the loose ones slowly once more."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1291,7 +1598,12 @@
         "bi2": "20 + 9",
         "ca2": "50 + 3"
       },
-      "objective": "so-den-100-doc-viet-dem"
+      "objective": "so-den-100-doc-viet-dem",
+      "en": {
+        "title": "Estimate, then count",
+        "goTo": "Go to the corner of the yard, where Auntie Thắm the janitor is minding a jar of marbles and a basket of tomatoes",
+        "prompt": "Chef Oink Pig left a jar of marbles and a basket of tomatoes in the corner of the yard and asked Auntie Thắm to get you to count them. Each time, take a quick look to estimate about how many tens there are, then count exactly."
+      }
     },
     {
       "id": "viet-thanh-tong",
@@ -1466,6 +1778,17 @@
         "answer": {
           "text": "58 = 50 + 8; 91 = 90 + 1",
           "explanation": "58 gồm 5 chục và 8 đơn vị; 91 gồm 9 chục và 1 đơn vị."
+        },
+        "en": {
+          "guide": [
+            "Do the same as the sample row: write the tens as a whole ten.",
+            "Adding the two parts must give back the original number."
+          ],
+          "hint": "5 tens is 50, and 9 tens is 90.",
+          "answer": {
+            "text": "58 = 50 + 8; 91 = 90 + 1",
+            "explanation": "58 is made of 5 tens and 8 units; 91 is made of 9 tens and 1 unit."
+          }
         }
       },
       "feedback": {
@@ -1478,7 +1801,19 @@
           "5 chục viết là 50, đừng chỉ viết 5.",
           "Xem lại dòng mẫu 76 = 70 + 6 rồi làm tương tự.",
           "91 và 19 không giống nhau, nhìn chữ số hàng chục."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both numbers are written as sums, digit by digit.",
+            "Auntie Thắm circles your work in chalk.",
+            "You understand how a number is built, as firmly as a house post."
+          ],
+          "wrong": [
+            "5 tens is written 50, not just 5.",
+            "Look at the sample 76 = 70 + 6 again and do the same.",
+            "91 and 19 are not the same, so look at the tens digit."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1500,7 +1835,11 @@
         "c4": "? + 1 = 91",
         "c5": "90 + ? = 91"
       },
-      "objective": "so-den-100-chuc-don-vi"
+      "objective": "so-den-100-chuc-don-vi",
+      "en": {
+        "title": "Write a number as a sum",
+        "prompt": "Auntie Thắm writes 76 on the wall as an example. Write the other two numbers the same way."
+      }
     },
     {
       "id": "mieng-bia-bang-so",
@@ -1556,6 +1895,17 @@
         "answer": {
           "text": "A – ô tím, B – ô đỏ, C – ô xanh, D – ô vàng",
           "explanation": "Mỗi miếng bìa khớp với ô cùng hàng chục và cùng cột đơn vị: A ở hàng 81–100, B và D ở hàng 51–70 (B cột 2–3, D cột 7–8), C ở hàng 11–30."
+        },
+        "en": {
+          "guide": [
+            "Look at the tens digit to see which row a card belongs to.",
+            "Two squares in the same row are told apart by the units column."
+          ],
+          "hint": "Card C has 15, 16, 25, 26, so it sits in the first and second rows of tens.",
+          "answer": {
+            "text": "A – purple, B – red, C – green, D – yellow",
+            "explanation": "Each card fits the square with the same tens row and units column: A is in rows 81–100, B and D are in rows 51–70 (B in columns 2–3, D in columns 7–8), C is in rows 11–30."
+          }
         }
       },
       "feedback": {
@@ -1568,7 +1918,19 @@
           "Nhìn hàng chục của các số trên miếng bìa trước nhé.",
           "Ô đỏ và ô vàng cùng hàng, khác cột đơn vị.",
           "Có một miếng bìa đang đi lạc sang hàng khác."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four holes are patched, and the number board is whole again.",
+            "Every card fits like a jigsaw piece.",
+            "Golden Lion hangs the board on the flagpole, and even a strong wind cannot drop it."
+          ],
+          "wrong": [
+            "Look at the tens of the numbers on the cards first.",
+            "Red and yellow squares are in the same rows but in different units columns.",
+            "One card has wandered off to the wrong row."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1578,7 +1940,18 @@
           "bia-d": "o-vang"
         }
       },
-      "objective": "so-den-100-doc-viet-dem"
+      "objective": "so-den-100-doc-viet-dem",
+      "en": {
+        "title": "Fit the cardboard pieces into the number table",
+        "goTo": "Back to the flagpole, where Golden Lion holds up the number board with four holes in it",
+        "prompt": "The school's hundred-square number board has four square holes, and each hole fits one card of four numbers. Green squares are in rows 11–30; red squares are in rows 51–70, units columns 2–3; yellow squares are in rows 51–70, units columns 7–8; purple squares are in rows 81–100. Stick each card into the right hole.",
+        "items": [
+          "Piece A: 83, 84, 93, 94",
+          "Piece B: 52, 53, 62, 63",
+          "Piece C: 15, 16, 25, 26",
+          "Piece D: 57, 58, 67, 68"
+        ]
+      }
     },
     {
       "id": "so-lon-nhat-moi-mieng",
@@ -1615,6 +1988,17 @@
         "answer": {
           "text": "26, 63, 68, 94",
           "explanation": "So hàng chục: 2 < 6 < 9; hai số 63 và 68 cùng 6 chục thì so đơn vị 3 < 8."
+        },
+        "en": {
+          "guide": [
+            "The biggest number on each card is in the bottom-right corner.",
+            "Then compare the four numbers: tens first, units after."
+          ],
+          "hint": "The four biggest numbers are 94, 63, 26 and 68.",
+          "answer": {
+            "text": "26, 63, 68, 94",
+            "explanation": "Compare the tens: 2 < 6 < 9; 63 and 68 both have 6 tens, so compare the units: 3 < 8."
+          }
         }
       },
       "feedback": {
@@ -1627,7 +2011,19 @@
           "63 và 68 cùng hàng chục, hãy so tiếp hàng đơn vị.",
           "Số bé nhất trong bốn số là số nào?",
           "Nhớ lấy số lớn nhất của từng miếng bìa trước đã."
-        ]
+        ],
+        "en": {
+          "right": [
+            "It is done, and the school drum sounds right on time.",
+            "The four biggest numbers stand in a neat line.",
+            "63 comes before 68, and you compared without a single slip."
+          ],
+          "wrong": [
+            "63 and 68 have the same tens, so compare the units next.",
+            "Which of the four numbers is the smallest?",
+            "Remember to take the biggest number of each card first."
+          ]
+        }
       },
       "answer": {
         "order": [
@@ -1637,7 +2033,17 @@
           "lon-nhat-94"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "The biggest number on each cardboard piece",
+        "prompt": "Each card you just stuck on has one biggest number. Pick the biggest number from all four cards and put them in a line, from smallest to biggest.",
+        "items": [
+          "94",
+          "63",
+          "26",
+          "68"
+        ]
+      }
     },
     {
       "id": "huy-hieu-bang-so",
@@ -1669,5 +2075,9 @@
       "so-den-100": 2,
       "so-sanh-so": 1
     }
+  },
+  "en": {
+    "title": "Number table blown by the wind",
+    "summary": "The opening-day wind has blown away the school's number board and tousled Golden Lion's mane. {name} runs all over the schoolyard counting sticks, finding carrots with Dimple Bunny and lining up shirts for Coach Nai Phi's team, to put the numbers up to 100 back together."
   }
 }

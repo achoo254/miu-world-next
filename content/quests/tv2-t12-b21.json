@@ -123,7 +123,11 @@
         "tv2-t12-cuon-day-dieu",
         "tv2-t12-sao-truc-dieu",
         "tv2-t12-phien-da-tho"
-      ]
+      ],
+      "en": {
+        "title": "Pick up things dropped on the hillside",
+        "goTo": "Go down the grassy hillside to look for the kite's things"
+      }
     },
     {
       "id": "tro-choi-trong-tranh",
@@ -184,6 +188,17 @@
         "answer": {
           "text": "Dòng nói về gió nâng diều bay lên.",
           "explanation": "Bài thơ có bốn khổ và khổ nào cũng mở đầu bằng cùng một dòng, nói gió là người đưa diều lên cao."
+        },
+        "en": {
+          "guide": [
+            "Look at the first line of verse one, then compare it with the first lines of the other verses.",
+            "Which line is exactly the same in all four verses?"
+          ],
+          "hint": "The line you want mentions what lifted the kite's wings into the sky.",
+          "answer": {
+            "text": "The line about the wind lifting the kite.",
+            "explanation": "The poem has four verses and every one opens with the same line, saying the wind carries the kite up high."
+          }
         }
       },
       "feedback": {
@@ -196,9 +211,31 @@
           "Dòng ấy chưa có mặt ở đủ bốn khổ đâu. So dòng đầu của hai khổ liền nhau xem.",
           "Tiếng sáo kêu nằm giữa mỗi khổ, chứ không đứng ở đầu khổ. Đọc lại nhé.",
           "Gợi ý nhỏ: dòng cần tìm nói về gió và việc diều bay lên."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! That opening line rings out four times, like the wind calling the kite.",
+            "Nimble Monkey claps to the beat: four verses, four times the wind lifts the kite. Spot on!",
+            "Green Parrot flaps its wings in praise: {name} found the repeated line faster than the wind!"
+          ],
+          "wrong": [
+            "That line is not in all four verses. Compare the first lines of two verses side by side.",
+            "The flute's sound comes in the middle of each verse, not at the start. Read again.",
+            "A small hint: the line you want is about the wind and the kite rising."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem on the stone slab",
+        "goTo": "Go to the poem-carved slab and read the poem “Diều và gió”",
+        "question": "Nimble Monkey says: to learn a poem by heart, first read it carefully! Here is a warm-up for {name}: which line opens all four verses of the poem?",
+        "choices": [
+          "The wind lifts the kite up",
+          "The kite flies so high",
+          "The flute whistles softly"
+        ]
+      }
     },
     {
       "id": "dieu-luc-nao",
@@ -234,6 +271,17 @@
         "answer": {
           "text": "Giữa bầu trời, lướt qua các đám mây.",
           "explanation": "Thuyền chỉ là hình ảnh so sánh; thứ nó rẽ qua là mây, nên cánh diều đang ở trên cao, giữa trời."
+        },
+        "en": {
+          "guide": [
+            "Read the verse with the boat again.",
+            "What does that boat part as it goes?"
+          ],
+          "hint": "A boat usually sails on a river, but the boat in the poem parts the clouds, so it is somewhere very different.",
+          "answer": {
+            "text": "In the middle of the sky, gliding past the clouds.",
+            "explanation": "The boat is only a comparison; what it parts is the clouds, so the kite is high up in the sky."
+          }
         }
       },
       "feedback": {
@@ -246,9 +294,30 @@
           "Con thuyền ấy rẽ mây cơ mà, mặt sông làm gì có mây để rẽ nhỉ?",
           "Dưới chân đồi chỉ có cỏ thôi. Đọc lại dòng “Rẽ mây mà đi” xem.",
           "Gần đúng rồi! Thử hỏi: thuyền rẽ qua cái gì, và cái đó nằm ở đâu?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Nimble Monkey swings once round the branch: the boat sails through the clouds, right!",
+            "Right! If it parts clouds, it can only be in the middle of the sky.",
+            "Green Parrot cries: a flying boat! A flying boat! {name} understands the image so fast!"
+          ],
+          "wrong": [
+            "The boat parts clouds, and a river surface has no clouds to part, does it?",
+            "At the foot of the hill there is only grass. Read the line “Rẽ mây mà đi” again.",
+            "Nearly! Ask yourself: what does the boat part, and where is that?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The boat in the sky",
+        "prompt": "Nimble Monkey looks up at the sky and forgets to count the beat after verse two. The two lines “Diều là con thuyền / Rẽ mây mà đi” tell where the kite is gliding. Where is it?",
+        "choices": [
+          "In the middle of the sky, passing through the clouds",
+          "On the smooth surface of the river",
+          "At the foot of the hill, on the grass"
+        ]
+      }
     },
     {
       "id": "dieu-bien-hinh",
@@ -306,6 +375,17 @@
         "answer": {
           "text": "chiếc lá, con thuyền, vầng trăng, cánh chim",
           "explanation": "Mỗi khổ thơ ví diều với một vật khác nhau, theo thứ tự: chiếc lá, con thuyền, vầng trăng, cánh chim."
+        },
+        "en": {
+          "guide": [
+            "Find the lines that begin with “Diều là”.",
+            "Right after those two words comes the thing the kite is compared to."
+          ],
+          "hint": "There are four things: something that falls from a tree, a vehicle on water, something shining in the night sky and a creature that flies.",
+          "answer": {
+            "text": "chiếc lá (leaf), con thuyền (boat), vầng trăng (moon), cánh chim (bird's wing)",
+            "explanation": "Each verse compares the kite to a different thing, in this order: chiếc lá (a leaf), con thuyền (a boat), vầng trăng (a moon), cánh chim (a bird's wing)."
+          }
         }
       },
       "feedback": {
@@ -318,9 +398,35 @@
           "Còn sót hoặc thừa một vật. Tìm lại những dòng bắt đầu bằng “Diều là” nhé.",
           "Lũy tre và bãi cỏ chỉ là cảnh vật trong bài, chúng không phải thứ diều được ví.",
           "Đám mây là thứ con thuyền rẽ qua, chứ diều đâu được ví là mây. Chọn lại nha."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four! Nimble Monkey counts on his toes: one, two, three, four, exactly right.",
+            "The kite changed shape four times and {name} caught all four!",
+            "Green Parrot shouts: leaf! boat! moon! bird! Wonderful!"
+          ],
+          "wrong": [
+            "One is missing or one is extra. Find the lines that begin with “Diều là” again.",
+            "The bamboo hedge and the grass are only scenery in the poem, not things the kite is compared to.",
+            "Clouds are what the boat parts, the kite is not compared to clouds. Choose again."
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "The kite changes shape",
+        "goTo": "Go down to the grass halfway up the hill, where Cloud Calf lies on his back watching clouds change shape",
+        "prompt": "Green Parrot boasts: I saw the kite change shape several times in a row, like magic! Choose the things the kite is compared to in the poem.",
+        "choices": [
+          "chiếc lá",
+          "bãi cỏ",
+          "con thuyền",
+          "lũy tre",
+          "vầng trăng",
+          "đám mây",
+          "cánh chim"
+        ]
+      }
     },
     {
       "id": "kho-tho-cuoi",
@@ -357,6 +463,17 @@
         "answer": {
           "text": "Bạn nhỏ rất thích ngắm diều, không muốn rời đi.",
           "explanation": "Hai dòng cuối nói mắt em dõi theo diều và chẳng muốn rời xa, nên bạn đang mê cánh diều lắm."
+        },
+        "en": {
+          "guide": [
+            "Read the last two lines of the poem.",
+            "What do the child's eyes do, and does the child want to leave the kite?"
+          ],
+          "hint": "Eyes that keep following the kite and do not want to leave: that is how someone who loves it feels.",
+          "answer": {
+            "text": "The child loves watching the kite and does not want to leave.",
+            "explanation": "The last two lines say the child's eyes follow the kite and do not want to leave it, so the child loves the kite very much."
+          }
         }
       },
       "feedback": {
@@ -369,9 +486,31 @@
           "Người chán thì đâu dõi theo mãi và chẳng muốn rời xa như thế.",
           "Trong thơ không có chuyện diều rơi hay nỗi lo nào đâu. Đọc lại hai dòng cuối nhé.",
           "Gần đúng rồi! Hãy nghĩ xem “chẳng muốn rời xa” là vui thích hay buồn chán."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Eyes that keep following surely mean the child is entranced.",
+            "Nimble Monkey hangs upside down and claps, as in love with kites as the child in the poem.",
+            "Right, the last two lines show clearly how much the child loves the kite."
+          ],
+          "wrong": [
+            "Someone bored would not keep watching and not want to leave like that.",
+            "There is no falling kite or worry in the poem. Read the last two lines again.",
+            "Nearly! Think: is “not wanting to leave” joy or boredom?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "What the final verse tells",
+        "goTo": "Back to the poem-carved slab, where nobody has read the last verse yet",
+        "prompt": "Nimble Monkey scratches his head: in the last verse the child's eyes keep following the kite, how touching! How does the child in the last verse feel when watching the kite?",
+        "choices": [
+          "The child is entranced by the kite and does not want to leave.",
+          "The child feels bored and wants to go home at once.",
+          "The child worries the kite will fall and dares not look."
+        ]
+      }
     },
     {
       "id": "tieng-sao-dieu",
@@ -416,6 +555,17 @@
         "answer": {
           "text": "vi vu",
           "explanation": "Âm thanh nghe được bằng tai: tiếng sáo vi vu. “Phấp phới” tả dáng bay, “xanh biếc” tả màu sắc."
+        },
+        "en": {
+          "guide": [
+            "Look at the line that begins with “Sáo kêu”.",
+            "Choose a word for sound, not for shape or colour."
+          ],
+          "hint": "One word describes the kite's tail flying, one the colour of leaves; only one word is about sound.",
+          "answer": {
+            "text": "vi vu",
+            "explanation": "A sound is heard with the ears: the flute sounds “vi vu”. “Phấp phới” describes how something flutters, “xanh biếc” describes colour."
+          }
         }
       },
       "feedback": {
@@ -428,9 +578,26 @@
           "“Phấp phới” là dáng đuôi diều bay trong gió, đâu phải tiếng kêu.",
           "“Xanh biếc” là màu sắc, mắt nhìn thấy chứ tai nào nghe được. Thử lại nhé.",
           "Hãy nhắm mắt nghe tiếng sáo, rồi chọn từ nói về âm thanh."
-        ]
+        ],
+        "en": {
+          "right": [
+            "It really is vi vu! Nimble Monkey shuts his eyes to listen, his tail swaying to the flute.",
+            "The right word, the flute sounds gentle as wind through leaves.",
+            "Green Parrot copies: vi vu! vi vu! A good word, a good word!"
+          ],
+          "wrong": [
+            "“Phấp phới” is how the kite's tail flutters in the wind, not a sound.",
+            "“Xanh biếc” is a colour, seen with eyes, not heard with ears. Try again.",
+            "Close your eyes and listen to the flute, then pick the word about sound."
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "Test the kite whistle",
+        "goTo": "Carry the bamboo flute to the windy hilltop to try its sound",
+        "prompt": "Nimble Monkey holds the bamboo flute up to the wind, and it goes oo… oo… so cool to the ear. Which word in the poem suits the sound of the kite's flute?"
+      }
     },
     {
       "id": "kho-tho-yeu-thich",
@@ -489,6 +656,17 @@
         "answer": {
           "text": "Cánh diều của em có đuôi dài phấp phới như cánh chim.",
           "explanation": "Khổ cuối ví diều với cánh chim và tả đuôi dài phấp phới; câu ghép lại cũng đi theo trình tự ấy."
+        },
+        "en": {
+          "guide": [
+            "The scrap that opens the sentence has a capital letter.",
+            "The scrap that ends the sentence has a full stop at the end."
+          ],
+          "hint": "Say whose kite it is first, then what it has and how it flies, and make the comparison last.",
+          "answer": {
+            "text": "My kite has a long tail fluttering like a bird's wing.",
+            "explanation": "The last verse compares the kite to a bird's wing and describes the long fluttering tail; the sentence follows the same order."
+          }
         }
       },
       "feedback": {
@@ -501,9 +679,32 @@
           "Mẩu có chữ hoa “Cánh” phải đứng ở đầu câu cơ.",
           "Dấu chấm đang lạc giữa câu kìa, đưa mẩu có dấu chấm về cuối nhé.",
           "Nói cánh diều có gì trước, rồi mới so với cánh chim nha."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The sentence sounds soft as a breeze! Nimble Monkey counts: four scraps, four beats, a perfect fit.",
+            "A long, fluttering tail like a bird's wing, what a lovely description, {name}.",
+            "Green Parrot repeats twice to remember: phấp phới! Như cánh chim!"
+          ],
+          "wrong": [
+            "The scrap with the capital “Cánh” must go at the start of the sentence.",
+            "The full stop has strayed into the middle, move the scrap with the full stop to the end.",
+            "Say what the kite has first, then compare it with a bird's wing."
+          ]
+        }
       },
-      "objective": "cau-xep-tu"
+      "objective": "cau-xep-tu",
+      "en": {
+        "title": "Paper slips describing the kite",
+        "goTo": "Chase the flying paper to the myrtle bush at the foot of the slope, where Orange Fox has caught a few scraps",
+        "prompt": "A gust of wind sends scraps of paper with Nimble Monkey's sentence tumbling about. Using the last verse, put the scraps in order to make a sentence describing a kite.",
+        "items": [
+          "like a bird's wing.",
+          "My kite",
+          "fluttering",
+          "has a long tail"
+        ]
+      }
     },
     {
       "id": "cau-ta-dieu-cua-em",
@@ -649,6 +850,17 @@
         "answer": {
           "text": "Ba bạn làm diều → Rùa Lì ngồi lại một mình → hai bạn quay lại đón → cả ba cùng nắm dây",
           "explanation": "Chuyện đi từ lúc cùng làm diều, đến lúc Rùa bị bỏ lại, lúc hai bạn quay về đón và cuối cùng là cả ba cùng thả diều."
+        },
+        "en": {
+          "guide": [
+            "Which flag shows the three friends making the kite together?",
+            "Tortoise is left behind first, then the two friends notice and go back for him."
+          ],
+          "hint": "The flag of all three holding the kite string is the end of the story.",
+          "answer": {
+            "text": "The three make a kite → Stubborn Tortoise is left sitting alone → the two go back for him → all three hold the string",
+            "explanation": "The story goes from making the kite together, to Tortoise being left behind, to the two going back, and finally all three flying the kite."
+          }
         }
       },
       "feedback": {
@@ -661,9 +873,32 @@
           "Lá cờ ba bạn đang làm diều phải bay đầu tiên chứ.",
           "Rùa Lì phải bị bỏ lại thì hai bạn kia mới quay về đón được đấy.",
           "Cả ba cùng nắm dây là lúc cuối truyện, đưa lá cờ ấy về cuối nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four flags flutter in the right order, the kite's tail is dead straight!",
+            "Nimble Monkey counts the flags: one, two, three, four, not a beat out!",
+            "The story of the three friends has flown up with the kite."
+          ],
+          "wrong": [
+            "The flag of the three friends making the kite must fly first.",
+            "Tortoise has to be left behind before the other two can go back for him.",
+            "All three holding the string is the end of the story, move that flag to the end."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four kite-tail flags",
+        "goTo": "Carry the kite to the bamboo hedge at the foot of the slope, where Jasmine Cow is chewing grass, waiting to untangle the flags",
+        "prompt": "The kite is back in hand! Its tail has four little flags painted with a story about three friends, but being stuck in the tree has tangled them. Jasmine Cow tells the story while untangling: “Brown Squirrel, Cotton Rabbit and Stubborn Tortoise made a kite together by the stream. As soon as the kite rose, Squirrel and Rabbit ran off after the wind and left slow Tortoise behind, who felt terribly sad. The two looked back, saw Tortoise sitting alone and went back to fetch their friend. Then all three held the string together, running at an easy pace to suit Tortoise, and the kite flew high for ever.” Now {name} must put the four flags in the order of the story.",
+        "items": [
+          "The two friends go back for Stubborn Tortoise",
+          "All three hold the kite string together",
+          "The three friends make a kite by the stream",
+          "Stubborn Tortoise is left sitting alone"
+        ]
+      }
     },
     {
       "id": "ke-chuyen-ba-ban",
@@ -824,5 +1059,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "The Kite on Windy Hilltop",
+    "summary": "Nimble Monkey's kite is stuck in the top of the kapok tree. {name} picks up the string and the flute, reads the poem “Diều và gió” on the stone slab, frees the kite and tells the story of three friends from the four flags on the kite's tail. Along the way {name} meets Cloud Calf who loves watching clouds, Orange Fox chasing flying paper and Jasmine Cow untangling flags."
   }
 }

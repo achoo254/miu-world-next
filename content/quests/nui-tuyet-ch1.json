@@ -93,7 +93,11 @@
         "nt-cu-ca-rot",
         "nt-khan-len-do",
         "nt-cuc-than"
-      ]
+      ],
+      "en": {
+        "title": "Find 3 things for the snowman",
+        "goTo": "Look around the snow village square: a carrot, a woolly scarf, a lump of coal"
+      }
     },
     {
       "id": "doc-loi-dan",
@@ -131,6 +135,18 @@
         "answer": {
           "text": "Làm mũi",
           "explanation": "Lời dặn viết: \"Gắn cục than làm mắt, củ cà rốt làm mũi.\""
+        },
+        "en": {
+          "guide": [
+            "Read the note line by line.",
+            "Find the line with the word \"carrot\".",
+            "See where the carrot is stuck on."
+          ],
+          "hint": "The second line talks about the eyes and the nose.",
+          "answer": {
+            "text": "The nose",
+            "explanation": "The note says: \"Stick lumps of coal on for eyes and a carrot for a nose.\""
+          }
         }
       },
       "feedback": {
@@ -143,6 +159,29 @@
           "Dò lại dòng có chữ \"cà rốt\" nha {name}.",
           "Cục than mới làm mắt cơ, cà rốt thì sao nhỉ?",
           "Đọc chậm dòng thứ hai của lời dặn thêm lần nữa."
+        ],
+        "en": {
+          "right": [
+            "That's right, a bright orange carrot nose on the white snow!",
+            "{name} read it so carefully, the snowman will soon have a lovely nose.",
+            "Exactly! Coal for the eyes, carrot for the nose."
+          ],
+          "wrong": [
+            "Look again at the line with the word \"carrot\", {name}.",
+            "It's the coal that makes the eyes. What about the carrot?",
+            "Read the second line of the note slowly once more."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the note at the Quest Station",
+        "goTo": "Go to the Quest Station, where a wooden board has a map pinned to it",
+        "text": "HOW TO BUILD A SNOWMAN\nRoll two snowballs, the big one at the bottom and the small one on top.\nStick lumps of coal on for eyes and a carrot for a nose.\nWrap a woolly scarf on tightly so the snowman doesn't get cold.\nSnowflake Polar Bear",
+        "question": "According to the note, what is the carrot used for?",
+        "choices": [
+          "The eyes",
+          "The nose",
+          "The scarf"
         ]
       }
     },
@@ -211,6 +250,18 @@
         "answer": {
           "text": "Đồ mặc: áo len, găng tay, mũ len. Đồ ăn uống: sữa nóng, khoai nướng, cháo gà.",
           "explanation": "Áo len, găng tay, mũ len giữ ấm người; sữa nóng, khoai nướng, cháo gà làm ấm bụng."
+        },
+        "en": {
+          "guide": [
+            "Read the name of each item.",
+            "If you wear it on your body, it's clothing.",
+            "If you can eat or drink it, it's food and drink."
+          ],
+          "hint": "Găng tay go on your hands, but khoai nướng can be eaten.",
+          "answer": {
+            "text": "Clothing: áo len, găng tay, mũ len. Food and drink: sữa nóng, khoai nướng, cháo gà.",
+            "explanation": "The jumper, the gloves and the woolly hat keep you warm; the hot milk, the baked sweet potato and the chicken porridge warm the tummy."
+          }
         }
       },
       "feedback": {
@@ -223,6 +274,31 @@
           "Bác Sồi chỉ khẽ: món này mặc được hay ăn được nhỉ?",
           "Có món đứng nhầm kệ rồi, {name} soát lại nha.",
           "Đồ ăn thì ấm bụng, đồ mặc thì ấm người đó."
+        ],
+        "en": {
+          "right": [
+            "A tidy shelf, and Uncle Oak is beaming!",
+            "Clothes on one side, food on the other, perfect without a single change!",
+            "{name} stacks the goods like a shopkeeper of many years."
+          ],
+          "wrong": [
+            "Uncle Oak points gently: can you wear this one or eat it?",
+            "One item is on the wrong shelf, {name}, have another look.",
+            "Food warms your tummy, clothes warm your body."
+          ]
+        }
+      },
+      "en": {
+        "title": "Sort things in the warm clothes shop",
+        "goTo": "Go to the front of the warm clothes shop, where Uncle Oak is setting out his goods",
+        "prompt": "Uncle Oak asks {name} to put the goods on the shelves: things to wear to keep warm on one side, things to eat and drink to warm the tummy on the other.",
+        "items": [
+          "áo len",
+          "găng tay",
+          "mũ len",
+          "sữa nóng",
+          "khoai nướng",
+          "cháo gà"
         ]
       }
     },
@@ -270,6 +346,18 @@
         "answer": {
           "text": "48 < 52",
           "explanation": "4 chục < 5 chục nên 48 < 52: đội Xanh nhiều điểm hơn."
+        },
+        "en": {
+          "guide": [
+            "Compare the tens digits first.",
+            "48 has 4 tens, 52 has 5 tens.",
+            "Fewer tens means the number is smaller."
+          ],
+          "hint": "4 tens is fewer than 5 tens.",
+          "answer": {
+            "text": "48 < 52",
+            "explanation": "4 tens < 5 tens so 48 < 52: the Blue team has more points."
+          }
         }
       },
       "feedback": {
@@ -282,7 +370,24 @@
           "Chị Vèo nháy mắt: nhìn hàng chục của hai số xem.",
           "Bốn chục với năm chục, bên nào nhiều hơn nhỉ?",
           "Thử đọc lại hai số điểm rồi chọn dấu nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Forty-eight is less than fifty-two, the Blue team is in the lead!",
+            "Sister Whoosh spins her snowboard round to celebrate with {name}!",
+            "Comparing the tens as fast as sliding down a slope!"
+          ],
+          "wrong": [
+            "Sister Whoosh winks: look at the tens of the two numbers.",
+            "Four tens and five tens, which is more?",
+            "Read the two scores again, then choose the sign."
+          ]
+        }
+      },
+      "en": {
+        "title": "Compare skiing scores",
+        "goTo": "Go to the little ski slope at the edge of the village, where Whoosh Skiing Fox Sister is waiting",
+        "prompt": "This morning the Red team scored 48 points and the Blue team scored 52. Fill in the right sign."
       }
     },
     {
@@ -350,6 +455,18 @@
         "answer": {
           "text": "8",
           "explanation": "2 + 1 + 5 = 8. Cần tất cả 8 thứ."
+        },
+        "en": {
+          "guide": [
+            "Add the eyes and the nose first: 2 + 1.",
+            "Then add the 5 buttons.",
+            "Put all three parts together to get the number of things."
+          ],
+          "hint": "2 + 1 = 3, then 3 + 5.",
+          "answer": {
+            "text": "8",
+            "explanation": "2 + 1 + 5 = 8. It needs 8 things altogether."
+          }
         }
       },
       "feedback": {
@@ -362,7 +479,23 @@
           "Bé Thỏ đếm trên ngón tay: cộng từng phần một nha.",
           "Mắt, mũi rồi tới cúc áo, {name} gộp lại xem.",
           "Thử cộng hai với một trước đã nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All eight things are here, the snowman has eyes, a nose and buttons!",
+            "Two plus one plus five is eight, {name} adds so fast!",
+            "Little Bunny jumps for joy: the snowman is finished!"
+          ],
+          "wrong": [
+            "Little Bunny counts on her fingers: add one part at a time.",
+            "Eyes, nose, then buttons, put them together, {name}.",
+            "Try adding two and one first."
+          ]
+        }
+      },
+      "en": {
+        "title": "The snowman's riddle",
+        "question": "The snowman needs 2 coal eyes, 1 carrot nose and 5 pebble buttons. How many things does it need altogether? (2 + 1 + 5 = ?)"
       }
     },
     {
@@ -399,5 +532,9 @@
       "so-sanh-so": 1,
       "phep-cong": 1
     }
+  },
+  "en": {
+    "title": "Snow Mountain – Chapter 1: The Snowman Greets Visitors",
+    "summary": "The snow village wants to build a huge snowman to greet new visitors, but the carrot, the woolly scarf and the coal for the eyes have gone missing. {name} and Snowflake Polar Bear look for them, read the note at the Quest Station, pick out warm things and finish the snowman."
   }
 }

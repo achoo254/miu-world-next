@@ -127,7 +127,11 @@
         "tv2-t04-dong-la-kho",
         "tv2-t04-bua-hai-ly",
         "tv2-t04-long-chim-xanh"
-      ]
+      ],
+      "en": {
+        "title": "Who made the noise?",
+        "goTo": "Walk along the lotus pond to find three things making strange noises"
+      }
     },
     {
       "id": "doan-loai-cay",
@@ -188,6 +192,17 @@
         "answer": {
           "text": "Cây khép hết lá lại, cụp xuống như mắt nhắm.",
           "explanation": "Đoạn đầu kể hễ có tiếng động, các lá của cây trinh nữ khép lại, cụp xuống như đôi mắt nhắm nghiền."
+        },
+        "en": {
+          "guide": [
+            "Read the first part of the story.",
+            "Look for the sentence with the words “hễ nghe tiếng động” (whenever it hears a noise)."
+          ],
+          "hint": "The leaves droop like eyes closing.",
+          "answer": {
+            "text": "The plant folds all its leaves and droops them like closed eyes.",
+            "explanation": "The opening says that whenever there is a noise, the mimosa's leaves fold up and droop like tightly shut eyes."
+          }
         }
       },
       "feedback": {
@@ -200,9 +215,31 @@
           "Nghe tiếng động mà nở hoa thì gan quá! Đọc lại câu đầu truyện nhé.",
           "Cây này nhút nhát lắm, chẳng dám vươn lá ra đâu. Tìm chữ “khép lại” xem.",
           "Gần đúng rồi, nhưng lá thu lại hay mở ra? Đọc lại đoạn mở đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Folding up, just like when Lấm yelled “Whoops!”",
+            "Rhyme Fox jots it in his leaf notebook: “droops like closed eyes”. Lovely!",
+            "The shy bush peeks open one leaf-eye, as if to say: yes, that's me."
+          ],
+          "wrong": [
+            "Flowering at a noise would be brave! Read the first line of the story again.",
+            "This plant is far too timid to stretch out its leaves. Look for the words “khép lại” (fold shut).",
+            "Nearly, but do the leaves draw in or open out? Read the opening part again."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Read the story \"The Mimosa and the Dewdrop\"",
+        "goTo": "Cross to the flat stone slab, where Rhyme Fox has copied out the whole story",
+        "question": "Rhyme Fox has copied the whole story onto the flat stone slab, in handwriting as curly as a willow branch.\nWhenever it hears a noise, what does the mimosa do?",
+        "choices": [
+          "The plant bursts into pink-purple flowers.",
+          "The plant stretches its leaves out to listen.",
+          "The plant's leaves fold shut."
+        ]
+      }
     },
     {
       "id": "co-cay-xon-xao",
@@ -239,6 +276,17 @@
         "answer": {
           "text": "Chú nhím nhỏ đã đặt hạt sương lên lá.",
           "explanation": "Truyện kể tiếng sột soạt là của một chú nhím nhỏ rón rén bước tới và đặt hạt sương lên lá cây."
+        },
+        "en": {
+          "guide": [
+            "Read the second part, where there is a rustling sound.",
+            "Find the sentence about who is tiptoeing closer."
+          ],
+          "hint": "This someone steps very softly and doesn't dare breathe loudly.",
+          "answer": {
+            "text": "The little hedgehog put the dewdrop on the leaf.",
+            "explanation": "The story says the rustle was a little hedgehog tiptoeing closer and placing a dewdrop on the plant's leaf."
+          }
         }
       },
       "feedback": {
@@ -251,9 +299,30 @@
           "Gió chỉ làm lá khô lạt xạt thôi, truyện đâu kể gió đặt sương. Đọc lại đoạn hai nhé.",
           "Truyện không nhắc chú ếch nào ngồi trên lá sen đâu. Tìm tiếng sột soạt xem.",
           "Ai đã rón rén bước tới trong bụi cỏ nhỉ? Đọc lại câu đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "It was the hedgehog! Rhyme Fox recites: “Hedgehog tiptoes, dew drops down.” This time it rhymes!",
+            "Lấm gapes: what a delicate hedgehog!",
+            "Right, the hedgehog set down the dew and stood still, waiting for the plant to open its eyes."
+          ],
+          "wrong": [
+            "The wind only makes dry leaves rustle. The story never says the wind put the dew there. Read part two again.",
+            "The story doesn't mention any frog on a lotus leaf. Look for the rustling sound.",
+            "Who tiptoed up in the grass? Read that line again."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Who put the dewdrop on the leaf?",
+        "question": "Muddy Pig presses his ear to the stone slab and listens and listens, but hears nothing because… stones can't talk.\nWho put the dewdrop on the mimosa's leaf?",
+        "choices": [
+          "The wind at the start of the day.",
+          "A little hedgehog.",
+          "The frog sitting on a lotus leaf."
+        ]
+      }
     },
     {
       "id": "cay-xau-ho-tiec-gi",
@@ -290,6 +359,17 @@
         "answer": {
           "text": "Nó tiếc vì mãi nhắm mắt nên không thấy nhím tiến lại gần.",
           "explanation": "Lúc nhím bước tới, cây đang khép lá nên không nhìn thấy. Nó tiếc vì không mở mắt sớm hơn."
+        },
+        "en": {
+          "guide": [
+            "What was the mimosa doing when the hedgehog came?",
+            "Read the last part of the story, where it says “giá” (if only)."
+          ],
+          "hint": "The plant had its eyes shut, so it missed a sight worth seeing.",
+          "answer": {
+            "text": "It regrets that, with its eyes shut, it did not see the hedgehog come near.",
+            "explanation": "When the hedgehog arrived, the plant had folded its leaves and could not see. It regrets not opening its eyes sooner."
+          }
         }
       },
       "feedback": {
@@ -302,9 +382,31 @@
           "Hạt sương để ngắm chứ cây đâu có nếm. Nó tiếc chuyện khác cơ.",
           "Cây thì không bay được rồi. Đọc lại đoạn cuối, chỗ nói về điều làm cây tiếc nhé.",
           "Lúc nhím rón rén bước tới, cây đang nhắm mắt. Vậy nó đã lỡ mất điều gì?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, shutting its eyes just as the hedgehog arrived is a real shame!",
+            "Rhyme Fox sniffles: poor little bush, I'll write a comforting poem for it.",
+            "Spot on! {name} really understands the mimosa."
+          ],
+          "wrong": [
+            "A dewdrop is for looking at, not tasting. It regrets something else.",
+            "Plants can't fly. Read the last part again, where it says what the plant regrets.",
+            "When the hedgehog tiptoed up, the plant had its eyes shut. So what did it miss?"
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "What does the shy plant regret?",
+        "goTo": "Back to the willow by the pond, where Rhyme Fox waits with chin in hand",
+        "prompt": "Rhyme Fox rests his chin on his paw, eyes shining as if about to write a sad poem.\nWhat does the mimosa regret?",
+        "choices": [
+          "not getting to taste the dewdrop",
+          "not seeing the hedgehog tiptoe closer",
+          "not getting to fly away with the wind"
+        ]
+      }
     },
     {
       "id": "cau-van-mong-chim",
@@ -341,6 +443,17 @@
         "answer": {
           "text": "Câu hỏi ở cuối truyện, nói về sáng mai và chuyện nhím ghé thăm.",
           "explanation": "Câu cuối truyện là câu cây tự hỏi mình, cho thấy nó rất mong nhím sẽ quay lại."
+        },
+        "en": {
+          "guide": [
+            "The sentence you need is near the end of the story.",
+            "It finishes with a question mark."
+          ],
+          "hint": "The mimosa wonders whether it will see the hedgehog again tomorrow.",
+          "answer": {
+            "text": "The question at the end of the story, about tomorrow morning and the hedgehog visiting.",
+            "explanation": "The last sentence is the plant asking itself, which shows how much it hopes the hedgehog will return."
+          }
         }
       },
       "feedback": {
@@ -353,9 +466,31 @@
           "Câu này kể chuyện cây khép lá, chưa nói tới chuyện mong nhím. Đọc câu cuối truyện nhé.",
           "Đặt sương là việc nhím làm, còn câu cần tìm nói về nỗi mong của cây cơ.",
           "Gợi ý nhỏ: câu cần tìm kết thúc bằng dấu chấm hỏi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's the last sentence! The shy bush gazes toward the pond, its leaf-eyes wide.",
+            "What a wistful question! Rhyme Fox copies it into his notebook straight away.",
+            "Lấm cheers so loud… Whoops, slip of the tongue! But {name} did choose right."
+          ],
+          "wrong": [
+            "This one tells how the plant folds its leaves, not how it hopes for the hedgehog. Read the last sentence of the story.",
+            "Placing the dew is what the hedgehog does. The sentence you need is about the plant's hope.",
+            "Little hint: the sentence you need ends with a question mark."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "The sentence that hopes the hedgehog comes back",
+        "goTo": "Visit the shy bush, whose leaves tremble as it looks at the sky",
+        "prompt": "The shy bush trembles gently, as if looking out toward the pond bank.\nWhich sentence shows that the mimosa really hopes the hedgehog will come back?",
+        "choices": [
+          "The moment it hears a noise, its leaves fold shut.",
+          "Will the hedgehog come to visit again tomorrow morning, I wonder?",
+          "The hedgehog sets a round dewdrop on a leaf, then stands still."
+        ]
+      }
     },
     {
       "id": "tu-ngu-cho-bai-tho",
@@ -404,6 +539,17 @@
         "answer": {
           "text": "nhỏ xíu, tròn trĩnh, long lanh",
           "explanation": "Nhỏ xíu tả cây, tròn trĩnh và long lanh tả hạt sương. Khép lại, ghé thăm là việc làm."
+        },
+        "en": {
+          "guide": [
+            "A describing word tells how something looks.",
+            "Action words such as “khép” and “ghé” do not count."
+          ],
+          "hint": "Three words are describing words; the other two are about actions.",
+          "answer": {
+            "text": "Describing words: nhỏ xíu, tròn trĩnh, long lanh",
+            "explanation": "“Nhỏ xíu” describes the plant, while “tròn trĩnh” and “long lanh” describe the dewdrop. “Khép lại” and “ghé thăm” are actions."
+          }
         }
       },
       "feedback": {
@@ -416,9 +562,33 @@
           "Khép lại là việc lá làm, chưa phải đặc điểm đâu nhé.",
           "Còn thiếu một từ tả hạt sương sáng lấp lánh đấy.",
           "Hỏi thử: “hạt sương thế nào?” Từ nào trả lời được thì chọn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Nhỏ xíu, tròn trĩnh, long lanh: Rhyme Fox tucks all three into the poem!",
+            "Not a single action word picked by mistake. {name} has eyes sharp as a hedgehog's.",
+            "Muddy Pig claps loudly, and this time he doesn't even fall over."
+          ],
+          "wrong": [
+            "“Khép lại” is something the leaves do, not a describing word.",
+            "One word describing the sparkling dewdrop is still missing.",
+            "Ask: “What is the dewdrop like?” Pick the words that answer that."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "Words for the poem",
+        "goTo": "Rhyme Fox waves his leaf notebook to call {name} back to the willow by the pond",
+        "prompt": "Rhyme Fox flips through his leaf notebook: the poem for the bush still needs some lovely describing words, not action words.\nWhich words could describe the dewdrop and the mimosa in the story? Pick all the describing words (từ chỉ đặc điểm).",
+        "choices": [
+          "nhỏ xíu",
+          "tròn trĩnh",
+          "khép lại",
+          "ghé thăm",
+          "long lanh"
+        ]
+      }
     },
     {
       "id": "loi-cua-cay-xau-ho",
@@ -522,6 +692,17 @@
         "answer": {
           "text": "sột soạt; rón rén; long lanh",
           "explanation": "Trong bụi cỏ có tiếng sột soạt; nhím sợ làm động nên bước rón rén; hạt sương sáng trong nên long lanh."
+        },
+        "en": {
+          "guide": [
+            "“Sột soạt” is the sound of leaves and grass rubbing together.",
+            "“Rón rén” means stepping softly and slowly; “long lanh” means clear and shining as if with water."
+          ],
+          "hint": "Which word suits a round, shining dewdrop?",
+          "answer": {
+            "text": "Missing words: sột soạt; rón rén; long lanh",
+            "explanation": "The grass gives a rustling “sột soạt”; the hedgehog doesn't want to startle anyone so it steps “rón rén”; the clear dewdrop is “long lanh”."
+          }
         }
       },
       "feedback": {
@@ -534,9 +715,26 @@
           "Tiếng cỏ cọ vào nhau thì kêu thế nào? Tiếng ấy có trong mục Từ ngữ đấy.",
           "Nhím không muốn làm cây giật mình thì bước ra sao nhỉ? Xem lại câu thứ hai.",
           "Thứ gì sáng trong như có nước? Thử điền lại câu thứ ba."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The notebook is clean as new! Rhyme Fox gives {name} a big hug.",
+            "Sột soạt, rón rén, long lanh: three words back in their places.",
+            "Lấm mumbles an apology, then promises to walk slowly next time… like a tortoise."
+          ],
+          "wrong": [
+            "What sound do grass blades make rubbing together? It's in the word list.",
+            "How does a hedgehog step if it doesn't want to startle the plant? Look at the second sentence again.",
+            "What is clear and shiny as if with water? Try the third sentence again."
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "The smudged leaf notebook",
+        "goTo": "Whoops! Run to the muddy puddle by the pond, where Muddy Pig has just fallen flat",
+        "prompt": "Whoops! Lấm tripped and a bamboo water pipe tipped over Rhyme Fox's leaf notebook, smudging three hard words from the story. Choose the right words to fill them back in for both friends."
+      }
     },
     {
       "id": "nhip-cau-cua-hai-ly",
@@ -668,6 +866,17 @@
         "answer": {
           "text": "Ếch xanh bịt tai → Ve sầu chỉ cách lấy hơi → Đom đóm soi sáng buổi tập → Cả đầm lặng nghe dế hát",
           "explanation": "Dế hát oang oang bị chê, rồi học lấy hơi, tập mỗi tối, và cuối cùng được cả đầm lắng nghe."
+        },
+        "en": {
+          "guide": [
+            "The cricket has to be told off first, and only then does it need to learn how to sing.",
+            "The picture of the whole pond listening is the result of all those practices."
+          ],
+          "hint": "The frog covering its ears comes first, because that is when the cricket's singing wasn't good yet.",
+          "answer": {
+            "text": "Green frog covers its ears → Cicada shows how to take a breath → Fireflies light up the rehearsal → The whole pond listens quietly to the cricket sing",
+            "explanation": "The cricket sang too loudly and was told off, then learned to breathe, practised every evening, and in the end the whole pond listened."
+          }
         }
       },
       "feedback": {
@@ -680,9 +889,32 @@
           "Dế chưa học lấy hơi mà cả đầm đã lặng nghe rồi sao? Xếp lại nhé.",
           "Tranh cả đầm lặng nghe là tranh kết thúc, hãy đặt nó xuống cuối hàng.",
           "Đọc lại các tên tranh từ trên xuống, nghĩ xem việc nào phải xảy ra trước."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yawning Bear nods: told off, learned, practised, then praised. Just like me practising sleeping!",
+            "Four pictures link up into one whole night of singing.",
+            "Rhyme Fox says: {name} puts pictures in order as neatly as a poem!"
+          ],
+          "wrong": [
+            "The cricket hasn't learned to breathe and the whole pond is already listening? Try again.",
+            "The picture of the whole pond listening is the ending, so put it last.",
+            "Read the picture names from top to bottom and think about which has to happen first."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four pictures of the little cricket",
+        "goTo": "Yawning Bear wants a story, so run to the willow by the pond to fetch Rhyme Fox's pictures",
+        "prompt": "Yawning Bear has wrapped his leaf blanket up to his chin, only his head sticking out: tell me about the little cricket learning to sing, then I'll sleep for ages. But the wind has shuffled Rhyme Fox's four pictures.\nLook at the pictures, guess which part of the story comes first and which later, then put the pictures in order.",
+        "items": [
+          "Fireflies light up the rehearsal",
+          "The whole pond listens quietly to the cricket sing",
+          "Green frog covers its ears",
+          "Cicada shows how to take a breath"
+        ]
+      }
     },
     {
       "id": "doan-va-nghe-ke",
@@ -818,5 +1050,9 @@
       "tu-ngu": 2,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "The Shy Bush Keeps Its Eyes Closed",
+    "summary": "Rhyme Fox is writing a poem for the shy mimosa bush by the pond, but every strange noise makes its leaves fold up. {name} hunts down the noisemakers, reads “The Mimosa and the Dewdrop”, picks describing words for the poem and tells the tale of a little cricket practising a lullaby for Yawning Bear."
   }
 }

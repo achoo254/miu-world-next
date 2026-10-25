@@ -119,7 +119,11 @@
         "tv2-t03-ban-chai-meo",
         "tv2-t03-khan-mat-meo",
         "tv2-t03-cap-la-meo"
-      ]
+      ],
+      "en": {
+        "title": "Find what Turmeric Cat hid",
+        "goTo": "Search for three things in the bamboo hedge around the classroom"
+      }
     },
     {
       "id": "khoe-loi-khen",
@@ -180,6 +184,17 @@
         "answer": {
           "text": "Cô giáo muốn cả lớp tập nói trước lớp về loài hoa mình thích.",
           "explanation": "Câu đầu truyện cho biết cả lớp tập nói về loài hoa mình thích, và cô dặn các em nói thật tự nhiên."
+        },
+        "en": {
+          "guide": [
+            "Read the opening sentence of the story again.",
+            "Find what the teacher tells the class right after that."
+          ],
+          "hint": "The teacher reminds the children to speak naturally, as if telling a story to family.",
+          "answer": {
+            "text": "The teacher wants the whole class to practise speaking in front of the class about a flower they like.",
+            "explanation": "The first sentence says the class practises talking about a flower they like, and the teacher tells them to speak naturally."
+          }
         }
       },
       "feedback": {
@@ -192,9 +207,31 @@
           "Tưới hoa là việc ngoài sân, truyện đâu kể thế. Đọc lại câu mở đầu nhé.",
           "Giờ này không ai phải chép bài đâu. Tìm lời cô giáo dặn xem sao.",
           "Gần rồi! Cô muốn các bạn kể về thứ mình thích, vậy phải làm gì nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Rice Pup jumps up, tail wagging: practising speaking about flowers! Right!",
+            "Spot on! Today nobody copies lessons or waters plants, there is only speaking.",
+            "Turmeric Cat nods, and his whiskers tremble just a tiny bit now."
+          ],
+          "wrong": [
+            "Watering flowers is a job out in the yard, the story doesn't say that. Read the opening sentence again.",
+            "Nobody has to copy lessons at this hour. Find what the teacher tells the class.",
+            "Close! The teacher wants children to tell about something they like, so what must they do?"
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Read the story \"Bích's Flower\"",
+        "goTo": "Look up at the blackboard under the banyan, where the story «Bông hoa của Bích» has just been copied out",
+        "question": "Teacher Chestnut Bear hangs the story on the blackboard, and Rice Pup sits up straight with both ears pricked to listen.\nIn the lesson in the story, what does the teacher want the whole class to do?",
+        "choices": [
+          "copy the lesson into their notebooks very quickly",
+          "speak in front of the class about a flower they like",
+          "water the flowerpots out in the yard"
+        ]
+      }
     },
     {
       "id": "vi-sao-quang-lung-tung",
@@ -231,6 +268,17 @@
         "answer": {
           "text": "Bích quên hết điều định nói vì phải đứng trước đông bạn.",
           "explanation": "Truyện kể Bích đứng trước cả lớp thì quên hết điều định nói, má nóng bừng và chỉ ấp úng."
+        },
+        "en": {
+          "guide": [
+            "Find the part where Bích steps up onto the platform.",
+            "Read the sentence about the moment she stood in front of her friends."
+          ],
+          "hint": "The flowerpot is still in Bích's hands, so the trouble is the feeling of standing in front of many people.",
+          "answer": {
+            "text": "Bích forgot what she planned to say because she had to stand in front of so many friends.",
+            "explanation": "The story says that standing in front of the class, Bích forgot everything she planned to say, her cheeks burned and she could only stammer."
+          }
         }
       },
       "feedback": {
@@ -243,9 +291,31 @@
           "Chậu hoa vẫn nằm yên trên tay Bích, nhẹ hay nặng đâu phải chuyện chính. Đọc lại đoạn hai nhé.",
           "Bích mang hoa theo rồi, em còn ôm nó lên bục cơ mà. Tìm lại lí do khác xem.",
           "Thử nghĩ: đứng trước cả lớp, Bích thấy mình quên mất điều gì?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Turmeric Cat breathes out in relief: so I'm not the only one who finds it hard!",
+            "Right, with so many people looking, the words you meant to say fly away.",
+            "Well done! {name} found the reason right after Bích stepped onto the platform."
+          ],
+          "wrong": [
+            "The flowerpot stays still in Bích's hands, heavy or light is not the main thing. Read paragraph two again.",
+            "Bích brought her flower, she even carried it up onto the platform. Look for a different reason.",
+            "Think: standing in front of the whole class, what did Bích find she had forgotten?"
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Why is Bích flustered?",
+        "goTo": "Go to the back desk, where Turmeric Cat beckons {name} over to whisper",
+        "prompt": "Turmeric Cat licks his whiskers and whispers: this Bích is just like me.\nWhy was Bích flustered when she first stepped up onto the platform?",
+        "choices": [
+          "Because the flowerpot was so heavy that Bích's arms ached.",
+          "Because Bích forgot to bring her flower.",
+          "Because, standing in front of the whole class, she forgot everything she had planned to say."
+        ]
+      }
     },
     {
       "id": "quang-hoa-tu-tin",
@@ -294,6 +364,17 @@
         "answer": {
           "text": "Cô giáo hỏi nhẹ nhàng từng câu; Bích nhìn những cánh hoa; Bích hít một hơi thật dài rồi kể tiếp.",
           "explanation": "Cô hỏi dẫn dắt, Bích nhìn bông hoa của mình rồi lấy hơi. Không ai nói thay và cô cũng không cho em về chỗ."
+        },
+        "en": {
+          "guide": [
+            "Read again the part where the teacher asks and Bích answers.",
+            "Find where Bích takes a long breath."
+          ],
+          "hint": "There are three things: one from the teacher, two from Bích herself.",
+          "answer": {
+            "text": "The teacher asked gently, one question at a time; Bích looked at the petals; Bích took a long breath and went on telling.",
+            "explanation": "The teacher led her with questions, Bích looked at her own flower and took a breath. Nobody spoke for her and the teacher did not send her back to her seat."
+          }
         }
       },
       "feedback": {
@@ -306,9 +387,33 @@
           "Cô đâu có cho Bích về chỗ, em còn đứng trên bục mà. Bỏ lựa chọn ấy ra nhé.",
           "Ở truyện, Bích tự nói chứ không ai nói thay đâu.",
           "Còn sót một điều mà Bích tự làm trước khi kể một mạch. Tìm chữ “hít” xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Teacher Chestnut Bear claps his chubby paws: all three things!",
+            "Right: the teacher asked gently, Bích looked at her flower and took a breath. Three pieces that fit together.",
+            "Turmeric Cat stores those three things away in... his whiskers. Thank you, {name}!"
+          ],
+          "wrong": [
+            "The teacher did not send Bích back, she was still standing on the platform. Leave that choice out.",
+            "In the story, Bích speaks for herself, nobody speaks for her.",
+            "One thing Bích did herself before telling it all in one go is still missing. Look for the word «hít» (breathe in)."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "What helps Bích feel confident?",
+        "goTo": "Teacher Chestnut Bear calls {name} up to his desk by the banyan tree",
+        "prompt": "Teacher Chestnut Bear rubs his round belly: at first Bích stammered, afterwards she told it all in one go. He asks {name}.\nWhat helped Bích be less flustered?\nChoose everything that is in the story.",
+        "choices": [
+          "The teacher asked one gentle question at a time so she could answer easily.",
+          "The teacher let Bích go back to her seat right away.",
+          "Bích looked down at the petals and then answered.",
+          "The friend sitting next to her came up to speak for Bích.",
+          "Bích took a long breath and went on telling."
+        ]
+      }
     },
     {
       "id": "cam-giac-noi-truoc-lop",
@@ -387,6 +492,17 @@
         "answer": {
           "text": "Câu hỏi của cô giáo dành cho Bích: “Hoa của em màu gì nhỉ?” và “Em trồng hoa ở đâu?”. Ba câu còn lại không phải câu hỏi.",
           "explanation": "Hai câu có dấu chấm hỏi đều là lời cô giáo hỏi Bích. Bích chỉ trả lời, không hỏi cô câu nào."
+        },
+        "en": {
+          "guide": [
+            "Look at the mark at the end of the sentence: a question ends with a question mark.",
+            "Read the story again to see who says that sentence, and to whom."
+          ],
+          "hint": "The story has two questions, both asked by the teacher.",
+          "answer": {
+            "text": "The teacher's questions to Bích: “Hoa của em màu gì nhỉ?” and “Em trồng hoa ở đâu?”. The other three sentences are not questions.",
+            "explanation": "Both sentences with a question mark are the teacher asking Bích. Bích only answers, she asks the teacher no questions."
+          }
         }
       },
       "feedback": {
@@ -399,9 +515,26 @@
           "Câu kết thúc bằng dấu chấm không phải câu hỏi đâu. Nhìn kĩ dấu cuối câu nhé.",
           "Bích có hỏi cô câu nào không nhỉ? Đọc lại xem ai nói câu “Em trồng hoa ở đâu?”.",
           "Câu “Dạ, màu vàng ạ.” là lời đáp, không phải lời hỏi. Thử xếp lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Rice Pup raises both front paws: two questions! Both the teacher's!",
+            "Right, the teacher asks to lead Bích step by step to what she meant to say.",
+            "Neatly sorted! The «Bích asks the teacher» group being completely empty is right."
+          ],
+          "wrong": [
+            "A sentence ending in a full stop is not a question. Look closely at the mark at the end.",
+            "Does Bích ask the teacher any question? Read again to see who says «Em trồng hoa ở đâu?».",
+            "The sentence «Dạ, màu vàng ạ.» is an answer, not a question. Try sorting again."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "Which sentence is a question?",
+        "goTo": "Rice Pup runs around the blackboard under the banyan, thinking up a riddle",
+        "prompt": "Rice Pup challenges: if a sentence ends with a question mark, raise your hand, and I'll raise my paw too!\nFind the questions in the story and see who asks whom.\nDrag each sentence into the right group."
+      }
     },
     {
       "id": "khen-ban-quang",
@@ -514,6 +647,17 @@
         "answer": {
           "text": "t, u, v, y",
           "explanation": "Chữ t đọc là tê, chữ u đọc là u, chữ v đọc là vê, chữ y đọc là i dài."
+        },
+        "en": {
+          "guide": [
+            "Say aloud the letter name at the start of each line, then find the letter that is read that way.",
+            "Recite the end of the alphabet: p, q, r, s, …, x, …"
+          ],
+          "hint": "The letter read as «i dài» (long i) stands last in the alphabet.",
+          "answer": {
+            "text": "t, u, v, y",
+            "explanation": "The letter t is read «tê», the letter u is read «u», the letter v is read «vê» and the letter y is read «i dài»."
+          }
         }
       },
       "feedback": {
@@ -526,9 +670,26 @@
           "Chữ đọc là “i dài” không phải chữ i ngắn đâu. Thử chữ đứng cuối bảng xem.",
           "Chữ ư có râu, chữ ơ đội mũ. Còn chữ đọc là “u” thì sao nhỉ?",
           "Đọc to “vê” rồi nghĩ xem chữ nào phát ra đúng tiếng ấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The woodpecker knocks three apologetic taps and flies off. The board has all its letters again!",
+            "«Tê», «u», «vê», «i dài»: {name} reads them smoothly as if singing.",
+            "Rice Pup barks exactly four times to remember: t, u, v, y!"
+          ],
+          "wrong": [
+            "The letter read as «i dài» is not the short letter i. Try the letter at the end of the alphabet.",
+            "The letter ư has a little hook, the letter ơ wears a hat. What about the letter read as «u»?",
+            "Say «vê» aloud, then think which letter makes exactly that sound."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-chu-cai"
+      "objective": "bang-chu-cai-chu-cai",
+      "en": {
+        "title": "The scratched letter board",
+        "goTo": "Go to the alphabet banyan tree, where a woodpecker has just scratched the board",
+        "prompt": "The woodpecker practised his rhythm in the wrong place, tock tock tock, and scratched four squares on the class letter board.\nFill the lost letters back in, going by how they are read aloud."
+      }
     },
     {
       "id": "xep-ten-nam-ban",
@@ -578,6 +739,17 @@
         "answer": {
           "text": "Quỳnh, Sương, Tâm, Vinh, Yến",
           "explanation": "Chữ cái đầu của các tên là Q, S, T, V, Y. Trong bảng chữ cái, q đứng trước s, rồi đến t, v, y."
+        },
+        "en": {
+          "guide": [
+            "Check the first letter of every name.",
+            "Find those first letters in the alphabet: q, s, t, v, y."
+          ],
+          "hint": "The letter q comes before s, so Quỳnh stands at the head of the line.",
+          "answer": {
+            "text": "In order: Quỳnh, Sương, Tâm, Vinh, Yến",
+            "explanation": "The first letters of the names are Q, S, T, V, Y. In the alphabet, q comes before s, then t, v, y."
+          }
         }
       },
       "feedback": {
@@ -590,9 +762,32 @@
           "Chữ q và chữ s, chữ nào đứng trước trong bảng nhỉ?",
           "Bạn Yến có chữ y, mà y là chữ đứng cuối cùng của bảng chữ cái.",
           "Tâm và Vinh đang đổi chỗ cho nhau rồi. Nhẩm lại: t, u, ư, v."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The five friends stand in a straight line, and Rice Pup sits guard at the head like a little soldier!",
+            "Quỳnh first, Yến last: it matches the alphabet.",
+            "Rice Pup boasts: now I can herd friends in alphabet order!"
+          ],
+          "wrong": [
+            "Which comes first in the alphabet, q or s?",
+            "Yến has the letter y, and y is the last letter of the alphabet.",
+            "Tâm and Vinh have swapped places. Recite again: t, u, ư, v."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-xep-ten"
+      "objective": "bang-chu-cai-xep-ten",
+      "en": {
+        "title": "Roll call for five guests",
+        "prompt": "Five little friends from the next village came to hear the speaking practice and stand pushed together in a muddle. Rice Pup runs around herding them but the line still isn't straight!\nPut the friends in a line by the first letter of their names, as in the alphabet.",
+        "items": [
+          "Sương",
+          "Yến",
+          "Quỳnh",
+          "Vinh",
+          "Tâm"
+        ]
+      }
     },
     {
       "id": "may-cho-tu-dac-diem",
@@ -664,6 +859,17 @@
         "answer": {
           "text": "thơm ngát, mềm mại, rực rỡ, cao vút, tươi tắn, nhỏ xinh",
           "explanation": "Sáu từ này cho biết hoa thơm, mềm, nhiều màu, cao hay xinh xắn. Cánh hoa, chiếc lá, cái cuống, nhụy hoa là tên các bộ phận."
+        },
+        "en": {
+          "guide": [
+            "A describing word tells how something looks, smells or feels.",
+            "A word that names a part of a flower, like «cánh hoa» (petal) or «nhụy hoa» (stamen), is a word for a thing."
+          ],
+          "hint": "Six words describe; the other four are names of the parts of the flower plant.",
+          "answer": {
+            "text": "Describing words: thơm ngát, mềm mại, rực rỡ, cao vút, tươi tắn, nhỏ xinh",
+            "explanation": "These six words tell that the flower is fragrant, soft, colourful, tall or dainty. Cánh hoa, chiếc lá, cái cuống and nhụy hoa are names of parts."
+          }
         }
       },
       "feedback": {
@@ -676,9 +882,38 @@
           "Cánh hoa là tên một bộ phận, chưa phải đặc điểm đâu. Bỏ ra nhé.",
           "Còn sót một từ tả độ cao đấy. Thử tìm lại xem.",
           "Hỏi thử: “cánh hoa thế nào?” Từ trả lời được câu ấy mới là từ chỉ đặc điểm."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Turmeric Cat smooths his turmeric-yellow fur, pleased: exactly six words!",
+            "Six describing clouds swoop down to perch in the banyan. How lovely!",
+            "Sharp eyes! {name} was not fooled by the clouds carrying names of parts."
+          ],
+          "wrong": [
+            "«Cánh hoa» (petal) names a part, it doesn't describe. Take it out.",
+            "One word describing height is still missing. Try looking again.",
+            "Ask: «how is the petal?» Only a word that answers that question describes."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-tim-tu"
+      "objective": "tu-chi-dac-diem-tim-tu",
+      "en": {
+        "title": "Ten clouds carrying words",
+        "goTo": "Go back to the back desk, where clouds are drifting through gaps in the banyan leaves",
+        "prompt": "Ten little clouds float lazily through the leaves, each carrying a word. Turmeric Cat glances at them and says: I'll nod only at a word that can describe a flower.\nWhich words tell how a flower looks, smells or feels? Choose all the words that describe.",
+        "choices": [
+          "thơm ngát",
+          "cánh hoa",
+          "mềm mại",
+          "chiếc lá",
+          "rực rỡ",
+          "cao vút",
+          "cái cuống",
+          "tươi tắn",
+          "nhụy hoa",
+          "nhỏ xinh"
+        ]
+      }
     },
     {
       "id": "ghep-cau-dac-diem",
@@ -747,6 +982,17 @@
         "answer": {
           "text": "Cánh hoa vàng tươi. Cánh hoa mỏng manh. Chiếc lá xanh mướt. Hương hoa ngọt dịu. Thân cây cao gầy.",
           "explanation": "Mỗi câu ghép tên một bộ phận với từ chỉ đặc điểm hợp với nó, giống câu mẫu “Hương hoa thơm ngát.”"
+        },
+        "en": {
+          "guide": [
+            "Read the model sentence: Hương hoa thơm ngát.",
+            "Try each word after the name of a part, and read it aloud to hear if it flows."
+          ],
+          "hint": "The petal gets two words: one about colour and one about thinness.",
+          "answer": {
+            "text": "The sentences: Cánh hoa vàng tươi. Cánh hoa mỏng manh. Chiếc lá xanh mướt. Hương hoa ngọt dịu. Thân cây cao gầy.",
+            "explanation": "Each sentence joins the name of a part with a describing word that fits it, like the model «Hương hoa thơm ngát.»"
+          }
         }
       },
       "feedback": {
@@ -759,9 +1005,33 @@
           "Thử đọc to “Thân cây mỏng manh” rồi so với “Cánh hoa mỏng manh” xem câu nào xuôi hơn.",
           "Hương hoa mới ngọt dịu được thôi, chiếc lá thì không ai khen ngọt cả.",
           "Màu xanh mướt thường dùng để tả lá. Xem lại câu mẫu nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Teacher Chestnut Bear reads each sentence slowly, and every one flows.",
+            "A lush green leaf, a tall slender stem: cleverly matched!",
+            "Five describing sentences come out of the oven, hot like freshly steamed bamboo cakes."
+          ],
+          "wrong": [
+            "Try reading «Thân cây mỏng manh» aloud and compare it with «Cánh hoa mỏng manh», which flows better?",
+            "Only the scent can be sweet and gentle, nobody calls a leaf sweet.",
+            "The lush green is usually used for leaves. Look at the model sentence again."
+          ]
+        }
       },
-      "objective": "tu-chi-dac-diem-cau-dac-diem"
+      "objective": "tu-chi-dac-diem-cau-dac-diem",
+      "en": {
+        "title": "Build sentences that describe",
+        "goTo": "Teacher Chestnut Bear lays bamboo leaves on his desk by the banyan tree",
+        "prompt": "Teacher Chestnut Bear slowly lays four bamboo leaves on the desk, each marked with the name of a part of the flower plant.\nMatch each describing word with the part it fits, to make a sentence that describes. Model: Hương hoa thơm ngát.\nDrag each describing word onto the leaf it fits.",
+        "items": [
+          "vàng tươi",
+          "xanh mướt",
+          "ngọt dịu",
+          "cao gầy",
+          "mỏng manh"
+        ]
+      }
     },
     {
       "id": "ta-mot-ban-trong-lop",
@@ -900,6 +1170,17 @@
         "answer": {
           "text": "Chọn cây cúc con → Trồng vào chậu nhỏ → Tập nói trước gương → Ôm chậu hoa bước lên bục",
           "explanation": "Có hoa rồi mới có chậu, có chậu rồi mới tập nói, và tập xong Bích mới bước lên bục."
+        },
+        "en": {
+          "guide": [
+            "Think: to have a flowerpot, what must be done first?",
+            "Stepping onto the platform is last, after practising speaking."
+          ],
+          "hint": "Bích chooses the plant before planting it, and practises speaking before stepping up.",
+          "answer": {
+            "text": "Choose a little chrysanthemum → plant it in a small pot → practise speaking in front of the mirror → carry the pot up onto the platform",
+            "explanation": "Without a flower there is no pot, without a pot there is no practising, and only after practising does Bích step onto the platform."
+          }
         }
       },
       "feedback": {
@@ -912,9 +1193,32 @@
           "Ơ kìa, Bích đã lên bục khi chưa có chậu hoa trên tay à? Xếp lại nhé.",
           "Tập nói trước gương mà chưa có hoa trong tay thì hơi lạ. Đổi chỗ thử xem.",
           "Tranh Bích bước lên bục nên đứng cuối hàng, vì đó là lúc bài nói bắt đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four pictures sit in a neat row, and Turmeric Cat puffs out his chest and stands tall on the platform.",
+            "The right order of preparing: choose a plant, pot it, practise, and only then go up!",
+            "Rice Pup wags his tail: told in one go, smooth as Bích!"
+          ],
+          "wrong": [
+            "Oh dear, has Bích gone onto the platform with no flowerpot in her hands? Put them in order again.",
+            "Practising speaking in front of the mirror without a flower in your hands is a bit odd. Try swapping them.",
+            "The picture of Bích stepping up onto the platform should stand last, because that is when the talk begins."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four pictures to plan a talk",
+        "goTo": "Step up onto the wooden platform in the middle of the class, with Turmeric Cat following hugging four pictures",
+        "prompt": "Turmeric Cat hugs four pictures telling how Bích prepared her talk and steps onto the platform, stumbles a little, and the pictures get shuffled everywhere.\nPut the four pictures in the order of what Bích did.",
+        "items": [
+          "Plant the little chrysanthemum in a small pot",
+          "Carry the flowerpot up onto the platform",
+          "Choose a little chrysanthemum plant in Grandma's yard",
+          "Practise speaking in front of the mirror"
+        ]
+      }
     },
     {
       "id": "mun-ke-buoi-sang",
@@ -1058,5 +1362,9 @@
       "cau": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "Turmeric Cat Trembles in Front of the Class",
+    "summary": "The speaking hour under the banyan tree is about to start, and Turmeric Cat's whiskers are shaking. {name} joins Teacher Chestnut Bear to read the story of Bích talking about her flower, mends the letter board, finds words that describe, and helps Turmeric Cat feel confident enough to stand on the platform and speak to the class."
   }
 }

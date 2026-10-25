@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "vt-tv-voi-cho-sach",
       "lines": [
-        { "speaker": "Voi Chở Sách Rong", "text": "Ôi, bánh xe vấp phải rễ cây, sách của tớ văng tung tóe cả ra rồi! Chiều nay tớ còn phải chở sách cho các bạn ở xa nữa." },
-        { "speaker": "Voi Chở Sách Rong", "text": "{name} nhặt sách giúp tớ nhé? Vòi tớ to quá, cầm sách mỏng cứ rơi hoài." }
+        {
+          "speaker": "Voi Chở Sách Rong",
+          "text": "Ôi, bánh xe vấp phải rễ cây, sách của tớ văng tung tóe cả ra rồi! Chiều nay tớ còn phải chở sách cho các bạn ở xa nữa."
+        },
+        {
+          "speaker": "Voi Chở Sách Rong",
+          "text": "{name} nhặt sách giúp tớ nhé? Vòi tớ to quá, cầm sách mỏng cứ rơi hoài."
+        }
       ],
       "choices": [
-        { "text": "Để tớ nhặt, cậu dựng xe lại đi!", "reply": "Cảm ơn cậu! Sách bay ra tận thảm lá ven đường đấy." }
+        {
+          "text": "Để tớ nhặt, cậu dựng xe lại đi!",
+          "reply": "Cảm ơn cậu! Sách bay ra tận thảm lá ven đường đấy."
+        }
       ],
       "en": {
         "title": "The book cart tips over",
@@ -87,7 +96,26 @@
           "clue": "Bìa xanh như lá non, có hình một dòng sông nhỏ uốn quanh làng.",
           "target": "vt-tv-sach-la"
         }
-      ]
+      ],
+      "en": {
+        "title": "Pick up fallen books",
+        "goTo": "Go to the carpet of leaves by the road to find three books",
+        "prompt": "Elephant describes three books that flew out. Read carefully and find each one:",
+        "items": [
+          {
+            "name": "Blue storybook",
+            "clue": "A sky-blue cover with a picture of a frog carrying a school bag off to school."
+          },
+          {
+            "name": "Orange book",
+            "clue": "A cover as bright as a ripe tangerine, telling the story of a bear whose mum sews him a new coat."
+          },
+          {
+            "name": "Green book",
+            "clue": "A cover as green as a young leaf, with a picture of a little river winding round a village."
+          }
+        ]
+      }
     },
     {
       "id": "doc-so-cho-muon",
@@ -99,22 +127,78 @@
       "text": "SỔ CHO MƯỢN SÁCH\nBạn Thỏ mượn cuốn «Bé tập bơi», hẹn trả thứ Hai.\nBạn Nai mượn cuốn «Dòng sông nhỏ», hẹn trả thứ Tư.\nBạn Sóc mượn cuốn «Áo mới của gấu», hẹn trả thứ Sáu.",
       "question": "Ai mượn cuốn «Dòng sông nhỏ»?",
       "choices": [
-        { "id": "a", "text": "Bạn Thỏ" },
-        { "id": "b", "text": "Bạn Nai" },
-        { "id": "c", "text": "Bạn Sóc" }
+        {
+          "id": "a",
+          "text": "Bạn Thỏ"
+        },
+        {
+          "id": "b",
+          "text": "Bạn Nai"
+        },
+        {
+          "id": "c",
+          "text": "Bạn Sóc"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm dòng có tên sách «Dòng sông nhỏ».", "Đọc tên bạn ở đầu dòng đó."],
+        "guide": [
+          "Tìm dòng có tên sách «Dòng sông nhỏ».",
+          "Đọc tên bạn ở đầu dòng đó."
+        ],
         "hint": "Bạn ấy hẹn trả sách vào thứ Tư.",
         "answer": {
           "text": "Bạn Nai mượn cuốn ấy",
           "explanation": "Sổ ghi: Bạn Nai mượn cuốn «Dòng sông nhỏ», hẹn trả thứ Tư."
+        },
+        "en": {
+          "guide": [
+            "Find the line with the book title «The Little River».",
+            "Read the friend's name at the start of that line."
+          ],
+          "hint": "That friend is due to return the book on Wednesday.",
+          "answer": {
+            "text": "Deer borrowed that book",
+            "explanation": "The log says: Deer borrowed «The Little River», due back on Wednesday."
+          }
         }
       },
       "feedback": {
-        "right": ["Đúng là bạn Nai, Voi đánh dấu vào sổ ngay!", "{name} dò sổ nhanh như một thủ thư.", "Chuẩn rồi, thứ Tư bạn Nai sẽ mang sách trả."],
-        "wrong": ["Bạn ấy mượn cuốn khác cơ, dò lại nhé.", "Tìm tên sách «Dòng sông nhỏ» trước đã nha {name}.", "Mỗi dòng là một bạn, đọc từng dòng một xem nào."]
+        "right": [
+          "Đúng là bạn Nai, Voi đánh dấu vào sổ ngay!",
+          "{name} dò sổ nhanh như một thủ thư.",
+          "Chuẩn rồi, thứ Tư bạn Nai sẽ mang sách trả."
+        ],
+        "wrong": [
+          "Bạn ấy mượn cuốn khác cơ, dò lại nhé.",
+          "Tìm tên sách «Dòng sông nhỏ» trước đã nha {name}.",
+          "Mỗi dòng là một bạn, đọc từng dòng một xem nào."
+        ],
+        "en": {
+          "right": [
+            "It was Deer, and Elephant ticks the log straight away!",
+            "{name} checks the log as fast as a librarian.",
+            "Right, on Wednesday Deer will bring the book back."
+          ],
+          "wrong": [
+            "That friend borrowed a different book, check again.",
+            "Find the book title «The Little River» first, {name}.",
+            "Each line is one friend, read them one by one."
+          ]
+        }
+      },
+      "en": {
+        "title": "Book lending log",
+        "goTo": "Elephant's lending log has fallen on the reading mat",
+        "text": "BOOK LENDING LOG\nRabbit borrowed «Little One Learns to Swim», due back on Monday.\nDeer borrowed «The Little River», due back on Wednesday.\nSquirrel borrowed «The Bear's New Coat», due back on Friday.",
+        "question": "Who borrowed «The Little River»?",
+        "choices": [
+          "Rabbit",
+          "Deer",
+          "Squirrel"
+        ]
       }
     },
     {
@@ -128,28 +212,103 @@
       "skill": "logic",
       "prompt": "Hươu đánh số các kệ theo một quy luật lạ: kệ sau hơn kệ trước 2, rồi 3, rồi 4… Kệ tiếp theo mang số mấy?",
       "elements": [
-        { "id": "k1", "label": "1" },
-        { "id": "k2", "label": "3" },
-        { "id": "k3", "label": "6" },
-        { "id": "k4", "label": "10" }
+        {
+          "id": "k1",
+          "label": "1"
+        },
+        {
+          "id": "k2",
+          "label": "3"
+        },
+        {
+          "id": "k3",
+          "label": "6"
+        },
+        {
+          "id": "k4",
+          "label": "10"
+        }
       ],
       "choices": [
-        { "id": "a", "text": "14" },
-        { "id": "b", "text": "15" },
-        { "id": "c", "text": "16" }
+        {
+          "id": "a",
+          "text": "14"
+        },
+        {
+          "id": "b",
+          "text": "15"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Từ 1 lên 3 tăng 2, từ 3 lên 6 tăng 3, từ 6 lên 10 tăng 4.", "Lần sau sẽ tăng thêm mấy?", "Cộng số đó vào 10."],
+        "guide": [
+          "Từ 1 lên 3 tăng 2, từ 3 lên 6 tăng 3, từ 6 lên 10 tăng 4.",
+          "Lần sau sẽ tăng thêm mấy?",
+          "Cộng số đó vào 10."
+        ],
         "hint": "Mỗi lần, số được thêm vào lại lớn hơn lần trước một đơn vị.",
         "answer": {
           "text": "Kệ tiếp theo mang số 15",
           "explanation": "Các bước tăng là 2, 3, 4, nên bước tiếp theo tăng 5: 10 + 5 = 15."
+        },
+        "en": {
+          "guide": [
+            "From 1 to 3 goes up by 2, from 3 to 6 goes up by 3, from 6 to 10 goes up by 4.",
+            "How much will it go up by next?",
+            "Add that to 10."
+          ],
+          "hint": "Each time, the number added is one bigger than last time.",
+          "answer": {
+            "text": "The next shelf has the number 15",
+            "explanation": "The steps go up by 2, 3, 4, so the next step goes up by 5: 10 + 5 = 15."
+          }
         }
       },
       "feedback": {
-        "right": ["Hươu ngẩng cổ khen: quy luật này khó mà {name} vẫn giải được!", "Kệ số 15 treo lên ngay ngắn rồi.", "{name} nhìn ra các bước tăng dần, giỏi quá!"],
-        "wrong": ["Thử viết ra mỗi lần tăng thêm bao nhiêu nhé.", "Lần trước tăng 4, lần này tăng mấy nhỉ {name}?", "Các bước tăng không bằng nhau đâu, nhìn kĩ lại nha."]
+        "right": [
+          "Hươu ngẩng cổ khen: quy luật này khó mà {name} vẫn giải được!",
+          "Kệ số 15 treo lên ngay ngắn rồi.",
+          "{name} nhìn ra các bước tăng dần, giỏi quá!"
+        ],
+        "wrong": [
+          "Thử viết ra mỗi lần tăng thêm bao nhiêu nhé.",
+          "Lần trước tăng 4, lần này tăng mấy nhỉ {name}?",
+          "Các bước tăng không bằng nhau đâu, nhìn kĩ lại nha."
+        ],
+        "en": {
+          "right": [
+            "Deer lifts her neck in praise: this pattern is hard, but {name} solved it!",
+            "Shelf number 15 is hung up neatly.",
+            "{name} spotted the growing steps, so clever!"
+          ],
+          "wrong": [
+            "Try writing down how much it goes up by each time.",
+            "Last time it went up by 4, how much this time, {name}?",
+            "The steps aren't all equal, look closely again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Numbers on the bookshelf",
+        "goTo": "Go to the outdoor bookshelf, where Shelf-Stacking Spotted Deer is hanging the shelf numbers",
+        "prompt": "Deer numbers the shelves in an odd pattern: each shelf is 2 more than the one before, then 3 more, then 4 more... What number is on the next shelf?",
+        "elements": [
+          "1",
+          "3",
+          "6",
+          "10"
+        ],
+        "choices": [
+          "14",
+          "15",
+          "16"
+        ]
       }
     },
     {
@@ -204,9 +363,16 @@
       "kind": "dialogue",
       "target": "vt-tv-bo-nong",
       "lines": [
-        { "speaker": "Bồ Nông Đưa Sách", "text": "Cái túi dưới mỏ tớ đựng được cả chục cuốn sách đấy! Xếp sách gọn gàng rồi đưa đây, tớ bay một mạch tới nhà các bạn." }
+        {
+          "speaker": "Bồ Nông Đưa Sách",
+          "text": "Cái túi dưới mỏ tớ đựng được cả chục cuốn sách đấy! Xếp sách gọn gàng rồi đưa đây, tớ bay một mạch tới nhà các bạn."
+        }
       ],
-      "choices": [{ "text": "Tớ xếp sách ngay, chờ chút nhé!" }],
+      "choices": [
+        {
+          "text": "Tớ xếp sách ngay, chờ chút nhé!"
+        }
+      ],
       "en": {
         "title": "Ask Bồ Nông to deliver the books",
         "goTo": "Go over to the pelican's hut roof and ask Book-Delivering Pelican",
@@ -230,23 +396,89 @@
       "skill": "bang-chu-cai",
       "prompt": "Voi xếp sách theo thứ tự bảng chữ cái của chữ đầu tên sách. Sắp xếp giúp Voi:",
       "items": [
-        { "id": "ech-con", "label": "Ếch con đi học" },
-        { "id": "be-tap-boi", "label": "Bé tập bơi" },
-        { "id": "dong-song", "label": "Dòng sông nhỏ" },
-        { "id": "ao-moi", "label": "Áo mới của gấu" }
+        {
+          "id": "ech-con",
+          "label": "Ếch con đi học"
+        },
+        {
+          "id": "be-tap-boi",
+          "label": "Bé tập bơi"
+        },
+        {
+          "id": "dong-song",
+          "label": "Dòng sông nhỏ"
+        },
+        {
+          "id": "ao-moi",
+          "label": "Áo mới của gấu"
+        }
       ],
-      "answer": { "order": ["ao-moi", "be-tap-boi", "dong-song", "ech-con"] },
+      "answer": {
+        "order": [
+          "ao-moi",
+          "be-tap-boi",
+          "dong-song",
+          "ech-con"
+        ]
+      },
       "support": {
-        "guide": ["Nhìn chữ cái đầu tiên của mỗi tên sách.", "Nhớ thứ tự: A, Ă, Â, B, C, D, Đ, E, Ê…", "Tên bắt đầu bằng chữ đứng trước thì xếp trước."],
+        "guide": [
+          "Nhìn chữ cái đầu tiên của mỗi tên sách.",
+          "Nhớ thứ tự: A, Ă, Â, B, C, D, Đ, E, Ê…",
+          "Tên bắt đầu bằng chữ đứng trước thì xếp trước."
+        ],
         "hint": "Chữ A đứng đầu bảng chữ cái, chữ Ê đứng sau E.",
         "answer": {
           "text": "Áo mới, Bé tập bơi, Dòng sông, Ếch con",
           "explanation": "Chữ đầu lần lượt là A, B, D, Ê, đúng thứ tự trong bảng chữ cái."
+        },
+        "en": {
+          "guide": [
+            "Look at the first letter of each title.",
+            "Remember the order: A, Ă, Â, B, C, D, Đ, E, Ê...",
+            "The title starting with the earlier letter goes first."
+          ],
+          "hint": "The letter A comes first in the alphabet, and Ê comes after E.",
+          "answer": {
+            "text": "Áo mới (New Clothes), Bé tập bơi (Baby Learns to Swim), Dòng sông (The River), Ếch con (Little Frog)",
+            "explanation": "The first letters are A, B, D, Ê in turn, exactly the order of the alphabet."
+          }
         }
       },
       "feedback": {
-        "right": ["Kệ xe sách thẳng hàng, tìm cuốn nào cũng thấy ngay!", "{name} thuộc bảng chữ cái làu làu.", "Voi vẫy tai mừng rỡ: xếp thế này các bạn dễ chọn lắm."],
-        "wrong": ["Nhìn chữ cái đầu tiên của mỗi cuốn nhé.", "Chữ Ê đứng sau hay trước chữ D nhỉ {name}?", "Sách bắt đầu bằng chữ A phải lên đầu hàng."]
+        "right": [
+          "Kệ xe sách thẳng hàng, tìm cuốn nào cũng thấy ngay!",
+          "{name} thuộc bảng chữ cái làu làu.",
+          "Voi vẫy tai mừng rỡ: xếp thế này các bạn dễ chọn lắm."
+        ],
+        "wrong": [
+          "Nhìn chữ cái đầu tiên của mỗi cuốn nhé.",
+          "Chữ Ê đứng sau hay trước chữ D nhỉ {name}?",
+          "Sách bắt đầu bằng chữ A phải lên đầu hàng."
+        ],
+        "en": {
+          "right": [
+            "The book cart shelf is in a neat row, and any book is easy to find!",
+            "{name} knows the alphabet by heart.",
+            "Elephant flaps her ears happily: this way the friends can choose easily."
+          ],
+          "wrong": [
+            "Look at the first letter of each book.",
+            "Does the letter Ê come after or before D, {name}?",
+            "The book starting with A has to go at the head of the row."
+          ]
+        }
+      },
+      "en": {
+        "title": "Arrange books in alphabetical order",
+        "goTo": "Go back to the book cart's wheels to load the books on",
+        "prompt": "Elephant arranges books by the alphabet order of the first letter of the title. Help Elephant sort them:",
+        "items": [
+          "Ếch con đi học",
+          "Bé tập bơi",
+          "Dòng sông nhỏ",
+          "Áo mới của gấu"
+        ]
       }
     },
     {
@@ -275,6 +507,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "bang-chu-cai": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "bang-chu-cai": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: Elephant's Travelling Book Cart",
+    "summary": "The travelling book cart of the Travelling Book Elephant tips over in the middle of the golden-leaf festival, and books fly everywhere. {name} picks up the books, reads the lending book, finds the shelf number by its pattern, chooses how to get books to friends far away and then arranges the books in alphabetical order."
   }
 }

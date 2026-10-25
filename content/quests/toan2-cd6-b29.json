@@ -96,7 +96,11 @@
         "toan2-cd6-kim-gio-thap",
         "toan2-cd6-kim-phut-thap",
         "toan2-cd6-chia-khoa-day-cot"
-      ]
+      ],
+      "en": {
+        "title": "Find the fallen clock hands",
+        "goTo": "Find the two hands and the winding key on the grass around the tower"
+      }
     },
     {
       "id": "mot-ngay-hai-tu-gio",
@@ -163,6 +167,17 @@
         "answer": {
           "text": "5 giờ chiều, tức 17 giờ",
           "explanation": "Kim ngắn chỉ 5, kim dài chỉ 12 nên là 5 giờ chiều. Theo cách đếm đủ 24 giờ thì đó là 17 giờ."
+        },
+        "en": {
+          "guide": [
+            "The long hand pointing straight up at the 12 means an exact hour, with no extra minutes.",
+            "Read the number the short hand points at, and that is the hour."
+          ],
+          "hint": "The short hand points at the 5.",
+          "answer": {
+            "text": "5 o'clock in the afternoon, which is 17:00",
+            "explanation": "The short hand points at 5 and the long hand at 12, so it is 5 o'clock in the afternoon. Counting the full 24 hours, that is 17:00."
+          }
         }
       },
       "feedback": {
@@ -175,13 +190,29 @@
           "Hãy tìm cây kim ngắn trước, nó đang nằm gần số nào nhất?",
           "Kim dài ở số 12 thì phần phút là không, chỉ cần đọc giờ thôi.",
           "Hai cây kim dễ nhầm lắm; cây ngắn hơn mới là kim giờ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five in the afternoon, and pale gold sun shines through the reading-room window!",
+            "Grandpa Khuê nods: you read the exact hour without any hesitation.",
+            "Snoring Panda opens one eye a crack and mumbles: I'm still napping at that time."
+          ],
+          "wrong": [
+            "Find the short hand first: which number is it nearest?",
+            "With the long hand at 12 the minutes are zero, so you only need to read the hour.",
+            "The two hands are easy to mix up; the shorter one is the hour hand."
+          ]
+        }
       },
       "answer": {
         "hour": 17,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Uncle Tròn close the window?",
+        "prompt": "The first painting hangs on the wall of the machine room: the librarian Round Panda is closing the reading-room windows as the afternoon sun softens. The clock beside the painting shows the time in the picture. What time in the afternoon does Round Panda close the windows?"
+      }
     },
     {
       "id": "tranh-va-dong-ho-dien-tu",
@@ -229,6 +260,17 @@
         "answer": {
           "text": "Khỉ Đu Dây tập thể dục lúc 8 giờ sáng. – 08:00; Mèo Xám Mây kể chuyện đêm lúc 8 giờ tối. – 20:00; Gấu Trúc Tròn xếp sách lúc 1 giờ chiều. – 13:00",
           "explanation": "Tập thể dục lúc 8 giờ sáng là 08:00. Kể chuyện đêm lúc 8 giờ tối là 20:00. Xếp sách lúc 1 giờ chiều là 13:00."
+        },
+        "en": {
+          "guide": [
+            "Morning times keep the same number; afternoon and evening times add 12.",
+            "8 in the evening is 8 + 12, and 1 in the afternoon is 1 + 12."
+          ],
+          "hint": "8 in the morning is written 08:00, while 8 in the evening is written 20:00.",
+          "answer": {
+            "text": "Rope-Swinging Monkey exercises at 8 in the morning: 08:00; Cloudy Gray Cat tells a bedtime story at 8 in the evening: 20:00; Round Panda puts books on the shelf at 1 in the afternoon: 13:00",
+            "explanation": "Exercising at 8 in the morning is 08:00. Telling a bedtime story at 8 in the evening is 20:00. Putting books away at 1 in the afternoon is 13:00."
+          }
         }
       },
       "feedback": {
@@ -241,7 +283,19 @@
           "8 giờ sáng và 8 giờ tối nhìn giống nhau nhưng khác đồng hồ đấy.",
           "Giờ buổi chiều khi ghi trên đồng hồ điện tử phải cộng thêm 12.",
           "Xếp sách lúc đầu giờ chiều, đồng hồ nào hiện số bắt đầu bằng 13?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three activities went to the right clocks, and the digital shelf blinks green!",
+            "8 in the morning or 8 in the evening, neither one puzzles you at all.",
+            "Beep Snow Fox waves her white tail: 20:00 is when I tell stories to the whole shelf."
+          ],
+          "wrong": [
+            "8 in the morning and 8 in the evening look alike but belong to different clocks.",
+            "An afternoon time written on a digital clock needs 12 added.",
+            "Putting books away just after midday: which clock shows a number starting with 13?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -250,7 +304,17 @@
           "gau-tron-xep-sach-luc-1-gio-chieu": "nhom-13-00"
         }
       },
-      "objective": "gio-va-lich-ngay-gio"
+      "objective": "gio-va-lich-ngay-gio",
+      "en": {
+        "title": "Which picture goes with which clock?",
+        "goTo": "Go over to the digital clock shelf, where Beep Snow Fox presses a button to light up the digits",
+        "prompt": "Three digital clocks on the shelf show 08:00, 20:00 and 13:00. Sort each activity under the clock whose time matches it.",
+        "items": [
+          "Rope-Swinging Monkey exercises at 8 in the morning.",
+          "Cloudy Gray Cat tells a bedtime story at 8 in the evening.",
+          "Round Panda puts books on the shelf at 1 in the afternoon."
+        ]
+      }
     },
     {
       "id": "doc-sach-buoi-toi",
@@ -275,6 +339,17 @@
         "answer": {
           "text": "7 giờ tối (19 giờ)",
           "explanation": "Kim ngắn chỉ 7, kim dài chỉ 12, trời đã tối nên là 7 giờ tối, còn gọi là 19 giờ."
+        },
+        "en": {
+          "guide": [
+            "If it is already dark, it is an evening time.",
+            "With the long hand at 12, you only need to read the hour."
+          ],
+          "hint": "The short hand points at the 7.",
+          "answer": {
+            "text": "7 o'clock in the evening (19:00)",
+            "explanation": "The short hand points at 7 and the long hand at 12, and it is dark, so it is 7 in the evening, also called 19:00."
+          }
         }
       },
       "feedback": {
@@ -287,13 +362,29 @@
           "Số mà kim ngắn chỉ nhỏ hơn 8, nhìn kĩ lại nhé.",
           "Muốn đọc giờ tròn, hãy chắc chắn kim dài đang đứng ở số 12.",
           "Đặt ngón tay lên kim ngắn rồi đếm tới số nó chỉ xem sao."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Seven in the evening, and Beep Snow Fox's desk lamp glows so warmly!",
+            "Beep Snow Fox flicks her tail: you read the time as smoothly as a page of a book.",
+            "The little bell on the bookshelf rings softly in reply."
+          ],
+          "wrong": [
+            "The number the short hand points at is smaller than 8, so look closely again.",
+            "To read an exact hour, make sure the long hand is standing at 12.",
+            "Put your finger on the short hand and count up to the number it points at."
+          ]
+        }
       },
       "answer": {
         "hour": 19,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Beep Snow Fox read?",
+        "prompt": "The second painting: Beep Snow Fox switches on a small desk lamp to read, and outside the window it is getting dusky. The clock hanging on the bookshelf shows the time in the picture. What time in the evening does Beep Snow Fox read?"
+      }
     },
     {
       "id": "nam-ngu-luc-dem",
@@ -319,6 +410,17 @@
         "answer": {
           "text": "9 giờ tối (21 giờ)",
           "explanation": "Kim ngắn chỉ 9, kim dài chỉ 12; trời đã tối nên là 9 giờ tối, tức 21 giờ."
+        },
+        "en": {
+          "guide": [
+            "When everywhere is quiet and the stars are out, it is an evening time.",
+            "The long hand points at 12, so you only need to read the hour."
+          ],
+          "hint": "The short hand sits exactly on the 9.",
+          "answer": {
+            "text": "9 o'clock in the evening (21:00)",
+            "explanation": "The short hand points at 9 and the long hand at 12; it is dark, so it is 9 in the evening, which is 21:00."
+          }
         }
       },
       "feedback": {
@@ -331,13 +433,30 @@
           "Kim ngắn đã đi qua số 8 rồi, thử nhìn số kế tiếp xem.",
           "Giờ tròn thì kim dài vẫn nằm yên ở số 12.",
           "Đếm lần lượt các số trên mặt đồng hồ cho tới chỗ cây kim ngắn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Nine at night, and the stars sparkle over the roof of the tower!",
+            "Even at this late hour you read it with a clear head, truly impressive.",
+            "Snoring Panda whispers: shh, it's nine o'clock, and I'm in the middle of a dream."
+          ],
+          "wrong": [
+            "The short hand has already passed the 8, so look at the next number.",
+            "At an exact hour the long hand stays still at the 12.",
+            "Count the numbers on the clock face one by one up to where the short hand is."
+          ]
+        }
       },
       "answer": {
         "hour": 21,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Mây watch the stars?",
+        "goTo": "Run down to the foot of the clock tower, where Snoring Panda is fast asleep hugging the third painting",
+        "prompt": "The third painting: Cloudy Gray Cat curls up by the window to watch the stars, and the whole library is quiet. The clock in the painting shows the time. What time in the evening does Cloudy Gray Cat watch the stars?"
+      }
     },
     {
       "id": "ban-gai-ngu-luc-23-gio",
@@ -359,6 +478,17 @@
         "answer": {
           "text": "B 22:00",
           "explanation": "Tranh vẽ lúc 10 giờ đêm, đồng hồ điện tử hiện 22:00 (đồng hồ B)."
+        },
+        "en": {
+          "guide": [
+            "A pitch-dark sky with stars means it is night.",
+            "The night time on a digital clock is the hand-clock time plus 12."
+          ],
+          "hint": "10:00 is ten in the morning, when the sky is bright and has no stars.",
+          "answer": {
+            "text": "B 22:00",
+            "explanation": "The painting shows 10 at night, and the digital clock shows 22:00 (clock B)."
+          }
         }
       },
       "feedback": {
@@ -371,13 +501,30 @@
           "10:00 là giờ sáng, mà ngoài trời đang tối om kia mà.",
           "Giờ đêm thì con số trên đồng hồ điện tử phải lớn hơn 12.",
           "Hãy lấy 10 cộng với 12 rồi quay tới số vừa ra."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Clock B, twenty-two hundred, matches the sky full of stars!",
+            "You turned it to exactly 22:00, not a notch off.",
+            "Cloudy Gray Cat gives a long yawn: this is the time to curl up and keep warm."
+          ],
+          "wrong": [
+            "10:00 is a morning time, but outside it is pitch dark.",
+            "For a night time the number on the digital clock must be bigger than 12.",
+            "Add 12 to 10, then turn to the number you get."
+          ]
+        }
       },
       "answer": {
         "hour": 22,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Clock A or clock B?",
+        "goTo": "Climb up to the round window on the tower, where Cloudy Gray Cat is counting the stars in the painting",
+        "prompt": "The painting by the round window: Cloudy Gray Cat counts the stars when the sky is pitch dark, and the hand clock hanging nearby shows 10 o'clock. Choose the digital clock that shows the right night time for the painting: A 10:00, B 22:00. Then turn the digital clock to the time you chose."
+      }
     },
     {
       "id": "da-bong-luc-15-gio",
@@ -398,6 +545,17 @@
         "answer": {
           "text": "B 14:00",
           "explanation": "Các bạn tập đu dây lúc 2 giờ chiều, đồng hồ điện tử hiện 14:00 (đồng hồ B)."
+        },
+        "en": {
+          "guide": [
+            "At two in the morning the whole village is still asleep.",
+            "Swinging in the sun is two in the afternoon: 2 plus 12."
+          ],
+          "hint": "2 in the afternoon is written 14:00 on a digital clock.",
+          "answer": {
+            "text": "B 14:00",
+            "explanation": "The friends practise swinging at 2 in the afternoon, and the digital clock shows 14:00 (clock B)."
+          }
         }
       },
       "feedback": {
@@ -410,13 +568,29 @@
           "02:00 là hai giờ sáng, ai lại đi tập đu dây lúc ấy.",
           "Bầu trời đang sáng, vậy phải là giờ buổi chiều chứ.",
           "Thêm 12 vào số 2 sẽ ra giờ buổi chiều."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Fourteen hundred, and the rope swings back and forth in the afternoon sun!",
+            "Rope-Swinging Monkey somersaults once to celebrate your right choice.",
+            "Both paintings by the window are matched right, and Cloudy Gray Cat nods contentedly."
+          ],
+          "wrong": [
+            "02:00 is two in the morning, and who practises swinging at that hour?",
+            "The sky is bright, so it must be an afternoon time.",
+            "Adding 12 to the 2 gives an afternoon time."
+          ]
+        }
       },
       "answer": {
         "hour": 14,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Rope-swing practice time in the middle of the day",
+        "prompt": "The second painting by the window: Rope-Swinging Monkey and Rice Ball Bear practise swinging on a rope on the lawn in the blazing sun, and the hand clock shows 2 o'clock. Choose the digital clock that shows the right time for the painting: A 02:00, B 14:00. Then turn the digital clock to the time you chose."
+      }
     },
     {
       "id": "len-day-cot",
@@ -486,6 +660,17 @@
         "answer": {
           "text": "7 giờ 15 phút sáng",
           "explanation": "Kim ngắn vừa qua 7, kim dài chỉ 3: ông Khuê lau bánh răng lúc 7 giờ 15 phút sáng."
+        },
+        "en": {
+          "guide": [
+            "The long hand resting on the 3 means 15 minutes have passed.",
+            "The number the short hand has just passed is the hour."
+          ],
+          "hint": "The short hand has just passed the 7, and the long hand is at the 3.",
+          "answer": {
+            "text": "7:15 in the morning",
+            "explanation": "The short hand has just passed 7 and the long hand points at 3: Grandpa Khuê cleans the gears at 15 minutes past 7 in the morning."
+          }
         }
       },
       "feedback": {
@@ -498,13 +683,29 @@
           "Số 3 trên mặt đồng hồ ứng với bao nhiêu phút nhỉ?",
           "Kim ngắn mới qua số 7 một chút, chưa chạm số 8 đâu.",
           "Đọc phần giờ trước, xong rồi mới đọc phần phút."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Quarter past seven in the morning, and the gears are gleaming!",
+            "Grandpa Khuê smiles kindly: you only have to look at the long hand to know it is fifteen minutes.",
+            "The whole machine room ticks merrily as if it were clapping."
+          ],
+          "wrong": [
+            "How many minutes does the 3 on the clock face stand for?",
+            "The short hand has only just passed the 7 and hasn't reached the 8.",
+            "Read the hour part first, and only then the minutes."
+          ]
+        }
       },
       "answer": {
         "hour": 7,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "When does Grandpa Khuê clean the gears?",
+        "prompt": "The spring is wound tight and a new painting appears: Grandpa Khuê is busily cleaning the gears in the machine room as the early sun slips through a crack in the door. The clock on the wall shows the time. What time, in hours and minutes in the morning, does he clean the gears?"
+      }
     },
     {
       "id": "nam-lam-bai-buoi-chieu",
@@ -530,6 +731,17 @@
         "answer": {
           "text": "3 giờ 30 phút chiều (15 giờ 30 phút)",
           "explanation": "Kim ngắn ở giữa 3 và 4, kim dài chỉ 6: đó là 3 giờ 30 phút chiều, tức 15 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "The long hand at the 6 means it has gone half way round, which is 30 minutes.",
+            "When the short hand sits between two numbers, take the smaller number as the hour."
+          ],
+          "hint": "The short hand sits between the 3 and the 4.",
+          "answer": {
+            "text": "3:30 in the afternoon (15:30)",
+            "explanation": "The short hand is between 3 and 4 and the long hand points at 6: it is half past 3 in the afternoon, which is 15:30."
+          }
         }
       },
       "feedback": {
@@ -542,13 +754,30 @@
           "Khi kim ngắn nằm giữa hai số, hãy lấy số bé hơn làm giờ.",
           "Kim dài hướng xuống số 6 là bao nhiêu phút nhỉ?",
           "Kim ngắn chưa chạm tới số 4 đâu, mới đi được nửa đoạn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past three in the afternoon, exactly Rice Ball Bear's snack time!",
+            "The short hand stands halfway and you still read it spot on.",
+            "Rice Ball Bear shares half the snack with you to say thank you."
+          ],
+          "wrong": [
+            "If the short hand is between two numbers, the hour is the smaller one.",
+            "The long hand pointing down at the 6 is how many minutes?",
+            "The short hand hasn't reached the 4 yet, it has only gone half the way."
+          ]
+        }
       },
       "answer": {
         "hour": 15,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "When does Rice Ball Bear rest?",
+        "goTo": "Go down to the landing of the spiral staircase, where Rice Ball Bear is opening a lunch box",
+        "prompt": "The next painting: Rice Ball Bear sits resting on the landing of the spiral staircase, nibbling an afternoon snack. The clock hanging by the banister shows the time. What time, in hours and minutes in the afternoon, does Rice Ball Bear rest?"
+      }
     },
     {
       "id": "mi-an-toi",
@@ -573,6 +802,17 @@
         "answer": {
           "text": "8 giờ 15 phút tối (20 giờ 15 phút)",
           "explanation": "Kim ngắn vừa qua 8, kim dài chỉ 3, trời đã tối: 8 giờ 15 phút tối, tức 20 giờ 15 phút."
+        },
+        "en": {
+          "guide": [
+            "It is already dark, so this time is in the evening.",
+            "The long hand at the 3 means 15 minutes after the exact hour."
+          ],
+          "hint": "The short hand has just passed the 8, and the long hand is at the 3.",
+          "answer": {
+            "text": "8:15 in the evening (20:15)",
+            "explanation": "The short hand has just passed 8, the long hand points at 3, and it is dark: 8:15 in the evening, which is 20:15."
+          }
         }
       },
       "feedback": {
@@ -585,13 +825,29 @@
           "Kim ngắn vừa qua số 8 thôi, đừng đọc thành số 9.",
           "Kim dài đang ở số 3, đâu phải số 6.",
           "Mỗi số trên mặt đồng hồ ứng với 5 phút, thử đếm từ số 12 sang số 3."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Quarter past eight in the evening, and the porridge bubbles fragrantly!",
+            "Rice Ball Bear rubs his tummy and laughs: just hearing 'porridge' makes it rumble.",
+            "You read both the hour and the minutes without anyone reminding you."
+          ],
+          "wrong": [
+            "The short hand has only just passed the 8, so don't read it as 9.",
+            "The long hand is at the 3, not the 6.",
+            "Each number on the clock face stands for 5 minutes, so try counting from the 12 to the 3."
+          ]
+        }
       },
       "answer": {
         "hour": 20,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "What time does Rice Ball Bear warm the porridge?",
+        "prompt": "The smell of hot porridge drifts out of the third painting: Rice Ball Bear is reheating a pot of porridge for supper. The clock by the stove shows the time. What time, in hours and minutes in the evening, does Rice Ball Bear reheat the porridge?"
+      }
     },
     {
       "id": "ro-bot-ngu-dem",
@@ -617,6 +873,17 @@
         "answer": {
           "text": "11 giờ 30 phút đêm (23 giờ 30 phút)",
           "explanation": "Kim ngắn giữa 11 và 12, kim dài chỉ 6: 11 giờ 30 phút đêm, tức 23 giờ 30 phút."
+        },
+        "en": {
+          "guide": [
+            "The long hand at the 6 means half an hour has passed.",
+            "When the short hand sits between two numbers, read the smaller one."
+          ],
+          "hint": "The short hand sits between the 11 and the 12.",
+          "answer": {
+            "text": "11:30 at night (23:30)",
+            "explanation": "The short hand is between 11 and 12 and the long hand points at 6: 11:30 at night, which is 23:30."
+          }
         }
       },
       "feedback": {
@@ -629,13 +896,30 @@
           "Kim ngắn chưa chạm số 12, nó còn ở lưng chừng.",
           "Kim dài chỉ xuống số 6, vậy đó là bao nhiêu phút?",
           "Giờ đêm cũng đọc giờ trước, phút sau như mọi lần."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past eleven at night, and Snoring Panda snores away right beside the bell!",
+            "It is the dead of night and you still read it right, very good.",
+            "Grandpa Khuê gives a quiet thumbs up: four paintings, four right readings."
+          ],
+          "wrong": [
+            "The short hand hasn't reached the 12 yet, it is still halfway.",
+            "The long hand points down at the 6, so how many minutes is that?",
+            "Read the night time hour first and minutes after, as always."
+          ]
+        }
       },
       "answer": {
         "hour": 23,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "When does Snoring Panda doze off by the bell?",
+        "goTo": "Stop by the foot of the clock tower again, where Snoring Panda holds up the last painting in the row",
+        "prompt": "The last painting in the row: Snoring Panda has nodded off right beside the tower's big bell, and out there the night is deep. The clock in the painting shows the time. What time, in hours and minutes at night, does Snoring Panda doze off?"
+      }
     },
     {
       "id": "ghep-dong-ho-cung-gio",
@@ -723,6 +1007,17 @@
         "answer": {
           "text": "Thứ nhất – 21:30; thứ hai – 16:15; thứ ba – 13:30; thứ tư – 20:00",
           "explanation": "Thứ nhất: 9 giờ 30 phút tối, tức 21:30. Thứ hai: 4 giờ 15 phút chiều, tức 16:15. Thứ ba: 1 giờ 30 phút chiều, tức 13:30. Thứ tư: 8 giờ tối, tức 20:00."
+        },
+        "en": {
+          "guide": [
+            "Read the time on the hand clock first, then look for the digital number.",
+            "For afternoon, evening and night, add 12 to the hour on the hand clock face."
+          ],
+          "hint": "The hand clock showing exactly 8 matches 20:00.",
+          "answer": {
+            "text": "First: 21:30; second: 16:15; third: 13:30; fourth: 20:00",
+            "explanation": "First: 9:30 in the evening, which is 21:30. Second: 4:15 in the afternoon, which is 16:15. Third: 1:30 in the afternoon, which is 13:30. Fourth: 8 in the evening, which is 20:00."
+          }
         }
       },
       "feedback": {
@@ -735,7 +1030,19 @@
           "Có một đồng hồ kim đang đứng cạnh nhầm bạn rồi.",
           "Đừng quên cộng 12 vào giờ khi sang đồng hồ điện tử.",
           "Kim dài ở số 3 là 15 phút, ở số 6 là 30 phút, nhớ chưa?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four pairs of clocks are holding hands and ticking in step!",
+            "You turn afternoon and evening times into digital numbers faster than the machine.",
+            "Beep Snow Fox beeps: two different clock faces, one and the same time!"
+          ],
+          "wrong": [
+            "One hand clock is standing next to the wrong partner.",
+            "Don't forget to add 12 to the hour when you go to the digital clock.",
+            "The long hand at the 3 is 15 minutes, at the 6 it is 30 minutes, remember?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -745,7 +1052,18 @@
           "kim-dong-ho-kim-thu-ba": "nhom-20-00"
         }
       },
-      "objective": "gio-va-lich-ngay-gio"
+      "objective": "gio-va-lich-ngay-gio",
+      "en": {
+        "title": "Analogue and digital clocks",
+        "goTo": "Go back up to the digital clock shelf, where Beep Snow Fox sets out four pairs of clocks",
+        "prompt": "On the machine-room table there are four hand clocks and four digital clocks showing 16:15, 21:30, 20:00, 13:30. Match each hand clock with the digital clock showing the same moment in the afternoon, evening or night.",
+        "items": [
+          "First hand clock",
+          "Second hand clock",
+          "Third hand clock",
+          "Fourth hand clock"
+        ]
+      }
     },
     {
       "id": "thap-ve-dung-gio-hoc-bai",
@@ -767,6 +1085,17 @@
         "answer": {
           "text": "10 giờ 30 phút sáng",
           "explanation": "Đồng hồ điện tử 10:30 là 10 giờ 30 phút sáng: kim giờ ở giữa 10 và 11, kim phút chỉ 6."
+        },
+        "en": {
+          "guide": [
+            "10:30 means 10:30 in the morning.",
+            "To get 30 minutes, the long hand must turn down to the 6."
+          ],
+          "hint": "The long hand points at the 6, and the short hand sits between the 10 and the 11.",
+          "answer": {
+            "text": "10:30 in the morning",
+            "explanation": "The digital clock's 10:30 is half past 10 in the morning: the hour hand is between 10 and 11, and the minute hand points at 6."
+          }
         }
       },
       "feedback": {
@@ -779,13 +1108,30 @@
           "Để có 30 phút, kim dài phải dừng ở số 6.",
           "Buổi sáng, kim ngắn phải nằm quanh khoảng số 10.",
           "Trên 10:30, con số trước dấu hai chấm là giờ, con số sau là phút."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Bong! The tower strikes half past ten, not a minute off!",
+            "The tower's hand is huge and you turned it as lightly as a feather.",
+            "The rooster on top of the tower crows once, sorry for having crowed by mistake at midnight."
+          ],
+          "wrong": [
+            "To get 30 minutes, the long hand must stop at the 6.",
+            "In the morning, the short hand must sit somewhere around the 10.",
+            "In 10:30, the number before the colon is the hour and the number after it is the minutes."
+          ]
+        }
       },
       "answer": {
         "hour": 10,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "Turn the tower to 10:30",
+        "goTo": "Go up to the clock machine room, where Grandpa Khuê grips the lever that turns the tower's hands",
+        "prompt": "It is time to put the tower clock right! The children's story room opens at 10:30 by the digital clock. What time is that, in hours and minutes in the morning? Turn the tower clock's hands to show exactly that time."
+      }
     },
     {
       "id": "thap-gio-thu-vien",
@@ -806,6 +1152,17 @@
         "answer": {
           "text": "1 giờ 15 phút chiều (13 giờ 15 phút)",
           "explanation": "13:15 là 1 giờ 15 phút chiều: kim giờ vừa qua 1, kim phút chỉ 3."
+        },
+        "en": {
+          "guide": [
+            "13 o'clock is 1 in the afternoon: take 12 away from 13.",
+            "Fifteen minutes after the hour, the long hand stops at the 3."
+          ],
+          "hint": "The short hand has just passed the 1, and the long hand points at the 3.",
+          "answer": {
+            "text": "1:15 in the afternoon (13:15)",
+            "explanation": "13:15 is 1:15 in the afternoon: the hour hand has just passed 1, and the minute hand points at 3."
+          }
         }
       },
       "feedback": {
@@ -818,13 +1175,29 @@
           "13 bớt 12 còn mấy? Kim ngắn phải chỉ số đó.",
           "Kim dài đứng ở số 3 mới là 15 phút.",
           "Mặt đồng hồ kim chỉ có các số từ 1 tới 12 thôi nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Quarter past one in the afternoon, and the reading room welcomes its first visitors!",
+            "You turned 13 o'clock into 1 in the afternoon in a flash.",
+            "The tower's two hands pointing at the one and the three look so funny."
+          ],
+          "wrong": [
+            "What is 13 take away 12? The short hand must point at that number.",
+            "The long hand standing at the 3 is what makes 15 minutes.",
+            "A hand clock face only has the numbers 1 to 12."
+          ]
+        }
       },
       "answer": {
         "hour": 13,
         "minute": 15
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "When the reading room opens again",
+        "prompt": "The digital clock in the second painting shows 13:15, the moment the reading room opens again after the midday break. What time is that, in hours and minutes in the afternoon? Turn the tower clock's hands to show exactly that time."
+      }
     },
     {
       "id": "thap-gio-tan-hoc",
@@ -846,6 +1219,17 @@
         "answer": {
           "text": "3 giờ chiều, tức 15:00",
           "explanation": "Đồng hồ điện tử 15:00 nghĩa là 3 giờ chiều, nên kim ngắn hướng vào số 3 còn kim dài đứng ở số 12."
+        },
+        "en": {
+          "guide": [
+            "15 o'clock is exactly 3 in the afternoon.",
+            "At an exact hour the long hand points straight up at the 12."
+          ],
+          "hint": "The short hand points at the 3 and the long hand points at the 12.",
+          "answer": {
+            "text": "3 o'clock in the afternoon, which is 15:00",
+            "explanation": "The digital clock's 15:00 means 3 in the afternoon, so the short hand points at the 3 and the long hand stands at the 12."
+          }
         }
       },
       "feedback": {
@@ -858,13 +1242,30 @@
           "Giờ tròn thì cây kim phút phải nằm ở số 12.",
           "Lấy 15 bớt 12 rồi chỉ vào số vừa ra bằng kim ngắn.",
           "Giờ này là buổi chiều, đừng để kim ngắn chỉ giờ sáng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three in the afternoon, and the rope-swinging contest starts right on time!",
+            "Rope-Swinging Monkey shoots up the rope and cheers for your turn.",
+            "The tower's hands are in the right place, and the bell rings long on the balcony."
+          ],
+          "wrong": [
+            "At an exact hour the minute hand must sit at the 12.",
+            "Take 12 from 15, then point at that number with the short hand.",
+            "This time is in the afternoon, so don't let the short hand show a morning hour."
+          ]
+        }
       },
       "answer": {
         "hour": 15,
         "minute": 0
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "When the rope-swing contest starts",
+        "goTo": "Out onto the balcony in front of the clock face, where Rope-Swinging Monkey swings from the tower's hand waiting for it to turn",
+        "prompt": "The third painting: Rope-Swinging Monkey's rope-swinging contest is about to begin, and the digital clock on the balcony shows 15:00. What time in the afternoon is that? Turn the tower clock's hands to show exactly that time."
+      }
     },
     {
       "id": "thap-gio-rua-bat",
@@ -885,6 +1286,17 @@
         "answer": {
           "text": "7 giờ 30 phút tối (19 giờ 30 phút)",
           "explanation": "19:30 là 7 giờ 30 phút tối: kim giờ ở giữa 7 và 8, kim phút chỉ 6."
+        },
+        "en": {
+          "guide": [
+            "19 o'clock is 7 in the evening.",
+            "Add 30 minutes and the long hand points down at the 6."
+          ],
+          "hint": "The short hand sits between the 7 and the 8, and the long hand points at the 6.",
+          "answer": {
+            "text": "7:30 in the evening (19:30)",
+            "explanation": "19:30 is 7:30 in the evening: the hour hand is between 7 and 8, and the minute hand points at 6."
+          }
         }
       },
       "feedback": {
@@ -897,13 +1309,29 @@
           "19 bớt 12 còn 7, kim ngắn phải ở quanh số 7.",
           "Nửa giờ thì kim dài phải dừng ở số 6.",
           "Kim ngắn nằm giữa số 7 và 8 chứ chưa tới số 8 đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Half past seven in the evening, and the lamp at the top of the tower blazes up!",
+            "The last turn is perfect, and the tower clock has stopped nodding off.",
+            "Snoring Panda claps loudly and then... yawns, but the clock still runs steadily."
+          ],
+          "wrong": [
+            "19 take away 12 leaves 7, so the short hand must be around the 7.",
+            "For half an hour the long hand must stop at the 6.",
+            "The short hand sits between the 7 and the 8, it hasn't reached the 8 yet."
+          ]
+        }
       },
       "answer": {
         "hour": 19,
         "minute": 30
       },
-      "objective": "gio-va-lich-dong-ho"
+      "objective": "gio-va-lich-dong-ho",
+      "en": {
+        "title": "When the tower lights its lamp for the last time",
+        "prompt": "The last painting: Bảo Elephant lights the big lamp at the top of the tower, and the digital clock shows 19:30. What time in the evening is that, in hours and minutes? Turn the tower clock's hands to show exactly that time, the very last turn."
+      }
     },
     {
       "id": "huy-hieu-giu-gio",
@@ -934,5 +1362,9 @@
     "skillXp": {
       "xem-dong-ho": 2
     }
+  },
+  "en": {
+    "title": "Snoring Panda and the Sleepy Clock Tower",
+    "summary": "Snoring Panda, nephew of the librarian Round Panda, fell asleep instead of winding the clock, so the clock tower beside the library shows all the wrong times and the rooster crows in the middle of the night. {name} joins Grandpa Khuê the clockmaker and the friends on the tower to find the lost clock hands, read the time in the morning, afternoon, evening and night, match hand clocks with digital clocks, and get the tower back on time."
   }
 }

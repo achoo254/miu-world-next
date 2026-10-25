@@ -94,7 +94,11 @@
         "toan2-cd3-tui-gao",
         "toan2-cd3-tui-muoi",
         "toan2-cd3-ca-dong-nuoc"
-      ]
+      ],
+      "en": {
+        "title": "Search the rice store for ingredients",
+        "goTo": "Go into the Market Rice Storeroom to find the bag of rice, the bag of salt and the 1 litre jug"
+      }
     },
     {
       "id": "doan-truoc-can-sau",
@@ -183,6 +187,17 @@
         "answer": {
           "text": "Nặng hơn: Nồi gang, Dưa hấu; nhẹ hơn: Thìa, Ớt",
           "explanation": "Cái nồi gang nặng hơn chiếc thìa; quả dưa hấu nặng hơn quả ớt."
+        },
+        "en": {
+          "guide": [
+            "Compare each pair: the iron pot with the spoon, the watermelon with the chilli.",
+            "Think about which one feels heavier in your hand."
+          ],
+          "hint": "The chilli is tiny, and lifting it you hardly feel any weight.",
+          "answer": {
+            "text": "Heavier: Iron pot, Watermelon; lighter: Spoon, Chilli",
+            "explanation": "The cast-iron pot is heavier than the spoon; the watermelon is heavier than the chilli."
+          }
         }
       },
       "feedback": {
@@ -195,7 +210,19 @@
           "So từng cặp một, đừng so lẫn hai cặp với nhau.",
           "Quả ớt và chiếc thìa đều rất nhẹ, thử đặt vào nhóm nhẹ hơn.",
           "Món nào cầm lên thấy chùng tay thì nặng hơn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The iron pot and the watermelon win, they really are heavy!",
+            "Oink Pig rubs his tummy: you guessed better than a weigher.",
+            "The spoon and the chilli are featherlight, and you sorted them into the right group."
+          ],
+          "wrong": [
+            "Compare one pair at a time, don't compare across the two pairs.",
+            "The chilli and the spoon are both very light, try putting them in the lighter group.",
+            "The one that makes your hand sag when you lift it is the heavier."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -205,7 +232,11 @@
           "do-vat-qua-dua-hau": "nhom-nang-hon"
         }
       },
-      "objective": "khoi-luong-dung-tich-nang-nhe"
+      "objective": "khoi-luong-dung-tich-nang-nhe",
+      "en": {
+        "title": "Guess heavy or light",
+        "prompt": "Oink Pig lays out two pairs of things on the kitchen table: the first pair is the cast-iron pot and a spoon; the second pair is a watermelon and a chilli. Guess which in each pair is heavier and which is lighter, then sort them into groups."
+      }
     },
     {
       "id": "buoi-va-cam-tren-can",
@@ -271,6 +302,17 @@
         "answer": {
           "text": "a) Giữa quả mít và quả khế, quả nặng hơn là quả mít.; b) Quả mít nặng 2 kg.; c) So với 2 kg, quả khế nhẹ hơn.",
           "explanation": "Quả mít nặng hơn và cân đúng 2 kg; quả khế nhẹ hơn quả mít nên nhẹ hơn 2 kg."
+        },
+        "en": {
+          "guide": [
+            "Balancing with the 2 kg weight means it weighs exactly 2 kg.",
+            "The starfruit is lighter than the jackfruit."
+          ],
+          "hint": "The jackfruit weighs 2 kg, the starfruit is much smaller than the jackfruit.",
+          "answer": {
+            "text": "a) Of the jackfruit and the starfruit, the heavier one is the jackfruit.; b) The jackfruit weighs 2 kg.; c) Compared with 2 kg, the starfruit is lighter.",
+            "explanation": "The jackfruit is heavier and weighs exactly 2 kg; the starfruit is lighter than the jackfruit, so it is lighter than 2 kg."
+          }
         }
       },
       "feedback": {
@@ -283,7 +325,19 @@
           "Quả cân 2 kg nằm cạnh quả mít, vậy mít nặng mấy ki-lô-gam?",
           "Quả khế bé hơn quả mít nên sẽ nhẹ hơn.",
           "Xem lại: bên nào thăng bằng với quả cân thì bên đó nặng đúng bằng quả cân."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The jackfruit sits still like a boulder, and the scale pan stands dead straight!",
+            "Strong Bear winks: you guessed all three right.",
+            "The starfruit is tiny and light, just as you said."
+          ],
+          "wrong": [
+            "The 2 kg weight sits beside the jackfruit, so how many kilograms does the jackfruit weigh?",
+            "The starfruit is smaller than the jackfruit so it will be lighter.",
+            "Look again: whichever side balances with the weight weighs exactly the same as the weight."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -292,7 +346,12 @@
           "b3": "nhe-hon"
         }
       },
-      "objective": "khoi-luong-dung-tich-nang-nhe"
+      "objective": "khoi-luong-dung-tich-nang-nhe",
+      "en": {
+        "title": "Jackfruit, starfruit and weight",
+        "goTo": "Go to the Dial Scale Stall, where Strong Bear lifts the jackfruit onto the scale pan",
+        "prompt": "On the balance scale: the jackfruit balances with a 2 kg weight; beside it is a starfruit much smaller than the jackfruit. Look at the picture and fill in the blanks."
+      }
     },
     {
       "id": "kim-can-dong-ho",
@@ -365,6 +424,17 @@
         "answer": {
           "text": "a) Túi bột nặng 3 kg, túi đậu nặng 8 kg.; b) Túi đậu nặng hơn túi bột 5 kg.",
           "explanation": "Túi bột nặng 3 kg, túi đậu nặng 8 kg; túi đậu nặng hơn 8 kg – 3 kg = 5 kg."
+        },
+        "en": {
+          "guide": [
+            "Whatever number the needle stops on is how many kg the bag weighs.",
+            "To find how many kilograms heavier, take the smaller number from the bigger."
+          ],
+          "hint": "Bag of beans 8 kg, bag of flour 3 kg: 8 – 3.",
+          "answer": {
+            "text": "a) The bag of flour weighs 3 kg, the bag of beans weighs 8 kg.; b) The bag of beans is 5 kg heavier than the bag of flour.",
+            "explanation": "The bag of flour weighs 3 kg, the bag of beans weighs 8 kg; the bag of beans is 8 kg – 3 kg = 5 kg heavier."
+          }
         }
       },
       "feedback": {
@@ -377,7 +447,19 @@
           "Nhìn lại số mà kim đang chỉ ở mỗi lần cân.",
           "Nặng hơn bao nhiêu thì lấy số lớn trừ số bé.",
           "Hai túi nặng khác nhau, hiệu của chúng không thể bằng 0."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The needle stops right on the number, and Strong Bear taps the dial lightly.",
+            "Read the needle right, subtracted right too.",
+            "Oink Pig writes the number straight into the sweet soup recipe."
+          ],
+          "wrong": [
+            "Look again at the number the needle points to in each weighing.",
+            "For how much heavier, take the smaller number from the bigger.",
+            "The two bags weigh differently, so their difference can't be 0."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -389,6 +471,10 @@
       "objective": "khoi-luong-dung-tich-ki-lo-gam",
       "expression": {
         "b3": "8 - 3"
+      },
+      "en": {
+        "title": "What number does the scale needle point to?",
+        "prompt": "Oink Pig puts a bag of flour on the dial scale and the needle points at 3; he puts a bag of beans on and the needle points at 8. Look at the picture and fill in the numbers."
       }
     },
     {
@@ -497,6 +583,17 @@
         "answer": {
           "text": "Tên | Cáo Lúm | Mèo Ú | Heo Ủn | Gấu Mạnh; Cân nặng | 22 kg | 18 kg | 27 kg | 31 kg; Bạn cân nặng nhất là Gấu Mạnh; bạn cân nhẹ nhất là Mèo Ú.",
           "explanation": "Mèo Ú 18 kg, Heo Ủn 27 kg, Gấu Mạnh 31 kg; Gấu Mạnh nặng nhất, Mèo Ú nhẹ nhất."
+        },
+        "en": {
+          "guide": [
+            "Copy the number the scale shows for each friend into the table.",
+            "Compare the four numbers: 22, 18, 27, 31."
+          ],
+          "hint": "The biggest number in the table is 31, the smallest is 18.",
+          "answer": {
+            "text": "Name | Dimple Fox | Plump Cat | Oink Pig | Strong Bear; Weight | 22 kg | 18 kg | 27 kg | 31 kg; The heaviest friend is Strong Bear; the lightest friend is Plump Cat.",
+            "explanation": "Plump Cat 18 kg, Oink Pig 27 kg, Strong Bear 31 kg; Strong Bear is the heaviest, Plump Cat the lightest."
+          }
         }
       },
       "feedback": {
@@ -509,7 +606,19 @@
           "Mỗi bạn một số, chép đúng tên với số trước nhé.",
           "Nặng nhất là số lớn nhất, nhẹ nhất là số bé nhất.",
           "Hai chữ số đảo chỗ sẽ thành số khác, đọc kĩ lại cột cân nặng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The table has all four friends, and heavy Strong Bear still smiles gently!",
+            "Plump Cat is lightest, and a single deep breath would float him away.",
+            "You compare the weights neatly, and Oink Pig nods again and again."
+          ],
+          "wrong": [
+            "One number per friend, copy each name and number correctly first.",
+            "The heaviest is the biggest number, the lightest is the smallest number.",
+            "Two digits swapped make a different number, read the weight column again carefully."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -520,7 +629,12 @@
           "b5": "meo-u"
         }
       },
-      "objective": "khoi-luong-dung-tich-ki-lo-gam"
+      "objective": "khoi-luong-dung-tich-ki-lo-gam",
+      "en": {
+        "title": "Health scale record of four friends",
+        "goTo": "Back at the Sweet Soup Kitchen in the middle of the market, Oink Pig points to a results sheet pinned on the kitchen post",
+        "prompt": "On the Sweet Soup Kitchen post there's a sheet of weighing results: Plump Cat's needle points at 18 kg; Dimple Fox 22 kg; Oink Pig 27 kg; Strong Bear 31 kg. Oink Pig needs to know so he can serve soup in the right amounts. Fill in the table and then answer."
+      }
     },
     {
       "id": "phieu-tap-can-o-nha",
@@ -649,6 +763,17 @@
         "answer": {
           "text": "Bình chứa được nhiều nước hơn là bình của Cáo Lúm, nhiều hơn 3 cốc.",
           "explanation": "Bình của Cáo Lúm rót được 9 cốc, của Mèo Ú 6 cốc; bình của Cáo Lúm nhiều hơn 9 – 6 = 3 cốc."
+        },
+        "en": {
+          "guide": [
+            "The bottle that pours more cups holds more water.",
+            "How many more cups: take 6 away from 9."
+          ],
+          "hint": "9 cups compared with 6 cups.",
+          "answer": {
+            "text": "The bottle that holds more water is Dimple Fox's, 3 cups more.",
+            "explanation": "Dimple Fox's bottle poured 9 cups and Plump Cat's 6 cups; Dimple Fox's bottle has 9 – 6 = 3 cups more."
+          }
         }
       },
       "feedback": {
@@ -661,7 +786,19 @@
           "Đếm lại số cốc của mỗi bình trước nhé.",
           "Bình nào rót ra nhiều cốc hơn thì chứa nhiều hơn.",
           "Hơn bao nhiêu thì lấy số lớn trừ số bé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Dimple Fox's bottle is fuller, and Plump Cat admires it with a miaow!",
+            "You compared the two rows of cups correctly without any scale.",
+            "Swiftly subtracted, and the three-cup difference shows plainly."
+          ],
+          "wrong": [
+            "Go back and count the cups in each bottle first.",
+            "The bottle that pours more cups holds more.",
+            "For how much more, take the smaller number from the bigger."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -672,6 +809,10 @@
       "objective": "khoi-luong-dung-tich-tinh",
       "expression": {
         "b2": "9 - 6"
+      },
+      "en": {
+        "title": "Is the bottle Dimple Fox's or Plump Cat's?",
+        "prompt": "Dimple Fox pours his bottle and gets 9 cups of water, and Plump Cat pours his bottle and gets 6 cups of water. Look at the two rows of cups and fill in the blanks."
       }
     },
     {
@@ -742,6 +883,17 @@
         "answer": {
           "text": "a) Cả hai bình có 13 cốc nước.; b) Bình B có ít nước hơn, ít hơn 3 cốc.",
           "explanation": "Cả hai bình có 8 + 5 = 13 cốc; bình B ít hơn bình A 8 – 5 = 3 cốc."
+        },
+        "en": {
+          "guide": [
+            "To find both bottles together, add the cups.",
+            "For how many fewer, take the smaller number from the bigger."
+          ],
+          "hint": "8 + 5: split 5 = 2 + 3, 8 + 2 = 10, 10 + 3 = 13.",
+          "answer": {
+            "text": "a) Both bottles hold 13 cups of water.; b) Bottle B has less water, 3 cups fewer.",
+            "explanation": "Both bottles hold 8 + 5 = 13 cups; bottle B has 8 – 5 = 3 cups fewer than bottle A."
+          }
         }
       },
       "feedback": {
@@ -754,7 +906,19 @@
           "Hai bình gộp lại là phép cộng.",
           "So hai bình rồi lấy số lớn trừ số bé để biết hơn kém.",
           "Bình ít cốc hơn là bình B, thử kiểm lại."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both bottles together are just right for the pot, and Oink Pig waves his ladle about!",
+            "You added through 10 so smoothly.",
+            "Bottle B has exactly three cups fewer, and Dimple Fox writes it in his book straight away."
+          ],
+          "wrong": [
+            "Putting the two bottles together is addition.",
+            "Compare the two bottles and take the smaller number from the bigger to find the difference.",
+            "The bottle with fewer cups is bottle B, try checking again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -767,6 +931,11 @@
       "expression": {
         "b1": "8 + 5",
         "b3": "8 - 5"
+      },
+      "en": {
+        "title": "Two bottles of water for cooking sweet soup",
+        "goTo": "Go to the Water Jar Row behind the Sweet Soup Kitchen, where Dimple Fox is lining up bottles A and B",
+        "prompt": "Dimple Fox lines up two bottles of water: bottle A has 8 cups and bottle B has 5 cups. Fill in the numbers."
       }
     },
     {
@@ -816,6 +985,17 @@
         "answer": {
           "text": "9 l",
           "explanation": "Xô xanh có 4 l, xô nâu có 5 l; cả hai xô có 4 l + 5 l = 9 l nước."
+        },
+        "en": {
+          "guide": [
+            "Each full jug is 1 l of water.",
+            "To find both buckets, add the number of jugs in the two buckets."
+          ],
+          "hint": "4 jugs and 5 jugs are 4 l and 5 l.",
+          "answer": {
+            "text": "9 l",
+            "explanation": "The blue bucket has 4 l, the brown bucket has 5 l; both buckets hold 4 l + 5 l = 9 l of water."
+          }
         }
       },
       "feedback": {
@@ -828,13 +1008,30 @@
           "Mỗi ca đầy là 1 lít, đếm xem mỗi xô có mấy ca.",
           "Cả hai xô thì phải cộng số lít lại.",
           "Kết quả phải lớn hơn số lít của xô nâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Nine litres of water, brimming, and Oink Pig wins thanks to you!",
+            "The blue and brown buckets are full to the brim, without a drop spilled.",
+            "You add jugs faster than Oink Pig scoops water."
+          ],
+          "wrong": [
+            "Each full jug is 1 litre, count how many jugs each bucket has.",
+            "For both buckets, add the litres together.",
+            "The result must be more than the brown bucket's litres."
+          ]
+        }
       },
       "answer": {
         "value": 9
       },
       "objective": "khoi-luong-dung-tich-tinh",
-      "expression": "4 + 5"
+      "expression": "4 + 5",
+      "en": {
+        "title": "The yellow and red buckets",
+        "goTo": "Back at the Sweet Soup Kitchen in the middle of the market, Oink Pig has carried over the yellow and red buckets for the contest",
+        "question": "The last contest between Oink Pig and {name}: both scoop water from the big barrel with a 1 l jug. The blue bucket gets 4 full jugs and the brown bucket gets 5 full jugs. How many litres of water do the two buckets hold together?"
+      }
     },
     {
       "id": "muong-go-dau-bep",
@@ -867,5 +1064,9 @@
       "dung-tich": 1,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "The Biggest Sweet Soup Pot at the Market Fair",
+    "summary": "Oink Pig wants to cook the biggest pot of mung bean sweet soup at the Sweet Soup Kitchen in the middle of the market, but the recipe is all kilograms and litres; {name} and Plump Cat guess heavy and light, read the scale at Strong Bear's stall, count cups of water with Dimple Fox, then take worksheets home to practise weighing and measuring for real."
   }
 }

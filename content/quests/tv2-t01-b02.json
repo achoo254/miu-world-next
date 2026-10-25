@@ -110,7 +110,11 @@
         "tv2-t01-to-lich-bui-hong",
         "tv2-t01-to-lich-ruong-lua",
         "tv2-t01-to-lich-ban-hoc"
-      ]
+      ],
+      "en": {
+        "title": "Pick up three flying calendar pages",
+        "goTo": "Chase the wind to pick up calendar pages at the rose bush, the rice paddy and the desk"
+      }
     },
     {
       "id": "ke-viec-hom-qua",
@@ -161,6 +165,17 @@
         "answer": {
           "text": "Em hỏi tờ lịch cũ giờ ở đâu.",
           "explanation": "Khổ đầu kể em nhỏ hỏi ông Cua Đồng tờ lịch cũ đâu rồi, và ông cười, chỉ tay ra ruộng."
+        },
+        "en": {
+          "guide": [
+            "Go back to the opening verse of the poem.",
+            "Find the line with a dash and a question mark."
+          ],
+          "hint": "What the child asks is about something made of paper that hangs on the wall.",
+          "answer": {
+            "text": "The child asks where the old calendar page is now.",
+            "explanation": "The first verse says the child asks Grandpa Field Crab where the old calendar page has gone, and he laughs and points out to the field."
+          }
         }
       },
       "feedback": {
@@ -173,9 +188,30 @@
           "Câu em nhỏ hỏi nằm ở khổ thơ đầu, dò lại từng dòng nhé.",
           "Mạ và lúa là lời ông Cua đáp ở khổ sau, em nhỏ chưa hỏi chuyện ấy đâu.",
           "Tìm dòng thơ có dấu chấm hỏi ở khổ thứ nhất, Cún Lúa ngồi chờ ngay bên cạnh đây."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! The child asks exactly what Grandpa Field Crab was wondering about.",
+            "Spot on, the question is right there in the second line of the poem!",
+            "Grandpa Field Crab clicks his claws together like clapping: {name} found it right away!"
+          ],
+          "wrong": [
+            "The child's question is in the first verse, check it line by line.",
+            "Seedlings and rice are what Grandpa Crab answers in the later verses, the child has not asked about those.",
+            "Find the line with a question mark in the first verse. Rice Pup is sitting and waiting right beside you."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The poem on the calendar page",
+        "question": "What does the little child ask Grandpa Field Crab?",
+        "choices": [
+          "Where the old calendar page has gone.",
+          "When the rice seedlings will turn into rice.",
+          "When the bamboo shoots first sprouted."
+        ]
+      }
     },
     {
       "id": "ngay-hom-qua-o-lai",
@@ -224,6 +260,17 @@
         "answer": {
           "text": "Luống mạ bên bờ mương; bờ tre nơi măng nhú; cuốn vở có nét chữ tròn.",
           "explanation": "Ông Cua nhắc ba nơi: luống mạ, bờ tre và cuốn vở. Mái nhà ông và tờ lịch cũ không có trong lời ông đáp."
+        },
+        "en": {
+          "guide": [
+            "From the second verse on, every verse begins with «Hôm qua» (yesterday).",
+            "Read the line right after «Hôm qua» to see where that day stays."
+          ],
+          "hint": "There are three places, matching the three verses where Grandpa Crab answers the child.",
+          "answer": {
+            "text": "The rice seedlings by the ditch; the bamboo hedge where shoots push up; the notebook with round handwriting.",
+            "explanation": "Grandpa Crab names three places: the seedlings, the bamboo hedge and the notebook. His roof and the old calendar page are not in his answer."
+          }
         }
       },
       "feedback": {
@@ -236,9 +283,33 @@
           "Còn một nơi ông Cua nhắc tới mà {name} chưa chọn đấy, đếm lại các khổ thơ nhé.",
           "Tờ lịch cũ chỉ là thứ em nhỏ hỏi thôi, ông đâu bảo ngày hôm qua nằm trong đó.",
           "Mái nhà ông Cua không xuất hiện ở khổ thơ nào cả, thử lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three places! The three calendar pages match the three verses like three puzzle pieces.",
+            "Seedlings, bamboo and notebook are all here. Rice Pup gives a crisp bark of joy.",
+            "Grandpa Field Crab nods, his eyestalks wobbling: so yesterday never disappeared at all."
+          ],
+          "wrong": [
+            "Grandpa Crab mentions one more place that {name} has not picked, count the verses again.",
+            "The old calendar page is only what the child asked about, he did not say yesterday is inside it.",
+            "Grandpa Crab's roof does not appear in any verse, try again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Where is yesterday?",
+        "goTo": "Follow Grandpa Field Crab to the rice-drying yard, where Tick-Tock Cat is watching the shadow of the sun to guess the time",
+        "prompt": "Grandpa Field Crab lays three calendar pages on the rice-drying yard and points his claw at each one in turn. According to his answer in the poem, where does yesterday stay behind?",
+        "choices": [
+          "In the rice seedlings by the ditch",
+          "On Grandpa Crab's roof",
+          "Under the bamboo hedge, where shoots push up from the soil",
+          "In the old calendar page hanging at the kapok tree",
+          "In the notebook with its round handwriting"
+        ]
+      }
     },
     {
       "id": "loi-dan-cua-bo",
@@ -275,6 +346,17 @@
         "answer": {
           "text": "Em nhỏ cần chăm đọc, chăm viết.",
           "explanation": "Khổ cuối dặn: chăm đọc, chăm viết thì ngày qua mãi không mòn. Những điều học được hôm qua còn ở lại trong vở."
+        },
+        "en": {
+          "guide": [
+            "Find the fourth verse, the one about the notebook.",
+            "Read the two lines just before the last line of the poem."
+          ],
+          "hint": "What Grandpa Crab advises is connected with the notebook and the round letters.",
+          "answer": {
+            "text": "The child needs to read often and write often.",
+            "explanation": "The last verse says: read often, write often, and the days will never wear away. What you learned yesterday stays in the notebook."
+          }
         }
       },
       "feedback": {
@@ -287,9 +369,31 @@
           "Khổ thơ cuối nói về cuốn vở, dò lại hai dòng cuối nhé.",
           "Cất kĩ tờ lịch cũ cũng không giữ được ngày qua đâu, thử lại xem.",
           "Măng tre là chuyện của khổ thứ ba cơ, {name} tìm khổ cuối nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly, reading and writing often keeps yesterday!",
+            "Grandpa Field Crab promises to tell all the little crabs in the field to read and write often from tomorrow.",
+            "Just as he advised, {name} read the last verse really carefully."
+          ],
+          "wrong": [
+            "The last verse is about the notebook, check the last two lines.",
+            "Keeping the old calendar page safe will not keep the days either, try again.",
+            "The bamboo shoots belong to the third verse, {name} should look for the last one."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Grandpa Crab's advice",
+        "goTo": "Stop by the study desk on the porch, where the third calendar page is lying",
+        "prompt": "The third calendar page has fallen right onto the notebook on the desk and lies there as still as if it were studying hard. In the last verse, what does the child need to do for days never to wear away?",
+        "choices": [
+          "Keep the old calendar page very safe",
+          "Read often and write often",
+          "Go to the bamboo hedge and count every shoot"
+        ]
+      }
     },
     {
       "id": "hoc-thuoc-long",
@@ -378,6 +482,17 @@
         "answer": {
           "text": "Chỉ người: em nhỏ, bác nông dân. Chỉ vật: ruộng lúa, nón lá, cuốn vở, tờ lịch, bình tưới, khóm tre.",
           "explanation": "Em nhỏ và bác nông dân là người; những thứ còn lại là đồ dùng, cây cối hay cánh đồng vẽ trong tranh."
+        },
+        "en": {
+          "guide": [
+            "A word for a person names someone: ông, bà, cô, bác, em…",
+            "A word for a thing names an object, a plant or a place in the picture."
+          ],
+          "hint": "In the pictures there are only two people: the little child and the farmer.",
+          "answer": {
+            "text": "People: em nhỏ, bác nông dân. Things: ruộng lúa, nón lá, cuốn vở, tờ lịch, bình tưới, khóm tre.",
+            "explanation": "The little child and the farmer are people; the rest are objects, plants or the field drawn in the picture."
+          }
         }
       },
       "feedback": {
@@ -390,9 +505,35 @@
           "Có một từ chỉ người đang lạc sang nhóm vật rồi kìa.",
           "Khóm tre và ruộng lúa có biết chào hỏi không nhỉ? Chúng là người hay là vật?",
           "Nhìn lại tranh xem: ai đội nón lá, ai cầm bình tưới đi ra ruộng?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two groups, as tidy as two chambers in a crab's burrow!",
+            "People go in the people group, things in the things group. Rice Pup wags his tail in agreement.",
+            "{name} studies pictures even more closely than Grandpa Field Crab's eyestalks."
+          ],
+          "wrong": [
+            "A word for a person has wandered into the things group.",
+            "Do bamboo clumps and rice fields say hello? Are they people or things?",
+            "Look at the picture again: who is wearing a conical hat, and who is carrying a watering can to the field?"
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "People and things on the calendar page",
+        "prompt": "The back of each calendar page has a picture of the poem, and Grandpa Field Crab has to raise his eyestalks high to see it. Look at the drawings and sort each word into the group for people or the group for things.",
+        "items": [
+          "ruộng lúa",
+          "em nhỏ",
+          "nón lá",
+          "cuốn vở",
+          "bác nông dân",
+          "tờ lịch",
+          "bình tưới",
+          "khóm tre"
+        ]
+      }
     },
     {
       "id": "dat-cau-tu-tranh",
@@ -505,6 +646,17 @@
         "answer": {
           "text": "Điền lần lượt: â, c, d, e.",
           "explanation": "Bảng chữ cái đi theo thứ tự a, ă, â, b, c, d, đ, e, ê, nên chữ sau ă là â, sau b là c, trước đ là d, sau đ là e."
+        },
+        "en": {
+          "guide": [
+            "Read the name at the end of each line, then think which letter has that name.",
+            "Recite the alphabet from the start: a, ă, â, b, …"
+          ],
+          "hint": "The letter named «ớ» wears a little hat; the letter named «dê» has no bar through it.",
+          "answer": {
+            "text": "Fill in, in order: â, c, d, e.",
+            "explanation": "The alphabet goes a, ă, â, b, c, d, đ, e, ê, so the letter after ă is â, after b is c, before đ is d, and after đ is e."
+          }
         }
       },
       "feedback": {
@@ -517,9 +669,26 @@
           "Chữ tên \"ớ\" có đội một chiếc mũ nhỏ, nhìn lại nhé.",
           "Chữ tên \"dê\" và chữ tên \"đê\" khác nhau ở nét gạch ngang đấy.",
           "Đọc thầm a, ă, â, b, c… rồi dò lại từng ô một xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four blurred squares glow clearly again, and Grandpa Field Crab carves them over with the tip of his claw!",
+            "All four letters right! Rice Pup barks along with each letter, so cheerful to hear.",
+            "{name} knows the alphabet by heart, and Grandpa Field Crab is amazed."
+          ],
+          "wrong": [
+            "The letter named «ớ» wears a little hat, take another look.",
+            "The letters named «dê» and «đê» differ by the bar, remember.",
+            "Recite a, ă, â, b, c… silently, then check the squares one by one."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-chu-cai"
+      "objective": "bang-chu-cai-chu-cai",
+      "en": {
+        "title": "The faded alphabet",
+        "goTo": "Go to the alphabet board by the rice paddy, where four letter squares are blurred",
+        "prompt": "Last night's rain blurred four squares on the alphabet board that Grandpa Field Crab carved himself. He squints with his eyestalks, but every square looks like a grain of rice! Read how each letter is named and where it stands, then fill in the missing letters."
+      }
     },
     {
       "id": "hoa-chu-cai",
@@ -574,6 +743,17 @@
         "answer": {
           "text": "g, h, k, l, m, ô",
           "explanation": "Trong bảng chữ cái, g đứng trước h, rồi tới k, l, m; chữ ô đứng sau cùng trong sáu chữ này."
+        },
+        "en": {
+          "guide": [
+            "Recite the alphabet from g: g, h, i, k, l, m, n, o, ô.",
+            "The letter ô comes after o, so it is near the end."
+          ],
+          "hint": "The first flower in the row carries g, and the last one carries ô.",
+          "answer": {
+            "text": "In order: g, h, k, l, m, ô",
+            "explanation": "In the alphabet, g comes before h, then k, l, m; ô comes last among these six letters."
+          }
         }
       },
       "feedback": {
@@ -586,9 +766,33 @@
           "Chữ k đứng trước hay sau chữ l? Thử đọc to g, h, i, k, l xem.",
           "Bông hoa chữ g phải đứng đầu hàng, như bạn cao nhất đứng đầu hàng ấy.",
           "Đọc to bảng chữ cái từ chữ g rồi xếp lại từng bông nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The six flowers line up neatly like pupils at the flag salute!",
+            "In alphabet order now, and Grandpa Field Crab clicks his claws.",
+            "Grandpa Field Crab tucks each flower onto his shell, looking as if he wears a flower hat."
+          ],
+          "wrong": [
+            "Does k come before or after l? Try saying g, h, i, k, l out loud.",
+            "The g flower must stand at the head of the row, like the tallest child leading the line.",
+            "Say the alphabet out loud from g, then rearrange the flowers one by one."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-chu-cai"
+      "objective": "bang-chu-cai-chu-cai",
+      "en": {
+        "title": "Six letter flowers",
+        "prompt": "Grandpa Field Crab has just sneezed, and six flowers carrying letters have blown all around the kapok tree. Pick them up and put them in alphabet order.",
+        "items": [
+          "ô",
+          "g",
+          "m",
+          "h",
+          "l",
+          "k"
+        ]
+      }
     },
     {
       "id": "tam-buc-tranh",
@@ -678,6 +882,17 @@
         "answer": {
           "text": "Chỉ người: cô y tá, bạn học trò, bác thợ may. Chỉ vật: cái cuốc, túi vải, kính lúp, nón lá. Chỉ hoạt động: gặt lúa, tưới rau, đọc sách.",
           "explanation": "Cô y tá, bạn học trò, bác thợ may là người; cuốc, túi, kính, nón là đồ vật; gặt lúa, tưới rau, đọc sách là việc làm, tức là hoạt động."
+        },
+        "en": {
+          "guide": [
+            "A word for a person answers the question «Ai?» (Who?).",
+            "A word for a thing names an object; a word for an action tells what someone is doing."
+          ],
+          "hint": "Harvesting, watering and reading are all things someone is doing.",
+          "answer": {
+            "text": "People: cô y tá, bạn học trò, bác thợ may. Things: cái cuốc, túi vải, kính lúp, nón lá. Actions: gặt lúa, tưới rau, đọc sách.",
+            "explanation": "The nurse, the schoolchild and the tailor are people; the hoe, bag, magnifying glass and hat are things; harvesting, watering and reading are jobs people do, which means actions."
+          }
         }
       },
       "feedback": {
@@ -690,9 +905,38 @@
           "Việc ai đó đang làm thì thuộc nhóm hoạt động đấy.",
           "Cô y tá là người hay là vật nhỉ? Cô còn từng băng càng cho ông Cua Đồng cơ mà.",
           "Còn một món đồ dùng lạc sang nhóm chỉ người kìa, tìm nó về nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three groups of words standing in neat lines!",
+            "People, things, actions, no group mixed up. Rice Pup wags his tail like a pinwheel.",
+            "Grandpa Field Crab will have to carve {name}'s name on his burrow wall to remember it forever."
+          ],
+          "wrong": [
+            "Something someone is doing belongs in the actions group.",
+            "Is the nurse a person or a thing? She even once bandaged Grandpa Field Crab's claw!",
+            "A tool has wandered into the group for people, find it and bring it back."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Ten pictures in the tree hollow",
+        "goTo": "Climb into the kapok tree hollow to see the eight pictures Grandpa Field Crab keeps safe",
+        "prompt": "In the kapok tree hollow, Grandpa Field Crab keeps ten small pictures of the people, things and jobs he remembers. Each one is wrapped in banana leaf to keep it dry! Sort each word into the group for people, things or actions.",
+        "items": [
+          "cái cuốc",
+          "gặt lúa",
+          "cô y tá",
+          "túi vải",
+          "tưới rau",
+          "bạn học trò",
+          "kính lúp",
+          "bác thợ may",
+          "nón lá",
+          "đọc sách"
+        ]
+      }
     },
     {
       "id": "the-gioi-thieu-ban-be",
@@ -804,6 +1048,17 @@
         "answer": {
           "text": "Cô Thỏ Ngọc là cô giáo dạy chữ cho cả làng. Mèo Tíc Tắc là chú mèo xem giờ bằng bóng nắng. Làng Ven Sông là ngôi làng nằm bên khúc sông cong.",
           "explanation": "Ghép xong, câu nào cũng phải hợp nghĩa: dạy chữ là việc của cô giáo, xem bóng nắng là việc của chú mèo, còn khúc sông cong là nơi có ngôi làng."
+        },
+        "en": {
+          "guide": [
+            "Read each first part, then try it with each last part.",
+            "An introduction sentence tells who or what something is."
+          ],
+          "hint": "Only one of the cards is about a place, not a person or an animal.",
+          "answer": {
+            "text": "Cô Thỏ Ngọc is the teacher who teaches the whole village its letters. Mèo Tíc Tắc is the cat who tells the time by the sun's shadow. Làng Ven Sông is the village by the bend in the river.",
+            "explanation": "Each sentence must make sense once joined: teaching letters is a teacher's job, reading the time by the sun's shadow is the cat's, and the bend in the river is where the village lies."
+          }
         }
       },
       "feedback": {
@@ -816,9 +1071,30 @@
           "Ai là người dạy chữ cho cả làng nhỉ? Đọc lại phần cuối xem.",
           "Một ngôi làng mà đi xem giờ bằng bóng nắng thì buồn cười lắm!",
           "Thử đọc cả câu lên xem nghe có xuôi tai không nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The three cards join into three introduction sentences!",
+            "Every sentence matches, and Grandpa Field Crab reads them out loud, his claws raised like flags.",
+            "All right, every sentence sounds as smooth as a river flowing."
+          ],
+          "wrong": [
+            "Who teaches letters to the whole village? Read the last parts again.",
+            "A village that tells the time by the sun's shadow would be funny!",
+            "Try reading the whole sentence out loud to hear whether it flows."
+          ]
+        }
       },
-      "objective": "cau-gioi-thieu"
+      "objective": "cau-gioi-thieu",
+      "en": {
+        "title": "Match up the introduction cards",
+        "prompt": "Grandpa Field Crab spreads half-cards out on the dry field, each half with a few grains of rice stuck to it. Join the first part of each card to the last part that fits, to make an introduction sentence.",
+        "items": [
+          "Cô Thỏ Ngọc",
+          "Mèo Tíc Tắc",
+          "Làng Ven Sông"
+        ]
+      }
     },
     {
       "id": "the-cua-minh",
@@ -916,5 +1192,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Grandpa Field Crab Looks for Yesterday",
+    "summary": "A morning breeze scatters the calendar pages of Grandpa Field Crab, who remembers every harvest day in the village but tears paper whenever he pinches it with his claws. {name} picks up the pages one by one, reads the poem about yesterday, visits Tick-Tock Cat by the rice-drying yard and Jackfruit Monkey in the jackfruit tree behind the village school, and helps Grandpa carve the alphabet board that the rain has blurred."
   }
 }

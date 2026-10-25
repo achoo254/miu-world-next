@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "vt-ntr-bac-ba",
       "lines": [
-        { "speaker": "Bác Nông Dân Ba", "text": "Ôi cái lưng của bác! Sáng nay khuân bao thóc bị trẹo mất rồi, mà đàn gà, đàn lợn, con bò đều đang réo đói." },
-        { "speaker": "Bác Nông Dân Ba", "text": "Cháu làm thay bác một buổi được không? Đồ cho chúng ăn bác để ở góc sân phơi." }
+        {
+          "speaker": "Bác Nông Dân Ba",
+          "text": "Ôi cái lưng của bác! Sáng nay khuân bao thóc bị trẹo mất rồi, mà đàn gà, đàn lợn, con bò đều đang réo đói."
+        },
+        {
+          "speaker": "Bác Nông Dân Ba",
+          "text": "Cháu làm thay bác một buổi được không? Đồ cho chúng ăn bác để ở góc sân phơi."
+        }
       ],
       "choices": [
-        { "text": "Bác nghỉ đi ạ, để cháu lo!", "reply": "Giỏi quá! Nhớ đọc sổ tay của bác trước khi cho ăn nhé." }
+        {
+          "text": "Bác nghỉ đi ạ, để cháu lo!",
+          "reply": "Giỏi quá! Nhớ đọc sổ tay của bác trước khi cho ăn nhé."
+        }
       ],
       "en": {
         "title": "Uncle Ba's bad back",
@@ -87,7 +96,26 @@
           "clue": "Xanh mướt, mềm và thơm, vừa cắt ở bờ mương sáng nay.",
           "target": "vt-ntr-bo-co"
         }
-      ]
+      ],
+      "en": {
+        "title": "Gather food for the animals",
+        "goTo": "Go to the corner of the drying yard to gather food",
+        "prompt": "Uncle Ba asks you to fetch three things. Read the descriptions and find the right ones:",
+        "items": [
+          {
+            "name": "Bucket of well water",
+            "clue": "It has a handle, and inside is cool water just drawn up from the well."
+          },
+          {
+            "name": "Sack of rice grains",
+            "clue": "A bulging cloth sack filled with golden grains still in their husks."
+          },
+          {
+            "name": "Bundle of young grass",
+            "clue": "Lush green, soft and fragrant, cut from the edge of the ditch this morning."
+          }
+        ]
+      }
     },
     {
       "id": "doc-so-tay",
@@ -99,22 +127,78 @@
       "text": "SỔ TAY CHĂM THÚ\nGà và vịt ăn thóc.\nLợn ăn cám nấu với rau.\nBò, dê và thỏ ăn cỏ non.\nSáng nào cũng thay nước sạch cho cả chuồng.",
       "question": "Theo sổ tay, lợn ăn gì?",
       "choices": [
-        { "id": "a", "text": "Thóc" },
-        { "id": "b", "text": "Cám nấu với rau" },
-        { "id": "c", "text": "Cỏ non" }
+        {
+          "id": "a",
+          "text": "Thóc"
+        },
+        {
+          "id": "b",
+          "text": "Cám nấu với rau"
+        },
+        {
+          "id": "c",
+          "text": "Cỏ non"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm dòng có chữ «Lợn».", "Đọc phần sau chữ «ăn»."],
+        "guide": [
+          "Tìm dòng có chữ «Lợn».",
+          "Đọc phần sau chữ «ăn»."
+        ],
         "hint": "Thức ăn của lợn phải nấu chín.",
         "answer": {
           "text": "Lợn ăn cám nấu với rau",
           "explanation": "Sổ tay ghi: Lợn ăn cám nấu với rau."
+        },
+        "en": {
+          "guide": [
+            "Find the line with the word «Pigs».",
+            "Read the part after the word «eat»."
+          ],
+          "hint": "A pig's food has to be cooked.",
+          "answer": {
+            "text": "Pigs eat cooked bran with vegetables",
+            "explanation": "The notebook says: Pigs eat cooked bran with vegetables."
+          }
         }
       },
       "feedback": {
-        "right": ["Đúng rồi, nồi cám nấu rau đang thơm phức kìa!", "{name} đọc sổ tay như một bác nông dân thực thụ.", "Chuẩn dòng thứ ba, đàn lợn sắp được no bụng."],
-        "wrong": ["Thức ăn ấy dành cho con vật khác đấy, đọc lại nhé.", "Tìm dòng có chữ «Lợn» nha {name}.", "Cỏ non là của bò, dê và thỏ cơ mà."]
+        "right": [
+          "Đúng rồi, nồi cám nấu rau đang thơm phức kìa!",
+          "{name} đọc sổ tay như một bác nông dân thực thụ.",
+          "Chuẩn dòng thứ ba, đàn lợn sắp được no bụng."
+        ],
+        "wrong": [
+          "Thức ăn ấy dành cho con vật khác đấy, đọc lại nhé.",
+          "Tìm dòng có chữ «Lợn» nha {name}.",
+          "Cỏ non là của bò, dê và thỏ cơ mà."
+        ],
+        "en": {
+          "right": [
+            "That's right, the pot of bran and vegetables smells delicious!",
+            "{name} reads the notebook like a real farmer.",
+            "Spot on, the third line, and the pigs will soon have full tummies."
+          ],
+          "wrong": [
+            "That food is for a different animal, read again.",
+            "Find the line with the word «Pigs», {name}.",
+            "Young grass is for the cows, goats and rabbits."
+          ]
+        }
+      },
+      "en": {
+        "title": "Animal-care notebook",
+        "goTo": "Uncle Ba's notebook is on the wooden table next to the well",
+        "text": "ANIMAL-CARE NOTEBOOK\nChickens and ducks eat grain.\nPigs eat cooked bran with vegetables.\nCows, goats and rabbits eat young grass.\nEvery morning, change the clean water for the whole pen.",
+        "question": "According to the notebook, what do pigs eat?",
+        "choices": [
+          "Grain",
+          "Cooked bran with vegetables",
+          "Young grass"
+        ]
       }
     },
     {
@@ -128,22 +212,79 @@
       "skill": "logic",
       "prompt": "Lu Lu đố: trong chuồng chỉ có gà và lợn. Tớ đếm được 5 cái đầu và 14 cái chân. Trong chuồng có mấy con lợn?",
       "choices": [
-        { "id": "a", "text": "1 con lợn" },
-        { "id": "b", "text": "2 con lợn" },
-        { "id": "c", "text": "3 con lợn" }
+        {
+          "id": "a",
+          "text": "1 con lợn"
+        },
+        {
+          "id": "b",
+          "text": "2 con lợn"
+        },
+        {
+          "id": "c",
+          "text": "3 con lợn"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Mỗi con gà có 2 chân, mỗi con lợn có 4 chân.", "Thử với 2 con lợn: còn lại bao nhiêu con gà?", "Đếm tổng số chân xem có đúng 14 không."],
+        "guide": [
+          "Mỗi con gà có 2 chân, mỗi con lợn có 4 chân.",
+          "Thử với 2 con lợn: còn lại bao nhiêu con gà?",
+          "Đếm tổng số chân xem có đúng 14 không."
+        ],
         "hint": "Nếu cả 5 con đều là gà thì chỉ có 10 chân, còn thiếu 4 chân.",
         "answer": {
           "text": "Có 2 con lợn và 3 con gà",
           "explanation": "2 con lợn có 8 chân, 3 con gà có 6 chân, 8 + 6 = 14 chân, 2 + 3 = 5 đầu."
+        },
+        "en": {
+          "guide": [
+            "Each chicken has 2 legs and each pig has 4 legs.",
+            "Try 2 pigs: how many chickens are left?",
+            "Count the total legs and see if it is exactly 14."
+          ],
+          "hint": "If all 5 animals were chickens there would be only 10 legs, which is 4 legs short.",
+          "answer": {
+            "text": "There are 2 pigs and 3 chickens",
+            "explanation": "2 pigs have 8 legs and 3 chickens have 6 legs, 8 + 6 = 14 legs, and 2 + 3 = 5 heads."
+          }
         }
       },
       "feedback": {
-        "right": ["Gâu gâu! Hai con lợn, ba con gà, đúng phóc!", "{name} thử từng trường hợp thông minh quá.", "Lu Lu vẫy đuôi: câu này làm khó cả bác Ba đấy!"],
-        "wrong": ["Đếm thử số chân với đáp án ấy xem có đủ 14 không nhé.", "Gà 2 chân, lợn 4 chân, cộng lại thử xem {name}.", "Số đầu phải đúng 5 và số chân phải đúng 14 cơ."]
+        "right": [
+          "Gâu gâu! Hai con lợn, ba con gà, đúng phóc!",
+          "{name} thử từng trường hợp thông minh quá.",
+          "Lu Lu vẫy đuôi: câu này làm khó cả bác Ba đấy!"
+        ],
+        "wrong": [
+          "Đếm thử số chân với đáp án ấy xem có đủ 14 không nhé.",
+          "Gà 2 chân, lợn 4 chân, cộng lại thử xem {name}.",
+          "Số đầu phải đúng 5 và số chân phải đúng 14 cơ."
+        ],
+        "en": {
+          "right": [
+            "Woof woof! Two pigs and three chickens, spot on!",
+            "{name} tried each case so cleverly.",
+            "Lu Lu wags his tail: this one stumped even Uncle Ba!"
+          ],
+          "wrong": [
+            "Count the legs with that answer and see if they make 14.",
+            "Chickens have 2 legs and pigs have 4, add them up, {name}.",
+            "The heads must be exactly 5 and the legs exactly 14."
+          ]
+        }
+      },
+      "en": {
+        "title": "Count heads, count legs",
+        "goTo": "Go to the grazing meadow, where Lu Lu the Sheepdog is watching the pen",
+        "prompt": "Lu Lu asks a riddle: in the pen there are only chickens and pigs. I counted 5 heads and 14 legs. How many pigs are in the pen?",
+        "choices": [
+          "1 pig",
+          "2 pigs",
+          "3 pigs"
+        ]
       }
     },
     {
@@ -198,9 +339,16 @@
       "kind": "dialogue",
       "target": "vt-ntr-anh-tu",
       "lines": [
-        { "speaker": "Anh Nông Dân Tú", "text": "Làm thay bác Ba à? Giỏi đấy! Anh vác bao thóc cho, em xách xô nước nhẹ hơn thôi nhé." }
+        {
+          "speaker": "Anh Nông Dân Tú",
+          "text": "Làm thay bác Ba à? Giỏi đấy! Anh vác bao thóc cho, em xách xô nước nhẹ hơn thôi nhé."
+        }
       ],
-      "choices": [{ "text": "Dạ, mình cùng làm nhanh lên anh!" }],
+      "choices": [
+        {
+          "text": "Dạ, mình cùng làm nhanh lên anh!"
+        }
+      ],
       "en": {
         "title": "Ask Tú for help",
         "goTo": "Go to the tilled field and ask young farmer Tú",
@@ -224,32 +372,115 @@
       "skill": "doc-hieu",
       "prompt": "Nhớ lại sổ tay của bác Ba, xếp mỗi con vật vào đúng máng thức ăn của nó:",
       "groups": [
-        { "id": "thoc", "label": "Máng thóc" },
-        { "id": "cam", "label": "Máng cám" },
-        { "id": "co", "label": "Máng cỏ" }
+        {
+          "id": "thoc",
+          "label": "Máng thóc"
+        },
+        {
+          "id": "cam",
+          "label": "Máng cám"
+        },
+        {
+          "id": "co",
+          "label": "Máng cỏ"
+        }
       ],
       "items": [
-        { "id": "ga", "label": "Gà mái" },
-        { "id": "bo", "label": "Bò sữa" },
-        { "id": "lon", "label": "Lợn ỉ" },
-        { "id": "vit", "label": "Vịt bầu" },
-        { "id": "de", "label": "Dê con" },
-        { "id": "tho", "label": "Thỏ trắng" }
+        {
+          "id": "ga",
+          "label": "Gà mái"
+        },
+        {
+          "id": "bo",
+          "label": "Bò sữa"
+        },
+        {
+          "id": "lon",
+          "label": "Lợn ỉ"
+        },
+        {
+          "id": "vit",
+          "label": "Vịt bầu"
+        },
+        {
+          "id": "de",
+          "label": "Dê con"
+        },
+        {
+          "id": "tho",
+          "label": "Thỏ trắng"
+        }
       ],
       "answer": {
-        "assignment": { "ga": "thoc", "bo": "co", "lon": "cam", "vit": "thoc", "de": "co", "tho": "co" }
+        "assignment": {
+          "ga": "thoc",
+          "bo": "co",
+          "lon": "cam",
+          "vit": "thoc",
+          "de": "co",
+          "tho": "co"
+        }
       },
       "support": {
-        "guide": ["Đọc lại từng dòng của sổ tay.", "Gà và vịt chung một máng, lợn một máng riêng.", "Ba con vật còn lại cùng ăn một thứ."],
+        "guide": [
+          "Đọc lại từng dòng của sổ tay.",
+          "Gà và vịt chung một máng, lợn một máng riêng.",
+          "Ba con vật còn lại cùng ăn một thứ."
+        ],
         "hint": "Máng cỏ đông nhất, có tới ba con.",
         "answer": {
           "text": "Thóc: gà mái, vịt bầu. Cám: lợn ỉ. Cỏ: bò sữa, dê con, thỏ trắng",
           "explanation": "Sổ tay ghi gà và vịt ăn thóc; lợn ăn cám; bò, dê và thỏ ăn cỏ non."
+        },
+        "en": {
+          "guide": [
+            "Read each line of the notebook again.",
+            "Chickens and ducks share one trough, and the pig has a trough of its own.",
+            "The other three animals eat the same thing."
+          ],
+          "hint": "The grass trough is the busiest, with three animals.",
+          "answer": {
+            "text": "Grain: hen, Bầu duck. Bran: Ỉ pig. Grass: dairy cow, young goat, white rabbit",
+            "explanation": "The notebook says chickens and ducks eat grain; pigs eat bran; cows, goats and rabbits eat young grass."
+          }
         }
       },
       "feedback": {
-        "right": ["Con nào cũng ăn ngon lành, chẳng ai tranh máng của ai!", "{name} nhớ sổ tay không sót một dòng.", "Cả chuồng no căng bụng, kêu vang cảm ơn."],
-        "wrong": ["Có một bạn đang đứng nhầm máng rồi, xem lại nhé.", "Lợn có máng riêng của lợn đấy {name}.", "Đọc lại sổ tay: con nào ăn cỏ non?"]
+        "right": [
+          "Con nào cũng ăn ngon lành, chẳng ai tranh máng của ai!",
+          "{name} nhớ sổ tay không sót một dòng.",
+          "Cả chuồng no căng bụng, kêu vang cảm ơn."
+        ],
+        "wrong": [
+          "Có một bạn đang đứng nhầm máng rồi, xem lại nhé.",
+          "Lợn có máng riêng của lợn đấy {name}.",
+          "Đọc lại sổ tay: con nào ăn cỏ non?"
+        ],
+        "en": {
+          "right": [
+            "Every animal is eating happily, nobody is fighting over a trough!",
+            "{name} remembered the notebook without missing a line.",
+            "The whole pen is full-bellied and calling out thanks."
+          ],
+          "wrong": [
+            "One friend is standing at the wrong trough, have another look.",
+            "The pig has a trough of its own, {name}.",
+            "Read the notebook again: which animals eat young grass?"
+          ]
+        }
+      },
+      "en": {
+        "title": "Share the food with each animal",
+        "goTo": "Go back to Uncle Ba's porch to share out the food",
+        "prompt": "Remember Uncle Ba's notebook and put each animal in its own feeding trough:",
+        "items": [
+          "Hen",
+          "Dairy cow",
+          "Ỉ pig",
+          "Bầu duck",
+          "Young goat",
+          "White rabbit"
+        ]
       }
     },
     {
@@ -278,6 +509,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "phep-cong": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "phep-cong": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: A Day Filling In for Uncle Ba",
+    "summary": "Uncle Ba the Farmer has a bad back, and the animals are hungry. {name} gathers food, reads the animal-care notebook, counts heads and legs in the pen, chooses how to carry heavy loads and then shares out the food to each animal correctly."
   }
 }

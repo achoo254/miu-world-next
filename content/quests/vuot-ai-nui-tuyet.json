@@ -40,11 +40,20 @@
       "kind": "dialogue",
       "target": "trum-nt-tho-tuyet",
       "lines": [
-        { "speaker": "Thỏ Tuyết Mũ Len", "text": "Brừ brừ, lạnh quá! {name} ơi, Cánh Cụt Hoàng Đế đang giữ chiếc cúp trượt tuyết ở chân dốc lớn, ai thắng bảy câu đố băng giá thì được mang cúp về làng." },
-        { "speaker": "Thỏ Tuyết Mũ Len", "text": "Nhưng ra dốc mà quên đồ ấm là rét cóng ngay. Đồ của tớ bị gió thổi bay ra bãi tuyết phẳng rồi." }
+        {
+          "speaker": "Thỏ Tuyết Mũ Len",
+          "text": "Brừ brừ, lạnh quá! {name} ơi, Cánh Cụt Hoàng Đế đang giữ chiếc cúp trượt tuyết ở chân dốc lớn, ai thắng bảy câu đố băng giá thì được mang cúp về làng."
+        },
+        {
+          "speaker": "Thỏ Tuyết Mũ Len",
+          "text": "Nhưng ra dốc mà quên đồ ấm là rét cóng ngay. Đồ của tớ bị gió thổi bay ra bãi tuyết phẳng rồi."
+        }
       ],
       "choices": [
-        { "text": "Tớ đi gom đồ ấm cho cả hai!", "reply": "Cảm ơn cậu! Nhớ tìm cả cốc ca cao nóng nữa nhé." }
+        {
+          "text": "Tớ đi gom đồ ấm cho cả hai!",
+          "reply": "Cảm ơn cậu! Nhớ tìm cả cốc ca cao nóng nữa nhé."
+        }
       ],
       "en": {
         "title": "Thỏ Tuyết invites you to compete",
@@ -87,7 +96,26 @@
           "clue": "Có quai cầm, khói bốc nghi ngút, uống một ngụm là ấm từ bụng ra tay.",
           "target": "trum-nt-ca-cao"
         }
-      ]
+      ],
+      "en": {
+        "title": "Gather snow gear",
+        "goTo": "Go to the flat snowfield and find three pieces of snow gear",
+        "prompt": "The snow wind blew three things away. Read the clues and find them all:",
+        "items": [
+          {
+            "name": "The striped scarf",
+            "clue": "Long and warm, knitted with many-coloured stripes; wrap it round your neck and the cold is gone."
+          },
+          {
+            "name": "The pair of ski goggles",
+            "clue": "Two big lenses that cover your eyes, so white snow doesn't dazzle you when you speed down the slope."
+          },
+          {
+            "name": "A mug of hot cocoa",
+            "clue": "It has a handle and steams away; one sip warms you from tummy to fingertips."
+          }
+        ]
+      }
     },
     {
       "id": "doc-luat-doc-truot",
@@ -99,22 +127,78 @@
       "text": "LUẬT DỐC TRƯỢT\n1. Đội mũ và đeo kính trước khi trượt.\n2. Trượt lần lượt, cách người phía trước ít nhất năm bước.\n3. Lỡ ngã thì đứng dậy, nép vào mép dốc cho người sau đi qua.\n4. Muốn thi với Cánh Cụt Hoàng Đế, hãy tới chân dốc lớn sau giờ trưa.",
       "question": "Lỡ bị ngã trên dốc, em cần làm gì?",
       "choices": [
-        { "id": "a", "text": "Nằm yên giữa dốc chờ người tới đỡ" },
-        { "id": "b", "text": "Đứng dậy, nép vào mép dốc" },
-        { "id": "c", "text": "Trượt tiếp thật nhanh xuống chân dốc" }
+        {
+          "id": "a",
+          "text": "Nằm yên giữa dốc chờ người tới đỡ"
+        },
+        {
+          "id": "b",
+          "text": "Đứng dậy, nép vào mép dốc"
+        },
+        {
+          "id": "c",
+          "text": "Trượt tiếp thật nhanh xuống chân dốc"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm luật có chữ «ngã».", "Đọc hết luật số 3."],
+        "guide": [
+          "Tìm luật có chữ «ngã».",
+          "Đọc hết luật số 3."
+        ],
         "hint": "Người phía sau cần có lối đi qua.",
         "answer": {
           "text": "Đứng dậy rồi nép sát mép dốc",
           "explanation": "Luật số 3 viết: lỡ ngã thì đứng dậy, nép vào mép dốc cho người sau đi qua."
+        },
+        "en": {
+          "guide": [
+            "Find the rule with the word «fall».",
+            "Read all of rule 3."
+          ],
+          "hint": "The person behind needs room to pass.",
+          "answer": {
+            "text": "Stand up, then squeeze to the slope's edge",
+            "explanation": "Rule 3 says: if you fall, get up and move to the edge of the slope so the next person can pass."
+          }
         }
       },
       "feedback": {
-        "right": ["An toàn là trên hết, {name} nhớ luật rồi!", "Đúng luật số 3, nép vào mép cho bạn sau đi qua.", "Thỏ Tuyết gật gù: trượt kiểu này thì chẳng ai va vào ai."],
-        "wrong": ["Nằm giữa dốc dễ bị va vào lắm, đọc lại luật số 3 nhé.", "Tìm chữ «ngã» trong bảng luật nha {name}.", "Lao tiếp xuống dốc khi vừa ngã nguy hiểm lắm đấy."]
+        "right": [
+          "An toàn là trên hết, {name} nhớ luật rồi!",
+          "Đúng luật số 3, nép vào mép cho bạn sau đi qua.",
+          "Thỏ Tuyết gật gù: trượt kiểu này thì chẳng ai va vào ai."
+        ],
+        "wrong": [
+          "Nằm giữa dốc dễ bị va vào lắm, đọc lại luật số 3 nhé.",
+          "Tìm chữ «ngã» trong bảng luật nha {name}.",
+          "Lao tiếp xuống dốc khi vừa ngã nguy hiểm lắm đấy."
+        ],
+        "en": {
+          "right": [
+            "Safety first, {name} remembers the rules!",
+            "Right, rule 3: move to the edge so the next one can pass.",
+            "Snow Bunny nods: slide like this and nobody bumps into anybody."
+          ],
+          "wrong": [
+            "Lying in the middle of the slope is a good way to get bumped, read rule 3 again.",
+            "Look for the word «fall» in the rules, {name}.",
+            "Rushing on down right after a fall is very dangerous."
+          ]
+        }
+      },
+      "en": {
+        "title": "Rules of the slide slope",
+        "goTo": "Stop by the slide slope rules post and read the rules before going up",
+        "text": "SLIDE SLOPE RULES\n1. Put on your hat and goggles before sliding.\n2. Slide one at a time, at least five steps behind the person in front.\n3. If you fall, get up and move to the edge of the slope so the next person can pass.\n4. To compete with the Emperor Penguin, come to the bottom of the big slope after midday.",
+        "question": "If you fall on the slope, what should you do?",
+        "choices": [
+          "Lie still in the middle of the slope and wait for someone to help",
+          "Get up and move to the edge of the slope",
+          "Keep sliding very fast to the bottom"
+        ]
       }
     },
     {
@@ -128,22 +212,79 @@
       "skill": "logic",
       "prompt": "Cáo Tuyết có 3 chiếc mũ len (đỏ, vàng, xanh) và 2 chiếc khăn (trắng, đen). Mỗi bạn đội một mũ và quàng một khăn. Có bao nhiêu cách chọn khác nhau?",
       "choices": [
-        { "id": "a", "text": "5 cách" },
-        { "id": "b", "text": "6 cách" },
-        { "id": "c", "text": "3 cách" }
+        {
+          "id": "a",
+          "text": "5 cách"
+        },
+        {
+          "id": "b",
+          "text": "6 cách"
+        },
+        {
+          "id": "c",
+          "text": "3 cách"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Chọn mũ đỏ trước: đi với khăn trắng, rồi khăn đen. Được 2 cách.", "Làm tương tự với mũ vàng và mũ xanh.", "Cộng tất cả các cách lại."],
+        "guide": [
+          "Chọn mũ đỏ trước: đi với khăn trắng, rồi khăn đen. Được 2 cách.",
+          "Làm tương tự với mũ vàng và mũ xanh.",
+          "Cộng tất cả các cách lại."
+        ],
         "hint": "Mỗi chiếc mũ ghép được với 2 chiếc khăn.",
         "answer": {
           "text": "Có 6 cách chọn",
           "explanation": "Mỗi mũ có 2 cách chọn khăn; 3 chiếc mũ nên có 2 + 2 + 2 = 6 cách."
+        },
+        "en": {
+          "guide": [
+            "Pick the red hat first: it goes with the white scarf, then the black scarf. That's 2 ways.",
+            "Do the same with the yellow hat and the blue hat.",
+            "Add up all the ways."
+          ],
+          "hint": "Each hat can be paired with 2 scarves.",
+          "answer": {
+            "text": "There are 6 ways to choose",
+            "explanation": "Each hat has 2 scarf choices; with 3 hats that's 2 + 2 + 2 = 6 ways."
+          }
         }
       },
       "feedback": {
-        "right": ["Sáu cách, bạn nào cũng có bộ đồ riêng!", "{name} liệt kê không sót cặp nào, giỏi quá.", "Cáo Tuyết vỗ tay: tính kiểu này là chuẩn huấn luyện viên!"],
-        "wrong": ["Đừng cộng 3 với 2 nhé, ghép từng mũ với từng khăn xem.", "Mũ đỏ đi với mấy chiếc khăn nhỉ {name}?", "Viết ra từng cặp mũ – khăn rồi đếm lại nha."]
+        "right": [
+          "Sáu cách, bạn nào cũng có bộ đồ riêng!",
+          "{name} liệt kê không sót cặp nào, giỏi quá.",
+          "Cáo Tuyết vỗ tay: tính kiểu này là chuẩn huấn luyện viên!"
+        ],
+        "wrong": [
+          "Đừng cộng 3 với 2 nhé, ghép từng mũ với từng khăn xem.",
+          "Mũ đỏ đi với mấy chiếc khăn nhỉ {name}?",
+          "Viết ra từng cặp mũ – khăn rồi đếm lại nha."
+        ],
+        "en": {
+          "right": [
+            "Six ways, everyone gets their own outfit!",
+            "{name} listed every pair without missing one, brilliant.",
+            "Snow Fox claps: counting like this is real coach style!"
+          ],
+          "wrong": [
+            "Don't add 3 and 2, pair each hat with each scarf instead.",
+            "How many scarves does the red hat go with, {name}?",
+            "Write out each hat and scarf pair, then count again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Snow Fox's hat and scarf",
+        "goTo": "Go to the practice slope, where Coach Snow Fox is choosing gear for everyone",
+        "prompt": "Snow Fox has 3 woolly hats (red, yellow, blue) and 2 scarves (white, black). Everyone wears one hat and one scarf. How many different ways are there to choose?",
+        "choices": [
+          "5 ways",
+          "6 ways",
+          "3 ways"
+        ]
       }
     },
     {
@@ -208,11 +349,22 @@
           "move": "fling",
           "prompt": "Thỏ trượt được 58 m, Cáo trượt được 85 m. Ai trượt xa hơn?",
           "choices": [
-            { "id": "a", "text": "Thỏ" },
-            { "id": "b", "text": "Cáo" },
-            { "id": "c", "text": "Hai bạn bằng nhau" }
+            {
+              "id": "a",
+              "text": "Thỏ"
+            },
+            {
+              "id": "b",
+              "text": "Cáo"
+            },
+            {
+              "id": "c",
+              "text": "Hai bạn bằng nhau"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "So hai quãng đường 58 m và 85 m; ai có số mét lớn hơn thì trượt xa hơn.",
@@ -230,10 +382,18 @@
               ],
               "hint": "58 has 5 tens and 85 has 8 tens; the bigger tens make the bigger number.",
               "answer": {
-                "text": "The fox (Fox)",
+                "text": "Fox",
                 "explanation": "85 m has 8 tens, more than the 5 tens of 58 m, so the fox (Fox) went further than the rabbit (Rabbit); swapped digits are not equal."
               }
             }
+          },
+          "en": {
+            "prompt": "Rabbit slid 58 m and Fox slid 85 m. Who slid further?",
+            "choices": [
+              "Rabbit",
+              "Fox",
+              "They slid the same distance"
+            ]
           }
         },
         {
@@ -242,11 +402,22 @@
           "move": "orbs",
           "prompt": "Lượt trượt đầu được 27 điểm, lượt sau được 18 điểm. Cả hai lượt được bao nhiêu điểm?",
           "choices": [
-            { "id": "a", "text": "35 điểm" },
-            { "id": "b", "text": "45 điểm" },
-            { "id": "c", "text": "9 điểm" }
+            {
+              "id": "a",
+              "text": "35 điểm"
+            },
+            {
+              "id": "b",
+              "text": "45 điểm"
+            },
+            {
+              "id": "c",
+              "text": "9 điểm"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Điểm của cả hai lượt là tổng: cộng 27 + 18.",
@@ -264,10 +435,18 @@
               ],
               "hint": "Ones: 7 + 8 = 15, so write 5 and carry 1 into the tens, 2 + 1.",
               "answer": {
-                "text": "45 points (45 điểm)",
+                "text": "45 points",
                 "explanation": "27 + 18 = 45 because 7 + 8 = 15, write 5 carry 1, and 2 + 1 + 1 = 4; 35 forgets the carry and 9 is the difference."
               }
             }
+          },
+          "en": {
+            "prompt": "The first run scored 27 points and the second run scored 18 points. How many points for both runs?",
+            "choices": [
+              "35 points",
+              "45 points",
+              "9 points"
+            ]
           }
         },
         {
@@ -276,11 +455,22 @@
           "move": "gem",
           "prompt": "Con dốc dài 90 m, em đã trượt được 35 m. Còn lại bao nhiêu mét nữa?",
           "choices": [
-            { "id": "a", "text": "55 m" },
-            { "id": "b", "text": "65 m" },
-            { "id": "c", "text": "125 m" }
+            {
+              "id": "a",
+              "text": "55 m"
+            },
+            {
+              "id": "b",
+              "text": "65 m"
+            },
+            {
+              "id": "c",
+              "text": "125 m"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Phần dốc còn lại là cả con dốc bớt đi đoạn đã trượt: 90 − 35.",
@@ -302,6 +492,14 @@
                 "explanation": "90 − 35 = 55 because 10 − 5 = 5 and 8 − 3 = 5; check 55 + 35 = 90; 125 m adds the two numbers."
               }
             }
+          },
+          "en": {
+            "prompt": "The slope is 90 m long and you have slid 35 m. How many more metres are left?",
+            "choices": [
+              "55 m",
+              "65 m",
+              "125 m"
+            ]
           }
         },
         {
@@ -310,11 +508,22 @@
           "move": "charge",
           "prompt": "Bông tuyết trắng trong tiếng Anh gọi là gì?",
           "choices": [
-            { "id": "a", "text": "rain" },
-            { "id": "b", "text": "sun" },
-            { "id": "c", "text": "snow" }
+            {
+              "id": "a",
+              "text": "rain"
+            },
+            {
+              "id": "b",
+              "text": "sun"
+            },
+            {
+              "id": "c",
+              "text": "snow"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Đọc ba từ tiếng Anh và nhớ nghĩa từng từ: từ nào chỉ mưa, từ nào chỉ mặt trời?",
@@ -336,6 +545,14 @@
                 "explanation": "A white snowflake (bông tuyết) is «snow» in English; «rain» is water falling and «sun» shines in the sky."
               }
             }
+          },
+          "en": {
+            "prompt": "What is the English word for the white flakes that fall from the sky in winter?",
+            "choices": [
+              "rain",
+              "sun",
+              "snow"
+            ]
           }
         },
         {
@@ -344,11 +561,22 @@
           "move": "fling",
           "prompt": "Hoàng Đế run run nói «It is cold!». Từ «cold» nghĩa là gì?",
           "choices": [
-            { "id": "a", "text": "lạnh" },
-            { "id": "b", "text": "nóng" },
-            { "id": "c", "text": "vui" }
+            {
+              "id": "a",
+              "text": "lạnh"
+            },
+            {
+              "id": "b",
+              "text": "nóng"
+            },
+            {
+              "id": "c",
+              "text": "vui"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Để ý Hoàng Đế đang run run khi nói: người ta run lên khi thấy thế nào?",
@@ -366,10 +594,18 @@
               ],
               "hint": "In the frozen kingdom, «cold» is the chill that makes you put on a warm coat.",
               "answer": {
-                "text": "lạnh (cold)",
+                "text": "lạnh",
                 "explanation": "«Cold» is «lạnh», which is why the Emperor shivers; «nóng» means hot and «vui» means happy."
               }
             }
+          },
+          "en": {
+            "prompt": "The Emperor shivers and says «It is cold!». What does the word «cold» mean in Vietnamese?",
+            "choices": [
+              "lạnh",
+              "nóng",
+              "vui"
+            ]
           }
         },
         {
@@ -378,11 +614,22 @@
           "move": "orbs",
           "prompt": "Các cột cáp treo đánh số giảm dần: 90, 80, 70, 60, … Cột tiếp theo mang số mấy?",
           "choices": [
-            { "id": "a", "text": "50" },
-            { "id": "b", "text": "55" },
-            { "id": "c", "text": "70" }
+            {
+              "id": "a",
+              "text": "50"
+            },
+            {
+              "id": "b",
+              "text": "55"
+            },
+            {
+              "id": "c",
+              "text": "70"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Tính xem mỗi cột cáp treo kém cột trước bao nhiêu: 90 rồi 80, 80 rồi 70.",
@@ -404,6 +651,14 @@
                 "explanation": "The pylons drop by 10 each time: after 60 comes 60 − 10 = 50; 55 drops only 5 and 70 is a pylon already passed."
               }
             }
+          },
+          "en": {
+            "prompt": "The cable car posts are numbered going down: 90, 80, 70, 60, … What number is on the next post?",
+            "choices": [
+              "50",
+              "55",
+              "70"
+            ]
           }
         },
         {
@@ -412,11 +667,22 @@
           "move": "gem",
           "prompt": "Đọc câu: «Trời rét căm căm, bông tuyết rơi trắng xóa mái nhà.» Câu này cho biết thời tiết thế nào?",
           "choices": [
-            { "id": "a", "text": "Nắng to và oi bức" },
-            { "id": "b", "text": "Rất lạnh, có tuyết rơi" },
-            { "id": "c", "text": "Mưa rào và có gió" }
+            {
+              "id": "a",
+              "text": "Nắng to và oi bức"
+            },
+            {
+              "id": "b",
+              "text": "Rất lạnh, có tuyết rơi"
+            },
+            {
+              "id": "c",
+              "text": "Mưa rào và có gió"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đọc câu và gạch chân các từ tả thời tiết: «rét căm căm», «bông tuyết rơi trắng xóa».",
@@ -438,9 +704,24 @@
                 "explanation": "«Rét căm căm» means very cold and «bông tuyết rơi trắng xóa» means snow is falling; nothing about sun or showers."
               }
             }
+          },
+          "en": {
+            "prompt": "Read the sentence: «Trời rét căm căm, bông tuyết rơi trắng xóa mái nhà.» What does this sentence tell you about the weather?",
+            "choices": [
+              "Very sunny and muggy",
+              "Very cold, with snow falling",
+              "Heavy showers and wind"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Battle of wits with the Emperor Penguin",
+        "goTo": "Go to the bottom of the big slope, where the Emperor Penguin is waiting",
+        "bossName": "Emperor Penguin",
+        "introDialogue": "Welcome to the frosty kingdom! Here are seven icy riddles, and every right answer melts one more layer of the ice beneath my feet.",
+        "winDialogue": "The ice has all melted! {name} was truly eager to win, and the ski trophy goes to the champion."
+      }
     },
     {
       "id": "cup-truot-tuyet",
@@ -468,6 +749,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "so-sanh-so": 1, "phep-cong": 1, "tu-vung": 1, "logic": 1 }
+    "skillXp": {
+      "so-sanh-so": 1,
+      "phep-cong": 1,
+      "tu-vung": 1,
+      "logic": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Emperor Penguin",
+    "summary": "The Emperor Penguin hugs the ski trophy at the bottom of the big slope and dares anyone to beat his seven frosty riddles. {name} gets the sliding gear ready, reads the slope rules, solves the hat and scarf puzzle, then steps into a battle of wits in the snow."
   }
 }

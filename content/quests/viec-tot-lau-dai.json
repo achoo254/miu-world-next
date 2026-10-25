@@ -40,10 +40,16 @@
       "kind": "dialogue",
       "target": "vt-ld-linh-go",
       "lines": [
-        { "speaker": "Lính Gỗ Lạc Đoàn", "text": "Một, hai! Một, hai… Ôi, tớ đánh rơi đồ nên tụt lại, cả đoàn diễu hành đi mất rồi. Không có tớ đánh trống, đoàn sẽ bước lộn xộn mất!" }
+        {
+          "speaker": "Lính Gỗ Lạc Đoàn",
+          "text": "Một, hai! Một, hai… Ôi, tớ đánh rơi đồ nên tụt lại, cả đoàn diễu hành đi mất rồi. Không có tớ đánh trống, đoàn sẽ bước lộn xộn mất!"
+        }
       ],
       "choices": [
-        { "text": "Tớ giúp cậu tìm đồ rồi đuổi theo!", "reply": "Tuyệt! Lúc nãy tớ vấp ở bậc thang khối, chắc đồ rơi quanh đó." }
+        {
+          "text": "Tớ giúp cậu tìm đồ rồi đuổi theo!",
+          "reply": "Tuyệt! Lúc nãy tớ vấp ở bậc thang khối, chắc đồ rơi quanh đó."
+        }
       ],
       "en": {
         "title": "Lính Gỗ left behind",
@@ -85,7 +91,26 @@
           "clue": "Tròn, vàng óng, đeo trên ngực áo, khắc hình ngọn tháp lâu đài.",
           "target": "vt-ld-huy-hieu"
         }
-      ]
+      ],
+      "en": {
+        "title": "Find things for the Wooden Soldier",
+        "goTo": "Go to the block steps to find the Wooden Soldier's three things",
+        "prompt": "Lính Gỗ dropped three things. Read the descriptions and find them:",
+        "items": [
+          {
+            "name": "Red feather for the hat",
+            "clue": "Long, soft and bright red, it quivers on top of the soldier's hat with every steady step."
+          },
+          {
+            "name": "Pair of drumsticks",
+            "clue": "Two wooden sticks of equal length that go boom-boom when tapped on a drum."
+          },
+          {
+            "name": "Gold badge",
+            "clue": "Round and shining gold, worn on the chest of the coat, engraved with a castle tower."
+          }
+        ]
+      }
     },
     {
       "id": "doc-thu-tu-dieu-hanh",
@@ -97,22 +122,78 @@
       "text": "ĐƯỜNG DIỄU HÀNH CỦA ĐOÀN ĐỒ CHƠI\nĐoàn lần lượt đi qua bốn cột cờ: cột M bên khối lập phương, cột N bên khối trụ, cột P bên khối chóp, rồi cột Q bên khối cầu. Lính Gỗ đánh trống đi đầu, Gấu Bông Nhạc Trưởng đi ngay sau.",
       "question": "Đi qua cột N xong, đoàn diễu hành tới cột nào?",
       "choices": [
-        { "id": "a", "text": "Cột M" },
-        { "id": "b", "text": "Cột P" },
-        { "id": "c", "text": "Cột Q" }
+        {
+          "id": "a",
+          "text": "Cột M"
+        },
+        {
+          "id": "b",
+          "text": "Cột P"
+        },
+        {
+          "id": "c",
+          "text": "Cột Q"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Liệt kê bốn cột theo thứ tự trong bảng.", "Tìm cột N rồi xem cột đứng ngay sau nó."],
+        "guide": [
+          "Liệt kê bốn cột theo thứ tự trong bảng.",
+          "Tìm cột N rồi xem cột đứng ngay sau nó."
+        ],
         "hint": "Thứ tự các cột là M, N, rồi tới…",
         "answer": {
           "text": "Sau cột N là cột P",
           "explanation": "Bảng ghi thứ tự: cột M, cột N, cột P, rồi cột Q."
+        },
+        "en": {
+          "guide": [
+            "List the four poles in the order on the board.",
+            "Find pole N and see which pole comes right after it."
+          ],
+          "hint": "The order of the poles is M, N, then...",
+          "answer": {
+            "text": "After pole N comes pole P",
+            "explanation": "The board gives the order: pole M, pole N, pole P, then pole Q."
+          }
         }
       },
       "feedback": {
-        "right": ["Cột P bên khối chóp, {name} đọc chuẩn rồi!", "Lính Gỗ gật gù: đúng đường đoàn vừa đi.", "Thứ tự rõ ràng, mình đuổi theo được rồi!"],
-        "wrong": ["Cột ấy đoàn đi qua trước rồi, đọc lại nhé.", "Cột Q là cột cuối cùng cơ {name}.", "Tìm chữ «cột N» rồi đọc tiếp cột đứng sau."]
+        "right": [
+          "Cột P bên khối chóp, {name} đọc chuẩn rồi!",
+          "Lính Gỗ gật gù: đúng đường đoàn vừa đi.",
+          "Thứ tự rõ ràng, mình đuổi theo được rồi!"
+        ],
+        "wrong": [
+          "Cột ấy đoàn đi qua trước rồi, đọc lại nhé.",
+          "Cột Q là cột cuối cùng cơ {name}.",
+          "Tìm chữ «cột N» rồi đọc tiếp cột đứng sau."
+        ],
+        "en": {
+          "right": [
+            "Pole P by the pyramid, {name} read it right!",
+            "Lính Gỗ nods: that's just the way the parade went.",
+            "The order is clear, now we can catch up!"
+          ],
+          "wrong": [
+            "The parade already passed that pole before, read again.",
+            "Pole Q is the very last one, {name}.",
+            "Find the words «pole N» and read the pole that comes after."
+          ]
+        }
+      },
+      "en": {
+        "title": "The parade order",
+        "goTo": "Go to the gate of the block yard and read the parade order board",
+        "text": "THE TOY PARADE ROUTE\nThe parade passes four flagpoles in turn: pole M by the cube, pole N by the cylinder, pole P by the pyramid, then pole Q by the sphere. Lính Gỗ marches in front playing the drum, and Conductor Teddy Bear follows right behind.",
+        "question": "After passing pole N, which pole does the parade reach?",
+        "choices": [
+          "Pole M",
+          "Pole P",
+          "Pole Q"
+        ]
       }
     },
     {
@@ -126,28 +207,103 @@
       "skill": "logic",
       "prompt": "Qua mỗi cột cờ, số đồ chơi nhập đoàn lại gấp đôi lần trước. Lần tiếp theo có bao nhiêu bạn nhập đoàn?",
       "elements": [
-        { "id": "l1", "label": "1 bạn" },
-        { "id": "l2", "label": "2 bạn" },
-        { "id": "l3", "label": "4 bạn" },
-        { "id": "l4", "label": "8 bạn" }
+        {
+          "id": "l1",
+          "label": "1 bạn"
+        },
+        {
+          "id": "l2",
+          "label": "2 bạn"
+        },
+        {
+          "id": "l3",
+          "label": "4 bạn"
+        },
+        {
+          "id": "l4",
+          "label": "8 bạn"
+        }
       ],
       "choices": [
-        { "id": "a", "text": "10 bạn" },
-        { "id": "b", "text": "12 bạn" },
-        { "id": "c", "text": "16 bạn" }
+        {
+          "id": "a",
+          "text": "10 bạn"
+        },
+        {
+          "id": "b",
+          "text": "12 bạn"
+        },
+        {
+          "id": "c",
+          "text": "16 bạn"
+        }
       ],
-      "answer": { "choice": "c" },
+      "answer": {
+        "choice": "c"
+      },
       "support": {
-        "guide": ["Gấp đôi nghĩa là cộng số đó với chính nó.", "1 + 1 = 2, 2 + 2 = 4, 4 + 4 = 8.", "Lần tiếp theo là 8 + 8."],
+        "guide": [
+          "Gấp đôi nghĩa là cộng số đó với chính nó.",
+          "1 + 1 = 2, 2 + 2 = 4, 4 + 4 = 8.",
+          "Lần tiếp theo là 8 + 8."
+        ],
         "hint": "Gấp đôi 8 là bao nhiêu?",
         "answer": {
           "text": "Lần tới có 16 bạn nhập đoàn",
           "explanation": "Mỗi lần gấp đôi: 1, 2, 4, 8, rồi 8 + 8 = 16."
+        },
+        "en": {
+          "guide": [
+            "Doubling means adding the number to itself.",
+            "Check: 1 + 1 is 2, 2 + 2 is 4, 4 + 4 is 8.",
+            "The next time is 8 + 8."
+          ],
+          "hint": "What is double 8?",
+          "answer": {
+            "text": "Next time 16 friends join the parade",
+            "explanation": "It doubles each time: 1, 2, 4, 8, then 8 + 8 = 16."
+          }
         }
       },
       "feedback": {
-        "right": ["Đoàn diễu hành đông vui hẳn lên, mười sáu bạn mới!", "{name} nhìn ra quy luật gấp đôi nhanh ghê.", "Gấu Bông vung gậy chỉ huy khen ngợi!"],
-        "wrong": ["Gấp đôi không phải thêm 2 đâu, thử 8 + 8 xem nhé.", "Nhìn lại: 4 lên 8 là thêm chính nó đấy {name}.", "Mỗi lần số bạn tăng nhiều hơn lần trước, xem lại nha."]
+        "right": [
+          "Đoàn diễu hành đông vui hẳn lên, mười sáu bạn mới!",
+          "{name} nhìn ra quy luật gấp đôi nhanh ghê.",
+          "Gấu Bông vung gậy chỉ huy khen ngợi!"
+        ],
+        "wrong": [
+          "Gấp đôi không phải thêm 2 đâu, thử 8 + 8 xem nhé.",
+          "Nhìn lại: 4 lên 8 là thêm chính nó đấy {name}.",
+          "Mỗi lần số bạn tăng nhiều hơn lần trước, xem lại nha."
+        ],
+        "en": {
+          "right": [
+            "The parade is much livelier, sixteen new friends!",
+            "{name} spotted the doubling pattern so fast.",
+            "Teddy Bear waves the baton in praise!"
+          ],
+          "wrong": [
+            "Doubling isn't adding 2, try 8 + 8.",
+            "Look again: from 4 to 8 you add the number to itself, {name}.",
+            "The number of friends grows by more each time, have another look."
+          ]
+        }
+      },
+      "en": {
+        "title": "Friends join the parade",
+        "goTo": "Stop by the teddy bear stand, where Conductor Teddy Bear is counting the friends who join",
+        "prompt": "At every flagpole, the number of toys joining is double the last time. How many friends join next?",
+        "elements": [
+          "1 friend",
+          "2 friends",
+          "4 friends",
+          "8 friends"
+        ],
+        "choices": [
+          "10 friends",
+          "12 friends",
+          "16 friends"
+        ]
       }
     },
     {
@@ -202,9 +358,16 @@
       "kind": "dialogue",
       "target": "vt-ld-ro-bot",
       "lines": [
-        { "speaker": "Rô-bốt Thiếc Tí Hon", "text": "Bíp bíp! Đã nhận lệnh. Lính Gỗ đứng lên vai tớ, tớ bật bánh xe chạy theo đoàn ngay." }
+        {
+          "speaker": "Rô-bốt Thiếc Tí Hon",
+          "text": "Bíp bíp! Đã nhận lệnh. Lính Gỗ đứng lên vai tớ, tớ bật bánh xe chạy theo đoàn ngay."
+        }
       ],
-      "choices": [{ "text": "Cảm ơn Rô-bốt, mình đi thôi!" }],
+      "choices": [
+        {
+          "text": "Cảm ơn Rô-bốt, mình đi thôi!"
+        }
+      ],
       "en": {
         "title": "Ask Rô-bốt Thiếc",
         "goTo": "Go over to the tin-toy shelf and ask Tiny Tin Robot",
@@ -228,23 +391,99 @@
       "skill": "hinh-phang",
       "prompt": "Vẽ đường diễu hành là một đường gấp khúc đi qua bốn cột cờ theo đúng thứ tự trong bảng: M, N, P, Q.",
       "points": [
-        { "id": "m", "x": 0, "y": 3, "label": "M" },
-        { "id": "n", "x": 3, "y": 0, "label": "N" },
-        { "id": "p", "x": 6, "y": 3, "label": "P" },
-        { "id": "q", "x": 9, "y": 0, "label": "Q" }
+        {
+          "id": "m",
+          "x": 0,
+          "y": 3,
+          "label": "M"
+        },
+        {
+          "id": "n",
+          "x": 3,
+          "y": 0,
+          "label": "N"
+        },
+        {
+          "id": "p",
+          "x": 6,
+          "y": 3,
+          "label": "P"
+        },
+        {
+          "id": "q",
+          "x": 9,
+          "y": 0,
+          "label": "Q"
+        }
       ],
-      "answer": { "edges": [["m", "n"], ["n", "p"], ["p", "q"]] },
+      "answer": {
+        "edges": [
+          [
+            "m",
+            "n"
+          ],
+          [
+            "n",
+            "p"
+          ],
+          [
+            "p",
+            "q"
+          ]
+        ]
+      },
       "support": {
-        "guide": ["Bắt đầu từ cột M.", "Nối M với N, rồi N với P, rồi P với Q.", "Không nối thẳng từ M tới Q."],
+        "guide": [
+          "Bắt đầu từ cột M.",
+          "Nối M với N, rồi N với P, rồi P với Q.",
+          "Không nối thẳng từ M tới Q."
+        ],
         "hint": "Đường gấp khúc MNPQ có ba đoạn thẳng.",
         "answer": {
           "text": "Ba đoạn MN, NP và PQ",
           "explanation": "Đường gấp khúc đi qua các điểm theo thứ tự M, N, P, Q nên gồm ba đoạn thẳng MN, NP, PQ."
+        },
+        "en": {
+          "guide": [
+            "Start at pole M.",
+            "Join M to N, then N to P, then P to Q.",
+            "Don't join M straight to Q."
+          ],
+          "hint": "The broken line MNPQ has three straight segments.",
+          "answer": {
+            "text": "Three segments: MN, NP and PQ",
+            "explanation": "The broken line passes through the points in the order M, N, P, Q, so it has three straight segments MN, NP and PQ."
+          }
         }
       },
       "feedback": {
-        "right": ["Đường diễu hành ngoằn ngoèo hiện ra, đúng như bảng ghi!", "{name} vẽ đường gấp khúc thẳng tắp từng đoạn.", "Lính Gỗ cầm bản đồ, sẵn sàng dẫn đầu đoàn!"],
-        "wrong": ["Có một đoạn nối sai thứ tự rồi, xem lại nhé.", "Đoàn đi qua từng cột một, không nhảy cóc đâu {name}.", "Nhớ thứ tự M, N, P, Q rồi nối lại nha."]
+        "right": [
+          "Đường diễu hành ngoằn ngoèo hiện ra, đúng như bảng ghi!",
+          "{name} vẽ đường gấp khúc thẳng tắp từng đoạn.",
+          "Lính Gỗ cầm bản đồ, sẵn sàng dẫn đầu đoàn!"
+        ],
+        "wrong": [
+          "Có một đoạn nối sai thứ tự rồi, xem lại nhé.",
+          "Đoàn đi qua từng cột một, không nhảy cóc đâu {name}.",
+          "Nhớ thứ tự M, N, P, Q rồi nối lại nha."
+        ],
+        "en": {
+          "right": [
+            "The winding parade route appears, just as the board says!",
+            "{name} drew each straight segment of the broken line neatly.",
+            "Lính Gỗ holds the map, ready to lead the parade!"
+          ],
+          "wrong": [
+            "One segment is joined in the wrong order, have a look.",
+            "The parade passes the poles one by one, no skipping, {name}.",
+            "Remember the order M, N, P, Q and join them again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Draw the parade route",
+        "goTo": "Go back to the corner of the wooden block yard to draw the parade route for Lính Gỗ",
+        "prompt": "Draw the parade route as a broken line through the four flagpoles in the order on the board: M, N, P, Q."
       }
     },
     {
@@ -273,6 +512,14 @@
   "reward": {
     "xp": 70,
     "coin": 18,
-    "skillXp": { "doc-hieu": 1, "logic": 1, "hinh-phang": 1 }
+    "skillXp": {
+      "doc-hieu": 1,
+      "logic": 1,
+      "hinh-phang": 1
+    }
+  },
+  "en": {
+    "title": "Good Deed: The Wooden Soldier Lost from the Parade",
+    "summary": "The toy parade marches around the block yard, but the Wooden Soldier at the front has been left behind after dropping his things. {name} finds the soldier's things, reads the parade order, works out how many friends join, chooses how to catch up and then draws the parade route."
   }
 }

@@ -118,7 +118,11 @@
         "tv2-t04-bong-bui-sim",
         "tv2-t04-bong-goc-tre",
         "tv2-t04-bong-ven-suoi"
-      ]
+      ],
+      "en": {
+        "title": "Three lost balls",
+        "goTo": "Find the three lost balls in the bamboo hedge around the pitch"
+      }
     },
     {
       "id": "mon-the-thao-trong-tranh",
@@ -179,6 +183,17 @@
         "answer": {
           "text": "Sóc nhỏ, bạn muốn đá cầu nhưng chưa được gọi tên.",
           "explanation": "Câu đầu kể sóc nhỏ đứng xem và mong được chơi. Cả truyện xoay quanh việc sóc làm và thay đổi thế nào."
+        },
+        "en": {
+          "guide": [
+            "Read the first sentence of the story.",
+            "Which character appears from beginning to end?"
+          ],
+          "hint": "This friend is slow at first but practises hard every morning.",
+          "answer": {
+            "text": "The little squirrel, who wants to play shuttlecock but has not been picked.",
+            "explanation": "The first sentence tells of the little squirrel watching and wishing to play. The whole story is about what the squirrel does and how it changes."
+          }
         }
       },
       "feedback": {
@@ -191,9 +206,31 @@
           "Bác Cò có trong truyện, nhưng truyện không kể chủ yếu về bác. Đọc câu đầu tiên nhé.",
           "Ếch con chẳng xuất hiện trong truyện đâu. Ai muốn đá cầu mà chưa được nhận?",
           "Tìm nhân vật được nhắc tới nhiều nhất trong truyện xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The little squirrel! Striped Tiger whispers: a bit like me, apart from the tail.",
+            "Spot on! Old Heron is only the referee.",
+            "Jackfruit Monkey does a somersault: quick reading and a sure answer, one, two, brilliant!"
+          ],
+          "wrong": [
+            "Old Heron is in the story, but the story is not mainly about him. Read the first sentence.",
+            "The little frog is not in the story at all. Who wants to play shuttlecock but has not been picked?",
+            "Look for the character mentioned most in the story."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Read the story \"The Ball Collector\"",
+        "goTo": "Run to the scoreboard, where Jackfruit Monkey has just pinned up a story",
+        "question": "Jackfruit Monkey pins the story onto the scoreboard, then winks at Striped Tiger: read it, this one suits you.\nWhich character is the story mostly about?",
+        "choices": [
+          "Old Heron",
+          "the little squirrel",
+          "the little frog"
+        ]
+      }
     },
     {
       "id": "vi-sao-chua-duoc-nhan",
@@ -230,6 +267,17 @@
         "answer": {
           "text": "Sóc nhảy chậm và hay đỡ cầu hụt nên chưa ai gọi.",
           "explanation": "Đoạn đầu cho biết bạn bè thấy sóc nhảy chậm, đỡ cầu hay hụt, nên chưa đội nào gọi tên em."
+        },
+        "en": {
+          "guide": [
+            "Look back at the opening part, where the squirrel stands at the edge.",
+            "Find the sentence that begins “Nhưng bạn bè thấy…” (But the friends saw…)."
+          ],
+          "hint": "The friends saw that the squirrel was not yet quick and could not catch the shuttlecock firmly.",
+          "answer": {
+            "text": "The squirrel jumped slowly and often missed the catch, so nobody called it.",
+            "explanation": "The opening says the friends found the squirrel slow to jump and often missing the catch, so no team called its name."
+          }
         }
       },
       "feedback": {
@@ -242,9 +290,31 @@
           "Truyện không nhắc tới đôi giày nào cả. Đọc câu “Nhưng bạn bè thấy…” nhé.",
           "Sóc còn ra sân từ sáng sớm cơ mà, đâu có muộn.",
           "Các bạn thấy sóc nhảy và đỡ cầu ra sao? Tìm lại ở đoạn đầu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's it. Striped Tiger sighs: I miss my kicks just like that too.",
+            "Exactly! Slow and often missing, but the story is not over yet.",
+            "{name} found the sentence as fast as a winger!"
+          ],
+          "wrong": [
+            "The story doesn't mention any shoes. Read the sentence “Nhưng bạn bè thấy…”.",
+            "The squirrel came out at the crack of dawn, so it was not late.",
+            "How did the friends see the squirrel jump and catch? Look again in the opening part."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Why hasn't he been picked yet?",
+        "goTo": "Visit the bush beside the goal, where Striped Tiger peeks out with one eye",
+        "prompt": "Striped Tiger covers his face with both front paws, leaving just one eye showing.\nWhy did no team call the little squirrel in to play at first?",
+        "choices": [
+          "Because the little squirrel came to the pitch far too late.",
+          "Because the little squirrel did not have shuttlecock shoes yet.",
+          "Because the friends thought the squirrel jumped a bit slowly and often missed the catch."
+        ]
+      }
     },
     {
       "id": "du-bi-lam-gi",
@@ -293,6 +363,17 @@
         "answer": {
           "text": "Sóc nhặt cầu cho các bạn, chạy thật nhanh và sáng nào cũng ra sân tự tập.",
           "explanation": "Sóc hơi tiếc nhưng không bỏ về, cũng không ngồi chờ: sóc nhặt cầu, chạy hết sức và tập đỡ cầu mỗi sáng."
+        },
+        "en": {
+          "guide": [
+            "Read the part where the squirrel takes the job of fetching the shuttlecock.",
+            "Read on to the part that begins “Sáng nào…” (Every morning…)."
+          ],
+          "hint": "There are three things: fetching the shuttlecock, running flat out, practising early every morning.",
+          "answer": {
+            "text": "The squirrel fetched the shuttlecock for its friends, ran very fast and went out to practise on its own every morning.",
+            "explanation": "The squirrel felt a little sad but did not go home, and did not sit waiting either: it fetched the shuttlecock, ran flat out and practised catching every morning."
+          }
         }
       },
       "feedback": {
@@ -305,9 +386,33 @@
           "Sóc hơi tiếc, nhưng có bỏ về nhà đâu! Bỏ lựa chọn ấy ra nhé.",
           "Sóc không ngồi yên mà chạy đi nhặt cầu cơ. Đọc lại đoạn ba.",
           "Còn sót việc sóc làm mỗi sáng từ sớm đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three jobs, none missed! Jackfruit Monkey counts them all: one, two, three!",
+            "Striped Tiger remembers: fetch, run fast, practise early. Grrr, I can do that!",
+            "All right! Someone waiting on the side can work as hard as anyone on the team."
+          ],
+          "wrong": [
+            "The squirrel was a little sad, but it didn't go home! Leave that one out.",
+            "The squirrel didn't sit still, it ran to fetch the shuttlecock. Read part three again.",
+            "You're still missing something the squirrel did every morning from early on."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "What does a substitute player do?",
+        "goTo": "Jackfruit Monkey claps to call {name} over to the tamarind tree at the edge of the pitch",
+        "prompt": "Jackfruit Monkey counts and claps: one job, two jobs, three jobs! What did the little squirrel do?\nPick all the things the squirrel did while it was not allowed on the pitch.",
+        "choices": [
+          "Picked up the shuttlecock and handed it right to the friends.",
+          "Sat still in one spot waiting to be called.",
+          "Ran as fast as it could so the game did not stop for long.",
+          "Went home because it felt sorry for itself.",
+          "Came to the pitch early every morning to practise catching on its own."
+        ]
+      }
     },
     {
       "id": "ca-hai-doi-muon-gau",
@@ -345,6 +450,17 @@
         "answer": {
           "text": "Sóc chăm tập nên đá cầu giỏi lên, các bạn thấy vậy liền mời.",
           "explanation": "Sóc tập mỗi sáng nên cú đá ngày một vững. Các bạn thấy sóc đang tập thì trố mắt và đua nhau mời về đội mình."
+        },
+        "en": {
+          "guide": [
+            "Read the part that begins “Sáng nào sóc cũng ra sân…” (Every morning the squirrel went to the pitch…).",
+            "The last sentence of that part tells how the squirrel's kicks changed."
+          ],
+          "hint": "Thanks to hard practice, the squirrel got better at playing shuttlecock.",
+          "answer": {
+            "text": "The squirrel practised hard and became good at shuttlecock, so the friends invited it.",
+            "explanation": "The squirrel practised every morning, so its kicks grew steadier. The friends saw it practising, stared in surprise and raced to invite it to their team."
+          }
         }
       },
       "feedback": {
@@ -357,9 +473,31 @@
           "Truyện không kể chuyện giày mới đâu. Đọc câu “Cứ thế, những cú đá…” nhé.",
           "Bác Cò chỉ làm trọng tài thôi, đâu có bắt đội nào.",
           "Các bạn trố mắt khi thấy sóc đang làm gì? Đọc lại đoạn đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Hard practice makes you better. Striped Tiger lets out a happy “Grrr!”",
+            "Spot on, it was not new shoes and nobody forced them.",
+            "Jackfruit Monkey slaps his thigh: that's what you call practice making perfect!"
+          ],
+          "wrong": [
+            "The story says nothing about new shoes. Read the sentence “Cứ thế, những cú đá…” (Little by little, the kicks…).",
+            "Old Heron is only the referee, he doesn't make any team take anyone.",
+            "What did the friends stare at when they saw the squirrel? Read that part again."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Both teams want the little squirrel",
+        "goTo": "Back to the scoreboard to read the last part of the story",
+        "question": "Striped Tiger leans right up to the scoreboard and reads so loudly that the leaves tremble.\nWhat made both teams race to invite the little squirrel to join them?",
+        "choices": [
+          "Because the little squirrel had brand-new shuttlecock shoes.",
+          "Because Old Heron made both teams take the squirrel.",
+          "Because after practising every morning, the squirrel's kicks had become steadier."
+        ]
+      }
     },
     {
       "id": "loi-khen-trong-bai",
@@ -400,6 +538,17 @@
         "answer": {
           "text": "Câu “Cậu giỏi quá!”.",
           "explanation": "Câu này khen sóc đá cầu giỏi. Các câu còn lại là lời giao việc, lời rủ hoặc lời mời."
+        },
+        "en": {
+          "guide": [
+            "A compliment says how good or skilful someone is.",
+            "Find what the friends say when they stare at the squirrel practising."
+          ],
+          "hint": "The compliment has the word “giỏi” (skilful).",
+          "answer": {
+            "text": "The sentence “Cậu giỏi quá!” (You are so good!).",
+            "explanation": "This sentence praises the squirrel for playing shuttlecock so well. The others are giving a job, inviting, or asking."
+          }
         }
       },
       "feedback": {
@@ -412,9 +561,32 @@
           "Câu này là lời rủ về đội, chưa phải lời khen đâu.",
           "Đây là bác Cò giao việc cho sóc. Lời khen thì phải nói về cái giỏi của sóc.",
           "Câu này chỉ nói đội đang cần người, chưa khen gì cả. Tìm câu có chữ “giỏi” nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "“Cậu giỏi quá!” Striped Tiger smiles so wide his stripes crinkle.",
+            "That's a compliment! It even has an exclamation mark.",
+            "Jackfruit Monkey gives a thumbs-up: great job finding the praise!"
+          ],
+          "wrong": [
+            "This one invites the squirrel to a team, it is not a compliment.",
+            "This is Old Heron giving the squirrel a job. A compliment must talk about how good the squirrel is.",
+            "This only says the team needs a player and praises nothing. Look for the sentence with the word “giỏi”."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Find the compliment",
+        "goTo": "Back to the bush beside the goal, where Striped Tiger dreams of being praised",
+        "prompt": "Striped Tiger daydreams: if only someone would praise me with one line like in the story.\nWhich sentence in the story is a compliment?",
+        "choices": [
+          "Sóc này, em làm cầu thủ dự bị, lo việc nhặt cầu nhé. (Squirrel, be our reserve player and fetch the shuttlecock.)",
+          "Đội tớ cũng cần cậu! (Our team needs you too!)",
+          "Cậu giỏi quá! (You are so good!)",
+          "Về đội tớ nhé! (Come and join our team!)"
+        ]
+      }
     },
     {
       "id": "chuc-mung-gau-con",
@@ -481,6 +653,17 @@
         "answer": {
           "text": "Hà, Khôi, Oanh, Quân",
           "explanation": "Bốn tên này có chữ cái đầu viết hoa nên đúng. “bảo” và “yến” chưa viết hoa nên sai."
+        },
+        "en": {
+          "guide": [
+            "A person's name must start with a capital letter.",
+            "Compare the opening letters of the names."
+          ],
+          "hint": "Two names forgot the capital first letter.",
+          "answer": {
+            "text": "With capitals: Hà, Khôi, Oanh, Quân",
+            "explanation": "These four names start with a capital letter, so they are right. “bảo” and “yến” are not capitalised, so they are wrong."
+          }
         }
       },
       "feedback": {
@@ -493,9 +676,34 @@
           "Tên “bảo” chưa viết hoa chữ đầu đâu, đừng chọn nhé.",
           "Còn sót một tên viết hoa đúng đấy. Nhìn lại cả sáu áo xem.",
           "Thử tìm áo có chữ cái đầu viết thường, đó là áo thêu sai."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four correctly spelled jerseys flutter like flags!",
+            "Jackfruit Monkey scratches his head: I'll re-stitch a capital B and a capital Y right now.",
+            "Right, names must wear a capital-letter “hat”."
+          ],
+          "wrong": [
+            "The name “bảo” has no capital first letter, so don't pick it.",
+            "There is still one correctly written name you've missed. Look at all six jerseys again.",
+            "Look for a jersey whose first letter is lowercase: that is a wrong one."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-ten-rieng"
+      "objective": "bang-chu-cai-ten-rieng",
+      "en": {
+        "title": "Jerseys with embroidered names",
+        "goTo": "Cross to the clothesline beside the pitch, where six jerseys flutter",
+        "prompt": "Six jerseys hang on the clothesline by the pitch, each with a name stitched on. Jackfruit Monkey sewed in such a hurry that some names are missing their capital letter.\nPick the jerseys whose names are written with the right capital letter.",
+        "choices": [
+          "Hà",
+          "bảo",
+          "Khôi",
+          "yến",
+          "Oanh",
+          "Quân"
+        ]
+      }
     },
     {
       "id": "danh-sach-doi-du-bi",
@@ -546,6 +754,17 @@
         "answer": {
           "text": "Trần Bảo Châu, Lê Quốc Dũng, Phạm Tiến Đạt, Hoàng Minh Khoa, Vũ Thanh Tú",
           "explanation": "Xếp theo tên: Châu (C), Dũng (D), Đạt (Đ), Khoa (K), Tú (T). Chữ đ đứng ngay sau chữ d trong bảng chữ cái."
+        },
+        "en": {
+          "guide": [
+            "Look at the last word of each full name: that is the friend's given name.",
+            "Order by the first letter of the given name: C, D, Đ, K, T."
+          ],
+          "hint": "The friend called Châu comes first and the friend called Tú comes last.",
+          "answer": {
+            "text": "In order: Trần Bảo Châu, Lê Quốc Dũng, Phạm Tiến Đạt, Hoàng Minh Khoa, Vũ Thanh Tú",
+            "explanation": "Ordered by given name: Châu (C), Dũng (D), Đạt (Đ), Khoa (K), Tú (T). In the alphabet, đ comes right after d."
+          }
         }
       },
       "feedback": {
@@ -558,9 +777,33 @@
           "Họ của các bạn khác nhau nhưng chưa chắc xếp theo họ là đúng. Hãy nhìn tên, tiếng cuối cùng.",
           "Chữ đ đứng ngay sau chữ d. Bạn Đạt phải đứng sau bạn Dũng nhé.",
           "Bạn Tú có chữ t, mà t đứng gần cuối bảng chữ cái đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Jackfruit Monkey reads it in one go without tripping: Châu, Dũng, Đạt, Khoa, Tú!",
+            "Right, order by given name, not by family name.",
+            "The five friends line up neatly, with Striped Tiger at the back cheering."
+          ],
+          "wrong": [
+            "The friends have different family names, but ordering by family name isn't right. Look at the given name, the last word.",
+            "The letter đ comes right after d. Đạt has to stand after Dũng.",
+            "Tú begins with t, and t is near the end of the alphabet."
+          ]
+        }
       },
-      "objective": "bang-chu-cai-xep-ten"
+      "objective": "bang-chu-cai-xep-ten",
+      "en": {
+        "title": "The substitute team list",
+        "goTo": "Jackfruit Monkey sits in the tamarind tree with a list, calling the names but muddling them up",
+        "prompt": "Jackfruit Monkey holds a list of five friends who signed up for shuttlecock and wants to read it out in order, but keeps getting muddled. One, two… hang on, who comes first?\nHelp Jackfruit Monkey put the five full names in alphabetical order of the given name.",
+        "items": [
+          "Hoàng Minh Khoa",
+          "Trần Bảo Châu",
+          "Vũ Thanh Tú",
+          "Phạm Tiến Đạt",
+          "Lê Quốc Dũng"
+        ]
+      }
     },
     {
       "id": "kho-dung-cu",
@@ -625,6 +868,17 @@
         "answer": {
           "text": "Tranh 1: quả bóng rổ, vòng rổ gắn lưới. Tranh 2: kính bơi, phao bơi. Tranh 3: quả cầu đá.",
           "explanation": "Mỗi môn có dụng cụ riêng: bóng rổ cần bóng và vòng rổ, bơi cần kính và phao, đá cầu chỉ cần quả cầu."
+        },
+        "en": {
+          "guide": [
+            "Swimming needs something for the eyes and something to keep you afloat.",
+            "The big ball and the hoop with a net belong to the same sport."
+          ],
+          "hint": "Picture 3 has only one piece of equipment.",
+          "answer": {
+            "text": "Picture 1: quả bóng rổ, vòng rổ gắn lưới. Picture 2: kính bơi, phao bơi. Picture 3: quả cầu đá.",
+            "explanation": "Each sport has its own gear: basketball needs a ball and a hoop, swimming needs goggles and a float, shuttlecock kicking needs only the shuttlecock."
+          }
         }
       },
       "feedback": {
@@ -637,9 +891,26 @@
           "Quả cầu cắm lông trắng ở tranh 3 chứ, không đi chung với kính bơi đâu.",
           "Chiếc kính và chiếc phao thuộc cùng một môn dưới nước. Xem lại tranh 2 nhé.",
           "Cái vòng gắn lưới cần đi cùng quả bóng to. Quả bóng nào nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The shed is tidy at last! Striped Tiger tiptoes down from the shelf.",
+            "All correct! Every item is in its group, nobody is lost.",
+            "Jackfruit Monkey counts: five items, three pictures, not one wrong!"
+          ],
+          "wrong": [
+            "The feathered shuttlecock belongs in picture 3, it doesn't go with the goggles.",
+            "The goggles and the float belong to the same water sport. Look at picture 2 again.",
+            "The hoop with a net must go with the big ball. Which ball is it?"
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "In the Tool Shed",
+        "goTo": "Go into the tool shed beside the pitch, where the wooden door creaks",
+        "prompt": "When Striped Tiger opens the shed, everything tumbles out: a ball here, goggles there. Startled, Striped Tiger leaps onto the shelf.\nName the sports equipment and drag each item to the picture where it belongs."
+      }
     },
     {
       "id": "tro-choi-dan-gian",
@@ -737,6 +1008,17 @@
         "answer": {
           "text": "Thả đỉa ba ba; Kéo cưa lừa xẻ; Ô ăn quan; Mèo đuổi chuột",
           "explanation": "Bốn trò chơi dân gian ấy là Thả đỉa ba ba, Kéo cưa lừa xẻ, Ô ăn quan và Mèo đuổi chuột."
+        },
+        "en": {
+          "guide": [
+            "Read the description under each picture, then hum the whole game name you remember hearing.",
+            "Watch the tone mark on the last word."
+          ],
+          "hint": "In game 4, one friend plays the cat and the other plays the small animal the cat chases.",
+          "answer": {
+            "text": "The games: Thả đỉa ba ba; Kéo cưa lừa xẻ; Ô ăn quan; Mèo đuổi chuột",
+            "explanation": "The four folk games are Thả đỉa ba ba, Kéo cưa lừa xẻ, Ô ăn quan and Mèo đuổi chuột."
+          }
         }
       },
       "feedback": {
@@ -749,9 +1031,25 @@
           "Con vật lội dưới ao tên là đỉa, không phải cái đĩa đựng thức ăn đâu. Nghe kĩ tiếng thứ hai nhé.",
           "Nghe kĩ tiếng cuối: xẻ mang dấu hỏi, như xẻ gỗ ấy.",
           "Mèo thì đuổi con vật nhỏ nào? Đọc to lên nghe thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Jackfruit Monkey bursts into song: “Thả đỉa ba ba, chớ bắt đàn bà…”",
+            "All four names are complete! Striped Tiger wants to play cat-and-mouse right now.",
+            "Every tone mark in the right place, {name} has sharp ears."
+          ],
+          "wrong": [
+            "The creature that swims in ponds is called “đỉa” (a leech), not “đĩa” (a plate). Listen closely to the second word.",
+            "Listen carefully to the last word: “xẻ” has the hook mark, as in sawing wood.",
+            "Which small animal does a cat chase? Say it aloud and listen."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "Names of folk games",
+        "prompt": "Behind the shelf, Jackfruit Monkey pulls out four old pictures: when I was small the whole village played these games every afternoon, and now I've forgotten the endings of their names.\nUsing the description under each picture, choose the correct spelling of each folk game's name."
+      }
     },
     {
       "id": "xep-cau-cau-long",
@@ -797,6 +1095,17 @@
         "answer": {
           "text": "Giờ ra chơi, ba bạn chơi nhảy dây dưới gốc phượng.",
           "explanation": "Câu có từ chỉ hoạt động “chơi nhảy dây”, giống câu mẫu “Hai bạn chơi đá cầu.” và thêm thời gian, nơi chốn."
+        },
+        "en": {
+          "guide": [
+            "The card with the capital letter starts the sentence, and the card with the full stop ends it.",
+            "The example: Hai bạn chơi đá cầu. Who comes first, then what they do."
+          ],
+          "hint": "A sentence tells when, who, what they do, and where.",
+          "answer": {
+            "text": "At break time, three friends play skipping rope under the flame tree.",
+            "explanation": "The sentence has the action phrase “chơi nhảy dây”, like the example “Hai bạn chơi đá cầu.”, and adds time and place."
+          }
         }
       },
       "feedback": {
@@ -809,9 +1118,32 @@
           "Thẻ “Giờ ra chơi,” có chữ viết hoa, phải đứng đầu câu.",
           "Dấu chấm đang lạc giữa câu rồi. Thẻ có dấu chấm phải đứng cuối.",
           "Đọc thử câu vừa xếp, nghe có giống câu mẫu không?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "A rounded sentence! Striped Tiger untangles the rope from his tail and nods along.",
+            "It follows the example: who, what they do, plus when and where.",
+            "The rope whirls round, cheering for {name}."
+          ],
+          "wrong": [
+            "The card “Giờ ra chơi,” has a capital letter, so it must start the sentence.",
+            "The full stop has strayed into the middle. The card with the full stop must go last.",
+            "Read your sentence aloud. Does it sound like the example?"
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-cau-hoat-dong",
+      "en": {
+        "title": "Sentences about jump-rope time",
+        "goTo": "Go to the bush beside the goal, where Striped Tiger is juggling the shuttlecock",
+        "prompt": "Striped Tiger swings the jump rope up and it wraps right round his tail. Grrr!\nWrite a sentence about the activity in the picture. Example: Hai bạn chơi đá cầu.\nPicture 2 shows three friends skipping under the flame tree. Arrange the cards into a sentence about picture 2.",
+        "items": [
+          "under the flame tree.",
+          "three friends",
+          "At break time,",
+          "play skipping rope"
+        ]
+      }
     },
     {
       "id": "cau-ve-bong-ro",
@@ -1006,5 +1338,9 @@
       "tu-ngu": 1,
       "cau": 1
     }
+  },
+  "en": {
+    "title": "Striped Tiger the Substitute Player",
+    "summary": "No team has picked Striped Tiger, so he roars “Grrr!” for show and slinks into the bushes to practise kicking alone. {name} and Jackfruit Monkey read “The Ball Collector”, fix the names on the jerseys, tidy the tool shed, name the folk games and help Striped Tiger step onto the pitch with confidence."
   }
 }

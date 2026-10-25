@@ -117,7 +117,11 @@
         "tv2-t07-qua-mam-xoi",
         "tv2-t07-hoa-cuc-dai",
         "tv2-t07-la-xanh-non"
-      ]
+      ],
+      "en": {
+        "title": "Three colours along the fence",
+        "goTo": "Go to the Fence by the Playground to pick fruit, flowers and leaves to make paint"
+      }
     },
     {
       "id": "gioi-thieu-buc-tranh",
@@ -169,6 +173,17 @@
         "answer": {
           "text": "Vệt vàng thành ruộng lúa rộng tới tận bờ đê.",
           "explanation": "Khổ hai viết: vệt vàng là ruộng lúa, trải rộng tới bờ đê; còn nét đỏ mới là cánh diều."
+        },
+        "en": {
+          "guide": [
+            "Read the verse with the yellow streak and the red stroke again.",
+            "Find the line that begins with «Vệt vàng»."
+          ],
+          "hint": "A yellow streak reminds you of ripe rice.",
+          "answer": {
+            "text": "The yellow streak becomes a rice field spreading right to the dyke.",
+            "explanation": "Verse two says the yellow streak is a rice field spreading wide to the dyke; it is the red stroke that is the kite."
+          }
         }
       },
       "feedback": {
@@ -181,9 +196,31 @@
           "Chưa đúng. Đọc lại hai dòng đầu của khổ hai nhé.",
           "Trăng và nắng sớm không phải thứ bạn nhỏ vẽ bằng màu vàng trong bài này.",
           "Tìm dòng thơ có chữ \"vàng\" rồi xem ngay chữ đứng sau chữ \"là\"."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Yes! Brush Fox looks up at the sky and her tail waves so fast it splashes a few drops of paint.",
+            "Right, the child's yellow streak turns into a whole field of ripe rice.",
+            "Golden Lion hums: golden rice right to the dyke, what a lovely sound!"
+          ],
+          "wrong": [
+            "Not quite. Read the first two lines of verse two again.",
+            "The moon and the early sunshine are not what the child paints in yellow in this poem.",
+            "Find the line with the word «vàng» and look at the words that come after «là»."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-to"
+      "objective": "doc-tho-doc-to",
+      "en": {
+        "title": "The poem behind the easel",
+        "goTo": "Go into the Art Room, where a poem is copied out behind the easel",
+        "question": "Behind the easel, Brush Fox has copied out a poem for inspiration. She wrote it with the tip of her tail, so the letters wriggle and wobble, but luckily {name} can still read them. In the child's picture, what does the yellow streak turn into?",
+        "choices": [
+          "A rice field spreading all the way to the dyke.",
+          "A round moon hanging at the end of the lane.",
+          "Early sunshine sprinkled on the rooftops."
+        ]
+      }
     },
     {
       "id": "tranh-canh-bien",
@@ -220,6 +257,17 @@
         "answer": {
           "text": "Sông hiền hoà; thuyền buồm đi thong thả, chở ánh nắng về xóm xa.",
           "explanation": "Khổ ba tả dòng sông hiền hoà, thuyền buồm trôi chầm chậm chở nắng tới tận xóm xa."
+        },
+        "en": {
+          "guide": [
+            "Read the third verse.",
+            "What is the river in the picture like? How do the sailing boats move?"
+          ],
+          "hint": "The river in the picture is very gentle, and it has a sailing boat.",
+          "answer": {
+            "text": "The river is gentle; the sailing boat goes unhurried, carrying sunshine to a faraway hamlet.",
+            "explanation": "Verse three describes a gentle river, with sailing boats drifting slowly and carrying sunshine all the way to the faraway hamlet."
+          }
         }
       },
       "feedback": {
@@ -232,9 +280,31 @@
           "Bài thơ nói sông hiền hoà cơ. Đọc lại khổ ba nhé.",
           "Tìm dòng \"Thuyền buồm trôi chầm chậm\" rồi đọc luôn cả khổ.",
           "Gần đúng rồi, xem trong tranh có thuyền không và nó đi nhanh hay chậm."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Lovely! Brush Fox dabs a yellow dot at once to be the sunshine on the river.",
+            "Right, the sailing boat drifts slowly on the gentle water.",
+            "Golden Lion passes by and praises it all along the porch: this river picture is so gentle!"
+          ],
+          "wrong": [
+            "The poem says the river is gentle. Read verse three again.",
+            "Find the line «Thuyền buồm trôi chầm chậm» and read the whole verse.",
+            "Nearly! Look in the picture: is there a boat, and does it go fast or slowly?"
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The river in the picture",
+        "goTo": "Back at the Drawing Corner, Brush Fox squints at the photo of a river stuck on the wall",
+        "prompt": "Brush Fox squints at the river photo stuck on the wall, as if she could see every ripple stretching far away. What is beautiful about the river in the child's picture?",
+        "choices": [
+          "The water has risen muddy, and every boat tilts and wobbles",
+          "The riverbank is deserted, without a single boat",
+          "A gentle river, where sailing boats glide slowly, carrying sunshine to a faraway hamlet"
+        ]
+      }
     },
     {
       "id": "kho-tho-san-truong",
@@ -296,6 +366,17 @@
         "answer": {
           "text": "Bốn dòng của khổ cuối: màu xanh lá, bóng bàng, hộp màu đã hết, tranh vẫn thơm hương.",
           "explanation": "Khổ cuối kể bạn nhỏ dùng nốt màu xanh lá vẽ bóng bàng sân trường, đúng như bức tranh."
+        },
+        "en": {
+          "guide": [
+            "The picture has almond-tree shade and a schoolyard.",
+            "Find the verse that mentions «bóng bàng»."
+          ],
+          "hint": "The verse you need is the last verse of the poem.",
+          "answer": {
+            "text": "The four lines of the last verse: green paint, almond-tree shade, the paint box used up, the picture still smells sweet.",
+            "explanation": "The last verse tells how the child used the last of the green paint to draw the almond-tree shade over the schoolyard, just like this picture."
+          }
         }
       },
       "feedback": {
@@ -308,9 +389,36 @@
           "Có dòng thơ về dòng sông lọt vào rồi. Tranh này là sân trường cơ.",
           "Còn thiếu dòng nói về hộp màu đã hết, tìm thêm nhé.",
           "Thuyền với nắng xóm xa đâu có trong tranh sân trường, bỏ ra thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The whole verse comes alive just like the picture, with cool almond-tree shade!",
+            "All four lines! Brush Fox nods… and this time her tail doesn't smudge the paint.",
+            "Spot on! It smells just like a freshly dried picture."
+          ],
+          "wrong": [
+            "A line about the river has slipped in. This picture is a schoolyard.",
+            "You are still missing the line about the paint box being used up. Look for it.",
+            "The boats and the faraway sunshine are not in the schoolyard picture. Take them out."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The verse for the schoolyard picture",
+        "goTo": "Run into the Art Room, where a new sheet of paper is clipped to the easel",
+        "prompt": "Brush Fox flips to another sheet of paper: a schoolyard with the wide shade of an almond tree and a little classroom building behind it. Pick all four lines of the verse that tells about this picture.",
+        "choices": [
+          "A deep, deep blue dot",
+          "Almond-tree shade across the schoolyard",
+          "Sailing boats drifting slowly",
+          "Green paint to finish the picture",
+          "Carrying sunshine to a faraway hamlet.",
+          "My picture still smells sweet.",
+          "Turning into a gentle river",
+          "The paint box may be used up"
+        ]
+      }
     },
     {
       "id": "tieng-cung-van",
@@ -407,6 +515,17 @@
         "answer": {
           "text": "non với tròn; đê với về; đậm với chậm; hoà với xa; trường với hương.",
           "explanation": "Năm cặp tiếng cuối dòng có phần vần giống nhau: on, ê, âm, oa/a và ương."
+        },
+        "en": {
+          "guide": [
+            "Read aloud the last word of each line.",
+            "Two words that rhyme sound the same in their ending, like «non» and «tròn»."
+          ],
+          "hint": "The rhymes are «on», «ê», «âm», «oa» and «ương»: listen closely to the tail of each word.",
+          "answer": {
+            "text": "Rhyming pairs: non với tròn; đê với về; đậm với chậm; hoà với xa; trường với hương.",
+            "explanation": "The five pairs of line-end words share the same rhyme: «on», «ê», «âm», «oa»/«a» and «ương»."
+          }
         }
       },
       "feedback": {
@@ -419,9 +538,26 @@
           "Có cặp đọc lên chẳng vang giống nhau. Đọc to từng cặp nhé.",
           "Đọc tiếng cuối dòng này rồi tiếng cuối dòng kia, nghe có hợp vần không?",
           "Một cặp đang lệch vần. Nghe kĩ phần đuôi: ương hay ơn, âm hay anh?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Ting-a-ling! Golden Lion sways his golden mane to the rhymes.",
+            "All five pairs right, the poem really does ring like bells!",
+            "{name} has sharp ears, hearing the rhyme right from the first verse."
+          ],
+          "wrong": [
+            "One pair does not ring the same when read. Read each pair aloud.",
+            "Read the last word of one line, then the last word of the other. Do they rhyme?",
+            "One pair is out of rhyme. Listen closely to the ending: «ương» or «ơn», «âm» or «anh»?"
+          ]
+        }
       },
-      "objective": "doc-tho-hinh-anh"
+      "objective": "doc-tho-hinh-anh",
+      "en": {
+        "title": "The jingling poem",
+        "goTo": "Go to the Judges' Stand in the middle of the yard, where Golden Lion is tapping out the rhymes",
+        "prompt": "Golden Lion taps a beat on the stand: he hears the poem ringing like little bells, because the ends of the lines have words that rhyme! For each blank, pick the pair of words that rhyme at the ends of two lines of the poem."
+      }
     },
     {
       "id": "doc-thuoc-hai-kho",
@@ -526,6 +662,17 @@
         "answer": {
           "text": "Sự vật: hộp màu, cánh diều, đám mây, dòng sông, ruộng lúa, bóng bàng.",
           "explanation": "Sáu thẻ này là tên đồ vật và cảnh vật; năm thẻ còn lại tả dáng vẻ hoặc việc làm."
+        },
+        "en": {
+          "guide": [
+            "A word for a thing names an object, a plant, an animal or a piece of scenery.",
+            "Ask: «What is this?» If the word itself answers, it names a thing."
+          ],
+          "hint": "«Trong vắt», «chầm chậm» and «hiền hoà» say how something looks; «chao nghiêng» and «trải rộng» say what something does.",
+          "answer": {
+            "text": "Words for things: hộp màu, cánh diều, đám mây, dòng sông, ruộng lúa, bóng bàng.",
+            "explanation": "These six cards are names of objects and scenery; the other five describe how something looks or what it does."
+          }
         }
       },
       "feedback": {
@@ -538,9 +685,39 @@
           "\"Chầm chậm\" là cách đi, vẽ lên giấy thành một vật được không nhỉ?",
           "Có một tên đồ vật đang nằm nhầm giỏ, tìm lại nhé.",
           "Từ tả cách làm hay dáng vẻ thì không phải sự vật đâu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Brush Fox draws all six things at once, her tail standing up with pride.",
+            "Two tidy baskets, as neat as a new paint box!",
+            "All correct! Brush Fox even adds a kite soaring high above."
+          ],
+          "wrong": [
+            "«Chầm chậm» is a way of moving. Can you paint that on paper as a thing?",
+            "One word for a thing has landed in the wrong basket. Look again.",
+            "A word that describes how something looks or what it does is not a word for a thing."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "What can be drawn in the picture?",
+        "goTo": "Go back into the Art Room, where the easel still has lots of space",
+        "prompt": "Brush Fox plans to add everything from the poem to the picture, but paper can only show words that name things. Drag each card to the basket that suits it: does the card name a thing, or not?",
+        "items": [
+          "trong vắt",
+          "hộp màu",
+          "cánh diều",
+          "chao nghiêng",
+          "đám mây",
+          "chầm chậm",
+          "dòng sông",
+          "hiền hoà",
+          "ruộng lúa",
+          "trải rộng",
+          "bóng bàng"
+        ]
+      }
     },
     {
       "id": "so-tu-moi-cua-vet",
@@ -610,6 +787,17 @@
         "answer": {
           "text": "Cáo Cọ nghĩ mãi mới chọn được màu. Bức tranh hoàn thành vào ngày hội vẽ.",
           "explanation": "\"Nghĩ\" có chữ i đứng sau nên viết ngh; \"ngày\" có chữ a đứng sau nên viết ng."
+        },
+        "en": {
+          "guide": [
+            "Look at the letter right after the blank.",
+            "Before «i», «e» and «ê» write «ngh»; before other letters write «ng»."
+          ],
+          "hint": "The first blank is before the letter «ĩ», the second before the letter «à».",
+          "answer": {
+            "text": "Cáo Cọ nghĩ mãi mới chọn được màu. Bức tranh hoàn thành vào ngày hội vẽ. (Cáo Cọ thought for ages before choosing a colour. The picture was finished on painting-festival day.)",
+            "explanation": "«Nghĩ» has an «i» after it so it is written «ngh»; «ngày» has an «a» after it so it is written «ng»."
+          }
         }
       },
       "feedback": {
@@ -622,9 +810,26 @@
           "Chữ i đứng sau thì phải dùng ngh đấy.",
           "Trước chữ a chỉ cần ng thôi, không cần thêm h.",
           "Hai chỗ trống đang đổi chỗ cho nhau rồi, đọc to từng tiếng nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both lines shine clear again on the tent wall!",
+            "You got the «ngh» rule right, and Brush Fox brushes off her tail, still grinning.",
+            "Spot on! Think carefully first, then paint: {name} really is an artist."
+          ],
+          "wrong": [
+            "With an «i» after it you must use «ngh».",
+            "Before an «a» you only need «ng», with no extra «h».",
+            "The two blanks have swapped places. Read each word aloud."
+          ]
+        }
       },
-      "objective": "chinh-ta-am-dau"
+      "objective": "chinh-ta-am-dau",
+      "en": {
+        "title": "Two proverbs on the tent wall",
+        "goTo": "Duck into the Painting Tent in the middle of the playground, its cloth curtain hanging down",
+        "prompt": "The tent door is low, and Brush Fox ducks in… swish, her tail brushes the wall! On the wall are two lines of writing, and last night's rain has smudged some letters. Choose «ng» or «ngh» to fill each blank."
+      }
     },
     {
       "id": "hinh-ve-thay-chu",
@@ -747,6 +952,17 @@
         "answer": {
           "text": "dù; giấy; giỏ; cái thang; màu vàng; bến cảng",
           "explanation": "Mỗi từ khớp với lời tả hình: dù che mưa, giấy để vẽ, giỏ đựng quả, thang để trèo, màu vàng như nắng, bến cảng cho tàu đậu."
+        },
+        "en": {
+          "guide": [
+            "First part: read each word aloud and listen for the first sound: «r», «d» or «gi».",
+            "Second part: listen carefully for the ending, «an» or «ang»."
+          ],
+          "hint": "«Dù» keeps off the rain, «giấy» is for drawing, «giỏ» holds fruit; «thang» is for climbing, «màu vàng», «bến cảng».",
+          "answer": {
+            "text": "The words: dù; giấy; giỏ; cái thang; màu vàng; bến cảng",
+            "explanation": "Each word fits its picture: «dù» keeps off the rain, «giấy» is for drawing, «giỏ» holds fruit, «thang» is for climbing, «màu vàng» is yellow like sunshine, and «bến cảng» is where ships stop."
+          }
         }
       },
       "feedback": {
@@ -759,9 +975,26 @@
           "Có hình bị viết nhầm âm đầu rồi. Đọc to từng từ nhé.",
           "Cái để trèo lên cao có vần ang, còn thứ để đốt lò thì vần an.",
           "Vật che mưa trên đầu viết bằng chữ d, thử lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All six riddles solved, and Brush Fox waves her tail in endless praise.",
+            "Right with «r», «d», «gi» and with «an», «ang», {name} has a sharp ear!",
+            "Golden Lion stops by to look and reads aloud: «dù, giấy, giỏ», all correct!"
+          ],
+          "wrong": [
+            "A picture has been spelt with the wrong first sound. Read each word aloud.",
+            "The thing for climbing up high has the ending «ang», while the thing for lighting a stove has «an».",
+            "The thing that keeps off the rain on your head is written with «d». Try again."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Brush Fox's six picture-word puzzles",
+        "goTo": "Go to the Drawing Corner, where Brush Fox has just finished six picture riddles",
+        "prompt": "Brush Fox draws pictures in place of words to puzzle her friends. Read each picture's description, then choose the right spelling: for the first three, test your ear with «r», «d» and «gi»; for the last three, test it with the rhymes «an» and «ang»."
+      }
     },
     {
       "id": "goc-hoc-tap-trong-leu",
@@ -830,6 +1063,17 @@
         "answer": {
           "text": "Cây cọ dùng để quét màu lên giấy.",
           "explanation": "Câu nói rõ đồ dùng (cây cọ) và việc nó làm được (quét màu lên giấy)."
+        },
+        "en": {
+          "guide": [
+            "Find the card with a capital letter: it begins the sentence.",
+            "A sentence about use goes: what is used for doing what."
+          ],
+          "hint": "The card with the full stop goes at the end of the sentence.",
+          "answer": {
+            "text": "Cây cọ dùng để quét màu lên giấy. (A paintbrush is used to spread colour on paper.)",
+            "explanation": "The sentence says clearly the tool (cây cọ) and what it can do (quét màu lên giấy)."
+          }
         }
       },
       "feedback": {
@@ -842,9 +1086,32 @@
           "Thẻ có chữ viết hoa phải đứng đầu câu nhé.",
           "Thẻ có dấu chấm thì đứng cuối cùng.",
           "Câu nói công dụng thường có hai chữ \"dùng để\" ở giữa, tìm chúng trước."
-        ]
+        ],
+        "en": {
+          "right": [
+            "A perfect introduction! The paintbrush must be thrilled.",
+            "Golden Lion nods: «dùng để quét màu», short and clear!",
+            "Arranged as neatly as the brushes standing in their pot."
+          ],
+          "wrong": [
+            "The card with the capital letter has to come first.",
+            "The card with the full stop goes last.",
+            "A sentence about use usually has the words «dùng để» in the middle. Find them first."
+          ]
+        }
       },
-      "objective": "cau-gioi-thieu"
+      "objective": "cau-gioi-thieu",
+      "en": {
+        "title": "Sentences introducing the paintbrush",
+        "goTo": "Go to the Judges' Stand, where Golden Lion is arranging some word cards",
+        "prompt": "Golden Lion announces: every painting for the fair must come with a sentence introducing a tool! Then he sneezes a really big sneeze, and the word cards fly everywhere. Put the cards in order to make a sentence saying what the paintbrush is used for.",
+        "items": [
+          "quét màu",
+          "lên giấy.",
+          "Cây cọ",
+          "dùng để"
+        ]
+      }
     },
     {
       "id": "but-chi-va-tay",
@@ -941,6 +1208,17 @@
         "answer": {
           "text": "được không? / màu nào? / mâm xôi. / là sạch. / nhiều.",
           "explanation": "Câu hỏi nhờ vả và câu hỏi màu kết thúc bằng dấu chấm hỏi; ba câu còn lại kể hoặc cảm ơn nên dùng dấu chấm."
+        },
+        "en": {
+          "guide": [
+            "A sentence that asks a question finishes with a question mark.",
+            "A telling sentence and a thank-you end with a full stop."
+          ],
+          "hint": "The first two sentences are both questions.",
+          "answer": {
+            "text": "Endings: được không? / màu nào? / mâm xôi. / là sạch. / nhiều.",
+            "explanation": "The question asking a favour and the question about the colour end in a question mark; the other three tell or thank, so they take a full stop."
+          }
         }
       },
       "feedback": {
@@ -953,9 +1231,26 @@
           "Câu nào đang hỏi bạn thì cần dấu chấm hỏi đấy.",
           "Lời kể màu vừa chấm và lời cảm ơn không phải câu hỏi đâu.",
           "Đọc to từng câu: lên giọng ở cuối là câu hỏi, xuống giọng là câu kể."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The paintbrush bows its thanks, and the water jar ripples happily.",
+            "Every mark is in its place, and it reads as smoothly as a flowing stream.",
+            "Brush Fox whispers: so my tools talk politely, too."
+          ],
+          "wrong": [
+            "A sentence that is asking you something needs a question mark.",
+            "Telling about the paint it just dipped, and the thank-you, are not questions.",
+            "Read each sentence aloud: your voice goes up at the end of a question and down at the end of a statement."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "The brush talks to the water jar",
+        "goTo": "Back into the Painting Tent, where the paintbrush and the water jar are whispering",
+        "prompt": "Last night in the Painting Tent, the paintbrush and the water jar whispered together, but they forgot their punctuation. Each square needs a mark: a full stop or a question mark?"
+      }
     },
     {
       "id": "chon-tranh-du-hoi",
@@ -1099,5 +1394,9 @@
       "cau": 1,
       "dau-cau": 1
     }
+  },
+  "en": {
+    "title": "Brush Fox Runs Out of Paint",
+    "summary": "The school painting fair is coming up and Brush Fox's paint box is completely empty. {name} gathers fruit, flowers and leaves along the fence to make paint, reads the poem «Hộp màu của em» by the easel in the Art Room, hunts for rhymes with the head teacher Golden Lion at the Judges' Stand, solves spelling puzzles in the Painting Tent and helps Brush Fox choose a picture for the fair."
   }
 }

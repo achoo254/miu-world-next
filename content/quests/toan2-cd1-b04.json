@@ -96,7 +96,11 @@
         "toan2-cd1-bong-do",
         "toan2-cd1-bong-xanh",
         "toan2-cd1-bong-vang"
-      ]
+      ],
+      "en": {
+        "title": "Three balls rolled away",
+        "goTo": "Find the three balls that rolled off the running track"
+      }
     },
     {
       "id": "hon-bao-nhieu-qua",
@@ -226,6 +230,17 @@
         "answer": {
           "text": "Bài giải; Chim cành trên hơn chim cành dưới:; 9 – 4 = 5 (con); Đáp số: 5 con chim sẻ.",
           "explanation": "Muốn biết hơn bao nhiêu, bớt số nhỏ khỏi số lớn: 9 – 4 = 5, cành trên hơn cành dưới 5 con chim sẻ."
+        },
+        "en": {
+          "guide": [
+            "The bigger number of birds goes before the minus sign.",
+            "The answer is simply the result of the subtraction."
+          ],
+          "hint": "9 birds on the upper branch and 4 on the lower branch: 9 – 4.",
+          "answer": {
+            "text": "Solution; Birds on the upper branch more than the lower branch:; 9 – 4 = 5 (birds); Answer: 5 sparrows.",
+            "explanation": "To find how many more, take the smaller number away from the bigger one: 9 – 4 = 5, so the upper branch has 5 more sparrows than the lower branch."
+          }
         }
       },
       "feedback": {
@@ -238,7 +253,19 @@
           "Chim cành trên đông hơn, hãy viết số đó trước dấu trừ.",
           "Đáp số bằng kết quả ở dòng phép trừ phía trên.",
           "Đếm lại xem cành trên mấy con, cành dưới mấy con?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The working is as neat as a score sheet, and the sparrows twitter in praise!",
+            "Exactly 5 birds, and Lanky Giraffe nods his long neck.",
+            "Subtraction, unit and answer are all there, with nothing to fault."
+          ],
+          "wrong": [
+            "The upper branch has more birds, so write that number before the minus sign.",
+            "The answer equals the result on the subtraction line above.",
+            "Count again: how many birds are on the upper branch, and how many on the lower?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -252,6 +279,10 @@
       "expression": {
         "b3": "9 - 4",
         "b4": "9 - 4"
+      },
+      "en": {
+        "title": "Birds on two branches",
+        "prompt": "Lanky Giraffe has just craned his neck up the almond tree, and a flock of sparrows chirps away: 9 on the upper branch and 4 on the lower branch. How many more birds are on the upper branch than on the lower branch?"
       }
     },
     {
@@ -343,6 +374,17 @@
         "answer": {
           "text": "Bài giải; Hộp còn nguyên ít hơn hộp đã mở:; 7 – 3 = 4 (hộp); Đáp số: 4 hộp.",
           "explanation": "Hộp còn nguyên kém hộp đã mở: 7 – 3 = 4 hộp."
+        },
+        "en": {
+          "guide": [
+            "\"Fewer\" is also a comparison of two numbers: take the smaller number away from the bigger one.",
+            "There are more open boxes than sealed boxes."
+          ],
+          "hint": "7 boxes are open and 3 boxes are sealed.",
+          "answer": {
+            "text": "Solution; Sealed boxes fewer than open boxes:; 7 – 3 = 4 (boxes); Answer: 4 boxes.",
+            "explanation": "There are fewer sealed boxes than open boxes: 7 – 3 = 4 boxes."
+          }
         }
       },
       "feedback": {
@@ -355,7 +397,19 @@
           "Hỏi \"kém\" thì vẫn bớt số ít khỏi số nhiều nhé.",
           "Số hộp đã mở nhiều hơn, hãy đặt nó trước dấu trừ.",
           "Đáp số ghi theo kết quả phép trừ, xem lại dòng cuối."
-        ]
+        ],
+        "en": {
+          "right": [
+            "4 fewer boxes, and the word \"fewer\" can't trick you!",
+            "Auntie Lụa packs the boxes neatly into the drawer, and the medicine cabinet shines.",
+            "Tidy working and a clear answer, wonderful."
+          ],
+          "wrong": [
+            "Even when asked \"fewer\", you still take the smaller number from the bigger one.",
+            "More boxes are open, so put that number before the minus sign.",
+            "Write the answer from the result of the subtraction, and check the last line."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -369,6 +423,11 @@
       "expression": {
         "b3": "7 - 3",
         "b4": "7 - 3"
+      },
+      "en": {
+        "title": "Auntie Lụa's tall sticker boxes",
+        "goTo": "Stop by the first-aid tent beside the running track, where nurse Lụa is tidying the medicine cabinet",
+        "prompt": "After the race, Auntie Lụa tidies the medicine cabinet: 7 boxes of plasters are open and 3 boxes are still sealed. How many fewer boxes are sealed than open?"
       }
     },
     {
@@ -387,6 +446,17 @@
         "answer": {
           "text": "43 tuổi",
           "explanation": "49 – 6 = 43, bố hơn Gấu Sún 43 tuổi."
+        },
+        "en": {
+          "guide": [
+            "Dad's age is greater than Toothless Bear's age.",
+            "Take Toothless Bear's age away from Dad's age."
+          ],
+          "hint": "Work out 49 – 6.",
+          "answer": {
+            "text": "43 years",
+            "explanation": "49 – 6 = 43, so Dad is 43 years older than Toothless Bear."
+          }
         }
       },
       "feedback": {
@@ -399,13 +469,29 @@
           "Lấy tuổi bố bớt đi tuổi của Gấu Sún nhé.",
           "Hàng đơn vị: 9 bớt 6 còn mấy?",
           "Hàng chục của 49 vẫn giữ nguyên là 4 đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Dad is 43 years older than Toothless Bear, accurate to the year!",
+            "Auntie Lụa covers her mouth and laughs: she is younger than Toothless Bear's dad, you know.",
+            "Taking a one-digit number from a two-digit number is a piece of cake."
+          ],
+          "wrong": [
+            "Dad's age minus Toothless Bear's age gives the gap.",
+            "In the units: what is left when you take 6 from 9?",
+            "The tens digit of 49 stays as 4."
+          ]
+        }
       },
       "answer": {
         "value": 43
       },
       "objective": "bai-toan-co-loi-van-hon-kem",
-      "expression": "49 - 6"
+      "expression": "49 - 6",
+      "en": {
+        "title": "How much older is Dad than Toothless Bear?",
+        "question": "Auntie Lụa winks: she won't tell her age, but Toothless Bear's family will. Toothless Bear is 6 years old and his dad is 49. How many years older is Dad than Toothless Bear?"
+      }
     },
     {
       "id": "thung-rac-hai-mau",
@@ -424,6 +510,17 @@
         "answer": {
           "text": "7 thùng",
           "explanation": "10 – 3 = 7, thùng lá khô nhiều hơn thùng giấy vụn 7 thùng."
+        },
+        "en": {
+          "guide": [
+            "There are more bins of dry leaves than of scrap paper.",
+            "Take 3 away from 10."
+          ],
+          "hint": "Ten bins compared with three bins.",
+          "answer": {
+            "text": "7 bins",
+            "explanation": "10 – 3 = 7, so there are 7 more bins of dry leaves than of scrap paper."
+          }
         }
       },
       "feedback": {
@@ -436,13 +533,30 @@
           "Thùng lá khô có 10, thùng giấy vụn có 3.",
           "Lấy số nhiều trừ đi số ít nhé.",
           "Mười bớt ba còn mấy? Đếm ngón tay thử xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "7 more bins, and you work faster than the rubbish truck drives!",
+            "Good at sorting rubbish, and even better at comparing more and fewer.",
+            "Auntie Thắm tips dry leaves into the right bin to celebrate."
+          ],
+          "wrong": [
+            "There are 10 bins of dry leaves and 3 bins of scrap paper.",
+            "Take the smaller number away from the bigger one.",
+            "What is left when you take three from ten? Try counting on your fingers."
+          ]
+        }
       },
       "answer": {
         "value": 7
       },
       "objective": "bai-toan-co-loi-van-hon-kem",
-      "expression": "10 - 3"
+      "expression": "10 - 3",
+      "en": {
+        "title": "Two kinds of bins",
+        "goTo": "Go to the bin corner, where Auntie Thắm the janitor is lining up two rows of green bins",
+        "question": "In the corner of the yard, Auntie Thắm puts the bins for scrap paper on the left and the bins for dry leaves on the right. She counts 3 bins of scrap paper and 10 bins of dry leaves. How many more bins of dry leaves are there than bins of scrap paper?"
+      }
     },
     {
       "id": "bang-giay-vach-dich",
@@ -577,6 +691,17 @@
         "answer": {
           "text": "Làm thử: dải xanh dài hơn dải vàng bao nhiêu cm? 6 cm – 4 cm = 2 cm; a) Dải đỏ dài hơn dải vàng bao nhiêu cm? 9 cm – 4 cm = 5 cm; b) Dải xanh kém dải đỏ bao nhiêu cm? 9 cm – 6 cm = 3 cm",
           "explanation": "Dải đỏ dài hơn dải vàng 9 – 4 = 5 cm; dải xanh ngắn hơn dải đỏ 9 – 6 = 3 cm."
+        },
+        "en": {
+          "guide": [
+            "The longer ribbon goes before the minus sign.",
+            "Remember to write the unit, centimetres, after each number."
+          ],
+          "hint": "Part b: the red ribbon, 9 cm, is longer than the blue ribbon, 6 cm.",
+          "answer": {
+            "text": "Try one: how many cm longer is the blue ribbon than the yellow ribbon? 6 cm – 4 cm = 2 cm; a) How many cm longer is the red ribbon than the yellow ribbon? 9 cm – 4 cm = 5 cm; b) How many cm shorter is the blue ribbon than the red ribbon? 9 cm – 6 cm = 3 cm",
+            "explanation": "The red ribbon is 9 – 4 = 5 cm longer than the yellow ribbon; the blue ribbon is 9 – 6 = 3 cm shorter than the red ribbon."
+          }
         }
       },
       "feedback": {
@@ -589,7 +714,19 @@
           "Dải đỏ dài nhất, hãy viết nó trước dấu trừ nhé.",
           "Hỏi \"ngắn hơn\" vẫn lấy số nhiều trừ số ít đấy.",
           "Dải xanh dài 6 cm, xem lại câu b nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The finish line is stretched, and the three ribbons are compared just right!",
+            "Toothless Bear grins, showing his missing tooth: that's so right!",
+            "Shorter or longer, you subtract the right way round."
+          ],
+          "wrong": [
+            "The red ribbon is the longest, so write it before the minus sign.",
+            "Asked \"shorter\", you still take the smaller number from the bigger one.",
+            "The blue ribbon is 6 cm long, so look at part b again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -603,6 +740,10 @@
       "expression": {
         "b1": "9 - 4",
         "b4": "9 - 6"
+      },
+      "en": {
+        "title": "Compare three ribbons",
+        "prompt": "The red ribbon is 9 cm long, the yellow ribbon is 4 cm and the blue ribbon is 6 cm. Fill in the blanks."
       }
     },
     {
@@ -637,6 +778,17 @@
         "answer": {
           "text": "Kèn đỏ",
           "explanation": "Kèn đỏ dài 15 cm, ngắn hơn kèn vàng 23 cm và kèn xanh 28 cm."
+        },
+        "en": {
+          "guide": [
+            "Put the three measurements side by side: 28 cm, 23 cm, 15 cm.",
+            "The smallest measurement is the shortest horn."
+          ],
+          "hint": "15 cm is the smallest measurement.",
+          "answer": {
+            "text": "Red horn",
+            "explanation": "The red horn is 15 cm long, shorter than the yellow horn at 23 cm and the blue horn at 28 cm."
+          }
         }
       },
       "feedback": {
@@ -649,14 +801,36 @@
           "Chiếc ngắn nhất có số xăng-ti-mét bé nhất.",
           "Kèn xanh dài 28 cm, đó là chiếc dài nhất đấy.",
           "Chỉ chọn một chiếc kèn ngắn nhất thôi nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The red horn is tiny, and you found it right away!",
+            "The red horn is the shortest, and Cloud Cat tucks it into her pocket.",
+            "You compare measurements in a flash, well done."
+          ],
+          "wrong": [
+            "The shortest one has the smallest number of centimetres.",
+            "The blue horn is 28 cm long, which is the longest one.",
+            "Pick just one, the shortest horn."
+          ]
+        }
       },
       "answer": {
         "choices": [
           "ken-do"
         ]
       },
-      "objective": "so-den-100-so-sanh"
+      "objective": "so-den-100-so-sanh",
+      "en": {
+        "title": "The shortest paper horn",
+        "goTo": "Go up to the stand, where Cloud Cat is fumbling to pick up three paper horns she dropped",
+        "prompt": "Cloud Cat dropped three paper cheering horns on the stand: the blue horn is 28 cm long, the yellow horn is 23 cm and the red horn is 15 cm. Which one is the shortest?",
+        "choices": [
+          "Blue horn",
+          "Yellow horn",
+          "Red horn"
+        ]
+      }
     },
     {
       "id": "but-hon-kem-cm",
@@ -712,6 +886,17 @@
         "answer": {
           "text": "Số ?; – Kèn xanh dài hơn kèn vàng 5 cm.; – Kèn đỏ ngắn hơn kèn xanh 13 cm.",
           "explanation": "Kèn xanh dài hơn kèn vàng 28 – 23 = 5 cm; kèn đỏ ngắn hơn kèn xanh 28 – 15 = 13 cm."
+        },
+        "en": {
+          "guide": [
+            "To find how much longer, take the smaller measurement away from the bigger one.",
+            "Do the same to find how much shorter."
+          ],
+          "hint": "The red horn and the blue horn: 28 – 15.",
+          "answer": {
+            "text": "Find the number ?; – The blue horn is 5 cm longer than the yellow horn.; – The red horn is 13 cm shorter than the blue horn.",
+            "explanation": "The blue horn is 28 – 23 = 5 cm longer than the yellow horn; the red horn is 28 – 15 = 13 cm shorter than the blue horn."
+          }
         }
       },
       "feedback": {
@@ -724,7 +909,19 @@
           "Kèn xanh 28 cm, kèn vàng 23 cm, bớt cho nhau nhé.",
           "Kèn đỏ ngắn hơn kèn xanh bao nhiêu? Lấy 28 bớt 15.",
           "Kết quả là số xăng-ti-mét chênh nhau, không phải độ dài của kèn."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Five centimetres and thirteen centimetres, exactly right!",
+            "Cloud Cat's horn box is now arranged by length too.",
+            "You got both longer and shorter spot on, brilliant."
+          ],
+          "wrong": [
+            "The blue horn is 28 cm and the yellow horn is 23 cm, so take one from the other.",
+            "How much shorter is the red horn than the blue horn? Take 15 from 28.",
+            "The result is the difference in centimetres, not the length of a horn."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -736,6 +933,10 @@
       "expression": {
         "b1": "28 - 23",
         "b2": "28 - 15"
+      },
+      "en": {
+        "title": "How much longer is the horn?",
+        "prompt": "The blue horn is 28 cm, the yellow horn is 23 cm and the red horn is 15 cm."
       }
     },
     {
@@ -810,6 +1011,17 @@
         "answer": {
           "text": "a) Cột cờ nào cao nhất? Cột vàng; b) Số ?; – Cột đỏ cao hơn cột xanh 3 cm.; – Cột xanh thấp hơn cột vàng 8 cm.",
           "explanation": "Cột vàng cao nhất (79 cm); cột đỏ cao hơn cột xanh 74 – 71 = 3 cm; cột xanh thấp hơn cột vàng 79 – 71 = 8 cm."
+        },
+        "en": {
+          "guide": [
+            "The tallest is the biggest measurement.",
+            "To find how much taller or shorter, take the smaller number away from the bigger one."
+          ],
+          "hint": "The yellow pole is 79 cm; the blue pole is shorter than the yellow pole: 79 – 71.",
+          "answer": {
+            "text": "a) Which flagpole is the tallest? The yellow pole; b) Find the number ?; – The red pole is 3 cm taller than the blue pole.; – The blue pole is 8 cm shorter than the yellow pole.",
+            "explanation": "The yellow pole is the tallest (79 cm); the red pole is 74 – 71 = 3 cm taller than the blue pole; the blue pole is 79 – 71 = 8 cm shorter than the yellow pole."
+          }
         }
       },
       "feedback": {
@@ -822,7 +1034,19 @@
           "Số đo lớn nhất mới là cột cờ cao nhất.",
           "Cột đỏ 74 cm, cột xanh 71 cm, chênh nhau mấy?",
           "Có một ô chưa khớp, tính lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three flags flutter, and the whole yard praises the measuring expert!",
+            "The yellow pole is the tallest, and you compared to the exact centimetre.",
+            "Toothless Bear writes in his notebook: {name} got everything right."
+          ],
+          "wrong": [
+            "The biggest measurement is the tallest flagpole.",
+            "The red pole is 74 cm and the blue pole is 71 cm, so how much do they differ by?",
+            "One box doesn't match yet, so work it out again."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -835,6 +1059,11 @@
       "expression": {
         "b2": "74 - 71",
         "b3": "79 - 71"
+      },
+      "en": {
+        "title": "Three flagpoles at the finish line",
+        "goTo": "Back to the finish line, where Toothless Bear is planting three little flagpoles",
+        "prompt": "Toothless Bear plants three flagpoles along the finish line: the red pole is 74 cm tall, the blue pole is 71 cm and the yellow pole is 79 cm. Let's measure which pole is tallest and how much taller or shorter each one is."
       }
     },
     {
@@ -892,6 +1121,17 @@
         "answer": {
           "text": "a) Gấu Sún gấp nhiều hơn Mèo Mây mấy chiếc? 4; b) Mèo Mây gấp ít hơn Gấu Sún mấy chiếc? 4",
           "explanation": "Gấu Sún có 6 + 2 = 8 chiếc, Mèo Mây có 3 + 1 = 4 chiếc; 8 – 4 = 4, nên hơn 4 chiếc và kém 4 chiếc."
+        },
+        "en": {
+          "guide": [
+            "Count each friend's boats, and remember the one being held in the hand.",
+            "More or fewer, you take the smaller number from the bigger one."
+          ],
+          "hint": "Toothless Bear has 8 boats and Cloud Cat has 4 boats.",
+          "answer": {
+            "text": "a) How many more boats did Toothless Bear fold than Cloud Cat? 4; b) How many fewer boats did Cloud Cat fold than Toothless Bear? 4",
+            "explanation": "Toothless Bear has 6 + 2 = 8 boats and Cloud Cat has 3 + 1 = 4 boats; 8 – 4 = 4, so he has 4 more and she has 4 fewer."
+          }
         }
       },
       "feedback": {
@@ -904,7 +1144,19 @@
           "Đừng quên chiếc thuyền đang nằm trên tay mỗi bạn.",
           "Hơn mấy và kém mấy ở đây ra cùng một số đấy.",
           "Đếm lại thuyền của Gấu Sún: 6 chiếc trên bàn và 2 chiếc trên tay."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Your boat steers through the water to come first, and the whole yard cheers!",
+            "4 more and 4 fewer, two questions with one subtraction, clever!",
+            "Chubby Goldfish flicks his tail and splashes: here is the champion of more and fewer!"
+          ],
+          "wrong": [
+            "Don't forget the boat in each friend's hand.",
+            "The answers to how many more and how many fewer come out as the same number.",
+            "Count Toothless Bear's boats again: 6 on the table and 2 in his hands."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -916,6 +1168,11 @@
       "expression": {
         "b1": "6 + 2 - 3 - 1",
         "b2": "6 + 2 - 3 - 1"
+      },
+      "en": {
+        "title": "Paper boat race",
+        "goTo": "Go to the water channel at the end of the yard, where Chubby Goldfish pops up to watch the paper boat race",
+        "prompt": "Toothless Bear and Cloud Cat are racing to fold paper boats. Toothless Bear has 6 on the table and 2 more in his hands; Cloud Cat has 3 on the table and 1 more in her hand. Chubby Goldfish calls out: whoever answers correctly first launches their boats first!"
       }
     },
     {
@@ -948,5 +1205,9 @@
       "hon-kem": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "More and fewer on the running track",
+    "summary": "Two ball-collecting teams have finished their race, but nobody knows which team has more balls or by how many. {name} joins referee Lanky Giraffe, captain Toothless Bear and friends around the yard, comparing birds on a branch, plaster boxes, paper horns, flagpoles and paper boat races, to practise finding how many more one side has and how many fewer the other."
   }
 }

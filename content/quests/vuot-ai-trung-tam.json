@@ -41,11 +41,20 @@
       "kind": "dialogue",
       "target": "trum-tt-bo-cau",
       "lines": [
-        { "speaker": "Bồ Câu Đưa Tin", "text": "Gù gù, tin nóng đây! Cáo Ảo Thuật vừa dựng sân khấu giữa khu giao dịch, ai thắng màn đố tài sẽ được mở rương đạo cụ của Cáo." },
-        { "speaker": "Bồ Câu Đưa Tin", "text": "Có điều Cáo đãng trí lắm, đồ diễn rơi khắp dãy sạp đồ cũ. Chưa đủ đồ là Cáo không chịu diễn đâu." }
+        {
+          "speaker": "Bồ Câu Đưa Tin",
+          "text": "Gù gù, tin nóng đây! Cáo Ảo Thuật vừa dựng sân khấu giữa khu giao dịch, ai thắng màn đố tài sẽ được mở rương đạo cụ của Cáo."
+        },
+        {
+          "speaker": "Bồ Câu Đưa Tin",
+          "text": "Có điều Cáo đãng trí lắm, đồ diễn rơi khắp dãy sạp đồ cũ. Chưa đủ đồ là Cáo không chịu diễn đâu."
+        }
       ],
       "choices": [
-        { "text": "Tớ đi gom đồ diễn cho Cáo!", "reply": "Nhanh chân lên nhé, dãy sạp đồ cũ ở ngay bên trái kia." }
+        {
+          "text": "Tớ đi gom đồ diễn cho Cáo!",
+          "reply": "Nhanh chân lên nhé, dãy sạp đồ cũ ở ngay bên trái kia."
+        }
       ],
       "en": {
         "title": "Hot news from Bồ Câu",
@@ -88,7 +97,26 @@
           "clue": "Mỏng mượt, rực rỡ đủ màu cầu vồng, phất một cái là che kín cả bàn tay.",
           "target": "trum-tt-khan-lua"
         }
-      ]
+      ],
+      "en": {
+        "title": "Gather the show props",
+        "goTo": "Go to the second-hand stalls and find the Fox's three props",
+        "prompt": "The Fox has left three show props behind. Read the clues and find all three:",
+        "items": [
+          {
+            "name": "The magic hat",
+            "clue": "Wide-brimmed and deep, and rumour has it you can reach in and pull out a whole rabbit."
+          },
+          {
+            "name": "The magic deck of cards",
+            "clue": "A stack of thin paper cards, each printed with a picture and a number, fanning out like a hand fan."
+          },
+          {
+            "name": "The seven-colour silk scarf",
+            "clue": "Thin and smooth, bright in every colour of the rainbow, and one flick covers a whole hand."
+          }
+        ]
+      }
     },
     {
       "id": "doc-ap-phich",
@@ -100,22 +128,78 @@
       "text": "BUỔI DIỄN «PHÉP MÀU KHU GIAO DỊCH»\nNgười diễn: Cáo Ảo Thuật.\nGiờ diễn: 4 giờ chiều, ở sân khấu nhỏ.\nAi tìm đủ mũ, bộ bài và khăn lụa cho Cáo sẽ được mời lên sân khấu đố tài. Thắng bảy câu, rương đạo cụ là của bạn!",
       "question": "Muốn được mời lên sân khấu đố tài, {name} cần làm gì?",
       "choices": [
-        { "id": "a", "text": "Mua một chiếc vé thật đắt" },
-        { "id": "b", "text": "Tìm đủ mũ, bộ bài và khăn lụa cho Cáo" },
-        { "id": "c", "text": "Tới sân khấu nhỏ lúc 4 giờ sáng" }
+        {
+          "id": "a",
+          "text": "Mua một chiếc vé thật đắt"
+        },
+        {
+          "id": "b",
+          "text": "Tìm đủ mũ, bộ bài và khăn lụa cho Cáo"
+        },
+        {
+          "id": "c",
+          "text": "Tới sân khấu nhỏ lúc 4 giờ sáng"
+        }
       ],
-      "answer": { "choice": "b" },
+      "answer": {
+        "choice": "b"
+      },
       "support": {
-        "guide": ["Tìm câu có chữ «mời lên sân khấu».", "Đọc phần đầu câu đó xem cần làm gì trước."],
+        "guide": [
+          "Tìm câu có chữ «mời lên sân khấu».",
+          "Đọc phần đầu câu đó xem cần làm gì trước."
+        ],
         "hint": "Áp phích không nhắc gì tới tiền vé cả.",
         "answer": {
           "text": "Gom đủ ba món đồ diễn cho Cáo",
           "explanation": "Áp phích viết: ai tìm đủ mũ, bộ bài và khăn lụa cho Cáo sẽ được mời lên sân khấu đố tài."
+        },
+        "en": {
+          "guide": [
+            "Find the sentence with the words «invited onto the stage».",
+            "Read the first part of that sentence to see what to do first."
+          ],
+          "hint": "The poster doesn't mention ticket money at all.",
+          "answer": {
+            "text": "Gather all three show props for the Fox",
+            "explanation": "The poster says: whoever finds the hat, the deck of cards and the silk scarf for the Fox will be invited onto the stage for the talent quiz."
+          }
         }
       },
       "feedback": {
-        "right": ["Ba món đã đủ, {name} chắc suất lên sân khấu rồi!", "Đọc áp phích kĩ thế thì Cáo chẳng lừa được ai.", "Chuẩn rồi, giờ đi luyện mắt tinh thôi!"],
-        "wrong": ["Buổi diễn vào 4 giờ chiều cơ, đọc lại dòng giờ diễn nhé.", "Áp phích có bắt mua vé đâu {name} ơi.", "Tìm câu có chữ «mời» rồi chọn lại nha."]
+        "right": [
+          "Ba món đã đủ, {name} chắc suất lên sân khấu rồi!",
+          "Đọc áp phích kĩ thế thì Cáo chẳng lừa được ai.",
+          "Chuẩn rồi, giờ đi luyện mắt tinh thôi!"
+        ],
+        "wrong": [
+          "Buổi diễn vào 4 giờ chiều cơ, đọc lại dòng giờ diễn nhé.",
+          "Áp phích có bắt mua vé đâu {name} ơi.",
+          "Tìm câu có chữ «mời» rồi chọn lại nha."
+        ],
+        "en": {
+          "right": [
+            "All three props found, {name} is sure of a place on stage!",
+            "Reading the poster this carefully, the Fox can't trick anyone.",
+            "Right, now off to train those sharp eyes!"
+          ],
+          "wrong": [
+            "The show is at 4 in the afternoon, read the show time line again.",
+            "The poster doesn't ask for a ticket, {name}.",
+            "Find the sentence with the word «invited» and choose again."
+          ]
+        }
+      },
+      "en": {
+        "title": "Read the show poster",
+        "goTo": "Stop by the poster post and see what Magician Fox has written",
+        "text": "THE «MAGIC OF THE TRADING AREA» SHOW\nPerformer: Magician Fox.\nShow time: 4 in the afternoon, on the little stage.\nWhoever finds the hat, the deck of cards and the silk scarf for the Fox will be invited onto the stage for the talent quiz. Win seven questions and the prop chest is yours!",
+        "question": "What must {name} do to be invited onto the stage for the talent quiz?",
+        "choices": [
+          "Buy a very expensive ticket",
+          "Find the hat, the deck of cards and the silk scarf for the Fox",
+          "Go to the little stage at 4 in the morning"
+        ]
       }
     },
     {
@@ -129,27 +213,98 @@
       "skill": "logic",
       "prompt": "Koala úp ba chiếc cốc rồi giấu một viên bi dưới một chiếc. Đọc ba manh mối của Koala: bi nằm dưới cốc nào?",
       "elements": [
-        { "id": "hang-coc", "label": "Ba chiếc cốc úp thành hàng: đỏ, xanh, vàng." },
-        { "id": "khong-o-giua", "label": "Bi không ở dưới chiếc cốc đứng giữa." },
-        { "id": "khong-mau-chuoi", "label": "Cốc có bi không cùng màu với quả chuối chín." }
+        {
+          "id": "hang-coc",
+          "label": "Ba chiếc cốc úp thành hàng: đỏ, xanh, vàng."
+        },
+        {
+          "id": "khong-o-giua",
+          "label": "Bi không ở dưới chiếc cốc đứng giữa."
+        },
+        {
+          "id": "khong-mau-chuoi",
+          "label": "Cốc có bi không cùng màu với quả chuối chín."
+        }
       ],
       "choices": [
-        { "id": "do", "text": "Cốc đỏ" },
-        { "id": "xanh", "text": "Cốc xanh" },
-        { "id": "vang", "text": "Cốc vàng" }
+        {
+          "id": "do",
+          "text": "Cốc đỏ"
+        },
+        {
+          "id": "xanh",
+          "text": "Cốc xanh"
+        },
+        {
+          "id": "vang",
+          "text": "Cốc vàng"
+        }
       ],
-      "answer": { "choice": "do" },
+      "answer": {
+        "choice": "do"
+      },
       "support": {
-        "guide": ["Chiếc cốc đứng giữa hàng là cốc màu gì? Gạch nó đi.", "Quả chuối chín có màu gì? Gạch thêm chiếc cốc cùng màu.", "Còn lại chiếc nào thì bi nằm dưới chiếc đó."],
+        "guide": [
+          "Chiếc cốc đứng giữa hàng là cốc màu gì? Gạch nó đi.",
+          "Quả chuối chín có màu gì? Gạch thêm chiếc cốc cùng màu.",
+          "Còn lại chiếc nào thì bi nằm dưới chiếc đó."
+        ],
         "hint": "Mỗi gợi ý giúp em loại đi một chiếc cốc.",
         "answer": {
           "text": "Bi nằm dưới cốc đỏ",
           "explanation": "Cốc xanh đứng giữa nên bị loại; chuối chín màu vàng nên cốc vàng cũng bị loại; chỉ còn cốc đỏ."
+        },
+        "en": {
+          "guide": [
+            "What colour is the cup in the middle of the row? Cross it out.",
+            "What colour is a ripe banana? Cross out the cup of that colour too.",
+            "Whichever cup is left has the marble under it."
+          ],
+          "hint": "Each clue lets you rule out one cup.",
+          "answer": {
+            "text": "The marble is under the red cup",
+            "explanation": "The blue cup is in the middle so it's out; a ripe banana is yellow so the yellow cup is out too; only the red cup is left."
+          }
         }
       },
       "feedback": {
-        "right": ["Lật cốc đỏ lên, viên bi lăn ra lấp lánh!", "{name} loại trừ khéo như một thám tử nhí.", "Koala tròn mắt: chưa ai đoán nhanh thế!"],
-        "wrong": ["Chiếc đó đã bị một gợi ý loại rồi, xem lại nhé.", "Quả chuối chín màu gì nhỉ {name}?", "Cốc đứng giữa hàng không giấu bi đâu."]
+        "right": [
+          "Lật cốc đỏ lên, viên bi lăn ra lấp lánh!",
+          "{name} loại trừ khéo như một thám tử nhí.",
+          "Koala tròn mắt: chưa ai đoán nhanh thế!"
+        ],
+        "wrong": [
+          "Chiếc đó đã bị một gợi ý loại rồi, xem lại nhé.",
+          "Quả chuối chín màu gì nhỉ {name}?",
+          "Cốc đứng giữa hàng không giấu bi đâu."
+        ],
+        "en": {
+          "right": [
+            "Lift the red cup and the marble rolls out sparkling!",
+            "{name} rules things out as cleverly as a young detective.",
+            "Koala's eyes go wide: nobody has guessed so fast!"
+          ],
+          "wrong": [
+            "One of the clues already rules that cup out, look again.",
+            "What colour is a ripe banana, {name}?",
+            "The cup in the middle of the row isn't hiding the marble."
+          ]
+        }
+      },
+      "en": {
+        "title": "The cup hiding the marble",
+        "goTo": "Stop by Koala's stall, where Koala is setting up the cup trick",
+        "prompt": "Koala turns three cups upside down and hides a marble under one. Read Koala's three clues: which cup is the marble under?",
+        "choices": [
+          "The red cup",
+          "The blue cup",
+          "The yellow cup"
+        ],
+        "elements": [
+          "Three cups upside down in a row: red, blue, yellow.",
+          "The marble is not under the cup in the middle.",
+          "The cup with the marble is not the same colour as a ripe banana."
+        ]
       }
     },
     {
@@ -214,11 +369,22 @@
           "move": "gem",
           "prompt": "Cáo rút ra tấm thẻ ghi chữ «cat». Từ tiếng Anh này nghĩa là gì?",
           "choices": [
-            { "id": "a", "text": "Con mèo" },
-            { "id": "b", "text": "Con chó" },
-            { "id": "c", "text": "Con cá" }
+            {
+              "id": "a",
+              "text": "Con mèo"
+            },
+            {
+              "id": "b",
+              "text": "Con chó"
+            },
+            {
+              "id": "c",
+              "text": "Con cá"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Tấm thẻ ghi «cat», một từ tiếng Anh gọi tên con vật.",
@@ -236,10 +402,18 @@
               ],
               "hint": "«dog» is «con chó» and «fish» is «con cá»; «cat» is the other pet.",
               "answer": {
-                "text": "The cat (Con mèo)",
+                "text": "Con mèo",
                 "explanation": "«cat» means «con mèo»; «con chó» is a dog and «con cá» is a fish."
               }
             }
+          },
+          "en": {
+            "prompt": "The Fox pulls out a card with the word «cat». What does this English word mean in Vietnamese?",
+            "choices": [
+              "Con mèo",
+              "Con chó",
+              "Con cá"
+            ]
           }
         },
         {
@@ -248,11 +422,22 @@
           "move": "charge",
           "prompt": "Cáo biến ra một quả táo đỏ. Quả táo trong tiếng Anh gọi là gì?",
           "choices": [
-            { "id": "a", "text": "banana" },
-            { "id": "b", "text": "apple" },
-            { "id": "c", "text": "orange" }
+            {
+              "id": "a",
+              "text": "banana"
+            },
+            {
+              "id": "b",
+              "text": "apple"
+            },
+            {
+              "id": "c",
+              "text": "orange"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Cáo biến ra quả táo đỏ; tìm từ tiếng Anh đúng tên quả này.",
@@ -274,6 +459,14 @@
                 "explanation": "«quả táo» in English is «apple»; «banana» is «quả chuối» and «orange» is «quả cam»."
               }
             }
+          },
+          "en": {
+            "prompt": "The Fox conjures up a red apple. What is an apple called in English?",
+            "choices": [
+              "banana",
+              "apple",
+              "orange"
+            ]
           }
         },
         {
@@ -282,11 +475,22 @@
           "move": "fling",
           "prompt": "Trên đồng hồ của Cáo, kim ngắn chỉ số 4, kim dài chỉ số 12. Đồng hồ chỉ mấy giờ?",
           "choices": [
-            { "id": "a", "text": "12 giờ" },
-            { "id": "b", "text": "4 giờ 30 phút" },
-            { "id": "c", "text": "4 giờ" }
+            {
+              "id": "a",
+              "text": "12 giờ"
+            },
+            {
+              "id": "b",
+              "text": "4 giờ 30 phút"
+            },
+            {
+              "id": "c",
+              "text": "4 giờ"
+            }
           ],
-          "answer": { "choice": "c" },
+          "answer": {
+            "choice": "c"
+          },
           "support": {
             "guide": [
               "Kim ngắn trên đồng hồ của Cáo cho biết giờ; nhìn xem nó chỉ số nào.",
@@ -308,6 +512,14 @@
                 "explanation": "The short hand is on 4 and the long hand on 12, so it's 4 o'clock; at 4:30 the long hand points to 6."
               }
             }
+          },
+          "en": {
+            "prompt": "On the Fox's clock, the short hand points to 4 and the long hand points to 12. What time does the clock show?",
+            "choices": [
+              "12 o'clock",
+              "Half past 4",
+              "4 o'clock"
+            ]
           }
         },
         {
@@ -316,11 +528,22 @@
           "move": "orbs",
           "prompt": "Những con số bay ra từ chiếc mũ: 3, 6, 9, 12, … Số tiếp theo là số nào?",
           "choices": [
-            { "id": "a", "text": "13" },
-            { "id": "b", "text": "15" },
-            { "id": "c", "text": "16" }
+            {
+              "id": "a",
+              "text": "13"
+            },
+            {
+              "id": "b",
+              "text": "15"
+            },
+            {
+              "id": "c",
+              "text": "16"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Xem mỗi số bay ra lớn hơn số trước bao nhiêu: 6 − 3, 9 − 6…",
@@ -342,6 +565,14 @@
                 "explanation": "Each number is 3 more than the one before, so after 12 comes 12 + 3 = 15."
               }
             }
+          },
+          "en": {
+            "prompt": "Numbers fly out of the hat: 3, 6, 9, 12, … What is the next number?",
+            "choices": [
+              "13",
+              "15",
+              "16"
+            ]
           }
         },
         {
@@ -350,11 +581,22 @@
           "move": "gem",
           "prompt": "Túi bên trái có 45 đồng xu, túi bên phải có 54 đồng xu. Túi nào nhiều xu hơn?",
           "choices": [
-            { "id": "a", "text": "Túi bên trái" },
-            { "id": "b", "text": "Túi bên phải" },
-            { "id": "c", "text": "Hai túi bằng nhau" }
+            {
+              "id": "a",
+              "text": "Túi bên trái"
+            },
+            {
+              "id": "b",
+              "text": "Túi bên phải"
+            },
+            {
+              "id": "c",
+              "text": "Hai túi bằng nhau"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Đặt hai số xu cạnh nhau: 45 và 54, rồi so hàng chục trước.",
@@ -372,10 +614,18 @@
               ],
               "hint": "45 and 54 use the same digits, so they aren't equal; which has 5 tens?",
               "answer": {
-                "text": "The right-hand bag (Túi bên phải)",
+                "text": "The right-hand bag",
                 "explanation": "54 has 5 tens, more than the 4 tens of 45, so the right-hand bag (54 coins) has more; they aren't equal."
               }
             }
+          },
+          "en": {
+            "prompt": "The left bag has 45 coins and the right bag has 54 coins. Which bag has more coins?",
+            "choices": [
+              "The left-hand bag",
+              "The right-hand bag",
+              "The two bags are equal"
+            ]
           }
         },
         {
@@ -384,11 +634,22 @@
           "move": "charge",
           "prompt": "Đọc câu: «Chú chim trắng ngậm lá thư bay qua quảng trường, đậu xuống mái cửa hàng.» Câu này kể về con vật nào?",
           "choices": [
-            { "id": "a", "text": "Chim bồ câu đưa thư" },
-            { "id": "b", "text": "Chú cáo ảo thuật" },
-            { "id": "c", "text": "Bạn koala bán hàng" }
+            {
+              "id": "a",
+              "text": "Chim bồ câu đưa thư"
+            },
+            {
+              "id": "b",
+              "text": "Chú cáo ảo thuật"
+            },
+            {
+              "id": "c",
+              "text": "Bạn koala bán hàng"
+            }
           ],
-          "answer": { "choice": "a" },
+          "answer": {
+            "choice": "a"
+          },
           "support": {
             "guide": [
               "Đọc câu và tìm tên con vật đứng ngay đầu câu.",
@@ -406,10 +667,18 @@
               ],
               "hint": "Neither a fox nor a koala can fly; the sentence is about a white bird.",
               "answer": {
-                "text": "The carrier pigeon (Chim bồ câu đưa thư)",
+                "text": "The carrier pigeon",
                 "explanation": "A white bird carrying a letter across the square is the carrier pigeon; foxes and koalas can't fly."
               }
             }
+          },
+          "en": {
+            "prompt": "Read the sentence: «Chú chim trắng ngậm lá thư bay qua quảng trường, đậu xuống mái cửa hàng.» Which animal does this sentence tell about?",
+            "choices": [
+              "The carrier pigeon",
+              "The magician fox",
+              "The shopkeeper koala"
+            ]
           }
         },
         {
@@ -418,11 +687,22 @@
           "move": "fling",
           "prompt": "Cáo có 18 quả bóng bay, tặng các bạn nhỏ 9 quả. Cáo còn lại bao nhiêu quả bóng bay?",
           "choices": [
-            { "id": "a", "text": "8 quả" },
-            { "id": "b", "text": "9 quả" },
-            { "id": "c", "text": "27 quả" }
+            {
+              "id": "a",
+              "text": "8 quả"
+            },
+            {
+              "id": "b",
+              "text": "9 quả"
+            },
+            {
+              "id": "c",
+              "text": "27 quả"
+            }
           ],
-          "answer": { "choice": "b" },
+          "answer": {
+            "choice": "b"
+          },
           "support": {
             "guide": [
               "Tặng bớt bóng đi thì làm phép trừ: 18 − 9.",
@@ -444,9 +724,24 @@
                 "explanation": "18 − 9 = 9 since 18 − 8 = 10 and 10 − 1 = 9 (check: 9 + 9 = 18); 27 is 18 + 9."
               }
             }
+          },
+          "en": {
+            "prompt": "The Fox has 18 balloons and gives 9 to the children. How many balloons does the Fox have left?",
+            "choices": [
+              "8 balloons",
+              "9 balloons",
+              "27 balloons"
+            ]
           }
         }
-      ]
+      ],
+      "en": {
+        "title": "Skill challenge with Magician Fox",
+        "goTo": "Step onto the little stage, where Magician Fox is waiting",
+        "bossName": "Magician Fox",
+        "introDialogue": "Hello, audience! I have seven magic tricks, and each one is a riddle. Guess a trick right and it vanishes!",
+        "winDialogue": "Bravo! {name} undid every trick, and the prop chest goes straight into the champion's hands!"
+      }
     },
     {
       "id": "ruong-dao-cu",
@@ -474,6 +769,15 @@
   "reward": {
     "xp": 100,
     "coin": 25,
-    "skillXp": { "tu-vung": 1, "xem-dong-ho": 1, "logic": 1, "doc-hieu": 1 }
+    "skillXp": {
+      "tu-vung": 1,
+      "xem-dong-ho": 1,
+      "logic": 1,
+      "doc-hieu": 1
+    }
+  },
+  "en": {
+    "title": "Fun Boss: Magician Fox",
+    "summary": "Magician Fox sets up a stage in the middle of the trading area and dares everyone to a battle of wits. {name} finds the props for the Fox, reads the poster, guesses which cup hides the marble, then steps onto the stage to answer seven riddles from every subject."
   }
 }

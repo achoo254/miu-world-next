@@ -100,7 +100,11 @@
         "toan2-cd4-hop-oc-vit",
         "toan2-cd4-banh-xe",
         "toan2-cd4-lo-xo"
-      ]
+      ],
+      "en": {
+        "title": "Pick up parts under the table",
+        "goTo": "Pick up the screws, wheels and springs rolling around the Bike Repair Table"
+      }
     },
     {
       "id": "goi-muoi-oc-vit",
@@ -298,6 +302,17 @@
         "answer": {
           "text": "36 + 5 = 41; 67 + 8 = 75; 48 + 6 = 54; 14 + 6 = 20; 25 + 7 = 32; 59 + 4 = 63; 78 + 5 = 83; 53 + 9 = 62",
           "explanation": "36 + 5 = 41, 67 + 8 = 75, 48 + 6 = 54, 14 + 6 = 20, 25 + 7 = 32, 59 + 4 = 63, 78 + 5 = 83, 53 + 9 = 62."
+        },
+        "en": {
+          "guide": [
+            "Add the ones first; if you reach 10 or more, write the ones digit and carry 1 to the tens.",
+            "Then the tens: keep the tens of the bigger number and add the 1 you carried."
+          ],
+          "hint": "67 + 8: 7 + 8 = 15, write 5 and carry 1; 6 plus 1 is 7, so 75.",
+          "answer": {
+            "text": "36 + 5 = 41; 67 + 8 = 75; 48 + 6 = 54; 14 + 6 = 20; 25 + 7 = 32; 59 + 4 = 63; 78 + 5 = 83; 53 + 9 = 62",
+            "explanation": "36 + 5 = 41, 67 + 8 = 75, 48 + 6 = 54, 14 + 6 = 20, 25 + 7 = 32, 59 + 4 = 63, 78 + 5 = 83, 53 + 9 = 62."
+          }
         }
       },
       "feedback": {
@@ -310,7 +325,19 @@
           "Hàng đơn vị đủ mười rồi thì phải nhớ 1 sang hàng chục nhé.",
           "Có một phép cộng đã bỏ quên số 1 nhớ ở hàng chục.",
           "14 + 6 vừa tròn một chục, hàng đơn vị ra số 0."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eight bags of screws tied up as neatly as bunches of greens. Lem does a clumsy dance to celebrate.",
+            "Not once did the carried 1 get lost on its way to the tens. Lem is impressed.",
+            "Lem whispers: you add even faster than the workshop's bolt tightener."
+          ],
+          "wrong": [
+            "When the ones make ten, remember to carry 1 to the tens.",
+            "One of the additions forgot the 1 carried to the tens.",
+            "14 + 6 makes exactly one ten, so the ones digit is 0."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -334,7 +361,11 @@
         "b7": "78 + 5",
         "b8": "53 + 9"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "The first bags of screws",
+        "prompt": "Lem has written an addition on each bag of screws. Work them out."
+      }
     },
     {
       "id": "chum-son-mau",
@@ -373,6 +404,17 @@
         "answer": {
           "text": "Chum C (44 l + 8 l = 52 l)",
           "explanation": "Chum A: 36 + 9 = 45 l; chum B: 28 + 7 = 35 l; chum C: 44 + 8 = 52 l. Số 52 lớn nhất nên chum C đựng nhiều nước nhất."
+        },
+        "en": {
+          "guide": [
+            "Work out the addition on each jar first.",
+            "Put the three results side by side and pick the biggest."
+          ],
+          "hint": "Jar A gives 45 l, jar B gives 35 l. And jar C?",
+          "answer": {
+            "text": "Jar C (44 l + 8 l = 52 l)",
+            "explanation": "Jar A: 36 + 9 = 45 l; jar B: 28 + 7 = 35 l; jar C: 44 + 8 = 52 l. 52 is the biggest, so jar C holds the most water."
+          }
         }
       },
       "feedback": {
@@ -385,7 +427,19 @@
           "Mới tính xong một chum thì chưa đủ để so, còn hai chum nữa.",
           "Chum nhiều nước nhất là chum có kết quả cộng lớn nhất.",
           "44 + 8: 4 + 8 = 12, đừng quên nhớ 1 sang hàng chục."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Jar C is so heavy that Auntie Thắm the Painter needs both hands to lift it.",
+            "You compared the three results and picked the biggest, just like a master painter.",
+            "Auntie Thắm brushes a test stroke from jar C and the colour comes out deep and even."
+          ],
+          "wrong": [
+            "Working out one jar is not enough to compare. Two more to go.",
+            "The jar with the most water is the one with the biggest sum.",
+            "44 + 8: 4 + 8 = 12, don't forget to carry 1 to the tens."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -393,7 +447,12 @@
         }
       },
       "goTo": "Chạy sang góc pha sơn, Bác thợ sơn Thắm vẫy cọ gọi cậu xem ba chum sơn của Lem",
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Three jars of paint water",
+        "goTo": "Run over to the paint corner, where Auntie Thắm the Painter waves her brush to show you Lem's three jars",
+        "prompt": "Lem mixes paint in three jars, each labelled with an addition for the litres of water poured in: jar A says 36 l + 9 l, jar B says 28 l + 7 l, jar C says 44 l + 8 l."
+      }
     },
     {
       "id": "toa-tau-va-dat-tinh",
@@ -551,6 +610,17 @@
         "answer": {
           "text": "a) 15 + 5 = 20; 24 + 6 = 30; 53 + 7 = 60; 76 + 4 = 80; b) 45 + 8 = 53; 28 + 5 = 33; 67 + 6 = 73; 39 + 7 = 46",
           "explanation": "15 + 5 = 20, 24 + 6 = 30, 53 + 7 = 60, 76 + 4 = 80; 45 + 8 = 53, 28 + 5 = 33, 67 + 6 = 73, 39 + 7 = 46."
+        },
+        "en": {
+          "guide": [
+            "The first four boxes all add up to a round number of tens.",
+            "Write in columns: ones under ones, tens under tens, then add from right to left."
+          ],
+          "hint": "39 + 7: 9 + 7 = 16, write 6 and carry 1; 3 plus 1 is 4.",
+          "answer": {
+            "text": "Answers: a) 15 + 5 = 20; 24 + 6 = 30; 53 + 7 = 60; 76 + 4 = 80; b) 45 + 8 = 53; 28 + 5 = 33; 67 + 6 = 73; 39 + 7 = 46",
+            "explanation": "15 + 5 = 20, 24 + 6 = 30, 53 + 7 = 60, 76 + 4 = 80; 45 + 8 = 53, 28 + 5 = 33, 67 + 6 = 73, 39 + 7 = 46."
+          }
         }
       },
       "feedback": {
@@ -563,7 +633,19 @@
           "Cộng ra số tròn chục thì hàng đơn vị là 0 nhé.",
           "Viết lệch cột là hàng chục và hàng đơn vị cộng nhầm nhau đấy.",
           "Có một phép đủ mười ở hàng đơn vị mà chưa nhớ 1 sang hàng chục."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four wooden boxes in a straight row, and Lem finishes the labels without getting glue on his trotters.",
+            "The column sums are all dead straight, as neat as a corn fence.",
+            "Dream Dairy Cow strolls past, glances at the sums board and nods once."
+          ],
+          "wrong": [
+            "When the sum is a round number of tens, the ones digit is 0.",
+            "Writing in crooked columns mixes up the tens and the ones.",
+            "One sum makes ten in the ones but the 1 was not carried to the tens."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -587,7 +669,11 @@
         "b7": "67 + 6",
         "b8": "39 + 7"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Wooden box for parts",
+        "prompt": "On the shelf, Lem has lined up four wooden boxes, each with a sum stuck on it. Four more sums are written in columns on the floor."
+      }
     },
     {
       "id": "qua-tim-la",
@@ -638,6 +724,17 @@
         "answer": {
           "text": "18 + 6 - lá 24; 79 + 4 - lá 83; 38 + 2 - lá 40",
           "explanation": "18 + 6 = 24, 79 + 4 = 83, 38 + 2 = 40."
+        },
+        "en": {
+          "guide": [
+            "Work out the addition on the fruit first, then look for its leaf.",
+            "Leaf 62 is for the sample fruit on the sign (54 + 8), so none of these fruits uses it."
+          ],
+          "hint": "79 + 4: 9 + 4 = 13, write 3 and carry 1; 7 plus 1 is 8.",
+          "answer": {
+            "text": "18 + 6 - leaf 24; 79 + 4 - leaf 83; 38 + 2 - leaf 40",
+            "explanation": "18 + 6 = 24, 79 + 4 = 83, 38 + 2 = 40."
+          }
         }
       },
       "feedback": {
@@ -650,7 +747,19 @@
           "Có một quả gắn nhầm lá, thử tính lại phép cộng của nó.",
           "Lá 62 chỉ để dành cho quả mẫu thôi, đừng gắn quả nào vào đó.",
           "38 + 2 tròn chục, tìm lá có số tận cùng là 0 xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three fruits hang on the right leaves, and the orchard sign looks wonderfully bright.",
+            "Every fruit on its own leaf. Lem claps so hard he drops the hammer.",
+            "You work it out and fix it on the spot, as quick as a squirrel picking up chestnuts."
+          ],
+          "wrong": [
+            "One fruit is on the wrong leaf. Try its addition again.",
+            "Leaf 62 is only kept for the sample fruit, so don't put any fruit on it.",
+            "38 + 2 makes round tens, so look for a leaf ending in 0."
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -660,7 +769,12 @@
         }
       },
       "goTo": "Về lại bàn sửa xe, Lem đang khắc những quả gỗ để treo biển cho vườn cây ăn quả",
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Each fruit to its leaf",
+        "goTo": "Back at the Bike Repair Table, Lem is carving wooden fruit to hang on the orchard sign",
+        "prompt": "Lem carves wooden fruit to hang on the orchard sign, and every fruit must be fixed to the leaf showing its result. Work it out, then find a leaf for each fruit."
+      }
     },
     {
       "id": "vo-oc-trang-xanh",
@@ -678,6 +792,17 @@
         "answer": {
           "text": "36 chiếc vỏ",
           "explanation": "Cánh Cụt Sò nhặt được tất cả: 29 + 7 = 36 (chiếc vỏ)."
+        },
+        "en": {
+          "guide": [
+            "Altogether means putting the two kinds of shell together.",
+            "The sum 29 + 7 needs carrying."
+          ],
+          "hint": "9 + 7 = 16, write 6 and carry 1.",
+          "answer": {
+            "text": "36 shells",
+            "explanation": "Clam Penguin found altogether: 29 + 7 = 36 (shells)."
+          }
         }
       },
       "feedback": {
@@ -690,14 +815,31 @@
           "Tất cả nghĩa là nhiều hơn mỗi loại, đáp án phải lớn hơn 29.",
           "Cộng hàng đơn vị 9 + 7 xong nhớ ra sao?",
           "Bài này gộp lại bằng phép cộng, đừng lấy vỏ đi bớt."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty-six shiny shells. You can tell the wind chimes will ring out clear.",
+            "You put the two kinds of shell together with an addition. Right operation straight away.",
+            "Clam Penguin flaps and leaps into the pond to celebrate, splashing Lem's shirt."
+          ],
+          "wrong": [
+            "Altogether means more than either kind, so the answer must be bigger than 29.",
+            "Once you have added 9 + 7 in the ones, what do you carry?",
+            "This problem puts things together with addition. Don't take shells away."
+          ]
+        }
       },
       "answer": {
         "value": 36
       },
       "goTo": "Ra bờ ao cá, Cánh Cụt Sò lạch bạch ôm cả rổ vỏ sò vừa nhặt dưới ao tới khoe",
       "expression": "29 + 7",
-      "objective": "cong-tru-co-nho-bai-toan"
+      "objective": "cong-tru-co-nho-bai-toan",
+      "en": {
+        "title": "Seashell wind chimes",
+        "goTo": "Go to the Fish Pond Bank, where Clam Penguin waddles up hugging a basket of shells just picked from the pond",
+        "question": "Lem wants to make wind chimes for the cart, so he asks Clam Penguin to collect shells from the pond. Clam finds 29 white shells and 7 pink shells. How many shells has Clam Penguin found altogether?"
+      }
     },
     {
       "id": "thap-da-hai-dang",
@@ -770,6 +912,17 @@
         "answer": {
           "text": "Hàng giữa: 14, 17, 15; hàng trên: 31, 32",
           "explanation": "Hàng giữa: 9 + 6 = 15. Hàng trên: 14 + 17 = 31 và 17 + 15 = 32."
+        },
+        "en": {
+          "guide": [
+            "Each pebble is the sum of the two pebbles directly beneath it.",
+            "Fill in the middle row first, then the top row."
+          ],
+          "hint": "The missing pebble in the middle row sits on top of 9 and 6.",
+          "answer": {
+            "text": "Middle row: 14, 17, 15; top row: 31, 32",
+            "explanation": "Middle row: 9 + 6 = 15. Top row: 14 + 17 = 31 and 17 + 15 = 32."
+          }
         }
       },
       "feedback": {
@@ -782,7 +935,19 @@
           "Viên bên trên phải bằng tổng hai viên dưới nó, không phải hiệu.",
           "Hàng giữa chưa điền xong thì chưa thể sang hàng trên.",
           "14 + 17: 4 + 7 = 11, nhớ 1 sang hàng chục nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The pebble tower stands straight, and the wind over the pond cannot knock it down.",
+            "Each level adds up with the one below, and Clam Penguin flaps in praise.",
+            "The top row is complete at last, and the tower looks perfectly balanced."
+          ],
+          "wrong": [
+            "The pebble on top is the sum of the two below it, not the difference.",
+            "The middle row is not filled in yet, so you can't move on to the top row.",
+            "14 + 17: 4 + 7 = 11, carry 1 to the tens."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -796,7 +961,11 @@
         "b2": "14 + 17",
         "b3": "17 + 15"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Stone tower by the pond",
+        "prompt": "Clam Penguin stacks pebbles into a little tower by the pond: each pebble on top is the sum of the two pebbles directly under it. Fill in the missing pebbles."
+      }
     },
     {
       "id": "chip-boi-dat",
@@ -931,6 +1100,17 @@
         "answer": {
           "text": "57 + 6 = 63; 76 + 8 = 84; 34 + 6 = 40; 25 + 5 = 30",
           "explanation": "57 + 6 = 63, 76 + 8 = 84, 34 + 6 = 40, 25 + 5 = 30."
+        },
+        "en": {
+          "guide": [
+            "Add the ones first; when they make ten, carry 1 to the tens.",
+            "The last two sums both give round tens."
+          ],
+          "hint": "76 + 8: 6 + 8 = 14, write 4 and carry 1; 7 plus 1 is 8.",
+          "answer": {
+            "text": "57 + 6 = 63; 76 + 8 = 84; 34 + 6 = 40; 25 + 5 = 30",
+            "explanation": "57 + 6 = 63, 76 + 8 = 84, 34 + 6 = 40, 25 + 5 = 30."
+          }
         }
       },
       "feedback": {
@@ -943,7 +1123,19 @@
           "Cộng đơn vị rồi mà quên thêm 1 vào hàng chục à?",
           "Hai phép cuối ra số tròn chục, kiểm tra hàng đơn vị xem.",
           "57 + 6: hàng đơn vị 7 + 6 là 13 chứ không phải 12."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four results are written back. Líu cheeps with joy that he won't be scolded.",
+            "The sums in front of the coop are clean again, as if they were never scratched.",
+            "Líu stands on top of the 84 and shows it off all over the yard, delighted."
+          ],
+          "wrong": [
+            "Did you add the ones and then forget to add the 1 to the tens?",
+            "The last two sums give round tens. Check the ones digit.",
+            "57 + 6: the ones 7 + 6 make 13, not 12."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -959,7 +1151,11 @@
         "b3": "34 + 6",
         "b4": "25 + 5"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Rewrite the scattered results",
+        "prompt": "Chirpy Chick scratched the ground and wiped out the results of the four sums Lem had just written in front of the coop. Help Lem write them again!"
+      }
     },
     {
       "id": "dat-tinh-don-xuong",
@@ -1049,6 +1245,17 @@
         "answer": {
           "text": "74 + 8 = 82; 45 + 9 = 54; 56 + 4 = 60; 88 + 6 = 94",
           "explanation": "74 + 8 = 82, 45 + 9 = 54, 56 + 4 = 60, 88 + 6 = 94."
+        },
+        "en": {
+          "guide": [
+            "Line up the one-digit number under the ones digit of the other number.",
+            "Add from right to left, carrying 1 when you make ten."
+          ],
+          "hint": "88 + 6: 8 + 6 = 14, write 4 and carry 1; 8 plus 1 is 9.",
+          "answer": {
+            "text": "74 + 8 = 82; 45 + 9 = 54; 56 + 4 = 60; 88 + 6 = 94",
+            "explanation": "74 + 8 = 82, 45 + 9 = 54, 56 + 4 = 60, 88 + 6 = 94."
+          }
         }
       },
       "feedback": {
@@ -1061,7 +1268,19 @@
           "Số một chữ số phải nằm dưới cột đơn vị, đừng đặt sang cột chục.",
           "Đủ mười ở hàng đơn vị thì viết đơn vị và nhớ 1 sang hàng chục.",
           "56 + 4 vừa tròn một chục, hàng đơn vị là 0."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The wooden board is spotless. Lem wipes his sweat with his tail and grins.",
+            "The four sums wrap up neatly, and the tool workshop is clean at last.",
+            "Your column adding is spot on, and Lem is completely smitten."
+          ],
+          "wrong": [
+            "A one-digit number goes under the ones column, not the tens column.",
+            "When the ones make ten, write the ones digit and carry 1 to the tens.",
+            "56 + 4 makes exactly one ten, so the ones digit is 0."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1078,7 +1297,12 @@
         "b3": "56 + 4",
         "b4": "88 + 6"
       },
-      "objective": "cong-tru-co-nho-cong"
+      "objective": "cong-tru-co-nho-cong",
+      "en": {
+        "title": "Four calculations to tidy the workshop",
+        "goTo": "Back at the Bike Repair Table, Lem has set up a wooden board with four sums on it",
+        "prompt": "With the coop yard tidied, Lem asks you to work out the last four sums on the wooden board. Write them in columns and solve them."
+      }
     },
     {
       "id": "thoc-bac-manh",
@@ -1096,6 +1320,17 @@
         "answer": {
           "text": "84 bao thóc",
           "explanation": "Buổi chiều bác Mạnh chất: 76 + 8 = 84 (bao thóc)."
+        },
+        "en": {
+          "guide": [
+            "More than means we add.",
+            "Add 8 to the number of sacks from the morning."
+          ],
+          "hint": "76 + 8: 6 + 8 = 14, write 4 and carry 1.",
+          "answer": {
+            "text": "84 sacks of grain",
+            "explanation": "In the afternoon Uncle Mạnh stacked: 76 + 8 = 84 (sacks of grain)."
+          }
         }
       },
       "feedback": {
@@ -1108,14 +1343,31 @@
           "Buổi chiều chất nhiều hơn buổi sáng, đáp án phải lớn hơn 76.",
           "Chữ nhiều hơn báo hiệu phép cộng, không phải phép trừ.",
           "6 + 8 vượt quá 10, nhớ 1 sang hàng chục nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eighty-four sacks fill the store, and counting them makes Straw Calf dizzy.",
+            "More than means add, and you picked the operation without a moment's hesitation.",
+            "Straw Calf nods, craning his neck, and writes 84 on the board in white chalk."
+          ],
+          "wrong": [
+            "The afternoon had more than the morning, so the answer must be bigger than 76.",
+            "The words more than point to addition, not subtraction.",
+            "6 + 8 goes past 10, so carry 1 to the tens."
+          ]
+        }
       },
       "answer": {
         "value": 84
       },
       "goTo": "Sang kho thóc, Bê Rơm đang nghển cổ đọc chữ trên tấm bảng ghi thu hoạch",
       "expression": "76 + 8",
-      "objective": "cong-tru-co-nho-bai-toan"
+      "objective": "cong-tru-co-nho-bai-toan",
+      "en": {
+        "title": "Harvest table at the granary",
+        "goTo": "Head to the Granary, where Straw Calf is craning his neck to read the harvest board",
+        "question": "Straw Calf reads out the problem on the board at the granary: In the morning, Uncle Mạnh stacked 76 sacks of grain in the store. In the afternoon, he stacked 8 more sacks than in the morning. How many sacks of grain did Uncle Mạnh stack in the afternoon?"
+      }
     },
     {
       "id": "chon-ket-qua-ba-so-a",
@@ -1148,6 +1400,17 @@
         "answer": {
           "text": "Đáp án A, kết quả 56",
           "explanation": "46 + 8 = 54, 54 + 2 = 56."
+        },
+        "en": {
+          "guide": [
+            "Add from left to right, one step at a time.",
+            "Add 46 and 8 first, then add 2."
+          ],
+          "hint": "46 + 8 = 54.",
+          "answer": {
+            "text": "Answer A, the result 56",
+            "explanation": "46 + 8 = 54, 54 + 2 = 56."
+          }
         }
       },
       "feedback": {
@@ -1160,13 +1423,35 @@
           "Làm hai bước: 46 + 8 trước rồi mới cộng thêm 2.",
           "Nếu dừng ở 54 thì mới cộng một số, còn thiếu số 2.",
           "Kết quả không thể là 66, hàng chục chỉ tăng thêm 1 chục thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Líu spreads his wings in praise: A, right on the first try.",
+            "You added from left to right in the right order, and the result matches straight away.",
+            "Líu's tiny beak taps along to a cheerful chirp chirp."
+          ],
+          "wrong": [
+            "Do it in two steps: 46 + 8 first, then add 2.",
+            "If you stop at 54, you have only added one number. The 2 is missing.",
+            "The result can't be 66, because the tens only go up by one ten."
+          ]
+        }
       },
       "answer": {
         "choice": "a-56"
       },
       "goTo": "Ra lại chuồng gà, Gà Con Líu chống cánh chờ đố cậu hai câu",
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Add three numbers in a row",
+        "goTo": "Back to the chicken coop, where Chirpy Chick folds his wings, waiting to set you two riddles",
+        "prompt": "Líu sets two riddles in a row. Choose the right result. a) 46 + 8 + 2 = ? A. 56 B. 54 C. 66",
+        "choices": [
+          "A. 56",
+          "B. 54",
+          "C. 66"
+        ]
+      }
     },
     {
       "id": "chon-ket-qua-ba-so-b",
@@ -1199,6 +1484,17 @@
         "answer": {
           "text": "Đáp án B, kết quả 49",
           "explanation": "35 + 5 = 40, 40 + 9 = 49."
+        },
+        "en": {
+          "guide": [
+            "35 + 5 makes a round number of tens.",
+            "Then add 9."
+          ],
+          "hint": "35 + 5 = 40.",
+          "answer": {
+            "text": "Answer B, the result 49",
+            "explanation": "35 + 5 = 40, 40 + 9 = 49."
+          }
         }
       },
       "feedback": {
@@ -1211,12 +1507,33 @@
           "Làm từng bước: 35 + 5 trước, rồi mới thêm 9.",
           "Chỉ có một đáp án đúng, kiểm tra lại 40 + 9.",
           "Đáp án quá lớn: 40 + 9 chưa tới năm chục."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty-five plus five is exactly forty, plus nine is 49. Líu nods at once.",
+            "Make round tens first, then add on. That trick is really good.",
+            "Líu hops a lap round the coop when he hears you pick B."
+          ],
+          "wrong": [
+            "Go step by step: 35 + 5 first, then add 9.",
+            "Only one answer is right. Check 40 + 9 again.",
+            "That answer is too big: 40 + 9 doesn't reach fifty."
+          ]
+        }
       },
       "answer": {
         "choice": "b-49"
       },
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Thirty-five plus five plus nine",
+        "prompt": "Líu's second riddle. Choose the right result. b) 35 + 5 + 9 = ? A. 39 B. 49 C. 59",
+        "choices": [
+          "A. 39",
+          "B. 49",
+          "C. 59"
+        ]
+      }
     },
     {
       "id": "thi-cong-hat-de",
@@ -1256,6 +1573,17 @@
         "answer": {
           "text": "27 + 6 + 8 = 41",
           "explanation": "27 + 6 = 33, 33 + 8 = 41."
+        },
+        "en": {
+          "guide": [
+            "Add 27 and 6 first.",
+            "Then add 8."
+          ],
+          "hint": "27 + 6 = 33.",
+          "answer": {
+            "text": "27 + 6 + 8 = 41",
+            "explanation": "27 + 6 = 33, 33 + 8 = 41."
+          }
         }
       },
       "feedback": {
@@ -1268,7 +1596,19 @@
           "Ba số thì làm từng bước: hai số đầu trước, số cuối sau.",
           "Đã cộng 27 với 6 chưa? Ra 33 rồi mới thêm 8.",
           "3 + 8 = 11, nhớ 1 sang hàng chục khi cộng 33 với 8."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Forty-one! Lem lost, but he jumps up and claps for you anyway.",
+            "All three chestnuts are gathered, and the squirrel carries them happily home to the treehouse.",
+            "You win the chestnut adding contest, and Lem gives you a round of applause with all four hooves."
+          ],
+          "wrong": [
+            "With three numbers, go step by step: the first two, then the last.",
+            "Have you added 27 and 6 yet? It makes 33, and then add 8.",
+            "3 + 8 = 11, carry 1 to the tens when you add 33 and 8."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1278,7 +1618,12 @@
       "expression": {
         "b1": "27 + 6 + 8"
       },
-      "objective": "cong-tru-co-nho-hai-dau"
+      "objective": "cong-tru-co-nho-hai-dau",
+      "en": {
+        "title": "Chestnut adding contest with Lem",
+        "goTo": "Back at the Bike Repair Table, Lem is drawing a squirrel maze on the ground",
+        "prompt": "The last game: Lem draws a maze on the ground. A squirrel goes from the door to its treehouse and picks up three chestnuts marked 27, 6 and 8 along the way. Whoever works out the total of the three chestnuts first wins!"
+      }
     },
     {
       "id": "co-le-tho-lap-rap",
@@ -1310,5 +1655,9 @@
       "phep-cong": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "Lem and the Spilled Box of Screws",
+    "summary": "Muddy Pig's box of screws has spilled all over the repair table. {name} helps Lem sort the parts into bags of ten, then tours the farm adding two-digit and one-digit numbers with carrying: mixing paint with Auntie Thắm the Painter, stacking pebbles by the pond with Clam Penguin, rewriting the results Chirpy Chick scratched away, and racing to add chestnuts so the cart can be finished."
   }
 }

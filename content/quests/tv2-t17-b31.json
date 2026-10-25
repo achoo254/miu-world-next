@@ -92,22 +92,22 @@
         }
       ],
       "en": {
-        "title": "Goby Fish hiccups bubbles",
-        "goTo": "Go to the edge of the lotus lake, Goby Fish is hiccupping bubbles from worry",
+        "title": "Goby Hiccups Bubbles",
+        "goTo": "Go to the edge of the lotus pond, where Goby is hiccupping bubbles with worry",
         "lines": [
-          "{name}… hic! My mum has a terrible tummy ache… hic! Every time I worry, out comes a string of bubbles.",
-          "I've swum over, slow and steady. But Bống's burrow is as dark as the bottom of a pot, I can't even see where her mum's tummy is.",
-          "Let me! I'll puff my tail up brightest on the lotus lake! Hmm… hmm… why can I only flicker this tiny bit?",
-          "How do we light up the burrow? Hic!"
+          "{name}... hic! My mum has such a tummy ache... hic! Every time I worry, I hiccup out a string of bubbles.",
+          "I've swum all the way here, slow but sure. But Goby's cave is as dark as the bottom of a pot, and I can't see where Goby's mum hurts.",
+          "Leave it to me! I'll puff up my tail to shine brightest in the lotus pond! Hmm... hmm... why can I only flicker this little?",
+          "How can we make the cave bright now? Hic!"
         ],
         "choices": [
           {
-            "text": "Don't worry, Bống, we'll think of something together!",
-            "reply": "Goby Fish stops hiccupping for a while: with {name} here, my fins have stopped shaking."
+            "text": "Don't worry, Goby, we'll think of a way together!",
+            "reply": "Goby stops hiccupping for a moment: with {name} here, my fins stop trembling."
           },
           {
-            "text": "Đom Đóm Nhí, call your whole family over!",
-            "reply": "Đom Đóm Nhí zooms off: I'll call all my relatives, from great-grandpa firefly to baby firefly!"
+            "text": "Little Firefly, go and call your whole family!",
+            "reply": "Little Firefly zooms off: I'll call all my relatives, from great-grandfather firefly to baby firefly!"
           }
         ]
       }
@@ -121,7 +121,11 @@
         "tv2-t17-vo-trai-lon",
         "tv2-t17-vo-oc-bong",
         "tv2-t17-manh-guong-cu"
-      ]
+      ],
+      "en": {
+        "title": "Pick up shiny things by the lake",
+        "goTo": "Look for shiny things lying on the pebbly shore of the lotus pond"
+      }
     },
     {
       "id": "giup-nguoi-than-bi-met",
@@ -173,6 +177,17 @@
         "answer": {
           "text": "Na chạy sang nhà thầy thuốc đầu bản để mời thầy tới.",
           "explanation": "Đầu đoạn hai kể: Na chạy sang gọi thầy thuốc ở đầu bản, còn bố mẹ thì chưa về."
+        },
+        "en": {
+          "guide": [
+            "Read paragraph one and the start of paragraph two of the story.",
+            "Her parents are still at the fair, so whom does Na run to call?"
+          ],
+          "hint": "Paragraph two begins with Na running off.",
+          "answer": {
+            "text": "Na ran to the healer's house at the edge of the village to ask him to come.",
+            "explanation": "The start of paragraph two says Na ran to call the healer at the edge of the village, since her parents had not come home."
+          }
         }
       },
       "feedback": {
@@ -185,9 +200,31 @@
           "Bố mẹ Na còn ở chợ phiên cơ mà, đọc lại đoạn một xem.",
           "Na không ngồi khóc đâu, em làm một việc rất nhanh.",
           "Câu đầu đoạn hai cho biết Na chạy đến chỗ ai đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right! Doctor Turtle nods: that girl is much quicker on her feet than I am.",
+            "Spot on, Na ran to call the healer at once.",
+            "Goby flicks his tail: I swam off to invite Doctor Turtle just like that!"
+          ],
+          "wrong": [
+            "Na's parents are still at the fair, so read paragraph one again.",
+            "Na didn't sit crying, she did something very quickly.",
+            "The first sentence of paragraph two tells you whom Na ran to."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-to"
+      "objective": "doc-truyen-doc-to",
+      "en": {
+        "title": "Read the story on the lotus leaf",
+        "goTo": "Hop onto a lotus leaf in the middle of the pond, where Doctor Turtle tells a story",
+        "question": "When she saw her grandmother clutching her tummy and groaning softly, what did Na do?",
+        "choices": [
+          "Na sat crying loudly by the bamboo bed.",
+          "Na ran to call the healer at the edge of the village.",
+          "Na ran to the fair to find her parents."
+        ]
+      }
     },
     {
       "id": "cach-cuu-me",
@@ -223,6 +260,17 @@
         "answer": {
           "text": "Na chà sáng khay đồng và đặt nó phía sau ngọn đèn.",
           "explanation": "Khay đồng sáng bóng hắt ánh đèn ra khắp nhà, nên thầy thuốc nhìn rõ mà chữa cho bà."
+        },
+        "en": {
+          "guide": [
+            "Read paragraph three of the story.",
+            "What does Na see on the kitchen wall, and what does she do with it?"
+          ],
+          "hint": "The girl used something made of copper and rubbed it until it shone golden.",
+          "answer": {
+            "text": "Na polished the copper tray and set it behind the lamp.",
+            "explanation": "The shiny copper tray threw the lamplight all around the house, so the healer could see clearly to treat Grandma."
+          }
         }
       },
       "feedback": {
@@ -235,9 +283,30 @@
           "Đèn dầu trong nhà vẫn le lói lắm, cô bé nghĩ ra cách khác cơ.",
           "Bà đang đau, Na đâu có dìu bà ra sân.",
           "Tìm chữ \"khay đồng\" trong đoạn ba nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly! One tray made a corner of the house blaze with light. Little Firefly gapes: the tray shines even brighter than me!",
+            "Spot on, the tray behind the lamp made the light multiply.",
+            "Goby cheers: then shiny mussel shells can throw light too!"
+          ],
+          "wrong": [
+            "The oil lamp in the house was still very dim, so the girl thought of another way.",
+            "Grandma was in pain, and Na didn't help her out to the yard.",
+            "Look for the words “khay đồng” in paragraph three."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "How the girl saved Grandma",
+        "prompt": "Little Firefly flies round and round the lotus leaf, impatient: \"And then? And then? Did that girl glow like me?\".\nHow did Na make it bright enough for the healer to see and treat Grandma?",
+        "choices": [
+          "Na lit lots and lots of oil lamps around the bamboo bed.",
+          "Na helped Grandma out to the yard to catch the moonlight.",
+          "Na polished the copper tray till it shone and stood it behind the lamp."
+        ]
+      }
     },
     {
       "id": "chi-tiet-lo-cho-me",
@@ -291,6 +360,17 @@
         "answer": {
           "text": "Vội chạy đi mời thầy thuốc; đứng bên cửa bấu chặt vạt áo; lo đến nỗi không nuốt nổi nước bọt; chà khay đồng thật lâu.",
           "explanation": "Bốn chi tiết ấy là việc làm và cảm giác của Na khi bà đau; hai câu còn lại kể về thầy thuốc và bố mẹ."
+        },
+        "en": {
+          "guide": [
+            "Look for sentences that tell what Na did or how she felt.",
+            "Do not choose sentences about the healer or her parents."
+          ],
+          "hint": "Four sentences are right, and each one is about Na.",
+          "answer": {
+            "text": "Hurried off to ask the healer; stood by the door clutching her shirt; so worried she could not swallow; rubbed the copper tray for a long time.",
+            "explanation": "Those four details are what Na did and felt while Grandma was in pain; the other two sentences are about the healer and her parents."
+          }
         }
       },
       "feedback": {
@@ -303,9 +383,34 @@
           "Câu \"bố mẹ còn ở chợ\" kể chuyện của bố mẹ, đâu phải nỗi lo của Na.",
           "Thầy thuốc tới nhà là việc của thầy, bỏ câu đó ra nhé.",
           "Còn sót một chi tiết: Na chà khay thật lâu vì muốn cứu bà đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four details! Goby releases a string of heart-shaped bubbles.",
+            "Well chosen, every sentence is the girl's worry.",
+            "Doctor Turtle praises slowly: reading this carefully is worthy of a doctor."
+          ],
+          "wrong": [
+            "The sentence “her parents were still at the fair” is about her parents, not Na's worry.",
+            "The healer coming to the house is the healer's doing, so leave that one out.",
+            "One detail is still missing: Na rubbed the tray for a long time because she wanted to save Grandma."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "The boy worries about his mother",
+        "goTo": "Swim back to the edge of the lotus pond, where Goby hiccups three bubbles in a row",
+        "prompt": "Goby hiccups three bubbles in a row: \"That girl worried about her grandma just like I worry about my mum!\". Choose all the sentences that show it.\nWhich details show that Na was very worried and gave her all for Grandma?",
+        "choices": [
+          "Na hurried off to ask the healer at the edge of the village.",
+          "The healer came to the house carrying a bag of herbs.",
+          "Na stood by the door, clutching the hem of her shirt.",
+          "Na was so worried she could not even swallow.",
+          "Na's parents were still busy at the fair.",
+          "Na rubbed the copper tray for a long time, until its surface shone golden."
+        ]
+      }
     },
     {
       "id": "cau-van-voi-tranh",
@@ -342,6 +447,17 @@
         "answer": {
           "text": "Câu ở cuối đoạn hai, kể lúc Na đứng bên cửa lo lắng.",
           "explanation": "Tranh vẽ Na đứng bên cửa, tay bấu vạt áo vì lo; câu văn ấy ở cuối đoạn hai."
+        },
+        "en": {
+          "guide": [
+            "In the picture, is Na standing still or running?",
+            "Look for the sentence with the words “bấu chặt vạt áo”."
+          ],
+          "hint": "The sentence you need is at the end of paragraph two.",
+          "answer": {
+            "text": "The sentence at the end of paragraph two, telling how Na stood anxiously by the door.",
+            "explanation": "The picture shows Na by the door, clutching her shirt with worry; that sentence is at the end of paragraph two."
+          }
         }
       },
       "feedback": {
@@ -354,9 +470,31 @@
           "Trong tranh Na đang đứng yên, chưa chạy đi đâu cả.",
           "Lúc ấy nhà còn tối, chưa sáng bừng đâu.",
           "Tìm câu có ba chữ \"bấu chặt vạt áo\" xem nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "It matches the picture! Little Firefly shines his tail lamp on it to see better.",
+            "That's the sentence, Na stood by the door so worried for Grandma that she could not speak.",
+            "Doctor Turtle tucks the picture into his shell: {name} reads pictures so sharply."
+          ],
+          "wrong": [
+            "In the picture Na is standing still, not running anywhere.",
+            "The house was still dark then, not blazing with light.",
+            "Look for the sentence with the three words “bấu chặt vạt áo”."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "The sentence that fits the picture",
+        "goTo": "Back on the lotus leaf in the middle of the pond, Doctor Turtle holds up a picture",
+        "question": "Doctor Turtle holds up a picture: Na stands by the door of the stilt house, clutching the hem of her shirt and gazing at Grandma curled up on the bamboo bed.\nFind the sentence in the story that fits the picture.",
+        "choices": [
+          "Mountain wind slammed against the walls of the stilt house, and the whole village suddenly lost power.",
+          "Na stood by the door, clutching the hem of her shirt, so worried she could not even swallow.",
+          "The lamplight poured onto the tray and spread out, and the corner of the house blazed with light."
+        ]
+      }
     },
     {
       "id": "tu-moi-cua-rua",
@@ -418,6 +556,17 @@
         "answer": {
           "text": "Ngọn đèn dầu chỉ le lói; mặt khay đồng đã xỉn màu.",
           "explanation": "Hai từ này nằm trong mục Từ ngữ dưới truyện và hợp với nghĩa của từng câu."
+        },
+        "en": {
+          "guide": [
+            "Le lói means shining weakly and flickering; xỉn means gone dull and lost its shine.",
+            "How does a lamp about to go out shine? What about a tray covered in smoke?"
+          ],
+          "hint": "A lamp about to go out cannot be dazzling, and a smoky tray cannot be glossy.",
+          "answer": {
+            "text": "The oil lamp only flickered faintly (le lói); the copper tray had grown dull (xỉn màu).",
+            "explanation": "These two words are in the Words section below the story and fit the meaning of each sentence."
+          }
         }
       },
       "feedback": {
@@ -430,9 +579,25 @@
           "Đèn yếu như sắp tắt thì đâu thể chói loá hay rực rỡ.",
           "Khay dính khói thì đâu còn bóng loáng hay mới tinh.",
           "Đọc nghĩa của từ ở mục Từ ngữ dưới truyện rồi điền lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both right! Doctor Turtle taps his shell, tock tock, to praise you.",
+            "Le lói and xỉn are back in the right places.",
+            "{name} learns new words much faster than Doctor Turtle swims."
+          ],
+          "wrong": [
+            "A lamp about to go out can't be dazzling or splendid.",
+            "A smoky tray isn't glossy or brand new any more.",
+            "Read the meanings of the words in the Words section below the story, then fill them in again."
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "Doctor Turtle's two hard words",
+        "prompt": "Doctor Turtle has lived two hundred years, so he knows lots of hard words. He challenges {name} to pick the word with the right meaning for two sentences from the story."
+      }
     },
     {
       "id": "tinh-cam-cua-cau-be",
@@ -469,6 +634,17 @@
         "answer": {
           "text": "Na thương bà nhiều, lo lắng và nghĩ ra cách giúp bà.",
           "explanation": "Mọi việc Na làm đều nhằm giúp bà bớt đau, cho thấy em rất thương bà."
+        },
+        "en": {
+          "guide": [
+            "Remember what she did: called the healer, stood worrying by the door, rubbed the tray, set the tray behind the lamp.",
+            "Who does things like that for someone they love?"
+          ],
+          "hint": "Na did all of it just so Grandma would hurt less.",
+          "answer": {
+            "text": "Na loved her grandma very much, worried about her and thought of a way to help.",
+            "explanation": "Everything Na did was to ease Grandma's pain, which shows how much she loved her."
+          }
         }
       },
       "feedback": {
@@ -481,9 +657,31 @@
           "Na chạy đi gọi thầy thuốc, đâu có sợ thầy.",
           "Na chà khay là để cứu bà chứ đâu phải để ngắm.",
           "Nghĩ xem: ai vừa lo lắng vừa tìm cách giúp người nằm đau?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right, the girl loved her grandma dearly! Goby's mum smiles faintly in the cave.",
+            "Spot on, that is the light of love.",
+            "Goby releases an enormous bubble: I love my mum this much!"
+          ],
+          "wrong": [
+            "Na ran to call the healer, so she wasn't afraid of him.",
+            "Na rubbed the tray to save Grandma, not to admire it.",
+            "Think: who is both worried and finds a way to help someone lying in pain?"
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The girl's feelings",
+        "goTo": "Back at the edge of the lotus pond, where Goby hears his mum's soft groans drifting from the cave",
+        "prompt": "Goby's mum groans softly in the cave. Goby grabs {name}'s fin: \"I love my mum just like that girl did\".\nWhat do the things Na did show about her feelings for her grandma?",
+        "choices": [
+          "Na was afraid of the healer, so she hid by the door.",
+          "Na loved her grandma very much, worried about her and thought of a way to help her.",
+          "Na only liked polishing the copper tray."
+        ]
+      }
     },
     {
       "id": "nhan-vat-em-thich",
@@ -530,24 +728,24 @@
         }
       ],
       "en": {
-        "title": "Lighting up Mother Bống's burrow",
-        "goTo": "Swim to Mother Bống's burrow, the fireflies have reached the entrance",
+        "title": "Lighting Up Goby's Mum's Cave",
+        "goTo": "Swim to Goby's mum's cave, where the swarm of fireflies has reached the cave mouth",
         "lines": [
-          "My whole family's here! Twenty-seven glowing tails, and the burrow is still a bit gloomy.",
-          "{name}, it's just like Na's copper tray. What shall we do with these clam shells?"
+          "My whole family is here! Twenty-seven shining tails, but the cave is still a bit murky.",
+          "{name}, it's just like Na's copper tray! What do we do with these mussel shells?"
         ],
         "choices": [
           {
-            "text": "Stand the shells round the burrow with a firefly right in front of each!",
-            "reply": "Light bounces back and forth between the shells, and the burrow shines bright as a full moon."
+            "text": "Stand the mussel shells around the cave, and the fireflies perch right in front of them!",
+            "reply": "The light bounces back and forth between the shells, and the cave glows as bright as a full moon."
           },
           {
-            "text": "Put an old mirror behind Doctor Turtle so he can see better!",
-            "reply": "Doctor Turtle squints: ah, there it is! Mother Bống just has a full tummy from eating too much pondweed foam."
+            "text": "Put an old mirror behind Doctor Turtle so he can see easily!",
+            "reply": "Doctor Turtle squints: ah, I see it! Goby's mum just has a full tummy from eating too many duckweed bubbles."
           },
           {
-            "text": "The fireflies make a heart shape on the burrow ceiling!",
-            "reply": "Mother Bống opens her eyes, sees the twinkling heart and smiles, forgetting all about the pain."
+            "text": "The fireflies line up in a heart shape on the cave ceiling!",
+            "reply": "Goby's mum opens her eyes, sees the sparkling heart, and smiles, forgetting her pain."
           }
         ]
       }
@@ -628,6 +826,17 @@
         "answer": {
           "text": "Tranh 1, tranh 2, tranh 4, rồi tranh 3.",
           "explanation": "Bà đau, Na chạy đi gọi thầy, Na chà sáng khay đồng, rồi thầy chữa cho bà trong căn nhà sáng."
+        },
+        "en": {
+          "guide": [
+            "The story begins when Grandma is in pain, then Na runs to call the healer.",
+            "The tray has to be polished first so the house is bright enough for the healer."
+          ],
+          "hint": "The picture of the healer sitting by the bed with the tray shining behind the lamp comes last.",
+          "answer": {
+            "text": "Picture 1, picture 2, picture 4, then picture 3.",
+            "explanation": "Grandma is in pain, Na runs to call the healer, Na polishes the copper tray, then the healer treats Grandma in the bright house."
+          }
         }
       },
       "feedback": {
@@ -640,9 +849,32 @@
           "Na phải chà sáng khay trước khi thầy thuốc làm việc chứ.",
           "Truyện mở đầu bằng cảnh bà nằm đau, đặt tranh đó lên đầu nhé.",
           "Tranh có chiếc khay đang đứng sai chỗ, thử đổi lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four pictures in the right order, and Goby's mum claps her fins!",
+            "Spot on: Grandma is ill, run to call the healer, polish the tray, then the healer treats her.",
+            "Little Firefly lights each picture in turn like a film for the whole cave to watch."
+          ],
+          "wrong": [
+            "Na must polish the tray before the healer gets to work.",
+            "The story opens with Grandma lying in pain, so put that picture first.",
+            "The picture with the tray is standing in the wrong place, so try swapping it."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Put the brass tray story pictures in order",
+        "goTo": "The pictures drift to the ferry landing at the far end of the pond, where Uncle Ngọ the Ferryman fishes them out",
+        "prompt": "Goby's mum is better and asks to hear again about the girl with the copper tray. Goby takes out four pictures, but his tail flicks so hard that they get all jumbled up.\nPut the four pictures in the order of the story “Khay đồng của Na”.",
+        "items": [
+          "Picture 3",
+          "Picture 1",
+          "Picture 4",
+          "Picture 2"
+        ]
+      }
     },
     {
       "id": "ke-theo-tranh",
@@ -740,8 +972,8 @@
       "trigger": "auto",
       "text": "Mẹ Bống tặng {name} chiếc vỏ trai sáng nhất, soi vào thấy cả ánh đom đóm lấp lánh bên trong. Cá Bống thì thôi ấc, thay vào đó là một tràng bong bóng cười.",
       "en": {
-        "title": "A gift from Mother Bống",
-        "text": "Mother Bống gives {name} the brightest clam shell; look inside and you can see firefly light twinkling. Goby Fish has stopped hiccupping; instead out comes a stream of giggling bubbles."
+        "title": "Goby's Mum's Gift",
+        "text": "Goby's mum gives {name} the brightest mussel shell, with sparkling firefly light shimmering inside it when you look. Goby stops hiccupping and bursts into a string of laughing bubbles instead."
       }
     },
     {
@@ -751,8 +983,8 @@
       "trigger": "auto",
       "text": "Sáng hôm sau, gió từ cánh đồng sau xóm thổi về mang theo tiếng cãi nhau chí chóe. Thỏ Tí và em trai bé Tẹo đang giành nhau một chiếc chong chóng, chưa ai chịu nhường ai.",
       "en": {
-        "title": "Pinwheels in the windy field",
-        "text": "The next morning, the wind from the field behind the hamlet carries the sound of squabbling. Tí the Bunny and his little brother Tẹo are fighting over a pinwheel, and neither will let go."
+        "title": "The Pinwheel on the Windy Field",
+        "text": "The next morning, the wind from the field behind the village brings the sound of squabbling. Tí the Bunny and his little brother Tiny Bunny are fighting over a pinwheel, and neither will give way."
       }
     }
   ],
@@ -764,5 +996,9 @@
       "ke-chuyen": 2,
       "tu-ngu": 1
     }
+  },
+  "en": {
+    "title": "A Mussel-Shell Lamp for Bống's Mum",
+    "summary": "At dusk over the village lotus pond, Goby's mum has a tummy ache, but the cave is pitch dark and Doctor Turtle cannot see a thing. {name} reads the story of little Na, who used a copper tray to light her stilt house and save her grandmother, then joins the fireflies and the shiny mussel shells to light up the whole cave under the pond."
   }
 }

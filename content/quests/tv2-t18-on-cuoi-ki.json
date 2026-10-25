@@ -112,22 +112,22 @@
         }
       ],
       "en": {
-        "title": "A bridge built plank by plank",
-        "goTo": "Go to the end of the suspension bridge before the castle gate, the whole castle is waiting for the opening",
+        "title": "Building the Suspension Bridge Plank by Plank",
+        "goTo": "Go to the end of the suspension bridge in front of the castle gate, where the whole castle is waiting for the opening",
         "lines": [
-          "{name}'s here! I'm Sprout Beaver. Eighteen planks, and I measured every one three times before nailing it down.",
-          "Ladies and gentlemen of the castle! I'm the tallest, so I'm hosting; even those at the far end of the moat can see me. The bridge opening is about to begin!",
-          "Wait, Giraffe! The last plank isn't on yet. This morning it fell under the bridge, along with the red ribbon and the hammer.",
-          "Then I'll draw a review map: each span of the bridge has a revision riddle, and you only cross if you answer it!"
+          "{name} is here! I'm Sprout Beaver. Eighteen planks, and I measured every one three times before nailing it.",
+          "Ladies and gentlemen of the castle! I'm the tallest, so I'm the host, and anyone standing at the far end of the moat can see me. The opening of the suspension bridge is about to begin!",
+          "Wait, Giraffe! The last plank isn't nailed yet. This morning it fell under the bridge together with the red ribbon and the hammer.",
+          "Then I'll draw a review map right away: one review riddle at each span of the bridge, and you may only step across by answering it!"
         ],
         "choices": [
           {
-            "text": "I'll go under the bridge and get the plank right now!",
-            "reply": "Sprout Beaver slaps her tail with a thwack: carry the plank nice and straight, I just polished it with my tail."
+            "text": "Let's go under the bridge and pick up the plank now!",
+            "reply": "Sprout Beaver slaps his tail, thump: hold the plank straight, I've just polished it with my tail."
           },
           {
             "text": "Giraffe, are the riddles hard?",
-            "reply": "Giraffe tilts his long neck: from up here I can see the whole road behind us, and every question is just right for you!"
+            "reply": "Giraffe tilts his long neck: from up here I can see the whole way you've come, and every riddle is just your size!"
           }
         ]
       }
@@ -141,7 +141,11 @@
         "tv2-t18-tam-van-cuoi",
         "tv2-t18-dai-lua-do",
         "tv2-t18-bua-hai-ly"
-      ]
+      ],
+      "en": {
+        "title": "The last board Under the Bridge",
+        "goTo": "Find the plank, the red ribbon and the hammer that fell under the bridge"
+      }
     },
     {
       "id": "ten-cac-bai-da-hoc",
@@ -312,6 +316,17 @@
         "answer": {
           "text": "Cột nhà có nét than; chữ Đ; cánh diều; nai gọi sóc; bà cháu bên suối; chim én gửi thư; quả khế; rùa và sẻ trú mưa",
           "explanation": "Mỗi tranh vẽ nhân vật hoặc cảnh chính của một bài đã đọc: bà và cột nhà, chữ cái, cánh diều, nai và sóc, hai bà cháu, chim én, quả khế, rùa và sẻ."
+        },
+        "en": {
+          "guide": [
+            "Remember the main character of each lesson.",
+            "Whom does the golden deer running along the stream call? What fruit does the strange bird eat in the garden?"
+          ],
+          "hint": "The picture of a girl standing by the house post with Grandma's charcoal mark is the poem about height.",
+          "answer": {
+            "text": "A charcoal mark on the house post; the letter Đ; a kite; the deer calling the squirrel; grandmother and grandchild by the stream; the swallow sending a letter; the star fruit; the turtle and the sparrow sheltering from the rain",
+            "explanation": "Each picture shows the main character or scene of a lesson you have read: Grandma and the house post, a letter, a kite, the deer and the squirrel, the grandmother and grandchild, the swallow, the star fruit, the turtle and the sparrow."
+          }
         }
       },
       "feedback": {
@@ -324,9 +339,26 @@
           "Quả khế vàng trong vườn gắn với câu chuyện về hai anh em đấy.",
           "Chiếc lá khô viết thư là của bạn nào bay về phương nam nhỉ?",
           "Nét than trên cột nhà nhắc tới ai, một bài thơ ấm áp về bà cháu?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Eight pictures, eight lesson titles, not one mixed up! Sprout Beaver hammers in a celebration nail at once.",
+            "Giraffe stretches his neck and reads all eight titles aloud so anyone at the far side of the moat can hear.",
+            "{name} remembers lessons the way Giraffe remembers every lane on the map!"
+          ],
+          "wrong": [
+            "The golden star fruit in the garden goes with the story about the two brothers.",
+            "Which friend's dry leaf was a letter flying south?",
+            "Whom does the charcoal mark on the house post remind you of, in a warm poem about grandmother and grandchild?"
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Eight pictures on the first span",
+        "goTo": "Climb to the first span, where Sprout Beaver has carved pictures of the lessons you have learnt",
+        "prompt": "On the railing of the first span, Sprout Beaver has carved eight pictures, each recalling a lesson read on the way to the castle. Match the right lesson title to each picture."
+      }
     },
     {
       "id": "tu-chi-nguoi-chi-vat",
@@ -411,6 +443,17 @@
         "answer": {
           "text": "Người: bà, bé Na, cháu, người em, người anh. Vật: nai vàng, chiếc lá khô, cánh diều, cột nhà, cây khế.",
           "explanation": "Những từ gọi tên người vào một giỏ; con vật, cây cối và đồ vật như nai vàng, cây khế, cột nhà vào giỏ còn lại."
+        },
+        "en": {
+          "guide": [
+            "Words for people name people: bà, bé Na... Words for things name animals, plants and objects: nai vàng, cánh diều...",
+            "For each word, ask \"who is this?\" or \"what is this?\""
+          ],
+          "hint": "Animals and plants in the pictures (nai vàng, cây khế) all belong in the things basket.",
+          "answer": {
+            "text": "People: Grandma, little Na, the grandchild, the younger sibling, the older sibling. Things: golden deer, dry leaf, kite, house post, star fruit tree.",
+            "explanation": "Words that name people go into one basket; animals, plants and objects such as nai vàng, cây khế and cột nhà go into the other."
+          }
         }
       },
       "feedback": {
@@ -423,9 +466,25 @@
           "Con vật chạy dọc bờ suối nên nằm ở giỏ nào nhỉ?",
           "Một người trong các bức tranh đang nằm nhầm giỏ vật rồi.",
           "Thử hỏi \"là ai?\" hay \"là cái gì, con gì?\" với từng từ xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both baskets are full without one word mixed up!",
+            "Nai vàng and cây khế are in the right basket, the things basket, next to cánh diều and cột nhà.",
+            "Giraffe lifts the basket high to show the whole bridge: people with people, things with things!"
+          ],
+          "wrong": [
+            "The animal running along the stream bank belongs in which basket?",
+            "A person in the pictures is sitting in the things basket by mistake.",
+            "Try asking \"who is it?\" or \"what is it?\" for each word."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Basket of people, basket of things",
+        "prompt": "Giraffe sets two baskets on the bridge span: \"Look at the eight pictures you just saw and put each word in the right basket! One basket for people, one for things, as tidy as two squares on a map!\""
+      }
     },
     {
       "id": "bai-doc-em-nho-nhat",
@@ -476,6 +535,17 @@
         "answer": {
           "text": "Hải Âu đang nói với những người mới quen, lúc giới thiệu về mình.",
           "explanation": "Lời chào cùng tên, nơi ở và sở thích là cách tự giới thiệu khi làm quen."
+        },
+        "en": {
+          "guide": [
+            "The Seagull begins by greeting the whole castle.",
+            "It tells its name, where it lives and what it likes: when do people do that?"
+          ],
+          "hint": "When we first meet someone, we usually say our name, where our home is and what we like.",
+          "answer": {
+            "text": "The Seagull is talking to people it has just met, introducing itself.",
+            "explanation": "The greeting together with a name, a home and hobbies is how someone introduces themselves when getting to know others."
+          }
         }
       },
       "feedback": {
@@ -488,9 +558,31 @@
           "Hải Âu chào cả lâu đài chứ đâu chỉ chào mẹ.",
           "Trong lời Hải Âu không có chữ xin lỗi nào cả.",
           "Đọc lại lời mở đầu của Hải Âu rồi chọn lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right, the Seagull is making new friends! It spreads its wings to greet {name}.",
+            "Spot on, a self-introduction has a name, a home and hobbies.",
+            "Giraffe hurriedly smooths his mane: a new friend has come to say hello!"
+          ],
+          "wrong": [
+            "The Seagull greets the whole castle, not just its mum.",
+            "There isn't a single word of apology in what the Seagull says.",
+            "Read the Seagull's opening words again and choose again."
+          ]
+        }
       },
-      "objective": "noi-va-nghe-khoi-dong"
+      "objective": "noi-va-nghe-khoi-dong",
+      "en": {
+        "title": "The guest from the sea",
+        "goTo": "Cross to the middle span, where a visitor has just landed",
+        "prompt": "A snow-white bird swoops onto the railing of the middle span, its wings still smelling of sea wind. Giraffe bends his neck to whisper in {name}'s ear: \"I saw this friend flying from far, far away, but I don't know who it is!\".\nRead what the bird says, then answer the question. Hello, whole castle! I'm Lanh the Seagull, and my home is on a rocky ledge by the sea. I like to fly alongside boats, collect shells and race the waves. – Who is the Seagull saying these words to, and in what situation?",
+        "choices": [
+          "The Seagull is talking to friends it has just met, to introduce itself so they can get acquainted.",
+          "The Seagull is talking to its mum, to say goodbye before flying away.",
+          "The Seagull is talking to its teacher, to apologise for arriving late."
+        ]
+      }
     },
     {
       "id": "dap-loi-hai-au",
@@ -603,6 +695,17 @@
         "answer": {
           "text": "Người, vật: rổ cam, cô bán hàng, xe đẩy, cây sáo trúc, chú Lửng. Hoạt động: chọn cam, thổi sáo, ngồi nghe, đẩy xe, cân hàng.",
           "explanation": "Trong hai tranh có người, đồ vật (rổ cam, xe đẩy, cây sáo) và những việc họ đang làm (chọn, thổi, nghe, đẩy, cân)."
+        },
+        "en": {
+          "guide": [
+            "People and things are who and what is in the picture.",
+            "Actions are what everyone is doing."
+          ],
+          "hint": "Try adding \"đang\" in front: \"đang thổi sáo\" names something being done.",
+          "answer": {
+            "text": "People and things: basket of oranges, saleswoman, cart, bamboo flute, Uncle Badger. Actions: choosing oranges, playing the flute, sitting and listening, pushing the cart, weighing goods.",
+            "explanation": "The two pictures hold people, objects (rổ cam, xe đẩy, cây sáo) and what they are doing (choosing, playing, listening, pushing, weighing)."
+          }
         }
       },
       "feedback": {
@@ -615,9 +718,26 @@
           "Có một đồ vật của phiên chợ đang lạc sang giỏ hoạt động.",
           "Cân hàng là việc người ta làm, không phải tên một vật.",
           "Thử nói \"đang…\" trước từ ấy xem có thành việc làm không."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The market is neat now! The Seagull says: even from up in the sky it wasn't this clear.",
+            "Chú Lửng is a person in the picture, and thổi sáo is what he does: spot on!",
+            "Giraffe gives {name} a drawn orange in the corner of the map."
+          ],
+          "wrong": [
+            "One object from the market has wandered into the actions basket.",
+            "Cân hàng is something people do, not the name of a thing.",
+            "Try saying \"đang...\" before the word to see whether it becomes something being done."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "The market at the foot of the bridge",
+        "goTo": "Climb back onto the middle span, where the Seagull tells of its flight over the village",
+        "prompt": "The Seagull tells of two pictures it saw flying over the early market at the foot of the bridge: a seller sitting by a basket of oranges, a worker pushing a cart full of vegetables, a customer choosing oranges; and Badger sitting playing a bamboo flute for a group of little bunnies sitting listening.\nLook at the two pictures and find words for:"
+      }
     },
     {
       "id": "noi-ve-mot-nhan-vat",
@@ -765,6 +885,17 @@
         "answer": {
           "text": "vẽ gì đấy? / của Hải Ly Mầm. / Đẹp quá! / dài thế? / hươu cao cổ.",
           "explanation": "Cáo Linh hỏi hai lần (dấu chấm hỏi) và khen một lần (dấu chấm than); Gấu Than trả lời bằng câu kể (dấu chấm)."
+        },
+        "en": {
+          "guide": [
+            "A question takes a question mark.",
+            "A compliment or a burst of feeling takes an exclamation mark; a statement takes a full stop."
+          ],
+          "hint": "\"Đẹp quá\" is a compliment; \"Sao cầu lại có bốn chân dài thế\" is a question.",
+          "answer": {
+            "text": "what are you drawing? / Hải Ly Mầm's. / How lovely! / so long? / a giraffe.",
+            "explanation": "Linh the Fox asks twice (question marks) and praises once (exclamation mark); Charcoal Bear answers with statements (full stops)."
+          }
         }
       },
       "feedback": {
@@ -777,9 +908,26 @@
           "Cáo Linh đang hỏi Gấu Than, cuối câu hỏi cần dấu gì nhỉ?",
           "\"Đẹp quá\" là lời khen, thử một dấu khác xem.",
           "Lời đáp của Gấu Than là câu kể bình thường thôi."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All five marks in! The chat reads clearly now!",
+            "Giraffe laughs so hard he almost tangles his neck in the bridge chains: questions are questions, praise is praise!",
+            "Spot on! {name} punctuates even more neatly than the artist Charcoal Bear."
+          ],
+          "wrong": [
+            "Linh the Fox is asking Charcoal Bear something, so what mark ends a question?",
+            "\"Đẹp quá\" is a compliment, so try another mark.",
+            "Charcoal Bear's reply is just an ordinary statement."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "The drawing of the deer on the suspension bridge",
+        "goTo": "Go to the moat bank below the middle span, where Linh the Fox and Giraffe are laughing their heads off",
+        "prompt": "Giraffe laughs so hard his long neck shakes when he sees Charcoal Bear's drawing: \"You draw a bridge and it comes out with giraffe legs! Ha ha!\". But this funny chat is missing its punctuation.\nEach box needs the mark that fits its sentence: a full stop, a question mark or an exclamation mark."
+      }
     },
     {
       "id": "niem-vui-cua-ban",
@@ -817,6 +965,17 @@
         "answer": {
           "text": "Với sò, biển êm như giường, có sóng ru ngủ.",
           "explanation": "Cá thấy biển là ngôi nhà không có tường; sò thấy biển là chiếc giường êm; thuyền thấy biển là con đường dài."
+        },
+        "en": {
+          "guide": [
+            "Find the second reply in the lesson, from the clam.",
+            "The fish's, the clam's and the boat's replies are all different."
+          ],
+          "hint": "The clam sleeps on the sandy shore, so it finds the sea as soft as a bed.",
+          "answer": {
+            "text": "To the clam, the sea is soft like a bed, with waves to sing it to sleep.",
+            "explanation": "The fish sees the sea as a house with no walls; the clam sees it as a soft bed; the boat sees it as a long road."
+          }
         }
       },
       "feedback": {
@@ -829,9 +988,31 @@
           "Ngôi nhà không có tường là lời của bạn cá cơ.",
           "Con đường dài là lời đáp của chiếc thuyền, không phải của sò.",
           "Đọc lại lời đáp thứ hai trong bài, ở đó có tiếng của sò."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right! Giraffe nods: the little clam thought of something lovely.",
+            "Spot on, the clam finds the sea lulls it to sleep like a bed.",
+            "Remembering the lesson like this, the dictation will be steady."
+          ],
+          "wrong": [
+            "A house without walls is what the fish said.",
+            "The long road is the boat's reply, not the clam's.",
+            "Read the second reply in the lesson again, where the clam speaks."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The sea of fish and clams",
+        "goTo": "Step onto the last span, where Giraffe is bending his neck to read a story",
+        "question": "When he finishes reading, Giraffe asks {name} to recall the lesson before the dictation: according to the clam, what is the sea?",
+        "choices": [
+          "A house that swims forever without touching a wall.",
+          "A soft bed with waves to sing it a lullaby.",
+          "A long road for boats to travel on forever."
+        ]
+      }
     },
     {
       "id": "tieng-ien-yen",
@@ -899,6 +1080,17 @@
         "answer": {
           "text": "Kiên nhẫn đóng từng tấm ván. / Chú ếch ngồi yên bên bờ hào. / Đường dài dẫn tới miền xa.",
           "explanation": "Sau phụ âm đầu k, m ta viết iên; tiếng không có âm đầu thì viết yên."
+        },
+        "en": {
+          "guide": [
+            "When a starting consonant comes before it, write iên: kiên, miền.",
+            "When it stands alone with no starting consonant, write yên."
+          ],
+          "hint": "Ngồi yên: the sound \"yên\" has no starting consonant.",
+          "answer": {
+            "text": "Patiently nailing plank by plank. / The frog sits still by the moat. / A long road leads to faraway lands.",
+            "explanation": "After the starting consonants k and m we write iên; a syllable with no starting consonant is written yên."
+          }
         }
       },
       "feedback": {
@@ -911,9 +1103,25 @@
           "Có chữ k đứng trước thì vần viết iên đấy.",
           "Ngồi yên: tiếng ấy đứng một mình, không có âm đầu.",
           "Miền xa có chữ m đứng đầu, chọn lại cách viết nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three planks gleaming with letters! Sprout Beaver nails them to the railing at once.",
+            "Kiên, yên, miền: the rule for iên and yên is right.",
+            "Giraffe stretches his neck and reads aloud: Kiên! Yên! Miền! Then draws the three planks on the map."
+          ],
+          "wrong": [
+            "When the letter k comes before it, the rhyme is written iên.",
+            "Ngồi yên: that sound stands alone, with no starting consonant.",
+            "Miền xa begins with the letter m, so choose the spelling again."
+          ]
+        }
       },
-      "objective": "chinh-ta-van"
+      "objective": "chinh-ta-van",
+      "en": {
+        "title": "Words with iên or yên",
+        "prompt": "Three new planks at the end of the bridge have lost some of their letters. Sprout Beaver asks {name} to carve them again.\nChoose the correct spelling, iên or yên, to fill the gaps."
+      }
     },
     {
       "id": "xep-tranh-ga-me",
@@ -991,6 +1199,17 @@
         "answer": {
           "text": "Tranh 1 → tranh 2 → tranh 3 → tranh 4",
           "explanation": "Chiếc bánh được làm theo thứ tự: trộn bột, cho vào lò, lấy bánh chín ra, trang trí rồi bày lên bàn."
+        },
+        "en": {
+          "guide": [
+            "Find the picture with the bowl of batter: that is the first job.",
+            "The picture of the cake being served on the table is the last job."
+          ],
+          "hint": "The batter must be mixed first, then baked, and only once the cake is baked can it be decorated.",
+          "answer": {
+            "text": "Picture 1 → picture 2 → picture 3 → picture 4",
+            "explanation": "The cake is made in this order: mix the batter, put it in the oven, take out the baked cake, decorate it and serve it on the table."
+          }
         }
       },
       "feedback": {
@@ -1003,9 +1222,32 @@
           "Việc đầu tiên phải là trộn bột chứ.",
           "Bày bánh lên bàn là việc cuối cùng của buổi làm bánh.",
           "Bánh phải chín rồi mới lấy ra, sau đó mới trang trí."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four pictures in order from the bowl of batter to the party table, and Cream Cat purrs thank you!",
+            "Right order: mix, bake, take out, decorate.",
+            "Cream Cat licks her lips: {name} sorts even faster than I knead dough."
+          ],
+          "wrong": [
+            "The first job has to be mixing the batter.",
+            "Serving the cake on the table is the last job of the baking session.",
+            "The cake must be baked before it comes out, and only then is it decorated."
+          ]
+        }
       },
-      "objective": "doc-truyen-ke-lai"
+      "objective": "doc-truyen-ke-lai",
+      "en": {
+        "title": "Cream Cat's cake",
+        "goTo": "The pictures blow down onto the grass in front of the castle gate, where Cream Cat is picking up the opening-day cake",
+        "prompt": "Cream Cat has made a huge cake for the opening ceremony, but the wind blows four pictures of the baking steps down onto the grass. Put them back in the right order from mixing the batter to serving the cake.\nContinue each sentence to tell what is happening in each picture.",
+        "items": [
+          "The cake is ready, and Cream Cat (...).",
+          "First, Cream Cat (...).",
+          "Finally, Cream Cat (...).",
+          "Then, Cream Cat (...)."
+        ]
+      }
     },
     {
       "id": "ke-tiep-chuyen-ga",
@@ -1091,25 +1333,25 @@
         }
       ],
       "en": {
-        "title": "Who cuts the ribbon?",
-        "goTo": "Carry the red ribbon to the middle of the bridge, the whole castle has gathered",
+        "title": "Who Cuts the Ribbon?",
+        "goTo": "Carry the red ribbon to the middle of the bridge, where the whole castle has gathered",
         "lines": [
-          "Let me cut the ribbon! I'm the tallest, so even someone way up on the watchtower will see it!",
-          "But my teeth have been gnawing wood for months; I could cut this ribbon in a single snip.",
-          "{name}, you crossed all three spans, you choose!"
+          "Let me cut the ribbon! I'm the tallest, so when I'm done, even someone way up on the watchtower can see!",
+          "But my teeth have been gnawing wood for months, and I can cut this ribbon in one go.",
+          "{name}, you've crossed all three spans, so you choose!"
         ],
         "choices": [
           {
-            "text": "Cut it together, one with scissors, one with teeth!",
-            "reply": "Snip! The ribbon falls in two, the whole castle claps and cheers, and the sound echoes across the moat."
+            "text": "You two cut it together, one with scissors and one with teeth!",
+            "reply": "Snip! The ribbon splits in two, the whole castle applauds, and the sound echoes across the moat."
           },
           {
-            "text": "Let Sprout Beaver cut it, she built the whole bridge!",
-            "reply": "Sprout Beaver blushes as she cuts the ribbon, and Giraffe stretches his neck to shout “It's open!” all the way to the top of the watchtower."
+            "text": "Let Sprout Beaver cut it, because he built the whole bridge!",
+            "reply": "Sprout Beaver blushes and cuts the ribbon, while Giraffe stretches his neck and shouts \"Opened!\" all the way to the top of the watchtower."
           },
           {
-            "text": "The whole castle counts one, two, three, and we all cut it together!",
-            "reply": "One! Two! Three! The whole suspension bridge seems to tremble with the castle's cheering."
+            "text": "Let the whole castle count one, two, three, and we all cut together!",
+            "reply": "One! Two! Three! The whole suspension bridge seems to shake with the cheering of the whole castle."
           }
         ]
       }
@@ -1149,6 +1391,17 @@
         "answer": {
           "text": "Suối nhỏ bắt nguồn ngay nơi khe núi.",
           "explanation": "Khổ đầu kể giọt nước rỉ ra ở khe núi, thành suối nhỏ rồi bước xuống đèo."
+        },
+        "en": {
+          "guide": [
+            "Find the opening verse of the poem.",
+            "The first line mentions where the drop of water seeps out."
+          ],
+          "hint": "The place where the stream begins is still close to the mother forest.",
+          "answer": {
+            "text": "The little stream starts right at a mountain crevice.",
+            "explanation": "The first verse tells how a drop of water seeps out of a mountain crevice, becomes a little stream and steps down the pass."
+          }
         }
       },
       "feedback": {
@@ -1161,9 +1414,30 @@
           "Sông lớn và biển là nơi suối đến sau này đấy.",
           "Ngoài biển khơi là điểm cuối của chuyến đi, chưa phải khởi đầu.",
           "Đọc lại dòng đầu của khổ thơ thứ nhất rồi chọn lại nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right, the stream starts at a mountain crevice! A drop of water splashes onto Sprout Beaver's nose as if to say hello.",
+            "Spot on, the first verse said it already.",
+            "Giraffe lifts his head to listen to the water: hello, little stream!"
+          ],
+          "wrong": [
+            "The big river and the sea are places the stream reaches later.",
+            "Out at sea is the end of the journey, not the beginning.",
+            "Read the first line of the first verse again and choose again."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "The little stream in the Middle of the Bridge",
+        "question": "No sooner is the ribbon cut than there is a babbling of water beneath the bridge, and Giraffe cries: \"Just the time to read the review poem!\".\nRead the poem aloud and tell us: where does the little stream in the poem begin its journey?",
+        "choices": [
+          "From a mountain crevice",
+          "From a big river",
+          "From out at sea"
+        ]
+      }
     },
     {
       "id": "giot-mua-roi-dau",
@@ -1217,6 +1491,17 @@
         "answer": {
           "text": "bản nhỏ; cánh đồng lúa; chân cầu gỗ; dòng sông",
           "explanation": "Suối chảy qua bản nhỏ, len vào cánh đồng lúa, luồn dưới chân cầu gỗ rồi đổ vào dòng sông."
+        },
+        "en": {
+          "guide": [
+            "Check the second and third verses line by line.",
+            "Each place the stream passes is in one line of the poem."
+          ],
+          "hint": "The two middle verses mention four places, one of which people walk across.",
+          "answer": {
+            "text": "a small hamlet; a rice field; the foot of a wooden bridge; a big river",
+            "explanation": "The stream flows through a small hamlet, winds into the rice field, slips under a wooden bridge and then pours into the river."
+          }
         }
       },
       "feedback": {
@@ -1229,9 +1514,34 @@
           "Bài thơ không nhắc hang đá nào cả.",
           "Đỉnh đồi cao không có trong hai khổ thơ giữa đâu.",
           "Còn sót một nơi mà người đi bộ vẫn bước qua, suối luồn dưới đó."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four places! The little stream is probably drifting down to the moat at the foot of the bridge.",
+            "Spot on: the hamlet, the rice field, the wooden bridge and the river.",
+            "Giraffe taps his hoof to the sound of the water: babble! that's right! babble!"
+          ],
+          "wrong": [
+            "The poem mentions no rocky cave at all.",
+            "The top of a high hill isn't in the two middle verses.",
+            "One place is still missing, where people walk across and the stream slips underneath."
+          ]
+        }
       },
-      "objective": "doc-tho-doc-hieu"
+      "objective": "doc-tho-doc-hieu",
+      "en": {
+        "title": "Where does the stream flow?",
+        "goTo": "Run to the willow by the moat, where Charcoal Bear holds out his hand to catch the rain",
+        "prompt": "Charcoal Bear reaches a hand down to the moat and wonders: where has this little stream been?\nRead the poem aloud and choose: on its way to the sea, which places did the little stream flow through?",
+        "choices": [
+          "a small hamlet",
+          "a rocky cave",
+          "a rice field",
+          "the foot of a wooden bridge",
+          "the top of a high hill",
+          "a big river"
+        ]
+      }
     },
     {
       "id": "chuyen-co-va-lua",
@@ -1269,6 +1579,17 @@
         "answer": {
           "text": "Món ăn vừa ngon, vừa mang một ý nghĩa đẹp.",
           "explanation": "Đoạn đầu kể vua Hùng muốn món ăn vừa ngon vừa có ý nghĩa để dâng tổ tiên đầu xuân."
+        },
+        "en": {
+          "guide": [
+            "Read the King's instruction in the opening part.",
+            "For whom did the King tell his sons to find a dish?"
+          ],
+          "hint": "The instruction has two conditions together, beginning with \"vừa... vừa...\".",
+          "answer": {
+            "text": "A dish both delicious and carrying a beautiful meaning.",
+            "explanation": "The opening part says King Hùng wanted a dish both delicious and meaningful to offer his ancestors at the start of spring."
+          }
         }
       },
       "feedback": {
@@ -1281,9 +1602,31 @@
           "Chuyện không nhắc món nào cay hay nóng cả.",
           "Vua không đòi loại thịt quý hiếm nào đâu, đọc lại lời dặn nhé.",
           "Tìm chữ \"vừa ngon vừa\" ở đoạn đầu chuyện."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right, delicious and meaningful! Sprout Beaver nods and his tail goes thump.",
+            "Spot on, the King's instruction is right in the opening part.",
+            "Sprout Beaver nods: listening this carefully, you are ready for the test."
+          ],
+          "wrong": [
+            "The story mentions no spicy or hot dish.",
+            "The King doesn't ask for any rare meat, so read his instruction again.",
+            "Look for the words \"vừa ngon vừa\" in the opening of the story."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Sprout Beaver Tells the Story of Bánh Chưng and Bánh Giầy",
+        "goTo": "Back in the middle of the bridge, where Sprout Beaver tells his favourite story",
+        "question": "Sprout Beaver says this is his favourite story, because he loves foods made from rice too. After listening, Giraffe asks first: what kind of food did King Hùng want to find?",
+        "choices": [
+          "One that was both delicious and meaningful.",
+          "One that was very spicy and very hot.",
+          "One made from rare and precious meats."
+        ]
+      }
     },
     {
       "id": "co-lua-la-gi-cua-nhau",
@@ -1319,6 +1662,17 @@
         "answer": {
           "text": "Chàng đứng gần cuối trong hàng các hoàng tử, thứ mười tám.",
           "explanation": "Đoạn hai kể Lang Liêu là người con thứ mười tám, mẹ mất sớm."
+        },
+        "en": {
+          "guide": [
+            "Find the part about Lang Liêu.",
+            "When it introduces him, the story mentions his number in the family."
+          ],
+          "hint": "It is quite a large number, because the King had very many sons.",
+          "answer": {
+            "text": "He stood near the end of the line of princes, the eighteenth.",
+            "explanation": "Paragraph two says Lang Liêu was the eighteenth son and his mother had died young."
+          }
         }
       },
       "feedback": {
@@ -1331,9 +1685,30 @@
           "Người con cả thì chẳng cần buồn vì thiếu của quý đâu.",
           "Thứ ba nghe còn lớn hơn nhiều so với con số trong truyện.",
           "Lang Liêu mồ côi mẹ sớm, tìm câu giới thiệu chàng ở đoạn hai."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right, the eighteenth son! Giraffe makes a beautiful tick.",
+            "Spot on, paragraph two says it clearly.",
+            "The first question of the review, and {name} answers neatly."
+          ],
+          "wrong": [
+            "The eldest son would not need to be sad about lacking precious things.",
+            "Third sounds much bigger than the number in the story.",
+            "Lang Liêu lost his mother early, so look for the sentence introducing him in paragraph two."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Which son is Lang Liêu?",
+        "prompt": "Giraffe reads out the first sentence on the review sheet.\nIn the story, which son of King Hùng was Lang Liêu?",
+        "choices": [
+          "The eldest son",
+          "The eighteenth son",
+          "The third son"
+        ]
+      }
     },
     {
       "id": "co-khac-lua",
@@ -1388,6 +1763,17 @@
         "answer": {
           "text": "Hoàng tử: sai người đi khắp nơi tìm của lạ. Lang Liêu: làm bánh từ gạo nếp.",
           "explanation": "Các hoàng tử sai người tìm của lạ; Lang Liêu làm bánh từ gạo nếp. Chuyện không nhắc ai nuôi đàn voi trắng."
+        },
+        "en": {
+          "guide": [
+            "Read paragraph two: what did the princes do, and what did Lang Liêu do?",
+            "Paragraph four: which ingredient did Lang Liêu choose to make cakes?"
+          ],
+          "hint": "The ones who tried hard to find rare things were the princes.",
+          "answer": {
+            "text": "Princes: sent people far and wide to find rare things. Lang Liêu: made cakes from sticky rice.",
+            "explanation": "The princes sent people to find rare things; Lang Liêu made cakes from sticky rice. The story never mentions anyone raising white elephants."
+          }
         }
       },
       "feedback": {
@@ -1400,9 +1786,31 @@
           "Gạo nếp là thứ vị thần dặn riêng cho một người thôi.",
           "Chuyện không hề nói ai nuôi voi trắng, thẻ ấy cần giỏ riêng.",
           "Có một thẻ đang ở nhầm bên, đọc lại đoạn hai nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Divided perfectly! One side rare things from everywhere, the other cakes made from fragrant sticky rice.",
+            "The white elephant card is in its own basket, and {name} wasn't fooled!",
+            "Uncle Tám the Farmer scratches a mark on his hoe handle: one tally, very nice."
+          ],
+          "wrong": [
+            "Sticky rice is what the spirit advised for one person only.",
+            "The story never says anyone raised white elephants, so that card needs its own basket.",
+            "One card is on the wrong side, so read paragraph two again."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "How are the other princes different from Lang Liêu?",
+        "goTo": "Go to the rice field at the foot of the hill, where Uncle Tám the Farmer has already divided the two sides of the bank",
+        "prompt": "Uncle Tám the Farmer divides the field bank into two sides, one for the princes and one for Lang Liêu. A card that fits neither goes into a separate basket.\nHow did the princes and Lang Liêu look for a dish to offer the King differently? hoàng tử; Lang Liêu\nsent people far and wide to find rare things; made cakes from sticky rice; raised a herd of white elephants to offer the King",
+        "items": [
+          "sent people far and wide to find rare things",
+          "made cakes from sticky rice",
+          "raised a herd of white elephants to offer the King"
+        ]
+      }
     },
     {
       "id": "lua-co-ich",
@@ -1438,6 +1846,17 @@
         "answer": {
           "text": "Hạt gạo giúp mọi người có cái ăn.",
           "explanation": "Vị thần nói không gì quý bằng hạt gạo, vì gạo nuôi sống muôn người."
+        },
+        "en": {
+          "guide": [
+            "Read the words of the spirit who appears in the dream.",
+            "How does a grain of rice help people every day?"
+          ],
+          "hint": "The spirit says rice is precious because it does something very important for everyone.",
+          "answer": {
+            "text": "A grain of rice gives everyone something to eat.",
+            "explanation": "The spirit said nothing is more precious than a grain of rice, because rice feeds everyone."
+          }
         }
       },
       "feedback": {
@@ -1450,9 +1869,30 @@
           "Truyện không nói gạo chỉ mọc trên núi cao.",
           "Màu trắng đẹp chưa phải điều khiến thần khen gạo.",
           "Đọc lại lời thần, chữ cuối câu là gợi ý đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right, rice feeds everyone! Uncle Tám the Farmer chuckles and points to the golden rice field.",
+            "Spot on, the spirit's words give exactly that reason.",
+            "Giraffe nods: everyone needs rice, just as everyone needs Sprout Beaver's bridge!"
+          ],
+          "wrong": [
+            "The story doesn't say rice grows only on high mountains.",
+            "Being pretty and white isn't what made the spirit praise rice.",
+            "Read the spirit's words again: the last words of the sentence are a clue."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Why rice grains are precious",
+        "prompt": "Uncle Tám the Farmer rests his chin on his hand: \"I know this one! But I'll let {name} answer\".\nAccording to the spirit, why is a grain of rice more precious than anything else in the world?",
+        "choices": [
+          "Because it feeds everyone.",
+          "Because it only grows on high mountains.",
+          "Because it is very light and beautifully white."
+        ]
+      }
     },
     {
       "id": "vi-sao-khong-ai-ua-co",
@@ -1489,6 +1929,17 @@
         "answer": {
           "text": "Hai chiếc bánh ngon và mang ý nghĩa đẹp về trời đất.",
           "explanation": "Đoạn cuối kể bánh tròn tượng trời, bánh vuông tượng đất, làm từ hạt gạo nuôi dân nên vua trao ngôi cho Lang Liêu."
+        },
+        "en": {
+          "guide": [
+            "Go to the closing part of the tale.",
+            "What do the round cake and the square cake stand for?"
+          ],
+          "hint": "What made the King nod lies in the two cakes, not in rare things.",
+          "answer": {
+            "text": "The two cakes were delicious and carried a beautiful meaning about heaven and earth.",
+            "explanation": "The ending tells how the round cake stands for heaven and the square cake for earth, made from rice that feeds the people, so the King passed the throne to Lang Liêu."
+          }
         }
       },
       "feedback": {
@@ -1501,9 +1952,31 @@
           "Lang Liêu là người con thứ mười tám chứ đâu phải con cả.",
           "Món lạ khắp núi rừng là chuyện của các hoàng tử.",
           "Đọc đoạn cuối: bánh tròn và bánh vuông nói lên điều gì?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "That's right, delicious and meaningful! The whole castle looks at each other and rolls up their sleeves to make cakes.",
+            "Spot on, the end of the story says it clearly.",
+            "Sprout Beaver whispers: I want to taste a bánh chưng too."
+          ],
+          "wrong": [
+            "Lang Liêu was the eighteenth son, not the eldest.",
+            "Rare things from all over the mountains were the princes' business.",
+            "Read the end: what do the round cake and the square cake say?"
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "Why the king chose Lang Liêu",
+        "goTo": "Back in the middle of the bridge, where Giraffe reads the next question",
+        "question": "Why did King Hùng finally pass the throne to Lang Liêu?",
+        "choices": [
+          "Because the cakes were delicious and stood for heaven and earth.",
+          "Because he was the oldest son.",
+          "Because he found the strangest dish in all the mountains and forests."
+        ]
+      }
     },
     {
       "id": "dau-cau-co-va-lua",
@@ -1583,6 +2056,17 @@
         "answer": {
           "text": "thế sao? / làm bánh. / nhiều lắm!",
           "explanation": "Lang Liêu thắc mắc dùng dấu chấm hỏi, lời đáp của thần dùng dấu chấm, lời cảm ơn vui mừng dùng dấu chấm than."
+        },
+        "en": {
+          "guide": [
+            "Lang Liêu is puzzled, so he asks: a question.",
+            "The spirit replies and advises: a statement. Lang Liêu thanks him warmly: an expression of feeling."
+          ],
+          "hint": "\"...quý đến thế sao\" is a way of asking.",
+          "answer": {
+            "text": "is that so? / making cakes. / so much!",
+            "explanation": "Lang Liêu's puzzled words take a question mark, the spirit's reply takes a full stop, and the joyful thanks take an exclamation mark."
+          }
         }
       },
       "feedback": {
@@ -1595,9 +2079,25 @@
           "Lang Liêu đang thắc mắc \"sao\", cần dấu chấm hỏi nhé.",
           "Lời thần đáp là câu kể bình thường thôi.",
           "Chàng cảm ơn rất vui, dấu cuối cần mạnh hơn dấu chấm."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All three marks right! Giraffe breathes out and bends his neck right down to congratulate you.",
+            "Ask, tell, thank: three sentences, three marks, just right.",
+            "The review is done, and the bridge seems to breathe out with {name}."
+          ],
+          "wrong": [
+            "Lang Liêu is wondering \"sao\", so he needs a question mark.",
+            "The spirit's reply is just an ordinary statement.",
+            "He thanks the spirit joyfully, so the last mark must be stronger than a full stop."
+          ]
+        }
       },
-      "objective": "dau-cau-cuoi-cau"
+      "objective": "dau-cau-cuoi-cau",
+      "en": {
+        "title": "What Lang Liêu asked the spirit",
+        "prompt": "The very last question of the review! Giraffe holds his breath, his neck stretched high, waiting for {name}'s answer.\nEach box needs the mark that fits its sentence: a full stop, a question mark or an exclamation mark."
+      }
     },
     {
       "id": "phieu-viet-cuoi-ki",
@@ -1641,8 +2141,8 @@
       "trigger": "auto",
       "text": "Hải Ly Mầm khắc tên {name} lên tấm ván cuối cùng của cầu treo, ngay cạnh dấu răng của mình. Hươu Cao tặng thêm tấm bản đồ lâu đài có vẽ chiếc cầu mới, \"để cậu không bao giờ lạc đường trong lâu đài\".",
       "en": {
-        "title": "A plank with your name on it",
-        "text": "Sprout Beaver carves {name}'s name on the last plank of the suspension bridge, right next to her own tooth marks. Giraffe adds a map of the castle with the new bridge drawn on it, “so you never get lost in the castle”."
+        "title": "The Plank with Your Name",
+        "text": "Sprout Beaver carves {name}'s name on the last plank of the suspension bridge, right beside his own tooth marks. Giraffe adds a castle map showing the new bridge, \"so you never get lost in the castle\"."
       }
     },
     {
@@ -1652,8 +2152,8 @@
       "trigger": "auto",
       "text": "Cầu treo hạ xuống, sương sớm tan dần trên hào nước. Hươu Cao vươn cổ nhìn thật xa và thì thầm: chặng đường này khép lại rồi, còn bao trang truyện và bài thơ mới đang chờ mình ở phía bên kia cầu!",
       "en": {
-        "title": "Across the suspension bridge",
-        "text": "The bridge comes down and the morning mist melts off the moat. Giraffe stretches his neck to look far away and whispers: this stretch of the road is finished, and many new stories and poems are waiting on the far side of the bridge!"
+        "title": "Across the Suspension Bridge",
+        "text": "The suspension bridge is lowered, and the morning mist slowly clears from the moat. Giraffe stretches his neck to gaze far away and whispers: this stretch of the road is over, but so many new stories and poems are waiting for us on the other side of the bridge!"
       }
     }
   ],
@@ -1667,5 +2167,9 @@
       "chinh-ta": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "Opening the Suspension Bridge at the Castle Gate",
+    "summary": "For months, Sprout Beaver has been nailing plank after plank for the suspension bridge across the moat in front of the castle gate. Today the bridge is finished, Sprout is busy with the opening ceremony, and Giraffe is the host! To cut the ribbon, {name} must cross the bridge span by span with a review challenge at each one, then take the final review at the very middle of the bridge in front of the whole castle."
   }
 }

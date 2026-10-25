@@ -114,7 +114,11 @@
         "tv2-t02-hu-sanh-rong",
         "tv2-t02-hop-but-mau",
         "tv2-t02-cuon-giay-ve"
-      ]
+      ],
+      "en": {
+        "title": "Pick up things at the rainbow's end",
+        "goTo": "Go to the rainbow's end to pick up what Fluffy Rabbit dropped"
+      }
     },
     {
       "id": "doan-tranh-cau-vong",
@@ -175,6 +179,17 @@
         "answer": {
           "text": "Tí reo \"Ôi, cầu vồng!\" ngay lúc thấy cầu vồng.",
           "explanation": "Mưa vừa tạnh, Tí nhìn thấy cầu vồng và reo lên gọi Tép. Hai câu còn lại là lời bàn chuyện kho báu, nói sau đó."
+        },
+        "en": {
+          "guide": [
+            "Read again what Tí said the moment he saw the rainbow.",
+            "A sentence of surprise usually ends with an exclamation mark."
+          ],
+          "hint": "As soon as Tí saw the rainbow he cried out and called his friend to look too.",
+          "answer": {
+            "text": "Tí cries \"Ôi, cầu vồng!\" the moment he sees the rainbow.",
+            "explanation": "Just after the rain stopped, Tí saw the rainbow and cried out to Tép. The other two sentences are the talk about treasure, which comes later."
+          }
         }
       },
       "feedback": {
@@ -187,9 +202,31 @@
           "Câu này Tí nói khi cầu vồng đã tắt mất rồi cơ, đâu phải lúc mới nhìn thấy.",
           "Chuyện hũ hạt vàng là Tép kể thêm sau đó, đâu phải lúc mới ngạc nhiên.",
           "Tìm câu Tí reo lên ngay khi vừa thấy cầu vồng, có tới hai dấu chấm than đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Tí cries out just like Fluffy Rabbit did a moment ago, except that Tí does not forget what he meant to say.",
+            "Spot on! Rice Pup runs happily around the wooden board, as if he were shouting too: How lovely!",
+            "Fluffy Rabbit claps: {name} found Tí's cry as fast as a rabbit!"
+          ],
+          "wrong": [
+            "Tí says this one after the rainbow has already faded, not when he first sees it.",
+            "The pot of golden seeds is something Tép adds afterwards, it is not the first surprise.",
+            "Find the line Tí cries out the moment he sees the rainbow, it has two exclamation marks."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-to"
+      "objective": "doc-truyen-doc-to",
+      "en": {
+        "title": "Read the story of Tí and Tép",
+        "goTo": "Hop over to the wooden board in the meadow and read the story of the two mice",
+        "question": "Find the sentence in the passage that shows Tí was surprised to see the rainbow.",
+        "choices": [
+          "=",
+          "=",
+          "="
+        ]
+      }
     },
     {
       "id": "neu-co-hu-vang",
@@ -272,6 +309,17 @@
         "answer": {
           "text": "Tí mua diều to và dây dài; Tép mua kèn lá và hộp sơn.",
           "explanation": "Tí mơ về chiếc diều và cuộn dây, còn Tép mơ về cây kèn lá và hộp sơn đủ màu."
+        },
+        "en": {
+          "guide": [
+            "Read what Tí says right after the talk of the pot of golden seeds.",
+            "Then read the answer that begins with «Còn tớ» (As for me)."
+          ],
+          "hint": "Tí speaks first: kite and string. Tép speaks after.",
+          "answer": {
+            "text": "Tí buys the big kite and the long string; Tép buys the leaf trumpet and the paints.",
+            "explanation": "Tí dreams of the kite and the reel of string, while Tép dreams of the leaf trumpet and a box of paints in every colour."
+          }
         }
       },
       "feedback": {
@@ -284,9 +332,31 @@
           "Ai nói \"tớ sẽ mua một chiếc diều thật to\" nhỉ? Người reo lên đào hũ vàng là Tí đấy.",
           "Câu bắt đầu bằng \"Còn tớ\" là lời bạn kia, đọc lại xem bạn ấy muốn mua gì.",
           "Có một món đang nằm nhầm giỏ, giống Thỏ Bồng Bềnh bỏ nhầm cà rốt vào túi bạn ấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Each thing goes to the one who wants to buy it! Fluffy Rabbit wishes he had a kite too.",
+            "Right! Rice Pup counts with his front paw: two things for Tí, two for Tép, no one loses out.",
+            "{name} remembers the two mice's wishes better than Fluffy Rabbit remembers his own."
+          ],
+          "wrong": [
+            "Who says «I will buy a really big kite»? The one who cried out about digging up the gold is Tí.",
+            "The sentence starting with «Còn tớ» is the other friend's, read again what he wants to buy.",
+            "One thing has landed in the wrong basket, like Fluffy Rabbit putting a carrot in his friend's bag."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "If we dug up a pot of gold",
+        "prompt": "At the mention of a pot of golden seeds, Fluffy Rabbit forgets all about his carrot as big as a tree. If they dug up the pot of gold, what would Tí and Tép buy?",
+        "items": [
+          "a really big kite",
+          "a really long reel of string",
+          "a leaf trumpet",
+          "a box of paints in every colour"
+        ]
+      }
     },
     {
       "id": "khong-co-hu-vang",
@@ -323,6 +393,17 @@
         "answer": {
           "text": "Tép vẽ diều và dây tặng Tí; Tí vẽ kèn lá và hộp sơn tặng Tép.",
           "explanation": "Mỗi bạn vẽ tặng bạn kia món mà bạn ấy từng ước, nên món quà bằng tranh vẫn làm cả hai vui."
+        },
+        "en": {
+          "guide": [
+            "Read the part after the sentence «Bỗng cầu vồng nhạt dần rồi tắt hẳn.» (Suddenly the rainbow faded and vanished.)",
+            "What do the two plan to do with chalk and paint?"
+          ],
+          "hint": "With no gold, the two make presents themselves out of drawings.",
+          "answer": {
+            "text": "Tép draws a kite and string for Tí; Tí draws a leaf trumpet and paints for Tép.",
+            "explanation": "Each draws the other the thing he wished for, so the drawn presents still make both of them happy."
+          }
         }
       },
       "feedback": {
@@ -335,9 +416,31 @@
           "Hai bạn có dỗi nhau đâu, cuối bài còn cười giòn tan mà.",
           "Bài không kể chuyện chờ mưa để tìm cầu vồng khác đâu, đọc đoạn cuối nhé.",
           "Tìm chỗ Tép nói \"mình tự làm quà\" rồi chọn lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! With no gold, the two draw presents for each other, and how happy that is.",
+            "Fluffy Rabbit pricks up both ears: I have crayons too!",
+            "Well done, {name} found exactly the part with the chalk."
+          ],
+          "wrong": [
+            "The two are not cross, at the end they laugh out loud.",
+            "The story does not say they wait for rain to find another rainbow, read the last part.",
+            "Find where Tép says «I will make a present myself» and choose again."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The rainbow disappears",
+        "goTo": "Run back to the riverside meadow, where the rainbow over Fluffy Rabbit's head is fading",
+        "prompt": "The rainbow over the meadow is fading too, and Fluffy Rabbit lowers both his ears. The rainbow is gone and there is no pot of gold, so what do the two mice do?",
+        "choices": [
+          "The two fall out and each runs off in a different direction.",
+          "The two wait for another rainy day to look for a different rainbow.",
+          "The two say they will draw each other the very thing the other one dreamed of."
+        ]
+      }
     },
     {
       "id": "cau-noi-yeu-thuong",
@@ -385,6 +488,17 @@
         "answer": {
           "text": "Hai câu nói về việc vẽ tặng cậu diều, dây, kèn lá và hộp sơn.",
           "explanation": "Mỗi bạn vẽ tặng bạn kia món bạn ấy thích, nên hai bạn luôn nghĩ tới nhau."
+        },
+        "en": {
+          "guide": [
+            "Look for sentences where each friend thinks of the other, not only of himself.",
+            "Which sentences have the words «tặng cậu» (give you)?"
+          ],
+          "hint": "Two sentences are right, and both are about drawing a present for a friend.",
+          "answer": {
+            "text": "The two sentences about drawing for you the kite, string, leaf trumpet and paints.",
+            "explanation": "Each draws the other the thing he likes, so the two always think of each other."
+          }
         }
       },
       "feedback": {
@@ -397,9 +511,33 @@
           "Câu mua đồ cho riêng mình chưa cho thấy quan tâm tới bạn đâu.",
           "Còn thiếu một câu có chữ \"tặng\" đấy, tìm thêm nhé.",
           "Chuyện hũ vàng chỉ là lời đồn của bà, chưa phải lời yêu thương. Chọn lại nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both «vẽ tặng cậu» (draw for you) sentences found! Rice Pup happily licks {name}'s cheek.",
+            "Right, each thinks of his friend first, how warm.",
+            "Fluffy Rabbit nearly cries from being so moved... then forgets why he was crying."
+          ],
+          "wrong": [
+            "A sentence about buying things only for yourself does not yet show care for your friend.",
+            "One sentence with the word «tặng» (give) is still missing, find one more.",
+            "The pot of gold is only Grandma's rumour, not loving words yet. Choose again."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "Loving words",
+        "goTo": "Rice Pup is waiting on the riverbank at the head of the meadow, holding five leaves in his mouth with writing on them",
+        "prompt": "Rice Pup is holding five leaves on which he copied the mice's words. He puts them down one at a time and waits: pick the sentences that show the two friends think of and cherish each other.",
+        "choices": [
+          "I will run over and dig it up!",
+          "If there isn't any, I'll make a present myself! I'll draw you a big kite and a long reel of string with chalk.",
+          "If we have the golden seeds, I'll buy a really big kite and a really long reel of string.",
+          "And I'll draw you a leaf trumpet and a box of paints in every colour.",
+          "And I'll buy a leaf trumpet and a box of paints in every colour."
+        ]
+      }
     },
     {
       "id": "may-tu-ngu",
@@ -475,6 +613,17 @@
         "answer": {
           "text": "Chỉ người: Tép, Tí, bà, cậu. Chỉ vật: hũ vàng, chiếc diều, kèn lá, hộp sơn.",
           "explanation": "Tí, Tép là tên hai chú chuột; bà, cậu là tiếng gọi người. Hũ vàng, diều, kèn lá, hộp sơn là đồ vật."
+        },
+        "en": {
+          "guide": [
+            "A word for a person is a person's name or a way to address someone: bà, cậu, Tí…",
+            "A word for a thing names an object or a toy."
+          ],
+          "hint": "The kite looks as if it flies around by itself but it is only a toy.",
+          "answer": {
+            "text": "People: Tép, Tí, bà, cậu. Things: hũ vàng, chiếc diều, kèn lá, hộp sơn.",
+            "explanation": "Tí and Tép are the names of the two mice; bà and cậu are ways of addressing people. The pot of gold, the kite, the leaf trumpet and the paint box are objects."
+          }
         }
       },
       "feedback": {
@@ -487,9 +636,36 @@
           "Chiếc diều biết nói chuyện không nhỉ? Nó là đồ chơi, tức là vật đấy.",
           "\"Bà\" và \"cậu\" là tiếng gọi người, đưa chúng về nhóm chỉ người nhé.",
           "Còn một đám mây đang bay lạc nhóm, đọc lại từng từ thật chậm xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The eight clouds have floated into two tidy skies!",
+            "Fluffy Rabbit counts again for the fifth time and this time remembers: all eight, all eight right!",
+            "Rice Pup runs all over the meadow telling the whole village: {name} sorts words best on the riverbank!"
+          ],
+          "wrong": [
+            "Can a kite talk? It is a toy, which means it is a thing.",
+            "«Bà» and «cậu» are ways of addressing people, put them in the people group.",
+            "One cloud has drifted into the wrong group, read each word again very slowly."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-su-vat"
+      "objective": "tu-chi-su-vat-hoat-dong-su-vat",
+      "en": {
+        "title": "Eight clouds carrying words",
+        "goTo": "Go back to the wooden board in the meadow, where eight little clouds are drifting by",
+        "prompt": "After the rain, eight little clouds drift slowly past the wooden board, each carrying one word. Fluffy Rabbit counts to four and forgets how far he got. Sort each word into the group for people or the group for things.",
+        "items": [
+          "Tép",
+          "chiếc diều",
+          "Tí",
+          "hũ vàng",
+          "bà",
+          "kèn lá",
+          "cậu",
+          "hộp sơn"
+        ]
+      }
     },
     {
       "id": "ve-tang-ai",
@@ -625,6 +801,17 @@
         "answer": {
           "text": "Cầu vồng hiện ra → bàn chuyện mua gì → cầu vồng tắt, vẽ quà tặng nhau → hai bạn cười giòn",
           "explanation": "Bốn bức tranh đi đúng thứ tự các đoạn của chuyện Kho báu dưới chân cầu vồng."
+        },
+        "en": {
+          "guide": [
+            "The story begins when the rainbow appears.",
+            "After that the two talk about the pot of gold, and then the rainbow vanishes."
+          ],
+          "hint": "The picture where the two laugh out loud is the last one.",
+          "answer": {
+            "text": "The rainbow appears → talk about what to buy → the rainbow vanishes, they draw presents for each other → the two laugh out loud",
+            "explanation": "The four pictures follow the parts of the story of the treasure at the rainbow's end in the right order."
+          }
         }
       },
       "feedback": {
@@ -637,9 +824,32 @@
           "Cầu vồng phải hiện ra trước thì Tí mới reo lên được chứ.",
           "Hai bạn cười giòn ở cuối chuyện, treo bức ấy ở cuối dây nhé.",
           "Chuyện bàn mua diều, mua kèn xảy ra trước khi cầu vồng tắt đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four pictures are hanging in the right row, and the wind cannot flip them now!",
+            "Perfectly ordered! Fluffy Rabbit adds four more pegs to be safe.",
+            "The story runs from the rainbow appearing to the laughter, and {name} ordered it beautifully."
+          ],
+          "wrong": [
+            "The rainbow must appear first, or Tí could not cry out.",
+            "The two laugh out loud at the end of the story, hang that picture at the end of the line.",
+            "The talk of buying kites and trumpets happens before the rainbow vanishes."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Four pictures on the clothesline",
+        "goTo": "Go to the picture clothesline, where four wet pictures are flapping",
+        "prompt": "Fluffy Rabbit hung four pictures telling the story of Tí and Tép out to dry, and one gust of wind turned them all topsy-turvy. Put the pictures in the order of the story.",
+        "items": [
+          "The rainbow vanishes, and the two friends promise to draw presents for each other.",
+          "The rainbow appears, and Tí cries out in surprise.",
+          "There is no pot of gold, yet the two friends still laugh out loud.",
+          "The two friends discuss what they would buy if they dug up the pot of gold."
+        ]
+      }
     },
     {
       "id": "chu-nhoe-duoi-tranh",
@@ -737,6 +947,17 @@
         "answer": {
           "text": "Một hũ hạt vàng; diều to và dây dài; kèn lá và hộp sơn; cười giòn tan.",
           "explanation": "Các chỗ trống đều lấy từ bài đọc: lời Tép về hũ vàng, điều ước của từng bạn và tiếng cười ở cuối chuyện."
+        },
+        "en": {
+          "guide": [
+            "Remember what Tép said about the rainbow's end.",
+            "Tí likes the kite and string, Tép likes the leaf trumpet and paints."
+          ],
+          "hint": "The last sentence of the story tells what the two still do when there is no gold.",
+          "answer": {
+            "text": "một hũ hạt vàng; chiếc diều to và cuộn dây dài; cây kèn lá cùng hộp sơn nhiều màu; cười giòn tan.",
+            "explanation": "Every gap comes from the story: Tép's words about the pot of gold, each friend's wish, and the laughter at the end."
+          }
         }
       },
       "feedback": {
@@ -749,9 +970,25 @@
           "Tép nói về hũ hạt vàng chứ đâu phải cà rốt, cà rốt là món Thỏ Bồng Bềnh thích mà!",
           "Diều và dây là của Tí, kèn lá và hộp sơn là của Tép, đổi chỗ lại nhé.",
           "Không có vàng mà hai bạn vẫn vui đấy, chọn lại chữ ở câu cuối xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The words under the picture are clear again, and Fluffy Rabbit reads them out loud without forgetting a single one!",
+            "Every gap right, and Rice Pup nods with both ears pricked up to listen to Fluffy Rabbit read.",
+            "{name} remembers the story so well, unlike forgetful Fluffy Rabbit."
+          ],
+          "wrong": [
+            "Tép talked about the pot of golden seeds, not carrots. Carrots are what Fluffy Rabbit likes!",
+            "The kite and string belong to Tí, the leaf trumpet and paints to Tép, swap them back.",
+            "The two are still happy without gold, choose the words in the last sentence again."
+          ]
+        }
       },
-      "objective": "doc-truyen-ke-lai"
+      "objective": "doc-truyen-ke-lai",
+      "en": {
+        "title": "Smudged letters under the pictures",
+        "prompt": "The rain smudged some of the words under the pictures, and Fluffy Rabbit only remembers half of them. Fill in the missing words so that they match the story you have just read."
+      }
     },
     {
       "id": "ke-chuyen-theo-tranh",
@@ -878,5 +1115,9 @@
       "ke-chuyen": 2,
       "tu-ngu": 1
     }
+  },
+  "en": {
+    "title": "Fluffy Rabbit Wishes Under the Rainbow",
+    "summary": "The rain has just stopped and a rainbow arches over the riverside meadow. Fluffy Rabbit wants to make a dozen wishes at once and then forgets them all. {name} picks up the things Fluffy Rabbit dropped, reads the story of the two mice Tí and Tép, puts the pictures drying on the line back in order and tells a story about joy that needs no pot of gold."
   }
 }

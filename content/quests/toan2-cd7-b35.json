@@ -94,7 +94,11 @@
         "toan2-cd7-qua-can",
         "toan2-cd7-ca-mot-lit",
         "toan2-cd7-can-nuoc"
-      ]
+      ],
+      "en": {
+        "title": "Weights, jug and can",
+        "goTo": "Find the weight, the one-litre cup and the missing can around backstage"
+      }
     },
     {
       "id": "kg-va-lit-la-gi",
@@ -170,6 +174,17 @@
         "answer": {
           "text": "Đúng: b, c; sai: a",
           "explanation": "Câu a sai: heo ở đầu thấp nên heo nặng hơn ếch. Câu b đúng: ếch ở đầu thấp còn vịt ở đầu cao. Câu c đúng: vịt nhẹ hơn ếch, ếch nhẹ hơn heo."
+        },
+        "en": {
+          "guide": [
+            "The end that dips down low is the heavier side.",
+            "The pig is heavier than the frog and the frog is heavier than the duck, so the pig is the heaviest."
+          ],
+          "hint": "On the first seesaw the toy pig is on the low end, so the pig is heavier than the frog.",
+          "answer": {
+            "text": "True: b, c; false: a",
+            "explanation": "Sentence a is false: the pig is on the low end so the pig is heavier than the frog. Sentence b is true: the frog is on the low end and the duck is on the high end. Sentence c is true: the duck is lighter than the frog, and the frog is lighter than the pig."
+          }
         }
       },
       "feedback": {
@@ -182,7 +197,19 @@
           "Bên nào chúi xuống thì bên đó nặng hơn nhé.",
           "Ở bập bênh thứ nhất, ếch bông đang ở đầu cao đấy.",
           "Heo nặng hơn ếch, ếch nặng hơn vịt, vậy vịt so với heo ra sao?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Polka-Dot Fox makes a perfectly round dot: the toy storeroom passes inspection.",
+            "The end that goes down is the heavy one, and you read the seesaws very sharply.",
+            "The toy pig, frog and duck line up and bow to thank {name}."
+          ],
+          "wrong": [
+            "The side that dips down is the heavier one.",
+            "On the first seesaw, the toy frog is on the high end.",
+            "The pig is heavier than the frog, the frog is heavier than the duck, so how does the duck compare with the pig?"
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -190,7 +217,17 @@
           "c-vit-bong-nhe-hon-heo-bong"
         ]
       },
-      "objective": "khoi-luong-dung-tich-nang-nhe"
+      "objective": "khoi-luong-dung-tich-nang-nhe",
+      "en": {
+        "title": "Stuffed-toy seesaw",
+        "goTo": "Go over to the stuffed-toy storeroom, where Cotton Rabbit is hugging a teddy bear and a toy rabbit",
+        "prompt": "In the stuffed-toy storeroom there are two seesaws. On the first seesaw: the toy pig is on the low end and the toy frog is on the high end. On the second seesaw: the toy duck is on the high end and the toy frog is on the low end. Choose the true sentences; any sentence you do not choose is false.",
+        "choices": [
+          "a) The toy frog is heavier than the toy pig.",
+          "b) The toy duck is lighter than the toy frog.",
+          "c) The toy duck is lighter than the toy pig."
+        ]
+      }
     },
     {
       "id": "can-tho-va-tui-gao",
@@ -349,6 +386,17 @@
         "answer": {
           "text": "a) 2 kg + 3 kg = 5 kg; chú heo con nặng 5 kg; b) 9 kg – 2 kg = 7 kg; bao ngô nặng 7 kg",
           "explanation": "a) 2 kg + 3 kg = 5 kg, chú heo con nặng 5 kg. b) 9 kg – 2 kg = 7 kg, bao ngô nặng 7 kg."
+        },
+        "en": {
+          "guide": [
+            "On a balanced pan scale, the piglet weighs the same as the two weights added together (write the smaller weight first).",
+            "The dial scale shows the sack and the weight together, so take away the weight."
+          ],
+          "hint": "The dial scale needle points at 9 kg, and that includes the 2 kg weight.",
+          "answer": {
+            "text": "a) 2 kg + 3 kg = 5 kg; the piglet weighs 5 kg; b) 9 kg – 2 kg = 7 kg; the sack of corn weighs 7 kg",
+            "explanation": "a) 2 kg + 3 kg = 5 kg, so the piglet weighs 5 kg. b) 9 kg – 2 kg = 7 kg, so the sack of corn weighs 7 kg."
+          }
         }
       },
       "feedback": {
@@ -361,7 +409,19 @@
           "Cân đồng hồ đang cân cả quả cân 2 kg nữa, hãy trừ nó ra.",
           "Chú heo con nặng bằng tổng hai quả cân ở đĩa bên kia.",
           "Quả cân nhỏ 2 kg viết trước, quả 3 kg viết sau."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Piglet 5 kg, sack of corn 7 kg, and Polka-Dot Fox writes it in the notebook without a single rub-out.",
+            "You knew to take the weight off the number on the needle, how observant.",
+            "Both scales read correctly, and Polka-Dot Fox nods again and again."
+          ],
+          "wrong": [
+            "The dial scale is also weighing the 2 kg weight, so take that away.",
+            "The piglet weighs the same as the total of the two weights on the other pan.",
+            "The small 2 kg weight is written first and the 3 kg one second."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -381,7 +441,12 @@
         "b7": "9 - 2",
         "b8": "9 - 2"
       },
-      "objective": "khoi-luong-dung-tich-ki-lo-gam"
+      "objective": "khoi-luong-dung-tich-ki-lo-gam",
+      "en": {
+        "title": "Weigh the pig and the corn sack",
+        "goTo": "Back backstage, where Polka-Dot Fox has already set up the pan scale",
+        "prompt": "There are two scales on the platform. The pan scale is balanced: one pan holds a 2 kg weight and a 3 kg weight, and the other pan holds a piglet. The dial scale weighs a sack of corn together with a 2 kg weight, and the needle stops at 9 kg. Fill in the numbers in the gaps: a) _ kg + _ kg = _ kg, so the piglet weighs _ kg. b) _ kg – _ kg = _ kg, so the sack of corn weighs _ kg."
+      }
     },
     {
       "id": "cong-tru-kilogam",
@@ -505,6 +570,17 @@
         "answer": {
           "text": "18 kg + 27 kg = 45 kg; 36 kg + 29 kg = 65 kg; 45 kg – 18 kg = 27 kg; 65 kg – 29 kg = 36 kg; 45 kg – 27 kg = 18 kg; 65 kg – 36 kg = 29 kg",
           "explanation": "18 + 27 = 45; 36 + 29 = 65; 45 – 18 = 27; 65 – 29 = 36; 45 – 27 = 18; 65 – 36 = 29 (đều tính bằng ki-lô-gam)."
+        },
+        "en": {
+          "guide": [
+            "Work them out like ordinary numbers, then write \"kg\" after the answer.",
+            "If you need to carry, set the sum out in columns on scrap paper."
+          ],
+          "hint": "18 + 27 = 45, so 45 – 18 = 27 and 45 – 27 = 18.",
+          "answer": {
+            "text": "Answers: 18 kg + 27 kg = 45 kg; 36 kg + 29 kg = 65 kg; 45 kg – 18 kg = 27 kg; 65 kg – 29 kg = 36 kg; 45 kg – 27 kg = 18 kg; 65 kg – 36 kg = 29 kg",
+            "explanation": "18 + 27 = 45; 36 + 29 = 65; 45 – 18 = 27; 65 – 29 = 36; 45 – 27 = 18; 65 – 36 = 29 (all in kilograms)."
+          }
         }
       },
       "feedback": {
@@ -517,7 +593,19 @@
           "Hàng đơn vị có phải mượn 1 chục không? Kiểm tra lại nhé.",
           "Lấy tổng trừ đi một số hạng thì ra số hạng còn lại.",
           "Có một dòng trong sổ đang lệch vài ki-lô-gam."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The six lines match to the very kilogram, and Polka-Dot Fox jumps for joy and drops his pen.",
+            "Addition and subtraction look at each other in a mirror. Have you spotted the pattern?",
+            "Every cake box weighs the right amount, and Chubby Pig breathes a sigh of relief, hugging his tummy."
+          ],
+          "wrong": [
+            "In the ones place, do you need to borrow 1 ten? Check again.",
+            "Take one number away from the total and the other one is left.",
+            "One line in the notebook is out by a few kilograms."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -537,7 +625,11 @@
         "b5": "45 - 27",
         "b6": "65 - 36"
       },
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "Fox's weighing book",
+        "prompt": "Polka-Dot Fox writes the weights of the cake boxes as six lines in the notebook. Fill in the answer for each line so that they match."
+      }
     },
     {
       "id": "con-lon-tang-can",
@@ -556,6 +648,17 @@
         "answer": {
           "text": "55 kg",
           "explanation": "Lúc này chú bê cân nặng: 36 + 19 = 55 (kg)."
+        },
+        "en": {
+          "guide": [
+            "\"Grows heavier\" means you do an addition.",
+            "Set out 36 + 19 in columns: 6 + 9 = 15, write 5 and carry 1."
+          ],
+          "hint": "The calculation is 36 + 19.",
+          "answer": {
+            "text": "55 kg",
+            "explanation": "The calf weighs now: 36 + 19 = 55 (kg)."
+          }
         }
       },
       "feedback": {
@@ -568,13 +671,30 @@
           "Bê lớn thêm thì nặng hơn 36 kg chứ.",
           "Đừng quên nhớ 1 khi 6 + 9 vượt quá 10 nhé.",
           "Bài này cộng hai số lại, không phải trừ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Chubby Pig holds his tummy laughing: only 55 kg? I'm much heavier than the calf!",
+            "Grew heavier means add, and you solved it as easily as eating cake.",
+            "You carried the 1 to the tens in the right place. Brilliant!"
+          ],
+          "wrong": [
+            "A calf that has grown must weigh more than 36 kg.",
+            "Don't forget to carry 1 when 6 + 9 goes over 10.",
+            "This problem adds the two numbers, it doesn't subtract."
+          ]
+        }
       },
       "answer": {
         "value": 55
       },
       "expression": "36 + 19",
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "The calf grows bigger",
+        "goTo": "Go to the cake corner, where Chubby Pig is reading a comic",
+        "question": "Chubby Pig reads out a problem and jumps in alarm: \"Don't mention me this time!\" The calf that has just been bought weighs 36 kg. After a while, the calf grows 19 kg heavier. How many kilograms does the calf weigh now?"
+      }
     },
     {
       "id": "vo-roi-ba-chu-de",
@@ -680,6 +800,17 @@
         "answer": {
           "text": "Chú cừu 19 kg và chú cừu 21 kg",
           "explanation": "19 kg + 21 kg = 40 kg, không quá 41 kg; hai cặp còn lại đều nặng hơn 41 kg."
+        },
+        "en": {
+          "guide": [
+            "Try adding the weights of each pair of sheep.",
+            "The total must not be more than 41 kg."
+          ],
+          "hint": "23 + 19 = 42 and 23 + 21 = 44 are both more than 41 kg.",
+          "answer": {
+            "text": "The 19 kg sheep and the 21 kg sheep",
+            "explanation": "19 kg + 21 kg = 40 kg, which is not more than 41 kg; the other two pairs both weigh more than 41 kg."
+          }
         }
       },
       "feedback": {
@@ -692,7 +823,19 @@
           "Ối, thuyền chìm rồi! Cặp cừu này đã quá 41 kg.",
           "Cộng thử cân nặng từng cặp rồi so với 41 kg nhé.",
           "Chú cừu 23 kg nặng quá, đi cùng ai cũng vượt 41 kg."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The boat carries two sheep gliding over the stream, and not a single strand of wool gets wet!",
+            "Forty kilograms, with room left over for a bundle of young grass.",
+            "Sister Ngân bows to the audience: thank you, boat engineer {name}!"
+          ],
+          "wrong": [
+            "Oh dear, the boat sank! This pair is already over 41 kg.",
+            "Try adding the weights of each pair and compare with 41 kg.",
+            "The 23 kg sheep is too heavy, and with anyone it goes over 41 kg."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -700,7 +843,11 @@
           "b2": "21-kg"
         }
       },
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "Two sheep on the boat",
+        "prompt": "Three sheep weighing 23 kg, 19 kg and 21 kg want to cross the stream to eat grass. Rô-bốt, who steers the boat, says: \"The boat can only carry 41 kg at most.\" Which two sheep can get into the boat together? The two sheep that can cross together are the one weighing _ and the one weighing _ (write the lighter one first)."
+      }
     },
     {
       "id": "hai-binh-nuoc-cua-mai",
@@ -774,6 +921,17 @@
         "answer": {
           "text": "a) Bình A chứa 9 l; bình B chứa 6 l; b) Cả hai bình chứa 15 l",
           "explanation": "Bình A chứa 9 l, bình B chứa 6 l; cả hai bình chứa 9 l + 6 l = 15 l."
+        },
+        "en": {
+          "guide": [
+            "Each cup holds 1 l, so as many cups as are filled, that many litres.",
+            "For both jugs, add the litres of the two jugs."
+          ],
+          "hint": "Jug A fills 9 cups of 1 l, which is 9 l.",
+          "answer": {
+            "text": "a) Jug A holds 9 l; jug B holds 6 l; b) Both jugs hold 15 l",
+            "explanation": "Jug A holds 9 l, jug B holds 6 l; both jugs hold 9 l + 6 l = 15 l."
+          }
         }
       },
       "feedback": {
@@ -786,7 +944,19 @@
           "Mỗi ca là 1 l, đếm lại số ca của từng bình nhé.",
           "Cả hai bình thì cộng số lít lại với nhau.",
           "Bình B đầy 6 ca, vậy nó chứa mấy lít?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Two jugs of cool water side by side, and the backstage performers run over to drink right away.",
+            "You turned cups into litres so fast that Polka-Dot Fox hasn't had time to write it in the notebook.",
+            "Fifteen litres of water, enough for the whole troupe to drink freely."
+          ],
+          "wrong": [
+            "Each cup is 1 l, so count the number of cups of each jug again.",
+            "For both jugs, add the litres together.",
+            "Jug B fills 6 cups, so how many litres does it hold?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -798,7 +968,12 @@
       "expression": {
         "b3": "9 + 6"
       },
-      "objective": "khoi-luong-dung-tich-lit"
+      "objective": "khoi-luong-dung-tich-lit",
+      "en": {
+        "title": "Two bottles of cool water",
+        "goTo": "Go back backstage, where Polka-Dot Fox is arranging water jugs for the performers",
+        "prompt": "Polka-Dot Fox tells the story of how Chubby Pig poured water yesterday. What numbers go in? There are two full jugs of water. Pig poured all of jug A into 1 l cups and filled 9 cups, and poured all of jug B into 1 l cups and filled 6 cups. a) Jug A holds _ l of water. Jug B holds _ l of water. b) Both jugs together hold _ l of water."
+      }
     },
     {
       "id": "cong-tru-lit",
@@ -957,6 +1132,17 @@
         "answer": {
           "text": "a) 27 l + 9 l = 36 l; 38 l + 26 l = 64 l; 36 l – 9 l = 27 l; 64 l – 38 l = 26 l; 36 l – 27 l = 9 l; 64 l – 26 l = 38 l; b) 16 l + 7 l + 20 l = 43 l; 50 l – 8 l + 15 l = 57 l",
           "explanation": "27 + 9 = 36; 38 + 26 = 64; 36 – 9 = 27; 64 – 38 = 26; 36 – 27 = 9; 64 – 26 = 38; 16 + 7 + 20 = 43; 50 – 8 + 15 = 57 (đều tính bằng lít)."
+        },
+        "en": {
+          "guide": [
+            "Work them out like ordinary numbers, then write \"l\" after the answer.",
+            "With three numbers, work in order from left to right."
+          ],
+          "hint": "50 l – 8 l = 42 l, then 42 l + 15 l.",
+          "answer": {
+            "text": "Answers: a) 27 l + 9 l = 36 l; 38 l + 26 l = 64 l; 36 l – 9 l = 27 l; 64 l – 38 l = 26 l; 36 l – 27 l = 9 l; 64 l – 26 l = 38 l; b) 16 l + 7 l + 20 l = 43 l; 50 l – 8 l + 15 l = 57 l",
+            "explanation": "27 + 9 = 36; 38 + 26 = 64; 36 – 9 = 27; 64 – 38 = 26; 36 – 27 = 9; 64 – 26 = 38; 16 + 7 + 20 = 43; 50 – 8 + 15 = 57 (all in litres)."
+          }
         }
       },
       "feedback": {
@@ -969,7 +1155,19 @@
           "Có ba số thì làm từng bước từ trái sang phải nhé.",
           "Một thùng nước đang ghi lệch vài lít rồi.",
           "Soát lại chỗ nhớ khi cộng 38 l với 26 l."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The apple juice and orange juice all match the notebook, and Polka-Dot Fox sways happily.",
+            "You worked three numbers from left to right, as properly as a master craftsman.",
+            "The water notebook page is spotless, without a single crossing-out."
+          ],
+          "wrong": [
+            "With three numbers, do it step by step from left to right.",
+            "One crate has been written a few litres out.",
+            "Check again the carrying when adding 38 l and 26 l."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -993,7 +1191,12 @@
         "b7": "16 + 7 + 20",
         "b8": "50 - 8 + 15"
       },
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "Polka-Dot Fox's water book",
+        "goTo": "Stop by the stuffed-toy storeroom, where Cotton Rabbit sets out the crates of lemonade and orange juice",
+        "prompt": "Polka-Dot Fox copies the crates of fruit juice onto a new page of the notebook. Fill in the answer for each line. Part a) has six lines of two numbers each, and part b) has two lines of three numbers each."
+      }
     },
     {
       "id": "thung-nuoc-mam-bep",
@@ -1012,6 +1215,17 @@
         "answer": {
           "text": "33 thùng dầu ăn",
           "explanation": "Có tất cả: 27 + 6 = 33 (thùng dầu ăn)."
+        },
+        "en": {
+          "guide": [
+            "\"Delivers more\" and \"in all\" mean you do an addition.",
+            "Add 27 and 6, going past 30."
+          ],
+          "hint": "27 + 3 = 30, then add 3 more.",
+          "answer": {
+            "text": "33 cans of cooking oil",
+            "explanation": "In all there are: 27 + 6 = 33 (cans of cooking oil)."
+          }
         }
       },
       "feedback": {
@@ -1024,13 +1238,30 @@
           "Xe giao thêm thùng thì số thùng nhiều hơn 27 chứ.",
           "Đề có chữ \"thêm\", vậy làm phép cộng nhé.",
           "Cộng 27 với 6 lại xem, qua mốc 30 rồi đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Thirty-three cans of cooking oil are stacked neatly in the storeroom, and Polka-Dot Fox signs for them straight away.",
+            "You know which sum to do just by reading the problem carefully. Great!",
+            "The castle kitchen has enough oil to fry cakes for the whole show!"
+          ],
+          "wrong": [
+            "If the van delivers more cans, there are more than 27 cans.",
+            "The problem says \"more\", so do an addition.",
+            "Add 27 and 6 again: it goes past 30."
+          ]
+        }
       },
       "answer": {
         "value": 33
       },
       "expression": "27 + 6",
-      "objective": "khoi-luong-dung-tich-tinh"
+      "objective": "khoi-luong-dung-tich-tinh",
+      "en": {
+        "title": "Cooking oil drum in the kitchen",
+        "goTo": "Go back backstage, where Polka-Dot Fox is waiting with the delivery note",
+        "question": "The delivery van has just arrived with supplies for the castle kitchen. Polka-Dot Fox checks the storeroom: there were already 27 cans of cooking oil, and the van delivers 6 more cans of cooking oil. How many cans of cooking oil does the storeroom have in all now?"
+      }
     },
     {
       "id": "ba-can-muoi-lam-lit",
@@ -1063,6 +1294,17 @@
         "answer": {
           "text": "Phương án A vừa đúng 18 l",
           "explanation": "A: 6 + 8 + 4 = 18 l, vừa đúng; B: 5 + 9 + 3 = 17 l, còn dư nước; C: 10 + 6 + 4 = 20 l, thiếu nước."
+        },
+        "en": {
+          "guide": [
+            "Add the litres of the three cans in each option.",
+            "The total must be exactly 18 l, so the tank runs out and the three cans are just full."
+          ],
+          "hint": "Option B holds only 17 l.",
+          "answer": {
+            "text": "Option A is exactly 18 l",
+            "explanation": "A: 6 + 8 + 4 = 18 l, exactly right; B: 5 + 9 + 3 = 17 l, with water left over; C: 10 + 6 + 4 = 20 l, not enough water."
+          }
         }
       },
       "feedback": {
@@ -1075,12 +1317,33 @@
           "Cộng số lít ba can xem có đúng 18 l không nhé.",
           "Phương án đó làm dư nước hoặc thiếu nước, chưa khít.",
           "Thùng có 18 l, ba can phải vừa đầy, không thừa không thiếu."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Glug glug... exactly filling three cans, and not a drop spilt! Polka-Dot Fox rubs his nose on {name}'s shoulder.",
+            "Eighteen litres divided exactly into three cans, as exact as Polka-Dot Fox's notebook.",
+            "Option A wins, and the whole troupe cheers, waiting for their cool water."
+          ],
+          "wrong": [
+            "Add the litres of the three cans and see if it is exactly 18 l.",
+            "That option leaves water over or runs short, so it isn't an exact fit.",
+            "The tank has 18 l, so the three cans must be just full, with nothing over and nothing short."
+          ]
+        }
       },
       "answer": {
         "choice": "a"
       },
-      "objective": "khoi-luong-dung-tich-lit"
+      "objective": "khoi-luong-dung-tich-lit",
+      "en": {
+        "title": "Three cans make exactly 18 litres",
+        "prompt": "Polka-Dot Fox's final challenge: pour water for the three performing teams without wasting a drop! There are 18 l of water in the tank, and it must pour exactly into three full cans, with nothing left over and nothing short. Option A: cans of 6 l, 8 l, 4 l. Option B: cans of 5 l, 9 l, 3 l. Option C: cans of 10 l, 6 l, 4 l. Choose the option that pours exactly.",
+        "choices": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
     },
     {
       "id": "huy-hieu-hau-truong",
@@ -1113,5 +1376,9 @@
       "dung-tich": 2,
       "bai-toan-loi-van": 1
     }
+  },
+  "en": {
+    "title": "The Polka-Dot Notebook Backstage",
+    "summary": "Before the show in the great hall, Polka-Dot Fox checks every kilogram of cake and every litre of water backstage, and makes a dot in the notebook for each item done. {name} weighs the stuffed toys, works out weights, takes three sheep across the stream in Sister Ngân's puppet play, and picks the cans that pour exactly 18 l of water."
   }
 }

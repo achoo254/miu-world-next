@@ -124,7 +124,11 @@
       "targets": [
         "tv2-t14-chum-hoa-lon",
         "tv2-t14-nu-hoa-be"
-      ]
+      ],
+      "en": {
+        "title": "Find the flower cluster that caused trouble",
+        "goTo": "Fly all around the flower garden looking for the freshly opened cluster and the tiny bud"
+      }
     },
     {
       "id": "anh-chi-lam-cho-em",
@@ -176,6 +180,17 @@
         "answer": {
           "text": "Vì túi vàng quá nặng nên chim không thể bay tiếp.",
           "explanation": "Người anh nhặt quá nhiều vàng, chim chở nặng đến rã rời, nên anh đành thả hết vàng xuống nước."
+        },
+        "en": {
+          "guide": [
+            "Find the part about the older brother's flight home.",
+            "See what the bird cries out in the middle of the sea."
+          ],
+          "hint": "The bird's trembling words tell why he had to let go of the gold.",
+          "answer": {
+            "text": "Because the bag of gold was so heavy that the bird couldn't fly on.",
+            "explanation": "The older brother gathered far too much gold, the bird was worn out carrying it, so he had to drop all the gold into the water."
+          }
         }
       },
       "feedback": {
@@ -188,9 +203,31 @@
           "Trong truyện đâu có cơn gió nào thổi tung túi vàng. Đọc lại đoạn cuối nhé.",
           "Anh thả vàng vì bị ép chứ có ai tự nguyện tặng biển đâu. Xem chim nói gì.",
           "Gần rồi! Thử nhớ xem chim kêu lên điều gì giữa biển."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Bud Bee shivers: with such a load, whose wings could take it?",
+            "Jar Bear nods: too much greed can't be carried, you have to let the gold go to fly.",
+            "{name} reads so carefully, and found exactly why the bird had to stop over the sea."
+          ],
+          "wrong": [
+            "There's no wind in the story blowing the bag of gold away. Read the ending again.",
+            "He dropped the gold because he had to, not because he chose to give it to the sea. See what the bird says.",
+            "Close! Try to remember what the bird cried out over the sea."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-to"
+      "objective": "doc-truyen-doc-to",
+      "en": {
+        "title": "Read the old tale under the flower bush",
+        "goTo": "Go to the Sisters Flower Bush, where Grandma Brown Bear has left word that she wants to tell an old tale here",
+        "question": "Jar Bear counts exactly one hundred petals and then sits down to hear {name} read. Out over the sea, why did the older brother have to drop all his gold into the water?",
+        "choices": [
+          "The bird was carrying too much, its wings were tired and it couldn't fly any more.",
+          "He wanted to give the gold back to the sea.",
+          "A strong wind blew his bag of gold into the sea."
+        ]
+      }
     },
     {
       "id": "dem-nu-hoa",
@@ -226,6 +263,17 @@
         "answer": {
           "text": "Rã rời là mệt đến mức người như rời ra từng mảnh.",
           "explanation": "Ô Từ ngữ giải nghĩa: rã rời là mệt đến mức người như rời ra từng mảnh, đúng với chú chim chở vàng nặng."
+        },
+        "en": {
+          "guide": [
+            "Look down at the Words box at the end of the reading.",
+            "Find the line that explains «Rã rời»."
+          ],
+          "hint": "The bird carried a great deal of gold and flew on and on, so it was very tired.",
+          "answer": {
+            "text": "«Rã rời» means so tired that your body feels like it's falling apart.",
+            "explanation": "The Words box explains: «rã rời» is being so tired that your body feels like it's coming apart, which fits the bird carrying heavy gold."
+          }
         }
       },
       "feedback": {
@@ -238,9 +286,30 @@
           "Khỏe khoắn thì đâu còn rã rời nữa. Xem lại ô Từ ngữ nhé.",
           "Buồn ngủ là díp mắt, còn rã rời nói về sức lực. Tìm dòng giải nghĩa đi.",
           "Chưa trúng rồi. Gợi ý: chim chở thật nhiều vàng bay giữa biển thì thế nào?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Exactly! Jar Bear sighs: after all that counting, I'm «rã rời» like the bird too.",
+            "Yes, «rã rời» is being worn out. Jar Bear asks for a little rest.",
+            "{name} looks up words faster than Jar Bear counts buds!"
+          ],
+          "wrong": [
+            "If you were full of energy you wouldn't be «rã rời». Look at the Words box again.",
+            "Sleepy means drooping eyes, but «rã rời» is about strength. Find the line explaining it.",
+            "Not quite. Hint: what happens to a bird carrying a lot of gold across the sea?"
+          ]
+        }
       },
-      "objective": "doc-truyen-tu-ngu"
+      "objective": "doc-truyen-tu-ngu",
+      "en": {
+        "title": "Jar Bear is worn out",
+        "prompt": "After counting buds all morning, Jar Bear is worn out and flops down on the grass. He asks {name}: according to the Words box under the reading, what does «rã rời» mean?",
+        "choices": [
+          "exhausted, with no strength left at all.",
+          "full of energy, flying very fast.",
+          "sleepy, with eyes drooping shut."
+        ]
+      }
     },
     {
       "id": "chi-tiet-dam-am",
@@ -294,6 +363,17 @@
         "answer": {
           "text": "Em không giận khi bị chia ít. Em không nỡ đuổi chim. Em chỉ nhặt vừa đầy túi nhỏ. Em chia vàng cho anh và đón anh về ở cùng.",
           "explanation": "Người em hiền lành, biết đủ và biết thương anh. Việc người anh giữ hết ruộng vườn và lời chim nói chỉ là diễn biến của truyện."
+        },
+        "en": {
+          "guide": [
+            "Reread the part about the younger brother: when the house was divided, when the bird came, on the island and at the end of the story.",
+            "Which detail shows the younger brother stays good even though he lost out?"
+          ],
+          "hint": "Four details are right; the other two don't show the younger brother's kindness.",
+          "answer": {
+            "text": "He wasn't angry at getting little. He couldn't bring himself to chase the bird away. He picked only enough to fill a small bag. He shared the gold with his brother and welcomed him home to live together.",
+            "explanation": "The younger brother is gentle, content with enough, and loving to his brother. The older brother keeping all the fields and the bird's words are just events in the story."
+          }
         }
       },
       "feedback": {
@@ -306,9 +386,34 @@
           "Còn thiếu hoặc thừa một chi tiết đấy. Tìm xem người em đã đối xử thế nào với mọi người.",
           "Việc người anh giữ hết ruộng vườn không nói lên lòng tốt của em, bỏ nó ra nhé.",
           "Gấu Hũ đếm giúp rồi: chi tiết đúng có bốn, {name} kiểm lại số lần mình chọn nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "All four details! Hồng whispers: I want to learn to be content like the younger brother.",
+            "Every kind detail chosen, nothing extra and nothing missing.",
+            "Jar Bear counts on his fingers: one, two, three, four, all four match! Oho!"
+          ],
+          "wrong": [
+            "One detail is missing or extra. See how the younger brother treated everyone.",
+            "The older brother keeping all the fields doesn't show the younger brother's kindness, so leave it out.",
+            "Jar Bear counted for you: there are four right details. {name}, check how many you picked."
+          ]
+        }
       },
-      "objective": "doc-truyen-nhan-vat"
+      "objective": "doc-truyen-nhan-vat",
+      "en": {
+        "title": "What the younger brother did",
+        "goTo": "Back to the luffa trellis at the end of the garden, where Pink Bee asks to read again the part about the younger brother",
+        "prompt": "Pink Bee reads again what the younger brother did, her face slowly turning red like a petal. Find the details that show the younger brother has a kind heart.",
+        "choices": [
+          "The younger brother wasn't angry to get only a hut and a star fruit tree.",
+          "The younger brother couldn't bring himself to chase away the bird that came to eat the star fruit.",
+          "On the island, the younger brother picked only enough to fill his small bag.",
+          "The younger brother shared the gold with his brother and welcomed him home to live together.",
+          "The older brother kept all the fields and garden when the house was divided.",
+          "The bird spoke in a human voice and promised to repay him with gold."
+        ]
+      }
     },
     {
       "id": "dieu-ki-la",
@@ -345,6 +450,17 @@
         "answer": {
           "text": "Chim cất tiếng người, nói sẽ trả khế bằng vàng.",
           "explanation": "Ăn khế xong, chim nói chuyện như người và hẹn trả ơn bằng vàng, đó là điều kì lạ nhất trong đoạn này."
+        },
+        "en": {
+          "guide": [
+            "Find the part about when the bird finished eating the fruit.",
+            "The bird did something that birds can't usually do."
+          ],
+          "hint": "Remember what the bird said to the younger brother.",
+          "answer": {
+            "text": "The bird spoke in a human voice and said it would repay the star fruit with gold.",
+            "explanation": "After eating the star fruit, the bird talked like a person and promised to repay him with gold, which is the strangest thing in this part."
+          }
         }
       },
       "feedback": {
@@ -357,9 +473,31 @@
           "Cây khế vẫn đứng yên trước sân, chẳng nhổ rễ đi đâu cả. Đọc lại đoạn chim ăn khế nhé.",
           "Khế chỉ là khế thôi, vàng nằm ở ngoài đảo cơ. Xem chim nói gì sau khi ăn.",
           "Thử nhớ xem chim cất tiếng bằng thứ tiếng nào."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Right! Bud Bee wiggles her feelers: a talking bird is strange indeed.",
+            "Jar Bear nods: a bird eats star fruit and repays in gold, oho!",
+            "Brilliant! {name} remembered the strange thing right after the star fruit meal."
+          ],
+          "wrong": [
+            "The star fruit tree stayed standing in the yard and didn't uproot itself. Read the part where the bird eats again.",
+            "Star fruit was just star fruit, the gold was out on the island. See what the bird says after eating.",
+            "Try to remember what language the bird spoke."
+          ]
+        }
       },
-      "objective": "doc-truyen-doc-hieu"
+      "objective": "doc-truyen-doc-hieu",
+      "en": {
+        "title": "The strange thing by the star fruit tree",
+        "goTo": "Over to the daisy clump by the fence, where Bud Bee is hiding behind a petal",
+        "prompt": "Bud Bee holds her breath, her two feelers sticking straight up like antennae. She asks {name}: after the strange bird ate the star fruit, what strange thing happened?",
+        "choices": [
+          "The bird spoke like a person and promised to pay him back in gold.",
+          "The star fruit tree pulled up its roots and flew off after the bird.",
+          "The star fruits suddenly turned into pure gold."
+        ]
+      }
     },
     {
       "id": "ten-hoa-ti-muoi",
@@ -449,6 +587,17 @@
         "answer": {
           "text": "a. Từ ngữ chỉ hoạt động: sà, nhặt, may, thả. b. Từ ngữ chỉ đặc điểm: to, nhỏ, nặng, sáng.",
           "explanation": "Sà, nhặt, may, thả là việc người ta hay chim làm; to, nhỏ, nặng, sáng cho biết con chim, chiếc túi và vàng trông ra sao."
+        },
+        "en": {
+          "guide": [
+            "Action words are about doing and moving: «sà», «nhặt», «may»...",
+            "Describing words tell what something is like: big or small, heavy or light, bright or dark."
+          ],
+          "hint": "Each basket gets four words. Try acting out each word: if you can do it, it's an action.",
+          "answer": {
+            "text": "a. Action words: sà, nhặt, may, thả. b. Describing words: to, nhỏ, nặng, sáng.",
+            "explanation": "«Sà», «nhặt», «may» and «thả» are things a person or bird does; «to», «nhỏ», «nặng» and «sáng» tell what the bird, the bag and the gold look like."
+          }
         }
       },
       "feedback": {
@@ -461,9 +610,26 @@
           "\"Nặng\" là tả sức nặng của chiếc túi, đâu phải việc làm. Thử nặng một cái xem, khó lắm!",
           "\"Thả\" thì ai cũng làm được ngay, vậy nó vào giỏ hoạt động nhé.",
           "Còn một từ tả ánh vàng đang nằm nhầm giỏ đấy."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both baskets full, four words each, and Jar Bear recounts every word!",
+            "Hồng and Nụ touch wings: working together is so much fun!",
+            "{name} acts out picking up gold so nimbly, no help needed."
+          ],
+          "wrong": [
+            "«Nặng» describes how heavy the bag is, it's not something you do.",
+            "Anybody can «thả» right away, so it goes in the action basket.",
+            "A word describing the glow of gold is sitting in the wrong basket."
+          ]
+        }
       },
-      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong"
+      "objective": "tu-chi-su-vat-hoat-dong-hoat-dong",
+      "en": {
+        "title": "The bee sisters' two word baskets",
+        "goTo": "Go to the mustard bed in the garden corner, where Cabbage Bunny lends the sisters two baskets",
+        "prompt": "Hồng takes basket a and Nụ takes basket b. For the first time today, the two sisters work together without a single quarrel! Put these words into the right basket: sà, to, nhặt, nhỏ, may, nặng, thả, sáng"
+      }
     },
     {
       "id": "cau-ve-chi-net",
@@ -656,6 +822,17 @@
         "answer": {
           "text": "Mưa rào ập xuống – ong chị che lá cho em – mưa tạnh, ong em lau cánh cho chị – hai chị em ngồi bên nhau.",
           "explanation": "Chị che mưa cho em trước, rồi em lau cánh đáp lại, cuối cùng hai chị em ngồi bên nhau trong nắng."
+        },
+        "en": {
+          "guide": [
+            "The story begins when a shower pours down on the garden.",
+            "The big sister bee shades her sister with a leaf first, and only after the rain stops does the little sister answer her."
+          ],
+          "hint": "The picture of the two sisters sitting together in the sun is the end of the story.",
+          "answer": {
+            "text": "A shower pours down, the big sister bee holds a leaf over her sister, the rain stops and the little sister wipes her sister's wings, and the two sisters sit together.",
+            "explanation": "The big sister shelters the little one first, then the little one wipes her wings in return, and finally the two sit together in the sun."
+          }
         }
       },
       "feedback": {
@@ -668,9 +845,31 @@
           "Hai chị em ngồi bên nhau là lúc cuối truyện cơ, treo tấm ấy xuống cuối nhé.",
           "Phải có cơn mưa thì ong chị mới che lá được, thử xem tấm nào mở đầu.",
           "Ong em chỉ lau cánh cho chị sau khi mưa tạnh, đổi chỗ hai tấm ở giữa xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Four wax pictures hang in a row, in exactly the right story order!",
+            "Jar Bear praises: {name} listens to stories more closely than I count flowers.",
+            "Wonderful, the story of the leaf in the rain appears whole on the hive wall."
+          ],
+          "wrong": [
+            "The two sisters sitting together is the end of the story, so hang that picture last.",
+            "There has to be a shower before the big sister can hold up a leaf. Which picture comes first?",
+            "The little sister only wipes her sister's wings after the rain stops. Swap the two in the middle."
+          ]
+        }
       },
-      "objective": "doc-truyen-thu-tu"
+      "objective": "doc-truyen-thu-tu",
+      "en": {
+        "title": "Put the pictures of the leaf-umbrella story in order",
+        "prompt": "Jar Bear has just guessed the pictures when he stretches too hard and knocks four pictures down in a jumble. {name} looks at the pictures and hangs them back in the order of the story.",
+        "items": [
+          "The two sisters sit close together, wings drying in the sun",
+          "A shower pours down, the little sister bee's wings get wet",
+          "The rain stops, the little sister bee wipes her big sister's wings",
+          "The big sister bee holds a leaf over her little sister's head"
+        ]
+      }
     },
     {
       "id": "ke-hai-anh-em",
@@ -753,5 +952,9 @@
       "tu-ngu": 1,
       "ke-chuyen": 1
     }
+  },
+  "en": {
+    "title": "The Bee Sisters and the Sisters Flower Bush",
+    "summary": "In the flower garden at the head of the lane, two young bee sisters are quarrelling over a cluster of flowers. {name} and Jar Bear, keeper of the garden, listen to the fairy tale «Cây khế» under the bush, borrow baskets from Cabbage Bunny, ask Grandma Brown Bear for advice and help the two make up."
   }
 }

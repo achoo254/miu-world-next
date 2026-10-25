@@ -95,7 +95,11 @@
         "toan2-cd2-bau-tron",
         "toan2-cd2-bau-dai",
         "toan2-cd2-bau-ho-lo"
-      ]
+      ],
+      "en": {
+        "title": "Pick up fallen gourds",
+        "goTo": "Pick up the three fallen number-carved gourds around the base of the Gourd Trellis"
+      }
     },
     {
       "id": "qua-bau-dau-tien",
@@ -169,6 +173,17 @@
         "answer": {
           "text": "7 + 4 = 11; 9 + 6 = 15; 8 + 5 = 13; 7 + 5 = 12",
           "explanation": "9 + 6 = 10 + 5 = 15; 8 + 5 = 10 + 3 = 13; 7 + 5 = 10 + 2 = 12."
+        },
+        "en": {
+          "guide": [
+            "Make the first number up to 10 by borrowing from the second number.",
+            "9 borrows 1, 8 borrows 2, 7 borrows 3."
+          ],
+          "hint": "7 + 5: 7 + 3 = 10, 2 are left, so 12.",
+          "answer": {
+            "text": "7 + 4 = 11; 9 + 6 = 15; 8 + 5 = 13; 7 + 5 = 12",
+            "explanation": "9 + 6 = 10 + 5 = 15; 8 + 5 = 10 + 3 = 13; 7 + 5 = 10 + 2 = 12."
+          }
         }
       },
       "feedback": {
@@ -181,7 +196,19 @@
           "Thử gom số đầu cho đủ 10 trước nhé.",
           "9 cần mượn 1 của số sau, phần còn lại là mấy?",
           "Cộng phần còn lại vào 10 rồi hãy điền."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three sums carved, and the round gourd gleams like new!",
+            "Make ten, then add the rest. Plump Tabby Cat nods and praises you.",
+            "Dangling Monkey cheers: your carving is even prettier than mine!"
+          ],
+          "wrong": [
+            "Try making the first number up to 10 first.",
+            "9 needs to borrow 1 from the second number. What is left?",
+            "Add the leftover part to 10, then fill it in."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -195,6 +222,11 @@
         "b1": "9 + 6",
         "b2": "8 + 5",
         "b3": "7 + 5"
+      },
+      "en": {
+        "title": "The first round gourd",
+        "goTo": "The round gourd has rolled to the Bamboo Vegetable Stand, where Plump Tabby Cat is minding it",
+        "prompt": "The round gourd still has a line Dangling Monkey carved on it: \"I've carved the example, so please carve the rest of the sums for me!\""
       }
     },
     {
@@ -286,6 +318,17 @@
         "answer": {
           "text": "Dãy bầu số 6: 6 + 5 = 11 | 6 + 6 = 12 | 6 + 7 = 13 | 6 + 8 = 14 | 6 + 9 = 15; Dãy bầu số 7: 7 + 4 = 11 | 7 + 5 = 12 | 7 + 6 = 13 | 7 + 7 = 14 | 7 + 8 = 15 | 7 + 9 = 16; Dãy bầu số 8: 8 + 3 = 11 | 8 + 4 = 12 | 8 + 5 = 13 | 8 + 6 = 14 | 8 + 7 = 15 | 8 + 8 = 16 | 8 + 9 = 17; Dãy bầu số 9: 9 + 2 = 11 | 9 + 3 = 12 | 9 + 4 = 13 | 9 + 5 = 14 | 9 + 6 = 15 | 9 + 7 = 16 | 9 + 8 = 17 | 9 + 9 = 18",
           "explanation": "6 + 7 = 13, 7 + 7 = 14, 8 + 4 = 12, 9 + 5 = 14: bốn ô trầy đã khắc lại đủ."
+        },
+        "en": {
+          "guide": [
+            "In one row, when the second number goes up by 1, the answer goes up by 1 too.",
+            "Look at the box right before the scratched one and count on."
+          ],
+          "hint": "6 + 7 is exactly one more than 6 + 6.",
+          "answer": {
+            "text": "Gourd row 6: 6 + 5 = 11 | 6 + 6 = 12 | 6 + 7 = 13 | 6 + 8 = 14 | 6 + 9 = 15; Gourd row 7: 7 + 4 = 11 | 7 + 5 = 12 | 7 + 6 = 13 | 7 + 7 = 14 | 7 + 8 = 15 | 7 + 9 = 16; Gourd row 8: 8 + 3 = 11 | 8 + 4 = 12 | 8 + 5 = 13 | 8 + 6 = 14 | 8 + 7 = 15 | 8 + 8 = 16 | 8 + 9 = 17; Gourd row 9: 9 + 2 = 11 | 9 + 3 = 12 | 9 + 4 = 13 | 9 + 5 = 14 | 9 + 6 = 15 | 9 + 7 = 16 | 9 + 8 = 17 | 9 + 9 = 18",
+            "explanation": "6 + 7 = 13, 7 + 7 = 14, 8 + 4 = 12, 9 + 5 = 14: all four scratched boxes are carved again."
+          }
         }
       },
       "feedback": {
@@ -298,7 +341,19 @@
           "Mỗi bước sang phải, kết quả tăng thêm 1 đấy.",
           "Ô sau 7 + 6 = 13 là 7 + 7, đếm tiếp thêm 1.",
           "Thử nhẩm bằng cách gom đủ 10 cho ô còn nghi ngờ."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four scratches have healed, and the calabash has its full table again!",
+            "Dangling Monkey hangs upside down to admire it, plainly pleased.",
+            "You guessed the growing pattern of each row."
+          ],
+          "wrong": [
+            "Each step to the right, the answer goes up by 1.",
+            "After 7 + 6 = 13 comes 7 + 7, so count on 1 more.",
+            "Try working out the doubtful box by making 10."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -314,6 +369,11 @@
         "b2": "7 + 7",
         "b3": "8 + 4",
         "b4": "9 + 5"
+      },
+      "en": {
+        "title": "Four rows of additions on the bottle gourds",
+        "goTo": "Bring the calabash gourd back to the Gourd Seedling Trellis, where Dangling Monkey is hanging by one arm, waiting",
+        "prompt": "The biggest calabash gourd is carved with four rows of sums past 10, with just four boxes scratched off. Let's carve them back in!"
       }
     },
     {
@@ -438,6 +498,17 @@
         "answer": {
           "text": "7 + 8 = 15; 9 + 9 = 18; 5 + 7 = 12; 8 + 3 = 11; 7 + 7 = 14; 9 + 4 = 13",
           "explanation": "7 + 8 = 15, 9 + 9 = 18, 5 + 7 = 12, 8 + 3 = 11, 7 + 7 = 14, 9 + 4 = 13."
+        },
+        "en": {
+          "guide": [
+            "Use the rows of sums you just carved to work quickly.",
+            "Doubles like 7 + 7 and 9 + 9 are worth learning by heart."
+          ],
+          "hint": "9 + 9 = 18, so 9 + 8 is 1 less.",
+          "answer": {
+            "text": "7 + 8 = 15; 9 + 9 = 18; 5 + 7 = 12; 8 + 3 = 11; 7 + 7 = 14; 9 + 4 = 13",
+            "explanation": "7 + 8 = 15, 9 + 9 = 18, 5 + 7 = 12, 8 + 3 = 11, 7 + 7 = 14, 9 + 4 = 13."
+          }
         }
       },
       "feedback": {
@@ -450,7 +521,19 @@
           "Có một phép cộng bị lệch 1, nhẩm lại nhé.",
           "5 + 7: gom 5 + 5 = 10, còn 2.",
           "Đừng lẫn kết quả với số hạng, hãy tính cả hai số."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Six stretches of vine, straight as a ruler, and Dangling Monkey swings all the way to the end!",
+            "Quick as the wind blowing through the gourd trellis, well done.",
+            "Every right sum makes a little gourd light up."
+          ],
+          "wrong": [
+            "One sum is off by 1, so work it out again.",
+            "5 + 7: make 5 + 5 = 10, with 2 more.",
+            "Don't mix up the answer with the addends; add both numbers."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -470,6 +553,10 @@
         "b4": "8 + 3",
         "b5": "7 + 7",
         "b6": "9 + 4"
+      },
+      "en": {
+        "title": "Quick mental maths on the gourd vine",
+        "prompt": "Dangling Monkey swings hand over hand along the gourd vine, and every stretch of vine has a sum tied to it. Please work them out in your head."
       }
     },
     {
@@ -527,6 +614,17 @@
         "answer": {
           "text": "Mèo 9 + 5 → cá 14; Mèo 7 + 9 → cá 16",
           "explanation": "9 + 5 = 14 nên mèo đó ăn cá 14; 7 + 9 = 16 nên mèo kia ăn cá 16."
+        },
+        "en": {
+          "guide": [
+            "Work out the sum worn on the kitten's neck, then write the matching number of fish.",
+            "9 borrows 1 from the second number to make 10."
+          ],
+          "hint": "Swap 7 + 9 to 9 + 7: 9 + 1 = 10, 6 more, so 16.",
+          "answer": {
+            "text": "Kitten 9 + 5 → Fish 14; Kitten 7 + 9 → Fish 16",
+            "explanation": "9 + 5 = 14, so that kitten eats Fish 14; 7 + 9 = 16, so the other kitten eats Fish 16."
+          }
         }
       },
       "feedback": {
@@ -539,7 +637,19 @@
           "Tính tổng ở phép cộng trên cổ mèo trước nhé.",
           "Chú mèo thứ hai đeo 7 + 9, đổi chỗ thành 9 + 7 cho dễ nhẩm.",
           "Số cá chính là kết quả của phép cộng, không phải số hạng."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Meow meow! The two kittens hug their fish, full and happy. Thank you, {name}!",
+            "Plump Tabby Cat strokes both kittens' heads: thanks to you, lunch has enough fish.",
+            "Every sum gives the right amount of fish, so no kitten is cross."
+          ],
+          "wrong": [
+            "Work out the total of the sum on the kitten's neck first.",
+            "The second kitten wears 7 + 9; swap it to 9 + 7 to make it easier.",
+            "The number of fish is the result of the sum, not an addend."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -551,6 +661,11 @@
       "expression": {
         "b1": "9 + 5",
         "b2": "7 + 9"
+      },
+      "en": {
+        "title": "Kitten under the bamboo daybed",
+        "goTo": "Back at the Bamboo Vegetable Stand, Plump Tabby Cat's two kittens are begging for fish",
+        "prompt": "Two kittens lie under the bamboo stand mewing for fish, and each wears a sum. Find fish for the kittens."
       }
     },
     {
@@ -597,6 +712,17 @@
         "answer": {
           "text": "6 + 8, 5 + 9, 7 + 7",
           "explanation": "6 + 8, 5 + 9 và 7 + 7 đều bằng 14; các đèn khác bằng 13, 17 và 11."
+        },
+        "en": {
+          "guide": [
+            "Work out the answer for each lantern.",
+            "Choose every lantern that gives the same answer."
+          ],
+          "hint": "Three lanterns all equal 14.",
+          "answer": {
+            "text": "6 + 8, 5 + 9, 7 + 7",
+            "explanation": "6 + 8, 5 + 9 and 7 + 7 all equal 14; the other lanterns equal 13, 17 and 11."
+          }
         }
       },
       "feedback": {
@@ -609,7 +735,19 @@
           "Tính ra kết quả của từng đèn trước khi chọn.",
           "Còn một đèn nữa cùng kết quả với hai đèn cậu chọn.",
           "Đèn 7 + 6 chưa bằng 14, đếm lại xem."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Three lanterns shining with one number, and Cream Rabbit claps with a clatter!",
+            "You picked the equal trio, and the Lantern Stall glows bright.",
+            "Quick mental maths, and no lantern escapes your eyes."
+          ],
+          "wrong": [
+            "Work out the answer for each lantern before choosing.",
+            "Another lantern has the same answer as the two you chose.",
+            "The lantern 7 + 6 is not 14 yet, so count again."
+          ]
+        }
       },
       "answer": {
         "choices": [
@@ -618,7 +756,20 @@
           "7-7"
         ]
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "Matching lanterns",
+        "goTo": "Go over to the Lantern Stall, where Cream Rabbit is standing on tiptoe to hang lanterns",
+        "prompt": "Cream Rabbit's Lantern Stall has six lanterns, each with a sum stuck on it; from left to right they are: red 6 + 8, yellow 7 + 6, red 5 + 9, red 9 + 8, pink 7 + 7, red 4 + 7. Choose the lanterns whose sums give the same answer.",
+        "choices": [
+          "6 + 8",
+          "7 + 6",
+          "5 + 9",
+          "9 + 8",
+          "7 + 7",
+          "4 + 7"
+        ]
+      }
     },
     {
       "id": "den-do-lon-be",
@@ -669,6 +820,17 @@
         "answer": {
           "text": "Lớn nhất: 9 + 8; bé nhất: 4 + 7",
           "explanation": "Đèn đỏ: 6 + 8 = 14, 5 + 9 = 14, 9 + 8 = 17, 4 + 7 = 11; lớn nhất 9 + 8, bé nhất 4 + 7."
+        },
+        "en": {
+          "guide": [
+            "Look only at the four red lanterns.",
+            "Work out the results and compare: 14, 14, 17, 11."
+          ],
+          "hint": "The red lantern 9 + 8 equals 17.",
+          "answer": {
+            "text": "Greatest: 9 + 8; smallest: 4 + 7",
+            "explanation": "Red lanterns: 6 + 8 = 14, 5 + 9 = 14, 9 + 8 = 17, 4 + 7 = 11; greatest 9 + 8, smallest 4 + 7."
+          }
         }
       },
       "feedback": {
@@ -681,7 +843,19 @@
           "Hãy tính cả bốn đèn đỏ rồi mới so sánh.",
           "Hai đèn cùng 14 thì không đèn nào lớn nhất.",
           "Đèn có kết quả nhỏ nhất ghi phép tính nào nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The greatest lantern shines brightest and the smallest is modest. You sorted them cleverly!",
+            "The two equal lanterns sit in the middle group, spot on.",
+            "Cream Rabbit hangs the lanterns back in the order you just made."
+          ],
+          "wrong": [
+            "Work out all four red lanterns before comparing.",
+            "If two lanterns both make 14, neither is the greatest.",
+            "Which sum has the smallest result?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -691,7 +865,11 @@
           "den-do-4-7": "nhom-ket-qua-be-nhat"
         }
       },
-      "objective": "cong-tru-qua-10-so-sanh"
+      "objective": "cong-tru-qua-10-so-sanh",
+      "en": {
+        "title": "The biggest and smallest red lanterns",
+        "prompt": "Cream Rabbit takes the four red lanterns down and sets them on the counter. Help Cream Rabbit sort them: which lantern has the greatest result, which the smallest, and which lie in between?"
+      }
     },
     {
       "id": "heo-un-doi-nau-canh",
@@ -916,6 +1094,17 @@
         "answer": {
           "text": "Số hạng thứ nhất: 6 | 9 | 5 | 8 | 7; Số hạng thứ hai: 6 | 4 | 9 | 7 | 9; Tổng: 12 | 13 | 14 | 15 | 16; a) Ô vuông 7 → cộng 8 → hình tròn 15 → bớt 5 → ngôi sao 10; b) Hình tròn 6 → cộng 7 → ô vuông 13 → cộng 5 → tam giác 18 → bớt 9 → ngôi sao 9",
           "explanation": "Tổng: 12, 13, 14, 15, 16. a) 7 + 8 = 15, 15 – 5 = 10. b) 6 + 7 = 13, 13 + 5 = 18, 18 – 9 = 9."
+        },
+        "en": {
+          "guide": [
+            "The sum is the two addends added together.",
+            "Follow the arrows and use the result you just found for the next sum."
+          ],
+          "hint": "15 – 5 = 10; 18 – 9 = 9.",
+          "answer": {
+            "text": "First addend: 6 | 9 | 5 | 8 | 7; Second addend: 6 | 4 | 9 | 7 | 9; Sum: 12 | 13 | 14 | 15 | 16; a) Square 7 → add 8 → circle 15 → take away 5 → star 10; b) Circle 6 → add 7 → square 13 → add 5 → triangle 18 → take away 9 → star 9",
+            "explanation": "Sums: 12, 13, 14, 15, 16. a) 7 + 8 = 15, 15 – 5 = 10. b) 6 + 7 = 13, 13 + 5 = 18, 18 – 9 = 9."
+          }
         }
       },
       "feedback": {
@@ -928,7 +1117,19 @@
           "Tổng là kết quả khi cộng hai số hạng cùng cột.",
           "Ở dãy mũi tên, lấy số ngay trước mũi tên để tính tiếp.",
           "Có một ô lệch 1, kiểm lại từng phép nhé."
-        ]
+        ],
+        "en": {
+          "right": [
+            "The pot lid is carved with every number, and Uncle Lành praises your good counting!",
+            "Following the arrows step by step, you never lost a box.",
+            "The sum table and both arrow rows all match, brilliant."
+          ],
+          "wrong": [
+            "Add the two numbers in one column together; that result is the sum.",
+            "In the arrow row, take the number right before the arrow to work out the next step.",
+            "One box is off by 1, so check each sum."
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -954,6 +1155,10 @@
         "b7": "6 + 7",
         "b8": "6 + 7 + 5",
         "b9": "6 + 7 + 5 - 9"
+      },
+      "en": {
+        "title": "Table on the pot lid",
+        "prompt": "Dangling Monkey carved numbers on Uncle Lành's pot lid and chopping board too, at some point. Fill in the missing numbers."
       }
     },
     {
@@ -998,6 +1203,17 @@
         "answer": {
           "text": "9 + 5 – tổ ong 14; 8 + 8 – tổ ong 16",
           "explanation": "9 + 5 = 14 nên về tổ 14; 8 + 8 = 16 nên về tổ 16."
+        },
+        "en": {
+          "guide": [
+            "Work out the bear's sum, then choose the beehive with that number.",
+            "Beehive 12 already has a sample bear wearing 4 + 8."
+          ],
+          "hint": "8 + 8 = 16, since two equal numbers are doubled.",
+          "answer": {
+            "text": "9 + 5 – Beehive 14; 8 + 8 – Beehive 16",
+            "explanation": "9 + 5 = 14, so it goes to hive 14; 8 + 8 = 16, so it goes to hive 16."
+          }
         }
       },
       "feedback": {
@@ -1010,7 +1226,19 @@
           "Tính tổng của mỗi chú gấu rồi mới tìm tổ.",
           "9 + 5: gom 9 + 1 = 10, còn 4.",
           "8 + 8 gấp đôi 8, bằng bao nhiêu nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "Both bears reach the right hive, and honey drips down to celebrate!",
+            "Pepper Bear licks his lips: every hive has the right number, and the whole stall is sweet.",
+            "The little cub puts both paws together to thank {name}."
+          ],
+          "wrong": [
+            "Work out each bear's total before looking for a hive.",
+            "9 + 5: make 9 + 1 = 10, with 4 more.",
+            "8 + 8 is double 8. What does that make?"
+          ]
+        }
       },
       "answer": {
         "assignment": {
@@ -1018,7 +1246,12 @@
           "gau-8-8": "nhom-to-ong-16"
         }
       },
-      "objective": "cong-tru-qua-10-cong"
+      "objective": "cong-tru-qua-10-cong",
+      "en": {
+        "title": "Pepper Bear finds the bee nest",
+        "goTo": "Over by the Water Jar behind the Stall, Pepper Bear and the little cub are looking for a beehive",
+        "prompt": "Pepper Bear brings the little cub to the stall to ask for honey to stir into gourd water. Each bear wears a sum, so find the beehive with exactly that number."
+      }
     },
     {
       "id": "can-dau-ben-noi",
@@ -1109,6 +1342,17 @@
         "answer": {
           "text": "a) 7 + 7 > 13; a) 5 + 8 < 14; b) 9 + 4 = 4 + 9; b) 8 + 8 > 9 + 6",
           "explanation": "7 + 7 = 14 > 13; 5 + 8 = 13 < 14; 9 + 4 = 13 = 4 + 9; 8 + 8 = 16 > 15 = 9 + 6."
+        },
+        "en": {
+          "guide": [
+            "Work out the sum on each side first.",
+            "If both sides are equal, fill in the sign =."
+          ],
+          "hint": "9 + 4 and 4 + 9 just swap the addends.",
+          "answer": {
+            "text": "Answers: a) 7 + 7 > 13; a) 5 + 8 < 14; b) 9 + 4 = 4 + 9; b) 8 + 8 > 9 + 6",
+            "explanation": "7 + 7 = 14 > 13; 5 + 8 = 13 < 14; 9 + 4 = 13 = 4 + 9; 8 + 8 = 16 > 15 = 9 + 6."
+          }
         }
       },
       "feedback": {
@@ -1121,7 +1365,19 @@
           "Tính kết quả hai bên rồi mới chọn dấu.",
           "Đổi chỗ hai số hạng thì tổng không đổi, nên dùng dấu bằng.",
           "5 + 8 nhỏ hơn hay lớn hơn 14 nhỉ?"
-        ]
+        ],
+        "en": {
+          "right": [
+            "The four pairs have stopped arguing, and Uncle Lành laughs and praises you!",
+            "Every sign opens the right way, just like a crocodile's mouth.",
+            "You compare faster than a pot of boiling water."
+          ],
+          "wrong": [
+            "Work out the results of both sides, then choose the sign.",
+            "Swapping the two addends does not change the sum, so use the equals sign.",
+            "Is 5 + 8 smaller or bigger than 14?"
+          ]
+        }
       },
       "answer": {
         "fills": {
@@ -1137,6 +1393,11 @@
         "b2": "5 + 8 ? 14",
         "b3": "9 + 4 ? 4 + 9",
         "b4": "8 + 8 ? 9 + 6"
+      },
+      "en": {
+        "title": "The balance by the soup pot",
+        "goTo": "Back into the Soup Stall at the Row's End, where Uncle Lành is laying out four pairs of sums on the table",
+        "prompt": "Uncle Lành lays out four pairs of sums on the table, and each pair is arguing about which is bigger. Fill in >, < or =."
       }
     },
     {
@@ -1156,6 +1417,17 @@
         "answer": {
           "text": "17 người",
           "explanation": "Hai chuyến chở tất cả: 9 + 8 = 17 (người)."
+        },
+        "en": {
+          "guide": [
+            "Asking \"altogether\" means putting the people from both trips together.",
+            "9 + 8: 9 borrows 1 from 8 to make 10."
+          ],
+          "hint": "9 + 1 = 10, with 7 more people.",
+          "answer": {
+            "text": "17 people",
+            "explanation": "The two trips carried altogether: 9 + 8 = 17 (people)."
+          }
         }
       },
       "feedback": {
@@ -1168,13 +1440,30 @@
           "Hỏi \"tất cả\" là gộp hai chuyến, không bớt đi.",
           "Thử gom 9 + 1 = 10 trước, rồi cộng phần còn lại.",
           "Chuyến thứ hai chở 8 người, đừng nhầm với 9."
-        ]
+        ],
+        "en": {
+          "right": [
+            "Seventeen people, and the ox cart creaks along while everyone is happy!",
+            "Putting both trips together means adding, and you chose exactly the right sum.",
+            "Dangling Monkey claps: my story has a lovely answer now."
+          ],
+          "wrong": [
+            "Asking \"altogether\" means putting both trips together, not taking away.",
+            "Try making 9 + 1 = 10 first, then add the rest.",
+            "The second trip carried 8 people, so don't mix it up with 9."
+          ]
+        }
       },
       "answer": {
         "value": 17
       },
       "objective": "bai-toan-co-loi-van-them-bot",
-      "expression": "9 + 8"
+      "expression": "9 + 8",
+      "en": {
+        "title": "The Monkey's ox-cart story",
+        "goTo": "Back at the Gourd Seedling Trellis, Dangling Monkey has a story to tell",
+        "question": "Dangling Monkey tells you: \"Once I rode an ox cart to the market fair, and the driver made two trips in a row.\" The first trip carried 9 people and the second trip carried 8 people. How many people did the two trips carry altogether?"
+      }
     },
     {
       "id": "huy-hieu-bang-cong",
@@ -1206,5 +1495,9 @@
       "phep-cong": 2,
       "so-sanh-so": 1
     }
+  },
+  "en": {
+    "title": "Dangling Monkey and the Addition Table Gourds",
+    "summary": "The wind has knocked down the gourds Dangling Monkey carved with addition tables at the Gourd Seedling Trellis, and Uncle Lành the soup seller almost cooked them. {name} runs through the gourd stalls with Plump Tabby Cat, Cream Rabbit and Pepper Bear to help Monkey carve the tables again (adding past 10) and solve the puzzles before the soup boils."
   }
 }
