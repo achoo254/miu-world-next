@@ -2,7 +2,7 @@
 
 Thư mục repo: `miu-world-next` (tên hiển thị sản phẩm vẫn là “Miu World”).
 
-Game phiêu lưu 3D voxel online trên web cho mọi lứa tuổi, nơi kiến thức là công cụ để tiến lên. Vertical slice MVP đã xong và game đang chạy production: mười hai map chơi được với nội dung SGK lớp 2 tập 1, chơi online cùng bạn bè, tổ đội và bạn máy; đang chờ người duyệt nghiệm thu MVP ([Master Plan v3](<Miu World — Master Development Plan v3 (3D theo mockup + Multiplayer).md>) §16). Repo gồm pipeline asset có kiểm license, thư viện voxel, app web (Vite + React, runtime three.js) và server (Express + Drizzle) là nguồn sự thật cho tiến độ và thưởng (Master Plan §7).
+Game phiêu lưu 3D voxel online trên web cho mọi lứa tuổi, nơi kiến thức là công cụ để tiến lên. Vertical slice MVP đã xong và game đang chạy production: mười hai map chơi được với 70 quest học Toán và Tiếng Việt viết bằng lời của mình, tổ chức theo môn, chủ đề và mục tiêu (`content/learning/topics/`), chơi online cùng bạn bè, tổ đội và bạn máy; đang chờ người duyệt nghiệm thu MVP ([Master Plan v3](<Miu World — Master Development Plan v3 (3D theo mockup + Multiplayer).md>) §16). Repo gồm pipeline asset có kiểm license, thư viện voxel, app web (Vite + React, runtime three.js) và server (Express + Drizzle) là nguồn sự thật cho tiến độ và thưởng (Master Plan §7).
 
 - Kế hoạch tổng: [Master Plan v3](<Miu World — Master Development Plan v3 (3D theo mockup + Multiplayer).md>)
 - Tài liệu: [`docs/`](docs/README.md)
@@ -33,6 +33,5 @@ Chỉ nhận CC0, MIT, OFL. Nguồn, phiên bản và hash từng file: [`assets
 Mã nguồn theo giấy phép MIT ([`LICENSE`](LICENSE)). Không thuộc phạm vi MIT:
 
 - Asset trong `assets/`: giữ giấy phép gốc của từng pack (CC0, MIT, OFL), xem [`assets/LICENSES.md`](assets/LICENSES.md).
-- Văn bản sách giáo khoa trích nguyên văn trong `content/curriculum/` và các quest SGK: bản quyền thuộc tác giả và nhà xuất bản của sách; repo chỉ dùng cho mục đích học tập, phi thương mại.
 
 Quyền riêng tư của người chơi: trang `/privacy` (nội dung ở [`content/legal/privacy-vi.json`](content/legal/privacy-vi.json)). Báo lỗi bảo mật hoặc yêu cầu về dữ liệu: quocdat254@gmail.com.

@@ -30,21 +30,21 @@ Việc của người sở hữu, không chặn kỹ thuật nhưng cần trư�
 ### Tiếng Việt (vi)
 
 - **Tên** (≤ 30): `Miu World`
-- **Phụ đề Apple** (≤ 30): `Phiêu lưu 3D, ôn bài lớp 2`
-- **Mô tả ngắn Play** (≤ 80): `Phiêu lưu 3D, ôn bài Toán và Tiếng Việt lớp 2 cùng bạn bè.`
-- **Promotional text Apple** (≤ 170): `Mười hai vùng đất khối để khám phá, mỗi nhiệm vụ ôn một bài trong sách Toán 2 và Tiếng Việt 2. Chơi một mình hoặc cùng bạn bè.`
-- **Từ khóa Apple** (≤ 100, phân tách bằng dấu phẩy, không lặp tên app): `toán lớp 2,tiếng việt lớp 2,ôn tập,phiêu lưu,thế giới khối,voxel,giáo dục,đố vui` (80 ký tự; nếu App Store Connect báo quá dài vì đếm byte, dùng bản không dấu `toan lop 2,tieng viet lop 2,on tap,hoc toan,phieu luu,voxel,giao duc,do vui,sgk`). Không dùng tên game khác (Minecraft) hay tên nhà xuất bản.
+- **Phụ đề Apple** (≤ 30): `Phiêu lưu 3D, vừa chơi vừa học`
+- **Mô tả ngắn Play** (≤ 80): `Phiêu lưu 3D, ôn Toán và Tiếng Việt cùng bạn bè.`
+- **Promotional text Apple** (≤ 170): `Mười hai vùng đất khối để khám phá, mỗi nhiệm vụ luyện một chủ đề Toán hoặc Tiếng Việt. Chơi một mình hoặc cùng bạn bè.`
+- **Từ khóa Apple** (≤ 100, phân tách bằng dấu phẩy, không lặp tên app): `toán,tiếng việt,ôn tập,học toán,phiêu lưu,thế giới khối,voxel,giáo dục,đố vui` (77 ký tự; nếu App Store Connect báo quá dài vì đếm byte, dùng bản không dấu `toan,tieng viet,on tap,hoc toan,phieu luu,the gioi khoi,voxel,giao duc,do vui`). Không dùng tên game khác (Minecraft), tên nhà xuất bản, tên sách hay lớp.
 - **Mô tả** (Apple và Play):
 
 ```text
-Miu World là trò chơi phiêu lưu trong thế giới khối 3D, nơi kiến thức là chìa khóa mở đường. Mỗi nhiệm vụ ôn đúng một bài trong sách Toán 2 và Tiếng Việt 2: giải câu đố của cây cổ thụ, đếm táo cho bạn Hải ly, đọc thư tìm manh mối, vượt suối bằng những phép tính.
+Miu World là trò chơi phiêu lưu trong thế giới khối 3D, nơi kiến thức là chìa khóa mở đường. Mỗi nhiệm vụ luyện một chủ đề Toán hoặc Tiếng Việt, viết riêng cho game: giải câu đố của cây cổ thụ, đếm táo cho bạn Hải ly, đọc thư tìm manh mối, vượt suối bằng những phép tính.
 
 KHÁM PHÁ
 • Mười hai vùng đất: Khu rừng bí mật, Trường học, Làng ven sông, Chợ phiên, Lâu đài, Núi tuyết, Đảo bí ẩn… nối với nhau qua Trung tâm.
 • Ngôi nhà riêng để trang trí, thú cưng để chăm sóc, đồ vật và trang phục để sưu tầm.
 
 HỌC MÀ NHƯ CHƠI
-• Câu hỏi bám chương trình lớp 2, có Hướng dẫn, Gợi ý và Đáp án kèm giải thích; xem đáp án không bị khóa tiến trình.
+• Câu hỏi đi theo chủ đề và mục tiêu học, có Hướng dẫn, Gợi ý và Đáp án kèm giải thích; xem đáp án không bị khóa tiến trình.
 • Câu đọc to, luyện nói, thử thách cùng trùm khu vực, sự kiện Olympic Toán.
 • Phần thưởng do máy chủ tính: điểm kinh nghiệm, Xu, kỹ năng, sổ sưu tập.
 
@@ -66,21 +66,21 @@ Quyền riêng tư: https://miu.hoandat.com/privacy
 ### English (en)
 
 - **Name**: `Miu World`
-- **Apple subtitle** (≤ 30): `3D adventure, Grade 2 lessons`
-- **Play short description** (≤ 80): `A 3D block-world adventure where every quest reviews a Grade 2 lesson.`
-- **Promotional text**: `Twelve block worlds to explore, and every quest reviews a lesson from the Vietnamese Grade 2 Math and Vietnamese-language textbooks. Play solo or with friends.`
-- **Apple keywords**: `grade 2 math,vietnamese,learning game,adventure,voxel,block world,quiz,education,lessons,review` (95)
+- **Apple subtitle** (≤ 30): `3D adventure, learn by playing`
+- **Play short description** (≤ 80): `A 3D block-world adventure where every quest practises Math or Vietnamese.`
+- **Promotional text**: `Twelve block worlds to explore, and every quest practises a Math or Vietnamese-language topic written for the game. Play solo or with friends.`
+- **Apple keywords**: `math,vietnamese,learning game,adventure,voxel,block world,quiz,education,lessons,review` (87)
 - **Description**:
 
 ```text
-Miu World is an adventure in a 3D block world where knowledge opens the way. Every quest reviews one lesson from the Vietnamese Grade 2 Math and Vietnamese-language textbooks: solve the old tree's riddle, count apples for the beaver, read letters for clues, cross the stream with sums.
+Miu World is an adventure in a 3D block world where knowledge opens the way. Every quest practises one Math or Vietnamese-language topic, written for the game: solve the old tree's riddle, count apples for the beaver, read letters for clues, cross the stream with sums.
 
 EXPLORE
 • Twelve lands — the Secret Forest, the School, the Riverside Village, the Market, the Castle, the Snowy Mountain, the Mystery Island and more — linked through the Centre.
 • Your own house to decorate, a pet to look after, items and outfits to collect.
 
 LEARN BY PLAYING
-• Questions follow the Grade 2 curriculum, with Guide, Hint and Answer-with-explanation; seeing the answer never blocks progress.
+• Questions follow learning topics and objectives, with Guide, Hint and Answer-with-explanation; seeing the answer never blocks progress.
 • Read-aloud questions, speaking practice, zone guardian duels and a Math Olympiad event.
 • Rewards are worked out by the server: XP, coins, skills and a collection book.
 
@@ -137,7 +137,7 @@ Dự kiến: **9+** (4+ nếu bạo lực hoạt hình chọn None). Kids Catego
 
 ### Google Play: Đối tượng mục tiêu
 
-Khuyến nghị khai **trung thực**: nhóm 6–8, 9–12 và 13 trở lên (đối tượng hỗn hợp). Nội dung SGK lớp 2 và hình ảnh khiến Google xếp app vào nhóm thu hút trẻ dù khai gì; khai chỉ 13+ dễ bị coi là khai sai. Khai có trẻ thì áp chính sách Families: các yêu cầu liên quan đã đáp ứng (mục Play Families bên dưới). Không đăng ký "Teacher Approved" lúc này.
+Khuyến nghị khai **trung thực**: nhóm 6–8, 9–12 và 13 trở lên (đối tượng hỗn hợp). Nội dung học Toán, Tiếng Việt bậc tiểu học và hình ảnh khiến Google xếp app vào nhóm thu hút trẻ dù khai gì; khai chỉ 13+ dễ bị coi là khai sai. Khai có trẻ thì áp chính sách Families: các yêu cầu liên quan đã đáp ứng (mục Play Families bên dưới). Không đăng ký "Teacher Approved" lúc này.
 
 ## Apple App Privacy (nhãn quyền riêng tư)
 
@@ -177,7 +177,7 @@ Không thu: vị trí, ảnh/video, âm thanh (lý do như phần Apple: ghi âm
 ## Ghi chú cho người duyệt (App Review Notes, tiếng Anh)
 
 ```text
-Miu World is a free 3D learning adventure (Vietnamese Grade 2 Math and Vietnamese-language lessons). No ads, no in-app purchases.
+Miu World is a free 3D learning adventure (Math and Vietnamese-language lessons written for the game). No ads, no in-app purchases.
 
 SIGN-IN
 • Tap "Đăng nhập" (Sign in). The app opens our own account service, auth.hoandat.com, in the system browser (ASWebAuthenticationSession on iOS, Auth Tab or Custom Tabs on Android). It offers Sign in with Apple, Google and GitHub.

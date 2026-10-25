@@ -328,7 +328,7 @@ Người sở hữu (03/10/2026): hiển thị tiếng Anh và tiếng Việt, g
 
 - **Ba chế độ trong Cài đặt:** Tiếng Việt, English, Song ngữ (câu Việt kèm dòng Anh nhỏ bên dưới). Lưu theo người chơi, mặc định tiếng Việt.
 - **Hiện trạng:** đã có (quyết định 40); cách viết chữ hai thứ tiếng: `docs/i18n.md`.
-- **Phạm vi:** giao diện (nút, menu, thông báo, cửa hàng, nhiệm vụ), lời NPC, tên vật phẩm; nội dung SGK giữ nguyên chữ Việt của sách (quyết định "verbatim"), phần Anh chỉ là dòng dịch kèm bên dưới.
+- **Phạm vi:** giao diện (nút, menu, thông báo, cửa hàng, nhiệm vụ), lời NPC, tên vật phẩm; chữ bài học giữ nguyên tiếng Việt (bỏ quyết định "verbatim", thay bởi quyết định 54), phần Anh chỉ là dòng dịch kèm bên dưới.
 - **Âm thanh và nói:** đọc to bằng giọng của trình duyệt (vi-VN, en-US) theo ngôn ngữ đang chọn; bài nói có gợi ý song ngữ; bản ghi giọng vẫn chỉ nằm trong trình duyệt (như chính sách hiện nay).
 - **Kỹ thuật:** lớp `t()` với từ điển `locales/vi` và `locales/en`, khóa kiểm bằng `content:check`, thiếu bản dịch thì rơi về tiếng Việt.
 
@@ -555,6 +555,7 @@ Mọi quyết định của đợt POC và Foundation đã chốt (2026-09-29); 
 | 51 | Marketing tự chạy (2026-10-12, người sở hữu) | Google Analytics 4 gửi từ server (Measurement Protocol), sự kiện ẩn danh, không script hay cookie bên thứ ba trong trình duyệt; trang công khai theo từng bài SGK, sitemap; link mời bạn một lần, thu hồi được; thẻ khoe kết quả; clip hằng tuần lên kênh YouTube và Fanpage riêng của Miu World, mặc định chạy khô tới khi người sở hữu tạo kênh; không đăng lên trang cá nhân | Quyền riêng tư và lời đồng ý lên v4 trước sự kiện đầu tiên; plan `plans/dattqh/261012-1116-auto-marketing/`, `docs/marketing-channels.md` |
 | 52 | Mở cho người chơi ngoài gia đình (2026-10-12, người sở hữu) | Ứng dụng Google OAuth chuyển "In production", thương hiệu đã xác minh: ai có tài khoản Google cũng đăng ký được | Trước đó chỉ người sở hữu và bé chơi; trả lời câu hỏi mở 1 của plan `plans/dattqh/261004-1617-mvp-gate-launch-readiness/`; `docs/project-roadmap.md` (gate Marketing tự chạy) |
 | 53 | Kiểm duyệt hoãn, không chống cheat (2026-10-04 và 2026-10-12, người sở hữu) | Chưa làm hàng đợi kiểm duyệt, màn xử lý báo cáo, tắt khẩn cấp; báo cáo và chặn vẫn có, báo cáo được lưu. Không kiểm tốc độ di chuyển hay cooldown; thưởng vẫn do server tính. Khi mở đăng ký cho mọi người (52), người sở hữu giữ plan kiểm duyệt ở trạng thái làm sau | Lệch khuyến nghị và điều kiện mở bậc 2 ở mục 8, các dòng MP của mục 9; plan `plans/dattqh/261004-1617-moderation-safety/` mở lại khi người sở hữu yêu cầu |
+| 54 | Nội dung học tự viết, theo chủ đề (2026-10-25, người sở hữu) | Bỏ văn bản sách giáo khoa chép nguyên văn và mọi chữ nhắc sách, lớp, bài, trang; nội dung tổ chức Môn → Chủ đề → Mục tiêu theo Chương trình GDPT 2018; bài đọc dân gian, hết thời hạn bảo hộ hoặc tự viết, khai nguồn; giữ lịch sử git | Thay D1, D8, D13 của plan `plans/dattqh/260930-0846-sgk-lop2-game-content/` và mọi chỗ trong tài liệu này nói nội dung bám hay giữ nguyên chữ của sách (mục 4, 8c, dòng 34, 40, 51); trang công khai theo chủ đề `/hoc/`; plan `plans/dattqh/261025-0029-original-learning-content/` |
 
 ### Còn cần bạn chốt
 
@@ -585,7 +586,7 @@ MVP đạt khi một bé chơi trọn một quest trong Khu rừng bí mật và
 - [x] Chọn nhân vật (bốn loài), đặt tên, đổi trang phục và thấy thay đổi ngay trên nhân vật voxel, rồi vào thế giới — E2E `account` (đăng nhập → đồng ý → tạo nhân vật → Home → map → chơi), `shop` (mua đồ và mặc)
 - [x] Di chuyển tự do bằng joystick và bàn phím, va chạm đúng, camera không xuyên khối — E2E `play`; va chạm vật theo `traversal` ở test `packages/voxel/src/prop-collision.test.ts`
 - [x] Tương tác được với NPC và ít nhất 3 vật thể — E2E `play`, `quest-flow` (Vẹt, ba manh mối, lá thư); audit `pnpm world:quest-targets` trong `content:check` (mọi mục tiêu quest trên 12 map)
-- [x] Quest có câu chuyện và vòng lặp đầy đủ, dùng ít nhất 2 cơ chế khác trắc nghiệm — E2E `quest-flow`, `sgk-mechanics` (phân loại, điền chỗ trống, chọn nhiều, đồng hồ, lịch, nối, tranh, nói, phiếu viết), `bosses`
+- [x] Quest có câu chuyện và vòng lặp đầy đủ, dùng ít nhất 2 cơ chế khác trắc nghiệm — E2E `quest-flow`, `quest-mechanics` (phân loại, điền chỗ trống, chọn nhiều, đồng hồ, lịch, nối, tranh, nói, phiếu viết), `bosses`
 - [x] Một kiến thức học được dùng để giải một vấn đề trong game (ví dụ đố 8 + 5 = ? trên cây cổ thụ) — E2E `quest-flow`, `bosses` (đòn trùm là câu hỏi theo kỹ năng)
 - [x] Hướng dẫn, gợi ý, đáp án hoạt động và không khóa tiến trình — test server `quest-routes`, `olympiad-routes` (từng lớp hỗ trợ theo yêu cầu), `coop-session`
 - [x] XP, xu, skill do server tính; sửa dữ liệu ở client không đổi được kết quả — test server `quest-routes`, `endpoint-table`, `coop-reward`; quét bảo mật 19/10/2026 (`plans/dattqh/reports/security-sweep-261019.md`)

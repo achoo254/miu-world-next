@@ -22,6 +22,7 @@ Cách làm: single-player vertical slice trước (Home Base + Khu rừng bí m�
 
 - **Asset:** chỉ CC0 (model, texture, âm thanh), MIT (icon Fluent Emoji), OFL (font) hoặc sinh bằng code. Không CC-BY/SA/NC, không tự vẽ, không AI trả phí, không voxel artist. Hệ quả chấp nhận: hình ảnh kém chi tiết hơn mock.
 - **Dữ liệu người chơi và trẻ em:** người đăng nhập là người chơi chính và tự đồng ý chính sách; trẻ chơi bằng người chơi phụ trong tài khoản người lớn, người lớn đó chịu trách nhiệm; không thu tên thật, tuổi, trường của người chơi (tên chọn từ danh sách). Yêu cầu pháp lý (Nghị định 13/2023/NĐ-CP và luật dữ liệu cá nhân mới) phải được pháp chế xác nhận — tài liệu này không phải tư vấn pháp lý.
+- **Nội dung học:** viết bằng lời của mình, không chép sách giáo khoa, và không nhắc tên sách, lớp, số bài hay số trang ở bất kỳ đâu người chơi thấy (người sở hữu, 25/10/2026; lý do: repo công khai nên văn bản sách chép vào sẽ được phát hành cùng mã nguồn). Nội dung đi theo Môn → Chủ đề → Mục tiêu, mục tiêu viết theo yêu cầu cần đạt của Chương trình GDPT 2018; thêm nội dung cho người lớn hơn chỉ là thêm chủ đề. Bài đọc ưu tiên văn dân gian và tác giả đã hết thời hạn bảo hộ, còn lại tự viết, bài nào cũng khai nguồn.
 - **Chống gian lận:** mọi thưởng, kết quả thử thách, mở khóa do server tính; client chỉ hiển thị.
 - **Mô hình vận hành:** AI làm 100% phần kỹ thuật; con người duyệt cuối trên trang review và làm việc máy không thay được (nội dung giáo dục, chơi thử với trẻ, kiểm duyệt cộng đồng, đo máy thật trước nghiệm thu MVP).
 
@@ -36,6 +37,7 @@ Cách làm: single-player vertical slice trước (Home Base + Khu rừng bí m�
 | Vertical slice | Một vòng lặp chơi trọn vẹn trong một khu vực nhỏ |
 | MVP / V1 / Live World / MP | Các giai đoạn phát hành (xem `project-roadmap.md`) |
 | Subject / Skill | Môn (Toán, Tiếng Việt, English) / kỹ năng cụ thể (Đọc hiểu, Phép cộng…); level Subject tổng hợp từ Skill; Skill XP là phần thưởng MVP (§15 #5) |
+| Chủ đề / Mục tiêu | Chủ đề là một mảng kiến thức trong một môn (`content/learning/topics/<môn>/<chủ-đề>.json`), có trang công khai `/hoc/<môn>/<chủ-đề>/`; mục tiêu là điều người chơi làm được sau khi học; bước học của quest khai mục tiêu nó luyện (`objective`) |
 | Quest 8 pha | Hook, Explore, Learn, Challenge, Decision, Finale, Reward, Next (tiếp nối, không mở khóa gì); quest phải trả lời đủ 7 câu (đóng vai ai, ở đâu, mục tiêu, chơi gì, kiến thức nào, nhận gì, tiếp theo đi đâu) |
 | Ba lớp hỗ trợ | Hướng dẫn, Gợi ý, Đáp án kèm giải thích; xem đáp án không khóa tiến trình |
 | NPC Vẹt, Hải ly | Thay Cú mèo và Sóc trong mock (Cube Pets không có hai loài đó) |

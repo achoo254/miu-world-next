@@ -22,6 +22,8 @@ Mục tiêu người sở hữu: **mọi mục nội dung trong hai sách có m�
 
 ## Quyết định đã chốt
 
+> **Đã thay (25/10/2026):** D1 (dùng nguyên văn), D8 (giống sách 100%) và D13 (hiện sách, bài, trang) đã được thay bằng plan [`261025-0029-original-learning-content`](../261025-0029-original-learning-content/plan.md): nội dung học viết bằng lời của mình theo Môn → Chủ đề → Mục tiêu, sản phẩm không nhắc sách, lớp, bài hay trang. D2, D3, D9, D11, D12 giữ nguyên (T6 của plan đó).
+
 | # | Câu hỏi | Chốt | Nguồn |
 | --- | --- | --- | --- |
 | D1 | Dùng nội dung sách thế nào | Dùng **nguyên văn**. Sản phẩm phi thương mại; kể cả public vẫn dùng — quyết định của người sở hữu, không bàn thêm. Bảo mật, dữ liệu trẻ, bản quyền chưa phải mối quan tâm của plan này. | Người sở hữu 2026-09-30 |

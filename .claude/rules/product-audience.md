@@ -5,7 +5,7 @@ Người sở hữu (05/10/2026): game dành cho mọi lứa tuổi, vừa chơi
 ## Áp dụng khi thiết kế và viết code
 
 - Không đặt một tính năng mới sau "phụ huynh phải bật/duyệt/ngồi cạnh". Mặc định người chơi dùng được ngay; công tắc của phụ huynh chỉ là tiện ích tùy chọn, không phải điều kiện để chơi.
-- Nội dung, giao diện, nhịp chơi phải hợp cả bé lẫn người lớn: không giọng dỗ dành riêng cho trẻ nhỏ ở chỗ chung (menu, cài đặt, cửa hàng, chat); phần học vẫn bám SGK nhưng độ khó có thể tăng theo người chơi.
+- Nội dung, giao diện, nhịp chơi phải hợp cả bé lẫn người lớn: không giọng dỗ dành riêng cho trẻ nhỏ ở chỗ chung (menu, cài đặt, cửa hàng, chat); phần học đi theo chủ đề và mục tiêu (`content/learning/topics/`), không theo sách hay lớp, và độ khó có thể tăng theo người chơi.
 - Thiết kế cho nhiều nền tảng: web hôm nay, mobile app sau. Điều khiển, UI, đồng bộ dữ liệu không được phụ thuộc chuột/bàn phím hay trình duyệt khi có lựa chọn khác; logic quyết định ở server và `packages/*` để app dùng lại.
 - Hướng online nhiều người chơi: người chơi là chủ thể, không phải "hồ sơ con của phụ huynh".
 

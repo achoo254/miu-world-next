@@ -1,7 +1,7 @@
 ---
 title: "Nội dung SGK lớp 2 tập 2 (Toán, Tiếng Việt — Kết nối tri thức): kịch bản và trò chơi mới trên các map"
 description: "Đưa 100% Toán 2 tập 2 (7 chủ đề, bài 37–75) và Tiếng Việt 2 tập 2 (5 chủ điểm, tuần 19–35, 30 bài + 2 ôn tập) vào quest của Miu World, chia theo chủ đề cho 9 map (thêm Đảo bí ẩn), với trò chơi mới trong thế giới 3D."
-status: deferred
+status: superseded
 priority: P1
 effort: "XL"
 branch: dattqh/feat/sgk-lop2-tap2
@@ -12,6 +12,8 @@ created: 2026-10-02
 ---
 
 # Nội dung SGK lớp 2 tập 2 thành kịch bản và trò chơi trên các map
+
+> **Superseded (25/10/2026):** plan này dựa trên D1, D8 của plan tập một (chép nguyên văn sách), nay đã thay. Nội dung học sau này viết theo khung chủ đề của plan [`261025-0029-original-learning-content`](../261025-0029-original-learning-content/plan.md) (quyết định T7).
 
 ## Overview
 
