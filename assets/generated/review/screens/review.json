@@ -1,8 +1,8 @@
 {
-  "capturedFrom": "337f67e0a58ec19e54135f720d29f47c27b07e4e",
-  "capturedAt": "2026-10-25T23:28:30+07:00",
-  "reviewedAt": "2026-10-25T23:29:39+07:00",
-  "reviewer": "phiên chính: so dữ kiện DOM 30 màn × 2 khổ với lần duyệt ec1542b8 (không phát sinh lỗi mới; chế độ Tiếng Việt không đổi), xem các màn khổ 360 ở chế độ English: tiêu đề nhiệm vụ và tiêu đề bước hiện tiếng Anh",
+  "capturedFrom": "5840e65c7eaa53a6feb329caf644b5e75bd1ed22",
+  "capturedAt": "2026-10-26T00:10:17+07:00",
+  "reviewedAt": "2026-10-26T00:11:30+07:00",
+  "reviewer": "phiên chính: so dữ kiện DOM 30 màn × 2 khổ với lần duyệt 337f67e0 (không phát sinh lỗi mới; chế độ Tiếng Việt không đổi), xem các màn khổ 360 ở chế độ English: lời thoại, đề bài, manh mối hiện tiếng Anh",
   "verdict": "pass",
   "findings": [
     {
@@ -122,6 +122,13 @@
       "kind": "overlap",
       "severity": "note",
       "text": "Nhãn \"Bông · Tương tác\" đè lên bong bóng chat mờ phía sau; không che nút.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/27-puzzle-clues.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Chế độ English khổ 360: manh mối tiếng Anh dài hơn nên đáp án thứ ba của câu đố chiếc cốc lại phải cuộn; chế độ Tiếng Việt vẫn thấy đủ.",
       "fixedIn": null
     }
   ]
