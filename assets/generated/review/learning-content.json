@@ -1,0 +1,54 @@
+{
+  "subjects": [
+    {
+      "subject": "tieng-viet",
+      "subjectName": "Tiếng Việt",
+      "quests": 34
+    },
+    {
+      "subject": "toan",
+      "subjectName": "Toán",
+      "quests": 36
+    }
+  ],
+  "readings": {
+    "total": 37,
+    "byKind": {
+      "original": 31,
+      "folk": 6,
+      "public-domain": 0,
+      "none": 0
+    },
+    "folk": [
+      {
+        "title": "Ca dao",
+        "reading": "Lời ru của mẹ"
+      },
+      {
+        "title": "Đồng dao Chi chi chành chành",
+        "reading": "Chi chi chành chành"
+      },
+      {
+        "title": "Truyện cổ tích Cây khế",
+        "reading": "Cây khế"
+      },
+      {
+        "title": "Truyện cười dân gian Việt Nam",
+        "reading": "Treo biển"
+      },
+      {
+        "title": "Truyện ngụ ngôn dân gian Việt Nam",
+        "reading": "Thầy bói xem voi"
+      },
+      {
+        "title": "Truyền thuyết Sự tích bánh chưng, bánh giầy",
+        "reading": "Sự tích bánh chưng, bánh giầy"
+      }
+    ]
+  },
+  "copyCheck": {
+    "quests": 630,
+    "topics": 21,
+    "matches": 0
+  }
+}

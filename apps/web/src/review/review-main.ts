@@ -216,12 +216,12 @@ function renderGallery(generated: string[]): void {
   };
   for (const p of reviewPaths.filter((x) => x.includes('/accessories/'))) byId('accessories').append(figure(p, accessoryCaption(name(p))));
   const propsCaption: Record<string, string> = {
-    'toan2-cd1-b05': 'Phong bì đỏ, vàng, xanh (Toán bài 5)',
-    'toan2-cd4-b20': 'Toa hàng ba màu (Toán bài 20)',
-    'toan2-cd7-b36': 'Hộp huy hiệu vàng, bạc, đồng (Toán bài 36)',
-    'toan2-cd2-b09': 'Bê con: nhỏ hơn bò, mỗi con một màu (Toán bài 9)',
-    'tv2-t08-b15': 'Sách có chú ếch trên bìa, sách tranh bìa xanh (Tiếng Việt bài 15)',
-    'tv2-t18-on-cuoi-ki': 'Nhịp cầu đầu, giữa, cuối (Tiếng Việt ôn cuối kì)',
+    'toan2-cd1-b05': 'Phong bì đỏ, vàng, xanh (Toán · Túi thư của Chó Mực)',
+    'toan2-cd4-b20': 'Toa hàng ba màu (Toán · Khỉ Ổi ghép đoàn xe kéo)',
+    'toan2-cd7-b36': 'Hộp huy hiệu vàng, bạc, đồng (Toán · Lễ tổng kết trong đại sảnh)',
+    'toan2-cd2-b09': 'Bê con: nhỏ hơn bò, mỗi con một màu (Toán · Đàn bê con chạy ra chạy vào)',
+    'tv2-t08-b15': 'Sách có chú ếch trên bìa, sách tranh bìa xanh (Tiếng Việt · Kệ sách đổ rầm trong phòng đọc)',
+    'tv2-t18-on-cuoi-ki': 'Nhịp cầu đầu, giữa, cuối (Tiếng Việt · Khánh thành cầu treo trước cổng thành)',
   };
   for (const p of reviewPaths.filter((x) => x.includes('/review/props/')).sort()) byId('lesson-props').append(figure(p, propsCaption[name(p)] ?? name(p)));
   // The school beside the owner's mock frames (bundled with the review page only, from designs/).
@@ -377,13 +377,82 @@ async function renderCoverage(generated: readonly string[]): Promise<void> {
     const head = el('tr');
     for (const h of ['Chủ đề', 'Mục tiêu', 'Đã luyện đủ', 'Bước học', 'Phủ']) head.append(el('th', { textContent: h }));
     table.append(head);
-    for (const t of topics) {
+    const sum = (pick: (t: TopicCoverage) => number): number => topics.reduce((n, t) => n + pick(t), 0);
+    const objectives = sum((t) => t.objectives);
+    const covered = sum((t) => t.covered);
+    // The last row (bold in review.css) is the whole subject; like each topic, it shows 100% only when nothing is missing.
+    const percent = objectives === 0 ? 100 : Math.floor((covered / objectives) * 1000) / 10;
+    const rows = [
+      ...topics.map((t) => [t.title, String(t.objectives), String(t.covered), String(t.steps), `${String(t.percent).replace('.', ',')}%`]),
+      ['Cả môn', String(objectives), String(covered), String(sum((t) => t.steps)), `${String(percent).replace('.', ',')}%`],
+    ];
+    for (const cells of rows) {
       const row = el('tr');
-      for (const cell of [t.title, String(t.objectives), String(t.covered), String(t.steps), `${t.percent}%`]) row.append(el('td', { textContent: cell }));
+      for (const cell of cells) row.append(el('td', { textContent: cell }));
       table.append(row);
     }
     byId('objective-coverage').append(el('figure', {}, [el('figcaption', { textContent: topics[0]?.subjectName ?? subject }), table]));
   }
+}
+
+/** The learning content summary (assets/generated/review/learning-content.json, tools/content/learning-review-summary.ts). */
+type SourceKind = 'original' | 'folk' | 'public-domain' | 'none';
+interface LearningContentSummary {
+  subjects: Array<{ subject: string; subjectName: string; quests: number }>;
+  readings: { total: number; byKind: Record<SourceKind, number>; folk: Array<{ title: string; reading: string }> };
+  copyCheck: { quests: number; topics: number; matches: number } | null;
+}
+
+const LEARNING_CONTENT_FILE = 'generated/review/learning-content.json';
+const SOURCE_KIND_NAMES: Record<SourceKind, string> = {
+  original: 'Tự viết cho game',
+  folk: 'Dân gian (ca dao, đồng dao, truyện kể lại bằng lời mình)',
+  'public-domain': 'Tác giả đã hết thời hạn bảo hộ',
+  none: 'Chưa khai nguồn',
+};
+
+/** Quests rewritten per subject, the copy check's result and where the readings come from (`pnpm content:gaps --review`). */
+async function renderLearningContent(generated: readonly string[]): Promise<void> {
+  const head = byId('learning-content-head');
+  if (!generated.includes(LEARNING_CONTENT_FILE)) {
+    head.textContent = 'Chưa có số liệu: chạy `pnpm content:gaps --review` rồi `pnpm assets:manifest`.';
+    return;
+  }
+  const summary = (await (await fetch(assetHref(LEARNING_CONTENT_FILE))).json()) as LearningContentSummary;
+  const total = summary.subjects.reduce((n, s) => n + s.quests, 0);
+  head.textContent = `Đã viết lại ${total} quest học bằng lời của mình: ${summary.subjects.map((s) => `${s.subjectName} ${s.quests} quest`).join(', ')}.`;
+
+  // Only the counts: the page never shows a fingerprint, the key or the wording a match was found in.
+  const copy = summary.copyCheck;
+  byId('learning-copy-check').append(
+    copy ? badge(copy.matches === 0, `${copy.matches} chỗ trùng`) : badge(false, 'Chưa kiểm'),
+    copy
+      ? ` Kiểm chống chép chạy trên ${copy.quests} quest và ${copy.topics} chủ đề: ${copy.matches === 0 ? 'không chỗ nào trùng chữ sách in, mọi bài đọc đều khai nguồn.' : 'còn chỗ phải viết lại (xem pnpm content:check).'}`
+      : ' Máy sinh số liệu không có khóa vân tay nên chưa kiểm; chạy lại pnpm content:gaps --review trên máy có khóa.',
+  );
+
+  const kinds = el('table', { className: 'coverage' });
+  const kindHead = el('tr');
+  for (const h of ['Nguồn', 'Bài đọc']) kindHead.append(el('th', { textContent: h }));
+  kinds.append(kindHead);
+  const counts = (Object.keys(SOURCE_KIND_NAMES) as SourceKind[])
+    .filter((kind) => kind !== 'none' || summary.readings.byKind.none > 0)
+    .map((kind) => [SOURCE_KIND_NAMES[kind], summary.readings.byKind[kind]] as const);
+  // The last row (bold in review.css) is every reading.
+  for (const [label, count] of [...counts, ['Cả thảy', summary.readings.total] as const]) {
+    const row = el('tr');
+    for (const cell of [label, String(count)]) row.append(el('td', { textContent: cell }));
+    kinds.append(row);
+  }
+  const folk = el(
+    'ul',
+    { className: 'debts' },
+    summary.readings.folk.map((f) => el('li', {}, [el('strong', { textContent: f.reading }), ` (${f.title})`])),
+  );
+  byId('learning-sources').append(
+    el('figure', {}, [el('figcaption', { textContent: 'Bài đọc theo nguồn' }), kinds]),
+    el('figure', {}, [el('figcaption', { textContent: 'Bài đọc dân gian' }), folk]),
+  );
 }
 
 /** The fleet's numbers at one moment of the measuring simulation (tools/bots/learning-report.ts; means are per bot). */
@@ -627,6 +696,7 @@ async function main(): Promise<void> {
   const manifest = (await (await fetch(versioned(`${ASSET_PREFIX}manifest.json`, MANIFEST_VERSION))).json()) as ManifestJson;
   versions = manifestVersions([...manifest.files, ...manifest.generated]);
   const generated = manifest.generated.map((g) => g.path);
+  await renderLearningContent(generated);
   await renderCoverage(generated);
   await renderBotsLearning(generated);
   await renderScreens(generated);

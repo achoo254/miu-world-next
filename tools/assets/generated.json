@@ -298,6 +298,12 @@
     "license": "CC0-1.0"
   },
   {
+    "glob": "generated/review/learning-content.json",
+    "generator": "tools/content/content-gaps.ts",
+    "derivedFrom": [],
+    "license": "CC0-1.0"
+  },
+  {
     "glob": "generated/review/bots-learning.json",
     "generator": "tools/bots/learning-report.ts",
     "derivedFrom": [],

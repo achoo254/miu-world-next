@@ -35789,6 +35789,14 @@
       "bytes": 1079232
     },
     {
+      "path": "generated/review/learning-content.json",
+      "license": "CC0-1.0",
+      "generator": "tools/content/content-gaps.ts",
+      "derivedFrom": [],
+      "sha256": "27bc6ed9a3e4fc44d0cd9ba39f93d8b4eab2cdd06ef3bafba1aabb6134fe18fc",
+      "bytes": 1128
+    },
+    {
       "path": "generated/review/map-budget.json",
       "license": "CC0-1.0",
       "generator": "apps/web/e2e/map-budget.spec.ts",

@@ -1,7 +1,7 @@
 // `pnpm content:gaps [--missing] [--review]`: which objectives of each topic (content/learning/topics) the active
 // quests practise, and which exercise kinds are still missing. `--missing` lists every objective, not only the ones
-// short of a kind; `--review` also writes the totals per topic for the review page
-// (assets/generated/review/objective-coverage.json; run `pnpm assets:manifest` after it).
+// short of a kind; `--review` also writes the totals per topic and the learning content summary for the review page
+// (assets/generated/review/objective-coverage.json and learning-content.json; run `pnpm assets:manifest` after it).
 import { writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { parseArgs } from 'node:util';
@@ -12,8 +12,11 @@ import { CONTENT_DIR, readContentJson, readQuestDefinitions } from '../../apps/s
 import { readTopicFiles } from '../../apps/server/src/content/learning-topics';
 import { ASSETS_DIR } from '../assets/asset-lib';
 import { checkLearningLinks, type ObjectiveCoverage } from './learning-links';
+import { learningReviewSummary, type CopyCheckResult } from './learning-review-summary';
+import { checkRepoTextbookCopy } from './no-textbook-copy';
 
 export const COVERAGE_FILE = path.join(ASSETS_DIR, 'generated/review/objective-coverage.json');
+export const LEARNING_CONTENT_FILE = path.join(ASSETS_DIR, 'generated/review/learning-content.json');
 
 /** One line per topic (objectives practised in full / all), then its objectives that miss a kind (all with `showAll`). */
 export function objectiveTable(coverage: readonly ObjectiveCoverage[], showAll: boolean): string[] {
@@ -84,7 +87,13 @@ function main(): void {
     const { subjects } = readContentJson(SkillCatalog, path.join(CONTENT_DIR, 'learning/skills.json'));
     const names = new Map(subjects.map((s) => [s.id, s.name]));
     writeFileSync(COVERAGE_FILE, `${JSON.stringify(coverageSummary(topics, report.coverage, names), null, 2)}\n`);
-    console.log(`\nreview totals written to ${path.relative(process.cwd(), COVERAGE_FILE)} (run pnpm assets:manifest)`);
+    // The copy check as content:check runs it; only its counts reach the page, never what matched.
+    const copy = checkRepoTextbookCopy(quests, topics);
+    for (const warning of copy.warnings) console.warn(`warning: ${warning}`);
+    const copyCheck: CopyCheckResult | null = copy.warnings.length > 0 ? null : { quests: quests.length, topics: topics.length, matches: copy.issues.length };
+    writeFileSync(LEARNING_CONTENT_FILE, `${JSON.stringify(learningReviewSummary(quests, topics, names, copyCheck), null, 2)}\n`);
+    for (const file of [COVERAGE_FILE, LEARNING_CONTENT_FILE]) console.log(`review totals written to ${path.relative(process.cwd(), file)}`);
+    console.log('run pnpm assets:manifest');
   }
   const problems = [...issues, ...report.issues];
   if (problems.length > 0) {
