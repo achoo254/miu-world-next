@@ -189,17 +189,14 @@ export class MultiplayerSession {
         return;
       }
       case 'chat': {
+        // Shown once, in the bubble over the speaker (who is always in her room): no second line on the screen.
         remote.sayChat(message.id, message.text);
-        const name = this.nameOf(message.id);
-        if (message.to === this.selfId && name) social?.toast({ kind: 'said', name, text: message.text });
         return;
       }
       case 'bot-say': {
         const line = botLinePair(message.key, message.variant);
         if (!line) return;
         remote.sayLine(message.id, line);
-        const name = this.nameOf(message.id);
-        if (message.to === this.selfId && name) social?.toast({ kind: 'bot-said', name, line });
         return;
       }
       case 'bot-doing':
@@ -247,7 +244,8 @@ export class MultiplayerSession {
       }
       case 'party-chat':
         remote.sayChat(message.from, message.text);
-        if (message.from !== this.selfId) social?.toast({ kind: 'party-chat', name: message.displayName, text: message.text });
+        // A teammate on another map has no bubble here: only then is the line written on the screen.
+        if (message.from !== this.selfId && !remote.has(message.from)) social?.toast({ kind: 'party-chat', name: message.displayName, text: message.text });
         return;
       case 'party-goto': {
         // At a home, the home of `host`: her own one is "no host".

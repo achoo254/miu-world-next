@@ -341,6 +341,11 @@ export class RemotePlayerManager {
     this.entities.get(id)?.bubble.show(t(EMOTE_LINE[emote]));
   }
 
+  /** Whether this player stands in her room (her bubble can be seen). */
+  has(id: string): boolean {
+    return this.entities.has(id);
+  }
+
   sayChat(id: string, text: string): void {
     this.entities.get(id)?.bubble.show(cannedLine(text));
   }

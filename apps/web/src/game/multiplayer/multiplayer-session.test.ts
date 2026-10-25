@@ -400,7 +400,8 @@ describe('companion bots in the online session', () => {
     ws.receive({ type: 'bot-say', id: 'bot-tt-1', key: 'invite', variant: 11, to: 'p-me' });
     const line = linesOf('online.botLines.invite')[11];
     expect(sayLine).toHaveBeenLastCalledWith('bot-tt-1', line);
-    expect(social.getSnapshot().toast).toMatchObject({ kind: 'bot-said', name: 'Bé Bông', line });
+    // Said to her, it still shows only in the bot's bubble.
+    expect(social.getSnapshot().toast).toBeNull();
     online.dispose();
   });
 
