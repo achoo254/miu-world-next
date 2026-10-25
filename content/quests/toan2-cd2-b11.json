@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Heo Ủn và cây táo rụng",
   "status": "active",
-  "lesson": "toan2-t1-b11",
   "topic": "cong-tru-qua-10",
   "summary": "Cây táo già bên hàng quả rụng quả lộp độp, Heo Ủn vừa nhặt vừa… ăn; {name} giúp Heo tính còn lại bao nhiêu quả bằng cách trừ qua 10, rồi đi khắp khu chợ rau hoa giải đố cùng Thỏ Sữa, Ong Chăm, Mèo Nhung, Sâu Bim, Cáo Gió, Bò Kem và chú Dũng.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Chợ phiên, khu chợ rau hoa: gốc táo bên hàng quả, sạp rau cải, hàng hoa dâm bụt, sạp tranh hoa giấy, đống bí ngô ở hàng bầu bí, lối đi giữa hai dãy sạp, bãi cỏ bờ kênh, cổng sau của chợ, chân cầu rồng bắc qua kênh",
     "goal": "Giúp Heo Ủn đếm số táo còn lại để đủ làm bánh táo mời cả chợ",
     "play": "Nhặt táo, điền phép tách, tính nhẩm, đưa thỏ về chuồng, đưa ong về hoa, chọn máy bay, phân loại cánh diều, giải bài toán",
-    "learn": "Toán 2 Bài 11: phép trừ (qua 10) trong phạm vi 20",
+    "learn": "Phép trừ qua 10 trong phạm vi 20: bẻ số bị trừ, nhẩm theo từng nhóm, so sánh hiệu, bài toán bớt",
     "reward": "90 XP, 15 xu, Phép trừ +2, Bài toán có lời văn +1",
-    "next": "Bài 12 \"Bảng trừ (qua 10)\""
+    "next": "Gấu Trúc Nứa và những lóng tre khắc bảng trừ"
   },
   "phases": {
     "hook": "tao-rung-lop-dop",
@@ -109,19 +108,19 @@
       "target": "heo-un",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Heo Ủn bày mẹo: muốn trừ qua 10 thì tách số bị trừ thành 10 và số lẻ, lấy 10 trừ trước rồi cộng phần lẻ.",
-      "template": "a) Tính 11 – 6. • Tách: 11 = 10 + 1 • 10 – 6 = 4 • 4 + 1 = {{b1}} 11 – 6 = {{b2}}\nb) Tính 13 – 5. • Tách: 13 = 10 + 3 • 10 – {{b3}} = {{b4}} • {{b5}} + 3 = {{b6}} 13 – 5 = {{b7}}",
+      "prompt": "Mẹo của Heo Ủn: khi phải trừ qua 10, hãy bẻ số bị trừ thành một chục và phần lẻ. Lấy chục trừ số trừ trước, rồi cộng phần lẻ vào kết quả.",
+      "template": "a) Phép 12 – 7\n• Bẻ số: 12 = 10 + 2\n• 10 – 7 = 3\n• 3 + 2 = {{b1}}\n• Vậy 12 – 7 = {{b2}}\nb) Phép 14 – 6\n• Bẻ số: 14 = 10 + {{b3}}\n• 10 – 6 = {{b4}}\n• {{b5}} + 4 = {{b6}}\n• Vậy 14 – 6 = {{b7}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
-            },
-            {
               "id": "o5",
               "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
             },
             {
               "id": "o15",
@@ -141,8 +140,8 @@
               "text": "5"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -152,226 +151,6 @@
             {
               "id": "o3",
               "text": "3"
-            },
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o15",
-              "text": "15"
-            }
-          ]
-        },
-        {
-          "id": "b6",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            }
-          ]
-        },
-        {
-          "id": "b7",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o10",
-              "text": "10"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-hoat-dong-1-a",
-        "toan2-t1-b11-hoat-dong-1-b"
-      ],
-      "support": {
-        "guide": [
-          "Tách số bị trừ thành 10 cộng với phần lẻ.",
-          "Lấy 10 trừ số trừ, rồi cộng phần lẻ vào kết quả."
-        ],
-        "hint": "Với 13 – 5: lấy 10 – 5 trước, được 5, rồi thêm 3.",
-        "answer": {
-          "text": "a) Tính 11 – 6. • Tách: 11 = 10 + 1 • 10 – 6 = 4 • 4 + 1 = 5 11 – 6 = 5; b) Tính 13 – 5. • Tách: 13 = 10 + 3 • 10 – 5 = 5 • 5 + 3 = 8 13 – 5 = 8",
-          "explanation": "11 – 6: 10 – 6 = 4, 4 + 1 = 5. 13 – 5: 10 – 5 = 5, 5 + 3 = 8."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Mẹo tách số chạy ngon lành, Heo Ủn gật gù như ông giáo!",
-          "Tách 10 ra trước là trừ nhẹ tênh luôn, đúng không nào?",
-          "Hai phép trừ xong xuôi, táo vẫn còn nguyên, Heo chưa kịp ăn."
-        ],
-        "wrong": [
-          "Lấy 10 trừ số trừ trước, sau đó mới cộng phần lẻ nhé.",
-          "Phần lẻ của 13 là 3 đấy, đừng để nó trốn mất.",
-          "Ô cuối của mỗi dòng phải bằng kết quả bước cộng ngay trước."
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o5",
-          "b2": "o5",
-          "b3": "o5",
-          "b4": "o5",
-          "b5": "o5",
-          "b6": "o8",
-          "b7": "o8"
-        }
-      }
-    },
-    {
-      "id": "nham-tru-11",
-      "title": "Mười một quả táo",
-      "target": "heo-un",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Rổ có 11 quả táo, mỗi lần Heo Ủn lỡ ăn mất vài quả. Tính nhẩm.",
-      "template": "11 – 2 = {{b1}}\n11 – 3 = {{b2}}\n11 – 4 = {{b3}}\n11 – 5 = {{b4}}\n11 – 6 = {{b5}}\n11 – 7 = {{b6}}\n11 – 8 = {{b7}}\n11 – 9 = {{b8}}",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o11",
-              "text": "11"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o10",
-              "text": "10"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            }
-          ]
-        },
-        {
-          "id": "b6",
-          "options": [
-            {
-              "id": "o2",
-              "text": "2"
             },
             {
               "id": "o4",
@@ -384,6 +163,232 @@
           ]
         },
         {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o4",
+              "text": "4"
+            },
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o14",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "options": [
+            {
+              "id": "o3",
+              "text": "3"
+            },
+            {
+              "id": "o4",
+              "text": "4"
+            },
+            {
+              "id": "o14",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "id": "b6",
+          "options": [
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        },
+        {
+          "id": "b7",
+          "options": [
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        }
+      ],
+      "skill": "phep-tru",
+      "support": {
+        "guide": [
+          "Bẻ số bị trừ thành 10 cộng phần lẻ.",
+          "Lấy 10 trừ số trừ trước, rồi cộng phần lẻ vào."
+        ],
+        "hint": "14 – 6: lấy 10 – 6 được 4, rồi cộng thêm phần lẻ 4.",
+        "answer": {
+          "text": "a) Phép 12 – 7; • Bẻ số: 12 = 10 + 2; • 10 – 7 = 3; • 3 + 2 = 5; • Vậy 12 – 7 = 5; b) Phép 14 – 6; • Bẻ số: 14 = 10 + 4; • 10 – 6 = 4; • 4 + 4 = 8; • Vậy 14 – 6 = 8",
+          "explanation": "12 – 7: 10 – 7 = 3, 3 + 2 = 5. 14 – 6: 14 = 10 + 4, 10 – 6 = 4, 4 + 4 = 8."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Hai phép bẻ số trót lọt, Heo Ủn vỗ bụng tròn xoe!",
+          "Tách chục ra trừ trước, cậu làm gọn như bác thợ bánh.",
+          "Mẹo của Heo Ủn vào tay cậu là chạy băng băng."
+        ],
+        "wrong": [
+          "Số lẻ chỉ cộng vào sau khi đã lấy 10 trừ số trừ nhé.",
+          "Kiểm tra lại bước 10 trừ số trừ trước.",
+          "Phần lẻ của 14 là 4, đừng lẫn với số trừ."
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o5",
+          "b2": "o5",
+          "b3": "o4",
+          "b4": "o4",
+          "b5": "o4",
+          "b6": "o8",
+          "b7": "o8"
+        }
+      },
+      "expression": {
+        "b1": "3 + 2",
+        "b2": "12 - 7",
+        "b3": "10 + ? = 14",
+        "b4": "10 - 6",
+        "b5": "? + 4 = 8",
+        "b6": "4 + 4",
+        "b7": "14 - 6"
+      },
+      "objective": "cong-tru-qua-10-tru"
+    },
+    {
+      "id": "nham-tru-11",
+      "title": "Rổ táo mười một quả",
+      "target": "heo-un",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Rổ có 11 quả táo, Heo Ủn lỡ miệng ăn mất vài quả mỗi lần. Cậu nhẩm xem sau mỗi lần còn lại bao nhiêu quả.",
+      "template": "11 – 4 = {{b1}}\n11 – 8 = {{b2}}\n11 – 6 = {{b3}}\n11 – 3 = {{b4}}\n11 – 9 = {{b5}}\n11 – 5 = {{b6}}\n11 – 7 = {{b7}}\n11 – 2 = {{b8}}",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o17",
+              "text": "17"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o2",
+              "text": "2"
+            },
+            {
+              "id": "o3",
+              "text": "3"
+            },
+            {
+              "id": "o13",
+              "text": "13"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o15",
+              "text": "15"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "options": [
+            {
+              "id": "o1",
+              "text": "1"
+            },
+            {
+              "id": "o2",
+              "text": "2"
+            },
+            {
+              "id": "o12",
+              "text": "12"
+            }
+          ]
+        },
+        {
+          "id": "b6",
+          "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o16",
+              "text": "16"
+            }
+          ]
+        },
+        {
           "id": "b7",
           "options": [
             {
@@ -395,8 +400,8 @@
               "text": "4"
             },
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o14",
+              "text": "14"
             }
           ]
         },
@@ -404,66 +409,67 @@
           "id": "b8",
           "options": [
             {
-              "id": "o0",
-              "text": "0"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o2",
-              "text": "2"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o12",
-              "text": "12"
+              "id": "o19",
+              "text": "19"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-hoat-dong-2-a",
-        "toan2-t1-b11-hoat-dong-2-b",
-        "toan2-t1-b11-hoat-dong-2-c",
-        "toan2-t1-b11-hoat-dong-2-d",
-        "toan2-t1-b11-hoat-dong-2-e",
-        "toan2-t1-b11-hoat-dong-2-g",
-        "toan2-t1-b11-hoat-dong-2-h",
-        "toan2-t1-b11-hoat-dong-2-i"
-      ],
       "support": {
         "guide": [
-          "11 – 1 = 10, nên cứ trừ thêm từng quả từ 10 xuống.",
-          "Trừ càng nhiều thì kết quả càng bé."
+          "11 – 1 = 10, từ đó trừ thêm dần cho đủ số quả ăn.",
+          "Heo Ủn ăn càng nhiều thì rổ càng vơi."
         ],
-        "hint": "11 – 2 = 9; mỗi dòng sau trừ thêm 1 nên kết quả bớt đi 1.",
+        "hint": "11 – 3 = 8 vì 11 – 1 = 10 rồi bớt thêm 2.",
         "answer": {
-          "text": "11 – 2 = 9; 11 – 3 = 8; 11 – 4 = 7; 11 – 5 = 6; 11 – 6 = 5; 11 – 7 = 4; 11 – 8 = 3; 11 – 9 = 2",
-          "explanation": "Các kết quả lần lượt là 9, 8, 7, 6, 5, 4, 3, 2: số trừ tăng 1 thì hiệu giảm 1."
+          "text": "11 – 4 = 7; 11 – 8 = 3; 11 – 6 = 5; 11 – 3 = 8; 11 – 9 = 2; 11 – 5 = 6; 11 – 7 = 4; 11 – 2 = 9",
+          "explanation": "Từ 11 trừ đi 4, 8, 6, 3, 9, 5, 7, 2 lần lượt còn 7, 3, 5, 8, 2, 6, 4, 9."
         }
       },
       "feedback": {
         "right": [
-          "Tám phép trừ trúng phóc, rổ táo không thiếu quả nào trong sổ!",
-          "Số trừ tăng dần, hiệu giảm dần, cậu nhìn ra quy luật rồi.",
-          "Heo Ủn xoa bụng: tính giỏi thế này tớ không dám ăn vụng nữa."
+          "Rổ táo vơi dần đúng từng quả, Heo Ủn xấu hổ che miệng.",
+          "Tám lần nhẩm, tám lần trúng, cậu nhẩm còn nhanh hơn Heo nhai.",
+          "Không sai phép nào, Heo Ủn hứa lần sau chia đều cho cả chợ."
         ],
         "wrong": [
-          "Thử đếm lùi từ 11 trên đầu ngón tay xem nào.",
-          "Một dòng đang lệch, nhớ số trừ tăng 1 thì hiệu bớt 1.",
-          "Tách 11 thành 10 và 1 rồi trừ từ 10 cho dễ nhé."
+          "Ăn càng nhiều quả thì còn lại càng ít, xem lại ô đó nhé.",
+          "Từ 11 lùi về 10 trước rồi mới lùi tiếp.",
+          "Kết quả phép trừ luôn bé hơn 11, cậu soát lại một ô nhé."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o9",
-          "b2": "o8",
-          "b3": "o7",
-          "b4": "o6",
-          "b5": "o5",
-          "b6": "o4",
-          "b7": "o3",
-          "b8": "o2"
+          "b1": "o7",
+          "b2": "o3",
+          "b3": "o5",
+          "b4": "o8",
+          "b5": "o2",
+          "b6": "o6",
+          "b7": "o4",
+          "b8": "o9"
         }
-      }
+      },
+      "expression": {
+        "b1": "11 - 4",
+        "b2": "11 - 8",
+        "b3": "11 - 6",
+        "b4": "11 - 3",
+        "b5": "11 - 9",
+        "b6": "11 - 5",
+        "b7": "11 - 7",
+        "b8": "11 - 2"
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "tho-ve-chuong",
@@ -472,7 +478,7 @@
       "target": "toan2-cd2-b11-tho-may",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Năm chú thỏ ngửi mùi táo chui ra khỏi lồng chạy ào tới, Heo Ủn phải lùa về. Tìm chuồng cho mỗi chú thỏ.",
+      "prompt": "Thỏ Sữa thả năm chú thỏ con ra sạp rau cải, chú nào cũng đeo một phép trừ. Chú thỏ mẫu 13 – 9 đã chui về chuồng 4. Cậu giúp Thỏ Sữa lùa các chú còn lại về chuồng ghi đúng kết quả.",
       "groups": [
         {
           "id": "nhom-chuong-3",
@@ -501,147 +507,73 @@
       ],
       "items": [
         {
-          "id": "tho-11-8",
-          "label": "11 – 8"
+          "id": "tho-15-9",
+          "label": "15 – 9"
         },
         {
-          "id": "tho-13-5",
-          "label": "13 – 5"
+          "id": "tho-12-5",
+          "label": "12 – 5"
         },
         {
-          "id": "tho-11-5",
-          "label": "11 – 5"
+          "id": "tho-14-6",
+          "label": "14 – 6"
         },
         {
-          "id": "tho-11-6",
-          "label": "11 – 6"
+          "id": "tho-13-8",
+          "label": "13 – 8"
         },
         {
-          "id": "tho-11-4",
-          "label": "11 – 4"
+          "id": "tho-12-9",
+          "label": "12 – 9"
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-hoat-dong-3-a",
-        "toan2-t1-b11-hoat-dong-3-b",
-        "toan2-t1-b11-hoat-dong-3-c",
-        "toan2-t1-b11-hoat-dong-3-d",
-        "toan2-t1-b11-hoat-dong-3-e"
-      ],
       "support": {
         "guide": [
-          "Tính phép trừ trên mình mỗi chú thỏ.",
-          "Thỏ về chuồng ghi đúng kết quả; chuồng 4 là của chú thỏ mẫu 11 – 7."
+          "Tính phép trừ đeo trên mình từng chú thỏ.",
+          "Thỏ về chuồng ghi đúng kết quả; chuồng 4 đã có chú thỏ mẫu."
         ],
-        "hint": "13 – 5: tách 13 = 10 + 3, 10 – 5 = 5, 5 + 3 = 8.",
+        "hint": "14 – 6: bẻ 14 = 10 + 4, 10 – 6 = 4, 4 + 4 = 8.",
         "answer": {
-          "text": "11 – 8 → chuồng 3; 13 – 5 → chuồng 8; 11 – 5 → chuồng 6; 11 – 6 → chuồng 5; 11 – 4 → chuồng 7",
-          "explanation": "11 – 8 = 3, 13 – 5 = 8, 11 – 5 = 6, 11 – 6 = 5, 11 – 4 = 7."
+          "text": "15 – 9 → chuồng 6; 12 – 5 → chuồng 7; 14 – 6 → chuồng 8; 13 – 8 → chuồng 5; 12 – 9 → chuồng 3",
+          "explanation": "15 – 9 = 6, 12 – 5 = 7, 14 – 6 = 8, 13 – 8 = 5, 12 – 9 = 3."
         }
       },
       "feedback": {
         "right": [
-          "Năm chú thỏ chui tọt vào chuồng, chỉ còn tai vẫy vẫy ra ngoài.",
-          "Thỏ nào cũng về đúng nhà, Thỏ Sữa cài then cửa chuồng cạch một cái.",
-          "Không chuồng nào chật, không chú thỏ nào lạc, hay quá!"
+          "Năm chú thỏ chui vào đúng chuồng, Thỏ Sữa vẫy tai khen cậu!",
+          "Lùa thỏ khéo như người chăn nhiều năm, chẳng chú nào lạc.",
+          "Cửa chuồng đóng lại cạch cạch, đàn thỏ nằm ngoan ngoãn."
         ],
         "wrong": [
-          "Có chú thỏ đang chui nhầm nhà hàng xóm kìa.",
-          "Tính kết quả trên mình thỏ trước rồi hẵng lùa nhé.",
-          "Chuồng 4 có thỏ mẫu ở rồi, thỏ khác đừng chen vào."
+          "Một chú thỏ đang gõ nhầm cửa chuồng, tính lại phép trừ của chú nhé.",
+          "Chuồng ghi số nào thì chú thỏ phải có hiệu bằng số đó.",
+          "12 – 9: bẻ 12 = 10 + 2 rồi lấy 10 – 9 trước."
         ]
       },
       "answer": {
         "assignment": {
-          "tho-11-8": "nhom-chuong-3",
-          "tho-13-5": "nhom-chuong-8",
-          "tho-11-5": "nhom-chuong-6",
-          "tho-11-6": "nhom-chuong-5",
-          "tho-11-4": "nhom-chuong-7"
+          "tho-15-9": "nhom-chuong-6",
+          "tho-12-5": "nhom-chuong-7",
+          "tho-14-6": "nhom-chuong-8",
+          "tho-13-8": "nhom-chuong-5",
+          "tho-12-9": "nhom-chuong-3"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "tach-12-va-13",
-      "title": "Tách số lần nữa",
+      "title": "Bẻ số thêm lần nữa",
       "goTo": "Về gốc táo bên hàng quả, Heo Ủn vẫy tay đòi làm thêm phép tách",
       "target": "heo-un",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Heo Ủn đòi làm thêm hai phép tách \"cho chắc bụng\".",
-      "template": "a) Tính 12 – 4. • Tách: 12 = 10 + 2 • 10 – 4 = {{b1}} • {{b2}} + 2 = {{b3}} 12 – 4 = {{b4}}\nb) Tính 13 – 6. • Tách: 13 = 10 + {{b5}} • 10 – {{b6}} = {{b7}} • {{b8}} + {{b9}} = {{b10}} 13 – 6 = {{b11}}",
+      "prompt": "Heo Ủn đòi bẻ số thêm hai phép nữa \"cho chắc bụng\". Cậu điền các ô còn thiếu.",
+      "template": "a) Phép 13 – 8\n• Bẻ số: 13 = 10 + {{b1}}\n• 10 – 8 = {{b2}}\n• {{b3}} + 3 = {{b4}}\n• Vậy 13 – 8 = {{b5}}\nb) Phép 11 – 4\n• Bẻ số: 11 = 10 + {{b6}}\n• 10 – 4 = {{b7}}\n• {{b8}} + 1 = {{b9}}\n• Vậy 11 – 4 = {{b10}}",
       "blanks": [
         {
           "id": "b1",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            }
-          ]
-        },
-        {
-          "id": "b5",
           "options": [
             {
               "id": "o3",
@@ -658,192 +590,19 @@
           ]
         },
         {
-          "id": "b6",
-          "options": [
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o16",
-              "text": "16"
-            }
-          ]
-        },
-        {
-          "id": "b7",
-          "options": [
-            {
-              "id": "o2",
-              "text": "2"
-            },
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o5",
-              "text": "5"
-            }
-          ]
-        },
-        {
-          "id": "b8",
-          "options": [
-            {
-              "id": "o2",
-              "text": "2"
-            },
-            {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o4",
-              "text": "4"
-            }
-          ]
-        },
-        {
-          "id": "b9",
-          "options": [
-            {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o5",
-              "text": "5"
-            }
-          ]
-        },
-        {
-          "id": "b10",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            }
-          ]
-        },
-        {
-          "id": "b11",
-          "options": [
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-1-a",
-        "toan2-t1-b11-luyen-tap-1-b"
-      ],
-      "support": {
-        "guide": [
-          "Viết số bị trừ thành 10 cộng phần lẻ.",
-          "10 trừ số trừ, được bao nhiêu thì cộng phần lẻ."
-        ],
-        "hint": "13 = 10 + 3; 10 – 6 = 4; 4 + 3 = 7.",
-        "answer": {
-          "text": "a) Tính 12 – 4. • Tách: 12 = 10 + 2 • 10 – 4 = 6 • 6 + 2 = 8 12 – 4 = 8; b) Tính 13 – 6. • Tách: 13 = 10 + 3 • 10 – 6 = 4 • 4 + 3 = 7 13 – 6 = 7",
-          "explanation": "12 – 4: 10 – 4 = 6, 6 + 2 = 8. 13 – 6: 13 = 10 + 3, 10 – 6 = 4, 4 + 3 = 7."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Phép tách thứ hai còn gọn hơn phép thứ nhất, siêu ghê!",
-          "Bụng Heo chưa no nhưng bài thì chắc nịch rồi.",
-          "Cậu tách số nhanh như Heo bổ táo vậy đó."
-        ],
-        "wrong": [
-          "Ô đầu tiên của câu b là phần lẻ của 13 đấy.",
-          "Nhìn lại bước 10 trừ số trừ, kết quả có đúng chưa?",
-          "Cộng phần lẻ vào sau cùng, đừng quên bước này nhé."
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o6",
-          "b2": "o6",
-          "b3": "o8",
-          "b4": "o8",
-          "b5": "o3",
-          "b6": "o6",
-          "b7": "o4",
-          "b8": "o4",
-          "b9": "o3",
-          "b10": "o7",
-          "b11": "o7"
-        }
-      }
-    },
-    {
-      "id": "nham-12-bang-13",
-      "title": "Rổ táo mười hai và bảng trừ 13",
-      "target": "heo-un",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Lần này rổ có 12 quả. Tính nhẩm. Sau đó Heo Ủn kẻ bảng trừ cho 13 quả: Số ?",
-      "template": "12 – 3 = {{b1}}\n12 – 4 = {{b2}}\n12 – 5 = {{b3}}\n12 – 6 = {{b4}}\n12 – 7 = {{b5}}\n12 – 8 = {{b6}}\n12 – 9 = {{b7}}\n12 – 2 = {{b8}}\n– | 13 | 13 | 13 | 13 | 13 | 13\n| 4 | 5 | 6 | 7 | 8 | 9\n| 9 | {{b9}} | {{b10}} | {{b11}} | {{b12}} | {{b13}}",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o11",
-              "text": "11"
-            }
-          ]
-        },
-        {
           "id": "b2",
           "options": [
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o2",
+              "text": "2"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o3",
+              "text": "3"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o12",
+              "text": "12"
             }
           ]
         },
@@ -851,16 +610,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o1",
+              "text": "1"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o2",
+              "text": "2"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o12",
+              "text": "12"
             }
           ]
         },
@@ -868,16 +627,16 @@
           "id": "b4",
           "options": [
             {
+              "id": "o4",
+              "text": "4"
+            },
+            {
               "id": "o5",
               "text": "5"
             },
             {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o8",
-              "text": "8"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -902,16 +661,16 @@
           "id": "b6",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
+              "id": "o0",
+              "text": "0"
             },
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o1",
+              "text": "1"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o11",
+              "text": "11"
             }
           ]
         },
@@ -919,16 +678,16 @@
           "id": "b7",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
               "id": "o5",
               "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -936,38 +695,21 @@
           "id": "b8",
           "options": [
             {
-              "id": "o1",
-              "text": "1"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
         {
           "id": "b9",
-          "options": [
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o10",
-              "text": "10"
-            }
-          ]
-        },
-        {
-          "id": "b10",
           "options": [
             {
               "id": "o7",
@@ -978,18 +720,161 @@
               "text": "8"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
         {
-          "id": "b11",
+          "id": "b10",
           "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o17",
+              "text": "17"
+            }
+          ]
+        }
+      ],
+      "skill": "phep-tru",
+      "support": {
+        "guide": [
+          "Viết số bị trừ thành 10 cộng phần lẻ.",
+          "10 trừ số trừ trước, được bao nhiêu thì cộng phần lẻ vào."
+        ],
+        "hint": "11 – 4: 10 – 4 = 6, rồi cộng thêm phần lẻ 1.",
+        "answer": {
+          "text": "a) Phép 13 – 8; • Bẻ số: 13 = 10 + 3; • 10 – 8 = 2; • 2 + 3 = 5; • Vậy 13 – 8 = 5; b) Phép 11 – 4; • Bẻ số: 11 = 10 + 1; • 10 – 4 = 6; • 6 + 1 = 7; • Vậy 11 – 4 = 7",
+          "explanation": "13 – 8: 13 = 10 + 3, 10 – 8 = 2, 2 + 3 = 5. 11 – 4: 11 = 10 + 1, 10 – 4 = 6, 6 + 1 = 7."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Bẻ số ngọt xớt, hai phép trừ nằm gọn trong bụng Heo Ủn!",
+          "Phần lẻ cộng vào đúng lúc, cậu làm như đầu bếp thứ thiệt.",
+          "Heo Ủn cười khì: hai phép này giờ đã thuộc lòng."
+        ],
+        "wrong": [
+          "Phần lẻ của 13 là 3, của 11 là 1, soát lại ô bẻ số nhé.",
+          "Lấy 10 trừ số trừ rồi mới cộng phần lẻ.",
+          "Một ô ở phép thứ hai còn lệch, tính lại từng dòng."
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o3",
+          "b2": "o2",
+          "b3": "o2",
+          "b4": "o5",
+          "b5": "o5",
+          "b6": "o1",
+          "b7": "o6",
+          "b8": "o6",
+          "b9": "o7",
+          "b10": "o7"
+        }
+      },
+      "expression": {
+        "b1": "10 + ? = 13",
+        "b2": "10 - 8",
+        "b3": "? + 3 = 5",
+        "b4": "2 + 3",
+        "b5": "13 - 8",
+        "b6": "10 + ? = 11",
+        "b7": "10 - 4",
+        "b8": "? + 1 = 7",
+        "b9": "6 + 1",
+        "b10": "11 - 4"
+      },
+      "objective": "cong-tru-qua-10-tru"
+    },
+    {
+      "id": "nham-12-bang-13",
+      "title": "Rổ táo mười ba và bảng nhỏ của 12",
+      "target": "heo-un",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Lần này rổ có 13 quả. Cậu nhẩm từng phép. Sau đó Heo Ủn kẻ bảng nhỏ cho số 12 để cậu điền hiệu.",
+      "template": "13 – 6 = {{b1}}\n13 – 2 = {{b2}}\n13 – 9 = {{b3}}\n13 – 4 = {{b4}}\n13 – 7 = {{b5}}\n13 – 3 = {{b6}}\n13 – 8 = {{b7}}\n13 – 5 = {{b8}}\nBảng nhỏ của 12\nSố trừ 4: hiệu {{b9}}\nSố trừ 6: hiệu {{b10}}\nSố trừ 7: hiệu {{b11}}\nSố trừ 9: hiệu {{b12}}\nSố trừ 8: hiệu {{b13}}",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o17",
+              "text": "17"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o10",
+              "text": "10"
+            },
+            {
+              "id": "o11",
+              "text": "11"
+            },
+            {
+              "id": "o21",
+              "text": "21"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o3",
+              "text": "3"
+            },
             {
               "id": "o4",
               "text": "4"
             },
+            {
+              "id": "o14",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o19",
+              "text": "19"
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "options": [
             {
               "id": "o5",
               "text": "5"
@@ -997,11 +882,32 @@
             {
               "id": "o6",
               "text": "6"
+            },
+            {
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
         {
-          "id": "b12",
+          "id": "b6",
+          "options": [
+            {
+              "id": "o1",
+              "text": "1"
+            },
+            {
+              "id": "o10",
+              "text": "10"
+            },
+            {
+              "id": "o11",
+              "text": "11"
+            }
+          ]
+        },
+        {
+          "id": "b7",
           "options": [
             {
               "id": "o5",
@@ -1018,6 +924,91 @@
           ]
         },
         {
+          "id": "b8",
+          "options": [
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        },
+        {
+          "id": "b9",
+          "options": [
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        },
+        {
+          "id": "b10",
+          "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o16",
+              "text": "16"
+            }
+          ]
+        },
+        {
+          "id": "b11",
+          "options": [
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o15",
+              "text": "15"
+            }
+          ]
+        },
+        {
+          "id": "b12",
+          "options": [
+            {
+              "id": "o2",
+              "text": "2"
+            },
+            {
+              "id": "o3",
+              "text": "3"
+            },
+            {
+              "id": "o13",
+              "text": "13"
+            }
+          ]
+        },
+        {
           "id": "b13",
           "options": [
             {
@@ -1029,68 +1020,69 @@
               "text": "4"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o14",
+              "text": "14"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-2-a",
-        "toan2-t1-b11-luyen-tap-2-b",
-        "toan2-t1-b11-luyen-tap-2-c",
-        "toan2-t1-b11-luyen-tap-2-d",
-        "toan2-t1-b11-luyen-tap-2-e",
-        "toan2-t1-b11-luyen-tap-2-g",
-        "toan2-t1-b11-luyen-tap-2-h",
-        "toan2-t1-b11-luyen-tap-2-i",
-        "toan2-t1-b11-luyen-tap-3-a",
-        "toan2-t1-b11-luyen-tap-3-b",
-        "toan2-t1-b11-luyen-tap-3-c",
-        "toan2-t1-b11-luyen-tap-3-d",
-        "toan2-t1-b11-luyen-tap-3-e"
-      ],
       "support": {
         "guide": [
-          "12 – 2 = 10 là mốc dễ nhớ nhất.",
-          "Bảng trừ: hàng trên trừ hàng giữa ra hàng dưới; cột đầu 13 – 4 = 9 là mẫu."
+          "13 – 3 = 10 là mốc dễ nhớ nhất.",
+          "Trong bảng nhỏ của 12, lấy 12 trừ số trừ ghi ở mỗi dòng."
         ],
-        "hint": "Ở bảng trừ, số trừ tăng 1 thì hiệu giảm 1: 9, 8, 7…",
+        "hint": "Số trừ tăng thêm 1 thì hiệu giảm đi 1.",
         "answer": {
-          "text": "12 – 3 = 9; 12 – 4 = 8; 12 – 5 = 7; 12 – 6 = 6; 12 – 7 = 5; 12 – 8 = 4; 12 – 9 = 3; 12 – 2 = 10; – | 13 | 13 | 13 | 13 | 13 | 13; | 4 | 5 | 6 | 7 | 8 | 9; | 9 | 8 | 7 | 6 | 5 | 4",
-          "explanation": "12 trừ 3, 4, 5, 6, 7, 8, 9, 2 được 9, 8, 7, 6, 5, 4, 3, 10. Bảng 13: 13 – 5 = 8, 13 – 6 = 7, 13 – 7 = 6, 13 – 8 = 5, 13 – 9 = 4."
+          "text": "13 – 6 = 7; 13 – 2 = 11; 13 – 9 = 4; 13 – 4 = 9; 13 – 7 = 6; 13 – 3 = 10; 13 – 8 = 5; 13 – 5 = 8; Bảng nhỏ của 12; Số trừ 4: hiệu 8; Số trừ 6: hiệu 6; Số trừ 7: hiệu 5; Số trừ 9: hiệu 3; Số trừ 8: hiệu 4",
+          "explanation": "13 trừ 6, 2, 9, 4, 7, 3, 8, 5 được 7, 11, 4, 9, 6, 10, 5, 8. Bảng của 12: 12 – 4 = 8, 12 – 6 = 6, 12 – 7 = 5, 12 – 9 = 3, 12 – 8 = 4."
         }
       },
       "feedback": {
         "right": [
-          "Bảng trừ thẳng hàng như luống rau, Heo Ủn vỗ tay bành bạch!",
-          "Mười ba ô đúng cả, rổ táo này coi như sổ sách minh bạch.",
-          "Cậu thấy chưa, hiệu cứ giảm đều 1 như bậc cầu thang."
+          "Mười ba phép nhẩm không vấp phép nào, Heo Ủn há hốc mồm!",
+          "Bảng nhỏ của 12 đã đầy đủ, nét chữ Heo kẻ cũng đẹp thêm.",
+          "Tính xong cả rổ lẫn bảng, cậu đúng là thợ nhẩm số một."
         ],
         "wrong": [
-          "Trong bảng trừ, hiệu đi xuống từng nấc một đấy.",
-          "Dòng 12 – 2 có kết quả tròn chục, xem lại nhé.",
-          "Hàng trên trừ hàng giữa mới ra hàng dưới cùng."
+          "Có phép nhẩm bị lệch một đơn vị, soát lại nhé.",
+          "Số trừ lớn hơn thì hiệu phải bé hơn.",
+          "Ở bảng nhỏ, lấy 12 trừ số ghi trên dòng đó chứ không phải 13."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o9",
-          "b2": "o8",
-          "b3": "o7",
-          "b4": "o6",
-          "b5": "o5",
-          "b6": "o4",
-          "b7": "o3",
-          "b8": "o10",
+          "b1": "o7",
+          "b2": "o11",
+          "b3": "o4",
+          "b4": "o9",
+          "b5": "o6",
+          "b6": "o10",
+          "b7": "o5",
+          "b8": "o8",
           "b9": "o8",
-          "b10": "o7",
-          "b11": "o6",
-          "b12": "o5",
+          "b10": "o6",
+          "b11": "o5",
+          "b12": "o3",
           "b13": "o4"
         }
-      }
+      },
+      "expression": {
+        "b1": "13 - 6",
+        "b2": "13 - 2",
+        "b3": "13 - 9",
+        "b4": "13 - 4",
+        "b5": "13 - 7",
+        "b6": "13 - 3",
+        "b7": "13 - 8",
+        "b8": "13 - 5",
+        "b9": "12 - 4",
+        "b10": "12 - 6",
+        "b11": "12 - 7",
+        "b12": "12 - 9",
+        "b13": "12 - 8"
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "ong-tim-hoa",
@@ -1099,120 +1091,113 @@
       "target": "toan2-cd2-b11-ong-cham",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Ong Chăm: \"Vo ve, cả đàn tớ quên mất hoa của mình rồi!\" Tìm bông hoa cho ong đậu.",
+      "prompt": "Ong Chăm vo ve: \"Cả đàn tớ lạc mất hoa của mình rồi!\" Chú ong mẫu 15 – 9 đã đậu ở bông hoa 6. Cậu chỉ đường cho các chú ong còn lại về bông hoa ghi đúng kết quả.",
       "groups": [
-        {
-          "id": "nhom-bong-hoa-5",
-          "label": "Bông hoa 5"
-        },
         {
           "id": "nhom-bong-hoa-6",
           "label": "Bông hoa 6"
         },
         {
-          "id": "nhom-bong-hoa-7",
-          "label": "Bông hoa 7"
+          "id": "nhom-bong-hoa-8",
+          "label": "Bông hoa 8"
+        },
+        {
+          "id": "nhom-bong-hoa-9",
+          "label": "Bông hoa 9"
         }
       ],
       "items": [
         {
-          "id": "ong-11-5",
-          "label": "11 – 5"
+          "id": "ong-14-6",
+          "label": "14 – 6"
         },
         {
-          "id": "ong-12-6",
-          "label": "12 – 6"
+          "id": "ong-13-5",
+          "label": "13 – 5"
         },
         {
-          "id": "ong-12-5",
-          "label": "12 – 5"
+          "id": "ong-12-3",
+          "label": "12 – 3"
         },
         {
-          "id": "ong-13-7",
-          "label": "13 – 7"
+          "id": "ong-17-8",
+          "label": "17 – 8"
         },
         {
-          "id": "ong-11-4",
-          "label": "11 – 4"
+          "id": "ong-16-8",
+          "label": "16 – 8"
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-4-a",
-        "toan2-t1-b11-luyen-tap-4-b",
-        "toan2-t1-b11-luyen-tap-4-c",
-        "toan2-t1-b11-luyen-tap-4-d",
-        "toan2-t1-b11-luyen-tap-4-e"
-      ],
       "support": {
         "guide": [
           "Tính phép trừ ghi trên mỗi chú ong.",
           "Ong bay tới bông hoa ghi đúng kết quả."
         ],
-        "hint": "12 – 6 và 13 – 7 cùng ra một kết quả.",
+        "hint": "14 – 6 và 16 – 8 cùng cho một kết quả.",
         "answer": {
-          "text": "Bông hoa 6: 11 – 5, 12 – 6, 13 – 7; bông hoa 7: 12 – 5, 11 – 4",
-          "explanation": "11 – 5 = 6, 12 – 6 = 6, 12 – 5 = 7, 13 – 7 = 6, 11 – 4 = 7. Ong mẫu 13 – 8 đậu bông hoa 5."
+          "text": "Bông hoa 8: 14 – 6, 13 – 5, 16 – 8; bông hoa 9: 12 – 3, 17 – 8",
+          "explanation": "14 – 6 = 8, 13 – 5 = 8, 16 – 8 = 8, 12 – 3 = 9, 17 – 8 = 9. Ong mẫu 15 – 9 = 6 đậu bông hoa 6."
         }
       },
       "feedback": {
         "right": [
-          "Vo ve vo ve! Cả đàn ong hạ cánh êm ru trên hoa.",
-          "Ong Chăm múa một vòng số 8 để cảm ơn cậu đấy.",
-          "Không chú ong nào bị lạc, mật ngọt sắp về tổ rồi!"
+          "Vo ve vo ve, mỗi chú ong đậu đúng bông hoa của mình!",
+          "Ong Chăm xoay một vòng vui mừng, cánh sáng lấp lánh.",
+          "Cậu chỉ đường khéo đến mức ong chẳng cần hỏi lại."
         ],
         "wrong": [
-          "Một chú ong đang đậu nhầm bông, nó kêu vo ve phản đối kìa.",
-          "Tính phép trừ trên cánh ong thật chậm rồi thả lại nhé.",
-          "Có ba chú ong cùng chung một bông hoa đấy."
+          "Có chú ong đậu nhầm bông hoa, tính lại phép trừ của chú ấy.",
+          "Mỗi chú ong chỉ đậu bông hoa ghi đúng hiệu của mình.",
+          "12 – 3: bẻ 12 = 10 + 2, 10 – 3 = 7, 7 + 2 = ?"
         ]
       },
       "answer": {
         "assignment": {
-          "ong-11-5": "nhom-bong-hoa-6",
-          "ong-12-6": "nhom-bong-hoa-6",
-          "ong-12-5": "nhom-bong-hoa-7",
-          "ong-13-7": "nhom-bong-hoa-6",
-          "ong-11-4": "nhom-bong-hoa-7"
+          "ong-14-6": "nhom-bong-hoa-8",
+          "ong-13-5": "nhom-bong-hoa-8",
+          "ong-12-3": "nhom-bong-hoa-9",
+          "ong-17-8": "nhom-bong-hoa-9",
+          "ong-16-8": "nhom-bong-hoa-8"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "hoa-dong-ong-nhat",
       "title": "Bông hoa đông khách nhất",
       "target": "toan2-cd2-b11-ong-cham",
       "kind": "riddle",
-      "question": "Đàn ong đã đậu hết, kể cả chú ong mẫu 13 – 8 ở bông hoa 5. Bông hoa nào có nhiều ong đậu nhất? Gõ số ghi trên bông hoa đó.",
+      "question": "Cả đàn ong đã đậu xong, cùng chú ong mẫu 15 – 9 ở bông hoa 6. Hỏi bông hoa mang số nào đang có nhiều ong nhất? Gõ số ghi trên bông hoa đó.",
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-4-g"
-      ],
       "support": {
         "guide": [
-          "Đếm số ong ở từng bông hoa.",
+          "Đếm số ong đậu ở từng bông hoa.",
           "Nhớ tính cả chú ong mẫu."
         ],
-        "hint": "Bông hoa 5 có 1 ong, bông hoa 7 có 2 ong.",
+        "hint": "Bông hoa 6 có 1 ong, bông hoa 9 có 2 ong.",
         "answer": {
-          "text": "Bông hoa 6",
-          "explanation": "Bông hoa 6 có ba chú ong 11 – 5, 12 – 6, 13 – 7 nên đông nhất."
+          "text": "Bông hoa 8",
+          "explanation": "Bông hoa 8 có ba chú ong 14 – 6, 13 – 5, 16 – 8 nên đông nhất."
         }
       },
       "feedback": {
         "right": [
-          "Bông hoa 6 đông vui như hội chợ, chuẩn luôn!",
-          "Ong Chăm tặng cậu một giọt mật bé xíu ngọt lịm.",
-          "Đếm ong mà không bị đốt phát nào, giỏi thật đấy."
+          "Bông hoa tám đông khách nhất, cánh ong rì rào quanh cả bụi!",
+          "Đếm đủ ba chú ong đậu chung một bông, cậu tinh mắt thật.",
+          "Ong Chăm đếm lại một lần nữa rồi gật đầu công nhận."
         ],
         "wrong": [
-          "Đếm lại số ong trên từng bông một nhé.",
-          "Bông hoa 7 chỉ có hai bạn ong thôi.",
-          "Bông nhiều ong nhất có tới ba vị khách cơ."
+          "Hãy đếm số ong ở từng bông hoa rồi so với nhau.",
+          "Bông hoa 6 mới có đúng một chú ong mẫu thôi.",
+          "Gõ số ghi trên bông hoa chứ không gõ số ong."
         ]
       },
       "answer": {
-        "value": 6
-      }
+        "value": 8
+      },
+      "expression": "14 - 6",
+      "objective": "bai-toan-co-loi-van-them-bot"
     },
     {
       "id": "giay-mau-cua-mai",
@@ -1220,37 +1205,36 @@
       "goTo": "Đi tới sạp tranh hoa giấy, Mèo Nhung đang ghim tranh lên vách sạp",
       "target": "toan2-cd2-b11-meo-nhung",
       "kind": "riddle",
-      "question": "Ong Chăm chỉ bức tranh hoa cắt dán Mèo Nhung bày bán. Mai có 13 tờ giấy màu, Mai đã dùng 5 tờ giấy màu để cắt dán bức tranh. Hỏi Mai còn lại bao nhiêu tờ giấy màu?",
+      "question": "Mèo Nhung cắt giấy màu làm tranh hoa giấy bày bán. Cô có 14 tờ giấy, đã cắt hết 8 tờ thành cánh hoa. Hỏi cô còn lại mấy tờ giấy?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-5"
-      ],
       "support": {
         "guide": [
-          "\"Đã dùng\" nghĩa là bớt đi, ta làm phép trừ.",
-          "Lấy số tờ lúc đầu trừ số tờ đã dùng."
+          "\"Đã cắt hết\" nghĩa là bớt đi, ta làm phép trừ.",
+          "Lấy số tờ lúc đầu trừ số tờ đã cắt."
         ],
-        "hint": "Phép tính là 13 – 5.",
+        "hint": "Phép tính là 14 – 8, bẻ 14 thành 10 và 4.",
         "answer": {
-          "text": "13 – 5 = 8. Đáp số: 8 tờ giấy màu",
-          "explanation": "Mai còn lại 13 – 5 = 8 (tờ giấy màu)."
+          "text": "14 – 8 = 6. Đáp số: 6 tờ giấy",
+          "explanation": "Mèo Nhung còn lại 14 – 8 = 6 (tờ giấy)."
         }
       },
       "feedback": {
         "right": [
-          "Tám tờ giấy màu còn lại, đủ cắt thêm cả một sạp hoa giấy!",
-          "Bài toán gọn gàng như nếp gấp giấy thẳng tắp.",
-          "Mèo Nhung ngoe nguẩy đuôi, khoe tranh hoa giấy với khách đi chợ."
+          "Còn sáu tờ giấy, Mèo Nhung cắt thêm được sáu cánh hoa nữa!",
+          "Cắt đi là bớt, cậu chọn đúng phép trừ ngay.",
+          "Sạp tranh hoa giấy sáng bừng lên nhờ phép tính gọn của cậu."
         ],
         "wrong": [
-          "Dùng mất thì còn ít đi, cậu thử phép trừ nhé.",
-          "Lấy 13 bớt đi 5 tờ, còn mấy tờ nào?",
-          "Tách 13 thành 10 và 3 rồi trừ cho dễ."
+          "Cắt dùng rồi thì giấy ít đi, kết quả phải bé hơn 14.",
+          "Lấy 14 trừ 8 nhé, không cộng đâu.",
+          "10 – 8 = 2, rồi cộng phần lẻ 4 xem được mấy."
         ]
       },
       "answer": {
-        "value": 8
-      }
+        "value": 6
+      },
+      "expression": "14 - 8",
+      "objective": "bai-toan-co-loi-van-them-bot"
     },
     {
       "id": "heo-chon-cach",
@@ -1299,32 +1283,15 @@
     },
     {
       "id": "tach-14-va-15",
-      "title": "Tách số mười bốn, mười lăm",
+      "title": "Bẻ số mười lăm, mười sáu",
       "target": "heo-un",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Heo Ủn xếp táo thành một rổ mười quả và vài quả lẻ, rồi làm tính.",
-      "template": "a) Tính 14 – 5. • Tách: 14 = 10 + 4 • 10 – 5 = {{b1}} • {{b2}} + 4 = {{b3}} 14 – 5 = {{b4}}\nb) Tính 15 – 7. • Tách: 15 = 10 + {{b5}} • 10 – {{b6}} = {{b7}} • {{b8}} + {{b9}} = {{b10}} 15 – 7 = {{b11}}",
+      "prompt": "Heo Ủn xếp táo thành một rổ đầy mười quả và vài quả lẻ, rồi làm tính. Cậu điền nốt các ô trống.",
+      "template": "a) Phép 15 – 9\n• Bẻ số: 15 = 10 + {{b1}}\n• 10 – 9 = {{b2}}\n• {{b3}} + 5 = {{b4}}\n• Vậy 15 – 9 = {{b5}}\nb) Phép 16 – 7\n• Bẻ số: 16 = 10 + {{b6}}\n• 10 – 7 = {{b7}}\n• {{b8}} + 6 = {{b9}}\n• Vậy 16 – 7 = {{b10}}",
       "blanks": [
         {
           "id": "b1",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            }
-          ]
-        },
-        {
-          "id": "b2",
           "options": [
             {
               "id": "o5",
@@ -1341,15 +1308,32 @@
           ]
         },
         {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o0",
+              "text": "0"
+            },
+            {
+              "id": "o1",
+              "text": "1"
+            },
+            {
+              "id": "o11",
+              "text": "11"
+            }
+          ]
+        },
+        {
           "id": "b3",
           "options": [
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o1",
+              "text": "1"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o2",
+              "text": "2"
             },
             {
               "id": "o11",
@@ -1361,16 +1345,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -1378,16 +1362,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
               "id": "o5",
               "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -1395,38 +1379,21 @@
           "id": "b6",
           "options": [
             {
+              "id": "o6",
+              "text": "6"
+            },
+            {
               "id": "o7",
               "text": "7"
             },
             {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
         {
           "id": "b7",
-          "options": [
-            {
-              "id": "o1",
-              "text": "1"
-            },
-            {
-              "id": "o2",
-              "text": "2"
-            },
-            {
-              "id": "o3",
-              "text": "3"
-            }
-          ]
-        },
-        {
-          "id": "b8",
           "options": [
             {
               "id": "o3",
@@ -1443,19 +1410,36 @@
           ]
         },
         {
+          "id": "b8",
+          "options": [
+            {
+              "id": "o2",
+              "text": "2"
+            },
+            {
+              "id": "o3",
+              "text": "3"
+            },
+            {
+              "id": "o13",
+              "text": "13"
+            }
+          ]
+        },
+        {
           "id": "b9",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o19",
+              "text": "19"
             }
           ]
         },
@@ -1463,105 +1447,96 @@
           "id": "b10",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
-            },
-            {
               "id": "o8",
               "text": "8"
             },
             {
               "id": "o9",
               "text": "9"
-            }
-          ]
-        },
-        {
-          "id": "b11",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
             },
             {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o10",
-              "text": "10"
+              "id": "o19",
+              "text": "19"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-2-1-a",
-        "toan2-t1-b11-luyen-tap-2-1-b"
-      ],
       "support": {
         "guide": [
-          "14 là 10 và 4; 15 là 10 và 5.",
+          "15 là 10 và 5; 16 là 10 và 6.",
           "Lấy 10 trừ số trừ trước rồi thêm phần lẻ."
         ],
-        "hint": "15 – 7: 10 – 7 = 3, 3 + 5 = 8.",
+        "hint": "16 – 7: 10 – 7 = 3, 3 + 6 = 9.",
         "answer": {
-          "text": "a) Tính 14 – 5. • Tách: 14 = 10 + 4 • 10 – 5 = 5 • 5 + 4 = 9 14 – 5 = 9; b) Tính 15 – 7. • Tách: 15 = 10 + 5 • 10 – 7 = 3 • 3 + 5 = 8 15 – 7 = 8",
-          "explanation": "14 – 5: 10 – 5 = 5, 5 + 4 = 9. 15 – 7: 15 = 10 + 5, 10 – 7 = 3, 3 + 5 = 8."
+          "text": "a) Phép 15 – 9; • Bẻ số: 15 = 10 + 5; • 10 – 9 = 1; • 1 + 5 = 6; • Vậy 15 – 9 = 6; b) Phép 16 – 7; • Bẻ số: 16 = 10 + 6; • 10 – 7 = 3; • 3 + 6 = 9; • Vậy 16 – 7 = 9",
+          "explanation": "15 – 9: 10 – 9 = 1, 1 + 5 = 6. 16 – 7: 16 = 10 + 6, 10 – 7 = 3, 3 + 6 = 9."
         }
       },
       "feedback": {
         "right": [
-          "Rổ mười quả và mấy quả lẻ giúp cậu trừ nhanh như gió.",
-          "Heo Ủn suýt cắn táo vì vui, may mà kìm lại kịp!",
-          "Cả hai phép tách đều chuẩn từng bước một."
+          "Mười lăm, mười sáu đều bẻ gọn, Heo Ủn xếp táo ngay ngắn!",
+          "Cậu bẻ số nhanh hơn cả Heo bẻ bánh.",
+          "Hai phép trừ xong xuôi, rổ táo vẫn còn nguyên."
         ],
         "wrong": [
-          "Phần lẻ của 15 là 5 đấy, điền lại ô đầu nhé.",
-          "10 – 7 bằng mấy? Kiểm tra bước giữa xem.",
-          "Hiệu cuối cùng phải bằng kết quả bước cộng phần lẻ."
+          "Phần lẻ của 16 là 6, đừng viết nhầm thành 5.",
+          "Lấy 10 trừ số trừ trước, đừng lấy cả 16.",
+          "Một ô ở phần b còn lệch, soát lại từng dòng."
         ]
       },
       "answer": {
         "fills": {
           "b1": "o5",
-          "b2": "o5",
-          "b3": "o9",
-          "b4": "o9",
-          "b5": "o5",
-          "b6": "o7",
+          "b2": "o1",
+          "b3": "o1",
+          "b4": "o6",
+          "b5": "o6",
+          "b6": "o6",
           "b7": "o3",
           "b8": "o3",
-          "b9": "o5",
-          "b10": "o8",
-          "b11": "o8"
+          "b9": "o9",
+          "b10": "o9"
         }
-      }
+      },
+      "expression": {
+        "b1": "10 + ? = 15",
+        "b2": "10 - 9",
+        "b3": "? + 5 = 6",
+        "b4": "1 + 5",
+        "b5": "15 - 9",
+        "b6": "10 + ? = 16",
+        "b7": "10 - 7",
+        "b8": "? + 6 = 9",
+        "b9": "3 + 6",
+        "b10": "16 - 7"
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "nham-15-bang-14",
-      "title": "Mười lăm quả và bảng trừ 14",
+      "title": "Rổ mười sáu quả và bảng của 17",
       "goTo": "Ôm rổ táo sang đống bí ngô ở hàng bầu bí, Sâu Bim nhổm dậy xin đếm giúp",
       "target": "toan2-cd2-b11-sau-bim",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Táo trong rổ giờ là 15 quả. Tính nhẩm. Rồi bảng trừ cho 14 quả: Số ?",
-      "template": "15 – 5 = {{b1}}\n15 – 6 = {{b2}}\n15 – 7 = {{b3}}\n15 – 8 = {{b4}}\n15 – 9 = {{b5}}\n15 – 10 = {{b6}}\n– | 14 | 14 | 14 | 14 | 14\n| 5 | 6 | 7 | 8 | 9\n| 9 | {{b7}} | {{b8}} | {{b9}} | {{b10}}",
+      "prompt": "Heo Ủn gom được 16 quả táo. Cậu nhẩm từng phép trừ, rồi giúp Sâu Bim điền các hiệu của số 17.",
+      "template": "16 – 9 = {{b1}}\n16 – 6 = {{b2}}\n16 – 8 = {{b3}}\n16 – 10 = {{b4}}\n16 – 7 = {{b5}}\n16 – 5 = {{b6}}\nBảng của 17\n17 – 8 = {{b7}}\n17 – 9 = {{b8}}\n17 – 10 = {{b9}}\n17 – 7 = {{b10}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o0",
-              "text": "0"
+              "id": "o7",
+              "text": "7"
             },
             {
               "id": "o8",
               "text": "8"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -1569,8 +1544,8 @@
           "id": "b2",
           "options": [
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o1",
+              "text": "1"
             },
             {
               "id": "o10",
@@ -1586,16 +1561,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
-            },
-            {
               "id": "o7",
               "text": "7"
             },
             {
               "id": "o8",
               "text": "8"
+            },
+            {
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -1611,8 +1586,8 @@
               "text": "7"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -1620,16 +1595,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o19",
+              "text": "19"
             }
           ]
         },
@@ -1637,21 +1612,38 @@
           "id": "b6",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o11",
+              "text": "11"
             },
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o21",
+              "text": "21"
             }
           ]
         },
         {
           "id": "b7",
+          "options": [
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o10",
+              "text": "10"
+            },
+            {
+              "id": "o19",
+              "text": "19"
+            }
+          ]
+        },
+        {
+          "id": "b8",
           "options": [
             {
               "id": "o8",
@@ -1662,25 +1654,8 @@
               "text": "9"
             },
             {
-              "id": "o10",
-              "text": "10"
-            }
-          ]
-        },
-        {
-          "id": "b8",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -1688,16 +1663,16 @@
           "id": "b9",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -1705,255 +1680,251 @@
           "id": "b10",
           "options": [
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o1",
+              "text": "1"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o11",
+              "text": "11"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-2-2-a",
-        "toan2-t1-b11-luyen-tap-2-2-b",
-        "toan2-t1-b11-luyen-tap-2-2-c",
-        "toan2-t1-b11-luyen-tap-2-2-d",
-        "toan2-t1-b11-luyen-tap-2-2-e",
-        "toan2-t1-b11-luyen-tap-2-2-g",
-        "toan2-t1-b11-luyen-tap-2-3-a",
-        "toan2-t1-b11-luyen-tap-2-3-b",
-        "toan2-t1-b11-luyen-tap-2-3-c",
-        "toan2-t1-b11-luyen-tap-2-3-d"
-      ],
       "support": {
         "guide": [
-          "15 – 5 = 10: trừ hết phần lẻ thì còn tròn chục.",
-          "Bảng 14: cột đầu 14 – 5 = 9 là mẫu."
+          "16 – 6 = 10: trừ hết phần lẻ thì còn tròn chục.",
+          "Ở bảng của 17, lấy 17 trừ số trừ ghi trên mỗi dòng."
         ],
-        "hint": "15 – 10 = 5 vì bớt cả một chục.",
+        "hint": "17 – 10 = 7 vì bớt cả một chục.",
         "answer": {
-          "text": "15 – 5 = 10; 15 – 6 = 9; 15 – 7 = 8; 15 – 8 = 7; 15 – 9 = 6; 15 – 10 = 5; – | 14 | 14 | 14 | 14 | 14; | 5 | 6 | 7 | 8 | 9; | 9 | 8 | 7 | 6 | 5",
-          "explanation": "15 trừ 5, 6, 7, 8, 9, 10 được 10, 9, 8, 7, 6, 5. Bảng 14: 14 – 6 = 8, 14 – 7 = 7, 14 – 8 = 6, 14 – 9 = 5."
+          "text": "16 – 9 = 7; 16 – 6 = 10; 16 – 8 = 8; 16 – 10 = 6; 16 – 7 = 9; 16 – 5 = 11; Bảng của 17; 17 – 8 = 9; 17 – 9 = 8; 17 – 10 = 7; 17 – 7 = 10",
+          "explanation": "16 trừ 9, 6, 8, 10, 7, 5 được 7, 10, 8, 6, 9, 11. Bảng của 17: 17 – 8 = 9, 17 – 9 = 8, 17 – 10 = 7, 17 – 7 = 10."
         }
       },
       "feedback": {
         "right": [
-          "Rổ mười lăm quả được tính sạch bong, không sót quả nào!",
-          "Bảng trừ 14 ngay ngắn, Heo Ủn đóng dấu \"đã kiểm\".",
-          "Số trừ lớn lên, hiệu bé đi, cậu nắm chắc rồi."
+          "Mười phép trừ trót lọt, Sâu Bim bò vòng quanh mừng rỡ!",
+          "Nhẩm quanh rổ táo mười sáu quả mà không nhầm quả nào.",
+          "Bảng của 17 đầy đủ, nhìn gọn như hàng táo xếp hàng."
         ],
         "wrong": [
-          "Dòng 15 – 10 bớt cả một chục đấy, còn mấy nào?",
-          "Ở bảng 14, mỗi ô sau kém ô trước đúng 1.",
-          "Sâu Bim bò ngang một ô làm nhòe số rồi, tính lại nhé."
+          "Có ô bị lệch một đơn vị, nhẩm lại nhé.",
+          "Số trừ càng lớn thì hiệu càng bé.",
+          "16 – 10 bớt cả một chục nên còn phần lẻ thôi."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o10",
-          "b2": "o9",
+          "b1": "o7",
+          "b2": "o10",
           "b3": "o8",
-          "b4": "o7",
-          "b5": "o6",
-          "b6": "o5",
-          "b7": "o8",
-          "b8": "o7",
-          "b9": "o6",
-          "b10": "o5"
+          "b4": "o6",
+          "b5": "o9",
+          "b6": "o11",
+          "b7": "o9",
+          "b8": "o8",
+          "b9": "o7",
+          "b10": "o10"
         }
-      }
+      },
+      "expression": {
+        "b1": "16 - 9",
+        "b2": "16 - 6",
+        "b3": "16 - 8",
+        "b4": "16 - 10",
+        "b5": "16 - 7",
+        "b6": "16 - 5",
+        "b7": "17 - 8",
+        "b8": "17 - 9",
+        "b9": "17 - 10",
+        "b10": "17 - 7"
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "may-bay-hieu-7",
-      "title": "Máy bay giấy số 7",
+      "title": "Máy bay giấy số 6",
       "goTo": "Chạy ra lối đi giữa hai dãy sạp, Cáo Gió đang ngắm hướng gió phóng máy bay",
       "target": "toan2-cd2-b11-cao-gio",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Heo Ủn gấp sáu chiếc máy bay giấy để phóng táo lên… à không, để chơi! Những máy bay nào ghi phép trừ có hiệu bằng 7?",
+      "prompt": "Cáo Gió dựng bệ phóng cho sáu chiếc máy bay giấy, mỗi chiếc dán một phép trừ. Đợt phóng thứ nhất chỉ dành cho máy bay có hiệu bằng 6. Chọn tất cả các máy bay ấy.",
       "choices": [
         {
-          "id": "15-8",
-          "text": "15 – 8"
+          "id": "14-8",
+          "text": "14 – 8"
         },
         {
-          "id": "14-5",
-          "text": "14 – 5"
+          "id": "13-5",
+          "text": "13 – 5"
         },
         {
-          "id": "13-4",
-          "text": "13 – 4"
+          "id": "12-6",
+          "text": "12 – 6"
         },
         {
-          "id": "12-5",
-          "text": "12 – 5"
+          "id": "16-8",
+          "text": "16 – 8"
         },
         {
-          "id": "15-6",
-          "text": "15 – 6"
+          "id": "15-9",
+          "text": "15 – 9"
         },
         {
-          "id": "14-7",
-          "text": "14 – 7"
+          "id": "11-3",
+          "text": "11 – 3"
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-2-4-a"
-      ],
       "support": {
         "guide": [
-          "Tính hiệu ghi trên từng chiếc máy bay.",
-          "Chọn mọi chiếc có hiệu bằng 7, có thể nhiều hơn một chiếc."
+          "Tính hiệu dán trên từng chiếc máy bay.",
+          "Chọn mọi chiếc có hiệu bằng 6, có thể nhiều hơn một chiếc."
         ],
-        "hint": "Có ba chiếc máy bay mang hiệu bằng 7.",
+        "hint": "Có ba chiếc máy bay mang hiệu bằng 6.",
         "answer": {
-          "text": "15 – 8, 12 – 5, 14 – 7",
-          "explanation": "15 – 8 = 7, 12 – 5 = 7, 14 – 7 = 7; ba chiếc còn lại có hiệu bằng 9."
+          "text": "14 – 8, 12 – 6, 15 – 9",
+          "explanation": "14 – 8 = 6, 12 – 6 = 6, 15 – 9 = 6; ba chiếc còn lại có hiệu bằng 8."
         }
       },
       "feedback": {
         "right": [
-          "Vèo vèo vèo! Ba chiếc máy bay số 7 cất cánh cùng lúc.",
-          "Chọn đủ ba chiếc, không thừa không thiếu, phi công giỏi!",
-          "Cáo Gió chạy theo máy bay, đuôi xù tung bay phấp phới."
+          "Ba chiếc máy bay lượn vèo trên bệ phóng, Cáo Gió reo to!",
+          "Chọn đúng cả ba chiếc, một chiếc cũng không sót.",
+          "Gió thổi mạnh, máy bay số sáu bay xa nhất chợ."
         ],
         "wrong": [
-          "Còn một chiếc máy bay số 7 đang nấp ở cuối hàng.",
-          "Có chiếc cậu chọn ra hiệu bằng 9 đấy.",
-          "Tính lại từng chiếc rồi mới phóng nhé."
+          "Còn một chiếc có hiệu bằng 6 chưa được chọn.",
+          "Chiếc máy bay có hiệu khác 6 thì để lại đợt sau.",
+          "Tính hiệu từng chiếc trước khi chọn nhé."
         ]
       },
       "answer": {
         "choices": [
-          "15-8",
-          "12-5",
-          "14-7"
+          "14-8",
+          "12-6",
+          "15-9"
         ]
-      }
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "may-bay-hieu-9",
-      "title": "Máy bay giấy số 9",
+      "title": "Máy bay giấy số 8",
       "target": "toan2-cd2-b11-cao-gio",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Lượt hai, Heo Ủn đòi phóng nhóm máy bay còn lại. Những máy bay nào ghi phép trừ có hiệu bằng 9?",
+      "prompt": "Đợt phóng thứ hai dành cho nhóm máy bay còn lại. Chọn tất cả các máy bay có hiệu bằng 8.",
       "choices": [
         {
-          "id": "15-8",
-          "text": "15 – 8"
+          "id": "14-8",
+          "text": "14 – 8"
         },
         {
-          "id": "14-5",
-          "text": "14 – 5"
+          "id": "13-5",
+          "text": "13 – 5"
         },
         {
-          "id": "13-4",
-          "text": "13 – 4"
+          "id": "12-6",
+          "text": "12 – 6"
         },
         {
-          "id": "12-5",
-          "text": "12 – 5"
+          "id": "16-8",
+          "text": "16 – 8"
         },
         {
-          "id": "15-6",
-          "text": "15 – 6"
+          "id": "15-9",
+          "text": "15 – 9"
         },
         {
-          "id": "14-7",
-          "text": "14 – 7"
+          "id": "11-3",
+          "text": "11 – 3"
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-2-4-b"
-      ],
       "support": {
         "guide": [
           "Tính lại hiệu của từng chiếc.",
-          "Hiệu bằng 9 là những chiếc chưa bay ở lượt trước."
+          "Hiệu bằng 8 là những chiếc chưa bay ở đợt trước."
         ],
-        "hint": "14 – 5 = 9.",
+        "hint": "16 – 8 = 8.",
         "answer": {
-          "text": "14 – 5, 13 – 4, 15 – 6",
-          "explanation": "14 – 5 = 9, 13 – 4 = 9, 15 – 6 = 9."
+          "text": "13 – 5, 16 – 8, 11 – 3",
+          "explanation": "13 – 5 = 8, 16 – 8 = 8, 11 – 3 = 8."
         }
       },
       "feedback": {
         "right": [
-          "Nhóm máy bay số 9 lượn một vòng rồi đáp xuống giỏ táo.",
-          "Cậu chọn chuẩn đến mức máy bay tự chào cậu đấy.",
-          "Sáu chiếc máy bay đã bay đủ hai lượt, tuyệt vời!"
+          "Đợt hai bay vút lên trời xanh, ba chiếc cùng lướt qua mái sạp!",
+          "Máy bay nào chưa bay lần trước đều được cậu chọn đúng.",
+          "Cáo Gió ngước nhìn rồi thốt lên: tinh mắt quá đi."
         ],
         "wrong": [
-          "Một chiếc hiệu bằng 7 lại lẻn vào nhóm này rồi.",
-          "Còn sót một chiếc máy bay số 9, tìm kĩ nhé.",
-          "Thử tách 10 ra để trừ cho nhanh rồi chọn lại."
+          "Hiệu bằng 8 mới được bay đợt này, tính lại nhé.",
+          "Có chiếc máy bay vừa bay ở đợt đầu, đừng chọn lại.",
+          "11 – 3: lùi từ 11 về 10 rồi lùi thêm 2."
         ]
       },
       "answer": {
         "choices": [
-          "14-5",
-          "13-4",
-          "15-6"
+          "13-5",
+          "16-8",
+          "11-3"
         ]
-      }
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "oi-cua-ba",
-      "title": "Ổi của bà",
+      "title": "Bánh của bà",
       "goTo": "Quay lại gốc táo bên hàng quả, Heo Ủn ngồi kể chuyện bà của mình",
       "target": "heo-un",
       "kind": "riddle",
-      "question": "Heo Ủn kể chuyện nhà mình. Bà có 14 quả ổi, bà cho cháu 6 quả. Hỏi bà còn lại bao nhiêu quả ổi?",
+      "question": "Heo Ủn kể chuyện nhà mình: bà ngoại nướng 16 chiếc bánh táo, bà mang biếu hàng xóm 9 chiếc. Hỏi bà còn lại mấy chiếc bánh?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-2-5"
-      ],
       "support": {
         "guide": [
-          "Bà cho đi thì số ổi của bà ít đi.",
-          "Lấy 14 trừ 6."
+          "Bà mang đi biếu thì số bánh của bà ít đi.",
+          "Lấy 16 trừ 9."
         ],
-        "hint": "10 – 6 = 4, rồi cộng thêm 4.",
+        "hint": "10 – 9 = 1, rồi cộng thêm 6.",
         "answer": {
-          "text": "14 – 6 = 8. Đáp số: 8 quả ổi",
-          "explanation": "Bà còn lại 14 – 6 = 8 (quả ổi)."
+          "text": "16 – 9 = 7. Đáp số: 7 chiếc bánh",
+          "explanation": "Bà còn lại 16 – 9 = 7 (chiếc bánh)."
         }
       },
       "feedback": {
         "right": [
-          "Bà còn 8 quả ổi, Heo Ủn xin phép mang biếu bà thêm táo.",
-          "Cậu hiếu thảo y như cháu của bà trong bài vậy.",
-          "Phép trừ chuẩn, câu trả lời đủ ý, tuyệt!"
+          "Bà còn bảy chiếc bánh, Heo Ủn nuốt nước bọt ừng ực!",
+          "Biếu đi là bớt, cậu chọn phép trừ rất gọn.",
+          "Mùi bánh táo thơm cả góc chợ nhờ phép tính của cậu."
         ],
         "wrong": [
-          "Cho đi thì còn ít hơn, không phải nhiều hơn đâu.",
-          "Lấy số ổi của bà trừ số ổi đã cho nhé.",
-          "Tách 14 thành 10 và 4 rồi trừ thử xem."
+          "Biếu đi thì còn lại ít hơn 16, đừng cộng nhé.",
+          "Lấy số bánh lúc đầu trừ số bánh đã biếu.",
+          "Thử bẻ 16 = 10 + 6 rồi lấy 10 trừ 9 trước."
         ]
       },
       "answer": {
-        "value": 8
-      }
+        "value": 7
+      },
+      "expression": "16 - 9",
+      "objective": "bai-toan-co-loi-van-them-bot"
     },
     {
       "id": "dieu-bang-hieu",
-      "title": "Bảng của Bò Kem",
+      "title": "Sổ nhẩm của Bò Kem",
       "goTo": "Ra bãi cỏ bờ kênh, Bò Kem đang kéo con diều đỏ chạy lon ton",
       "target": "toan2-cd2-b11-bo-kem",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Bò Kem ghi phép tính lên đuôi diều để nhớ. Tính nhẩm. Rồi điền bảng: Số ? Cuối cùng so sánh: >; <; = ?",
-      "template": "16 – 7 = {{b1}}\n16 – 8 = {{b2}}\n16 – 9 = {{b3}}\n17 – 8 = {{b4}}\n17 – 9 = {{b5}}\n18 – 9 = {{b6}}\nSố bị trừ | 16 | 17 | 16 | 18 | 17 | 16\nSố trừ | 9 | 9 | 8 | 9 | 8 | 7\nHiệu | {{b7}} | {{b8}} | {{b9}} | {{b10}} | {{b11}} | {{b12}}\na) 16 – 8 {{b13}} 8\na) 15 – 9 {{b14}} 7\nb) 17 – 9 {{b15}} 13 – 7\nb) 18 – 9 {{b16}} 15 – 6",
+      "prompt": "Bò Kem ghi phép tính lên đuôi diều để nhớ. Cậu nhẩm sáu phép đầu, điền hiệu vào bảng, rồi đặt dấu so sánh >, <, = vào bốn chỗ trống cuối.",
+      "template": "15 – 6 = {{b1}}\n14 – 7 = {{b2}}\n16 – 9 = {{b3}}\n13 – 5 = {{b4}}\n17 – 9 = {{b5}}\n12 – 8 = {{b6}}\nSố bị trừ | 13 | 15 | 12 | 16 | 11 | 14\nSố trừ | 7 | 8 | 5 | 9 | 6 | 8\nHiệu | {{b7}} | {{b8}} | {{b9}} | {{b10}} | {{b11}} | {{b12}}\na) 15 – 7 {{b13}} 8\na) 14 – 9 {{b14}} 6\nb) 16 – 7 {{b15}} 12 – 5\nb) 17 – 8 {{b16}} 15 – 6",
       "blanks": [
         {
           "id": "b1",
@@ -1967,8 +1938,8 @@
               "text": "10"
             },
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o19",
+              "text": "19"
             }
           ]
         },
@@ -1976,16 +1947,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -2010,16 +1981,16 @@
           "id": "b4",
           "options": [
             {
+              "id": "o8",
+              "text": "8"
+            },
+            {
               "id": "o9",
               "text": "9"
             },
             {
-              "id": "o10",
-              "text": "10"
-            },
-            {
-              "id": "o11",
-              "text": "11"
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -2027,16 +1998,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
-            },
-            {
               "id": "o7",
               "text": "7"
             },
             {
               "id": "o8",
               "text": "8"
+            },
+            {
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -2044,16 +2015,16 @@
           "id": "b6",
           "options": [
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o4",
+              "text": "4"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o19",
-              "text": "19"
+              "id": "o14",
+              "text": "14"
             }
           ]
         },
@@ -2069,8 +2040,8 @@
               "text": "6"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -2082,12 +2053,12 @@
               "text": "6"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -2103,8 +2074,8 @@
               "text": "8"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -2112,16 +2083,16 @@
           "id": "b10",
           "options": [
             {
+              "id": "o6",
+              "text": "6"
+            },
+            {
               "id": "o7",
               "text": "7"
             },
             {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -2129,16 +2100,16 @@
           "id": "b11",
           "options": [
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -2146,16 +2117,16 @@
           "id": "b12",
           "options": [
             {
+              "id": "o6",
+              "text": "6"
+            },
+            {
               "id": "o7",
               "text": "7"
             },
             {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o19",
-              "text": "19"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -2229,67 +2200,68 @@
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-3-1-a",
-        "toan2-t1-b11-luyen-tap-3-1-b",
-        "toan2-t1-b11-luyen-tap-3-1-c",
-        "toan2-t1-b11-luyen-tap-3-1-d",
-        "toan2-t1-b11-luyen-tap-3-1-e",
-        "toan2-t1-b11-luyen-tap-3-1-g",
-        "toan2-t1-b11-luyen-tap-3-2-a",
-        "toan2-t1-b11-luyen-tap-3-2-b",
-        "toan2-t1-b11-luyen-tap-3-2-c",
-        "toan2-t1-b11-luyen-tap-3-2-d",
-        "toan2-t1-b11-luyen-tap-3-2-e",
-        "toan2-t1-b11-luyen-tap-3-2-g",
-        "toan2-t1-b11-luyen-tap-3-5-a1",
-        "toan2-t1-b11-luyen-tap-3-5-a2",
-        "toan2-t1-b11-luyen-tap-3-5-b1",
-        "toan2-t1-b11-luyen-tap-3-5-b2"
-      ],
       "support": {
         "guide": [
           "Hiệu = số bị trừ – số trừ.",
-          "So sánh: tính từng vế ra số rồi mới đặt dấu."
+          "Khi so sánh, tính từng vế ra số rồi mới đặt dấu."
         ],
-        "hint": "17 – 9 = 8 và 13 – 7 = 6, nên 8 > 6.",
+        "hint": "16 – 7 = 9 và 12 – 5 = 7, nên 9 > 7.",
         "answer": {
-          "text": "16 – 7 = 9; 16 – 8 = 8; 16 – 9 = 7; 17 – 8 = 9; 17 – 9 = 8; 18 – 9 = 9; Số bị trừ | 16 | 17 | 16 | 18 | 17 | 16; Số trừ | 9 | 9 | 8 | 9 | 8 | 7; Hiệu | 7 | 8 | 8 | 9 | 9 | 9; a) 16 – 8 = 8; a) 15 – 9 < 7; b) 17 – 9 > 13 – 7; b) 18 – 9 = 15 – 6",
-          "explanation": "Tính nhẩm: 9, 8, 7, 9, 8, 9. Hiệu: 7, 8, 8, 9, 9, 9. So sánh: 16 – 8 = 8 nên \"=\"; 15 – 9 = 6 < 7; 8 > 6; 9 = 9."
+          "text": "15 – 6 = 9; 14 – 7 = 7; 16 – 9 = 7; 13 – 5 = 8; 17 – 9 = 8; 12 – 8 = 4; Số bị trừ | 13 | 15 | 12 | 16 | 11 | 14; Số trừ | 7 | 8 | 5 | 9 | 6 | 8; Hiệu | 6 | 7 | 7 | 7 | 5 | 6; a) 15 – 7 = 8; a) 14 – 9 < 6; b) 16 – 7 > 12 – 5; b) 17 – 8 = 15 – 6",
+          "explanation": "Nhẩm: 9, 7, 7, 8, 8, 4. Hiệu trong bảng: 6, 7, 7, 7, 5, 6. So sánh: 15 – 7 = 8 nên \"=\"; 14 – 9 = 5 < 6; 9 > 7; 17 – 8 = 9 = 15 – 6."
         }
       },
       "feedback": {
         "right": [
-          "Diều của Bò Kem bay vút lên, đuôi diều toàn số đúng!",
-          "Ò ó… à nhầm, ò ò! Bò Kem mừng quá kêu lạc giọng.",
-          "Cả bảng hiệu lẫn dấu so sánh đều chính xác."
+          "Đuôi diều đầy những số đúng, diều bay cao vút lên mây!",
+          "Dấu so sánh đặt đâu trúng đó, Bò Kem lắc chuông leng keng.",
+          "Hiệu trong bảng khớp hết, chẳng ô nào phải viết lại."
         ],
         "wrong": [
-          "Muốn so sánh, tính kết quả mỗi bên trước đã.",
-          "Hàng hiệu lấy số bị trừ trừ đi số trừ nhé.",
-          "Có một dấu đang quay ngược miệng kìa, nhìn lại nào."
+          "Hai vế bằng nhau thì dùng dấu bằng nhé.",
+          "Miệng dấu luôn mở về phía số lớn hơn.",
+          "Tính từng vế ra số rồi hẵng chọn dấu."
         ]
       },
       "answer": {
         "fills": {
           "b1": "o9",
-          "b2": "o8",
+          "b2": "o7",
           "b3": "o7",
-          "b4": "o9",
+          "b4": "o8",
           "b5": "o8",
-          "b6": "o9",
-          "b7": "o7",
-          "b8": "o8",
-          "b9": "o8",
-          "b10": "o9",
-          "b11": "o9",
-          "b12": "o9",
+          "b6": "o4",
+          "b7": "o6",
+          "b8": "o7",
+          "b9": "o7",
+          "b10": "o7",
+          "b11": "o5",
+          "b12": "o6",
           "b13": "bang",
           "b14": "be-hon",
           "b15": "lon-hon",
           "b16": "bang"
         }
-      }
+      },
+      "expression": {
+        "b1": "15 - 6",
+        "b2": "14 - 7",
+        "b3": "16 - 9",
+        "b4": "13 - 5",
+        "b5": "17 - 9",
+        "b6": "12 - 8",
+        "b7": "13 - 7",
+        "b8": "15 - 8",
+        "b9": "12 - 5",
+        "b10": "16 - 9",
+        "b11": "11 - 6",
+        "b12": "14 - 8",
+        "b13": "15 - 7 ? 8",
+        "b14": "14 - 9 ? 6",
+        "b15": "16 - 7 ? 12 - 5",
+        "b16": "17 - 8 ? 15 - 6"
+      },
+      "objective": "cong-tru-qua-10-so-sanh"
     },
     {
       "id": "canh-dieu-lon-be",
@@ -2297,7 +2269,7 @@
       "target": "toan2-cd2-b11-bo-kem",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Năm cánh diều ghi phép trừ đang lượn trên trời. Cánh diều nào ghi phép trừ có hiệu lớn nhất? Cánh diều nào ghi phép trừ có hiệu bé nhất?",
+      "prompt": "Bò Kem thả năm cánh diều lên trời, mỗi cánh mang một phép trừ. Hãy tìm cánh diều có hiệu lớn nhất và cánh diều có hiệu bé nhất; những cánh còn lại xếp vào nhóm cuối.",
       "groups": [
         {
           "id": "nhom-hieu-lon-nhat",
@@ -2314,148 +2286,110 @@
       ],
       "items": [
         {
-          "id": "dieu-16-8",
-          "label": "16 – 8"
+          "id": "dieu-15-8",
+          "label": "15 – 8"
         },
         {
-          "id": "dieu-18-9",
-          "label": "18 – 9"
+          "id": "dieu-17-8",
+          "label": "17 – 8"
         },
         {
-          "id": "dieu-14-8",
-          "label": "14 – 8"
+          "id": "dieu-13-9",
+          "label": "13 – 9"
         },
         {
-          "id": "dieu-15-7",
-          "label": "15 – 7"
+          "id": "dieu-16-9",
+          "label": "16 – 9"
         },
         {
-          "id": "dieu-17-9",
-          "label": "17 – 9"
+          "id": "dieu-14-7",
+          "label": "14 – 7"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-3-3-a",
-        "toan2-t1-b11-luyen-tap-3-3-b"
-      ],
       "support": {
         "guide": [
           "Tính hiệu của cả năm cánh diều.",
           "So sánh các hiệu để tìm số lớn nhất và bé nhất."
         ],
-        "hint": "Các hiệu là 8, 9, 6, 8, 8.",
+        "hint": "Các hiệu là 7, 9, 4, 7, 7.",
         "answer": {
-          "text": "Lớn nhất: 18 – 9; bé nhất: 14 – 8; còn lại: 16 – 8, 15 – 7, 17 – 9",
-          "explanation": "18 – 9 = 9 lớn nhất; 14 – 8 = 6 bé nhất; ba cánh diều còn lại đều có hiệu 8."
+          "text": "Lớn nhất: 17 – 8; bé nhất: 13 – 9; còn lại: 15 – 8, 16 – 9, 14 – 7",
+          "explanation": "17 – 8 = 9 lớn nhất; 13 – 9 = 4 bé nhất; ba cánh diều còn lại đều có hiệu 7."
         }
       },
       "feedback": {
         "right": [
-          "Cánh diều 18 – 9 bay cao nhất trời, đúng chóc!",
-          "Bò Kem buộc nơ đỏ cho diều lớn nhất, nơ xanh cho diều bé nhất.",
-          "Ba cánh diều hiệu 8 bay song song, cậu xếp chuẩn rồi."
+          "Cánh diều chín bay cao nhất, cánh diều bốn lượn thấp nhất, chuẩn rồi!",
+          "Năm cánh diều xếp đúng chỗ, bầu trời chợ phiên thêm rực rỡ.",
+          "Bò Kem kéo dây, ba cánh diều giữa đồng loạt nghiêng cánh chào."
         ],
         "wrong": [
-          "Tính hết năm hiệu rồi hãy so nhé.",
-          "Hiệu bé nhất chỉ là 6 thôi đấy.",
-          "Có cánh diều hiệu 8 đang bị xếp lên ngôi lớn nhất."
+          "Phải tính cả năm cánh diều rồi mới so sánh.",
+          "Hiệu lớn nhất và bé nhất mỗi loại chỉ có một cánh.",
+          "Ba cánh diều còn lại có cùng một hiệu, đừng xếp vào nhóm đầu."
         ]
       },
       "answer": {
         "assignment": {
-          "dieu-16-8": "nhom-khong-lon-nhat-cung-khong-be-nhat",
-          "dieu-18-9": "nhom-hieu-lon-nhat",
-          "dieu-14-8": "nhom-hieu-be-nhat",
-          "dieu-15-7": "nhom-khong-lon-nhat-cung-khong-be-nhat",
-          "dieu-17-9": "nhom-khong-lon-nhat-cung-khong-be-nhat"
+          "dieu-15-8": "nhom-khong-lon-nhat-cung-khong-be-nhat",
+          "dieu-17-8": "nhom-hieu-lon-nhat",
+          "dieu-13-9": "nhom-hieu-be-nhat",
+          "dieu-16-9": "nhom-khong-lon-nhat-cung-khong-be-nhat",
+          "dieu-14-7": "nhom-khong-lon-nhat-cung-khong-be-nhat"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-so-sanh"
     },
     {
       "id": "hoa-cua-mai-mi",
-      "title": "Ai hái nhiều hoa hơn?",
+      "title": "Ai nhặt nhiều nấm hơn?",
       "goTo": "Ghé lại sạp rau cải, Thỏ Sữa vừa hái hoa về",
       "target": "toan2-cd2-b11-tho-may",
       "kind": "riddle",
-      "question": "Thỏ Sữa cài hoa lên tai rồi đố: Mai hái được 16 bông hoa, Mi hái được 9 bông hoa. Hỏi Mai hái được hơn Mi bao nhiêu bông hoa?",
+      "question": "Thỏ Sữa khoe giỏ nấm của mình rồi đố: Thỏ Sữa nhặt được 17 cây nấm, Sâu Bim nhặt được 9 cây nấm. Hỏi Thỏ Sữa nhặt được hơn Sâu Bim bao nhiêu cây nấm?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-3-4"
-      ],
       "support": {
         "guide": [
           "Hỏi \"hơn bao nhiêu\" thì lấy số lớn trừ số bé.",
-          "Phép tính là 16 – 9."
+          "Phép tính là 17 – 9."
         ],
-        "hint": "10 – 9 = 1, rồi cộng 6.",
+        "hint": "10 – 9 = 1, rồi cộng 7.",
         "answer": {
-          "text": "16 – 9 = 7. Đáp số: 7 bông hoa",
-          "explanation": "Mai hái được hơn Mi 16 – 9 = 7 (bông hoa)."
+          "text": "17 – 9 = 8. Đáp số: 8 cây nấm",
+          "explanation": "Thỏ Sữa nhặt được hơn Sâu Bim 17 – 9 = 8 (cây nấm)."
         }
       },
       "feedback": {
         "right": [
-          "Mai hơn Mi 7 bông, Thỏ Sữa kết tặng cậu một vòng hoa.",
-          "Hơn bao nhiêu thì lấy lớn trừ bé, cậu nhớ chuẩn rồi.",
-          "Đôi tai dài của Thỏ Sữa giờ thơm phức mùi hoa!"
+          "Thỏ Sữa hơn đúng tám cây nấm, Sâu Bim gãi đầu cười hì hì!",
+          "Muốn biết hơn bao nhiêu thì lấy số lớn trừ số bé, cậu nhớ rất kĩ.",
+          "Giỏ nấm của hai bạn được cậu so sánh thật công bằng."
         ],
         "wrong": [
-          "Hơn bao nhiêu thì lấy số lớn trừ số bé nhé.",
-          "Thử 16 – 9 xem ra mấy bông.",
-          "Đây là phép trừ, không phải cộng gộp lại đâu."
+          "Hơn bao nhiêu thì phải trừ chứ không cộng.",
+          "Lấy số nấm của Thỏ Sữa trừ số nấm của Sâu Bim.",
+          "Bẻ 17 = 10 + 7, lấy 10 trừ 9 trước rồi mới cộng tiếp."
         ]
       },
       "answer": {
-        "value": 7
-      }
+        "value": 8
+      },
+      "expression": "17 - 9",
+      "objective": "bai-toan-co-loi-van-hon-kem"
     },
     {
       "id": "so-o-trong-heo",
-      "title": "Sổ bếp của Heo Ủn",
+      "title": "Sổ ghi chép của Heo Ủn",
       "goTo": "Chạy ra cổng sau của chợ, Heo Ủn chờ xem đua xe",
       "target": "heo-un-cong-sau",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Trong lúc chờ đoàn đua xe, Heo Ủn mở sổ bếp có mấy ô trống. Số ? Rồi Tính nhẩm.",
-      "template": "11 – 6 = {{b1}}\n13 – 8 = {{b2}}\n15 – 7 = {{b3}}\n18 – 9 = {{b4}}\n17 – 8 = {{b5}}\n14 – 5 = {{b6}}\n11 – 8 = {{b7}}\n12 – 4 = {{b8}}\na) 13 – 3 – 4 = {{b9}}\na) 13 – 7 = {{b10}}\nb) 15 – 5 – 3 = {{b11}}\nb) 15 – 8 = {{b12}}\nc) 14 – 4 – 1 = {{b13}}\nc) 14 – 5 = {{b14}}",
+      "prompt": "Trong lúc chờ đoàn đua xe, Heo Ủn mở sổ ghi chép có mấy ô còn trống. Cậu điền kết quả, rồi tính hai cách ở các cặp phép tính cuối.",
+      "template": "12 – 5 = {{b1}}\n13 – 9 = {{b2}}\n16 – 7 = {{b3}}\n11 – 6 = {{b4}}\n15 – 8 = {{b5}}\n14 – 9 = {{b6}}\n17 – 9 = {{b7}}\n12 – 3 = {{b8}}\na) 15 – 5 – 2 = {{b9}}\na) 15 – 7 = {{b10}}\nb) 16 – 6 – 3 = {{b11}}\nb) 16 – 9 = {{b12}}\nc) 12 – 2 – 5 = {{b13}}\nc) 12 – 7 = {{b14}}",
       "blanks": [
         {
           "id": "b1",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o3",
-              "text": "3"
-            },
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o15",
-              "text": "15"
-            }
-          ]
-        },
-        {
-          "id": "b3",
           "options": [
             {
               "id": "o7",
@@ -2466,13 +2400,30 @@
               "text": "8"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
         {
-          "id": "b4",
+          "id": "b2",
+          "options": [
+            {
+              "id": "o4",
+              "text": "4"
+            },
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o14",
+              "text": "14"
+            }
+          ]
+        },
+        {
+          "id": "b3",
           "options": [
             {
               "id": "o9",
@@ -2483,8 +2434,25 @@
               "text": "10"
             },
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o19",
+              "text": "19"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o4",
+              "text": "4"
+            },
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -2500,8 +2468,8 @@
               "text": "8"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -2509,16 +2477,16 @@
           "id": "b6",
           "options": [
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o4",
+              "text": "4"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -2526,16 +2494,16 @@
           "id": "b7",
           "options": [
             {
-              "id": "o1",
-              "text": "1"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -2551,8 +2519,8 @@
               "text": "9"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o19",
+              "text": "19"
             }
           ]
         },
@@ -2560,16 +2528,16 @@
           "id": "b9",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -2577,16 +2545,16 @@
           "id": "b10",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o5",
-              "text": "5"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -2611,16 +2579,16 @@
           "id": "b12",
           "options": [
             {
+              "id": "o6",
+              "text": "6"
+            },
+            {
               "id": "o7",
               "text": "7"
             },
             {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -2628,16 +2596,16 @@
           "id": "b13",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -2645,102 +2613,103 @@
           "id": "b14",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o4",
+              "text": "4"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o19",
-              "text": "19"
+              "id": "o15",
+              "text": "15"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-4-1-a",
-        "toan2-t1-b11-luyen-tap-4-1-b",
-        "toan2-t1-b11-luyen-tap-4-1-c",
-        "toan2-t1-b11-luyen-tap-4-1-d",
-        "toan2-t1-b11-luyen-tap-4-1-e",
-        "toan2-t1-b11-luyen-tap-4-1-g",
-        "toan2-t1-b11-luyen-tap-4-1-h",
-        "toan2-t1-b11-luyen-tap-4-1-i",
-        "toan2-t1-b11-luyen-tap-4-3-a1",
-        "toan2-t1-b11-luyen-tap-4-3-a2",
-        "toan2-t1-b11-luyen-tap-4-3-b1",
-        "toan2-t1-b11-luyen-tap-4-3-b2",
-        "toan2-t1-b11-luyen-tap-4-3-c1",
-        "toan2-t1-b11-luyen-tap-4-3-c2"
-      ],
       "support": {
         "guide": [
           "Trừ liên tiếp thì trừ từ trái sang phải.",
-          "13 – 3 – 4 và 13 – 7 cho cùng kết quả vì 3 + 4 = 7."
+          "15 – 5 – 2 và 15 – 7 cho cùng kết quả vì 5 + 2 = 7."
         ],
-        "hint": "13 – 3 = 10, rồi 10 – 4 = 6.",
+        "hint": "15 – 5 = 10, rồi 10 – 2 = 8.",
         "answer": {
-          "text": "11 – 6 = 5; 13 – 8 = 5; 15 – 7 = 8; 18 – 9 = 9; 17 – 8 = 9; 14 – 5 = 9; 11 – 8 = 3; 12 – 4 = 8; a) 13 – 3 – 4 = 6; a) 13 – 7 = 6; b) 15 – 5 – 3 = 7; b) 15 – 8 = 7; c) 14 – 4 – 1 = 9; c) 14 – 5 = 9",
-          "explanation": "Ô trống: 5, 5, 8, 9, 9, 9, 3, 8. Tính nhẩm: 6 và 6, 7 và 7, 9 và 9: trừ hai lần liền bằng trừ một lần tổng của chúng."
+          "text": "12 – 5 = 7; 13 – 9 = 4; 16 – 7 = 9; 11 – 6 = 5; 15 – 8 = 7; 14 – 9 = 5; 17 – 9 = 8; 12 – 3 = 9; a) 15 – 5 – 2 = 8; a) 15 – 7 = 8; b) 16 – 6 – 3 = 7; b) 16 – 9 = 7; c) 12 – 2 – 5 = 5; c) 12 – 7 = 5",
+          "explanation": "Tám ô đầu: 7, 4, 9, 5, 7, 5, 8, 9. Ba cặp cuối: 8 và 8, 7 và 7, 5 và 5: trừ hai lần liền bằng trừ một lần tổng của hai số trừ."
         }
       },
       "feedback": {
         "right": [
-          "Sổ bếp kín ô, Heo Ủn đọc to từng dòng như đọc thực đơn.",
-          "Cậu phát hiện ra mẹo trừ hai lần rồi, đỉnh thật!",
-          "Mười bốn ô đều đúng, bếp trưởng phong cậu làm phó bếp."
+          "Trang sổ kín số đúng, Heo Ủn gấp lại hài lòng!",
+          "Hai cách tính cho cùng kết quả, cậu phát hiện ra bí quyết rồi.",
+          "Mười bốn ô trống đều có số, chẳng chỗ nào còn trống."
         ],
         "wrong": [
-          "Trừ từ trái sang phải, từng bước một nhé.",
-          "13 – 3 tròn 10 rồi, trừ tiếp 4 là xong.",
-          "Một ô trong sổ còn lệch, soi lại dòng đó nào."
+          "Trừ hai lần liền thì làm từ trái sang phải.",
+          "Mỗi cặp phép tính cuối phải cho cùng một kết quả.",
+          "Một ô trong tám ô đầu còn lệch, soát lại nhé."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o5",
-          "b2": "o5",
-          "b3": "o8",
-          "b4": "o9",
-          "b5": "o9",
-          "b6": "o9",
-          "b7": "o3",
-          "b8": "o8",
-          "b9": "o6",
-          "b10": "o6",
+          "b1": "o7",
+          "b2": "o4",
+          "b3": "o9",
+          "b4": "o5",
+          "b5": "o7",
+          "b6": "o5",
+          "b7": "o8",
+          "b8": "o9",
+          "b9": "o8",
+          "b10": "o8",
           "b11": "o7",
           "b12": "o7",
-          "b13": "o9",
-          "b14": "o9"
+          "b13": "o5",
+          "b14": "o5"
         }
-      }
+      },
+      "expression": {
+        "b1": "12 - 5",
+        "b2": "13 - 9",
+        "b3": "16 - 7",
+        "b4": "11 - 6",
+        "b5": "15 - 8",
+        "b6": "14 - 9",
+        "b7": "17 - 9",
+        "b8": "12 - 3",
+        "b9": "15 - 5 - 2",
+        "b10": "15 - 7",
+        "b11": "16 - 6 - 3",
+        "b12": "16 - 9",
+        "b13": "12 - 2 - 5",
+        "b14": "12 - 7"
+      },
+      "objective": "cong-tru-qua-10-bang"
     },
     {
       "id": "tinh-cong-tru-heo",
-      "title": "Phép cộng hóa phép trừ",
+      "title": "Phép cộng và phép trừ bạn thân",
       "target": "heo-un-cong-sau",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Heo Ủn phát hiện phép cộng và phép trừ là \"anh em ruột\". Tính. Rồi Số ? theo các mũi tên: 18 trừ 9, cộng 6, trừ 7.",
-      "template": "a) 7 + 5 = {{b1}}\na) 5 + 7 = {{b2}}\na) 12 – 7 = {{b3}}\na) 12 – 5 = {{b4}}\nb) 8 + 6 = {{b5}}\nb) 6 + 8 = {{b6}}\nb) 14 – 8 = {{b7}}\nb) 14 – 6 = {{b8}}\nc) 9 + 8 = {{b9}}\nc) 8 + 9 = {{b10}}\nc) 17 – 9 = {{b11}}\nc) 17 – 8 = {{b12}}\n18 → (– 9) → {{b13}} → (+ 6) → {{b14}} → (– 7) → {{b15}}",
+      "prompt": "Heo Ủn phát hiện phép cộng và phép trừ là bạn thân của nhau. Cậu tính từng nhóm bốn phép, rồi đi theo các mũi tên: 13 trừ 5, cộng 7, trừ 6.",
+      "template": "a) 5 + 8 = {{b1}}\na) 8 + 5 = {{b2}}\na) 13 – 8 = {{b3}}\na) 13 – 5 = {{b4}}\nb) 9 + 7 = {{b5}}\nb) 7 + 9 = {{b6}}\nb) 16 – 7 = {{b7}}\nb) 16 – 9 = {{b8}}\nc) 6 + 9 = {{b9}}\nc) 9 + 6 = {{b10}}\nc) 15 – 9 = {{b11}}\nc) 15 – 6 = {{b12}}\n13 → (– 5) → {{b13}} → (+ 7) → {{b14}} → (– 6) → {{b15}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o12",
-              "text": "12"
-            },
-            {
               "id": "o13",
               "text": "13"
+            },
+            {
+              "id": "o14",
+              "text": "14"
+            },
+            {
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
@@ -2756,8 +2725,8 @@
               "text": "13"
             },
             {
-              "id": "o14",
-              "text": "14"
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
@@ -2765,16 +2734,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
-            },
-            {
               "id": "o5",
               "text": "5"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -2782,16 +2751,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o8",
+              "text": "8"
             },
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o18",
+              "text": "18"
             }
           ]
         },
@@ -2799,16 +2768,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o13",
-              "text": "13"
-            },
-            {
-              "id": "o14",
-              "text": "14"
+              "id": "o15",
+              "text": "15"
             },
             {
               "id": "o16",
               "text": "16"
+            },
+            {
+              "id": "o61",
+              "text": "61"
             }
           ]
         },
@@ -2816,16 +2785,16 @@
           "id": "b6",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o16",
+              "text": "16"
             },
             {
-              "id": "o12",
-              "text": "12"
+              "id": "o17",
+              "text": "17"
             },
             {
-              "id": "o14",
-              "text": "14"
+              "id": "o61",
+              "text": "61"
             }
           ]
         },
@@ -2833,16 +2802,16 @@
           "id": "b7",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o19",
+              "text": "19"
             }
           ]
         },
@@ -2854,12 +2823,12 @@
               "text": "6"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o7",
+              "text": "7"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -2867,16 +2836,16 @@
           "id": "b9",
           "options": [
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o15",
+              "text": "15"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o16",
+              "text": "16"
             },
             {
-              "id": "o19",
-              "text": "19"
+              "id": "o51",
+              "text": "51"
             }
           ]
         },
@@ -2884,16 +2853,16 @@
           "id": "b10",
           "options": [
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o14",
+              "text": "14"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o15",
+              "text": "15"
             },
             {
-              "id": "o71",
-              "text": "71"
+              "id": "o51",
+              "text": "51"
             }
           ]
         },
@@ -2901,16 +2870,16 @@
           "id": "b11",
           "options": [
             {
+              "id": "o5",
+              "text": "5"
+            },
+            {
               "id": "o6",
               "text": "6"
             },
             {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o10",
-              "text": "10"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -2918,29 +2887,12 @@
           "id": "b12",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o8",
+              "text": "8"
             },
             {
               "id": "o9",
               "text": "9"
-            },
-            {
-              "id": "o10",
-              "text": "10"
-            }
-          ]
-        },
-        {
-          "id": "b13",
-          "options": [
-            {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o10",
-              "text": "10"
             },
             {
               "id": "o19",
@@ -2949,15 +2901,32 @@
           ]
         },
         {
+          "id": "b13",
+          "options": [
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        },
+        {
           "id": "b14",
           "options": [
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o14",
+              "text": "14"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o15",
+              "text": "15"
             },
             {
               "id": "o51",
@@ -2969,80 +2938,81 @@
           "id": "b15",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o19",
+              "text": "19"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-4-2-a1",
-        "toan2-t1-b11-luyen-tap-4-2-a2",
-        "toan2-t1-b11-luyen-tap-4-2-a3",
-        "toan2-t1-b11-luyen-tap-4-2-a4",
-        "toan2-t1-b11-luyen-tap-4-2-b1",
-        "toan2-t1-b11-luyen-tap-4-2-b2",
-        "toan2-t1-b11-luyen-tap-4-2-b3",
-        "toan2-t1-b11-luyen-tap-4-2-b4",
-        "toan2-t1-b11-luyen-tap-4-2-c1",
-        "toan2-t1-b11-luyen-tap-4-2-c2",
-        "toan2-t1-b11-luyen-tap-4-2-c3",
-        "toan2-t1-b11-luyen-tap-4-2-c4",
-        "toan2-t1-b11-luyen-tap-4-4-a",
-        "toan2-t1-b11-luyen-tap-4-4-b",
-        "toan2-t1-b11-luyen-tap-4-4-c"
-      ],
       "support": {
         "guide": [
-          "7 + 5 = 12 thì 12 – 7 = 5 và 12 – 5 = 7.",
-          "Theo mũi tên: lấy kết quả ô trước làm tiếp ô sau."
+          "5 + 8 = 13 thì 13 – 5 = 8 và 13 – 8 = 5.",
+          "Theo mũi tên: lấy kết quả ô trước làm số bắt đầu cho ô sau."
         ],
-        "hint": "18 – 9 = 9, 9 + 6 = 15, 15 – 7 = 8.",
+        "hint": "13 – 5 = 8, 8 + 7 = 15, 15 – 6 = 9.",
         "answer": {
-          "text": "a) 7 + 5 = 12; a) 5 + 7 = 12; a) 12 – 7 = 5; a) 12 – 5 = 7; b) 8 + 6 = 14; b) 6 + 8 = 14; b) 14 – 8 = 6; b) 14 – 6 = 8; c) 9 + 8 = 17; c) 8 + 9 = 17; c) 17 – 9 = 8; c) 17 – 8 = 9; 18 → (– 9) → 9 → (+ 6) → 15 → (– 7) → 8",
-          "explanation": "a) 12, 12, 5, 7. b) 14, 14, 6, 8. c) 17, 17, 8, 9. Mũi tên: 9, 15, 8."
+          "text": "a) 5 + 8 = 13; a) 8 + 5 = 13; a) 13 – 8 = 5; a) 13 – 5 = 8; b) 9 + 7 = 16; b) 7 + 9 = 16; b) 16 – 7 = 9; b) 16 – 9 = 7; c) 6 + 9 = 15; c) 9 + 6 = 15; c) 15 – 9 = 6; c) 15 – 6 = 9; 13 → (– 5) → 8 → (+ 7) → 15 → (– 6) → 9",
+          "explanation": "a) 13, 13, 5, 8. b) 16, 16, 9, 7. c) 15, 15, 6, 9. Mũi tên: 8, 15, 9."
         }
       },
       "feedback": {
         "right": [
-          "Anh em cộng trừ nhận nhau rồi, Heo Ủn rơm rớm nước mắt xúc động!",
-          "Chuỗi mũi tên đi trọn từ 18 về tới 8, mượt quá.",
-          "Mười lăm ô đúng sạch, sổ bếp sáng bừng."
+          "Cộng với trừ nắm tay nhau, mười hai phép đều đúng!",
+          "Theo mũi tên tới đích mà không lạc bước nào.",
+          "Heo Ủn reo lên: bạn thân của phép cộng chính là phép trừ!"
         ],
         "wrong": [
-          "Đổi chỗ hai số hạng thì tổng không đổi đâu.",
-          "Theo mũi tên, lấy kết quả vừa tìm để tính tiếp.",
-          "Từ phép cộng 7 + 5 = 12, suy ra 12 – 7 bằng mấy?"
+          "Từ phép cộng suy ra phép trừ: lấy tổng bớt một số hạng.",
+          "Đổi chỗ hai số hạng thì tổng vẫn như cũ.",
+          "Mũi tên thứ hai là cộng 7, đừng nhầm thành trừ."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o12",
-          "b2": "o12",
+          "b1": "o13",
+          "b2": "o13",
           "b3": "o5",
-          "b4": "o7",
-          "b5": "o14",
-          "b6": "o14",
-          "b7": "o6",
-          "b8": "o8",
-          "b9": "o17",
-          "b10": "o17",
-          "b11": "o8",
+          "b4": "o8",
+          "b5": "o16",
+          "b6": "o16",
+          "b7": "o9",
+          "b8": "o7",
+          "b9": "o15",
+          "b10": "o15",
+          "b11": "o6",
           "b12": "o9",
-          "b13": "o9",
+          "b13": "o8",
           "b14": "o15",
-          "b15": "o8"
+          "b15": "o9"
         }
-      }
+      },
+      "expression": {
+        "b1": "5 + 8",
+        "b2": "8 + 5",
+        "b3": "13 - 8",
+        "b4": "13 - 5",
+        "b5": "9 + 7",
+        "b6": "7 + 9",
+        "b7": "16 - 7",
+        "b8": "16 - 9",
+        "b9": "6 + 9",
+        "b10": "9 + 6",
+        "b11": "15 - 9",
+        "b12": "15 - 6",
+        "b13": "13 - 5",
+        "b14": "13 - 5 + 7",
+        "b15": "13 - 5 + 7 - 6"
+      },
+      "objective": "cong-tru-qua-10-bang"
     },
     {
       "id": "dua-xe-qua-cau",
@@ -3050,37 +3020,36 @@
       "goTo": "Chạy tới chân cầu rồng bắc qua kênh, chú Dũng đang phất cờ cho đoàn đua",
       "target": "toan2-cd2-b11-thay-dung",
       "kind": "riddle",
-      "question": "Đoàn đua xe đạp phóng qua cây cầu hình rồng bắc ngang con kênh, Heo Ủn đứng cổ vũ ầm ĩ. Có 15 vận động viên đua xe đạp, 6 vận động viên đã qua cầu. Hỏi còn bao nhiêu vận động viên chưa qua cầu?",
+      "question": "Chú Dũng phất cờ cho đoàn đua xe đạp qua cầu rồng bắc ngang kênh, Heo Ủn đứng cổ vũ ầm ĩ. Đoàn có 14 chiếc xe, 6 chiếc đã qua cầu. Hỏi còn mấy chiếc xe chưa qua cầu?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b11-luyen-tap-4-5"
-      ],
       "support": {
         "guide": [
-          "Lấy tất cả vận động viên trừ đi số đã qua cầu.",
-          "Phép tính là 15 – 6."
+          "Lấy tất cả số xe trừ đi số xe đã qua cầu.",
+          "Phép tính là 14 – 6."
         ],
-        "hint": "10 – 6 = 4, 4 + 5 = 9.",
+        "hint": "10 – 6 = 4, 4 + 4 = 8.",
         "answer": {
-          "text": "15 – 6 = 9. Đáp số: 9 vận động viên",
-          "explanation": "Còn 15 – 6 = 9 (vận động viên) chưa qua cầu."
+          "text": "14 – 6 = 8. Đáp số: 8 chiếc xe",
+          "explanation": "Còn 14 – 6 = 8 (chiếc xe) chưa qua cầu."
         }
       },
       "feedback": {
         "right": [
-          "Kính coong! Chín tay đua còn lại phóng vút qua cầu rồng.",
-          "Chú Dũng thổi còi tuýt dài, Heo Ủn hò reo vang cả chợ.",
-          "Câu đố cuối cùng hạ gục gọn gàng, nhà vô địch đây rồi!"
+          "Tám chiếc xe còn lại rầm rập lên cầu rồng, chú Dũng phất cờ rối rít!",
+          "Đã qua cầu thì bớt khỏi đoàn, cậu chọn đúng phép trừ.",
+          "Heo Ủn gào cổ vũ khản cả giọng nhờ có cậu tính kịp."
         ],
         "wrong": [
-          "Chưa qua cầu thì lấy tổng số trừ số đã qua nhé.",
-          "Thử tách 15 thành 10 và 5 rồi trừ 6.",
-          "Đếm lại: 15 bạn, 6 bạn đã qua, còn bao nhiêu?"
+          "Xe đã qua cầu thì phải bớt khỏi đoàn.",
+          "Lấy 14 trừ 6 nhé, không phải cộng.",
+          "Bẻ 14 thành 10 và 4 rồi trừ 6 xem sao."
         ]
       },
       "answer": {
-        "value": 9
-      }
+        "value": 8
+      },
+      "expression": "14 - 6",
+      "objective": "bai-toan-co-loi-van-them-bot"
     },
     {
       "id": "huy-hieu-banh-tao",

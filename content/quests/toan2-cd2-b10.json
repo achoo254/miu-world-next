@@ -4,7 +4,6 @@
   "chapter": 1,
   "title": "Con đập đá của Hải Ly Sậy",
   "status": "active",
-  "lesson": "toan2-t1-b10",
   "topic": "cong-tru-qua-10",
   "summary": "Hải Ly Sậy xây đập nhỏ bên bờ kênh giữ nước cho ao vịt cạnh chợ, mỗi viên đá khắc một phép tính; {name} tính giúp từng viên, cắm quạt cho lán gỗ, chọn toa tàu với Voi Mít, đếm bạn ném bóng cùng Hươu Vươn rồi đấu trò Bắt vịt với Hải Ly.",
   "review": "teacher-pending",
@@ -13,9 +12,9 @@
     "where": "Chợ phiên, khu chợ rau hoa: bờ kênh cạnh chợ, bãi sỏi ven kênh, lán gỗ bên kênh, sạp tàu gỗ cạnh hàng bầu bí, bãi ném rổ tre, bờ ao vịt",
     "goal": "Xếp xong con đập đá để ao vịt cạnh chợ không bị cạn nước",
     "play": "Nhặt đá cuội, điền bảng, cắm quạt đúng ổ, chọn toa tàu, đếm khối gỗ, giải toán, đấu trò Bắt vịt",
-    "learn": "Toán 2 Bài 10: luyện tập chung phép cộng qua 10, bài toán thêm, bớt",
+    "learn": "Luyện tập chung phép cộng qua 10 trong phạm vi 20: bảng cộng, so sánh kết quả, bài toán thêm, bớt",
     "reward": "80 XP, 15 xu, Phép cộng +2, Bài toán có lời văn +1",
-    "next": "Bài 11 \"Phép trừ (qua 10) trong phạm vi 20\""
+    "next": "Heo Ủn và cây táo rụng bên hàng quả"
   },
   "phases": {
     "hook": "dap-dang-ro-nuoc",
@@ -105,50 +104,12 @@
       "target": "toan2-cd2-b10-hai-ly-say",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Hải Ly xếp đá thành hàng, hàng dưới cùng là số hạng, hàng trên là tổng. Số ?",
-      "template": "a) Số hạng | 2 | 3 | 4 | 5 | 6 | 7 | 8\nSố hạng | 9 | 8 | 9 | 7 | 6 | 8 | 5\nTổng | 11 | {{b1}} | {{b2}} | {{b3}} | {{b4}} | {{b5}} | {{b6}}\nb) Nụ hoa 8 → + 5 → bông hoa {{b7}} → – 3 → quả bưởi {{b8}}",
+      "prompt": "Hải Ly xếp đá thành từng cặp: hai viên bên ngoài là số hạng, viên đặt giữa khắc tổng. Cặp đầu đã khắc sẵn, cậu khắc nốt các cặp còn lại, rồi theo dây chuyền mũi tên đến cuối.",
+      "template": "Cặp 1: 5 + 7 = 12\nCặp 2: 9 + 4 = {{b1}}\nCặp 3: 6 + 5 = {{b2}}\nCặp 4: 8 + 6 = {{b3}}\nCặp 5: 5 + 8 = {{b4}}\nCặp 6: 7 + 7 = {{b5}}\nCặp 7: 9 + 6 = {{b6}}\nDây chuyền: 8 → (+ 7) → {{b7}} → (– 2) → {{b8}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o1",
-              "text": "1"
-            },
-            {
-              "id": "o10",
-              "text": "10"
-            },
-            {
-              "id": "o11",
-              "text": "11"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o13",
-              "text": "13"
-            },
-            {
-              "id": "o23",
-              "text": "23"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o12",
-              "text": "12"
-            },
             {
               "id": "o13",
               "text": "13"
@@ -156,6 +117,44 @@
             {
               "id": "o14",
               "text": "14"
+            },
+            {
+              "id": "o31",
+              "text": "31"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o10",
+              "text": "10"
+            },
+            {
+              "id": "o11",
+              "text": "11"
+            },
+            {
+              "id": "o21",
+              "text": "21"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o13",
+              "text": "13"
+            },
+            {
+              "id": "o14",
+              "text": "14"
+            },
+            {
+              "id": "o41",
+              "text": "41"
             }
           ]
         },
@@ -163,16 +162,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o10",
-              "text": "10"
-            },
-            {
               "id": "o12",
               "text": "12"
             },
             {
               "id": "o13",
               "text": "13"
+            },
+            {
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
@@ -182,6 +181,23 @@
             {
               "id": "o13",
               "text": "13"
+            },
+            {
+              "id": "o14",
+              "text": "14"
+            },
+            {
+              "id": "o41",
+              "text": "41"
+            }
+          ]
+        },
+        {
+          "id": "b6",
+          "options": [
+            {
+              "id": "o14",
+              "text": "14"
             },
             {
               "id": "o15",
@@ -194,24 +210,24 @@
           ]
         },
         {
-          "id": "b6",
+          "id": "b7",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o15",
+              "text": "15"
             },
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o16",
+              "text": "16"
             },
             {
-              "id": "o23",
-              "text": "23"
+              "id": "o51",
+              "text": "51"
             }
           ]
         },
         {
-          "id": "b7",
+          "id": "b8",
           "options": [
             {
               "id": "o12",
@@ -222,74 +238,59 @@
               "text": "13"
             },
             {
-              "id": "o23",
-              "text": "23"
-            }
-          ]
-        },
-        {
-          "id": "b8",
-          "options": [
-            {
-              "id": "o0",
-              "text": "0"
-            },
-            {
-              "id": "o10",
-              "text": "10"
-            },
-            {
-              "id": "o20",
-              "text": "20"
+              "id": "o31",
+              "text": "31"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-1-a1",
-        "toan2-t1-b10-luyen-tap-1-a2",
-        "toan2-t1-b10-luyen-tap-1-a3",
-        "toan2-t1-b10-luyen-tap-1-a4",
-        "toan2-t1-b10-luyen-tap-1-a5",
-        "toan2-t1-b10-luyen-tap-1-a6",
-        "toan2-t1-b10-luyen-tap-1-b"
-      ],
       "support": {
         "guide": [
-          "Tổng là hai số hạng cộng lại; cột 2 và 9 là mẫu.",
-          "Ở câu b, lấy kết quả vừa tìm rồi trừ tiếp."
+          "Hai số hạng ở hai bên cộng lại thì ra viên đá tổng ở giữa; cặp 1 là mẫu.",
+          "Ở dây chuyền, lấy kết quả viên trước làm số bắt đầu cho mũi tên sau."
         ],
-        "hint": "7 + 8: 7 mượn 3 của 8 thành 10, còn 5.",
+        "hint": "6 + 5: lấy 4 của số 5 bù cho 6 thành 10, còn 1, vậy là 11.",
         "answer": {
-          "text": "a) Số hạng | 2 | 3 | 4 | 5 | 6 | 7 | 8; Số hạng | 9 | 8 | 9 | 7 | 6 | 8 | 5; Tổng | 11 | 11 | 13 | 12 | 12 | 15 | 13; b) Nụ hoa 8 → + 5 → bông hoa 13 → – 3 → quả bưởi 10",
-          "explanation": "Tổng: 3 + 8 = 11, 4 + 9 = 13, 5 + 7 = 12, 6 + 6 = 12, 7 + 8 = 15, 8 + 5 = 13. b) 8 + 5 = 13, 13 – 3 = 10."
+          "text": "Cặp 1: 5 + 7 = 12; Cặp 2: 9 + 4 = 13; Cặp 3: 6 + 5 = 11; Cặp 4: 8 + 6 = 14; Cặp 5: 5 + 8 = 13; Cặp 6: 7 + 7 = 14; Cặp 7: 9 + 6 = 15; Dây chuyền: 8 → (+ 7) → 15 → (– 2) → 13",
+          "explanation": "Các tổng: 9 + 4 = 13, 6 + 5 = 11, 8 + 6 = 14, 5 + 8 = 13, 7 + 7 = 14, 9 + 6 = 15. Dây chuyền: 8 + 7 = 15, rồi 15 – 2 = 13."
         }
       },
       "feedback": {
         "right": [
-          "Hàng đá đầu tiên khít rịt, nước thôi rỉ tong tỏng rồi!",
-          "Hải Ly gõ đuôi cộp cộp: viên nào cũng đúng chỗ.",
-          "Nụ hoa nở thành hoa, hoa kết thành bưởi, đẹp quá!"
+          "Bảy cặp đá khít rịt, nước ao thôi rỉ tong tỏng rồi!",
+          "Hải Ly gõ đuôi cộp cộp: viên nào cũng nằm đúng chỗ.",
+          "Dây chuyền đá chạy trơn tru, Cá Linh vẫy đuôi tán thưởng."
         ],
         "wrong": [
-          "Một viên đá tổng bị lệch nên nước vẫn rỉ, tính lại nhé.",
-          "Mũi tên có dấu trừ thì bớt đi đấy.",
-          "Cộng hai số hạng ở cùng một cột thôi nha."
+          "Một viên tổng bị khắc lệch nên nước vẫn rỉ, tính lại cặp đó nhé.",
+          "Mũi tên có dấu trừ nghĩa là bớt đi chứ không thêm.",
+          "Chỉ cộng hai số hạng của cùng một cặp với nhau thôi."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o11",
-          "b2": "o13",
-          "b3": "o12",
-          "b4": "o12",
-          "b5": "o15",
-          "b6": "o13",
-          "b7": "o13",
-          "b8": "o10"
+          "b1": "o13",
+          "b2": "o11",
+          "b3": "o14",
+          "b4": "o13",
+          "b5": "o14",
+          "b6": "o15",
+          "b7": "o15",
+          "b8": "o13"
         }
-      }
+      },
+      "expression": {
+        "b1": "9 + 4",
+        "b2": "6 + 5",
+        "b3": "8 + 6",
+        "b4": "5 + 8",
+        "b5": "7 + 7",
+        "b6": "9 + 6",
+        "b7": "8 + 7",
+        "b8": "8 + 7 - 2"
+      },
+      "objective": "cong-tru-qua-10-cong"
     },
     {
       "id": "quat-chung-o-cam",
@@ -298,11 +299,11 @@
       "target": "toan2-cd2-b10-hai-ly-say-lan-go",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Lán gỗ của Hải Ly có năm chiếc quạt, quạt 9 + 5 đã cắm vào ổ 14. Hai quạt nào có chung ổ cắm điện? Cắm mỗi quạt còn lại vào ổ ghi kết quả của nó.",
+      "prompt": "Trong lán gỗ có năm chiếc quạt nan chạy bằng điện. Quạt mẫu 9 + 6 đã cắm vào ổ 15. Mỗi quạt còn lại phải cắm vào ổ ghi đúng kết quả phép tính của nó, và có hai quạt phải dùng chung một ổ. Cậu cắm giúp Hải Ly nhé!",
       "groups": [
         {
-          "id": "nhom-o-cam-14",
-          "label": "Ổ cắm 14"
+          "id": "nhom-o-cam-15",
+          "label": "Ổ cắm 15"
         },
         {
           "id": "nhom-o-cam-11",
@@ -319,57 +320,55 @@
       ],
       "items": [
         {
-          "id": "quat-7-5",
-          "label": "7 + 5"
+          "id": "quat-8-4",
+          "label": "8 + 4"
         },
         {
-          "id": "quat-4-9",
-          "label": "4 + 9"
+          "id": "quat-6-7",
+          "label": "6 + 7"
         },
         {
-          "id": "quat-6-6",
-          "label": "6 + 6"
+          "id": "quat-9-3",
+          "label": "9 + 3"
         },
         {
-          "id": "quat-8-3",
-          "label": "8 + 3"
+          "id": "quat-7-4",
+          "label": "7 + 4"
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-2-a"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả ghi trên mỗi quạt.",
-          "Hai quạt có cùng kết quả thì dùng chung một ổ cắm."
+          "Tính kết quả ghi trên từng chiếc quạt.",
+          "Hai quạt ra cùng kết quả thì cắm chung một ổ."
         ],
-        "hint": "7 + 5 và 6 + 6 cùng bằng 12.",
+        "hint": "8 + 4 và 9 + 3 cho cùng một kết quả.",
         "answer": {
-          "text": "7 + 5 và 6 + 6 – ổ 12; 4 + 9 – ổ 13; 8 + 3 – ổ 11",
-          "explanation": "7 + 5 = 12, 6 + 6 = 12 nên hai quạt này chung ổ 12; 4 + 9 = 13; 8 + 3 = 11."
+          "text": "8 + 4 và 9 + 3 – ổ 12; 6 + 7 – ổ 13; 7 + 4 – ổ 11",
+          "explanation": "8 + 4 = 12 và 9 + 3 = 12 nên hai quạt này chung ổ 12; 6 + 7 = 13; 7 + 4 = 11."
         }
       },
       "feedback": {
         "right": [
-          "Vù vù! Bốn chiếc quạt quay tít, lán gỗ mát rượi!",
-          "Hai quạt mười hai chung một ổ, đúng như sách hỏi.",
+          "Vù vù! Quạt nào cũng quay tít, lán gỗ mát rượi!",
+          "Hai quạt mười hai chung một ổ, Hải Ly gật gù khen cậu tinh mắt.",
           "Hải Ly đứng trước quạt, bộ lông bay phần phật."
         ],
         "wrong": [
-          "Một chiếc quạt cắm nhầm ổ nên không chạy kìa.",
-          "Hai quạt có cùng kết quả mới chung một ổ.",
-          "8 + 3: 8 mượn 2 của 3, còn 1, được mấy?"
+          "Một chiếc quạt cắm nhầm ổ nên đứng im không chạy.",
+          "Chỉ những quạt có cùng kết quả mới chung một ổ.",
+          "7 + 4: lấy 3 của số 4 bù cho 7 thành 10, còn 1, vậy được mấy?"
         ]
       },
       "answer": {
         "assignment": {
-          "quat-7-5": "nhom-o-cam-12",
-          "quat-4-9": "nhom-o-cam-13",
-          "quat-6-6": "nhom-o-cam-12",
-          "quat-8-3": "nhom-o-cam-11"
+          "quat-8-4": "nhom-o-cam-12",
+          "quat-6-7": "nhom-o-cam-13",
+          "quat-9-3": "nhom-o-cam-12",
+          "quat-7-4": "nhom-o-cam-11"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-cong"
     },
     {
       "id": "toa-cho-go-lon-nhat",
@@ -378,63 +377,61 @@
       "target": "toan2-cd2-b10-voi-mit",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Voi Mít bày bán đoàn tàu gỗ đồ chơi, hôm nay cho Hải Ly mượn chở gỗ. Bốn toa ghi 8 + 6, 7 + 6, 9 + 3, 6 + 9. a) Toa tàu nào dưới đây ghi phép tính có kết quả lớn nhất?",
-      "template": "Toa tàu có kết quả lớn nhất là toa {{b1}}.",
+      "prompt": "Voi Mít lùa bốn toa tàu gỗ ra bãi để chở đá cho Hải Ly. Mỗi toa mang một phép cộng: 9 + 5, 7 + 8, 6 + 6, 8 + 5. Toa có kết quả lớn nhất chở được nhiều đá nhất.",
+      "template": "Toa chở được nhiều đá nhất là toa {{b1}}.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "8-6",
-              "text": "8 + 6"
+              "id": "9-5",
+              "text": "9 + 5"
             },
             {
-              "id": "7-6",
-              "text": "7 + 6"
+              "id": "7-8",
+              "text": "7 + 8"
             },
             {
-              "id": "9-3",
-              "text": "9 + 3"
+              "id": "6-6",
+              "text": "6 + 6"
             },
             {
-              "id": "6-9",
-              "text": "6 + 9"
+              "id": "8-5",
+              "text": "8 + 5"
             }
           ]
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-3-a"
-      ],
       "support": {
         "guide": [
           "Tính kết quả của từng toa.",
-          "So các kết quả: 14, 13, 12, 15."
+          "So bốn kết quả: 14, 15, 12, 13."
         ],
-        "hint": "6 + 9 đổi chỗ thành 9 + 6.",
+        "hint": "Toa có kết quả lớn nhất không phải toa đầu tiên.",
         "answer": {
-          "text": "Toa 6 + 9 (bằng 15)",
-          "explanation": "8 + 6 = 14, 7 + 6 = 13, 9 + 3 = 12, 6 + 9 = 15; lớn nhất là toa 6 + 9."
+          "text": "Toa 7 + 8 (bằng 15)",
+          "explanation": "9 + 5 = 14, 7 + 8 = 15, 6 + 6 = 12, 8 + 5 = 13; kết quả lớn nhất là 15, của toa 7 + 8."
         }
       },
       "feedback": {
         "right": [
-          "Toa mười lăm chở được nhiều gỗ nhất, tàu chạy xình xịch!",
-          "So bốn toa không nhầm toa nào, {name} giỏi thật.",
-          "Voi Mít lấy vòi nhấc khúc gỗ to nhất đặt lên toa 6 + 9."
+          "Toa mười lăm chở được nhiều đá nhất, tàu chạy xình xịch!",
+          "Bốn toa so xong không nhầm toa nào, {name} giỏi thật.",
+          "Voi Mít dùng vòi nhấc tảng đá to nhất đặt lên toa 7 + 8."
         ],
         "wrong": [
           "Toa đó chưa phải lớn nhất, còn toa khác hơn nữa.",
           "Tính đủ cả bốn toa rồi mới so sánh nha.",
-          "6 + 9 và 9 + 6 bằng nhau, nhớ nhé."
+          "9 + 5 bằng 14, còn 7 + 8 thì sao?"
         ]
       },
       "answer": {
         "fills": {
-          "b1": "6-9"
+          "b1": "7-8"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-so-sanh"
     },
     {
       "id": "toa-nhe-hon-15",
@@ -442,58 +439,56 @@
       "target": "toan2-cd2-b10-voi-mit",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Đoàn tàu thứ hai có bốn toa ghi 6 + 5, 7 + 8, 9 + 4, 8 + 8. b) Những toa tàu nào dưới đây ghi phép tính có kết quả bé hơn 15?",
+      "prompt": "Đoàn tàu thứ hai kéo bốn toa chở củi, mỗi toa ghi một phép cộng. Cầu gỗ bắc qua kênh chỉ chịu được toa có kết quả bé hơn 14. Cậu chọn những toa được phép qua cầu.",
       "choices": [
         {
-          "id": "6-5",
-          "text": "6 + 5"
+          "id": "6-8",
+          "text": "6 + 8"
         },
         {
-          "id": "7-8",
-          "text": "7 + 8"
+          "id": "9-3",
+          "text": "9 + 3"
         },
         {
-          "id": "9-4",
-          "text": "9 + 4"
+          "id": "7-9",
+          "text": "7 + 9"
         },
         {
-          "id": "8-8",
-          "text": "8 + 8"
+          "id": "5-8",
+          "text": "5 + 8"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-3-b"
-      ],
       "support": {
         "guide": [
-          "Tính từng toa rồi so với 15.",
-          "Bằng 15 thì không bé hơn 15."
+          "Tính từng toa rồi so với 14.",
+          "Bằng 14 thì không bé hơn 14."
         ],
-        "hint": "7 + 8 vừa đúng bằng 15.",
+        "hint": "Toa 6 + 8 vừa đúng bằng 14, nặng quá cầu.",
         "answer": {
-          "text": "6 + 5 và 9 + 4",
-          "explanation": "6 + 5 = 11 và 9 + 4 = 13 bé hơn 15; 7 + 8 = 15 và 8 + 8 = 16 thì không."
+          "text": "9 + 3 và 5 + 8",
+          "explanation": "9 + 3 = 12 và 5 + 8 = 13 bé hơn 14; 6 + 8 = 14 và 7 + 9 = 16 thì không."
         }
       },
       "feedback": {
         "right": [
-          "Hai toa nhẹ tênh được móc vào đầu tàu nhỏ, chuẩn!",
-          "Toa 7 + 8 bằng đúng 15, cậu không bị lừa.",
-          "Voi Mít rống một tiếng, đoàn tàu thứ hai lăn bánh nhẹ tênh."
+          "Hai toa nhẹ lăn qua cầu gỗ êm ru, chuẩn rồi!",
+          "Toa 6 + 8 bằng đúng 14, cậu không bị đánh lừa.",
+          "Voi Mít rống một tiếng, đoàn tàu thứ hai chậm rãi qua kênh."
         ],
         "wrong": [
-          "Bằng 15 thì chưa bé hơn 15 đâu nha.",
-          "Còn một toa nhẹ hơn 15 chưa được chọn.",
-          "8 + 8 bằng 16, lớn hơn 15 rồi."
+          "Bằng 14 thì chưa bé hơn 14 đâu nha.",
+          "Còn một toa nhẹ hơn 14 chưa được chọn.",
+          "7 + 9 bằng 16, lớn hơn 14 rồi."
         ]
       },
       "answer": {
         "choices": [
-          "6-5",
-          "9-4"
+          "9-3",
+          "5-8"
         ]
-      }
+      },
+      "objective": "cong-tru-qua-10-so-sanh"
     },
     {
       "id": "hai-ly-hoi-cach-xep",
@@ -551,23 +546,23 @@
       "target": "toan2-cd2-b10-hai-ly-say-lan-go",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Hình A: 8 khối xếp hai lớp, mỗi lớp 4 khối. Hình B: 6 khối xếp bậc thang 3, 2, 1. Hình C: 4 khối xếp một lớp.",
-      "template": "Một bạn đã xếp các khối lập phương nhỏ thành ba hình A, B, C (như hình vẽ). a) Hình nào có số khối lập phương nhỏ nhiều nhất? Hình {{b1}}\nb) Hình A và B có tất cả bao nhiêu khối lập phương nhỏ? {{b2}} khối",
+      "prompt": "Hải Ly chất khối gỗ thành ba chồng. Chồng đỏ: 6 khối, hai tầng, mỗi tầng 3 khối. Chồng xanh: 8 khối xếp bậc thang 4, 3, 1. Chồng vàng: 5 khối xếp thành một hàng dài.",
+      "template": "Chồng có nhiều khối gỗ nhất là chồng {{b1}}.\nChồng xanh và chồng vàng có tất cả {{b2}} khối gỗ.",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "a",
-              "text": "A"
+              "id": "o0",
+              "text": "Đỏ"
             },
             {
-              "id": "b",
-              "text": "B"
+              "id": "o1",
+              "text": "Vàng"
             },
             {
-              "id": "c",
-              "text": "C"
+              "id": "o2",
+              "text": "Xanh"
             }
           ]
         },
@@ -575,54 +570,54 @@
           "id": "b2",
           "options": [
             {
+              "id": "o12",
+              "text": "12"
+            },
+            {
               "id": "o13",
               "text": "13"
             },
             {
-              "id": "o14",
-              "text": "14"
-            },
-            {
-              "id": "o24",
-              "text": "24"
+              "id": "o31",
+              "text": "31"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-4-a",
-        "toan2-t1-b10-luyen-tap-4-b"
-      ],
       "support": {
         "guide": [
-          "Đếm số khối của từng hình: lớp trên và lớp dưới.",
-          "Câu b cộng số khối của hình A và hình B."
+          "Đếm số khối của từng chồng: tầng trên cộng tầng dưới.",
+          "Câu sau chỉ cộng chồng xanh với chồng vàng, không lấy chồng đỏ."
         ],
-        "hint": "Hình A có 8 khối, hình B có 6 khối.",
+        "hint": "Chồng xanh có 8 khối, chồng vàng có 5 khối.",
         "answer": {
-          "text": "Một bạn đã xếp các khối lập phương nhỏ thành ba hình A, B, C (như hình vẽ). a) Hình nào có số khối lập phương nhỏ nhiều nhất? Hình A; b) Hình A và B có tất cả bao nhiêu khối lập phương nhỏ? 14 khối",
-          "explanation": "Hình A có 8 khối, B có 6 khối, C có 4 khối nên A nhiều nhất; A và B có 8 + 6 = 14 khối."
+          "text": "Chồng có nhiều khối gỗ nhất là chồng Xanh.; Chồng xanh và chồng vàng có tất cả 13 khối gỗ.",
+          "explanation": "Chồng đỏ có 6 khối, chồng xanh có 8 khối, chồng vàng có 5 khối nên chồng xanh nhiều nhất; xanh và vàng có 8 + 5 = 13 khối."
         }
       },
       "feedback": {
         "right": [
-          "Chồng gỗ A chặn kín chỗ rò, nước ao dâng lên róc rách!",
-          "Mười bốn khối gỗ được Hải Ly đóng đinh chắc nịch.",
-          "Đếm lớp trên lớp dưới không sót khối nào."
+          "Chồng xanh chặn kín chỗ rò, nước ao dâng lên róc rách!",
+          "Mười ba khối gỗ được Hải Ly đóng đinh chắc nịch.",
+          "Đếm tầng trên tầng dưới không sót khối nào."
         ],
         "wrong": [
-          "Đừng quên mấy khối nằm ở lớp dưới bị che khuất.",
-          "Câu b cộng hình A với hình B thôi, không lấy hình C.",
-          "Hình nhiều khối nhất có tới hai lớp đấy."
+          "Đừng quên mấy khối nằm ở tầng dưới bị che khuất.",
+          "Câu sau chỉ lấy chồng xanh cộng chồng vàng thôi.",
+          "Chồng nhiều khối nhất có bậc thang cao nhất đấy."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "a",
-          "b2": "o14"
+          "b1": "o2",
+          "b2": "o13"
         }
-      }
+      },
+      "expression": {
+        "b2": "8 + 5"
+      },
+      "objective": "cong-tru-qua-10-cong"
     },
     {
       "id": "san-bong-ro-ven-ao",
@@ -630,37 +625,36 @@
       "goTo": "Ra bãi ném rổ tre, Hươu Vươn đang ngẩng cổ ném bóng bình bịch",
       "target": "toan2-cd2-b10-huou-tit",
       "kind": "riddle",
-      "question": "Bình bịch! Cạnh ao vịt, các bạn treo rổ tre lên cột lều làm sân bóng rổ mini. Có 6 bạn đang chơi bóng rổ, sau đó thêm 3 bạn chạy đến cùng chơi. Hỏi lúc đó có tất cả bao nhiêu bạn chơi bóng rổ?",
+      "question": "Hươu Vươn ngó xuống bờ ao: 5 chú vịt con đang xếp hàng đi tắm, rồi 3 chú nữa lạch bạch chạy tới nhập hàng. Hỏi hàng vịt lúc đó có tất cả mấy chú?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-2-2"
-      ],
       "support": {
         "guide": [
-          "Có thêm bạn chạy đến thì làm phép cộng.",
-          "Không qua 10, nhẩm luôn 6 + 3."
+          "Có thêm vịt chạy tới thì hàng đông lên: làm phép cộng.",
+          "Hai số đều nhỏ, nhẩm luôn 5 + 3."
         ],
-        "hint": "Đếm tiếp từ 6 thêm ba bạn.",
+        "hint": "Đếm tiếp từ 5 thêm ba bước.",
         "answer": {
-          "text": "9 bạn",
-          "explanation": "Có tất cả 6 + 3 = 9 (bạn) chơi bóng rổ."
+          "text": "8 chú vịt",
+          "explanation": "Hàng vịt có tất cả 5 + 3 = 8 (chú)."
         }
       },
       "feedback": {
         "right": [
-          "Chín bạn ném bóng vào rổ tre, tiếng reo vang khắp dãy hàng!",
+          "Tám chú vịt nối đuôi nhau, tiếng cạp cạp vang khắp bờ ao!",
           "Thêm bạn là cộng, {name} nhẩm nhanh như chớp.",
-          "Hươu Vươn chẳng cần nhảy, ngóng cổ thả bóng vào rổ mừng cậu."
+          "Hươu Vươn ngóng cổ đếm theo, đếm xong gật đầu khen cậu."
         ],
         "wrong": [
-          "Có thêm bạn chạy đến thì đông hơn, không ít đi.",
-          "Đếm tiếp: 7, 8, 9 là xong.",
-          "Cộng số bạn đang chơi với số bạn mới đến nhé."
+          "Có thêm vịt chạy tới thì đông hơn, không ít đi.",
+          "Đếm tiếp: 6, 7, 8 là xong.",
+          "Cộng số vịt đang xếp hàng với số vịt mới tới nhé."
         ]
       },
       "answer": {
-        "value": 9
-      }
+        "value": 8
+      },
+      "expression": "5 + 3",
+      "objective": "bai-toan-co-loi-van-them-bot"
     },
     {
       "id": "bang-cong-tren-van",
@@ -669,16 +663,12 @@
       "target": "toan2-cd2-b10-hai-ly-say",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Hải Ly khắc thêm một bảng cộng lên tấm ván làm cửa cống. Số ?",
-      "template": "+ | 4 | 7 | 6 | 8 | 5 | 7\n| 8 | 6 | 9 | 4 | 6 | 5\n| 12 | {{b1}} | {{b2}} | {{b3}} | {{b4}} | {{b5}}",
+      "prompt": "Hải Ly khắc thêm các cặp số lên tấm ván làm cửa cống. Mỗi tấm khắc hai số hạng, tổng khắc ở dưới.",
+      "template": "Tấm mẫu: 9 và 3, tổng 12\nTấm 2: 8 và 5, tổng {{b1}}\nTấm 3: 7 và 7, tổng {{b2}}\nTấm 4: 9 và 4, tổng {{b3}}\nTấm 5: 6 và 8, tổng {{b4}}\nTấm 6: 5 và 6, tổng {{b5}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o12",
-              "text": "12"
-            },
             {
               "id": "o13",
               "text": "13"
@@ -686,6 +676,10 @@
             {
               "id": "o14",
               "text": "14"
+            },
+            {
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
@@ -693,16 +687,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o14",
+              "text": "14"
             },
             {
               "id": "o15",
               "text": "15"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o41",
+              "text": "41"
             }
           ]
         },
@@ -710,21 +704,38 @@
           "id": "b3",
           "options": [
             {
-              "id": "o12",
-              "text": "12"
+              "id": "o13",
+              "text": "13"
             },
             {
               "id": "o14",
               "text": "14"
             },
             {
-              "id": "o21",
-              "text": "21"
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
         {
           "id": "b4",
+          "options": [
+            {
+              "id": "o14",
+              "text": "14"
+            },
+            {
+              "id": "o15",
+              "text": "15"
+            },
+            {
+              "id": "o41",
+              "text": "41"
+            }
+          ]
+        },
+        {
+          "id": "b5",
           "options": [
             {
               "id": "o11",
@@ -735,23 +746,6 @@
               "text": "12"
             },
             {
-              "id": "o13",
-              "text": "13"
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "options": [
-            {
-              "id": "o12",
-              "text": "12"
-            },
-            {
-              "id": "o13",
-              "text": "13"
-            },
-            {
               "id": "o21",
               "text": "21"
             }
@@ -759,82 +753,82 @@
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-2-1-a",
-        "toan2-t1-b10-luyen-tap-2-1-b",
-        "toan2-t1-b10-luyen-tap-2-1-c",
-        "toan2-t1-b10-luyen-tap-2-1-d",
-        "toan2-t1-b10-luyen-tap-2-1-e"
-      ],
       "support": {
         "guide": [
-          "Mỗi cột lấy số hàng trên cộng số hàng giữa.",
-          "Cột 4 và 8 ra 12 là cột mẫu."
+          "Mỗi tấm lấy hai số hạng cộng lại ra tổng.",
+          "Tấm mẫu 9 + 3 = 12 cho cậu cách làm."
         ],
-        "hint": "5 + 6: 5 mượn 5 của 6 thành 10, còn 1.",
+        "hint": "9 + 4: lấy 1 của số 4 bù cho 9 thành 10, còn 3, vậy là 13.",
         "answer": {
-          "text": "+ | 4 | 7 | 6 | 8 | 5 | 7; | 8 | 6 | 9 | 4 | 6 | 5; | 12 | 13 | 15 | 12 | 11 | 12",
-          "explanation": "7 + 6 = 13, 6 + 9 = 15, 8 + 4 = 12, 5 + 6 = 11, 7 + 5 = 12."
+          "text": "Tấm mẫu: 9 và 3, tổng 12; Tấm 2: 8 và 5, tổng 13; Tấm 3: 7 và 7, tổng 14; Tấm 4: 9 và 4, tổng 13; Tấm 5: 6 và 8, tổng 14; Tấm 6: 5 và 6, tổng 11",
+          "explanation": "8 + 5 = 13, 7 + 7 = 14, 9 + 4 = 13, 6 + 8 = 14, 5 + 6 = 11."
         }
       },
       "feedback": {
         "right": [
-          "Cửa cống đóng mở trơn tru nhờ bảng cộng chuẩn từng ô!",
-          "Năm ô trên tấm ván đều khớp, Hải Ly chẳng phải sửa.",
+          "Cửa cống đóng mở trơn tru nhờ các tổng khắc chuẩn từng tấm!",
+          "Năm tấm ván đều khớp, Hải Ly chẳng phải khắc lại.",
           "Cá Linh ngoi lên xem rồi vẫy đuôi tán thưởng."
         ],
         "wrong": [
-          "Một ô trên tấm ván bị khắc lệch, cộng lại cột đó nhé.",
-          "Hàng trên và hàng giữa cùng một cột mới cộng với nhau.",
-          "6 + 9 đổi chỗ thành 9 + 6 cho dễ nhẩm."
+          "Một tấm ván bị khắc lệch, cộng lại tấm đó nhé.",
+          "Hai số hạng của cùng một tấm mới cộng với nhau.",
+          "6 + 8 đổi chỗ thành 8 + 6 cho dễ nhẩm."
         ]
       },
       "answer": {
         "fills": {
           "b1": "o13",
-          "b2": "o15",
-          "b3": "o12",
-          "b4": "o11",
-          "b5": "o12"
+          "b2": "o14",
+          "b3": "o13",
+          "b4": "o14",
+          "b5": "o11"
         }
-      }
+      },
+      "expression": {
+        "b1": "8 + 5",
+        "b2": "7 + 7",
+        "b3": "9 + 4",
+        "b4": "6 + 8",
+        "b5": "5 + 6"
+      },
+      "objective": "cong-tru-qua-10-bang"
     },
     {
       "id": "ca-sau-len-bo",
       "title": "Cá sấu phơi nắng",
       "target": "toan2-cd2-b10-hai-ly-say",
       "kind": "riddle",
-      "question": "Cá Linh kể chuyện hồ cá sấu ở sở thú mà nó từng nghe, vừa kể vừa run: Dưới hồ nước có 15 con cá sấu, sau đó có 3 con lên bờ. Hỏi còn lại bao nhiêu con cá sấu ở dưới hồ nước?",
+      "question": "Cá Linh ngoi lên khoe: dưới ao có 18 chú ếch, sau đó 4 chú nhảy lên bờ phơi nắng. Hỏi dưới ao còn lại mấy chú ếch?",
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b10-luyen-tap-2-3"
-      ],
       "support": {
         "guide": [
-          "Cá sấu lên bờ thì dưới hồ bớt đi.",
-          "Lấy số cá sấu lúc đầu trừ số con lên bờ."
+          "Ếch nhảy lên bờ thì dưới ao ít đi: làm phép trừ.",
+          "Lấy số ếch lúc đầu trừ số chú lên bờ."
         ],
-        "hint": "15 bớt 3: chỉ bớt ở hàng đơn vị.",
+        "hint": "18 bớt 4: chỉ bớt ở hàng đơn vị.",
         "answer": {
-          "text": "12 con cá sấu",
-          "explanation": "Còn lại dưới hồ 15 – 3 = 12 (con cá sấu)."
+          "text": "14 chú ếch",
+          "explanation": "Dưới ao còn 18 – 4 = 14 (chú ếch)."
         }
       },
       "feedback": {
         "right": [
-          "Mười hai con cá sấu còn dưới hồ, may mà con kênh của mình không có con nào!",
+          "Mười bốn chú ếch còn dưới ao, quạc quạc vang cả mặt nước!",
           "Lên bờ là bớt, {name} trừ không trượt phát nào.",
           "Cá Linh thở phào, phun ra một chuỗi bong bóng."
         ],
         "wrong": [
-          "Cá sấu lên bờ rồi thì dưới hồ ít đi chứ.",
-          "Lấy 15 bớt 3 nhé, không cộng đâu.",
-          "5 bớt 3 còn 2, vậy 15 bớt 3 còn bao nhiêu?"
+          "Ếch nhảy lên bờ rồi thì dưới ao ít đi chứ.",
+          "Lấy 18 bớt 4 nhé, không cộng đâu.",
+          "8 bớt 4 còn 4, vậy 18 bớt 4 còn bao nhiêu?"
         ]
       },
       "answer": {
-        "value": 12
-      }
+        "value": 14
+      },
+      "expression": "18 - 4",
+      "objective": "bai-toan-co-loi-van-them-bot"
     },
     {
       "id": "dau-bat-vit",
@@ -843,7 +837,7 @@
       "target": "toan2-cd2-b10-hai-ly-say-ao-vit",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Trò chơi BẮT VỊT: {name} đấu với Hải Ly Sậy! Cách chơi: • Chơi theo nhóm. • Người chơi bắt đầu từ ô xuất phát. Khi đến lượt, người chơi gieo xúc xắc. Đếm số chấm ở mặt trên xúc xắc rồi di chuyển số ô bằng số chấm đó. Nêu kết quả phép tính tại ô đi đến rồi bắt một con vịt ghi số bằng kết quả đó. • Trò chơi kết thúc khi bắt được 5 con vịt. Ván này quân của hai bạn dừng ở mười ô dưới đây: đưa mỗi ô tới con vịt ghi đúng kết quả.",
+      "prompt": "Hải Ly vẽ bàn chơi BẮT VỊT cho {name} đấu với mình. Quân dừng ở ô nào thì nêu kết quả phép tính của ô đó rồi bắt con vịt ghi đúng số ấy. Ván này quân của hai bạn dừng ở mười ô dưới đây: đưa mỗi ô tới con vịt ghi đúng kết quả.",
       "groups": [
         {
           "id": "nhom-vit-11",
@@ -880,59 +874,56 @@
       ],
       "items": [
         {
-          "id": "o-9-3",
-          "label": "9 + 3"
+          "id": "o-7-4",
+          "label": "7 + 4"
         },
         {
-          "id": "o-6-5",
-          "label": "6 + 5"
+          "id": "o-8-5",
+          "label": "8 + 5"
         },
         {
-          "id": "o-9-5",
-          "label": "9 + 5"
+          "id": "o-7-6",
+          "label": "7 + 6"
         },
         {
-          "id": "o-8-8",
-          "label": "8 + 8"
+          "id": "o-6-9",
+          "label": "6 + 9"
         },
         {
-          "id": "o-9-7",
-          "label": "9 + 7"
+          "id": "o-8-6",
+          "label": "8 + 6"
         },
         {
-          "id": "o-8-3",
-          "label": "8 + 3"
+          "id": "o-7-9",
+          "label": "7 + 9"
         },
         {
-          "id": "o-6-7",
-          "label": "6 + 7"
+          "id": "o-5-7",
+          "label": "5 + 7"
         },
         {
-          "id": "o-6-8",
-          "label": "6 + 8"
+          "id": "o-9-4",
+          "label": "9 + 4"
         },
         {
-          "id": "o-9-8",
-          "label": "9 + 8"
+          "id": "o-8-9",
+          "label": "8 + 9"
         },
         {
-          "id": "o-6-6",
-          "label": "6 + 6"
+          "id": "o-7-8",
+          "label": "7 + 8"
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b10-tro-choi-1"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả phép tính ở ô quân dừng lại.",
+          "Tính kết quả phép cộng ở ô quân dừng lại.",
           "Bắt con vịt ghi đúng số đó."
         ],
-        "hint": "Ô 9 + 8: 9 mượn 1 của 8, còn 7, được 17.",
+        "hint": "Ô 8 + 9: lấy 1 của số 9 bù cho 8 thành 9, rồi tính tiếp, ra 17.",
         "answer": {
-          "text": "9 + 3 – vịt 12; 6 + 5 – vịt 11; 9 + 5 – vịt 14; 8 + 8 – vịt 16; 9 + 7 – vịt 16; 8 + 3 – vịt 11; 6 + 7 – vịt 13; 6 + 8 – vịt 14; 9 + 8 – vịt 17; 6 + 6 – vịt 12",
-          "explanation": "9 + 3 = 12, 6 + 5 = 11, 9 + 5 = 14, 8 + 8 = 16, 9 + 7 = 16, 8 + 3 = 11, 6 + 7 = 13, 6 + 8 = 14, 9 + 8 = 17, 6 + 6 = 12."
+          "text": "7 + 4 – vịt 11; 8 + 5 – vịt 13; 7 + 6 – vịt 13; 6 + 9 – vịt 15; 8 + 6 – vịt 14; 7 + 9 – vịt 16; 5 + 7 – vịt 12; 9 + 4 – vịt 13; 8 + 9 – vịt 17; 7 + 8 – vịt 15",
+          "explanation": "7 + 4 = 11, 8 + 5 = 13, 7 + 6 = 13, 6 + 9 = 15, 8 + 6 = 14, 7 + 9 = 16, 5 + 7 = 12, 9 + 4 = 13, 8 + 9 = 17, 7 + 8 = 15."
         }
       },
       "feedback": {
@@ -949,18 +940,19 @@
       },
       "answer": {
         "assignment": {
-          "o-9-3": "nhom-vit-12",
-          "o-6-5": "nhom-vit-11",
-          "o-9-5": "nhom-vit-14",
-          "o-8-8": "nhom-vit-16",
-          "o-9-7": "nhom-vit-16",
-          "o-8-3": "nhom-vit-11",
-          "o-6-7": "nhom-vit-13",
-          "o-6-8": "nhom-vit-14",
-          "o-9-8": "nhom-vit-17",
-          "o-6-6": "nhom-vit-12"
+          "o-7-4": "nhom-vit-11",
+          "o-8-5": "nhom-vit-13",
+          "o-7-6": "nhom-vit-13",
+          "o-6-9": "nhom-vit-15",
+          "o-8-6": "nhom-vit-14",
+          "o-7-9": "nhom-vit-16",
+          "o-5-7": "nhom-vit-12",
+          "o-9-4": "nhom-vit-13",
+          "o-8-9": "nhom-vit-17",
+          "o-7-8": "nhom-vit-15"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-cong"
     },
     {
       "id": "huy-hieu-ky-su-dap",

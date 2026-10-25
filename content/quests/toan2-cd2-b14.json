@@ -4,18 +4,17 @@
   "chapter": 1,
   "title": "Câu đố trước cửa nhà kính",
   "status": "active",
-  "lesson": "toan2-t1-b14",
   "topic": "cong-tru-qua-10",
-  "summary": "Cánh Cụt Pin giữ chìa khóa nhà kính bán cây giống và kĩ tính tới mức chỉ chịu mở cửa khi mọi câu đố cộng, trừ qua 10 được kiểm đúng hết; {name} chạy quanh nhà kính giúp Ông Sáu lùa bồ câu, cùng Gấu Bơ nhìn qua ô kính, xem tranh với Cáo Hoa rồi đấu với Pin một ván Cầu thang – cầu trượt.",
+  "summary": "Cánh Cụt Pin giữ chìa khóa nhà kính bán cây giống và kĩ tính tới mức chỉ chịu mở cửa khi mọi câu đố cộng, trừ qua 10 được kiểm đúng hết; {name} chạy quanh nhà kính giúp Ông Sáu lùa bồ câu, cùng Gấu Bơ nhìn qua ô kính, xem tranh với Cáo Hoa rồi đấu với Pin một ván Leo thang – trượt dốc.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Cánh Cụt Pin, Ông Sáu, Gấu Bơ, Cáo Hoa",
     "where": "Chợ phiên, khu chợ rau hoa: cửa nhà kính bán cây giống, lồng bồ câu góc chợ, ô cửa kính bên hông, lối giữa nhà kính, sân gạch trước nhà kính",
     "goal": "Giải hết câu đố của Cánh Cụt Pin để nhà kính được mở cửa",
-    "play": "Tìm chìa khóa, tính nhẩm, đưa chim về chuồng, điền theo mũi tên, chọn câu đúng, tìm thức ăn cho con vật, chọn phép tính, chơi Cầu thang – cầu trượt",
-    "learn": "Toán 2 Bài 14: luyện tập chung phép cộng, phép trừ (qua 10) trong phạm vi 20",
+    "play": "Tìm chìa khóa, tính nhẩm, đưa chim về chuồng, điền theo mũi tên, chọn câu đúng, tìm thức ăn cho con vật, chọn phép tính, chơi Leo thang – trượt dốc",
+    "learn": "Luyện tập chung phép cộng, phép trừ qua 10 trong phạm vi 20: nhẩm hai cột, so sánh kết quả, tính ba số, bài toán thêm, bớt",
     "reward": "80 XP, 15 xu, Phép cộng +1, Phép trừ +1, Bài toán có lời văn +1",
-    "next": "Bài 15 \"Ki-lô-gam\" ở dãy hàng cân đong của Chợ phiên"
+    "next": "Chiếc cân đĩa bị lệch ở dãy hàng cân đong của Chợ phiên"
   },
   "phases": {
     "hook": "vet-khoa-cua",
@@ -139,19 +138,53 @@
       "target": "toan2-cd2-b14-canh-cut-pin",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Cánh Cụt Pin đọc từng phép một, đọc xong lại gạch một vạch vào sổ. Tính nhẩm.",
-      "template": "a) 8 + 6 = {{b1}}\na) 9 + 4 = {{b2}}\na) 7 + 8 = {{b3}}\na) 5 + 7 = {{b4}}\na) 4 + 8 = {{b5}}\na) 8 + 7 = {{b6}}\nb) 11 – 8 = {{b7}}\nb) 13 – 7 = {{b8}}\nb) 17 – 9 = {{b9}}\nb) 14 – 6 = {{b10}}\nb) 12 – 5 = {{b11}}\nb) 16 – 8 = {{b12}}",
+      "prompt": "Cánh Cụt Pin đọc từng phép một, đọc xong lại gạch một vạch vào sổ. Cột a toàn phép cộng, cột b toàn phép trừ. Cậu tính nhẩm theo.",
+      "template": "a) 8 + 3 = {{b1}}\na) 7 + 6 = {{b2}}\na) 9 + 5 = {{b3}}\na) 6 + 9 = {{b4}}\na) 9 + 3 = {{b5}}\na) 7 + 4 = {{b6}}\nb) 12 – 3 = {{b7}}\nb) 15 – 8 = {{b8}}\nb) 11 – 5 = {{b9}}\nb) 14 – 9 = {{b10}}\nb) 13 – 6 = {{b11}}\nb) 17 – 8 = {{b12}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o14",
-              "text": "14"
+              "id": "o11",
+              "text": "11"
             },
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o12",
+              "text": "12"
+            },
+            {
+              "id": "o21",
+              "text": "21"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o12",
+              "text": "12"
+            },
+            {
+              "id": "o13",
+              "text": "13"
+            },
+            {
+              "id": "o31",
+              "text": "31"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o13",
+              "text": "13"
+            },
+            {
+              "id": "o14",
+              "text": "14"
             },
             {
               "id": "o41",
@@ -160,32 +193,15 @@
           ]
         },
         {
-          "id": "b2",
+          "id": "b4",
           "options": [
             {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o13",
-              "text": "13"
+              "id": "o14",
+              "text": "14"
             },
             {
               "id": "o15",
               "text": "15"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o15",
-              "text": "15"
-            },
-            {
-              "id": "o17",
-              "text": "17"
             },
             {
               "id": "o51",
@@ -194,7 +210,7 @@
           ]
         },
         {
-          "id": "b4",
+          "id": "b5",
           "options": [
             {
               "id": "o11",
@@ -205,25 +221,8 @@
               "text": "12"
             },
             {
-              "id": "o13",
-              "text": "13"
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "options": [
-            {
-              "id": "o10",
-              "text": "10"
-            },
-            {
-              "id": "o12",
-              "text": "12"
-            },
-            {
-              "id": "o14",
-              "text": "14"
+              "id": "o21",
+              "text": "21"
             }
           ]
         },
@@ -231,16 +230,16 @@
           "id": "b6",
           "options": [
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o11",
+              "text": "11"
             },
             {
-              "id": "o25",
-              "text": "25"
+              "id": "o21",
+              "text": "21"
             }
           ]
         },
@@ -248,16 +247,16 @@
           "id": "b7",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o9",
+              "text": "9"
             },
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o19",
+              "text": "19"
             }
           ]
         },
@@ -265,16 +264,16 @@
           "id": "b8",
           "options": [
             {
-              "id": "o5",
-              "text": "5"
-            },
-            {
               "id": "o6",
               "text": "6"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -282,16 +281,16 @@
           "id": "b9",
           "options": [
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o6",
+              "text": "6"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -299,16 +298,16 @@
           "id": "b10",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o4",
+              "text": "4"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -316,16 +315,16 @@
           "id": "b11",
           "options": [
             {
-              "id": "o5",
-              "text": "5"
-            },
-            {
               "id": "o7",
               "text": "7"
             },
             {
               "id": "o8",
               "text": "8"
+            },
+            {
+              "id": "o17",
+              "text": "17"
             }
           ]
         },
@@ -341,43 +340,29 @@
               "text": "9"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o19",
+              "text": "19"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-1-a1",
-        "toan2-t1-b14-luyen-tap-1-a2",
-        "toan2-t1-b14-luyen-tap-1-a3",
-        "toan2-t1-b14-luyen-tap-1-a4",
-        "toan2-t1-b14-luyen-tap-1-a5",
-        "toan2-t1-b14-luyen-tap-1-a6",
-        "toan2-t1-b14-luyen-tap-1-b1",
-        "toan2-t1-b14-luyen-tap-1-b2",
-        "toan2-t1-b14-luyen-tap-1-b3",
-        "toan2-t1-b14-luyen-tap-1-b4",
-        "toan2-t1-b14-luyen-tap-1-b5",
-        "toan2-t1-b14-luyen-tap-1-b6"
-      ],
       "support": {
         "guide": [
           "Cột a là phép cộng qua 10, cột b là phép trừ qua 10.",
-          "Cộng thì gom đủ 10 trước, trừ thì trừ về 10 trước."
+          "Cộng thì gom cho đủ 10 trước, trừ thì trừ về 10 trước."
         ],
-        "hint": "7 + 8: 7 + 3 = 10, thêm 5 nữa là 15.",
+        "hint": "6 + 9: 6 + 4 = 10, thêm 5 nữa là 15.",
         "answer": {
-          "text": "a) 8 + 6 = 14; a) 9 + 4 = 13; a) 7 + 8 = 15; a) 5 + 7 = 12; a) 4 + 8 = 12; a) 8 + 7 = 15; b) 11 – 8 = 3; b) 13 – 7 = 6; b) 17 – 9 = 8; b) 14 – 6 = 8; b) 12 – 5 = 7; b) 16 – 8 = 8",
-          "explanation": "Cột a: 14, 13, 15, 12, 12, 15. Cột b: 3, 6, 8, 8, 7, 8."
+          "text": "a) 8 + 3 = 11; a) 7 + 6 = 13; a) 9 + 5 = 14; a) 6 + 9 = 15; a) 9 + 3 = 12; a) 7 + 4 = 11; b) 12 – 3 = 9; b) 15 – 8 = 7; b) 11 – 5 = 6; b) 14 – 9 = 5; b) 13 – 6 = 7; b) 17 – 8 = 9",
+          "explanation": "Cột a: 11, 13, 14, 15, 12, 11. Cột b: 9, 7, 6, 5, 7, 9."
         }
       },
       "feedback": {
         "right": [
           "Pin đọc tới đâu cậu theo kịp tới đó, nể thật!",
-          "Mười hai phép tính, mười hai kết quả đúng, Pin gạch đủ mười hai vạch.",
-          "Pin soát lại cả hai cột rồi gật gù: không sai một li."
+          "Mười hai phép tính đều đúng, Pin gạch đủ mười hai vạch.",
+          "Pin soát lại hai cột rồi gật gù: không sai một li."
         ],
         "wrong": [
           "Cột a là cộng, cột b là trừ, đừng lẫn hai cột nhé.",
@@ -387,20 +372,35 @@
       },
       "answer": {
         "fills": {
-          "b1": "o14",
+          "b1": "o11",
           "b2": "o13",
-          "b3": "o15",
-          "b4": "o12",
+          "b3": "o14",
+          "b4": "o15",
           "b5": "o12",
-          "b6": "o15",
-          "b7": "o3",
-          "b8": "o6",
-          "b9": "o8",
-          "b10": "o8",
+          "b6": "o11",
+          "b7": "o9",
+          "b8": "o7",
+          "b9": "o6",
+          "b10": "o5",
           "b11": "o7",
-          "b12": "o8"
+          "b12": "o9"
         }
-      }
+      },
+      "expression": {
+        "b1": "8 + 3",
+        "b2": "7 + 6",
+        "b3": "9 + 5",
+        "b4": "6 + 9",
+        "b5": "9 + 3",
+        "b6": "7 + 4",
+        "b7": "12 - 3",
+        "b8": "15 - 8",
+        "b9": "11 - 5",
+        "b10": "14 - 9",
+        "b11": "13 - 6",
+        "b12": "17 - 8"
+      },
+      "objective": "cong-tru-qua-10-cong"
     },
     {
       "id": "chim-bo-cau-ve-chuong",
@@ -409,60 +409,53 @@
       "target": "toan2-cd2-b14-ong-sau",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Đàn bồ câu Ông Sáu mang ra chợ bay ngang mái kính, con nào cũng đeo một phép tính. Tìm chuồng cho mỗi con chim.",
+      "prompt": "Đàn bồ câu của Ông Sáu bay vòng quanh mái kính, con nào cũng đeo một phép tính. Chim mẫu 7 + 5 đã vào chuồng 12. Cậu tìm chuồng đúng cho các chú chim còn lại.",
       "groups": [
         {
-          "id": "nhom-chuong-9",
-          "label": "Chuồng 9"
+          "id": "nhom-chuong-8",
+          "label": "Chuồng 8"
         },
         {
-          "id": "nhom-chuong-13",
-          "label": "Chuồng 13"
+          "id": "nhom-chuong-12",
+          "label": "Chuồng 12"
         },
         {
-          "id": "nhom-chuong-15",
-          "label": "Chuồng 15"
+          "id": "nhom-chuong-14",
+          "label": "Chuồng 14"
         }
       ],
       "items": [
         {
-          "id": "bo-cau-6-9",
-          "label": "6 + 9"
+          "id": "bo-cau-9-5",
+          "label": "9 + 5"
         },
         {
-          "id": "bo-cau-17-8",
-          "label": "17 – 8"
+          "id": "bo-cau-15-7",
+          "label": "15 – 7"
         },
         {
-          "id": "bo-cau-7-8",
-          "label": "7 + 8"
+          "id": "bo-cau-6-8",
+          "label": "6 + 8"
         },
         {
-          "id": "bo-cau-14-5",
-          "label": "14 – 5"
+          "id": "bo-cau-14-6",
+          "label": "14 – 6"
         },
         {
-          "id": "bo-cau-6-7",
-          "label": "6 + 7"
+          "id": "bo-cau-3-9",
+          "label": "3 + 9"
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-2-a",
-        "toan2-t1-b14-luyen-tap-2-b",
-        "toan2-t1-b14-luyen-tap-2-c",
-        "toan2-t1-b14-luyen-tap-2-d",
-        "toan2-t1-b14-luyen-tap-2-e"
-      ],
       "support": {
         "guide": [
           "Tính phép tính trên mỗi chú chim.",
-          "Chim về chuồng ghi kết quả; chim mẫu 8 + 5 ở chuồng 13."
+          "Chim về chuồng ghi đúng kết quả; chim mẫu 7 + 5 đã ở chuồng 12."
         ],
-        "hint": "6 + 9 và 7 + 8 cùng bằng 15.",
+        "hint": "9 + 5 và 6 + 8 cùng bằng 14.",
         "answer": {
-          "text": "Chuồng 15: 6 + 9, 7 + 8; chuồng 9: 17 – 8, 14 – 5; chuồng 13: 6 + 7",
-          "explanation": "6 + 9 = 15, 17 – 8 = 9, 7 + 8 = 15, 14 – 5 = 9, 6 + 7 = 13."
+          "text": "Chuồng 14: 9 + 5, 6 + 8; chuồng 8: 15 – 7, 14 – 6; chuồng 12: 3 + 9",
+          "explanation": "9 + 5 = 14, 15 – 7 = 8, 6 + 8 = 14, 14 – 6 = 8, 3 + 9 = 12."
         }
       },
       "feedback": {
@@ -474,56 +467,56 @@
         "wrong": [
           "Có chú bồ câu đang gõ nhầm cửa chuồng hàng xóm.",
           "Xem kĩ dấu cộng hay dấu trừ trên mỗi chú chim.",
-          "Hai chú chim cùng về chuồng 9 đấy, tìm lại nhé."
+          "Hai chú chim cùng về chuồng 8 đấy, tìm lại nhé."
         ]
       },
       "answer": {
         "assignment": {
-          "bo-cau-6-9": "nhom-chuong-15",
-          "bo-cau-17-8": "nhom-chuong-9",
-          "bo-cau-7-8": "nhom-chuong-15",
-          "bo-cau-14-5": "nhom-chuong-9",
-          "bo-cau-6-7": "nhom-chuong-13"
+          "bo-cau-9-5": "nhom-chuong-14",
+          "bo-cau-15-7": "nhom-chuong-8",
+          "bo-cau-6-8": "nhom-chuong-14",
+          "bo-cau-14-6": "nhom-chuong-8",
+          "bo-cau-3-9": "nhom-chuong-12"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-bang"
     },
     {
       "id": "gia-sach-vo",
-      "title": "Giá sách trong nhà kính",
+      "title": "Giá chậu hoa trong nhà kính",
       "goTo": "Sang ô cửa kính bên hông, Gấu Bơ đang áp mũi nhìn vào trong",
       "target": "toan2-cd2-b14-gau-mat",
       "kind": "riddle",
-      "question": "Cánh Cụt Pin ghé mắt qua ô kính, thấy giá sách dạy trồng cây trong nhà kính. Trên giá có 9 quyển sách và 8 quyển vở. Hỏi trên giá có tất cả bao nhiêu quyển sách và vở?",
+      "question": "Gấu Bơ áp mũi vào ô kính nhìn vào trong nhà kính: giá hoa có 6 chậu hoa hồng và 9 chậu hoa cúc. Hỏi giá hoa có tất cả bao nhiêu chậu hoa?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-3-a"
-      ],
       "support": {
         "guide": [
           "\"Tất cả\" nghĩa là gộp lại, ta làm phép cộng.",
-          "Phép tính là 9 + 8."
+          "Phép tính là 6 + 9."
         ],
-        "hint": "9 + 1 = 10, thêm 7 nữa.",
+        "hint": "9 + 1 = 10, thêm 5 nữa.",
         "answer": {
-          "text": "9 + 8 = 17. Đáp số: 17 quyển",
-          "explanation": "Trên giá có tất cả 9 + 8 = 17 (quyển sách và vở)."
+          "text": "6 + 9 = 15. Đáp số: 15 chậu hoa",
+          "explanation": "Giá hoa có tất cả 6 + 9 = 15 (chậu hoa)."
         }
       },
       "feedback": {
         "right": [
-          "Mười bảy quyển, Gấu Bơ đếm lại bằng ngón tay mũm mĩm: chuẩn!",
-          "Gộp sách với vở gọn gàng như xếp lên giá.",
+          "Mười lăm chậu hoa, Gấu Bơ đếm lại bằng ngón tay mũm mĩm: chuẩn!",
+          "Gộp hồng với cúc gọn gàng như xếp lên giá.",
           "Cậu giải xong trước cả khi Pin kịp lật sổ."
         ],
         "wrong": [
           "Hỏi \"tất cả\" thì mình gộp lại bằng phép cộng.",
-          "Lấy 9 cộng 8, gom 1 từ số 8 để đủ 10 trước.",
-          "Thử đếm thêm 8 bước từ số 9 xem."
+          "Lấy 6 cộng 9, gom 1 từ số 6 để đủ 10 trước.",
+          "Thử đếm thêm 6 bước từ số 9 xem."
         ]
       },
       "answer": {
-        "value": 17
-      }
+        "value": 15
+      },
+      "expression": "6 + 9",
+      "objective": "bai-toan-co-loi-van-them-bot"
     },
     {
       "id": "mui-ten-quanh-chau",
@@ -531,23 +524,23 @@
       "target": "toan2-cd2-b14-gau-mat",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Cánh Cụt Pin vẽ mũi tên nối các chậu cây giống trong nhà kính: bắt đầu từ chậu số 7, cộng 9, trừ 8, cộng 5. Số ?",
-      "template": "7 → (+ 9) → {{b1}} → (– 8) → {{b2}} → (+ 5) → {{b3}}",
+      "prompt": "Cánh Cụt Pin vẽ mũi tên nối bốn chậu cây giống trong nhà kính: bắt đầu từ chậu số 6, cộng 8, trừ 9, rồi cộng 7. Cậu điền số vào các chậu còn lại.",
+      "template": "6 → (+ 8) → {{b1}} → (– 9) → {{b2}} → (+ 7) → {{b3}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o13",
+              "text": "13"
             },
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o14",
+              "text": "14"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o41",
+              "text": "41"
             }
           ]
         },
@@ -555,16 +548,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o4",
+              "text": "4"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o5",
+              "text": "5"
             },
             {
-              "id": "o9",
-              "text": "9"
+              "id": "o15",
+              "text": "15"
             }
           ]
         },
@@ -572,35 +565,30 @@
           "id": "b3",
           "options": [
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o11",
+              "text": "11"
             },
             {
-              "id": "o23",
-              "text": "23"
+              "id": "o12",
+              "text": "12"
             },
             {
-              "id": "o31",
-              "text": "31"
+              "id": "o21",
+              "text": "21"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-4-a",
-        "toan2-t1-b14-luyen-tap-4-b",
-        "toan2-t1-b14-luyen-tap-4-c"
-      ],
       "support": {
         "guide": [
-          "Mỗi mũi tên làm một phép tính với số ở ô trước.",
-          "Kết quả ô này là số bắt đầu của ô sau."
+          "Mỗi mũi tên làm một phép tính với số ở chậu trước.",
+          "Kết quả chậu này là số bắt đầu của chậu sau."
         ],
-        "hint": "7 + 9 = 16.",
+        "hint": "6 + 8 = 14.",
         "answer": {
-          "text": "7 → (+ 9) → 16 → (– 8) → 8 → (+ 5) → 13",
-          "explanation": "7 + 9 = 16; 16 – 8 = 8; 8 + 5 = 13."
+          "text": "6 → (+ 8) → 14 → (– 9) → 5 → (+ 7) → 12",
+          "explanation": "6 + 8 = 14; 14 – 9 = 5; 5 + 7 = 12."
         }
       },
       "feedback": {
@@ -610,18 +598,24 @@
           "Pin vỗ hai cánh lạch phạch: tính tiếp sức mà không trượt bước nào!"
         ],
         "wrong": [
-          "Lấy kết quả ô trước để làm phép tính tiếp theo nhé.",
-          "Mũi tên thứ hai là trừ 8 đấy.",
-          "Kiểm tra lại 7 + 9 trước tiên."
+          "Lấy kết quả chậu trước để làm phép tính tiếp theo nhé.",
+          "Mũi tên thứ hai là trừ 9 đấy.",
+          "Kiểm tra lại 6 + 8 trước tiên."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o16",
-          "b2": "o8",
-          "b3": "o13"
+          "b1": "o14",
+          "b2": "o5",
+          "b3": "o12"
         }
-      }
+      },
+      "expression": {
+        "b1": "6 + 8",
+        "b2": "6 + 8 - 9",
+        "b3": "6 + 8 - 9 + 7"
+      },
+      "objective": "cong-tru-qua-10-cong"
     },
     {
       "id": "de-truoc-kho-sau",
@@ -674,16 +668,12 @@
       "target": "toan2-cd2-b14-canh-cut-pin",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Cánh Cụt Pin bấm đồng hồ, đọc phép tính đều như tiếng quả cân gõ. Tính nhẩm.",
-      "template": "7 + 6 = {{b1}}\n8 + 4 = {{b2}}\n6 + 8 = {{b3}}\n9 + 7 = {{b4}}\n13 – 7 = {{b5}}\n12 – 8 = {{b6}}\n14 – 6 = {{b7}}\n16 – 9 = {{b8}}\n13 – 6 = {{b9}}\n12 – 4 = {{b10}}\n14 – 8 = {{b11}}\n16 – 7 = {{b12}}",
+      "prompt": "Cánh Cụt Pin bấm đồng hồ, đọc phép tính đều đều như tiếng quả cân gõ. Bốn phép đầu là phép cộng, tám phép sau là phép trừ. Cậu nhẩm thật nhanh.",
+      "template": "8 + 5 = {{b1}}\n9 + 4 = {{b2}}\n6 + 9 = {{b3}}\n7 + 8 = {{b4}}\n11 – 7 = {{b5}}\n15 – 6 = {{b6}}\n12 – 5 = {{b7}}\n17 – 9 = {{b8}}\n13 – 4 = {{b9}}\n14 – 7 = {{b10}}\n16 – 8 = {{b11}}\n12 – 6 = {{b12}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o12",
-              "text": "12"
-            },
             {
               "id": "o13",
               "text": "13"
@@ -691,6 +681,10 @@
             {
               "id": "o14",
               "text": "14"
+            },
+            {
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
@@ -698,16 +692,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o10",
-              "text": "10"
-            },
-            {
               "id": "o12",
               "text": "12"
             },
             {
-              "id": "o22",
-              "text": "22"
+              "id": "o13",
+              "text": "13"
+            },
+            {
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
@@ -715,16 +709,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o13",
-              "text": "13"
+              "id": "o15",
+              "text": "15"
             },
             {
-              "id": "o14",
-              "text": "14"
+              "id": "o16",
+              "text": "16"
             },
             {
-              "id": "o41",
-              "text": "41"
+              "id": "o51",
+              "text": "51"
             }
           ]
         },
@@ -732,16 +726,16 @@
           "id": "b4",
           "options": [
             {
-              "id": "o6",
-              "text": "6"
+              "id": "o14",
+              "text": "14"
             },
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o15",
+              "text": "15"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o51",
+              "text": "51"
             }
           ]
         },
@@ -749,29 +743,12 @@
           "id": "b5",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
+              "id": "o3",
+              "text": "3"
             },
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            }
-          ]
-        },
-        {
-          "id": "b6",
-          "options": [
             {
               "id": "o4",
               "text": "4"
-            },
-            {
-              "id": "o5",
-              "text": "5"
             },
             {
               "id": "o14",
@@ -780,46 +757,8 @@
           ]
         },
         {
-          "id": "b7",
+          "id": "b6",
           "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            }
-          ]
-        },
-        {
-          "id": "b8",
-          "options": [
-            {
-              "id": "o5",
-              "text": "5"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            }
-          ]
-        },
-        {
-          "id": "b9",
-          "options": [
-            {
-              "id": "o7",
-              "text": "7"
-            },
             {
               "id": "o8",
               "text": "8"
@@ -827,19 +766,40 @@
             {
               "id": "o9",
               "text": "9"
+            },
+            {
+              "id": "o19",
+              "text": "19"
             }
           ]
         },
         {
-          "id": "b10",
+          "id": "b7",
+          "options": [
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o17",
+              "text": "17"
+            }
+          ]
+        },
+        {
+          "id": "b8",
           "options": [
             {
               "id": "o8",
               "text": "8"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o9",
+              "text": "9"
             },
             {
               "id": "o18",
@@ -848,29 +808,8 @@
           ]
         },
         {
-          "id": "b11",
+          "id": "b9",
           "options": [
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o16",
-              "text": "16"
-            }
-          ]
-        },
-        {
-          "id": "b12",
-          "options": [
-            {
-              "id": "o8",
-              "text": "8"
-            },
             {
               "id": "o9",
               "text": "9"
@@ -878,34 +817,75 @@
             {
               "id": "o10",
               "text": "10"
+            },
+            {
+              "id": "o19",
+              "text": "19"
+            }
+          ]
+        },
+        {
+          "id": "b10",
+          "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o17",
+              "text": "17"
+            }
+          ]
+        },
+        {
+          "id": "b11",
+          "options": [
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        },
+        {
+          "id": "b12",
+          "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o16",
+              "text": "16"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-2-1-a",
-        "toan2-t1-b14-luyen-tap-2-1-b",
-        "toan2-t1-b14-luyen-tap-2-1-c",
-        "toan2-t1-b14-luyen-tap-2-1-d",
-        "toan2-t1-b14-luyen-tap-2-1-e",
-        "toan2-t1-b14-luyen-tap-2-1-g",
-        "toan2-t1-b14-luyen-tap-2-1-h",
-        "toan2-t1-b14-luyen-tap-2-1-i",
-        "toan2-t1-b14-luyen-tap-2-1-k",
-        "toan2-t1-b14-luyen-tap-2-1-l",
-        "toan2-t1-b14-luyen-tap-2-1-m",
-        "toan2-t1-b14-luyen-tap-2-1-n"
-      ],
       "support": {
         "guide": [
-          "Bốn phép đầu là cộng, tám phép sau là trừ.",
+          "Nhìn dấu trước khi tính: bốn phép đầu cộng, tám phép sau trừ.",
           "Quên thì tách số cho đủ 10 hoặc về 10."
         ],
-        "hint": "16 – 7: 16 – 6 = 10, 10 – 1 = 9.",
+        "hint": "15 – 6: 15 – 5 = 10, 10 – 1 = 9.",
         "answer": {
-          "text": "7 + 6 = 13; 8 + 4 = 12; 6 + 8 = 14; 9 + 7 = 16; 13 – 7 = 6; 12 – 8 = 4; 14 – 6 = 8; 16 – 9 = 7; 13 – 6 = 7; 12 – 4 = 8; 14 – 8 = 6; 16 – 7 = 9",
-          "explanation": "13, 12, 14, 16; 6, 4, 8, 7, 7, 8, 6, 9."
+          "text": "8 + 5 = 13; 9 + 4 = 13; 6 + 9 = 15; 7 + 8 = 15; 11 – 7 = 4; 15 – 6 = 9; 12 – 5 = 7; 17 – 9 = 8; 13 – 4 = 9; 14 – 7 = 7; 16 – 8 = 8; 12 – 6 = 6",
+          "explanation": "13, 13, 15, 15; 4, 9, 7, 8, 9, 7, 8, 6."
         }
       },
       "feedback": {
@@ -923,19 +903,34 @@
       "answer": {
         "fills": {
           "b1": "o13",
-          "b2": "o12",
-          "b3": "o14",
-          "b4": "o16",
-          "b5": "o6",
-          "b6": "o4",
-          "b7": "o8",
-          "b8": "o7",
-          "b9": "o7",
-          "b10": "o8",
-          "b11": "o6",
-          "b12": "o9"
+          "b2": "o13",
+          "b3": "o15",
+          "b4": "o15",
+          "b5": "o4",
+          "b6": "o9",
+          "b7": "o7",
+          "b8": "o8",
+          "b9": "o9",
+          "b10": "o7",
+          "b11": "o8",
+          "b12": "o6"
         }
-      }
+      },
+      "expression": {
+        "b1": "8 + 5",
+        "b2": "9 + 4",
+        "b3": "6 + 9",
+        "b4": "7 + 8",
+        "b5": "11 - 7",
+        "b6": "15 - 6",
+        "b7": "12 - 5",
+        "b8": "17 - 9",
+        "b9": "13 - 4",
+        "b10": "14 - 7",
+        "b11": "16 - 8",
+        "b12": "12 - 6"
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "cau-bay-dung-sai",
@@ -944,41 +939,35 @@
       "target": "toan2-cd2-b14-canh-cut-pin-san-gach",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Cánh Cụt Pin nghiêm mặt: có câu thật, có câu bẫy. Đ, S ? Chọn tất cả các câu đúng (Đ); câu không chọn là sai (S).",
+      "prompt": "Cánh Cụt Pin nghiêm mặt đưa ra bốn câu: có câu thật, có câu bẫy. Cậu chọn tất cả những câu đúng; câu nào không chọn thì được tính là câu sai.",
       "choices": [
         {
-          "id": "a-9-6-14",
-          "text": "a) 9 + 6 = 14"
+          "id": "a-7-8-16",
+          "text": "a) 7 + 8 = 16"
         },
         {
-          "id": "b-8-4-4-8",
-          "text": "b) 8 + 4 = 4 + 8"
+          "id": "b-6-9-9-6",
+          "text": "b) 6 + 9 = 9 + 6"
         },
         {
-          "id": "c-15-8-6",
-          "text": "c) 15 – 8 > 6"
+          "id": "c-14-6-9",
+          "text": "c) 14 – 6 < 9"
         },
         {
-          "id": "d-13-4-17-9",
-          "text": "d) 13 – 4 < 17 – 9"
+          "id": "d-12-5-16-8",
+          "text": "d) 12 – 5 > 16 – 8"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-2-4-a",
-        "toan2-t1-b14-luyen-tap-2-4-b",
-        "toan2-t1-b14-luyen-tap-2-4-c",
-        "toan2-t1-b14-luyen-tap-2-4-d"
-      ],
       "support": {
         "guide": [
           "Tính từng vế của mỗi câu.",
           "Đổi chỗ các số hạng thì tổng không đổi."
         ],
-        "hint": "13 – 4 = 9 còn 17 – 9 = 8.",
+        "hint": "12 – 5 = 7 còn 16 – 8 = 8.",
         "answer": {
-          "text": "Đ: b, c; S: a, d",
-          "explanation": "a) sai vì 9 + 6 = 15; b) đúng vì đổi chỗ số hạng; c) đúng vì 15 – 8 = 7 > 6; d) sai vì 9 không bé hơn 8."
+          "text": "Đúng: b, c; sai: a, d",
+          "explanation": "a) sai vì 7 + 8 = 15; b) đúng vì đổi chỗ số hạng; c) đúng vì 14 – 6 = 8 < 9; d) sai vì 7 không lớn hơn 8."
         }
       },
       "feedback": {
@@ -988,55 +977,55 @@
           "Hai câu đúng, hai câu bẫy, cậu phân biệt rõ ràng."
         ],
         "wrong": [
-          "Tính 9 + 6 cẩn thận xem có phải 14 không.",
+          "Tính 7 + 8 cẩn thận xem có phải 16 không.",
           "Một câu đúng về đổi chỗ số hạng chưa được chọn.",
-          "So 13 – 4 với 17 – 9: bên nào lớn hơn?"
+          "So 12 – 5 với 16 – 8: bên nào lớn hơn?"
         ]
       },
       "answer": {
         "choices": [
-          "b-8-4-4-8",
-          "c-15-8-6"
+          "b-6-9-9-6",
+          "c-14-6-9"
         ]
-      }
+      },
+      "objective": "cong-tru-qua-10-so-sanh"
     },
     {
       "id": "tranh-trai-he",
-      "title": "Tranh vẽ trại hè",
+      "title": "Tranh của Cáo Hoa và Gấu Bơ",
       "goTo": "Lách qua nửa cửa vừa hé vào lối giữa nhà kính, Cáo Hoa đang treo tranh",
       "target": "toan2-cd2-b14-cao-hoa",
       "kind": "riddle",
-      "question": "Cáo Hoa khoe bức tranh treo giữa các chậu cây. Trong đợt đi trại hè, Nam vẽ được 11 bức tranh, Mai vẽ được ít hơn Nam 3 bức tranh. Hỏi Mai vẽ được bao nhiêu bức tranh?",
+      "question": "Cáo Hoa khoe bức tranh treo giữa các chậu cây. Cô vẽ được 15 bức tranh, Gấu Bơ vẽ được ít hơn cô 8 bức. Hỏi Gấu Bơ vẽ được bao nhiêu bức tranh?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-2-3"
-      ],
       "support": {
         "guide": [
-          "Mai vẽ ít hơn Nam nên số tranh của Mai bớt đi 3.",
-          "Lấy số tranh của Nam trừ đi 3 bức."
+          "Gấu Bơ vẽ ít hơn Cáo Hoa nên số tranh của Gấu Bơ bớt đi 8.",
+          "Lấy số tranh của Cáo Hoa trừ đi 8 bức."
         ],
-        "hint": "Đếm lùi 3 bước từ 11.",
+        "hint": "Bẻ 15 = 10 + 5, lấy 10 trừ 8 trước.",
         "answer": {
-          "text": "11 – 3 = 8. Đáp số: 8 bức tranh",
-          "explanation": "Mai vẽ được 11 – 3 = 8 (bức tranh)."
+          "text": "15 – 8 = 7. Đáp số: 7 bức tranh",
+          "explanation": "Gấu Bơ vẽ được 15 – 8 = 7 (bức tranh)."
         }
       },
       "feedback": {
         "right": [
-          "Tám bức tranh của Mai được Cáo Hoa treo kín một vách kính!",
+          "Bảy bức tranh của Gấu Bơ được Cáo Hoa treo kín một vách kính!",
           "Ít hơn thì bớt đi, cậu nhớ bài hôm trước rồi.",
-          "Bức tranh thứ chín Cáo Hoa vẽ thêm… hình chính cậu đấy!"
+          "Bức tranh thứ tám Cáo Hoa vẽ thêm… hình chính cậu đấy!"
         ],
         "wrong": [
-          "Mai vẽ ít hơn Nam, vậy kết quả phải bé hơn 11.",
-          "Ít hơn 3 bức thì lấy 11 trừ 3 nhé.",
+          "Gấu Bơ vẽ ít hơn Cáo Hoa, vậy kết quả phải bé hơn 15.",
+          "Ít hơn 8 bức thì lấy 15 trừ 8 nhé.",
           "Đây không phải bài gộp lại, đừng cộng nhé."
         ]
       },
       "answer": {
-        "value": 8
-      }
+        "value": 7
+      },
+      "expression": "15 - 8",
+      "objective": "bai-toan-co-loi-van-nhieu-hon-it-hon"
     },
     {
       "id": "thuc-an-cho-thu",
@@ -1044,85 +1033,80 @@
       "target": "toan2-cd2-b14-cao-hoa",
       "kind": "challenge",
       "mechanic": "classify",
-      "prompt": "Đến giờ trưa, các con vật đi chợ kéo đến cửa nhà kính đòi ăn. Tính rồi tìm thức ăn cho mỗi con vật.",
+      "prompt": "Đến giờ trưa, các con vật đi chợ kéo đến cửa nhà kính đòi ăn. Mỗi con vật đeo một phép tính; ngựa mẫu 7 + 8 đã nhận bó rơm ghi 15. Cậu tính rồi chia thức ăn cho các con còn lại.",
       "groups": [
         {
-          "id": "nhom-7-chiec-la",
-          "label": "7 – chiếc lá"
+          "id": "nhom-6-cu-ca-rot",
+          "label": "6 – củ cà rốt"
         },
         {
-          "id": "nhom-8-dia-ca",
-          "label": "8 – đĩa cá"
+          "id": "nhom-9-nam-co-kho",
+          "label": "9 – nắm cỏ khô"
         },
         {
-          "id": "nhom-9-bat-thuc-an",
-          "label": "9 – bát thức ăn"
+          "id": "nhom-12-chum-nho",
+          "label": "12 – chùm nho"
         },
         {
-          "id": "nhom-11-nai-chuoi",
-          "label": "11 – nải chuối"
+          "id": "nhom-13-hat-de",
+          "label": "13 – nắm hạt dẻ"
         },
         {
-          "id": "nhom-14-cay-mia",
-          "label": "14 – cây mía"
+          "id": "nhom-15-bo-rom",
+          "label": "15 – bó rơm"
         }
       ],
       "items": [
         {
-          "id": "con-khi-5-6",
-          "label": "Khỉ: 5 + 6"
+          "id": "con-tho-15-9",
+          "label": "Thỏ: 15 – 9"
         },
         {
-          "id": "con-cho-17-8",
-          "label": "Chó: 17 – 8"
+          "id": "con-khi-8-4",
+          "label": "Khỉ: 8 + 4"
         },
         {
-          "id": "con-voi-7-7",
-          "label": "Voi: 7 + 7"
+          "id": "con-de-16-7",
+          "label": "Dê: 16 – 7"
         },
         {
-          "id": "con-sau-16-9",
-          "label": "Sâu: 16 – 9"
+          "id": "con-soc-6-7",
+          "label": "Sóc: 6 + 7"
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-3-1-a",
-        "toan2-t1-b14-luyen-tap-3-1-b",
-        "toan2-t1-b14-luyen-tap-3-1-c",
-        "toan2-t1-b14-luyen-tap-3-1-d"
-      ],
       "support": {
         "guide": [
           "Tính phép tính con vật đeo trên cổ.",
-          "Thức ăn ghi số bằng kết quả; mèo mẫu 14 – 6 đã có đĩa cá."
+          "Thức ăn ghi số bằng kết quả; ngựa mẫu đã có bó rơm."
         ],
-        "hint": "Voi 7 + 7 = 14, hợp với cây mía.",
+        "hint": "Sóc 6 + 7 = 13, hợp với nắm hạt dẻ.",
         "answer": {
-          "text": "Khỉ – nải chuối; chó – bát thức ăn; voi – cây mía; sâu – chiếc lá",
-          "explanation": "Khỉ 5 + 6 = 11: nải chuối; chó 17 – 8 = 9: bát thức ăn; voi 7 + 7 = 14: cây mía; sâu 16 – 9 = 7: chiếc lá."
+          "text": "Thỏ – củ cà rốt; khỉ – chùm nho; dê – nắm cỏ khô; sóc – nắm hạt dẻ",
+          "explanation": "Thỏ 15 – 9 = 6: củ cà rốt; khỉ 8 + 4 = 12: chùm nho; dê 16 – 7 = 9: nắm cỏ khô; sóc 6 + 7 = 13: nắm hạt dẻ."
         }
       },
       "feedback": {
         "right": [
-          "Măm măm! Khỉ ôm chuối, voi nhai mía, sâu gặm lá ngon lành.",
+          "Măm măm! Thỏ gặm cà rốt, khỉ ôm nho, sóc nhặt hạt dẻ ngon lành.",
           "Ai cũng no căng bụng, Pin chỉ xin một con cá khô bé xíu.",
           "Bốn con vật, bốn món ăn, không ai phải nhịn đói."
         ],
         "wrong": [
-          "Con sâu đâu có ăn cây mía, tính lại phép của sâu nhé.",
-          "Có con vật đang cầm nhầm bát của bạn rồi.",
-          "Đĩa cá đã thuộc về mèo mẫu, đừng chia thêm cho ai."
+          "Con dê đâu có ăn chùm nho, tính lại phép của dê nhé.",
+          "Có con vật đang cầm nhầm phần ăn của bạn rồi.",
+          "Bó rơm đã thuộc về ngựa mẫu, đừng chia thêm cho ai."
         ]
       },
       "answer": {
         "assignment": {
-          "con-khi-5-6": "nhom-11-nai-chuoi",
-          "con-cho-17-8": "nhom-9-bat-thuc-an",
-          "con-voi-7-7": "nhom-14-cay-mia",
-          "con-sau-16-9": "nhom-7-chiec-la"
+          "con-tho-15-9": "nhom-6-cu-ca-rot",
+          "con-khi-8-4": "nhom-12-chum-nho",
+          "con-de-16-7": "nhom-9-nam-co-kho",
+          "con-soc-6-7": "nhom-13-hat-de"
         }
-      }
+      },
+      "objective": "cong-tru-qua-10-bang"
     },
     {
       "id": "phep-tinh-be-nhat",
@@ -1131,51 +1115,49 @@
       "target": "toan2-cd2-b14-canh-cut-pin-san-gach",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Cánh Cụt Pin giơ ba tấm thẻ. Chọn câu trả lời đúng. a) Phép tính nào dưới đây có kết quả bé nhất? A. 15 – 9 B. 13 – 8 C. 12 – 5",
+      "prompt": "Pin úp ba tấm thẻ phép trừ lên bàn rồi lật ra. Cậu chỉ giúp thẻ cho hiệu nhỏ nhất: A. 13 – 7, B. 15 – 6 hay C. 12 – 8?",
       "choices": [
         {
-          "id": "a-15-9",
-          "text": "A. 15 – 9"
+          "id": "a-13-7",
+          "text": "A. 13 – 7"
         },
         {
-          "id": "b-13-8",
-          "text": "B. 13 – 8"
+          "id": "b-15-6",
+          "text": "B. 15 – 6"
         },
         {
-          "id": "c-12-5",
-          "text": "C. 12 – 5"
+          "id": "c-12-8",
+          "text": "C. 12 – 8"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-3-2-a"
-      ],
       "support": {
         "guide": [
-          "Tính kết quả cả ba phép tính.",
-          "Chọn phép có kết quả bé nhất."
+          "Tính kết quả cả ba thẻ.",
+          "Chọn thẻ có kết quả bé nhất."
         ],
-        "hint": "Các kết quả là 6, 5, 7.",
+        "hint": "Các kết quả là 6, 9, 4.",
         "answer": {
-          "text": "B. 13 – 8",
-          "explanation": "15 – 9 = 6, 13 – 8 = 5, 12 – 5 = 7; bé nhất là 13 – 8."
+          "text": "C. 12 – 8",
+          "explanation": "13 – 7 = 6, 15 – 6 = 9, 12 – 8 = 4; bé nhất là 12 – 8."
         }
       },
       "feedback": {
         "right": [
-          "Thẻ B bé nhất, Pin lật thẻ đánh \"tách\"!",
+          "Thẻ C bé nhất, Pin lật thẻ đánh \"tách\"!",
           "Cậu so ba kết quả nhanh như chớp.",
-          "Bé nhất là 5, cậu chọn trúng phóc."
+          "Bé nhất là 4, cậu chọn trúng phóc."
         ],
         "wrong": [
           "Tính cả ba thẻ rồi mới chọn nhé.",
           "Thẻ A ra 6, vẫn còn thẻ bé hơn nữa đấy.",
-          "Thử tính lại 13 – 8 xem ra mấy."
+          "Thử tính lại 12 – 8 xem ra mấy."
         ]
       },
       "answer": {
-        "choice": "b-13-8"
-      }
+        "choice": "c-12-8"
+      },
+      "objective": "cong-tru-qua-10-so-sanh"
     },
     {
       "id": "phep-tinh-lon-nhat",
@@ -1183,51 +1165,49 @@
       "target": "toan2-cd2-b14-canh-cut-pin-san-gach",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Cánh Cụt Pin đổi sang ba thẻ phép cộng. Chọn câu trả lời đúng. b) Phép tính nào dưới đây có kết quả lớn nhất? A. 7 + 8 B. 9 + 5 C. 8 + 9",
+      "prompt": "Pin lật tiếp ba thẻ phép cộng khác. Thẻ nào cho tổng cao nhất: A. 9 + 7, B. 6 + 8 hay C. 5 + 9?",
       "choices": [
         {
-          "id": "a-7-8",
-          "text": "A. 7 + 8"
+          "id": "a-9-7",
+          "text": "A. 9 + 7"
         },
         {
-          "id": "b-9-5",
-          "text": "B. 9 + 5"
+          "id": "b-6-8",
+          "text": "B. 6 + 8"
         },
         {
-          "id": "c-8-9",
-          "text": "C. 8 + 9"
+          "id": "c-5-9",
+          "text": "C. 5 + 9"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-3-2-b"
-      ],
       "support": {
         "guide": [
           "Tính tổng của từng thẻ.",
           "Lần này chọn tổng lớn nhất."
         ],
-        "hint": "Các tổng là 15, 14, 17.",
+        "hint": "Các tổng là 16, 14, 14.",
         "answer": {
-          "text": "C. 8 + 9",
-          "explanation": "7 + 8 = 15, 9 + 5 = 14, 8 + 9 = 17; lớn nhất là 8 + 9."
+          "text": "A. 9 + 7",
+          "explanation": "9 + 7 = 16, 6 + 8 = 14, 5 + 9 = 14; lớn nhất là 9 + 7."
         }
       },
       "feedback": {
         "right": [
-          "Thẻ C lớn nhất, Pin tung thẻ lên trời ăn mừng!",
-          "Mười bảy là lớn nhất, cậu thắng ván thẻ rồi.",
+          "Thẻ A lớn nhất, Pin tung thẻ lên trời ăn mừng!",
+          "Mười sáu là lớn nhất, cậu thắng ván thẻ rồi.",
           "Đổi đề mà cậu vẫn không lúng túng chút nào."
         ],
         "wrong": [
           "Lần này tìm lớn nhất, không phải bé nhất nhé.",
-          "Tính lại tổng 8 + 9 xem.",
-          "15 chưa phải tổng lớn nhất đâu."
+          "Tính lại tổng 9 + 7 xem.",
+          "14 chưa phải tổng lớn nhất đâu."
         ]
       },
       "answer": {
-        "choice": "c-8-9"
-      }
+        "choice": "a-9-7"
+      },
+      "objective": "cong-tru-qua-10-so-sanh"
     },
     {
       "id": "tinh-ba-so",
@@ -1236,180 +1216,11 @@
       "target": "toan2-cd2-b14-canh-cut-pin",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Câu đố cuối của cửa ải: phép tính có ba số, tính từ trái sang phải. Tính.",
-      "template": "a) 9 + 7 – 8 = {{b1}}\nb) 6 + 5 + 4 = {{b2}}\na) 15 – 3 – 6 = {{b3}}\nb) 16 – 8 + 5 = {{b4}}",
+      "prompt": "Câu đố cuối của cửa ải: mỗi phép tính có ba số, cậu tính từ trái sang phải.",
+      "template": "8 + 5 – 6 = {{b1}}\n4 + 7 + 5 = {{b2}}\n17 – 7 – 5 = {{b3}}\n15 – 7 + 6 = {{b4}}",
       "blanks": [
         {
           "id": "b1",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o8",
-              "text": "8"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o15",
-              "text": "15"
-            },
-            {
-              "id": "o16",
-              "text": "16"
-            },
-            {
-              "id": "o25",
-              "text": "25"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o16",
-              "text": "16"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o13",
-              "text": "13"
-            },
-            {
-              "id": "o14",
-              "text": "14"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b14-luyen-tap-2-2-a",
-        "toan2-t1-b14-luyen-tap-2-2-b",
-        "toan2-t1-b14-luyen-tap-3-3-a",
-        "toan2-t1-b14-luyen-tap-3-3-b"
-      ],
-      "support": {
-        "guide": [
-          "Tính hai số đầu trước.",
-          "Lấy kết quả đó tính tiếp với số thứ ba."
-        ],
-        "hint": "9 + 7 = 16, rồi 16 – 8.",
-        "answer": {
-          "text": "a) 9 + 7 – 8 = 8; b) 6 + 5 + 4 = 15; a) 15 – 3 – 6 = 6; b) 16 – 8 + 5 = 13",
-          "explanation": "9 + 7 – 8 = 8; 6 + 5 + 4 = 15; 15 – 3 – 6 = 6; 16 – 8 + 5 = 13."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Cạch! Ổ khóa cuối cùng bật mở, nhà kính chào cậu!",
-          "Tính từ trái sang phải, đều tăm tắp không sai bước nào.",
-          "Cánh Cụt Pin đóng sổ: cửa ải câu đố đã qua, không sai câu nào!"
-        ],
-        "wrong": [
-          "Tính lần lượt từ trái sang phải nhé.",
-          "Có dòng vừa cộng vừa trừ, nhìn kĩ từng dấu.",
-          "Kết quả bước đầu của dòng đó đã đúng chưa?"
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o8",
-          "b2": "o15",
-          "b3": "o6",
-          "b4": "o13"
-        }
-      }
-    },
-    {
-      "id": "cau-thang-cau-truot",
-      "title": "Ván Cầu thang – cầu trượt",
-      "goTo": "Ra sân gạch trước nhà kính, Cánh Cụt Pin đã kẻ bàn cờ",
-      "target": "toan2-cd2-b14-canh-cut-pin-san-gach",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Cánh Cụt Pin thách đấu một ván CẦU THANG – CẦU TRƯỢT: em và Pin mỗi người một quân. Cách chơi: • Chơi theo nhóm. • Người chơi bắt đầu từ ô xuất phát. Khi đến lượt, người chơi gieo xúc xắc. Đếm số chấm ở mặt trên xúc xắc rồi di chuyển số ô bằng số chấm đó. Nêu kết quả phép tính tại ô đi đến, nếu nêu sai kết quả thì phải quay về ô xuất phát trước đó. Khi đến chân cầu thang, em leo lên; khi đến đỉnh cầu trượt, em trượt xuống. • Trò chơi kết thúc khi có người về đích. Đến ô nào, em nêu kết quả phép tính ở ô đó, kể cả ô của Pin.",
-      "template": "Lượt 1: Em gieo được 4 chấm, đến ô 14 – 8 = {{b1}}\nLượt 2: Pin gieo được 3 chấm, đến ô 13 – 6 = {{b2}}\nLượt 3: Em gieo được 2 chấm, đến ô 18 – 9 = {{b3}}\nÔ này là chân cầu thang, em leo lên tới ô 15 – 8 = {{b4}}\nLượt 4: Pin gieo được 5 chấm, đến ô 16 – 8 = {{b5}}\nLượt 5: Em gieo được 1 chấm, đến ô 14 – 5 = {{b6}}\nLại một chân cầu thang! Em leo lên tới ô 8 + 4 = {{b7}}\nLượt 6: Pin gieo được 6 chấm, đến ô 4 + 9 = {{b8}}\nLượt 7: Em gieo được 1 chấm, đến ô 7 + 8 = {{b9}}\nLượt 8: Pin gieo được 6 chấm, đến ô 16 – 7 = {{b10}}\nÔ của Pin là đỉnh cầu trượt, Pin trượt xuống ô 7 + 7 = {{b11}}\nLượt 9: Em gieo được 1 chấm và về ĐÍCH!",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o16",
-              "text": "16"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o6",
-              "text": "6"
-            },
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o7",
-              "text": "7"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o19",
-              "text": "19"
-            }
-          ]
-        },
-        {
-          "id": "b4",
           "options": [
             {
               "id": "o7",
@@ -1426,32 +1237,151 @@
           ]
         },
         {
-          "id": "b5",
+          "id": "b2",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o16",
+              "text": "16"
             },
             {
-              "id": "o8",
-              "text": "8"
+              "id": "o17",
+              "text": "17"
             },
             {
-              "id": "o10",
-              "text": "10"
+              "id": "o61",
+              "text": "61"
             }
           ]
         },
         {
-          "id": "b6",
+          "id": "b3",
           "options": [
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o15",
+              "text": "15"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o14",
+              "text": "14"
+            },
+            {
+              "id": "o15",
+              "text": "15"
+            },
+            {
+              "id": "o41",
+              "text": "41"
+            }
+          ]
+        }
+      ],
+      "skill": "phep-cong",
+      "support": {
+        "guide": [
+          "Tính hai số đầu trước.",
+          "Lấy kết quả đó tính tiếp với số thứ ba."
+        ],
+        "hint": "8 + 5 = 13, rồi 13 – 6.",
+        "answer": {
+          "text": "8 + 5 – 6 = 7; 4 + 7 + 5 = 16; 17 – 7 – 5 = 5; 15 – 7 + 6 = 14",
+          "explanation": "8 + 5 – 6 = 7; 4 + 7 + 5 = 16; 17 – 7 – 5 = 5; 15 – 7 + 6 = 14."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Cạch! Ổ khóa cuối cùng bật mở, nhà kính chào cậu!",
+          "Tính từ trái sang phải, đều tăm tắp không sai bước nào.",
+          "Cánh Cụt Pin đóng sổ: cửa ải câu đố đã qua, không sai câu nào!"
+        ],
+        "wrong": [
+          "Tính lần lượt từ trái sang phải nhé.",
+          "Có dòng vừa cộng vừa trừ, nhìn kĩ từng dấu.",
+          "Kết quả bước đầu của dòng đó đã đúng chưa?"
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o7",
+          "b2": "o16",
+          "b3": "o5",
+          "b4": "o14"
+        }
+      },
+      "expression": {
+        "b1": "8 + 5 - 6",
+        "b2": "4 + 7 + 5",
+        "b3": "17 - 7 - 5",
+        "b4": "15 - 7 + 6"
+      },
+      "objective": "cong-tru-qua-10-cong"
+    },
+    {
+      "id": "cau-thang-cau-truot",
+      "title": "Ván Leo thang – trượt dốc",
+      "goTo": "Ra sân gạch trước nhà kính, Cánh Cụt Pin đã kẻ bàn cờ",
+      "target": "toan2-cd2-b14-canh-cut-pin-san-gach",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Cánh Cụt Pin thách cậu chơi ván LEO THANG – TRƯỢT DỐC trên bàn kẻ sẵn. Mỗi người một quân, lần lượt gieo xúc xắc rồi đi số ô bằng số chấm. Quân dừng ở ô nào thì phải nêu đúng kết quả phép tính ghi ở ô ấy, nêu sai thì quay về ô cũ. Gặp chân thang thì leo lên, gặp đỉnh dốc thì trượt xuống, ai về đích trước là thắng. Dưới đây là diễn biến cả ván; cậu điền kết quả ở những ô quân dừng lại, kể cả ô của Pin.",
+      "template": "Lượt 1, em gieo 3 chấm, quân dừng ở ô 15 – 9 = {{b1}}\nLượt 2, Pin gieo 4 chấm, quân dừng ở ô 12 – 5 = {{b2}}\nLượt 3, em gieo 2 chấm, quân dừng ở ô 17 – 8 = {{b3}}\nĐây là chân thang, em leo lên ô 14 – 6 = {{b4}}\nLượt 4, Pin gieo 5 chấm, quân dừng ở ô 13 – 4 = {{b5}}\nLượt 5, em gieo 1 chấm, quân dừng ở ô 16 – 9 = {{b6}}\nLại gặp chân thang, em leo lên ô 9 + 5 = {{b7}}\nLượt 6, Pin gieo 6 chấm, quân dừng ở ô 7 + 6 = {{b8}}\nLượt 7, em gieo 1 chấm, quân dừng ở ô 8 + 7 = {{b9}}\nLượt 8, Pin gieo 6 chấm, quân dừng ở ô 15 – 6 = {{b10}}\nĐây là đỉnh dốc, Pin trượt xuống ô 6 + 8 = {{b11}}\nLượt 9, em gieo 1 chấm và về ĐÍCH!",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o16",
+              "text": "16"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
             {
               "id": "o7",
               "text": "7"
             },
             {
+              "id": "o17",
+              "text": "17"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
               "id": "o9",
               "text": "9"
+            },
+            {
+              "id": "o10",
+              "text": "10"
             },
             {
               "id": "o19",
@@ -1460,19 +1390,70 @@
           ]
         },
         {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o8",
+              "text": "8"
+            },
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o18",
+              "text": "18"
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "options": [
+            {
+              "id": "o9",
+              "text": "9"
+            },
+            {
+              "id": "o10",
+              "text": "10"
+            },
+            {
+              "id": "o19",
+              "text": "19"
+            }
+          ]
+        },
+        {
+          "id": "b6",
+          "options": [
+            {
+              "id": "o6",
+              "text": "6"
+            },
+            {
+              "id": "o7",
+              "text": "7"
+            },
+            {
+              "id": "o17",
+              "text": "17"
+            }
+          ]
+        },
+        {
           "id": "b7",
           "options": [
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o13",
+              "text": "13"
             },
             {
-              "id": "o12",
-              "text": "12"
+              "id": "o14",
+              "text": "14"
             },
             {
-              "id": "o22",
-              "text": "22"
+              "id": "o41",
+              "text": "41"
             }
           ]
         },
@@ -1488,8 +1469,8 @@
               "text": "13"
             },
             {
-              "id": "o23",
-              "text": "23"
+              "id": "o31",
+              "text": "31"
             }
           ]
         },
@@ -1497,12 +1478,12 @@
           "id": "b9",
           "options": [
             {
-              "id": "o14",
-              "text": "14"
-            },
-            {
               "id": "o15",
               "text": "15"
+            },
+            {
+              "id": "o16",
+              "text": "16"
             },
             {
               "id": "o51",
@@ -1514,8 +1495,8 @@
           "id": "b10",
           "options": [
             {
-              "id": "o7",
-              "text": "7"
+              "id": "o8",
+              "text": "8"
             },
             {
               "id": "o9",
@@ -1531,44 +1512,41 @@
           "id": "b11",
           "options": [
             {
-              "id": "o4",
-              "text": "4"
-            },
-            {
-              "id": "o12",
-              "text": "12"
+              "id": "o13",
+              "text": "13"
             },
             {
               "id": "o14",
               "text": "14"
+            },
+            {
+              "id": "o41",
+              "text": "41"
             }
           ]
         }
       ],
       "skill": "phep-tru",
-      "curriculumRef": [
-        "toan2-t1-b14-tro-choi-1"
-      ],
       "support": {
         "guide": [
-          "Mỗi lượt, tính phép tính ở ô quân vừa đến.",
-          "Leo thang hay trượt xuống thì tính tiếp ô mới."
+          "Mỗi lượt, tính phép tính ở ô quân vừa dừng lại.",
+          "Leo thang hay trượt dốc xong thì tính tiếp ô mới."
         ],
-        "hint": "Ô 18 – 9 là chân cầu thang đầu tiên.",
+        "hint": "Ô 17 – 8 là chân thang đầu tiên.",
         "answer": {
-          "text": "Lượt 1: Em gieo được 4 chấm, đến ô 14 – 8 = 6; Lượt 2: Pin gieo được 3 chấm, đến ô 13 – 6 = 7; Lượt 3: Em gieo được 2 chấm, đến ô 18 – 9 = 9; Ô này là chân cầu thang, em leo lên tới ô 15 – 8 = 7; Lượt 4: Pin gieo được 5 chấm, đến ô 16 – 8 = 8; Lượt 5: Em gieo được 1 chấm, đến ô 14 – 5 = 9; Lại một chân cầu thang! Em leo lên tới ô 8 + 4 = 12; Lượt 6: Pin gieo được 6 chấm, đến ô 4 + 9 = 13; Lượt 7: Em gieo được 1 chấm, đến ô 7 + 8 = 15; Lượt 8: Pin gieo được 6 chấm, đến ô 16 – 7 = 9; Ô của Pin là đỉnh cầu trượt, Pin trượt xuống ô 7 + 7 = 14; Lượt 9: Em gieo được 1 chấm và về ĐÍCH!",
-          "explanation": "Kết quả các ô theo lượt: 6, 7, 9, 7, 8, 9, 12, 13, 15, 9, 14. Em leo hai cầu thang và về đích trước, Pin bị trượt từ ô 16 – 7 xuống ô 7 + 7."
+          "text": "Lượt 1, em gieo 3 chấm, quân dừng ở ô 15 – 9 = 6; Lượt 2, Pin gieo 4 chấm, quân dừng ở ô 12 – 5 = 7; Lượt 3, em gieo 2 chấm, quân dừng ở ô 17 – 8 = 9; Đây là chân thang, em leo lên ô 14 – 6 = 8; Lượt 4, Pin gieo 5 chấm, quân dừng ở ô 13 – 4 = 9; Lượt 5, em gieo 1 chấm, quân dừng ở ô 16 – 9 = 7; Lại gặp chân thang, em leo lên ô 9 + 5 = 14; Lượt 6, Pin gieo 6 chấm, quân dừng ở ô 7 + 6 = 13; Lượt 7, em gieo 1 chấm, quân dừng ở ô 8 + 7 = 15; Lượt 8, Pin gieo 6 chấm, quân dừng ở ô 15 – 6 = 9; Đây là đỉnh dốc, Pin trượt xuống ô 6 + 8 = 14; Lượt 9, em gieo 1 chấm và về ĐÍCH!",
+          "explanation": "Kết quả các ô theo lượt: 6, 7, 9, 8, 9, 7, 14, 13, 15, 9, 14. Em leo hai lần thang và về đích trước, Pin bị trượt từ ô 15 – 6 xuống ô 6 + 8."
         }
       },
       "feedback": {
         "right": [
           "Về ĐÍCH! Pin thua mà vẫn ghi vào sổ: \"Thắng đúng luật, chính xác!\"",
           "Hai lần leo thang, không lần nào nêu sai kết quả, vô địch!",
-          "Pin trượt cầu trượt kêu \"Ối ối\", cả dãy hàng cười rộ."
+          "Pin trượt xuống dốc kêu \"Ối ối\", cả dãy hàng cười rộ."
         ],
         "wrong": [
-          "Nêu sai là phải về ô xuất phát đó, tính lại cẩn thận nhé.",
-          "Leo lên đỉnh thang thì tính ô mới ở đỉnh thang.",
+          "Nêu sai là phải quay về ô cũ, tính lại cẩn thận nhé.",
+          "Leo lên đỉnh thang thì tính phép tính của ô mới ở đỉnh thang.",
           "Có một lượt của Pin cậu tính chưa đúng."
         ]
       },
@@ -1577,16 +1555,30 @@
           "b1": "o6",
           "b2": "o7",
           "b3": "o9",
-          "b4": "o7",
-          "b5": "o8",
-          "b6": "o9",
-          "b7": "o12",
+          "b4": "o8",
+          "b5": "o9",
+          "b6": "o7",
+          "b7": "o14",
           "b8": "o13",
           "b9": "o15",
           "b10": "o9",
           "b11": "o14"
         }
-      }
+      },
+      "expression": {
+        "b1": "15 - 9",
+        "b2": "12 - 5",
+        "b3": "17 - 8",
+        "b4": "14 - 6",
+        "b5": "13 - 4",
+        "b6": "16 - 9",
+        "b7": "9 + 5",
+        "b8": "7 + 6",
+        "b9": "8 + 7",
+        "b10": "15 - 6",
+        "b11": "6 + 8"
+      },
+      "objective": "cong-tru-qua-10-tru"
     },
     {
       "id": "huy-hieu-nha-kinh",

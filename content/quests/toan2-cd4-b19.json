@@ -4,18 +4,17 @@
   "chapter": 1,
   "title": "Lem và hộp ốc vít đổ",
   "status": "active",
-  "lesson": "toan2-t1-b19",
   "topic": "cong-tru-co-nho",
-  "summary": "Ở xưởng nông cụ, Lợn Lấm Lem vụng về làm đổ cả hộp ốc vít ra bàn sửa xe; {name} giúp Lem gom ốc vít thành từng chục, chạy khắp nông trại cộng có nhớ số có hai chữ số với số có một chữ số cùng Bác thợ sơn Thắm, Cánh Cụt Sò, Bê Rơm, sửa phép tính Gà Con Líu bới mất trước chuồng gà và thi cộng hạt dẻ với Lem.",
+  "summary": "Hộp ốc vít của Lợn Lấm Lem đổ tung ngay trên bàn sửa xe; {name} cùng Lem gom linh kiện thành từng túi mười chiếc, rồi đi khắp nông trại làm phép cộng có nhớ giữa số có hai chữ số và số có một chữ số: pha sơn với Bác Thắm, chồng sỏi bên ao với Cánh Cụt Sò, viết lại kết quả mà Gà Con Líu bới mất và thi cộng hạt dẻ để lắp xong chiếc xe kéo.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Lợn Lấm Lem, Bò Sữa Mơ, Bác thợ sơn Thắm, Cánh Cụt Sò, Gà Con Líu, Bê Rơm",
     "where": "Nông trại: bàn sửa xe trong xưởng nông cụ, góc pha sơn, bờ ao cá, chuồng gà, kho thóc",
     "goal": "Đếm lại linh kiện theo chục và rời để sửa xong chiếc xe kéo chở rau",
     "play": "Tìm linh kiện, điền kết quả phép cộng có nhớ, chọn chum, nối quả với lá, đố vỏ ốc, xây tháp đá, chọn kết quả, thi cộng hạt dẻ",
-    "learn": "Toán 2 Bài 19: phép cộng (có nhớ) số có hai chữ số với số có một chữ số",
+    "learn": "Phép cộng có nhớ số có hai chữ số với số có một chữ số, tổng trong phạm vi 100",
     "reward": "80 XP, 15 xu, Phép cộng +2, Bài toán có lời văn +1",
-    "next": "Bài 20 \"Phép cộng (có nhớ) số có hai chữ số với số có hai chữ số\""
+    "next": "Bãi xe kéo của Khỉ Ổi, nơi các toa hàng chờ được cộng hai số có hai chữ số"
   },
   "phases": {
     "hook": "dom-lam-do-hop",
@@ -115,11 +114,11 @@
         },
         {
           "speaker": "Lợn Lấm Lem",
-          "text": "Có 28 chiếc là 2 túi và 8 chiếc rời. Thêm 3 chiếc nữa: 8 + 3 = 11, đủ thêm một túi, còn 1 chiếc rời."
+          "text": "Có 46 chiếc là 4 túi và 6 chiếc rời. Thêm 5 chiếc nữa: 6 + 5 = 11, đủ thêm một túi, còn 1 chiếc rời."
         },
         {
           "speaker": "Lợn Lấm Lem",
-          "text": "Viết 1, nhớ 1 sang hàng chục: 2 túi thêm 1 túi là 3 túi. Vậy 28 + 3 = 31. Ủn… à nhầm, tớ là lợn rừng, không ủn!"
+          "text": "Viết 1, nhớ 1 sang hàng chục: 4 túi thêm 1 túi là 5 túi. Vậy 46 + 5 = 51. Ủn… à nhầm, tớ là lợn rừng, không ủn!"
         }
       ],
       "choices": [
@@ -132,8 +131,8 @@
         "title": "Bag ten bolts into one ten",
         "lines": [
           "Oh, I remember the trick now: every time there are 10 bolts, put them in a bag and call it one ten!",
-          "28 bolts is 2 bags and 8 loose ones. Add 3 more: 8 + 3 = 11, that's one more bag, with 1 left loose.",
-          "Write 1, carry 1 to the tens: 2 bags plus 1 bag is 3 bags. So 28 + 3 = 31. Oink... oops, I'm a wild boar, I don't oink!"
+          "46 bolts is 4 bags and 6 loose ones. Add 5 more: 6 + 5 = 11, that is one more bag, with 1 left loose.",
+          "Write 1, carry 1 to the tens: 4 bags plus 1 bag is 5 bags. So 46 + 5 = 51. Oink... oops, I am a wild boar, I do not oink!"
         ],
         "choices": [
           {
@@ -150,15 +149,11 @@
       "kind": "challenge",
       "mechanic": "fill-blank",
       "prompt": "Mỗi túi ốc vít Lem ghi một phép cộng. Tính.",
-      "template": "28 + 3 = {{b1}}\n78 + 9 = {{b2}}\n57 + 7 = {{b3}}\n13 + 7 = {{b4}}\nĐặt tính rồi tính.\n35 + 6 = {{b5}}\n47 + 8 = {{b6}}\n89 + 2 = {{b7}}\n63 + 9 = {{b8}}",
+      "template": "36 + 5 = {{b1}}\n67 + 8 = {{b2}}\n48 + 6 = {{b3}}\n14 + 6 = {{b4}}\nĐặt tính rồi tính.\n25 + 7 = {{b5}}\n59 + 4 = {{b6}}\n78 + 5 = {{b7}}\n53 + 9 = {{b8}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o30",
-              "text": "30"
-            },
             {
               "id": "o31",
               "text": "31"
@@ -166,6 +161,10 @@
             {
               "id": "o41",
               "text": "41"
+            },
+            {
+              "id": "o42",
+              "text": "42"
             }
           ]
         },
@@ -173,16 +172,16 @@
           "id": "b2",
           "options": [
             {
+              "id": "o74",
+              "text": "74"
+            },
+            {
+              "id": "o75",
+              "text": "75"
+            },
+            {
               "id": "o85",
               "text": "85"
-            },
-            {
-              "id": "o87",
-              "text": "87"
-            },
-            {
-              "id": "o88",
-              "text": "88"
             }
           ]
         },
@@ -190,12 +189,12 @@
           "id": "b3",
           "options": [
             {
-              "id": "o46",
-              "text": "46"
+              "id": "o54",
+              "text": "54"
             },
             {
-              "id": "o62",
-              "text": "62"
+              "id": "o55",
+              "text": "55"
             },
             {
               "id": "o64",
@@ -207,12 +206,12 @@
           "id": "b4",
           "options": [
             {
-              "id": "o2",
-              "text": "2"
+              "id": "o10",
+              "text": "10"
             },
             {
-              "id": "o18",
-              "text": "18"
+              "id": "o19",
+              "text": "19"
             },
             {
               "id": "o20",
@@ -224,16 +223,16 @@
           "id": "b5",
           "options": [
             {
-              "id": "o39",
-              "text": "39"
+              "id": "o22",
+              "text": "22"
             },
             {
-              "id": "o41",
-              "text": "41"
+              "id": "o32",
+              "text": "32"
             },
             {
-              "id": "o51",
-              "text": "51"
+              "id": "o34",
+              "text": "34"
             }
           ]
         },
@@ -245,12 +244,12 @@
               "text": "53"
             },
             {
-              "id": "o55",
-              "text": "55"
+              "id": "o63",
+              "text": "63"
             },
             {
-              "id": "o56",
-              "text": "56"
+              "id": "o64",
+              "text": "64"
             }
           ]
         },
@@ -258,12 +257,12 @@
           "id": "b7",
           "options": [
             {
-              "id": "o81",
-              "text": "81"
+              "id": "o82",
+              "text": "82"
             },
             {
-              "id": "o91",
-              "text": "91"
+              "id": "o83",
+              "text": "83"
             },
             {
               "id": "o93",
@@ -275,66 +274,67 @@
           "id": "b8",
           "options": [
             {
-              "id": "o71",
-              "text": "71"
+              "id": "o62",
+              "text": "62"
+            },
+            {
+              "id": "o63",
+              "text": "63"
             },
             {
               "id": "o72",
               "text": "72"
-            },
-            {
-              "id": "o82",
-              "text": "82"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-hoat-dong-1-a",
-        "toan2-t1-b19-hoat-dong-1-b",
-        "toan2-t1-b19-hoat-dong-1-c",
-        "toan2-t1-b19-hoat-dong-1-d",
-        "toan2-t1-b19-hoat-dong-2-a",
-        "toan2-t1-b19-hoat-dong-2-b",
-        "toan2-t1-b19-hoat-dong-2-c",
-        "toan2-t1-b19-hoat-dong-2-d"
-      ],
       "support": {
         "guide": [
-          "Cộng hàng đơn vị trước; được 10 trở lên thì viết đơn vị, nhớ 1 sang hàng chục.",
-          "Hàng chục: giữ số chục rồi thêm 1 đã nhớ."
+          "Cộng hàng đơn vị trước; được 10 trở lên thì viết chữ số đơn vị, nhớ 1 sang hàng chục.",
+          "Sang hàng chục: giữ nguyên số chục của số lớn rồi cộng thêm 1 đã nhớ."
         ],
-        "hint": "78 + 9: 8 + 9 = 17, viết 7 nhớ 1; 7 thêm 1 bằng 8, được 87.",
+        "hint": "67 + 8: 7 + 8 = 15, viết 5 nhớ 1; 6 thêm 1 là 7, được 75.",
         "answer": {
-          "text": "28 + 3 = 31; 78 + 9 = 87; 57 + 7 = 64; 13 + 7 = 20; Đặt tính rồi tính.; 35 + 6 = 41; 47 + 8 = 55; 89 + 2 = 91; 63 + 9 = 72",
-          "explanation": "28 + 3 = 31, 78 + 9 = 87, 57 + 7 = 64, 13 + 7 = 20, 35 + 6 = 41, 47 + 8 = 55, 89 + 2 = 91, 63 + 9 = 72."
+          "text": "36 + 5 = 41; 67 + 8 = 75; 48 + 6 = 54; 14 + 6 = 20; 25 + 7 = 32; 59 + 4 = 63; 78 + 5 = 83; 53 + 9 = 62",
+          "explanation": "36 + 5 = 41, 67 + 8 = 75, 48 + 6 = 54, 14 + 6 = 20, 25 + 7 = 32, 59 + 4 = 63, 78 + 5 = 83, 53 + 9 = 62."
         }
       },
       "feedback": {
         "right": [
-          "Tám túi ốc vít buộc gọn gàng, Lem múa một điệu vụng về!",
-          "Nhớ 1 sang hàng chục không sót lần nào, siêu thật.",
-          "Lem thì thầm: cậu cộng nhanh hơn cả máy bắn vít."
+          "Tám túi ốc vít buộc gọn như bó rau, Lem múa một điệu vụng về mừng cậu.",
+          "Số 1 nhớ sang hàng chục không rơi mất lần nào, Lem nhìn mà phục.",
+          "Lem thì thầm: cậu cộng còn nhanh hơn chiếc máy xiết ốc của xưởng."
         ],
         "wrong": [
-          "Đủ mười ở hàng đơn vị thì nhớ 1 sang hàng chục nhé.",
-          "Có một phép cộng quên mất số 1 đã nhớ rồi.",
-          "13 + 7 tròn chục đấy, hàng đơn vị là số 0."
+          "Hàng đơn vị đủ mười rồi thì phải nhớ 1 sang hàng chục nhé.",
+          "Có một phép cộng đã bỏ quên số 1 nhớ ở hàng chục.",
+          "14 + 6 vừa tròn một chục, hàng đơn vị ra số 0."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o31",
-          "b2": "o87",
-          "b3": "o64",
+          "b1": "o41",
+          "b2": "o75",
+          "b3": "o54",
           "b4": "o20",
-          "b5": "o41",
-          "b6": "o55",
-          "b7": "o91",
-          "b8": "o72"
+          "b5": "o32",
+          "b6": "o63",
+          "b7": "o83",
+          "b8": "o62"
         }
-      }
+      },
+      "expression": {
+        "b1": "36 + 5",
+        "b2": "67 + 8",
+        "b3": "48 + 6",
+        "b4": "14 + 6",
+        "b5": "25 + 7",
+        "b6": "59 + 4",
+        "b7": "78 + 5",
+        "b8": "53 + 9"
+      },
+      "objective": "cong-tru-co-nho-cong"
     },
     {
       "id": "chum-son-mau",
@@ -342,8 +342,8 @@
       "target": "toan2-cd4-b19-bac-tho-son-tham",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Lem pha sơn trong ba chum: chum A ghi 59 l + 9 l, chum B ghi 61 l + 9 l, chum C ghi 57 l + 4 l.",
-      "template": "Mỗi chum đựng số lít nước là kết quả của phép tính ghi trên chum. Hỏi chum nào đựng nhiều nước nhất? Chum {{b1}}",
+      "prompt": "Lem pha sơn vào ba chum, mỗi chum dán một phép cộng chỉ số lít nước đã đổ: chum A ghi 36 l + 9 l, chum B ghi 28 l + 7 l, chum C ghi 44 l + 8 l.",
+      "template": "Số lít nước trong mỗi chum là kết quả phép cộng dán trên chum. Chum nào đựng nhiều nước nhất? Chum {{b1}}",
       "blanks": [
         {
           "id": "b1",
@@ -364,38 +364,36 @@
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b19-hoat-dong-3"
-      ],
       "support": {
         "guide": [
-          "Tính phép cộng trên từng chum trước.",
-          "So ba kết quả để tìm số lớn nhất."
+          "Tính phép cộng dán trên từng chum trước.",
+          "Đặt ba kết quả cạnh nhau để chọn số lớn nhất."
         ],
-        "hint": "Chum A: 68 l, chum C: 61 l. Còn chum B?",
+        "hint": "Chum A ra 45 l, chum B ra 35 l. Còn chum C?",
         "answer": {
-          "text": "Chum B (61 l + 9 l = 70 l)",
-          "explanation": "Chum A: 59 + 9 = 68 l; chum B: 61 + 9 = 70 l; chum C: 57 + 4 = 61 l. Chum B đựng nhiều nước nhất."
+          "text": "Chum C (44 l + 8 l = 52 l)",
+          "explanation": "Chum A: 36 + 9 = 45 l; chum B: 28 + 7 = 35 l; chum C: 44 + 8 = 52 l. Số 52 lớn nhất nên chum C đựng nhiều nước nhất."
         }
       },
       "feedback": {
         "right": [
-          "Chum B bảy mươi lít, nước sơn đủ quét cả cổng nông trại!",
-          "Cháu tính cả ba chum rồi mới chọn, rất cẩn thận.",
-          "Lem khuấy chum B, sơn đỏ bắn lên mũi: ha ha, đúng rồi!"
+          "Chum C nặng trĩu, Bác thợ sơn Thắm phải hai tay mới nhấc nổi.",
+          "So ba kết quả rồi chọn số lớn nhất, cậu làm chuẩn như thợ cả.",
+          "Bác Thắm quét thử một nét sơn từ chum C, màu lên đậm và đều."
         ],
         "wrong": [
-          "Tính hết ba chum rồi mới so nhé.",
-          "Chum A 68 lít, có chum nào nhiều hơn không?",
-          "61 + 9: 1 + 9 = 10, nhớ 1 sang hàng chục."
+          "Mới tính xong một chum thì chưa đủ để so, còn hai chum nữa.",
+          "Chum nhiều nước nhất là chum có kết quả cộng lớn nhất.",
+          "44 + 8: 4 + 8 = 12, đừng quên nhớ 1 sang hàng chục."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "b"
+          "b1": "c"
         }
       },
-      "goTo": "Chạy sang góc pha sơn, Bác thợ sơn Thắm vẫy cọ gọi cậu xem ba chum sơn của Lem"
+      "goTo": "Chạy sang góc pha sơn, Bác thợ sơn Thắm vẫy cọ gọi cậu xem ba chum sơn của Lem",
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "toa-tau-va-dat-tinh",
@@ -403,16 +401,12 @@
       "target": "toan2-cd4-b19-bac-tho-son-tham",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Lem xếp bốn thùng gỗ đựng linh kiện, mỗi thùng dán một phép tính, rồi còn bốn phép tính viết dọc trên bàn.",
-      "template": "a) Số ?\n12 + 8 = {{b1}}\n33 + 7 = {{b2}}\n65 + 5 = {{b3}}\n84 + 6 = {{b4}}\nb) Đặt tính rồi tính.\n35 + 5 = {{b5}}\n69 + 4 = {{b6}}\n19 + 3 = {{b7}}\n29 + 6 = {{b8}}",
+      "prompt": "Trên giá, Lem xếp bốn thùng gỗ, mỗi thùng dán một phép tính; dưới sàn còn bốn phép nữa viết theo cột.",
+      "template": "a) Số ?\n15 + 5 = {{b1}}\n24 + 6 = {{b2}}\n53 + 7 = {{b3}}\n76 + 4 = {{b4}}\nb) Đặt tính rồi tính.\n45 + 8 = {{b5}}\n28 + 5 = {{b6}}\n67 + 6 = {{b7}}\n39 + 7 = {{b8}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o2",
-              "text": "2"
-            },
             {
               "id": "o10",
               "text": "10"
@@ -420,6 +414,314 @@
             {
               "id": "o20",
               "text": "20"
+            },
+            {
+              "id": "o21",
+              "text": "21"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o29",
+              "text": "29"
+            },
+            {
+              "id": "o30",
+              "text": "30"
+            },
+            {
+              "id": "o40",
+              "text": "40"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o60",
+              "text": "60"
+            },
+            {
+              "id": "o61",
+              "text": "61"
+            },
+            {
+              "id": "o70",
+              "text": "70"
+            }
+          ]
+        },
+        {
+          "id": "b4",
+          "options": [
+            {
+              "id": "o70",
+              "text": "70"
+            },
+            {
+              "id": "o79",
+              "text": "79"
+            },
+            {
+              "id": "o80",
+              "text": "80"
+            }
+          ]
+        },
+        {
+          "id": "b5",
+          "options": [
+            {
+              "id": "o43",
+              "text": "43"
+            },
+            {
+              "id": "o53",
+              "text": "53"
+            },
+            {
+              "id": "o55",
+              "text": "55"
+            }
+          ]
+        },
+        {
+          "id": "b6",
+          "options": [
+            {
+              "id": "o23",
+              "text": "23"
+            },
+            {
+              "id": "o33",
+              "text": "33"
+            },
+            {
+              "id": "o34",
+              "text": "34"
+            }
+          ]
+        },
+        {
+          "id": "b7",
+          "options": [
+            {
+              "id": "o72",
+              "text": "72"
+            },
+            {
+              "id": "o73",
+              "text": "73"
+            },
+            {
+              "id": "o83",
+              "text": "83"
+            }
+          ]
+        },
+        {
+          "id": "b8",
+          "options": [
+            {
+              "id": "o46",
+              "text": "46"
+            },
+            {
+              "id": "o47",
+              "text": "47"
+            },
+            {
+              "id": "o56",
+              "text": "56"
+            }
+          ]
+        }
+      ],
+      "skill": "phep-cong",
+      "support": {
+        "guide": [
+          "Bốn thùng gỗ đầu đều cộng ra số tròn chục.",
+          "Viết thẳng cột: đơn vị dưới đơn vị, chục dưới chục, rồi cộng từ phải sang trái."
+        ],
+        "hint": "39 + 7: 9 + 7 = 16, viết 6 nhớ 1; 3 thêm 1 là 4.",
+        "answer": {
+          "text": "a) 15 + 5 = 20; 24 + 6 = 30; 53 + 7 = 60; 76 + 4 = 80; b) 45 + 8 = 53; 28 + 5 = 33; 67 + 6 = 73; 39 + 7 = 46",
+          "explanation": "15 + 5 = 20, 24 + 6 = 30, 53 + 7 = 60, 76 + 4 = 80; 45 + 8 = 53, 28 + 5 = 33, 67 + 6 = 73, 39 + 7 = 46."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Bốn thùng gỗ xếp thẳng hàng, Lem dán nhãn xong mà không dính tay vào hồ.",
+          "Mấy phép viết theo cột đều thẳng tăm tắp, đẹp như hàng rào ngô.",
+          "Bò Sữa Mơ đi ngang liếc bảng tính và gật đầu một cái."
+        ],
+        "wrong": [
+          "Cộng ra số tròn chục thì hàng đơn vị là 0 nhé.",
+          "Viết lệch cột là hàng chục và hàng đơn vị cộng nhầm nhau đấy.",
+          "Có một phép đủ mười ở hàng đơn vị mà chưa nhớ 1 sang hàng chục."
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o20",
+          "b2": "o30",
+          "b3": "o60",
+          "b4": "o80",
+          "b5": "o53",
+          "b6": "o33",
+          "b7": "o73",
+          "b8": "o46"
+        }
+      },
+      "expression": {
+        "b1": "15 + 5",
+        "b2": "24 + 6",
+        "b3": "53 + 7",
+        "b4": "76 + 4",
+        "b5": "45 + 8",
+        "b6": "28 + 5",
+        "b7": "67 + 6",
+        "b8": "39 + 7"
+      },
+      "objective": "cong-tru-co-nho-cong"
+    },
+    {
+      "id": "qua-tim-la",
+      "title": "Quả nào về lá nấy",
+      "target": "toan2-cd4-b19-lon-lam-lem",
+      "kind": "challenge",
+      "mechanic": "classify",
+      "prompt": "Lem khắc quả gỗ treo lên biển vườn cây ăn quả, mỗi quả phải gắn vào chiếc lá ghi đúng kết quả. Tính rồi tìm lá cho từng quả.",
+      "groups": [
+        {
+          "id": "nhom-la-24",
+          "label": "Lá 24"
+        },
+        {
+          "id": "nhom-la-40",
+          "label": "Lá 40"
+        },
+        {
+          "id": "nhom-la-62",
+          "label": "Lá 62"
+        },
+        {
+          "id": "nhom-la-83",
+          "label": "Lá 83"
+        }
+      ],
+      "items": [
+        {
+          "id": "qua-18-6",
+          "label": "18 + 6"
+        },
+        {
+          "id": "qua-79-4",
+          "label": "79 + 4"
+        },
+        {
+          "id": "qua-38-2",
+          "label": "38 + 2"
+        }
+      ],
+      "skill": "phep-cong",
+      "support": {
+        "guide": [
+          "Tính phép cộng trên quả trước rồi mới tìm lá.",
+          "Lá 62 dành cho quả mẫu trên biển (54 + 8), không quả nào ở đây dùng tới."
+        ],
+        "hint": "79 + 4: 9 + 4 = 13, viết 3 nhớ 1; 7 thêm 1 là 8.",
+        "answer": {
+          "text": "18 + 6 - lá 24; 79 + 4 - lá 83; 38 + 2 - lá 40",
+          "explanation": "18 + 6 = 24, 79 + 4 = 83, 38 + 2 = 40."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Ba quả gỗ treo đúng lá, tấm biển vườn cây trông rực rỡ hẳn.",
+          "Lá nào quả nấy, Lem vỗ tay làm rơi cả cái búa.",
+          "Cậu tính xong là gắn, nhanh như sóc nhặt hạt dẻ."
+        ],
+        "wrong": [
+          "Có một quả gắn nhầm lá, thử tính lại phép cộng của nó.",
+          "Lá 62 chỉ để dành cho quả mẫu thôi, đừng gắn quả nào vào đó.",
+          "38 + 2 tròn chục, tìm lá có số tận cùng là 0 xem."
+        ]
+      },
+      "answer": {
+        "assignment": {
+          "qua-18-6": "nhom-la-24",
+          "qua-79-4": "nhom-la-83",
+          "qua-38-2": "nhom-la-40"
+        }
+      },
+      "goTo": "Về lại bàn sửa xe, Lem đang khắc những quả gỗ để treo biển cho vườn cây ăn quả",
+      "objective": "cong-tru-co-nho-cong"
+    },
+    {
+      "id": "vo-oc-trang-xanh",
+      "title": "Vỏ sò làm chuông gió",
+      "target": "toan2-cd4-b19-canh-cut-so",
+      "kind": "riddle",
+      "question": "Lem muốn làm chuông gió cho chiếc xe kéo nên nhờ Cánh Cụt Sò đi nhặt vỏ dưới ao. Sò nhặt được 29 vỏ sò trắng và 7 vỏ sò hồng. Hỏi Cánh Cụt Sò nhặt được tất cả bao nhiêu chiếc vỏ?",
+      "skill": "bai-toan-loi-van",
+      "support": {
+        "guide": [
+          "Có tất cả nghĩa là gộp hai loại vỏ lại.",
+          "Phép tính 29 + 7 có nhớ."
+        ],
+        "hint": "9 + 7 = 16, viết 6 nhớ 1.",
+        "answer": {
+          "text": "36 chiếc vỏ",
+          "explanation": "Cánh Cụt Sò nhặt được tất cả: 29 + 7 = 36 (chiếc vỏ)."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Ba mươi sáu chiếc vỏ lấp lánh, tiếng chuông gió nghe là biết trong trẻo.",
+          "Gộp hai loại vỏ lại bằng phép cộng, cậu chọn phép đúng ngay.",
+          "Cánh Cụt Sò vỗ cánh nhảy xuống ao mừng, văng cả nước lên áo Lem."
+        ],
+        "wrong": [
+          "Tất cả nghĩa là nhiều hơn mỗi loại, đáp án phải lớn hơn 29.",
+          "Cộng hàng đơn vị 9 + 7 xong nhớ ra sao?",
+          "Bài này gộp lại bằng phép cộng, đừng lấy vỏ đi bớt."
+        ]
+      },
+      "answer": {
+        "value": 36
+      },
+      "goTo": "Ra bờ ao cá, Cánh Cụt Sò lạch bạch ôm cả rổ vỏ sò vừa nhặt dưới ao tới khoe",
+      "expression": "29 + 7",
+      "objective": "cong-tru-co-nho-bai-toan"
+    },
+    {
+      "id": "thap-da-hai-dang",
+      "title": "Tháp đá bên bờ ao",
+      "target": "toan2-cd4-b19-canh-cut-so",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Cánh Cụt Sò chồng sỏi thành tháp nhỏ bên bờ ao: viên nằm trên bằng tổng hai viên đỡ ngay bên dưới. Điền các viên còn thiếu.",
+      "template": "Hàng dưới: 6, 8, 9, 6\nHàng giữa: 14, 17, {{b1}}\nHàng trên: {{b2}}, {{b3}}",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o5",
+              "text": "5"
+            },
+            {
+              "id": "o15",
+              "text": "15"
+            },
+            {
+              "id": "o16",
+              "text": "16"
             }
           ]
         },
@@ -431,12 +733,12 @@
               "text": "30"
             },
             {
-              "id": "o38",
-              "text": "38"
+              "id": "o31",
+              "text": "31"
             },
             {
-              "id": "o40",
-              "text": "40"
+              "id": "o41",
+              "text": "41"
             }
           ]
         },
@@ -444,364 +746,57 @@
           "id": "b3",
           "options": [
             {
-              "id": "o69",
-              "text": "69"
+              "id": "o32",
+              "text": "32"
             },
             {
-              "id": "o70",
-              "text": "70"
-            },
-            {
-              "id": "o72",
-              "text": "72"
-            }
-          ]
-        },
-        {
-          "id": "b4",
-          "options": [
-            {
-              "id": "o80",
-              "text": "80"
-            },
-            {
-              "id": "o88",
-              "text": "88"
-            },
-            {
-              "id": "o90",
-              "text": "90"
-            }
-          ]
-        },
-        {
-          "id": "b5",
-          "options": [
-            {
-              "id": "o40",
-              "text": "40"
-            },
-            {
-              "id": "o41",
-              "text": "41"
+              "id": "o33",
+              "text": "33"
             },
             {
               "id": "o42",
               "text": "42"
             }
           ]
-        },
-        {
-          "id": "b6",
-          "options": [
-            {
-              "id": "o73",
-              "text": "73"
-            },
-            {
-              "id": "o74",
-              "text": "74"
-            },
-            {
-              "id": "o83",
-              "text": "83"
-            }
-          ]
-        },
-        {
-          "id": "b7",
-          "options": [
-            {
-              "id": "o21",
-              "text": "21"
-            },
-            {
-              "id": "o22",
-              "text": "22"
-            },
-            {
-              "id": "o23",
-              "text": "23"
-            }
-          ]
-        },
-        {
-          "id": "b8",
-          "options": [
-            {
-              "id": "o35",
-              "text": "35"
-            },
-            {
-              "id": "o36",
-              "text": "36"
-            },
-            {
-              "id": "o45",
-              "text": "45"
-            }
-          ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-1-a-a",
-        "toan2-t1-b19-luyen-tap-1-a-b",
-        "toan2-t1-b19-luyen-tap-1-a-c",
-        "toan2-t1-b19-luyen-tap-1-a-d",
-        "toan2-t1-b19-luyen-tap-1-b-a",
-        "toan2-t1-b19-luyen-tap-1-b-b",
-        "toan2-t1-b19-luyen-tap-1-b-c",
-        "toan2-t1-b19-luyen-tap-1-b-d"
-      ],
       "support": {
         "guide": [
-          "Bốn thùng gỗ đầu đều cộng ra số tròn chục.",
-          "Đặt tính: viết thẳng cột đơn vị với đơn vị."
+          "Mỗi viên sỏi bằng tổng hai viên đỡ ngay bên dưới nó.",
+          "Điền hàng giữa trước rồi mới tới hàng trên."
         ],
-        "hint": "69 + 4: 9 + 4 = 13, viết 3 nhớ 1; 6 thêm 1 là 7.",
+        "hint": "Viên thiếu ở hàng giữa nằm trên số 9 và số 6.",
         "answer": {
-          "text": "a) Số ?; 12 + 8 = 20; 33 + 7 = 40; 65 + 5 = 70; 84 + 6 = 90; b) Đặt tính rồi tính.; 35 + 5 = 40; 69 + 4 = 73; 19 + 3 = 22; 29 + 6 = 35",
-          "explanation": "12 + 8 = 20, 33 + 7 = 40, 65 + 5 = 70, 84 + 6 = 90; 35 + 5 = 40, 69 + 4 = 73, 19 + 3 = 22, 29 + 6 = 35."
+          "text": "Hàng giữa: 14, 17, 15; hàng trên: 31, 32",
+          "explanation": "Hàng giữa: 9 + 6 = 15. Hàng trên: 14 + 17 = 31 và 17 + 15 = 32."
         }
       },
       "feedback": {
         "right": [
-          "Cộp cộp! Bốn thùng gỗ đóng nắp, xếp ngay ngắn bên bàn sửa xe!",
-          "Thùng nào cũng tròn chục, cháu nhìn ra quy luật rồi.",
-          "Bốn phép tính dọc thẳng hàng như luống rau mới gieo."
+          "Tháp sỏi đứng vững tắp, gió thổi qua mặt ao cũng không đổ.",
+          "Từng tầng cộng khít với tầng dưới, Cánh Cụt Sò vỗ cánh khen.",
+          "Hàng đỉnh cuối cùng đã đủ, nhìn tháp sỏi cân đối hẳn."
         ],
         "wrong": [
-          "Đơn vị cộng đủ 10 thì hàng đơn vị là 0 đấy.",
-          "Một thùng gỗ đang dán sai số, kiểm lại nhé.",
-          "Nhớ cộng thêm 1 vào hàng chục khi có nhớ."
+          "Viên bên trên phải bằng tổng hai viên dưới nó, không phải hiệu.",
+          "Hàng giữa chưa điền xong thì chưa thể sang hàng trên.",
+          "14 + 17: 4 + 7 = 11, nhớ 1 sang hàng chục nhé."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o20",
-          "b2": "o40",
-          "b3": "o70",
-          "b4": "o90",
-          "b5": "o40",
-          "b6": "o73",
-          "b7": "o22",
-          "b8": "o35"
-        }
-      }
-    },
-    {
-      "id": "qua-tim-la",
-      "title": "Quả nào về lá nấy",
-      "target": "toan2-cd4-b19-lon-lam-lem",
-      "kind": "challenge",
-      "mechanic": "classify",
-      "prompt": "Lem khắc quả gỗ treo lên biển của vườn cây ăn quả, mỗi quả phải gắn đúng chiếc lá ghi kết quả. Tính rồi tìm lá của mỗi loại quả.",
-      "groups": [
-        {
-          "id": "nhom-la-26",
-          "label": "Lá 26"
-        },
-        {
-          "id": "nhom-la-70",
-          "label": "Lá 70"
-        },
-        {
-          "id": "nhom-la-57",
-          "label": "Lá 57"
-        },
-        {
-          "id": "nhom-la-92",
-          "label": "Lá 92"
-        }
-      ],
-      "items": [
-        {
-          "id": "qua-19-7",
-          "label": "19 + 7"
-        },
-        {
-          "id": "qua-89-3",
-          "label": "89 + 3"
-        },
-        {
-          "id": "qua-69-1",
-          "label": "69 + 1"
-        }
-      ],
-      "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-2-a",
-        "toan2-t1-b19-luyen-tap-2-b",
-        "toan2-t1-b19-luyen-tap-2-c"
-      ],
-      "support": {
-        "guide": [
-          "Tính phép cộng trên quả trước.",
-          "Lá 57 là của quả me mẫu (49 + 8)."
-        ],
-        "hint": "89 + 3: 9 + 3 = 12, viết 2 nhớ 1.",
-        "answer": {
-          "text": "19 + 7 – lá 26; 89 + 3 – lá 92; 69 + 1 – lá 70",
-          "explanation": "19 + 7 = 26, 89 + 3 = 92, 69 + 1 = 70."
+          "b1": "o15",
+          "b2": "o31",
+          "b3": "o32"
         }
       },
-      "feedback": {
-        "right": [
-          "Dưa hấu, lựu, chuối đều tìm được lá của mình!",
-          "Tấm biển xanh mướt, quả nào cũng đúng chỗ.",
-          "Lem treo biển lên cổng vườn cây, ai đi qua cũng trầm trồ."
-        ],
-        "wrong": [
-          "Có một quả đang ôm nhầm lá của bạn khác.",
-          "Lá 57 đã có quả me mẫu rồi nhé.",
-          "Tính lại 19 + 7 xem lá nào hợp."
-        ]
+      "expression": {
+        "b1": "9 + 6",
+        "b2": "14 + 17",
+        "b3": "17 + 15"
       },
-      "answer": {
-        "assignment": {
-          "qua-19-7": "nhom-la-26",
-          "qua-89-3": "nhom-la-92",
-          "qua-69-1": "nhom-la-70"
-        }
-      },
-      "goTo": "Về lại bàn sửa xe, Lem đang khắc những quả gỗ để treo biển cho vườn cây ăn quả"
-    },
-    {
-      "id": "vo-oc-trang-xanh",
-      "title": "Vỏ ốc làm còi xe kéo",
-      "target": "toan2-cd4-b19-canh-cut-so",
-      "kind": "riddle",
-      "question": "Lem dùng vỏ ốc làm còi cho chiếc xe kéo. Trên bàn có 18 vỏ ốc màu trắng và 5 vỏ ốc màu xanh. Hỏi trên bàn có tất cả bao nhiêu vỏ ốc?",
-      "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-3"
-      ],
-      "support": {
-        "guide": [
-          "Có tất cả thì gộp hai loại vỏ ốc lại.",
-          "Phép cộng 18 + 5 có nhớ."
-        ],
-        "hint": "8 + 5 = 13, viết 3 nhớ 1.",
-        "answer": {
-          "text": "23 vỏ ốc",
-          "explanation": "Trên bàn có tất cả 18 + 5 = 23 vỏ ốc."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Hai mươi ba chiếc còi vỏ ốc thổi tuýt tuýt vang cả bờ ao!",
-          "Gộp trắng với xanh, cháu cộng có nhớ chuẩn rồi.",
-          "Lem thử thổi một vỏ ốc, ra tiếng… ủn ỉn. Ha ha!"
-        ],
-        "wrong": [
-          "Có tất cả thì phải cộng hai loại vỏ ốc.",
-          "8 + 5 qua chục, nhớ 1 sang hàng chục nhé.",
-          "Kết quả phải nhiều hơn 18 chứ."
-        ]
-      },
-      "answer": {
-        "value": 23
-      },
-      "goTo": "Ra bờ ao cá, Cánh Cụt Sò lạch bạch ôm cả rổ vỏ ốc vừa nhặt dưới ao tới khoe"
-    },
-    {
-      "id": "thap-da-hai-dang",
-      "title": "Tháp đá bên bờ ao",
-      "target": "toan2-cd4-b19-canh-cut-so",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Lem xếp tháp đá nhỏ bên bờ ao: mỗi viên đá bằng tổng hai viên ngay dưới nó. Số ?",
-      "template": "Hàng dưới: 4, 5, 7, 2\nHàng giữa: 9, 12, {{b1}}\nHàng trên: {{b2}}, {{b3}}",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o8",
-              "text": "8"
-            },
-            {
-              "id": "o9",
-              "text": "9"
-            },
-            {
-              "id": "o11",
-              "text": "11"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o20",
-              "text": "20"
-            },
-            {
-              "id": "o21",
-              "text": "21"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o11",
-              "text": "11"
-            },
-            {
-              "id": "o12",
-              "text": "12"
-            },
-            {
-              "id": "o21",
-              "text": "21"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-4-c",
-        "toan2-t1-b19-luyen-tap-4-a",
-        "toan2-t1-b19-luyen-tap-4-b"
-      ],
-      "support": {
-        "guide": [
-          "Mỗi viên bằng tổng hai viên ngay bên dưới.",
-          "Điền hàng giữa trước rồi mới lên hàng trên."
-        ],
-        "hint": "Viên còn thiếu ở hàng giữa nằm trên 7 và 2.",
-        "answer": {
-          "text": "Hàng giữa: 9, 12, 9; hàng trên: 21, 21",
-          "explanation": "Hàng giữa: 7 + 2 = 9. Hàng trên: 9 + 12 = 21 và 12 + 9 = 21."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Tháp đá đứng vững, đàn cá dưới ao quẫy đuôi tán thưởng!",
-          "Hai viên trên đỉnh cùng là 21, cân đối ghê.",
-          "Lem rón rén đặt viên cuối, may quá không đổ!"
-        ],
-        "wrong": [
-          "Viên đá bằng tổng hai viên ngay dưới nó đấy.",
-          "Điền hàng giữa trước: 7 + 2 bằng mấy?",
-          "9 + 12 và 12 + 9 có bằng nhau không nhỉ?"
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o9",
-          "b2": "o21",
-          "b3": "o21"
-        }
-      }
+      "objective": "cong-tru-co-nho-cong"
     },
     {
       "id": "chip-boi-dat",
@@ -854,23 +849,23 @@
       "target": "toan2-cd4-b19-ga-con-liu",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Chú gà bới đất làm mất kết quả của các phép tính mà Việt vừa viết. Hãy tìm lại kết quả giúp bạn Việt nhé! (Ở nông trại này, chú gà ấy chính là Líu.)",
-      "template": "47 + 8 = {{b1}}\n84 + 9 = {{b2}}\n23 + 7 = {{b3}}\n15 + 5 = {{b4}}",
+      "prompt": "Gà Con Líu bới đất làm mất kết quả bốn phép tính Lem vừa viết trước chuồng gà. Giúp Lem viết lại kết quả nhé!",
+      "template": "57 + 6 = {{b1}}\n76 + 8 = {{b2}}\n34 + 6 = {{b3}}\n25 + 5 = {{b4}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o55",
-              "text": "55"
+              "id": "o53",
+              "text": "53"
             },
             {
-              "id": "o56",
-              "text": "56"
+              "id": "o63",
+              "text": "63"
             },
             {
-              "id": "o65",
-              "text": "65"
+              "id": "o64",
+              "text": "64"
             }
           ]
         },
@@ -878,16 +873,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o39",
-              "text": "39"
-            },
-            {
               "id": "o83",
               "text": "83"
             },
             {
-              "id": "o93",
-              "text": "93"
+              "id": "o84",
+              "text": "84"
+            },
+            {
+              "id": "o94",
+              "text": "94"
             }
           ]
         },
@@ -895,16 +890,16 @@
           "id": "b3",
           "options": [
             {
-              "id": "o3",
-              "text": "3"
+              "id": "o40",
+              "text": "40"
             },
             {
-              "id": "o28",
-              "text": "28"
+              "id": "o41",
+              "text": "41"
             },
             {
-              "id": "o30",
-              "text": "30"
+              "id": "o50",
+              "text": "50"
             }
           ]
         },
@@ -916,8 +911,8 @@
               "text": "20"
             },
             {
-              "id": "o21",
-              "text": "21"
+              "id": "o29",
+              "text": "29"
             },
             {
               "id": "o30",
@@ -927,43 +922,44 @@
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-2-3-a",
-        "toan2-t1-b19-luyen-tap-2-3-b",
-        "toan2-t1-b19-luyen-tap-2-3-c",
-        "toan2-t1-b19-luyen-tap-2-3-d"
-      ],
       "support": {
         "guide": [
-          "Cộng đơn vị trước, đủ chục thì nhớ.",
-          "Hai phép cuối cộng ra số tròn chục."
+          "Cộng hàng đơn vị trước, đủ mười thì nhớ 1 sang hàng chục.",
+          "Hai phép cuối đều cộng ra số tròn chục."
         ],
-        "hint": "84 + 9: 4 + 9 = 13, viết 3 nhớ 1; 8 thêm 1 là 9.",
+        "hint": "76 + 8: 6 + 8 = 14, viết 4 nhớ 1; 7 thêm 1 là 8.",
         "answer": {
-          "text": "47 + 8 = 55; 84 + 9 = 93; 23 + 7 = 30; 15 + 5 = 20",
-          "explanation": "47 + 8 = 55, 84 + 9 = 93, 23 + 7 = 30, 15 + 5 = 20."
+          "text": "57 + 6 = 63; 76 + 8 = 84; 34 + 6 = 40; 25 + 5 = 30",
+          "explanation": "57 + 6 = 63, 76 + 8 = 84, 34 + 6 = 40, 25 + 5 = 30."
         }
       },
       "feedback": {
         "right": [
-          "Kết quả hiện lại trên đất, Líu hứa từ nay bới chỗ khác!",
-          "Bốn phép tính được cứu, Việt chắc cảm ơn cậu lắm.",
-          "Líu cúi đầu xin lỗi rồi… lại thấy một con giun."
+          "Bốn kết quả được viết lại đủ cả, Líu chiếp chiếp reo vì hết bị mắng.",
+          "Bảng tính trước chuồng gà sạch đẹp lại như chưa từng bị bới.",
+          "Líu đứng lên đầu số 84 khoe khắp sân, thích chí lắm."
         ],
         "wrong": [
-          "Một kết quả quên cộng số 1 nhớ ở hàng chục.",
-          "23 + 7: 3 + 7 tròn chục đấy nhé.",
-          "Kiểm tra lại phép 47 + 8 xem nào."
+          "Cộng đơn vị rồi mà quên thêm 1 vào hàng chục à?",
+          "Hai phép cuối ra số tròn chục, kiểm tra hàng đơn vị xem.",
+          "57 + 6: hàng đơn vị 7 + 6 là 13 chứ không phải 12."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o55",
-          "b2": "o93",
-          "b3": "o30",
-          "b4": "o20"
+          "b1": "o63",
+          "b2": "o84",
+          "b3": "o40",
+          "b4": "o30"
         }
-      }
+      },
+      "expression": {
+        "b1": "57 + 6",
+        "b2": "76 + 8",
+        "b3": "34 + 6",
+        "b4": "25 + 5"
+      },
+      "objective": "cong-tru-co-nho-cong"
     },
     {
       "id": "dat-tinh-don-xuong",
@@ -971,23 +967,23 @@
       "target": "toan2-cd4-b19-lon-lam-lem",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Dọn xong sân chuồng gà, Lem nhờ tính nốt bốn phép trên bảng gỗ. Đặt tính rồi tính.",
-      "template": "83 + 9 = {{b1}}\n57 + 4 = {{b2}}\n62 + 8 = {{b3}}\n39 + 5 = {{b4}}",
+      "prompt": "Dọn xong sân chuồng gà, Lem nhờ cậu tính nốt bốn phép trên bảng gỗ. Đặt tính rồi tính.",
+      "template": "74 + 8 = {{b1}}\n45 + 9 = {{b2}}\n56 + 4 = {{b3}}\n88 + 6 = {{b4}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o92",
-              "text": "92"
+              "id": "o72",
+              "text": "72"
             },
             {
-              "id": "o93",
-              "text": "93"
+              "id": "o82",
+              "text": "82"
             },
             {
-              "id": "o94",
-              "text": "94"
+              "id": "o83",
+              "text": "83"
             }
           ]
         },
@@ -995,16 +991,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o53",
+              "text": "53"
             },
             {
-              "id": "o59",
-              "text": "59"
+              "id": "o54",
+              "text": "54"
             },
             {
-              "id": "o61",
-              "text": "61"
+              "id": "o64",
+              "text": "64"
             }
           ]
         },
@@ -1012,12 +1008,12 @@
           "id": "b3",
           "options": [
             {
-              "id": "o68",
-              "text": "68"
+              "id": "o60",
+              "text": "60"
             },
             {
-              "id": "o69",
-              "text": "69"
+              "id": "o61",
+              "text": "61"
             },
             {
               "id": "o70",
@@ -1029,97 +1025,97 @@
           "id": "b4",
           "options": [
             {
-              "id": "o34",
-              "text": "34"
+              "id": "o84",
+              "text": "84"
             },
             {
-              "id": "o44",
-              "text": "44"
+              "id": "o93",
+              "text": "93"
             },
             {
-              "id": "o46",
-              "text": "46"
+              "id": "o94",
+              "text": "94"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-2-1-a",
-        "toan2-t1-b19-luyen-tap-2-1-b",
-        "toan2-t1-b19-luyen-tap-2-1-c",
-        "toan2-t1-b19-luyen-tap-2-1-d"
-      ],
       "support": {
         "guide": [
-          "Số 9, số 4, số 8, số 5 đặt ngay dưới chữ số hàng đơn vị của số kia.",
+          "Số một chữ số đặt thẳng dưới hàng đơn vị của số kia.",
           "Cộng từ phải sang trái, nhớ 1 nếu đủ chục."
         ],
-        "hint": "39 + 5: 9 + 5 = 14, viết 4 nhớ 1; 3 thêm 1 là 4.",
+        "hint": "88 + 6: 8 + 6 = 14, viết 4 nhớ 1; 8 thêm 1 là 9.",
         "answer": {
-          "text": "83 + 9 = 92; 57 + 4 = 61; 62 + 8 = 70; 39 + 5 = 44",
-          "explanation": "83 + 9 = 92, 57 + 4 = 61, 62 + 8 = 70, 39 + 5 = 44."
+          "text": "74 + 8 = 82; 45 + 9 = 54; 56 + 4 = 60; 88 + 6 = 94",
+          "explanation": "74 + 8 = 82, 45 + 9 = 54, 56 + 4 = 60, 88 + 6 = 94."
         }
       },
       "feedback": {
         "right": [
-          "Bảng gỗ sạch bong, phép tính nào cũng đúng!",
-          "Cột thẳng tắp, số nhớ đặt đúng chỗ, tuyệt!",
-          "Lem vỗ tay bôm bốp, làm rơi luôn chiếc búa xuống chân."
+          "Tấm bảng gỗ sạch bong, Lem lau mồ hôi bằng đuôi rồi cười toe.",
+          "Bốn phép tính khép lại gọn ghẽ, xưởng nông cụ sạch hẳn.",
+          "Cậu cộng thẳng cột chuẩn thật, Lem mê tắp lự."
         ],
         "wrong": [
-          "Nhớ viết số đơn vị thẳng hàng đơn vị nhé.",
-          "Có một phép cộng tròn chục, xem lại 62 + 8.",
-          "Đừng quên số 1 nhớ khi cộng hàng chục."
+          "Số một chữ số phải nằm dưới cột đơn vị, đừng đặt sang cột chục.",
+          "Đủ mười ở hàng đơn vị thì viết đơn vị và nhớ 1 sang hàng chục.",
+          "56 + 4 vừa tròn một chục, hàng đơn vị là 0."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o92",
-          "b2": "o61",
-          "b3": "o70",
-          "b4": "o44"
+          "b1": "o82",
+          "b2": "o54",
+          "b3": "o60",
+          "b4": "o94"
         }
       },
-      "goTo": "Quay về bàn sửa xe, Lem đã dựng sẵn tấm bảng gỗ ghi bốn phép tính"
+      "goTo": "Quay về bàn sửa xe, Lem đã dựng sẵn tấm bảng gỗ ghi bốn phép tính",
+      "expression": {
+        "b1": "74 + 8",
+        "b2": "45 + 9",
+        "b3": "56 + 4",
+        "b4": "88 + 6"
+      },
+      "objective": "cong-tru-co-nho-cong"
     },
     {
       "id": "thoc-bac-manh",
       "title": "Bảng thu hoạch ở kho thóc",
       "target": "toan2-cd4-b19-be-rom",
       "kind": "riddle",
-      "question": "Bê Rơm đọc to bài toán ghi trên tấm bảng của kho thóc: Buổi sáng, bác Mạnh thu hoạch được 87 bao thóc. Buổi chiều, bác Mạnh thu hoạch được nhiều hơn buổi sáng 6 bao thóc. Hỏi buổi chiều bác Mạnh thu hoạch được bao nhiêu bao thóc?",
+      "question": "Bê Rơm đọc to bài toán ghi trên tấm bảng ở kho thóc: Buổi sáng, bác Mạnh chất 76 bao thóc lên kho. Buổi chiều, bác chất nhiều hơn buổi sáng 8 bao thóc. Hỏi buổi chiều bác Mạnh chất bao nhiêu bao thóc?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-2-2"
-      ],
       "support": {
         "guide": [
           "Nhiều hơn thì làm phép cộng.",
-          "Lấy số bao buổi sáng cộng thêm 6."
+          "Lấy số bao buổi sáng cộng thêm 8."
         ],
-        "hint": "87 + 6: 7 + 6 = 13, viết 3 nhớ 1.",
+        "hint": "76 + 8: 6 + 8 = 14, viết 4 nhớ 1.",
         "answer": {
-          "text": "93 bao thóc",
-          "explanation": "Buổi chiều bác Mạnh thu hoạch được 87 + 6 = 93 bao thóc."
+          "text": "84 bao thóc",
+          "explanation": "Buổi chiều bác Mạnh chất: 76 + 8 = 84 (bao thóc)."
         }
       },
       "feedback": {
         "right": [
-          "Chín mươi ba bao thóc xếp cao gần chạm mái kho!",
-          "Nhiều hơn thì cộng, cháu nắm chắc rồi.",
-          "Bê Rơm nhặt một hạt thóc rơi… và định nếm thử."
+          "Tám mươi tư bao thóc xếp kín kho, Bê Rơm đếm mà chóng cả mặt.",
+          "Nhiều hơn thì cộng, cậu chọn phép tính không chần chừ.",
+          "Bê Rơm nghển cổ gật gù, ghi 84 lên tấm bảng bằng phấn trắng."
         ],
         "wrong": [
-          "Buổi chiều nhiều hơn buổi sáng, vậy phải cộng thêm.",
-          "87 + 6 có nhớ sang hàng chục đấy.",
-          "Kết quả phải lớn hơn 87 bao nhé."
+          "Buổi chiều chất nhiều hơn buổi sáng, đáp án phải lớn hơn 76.",
+          "Chữ nhiều hơn báo hiệu phép cộng, không phải phép trừ.",
+          "6 + 8 vượt quá 10, nhớ 1 sang hàng chục nhé."
         ]
       },
       "answer": {
-        "value": 93
+        "value": 84
       },
-      "goTo": "Sang kho thóc, Bê Rơm đang nghển cổ đọc chữ trên tấm bảng ghi thu hoạch"
+      "goTo": "Sang kho thóc, Bê Rơm đang nghển cổ đọc chữ trên tấm bảng ghi thu hoạch",
+      "expression": "76 + 8",
+      "objective": "cong-tru-co-nho-bai-toan"
     },
     {
       "id": "chon-ket-qua-ba-so-a",
@@ -1127,104 +1123,100 @@
       "target": "toan2-cd4-b19-ga-con-liu",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Líu đố liền hai câu. Chọn kết quả đúng. a) 28 + 9 + 2 = ? A. 37 B. 39 C. 30",
+      "prompt": "Líu đố liền hai câu. Chọn kết quả đúng. a) 46 + 8 + 2 = ? A. 56 B. 54 C. 66",
       "choices": [
         {
-          "id": "a-37",
-          "text": "A. 37"
+          "id": "a-56",
+          "text": "A. 56"
         },
         {
-          "id": "b-39",
-          "text": "B. 39"
+          "id": "b-54",
+          "text": "B. 54"
         },
         {
-          "id": "c-30",
-          "text": "C. 30"
+          "id": "c-66",
+          "text": "C. 66"
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-2-4-a"
-      ],
       "support": {
         "guide": [
           "Cộng lần lượt từ trái sang phải.",
-          "28 + 9 trước, rồi cộng thêm 2."
+          "Cộng 46 với 8 trước, rồi cộng thêm 2."
         ],
-        "hint": "28 + 9 = 37.",
+        "hint": "46 + 8 = 54.",
         "answer": {
-          "text": "B. 39",
-          "explanation": "28 + 9 = 37, 37 + 2 = 39."
+          "text": "Đáp án A, kết quả 56",
+          "explanation": "46 + 8 = 54, 54 + 2 = 56."
         }
       },
       "feedback": {
         "right": [
-          "Ba mươi chín, Líu kêu chiếp một tiếng đồng ý!",
-          "Cộng hai lần liền mà không vấp, giỏi quá.",
-          "Đúng rồi, 37 chỉ là kết quả của bước đầu thôi."
+          "Líu xòe cánh khen: chọn A, đúng ngay lần đầu.",
+          "Cộng từ trái sang phải đúng thứ tự, kết quả khớp liền.",
+          "Chiếc mỏ nhỏ của Líu gõ nhịp mừng tiếng chiếp chiếp."
         ],
         "wrong": [
-          "Nhớ cộng thêm số 2 ở cuối nhé.",
-          "28 + 9 được 37, rồi còn bước nữa đấy.",
-          "Đáp án tròn chục kia là bẫy của Líu đó."
+          "Làm hai bước: 46 + 8 trước rồi mới cộng thêm 2.",
+          "Nếu dừng ở 54 thì mới cộng một số, còn thiếu số 2.",
+          "Kết quả không thể là 66, hàng chục chỉ tăng thêm 1 chục thôi."
         ]
       },
       "answer": {
-        "choice": "b-39"
+        "choice": "a-56"
       },
-      "goTo": "Ra lại chuồng gà, Gà Con Líu chống cánh chờ đố cậu hai câu"
+      "goTo": "Ra lại chuồng gà, Gà Con Líu chống cánh chờ đố cậu hai câu",
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "chon-ket-qua-ba-so-b",
-      "title": "Bốn mươi lăm cộng năm cộng tám",
+      "title": "Ba mươi lăm cộng năm cộng chín",
       "target": "toan2-cd4-b19-ga-con-liu",
       "kind": "challenge",
       "mechanic": "quiz",
-      "prompt": "Câu đố thứ hai của Líu. Chọn kết quả đúng. b) 45 + 5 + 8 = ? A. 58 B. 48 C. 68",
+      "prompt": "Câu đố thứ hai của Líu. Chọn kết quả đúng. b) 35 + 5 + 9 = ? A. 39 B. 49 C. 59",
       "choices": [
         {
-          "id": "a-58",
-          "text": "A. 58"
+          "id": "a-39",
+          "text": "A. 39"
         },
         {
-          "id": "b-48",
-          "text": "B. 48"
+          "id": "b-49",
+          "text": "B. 49"
         },
         {
-          "id": "c-68",
-          "text": "C. 68"
+          "id": "c-59",
+          "text": "C. 59"
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-2-4-b"
-      ],
       "support": {
         "guide": [
-          "45 + 5 ra số tròn chục.",
-          "Sau đó cộng thêm 8."
+          "35 + 5 ra một số tròn chục.",
+          "Sau đó cộng thêm 9."
         ],
-        "hint": "45 + 5 = 50.",
+        "hint": "35 + 5 = 40.",
         "answer": {
-          "text": "A. 58",
-          "explanation": "45 + 5 = 50, 50 + 8 = 58."
+          "text": "Đáp án B, kết quả 49",
+          "explanation": "35 + 5 = 40, 40 + 9 = 49."
         }
       },
       "feedback": {
         "right": [
-          "Năm mươi tám! Tròn chục rồi cộng thêm, mẹo hay quá.",
-          "Líu phục sát đất, à không, sát… vỏ trứng.",
-          "Hai câu đố của Líu đều bị cháu hạ gục."
+          "Ba mươi lăm thêm năm tròn bốn chục, thêm chín là 49, Líu gật đầu liền.",
+          "Gom thành số tròn chục trước rồi cộng tiếp, mẹo này hay thật.",
+          "Líu nhảy một vòng quanh chuồng gà khi nghe cậu chọn B."
         ],
         "wrong": [
-          "45 + 5 bằng 50, rồi thêm 8 nữa nhé.",
-          "Cẩn thận, có đáp án lệch đúng một chục.",
-          "Cộng lần lượt từ trái sang phải xem."
+          "Làm từng bước: 35 + 5 trước, rồi mới thêm 9.",
+          "Chỉ có một đáp án đúng, kiểm tra lại 40 + 9.",
+          "Đáp án quá lớn: 40 + 9 chưa tới năm chục."
         ]
       },
       "answer": {
-        "choice": "a-58"
-      }
+        "choice": "b-49"
+      },
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "thi-cong-hat-de",
@@ -1233,59 +1225,60 @@
       "target": "toan2-cd4-b19-lon-lam-lem",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Trò chơi cuối: Lem vẽ mê cung, chú sóc đi từ cửa vào tới nhà trên cây và nhặt ba hạt dẻ ghi 38, 9 và 5 dọc đường. Ai tính ra trước thì thắng! Tính tổng các số trên những hạt dẻ mà chú sóc nhặt được trên đường về nhà.",
-      "template": "38 + 9 + 5 = {{b1}}",
+      "prompt": "Trò chơi cuối: Lem vẽ mê cung lên nền đất, chú sóc đi từ cửa tới nhà trên cây và nhặt ba hạt dẻ ghi 27, 6 và 8 dọc đường. Ai tính ra tổng các số trên ba hạt dẻ trước thì thắng!",
+      "template": "27 + 6 + 8 = {{b1}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o50",
-              "text": "50"
+              "id": "o31",
+              "text": "31"
             },
             {
-              "id": "o52",
-              "text": "52"
+              "id": "o41",
+              "text": "41"
             },
             {
-              "id": "o54",
-              "text": "54"
+              "id": "o42",
+              "text": "42"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b19-luyen-tap-2-5"
-      ],
       "support": {
         "guide": [
-          "Cộng 38 với 9 trước.",
-          "Rồi cộng tiếp với 5."
+          "Cộng 27 với 6 trước.",
+          "Rồi cộng tiếp với 8."
         ],
-        "hint": "38 + 9 = 47.",
+        "hint": "27 + 6 = 33.",
         "answer": {
-          "text": "38 + 9 + 5 = 52",
-          "explanation": "38 + 9 = 47, 47 + 5 = 52."
+          "text": "27 + 6 + 8 = 41",
+          "explanation": "27 + 6 = 33, 33 + 8 = 41."
         }
       },
       "feedback": {
         "right": [
-          "Cháu thắng rồi! Lem vẫn còn đang đếm ngón tay.",
-          "Năm mươi hai hạt dẻ, sóc no căng bụng!",
-          "Lem cúi chào nhà vô địch cộng hạt dẻ."
+          "Bốn mươi mốt, Lem thua mà vẫn nhảy cẫng lên vỗ tay cho cậu.",
+          "Ba hạt dẻ gộp đủ cả, chú sóc ôm về nhà trên cây vui vẻ.",
+          "Cậu thắng cuộc thi cộng hạt dẻ, Lem tặng tràng pháo tay bằng bốn cái móng."
         ],
         "wrong": [
-          "Lem sắp đuổi kịp rồi, tính lại từng bước nhé.",
-          "47 + 5: 7 + 5 = 12, nhớ 1 sang hàng chục.",
-          "Cộng đủ cả ba hạt dẻ chưa nhỉ?"
+          "Ba số thì làm từng bước: hai số đầu trước, số cuối sau.",
+          "Đã cộng 27 với 6 chưa? Ra 33 rồi mới thêm 8.",
+          "3 + 8 = 11, nhớ 1 sang hàng chục khi cộng 33 với 8."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o52"
+          "b1": "o41"
         }
-      }
+      },
+      "expression": {
+        "b1": "27 + 6 + 8"
+      },
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "co-le-tho-lap-rap",

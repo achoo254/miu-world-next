@@ -4,18 +4,17 @@
   "chapter": 1,
   "title": "Hộp quà bí mật của Cáo Mía",
   "status": "active",
-  "lesson": "toan2-t1-b21",
   "topic": "cong-tru-co-nho",
-  "summary": "Cáo Mía bày hội thi mùa gặt trước kho thóc, giấu ba hộp quà khoá bằng phép tính; {name} học bí kíp đặt tính của Bác thợ Tùng ở xưởng nông cụ, cân lợn với Heo Mũm ở chuồng lợn, thi nhảy xa cùng Nai Lộc qua vườn cây và đo mực nước bể ươm cá để mở hết quà.",
+  "summary": "Cáo Mía bày hội thi mùa gặt ngay sân kho thóc và khóa ba hộp quà bằng phép tính; {name} học bí kíp đặt tính của Bác thợ Tùng, cân chú lợn con cùng Heo Mũm, thi nhảy qua tảng đá với chú nai gỗ của Nai Lộc, rồi đo nước ở các bể ươm cá để mở hết quà.",
   "review": "teacher-pending",
   "sevenQuestions": {
     "who": "Cáo Mía, Bác thợ Tùng, Heo Mũm, Nai Lộc",
     "where": "Nông trại: sân trước kho thóc, bàn bào gỗ ở xưởng nông cụ, chuồng lợn, lối đá qua vườn cây, bể ươm cá bên ao",
     "goal": "Mở cả ba hộp quà bí mật trước giờ trao giải hội mùa",
-    "play": "Tìm hộp quà, điền số mở khoá, giải đố, chọn đường bay dài nhất, đo mực nước, làm phiếu ở nhà",
-    "learn": "Toán 2 Bài 21: luyện tập cộng có nhớ trong phạm vi 100, bài toán có lời văn",
+    "play": "Tìm hộp quà, điền số mở khóa, giải đố, chọn đường bay dài nhất, so mực nước các bể, làm phiếu đo ở nhà",
+    "learn": "Luyện tập phép cộng có nhớ trong phạm vi 100 và bài toán có lời văn",
     "reward": "80 XP, 15 xu, Phép cộng +2, Bài toán có lời văn +1",
-    "next": "Bài 22 \"Phép trừ (có nhớ) số có hai chữ số cho số có một chữ số\""
+    "next": "Ruộng ngô của Koala Lơ Mơ, nơi có bài toán bớt đi"
   },
   "phases": {
     "hook": "cao-lem-khoa-qua",
@@ -146,23 +145,23 @@
       "target": "toan2-cd4-b21-bac-tho-tung",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Ổ khoá hộp quà đỏ có ba vòng số. Đặt tính rồi tính.",
-      "template": "45 + 6 = {{b1}}\n81 + 9 = {{b2}}\n26 + 66 = {{b3}}",
+      "prompt": "Ổ khóa hộp quà đỏ có ba vòng số. Đặt tính rồi tính.",
+      "template": "38 + 7 = {{b1}}\n62 + 8 = {{b2}}\n54 + 39 = {{b3}}",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o41",
-              "text": "41"
+              "id": "o35",
+              "text": "35"
             },
             {
-              "id": "o51",
-              "text": "51"
+              "id": "o45",
+              "text": "45"
             },
             {
-              "id": "o61",
-              "text": "61"
+              "id": "o46",
+              "text": "46"
             }
           ]
         },
@@ -170,16 +169,16 @@
           "id": "b2",
           "options": [
             {
+              "id": "o69",
+              "text": "69"
+            },
+            {
+              "id": "o70",
+              "text": "70"
+            },
+            {
               "id": "o80",
               "text": "80"
-            },
-            {
-              "id": "o90",
-              "text": "90"
-            },
-            {
-              "id": "o91",
-              "text": "91"
             }
           ]
         },
@@ -187,132 +186,131 @@
           "id": "b3",
           "options": [
             {
-              "id": "o92",
-              "text": "92"
-            },
-            {
               "id": "o93",
               "text": "93"
             },
             {
               "id": "o94",
               "text": "94"
+            },
+            {
+              "id": "o103",
+              "text": "103"
             }
           ]
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-1-a",
-        "toan2-t1-b21-luyen-tap-1-b",
-        "toan2-t1-b21-luyen-tap-1-c"
-      ],
       "support": {
         "guide": [
           "Viết số có một chữ số thẳng cột với hàng đơn vị.",
           "Cộng hàng đơn vị trước; được 10 trở lên thì nhớ 1 sang hàng chục."
         ],
-        "hint": "5 + 6 = 11, viết 1 nhớ 1; 4 thêm 1 là 5.",
+        "hint": "8 + 7 = 15, viết 5 nhớ 1; 3 thêm 1 là 4.",
         "answer": {
-          "text": "45 + 6 = 51; 81 + 9 = 90; 26 + 66 = 92",
-          "explanation": "45 + 6 = 51; 81 + 9 = 90 (1 + 9 = 10, viết 0 nhớ 1); 26 + 66 = 92 (6 + 6 = 12, viết 2 nhớ 1, 2 + 6 + 1 = 9)."
+          "text": "38 + 7 = 45; 62 + 8 = 70; 54 + 39 = 93",
+          "explanation": "38 + 7 = 45; 62 + 8 = 70 (2 + 8 = 10, viết 0 nhớ 1); 54 + 39 = 93 (4 + 9 = 13, viết 3 nhớ 1, 5 + 3 + 1 = 9)."
         }
       },
       "feedback": {
         "right": [
-          "Cạch cạch cạch! Ba vòng số khớp, nắp hộp đỏ bật tung.",
-          "Nhớ 1 không sót lần nào, ổ khoá chịu thua rồi.",
-          "Trong hộp đỏ là tấm thẻ đố vẽ chú bê và chú nghé đang chào {name}."
+          "Ba vòng số khớp nhau, hộp quà đỏ bật nắp đánh tách.",
+          "Cáo Mía há hốc mồm: khóa của tớ chưa bao giờ bị mở nhanh thế.",
+          "Bác thợ Tùng phủi mùn cưa khỏi tay rồi giơ ngón cái khen cậu."
         ],
         "wrong": [
-          "Phì phì! Khoá hắt xì rồi, có chỗ quên nhớ 1 kìa.",
-          "Thử đặt tính thẳng cột rồi cộng lại từ hàng đơn vị nhé.",
-          "Một vòng số lệch, xem lại phép tính có hàng đơn vị cộng quá 10."
+          "Số một chữ số phải đứng thẳng cột đơn vị mới cộng đúng.",
+          "Một vòng số còn thiếu số 1 nhớ ở hàng chục.",
+          "62 + 8 vừa tròn một chục, hàng đơn vị ra 0."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o51",
-          "b2": "o90",
-          "b3": "o92"
+          "b1": "o45",
+          "b2": "o70",
+          "b3": "o93"
         }
-      }
+      },
+      "expression": {
+        "b1": "38 + 7",
+        "b2": "62 + 8",
+        "b3": "54 + 39"
+      },
+      "objective": "cong-tru-co-nho-cong"
     },
     {
       "id": "be-va-nghe-go",
-      "title": "Con nghé nặng bao nhiêu?",
+      "title": "Chú cừu con nặng bao nhiêu?",
       "target": "toan2-cd4-b21-cao-mia",
       "kind": "riddle",
-      "question": "Tấm thẻ trong hộp đỏ đố về chú bê và chú nghé ở chuồng bò, Cáo Mía đọc to: Con bê cân nặng 47 kg. Con nghé nặng hơn con bê 18 kg. Hỏi con nghé cân nặng bao nhiêu ki-lô-gam?",
+      "question": "Tấm thẻ trong hộp đỏ đố về chú dê con và chú cừu con ở chuồng, Cáo Mía đọc to: Dê con cân nặng 36 kg. Cừu con nặng hơn dê con 15 kg. Hỏi cừu con cân nặng bao nhiêu ki-lô-gam?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-2-a"
-      ],
       "support": {
         "guide": [
-          "\"Nặng hơn\" thì lấy cân nặng con bê cộng thêm phần hơn.",
-          "Phép tính: 47 + 18."
+          "Nặng hơn thì lấy cân nặng dê con cộng với phần hơn.",
+          "Phép tính: 36 + 15."
         ],
-        "hint": "7 + 8 = 15, viết 5 nhớ 1; 4 + 1 + 1 = 6.",
+        "hint": "6 + 5 = 11, viết 1 nhớ 1; 3 + 1 + 1 = 5.",
         "answer": {
-          "text": "65 kg",
-          "explanation": "Con nghé cân nặng: 47 + 18 = 65 (kg)."
+          "text": "51 kg",
+          "explanation": "Cừu con cân nặng: 36 + 15 = 51 (kg)."
         }
       },
       "feedback": {
         "right": [
-          "Chú nghé nặng hẳn 65 ki-lô-gam, Cáo Mía chẳng dám bế thử!",
-          "Nặng hơn thì cộng thêm, {name} làm đúng bài rồi.",
-          "Từ chuồng bò, chú nghé kêu nghé ọ: đúng cân nặng của tớ đó."
+          "Năm mươi mốt ki-lô-gam, chú cừu con béo tròn như cuộn len.",
+          "Nặng hơn thì cộng, cậu đọc đề rất tinh.",
+          "Cáo Mía chấm một điểm cộng vào tấm bảng hội mùa."
         ],
         "wrong": [
-          "Con nghé nặng HƠN con bê, vậy phải cộng thêm chứ.",
-          "Kiểm tra phép cộng 47 + 18, hàng đơn vị có nhớ đấy.",
-          "Gần đúng rồi, cộng lại hàng chục nhớ thêm 1 xem."
+          "Cừu nặng hơn dê, đáp án phải lớn hơn 36 kg.",
+          "Cộng hàng đơn vị 6 + 5 và nhớ 1 sang hàng chục nhé.",
+          "Phần nặng hơn là phần cộng thêm, không phải trừ đi."
         ]
       },
       "answer": {
-        "value": 65
+        "value": 51
       },
-      "goTo": "Mang hộp đỏ về sân trước kho thóc, Cáo Mía đã đặt sẵn chiếc cân"
+      "goTo": "Mang hộp đỏ về sân trước kho thóc, Cáo Mía đã đặt sẵn chiếc cân",
+      "expression": "36 + 15",
+      "objective": "cong-tru-co-nho-bai-toan"
     },
     {
       "id": "can-con-lon-dat",
-      "title": "Cân con lợn đất",
+      "title": "Cân chú lợn con",
       "target": "toan2-cd4-b21-heo-mum",
       "kind": "riddle",
-      "question": "Heo Mũm bày một chiếc cân đĩa đang thăng bằng: một bên là con lợn, bên kia là con ngỗng 5 kg và con dê 28 kg. Con lợn cân nặng bao nhiêu ki-lô-gam?",
+      "question": "Heo Mũm bày chiếc cân đĩa đang thăng bằng: một bên là chú lợn con, bên kia là bao ngô 9 kg và bao đậu 34 kg. Chú lợn con cân nặng bao nhiêu ki-lô-gam?",
       "skill": "khoi-luong",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-3"
-      ],
       "support": {
         "guide": [
           "Cân thăng bằng thì hai bên nặng bằng nhau.",
-          "Cộng cân nặng con ngỗng và con dê."
+          "Cộng cân nặng bao ngô với bao đậu."
         ],
-        "hint": "5 + 28 = ?",
+        "hint": "9 + 34 = ?",
         "answer": {
-          "text": "33 kg",
-          "explanation": "Con lợn nặng bằng con ngỗng và con dê cộng lại: 5 + 28 = 33 (kg)."
+          "text": "43 kg",
+          "explanation": "Chú lợn con nặng bằng hai bao cộng lại: 9 + 34 = 43 (kg)."
         }
       },
       "feedback": {
         "right": [
-          "Đĩa cân đứng im phăng phắc, con lợn nặng đúng 33 ki-lô-gam!",
-          "Heo Mũm reo: hoá ra họ hàng nhà tớ nặng thế này à!",
-          "Cân thăng bằng, phép cộng cũng thăng bằng luôn."
+          "Chiếc cân đĩa nằm ngang phẳng lì, Heo Mũm thở phào buông tay.",
+          "Hai bên cân bằng nhau thì cộng hai bao lại, cậu hiểu rất nhanh.",
+          "Chú lợn con kêu éc éc, nặng 43 kg mà vẫn lanh lẹ."
         ],
         "wrong": [
-          "Hai đĩa cân bằng nhau, cộng cả ngỗng và dê nhé.",
-          "Đừng quên con ngỗng 5 ki-lô-gam đứng cạnh con dê.",
-          "Thử lại 5 + 28, hàng đơn vị là 8 + 5 đấy."
+          "Cân thăng bằng nghĩa là hai bên nặng bằng nhau.",
+          "Bên hai bao thì cộng cân nặng lại, không trừ.",
+          "Hàng đơn vị 9 + 4 vượt mười, nhớ 1 sang hàng chục nhé."
         ]
       },
       "answer": {
-        "value": 33
+        "value": 43
       },
-      "goTo": "Ra chuồng lợn, Heo Mũm đang hì hục giữ cho hai đĩa cân thăng bằng"
+      "goTo": "Ra chuồng lợn, Heo Mũm đang hì hục giữ cho hai đĩa cân thăng bằng",
+      "expression": "9 + 34",
+      "objective": "khoi-luong-dung-tich-tinh"
     },
     {
       "id": "xo-nuoc-hai-ban",
@@ -320,23 +318,23 @@
       "target": "toan2-cd4-b21-heo-mum",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Hộp quà xanh mở ra hai búp bê gỗ: bạn gấu xách hai xô nước, chàng cao bồi xách hai thùng nước. Số ? Mỗi bạn xách bao nhiêu lít nước?",
-      "template": "Bạn gấu xách hai xô 28 l và 28 l: {{b1}} l\nChàng cao bồi xách hai thùng 27 l và 27 l: {{b2}} l",
+      "prompt": "Hộp quà xanh mở ra hai tượng gỗ: chú vịt xách hai xô nước, chú ngan xách hai chậu nước. Số ? Mỗi chú xách bao nhiêu lít nước?",
+      "template": "Chú vịt xách hai xô 29 l và 29 l: {{b1}} l\nChú ngan xách hai chậu 37 l và 37 l: {{b2}} l",
       "blanks": [
         {
           "id": "b1",
           "options": [
             {
-              "id": "o55",
-              "text": "55"
-            },
-            {
-              "id": "o56",
-              "text": "56"
+              "id": "o48",
+              "text": "48"
             },
             {
               "id": "o58",
               "text": "58"
+            },
+            {
+              "id": "o59",
+              "text": "59"
             }
           ]
         },
@@ -344,68 +342,69 @@
           "id": "b2",
           "options": [
             {
-              "id": "o44",
-              "text": "44"
+              "id": "o73",
+              "text": "73"
             },
             {
-              "id": "o52",
-              "text": "52"
+              "id": "o74",
+              "text": "74"
             },
             {
-              "id": "o54",
-              "text": "54"
+              "id": "o84",
+              "text": "84"
             }
           ]
         }
       ],
       "skill": "dung-tich",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-4-a",
-        "toan2-t1-b21-luyen-tap-4-b"
-      ],
       "support": {
         "guide": [
-          "Mỗi bạn xách hai xô, cộng số lít của hai xô.",
-          "Mẫu: 26 l và 26 l là 52 l."
+          "Mỗi chú xách hai xô, cộng số lít của hai xô.",
+          "Mẫu: hai xô 26 l và 26 l là 52 l."
         ],
-        "hint": "28 + 28: 8 + 8 = 16, viết 6 nhớ 1.",
+        "hint": "29 + 29: 9 + 9 = 18, viết 8 nhớ 1.",
         "answer": {
-          "text": "Bạn gấu xách hai xô 28 l và 28 l: 56 l; Chàng cao bồi xách hai thùng 27 l và 27 l: 54 l",
-          "explanation": "Bạn gấu: 28 + 28 = 56 (l). Chàng cao bồi: 27 + 27 = 54 (l)."
+          "text": "Chú vịt xách hai xô 29 l và 29 l: 58 l; chú ngan xách hai chậu 37 l và 37 l: 74 l",
+          "explanation": "Chú vịt: 29 + 29 = 58 (l). Chú ngan: 37 + 37 = 74 (l)."
         }
       },
       "feedback": {
         "right": [
-          "Nước sóng sánh mà không đổ giọt nào, tính chuẩn quá!",
-          "Gấu với cao bồi đứng cạnh nhau so xô, cả hai đều đúng số lít.",
-          "Cáo Mía huýt sáo: hộp xanh cũng mở được rồi à?"
+          "Hai tượng gỗ xách nước ngang ngửa, Heo Mũm vỗ tay bồm bộp.",
+          "Cộng hai số giống nhau mà không nhầm, cậu giỏi ghê.",
+          "Nước trong hai xô và hai chậu đều khớp, hộp quà xanh bật mở."
         ],
         "wrong": [
-          "Mỗi bạn xách HAI xô, nhớ cộng cả hai nhé.",
-          "Hàng đơn vị 8 + 8 vượt 10 rồi, đừng quên nhớ.",
-          "Xem lại mẫu 26 l và 26 l thành 52 l nào."
+          "Mỗi chú xách hai thùng bằng nhau, cộng số lít của hai thùng.",
+          "9 + 9 vượt quá 10, viết 8 nhớ 1.",
+          "37 + 37: 7 + 7 = 14, viết 4 nhớ 1."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o56",
-          "b2": "o54"
+          "b1": "o58",
+          "b2": "o74"
         }
-      }
+      },
+      "expression": {
+        "b1": "29 + 29",
+        "b2": "37 + 37"
+      },
+      "objective": "khoi-luong-dung-tich-tinh"
     },
     {
       "id": "chuot-tui-len-day-cot",
-      "title": "Chuột túi lên dây cót",
+      "title": "Chú nai gỗ lên dây cót",
       "kind": "dialogue",
       "target": "toan2-cd4-b21-nai-loc",
       "lines": [
         {
           "speaker": "Nai Lộc",
-          "text": "Hộp vàng có con chuột túi lên dây cót! Nó rủ tớ thi nhảy xa trên hàng tảng đá giữa vườn cây, đá ghi 5, 10, 15… tới 50."
+          "text": "Hộp vàng có chú nai gỗ lên dây cót! Nó rủ tớ thi nhảy qua hàng tảng đá giữa vườn cây, đá ghi 5, 10, 15… tới 50."
         },
         {
           "speaker": "Cáo Mía",
-          "text": "Cứ mỗi tảng đá là thêm 5 điểm. Tớ cá là {name} không đoán nổi lần nhảy thứ hai đâu!"
+          "text": "Cứ mỗi tảng đá là thêm 5 điểm. Tớ cá là {name} không đoán nổi điểm lần nhảy thứ hai đâu!"
         },
         {
           "speaker": "Nai Lộc",
@@ -422,13 +421,13 @@
           "reply": "Cáo Mía: Hừm, nhảy cóc nhanh ghê, nhưng nhớ đừng đếm lố!"
         }
       ],
-      "goTo": "Chạy tới lối đá qua vườn cây, Nai Lộc đang lên dây cót cho chú chuột túi",
+      "goTo": "Chạy tới lối đá qua vườn cây, Nai Lộc đang lên dây cót cho chú nai gỗ",
       "en": {
-        "title": "Winding up the kangaroo",
-        "goTo": "Run to the stepping-stone path through the orchard, where Nai Lộc is winding up a toy kangaroo",
+        "title": "The wooden deer is wound up",
+        "goTo": "Run to the stepping-stone path through the orchard, where Nai Lộc is winding up a wooden deer",
         "lines": [
-          "The yellow box had a wind-up kangaroo! It's challenging me to a long-jump contest on the stepping stones in the orchard, marked 5, 10, 15... up to 50.",
-          "Each stone is worth 5 more points. I bet {name} can't guess the second jump!",
+          "The yellow box held a wind-up wooden deer! It dares me to a contest of leaps over the stepping stones in the orchard, marked 5, 10, 15... up to 50.",
+          "Each stone is worth 5 points. I bet {name} cannot guess the score of the second leap!",
           "Ignore Fox's teasing. {name}, do you want to count stone by stone, or count on in fives to go faster?"
         ],
         "choices": [
@@ -445,27 +444,27 @@
     },
     {
       "id": "chuot-tui-nhay-xa",
-      "title": "Chuột túi nhảy được mấy điểm?",
+      "title": "Chú nai gỗ nhảy được mấy điểm?",
       "target": "toan2-cd4-b21-nai-loc",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Hàng tảng đá ghi 5, 10, 15, 20, 25, 30, 35, 40, 45, 50. Số ? Chuột túi tham gia một cuộc thi nhảy xa. Lần thứ nhất, từ tảng đá màu đỏ, chuột túi nhảy qua 4 tảng đá và được 25 điểm (như hình vẽ). Lần thứ hai, từ tảng đá màu đỏ, chuột túi nhảy qua 6 tảng đá.",
-      "template": "a) Lần thứ hai, chuột túi được {{b1}} điểm.\nb) Cả hai lần nhảy, chuột túi được {{b2}} điểm.",
+      "prompt": "Nai Lộc bày một hàng tảng đá ghi lần lượt 5, 10, 15 và cứ thế đến 50. Số ? Chú nai gỗ thi nhảy: lần một, xuất phát từ tảng đỏ, nó vượt 7 tảng và thu 35 điểm. Lần hai, cũng xuất phát từ tảng đỏ, nó vượt 9 tảng.",
+      "template": "a) Lần thứ hai, nai gỗ được {{b1}} điểm.\nb) Cộng hai lần nhảy, nai gỗ được {{b2}} điểm.",
       "blanks": [
         {
           "id": "b1",
           "options": [
-            {
-              "id": "o25",
-              "text": "25"
-            },
-            {
-              "id": "o33",
-              "text": "33"
-            },
             {
               "id": "o35",
               "text": "35"
+            },
+            {
+              "id": "o45",
+              "text": "45"
+            },
+            {
+              "id": "o46",
+              "text": "46"
             }
           ]
         },
@@ -473,104 +472,8 @@
           "id": "b2",
           "options": [
             {
-              "id": "o60",
-              "text": "60"
-            },
-            {
-              "id": "o61",
-              "text": "61"
-            },
-            {
-              "id": "o62",
-              "text": "62"
-            }
-          ]
-        }
-      ],
-      "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-5-a",
-        "toan2-t1-b21-luyen-tap-5-b"
-      ],
-      "support": {
-        "guide": [
-          "Nhảy qua 4 tảng được 25 điểm, mỗi tảng đá thêm 5 điểm.",
-          "Cả hai lần thì cộng điểm hai lần lại."
-        ],
-        "hint": "Nhảy qua 6 tảng thì tới tảng đá ghi 35.",
-        "answer": {
-          "text": "a) Lần thứ hai, chuột túi được 35 điểm.; b) Cả hai lần nhảy, chuột túi được 60 điểm.",
-          "explanation": "Lần thứ hai chuột túi tới tảng 35 nên được 35 điểm; cả hai lần: 25 + 35 = 60 (điểm)."
-        }
-      },
-      "feedback": {
-        "right": [
-          "Boing boing! Chuột túi nhảy tới đâu {name} tính tới đó.",
-          "Sáu mươi điểm tròn trĩnh, chuột túi đòi lên bục nhận giải.",
-          "Cáo Mía thua cược, phải quét sạch sân kho thóc rồi nhé."
-        ],
-        "wrong": [
-          "Lần hai nhảy qua 6 tảng đá, đếm tới tảng thứ sáu xem.",
-          "Cả hai lần nhảy thì phải cộng điểm lần một và lần hai.",
-          "Mỗi tảng đá cách nhau 5 điểm, đếm thêm 5 thử nào."
-        ]
-      },
-      "answer": {
-        "fills": {
-          "b1": "o35",
-          "b2": "o60"
-        }
-      }
-    },
-    {
-      "id": "tinh-nhanh-quay-giai",
-      "title": "Ba phép cộng trên biển hội mùa",
-      "target": "toan2-cd4-b21-cao-mia",
-      "kind": "challenge",
-      "mechanic": "fill-blank",
-      "prompt": "Cáo Mía viết ba phép tính lên tấm biển hội mùa. Tính.",
-      "template": "41 + 19 = {{b1}}\n67 + 3 = {{b2}}\n76 + 14 = {{b3}}",
-      "blanks": [
-        {
-          "id": "b1",
-          "options": [
-            {
-              "id": "o58",
-              "text": "58"
-            },
-            {
-              "id": "o59",
-              "text": "59"
-            },
-            {
-              "id": "o60",
-              "text": "60"
-            }
-          ]
-        },
-        {
-          "id": "b2",
-          "options": [
-            {
-              "id": "o60",
-              "text": "60"
-            },
-            {
-              "id": "o70",
-              "text": "70"
-            },
-            {
-              "id": "o80",
-              "text": "80"
-            }
-          ]
-        },
-        {
-          "id": "b3",
-          "options": [
-            {
-              "id": "o9",
-              "text": "9"
+              "id": "o79",
+              "text": "79"
             },
             {
               "id": "o80",
@@ -584,42 +487,139 @@
         }
       ],
       "skill": "phep-cong",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-2-1-a",
-        "toan2-t1-b21-luyen-tap-2-1-b",
-        "toan2-t1-b21-luyen-tap-2-1-c"
+      "support": {
+        "guide": [
+          "Mỗi tảng đá thêm 5 điểm: nhảy qua 7 tảng được 35 điểm.",
+          "Cả hai lần thì cộng điểm hai lần lại."
+        ],
+        "hint": "Nhảy qua 9 tảng thì tới tảng đá ghi 45.",
+        "answer": {
+          "text": "a) Lần thứ hai nai gỗ được 45 điểm; b) Cộng hai lần được 80 điểm",
+          "explanation": "Lần thứ hai nai gỗ tới tảng 45 nên được 45 điểm; cả hai lần: 35 + 45 = 80 (điểm)."
+        }
+      },
+      "feedback": {
+        "right": [
+          "Chú nai gỗ vọt qua chín tảng đá, tiếng cót kêu lách cách vui tai.",
+          "Đếm cách 5 rất nhịp nhàng, cậu và Nai Lộc bắt chung một nhịp.",
+          "Tám mươi điểm cho hai lần nhảy, Cáo Mía ghi vào sổ không dám chê."
+        ],
+        "wrong": [
+          "Mỗi tảng đá thêm 5 điểm, đếm tảng thứ chín xem tới số nào.",
+          "Cả hai lần thì cộng điểm lại, không chỉ lấy một lần.",
+          "35 + 45: 5 + 5 = 10, viết 0 nhớ 1."
+        ]
+      },
+      "answer": {
+        "fills": {
+          "b1": "o45",
+          "b2": "o80"
+        }
+      },
+      "expression": {
+        "b2": "35 + 45"
+      },
+      "objective": "cong-tru-co-nho-bai-toan"
+    },
+    {
+      "id": "tinh-nhanh-quay-giai",
+      "title": "Ba phép cộng trên biển hội mùa",
+      "target": "toan2-cd4-b21-cao-mia",
+      "kind": "challenge",
+      "mechanic": "fill-blank",
+      "prompt": "Cáo Mía viết ba phép tính lên tấm biển hội mùa. Tính.",
+      "template": "34 + 26 = {{b1}}\n85 + 5 = {{b2}}\n47 + 33 = {{b3}}",
+      "blanks": [
+        {
+          "id": "b1",
+          "options": [
+            {
+              "id": "o50",
+              "text": "50"
+            },
+            {
+              "id": "o60",
+              "text": "60"
+            },
+            {
+              "id": "o61",
+              "text": "61"
+            }
+          ]
+        },
+        {
+          "id": "b2",
+          "options": [
+            {
+              "id": "o89",
+              "text": "89"
+            },
+            {
+              "id": "o90",
+              "text": "90"
+            },
+            {
+              "id": "o100",
+              "text": "100"
+            }
+          ]
+        },
+        {
+          "id": "b3",
+          "options": [
+            {
+              "id": "o80",
+              "text": "80"
+            },
+            {
+              "id": "o81",
+              "text": "81"
+            },
+            {
+              "id": "o90",
+              "text": "90"
+            }
+          ]
+        }
       ],
+      "skill": "phep-cong",
       "support": {
         "guide": [
           "Cộng hàng đơn vị trước, được 10 thì viết 0 nhớ 1.",
           "Cả ba phép tính đều ra số tròn chục."
         ],
-        "hint": "1 + 9 = 10, viết 0 nhớ 1 sang hàng chục.",
+        "hint": "4 + 6 = 10, viết 0 nhớ 1 sang hàng chục.",
         "answer": {
-          "text": "41 + 19 = 60; 67 + 3 = 70; 76 + 14 = 90",
-          "explanation": "41 + 19 = 60; 67 + 3 = 70; 76 + 14 = 90."
+          "text": "34 + 26 = 60; 85 + 5 = 90; 47 + 33 = 80",
+          "explanation": "34 + 26 = 60; 85 + 5 = 90; 47 + 33 = 80."
         }
       },
       "feedback": {
         "right": [
-          "Ba số tròn chục xếp hàng trên biển, đẹp như tranh.",
-          "Cáo Mía lẩm bẩm: sao cậu tính nhanh hơn tớ viết thế?",
-          "Biển hội mùa sáng bừng đèn nhấp nháy!"
+          "Ba phép cộng tròn chục, Cáo Mía chấm ba chấm xanh lên tấm biển.",
+          "Cậu nhìn ra mẹo số tròn chục nhanh hơn cả tiếng loa hội mùa.",
+          "Tấm biển lung linh dưới ngọn cờ, ai đi ngang cũng ngó đọc."
         ],
         "wrong": [
-          "Hàng đơn vị cộng ra 10 thì viết 0 và nhớ 1 nhé.",
-          "Kết quả cả ba phép đều tròn chục, xem lại ô đang lệch.",
-          "Nhớ 1 rồi thì hàng chục phải tăng thêm 1 đấy."
+          "Cả ba phép đều ra số tròn chục, hàng đơn vị là 0.",
+          "Hàng đơn vị đủ mười rồi thì nhớ 1 sang hàng chục.",
+          "47 + 33: 7 + 3 = 10, nhớ 1; 4 + 3 + 1 = 8."
         ]
       },
       "answer": {
         "fills": {
           "b1": "o60",
-          "b2": "o70",
-          "b3": "o90"
+          "b2": "o90",
+          "b3": "o80"
         }
       },
-      "goTo": "Về sân trước kho thóc, Cáo Mía đang nắn nót viết phép tính lên tấm biển"
+      "goTo": "Về sân trước kho thóc, Cáo Mía đang nắn nót viết phép tính lên tấm biển",
+      "expression": {
+        "b1": "34 + 26",
+        "b2": "85 + 5",
+        "b3": "47 + 33"
+      },
+      "objective": "cong-tru-co-nho-cong"
     },
     {
       "id": "duong-bay-dai-nhat",
@@ -627,91 +627,88 @@
       "target": "toan2-cd4-b21-cao-mia",
       "kind": "challenge",
       "mechanic": "multi-select",
-      "prompt": "Ba chiếc máy bay côn trùng bằng gỗ thi bay: ong bay 23 cm đến bông hoa đỏ rồi 38 cm đến bông hoa vàng; chuồn chuồn bay 39 cm đến hàng rào rồi 24 cm đến ao; châu chấu bay 51 cm đến khóm lúa. Đường bay của bạn nào dài nhất? Chọn bạn đó.",
+      "prompt": "Ba chú côn trùng gỗ thi bay: ong bay 42 cm đến vườn cà rồi 29 cm đến chuồng gà; bướm bay 38 cm đến bông hoa rồi 35 cm đến rặng chuối; chuồn chuồn bay thẳng một mạch 68 cm đến ao. Đường bay của bạn nào dài nhất? Chọn bạn đó.",
       "choices": [
         {
           "id": "ong",
           "text": "ong"
         },
         {
-          "id": "chuon-chuon",
-          "text": "chuồn chuồn"
+          "id": "buom",
+          "text": "bướm"
         },
         {
-          "id": "chau-chau",
-          "text": "châu chấu"
+          "id": "chuon-chuon",
+          "text": "chuồn chuồn"
         }
       ],
       "skill": "so-sanh-so",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-2-2"
-      ],
       "support": {
         "guide": [
-          "Cộng hai đoạn bay của ong, rồi của chuồn chuồn.",
-          "So sánh ba độ dài với nhau."
+          "Cộng hai đoạn bay của ong, rồi của bướm.",
+          "So ba độ dài với nhau."
         ],
-        "hint": "Ong: 23 + 38; chuồn chuồn: 39 + 24; châu chấu: 51.",
+        "hint": "Ong: 42 + 29; bướm: 38 + 35; chuồn chuồn: 68.",
         "answer": {
-          "text": "chuồn chuồn (63 cm)",
-          "explanation": "Ong bay 61 cm, chuồn chuồn bay 63 cm, châu chấu bay 51 cm; 63 lớn nhất nên đường bay của chuồn chuồn dài nhất."
+          "text": "bướm (73 cm)",
+          "explanation": "Ong bay 71 cm, bướm bay 73 cm, chuồn chuồn bay 68 cm; 73 lớn nhất nên đường bay của bướm dài nhất."
         }
       },
       "feedback": {
         "right": [
-          "Vù vù! Chuồn chuồn gỗ nhận cờ quán quân đường dài.",
-          "Hơn nhau có 2 xăng-ti-mét mà cậu vẫn phân biệt được, tinh thật!",
-          "Bác thợ Tùng treo huy chương lên cánh chuồn chuồn rồi."
+          "Bướm bay vòng qua bông hoa nên dài nhất, cậu chọn đúng.",
+          "Cộng hai đoạn rồi mới so, cậu làm đúng trình tự.",
+          "Ba chú côn trùng gỗ cùng nghiêng cánh chào cậu."
         ],
         "wrong": [
-          "Ong và chuồn chuồn bay hai chặng, cộng cả hai chặng đã.",
-          "Châu chấu bay một lèo 51 cm thôi, so lại xem.",
-          "61 và 63, số nào lớn hơn nhỉ?"
+          "Phải cộng hai đoạn bay của từng bạn trước rồi mới so được.",
+          "Chuồn chuồn chỉ bay một đoạn, hãy so với tổng của hai bạn kia.",
+          "Hai tổng 71 và 73 khá sát nhau, tính cẩn thận nhé."
         ]
       },
       "answer": {
         "choices": [
-          "chuon-chuon"
+          "buom"
         ]
-      }
+      },
+      "objective": "cong-tru-co-nho-hai-dau"
     },
     {
       "id": "bi-cua-nam-va-robot",
-      "title": "Hũ bi trao giải",
+      "title": "Chồng ván trao giải",
       "target": "toan2-cd4-b21-bac-tho-tung",
       "kind": "riddle",
-      "question": "Giải thưởng tiếp theo là một hũ bi thật to. Nam có 38 viên bi. Rô-bốt có 34 viên bi. Hỏi Nam và Rô-bốt có tất cả bao nhiêu viên bi?",
+      "question": "Giải thưởng tiếp theo là một chồng ván thông thơm lừng. Buổi sáng bác Tùng bào xong 47 tấm ván. Buổi chiều bác bào xong 36 tấm ván. Hỏi cả ngày bác Tùng bào xong bao nhiêu tấm ván?",
       "skill": "bai-toan-loi-van",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-2-3"
-      ],
       "support": {
         "guide": [
-          "\"Có tất cả\" thì làm phép cộng.",
-          "Phép tính: 38 + 34."
+          "Cả ngày là gộp buổi sáng với buổi chiều.",
+          "Phép tính: 47 + 36."
         ],
-        "hint": "8 + 4 = 12, viết 2 nhớ 1.",
+        "hint": "7 + 6 = 13, viết 3 nhớ 1.",
         "answer": {
-          "text": "72 viên bi",
-          "explanation": "Nam và Rô-bốt có tất cả: 38 + 34 = 72 (viên bi)."
+          "text": "83 tấm ván",
+          "explanation": "Cả ngày bác Tùng bào xong: 47 + 36 = 83 (tấm ván)."
         }
       },
       "feedback": {
         "right": [
-          "Bi lăn lóc cóc đầy hũ, đếm đủ 72 viên!",
-          "Nam và Rô-bốt cùng reo: đúng số bi của tụi tớ!",
-          "Gộp lại thì cộng, {name} nắm bài chắc như đinh đóng cột."
+          "Tám mươi ba tấm ván xếp thành chồng cao, mùi thông thơm cả xưởng.",
+          "Gộp hai buổi lại bằng phép cộng, cậu làm không do dự.",
+          "Bác thợ Tùng vỗ vai cậu, mùn cưa bay lả tả."
         ],
         "wrong": [
-          "Có tất cả nghĩa là gộp hai phần lại với nhau.",
-          "Phép cộng 38 + 34 có nhớ ở hàng đơn vị đấy.",
-          "Hàng chục nhớ thêm 1: 3 + 3 + 1 bằng mấy?"
+          "Cả ngày thì nhiều hơn mỗi buổi, đáp án phải lớn hơn 47.",
+          "Hàng đơn vị 7 + 6 là 13, nhớ 1 sang hàng chục.",
+          "Hai buổi gộp lại bằng phép cộng, không phải phép trừ."
         ]
       },
       "answer": {
-        "value": 72
+        "value": 83
       },
-      "goTo": "Sang bàn bào gỗ ở xưởng nông cụ, Bác thợ Tùng bê ra một hũ bi thật to"
+      "goTo": "Sang bàn bào gỗ ở xưởng nông cụ, Bác thợ Tùng khệ nệ khiêng ra một chồng ván thông",
+      "expression": "47 + 36",
+      "objective": "cong-tru-co-nho-bai-toan"
     },
     {
       "id": "muc-nuoc-ba-be",
@@ -720,8 +717,8 @@
       "target": "toan2-cd4-be-ca",
       "kind": "challenge",
       "mechanic": "fill-blank",
-      "prompt": "Thước dán trên thành bể cho thấy: mực nước bể A ở vạch 10 cm, bể B ở vạch 16 cm, bể C ở vạch 25 cm. Ba bể cá A, B, C có mực nước khác nhau như hình vẽ dưới đây:",
-      "template": "a) Mực nước ở bể B cao hơn mực nước ở bể A bao nhiêu xăng-ti-mét? {{b1}} cm\nb) Mực nước ở bể C cao hơn mực nước ở bể A bao nhiêu xăng-ti-mét? {{b2}} cm\nc) Sau khi bạn Nam bỏ thêm một số hòn đá cảnh vào bể B thì mực nước ở bể B tăng thêm 5 cm. Hỏi lúc này mực nước ở bể B cao hơn mực nước ở bể A bao nhiêu xăng-ti-mét? {{b3}} cm",
+      "prompt": "Ba bể ươm cá A, B, C có thước dán trên thành bể: mực nước bể A ở vạch 12 cm, bể B ở vạch 19 cm, bể C ở vạch 31 cm.",
+      "template": "a) Nước bể B cao hơn nước bể A mấy xăng-ti-mét? {{b1}} cm\nb) Nước bể C cao hơn nước bể A mấy xăng-ti-mét? {{b2}} cm\nc) Nai Lộc thả thêm sỏi cảnh vào bể B làm nước dâng thêm 6 cm. Lúc này nước bể B cao hơn nước bể A mấy xăng-ti-mét? {{b3}} cm",
       "blanks": [
         {
           "id": "b1",
@@ -735,8 +732,8 @@
               "text": "7"
             },
             {
-              "id": "o16",
-              "text": "16"
+              "id": "o8",
+              "text": "8"
             }
           ]
         },
@@ -744,16 +741,16 @@
           "id": "b2",
           "options": [
             {
-              "id": "o15",
-              "text": "15"
+              "id": "o18",
+              "text": "18"
             },
             {
-              "id": "o17",
-              "text": "17"
+              "id": "o19",
+              "text": "19"
             },
             {
-              "id": "o25",
-              "text": "25"
+              "id": "o29",
+              "text": "29"
             }
           ]
         },
@@ -761,68 +758,79 @@
           "id": "b3",
           "options": [
             {
-              "id": "o11",
-              "text": "11"
+              "id": "o13",
+              "text": "13"
             },
             {
-              "id": "o12",
-              "text": "12"
+              "id": "o14",
+              "text": "14"
             },
             {
-              "id": "o21",
-              "text": "21"
+              "id": "o23",
+              "text": "23"
             }
           ]
         }
       ],
       "skill": "hon-kem",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-2-4-a",
-        "toan2-t1-b21-luyen-tap-2-4-b",
-        "toan2-t1-b21-luyen-tap-2-4-c"
-      ],
       "support": {
         "guide": [
           "Cao hơn bao nhiêu thì lấy vạch cao trừ vạch thấp.",
-          "Câu c: bể B dâng thêm 5 cm, cộng thêm 5 vào phần cao hơn."
+          "Câu c: nước bể B dâng thêm 6 cm, cộng 6 vào phần cao hơn lúc nãy."
         ],
-        "hint": "Bể B cao hơn bể A 6 cm, thêm 5 cm nữa.",
+        "hint": "Bể B cao hơn bể A 7 cm, rồi dâng thêm 6 cm nữa.",
         "answer": {
-          "text": "a) Mực nước ở bể B cao hơn mực nước ở bể A bao nhiêu xăng-ti-mét? 6 cm; b) Mực nước ở bể C cao hơn mực nước ở bể A bao nhiêu xăng-ti-mét? 15 cm; c) Sau khi bạn Nam bỏ thêm một số hòn đá cảnh vào bể B thì mực nước ở bể B tăng thêm 5 cm. Hỏi lúc này mực nước ở bể B cao hơn mực nước ở bể A bao nhiêu xăng-ti-mét? 11 cm",
-          "explanation": "B cao hơn A: 16 – 10 = 6 (cm); C cao hơn A: 25 – 10 = 15 (cm); sau khi thả đá: 6 + 5 = 11 (cm)."
+          "text": "a) 7 cm; b) 19 cm; c) 13 cm",
+          "explanation": "B cao hơn A: 19 - 12 = 7 (cm); C cao hơn A: 31 - 12 = 19 (cm); sau khi thả sỏi: 7 + 6 = 13 (cm)."
         }
       },
       "feedback": {
         "right": [
-          "Tõm! Hòn đá cảnh rơi xuống, mực nước dâng đúng như cậu tính.",
-          "Cá vàng quẫy đuôi tặng {name} một vòng bong bóng.",
-          "Ba bể ba mực nước, không lẫn bể nào luôn."
+          "Nước ba bể xếp bậc thang gọn gàng, đàn cá con bơi tung tăng.",
+          "Trừ hai vạch để tìm phần cao hơn, cậu dùng thước nhìn rất tinh.",
+          "Hòn sỏi cuối cùng rơi xuống, nước dâng đúng 6 cm như cậu tính."
         ],
         "wrong": [
-          "So với bể A thì lấy vạch của bể kia trừ đi 10 nhé.",
-          "Câu c: nước bể B dâng thêm 5 cm, cộng vào phần đã cao hơn.",
-          "Đọc lại vạch thước của bể C xem ở số mấy."
+          "Muốn biết cao hơn bao nhiêu thì lấy vạch lớn trừ vạch bé.",
+          "Câu c nhớ cộng thêm phần nước dâng 6 cm.",
+          "Vạch 31 trừ vạch 12, hàng đơn vị phải mượn 1 chục đấy."
         ]
       },
       "answer": {
         "fills": {
-          "b1": "o6",
-          "b2": "o15",
-          "b3": "o11"
+          "b1": "o7",
+          "b2": "o19",
+          "b3": "o13"
         }
-      }
+      },
+      "expression": {
+        "b1": "19 - 12",
+        "b2": "31 - 12",
+        "b3": "19 - 12 + 6"
+      },
+      "objective": "bai-toan-co-loi-van-hon-kem"
     },
     {
       "id": "do-be-ca-o-nha",
       "title": "Phiếu đo mực nước",
       "kind": "worksheet",
       "target": "toan2-cd4-be-ca",
-      "lessonId": "toan2-t1-b21",
-      "text": "Về nhà, cùng bố mẹ lấy thước đo mực nước ba bể cá trên phiếu Bài 21 rồi ghi số xăng-ti-mét vào ô trống.",
-      "curriculumRef": [
-        "toan2-t1-b21-luyen-tap-2-4-a",
-        "toan2-t1-b21-luyen-tap-2-4-b"
-      ]
+      "text": "Về nhà, cùng người nhà rót nước vào ba chai khác nhau, dùng thước đo mực nước mỗi chai rồi ghi số xăng-ti-mét vào phiếu.",
+      "sheet": {
+        "title": "Phiếu đo nước ở nhà",
+        "blocks": [
+          {
+            "kind": "activity",
+            "prompt": "Rót nước vào ba chai hoặc ba cốc cao khác nhau, đo mực nước của từng chai rồi ghi số xăng-ti-mét. Sau đó trả lời: chai nào nước cao nhất, và nước cao nhất hơn nước thấp nhất mấy xăng-ti-mét?",
+            "media": [
+              "thước kẻ",
+              "ba chai hoặc cốc cao",
+              "nước"
+            ]
+          }
+        ]
+      },
+      "objective": "khoi-luong-dung-tich-thuc-hanh"
     },
     {
       "id": "cup-mo-qua",
