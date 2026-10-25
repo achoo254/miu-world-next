@@ -17,6 +17,10 @@
 - Xóa trang nghiệm thu cũ đã commit `plans/dattqh/260930-0846-sgk-lop2-game-content/nghiem-thu/` (chứa chữ SGK trong repo công khai) cùng ảnh của nó.
 - Chữ "lớp" còn ở tên mục tiêu trên map (`content/world/targets.json`: "Bảng gỗ lớp Hai", "Cửa sổ lớp 2A", "Thời khóa biểu lớp 2B"; đã nướng vào `assets/generated/world/*/entities.json`, phải sinh lại map, `world:walk`, `assets:manifest`), lời NPC (`content/npcs/*.json`) và vài quest ngoài sách (`yarn-*`, `ward-*`, `with-thoi-khoa-bieu-lop`, `vuot-ai-truong-hoc`). Sau đó mở rộng `no-book-or-grade-wording.ts` sang npcs, targets và toàn bộ chữ quest.
 - `evaluateExpression` chỉ có cộng, trừ: nội dung Toán lớp 3 sẽ cần nhân, chia (ngoài phạm vi plan, ghi để plan sau).
+- Tên mục tiêu trên map còn theo bài cũ (chỉ là tên hiển thị, id giữ): `toan2-cd6-buu-anh-*`, `toan2-cd6-to-lich-thang-*`, `tv2-t01-hoc-cay`, `tv2-t01-bang-chu-cai`, `tv2-t03-canh-cay-kho`, `tv2-t03-khom-co-dai`, `tv2-t12-banh-xe-le-go`. Quest `places` đã đổi ở nhiều quest nhưng map chưa sinh lại.
+- Đặt mục tiêu quest (`tools/world/chapters/place-quest-targets.ts`) dùng một dòng số ngẫu nhiên chung cho mọi quest của map: sửa tên chỗ của một quest làm dời cả map (25/10 đổi "lớp 2A" làm dời 655 dòng trường học). Tách dòng số theo từng quest trước khi sinh lại các map, rồi chạy audit cảnh vật.
+- `assets:fetch` toàn bộ đỏ trên máy mới: zip Kenney City Kit Roads trên kenney.nl đổi hash (pack phải duyệt lại, `assets-pipeline.md` mục 5). Fetch không lọc được theo pack.
+- Kênh nước trường học: người chơi rơi xuống (bờ cao 4 khối) chỉ ra được bằng nút "Quay lại"; cân nhắc bậc lên hoặc lan can trong generator.
 - nginx: `/bai/<slug>/index.html` (gõ thẳng file) chưa có trong bảng 301 (ít gặp).
 
 ## Kiểm tra
