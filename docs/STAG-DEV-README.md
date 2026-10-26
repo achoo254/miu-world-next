@@ -26,7 +26,7 @@ Nằm trong iCloud của người phụ trách, trỏ tới bằng biến đặt
 | Biến / tệp | Đường dẫn (macOS) | Dùng cho |
 | --- | --- | --- |
 | `ALL_IN_ONE_STAGING_DEV` | `$HOME/Library/Mobile Documents/com~apple~CloudDocs/cong-viec/Cong viec/ENV production/all-in-one-staging-dev.json` | SSH vào .65 |
-| `access-tokens.json` | cùng thư mục | Secret ứng dụng (Google, Postgres, Cloudflare, Google Analytics); bảng entry ở [`deployment-guide.md`](deployment-guide.md) §2.2 |
+| `access-tokens.json` | cùng thư mục | Secret ứng dụng (client `miu-web` của auth-next, Postgres, Cloudflare, TURN, Google Analytics); bảng entry ở [`deployment-guide.md`](deployment-guide.md) §2.2 |
 | `ALL_IN_ONE_PROD` | `all-in-one-production.json`, cùng thư mục | **Không dùng** cho Miu (của hệ khác) |
 
 ⚠️ Máy production của Miu (.65) nằm trong tệp *staging-dev*, dưới tên "SERVER STAGING .65", vì nó là máy staging của các dự án khác.

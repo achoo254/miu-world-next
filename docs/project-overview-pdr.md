@@ -16,7 +16,7 @@ Cách làm: single-player vertical slice trước (Home Base + Khu rừng bí m�
 - Không dùng Kim cương ở MVP; ô Kim cương ẩn trên HUD (§15 #6).
 - Không chat chữ tự do: chữ trên dây chỉ là câu có sẵn và emote. Nói chuyện bằng giọng chỉ với bạn bè và tổ đội, WebRTC nối thẳng chỉ cho âm thanh, không ghi, không lưu (§15 #48); trạng thái game vẫn đi qua WebSocket của server.
 - Không dùng tên, texture, asset của Minecraft.
-- Chưa có kiểm duyệt và hàng đợi xử lý báo cáo (người sở hữu hoãn; báo cáo và chặn đã có), không chống cheat (§15 #53).
+- Không chống cheat (§15 #53).
 
 ## Ràng buộc không suy ra được từ code
 
@@ -47,7 +47,7 @@ Cách làm: single-player vertical slice trước (Home Base + Khu rừng bí m�
 
 ## Luồng tài khoản (§9, §11)
 
-Đăng nhập Google → đồng ý chính sách (phiên bản hiện hành ở `content/legal/consent-vi.json`) → server tạo **người chơi chính** của tài khoản (tên đầu tiên còn trống trong danh sách) và chọn sẵn nó → tạo nhân vật → Home. Mỗi phiên mới chơi bằng người chơi chính; không có màn "Ai đang chơi?" trừ khi chủ tài khoản thêm **người chơi phụ** cho máy dùng chung (tối đa 3 người chơi; tên chọn từ danh sách; không tên thật, tuổi, trường, lớp). Mọi dữ liệu game (tiến độ quest, thưởng, túi đồ, kỹ năng) gắn với từng người chơi. Mục Quản lý tài khoản (thêm, sửa, xóa người chơi phụ; tải dữ liệu; xóa tài khoản) mở thẳng; PIN là tùy chọn, đặt, đổi hoặc gỡ từ chính mục đó. Người chơi chính chỉ xóa cùng tài khoản; xóa người chơi phụ là xóa hẳn mọi dữ liệu của người chơi đó (05/10/2026).
+Đăng nhập bằng tài khoản hoandat.com (auth-next; Google, GitHub hoặc Apple) → đồng ý chính sách (phiên bản hiện hành ở `content/legal/consent-vi.json`) → server tạo **người chơi chính** của tài khoản (tên đầu tiên còn trống trong danh sách) và chọn sẵn nó → tạo nhân vật → Home. Mỗi phiên mới chơi bằng người chơi chính; không có màn "Ai đang chơi?" trừ khi chủ tài khoản thêm **người chơi phụ** cho máy dùng chung (tối đa 3 người chơi; tên chọn từ danh sách; không tên thật, tuổi, trường, lớp). Mọi dữ liệu game (tiến độ quest, thưởng, túi đồ, kỹ năng) gắn với từng người chơi. Mục Quản lý tài khoản (thêm, sửa, xóa người chơi phụ; tải dữ liệu; xóa tài khoản) mở thẳng; PIN là tùy chọn, đặt, đổi hoặc gỡ từ chính mục đó. Người chơi chính chỉ xóa cùng tài khoản; xóa người chơi phụ là xóa hẳn mọi dữ liệu của người chơi đó (05/10/2026).
 
 ## Quyết định còn mở
 

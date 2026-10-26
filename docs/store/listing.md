@@ -1,10 +1,10 @@
 # Hồ sơ store của Miu World (App Store, Google Play)
 
-Bản nháp ngày 23/10/2026, dựng từ code và chính sách đang chạy (`content/legal/privacy-vi.json` v5, `apps/server`, `apps/mobile`). Người sở hữu duyệt trước khi nhập vào App Store Connect và Play Console. Ảnh và cách chụp lại: [`README.md`](README.md).
+Bản nháp ngày 23/10/2026, dựng từ code và chính sách đang chạy (`content/legal/privacy-vi.json`, `apps/server`, `apps/mobile`). Người sở hữu duyệt trước khi nhập vào App Store Connect và Play Console. Ảnh và cách chụp lại: [`README.md`](README.md).
 
 ## ⛔ Chặn phát hành
 
-Bốn vấn đề tìm thấy lúc soạn hồ sơ đã sửa trong code ngày 23/10/2026 (quyết định của Jev, người sở hữu ủy quyền); chỉ có hiệu lực sau khi **deploy production** (cần hỏi người sở hữu trước, có migration `0025_player-controls.sql`) và bản app mới. Còn lại:
+Bốn vấn đề tìm thấy lúc soạn hồ sơ đã sửa trong code ngày 23/10/2026 (quyết định của Jev, người sở hữu ủy quyền) và đã lên production (lời đồng ý v6 đang chạy); app cần bản build mới có các sửa này. Còn lại:
 
 | # | Vấn đề | Trạng thái |
 | --- | --- | --- |
@@ -14,7 +14,7 @@ Bốn vấn đề tìm thấy lúc soạn hồ sơ đã sửa trong code ngày 2
 | B4 | Play Families: lời nhắc an toàn trước khi trẻ trao đổi; người lớn quản lý tính năng xã hội | **Đã sửa**: lời nhắc "Nói chuyện an toàn" một lần mỗi người chơi trước lần trò chuyện bằng giọng đầu tiên (lưu ở máy chủ); công tắc "Chơi online" và "Nói chuyện bằng giọng" cho từng người chơi trong Quản lý tài khoản, chỉ đổi được khi tài khoản có mã PIN; máy chủ thi hành ở mọi đường (vé online, kết bạn, link mời, giọng nói, máy chủ chuyển tiếp giọng nói). Lời đồng ý lên v6 nói rõ việc này; tài khoản đã đồng ý v5 được hỏi lại một lần. |
 | B5 | Điều kiện sẵn có của plan (pha 7): kiểm duyệt chạy trên production, pháp lý Việt Nam (game online, Nghị định 13/2023) đã xác nhận hoặc loại Việt Nam khỏi danh sách nước, đo máy thật đạt | **Còn chặn** gửi duyệt công khai (`plans/dattqh/261007-2038-mobile-app-ios-android/phase-07-store-internal-release.md`). Bản thử nội bộ (TestFlight, Play internal) không bị chặn bởi B5. |
 
-Việc của người sở hữu, không chặn kỹ thuật nhưng cần trước khi gửi: URL hỗ trợ riêng (xem mục URL); ảnh nổi bật Play 1024 × 500 (chưa có; các ảnh `assets/generated/channel-kit/` là cỡ YouTube/Facebook); trả lời "Export compliance" (chỉ dùng HTTPS chuẩn: exempt, có thể thêm `ITSAppUsesNonExemptEncryption = NO` vào `Info.plist` để khỏi hỏi mỗi bản); kiểm "Privacy Report" của bản archive (app không có `PrivacyInfo.xcprivacy` riêng; các gói Capacitor tự mang manifest của chúng); điền mật khẩu người duyệt từ tệp credential (mục `apple-app-review-demo`), không ghi vào repo.
+Việc của người sở hữu, không chặn kỹ thuật nhưng cần trước khi gửi: URL hỗ trợ riêng (xem mục URL); ảnh nổi bật Play 1024 × 500 (chưa có); "Export compliance" (chỉ dùng HTTPS chuẩn: exempt; `Info.plist` đã khai `ITSAppUsesNonExemptEncryption = NO`); kiểm "Privacy Report" của bản archive (app không có `PrivacyInfo.xcprivacy` riêng; các gói Capacitor tự mang manifest của chúng); điền mật khẩu người duyệt từ tệp credential (mục `apple-app-review-demo`), không ghi vào repo.
 
 ## Định vị và danh mục
 

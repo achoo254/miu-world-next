@@ -65,7 +65,7 @@ trình cho user: phương án Jev nghiêng về + xác suất từng phương á
 
 ## 1. Luật cứng (vi phạm = sự cố thật)
 
-1. **Mặc định CHỈ ĐỌC.** `deploy.sh setup|fonts|timetable|release`, migration, `systemctl restart`,
+1. **Mặc định CHỈ ĐỌC.** `deploy.sh setup|timetable|turn|signin|google-cleanup|analytics|release`, migration, `systemctl restart`,
    sửa nginx, sửa `/etc/miu/production.env`, ghi Postgres ⟹ chỉ làm khi user yêu cầu **tường minh cho
    chính lần đó** (`deployment-guide.md` §1). Server tự chạy migration khi khởi động, nên **mọi restart
    đều có thể là migration**. Không tự đề xuất deploy prod vào "việc còn lại".
@@ -97,13 +97,13 @@ trình cho user: phương án Jev nghiêng về + xác suất từng phương á
 | Lệnh SSH vào .65 | `STAG-DEV-README.md` §4 | hàm `prod()` trong `tools/deploy/production/deploy.sh` là mẫu chuẩn |
 | Đường dẫn release, env, backup, log | `STAG-DEV-README.md` §5 | revision ở `/opt/miu/current/apps/server/dist/server/REVISION` |
 | Lệnh kiểm trạng thái, health, log | `STAG-DEV-README.md` §6 | health trên máy: `127.0.0.1:8797/api/health` |
-| Secret ứng dụng (Postgres, Google OAuth) | `deployment-guide.md` §2.2, §7 | `setup` ghi `/etc/miu/production.env`; bản gốc ở `access-tokens.json` |
+| Secret ứng dụng (Postgres, client `miu-web` của auth-next, TURN, GA4) | `deployment-guide.md` §2.2, §5.1, §7 | `setup` ghi `/etc/miu/production.env`; bản gốc ở `access-tokens.json` |
 | Đường vào, Cloudflare, DNS, xoá cache | `deployment-guide.md` §3, §4 | Cloudflare cắt request sau 100 s |
-| Deploy, font, thời khóa biểu mặc định | `deployment-guide.md` §5, §7 | build `build:release`, không có trang review |
+| Deploy, thời khóa biểu mặc định | `deployment-guide.md` §5, §7 | build `build:release`, không có trang review |
 | Rollback code / khôi phục database | `deployment-guide.md` §5 (Rollback) | backup `before-<id>.dump`, `daily-<ngày>.dump` |
 | Giữ dữ liệu 14 ngày | `deployment-guide.md` §7 bảng giữ dữ liệu | backup, journal, logrotate nginx |
-| Bẫy đã đo (migration tự chạy, bundle sâu, OAuth) | `deployment-guide.md` §6 | |
-| Việc còn lại của người (OAuth consent, pháp lý) | `deployment-guide.md` §7 cuối | không tự làm |
+| Bẫy đã đo (migration tự chạy, bundle sâu, đăng nhập qua auth-next) | `deployment-guide.md` §6 | |
+| Việc còn lại của người (dọn Google OAuth cũ, pháp lý) | `deployment-guide.md` §7 cuối | không tự làm |
 
 ## 3. Đường đọc ưu tiên — rẻ nhất trước
 
