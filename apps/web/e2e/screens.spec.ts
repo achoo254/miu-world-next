@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { expect, test, type Browser, type BrowserContext, type Page } from '@playwright/test';
 import { layoutFacts, type LayoutFacts } from './layout';
 import { interactByKey, notebookPage, openHudMenu, playAt, playUntil, tapLabel } from './quest-api';
-import { gameSettled, newPlayer, newScreen, type ScreenSize } from './screen-session';
+import { gameSettled, imagesDrawn, newPlayer, newScreen, type ScreenSize } from './screen-session';
 import { readStats, waitReady } from './stats';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
@@ -119,6 +119,8 @@ for (const viewport of VIEWPORTS) {
       const shot = `${size}/${screen}.png`;
       try {
         await open();
+        // Whatever the screen: no picture still on its way (an empty box where an emoji goes).
+        await imagesDrawn(page.locator('body'));
         await page.screenshot({ path: path.join(dir, `${screen}.png`), animations: 'disabled' });
         shots.push({ shot, screen, status: 'ok', facts: await layoutFacts(page) });
       } catch (err) {
@@ -140,7 +142,7 @@ for (const viewport of VIEWPORTS) {
       await expect(outPage.getByRole('heading', { level: 1, name: /Phiêu lưu trong thế giới khối/ })).toBeVisible();
       await expect(outPage.locator('[data-id="landing-play"]')).toBeVisible();
       // The island picture is drawn before the screen is pictured.
-      await expect.poll(() => outPage.locator('.landing-image').evaluate((img) => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+      await imagesDrawn(outPage.locator('.landing-image'));
     });
     await capture(outPage, '21-lesson-page', async () => {
       await outPage.goto('/hoc/toan/so-den-100/');
@@ -161,7 +163,7 @@ for (const viewport of VIEWPORTS) {
       // The page shows before its players are read: the picture waits for her card and "Thêm người chơi".
       await expect(page.locator('[data-id^="profiles-pick-"]').first()).toBeVisible();
       await expect(page.locator('[data-id="profiles-add"]')).toBeVisible();
-      await expect.poll(() => page.locator('[data-id^="profiles-pick-"] img').first().evaluate((img) => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+      await imagesDrawn(page.locator('[data-id^="profiles-pick-"]').first());
     });
     await capture(page, '03-creator', async () => {
       await page.goto('/create');
@@ -195,6 +197,10 @@ for (const viewport of VIEWPORTS) {
       await page.locator('[data-id="hud-menu"]').click();
       await expect(page.locator('[data-id="pause"]')).toBeVisible();
       await expect(page.locator('[data-id="pause-home"]')).toBeAttached();
+      // "Chơi online" shows its companion bot switch only once the player's settings are read; then every emoji on
+      // its buttons drawn.
+      await expect(page.locator('[data-id="pause-bots"]')).toBeVisible();
+      await imagesDrawn(page.locator('[data-id="pause"]'));
     });
     await capture(page, '08-play-prompt', async () => {
       await page.goto(playAt('parrot-guide'));
@@ -334,7 +340,7 @@ for (const viewport of VIEWPORTS) {
       await page.locator('[data-id="weekly-share-open"]').click();
       await expect(page.locator('[data-id="weekly-share-card"]')).toBeVisible();
       // The card is drawn before the screen is pictured.
-      await expect.poll(() => page.locator('[data-id="weekly-share-card"]').evaluate((img) => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+      await imagesDrawn(page.locator('[data-id="weekly-share-card"]'));
     });
     // The moderator's emergency switch turns online play off: the game says so in a friendly line. Online is back on
     // before anything else is pictured, whatever happened.

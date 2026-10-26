@@ -1,7 +1,7 @@
 // Browsers for the hand-run picture specs (screens.spec.ts for the release review, store-screens.spec.ts for the app
 // stores): a signed-out screen at a given size, a fresh fake player in it, and the game drawn and settled. Fake
 // accounts in the in-memory database only.
-import { expect, type Browser, type BrowserContext, type Page } from '@playwright/test';
+import { expect, type Browser, type BrowserContext, type Locator, type Page } from '@playwright/test';
 import { freshChild } from './quest-api';
 import { readStats, waitReady } from './stats';
 
@@ -52,4 +52,22 @@ export async function gameSettled(page: Page): Promise<void> {
   await waitReady(page);
   const frames = (await readStats(page)).frames;
   await expect.poll(async () => (await readStats(page)).frames, { timeout: 15_000 }).toBeGreaterThan(frames + 10);
+}
+
+/**
+ * Every picture in `scope` (the element itself when it is a picture) loaded and drawn: an emoji or a portrait still on
+ * its way shows as an empty box in a screenshot. Pictures the page loads lazily wait until they are scrolled to, so
+ * they are left out. Fails, naming the pictures, when one never draws (a broken address).
+ */
+export async function imagesDrawn(scope: Locator, timeout = 10_000): Promise<void> {
+  await expect
+    .poll(
+      () =>
+        scope.evaluate((root) => {
+          const pictures = root instanceof HTMLImageElement ? [root] : [...root.querySelectorAll('img')];
+          return pictures.filter((img) => img.loading !== 'lazy' && !(img.complete && img.naturalWidth > 0)).map((img) => img.currentSrc || img.src);
+        }),
+      { message: 'pictures not drawn', timeout },
+    )
+    .toEqual([]);
 }
