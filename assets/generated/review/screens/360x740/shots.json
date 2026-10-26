@@ -1,8 +1,8 @@
 {
   "viewport": "360x740",
-  "capturedFrom": "8bc947d55cd6cb52168fc3f3adad1b1852aae2ae",
+  "capturedFrom": "77fd2601c4e0911100447213038198dd598ca21c",
   "uncommitted": [],
-  "capturedAt": "2026-10-26T17:05:59+07:00",
+  "capturedAt": "2026-10-26T21:15:13+07:00",
   "shots": [
     {
       "shot": "360x740/01-login.png",
@@ -148,7 +148,7 @@
         "clipped": [
           "[data-id=\"player-name\"] shows 1×1 of 48×27",
           "[data-id=\"player-xp\"] shows 1×1 of 76×27",
-          "[data-id=\"hud-tracker-pill-title\"] shows 130×24 of 245×24"
+          "[data-id=\"hud-tracker-pill-title\"] shows 130×36 of 130×39"
         ],
         "rawText": [],
         "small": []
@@ -165,7 +165,7 @@
         "clipped": [
           "[data-id=\"player-name\"] shows 1×1 of 48×27",
           "[data-id=\"player-xp\"] shows 1×1 of 76×27",
-          "[data-id=\"hud-tracker-pill-title\"] shows 130×24 of 245×24"
+          "[data-id=\"hud-tracker-pill-title\"] shows 130×36 of 130×39"
         ],
         "rawText": [],
         "small": []
@@ -197,7 +197,7 @@
         "clipped": [
           "[data-id=\"player-name\"] shows 1×1 of 48×27",
           "[data-id=\"player-xp\"] shows 1×1 of 76×27",
-          "[data-id=\"hud-tracker-pill-title\"] shows 130×24 of 245×24"
+          "[data-id=\"hud-tracker-pill-title\"] shows 130×36 of 130×39"
         ],
         "rawText": [],
         "small": []
@@ -267,7 +267,9 @@
       "screen": "13-olympiad-practice",
       "status": "ok",
       "facts": {
-        "offScreen": [],
+        "offScreen": [
+          "[data-id=\"olympiad-check\"] at 160,737–324,797"
+        ],
         "overlaps": [],
         "missingClose": [],
         "clipped": [
@@ -348,7 +350,7 @@
         "clipped": [
           "[data-id=\"player-name\"] shows 1×1 of 48×27",
           "[data-id=\"player-xp\"] shows 1×1 of 76×27",
-          "[data-id=\"hud-tracker-pill-title\"] shows 119×24 of 245×24"
+          "[data-id=\"hud-tracker-pill-title\"] shows 119×36 of 119×57"
         ],
         "rawText": [],
         "small": []
@@ -365,7 +367,7 @@
         "clipped": [
           "[data-id=\"player-name\"] shows 1×1 of 48×27",
           "[data-id=\"player-xp\"] shows 1×1 of 76×27",
-          "[data-id=\"hud-tracker-pill-title\"] shows 119×24 of 245×24"
+          "[data-id=\"hud-tracker-pill-title\"] shows 119×36 of 119×57"
         ],
         "rawText": [],
         "small": []
@@ -426,7 +428,7 @@
         "clipped": [
           "[data-id=\"player-name\"] shows 1×1 of 48×27",
           "[data-id=\"player-xp\"] shows 1×1 of 76×27",
-          "[data-id=\"hud-tracker-pill-title\"] shows 119×24 of 245×24"
+          "[data-id=\"hud-tracker-pill-title\"] shows 119×36 of 119×57"
         ],
         "rawText": [],
         "small": []
