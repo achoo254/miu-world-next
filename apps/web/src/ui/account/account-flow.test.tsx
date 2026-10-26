@@ -1,6 +1,8 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import { PrivacyDocument } from '@miu/schema/content';
+import privacyJson from '../../../../../content/legal/privacy-vi.json';
 import { AccountProvider } from './account-context';
 import { AppRoutes } from '../app-shell';
 import { PROGRESS, questList } from '../player/test-fixtures';
@@ -150,6 +152,8 @@ describe('account flow', () => {
     renderAt('/');
     expect(await screen.findByText('Bản nháp — chờ pháp chế duyệt')).toBeTruthy();
     expect(screen.getByText(/bạn là người chịu trách nhiệm/)).toBeTruthy();
+    // Agreeing is about data only: the consent does not link the terms, so it is not read as accepting them.
+    expect(screen.queryByRole('link', { name: 'Điều khoản' })).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Tôi đồng ý' }));
     // No player picker and no profile set-up: Home of the account's own player.
     // Home is lazy-loaded: its first import in a run can be slow on a cold transform cache.
@@ -203,6 +207,17 @@ describe('account flow', () => {
     expect(await screen.findByRole('heading', { name: 'Quyền riêng tư của Miu World' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Quyền của bạn' })).toBeTruthy();
     expect(screen.getByText(/tự soạn/)).toBeTruthy();
+  });
+
+  it('shows the terms of use to a visitor who is not signed in, linked from the sign-up screen, with the appeal address', async () => {
+    stubApi({ 'GET /api/auth/me': () => ({ status: 401, body: { error: 'unauthenticated' } }) });
+    renderAt('/register');
+    fireEvent.click(await screen.findByRole('link', { name: 'Điều khoản' }));
+    expect(await screen.findByRole('heading', { name: 'Điều khoản sử dụng Miu World' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Chặn, báo cáo và kiểm duyệt' })).toBeTruthy();
+    expect(screen.getByText(/quyết định kiểm duyệt chưa đúng, hãy gửi thư tới địa chỉ liên hệ ở cuối trang/)).toBeTruthy();
+    const contact = PrivacyDocument.parse(privacyJson).contactEmail ?? '';
+    expect(screen.getByRole('link', { name: contact }).getAttribute('href')).toBe(`mailto:${contact}`);
   });
 
   it('deletes the account only after a second confirmation, then signs out', async () => {
@@ -435,6 +450,8 @@ describe('account flow', () => {
     window.localStorage.clear();
     stubApi({ 'GET /api/auth/me': () => ({ status: 401, body: { error: 'unauthenticated' } }) });
     renderAt(`/moi/${INVITE}`);
+    expect((await screen.findByRole('link', { name: 'Quyền riêng tư' })).getAttribute('href')).toBe('/privacy');
+    expect(screen.getByRole('link', { name: 'Điều khoản' }).getAttribute('href')).toBe('/terms');
     fireEvent.click(await screen.findByRole('button', { name: 'Chơi cùng bạn' }));
     expect(await screen.findByRole('heading', { name: 'Đăng nhập' })).toBeTruthy();
     expect(takePostLoginTarget()).toEqual({ inviteCode: INVITE });

@@ -1,4 +1,4 @@
-// The layout of a public legal page (today Quyền riêng tư): a title, the date of the last wording change, the sections
+// The layout of a public legal page (Quyền riêng tư, Điều khoản): a title, the date of the last wording change, the sections
 // from content/legal/, the page's own closing section and the way back.
 import type { ReactNode } from 'react';
 import { Link } from 'react-router';

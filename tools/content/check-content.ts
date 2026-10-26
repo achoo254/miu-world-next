@@ -99,7 +99,7 @@ const BOX_PROPS_FOLDER = 'world/box-props/';
 /** Every model the maps place: height, clip, placing, fading (the map generators and the game read it). */
 const MODELS_FILE = 'world/models.json';
 const PRIVACY_FILE = 'legal/privacy-vi.json';
-/** Draft terms of use, held out of the web app until approved; content:check keeps it valid meanwhile. */
+/** Public terms of use (`/terms`); it sends moderation appeals to the privacy page's contact address. */
 const TERMS_FILE = 'legal/terms-vi.json';
 const ITEMS_FOLDER = 'items/';
 const COLLECTIBLES_FILE = 'collectibles.json';
@@ -242,13 +242,12 @@ const inFolder = (rel: string, folder: string) => rel.startsWith(folder) && !rel
 const readByCatalogue = (rel: string) =>
   CATALOGUE_FILES.some((o) => (o.endsWith('/') ? inFolder(rel, o) && rel.endsWith('.json') : rel === o));
 const readByAssetTools = (rel: string) => ASSET_TOOL_FILES.some((o) => (o.endsWith('/') ? inFolder(rel, o) : rel === o));
-const readByLegalCheck = (rel: string) => rel === TERMS_FILE;
 /** Topic files (content/learning/topics/<subject>/<topic>.json), and the textbook fingerprints and key check value of the copy check. */
 const readByLearningCheck = (rel: string) =>
   (rel.startsWith('learning/topics/') && rel.endsWith('.json')) || rel === 'learning/textbook-fingerprints.bin' || rel === 'learning/textbook-fingerprints.key-check';
 /** The English names of characters, places and things, checked by `glossaryIssues` below. */
 const readByNameGlossary = (rel: string) => rel.startsWith('i18n/names/') && rel.endsWith('.json');
-const readByWeb = (rel: string) => rel === REGIONS_FILE || rel === MODELS_FILE || rel === LOOKS_FILE || rel === EMOJI_PROPS_FILE || rel === BOX_PROPS_FILE || rel === TARGETS_FILE || rel === PRIVACY_FILE || (inFolder(rel, ITEMS_FOLDER) && rel.endsWith('.json'));
+const readByWeb = (rel: string) => rel === REGIONS_FILE || rel === MODELS_FILE || rel === LOOKS_FILE || rel === EMOJI_PROPS_FILE || rel === BOX_PROPS_FILE || rel === TARGETS_FILE || rel === PRIVACY_FILE || rel === TERMS_FILE || (inFolder(rel, ITEMS_FOLDER) && rel.endsWith('.json'));
 
 /**
  * Items parse, use a shipped UI icon, file name = id, and every item a quest rewards exists. The collectible
@@ -595,10 +594,12 @@ export function checkPrivacy(raw: unknown, consentVersion: string): string[] {
   return [];
 }
 
-/** The draft terms of use parse. */
-export function checkTerms(raw: unknown): string[] {
+/** The terms of use parse, and the contact address they send moderation appeals to exists. */
+export function checkTerms(raw: unknown, contactEmail: string | null | undefined): string[] {
   const parsed = TermsDocument.safeParse(raw);
-  return parsed.success ? [] : [`content/${TERMS_FILE}: ${parsed.error.message}`];
+  if (!parsed.success) return [`content/${TERMS_FILE}: ${parsed.error.message}`];
+  if (!contactEmail) return [`content/${TERMS_FILE} sends moderation appeals to the contact address, but content/${PRIVACY_FILE} has no contactEmail`];
+  return [];
 }
 
 /** `env`: where the copy check finds its key (the process environment by default). */
@@ -606,7 +607,7 @@ export function checkContent(dir: string = CONTENT_DIR, { env = process.env }: {
   const issues: string[] = [];
   const files = listFiles(dir);
   for (const rel of files) {
-    if (!readByCatalogue(rel) && !readByAssetTools(rel) && !readByWeb(rel) && !readByLegalCheck(rel) && !readByLearningCheck(rel) && !readByNameGlossary(rel)) {
+    if (!readByCatalogue(rel) && !readByAssetTools(rel) && !readByWeb(rel) && !readByLearningCheck(rel) && !readByNameGlossary(rel)) {
       issues.push(`content/${rel} has no validator: add it to the server catalogue or an asset tool`);
     }
   }
@@ -699,9 +700,10 @@ export function checkContent(dir: string = CONTENT_DIR, { env = process.env }: {
     issues.push(...checkProgression(dir, catalog, lessons, targetCatalog?.targets ?? {}));
     const privacy: unknown = JSON.parse(readFileSync(path.join(dir, PRIVACY_FILE), 'utf8'));
     issues.push(...checkPrivacy(privacy, catalog.consent.version));
-    if (PrivacyDocument.safeParse(privacy).data?.contactEmail === null) warnings.push(`content/${PRIVACY_FILE} has no contact email yet`);
-    if (existsSync(path.join(dir, TERMS_FILE))) issues.push(...checkTerms(JSON.parse(readFileSync(path.join(dir, TERMS_FILE), 'utf8'))));
-    else issues.push(`content/${TERMS_FILE} is missing: the draft terms of use wait there for approval`);
+    const contactEmail = PrivacyDocument.safeParse(privacy).data?.contactEmail;
+    if (contactEmail === null) warnings.push(`content/${PRIVACY_FILE} has no contact email yet`);
+    if (existsSync(path.join(dir, TERMS_FILE))) issues.push(...checkTerms(JSON.parse(readFileSync(path.join(dir, TERMS_FILE), 'utf8')), contactEmail));
+    else issues.push(`content/${TERMS_FILE} is missing: the terms of use page (/terms) reads it`);
     issues.push(...checkAccessories(catalog.accessories.values(), new Set(catalog.quests.keys()), new Set(manifest.generated.map((f) => f.path))));
     if (existsSync(path.join(dir, 'olympiad/olympic-math.json'))) {
       const parsedOlympiad = OlympiadCatalog.safeParse(read('olympiad/olympic-math.json'));

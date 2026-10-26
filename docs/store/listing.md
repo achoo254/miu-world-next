@@ -106,7 +106,7 @@ Privacy: https://miu.hoandat.com/privacy
 | Privacy Policy (Apple, Play) | `https://miu.hoandat.com/privacy` | Trang công khai, không cần đăng nhập (route `/privacy`, `apps/web/src/ui/legal/privacy-screen.tsx`); trả 200 ngày 23/10/2026. |
 | Support URL (Apple, bắt buộc) | `https://miu.hoandat.com/privacy` tạm thời | Trang có mục "Liên hệ" với email hỗ trợ. Việc của người sở hữu: một trang hỗ trợ riêng hoặc GitHub Issues của repo công khai. |
 | Marketing URL (tùy chọn) | `https://miu.hoandat.com/` | Trang giới thiệu cho người chưa đăng nhập. |
-| Điều khoản sử dụng | Chưa có | `docs/terms-of-use.md` còn là bản nháp chưa phát hành, không có route web (mọi đường dẫn lạ trả trang SPA 200, không phải điều khoản). Apple dùng EULA chuẩn khi để trống; không nhập URL điều khoản cho tới khi phát hành. |
+| Điều khoản sử dụng | `https://miu.hoandat.com/terms` | Trang công khai chỉ để đọc (route `/terms`, `apps/web/src/ui/legal/terms-screen.tsx`, `docs/terms-of-use.md`), có từ lần deploy production đầu tiên sau 26/10/2026: mở thử thấy tiêu đề “Điều khoản sử dụng Miu World” rồi mới nhập (đường dẫn lạ cũng trả SPA 200). Không phải EULA: Apple vẫn dùng EULA chuẩn. |
 | Xóa tài khoản (Play Data safety, bắt buộc) | `https://miu.hoandat.com/privacy` (mục "Quyền của bạn") | Trang nói cách xóa; nút xóa nằm ở `https://miu.hoandat.com/parent` sau khi đăng nhập. Google muốn trang nêu nổi bật cách xóa: nên thêm neo hoặc trang riêng. |
 
 ## Câu trả lời xếp hạng tuổi

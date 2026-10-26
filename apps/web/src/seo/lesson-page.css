@@ -54,7 +54,7 @@
 /* The ghost button is made for the sky; on the white panel it gets the field's tint and line. */
 .lesson-nav .btn--ghost { background: var(--color-field); border: 2px solid var(--color-field-line); }
 
-/* The foot of every page: the hoandat.com line and the privacy link on a light card over the sky, as on the home page. */
+/* The foot of every page: the hoandat.com line, the privacy and terms links on a light card over the sky, as on the home page. */
 .lesson-foot {
   flex-wrap: wrap;
   justify-content: center;

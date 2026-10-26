@@ -9,6 +9,7 @@ import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { IdpSignInButton, signInErrorKey } from './idp-sign-in-button';
 import { SkyScene } from '../kit/sky-scene';
+import { LegalLinks } from '../legal/legal-links';
 import { T } from '../i18n/use-t';
 import { t } from '../i18n/i18n';
 import { useAccount } from './account-context';
@@ -31,7 +32,10 @@ function SignIn({ title, hint, dataId, switchTo }: { title: ReactNode; hint: Rea
         <p className="note">
           <Icon name="heart" size={28} />
           <span>
-            <T k="auth.privacyNote" /> <Link to="/privacy"><T k="auth.privacyLink" /></Link>
+            <T k="auth.privacyNote" />
+            <span className="legal-links">
+              <LegalLinks dataId={dataId} />
+            </span>
           </span>
         </p>
         <p className="hint">

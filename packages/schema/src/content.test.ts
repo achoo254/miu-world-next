@@ -522,6 +522,12 @@ describe('shipped account content', () => {
     expect(text).toMatch(/trang Quyền riêng tư/);
     // The temporary online locks a moderator can pick, as the terms list them.
     expect(text).toContain(`(${LOCK_DAYS.slice(0, -1).join(', ')} hoặc ${LOCK_DAYS.at(-1)} ngày)`);
+    // A moderation decision can be appealed by mail to the address at the foot of the page: the privacy page's.
+    expect(text).toMatch(/quyết định kiểm duyệt chưa đúng, hãy gửi thư tới địa chỉ liên hệ ở cuối trang/);
+    expect(PrivacyDocument.parse(load('legal/privacy-vi.json')).contactEmail).toBeTruthy();
+    // Informational: the terms promise no reply time, and the consent does not ask anyone to accept them.
+    expect(text).not.toMatch(/trong vòng|\d+ giờ/);
+    expect(ConsentDocument.parse(load('legal/consent-vi.json')).paragraphs.join(' ')).not.toMatch(/Điều khoản/);
   });
 
   it('tells the anonymous numbers sent to Google Analytics, and nothing the old wording claimed', () => {

@@ -39,9 +39,10 @@ describe('the introduction at /', () => {
     expect(screen.getByRole('link', { name: 'Các chủ đề Tiếng Việt' }).getAttribute('href')).toBe('/hoc/tieng-viet/');
     expect(screen.getByRole('img', { name: viLocale['landing.imageAlt'] })).toBeTruthy();
     expect(screen.queryByRole('heading', { name: 'Đăng nhập' })).toBeNull();
-    // The foot every hoandat.com app shares: the ecosystem line and privacy (the terms are a draft, not published).
+    // The foot every hoandat.com app shares: the ecosystem line, privacy and terms.
     expect(screen.getByRole('link', { name: viLocale['landing.fromHoandat'] }).getAttribute('href')).toBe('https://hoandat.com');
     expect(screen.getByRole('link', { name: viLocale['auth.privacyLink'] }).getAttribute('href')).toBe('/privacy');
+    expect(screen.getByRole('link', { name: viLocale['auth.termsLink'] }).getAttribute('href')).toBe('/terms');
   });
 
   it('leads to the sign-in screen from the play button', async () => {

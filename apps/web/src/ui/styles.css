@@ -157,6 +157,9 @@ a { color: var(--color-ink); font-weight: 700; }
 
 .hint { color: var(--color-ink-soft); }
 .note { display: flex; gap: var(--space-sm); align-items: flex-start; font-size: var(--text-sm); color: var(--color-ink-soft); }
+/* Quyền riêng tư and Điều khoản side by side (legal-links.tsx), each a 44 px touch target, wrapping on a narrow phone. */
+.legal-links { display: flex; flex-wrap: wrap; column-gap: var(--space-md); }
+.legal-links a { display: inline-flex; align-items: center; min-height: 2.75rem; }
 .error {
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-field);

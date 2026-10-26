@@ -99,7 +99,7 @@ ${head.map((line) => `  ${line}`).join('\n')}
     <main class="scene-content lesson-page" data-id="lesson-page">
       <a class="lesson-brand" href="/" data-id="lesson-brand"><img src="${escapeHtml(url(APP_LOGO))}" width="48" height="48" alt=""><span>${escapeHtml(SITE_NAME)}</span></a>
 ${body}
-      <footer class="note lesson-foot" data-id="lesson-foot"><a href="https://hoandat.com">${escapeHtml(t('landing.fromHoandat'))}</a><a href="/privacy">${escapeHtml(t('auth.privacyLink'))}</a></footer>
+      <footer class="note lesson-foot" data-id="lesson-foot"><a href="https://hoandat.com">${escapeHtml(t('landing.fromHoandat'))}</a><a href="/privacy">${escapeHtml(t('auth.privacyLink'))}</a><a href="/terms">${escapeHtml(t('auth.termsLink'))}</a></footer>
     </main>
   </div>
 ${interactive ? `  <script type="module" crossorigin src="${escapeHtml(assets.script)}"></script>\n` : ''}</body>

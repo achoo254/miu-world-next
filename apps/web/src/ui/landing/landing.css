@@ -45,7 +45,7 @@
   background: var(--color-surface-glass);
 }
 .landing > .note { padding: var(--space-xs) var(--space-md); }
-/* The foot of the page: the hoandat.com line and the privacy link, side by side, wrapping on a narrow phone. */
+/* The foot of the page: the hoandat.com line, the privacy and terms links, side by side, wrapping on a narrow phone. */
 .landing-foot { flex-wrap: wrap; justify-content: center; }
 /* Each link at the foot, and the sign-in link under the play button, is a 44 px touch target. */
 .landing > .note a,

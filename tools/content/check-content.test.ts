@@ -103,11 +103,14 @@ describe('content:check', { timeout: SLOW_FS_TIMEOUT }, () => {
     expect(checkContent(dir).issues.join('\n')).toMatch(/privacy-vi\.json: .*updatedOn/s);
   });
 
-  it('flags draft terms of use that do not parse, or are missing', () => {
+  it('flags terms of use that do not parse, are missing, or send appeals to a contact address that does not exist', () => {
+    const privacy = path.join(dir, 'legal/privacy-vi.json');
+    writeFileSync(privacy, JSON.stringify({ ...JSON.parse(readFileSync(privacy, 'utf8')), contactEmail: null }));
+    expect(checkContent(dir).issues).toEqual(['content/legal/terms-vi.json sends moderation appeals to the contact address, but content/legal/privacy-vi.json has no contactEmail']);
     writeFileSync(path.join(dir, 'legal/terms-vi.json'), JSON.stringify({ title: 'x', updatedOn: 'hôm nay', sections: [] }));
     expect(checkContent(dir).issues.join('\n')).toMatch(/terms-vi\.json: .*updatedOn/s);
     rmSync(path.join(dir, 'legal/terms-vi.json'));
-    expect(checkContent(dir).issues).toEqual(['content/legal/terms-vi.json is missing: the draft terms of use wait there for approval']);
+    expect(checkContent(dir).issues).toEqual(['content/legal/terms-vi.json is missing: the terms of use page (/terms) reads it']);
   });
 
   it('flags an accessory that unlocks with an unknown quest', () => {

@@ -13,7 +13,7 @@ Bản đồ tài liệu. Nguồn quyết định sản phẩm là [Master Plan v
 | [STAG-DEV-README.md](STAG-DEV-README.md) | SSH vào máy production .65: quyền hạn, tệp credential, lệnh SSH không in secret, đường dẫn và log trên máy |
 | [deployment-guide.md](deployment-guide.md) | Production chạy trên máy nào, secret ứng dụng, DNS, deploy và rollback (staging đã gỡ 12/10/2026) |
 | [screen-review.md](screen-review.md) | Chụp các màn chính trước deploy, cách agent xem ảnh, checklist và định dạng `review.json` |
-| [terms-of-use.md](terms-of-use.md) | Điều khoản sử dụng (bản nháp, chưa phát hành, chờ người duyệt): từng điều lấy từ đâu, vì sao không nâng phiên bản lời đồng ý, cách phát hành khi được duyệt |
+| [terms-of-use.md](terms-of-use.md) | Điều khoản sử dụng (trang `/terms`, phát hành 26/10/2026, chỉ để đọc): quyết định của chủ sở hữu, từng điều lấy từ đâu, vì sao không nâng phiên bản lời đồng ý |
 | [store/README.md](store/README.md), [store/listing.md](store/listing.md) | Hồ sơ App Store và Google Play: ảnh chụp và cách chụp lại, icon, nội dung trang store (vi, en), xếp hạng tuổi, nhãn quyền riêng tư, ghi chú cho người duyệt, việc còn chặn phát hành |
 
 Quy tắc hành vi cho agent: [`CLAUDE.md`](../CLAUDE.md) và [`.claude/rules/`](../.claude/rules/).

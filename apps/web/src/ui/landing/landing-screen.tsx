@@ -7,6 +7,7 @@ import { Logo, SkyScene } from '../kit/sky-scene';
 import { buttonClass } from '../kit/button';
 import { HOME_ISLAND, assetUrl } from '../kit/ui-art';
 import { T, useT } from '../i18n/use-t';
+import { LegalLinks } from '../legal/legal-links';
 import './landing.css';
 
 const BENEFITS = ['landing.benefitTopics', 'landing.benefitFriends', 'landing.benefitNotebook', 'landing.benefitFree'] as const;
@@ -51,7 +52,7 @@ export function LandingScreen() {
         </nav>
         <footer className="note landing-foot" data-id="landing-foot">
           <a href="https://hoandat.com" data-id="landing-foot-hoandat"><T k="landing.fromHoandat" /></a>
-          <Link to="/privacy" data-id="landing-foot-privacy"><T k="auth.privacyLink" /></Link>
+          <LegalLinks dataId="landing-foot" />
         </footer>
       </main>
     </SkyScene>

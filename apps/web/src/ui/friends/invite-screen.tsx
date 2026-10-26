@@ -8,6 +8,7 @@ import { INVITE_CODE } from '@miu/schema/invites';
 import { savePostLoginTarget } from '../../post-login-target';
 import { T } from '../i18n/use-t';
 import { buttonClass } from '../kit/button';
+import { LegalLinks } from '../legal/legal-links';
 import { Logo, SkyScene } from '../kit/sky-scene';
 import './invite-screen.css';
 
@@ -67,10 +68,8 @@ export function InviteScreen() {
             </>
           )}
         </div>
-        <p className="note">
-          <Link to="/privacy">
-            <T k="auth.privacyLink" />
-          </Link>
+        <p className="note legal-links">
+          <LegalLinks dataId="invite-page" />
         </p>
       </main>
     </SkyScene>
