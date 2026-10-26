@@ -1,64 +1,78 @@
 {
-  "capturedFrom": "4203f1cccdf4fbc3efe02faf79b8fcf1fc22e983",
-  "capturedAt": "2026-10-26T12:33:15+07:00",
-  "reviewedAt": "2026-10-26T12:58:16+07:00",
-  "reviewer": "agent:5 Explore subagents (12 ảnh mỗi agent) so với ảnh lần duyệt trước, phiên chính gộp",
+  "capturedFrom": "8bc947d55cd6cb52168fc3f3adad1b1852aae2ae",
+  "capturedAt": "2026-10-26T17:05:59+07:00",
+  "reviewedAt": "2026-10-26T17:20:00+07:00",
+  "reviewer": "agent:general-purpose (một agent xem cả 60 ảnh, so với ảnh lần duyệt trước ở 4203f1cc)",
   "verdict": "pass",
   "findings": [
+    {
+      "shot": "820x1180/29-pause.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Lần trước mục \"Chơi online\" trống và thiếu emoji: lần này đủ dòng Bạn máy với cặp nút Bật/Tắt và đủ emoji trên mọi nút, code màn này không đổi. Là lỗi lúc chụp, không phải lỗi thật: mục Bạn máy chỉ hiện sau khi đọc xong cài đặt người chơi (BotSettings), còn emoji là ảnh tải sau; spec chỉ chờ nút Về trang chủ có trong DOM rồi chụp.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/29-pause.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Cùng lỗi lúc chụp như trên, lần này ở khổ điện thoại: nút Âm thanh, Nhạc nền, Về chỗ an toàn chưa hiện emoji (lần trước có). Không phải lỗi màn; spec nên chờ ảnh trong hộp Tạm dừng tải xong trước khi chụp.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/20-landing.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Footer mới hiện dưới thẻ chủ đề: \"Một app của hoandat.com\" và \"Quyền riêng tư\" trên thẻ sáng, đúng kiểu Miu. Link Đăng nhập dưới nút Chơi ngay giờ cao 44 px. Ở 360 × 740 cả hai nằm dưới màn đầu (cần cuộn), như trước.",
+      "fixedIn": null
+    },
     {
       "shot": "360x740/07-play-hud.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Thẻ nhiệm vụ trên HUD cắt tên khu thành \"Khu rừng bí mật …\" (130/245 px), 08-play-prompt cũng vậy; đã có từ lần trước, không che gì nhưng người chơi không đọc hết tên.",
+      "text": "Thẻ nhiệm vụ trên HUD cắt tên khu thành \"Khu rừng bí mật …\" (130/245 px), 08-play-prompt, 18-party, 25-online-off, 28-play-menu, 30-party-quest cũng vậy; giống lần trước, không che gì.",
       "fixedIn": null
     },
     {
       "shot": "360x740/13-olympiad-practice.png",
       "kind": "off-screen",
       "severity": "note",
-      "text": "Biển tiêu đề \"Olympic Toán\" bị mép trên cắt nửa trên (giống lần trước, có thể do khung đã cuộn); nút quay lại vẫn thấy và chạm được.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/18-party.png",
-      "kind": "clipped",
-      "severity": "note",
-      "text": "Thẻ nhiệm vụ cắt tên khu thành \"Khu rừng bí mậ…\"; giống lần trước.",
+      "text": "Biển tiêu đề \"Olympic Toán\" bị mép trên cắt nửa trên, giống lần trước; nút quay lại vẫn thấy và chạm được.",
       "fixedIn": null
     },
     {
       "shot": "360x740/22-friends-invite.png",
       "kind": "overlap",
       "severity": "note",
-      "text": "Nút \"Quay lại game\" đè góc dưới phải khung Bạn bè (giống lần trước); không che chữ hay nút, chỉ trông chật.",
+      "text": "Nút \"Quay lại game\" đè góc dưới phải khung Bạn bè, giống lần trước; không che chữ hay nút.",
       "fixedIn": null
     },
     {
       "shot": "360x740/30-party-quest.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Thẻ \"Cả đội chơi\" bị cắt ngang dưới dòng \"Bông · xong 0 bước\", không thấy mép dưới (có thể là vùng cuộn); giống lần trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/17-pet-care.png",
-      "kind": "shifted",
-      "severity": "note",
-      "text": "Mèo xám đứng sát sau lưng bé, đầu bé bị hàng nút chăm sóc che; lần trước hai nhân vật đứng tách nhau. Panel và nút đóng vẫn ổn.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/29-pause.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Mục \"Chơi online\" chỉ còn tiêu đề (mất dòng Bạn máy và cặp nút Bật/Tắt) và emoji trên các nút Âm thanh, Nhạc nền, Về chỗ an toàn, Đổi nhân vật không hiện; code màn này không đổi trong commit, nghi lúc chụp emoji/cài đặt chưa tải xong. Cần xem lại ở lần chụp sau.",
+      "text": "Thẻ \"Cả đội chơi\" bị cắt ngang dưới dòng \"Bông · xong 0 bước\" (vùng cuộn), giống lần trước.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/30-party-quest.png",
       "kind": "overlap",
       "severity": "note",
-      "text": "Bóng chữ \"Hôm nay đi đâu nhỉ?\" của nhân vật nằm sau nhãn \"Bông · Tương tác\" và mép thẻ Cả đội chơi nên khó đọc; nhãn Tương tác vẫn đọc và bấm được.",
+      "text": "Bóng chữ \"Hôm nay đi đâu nhỉ?\" nằm sau nhãn \"Bông · Tương tác\" nên khó đọc, giống lần trước; nhãn Tương tác vẫn đọc và bấm được.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/17-pet-care.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Mèo xám đứng sát trước bé, đầu bé nằm sát dưới hàng nút chăm sóc, giống lần trước; panel và nút đóng ổn.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/14-boss.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dòng hướng dẫn đổi từ \"Kéo búa lùi lại…\" (lần trước) sang \"Chọn tấm khiên mang đáp án đúng rồi phóng búa vào đó\"; khổ iPad vẫn là câu kéo búa. Cả hai đọc được, không che gì; khác biệt theo cách máy nhận cảm ứng lúc chụp, commit này không đổi màn boss.",
       "fixedIn": null
     }
   ]
