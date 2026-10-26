@@ -45,5 +45,9 @@
   background: var(--color-surface-glass);
 }
 .landing > .note { padding: var(--space-xs) var(--space-md); }
-/* The privacy link at the foot of the page is a 44 px touch target, clear of the screen edge. */
-.landing > .note a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 var(--space-sm); }
+/* The foot of the page: the hoandat.com line and the privacy link, side by side, wrapping on a narrow phone. */
+.landing-foot { flex-wrap: wrap; justify-content: center; }
+/* Each link at the foot, and the sign-in link under the play button, is a 44 px touch target. */
+.landing > .note a,
+.landing-login { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 var(--space-sm); }
+.landing-login { vertical-align: middle; }

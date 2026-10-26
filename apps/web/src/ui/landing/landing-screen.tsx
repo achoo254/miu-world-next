@@ -26,7 +26,7 @@ export function LandingScreen() {
               <T k="landing.play" />
             </Link>
             <p className="hint">
-              <T k="landing.haveAccount" /> <Link to="/login" data-id="landing-login"><T k="landing.loginLink" /></Link>
+              <T k="landing.haveAccount" /> <Link to="/login" className="landing-login" data-id="landing-login"><T k="landing.loginLink" /></Link>
             </p>
             <ul className="landing-benefits">
               {BENEFITS.map((key) => (
@@ -49,9 +49,10 @@ export function LandingScreen() {
             ))}
           </ul>
         </nav>
-        <p className="note">
-          <Link to="/privacy"><T k="auth.privacyLink" /></Link>
-        </p>
+        <footer className="note landing-foot" data-id="landing-foot">
+          <a href="https://hoandat.com" data-id="landing-foot-hoandat"><T k="landing.fromHoandat" /></a>
+          <Link to="/privacy" data-id="landing-foot-privacy"><T k="auth.privacyLink" /></Link>
+        </footer>
       </main>
     </SkyScene>
   );

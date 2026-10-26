@@ -75,6 +75,7 @@ describe('a topic page', () => {
     expect(page).toContain('data-play-region="truong-hoc" data-play-quest="toan2-cd1-b01"');
     expect(page).toContain('href="/hoc/toan/"');
     expect(page).toContain('href="/hoc/toan/thanh-phan-phep-tinh/"');
+    expect(page).toContain('<footer class="note lesson-foot" data-id="lesson-foot"><a href="https://hoandat.com">Một app của hoandat.com</a><a href="/privacy">Quyền riêng tư</a></footer>');
     expect(page).not.toContain('Chủ đề trước');
     expect(page).not.toContain('{name}');
     expect(page).not.toMatch(/lớp 2|lớp Hai|SGK|sách giáo khoa|Kết nối tri thức|Bài \d+\.|Trang \d+|\/bai\//i);

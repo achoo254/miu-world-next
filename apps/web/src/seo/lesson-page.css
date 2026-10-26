@@ -47,8 +47,20 @@
 .lesson-activities h3 { margin: 0; font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.2; }
 .lesson-list { gap: var(--space-sm); }
 .lesson-objectives { display: flex; flex-direction: column; gap: var(--space-xs); margin: 0; padding-left: var(--space-lg); }
-.lesson-list a { display: inline-block; padding: var(--space-xs) 0; }
+/* A topic link is a 44 px touch target on a phone. */
+.lesson-list a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: var(--space-xs) 0; }
 
 .lesson-nav { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 /* The ghost button is made for the sky; on the white panel it gets the field's tint and line. */
 .lesson-nav .btn--ghost { background: var(--color-field); border: 2px solid var(--color-field-line); }
+
+/* The foot of every page: the hoandat.com line and the privacy link on a light card over the sky, as on the home page. */
+.lesson-foot {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-panel);
+  background: var(--color-surface-glass);
+}
+.lesson-foot a { display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 var(--space-sm); }
