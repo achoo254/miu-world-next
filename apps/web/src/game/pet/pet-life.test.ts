@@ -135,6 +135,7 @@ describe('pet scenes', () => {
     const { x, z } = pet.root.position;
     // Off to her side by more than the two of them are wide, and a little toward the camera.
     expect(Math.abs(x)).toBeGreaterThan(0.9);
+    expect(Math.abs(x)).toBeLessThan(1.2);
     expect(z).toBeLessThan(0);
     // Turned to the camera.
     expect(Math.cos(pet.root.rotation.y)).toBeLessThan(-0.9);

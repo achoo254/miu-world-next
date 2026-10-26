@@ -273,6 +273,8 @@ for (const viewport of VIEWPORTS) {
       await expect(page.locator('[data-id="play-pet-care"]')).toBeVisible();
       // The board, not its "calling the pet" line.
       await expect(page.locator('[data-id="pet-care-name"]')).toBeVisible();
+      // The pet has come to sit beside her, in view under the board.
+      await expect.poll(async () => (await readStats(page)).petMotion, { timeout: 10_000 }).toBe('sit');
     });
     // A second player invites her into a party by the forest's spawn.
     const friend = await newPlayer(browser, base, viewport, 'Bông');

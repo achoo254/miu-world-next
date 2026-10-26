@@ -101,9 +101,13 @@ const ROUND_REST = 12;
 const WALK_ALONG: ReadonlySet<PetSceneName> = new Set(['greet', 'celebrate', 'sniff']);
 /** Scenes the camera does not turn for (she is already in view, or the camera is left where she put it). */
 const KEEP_VIEW: ReadonlySet<PetSceneName> = new Set(['greet', 'celebrate', 'present']);
-/** How far from her it sits while its care board is open (blocks), and the turns from the camera's side it tries. */
-const PRESENT_DISTANCE = 1.3;
-const PRESENT_TURNS = [1, -1, Math.PI / 2, -Math.PI / 2];
+/**
+ * How far from her it sits while its care board is open (blocks), and the turns from the camera's side it tries: about
+ * a block to her side (clear of her on screen) and a quarter block toward the camera, still inside an upright phone's
+ * narrow view at the usual camera distance.
+ */
+const PRESENT_DISTANCE = 1.05;
+const PRESENT_TURNS = [1.35, -1.35, Math.PI / 2, -Math.PI / 2];
 const UP = new Vector3(0, 1, 0);
 /** Its bed at home is where it naps when she is this near it, on the same floor (blocks). */
 const BED_REACH = 10;
