@@ -1,7 +1,8 @@
 // The main screens before a release (docs/screen-review.md): each one pictured on an upright phone (360 × 740) and an
 // upright iPad (820 × 1180), with facts read from its DOM, for an agent to look at and for the review page. Not a
 // test of the game: a screen that cannot be reached is noted as missing with its reason, and the run goes on. Run by
-// hand (`pnpm --filter @miu/web screens`), never on CI. Fake accounts in the in-memory database only.
+// hand (`pnpm --filter @miu/web screens`) before a release, and nightly on CI as a run-through (its pictures kept as
+// an artifact only). Fake accounts in the in-memory database only.
 import { execFileSync } from 'node:child_process';
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';

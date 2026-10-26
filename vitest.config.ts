@@ -2,8 +2,9 @@ import { configDefaults, defineConfig } from 'vitest/config';
 
 /**
  * Tests that generate a whole 800 x 800 map again and compare it with the committed one. They run as their own
- * project so CI gives them a machine of their own (job `maps`): next to hundreds of other files their generation
- * outgrows its limit. `pnpm test` still runs every project.
+ * project so CI gives them machines of their own (job `maps`): next to hundreds of other files their generation
+ * outgrows its limit. `pnpm test` still runs every project. The CI job splits them by file name (`tools/world/zone-maps`
+ * and `tools/world/generate-`, .github/workflows/ci.yml): a new pattern here must match one of the two.
  */
 const MAP_GENERATION_TESTS = ['tools/world/generate-*-map.test.ts', 'tools/world/zone-maps.test.ts', 'tools/world/generate-world-overview.test.ts'];
 

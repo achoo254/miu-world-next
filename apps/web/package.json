@@ -13,6 +13,7 @@
     "e2e": "playwright test",
     "e2e:ci": "playwright test -c playwright.ci.config.ts",
     "e2e:smoke": "playwright test -c playwright.ci.config.ts",
+    "e2e:nightly": "playwright test -c playwright.nightly.config.ts",
     "screens": "playwright test --project setup --project screens",
     "store:screens": "playwright test --project store"
   },

@@ -10,8 +10,8 @@ const FAKE_IDP = 'http://127.0.0.1:8788';
 export const PARENT_STATE = 'playwright/.auth/parent.json';
 
 /**
- * The smoke suite (docs/code-standards.md "Kiểm thử"): one project per `e2e/<name>.spec.ts`, each a main journey that
- * stays green and holds every release; checks that grow with content live in Node. All start from the parent session.
+ * One project per `e2e/<name>.spec.ts`, all from the parent session. Which of them hold every push (the smoke suite) and
+ * which run nightly: playwright.ci.config.ts and docs/code-standards.md "Kiểm thử". Checks that grow with content live in Node.
  */
 const SIGNED_IN = ['play', 'quest-flow', 'quest-mechanics', 'worksheets', 'maps', 'coop', 'bosses', 'shop'] as const;
 
@@ -19,7 +19,7 @@ export default defineConfig({
   testDir: 'e2e',
   // Time budget (docs/code-standards.md): a test fails fast at 45s unless it declares a longer timeout;
   // the reporter lists the slowest tests and fails one over 30s that did not declare itself long. One
-  // worker on purpose: parallel browsers freeze the dev machine (shard on CI instead, never locally).
+  // worker on purpose: parallel browsers freeze the dev machine.
   timeout: DEFAULT_TEST_TIMEOUT_MS,
   workers: 1,
   // No retry (CI included, see playwright.ci.config.ts); a trace only for the runs that failed.
@@ -77,10 +77,12 @@ export default defineConfig({
     { name: 'account', testMatch: 'account-flow.spec.ts' },
     { name: 'invite', testMatch: 'invite-flow.spec.ts' },
     ...SIGNED_IN.map((name) => ({ name, testMatch: `${name}.spec.ts`, dependencies: ['setup'], use: { storageState: PARENT_STATE } })),
+    // Perf matrix (perf.json for the review page): by hand when asked, and nightly on CI (playwright.nightly.config.ts).
     { name: 'perf', testMatch: 'perf.spec.ts', dependencies: ['setup'], use: { storageState: PARENT_STATE }, timeout: 30 * 60_000 },
-    // Render budget of every map (map-budget.json for the review page), run by hand: never on CI.
+    // Render budget of every map (map-budget.json for the review page): by hand, and nightly on CI.
     { name: 'budget', testMatch: 'map-budget.spec.ts', dependencies: ['setup'], use: { storageState: PARENT_STATE } },
-    // Pictures of the main screens before a release (docs/screen-review.md), run by hand: never on CI.
+    // Pictures of the main screens (docs/screen-review.md): by hand on the dev machine before a release (the reviewed
+    // set), and nightly on CI as a run-through whose pictures are kept as an artifact only.
     { name: 'screens', testMatch: 'screens.spec.ts', dependencies: ['setup'] },
     // The App Store and Google Play screenshots (docs/store/README.md), run by hand: never on CI.
     { name: 'store', testMatch: 'store-screens.spec.ts' },

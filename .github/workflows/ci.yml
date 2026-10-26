@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   pull_request:
-  # Nightly (02:00 Asia/Saigon) and on demand: the E2E job also opens every map (E2E_ALL_MAPS); pushes open
-  # the hub only.
+  # Nightly (02:00 Asia/Saigon) and on demand: every gate again, and the nightly E2E (job `e2e-nightly`) in place
+  # of the push smoke suite.
   schedule:
     - cron: '0 19 * * *'
   workflow_dispatch:
@@ -31,12 +31,6 @@ jobs:
         env:
           # Key of the textbook fingerprints (tools/learning/textbook-fingerprints.ts): without it the copy check fails.
           MIU_FINGERPRINT_KEY: ${{ secrets.MIU_FINGERPRINT_KEY }}
-      - name: Unit tests
-        # Every project but `maps`, which has its own job below.
-        run: pnpm vitest run --project node --project web
-        env:
-          # The content gate's test runs the textbook copy check too.
-          MIU_FINGERPRINT_KEY: ${{ secrets.MIU_FINGERPRINT_KEY }}
       - name: Typecheck
         run: pnpm typecheck
       - name: Lint
@@ -48,10 +42,38 @@ jobs:
       - name: Dependency audit
         run: pnpm audit --prod --audit-level=high
 
-  maps:
-    # The tests that generate whole maps again (vitest project `maps`), on a machine of their own so their
-    # generation does not wait for the cores of hundreds of other test files.
+  unit:
+    # Vitest projects `node` and `web` (every project but `maps`, which has its own job below), split over two
+    # runners by file: one run on one runner took 7-9 minutes, the longest job of the workflow.
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Unit tests
+        run: pnpm vitest run --project node --project web --shard=${{ matrix.shard }}/2
+        env:
+          # The content gate's test runs the textbook copy check too.
+          MIU_FINGERPRINT_KEY: ${{ secrets.MIU_FINGERPRINT_KEY }}
+
+  maps:
+    # The tests that generate whole maps again (vitest project `maps`), on machines of their own so their
+    # generation does not wait for the cores of hundreds of other test files. Two runners split by file name:
+    # zone-maps.test.ts (every zone map, about 5 minutes) alone, and every generate-*.test.ts on the other. Each
+    # file of MAP_GENERATION_TESTS (vitest.config.ts) must match one of the two filters.
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        files: ['tools/world/zone-maps', 'tools/world/generate-']
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
@@ -62,7 +84,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Map generation tests
         # One file at a time: a whole map's generation then has the runner's cores to itself.
-        run: pnpm vitest run --project maps --no-file-parallelism
+        run: pnpm vitest run --project maps --no-file-parallelism ${{ matrix.files }}
 
   integration:
     # Same server test files as `check`, against real Postgres instead of PGlite.
@@ -96,15 +118,10 @@ jobs:
         run: pnpm vitest run --project node apps/server
 
   e2e:
-    # The smoke suite (every project but perf and screens), against the production build + in-memory PGlite:
-    # the main journeys, always green, holding every release. Split over two GitHub runners (one worker each).
-    # The nightly run (E2E_ALL_MAPS) also opens every map.
+    # The smoke suite on pushes and pull requests (playwright.ci.config.ts): sign-in, invite, the hub and its gate,
+    # chapter 1's reward, a purchase; against the production build + in-memory PGlite, one runner, one worker.
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        shard: [1, 2]
-        total: [2]
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
@@ -116,15 +133,47 @@ jobs:
       - name: Install Chromium
         run: pnpm --filter @miu/web exec playwright install --with-deps chromium
       - name: E2E smoke suite
-        env:
-          E2E_ALL_MAPS: ${{ github.event_name != 'push' && github.event_name != 'pull_request' && '1' || '' }}
-        run: pnpm --filter @miu/web e2e:ci --shard=${{ matrix.shard }}/${{ matrix.total }}
+        run: pnpm --filter @miu/web e2e:ci
       - name: Keep Playwright traces of failed runs
         if: failure()
         uses: actions/upload-artifact@v6
         with:
-          name: playwright-traces-${{ matrix.shard }}
+          name: playwright-traces
           path: apps/web/test-results/
+          retention-days: 7
+
+  e2e-nightly:
+    # Every E2E project but the store screenshots (playwright.nightly.config.ts), every map opened: the smoke suite,
+    # the learning mechanics, bosses, co-op, worksheets, then perf, the render budget of every map and the screens,
+    # which only record (their reports are kept below).
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Install Chromium
+        run: pnpm --filter @miu/web exec playwright install --with-deps chromium
+      - name: E2E nightly suite
+        env:
+          E2E_ALL_MAPS: '1'
+        run: pnpm --filter @miu/web e2e:nightly
+      - name: Keep the nightly reports and the traces of failed runs
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: e2e-nightly
+          path: |
+            apps/web/test-results/
+            assets/generated/review/perf.json
+            assets/generated/review/map-budget.json
+            assets/generated/review/screens/
+          if-no-files-found: ignore
           retention-days: 7
 
   sast:

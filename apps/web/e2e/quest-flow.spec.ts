@@ -20,7 +20,10 @@ const SHOTS = fileURLToPath(new URL('../../../.data/celebration/', import.meta.u
 // Its own parent and child: quest progress must start empty and never leak into other projects.
 test.use({ storageState: { cookies: [], origins: [] } });
 
-test('meet the parrot, follow the arrow, find the three clues, and the letter opens by itself', async ({ page, baseURL }) => {
+// Nightly only (playwright.ci.config.ts): on every push the steps are locked in Node (quest-layer.test.tsx: parrot, clue,
+// arrow; quest-routes.test.ts: clues in any order, found again changes nothing; music.test.ts: the moods), and the
+// in-world touch by the chapter's end below.
+test('meet the parrot, follow the arrow, find the three clues, and the letter opens by itself', { tag: '@nightly' }, async ({ page, baseURL }) => {
   // Four loads of the forest and a touch at each clue: some 35-50 s on CI's software rendering.
   test.setTimeout(90_000);
   const pageErrors: string[] = [];

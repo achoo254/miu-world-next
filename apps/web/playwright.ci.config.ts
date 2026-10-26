@@ -1,23 +1,24 @@
 import { defineConfig } from '@playwright/test';
 import base from './playwright.config';
 
-// CI runs the smoke suite: every project except `perf` (up to ~30 min, rewrites the committed perf report), `budget`
-// (the render budget of every map, rewrites map-budget.json), `screens` (pictures before a release, taken on the
-// dev machine) and `store` (the app stores' screenshots, docs/store/). The CI job splits the run over two GitHub
-// runners (`--shard=i/n`, see .github/workflows/ci.yml); each runner still uses one worker.
-/** One shard's budget (docs/code-standards.md "Ngân sách thời gian test"): over it, the shard fails. */
-export const E2E_SUITE_BUDGET_SECONDS = 240;
+// The smoke suite, run on every push and pull request (`e2e:ci`, one GitHub runner, one worker): the main journeys a
+// release must hold, from sign-in to a paid purchase. Every other project (learning mechanics, bosses, co-op, worksheets,
+// every map, perf, render budget, screens) runs nightly through playwright.nightly.config.ts; its behaviour is locked
+// on every push by the Node tests listed in docs/code-standards.md "Kiểm thử".
 
-/** Projects run by hand, never on CI. */
-const MANUAL_PROJECTS = new Set(['perf', 'budget', 'screens', 'store']);
+/** The whole run's budget (docs/code-standards.md "Ngân sách thời gian test"): over it, the run fails. */
+export const E2E_SUITE_BUDGET_SECONDS = 180;
+
+/** The smoke journeys, plus `setup` (the parent session the signed-in ones start from). */
+const SMOKE_PROJECTS = new Set(['setup', 'account', 'invite', 'maps', 'quest-flow', 'shop']);
 
 export default defineConfig({
   ...base,
   reporter: [['list'], ['./e2e/time-budget-reporter.ts', { suiteBudgetSeconds: E2E_SUITE_BUDGET_SECONDS }]],
-  // Shard by test, not by file, so one long spec does not leave one runner with most of the work.
-  fullyParallel: true,
+  // A test of a smoke spec tagged `@nightly` is a longer walk through the same journey: nightly only.
+  grepInvert: /@nightly/,
   // No retry: a failure is a bug (or a flaky test to fix), and a retry doubled the time of every real failure.
   // No cap on failures either: every smoke journey runs and reports, none is left "did not run".
   retries: 0,
-  projects: (base.projects ?? []).filter((project) => !MANUAL_PROJECTS.has(project.name ?? '')),
+  projects: (base.projects ?? []).filter((project) => SMOKE_PROJECTS.has(project.name ?? '')),
 });
