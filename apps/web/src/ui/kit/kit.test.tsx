@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { afterEach, describe, expect, it } from 'vitest';
 import { Icon } from './art';
 import { buttonClass } from './button';
+import { Modal } from './modal';
 import { PinPad } from './pin-pad';
 import { ProgressBar, progressPercent } from './progress-bar';
 import { SkyScene } from './sky-scene';
@@ -82,5 +83,22 @@ describe('SkyScene', () => {
       </SkyScene>,
     );
     expect(screen.queryByText('Miu World')).toBeNull();
+  });
+});
+
+describe('Modal', () => {
+  it('scrolls back to its top when it shows another view, and only then', () => {
+    const view = (key: string) => (
+      <Modal title="Olympic" dataId="sheet" scrollKey={key}>
+        <p>{key}</p>
+      </Modal>
+    );
+    const { rerender } = render(view('hub'));
+    const dialog = screen.getByRole('dialog');
+    dialog.scrollTop = 300;
+    rerender(view('hub'));
+    expect(dialog.scrollTop).toBe(300);
+    rerender(view('practice:logic'));
+    expect(dialog.scrollTop).toBe(0);
   });
 });

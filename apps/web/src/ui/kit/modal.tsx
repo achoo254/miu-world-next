@@ -20,6 +20,7 @@ export function Modal({
   titleClass,
   className,
   scrim = true,
+  scrollKey,
 }: {
   /** Text, or `<T>` / `<Bi>` for the bilingual display. */
   title: ReactNode;
@@ -39,6 +40,11 @@ export function Modal({
   className?: string;
   /** False: no dimming backdrop and no blocking of touches beside the dialog (the game shows and plays on). */
   scrim?: boolean;
+  /**
+   * Names the view the dialog shows; when it changes (a topic picked low in a long list opens its questions in the
+   * same dialog), the dialog scrolls back to its top so the new view starts at its title, not part way down.
+   */
+  scrollKey?: string;
 }) {
   const dialog = useRef<HTMLDivElement>(null);
   const titleId = useId();
@@ -47,6 +53,14 @@ export function Modal({
   useEffect(() => {
     close.current = onClose;
   }, [onClose]);
+
+  // A new view starts at its top (the first render is at the top already).
+  const shownKey = useRef(scrollKey);
+  useEffect(() => {
+    if (shownKey.current === scrollKey) return;
+    shownKey.current = scrollKey;
+    if (dialog.current) dialog.current.scrollTop = 0;
+  }, [scrollKey]);
 
   useEffect(() => {
     const el = dialog.current;

@@ -51,7 +51,16 @@ export function OlympiadPanel({ name, onClose, onProgress }: { name: string; onC
   };
 
   return (
-    <Modal title={status ? <Bi {...status.title} /> : <T k="olympiad.rail" />} onClose={onClose} dataId="olympiad-panel" variant="scene" size="wide" className="olympiad-modal scene-sheet">
+    <Modal
+      title={status ? <Bi {...status.title} /> : <T k="olympiad.rail" />}
+      onClose={onClose}
+      dataId="olympiad-panel"
+      variant="scene"
+      size="wide"
+      className="olympiad-modal scene-sheet"
+      // A topic picked low in the list opens its questions at the top, under the board's title.
+      scrollKey={view.kind === 'practice' ? `practice:${view.topic}` : view.kind}
+    >
       {/* A run and the exam put their own back arrow in this corner (back to the topics). */}
       {view.kind !== 'practice' && view.kind !== 'exam' ? (
         <button type="button" className="scene-close" data-id="olympiad-panel-close" aria-label={t('common.close')} onClick={onClose}>
