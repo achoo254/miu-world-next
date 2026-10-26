@@ -124,6 +124,7 @@ describe('ObjectInteractionManager', () => {
     hide() {},
     update() {},
     showing: true,
+    screenBox: () => null,
   };
   /** Every spot asked about is open floor at y 10 (the room's floor). */
   const standSpot = (at: Point): Point => [at[0], 10, at[2]];

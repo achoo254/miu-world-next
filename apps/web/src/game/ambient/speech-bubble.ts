@@ -1,6 +1,7 @@
 // A speech bubble over a villager or animal: a rounded white card with a tail, painted on a canvas
 // and shown as a sprite (one draw call). It pops in, stays long enough to read, and fades out.
 import { CanvasTexture, PerspectiveCamera, SRGBColorSpace, Sprite, SpriteMaterial, Vector2, Vector3 } from 'three';
+import type { ScreenBox } from '../hud/prompt-placement';
 
 const WIDTH = 512;
 /** Room for the card, a second (English) line under the first in Song ngữ, and the tail. */
@@ -35,6 +36,9 @@ export function screenCap(worldWidth: number, distance: number, fovDeg: number, 
 const viewSize = new Vector2();
 const spot = new Vector3();
 const eye = new Vector3();
+const size = new Vector3();
+/** Below this opacity a bubble (popping in, fading out) is not counted as covering anything. */
+const SEEN_OPACITY = 0.05;
 
 export interface SpeechBubble {
   readonly sprite: Sprite;
@@ -43,6 +47,11 @@ export interface SpeechBubble {
   hide(): void;
   update(dt: number): void;
   readonly showing: boolean;
+  /**
+   * The bubble's card on a view `view` CSS pixels big, seen from `camera` (as last drawn); null while it is not seen
+   * (hidden, faded out, behind the camera). The Interact label keeps off it.
+   */
+  screenBox(camera: PerspectiveCamera, view: { width: number; height: number }): ScreenBox | null;
 }
 
 /** --color-ink of the UI tokens (a canvas cannot read CSS variables). */
@@ -135,6 +144,19 @@ export function createSpeechBubble(): SpeechBubble {
       sprite.visible = true;
     },
     hide,
+    screenBox(camera, view) {
+      if (!sprite.visible || material.opacity < SEEN_OPACITY) return null;
+      sprite.getWorldPosition(spot);
+      const distance = spot.distanceTo(camera.getWorldPosition(eye));
+      const foot = spot.project(camera);
+      if (distance <= 0 || foot.z > 1) return null;
+      const pxPerBlock = view.height / (2 * distance * Math.tan((camera.fov * Math.PI) / 360));
+      sprite.getWorldScale(size);
+      const x = ((foot.x + 1) / 2) * view.width;
+      const bottom = ((1 - foot.y) / 2) * view.height;
+      const half = (size.x * pxPerBlock) / 2;
+      return { left: x - half, right: x + half, top: bottom - size.y * pxPerBlock, bottom };
+    },
     update(dt) {
       if (left <= 0) return;
       left -= dt;

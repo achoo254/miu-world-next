@@ -978,6 +978,7 @@ export class Game {
         if (command.type === 'rescue') rescueRequested = true;
         if (command.type === 'celebrate') celebrateRequested = true;
         if (command.type === 'pet-care') petLife?.care(command.action);
+        if (command.type === 'pet-present') petLife?.present(rig.yaw);
         if (command.type === 'pet-trick') petLife?.trick(command.trick);
         if (command.type === 'pet-gear' && pet) {
           pet.wear(gearLooks(command.gear));
@@ -1348,7 +1349,10 @@ export class Game {
           const overHer = character.root.visible ? promptClearOf(anchorAt, size, herOnScreen()) : anchorAt;
           // The label is how she interacts by touch: never hidden under a HUD panel, it moves clear of them instead.
           const { panels, controls } = hudPanels();
-          const at = promptClearOfPanels(overHer, size, panels, { width: window.innerWidth, height: window.innerHeight });
+          const view = { width: window.innerWidth, height: window.innerHeight };
+          // Nor on her own or her pet's speech bubble: a label over a line makes both hard to read.
+          const bubbles = [playerBubble.screenBox(camera, view), petBubble.screenBox(camera, view)].filter((b): b is ScreenBox => b !== null);
+          const at = promptClearOfPanels(overHer, size, [...panels, ...bubbles], view);
           anchor.style.transform = `translate(-50%, -100%) translate(${at.x}px, ${at.y}px)`;
           // Drawn over the stick or Run / Jump (nowhere clear left), the controls win the taps: the label lets them
           // through (E still interacts).
