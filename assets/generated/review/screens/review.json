@@ -1,71 +1,99 @@
 {
-  "capturedFrom": "77fd2601c4e0911100447213038198dd598ca21c",
-  "capturedAt": "2026-10-26T21:15:53+07:00",
-  "reviewedAt": "2026-10-26T21:20:02+07:00",
-  "reviewer": "agent:general-purpose (năm agent, mỗi agent 12 ảnh, so với ảnh lần duyệt trước ở f486543)",
+  "capturedFrom": "9ac8be82f0b7c9873a484aa89465e889f8b26e27",
+  "capturedAt": "2026-10-26T21:54:15+07:00",
+  "reviewedAt": "2026-10-26T22:04:22+07:00",
+  "reviewer": "agent:general-purpose (năm agent, mỗi agent 12 ảnh, so với ảnh lần duyệt trước ở 77fd260)",
   "verdict": "pass",
   "findings": [
     {
-      "shot": "360x740/29-pause.png",
+      "shot": "360x740/01-login.png",
       "kind": "other",
       "severity": "note",
-      "text": "Lỗi lúc chụp lần trước đã sửa: spec chờ mục \"Chơi online\" (dòng Bạn máy) và mọi ảnh trong hộp Tạm dừng tải xong; lần này đủ emoji trên nút Âm thanh, Nhạc nền, Về chỗ an toàn. Dữ kiện missingClose là gợi ý sai: nút \"Tiếp tục chơi\" đóng hộp và nhìn thấy rõ (cả khổ iPad).",
+      "text": "Hàng link mới \"Quyền riêng tư  Điều khoản\" nằm dưới dòng email, rõ chữ, không bị cắt; dữ kiện DOM không có link nào dưới 44 px. Thẻ Đăng nhập cao thêm một hàng nên mép dưới chạm đáy màn 740 px; \"Tạo tài khoản\" vẫn hiện đủ.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/07-play-hud.png",
-      "kind": "other",
+      "shot": "820x1180/01-login.png",
+      "kind": "shifted",
       "severity": "note",
-      "text": "Thẻ nhiệm vụ trên điện thoại giờ xuống hai dòng, hiện đủ \"Khu rừng bí mật – Chương 1: Lá thần\" (lần trước cắt sau tên khu); không đè avatar hay bản đồ nhỏ. Khổ iPad vẫn một dòng.",
+      "text": "Logo, linh vật và thẻ Đăng nhập dời lên khoảng 22 px vì thẻ thêm hàng link \"Quyền riêng tư · Điều khoản\" và nội dung căn giữa dọc; đúng ý commit, bố cục vẫn gọn.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/30-party-quest.png",
-      "kind": "clipped",
+      "shot": "820x1180/20-landing.png",
+      "kind": "other",
       "severity": "note",
-      "text": "Khi số bước có hai chữ số (\"11/11\") tên cần ba dòng nên dòng hai kết thúc \"Lá…\" (18-party, 25-online-off cũng vậy); tên khu đọc đủ, tên đầy đủ có trên thẻ nhiệm vụ khi chạm. Thẻ \"Cả đội chơi\" vẫn bị hộp cuộn của cột HUD cắt phía dưới: cột cố ý cuộn để không chạy xuống dưới cần điều khiển, mà ở 360 × 740 không đủ chỗ cho cả khung đội đang mở lẫn thẻ.",
+      "text": "Chân trang giờ là \"Một app của hoandat.com · Quyền riêng tư · Điều khoản\", vừa trong màn (đáy khoảng 1170/1180). Ở khổ điện thoại chân trang nằm dưới mép màn của trang cuộn nên ảnh 360x740 không cho thấy; dữ kiện landing-login offScreen cũng chỉ vì trang cuộn.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/23-invite-page.png",
+      "kind": "shifted",
+      "severity": "note",
+      "text": "Thẻ mời và logo dời lên khoảng 11 px do thêm link \"Điều khoản\" cạnh \"Quyền riêng tư\" dưới thẻ; hai link rõ chữ, dữ kiện DOM không có link nào dưới 44 px (cũng vậy ở 360x740).",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/21-lesson-page.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Ảnh không tới chân trang chủ đề nên link \"Điều khoản\" ở đó không thấy trong ảnh; HTML chân trang được test vite-lesson-pages.test.ts khóa (hoandat.com, Quyền riêng tư, Điều khoản).",
       "fixedIn": null
     },
     {
       "shot": "360x740/13-olympiad-practice.png",
       "kind": "off-screen",
       "severity": "note",
-      "text": "Đã sửa: chủ đề Olympic mở ở đầu bảng nên biển \"Olympic Toán\" hiện đủ (lần trước bị mép trên cắt). Vì vậy nút \"Kiểm tra\" nằm ngay dưới mép màn; bảng cuộn được.",
+      "text": "Bảng Olympic giờ mở ở đầu (biển \"Thử thách Olympic Toán\" hiện đủ, lần trước bị mép trên cắt), nên nút \"Kiểm tra\" nằm ngay dưới mép màn 740 px và phải cuộn một chút mới thấy. Nút nằm trong panel cuộn, không bị ghim ra ngoài; commit này không đổi màn Olympic. Khổ iPad thấy đủ nút.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/18-party.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Thẻ nhiệm vụ hai dòng vẫn kết thúc \"Khu rừng bí mật – Chương 1: Lá…\" (DOM: hiện 36/57 px); 30-party-quest và 25-online-off cũng vậy. Ở 07, 08 (không có tổ đội) tên hiện đủ.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/11-reward.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Ảnh chụp lúc panel đã cuộn xuống đáy nên hàng thẻ kỹ năng trên cùng bị cắt ở mép trên; vật phẩm nhặt được đổi (\"Cành thông thơm\", dữ liệu lúc chụp) nên ô vật phẩm cao thêm một dòng. Không phải tràn bố cục.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/15-shop.png",
+      "kind": "off-screen",
+      "severity": "note",
+      "text": "Thông báo \"+80 XP\" bị cắt ở mép trên, sau panel cửa hàng; không phải nút, giống lần trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/29-pause.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dữ kiện missingClose là gợi ý sai: nút \"Tiếp tục chơi\" đóng hộp và thấy rõ (cả khổ iPad). Bóng dưới nút \"Về chỗ an toàn\" sát mép khung, giống lần trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/14-boss.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dòng hướng dẫn là \"Chọn tấm khiên mang đáp án đúng rồi phóng bùa vào đó\" thay vì câu kéo bùa của lần trước: câu đổi theo cách máy nhận cảm ứng lúc chụp (lần trước khổ điện thoại cũng gặp); commit này không đổi màn boss. Đọc được, không che gì.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/30-party-quest.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Đã sửa: nhãn \"Bông · Tương tác\" tránh khỏi bong bóng thoại của bé và thú cưng, không còn nằm đè lên câu thoại.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/17-pet-care.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Đã sửa: khi mở bảng chăm sóc, mèo xám ngồi cạnh bé khoảng một khối, quay mặt về camera, không còn đứng che bé (cả khổ điện thoại).",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/22-friends-invite.png",
       "kind": "overlap",
       "severity": "note",
-      "text": "Nút nổi \"Quay lại game\" vẫn nằm trên góc dưới phải viền khung Bạn bè, không che chữ hay vùng chạm; trang chừa chỗ cuộn dưới nút nên cuộn là thấy hết. Giữ theo thiết kế nút nổi.",
+      "text": "Nhãn \"Bông · Tương tác\" nằm trên thân nhân vật, không đè bóng thoại; bóng thoại \"Hôm nay đi đâu nhỉ?\" bị khung \"Cả đội chơi…\" che nhẹ mép trái chữ \"H\", vẫn đọc được.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/14-boss.png",
-      "kind": "other",
+      "shot": "820x1180/25-online-off.png",
+      "kind": "overlap",
       "severity": "note",
-      "text": "Dòng hướng dẫn khác lần trước là đúng: câu được chọn ngẫu nhiên trong ba cách nói cùng một nước đi (boss.move.fling), không phụ thuộc thiết bị.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/26-moderation.png",
-      "kind": "raw-text",
-      "severity": "note",
-      "text": "Dòng \"Bản đồ\" trong thẻ báo cáo hiện mã map \"forest-ch1\" thay vì tên khu; có từ trước, chỉ ở trang kiểm duyệt.",
+      "text": "Mèo xám đứng sau lưng, che nửa dưới nhân vật, trong khi ở 17-pet-care và 18-party thú cưng đứng bên cạnh. Commit này không đổi màn chơi; vị trí thú cưng ở màn này khác theo lúc chụp, người duyệt xem có cần sửa.",
       "fixedIn": null
     }
   ]
