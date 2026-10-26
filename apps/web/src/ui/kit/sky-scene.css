@@ -41,7 +41,7 @@
 .logo-letters { display: inline-flex; }
 .logo-letter { display: inline-block; }
 .logo-space { display: inline-block; width: 0.3em; }
-.logo-sparkle { display: inline-flex; }
+.logo-mark { display: block; flex: none; border-radius: 22%; }
 
 /* Narrow screens: fewer things in the sky, and none on phones, so the form stays the focus. */
 @media (max-width: 860px) {
@@ -82,7 +82,7 @@
   .miu-alt { animation: miu-alt var(--duration-miu-cycle) ease-in-out infinite; }
 
   .logo-letter { animation: logo-letter var(--duration-enter) var(--ease-pop) calc(var(--i) * 60ms) both; }
-  .logo-sparkle { animation: logo-sparkle calc(var(--duration-twinkle) * 1.2) ease-in-out infinite alternate; }
+  .logo-mark { animation: logo-mark calc(var(--duration-twinkle) * 1.2) ease-in-out infinite alternate; }
 
   .brand { animation: enter-side var(--duration-enter) ease-out both; }
   .scene-content > .panel, .profile-grid > li { animation: enter-pop var(--duration-enter) var(--ease-pop) both; }
@@ -157,9 +157,9 @@
   from { transform: translateY(-0.6em) scale(0.6); opacity: 0; }
   to { transform: none; opacity: 1; }
 }
-@keyframes logo-sparkle {
-  from { transform: rotate(-12deg) scale(0.92); }
-  to { transform: rotate(12deg) scale(1.08); }
+@keyframes logo-mark {
+  from { transform: rotate(-6deg) scale(0.96); }
+  to { transform: rotate(6deg) scale(1.04); }
 }
 
 @keyframes enter-side { from { transform: translateX(-1.5rem); opacity: 0; } to { transform: none; opacity: 1; } }

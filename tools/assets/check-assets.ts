@@ -3,6 +3,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
+import picomatch from 'picomatch';
 import {
   ASSETS_DIR,
   MANIFEST_NAME,
@@ -16,6 +17,7 @@ import {
   sha256File,
   sourcesSchema,
   type Budget,
+  type BrandArt,
   type Manifest,
 } from './asset-lib';
 import { buildManifest, serializeManifest } from './build-manifest';
@@ -24,12 +26,18 @@ export interface CheckInput {
   assetsDir: string;
   manifest: Manifest;
   allowlist: string[];
+  /** The brand-art licence and the generated files it may cover; absent means no exception. */
+  brandArt?: BrandArt;
   budget: Budget;
 }
 
-export async function checkAssets({ assetsDir, manifest, allowlist, budget }: CheckInput): Promise<string[]> {
+export async function checkAssets({ assetsDir, manifest, allowlist, brandArt, budget }: CheckInput): Promise<string[]> {
   const errors: string[] = [];
   const allowed = new Set(allowlist);
+  const isBrandArt = brandArt ? picomatch(brandArt.globs) : (): boolean => false;
+  const generatedPaths = new Set(manifest.generated.map((entry) => entry.path));
+  const licenseOk = (rel: string, license: string): boolean =>
+    allowed.has(license) || (brandArt?.license === license && generatedPaths.has(rel) && isBrandArt(rel));
   const declared = new Map<string, { sha256: string; bytes: number; license: string }>();
   for (const entry of [...manifest.files, ...manifest.generated]) declared.set(entry.path, entry);
 
@@ -57,7 +65,7 @@ export async function checkAssets({ assetsDir, manifest, allowlist, budget }: Ch
     if (rel.startsWith('packs/')) packsBytes += actual.bytes;
     if (actual.bytes > budget.fileMaxBytes) errors.push(`file over budget: ${rel} (${actual.bytes} > ${budget.fileMaxBytes} bytes)`);
     if (actual.sha256 !== entry.sha256 || actual.bytes !== entry.bytes) errors.push(`hash mismatch: ${rel}`);
-    if (!allowed.has(entry.license)) errors.push(`license not allowed (${entry.license}): ${rel}`);
+    if (!licenseOk(rel, entry.license)) errors.push(`license not allowed (${entry.license}): ${rel}`);
   }
 
   for (const rel of declared.keys()) {
@@ -77,6 +85,7 @@ async function main(): Promise<void> {
     assetsDir: ASSETS_DIR,
     manifest,
     allowlist: sources.licenseAllowlist,
+    brandArt: sources.brandArt,
     budget: sources.budget,
   });
   // The manifest must be exactly what the tools derive from sources.json + generated.json: a

@@ -27,10 +27,10 @@ Gate trước khi báo xong, cách chạy test và E2E trên máy dev dùng chun
 
 ## License asset
 
-Chỉ nhận CC0, MIT, OFL. Nguồn, phiên bản và hash từng file: [`assets/LICENSES.md`](assets/LICENSES.md) và `assets/manifest.json` (sinh bằng `pnpm assets:manifest`, không sửa tay).
+Chỉ nhận CC0, MIT, OFL. Ngoại lệ duy nhất là logo/icon app (và thẻ chia sẻ có in logo): AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0). Nguồn, phiên bản và hash từng file: [`assets/LICENSES.md`](assets/LICENSES.md) và `assets/manifest.json` (sinh bằng `pnpm assets:manifest`, không sửa tay).
 
 ## Giấy phép
 
-Mã nguồn theo giấy phép MIT ([`LICENSE`](LICENSE)). Asset trong `assets/` không thuộc phạm vi MIT: giữ giấy phép gốc của từng pack, xem [`assets/LICENSES.md`](assets/LICENSES.md).
+Mã nguồn theo giấy phép MIT ([`LICENSE`](LICENSE)). Asset trong `assets/` không thuộc phạm vi MIT: giữ giấy phép gốc của từng pack (logo/icon app: hoandat giữ mọi quyền), xem [`assets/LICENSES.md`](assets/LICENSES.md).
 
 Quyền riêng tư của người chơi và địa chỉ liên hệ cho báo lỗi bảo mật hoặc yêu cầu về dữ liệu: trang `/privacy` của game (nội dung ở [`content/legal/privacy-vi.json`](content/legal/privacy-vi.json)).

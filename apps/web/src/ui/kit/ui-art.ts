@@ -195,6 +195,9 @@ export const SPECIES_ART: Readonly<Record<string, Readonly<Record<MiuPose, strin
   ),
 );
 
+/** The game's logo (Miu's head, `pnpm assets:logo`) beside the animated name on the sign-in screens. */
+export const LOGO_MARK = 'generated/brand/miu-logo-120.png';
+
 /** Home and world-map background: the world overview, one floating island per region (`pnpm assets:home`). */
 export const HOME_ISLAND = 'generated/home/world.png';
 
@@ -219,6 +222,7 @@ export const isUiIcon = (key: string): key is UiIcon => key in UI_ICONS;
 export const UI_ART_PATHS: readonly string[] = [
   ...Object.values(UI_ICONS),
   ...new Set([...Object.values(MIU_ART), ...Object.values(SPECIES_ART).flatMap((art) => Object.values(art))]),
+  LOGO_MARK,
   HOME_ISLAND,
   ...Object.values(REGION_BACKDROPS),
   REGION_CHEST,

@@ -1,92 +1,56 @@
-// Renders the Miu World logo: Miu (the miu-cat player model in her own clothes, cheering) on the sky gradient of the
-// UI tokens (`--color-sky-top` → `--color-sky-bottom`), full-bleed square so app stores and Google's consent screen
-// can round or circle-crop it; she sits inside the inscribed circle. Rendered once at 1024 px (the App Store icon's
-// size) and scaled down from there. Output in assets/generated/brand/: miu-logo-<size>.png for the iPhone/Android apps'
-// store icon (1024), Google's OAuth consent screen (120), the favicon (32), the iPhone home screen (180) and the
-// installed web app (192, 512); miu-logo-maskable-512.png with Miu inside the maskable safe zone (a circle of 40%
-// radius) for the installed web app on Android; and for the Android app's adaptive icon, miu-logo-adaptive-1024.png
-// (Miu inside the 66 dp circle of a 108 dp layer that every launcher shape keeps) with miu-logo-monochrome-1024.png,
-// her white silhouette on transparent at the same place, for Android 13's themed icons. Re-run `pnpm assets:logo`;
-// apps/web/vite-app-icons.ts links them into the pages, apps/mobile/scripts/native-icons.ts into the apps.
-import os from 'node:os';
+// Derives every Miu World logo file from ONE master picture: designs/brand/miu-logo-master-1024.png, Miu's voxel cat
+// head on the sky gradient, full-bleed square (AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by
+// hoandat, all rights reserved, not CC0 — the licence the asset gate accepts only for generated/brand/). Nothing is
+// drawn here, so re-running cannot bring back an older logo. Output in assets/generated/brand/:
+// - miu-logo-<size>.png, the master scaled down, for the iPhone/Android apps' store icon (1024), Google's OAuth consent
+//   screen (120), the favicon (32), the iPhone home screen (180) and the installed web app (192, 512);
+// - miu-logo-maskable-512.png, the master at 80% inside the maskable safe zone, for the installed web app on Android;
+// - miu-logo-adaptive-1024.png, the master at 60% (inside the 66 dp circle of the 108 dp layer every launcher shape
+//   keeps), the Android app's adaptive foreground. Around the inset art the sky goes on from the art's own edges;
+// - miu-logo-monochrome-1024.png, the cat head's white silhouette on transparent at the adaptive place and size (eyes and
+//   mouth cut out), for Android 13's themed icons.
+// Re-run `pnpm assets:logo`; apps/web/vite-app-icons.ts links them into the pages, apps/mobile/scripts/native-icons.ts
+// into the apps.
 import path from 'node:path';
-import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { PNG } from 'pngjs';
-import { ASSETS_DIR } from './asset-lib';
+import { ASSETS_DIR, REPO_ROOT } from './asset-lib';
 import { writeManifest } from './build-manifest';
-import { readCharacterSpecs } from './kitbash-character';
-import { renderShots } from './render-preview';
 
+export const MASTER_PATH = path.join(REPO_ROOT, 'designs/brand/miu-logo-master-1024.png');
 const OUT_DIR = path.join(ASSETS_DIR, 'generated/brand');
 const MASTER = 1024;
-/** Same values as --color-sky-top and --color-sky-bottom in apps/web/src/ui/tokens.css. */
-const SKY_TOP: Rgb = [0x8f, 0xd0, 0xff];
-const SKY_BOTTOM: Rgb = [0xff, 0xe1, 0xef];
-/** Miu's height as a share of the logo; her box stays inside the inscribed circle. */
-const FIGURE_HEIGHT = 0.8;
-/** Smaller for the maskable icon: her box stays inside the 40%-radius safe zone Android may crop to. */
-const MASKABLE_FIGURE_HEIGHT = 0.66;
-/**
- * Smaller again for the Android app's adaptive icon: a launcher shows the middle 72 dp of the 108 dp layer and may cut
- * it to a 66 dp circle, so her box (taller than wide) stays inside a circle of 61% of the side.
- */
-const ADAPTIVE_FIGURE_HEIGHT = 0.5;
-type Look = 'logo' | 'silhouette';
-const OUTPUTS: ReadonlyArray<{ file: string; size: number; figure: number; look: Look }> = [
-  ...[1024, 512, 192, 180, 120, 32].map((size) => ({ file: `miu-logo-${size}.png`, size, figure: FIGURE_HEIGHT, look: 'logo' as const })),
-  { file: 'miu-logo-maskable-512.png', size: 512, figure: MASKABLE_FIGURE_HEIGHT, look: 'logo' },
-  { file: 'miu-logo-adaptive-1024.png', size: MASTER, figure: ADAPTIVE_FIGURE_HEIGHT, look: 'logo' },
-  { file: 'miu-logo-monochrome-1024.png', size: MASTER, figure: ADAPTIVE_FIGURE_HEIGHT, look: 'silhouette' },
-];
-const PORTRAIT = 'miu-portrait.png';
+/** The art's share of the side in the maskable icon: inside the 40%-radius circle Android may crop to. */
+const MASKABLE_SCALE = 0.8;
+/** The art's share of the 108 dp adaptive layer: inside the 66 dp circle a launcher keeps. */
+const ADAPTIVE_SCALE = 0.6;
+/** Columns at each side of the inset art averaged into the sky colour that continues around it. */
+const EDGE_COLUMNS = 12;
+/** Width of the soft blend between the inset art and the continued sky, as a share of the art's side. */
+const FEATHER = 0.06;
+/** How far (RGB distance) a pixel must be from its row's sky colour to count as the cat: the sky varies by under 8, the white head sits about 30 off the pink sky. */
+const SKY_DISTANCE = 16;
+/** Dark pixels (luma below this) inside the head are the eyes and mouth, cut out of the silhouette. */
+const EYE_LUMA = 90;
+/** Radius of the majority filter that smooths the mask's edges and removes slivers a few pixels thin. */
+const SMOOTH_RADIUS = 4;
+/** Specks of the cat mask (or holes in it) smaller than this many pixels are noise, dropped. */
+const MIN_REGION = 400;
 
-type Rgb = [number, number, number];
-
-async function renderPortrait(dir: string): Promise<PNG> {
-  const miu = (await readCharacterSpecs())['miu-cat'];
-  if (!miu) throw new Error('miu-cat spec missing');
-  const acc = miu.clothes ?? '';
-  await renderShots([
-    {
-      outDir: dir,
-      label: 'render-brand-logo',
-      shots: async () => [
-        {
-          file: PORTRAIT,
-          query: { model: miu.output, ...(acc ? { acc } : {}), anim: 'cheer', t: 0.3, yaw: 25, pitch: 10, size: MASTER, bg: 'transparent' },
-          transparent: true,
-        },
-      ],
-    },
-  ]);
-  return PNG.sync.read(await readFile(path.join(dir, PORTRAIT)));
-}
-
-/** The smallest box holding every pixel that is not fully transparent. */
-function opaqueBox(png: PNG): { x: number; y: number; w: number; h: number } {
-  let minX = png.width;
-  let minY = png.height;
-  let maxX = -1;
-  let maxY = -1;
-  for (let y = 0; y < png.height; y++) {
-    for (let x = 0; x < png.width; x++) {
-      if (png.data[(y * png.width + x) * 4 + 3] === 0) continue;
-      minX = Math.min(minX, x);
-      minY = Math.min(minY, y);
-      maxX = Math.max(maxX, x);
-      maxY = Math.max(maxY, y);
-    }
-  }
-  if (maxX < 0) throw new Error('portrait is empty');
-  return { x: minX, y: minY, w: maxX - minX + 1, h: maxY - minY + 1 };
+type Box = { x: number; y: number; w: number; h: number };
+export interface BrandLogo {
+  file: string;
+  png: PNG;
+  /** Opaque pictures are written without an alpha channel: the App Store refuses an icon that has one. */
+  opaque: boolean;
 }
 
 /**
  * Area-averaged resample of a source box into a width × height picture, in premultiplied alpha so transparent
  * edges do not bleed dark fringes.
  */
-function resample(src: PNG, box: { x: number; y: number; w: number; h: number }, width: number, height: number): PNG {
+function resample(src: PNG, box: Box, width: number, height: number): PNG {
   const out = new PNG({ width, height });
   const sx = box.w / width;
   const sy = box.h / height;
@@ -125,63 +89,194 @@ function resample(src: PNG, box: { x: number; y: number; w: number; h: number },
   return out;
 }
 
+const scaled = (src: PNG, size: number): PNG => (src.width === size ? src : resample(src, { x: 0, y: 0, w: src.width, h: src.height }, size, size));
+
+/** Per row, the mean colour of the outer columns at both sides: the sky behind the art in that row. */
+function rowSky(src: PNG): number[][] {
+  const columns = Math.min(EDGE_COLUMNS, Math.floor(src.width / 2));
+  const rows: number[][] = [];
+  for (let y = 0; y < src.height; y++) {
+    const sum = [0, 0, 0];
+    for (let k = 0; k < columns; k++) {
+      for (const x of [k, src.width - 1 - k]) {
+        const i = (y * src.width + x) * 4;
+        for (let c = 0; c < 3; c++) sum[c] = (sum[c] ?? 0) + (src.data[i + c] ?? 0);
+      }
+    }
+    rows.push(sum.map((v) => v / (2 * columns)));
+  }
+  return rows;
+}
+
 /**
- * A `MASTER` square with Miu centred, `figure` her height as a share of the side: on the sky gradient, opaque (`logo`),
- * or as a white silhouette on transparent (`silhouette`, her own edge alpha kept).
+ * The master scaled to `scale` of a `size` square and centred; around it the sky continues from the scaled art's own
+ * edge rows (clamped above and below), with the art's border blended into it.
  */
-function compose(portrait: PNG, figure: number, look: Look): PNG {
-  const logo = new PNG({ width: MASTER, height: MASTER });
-  for (let y = 0; y < MASTER; y++) {
-    const k = y / (MASTER - 1);
-    const sky = look === 'logo' ? SKY_TOP.map((top, c) => Math.round(top + ((SKY_BOTTOM[c] ?? top) - top) * k)) : [255, 255, 255];
-    for (let x = 0; x < MASTER; x++) {
-      const o = (y * MASTER + x) * 4;
-      logo.data[o] = sky[0] ?? 0;
-      logo.data[o + 1] = sky[1] ?? 0;
-      logo.data[o + 2] = sky[2] ?? 0;
-      logo.data[o + 3] = look === 'logo' ? 255 : 0;
-    }
-  }
-  const box = opaqueBox(portrait);
-  const height = Math.round(MASTER * figure);
-  const width = Math.round((box.w / box.h) * height);
-  const miu = resample(portrait, box, width, height);
-  const left = Math.round((MASTER - width) / 2);
-  const top = Math.round((MASTER - height) / 2);
-  for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
-      const f = (y * width + x) * 4;
-      const alpha = (miu.data[f + 3] ?? 0) / 255;
-      if (alpha === 0) continue;
-      const o = ((top + y) * MASTER + left + x) * 4;
-      if (look === 'silhouette') {
-        logo.data[o + 3] = miu.data[f + 3] ?? 0;
-        continue;
-      }
+export function inset(master: PNG, scale: number, size: number): PNG {
+  const side = Math.round(size * scale);
+  const small = scaled(master, side);
+  const sky = rowSky(small);
+  const offset = Math.floor((size - side) / 2);
+  const feather = Math.max(1, Math.round(side * FEATHER));
+  const out = new PNG({ width: size, height: size });
+  for (let y = 0; y < size; y++) {
+    const row = sky[Math.min(side - 1, Math.max(0, y - offset))] ?? [0, 0, 0];
+    for (let x = 0; x < size; x++) {
+      const o = (y * size + x) * 4;
+      const ax = x - offset;
+      const ay = y - offset;
+      const inside = ax >= 0 && ay >= 0 && ax < side && ay < side;
+      const weight = inside ? Math.min(1, Math.min(ax, side - 1 - ax, ay, side - 1 - ay) / feather) : 0;
+      const i = (ay * side + ax) * 4;
       for (let c = 0; c < 3; c++) {
-        logo.data[o + c] = Math.round((miu.data[f + c] ?? 0) * alpha + (logo.data[o + c] ?? 0) * (1 - alpha));
+        const art = inside ? (small.data[i + c] ?? 0) : 0;
+        out.data[o + c] = Math.round(art * weight + (row[c] ?? 0) * (1 - weight));
       }
+      out.data[o + 3] = 255;
     }
   }
-  return logo;
+  return out;
+}
+
+/** Sets every 4-connected region of `value` pixels smaller than MIN_REGION to the other value. */
+function dropSmallRegions(mask: Uint8Array, width: number, value: 0 | 1): void {
+  const seen = new Uint8Array(mask.length);
+  const stack: number[] = [];
+  for (let start = 0; start < mask.length; start++) {
+    if (seen[start] || mask[start] !== value) continue;
+    const region: number[] = [];
+    seen[start] = 1;
+    stack.push(start);
+    while (stack.length > 0) {
+      const p = stack.pop() ?? 0;
+      region.push(p);
+      const x = p % width;
+      const neighbours = [x > 0 ? p - 1 : -1, x < width - 1 ? p + 1 : -1, p - width, p + width];
+      for (const n of neighbours) {
+        if (n < 0 || n >= mask.length || seen[n] || mask[n] !== value) continue;
+        seen[n] = 1;
+        stack.push(n);
+      }
+    }
+    if (region.length < MIN_REGION) for (const p of region) mask[p] = value === 1 ? 0 : 1;
+  }
+}
+
+/** Each pixel becomes the majority value of the (2r + 1)² square around it (summed-area table). */
+function majority(mask: Uint8Array, width: number, height: number, r: number): Uint8Array {
+  const sums = new Uint32Array((width + 1) * (height + 1));
+  for (let y = 0; y < height; y++) {
+    let row = 0;
+    for (let x = 0; x < width; x++) {
+      row += mask[y * width + x] ?? 0;
+      sums[(y + 1) * (width + 1) + x + 1] = (sums[y * (width + 1) + x + 1] ?? 0) + row;
+    }
+  }
+  const out = new Uint8Array(mask.length);
+  for (let y = 0; y < height; y++) {
+    const y0 = Math.max(0, y - r);
+    const y1 = Math.min(height, y + r + 1);
+    for (let x = 0; x < width; x++) {
+      const x0 = Math.max(0, x - r);
+      const x1 = Math.min(width, x + r + 1);
+      const at = (yy: number, xx: number): number => sums[yy * (width + 1) + xx] ?? 0;
+      const count = at(y1, x1) - at(y0, x1) - at(y1, x0) + at(y0, x0);
+      out[y * width + x] = count * 2 > (y1 - y0) * (x1 - x0) ? 1 : 0;
+    }
+  }
+  return out;
+}
+
+/**
+ * The cat head as a 0/1 mask of the master: pixels far from their row's sky colour, with holes filled and specks
+ * dropped, then the dark eyes and mouth cut back out and the edges smoothed.
+ */
+export function catMask(master: PNG): Uint8Array {
+  const { width, height } = master;
+  const sky = rowSky(master);
+  const mask = new Uint8Array(width * height);
+  for (let y = 0; y < height; y++) {
+    const row = sky[y] ?? [0, 0, 0];
+    for (let x = 0; x < width; x++) {
+      const i = (y * width + x) * 4;
+      const distance = Math.hypot(
+        (master.data[i] ?? 0) - (row[0] ?? 0),
+        (master.data[i + 1] ?? 0) - (row[1] ?? 0),
+        (master.data[i + 2] ?? 0) - (row[2] ?? 0),
+      );
+      mask[y * width + x] = distance > SKY_DISTANCE ? 1 : 0;
+    }
+  }
+  dropSmallRegions(mask, width, 1);
+  // Everything the sky around the picture cannot reach is the head (fills the face's features).
+  const outside = new Uint8Array(mask.length);
+  const stack: number[] = [];
+  for (let x = 0; x < width; x++) stack.push(x, (height - 1) * width + x);
+  for (let y = 0; y < height; y++) stack.push(y * width, y * width + width - 1);
+  while (stack.length > 0) {
+    const p = stack.pop() ?? 0;
+    if (outside[p] || mask[p]) continue;
+    outside[p] = 1;
+    const x = p % width;
+    if (x > 0) stack.push(p - 1);
+    if (x < width - 1) stack.push(p + 1);
+    if (p >= width) stack.push(p - width);
+    if (p + width < mask.length) stack.push(p + width);
+  }
+  for (let p = 0; p < mask.length; p++) {
+    if (outside[p]) continue;
+    const i = p * 4;
+    const luma = 0.299 * (master.data[i] ?? 0) + 0.587 * (master.data[i + 1] ?? 0) + 0.114 * (master.data[i + 2] ?? 0);
+    mask[p] = luma < EYE_LUMA ? 0 : 1;
+  }
+  const smooth = majority(mask, width, height, SMOOTH_RADIUS);
+  dropSmallRegions(smooth, width, 0);
+  dropSmallRegions(smooth, width, 1);
+  return smooth;
+}
+
+/** The cat head in white on transparent, at the adaptive icon's place and size, with anti-aliased edges. */
+export function monochrome(master: PNG, scale: number, size: number): PNG {
+  const mask = catMask(master);
+  const full = new PNG({ width: master.width, height: master.height });
+  for (let p = 0; p < mask.length; p++) {
+    full.data.fill(255, p * 4, p * 4 + 3);
+    full.data[p * 4 + 3] = mask[p] ? 255 : 0;
+  }
+  const side = Math.round(size * scale);
+  const small = scaled(full, side);
+  const offset = Math.floor((size - side) / 2);
+  const out = new PNG({ width: size, height: size });
+  out.data.fill(0);
+  for (let y = 0; y < side; y++) {
+    for (let x = 0; x < side; x++) {
+      const o = ((offset + y) * size + offset + x) * 4;
+      out.data.fill(255, o, o + 3);
+      out.data[o + 3] = small.data[(y * side + x) * 4 + 3] ?? 0;
+    }
+  }
+  return out;
+}
+
+export function renderBrandLogos(master: PNG): BrandLogo[] {
+  if (master.width !== MASTER || master.height !== MASTER) throw new Error(`logo master must be ${MASTER} × ${MASTER}`);
+  return [
+    ...[1024, 512, 192, 180, 120, 32].map((size) => ({ file: `miu-logo-${size}.png`, png: scaled(master, size), opaque: true })),
+    { file: 'miu-logo-maskable-512.png', png: scaled(inset(master, MASKABLE_SCALE, MASTER), 512), opaque: true },
+    { file: 'miu-logo-adaptive-1024.png', png: inset(master, ADAPTIVE_SCALE, MASTER), opaque: true },
+    { file: 'miu-logo-monochrome-1024.png', png: monochrome(master, ADAPTIVE_SCALE, MASTER), opaque: false },
+  ];
 }
 
 async function main(): Promise<void> {
-  const tmp = await mkdtemp(path.join(os.tmpdir(), 'miu-logo-'));
-  try {
-    const portrait = await renderPortrait(tmp);
-    await rm(OUT_DIR, { recursive: true, force: true });
-    await mkdir(OUT_DIR, { recursive: true });
-    for (const { file, size, figure, look } of OUTPUTS) {
-      const logo = compose(portrait, figure, look);
-      const png = size === MASTER ? logo : resample(logo, { x: 0, y: 0, w: MASTER, h: MASTER }, size, size);
-      // The opaque logos are written without an alpha channel: the App Store refuses an icon that has one.
-      await writeFile(path.join(OUT_DIR, file), PNG.sync.write(png, look === 'logo' ? { colorType: 2 } : {}));
-    }
-    console.log(`render-brand-logo: ${OUTPUTS.length} images in ${path.relative(process.cwd(), OUT_DIR)}`);
-  } finally {
-    await rm(tmp, { recursive: true, force: true });
+  const master = PNG.sync.read(await readFile(MASTER_PATH));
+  const logos = renderBrandLogos(master);
+  await rm(OUT_DIR, { recursive: true, force: true });
+  await mkdir(OUT_DIR, { recursive: true });
+  for (const { file, png, opaque } of logos) {
+    await writeFile(path.join(OUT_DIR, file), PNG.sync.write(png, opaque ? { colorType: 2 } : {}));
   }
+  console.log(`render-brand-logo: ${logos.length} images in ${path.relative(process.cwd(), OUT_DIR)}`);
   await writeManifest();
 }
 

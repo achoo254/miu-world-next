@@ -26,6 +26,15 @@ Allowed licenses: CC0-1.0, MIT, OFL-1.1. Files built from these packs are listed
 
 Credits: art by Kenney (www.kenney.nl), emoji by Microsoft Fluent Emoji, fonts Baloo 2, Nunito and Playwrite Việt Nam (SIL Open Font License).
 
+## Brand art — LicenseRef-hoandat-all-rights-reserved
+
+Not CC0 and not covered by the allowlist above: the gate accepts this licence only for these generated files.
+
+| Files | Source |
+| --- | --- |
+| `generated/brand/*.png` | designs/brand/miu-logo-master-1024.png: AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0) |
+| `generated/share-cards/*.png` | Contains the Miu logo (generated/brand/miu-logo-512.png): AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0) |
+
 ## Cube Pets — CC0-1.0
 
 ```text

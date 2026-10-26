@@ -19,6 +19,8 @@ Lý do và quyết định: `docs/system-architecture.md` (mục Asset pipeline)
 
 Không tự vẽ, không dùng AI tạo ảnh trả phí, không dùng gì của Minecraft.
 
+Ngoại lệ hẹp (26/10/2026): logo và icon app là ảnh AI — "AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)". Chỉ một ảnh gốc `designs/brand/miu-logo-master-1024.png`; `pnpm assets:logo` suy ra mọi file trong `assets/generated/brand/` từ ảnh đó. License `LicenseRef-hoandat-all-rights-reserved` (khai ở `brandArt` của `tools/assets/sources.json`) chỉ được gate nhận cho file sinh ra khớp `brandArt.globs` (logo, và thẻ chia sẻ có in logo); thêm glob mới là thay đổi cần duyệt. Art trong game (khối, nhân vật, prop, map, hình minh họa UI; chỗ UI hiện logo thì dùng đúng file logo) vẫn chỉ CC0/MIT/OFL hoặc sinh bằng code, không dùng ảnh AI.
+
 ## Thêm pack mới
 
 1. Khai báo pack trong `tools/assets/sources.json` (schema ở `tools/assets/asset-lib.ts`). License phải thuộc `licenseAllowlist`; để trống `sha256` cho lần tải đầu (trust-on-first-use), sau đó giữ hash đã ghi.

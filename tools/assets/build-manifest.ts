@@ -62,6 +62,7 @@ export async function buildManifest(): Promise<Manifest> {
       license: hit.rule.license,
       generator: hit.rule.generator,
       derivedFrom: hit.rule.derivedFrom,
+      ...(hit.rule.source ? { source: hit.rule.source } : {}),
       sha256,
       bytes,
     });
@@ -70,6 +71,8 @@ export async function buildManifest(): Promise<Manifest> {
 }
 
 async function renderLicenses(sources: Sources): Promise<string> {
+  const rules = await readJson(GENERATED_PATH, generatedRulesSchema);
+  const brandRules = rules.filter((rule) => rule.license === sources.brandArt.license);
   const lines = [
     '# Asset licenses',
     '',
@@ -82,6 +85,14 @@ async function renderLicenses(sources: Sources): Promise<string> {
     ...sources.packs.map((p) => `| ${p.name} (\`${p.id}\`) | ${p.author} | ${p.version} | ${p.license} | ${p.homepage} |`),
     '',
     'Credits: art by Kenney (www.kenney.nl), emoji by Microsoft Fluent Emoji, fonts Baloo 2, Nunito and Playwrite Việt Nam (SIL Open Font License).',
+    '',
+    `## Brand art — ${sources.brandArt.license}`,
+    '',
+    'Not CC0 and not covered by the allowlist above: the gate accepts this licence only for these generated files.',
+    '',
+    '| Files | Source |',
+    '| --- | --- |',
+    ...brandRules.map((rule) => `| \`${rule.glob}\` | ${rule.source ?? ''} |`),
     '',
   ];
   for (const pack of sources.packs) {

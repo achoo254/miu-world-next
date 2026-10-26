@@ -4,6 +4,13 @@
     "MIT",
     "OFL-1.1"
   ],
+  "brandArt": {
+    "license": "LicenseRef-hoandat-all-rights-reserved",
+    "globs": [
+      "generated/brand/*.png",
+      "generated/share-cards/*.png"
+    ]
+  },
   "budget": {
     "packsMaxBytes": 157286400,
     "fileMaxBytes": 20971520

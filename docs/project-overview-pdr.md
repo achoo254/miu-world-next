@@ -20,7 +20,7 @@ Cách làm: single-player vertical slice trước (Home Base + Khu rừng bí m�
 
 ## Ràng buộc không suy ra được từ code
 
-- **Asset:** chỉ CC0 (model, texture, âm thanh), MIT (icon Fluent Emoji), OFL (font) hoặc sinh bằng code. Không CC-BY/SA/NC, không tự vẽ, không AI trả phí, không voxel artist. Hệ quả chấp nhận: hình ảnh kém chi tiết hơn mock.
+- **Asset:** chỉ CC0 (model, texture, âm thanh), MIT (icon Fluent Emoji), OFL (font) hoặc sinh bằng code. Không CC-BY/SA/NC, không tự vẽ, không AI trả phí, không voxel artist. Hệ quả chấp nhận: hình ảnh kém chi tiết hơn mock. Ngoại lệ duy nhất (26/10/2026): logo/icon app là ảnh AI do hoandat giữ mọi quyền (không CC0), xem `.claude/rules/assets-pipeline.md`.
 - **Dữ liệu người chơi và trẻ em:** người đăng nhập là người chơi chính và tự đồng ý chính sách; trẻ chơi bằng người chơi phụ trong tài khoản người lớn, người lớn đó chịu trách nhiệm; không thu tên thật, tuổi, trường của người chơi (tên chọn từ danh sách). Yêu cầu pháp lý (Nghị định 13/2023/NĐ-CP và luật dữ liệu cá nhân mới) phải được pháp chế xác nhận — tài liệu này không phải tư vấn pháp lý.
 - **Nội dung học:** viết bằng lời của mình, không chép sách giáo khoa, và không nhắc tên sách, lớp, số bài hay số trang ở bất kỳ đâu người chơi thấy (người sở hữu, 25/10/2026; lý do: repo công khai nên văn bản sách chép vào sẽ được phát hành cùng mã nguồn). Nội dung đi theo Môn → Chủ đề → Mục tiêu, mục tiêu viết theo yêu cầu cần đạt của Chương trình GDPT 2018; thêm nội dung cho người lớn hơn chỉ là thêm chủ đề. Bài đọc ưu tiên văn dân gian và tác giả đã hết thời hạn bảo hộ, còn lại tự viết, bài nào cũng khai nguồn.
 - **Chống gian lận:** mọi thưởng, kết quả thử thách, mở khóa do server tính; client chỉ hiển thị.

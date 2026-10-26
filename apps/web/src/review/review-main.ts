@@ -325,7 +325,8 @@ function renderLicenses(manifest: ManifestJson): void {
   for (const f of manifest.files) counts.set(f.pack, (counts.get(f.pack) ?? 0) + 1);
   byId('license-summary').textContent =
     `${manifest.packs.length} pack, ${manifest.files.length} file tải về, ${manifest.generated.length} file sinh ra. ` +
-    'Mọi file đều có hash trong manifest; CI chặn file lạ hoặc license ngoài CC0-1.0 / MIT / OFL-1.1.';
+    'Mọi file đều có hash trong manifest; CI chặn file lạ hoặc license ngoài CC0-1.0 / MIT / OFL-1.1. ' +
+    'Ngoại lệ duy nhất: logo, icon app và thẻ chia sẻ có logo là ảnh AI do hoandat giữ mọi quyền (không CC0), xem assets/LICENSES.md.';
   const table = byId('licenses');
   table.append(el('thead', {}, [el('tr', {}, ['Pack', 'Tác giả', 'Phiên bản', 'License', 'Số file', 'Nguồn'].map((h) => el('th', { textContent: h })))]));
   const body = el('tbody');

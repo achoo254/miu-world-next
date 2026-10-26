@@ -5,7 +5,7 @@ import { brand } from '../../brand';
 import { T } from '../i18n/use-t';
 import type { CSSProperties, ReactNode } from 'react';
 import { Icon, MiuPortrait } from './art';
-import type { MiuPose, UiIcon } from './ui-art';
+import { LOGO_MARK, assetUrl, type MiuPose, type UiIcon } from './ui-art';
 import './sky-scene.css';
 
 /** `--t` is one drift cycle; a negative `--delay` starts each cloud mid-way so they never move in step. */
@@ -127,20 +127,18 @@ export function MiuOnIsland({ pose, altPose, size, species, bare = false }: { po
 
 const LOGO_TEXT = brand.appName;
 
-/** The letters hop in one after another; screen readers get the name once, not letter by letter. */
+/** Miu's head logo, then the letters hopping in one after another; screen readers get the name once, not letter by letter. */
 export function Logo() {
   return (
     <p className="logo">
       <span className="visually-hidden">{LOGO_TEXT}</span>
+      <img className="logo-mark" src={assetUrl(LOGO_MARK)} alt="" width={56} height={56} draggable={false} />
       <span className="logo-letters" aria-hidden="true">
         {Array.from(LOGO_TEXT, (ch, i) => (
           <span key={i} className={ch === ' ' ? 'logo-space' : 'logo-letter'} style={{ '--i': i } as CSSProperties}>
             {ch}
           </span>
         ))}
-      </span>
-      <span className="logo-sparkle">
-        <Icon name="sparkles" size={56} />
       </span>
     </p>
   );

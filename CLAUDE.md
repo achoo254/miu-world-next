@@ -27,7 +27,7 @@ Giai đoạn hiện tại: Vertical slice MVP đã xong 10 phase; 70 quest học
 - Không sửa tay `assets/manifest.json` hay `assets/LICENSES.md` — sinh lại bằng `pnpm assets:manifest`. Gate so manifest với bản build mới và sẽ đỏ.
 - Không thả file vào `assets/` ngoài quy trình pack/generator (xem `.claude/rules/assets-pipeline.md`). Mọi file phải có trong manifest, license trong allowlist.
 - Không đặt thư mục tên `vendor` hay `build` dưới `assets/` — hook của môi trường AI chặn các từ đó; dùng `assets/packs/` và `assets/generated/`.
-- Không dùng tên, texture, asset của Minecraft. Không nhận license CC-BY, CC-BY-SA, NC. Không tự vẽ, không dùng AI tạo ảnh trả phí.
+- Không dùng tên, texture, asset của Minecraft. Không nhận license CC-BY, CC-BY-SA, NC. Không tự vẽ, không dùng AI tạo ảnh trả phí. Ngoại lệ hẹp duy nhất (26/10/2026): logo và icon app (Miu) là ảnh AI "AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)" — ảnh gốc `designs/brand/miu-logo-master-1024.png`, `pnpm assets:logo` suy ra mọi cỡ; license `LicenseRef-hoandat-all-rights-reserved` chỉ được nhận cho file khớp `brandArt.globs` trong `tools/assets/sources.json` (logo và thẻ chia sẻ có logo). Art trong game vẫn chỉ CC0/MIT/OFL hoặc sinh bằng code.
 - Không hotlink: runtime chỉ tải từ origin, và chỉ file có trong manifest.
 - Không cho quest/nội dung phụ thuộc Three.js; `packages/voxel` giữ thuần TypeScript (không import `three`).
 - Không tính thưởng, XP, mở khóa ở client — server là nguồn sự thật (áp dụng ngay khi có backend).

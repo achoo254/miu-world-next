@@ -223,10 +223,9 @@
   {
     "glob": "generated/brand/*.png",
     "generator": "tools/assets/render-brand-logo.ts",
-    "derivedFrom": [
-      "kenney-blocky-characters"
-    ],
-    "license": "CC0-1.0"
+    "derivedFrom": [],
+    "license": "LicenseRef-hoandat-all-rights-reserved",
+    "source": "designs/brand/miu-logo-master-1024.png: AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)"
   },
   {
     "glob": "generated/share-cards/*.png",
@@ -241,7 +240,8 @@
       "kenney-castle-kit",
       "font-baloo-2"
     ],
-    "license": "CC0-1.0"
+    "license": "LicenseRef-hoandat-all-rights-reserved",
+    "source": "Contains the Miu logo (generated/brand/miu-logo-512.png): AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)"
   },
   {
     "glob": "generated/accessories/*.png",

@@ -83,8 +83,20 @@ export const budgetSchema = z.object({
 });
 export type Budget = z.infer<typeof budgetSchema>;
 
+/**
+ * The one exception to the licence allowlist: the brand logo and app icons (and pictures that show them) are AI-generated
+ * art the owner keeps all rights to. Their licence is accepted only for generated files matching `globs`; in-game art
+ * stays on the allowlist.
+ */
+export const brandArtSchema = z.object({
+  license: z.string().min(1),
+  globs: z.array(z.string().min(1)).min(1),
+});
+export type BrandArt = z.infer<typeof brandArtSchema>;
+
 export const sourcesSchema = z.object({
   licenseAllowlist: z.array(z.string().min(1)).min(1),
+  brandArt: brandArtSchema,
   budget: budgetSchema,
   packs: z.array(packSchema),
 });
@@ -96,6 +108,8 @@ export const generatedRuleSchema = z.object({
   generator: z.string().min(1),
   derivedFrom: z.array(z.string()),
   license: z.string().min(1),
+  /** Where the picture comes from when it is not only code and packs (e.g. the AI-generated brand art). */
+  source: z.string().min(1).optional(),
 });
 export const generatedRulesSchema = z.array(generatedRuleSchema);
 export type GeneratedRule = z.infer<typeof generatedRuleSchema>;
@@ -113,6 +127,7 @@ export const manifestGeneratedSchema = z.object({
   license: z.string(),
   generator: z.string(),
   derivedFrom: z.array(z.string()),
+  source: z.string().optional(),
   sha256: z.string(),
   bytes: z.number().int().nonnegative(),
 });

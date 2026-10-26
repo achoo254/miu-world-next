@@ -129,4 +129,27 @@ describe('checkAssets', () => {
     await put('packs/.DS_Store', 'x');
     expect(await run(manifestWith([]))).toEqual([]);
   });
+
+  it('accepts the brand-art licence only on generated files matching its globs', async () => {
+    const brandArt = { license: 'LicenseRef-owner', globs: ['generated/brand/*.png'] };
+    const logo = await put('generated/brand/logo.png', 'logo');
+    const tile = await put('generated/atlas/tile.png', 'tile');
+    const packed = await put('packs/test-pack/1.0/logo.png', 'packed');
+    const generated = (f: { path: string; sha256: string; bytes: number }): Manifest['generated'][number] => ({
+      path: f.path,
+      license: brandArt.license,
+      generator: 'tools/x.ts',
+      derivedFrom: [],
+      sha256: f.sha256,
+      bytes: f.bytes,
+    });
+    const manifest = manifestWith([{ ...packed, license: brandArt.license }]);
+    manifest.generated.push(generated(logo), generated(tile));
+    const errors = await checkAssets({ assetsDir: dir, manifest, allowlist: ALLOWLIST, brandArt, budget: BUDGET });
+    expect(errors).toEqual([
+      expect.stringContaining('license not allowed (LicenseRef-owner): generated/atlas/tile.png'),
+      expect.stringContaining('license not allowed (LicenseRef-owner): packs/test-pack/1.0/logo.png'),
+    ]);
+    expect(await run(manifest)).toEqual(expect.arrayContaining([expect.stringContaining('generated/brand/logo.png')]));
+  });
 });
