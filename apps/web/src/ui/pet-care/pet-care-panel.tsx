@@ -128,6 +128,8 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
         speak(status.bond);
         setState('ready');
         store.send({ type: 'pet-name', name: status.bond.name });
+        // It comes to sit beside her, in view under the board (not at her heels, between the camera and her).
+        store.send({ type: 'pet-present' });
       },
       () => live && setState('failed'),
     );
@@ -146,6 +148,7 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
         else if (!scene && phaseRef.current === 'playing') {
           go('idle');
           playCue('star');
+          store.send({ type: 'pet-present' });
         }
       }),
     [store, go],

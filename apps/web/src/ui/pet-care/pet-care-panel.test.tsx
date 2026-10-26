@@ -87,6 +87,8 @@ describe('pet care board', () => {
     expect(document.querySelector('[data-id="pet-care-line"]')?.textContent).toMatch(/Bông/);
     // The game shows the name over the pet.
     expect(sent).toContainEqual({ type: 'pet-name', name: 'Bông' });
+    // The pet comes to sit beside her, in view under the board.
+    expect(sent).toContainEqual({ type: 'pet-present' });
     // Docked at the top, so the pet beside her in the middle of the view shows under the board.
     expect(document.querySelector('[data-id="play-pet-care-backdrop"]')?.classList.contains('modal-backdrop--top')).toBe(true);
   });
@@ -101,7 +103,10 @@ describe('pet care board', () => {
     act(() => store.emit({ type: 'pet-scene', scene: 'care:feed' }));
     expect(await screen.findByText('Mèo xám đang ăn…')).toBeTruthy();
     expect(screen.queryByRole('dialog')).toBeNull();
+    const presented = sent.filter((c) => c.type === 'pet-present').length;
     act(() => store.emit({ type: 'pet-scene', scene: null }));
+    // Back from its scene, it sits beside her again.
+    expect(sent.filter((c) => c.type === 'pet-present')).toHaveLength(presented + 1);
     const news = await screen.findByText('+10 thân thiết');
     expect(news).toBeTruthy();
     expect(screen.getByText('Mèo xám lên cấp 2!')).toBeTruthy();

@@ -31,7 +31,7 @@ export interface PetPlayer {
 }
 
 /** What is playing now, for the play screen (collapsing the care screen meanwhile) and the tests. */
-export type PetSceneName = `care:${PetCareAction}` | `trick:${PetTrick}` | 'sniff' | 'greet' | 'celebrate';
+export type PetSceneName = `care:${PetCareAction}` | `trick:${PetTrick}` | 'sniff' | 'greet' | 'celebrate' | 'present';
 
 export interface PetLifeOptions {
   pet: PetCompanion;
@@ -72,6 +72,12 @@ export interface PetLife {
   touched(): void;
   /** She arrived (a new map, a ride's far stop, a rescue, back from a long pause): it runs up to greet her. */
   greet(): void;
+  /**
+   * Its care board is open: it comes to sit beside her, a little toward the camera (which looks from `cameraYaw`, the
+   * direction from her to the camera), so the camera sees both of them and it never stands in front of her. It stays
+   * there until she walks off or a care scene starts.
+   */
+  present(cameraYaw: number): void;
   update(dt: number, player: PetPlayer): void;
   /** The yaw the camera should look from while a scene plays (so she and the pet are both in view); null otherwise. */
   readonly viewYaw: number | null;
@@ -93,6 +99,11 @@ const IDLE_PLAY = 7;
 const ROUND_REST = 12;
 /** Scenes that go on while she walks. */
 const WALK_ALONG: ReadonlySet<PetSceneName> = new Set(['greet', 'celebrate', 'sniff']);
+/** Scenes the camera does not turn for (she is already in view, or the camera is left where she put it). */
+const KEEP_VIEW: ReadonlySet<PetSceneName> = new Set(['greet', 'celebrate', 'present']);
+/** How far from her it sits while its care board is open (blocks), and the turns from the camera's side it tries. */
+const PRESENT_DISTANCE = 1.3;
+const PRESENT_TURNS = [1, -1, Math.PI / 2, -Math.PI / 2];
 const UP = new Vector3(0, 1, 0);
 /** Its bed at home is where it naps when she is this near it, on the same floor (blocks). */
 const BED_REACH = 10;
@@ -627,6 +638,38 @@ export function createPetLife(options: PetLifeOptions): PetLife {
     return points;
   };
 
+  const presentScene = (player: PetPlayer, cameraYaw: number): Running => {
+    // Off to her side and a little toward the camera: beside her on screen, never between the camera and her.
+    let spot = { x: pet.root.position.x, z: pet.root.position.z };
+    for (const turn of PRESENT_TURNS) {
+      const [fx, fz] = forward(cameraYaw + turn);
+      const x = player.x + fx * PRESENT_DISTANCE;
+      const z = player.z + fz * PRESENT_DISTANCE;
+      const y = ground(x, z, player.y);
+      if (Math.abs(y - player.y) <= 1 && standable(x, z, y)) {
+        spot = { x, z };
+        break;
+      }
+    }
+    // Turned to the camera, so its face shows under the board.
+    const [cx, cz] = forward(cameraYaw);
+    pet.goTo({ x: spot.x, z: spot.z, face: { x: spot.x + cx, z: spot.z + cz }, run: true });
+    let sat = false;
+    const wait = { waited: 0 };
+    return {
+      name: 'present',
+      view: cameraYaw,
+      update(dt) {
+        if (!sat && reached(wait, dt)) {
+          sat = true;
+          pet.perform('sit', gentle);
+        }
+        return false;
+      },
+      end() {},
+    };
+  };
+
   let pending: ((player: PetPlayer) => Running) | null = null;
   const start = (make: (player: PetPlayer) => Running): void => {
     pending = make;
@@ -667,6 +710,9 @@ export function createPetLife(options: PetLifeOptions): PetLife {
     },
     greet() {
       if (!running) start(greetScene);
+    },
+    present(cameraYaw) {
+      start((player) => presentScene(player, cameraYaw));
     },
     update(dt, player) {
       sniffCooldown = Math.max(0, sniffCooldown - dt);
@@ -741,7 +787,7 @@ export function createPetLife(options: PetLifeOptions): PetLife {
       pet.update(dt, player, ground);
     },
     get viewYaw() {
-      return running && running.name !== 'greet' && running.name !== 'celebrate' ? running.view : null;
+      return running && !KEEP_VIEW.has(running.name) ? running.view : null;
     },
     get scene() {
       return running?.name ?? null;

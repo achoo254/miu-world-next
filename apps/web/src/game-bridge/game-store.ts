@@ -156,6 +156,8 @@ export type GameCommand =
   | { type: 'ride'; on: boolean }
   /** A care button: the pet's scene in the world (the server already counted it, or is counting it). */
   | { type: 'pet-care'; action: PetCareAction }
+  /** The care screen is up (or back from a scene): the pet comes to sit beside her where the camera sees them both. */
+  | { type: 'pet-present' }
   /** A trick from the care screen's menu (one the server says is open). */
   | { type: 'pet-trick'; trick: PetTrick }
   /** What the pet wears now (content/pet-gear.json ids). */

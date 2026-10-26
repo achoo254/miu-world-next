@@ -122,6 +122,29 @@ describe('pet scenes', () => {
     expect(scenes.filter((s) => s !== null)).toEqual(PET_TRICKS.map((t) => `trick:${t.id}`));
   });
 
+  it('sits beside her toward the camera while its board is open, never between the camera and her', async () => {
+    const { pet, petLife, scenes, run } = await life();
+    // The camera looks from behind her (she faces +z, the camera is at -z).
+    const cameraYaw = Math.PI;
+    petLife.present(cameraYaw);
+    run(3);
+    expect(scenes).toEqual(['present']);
+    expect(pet.motion).toBe('sit');
+    // The camera does not turn for it.
+    expect(petLife.viewYaw).toBeNull();
+    const { x, z } = pet.root.position;
+    // Off to her side by more than the two of them are wide, and a little toward the camera.
+    expect(Math.abs(x)).toBeGreaterThan(0.9);
+    expect(z).toBeLessThan(0);
+    // Turned to the camera.
+    expect(Math.cos(pet.root.rotation.y)).toBeLessThan(-0.9);
+    // It stays until she walks off.
+    run(20);
+    expect(petLife.scene).toBe('present');
+    run(0.2, { ...flat, speed: 3, x: 1 });
+    expect(scenes).toEqual(['present', null]);
+  });
+
   it('a walk ends a scene, the pet coming along', async () => {
     const { petLife, scenes, scene, run } = await life();
     petLife.care('bath');
