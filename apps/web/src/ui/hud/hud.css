@@ -58,10 +58,17 @@
   font-family: var(--font-display); font-weight: 800; font-size: var(--text-body); color: var(--color-ink); cursor: pointer;
 }
 .hud-tracker-pill .icon { flex-shrink: 0; }
-/* Tablets and wider: room for the whole name ("Khu rừng bí mật – Chương 1: Lá thần"); phones cut it (rule below). */
+/* Tablets and wider: room for the whole name ("Khu rừng bí mật – Chương 1: Lá thần") on one line; phones wrap it (rule
+   below). */
 @media (min-width: 601px) { .hud-tracker-pill { max-width: min(30rem, 100%); } }
 /* One line: the quest's whole name is on its card, a tap away. */
 .hud-tracker-pill-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: var(--text-sm); }
+/* Phones: the column beside the minimap is too narrow for the name on one line, so it takes two (a name longer than
+   that ends in "…"); the pill grows a little taller instead of cutting the place's name. */
+@media (max-width: 600px) {
+  .hud-tracker-pill { padding-block: var(--space-xs); border-radius: var(--radius-field); text-align: left; }
+  .hud-tracker-pill-title { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; white-space: normal; line-height: 1.2; }
+}
 .hud-tracker-pill-title .bi-en { display: none; }
 .hud-tracker-pill-count { flex-shrink: 0; font-family: var(--font-body); font-weight: 700; color: var(--color-ink-soft); }
 .hud-tracker-step { font-weight: 700; }
