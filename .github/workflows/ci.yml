@@ -143,12 +143,11 @@ jobs:
           retention-days: 7
 
   e2e-nightly:
-    # Every E2E project but the store screenshots (playwright.nightly.config.ts), every map opened: the smoke suite,
-    # the learning mechanics, bosses, co-op, worksheets, then perf, the render budget of every map and the screens,
-    # which only record (their reports are kept below).
+    # Every E2E project but the by-hand ones (playwright.nightly.config.ts), every map opened: the smoke suite, the
+    # learning mechanics, bosses, co-op, worksheets, then the screens, which only record (kept below).
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4
@@ -170,8 +169,6 @@ jobs:
           name: e2e-nightly
           path: |
             apps/web/test-results/
-            assets/generated/review/perf.json
-            assets/generated/review/map-budget.json
             assets/generated/review/screens/
           if-no-files-found: ignore
           retention-days: 7

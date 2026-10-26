@@ -1,4 +1,4 @@
-// Render budget of every map, run by hand and nightly on CI (it records, never fails on the budget): at the spawn and at each chapter's starting point of the
+// Render budget of every map, run by hand, never on CI since it needs a real GPU (it records, never fails on the budget): at the spawn and at each chapter's starting point of the
 // twelve maps the camera turns full circle while the map's life moves (buses, boats, villagers), and the highest
 // draw calls, triangles, textures and geometries are kept. High at every point, Mid and Low at the spawn (a lower
 // quality draws less of the same view). Writes assets/generated/review/map-budget.json for the review page.

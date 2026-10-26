@@ -77,9 +77,9 @@ export default defineConfig({
     { name: 'account', testMatch: 'account-flow.spec.ts' },
     { name: 'invite', testMatch: 'invite-flow.spec.ts' },
     ...SIGNED_IN.map((name) => ({ name, testMatch: `${name}.spec.ts`, dependencies: ['setup'], use: { storageState: PARENT_STATE } })),
-    // Perf matrix (perf.json for the review page): by hand when asked, and nightly on CI (playwright.nightly.config.ts).
+    // Perf matrix (perf.json for the review page): by hand when asked; never on CI (needs a real GPU).
     { name: 'perf', testMatch: 'perf.spec.ts', dependencies: ['setup'], use: { storageState: PARENT_STATE }, timeout: 30 * 60_000 },
-    // Render budget of every map (map-budget.json for the review page): by hand, and nightly on CI.
+    // Render budget of every map (map-budget.json for the review page): by hand; never on CI (needs a real GPU).
     { name: 'budget', testMatch: 'map-budget.spec.ts', dependencies: ['setup'], use: { storageState: PARENT_STATE } },
     // Pictures of the main screens (docs/screen-review.md): by hand on the dev machine before a release (the reviewed
     // set), and nightly on CI as a run-through whose pictures are kept as an artifact only.
