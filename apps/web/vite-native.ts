@@ -15,6 +15,14 @@ export const SERVER_ORIGIN_ENV = 'VITE_MIU_SERVER_ORIGIN';
 const LOOPBACK = new Set(['localhost', '127.0.0.1', '[::1]']);
 
 /**
+ * Cloudflare Web Analytics, which Cloudflare's edge adds to the web pages it serves: its beacon script and the address
+ * it posts to. The web policy allows both; the app's pages are packed inside the app and never pass the edge, so the
+ * app's policy leaves them out.
+ */
+export const CLOUDFLARE_ANALYTICS = { script: 'https://static.cloudflareinsights.com', connect: 'https://cloudflareinsights.com' } as const;
+const WEB_ONLY_SOURCES = new Set<string>(Object.values(CLOUDFLARE_ANALYTICS));
+
+/**
  * The server origin an app build bakes in: `VITE_MIU_SERVER_ORIGIN` when set, else the brand's public web origin
  * (https://miu.hoandat.com). Must be a bare origin over https; plain http only to this machine (the iOS Simulator
  * reaches the Mac's loopback), never to a remote host.
@@ -39,7 +47,7 @@ const socketOrigin = (origin: string): string => origin.replace(/^http/, 'ws');
 /**
  * The web policy with the server added where the app needs it: the API and the multiplayer socket (connect-src), the
  * game's pictures, sounds and model files (img-src, media-src, connect-src). Fonts are packed into the app, so
- * font-src stays 'self'. Every other directive is the web's unchanged.
+ * font-src stays 'self'. The web-only Cloudflare Web Analytics sources are dropped; every other directive is the web's.
  */
 export function nativeContentSecurityPolicy(webPolicy: string, serverOrigin: string): string {
   const extra: Record<string, string[]> = {
@@ -50,10 +58,9 @@ export function nativeContentSecurityPolicy(webPolicy: string, serverOrigin: str
   return webPolicy
     .split(';')
     .map((directive) => {
-      const trimmed = directive.trim();
-      const name = trimmed.split(/\s+/)[0] ?? '';
-      const added = extra[name];
-      return added ? `${trimmed} ${added.join(' ')}` : trimmed;
+      const [name = '', ...values] = directive.trim().split(/\s+/);
+      const kept = values.filter((value) => !WEB_ONLY_SOURCES.has(value));
+      return [name, ...kept, ...(extra[name] ?? [])].join(' ');
     })
     .join('; ');
 }

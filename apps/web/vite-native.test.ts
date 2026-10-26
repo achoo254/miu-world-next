@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { CONTENT_SECURITY_POLICY } from './vite.config';
-import { SERVER_ORIGIN_ENV, coverViewport, nativeContentSecurityPolicy, nativeServerOrigin } from './vite-native';
+import { CLOUDFLARE_ANALYTICS, SERVER_ORIGIN_ENV, coverViewport, nativeContentSecurityPolicy, nativeServerOrigin } from './vite-native';
 
 const directives = (policy: string): Map<string, string[]> =>
   new Map(
@@ -34,11 +34,15 @@ describe('content security policy of the app build', () => {
   const web = directives(CONTENT_SECURITY_POLICY);
   const app = directives(nativeContentSecurityPolicy(CONTENT_SECURITY_POLICY, 'https://miu.hoandat.com'));
 
+  /** The web's sources of a directive without Cloudflare Web Analytics, which only the edge adds to web pages. */
+  const webOnly = new Set<string>(Object.values(CLOUDFLARE_ANALYTICS));
+  const shared = (name: string): string[] => (web.get(name) ?? []).filter((value) => !webOnly.has(value));
+
   it('adds the server where the app reaches it, and nothing else', () => {
-    expect(app.get('connect-src')).toEqual([...(web.get('connect-src') ?? []), 'https://miu.hoandat.com', 'wss://miu.hoandat.com']);
+    expect(app.get('connect-src')).toEqual([...shared('connect-src'), 'https://miu.hoandat.com', 'wss://miu.hoandat.com']);
     expect(app.get('img-src')).toEqual([...(web.get('img-src') ?? []), 'https://miu.hoandat.com']);
     expect(app.get('media-src')).toEqual([...(web.get('media-src') ?? []), 'https://miu.hoandat.com']);
-    for (const [name, values] of web) if (!['connect-src', 'img-src', 'media-src'].includes(name)) expect(app.get(name), name).toEqual(values);
+    for (const name of web.keys()) if (!['connect-src', 'img-src', 'media-src'].includes(name)) expect(app.get(name), name).toEqual(shared(name));
   });
 
   it('keeps scripts to the app itself, with no eval', () => {

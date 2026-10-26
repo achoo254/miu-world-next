@@ -12,7 +12,7 @@ import { UI_ART_PATHS } from './src/ui/kit/ui-art.ts';
 import { MINIGAME_SPRITE_PATHS } from './src/ui/minigame/sprites.ts';
 import { appIcons, APP_ICON_PATHS } from './vite-app-icons.ts';
 import { LESSON_PAGE_ENTRY, buildSite, sitemapPages, topicPageFiles } from './vite-lesson-pages.ts';
-import { NATIVE_MODE, NATIVE_OUT_DIR, nativeContentSecurityPolicy, nativeServerOrigin, nativeViewport } from './vite-native.ts';
+import { CLOUDFLARE_ANALYTICS, NATIVE_MODE, NATIVE_OUT_DIR, nativeContentSecurityPolicy, nativeServerOrigin, nativeViewport } from './vite-native.ts';
 import { repoAssets } from './vite-repo-assets.ts';
 import { seoMeta } from './vite-seo-meta.ts';
 import { LASTMOD_LEDGER, readLedger, sitemap } from './vite-sitemap.ts';
@@ -26,11 +26,12 @@ const API_TARGET = 'http://127.0.0.1:8787';
 const UI_PATHS = [...new Set([...UI_ART_PATHS, ...MINIGAME_SPRITE_PATHS])];
 
 /**
- * Same-origin only: no third-party hosts, no `unsafe-eval`. The API is proxied under /api so
- * `connect-src 'self'` covers it; blob:/data: are for the mesher worker and embedded glTF buffers.
+ * Same-origin, no `unsafe-eval`, with one exception: Cloudflare Web Analytics, which Cloudflare's edge adds to the
+ * pages it serves (its beacon script from static.cloudflareinsights.com, posting to cloudflareinsights.com; no
+ * cookies), as on every hoandat.com app. The API is proxied under /api so `connect-src 'self'` covers it; blob:/data:
+ * are for the mesher worker and embedded glTF buffers.
  */
-export const CONTENT_SECURITY_POLICY =
-  "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data:; worker-src 'self' blob:; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'";
+export const CONTENT_SECURITY_POLICY = `default-src 'self'; script-src 'self' ${CLOUDFLARE_ANALYTICS.script}; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' blob: data: ${CLOUDFLARE_ANALYTICS.connect}; worker-src 'self' blob:; media-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'`;
 
 /**
  * Injects the CSP meta into built pages only. The dev server's React Fast Refresh preamble is an
