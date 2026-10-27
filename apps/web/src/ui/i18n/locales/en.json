@@ -699,6 +699,8 @@
   "timetable.day.fri": "Friday",
   "timetable.day.sat": "Saturday",
   "errors.network": "Cannot reach the server. Check the internet and try again.",
+  "errors.outdatedApp": "This version of Miu World is out of date. Update the app from the App Store or Google Play, then open it again.",
+  "errors.outdatedPage": "Miu World has a new version. Reload the page.",
   "errors.invalidInput": "Something is not filled in right. Please check it.",
   "errors.invalidCredentials": "The email or password is not right.",
   "errors.emailTaken": "This email already has an account. Please sign in.",

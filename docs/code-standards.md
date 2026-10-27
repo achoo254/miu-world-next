@@ -41,6 +41,7 @@ Lệnh cụ thể và danh sách cấm cho agent: `CLAUDE.md`. File này giải 
 - Migration chỉ sinh bằng `drizzle-kit generate`, commit file SQL và review như code; không `push` schema lên DB thật.
 - Không log email, tên hồ sơ, token; log chỉ id. Lỗi trả client không kèm stack.
 - Input validate bằng Zod từ `packages/schema`; DTO trả ra không bao giờ chứa hash mật khẩu hay token.
+- **Đổi response mà app cũ còn đọc:** app iPhone/Android trên máy người dùng có thể cũ hơn server nhiều tuần, và client parse mọi response bằng schema của chính bản build đó. Thêm trường thì an toàn (Zod bỏ trường lạ). Gỡ trường bắt buộc, đổi kiểu hay đổi tên thì làm hai bước: (1) phát hành bản app coi trường đó là tuỳ chọn hoặc thôi đọc nó, trong khi server vẫn trả; (2) chỉ gỡ ở server khi bản app cũ không còn người dùng. Ngày 27/10/2026, gỡ `parentGateOpen`/`pinLocked`/`pinSet` khỏi `/auth/me` trong một bước đã làm bản app build trước đó dừng ở màn lỗi. Bản build gặp response sai dạng thì báo "cần cập nhật app" hay "tải lại trang" (mã `outdated-client` trong `apps/web/src/ui/api-client.ts`), không báo mất kết nối.
 
 ## React (`apps/web`)
 

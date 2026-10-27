@@ -93,6 +93,21 @@ describe('account flow', () => {
     expect(calls.map((c) => c.key)).toEqual(['GET /api/auth/me']);
   });
 
+  it('asks for a reload, not a connection check, when the server answers in a shape this build cannot read', async () => {
+    const { players: _players, ...withoutPlayers } = me();
+    stubApi({ 'GET /api/auth/me': () => ({ status: 200, body: withoutPlayers }) });
+    renderAt('/profiles');
+    const alert = await screen.findByRole('alert');
+    expect(alert.textContent).toContain('vừa có bản mới');
+    expect(alert.textContent).not.toContain('Không kết nối');
+  });
+
+  it('still says the server is unreachable when the request itself fails', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => Promise.reject(new TypeError('Load failed'))));
+    renderAt('/profiles');
+    expect((await screen.findByRole('alert')).textContent).toContain('Không kết nối được máy chủ');
+  });
+
   it('explains a refused unverified email', async () => {
     stubApi({ 'GET /api/auth/me': () => ({ status: 401, body: { error: 'unauthenticated' } }) });
     renderAt('/login?error=idp-email-unverified');

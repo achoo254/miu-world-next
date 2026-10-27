@@ -1,7 +1,7 @@
 import type { z } from 'zod';
 import { ANALYTICS_HEADER } from '@miu/schema/analytics';
 import { analyticsHeaderValue } from '../analytics/analytics-ids';
-import { apiUrl } from '../platform/endpoints';
+import { NATIVE_APP, apiUrl } from '../platform/endpoints';
 import { authHeaders } from '../platform/session-token';
 import { t, type TextKey } from './i18n/i18n';
 
@@ -15,6 +15,9 @@ export class ApiError extends Error {
     this.name = 'ApiError';
   }
 }
+
+/** Code of a successful response this build cannot read: the server is newer than the build. */
+export const OUTDATED_CLIENT = 'outdated-client';
 
 /**
  * JSON call to the server (same origin on the web, the server's origin in the app: platform/endpoints.ts); responses are validated so the UI never trusts an unexpected shape.
@@ -34,18 +37,25 @@ export async function api<S extends z.ZodType>(method: string, path: string, sch
   } catch {
     throw new ApiError(0, 'network');
   }
-  if (res.status === 204) return schema.parse(undefined);
-  const data: unknown = await res.json().catch(() => null);
+  const data: unknown = res.status === 204 ? undefined : await res.json().catch(() => null);
   if (!res.ok) {
     const code = typeof data === 'object' && data !== null && 'error' in data && typeof data.error === 'string' ? data.error : 'unknown';
     throw new ApiError(res.status, code);
   }
-  return schema.parse(data);
+  const parsed = schema.safeParse(data);
+  if (!parsed.success) {
+    // The server answered, in a shape this build does not know: the build is older than the server (an app from the
+    // store, a web tab opened before a release), not a network failure.
+    console.warn(`unexpected response shape: ${method} ${path}`);
+    throw new ApiError(res.status, OUTDATED_CLIENT);
+  }
+  return parsed.data;
 }
 
 /** Server error code → its message (locales `errors.*`). */
 const MESSAGES: Readonly<Record<string, TextKey>> = {
   network: 'errors.network',
+  [OUTDATED_CLIENT]: NATIVE_APP ? 'errors.outdatedApp' : 'errors.outdatedPage',
   'invalid-input': 'errors.invalidInput',
   'invalid-credentials': 'errors.invalidCredentials',
   'email-taken': 'errors.emailTaken',

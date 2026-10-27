@@ -3,12 +3,13 @@ import { Suspense, lazy, useEffect, type ReactNode } from 'react';
 import { Navigate, Route, Routes, useLocation, useNavigate } from 'react-router';
 import { usePageViews } from '../analytics/use-page-views';
 import { brand } from '../brand';
+import { NATIVE_APP } from '../platform/endpoints';
 import { takePostLoginTarget } from '../post-login-target';
 import { AccountProvider, useAccount } from './account/account-context';
 import { ConsentScreen } from './account/consent-screen';
 import { stopSpeaking } from './dialogue/speech';
 import { BackToGame } from './system/back-to-game';
-import { bindLangProfile } from './i18n/i18n';
+import { bindLangProfile, type TextKey } from './i18n/i18n';
 import { T } from './i18n/use-t';
 import { ParentAreaScreen } from './account/parent-area-screen';
 import { PlayStartScreen, ProfilePickerScreen } from './account/profile-screens';
@@ -69,14 +70,15 @@ function Loading() {
   );
 }
 
-function ServerDown() {
+/** Full-screen notice when the account cannot be loaded: the server is unreachable, or newer than this build. */
+function ShellNotice({ id, text }: { id: string; text: TextKey }) {
   return (
     <SkyScene>
-      <main className="scene-content" data-id="shell-server-down">
+      <main className="scene-content" data-id={id}>
         <h1 className="visually-hidden">{brand.appName}</h1>
         <Logo />
         <p role="alert" className="error">
-          <T k="shell.serverDown" />
+          <T k={text} />
         </p>
       </main>
     </SkyScene>
@@ -87,7 +89,8 @@ function ServerDown() {
 function RequireParent({ children, needsConsent = true }: { children: ReactNode; needsConsent?: boolean }) {
   const { state } = useAccount();
   if (state.status === 'loading') return <Loading />;
-  if (state.status === 'error') return <ServerDown />;
+  if (state.status === 'error') return <ShellNotice id="shell-server-down" text="shell.serverDown" />;
+  if (state.status === 'outdated') return <ShellNotice id="shell-outdated" text={NATIVE_APP ? 'errors.outdatedApp' : 'errors.outdatedPage'} />;
   if (state.status === 'signed-out') return <Navigate to="/login" replace />;
   if (needsConsent && !state.me.consentAccepted) return <Navigate to="/consent" replace />;
   return children;

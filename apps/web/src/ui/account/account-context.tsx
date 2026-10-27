@@ -1,12 +1,14 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { MeResponse } from '@miu/schema/account';
 import { NATIVE_APP } from '../../platform/endpoints';
-import { ApiError, api } from '../api-client';
+import { ApiError, OUTDATED_CLIENT, api } from '../api-client';
 
 type AccountState =
   | { status: 'loading' }
   | { status: 'signed-out' }
   | { status: 'error' }
+  /** The server answered `/auth/me` in a shape this build cannot read: the app or page needs updating. */
+  | { status: 'outdated' }
   | { status: 'signed-in'; me: MeResponse };
 
 interface AccountApi {
@@ -32,7 +34,9 @@ async function loadAccount(): Promise<AccountState> {
   try {
     return { status: 'signed-in', me: await api('GET', '/auth/me', MeResponse) };
   } catch (err) {
-    return err instanceof ApiError && err.status === 401 ? { status: 'signed-out' } : { status: 'error' };
+    if (!(err instanceof ApiError)) return { status: 'error' };
+    if (err.status === 401) return { status: 'signed-out' };
+    return err.code === OUTDATED_CLIENT ? { status: 'outdated' } : { status: 'error' };
   }
 }
 
