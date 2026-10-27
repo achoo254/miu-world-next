@@ -14,7 +14,7 @@ Số trong ngoặc là số ký tự Unicode (App Store Connect đếm như vậ
 | SKU | `miu-ios` |
 | Tên (≤ 30) | `Miu World` (9) · EN: `Miu World` (9) |
 | Phụ đề (≤ 30) | `Phiêu lưu 3D, vừa chơi vừa học` (30) · EN: `3D adventure, learn by playing` (30) |
-| Danh mục chính / phụ | **Education** / **Games** (subcategory Games: Educational, Adventure — nếu App Store Connect cho chọn khi Games là danh mục phụ) |
+| Danh mục chính / phụ | **Education** / **Games** (danh mục con Family, Adventure; Games không có mục con "Educational") |
 | Kids Category | **Không** (quyết định của người sở hữu). Hệ quả Guideline 1.3: metadata không dùng "For Kids", "For Children", "cho bé", "dành cho trẻ em" — các đoạn dưới đây đã tránh |
 | URL hỗ trợ | `https://miu.hoandat.com/privacy` — 200 ngày 27/10; trang công khai, mục "Liên hệ" có email hỗ trợ (đã có trong bundle production). Trang không có neo `#contact` (mục chỉ có `data-id`). Phương án khác, cũng 200: `https://github.com/achoo254/miu-world-next/issues` |
 | URL chính sách quyền riêng tư | `https://miu.hoandat.com/privacy` — 200 ngày 27/10 (SPA: mọi đường dẫn đều 200; đã kiểm bundle production có nội dung chính sách) |
