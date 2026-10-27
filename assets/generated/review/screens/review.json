@@ -1,7 +1,7 @@
 {
-  "capturedFrom": "85bbf7e0ba5f8a9738e4c7d95132ac266b58bac5",
-  "capturedAt": "2026-10-27T09:51:15+07:00",
-  "reviewedAt": "2026-10-27T09:52:34+07:00",
+  "capturedFrom": "57d11c822e179bbae8053fc8265d9a6cd7ea37c6",
+  "capturedAt": "2026-10-27T11:24:53+07:00",
+  "reviewedAt": "2026-10-27T11:26:02+07:00",
   "reviewer": "agent:screen-review (5 subagents + main session diff check)",
   "verdict": "pass",
   "findings": [
@@ -73,13 +73,6 @@
       "kind": "clipped",
       "severity": "note",
       "text": "Thẻ \"Cả đội chơi…\" bị cắt sát dưới dòng cuối, không có lề dưới; chữ vẫn đọc được; giống lần trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/03-creator.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Màn chọn nhân vật ghi \"Chọn nhân vật của bé\", \"nhiệm vụ của bé\": giọng chỉ dành cho trẻ nhỏ, chưa hợp định hướng mọi lứa tuổi; giống lần trước.",
       "fixedIn": null
     },
     {
