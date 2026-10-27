@@ -68,7 +68,7 @@ export function drawDominoMatch(ctx: CanvasRenderingContext2D, state: DominoStat
   const fy = HUD_SAFE_TOP + 30;
   sprites.draw(ctx, 'panda', 60, fy, 70);
   state.friend.forEach((t, i) => paintTile(ctx, view, t, 120 + i * 40, fy, 34, false, true));
-  if (state.turn === 'friend') paintLabel(ctx, view, 'Bạn đang nghĩ…', arena.width / 2 + 80, fy, 26, theme.light);
+  if (state.turn === 'friend') paintLabel(ctx, view, 'Bạn máy đang nghĩ…', arena.width / 2 + 80, fy, 26, theme.light);
 
   // The line: the last three tiles at each end, the middle squeezed.
   const y = state.ends.left.y;
@@ -122,8 +122,8 @@ export function drawDominoMatch(ctx: CanvasRenderingContext2D, state: DominoStat
     paintTile(ctx, view, t, s.x + s.w / 2 + shake, s.y + s.h / 2 - lift, s.w, false);
   });
   if (state.turn === 'over') {
-    paintLabel(ctx, view, state.winner === 'child' ? 'Bé thắng rồi!' : 'Bạn thắng. Ván mới nhé!', arena.width / 2, y + 90, 40, state.winner === 'child' ? theme.star : theme.light);
+    paintLabel(ctx, view, state.winner === 'child' ? 'Bạn thắng rồi!' : 'Bạn máy thắng. Ván mới nhé!', arena.width / 2, y + 90, 40, state.winner === 'child' ? theme.star : theme.light);
   } else if (state.turn === 'child' && state.choosing < 0) {
-    paintLabel(ctx, view, 'Lượt của bé', arena.width / 2, y + 80, 28, theme.light);
+    paintLabel(ctx, view, 'Lượt của bạn', arena.width / 2, y + 80, 28, theme.light);
   }
 }

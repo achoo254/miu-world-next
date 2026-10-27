@@ -16,7 +16,7 @@ export function loadMailCatalog(contentDir: string = CONTENT_DIR): MailTemplate[
 export function resolveLocalizedText(
   text: LocalizedText,
   language: 'vi' | 'en' | 'both' = 'vi',
-  name: string = 'bé',
+  name: string = 'bạn',
 ): string {
   let str: string;
   if (typeof text === 'string') {

@@ -78,7 +78,7 @@ export function drawVolleyballBeach(ctx: CanvasRenderingContext2D, state: Volley
   ctx.lineWidth = 4;
   ctx.strokeStyle = theme.ink;
   ctx.stroke();
-  paintLabel(ctx, view, `Bé ${state.set.child} – ${state.set.crab} Cua`, arena.width / 2, HUD_SAFE_TOP + 31, 30, theme.primary);
+  paintLabel(ctx, view, `Bạn ${state.set.child} – ${state.set.crab} Cua`, arena.width / 2, HUD_SAFE_TOP + 31, 30, theme.primary);
   if (state.phase === 'point' && state.lastPoint) {
     paintLabel(ctx, view, state.lastPoint === 'child' ? 'Ghi điểm!' : 'Cua ghi điểm', arena.width / 2, HUD_SAFE_TOP + 100, 42, state.lastPoint === 'child' ? theme.star : theme.light);
   } else if (state.time < 4) {

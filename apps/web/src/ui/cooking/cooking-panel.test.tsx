@@ -34,7 +34,7 @@ function mockCookingApi(recipes = sampleRecipes, ingredients: Record<string, num
         return json({
           recipe: sampleRecipes[0],
           cookedItem: { id: 'banh-mi-trung-op-la', name: 'Bánh mì trứng ốp la', qty: 1 },
-          message: 'Bé đã nấu thành công món Bánh mì trứng ốp la! ✨🍳',
+          message: 'Bạn đã nấu thành công món Bánh mì trứng ốp la! ✨🍳',
         });
       }
       return json({ error: 'not-found' }, 404);
@@ -65,7 +65,7 @@ describe('CookingPanel', () => {
     const cookBtn = await screen.findByRole('button', { name: /Nấu món/i });
     fireEvent.click(cookBtn);
 
-    expect(await screen.findByText('Bé đã nấu thành công món Bánh mì trứng ốp la! ✨🍳')).toBeTruthy();
+    expect(await screen.findByText('Bạn đã nấu thành công món Bánh mì trứng ốp la! ✨🍳')).toBeTruthy();
     expect(onCooked).toHaveBeenCalledWith(sampleRecipes[0]);
   });
 

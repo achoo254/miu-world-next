@@ -106,7 +106,7 @@ export function drawOAnQuan(ctx: CanvasRenderingContext2D, state: QuanState, vie
   sprites.draw(ctx, 'monkey-face', arena.width - 100, scoreY, 52);
   paintLabel(ctx, view, String(state.won.computer), arena.width - 46, scoreY, 34);
   const belowY = Math.min(arena.height - 40, top + c * 2 + (state.arrows ? ARROW_RADIUS * 2 + 60 : 50));
-  const words = state.overAgo >= 0 ? (state.won.child >= state.won.computer ? 'Bé thắng ván này!' : 'Ván mới nhé!') : state.turn === 'child' && !sowing ? (state.picked >= 0 ? 'Chọn chiều rải' : 'Chạm một ô của bé') : sowing?.side === 'computer' || state.turn === 'computer' ? 'Khỉ con đang đi...' : '';
+  const words = state.overAgo >= 0 ? (state.won.child >= state.won.computer ? 'Bạn thắng ván này!' : 'Ván mới nhé!') : state.turn === 'child' && !sowing ? (state.picked >= 0 ? 'Chọn chiều rải' : 'Chạm một ô của bạn') : sowing?.side === 'computer' || state.turn === 'computer' ? 'Khỉ con đang đi...' : '';
   if (words) paintLabel(ctx, view, words, arena.width / 2, belowY, 32, state.overAgo >= 0 ? theme.star : theme.light);
   // The child's squares get a soft underline while it is her turn.
   if (state.turn === 'child' && !sowing && state.overAgo < 0) {

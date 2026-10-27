@@ -12,10 +12,10 @@ import { RegionCatalog } from '../../packages/schema/src/region.ts';
 import { topicPages, type TopicPage, type TopicPageTopic } from '../../packages/schema/src/topic-pages.ts';
 
 /** How a page calls the player where quest text says `{name}`. */
-const PLAYER_WORD = 'bé';
+const PLAYER_WORD = 'bạn';
 
 /**
- * Quest text with `{name}` filled for a reader who is nobody in particular: "Bé" where a sentence starts, "bé" in
+ * Quest text with `{name}` filled for a reader who is nobody in particular: "Bạn" where a sentence starts, "bạn" in
  * the middle of one.
  */
 export function fillPlayerName(text: string): string {

@@ -82,6 +82,6 @@ export function drawCoGanh(ctx: CanvasRenderingContext2D, state: GanhState, view
   const theirs = count(state.board, 2);
   const labelY = top + size + gap * 0.45 + 30;
   paintLabel(ctx, view, `Đỏ ${mine} – Xanh ${theirs}`, arena.width / 2, Math.min(arena.height - 24, labelY), 30, mine > theirs ? theme.star : theme.light);
-  const turn = state.restartAgo >= 0 ? 'Ván mới nhé!' : state.turn === 1 ? (state.selected >= 0 ? 'Chạm chấm xanh để đi' : 'Lượt của bé: chạm quân đỏ') : 'Bạn đang nghĩ…';
+  const turn = state.restartAgo >= 0 ? 'Ván mới nhé!' : state.turn === 1 ? (state.selected >= 0 ? 'Chạm chấm xanh để đi' : 'Lượt của bạn: chạm quân đỏ') : 'Bạn máy đang nghĩ…';
   paintLabel(ctx, view, turn, arena.width / 2, top - gap * 0.45 - 26, 28, theme.light);
 }

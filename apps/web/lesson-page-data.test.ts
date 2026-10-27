@@ -9,9 +9,9 @@ const CONTENT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 const readQuest = (id: string): unknown => JSON.parse(readFileSync(path.join(CONTENT_DIR, 'quests', `${id}.json`), 'utf8'));
 
 describe('fillPlayerName', () => {
-  it('writes "Bé" where a sentence starts and "bé" inside one', () => {
-    expect(fillPlayerName('{name} nhặt đồ. {name} chạy; cả lớp chờ {name}! Rồi {name} về.')).toBe('Bé nhặt đồ. Bé chạy; cả lớp chờ bé! Rồi bé về.');
-    expect(fillPlayerName('Nhà của {name}')).toBe('Nhà của bé');
+  it('writes "Bạn" where a sentence starts and "bạn" inside one', () => {
+    expect(fillPlayerName('{name} nhặt đồ. {name} chạy; cả lớp chờ {name}! Rồi {name} về.')).toBe('Bạn nhặt đồ. Bạn chạy; cả lớp chờ bạn! Rồi bạn về.');
+    expect(fillPlayerName('Nhà của {name}')).toBe('Nhà của bạn');
     expect(fillPlayerName('Không có tên')).toBe('Không có tên');
   });
 });
@@ -44,7 +44,7 @@ describe('the quest field picker', () => {
       places: { a: 'ĐỊA-ĐIỂM' },
     };
     const picked = pickQuestPageFields(quest);
-    expect(picked).toEqual({ id: 'q', topic: 'so-den-100', region: 'truong-hoc', title: 'Tên bé', summary: 'Bé đi chơi.' });
+    expect(picked).toEqual({ id: 'q', topic: 'so-den-100', region: 'truong-hoc', title: 'Tên bạn', summary: 'Bạn đi chơi.' });
     expect(JSON.stringify(picked)).not.toMatch(/BÍ-MẬT|PHẦN-THƯỞNG|BÀI-ĐỌC|ĐỊA-ĐIỂM|toan2-t1/);
   });
 

@@ -83,7 +83,7 @@ export function cookingRoutes({ db, content }: CookingRouteDeps): Router {
         name: recipe.name,
         qty: recipe.resultQty,
       },
-      message: `Bé đã nấu thành công món ${recipe.name}! Mùi thơm nức gian bếp nhỏ. ✨🍳`,
+      message: `Bạn đã nấu thành công món ${recipe.name}! Mùi thơm nức gian bếp nhỏ. ✨🍳`,
     };
 
     res.json(response);

@@ -82,7 +82,7 @@ function feedbackLine(
     }
     // A boss without lines of its own says only its win line, on the blow that wins.
     if (kind === "right") return boss?.won ? { vi: step.winDialogue, en: step.en?.winDialogue ?? null } : null;
-    return { vi: "Suýt đúng rồi! Bé thử suy nghĩ lại một chút nhé!", en: null };
+    return { vi: "Suýt đúng rồi! Thử suy nghĩ lại một chút nhé!", en: null };
   }
   const feedback = step && isAnswerable(step) ? step.feedback : undefined;
   const lines = feedback?.[kind];

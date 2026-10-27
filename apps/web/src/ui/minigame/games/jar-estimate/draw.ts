@@ -106,7 +106,7 @@ export function drawJarEstimate(ctx: CanvasRenderingContext2D, state: JarState, 
     const tens = Math.floor(state.count / 10);
     const ones = state.count % 10;
     paintLabel(ctx, view, `${state.count} kẹo = ${tens} chục ${ones} đơn vị`, arena.width / 2, state.ruler.y + 10, 30, theme.star);
-    paintLabel(ctx, view, state.close ? `Bé đoán ${state.guess}: rất gần!` : `Bé đoán ${state.guess}`, arena.width / 2, state.ruler.y + 60, 30, state.close ? theme.star : theme.light);
+    paintLabel(ctx, view, state.close ? `Bạn đoán ${state.guess}: rất gần!` : `Bạn đoán ${state.guess}`, arena.width / 2, state.ruler.y + 60, 30, state.close ? theme.star : theme.light);
   } else {
     paintRuler(ctx, view, state);
   }

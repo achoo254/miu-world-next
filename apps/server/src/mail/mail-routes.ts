@@ -80,7 +80,7 @@ export function mailRoutes({
       .from(characters)
       .where(eq(characters.childId, childId));
 
-    const childName = char?.name || profile?.displayName || 'bé';
+    const childName = char?.name || profile?.displayName || 'bạn';
     const lang = (profile?.language ?? 'vi') as 'vi' | 'en' | 'both';
 
     await ensureSeedMail(childId);

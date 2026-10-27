@@ -168,7 +168,7 @@ for (const viewport of VIEWPORTS) {
     await capture(page, '03-creator', async () => {
       await page.goto('/create');
       // The creator opens on the choice of a species.
-      await expect(page.getByRole('heading', { name: 'Chọn nhân vật của bé' })).toBeVisible();
+      await expect(page.getByRole('heading', { name: 'Chọn nhân vật của bạn' })).toBeVisible();
     });
     await capture(page, '04-home', async () => {
       await page.goto('/home');
