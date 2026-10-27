@@ -140,7 +140,7 @@ export function ProfilePickerScreen() {
         {profiles && profiles.length === 0 ? <p><T k="profiles.emptyNotice" /></p> : null}
         <nav className="nav-row" aria-label={t('profiles.navAria')}>
           <Link to="/parent" className={buttonClass('ghost')} data-id="profiles-parent-link">
-            <Icon name="locked" size={28} />
+            <Icon name="gear" size={28} />
             <T k="profiles.parentAreaLink" />
           </Link>
           <SignOutButton />

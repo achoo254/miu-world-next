@@ -196,7 +196,7 @@ export function ParentAreaScreen() {
     <SkyScene>
       <main className="scene-content parent-area" data-id="parent-area">
         <header className="page-header">
-          <Icon name="key" size={48} />
+          <Icon name="gear" size={48} />
           <h1><T k="gate.title" /></h1>
         </header>
         <p className="hint parent-intro"><T k="parent.intro" /></p>
