@@ -49,7 +49,8 @@ export function idpNativeRoutes({ db, config, clock, idp }: IdpRouteDeps): Route
       console.warn('native sign-in exchange failed:', idpFailure(err));
       throw new HttpError(401, 'idp');
     }
-    const result = await signInWithIdentity({ db, issuer: client.issuer, clock, signIn }, res, identity, { kind: 'native' });
+    // `reauth` only says the app asked for one; whether it happened is read from the ID token (idp-sign-in.ts).
+    const result = await signInWithIdentity({ db, issuer: client.issuer, clock, signIn }, res, identity, { reauth: input.reauth, kind: 'native' });
     if (!result.ok) throw new HttpError(result.code === 'idp-conflict' ? 409 : 401, result.code);
     const body: NativeSessionResponse = { token: result.signedIn.token };
     res.set('Cache-Control', 'no-store').status(201).json(body);

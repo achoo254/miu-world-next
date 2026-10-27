@@ -38,13 +38,19 @@ export async function clearNativeSession(): Promise<void> {
   }
 }
 
-/** Signs in through the system browser; false when the person closed it. */
-export function startNativeSignIn(): Promise<boolean> {
-  return signInNative({
-    config: () => api('GET', '/auth/native/config', z.unknown()),
-    authenticate: async (url, scheme) => (await SystemAuth.authenticate({ url, callback: { scheme } })).url,
-    // The current token goes along (api-client), so the server ends this device's previous session.
-    exchange: (body) => api('POST', '/auth/native/exchange', z.unknown(), body),
-    saveToken,
-  });
+/**
+ * Signs in through the system browser; false when the person closed it. `reauth` asks the IdP to sign the person in
+ * again, the confirmation account management needs to turn voice chat on for an extra player.
+ */
+export function startNativeSignIn(reauth: boolean): Promise<boolean> {
+  return signInNative(
+    {
+      config: () => api('GET', '/auth/native/config', z.unknown()),
+      authenticate: async (url, scheme) => (await SystemAuth.authenticate({ url, callback: { scheme } })).url,
+      // The current token goes along (api-client), so the server ends this device's previous session.
+      exchange: (body) => api('POST', '/auth/native/exchange', z.unknown(), body),
+      saveToken,
+    },
+    { reauth },
+  );
 }

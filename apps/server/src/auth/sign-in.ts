@@ -18,6 +18,8 @@ export interface SignInOptions {
   kind: SessionKind;
   /** The IdP session the web sign-in came through (its back-channel logout ends this session). */
   idpSid?: string | null;
+  /** When the IdP proved a re-authentication for this sign-in (idp-sign-in.ts); null or absent otherwise. */
+  reauthAt?: Date | null;
 }
 
 export interface SignedIn extends AuthContext {
@@ -36,7 +38,7 @@ export function createSignIn({ db, config, clock }: SignInDeps) {
     await db.delete(sessions).where(and(eq(sessions.parentId, parentId), lt(sessions.expiresAt, clock())));
     const [parent] = await db.select().from(parents).where(eq(parents.id, parentId));
     if (!parent) throw new Error('signed-in parent vanished');
-    const { token, session } = await createSession(db, parent.id, clock(), { kind: options.kind, idpSid: options.idpSid });
+    const { token, session } = await createSession(db, parent.id, clock(), { kind: options.kind, idpSid: options.idpSid, reauthAt: options.reauthAt });
     if (options.kind === 'web') setSessionCookie(res, config, token);
     return { parent, session, token };
   };

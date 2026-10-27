@@ -41,14 +41,15 @@ async function lockAccount(tx: Tx, parentId: string): Promise<void> {
 }
 
 /**
- * A new player always comes with its default character, so every player can play straight away. A store reviewer's
- * account (its own `.invalid` email) gets its players with online play and voice chat off: a reviewer meets no real
- * player unless the switches are turned on in account management.
+ * A new player always comes with its default character, so every player can play straight away. An extra player
+ * starts with voice chat off: turning it on needs the account owner to sign in again (player-settings-routes.ts). A
+ * store reviewer's account (its own `.invalid` email) gets its players with online play and voice chat off: a
+ * reviewer meets no real player unless the switches are turned on in account management.
  */
 async function insertPlayer(tx: Tx, values: { parentId: string; displayName: string; language: string; isPrimary: boolean; createdAt: Date }) {
   const [account] = await tx.select({ email: parents.email }).from(parents).where(eq(parents.id, values.parentId));
   const review = account ? isReviewAccountEmail(account.email) : false;
-  const controls = review ? { onlineAllowed: false, voiceChatAllowed: false } : {};
+  const controls = { onlineAllowed: !review, voiceChatAllowed: !review && values.isPrimary };
   const [row] = await tx.insert(childProfiles).values({ id: randomUUID(), ...values, ...controls }).returning();
   if (!row) throw new Error('player insert returned no row');
   const [character] = await tx.insert(characters).values({ childId: row.id, name: DEFAULT_CHARACTER_NAME }).returning({ species: characters.species });

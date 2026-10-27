@@ -27,14 +27,15 @@ function person(over: Record<string, unknown> = {}): Record<string, unknown> {
   return { sub: `idp-sub-${seq}-${Date.now()}`, email: `p${seq}-${Date.now()}@example.vn`, email_verified: true, sid: `idp-sid-${seq}`, ...over };
 }
 
-async function start(agent: Agent): Promise<URL> {
-  const res = await agent.get('/api/auth/start').expect(303);
+/** `query`: what account management adds for a re-authentication (`intent=reauth&return=/parent`). */
+async function start(agent: Agent, query?: string): Promise<URL> {
+  const res = await agent.get(`/api/auth/start${query ? `?${query}` : ''}`).expect(303);
   return new URL(res.headers.location ?? '');
 }
 
 /** The whole round trip as the IdP does it: /start, then /callback with the same state and the request's nonce. */
-async function signIn(agent: Agent, claims: Record<string, unknown>, options: { state?: string; code?: string | null } = {}) {
-  const authorize = await start(agent);
+async function signIn(agent: Agent, claims: Record<string, unknown>, options: { query?: string; state?: string; code?: string | null } = {}) {
+  const authorize = await start(agent, options.query);
   idp.claims = { nonce: authorize.searchParams.get('nonce'), ...claims };
   const query = new URLSearchParams({ state: options.state ?? authorize.searchParams.get('state') ?? '' });
   if (options.code !== null) query.set('code', options.code ?? 'auth-code');
@@ -54,6 +55,12 @@ describe('signing in through the account service (web)', () => {
     expect(q.get('state')?.length).toBeGreaterThanOrEqual(40);
     expect(q.get('nonce')).toBeTruthy();
     expect(q.has('prompt')).toBe(false);
+    expect(q.has('max_age')).toBe(false);
+  });
+
+  it('asks the IdP for a fresh login on a re-authentication', async () => {
+    const reauth = (await start(app.agent(), 'intent=reauth')).searchParams;
+    expect([reauth.get('prompt'), reauth.get('max_age')]).toEqual(['login', '0']);
   });
 
   it('creates a new empty account for an unknown verified email, stores the link, and redeems the code with the secret and verifier', async () => {
@@ -230,6 +237,76 @@ describe('signing in through the account service (web)', () => {
     } finally {
       await bare.handle.close();
     }
+  });
+});
+
+describe('re-authentication on the web, for voice chat of an extra player', () => {
+  const REAUTH = { query: 'intent=reauth&return=/parent' };
+  const nowS = () => Math.floor(Date.now() / 1000);
+  const reauthOf = async (agent: Agent) => {
+    const id = ((await agent.get('/api/auth/me').expect(200)).body as { parent: { id: string } }).parent.id;
+    return (await app.db.select({ reauthAt: t.sessions.reauthAt }).from(t.sessions).where(eq(t.sessions.parentId, id))).map((s) => s.reauthAt);
+  };
+  /** A signed-in account owner with an extra player, whose voice chat starts off. */
+  async function owner() {
+    const agent = app.agent();
+    const user = person({ amr: ['fed', 'google'] });
+    await signIn(agent, user);
+    await agent.post('/api/consents').send({ policyVersion: app.content.consent.version }).expect(201);
+    const extra = ((await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(201)).body as { id: string }).id;
+    await agent.patch(`/api/players/${extra}/settings`).send({ voiceChatAllowed: true }).expect(403, { error: 'reauth-required' });
+    return { agent, user, extra };
+  }
+
+  it('records a proven re-authentication on the new session, goes back to account management, and lets voice chat on', async () => {
+    const { agent, user, extra } = await owner();
+    const authTime = nowS() - 5;
+    const { res } = await signIn(agent, { ...user, auth_time: authTime, amr: ['fed', 'google', 'reauth'] }, REAUTH);
+    expect(res.headers.location).toBe('/parent');
+    expect((await reauthOf(agent)).map((at) => at?.getTime())).toEqual([authTime * 1000]);
+    await agent.patch(`/api/players/${extra}/settings`).send({ voiceChatAllowed: true }).expect(200);
+  });
+
+  it('refuses voice chat once the re-authentication is more than ten minutes old', async () => {
+    const { agent, user, extra } = await owner();
+    await signIn(agent, { ...user, auth_time: nowS() - 5, amr: ['fed', 'google', 'reauth'] }, REAUTH);
+    app.advance(11 * 60 * 1000);
+    try {
+      await agent.patch(`/api/players/${extra}/settings`).send({ voiceChatAllowed: true }).expect(403, { error: 'reauth-required' });
+    } finally {
+      app.advance(-11 * 60 * 1000);
+    }
+  });
+
+  it('refuses a re-authentication the token does not prove, back on account management, and keeps the session as it was', async () => {
+    const { agent, user, extra } = await owner();
+    // Stale, or fresh but not from a provider that asked again (amr without "reauth", e.g. GitHub).
+    expect((await signIn(agent, { ...user, auth_time: nowS() - 3600, amr: ['fed', 'google', 'reauth'] }, REAUTH)).res.headers.location).toBe('/parent?reauth-error=idp-reauth');
+    expect((await signIn(agent, { ...user, auth_time: nowS() - 5, amr: ['fed', 'github'] }, REAUTH)).res.headers.location).toBe('/parent?reauth-error=idp-reauth');
+    expect((await signIn(agent, { ...user, amr: ['fed', 'google', 'reauth'] }, REAUTH)).res.headers.location).toBe('/parent?reauth-error=idp-reauth');
+    // Without a return path, the sign-in page says it.
+    expect((await signIn(app.agent(), { ...user, auth_time: nowS() - 3600, amr: ['fed', 'google', 'reauth'] }, { query: 'intent=reauth' })).res.headers.location).toBe('/login?error=idp-reauth');
+    expect(await reauthOf(agent)).toEqual([null]);
+    await agent.patch(`/api/players/${extra}/settings`).send({ voiceChatAllowed: true }).expect(403, { error: 'reauth-required' });
+  });
+
+  it('does not record a "reauth" the server did not ask for (left in the IdP session by an earlier sign-in)', async () => {
+    const { agent, user, extra } = await owner();
+    expect((await signIn(agent, { ...user, auth_time: nowS() - 5, amr: ['fed', 'google', 'reauth'] })).res.headers.location).toBe('/');
+    expect(await reauthOf(agent)).toEqual([null]);
+    await agent.patch(`/api/players/${extra}/settings`).send({ voiceChatAllowed: true }).expect(403, { error: 'reauth-required' });
+  });
+
+  it('only ever goes back to account management, never to a path from the query', async () => {
+    for (const target of ['https://evil.example/', '//evil.example', '/parent/../x', '/play']) {
+      const agent = app.agent();
+      const user = person({ amr: ['fed', 'google'] });
+      await signIn(agent, user);
+      const { res } = await signIn(agent, { ...user, auth_time: nowS() - 5, amr: ['fed', 'google', 'reauth'] }, { query: `intent=reauth&return=${encodeURIComponent(target)}` });
+      expect(res.headers.location).toBe('/');
+    }
+    // A plain sign-in ignores a return path.
+    expect((await signIn(app.agent(), person(), { query: 'return=/parent' })).res.headers.location).toBe('/');
   });
 });
 

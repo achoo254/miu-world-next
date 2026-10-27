@@ -45,7 +45,10 @@ export const childProfiles = pgTable(
     isPrimary: boolean('is_primary').notNull().default(false),
     /** Her own setting: companion bots show up around her. */
     botsEnabled: boolean('bots_enabled').notNull().default(true),
-    /** The account owner's switch: she may talk by voice (party, friends' calls). Refused by the server when off. */
+    /**
+     * The account owner's switch: she may talk by voice (party, friends' calls). Refused by the server when off. The
+     * column default is the primary player's; an extra player is created with it off (player-routes.ts).
+     */
     voiceChatAllowed: boolean('voice_chat_allowed').notNull().default(true),
     /** The account owner's switch: she plays online (sees others, friends, parties); off, she plays alone. */
     onlineAllowed: boolean('online_allowed').notNull().default(true),
@@ -97,6 +100,11 @@ export const sessions = pgTable(
   createdAt: createdAt(),
   lastSeenAt: timestamp('last_seen_at', { withTimezone: true }).notNull().defaultNow(),
   expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),
+  /**
+   * When the IdP signed the person in again for this session (a sign-in that asked for it and whose ID token proves
+   * it, idp-sign-in.ts); null otherwise. Turning voice chat on for an extra player needs a recent one.
+   */
+  reauthAt: timestamp('reauth_at', { withTimezone: true }),
   },
   (t) => [
     index('sessions_parent_idx').on(t.parentId),

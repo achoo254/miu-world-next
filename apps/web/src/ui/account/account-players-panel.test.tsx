@@ -5,6 +5,7 @@ import type { PlayerDto } from '@miu/schema/account';
 import type { PlayerProgressDto } from '@miu/schema/progress';
 import { AccountProvider } from './account-context';
 import { AccountPlayersPanel } from './account-players-panel';
+import viLocale from '../i18n/locales/vi.json';
 
 const EXTRA: PlayerDto = { id: '3b0e8e0c-6f1a-4b8e-9a53-1f1c2a3b4c5d', displayName: 'Thỏ Bông', species: 'rabbit', language: 'vi', primary: false, botsEnabled: true, voiceChatAllowed: true, onlineAllowed: true };
 const PROGRESS: PlayerProgressDto = {
@@ -39,11 +40,11 @@ function stubApi(routes: Record<string, Handler>) {
   return calls;
 }
 
-function renderPanel(): void {
+function renderPanel(players: PlayerDto[] = [EXTRA], url = '/parent'): void {
   render(
-    <MemoryRouter>
+    <MemoryRouter initialEntries={[url]}>
       <AccountProvider>
-        <AccountPlayersPanel players={[EXTRA]} />
+        <AccountPlayersPanel players={players} />
       </AccountProvider>
     </MemoryRouter>,
   );
@@ -78,7 +79,7 @@ describe('the account owner’s card per player', () => {
     expect(calls.find((c) => c.key.startsWith('PATCH'))?.body).toEqual({ botsEnabled: false });
   });
 
-  it('turns the player’s voice chat and online play off, each on its own, both on by default', async () => {
+  it('turns the player’s voice chat and online play off, each on its own', async () => {
     const calls = stubApi({
       'GET /api/auth/me': me(),
       [`GET /api/players/${EXTRA.id}/learning-progress`]: () => ({ status: 200, body: PROGRESS }),
@@ -114,5 +115,69 @@ describe('the account owner’s card per player', () => {
     fireEvent.click(off);
     await waitFor(() => expect(off.getAttribute('aria-checked')).toBe('true'));
     expect(calls.filter((c) => c.key.startsWith('PATCH')).map((c) => c.body)).toEqual([{ onlineAllowed: false }]);
+  });
+});
+
+describe('voice chat for an extra player', () => {
+  const QUIET: PlayerDto = { ...EXTRA, voiceChatAllowed: false };
+  const openOnline = async (id: string): Promise<void> => {
+    fireEvent.click(document.querySelector(`[data-id="player-care-toggle-${id}"]`) as HTMLElement);
+    fireEvent.click(await screen.findByRole('tab', { name: 'Chơi online' }));
+  };
+
+  it('says it is off by default; turning it on without a fresh sign-in offers the sign-in under the switch', async () => {
+    const calls = stubApi({
+      'GET /api/auth/me': me(),
+      [`GET /api/players/${QUIET.id}/learning-progress`]: () => ({ status: 200, body: PROGRESS }),
+      [`PATCH /api/players/${QUIET.id}/settings`]: () => ({ status: 403, body: { error: 'reauth-required' } }),
+    });
+    renderPanel([QUIET]);
+    await openOnline(QUIET.id);
+    expect(screen.getByText(viLocale['playerCare.voiceChatHintExtra'])).toBeTruthy();
+    const on = document.querySelector(`[data-id="player-care-voiceChatAllowed-${QUIET.id}-on"]`) as HTMLButtonElement;
+    expect(on.getAttribute('aria-checked')).toBe('false');
+    fireEvent.click(on);
+    expect(await screen.findByText(viLocale['playerCare.voiceReauth'])).toBeTruthy();
+    const link = screen.getByRole('link', { name: viLocale['playerCare.voiceReauthButton'] });
+    expect(link.getAttribute('href')).toBe('/api/auth/start?intent=reauth&return=%2Fparent');
+    // The switch stays off, and it is not shown as a failure.
+    expect(on.getAttribute('aria-checked')).toBe('false');
+    expect(screen.queryByRole('alert')).toBeNull();
+    expect(calls.filter((c) => c.key.startsWith('PATCH')).map((c) => c.body)).toEqual([{ voiceChatAllowed: true }]);
+    expect(document.body.textContent).not.toMatch(/phụ huynh|PIN|bố mẹ/);
+  });
+
+  it('turns on once the server accepts it, and the sign-in offer goes away', async () => {
+    let confirmed = false;
+    stubApi({
+      'GET /api/auth/me': me(),
+      [`GET /api/players/${QUIET.id}/learning-progress`]: () => ({ status: 200, body: PROGRESS }),
+      [`PATCH /api/players/${QUIET.id}/settings`]: (body) =>
+        confirmed ? { status: 200, body: { botsEnabled: true, voiceChatAllowed: false, onlineAllowed: true, ...(body as object) } } : { status: 403, body: { error: 'reauth-required' } },
+    });
+    renderPanel([QUIET]);
+    await openOnline(QUIET.id);
+    const on = document.querySelector(`[data-id="player-care-voiceChatAllowed-${QUIET.id}-on"]`) as HTMLButtonElement;
+    fireEvent.click(on);
+    await screen.findByText(viLocale['playerCare.voiceReauth']);
+    confirmed = true;
+    fireEvent.click(on);
+    await waitFor(() => expect(on.getAttribute('aria-checked')).toBe('true'));
+    expect(screen.queryByText(viLocale['playerCare.voiceReauth'])).toBeNull();
+  });
+
+  it('shows why a sign-in again did not go through, when the server sends the owner back here', () => {
+    stubApi({ 'GET /api/auth/me': me() });
+    renderPanel([QUIET], '/parent?reauth-error=idp-reauth');
+    expect(screen.getByRole('alert').textContent).toBe(viLocale['auth.callback.reauth']);
+  });
+
+  it('keeps the usual hint for the primary player', async () => {
+    const primary: PlayerDto = { ...EXTRA, primary: true };
+    stubApi({ 'GET /api/auth/me': me(), [`GET /api/players/${primary.id}/learning-progress`]: () => ({ status: 200, body: PROGRESS }) });
+    renderPanel([primary]);
+    await openOnline(primary.id);
+    expect(screen.getByText(viLocale['playerCare.voiceChatHint'])).toBeTruthy();
+    expect(screen.queryByText(viLocale['playerCare.voiceChatHintExtra'])).toBeNull();
   });
 });

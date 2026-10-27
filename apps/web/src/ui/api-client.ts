@@ -70,6 +70,8 @@ const MESSAGES: Readonly<Record<string, TextKey>> = {
   'invite-limit': 'errors.inviteLimit',
   'online-off': 'errors.onlineOff',
   'voice-off': 'errors.voiceOff',
+  'reauth-required': 'errors.reauthRequired',
+  'idp-reauth': 'errors.idpReauth',
 };
 
 /** The message for a failed call, in the display mode chosen when it failed. */

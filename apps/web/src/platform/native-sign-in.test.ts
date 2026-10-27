@@ -38,9 +38,11 @@ describe('native sign-in helpers', () => {
     expect(challenge).toBe(createHash('sha256').update(verifier).digest('base64url'));
   });
 
-  it('builds the authorization request', () => {
-    const q = new URL(authorizationUrl(CONFIG, { state: 's', nonce: 'n', challenge: 'c' })).searchParams;
+  it('builds the authorization request, with a fresh login for a re-authentication', () => {
+    const q = new URL(authorizationUrl(CONFIG, { state: 's', nonce: 'n', challenge: 'c', reauth: false })).searchParams;
     expect(Object.fromEntries(q)).toEqual({ client_id: 'miu-mobile', redirect_uri: CONFIG.redirectUri, response_type: 'code', scope: 'openid email', state: 's', nonce: 'n', code_challenge: 'c', code_challenge_method: 'S256' });
+    const re = new URL(authorizationUrl(CONFIG, { state: 's', nonce: 'n', challenge: 'c', reauth: true })).searchParams;
+    expect([re.get('prompt'), re.get('max_age')]).toEqual(['login', '0']);
     expect(redirectScheme(CONFIG.redirectUri)).toBe('com.hoandat.miu');
   });
 
@@ -55,27 +57,35 @@ describe('native sign-in helpers', () => {
 describe('signInNative', () => {
   it('runs the browser round trip, exchanges code, verifier and nonce, and keeps the token', async () => {
     const d = deps();
-    expect(await signInNative(d)).toBe(true);
+    expect(await signInNative(d, { reauth: false })).toBe(true);
     const url = new URL(d.opened[0] ?? '');
     expect(d.opened[1]).toBe('com.hoandat.miu');
-    const sent = d.exchanged[0] as { code: string; codeVerifier: string; nonce: string; redirectUri: string };
-    expect(sent).toEqual({ code: 'the-code', codeVerifier: sent.codeVerifier, redirectUri: CONFIG.redirectUri, nonce: url.searchParams.get('nonce') });
+    const sent = d.exchanged[0] as { code: string; codeVerifier: string; nonce: string; redirectUri: string; reauth: boolean };
+    expect(sent).toMatchObject({ code: 'the-code', redirectUri: CONFIG.redirectUri, reauth: false, nonce: url.searchParams.get('nonce') });
     expect(createHash('sha256').update(sent.codeVerifier).digest('base64url')).toBe(url.searchParams.get('code_challenge'));
     expect(d.saved).toEqual(['session-token-abcdefghijk']);
   });
 
+  it('asks the IdP for a fresh login on a re-authentication and tells the server it asked', async () => {
+    const d = deps();
+    expect(await signInNative(d, { reauth: true })).toBe(true);
+    const url = new URL(d.opened[0] ?? '');
+    expect([url.searchParams.get('prompt'), url.searchParams.get('max_age')]).toEqual(['login', '0']);
+    expect(d.exchanged[0]).toMatchObject({ reauth: true, nonce: url.searchParams.get('nonce') });
+  });
+
   it('resolves false when the person closes the browser, and saves nothing', async () => {
     const d = deps({ authenticate: () => Promise.reject(Object.assign(new Error('closed'), { code: 'CANCELLED' })) });
-    expect(await signInNative(d)).toBe(false);
+    expect(await signInNative(d, { reauth: true })).toBe(false);
     expect(d.saved).toEqual([]);
   });
 
   it('fails on incomplete parameters, a forged callback or no session, and saves nothing', async () => {
     const forged = deps({ authenticate: async () => 'com.hoandat.miu:/auth/callback?code=x&state=forged' });
-    await expect(signInNative(forged)).rejects.toThrow(/state/);
-    await expect(signInNative(deps({ config: async () => ({ clientId: 'miu-mobile' }) }))).rejects.toThrow(NativeSignInError);
+    await expect(signInNative(forged, { reauth: false })).rejects.toThrow(/state/);
+    await expect(signInNative(deps({ config: async () => ({ clientId: 'miu-mobile' }) }), { reauth: false })).rejects.toThrow(NativeSignInError);
     const empty = deps({ exchange: async () => ({}) });
-    await expect(signInNative(empty)).rejects.toThrow(/no session/);
+    await expect(signInNative(empty, { reauth: false })).rejects.toThrow(/no session/);
     expect([...forged.saved, ...empty.saved]).toEqual([]);
   });
 });

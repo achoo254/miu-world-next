@@ -1,5 +1,6 @@
 import { act, cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+import { ApiError, errorMessage } from '../api-client';
 import { LanguageSetting, VoiceSpeedSetting } from '../system/language-setting';
 import { readVoiceSpeed } from '../system/voice-setting';
 import { bindLangProfile, format, getLangMode, inline, joinBoth, linesOf, mapBoth, pairOf, same, setLangMode, t, writeText } from './i18n';
@@ -34,6 +35,25 @@ describe('locales', () => {
       }
     }
     expect(Object.keys(enLocale).filter((key) => !(key in viLocale))).toEqual([]);
+  });
+});
+
+describe('the sign-in-again confirmation for voice chat', () => {
+  const KEYS = ['playerCare.voiceChatHintExtra', 'playerCare.voiceReauth', 'playerCare.voiceReauthButton', 'errors.reauthRequired', 'errors.idpReauth', 'auth.callback.reauth'] as const;
+
+  it('says it in both languages without parent, PIN or child wording', () => {
+    const vi: Record<string, unknown> = viLocale;
+    const en: Record<string, unknown> = enLocale;
+    for (const key of KEYS) {
+      expect(typeof vi[key], key).toBe('string');
+      expect(String(vi[key]), key).not.toMatch(/phụ huynh|PIN|bố mẹ|cha mẹ|trẻ|học sinh/i);
+      expect(String(en[key]), key).not.toMatch(/parent|PIN|child|kid|student/i);
+    }
+  });
+
+  it('maps the server codes to their messages', () => {
+    expect(errorMessage(new ApiError(403, 'reauth-required'))).toBe(viLocale['errors.reauthRequired']);
+    expect(errorMessage(new ApiError(401, 'idp-reauth'))).toBe(viLocale['errors.idpReauth']);
   });
 });
 

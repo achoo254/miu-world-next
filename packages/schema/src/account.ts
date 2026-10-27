@@ -43,6 +43,11 @@ export const NativeExchangeRequest = z.object({
   codeVerifier: z.string().regex(/^[A-Za-z0-9._~-]{43,128}$/),
   redirectUri: z.string().min(1).max(256),
   nonce: z.string().min(16).max(128),
+  /**
+   * The app asked the IdP for a fresh sign-in (prompt=login, max_age=0), the confirmation account management needs to
+   * turn voice chat on for an extra player. Only a request; whether it happened is read from the ID token.
+   */
+  reauth: z.boolean().default(false),
 });
 export type NativeExchangeRequest = z.infer<typeof NativeExchangeRequest>;
 
@@ -89,9 +94,10 @@ export const PlayerSettingsPatch = z.strictObject({ botsEnabled: z.boolean() });
 export type PlayerSettingsPatch = z.infer<typeof PlayerSettingsPatch>;
 
 /**
- * The account owner's switches for one player, on by default so play stays as it always was: `voiceChatAllowed` (she
- * may talk by voice) and `onlineAllowed` (she plays online; off, she plays alone, learns and is paid as usual). Only
- * the owner changes them, in account management; the server enforces both.
+ * The account owner's switches for one player: `voiceChatAllowed` (she may talk by voice; on by default for the
+ * primary player, off for an extra player until the owner turns it on after signing in again) and `onlineAllowed`
+ * (she plays online, on by default; off, she plays alone, learns and is paid as usual). Only the owner changes them,
+ * in account management; the server enforces both.
  */
 export const PlayerControls = z.object({ voiceChatAllowed: z.boolean(), onlineAllowed: z.boolean() });
 export type PlayerControls = z.infer<typeof PlayerControls>;

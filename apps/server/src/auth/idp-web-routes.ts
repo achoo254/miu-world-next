@@ -18,6 +18,13 @@ import { createSignIn } from './sign-in';
 
 export const IDP_SCOPE = 'openid email';
 const STATE_TTL_MS = 10 * 60 * 1000;
+/**
+ * Where a re-authentication may send the person back (`?return=`): account management only, where it was asked for.
+ * A fixed list, never a URL from the query, so the sign-in cannot be made into an open redirect.
+ */
+const REAUTH_RETURN_PATHS = ['/parent'] as const;
+type ReturnPath = '/' | (typeof REAUTH_RETURN_PATHS)[number];
+const returnPath = (raw: unknown): ReturnPath => REAUTH_RETURN_PATHS.find((path) => path === raw) ?? '/';
 
 export interface IdpRouteDeps {
   db: Db;
@@ -31,7 +38,16 @@ const b64url = (bytes: Buffer): string => bytes.toString('base64url');
 export const pkceChallenge = (verifier: string): string => b64url(createHash('sha256').update(verifier).digest());
 
 /** Per-login secrets carried by the state cookie (httpOnly; only ever read by this server). */
-const PendingLogin = z.object({ state: z.string().min(20), verifier: z.string().min(40), nonce: z.string().min(10), exp: z.number() });
+const PendingLogin = z.object({
+  state: z.string().min(20),
+  verifier: z.string().min(40),
+  nonce: z.string().min(10),
+  /** This sign-in asked the IdP to sign the person in again (`?intent=reauth`). */
+  reauth: z.boolean(),
+  /** Where a re-authentication goes back to (`REAUTH_RETURN_PATHS`); a plain sign-in always goes to '/'. */
+  returnTo: z.enum(['/', ...REAUTH_RETURN_PATHS]),
+  exp: z.number(),
+});
 type PendingLogin = z.infer<typeof PendingLogin>;
 
 function parsePending(raw: string | null): PendingLogin | null {
@@ -82,8 +98,12 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
   const cookieOptions = { httpOnly: true, secure: production, sameSite: 'lax' as const, path: '/' };
   const fail = (res: Response, code = 'idp'): void => res.redirect(303, `/login?error=${code}`);
   const limiter = (name: string) => signInLimiter(config, name, (res) => fail(res, 'rate-limited'));
+  // A failed re-authentication leaves the current session as it was, so its message shows where it was asked for
+  // (the sign-in page only shows to the signed out).
+  const failFor = (pending: PendingLogin, res: Response, code = 'idp'): void =>
+    pending.reauth && pending.returnTo !== '/' ? res.redirect(303, `${pending.returnTo}?reauth-error=${code}`) : fail(res, code);
 
-  router.get('/auth/start', limiter('start'), async (_req, res) => {
+  router.get('/auth/start', limiter('start'), async (req, res) => {
     const web = config.idp?.web;
     if (!idp || !web) return fail(res, 'idp-unavailable');
     let authorizationEndpoint: string;
@@ -93,10 +113,13 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       console.warn('sign-in start failed:', idpFailure(err));
       return fail(res, 'idp-unavailable');
     }
+    const reauth = req.query.intent === 'reauth';
     const pending: PendingLogin = {
       state: b64url(randomBytes(32)),
       verifier: b64url(randomBytes(32)),
       nonce: b64url(randomBytes(16)),
+      reauth,
+      returnTo: reauth ? returnPath(req.query.return) : '/',
       exp: clock().getTime() + STATE_TTL_MS,
     };
     res.cookie(stateCookie, b64url(Buffer.from(JSON.stringify(pending))), { ...cookieOptions, maxAge: STATE_TTL_MS });
@@ -110,6 +133,8 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       nonce: pending.nonce,
       code_challenge: pkceChallenge(pending.verifier),
       code_challenge_method: 'S256',
+      // Re-authentication: the IdP must sign the person in again; amr and auth_time are checked on return.
+      ...(pending.reauth ? { prompt: 'login', max_age: '0' } : {}),
     }).toString();
     res.redirect(303, url.toString());
   });
@@ -127,11 +152,11 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       identity = await idp.identity(tokens, web.clientId, pending.nonce);
     } catch (err) {
       console.warn('sign-in callback failed:', idpFailure(err));
-      return fail(res);
+      return failFor(pending, res);
     }
-    const result = await signInWithIdentity({ db, issuer: idp.issuer, clock, signIn }, res, identity, { kind: 'web' });
-    if (!result.ok) return fail(res, result.code);
-    res.redirect(303, '/');
+    const result = await signInWithIdentity({ db, issuer: idp.issuer, clock, signIn }, res, identity, { reauth: pending.reauth, kind: 'web' });
+    if (!result.ok) return failFor(pending, res, result.code);
+    res.redirect(303, pending.returnTo);
   });
 
   return router;

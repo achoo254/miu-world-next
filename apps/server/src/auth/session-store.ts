@@ -19,7 +19,7 @@ export async function createSession(
   db: Db,
   parentId: string,
   now: Date,
-  options: { kind: SessionKind; idpSid?: string | null },
+  options: { kind: SessionKind; idpSid?: string | null; reauthAt?: Date | null },
 ): Promise<{ token: string; session: SessionRow }> {
   const token = randomBytes(32).toString('base64url');
   // A new session plays as the account's own (primary) player; extra players pick themselves later.
@@ -33,6 +33,7 @@ export async function createSession(
       id: hashToken(token),
       kind: options.kind,
       idpSid: options.idpSid ?? null,
+      reauthAt: options.reauthAt ?? null,
       parentId,
       activeChildId: primary?.id ?? null,
       createdAt: now,

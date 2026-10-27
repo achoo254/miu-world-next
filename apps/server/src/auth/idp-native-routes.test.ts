@@ -91,6 +91,35 @@ describe('signing in on the app', () => {
     await me(fresh).expect(200);
   });
 
+  it('records a re-authentication only when the app asked for one and the token proves it; then voice chat for an extra player turns on', async () => {
+    const user = person();
+    const nowS = Math.floor(Date.now() / 1000);
+    const reauthAt = async (token: string) => (await app.db.select().from(t.sessions).where(eq(t.sessions.id, hashToken(token))))[0]?.reauthAt ?? null;
+    const call = (token: string) => app.request().patch(`/api/players/${extra}/settings`).set('Origin', APP_ORIGIN).set('Authorization', `Bearer ${token}`);
+    const first = ((await exchange(user)).res.body as { token: string }).token;
+    await app.request().post('/api/consents').set('Origin', APP_ORIGIN).set('Authorization', `Bearer ${first}`).send({ policyVersion: app.content.consent.version }).expect(201);
+    const extra = ((await app.request().post('/api/players').set('Origin', APP_ORIGIN).set('Authorization', `Bearer ${first}`).send({ displayName: 'Thỏ Bông' }).expect(201)).body as { id: string }).id;
+    await call(first).send({ voiceChatAllowed: true }).expect(403, { error: 'reauth-required' });
+    // A "reauth" the app did not ask for is not recorded.
+    const unasked = ((await exchange({ ...user, auth_time: nowS - 5, amr: ['fed', 'google', 'reauth'] }, {}, first)).res.body as { token: string }).token;
+    expect(await reauthAt(unasked)).toBeNull();
+    await call(unasked).send({ voiceChatAllowed: true }).expect(403, { error: 'reauth-required' });
+    const proven = ((await exchange({ ...user, auth_time: nowS - 5, amr: ['fed', 'google', 'reauth'] }, { reauth: true }, unasked)).res.body as { token: string }).token;
+    expect((await reauthAt(proven))?.getTime()).toBe((nowS - 5) * 1000);
+    await call(proven).send({ voiceChatAllowed: true }).expect(200);
+  });
+
+  it('refuses a re-authentication the token does not prove', async () => {
+    const nowS = Math.floor(Date.now() / 1000);
+    const stale = await exchange({ ...person(), auth_time: nowS - 3600, amr: ['fed', 'google', 'reauth'] }, { reauth: true });
+    expect([stale.res.status, stale.res.body]).toEqual([401, { error: 'idp-reauth' }]);
+    // The app saying "reauth" is not enough: the token must prove it (amr "reauth").
+    const unproven = await exchange({ ...person(), auth_time: nowS - 5, amr: ['fed', 'github'] }, { reauth: true });
+    expect([unproven.res.status, unproven.res.body]).toEqual([401, { error: 'idp-reauth' }]);
+    const noTime = await exchange({ ...person(), amr: ['fed', 'google', 'reauth'] }, { reauth: true });
+    expect([noTime.res.status, noTime.res.body]).toEqual([401, { error: 'idp-reauth' }]);
+  });
+
   it.each([
     ['another redirect', { redirectUri: 'com.evil.app:/auth/callback' }, 400],
     ['a short verifier', { codeVerifier: 'short' }, 400],

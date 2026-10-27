@@ -64,6 +64,18 @@ describe('players', () => {
     expect(listed.filter((p) => p.primary).map((p) => p.id)).toEqual([childId]);
   });
 
+  it('makes an extra player with voice chat off and online play on; the primary player has both on', async () => {
+    const { agent } = await parentWithChild(app);
+    const extra = (await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(201)).body as { id: string };
+    expect(extra).toMatchObject({ primary: false, voiceChatAllowed: false, onlineAllowed: true });
+    const me = (await agent.get('/api/auth/me').expect(200)).body as { parent: { id: string } };
+    const rows = await app.db.select().from(t.childProfiles).where(eq(t.childProfiles.parentId, me.parent.id));
+    expect(rows.map((r) => [r.isPrimary, r.voiceChatAllowed, r.onlineAllowed]).sort()).toEqual([
+      [false, false, true],
+      [true, true, true],
+    ]);
+  });
+
   it('starts every new session as the primary player', async () => {
     const { agent, parent, childId } = await parentWithChild(app);
     const extra = (await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(201)).body as { id: string; primary: boolean };

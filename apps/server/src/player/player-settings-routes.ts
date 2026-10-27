@@ -3,6 +3,7 @@ import { Router } from 'express';
 import { PlayerOwnerSettings, PlayerOwnerSettingsPatch, PlayerSettingsPatch, PlayerSettingsView } from '@miu/schema/account';
 import { activePlayerId, auth, requireParent } from '../auth/auth-context';
 import type { ContentCatalog } from '../content/content-catalog';
+import type { SessionRow } from '../auth/session-store';
 import type { Db } from '../db/client';
 import { childProfiles } from '../db/schema';
 import { HttpError, parseInput } from '../http-error';
@@ -14,6 +15,16 @@ export interface PlayerSettingsRouteDeps {
   content: ContentCatalog;
   clock: () => Date;
   events?: PlayerEvents;
+}
+
+/** Turning voice chat on for an extra player needs a re-authentication at the IdP within this window. */
+export const VOICE_REAUTH_MAX_AGE_MS = 10 * 60 * 1000;
+
+/** Whether `session` was re-authenticated at the IdP recently enough to turn voice chat on for an extra player. */
+export function recentlyReauthenticated(session: Pick<SessionRow, 'reauthAt'>, now: Date): boolean {
+  if (!session.reauthAt) return false;
+  const age = now.getTime() - session.reauthAt.getTime();
+  return age >= 0 && age <= VOICE_REAUTH_MAX_AGE_MS;
 }
 
 const columns = {
@@ -31,7 +42,10 @@ const view = (row: Row): PlayerSettingsView =>
  * A player's switches. Her own companion bot switch (`GET`/`PUT /player-settings`: it is hers), read together
  * with the account owner's switches and whether she saw the voice reminder. The account owner changes any switch of
  * any player of the account (`PATCH /players/:id/settings`, in account management): voice chat and online play,
- * which the server enforces (online tickets, friends and invites, the rooms, voice). The reminder shown
+ * which the server enforces (online tickets, friends and invites, the rooms, voice). Turning voice chat on for an extra
+ * player is the one change that needs more than being signed in: an adult action, a re-authentication at the IdP
+ * within the last VOICE_REAUTH_MAX_AGE_MS, proven by its ID token and recorded on the session (idp-sign-in.ts); never a
+ * flag the client sends. Turning it off, and every switch of the primary player, needs none. The reminder shown
  * before her first voice chat is confirmed once per player (`POST /player-settings/voice-safety`). A change takes
  * effect at once in the online rooms.
  */
@@ -79,10 +93,13 @@ export function playerSettingsRoutes({ db, content, clock, events }: PlayerSetti
   });
 
   router.patch('/players/:id/settings', requireParent, async (req, res) => {
-    const { parent } = auth(res);
+    const { parent, session } = auth(res);
     // Ownership first: another account's player is "not found" whatever the body says.
     const player = await ownedPlayer(db, parent.id, idParam(req.params.id));
     const patch = parseInput(PlayerOwnerSettingsPatch, req.body);
+    if (patch.voiceChatAllowed === true && !player.isPrimary && !player.voiceChatAllowed && !recentlyReauthenticated(session, clock())) {
+      throw new HttpError(403, 'reauth-required');
+    }
     const row = await update(parent.id, player.id, patch);
     res.json(PlayerOwnerSettings.parse(row));
   });
