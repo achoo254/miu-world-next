@@ -15,7 +15,7 @@ let package = Package(
         .package(name: "CapacitorCommunityKeepAwake", path: "../../../../../node_modules/.pnpm/@capacitor-community+keep-awake@8.0.1_@capacitor+core@8.5.3/node_modules/@capacitor-community/keep-awake"),
         .package(name: "CapacitorApp", path: "../../../../../node_modules/.pnpm/@capacitor+app@8.1.2_@capacitor+core@8.5.3/node_modules/@capacitor/app"),
         .package(name: "AparajitaCapacitorSecureStorage", path: "../../../../../node_modules/.pnpm/@aparajita+capacitor-secure-storage@8.0.1/node_modules/@aparajita/capacitor-secure-storage"),
-        .package(name: "SharedNextCapacitorSystemAuth", path: "../../../../../node_modules/.pnpm/@shared-next+capacitor-system-auth@https+++codeload.github.com+achoo254+shared-next+tar_27aa528850f1ccf8bb48d6d33223ceb0/node_modules/@shared-next/capacitor-system-auth")
+        .package(name: "Achoo254CapacitorSystemAuth", path: "../../../../../node_modules/.pnpm/@achoo254+capacitor-system-auth@https+++codeload.github.com+achoo254+shared-next+tar.gz_98babdb2982b0cba0b0badce9c2203c6/node_modules/@achoo254/capacitor-system-auth")
     ],
     targets: [
         .target(
@@ -26,7 +26,7 @@ let package = Package(
                 .product(name: "CapacitorCommunityKeepAwake", package: "CapacitorCommunityKeepAwake"),
                 .product(name: "CapacitorApp", package: "CapacitorApp"),
                 .product(name: "AparajitaCapacitorSecureStorage", package: "AparajitaCapacitorSecureStorage"),
-                .product(name: "SharedNextCapacitorSystemAuth", package: "SharedNextCapacitorSystemAuth")
+                .product(name: "Achoo254CapacitorSystemAuth", package: "Achoo254CapacitorSystemAuth")
             ]
         )
     ]

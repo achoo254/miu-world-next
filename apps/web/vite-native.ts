@@ -2,7 +2,7 @@
 // Content-Security-Policy that lets its page (capacitor://localhost, https://localhost) reach that server and nothing
 // else. The game's assets are not packed into the app: it reads them from the server's /game-assets/ over https; only
 // the self-hosted fonts ship inside, so text renders before the network answers.
-import { primaryOrigin } from '@shared-next/brand/hosts';
+import { primaryOrigin } from '@achoo254/brand/hosts';
 import type { Plugin } from 'vite';
 import { brand } from './src/brand.ts';
 

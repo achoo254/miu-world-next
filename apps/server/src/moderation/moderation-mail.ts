@@ -2,7 +2,7 @@
 // a reported player is told of. Each letter is a mail row whose template id is `<kind>:<key>` (one per digest day or
 // per report and decision), with the values it fills in (`mail.params`: a count, a new name, a date) chosen by the
 // server, never typed by a player. `{name}` is her character's name, filled in when the mailbox is read.
-import { defineBrand } from '@shared-next/brand';
+import { defineBrand } from '@achoo254/brand';
 import type { MailTemplate } from '@miu/schema/mail';
 import config from '../../../../brand.config.json' with { type: 'json' };
 

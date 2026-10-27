@@ -1,9 +1,9 @@
-// Miu's icons are not drawn from SVGs by @shared-next/brand: `pnpm assets:logo` (tools/assets/render-brand-logo.ts)
+// Miu's icons are not drawn from SVGs by @achoo254/brand: `pnpm assets:logo` (tools/assets/render-brand-logo.ts)
 // renders the logo PNGs into assets/generated/brand/ and lists them in assets/manifest.json; this file names the ones
 // the web app serves and the manifests built from them. Paths are manifest paths (relative to assets/); the web build
 // turns them into versioned URLs, `pnpm brand:gen` writes them as they are.
-import type { BrandConfig } from '@shared-next/brand';
-import type { GenerateManifestsOptions, RequirableField, WebManifestOptions } from '@shared-next/brand/build';
+import type { BrandConfig } from '@achoo254/brand';
+import type { GenerateManifestsOptions, RequirableField, WebManifestOptions } from '@achoo254/brand/build';
 
 /** Optional brand fields Miu needs: the browser-bar colour of the manifest and the Android id of capacitor.json. */
 export const BRAND_REQUIRE = ['colors.theme', 'appIds.android'] as const satisfies readonly RequirableField[];

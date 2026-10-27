@@ -1,12 +1,12 @@
 // The logo (assets/generated/brand/, `pnpm assets:logo`) as the pages' favicon and the home-screen icon of the installed
 // web app: links every page to the favicon and the iPhone icon, and gives the game page a web app manifest (served in
-// dev, emitted into the build). Name, colours, icons and the manifest come from brand.config.json (@shared-next/brand,
+// dev, emitted into the build). Name, colours, icons and the manifest come from brand.config.json (@achoo254/brand,
 // with Miu's logo list in brand-icons.ts), which the build validates here. Icon URLs carry their manifest hash so a new logo is fetched past Cloudflare's cache; the
 // files themselves ship through repoAssets like any other runtime asset.
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import type { Connect, HtmlTagDescriptor, Plugin } from 'vite';
-import { formatGenerated, parseBrandConfig, webManifest as brandWebManifest } from '@shared-next/brand/build';
+import { formatGenerated, parseBrandConfig, webManifest as brandWebManifest } from '@achoo254/brand/build';
 import { BRAND_REQUIRE, iconFor, rasterIcons, webManifestOptions } from './brand-icons.ts';
 import { versioned } from './src/asset-versions.ts';
 import { brand } from './src/brand.ts';

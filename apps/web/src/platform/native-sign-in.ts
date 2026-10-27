@@ -1,5 +1,5 @@
 // Sign-in in the iPhone/Android app (RFC 8252): Code + PKCE with the account service's public `miu-mobile`
-// client in the system browser (ASWebAuthenticationSession / Custom Tabs through @shared-next/capacitor-system-auth),
+// client in the system browser (ASWebAuthenticationSession / Custom Tabs through @achoo254/capacitor-system-auth),
 // never in this WebView. The app asks Miu's server for the IdP parameters, makes and keeps the PKCE verifier, `state`
 // and `nonce`, checks the callback, and hands code, verifier and nonce to the server, which answers with the app's
 // Miu session token. IdP tokens never reach the app. Pure helpers here; the plugins are injected (see `deps`).

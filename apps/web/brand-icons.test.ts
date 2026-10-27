@@ -1,12 +1,12 @@
 import { readFileSync } from 'node:fs';
-import { formatGenerated, generateManifests, loadBrandConfig } from '@shared-next/brand/build';
-import { primaryOrigin } from '@shared-next/brand/hosts';
+import { formatGenerated, generateManifests, loadBrandConfig } from '@achoo254/brand/build';
+import { primaryOrigin } from '@achoo254/brand/hosts';
 import { describe, expect, it } from 'vitest';
 import { BRAND_GENERATED_DIR, BRAND_REQUIRE, BRAND_ROOT, brandManifests, iconFor, rasterIcons, webManifestOptions } from './brand-icons';
 import { brand } from './src/brand';
 
 describe('brand.config.json', () => {
-  it('passes the schema of @shared-next/brand, and the bundled module is the same file', () => {
+  it('passes the schema of @achoo254/brand, and the bundled module is the same file', () => {
     expect(loadBrandConfig(BRAND_ROOT, { require: BRAND_REQUIRE })).toEqual(brand);
     expect(brand.urlScheme).toBe(brand.appIds.ios);
   });

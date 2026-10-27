@@ -4,7 +4,7 @@
  *
  *   pnpm brand:gen
  */
-import { loadBrandConfig, writeBrandFiles } from '@shared-next/brand/build';
+import { loadBrandConfig, writeBrandFiles } from '@achoo254/brand/build';
 import { BRAND_GENERATED_DIR, BRAND_REQUIRE, BRAND_ROOT, brandManifests } from './brand-icons.ts';
 
 const brand = loadBrandConfig(BRAND_ROOT, { require: BRAND_REQUIRE });

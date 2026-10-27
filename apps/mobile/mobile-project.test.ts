@@ -32,12 +32,12 @@ describe('the iPhone/Android projects', () => {
     // No other intent filter may claim the sign-in scheme (Android would show a chooser).
     expect(read('./android/app/src/main/AndroidManifest.xml')).not.toContain(`android:scheme="${brand.urlScheme}"`);
     const spm = read('./ios/App/CapApp-SPM/Package.swift');
-    expect(spm).toContain('SharedNextCapacitorSystemAuth');
+    expect(spm).toContain('Achoo254CapacitorSystemAuth');
     expect(spm).toContain('AparajitaCapacitorSecureStorage');
     const gradle = read('./android/capacitor.settings.gradle');
-    expect(gradle).toContain("include ':shared-next-capacitor-system-auth'");
+    expect(gradle).toContain("include ':achoo254-capacitor-system-auth'");
     expect(gradle).toContain("include ':aparajita-capacitor-secure-storage'");
-    expect(Object.keys(pkg.dependencies)).toEqual(expect.arrayContaining(['@shared-next/capacitor-system-auth', '@aparajita/capacitor-secure-storage']));
+    expect(Object.keys(pkg.dependencies)).toEqual(expect.arrayContaining(['@achoo254/capacitor-system-auth', '@aparajita/capacitor-secure-storage']));
   });
 
   it('ship store-ready icons: a true 1024 px App Store icon without alpha, and Android adaptive layers with a themed one', () => {

@@ -12,7 +12,7 @@ dependencies {
     implementation project(':capacitor-community-keep-awake')
     implementation project(':capacitor-app')
     implementation project(':aparajita-capacitor-secure-storage')
-    implementation project(':shared-next-capacitor-system-auth')
+    implementation project(':achoo254-capacitor-system-auth')
 
 }
 

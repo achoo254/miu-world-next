@@ -3,7 +3,7 @@
 // @aparajita/capacitor-secure-storage, never in the WebView's storage, and in memory for this run (session-token.ts).
 // One entry per server, so a build pointed at another server never reads this one's token.
 import { KeychainAccess, SecureStorage } from '@aparajita/capacitor-secure-storage';
-import { SystemAuth } from '@shared-next/capacitor-system-auth';
+import { SystemAuth } from '@achoo254/capacitor-system-auth';
 import { z } from 'zod';
 import { api } from '../ui/api-client';
 import { SERVER_ORIGIN } from './endpoints';

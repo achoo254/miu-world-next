@@ -18,7 +18,7 @@ android {
         versionCode miuVersionCode
         versionName miuVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        // Sign-in callback (com.hoandat.miu:/auth/callback) of @shared-next/capacitor-system-auth's RedirectActivity,
+        // Sign-in callback (com.hoandat.miu:/auth/callback) of @achoo254/capacitor-system-auth's RedirectActivity,
         // used when the browser has no Auth Tab; no other intent filter of the app may declare this scheme.
         manifestPlaceholders += [systemAuthRedirectScheme: "com.hoandat.miu"]
         aaptOptions {

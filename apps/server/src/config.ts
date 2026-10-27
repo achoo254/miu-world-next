@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { defineBrand } from '@shared-next/brand';
+import { defineBrand } from '@achoo254/brand';
 import { OnlineMode } from '@miu/schema/multiplayer';
 import brandConfig from '../../../brand.config.json' with { type: 'json' };
 import { APP_ORIGINS } from './auth/app-cors';
