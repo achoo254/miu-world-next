@@ -64,7 +64,7 @@ export interface AppDeps {
   content?: ContentCatalog;
   /** Printable worksheets by quest id; defaults to the ones the content's quests hand out. */
   worksheets?: ReadonlyMap<string, Worksheet>;
-  /** Injectable for tests (session expiry, parent-gate window). */
+  /** Injectable for tests (session expiry). */
   clock?: () => Date;
   /** Calls to the account service (discovery, keys, token endpoint); tests inject a fake IdP so none is contacted. */
   fetchImpl?: typeof fetch;
@@ -150,7 +150,7 @@ export function createApp({ config, db, content = loadContentCatalog(), workshee
   api.use(playerRoutes({ db, content, clock }));
   api.use(progressRoutes({ db, content, clock }));
   api.use(playerSettingsRoutes({ db, content, clock, events: playerEvents }));
-  api.use(friendRoutes({ db, content, clock, events: playerEvents, online }));
+  api.use(friendRoutes({ db, content, events: playerEvents, online }));
   api.use(inviteRoutes({ db, content, clock, events: playerEvents }));
   api.use(characterRoutes({ db, content, events: characterEvents }));
   api.use(playerPositionRoutes({ db, content, clock }));
@@ -173,7 +173,7 @@ export function createApp({ config, db, content = loadContentCatalog(), workshee
   api.use(journeyRoutes({ db, content, shopNames: new Map(shop.items.map((item) => [item.id, item.name])) }));
   api.use(achievementRoutes({ db, content, clock }));
   api.use(trophyRoomRoutes({ db, content }));
-  api.use(worksheetRoutes({ worksheets, clock }));
+  api.use(worksheetRoutes({ worksheets }));
   const now = (): number => clock().getTime();
   api.use(voiceRoutes({ db, content, ice: new IceServerSource({ turn: config.turn, fetchImpl: turnFetch, now }), now }));
   api.use(wsTicketRoutes({ db, content, clock, tickets: wsTickets ?? new WsTickets(now), onlineSwitch }));

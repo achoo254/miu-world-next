@@ -25,7 +25,7 @@ export function SettingsDialog({ onClose }: { onClose: () => void }) {
               <T k="settings.changeProfile" />
             </Link>
           ) : null}
-          {/* Every account, a lone player's too, reaches its management (players, sign-out, delete); the PIN, if set, still guards it there. */}
+          {/* Every account, a lone player's too, reaches its management (players, sign-out, delete). */}
           <Link to="/parent" className={buttonClass('ghost', { block: true })} data-id="home-settings-account">
             <T k="settings.account" />
           </Link>

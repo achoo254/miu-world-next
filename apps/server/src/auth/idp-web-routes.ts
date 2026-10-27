@@ -31,7 +31,7 @@ const b64url = (bytes: Buffer): string => bytes.toString('base64url');
 export const pkceChallenge = (verifier: string): string => b64url(createHash('sha256').update(verifier).digest());
 
 /** Per-login secrets carried by the state cookie (httpOnly; only ever read by this server). */
-const PendingLogin = z.object({ state: z.string().min(20), verifier: z.string().min(40), nonce: z.string().min(10), reauth: z.boolean(), exp: z.number() });
+const PendingLogin = z.object({ state: z.string().min(20), verifier: z.string().min(40), nonce: z.string().min(10), exp: z.number() });
 type PendingLogin = z.infer<typeof PendingLogin>;
 
 function parsePending(raw: string | null): PendingLogin | null {
@@ -83,7 +83,7 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
   const fail = (res: Response, code = 'idp'): void => res.redirect(303, `/login?error=${code}`);
   const limiter = (name: string) => signInLimiter(config, name, (res) => fail(res, 'rate-limited'));
 
-  router.get('/auth/start', limiter('start'), async (req, res) => {
+  router.get('/auth/start', limiter('start'), async (_req, res) => {
     const web = config.idp?.web;
     if (!idp || !web) return fail(res, 'idp-unavailable');
     let authorizationEndpoint: string;
@@ -97,7 +97,6 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       state: b64url(randomBytes(32)),
       verifier: b64url(randomBytes(32)),
       nonce: b64url(randomBytes(16)),
-      reauth: req.query.intent === 'reauth',
       exp: clock().getTime() + STATE_TTL_MS,
     };
     res.cookie(stateCookie, b64url(Buffer.from(JSON.stringify(pending))), { ...cookieOptions, maxAge: STATE_TTL_MS });
@@ -111,8 +110,6 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       nonce: pending.nonce,
       code_challenge: pkceChallenge(pending.verifier),
       code_challenge_method: 'S256',
-      // Re-authentication: the IdP must sign the person in again; auth_time is checked on return.
-      ...(pending.reauth ? { prompt: 'login', max_age: '0' } : {}),
     }).toString();
     res.redirect(303, url.toString());
   });
@@ -132,7 +129,7 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       console.warn('sign-in callback failed:', idpFailure(err));
       return fail(res);
     }
-    const result = await signInWithIdentity({ db, issuer: idp.issuer, clock, signIn }, res, identity, { reauth: pending.reauth, kind: 'web' });
+    const result = await signInWithIdentity({ db, issuer: idp.issuer, clock, signIn }, res, identity, { kind: 'web' });
     if (!result.ok) return fail(res, result.code);
     res.redirect(303, '/');
   });

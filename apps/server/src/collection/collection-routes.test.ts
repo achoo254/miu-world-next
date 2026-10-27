@@ -4,7 +4,7 @@ import { ProgressResponse, StepCompleteResponse } from '@miu/schema/game';
 import { pickCollectible } from '@miu/quest/collectible-drop';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { solution } from '../../test/quest-solution';
-import { TEST_PIN, createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
+import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
 import { childProfiles, inventoryItems, rewardLedger } from '../db/schema';
 
 // Fixture quests of the forest (khu-rung-bi-mat): side-egg is its minigame side quest, quest-c a lesson.
@@ -162,7 +162,6 @@ describe("the child's data", () => {
     const itemId = res.completion?.collectible?.itemId;
     await own(childId, allOfForest().filter((id) => id !== itemId));
     await claim(agent).expect(200);
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     const exported = (await agent.get('/api/account/export').expect(200)).body as { players: Array<{ inventory: Array<{ itemId: string }>; rewards: Array<{ source: string }> }> };
     const child = exported.players[0];
     expect(child?.inventory.map((i) => i.itemId).sort()).toEqual(allOfForest().sort());

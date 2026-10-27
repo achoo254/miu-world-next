@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { eq, sql } from 'drizzle-orm';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { TEST_PIN, createTestApp, fakeParent, parentWithChild, type TestApp } from '../../test/test-app';
+import { createTestApp, fakeParent, parentWithChild, type TestApp } from '../../test/test-app';
 import * as t from '../db/schema';
 
 let app: TestApp;
@@ -101,31 +101,19 @@ describe('players', () => {
     expect((await agent.get('/api/auth/me').expect(200)).body.activePlayerId).toBe(childId);
   });
 
-  it('needs the parent gate to rename or delete, but not for the child to pick a profile', async () => {
+  it('renames the primary player and lets the child pick a profile', async () => {
     const { agent, childId } = await parentWithChild(app);
-    await agent.post('/api/parent-gate/lock').expect(200);
-    await agent.patch(`/api/players/${childId}`).send({ displayName: 'Sao Nhỏ' }).expect(403, { error: 'parent-gate-closed' });
-    await agent.delete(`/api/players/${childId}`).expect(403, { error: 'parent-gate-closed' });
+    await agent.patch(`/api/players/${childId}`).send({ displayName: 'Sao Nhỏ' }).expect(200);
     await agent.post(`/api/players/${childId}/select`).expect(200);
     await agent.get('/api/players').expect(200);
   });
 
-  it('allows child to update language without parent gate', async () => {
+  it('lets the child update the language of a player', async () => {
     const { agent, childId } = await parentWithChild(app);
-    await agent.post('/api/parent-gate/lock').expect(200);
     const res = await agent.patch(`/api/players/${childId}/language`).send({ language: 'both' }).expect(200);
     expect(res.body.language).toBe('both');
     const [row] = await app.db.select().from(t.childProfiles).where(eq(t.childProfiles.id, childId));
     expect(row?.language).toBe('both');
-  });
-
-  it('closes the parent area when a profile is picked for play', async () => {
-    const { agent, childId } = await parentWithChild(app);
-    expect((await agent.get('/api/auth/me').expect(200)).body.parentGateOpen).toBe(true);
-    const me = await agent.post(`/api/players/${childId}/select`).expect(200);
-    expect(me.body.activePlayerId).toBe(childId);
-    expect((await agent.get('/api/auth/me').expect(200)).body.parentGateOpen).toBe(false);
-    await agent.delete(`/api/players/${childId}`).expect(403, { error: 'parent-gate-closed' });
   });
 
   it('refuses play when the parent has not accepted the current policy version', async () => {
@@ -146,10 +134,6 @@ describe('players', () => {
     await agent.post(`/api/players/${childId}/select`).expect(403, { error: 'consent-required' });
     await agent.get('/api/progress').expect(403, { error: 'consent-required' });
     await agent.post('/api/consents').send({ policyVersion: 'v5' }).expect(400, { error: 'policy-version-mismatch' });
-    // With a PIN, only who unlocks the account area accepts it (a child at the device cannot).
-    await agent.post('/api/parent-gate/lock').expect(200);
-    await agent.post('/api/consents').send({ policyVersion: app.content.consent.version }).expect(403, { error: 'parent-gate-closed' });
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     const again = (await agent.post('/api/consents').send({ policyVersion: app.content.consent.version }).expect(201)).body as { consentAccepted: boolean; players: Array<{ id: string }> };
     expect(again.consentAccepted).toBe(true);
     expect(again.players.map((p) => p.id)).toEqual([childId]);
@@ -160,7 +144,7 @@ describe('players', () => {
     expect(((await agent.get('/api/auth/me').expect(200)).body as { consentAccepted: boolean }).consentAccepted).toBe(true);
   });
 
-  it('renames within the list and updates language under parent gate', async () => {
+  it('renames within the list and updates language', async () => {
     const { agent, childId } = await parentWithChild(app);
     await agent.patch(`/api/players/${childId}`).send({ displayName: 'Sao Nhỏ', language: 'en' }).expect(200, { id: childId, displayName: 'Sao Nhỏ', species: 'cat', language: 'en', primary: true, botsEnabled: true, voiceChatAllowed: true, onlineAllowed: true });
     await agent.patch(`/api/players/${childId}`).send({ displayName: 'Bé Na' }).expect(400);
@@ -170,7 +154,6 @@ describe('players', () => {
     const { agent } = await parentWithChild(app);
     const childId = ((await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(201)).body as { id: string }).id;
     await agent.post(`/api/players/${childId}/select`).expect(200);
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     await app.db.insert(t.questProgress).values({ childId, questId: 'q', completedSteps: ['s'] });
     await app.db.insert(t.rewardLedger).values({ id: randomUUID(), childId, source: 'quest-step:q/s', xp: 1 });
     await app.db.insert(t.inventoryItems).values({ childId, itemId: 'la-than', qty: 1 });
@@ -219,6 +202,5 @@ describe('IDOR: one account can never reach another account\'s players', () => {
     await anon.delete(`/api/players/${id}`).expect(401);
     await anon.post(`/api/players/${id}/select`).expect(401);
     await anon.post('/api/consents').send({ policyVersion: app.content.consent.version }).expect(401);
-    await anon.post('/api/parent-gate/unlock').send({ pin: '1234' }).expect(401);
   });
 });

@@ -5,7 +5,6 @@ import { childProfiles, sessions, type SessionKind } from '../db/schema';
 
 export const SESSION_ABSOLUTE_MS = 30 * 24 * 60 * 60 * 1000;
 export const SESSION_IDLE_MS = 7 * 24 * 60 * 60 * 1000;
-export const PARENT_GATE_MS = 15 * 60 * 1000;
 /** Refresh `last_seen_at` at most this often to avoid a write on every request. */
 const TOUCH_INTERVAL_MS = 60 * 1000;
 
@@ -20,7 +19,7 @@ export async function createSession(
   db: Db,
   parentId: string,
   now: Date,
-  options: { openParentGate: boolean; kind: SessionKind; idpSid?: string | null },
+  options: { kind: SessionKind; idpSid?: string | null },
 ): Promise<{ token: string; session: SessionRow }> {
   const token = randomBytes(32).toString('base64url');
   // A new session plays as the account's own (primary) player; extra players pick themselves later.
@@ -39,7 +38,6 @@ export async function createSession(
       createdAt: now,
       lastSeenAt: now,
       expiresAt: new Date(now.getTime() + SESSION_ABSOLUTE_MS),
-      parentGateUntil: options.openParentGate ? new Date(now.getTime() + PARENT_GATE_MS) : null,
     })
     .returning();
   if (!session) throw new Error('session insert returned no row');

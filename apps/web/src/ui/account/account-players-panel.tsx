@@ -2,9 +2,8 @@
 // per player, opened to her learning progress, her online switches (companion bots; voice chat and online play, which
 // only the owner turns off and the server enforces), or her friends and blocks (view, remove, unblock; she answers
 // requests herself). Everything is read from the server for that player
-// (`/api/players/:id/…`), behind the account area's optional PIN.
+// (`/api/players/:id/…`).
 import { useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router';
 import { PlayerOwnerSettings, type PlayerDto, type PlayerOwnerSettingsPatch } from '@miu/schema/account';
 import { api } from '../api-client';
 import type { TextKey } from '../i18n/i18n';
@@ -15,7 +14,6 @@ import { Tabs, type TabItem } from '../kit/tabs';
 import { accountSocial } from '../friends/friends-api';
 import { FriendsPanel } from '../friends/friends-panel';
 import { PlayerProgress } from '../profile/progress-panel';
-import { useOptionalAccount } from './account-context';
 import { tileClass } from './profile-screens';
 import { useSubmit } from './use-submit';
 import '../system/settings.css';
@@ -25,20 +23,17 @@ type CareTab = 'progress' | 'online' | 'friends';
 
 /**
  * The account owner's switches for a player, applied at once even in a room: her companion bots (her own setting
- * too), and voice chat and online play, on by default, which only the owner can turn off (the server refuses them),
- * and only once the account has a PIN (otherwise whoever holds the device could turn them back on): without one,
- * they show as they are, with the way to set a PIN.
+ * too), and voice chat and online play, on by default, which only the owner can turn off (the server refuses them
+ * to the player herself).
  */
 function PlayerOnlineSwitches({ player }: { player: PlayerDto }) {
-  const account = useOptionalAccount();
-  const pinSet = account?.state.status === 'signed-in' && account.state.me.pinSet;
   const [settings, setSettings] = useState<PlayerOwnerSettings>({ botsEnabled: player.botsEnabled, voiceChatAllowed: player.voiceChatAllowed, onlineAllowed: player.onlineAllowed });
   /** The change being saved (the submit wrapper takes no arguments). */
   const pending = useRef<PlayerOwnerSettingsPatch>({});
   const save = useSubmit(async () => {
     setSettings(await api('PATCH', `/players/${player.id}/settings`, PlayerOwnerSettings, pending.current));
   });
-  const choice = (key: keyof PlayerOwnerSettings, title: TextKey, hint?: TextKey, locked = false) => (
+  const choice = (key: keyof PlayerOwnerSettings, title: TextKey, hint?: TextKey) => (
     <div className="setting-group" role="radiogroup" aria-labelledby={`player-care-${key}-${player.id}`} data-id={`player-care-${key}-${player.id}`}>
       <p className="setting-title" id={`player-care-${key}-${player.id}`}>
         <T k={title} />
@@ -57,7 +52,7 @@ function PlayerOnlineSwitches({ player }: { player: PlayerDto }) {
             aria-checked={settings[key] === on}
             className="setting-choice"
             data-id={`player-care-${key}-${player.id}-${on ? 'on' : 'off'}`}
-            disabled={save.busy || locked}
+            disabled={save.busy}
             onClick={() => {
               pending.current = { [key]: on };
               void save.onSubmit();
@@ -74,16 +69,8 @@ function PlayerOnlineSwitches({ player }: { player: PlayerDto }) {
       <p className="hint">
         <T k="playerCare.settingsHint" />
       </p>
-      {pinSet ? null : (
-        <p className="hint" data-id={`player-care-pin-first-${player.id}`}>
-          <T k="playerCare.pinFirst" />{' '}
-          <Link to="/set-pin" data-id={`player-care-set-pin-${player.id}`}>
-            <T k="playerCare.setPin" />
-          </Link>
-        </p>
-      )}
-      {choice('onlineAllowed', 'playerCare.online', 'playerCare.onlineHint', !pinSet)}
-      {choice('voiceChatAllowed', 'playerCare.voiceChat', 'playerCare.voiceChatHint', !pinSet)}
+      {choice('onlineAllowed', 'playerCare.online', 'playerCare.onlineHint')}
+      {choice('voiceChatAllowed', 'playerCare.voiceChat', 'playerCare.voiceChatHint')}
       {choice('botsEnabled', 'settings.bots')}
       {save.error ? (
         <p role="alert" className="error">

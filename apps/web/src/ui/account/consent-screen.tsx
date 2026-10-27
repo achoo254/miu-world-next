@@ -7,7 +7,6 @@ import { buttonClass } from '../kit/button';
 import { SkyScene } from '../kit/sky-scene';
 import { T } from '../i18n/use-t';
 import { useAccount } from './account-context';
-import { ParentGate } from './parent-gate';
 import { useSubmit } from './use-submit';
 
 export function ConsentScreen() {
@@ -27,18 +26,6 @@ export function ConsentScreen() {
   });
 
   if (state.status !== 'signed-in') return null;
-  // A PIN-locked account area: whoever is at the device sees only the PIN prompt; the policy (a new version after a
-  // change, asked once) is read and accepted by the owner who unlocks it.
-  if (!state.me.parentGateOpen) {
-    return (
-      <SkyScene>
-        <main className="scene-content" data-id="consent">
-          <p className="hint" data-id="consent-owner-only"><T k="consent.ownerOnly" /></p>
-          <ParentGate />
-        </main>
-      </SkyScene>
-    );
-  }
   return (
     <SkyScene>
       <main className="scene-content" data-id="consent">

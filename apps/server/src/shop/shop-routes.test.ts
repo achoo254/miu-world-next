@@ -5,7 +5,7 @@ import path from 'node:path';
 import { and, eq, like } from 'drizzle-orm';
 import { ShopResponse, ShopState, type ShopItemDto } from '@miu/schema/shop';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { TEST_PIN, createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
+import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
 import { childProfiles, rewardLedger, shopInventory } from '../db/schema';
 import { loadDecorCatalog } from '../home/home-decor-routes';
 import { loadShopCatalog } from './shop-catalog';
@@ -213,7 +213,6 @@ describe("the child's data", () => {
     const item = wearable();
     await earn(childId, item.price);
     await buy(agent, item.id).expect(200);
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     const exported = (await agent.get('/api/account/export').expect(200)).body as { players: Array<{ shop: unknown; rewards: Array<{ source: string; coins: number }> }> };
     expect(exported.players[0]?.shop).toEqual([{ itemId: item.id, qty: 1 }]);
     expect(exported.players[0]?.rewards).toEqual(expect.arrayContaining([expect.objectContaining({ coins: -item.price, source: expect.stringMatching(/^shop:/) as unknown })]));

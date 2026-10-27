@@ -138,7 +138,7 @@ describe('the iPhone/Android app', () => {
   it('sends no sign_up and no quest events for what an app session does, while the same account on the web still counts', async () => {
     const appAgent = async (parentId: string): Promise<Agent> => {
       // An app session plays as the account's primary player once there is one (it is made by the consent).
-      const { token } = await createSession(app.db, parentId, new Date(), { openParentGate: true, kind: 'native' });
+      const { token } = await createSession(app.db, parentId, new Date(), { kind: 'native' });
       return app.agent().set('Origin', APP_ORIGINS[0] ?? '').set('Authorization', `Bearer ${token}`).set(ANALYTICS_HEADER, HEADER);
     };
     const parentOf = async (agent: Agent): Promise<string> => ((await agent.get('/api/auth/me').expect(200)).body as { parent: { id: string } }).parent.id;

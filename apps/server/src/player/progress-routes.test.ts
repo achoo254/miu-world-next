@@ -1,7 +1,7 @@
 import { and, eq } from 'drizzle-orm';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { PlayerProgressDto, recentWeeks, weekStartOf } from '@miu/schema/progress';
-import { TEST_PIN, createTestApp, parentWithChild, type TestApp } from '../../test/test-app';
+import { createTestApp, parentWithChild, type TestApp } from '../../test/test-app';
 import * as t from '../db/schema';
 import type { PlayerRecord } from '../progression/player-facts';
 import { computeProgress } from './player-progress';
@@ -98,12 +98,9 @@ describe('GET /players/:id/learning-progress', () => {
     await b.agent.get('/api/players/not-a-uuid/learning-progress').expect(404);
   });
 
-  it('stays behind the account PIN once the area is locked', async () => {
+  it('answers the account for its player once that player is chosen', async () => {
     const { agent, childId } = await parentWithChild(app);
-    // Choosing who plays closes the account area.
     await agent.post(`/api/players/${childId}/select`).expect(200);
-    await agent.get(`/api/players/${childId}/learning-progress`).expect(403, { error: 'parent-gate-closed' });
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     await agent.get(`/api/players/${childId}/learning-progress`).expect(200);
   });
 });

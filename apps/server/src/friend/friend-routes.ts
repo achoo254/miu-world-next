@@ -1,7 +1,7 @@
 import { eq } from 'drizzle-orm';
 import { Router, type Response } from 'express';
 import { FriendAnswer, SocialView } from '@miu/schema/friends';
-import { activePlayerId, auth, requireParent, requireParentGate } from '../auth/auth-context';
+import { activePlayerId, auth, requireParent } from '../auth/auth-context';
 import type { ContentCatalog } from '../content/content-catalog';
 import type { Db } from '../db/client';
 import { characters } from '../db/schema';
@@ -15,7 +15,6 @@ import { NOBODY_ONLINE, answerRequest, cancelRequest, hasRequest, removeFriend, 
 export interface FriendRouteDeps {
   db: Db;
   content: ContentCatalog;
-  clock: () => Date;
   events?: PlayerEvents;
   /** Who is in a room now (the multiplayer hub); without it every friend shows offline. */
   online?: OnlineLookup;
@@ -24,11 +23,10 @@ export interface FriendRouteDeps {
 /**
  * Friends and blocks over the API (requests themselves are sent in a room, over the multiplayer connection):
  * the selected player's own (`/friends`, `/blocks`), and any player's for the account owner (`/players/:id/…`,
- * behind the optional PIN: view, remove a friend, lift a block). Everything names rows by their own ids.
+ * view, remove a friend, lift a block). Everything names rows by their own ids.
  */
-export function friendRoutes({ db, content, clock, events, online = NOBODY_ONLINE }: FriendRouteDeps): Router {
+export function friendRoutes({ db, content, events, online = NOBODY_ONLINE }: FriendRouteDeps): Router {
   const router = Router();
-  const gate = requireParentGate(clock);
   const version = content.consent.version;
 
   const view = async (res: Response, childId: string): Promise<void> => {
@@ -94,17 +92,17 @@ export function friendRoutes({ db, content, clock, events, online = NOBODY_ONLIN
     res.status(204).end();
   });
 
-  router.get('/players/:id/friends', requireParent, gate, async (req, res) => {
+  router.get('/players/:id/friends', requireParent, async (req, res) => {
     await view(res, await accountPlayer(res, req.params.id));
   });
 
-  router.delete('/players/:id/friends/:friendId', requireParent, gate, async (req, res) => {
+  router.delete('/players/:id/friends/:friendId', requireParent, async (req, res) => {
     const childId = await accountPlayer(res, req.params.id);
     await dropFriend(childId, idParam(req.params.friendId));
     res.status(204).end();
   });
 
-  router.delete('/players/:id/blocks/:blockId', requireParent, gate, async (req, res) => {
+  router.delete('/players/:id/blocks/:blockId', requireParent, async (req, res) => {
     const childId = await accountPlayer(res, req.params.id);
     await liftBlock(childId, idParam(req.params.blockId));
     res.status(204).end();

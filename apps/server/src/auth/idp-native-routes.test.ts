@@ -2,7 +2,7 @@ import { createHash, randomBytes } from 'node:crypto';
 import { eq } from 'drizzle-orm';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import * as t from '../db/schema';
-import { TEST_PIN, createTestApp, type TestApp } from '../../test/test-app';
+import { createTestApp, type TestApp } from '../../test/test-app';
 import { FAKE_ISSUER, FakeIdp, IDP_ENV, MOBILE_CLIENT } from '../../test/fake-idp';
 import { APP_ORIGINS } from './app-cors';
 import { hashToken } from './session-store';
@@ -64,7 +64,7 @@ describe('signing in on the app', () => {
     const token = ((await exchange(person())).res.body as { token: string }).token;
     await app.request().get('/api/auth/me').set('Cookie', `miu_session=${token}`).expect(401);
     const web = app.agent();
-    const reg = await web.post('/api/auth/register').send({ email: `web-${Date.now()}@example.vn`, ['password']: 'test-password-web', pin: TEST_PIN }).expect(201);
+    const reg = await web.post('/api/auth/register').send({ email: `web-${Date.now()}@example.vn`, ['password']: 'test-password-web' }).expect(201);
     const cookie = ([] as string[]).concat(reg.headers['set-cookie'] ?? [])[0]?.split(';')[0]?.split('=')[1] ?? '';
     await me(cookie).expect(401);
     // With an Authorization header the cookie is not looked at, even a valid one.
@@ -81,16 +81,6 @@ describe('signing in on the app', () => {
     await app.request().post('/api/auth/logout').set('Origin', APP_ORIGIN).set('Authorization', `Bearer ${first}`).expect(204);
     await me(first).expect(401);
     await me(second).expect(200);
-  });
-
-  it('opens a PIN lock-out only when the token proves the re-authentication', async () => {
-    const user = person();
-    const token = ((await exchange(user)).res.body as { token: string }).token;
-    const parentId = ((await me(token).expect(200)).body as { parent: { id: string } }).parent.id;
-    await app.db.update(t.parents).set({ pinHash: 'x', pinFailedCount: 5 }).where(eq(t.parents.id, parentId));
-    const nowS = Math.floor(Date.now() / 1000);
-    const proven = ((await exchange({ ...user, auth_time: nowS - 5, amr: ['fed', 'google', 'reauth'] }, { reauth: true })).res.body as { token: string }).token;
-    expect((await me(proven).expect(200)).body).toMatchObject({ pinLocked: false, parentGateOpen: true });
   });
 
   it('replaces the session the app signed in again from', async () => {
@@ -115,7 +105,7 @@ describe('signing in on the app', () => {
     expect(res.body).not.toHaveProperty('token');
   });
 
-  it('refuses an unverified email and a failed exchange, and a stale re-authentication', async () => {
+  it('refuses an unverified email and a failed exchange', async () => {
     expect((await exchange(person({ email_verified: false }))).res.status).toBe(401);
     idp.status = 400;
     try {
@@ -123,12 +113,6 @@ describe('signing in on the app', () => {
     } finally {
       idp.status = 200;
     }
-    const nowS = Math.floor(Date.now() / 1000);
-    const stale = await exchange({ ...person(), auth_time: nowS - 3600, amr: ['fed', 'google', 'reauth'] }, { reauth: true });
-    expect([stale.res.status, stale.res.body]).toEqual([401, { error: 'idp-reauth' }]);
-    // The app saying "reauth" is not enough: the token must prove it (amr "reauth").
-    const unproven = await exchange({ ...person(), auth_time: nowS - 5, amr: ['fed', 'github'] }, { reauth: true });
-    expect([unproven.res.status, unproven.res.body]).toEqual([401, { error: 'idp-reauth' }]);
   });
 
   it('refuses a cross-site exchange and reports sign-in as unavailable when not configured', async () => {

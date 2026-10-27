@@ -16,20 +16,12 @@ export const Email = z
 /** Account secret length bounds (10–128). */
 export const PasswordField = z.string().min(10).max(128);
 
-/** Optional account PIN: 4–6 digits. */
-export const ParentPin = z.string().regex(/^\d{4,6}$/);
-
 // Computed keys: the workspace secret scanner treats `password: <identifier>` as a literal credential.
-export const RegisterRequest = z.object({ email: Email, ['password']: PasswordField, pin: ParentPin });
+export const RegisterRequest = z.object({ email: Email, ['password']: PasswordField });
 export type RegisterRequest = z.infer<typeof RegisterRequest>;
 
 export const LoginRequest = z.object({ email: Email, ['password']: z.string().min(1).max(128) });
 export type LoginRequest = z.infer<typeof LoginRequest>;
-
-export const ParentGateUnlockRequest = z.object({ pin: ParentPin });
-
-/** Sets or changes the optional account PIN. */
-export const SetPinRequest = z.object({ pin: ParentPin });
 
 /** Public view of a parent. Parsing a DB row through it strips hashes (Zod drops unknown keys). */
 /**
@@ -51,8 +43,6 @@ export const NativeExchangeRequest = z.object({
   codeVerifier: z.string().regex(/^[A-Za-z0-9._~-]{43,128}$/),
   redirectUri: z.string().min(1).max(256),
   nonce: z.string().min(16).max(128),
-  /** The app asked the IdP for a fresh sign-in (prompt=login, max_age=0) to clear a PIN lock-out. */
-  reauth: z.boolean().default(false),
 });
 export type NativeExchangeRequest = z.infer<typeof NativeExchangeRequest>;
 
@@ -101,7 +91,7 @@ export type PlayerSettingsPatch = z.infer<typeof PlayerSettingsPatch>;
 /**
  * The account owner's switches for one player, on by default so play stays as it always was: `voiceChatAllowed` (she
  * may talk by voice) and `onlineAllowed` (she plays online; off, she plays alone, learns and is paid as usual). Only
- * the owner changes them, in account management behind the optional PIN; the server enforces both.
+ * the owner changes them, in account management; the server enforces both.
  */
 export const PlayerControls = z.object({ voiceChatAllowed: z.boolean(), onlineAllowed: z.boolean() });
 export type PlayerControls = z.infer<typeof PlayerControls>;
@@ -136,10 +126,6 @@ export const MeResponse = z.object({
   activePlayerId: Id.nullable(),
   /** Primary first, then extra players by creation. Empty for a new account until it accepts the policy. */
   players: z.array(PlayerSummary),
-  parentGateOpen: z.boolean(),
-  pinLocked: z.boolean(),
-  /** Whether the owner set the optional PIN that locks the account area. */
-  pinSet: z.boolean(),
 });
 export type MeResponse = z.infer<typeof MeResponse>;
 
@@ -147,7 +133,7 @@ const Instant = z.iso.datetime({ offset: true });
 
 /**
  * "Tải dữ liệu của tôi": everything the server keeps about the account, as the parent downloads it.
- * Secret hashes (PIN, password) and the session token hashes are left out; they identify nothing.
+ * Secret hashes (password) and the session token hashes are left out; they identify nothing.
  */
 export const AccountExport = z.object({
   exportedAt: Instant,

@@ -146,16 +146,15 @@ const GEAR_NAMES: Record<string, string> = {
 };
 const UI_STEPS: Record<string, string> = {
   '01-login': 'Đăng nhập: chỉ một nút đăng nhập (dịch vụ tài khoản dùng chung)',
-  '03-consent': 'Đồng ý chính sách (kèm dòng phụ huynh chịu trách nhiệm)',
-  '04-parent-area': 'Quản lý tài khoản: người chơi chính, thêm người chơi phụ, PIN tùy chọn',
+  '03-consent': 'Đồng ý chính sách (kèm dòng chủ tài khoản chịu trách nhiệm)',
+  '04-parent-area': 'Quản lý tài khoản: người chơi chính, thêm người chơi phụ',
   '05-profiles': 'Đổi người chơi trên máy dùng chung',
   '06-creator': 'Đồng ý xong: người chơi chính tạo nhân vật (loài, tên) trước khi chơi',
   '07-home': 'Home: đảo nổi mỗi vùng một đảo, nhiệm vụ hôm nay (M1.1)',
   '08-world-map': 'Bản đồ thế giới: chọn khu vực (M1.4)',
   '09-region': 'Khu rừng bí mật: biển gỗ, tiến độ, bảng nhiệm vụ trên nền chính map của khu (M2.1)',
   '10-play-parrot': 'Vào game, đứng gần Vẹt: nhãn tương tác',
-  '11-parent-gate': 'Bé mở khu phụ huynh: cần PIN',
-  '12-delete-account': 'Phụ huynh tải dữ liệu, rồi xóa hẳn tài khoản',
+  '12-delete-account': 'Quản lý tài khoản: tải dữ liệu, rồi xóa hẳn tài khoản',
 };
 
 /** Block palette shipped with the POC (before the warm pastel pass), for the before/after table. */
@@ -644,12 +643,12 @@ const SCREEN_NAMES: Record<string, string> = {
   '16-backpack': 'Ba lô',
   '17-pet-care': 'Chăm thú cưng',
   '18-party': 'Tổ đội',
-  '19-worksheets': 'Phiếu viết (khu phụ huynh)',
+  '19-worksheets': 'Phiếu viết (Quản lý tài khoản)',
   '20-landing': 'Giới thiệu (chưa đăng nhập)',
   '21-lesson-page': 'Trang bài học (HTML tĩnh)',
   '22-friends-invite': 'Bạn bè: tab Mời bạn',
   '23-invite-page': 'Trang link mời (chưa đăng nhập)',
-  '24-weekly-share': 'Thẻ tổng kết tuần (khu phụ huynh)',
+  '24-weekly-share': 'Thẻ tổng kết tuần (Quản lý tài khoản)',
   '25-online-off': 'Thông báo khi tắt chơi online',
   '26-moderation': 'Màn kiểm duyệt (có báo cáo giả trong hàng đợi)',
   '27-puzzle-clues': 'Câu đố logic có manh mối',

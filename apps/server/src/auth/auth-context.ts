@@ -8,8 +8,6 @@ import { hasCurrentConsent } from './consent-store';
 import { readBearerToken, readSessionToken } from './session-cookie';
 import { findSession, type SessionRow } from './session-store';
 
-export const PIN_MAX_FAILS = 5;
-
 export interface AuthContext {
   session: SessionRow;
   parent: typeof parents.$inferSelect;
@@ -49,28 +47,10 @@ export function auth(res: Response): AuthContext {
   return ctx;
 }
 
-/** The PIN is optional: without one the account owner is trusted and the gate is always open. */
-export function isParentGateOpen(ctx: AuthContext, now: Date): boolean {
-  if (ctx.parent.pinHash === null) return true;
-  return (
-    ctx.parent.pinFailedCount < PIN_MAX_FAILS &&
-    ctx.session.parentGateUntil !== null &&
-    ctx.session.parentGateUntil.getTime() > now.getTime()
-  );
-}
-
 export const requireParent: RequestHandler = (_req, res, next) => {
   auth(res);
   next();
 };
-
-/** Parent area (create/edit/delete profiles, consent) needs a PIN unlock within the last 15 minutes, when a PIN is set. */
-export function requireParentGate(clock: () => Date): RequestHandler {
-  return (_req, res, next) => {
-    if (!isParentGateOpen(auth(res), clock())) throw new HttpError(403, 'parent-gate-closed');
-    next();
-  };
-}
 
 export type ActivePlayer = { ok: true; childId: string } | { ok: false; code: 'no-active-child' | 'consent-required' };
 

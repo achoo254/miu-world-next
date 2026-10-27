@@ -1,6 +1,6 @@
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { eq } from 'drizzle-orm';
-import { ORIGIN, TEST_PIN, createTestApp, parentWithChild, type TestApp } from '../../test/test-app';
+import { ORIGIN, createTestApp, parentWithChild, type TestApp } from '../../test/test-app';
 import { reviewAccountEmail } from '../auth/idp-account-link';
 import * as t from '../db/schema';
 import { PlayerEvents, type PlayerEvent } from './player-events';
@@ -17,9 +17,8 @@ afterAll(async () => {
 });
 
 describe('a player’s own bot switch', () => {
-  it('is on by default, and she changes it herself, without the PIN', async () => {
+  it('is on by default, and she changes it herself', async () => {
     const { agent, childId } = await parentWithChild(app);
-    // Choosing who plays closes the account area: her own setting still changes.
     await agent.post(`/api/players/${childId}/select`).expect(200);
     await agent.get('/api/player-settings').expect(200, { botsEnabled: true, voiceChatAllowed: true, onlineAllowed: true, voiceSafetySeen: false });
     await agent.put('/api/player-settings').send({ botsEnabled: false }).expect(200, { ...{ botsEnabled: true, voiceChatAllowed: true, onlineAllowed: true, voiceSafetySeen: false }, botsEnabled: false });
@@ -56,11 +55,9 @@ describe('the account owner changes a player’s bot switch', () => {
     await agent.get('/api/player-settings').expect(200, { ...{ botsEnabled: true, voiceChatAllowed: true, onlineAllowed: true, voiceSafetySeen: false }, botsEnabled: false });
   });
 
-  it('only behind the PIN once the area is locked', async () => {
+  it('changes on the account once a player is chosen', async () => {
     const { agent, childId } = await parentWithChild(app);
     await agent.post(`/api/players/${childId}/select`).expect(200);
-    await agent.patch(`/api/players/${childId}/settings`).send({ botsEnabled: false }).expect(403, { error: 'parent-gate-closed' });
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     await agent.patch(`/api/players/${childId}/settings`).send({ botsEnabled: false }).expect(200);
   });
 
@@ -108,7 +105,7 @@ describe('the account owner’s voice chat and online switches', () => {
 });
 
 describe('the reminder before her first voice chat', () => {
-  it('is confirmed once per player and kept, by her, without the PIN', async () => {
+  it('is confirmed once per player and kept, by her', async () => {
     const { agent, childId } = await parentWithChild(app);
     const extra = ((await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(201)).body as { id: string }).id;
     await agent.post(`/api/players/${childId}/select`).expect(200);
@@ -125,20 +122,6 @@ describe('the reminder before her first voice chat', () => {
 
   it('needs a signed-in player', async () => {
     await app.request().post('/api/player-settings/voice-safety').set('Origin', ORIGIN).expect(401);
-  });
-});
-
-describe('the online and voice switches need a PIN', () => {
-  it('are refused on an account without a PIN (409 pin-required), while the bot switch still changes', async () => {
-    const { agent, childId } = await parentWithChild(app);
-    const me = (await agent.get('/api/auth/me').expect(200)).body as { parent: { id: string } };
-    await app.db.update(t.parents).set({ pinHash: null }).where(eq(t.parents.id, me.parent.id));
-    const before = events.length;
-    await agent.patch(`/api/players/${childId}/settings`).send({ onlineAllowed: false }).expect(409, { error: 'pin-required' });
-    await agent.patch(`/api/players/${childId}/settings`).send({ voiceChatAllowed: true }).expect(409, { error: 'pin-required' });
-    await agent.patch(`/api/players/${childId}/settings`).send({ botsEnabled: false, voiceChatAllowed: false }).expect(409, { error: 'pin-required' });
-    expect(events.length).toBe(before);
-    await agent.patch(`/api/players/${childId}/settings`).send({ botsEnabled: false }).expect(200, { botsEnabled: false, voiceChatAllowed: true, onlineAllowed: true });
   });
 });
 

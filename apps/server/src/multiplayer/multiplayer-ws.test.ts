@@ -107,7 +107,7 @@ const join = (ws: WebSocket, mapId = 'trung-tam') => ws.send(JSON.stringify({ ty
 async function appSession(cookie: string): Promise<string> {
   const me = await t.request().get('/api/auth/me').set('Cookie', cookie).expect(200);
   const parentId = (me.body as { parent: { id: string } }).parent.id;
-  return (await createSession(t.db, parentId, new Date(), { openParentGate: false, kind: 'native' })).token;
+  return (await createSession(t.db, parentId, new Date(), { kind: 'native' })).token;
 }
 
 describe('opening a multiplayer connection', () => {

@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { PlayTimeBeat, type PlayerProgressDto } from '@miu/schema/progress';
-import { activePlayerId, auth, requireParent, requireParentGate } from '../auth/auth-context';
+import { activePlayerId, auth, requireParent } from '../auth/auth-context';
 import type { ContentCatalog } from '../content/content-catalog';
 import type { Db } from '../db/client';
 import { parseInput } from '../http-error';
@@ -15,7 +15,7 @@ export interface ProgressRouteDeps {
 
 /**
  * Learning progress: the selected player's own (`GET /learning-progress`, Hồ sơ), any player of the account for its
- * owner (`GET /players/:id/learning-progress`, behind the account area's optional PIN), and the play screen's weekly
+ * owner (`GET /players/:id/learning-progress`, in account management), and the play screen's weekly
  * play time report (`POST /play-time`).
  */
 export function progressRoutes({ db, content, clock }: ProgressRouteDeps): Router {
@@ -28,7 +28,7 @@ export function progressRoutes({ db, content, clock }: ProgressRouteDeps): Route
     res.json(body);
   });
 
-  router.get('/players/:id/learning-progress', requireParent, requireParentGate(clock), async (req, res) => {
+  router.get('/players/:id/learning-progress', requireParent, async (req, res) => {
     const player = await ownedPlayer(db, auth(res).parent.id, idParam(req.params.id));
     const body: PlayerProgressDto = await loadProgress(db, content, player.id, clock());
     res.json(body);

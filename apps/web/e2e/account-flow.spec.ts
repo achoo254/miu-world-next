@@ -1,4 +1,4 @@
-// Whole parent → child journey through the real UI: sign-in at the account service (local fake), PIN, consent, create a profile, hand the
+// Whole account journey through the real UI: sign-in at the account service (local fake), consent, create a profile, hand the
 // device to the child, create the character, Home, the world map, the forest, play, meet the parrot. Fake data only
 // (in-memory database).
 import { execFileSync } from 'node:child_process';
@@ -32,7 +32,7 @@ test.afterAll(() => {
   if (REVIEW_SHOTS) execFileSync('pnpm', ['-s', 'assets:manifest'], { cwd: REPO_ROOT, stdio: 'inherit', shell: true });
 });
 
-test('sign-in → consent → create character → Home → map → forest → play → parrot → extra player and optional PIN → data and deletion', async ({ page }) => {
+test('sign-in → consent → create character → Home → map → forest → play → parrot → extra player → data and deletion', async ({ page }) => {
   // The whole journey, with a load of the forest and a second player: 19-31 s on CI's software rendering.
   test.setTimeout(60_000);
   const consoleErrors: string[] = [];
@@ -97,32 +97,21 @@ test('sign-in → consent → create character → Home → map → forest → p
   await expect(page.locator('.npc-label[data-target="parrot-guide"]')).toBeVisible();
   await shot(page, '10-play-parrot');
 
-  // Without a PIN the account area opens straight away: add an extra player for a shared device (a child),
-  // then lock the area with the optional PIN before handing the device over.
+  // The account area opens straight away: add an extra player for a shared device.
   await page.goto('/parent');
   await expect(page.locator('[data-id^="parent-profile-primary-"]')).toHaveCount(1);
   await page.locator('[data-id="parent-create-name"]').selectOption('Thỏ Bông');
   await page.getByRole('button', { name: 'Thêm người chơi' }).click();
   await expect(page.locator('[data-id^="parent-profile-"] .profile-row-name')).toHaveText(['Mèo Mây', 'Thỏ Bông']);
   await shot(page, '04-parent-area');
-  await page.getByRole('link', { name: 'Đặt mã PIN' }).click();
-  await page.locator('[data-id="set-pin-pin"]').fill('2468');
-  await page.locator('[data-id="set-pin-again"]').fill('2468');
-  await page.getByRole('button', { name: 'Lưu mã PIN' }).click();
   // Two players now: handing the device over goes to the picker, not into the owner's game.
-  await page.getByRole('button', { name: 'Xong, khóa mục này' }).click();
+  await page.getByRole('button', { name: 'Xong, vào chơi' }).click();
   await expect(page.getByRole('heading', { name: 'Ai đang chơi?' })).toBeVisible();
   await shot(page, '05-profiles');
 
-  // Locked now: the area asks for the PIN.
+  // The account area opens again with no code; the owner downloads what the server keeps, then deletes the account.
   await page.goto('/parent');
-  await expect(page.getByLabel('Nhập mã PIN tài khoản')).toBeVisible();
-  await shot(page, '11-parent-gate');
-  await expect(page.getByRole('heading', { name: /Người chơi của tài khoản/ })).toHaveCount(0);
-
-  // The owner downloads what the server keeps, then deletes the account.
-  await page.getByLabel('Nhập mã PIN tài khoản').fill('2468');
-  await page.getByRole('button', { name: 'Mở khóa' }).click();
+  await expect(page.getByRole('heading', { name: /Người chơi của tài khoản/ })).toBeVisible();
   const download = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Tải dữ liệu của tôi' }).click();
   const file = await download;

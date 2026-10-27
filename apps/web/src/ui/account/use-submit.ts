@@ -2,8 +2,8 @@ import { useState, type FormEvent } from 'react';
 import { ApiError, errorMessage } from '../api-client';
 import { useAccount } from './account-context';
 
-/** Server answers that mean our cached account state is stale (gate expired, session gone). */
-const STALE_STATE_CODES = new Set(['parent-gate-closed', 'unauthenticated', 'no-active-child', 'pin-locked', 'consent-required']);
+/** Server answers that mean our cached account state is stale (session gone, no player picked, policy changed). */
+const STALE_STATE_CODES = new Set(['unauthenticated', 'no-active-child', 'consent-required']);
 
 /** Form submit wrapper: busy flag, friendly error message, and a state refresh when the server says it moved on. */
 export function useSubmit(action: () => Promise<void>) {

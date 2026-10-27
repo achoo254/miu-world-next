@@ -5,7 +5,7 @@ import { apiUrl } from '../platform/endpoints';
 import { authHeaders } from '../platform/session-token';
 import { t, type TextKey } from './i18n/i18n';
 
-/** Server error with its stable code (`invalid-credentials`, `parent-gate-closed`…). */
+/** Server error with its stable code (`invalid-credentials`, `consent-required`…). */
 export class ApiError extends Error {
   constructor(
     readonly status: number,
@@ -50,16 +50,12 @@ const MESSAGES: Readonly<Record<string, TextKey>> = {
   'invalid-credentials': 'errors.invalidCredentials',
   'email-taken': 'errors.emailTaken',
   'rate-limited': 'errors.rateLimited',
-  'invalid-pin': 'errors.invalidPin',
-  'pin-locked': 'errors.pinLocked',
-  'parent-gate-closed': 'errors.parentGateClosed',
   'primary-player': 'errors.primaryPlayer',
   'consent-required': 'errors.consentRequired',
   'profile-limit': 'errors.profileLimit',
   'invalid-display-name': 'errors.invalidDisplayName',
   'not-found': 'errors.notFound',
   'event-closed': 'errors.eventClosed',
-  'pin-not-set': 'errors.pinNotSet',
   'equipment-locked': 'errors.equipmentLocked',
   'pet-locked': 'errors.petLocked',
   'no-pet-equipped': 'errors.noPetEquipped',
@@ -72,7 +68,6 @@ const MESSAGES: Readonly<Record<string, TextKey>> = {
   'invalid-species': 'errors.invalidSpecies',
   'friends-full': 'errors.friendsFull',
   'invite-limit': 'errors.inviteLimit',
-  'pin-required': 'errors.pinRequired',
   'online-off': 'errors.onlineOff',
   'voice-off': 'errors.voiceOff',
 };

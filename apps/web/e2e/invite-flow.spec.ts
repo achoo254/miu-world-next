@@ -32,7 +32,7 @@ test('invite link → sign-in → consent → character → both are friends', a
 
   // Signing in (the sign-in screen offers the account service only; the password route is for tests), then the way into the game.
   const email = `e2e-${Date.now()}-${Math.floor(Math.random() * 1e6)}@example.vn`;
-  expect((await page.context().request.post('/api/auth/register', { headers, data: { email, ['password']: 'test-password-e2e', pin: '2468' } })).status()).toBe(201);
+  expect((await page.context().request.post('/api/auth/register', { headers, data: { email, ['password']: 'test-password-e2e' } })).status()).toBe(201);
   await page.goto('/');
   await expect(page).toHaveURL(/\/consent$/);
   await page.getByRole('button', { name: 'Tôi đồng ý' }).click();

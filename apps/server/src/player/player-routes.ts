@@ -5,7 +5,7 @@ import { z } from 'zod';
 import { PlayerDto, PlayerInput, PlayerLanguage } from '@miu/schema/account';
 import { serverEvents, type SignUpMethod } from '../analytics/server-events';
 import { hasCurrentConsent } from '../auth/consent-store';
-import { auth, requireParent, requireParentGate } from '../auth/auth-context';
+import { auth, requireParent } from '../auth/auth-context';
 import { isReviewAccountEmail } from '../auth/idp-account-link';
 import type { ContentCatalog } from '../content/content-catalog';
 import type { Db } from '../db/client';
@@ -104,7 +104,6 @@ export async function acceptPolicy(db: Db, content: ContentCatalog, parentId: st
 
 export function playerRoutes({ db, content, clock }: PlayerRouteDeps): Router {
   const router = Router();
-  const gate = requireParentGate(clock);
 
   /** Every player has a character (created with it); the fallback only covers a row being deleted. */
   async function speciesOf(id: string): Promise<string> {
@@ -123,7 +122,7 @@ export function playerRoutes({ db, content, clock }: PlayerRouteDeps): Router {
   });
 
   /** An extra player on a shared device (the primary player is made on consent). */
-  router.post('/players', requireParent, gate, async (req, res) => {
+  router.post('/players', requireParent, async (req, res) => {
     const { parent } = auth(res);
     const input = parseInput(PlayerInput, req.body);
     if (!content.childDisplayNames.has(input.displayName)) throw new HttpError(400, 'invalid-display-name');
@@ -140,7 +139,7 @@ export function playerRoutes({ db, content, clock }: PlayerRouteDeps): Router {
     res.status(201).json(toDto(created.row, created.species));
   });
 
-  router.patch('/players/:id', requireParent, gate, async (req, res) => {
+  router.patch('/players/:id', requireParent, async (req, res) => {
     const { parent } = auth(res);
     const id = idParam(req.params.id);
     const patch = parseInput(PlayerPatchInput, req.body);
@@ -178,7 +177,7 @@ export function playerRoutes({ db, content, clock }: PlayerRouteDeps): Router {
    * Hard delete of an extra player: foreign keys cascade to character, progress, ledger, inventory and
    * skills. The primary player goes only with the whole account.
    */
-  router.delete('/players/:id', requireParent, gate, async (req, res) => {
+  router.delete('/players/:id', requireParent, async (req, res) => {
     const { parent } = auth(res);
     const id = idParam(req.params.id);
     const row = await ownedPlayer(db, parent.id, id);
@@ -189,15 +188,14 @@ export function playerRoutes({ db, content, clock }: PlayerRouteDeps): Router {
   });
 
   /**
-   * Choosing who plays is not gated: each player picks their own on a shared device. Switching player
-   * closes the account area; play needs consent to the current policy.
+   * Choosing who plays: each player picks their own on a shared device; play needs consent to the current policy.
    */
   router.post('/players/:id/select', requireParent, async (req, res) => {
     const { parent, session } = auth(res);
     const id = idParam(req.params.id);
     await ownedPlayer(db, parent.id, id);
     if (!(await hasCurrentConsent(db, parent.id, content.consent.version))) throw new HttpError(403, 'consent-required');
-    await db.update(sessions).set({ activeChildId: id, parentGateUntil: null }).where(eq(sessions.id, session.id));
+    await db.update(sessions).set({ activeChildId: id }).where(eq(sessions.id, session.id));
     res.json({ activePlayerId: id });
   });
 

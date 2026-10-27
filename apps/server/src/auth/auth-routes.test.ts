@@ -2,7 +2,7 @@ import { eq } from 'drizzle-orm';
 import type request from 'supertest';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { consents } from '../db/schema';
-import { ORIGIN, TEST_PIN, createTestApp, fakeParent, parentWithChild, type TestApp } from '../../test/test-app';
+import { ORIGIN, createTestApp, fakeParent, parentWithChild, type TestApp } from '../../test/test-app';
 
 const DAY = 24 * 60 * 60 * 1000;
 
@@ -33,7 +33,7 @@ describe('register / login / logout', () => {
     expect(cookie).toMatch(/Path=\//);
     expect(cookie).not.toMatch(/Secure/);
     expect(res.body.parent.email).toBe(parent.email);
-    expect(res.body).toMatchObject({ consentAccepted: false, activePlayerId: null, parentGateOpen: true, pinLocked: false });
+    expect(res.body).toMatchObject({ consentAccepted: false, activePlayerId: null });
     const token = cookie.split(';')[0]?.split('=')[1] ?? '';
     for (const body of [res.text, (await agent.get('/api/auth/me').expect(200)).text]) {
       expect(body).not.toContain('scrypt$');
@@ -46,7 +46,6 @@ describe('register / login / logout', () => {
     const parent = fakeParent();
     await t.agent().post('/api/auth/register').send(parent).expect(201);
     await t.agent().post('/api/auth/register').send(parent).expect(409, { error: 'email-taken' });
-    await t.agent().post('/api/auth/register').send({ ...fakeParent(), pin: '12' }).expect(400, { error: 'invalid-input' });
     await t.agent().post('/api/auth/register').send({ ...fakeParent(), ['password']: 'short' }).expect(400);
   });
 
@@ -71,6 +70,12 @@ describe('register / login / logout', () => {
     await agent.post('/api/auth/logout').expect(204);
     await agent.get('/api/auth/me').expect(401);
     await t.request().get('/api/auth/me').set('Cookie', second.split(';')[0] ?? '').expect(401);
+  });
+
+  it('no longer serves the retired PIN routes', async () => {
+    const { agent } = await parentWithChild(t, false);
+    await agent.post('/api/parent-gate/unlock').send({ pin: '2468' }).expect(404);
+    await agent.post('/api/auth/pin').send({ pin: '2468' }).expect(404);
   });
 
   it('expires sessions after 7 idle days and 30 days absolute', async () => {
@@ -131,44 +136,7 @@ describe('register rate limit', () => {
   });
 });
 
-describe('parent gate (PIN)', () => {
-  it('guards the parent area and reopens for 15 minutes with the right PIN', async () => {
-    const { agent } = await parentWithChild(t, false);
-    await agent.post('/api/parent-gate/lock').expect(200);
-    await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(403, { error: 'parent-gate-closed' });
-    const unlocked = await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
-    expect(unlocked.body.parentGateOpen).toBe(true);
-    await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(201);
-    t.advance(16 * 60 * 1000);
-    await agent.post('/api/players').send({ displayName: 'Cáo Nhỏ' }).expect(403, { error: 'parent-gate-closed' });
-  });
-
-  it('locks the PIN after 5 wrong tries until a password login', async () => {
-    const { agent, parent } = await parentWithChild(t, false);
-    await agent.post('/api/parent-gate/lock').expect(200);
-    for (let i = 0; i < 4; i += 1) {
-      await agent.post('/api/parent-gate/unlock').send({ pin: '0000' }).expect(401, { error: 'invalid-pin' });
-    }
-    await agent.post('/api/parent-gate/unlock').send({ pin: '0000' }).expect(423, { error: 'pin-locked' });
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(423, { error: 'pin-locked' });
-    const me = await agent.get('/api/auth/me').expect(200);
-    expect(me.body).toMatchObject({ pinLocked: true, parentGateOpen: false });
-    await agent.post('/api/players').send({ displayName: 'Cáo Nhỏ' }).expect(403);
-
-    const relogged = await agent.post('/api/auth/login').send(parent).expect(200);
-    expect(relogged.body).toMatchObject({ pinLocked: false, parentGateOpen: true });
-  });
-
-  it('cannot be out-guessed by parallel requests: at most 5 PIN checks before the lock', async () => {
-    const { agent } = await parentWithChild(t, false);
-    await agent.post('/api/parent-gate/lock').expect(200);
-    const results = await Promise.all(Array.from({ length: 9 }, () => agent.post('/api/parent-gate/unlock').send({ pin: '0000' })));
-    const statuses = results.map((r) => r.status).sort();
-    expect(statuses.filter((s) => s === 401)).toHaveLength(4);
-    expect(statuses.filter((s) => s === 423)).toHaveLength(5);
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(423);
-  });
-
+describe('consent', () => {
   it('records one consent row per policy version', async () => {
     const agent = t.agent();
     const res = await agent.post('/api/auth/register').send(fakeParent()).expect(201);
@@ -178,12 +146,11 @@ describe('parent gate (PIN)', () => {
     expect(rows).toHaveLength(1);
   });
 
-  it('requires the gate and the current policy version for consent', async () => {
+  it('requires the current policy version for consent', async () => {
     const agent = t.agent();
     await agent.post('/api/auth/register').send(fakeParent()).expect(201);
     await agent.post('/api/consents').send({ policyVersion: 'draft-0' }).expect(400, { error: 'policy-version-mismatch' });
-    await agent.post('/api/parent-gate/lock').expect(200);
-    await agent.post('/api/consents').send({ policyVersion: t.content.consent.version }).expect(403);
+    await agent.post('/api/consents').send({ policyVersion: t.content.consent.version }).expect(201);
     const policy = await agent.get('/api/consents/policy').expect(200);
     expect(policy.body).toMatchObject({ version: t.content.consent.version, requiresLegalReview: false });
   });

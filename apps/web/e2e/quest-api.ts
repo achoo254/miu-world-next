@@ -6,7 +6,7 @@ export async function freshChild(page: Page, baseURL: string, name = 'Mochi'): P
   const headers = { Origin: new URL(baseURL).origin };
   const request = page.context().request;
   const email = `e2e-${Date.now()}-${Math.floor(Math.random() * 1e6)}@example.vn`;
-  expect((await request.post('/api/auth/register', { headers, data: { email, ['password']: 'test-password-e2e', pin: '2468' } })).status()).toBe(201);
+  expect((await request.post('/api/auth/register', { headers, data: { email, ['password']: 'test-password-e2e' } })).status()).toBe(201);
   const { version } = (await (await request.get('/api/consents/policy')).json()) as { version: string };
   expect((await request.post('/api/consents', { headers, data: { policyVersion: version } })).status()).toBe(201);
   // Accepting the policy made the primary player and selected it.

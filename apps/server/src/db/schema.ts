@@ -24,10 +24,6 @@ export const parents = pgTable('parents', {
   googleSub: text('google_sub').unique(),
   /** Dev/test sign-in only (disabled in production); accounts of the account service have none. */
   passwordHash: text('password_hash'),
-  /** Optional PIN that locks the account area; null when the owner has not set one. */
-  pinHash: text('pin_hash'),
-  /** Consecutive wrong PINs; at the limit the PIN is locked until the next password login. */
-  pinFailedCount: integer('pin_failed_count').notNull().default(0),
   createdAt: createdAt(),
 });
 
@@ -98,8 +94,6 @@ export const sessions = pgTable(
     .notNull()
     .references(() => parents.id, { onDelete: 'cascade' }),
   activeChildId: uuid('active_child_id').references(() => childProfiles.id, { onDelete: 'set null' }),
-  /** Parent area stays open until this instant after a correct PIN. */
-  parentGateUntil: timestamp('parent_gate_until', { withTimezone: true }),
   createdAt: createdAt(),
   lastSeenAt: timestamp('last_seen_at', { withTimezone: true }).notNull().defaultNow(),
   expiresAt: timestamp('expires_at', { withTimezone: true }).notNull(),

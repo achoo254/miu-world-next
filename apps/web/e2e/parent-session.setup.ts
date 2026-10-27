@@ -6,7 +6,7 @@ import { PARENT_STATE } from '../playwright.config';
 setup('account with its primary player selected', async ({ request, baseURL }) => {
   const headers = { Origin: new URL(baseURL ?? '').origin };
   const email = `e2e-${Date.now()}@example.vn`;
-  const register = await request.post('/api/auth/register', { headers, data: { email, ['password']: 'test-password-e2e', pin: '2468' } });
+  const register = await request.post('/api/auth/register', { headers, data: { email, ['password']: 'test-password-e2e' } });
   expect(register.status()).toBe(201);
   const { version } = (await (await request.get('/api/consents/policy')).json()) as { version: string };
   expect((await request.post('/api/consents', { headers, data: { policyVersion: version } })).status()).toBe(201);

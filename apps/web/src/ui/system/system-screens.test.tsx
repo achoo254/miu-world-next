@@ -139,9 +139,6 @@ describe('SettingsDialog', () => {
       consentAccepted: true,
       activePlayerId: '0b0e8e0c-6f1a-4b8e-9a53-1f1c2a3b4c5d',
       players: [{ id: '0b0e8e0c-6f1a-4b8e-9a53-1f1c2a3b4c5d', displayName: 'Mèo Mây', primary: true }],
-      parentGateOpen: false,
-      pinLocked: false,
-      pinSet: true,
     };
     vi.stubGlobal('fetch', vi.fn(async (url: string) => new Response(JSON.stringify(url === '/api/auth/me' ? me : { error: 'not-found' }), { status: url === '/api/auth/me' ? 200 : 404 })));
     render(

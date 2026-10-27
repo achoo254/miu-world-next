@@ -84,7 +84,7 @@ describe('POST /api/analytics/events', () => {
     // Signed in: an app session (Bearer), even if a page claimed the web's origin.
     const { childId } = await parentWithChild(app);
     const [child] = await app.db.select({ parentId: t.childProfiles.parentId }).from(t.childProfiles).where(eq(t.childProfiles.id, childId));
-    const { token } = await createSession(app.db, child?.parentId ?? '', new Date(), { openParentGate: false, kind: 'native' });
+    const { token } = await createSession(app.db, child?.parentId ?? '', new Date(), { kind: 'native' });
     ip += 1;
     await app.request().post('/api/analytics/events').set('X-Forwarded-For', `198.51.100.${ip}`).set('Origin', ORIGIN).set('Authorization', `Bearer ${token}`).send(pageView).expect(204);
     expect(sent).toEqual([]);

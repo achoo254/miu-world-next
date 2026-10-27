@@ -41,8 +41,7 @@ export interface IdpIdentity {
   /** The IdP session (`sid`), for its back-channel logout; null when not sent. */
   sid: string | null;
   /**
-   * How the IdP session signed in (`amr`): "fed", the provider ("google", "apple", "github") and "reauth" when the
-   * provider proved a fresh authentication. Empty when not sent.
+   * How the IdP session signed in (`amr`): "fed" and the provider ("google", "apple", "github"). Empty when not sent.
    */
   amr: string[];
   /** The Google account linked at the IdP (`google_sub`, userinfo, Miu's clients only); null when none. */

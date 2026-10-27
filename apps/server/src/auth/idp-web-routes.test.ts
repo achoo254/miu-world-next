@@ -3,7 +3,7 @@ import { eq } from 'drizzle-orm';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from 'vitest';
 import { loadConfig } from '../config';
 import * as t from '../db/schema';
-import { TEST_PIN, createTestApp, fakeParent, type Agent, type TestApp } from '../../test/test-app';
+import { createTestApp, fakeParent, type Agent, type TestApp } from '../../test/test-app';
 import { FAKE_ISSUER, FakeIdp, IDP_ENV, WEB_CLIENT } from '../../test/fake-idp';
 import { accountForIdentity, reviewAccountEmail } from './idp-account-link';
 import { createSession } from './session-store';
@@ -27,14 +27,14 @@ function person(over: Record<string, unknown> = {}): Record<string, unknown> {
   return { sub: `idp-sub-${seq}-${Date.now()}`, email: `p${seq}-${Date.now()}@example.vn`, email_verified: true, sid: `idp-sid-${seq}`, ...over };
 }
 
-async function start(agent: Agent, intent?: string): Promise<URL> {
-  const res = await agent.get(`/api/auth/start${intent ? `?intent=${intent}` : ''}`).expect(303);
+async function start(agent: Agent): Promise<URL> {
+  const res = await agent.get('/api/auth/start').expect(303);
   return new URL(res.headers.location ?? '');
 }
 
 /** The whole round trip as the IdP does it: /start, then /callback with the same state and the request's nonce. */
-async function signIn(agent: Agent, claims: Record<string, unknown>, options: { intent?: string; state?: string; code?: string | null } = {}) {
-  const authorize = await start(agent, options.intent);
+async function signIn(agent: Agent, claims: Record<string, unknown>, options: { state?: string; code?: string | null } = {}) {
+  const authorize = await start(agent);
   idp.claims = { nonce: authorize.searchParams.get('nonce'), ...claims };
   const query = new URLSearchParams({ state: options.state ?? authorize.searchParams.get('state') ?? '' });
   if (options.code !== null) query.set('code', options.code ?? 'auth-code');
@@ -46,7 +46,7 @@ const parentByEmail = async (email: unknown) => (await app.db.select().from(t.pa
 const linkOf = async (parentId: string) => (await app.db.select().from(t.parentIdpLinks).where(eq(t.parentIdpLinks.parentId, parentId)))[0];
 
 describe('signing in through the account service (web)', () => {
-  it('sends the parent to the IdP with PKCE, state, nonce and only the openid email scope; reauth asks for a fresh login', async () => {
+  it('sends the parent to the IdP with PKCE, state, nonce and only the openid email scope', async () => {
     const url = await start(app.agent());
     expect(url.origin + url.pathname).toBe(`${FAKE_ISSUER}/auth`);
     const q = url.searchParams;
@@ -54,8 +54,6 @@ describe('signing in through the account service (web)', () => {
     expect(q.get('state')?.length).toBeGreaterThanOrEqual(40);
     expect(q.get('nonce')).toBeTruthy();
     expect(q.has('prompt')).toBe(false);
-    const reauth = (await start(app.agent(), 'reauth')).searchParams;
-    expect([reauth.get('prompt'), reauth.get('max_age')]).toEqual(['login', '0']);
   });
 
   it('creates a new empty account for an unknown verified email, stores the link, and redeems the code with the secret and verifier', async () => {
@@ -68,9 +66,9 @@ describe('signing in through the account service (web)', () => {
     expect(token?.authorization).toBe(`Basic ${Buffer.from(`${WEB_CLIENT.id}:${WEB_CLIENT.secret}`).toString('base64')}`);
     expect(token?.body.get('redirect_uri')).toBe(WEB_CLIENT.redirect);
     const parent = await parentByEmail(user.email);
-    expect(parent).toMatchObject({ googleSub: null, passwordHash: null, pinHash: null });
+    expect(parent).toMatchObject({ googleSub: null, passwordHash: null });
     expect(await linkOf(parent?.id ?? '')).toMatchObject({ issuer: FAKE_ISSUER, subject: user.sub });
-    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ parent: { email: user.email }, pinSet: false, parentGateOpen: true, players: [] });
+    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ parent: { email: user.email }, players: [] });
   });
 
   it('signs an already linked identity back into the same account, whatever email it now has', async () => {
@@ -83,7 +81,7 @@ describe('signing in through the account service (web)', () => {
   });
 
   const legacyParent = async (email: unknown, googleSub: string) =>
-    (await app.db.insert(t.parents).values({ id: crypto.randomUUID(), email: String(email), googleSub, pinHash: 'x' }).returning())[0]?.id ?? '';
+    (await app.db.insert(t.parents).values({ id: crypto.randomUUID(), email: String(email), googleSub }).returning())[0]?.id ?? '';
 
   it('links a parent of the former Google sign-in only through that same Google account at the IdP', async () => {
     const user = person({ amr: ['fed', 'google'], google_sub: 'google-sub-legacy' });
@@ -96,9 +94,8 @@ describe('signing in through the account service (web)', () => {
     const agent = app.agent();
     expect((await signIn(agent, user)).res.headers.location).toBe('/');
     expect(await linkOf(legacyId)).toMatchObject({ subject: user.sub });
-    expect(await parentByEmail(user.email)).toMatchObject({ id: legacyId, googleSub: 'google-sub-legacy', pinHash: 'x' });
-    // A PIN exists: signing in does not open the parent area.
-    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ parent: { id: legacyId }, pinSet: true, parentGateOpen: false });
+    expect(await parentByEmail(user.email)).toMatchObject({ id: legacyId, googleSub: 'google-sub-legacy' });
+    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ parent: { id: legacyId } });
   });
 
   it('finds a former Google parent by its Google account when the email changed at Google', async () => {
@@ -180,37 +177,14 @@ describe('signing in through the account service (web)', () => {
     expect((await app.db.select().from(t.parentIdpLinks).where(eq(t.parentIdpLinks.subject, String(user.sub)))).length).toBe(1);
   });
 
-  it('links a dev password account by verified email, dropping its password, PIN and sessions', async () => {
+  it('links a dev password account by verified email, dropping its password and sessions', async () => {
     const parent = fakeParent();
     const squatter = app.agent();
     await squatter.post('/api/auth/register').send(parent).expect(201);
     await signIn(app.agent(), person({ email: parent.email }));
-    expect(await parentByEmail(parent.email)).toMatchObject({ passwordHash: null, pinHash: null });
+    expect(await parentByEmail(parent.email)).toMatchObject({ passwordHash: null });
     await squatter.get('/api/auth/me').expect(401);
     await app.agent().post('/api/auth/login').send(parent).expect(401);
-  });
-
-  it('does not let a plain sign-in skip a PIN, and reopens a locked PIN only after a fresh re-authentication', async () => {
-    const agent = app.agent();
-    const user = person();
-    await signIn(agent, user);
-    await agent.post('/api/auth/pin').send({ pin: TEST_PIN }).expect(200);
-    await agent.post('/api/parent-gate/lock').expect(200);
-    for (let i = 0; i < 4; i += 1) await agent.post('/api/parent-gate/unlock').send({ pin: '0000' }).expect(401);
-    await agent.post('/api/parent-gate/unlock').send({ pin: '0000' }).expect(423);
-    const nowS = Math.floor(Date.now() / 1000);
-    const reauth = ['fed', 'google', 'reauth'];
-    await signIn(agent, { ...user, auth_time: nowS - 3600 });
-    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ pinLocked: true, parentGateOpen: false });
-    // Stale, or fresh but not proven by a provider that asked again (amr without "reauth", e.g. GitHub): refused.
-    expect((await signIn(agent, { ...user, auth_time: nowS - 3600, amr: reauth }, { intent: 'reauth' })).res.headers.location).toBe('/login?error=idp-reauth');
-    expect((await signIn(agent, { ...user, auth_time: nowS - 5, amr: ['fed', 'github'] }, { intent: 'reauth' })).res.headers.location).toBe('/login?error=idp-reauth');
-    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ pinLocked: true });
-    // A "reauth" the server did not ask for (an earlier sign-in elsewhere left it in the IdP session) opens nothing.
-    expect((await signIn(agent, { ...user, auth_time: nowS - 5, amr: reauth })).res.headers.location).toBe('/');
-    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ pinLocked: true, parentGateOpen: false });
-    expect((await signIn(agent, { ...user, auth_time: nowS - 5, amr: reauth }, { intent: 'reauth' })).res.headers.location).toBe('/');
-    expect((await agent.get('/api/auth/me').expect(200)).body).toMatchObject({ pinLocked: false, parentGateOpen: true });
   });
 
   it.each([
@@ -278,7 +252,7 @@ describe('back-channel logout from the IdP', () => {
     const user = person();
     await signIn(agent, user);
     const parentId = (await parentByEmail(user.email))?.id ?? '';
-    const appSession = await createSession(app.db, parentId, new Date(), { openParentGate: false, kind: 'native' });
+    const appSession = await createSession(app.db, parentId, new Date(), { kind: 'native' });
     const res = await post(`logout_token=${idp.logoutToken({ sid: user.sid, sub: user.sub })}`).expect(200);
     expect(res.headers['cache-control']).toBe('no-store');
     await agent.get('/api/auth/me').expect(401);

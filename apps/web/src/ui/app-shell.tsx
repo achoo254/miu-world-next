@@ -14,7 +14,7 @@ import { ParentAreaScreen } from './account/parent-area-screen';
 import { PlayStartScreen, ProfilePickerScreen } from './account/profile-screens';
 import { AcceptInvite, holdInvite, useHeldInvite } from './friends/accept-invite';
 import { InviteScreen } from './friends/invite-screen';
-import { LoginScreen, RegisterScreen, SetPinScreen } from './account/sign-in-screens';
+import { LoginScreen, RegisterScreen } from './account/sign-in-screens';
 import { LandingScreen } from './landing/landing-screen';
 import { PrivacyScreen } from './legal/privacy-screen';
 import { TermsScreen } from './legal/terms-screen';
@@ -83,7 +83,7 @@ function ServerDown() {
   );
 }
 
-/** Signed-in routes. A new account accepts the policy first; only then do profiles and play open. The PIN is optional. */
+/** Signed-in routes. A new account accepts the policy first; only then do profiles and play open. */
 function RequireParent({ children, needsConsent = true }: { children: ReactNode; needsConsent?: boolean }) {
   const { state } = useAccount();
   if (state.status === 'loading') return <Loading />;
@@ -181,7 +181,6 @@ export function AppRoutes() {
         <Route path="/privacy" element={<PrivacyScreen />} />
         <Route path="/terms" element={<TermsScreen />} />
         <Route path="/moi/:code" element={<WithMusic mood="home"><InviteScreen /></WithMusic>} />
-        <Route path="/set-pin" element={<RequireParent needsConsent={false}><SetPinScreen /></RequireParent>} />
         <Route path="/consent" element={<RequireParent needsConsent={false}><ConsentScreen /></RequireParent>} />
         <Route path="/profiles" element={<WithMusic mood="home"><RequireParent><ProfilePickerScreen /></RequireParent></WithMusic>} />
         <Route path="/parent" element={<RequireParent><ParentAreaScreen /></RequireParent>} />

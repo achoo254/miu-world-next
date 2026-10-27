@@ -1,4 +1,4 @@
-// Parent sign-in in the iPhone/Android app (RFC 8252): Code + PKCE with the account service's public `miu-mobile`
+// Sign-in in the iPhone/Android app (RFC 8252): Code + PKCE with the account service's public `miu-mobile`
 // client in the system browser (ASWebAuthenticationSession / Custom Tabs through @shared-next/capacitor-system-auth),
 // never in this WebView. The app asks Miu's server for the IdP parameters, makes and keeps the PKCE verifier, `state`
 // and `nonce`, checks the callback, and hands code, verifier and nonce to the server, which answers with the app's
@@ -11,7 +11,7 @@ export interface NativeSignInDeps {
   /** Opens `url` in the system browser and resolves with the callback URL (SystemAuth.authenticate). */
   readonly authenticate: (url: string, scheme: string) => Promise<string>;
   /** Redeems the code (`POST /api/auth/native/exchange`); resolves with the server's answer. */
-  readonly exchange: (body: { code: string; codeVerifier: string; redirectUri: string; nonce: string; reauth: boolean }) => Promise<unknown>;
+  readonly exchange: (body: { code: string; codeVerifier: string; redirectUri: string; nonce: string }) => Promise<unknown>;
   /** Keeps the new session token (Keychain/Keystore and this run). */
   readonly saveToken: (token: string) => Promise<void>;
   /** Fills `bytes` with random values; crypto.getRandomValues by default. */
@@ -47,7 +47,7 @@ export function redirectScheme(redirectUri: string): string {
 }
 
 /** The authorization request, as the web's server builds it for /api/auth/start. */
-export function authorizationUrl(config: NativeAuthConfig, request: { state: string; nonce: string; challenge: string; reauth: boolean }): string {
+export function authorizationUrl(config: NativeAuthConfig, request: { state: string; nonce: string; challenge: string }): string {
   const url = new URL(config.authorizationEndpoint);
   const q = url.searchParams;
   q.set('client_id', config.clientId);
@@ -58,11 +58,6 @@ export function authorizationUrl(config: NativeAuthConfig, request: { state: str
   q.set('nonce', request.nonce);
   q.set('code_challenge', request.challenge);
   q.set('code_challenge_method', 'S256');
-  // Clearing a PIN lock-out: the IdP must sign the person in again (the server checks auth_time).
-  if (request.reauth) {
-    q.set('prompt', 'login');
-    q.set('max_age', '0');
-  }
   return url.toString();
 }
 
@@ -88,7 +83,7 @@ export function isCancelled(err: unknown): boolean {
 }
 
 /** Runs the whole sign-in and keeps the new token. Resolves false when the person closed the browser. */
-export async function signInNative(deps: NativeSignInDeps, options: { reauth: boolean }): Promise<boolean> {
+export async function signInNative(deps: NativeSignInDeps): Promise<boolean> {
   const random =
     deps.random ??
     ((bytes: Uint8Array<ArrayBuffer>) => {
@@ -103,13 +98,13 @@ export async function signInNative(deps: NativeSignInDeps, options: { reauth: bo
   const nonce = base64Url(random(new Uint8Array(16)));
   let callback: string;
   try {
-    callback = await deps.authenticate(authorizationUrl(config, { state, nonce, challenge, reauth: options.reauth }), redirectScheme(config.redirectUri));
+    callback = await deps.authenticate(authorizationUrl(config, { state, nonce, challenge }), redirectScheme(config.redirectUri));
   } catch (err) {
     if (isCancelled(err)) return false;
     throw new NativeSignInError('the system browser could not finish the sign-in');
   }
   const code = callbackCode(callback, config.redirectUri, state);
-  const answer = NativeSessionResponse.safeParse(await deps.exchange({ code, codeVerifier: verifier, redirectUri: config.redirectUri, nonce, reauth: options.reauth }));
+  const answer = NativeSessionResponse.safeParse(await deps.exchange({ code, codeVerifier: verifier, redirectUri: config.redirectUri, nonce }));
   if (!answer.success) throw new NativeSignInError('the server returned no session');
   await deps.saveToken(answer.data.token);
   return true;

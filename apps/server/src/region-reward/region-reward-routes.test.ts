@@ -9,7 +9,7 @@ import { ShopState } from '@miu/schema/shop';
 import { RegionRewardClaimResponse, RegionRewardsDto, RegionRewardsList, type RegionRewardEntry, type RegionRewardTier } from '@miu/schema/region-reward';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { solution } from '../../test/quest-solution';
-import { TEST_PIN, createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
+import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
 import { CONTENT_DIR } from '../content/content-dir';
 import { loadDecorCatalog } from '../home/home-decor-routes';
 import { childProfiles, questProgress, rewardLedger, shopInventory } from '../db/schema';
@@ -204,7 +204,6 @@ describe("the child's chests in her data", () => {
     const { agent, childId } = await playingChild();
     await finish(childId, LESSONS);
     await claim(agent, 'full').expect(200);
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     const exported = (await agent.get('/api/account/export').expect(200)).body as { players: Array<{ shop: unknown; rewards: Array<{ source: string }> }> };
     expect(exported.players[0]?.shop).toEqual([{ itemId: forest.full.item, qty: 1 }]);
     expect(exported.players[0]?.rewards.map((r) => r.source)).toContain(`region:${FOREST}:full`);

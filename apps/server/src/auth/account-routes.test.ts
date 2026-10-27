@@ -4,7 +4,7 @@ import { getTableConfig, type PgTable } from 'drizzle-orm/pg-core';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { AccountExport } from '@miu/schema/account';
 import { emptyTimetable } from '@miu/schema/timetable';
-import { TEST_PIN, createTestApp, parentWithChild, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
+import { createTestApp, parentWithChild, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
 import * as schema from '../db/schema';
 
 const t = schema;
@@ -142,7 +142,7 @@ describe('account export', () => {
     expect(AccountExport.parse((await agent.get('/api/account/export').expect(200)).body).players).toEqual([]);
   });
 
-  it('needs the PIN, and never includes another family', async () => {
+  it('never includes another family', async () => {
     const a = await playedFamily();
     const b = await parentWithChild(app, false);
     const exported = AccountExport.parse((await b.agent.get('/api/account/export').expect(200)).body);
@@ -150,8 +150,6 @@ describe('account export', () => {
     expect(exported.players).toHaveLength(1);
     expect(exported.players[0]).toMatchObject({ primary: true, quests: [], rewards: [] });
     expect(JSON.stringify(exported)).not.toContain(a.parent.email);
-    await a.agent.post('/api/parent-gate/lock').expect(200);
-    await a.agent.get('/api/account/export').expect(403, { error: 'parent-gate-closed' });
   });
 });
 
@@ -188,12 +186,9 @@ describe('account deletion', () => {
     await agent.get('/api/auth/me').expect(401);
   });
 
-  it('needs the PIN, and leaves other families untouched', async () => {
+  it('leaves other families untouched', async () => {
     const a = await playedFamily();
     const b = await playedFamily();
-    await a.agent.post('/api/parent-gate/lock').expect(200);
-    await a.agent.delete('/api/account').expect(403, { error: 'parent-gate-closed' });
-    await a.agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     await a.agent.delete('/api/account').expect(204);
     expect(await rowsOf(b.parentId, [b.childId])).toMatchObject({ parents: 1, child_profiles: 1, quest_progress: 2, reward_ledger: 1 });
     await b.agent.get('/api/players').expect(200);

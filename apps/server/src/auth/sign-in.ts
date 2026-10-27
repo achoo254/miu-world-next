@@ -14,10 +14,6 @@ export interface SignInDeps {
 }
 
 export interface SignInOptions {
-  /** Open the parent area for 15 minutes (first PIN, or a proven re-authentication). */
-  openParentGate: boolean;
-  /** Reset a PIN lock-out (only after a proven re-authentication). */
-  clearPinLock: boolean;
   /** `web` sets the session cookie; `native` (the app) gets the token back to send as a Bearer token. */
   kind: SessionKind;
   /** The IdP session the web sign-in came through (its back-channel logout ends this session). */
@@ -31,19 +27,16 @@ export interface SignedIn extends AuthContext {
 
 /**
  * Starts a fresh session for a parent who just signed in: drops the session the request came with
- * and prunes expired ones. Whether the parent area opens is the caller's decision, never implied by
- * signing in (see idp-web-routes.ts).
+ * and prunes expired ones.
  */
 export function createSignIn({ db, config, clock }: SignInDeps) {
   return async function signIn(res: Response, parentId: string, options: SignInOptions): Promise<SignedIn> {
     const current = optionalAuth(res);
     if (current) await deleteSession(db, current.session.id);
     await db.delete(sessions).where(and(eq(sessions.parentId, parentId), lt(sessions.expiresAt, clock())));
-    const [parent] = options.clearPinLock
-      ? await db.update(parents).set({ pinFailedCount: 0 }).where(eq(parents.id, parentId)).returning()
-      : await db.select().from(parents).where(eq(parents.id, parentId));
+    const [parent] = await db.select().from(parents).where(eq(parents.id, parentId));
     if (!parent) throw new Error('signed-in parent vanished');
-    const { token, session } = await createSession(db, parent.id, clock(), { openParentGate: options.openParentGate, kind: options.kind, idpSid: options.idpSid });
+    const { token, session } = await createSession(db, parent.id, clock(), { kind: options.kind, idpSid: options.idpSid });
     if (options.kind === 'web') setSessionCookie(res, config, token);
     return { parent, session, token };
   };

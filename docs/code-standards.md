@@ -40,7 +40,7 @@ Lệnh cụ thể và danh sách cấm cho agent: `CLAUDE.md`. File này giải 
 - Request trong test đi qua `agent()`, `request()`, `agentFor()` của `apps/server/test/test-app.ts`, là các server nghe ở 127.0.0.1; không đưa app trần cho supertest (lint chặn). Nếu đưa app trần, supertest bind wildcard IPv6 rồi gọi 127.0.0.1, và trên macOS một chương trình khác đang nghe cùng cổng ở 127.0.0.1 sẽ trả lời thay, làm một test bất kỳ hỏng ngẫu nhiên với 403/404/503.
 - Migration chỉ sinh bằng `drizzle-kit generate`, commit file SQL và review như code; không `push` schema lên DB thật.
 - Không log email, tên hồ sơ, token; log chỉ id. Lỗi trả client không kèm stack.
-- Input validate bằng Zod từ `packages/schema`; DTO trả ra không bao giờ chứa hash mật khẩu, PIN hay token.
+- Input validate bằng Zod từ `packages/schema`; DTO trả ra không bao giờ chứa hash mật khẩu hay token.
 
 ## React (`apps/web`)
 

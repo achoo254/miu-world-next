@@ -5,14 +5,11 @@ import type { Worksheet, WorksheetListResponse } from '@miu/schema/worksheet';
 import { AccountProvider } from '../../account/account-context';
 import { AppRoutes } from '../../app-shell';
 
-const me = (parentGateOpen: boolean) => ({
+const me = () => ({
   parent: { id: '1b0e8e0c-6f1a-4b8e-9a53-1f1c2a3b4c5d', email: 'p@example.vn' },
   consentAccepted: true,
   activePlayerId: null,
   players: [],
-  parentGateOpen,
-  pinLocked: false,
-  pinSet: true,
 });
 
 const TV = { id: 'tieng-viet', name: 'Tiếng Việt' };
@@ -71,18 +68,22 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 
-describe('worksheets in the parent area', () => {
-  it('asks for the parent PIN first and loads nothing before it', async () => {
-    const calls = stubApi({ 'GET /api/auth/me': () => ({ status: 200, body: me(false) }) });
+describe('worksheets in the account area', () => {
+  it('loads the sheets straight away for a signed-in account, with no code to enter, and links back to the account area', async () => {
+    const calls = stubApi({
+      'GET /api/auth/me': () => ({ status: 200, body: me() }),
+      'GET /api/worksheets': () => ({ status: 200, body: LIST }),
+    });
     renderAt('/parent/worksheets');
-    expect(await screen.findByLabelText(/PIN/)).toBeTruthy();
-    expect(byId('worksheets-gate')).toBeTruthy();
-    expect(calls.some((c) => c.includes('/api/worksheets'))).toBe(false);
+    expect(await screen.findByRole('heading', { name: 'Tiếng Việt' })).toBeTruthy();
+    expect(document.querySelector('input[type="password"]')).toBeNull();
+    expect(screen.getByRole('link', { name: 'Về Quản lý tài khoản' }).getAttribute('href')).toBe('/parent');
+    expect(calls.filter((c) => c === 'GET /api/worksheets')).toHaveLength(1);
   });
 
   it('lists the sheets by subject and topic, each linking to its sheet, with no book, week or page', async () => {
     stubApi({
-      'GET /api/auth/me': () => ({ status: 200, body: me(true) }),
+      'GET /api/auth/me': () => ({ status: 200, body: me() }),
       'GET /api/worksheets': () => ({ status: 200, body: LIST }),
     });
     renderAt('/parent/worksheets');
@@ -97,7 +98,7 @@ describe('worksheets in the parent area', () => {
 
   it('shows every block of a sheet under its subject and topic, and prints it', async () => {
     stubApi({
-      'GET /api/auth/me': () => ({ status: 200, body: me(true) }),
+      'GET /api/auth/me': () => ({ status: 200, body: me() }),
       'GET /api/worksheets/tv2-t01-b01': () => ({ status: 200, body: SHEET }),
     });
     const print = vi.fn();
@@ -119,7 +120,7 @@ describe('worksheets in the parent area', () => {
   });
 
   it('says so when a quest has no sheet', async () => {
-    stubApi({ 'GET /api/auth/me': () => ({ status: 200, body: me(true) }) });
+    stubApi({ 'GET /api/auth/me': () => ({ status: 200, body: me() }) });
     renderAt('/parent/worksheets/khong-co');
     expect(await screen.findByRole('alert')).toBeTruthy();
     expect((byId('worksheet-print') as HTMLButtonElement).disabled).toBe(true);
@@ -141,7 +142,7 @@ describe('activities on a sheet', () => {
       ],
     };
     stubApi({
-      'GET /api/auth/me': () => ({ status: 200, body: me(true) }),
+      'GET /api/auth/me': () => ({ status: 200, body: me() }),
       'GET /api/worksheets/toan2-cd3-b15': () => ({ status: 200, body: sheet }),
     });
     renderAt('/parent/worksheets/toan2-cd3-b15');
@@ -161,7 +162,7 @@ describe('model hand on a sheet', () => {
     const load = vi.fn(async () => [{}]);
     Object.defineProperty(document, 'fonts', { value: { load }, configurable: true });
     stubApi({
-      'GET /api/auth/me': () => ({ status: 200, body: me(true) }),
+      'GET /api/auth/me': () => ({ status: 200, body: me() }),
       'GET /api/worksheets/tv2-t01-b01': () => ({ status: 200, body: SHEET }),
     });
     renderAt('/parent/worksheets/tv2-t01-b01');
@@ -183,7 +184,7 @@ describe('model hand on a sheet', () => {
     });
     Object.defineProperty(document, 'fonts', { value: { load }, configurable: true });
     stubApi({
-      'GET /api/auth/me': () => ({ status: 200, body: me(true) }),
+      'GET /api/auth/me': () => ({ status: 200, body: me() }),
       'GET /api/worksheets/tv2-t01-b01': () => ({ status: 200, body: SHEET }),
     });
     renderAt('/parent/worksheets/tv2-t01-b01');

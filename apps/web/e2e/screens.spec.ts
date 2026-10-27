@@ -77,7 +77,7 @@ async function newModerator(browser: Browser, baseURL: string, viewport: ScreenS
   const { context, page } = await newScreen(browser, baseURL, viewport);
   const headers = { Origin: new URL(baseURL).origin };
   const credentials = { email: MODERATOR, ['password']: 'test-password-e2e' };
-  const signUp = await context.request.post('/api/auth/register', { headers, data: { ...credentials, pin: '2468' } });
+  const signUp = await context.request.post('/api/auth/register', { headers, data: credentials });
   if (signUp.status() === 201) {
     const { version } = (await (await context.request.get('/api/consents/policy')).json()) as { version: string };
     expect((await context.request.post('/api/consents', { headers, data: { policyVersion: version } })).status()).toBe(201);
@@ -319,11 +319,7 @@ for (const viewport of VIEWPORTS) {
     })();
     await friend.context.close();
     await capture(page, '19-worksheets', async () => {
-      // Signing up leaves the parents' area open for a while: lock it, then open it with the account PIN.
-      expect((await page.context().request.post('/api/parent-gate/lock', { headers })).status()).toBe(200);
       await page.goto('/parent/worksheets');
-      await page.getByLabel('Nhập mã PIN tài khoản').fill('2468');
-      await page.getByLabel('Nhập mã PIN tài khoản').press('Enter');
       await expect(page.getByRole('heading', { name: 'Tiếng Việt', exact: true })).toBeVisible();
     });
     await capture(page, '22-friends-invite', async () => {
@@ -335,7 +331,7 @@ for (const viewport of VIEWPORTS) {
       await expect(page.locator('[data-id^="invite-share-"]')).toBeVisible();
     });
     await capture(page, '24-weekly-share', async () => {
-      // The parents' area is still open from the worksheets (the PIN window); the card is the player's week.
+      // The card is the player's week.
       const me = (await (await page.context().request.get('/api/auth/me')).json()) as { activePlayerId: string };
       await page.goto('/parent');
       await page.locator(`[data-id="player-care-toggle-${me.activePlayerId}"]`).click();

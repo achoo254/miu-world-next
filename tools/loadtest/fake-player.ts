@@ -26,7 +26,6 @@ const UPDATE_EVERY_MS = 95;
 const WELCOME_TIMEOUT_MS = 15_000;
 /** How often a room's watcher waves so the others can time delivery (ms). */
 const WATCHER_WAVE_MS = 1_000;
-const TEST_PIN = '2468';
 
 /** What the measuring window collects, shared by every fake player of one step. */
 export class LoadMeter {
@@ -107,7 +106,7 @@ const pick = <T>(items: readonly T[]): T => items[Math.floor(Math.random() * ite
 /** Signs up, accepts the policy, takes a ticket and joins the room. Resolves once the server has welcomed her. */
 export async function openPlayer(ctx: PlayerContext, plan: PlayerPlan): Promise<FakePlayer> {
   const register = await request(ctx, 'POST', '/api/auth/register', {
-    body: { email: `loadtest-${ctx.runId}-${plan.index}@example.vn`, password: `loadtest-${ctx.runId}-${plan.index}`, pin: TEST_PIN },
+    body: { email: `loadtest-${ctx.runId}-${plan.index}@example.vn`, password: `loadtest-${ctx.runId}-${plan.index}` },
   });
   expectStatus(register, 201, 'register');
   const cookie = register.headers.getSetCookie().map((c) => c.split(';')[0] ?? '').join('; ');

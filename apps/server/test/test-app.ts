@@ -136,13 +136,11 @@ export async function createTestApp(
   };
 }
 
-export const TEST_PIN = '2468';
-
 let seq = 0;
 /** Unique fake parent; secret values use the scanner-safe `test-password` prefix. */
 export function fakeParent(): RegisterRequest {
   seq += 1;
-  return { email: `parent-${seq}-${Date.now()}@example.vn`, ['password']: `test-password-${seq}`, pin: TEST_PIN };
+  return { email: `parent-${seq}-${Date.now()}@example.vn`, ['password']: `test-password-${seq}` };
 }
 
 /** Registers, accepts consent and (optionally) creates one profile. Returns the logged-in agent. */

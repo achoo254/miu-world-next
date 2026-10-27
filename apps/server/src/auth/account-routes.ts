@@ -30,7 +30,7 @@ import {
 } from '../db/schema';
 import { NOBODY_ONLINE, socialView } from '../friend/friend-store';
 import { DEFAULT_CHARACTER_NAME } from '../player/player-routes';
-import { auth, requireParent, requireParentGate } from './auth-context';
+import { auth, requireParent } from './auth-context';
 import { clearSessionCookie } from './session-cookie';
 
 export interface AccountRouteDeps {
@@ -175,12 +175,11 @@ async function buildExport(db: Db, parent: typeof parents.$inferSelect, now: Dat
   };
 }
 
-/** The parent's own data rights: download everything, or delete the account. Both behind the PIN. */
+/** The parent's own data rights: download everything, or delete the account. */
 export function accountRoutes({ db, config, clock }: AccountRouteDeps): Router {
   const router = Router();
-  const gate = requireParentGate(clock);
 
-  router.get('/account/export', requireParent, gate, async (_req, res) => {
+  router.get('/account/export', requireParent, async (_req, res) => {
     const { parent } = auth(res);
     res.set('Cache-Control', 'no-store');
     res.json(await buildExport(db, parent, clock()));
@@ -191,7 +190,7 @@ export function accountRoutes({ db, config, clock }: AccountRouteDeps): Router {
    * every child table, so nothing is left to restore (backups age out on their own schedule). The account at the
    * account service is the person's own and is not touched; Miu holds no IdP token to revoke.
    */
-  router.delete('/account', requireParent, gate, async (_req, res) => {
+  router.delete('/account', requireParent, async (_req, res) => {
     const { parent } = auth(res);
     await db.delete(parents).where(eq(parents.id, parent.id));
     console.info('parent account deleted', parent.id);

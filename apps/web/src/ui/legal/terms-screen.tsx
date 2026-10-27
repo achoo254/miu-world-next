@@ -16,7 +16,7 @@ export function TermsScreen() {
         <section data-id="terms-contact">
           <h2>Liên hệ</h2>
           <p>
-            Câu hỏi về điều khoản, hay một quyết định kiểm duyệt bạn thấy chưa đúng, gửi thư tới <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Đừng gửi mã PIN hay thông tin của trẻ qua thư.
+            Câu hỏi về điều khoản, hay một quyết định kiểm duyệt bạn thấy chưa đúng, gửi thư tới <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Đừng gửi mật khẩu hay thông tin của trẻ qua thư.
           </p>
         </section>
       ) : null}

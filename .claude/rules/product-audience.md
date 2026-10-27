@@ -16,4 +16,4 @@ Người sở hữu (05/10/2026): game dành cho mọi lứa tuổi, vừa chơi
 
 ## Mô hình tài khoản (05/10/2026)
 
-Người đăng nhập (tài khoản hoandat.com qua auth-next) là người chơi chính; người chơi phụ (tối đa 2) cho máy dùng chung; PIN tài khoản tùy chọn; lời đồng ý không hỏi tuổi (từ v3, người sở hữu chốt), trẻ chưa đủ tuổi có tài khoản đăng nhập riêng thì chơi bằng người chơi phụ trong tài khoản người lớn. Code gọi là "player", bảng giữ tên cũ (`docs/system-architecture.md`, sổ quyết định). Plan: `plans/dattqh/261005-0949-single-player-account/`.
+Người đăng nhập (tài khoản hoandat.com qua auth-next) là người chơi chính; người chơi phụ (tối đa 2) cho máy dùng chung; không có PIN tài khoản, không có vai trò phụ huynh/học sinh trong game (27/10/2026); lời đồng ý không hỏi tuổi (từ v3, người sở hữu chốt), trẻ chưa đủ tuổi có tài khoản đăng nhập riêng thì chơi bằng người chơi phụ trong tài khoản người lớn. Code gọi là "player", bảng giữ tên cũ (`docs/system-architecture.md`, sổ quyết định). Plan: `plans/dattqh/261005-0949-single-player-account/`.

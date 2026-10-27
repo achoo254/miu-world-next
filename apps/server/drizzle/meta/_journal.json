@@ -183,6 +183,13 @@
       "when": 1792752610138,
       "tag": "0025_player-controls",
       "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1793066741170,
+      "tag": "0026_drop-account-pin",
+      "breakpoints": true
     }
   ]
 }

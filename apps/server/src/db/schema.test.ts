@@ -23,7 +23,7 @@ const CHILD_TABLES = [t.characters, t.questProgress, t.rewardLedger, t.inventory
 async function seedParentWithChild(): Promise<{ parentId: string; childId: string }> {
   const parentId = randomUUID();
   const childId = randomUUID();
-  await db.insert(t.parents).values({ id: parentId, email: `${parentId}@example.vn`, passwordHash: 'h', pinHash: 'h' });
+  await db.insert(t.parents).values({ id: parentId, email: `${parentId}@example.vn`, passwordHash: 'h' });
   await db.insert(t.childProfiles).values({ id: childId, parentId, displayName: 'Mèo Mây' });
   await db.insert(t.characters).values({ childId, name: 'Miu' });
   await db.insert(t.questProgress).values({ childId, questId: 'q', completedSteps: ['s1'] });
@@ -79,9 +79,9 @@ describe('database schema', () => {
   });
 
   it('rejects a duplicate parent email', async () => {
-    await db.insert(t.parents).values({ id: randomUUID(), email: 'a@example.vn', passwordHash: 'h', pinHash: 'h' });
+    await db.insert(t.parents).values({ id: randomUUID(), email: 'a@example.vn', passwordHash: 'h' });
     await expect(
-      db.insert(t.parents).values({ id: randomUUID(), email: 'a@example.vn', passwordHash: 'h', pinHash: 'h' }),
+      db.insert(t.parents).values({ id: randomUUID(), email: 'a@example.vn', passwordHash: 'h' }),
     ).rejects.toThrow();
   });
 

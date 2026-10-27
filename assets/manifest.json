@@ -40806,22 +40806,6 @@
       "bytes": 467888
     },
     {
-      "path": "generated/review/ui/11-parent-gate.png",
-      "license": "CC0-1.0",
-      "generator": "apps/web/e2e/account-flow.spec.ts",
-      "derivedFrom": [
-        "kenney-blocky-characters",
-        "kenney-cube-pets",
-        "kenney-voxel-pack",
-        "kenney-nature-kit",
-        "kenney-survival-kit",
-        "kenney-food-kit",
-        "kenney-castle-kit"
-      ],
-      "sha256": "300f8ec21d16d2c74adcef9f4bf5ce6fc00bf5b8693183bd2461f7131b01d301",
-      "bytes": 148110
-    },
-    {
       "path": "generated/review/ui/12-delete-account.png",
       "license": "CC0-1.0",
       "generator": "apps/web/e2e/account-flow.spec.ts",

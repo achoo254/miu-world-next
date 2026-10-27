@@ -1,7 +1,7 @@
 import { eq } from 'drizzle-orm';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { FRIENDS_MAX, FriendDto, SocialView } from '@miu/schema/friends';
-import { TEST_PIN, createTestApp, parentWithChild, type Agent, type TestApp } from '../../test/test-app';
+import { createTestApp, parentWithChild, type Agent, type TestApp } from '../../test/test-app';
 import * as t from '../db/schema';
 import { dbMultiplayerStore } from '../multiplayer/multiplayer-store';
 import { PlayerEvents, type PlayerEvent } from '../player/player-events';
@@ -217,7 +217,7 @@ describe('the account owner looks after a player’s friends and blocks', () => 
     expect((await social(other.agent)).friends).toEqual([]);
   });
 
-  it('never for another account’s player (404), and only behind the PIN once locked', async () => {
+  it('never for another account’s player (404)', async () => {
     const a = await player('Cáo Cam');
     const b = await player('Thỏ Bông');
     await store().request(a.childId, b.childId);
@@ -226,9 +226,6 @@ describe('the account owner looks after a player’s friends and blocks', () => 
     await b.agent.get(`/api/players/${a.childId}/friends`).expect(404);
     await b.agent.delete(`/api/players/${a.childId}/friends/${friendId}`).expect(404);
     await b.agent.delete(`/api/players/${b.childId}/friends/${friendId}`).expect(404);
-    await a.agent.post(`/api/players/${a.childId}/select`).expect(200);
-    await a.agent.get(`/api/players/${a.childId}/friends`).expect(403, { error: 'parent-gate-closed' });
-    await a.agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
     await a.agent.get(`/api/players/${a.childId}/friends`).expect(200);
   });
 });

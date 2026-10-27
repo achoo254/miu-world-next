@@ -1,19 +1,12 @@
-// NEW SCREEN (Master Plan §6, Tài khoản): đăng nhập / tạo tài khoản phụ huynh qua dịch vụ tài khoản dùng chung (auth-next);
-// PIN phụ huynh là tùy chọn.
+// NEW SCREEN (Master Plan §6, Tài khoản): đăng nhập / tạo tài khoản qua dịch vụ tài khoản dùng chung (auth-next).
 // Chưa có mock riêng; theo visual language M1–M3, hướng A (đảo mây kẹo hồng).
-import { useState, type ReactNode } from 'react';
-import { Link, Navigate, useNavigate, useSearchParams } from 'react-router';
-import { MeResponse, ParentPin } from '@miu/schema/account';
-import { api } from '../api-client';
+import { type ReactNode } from 'react';
+import { Link, useSearchParams } from 'react-router';
 import { Icon } from '../kit/art';
-import { buttonClass } from '../kit/button';
 import { IdpSignInButton, signInErrorKey } from './idp-sign-in-button';
 import { SkyScene } from '../kit/sky-scene';
 import { LegalLinks } from '../legal/legal-links';
 import { T } from '../i18n/use-t';
-import { t } from '../i18n/i18n';
-import { useAccount } from './account-context';
-import { useSubmit } from './use-submit';
 
 function SignIn({ title, hint, dataId, switchTo }: { title: ReactNode; hint: ReactNode; dataId: string; switchTo: { text: ReactNode; label: ReactNode; to: string } }) {
   const [params] = useSearchParams();
@@ -65,60 +58,5 @@ export function RegisterScreen() {
       hint={<T k="auth.registerHint" />}
       switchTo={{ text: <T k="auth.haveAccountPrompt" />, label: <T k="auth.loginLink" />, to: '/login' }}
     />
-  );
-}
-
-/** Sets or changes the optional PIN that locks the parent area; reached from there. Changing needs the area unlocked. */
-export function SetPinScreen() {
-  const { state, setMe } = useAccount();
-  const navigate = useNavigate();
-  const [pin, setPin] = useState('');
-  const [pinAgain, setPinAgain] = useState('');
-  const [touched, setTouched] = useState(false);
-  const form = useSubmit(async () => {
-    setMe(await api('POST', '/auth/pin', MeResponse, { pin }));
-    navigate('/parent');
-  });
-  const clientError = !ParentPin.safeParse(pin).success ? 'Mã PIN gồm 4 đến 6 chữ số.' : pin !== pinAgain ? t('auth.pinMismatch') : null;
-  const changing = state.status === 'signed-in' && state.me.pinSet;
-  if (changing && !state.me.parentGateOpen) return <Navigate to="/parent" replace />;
-  return (
-    <SkyScene hero>
-      <main className="panel" data-id="set-pin">
-        <div className="panel-title">
-          <Icon name="key" size={44} />
-          <h1><T k={changing ? 'auth.changePinTitle' : 'auth.setPinTitle'} /></h1>
-        </div>
-        <p className="hint"><T k="auth.setPinHint" /></p>
-        <form
-          className="form"
-          onSubmit={(e) => {
-            setTouched(true);
-            if (clientError) {
-              e.preventDefault();
-              return;
-            }
-            void form.onSubmit(e);
-          }}
-        >
-          <label className="field-label">
-            <T k="auth.pinFieldLabel" />
-            <input className="pin-input" data-id="set-pin-pin" type="password" inputMode="numeric" autoComplete="off" value={pin} onChange={(e) => setPin(e.target.value)} />
-          </label>
-          <label className="field-label">
-            <T k="auth.pinConfirmLabel" />
-            <input className="pin-input" data-id="set-pin-again" type="password" inputMode="numeric" autoComplete="off" value={pinAgain} onChange={(e) => setPinAgain(e.target.value)} />
-          </label>
-          {touched && clientError ? <p role="alert" className="error">{clientError}</p> : null}
-          {form.error ? <p role="alert" className="error">{form.error}</p> : null}
-          <button className={buttonClass('primary', { block: true })} data-id="set-pin-submit" type="submit" disabled={form.busy}>
-            <T k="auth.savePin" />
-          </button>
-          <Link to="/parent" className={buttonClass('ghost', { block: true })} data-id="set-pin-skip">
-            <T k={changing ? 'common.cancel' : 'auth.skipPin'} />
-          </Link>
-        </form>
-      </main>
-    </SkyScene>
   );
 }

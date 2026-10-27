@@ -11,7 +11,7 @@ import { SkyScene } from '../kit/sky-scene';
 import { bindLangProfile, t } from '../i18n/i18n';
 import { T } from '../i18n/use-t';
 import { useAccount } from './account-context';
-import { SignOutButton } from './parent-gate';
+import { SignOutButton } from './sign-out-button';
 
 export const MAX_PROFILES = 3;
 

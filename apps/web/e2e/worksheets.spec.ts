@@ -1,4 +1,4 @@
-// Parent area → Phiếu viết on the production build: the parent opens the PIN gate in the page, finds
+// Account area → Phiếu viết on the production build: the account owner opens the sheets, finds
 // the sheets by subject and topic, opens one Tiếng Việt and one Toán sheet, and each prints to A4 with the app's
 // buttons left off the page. The PDFs and a shot of the list go to the review folder.
 import { mkdirSync } from 'node:fs';
@@ -25,16 +25,12 @@ async function printSheet(page: Page, questId: string, file: string, checkSheet?
   await page.getByRole('link', { name: 'Danh sách phiếu' }).click();
 }
 
-test('the parent unlocks the gate, lists the sheets by subject and prints one of each to A4', async ({ page, baseURL }) => {
+test('the account owner lists the sheets by subject and prints one of each to A4', async ({ page, baseURL }) => {
   const pageErrors: string[] = [];
   page.on('pageerror', (err) => pageErrors.push(err.message));
   await freshChild(page, baseURL ?? '');
-  // Signing up leaves the area open for a while; lock it so the sheets show only after the PIN.
-  expect((await page.context().request.post('/api/parent-gate/lock', { headers: { Origin: new URL(baseURL ?? '').origin } })).status()).toBe(200);
 
   await page.goto('/parent/worksheets');
-  await page.getByLabel('Nhập mã PIN tài khoản').fill('2468');
-  await page.getByLabel('Nhập mã PIN tài khoản').press('Enter');
   await expect(page.getByRole('heading', { name: 'Tiếng Việt', exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Toán', exact: true })).toBeVisible();
   await page.screenshot({ path: `${SHOTS}worksheets-list.png`, fullPage: true, animations: 'disabled' });

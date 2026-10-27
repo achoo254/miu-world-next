@@ -1,5 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { TEST_PIN, createTestApp, parentWithChild, type TestApp } from '../../test/test-app';
+import { createTestApp, parentWithChild, type TestApp } from '../../test/test-app';
 
 let app: TestApp;
 beforeAll(async () => {
@@ -10,7 +10,7 @@ afterAll(async () => {
 });
 
 describe('worksheet routes', () => {
-  it('lists and returns worksheets only behind the parent PIN', async () => {
+  it('lists and returns worksheets to the signed-in account', async () => {
     const { agent } = await parentWithChild(app, false);
     const list = await agent.get('/api/worksheets').expect(200);
     expect(list.body.worksheets.map((w: { id: string }) => w.id)).toEqual(['quest-viet-chu-a', 'quest-hom-qua', 'quest-bi-bong', 'quest-can-gao']);
@@ -19,12 +19,6 @@ describe('worksheet routes', () => {
     expect(tv.body.worksheets).toHaveLength(3);
     const sheet = await agent.get('/api/worksheets/quest-hom-qua').expect(200);
     expect(sheet.body.blocks[0]).toMatchObject({ kind: 'dictation', title: 'Tờ lịch' });
-
-    await agent.post('/api/parent-gate/lock').expect(200);
-    await agent.get('/api/worksheets').expect(403, { error: 'parent-gate-closed' });
-    await agent.get('/api/worksheets/quest-hom-qua').expect(403, { error: 'parent-gate-closed' });
-    await agent.post('/api/parent-gate/unlock').send({ pin: TEST_PIN }).expect(200);
-    await agent.get('/api/worksheets/quest-hom-qua').expect(200);
   });
 
   it('answers 404 for a quest without a sheet, 400 for a malformed subject, 401 when signed out', async () => {

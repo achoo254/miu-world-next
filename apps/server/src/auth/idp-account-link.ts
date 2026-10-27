@@ -79,9 +79,9 @@ export async function accountForIdentity(db: Db, issuer: string, identity: IdpId
         if (byEmail.googleSub !== null && !sameGoogleAccount(identity, byEmail.googleSub)) return { ok: false, reason: 'google-mismatch' };
         await tx.insert(parentIdpLinks).values({ parentId: byEmail.id, issuer, subject: identity.sub, linkedAt: now });
         if (byEmail.passwordHash !== null) {
-          // A dev/test password account: whoever set that password or PIN may not be this person, so both go and every
+          // A dev/test password account: whoever set that password may not be this person, so it goes and every
           // older session is signed out.
-          await tx.update(parents).set({ passwordHash: null, pinHash: null, pinFailedCount: 0 }).where(eq(parents.id, byEmail.id));
+          await tx.update(parents).set({ passwordHash: null }).where(eq(parents.id, byEmail.id));
           await tx.delete(sessions).where(eq(sessions.parentId, byEmail.id));
         }
         console.info('parent linked to the account service', byEmail.id);

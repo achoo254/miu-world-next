@@ -106,7 +106,7 @@ describe('speaking step recorder', () => {
     await act(async () => {
       fireEvent.click(byId('speak-record') as Element);
     });
-    expect(screen.getByText('Con hãy kể cho bố mẹ nghe nhé.')).toBeTruthy();
+    expect(screen.getByText('Hãy kể cho người bên cạnh nghe nhé.')).toBeTruthy();
     fireEvent.click(byId('speak-done') as Element);
     expect(submit.mock.calls.at(-1)?.[1]).toEqual({});
   });

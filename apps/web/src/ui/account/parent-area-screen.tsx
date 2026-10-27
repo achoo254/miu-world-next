@@ -1,19 +1,18 @@
 import { useEffect, useRef, useState, type Ref } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { z } from 'zod';
-import { PlayerLanguage, PlayerDto, MeResponse } from '@miu/schema/account';
+import { PlayerLanguage, PlayerDto } from '@miu/schema/account';
 import { NameList } from '@miu/schema/content';
 import displayNamesJson from '../../../../../content/names/child-display-names.json';
 import { api } from '../api-client';
 import { Icon, MiuArt } from '../kit/art';
 import { buttonClass } from '../kit/button';
-import { MiuOnIsland, SkyScene } from '../kit/sky-scene';
+import { SkyScene } from '../kit/sky-scene';
 import { bindLangProfile, type TextKey } from '../i18n/i18n';
 import { T, useT } from '../i18n/use-t';
 import { AccountDataPanel } from './account-data-panel';
 import { AccountPlayersPanel } from './account-players-panel';
 import { useAccount } from './account-context';
-import { ParentGate } from './parent-gate';
 import { MAX_PROFILES, tileClass, useProfiles } from './profile-screens';
 import { useSubmit } from './use-submit';
 
@@ -157,7 +156,7 @@ function ProfileRow({ profile, index, onChanged }: { profile: PlayerDto; index: 
 }
 
 export function ParentAreaScreen() {
-  const { state, setMe, refresh } = useAccount();
+  const { state, refresh } = useAccount();
   const navigate = useNavigate();
   const { profiles, error, reload } = useProfiles();
   // null = not picked yet: follow the first free name, which moves on after each new profile.
@@ -172,15 +171,11 @@ export function ParentAreaScreen() {
     setPicked(null);
     setNewLang('vi');
   });
-  // Without a PIN there is nothing to lock. With extra players the device goes to the picker, so the
-  // person it is handed to picks themselves; a lone owner goes straight back to play.
+  // With extra players the device goes to the picker, so the person it is handed to picks themselves; a lone
+  // owner goes straight back to play.
   const leave = useSubmit(async () => {
-    if (state.status === 'signed-in' && state.me.pinSet) setMe(await api('POST', '/parent-gate/lock', MeResponse));
-    else await refresh();
+    await refresh();
     navigate((profiles?.length ?? 0) >= 2 ? '/profiles' : '/');
-  });
-  const removePin = useSubmit(async () => {
-    setMe(await api('DELETE', '/auth/pin', MeResponse));
   });
 
   if (state.status !== 'signed-in') return null;
@@ -195,27 +190,8 @@ export function ParentAreaScreen() {
       </SkyScene>
     );
   }
-  if (!state.me.parentGateOpen) {
-    return (
-      <SkyScene>
-        <main className="gate-layout" data-id="parent-area">
-          <h1 className="visually-hidden"><T k="gate.title" /></h1>
-          <div className="gate-mascot">
-            <p className="speech"><T k="gate.childMascotSpeech" /></p>
-            <MiuOnIsland pose="cheer" size="13rem" />
-            <Link to="/profiles" className={buttonClass('ghost')}>
-              <T k="gate.backToProfiles" />
-            </Link>
-          </div>
-          <ParentGate />
-        </main>
-      </SkyScene>
-    );
-  }
-
   const hasProfile = (profiles?.length ?? 0) > 0;
   const hasExtraPlayers = (profiles?.length ?? 0) >= 2;
-  const { pinSet } = state.me;
   return (
     <SkyScene>
       <main className="scene-content parent-area" data-id="parent-area">
@@ -275,34 +251,15 @@ export function ParentAreaScreen() {
 
         <section className="panel" data-id="parent-handover" aria-labelledby="parent-step-handover">
           <StepTitle n={2} done={false} id="parent-step-handover">
-            <T k={pinSet ? 'parent.step2' : 'parent.step2NoPin'} />
+            <T k="parent.step2" />
           </StepTitle>
           <p className="hint">
-            <T k={!hasProfile ? 'parent.step2HintEmpty' : !hasExtraPlayers ? 'parent.step2HintSolo' : pinSet ? 'parent.step2HintHas' : 'parent.step2HintHasNoPin'} />
+            <T k={!hasProfile ? 'parent.step2HintEmpty' : !hasExtraPlayers ? 'parent.step2HintSolo' : 'parent.step2HintHas'} />
           </p>
           {leave.error ? <p role="alert" className="error">{leave.error}</p> : null}
           <button type="button" className={buttonClass('primary', { block: true })} data-id="parent-leave" disabled={leave.busy} onClick={() => void leave.onSubmit()}>
-            <T k={pinSet ? 'parent.step2DoneButton' : 'parent.step2DoneButtonNoPin'} />
+            <T k="parent.step2DoneButton" />
           </button>
-        </section>
-
-        <section className="panel" data-id="parent-pin" aria-labelledby="parent-pin-title">
-          <div className="panel-title">
-            <Icon name="key" size={40} />
-            <h2 id="parent-pin-title"><T k={pinSet ? 'parent.pinManageTitle' : 'parent.pinOptionalTitle'} /></h2>
-          </div>
-          <p className="hint"><T k={pinSet ? 'parent.pinManageHint' : 'parent.pinOptionalHint'} /></p>
-          {removePin.error ? <p role="alert" className="error">{removePin.error}</p> : null}
-          <div className="row">
-            <Link to="/set-pin" className={buttonClass('secondary')} data-id="parent-pin-set">
-              <T k={pinSet ? 'parent.pinChangeButton' : 'parent.pinOptionalButton'} />
-            </Link>
-            {pinSet ? (
-              <button type="button" className={buttonClass('ghost')} data-id="parent-pin-remove" disabled={removePin.busy} onClick={() => void removePin.onSubmit()}>
-                <T k="parent.pinRemoveButton" />
-              </button>
-            ) : null}
-          </div>
         </section>
 
         {profiles ? <AccountPlayersPanel players={profiles} /> : null}

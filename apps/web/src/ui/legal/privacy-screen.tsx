@@ -13,7 +13,7 @@ export function PrivacyScreen() {
         <h2>Liên hệ</h2>
         {PRIVACY.contactEmail ? (
           <p>
-            Mọi câu hỏi hay yêu cầu về dữ liệu, gửi thư tới <a href={`mailto:${PRIVACY.contactEmail}`}>{PRIVACY.contactEmail}</a>. Đừng gửi mã PIN hay thông tin của trẻ qua thư.
+            Mọi câu hỏi hay yêu cầu về dữ liệu, gửi thư tới <a href={`mailto:${PRIVACY.contactEmail}`}>{PRIVACY.contactEmail}</a>. Đừng gửi mật khẩu hay thông tin của trẻ qua thư.
           </p>
         ) : (
           <p>Tải và xóa dữ liệu bạn tự làm được ngay trong mục Quản lý tài khoản, không cần chờ ai.</p>
