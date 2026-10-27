@@ -486,8 +486,10 @@ describe('shipped account content', () => {
     expect(text).toMatch(/xóa hẳn tài khoản/);
     // Sign-in goes through the shared account service, no longer Google directly.
     expect(text).toMatch(/auth\.hoandat\.com/);
-    // The account owner's switches for each player, and no analytics events from the app.
-    expect(text).toMatch(/chơi online và nói chuyện bằng giọng/);
+    // The account owner's switches for each player (voice for an extra player needs the owner to sign in again),
+    // and no analytics events from the app.
+    expect(text).toMatch(/hai công tắc cho từng người chơi: chơi online/);
+    expect(text).toMatch(/bật cho người chơi phụ cần chủ tài khoản đăng nhập lại/);
     expect(text).toMatch(/App trên iPhone và Android không gửi sự kiện nào tới Google Analytics/);
     expect(text).not.toMatch(/tài khoản Google\./);
     expect(text).toMatch(/14 ngày/);
