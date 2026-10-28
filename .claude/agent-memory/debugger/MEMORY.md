@@ -1,4 +1,0 @@
-- [CI E2E timing races](ci-e2e-timing-races.md) — shard runner speed varies ±40%; UI timers race Playwright; how to A/B a suspect commit
-- [CI maxFailures hides tests](ci-maxfailures-hidden-tests.md) — shard 4 skips its last 8 tests; live-world UI makes each CI Playwright step 0.8–5 s
-- [Seeded bot tests drift with content](seeded-bot-tests-content-drift.md) — fixed-seed BotRunner tests break when map places move; sweep seeds on old vs new grid
-- [Bot sim stuck = water traps](bot-sim-stuck-water-traps.md) — one-way 3-block drops into canals; one RNG stream makes any place change move all targets

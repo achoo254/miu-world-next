@@ -21,3 +21,6 @@ all-in-one*.json
 
 # The iPhone/Android app build of the web app (pnpm mobile:build)
 apps/web/dist-native/
+
+# Agent config (rules, skills, agent memory) stays on the machines and in the private workspace repo, not in this public repo.
+/.claude/
