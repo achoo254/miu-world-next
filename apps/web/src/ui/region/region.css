@@ -22,7 +22,7 @@
 .region-scene {
   min-height: 100dvh;
   box-sizing: border-box;
-  padding: var(--space-lg) clamp(var(--space-md), 4vw, var(--space-2xl));
+  padding: calc(var(--space-lg) + var(--safe-top)) calc(clamp(var(--space-md), 4vw, var(--space-2xl)) + var(--safe-right)) calc(var(--space-lg) + var(--safe-bottom)) calc(clamp(var(--space-md), 4vw, var(--space-2xl)) + var(--safe-left));
   display: grid;
   place-items: start center;
   background: var(--region-backdrop) center / cover no-repeat, var(--color-sky-mid);

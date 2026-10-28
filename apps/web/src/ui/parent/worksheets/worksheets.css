@@ -10,7 +10,7 @@
 .worksheet-rows a:focus-visible { box-shadow: var(--focus-ring); outline: none; }
 .worksheet-row-title { flex: 1 1 14rem; min-width: 0; }
 
-.worksheet-page { min-height: 100%; padding: var(--space-md); background: var(--color-field); display: grid; gap: var(--space-md); justify-items: center; }
+.worksheet-page { min-height: 100%; padding: calc(var(--space-md) + var(--safe-top)) calc(var(--space-md) + var(--safe-right)) calc(var(--space-md) + var(--safe-bottom)) calc(var(--space-md) + var(--safe-left)); background: var(--color-field); display: grid; gap: var(--space-md); justify-items: center; }
 .worksheet-toolbar { display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: space-between; width: min(100%, 210mm); }
 .worksheet-sheet {
   width: min(100%, 210mm); min-height: 297mm; padding: 14mm 16mm; box-sizing: border-box;

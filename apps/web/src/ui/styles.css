@@ -36,7 +36,7 @@ a { color: var(--color-ink); font-weight: 700; }
   position: relative;
   min-height: 100dvh;
   box-sizing: border-box;
-  padding: var(--space-xl) clamp(var(--space-md), 5vw, var(--space-2xl));
+  padding: calc(var(--space-xl) + var(--safe-top)) calc(clamp(var(--space-md), 5vw, var(--space-2xl)) + var(--safe-right)) calc(var(--space-xl) + var(--safe-bottom)) calc(clamp(var(--space-md), 5vw, var(--space-2xl)) + var(--safe-left));
   display: grid;
   place-items: center;
   overflow: hidden;

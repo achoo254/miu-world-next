@@ -7,7 +7,7 @@
   min-height: 100vh;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: var(--space-md);
+  padding: calc(var(--space-md) + var(--safe-top)) calc(var(--space-md) + var(--safe-right)) calc(var(--space-md) + var(--safe-bottom)) calc(var(--space-md) + var(--safe-left));
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
