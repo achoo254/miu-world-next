@@ -1,148 +1,134 @@
 {
-  "capturedFrom": "57d11c822e179bbae8053fc8265d9a6cd7ea37c6",
-  "capturedAt": "2026-10-27T11:24:53+07:00",
-  "reviewedAt": "2026-10-27T11:26:02+07:00",
-  "reviewer": "agent:screen-review (5 subagents + main session diff check)",
+  "capturedFrom": "37ab3a14453e35674bb399e878921f3dbf431846",
+  "capturedAt": "2026-10-28T08:27:15+07:00",
+  "reviewedAt": "2026-10-28T08:31:02+07:00",
+  "reviewer": "agent:screen-review (5 subagents + main session merge)",
   "verdict": "pass",
   "findings": [
     {
-      "shot": "360x740/08-play-prompt.png",
+      "shot": "360x740/05-world-map.png",
       "kind": "other",
       "severity": "note",
-      "text": "Thân nhân vật Mochi che gần hết con Vẹt mà nhãn \"Vẹt · Nói chuyện\" chỉ tới, chỉ lộ chút mỏ và cánh; giống lần duyệt trước.",
+      "text": "Hàng nút mới \"← Quay lại\" + \"Trang chủ\" dồn sang phải (bắt đầu ở x≈55) nên không thẳng lề trái với tiêu đề \"Bản đồ thế giới\"; không che hay cắt gì.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/04-home.png",
+      "shot": "360x740/06-region.png",
       "kind": "other",
       "severity": "note",
-      "text": "Linh vật vẹt ở mép trái bị thẻ \"Thử thách Olympic Toán\" che gần hết; nhãn khu trên đảo sát nhau nhưng đọc được; giống lần trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/13-olympiad-practice.png",
-      "kind": "off-screen",
-      "severity": "note",
-      "text": "Nút kiểm tra đáp án nằm dưới mép màn, phải cuộn mới thấy; giống lần trước.",
+      "text": "Hàng nút mới \"← Quay lại\" + \"Trang chủ\" dồn sang phải nên không thẳng lề trái với thẻ \"Khu rừng bí mật\"; không che hay cắt gì.",
       "fixedIn": null
     },
     {
       "shot": "360x740/14-boss.png",
-      "kind": "clipped",
+      "kind": "other",
       "severity": "note",
-      "text": "Tên trùm và \"100 / 500 HP\" xuống hai dòng, \"HP\" đứng lẻ; khiên và quả cầu che gần hết nhân vật; giống lần trước.",
+      "text": "Thanh máu boss: tên \"Chó Bạc Canh Hào\" xuống dòng và \"100 / 500 HP\" tách \"HP\" sang dòng dưới; giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/15-shop.png",
+      "kind": "off-screen",
+      "severity": "note",
+      "text": "Chữ nổi \"+80 XP\" ở mép trên bị cắt nửa trên, nằm sau thanh tiêu đề Cửa hàng; giống bản trước.",
       "fixedIn": null
     },
     {
       "shot": "360x740/18-party.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Tên nhiệm vụ trong thẻ theo dõi bị cắt \"…Chương 1: Lá…\"; giống lần trước.",
+      "text": "Thẻ nhiệm vụ góc trên trái bị cắt giữa câu \"Khu rừng bí mật – Chương 1: Lá…\"; giống bản trước.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/20-landing.png",
-      "kind": "off-screen",
+      "shot": "360x740/22-friends-invite.png",
+      "kind": "overlap",
       "severity": "note",
-      "text": "Nút đăng nhập nằm dưới mép màn, phải cuộn mới tới; màn đầu chỉ thấy \"Chơi ngay\".",
+      "text": "Nút nổi \"Quay lại game\" đè lên góc dưới bảng Bạn bè, không che chữ hay nút; giống bản trước.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/24-weekly-share.png",
-      "kind": "other",
+      "shot": "360x740/25-online-off.png",
+      "kind": "clipped",
       "severity": "note",
-      "text": "Thẻ tổng kết ghi \"bài đã xong\", \"Bài mới\" trong khi sản phẩm tránh chữ \"bài\"; giống lần trước.",
+      "text": "Thẻ theo dõi nhiệm vụ trên HUD bị cắt \"Lá…\"; giống bản trước.",
       "fixedIn": null
     },
     {
       "shot": "360x740/28-play-menu.png",
       "kind": "overlap",
       "severity": "note",
-      "text": "Lưới nút menu che thẻ nhiệm vụ và bản đồ nhỏ; nút X vẫn rõ; giống lần trước.",
+      "text": "Bảng menu đè mép dưới huy hiệu \"Lv.1\" và che thẻ nhiệm vụ, bản đồ nhỏ phía sau; không che vùng chạm đang dùng.",
       "fixedIn": null
     },
     {
       "shot": "360x740/29-pause.png",
       "kind": "missing-close",
       "severity": "note",
-      "text": "Panel Tạm dừng không có nút X; lối thoát là nút lớn \"Tiếp tục chơi\" ở đầu panel; giống lần trước.",
+      "text": "Bảng Tạm dừng không có nút X; thoát bằng nút lớn \"Tiếp tục chơi\" ở đầu bảng (chủ ý, giống bản trước).",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/29-pause.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Nút \"Về chỗ an toàn\" dính sát mép dưới bảng, bo góc dưới bị cắt và che viền dưới mục \"Ngôn ngữ\"; giống bản trước.",
       "fixedIn": null
     },
     {
       "shot": "360x740/30-party-quest.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Thẻ \"Cả đội chơi…\" bị cắt sát dưới dòng cuối, không có lề dưới; chữ vẫn đọc được; giống lần trước.",
+      "text": "Thẻ nhiệm vụ đội bị cắt phẳng ở đáy dưới dòng \"Bông · xong 0 bước\", tiêu đề HUD cắt \"Lá…\"; giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/14-boss.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Ruy băng \"Đấu trí với Chó Bạc Canh Hào\" gần như không thấy (DOM đo 65×9 trên 430×43), có thể bị thẻ máu che; giống bản trước.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/15-shop.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Sau lớp mờ, mép trên lộ nửa dưới các thẻ nhiệm vụ của Home bị xén ngang; chỉ là nền, không che nút của Cửa hàng.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/13-olympiad-practice.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Panel luyện thi giữa nền chuyển màu trơn, trên và dưới để trống khoảng 260–280 px; giống hệt lần trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/10-question.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Nút \"Kiểm tra\" khi chưa bấm được có chữ trắng trên nền hồng nhạt, tương phản thấp; giống lần trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/21-lesson-page.png",
       "kind": "off-screen",
       "severity": "note",
-      "text": "Nút \"Chơi thử chủ đề này\" ở đáy bị mép màn cắt nửa; trang cuộn, cuộn xuống thấy đủ; giống lần trước.",
+      "text": "Phía trên khung Cửa hàng lộ dải thẻ của trang sau (\"Tiếng Việt\", \"Toán\") bị cắt nửa; không phải nút của khung, giống bản trước.",
       "fixedIn": null
     },
     {
-      "shot": "820x1180/22-friends-invite.png",
+      "shot": "820x1180/19-worksheets.png",
       "kind": "other",
       "severity": "note",
-      "text": "Panel Bạn bè chỉ chiếm khoảng 1/3 màn, nửa dưới trống; ô link mời cắt ngang (ô một dòng).",
+      "text": "Dòng \"Phiếu lễ hội lá vàng: chép đoạn truyện và giới thiệu một đồ vật\" sát nhãn \"3 phần\" bên phải, gần như không có khoảng cách.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/20-landing.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Ô vuông trang trí màu be đè lên chữ \"trong\" của tiêu đề \"Xem các chủ đề có trong game\".",
       "fixedIn": null
     },
     {
       "shot": "820x1180/26-moderation.png",
-      "kind": "overlap",
+      "kind": "raw-text",
       "severity": "note",
-      "text": "Nút \"Quay lại\" góc trên phải chồng lên đám mây trang trí, viền lẫn vào mây; vùng chạm không bị che.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/30-party-quest.png",
-      "kind": "overlap",
-      "severity": "note",
-      "text": "Thẻ \"Cả đội chơi…\" che mép trái bóng nói của nhân vật; không che nút.",
+      "text": "Ô \"Bản đồ\" trong thẻ báo cáo hiện mã nội bộ \"forest-ch1\" thay vì tên bản đồ tiếng Việt (trang quản trị).",
       "fixedIn": null
     },
     {
       "shot": "820x1180/28-play-menu.png",
       "kind": "overlap",
       "severity": "note",
-      "text": "Menu mở đè lên bản đồ nhỏ; nút X rõ.",
+      "text": "Bảng menu đè lên bản đồ nhỏ góc phải trên, bản đồ lộ mờ phía sau; không che chữ hay vùng bấm.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/29-pause.png",
       "kind": "missing-close",
       "severity": "note",
-      "text": "Màn Tạm dừng không có nút X; nút lớn \"Tiếp tục chơi\" làm việc đóng.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/24-weekly-share.png",
-      "kind": "other",
-      "severity": "note",
-      "text": "Thẻ tổng kết tuần in \"127.0.0.1:4173\" ở chân thẻ vì chụp ở máy local; kiểm trên production phải in đúng tên miền.",
+      "text": "Bảng Tạm dừng không có nút X (thoát bằng \"Tiếp tục chơi\"); nút \"Về chỗ an toàn\" xuống hai dòng trong khi nút cùng hàng một dòng.",
       "fixedIn": null
     }
   ]
