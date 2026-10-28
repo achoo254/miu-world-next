@@ -73,7 +73,7 @@ Kiểm tra: `dig +short A <domain> @1.1.1.1` phải trả IP của Cloudflare. D
 
 ## 5. Deploy
 
-Lệnh chạy từ gốc repo trên máy dev. Script đọc credential theo §2 và không in giá trị nào. **Mỗi lần deploy, migration hay restart ở production: hỏi người trước (§1).**
+Lệnh chạy từ gốc repo trên máy dev. Script đọc credential theo §2 và không in giá trị nào. Deploy, migration theo release và restart ở production không phải hỏi trước (§1); `release` tự sao lưu database trước khi đổi bản. Các lệnh ghi khác (`setup`, `timetable`, `turn`, `signin`, `google-cleanup`, `analytics`, sửa env, ghi dữ liệu tay) vẫn hỏi người trước.
 
 ```sh
 tools/deploy/production/deploy.sh setup     # máy mới, đổi unit/nginx/secret. Chạy lại được an toàn.
@@ -91,7 +91,7 @@ tools/deploy/production/deploy.sh release   # cổng release, build, security:di
 1. Gate 5 lệnh trong `CLAUDE.md`, build web; commit; push; CI của commit đó xanh.
 2. Chụp các màn chính từ cây sạch của commit đó và cho agent duyệt theo [`screen-review.md`](screen-review.md); phát hiện `block` thì sửa và quay lại bước 1.
 3. Commit ảnh, `review.json`, manifest (`chore(review): screens before release`), push.
-4. `deploy.sh gate` phải in "được", rồi hỏi người và chạy `deploy.sh release`.
+4. `deploy.sh gate` phải in "được", rồi chạy `deploy.sh release`.
 
 **Cổng release** (`tools/deploy/release-gate.sh`, `release` tự chạy trước khi build; `gate` chạy riêng): chặn khi chưa có `assets/generated/review/screens/review.json`, khi lần duyệt còn phát hiện `block` chưa sửa, khi ảnh hai khổ không cùng chụp ở commit của lần duyệt hay lúc chụp còn code chưa commit, khi từ commit đã chụp tới `HEAD` có đổi gì ngoài ảnh, manifest, `plans/`, `docs/` (ảnh đã cũ), và khi CI (`gh run list --commit`) của commit đã chụp chưa xanh. Hỏi CI của commit đã chụp, không phải của `HEAD`, nên commit chỉ thêm ảnh không phải chờ CI. `gh` chưa đăng nhập hay mất mạng thì cổng chặn và in cách khắc phục. Cây export (không có `.git`): `MIU_RELEASE_REV` phải là sha (đầu) của commit đã chụp. Bản vá gấp khi CI hỏng vì nguyên nhân ngoài code: `MIU_RELEASE_FORCE="<lý do>"` cho qua, in lý do và ghi nó vào `RELEASE_FORCED` cạnh `REVISION` trong bản release trên máy chủ; vẫn phải hỏi người trước.
 
@@ -115,7 +115,7 @@ tools/deploy/production/deploy.sh release   # cổng release, build, security:di
 
 **Log:** `journalctl --namespace=miu -u miu-server` (.65; không có `--namespace` thì không thấy); request ở `/var/log/nginx/miu.hoandat.com.{access,error}.log`.
 
-**Rollback** (trên .65, hỏi người trước; backup ở `/var/backups/miu/`: `before-<id>.dump`, `daily-<ngày>.dump`):
+**Rollback** (trên .65; backup ở `/var/backups/miu/`: `before-<id>.dump`, `daily-<ngày>.dump`):
 
 - **Chỉ quay code:** `ln -sfn /opt/miu/releases/<id-trước> /opt/miu/current && systemctl restart miu-server`.
 - **Migration làm hỏng dữ liệu:** dừng `miu-server`, rồi chạy `cd /tmp && sudo -u postgres dropdb miu && sudo -u postgres createdb -O miu miu && sudo -u postgres pg_restore --no-owner --role=miu -d miu /var/backups/miu/before-<id>.dump`. Sau đó quay code như trên. Lệnh `pg_restore` này đã chạy thử vào một database tạm.

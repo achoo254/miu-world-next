@@ -65,10 +65,13 @@ trình cho user: phương án Jev nghiêng về + xác suất từng phương á
 
 ## 1. Luật cứng (vi phạm = sự cố thật)
 
-1. **Mặc định CHỈ ĐỌC.** `deploy.sh setup|timetable|turn|signin|google-cleanup|analytics|release`, migration, `systemctl restart`,
-   sửa nginx, sửa `/etc/miu/production.env`, ghi Postgres ⟹ chỉ làm khi user yêu cầu **tường minh cho
-   chính lần đó** (`deployment-guide.md` §1). Server tự chạy migration khi khởi động, nên **mọi restart
-   đều có thể là migration**. Không tự đề xuất deploy prod vào "việc còn lại".
+1. **Mặc định CHỈ ĐỌC, trừ deploy.** `deploy.sh setup|timetable|turn|signin|google-cleanup|analytics`, sửa
+   `/etc/miu/production.env`, ghi Postgres ⟹ chỉ làm khi user yêu cầu **tường minh cho chính lần đó**
+   (`deployment-guide.md` §1).
+   **Deploy không cần hỏi** (user bỏ luật duyệt từng lần, 28/10/2026): deploy chuẩn theo tài liệu của repo (`deploy.sh release`, `systemctl restart` của Miu, nginx của Miu qua
+   `nginx -t`)
+   được làm khi commit đã qua đủ kiểm tra; trước đó sao lưu, sau đó kiểm trên site thật và báo user kết quả.
+   Server tự chạy migration khi khởi động, nên **mọi restart đều có thể là migration**: sao lưu Postgres trước.
 2. **.65 dùng chung với nhiều dự án.** Chỉ chạm `/opt/miu`, `/etc/miu`, `/var/backups/miu`,
    `miu-server`, `miu-backup.{service,timer}`, `conf.d/miu.conf`, database
    `miu`. Không sửa, dừng, nâng cấp pm2, nginx block, Postgres role/database hay tiến trình nào khác —
@@ -159,7 +162,7 @@ loopback?), **hiệu lực** (cửa sổ thời gian chứa sự kiện? cache C
 (mẫu `grep` đã khớp được trên chỗ chắc chắn có?). Báo phép đo đã làm trước, rồi mới tới kết quả. Còn
 mắt xích chưa đo thì gọi là giả thuyết.
 
-## 6. Khi chuẩn bị thao tác GHI (chỉ khi user đã yêu cầu tường minh)
+## 6. Khi chuẩn bị thao tác GHI (deploy theo luật 1; thao tác ghi khác chỉ khi user đã yêu cầu tường minh)
 
 - Trước `release`: đủ gate của `CLAUDE.md` (`assets:check` → `content:check` → `test` → `typecheck` →
   `lint`, cộng `--filter @miu/web build` và E2E smoke khi chạm `apps/`), working tree sạch (hoặc
