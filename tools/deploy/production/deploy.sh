@@ -12,8 +12,8 @@
 #                                               only after a release with the privacy page that tells it; restart to apply
 #   tools/deploy/production/deploy.sh gate      check the release gate only (tools/deploy/release-gate.sh), touching no server
 #   tools/deploy/production/deploy.sh release   release gate, build, back up the DB, upload, switch, health-check
-# Production holds real children's data and .65 is shared: ask the owner before EVERY run
-# (docs/deployment-guide.md §1). Credentials come from $ALL_IN_ONE_STAGING_DEV (the .65 entry
+# Production holds real players' data (every age, signed in with a hoandat.com account) and .65 is shared:
+# `release` backs the database up before it switches (docs/deployment-guide.md §1). Credentials come from $ALL_IN_ONE_STAGING_DEV (the .65 entry
 # SSH_SERVER_STAGING lives there) and the access-tokens.json beside it. No value is printed; secrets
 # travel over ssh stdin only.
 set -euo pipefail

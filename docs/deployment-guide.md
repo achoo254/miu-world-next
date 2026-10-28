@@ -13,7 +13,7 @@
 
 ## 1. Quyền hạn
 
-- **Production:** hỏi người trước **mỗi** lần deploy, migration hay restart. Lý do: đây là nơi có dữ liệu thật của trẻ em, và máy này dùng chung với nhiều dự án khác. Đọc trạng thái thì được.
+- **Production:** dữ liệu thật của người chơi (mọi lứa tuổi, đăng nhập bằng tài khoản hoandat.com) trên máy dùng chung với nhiều dự án khác. Deploy bằng `release`, lệnh này tự sao lưu database trước khi đổi bản; migration và thao tác tay trên dữ liệu thì sao lưu trước. (Bỏ quy tắc cũ "hỏi trước mỗi lần deploy" vì dựa trên dữ liệu trẻ em; game nay dành cho mọi lứa tuổi, chủ sản phẩm xác nhận 28/10/2026.)
 - Chỉ đụng thư mục và tiến trình của Miu; không sửa, dừng hay nâng cấp dịch vụ của dự án khác chạy trên cùng máy.
 - **Không bao giờ** commit file credential, file env thật hay private key; không in giá trị secret ra hội thoại, log, report hay commit.
 
