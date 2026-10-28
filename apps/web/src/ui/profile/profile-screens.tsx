@@ -8,6 +8,7 @@ import { Name, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { PageLoading, SkyScene } from '../kit/sky-scene';
+import { BackButton } from '../kit/back-button';
 import { PlayerBadge } from '../player/player-badge';
 import { say, usePlayer, type PlayerData } from '../player/player-data';
 import { useRegionRewardList } from '../region/region-rewards';
@@ -35,10 +36,13 @@ function Page({ children, data, error }: { children: (data: PlayerData) => React
           <>
             <header className="region-top">
               <PlayerBadge character={data.character} progress={data.progress} />
-              <Link to="/home" className={buttonClass('ghost', { small: true })} data-id="profile-home">
-                <Icon name="house" size={28} />
-                <T k="common.home" />
-              </Link>
+              <div className="region-top-nav">
+                <BackButton dataId="profile-back" />
+                <Link to="/home" className={buttonClass('ghost', { small: true })} data-id="profile-home">
+                  <Icon name="house" size={28} />
+                  <T k="common.home" />
+                </Link>
+              </div>
             </header>
             {children(data)}
           </>

@@ -8,6 +8,7 @@ import { T } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { PageLoading, SkyScene } from '../kit/sky-scene';
+import { BackButton } from '../kit/back-button';
 import '../kit/scene.css';
 import { PlayerBadge } from '../player/player-badge';
 import { usePlayer, type PlayerData } from '../player/player-data';
@@ -48,10 +49,13 @@ function Frame({
         <>
           <header className="region-top">
             <PlayerBadge character={data.character} progress={data.progress} />
-            <Link to="/home" className={buttonClass('ghost', { small: true })} data-id="region-home">
-              <Icon name="house" size={28} />
-              <T k="common.home" />
-            </Link>
+            <div className="region-top-nav">
+              <BackButton dataId="region-back" />
+              <Link to="/home" className={buttonClass('ghost', { small: true })} data-id="region-home">
+                <Icon name="house" size={28} />
+                <T k="common.home" />
+              </Link>
+            </div>
           </header>
           {children(data)}
         </>

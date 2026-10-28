@@ -1,6 +1,8 @@
 /* Map and region screens: values from tokens.css only. */
 .region-page { width: min(100%, 60rem); display: flex; flex-direction: column; gap: var(--space-md); }
 .region-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); }
+/* Quay lại and Trang chủ stay together on the right; on a narrow phone they wrap under the player badge. */
+.region-top-nav { display: flex; align-items: center; gap: var(--space-sm); margin-left: auto; }
 /* World map (M1.4): the island takes the page width, like the mock. */
 .region-page--wide { width: min(100%, 76rem); }
 .world-map { display: flex; flex-direction: column; gap: var(--space-sm); }

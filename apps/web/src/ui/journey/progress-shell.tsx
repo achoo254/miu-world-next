@@ -7,6 +7,7 @@ import { T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { PageLoading, SkyScene } from '../kit/sky-scene';
+import { BackButton } from '../kit/back-button';
 import { PlayerBadge } from '../player/player-badge';
 import { usePlayer, type PlayerData } from '../player/player-data';
 import { ShopPanel } from '../shop/shop-panel';
@@ -38,10 +39,13 @@ export function ProgressShell({ dataId, children }: { dataId: string; children: 
               <Link to="/profile" className="home-profile-link" data-id="progress-profile" aria-label={t('home.profileOf', { name: data.character.name })}>
                 <PlayerBadge character={data.character} progress={coins === null ? data.progress : { ...data.progress, coins }} />
               </Link>
-              <Link to="/home" className={buttonClass('ghost', { small: true })} data-id="progress-home">
-                <Icon name="house" size={28} />
-                <T k="common.home" />
-              </Link>
+              <div className="region-top-nav">
+                <BackButton dataId="progress-back" />
+                <Link to="/home" className={buttonClass('ghost', { small: true })} data-id="progress-home">
+                  <Icon name="house" size={28} />
+                  <T k="common.home" />
+                </Link>
+              </div>
             </header>
             <div className="progress-layout">
               <nav className="progress-rail" aria-label={t('home.nav')}>
