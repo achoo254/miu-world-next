@@ -1,6 +1,6 @@
 ---
 name: miu-ops-prod
-description: Tra cứu thông tin và vận hành Miu World trên PRODUCTION (miu.hoandat.com, chạy trên máy .65 dùng chung với nhiều dự án khác — systemd miu-server cổng loopback 8797, Postgres 16 có dữ liệu thật của trẻ em). Chỉ đường đọc docs/STAG-DEV-README.md và docs/deployment-guide.md §7 — credential ở $ALL_IN_ONE_STAGING_DEV (entry SSH_SERVER_STAGING, KHÔNG phải $ALL_IN_ONE_PROD), SSH bằng key, log journal namespace miu, backup 14 ngày, deploy bằng tools/deploy/production/deploy.sh. Kích hoạt khi user nhắc "prod", "production", "miu.hoandat.com", ".65", "deploy prod", "release prod", "log prod", "DB prod", "backup prod", "rollback prod". KHÔNG dùng cho staging/lab 176 (miu-staging.hoandat.com) — dùng skill miu-ops-staging.
+description: Tra cứu thông tin và vận hành Miu World trên PRODUCTION (miu.hoandat.com, chạy trên máy .65 dùng chung với nhiều dự án khác — systemd miu-server cổng loopback 8797, Postgres 16 có dữ liệu thật của người chơi mọi lứa tuổi). Chỉ đường đọc docs/STAG-DEV-README.md và docs/deployment-guide.md §7 — credential ở $ALL_IN_ONE_STAGING_DEV (entry SSH_SERVER_STAGING, KHÔNG phải $ALL_IN_ONE_PROD), SSH bằng key, log journal namespace miu, backup 14 ngày, deploy bằng tools/deploy/production/deploy.sh. Kích hoạt khi user nhắc "prod", "production", "miu.hoandat.com", ".65", "deploy prod", "release prod", "log prod", "DB prod", "backup prod", "rollback prod". KHÔNG dùng cho staging/lab 176 (miu-staging.hoandat.com) — dùng skill miu-ops-staging.
 ---
 
 # Miu World Ops — Production
@@ -75,7 +75,7 @@ trình cho user: phương án Jev nghiêng về + xác suất từng phương á
    kể cả khi nó giữ cổng mình cần (cổng 8787 trên .65 thuộc dự án khác). Quy tắc "cổng bận thì tắt
    tiến trình cũ" của `CLAUDE.md` chỉ áp máy dev. Đụng nginx xong phải `nginx -t` và đếm pm2 online
    (lệnh ở `STAG-DEV-README.md` §6).
-3. **Dữ liệu thật của trẻ em.** Truy vấn Postgres chỉ lấy **số đếm, id, trạng thái** — không `SELECT`
+3. **Dữ liệu thật của người chơi (mọi lứa tuổi).** Truy vấn Postgres chỉ lấy **số đếm, id, trạng thái** — không `SELECT`
    email, tên hiển thị, thời khóa biểu, hộp thư, token hay hash ra màn hình/báo cáo. Không kéo bản
    dump về máy dev, không tạo bản sao dữ liệu sống quá **14 ngày** (trang `/privacy` hứa điều này;
    bảng giữ dữ liệu ở `deployment-guide.md` §7). Đổi cách giữ ⟹ hỏi user và sửa cả trang `/privacy`.
