@@ -217,7 +217,7 @@
 .boss-duel--stage .boss-screen { gap: var(--space-sm); }
 .boss-duel--stage .boss-header {
   position: fixed;
-  top: var(--space-sm);
+  top: calc(var(--space-sm) + var(--safe-top));
   left: 50%;
   z-index: 2;
   /* Room for the close button in the corner, on either side alike. */
@@ -234,7 +234,7 @@
 /* Out of the fight: over the top right corner of the screen while staged in the world. */
 .boss-duel--stage .boss-close {
   position: fixed;
-  top: var(--space-sm);
-  right: var(--space-sm);
+  top: calc(var(--space-sm) + var(--safe-top));
+  right: calc(var(--space-sm) + var(--safe-right));
   z-index: 2;
 }

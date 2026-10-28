@@ -45,7 +45,7 @@
 /* The treasure of an opened gate, over the game for a few seconds. */
 .gate-opened {
   position: fixed;
-  top: var(--space-xl);
+  top: calc(var(--space-xl) + var(--safe-top));
   left: 50%;
   transform: translateX(-50%);
   z-index: calc(var(--z-overlay) + 1);

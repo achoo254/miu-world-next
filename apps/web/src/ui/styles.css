@@ -479,8 +479,8 @@ input:focus-visible, select:focus-visible { border-color: var(--color-secondary)
 }
 .play-exit {
   position: fixed;
-  top: var(--space-sm);
-  right: var(--space-sm);
+  top: calc(var(--space-sm) + var(--safe-top));
+  right: calc(var(--space-sm) + var(--safe-right));
   z-index: var(--z-hud);
   display: flex;
   align-items: center;
