@@ -692,7 +692,7 @@ describe('character', () => {
     await agent.put('/api/character').send({ name: 'Tên Thật', equipped: [] }).expect(400, { error: 'invalid-character-name' });
     await agent.put('/api/character').send({ name: 'Miu', equipped: ['golden-crown'] }).expect(400, { error: 'invalid-equipment' });
     await agent.put('/api/character').send({ name: 'Miu', equipped: ['hat-witch-pink', 'hat-witch-pink'] }).expect(400);
-    await agent.put('/api/character').send({ name: 'Miu', equipped: [], species: 'dragon' }).expect(400, { error: 'invalid-species' });
+    await agent.put('/api/character').send({ name: 'Miu', equipped: [], species: 'unicorn' }).expect(400, { error: 'invalid-species' });
     expect((await agent.get('/api/character').expect(200)).body.species).toBe('cat');
   });
 
