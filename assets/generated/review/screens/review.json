@@ -1,7 +1,7 @@
 {
-  "capturedFrom": "e235ed6c665c03088043ad2b4412feb3d65f4cd7",
-  "capturedAt": "2026-10-29T22:26:44+07:00",
-  "reviewedAt": "2026-10-29T22:31:00+07:00",
+  "capturedFrom": "3ca9b931722574fed373784f679e923cd076b027",
+  "capturedAt": "2026-10-29T22:40:16+07:00",
+  "reviewedAt": "2026-10-29T22:45:00+07:00",
   "reviewer": "agent:claude-screen-review",
   "verdict": "pass",
   "findings": [
@@ -101,6 +101,13 @@
       "kind": "other",
       "severity": "note",
       "text": "Hội thoại mẫu của E2E có {name} nên không có giọng ghi sẵn; nút Nghe không hiện như trước (Chromium không có giọng vi-VN cục bộ). Giọng ghi sẵn kiểm trên production.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/04-home.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dock trên khổ điện thoại và iPad dọc xếp 4 + 3 nút (cố ý); màn rộng từ 1024 px là một hàng 7 nút. Mô tả nhiệm vụ hiện tại trong \"Nhiệm vụ hôm nay\" cắt còn 2 dòng.",
       "fixedIn": null
     }
   ]
