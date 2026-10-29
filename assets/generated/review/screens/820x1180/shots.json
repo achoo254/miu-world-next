@@ -1,8 +1,8 @@
 {
   "viewport": "820x1180",
-  "capturedFrom": "6de58cd8b179a7706a7ac24eed5e78d786103ace",
+  "capturedFrom": "7afc1887a4b38be8bffd86c86da6f4bdb5445943",
   "uncommitted": [],
-  "capturedAt": "2026-10-29T19:08:48+07:00",
+  "capturedAt": "2026-10-29T22:19:56+07:00",
   "shots": [
     {
       "shot": "820x1180/01-login.png",
@@ -96,12 +96,24 @@
       "status": "ok",
       "facts": {
         "offScreen": [
-          "a.today-row-link \"Đảo bí ẩn – Chương 1: Tấm bản \" at 85,1125–735,1185"
+          "[data-id=\"home-daily-go\"] at 578,1157–735,1217"
         ],
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44"
+          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Nhà · Lịch học\" shows 1×1 of 97×18",
+          "span.world-marker-sub \"Gặp bạn · Cửa hàng\" shows 1×1 of 136×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt · Toán\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18"
         ],
         "rawText": [],
         "small": []
@@ -113,12 +125,25 @@
       "status": "ok",
       "facts": {
         "offScreen": [
-          "[data-id=\"map-books-truong-hoc\"] at 41,1026–406,1281",
-          "[data-id=\"map-books-thu-vien\"] at 414,1026–779,1281"
+          "[data-id=\"map-books-truong-hoc\"] at 41,1040–406,1295",
+          "[data-id=\"map-books-thu-vien\"] at 414,1040–779,1295"
         ],
         "overlaps": [],
         "missingClose": [],
-        "clipped": [],
+        "clipped": [
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Nhà · Lịch học\" shows 1×1 of 97×18",
+          "span.world-marker-sub \"Gặp bạn · Cửa hàng\" shows 1×1 of 136×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt · Toán\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18"
+        ],
         "rawText": [],
         "small": []
       }
@@ -254,7 +279,19 @@
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44"
+          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Nhà · Lịch học\" shows 1×1 of 97×18",
+          "span.world-marker-sub \"Gặp bạn · Cửa hàng\" shows 1×1 of 136×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt · Toán\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18"
         ],
         "rawText": [],
         "small": []
@@ -269,7 +306,19 @@
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44"
+          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Nhà · Lịch học\" shows 1×1 of 97×18",
+          "span.world-marker-sub \"Gặp bạn · Cửa hàng\" shows 1×1 of 136×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt · Toán\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18"
         ],
         "rawText": [],
         "small": []
@@ -299,7 +348,19 @@
         "overlaps": [],
         "missingClose": [],
         "clipped": [
-          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44"
+          "h1.visually-hidden \"Trang chủ\" shows 1×1 of 146×44",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Nhà · Lịch học\" shows 1×1 of 97×18",
+          "span.world-marker-sub \"Gặp bạn · Cửa hàng\" shows 1×1 of 136×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt · Toán\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Toán · Tiếng Việt\" shows 1×1 of 119×18",
+          "span.world-marker-sub \"Tiếng Việt\" shows 1×1 of 73×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Toán\" shows 1×1 of 34×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18",
+          "span.world-marker-sub \"Khám phá\" shows 1×1 of 71×18"
         ],
         "rawText": [],
         "small": []

@@ -1,15 +1,64 @@
 {
-  "capturedFrom": "6de58cd8b179a7706a7ac24eed5e78d786103ace",
-  "capturedAt": "2026-10-29T19:08:09+07:00",
-  "reviewedAt": "2026-10-29T19:14:00+07:00",
+  "capturedFrom": "7afc1887a4b38be8bffd86c86da6f4bdb5445943",
+  "capturedAt": "2026-10-29T22:19:16+07:00",
+  "reviewedAt": "2026-10-29T22:24:00+07:00",
   "reviewer": "agent:claude-screen-review",
   "verdict": "pass",
   "findings": [
+    {
+      "shot": "360x740/04-home.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Trên khổ 360 px, nhãn tên khu che gần hết đảo (chỉ còn thấy tháp lâu đài); nhãn không đè chữ nhau. Dock 6 nút + \"Thêm\" xếp 4 + 3, vài nhãn xuống hai dòng nên hàng nút không đều.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/05-world-map.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Nhãn khu che gần hết đảo trên khổ 360 px; vẹt trang trí chạm nhãn \"Làng Ven Sông\". Tiêu đề trên biển gỗ xuống hai dòng, không bị cắt.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/10-question.png",
+      "kind": "shifted",
+      "severity": "note",
+      "text": "Nút \"Nghe\" không hiện vì Chromium chụp trên Windows không có giọng đọc tiếng Việt (nút chỉ hiện khi trình duyệt có giọng); lần chụp trước trên Mac có. Code không đổi.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/27-puzzle-clues.png",
+      "kind": "shifted",
+      "severity": "note",
+      "text": "Như màn 10: nút \"Nghe\" vắng do máy chụp không có giọng đọc tiếng Việt, không phải thay đổi code.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/11-reward.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Ô \"Kèm lời mời kết bạn\" và nút \"Khoe kết quả\" có vùng chạm dưới 44 px.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/24-weekly-share.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Thẻ chia sẻ in \"127.0.0.1:4173\" ở chân thẻ: host của môi trường chụp; bản production in tên miền thật.",
+      "fixedIn": null
+    },
     {
       "shot": "820x1180/26-moderation.png",
       "kind": "raw-text",
       "severity": "note",
       "text": "Thẻ báo cáo ở màn kiểm duyệt ghi mã map \"forest-ch1\" thay vì tên tiếng Việt của khu (màn chỉ người kiểm duyệt thấy).",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/30-party-quest.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Thẻ nhiệm vụ đội bị cắt ở dòng cuối, nhãn Tương tác sát đáy thẻ; giống lần trước.",
       "fixedIn": null
     }
   ]
