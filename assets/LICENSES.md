@@ -32,6 +32,7 @@ Not CC0 and not covered by the allowlist above: the gate accepts this licence on
 
 | Files | Source |
 | --- | --- |
+| `generated/voice/*.m4a` | content/voice (character lines read by VieNeu-TTS v3 Turbo, Apache-2.0, built-in voices only): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0) |
 | `generated/brand/*.png` | designs/brand/miu-logo-master-1024.png: AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0) |
 | `generated/share-cards/*.png` | Contains the Miu logo (generated/brand/miu-logo-512.png): AI-generated with OpenAI gpt-image for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0) |
 

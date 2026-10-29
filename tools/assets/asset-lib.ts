@@ -84,9 +84,9 @@ export const budgetSchema = z.object({
 export type Budget = z.infer<typeof budgetSchema>;
 
 /**
- * The one exception to the licence allowlist: the brand logo and app icons (and pictures that show them) are AI-generated
- * art the owner keeps all rights to. Their licence is accepted only for generated files matching `globs`; in-game art
- * stays on the allowlist.
+ * The one exception to the licence allowlist: the brand logo and app icons (and pictures that show them), and the
+ * pre-recorded voice lines, are AI-generated media the owner keeps all rights to. Their licence is accepted only for
+ * generated files matching `globs`; in-game art stays on the allowlist.
  */
 export const brandArtSchema = z.object({
   license: z.string().min(1),

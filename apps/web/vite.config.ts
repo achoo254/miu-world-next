@@ -8,6 +8,7 @@ import { ACCESSORY_ART_DIR } from '../../packages/schema/src/accessory-art.ts';
 import { VERSION_CHARS, manifestVersions } from './src/asset-versions.ts';
 import { SOUND_PATHS } from './src/ui/sound/cues.ts';
 import { MUSIC_PATHS } from './src/ui/sound/music.ts';
+import { VOICE_INDEX_PATH } from './src/ui/dialogue/voice-files.ts';
 import { UI_ART_PATHS } from './src/ui/kit/ui-art.ts';
 import { MINIGAME_SPRITE_PATHS } from './src/ui/minigame/sprites.ts';
 import { appIcons, APP_ICON_PATHS } from './vite-app-icons.ts';
@@ -47,7 +48,7 @@ function contentSecurityPolicy(policy: string): Plugin {
 
 /**
  * Content versions baked into the build (src/asset-versions.ts): the manifest's own, for the game and the
- * review page to fetch it fresh, and those of the files the React UI shows (icons, art, sounds).
+ * review page to fetch it fresh, and those of the files the React UI shows (icons, art, sounds, the voice-line index).
  */
 function assetVersionDefines(): Record<string, string> {
   const text = readFileSync(path.join(ASSETS_DIR, 'manifest.json'), 'utf8');
@@ -55,7 +56,7 @@ function assetVersionDefines(): Record<string, string> {
   const versions = manifestVersions([...manifest.files, ...manifest.generated]);
   // Item pictures are looked up by item id at runtime, so the whole folder is versioned.
   const itemArt = [...versions.keys()].filter((p) => p.startsWith(ACCESSORY_ART_DIR));
-  const ui = Object.fromEntries([...UI_PATHS, ...SOUND_PATHS, ...MUSIC_PATHS, ...itemArt].flatMap((p) => (versions.has(p) ? [[p, versions.get(p)]] : [])));
+  const ui = Object.fromEntries([...UI_PATHS, ...SOUND_PATHS, ...MUSIC_PATHS, VOICE_INDEX_PATH, ...itemArt].flatMap((p) => (versions.has(p) ? [[p, versions.get(p)]] : [])));
   return {
     __MIU_MANIFEST_VERSION__: JSON.stringify(createHash('sha256').update(text).digest('hex').slice(0, VERSION_CHARS)),
     __MIU_UI_ASSET_VERSIONS__: JSON.stringify(ui),

@@ -221,6 +221,19 @@
     "license": "CC0-1.0"
   },
   {
+    "glob": "generated/voice/*.m4a",
+    "generator": "tools/assets/build-voice.ts",
+    "derivedFrom": [],
+    "license": "LicenseRef-hoandat-all-rights-reserved",
+    "source": "content/voice (character lines read by VieNeu-TTS v3 Turbo, Apache-2.0, built-in voices only): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)"
+  },
+  {
+    "glob": "generated/voice/index.json",
+    "generator": "tools/assets/build-voice.ts",
+    "derivedFrom": [],
+    "license": "CC0-1.0"
+  },
+  {
     "glob": "generated/brand/*.png",
     "generator": "tools/assets/render-brand-logo.ts",
     "derivedFrom": [],

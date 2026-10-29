@@ -8,7 +8,8 @@
     "license": "LicenseRef-hoandat-all-rights-reserved",
     "globs": [
       "generated/brand/*.png",
-      "generated/share-cards/*.png"
+      "generated/share-cards/*.png",
+      "generated/voice/*.m4a"
     ]
   },
   "budget": {

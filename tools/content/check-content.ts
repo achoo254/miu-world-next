@@ -30,6 +30,8 @@ import { eventInteractable } from '../../packages/voxel/src/event-layer';
 import type { LiveEvent } from '../../packages/schema/src/live-event';
 import { ASSETS_DIR, REPO_ROOT } from '../assets/asset-lib';
 import { varietyIssues } from './content-variety';
+import { collectVoiceLines, readCast } from '../assets/voice-lines';
+import { voiceFilePath } from '../../apps/web/src/ui/dialogue/voice-files';
 import { checkLogicSteps } from './logic-steps';
 import { checkLearningLinks } from './learning-links';
 import { checkRepoTextbookCopy } from './no-textbook-copy';
@@ -88,6 +90,8 @@ const ASSET_TOOL_FILES = [
   'world/box-props/', 'world/mock-views/',
   // The companion bots' standing spots of each map (tools/world/walk-export.ts writes them; its test checks each against the map).
   'world/walk/',
+  // Who reads which character line, and what was read (tools/assets/voice-lines.ts, build-voice.ts).
+  'voice/',
 ];
 /** Content only the web app reads; validated here. */
 const REGIONS_FILE = 'world/regions.json';
@@ -602,6 +606,25 @@ export function checkTerms(raw: unknown, contactEmail: string | null | undefined
   return [];
 }
 
+/**
+ * Character lines without a recorded voice (`pnpm assets:voice`, on the PC with the voice model) still play with the
+ * device voice, so this only warns. A new or reworded line lands here until the next recording run.
+ */
+export function voiceLineWarnings(dir: string): string[] {
+  const castFile = path.join(dir, 'voice/cast.json');
+  if (!existsSync(castFile)) return [];
+  let missing;
+  try {
+    missing = collectVoiceLines(readCast(castFile), dir).filter((line) => !existsSync(path.join(ASSETS_DIR, voiceFilePath(line.key))));
+  } catch (error) {
+    // A broken quest or character file is reported by the catalogue load; a broken cast file is reported here.
+    return [`voice lines not checked: ${error instanceof Error ? error.message : String(error)}`];
+  }
+  if (missing.length === 0) return [];
+  const sample = missing.slice(0, 3).map((line) => `"${line.text}"`).join(', ');
+  return [`${missing.length} character lines have no recorded voice yet (pnpm assets:voice on the PC), e.g. ${sample}`];
+}
+
 /** `env`: where the copy check finds its key (the process environment by default). */
 export function checkContent(dir: string = CONTENT_DIR, { env = process.env }: { env?: NodeJS.ProcessEnv } = {}): ContentReport {
   const issues: string[] = [];
@@ -726,6 +749,7 @@ export function checkContent(dir: string = CONTENT_DIR, { env = process.env }: {
     // A quest file that breaks the schema is already reported by the catalogue load above.
   }
   if (quests) issues.push(...learningCheckIssues(dir, quests, warnings, env));
+  warnings.push(...voiceLineWarnings(dir));
   return { issues, warnings, notes, fileCount: files.length };
 }
 

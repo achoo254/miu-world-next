@@ -1,13 +1,15 @@
-// Read-aloud with the browser's speech synthesis, in Vietnamese (vi-VN) or English (en-US), and only with a
-// voice that runs on the device: "remote" voices (localService = false, e.g. some Chrome/Edge voices) send the
-// text to the vendor's servers, which Master Plan §9 rules out. No local voice for a language → nothing is read
-// in it (the "Nghe" button hides). The speed follows the voice setting, the sound switch silences it, and a
-// screen that closes stops it (listen-button.tsx, app-shell.tsx).
+// Read-aloud in Vietnamese (vi-VN) or English (en-US). A Vietnamese line with a pre-recorded file
+// (recorded-voice.ts, read once on the owner's PC) plays that file; any other line uses the browser's speech
+// synthesis, and only a voice that runs on the device: "remote" voices (localService = false, e.g. some Chrome/Edge
+// voices) send the text to the vendor's servers, which Master Plan §9 rules out. Neither a file nor a local voice →
+// the line is not read (the "Nghe" button hides when nothing is). The speed follows the voice setting, the sound
+// switch silences it, and a screen that closes stops it (listen-button.tsx, app-shell.tsx).
 import { useEffect, useState } from 'react';
 import type { Lang, LangMode } from '../i18n/i18n';
 import { duckMusic } from '../sound/music-player';
 import { onSoundSettingChange, readSoundOn } from '../system/sound-setting';
 import { VOICE_RATE, readVoiceSpeed } from '../system/voice-setting';
+import { recordedVoiceUrl, useRecordedVoices } from './recorded-voice';
 
 type VoiceLike = Pick<SpeechSynthesisVoice, 'lang' | 'localService' | 'name'> & Partial<Pick<SpeechSynthesisVoice, 'default'>>;
 
@@ -38,8 +40,25 @@ export interface SpokenLine {
   lang: Lang;
 }
 
+/** One line of a reading and how it is read: its recorded file, or an on-device voice. */
+export type ReadingStep<V extends VoiceLike = SpeechSynthesisVoice> = SpokenLine & ({ file: string; voice?: undefined } | { file?: undefined; voice: V });
+
+/** How `lines` are read: the recorded file of a Vietnamese line first, else the best local voice; neither → skipped. */
+export function readingPlan<V extends VoiceLike>(lines: readonly SpokenLine[], voices: readonly V[], fileOf: (text: string) => string | null): ReadingStep<V>[] {
+  return lines.flatMap((line): ReadingStep<V>[] => {
+    if (line.text.trim() === '') return [];
+    const file = line.lang === 'vi' ? fileOf(line.text) : null;
+    if (file) return [{ ...line, file }];
+    const voice = bestVoice(voices, line.lang);
+    return voice ? [{ ...line, voice }] : [];
+  });
+}
+
 /** Lets the music come back once the reading ends or is cut short. */
 let releaseMusic: (() => void) | null = null;
+/** Bumped by every new reading and every stop, so a cut-short reading never goes on to its next line. */
+let reading = 0;
+let playing: HTMLAudioElement | null = null;
 
 function release(): void {
   releaseMusic?.();
@@ -47,37 +66,97 @@ function release(): void {
 }
 
 export function stopSpeaking(): void {
+  reading += 1;
+  playing?.pause();
+  playing = null;
   const speech = synthesis();
   if (speech && (speech.speaking || speech.pending)) speech.cancel();
   release();
 }
 
+/** Calls `fn` the first time only: a failing file fires both `error` and a rejected `play()`. */
+function once(fn: () => void): () => void {
+  let called = false;
+  return () => {
+    if (called) return;
+    called = true;
+    fn();
+  };
+}
+
+/** Plays a recorded line; `failed` instead of `ended` when the file cannot play (offline, missing, no audio). */
+function playFile(url: string, rate: number, ended: () => void, failed: () => void): void {
+  const fail = once(failed);
+  try {
+    const audio = new Audio(url);
+    audio.playbackRate = rate; // the pitch stays (preservesPitch is on by default)
+    audio.onended = once(ended);
+    audio.onerror = fail;
+    playing = audio;
+    void audio.play()?.catch(fail);
+  } catch {
+    fail(); // no audio here (tests, a locked-down browser)
+  }
+}
+
 /**
- * Reads `lines` one after the other, cutting off whatever was being read. Lines without an on-device voice are
- * skipped; returns false when nothing could be read (no synthesis, sound off, no voice).
+ * Upper bound of a device reading, so a voice that never reports its end (WebKit may refuse an utterance started
+ * outside a tap, after a recorded line) cannot keep the music lowered.
+ */
+const deviceTimeoutMs = (text: string, rate: number): number => (5 + text.length / (8 * rate)) * 1000;
+
+/**
+ * Reads `lines` one after the other, cutting off whatever was being read. Lines with neither a recorded file nor an
+ * on-device voice are skipped, and a recorded file that cannot play falls back to the device voice; returns false
+ * when nothing could be read (sound off, nothing readable).
  */
 export function speakLines(lines: readonly SpokenLine[]): boolean {
+  if (!readSoundOn()) return false;
   const speech = synthesis();
-  if (!speech || !readSoundOn()) return false;
-  const voices = speech.getVoices();
-  const queue = lines.flatMap((line) => {
-    const voice = bestVoice(voices, line.lang);
-    return voice && line.text.trim() !== '' ? [{ ...line, voice }] : [];
-  });
-  if (queue.length === 0) return false;
+  const voices = speech?.getVoices() ?? [];
+  const plan = readingPlan(lines, voices, recordedVoiceUrl);
+  if (plan.length === 0) return false;
   stopSpeaking();
   const rate = VOICE_RATE[readVoiceSpeed()];
+  const token = reading;
   // The music steps back while the lines are read.
   releaseMusic = duckMusic();
-  queue.forEach((line, i) => {
-    const utterance = new SpeechSynthesisUtterance(line.text);
-    utterance.voice = line.voice;
-    utterance.lang = line.voice.lang;
+  const device = (text: string, voice: SpeechSynthesisVoice | null, after: () => void): void => {
+    if (!speech || !voice) {
+      after();
+      return;
+    }
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = voice;
+    utterance.lang = voice.lang;
     utterance.rate = rate;
-    if (i === queue.length - 1) utterance.onend = release;
-    utterance.onerror = release;
+    const watchdog = setTimeout(after, deviceTimeoutMs(text, rate));
+    const end = (): void => {
+      clearTimeout(watchdog);
+      after();
+    };
+    utterance.onend = end;
+    utterance.onerror = end;
     speech.speak(utterance);
-  });
+  };
+  const next = (i: number): void => {
+    if (token !== reading) return;
+    const step = plan[i];
+    if (!step) {
+      playing = null;
+      release();
+      return;
+    }
+    const after = once(() => next(i + 1));
+    if (step.file !== undefined) {
+      playFile(step.file, rate, after, () => {
+        if (token === reading) device(step.text, bestVoice(voices, step.lang), after);
+      });
+      return;
+    }
+    device(step.text, step.voice, after);
+  };
+  next(0);
   return true;
 }
 
@@ -91,7 +170,8 @@ export const speak = (text: string, lang: Lang): boolean => speakLines([{ text, 
  */
 export function speakVoiceLine(text: string, lang: Lang, voice: { pitch: number; rate: number }, volume: number, ended: () => void): boolean {
   const speech = synthesis();
-  if (!speech || !readSoundOn() || volume <= 0 || text.trim() === '' || speech.speaking || speech.pending) return false;
+  // `releaseMusic` is set for as long as a reading (a recorded file or the device voice) is under way.
+  if (!speech || !readSoundOn() || volume <= 0 || text.trim() === '' || releaseMusic !== null || speech.speaking || speech.pending) return false;
   const local = bestVoice(speech.getVoices(), lang);
   if (!local) return false;
   const utterance = new SpeechSynthesisUtterance(text);
@@ -142,6 +222,15 @@ export function useSpeakableLangs(): ReadonlySet<Lang> {
   }, []);
   if (!soundOn) return new Set();
   return new Set((['vi', 'en'] as const).filter((lang) => bestVoice(voices, lang) !== null));
+}
+
+/** Whether a line can be read now: a recorded file of it or an on-device voice of its language, with the sound on. */
+export function useReadable(): (line: SpokenLine) => boolean {
+  const speakable = useSpeakableLangs();
+  const [soundOn, setSoundOn] = useState(readSoundOn);
+  useEffect(() => onSoundSettingChange(() => setSoundOn(readSoundOn())), []);
+  useRecordedVoices();
+  return (line) => soundOn && (speakable.has(line.lang) || (line.lang === 'vi' && recordedVoiceUrl(line.text) !== null));
 }
 
 // Switching the sound off stops a reading under way.
