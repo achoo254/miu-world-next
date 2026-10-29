@@ -27,7 +27,7 @@ import { buttonClass } from '../kit/button';
 import { SkyScene } from '../kit/sky-scene';
 import { findRegion } from '../region/regions';
 import { isFreshCharacter } from './fresh-character';
-import { OPEN_SLOTS, equip, isOpen, itemArtUrl, itemsForSlot, lockText, slotHasNone, wornInSlot, type OpenSlot } from './creator-outfit';
+import { OPEN_SLOTS, equip, isOpen, outfitForSpecies, itemArtUrl, itemsForSlot, lockText, slotHasNone, wornInSlot, type OpenSlot } from './creator-outfit';
 import './creator.css';
 
 const NAMES: readonly string[] = (characterNames as { names: string[] }).names;
@@ -410,6 +410,14 @@ export function CreatorScreen() {
   // Null until the child picks an animal on the first step.
   const [species, setSpecies] = useState<string | null>(null);
   const [draft, setDraft] = useState<Draft | null>(null);
+  /** The animal the draft outfit was put together on: the saved one, then each one picked. */
+  const [dressedAs, setDressedAs] = useState<string | null>(null);
+  const pickSpecies = (next: string): void => {
+    const from = dressedAs ?? data?.character.species;
+    if (draft && from !== undefined && next !== from) setDraft({ ...draft, equipped: outfitForSpecies(draft.equipped, next) });
+    setDressedAs(next);
+    setSpecies(next);
+  };
 
   useEffect(() => {
     let live = true;
@@ -444,7 +452,7 @@ export function CreatorScreen() {
               <T k="common.loading" />
             </p>
           ) : null}
-          {data && species === null ? <SpeciesStep current={data.character.species} switching={!isFreshCharacter(data.character)} onPick={setSpecies} /> : null}
+          {data && species === null ? <SpeciesStep current={data.character.species} switching={!isFreshCharacter(data.character)} onPick={pickSpecies} /> : null}
           {data && draft && species !== null ? (
             <OutfitStep data={data} store={store} species={species} draft={draft} onDraft={setDraft} onChangeSpecies={() => setSpecies(null)} />
           ) : null}

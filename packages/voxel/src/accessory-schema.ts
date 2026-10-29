@@ -106,6 +106,11 @@ export const accessorySchema = z
     /** Name the child reads in the Character Creator. */
     name: z.string().min(1),
     slot: z.enum(ACCESSORY_SLOTS),
+    /**
+     * The animal the item is styled after (a cat-ear hat: `cat`), a species id of content/species.json. Taken off
+     * when the character becomes another animal; colour variants share it.
+     */
+    theme: itemId.optional(),
     unlock: unlockSchema.optional(),
     attachNode: z.string().min(1),
     /** Also worn mirrored (x → -x) on the paired limb (`MIRRORED_NODES`): shoes, gloves. Boxes only. */

@@ -32,6 +32,19 @@ export function wornInSlot(equipped: readonly string[], slot: OpenSlot, species:
   return chosen ?? (slot === 'clothes' ? (characterForSpecies(species).clothes ?? null) : null);
 }
 
+/**
+ * What stays on when the character becomes `species`: her clothes go back to the new animal's own (a cat's dress does
+ * not carry over to the fox) and items styled after another animal come off; every other item stays on.
+ */
+export function outfitForSpecies(equipped: readonly string[], species: string): string[] {
+  return equipped.filter((id) => {
+    const item = ACCESSORIES.get(id);
+    if (!item) return true;
+    if (item.slot === 'clothes') return false;
+    return item.def.theme === undefined || item.def.theme === species;
+  });
+}
+
 /** Open items first, then by level, then the shop's, then the region chests', then the awards, then quest-locked ones. */
 export function itemsForSlot(slot: OpenSlot): AccessoryItem[] {
   const rank = (item: AccessoryItem): number =>
