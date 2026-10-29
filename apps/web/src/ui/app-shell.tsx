@@ -9,6 +9,7 @@ import { AccountProvider, useAccount } from './account/account-context';
 import { ConsentScreen } from './account/consent-screen';
 import { stopSpeaking } from './dialogue/speech';
 import { BackToGame } from './system/back-to-game';
+import { RotateOverlay } from './system/rotate-overlay';
 import { bindLangProfile, type TextKey } from './i18n/i18n';
 import { T } from './i18n/use-t';
 import { ParentAreaScreen } from './account/parent-area-screen';
@@ -177,6 +178,7 @@ export function AppRoutes() {
     <>
       <LanguageAndSpeech />
       <PageViews />
+      <RotateOverlay />
       <Routes>
         <Route path="/" element={<WithMusic mood="home"><LandingOrStart /></WithMusic>} />
         <Route path="/login" element={<WithMusic mood="home"><SignedOutOnly><LoginScreen /></SignedOutOnly></WithMusic>} />

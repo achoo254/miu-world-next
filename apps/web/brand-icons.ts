@@ -45,14 +45,14 @@ export function iconFor(brand: BrandConfig, purpose: 'favicon' | 'apple-touch'):
 }
 
 /**
- * The web manifest of the fullscreen game (any orientation, no `id`/`categories`): the manifest browsers install is
+ * The web manifest of the fullscreen game (landscape only, no `id`/`categories`): the manifest browsers install is
  * the one the game served before the brand config existed. `url` maps an icon's manifest path to its address.
  */
 export function webManifestOptions(brand: BrandConfig, url: (file: string) => string): WebManifestOptions {
   return {
     lang: 'vi',
     display: 'fullscreen',
-    orientation: 'any',
+    orientation: 'landscape',
     themeColor: 'theme',
     icons: rasterIcons(brand)
       .filter((icon) => icon.purpose === 'any' || icon.purpose === 'maskable')
