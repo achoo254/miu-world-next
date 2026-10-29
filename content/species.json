@@ -30,5 +30,13 @@
     "outfit": "vest-shorts",
     "parts": { "ears": "bear", "eyes": { "id": "big", "offset": [0, 2, 0] }, "muzzle": "round", "mouth": "big-nose", "cheeks": { "id": "blush", "offset": [-1, 0, 0] }, "tail": "stub" },
     "palette": { "fur": "#a8693a", "fur-shade": "#8c552c", "chest": "#ecc79c", "paw": "#a8693a", "foot": "#a8693a", "muzzle": "#ecc79c", "ear-inner": "#e3b686", "ear-tip": "#a8693a", "eye": "#2f2130", "shine": "#ffffff", "nose": "#3b2432", "mouth": "#6b3a2a", "tongue": "#f47a98", "tooth": "#ffffff", "cheek": "#f3a0a0", "whisker": "#6b3a2a" }
+  },
+  "dragon": {
+    "name": "Rồng",
+    "trait": "Mạnh mẽ, tốt bụng",
+    "base": "chibi",
+    "outfit": "overalls",
+    "parts": { "ears": "dragon", "eyes": { "id": "big", "offset": [0, 2, 0] }, "muzzle": "dragon", "mouth": "dragon-smile", "cheeks": { "id": "blush", "offset": [1, 0, 0] }, "tail": "dragon" },
+    "palette": { "fur": "#6cc56a", "fur-shade": "#4fa652", "chest": "#ffe7a3", "paw": "#6cc56a", "foot": "#6cc56a", "muzzle": "#b8ecb0", "ear-inner": "#ff9f43", "ear-tip": "#fff3cf", "eye": "#2f2130", "shine": "#ffffff", "nose": "#2f6b3a", "mouth": "#7a3b2e", "tongue": "#f47a98", "tooth": "#ffffff", "cheek": "#ffb3a7", "whisker": "#4fa652" }
   }
 }

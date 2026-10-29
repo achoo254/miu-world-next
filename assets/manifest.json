@@ -24006,6 +24006,16 @@
       "bytes": 172124
     },
     {
+      "path": "generated/characters/dragon.glb",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/kitbash-character.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters"
+      ],
+      "sha256": "e1fce4433fb9aee5562e9ffa5f84aee3d54e5e0d8b69ad5d5712d61f32b14eb5",
+      "bytes": 195908
+    },
+    {
       "path": "generated/characters/fox.glb",
       "license": "CC0-1.0",
       "generator": "tools/assets/kitbash-character.ts",
@@ -32754,6 +32764,134 @@
       ],
       "sha256": "0f59bad07893312731d0c64dbd06ac8838ea191195e96e67e25f4cfa77b9518a",
       "bytes": 3932
+    },
+    {
+      "path": "generated/review/character/dragon-anim-cheer.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "b65bf38124a892aeae73c96d3e65368133c78e5e21ba142f391bddbbcbff156c",
+      "bytes": 5581
+    },
+    {
+      "path": "generated/review/character/dragon-anim-idle.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "9cec993b2f609c6f8d5813af846e20b133bf4ed7553acf5ab1434a33865004b6",
+      "bytes": 5757
+    },
+    {
+      "path": "generated/review/character/dragon-anim-wave.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "47d0dc1d36c9d58488b21409897e0c6c33da414650a980c5a60d9dfe763b63fb",
+      "bytes": 6330
+    },
+    {
+      "path": "generated/review/character/dragon-gameplay-camera.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "815333fa57322bf32fe18996ba3ac358ce35fe1fc493df7d2b5c0975f82fe647",
+      "bytes": 6962
+    },
+    {
+      "path": "generated/review/character/dragon-turn-0.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "ce7b9cb68a223df2e0143cac81bd1c43c9d541304899b37a06efddde5c5e2948",
+      "bytes": 5135
+    },
+    {
+      "path": "generated/review/character/dragon-turn-180.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "de9b8b5c33d3bccbbefec8074210d5e50e39ac7dca5588231c505e6bc8e9f377",
+      "bytes": 4051
+    },
+    {
+      "path": "generated/review/character/dragon-turn-315.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "097b4c53c9efc7ce0ec2765a7756382d171c55632c68c722077bf8895215363f",
+      "bytes": 10722
+    },
+    {
+      "path": "generated/review/character/dragon-turn-90.png",
+      "license": "CC0-1.0",
+      "generator": "tools/assets/render-preview.ts",
+      "derivedFrom": [
+        "kenney-blocky-characters",
+        "kenney-cube-pets",
+        "kenney-voxel-pack",
+        "kenney-nature-kit",
+        "kenney-survival-kit",
+        "kenney-food-kit",
+        "kenney-castle-kit"
+      ],
+      "sha256": "e5ebca53d06f190cf32bec9d4d6d0f13c7d9b6aab2a850218f3add106fd1d7b3",
+      "bytes": 5268
     },
     {
       "path": "generated/review/character/fox-anim-cheer.png",

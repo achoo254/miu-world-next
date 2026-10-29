@@ -5,5 +5,9 @@
   ] },
   "round": { "joint": "head", "boxes": [
     { "x": -5, "y": 1, "z": 10, "w": 10, "h": 7, "d": 1, "color": "muzzle" }
+  ] },
+  "dragon": { "joint": "head", "boxes": [
+    { "x": -7, "y": 1, "z": 10, "w": 14, "h": 8, "d": 3, "color": "muzzle" },
+    { "x": -6, "y": 9, "z": 10, "w": 12, "h": 1, "d": 2, "color": "muzzle" }
   ] }
 }

@@ -83,6 +83,27 @@
       "cheer"
     ]
   },
+  "dragon": {
+    "output": "generated/characters/dragon.glb",
+    "rig": "packs/kenney-blocky-characters/2.0/character-a.glb",
+    "recipe": {
+      "species": "dragon",
+      "outfit": "underlayer"
+    },
+    "clothes": "clothes-overalls",
+    "torsoScale": 0.8333,
+    "limbScale": 0.5,
+    "accessoryScale": {
+      "head": 1.3,
+      "torso": 0.8
+    },
+    "extraAnimations": [
+      "wave",
+      "jump",
+      "yawn",
+      "cheer"
+    ]
+  },
   "npc-cat-trang-dress": {
     "output": "generated/characters/npc-cat-trang-dress.glb",
     "role": "npc",

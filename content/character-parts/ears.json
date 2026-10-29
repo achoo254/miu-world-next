@@ -25,5 +25,14 @@
     { "x": 7, "y": 22, "z": -2, "w": 5, "h": 4, "d": 4, "color": "fur", "sym": true },
     { "x": 8, "y": 26, "z": -2, "w": 3, "h": 1, "d": 4, "color": "fur", "sym": true },
     { "x": 8, "y": 22, "z": 2, "w": 3, "h": 3, "d": 1, "color": "ear-inner", "sym": true }
+  ] },
+  "dragon": { "joint": "head", "boxes": [
+    { "x": 6, "y": 22, "z": -3, "w": 3, "h": 3, "d": 3, "color": "ear-tip", "sym": true },
+    { "x": 7, "y": 25, "z": -4, "w": 2, "h": 3, "d": 2, "color": "ear-tip", "sym": true },
+    { "x": 7, "y": 28, "z": -6, "w": 2, "h": 2, "d": 2, "color": "ear-tip", "sym": true },
+    { "x": 13, "y": 11, "z": -4, "w": 2, "h": 6, "d": 5, "color": "ear-inner", "sym": true },
+    { "x": 15, "y": 12, "z": -3, "w": 1, "h": 4, "d": 3, "color": "ear-inner", "sym": true },
+    { "x": -1, "y": 22, "z": 1, "w": 2, "h": 2, "d": 3, "color": "ear-inner" },
+    { "x": -1, "y": 22, "z": -4, "w": 2, "h": 3, "d": 3, "color": "ear-inner" }
   ] }
 }
