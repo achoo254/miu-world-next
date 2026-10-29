@@ -67,6 +67,13 @@ describe('runtime asset selection for the web build', async () => {
     expect(release).not.toContain('generated/review/perf.json');
   });
 
+  it('ships the recorded voice lines and their index in a release, which the Listen button plays', async () => {
+    const release = await runtimeAssetPaths(ASSETS_DIR, manifest, UI_ART_PATHS, { review: false });
+    const voice = release.filter((p) => p.startsWith('generated/voice/'));
+    expect(voice).toContain('generated/voice/index.json');
+    expect(voice.length).toBe(manifest.filter((p) => p.startsWith('generated/voice/')).length);
+  });
+
   it('ships the link-preview cards in a release, which the pages\' Open Graph tags point at', async () => {
     const release = await runtimeAssetPaths(ASSETS_DIR, manifest, UI_ART_PATHS, { review: false });
     const cards = release.filter((p) => p.startsWith('generated/share-cards/'));
