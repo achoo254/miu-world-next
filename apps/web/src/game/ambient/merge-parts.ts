@@ -6,6 +6,9 @@
 import { Matrix4, SkinnedMesh, Skeleton, BufferAttribute, type Bone, type BufferGeometry, type Material, type Mesh, type Object3D } from 'three';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 
+/** Name of each merged mesh: it is the model copy's own, to dispose when the copy goes. */
+export const MERGED_NAME = 'merged-parts';
+
 /** Layer no camera renders: the part meshes still move (as bones) but are drawn only through the merge. */
 const HIDDEN_LAYER = 31;
 
@@ -39,7 +42,7 @@ export function mergeParts(model: Object3D, shadows: boolean): SkinnedMesh[] {
     const geometry = mergeGeometries(geometries, false);
     if (!geometry) continue;
     const mesh = new SkinnedMesh(geometry, material);
-    mesh.name = 'merged-parts';
+    mesh.name = MERGED_NAME;
     mesh.castShadow = shadows;
     mesh.receiveShadow = shadows;
     model.add(mesh);

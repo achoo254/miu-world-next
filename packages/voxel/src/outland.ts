@@ -4,6 +4,7 @@
 // functions the tools test), so no file of it is stored. `entities.json` carries what that needs (`outland`).
 import { z } from 'zod';
 import { REGION_BLOCKS } from './region-format';
+import { TOWNSFOLK_LETTERS, townsfolk } from './townsfolk';
 
 /** The whole world of every map, in blocks (the core sits at 0..size inside): 45 x 45 regions of 128. */
 export const OUTLAND_BOUNDS = { x0: -19 * REGION_BLOCKS, z0: -19 * REGION_BLOCKS, x1: 26 * REGION_BLOCKS, z1: 26 * REGION_BLOCKS } as const;
@@ -62,7 +63,6 @@ export function inCore(size: readonly [number, number, number], x: number, z: nu
   return x >= 0 && z >= 0 && x < size[0] && z < size[2];
 }
 
-const PEOPLE = 'packs/kenney-blocky-characters/2.0';
 const PETS = 'packs/kenney-cube-pets/2.0';
 const NATURE = 'packs/kenney-nature-kit/2.1';
 const SURVIVAL = 'packs/kenney-survival-kit/2.0';
@@ -73,7 +73,7 @@ const PROPS = 'generated/props';
  * model's; the tools measure each one's scale from there into `spec.models`, so the game needs no model bounds.
  */
 export const OUTLAND_MODELS: readonly string[] = [
-  ...'abcdefghijklmnopqr'.split('').map((k) => `${PEOPLE}/character-${k}.glb`),
+  ...TOWNSFOLK_LETTERS.split('').map(townsfolk),
   `${PETS}/animal-cow.glb`,
   `${PETS}/animal-pig.glb`,
   `${PETS}/animal-dog.glb`,

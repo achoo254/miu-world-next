@@ -3,6 +3,7 @@
 // are hidden and frozen) so the draw-call budget holds; villagers answer each other; the child can
 // tap one to chat or pet it. Nothing here talks to the server: ambient life never rewards anything.
 import { AnimationMixer, Box3, BoxGeometry, Group, Mesh, MeshLambertMaterial, Vector3, type AnimationAction, type AnimationClip, type Camera, type Object3D, type SkinnedMesh } from 'three';
+import { clone as cloneModel } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import { freshPicker, type FreshPicker } from '@miu/quest/pick-fresh';
 import type { Ambient } from '@miu/voxel/world-entities';
 import type { GuardedGltfLoader } from '../asset-loader';
@@ -13,7 +14,7 @@ import { AMBIENT_LINES } from './ambient-lines';
 import { AMBIENT_LINES_EN } from './ambient-lines-en';
 import { applyPose, applyWings, findPoseParts, resetPose, wingBob, type PoseParts } from './ambient-poses';
 import { ROUTINES } from './ambient-routines';
-import { mergeParts } from './merge-parts';
+import { MERGED_NAME, mergeParts } from './merge-parts';
 import type { Vec3 } from './ambient-types';
 import { createSpeechBubble } from './speech-bubble';
 
@@ -52,10 +53,13 @@ const VISIT_SECONDS = 6;
 /** How long cheering bubbles may show even beside a quest target (seconds). */
 const CHEER_SECONDS = 4;
 const CLIP_FADE = 0.25;
-/** Length of each held item in the model's own units (a Blocky character is 2.7 tall). */
+/** Length of each held item in the model's own units (a townsfolk character is about 2.65 tall). */
 const HELD_LENGTH: Readonly<Record<string, number>> = { axe: 1.7, hoe: 2, bucket: 0.8, wood: 1, fish: 0.9, carrot: 0.7, spoon: 1 };
-/** Hand of a Blocky character, in the right arm's own frame. */
-const HAND: Vec3 = [-0.2, -0.95, 0.05];
+/**
+ * Hand of a townsfolk character (an animal of the character library, packages/voxel townsfolk.ts), in the right
+ * arm's own frame: the rig's hand at 0.95 below the shoulder, on an arm built at half its length.
+ */
+const HAND: Vec3 = [-0.2, -0.475, 0.05];
 /** Held items built in code because no pack has one. */
 const BUILT_ROD = 'built:fishing-rod';
 
@@ -137,12 +141,18 @@ async function buildHeld(loader: GuardedGltfLoader, model: string): Promise<Obje
 
 async function buildVisual(loader: GuardedGltfLoader, def: Ambient, shadows: boolean): Promise<Visual> {
   const gltf = await loader.load(def.model);
-  // The loader shares one scene per model; several bunnies need their own copies (node animation, no skins).
-  const model = gltf.scene.clone(true);
+  // The loader shares one scene per model; several bunnies or villagers need their own copies, a villager's
+  // skin bound to its own copy of the bones (SkeletonUtils), else every copy would follow the first one.
+  const model = cloneModel(gltf.scene);
   model.scale.setScalar(def.scale);
   // Bounds before the parts leave the render layer (the merged skin has no static bounds).
   const bounds = new Box3().setFromObject(model);
-  mergeParts(model, shadows);
+  // A villager is one skinned mesh already (nothing to merge): it casts its shadow as it is.
+  if (mergeParts(model, shadows).length === 0) {
+    model.traverse((o) => {
+      if ((o as Mesh).isMesh) o.castShadow = shadows;
+    });
+  }
   const parts = findPoseParts(model);
   const held: Object3D[] = [];
   for (const item of def.held ?? []) {
@@ -262,7 +272,7 @@ export async function loadAmbientLife(loader: GuardedGltfLoader, ambients: reado
     });
     return member.building;
   };
-  /** Lets a far member's model go (its merged skin is its own; the pack's meshes stay cached). */
+  /** Lets a far member's model go (its merged skin is its own; the model's own meshes stay cached). */
   const releaseVisual = (member: Member): void => {
     const visual = member.visual;
     if (!visual) return;
@@ -271,7 +281,7 @@ export async function loadAmbientLife(loader: GuardedGltfLoader, ambients: reado
     group.remove(visual.root);
     visual.mixer?.stopAllAction();
     visual.root.traverse((o) => {
-      if ((o as SkinnedMesh).isSkinnedMesh) (o as SkinnedMesh).geometry.dispose();
+      if ((o as SkinnedMesh).isSkinnedMesh && o.name === MERGED_NAME) (o as SkinnedMesh).geometry.dispose();
     });
   };
   // Those round the child at the start are ready before the first frame.

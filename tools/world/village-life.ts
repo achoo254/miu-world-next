@@ -8,6 +8,7 @@
 // the whole map "như ngoài đời thật", not packed in one place).
 import type { VoxelWorld } from '../../packages/voxel/src/chunk-format';
 import type { Ambient, AmbientRoutine } from '../../packages/voxel/src/world-entities';
+import { townsfolk } from '../../packages/voxel/src/townsfolk';
 import { PACK } from './map-kit';
 import { LANE_WIDTH } from './scenery-audit';
 import { createRng } from './noise';
@@ -15,10 +16,8 @@ import { createRng } from './noise';
 /** Quest targets keep this far from any home or work place (as in the forest, forest-life.ts). */
 export const LIFE_CLEARANCE = 5;
 
-const PEOPLE = 'packs/kenney-blocky-characters/2.0';
-
-/** A person model by letter (Kenney Blocky Characters), for a cast list. */
-export const person = (letter: string): string => `${PEOPLE}/character-${letter}.glb`;
+/** A villager's model by look letter (an animal character, townsfolk.ts), for a cast list. */
+export const person = (letter: string): string => townsfolk(letter);
 export const animal = (kind: 'cow' | 'pig' | 'dog' | 'cat' | 'chick' | 'penguin' | 'polar' | 'monkey'): string => `${PACK.pets}/animal-${kind}.glb`;
 
 /** Animals go between two spots (chicks only peck round home and need none). */

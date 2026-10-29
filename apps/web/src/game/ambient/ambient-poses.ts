@@ -2,7 +2,7 @@
 // the rest of the body alive: a villager's arm to the forehead (wiping sweat), both arms up (a
 // stretch), the head turning (looking around), a cup to the mouth, a waving arm, a rod held out and
 // jerked; a bird's wings beating or spread in a glide, a bee's buzzing blur, a dozing animal's breath.
-// Kenney Blocky Characters face +z with arms hanging along −y; Cube Pets wings hinge on z.
+// Townsfolk (on the Kenney Blocky Characters rig) face +z with arms hanging along −y; Cube Pets wings hinge on z.
 import type { Object3D, Vector3 } from 'three';
 import type { Pose, Wings } from './ambient-types';
 

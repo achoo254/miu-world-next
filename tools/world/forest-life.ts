@@ -9,9 +9,9 @@
 // villager spot is a straight, clear walk from home, away from quest targets and off the quest path.
 import type { Ambient, AmbientRoutine } from '../../packages/voxel/src/world-entities';
 import type { VoxelWorld } from '../../packages/voxel/src/chunk-format';
+import { townsfolk } from '../../packages/voxel/src/townsfolk';
 
 export const LIFE_PACK = {
-  people: 'packs/kenney-blocky-characters/2.0',
   pets: 'packs/kenney-cube-pets/2.0',
   survival: 'packs/kenney-survival-kit/2.0',
   nature: 'packs/kenney-nature-kit/2.1',
@@ -19,13 +19,13 @@ export const LIFE_PACK = {
 };
 
 /**
- * The forest's own cast, sized for their roles (content/world/models.json has everyone else's): a
- * grey-bearded woodsman (a), a young helper (f), a grandmother in glasses (i).
+ * The forest's own cast, sized for their roles (content/world/models.json has everyone else's): a tall
+ * woodsman (a), a young helper (f), a grandmother (i).
  */
 export const FOREST_CAST_SIZES: Readonly<Record<string, number>> = {
-  [`${LIFE_PACK.people}/character-a.glb`]: 1.8,
-  [`${LIFE_PACK.people}/character-f.glb`]: 1.3,
-  [`${LIFE_PACK.people}/character-i.glb`]: 1.65,
+  [townsfolk('a')]: 1.8,
+  [townsfolk('f')]: 1.3,
+  [townsfolk('i')]: 1.65,
 };
 
 export interface ForestLifeMap {
@@ -145,7 +145,7 @@ export function placeForestLife(map: ForestLifeMap): Ambient[] {
   const table = spot(map.spawn.x - 6, map.spawn.z - 2, { from: cookSpot });
   const seatCell = spot(fire.x - 3, fire.z + 3, { from: cookSpot });
   map.addProp(`${P.nature}/stump_round.glb`, seatCell.x - 1, seatCell.z, 0);
-  add('bac-nau-an', 'cook', 'Bà Bếp', `${P.people}/character-i.glb`, cookHome, 90, {
+  add('bac-nau-an', 'cook', 'Bà Bếp', townsfolk('i'), cookHome, 90, {
     fire: at(cookSpot),
     pot: at(fire),
     table: at(table),
@@ -156,7 +156,7 @@ export function placeForestLife(map: ForestLifeMap): Ambient[] {
   map.addProp(`${P.nature}/log_stack.glb`, pileCell.x - 1, pileCell.z, 90);
   const carrierHome = spot(pileCell.x + 1, pileCell.z - 1, { from: cookSpot });
   const carrierFire = spot(fire.x + 1, fire.z - 1, { from: carrierHome });
-  add('be-ganh-cui', 'firewood-carrier', 'Bé Tí', `${P.people}/character-f.glb`, carrierHome, 45, {
+  add('be-ganh-cui', 'firewood-carrier', 'Bé Tí', townsfolk('f'), carrierHome, 45, {
     pile: at(pileCell),
     stack: at({ x: pileCell.x - 1, z: pileCell.z }),
     fire: at(carrierFire),
@@ -168,7 +168,7 @@ export function placeForestLife(map: ForestLifeMap): Ambient[] {
   const stumpCell = spot(woodHome.x + 2, woodHome.z + 2, { from: woodHome });
   map.addProp(`${P.nature}/stump_round.glb`, stumpCell.x, stumpCell.z + 1, 0);
   const logs = spot(pileCell.x + 2, pileCell.z + 2, { from: chop });
-  add('bac-tieu-phu', 'woodcutter', 'Bác Tiều phu', `${P.people}/character-a.glb`, woodHome, 270, {
+  add('bac-tieu-phu', 'woodcutter', 'Bác Tiều phu', townsfolk('a'), woodHome, 270, {
     tree: at(chop),
     trunk: [tx + 0.5, surface(tx, tz) + 1.5, tz + 0.5],
     logs: at(logs),
@@ -188,7 +188,7 @@ export function placeForestLife(map: ForestLifeMap): Ambient[] {
   }
   const gardenHome = spot(bed.x - 2, bed.z + 2);
   const rows = [0, 1, 2].map((i) => spot(bed.x + i, bed.z + 1, { from: gardenHome }));
-  add('co-lam-vuon', 'gardener', 'Cô Làm vườn', `${P.people}/character-e.glb`, gardenHome, 180, {
+  add('co-lam-vuon', 'gardener', 'Cô Làm vườn', townsfolk('e'), gardenHome, 180, {
     'row-a': at(rows[0] ?? gardenHome),
     'row-b': at(rows[1] ?? gardenHome),
     'row-c': at(rows[2] ?? gardenHome),
@@ -209,7 +209,7 @@ export function placeForestLife(map: ForestLifeMap): Ambient[] {
   const bankZ = Math.floor(map.riverCenter(fishX) - map.riverHalfWidth(fishX)) - 1;
   const bank = spot(fishX, bankZ, { maxRing: 4, ground: world.get(fishX, surface(fishX, bankZ), bankZ) });
   const fisherHome = spot(bank.x - 2, bank.z - 2, { from: bank });
-  add('chu-cau-ca', 'fisher', 'Chú Câu cá', `${P.people}/character-m.glb`, fisherHome, 0, {
+  add('chu-cau-ca', 'fisher', 'Chú Câu cá', townsfolk('m'), fisherHome, 0, {
     bank: at(bank),
     water: [fishX + 0.5, map.waterLevel + 1, fishZ + 0.5],
   }, { held: ['built:fishing-rod', `${P.survival}/fish.glb`] });
@@ -291,14 +291,14 @@ export function placeForestLife(map: ForestLifeMap): Ambient[] {
     const { pool, camp, fire, table } = map.scene;
     const anglerBank = spot(Math.round(pool.x - pool.r - 1), pool.z, { maxRing: 5 });
     const anglerHome = spot(anglerBank.x - 3, anglerBank.z - 1, { from: anglerBank });
-    add('ong-cau-ca-thac', 'fisher', 'Ông Câu cá', `${P.people}/character-n.glb`, anglerHome, 90, {
+    add('ong-cau-ca-thac', 'fisher', 'Ông Câu cá', townsfolk('n'), anglerHome, 90, {
       bank: at(anglerBank),
       water: [pool.x + 0.5, map.waterLevel + 1, pool.z + 0.5],
     }, { held: ['built:fishing-rod', `${P.survival}/fish.glb`] });
 
     const campCookHome = spot(fire.x - 2, fire.z + 2);
     const campCookAt = spot(fire.x + 1, fire.z + 2, { from: campCookHome });
-    add('co-nau-bep-trai', 'cook', 'Cô Nấu bếp trại', `${P.people}/character-l.glb`, campCookHome, 0, {
+    add('co-nau-bep-trai', 'cook', 'Cô Nấu bếp trại', townsfolk('l'), campCookHome, 0, {
       fire: at(campCookAt),
       pot: at(fire),
       table: at(spot(table.x, table.z, { from: campCookAt })),
@@ -312,7 +312,7 @@ export function placeForestLife(map: ForestLifeMap): Ambient[] {
     map.addProp(`${P.nature}/stump_round.glb`, cutterStump.x, cutterStump.z + 1, 30);
     const cutterLogs = spot(cutterHome.x - 2, cutterHome.z + 2, { from: cutterChop });
     map.addProp(`${P.nature}/log_stack.glb`, cutterLogs.x - 1, cutterLogs.z, 0);
-    add('chu-tieu-phu-lam', 'woodcutter', 'Chú Tiều phu Lâm', `${P.people}/character-g.glb`, cutterHome, 270, {
+    add('chu-tieu-phu-lam', 'woodcutter', 'Chú Tiều phu Lâm', townsfolk('g'), cutterHome, 270, {
       tree: at(cutterChop),
       trunk: [cx + 0.5, surface(cx, cz) + 1.5, cz + 0.5],
       logs: at(cutterLogs),

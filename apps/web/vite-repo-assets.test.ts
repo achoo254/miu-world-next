@@ -20,8 +20,8 @@ describe('runtime asset selection for the web build', async () => {
       'generated/atlas/atlas.png',
       'generated/characters/miu-cat.glb',
       'packs/kenney-cube-pets/2.0/animal-parrot.glb',
-      // Forest life: a villager, an animal, and the axe the woodcutter holds.
-      'packs/kenney-blocky-characters/2.0/character-a.glb',
+      // Forest life: a villager (an animal of the character library), an animal, and the axe the woodcutter holds.
+      'generated/characters/npc-cat-cam-overalls.glb',
       'packs/kenney-cube-pets/2.0/animal-bunny.glb',
       'packs/kenney-survival-kit/2.0/tool-axe.glb',
       'packs/font-baloo-2/5.3.0/baloo-2-vietnamese-700.woff2',
@@ -46,6 +46,8 @@ describe('runtime asset selection for the web build', async () => {
     const packFiles = (paths: readonly string[]) => paths.filter((p) => p.startsWith('packs/'));
     expect(packFiles(shipped).length).toBeLessThan(packFiles(manifest).length / 4);
     expect(shipped).not.toContain('packs/kenney-castle-kit/2.0/siege-catapult.glb');
+    // No map places a human figure: the Blocky Characters pack is only the rig the animal characters are built on.
+    expect(shipped.filter((p) => p.startsWith('packs/kenney-blocky-characters/'))).toEqual([]);
     expect(shipped.every((p) => manifest.includes(p))).toBe(true);
   });
 

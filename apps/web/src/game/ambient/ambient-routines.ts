@@ -2,7 +2,7 @@
 // with small in-between beats (wiping sweat, stretching, looking around) so no two minutes look the
 // same; the actor never picks the same chore twice in a row. Spot names are the ones the map
 // generator writes in `spots`; `held` indices follow the map's `held` list for that character.
-// Clips: people use Kenney Blocky Characters clips, animals Kenney Cube Pets clips.
+// Clips: people use the Kenney Blocky Characters rig's clips (townsfolk share it), animals Kenney Cube Pets clips.
 import type { AmbientRoutine } from '@miu/voxel/world-entities';
 import type { Beat, Chore, RoutineSpec } from './ambient-types';
 import { EVERYDAY_ROUTINES } from './everyday-routines';

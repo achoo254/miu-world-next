@@ -12,13 +12,13 @@ import {
   coreDistance, drawTree, fieldAt, forEachTree, RAIL, ROAD, ROAD_HALF, roadDistance, sampleColumn, structureExtent, WATER,
   type Clearing, type ColumnSample, type Field, type OutlandPlan, type Structure, type Village,
 } from './outland-plan';
+import { townsfolk } from './townsfolk';
 import type { Ambient, AmbientRoutine, Interactable, WorldEntities } from './world-entities';
 
 type Prop = WorldEntities['props'][number];
 type Landmark = WorldEntities['landmarks'][number];
 type Vec3 = [number, number, number];
 
-const PEOPLE = 'packs/kenney-blocky-characters/2.0';
 const PETS = 'packs/kenney-cube-pets/2.0';
 const NATURE = 'packs/kenney-nature-kit/2.1';
 const SURVIVAL = 'packs/kenney-survival-kit/2.0';
@@ -339,7 +339,7 @@ class Life {
   person(routine: AmbientRoutine, name: string, held: readonly string[], anchor: readonly [number, number], ring = 10, facing?: readonly [number, number]): boolean {
     const letters = LOOKS_BY_TITLE[name.split(' ')[0] ?? ''] ?? ['a'];
     const letter = this.pick(letters) ?? 'a';
-    return this.resident(routine, name, `${PEOPLE}/character-${letter}.glb`, held, anchor, ring, facing);
+    return this.resident(routine, name, townsfolk(letter), held, anchor, ring, facing);
   }
 
   animal(kind: AnimalKind, name: string, anchor: readonly [number, number], ring = 10): boolean {

@@ -170,126 +170,126 @@
    "animation": "idle"
   },
   "person-a": {
-   "model": "packs/kenney-blocky-characters/2.0/character-a.glb",
+   "model": "generated/characters/npc-cat-cam-overalls.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-b": {
-   "model": "packs/kenney-blocky-characters/2.0/character-b.glb",
+   "model": "generated/characters/npc-rabbit-trang-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-c": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-d": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-e": {
-   "model": "packs/kenney-blocky-characters/2.0/character-e.glb",
+   "model": "generated/characters/npc-cat-trang-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-f": {
-   "model": "packs/kenney-blocky-characters/2.0/character-f.glb",
+   "model": "generated/characters/npc-rabbit-nau-dress-blue.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-g": {
-   "model": "packs/kenney-blocky-characters/2.0/character-g.glb",
+   "model": "generated/characters/npc-fox-do-jacket-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-h": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-i": {
-   "model": "packs/kenney-blocky-characters/2.0/character-i.glb",
+   "model": "generated/characters/npc-cat-xam-dress-mint.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-j": {
-   "model": "packs/kenney-blocky-characters/2.0/character-j.glb",
+   "model": "generated/characters/npc-rabbit-xam-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-k": {
-   "model": "packs/kenney-blocky-characters/2.0/character-k.glb",
+   "model": "generated/characters/npc-fox-tuyet-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-l": {
-   "model": "packs/kenney-blocky-characters/2.0/character-l.glb",
+   "model": "generated/characters/npc-bear-mat-ong-jacket.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-m": {
-   "model": "packs/kenney-blocky-characters/2.0/character-m.glb",
+   "model": "generated/characters/npc-cat-trang-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-n": {
-   "model": "packs/kenney-blocky-characters/2.0/character-n.glb",
+   "model": "generated/characters/npc-rabbit-trang-vest-shorts.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-o": {
-   "model": "packs/kenney-blocky-characters/2.0/character-o.glb",
+   "model": "generated/characters/npc-fox-cam-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-p": {
-   "model": "packs/kenney-blocky-characters/2.0/character-p.glb",
+   "model": "generated/characters/npc-bear-nau-vest-shorts.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-q": {
-   "model": "packs/kenney-blocky-characters/2.0/character-q.glb",
+   "model": "generated/characters/npc-cat-cam-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-r": {
-   "model": "packs/kenney-blocky-characters/2.0/character-r.glb",
+   "model": "generated/characters/npc-rabbit-nau-jacket.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -2003,44 +2003,39 @@
    "tint": "#a8785a"
   },
   "person-o-co-nan-to-he": {
-   "model": "packs/kenney-blocky-characters/2.0/character-o.glb",
+   "model": "generated/characters/npc-fox-cam-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d84878"
+   "animation": "idle"
   },
   "person-p-chu-ban-banh-kem": {
-   "model": "packs/kenney-blocky-characters/2.0/character-p.glb",
+   "model": "generated/characters/npc-bear-nau-vest-shorts.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#48a8c8"
+   "animation": "idle"
   },
   "person-q-bac-thu-ngan-vui-ve": {
-   "model": "packs/kenney-blocky-characters/2.0/character-q.glb",
+   "model": "generated/characters/npc-cat-cam-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#488848"
+   "animation": "idle"
   },
   "person-r-anh-lai-xe-dung": {
-   "model": "packs/kenney-blocky-characters/2.0/character-r.glb",
+   "model": "generated/characters/npc-rabbit-nau-jacket.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#e85848"
+   "animation": "idle"
   },
   "person-c-chi-tiem-tap-hoa": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#a87858"
+   "animation": "idle"
   },
   "animal-parrot-thuyen-truong-vet-bien": {
    "model": "packs/kenney-cube-pets/2.0/animal-parrot.glb",
@@ -2067,12 +2062,11 @@
    "tint": "#e86828"
   },
   "person-h-bac-quang-luoi-bien": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#387878"
+   "animation": "idle"
   },
   "animal-monkey-khi-nhay-du-dao": {
    "model": "packs/kenney-cube-pets/2.0/animal-monkey.glb",
@@ -2123,84 +2117,74 @@
    "tint": "#a86838"
   },
   "person-h-chu-lai-do-ba": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#4878a8"
+   "animation": "idle"
   },
   "person-d-nghe-nhan-mua-roi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c84858"
+   "animation": "idle"
   },
   "person-e-co-den-long-sen": {
-   "model": "packs/kenney-blocky-characters/2.0/character-e.glb",
+   "model": "generated/characters/npc-cat-trang-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d89858"
+   "animation": "idle"
   },
   "person-j-bac-thoi-com-thi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-j.glb",
+   "model": "generated/characters/npc-rabbit-xam-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#b87838"
+   "animation": "idle"
   },
   "person-k-be-nem-lia-thia": {
-   "model": "packs/kenney-blocky-characters/2.0/character-k.glb",
+   "model": "generated/characters/npc-fox-tuyet-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#389888"
+   "animation": "idle"
   },
   "person-j-hiep-si-guong-soi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-j.glb",
+   "model": "generated/characters/npc-rabbit-xam-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#6878b8"
+   "animation": "idle"
   },
   "person-m-quan-ma-hoang-gia": {
-   "model": "packs/kenney-blocky-characters/2.0/character-m.glb",
+   "model": "generated/characters/npc-cat-trang-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#886848"
+   "animation": "idle"
   },
   "person-q-ngu-lam-quan-thap": {
-   "model": "packs/kenney-blocky-characters/2.0/character-q.glb",
+   "model": "generated/characters/npc-cat-cam-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#a83838"
+   "animation": "idle"
   },
   "person-h-bac-tho-khoa-thanh": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#488868"
+   "animation": "idle"
   },
   "person-d-te-tuong-co-the": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#485888"
+   "animation": "idle"
   },
   "animal-dog-cun-dom-don-nha": {
    "model": "packs/kenney-cube-pets/2.0/animal-dog.glb",
@@ -2219,52 +2203,46 @@
    "tint": "#e88868"
   },
   "person-f-be-gap-giay-vui": {
-   "model": "packs/kenney-blocky-characters/2.0/character-f.glb",
+   "model": "generated/characters/npc-rabbit-nau-dress-blue.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d85898"
+   "animation": "idle"
   },
   "person-d-ong-cu-trong-vuon": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#688848"
+   "animation": "idle"
   },
   "person-b-chu-ro-bot-dong-ho": {
-   "model": "packs/kenney-blocky-characters/2.0/character-b.glb",
+   "model": "generated/characters/npc-rabbit-trang-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#4878c8"
+   "animation": "idle"
   },
   "person-b-bac-nong-dan-thanh": {
-   "model": "packs/kenney-blocky-characters/2.0/character-b.glb",
+   "model": "generated/characters/npc-rabbit-trang-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#887848"
+   "animation": "idle"
   },
   "person-h-chu-dao-kenh-nuoc": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#3888b8"
+   "animation": "idle"
   },
   "person-f-be-chan-ga-con": {
-   "model": "packs/kenney-blocky-characters/2.0/character-f.glb",
+   "model": "generated/characters/npc-rabbit-nau-dress-blue.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#e8b838"
+   "animation": "idle"
   },
   "animal-pig-chu-chuot-tui-nhay": {
    "model": "packs/kenney-cube-pets/2.0/animal-pig.glb",
@@ -2275,12 +2253,11 @@
    "tint": "#b87858"
   },
   "person-g-ong-lao-phao-dat": {
-   "model": "packs/kenney-blocky-characters/2.0/character-g.glb",
+   "model": "generated/characters/npc-fox-do-jacket-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#785838"
+   "animation": "idle"
   },
   "animal-penguin-canh-cut-khuc-con-cau": {
    "model": "packs/kenney-cube-pets/2.0/animal-penguin.glb",
@@ -2323,36 +2300,32 @@
    "tint": "#88a8d8"
   },
   "person-e-co-thu-thu-mai": {
-   "model": "packs/kenney-blocky-characters/2.0/character-e.glb",
+   "model": "generated/characters/npc-cat-trang-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#6858a8"
+   "animation": "idle"
   },
   "person-d-thay-do-chu-han": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#884848"
+   "animation": "idle"
   },
   "person-k-be-me-bang-so": {
-   "model": "packs/kenney-blocky-characters/2.0/character-k.glb",
+   "model": "generated/characters/npc-fox-tuyet-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#389868"
+   "animation": "idle"
   },
   "person-i-chu-tho-dien-nhi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-i.glb",
+   "model": "generated/characters/npc-cat-xam-dress-mint.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d88828"
+   "animation": "idle"
   },
   "animal-cat-meo-hop-nhac": {
    "model": "packs/kenney-cube-pets/2.0/animal-cat.glb",
@@ -2363,28 +2336,25 @@
    "tint": "#e878a8"
   },
   "person-b-bac-lai-xe-hai": {
-   "model": "packs/kenney-blocky-characters/2.0/character-b.glb",
+   "model": "generated/characters/npc-rabbit-trang-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#3878b8"
+   "animation": "idle"
   },
   "person-f-be-xiec-vui-ve": {
-   "model": "packs/kenney-blocky-characters/2.0/character-f.glb",
+   "model": "generated/characters/npc-rabbit-nau-dress-blue.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d87898"
+   "animation": "idle"
   },
   "person-m-chu-do-chu-quang": {
-   "model": "packs/kenney-blocky-characters/2.0/character-m.glb",
+   "model": "generated/characters/npc-cat-trang-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#488858"
+   "animation": "idle"
   },
   "animal-cat-meo-xep-khoi": {
    "model": "packs/kenney-cube-pets/2.0/animal-cat.glb",
@@ -2419,12 +2389,11 @@
    "tint": "#8868c8"
   },
   "person-c-be-chi-huy": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d84848"
+   "animation": "idle"
   },
   "animal-bunny-tho-mang-non": {
    "model": "packs/kenney-cube-pets/2.0/animal-bunny.glb",
@@ -2443,44 +2412,39 @@
    "tint": "#4868a8"
   },
   "person-a-ba-nam-ke-chuyen": {
-   "model": "packs/kenney-blocky-characters/2.0/character-a.glb",
+   "model": "generated/characters/npc-cat-cam-overalls.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#786898"
+   "animation": "idle"
   },
   "person-i-anh-tho-sua-mai": {
-   "model": "packs/kenney-blocky-characters/2.0/character-i.glb",
+   "model": "generated/characters/npc-cat-xam-dress-mint.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#e86838"
+   "animation": "idle"
   },
   "person-l-chi-bong-chuyen-que": {
-   "model": "packs/kenney-blocky-characters/2.0/character-l.glb",
+   "model": "generated/characters/npc-bear-mat-ong-jacket.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c85888"
+   "animation": "idle"
   },
   "person-n-be-danh-cu-son": {
-   "model": "packs/kenney-blocky-characters/2.0/character-n.glb",
+   "model": "generated/characters/npc-rabbit-trang-vest-shorts.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#58a848"
+   "animation": "idle"
   },
   "person-g-ong-bay-co-ganh": {
-   "model": "packs/kenney-blocky-characters/2.0/character-g.glb",
+   "model": "generated/characters/npc-fox-do-jacket-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#687888"
+   "animation": "idle"
   },
   "animal-bunny-tho-ken-la": {
    "model": "packs/kenney-cube-pets/2.0/animal-bunny.glb",
@@ -2560,7 +2524,7 @@
    "tint": "#f0e8e0"
   },
   "person-b-bac-bao-ve-tu": {
-   "model": "packs/kenney-blocky-characters/2.0/character-b.glb",
+   "model": "generated/characters/npc-rabbit-trang-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -2622,7 +2586,7 @@
    "tint": "#5a5a5a"
   },
   "person-a-ba-cu-hai-rau": {
-   "model": "packs/kenney-blocky-characters/2.0/character-a.glb",
+   "model": "generated/characters/npc-cat-cam-overalls.glb",
    "height": 1.8,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -2652,7 +2616,7 @@
    "tint": "#ffd8e0"
   },
   "person-e-chi-thoa-hai-ngo": {
-   "model": "packs/kenney-blocky-characters/2.0/character-e.glb",
+   "model": "generated/characters/npc-cat-trang-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -2723,14 +2687,14 @@
    "tint": "#c09070"
   },
   "person-j-chu-bao-ve-cho": {
-   "model": "packs/kenney-blocky-characters/2.0/character-j.glb",
+   "model": "generated/characters/npc-rabbit-xam-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "person-g-co-ban-hoa-ly": {
-   "model": "packs/kenney-blocky-characters/2.0/character-g.glb",
+   "model": "generated/characters/npc-fox-do-jacket-green.glb",
    "height": 1.85,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -2768,7 +2732,7 @@
    "tint": "#f08040"
   },
   "person-m-bac-nong-dan-ba": {
-   "model": "packs/kenney-blocky-characters/2.0/character-m.glb",
+   "model": "generated/characters/npc-cat-trang-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -2783,7 +2747,7 @@
    "tint": "#f4f0e8"
   },
   "person-k-anh-nong-dan-tu": {
-   "model": "packs/kenney-blocky-characters/2.0/character-k.glb",
+   "model": "generated/characters/npc-fox-tuyet-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -2853,20 +2817,18 @@
    "animation": "idle"
   },
   "person-d-hiep-si-da-gac-cau": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 3,
    "kind": "npc",
    "label": "Thách đấu",
-   "animation": "idle",
-   "tint": "#a8a8b0"
+   "animation": "idle"
   },
   "person-c-linh-go-lac-doan": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.5,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#e88080"
+   "animation": "idle"
   },
   "animal-polar-gau-bong-nhac-truong": {
    "model": "packs/kenney-cube-pets/2.0/animal-polar.glb",
@@ -2877,12 +2839,11 @@
    "tint": "#e8c8a8"
   },
   "person-l-ro-bot-thiec-ti-hon": {
-   "model": "packs/kenney-blocky-characters/2.0/character-l.glb",
+   "model": "generated/characters/npc-bear-mat-ong-jacket.glb",
    "height": 1.3,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c0c8d8"
+   "animation": "idle"
   },
   "animal-bunny-tho-tuyet-mu-len": {
    "model": "packs/kenney-cube-pets/2.0/animal-bunny.glb",
@@ -3207,12 +3168,11 @@
    "tint": "#605850"
   },
   "st-lua-hieu-mui-da-ba-cu-va-luoi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-a.glb",
+   "model": "generated/characters/npc-cat-cam-overalls.glb",
    "height": 1.8,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d8c8b8"
+   "animation": "idle"
   },
   "st-lua-hieu-mui-da-guong-dong": {
    "model": "generated/props/mirror.glb",
@@ -3542,12 +3502,11 @@
    "label": "Đọc bảng"
   },
   "st-do-ba-con-do-may-ba-nuoi-ong": {
-   "model": "packs/kenney-blocky-characters/2.0/character-i.glb",
+   "model": "generated/characters/npc-cat-xam-dress-mint.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c8a048"
+   "animation": "idle"
   },
   "st-do-ba-con-do-may-sap-ong": {
    "model": "packs/kenney-food-kit/2.0/honey.glb",
@@ -3576,12 +3535,11 @@
    "label": "Xem"
   },
   "st-do-ba-con-do-may-be-ti": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#6aa0d8"
+   "animation": "idle"
   },
   "st-do-ba-con-do-may-bang-gio": {
    "model": "packs/kenney-survival-kit/2.0/signpost-single.glb",
@@ -3590,12 +3548,11 @@
    "label": "Đọc bảng"
   },
   "st-do-ba-con-do-may-tho-cau": {
-   "model": "packs/kenney-blocky-characters/2.0/character-k.glb",
+   "model": "generated/characters/npc-fox-tuyet-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#7a9a48"
+   "animation": "idle"
   },
   "st-do-ba-con-do-may-tre-luy": {
    "model": "packs/kenney-nature-kit/2.1/crops_bambooStageA.glb",
@@ -3640,12 +3597,11 @@
    "tint": "#f4f0e8"
   },
   "st-roi-nuoc-tu-meo-be-thuy": {
-   "model": "packs/kenney-blocky-characters/2.0/character-f.glb",
+   "model": "generated/characters/npc-rabbit-nau-dress-blue.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d878a0"
+   "animation": "idle"
   },
   "st-roi-nuoc-tu-meo-roi-teu": {
    "model": "generated/props/nesting-dolls.glb",
@@ -3675,12 +3631,11 @@
    "label": "Xem"
   },
   "st-roi-nuoc-tu-meo-bac-tho-go": {
-   "model": "packs/kenney-blocky-characters/2.0/character-b.glb",
+   "model": "generated/characters/npc-rabbit-trang-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#8a6a40"
+   "animation": "idle"
   },
   "st-roi-nuoc-tu-meo-chau-nuoc": {
    "model": "packs/kenney-survival-kit/2.0/bucket.glb",
@@ -3743,21 +3698,21 @@
    "tint": "#b8743a"
   },
   "st-to-he-rong-dai-ba-cu-ban-cau": {
-   "model": "packs/kenney-blocky-characters/2.0/character-i.glb",
+   "model": "generated/characters/npc-cat-xam-dress-mint.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "st-to-he-rong-dai-anh-cat-toc-dao": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
    "animation": "idle"
   },
   "st-to-he-rong-dai-ong-choi-rom": {
-   "model": "packs/kenney-blocky-characters/2.0/character-m.glb",
+   "model": "generated/characters/npc-cat-trang-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -3785,7 +3740,7 @@
    "tint": "#c8ccd0"
   },
   "st-to-he-rong-dai-chu-gac-thap": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -3805,7 +3760,7 @@
    "tint": "#c89838"
   },
   "st-to-he-rong-dai-be-mit": {
-   "model": "packs/kenney-blocky-characters/2.0/character-f.glb",
+   "model": "generated/characters/npc-rabbit-nau-dress-blue.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -3895,7 +3850,7 @@
    "tint": "#4ab0d8"
   },
   "st-kien-hang-khong-ten-chi-cuu-ho": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -3993,7 +3948,7 @@
    "tint": "#c8b890"
   },
   "st-lua-thom-mat-cuoi-co-trong-ngo": {
-   "model": "packs/kenney-blocky-characters/2.0/character-l.glb",
+   "model": "generated/characters/npc-bear-mat-ong-jacket.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -4083,7 +4038,7 @@
    "tint": "#9a6a3a"
   },
   "st-chuong-dong-tren-may-bac-tho-han-noi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-g.glb",
+   "model": "generated/characters/npc-fox-do-jacket-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -4118,7 +4073,7 @@
    "tint": "#f0e8d0"
   },
   "st-chuong-dong-tren-may-anh-tha-dieu": {
-   "model": "packs/kenney-blocky-characters/2.0/character-k.glb",
+   "model": "generated/characters/npc-fox-tuyet-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
@@ -4343,12 +4298,11 @@
    "tint": "#4a3f5c"
   },
   "st-den-ham-khong-tat-chi-giat-ao": {
-   "model": "packs/kenney-blocky-characters/2.0/character-e.glb",
+   "model": "generated/characters/npc-cat-trang-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d88a9a"
+   "animation": "idle"
   },
   "st-den-ham-khong-tat-ma-mat-tron": {
    "model": "generated/props/t-shirt.glb",
@@ -4884,12 +4838,11 @@
    "label": "Đọc bảng"
   },
   "st-bac-hai-xe-vang-uom-ba-cu-non": {
-   "model": "packs/kenney-blocky-characters/2.0/character-a.glb",
+   "model": "generated/characters/npc-cat-cam-overalls.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c8a878"
+   "animation": "idle"
   },
   "st-bac-hai-xe-vang-uom-tin-thap": {
    "model": "packs/kenney-survival-kit/2.0/signpost-single.glb",
@@ -4923,12 +4876,11 @@
    "tint": "#e8c040"
   },
   "st-bac-hai-xe-vang-uom-co-ve": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d87898"
+   "animation": "idle"
   },
   "st-bac-hai-xe-vang-uom-ruy-bang": {
    "model": "generated/props/ribbon.glb",
@@ -5011,12 +4963,11 @@
    "tint": "#a07040"
   },
   "st-lan-con-dau-lan-giay-bac-trong": {
-   "model": "packs/kenney-blocky-characters/2.0/character-l.glb",
+   "model": "generated/characters/npc-bear-mat-ong-jacket.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#b8b8c8"
+   "animation": "idle"
   },
   "st-lan-con-dau-lan-giay-trong-cai": {
    "model": "packs/kenney-survival-kit/2.0/barrel.glb",
@@ -5052,12 +5003,11 @@
    "label": "Xem"
   },
   "st-lan-con-dau-lan-giay-co-boi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#78b8a8"
+   "animation": "idle"
   },
   "st-lan-con-dau-lan-giay-guong-nho": {
    "model": "generated/props/mirror.glb",
@@ -5356,12 +5306,11 @@
    "tint": "#4a5a7a"
   },
   "st-mai-cuon-sach-lac-bao-ve": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#5a6e98"
+   "animation": "idle"
   },
   "st-mai-cuon-sach-lac-gau-con": {
    "model": "generated/characters/npc-bear-nau-overalls-green.glb",
@@ -5438,12 +5387,11 @@
    "tint": "#a07848"
   },
   "st-tho-len-dinh-thap-chi-keo-chuong": {
-   "model": "packs/kenney-blocky-characters/2.0/character-f.glb",
+   "model": "generated/characters/npc-rabbit-nau-dress-blue.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c88878"
+   "animation": "idle"
   },
   "st-tho-len-dinh-thap-cua-so-tron": {
    "model": "generated/props/window.glb",
@@ -5499,92 +5447,81 @@
    "tint": "#8a6a4a"
   },
   "person-c-co-tong-phu-trach-lan": {
-   "model": "packs/kenney-blocky-characters/2.0/character-c.glb",
+   "model": "generated/characters/npc-fox-cam-jacket-red.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c46a8a"
+   "animation": "idle"
   },
   "person-h-chu-dieu-hanh-le-hoi": {
-   "model": "packs/kenney-blocky-characters/2.0/character-h.glb",
+   "model": "generated/characters/npc-bear-den-vest-shorts-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#d98a3a"
+   "animation": "idle"
   },
   "person-d-ong-truong-thon-cau": {
-   "model": "packs/kenney-blocky-characters/2.0/character-d.glb",
+   "model": "generated/characters/npc-bear-nau-overalls-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#6a8a4a"
+   "animation": "idle"
   },
   "person-e-bac-tho-ngoi-tam": {
-   "model": "packs/kenney-blocky-characters/2.0/character-e.glb",
+   "model": "generated/characters/npc-cat-trang-dress.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#a85a3a"
+   "animation": "idle"
   },
   "person-a-ba-chu-sap-qua": {
-   "model": "packs/kenney-blocky-characters/2.0/character-a.glb",
+   "model": "generated/characters/npc-cat-cam-overalls.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#b85a8a"
+   "animation": "idle"
   },
   "person-g-chu-xe-bo-rom": {
-   "model": "packs/kenney-blocky-characters/2.0/character-g.glb",
+   "model": "generated/characters/npc-fox-do-jacket-green.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c49a3a"
+   "animation": "idle"
   },
   "person-q-ong-gac-sach-dem": {
-   "model": "packs/kenney-blocky-characters/2.0/character-q.glb",
+   "model": "generated/characters/npc-cat-cam-vest-shorts-navy.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#4a5a8a"
+   "animation": "idle"
   },
   "person-n-doi-truong-ve-binh": {
-   "model": "packs/kenney-blocky-characters/2.0/character-n.glb",
+   "model": "generated/characters/npc-rabbit-trang-vest-shorts.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#5a6a9a"
+   "animation": "idle"
   },
   "person-l-chu-cuu-ho-nui": {
-   "model": "packs/kenney-blocky-characters/2.0/character-l.glb",
+   "model": "generated/characters/npc-bear-mat-ong-jacket.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#c43a3a"
+   "animation": "idle"
   },
   "person-p-ba-thuyen-truong-gio": {
-   "model": "packs/kenney-blocky-characters/2.0/character-p.glb",
+   "model": "generated/characters/npc-bear-nau-vest-shorts.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#3a8a9a"
+   "animation": "idle"
   },
   "person-a-ba-noi-bep-nha": {
-   "model": "packs/kenney-blocky-characters/2.0/character-a.glb",
+   "model": "generated/characters/npc-cat-cam-overalls.glb",
    "height": 1.9,
    "kind": "npc",
    "label": "Nói chuyện",
-   "animation": "idle",
-   "tint": "#8a6aa8"
+   "animation": "idle"
   },
   "animal-deer-nai-gac-dong-co": {
    "model": "packs/kenney-cube-pets/2.0/animal-deer.glb",
