@@ -41582,8 +41582,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-cho-phien-map.ts",
       "derivedFrom": [],
-      "sha256": "86a80e857240987568945f3f0a26fb10be538b7e037bebfca08d58153086d493",
-      "bytes": 2010108
+      "sha256": "7760228e55ead922455174489984255fcadb44c7753c6caac00f6c7e3f226914",
+      "bytes": 2010210
     },
     {
       "path": "generated/world/cho-phien/horizon.bin",
@@ -41990,8 +41990,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-dao-bi-an-map.ts",
       "derivedFrom": [],
-      "sha256": "532aeee6dce3c1d03cef4979dd77c7d7e744e5ae3f72343640e5091afbfaba8d",
-      "bytes": 513769
+      "sha256": "44a37f2853eed0edfe005689620d8b318f5fe31acebc52ea21e4dcb364b73bf8",
+      "bytes": 513820
     },
     {
       "path": "generated/world/dao-bi-an/horizon.bin",
@@ -42806,8 +42806,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-lang-ven-song-map.ts",
       "derivedFrom": [],
-      "sha256": "3c9025d5da00c085174f9b1c76c99717aba46ea5b702ae43976390a19d1dd64f",
-      "bytes": 1530458
+      "sha256": "781572ca9b648481c9a23d49f42f3b3b264fa708a3dc37da56ffd75d20fd37f7",
+      "bytes": 1530645
     },
     {
       "path": "generated/world/lang-ven-song/horizon.bin",
@@ -43214,8 +43214,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-lau-dai-map.ts",
       "derivedFrom": [],
-      "sha256": "485a9df5bb20ff15b35e765efc336da10537c8574c5f9f470805c63b630568db",
-      "bytes": 1279102
+      "sha256": "bc37187b4dc599adf1393f2026418f9b2db4ee0ebc00e9bf86c1be65e9e8e6d0",
+      "bytes": 1279272
     },
     {
       "path": "generated/world/lau-dai/horizon.bin",
@@ -43622,8 +43622,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-nha-cua-be-map.ts",
       "derivedFrom": [],
-      "sha256": "5ac4d37e5e9368c29f0329cf982c0ae888d009142b6fed45e03cd47d9e1a77b6",
-      "bytes": 240010
+      "sha256": "cd9c9d31d54f9a4d223e4b04d008ba1363b3ed9c1e77a18212b0d4c5b2e3bdc9",
+      "bytes": 240078
     },
     {
       "path": "generated/world/nha-cua-be/horizon.bin",
@@ -43670,8 +43670,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-nong-trai-map.ts",
       "derivedFrom": [],
-      "sha256": "ca2c1e5e0ab07742ef6dcb0ec5253938db12356ae25804f6b76d1121a3c45bde",
-      "bytes": 1817235
+      "sha256": "286717926de1459f01730b4f5734f3a37c452f703cf1347dcd304d306db8c9f7",
+      "bytes": 1817320
     },
     {
       "path": "generated/world/nong-trai/horizon.bin",
@@ -44078,8 +44078,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-nui-tuyet-map.ts",
       "derivedFrom": [],
-      "sha256": "478343bfc411acbf73e3af5996863c72af7834dda9b72bbe247b69232c2cd0ee",
-      "bytes": 271335
+      "sha256": "cc0d546ed20521eee9ef4451b1e568f469227e84a101176312e53fcbf6c7cdfc",
+      "bytes": 271352
     },
     {
       "path": "generated/world/nui-tuyet/horizon.bin",
@@ -44518,8 +44518,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-thu-vien-map.ts",
       "derivedFrom": [],
-      "sha256": "e6d9adba416142c6bf5d48cf8dd95b463835f5f9e3f97f7adb5710e9700b2e5e",
-      "bytes": 1326221
+      "sha256": "cae2d3fe0cb7bbeabcef05198bf1cc3152b556cdb27c0c6d5cae740225762c1b",
+      "bytes": 1326340
     },
     {
       "path": "generated/world/thu-vien/horizon.bin",
@@ -44926,8 +44926,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-trung-tam-map.ts",
       "derivedFrom": [],
-      "sha256": "0a48606114ca55b1becc160eaefc4810090c5cf1b89d01c8aa7a68b1ef8a54cd",
-      "bytes": 537545
+      "sha256": "8f634277eeddaa01c9d7113e8e9c83bcc2d29f1bdffcdc7b0f75a831481bffd9",
+      "bytes": 537681
     },
     {
       "path": "generated/world/trung-tam/horizon.bin",
@@ -45334,8 +45334,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-school-map.ts",
       "derivedFrom": [],
-      "sha256": "aadefc8d62ea951b637fc458be5b51cdcaeb9385ff588a44c2135a95b797a761",
-      "bytes": 924594
+      "sha256": "9bb5532a32cb9a6281017725d67e0293e90afd68dc64dab7fc3fc65c6f1d3752",
+      "bytes": 924628
     },
     {
       "path": "generated/world/truong-hoc/horizon.bin",
@@ -45742,8 +45742,8 @@
       "license": "CC0-1.0",
       "generator": "tools/world/generate-xom-mai-am-map.ts",
       "derivedFrom": [],
-      "sha256": "9bf9b0ea6ec7c3bcf22eb25357dd4ac96bb50810e6497b3782c1866b9c76aa2c",
-      "bytes": 1880436
+      "sha256": "809cc3798ffc25a99d2f0825801f612d6a7e2c58a30b1b89adfed16b2d38b335",
+      "bytes": 1880538
     },
     {
       "path": "generated/world/xom-mai-am/horizon.bin",
