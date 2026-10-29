@@ -49,9 +49,6 @@
   /* The island first and as wide as the row allows, the big play button over its lower edge, the dock of six under
      it, today's quests beside all three. Fewer, bigger buttons: the rest sit behind "Thêm" (owner 29/10/2026). */
   .home-main { grid-template-columns: minmax(0, 1fr) clamp(16rem, 24vw, 23rem); grid-template-rows: auto auto 1fr; grid-template-areas: 'stage side' 'play side' 'rail side'; }
-  /* One row of seven: the buttons share the width rather than wrapping "Thêm" onto a line of its own. */
-  .home-rail { display: flex; justify-content: center; }
-  .home-rail .home-rail-item { flex: 1 1 0; min-width: 0; }
 }
 
 /* The child's character waves from the stage's lower left, on a glowing pedestal, as in the mock. Phones leave that
@@ -121,6 +118,11 @@
 /* The dock: six chunky 3D buttons, each icon on its own coloured tile. */
 .home-rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); justify-items: center; gap: var(--space-sm); }
 .home-rail .home-rail-item { width: 100%; max-width: 6.25rem; }
+/* Wide screens: one row of seven, the buttons sharing the width. After the phone grid above, so it wins. */
+@media (min-width: 64rem) {
+  .home-rail { display: flex; justify-content: center; }
+  .home-rail .home-rail-item { flex: 1 1 0; min-width: 0; }
+}
 .home-rail-item {
   position: relative;
   display: flex;
@@ -177,6 +179,8 @@ button.home-rail-item { font: inherit; font-family: var(--font-display); font-si
 .today-row-text { display: flex; flex-direction: column; flex: 1; min-width: 0; }
 .today-row-title { font-family: var(--font-display); font-weight: 800; line-height: 1.2; }
 .today-row-summary, .today-row-meta { font-size: var(--text-sm); color: var(--color-ink-soft); }
+/* Two lines of the current quest's story: the rest is told in the game, and the column stays short. */
+.today-row-summary { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
 .today-row-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs) var(--space-sm); }
 .today-xp { padding: 0 var(--space-sm); border-radius: var(--radius-pill); background: var(--color-surface); font-family: var(--font-display); font-weight: 800; color: var(--color-ink); }
 .today-chevron { flex-shrink: 0; font-family: var(--font-display); font-weight: 800; font-size: var(--text-xl); line-height: 1; color: var(--color-ink-soft); }
