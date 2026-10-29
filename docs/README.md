@@ -12,7 +12,7 @@ Bản đồ tài liệu. Nguồn quyết định sản phẩm là [Master Plan v
 | [project-roadmap.md](project-roadmap.md) | Giai đoạn, gate, trạng thái backlog (ý định, không phải hành vi đã giao) |
 | [STAG-DEV-README.md](STAG-DEV-README.md) | SSH vào máy production .65: quyền hạn, tệp credential, lệnh SSH không in secret, đường dẫn và log trên máy |
 | [deployment-guide.md](deployment-guide.md) | Production chạy trên máy nào, secret ứng dụng, DNS, deploy và rollback (staging đã gỡ 12/10/2026) |
-| [screen-review.md](screen-review.md) | Chụp các màn chính trước deploy, cách agent xem ảnh, checklist và định dạng `review.json` |
+| [screen-review.md](screen-review.md) | Chụp các màn chính khi cần tự kiểm (không bắt buộc trước deploy), cách agent xem ảnh, checklist và định dạng `review.json` |
 | [terms-of-use.md](terms-of-use.md) | Điều khoản sử dụng (trang `/terms`, phát hành 26/10/2026, chỉ để đọc): quyết định của chủ sở hữu, từng điều lấy từ đâu, vì sao không nâng phiên bản lời đồng ý |
 | [store/README.md](store/README.md), [store/listing.md](store/listing.md) | Hồ sơ App Store và Google Play: ảnh chụp và cách chụp lại, icon, nội dung trang store (vi, en), xếp hạng tuổi, nhãn quyền riêng tư, ghi chú cho người duyệt, việc còn chặn phát hành |
 

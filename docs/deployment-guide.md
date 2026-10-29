@@ -89,11 +89,11 @@ tools/deploy/production/deploy.sh release   # cổng release, build, security:di
 **Thứ tự một lần deploy:**
 
 1. Gate 5 lệnh trong `CLAUDE.md`, build web; commit; push; CI của commit đó xanh.
-2. Chụp các màn chính từ cây sạch của commit đó và cho agent duyệt theo [`screen-review.md`](screen-review.md); phát hiện `block` thì sửa và quay lại bước 1.
-3. Commit ảnh, `review.json`, manifest (`chore(review): screens before release`), push.
-4. `deploy.sh gate` phải in "được", rồi chạy `deploy.sh release`.
+2. `deploy.sh gate` phải in "được", rồi chạy `deploy.sh release`.
 
-**Cổng release** (`tools/deploy/release-gate.sh`, `release` tự chạy trước khi build; `gate` chạy riêng): chặn khi chưa có `assets/generated/review/screens/review.json`, khi lần duyệt còn phát hiện `block` chưa sửa, khi ảnh hai khổ không cùng chụp ở commit của lần duyệt hay lúc chụp còn code chưa commit, khi từ commit đã chụp tới `HEAD` có đổi gì ngoài ảnh, manifest, `plans/`, `docs/` (ảnh đã cũ), và khi CI (`gh run list --commit`) của commit đã chụp chưa xanh. Hỏi CI của commit đã chụp, không phải của `HEAD`, nên commit chỉ thêm ảnh không phải chờ CI. `gh` chưa đăng nhập hay mất mạng thì cổng chặn và in cách khắc phục. Cây export (không có `.git`): `MIU_RELEASE_REV` phải là sha (đầu) của commit đã chụp. Bản vá gấp khi CI hỏng vì nguyên nhân ngoài code: `MIU_RELEASE_FORCE="<lý do>"` cho qua, in lý do và ghi nó vào `RELEASE_FORCED` cạnh `REVISION` trong bản release trên máy chủ; vẫn phải hỏi người trước.
+Không còn bước chụp và duyệt ảnh màn hình trước deploy (người sở hữu bỏ 29/10/2026); [`screen-review.md`](screen-review.md) vẫn dùng được khi muốn tự xem các màn.
+
+**Cổng release** (`tools/deploy/release-gate.sh`, `release` tự chạy trước khi build; `gate` chạy riêng): chặn khi CI (`gh run list --commit`) của commit được release (`HEAD`, hay `MIU_RELEASE_REV` với cây export không có `.git`) chưa chạy, đang chạy hay đỏ. `gh` chưa đăng nhập hay mất mạng thì cổng chặn và in cách khắc phục. Bản vá gấp khi CI hỏng vì nguyên nhân ngoài code: `MIU_RELEASE_FORCE="<lý do>"` cho qua, in lý do và ghi nó vào `RELEASE_FORCED` cạnh `REVISION` trong bản release trên máy chủ; vẫn phải hỏi người trước.
 
 **Trước khi `release`:** chạy đủ gate trong `CLAUDE.md`. Script từ chối chạy khi working tree còn thay đổi chưa commit, vì mã release lấy từ commit. Khi cần deploy một cây đã export (`git archive`) thay vì checkout, đặt `MIU_RELEASE_REV=<nhãn>` và chạy từ gốc cây đó. Nếu chỉ còn file chưa track không thuộc bản build thì đặt `MIU_RELEASE_REV=$(git rev-parse --short HEAD)` sau khi kiểm `git diff --quiet HEAD`.
 
