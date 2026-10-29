@@ -5,7 +5,7 @@
 // shop (content/shop) show as owned once bought, "Mua ở cửa hàng" until then; a region chest's exclusive items
 // (content/region-rewards.json) once claimed, "Quà rương <khu>" until then. The 3D preview is its own light renderer; outfit
 // and pet changes reach it as the bridge commands `set-outfit` and `set-pet`.
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { fillPlayerName } from '@miu/quest/player-name';
 import { CharacterDto, CharacterUpdate, ProgressResponse, QuestListResponse } from '@miu/schema/game';
@@ -109,7 +109,22 @@ function SpeciesStep({ current, switching, onPick }: { current: string; switchin
  * The 3D stage: mounts one CharacterPreview for the screen's lifetime and exposes its emotes (the shop shows it
  * without them). Needs a `GameStoreContext` provider for `store`.
  */
-export function PreviewStage({ store, species, initialOutfit, initialPet, emotes = true }: { store: GameStore; species: string; initialOutfit: readonly string[]; initialPet: string | null; emotes?: boolean }) {
+/** `corner`: a control over the stage's top-left corner (the Character Creator's "Đổi nhân vật"). */
+export function PreviewStage({
+  store,
+  species,
+  initialOutfit,
+  initialPet,
+  emotes = true,
+  corner,
+}: {
+  store: GameStore;
+  species: string;
+  initialOutfit: readonly string[];
+  initialPet: string | null;
+  emotes?: boolean;
+  corner?: ReactNode;
+}) {
   const host = useRef<HTMLDivElement>(null);
   const preview = useRef<CharacterPreview | null>(null);
   const firstOutfit = useRef(initialOutfit);
@@ -129,7 +144,10 @@ export function PreviewStage({ store, species, initialOutfit, initialPet, emotes
   }, [store, species]);
   return (
     <div className="creator-stage">
-      <div className="creator-stage-view" ref={host} data-id="creator-preview" aria-label={t('creator.previewLabel')} />
+      <div className="creator-stage-frame">
+        <div className="creator-stage-view" ref={host} data-id="creator-preview" aria-label={t('creator.previewLabel')} />
+        {corner ? <div className="creator-stage-corner">{corner}</div> : null}
+      </div>
       {status === 'error' ? (
         <p role="alert" className="error">
           <T k="creator.previewFailed" />
@@ -332,15 +350,26 @@ function OutfitStep({
         )}
       </section>
 
-      <PreviewStage store={store} species={species} initialOutfit={equipped} initialPet={pet} />
+      <PreviewStage
+        store={store}
+        species={species}
+        initialOutfit={equipped}
+        initialPet={pet}
+        corner={
+          // On the stage itself, where the child looks at her animal, so going back to pick another is easy to find.
+          <button type="button" className={`${buttonClass('secondary', { small: true })} creator-change-species`} data-id="creator-change-species" onClick={onChangeSpecies}>
+            <span className="creator-change-species-art" aria-hidden="true">
+              <MiuArt pose="idle" species={species} />
+            </span>
+            <T k="creator.change" />
+          </button>
+        }
+      />
 
       <section className="panel creator-info" aria-labelledby="creator-info-title">
         <h2 id="creator-info-title">
           <T k="creator.info" />
         </h2>
-        <button type="button" className={`${buttonClass('ghost', { small: true })} creator-species-back`} data-id="creator-change-species" onClick={onChangeSpecies}>
-          <T k="creator.change" />
-        </button>
         <label className="field-label">
           <T k="creator.name" />
           <select data-id="creator-name" value={name} onChange={(e) => setName(e.target.value)}>

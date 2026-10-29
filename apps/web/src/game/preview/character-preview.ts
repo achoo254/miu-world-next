@@ -7,6 +7,7 @@ import {
   Box3,
   DirectionalLight,
   Group,
+  MathUtils,
   HemisphereLight,
   LoopOnce,
   PerspectiveCamera,
@@ -55,6 +56,10 @@ const DRAG_SPEED = 0.01;
 /** The pet's height in the preview, as a share of the character's. */
 const PET_HEIGHT = 0.38;
 const START_YAW = 0.5;
+/** Vertical field of view of the preview camera, in degrees. */
+const FOV = 30;
+/** Room round the framed character: a jump, a raised arm and the stage's rounded corners stay clear. */
+const FRAME_MARGIN = 1.25;
 
 export interface CharacterPreviewOptions {
   store: GameStore;
@@ -157,15 +162,30 @@ export class CharacterPreview {
     model.traverse((o) => (o.frustumCulled = false)); // skinned bounds lag the animated pose
     model.rotation.y = START_YAW;
     model.scale.setScalar(PLAYER_SCALE);
-    scene.add(model);
 
-    // Frame the bind pose with room above the head for hats and jumps.
+    // The bare character's size places the pet; the camera frames everything shown (see `frame`).
     const box = new Box3().setFromObject(model);
     const center = box.getCenter(new Vector3());
     const height = box.max.y - box.min.y;
-    const camera = new PerspectiveCamera(30, 1, 0.05, 50);
-    camera.position.set(center.x, center.y + height * 0.1, center.z + height * 3.4);
-    camera.lookAt(center.x, center.y + height * 0.05, center.z);
+    const camera = new PerspectiveCamera(FOV, 1, 0.05, 50);
+    /** What the camera must keep in view: the character, her hat, her vehicle and her pet. */
+    const shown = new Group();
+    /**
+     * Fits the whole of `shown` in the view, whatever she wears or rides and whatever the stage's shape, with room for
+     * a jump above and a turn to either side (the width is the diagonal, so turning her never pushes a part out).
+     */
+    const frame = (): void => {
+      const bounds = new Box3().setFromObject(shown, true);
+      if (bounds.isEmpty()) return;
+      const size = bounds.getSize(new Vector3());
+      const middle = bounds.getCenter(new Vector3());
+      const halfV = MathUtils.degToRad(FOV / 2);
+      const halfH = Math.atan(Math.tan(halfV) * camera.aspect);
+      const width = Math.hypot(size.x, size.z);
+      const distance = Math.max((size.y * FRAME_MARGIN) / 2 / Math.tan(halfV), (width * FRAME_MARGIN) / 2 / Math.tan(halfH)) + width / 2;
+      camera.position.set(middle.x, middle.y + size.y * 0.04, middle.z + distance);
+      camera.lookAt(middle.x, middle.y + size.y * 0.04, middle.z);
+    };
 
     const mixer = new AnimationMixer(model);
     const itemPose = wornPose(model, gltf.animations);
@@ -241,6 +261,7 @@ export class CharacterPreview {
       model.rotation.y = yaw;
       playing = rest;
       this.stats.emote = null;
+      frame();
       rest.reset().play();
     };
     wear(latestOutfit);
@@ -250,7 +271,9 @@ export class CharacterPreview {
     // the child taps through pets faster than they load.
     const petStand = new Group();
     petStand.rotation.y = START_YAW;
-    scene.add(petStand);
+    shown.add(model, petStand);
+    scene.add(shown);
+    frame();
     let pet: PetCompanion | null = null;
     let petRequest = 0;
     const showPet = (petId: string | null): void => {
@@ -270,6 +293,7 @@ export class CharacterPreview {
         loaded.root.scale.setScalar((height * PET_HEIGHT) / petHeight);
         loaded.root.position.set(center.x + height * 0.42, box.min.y, center.z + height * 0.12);
         petStand.add(loaded.root);
+        frame();
         pet = loaded;
         this.stats.pet = spec.id;
       });
@@ -312,6 +336,7 @@ export class CharacterPreview {
       renderer.setSize(w, h);
       camera.aspect = w / h;
       camera.updateProjectionMatrix();
+      frame();
     };
     resize();
     const observer = new ResizeObserver(resize);

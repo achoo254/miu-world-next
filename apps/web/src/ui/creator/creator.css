@@ -143,4 +143,10 @@
   cursor: grab;
 }
 .creator-stage-view canvas { display: block; touch-action: none; }
+/* The stage and the control over its corner ("Đổi nhân vật", with the chosen animal's face). */
+.creator-stage-frame { position: relative; width: 100%; }
+.creator-stage-corner { position: absolute; top: var(--space-md); left: var(--space-md); z-index: 1; }
+.creator-change-species { gap: var(--space-xs); padding-left: var(--space-xs); }
+.creator-change-species-art { display: block; width: 2.25rem; height: 2.25rem; overflow: hidden; border-radius: var(--radius-pill); background: var(--color-render-bg); }
+.creator-change-species-art .miu-art { width: 100%; height: 100%; object-fit: cover; }
 .emote-row { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-sm); }
