@@ -63,8 +63,8 @@ describe('PauseScreen', () => {
   it('resumes from the button or Esc, and links home', () => {
     const onResume = vi.fn();
     renderPause(onResume);
-    fireEvent.click(screen.getByRole('button', { name: /Tiếp tục chơi/ }));
-    fireEvent.keyDown(screen.getByRole('dialog', { name: 'Tạm dừng' }), { key: 'Escape' });
+    fireEvent.click(screen.getByRole('button', { name: /Quay lại chơi/ }));
+    fireEvent.keyDown(screen.getByRole('dialog', { name: 'Menu' }), { key: 'Escape' });
     expect(onResume).toHaveBeenCalledTimes(2);
     expect(screen.getByRole('link', { name: /Về trang chủ/ }).getAttribute('href')).toBe('/profiles');
   });

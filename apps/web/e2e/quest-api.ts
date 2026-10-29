@@ -109,7 +109,7 @@ export async function openQuestCard(page: Page): Promise<void> {
   await expect(page.locator('[data-id="hud-tracker"]')).toBeVisible();
 }
 
-/** Opens the HUD's one menu (Quests, Map, Backpack, Friends, the pet, Pause…) if it is not open yet. */
+/** Opens the HUD's one menu (Quests, Map, Backpack, Friends, the pet, the settings…) if it is not open yet. */
 export async function openHudMenu(page: Page): Promise<void> {
   const toggle = page.locator('[data-id="hud-menu-toggle"]');
   if ((await toggle.getAttribute('aria-expanded')) !== 'true') await toggle.click();

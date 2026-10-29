@@ -1,5 +1,5 @@
 // NEW SCREEN (characters with a life of their own, owner 03/10/2026; Jev 05/10/2026): talking to a character of the
-// map opens its card over the paused game, styled as the NPC dialogue (M3.3): its picture, name and role, the
+// map opens its card over the running game, styled as the NPC dialogue (M3.3): its picture, name and role, the
 // friendship as hearts (counted by the server; the first chat of the day adds to it), a line of its own for this
 // moment, and what it offers: the next chapter of its story when the friendship is close enough (or how many hearts
 // that chapter waits for), its minigames, a gift from the backpack, goodbye.

@@ -37,6 +37,8 @@ export class PlayerInput implements InputSource {
   private interactQueued = false;
   /** Zoom gathered since the last `readZoom` (log scale: + farther). */
   private zoomed = 0;
+  /** A screen over the running game takes the keys and touches: nothing moves her until it closes. */
+  private blocked = false;
   /** Window listeners outlive the game DOM, so they are removed explicitly on dispose. */
   private readonly listeners = new AbortController();
 
@@ -46,7 +48,7 @@ export class PlayerInput implements InputSource {
       'keydown',
       (e) => {
         // Keys typed in a dialog over the running game (the pet's care board) or in a text field are theirs.
-        if (e.target instanceof Element && e.target.closest(OWN_KEYS)) return;
+        if (this.blocked || (e.target instanceof Element && e.target.closest(OWN_KEYS))) return;
         this.keys.add(e.code);
         if (e.code === 'Space') this.jumpQueued = true;
         if (e.code === 'KeyE') this.interactQueued = true;
@@ -80,8 +82,8 @@ export class PlayerInput implements InputSource {
   }
 
   /**
-   * Forgets keys and presses gathered while the game was paused (E or Space pressed on a dialog),
-   * so resuming never replays them as an interaction or a jump.
+   * Forgets keys and presses gathered while the game was hidden or a screen lay over it (E or Space pressed on a
+   * dialog), so coming back never replays them as an interaction or a jump.
    */
   clear(): void {
     this.keys.clear();
@@ -91,9 +93,21 @@ export class PlayerInput implements InputSource {
     this.zoomed = 0;
   }
 
+  /**
+   * While a screen lies over the running game her controls are its own: keys and buttons held as it opened are let go
+   * (she never walks off on her own while typing or tapping in it), and nothing new reaches her until it closes.
+   */
+  setBlocked(blocked: boolean): void {
+    if (blocked === this.blocked) return;
+    this.blocked = blocked;
+    this.clear();
+    this.stick = { x: 0, y: 0 };
+    this.runHeld = false;
+  }
+
   /** Zoom asked for since the last call (log scale of the camera distance: + farther, − closer). */
   readZoom(): number {
-    const zoom = this.zoomed;
+    const zoom = this.blocked ? 0 : this.zoomed;
     this.zoomed = 0;
     return zoom;
   }
@@ -190,6 +204,10 @@ export class PlayerInput implements InputSource {
   }
 
   read(): InputState {
+    if (this.blocked) {
+      this.clear();
+      return { moveX: 0, moveY: 0, run: false, jump: false, lookX: 0, lookY: 0, interact: false };
+    }
     const has = (codes: string[]): boolean => codes.some((c) => this.keys.has(c));
     let x = this.stick.x + (has(KEYS_RIGHT) ? 1 : 0) - (has(KEYS_LEFT) ? 1 : 0);
     let y = this.stick.y + (has(KEYS_FORWARD) ? 1 : 0) - (has(KEYS_BACK) ? 1 : 0);

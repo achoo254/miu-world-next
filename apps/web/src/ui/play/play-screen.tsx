@@ -1,6 +1,7 @@
 // M3.2 (gameplay 3D): Khu rừng bí mật. The game owns canvas, loop, joystick and Run/Jump; React
 // owns the HUD (badge, quest tracker, menu buttons, Interact), the interaction label (content and
-// visibility from game-bridge), Pause (the game stops rendering while it is open) and the offline retry.
+// visibility from game-bridge), the menu and the offline retry. A screen opened over the game never stops it (owner,
+// 29/10/2026: the game is online, the world always lives); it only takes the child's own controls while it is open.
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import { appHidden, onAppVisibilityChange } from '../../platform/app-lifecycle';
 import { Link, useLocation, useNavigate, useSearchParams } from 'react-router';
@@ -209,7 +210,6 @@ function GameView({
   decor,
   trophies,
   objectStates,
-  paused,
   controlsHidden,
   onSpotReader,
   bosses,
@@ -239,8 +239,7 @@ function GameView({
   trophies?: readonly string[];
   /** What she left switched on in her home (its map only); read when the game is (re)built, never rebuilding it. */
   objectStates?: Readonly<Record<string, true>>;
-  paused: boolean;
-  /** A screen lies over the game (paused, or a board over the running game): its joystick, Run/Jump and minimap step aside. */
+  /** A screen lies over the running game: its joystick, Run/Jump and minimap step aside, and her own controls are its. */
   controlsHidden: boolean;
   /** Hands over a reader of where the child stands in the running game (null once it is gone), so a quest switch on the same map keeps the spot. */
   onSpotReader: (read: (() => PlayerPosition | null) | null) => void;
@@ -276,6 +275,11 @@ function GameView({
   useEffect(() => {
     eventsRef.current = events;
   }, [events]);
+  // A game built while a screen is open starts with her controls taken too.
+  const blockedRef = useRef(controlsHidden);
+  useEffect(() => {
+    blockedRef.current = controlsHidden;
+  }, [controlsHidden]);
   const outingRef = useRef(outing);
   useEffect(() => {
     outingRef.current = outing;
@@ -285,6 +289,7 @@ function GameView({
     const picks = decorKey ? (JSON.parse(decorKey) as Record<string, string>) : undefined;
     const instance = new Game(host.current, { store, social, search: window.location.search, playerName, species, pet, petGear: petGearRef.current, outfit: outfitKey ? outfitKey.split(',') : [], chapter, region, quest, savedSpot, decor: picks, trophies: trophyKeys ? trophyKeys.split(',') : [], objectStates: objectsRef.current, bosses: bossesRef.current, events: eventsRef.current, outing: outingRef.current, arriveBeside: arrival.current?.how === 'beside' ? arrival.current.target : null });
     game.current = instance;
+    instance.setControlsBlocked(blockedRef.current);
     onSpotReader(() => instance.currentSpot());
     void instance.start();
     const save = createPositionSaver(savedSpot);
@@ -307,11 +312,10 @@ function GameView({
       onSpotReader(null);
     };
   }, [store, social, playerName, species, pet, outfitKey, chapter, region, quest, savedSpot, decorKey, trophyKeys, onSpotReader, arrival]);
-  // Full-screen screens stop rendering (Master Plan §12); React only calls stop/resume.
+  // A screen over the game takes her controls; the world runs on behind it (the game itself stops only while hidden).
   useEffect(() => {
-    if (paused) game.current?.stop();
-    else game.current?.resume();
-  }, [paused]);
+    game.current?.setControlsBlocked(controlsHidden);
+  }, [controlsHidden]);
   return <div ref={host} data-id="play-host" data-covered={controlsHidden ? '' : undefined} />;
 }
 
@@ -363,7 +367,8 @@ export function PlayScreen() {
   );
   const [loadError, setLoadError] = useState<string | null>(null);
   const [offline, setOffline] = useState(false);
-  const [paused, setPaused] = useState(false);
+  /** The in-game menu (sound, language, back to a safe spot, home…); the game runs on behind it. */
+  const [menuOpen, setMenuOpen] = useState(false);
   const [questOpen, setQuestOpen] = useState(false);
   /** A boss fight played out in the running world: the game runs on, only the HUD steps aside. */
   const [duelOpen, setDuelOpen] = useState(false);
@@ -453,15 +458,15 @@ export function PlayScreen() {
     }
   }
 
-  // Esc opens Pause once the forest is up (the dialog itself handles Esc to resume).
+  // Esc opens the menu once the map is up (the dialog itself handles Esc to close).
   useEffect(() => {
-    if (status !== 'ready' || paused) return;
+    if (status !== 'ready' || menuOpen) return;
     const onKey = (e: KeyboardEvent): void => {
-      if (e.key === 'Escape') setPaused(true);
+      if (e.key === 'Escape') setMenuOpen(true);
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [status, paused]);
+  }, [status, menuOpen]);
 
   // A party member did a shared step of the party's quest for her: her own progress on it moves (from the server).
   useEffect(() => {
@@ -494,7 +499,7 @@ export function PlayScreen() {
   const region = quest?.quest.region ?? DEFAULT_REGION;
   // An element of `positions` (set once), so the same object on every render: the game is not rebuilt.
   const savedSpot = positions?.find((p) => p.map === regionMap(region)) ?? null;
-  const covered = paused || questOpen || backpackOpen || questsOpen || timetable !== null || decorOpen || trophyOpen || shopOpen || cookingOpen || friendsOpen || onlineMenu || coopOpen;
+  const covered = menuOpen || questOpen || backpackOpen || questsOpen || timetable !== null || decorOpen || trophyOpen || shopOpen || cookingOpen || friendsOpen || onlineMenu || coopOpen;
   // The pet's care board and a boss fight in the world leave the game running, only the HUD steps aside.
   const hudCovered = covered || petCareOpen || duelOpen;
   /** The name picked for her pet on the care board this visit (undefined: none picked yet), for the HUD's button. */
@@ -515,10 +520,12 @@ export function PlayScreen() {
   const mapEvents = useMapEvents(region, store);
   // The friends list is read in the background once the game is up, so it opens at once.
   useFriendsPrefetch(social, draftOwner, status === 'ready');
-  // Weekly play time for the progress views: counted while the game runs, not while paused.
-  usePlayTime(data !== null && status === 'ready' && !paused);
-  // Time walking together with her pet: the server counts it (by its own clock) into the pet's bond.
-  usePlayTime(data?.character.pet != null && status === 'ready' && !covered, reportPetWalk);
+  // Weekly play time for the progress views, and time out with her pet (the server counts it, by its own clock, into
+  // the pet's bond): both counted while the game is up and the page shows, screens open or not, since the world and
+  // her pet live on behind them (a lesson, the shop, a board are play too).
+  const playing = data !== null && status === 'ready';
+  usePlayTime(playing);
+  usePlayTime(playing && data.character.pet != null, reportPetWalk);
   // What she left switched on at home, read with her picks and saved as she switches things.
   const homeObjects = useHomeObjects(atHome, store);
   // Her home is built in her picks: they are read first (a failed read builds the house as it comes).
@@ -697,7 +704,7 @@ export function PlayScreen() {
     <GameStoreContext.Provider value={store}>
       <main data-id="play">
         {data && positions && mapEvents && (!atHome || (decor !== null && homeObjects !== null && trophies !== null)) ? (
-          <GameView store={store} social={social} playerName={data.character.name} species={data.character.species} pet={data.character.pet} petGear={data.character.petGear ?? NO_GEAR} outfit={data.character.equipped} chapter={quest?.quest.chapter ?? 1} region={region} quest={quest?.quest.id} savedSpot={savedSpot} decor={atHome ? (decor ?? undefined) : undefined} trophies={atHome ? (trophies ?? undefined) : undefined} objectStates={atHome ? (homeObjects ?? undefined) : undefined} paused={covered} controlsHidden={covered || petCareOpen} onSpotReader={onSpotReader} bosses={bosses} events={mapEvents} outing={atHome && daily ? (findRegion(daily.quest.region)?.name ?? null) : null} arrival={arrival} />
+          <GameView store={store} social={social} playerName={data.character.name} species={data.character.species} pet={data.character.pet} petGear={data.character.petGear ?? NO_GEAR} outfit={data.character.equipped} chapter={quest?.quest.chapter ?? 1} region={region} quest={quest?.quest.id} savedSpot={savedSpot} decor={atHome ? (decor ?? undefined) : undefined} trophies={atHome ? (trophies ?? undefined) : undefined} objectStates={atHome ? (homeObjects ?? undefined) : undefined} controlsHidden={covered || petCareOpen} onSpotReader={onSpotReader} bosses={bosses} events={mapEvents} outing={atHome && daily ? (findRegion(daily.quest.region)?.name ?? null) : null} arrival={arrival} />
         ) : null}
         {loadError ? (
           <div className="play-message" role="alert">
@@ -722,7 +729,7 @@ export function PlayScreen() {
               data={data}
               quest={quest}
               covered={hudCovered}
-              onMenu={() => setPaused(true)}
+              onMenu={() => setMenuOpen(true)}
               onQuests={() => setQuestsOpen(true)}
               onBackpack={() => setBackpackOpen(true)}
               menuBadge={friendAsks}
@@ -816,12 +823,12 @@ export function PlayScreen() {
           />
         ) : null}
         {data ? <CoopLayer social={social} quests={coop.quests} data={data} onPaid={refreshPlayer} onMap={(id) => navigate(`/region/${id}`)} /> : null}
-        {paused ? (
+        {menuOpen ? (
           <PauseScreen
-            onResume={() => setPaused(false)}
+            onResume={() => setMenuOpen(false)}
             onRescue={() => {
               store.send({ type: 'rescue' });
-              setPaused(false);
+              setMenuOpen(false);
             }}
             homePath={HOME_PATH}
           />

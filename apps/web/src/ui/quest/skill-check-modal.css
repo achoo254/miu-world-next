@@ -1,4 +1,4 @@
-/* Cổng tri thức (M3.9): parchment panel over the paused game, a glowing portal, the skill asked for. Tokens only;
+/* Cổng tri thức (M3.9): parchment panel over the running game, a glowing portal, the skill asked for. Tokens only;
    touch targets ≥ 48px. */
 .gate-panel {
   display: flex;

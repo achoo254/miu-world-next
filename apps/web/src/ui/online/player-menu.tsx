@@ -1,5 +1,5 @@
 // NEW SCREEN, after mock `designs/multiplayer.png` frame 7 ("Báo cáo & Chặn người chơi"): the interaction menu on
-// another player, opened with the Interact button next to her. A themed scene over the paused game: her name on
+// another player, opened with the Interact button next to her. A themed scene over the running game: her name on
 // the wooden banner, the actions on parchment. Wave, a canned line, invite to the party, add as a friend, block,
 // report: every word comes from a fixed list (no typing, no voice). Companion bots are labelled and only get the
 // friendly actions.

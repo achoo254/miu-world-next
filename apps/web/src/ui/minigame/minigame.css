@@ -1,5 +1,5 @@
 /*
- * Minigame screen (minigame-overlay.tsx): the canvas fills the screen over the paused game; the HUD chips sit
+ * Minigame screen (minigame-overlay.tsx): the canvas fills the screen over the running game; the HUD chips sit
  * along the top; cards use the quest scene materials (kit/scene.css). Values from tokens.css only; every
  * touch target ≥ 48px.
  */

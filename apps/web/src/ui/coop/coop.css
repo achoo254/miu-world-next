@@ -1,6 +1,6 @@
 /*
  * Co-op challenges (mock designs/multiplayer.png frames 4 and 5): the lobby and the challenge as a themed scene over
- * the paused game. Values from tokens.css only; touch targets ≥ 48px.
+ * the running game. Values from tokens.css only; touch targets ≥ 48px.
  */
 .coop-lobby { display: grid; gap: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
 .coop-team, .coop-card, .coop-board, .coop-help { display: grid; gap: var(--space-sm); padding: var(--space-md); }

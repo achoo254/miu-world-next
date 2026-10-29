@@ -1,4 +1,4 @@
-// NEW SCREEN (minigame side quests, owner 03/10/2026): a minigame over the paused 3D game, in the quest
+// NEW SCREEN (minigame side quests, owner 03/10/2026): a minigame over the running 3D game, in the quest
 // scenes' materials (mock "quest screens": wooden banner, parchment). How-to card with one big "Chơi" →
 // 3-2-1 → play (HUD: score/goal, clock, hearts, pause) → result card with stars, the reward the server paid
 // and "Chơi lại" / "Xong". The round itself runs in MinigameStage; this component only moves between screens.

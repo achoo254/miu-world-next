@@ -28,7 +28,7 @@ function playApi(character: () => Response = () => json({ species: 'cat', name: 
 const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status });
 
 // jsdom has no WebGL; the runtime itself is covered by Playwright. Here: lifecycle under StrictMode.
-const games = vi.hoisted(() => ({ live: 0, started: 0, stops: 0, resumes: 0, paused: false, duel: 'unavailable' as 'staged' | 'unavailable', savedSpot: undefined as unknown, decor: undefined as unknown, spot: null as unknown, store: null as GameStore | null, region: undefined as string | undefined, arriveBeside: undefined as string | null | undefined }));
+const games = vi.hoisted(() => ({ live: 0, started: 0, blocks: 0, blocked: false, duel: 'unavailable' as 'staged' | 'unavailable', savedSpot: undefined as unknown, decor: undefined as unknown, spot: null as unknown, store: null as GameStore | null, region: undefined as string | undefined, arriveBeside: undefined as string | null | undefined }));
 vi.mock('../../game/game', () => ({
   Game: class {
     private alive = true;
@@ -55,13 +55,10 @@ vi.mock('../../game/game', () => ({
       this.options.store.emit({ type: 'loading' });
       this.options.store.emit({ type: 'ready' });
     }
-    stop() {
-      games.stops += 1;
-      games.paused = true;
-    }
-    resume() {
-      games.resumes += 1;
-      games.paused = false;
+    // No stop() or resume(): a screen over the game never stops it, it only takes her controls.
+    setControlsBlocked(blocked: boolean) {
+      if (blocked && !games.blocked) games.blocks += 1;
+      games.blocked = blocked;
     }
     dispose() {
       if (this.alive && games.started > 0) games.live -= 1;
@@ -119,7 +116,7 @@ describe('PlayScreen under React StrictMode', () => {
     games.spot = null;
   });
 
-  it('stops the game while Pause is open and resumes it after', async () => {
+  it('keeps the game running while the menu is open, only her controls taken, and gives them back after', async () => {
     vi.stubGlobal('fetch', playApi());
     render(
       <MemoryRouter>
@@ -128,21 +125,20 @@ describe('PlayScreen under React StrictMode', () => {
         </AccountProvider>
       </MemoryRouter>,
     );
-    // Pause sits in the HUD's menu.
+    // The settings sit in the HUD's menu.
     fireEvent.click(await screen.findByRole('button', { name: /Menu/ }));
-    fireEvent.click(screen.getByRole('button', { name: 'Tạm dừng · Cài đặt' }));
-    expect(screen.getByRole('dialog', { name: 'Tạm dừng' })).toBeTruthy();
-    const stops = games.stops;
-    expect(stops).toBeGreaterThan(0);
-    fireEvent.click(screen.getByRole('button', { name: /Tiếp tục chơi/ }));
+    fireEvent.click(screen.getByRole('button', { name: 'Cài đặt · Về nhà' }));
+    expect(screen.getByRole('dialog', { name: 'Menu' })).toBeTruthy();
+    expect(games.blocked).toBe(true);
+    fireEvent.click(screen.getByRole('button', { name: /Quay lại chơi/ }));
     expect(screen.queryByRole('dialog')).toBeNull();
-    expect(games.resumes).toBeGreaterThan(0);
+    expect(games.blocked).toBe(false);
     // Esc opens it again.
     fireEvent.keyDown(window, { key: 'Escape' });
-    expect(screen.getByRole('dialog', { name: 'Tạm dừng' })).toBeTruthy();
+    expect(screen.getByRole('dialog', { name: 'Menu' })).toBeTruthy();
   });
 
-  it('keeps the game running through a boss fight staged in the world, the HUD out of the way, and pauses it for a card', async () => {
+  it('keeps the game running through a boss fight, staged in the world with the HUD out of the way, or as a card that takes her controls', async () => {
     const list = questList(1);
     const [lesson] = list.quests;
     if (!lesson || lesson.quest.status !== 'active') throw new Error('fixture');
@@ -178,11 +174,11 @@ describe('PlayScreen under React StrictMode', () => {
       const mode = (): string | undefined => (document.querySelector('[data-id="boss-move"]') as HTMLElement | null)?.dataset.mode;
       if (answer === 'staged') {
         await vi.waitFor(() => expect(mode()).toBe('stage'));
-        await vi.waitFor(() => expect(games.paused).toBe(false));
+        await vi.waitFor(() => expect(games.blocked).toBe(false));
         expect((document.querySelector('[data-id="hud-layer"]') as HTMLElement).hidden).toBe(true);
       } else {
         expect(mode()).toBe('card');
-        expect(games.paused).toBe(true);
+        expect(games.blocked).toBe(true);
       }
       cleanup();
     }
@@ -206,10 +202,10 @@ describe('PlayScreen under React StrictMode', () => {
     touch('clue-box');
     expect(screen.queryByRole('dialog', { name: 'Thời khóa biểu' })).toBeNull();
 
-    const stops = games.stops;
+    const blocks = games.blocks;
     touch('nha-thoi-khoa-bieu');
     expect(screen.getByRole('dialog', { name: 'Thời khóa biểu' })).toBeTruthy();
-    expect(games.stops).toBeGreaterThan(stops); // the game pauses behind the board
+    expect(games.blocks).toBeGreaterThan(blocks); // the board takes her controls; the game runs on behind it
     expect(await screen.findByText(/Chưa có thời khóa biểu/)).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Đóng' }));
     expect(screen.queryByRole('dialog')).toBeNull();
@@ -218,7 +214,7 @@ describe('PlayScreen under React StrictMode', () => {
     expect(screen.getByRole('dialog', { name: 'Lịch mặc đồng phục' })).toBeTruthy();
   });
 
-  it('opens the shop from the shopkeeper in Trung tâm, pauses the game, and the HUD shows the coins left after buying', async () => {
+  it('opens the shop from the shopkeeper in Trung tâm over the running game, and the HUD shows the coins left after buying', async () => {
     const heart = { id: 'them-mot-tim', kind: 'booster', category: 'tieu-hao', name: 'Thêm một tim', description: 'Một tim nữa.', price: 50, level: null, featured: true, slot: null, swatch: null, icon: 'heart', effect: { lives: 1 }, contains: null };
     const base = playApi();
     vi.stubGlobal(
@@ -238,10 +234,10 @@ describe('PlayScreen under React StrictMode', () => {
       </MemoryRouter>,
     );
     await vi.waitFor(() => expect(games.store).not.toBeNull());
-    const stops = games.stops;
+    const blocks = games.blocks;
     act(() => games.store?.emit({ type: 'interaction', targetId: 'tt-quay-cua-hang' }));
     expect(screen.getByRole('dialog', { name: 'Cửa hàng' })).toBeTruthy();
-    expect(games.stops).toBeGreaterThan(stops);
+    expect(games.blocks).toBeGreaterThan(blocks);
     fireEvent.click(await screen.findByText('Thêm một tim'));
     fireEvent.click(screen.getByRole('button', { name: 'Mua ngay' }));
     await vi.waitFor(() => expect(screen.getByRole('dialog', { name: 'Cửa hàng' }).textContent).toContain('70'));

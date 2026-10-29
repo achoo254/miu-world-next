@@ -19,7 +19,7 @@ function el(): HTMLDivElement {
 }
 
 describe('PlayerInput', () => {
-  it('forgets E and Space pressed while paused, so resuming replays nothing', () => {
+  it('forgets E and Space pressed while the game was hidden, so coming back replays nothing', () => {
     const input = create();
     window.dispatchEvent(new KeyboardEvent('keydown', { code: 'KeyE' }));
     window.dispatchEvent(new KeyboardEvent('keydown', { code: 'Space' }));
@@ -45,6 +45,25 @@ describe('PlayerInput', () => {
     document.body.append(hud);
     hud.dispatchEvent(new KeyboardEvent('keydown', { code: 'Space', bubbles: true }));
     expect(input.read().jump).toBe(true);
+  });
+
+  it('lets go of keys held as a screen opens over the running game, takes nothing while it is open, and listens again after', () => {
+    const input = create();
+    window.dispatchEvent(new KeyboardEvent('keydown', { code: 'KeyW' }));
+    expect(input.read().moveY).toBe(1);
+    input.setBlocked(true);
+    expect(input.read().moveY).toBe(0);
+    // Keys pressed on the page while it is open never reach her, not even later.
+    window.dispatchEvent(new KeyboardEvent('keydown', { code: 'KeyD' }));
+    window.dispatchEvent(new KeyboardEvent('keydown', { code: 'Space' }));
+    window.dispatchEvent(new KeyboardEvent('keydown', { code: 'Equal' }));
+    const state = input.read();
+    expect([state.moveX, state.moveY, state.jump, state.run]).toEqual([0, 0, false, false]);
+    expect(input.readZoom()).toBe(0);
+    input.setBlocked(false);
+    expect(input.read()).toMatchObject({ moveX: 0, moveY: 0, jump: false });
+    window.dispatchEvent(new KeyboardEvent('keydown', { code: 'KeyE' }));
+    expect(input.read().interact).toBe(true);
   });
 
   it('still reports a press made after resuming', () => {

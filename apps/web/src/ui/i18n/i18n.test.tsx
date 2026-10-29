@@ -166,7 +166,7 @@ describe('the mode setting', () => {
 describe('<Bi> and <T>', () => {
   it('renders the bare Vietnamese in Vietnamese mode, so screens read as before', () => {
     const { container } = render(<T k="pause.resume" />);
-    expect(container.innerHTML).toBe('Tiếp tục chơi');
+    expect(container.innerHTML).toBe('Quay lại chơi');
   });
 
   it('switches at once with the setting: English, then both lines', () => {

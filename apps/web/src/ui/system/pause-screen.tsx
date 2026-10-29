@@ -1,5 +1,6 @@
-// NEW SCREEN (Master Plan §6 MVP): Tạm dừng, theo mock "Pause Menu" (designs/pause-settings-loading.png,
-// ô 1), hướng A. The game stops rendering while this is open (Master Plan §12). MVP items: resume,
+// NEW SCREEN (Master Plan §6 MVP): the in-game menu (once "Tạm dừng"), after the mock "Pause Menu"
+// (designs/pause-settings-loading.png, ô 1), hướng A. It no longer stops the game (owner, 29/10/2026: the game is
+// online, the world always lives): the world runs on behind it, only her own controls wait. Items: back to the game,
 // sound on/off, language and read-aloud speed (Master Plan §8c), back to a safe spot (a stuck Miu), the Journey and
 // the Achievements, change character (progress is kept), back home;
 // Backpack and full Settings come with their own screens.

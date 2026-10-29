@@ -15,6 +15,7 @@ import {
   Vector3,
   WebGLRenderer,
 } from 'three';
+import { appHidden, onAppVisibilityChange } from '../platform/app-lifecycle';
 import { blockLookup, blockTraversal } from '@miu/voxel/block-table';
 import type { Traversal } from '@miu/voxel/traversal';
 import type { SolidAt } from '@miu/voxel/grid-collision';
@@ -120,7 +121,7 @@ const FOLLOW_STRENGTH_RUN = 0.9;
 const FOLLOW_STRENGTH_WALK = 0.2;
 /** Turning the stick further than this (radians) takes a new walking direction from the view as it is now. */
 const STICK_TURN = 0.45;
-/** Back from a screen open this long, her pet runs up to greet her (ms). */
+/** Back from a screen open this long (or the app away this long), her pet runs up to greet her (ms). */
 const GREET_AFTER_PAUSE_MS = 20_000;
 /** How firmly the camera turns to frame her pet's scene (her and the pet both in view). */
 const PET_SCENE_FOLLOW = 0.6;
@@ -242,8 +243,12 @@ function regionEvents(region: string | undefined): readonly WorldEventKind[] {
 export class Game {
   private disposed = false;
   private started = false;
-  /** Set by `stop()`; the loop only runs while this is false (also when boot finishes mid-pause). */
+  /** Set while the page or app is hidden: the only time the world stops (battery); the loop runs while this is false. */
   private paused = false;
+  /** A screen over the running game takes her keys and touches: she stands still while the world runs on. */
+  private controlsBlocked = false;
+  /** When her controls were last taken by a screen (ms). */
+  private blockedAt = 0;
   private contextLost = false;
   private readonly cleanups: Array<() => void> = [];
   private renderer: WebGLRenderer | null = null;
@@ -252,7 +257,7 @@ export class Game {
   private timer: Timer | null = null;
   private input: PlayerInput | null = null;
   private spotNow: (() => PlayerPosition | null) | null = null;
-  /** When the last pause began (ms), and whether the pet should greet her as the game comes back after a long one. */
+  /** When the app was last hidden (ms), and whether the pet should greet her as she comes back after a long while. */
   private pausedAt = 0;
   private backAfterPause = false;
 
@@ -274,17 +279,34 @@ export class Game {
     }
   }
 
-  /** Pauses rendering while a full-screen screen (Pause, Backpack, challenge) covers the game (Master Plan §12). */
-  stop(): void {
-    if (!this.paused) this.pausedAt = performance.now();
+  /**
+   * A screen over the game (the menu, the backpack, a question, a board) never stops the world (owner, 29/10/2026: the
+   * game is online, the world always lives): other players, bots, NPCs, the pet and the network run on behind it. Only
+   * her own controls are taken while it is open, keys held as it opened let go, so she never walks off on her own while
+   * typing or tapping in it. Coming back from a long one, her pet greets her.
+   */
+  setControlsBlocked(blocked: boolean): void {
+    if (blocked === this.controlsBlocked) return;
+    this.controlsBlocked = blocked;
+    const now = performance.now();
+    if (blocked) this.blockedAt = now;
+    else if (now - this.blockedAt > GREET_AFTER_PAUSE_MS) this.backAfterPause = true;
+    this.input?.setBlocked(blocked);
+  }
+
+  /** The page or app hidden: the loop stops until it shows again (nothing to draw, battery kept). */
+  private hide(): void {
+    if (this.paused) return;
+    this.pausedAt = performance.now();
     this.paused = true;
     this.renderer?.setAnimationLoop(null);
     this.input?.clear();
   }
 
-  /** Restarts rendering after `stop()`. No-op before the first frame is ready, after dispose, or once the context is lost. */
-  resume(): void {
-    if (this.paused && performance.now() - this.pausedAt > GREET_AFTER_PAUSE_MS) this.backAfterPause = true;
+  /** Shown again after `hide()`. No-op before the first frame is ready, after dispose, or once the context is lost. */
+  private show(): void {
+    if (!this.paused) return;
+    if (performance.now() - this.pausedAt > GREET_AFTER_PAUSE_MS) this.backAfterPause = true;
     this.paused = false;
     this.runLoop();
   }
@@ -714,6 +736,7 @@ export class Game {
     const face = Number(params.get('face') ?? Number.NaN);
     if (Number.isFinite(face)) rig.yaw = (face * Math.PI) / 180;
     const input = new PlayerInput(dom.root, dom.joystick, dom.run, dom.jump);
+    input.setBlocked(this.controlsBlocked);
     this.input = input;
     this.cleanups.push(() => input.dispose());
     const autopilot = params.get('autopilot') === '1' ? new Autopilot(entities) : null;
@@ -1462,6 +1485,9 @@ export class Game {
         store.emit({ type: 'ready' });
       }
     };
+    // The page or app hidden (another tab, the app in the background): the world stops until it shows again.
+    this.cleanups.push(onAppVisibilityChange(() => (appHidden() ? this.hide() : this.show())));
+    if (appHidden()) this.hide();
     this.runLoop();
   }
 }

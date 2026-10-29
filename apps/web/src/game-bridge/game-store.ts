@@ -55,7 +55,7 @@ export type WorldState = Readonly<Record<string, TargetState>>;
 /**
  * A boss fight played out in the running world: `staged` (the child faces the boss, the camera frames them both, the
  * game writes their screen spots into the duel anchors each frame), `unavailable` (the boss is not on screen, hidden
- * behind a wall or the game is not up: the fight shows as a card over the paused game), or none.
+ * behind a wall or the game is not up: the fight shows as a card over the running game), or none.
  */
 export type DuelState = 'staged' | 'unavailable' | null;
 

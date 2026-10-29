@@ -61,7 +61,7 @@ export function QuestLayer({
   /** The region on screen: its music plays while no quest is under way. */
   region: string;
   onResponse: (response: StepCompleteResponse) => void;
-  /** True while a screen covers the game (it stops rendering meanwhile). */
+  /** True while a screen covers the game (it runs on behind; only her own controls wait). */
   onOverlayChange: (open: boolean) => void;
   /**
    * True while a boss fight is played out in the running world: no screen covers the game then (it keeps running),

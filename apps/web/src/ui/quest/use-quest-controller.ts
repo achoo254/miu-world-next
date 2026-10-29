@@ -146,7 +146,7 @@ export function useQuestController({ store, data, questId, onResponse, onRetried
     },
     [],
   );
-  // What covers the game (it stops rendering meanwhile): a step screen, the offline retry, the rewards, skill check.
+  // What covers the game (it runs on behind; her own controls wait): a step screen, the offline retry, the rewards, skill check.
   const covers = useRef({ overlay: false, retry: false, finished: false, skillCheck: false });
   const cover = useCallback((part: 'overlay' | 'retry' | 'finished' | 'skillCheck', on: boolean): void => {
     covers.current[part] = on;

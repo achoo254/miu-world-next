@@ -1,5 +1,5 @@
 /*
- * Quest scenes (mock "quest screens"): themed materials over the paused game — a wooden banner for the
+ * Quest scenes (mock "quest screens"): themed materials over the running game — a wooden banner for the
  * title, parchment for words, river stones for numbers, word cards, wooden crates for groups, the NPC
  * speaking in a bubble. Values from tokens.css only; touch targets ≥ 48px.
  */
@@ -164,7 +164,7 @@
 .scene-modal:has(> .scene-close) > .ribbon { max-width: calc(100% - 7rem); }
 
 /*
- * A scene opened over Home rather than over a paused game (the event page, Olympic practice): nothing behind it is
+ * A scene opened over Home rather than over a running game (the event page, Olympic practice): nothing behind it is
  * worth seeing, so its content sits on one frosted board, and its close button stays in the corner while the board
  * scrolls (owner 07/10/2026: Home showed through, no way out).
  */

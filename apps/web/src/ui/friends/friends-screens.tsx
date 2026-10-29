@@ -1,5 +1,5 @@
 // NEW SCREEN, after mock `designs/multiplayer.png` frame 1 (the "Bạn bè" button in the HUD's left rail) and frames
-// 2/9 (the list): the friends list in the game, as a themed scene over the paused game, and as its own page
+// 2/9 (the list): the friends list in the game, as a themed scene over the running game, and as its own page
 // (from Hồ sơ) outside the game.
 import { useEffect } from 'react';
 import { Link } from 'react-router';
@@ -54,7 +54,7 @@ export function useFriendsPrefetch(social: SocialStore, player: string | null, r
   }, [social, player, ready]);
 }
 
-/** The friends list over the paused game: going to a friend closes it. */
+/** The friends list over the running game: going to a friend closes it. */
 export function FriendsDialog({ social, voice = null, fill, player, onClose }: { social: SocialStore; voice?: VoiceManager | null; fill: (text: string) => string; player: string | null; onClose: () => void }) {
   const { t } = useT();
   return (

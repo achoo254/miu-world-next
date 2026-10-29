@@ -1,5 +1,5 @@
 // NEW SCREEN, after mock `designs/multiplayer.png` frames 4 ("Co-op Lobby") and 5 ("Chơi cùng bạn"): a co-op
-// challenge over the paused game, as a themed scene. The lobby: the team with who is in, the challenge (how it is
+// challenge over the running game, as a themed scene. The lobby: the team with who is in, the challenge (how it is
 // played, the team size, bot friends filling free places), the leader's start and its countdown; anyone may step out
 // before it starts and loses nothing. The challenge: the team's places (whose turn, who is away, which bot plays for
 // whom), the clues, questions, ropes or the boss's HP, what the host says after each answer with the line to copy

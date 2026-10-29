@@ -27,3 +27,21 @@
 .modal-backdrop--clear > .modal { pointer-events: auto; }
 /* A ghost button keeps a visible edge on a white dialog, where its usual white border disappears. */
 .modal .btn--ghost { border-color: var(--color-field-edge); }
+
+/* Over the running game (owner, 29/10/2026: the game is online, the world always lives): no dimming and no blur over
+   the world. The backdrop stays as an invisible layer that takes the taps beside a dialog, so the game is never driven
+   by accident; only a soft shade right behind the dialog itself keeps its words easy to read. A dialog without a scrim
+   (a boss fight in the world) keeps letting those taps through. */
+[data-id='play'] .modal-backdrop,
+[data-id='play'] .modal-backdrop--scene,
+[data-id='play'] .modal-backdrop--scene:has(> .scene-sheet) {
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+[data-id='play'] .modal-backdrop:not(.modal-backdrop--clear) > .panel.modal { box-shadow: var(--shadow-panel), var(--shadow-halo); }
+[data-id='play'] .modal-backdrop:not(.modal-backdrop--clear) > .scene-modal:not(.scene-sheet) {
+  border-radius: var(--radius-panel);
+  background: var(--color-scene-halo);
+  box-shadow: var(--shadow-halo);
+}

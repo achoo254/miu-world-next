@@ -1,9 +1,9 @@
-// Shared frame of every learning step (M2.4–M2.8, M3.4), laid out as a quest scene over the paused
+// Shared frame of every learning step (M2.4–M2.8, M3.4), laid out as a quest scene over the running
 // game (mock "quest screens"): the title on a wooden banner, the character who asks and the instruction
 // in a speech bubble (who hops as the step opens and leans in after a wrong try), a trail of leaves for
 // the quest's steps, the play area (it shakes once on a wrong answer), a friendly line after a wrong
 // answer (never red and harsh), and a parchment bar with the support layers and "Làm lại · Kiểm tra".
-// The game stops meanwhile.
+// The game runs on behind it (only her own controls wait).
 import { useEffect, useRef, type MouseEvent, type ReactNode } from 'react';
 import { ListenButton } from '../dialogue/listen-button';
 import { NpcPortrait } from '../dialogue/npc-portrait';

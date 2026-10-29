@@ -656,7 +656,7 @@ const SCREEN_NAMES: Record<string, string> = {
   '26-moderation': 'Màn kiểm duyệt (có báo cáo giả trong hàng đợi)',
   '27-puzzle-clues': 'Câu đố logic có manh mối',
   '28-play-menu': 'Chơi: menu HUD mở (mọi nút cũ trong một menu)',
-  '29-pause': 'Tạm dừng và cài đặt',
+  '29-pause': 'Menu và cài đặt',
   '30-party-quest': 'Tổ đội mở cùng thẻ chơi cả đội',
 };
 

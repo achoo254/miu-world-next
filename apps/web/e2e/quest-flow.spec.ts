@@ -41,7 +41,7 @@ test('meet the parrot, follow the arrow, find the three clues, and the letter op
   await expect(dialogue).toBeVisible();
   await expect(dialogue).toContainText('Chào Mochi!'); // the character's name, never "Miu"
   await expect(page.locator('body')).not.toContainText('Chào Miu');
-  // The in-world label (the way to interact by touch) is hidden while the dialogue covers the paused game.
+  // The in-world label (the way to interact by touch) is hidden while the dialogue covers the running game.
   await expect(page.locator('.npc-label')).toHaveCount(0);
   await page.getByRole('button', { name: 'Tiếp' }).click();
   await page.getByRole('button', { name: 'Tiếp' }).click();

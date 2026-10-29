@@ -1,4 +1,4 @@
-// NEW SCREEN (Sổ sưu tập, plan life-expansion L1): the child's collection book over Home or the paused game,
+// NEW SCREEN (Sổ sưu tập, plan life-expansion L1): the child's collection book over Home or the running game,
 // opened from the Backpack and from Home. A tab per region; each page shows the region's set as ten slots (the
 // thing's picture, name and count once found, a silhouette until then), the page's progress bar, and the set's
 // reward with "Nhận thưởng" once the set is complete, which opens a "Chúc mừng!" card like the region chest's.

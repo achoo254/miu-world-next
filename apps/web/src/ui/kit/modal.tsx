@@ -1,8 +1,9 @@
-// Modal dialog: dimmed backdrop over the game, focus moved in and kept inside (Tab cycles), Esc
-// closes, focus returns to what was focused before. Screens: Pause, Offline, Backpack. The `scene`
-// variant is for quest screens: no white panel, the paused game stays visible behind a light scrim,
-// and the title sits on a banner (mock "quest screens"). Without a scrim (`scrim={false}`, a boss fight played out in
-// the running world) nothing dims the game and a touch beside the dialog goes through to it; focus and Esc stay.
+// Modal dialog: focus moved in and kept inside (Tab cycles), Esc closes, focus returns to what was focused before.
+// Over Home and the other pages a backdrop dims the page; over the running game nothing dims or blurs the world (an
+// invisible layer still takes the taps beside the dialog, and only a soft shade sits right behind it: modal.css). The
+// `scene` variant is for quest screens: no white panel, and the title sits on a banner (mock "quest screens"). Without a
+// scrim (`scrim={false}`, a boss fight played out in the running world) a touch beside the dialog goes through to the
+// game; focus and Esc stay.
 import { useEffect, useId, useRef, type ReactNode } from 'react';
 import './modal.css';
 import './scene.css';
@@ -32,7 +33,7 @@ export function Modal({
   placement?: 'center' | 'bottom' | 'top';
   /** `wide` fits a challenge close-up. */
   size?: 'normal' | 'wide';
-  /** `scene`: themed materials over the paused game instead of a white panel. */
+  /** `scene`: themed materials over the running game instead of a white panel. */
   variant?: 'panel' | 'scene';
   /** Class of the title element (`ribbon` banner by default in the scene variant). */
   titleClass?: string;

@@ -2,7 +2,7 @@
 // thay vì giống như làm nhiệm vụ chính"). When the game stages the fight in the running world (game-bridge `duel`:
 // `staged`), the boss stands there for real: its name and HP over the top, the answers round it as things to play at,
 // the question on a compact card at the bottom. Otherwise (`unavailable`, no game) the same fight shows as a card over
-// the paused game, its answers laid out still. Each question is answered with its play move (content `move`: ném bùa,
+// the running game, its answers laid out still. Each question is answered with its play move (content `move`: ném bùa,
 // chạm cầu, kéo ngọc, nạp chiêu); there is no clock. The server decides every blow: right or wrong, the boss's HP, its
 // line; a right blow lands (a beat of up to 1.2 s in the world, tap to skip) before its "copy into the vở" card. Each
 // question keeps its three support layers (Hướng dẫn, Gợi ý, Đáp án); seeing the answer never stops the fight.

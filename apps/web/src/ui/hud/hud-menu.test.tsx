@@ -58,7 +58,7 @@ describe('HUD menu', () => {
     expect(toggle().getAttribute('aria-expanded')).toBe('false');
 
     fireEvent.click(toggle());
-    fireEvent.click(screen.getByRole('button', { name: 'Tạm dừng · Cài đặt' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Cài đặt · Về nhà' }));
     expect(calls.menu).toHaveBeenCalled();
     fireEvent.click(toggle());
     fireEvent.click(screen.getByRole('button', { name: 'Nhiệm vụ' }));

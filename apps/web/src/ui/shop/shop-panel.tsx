@@ -1,5 +1,5 @@
 // Owner's mock "Cửa hàng" (designs/Journey-Achievements-Shop.png, panels 7–9; the counter in Trung tâm,
-// designs/trung-tam/d-02-cua-hang.png): the child's shop over the paused game or Home. A banner with her coins,
+// designs/trung-tam/d-02-cua-hang.png): the child's shop over the running game or Home. A banner with her coins,
 // the tabs Nổi bật · Trang phục · Phụ kiện · Nhà cửa · Tiêu hao · Gói đặc biệt, a grid of things with their
 // pictures and prices, and a thing's close-up: worn on her own character in 3D (a wearable), its colours (a
 // home style) or its picture (a booster, a bundle), its price and "Mua ngay", and more of the same kind under
