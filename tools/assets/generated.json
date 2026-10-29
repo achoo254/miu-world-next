@@ -234,6 +234,13 @@
     "license": "CC0-1.0"
   },
   {
+    "glob": "generated/ui-art/*.webp",
+    "generator": "tools/assets/build-ui-art.ts",
+    "derivedFrom": [],
+    "license": "LicenseRef-hoandat-all-rights-reserved",
+    "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)"
+  },
+  {
     "glob": "generated/brand/*.png",
     "generator": "tools/assets/render-brand-logo.ts",
     "derivedFrom": [],

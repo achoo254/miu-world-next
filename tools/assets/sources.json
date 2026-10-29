@@ -9,7 +9,8 @@
     "globs": [
       "generated/brand/*.png",
       "generated/share-cards/*.png",
-      "generated/voice/*.m4a"
+      "generated/voice/*.m4a",
+      "generated/ui-art/*.webp"
     ]
   },
   "budget": {

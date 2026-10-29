@@ -35,10 +35,10 @@ describe('runtime asset selection for the web build', async () => {
     for (const dep of deps) expect(shipped).toContain(dep);
   });
 
-  it('keeps the render-only world overview map out of dist, but ships its rendered image for the UI', async () => {
+  it('keeps the render-only world overview map out of dist, but ships the painted island picture for the UI', async () => {
     expect(shipped.some((p) => p.startsWith('generated/world/the-gioi/'))).toBe(false);
     expect(shipped).not.toContain('packs/kenney-castle-kit/2.0/flag-pennant.glb'); // placed only on the overview
-    expect(await runtimeAssetPaths(ASSETS_DIR, manifest, UI_ART_PATHS)).toContain('generated/home/world.png');
+    expect(await runtimeAssetPaths(ASSETS_DIR, manifest, UI_ART_PATHS)).toContain('generated/ui-art/home-island.webp');
   });
 
   it('leaves the rest of the licensed packs out of dist', () => {
@@ -72,6 +72,13 @@ describe('runtime asset selection for the web build', async () => {
     const voice = release.filter((p) => p.startsWith('generated/voice/'));
     expect(voice).toContain('generated/voice/index.json');
     expect(voice.length).toBe(manifest.filter((p) => p.startsWith('generated/voice/')).length);
+  });
+
+  it('ships the painted menu art (Home island, every region backdrop) in a release', async () => {
+    const release = await runtimeAssetPaths(ASSETS_DIR, manifest, UI_ART_PATHS, { review: false });
+    const art = release.filter((p) => p.startsWith('generated/ui-art/'));
+    expect(art).toContain('generated/ui-art/home-island.webp');
+    expect(art.length).toBe(manifest.filter((p) => p.startsWith('generated/ui-art/')).length);
   });
 
   it('ships the link-preview cards in a release, which the pages\' Open Graph tags point at', async () => {

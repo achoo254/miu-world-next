@@ -2,7 +2,8 @@
    (container query), not the window's: a small island gets pins, a big one gets the mock's cards. */
 .world-stage { position: relative; width: 100%; }
 .world-island { position: relative; width: 100%; aspect-ratio: 16 / 10; filter: var(--shadow-island); container-type: inline-size; }
-.world-island-image { width: 100%; height: 100%; object-fit: contain; display: block; user-select: none; }
+/* The painted island fills its own sky edge to edge: a rounded card, the drop shadow following its corners. */
+.world-island-image { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-panel); user-select: none; }
 
 .world-anchor { position: absolute; z-index: 1; width: 0; height: 0; }
 /* The open region sits above the locked ones; an open bubble above everything. */

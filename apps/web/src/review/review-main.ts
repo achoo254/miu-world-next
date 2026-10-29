@@ -11,9 +11,11 @@ import './review.css';
 interface ManifestJson {
   packs: Array<{ id: string; name: string; author: string; version: string; license: string; homepage: string }>;
   files: Array<{ path: string; pack: string; sha256?: string }>;
-  generated: Array<{ path: string; generator: string; sha256?: string }>;
+  generated: Array<{ path: string; generator: string; license: string; sha256?: string }>;
 }
 
+/** Licence of the AI-made files (tools/assets/sources.json `brandArt`), the only files outside the open allowlist. */
+const HOANDAT_LICENSE = 'LicenseRef-hoandat-all-rights-reserved';
 /** The owner's school mock frames (designs/truong-hoc/), bundled into the review build by Vite. */
 const SCHOOL_MOCKS = import.meta.glob<string>('../../../../designs/truong-hoc/{khu,lop,nha}-*.png', { eager: true, query: '?url', import: 'default' });
 const SCHOOL_CAPTIONS: Record<string, string> = {
@@ -324,8 +326,9 @@ function renderLicenses(manifest: ManifestJson): void {
   for (const f of manifest.files) counts.set(f.pack, (counts.get(f.pack) ?? 0) + 1);
   byId('license-summary').textContent =
     `${manifest.packs.length} pack, ${manifest.files.length} file tải về, ${manifest.generated.length} file sinh ra. ` +
-    'Mọi file đều có hash trong manifest; CI chặn file lạ hoặc license ngoài CC0-1.0 / MIT / OFL-1.1. ' +
-    'Ngoại lệ duy nhất: logo, icon app và thẻ chia sẻ có logo là ảnh AI do hoandat giữ mọi quyền (không CC0), xem assets/LICENSES.md.';
+    'Mọi file đều có hash trong manifest; CI chặn file lạ hoặc license ngoài CC0-1.0 / MIT / OFL-1.1, ' +
+    `trừ ${manifest.generated.filter((g) => g.license === HOANDAT_LICENSE).length} file vẽ hoặc đọc bằng AI (logo, icon app, thẻ chia sẻ, giọng đọc, đảo Home, nền khu vực): ` +
+    '“AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)”, xem assets/LICENSES.md.';
   const table = byId('licenses');
   table.append(el('thead', {}, [el('tr', {}, ['Pack', 'Tác giả', 'Phiên bản', 'License', 'Số file', 'Nguồn'].map((h) => el('th', { textContent: h })))]));
   const body = el('tbody');

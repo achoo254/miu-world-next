@@ -32,6 +32,7 @@
     "assets:regions": "tsx tools/assets/render-region-art.ts",
     "assets:pets": "tsx tools/assets/render-pet-art.ts",
     "assets:logo": "tsx tools/assets/render-brand-logo.ts",
+    "assets:ui-art": "tsx tools/assets/build-ui-art.ts",
     "assets:cards": "tsx tools/assets/render-share-cards.ts",
     "seo:lastmod": "tsx tools/seo/update-lastmod.ts",
     "assets:accessories": "tsx tools/assets/render-accessory-art.ts",

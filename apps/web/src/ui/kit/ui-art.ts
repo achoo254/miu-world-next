@@ -6,7 +6,7 @@ import pets from '../../../../../content/pets.json';
 import regions from '../../../../../content/world/regions.json';
 import type { Pet } from '../../../../../packages/schema/src/pet';
 import { petArtPath } from '../../../../../packages/schema/src/pet-art';
-import { REGION_CHEST_ICON, regionBackdropPath } from '../../../../../packages/schema/src/region-art';
+import { REGION_CHEST_ICON } from '../../../../../packages/schema/src/region-art';
 import { UI_ASSET_VERSIONS, versioned } from '../../asset-versions';
 import { assetUrl as servedAssetUrl } from '../../platform/endpoints';
 
@@ -198,13 +198,16 @@ export const SPECIES_ART: Readonly<Record<string, Readonly<Record<MiuPose, strin
 /** The game's logo (Miu's head, `pnpm assets:logo`) beside the animated name on the sign-in screens. */
 export const LOGO_MARK = 'generated/brand/miu-logo-120.png';
 
-/** Home and world-map background: the world overview, one floating island per region (`pnpm assets:home`). */
-export const HOME_ISLAND = 'generated/home/world.png';
+/**
+ * Home and world-map picture: one floating island per region, painted from the world overview render so each region's
+ * hotspot still sits on its island (`pnpm assets:ui-art`). Full-bleed with its own sky, shown as a rounded card.
+ */
+export const HOME_ISLAND = 'generated/ui-art/home-island.webp';
 
-/** Region screen art (`pnpm assets:regions`): each region's backdrop, rendered from its map, and the chest. */
+/** Region screen art: each region's painted backdrop (`pnpm assets:ui-art`, from its map's render), and the chest. */
 // The catalogue itself is validated by `pnpm content:check`; here only ids and the backdrop flag matter.
 export const REGION_BACKDROPS: Readonly<Record<string, string>> = Object.fromEntries(
-  (regions as { regions: Array<{ id: string; backdrop?: unknown }> }).regions.filter((r) => r.backdrop).map((r) => [r.id, regionBackdropPath(r.id)]),
+  (regions as { regions: Array<{ id: string; backdrop?: unknown }> }).regions.filter((r) => r.backdrop).map((r) => [r.id, `generated/ui-art/region-${r.id}.webp`]),
 );
 export const REGION_CHEST = REGION_CHEST_ICON;
 

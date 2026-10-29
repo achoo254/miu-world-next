@@ -16,6 +16,7 @@ const MIME: Record<string, string> = {
   '.json': 'application/json',
   '.glb': 'model/gltf-binary',
   '.png': 'image/png',
+  '.webp': 'image/webp',
   '.bin': 'application/octet-stream',
   '.ogg': 'audio/ogg',
   '.mp3': 'audio/mpeg',
@@ -24,9 +25,9 @@ const MIME: Record<string, string> = {
 
 /**
  * Always shipped: whole generated groups the runtime reads by path (the creator's item pictures by item id, the link-preview
- * cards the pages' Open Graph tags point at).
+ * cards the pages' Open Graph tags point at, the menus' painted island and region backdrops).
  */
-const SHIPPED_PREFIXES = ['generated/atlas/', 'generated/world/', 'generated/characters/', 'generated/sounds/', 'generated/music/', `${VOICE_DIR}/`, ACCESSORY_ART_DIR, `${SHARE_CARD_DIR}/`];
+const SHIPPED_PREFIXES = ['generated/atlas/', 'generated/world/', 'generated/characters/', 'generated/sounds/', 'generated/music/', `${VOICE_DIR}/`, ACCESSORY_ART_DIR, `${SHARE_CARD_DIR}/`, 'generated/ui-art/'];
 /** Shipped with the review pages only: screenshots, renders and measurements for the owner's review. */
 const REVIEW_PREFIX = 'generated/review/';
 /** Maps that only exist to be rendered into an image at build time (the world overview): never shipped. */

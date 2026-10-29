@@ -41716,6 +41716,123 @@
       "bytes": 3912
     },
     {
+      "path": "generated/ui-art/home-island.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "9adcc474a48beba62ec41d85d156aa7098b710f0225a4d132eec745a50491b68",
+      "bytes": 149600
+    },
+    {
+      "path": "generated/ui-art/region-cho-phien.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "77f0b37fc7d4a4ffa32503a12fb1c569549f9a8e3a0c738ec72efe91f47bd593",
+      "bytes": 98426
+    },
+    {
+      "path": "generated/ui-art/region-dao-bi-an.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "2a4d1f2ca0a00146e855c7c859124fdc19ae947032f98d31763acb14958d744e",
+      "bytes": 136024
+    },
+    {
+      "path": "generated/ui-art/region-khu-rung-bi-mat.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "85624760355301c874cf0f0145af9dc8f0724583b86addf6d9ee116a0de9f91e",
+      "bytes": 107820
+    },
+    {
+      "path": "generated/ui-art/region-lang-ven-song.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "677a487f2af38e266a8215561c670af45e49d883023bf52e7e342c49205a0cee",
+      "bytes": 94966
+    },
+    {
+      "path": "generated/ui-art/region-lau-dai.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "d2a7a165a1a5e0df18a78108a287674948e643c86c049d979579b9d9c9a241d2",
+      "bytes": 102764
+    },
+    {
+      "path": "generated/ui-art/region-nha-cua-be.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "508dfccb22d5e7d9274bdded9ddda857bd370ba36b7a0c887659846cb89caf80",
+      "bytes": 119400
+    },
+    {
+      "path": "generated/ui-art/region-nong-trai.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "d86e86d449386f1bf53b025b7e9ff35854dc2f2e4504a78db04e3cb03cb0f598",
+      "bytes": 82214
+    },
+    {
+      "path": "generated/ui-art/region-nui-tuyet.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "29b295a9a98fb7c77eac198e412c8a8228f4978485439cedd4bce531ca7f3ace",
+      "bytes": 101176
+    },
+    {
+      "path": "generated/ui-art/region-thu-vien.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "643ceb0b44a24c8dea995a5fab93e8940a67c621455610844b24e4610aa9a7fd",
+      "bytes": 82050
+    },
+    {
+      "path": "generated/ui-art/region-trung-tam.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "7c6bbb4ca491bcd063a4dd6e4c64bf9693c90c89e2f58377b17032b33ea6c139",
+      "bytes": 135746
+    },
+    {
+      "path": "generated/ui-art/region-truong-hoc.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "996bf068aaa70460e95c2322473e307935de928df3fcad22817ceea3814e2929",
+      "bytes": 132972
+    },
+    {
+      "path": "generated/ui-art/region-xom-mai-am.webp",
+      "license": "LicenseRef-hoandat-all-rights-reserved",
+      "generator": "tools/assets/build-ui-art.ts",
+      "derivedFrom": [],
+      "source": "designs/ui-art (Home island and region backdrops, painted with FLUX.2 klein 4B on the owner's PC): AI-generated for the hoandat ecosystem; owned by hoandat, all rights reserved (not CC0)",
+      "sha256": "c64df6ca1af7be452497eea017ae4d508e4431a876bbfc16a18cbb57d13f6831",
+      "bytes": 112420
+    },
+    {
       "path": "generated/voice/0000827b86c6aa.m4a",
       "license": "LicenseRef-hoandat-all-rights-reserved",
       "generator": "tools/assets/build-voice.ts",
