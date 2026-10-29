@@ -1,64 +1,106 @@
 {
-  "capturedFrom": "7afc1887a4b38be8bffd86c86da6f4bdb5445943",
-  "capturedAt": "2026-10-29T22:19:16+07:00",
-  "reviewedAt": "2026-10-29T22:24:00+07:00",
+  "capturedFrom": "e235ed6c665c03088043ad2b4412feb3d65f4cd7",
+  "capturedAt": "2026-10-29T22:26:44+07:00",
+  "reviewedAt": "2026-10-29T22:31:00+07:00",
   "reviewer": "agent:claude-screen-review",
   "verdict": "pass",
   "findings": [
     {
-      "shot": "360x740/04-home.png",
-      "kind": "overlap",
+      "shot": "360x740/13-olympiad-practice.png",
+      "kind": "off-screen",
       "severity": "note",
-      "text": "Trên khổ 360 px, nhãn tên khu che gần hết đảo (chỉ còn thấy tháp lâu đài); nhãn không đè chữ nhau. Dock 6 nút + \"Thêm\" xếp 4 + 3, vài nhãn xuống hai dòng nên hàng nút không đều.",
+      "text": "Nút Kiểm tra ở dưới mép 740 px. Nằm dưới mép khung đầu của trang cuộn được, tới được bằng cuộn; bố cục giống lần duyệt trước (7afc1887, pass), commit này không đổi bố cục.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/05-world-map.png",
-      "kind": "overlap",
+      "shot": "360x740/20-landing.png",
+      "kind": "off-screen",
       "severity": "note",
-      "text": "Nhãn khu che gần hết đảo trên khổ 360 px; vẹt trang trí chạm nhãn \"Làng Ven Sông\". Tiêu đề trên biển gỗ xuống hai dòng, không bị cắt.",
+      "text": "Nút đăng nhập ở dưới mép 740 px. Nằm dưới mép khung đầu của trang cuộn được, tới được bằng cuộn; bố cục giống lần duyệt trước (7afc1887, pass), commit này không đổi bố cục.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/10-question.png",
+      "shot": "820x1180/04-home.png",
+      "kind": "off-screen",
+      "severity": "note",
+      "text": "Nút Bài hôm nay bị cắt ở mép dưới. Nằm dưới mép khung đầu của trang cuộn được, tới được bằng cuộn; bố cục giống lần duyệt trước (7afc1887, pass), commit này không đổi bố cục.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/05-world-map.png",
+      "kind": "off-screen",
+      "severity": "note",
+      "text": "Thẻ Trường học và Thư viện bị cắt ở mép dưới. Nằm dưới mép khung đầu của trang cuộn được, tới được bằng cuộn; bố cục giống lần duyệt trước (7afc1887, pass), commit này không đổi bố cục.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/21-lesson-page.png",
+      "kind": "off-screen",
+      "severity": "note",
+      "text": "Nút Chơi bài đầu tiên bị cắt ở mép dưới. Nằm dưới mép khung đầu của trang cuộn được, tới được bằng cuộn; bố cục giống lần duyệt trước (7afc1887, pass), commit này không đổi bố cục.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/18-party.png",
       "kind": "shifted",
       "severity": "note",
-      "text": "Nút \"Nghe\" không hiện vì Chromium chụp trên Windows không có giọng đọc tiếng Việt (nút chỉ hiện khi trình duyệt có giọng); lần chụp trước trên Mac có. Code không đổi.",
+      "text": "Một khối xám (thú cưng hoặc bạn đứng chắn camera) che chân Mochi, lần trước không có; không che chữ hay nút. Có từ các commit nhân vật mới, không phải commit giọng đọc.",
       "fixedIn": null
     },
     {
-      "shot": "820x1180/27-puzzle-clues.png",
+      "shot": "360x740/25-online-off.png",
       "kind": "shifted",
       "severity": "note",
-      "text": "Như màn 10: nút \"Nghe\" vắng do máy chụp không có giọng đọc tiếng Việt, không phải thay đổi code.",
+      "text": "Nhân vật 3D giữa màn thấp hơn khoảng 40 px so với lần trước; UI không đổi.",
       "fixedIn": null
     },
     {
-      "shot": "820x1180/11-reward.png",
-      "kind": "other",
+      "shot": "820x1180/30-party-quest.png",
+      "kind": "shifted",
       "severity": "note",
-      "text": "Ô \"Kèm lời mời kết bạn\" và nút \"Khoe kết quả\" có vùng chạm dưới 44 px.",
+      "text": "Nhãn Bông · Tương tác nằm trên đầu thay vì trên thân như lần trước, bong bóng lời không còn; khung chính không đổi.",
       "fixedIn": null
     },
     {
-      "shot": "820x1180/24-weekly-share.png",
-      "kind": "other",
+      "shot": "360x740/29-pause.png",
+      "kind": "raw-text",
       "severity": "note",
-      "text": "Thẻ chia sẻ in \"127.0.0.1:4173\" ở chân thẻ: host của môi trường chụp; bản production in tên miền thật.",
+      "text": "Nhãn Ngôn ngữ / Language và chữ phụ Both lẫn tiếng Anh trên màn tiếng Việt (có từ trước).",
       "fixedIn": null
     },
     {
       "shot": "820x1180/26-moderation.png",
       "kind": "raw-text",
       "severity": "note",
-      "text": "Thẻ báo cáo ở màn kiểm duyệt ghi mã map \"forest-ch1\" thay vì tên tiếng Việt của khu (màn chỉ người kiểm duyệt thấy).",
+      "text": "Dòng Bản đồ hiện mã forest-ch1 thay vì tên bản đồ (có từ trước).",
       "fixedIn": null
     },
     {
-      "shot": "360x740/30-party-quest.png",
-      "kind": "overlap",
+      "shot": "820x1180/24-weekly-share.png",
+      "kind": "other",
       "severity": "note",
-      "text": "Thẻ nhiệm vụ đội bị cắt ở dòng cuối, nhãn Tương tác sát đáy thẻ; giống lần trước.",
+      "text": "Thẻ chia sẻ in 127.0.0.1:4173: là origin của server E2E lúc chụp; production in tên miền thật.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/12-event-panel.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dòng phụ xám tím nhạt trên nền kem tương phản thấp, khó đọc với người lớn tuổi.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/22-friends-invite.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Ô link mời cắt ở mép phải; lấy đủ link bằng nút Chia sẻ.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/09-dialogue.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Hội thoại mẫu của E2E có {name} nên không có giọng ghi sẵn; nút Nghe không hiện như trước (Chromium không có giọng vi-VN cục bộ). Giọng ghi sẵn kiểm trên production.",
       "fixedIn": null
     }
   ]
