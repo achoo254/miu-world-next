@@ -13,16 +13,16 @@ import { gameSettled, newPlayer, type ScreenSize } from './screen-session';
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 const OUT_DIR = path.join(REPO_ROOT, 'docs/store/screenshots');
 
-/** Store slots: CSS viewport × device scale = the store's pixel size. */
+/** Store slots: CSS viewport × device scale = the store's pixel size, sideways (the game is played in landscape only). */
 const DEVICES: ReadonlyArray<{ dir: string; size: Required<ScreenSize> }> = [
-  // App Store iPhone 6.9" (1320 × 2868), the size App Store Connect requires.
-  { dir: 'ios-iphone-6.9', size: { width: 440, height: 956, scale: 3 } },
-  // App Store iPhone 6.5" (1284 × 2778).
-  { dir: 'ios-iphone-6.5', size: { width: 428, height: 926, scale: 3 } },
-  // App Store iPad 13" (2064 × 2752): required because the app runs on iPad.
-  { dir: 'ios-ipad-13', size: { width: 1032, height: 1376, scale: 2 } },
-  // Google Play phone, 9:16 (1080 × 1920).
-  { dir: 'play-phone', size: { width: 360, height: 640, scale: 3 } },
+  // App Store iPhone 6.9" (2868 × 1320), the size App Store Connect requires.
+  { dir: 'ios-iphone-6.9', size: { width: 956, height: 440, scale: 3 } },
+  // App Store iPhone 6.5" (2778 × 1284).
+  { dir: 'ios-iphone-6.5', size: { width: 926, height: 428, scale: 3 } },
+  // App Store iPad 13" (2752 × 2064): required because the app runs on iPad.
+  { dir: 'ios-ipad-13', size: { width: 1376, height: 1032, scale: 2 } },
+  // Google Play phone, 16:9 (1920 × 1080).
+  { dir: 'play-phone', size: { width: 640, height: 360, scale: 3 } },
 ];
 
 /** The 3D scenes drawn at the game's best preset (view distance, shadows, far horizon) for the store pictures. */

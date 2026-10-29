@@ -1,5 +1,5 @@
-// The main screens before a release (docs/screen-review.md): each one pictured on an upright phone (360 × 740) and an
-// upright iPad (820 × 1180), with facts read from its DOM, for an agent to look at and for the review page. Not a
+// The main screens before a release (docs/screen-review.md): each one pictured on a phone on its side (740 × 360) and
+// an iPad on its side (1180 × 820), the game being played in landscape only, with facts read from its DOM, for an agent to look at and for the review page. Not a
 // test of the game: a screen that cannot be reached is noted as missing with its reason, and the run goes on. Run by
 // hand (`pnpm --filter @miu/web screens`) before a release, and nightly on CI as a run-through (its pictures kept as
 // an artifact only). Fake accounts in the in-memory database only.
@@ -22,7 +22,7 @@ const SHOT_DIR = process.env.MIU_SCREENS_LANG
  * The sizes pictured: a phone and an iPad upright. `MIU_SCREENS_SIZES=1600x1000,…` pictures other sizes instead (a
  * desktop check by hand); only the two default sizes are reviewed before a release (docs/screen-review.md).
  */
-const VIEWPORTS: ReadonlyArray<{ width: number; height: number }> = (process.env.MIU_SCREENS_SIZES ?? '360x740,820x1180').split(',').map((size) => {
+const VIEWPORTS: ReadonlyArray<{ width: number; height: number }> = (process.env.MIU_SCREENS_SIZES ?? '740x360,1180x820').split(',').map((size) => {
   const [width = 0, height = 0] = size.split('x').map(Number);
   if (!(width > 0 && height > 0)) throw new Error(`MIU_SCREENS_SIZES: not a size: ${size}`);
   return { width, height };

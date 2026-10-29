@@ -12,8 +12,8 @@ import { readStats, waitReady } from './stats';
 const RATES = [4, 6];
 /** iPad Gen 10 (the reference device, 2026-09-29) and the POC phone viewport. */
 const DEVICES = [
-  { name: 'ipad-gen10', viewport: { width: 820, height: 1180 }, deviceScaleFactor: 2 },
-  { name: 'phone', viewport: { width: 412, height: 915 }, deviceScaleFactor: 2.625 },
+  { name: 'ipad-gen10', viewport: { width: 1180, height: 820 }, deviceScaleFactor: 2 },
+  { name: 'phone', viewport: { width: 915, height: 412 }, deviceScaleFactor: 2.625 },
 ] as const;
 const QUALITIES = ['low', 'mid', 'high'] as const;
 const SECONDS = Number(process.env.PERF_SECONDS ?? 60);
@@ -105,7 +105,7 @@ test('perf matrix (CPU throttle × quality)', async ({ browser }) => {
     environment: {
       gpu,
       note: 'CPU throttling emulates a slower phone CPU only; GPU, thermals and battery are not emulated.',
-      viewport: 'ipad-gen10 820x1180 @2 và phone 412x915 @2.625 (mobile, touch)',
+      viewport: 'ipad-gen10 1180x820 @2 và phone 915x412 @2.625 (mobile, touch), màn ngang',
       route: 'autopilot: spawn → bridge → parrot → ancient tree → back, alternating walk/run every 8 s',
     },
     budget: BUDGET,

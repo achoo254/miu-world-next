@@ -45,6 +45,7 @@ Gom lại, hỏi một lần: thay đổi cách thu thập/chia sẻ dữ liệu
 
 ## Dễ vấp
 
+- Game chỉ chơi màn ngang (29/10/2026): E2E và ảnh chụp dùng khổ ngang (máy cảm ứng cầm dọc bị lớp phủ xoay ngang chặn); mở hộp thoại trong game không dừng game. Luật bố cục: `docs/design-guidelines.md` §Chỉ chơi màn ngang.
 - Trên Windows chưa bật Developer Mode, test symlink trong `tools/assets/check-assets.test.ts` tự skip (không tạo được symlink); CI (Ubuntu) vẫn chạy. Skip này không có nghĩa là gate symlink đã được kiểm trên máy local.
 - Dữ liệu dev (tài khoản, hồ sơ, tiến độ) nằm ở `.data/pglite` của **từng** worktree: worktree khác có database riêng, không dùng chung với `main`. Không xóa `.data/pglite`; lần duyệt cần dữ liệu giả thì chạy server với `PGLITE_DIR=.data/pglite-review` và chỉ xóa thư mục đó. E2E dùng database trong RAM (`PGLITE_DIR=memory`), tắt là mất. Lúc khởi động server in dòng `database: …` cho biết đang mở database nào và có phải vừa tạo rỗng không.
 - `render-preview.ts` và perf test tự sinh lại manifest khi chạy xong; nếu tự sửa file trong `assets/generated/` bằng cách khác thì phải chạy `pnpm assets:manifest`.

@@ -16,7 +16,7 @@ const OUT = path.join(ROOT, 'assets/generated/review/map-budget.json');
 /** Master Plan §12 at High; Mid keeps the same ceiling (docs/code-standards.md). */
 const BUDGET = { maxDrawCalls: 150, maxTriangles: 150_000 };
 /** iPad Gen 10, the reference device, without touch so a mouse drag turns the camera. */
-const VIEWPORT = { width: 820, height: 1180 };
+const VIEWPORT = { width: 1180, height: 820 };
 /** 45° per drag (camera-rig.ts turns 0.005 rad per pixel), eight drags make a full circle. */
 const DRAG_PX = Math.round(Math.PI / 4 / 0.005);
 const TURNS = 8;
@@ -85,7 +85,7 @@ test('render budget of every map (draw calls, triangles, GPU memory)', async ({ 
     generatedAt: new Date().toISOString(),
     environment: {
       gpu,
-      viewport: 'ipad-gen10 820x1180 @2, mouse',
+      viewport: 'ipad-gen10 1180x820 @2, mouse',
       note: 'A dev machine GPU counts some 25 more draw calls than CI software GL at the same view; FPS is measured on the iPad (DEVICE-01), not here.',
       route: `spawn and every chapter start; ${TURNS} turns of 45°, ${SAMPLES_PER_TURN} samples every ${SAMPLE_MS} ms after each`,
     },

@@ -9,7 +9,7 @@ import { freshChild } from './quest-api';
 import { waitReady } from './stats';
 import { tap, touchDrag } from './touch';
 
-test.use({ storageState: { cookies: [], origins: [] }, viewport: { width: 820, height: 1180 }, hasTouch: true, isMobile: false });
+test.use({ storageState: { cookies: [], origins: [] }, viewport: { width: 1180, height: 820 }, hasTouch: true, isMobile: false });
 
 const SHOTS = fileURLToPath(new URL('../../../.data/review-shots/', import.meta.url));
 mkdirSync(SHOTS, { recursive: true });

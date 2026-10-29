@@ -626,7 +626,7 @@ interface ScreenShots {
   shots: Array<{ shot: string; screen: string; status: 'ok' | 'missing'; reason?: string }>;
 }
 
-const SCREEN_SIZES = ['360x740', '820x1180'] as const;
+const SCREEN_SIZES = ['740x360', '1180x820'] as const;
 const SCREEN_NAMES: Record<string, string> = {
   '01-login': 'Đăng nhập',
   '02-players': 'Chọn người chơi',

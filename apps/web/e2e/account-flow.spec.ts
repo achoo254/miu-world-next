@@ -15,7 +15,7 @@ const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..
 const SHOT_DIR = path.join(REPO_ROOT, 'assets/generated/review/ui');
 const entities = JSON.parse(readFileSync(path.join(REPO_ROOT, 'assets/generated/world/forest-ch1/entities.json'), 'utf8')) as WorldEntities;
 
-if (REVIEW_SHOTS) test.use({ viewport: { width: 820, height: 1180 }, deviceScaleFactor: 1, hasTouch: true });
+if (REVIEW_SHOTS) test.use({ viewport: { width: 1180, height: 820 }, deviceScaleFactor: 1, hasTouch: true });
 
 async function shot(page: Page, name: string): Promise<void> {
   if (REVIEW_SHOTS) mkdirSync(SHOT_DIR, { recursive: true });

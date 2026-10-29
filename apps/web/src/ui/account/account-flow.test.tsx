@@ -19,8 +19,7 @@ vi.mock('../../game/game', () => ({
     async start() {
       gameLifecycle.started += 1;
     }
-    stop() {}
-    resume() {}
+    setControlsBlocked() {}
     currentSpot() {
       return null;
     }
