@@ -1,6 +1,8 @@
-// The character lines `pnpm assets:voice` reads aloud, and who reads each one. A line is the Vietnamese as the
-// screen shows it (speech.ts hashes the shown text), so `{who}` is filled with the character's name here; lines that
-// address the player by `{name}` differ per player and stay with the device voice. Each speaker keeps one voice
+// The lines `pnpm assets:voice` reads aloud, and who reads each one: the characters' lines, and what a lesson step
+// reads to the player behind its "Nghe" button (a challenge's question, a riddle, a reading and its passage, a speaking
+// step with its hints, a decision and its consequences). A line is the Vietnamese exactly as the screen hands it to
+// speech.ts, which hashes it, so `{who}` is filled with the character's name here; lines that address the player by
+// `{name}` differ per player and stay with the device voice. Each speaker keeps one voice
 // everywhere: content/voice/cast.json pins a voice by name, otherwise the speaker's title or the character's own
 // description picks a male or female pool and the name picks within it, so no list needs keeping by hand.
 import { readFileSync } from 'node:fs';
@@ -18,6 +20,8 @@ export const VoiceCast = z.strictObject({
   /** Built-in VieNeu-TTS v3 Turbo voices; no voice is cloned from a real person. */
   female: z.array(VoiceName).min(1),
   male: z.array(VoiceName).min(1),
+  /** Who reads the lesson steps: questions, riddles, passages and lines with no speaker. */
+  narrator: VoiceName,
   /** Speakers whose title says nothing (most animals) pick from both pools. */
   speakers: z.record(z.string(), VoiceName).default({}),
   /** Words the model reads wrong, spelt the way it should say them (only the audio changes, never the screen). */
@@ -73,9 +77,15 @@ export function respell(text: string, say: Readonly<Record<string, string>>): st
   return Object.entries(say).reduce((out, [word, spoken]) => out.replaceAll(word, spoken), text);
 }
 
+/** The speaker the narrator reads as: a line with no character of its own. */
+export const NARRATOR = '';
+
 /**
- * Every character line of the published quests (dialogue lines and the replies to a choice, spoken by the scene's
- * first speaker) and of the characters' everyday lines, once each; the first speaker found keeps a shared line.
+ * Every line of the published quests and the characters' everyday lines, once each; the first speaker found keeps a
+ * shared line. Characters: dialogue lines, and the replies to a choice (spoken by the scene's first speaker). Lesson
+ * steps, as their screens pass them to the Listen button (apps/web/src/ui/challenge): a challenge's prompt (not a
+ * minigame's, which has no button), a riddle's and a reading's question, a reading's own passage or the quest text it
+ * names, a speaking step's prompt and hints on separate lines, and a decision's prompt and consequences (its speaker's).
  */
 export function collectVoiceLines(cast: VoiceCast = readCast(), contentDir = CONTENT_DIR): VoiceLine[] {
   const npcFiles = readNpcFiles(path.join(contentDir, 'npcs'));
@@ -97,16 +107,42 @@ export function collectVoiceLines(cast: VoiceCast = readCast(), contentDir = CON
       if (seen.text !== text) throw new Error(`voice key collision ${key}: "${seen.text}" / "${text}"`);
       return;
     }
-    lines.set(key, { key, text, spoken: respell(text, cast.say), speaker, voice: voiceFor(speaker, cast, described) });
+    const voice = speaker === NARRATOR ? cast.narrator : voiceFor(speaker, cast, described);
+    lines.set(key, { key, text, spoken: respell(text, cast.say), speaker, voice });
   };
   for (const quest of readQuestDefinitions(path.join(contentDir, 'quests'))) {
     // Only quests the game plays: drafts are not shown yet, stubs have no steps.
     if (quest.status !== 'active') continue;
     for (const step of quest.steps) {
-      if (step.kind !== 'dialogue') continue;
-      for (const line of step.lines) add(line.text, line.speaker);
-      const first = step.lines[0]?.speaker ?? '';
-      for (const choice of step.choices) if (choice.reply) add(choice.reply, first);
+      switch (step.kind) {
+        case 'dialogue': {
+          for (const line of step.lines) add(line.text, line.speaker);
+          const first = step.lines[0]?.speaker ?? NARRATOR;
+          for (const choice of step.choices) if (choice.reply) add(choice.reply, first);
+          break;
+        }
+        case 'challenge':
+          if (step.mechanic !== 'minigame') add(step.prompt, NARRATOR);
+          break;
+        case 'riddle':
+          add(step.question, NARRATOR);
+          break;
+        case 'read': {
+          add(step.question, NARRATOR);
+          const passage = step.text ?? (step.textRef ? quest.texts?.[step.textRef]?.body : undefined);
+          if (passage) add(passage, NARRATOR);
+          break;
+        }
+        case 'speak':
+          add([step.prompt, ...step.hints].join('\n'), NARRATOR);
+          break;
+        case 'decision':
+          add(step.prompt, step.speaker ?? NARRATOR);
+          for (const choice of step.choices) add(choice.consequence, step.speaker ?? NARRATOR);
+          break;
+        default:
+          break;
+      }
     }
   }
   for (const file of npcFiles) {

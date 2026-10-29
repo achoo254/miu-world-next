@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { collectVoiceLines, genderOfDescription, readCast, respell, voiceFor, type VoiceCast } from './voice-lines';
 
-const cast: VoiceCast = { female: ['Trúc Ly', 'Ngọc Huyền'], male: ['Hải Đăng', 'Thiện Minh'], speakers: { 'Vẹt': 'Mai Anh' }, say: { 'Tò He': 'Tò He' } };
+const cast: VoiceCast = { female: ['Trúc Ly', 'Ngọc Huyền'], male: ['Hải Đăng', 'Thiện Minh'], narrator: 'Trúc Ly', speakers: { 'Vẹt': 'Mai Anh' }, say: { 'Tò He': 'Tò He' } };
 
 describe('voice cast', () => {
   it('pins a voice by name, else picks the pool from the title, else from the description', () => {
@@ -36,7 +36,14 @@ describe('collectVoiceLines', () => {
   });
 
   it('casts only voices of the cast file', () => {
-    const voices = new Set([...readCast().female, ...readCast().male, ...Object.values(readCast().speakers)]);
+    const voices = new Set([...readCast().female, ...readCast().male, readCast().narrator, ...Object.values(readCast().speakers)]);
     expect(lines.every((l) => voices.has(l.voice))).toBe(true);
+  });
+  it('reads the lesson steps in the narrator voice, as their screens hand them to the Listen button', () => {
+    const narrated = lines.filter((l) => l.speaker === '');
+    expect(narrated.length).toBeGreaterThan(1000);
+    expect(narrated.every((l) => l.voice === readCast().narrator)).toBe(true);
+    // A speaking step reads its prompt and hints in one go (speak-step.tsx joins them with line breaks).
+    expect(narrated.some((l) => l.text.length > 300)).toBe(true);
   });
 });
