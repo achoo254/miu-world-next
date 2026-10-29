@@ -1,5 +1,5 @@
-/* Home (M1.1): values from tokens.css only. Wide screens: the world stage over the rail (a row), today's quests
-   beside them; narrower ones stack the stage, today's quests and the rail so the island stays big. */
+/* Home (M1.1): values from tokens.css only. Wide screens: the world stage, the big play button and the dock in a
+   column, today's quests beside them; narrower ones stack them (dock before the quests) so the island stays big. */
 .home {
   position: relative;
   z-index: 1;
@@ -37,55 +37,134 @@
 .home-main {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-areas: 'stage' 'today' 'rail';
+  grid-template-areas: 'stage' 'play' 'rail' 'side';
   gap: var(--space-md);
   align-items: start;
 }
 .home-main .world-stage { grid-area: stage; }
-.home-today { grid-area: today; }
+.home-play { grid-area: play; }
+.home-side { grid-area: side; display: flex; flex-direction: column; gap: var(--space-md); min-width: 0; }
 .home-rail { grid-area: rail; }
 @media (min-width: 64rem) {
-  /* The island first and as wide as the row allows, the rail as a row of buttons under it, today's quests beside
-     both. A rail down the left grew with every new button (eleven by October) and pushed the island below the
-     fold or, in two columns, narrowed it until its region cards shrank to pins (owner 07/10/2026). */
-  .home-main { grid-template-columns: minmax(0, 1fr) clamp(16rem, 22vw, 22rem); grid-template-rows: auto 1fr; grid-template-areas: 'stage today' 'rail today'; }
-  /* A fixed width: a longer label (Hành trình, Thành tích) wraps instead of widening its button. */
-  .home-main .home-rail-item { width: 5.5rem; min-height: 4.75rem; padding: var(--space-xs); font-size: var(--text-sm); text-align: center; overflow-wrap: anywhere; }
+  /* The island first and as wide as the row allows, the big play button over its lower edge, the dock of six under
+     it, today's quests beside all three. Fewer, bigger buttons: the rest sit behind "Thêm" (owner 29/10/2026). */
+  .home-main { grid-template-columns: minmax(0, 1fr) clamp(16rem, 24vw, 23rem); grid-template-rows: auto auto 1fr; grid-template-areas: 'stage side' 'play side' 'rail side'; }
+  /* One row of seven: the buttons share the width rather than wrapping "Thêm" onto a line of its own. */
+  .home-rail { display: flex; justify-content: center; }
+  .home-rail .home-rail-item { flex: 1 1 0; min-width: 0; }
 }
 
-/* The child's character waves from the empty sky at the stage's lower left, as in the mock. The render has
-   a flat background, so it keeps its round frame. Phones leave that corner to the island. */
-.home-hero { position: absolute; left: 0; bottom: 0; z-index: 4; width: clamp(5rem, 14%, 8.5rem); pointer-events: none; }
-.home-hero .miu-portrait { width: 100%; height: auto; aspect-ratio: 1; margin: 0; }
+/* Region cards on Home: name only, a size smaller, so the island shows between them (the subject is still read out
+   and shown on the world map). */
+.home .world-marker--open .world-marker-sub { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@container (min-width: 40rem) {
+  .home .world-marker--open { min-height: 2.75rem; font-size: var(--text-body); border-radius: var(--radius-pill); box-shadow: var(--shadow-label), 0 4px 0 var(--color-field-edge); }
+}
+
+/* The child's character waves from the stage's lower left, on a glowing pedestal, as in the mock. Phones leave that
+   corner to the island. The play button sits under the island, never over its region cards. */
+.home-hero { position: absolute; left: 0; bottom: 0; z-index: 4; width: clamp(5.5rem, 15%, 9.5rem); pointer-events: none; }
+.home-hero .miu-portrait { position: relative; width: 100%; height: auto; aspect-ratio: 1; margin: 0; border: 4px solid var(--color-surface); box-shadow: var(--shadow-material); }
+.home-hero-pedestal {
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  width: 120%;
+  aspect-ratio: 3 / 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, var(--color-star) 0%, var(--color-primary-top) 45%, transparent 72%);
+  opacity: 0.75;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .home-hero .miu-portrait { animation: home-hero-bob 2.6s ease-in-out infinite; }
+  .home-hero-pedestal { animation: home-pedestal-glow 2.6s ease-in-out infinite; }
+}
+@keyframes home-hero-bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -0.4rem; } }
+@keyframes home-pedestal-glow { 0%, 100% { opacity: 0.55; } 50% { opacity: 0.9; } }
 @media (max-width: 40rem) {
   .home-hero { display: none; }
   /* Every pixel of width goes to the island, so its markers keep apart. */
   .home { padding-inline: 0; }
-  .home-top, .home-today, .home-rail { margin-inline: var(--space-sm); }
+  .home-top, .home-side, .home-rail, .home-play { margin-inline: var(--space-sm); }
 }
 
-.home-rail { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-sm); }
+/* "Chơi tiếp" / "Chơi ngay": the one thing to tap, big, glossy and gently pulsing. */
+.home-play {
+  justify-self: center;
+  position: relative;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-width: min(100%, 22rem);
+  min-height: 4.5rem;
+  box-sizing: border-box;
+  padding: var(--space-sm) var(--space-2xl);
+  border: 4px solid var(--color-surface);
+  border-radius: var(--radius-pill);
+  background: linear-gradient(180deg, var(--color-primary-top) 0%, var(--color-primary) 60%, var(--color-primary-warm) 100%);
+  color: var(--color-on-primary);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 0 3px 0 var(--color-primary-edge);
+  box-shadow: var(--shadow-primary);
+  touch-action: manipulation;
+  transition: transform var(--duration-press) ease-out;
+}
+.home-play:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--color-primary-edge); }
+.home-play:focus-visible { box-shadow: var(--focus-ring); outline: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .home-play { animation: home-play-pulse 1.8s ease-in-out infinite; }
+  .home-play:active { animation: none; }
+}
+@keyframes home-play-pulse { 0%, 100% { scale: 1; } 50% { scale: 1.05; } }
+
+/* The dock: six chunky 3D buttons, each icon on its own coloured tile. */
+.home-rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); justify-items: center; gap: var(--space-sm); }
+.home-rail .home-rail-item { width: 100%; max-width: 6.25rem; }
 .home-rail-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: var(--space-xs);
-  min-width: 5.5rem;
-  min-height: 5.5rem;
+  width: 6.25rem;
+  min-height: 6.25rem;
   box-sizing: border-box;
-  padding: var(--space-sm);
+  padding: var(--space-sm) var(--space-xs);
+  border: 3px solid var(--color-surface);
   border-radius: var(--radius-tile);
-  background: var(--color-surface-glass);
+  background: var(--color-surface);
   color: var(--color-ink);
   font-family: var(--font-display);
+  font-size: var(--text-sm);
   font-weight: 800;
+  line-height: 1.15;
+  text-align: center;
   text-decoration: none;
-  box-shadow: var(--shadow-tile);
+  overflow-wrap: anywhere;
+  box-shadow: 0 6px 0 var(--color-field-edge), var(--shadow-label);
+  touch-action: manipulation;
+  transition: transform var(--duration-press) ease-out;
 }
+.home-rail-item .icon { padding: var(--space-xs); border-radius: var(--radius-field); background: var(--color-tile-2); }
+.home-rail-item:nth-child(3n + 1) .icon { background: var(--color-tile-1); }
+.home-rail-item:nth-child(3n + 3) .icon { background: var(--color-tile-3); }
+.home-rail-item:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--color-field-edge); }
 .home-rail-item:focus-visible { box-shadow: var(--focus-ring); outline: none; }
-/* "Cửa hàng" opens a screen over Home: a button dressed as the rail's links. */
-button.home-rail-item { border: 0; font-size: inherit; cursor: pointer; touch-action: manipulation; }
+/* "Cửa hàng", "Thêm" and the sheet's screens open over Home: buttons dressed as the dock's links. */
+button.home-rail-item { font: inherit; font-family: var(--font-display); font-size: var(--text-sm); font-weight: 800; cursor: pointer; }
+.home-rail-item .mail-rail-badge { z-index: 1; }
+
+/* "Thêm": the rest of the ways out, as the same chunky buttons in a grid. */
+.home-more-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-md); padding-bottom: var(--space-sm); }
 
 .home-today { gap: var(--space-sm); padding: var(--space-lg); }
 .today-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-xs); }

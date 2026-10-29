@@ -11,6 +11,8 @@
   --color-primary: #e0397a;
   --color-primary-top: #f2609a;
   --color-primary-edge: #a8235a;
+  /* The warm end of Home's big play button (pink to orange). */
+  --color-primary-warm: #ff8a3d;
   --color-secondary: #2f7cf6;
   --color-secondary-top: #4c93ff;
   --color-secondary-edge: #1a55b8;

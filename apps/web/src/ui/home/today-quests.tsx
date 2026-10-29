@@ -1,10 +1,9 @@
 // M1.1 "Nhiệm vụ hôm nay": up to three quests the child can play now, each with its XP reward from the
-// server, and one big button into the current one.
+// server; the big button into the current one sits under the island (`HomePlayButton`).
 import { Link } from 'react-router';
 import type { QuestSummary } from '@miu/schema/game';
 import { T } from '../i18n/use-t';
 import { Icon } from '../kit/art';
-import { buttonClass } from '../kit/button';
 import { playPath, say, stepProgress, type PlayerData } from '../player/player-data';
 import { TopicLabel, topicOf } from '../player/topic-label';
 import { Say, summaryOf, titleOf } from '../quest/content-text';
@@ -70,9 +69,6 @@ export function TodayQuests({ data }: { data: PlayerData }) {
               <QuestRow key={summary.quest.id} summary={summary} first={i === 0} data={data} />
             ))}
           </ol>
-          <Link to={playPath(current)} className={buttonClass('primary', { block: true })} data-id="home-today-play">
-            <T k={current.state === 'in-progress' ? 'home.continue' : 'home.start'} />
-          </Link>
         </>
       ) : (
         <p className="hint">
@@ -80,5 +76,17 @@ export function TodayQuests({ data }: { data: PlayerData }) {
         </p>
       )}
     </section>
+  );
+}
+
+/** The big button under the island into the current quest ("Chơi tiếp", or "Chơi ngay" for a new one); none when all are done. */
+export function HomePlayButton({ data }: { data: PlayerData }) {
+  const current = todayQuests(data.quests)[0];
+  if (!current) return null;
+  return (
+    <Link to={playPath(current)} className="home-play" data-id="home-today-play">
+      <Icon name="glowingStar" size={40} />
+      <T k={current.state === 'in-progress' ? 'home.continue' : 'home.start'} />
+    </Link>
   );
 }

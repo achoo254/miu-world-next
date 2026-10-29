@@ -1,5 +1,5 @@
 import { Profiler, act } from 'react';
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { CharacterDto, QuestSummary } from '@miu/schema/game';
@@ -82,9 +82,16 @@ describe('Home', () => {
       return new Response(JSON.stringify(body ?? { error: 'not-found' }), { status: body ? 200 : 404 });
     });
     renderAt('/home');
-    expect((await screen.findByRole('link', { name: /Hành trình/ })).getAttribute('href')).toBe('/journey');
-    expect(screen.getByRole('link', { name: /Thành tích/ }).getAttribute('href')).toBe('/achievements');
+    expect((await screen.findByRole('link', { name: /Thành tích/ })).getAttribute('href')).toBe('/achievements');
     expect((await screen.findByLabelText('2 thành tích chờ nhận thưởng')).textContent).toBe('2');
+    // The journey and the other less used screens wait behind "Thêm", so the dock keeps six big buttons.
+    expect(screen.queryByRole('link', { name: /Hành trình/ })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'Thêm' }));
+    const more = screen.getByRole('dialog', { name: 'Khám phá thêm' });
+    expect(within(more).getByRole('link', { name: /Hành trình/ }).getAttribute('href')).toBe('/journey');
+    expect(within(more).getByRole('link', { name: /Bạn bè trong làng/ }).getAttribute('href')).toBe('/village');
+    expect(within(more).getByRole('button', { name: 'Luyện Olympic' })).toBeTruthy();
+    expect(within(more).getByRole('button', { name: 'Hộp thư' })).toBeTruthy();
   });
 
   it('opens the shop from the rail over Home, with the coins of the server', async () => {
@@ -127,7 +134,8 @@ describe('Home', () => {
     expect(screen.getByRole('button', { name: /Nhà của Mochi/ }).textContent).toBe('Nhà của MochiNhà · Lịch học');
     expect(document.querySelector('.world-marker--locked')).toBeNull();
     // The rail of the mock, without the pieces not built yet (diamonds, streak); the olympiad practice event is.
-    for (const name of ['Về nhà', 'Nhiệm vụ', 'Bản đồ', 'Ba lô']) expect(screen.getByRole('link', { name })).toBeTruthy();
+    for (const name of ['Về nhà', 'Nhiệm vụ', 'Bản đồ', 'Ba lô', 'Thành tích']) expect(screen.getByRole('link', { name })).toBeTruthy();
+    expect(document.querySelectorAll('.home-rail > .home-rail-item')).toHaveLength(7);
     expect(document.body.textContent).not.toMatch(/Kim cương|chuỗi ngày/i);
   });
 

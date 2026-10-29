@@ -1,6 +1,8 @@
-// M1.1 (Trang chủ): the world stage with its regions, the child's character standing in it, a side rail
-// (Về nhà, Nhiệm vụ, Bản đồ, Ba lô, Cửa hàng: the shop of mock panel 7 over Home; Hành trình and Thành tích, the
-// latter with how many achievements wait to be claimed), today's quests under "Bài hôm nay" (one lesson on another
+// M1.1 (Trang chủ): the world stage with its regions, the child's character on a glowing pedestal in it, one big
+// "Chơi tiếp" / "Chơi ngay" button under the island, a dock of six chunky buttons (Về nhà, Nhiệm vụ, Bản đồ, Ba lô,
+// Cửa hàng: the shop of mock panel 7 over Home; Thành tích with how many achievements wait to be claimed) and "Thêm"
+// for the rest (Bạn bè trong làng, Hành trình, Sự kiện, Luyện Olympic, Hộp thư; owner 29/10/2026: fewer, bigger
+// buttons, more eye-catching for young players), today's quests under "Bài hôm nay" (one lesson on another
 // map each day), and the child's level, XP and coins, with the title of her latest region chest and a "Nhận thưởng" badge over each
 // region with a chest tier to open. Home is a React screen
 // over a pre-rendered island image, not a second 3D scene (validation decision `home_scene`). Not in the
@@ -10,6 +12,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { Icon, MiuPortrait } from '../kit/art';
+import { Modal } from '../kit/modal';
 import { PageLoading, SkyScene } from '../kit/sky-scene';
 import { PlayerBadge } from '../player/player-badge';
 import { currentQuest, playPath, questForRegion, usePlayer } from '../player/player-data';
@@ -21,7 +24,7 @@ import { T, useT } from '../i18n/use-t';
 import { SettingsDialog } from '../system/settings-dialog';
 import { WorldStage } from '../world/world-stage';
 import { DailyLessonCard } from './daily-lesson';
-import { TodayQuests } from './today-quests';
+import { HomePlayButton, TodayQuests } from './today-quests';
 import { ProgressResponse } from '@miu/schema/game';
 import { api } from '../api-client';
 import { useLiveEvents } from '../event/event-api';
@@ -47,6 +50,13 @@ export function HomeScreen() {
   const live = useLiveEvents();
   const shownEvents = live.events ?? [];
   const [mailOpen, setMailOpen] = useState(false);
+  /** "Thêm": the less used ways out of Home (village, journey, event, olympiad, mail), so the dock keeps six big buttons. */
+  const [moreOpen, setMoreOpen] = useState(false);
+  /** A screen opened from "Thêm" replaces the sheet instead of stacking over it. */
+  const openFromMore = (open: () => void): void => {
+    setMoreOpen(false);
+    open();
+  };
   const [unreadMail, setUnreadMail] = useState(0);
   /** Achievements reached and not claimed yet: a badge on the rail's "Thành tích". */
   const [achievementsReady, setAchievementsReady] = useState(0);
@@ -123,10 +133,12 @@ export function HomeScreen() {
             <div className="home-main">
               <WorldStage character={data.character} idPrefix="home-region">
                 <div className="home-hero" aria-hidden="true">
+                  <span className="home-hero-pedestal" />
                   <MiuPortrait pose="wave" altPose="cheer" species={data.character.species} />
                 </div>
                 <RegionRewardBadges idPrefix="home-region" list={rewards} name={data.character.name} />
               </WorldStage>
+              <HomePlayButton data={data} />
               <nav className="home-rail" aria-label={t('home.nav')}>
                 <Link to={home ? playPath(home) : `/region/${HOME_REGION}`} className="home-rail-item" data-id="home-nav-home">
                   <Icon name="house" size={40} />
@@ -148,15 +160,7 @@ export function HomeScreen() {
                   <Icon name="coin" size={40} />
                   <T k="common.shop" />
                 </button>
-                <Link to="/village" className="home-rail-item" data-id="home-nav-village">
-                  <Icon name="heart" size={40} />
-                  <T k="home.village" />
-                </Link>
-                <Link to="/journey" className="home-rail-item" data-id="home-nav-journey">
-                  <Icon name="map" size={40} />
-                  <T k="home.journey" />
-                </Link>
-                <Link to="/achievements" className="home-rail-item" data-id="home-nav-achievements" style={{ position: 'relative' }}>
+                <Link to="/achievements" className="home-rail-item" data-id="home-nav-achievements">
                   <Icon name="trophy" size={40} />
                   {achievementsReady > 0 ? (
                     <span className="mail-rail-badge" data-id="home-achievements-ready" aria-label={t('achievements.ready', { count: achievementsReady })}>
@@ -165,23 +169,13 @@ export function HomeScreen() {
                   ) : null}
                   <T k="home.achievements" />
                 </Link>
-                {shownEvents[0] ? (
-                  <button type="button" className="home-rail-item" data-id="home-nav-event" onClick={() => setEventOpen(shownEvents[0]?.id ?? null)}>
-                    <Icon name="trophy" size={40} />
-                    <T k="event.rail" />
-                  </button>
-                ) : null}
-                <button type="button" className="home-rail-item" data-id="home-nav-olympiad" onClick={() => setOlympiadOpen(true)}>
-                  <Icon name="abacus" size={40} />
-                  <T k="olympiad.rail" />
-                </button>
-                <button type="button" className="home-rail-item" data-id="home-nav-mail" style={{ position: 'relative' }} onClick={() => setMailOpen(true)}>
-                  <Icon name="package" size={40} />
+                <button type="button" className="home-rail-item" data-id="home-nav-more" aria-haspopup="dialog" onClick={() => setMoreOpen(true)}>
+                  <Icon name="sparkles" size={40} />
                   {unreadMail > 0 ? <span className="mail-rail-badge">{unreadMail}</span> : null}
-                  <T k="mail.rail" />
+                  <T k="home.more" />
                 </button>
               </nav>
-              <div style={{ gridArea: 'today', display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
+              <div className="home-side">
                 {shownEvents.map((event) => (
                   <EventBanner key={event.id} event={event} onOpen={() => setEventOpen(event.id)} />
                 ))}
@@ -189,6 +183,35 @@ export function HomeScreen() {
                 <TodayQuests data={data} />
               </div>
             </div>
+            {moreOpen ? (
+              <Modal title={<T k="home.moreTitle" />} onClose={() => setMoreOpen(false)} dataId="home-more">
+                <div className="home-more-grid">
+                  <Link to="/village" className="home-rail-item" data-id="home-nav-village">
+                    <Icon name="heart" size={40} />
+                    <T k="home.village" />
+                  </Link>
+                  <Link to="/journey" className="home-rail-item" data-id="home-nav-journey">
+                    <Icon name="map" size={40} />
+                    <T k="home.journey" />
+                  </Link>
+                  {shownEvents[0] ? (
+                    <button type="button" className="home-rail-item" data-id="home-nav-event" onClick={() => openFromMore(() => setEventOpen(shownEvents[0]?.id ?? null))}>
+                      <Icon name="trophy" size={40} />
+                      <T k="event.rail" />
+                    </button>
+                  ) : null}
+                  <button type="button" className="home-rail-item" data-id="home-nav-olympiad" onClick={() => openFromMore(() => setOlympiadOpen(true))}>
+                    <Icon name="abacus" size={40} />
+                    <T k="olympiad.rail" />
+                  </button>
+                  <button type="button" className="home-rail-item" data-id="home-nav-mail" onClick={() => openFromMore(() => setMailOpen(true))}>
+                    <Icon name="package" size={40} />
+                    {unreadMail > 0 ? <span className="mail-rail-badge">{unreadMail}</span> : null}
+                    <T k="mail.rail" />
+                  </button>
+                </div>
+              </Modal>
+            ) : null}
             {settings ? <SettingsDialog onClose={() => setSettings(false)} /> : null}
             {shopOpen ? <ShopPanel onClose={() => setShopOpen(false)} onCoins={setCoins} /> : null}
             {eventOpen ? (
