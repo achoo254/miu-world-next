@@ -111,8 +111,6 @@ describe('quest controller', () => {
         if (url.includes('category=side')) return json({ quests: sideQuests });
         // The map's characters (their cards) are read on their own too.
         if (url.startsWith('/api/npcs')) return json({ npcs: [] });
-        // So is the index of recorded voice lines, by the first "Nghe" button.
-        if (url.startsWith('/game-assets/')) return new Response(null, { status: 404 });
         if (url.includes('skill-check')) return json({ hasSkillCheck: false, passed: true, targetId: '', targetName: '' });
         return fetchImpl(url, init);
       }),
@@ -285,8 +283,6 @@ describe('quest controller', () => {
       'fetch',
       vi.fn(async (url: string) => {
         if (url.startsWith('/api/npcs')) return json({ npcs: [] });
-        // So is the index of recorded voice lines, by the first "Nghe" button.
-        if (url.startsWith('/game-assets/')) return new Response(null, { status: 404 });
         if (url.includes('/steps/qua/complete')) {
           calls.reward += 1;
           return json({ ...response([]), quest: { questId: 'ward-thu', completedSteps: ['dau', 'qua'], completed: true, found: {}, stars: null } });
