@@ -91,7 +91,8 @@
 .achievement-celebration-name { font-size: var(--text-title); }
 .achievement-ready { padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); background: var(--color-primary); color: var(--color-on-primary); font-weight: 800; }
 .achievement-layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: var(--space-md); align-items: start; }
-@media (max-width: 52rem) {
+/* Stacked only upright: sideways (the way the game is played) the chosen one's card stays beside the list. */
+@media (max-width: 52rem) and (orientation: portrait) {
   .achievement-layout { grid-template-columns: minmax(0, 1fr); }
 }
 .achievement-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-xs); }
@@ -149,3 +150,14 @@
   .achievement-celebration .achievement-medal { animation: achievement-pop var(--duration-enter) var(--ease-pop) backwards; }
 }
 @keyframes achievement-pop { from { transform: scale(0.3) rotate(-20deg); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* A phone on its side: the rail's tiles, the banner and the big count shrink so the page's content starts high. */
+@media (orientation: landscape) and (max-height: 540px) {
+  .progress-rail { gap: var(--space-xs); top: var(--space-xs); }
+  .progress-rail-item { min-width: 4.5rem; min-height: 4.25rem; padding: var(--space-xs); font-size: var(--text-sm); }
+  .progress-rail-item .icon { width: 1.75rem; height: 1.75rem; }
+  .progress-hero .ribbon { font-size: var(--text-xl); }
+  .progress-hero p { font-size: var(--text-sm); }
+  .achievement-trophy { font-size: var(--text-title); }
+  .achievement-trophy .icon { width: 2.75rem; height: 2.75rem; }
+}

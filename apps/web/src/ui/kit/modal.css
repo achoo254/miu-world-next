@@ -18,10 +18,14 @@
 .modal-title { font-size: var(--text-xl); text-align: center; }
 .modal-actions { display: flex; flex-direction: column; gap: var(--space-sm); }
 .offline-body { display: flex; flex-direction: column; align-items: center; gap: var(--space-sm); text-align: center; }
-.modal-backdrop--bottom { place-items: end center; background: var(--color-backdrop-light); }
-.modal-backdrop--bottom .modal { width: min(100%, 44rem); }
-.modal-backdrop--top { place-items: start center; }
+/* A panel dialog is also a `.panel` (width: 100% in styles.css, which may load later): its widths take two classes.
+   Scene dialogs (shop, olympiad, pet care) keep their own width rules. */
+.panel.modal { width: min(100%, 26rem); }
 .modal--wide { width: min(100%, 52rem); }
+.panel.modal.modal--wide { width: min(100%, 52rem); }
+.modal-backdrop--bottom { place-items: end center; background: var(--color-backdrop-light); }
+.modal-backdrop--bottom .modal, .modal-backdrop--bottom > .panel.modal.modal { width: min(100%, 44rem); }
+.modal-backdrop--top { place-items: start center; }
 /* No scrim: the game shows untouched and gets the touches beside the dialog (the dialog itself still takes its own). */
 .modal-backdrop.modal-backdrop--clear { background: none; pointer-events: none; }
 .modal-backdrop--clear > .modal { pointer-events: auto; }
@@ -44,4 +48,31 @@
   border-radius: var(--radius-panel);
   background: var(--color-scene-halo);
   box-shadow: var(--shadow-halo);
+}
+
+/*
+ * A phone on its side (the game is played sideways only, owner 29/10/2026): dialogs use the width and the little
+ * height there is. The rim around them shrinks to the notch and edges, a wide dialog takes most of the screen, the
+ * panel's padding and title get smaller, the dialog scrolls inside itself, and a corner ✕ stays in sight while it does.
+ */
+@media (orientation: landscape) and (max-height: 540px) {
+  .modal-backdrop { padding: calc(var(--space-xs) + var(--safe-top)) calc(var(--space-sm) + var(--safe-right)) calc(var(--space-xs) + var(--safe-bottom)) calc(var(--space-sm) + var(--safe-left)); }
+  .modal { overscroll-behavior: contain; }
+  .panel.modal { width: min(100%, 30rem); }
+  .panel.modal.modal--wide { width: min(100%, 62rem); }
+  .panel.modal { padding: var(--space-md) var(--space-lg); gap: var(--space-sm); border-width: 3px; }
+  .modal-title { font-size: var(--text-lg); line-height: 1.2; }
+  .modal > .scene-close {
+    order: -1;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    align-self: flex-end;
+    justify-self: end;
+    flex-shrink: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: calc(-2.75rem - var(--space-sm));
+  }
+  .scene-modal > .scene-close { margin-bottom: calc(-2.75rem - var(--space-md)); }
 }

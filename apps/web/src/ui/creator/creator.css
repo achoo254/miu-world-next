@@ -54,8 +54,20 @@
   gap: var(--space-lg);
   align-items: start;
 }
-@media (max-width: 60rem) {
+@media (max-width: 60rem) and (orientation: portrait) {
   .creator-layout { grid-template-columns: 1fr; }
+}
+/* Sideways (the way the game is played), even on a phone: the preview, the wardrobe and her card stay side by side. */
+@media (max-width: 60rem) and (orientation: landscape) {
+  .creator-layout { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.25fr) minmax(0, 0.85fr); gap: var(--space-sm); }
+}
+/* A phone on its side: the species fit on one row of smaller cards. */
+@media (orientation: landscape) and (max-height: 540px) {
+  .species-grid { grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr)); gap: var(--space-sm); }
+  .species-card { min-height: 0; padding: var(--space-sm); font-size: var(--text-body); }
+  .species-card-art { width: 5.5rem; height: 5.5rem; }
+  .creator-species h1 { font-size: var(--text-xl); }
+  .creator-species > p { margin: 0; font-size: var(--text-sm); }
 }
 
 .slot-tabs { display: flex; flex-wrap: wrap; gap: var(--space-xs); }

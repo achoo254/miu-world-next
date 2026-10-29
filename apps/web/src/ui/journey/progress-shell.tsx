@@ -11,6 +11,7 @@ import { BackButton } from '../kit/back-button';
 import { PlayerBadge } from '../player/player-badge';
 import { usePlayer, type PlayerData } from '../player/player-data';
 import { ShopPanel } from '../shop/shop-panel';
+import '../region/region.css';
 import './journey.css';
 
 export function ProgressShell({ dataId, children }: { dataId: string; children: (player: PlayerData, setCoins: (coins: number) => void) => ReactNode }) {

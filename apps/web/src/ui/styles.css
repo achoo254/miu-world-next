@@ -519,3 +519,11 @@ html[data-font-size='large'] {
   --text-hero: clamp(3.4rem, 7.5vw, 5.25rem);
 }
 
+
+/* A phone on its side (the game is played sideways only): the sky's padding shrinks to what the notch and the edges
+   need, so a page's content gets the little height there is. The sky itself still fills the screen. */
+@media (orientation: landscape) and (max-height: 540px) {
+  .scene { padding: calc(var(--space-sm) + var(--safe-top)) calc(var(--space-md) + var(--safe-right)) calc(var(--space-sm) + var(--safe-bottom)) calc(var(--space-md) + var(--safe-left)); }
+  .scene-content { gap: var(--space-md); }
+  .panel { padding: var(--space-md) var(--space-lg); gap: var(--space-sm); }
+}

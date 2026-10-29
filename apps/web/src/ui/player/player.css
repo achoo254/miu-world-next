@@ -24,8 +24,8 @@
 .player-badge .miu-portrait { margin-bottom: 0; border-width: 3px; flex-shrink: 0; }
 .player-badge .progress { height: 0.9rem; border-width: 2px; }
 
-/* Phones: a compact badge so the HUD leaves the forest in view. */
-@media (max-width: 600px) {
+/* Phones, upright or on their side: a compact badge so the HUD and the pages leave the world in view. */
+@media (max-width: 600px), (orientation: landscape) and (max-height: 540px) {
   .player-badge { gap: var(--space-xs); padding-right: var(--space-sm); }
   .player-badge .miu-portrait { width: 2.75rem; height: 2.75rem; }
   .player-badge-text { min-width: 5.5rem; }

@@ -16,3 +16,21 @@
   .pause-modal .settings-section:first-child { column-span: all; }
   .pause-actions { grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: var(--space-sm); }
 }
+
+/* A phone on its side: "Quay lại chơi" and the ways out down the left, the settings in one column on the right, so
+   the way back to the game is in sight at once and the dialog scrolls less. */
+@media (orientation: landscape) and (max-height: 540px) {
+  .pause-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    grid-template-areas: 'resume settings' 'actions settings';
+    grid-template-rows: auto 1fr;
+    align-items: start;
+    gap: var(--space-sm) var(--space-md);
+  }
+  .pause-body > [data-id='pause-resume'] { grid-area: resume; }
+  .pause-modal .settings-sections { grid-area: settings; column-count: 1; }
+  .pause-actions { grid-area: actions; grid-template-columns: minmax(0, 1fr); gap: var(--space-xs); }
+  .pause-actions .btn { min-height: 2.75rem; padding-block: var(--space-xs); }
+  .pause-actions .icon { width: 1.5rem; height: 1.5rem; }
+}

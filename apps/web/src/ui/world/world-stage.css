@@ -80,8 +80,12 @@
   /* max-content: inside its zero-width anchor the card would otherwise shrink to its longest word. */
   .world-marker--open { white-space: normal; width: max-content; max-width: 5.5rem; text-align: center; justify-content: center; }
 }
-@container (max-width: 30rem) {
+/* Up to a phone-on-its-side island (the world map fills the height there): the names alone, no sparkle, so a name
+   keeps to two lines. */
+@container (max-width: 36rem) {
   .world-marker--open .icon { display: none; }
+}
+@container (max-width: 30rem) {
   /* A phone's island holds twelve names: smaller cards so neighbours never touch, each still taking a 44 px touch
      through an invisible margin round it. */
   .world-marker { min-height: 2rem; padding: 0.125rem var(--space-xs); font-size: 0.8125rem; line-height: 1.1; }

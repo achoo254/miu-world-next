@@ -192,3 +192,68 @@ button.home-rail-item { font: inherit; font-family: var(--font-display); font-si
 .home-daily-where { color: var(--color-ink-soft); font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600; }
 .home-daily-lesson { font-family: var(--font-display); font-weight: 800; line-height: 1.2; }
 .home-daily > a { flex: 0 0 auto; }
+
+/*
+ * A phone on its side (the game is played sideways only, owner 29/10/2026): no scrolling, the island as big as the
+ * height allows in the middle, the dock down the left edge in two columns, and down the right edge her badge with
+ * the settings, the big play button and today's cards (those scroll on their own). Nothing else touches the island.
+ */
+@media (orientation: landscape) and (max-height: 540px) {
+  /* Home brings its own edge padding (safe areas included): the sky around it adds none. */
+  .scene:has(> .scene-content > .home) { padding: 0; place-items: stretch; }
+  .scene-content:has(> .home) { max-width: none; }
+  .home {
+    width: 100%;
+    height: 100dvh;
+    min-height: 0;
+    padding: calc(var(--space-sm) + var(--safe-top)) calc(var(--space-sm) + var(--safe-right)) calc(var(--space-sm) + var(--safe-bottom)) calc(var(--space-sm) + var(--safe-left));
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) clamp(12rem, 25vw, 15rem);
+    grid-template-rows: auto auto minmax(0, 1fr);
+    grid-template-areas: 'settings stage profile' 'rail stage play' 'rail stage side';
+    gap: var(--space-sm) var(--space-md);
+    overflow: hidden;
+  }
+  .home-top, .home-main { display: contents; }
+  .home-profile { grid-area: profile; min-width: 0; }
+  .home-profile .player-badge { max-width: 100%; box-sizing: border-box; }
+  .home-profile .player-badge-text, .home-profile .player-badge-xp { min-width: 0; }
+  /* The settings sit at the top of the left edge, above the dock. */
+  .home-round-button { grid-area: settings; justify-self: start; align-self: start; width: 2.75rem; height: 2.75rem; }
+  .home-round-button .icon { width: 1.75rem; height: 1.75rem; }
+  .home-title { display: none; }
+  .home-main .world-stage { grid-area: stage; align-self: center; justify-self: center; width: min(100%, calc((100dvh - var(--space-sm) * 2 - var(--safe-top) - var(--safe-bottom)) * 1.6)); }
+  .home-hero { display: none; }
+  .home-play { grid-area: play; justify-self: stretch; min-width: 0; margin-inline: var(--space-xs); min-height: 3.5rem; padding: var(--space-xs) var(--space-md); font-size: var(--text-lg); white-space: nowrap; letter-spacing: 0; }
+  .home-play .icon { width: 1.75rem; height: 1.75rem; }
+  .home-side { grid-area: side; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding: var(--space-xs) var(--space-xs) var(--space-sm); margin: calc(-1 * var(--space-xs)); gap: var(--space-sm); }
+  .home-side > * { flex-shrink: 0; }
+  .home-today, .home-daily { padding: var(--space-sm) var(--space-md); }
+  /* Today's cards in the narrow right column: tighter, the event's rewards smaller. */
+  .home-side .event-banner { gap: var(--space-xs); padding: var(--space-sm); border-radius: var(--radius-tile); }
+  .home-side .event-banner-head > .icon { width: 2rem; height: 2rem; }
+  .home-side .event-banner-text { flex: 1 1 7rem; min-width: 0; }
+  .home-side .event-banner-title { font-size: var(--text-body); line-height: 1.15; }
+  .home-side .event-banner-rewards li { width: 2.25rem; height: 2.25rem; }
+  .home-side .event-banner-rewards .icon { width: 1.5rem; height: 1.5rem; }
+  .home-side .event-banner-cta { font-size: var(--text-body); }
+  .home-daily-title { font-size: var(--text-body); }
+  .home-rail {
+    grid-area: rail;
+    display: grid;
+    grid-template-columns: repeat(2, 4.25rem);
+    grid-auto-rows: minmax(0, 1fr);
+    align-content: center;
+    gap: var(--space-xs) var(--space-sm);
+    max-height: 100%;
+    margin: 0;
+  }
+  .home-rail .home-rail-item { width: 4.25rem; max-width: none; min-height: 0; height: 100%; max-height: 5.25rem; padding: var(--space-xs); border-radius: var(--radius-field); font-size: 0.75rem; box-shadow: 0 4px 0 var(--color-field-edge), var(--shadow-label); }
+  .home-rail .home-rail-item .icon { width: 2rem; height: 2rem; }
+  .home-rail .home-rail-item:active { box-shadow: 0 1px 0 var(--color-field-edge); }
+  /* The last button of an odd dock sits alone across both columns. */
+  .home-rail .home-rail-item:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; }
+}
+@media (orientation: landscape) and (max-height: 540px) and (max-width: 800px) {
+  .home-play { font-size: var(--text-body); }
+}

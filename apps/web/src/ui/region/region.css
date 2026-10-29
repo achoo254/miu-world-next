@@ -3,6 +3,9 @@
 .region-top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); }
 /* Quay lại and Trang chủ stay together on the right; on a narrow phone they wrap under the player badge. */
 .region-top-nav { display: flex; align-items: center; gap: var(--space-sm); margin-left: auto; }
+/* Her badge as the link to her profile (Journey, Achievements): it reads as the badge, not as underlined text. */
+.region-top .home-profile-link { color: inherit; text-decoration: none; border-radius: var(--radius-pill); }
+.region-top .home-profile-link:focus-visible { box-shadow: var(--focus-ring); outline: none; }
 /* World map (M1.4): the island takes the page width, like the mock. */
 .region-page--wide { width: min(100%, 76rem); }
 .world-map { display: flex; flex-direction: column; gap: var(--space-sm); }
@@ -41,7 +44,8 @@
 .region-detail > .region-intro { grid-area: intro; }
 .region-detail > .quest-board { grid-area: board; }
 .region-detail > [data-id='region-map'] { grid-area: map; justify-self: start; }
-@media (max-width: 860px) {
+/* Only an upright screen stacks them: the game is played sideways, where the board always stands beside the intro. */
+@media (max-width: 860px) and (orientation: portrait) {
   .region-detail { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'intro' 'board' 'map'; }
 }
 
@@ -250,3 +254,51 @@
 .region-books-topics { flex-basis: 100%; min-width: 0; font-weight: 600; }
 .region-books-count { white-space: nowrap; }
 .region-books-row--none { font-weight: 600; }
+
+/*
+ * A phone on its side (the game is played sideways only, owner 29/10/2026): the header keeps to one slim row, the
+ * world map's title sits in its middle and the whole island fits under it; on a region's screen the sign, bubble and
+ * chest stay on the left and the quest board on the right scrolls on its own, so the page itself does not.
+ */
+@media (orientation: landscape) and (max-height: 540px) {
+  .region-page { gap: var(--space-sm); }
+  .region-top { flex-wrap: nowrap; }
+  .region-top-nav .btn { min-height: 2.75rem; padding-block: var(--space-xs); }
+  .world-map-title {
+    /* Placed in the page's content box (.scene-content), level with the header row. */
+    position: absolute;
+    top: var(--space-xs);
+    left: 50%;
+    z-index: 2;
+    max-width: 34vw;
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--text-lg);
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+  .world-map-title .icon { width: 1.75rem; height: 1.75rem; }
+  /* Too narrow for the sign between the badge and the buttons: it stays for screen readers only. */
+  @media (max-width: 820px) {
+    .world-map-title { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); border: 0; }
+  }
+  .world-map-hint { display: none; }
+  .world-map .world-stage { width: min(100%, calc((100dvh - 6.25rem - var(--safe-top) - var(--safe-bottom)) * 1.6)); }
+
+  .region-scene { padding: calc(var(--space-sm) + var(--safe-top)) calc(var(--space-md) + var(--safe-right)) calc(var(--space-sm) + var(--safe-bottom)) calc(var(--space-md) + var(--safe-left)); }
+  .region-page--detail { width: 100%; height: calc(100dvh - var(--space-sm) * 2 - var(--safe-top) - var(--safe-bottom)); }
+  .region-detail {
+    flex: 1;
+    min-height: 0;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+    grid-template-rows: minmax(0, 1fr) auto;
+    align-items: stretch;
+    gap: var(--space-sm) var(--space-md);
+  }
+  .region-detail > [data-id='region-map'] { align-self: end; }
+  .region-detail > .region-intro { min-height: 0; overflow-y: auto; gap: var(--space-sm); scrollbar-width: thin; }
+  .region-detail > .quest-board { min-height: 0; max-height: 100%; overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
+  .region-sign { padding: var(--space-xs) var(--space-lg); font-size: var(--text-xl); }
+  .region-sign-subject { font-size: var(--text-sm); }
+  .region-bubble { padding: var(--space-xs) var(--space-sm); font-size: var(--text-sm); }
+  .region-progress-card { --chest-size: 3.25rem; padding: var(--space-xs) var(--space-sm); }
+}

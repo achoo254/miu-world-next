@@ -479,3 +479,9 @@
   .scene-modal .riddle-plaque { padding: var(--space-sm) var(--space-lg); font-size: var(--text-title); }
   .scene-modal .pin-key { min-height: 3.25rem; }
 }
+
+/* A phone on its side: the scene's banner and gaps shrink so the content gets the height. */
+@media (orientation: landscape) and (max-height: 540px) {
+  .scene-modal { gap: var(--space-sm); padding-block: var(--space-xs); }
+  .ribbon { padding: var(--space-xs) var(--space-lg); font-size: var(--text-lg); }
+}
