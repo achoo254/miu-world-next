@@ -122,11 +122,18 @@ const FOLLOW_STRENGTH_WALK = 0.2;
 /** Turning the stick further than this (radians) takes a new walking direction from the view as it is now. */
 const STICK_TURN = 0.45;
 /**
- * Frames per second while a screen covers the game: the whole frame (the world's step by the real time gone, then the
- * picture) runs this often instead of every display frame, so the world behind keeps moving at its own speed while a
- * weak device (or a CPU-drawn CI browser) spends a third of the work on it.
+ * At most this many frames per second while a screen covers the game: the whole frame (the world's step by the real
+ * time gone, then the picture) runs this often instead of every display frame, so the world behind keeps moving at its
+ * own speed for a third of the work.
  */
 const COVERED_FPS = 20;
+/**
+ * And under a screen drawing never takes more than about this share of the time. A fast device, whose frame lasts one
+ * display refresh, stays at COVERED_FPS; one that draws slowly (a weak phone, a CI browser drawing on the CPU, where a
+ * frame can take most of a second) waits three times a frame's cost before the next. Until a frame is drawn the browser
+ * holds its next animation frame, and with it the screen's own taps, checks and transitions, which must stay quick.
+ */
+const COVERED_SHARE = 1 / 3;
 /** Back from a screen open this long (or the app away this long), her pet runs up to greet her (ms). */
 const GREET_AFTER_PAUSE_MS = 20_000;
 /** How firmly the camera turns to frame her pet's scene (her and the pet both in view). */
@@ -328,11 +335,19 @@ export class Game {
     this.timer?.reset();
     this.input?.clear();
     const frame = this.loop;
+    /** When the last frame ran, how long it took until the browser could offer the next one (ms), and whether the previous callback ran one. */
     let last = -Infinity;
+    let cost = 0;
+    let ranLast = false;
     this.renderer.setAnimationLoop((now: number) => {
-      // Under a screen the frame waits for its slower beat (a little slack so a 60 Hz display lands on every third).
-      if (this.controlsBlocked && now - last < 1000 / COVERED_FPS - 2) return;
+      // A frame's cost: from its start to the next animation frame the browser gives (the drawing included).
+      if (ranLast) cost = now - last;
+      ranLast = false;
+      // Under a screen the frame waits for its slower beat (a little slack so a 60 Hz display lands on every third),
+      // and on a slow device for long enough that drawing keeps to its share of the time.
+      if (this.controlsBlocked && now - last < Math.max(1000 / COVERED_FPS - 2, cost / COVERED_SHARE)) return;
       last = now;
+      ranLast = true;
       frame();
     });
   }
