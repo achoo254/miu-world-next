@@ -121,6 +121,12 @@ const FOLLOW_STRENGTH_RUN = 0.9;
 const FOLLOW_STRENGTH_WALK = 0.2;
 /** Turning the stick further than this (radians) takes a new walking direction from the view as it is now. */
 const STICK_TURN = 0.45;
+/**
+ * Frames per second while a screen covers the game: the whole frame (the world's step by the real time gone, then the
+ * picture) runs this often instead of every display frame, so the world behind keeps moving at its own speed while a
+ * weak device (or a CPU-drawn CI browser) spends a third of the work on it.
+ */
+const COVERED_FPS = 20;
 /** Back from a screen open this long (or the app away this long), her pet runs up to greet her (ms). */
 const GREET_AFTER_PAUSE_MS = 20_000;
 /** How firmly the camera turns to frame her pet's scene (her and the pet both in view). */
@@ -321,7 +327,14 @@ export class Game {
     // The paused time must not reach the next frame as one long step, nor presses made meanwhile.
     this.timer?.reset();
     this.input?.clear();
-    this.renderer.setAnimationLoop(this.loop);
+    const frame = this.loop;
+    let last = -Infinity;
+    this.renderer.setAnimationLoop((now: number) => {
+      // Under a screen the frame waits for its slower beat (a little slack so a 60 Hz display lands on every third).
+      if (this.controlsBlocked && now - last < 1000 / COVERED_FPS - 2) return;
+      last = now;
+      frame();
+    });
   }
 
   /** Frees GPU memory (geometry, materials, textures, context), listeners and DOM. Safe to call twice. */

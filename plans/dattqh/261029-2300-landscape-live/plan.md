@@ -55,5 +55,7 @@ Quyết định do Jev chọn (`tools/decisions/jev-decide.py`, mức low):
 | Đang tự đi khi mở hộp thoại | đi tiếp | 0,92 |
 | Nền sau hộp thoại trong game | lớp trong suốt nhận chạm, chỉ bóng nhẹ sau hộp thoại | 0,86 |
 | Phạm vi lớp phủ xoay | chỉ màn game và luồng đăng nhập vào game | 0,98 |
+| Giảm tải khi hộp thoại che game: phạm vi | cả khung hình (bước thế giới + vẽ) chạy chậm lại | 0,94 |
+| Giảm tải khi hộp thoại che game: tốc độ | 20 hình/giây (Jev báo escalate, lấy lựa chọn xác suất cao nhất) | 0,48 |
 
 Còn lại: chụp lại bộ ảnh `screens` (740 × 360, 1180 × 820) và ảnh cửa hàng ứng dụng ở khổ ngang; thử trên máy thật (iPhone, iPad, Android).
