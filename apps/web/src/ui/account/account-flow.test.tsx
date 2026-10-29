@@ -151,7 +151,7 @@ describe('account flow', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Tôi đồng ý' }));
     // No player picker and no profile set-up: Home of the account's own player.
     // Home is lazy-loaded: its first import in a run can be slow on a cold transform cache.
-    expect(await screen.findByRole('link', { name: 'Bắt đầu' }, { timeout: 10000 })).toBeTruthy();
+    expect(await screen.findByRole('link', { name: 'Chơi ngay' }, { timeout: 10000 })).toBeTruthy();
     expect(calls.some((c) => c.key === 'GET /api/players')).toBe(false);
     expect(calls.find((c) => c.key === 'POST /api/consents')?.body).toEqual({ policyVersion: 'draft-1' });
   }, 15000);
@@ -323,7 +323,7 @@ describe('account flow', () => {
     });
     renderAt('/profiles');
     fireEvent.click(await screen.findByRole('button', { name: 'Mèo Mây' }));
-    fireEvent.click(await screen.findByRole('link', { name: 'Bắt đầu' }, { timeout: 5000 }));
+    fireEvent.click(await screen.findByRole('link', { name: 'Chơi ngay' }, { timeout: 5000 }));
     expect(await screen.findByRole('button', { name: /Menu/ }, { timeout: 8000 })).toBeTruthy();
     await vi.waitFor(() => expect(gameLifecycle.started).toBeGreaterThan(0));
     expect(gameLifecycle.outfit).toEqual(['hat-witch-pink']);
@@ -355,7 +355,7 @@ describe('account flow', () => {
     });
     renderAt('/');
     // Home is lazy-loaded: its first import in a run can be slow on a cold transform cache.
-    expect(await screen.findByRole('link', { name: 'Bắt đầu' }, { timeout: 10000 })).toBeTruthy();
+    expect(await screen.findByRole('link', { name: 'Chơi ngay' }, { timeout: 10000 })).toBeTruthy();
     expect(screen.queryByRole('heading', { name: 'Ai đang chơi?' })).toBeNull();
     expect(calls.map((c) => c.key)).toContain(`POST /api/players/${CHILD}/select`);
   }, 15000);
@@ -386,7 +386,7 @@ describe('account flow', () => {
       'GET /api/quests': () => ({ status: 200, body: questList() }),
     });
     renderAt('/');
-    expect(await screen.findByRole('link', { name: 'Bắt đầu' }, { timeout: 10000 })).toBeTruthy();
+    expect(await screen.findByRole('link', { name: 'Chơi ngay' }, { timeout: 10000 })).toBeTruthy();
     expect(window.localStorage.getItem('miu.postLogin')).toBeNull();
   }, 15000);
 
