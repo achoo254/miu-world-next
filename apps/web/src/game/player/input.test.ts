@@ -64,6 +64,19 @@ describe('PlayerInput', () => {
     expect(touch.defaultPrevented).toBe(true);
   });
 
+  it('keeps the browser menu off the game when the right button turns the camera, but not off a text field', () => {
+    const root = el();
+    const field = document.createElement('input');
+    root.append(field);
+    create(root);
+    const onGame = new MouseEvent('contextmenu', { bubbles: true, cancelable: true });
+    root.dispatchEvent(onGame);
+    expect(onGame.defaultPrevented).toBe(true);
+    const onField = new MouseEvent('contextmenu', { bubbles: true, cancelable: true });
+    field.dispatchEvent(onField);
+    expect(onField.defaultPrevented).toBe(false);
+  });
+
   it('zooms with the wheel and the + / − keys, and forgets zoom asked while paused', () => {
     const root = el();
     const input = create(root);

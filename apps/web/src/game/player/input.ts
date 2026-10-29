@@ -67,6 +67,16 @@ export class PlayerInput implements InputSource {
     // joystick or a button selects the nearest page text (the HUD) and opens the copy menu.
     // Cancelling touchstart stops that gesture; pointer events keep firing.
     root.addEventListener('touchstart', (e) => e.preventDefault(), { passive: false, signal });
+    // A right-button drag turns the camera on desktop too: the browser menu ("Save image as", "Inspect") must not pop
+    // up over the game. Text fields keep their menu, for paste.
+    root.addEventListener(
+      'contextmenu',
+      (e) => {
+        if (e.target instanceof Element && e.target.closest('input, textarea, [contenteditable="true"]')) return;
+        e.preventDefault();
+      },
+      { signal },
+    );
   }
 
   /**
