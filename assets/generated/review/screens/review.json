@@ -1,78 +1,113 @@
 {
-  "capturedFrom": "d966c475c8808f9fae56dd39db993966ac5f41cc",
-  "capturedAt": "2026-10-28T09:27:37+07:00",
-  "reviewedAt": "2026-10-28T09:31:34+07:00",
+  "capturedFrom": "832773a8dd2e985f84f5b844f96279111a212178",
+  "capturedAt": "2026-10-29T11:58:18+07:00",
+  "reviewedAt": "2026-10-29T12:01:13+07:00",
   "reviewer": "agent:screen-review (5 subagents + main session merge)",
   "verdict": "pass",
   "findings": [
     {
-      "shot": "360x740/05-world-map.png",
-      "kind": "overlap",
-      "severity": "note",
-      "text": "Chú vẹt trang trí ở mép trái đè lên biểu tượng sách của tiêu đề \"Bài học ở từng khu\", không che chữ hay nút; giống bản trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/28-play-menu.png",
-      "kind": "overlap",
-      "severity": "note",
-      "text": "Bảng menu hơi trong suốt nên bản đồ nhỏ lộ mờ sau ô \"Ba lô\"; chữ vẫn đọc được, giống bản trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "360x740/29-pause.png",
-      "kind": "clipped",
-      "severity": "note",
-      "text": "Nút \"Về chỗ an toàn\" bị cạnh dưới hộp Tạm dừng cắt phần bóng; chữ đủ, bấm được, giống bản trước.",
-      "fixedIn": null
-    },
-    {
       "shot": "360x740/16-backpack.png",
       "kind": "shifted",
       "severity": "note",
-      "text": "Trang Ba lô dịch xuống 3px so với bản trước vì món đồ hiển thị khác làm khối nội dung (căn giữa theo chiều dọc) ngắn lại; vùng an toàn bằng 0 trên desktop nên không do thay đổi lần này.",
+      "text": "Khung Ba lô lệch khoảng 3 px theo chiều dọc vì món đồ hiển thị khác (lưới đồ thấp hơn, khối nội dung căn giữa); commit không đổi bố cục.",
       "fixedIn": null
     },
     {
-      "shot": "360x740/30-party-quest.png",
+      "shot": "360x740/18-party.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Thẻ nhiệm vụ đội bị cắt ngang dưới dòng \"Bông · xong 0 bước\"; giống bản trước.",
+      "text": "Tiêu đề thẻ nhiệm vụ bị cắt bằng dấu ba chấm: 'Khu rừng bí mật – Chương 1: Lá…'; giống bản trước, không đè nút hay vùng chạm.",
       "fixedIn": null
     },
     {
       "shot": "360x740/25-online-off.png",
       "kind": "clipped",
       "severity": "note",
-      "text": "Thẻ theo dõi nhiệm vụ trên HUD cắt tên chương \"Lá…\"; giống bản trước.",
+      "text": "Thẻ theo dõi nhiệm vụ trên HUD bị cắt 'Lá…'; giống bản trước. Thông báo online tạm nghỉ có nút 'Đã hiểu'.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/28-play-menu.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Bảng menu đè mép dưới huy hiệu 'Lv.1' và che thẻ nhiệm vụ, bản đồ nhỏ phía sau; không che vùng chạm đang dùng; giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/29-pause.png",
+      "kind": "missing-close",
+      "severity": "note",
+      "text": "Bảng Tạm dừng không có nút X; thoát bằng nút lớn 'Tiếp tục chơi', chủ ý, giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/29-pause.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Nút 'Về chỗ an toàn' sát mép dưới bảng, bo góc dưới bị cắt và che viền dưới mục 'Ngôn ngữ'; giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "360x740/30-party-quest.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Thẻ nhiệm vụ đội bị cắt phẳng ở đáy dưới dòng 'Bông · xong 0 bước', tiêu đề HUD cắt 'Lá…'; giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/14-boss.png",
+      "kind": "clipped",
+      "severity": "note",
+      "text": "Ruy băng tiêu đề trận boss gần như không thấy, có thể bị thẻ máu boss che; giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/15-shop.png",
+      "kind": "off-screen",
+      "severity": "note",
+      "text": "Phía trên khung Cửa hàng lộ dải thẻ của trang phía sau ('Tiếng Việt', 'Toán') bị cắt nửa; không phải nút của khung, giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/19-worksheets.png",
+      "kind": "other",
+      "severity": "note",
+      "text": "Dòng tên phiếu sát nhãn '3 phần' bên phải, gần như không có khoảng cách; giống bản trước.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/20-landing.png",
       "kind": "overlap",
       "severity": "note",
-      "text": "Khối voxel trang trí màu kem đè lên dòng \"Xem các chủ đề có trong game\"; giống bản trước.",
+      "text": "Ô vuông trang trí màu be đè lên chữ 'trong' của tiêu đề 'Xem các chủ đề có trong game'; giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/26-moderation.png",
+      "kind": "raw-text",
+      "severity": "note",
+      "text": "Ô 'Bản đồ' trong thẻ báo cáo hiện mã nội bộ 'forest-ch1' thay vì tên bản đồ (trang quản trị); giống bản trước.",
+      "fixedIn": null
+    },
+    {
+      "shot": "820x1180/28-play-menu.png",
+      "kind": "overlap",
+      "severity": "note",
+      "text": "Bảng menu đè lên bản đồ nhỏ góc phải trên; không che chữ hay vùng bấm; giống bản trước.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/29-pause.png",
       "kind": "missing-close",
       "severity": "note",
-      "text": "Bảng Tạm dừng không có nút X; thoát bằng nút lớn \"Tiếp tục chơi\" (chủ ý, giống bản trước).",
+      "text": "Bảng Tạm dừng không có nút X (thoát bằng 'Tiếp tục chơi'); nút 'Về chỗ an toàn' xuống hai dòng; giống bản trước.",
       "fixedIn": null
     },
     {
       "shot": "820x1180/30-party-quest.png",
-      "kind": "overlap",
+      "kind": "other",
       "severity": "note",
-      "text": "Nhãn \"Bông · Tương tác\" đè lên thân nhân vật 3D; giống bản trước.",
-      "fixedIn": null
-    },
-    {
-      "shot": "820x1180/30-party-quest.png",
-      "kind": "overlap",
-      "severity": "note",
-      "text": "Bong bóng \"Hôm nay đi đâu nhỉ?\" đang mờ dần bị thẻ \"Cả đội chơi…\" che phần trái; do thời điểm chụp giữa hiệu ứng.",
+      "text": "Bóng thoại trên đầu Bông chụp lúc đang mờ dần nên chữ nhạt; do thời điểm chụp, không phải lỗi bố cục.",
       "fixedIn": null
     }
   ]
