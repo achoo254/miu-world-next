@@ -54,13 +54,6 @@
   .home-rail .home-rail-item { flex: 1 1 0; min-width: 0; }
 }
 
-/* Region cards on Home: name only, a size smaller, so the island shows between them (the subject is still read out
-   and shown on the world map). */
-.home .world-marker--open .world-marker-sub { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-@container (min-width: 40rem) {
-  .home .world-marker--open { min-height: 2.75rem; font-size: var(--text-body); border-radius: var(--radius-pill); box-shadow: var(--shadow-label), 0 4px 0 var(--color-field-edge); }
-}
-
 /* The child's character waves from the stage's lower left, on a glowing pedestal, as in the mock. Phones leave that
    corner to the island. The play button sits under the island, never over its region cards. */
 .home-hero { position: absolute; left: 0; bottom: 0; z-index: 4; width: clamp(5.5rem, 15%, 9.5rem); pointer-events: none; }

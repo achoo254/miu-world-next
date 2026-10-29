@@ -73,7 +73,7 @@ export function RegionMapScreen() {
     <Frame data={data} error={error} wide>
       {(player) => (
         <section className="world-map" aria-labelledby="map-title" data-id="map">
-          <h1 id="map-title" className="world-map-title">
+          <h1 id="map-title" className="ribbon world-map-title">
             <Icon name="map" size={44} />
             <T k="region.worldMap" />
           </h1>

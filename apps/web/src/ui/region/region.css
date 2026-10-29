@@ -6,8 +6,11 @@
 /* World map (M1.4): the island takes the page width, like the mock. */
 .region-page--wide { width: min(100%, 76rem); }
 .world-map { display: flex; flex-direction: column; gap: var(--space-sm); }
-.world-map-title { display: flex; align-items: center; gap: var(--space-sm); }
+.world-map { align-items: center; text-align: center; }
+/* The title on a wooden sign, as on a region's screen. */
+.world-map-title { display: flex; align-items: center; gap: var(--space-sm); font-size: var(--text-title); }
 .world-map-hint { margin: 0; }
+.world-map > :not(.world-map-title, .world-map-hint, .world-stage) { align-self: stretch; text-align: start; }
 /* The whole island fits on screen under the header and title (16:10 island). */
 .world-map .world-stage { width: min(100%, calc((100vh - 15rem) * 1.6)); align-self: center; }
 /* iPad Safari: size to the visible height, not the one behind the toolbar. */
