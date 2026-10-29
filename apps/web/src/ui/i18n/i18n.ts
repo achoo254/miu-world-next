@@ -3,6 +3,7 @@
 // English line under it). Missing English falls back to the Vietnamese; `pnpm content:check` and a unit test
 // report the gaps. Textbook wording never goes through here: it stays the book's Vietnamese.
 // React-free, so the game runtime can label its own buttons with `t()`; React screens use `useT()` / `<Bi>`.
+import { type PreferenceOptions, readPreferences, writePreference } from '@achoo254/app-shell/preferences';
 import enJson from './locales/en.json';
 import viJson from './locales/vi.json';
 import { apiUrl } from '../../platform/endpoints';
@@ -112,7 +113,18 @@ function writeKey(key: string, mode: LangMode): void {
   }
 }
 
-const readStored = (): LangMode => (profile ? readKey(profileKey(profile)) : null) ?? readKey(STORAGE_KEY) ?? 'vi';
+// The device's Vietnamese or English is the `hd_lang` cookie every hoandat.com app shares, so a language picked in
+// another app holds here too; a child profile's own choice still comes first. Song ngữ exists only in Miu: it stays
+// in this device's key and is kept until changed here.
+const SHARED_PREFERENCES: PreferenceOptions = { domain: 'hoandat.com' };
+
+function readDevice(): LangMode | null {
+  const own = readKey(STORAGE_KEY);
+  if (own === 'both') return own;
+  return readPreferences(SHARED_PREFERENCES).lang ?? own;
+}
+
+const readStored = (): LangMode => (profile ? readKey(profileKey(profile)) : null) ?? readDevice() ?? 'vi';
 
 let current: LangMode | null = null;
 
@@ -141,6 +153,7 @@ function syncLanguageToServer(childId: string, mode: LangMode): void {
 
 export function setLangMode(mode: LangMode, sync = true): void {
   writeKey(STORAGE_KEY, mode);
+  if (mode !== 'both') writePreference('lang', mode, SHARED_PREFERENCES);
   if (profile) {
     writeKey(profileKey(profile), mode);
     if (sync) syncLanguageToServer(profile, mode);

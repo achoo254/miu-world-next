@@ -131,6 +131,26 @@ describe('the mode setting', () => {
     expect(getLangMode()).toBe('en');
   });
 
+  it('shares Vietnamese or English with the other hoandat.com apps, keeping Song ngữ and a profile choice its own', () => {
+    // Picked in another app: the device follows it.
+    document.cookie = 'hd_lang=en; Path=/';
+    bindLangProfile('child-c');
+    expect(getLangMode()).toBe('en');
+    setLangMode('vi');
+    expect(document.cookie).toContain('hd_lang=vi');
+    // Song ngữ is Miu's own: the shared cookie keeps the last single language.
+    setLangMode('both');
+    expect(document.cookie).toContain('hd_lang=vi');
+    bindLangProfile(null);
+    expect(getLangMode()).toBe('both');
+    // A child's own choice wins over a language picked elsewhere later.
+    bindLangProfile('child-c');
+    document.cookie = 'hd_lang=en; Path=/';
+    bindLangProfile(null);
+    bindLangProfile('child-c');
+    expect(getLangMode()).toBe('both');
+  });
+
   it('still works when the browser blocks storage', () => {
     vi.spyOn(Storage.prototype, 'getItem').mockImplementation(() => {
       throw new Error('blocked');
