@@ -5,8 +5,8 @@ import type { Db } from '../db/client';
 import { childProfiles, parents } from '../db/schema';
 import { HttpError } from '../http-error';
 import { hasCurrentConsent } from './consent-store';
-import { readBearerToken, readSessionToken } from './session-cookie';
-import { findSession, type SessionRow } from './session-store';
+import { readBearerToken, readSessionToken, setSessionCookie } from './session-cookie';
+import { findSession, renewGuestSession, type SessionRow } from './session-store';
 
 export interface AuthContext {
   session: SessionRow;
@@ -31,6 +31,11 @@ export function loadSession(db: Db, config: ServerConfig, clock: () => Date): Re
       if (session) {
         const [parent] = await db.select().from(parents).where(eq(parents.id, session.parentId));
         if (parent) (res as WithAuth).locals[AUTH] = { session, parent };
+        // A guest keeps playing as long as they keep coming back: the session and its cookie slide forward.
+        if (parent?.isGuest && !native) {
+          const renewed = await renewGuestSession(db, session, clock());
+          if (renewed) setSessionCookie(res, config, token, renewed.getTime() - clock().getTime());
+        }
       }
     }
     next();

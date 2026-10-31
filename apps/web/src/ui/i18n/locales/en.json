@@ -1746,5 +1746,21 @@
   "moderation.action.rename": "Reset character name",
   "moderation.action.lock-temp": "Lock {days} days",
   "moderation.action.lock-permanent": "Lock for good",
-  "app.exitConfirm": "Leave Miu World?"
+  "app.exitConfirm": "Leave Miu World?",
+  "landing.guestNote": "No sign-in needed: your progress stays on this device, and signing in any time keeps it.",
+  "guest.cardTitle": "Keep your progress with a free hoandat.com account",
+  "guest.benefitDevices": "Carry on on another device without losing anything",
+  "guest.benefitDaily": "A daily quest and a streak of days in a row",
+  "guest.benefitOnline": "Play online, make friends and team up",
+  "guest.everyApp": "One account for every hoandat.com app",
+  "guest.signUp": "Sign up free",
+  "guest.later": "Later",
+  "guest.inviteTitle": "Well done!",
+  "guest.signOutWarning": "You are playing without signing in. Leaving now loses the progress on this device. Sign up free to keep it.",
+  "guest.signOutAnyway": "Leave anyway",
+  "daily.streak": "{count}-day streak",
+  "daily.best": "Best {count} days",
+  "daily.doneToday": "Done today",
+  "daily.keepStreak": "Do today's lesson to keep your streak",
+  "errors.guestAccount": "Sign in (free) to use this."
 }

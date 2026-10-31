@@ -1,5 +1,5 @@
 // NEW SCREEN (Master Plan §6, Tài khoản): the introduction a visitor who is not signed in sees at `/`, in place of a
-// sign-in form: what the game is, the picture of its islands, a button to play (the sign-in screen) and a way to the
+// sign-in form: what the game is, the picture of its islands, a button to play (as a guest on the web, the sign-in screen in the app) and a way to the
 // topic pages. No mock of its own; the sky, panel and buttons of the sign-in screens (direction A).
 import { Link } from 'react-router';
 import { TOPIC_SUBJECTS, subjectPagePath } from '@miu/schema/topic-pages';
@@ -8,9 +8,34 @@ import { buttonClass } from '../kit/button';
 import { HOME_ISLAND, assetUrl } from '../kit/ui-art';
 import { T, useT } from '../i18n/use-t';
 import { LegalLinks } from '../legal/legal-links';
+import { NATIVE_APP } from '../../platform/endpoints';
+import { useStartGuest } from '../account/guest-invite';
 import './landing.css';
 
 const BENEFITS = ['landing.benefitTopics', 'landing.benefitFriends', 'landing.benefitNotebook', 'landing.benefitFree'] as const;
+
+/**
+ * The web's "Chơi ngay": straight into the game as a guest, no sign-in (progress kept on this device until they sign in).
+ * The app keeps its sign-in screen: it has no cookie to keep a guest in.
+ */
+function GuestPlayButton() {
+  const guest = useStartGuest();
+  return (
+    <>
+      <button type="button" className={buttonClass('primary', { block: true })} data-id="landing-play" disabled={guest.busy} onClick={guest.start}>
+        <T k="landing.play" />
+      </button>
+      {guest.error ? (
+        <p role="alert" className="error">
+          {guest.error}
+        </p>
+      ) : null}
+      <p className="hint" data-id="landing-guest-note">
+        <T k="landing.guestNote" />
+      </p>
+    </>
+  );
+}
 
 export function LandingScreen() {
   const { t } = useT();
@@ -23,9 +48,13 @@ export function LandingScreen() {
             <h1><T k="landing.title" /></h1>
             <p className="hint"><T k="landing.lead" /></p>
             {/* Right under the lead: on a phone the button is on the first screen, before the list. */}
-            <Link to="/login" className={buttonClass('primary', { block: true })} data-id="landing-play">
-              <T k="landing.play" />
-            </Link>
+            {NATIVE_APP ? (
+              <Link to="/login" className={buttonClass('primary', { block: true })} data-id="landing-play">
+                <T k="landing.play" />
+              </Link>
+            ) : (
+              <GuestPlayButton />
+            )}
             <p className="hint">
               <T k="landing.haveAccount" /> <Link to="/login" className="landing-login" data-id="landing-login"><T k="landing.loginLink" /></Link>
             </p>

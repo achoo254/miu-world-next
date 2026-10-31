@@ -82,6 +82,7 @@ const MESSAGES: Readonly<Record<string, TextKey>> = {
   'voice-off': 'errors.voiceOff',
   'reauth-required': 'errors.reauthRequired',
   'idp-reauth': 'errors.idpReauth',
+  'guest-account': 'errors.guestAccount',
 };
 
 /** The message for a failed call, in the display mode chosen when it failed. */

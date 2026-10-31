@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { dailyLesson, dayNumber, type DailyLessonCandidate } from './daily-lesson';
+import { currentStreak, dailyLesson, dailyQuest, dayNumber, streakAfterDone, type DailyLessonCandidate } from './daily-lesson';
 
 const HOME = 'nha-cua-be';
 const lesson = (id: string, region: string, state: DailyLessonCandidate['state'] = 'open'): DailyLessonCandidate => ({ id, region, state });
@@ -33,5 +33,48 @@ describe('dailyLesson', () => {
   it('counts calendar days', () => {
     expect(dayNumber('1970-01-02')).toBe(1);
     expect(dayNumber('2026-10-10') - dayNumber('2026-10-09')).toBe(1);
+  });
+});
+
+describe('dailyQuest', () => {
+  it('is the day\'s lesson while one is left', () => {
+    const lessons = [lesson('school-1', 'truong-hoc'), lesson('river-1', 'lang-ven-song', 'completed')];
+    expect(dailyQuest(lessons, '2026-10-09', HOME)?.id).toBe('school-1');
+  });
+
+  it('offers a finished lesson again, in turn, once every lesson away from home is finished', () => {
+    const done = [lesson('home-1', HOME, 'completed'), lesson('school-1', 'truong-hoc', 'completed'), lesson('river-1', 'lang-ven-song', 'completed')];
+    const picks = ['2026-10-09', '2026-10-10'].map((day) => dailyQuest(done, day, HOME)?.id);
+    expect(new Set(picks)).toEqual(new Set(['school-1', 'river-1']));
+    expect(dailyQuest(done, '2026-10-09', HOME)).toEqual(dailyQuest(done, '2026-10-09', HOME));
+  });
+
+  it('has nothing only when there is no lesson away from home', () => {
+    expect(dailyQuest([lesson('home-1', HOME, 'completed')], '2026-10-09', HOME)).toBeNull();
+  });
+});
+
+describe('daily streak', () => {
+  const none = { doneDay: null, streak: 0, best: 0 };
+
+  it('starts at one, adds a day for each next day, and a second finish the same day changes nothing', () => {
+    const first = streakAfterDone(none, '2026-10-30');
+    expect(first).toEqual({ doneDay: '2026-10-30', streak: 1, best: 1 });
+    expect(streakAfterDone(first, '2026-10-30')).toBe(first);
+    // Across a month end.
+    expect(streakAfterDone(first, '2026-10-31')).toEqual({ doneDay: '2026-10-31', streak: 2, best: 2 });
+    expect(streakAfterDone({ doneDay: '2026-10-31', streak: 2, best: 2 }, '2026-11-01')).toEqual({ doneDay: '2026-11-01', streak: 3, best: 3 });
+  });
+
+  it('starts again at one after a missed day and keeps the best run', () => {
+    expect(streakAfterDone({ doneDay: '2026-10-28', streak: 5, best: 7 }, '2026-10-30')).toEqual({ doneDay: '2026-10-30', streak: 1, best: 7 });
+  });
+
+  it('shows the streak while the last finish was today or yesterday, zero after that', () => {
+    const s = { doneDay: '2026-10-30', streak: 4, best: 4 };
+    expect(currentStreak(s, '2026-10-30')).toBe(4);
+    expect(currentStreak(s, '2026-10-31')).toBe(4);
+    expect(currentStreak(s, '2026-11-01')).toBe(0);
+    expect(currentStreak(none, '2026-11-01')).toBe(0);
   });
 });

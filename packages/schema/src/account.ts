@@ -55,7 +55,8 @@ export type NativeExchangeRequest = z.infer<typeof NativeExchangeRequest>;
 export const NativeSessionResponse = z.object({ token: z.string().regex(/^[A-Za-z0-9_-]{16,128}$/) });
 export type NativeSessionResponse = z.infer<typeof NativeSessionResponse>;
 
-export const ParentDto = z.object({ id: Id, email: z.string() });
+/** `guest`: an account played on one device without signing in (its email is a made-up `.invalid` one, never shown). */
+export const ParentDto = z.object({ id: Id, email: z.string(), guest: z.boolean().default(false) });
 export type ParentDto = z.infer<typeof ParentDto>;
 
 export const ConsentRequest = z.object({ policyVersion: z.string().min(1).max(32) });
@@ -146,7 +147,7 @@ export const AccountExport = z.object({
   parent: z.object({
     email: z.string(),
     /** `idp`: the shared account service; `password`: dev/test only. */
-    signIn: z.enum(['idp', 'password']),
+    signIn: z.enum(['idp', 'password', 'guest']),
     /** The account service's id of the person and when it was linked; null for a password account. */
     idp: z.object({ issuer: z.string(), subject: z.string(), linkedAt: Instant }).nullable(),
     createdAt: Instant,
@@ -219,6 +220,8 @@ export const AccountExport = z.object({
           }),
         )
         .default([]),
+      /** Her daily quest: the day's pinned quest, the last day she finished one, the streak up to it and her best. */
+      dailyQuest: z.object({ day: z.string(), questId: z.string(), doneDay: z.string().nullable(), streak: z.number(), best: z.number() }).nullable().default(null),
       /** Companion bots that won a co-op challenge with her: how often, and the last challenge. */
       botMemories: z.array(z.object({ botId: z.string(), runs: z.number(), lastQuestId: z.string(), lastPlayedAt: z.string() })),
       /** Her friends (other players by character name, companion bots labelled). */

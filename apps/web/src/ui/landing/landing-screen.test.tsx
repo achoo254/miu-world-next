@@ -33,7 +33,9 @@ describe('the introduction at /', () => {
     renderAt('/');
     expect(await screen.findByRole('heading', { level: 1, name: viLocale['landing.title'] })).toBeTruthy();
     expect(screen.getByText(viLocale['landing.benefitFree'])).toBeTruthy();
-    expect(screen.getByRole('link', { name: 'Chơi ngay' }).getAttribute('href')).toBe('/login');
+    // The web plays as a guest straight away, saying where the progress is kept.
+    expect(screen.getByRole('button', { name: 'Chơi ngay' })).toBeTruthy();
+    expect(screen.getByText(viLocale['landing.guestNote'])).toBeTruthy();
     // The topic pages are static files: plain links with a trailing slash, not routes of the app.
     expect(screen.getByRole('link', { name: 'Các chủ đề Toán' }).getAttribute('href')).toBe('/hoc/toan/');
     expect(screen.getByRole('link', { name: 'Các chủ đề Tiếng Việt' }).getAttribute('href')).toBe('/hoc/tieng-viet/');
@@ -45,10 +47,10 @@ describe('the introduction at /', () => {
     expect(screen.getByRole('link', { name: viLocale['auth.termsLink'] }).getAttribute('href')).toBe('/terms');
   });
 
-  it('leads to the sign-in screen from the play button', async () => {
+  it('leads to the sign-in screen from "Đăng nhập" for a visitor who has an account', async () => {
     stubSession(401, { error: 'unauthenticated' });
     renderAt('/');
-    (await screen.findByRole('link', { name: 'Chơi ngay' })).click();
+    (await screen.findByRole('link', { name: viLocale['landing.loginLink'] })).click();
     expect(await screen.findByRole('heading', { name: 'Đăng nhập' })).toBeTruthy();
   });
 

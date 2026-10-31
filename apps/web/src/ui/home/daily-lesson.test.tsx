@@ -4,7 +4,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { QuestSummary } from '@miu/schema/game';
 import type { PlayerData } from '../player/player-data';
 import { questListWithLesson } from '../player/test-fixtures';
-import { DailyLessonCard, DailyLessonChip, todaysLesson } from './daily-lesson';
+import { DailyLessonCard, DailyLessonChip, dailyLessonOf, todaysLesson } from './daily-lesson';
 
 afterEach(cleanup);
 
@@ -45,6 +45,24 @@ describe('Bài hôm nay', () => {
       </MemoryRouter>,
     );
     expect(document.querySelector('[data-id="home-daily"]')).toBeNull();
+  });
+
+  it("shows the server's pick and the streak for a signed-in player, even a lesson she finished", () => {
+    const quests = [lessonAt('cho-phien', 'market-lesson'), lessonAt('nui-tuyet', 'snow-lesson', 'completed')];
+    const daily = { day: '2026-10-31', questId: 'snow-lesson', done: true, streak: 3, best: 5 };
+    expect(dailyLessonOf(quests, daily)?.quest.id).toBe('snow-lesson');
+    // Loading: nothing yet; no server pick (a guest): the page's own.
+    expect(dailyLessonOf(quests, null)).toBeNull();
+    expect(dailyLessonOf(quests, undefined)?.quest.id).toBe(todaysLesson(quests)?.quest.id);
+    const data = { character: { name: 'Mochi' }, quests } as unknown as PlayerData;
+    render(
+      <MemoryRouter>
+        <DailyLessonCard data={data} daily={daily} />
+      </MemoryRouter>,
+    );
+    expect(document.querySelector('[data-id="home-daily-done"]')?.textContent).toBe('Đã xong hôm nay');
+    expect(document.querySelector('[data-id="home-daily-streak-count"]')?.textContent).toBe('Chuỗi 3 ngày');
+    expect(document.querySelector('[data-id="home-daily-best"]')?.textContent).toBe('Kỷ lục 5 ngày');
   });
 
   it('takes her there from the chip over the game at home', () => {

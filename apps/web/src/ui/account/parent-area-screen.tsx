@@ -13,6 +13,7 @@ import { T, useT } from '../i18n/use-t';
 import { AccountDataPanel } from './account-data-panel';
 import { AccountPlayersPanel } from './account-players-panel';
 import { useAccount } from './account-context';
+import { GuestSaveCard } from './guest-invite';
 import { MAX_PROFILES, tileClass, useProfiles } from './profile-screens';
 import { useSubmit } from './use-submit';
 
@@ -200,6 +201,7 @@ export function ParentAreaScreen() {
           <h1><T k="gate.title" /></h1>
         </header>
         <p className="hint parent-intro"><T k="parent.intro" /></p>
+        {state.status === 'signed-in' && state.me.parent.guest ? <GuestSaveCard dataId="parent-guest-card" /> : null}
         {error ? (
           <div className="row">
             <p role="alert" className="error">

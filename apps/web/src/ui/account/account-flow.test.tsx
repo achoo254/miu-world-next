@@ -76,6 +76,24 @@ afterEach(() => {
 });
 
 describe('account flow', () => {
+  it('starts a visitor as a guest from the landing page, straight on to the policy', async () => {
+    let signedIn = false;
+    const guest = me({ parent: { ...PARENT, email: 'guest-x@guest.invalid', guest: true }, consentAccepted: false, players: [] });
+    const calls = stubApi({
+      'GET /api/auth/me': () => (signedIn ? { status: 200, body: guest } : { status: 401, body: { error: 'unauthenticated' } }),
+      'POST /api/auth/guest': () => {
+        signedIn = true;
+        return { status: 201, body: guest };
+      },
+      'GET /api/consents/policy': () => ({ status: 200, body: { version: 'v5', requiresLegalReview: false, title: 'Đồng ý chính sách dữ liệu', paragraphs: ['Nội dung v5.'] } }),
+    });
+    renderAt('/');
+    expect(await screen.findByText(/Không cần đăng nhập/)).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Chơi ngay' }));
+    expect(await screen.findByText('Nội dung v5.')).toBeTruthy();
+    expect(calls.map((c) => c.key)).toContain('POST /api/auth/guest');
+  });
+
   it('sends a signed-out visitor to the login screen', async () => {
     stubApi({ 'GET /api/auth/me': () => ({ status: 401, body: { error: 'unauthenticated' } }) });
     renderAt('/profiles');

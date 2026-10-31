@@ -97,6 +97,8 @@ export function playerSettingsRoutes({ db, content, clock, events }: PlayerSetti
     // Ownership first: another account's player is "not found" whatever the body says.
     const player = await ownedPlayer(db, parent.id, idParam(req.params.id));
     const patch = parseInput(PlayerOwnerSettingsPatch, req.body);
+    // A guest plays alone: online play and voice open once they sign in.
+    if (parent.isGuest && (patch.voiceChatAllowed === true || patch.onlineAllowed === true)) throw new HttpError(403, 'guest-account');
     if (patch.voiceChatAllowed === true && !player.isPrimary && !player.voiceChatAllowed && !recentlyReauthenticated(session, clock())) {
       throw new HttpError(403, 'reauth-required');
     }

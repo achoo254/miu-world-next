@@ -8,7 +8,7 @@ import { hasCurrentConsent } from './consent-store';
 /** Everything the web app needs to route the account: consent, players and the active player. */
 export async function accountSummary(db: Db, ctx: AuthContext, policyVersion: string): Promise<MeResponse> {
   return MeResponse.parse({
-    parent: ParentDto.parse(ctx.parent),
+    parent: ParentDto.parse({ id: ctx.parent.id, email: ctx.parent.email, guest: ctx.parent.isGuest }),
     consentAccepted: await hasCurrentConsent(db, ctx.parent.id, policyVersion),
     activePlayerId: ctx.session.activeChildId,
     players: await db

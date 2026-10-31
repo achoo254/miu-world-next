@@ -10,7 +10,10 @@
 import type { Response } from 'express';
 import type { Db } from '../db/client';
 import type { SessionKind } from '../db/schema';
-import { accountForIdentity } from './idp-account-link';
+import { serverEvents } from '../analytics/server-events';
+import { optionalAuth } from './auth-context';
+import { mergeGuestInto } from './guest-merge';
+import { accountForIdentity, REVIEW_SIGN_IN } from './idp-account-link';
 import type { IdpIdentity } from './idp-client';
 import type { createSignIn, SignedIn } from './sign-in';
 
@@ -47,8 +50,18 @@ export async function signInWithIdentity(
   // the token proves it; a "reauth" left in the IdP session from an earlier sign-in elsewhere is not recorded.
   const freshReauth = options.reauth && provesReauth(identity, now);
   if (options.reauth && !freshReauth) return { ok: false, code: 'idp-reauth' };
-  const account = await accountForIdentity(db, issuer, identity, now);
+  // The guest this device played as: kept as the new account, or merged into the account the identity already has.
+  const current = optionalAuth(res);
+  const guestId = current?.parent.isGuest ? current.parent.id : null;
+  const review = identity.amr.includes(REVIEW_SIGN_IN);
+  const account = await accountForIdentity(db, issuer, identity, now, review ? null : guestId);
   if (!account.ok) return { ok: false, code: FAILURE_OF[account.reason] };
+  if (account.outcome === 'upgraded') {
+    // Its sign-up: the guest's first consent did not count as one.
+    serverEvents()?.signUp(account.parentId, 'idp');
+  } else if (guestId && !review) {
+    await mergeGuestInto(db, guestId, account.parentId);
+  }
   const signedIn = await signIn(res, account.parentId, {
     kind: options.kind,
     idpSid: options.kind === 'web' ? identity.sid : null,

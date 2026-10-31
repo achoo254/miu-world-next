@@ -1,0 +1,5 @@
+/* The free-account card for a guest: the game's panel, a title with its icon, the benefits and the sign-up button. */
+.guest-card { display: grid; gap: var(--space-sm); padding: var(--space-md) var(--space-lg); }
+.guest-card-title { display: flex; align-items: center; gap: var(--space-sm); margin: 0; font-family: var(--font-display); font-size: var(--text-lg); font-weight: 800; line-height: 1.2; }
+.guest-card-list { display: grid; gap: var(--space-xs); margin: 0; padding-inline-start: var(--space-lg); color: var(--color-ink-soft); }
+.guest-sign-out { display: grid; gap: var(--space-sm); }

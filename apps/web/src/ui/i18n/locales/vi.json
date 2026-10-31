@@ -1746,5 +1746,21 @@
   "moderation.action.rename": "Đổi tên nhân vật",
   "moderation.action.lock-temp": "Khóa {days} ngày",
   "moderation.action.lock-permanent": "Khóa hẳn",
-  "app.exitConfirm": "Thoát Miu World?"
+  "app.exitConfirm": "Thoát Miu World?",
+  "landing.guestNote": "Không cần đăng nhập: tiến độ lưu trên máy này, đăng nhập lúc nào cũng giữ lại được.",
+  "guest.cardTitle": "Giữ lại tiến độ với tài khoản hoandat.com miễn phí",
+  "guest.benefitDevices": "Chơi tiếp trên máy khác, không mất những gì đã làm",
+  "guest.benefitDaily": "Nhiệm vụ mỗi ngày và chuỗi ngày chơi liên tiếp",
+  "guest.benefitOnline": "Chơi online, kết bạn và lập đội",
+  "guest.everyApp": "Một tài khoản dùng cho mọi app của hoandat.com",
+  "guest.signUp": "Đăng ký miễn phí",
+  "guest.later": "Để sau",
+  "guest.inviteTitle": "Làm tốt lắm!",
+  "guest.signOutWarning": "Bạn đang chơi không đăng nhập. Thoát ra thì tiến độ trên máy này sẽ mất. Đăng ký miễn phí để giữ lại.",
+  "guest.signOutAnyway": "Vẫn thoát",
+  "daily.streak": "Chuỗi {count} ngày",
+  "daily.best": "Kỷ lục {count} ngày",
+  "daily.doneToday": "Đã xong hôm nay",
+  "daily.keepStreak": "Làm bài hôm nay để giữ chuỗi ngày",
+  "errors.guestAccount": "Đăng nhập (miễn phí) để dùng tính năng này."
 }

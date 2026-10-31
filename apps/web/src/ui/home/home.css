@@ -257,3 +257,6 @@ button.home-rail-item { font: inherit; font-family: var(--font-display); font-si
 @media (orientation: landscape) and (max-height: 540px) and (max-width: 800px) {
   .home-play { font-size: var(--text-body); }
 }
+/* The daily streak under today's lesson (signed-in players). */
+.home-daily-streak { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs) var(--space-sm); color: var(--color-ink-soft); font-size: var(--text-sm); font-weight: 700; }
+.home-daily-streak > span { display: inline-flex; align-items: center; gap: var(--space-xs); }

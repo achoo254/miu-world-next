@@ -24,8 +24,14 @@ export const parents = pgTable('parents', {
   googleSub: text('google_sub').unique(),
   /** Dev/test sign-in only (disabled in production); accounts of the account service have none. */
   passwordHash: text('password_hash'),
+  /**
+   * A guest account: someone playing on this device without signing in (auth/guest-account.ts). Its email is a made-up
+   * `.invalid` address and it has no account-service link. Signing in turns it into a real account (a new identity) or
+   * merges its progress into the account the identity already has (auth/guest-merge.ts).
+   */
+  isGuest: boolean('is_guest').notNull().default(false),
   createdAt: createdAt(),
-});
+}, (t) => [index('parents_guest_created_idx').on(t.createdAt).where(sql`${t.isGuest}`)]);
 
 /**
  * Players of an account: the primary player (the owner) and optional extra players on a shared device.
@@ -236,6 +242,24 @@ export const playTime = pgTable(
     updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [primaryKey({ columns: [t.childId, t.weekStart] }), check('play_time_seconds_not_negative', sql`${t.seconds} >= 0`)],
+);
+
+/**
+ * The daily quest and its streak, one row per player (no per-day history). `day` and `questId` pin today's quest (a
+ * Vietnam calendar day): picked once on the day's first ask, so finishing it does not move it to another quest. `doneDay`
+ * is the last day she finished the day's quest; `streak` counts the consecutive days up to it, `best` the longest run.
+ */
+export const dailyQuests = pgTable(
+  'daily_quests',
+  {
+    childId: childRef().primaryKey(),
+    day: date('day').notNull(),
+    questId: text('quest_id').notNull(),
+    doneDay: date('done_day'),
+    streak: integer('streak').notNull().default(0),
+    best: integer('best').notNull().default(0),
+  },
+  (t) => [check('daily_quests_streak_valid', sql`${t.streak} >= 0 and ${t.best} >= ${t.streak}`)],
 );
 
 /** Where the child last stood on each map (a safe spot on dry ground), so the next visit starts there. */

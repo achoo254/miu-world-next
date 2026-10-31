@@ -13,6 +13,7 @@ import {
   mail,
   npcFriendships,
   petBonds,
+  dailyQuests,
   botMemories,
   playerPositions,
   playerReports,
@@ -54,12 +55,17 @@ function lockOf(row: typeof playerRestrictions.$inferSelect | undefined, now: Da
   return { kind: row.kind === 'locked' ? 'locked' : 'hidden', until: row.until ? iso(row.until) : null };
 }
 
+/** A player's daily quest row as the export shows it, or null before her first daily quest. */
+function dailyOf(row: typeof dailyQuests.$inferSelect | undefined): AccountExport['players'][number]['dailyQuest'] {
+  return row ? { day: row.day, questId: row.questId, doneDay: row.doneDay, streak: row.streak, best: row.best } : null;
+}
+
 async function buildExport(db: Db, parent: typeof parents.$inferSelect, now: Date): Promise<AccountExport> {
   const profiles = await db.select().from(childProfiles).where(eq(childProfiles.parentId, parent.id)).orderBy(childProfiles.createdAt);
   const ids = profiles.map((p) => p.id);
   const ofChildren = <T extends { childId: string }>(rows: Promise<T[]>) => (ids.length ? rows : Promise.resolve([] as T[]));
   const [link] = await db.select().from(parentIdpLinks).where(eq(parentIdpLinks.parentId, parent.id));
-  const [consentRows, sessionRows, characterRows, questRows, counterRows, rewardRows, itemRows, skillRows, positionRows, timetableRows, decorRows, objectRows, shopRows, playRows, mailRows, reportRows, bondRows, memoryRows, petRows, lockRows] = await Promise.all([
+  const [consentRows, sessionRows, characterRows, questRows, counterRows, rewardRows, itemRows, skillRows, positionRows, timetableRows, decorRows, objectRows, shopRows, playRows, mailRows, reportRows, bondRows, memoryRows, petRows, lockRows, dailyRows] = await Promise.all([
     db.select().from(consents).where(eq(consents.parentId, parent.id)).orderBy(consents.acceptedAt),
     db.select().from(sessions).where(eq(sessions.parentId, parent.id)).orderBy(sessions.createdAt),
     ofChildren(db.select().from(characters).where(inArray(characters.childId, ids))),
@@ -87,6 +93,7 @@ async function buildExport(db: Db, parent: typeof parents.$inferSelect, now: Dat
     ofChildren(db.select().from(botMemories).where(inArray(botMemories.childId, ids)).orderBy(botMemories.botId)),
     ofChildren(db.select().from(petBonds).where(inArray(petBonds.childId, ids)).orderBy(petBonds.petId)),
     ofChildren(db.select().from(playerRestrictions).where(inArray(playerRestrictions.childId, ids))),
+    ofChildren(db.select().from(dailyQuests).where(inArray(dailyQuests.childId, ids))),
   ]);
   // Friends, requests and blocks as each player's own lists show them (others by character name only).
   const social = new Map(await Promise.all(ids.map(async (id) => [id, await socialView(db, id, NOBODY_ONLINE)] as const)));
@@ -107,7 +114,7 @@ async function buildExport(db: Db, parent: typeof parents.$inferSelect, now: Dat
     exportedAt: iso(now),
     parent: {
       email: parent.email,
-      signIn: link ? 'idp' : 'password',
+      signIn: link ? 'idp' : parent.isGuest ? 'guest' : 'password',
       idp: link ? { issuer: link.issuer, subject: link.subject, linkedAt: iso(link.linkedAt) } : null,
       createdAt: iso(parent.createdAt),
     },
@@ -161,6 +168,7 @@ async function buildExport(db: Db, parent: typeof parents.$inferSelect, now: Dat
           carePaidAt,
           walkedAt: walkedAt ? iso(walkedAt) : null,
         })),
+        dailyQuest: dailyOf(dailyRows.find((d) => d.childId === p.id)),
         botMemories: (memories.get(p.id) ?? []).map(({ botId, runs, lastQuestId, lastPlayedAt }) => ({ botId, runs, lastQuestId, lastPlayedAt: iso(lastPlayedAt) })),
         friends: (social.get(p.id)?.friends ?? []).map(({ displayName, isBot, since }) => ({ displayName, isBot, since })),
         friendRequests: {

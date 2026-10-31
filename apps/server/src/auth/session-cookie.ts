@@ -21,8 +21,9 @@ function cookieOptions(config: ServerConfig): CookieOptions {
   };
 }
 
-export function setSessionCookie(res: Response, config: ServerConfig, token: string): void {
-  res.cookie(sessionCookieName(config), token, { ...cookieOptions(config), maxAge: SESSION_ABSOLUTE_MS });
+/** `maxAgeMs`: how long the browser keeps it, the session's own lifetime (a guest's is longer). */
+export function setSessionCookie(res: Response, config: ServerConfig, token: string, maxAgeMs: number = SESSION_ABSOLUTE_MS): void {
+  res.cookie(sessionCookieName(config), token, { ...cookieOptions(config), maxAge: maxAgeMs });
 }
 
 export function clearSessionCookie(res: Response, config: ServerConfig): void {

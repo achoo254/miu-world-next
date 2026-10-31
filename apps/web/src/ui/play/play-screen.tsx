@@ -26,7 +26,9 @@ import { BackpackPanel } from '../backpack/backpack-panel';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
 import { QuestBoard } from '../region/region-detail';
-import { DailyLessonChip, todaysLesson } from '../home/daily-lesson';
+import { DailyLessonChip, dailyLessonOf } from '../home/daily-lesson';
+import { useDailyQuest } from '../home/daily-quest-api';
+import { GuestInvite, finishedAQuest } from '../account/guest-invite';
 import { DEFAULT_REGION, HOME_REGION, findRegion, regionMap } from '../region/regions';
 import { LoadingOverlay, recallLook, rememberLook, type LoadingLook } from '../system/loading-overlay';
 import { OfflineBanner } from '../system/offline-banner';
@@ -515,7 +517,8 @@ export function PlayScreen() {
   );
   const atHome = data !== null && regionMap(region) === regionMap(HOME_REGION);
   /** "Bài hôm nay": while she is at home, a chip offers today's lesson on another map. */
-  const daily = data ? todaysLesson(data.quests) : null;
+  const dailyQuest = useDailyQuest();
+  const daily = data ? dailyLessonOf(data.quests, dailyQuest) : null;
   // The scenes of the events on this map (read before it is built; their opening and closing reach the game as commands).
   const mapEvents = useMapEvents(region, store);
   // The friends list is read in the background once the game is up, so it opens at once.
@@ -746,6 +749,8 @@ export function PlayScreen() {
               {/* Out of the way while a screen (the friends list…) covers the game: the two never overlap. */}
               {covered ? null : <PartyFrame social={social} voice={voice} fill={(text) => say(text, data.character)} />}
               {covered ? null : <CallBar voice={voice} social={social} />}
+              {/* A guest's first real achievement: the invitation to keep it with a free account. */}
+              <GuestInvite playing={playing} achieved={finishedAQuest(data.quests)} covered={hudCovered} />
               {covered ? null : (
                 <PartyQuestCard
                   social={social}

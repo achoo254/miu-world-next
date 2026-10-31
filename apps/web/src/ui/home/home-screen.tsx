@@ -6,7 +6,8 @@
 // map each day), and the child's level, XP and coins, with the title of her latest region chest and a "Nhận thưởng" badge over each
 // region with a chest tier to open. Home is a React screen
 // over a pre-rendered island image, not a second 3D scene (validation decision `home_scene`). Not in the
-// MVP, so not shown: diamonds (Master Plan §15 #6), the daily streak (`streak_in_mvp` = defer_v1). Live World: the
+// MVP, so not shown: diamonds (Master Plan §15 #6). The daily streak (owner's decision 31/10/2026) shows under today's
+// lesson for a signed-in player; a guest sees the free-account card once they finished a quest. Live World: the
 // banner of each event the server shows now (gone once it closes) with its page, a "Sự kiện" rail entry while one is
 // shown, and "Luyện Olympic" for the Olympic Math practice, which stays open between events.
 import { useEffect, useState } from 'react';
@@ -24,6 +25,8 @@ import { T, useT } from '../i18n/use-t';
 import { SettingsDialog } from '../system/settings-dialog';
 import { WorldStage } from '../world/world-stage';
 import { DailyLessonCard } from './daily-lesson';
+import { useDailyQuest } from './daily-quest-api';
+import { GuestSaveCard, finishedAQuest, useIsGuest } from '../account/guest-invite';
 import { HomePlayButton, TodayQuests } from './today-quests';
 import { ProgressResponse } from '@miu/schema/game';
 import { api } from '../api-client';
@@ -38,6 +41,8 @@ import './home.css';
 
 export function HomeScreen() {
   const { data, error } = usePlayer();
+  const guest = useIsGuest();
+  const daily = useDailyQuest();
   const rewards = useRegionRewardList();
   /** The title of her latest region chest, shown by her badge. */
   const title = rewards?.titles.at(-1) ?? null;
@@ -179,7 +184,8 @@ export function HomeScreen() {
                 {shownEvents.map((event) => (
                   <EventBanner key={event.id} event={event} onOpen={() => setEventOpen(event.id)} />
                 ))}
-                <DailyLessonCard data={data} />
+                {guest && (finishedAQuest(data.quests) || data.progress.xp > 0) ? <GuestSaveCard dataId="home-guest-card" /> : null}
+                <DailyLessonCard data={data} daily={daily} />
                 <TodayQuests data={data} />
               </div>
             </div>

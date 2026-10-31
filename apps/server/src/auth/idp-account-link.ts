@@ -15,11 +15,11 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { and, eq } from 'drizzle-orm';
 import type { Db } from '../db/client';
-import { parentIdpLinks, parents, sessions } from '../db/schema';
+import { childProfiles, parentIdpLinks, parents, sessions } from '../db/schema';
 import type { IdpIdentity } from './idp-client';
 
 export type AccountLink =
-  | { ok: true; parentId: string; outcome: 'signed-in' | 'linked' | 'created' }
+  | { ok: true; parentId: string; outcome: 'signed-in' | 'linked' | 'created' | 'upgraded' }
   | { ok: false; reason: 'email-unverified' | 'conflict' | 'google-mismatch' };
 
 async function linkedParent(db: Db, issuer: string, sub: string): Promise<string | null> {
@@ -64,7 +64,12 @@ async function createReviewAccount(db: Db, issuer: string, sub: string, now: Dat
   }
 }
 
-export async function accountForIdentity(db: Db, issuer: string, identity: IdpIdentity, now: Date): Promise<AccountLink> {
+/**
+ * `guestId`: the guest account the person played as on this device before signing in. A new identity with no account of
+ * its own turns that guest account into its account (outcome `upgraded`: same players, same progress), instead of
+ * getting an empty one. An identity that already has an account signs into it; the caller merges the guest into it.
+ */
+export async function accountForIdentity(db: Db, issuer: string, identity: IdpIdentity, now: Date, guestId: string | null = null): Promise<AccountLink> {
   const known = await linkedParent(db, issuer, identity.sub);
   if (known) return { ok: true, parentId: known, outcome: 'signed-in' };
   if (identity.amr.includes(REVIEW_SIGN_IN)) return createReviewAccount(db, issuer, identity.sub, now);
@@ -95,6 +100,18 @@ export async function accountForIdentity(db: Db, issuer: string, identity: IdpId
         await tx.insert(parentIdpLinks).values({ parentId: byGoogle.id, issuer, subject: identity.sub, linkedAt: now });
         console.info('parent linked to the account service by its Google account', byGoogle.id);
         return { ok: true, parentId: byGoogle.id, outcome: 'linked' };
+      }
+      if (guestId) {
+        const [guest] = await tx.select({ isGuest: parents.isGuest }).from(parents).where(eq(parents.id, guestId)).for('update');
+        if (guest?.isGuest) {
+          await tx.update(parents).set({ email: identity.email, isGuest: false }).where(eq(parents.id, guestId));
+          await tx.insert(parentIdpLinks).values({ parentId: guestId, issuer, subject: identity.sub, linkedAt: now });
+          // A signed-in player plays online like everyone (the guest played alone); extra players keep voice off.
+          await tx.update(childProfiles).set({ onlineAllowed: true }).where(eq(childProfiles.parentId, guestId));
+          await tx.update(childProfiles).set({ voiceChatAllowed: true }).where(and(eq(childProfiles.parentId, guestId), eq(childProfiles.isPrimary, true)));
+          console.info('guest account registered', guestId);
+          return { ok: true, parentId: guestId, outcome: 'upgraded' };
+        }
       }
       const parentId = randomUUID();
       await tx.insert(parents).values({ id: parentId, email: identity.email });

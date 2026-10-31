@@ -13,6 +13,7 @@ import { inventoryItems, mail, questProgress, skillProgress } from '../db/schema
 import { grantEventRewards } from '../event/event-rewards';
 import { letterTemplateId } from '../npc/npc-catalog';
 import { chapterHearts } from '../npc/npc-friendship';
+import { markDailyQuestDone } from '../progression/daily-quest';
 import { grantSkillGifts } from '../progression/skill-gifts';
 import { grantReward, questSource, totalXp, type Tx } from '../reward/reward-ledger';
 import { firstQuestEver, type CommitQueue } from './quest-usage';
@@ -122,6 +123,8 @@ export async function finishQuest(tx: Tx, content: ContentCatalog, childId: stri
       ...(eventRewards.length > 0 ? { eventRewards } : {}),
     },
   };
+  // Today's daily quest finished: a day for the streak.
+  if (granted) await markDailyQuestDone(tx, childId, quest.id, now);
   // Last, after every row this payment writes (see `firstQuestEver`).
   if (granted) await reportFinished(tx, childId, quest, queue);
   return finished;

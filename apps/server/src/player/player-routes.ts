@@ -47,9 +47,10 @@ async function lockAccount(tx: Tx, parentId: string): Promise<void> {
  * reviewer meets no real player unless the switches are turned on in account management.
  */
 async function insertPlayer(tx: Tx, values: { parentId: string; displayName: string; language: string; isPrimary: boolean; createdAt: Date }) {
-  const [account] = await tx.select({ email: parents.email }).from(parents).where(eq(parents.id, values.parentId));
-  const review = account ? isReviewAccountEmail(account.email) : false;
-  const controls = { onlineAllowed: !review, voiceChatAllowed: !review && values.isPrimary };
+  const [account] = await tx.select({ email: parents.email, isGuest: parents.isGuest }).from(parents).where(eq(parents.id, values.parentId));
+  // A guest plays alone until they sign in (guest-account.ts); a reviewer meets nobody until the switches are turned on.
+  const alone = account ? account.isGuest || isReviewAccountEmail(account.email) : false;
+  const controls = { onlineAllowed: !alone, voiceChatAllowed: !alone && values.isPrimary };
   const [row] = await tx.insert(childProfiles).values({ id: randomUUID(), ...values, ...controls }).returning();
   if (!row) throw new Error('player insert returned no row');
   const [character] = await tx.insert(characters).values({ childId: row.id, name: DEFAULT_CHARACTER_NAME }).returning({ species: characters.species });
@@ -95,8 +96,9 @@ export async function acceptPolicy(db: Db, content: ContentCatalog, parentId: st
       .onConflictDoNothing()
       .returning({ id: consents.id });
     const firstEver = !earlier && inserted.length > 0;
-    const [account] = firstEver ? await tx.select({ passwordHash: parents.passwordHash }).from(parents).where(eq(parents.id, parentId)) : [];
-    const signUp: SignUpMethod | null = account ? (account.passwordHash === null ? 'idp' : 'password') : null;
+    const [account] = firstEver ? await tx.select({ passwordHash: parents.passwordHash, isGuest: parents.isGuest }).from(parents).where(eq(parents.id, parentId)) : [];
+    // A guest's sign-up is counted when they sign in and keep the account (idp-sign-in.ts), not here.
+    const signUp: SignUpMethod | null = account && !account.isGuest ? (account.passwordHash === null ? 'idp' : 'password') : null;
     return { primaryId: await ensurePrimaryIn(tx, content, parentId, now), signUp };
   });
   if (signUp) serverEvents()?.signUp(parentId, signUp);
@@ -125,6 +127,8 @@ export function playerRoutes({ db, content, clock }: PlayerRouteDeps): Router {
   /** An extra player on a shared device (the primary player is made on consent). */
   router.post('/players', requireParent, async (req, res) => {
     const { parent } = auth(res);
+    // Extra players come with a real account: a guest's progress lives on one device only.
+    if (parent.isGuest) throw new HttpError(403, 'guest-account');
     const input = parseInput(PlayerInput, req.body);
     if (!content.childDisplayNames.has(input.displayName)) throw new HttpError(400, 'invalid-display-name');
     if (!(await hasCurrentConsent(db, parent.id, content.consent.version))) throw new HttpError(403, 'consent-required');
