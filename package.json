@@ -72,7 +72,7 @@
     "@gltf-transform/core": "^4.5.0",
     "@gltf-transform/extensions": "^4.5.0",
     "@playwright/test": "^1.63.0",
-    "@achoo254/brand": "github:achoo254/shared-next#v0.5.1&path:/packages/brand",
+    "@achoo254/brand": "github:achoo254/shared-next#v0.12.0&path:/packages/brand",
     "@types/node": "^26.6.3",
     "@types/picomatch": "^4.0.3",
     "@types/pngjs": "^6.0.5",

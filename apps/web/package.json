@@ -18,8 +18,8 @@
     "store:screens": "playwright test --project store"
   },
   "dependencies": {
-    "@achoo254/app-shell": "github:achoo254/shared-next#v0.9.1&path:/packages/app-shell",
-    "@achoo254/brand": "github:achoo254/shared-next#v0.5.1&path:/packages/brand",
+    "@achoo254/app-shell": "github:achoo254/shared-next#v0.12.0&path:/packages/app-shell",
+    "@achoo254/brand": "github:achoo254/shared-next#v0.12.0&path:/packages/brand",
     "@miu/schema": "workspace:*",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
@@ -32,7 +32,7 @@
     "@capacitor/app": "8.1.2",
     "@capacitor/core": "8.5.3",
     "@aparajita/capacitor-secure-storage": "8.0.1",
-    "@achoo254/capacitor-system-auth": "github:achoo254/shared-next#v0.5.1&path:/packages/capacitor-system-auth"
+    "@achoo254/capacitor-system-auth": "github:achoo254/shared-next#v0.12.0&path:/packages/capacitor-system-auth"
   },
   "devDependencies": {
     "@testing-library/react": "^16.3.3",
