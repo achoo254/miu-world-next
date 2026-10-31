@@ -19,7 +19,8 @@ describe('account schema', () => {
       email: 'p@example.vn',
       passwordHash: 'hash-a',
     };
-    expect(ParentDto.parse(row)).toEqual({ id: row.id, email: row.email });
+    // `guest` defaults to false: an account row without it is a signed-in account.
+    expect(ParentDto.parse(row)).toEqual({ id: row.id, email: row.email, guest: false });
     const player = PlayerDto.parse({ id: row.id, displayName: 'Mèo Mây', species: 'cat', primary: true, parentId: 'x' });
     expect(player).toEqual({ id: row.id, displayName: 'Mèo Mây', species: 'cat', language: 'vi', primary: true, botsEnabled: true, voiceChatAllowed: true, onlineAllowed: true });
   });
