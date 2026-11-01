@@ -11,7 +11,12 @@
 #   tools/deploy/production/deploy.sh analytics write the Google Analytics (GA4) property and secret into the env file;
 #                                               only after a release with the privacy page that tells it; restart to apply
 #   tools/deploy/production/deploy.sh gate      check the release gate only (tools/deploy/release-gate.sh), touching no server
-#   tools/deploy/production/deploy.sh release   release gate, build, back up the DB, upload, switch, health-check
+#   tools/deploy/production/deploy.sh deploy-user [<ssh-ed25519 .pub file>]  create the restricted CI user miu-deploy
+#                                               (setup-deploy-user.sh); without a file only its sudo command is refreshed
+#   tools/deploy/production/deploy.sh release   release gate, build (build-release.sh), upload to /opt/miu/incoming, then
+#                                               the same activation as CI (activate-incoming.sh: back up the DB, switch,
+#                                               health-check, roll back on failure); refreshes that root command first
+# Every push to main whose CI passes also deploys through .github/workflows/deploy.yml with the same build and activation.
 # Production holds real players' data (every age, signed in with a hoandat.com account) and .65 is shared:
 # `release` backs the database up before it switches (docs/deployment-guide.md §1). Credentials come from $ALL_IN_ONE_STAGING_DEV (the .65 entry
 # SSH_SERVER_STAGING lives there) and the access-tokens.json beside it. No value is printed; secrets
@@ -40,7 +45,8 @@ srv() { jq -er --arg n "$1" '.servers[] | select(.name == $n) | .'"$2" "$ALL_IN_
 secret() { jq -er "$1" "$TOKENS"; }
 
 KEY=""
-cleanup() { [ -n "$KEY" ] && rm -f "$KEY"; return 0; }
+OUT=""
+cleanup() { [ -z "$KEY" ] || rm -f "$KEY"; [ -z "$OUT" ] || rm -rf "$OUT"; return 0; }
 trap cleanup EXIT
 prod() {
   if [ -z "$KEY" ]; then
@@ -49,9 +55,15 @@ prod() {
   ssh -i "$KEY" -o IdentitiesOnly=yes -o ConnectTimeout=10 -p "$(srv $HOST port)" "$(srv $HOST user)@$(srv $HOST host)" "$@"
 }
 
+# Ships this directory to /tmp/miu-prod-setup on the host (root-only), for the root scripts that run there.
+ship_tools() {
+  tar --no-xattrs -C "$HERE" -cf - . | prod 'rm -rf /tmp/miu-prod-setup && install -d -m 700 /tmp/miu-prod-setup && tar --no-same-owner -xf - -C /tmp/miu-prod-setup'
+}
+
 setup() {
   echo "== host"
-  tar --no-xattrs -C "$HERE" -cf - . | prod 'rm -rf /tmp/miu-prod-setup && mkdir -p /tmp/miu-prod-setup && tar --no-same-owner -xf - -C /tmp/miu-prod-setup && bash /tmp/miu-prod-setup/setup-prod-host.sh'
+  ship_tools
+  prod 'bash /tmp/miu-prod-setup/setup-prod-host.sh' </dev/null
 
   echo "== database role"
   local pg='.tokens[] | select(.service == "postgresql" and (.used_by | startswith("miu-world production"))) | .token'
@@ -217,61 +229,58 @@ timetable() {
     && grep -c "^TIMETABLE_DEFAULT_ACCOUNTS=" /etc/miu/production.env | xargs echo "timetable default on host; TIMETABLE_DEFAULT_ACCOUNTS lines:"' < "$file"
 }
 
+# The CI deploy user: GitHub Actions uploads as miu-deploy and may only run miu-activate-incoming (setup-deploy-user.sh).
+deploy_user() {
+  local pub="${1:-}"
+  [ -z "$pub" ] || [ -f "$pub" ] || { echo "no public key file $pub" >&2; exit 1; }
+  ship_tools
+  if [ -n "$pub" ]; then
+    prod 'bash /tmp/miu-prod-setup/setup-deploy-user.sh' <"$pub"
+  else
+    prod 'bash /tmp/miu-prod-setup/setup-deploy-user.sh' </dev/null
+  fi
+}
+
 release() {
   local root; root="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
   cd "$root"
-  local rev="${MIU_RELEASE_REV:-}"
-  if [ -z "$rev" ]; then
-    [ -z "$(git status --porcelain)" ] || { echo "working tree not clean: commit first, or set MIU_RELEASE_REV for an exported tree" >&2; exit 1; }
-    rev="$(git rev-parse --short HEAD)"
+  # The release id names the commit: HEAD of a clean checkout, or MIU_RELEASE_REV (its full sha) for a tree exported
+  # without .git. In a checkout MIU_RELEASE_REV only waives the clean-tree check (untracked files outside the build).
+  local sha
+  if git rev-parse --git-dir >/dev/null 2>&1; then
+    [ -n "${MIU_RELEASE_REV:-}" ] || [ -z "$(git status --porcelain)" ] \
+      || { echo "working tree not clean: commit first, or set MIU_RELEASE_REV for an exported tree" >&2; exit 1; }
+    sha="$(git rev-parse HEAD)"
+  else
+    sha="${MIU_RELEASE_REV:-}"
+    [[ "$sha" =~ ^[0-9a-f]{12,40}$ ]] || { echo "exported tree: set MIU_RELEASE_REV to the sha of the exported commit" >&2; exit 1; }
   fi
   release_gate || exit 1
-  local id; id="$(date +%y%m%d-%H%M%S)-$rev"
+  local id; id="$(date -u +%Y%m%d-%H%M%S)-${sha:0:12}"
 
   echo "== build $id"
-  # The game only: no review page, render tool page or review screenshots in production.
-  pnpm --filter @miu/web build:release >/dev/null
-  # Only the character portraits the UI shows may remain under generated/review.
-  [ ! -e apps/web/dist/review.html ] && [ ! -e apps/web/dist/preview.html ] \
-    && [ -z "$(ls apps/web/dist/game-assets/generated/review 2>/dev/null | grep -vx character)" ] \
-    || { echo "release build still carries review material" >&2; exit 1; }
-  # Crawlers are let in, and the sitemap lists the home page and every page under /hoc/ (the subject and topic pages).
-  local pages; pages="$(find apps/web/dist/hoc -name index.html 2>/dev/null | wc -l | tr -d ' ')"
-  [ "$pages" -gt 0 ] || { echo "release build has no topic pages under /hoc" >&2; exit 1; }
-  if grep -Eq '^Disallow:[[:space:]]*/[[:space:]]*$' apps/web/dist/robots.txt 2>/dev/null || ! grep -q '^Sitemap: ' apps/web/dist/robots.txt 2>/dev/null; then
-    echo "release build: robots.txt shuts crawlers out or names no sitemap" >&2; exit 1
-  fi
-  [ "$(grep -c '<loc>' apps/web/dist/sitemap.xml 2>/dev/null)" -eq "$((pages + 1))" ] \
-    || { echo "release build: sitemap.xml does not list the home page and the $pages pages under /hoc" >&2; exit 1; }
-  pnpm --filter @miu/server bundle >/dev/null
-  pnpm -s security:dist
+  OUT="$(mktemp -d)"
+  bash "$HERE/build-release.sh" "$OUT"
+  # A release let through the gate by MIU_RELEASE_FORCE keeps the reason on the host, beside REVISION.
+  [ -z "$RELEASE_FORCED" ] || printf '%s\n' "$RELEASE_FORCED" > "$OUT/apps/server/dist/server/RELEASE_FORCED"
 
-  echo "== backup database"
-  prod "cd /tmp && sudo -u postgres pg_dump -Fc miu > /var/backups/miu/before-$id.dump && ls -l /var/backups/miu/before-$id.dump | awk '{print \$5\" bytes\"}'"
+  echo "== refresh the activation command"
+  prod 'install -m 755 -o root -g root /dev/stdin /usr/local/sbin/miu-activate-incoming.new && mv -f /usr/local/sbin/miu-activate-incoming.new /usr/local/sbin/miu-activate-incoming' \
+    < "$HERE/activate-incoming.sh"
 
   echo "== upload"
-  echo "$rev" > apps/server/dist/server/REVISION
-  # A release let through the gate by MIU_RELEASE_FORCE keeps the reason on the host, beside REVISION.
-  rm -f apps/server/dist/server/RELEASE_FORCED
-  [ -z "$RELEASE_FORCED" ] || printf '%s\n' "$RELEASE_FORCED" > apps/server/dist/server/RELEASE_FORCED
-  tar --no-xattrs -cf - apps/web/dist apps/server/dist/server apps/server/drizzle content \
-    | prod "mkdir -p /opt/miu/releases/$id && tar --no-same-owner -xf - -C /opt/miu/releases/$id"
+  # incoming/ belongs to miu-deploy once deploy-user ran; before that root keeps it (750) until it does.
+  tar --no-xattrs -C "$OUT" -cf - . \
+    | prod "[ -d /opt/miu/incoming ] || install -d -m 750 /opt/miu/incoming; rm -rf /opt/miu/incoming/$id && mkdir /opt/miu/incoming/$id && tar --no-same-owner -xf - -C /opt/miu/incoming/$id"
 
-  echo "== switch and restart"
-  prod "set -e
-    prev=\$(readlink /opt/miu/current || true)
-    ln -sfn /opt/miu/releases/$id /opt/miu/current.new && mv -T /opt/miu/current.new /opt/miu/current
-    systemctl restart miu-server
-    for i in \$(seq 1 30); do curl -fsS http://127.0.0.1:$PORT/api/health >/dev/null 2>&1 && { echo healthy; break; }; sleep 1; done
-    if ! curl -fsS http://127.0.0.1:$PORT/api/health >/dev/null 2>&1; then
-      journalctl --namespace=miu -u miu-server -n 40 --no-pager
-      if [ -n \"\$prev\" ]; then ln -sfn \"\$prev\" /opt/miu/current && systemctl restart miu-server; echo \"rolled back to \$prev\"; fi
-      exit 1
-    fi
-    cd /opt/miu/releases && ls -1t | tail -n +6 | xargs -r rm -rf"
+  echo "== activate"
+  prod "/usr/local/sbin/miu-activate-incoming $id" </dev/null
 
   echo "== public check"
   curl -fsS "https://$DOMAIN/api/health" && echo
+  local served; served="$(curl -fsS "https://$DOMAIN/RELEASE?v=$id" | tr -d '\r\n')"
+  [ "$served" = "$id" ] || { echo "https://$DOMAIN/RELEASE serves '$served', expected $id" >&2; exit 1; }
+  echo "public: $DOMAIN serves $id"
 }
 
 case "${1:-}" in
@@ -281,6 +290,7 @@ case "${1:-}" in
   signin) signin ;;
   google-cleanup) google_cleanup ;;
   analytics) analytics ;;
+  deploy-user) deploy_user "${2:-}" ;;
   release) release ;;
-  *) echo "usage: $0 setup|timetable|turn|signin|google-cleanup|analytics|gate|release" >&2; exit 2 ;;
+  *) echo "usage: $0 setup|timetable|turn|signin|google-cleanup|analytics|gate|deploy-user [<pub file>]|release" >&2; exit 2 ;;
 esac

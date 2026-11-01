@@ -13,7 +13,7 @@
 
 ## 1. Quyền hạn
 
-- **Production:** dữ liệu thật của người chơi (mọi lứa tuổi, đăng nhập bằng tài khoản hoandat.com) trên máy dùng chung với nhiều dự án khác. Deploy bằng `release`, lệnh này tự sao lưu database trước khi đổi bản; migration và thao tác tay trên dữ liệu thì sao lưu trước. (Bỏ quy tắc cũ "hỏi trước mỗi lần deploy" vì dựa trên dữ liệu trẻ em; game nay dành cho mọi lứa tuổi, chủ sản phẩm xác nhận 28/10/2026.)
+- **Production:** dữ liệu thật của người chơi (mọi lứa tuổi, đăng nhập bằng tài khoản hoandat.com) trên máy dùng chung với nhiều dự án khác. Mỗi push lên `main` có CI xanh tự deploy (§5); deploy tay bằng `release`. Cả hai đường đi qua cùng một bước kích hoạt, bước này tự sao lưu database trước khi đổi bản; migration và thao tác tay trên dữ liệu thì sao lưu trước. (Bỏ quy tắc cũ "hỏi trước mỗi lần deploy" vì dựa trên dữ liệu trẻ em; game nay dành cho mọi lứa tuổi, chủ sản phẩm xác nhận 28/10/2026.)
 - Chỉ đụng thư mục và tiến trình của Miu; không sửa, dừng hay nâng cấp dịch vụ của dự án khác chạy trên cùng máy.
 - **Không bao giờ** commit file credential, file env thật hay private key; không in giá trị secret ra hội thoại, log, report hay commit.
 
@@ -73,6 +73,10 @@ Kiểm tra: `dig +short A <domain> @1.1.1.1` phải trả IP của Cloudflare. D
 
 ## 5. Deploy
 
+**Deploy tự động (từ 01/11/2026):** mỗi push lên `main` mà workflow `ci` xanh thì `.github/workflows/deploy.yml` chạy. Job `build` không có secret nào: chạy cổng release (`deploy.sh gate`) rồi `tools/deploy/production/build-release.sh`, đúng bản build mà `release` tay tải lên. Job `deploy` (environment `production`) tải bản đó bằng rsync lên `/opt/miu/incoming/<id>` với user hạn chế `miu-deploy`, rồi chạy lệnh sudo duy nhất user đó có: `sudo -n /usr/local/sbin/miu-activate-incoming <id>` (bản cài của `tools/deploy/production/activate-incoming.sh`). Mã bản `<id>` là `YYYYMMDD-HHMMSS-<12 ký tự đầu của sha>` (giờ UTC). Sau đó job kiểm từ ngoài: trang chủ 200, `/api/health` trả `ok`, `https://miu.hoandat.com/RELEASE` trả đúng mã bản. Đỏ ở bước nào thì xem log của run; hỏng sau khi đổi bản thì bản trước đã tự quay lại. Secret của repo: `DEPLOY_SSH_KEY` (khoá riêng của `miu-deploy`), `DEPLOY_KNOWN_HOSTS`, `DEPLOY_HOST`, `DEPLOY_PORT`; secret của app chỉ nằm trong `/etc/miu/production.env` trên máy, không đi qua GitHub. CI không đổi được unit, nginx, script root hay env: những thứ đó chỉ đổi bằng `setup`.
+
+**Bước kích hoạt** (`activate-incoming.sh`, chung cho CI và `release` tay; chạy bằng root, mỗi lần một bản nhờ khoá `/run/miu-activate.lock`): kiểm mã bản; chuyển bản tải lên vào `/opt/miu/staging` (chỉ root) rồi mới kiểm: không link, không tệp đặc biệt hay hard link, chỉ có `apps/web/dist`, `apps/server/dist/server`, `apps/server/drizzle`, `content`, đủ `index.html`, `index.mjs`, `drizzle/meta/_journal.json`; đổi chủ sang root, quyền 755/644; ghi `REVISION` (sha 12 ký tự), `RELEASE` (mã bản) và `apps/web/dist/RELEASE`. Rồi như `release` vẫn làm: sao lưu database ra `/var/backups/miu/before-<id>.dump`, chuyển `/opt/miu/current`, restart `miu-server` (server chạy migration còn thiếu khi khởi động), đợi `/api/health` trên loopback, kiểm lại sau 5 giây, kiểm trang và `/RELEASE` qua nginx. Hỏng thì quay về bản trước, in `rolled back to …` và thoát 1; nếu migration của bản mới đã chạy thì in cảnh báo kèm số migration trước/sau: migration **không** bị đảo, bản trước chạy trên schema đã migrate, muốn gỡ thì khôi phục `before-<id>.dump` (Rollback bên dưới). Khi CI gọi, log server không in ra (log của Actions công khai), xem bằng `journalctl` trên máy. Giữ 5 bản mới nhất.
+
 Lệnh chạy từ gốc repo trên máy dev. Script đọc credential theo §2 và không in giá trị nào. Deploy, migration theo release và restart ở production không phải hỏi trước (§1); `release` tự sao lưu database trước khi đổi bản. Các lệnh ghi khác (`setup`, `timetable`, `turn`, `signin`, `google-cleanup`, `analytics`, sửa env, ghi dữ liệu tay) vẫn hỏi người trước.
 
 ```sh
@@ -83,41 +87,42 @@ tools/deploy/production/deploy.sh signin    # ghi (hoặc thay) các dòng OIDC_
 tools/deploy/production/deploy.sh google-cleanup # xóa các dòng GOOGLE_* (đăng nhập Google cũ); chỉ sau release đăng nhập qua auth-next
 tools/deploy/production/deploy.sh analytics # ghi (hoặc thay) hai dòng GA4_* vào /etc/miu/production.env; CHỈ sau release có trang /privacy và lời đồng ý hiện hành (phiên bản trong content/legal/consent-vi.json); restart để bắt đầu gửi
 tools/deploy/production/deploy.sh gate      # chỉ kiểm cổng release, không chạm máy chủ
-tools/deploy/production/deploy.sh release   # cổng release, build, security:dist, backup DB, upload, switch, health, tự rollback
+tools/deploy/production/deploy.sh deploy-user <tệp .pub> # tạo/đổi khoá user CI miu-deploy (setup-deploy-user.sh); không có tệp thì chỉ làm mới lệnh sudo
+tools/deploy/production/deploy.sh release   # cổng release, build-release.sh, làm mới lệnh kích hoạt, upload, kích hoạt (backup DB, switch, health, tự rollback), kiểm từ ngoài
 ```
 
 **Thứ tự một lần deploy:**
 
-1. Gate 5 lệnh trong `CLAUDE.md`, build web; commit; push; CI của commit đó xanh.
-2. `deploy.sh gate` phải in "được", rồi chạy `deploy.sh release`.
+1. Gate 5 lệnh trong `CLAUDE.md`; commit; push lên `main`.
+2. CI của commit đó xanh thì `deploy` tự chạy; theo dõi bằng `gh run watch` (run của workflow `deploy`) và đọc dòng `healthy: …` hay `rolled back to …`.
+3. Chỉ deploy tay (`deploy.sh gate` phải in "được", rồi `deploy.sh release`) khi CI deploy hỏng vì lý do ngoài code, khi cần `MIU_RELEASE_FORCE`, hay khi vừa đổi `activate-incoming.sh` mà muốn áp trước lần push kế (mỗi `release` tay cài lại `/usr/local/sbin/miu-activate-incoming`; `setup` cũng vậy khi user `miu-deploy` đã có).
 
 Không còn bước chụp và duyệt ảnh màn hình trước deploy (người sở hữu bỏ 29/10/2026); [`screen-review.md`](screen-review.md) vẫn dùng được khi muốn tự xem các màn.
 
 **Cổng release** (`tools/deploy/release-gate.sh`, `release` tự chạy trước khi build; `gate` chạy riêng): chặn khi CI (`gh run list --commit`) của commit được release (`HEAD`, hay `MIU_RELEASE_REV` với cây export không có `.git`) chưa chạy, đang chạy hay đỏ. `gh` chưa đăng nhập hay mất mạng thì cổng chặn và in cách khắc phục. Bản vá gấp khi CI hỏng vì nguyên nhân ngoài code: `MIU_RELEASE_FORCE="<lý do>"` cho qua, in lý do và ghi nó vào `RELEASE_FORCED` cạnh `REVISION` trong bản release trên máy chủ; vẫn phải hỏi người trước.
 
-**Trước khi `release`:** chạy đủ gate trong `CLAUDE.md`. Script từ chối chạy khi working tree còn thay đổi chưa commit, vì mã release lấy từ commit. Khi cần deploy một cây đã export (`git archive`) thay vì checkout, đặt `MIU_RELEASE_REV=<nhãn>` và chạy từ gốc cây đó. Nếu chỉ còn file chưa track không thuộc bản build thì đặt `MIU_RELEASE_REV=$(git rev-parse --short HEAD)` sau khi kiểm `git diff --quiet HEAD`.
+**Trước khi `release` tay:** chạy đủ gate trong `CLAUDE.md`. Script từ chối chạy khi working tree còn thay đổi chưa commit, vì mã release lấy từ commit (`HEAD`). Khi cần deploy một cây đã export (`git archive <sha>`, rồi `pnpm install --frozen-lockfile` trong đó) thay vì checkout, đặt `MIU_RELEASE_REV=<sha đầy đủ của commit đó>` và chạy từ gốc cây đó. Trong checkout, `MIU_RELEASE_REV` (giá trị nào cũng được) chỉ bỏ qua việc kiểm cây sạch: dùng khi chỉ còn file chưa track không thuộc bản build, sau khi kiểm `git diff --quiet HEAD`.
 
-**`release` làm gì** (chi tiết ở `deploy.sh`):
+**`release` tay làm gì** (chi tiết ở `deploy.sh`; CI làm đúng bước 1 và 3):
 
-1. Build web bằng `pnpm --filter @miu/web build:release` (`vite build --mode release`): chỉ có game, không có `review.html`, `preview.html` hay ảnh review (chỉ giữ ảnh chân dung nhân vật mà UI dùng), khoảng 8,6 MB thay vì 19 MB; dừng nếu `dist` vẫn còn trang review. E2E và bản review chạy local dùng `build` thường, vẫn có trang review cho người duyệt. Rồi bundle server (`pnpm --filter @miu/server bundle`, cấu hình ở `apps/server/bundle.ts`) và `pnpm security:dist`.
-2. Backup database ra `/var/backups/miu/before-<id>.dump`.
-3. Tải lên `/opt/miu/releases/<id>/` và chuyển symlink `/opt/miu/current`.
-4. Restart `miu-server` và đợi `/api/health`. Không lên thì tự quay về release trước và in log.
-5. Giữ 5 release mới nhất, rồi gọi `https://miu.hoandat.com/api/health` từ ngoài vào.
+1. `build-release.sh`: build web bằng `pnpm --filter @miu/web build:release` (`vite build --mode release`): chỉ có game, không có `review.html`, `preview.html` hay ảnh review (chỉ giữ ảnh chân dung nhân vật mà UI dùng), khoảng 8,6 MB thay vì 19 MB; dừng nếu `dist` vẫn còn trang review. E2E và bản review chạy local dùng `build` thường, vẫn có trang review cho người duyệt. Rồi bundle server (`pnpm --filter @miu/server bundle`, cấu hình ở `apps/server/bundle.ts`) và `pnpm security:dist`.
+2. Cài lại `/usr/local/sbin/miu-activate-incoming` từ `activate-incoming.sh` của bản checkout, rồi tải bản build lên `/opt/miu/incoming/<id>/`.
+3. Chạy bước kích hoạt ở trên (backup database, đổi bản, health, tự quay về bản trước).
+4. Gọi `https://miu.hoandat.com/api/health` và `/RELEASE` từ ngoài vào.
 
 **Trang tìm kiếm và ảnh thẻ** (bản release): `release` dừng nếu `robots.txt` chặn toàn bộ hay `sitemap.xml` thiếu trang chủ hay một trang dưới `/hoc/` (trang môn, trang chủ đề). Thêm hay đổi chủ đề có quest thì chạy `pnpm assets:cards` rồi `pnpm assets:manifest` (ảnh thẻ theo chủ đề; build báo lỗi nếu thiếu), và `pnpm seo:lastmod` khi nội dung trang chủ đề đổi (thiếu thì sitemap bỏ `lastmod`). Sau release lần đầu có sitemap: nộp `https://miu.hoandat.com/sitemap.xml` trong Search Console.
 
 **Nghiệm thu:**
 
 - `curl -s https://miu.hoandat.com/api/health` trả `{"status":"ok"}`.
-- Revision đang chạy nằm ở `/opt/miu/current/apps/server/dist/server/REVISION` trên .65.
+- Bản đang chạy: `https://miu.hoandat.com/RELEASE?v=<bất kỳ>` (mã bản; `?v=` để Cloudflare không trả bản cũ), và trên .65 `/opt/miu/current/apps/server/dist/server/REVISION` (12 ký tự đầu của sha, so với `git rev-parse --short=12 HEAD`; bản trước 01/11/2026 ghi sha ngắn).
 - File dưới `/game-assets/` giữ đường dẫn qua các release, và Cloudflare cùng trình duyệt có thể giữ chúng nhiều giờ (Browser Cache TTL của zone, xem §6). Vì vậy web gắn phiên bản nội dung vào URL (`?v=` + 12 ký tự đầu sha256 trong manifest; `apps/web/src/asset-versions.ts`): file đổi thì URL đổi, không cần xoá cache. Bản build gắn sẵn phiên bản của `manifest.json` và của các file UI hiển thị. Sau release vẫn so sha256 của bản trên production với file local. Xoá cache theo §4 chỉ còn dùng cho URL không phiên bản (ví dụ khách còn mở trang cũ).
 
 **Log:** `journalctl --namespace=miu -u miu-server` (.65; không có `--namespace` thì không thấy); request ở `/var/log/nginx/miu.hoandat.com.{access,error}.log`.
 
 **Rollback** (trên .65; backup ở `/var/backups/miu/`: `before-<id>.dump`, `daily-<ngày>.dump`):
 
-- **Chỉ quay code:** `ln -sfn /opt/miu/releases/<id-trước> /opt/miu/current && systemctl restart miu-server`.
+- **Chỉ quay code:** `ln -sfn /opt/miu/releases/<id-trước> /opt/miu/current && systemctl restart miu-server` (bản trước nằm trong 5 bản giữ lại, `ls -t /opt/miu/releases`). Hoặc `git revert` rồi push: CI deploy bản đã revert như mọi commit khác.
 - **Migration làm hỏng dữ liệu:** dừng `miu-server`, rồi chạy `cd /tmp && sudo -u postgres dropdb miu && sudo -u postgres createdb -O miu miu && sudo -u postgres pg_restore --no-owner --role=miu -d miu /var/backups/miu/before-<id>.dump`. Sau đó quay code như trên. Lệnh `pg_restore` này đã chạy thử vào một database tạm.
 
 ### 5.1 Chuyển đăng nhập sang auth-next (23/10/2026)
@@ -177,6 +182,8 @@ Phụ huynh đăng nhập qua dịch vụ đăng nhập dùng chung `https://aut
 - Khôi phục riêng dữ liệu học của bạn máy (thao tác ghi, hỏi người trước): dừng `miu-server` (nếu không, lần ghi kế tiếp của bạn máy sẽ đè lên), rồi `cd /tmp && sudo -u postgres psql -d miu -c 'truncate bot_world_memories, bot_skills' && sudo -u postgres pg_restore --data-only -d miu /var/backups/miu/bots/bots-<ngày>.dump`, rồi chạy lại server. Lệnh này chưa chạy thử.
 - Thời khóa biểu mặc định (lớp của bé nhà người sở hữu: có tên trường, tên và điện thoại cô giáo) không nằm trong git. Chỉ các tài khoản có email đăng nhập trong `TIMETABLE_DEFAULT_ACCOUNTS` (phân tách bằng dấu phẩy) thấy bản này khi chưa tự lưu thời khóa biểu (`TIMETABLE_DEFAULT_FILE`); tài khoản khác thấy mẫu trống. Ở production, không đặt `TIMETABLE_DEFAULT_ACCOUNTS` thì không ai thấy; ở dev và test thì mọi tài khoản thấy. Trước bản sửa này, mọi tài khoản đều thấy bản mặc định, nên từ 12/10/2026 (mở đăng nhập cho mọi người) người lạ đọc được; ngày 19/10/2026 dòng `TIMETABLE_DEFAULT_FILE` đã được gỡ khỏi env production. Đặt lại sau khi release bản có danh sách cho phép: thêm dòng `TIMETABLE_DEFAULT_ACCOUNTS` vào `/etc/miu/production.env` (không in, không commit email) rồi chạy `timetable` và restart (hỏi người). Nguồn ở iCloud (`timetable/timetable-default.json`, kê trong `tools/private/private-files.json`), `pnpm private:sync` chép vào `.data/private/`; `pnpm dev` tự dùng nếu có. Trên .65 tệp nằm ở `/opt/miu/config/timetable-default.json` (`root:miu`, 640); `deploy.sh timetable` tải lên qua ssh và thêm dòng biến vào `/etc/miu/production.env` nếu chưa có. Đổi lịch mặc định: sửa tệp trong iCloud, cập nhật sha256 trong `private-files.json`, chạy `timetable` rồi `release`.
 - Chữ mẫu của phiếu viết là font Playwrite Việt Nam (TypeTogether, OFL 1.1, pack `font-playwrite-vn` trong `tools/assets/sources.json`), đi cùng bản release như mọi font khác ở `/game-assets/`; production không cần bước riêng nào. Từ 25/10/2026 font HP001 cũ (không có giấy phép mở) đã bỏ hẳn: không còn lệnh `deploy.sh fonts`, route `/api/worksheets/fonts/*` hay thư mục `/opt/miu/fonts` trong `setup`. Máy đã cài trước đó còn thư mục `/opt/miu/fonts` và có thể còn dòng `HANDWRITING_FONT_DIR` trong env: không ai đọc nữa, xóa được khi người sở hữu đồng ý.
+
+- **User deploy của CI** (`miu-deploy`, tạo 01/11/2026 bằng `deploy.sh deploy-user`): chỉ ghi được `/opt/miu/incoming`, không thuộc nhóm `miu` (không vào được `/etc/miu`), không ghi được bản đang chạy hay `/usr/local/sbin`, và chỉ sudo được `/usr/local/sbin/miu-activate-incoming` (`/etc/sudoers.d/miu-deploy`); khoá trong `authorized_keys` có `restrict`. Đổi khoá: sinh khoá ed25519 mới, `deploy.sh deploy-user <tệp .pub>`, đặt lại secret `DEPLOY_SSH_KEY` (`gh secret set DEPLOY_SSH_KEY < <tệp khoá riêng>`), xoá khoá riêng ở máy dev. Tắt deploy tự động: tắt workflow `deploy` (`gh workflow disable deploy`); deploy tay vẫn chạy.
 
 **Việc còn lại (của người):**
 

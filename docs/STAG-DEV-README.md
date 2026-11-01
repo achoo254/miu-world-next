@@ -62,7 +62,8 @@ ssh -i "$K" -o IdentitiesOnly=yes -p "$(srv $P port)" "$(srv $P user)@$(srv $P h
 | Thành phần | Đường dẫn |
 | --- | --- |
 | Release | `/opt/miu/releases/<id>/`, symlink `/opt/miu/current` |
-| Revision đang chạy | `/opt/miu/current/apps/server/dist/server/REVISION` |
+| Revision đang chạy | `/opt/miu/current/apps/server/dist/server/REVISION` (sha 12 ký tự), mã bản ở `RELEASE` cạnh nó và `https://miu.hoandat.com/RELEASE` |
+| Bản CI tải lên, chờ kích hoạt | `/opt/miu/incoming/<id>/` (user `miu-deploy`), kiểm ở `/opt/miu/staging/` (chỉ root); lệnh kích hoạt `/usr/local/sbin/miu-activate-incoming` |
 | Env (chỉ `root` và nhóm `miu` đọc) | `/etc/miu/production.env` |
 | Backup database | `/var/backups/miu/{before-<id>,daily-<ngày>}.dump` (xóa sau 14 ngày) |
 | Node | `/opt/node22` (tách nvm của pm2) |

@@ -82,4 +82,7 @@ if ! grep -q '^/var/log/nginx/\*.log' /etc/logrotate.d/nginx || ! grep -Eq '^\s*
   echo "WARNING: /etc/logrotate.d/nginx no longer rotates /var/log/nginx/*.log daily with fewer than 14 kept; /privacy says 14 days" >&2
 fi
 
+# The CI deploy user (created once by `deploy.sh deploy-user`): keep its incoming/ and sudo command current.
+if id miu-deploy >/dev/null 2>&1; then bash "$HERE/setup-deploy-user.sh" </dev/null; fi
+
 echo "prod host ready: node $(/opt/node22/bin/node -v), $(psql --version | sed 's/ (.*//'), nginx block miu.conf"
