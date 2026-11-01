@@ -732,10 +732,11 @@
   "auth.firstTimePrompt": "First time using Miu World?",
   "auth.createParentAccount": "Create account",
   "auth.registerTitle": "Create account",
-  "auth.registerHint": "Just one step: sign in with the shared account (through Google, GitHub or Apple). We only collect your email.",
+  "auth.registerHint": "Just one step: create the shared hoandat.com account with Google, GitHub or Apple. We only collect your email.",
   "auth.haveAccountPrompt": "Already have an account?",
   "auth.loginLink": "Sign in",
   "auth.signIn": "Sign in",
+  "auth.signUp": "Create a free account",
   "auth.privacyNote": "We only receive the verified email and the account id from the sign-in service, not your name, photo, or contacts.",
   "auth.privacyLink": "Privacy",
   "auth.termsLink": "Terms",
@@ -1749,6 +1750,7 @@
   "app.exitConfirm": "Leave Miu World?",
   "landing.guestNote": "No sign-in needed: your progress stays on this device, and signing in any time keeps it.",
   "guest.cardTitle": "Keep your progress with a free hoandat.com account",
+  "guest.doneSoFar": "Quests finished: {count}. For now they are kept only on this device.",
   "guest.benefitDevices": "Carry on on another device without losing anything",
   "guest.benefitDaily": "A daily quest and a streak of days in a row",
   "guest.benefitOnline": "Play online, make friends and team up",
@@ -1762,5 +1764,6 @@
   "daily.best": "Best {count} days",
   "daily.doneToday": "Done today",
   "daily.keepStreak": "Do today's lesson to keep your streak",
+  "daily.guestStreak": "With an account, each day you finish today's lesson counts toward your streak of days in a row.",
   "errors.guestAccount": "Sign in (free) to use this."
 }

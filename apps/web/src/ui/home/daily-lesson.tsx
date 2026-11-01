@@ -1,7 +1,8 @@
 // NEW SCREEN part (owner, 09/10/2026: the child plays only at home, every day): "Bài hôm nay", one learning quest
 // on another map for each Vietnam day, with the way there. A card on Home and a chip over the game while she is
 // at home. The pick is `dailyLesson` of packages/quest; nothing extra is paid for it. For a signed-in player the server
-// pins the day's quest (`dailyQuest`, a finished lesson again once all are done) and counts her streak of days.
+// pins the day's quest (`dailyQuest`, a finished lesson again once all are done) and counts her streak of days. A
+// guest has no streak: the card says an account counts it, with the sign-up link.
 import { Link } from 'react-router';
 import type { DailyQuestResponse } from '@miu/schema/daily-quest';
 import type { QuestSummary } from '@miu/schema/game';
@@ -16,6 +17,8 @@ import { playPath, say, type PlayerData } from '../player/player-data';
 import { TopicLabel, topicOf } from '../player/topic-label';
 import { Say, titleOf } from '../quest/content-text';
 import { HOME_REGION, findRegion } from '../region/regions';
+import { useIsGuest } from '../account/guest-invite';
+import { SIGN_UP_START } from '../account/idp-sign-in-button';
 import type { DailyQuestState } from './daily-quest-api';
 import './daily-lesson.css';
 
@@ -70,7 +73,21 @@ function StreakLine({ daily }: { daily: DailyQuestResponse }) {
   );
 }
 
+/** A guest's line instead of the streak: an account counts the days in a row (guests play only on the web). */
+function GuestStreakLine() {
+  return (
+    <span className="home-daily-streak" data-id="home-daily-guest-streak">
+      <Icon name="sparkles" size={20} />
+      <T k="daily.guestStreak" />
+      <a href={SIGN_UP_START} data-id="home-daily-guest-sign-up">
+        <T k="guest.signUp" />
+      </a>
+    </span>
+  );
+}
+
 export function DailyLessonCard({ data, daily }: { data: PlayerData; daily?: DailyQuestState }) {
+  const guest = useIsGuest();
   const lesson = dailyLessonOf(data.quests, daily);
   if (!lesson) return null;
   const fill = (line: string): string => say(line, data.character);
@@ -90,7 +107,7 @@ export function DailyLessonCard({ data, daily }: { data: PlayerData; daily?: Dai
           <Say text={titleOf(lesson.quest)} fill={fill} />
         </strong>
         {topic ? <TopicLabel topic={topic} dataId="home-daily-topic" /> : null}
-        {daily ? <StreakLine daily={daily} /> : null}
+        {daily ? <StreakLine daily={daily} /> : guest ? <GuestStreakLine /> : null}
       </div>
       <Link to={playPath(lesson)} className={buttonClass('primary')} data-id="home-daily-go">
         <T k="daily.go" params={{ map: mapOf(lesson) }} />

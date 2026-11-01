@@ -2,11 +2,15 @@ import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { QuestSummary } from '@miu/schema/game';
+import { AccountProvider } from '../account/account-context';
 import type { PlayerData } from '../player/player-data';
 import { questListWithLesson } from '../player/test-fixtures';
 import { DailyLessonCard, DailyLessonChip, dailyLessonOf, todaysLesson } from './daily-lesson';
 
-afterEach(cleanup);
+afterEach(() => {
+  cleanup();
+  vi.unstubAllGlobals();
+});
 
 /** The fixture's learning quest, moved to `region` with its own id and progress. */
 function lessonAt(region: string, id: string, state: QuestSummary['state'] = 'open'): QuestSummary {
@@ -63,6 +67,36 @@ describe('Bài hôm nay', () => {
     expect(document.querySelector('[data-id="home-daily-done"]')?.textContent).toBe('Đã xong hôm nay');
     expect(document.querySelector('[data-id="home-daily-streak-count"]')?.textContent).toBe('Chuỗi 3 ngày');
     expect(document.querySelector('[data-id="home-daily-best"]')?.textContent).toBe('Kỷ lục 5 ngày');
+  });
+
+  it('tells a guest that an account counts the streak, with the sign-up that opens on making an account', async () => {
+    const me = (guest: boolean) => ({
+      parent: { id: '1b0e8e0c-6f1a-4b8e-9a53-1f1c2a3b4c5d', email: guest ? 'guest-x@guest.invalid' : 'p@example.vn', guest },
+      consentAccepted: true,
+      activePlayerId: '0b0e8e0c-6f1a-4b8e-9a53-1f1c2a3b4c5d',
+      players: [],
+    });
+    const data = { character: { name: 'Mochi' }, quests: [lessonAt('cho-phien', 'market-lesson')] } as unknown as PlayerData;
+    const renderFor = (guest: boolean) => {
+      vi.stubGlobal('fetch', vi.fn(async () => new Response(JSON.stringify(me(guest)), { status: 200 })));
+      render(
+        <MemoryRouter>
+          <AccountProvider>
+            <DailyLessonCard data={data} />
+          </AccountProvider>
+        </MemoryRouter>,
+      );
+    };
+    renderFor(true);
+    const signUp = await screen.findByRole('link', { name: 'Đăng ký miễn phí' });
+    expect(signUp.getAttribute('href')).toBe('/api/auth/start?signup=1');
+    expect(document.querySelector('[data-id="home-daily-guest-streak"]')?.textContent).toContain('chuỗi ngày chơi liên tiếp');
+    cleanup();
+    // A signed-in player whose server pick failed sees no invitation.
+    renderFor(false);
+    expect(await screen.findByText('Bài hôm nay')).toBeTruthy();
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    expect(document.querySelector('[data-id="home-daily-guest-streak"]')).toBeNull();
   });
 
   it('takes her there from the chip over the game at home', () => {

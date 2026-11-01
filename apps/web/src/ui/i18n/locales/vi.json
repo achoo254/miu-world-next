@@ -732,10 +732,11 @@
   "auth.firstTimePrompt": "Lần đầu dùng Miu World?",
   "auth.createParentAccount": "Tạo tài khoản",
   "auth.registerTitle": "Tạo tài khoản",
-  "auth.registerHint": "Chỉ một bước: đăng nhập bằng tài khoản dùng chung (qua Google, GitHub hoặc Apple). Chúng tôi không thu thập thông tin ngoài email.",
+  "auth.registerHint": "Chỉ một bước: tạo tài khoản hoandat.com dùng chung bằng Google, GitHub hoặc Apple. Chúng tôi không thu thập thông tin ngoài email.",
   "auth.haveAccountPrompt": "Đã có tài khoản?",
   "auth.loginLink": "Đăng nhập",
   "auth.signIn": "Đăng nhập",
+  "auth.signUp": "Tạo tài khoản miễn phí",
   "auth.privacyNote": "Chúng tôi chỉ nhận email đã xác minh và mã định danh tài khoản từ dịch vụ đăng nhập, không nhận tên, ảnh hay danh bạ.",
   "auth.privacyLink": "Quyền riêng tư",
   "auth.termsLink": "Điều khoản",
@@ -1749,6 +1750,7 @@
   "app.exitConfirm": "Thoát Miu World?",
   "landing.guestNote": "Không cần đăng nhập: tiến độ lưu trên máy này, đăng nhập lúc nào cũng giữ lại được.",
   "guest.cardTitle": "Giữ lại tiến độ với tài khoản hoandat.com miễn phí",
+  "guest.doneSoFar": "Đã xong {count} nhiệm vụ, hiện chỉ lưu trên máy này.",
   "guest.benefitDevices": "Chơi tiếp trên máy khác, không mất những gì đã làm",
   "guest.benefitDaily": "Nhiệm vụ mỗi ngày và chuỗi ngày chơi liên tiếp",
   "guest.benefitOnline": "Chơi online, kết bạn và lập đội",
@@ -1762,5 +1764,6 @@
   "daily.best": "Kỷ lục {count} ngày",
   "daily.doneToday": "Đã xong hôm nay",
   "daily.keepStreak": "Làm bài hôm nay để giữ chuỗi ngày",
+  "daily.guestStreak": "Có tài khoản thì mỗi ngày làm xong bài hôm nay được tính vào chuỗi ngày chơi liên tiếp.",
   "errors.guestAccount": "Đăng nhập (miễn phí) để dùng tính năng này."
 }

@@ -19,7 +19,7 @@ import { createSignIn } from './sign-in';
 export const IDP_SCOPE = 'openid email';
 const STATE_TTL_MS = 10 * 60 * 1000;
 /**
- * Where a re-authentication may send the person back (`?return=`): account management only, where it was asked for.
+ * Where a re-authentication or a sign-up may send the person back (`?return=`): account management only, where it was asked for.
  * A fixed list, never a URL from the query, so the sign-in cannot be made into an open redirect.
  */
 const REAUTH_RETURN_PATHS = ['/parent'] as const;
@@ -44,7 +44,7 @@ const PendingLogin = z.object({
   nonce: z.string().min(10),
   /** This sign-in asked the IdP to sign the person in again (`?intent=reauth`). */
   reauth: z.boolean(),
-  /** Where a re-authentication goes back to (`REAUTH_RETURN_PATHS`); a plain sign-in always goes to '/'. */
+  /** Where a re-authentication or a sign-up goes back to (`REAUTH_RETURN_PATHS`); a plain sign-in always goes to '/'. */
   returnTo: z.enum(['/', ...REAUTH_RETURN_PATHS]),
   exp: z.number(),
 });
@@ -114,12 +114,16 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       return fail(res, 'idp-unavailable');
     }
     const reauth = req.query.intent === 'reauth';
+    // `signup=1`: a sign-up button sent the person, so the IdP opens on making an account (OpenID Connect Prompt
+    // Create). A re-authentication always asks for a fresh login instead.
+    const signUp = !reauth && req.query.signup === '1';
     const pending: PendingLogin = {
       state: b64url(randomBytes(32)),
       verifier: b64url(randomBytes(32)),
       nonce: b64url(randomBytes(16)),
       reauth,
-      returnTo: reauth ? returnPath(req.query.return) : '/',
+      // A sign-up from account management goes back there too; a plain sign-in always lands on '/'.
+      returnTo: reauth || signUp ? returnPath(req.query.return) : '/',
       exp: clock().getTime() + STATE_TTL_MS,
     };
     res.cookie(stateCookie, b64url(Buffer.from(JSON.stringify(pending))), { ...cookieOptions, maxAge: STATE_TTL_MS });
@@ -135,6 +139,7 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       code_challenge_method: 'S256',
       // Re-authentication: the IdP must sign the person in again; amr and auth_time are checked on return.
       ...(pending.reauth ? { prompt: 'login', max_age: '0' } : {}),
+      ...(signUp ? { prompt: 'create' } : {}),
     }).toString();
     res.redirect(303, url.toString());
   });

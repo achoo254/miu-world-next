@@ -201,7 +201,7 @@ export function ParentAreaScreen() {
           <h1><T k="gate.title" /></h1>
         </header>
         <p className="hint parent-intro"><T k="parent.intro" /></p>
-        {state.status === 'signed-in' && state.me.parent.guest ? <GuestSaveCard dataId="parent-guest-card" /> : null}
+        {state.status === 'signed-in' && state.me.parent.guest ? <GuestSaveCard dataId="parent-guest-card" returnTo="/parent" /> : null}
         {error ? (
           <div className="row">
             <p role="alert" className="error">

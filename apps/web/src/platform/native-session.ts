@@ -40,9 +40,10 @@ export async function clearNativeSession(): Promise<void> {
 
 /**
  * Signs in through the system browser; false when the person closed it. `reauth` asks the IdP to sign the person in
- * again, the confirmation account management needs to turn voice chat on for an extra player.
+ * again, the confirmation account management needs to turn voice chat on for an extra player; `signUp` opens the IdP on
+ * making an account (a sign-up button).
  */
-export function startNativeSignIn(reauth: boolean): Promise<boolean> {
+export function startNativeSignIn(reauth: boolean, signUp = false): Promise<boolean> {
   return signInNative(
     {
       config: () => api('GET', '/auth/native/config', z.unknown()),
@@ -51,6 +52,6 @@ export function startNativeSignIn(reauth: boolean): Promise<boolean> {
       exchange: (body) => api('POST', '/auth/native/exchange', z.unknown(), body),
       saveToken,
     },
-    { reauth },
+    { reauth, signUp },
   );
 }

@@ -8,7 +8,8 @@ import { SkyScene } from '../kit/sky-scene';
 import { LegalLinks } from '../legal/legal-links';
 import { T } from '../i18n/use-t';
 
-function SignIn({ title, hint, dataId, switchTo }: { title: ReactNode; hint: ReactNode; dataId: string; switchTo: { text: ReactNode; label: ReactNode; to: string } }) {
+/** `signUp`: the sign-up screen, whose button opens the account service on making an account. */
+function SignIn({ title, hint, dataId, signUp = false, switchTo }: { title: ReactNode; hint: ReactNode; dataId: string; signUp?: boolean; switchTo: { text: ReactNode; label: ReactNode; to: string } }) {
   const [params] = useSearchParams();
   const error = params.get('error');
   return (
@@ -21,7 +22,7 @@ function SignIn({ title, hint, dataId, switchTo }: { title: ReactNode; hint: Rea
             <T k={signInErrorKey(error)} />
           </p>
         ) : null}
-        <IdpSignInButton dataId={`${dataId}-sign-in`} label={<T k="auth.signIn" />} />
+        <IdpSignInButton dataId={`${dataId}-sign-in`} signUp={signUp} label={<T k={signUp ? 'auth.signUp' : 'auth.signIn'} />} />
         <p className="note">
           <Icon name="heart" size={28} />
           <span>
@@ -54,6 +55,7 @@ export function RegisterScreen() {
   return (
     <SignIn
       dataId="register"
+      signUp
       title={<T k="auth.registerTitle" />}
       hint={<T k="auth.registerHint" />}
       switchTo={{ text: <T k="auth.haveAccountPrompt" />, label: <T k="auth.loginLink" />, to: '/login' }}

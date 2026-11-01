@@ -63,6 +63,25 @@ describe('signing in through the account service (web)', () => {
     expect([reauth.get('prompt'), reauth.get('max_age')]).toEqual(['login', '0']);
   });
 
+  it('opens the IdP on making an account when a sign-up button sent the person', async () => {
+    const signUp = (await start(app.agent(), 'signup=1')).searchParams;
+    expect(signUp.get('prompt')).toBe('create');
+    expect(signUp.has('max_age')).toBe(false);
+    expect(signUp.get('client_id')).toBe(WEB_CLIENT.id);
+    // A re-authentication still asks for a fresh login, whatever else the query says.
+    const reauth = (await start(app.agent(), 'intent=reauth&signup=1')).searchParams;
+    expect([reauth.get('prompt'), reauth.get('max_age')]).toEqual(['login', '0']);
+  });
+
+  it('brings a sign-up back to account management when it started there, and nowhere else', async () => {
+    const back = await signIn(app.agent(), person(), { query: 'signup=1&return=%2Fparent' });
+    expect(back.res.headers.location).toBe('/parent');
+    const elsewhere = await signIn(app.agent(), person(), { query: 'signup=1&return=https%3A%2F%2Fevil.example%2F' });
+    expect(elsewhere.res.headers.location).toBe('/');
+    const plain = await signIn(app.agent(), person(), { query: 'return=%2Fparent' });
+    expect(plain.res.headers.location).toBe('/');
+  });
+
   it('creates a new empty account for an unknown verified email, stores the link, and redeems the code with the secret and verifier', async () => {
     const agent = app.agent();
     const user = person();

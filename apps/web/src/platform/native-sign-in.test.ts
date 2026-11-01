@@ -46,6 +46,13 @@ describe('native sign-in helpers', () => {
     expect(redirectScheme(CONFIG.redirectUri)).toBe('com.hoandat.miu');
   });
 
+  it('opens the IdP on making an account for a sign-up button, never on a re-authentication', () => {
+    const up = new URL(authorizationUrl(CONFIG, { state: 's', nonce: 'n', challenge: 'c', reauth: false, signUp: true })).searchParams;
+    expect([up.get('prompt'), up.get('max_age')]).toEqual(['create', null]);
+    const re = new URL(authorizationUrl(CONFIG, { state: 's', nonce: 'n', challenge: 'c', reauth: true, signUp: true })).searchParams;
+    expect([re.get('prompt'), re.get('max_age')]).toEqual(['login', '0']);
+  });
+
   it('takes the code only from a callback of this sign-in', () => {
     expect(callbackCode('com.hoandat.miu:/auth/callback?code=c1&state=s', CONFIG.redirectUri, 's')).toBe('c1');
     for (const url of ['com.hoandat.miu:/auth/callback?code=c1&state=other', 'com.evil:/auth/callback?code=c1&state=s', 'com.hoandat.miu:/elsewhere?code=c1&state=s', 'com.hoandat.miu:/auth/callback?error=access_denied&state=s', 'com.hoandat.miu:/auth/callback?state=s', 'not a url']) {
@@ -72,6 +79,15 @@ describe('signInNative', () => {
     const url = new URL(d.opened[0] ?? '');
     expect([url.searchParams.get('prompt'), url.searchParams.get('max_age')]).toEqual(['login', '0']);
     expect(d.exchanged[0]).toMatchObject({ reauth: true, nonce: url.searchParams.get('nonce') });
+  });
+
+  it('opens the IdP on making an account for a sign-up, and the code is redeemed like any sign-in', async () => {
+    const d = deps();
+    expect(await signInNative(d, { reauth: false, signUp: true })).toBe(true);
+    const url = new URL(d.opened[0] ?? '');
+    expect(url.searchParams.get('prompt')).toBe('create');
+    expect(d.exchanged[0]).toMatchObject({ reauth: false, nonce: url.searchParams.get('nonce') });
+    expect(d.saved).toEqual(['session-token-abcdefghijk']);
   });
 
   it('resolves false when the person closes the browser, and saves nothing', async () => {

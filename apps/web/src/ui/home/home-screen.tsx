@@ -26,7 +26,7 @@ import { SettingsDialog } from '../system/settings-dialog';
 import { WorldStage } from '../world/world-stage';
 import { DailyLessonCard } from './daily-lesson';
 import { useDailyQuest } from './daily-quest-api';
-import { GuestSaveCard, finishedAQuest, useIsGuest } from '../account/guest-invite';
+import { GuestSaveCard, finishedQuests, useIsGuest } from '../account/guest-invite';
 import { HomePlayButton, TodayQuests } from './today-quests';
 import { ProgressResponse } from '@miu/schema/game';
 import { api } from '../api-client';
@@ -184,7 +184,7 @@ export function HomeScreen() {
                 {shownEvents.map((event) => (
                   <EventBanner key={event.id} event={event} onOpen={() => setEventOpen(event.id)} />
                 ))}
-                {guest && (finishedAQuest(data.quests) || data.progress.xp > 0) ? <GuestSaveCard dataId="home-guest-card" /> : null}
+                {guest && (finishedQuests(data.quests) > 0 || data.progress.xp > 0) ? <GuestSaveCard dataId="home-guest-card" done={finishedQuests(data.quests)} /> : null}
                 <DailyLessonCard data={data} daily={daily} />
                 <TodayQuests data={data} />
               </div>

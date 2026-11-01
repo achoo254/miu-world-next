@@ -14,7 +14,7 @@ import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
 import { useAccount, useOptionalAccount } from './account-context';
-import { IdpSignInButton } from './idp-sign-in-button';
+import { IdpSignInButton, type SignUpReturn } from './idp-sign-in-button';
 import './guest-invite.css';
 
 /** A few minutes of play count as a first achievement. */
@@ -31,17 +31,28 @@ export function useIsGuest(): boolean {
   return state?.status === 'signed-in' && state.me.parent.guest;
 }
 
-/** A first real achievement: a quest finished at least once. */
-export const finishedAQuest = (quests: readonly QuestSummary[]): boolean => quests.some((q) => q.state === 'completed');
+/** How many quests the player finished. */
+export const finishedQuests = (quests: readonly QuestSummary[]): number => quests.filter((q) => q.state === 'completed').length;
 
-/** What a free account keeps, and the sign-up button. */
-export function GuestSaveCard({ dataId }: { dataId: string }) {
+/** A first real achievement: a quest finished at least once. */
+export const finishedAQuest = (quests: readonly QuestSummary[]): boolean => finishedQuests(quests) > 0;
+
+/**
+ * What a free account keeps, and the sign-up button (the IdP opens on making an account). `done`: the quests finished
+ * so far, said as what this device alone keeps. `returnTo`/`next`: where the person comes back to once signed up.
+ */
+export function GuestSaveCard({ dataId, done = 0, returnTo, next }: { dataId: string; done?: number; returnTo?: SignUpReturn; next?: string }) {
   return (
     <section className="panel guest-card" data-id={dataId} aria-labelledby={`${dataId}-title`}>
       <h2 id={`${dataId}-title`} className="guest-card-title">
         <Icon name="key" size={28} />
         <T k="guest.cardTitle" />
       </h2>
+      {done > 0 ? (
+        <p className="hint guest-card-done" data-id={`${dataId}-done`}>
+          <T k="guest.doneSoFar" params={{ count: done }} />
+        </p>
+      ) : null}
       <ul className="guest-card-list">
         {BENEFITS.map((key) => (
           <li key={key}>
@@ -52,16 +63,18 @@ export function GuestSaveCard({ dataId }: { dataId: string }) {
           <T k="guest.everyApp" />
         </li>
       </ul>
-      <IdpSignInButton dataId={`${dataId}-sign-up`} label={<T k="guest.signUp" />} />
+      <IdpSignInButton dataId={`${dataId}-sign-up`} signUp returnTo={returnTo} next={next} label={<T k="guest.signUp" />} />
     </section>
   );
 }
 
 /**
  * The invitation over the game: once a quest is finished or after GUEST_INVITE_AFTER_MS of play, when nothing else
- * covers the game (after the reward screens), once per visit. Nothing for a signed-in player.
+ * covers the game (after the reward screens), once per visit. Nothing for a signed-in player. `done`: quests finished
+ * so far; `next`: the quest being played, opened again once signed up.
  */
-export function GuestInvite({ playing, achieved, covered }: { playing: boolean; achieved: boolean; covered: boolean }) {
+export function GuestInvite({ playing, done, covered, next }: { playing: boolean; done: number; covered: boolean; next?: string }) {
+  const achieved = done > 0;
   const guest = useIsGuest();
   const [played, setPlayed] = useState(false);
   const [dismissed, setDismissed] = useState(() => sessionStorage.getItem(DISMISSED_KEY) === '1');
@@ -77,7 +90,7 @@ export function GuestInvite({ playing, achieved, covered }: { playing: boolean; 
   };
   return (
     <Modal title={<T k="guest.inviteTitle" />} onClose={close} dataId="guest-invite">
-      <GuestSaveCard dataId="guest-invite-card" />
+      <GuestSaveCard dataId="guest-invite-card" done={done} next={next} />
       <button type="button" className={buttonClass('ghost', { block: true })} data-id="guest-invite-later" onClick={close}>
         <T k="guest.later" />
       </button>

@@ -28,7 +28,8 @@ import { Modal } from '../kit/modal';
 import { QuestBoard } from '../region/region-detail';
 import { DailyLessonChip, dailyLessonOf } from '../home/daily-lesson';
 import { useDailyQuest } from '../home/daily-quest-api';
-import { GuestInvite, finishedAQuest } from '../account/guest-invite';
+import { GuestInvite, finishedQuests } from '../account/guest-invite';
+import { playTarget } from '../../post-login-target';
 import { DEFAULT_REGION, HOME_REGION, findRegion, regionMap } from '../region/regions';
 import { LoadingOverlay, recallLook, rememberLook, type LoadingLook } from '../system/loading-overlay';
 import { OfflineBanner } from '../system/offline-banner';
@@ -750,7 +751,7 @@ export function PlayScreen() {
               {covered ? null : <PartyFrame social={social} voice={voice} fill={(text) => say(text, data.character)} />}
               {covered ? null : <CallBar voice={voice} social={social} />}
               {/* A guest's first real achievement: the invitation to keep it with a free account. */}
-              <GuestInvite playing={playing} achieved={finishedAQuest(data.quests)} covered={hudCovered} />
+              <GuestInvite playing={playing} done={finishedQuests(data.quests)} covered={hudCovered} next={quest ? playTarget(quest.quest.region, quest.quest.id) : undefined} />
               {covered ? null : (
                 <PartyQuestCard
                   social={social}

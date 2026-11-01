@@ -98,13 +98,16 @@ describe('account flow', () => {
     stubApi({ 'GET /api/auth/me': () => ({ status: 401, body: { error: 'unauthenticated' } }) });
     renderAt('/profiles');
     expect(await screen.findByRole('heading', { name: 'Đăng nhập' })).toBeTruthy();
+    // A plain sign-in: never counted as a sign-up press.
+    expect(document.querySelector('[data-id="login-sign-in"]')?.getAttribute('href')).toBe('/api/auth/start');
   });
 
   it('offers only the account-service sign-in, through a same-origin server redirect', async () => {
     const calls = stubApi({ 'GET /api/auth/me': () => ({ status: 401, body: { error: 'unauthenticated' } }) });
     renderAt('/register?error=idp');
-    const link = (await screen.findAllByRole('link', { name: 'Đăng nhập' })).find((a) => a.getAttribute('data-id') === 'register-sign-in');
-    expect(link?.getAttribute('href')).toBe('/api/auth/start');
+    // The sign-up screen opens the account service on making an account; the sign-in screen does not.
+    const link = (await screen.findAllByRole('link', { name: 'Tạo tài khoản miễn phí' })).find((a) => a.getAttribute('data-id') === 'register-sign-in');
+    expect(link?.getAttribute('href')).toBe('/api/auth/start?signup=1');
     expect((await screen.findByRole('alert')).textContent).toContain('chưa thành công');
     expect(document.querySelector('input[type="password"]')).toBeNull();
     expect(calls.map((c) => c.key)).toEqual(['GET /api/auth/me']);

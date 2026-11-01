@@ -26,7 +26,7 @@ export function SignOutButton() {
         <p role="alert" className="hint">
           <T k="guest.signOutWarning" />
         </p>
-        <IdpSignInButton dataId="sign-out-guest-sign-up" label={<T k="guest.signUp" />} />
+        <IdpSignInButton dataId="sign-out-guest-sign-up" signUp label={<T k="guest.signUp" />} />
         <button type="button" className={buttonClass('ghost')} data-id="sign-out-anyway" disabled={form.busy} onClick={() => void form.onSubmit()}>
           <T k="guest.signOutAnyway" />
         </button>
