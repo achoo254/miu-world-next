@@ -1,7 +1,7 @@
 ---
 title: Mobile app Miu World cho iPhone và Android
 description: Đóng gói game web hiện có thành app iPhone và Android (Capacitor), đăng nhập bản địa, tải asset theo map, giao diện điện thoại, thử nội bộ rồi phát hành công khai trên App Store và Google Play.
-status: in-progress
+status: paused
 priority: P1
 tier: XL
 branch: main
@@ -10,6 +10,8 @@ blockedBy: [261004-1617-moderation-safety]  # chỉ chặn bước phát hành c
 blocks: []
 created: 2026-10-07
 ---
+
+> Tạm dừng 07/11/2026: dừng App Store từ 02/11 (Apple từ chối Scribe, Miu, Localman theo 4.3 Spam). Xét lại khi web có khoảng 100 người dùng thường xuyên. Không huỷ.
 
 # Mobile app Miu World: iPhone và Android
 

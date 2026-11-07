@@ -1,7 +1,7 @@
 ---
 title: "Marketing tự chạy cho Miu World"
 description: "GA4 phía server, trang SEO theo bài SGK, link mời bạn và thẻ khoe kết quả, rồi agent đăng clip theo lịch."
-status: in-progress
+status: completed
 priority: P1
 effort: L
 branch: main
@@ -10,6 +10,8 @@ blockedBy: []
 blocks: []
 created: 2026-10-12
 ---
+
+> Xong 07/11/2026: phase 1–4 xong; phase 5 thay bằng Tiểu Đệ, trung tâm marketing duy nhất của hệ sinh thái.
 
 # Marketing tự chạy cho Miu World
 
@@ -40,7 +42,7 @@ Người sở hữu không phải làm gì thường xuyên mà Miu World vẫn 
 | 2 | [Trang SEO: giới thiệu, trang theo bài, sitemap, thẻ xem trước](phase-02-seo-surfaces.md) | L | completed | 1 (sự kiện xem trang) |
 | 3 | [Lan truyền trong game: link mời bạn, thẻ khoe kết quả, tổng kết tuần](phase-03-share-loops.md) | L | completed | 1, 2 (trang khoe dùng thẻ theo bài) |
 | 4 | [Release, nộp sitemap, liên kết GA và Search Console, tài liệu](phase-04-release-and-measurement.md) | S | completed | 1–3 |
-| 5 | [Agent đăng clip theo lịch lên YouTube và Facebook](phase-05-scheduled-clip-posting.md) | L | blocked | 4; người sở hữu tạo kênh YouTube, Fanpage và cấp quyền một lần |
+| 5 | [Agent đăng clip theo lịch lên YouTube và Facebook](phase-05-scheduled-clip-posting.md) | L | superseded (Tiểu Đệ đăng thay) | 4; người sở hữu tạo kênh YouTube, Fanpage và cấp quyền một lần |
 
 ## Tiêu chí nghiệm thu chung
 
