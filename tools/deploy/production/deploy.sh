@@ -250,6 +250,11 @@ release() {
   if git rev-parse --git-dir >/dev/null 2>&1; then
     [ -n "${MIU_RELEASE_REV:-}" ] || [ -z "$(git status --porcelain)" ] \
       || { echo "working tree not clean: commit first, or set MIU_RELEASE_REV for an exported tree" >&2; exit 1; }
+    git fetch --quiet origin main
+    if ! git merge-base --is-ancestor HEAD origin/main; then
+      echo "HEAD $(git rev-parse --short HEAD) is not on origin/main: push it first" >&2
+      exit 1
+    fi
     sha="$(git rev-parse HEAD)"
   else
     sha="${MIU_RELEASE_REV:-}"
