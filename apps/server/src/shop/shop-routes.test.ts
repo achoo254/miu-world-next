@@ -5,7 +5,7 @@ import path from 'node:path';
 import { and, eq, like } from 'drizzle-orm';
 import { ShopResponse, ShopState, type ShopItemDto } from '@miu/schema/shop';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
+import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer, deleteFamily } from '../../test/test-app';
 import { childProfiles, rewardLedger, shopInventory } from '../db/schema';
 import { loadDecorCatalog } from '../home/home-decor-routes';
 import { loadShopCatalog } from './shop-catalog';
@@ -217,7 +217,7 @@ describe("the child's data", () => {
     expect(exported.players[0]?.shop).toEqual([{ itemId: item.id, qty: 1 }]);
     expect(exported.players[0]?.rewards).toEqual(expect.arrayContaining([expect.objectContaining({ coins: -item.price, source: expect.stringMatching(/^shop:/) as unknown })]));
     // The primary player goes only with the account.
-    await agent.delete('/api/account').expect(204);
+    await deleteFamily(app, agent);
     expect(await app.db.select().from(childProfiles).where(eq(childProfiles.id, childId))).toEqual([]);
     expect(await app.db.select().from(shopInventory).where(eq(shopInventory.childId, childId))).toEqual([]);
     expect(await app.db.select().from(rewardLedger).where(eq(rewardLedger.childId, childId))).toEqual([]);

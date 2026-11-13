@@ -4,7 +4,7 @@ import { ProgressResponse, StepCompleteResponse } from '@miu/schema/game';
 import { pickCollectible } from '@miu/quest/collectible-drop';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { solution } from '../../test/quest-solution';
-import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
+import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer, deleteFamily } from '../../test/test-app';
 import { childProfiles, inventoryItems, rewardLedger } from '../db/schema';
 
 // Fixture quests of the forest (khu-rung-bi-mat): side-egg is its minigame side quest, quest-c a lesson.
@@ -167,7 +167,7 @@ describe("the child's data", () => {
     expect(child?.inventory.map((i) => i.itemId).sort()).toEqual(allOfForest().sort());
     expect(child?.rewards.map((r) => r.source)).toEqual(expect.arrayContaining(['drop:quest:side-egg', `collection:${FOREST}`]));
     // The primary player goes only with the account.
-    await agent.delete('/api/account').expect(204);
+    await deleteFamily(app, agent);
     expect(await app.db.select().from(childProfiles).where(eq(childProfiles.id, childId))).toEqual([]);
     expect(await app.db.select().from(inventoryItems).where(eq(inventoryItems.childId, childId))).toEqual([]);
     expect(await app.db.select().from(rewardLedger).where(eq(rewardLedger.childId, childId))).toEqual([]);

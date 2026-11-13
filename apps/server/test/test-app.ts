@@ -6,7 +6,9 @@ import { fileURLToPath } from 'node:url';
 import { createApp, type AppDeps } from '../src/app';
 import { loadContentCatalog } from '../src/content/content-catalog';
 import { loadConfig, type ServerConfig } from '../src/config';
+import { eq } from 'drizzle-orm';
 import { createTestDb, type Db, type DbHandle } from '../src/db/client';
+import { parents } from '../src/db/schema';
 import { buildWorksheets, type WorksheetSource } from '../src/worksheet/worksheet-builder';
 
 export const ORIGIN = 'http://localhost:5173';
@@ -158,4 +160,14 @@ export async function signedInWithoutPlayer(t: TestApp): Promise<Agent> {
   const agent = t.agent();
   await agent.post('/api/auth/register').send(fakeParent()).expect(201);
   return agent;
+}
+
+/**
+ * Deletes the signed-in family the way the IdP's deletion notice does
+ * (src/auth/account-deleted.ts): the parent row goes and everything of the
+ * family follows by cascade. For tests that check where a table's rows go.
+ */
+export async function deleteFamily(t: TestApp, agent: Agent): Promise<void> {
+  const me = (await agent.get('/api/auth/me').expect(200)).body as { parent: { id: string } };
+  await t.db.delete(parents).where(eq(parents.id, me.parent.id));
 }

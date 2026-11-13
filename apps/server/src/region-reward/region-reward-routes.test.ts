@@ -9,7 +9,7 @@ import { ShopState } from '@miu/schema/shop';
 import { RegionRewardClaimResponse, RegionRewardsDto, RegionRewardsList, type RegionRewardEntry, type RegionRewardTier } from '@miu/schema/region-reward';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { solution } from '../../test/quest-solution';
-import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
+import { createTestApp, parentWithChild, type Agent, type TestApp, signedInWithoutPlayer, deleteFamily } from '../../test/test-app';
 import { CONTENT_DIR } from '../content/content-dir';
 import { loadDecorCatalog } from '../home/home-decor-routes';
 import { childProfiles, questProgress, rewardLedger, shopInventory } from '../db/schema';
@@ -208,7 +208,7 @@ describe("the child's chests in her data", () => {
     expect(exported.players[0]?.shop).toEqual([{ itemId: forest.full.item, qty: 1 }]);
     expect(exported.players[0]?.rewards.map((r) => r.source)).toContain(`region:${FOREST}:full`);
     // The primary player goes only with the account.
-    await agent.delete('/api/account').expect(204);
+    await deleteFamily(app, agent);
     expect(await app.db.select().from(childProfiles).where(eq(childProfiles.id, childId))).toEqual([]);
     expect(await app.db.select().from(shopInventory).where(eq(shopInventory.childId, childId))).toEqual([]);
     expect(await app.db.select().from(rewardLedger).where(eq(rewardLedger.childId, childId))).toEqual([]);
