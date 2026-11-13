@@ -1,7 +1,6 @@
 import { eq, inArray } from 'drizzle-orm';
 import { Router } from 'express';
 import type { AccountExport } from '@miu/schema/account';
-import type { ServerConfig } from '../config';
 import type { Db } from '../db/client';
 import {
   characters,
@@ -32,11 +31,9 @@ import {
 import { NOBODY_ONLINE, socialView } from '../friend/friend-store';
 import { DEFAULT_CHARACTER_NAME } from '../player/player-routes';
 import { auth, requireParent } from './auth-context';
-import { clearSessionCookie } from './session-cookie';
 
 export interface AccountRouteDeps {
   db: Db;
-  config: ServerConfig;
   clock: () => Date;
 }
 
@@ -183,27 +180,17 @@ async function buildExport(db: Db, parent: typeof parents.$inferSelect, now: Dat
   };
 }
 
-/** The parent's own data rights: download everything, or delete the account. */
-export function accountRoutes({ db, config, clock }: AccountRouteDeps): Router {
+/**
+ * The parent's own data right here: download everything. The account is deleted only at the account service
+ * (auth.hoandat.com/account), which then tells this server (account-deleted.ts).
+ */
+export function accountRoutes({ db, clock }: AccountRouteDeps): Router {
   const router = Router();
 
   router.get('/account/export', requireParent, async (_req, res) => {
     const { parent } = auth(res);
     res.set('Cache-Control', 'no-store');
     res.json(await buildExport(db, parent, clock()));
-  });
-
-  /**
-   * Hard delete: the parent row cascades to sessions (web and app), consents, the account-service link, profiles and
-   * every child table, so nothing is left to restore (backups age out on their own schedule). The account at the
-   * account service is the person's own and is not touched; Miu holds no IdP token to revoke.
-   */
-  router.delete('/account', requireParent, async (_req, res) => {
-    const { parent } = auth(res);
-    await db.delete(parents).where(eq(parents.id, parent.id));
-    console.info('parent account deleted', parent.id);
-    clearSessionCookie(res, config);
-    res.status(204).end();
   });
 
   return router;

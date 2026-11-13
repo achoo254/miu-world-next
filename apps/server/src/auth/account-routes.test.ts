@@ -1,18 +1,21 @@
 import { randomUUID } from 'node:crypto';
 import { eq, sql } from 'drizzle-orm';
 import { getTableConfig, type PgTable } from 'drizzle-orm/pg-core';
-import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 import { AccountExport } from '@miu/schema/account';
 import { emptyTimetable } from '@miu/schema/timetable';
+import { FAKE_ISSUER, FakeIdp, IDP_ENV } from '../../test/fake-idp';
 import { createTestApp, parentWithChild, type TestApp, signedInWithoutPlayer } from '../../test/test-app';
 import * as schema from '../db/schema';
 
 const t = schema;
 const tables = Object.values(schema as Record<string, unknown>).filter((v): v is PgTable => typeof v === 'object' && v !== null && Symbol.for('drizzle:IsDrizzleTable') in v);
 
+const idp = new FakeIdp();
 let app: TestApp;
 beforeAll(async () => {
-  app = await createTestApp();
+  // Sign-in through the (fake) IdP is on: the account is deleted by its signed notice.
+  app = await createTestApp(IDP_ENV, {}, idp.fetch);
 });
 afterAll(async () => {
   await app.handle.close();
@@ -41,8 +44,9 @@ async function playedFamily() {
   await app.db.insert(t.botMemories).values({ botId: 'bot-tt-1', childId, runs: 2, lastQuestId: 'with-dung-cau-tre' });
   const me = (await family.agent.get('/api/auth/me').expect(200)).body as { parent: { id: string } };
   // Its account-service identity, as a sign-in through the IdP links it.
-  await app.db.insert(t.parentIdpLinks).values({ parentId: me.parent.id, issuer: 'https://auth.test.example', subject: `idp-sub-${randomUUID()}` });
-  return { ...family, parentId: me.parent.id };
+  const sub = `idp-sub-${randomUUID()}`;
+  await app.db.insert(t.parentIdpLinks).values({ parentId: me.parent.id, issuer: FAKE_ISSUER, subject: sub });
+  return { ...family, parentId: me.parent.id, sub };
 }
 
 /** Tables that hold nothing about a player: a bot's own skills, what a bot learnt of a map, anonymous numbers per question. */
@@ -153,9 +157,15 @@ describe('account export', () => {
   });
 });
 
-describe('account deletion', () => {
-  it('hard-deletes the parent and every row of every table, then signs out', async () => {
-    const { agent, childId, parentId } = await playedFamily();
+/** The IdP's notice, as it sends it: server to server, no Origin, the SET as the body. */
+const notice = (target: TestApp, token: string, type = 'application/secevent+jwt') =>
+  target.request().post('/api/idp/account-deleted').set('Content-Type', type).send(token);
+
+describe('account deletion notice from the IdP', () => {
+  it('hard-deletes the parent and every row of every table, and ends every session', async () => {
+    const { agent, childId, parentId, parent, sub } = await playedFamily();
+    const other = app.agent();
+    await other.post('/api/auth/login').send({ email: parent.email, ['password']: parent.password }).expect(200);
     const second = (await agent.post('/api/players').send({ displayName: 'Thỏ Bông' }).expect(201)).body as { id: string };
     // Online: one player of the family blocked and reported the other (the rows go with either of them).
     await app.db.insert(t.playerBlocks).values({ childId, blockedChildId: second.id });
@@ -177,30 +187,88 @@ describe('account deletion', () => {
     const before = await rowsOf(parentId, [childId, second.id]);
     // Every table holds something of this family, so a table the delete misses fails below.
     expect(Object.entries(before).filter(([, n]) => n === 0)).toEqual([]);
-    expect(before).toMatchObject({ parents: 1, parent_idp_links: 1, child_profiles: 2, sessions: 1, consents: 1, characters: 2, quest_progress: 2, step_attempts: 1 });
+    expect(before).toMatchObject({ parents: 1, parent_idp_links: 1, child_profiles: 2, sessions: 2, consents: 1, characters: 2, quest_progress: 2, step_attempts: 1 });
 
-    const res = await agent.delete('/api/account').expect(204);
-    expect(String(res.headers['set-cookie'])).toMatch(/Expires=Thu, 01 Jan 1970/);
+    const res = await notice(app, idp.accountDeletedToken({ sub })).expect(202);
+    expect(res.headers['cache-control']).toBe('no-store');
 
     const after = await rowsOf(parentId, [childId, second.id]);
     expect(Object.entries(after).filter(([, n]) => n > 0)).toEqual([]);
     await agent.get('/api/auth/me').expect(401);
+    await other.get('/api/auth/me').expect(401);
   });
 
   it('leaves other families untouched', async () => {
     const a = await playedFamily();
     const b = await playedFamily();
-    await a.agent.delete('/api/account').expect(204);
+    await notice(app, idp.accountDeletedToken({ sub: a.sub })).expect(202);
     expect(await rowsOf(b.parentId, [b.childId])).toMatchObject({ parents: 1, child_profiles: 1, quest_progress: 2, reward_ledger: 1 });
     await b.agent.get('/api/players').expect(200);
   });
 
-  it('ends every session of the account, not only the one that asked', async () => {
-    const { agent, parent, parentId } = await playedFamily();
-    const other = app.agent();
-    await other.post('/api/auth/login').send({ email: parent.email, ['password']: parent.password }).expect(200);
-    await agent.delete('/api/account').expect(204);
-    await other.get('/api/auth/me').expect(401);
-    expect((await rowsOf(parentId, [])).sessions).toBe(0);
+  it('answers 202 for an account it does not have, and for a notice it already acted on', async () => {
+    await notice(app, idp.accountDeletedToken({ sub: `idp-sub-${randomUUID()}` })).expect(202);
+    const { sub } = await playedFamily();
+    const token = idp.accountDeletedToken({ sub });
+    await notice(app, token).expect(202);
+    await notice(app, token).expect(202);
+  });
+
+  it('logs neither the SET nor the sub', async () => {
+    const { sub, parentId } = await playedFamily();
+    const token = idp.accountDeletedToken({ sub });
+    const spies = (['info', 'warn', 'error'] as const).map((level) => vi.spyOn(console, level).mockImplementation(() => undefined));
+    try {
+      await notice(app, token).expect(202);
+      const logged = spies.flatMap((spy) => spy.mock.calls.flat().map(String)).join('\n');
+      expect(logged).toContain(parentId);
+      expect(logged).not.toContain(sub);
+      expect(logged).not.toContain(token);
+    } finally {
+      for (const spy of spies) spy.mockRestore();
+    }
+  });
+
+  it.each([
+    ['a plain-text body', () => 'not a token', 'application/secevent+jwt'],
+    ['a JWS that is not a SET (a logout token)', () => idp.logoutToken({ sub: 'x' }), 'application/secevent+jwt'],
+    ['alg none', () => idp.accountDeletedToken({}, 'none'), 'application/secevent+jwt'],
+    ['another media type', () => idp.accountDeletedToken({}), 'application/json'],
+  ])('answers 400 to %s', async (_name, token, type) => {
+    await notice(app, token(), type).expect(400);
+  });
+
+  it.each([
+    ['a stranger key', (sub: string) => idp.accountDeletedToken({ sub }, 'stranger')],
+    ['another algorithm', (sub: string) => idp.accountDeletedToken({ sub }, 'valid', { alg: 'RS256' })],
+    ['another issuer', (sub: string) => idp.accountDeletedToken({ sub, iss: 'https://evil.example' })],
+    ['another audience', (sub: string) => idp.accountDeletedToken({ sub, aud: 'https://kb.hoandat.com/api/idp/account-deleted' })],
+    ['an audience list', (sub: string) => idp.accountDeletedToken({ sub, aud: ['http://localhost:4173/api/idp/account-deleted'] })],
+    ['an expired token', (sub: string) => idp.accountDeletedToken({ sub, exp: Math.floor(Date.now() / 1000) - 120 })],
+    ['no expiry', (sub: string) => idp.accountDeletedToken({ sub, exp: undefined })],
+    ['another event', (sub: string) => idp.accountDeletedToken({ sub, events: { 'http://schemas.openid.net/event/backchannel-logout': {} } })],
+    ['no sub', () => idp.accountDeletedToken({ sub: '' })],
+  ])('answers 401 to a SET with %s and deletes nothing', async (_name, token) => {
+    const { agent, sub } = await playedFamily();
+    await notice(app, token(sub)).expect(401);
+    await agent.get('/api/auth/me').expect(200);
+  });
+
+  it('answers 503 when sign-in is off or the IdP keys cannot be read, so the IdP retries', async () => {
+    const off = await createTestApp();
+    const down = await createTestApp(IDP_ENV, {}, (() => Promise.reject(new TypeError('fetch failed'))) as typeof fetch);
+    try {
+      await notice(off, idp.accountDeletedToken({ sub: 'x' })).expect(503);
+      await notice(down, idp.accountDeletedToken({ sub: 'x' })).expect(503);
+    } finally {
+      await off.handle.close();
+      await down.handle.close();
+    }
+  });
+
+  it('no longer offers a delete route in the app', async () => {
+    const { agent } = await playedFamily();
+    await agent.delete('/api/account').expect(404);
+    await agent.get('/api/auth/me').expect(200);
   });
 });

@@ -107,7 +107,7 @@ Privacy: https://miu.hoandat.com/privacy
 | Support URL (Apple, bắt buộc) | `https://miu.hoandat.com/privacy` tạm thời | Trang có mục "Liên hệ" với email hỗ trợ. Việc của người sở hữu: một trang hỗ trợ riêng hoặc GitHub Issues của repo công khai. |
 | Marketing URL (tùy chọn) | `https://miu.hoandat.com/` | Trang giới thiệu cho người chưa đăng nhập. |
 | Điều khoản sử dụng | `https://miu.hoandat.com/terms` | Trang công khai chỉ để đọc (route `/terms`, `apps/web/src/ui/legal/terms-screen.tsx`, `docs/terms-of-use.md`), có từ lần deploy production đầu tiên sau 26/10/2026: mở thử thấy tiêu đề “Điều khoản sử dụng Miu World” rồi mới nhập (đường dẫn lạ cũng trả SPA 200). Không phải EULA: Apple vẫn dùng EULA chuẩn. |
-| Xóa tài khoản (Play Data safety, bắt buộc) | `https://miu.hoandat.com/privacy` (mục "Quyền của bạn") | Trang nói cách xóa; nút xóa nằm ở `https://miu.hoandat.com/parent` sau khi đăng nhập. Google muốn trang nêu nổi bật cách xóa: nên thêm neo hoặc trang riêng. |
+| Xóa tài khoản (Play Data safety, bắt buộc) | `https://miu.hoandat.com/privacy` (mục "Quyền của bạn") | Trang nói cách xóa; xóa ở `https://auth.hoandat.com/account#account-delete` (từ 13/11/2026 tài khoản chỉ xóa ở IdP, Miu xóa theo), `https://miu.hoandat.com/parent` có đường dẫn tới đó. Google muốn trang nêu nổi bật cách xóa: nên thêm neo hoặc trang riêng. |
 
 ## Câu trả lời xếp hạng tuổi
 
@@ -155,7 +155,7 @@ Không thu: tên thật, tuổi, ảnh, vị trí, danh bạ, dữ liệu sức 
 
 ## Google Play Data safety
 
-- Thu thập: **Có**. Chia sẻ với bên thứ ba: **Không** (Cloudflare là nhà cung cấp dịch vụ xử lý thay Miu, theo định nghĩa của Play không tính là chia sẻ; app không gửi gì tới Google Analytics). Mã hóa khi truyền: **Có** (HTTPS, WSS). Người dùng yêu cầu xóa được: **Có** (trong app: Quản lý tài khoản → Xóa tài khoản; trên web: URL ở mục URL).
+- Thu thập: **Có**. Chia sẻ với bên thứ ba: **Không** (Cloudflare là nhà cung cấp dịch vụ xử lý thay Miu, theo định nghĩa của Play không tính là chia sẻ; app không gửi gì tới Google Analytics). Mã hóa khi truyền: **Có** (HTTPS, WSS). Người dùng yêu cầu xóa được: **Có** (trong app: Quản lý tài khoản → đường dẫn tới trang xóa ở auth.hoandat.com; trên web: URL ở mục URL).
 
 | Nhóm Play | Loại | Bắt buộc/tùy chọn | Mục đích |
 | --- | --- | --- | --- |
@@ -192,8 +192,7 @@ ACCOUNT MANAGEMENT AND PARENTAL CONTROLS
 • Adult action for voice chat: extra players (the shared-device profiles a child may use) start with voice chat off. Turning it on requires the account owner to sign in again at auth.hoandat.com with Google or Apple within the last 10 minutes; our server checks this from the ID token (amr "reauth", auth_time). Online play itself only uses preset phrases, so no personal information is typed or shared.
 
 ACCOUNT DELETION
-• In the app: Settings (gear) → "Quản lý tài khoản" (Account) → "Xóa tài khoản" (Delete account) → confirm. Deletion is immediate and removes every player, all progress and every session; backups expire within 14 days.
-• On the web: https://miu.hoandat.com/parent after signing in. The shared sign-in account at auth.hoandat.com is deleted separately at https://auth.hoandat.com/account.
+• The account is deleted at the shared sign-in service, https://auth.hoandat.com/account#account-delete (in the app: Settings (gear) → "Quản lý tài khoản" (Account) → "Mở trang xóa tài khoản"). Deleting there tells our server, which immediately removes every player, all progress and every session; backups expire within 14 days.
 
 ONLINE FEATURES
 • Players in the same area see each other. There is no free-text chat: only ready-made phrases and waves.

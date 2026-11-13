@@ -221,20 +221,16 @@ describe('account flow', () => {
     expect(screen.getByRole('link', { name: contact }).getAttribute('href')).toBe(`mailto:${contact}`);
   });
 
-  it('deletes the account only after a second confirmation, then signs out', async () => {
+  it('has no delete button: one line links to the account service, where the account is deleted', async () => {
     const calls = stubApi({
       'GET /api/auth/me': () => ({ status: 200, body: me() }),
       'GET /api/players': () => ({ status: 200, body: [] }),
-      'DELETE /api/account': () => ({ status: 204 }),
     });
     renderAt('/parent');
-    fireEvent.click(await screen.findByRole('button', { name: 'Xóa tài khoản' }));
-    expect(calls.some((c) => c.key === 'DELETE /api/account')).toBe(false);
-    fireEvent.click(screen.getByRole('button', { name: 'Không' }));
-    fireEvent.click(screen.getByRole('button', { name: 'Xóa tài khoản' }));
-    fireEvent.click(screen.getByRole('button', { name: 'Xóa hẳn tài khoản' }));
-    expect(await screen.findByRole('heading', { name: 'Đăng nhập' })).toBeTruthy();
-    expect(calls.filter((c) => c.key === 'DELETE /api/account')).toHaveLength(1);
+    const link = await screen.findByRole('link', { name: 'Mở trang xóa tài khoản' });
+    expect(link.getAttribute('href')).toBe('https://auth.hoandat.com/account#account-delete');
+    expect(screen.queryByRole('button', { name: /Xóa tài khoản/ })).toBeNull();
+    expect(calls.some((c) => c.key.startsWith('DELETE '))).toBe(false);
   });
 
   it('downloads the account data as a JSON file', async () => {

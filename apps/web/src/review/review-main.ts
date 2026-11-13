@@ -156,7 +156,7 @@ const UI_STEPS: Record<string, string> = {
   '08-world-map': 'Bản đồ thế giới: chọn khu vực (M1.4)',
   '09-region': 'Khu rừng bí mật: biển gỗ, tiến độ, bảng nhiệm vụ trên nền chính map của khu (M2.1)',
   '10-play-parrot': 'Vào game, đứng gần Vẹt: nhãn tương tác',
-  '12-delete-account': 'Quản lý tài khoản: tải dữ liệu, rồi xóa hẳn tài khoản',
+  '12-delete-account': 'Quản lý tài khoản: tải dữ liệu, và dòng dẫn tới trang xóa tài khoản ở hoandat.com',
 };
 
 /** Block palette shipped with the POC (before the warm pastel pass), for the before/after table. */

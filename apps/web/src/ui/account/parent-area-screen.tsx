@@ -130,7 +130,7 @@ function ProfileRow({ profile, index, onChanged }: { profile: PlayerDto; index: 
               <button ref={renameRef} type="button" className={buttonClass('secondary', { small: true })} data-id={`parent-profile-rename-${profile.id}`} onClick={startEditing}>
                 <T k="parent.renameButton" />
               </button>
-              {/* The account's own player goes only with the whole account (Xóa tài khoản below). */}
+              {/* The account's own player goes only with the whole account, deleted at the account service (link below). */}
               {profile.primary ? null : confirming ? (
                 <>
                   <span><T k="parent.deleteConfirmQuestion" /></span>

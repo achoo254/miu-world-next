@@ -15,6 +15,7 @@ const PUBLIC: Record<string, string> = {
   'GET /auth/start': 'starts sign-in at the account service',
   'GET /auth/callback': 'finishes sign-in (state cookie, PKCE, signed ID token)',
   'POST /auth/backchannel-logout': 'the IdP ends web sessions; signed logout token, no Origin (server to server)',
+  'POST /idp/account-deleted': 'the IdP says an account was deleted; signed SET for this exact URL, no Origin (server to server)',
   'GET /auth/native/config': "the app's sign-in parameters, no account data",
   'POST /auth/native/exchange': "creates the app's session (PKCE, nonce, signed ID token)",
   'POST /auth/guest': 'starts a guest account on this device (web only, per-IP limit, refused when signed in)',

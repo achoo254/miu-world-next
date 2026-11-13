@@ -5,6 +5,7 @@ import type { Worksheet } from '@miu/schema/worksheet';
 import { AnalyticsSessions, markAppRequests, rememberAnalyticsIds } from './analytics/analytics-session';
 import { ANALYTICS_BODY_LIMIT, analyticsCatalog, analyticsRoutes } from './analytics/analytics-routes';
 import type { EventSink } from './analytics/ga4-forwarder';
+import { accountDeletedRoute } from './auth/account-deleted';
 import { accountRoutes } from './auth/account-routes';
 import { appCors } from './auth/app-cors';
 import { loadSession } from './auth/auth-context';
@@ -132,6 +133,8 @@ export function createApp({ config, db, content = loadContentCatalog(), workshee
   const idp = config.idp ? new IdpClient(config.idp.issuer, fetchImpl, () => clock().getTime()) : null;
   // The IdP's back-channel logout comes server to server, without an Origin: ahead of the CSRF check (signed token).
   app.use('/api', idpBackchannelRoute({ db, config, idp }));
+  // So does its notice that an account was deleted (auth-next ADR 0018; signed SET).
+  app.use('/api', accountDeletedRoute({ db, config, idp, clock }));
 
   const api = express.Router();
   // The app's origins get CORS (no credentials) before the CSRF check, which accepts them like the web's own.
@@ -149,7 +152,7 @@ export function createApp({ config, db, content = loadContentCatalog(), workshee
   api.use(guestRoutes({ db, config, clock, policyVersion: content.consent.version }));
   api.use(idpWebRoutes({ db, config, clock, idp }));
   api.use(idpNativeRoutes({ db, config, clock, idp }));
-  api.use(accountRoutes({ db, config, clock }));
+  api.use(accountRoutes({ db, clock }));
   api.use(playerRoutes({ db, content, clock }));
   api.use(progressRoutes({ db, content, clock }));
   api.use(playerSettingsRoutes({ db, content, clock, events: playerEvents }));

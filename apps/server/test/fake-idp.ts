@@ -58,6 +58,17 @@ export class FakeIdp {
     return this.sign({ iss: FAKE_ISSUER, aud: WEB_CLIENT.id, iat: now, jti: randomUUID(), events, ...claims }, how, { typ: 'logout+jwt' });
   }
 
+  /**
+   * The IdP's notice that an account was deleted (auth-next ADR 0018): a SET for this server's receiver, with valid
+   * claims unless `claims` overrides them.
+   */
+  accountDeletedToken(claims: Record<string, unknown>, how: 'valid' | 'stranger' | 'none' = 'valid', header: Record<string, unknown> = {}): string {
+    const now = Math.floor(Date.now() / 1000);
+    const events = { 'urn:hoandat:auth:event:account.deleted': {} };
+    const aud = `${new URL(WEB_CLIENT.redirect).origin}/api/idp/account-deleted`;
+    return this.sign({ iss: FAKE_ISSUER, aud, iat: now, exp: now + 600, toe: now, jti: randomUUID(), events, ...claims }, how, { typ: 'secevent+jwt', ...header });
+  }
+
   /** The `fetch` the app gets: discovery, keys and the token endpoint, which signs `claims` with the request's nonce. */
   readonly fetch = (async (input: string | URL | Request, init?: RequestInit) => {
     const url = new URL(typeof input === 'string' || input instanceof URL ? input : input.url);

@@ -76,7 +76,7 @@ export function idpFailure(err: unknown): string {
  * Back-channel logouts per 15 minutes from one address: wide, since they all come from the IdP's own server (one
  * address) whenever its users sign out; the signed logout token is the real check, this only caps a flood.
  */
-const BACKCHANNEL_LIMIT_PER_15_MIN = 3_000;
+export const BACKCHANNEL_LIMIT_PER_15_MIN = 3_000;
 
 export function signInLimiter(config: ServerConfig, name: string, onLimit: (res: Response) => void) {
   return rateLimit({

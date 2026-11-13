@@ -5,3 +5,6 @@ import config from '../../../brand.config.json' with { type: 'json' };
 import { defineBrand } from '@achoo254/brand';
 
 export const brand = defineBrand(config);
+
+/** Where the account is deleted: only at the account service, which tells Miu to delete its data too. */
+export const ACCOUNT_DELETE_URL = `${brand.primaryTenant.issuer}/account#account-delete`;

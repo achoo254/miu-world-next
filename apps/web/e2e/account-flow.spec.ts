@@ -111,7 +111,7 @@ test('sign-in → consent → create character → Home → map → forest → p
   await expect(page.getByRole('heading', { name: 'Ai đang chơi?' })).toBeVisible();
   await shot(page, '05-profiles');
 
-  // The account area opens again with no code; the owner downloads what the server keeps, then deletes the account.
+  // The account area opens again with no code; the owner downloads what the server keeps and finds where the account is deleted.
   await page.goto('/parent');
   await expect(page.getByRole('heading', { name: /Người chơi của tài khoản/ })).toBeVisible();
   const download = page.waitForEvent('download');
@@ -121,12 +121,12 @@ test('sign-in → consent → create character → Home → map → forest → p
   const exported = JSON.parse(readFileSync(await file.path(), 'utf8')) as { parent: { signIn: string }; players: Array<{ displayName: string; primary: boolean; character: { name: string } }> };
   expect(exported.parent.signIn).toBe('idp');
   expect(exported.players.map((p) => [p.displayName, p.primary, p.character.name])).toEqual([['Mèo Mây', true, 'Bông'], ['Thỏ Bông', false, 'Miu']]);
-  await page.getByRole('button', { name: 'Xóa tài khoản' }).click();
-  await page.getByRole('button', { name: 'Xóa hẳn tài khoản' }).scrollIntoViewIfNeeded();
+  // The account is deleted only at the account service: the area links there, and Miu has no delete button.
+  const deleteLink = page.getByRole('link', { name: 'Mở trang xóa tài khoản' });
+  await deleteLink.scrollIntoViewIfNeeded();
+  await expect(deleteLink).toHaveAttribute('href', 'https://auth.hoandat.com/account#account-delete');
+  await expect(page.getByRole('button', { name: /Xóa tài khoản/ })).toHaveCount(0);
   await shot(page, '12-delete-account');
-  await page.getByRole('button', { name: 'Xóa hẳn tài khoản' }).click();
-  await expect(page.getByRole('heading', { name: 'Đăng nhập' })).toBeVisible();
-  expect((await page.request.get('/api/auth/me')).status()).toBe(401);
 
   expect(consoleErrors).toEqual([]);
 });

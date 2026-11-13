@@ -1,12 +1,10 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router';
-import { z } from 'zod';
+import { Link } from 'react-router';
 import { AccountExport } from '@miu/schema/account';
+import { ACCOUNT_DELETE_URL } from '../../brand';
 import { api } from '../api-client';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
 import { T } from '../i18n/use-t';
-import { useAccount } from './account-context';
 import { useSubmit } from './use-submit';
 
 /** Hands the export to the browser as a file; nothing is kept in the page. */
@@ -21,16 +19,7 @@ function saveJson(data: AccountExport): void {
 }
 
 export function AccountDataPanel() {
-  const { signOut } = useAccount();
-  const navigate = useNavigate();
-  const [confirming, setConfirming] = useState(false);
   const download = useSubmit(async () => saveJson(await api('GET', '/account/export', AccountExport)));
-  const remove = useSubmit(async () => {
-    await api('DELETE', '/account', z.undefined());
-    signOut();
-    navigate('/login');
-  });
-  const error = download.error ?? remove.error;
 
   return (
     <section className="panel" data-id="parent-data" aria-labelledby="parent-data-title">
@@ -45,24 +34,12 @@ export function AccountDataPanel() {
         <button type="button" className={buttonClass('secondary')} data-id="parent-data-export" disabled={download.busy} onClick={() => void download.onSubmit()}>
           <T k="parentData.exportButton" />
         </button>
-        {confirming ? null : (
-          <button type="button" className={buttonClass('danger')} data-id="parent-data-delete" onClick={() => setConfirming(true)}>
-            <T k="parentData.deleteAccountButton" />
-          </button>
-        )}
       </div>
-      {confirming ? (
-        <div className="row" role="group" aria-label="Xác nhận xóa tài khoản">
-          <p><T k="parentData.deleteConfirmQuestion" /></p>
-          <button type="button" className={buttonClass('danger')} data-id="parent-data-delete-confirm" disabled={remove.busy} onClick={() => void remove.onSubmit()}>
-            <T k="parentData.deleteConfirmButton" />
-          </button>
-          <button type="button" className={buttonClass('ghost')} onClick={() => setConfirming(false)}>
-            <T k="parent.noButton" />
-          </button>
-        </div>
-      ) : null}
-      {error ? <p role="alert" className="error">{error}</p> : null}
+      {/* The account is deleted only at the account service; Miu's data goes with it. */}
+      <p className="hint" data-id="parent-data-delete">
+        <T k="parentData.deleteAtAccount" /> <a href={ACCOUNT_DELETE_URL}><T k="parentData.deleteAtAccountLink" /></a>
+      </p>
+      {download.error ? <p role="alert" className="error">{download.error}</p> : null}
     </section>
   );
 }

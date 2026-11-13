@@ -164,8 +164,7 @@ PLAYER SWITCHES
 - Settings (gear) -> "Quản lý tài khoản" (Account) -> a player card -> "Chơi online" tab: switches for online play and voice chat for that player, enforced by our server (when off, the player plays alone and meets no one).
 
 ACCOUNT DELETION (5.1.1(v))
-- In the app: Settings (gear) -> "Quản lý tài khoản" -> "Xóa tài khoản" (Delete account) -> "Xóa hẳn tài khoản" (Delete permanently). Deletion is immediate and removes every player, all progress and every session; backups expire within 14 days.
-- The shared sign-in account at auth.hoandat.com is deleted separately at https://auth.hoandat.com/account.
+- The account is deleted at the shared sign-in service: in the app, Settings (gear) -> "Quản lý tài khoản" -> the "Mở trang xóa tài khoản" link opens https://auth.hoandat.com/account#account-delete. Deleting there tells our server, which immediately removes every player, all progress and every session; backups expire within 14 days.
 
 ONLINE FEATURES
 - Players in the same area see each other. There is no free-text chat: only ready-made phrases and waves.

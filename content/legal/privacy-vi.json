@@ -1,6 +1,6 @@
 {
   "title": "Quyền riêng tư của Miu World",
-  "updatedOn": "2026-10-27",
+  "updatedOn": "2026-11-13",
   "consentVersion": "v6",
   "contactEmail": "quocdat254@gmail.com",
   "sections": [
@@ -33,7 +33,7 @@
         "Tên thật, tuổi, ảnh, giọng nói hay vị trí của người chơi. Tên người chơi và tên nhân vật được chọn từ danh sách. Chữ tự gõ chỉ có ở thời khóa biểu và lịch mặc đồng phục; trường và lớp chỉ được lưu nếu bạn tự ghi vào đó, và bạn có thể xóa bất cứ lúc nào.",
         "Ở bài tập nói, người chơi có thể bấm \"Ghi âm giọng con\" để thu giọng mình và nghe lại. Trình duyệt sẽ hỏi quyền dùng micro. Bản ghi chỉ nằm trong trình duyệt trên máy, không gửi lên máy chủ hay cho ai, không nhận dạng giọng nói, và bị xóa ngay khi đóng bài hoặc ghi lại.",
         "Nói chuyện bằng giọng: trò chơi không ghi âm, không lưu giọng nói ở đâu cả, và không chuyển lời nói thành chữ.",
-        "Không có quảng cáo và không có cookie quảng cáo. Trình duyệt không tải script, phông chữ hay ảnh nào của Google hay bên thứ ba khác: mọi thứ tải từ máy chủ Miu, trừ script đo lượt xem của Cloudflare Web Analytics (mục Ai khác tham gia). Trang dùng một cookie đăng nhập, cần để giữ bạn đăng nhập. Trong app trên iPhone và Android, trang đăng nhập mở trong trình duyệt của hệ thống (không mở trong app), và mã phiên đăng nhập của Miu được giữ trong kho bảo mật của máy (Keychain trên iPhone, Keystore trên Android), không trong bộ nhớ của trang; đăng xuất hay xóa tài khoản thì app xóa mã đó. Ngoài cookie đó, trình duyệt giữ trong bộ nhớ của trang (localStorage) một mã ngẫu nhiên không gắn với tài khoản, dùng để đếm lượt người dùng ẩn danh, và trong bộ nhớ của phiên (sessionStorage, mất khi đóng thẻ) mã của lượt truy cập này cùng nguồn đến (tên miền của trang đã dẫn bạn tới, nhãn chiến dịch của link nếu có); xem mục Số liệu sử dụng ẩn danh."
+        "Không có quảng cáo và không có cookie quảng cáo. Trình duyệt không tải script, phông chữ hay ảnh nào của Google hay bên thứ ba khác: mọi thứ tải từ máy chủ Miu, trừ script đo lượt xem của Cloudflare Web Analytics (mục Ai khác tham gia). Trang dùng một cookie đăng nhập, cần để giữ bạn đăng nhập. Trong app trên iPhone và Android, trang đăng nhập mở trong trình duyệt của hệ thống (không mở trong app), và mã phiên đăng nhập của Miu được giữ trong kho bảo mật của máy (Keychain trên iPhone, Keystore trên Android), không trong bộ nhớ của trang; đăng xuất thì app xóa mã đó, và khi tài khoản bị xóa thì mã đó không còn dùng được. Ngoài cookie đó, trình duyệt giữ trong bộ nhớ của trang (localStorage) một mã ngẫu nhiên không gắn với tài khoản, dùng để đếm lượt người dùng ẩn danh, và trong bộ nhớ của phiên (sessionStorage, mất khi đóng thẻ) mã của lượt truy cập này cùng nguồn đến (tên miền của trang đã dẫn bạn tới, nhãn chiến dịch của link nếu có); xem mục Số liệu sử dụng ẩn danh."
       ]
     },
     {
@@ -79,7 +79,7 @@
     {
       "heading": "Giữ bao lâu",
       "paragraphs": [
-        "Dữ liệu tài khoản và người chơi được giữ cho đến khi bạn xóa. Xóa một người chơi phụ thì mọi tiến độ của người chơi đó mất hẳn; xóa tài khoản thì mọi người chơi, tiến độ, phiên đăng nhập (trên web và trong app), email và liên kết với tài khoản ở dịch vụ đăng nhập đều bị xóa ngay trên máy chủ, không khôi phục được. Tài khoản ở dịch vụ đăng nhập auth.hoandat.com là của riêng bạn, dùng chung cho các sản phẩm khác: xóa tài khoản Miu không xóa nó; bạn tự xóa nó ở trang Tài khoản của dịch vụ (auth.hoandat.com/account) bất cứ lúc nào.",
+        "Dữ liệu tài khoản và người chơi được giữ cho đến khi bạn xóa. Xóa một người chơi phụ thì mọi tiến độ của người chơi đó mất hẳn; tài khoản chỉ xóa ở một nơi, trang Tài khoản của dịch vụ đăng nhập (auth.hoandat.com/account), dùng chung cho mọi sản phẩm của hoandat.com. Khi bạn xóa ở đó, dịch vụ báo cho Miu và mọi người chơi, tiến độ, phiên đăng nhập (trên web và trong app), email và liên kết với tài khoản đó bị xóa ngay trên máy chủ Miu, không khôi phục được; dữ liệu ở các sản phẩm khác của hoandat.com cũng bị xóa theo.",
         "Bản sao lưu cơ sở dữ liệu được tạo mỗi ngày để phòng sự cố, và tự xóa sau tối đa 14 ngày. Riêng những gì các bạn máy tự học (nơi chốn, lối đi trên map và điểm kỹ năng của chính bạn máy, không có thông tin nào về người chơi) được sao lưu thêm và giữ 90 ngày. Nhật ký máy chủ (địa chỉ IP, trang đã mở, lỗi kỹ thuật; không có email) cũng tự xóa sau tối đa 14 ngày. Vì vậy sau khi bạn xóa, chậm nhất 14 ngày sau dữ liệu không còn ở bất cứ đâu trên máy chủ.",
         "Dữ liệu theo từng sự kiện của số liệu sử dụng ẩn danh ở Google Analytics được giữ 2 tháng rồi tự xóa (cài đặt lưu giữ của Google Analytics); Google có thể giữ lâu hơn các báo cáo tổng hợp, không kèm mã nào của người chơi. Số liệu này không gắn với email hay tài khoản nên không xóa theo tài khoản được; dữ liệu trên máy chủ Miu vẫn theo các mốc ở trên (sao lưu và nhật ký tối đa 14 ngày)."
       ]
@@ -89,7 +89,7 @@
       "paragraphs": [
         "Xem và tải dữ liệu: trong mục Quản lý tài khoản, bấm \"Tải dữ liệu của tôi\" để nhận một tệp JSON chứa toàn bộ những gì chúng tôi lưu về tài khoản và các người chơi, kể cả thời gian chơi theo tuần, thư, cài đặt bạn máy và hai công tắc của chủ tài khoản, bạn bè, lời mời kết bạn, người đã chặn và báo cáo đã gửi. Người chơi khác trong tệp chỉ hiện bằng tên nhân vật. Chủ tài khoản cũng xem được tiến bộ học của từng người chơi ngay trong mục này.",
         "Sửa: đổi tên hiển thị của người chơi trong mục Quản lý tài khoản; đổi tên và trang phục nhân vật, sửa hoặc xóa thời khóa biểu, lịch mặc đồng phục, cách trang trí nhà và đồ vật bật trong nhà ngay trong trò chơi; bật hay tắt bạn máy và nói chuyện bằng giọng trong Cài đặt; chủ tài khoản bật hay tắt chơi online và nói chuyện bằng giọng cho từng người chơi trong mục Quản lý tài khoản; xóa bạn, hủy lời mời và bỏ chặn trong danh sách bạn bè.",
-        "Xóa: xóa từng người chơi phụ, hoặc bấm \"Xóa tài khoản\" để xóa tất cả. Tài khoản ở dịch vụ đăng nhập xóa riêng ở auth.hoandat.com/account.",
+        "Xóa: xóa từng người chơi phụ trong mục Quản lý tài khoản; muốn xóa tất cả thì xóa tài khoản ở auth.hoandat.com/account (mục Quản lý tài khoản có đường dẫn tới đó), mọi dữ liệu Miu bị xóa theo.",
         "Rút lại đồng ý: xóa tài khoản là cách rút lại đồng ý; chúng tôi không giữ lại gì để tiếp tục dùng (số liệu ẩn danh đã gửi Google Analytics không gắn với tài khoản; dữ liệu theo từng sự kiện tự xóa sau 2 tháng)."
       ]
     },
