@@ -32,7 +32,7 @@ Date: 2026-09-29 · Plan: `plans/dattqh/260929-1911-foundation-after-poc-gate/` 
 - Ảnh bản đồ và nhân vật sinh lại cho cùng hash (review shot dùng bước thời gian cố định).
 
 ## Hiệu năng (giả lập) vs ngân sách Master Plan §12
-Chromium headless, GPU **NVIDIA RTX 5070 Ti** (desktop), CPU throttle qua CDP, 60 s/lượt theo autopilot. FPS bị trần ~165 do vsync của màn hình máy đo.
+Chromium headless, GPU NVIDIA desktop, CPU throttle qua CDP, 60 s/lượt theo autopilot. FPS bị trần ~165 do vsync của màn hình máy đo.
 
 | Thiết bị (viewport) | CPU chậm | Chất lượng | FPS TB | FPS thấp nhất 1 s | Draw call max | Tam giác max |
 | --- | --- | --- | --- | --- | --- | --- |
