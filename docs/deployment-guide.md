@@ -49,6 +49,12 @@ Thêm một entry mới thì làm theo `_meta.entry_schema`. Trước khi sửa,
 
 Cấu hình từng phần nằm trong `tools/deploy/production/`, lý do ghi ngay trong file: `setup-prod-host.sh` (Postgres 16 từ AppStream, chỉ loopback, `pg_hba` cho role `miu` bằng scram; Node 22 ở `/opt`; user `miu`; unit và timer backup; journal namespace `miu`; server block nginx chỉ bật khi `nginx -t` sạch, không sạch thì trả lại `miu.conf` và bảng 301 đang chạy), `miu-server.service`, `miu-backup.{service,timer}`, `journald-miu.conf`, `nginx-prod.conf` và `nginx-bai-redirects.conf` (bảng 301 từ trang bài cũ `/bai/<slug>/` sang trang chủ đề `/hoc/<môn>/<chủ-đề>/`, khóa dạng regex để không phải nới `map_hash_bucket_size` của nginx dùng chung, `setup` cài vào `/etc/nginx/miu-bai-redirects.conf`, `miu.conf` include; áp lên production bằng `deploy.sh setup`, hỏi người trước).
 
+**Kết nối ra ngoài ưu tiên IPv4.** IPv6 đi ra từ .65 không chạy và kết nối IPv4 đôi khi mất hơn 2 giây, nên với mặc
+định của Node 22 (happy eyeballs, 250 ms mỗi địa chỉ) lời gọi qua Cloudflare hay bên thứ ba hỏng với
+`AggregateError [ETIMEDOUT]`. Process chạy với `NODE_OPTIONS=--dns-result-order=ipv4first
+--network-family-autoselection-attempt-timeout=2500` (`Environment=` trong `tools/deploy/production/miu-server.service`): thử IPv4 trước, đợi mỗi địa chỉ 2,5 giây. Unit chỉ đổi bằng `setup` (§5); riêng dòng này có thể áp hẹp: chép unit vào `/etc/systemd/system/`, `systemctl daemon-reload && systemctl restart miu-server`.
+Kiểm: `tr '\0' '\n' < /proc/<pid>/environ | grep NODE_OPTIONS`.
+
 ## 4. DNS và đường vào từ internet
 
 **DNS** nằm ở zone `hoandat.com` trên Cloudflare. Domain `miu` là bản ghi `A` **proxied**, trỏ về host của entry `SSH_SERVER_STAGING`; zone đặt SSL mode `full`. Máy dev không có CLI DNS riêng (`wrangler` không quản lý bản ghi DNS), nên gọi thẳng Cloudflare API. Token đi qua stdin, không nằm trong đối số của lệnh:
