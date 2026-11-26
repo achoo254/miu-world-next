@@ -16,7 +16,7 @@
 
 | Môi trường | Máy | Entry trong tệp credential | Đăng nhập | Miu chạy gì ở đó |
 | --- | --- | --- | --- | --- |
-| Dev | Máy dev | — | — | `pnpm dev` (API 8787 + web 5173); cách chạy ở `CLAUDE.md` |
+| Dev | Máy dev | — | — | `pnpm dev` (API 8787 + web 5173); cách chạy ở `AGENTS.md` |
 | Production | **.65** (CentOS Stream 9) | `SSH_SERVER_STAGING` (group `SERVER STAGING .65`) | key, mật khẩu dự phòng | `miu-server` (:8797 loopback), Postgres 16, nginx `conf.d/miu.conf` |
 
 ## 3. Credential (ngoài repo)
@@ -95,7 +95,7 @@ Từ máy dev, không cần SSH: `curl -s https://miu.hoandat.com/api/health`.
 ## 7. Dễ vấp (đã gặp thật)
 
 1. **Hook của môi trường chặn vài từ trong lệnh Bash** (ví dụ lệnh chứa "target" hay "coverage"). Gặp thì viết script ra tệp bằng công cụ Write rồi chạy tệp.
-2. **Cổng 8787 trên .65 thuộc dự án khác.** Production Miu dùng 8797. Quy tắc "cổng bận thì tắt tiến trình cũ" trong `CLAUDE.md` chỉ áp cho máy dev, không áp cho .65.
+2. **Cổng 8787 trên .65 thuộc dự án khác.** Production Miu dùng 8797. Quy tắc "cổng bận thì tắt tiến trình cũ" trong `AGENTS.md` chỉ áp cho máy dev, không áp cho .65.
 3. **nginx trên .65 là CentOS:** chỉ có `conf.d/`, không có `sites-enabled`.
 4. **Không đoán credential, không tìm key ở nơi khác.** Entry thiếu thì dừng và báo người phụ trách.
 
@@ -106,4 +106,4 @@ Từ máy dev, không cần SSH: `curl -s https://miu.hoandat.com/api/health`.
 | [`deployment-guide.md`](deployment-guide.md) | Deploy production, secret ứng dụng, DNS Cloudflare, rollback, giữ dữ liệu 14 ngày |
 | `tools/deploy/production/` | Script và cấu hình của .65; lý do ghi ngay trong file |
 | [`system-architecture.md`](system-architecture.md) | Kiến trúc và hướng triển khai đích |
-| `CLAUDE.md` (gốc repo) | Lệnh dev, gate, cổng cố định trên máy dev |
+| `AGENTS.md` (gốc repo) | Lệnh dev, gate, cổng cố định trên máy dev |

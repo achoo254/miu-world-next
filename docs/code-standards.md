@@ -1,6 +1,6 @@
 # Chuẩn kỹ thuật
 
-Lệnh cụ thể và danh sách cấm cho agent: `CLAUDE.md`. File này giải thích các lựa chọn và chính sách phía sau.
+Lệnh cụ thể và danh sách cấm cho agent: `AGENTS.md`. File này giải thích các lựa chọn và chính sách phía sau.
 
 ## Ngôn ngữ và công cụ
 

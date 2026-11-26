@@ -16,6 +16,6 @@ Bản đồ tài liệu. Nguồn quyết định sản phẩm là [Master Plan v
 | [terms-of-use.md](terms-of-use.md) | Điều khoản sử dụng (trang `/terms`, phát hành 26/10/2026, chỉ để đọc): quyết định của chủ sở hữu, từng điều lấy từ đâu, vì sao không nâng phiên bản lời đồng ý |
 | [store/README.md](store/README.md), [store/listing.md](store/listing.md) | Hồ sơ App Store và Google Play: ảnh chụp và cách chụp lại, icon, nội dung trang store (vi, en), xếp hạng tuổi, nhãn quyền riêng tư, ghi chú cho người duyệt, việc còn chặn phát hành |
 
-Quy tắc hành vi cho agent: [`CLAUDE.md`](../CLAUDE.md) và [`.claude/rules/`](../.claude/rules/).
+Quy tắc hành vi cho agent: [`AGENTS.md`](../AGENTS.md) và [`.claude/rules/`](../.claude/rules/).
 
 Hồ sơ theo thời điểm (không phải nguồn chuẩn lâu dài): plan và report ở [`plans/dattqh/`](../plans/dattqh/).
