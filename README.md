@@ -6,7 +6,7 @@ Game phiêu lưu 3D voxel online trên web cho mọi lứa tuổi, nơi kiến t
 
 - Sản phẩm, đối tượng, phạm vi: [`docs/project-overview-pdr.md`](docs/project-overview-pdr.md); quyết định sản phẩm gốc: [Master Plan v3](<Miu World — Master Development Plan v3 (3D theo mockup + Multiplayer).md>)
 - Bản đồ tài liệu: [`docs/README.md`](docs/README.md); bắt đầu đọc code từ đâu: [`docs/codebase-summary.md`](docs/codebase-summary.md)
-- Quy tắc cho AI agent, lệnh và gate trước khi báo xong: [`CLAUDE.md`](CLAUDE.md)
+- Quy tắc cho AI agent, lệnh và gate trước khi báo xong: [`AGENTS.md`](AGENTS.md)
 
 ## Cấu trúc
 
@@ -23,7 +23,7 @@ pnpm dev
 
 `pnpm dev` chạy API và web cùng lúc ([`tools/dev/start-dev-servers.ts`](tools/dev/start-dev-servers.ts)). Đăng nhập phụ huynh đi qua dịch vụ tài khoản dùng chung auth-next; client dev được nạp từ tệp credential ngoài repo của người phụ trách (biến `MIU_TOKEN_FILE` nếu để chỗ khác). Thiếu tệp đó thì API vẫn chạy nhưng không đăng nhập được.
 
-Gate trước khi báo xong, cách chạy test và E2E trên máy dev dùng chung: [`CLAUDE.md`](CLAUDE.md) mục Lệnh và [`docs/code-standards.md`](docs/code-standards.md). Chụp và xem các màn chính khi cần (không bắt buộc trước deploy): [`docs/screen-review.md`](docs/screen-review.md). Deploy và rollback: [`docs/deployment-guide.md`](docs/deployment-guide.md).
+Gate trước khi báo xong, cách chạy test và E2E trên máy dev dùng chung: [`AGENTS.md`](AGENTS.md) mục Lệnh và [`docs/code-standards.md`](docs/code-standards.md). Chụp và xem các màn chính khi cần (không bắt buộc trước deploy): [`docs/screen-review.md`](docs/screen-review.md). Deploy và rollback: [`docs/deployment-guide.md`](docs/deployment-guide.md).
 
 ## License asset
 
