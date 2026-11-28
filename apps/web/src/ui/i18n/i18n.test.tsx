@@ -157,8 +157,11 @@ describe('the mode setting', () => {
     window.localStorage.clear();
     document.cookie = 'hd_lang=zh-CN; Path=/';
     vi.resetModules();
+    document.documentElement.lang = 'vi';
     const reloaded = await import('./i18n');
     expect(reloaded.getLangMode()).toBe('zh-CN');
+    // The first read also labels the page: the HTML ships as Vietnamese.
+    expect(document.documentElement.lang).toBe('zh-CN');
     vi.resetModules();
   });
 

@@ -179,7 +179,12 @@ function apply(mode: LangMode): void {
 }
 
 export function getLangMode(): LangMode {
-  current ??= readStored();
+  if (current === null) {
+    // The first read labels the page too: index.html ships as Vietnamese, and a language saved in the shared cookie
+    // (or this device) must reach `<html lang>` without waiting for a change.
+    current = readStored();
+    if (typeof document !== 'undefined') document.documentElement.lang = htmlLangOf(current);
+  }
   return current;
 }
 
