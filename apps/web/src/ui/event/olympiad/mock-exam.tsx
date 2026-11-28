@@ -5,7 +5,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { EXAM_MINUTES, type ExamSubmitResponse, type OlympiadQuestionPublic } from '@miu/schema/olympiad';
 import { errorMessage } from '../../api-client';
-import { mapBoth } from '../../i18n/i18n';
+import { contentText, mapBoth } from '../../i18n/i18n';
 import { Bi, T, useT } from '../../i18n/use-t';
 import { Icon } from '../../kit/art';
 import { buttonClass } from '../../kit/button';
@@ -72,7 +72,7 @@ export function MockExam({
 
   const question = questions[index];
   if (!question) return null;
-  const say = (text: { vi: string; en: string }) => mapBoth(text, fill);
+  const say = (text: { vi: string; en: string }) => mapBoth(contentText(text), fill);
   const answered = Object.keys(answers).length;
   const blank = questions.length - answered;
   const picked = question.choices.find((c) => c.id === answers[question.id]);

@@ -8,7 +8,7 @@ import { useMemo, useRef, useState } from 'react';
 import { freshPicker } from '@miu/quest/pick-fresh';
 import type { OlympiadQuestionPublic, OlympiadTopicId, PracticeFinishResponse, PracticeSupportResponse } from '@miu/schema/olympiad';
 import { errorMessage } from '../../api-client';
-import { linesOf, mapBoth, type Bilingual } from '../../i18n/i18n';
+import { contentText, linesOf, mapBoth, twin, type Bilingual } from '../../i18n/i18n';
 import { Bi, T, useT } from '../../i18n/use-t';
 import { Icon } from '../../kit/art';
 import { buttonClass } from '../../kit/button';
@@ -28,7 +28,7 @@ const LAYERS: ReadonlyArray<{ key: Layer; opensAfter: number }> = [
 const LAYER_LABEL = { guide: 'support.guide', hint: 'support.hint', answer: 'support.answer' } as const;
 
 /** A choice's label in both languages (a number reads the same). */
-export const choiceText = (c: { text: string; en?: string | undefined }): Bilingual => ({ vi: c.text, en: c.en ?? c.text });
+export const choiceText = (c: { text: string; en?: string | undefined }): Bilingual => twin(c.text, c.en);
 
 export function PracticeRun({
   topic,
@@ -60,7 +60,7 @@ export function PracticeRun({
   const question = questions[index];
   const last = index === questions.length - 1;
   if (!question) return null;
-  const say = (text: Bilingual): Bilingual => mapBoth(text, fill);
+  const say = (text: { vi: string; en: string }): Bilingual => mapBoth(contentText(text), fill);
   const pickedChoice = question.choices.find((c) => c.id === picked);
 
   function resetQuestion(): void {
@@ -80,7 +80,7 @@ export function PracticeRun({
       setError(null);
       if (res.correct) {
         playCue('right');
-        setSolved(res.explanation);
+        setSolved(res.explanation ? contentText(res.explanation) : null);
         setLine(right.next());
       } else {
         playCue('wrong');

@@ -6,6 +6,7 @@ import { KeychainAccess, SecureStorage } from '@aparajita/capacitor-secure-stora
 import { SystemAuth } from '@achoo254/capacitor-system-auth';
 import { z } from 'zod';
 import { api } from '../ui/api-client';
+import { getLangMode, htmlLangOf } from '../ui/i18n/i18n';
 import { SERVER_ORIGIN } from './endpoints';
 import { signInNative } from './native-sign-in';
 import { setSessionToken } from './session-token';
@@ -52,6 +53,6 @@ export function startNativeSignIn(reauth: boolean, signUp = false): Promise<bool
       exchange: (body) => api('POST', '/auth/native/exchange', z.unknown(), body),
       saveToken,
     },
-    { reauth, signUp },
+    { reauth, signUp, uiLocale: htmlLangOf(getLangMode()) },
   );
 }

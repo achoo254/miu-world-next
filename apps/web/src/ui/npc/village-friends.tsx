@@ -8,7 +8,7 @@ import { FEAR_HEARTS, SECRET_HEARTS, type NpcDto } from '@miu/schema/npc';
 import { ITEMS, itemIcon } from '../backpack/items';
 import { errorMessage } from '../api-client';
 import { NpcPortrait } from '../dialogue/npc-portrait';
-import { mapBoth, type TextKey } from '../i18n/i18n';
+import { contentText, mapBoth, type TextKey } from '../i18n/i18n';
 import { Bi, Name, T, useT } from '../i18n/use-t';
 import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
@@ -37,7 +37,7 @@ const RELATION_TEXT: Record<NpcDto['relations'][number]['kind'], TextKey> = {
 
 function Friend({ npc, fill }: { npc: NpcDto; fill: (text: string) => string }) {
   const { friendship } = npc;
-  const say2 = (text: { vi: string; en: string }) => <Bi {...mapBoth(text, fill)} />;
+  const say2 = (text: { vi: string; en: string }) => <Bi {...mapBoth(contentText(text), fill)} />;
   const named = (vi: string) => <Name vi={vi} fill={fill} />;
   return (
     <li className="parchment village-friend" data-id={`village-npc-${npc.id}`}>

@@ -1,6 +1,7 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { ExamSubmitResponse, OlympiadQuestionPublic } from '@miu/schema/olympiad';
+import { twin } from '../../i18n/i18n';
 import { ExamReview } from './exam-review';
 import { MockExam } from './mock-exam';
 import { PracticeRun } from './practice-run';
@@ -68,7 +69,7 @@ describe('a practice run', () => {
           ? { body: { layer: 'answer', choice: 'B', explanation: { vi: '3 + 2 = 5', en: '3 + 2 = 5' } } }
           : { body: { layer: (b as { layer: string }).layer, text: { vi: 'Đếm thêm từ 3', en: 'Count on from 3' } } },
     });
-    render(<PracticeRun topic={{ id: 'logic', name: { vi: 'Tư duy', en: 'Logic' } }} questions={QUESTIONS} fill={fill} onBack={() => undefined} onFinished={() => undefined} />);
+    render(<PracticeRun topic={{ id: 'logic', name: twin('Tư duy', 'Logic') }} questions={QUESTIONS} fill={fill} onBack={() => undefined} onFinished={() => undefined} />);
     expect(screen.getByText('Mochi cân quả táo: bao nhiêu?')).toBeTruthy();
     // Only the guide before any miss.
     expect(screen.getAllByRole('tab').map((t) => t.textContent)).toHaveLength(1);
@@ -89,7 +90,7 @@ describe('a practice run', () => {
       'POST /api/olympiad/practice/logic/finish': () => ({ body: { correct: 2, questions: 2, stars: 5, rewards: { xp: 10, coin: 2 }, repeated: false } }),
     });
     const finished = vi.fn();
-    render(<PracticeRun topic={{ id: 'logic', name: { vi: 'Tư duy', en: 'Logic' } }} questions={QUESTIONS} fill={fill} onBack={() => undefined} onFinished={finished} />);
+    render(<PracticeRun topic={{ id: 'logic', name: twin('Tư duy', 'Logic') }} questions={QUESTIONS} fill={fill} onBack={() => undefined} onFinished={finished} />);
     click('olympiad-choice-B');
     click('olympiad-check');
     expect(await screen.findByText('Vì 3 + 2 = 5')).toBeTruthy();
@@ -111,7 +112,7 @@ describe('the way back to the topics', () => {
   it('is a corner button of its own in a practice run and in the mock exam, outside the title row', () => {
     serve({});
     const back = vi.fn();
-    render(<PracticeRun topic={{ id: 'logic', name: { vi: 'Tư duy', en: 'Logic' } }} questions={QUESTIONS} fill={fill} onBack={back} onFinished={() => undefined} />);
+    render(<PracticeRun topic={{ id: 'logic', name: twin('Tư duy', 'Logic') }} questions={QUESTIONS} fill={fill} onBack={back} onFinished={() => undefined} />);
     const run = document.querySelector('[data-id="olympiad-run-back"]');
     expect(run?.parentElement?.getAttribute('data-id')).toBe('olympiad-run-logic');
     expect(document.querySelector('.olympiad-run-top [data-id="olympiad-run-back"]')).toBeNull();
@@ -126,7 +127,7 @@ describe('the way back to the topics', () => {
   it('keeps a sum in a question on one line', () => {
     serve({});
     const sum = [{ ...QUESTIONS[0], id: 'q-sum', prompt: { vi: 'Tính nhé (8 + 5 = ?)', en: 'Work it out (8 + 5 = ?)' } }] as OlympiadQuestionPublic[];
-    render(<PracticeRun topic={{ id: 'logic', name: { vi: 'Tư duy', en: 'Logic' } }} questions={sum} fill={fill} onBack={() => undefined} onFinished={() => undefined} />);
+    render(<PracticeRun topic={{ id: 'logic', name: twin('Tư duy', 'Logic') }} questions={sum} fill={fill} onBack={() => undefined} onFinished={() => undefined} />);
     expect(document.querySelector('[data-id="olympiad-prompt"]')?.textContent).toContain('(8\u00a0+\u00a05\u00a0=\u00a0?)');
   });
 });

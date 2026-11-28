@@ -210,7 +210,7 @@ export async function loadAmbientLife(loader: GuardedGltfLoader, ambients: reado
     const actor = new AmbientActor(def.id, spec, def.position, (def.yaw * Math.PI) / 180, { ...def.spots }, random);
     const bubble = createSpeechBubble();
     const pickers = new Map<string, FreshPicker<number>>();
-    /** A line of the pool in the language shown (in Song ngữ the Vietnamese with the English under it). */
+    /** A line of the pool in the language shown (in Song ngữ the Vietnamese with the English under it; 中文 reads the English, the pools have no Chinese). */
     const line = (pool: string): { text: string; sub: string | null } | null => {
       const lines = AMBIENT_LINES[pool];
       if (!lines?.length) return null;
@@ -221,7 +221,7 @@ export async function loadAmbientLife(loader: GuardedGltfLoader, ambients: reado
       const vi = fill(lines[i] ?? '');
       const en = fill(AMBIENT_LINES_EN[pool]?.[i] ?? vi);
       const mode = getLangMode();
-      if (mode === 'en') return { text: en, sub: null };
+      if (mode === 'en' || mode === 'zh-CN') return { text: en, sub: null };
       return { text: vi, sub: mode === 'both' && en !== vi ? en : null };
     };
     const target: AmbientTarget & { position: number[]; available: boolean; labelHeight: number } = {

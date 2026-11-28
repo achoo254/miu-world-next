@@ -86,7 +86,7 @@ describe('region reward words', () => {
 
   it('points at the next goal: a tier to open, the lessons missing, then the stars', () => {
     expect(regionGoalLine(forest(3))?.vi).toBe('Còn 2 nhiệm vụ nữa tới quà nửa chặng!');
-    expect(regionGoalLine(forest(5))).toEqual({ vi: 'Quà nửa chặng đã sẵn sàng, mở ngay nào!', en: 'Halfway gift is ready, open it now!' });
+    expect(regionGoalLine(forest(5))).toEqual({ vi: 'Quà nửa chặng đã sẵn sàng, mở ngay nào!', en: 'Halfway gift is ready, open it now!', zh: '半程礼物准备好了，快打开吧！' });
     expect(regionGoalLine(forest(7, ['half']))?.vi).toBe('Còn 2 nhiệm vụ nữa tới rương!');
     expect(regionGoalLine(forest(9, ['half', 'full'], 6))?.vi).toBe('Còn 3 nhiệm vụ chưa đủ 3 sao để nhận quà ba sao!');
     expect(regionGoalLine(forest(9, ['half', 'full', 'stars'], 9))).toBeNull();

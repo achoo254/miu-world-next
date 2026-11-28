@@ -16,7 +16,7 @@ import { ApiError, errorMessage } from '../api-client';
 import { useAccount } from '../account/account-context';
 import { Hud } from '../hud/hud';
 import { Bi, T, useLangMode, useT } from '../i18n/use-t';
-import { joinBoth, mapBoth, same } from '../i18n/i18n';
+import { joinBoth, mapBoth, same, twin } from '../i18n/i18n';
 import { titleOf } from '../quest/content-text';
 import { nameOf, nameText } from '../i18n/names';
 import type { QuestSummary, StepCompleteResponse } from '@miu/schema/game';
@@ -122,7 +122,7 @@ export function mapBossesOf(quests: readonly QuestSummary[], region: string, fil
       {
         questId: quest.id,
         targetId: boss.target,
-        name: { vi: fill(boss.bossName), en: fill(boss.en?.bossName ?? boss.bossName) },
+        name: twin(fill(boss.bossName), fill(boss.en?.bossName ?? boss.bossName)),
         title: mapBoth(titleOf(quest), fill),
         big: category === 'main',
       },

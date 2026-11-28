@@ -2,6 +2,7 @@
 // where the next chapter is offered, like the minigames' givers. Read once per map; none when it cannot be read.
 import { NpcListResponse } from '@miu/schema/npc';
 import { ApiError, api } from '../../ui/api-client';
+import { twin } from '../../ui/i18n/i18n';
 import type { StoryTeller } from './minimap-model';
 
 /** The tellers in a list of characters, each with its next chapter (none once every chapter is finished). */
@@ -10,7 +11,7 @@ export function storyTellersOf(list: NpcListResponse, fill: (text: string) => st
     if (npc.arcs.length === 0) return [];
     const arc = npc.offer ? npc.arcs.find((a) => a.id === npc.offer?.arcId) : undefined;
     const chapter = arc && npc.offer ? arc.chapters[npc.offer.part - 1] : undefined;
-    return [{ targetIds: npc.targets, next: chapter ? { vi: fill(chapter.title.vi), en: fill(chapter.title.en) } : null }];
+    return [{ targetIds: npc.targets, next: chapter ? twin(fill(chapter.title.vi), fill(chapter.title.en)) : null }];
   });
 }
 

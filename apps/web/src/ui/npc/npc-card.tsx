@@ -10,7 +10,7 @@ import { ListenButton } from '../dialogue/listen-button';
 import { NpcPortrait } from '../dialogue/npc-portrait';
 import { ITEMS, itemIcon } from '../backpack/items';
 import { errorMessage } from '../api-client';
-import { linesOf, mapBoth, pairOf, type Bilingual } from '../i18n/i18n';
+import { contentText, linesOf, mapBoth, pairOf, type Bilingual } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
 import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
@@ -58,7 +58,11 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
   // Its name in both languages: the card's title, and `{who}` in its lines and in the gift hint.
   const who = mapBoth(nameOf(npc.name), fill);
   const picked = said ?? (line ? twin(line.vi, line.en) : hello);
-  const shown = { vi: fill(picked.vi.replaceAll('{who}', who.vi)), en: fill(picked.en.replaceAll('{who}', who.en)) };
+  const shown: Bilingual = {
+    vi: fill(picked.vi.replaceAll('{who}', who.vi)),
+    en: fill(picked.en.replaceAll('{who}', who.en)),
+    zh: fill(picked.zh.replaceAll('{who}', who.zh)),
+  };
   const offer = npc.offer;
   const arc = offer ? npc.arcs.find((a) => a.id === offer.arcId) : undefined;
   const chapter = arc && offer ? arc.chapters[offer.part - 1] : undefined;
@@ -87,7 +91,7 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
           <div className="parchment npc-bubble">
             <p className="npc-card-head">
               <span className="npc-card-role" data-id="npc-card-role">
-                <Bi {...mapBoth(npc.role, fill)} />
+                <Bi {...mapBoth(contentText(npc.role), fill)} />
               </span>
               <Hearts hearts={friendship.hearts} dataId="npc-card-hearts" />
               {raised ? (
@@ -97,7 +101,7 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
               ) : null}
             </p>
             <p className="dialogue-line" aria-live="polite" data-id="npc-card-line">
-              <Bi vi={shown.vi} en={shown.en} />
+              <Bi {...shown} />
             </p>
           </div>
         </div>
@@ -136,7 +140,7 @@ export function NpcCard({ npc, targetId, line, raised, owned, hasGames, fill, on
               <button type="button" className="dialogue-choice dialogue-choice--main" data-id="npc-card-story" onClick={() => onStory(offer.questId)}>
                 <Icon name="books" size={32} />
                 <span>
-                  <T k="npc.storyOffer" params={{ part: offer.part }} /> <Bi {...mapBoth(chapter.title, fill)} />
+                  <T k="npc.storyOffer" params={{ part: offer.part }} /> <Bi {...mapBoth(contentText(chapter.title), fill)} />
                 </span>
               </button>
             ) : null}

@@ -3,6 +3,7 @@
 // whether it was earned is the server's (`eventRewards` of the response).
 import type { EventRewardGrant } from '@miu/schema/live-event';
 import { ITEMS, itemIcon } from '../backpack/items';
+import { contentText } from '../i18n/i18n';
 import { Bi, T } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { rewardItemArt } from '../region/region-rewards';
@@ -31,7 +32,7 @@ export function EventRewardCard({ grants, name }: { grants: readonly EventReward
             <EventRewardPicture kind={g.kind} item={g.item} />
             <span className="event-reward-text">
               <strong>
-                <Bi {...g.name} />
+                <Bi {...contentText(g.name)} />
               </strong>
               {g.commemorative ? (
                 <span className="badge">

@@ -35,6 +35,8 @@ describe('speech', () => {
     expect(bestVoice([british, basic], 'en')).toBe(basic);
     expect(bestVoice([british, basic, rich], 'en')).toBe(rich);
     expect(bestVoice([british], 'en')).toBe(british);
+    const mandarin = { lang: 'zh-CN', localService: true, name: 'Tingting' };
+    expect(bestVoice([basic, mandarin], 'zh-CN')).toBe(mandarin);
   });
 
   it('reads the line shown: Vietnamese, English, or both in turn; untranslated text in Vietnamese', () => {
@@ -45,7 +47,11 @@ describe('speech', () => {
       { text: 'Xin chào', lang: 'vi' },
       { text: 'Hello', lang: 'en' },
     ]);
+    expect(linesToRead({ ...line, zh: '你好' }, 'zh-CN')).toEqual([{ text: '你好', lang: 'zh-CN' }]);
+    // Content with no Chinese of its own shows, and reads, its English in 中文.
+    expect(linesToRead({ vi: 'Xin chào', en: 'Hello', zh: 'Hello' }, 'zh-CN')).toEqual([{ text: 'Hello', lang: 'en' }]);
     expect(linesToRead({ vi: 'Bài đọc' }, 'en')).toEqual([{ text: 'Bài đọc', lang: 'vi' }]);
+    expect(linesToRead({ vi: 'Bài đọc', en: 'Bài đọc', zh: 'Bài đọc' }, 'zh-CN')).toEqual([{ text: 'Bài đọc', lang: 'vi' }]);
     expect(linesToRead({ vi: 'Bài đọc', en: 'Bài đọc' }, 'both')).toEqual([{ text: 'Bài đọc', lang: 'vi' }]);
   });
 });

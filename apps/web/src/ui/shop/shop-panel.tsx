@@ -181,7 +181,7 @@ function ItemDetail({ item, items, state, character, busy, notice, fill, onBuy, 
             </span>
           ) : slot && SLOT_LABELS.has(slot) ? (
             <span className="scene-chip">
-              <Bi {...(SLOT_LABELS.get(slot)?.() ?? { vi: slot, en: slot })} />
+              <Bi {...(SLOT_LABELS.get(slot)?.() ?? { vi: slot, en: slot, zh: slot })} />
             </span>
           ) : null}
           {item.effect ? (

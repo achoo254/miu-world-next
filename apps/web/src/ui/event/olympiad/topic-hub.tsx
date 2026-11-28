@@ -2,6 +2,7 @@
 // (her best practice run of each, from the server) and "Luyện tập", and the mock exam card with its rules and her best
 // score. The mock's brand label is never shown: the practice is called "Thử thách Olympic Toán".
 import type { OlympiadStatusResponse, OlympiadTopicId } from '@miu/schema/olympiad';
+import { contentText } from '../../i18n/i18n';
 import { Bi, T, useT } from '../../i18n/use-t';
 import { Icon } from '../../kit/art';
 import { buttonClass } from '../../kit/button';
@@ -31,10 +32,10 @@ export function TopicHub({ status, onPractice, onExam }: { status: OlympiadStatu
           <li key={topic.id} className="olympiad-topic parchment" data-id={`olympiad-topic-${topic.id}`}>
             <Icon name={isUiIcon(topic.icon) ? topic.icon : 'books'} size={48} />
             <h3>
-              <Bi {...topic.name} />
+              <Bi {...contentText(topic.name)} />
             </h3>
             <p className="hint">
-              <Bi {...topic.subtopics} />
+              <Bi {...contentText(topic.subtopics)} />
             </p>
             <Stars stars={topic.stars} />
             <button type="button" className={buttonClass('primary', { block: true })} data-id={`olympiad-practice-${topic.id}`} onClick={() => onPractice(topic.id)}>

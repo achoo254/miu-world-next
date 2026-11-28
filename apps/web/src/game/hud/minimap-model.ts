@@ -203,7 +203,8 @@ export function sideGiverMarkers(interactables: readonly Interactable[], givers:
 
 /** "Trò chơi: Bắn cung · Ghép hình", each game's title in both languages. */
 function gamesLine(games: readonly Bilingual[]): MarkerText {
-  const joined: Bilingual = { vi: games.map((g) => g.vi).join(' · '), en: games.map((g) => g.en).join(' · ') };
+  const side = (lang: keyof Bilingual): string => games.map((g) => g[lang]).join(' · ');
+  const joined: Bilingual = { vi: side('vi'), en: side('en'), zh: side('zh') };
   return { key: 'map.games', params: { games: joined } };
 }
 

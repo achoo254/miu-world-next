@@ -8,7 +8,7 @@
 // (React screens re-render through `useLangMode`; game labels read the name each time they are shown, and the
 // name boards painted on the map wait for the glossary when the map loads).
 // React-free, so the game runtime uses it too: `nameText(vi)` gives the name as one string in the current mode.
-import { getLangMode, inline, onLangModeChange, type Bilingual } from './i18n';
+import { getLangMode, inline, onLangModeChange, twin, type Bilingual } from './i18n';
 
 /** A glossary key with `{placeholders}` ("Nhà của {name}"), matched against names already filled in. */
 interface TemplatedName {
@@ -72,7 +72,7 @@ export function loadNames(): Promise<void> {
   return loading;
 }
 
-/** Loads the glossary when the mode shows English (English or Song ngữ). */
+/** Loads the glossary when the mode shows English (English, Song ngữ, and 中文, whose names read the English). */
 function followMode(): void {
   if (getLangMode() !== 'vi') void loadNames();
 }
@@ -108,13 +108,14 @@ function lookup(vi: string): string | null {
 }
 
 /**
- * A name in both languages: its own English first (`ownEnglish`), then the glossary, else the Vietnamese on both
- * sides (shown once). Never use it for a player's own name, another player's name or text a player typed.
+ * A name in every language: its own English first (`ownEnglish`), then the glossary, else the Vietnamese on every
+ * side (shown once). The glossary has English only, so 中文 reads the English name. Never use it for a player's own
+ * name, another player's name or text a player typed.
  */
 export function nameOf(vi: string, ownEnglish?: string | null): Bilingual {
-  if (ownEnglish && ownEnglish.trim() !== '') return { vi, en: ownEnglish };
+  if (ownEnglish && ownEnglish.trim() !== '') return twin(vi, ownEnglish);
   ensureFollowing();
-  return { vi, en: lookup(vi.trim()) ?? vi };
+  return twin(vi, lookup(vi.trim()));
 }
 
 /** A name as one string in the current mode (game runtime, aria labels). */

@@ -432,7 +432,7 @@ export function MinigameOverlay({ game, goal, params = {}, region, playerName, s
               </small>
             </p>
             <p className="minigame-line">
-              <Bi vi={result.line.vi} en={result.line.en} />
+              <Bi {...result.line} />
             </p>
             {result.won ? <Payout payout={payout} fill={fill} onRetry={() => void send(result.score)} /> : null}
             {region ? <RegionMinigameProgress region={region} /> : null}

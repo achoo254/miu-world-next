@@ -195,10 +195,10 @@ describe('invites and the leader going through a gate', () => {
 describe('toasts', () => {
   it('words every notice, with the player named or "bạn ấy"', () => {
     expect(toastText({ kind: 'notice', code: 'blocked', name: 'Bông', seq: 1 }).vi).toBe('Đã chặn Bông.');
-    expect(toastText({ kind: 'notice', code: 'not-here', name: null, seq: 1 })).toEqual({ vi: 'Không còn ở gần bạn ấy nữa.', en: 'Not near them any more.' });
+    expect(toastText({ kind: 'notice', code: 'not-here', name: null, seq: 1 })).toEqual({ vi: 'Không còn ở gần bạn ấy nữa.', en: 'Not near them any more.', zh: '已经不在对方附近了。' });
     expect(toastText({ kind: 'waved', name: 'Bông', seq: 1 }).en).toBe('Bông waves at you');
-    expect(toastText({ kind: 'said', name: 'Bông', text: 'Xin chào bạn!', seq: 1 })).toEqual({ vi: 'Bông: Xin chào bạn!', en: 'Bông: Hello there!' });
-    expect(toastText({ kind: 'bot-said', name: 'Bé Bông', line: { vi: 'Chào bạn!', en: 'Hi there!' }, seq: 1 })).toEqual({ vi: '🤖 Bé Bông: Chào bạn!', en: '🤖 Bé Bông: Hi there!' });
+    expect(toastText({ kind: 'said', name: 'Bông', text: 'Xin chào bạn!', seq: 1 })).toEqual({ vi: 'Bông: Xin chào bạn!', en: 'Bông: Hello there!', zh: 'Bông：你好呀！' });
+    expect(toastText({ kind: 'bot-said', name: 'Bé Bông', line: { vi: 'Chào bạn!', en: 'Hi there!', zh: '你好！' }, seq: 1 })).toEqual({ vi: '🤖 Bé Bông: Chào bạn!', en: '🤖 Bé Bông: Hi there!', zh: '🤖 Bé Bông：你好！' });
   });
 });
 

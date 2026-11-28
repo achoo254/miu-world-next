@@ -19,7 +19,7 @@ import { appHidden, onAppVisibilityChange } from '../../platform/app-lifecycle';
 import type { SocialStore, VoiceIn, VoiceOut } from '../../game-bridge/social-store';
 import { api } from '../api-client';
 import { speakVoiceLine } from '../dialogue/speech';
-import { getLangMode, linesOf, type Lang } from '../i18n/i18n';
+import { getLangMode, htmlLangOf, linesOf, sideOf, type Lang } from '../i18n/i18n';
 import { duckMusic } from '../sound/music-player';
 import { onSoundSettingChange, readSoundOn } from '../system/sound-setting';
 import { PeerMesh, type PeerState, type PeerStats } from './peer-mesh';
@@ -679,10 +679,10 @@ export class VoiceManager {
   private botSays(id: string, key: VoiceBotLineKey, variant: number): void {
     const bot = this.snapshot.channel?.members.find((m) => m.id === id && m.isBot);
     if (!bot || !this.snapshot.joined) return;
-    const lang: Lang = getLangMode() === 'en' ? 'en' : 'vi';
+    const lang: Lang = htmlLangOf(getLangMode());
     const pair = linesOf(`voice.botLines.${key}`)[variant];
     if (!pair) return;
-    const text = pair[lang];
+    const text = sideOf(pair, lang);
     this.lineSeq += 1;
     this.social.update({ voiceLine: { id, text, seq: this.lineSeq } });
     const voice: BotVoice = bot.voice ?? { pitch: 1, rate: 1 };

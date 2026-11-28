@@ -7,6 +7,7 @@ import type { QuestProgressDto } from '@miu/schema/game';
 import type { PartyQuestView } from '@miu/schema/party-quest';
 import type { ClientWsMessage, MpNotice, PartyView, ReportReason, SafeCannedChat, ServerWsMessage } from '@miu/schema/multiplayer';
 import type { VoiceCallEnd } from '@miu/schema/voice';
+import type { Bilingual } from '../ui/i18n/i18n';
 
 /** Another player as the menus show her. */
 export interface OnlinePlayer {
@@ -22,7 +23,7 @@ export type OnlineToast =
   | { kind: 'waved'; name: string; seq: number }
   | { kind: 'said'; name: string; text: SafeCannedChat; seq: number }
   /** A companion bot's own line said to her (both languages, from the locale files). */
-  | { kind: 'bot-said'; name: string; line: { vi: string; en: string }; seq: number }
+  | { kind: 'bot-said'; name: string; line: Bilingual; seq: number }
   | { kind: 'party-chat'; name: string; text: SafeCannedChat; seq: number }
   /** A friend request of hers was answered (or both asked: friends at once). */
   | { kind: 'friend'; added: boolean; name: string; isBot: boolean; seq: number }

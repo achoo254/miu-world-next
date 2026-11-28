@@ -58,6 +58,21 @@ describe('signing in through the account service (web)', () => {
     expect(q.has('max_age')).toBe(false);
   });
 
+  it('asks the IdP for the page language, Simplified Chinese included, from ?lang= or the shared cookie', async () => {
+    const uiLocales = async (query?: string, cookie?: string): Promise<string | null> => {
+      const request = app.agent().get(`/api/auth/start${query ? `?${query}` : ''}`);
+      const res = await (cookie ? request.set('Cookie', cookie) : request).expect(303);
+      return new URL(res.headers.location ?? '').searchParams.get('ui_locales');
+    };
+    expect(await uiLocales('lang=zh-CN')).toBe('zh-CN');
+    expect(await uiLocales('lang=en')).toBe('en');
+    expect(await uiLocales(undefined, 'hd_lang=zh-CN')).toBe('zh-CN');
+    expect(await uiLocales('lang=vi', 'hd_lang=zh-CN')).toBe('vi');
+    expect(await uiLocales('lang=fr')).toBeNull();
+    expect(await uiLocales(undefined, 'hd_lang=fr')).toBeNull();
+    expect(await uiLocales()).toBeNull();
+  });
+
   it('asks the IdP for a fresh login on a re-authentication', async () => {
     const reauth = (await start(app.agent(), 'intent=reauth')).searchParams;
     expect([reauth.get('prompt'), reauth.get('max_age')]).toEqual(['login', '0']);

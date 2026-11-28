@@ -49,7 +49,7 @@ function SheetHeader({ header }: { header: TimetableHeader }) {
 function PeriodStepper({ session, count, onCount }: { session: Session; count: number; onCount: (n: number) => void }) {
   const { t } = useT();
   // "Buổi sáng" / "Morning".
-  const name = pairOf('timetable.session', { session: { vi: sessionLower(session).vi, en: sessionLabel(session).en } });
+  const name = pairOf('timetable.session', { session: { ...sessionLabel(session), vi: sessionLower(session).vi } });
   const lower = mapBoth(name, (s) => s.toLocaleLowerCase('vi'));
   return (
     <div className="timetable-stepper" role="group" aria-label={t('timetable.periodsOf', { session: lower })}>

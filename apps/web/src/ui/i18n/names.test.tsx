@@ -37,19 +37,19 @@ afterEach(() => {
 
 describe('nameOf', () => {
   it('keeps the Vietnamese on both sides before the glossary arrives', () => {
-    expect(nameOf('Koala Ghép Tranh')).toEqual({ vi: 'Koala Ghép Tranh', en: 'Koala Ghép Tranh' });
+    expect(nameOf('Koala Ghép Tranh')).toEqual({ vi: 'Koala Ghép Tranh', en: 'Koala Ghép Tranh', zh: 'Koala Ghép Tranh' });
   });
 
   it('uses the glossary once loaded, and the name’s own English first', async () => {
     await loadNames();
-    expect(nameOf('Koala Ghép Tranh')).toEqual({ vi: 'Koala Ghép Tranh', en: 'Puzzle Koala' });
-    expect(nameOf('Mũ len', 'Knitted hat')).toEqual({ vi: 'Mũ len', en: 'Knitted hat' });
-    expect(nameOf('Mũ len', '')).toEqual({ vi: 'Mũ len', en: 'Wool hat' });
+    expect(nameOf('Koala Ghép Tranh')).toEqual({ vi: 'Koala Ghép Tranh', en: 'Puzzle Koala', zh: 'Puzzle Koala' });
+    expect(nameOf('Mũ len', 'Knitted hat')).toEqual({ vi: 'Mũ len', en: 'Knitted hat', zh: 'Knitted hat' });
+    expect(nameOf('Mũ len', '')).toEqual({ vi: 'Mũ len', en: 'Wool hat', zh: 'Wool hat' });
   });
 
   it('returns an unknown name unchanged', async () => {
     await loadNames();
-    expect(nameOf('Tên chưa dịch')).toEqual({ vi: 'Tên chưa dịch', en: 'Tên chưa dịch' });
+    expect(nameOf('Tên chưa dịch')).toEqual({ vi: 'Tên chưa dịch', en: 'Tên chưa dịch', zh: 'Tên chưa dịch' });
   });
 
   it('matches names whose placeholders are already filled in, leaving the filled value as it is', async () => {

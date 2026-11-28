@@ -7,7 +7,7 @@
 import { useEffect, useRef, type MouseEvent, type ReactNode } from 'react';
 import { ListenButton } from '../dialogue/listen-button';
 import { NpcPortrait } from '../dialogue/npc-portrait';
-import type { Bilingual } from '../i18n/i18n';
+import { mapBoth, type Bilingual } from '../i18n/i18n';
 import { Bi, Name, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -85,7 +85,7 @@ export function ChallengeFrame({
   };
   const { index, total } = context.position;
   return (
-    <Modal title={<Bi vi={context.title.vi} en={context.title.en} />} onClose={context.onClose} dataId="challenge" size="wide" variant="scene" className="scene-modal--pinned">
+    <Modal title={<Bi {...context.title} />} onClose={context.onClose} dataId="challenge" size="wide" variant="scene" className="scene-modal--pinned">
       <div className="scene-chips">
         <div className="step-trail-wrap">
           <span className="visually-hidden" data-id="challenge-position">
@@ -116,7 +116,7 @@ export function ChallengeFrame({
               <Name vi={presenter.name} fill={context.fill} />
             </span>
           ) : null}
-          <Bi vi={keepMathTogether(prompt.vi)} en={keepMathTogether(prompt.en)} />
+          <Bi {...mapBoth(prompt, keepMathTogether)} />
           {/* A lesson's question is the book's Vietnamese: without an English twin it is read in Vietnamese in every mode. */}
           <ListenButton text={prompt.en === prompt.vi ? { vi: prompt.vi } : prompt} dataId="challenge-listen" />
         </p>
@@ -126,7 +126,7 @@ export function ChallengeFrame({
       </div>
       {context.tryAgain ? (
         <p className="challenge-try-again" role="status" data-id="challenge-try-again">
-          <Bi vi={context.tryAgain.vi} en={context.tryAgain.en} />
+          <Bi {...context.tryAgain} />
         </p>
       ) : null}
       <div className="parchment scene-bar">

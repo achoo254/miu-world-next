@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router';
 import { fillPlayerName } from '@miu/quest/player-name';
 import type { EventRewardDto, LiveEventDto } from '@miu/schema/live-event';
 import { errorMessage } from '../api-client';
-import { mapBoth, pairOf } from '../i18n/i18n';
+import { contentText, mapBoth, pairOf } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -28,7 +28,7 @@ function RewardRow({ reward, event }: { reward: EventRewardDto; event: LiveEvent
       <EventRewardPicture kind={reward.kind} item={reward.item} size={48} />
       <span className="event-reward-text">
         <strong>
-          <Bi {...reward.name} />
+          <Bi {...contentText(reward.name)} />
         </strong>
         {reward.commemorative ? (
           <span className="badge">
@@ -74,7 +74,7 @@ export function EventPanel({ eventId, name, onClose, onPractice }: { eventId: st
     navigate(`/play?region=${encodeURIComponent(event.region)}&quest=${encodeURIComponent(questId)}`);
   };
   return (
-    <Modal title={event ? <Bi {...event.name} /> : <T k="event.rail" />} onClose={onClose} dataId="event-panel" variant="scene" size="wide" className="scene-sheet">
+    <Modal title={event ? <Bi {...contentText(event.name)} /> : <T k="event.rail" />} onClose={onClose} dataId="event-panel" variant="scene" size="wide" className="scene-sheet">
       <button type="button" className="scene-close" data-id="event-panel-close" aria-label={t('common.close')} onClick={onClose}>
         ✕
       </button>
@@ -104,11 +104,11 @@ export function EventPanel({ eventId, name, onClose, onPractice }: { eventId: st
             </span>
             <p className="npc-bubble parchment">
               {host ? <span className="npc-name">{fill(host.name)}</span> : null}
-              <Bi {...mapBoth(event.greeting, fill)} />
+              <Bi {...mapBoth(contentText(event.greeting), fill)} />
             </p>
           </div>
           <p className="event-description">
-            <Bi {...mapBoth(event.description, fill)} />
+            <Bi {...mapBoth(contentText(event.description), fill)} />
           </p>
           {!open ? (
             <p className="event-not-open parchment" data-id="event-not-open">
@@ -129,10 +129,10 @@ export function EventPanel({ eventId, name, onClose, onPractice }: { eventId: st
                     <Icon name={q.done ? 'checkMark' : 'scroll'} size={28} />
                     <span className="event-quest-text">
                       <strong>
-                        <Bi {...q.title} />
+                        <Bi {...contentText(q.title)} />
                       </strong>
                       <span className="hint">
-                        <T k="event.questAt" params={{ keeper: q.keeper }} />
+                        <T k="event.questAt" params={{ keeper: contentText(q.keeper) }} />
                       </span>
                     </span>
                     {open ? (

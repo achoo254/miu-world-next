@@ -65,7 +65,7 @@ export function DialogueScreen({
         <div className="npc-say">
           <NpcPortrait name={shown.speaker} target={step.target} size={96} reaction="speak" reactionKey={`${index}-${reply ? 'reply' : 'line'}`} />
           <p className="parchment npc-bubble dialogue-line" aria-live="polite" data-id="dialogue-line">
-            <Bi vi={shown.text.vi} en={shown.text.en} />
+            <Bi {...shown.text} />
           </p>
         </div>
         {showQuest ? (

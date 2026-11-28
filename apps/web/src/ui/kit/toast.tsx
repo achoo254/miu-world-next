@@ -26,7 +26,7 @@ export function Toast<T extends string | Bilingual>({ message, onDone, ms = 3200
   }, [message, onDone, ms]);
   return (
     <p className={behind ? 'toast toast--behind' : 'toast'} role="status" aria-live="polite" data-id="toast">
-      {typeof message === 'string' ? message : <Bi vi={message.vi} en={message.en} />}
+      {typeof message === 'string' ? message : <Bi {...message} />}
     </p>
   );
 }

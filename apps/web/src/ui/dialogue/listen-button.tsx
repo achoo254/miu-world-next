@@ -15,7 +15,7 @@ export function ListenButton({
   small = true,
 }: {
   /** The line as shown; without `en` (textbook wording) it is read in Vietnamese. */
-  text: Readonly<{ vi: string; en?: string }>;
+  text: Readonly<{ vi: string; en?: string; zh?: string }>;
   dataId: string;
   label?: TextKey;
   small?: boolean;
@@ -23,7 +23,7 @@ export function ListenButton({
   const mode = useLangMode();
   const readable = useReadable();
   const lines = linesToRead(text, mode).filter(readable);
-  const key = `${text.vi}\n${text.en ?? ''}`;
+  const key = `${text.vi}\n${text.en ?? ''}\n${text.zh ?? ''}`;
   useEffect(() => () => stopSpeaking(), [key]);
   if (lines.length === 0) return null;
   return (

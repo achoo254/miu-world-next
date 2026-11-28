@@ -10,7 +10,7 @@ import { Link } from 'react-router';
 import type { ProgressResponse, QuestSummary } from '@miu/schema/game';
 import type { Region } from '@miu/schema/region';
 import type { TextKey } from '../i18n/i18n';
-import { inline, mapBoth } from '../i18n/i18n';
+import { contentText, inline, mapBoth } from '../i18n/i18n';
 import { titleOf, twin } from '../quest/content-text';
 import { Bi, Name, T, useT } from '../i18n/use-t';
 import { nameOf } from '../i18n/names';
@@ -98,7 +98,11 @@ function BoardRow({ summary, region, data, pick }: { summary: QuestSummary; regi
   const shownTitle = summary.quest.status === 'active' ? titleOf(summary.quest) : twin(summary.quest.title, null);
   // The region's name is left off each side's title in that side's language.
   const regionName = mapBoth(nameOf(region.name), (line) => say(line, data.character));
-  const titlePair = { vi: boardTitle(say(shownTitle.vi, data.character), regionName.vi), en: boardTitle(say(shownTitle.en, data.character), regionName.en) };
+  const titlePair = {
+    vi: boardTitle(say(shownTitle.vi, data.character), regionName.vi),
+    en: boardTitle(say(shownTitle.en, data.character), regionName.en),
+    zh: boardTitle(say(shownTitle.zh, data.character), regionName.zh),
+  };
   const title = inline(titlePair, mode);
   const stub = summary.quest.status === 'stub';
   const playable = isPlayable(summary);
@@ -114,7 +118,7 @@ function BoardRow({ summary, region, data, pick }: { summary: QuestSummary; regi
       <div className="board-row-text">
         {topic ? <TopicLabel topic={topic} dataId={`region-quest-topic-${summary.quest.id}`} /> : null}
         <strong className="board-row-title">
-          <Bi vi={titlePair.vi} en={titlePair.en} />
+          <Bi {...titlePair} />
         </strong>
         {stub ? (
           <span className="badge">
@@ -182,7 +186,7 @@ export function QuestBoard({ region, quests, data, pick }: { region: Region; que
       {boardStories(quests, region.id).map((story) => (
         <section key={story.arc} className="board-chapter" aria-label={t('region.story', { name: mapBoth(nameOf(story.npcName), (line) => say(line, data.character)) })} data-id={`region-story-${story.arc}`}>
           <h3 className="board-chapter-title">
-            <T k="region.story" params={{ name: mapBoth(nameOf(story.npcName), (line) => say(line, data.character)) }} /> · <Bi {...mapBoth(story.arcTitle, (line) => say(line, data.character))} />
+            <T k="region.story" params={{ name: mapBoth(nameOf(story.npcName), (line) => say(line, data.character)) }} /> · <Bi {...mapBoth(contentText(story.arcTitle), (line) => say(line, data.character))} />
           </h3>
           <ul className="board-list">
             {story.chapters.map((q) => (

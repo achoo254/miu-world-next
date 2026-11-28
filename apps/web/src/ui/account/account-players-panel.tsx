@@ -8,7 +8,7 @@ import { useMemo, useRef, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import { PlayerOwnerSettings, type PlayerDto, type PlayerOwnerSettingsPatch } from '@miu/schema/account';
 import { ApiError, api } from '../api-client';
-import type { TextKey } from '../i18n/i18n';
+import { same, type TextKey } from '../i18n/i18n';
 import { T, useT } from '../i18n/use-t';
 import { Icon, MiuArt } from '../kit/art';
 import { buttonClass } from '../kit/button';
@@ -133,7 +133,7 @@ function PlayerCareCard({ player, index }: { player: PlayerDto; index: number })
         </button>
       </div>
       {open ? (
-        <Tabs label={t('playerCare.tabsLabel', { who: { vi: player.displayName, en: player.displayName } })} items={tabs} active={tab} onChange={setTab} dataId={`player-care-tabs-${player.id}`}>
+        <Tabs label={t('playerCare.tabsLabel', { who: same(player.displayName) })} items={tabs} active={tab} onChange={setTab} dataId={`player-care-tabs-${player.id}`}>
           {tab === 'progress' ? <PlayerProgress playerId={player.id} /> : null}
           {tab === 'online' ? <PlayerOnlineSwitches player={player} /> : null}
           {tab === 'friends' ? (

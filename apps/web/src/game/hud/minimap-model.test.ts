@@ -98,7 +98,7 @@ describe('minimap markers', () => {
 
   it('marks a storyteller as one, with its next chapter and its games, in place of its minigame marker', () => {
     const bird: Target = { id: 'hoa-mi', kind: 'npc', name: 'Họa Mi', label: 'Nói chuyện', position: [3, 13, 4], yaw: 0, radius: 2 };
-    const markers = sideGiverMarkers([bird], [{ targetId: 'hoa-mi', games: [{ vi: 'Hợp xướng', en: 'Choir' }] }], [{ targetIds: ['hoa-mi'], next: { vi: 'Chương 2: Tiếng vọng', en: 'Chapter 2: Echoes' } }]);
+    const markers = sideGiverMarkers([bird], [{ targetId: 'hoa-mi', games: [{ vi: 'Hợp xướng', en: 'Choir', zh: 'Choir' }] }], [{ targetIds: ['hoa-mi'], next: { vi: 'Chương 2: Tiếng vọng', en: 'Chapter 2: Echoes', zh: 'Chapter 2: Echoes' } }]);
     expect(markers.map(shownVi)).toEqual([{ id: 'hoa-mi', kind: 'story', x: 3, z: 4, colour: MARKER_COLOURS.story, label: 'Họa Mi', detail: 'Chuyện: Chương 2: Tiếng vọng · Trò chơi: Hợp xướng', goal: { targetId: 'hoa-mi' } }]);
   });
 
@@ -121,11 +121,11 @@ describe('minimap markers', () => {
 describe('minimap markers in English', () => {
   it('writes the UI words in English and keeps each name’s own twin', () => {
     const bird: Target = { id: 'hoa-mi', kind: 'npc', name: 'Họa Mi', label: 'Nói chuyện', position: [3, 13, 4], yaw: 0, radius: 2 };
-    const [story] = sideGiverMarkers([bird], [{ targetId: 'hoa-mi', games: [{ vi: 'Hợp xướng', en: 'Choir' }] }], [{ targetIds: ['hoa-mi'], next: { vi: 'Chương 2', en: 'Chapter 2' } }]);
+    const [story] = sideGiverMarkers([bird], [{ targetId: 'hoa-mi', games: [{ vi: 'Hợp xướng', en: 'Choir', zh: 'Choir' }] }], [{ targetIds: ['hoa-mi'], next: { vi: 'Chương 2', en: 'Chapter 2', zh: 'Chapter 2' } }]);
     expect(story && markerDetailLine(story)?.en).toBe('Story: Chapter 2 · Games: Choir');
     const [station] = stationMarkers([stop('ben-1', 'Xe buýt tới Chợ rau hoa', 210, 250)]);
-    expect(station && markerLine(station.label)).toEqual({ vi: 'Bến xe buýt', en: 'Bến xe buýt' });
-    const [boss] = bossMarkers([{ id: 'than-rung', kind: 'npc', name: 'x', label: 'x', position: [1, 13, 1], yaw: 0, radius: 3 }], [{ questId: 'q', targetId: 'than-rung', name: { vi: 'Thần Rừng', en: 'Forest Spirit' }, title: { vi: 'Trùm vui', en: 'Fun boss' }, big: true }]);
+    expect(station && markerLine(station.label)).toEqual({ vi: 'Bến xe buýt', en: 'Bến xe buýt', zh: 'Bến xe buýt' });
+    const [boss] = bossMarkers([{ id: 'than-rung', kind: 'npc', name: 'x', label: 'x', position: [1, 13, 1], yaw: 0, radius: 3 }], [{ questId: 'q', targetId: 'than-rung', name: { vi: 'Thần Rừng', en: 'Forest Spirit', zh: 'Forest Spirit' }, title: { vi: 'Trùm vui', en: 'Fun boss', zh: 'Fun boss' }, big: true }]);
     expect(boss && markerLine(boss.label).en).toBe('Forest Spirit');
     expect(boss && markerDetailLine(boss)?.en).toBe('Big boss · Fun boss');
   });

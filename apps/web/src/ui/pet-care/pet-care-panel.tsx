@@ -11,7 +11,7 @@ import petNames from '../../../../../content/names/pet-names.json';
 import { useGameStore } from '../../game-bridge/use-game-state';
 import { PET_GEAR, gearSlotOf } from '../../game/pet/pet-gear-catalog';
 import { errorMessage } from '../api-client';
-import { inline, linesOf, pairOf, same, type Bilingual, type LinesKey, type TextKey } from '../i18n/i18n';
+import { inline, linesOf, pairOf, same, twin, type Bilingual, type LinesKey, type TextKey } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
 import { nameOf } from '../i18n/names';
 import { Icon } from '../kit/art';
@@ -107,7 +107,7 @@ export function PetCarePanel({ onClose, onPetGear, onRename }: PetCarePanelProps
   const pet = PETS.find((p) => p.id === petId);
   // The name she picked stays as it is; its kind's name ("Cún con") reads in the display language.
   const name: Bilingual = bond?.name ? same(bond.name) : nameOf(pet?.name ?? '');
-  const fill = (text: Bilingual): Bilingual => ({ vi: text.vi.replaceAll('{pet}', name.vi), en: text.en.replaceAll('{pet}', name.en) });
+  const fill = (text: Bilingual): Bilingual => ({ vi: text.vi.replaceAll('{pet}', name.vi), en: text.en.replaceAll('{pet}', name.en), zh: text.zh.replaceAll('{pet}', name.zh) });
 
   /** A fresh line from the pet about how it feels (never the same twice in a row). */
   const speak = useCallback((next: PetBond): void => {
@@ -561,7 +561,7 @@ function GearTab({ bond, owned, onToggle }: { bond: PetBond; owned: string[] | n
                 <button key={id} type="button" className={`pet-care-gear${on ? ' pet-care-gear--on' : ''}`} aria-pressed={on} data-id={`pet-gear-${id}`} onClick={() => onToggle(id)}>
                   <img src={assetUrl(iconPath(item.icon))} alt="" width={40} height={40} draggable={false} />
                   <span>
-                    <Bi vi={item.name} en={item.en.name} />
+                    <Bi {...twin(item.name, item.en.name)} />
                   </span>
                   <small>
                     <T k={on ? 'petCare.gearOff' : 'petCare.gearWear'} />

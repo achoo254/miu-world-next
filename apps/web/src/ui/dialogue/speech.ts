@@ -1,11 +1,11 @@
-// Read-aloud in Vietnamese (vi-VN) or English (en-US). A Vietnamese line with a pre-recorded file
+// Read-aloud in Vietnamese (vi-VN), English (en-US) or Simplified Chinese (zh-CN). A Vietnamese line with a pre-recorded file
 // (recorded-voice.ts, read once on the owner's PC) plays that file; any other line uses the browser's speech
 // synthesis, and only a voice that runs on the device: "remote" voices (localService = false, e.g. some Chrome/Edge
 // voices) send the text to the vendor's servers, which Master Plan §9 rules out. Neither a file nor a local voice →
 // the line is not read (the "Nghe" button hides when nothing is). The speed follows the voice setting, the sound
 // switch silences it, and a screen that closes stops it (listen-button.tsx, app-shell.tsx).
 import { useEffect, useState } from 'react';
-import type { Lang, LangMode } from '../i18n/i18n';
+import { LANGS, type Lang, type LangMode } from '../i18n/i18n';
 import { duckMusic } from '../sound/music-player';
 import { onSoundSettingChange, readSoundOn } from '../system/sound-setting';
 import { VOICE_RATE, readVoiceSpeed } from '../system/voice-setting';
@@ -13,7 +13,7 @@ import { recordedVoiceUrl, useRecordedVoices } from './recorded-voice';
 
 type VoiceLike = Pick<SpeechSynthesisVoice, 'lang' | 'localService' | 'name'> & Partial<Pick<SpeechSynthesisVoice, 'default'>>;
 
-const LOCALE: Readonly<Record<Lang, string>> = { vi: 'vi-VN', en: 'en-US' };
+const LOCALE: Readonly<Record<Lang, string>> = { vi: 'vi-VN', en: 'en-US', 'zh-CN': 'zh-CN' };
 /** Names of the better-sounding voices some systems ship next to the basic ones (macOS, iOS, Windows). */
 const RICH_VOICE = /premium|enhanced|natural|neural/i;
 
@@ -26,7 +26,8 @@ const tag = (voice: VoiceLike): string => voice.lang.toLowerCase().replace('_', 
 export function bestVoice<V extends VoiceLike>(voices: readonly V[], lang: Lang): V | null {
   const exact = LOCALE[lang].toLowerCase();
   const score = (v: V): number => (tag(v) === exact ? 4 : 0) + (RICH_VOICE.test(v.name) ? 2 : 0) + (v.default ? 1 : 0);
-  const candidates = voices.filter((v) => v.localService && tag(v).split('-')[0] === lang);
+  const primary = exact.split('-')[0];
+  const candidates = voices.filter((v) => v.localService && tag(v).split('-')[0] === primary);
   return candidates.reduce<V | null>((best, v) => (best === null || score(v) > score(best) ? v : best), null);
 }
 
@@ -194,11 +195,14 @@ export function speakVoiceLine(text: string, lang: Lang, voice: { pitch: number;
 
 /**
  * What a "Nghe" tap reads in `mode`: the line shown. In Song ngữ the Vietnamese, then the English when there is
- * one; untranslated text (textbook wording: `en` equal to `vi`, or no `en`) is read in Vietnamese in every mode.
+ * one; in 中文 the Chinese, else the English it shows in its place; untranslated text (textbook wording: `en` equal
+ * to `vi`, or no `en`) is read in Vietnamese in every mode.
  */
-export function linesToRead(text: Readonly<{ vi: string; en?: string }>, mode: LangMode): SpokenLine[] {
+export function linesToRead(text: Readonly<{ vi: string; en?: string; zh?: string }>, mode: LangMode): SpokenLine[] {
   const english = text.en !== undefined && text.en !== text.vi ? text.en : null;
   if (mode === 'en' && english !== null) return [{ text: english, lang: 'en' }];
+  if (mode === 'zh-CN' && text.zh !== undefined && text.zh !== text.vi && text.zh !== english) return [{ text: text.zh, lang: 'zh-CN' }];
+  if (mode === 'zh-CN' && english !== null) return [{ text: english, lang: 'en' }];
   if (mode === 'both' && english !== null) return [{ text: text.vi, lang: 'vi' }, { text: english, lang: 'en' }];
   return [{ text: text.vi, lang: 'vi' }];
 }
@@ -221,7 +225,7 @@ export function useSpeakableLangs(): ReadonlySet<Lang> {
     };
   }, []);
   if (!soundOn) return new Set();
-  return new Set((['vi', 'en'] as const).filter((lang) => bestVoice(voices, lang) !== null));
+  return new Set(LANGS.filter((lang) => bestVoice(voices, lang) !== null));
 }
 
 /** Whether a line can be read now: a recorded file of it or an on-device voice of its language, with the sound on. */

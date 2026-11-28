@@ -2,7 +2,7 @@
 // Each language is named in itself, so a child or parent finds theirs whatever is shown now; the choice
 // applies at once and is kept for the selected child on this device.
 import { useState, type ReactNode } from 'react';
-import { setLangMode, type LangMode } from '../i18n/i18n';
+import { htmlLangOf, setLangMode, type LangMode } from '../i18n/i18n';
 import { T, useLangMode } from '../i18n/use-t';
 import { readVoiceSpeed, writeVoiceSpeed, type VoiceSpeed } from './voice-setting';
 import './settings.css';
@@ -10,6 +10,7 @@ import './settings.css';
 const LANG_CHOICES: ReadonlyArray<{ mode: LangMode; label: ReactNode }> = [
   { mode: 'vi', label: 'Tiếng Việt' },
   { mode: 'en', label: 'English' },
+  { mode: 'zh-CN', label: '中文' },
   {
     mode: 'both',
     label: (
@@ -36,7 +37,7 @@ export function LanguageSetting({ dataId }: { dataId: string }) {
             role="radio"
             aria-checked={mode === choice.mode}
             className="setting-choice"
-            lang={choice.mode === 'en' ? 'en' : 'vi'}
+            lang={htmlLangOf(choice.mode)}
             data-id={`${dataId}-${choice.mode}`}
             onClick={() => setLangMode(choice.mode)}
           >

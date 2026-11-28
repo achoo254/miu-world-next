@@ -1,7 +1,7 @@
 // Reviewing a handed-in mock exam (NEW SCREEN, with the result of mock 46): each question with the player's choice and
 // the right one, and all three support layers (Hướng dẫn, Gợi ý, Đáp án kèm giải thích), from the server's grading.
 import type { ExamSubmitResponse } from '@miu/schema/olympiad';
-import { mapBoth } from '../../i18n/i18n';
+import { contentText, mapBoth } from '../../i18n/i18n';
 import { Bi, T } from '../../i18n/use-t';
 import { Icon } from '../../kit/art';
 import { buttonClass } from '../../kit/button';
@@ -10,7 +10,7 @@ import { QuestionVisual } from './question-visual';
 
 export function ExamReview({ result, onlyMisses, fill, onBack }: { result: ExamSubmitResponse; onlyMisses: boolean; fill: (text: string) => string; onBack: () => void }) {
   const items = onlyMisses ? result.review.filter((r) => !r.correct) : result.review;
-  const say = (text: { vi: string; en: string }) => mapBoth(text, fill);
+  const say = (text: { vi: string; en: string }) => mapBoth(contentText(text), fill);
   return (
     <div className="olympiad-review" data-id="olympiad-review">
       <h3 className="ribbon">

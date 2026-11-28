@@ -72,7 +72,7 @@ export function DecisionScreen({
           <div className="npc-bubble">
             <span className="npc-tag">{speakerName}</span>
             <p className="npc-line">
-              <Bi vi={said.vi} en={said.en} />
+              <Bi {...said} />
             </p>
             <ListenButton text={said.en === said.vi ? { vi: said.vi } : said} dataId="decision-listen" />
           </div>

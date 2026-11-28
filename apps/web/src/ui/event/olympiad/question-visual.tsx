@@ -4,7 +4,7 @@
 // the machine's input), as in the mocks. Drawn in DOM and inline SVG with the design tokens: no image files.
 import type { ReactNode } from 'react';
 import type { OlympiadVisual } from '@miu/schema/olympiad';
-import { linesOf, mapBoth, type Bilingual } from '../../i18n/i18n';
+import { contentText, linesOf, mapBoth, type Bilingual } from '../../i18n/i18n';
 import { Bi, T, useT } from '../../i18n/use-t';
 
 /** The `?` of a picture: the player's pick when there is one. */
@@ -148,7 +148,7 @@ function Share({ visual }: { visual: Extract<OlympiadVisual, { type: 'share' }> 
         ) : null}
       </div>
       <figcaption>
-        <T k={label} params={{ total: visual.total, groups: visual.groups ?? groups, per: visual.per ?? per, thing: visual.thing }} />
+        <T k={label} params={{ total: visual.total, groups: visual.groups ?? groups, per: visual.per ?? per, thing: contentText(visual.thing) }} />
       </figcaption>
     </figure>
   );
@@ -174,10 +174,10 @@ export function QuestionVisual({ visual, filled = null, fill }: { visual: Olympi
             return (
               <div key={i} className="olympiad-scale">
                 <span className="olympiad-pan">
-                  <Bi {...mapBoth(pan.left, fill)} />
+                  <Bi {...mapBoth(contentText(pan.left), fill)} />
                 </span>
                 <span className="olympiad-beam" aria-hidden="true" />
-                <span className="olympiad-pan">{right ? <Bi {...mapBoth(right, fill)} /> : <Slot filled={filled} />}</span>
+                <span className="olympiad-pan">{right ? <Bi {...mapBoth(contentText(right), fill)} /> : <Slot filled={filled} />}</span>
               </div>
             );
           })}
@@ -264,7 +264,7 @@ export function QuestionVisual({ visual, filled = null, fill }: { visual: Olympi
           <ul>
             {visual.left.map((item) => (
               <li key={item.vi} className="olympiad-chip">
-                <Bi {...item} />
+                <Bi {...contentText(item)} />
               </li>
             ))}
           </ul>
@@ -274,7 +274,7 @@ export function QuestionVisual({ visual, filled = null, fill }: { visual: Olympi
           <ul>
             {visual.right.map((item) => (
               <li key={item.vi} className="olympiad-chip">
-                <Bi {...item} />
+                <Bi {...contentText(item)} />
               </li>
             ))}
           </ul>

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { checkLocales, localeIssues } from './check-locales';
+import { TRANSLATIONS, checkLocales, localeIssues } from './check-locales';
 
 describe('locale check', () => {
   it('passes on the shipped dictionaries', () => {
@@ -16,6 +16,23 @@ describe('locale check', () => {
       'locales: e: in en.json only',
     ]);
     expect(localeIssues({ c: ['Hai {who}'] }, { c: ['Two'] })).toEqual(['locales: c[0]: placeholders differ ({who} vs {})']);
+  });
+
+  it('holds the Chinese dictionary to the same rules', () => {
+    const chinese = TRANSLATIONS[1];
+    const vi = { a: 'Chào {name}', b: 'Đóng', c: ['Một', 'Hai {who}'], d: 'Còn {n}', p: ['Một', 'Hai'] };
+    const zh = { a: '你好 {name}', b: '', c: ['一'], d: '剩 {count}', p: ['一', '一'], e: '多余' };
+    expect(localeIssues(vi, zh, chinese)).toEqual([
+      'locales: b: no Chinese line',
+      'locales: c: Chinese pool needs 2 lines',
+      'locales: d: placeholders differ ({n} vs {count})',
+      'locales: p: zh-CN pool repeats "一"',
+      'locales: e: in zh-CN.json only',
+    ]);
+  });
+
+  it('reads the Chinese dictionary next to the English one', () => {
+    expect(TRANSLATIONS.map((lang) => lang.file)).toEqual(['en', 'zh-CN']);
   });
 
   it('reports a pool that repeats a line, and a loading-tip pool too small to stay fresh', () => {

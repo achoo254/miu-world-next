@@ -2,6 +2,7 @@
 // a quiet note of how long it is open (or when it opens: "Sắp mở"), the limited rewards' pictures, and the way in.
 // Gone once the event is over (the server stops listing it). Never a countdown that urges: just the days.
 import type { LiveEventDto } from '@miu/schema/live-event';
+import { contentText } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
 import { isUiIcon } from '../kit/ui-art';
@@ -34,22 +35,22 @@ export function EventWhen({ event }: { event: LiveEventDto }) {
 export function EventBanner({ event, onOpen }: { event: LiveEventDto; onOpen: () => void }) {
   const { inline, t } = useT();
   return (
-    <aside className="event-banner" data-id={`home-event-${event.id}`} aria-label={inline(event.name)}>
+    <aside className="event-banner" data-id={`home-event-${event.id}`} aria-label={inline(contentText(event.name))}>
       <div className="event-banner-head">
         <Icon name={isUiIcon(event.icon) ? event.icon : 'trophy'} size={48} />
         <div className="event-banner-text">
           <h2 className="event-banner-title">
-            <Bi {...event.name} />
+            <Bi {...contentText(event.name)} />
           </h2>
           <p className="event-banner-line">
-            <Bi {...event.tagline} />
+            <Bi {...contentText(event.tagline)} />
           </p>
         </div>
         <EventWhen event={event} />
       </div>
       <ul className="event-banner-rewards" aria-label={t('event.rewardsTitle')}>
         {event.rewards.map((r) => (
-          <li key={r.id} title={inline(r.name)} data-earned={r.earned}>
+          <li key={r.id} title={inline(contentText(r.name))} data-earned={r.earned}>
             <EventRewardPicture kind={r.kind} item={r.item} size={36} />
           </li>
         ))}

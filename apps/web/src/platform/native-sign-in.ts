@@ -47,7 +47,10 @@ export function redirectScheme(redirectUri: string): string {
 }
 
 /** The authorization request, as the web's server builds it for /api/auth/start. */
-export function authorizationUrl(config: NativeAuthConfig, request: { state: string; nonce: string; challenge: string; reauth: boolean; signUp?: boolean }): string {
+export function authorizationUrl(
+  config: NativeAuthConfig,
+  request: { state: string; nonce: string; challenge: string; reauth: boolean; signUp?: boolean; uiLocale?: string },
+): string {
   const url = new URL(config.authorizationEndpoint);
   const q = url.searchParams;
   q.set('client_id', config.clientId);
@@ -67,6 +70,8 @@ export function authorizationUrl(config: NativeAuthConfig, request: { state: str
     // A sign-up button: the IdP opens on making an account (OpenID Connect Prompt Create).
     q.set('prompt', 'create');
   }
+  // The game's language (vi, en or zh-CN), so the IdP's pages read like the game: the system browser has no shared cookie.
+  if (request.uiLocale) q.set('ui_locales', request.uiLocale);
   return url.toString();
 }
 
@@ -92,7 +97,7 @@ export function isCancelled(err: unknown): boolean {
 }
 
 /** Runs the whole sign-in and keeps the new token. Resolves false when the person closed the browser. */
-export async function signInNative(deps: NativeSignInDeps, options: { reauth: boolean; signUp?: boolean }): Promise<boolean> {
+export async function signInNative(deps: NativeSignInDeps, options: { reauth: boolean; signUp?: boolean; uiLocale?: string }): Promise<boolean> {
   const random =
     deps.random ??
     ((bytes: Uint8Array<ArrayBuffer>) => {
@@ -107,7 +112,7 @@ export async function signInNative(deps: NativeSignInDeps, options: { reauth: bo
   const nonce = base64Url(random(new Uint8Array(16)));
   let callback: string;
   try {
-    callback = await deps.authenticate(authorizationUrl(config, { state, nonce, challenge, reauth: options.reauth, signUp: options.signUp ?? false }), redirectScheme(config.redirectUri));
+    callback = await deps.authenticate(authorizationUrl(config, { state, nonce, challenge, reauth: options.reauth, signUp: options.signUp ?? false, uiLocale: options.uiLocale }), redirectScheme(config.redirectUri));
   } catch (err) {
     if (isCancelled(err)) return false;
     throw new NativeSignInError('the system browser could not finish the sign-in');

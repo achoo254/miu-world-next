@@ -26,6 +26,13 @@ const REAUTH_RETURN_PATHS = ['/parent'] as const;
 type ReturnPath = '/' | (typeof REAUTH_RETURN_PATHS)[number];
 const returnPath = (raw: unknown): ReturnPath => REAUTH_RETURN_PATHS.find((path) => path === raw) ?? '/';
 
+/** The languages of the shared shell, passed to the IdP as `ui_locales` so its pages read like the game. */
+export const LOGIN_LANGS = ['vi', 'en', 'zh-CN'] as const;
+export type LoginLang = (typeof LOGIN_LANGS)[number];
+export const isLoginLang = (value: unknown): value is LoginLang => LOGIN_LANGS.some((lang) => lang === value);
+/** The `hd_lang` cookie every hoandat.com app shares: the language picked in the game or in another app. */
+const SHARED_LANG_COOKIE = 'hd_lang';
+
 export interface IdpRouteDeps {
   db: Db;
   config: ServerConfig;
@@ -117,6 +124,10 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
     // `signup=1`: a sign-up button sent the person, so the IdP opens on making an account (OpenID Connect Prompt
     // Create). A re-authentication always asks for a fresh login instead.
     const signUp = !reauth && req.query.signup === '1';
+    // `?lang=` first, then the shared language cookie; neither (or an unknown value) leaves the IdP to choose.
+    const queryLang = req.query.lang;
+    const cookieLang = readCookie(req, SHARED_LANG_COOKIE);
+    const lang = isLoginLang(queryLang) ? queryLang : isLoginLang(cookieLang) ? cookieLang : null;
     const pending: PendingLogin = {
       state: b64url(randomBytes(32)),
       verifier: b64url(randomBytes(32)),
@@ -140,6 +151,7 @@ export function idpWebRoutes({ db, config, clock, idp }: IdpRouteDeps): Router {
       // Re-authentication: the IdP must sign the person in again; amr and auth_time are checked on return.
       ...(pending.reauth ? { prompt: 'login', max_age: '0' } : {}),
       ...(signUp ? { prompt: 'create' } : {}),
+      ...(lang ? { ui_locales: lang } : {}),
     }).toString();
     res.redirect(303, url.toString());
   });

@@ -1,6 +1,6 @@
 // The minimap's and the full map's words in the display language: a marker's lines (minimap-model.ts) turned into
 // both languages when the map draws, names through the name glossary (ui/i18n/names), UI lines through the locales.
-import { getLangMode, inline, joinBoth, pairOf, type Bilingual } from '../../ui/i18n/i18n';
+import { getLangMode, inline, joinBoth, pairOf, same, type Bilingual } from '../../ui/i18n/i18n';
 import { nameOf } from '../../ui/i18n/names';
 import type { MarkerLine, MarkerParam, MinimapMarker } from './minimap-model';
 
@@ -9,7 +9,7 @@ function paramOf(value: MarkerParam): { pair: Bilingual; untranslated: boolean }
   if (typeof value === 'string') return { pair: nameOf(value), untranslated: false };
   if ('name' in value) {
     const pair = nameOf(value.name);
-    return { pair: { vi: pair.vi.toLocaleLowerCase('vi'), en: pair.en }, untranslated: pair.en === pair.vi };
+    return { pair: { ...pair, vi: pair.vi.toLocaleLowerCase('vi') }, untranslated: pair.en === pair.vi };
   }
   return { pair: value, untranslated: false };
 }
@@ -21,7 +21,7 @@ export function markerLine(line: MarkerLine): Bilingual {
     const values = Object.entries(line.params ?? {}).map(([k, v]) => [k, paramOf(v)] as const);
     const text = pairOf(line.key, Object.fromEntries(values.map(([k, v]) => [k, v.pair])));
     // "xe buýt stop" reads worse than the Vietnamese line: until the word has its English, the line stays Vietnamese.
-    return values.some(([, v]) => v.untranslated) ? { vi: text.vi, en: text.vi } : text;
+    return values.some(([, v]) => v.untranslated) ? same(text.vi) : text;
   }
   return line;
 }

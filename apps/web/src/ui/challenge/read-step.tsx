@@ -3,6 +3,7 @@
 import type { QuestStepPublic } from '@miu/schema/content';
 import type { StepAnswer } from '@miu/schema/game';
 import { ListenButton } from '../dialogue/listen-button';
+import { sideOf } from '../i18n/i18n';
 import { useT } from '../i18n/use-t';
 import { ChallengeFrame, type ChallengeContext } from './challenge-frame';
 import { ChoiceList } from './choice-list';
@@ -28,7 +29,7 @@ export function ReadStepScreen({
   const ref = step.textRef ? texts[step.textRef] : undefined;
   // A passage of the step's own (a letter in a story) may have its English twin; a textbook reading has none.
   const own = step.text !== undefined ? context.say(step.text, step.en?.text) : null;
-  const passage = own ? (mode === 'en' ? own.en : own.vi) : context.fill(ref?.body ?? '');
+  const passage = own ? (mode === 'en' || mode === 'zh-CN' ? sideOf(own, mode) : own.vi) : context.fill(ref?.body ?? '');
   return (
     <ChallengeFrame context={context} prompt={context.say(step.question, step.en?.question)} onCheck={() => choice && onAnswer({ choice })} canCheck={choice !== null}>
       <article className="read-passage" data-id="read-passage">

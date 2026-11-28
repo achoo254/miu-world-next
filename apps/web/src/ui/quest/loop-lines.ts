@@ -21,6 +21,7 @@ export function fillLine(line: Bilingual, who: Bilingual, name: string): Bilingu
   return {
     vi: line.vi.replaceAll('{who}', who.vi).replaceAll('{name}', name),
     en: line.en.replaceAll('{who}', who.en).replaceAll('{name}', name),
+    zh: line.zh.replaceAll('{who}', who.zh).replaceAll('{name}', name),
   };
 }
 

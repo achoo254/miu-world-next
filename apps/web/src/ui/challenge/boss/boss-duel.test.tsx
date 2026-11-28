@@ -5,7 +5,7 @@ import type { DuelMove, QuestStepPublic } from '@miu/schema/content';
 import type { StepAnswer } from '@miu/schema/game';
 import { createGameStore, type GameCommand } from '../../../game-bridge/game-store';
 import { GameStoreContext } from '../../../game-bridge/use-game-state';
-import { setLangMode } from '../../i18n/i18n';
+import { same, setLangMode, twin } from '../../i18n/i18n';
 import type { ChallengeContext } from '../challenge-frame';
 import { BossDuel, HIT_BEAT_MS, type BossBlow } from './boss-duel';
 
@@ -44,12 +44,12 @@ const withFirstMove = (move: DuelMove): BossStep => ({ ...bossStep, turns: [{ ..
 const context: ChallengeContext = {
   questId: 'quest-forest',
   stepId: 'boss-forest',
-  title: { vi: 'Trùm Vui Rừng Xanh', en: 'Trùm Vui Rừng Xanh' },
+  title: same('Trùm Vui Rừng Xanh'),
   position: { index: 1, total: 1 },
   xp: 100,
   fill: (t) => t.replace('{name}', 'Mochi'),
-  say: (vi, en) => ({ vi, en: en ?? vi }),
-  label: (vi, en) => ({ vi, en: en ?? vi }),
+  say: (vi, en) => twin(vi, en),
+  label: (vi, en) => twin(vi, en),
   busy: false,
   tryAgain: null,
   wrongTries: 0,
@@ -190,7 +190,7 @@ describe('BossDuel as a card (no fight staged in the world)', () => {
     await act(async () => fireEvent.click(choice('gau')));
     expect(choice('gau').dataset.state).toBe('bounced');
     expect(screen.getByText('240 / 240 HP')).not.toBeNull();
-    rerender(<BossDuel step={bossStep} context={context} turnTries={{ 'turn-1': 1 }} line={{ vi: 'Hụt rồi nhé!', en: 'Missed!' }} onAnswer={onAnswer} onClose={() => undefined} />);
+    rerender(<BossDuel step={bossStep} context={context} turnTries={{ 'turn-1': 1 }} line={twin('Hụt rồi nhé!', 'Missed!')} onAnswer={onAnswer} onClose={() => undefined} />);
     expect(screen.getByText('Hụt rồi nhé!')).not.toBeNull();
     expect(screen.getAllByRole('tab').map((t) => t.textContent)).toEqual(['Hướng dẫn', 'Gợi ý']);
   });
@@ -210,7 +210,7 @@ describe('BossDuel as a card (no fight staged in the world)', () => {
 
   it("says the server's line after a blow, the HP left when it has none, and floats the HP a blow took", () => {
     const { rerender } = renderDuel(<BossDuel step={bossStep} context={context} bossState={{ hp: 240, answered: [] }} onAnswer={vi.fn()} onClose={() => undefined} />);
-    rerender(<BossDuel step={bossStep} context={context} bossState={{ hp: 160, answered: ['turn-1'] }} line={{ vi: 'Úi, trúng rồi!', en: 'Ouch, a hit!' }} onAnswer={vi.fn()} onClose={() => undefined} />);
+    rerender(<BossDuel step={bossStep} context={context} bossState={{ hp: 160, answered: ['turn-1'] }} line={twin('Úi, trúng rồi!', 'Ouch, a hit!')} onAnswer={vi.fn()} onClose={() => undefined} />);
     expect(screen.getByText('Úi, trúng rồi!')).not.toBeNull();
     expect(document.querySelector('[data-id="boss-damage"]')?.textContent).toBe('−80');
     rerender(<BossDuel step={bossStep} context={context} bossState={{ hp: 160, answered: ['turn-1'] }} onAnswer={vi.fn()} onClose={() => undefined} />);

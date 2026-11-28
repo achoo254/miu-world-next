@@ -3,7 +3,7 @@
 // side-quest flow reads it) and the games' names (each quest's minigame step). Read once per map.
 import { QuestListResponse } from '@miu/schema/game';
 import { ApiError, api } from '../../ui/api-client';
-import type { Bilingual } from '../../ui/i18n/i18n';
+import { twin, type Bilingual } from '../../ui/i18n/i18n';
 import type { SideGiver } from './minimap-model';
 
 /** The givers in a side-quest list, each once with every game it offers (in list order, in both languages). */
@@ -16,7 +16,7 @@ export function sideGiversOf(list: QuestListResponse, fill: (text: string) => st
     const game = quest.steps.find((s) => s.kind === 'challenge' && s.mechanic === 'minigame');
     if (!giver || !game) continue;
     const names = games.get(giver) ?? [];
-    const name = { vi: fill(game.title), en: fill(game.en?.title ?? game.title) };
+    const name = twin(fill(game.title), fill(game.en?.title ?? game.title));
     if (!names.some((n) => n.vi === name.vi)) names.push(name);
     games.set(giver, names);
   }

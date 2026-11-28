@@ -93,15 +93,17 @@ describe('a bot’s own line', () => {
   it('shows over the bot in the display language', async () => {
     const remote = manager();
     await remote.spawn(bot('bot-tt-1'));
-    const line = { vi: 'Chào bạn!', en: 'Hi there!' };
+    const line = { vi: 'Chào bạn!', en: 'Hi there!', zh: '你好！' };
     remote.sayLine('bot-tt-1', line);
     setLangMode('en', false);
     remote.sayLine('bot-tt-1', line);
     setLangMode('both', false);
     remote.sayLine('bot-tt-1', line);
-    expect(shown).toEqual(['Chào bạn!', 'Hi there!', 'Chào bạn! / Hi there!']);
+    setLangMode('zh-CN', false);
+    remote.sayLine('bot-tt-1', line);
+    expect(shown).toEqual(['Chào bạn!', 'Hi there!', 'Chào bạn! / Hi there!', '你好！']);
     remote.sayLine('bot-not-here', line);
-    expect(shown).toHaveLength(3);
+    expect(shown).toHaveLength(4);
     remote.dispose();
   });
 });

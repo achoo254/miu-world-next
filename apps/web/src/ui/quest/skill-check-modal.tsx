@@ -6,7 +6,7 @@
 import { useEffect, useState } from 'react';
 import type { SkillCheckResult, StepCompleteResponse } from '@miu/schema/game';
 import { freshPicker, type FreshPicker } from '@miu/quest/pick-fresh';
-import { format, linesOf, type Bilingual } from '../i18n/i18n';
+import { formatBoth, linesOf, type Bilingual } from '../i18n/i18n';
 import { nameOf } from '../i18n/names';
 import { Bi, T, useT } from '../i18n/use-t';
 import { Icon } from '../kit/art';
@@ -38,7 +38,7 @@ export function SkillCheckModal({ check, name, onPractice, onGoOn }: SkillCheckM
     shortLines ??= freshPicker(linesOf('knowledgeGate.shortLines'));
     const line = shortLines.next();
     const params = { name, skill };
-    return { vi: format(line.vi, params, 'vi'), en: format(line.en, params, 'en') };
+    return formatBoth(line, params);
   });
   return (
     <Modal title={<T k="knowledgeGate.title" />} onClose={onGoOn} dataId="skill-check-modal" variant="scene">
@@ -97,7 +97,7 @@ export function gateOpenedLine(gate: OpenedGate, name: string): Bilingual {
   openedLines ??= freshPicker(linesOf('knowledgeGate.opened'));
   const line = openedLines.next();
   const params = { coin: gate.coin, xp: gate.xp, name };
-  return { vi: format(line.vi, params, 'vi'), en: format(line.en, params, 'en') };
+  return formatBoth(line, params);
 }
 
 /** A banner over the game once a step opened a gate: its treasure, gone after a few seconds. */

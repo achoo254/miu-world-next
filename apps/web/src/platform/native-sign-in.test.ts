@@ -46,6 +46,11 @@ describe('native sign-in helpers', () => {
     expect(redirectScheme(CONFIG.redirectUri)).toBe('com.hoandat.miu');
   });
 
+  it('asks the IdP for the game language, Simplified Chinese included', () => {
+    const zh = new URL(authorizationUrl(CONFIG, { state: 's', nonce: 'n', challenge: 'c', reauth: false, uiLocale: 'zh-CN' })).searchParams;
+    expect(zh.get('ui_locales')).toBe('zh-CN');
+  });
+
   it('opens the IdP on making an account for a sign-up button, never on a re-authentication', () => {
     const up = new URL(authorizationUrl(CONFIG, { state: 's', nonce: 'n', challenge: 'c', reauth: false, signUp: true })).searchParams;
     expect([up.get('prompt'), up.get('max_age')]).toEqual(['create', null]);

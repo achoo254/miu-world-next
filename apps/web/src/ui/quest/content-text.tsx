@@ -1,12 +1,13 @@
-// Content text in both languages (docs/i18n.md): a quest, a step, a minigame or a shop item carries its English
-// twin in `en`; what has none (textbook wording, text not translated yet) shows in Vietnamese in every mode.
+// Content text in every language (docs/i18n.md): a quest, a step, a minigame or a shop item carries its English
+// twin in `en`; what has none (textbook wording, text not translated yet) shows in Vietnamese in every mode. Content
+// has no Chinese of its own: in 中文 it reads its English twin.
 import type { QuestStepPublic } from '@miu/schema/content';
-import { mapBoth, type Bilingual } from '../i18n/i18n';
+import { mapBoth, twin, type Bilingual } from '../i18n/i18n';
 import { nameOf } from '../i18n/names';
 import { Bi } from '../i18n/use-t';
 
-/** A line with its English twin; without one, the same line in both languages (shown once, in Vietnamese). */
-export const twin = (vi: string, en: string | null | undefined): Bilingual => ({ vi, en: en && en.trim() !== '' ? en : vi });
+/** A line with its English twin (`twin` of i18n, kept here for the content screens that import it from here). */
+export { twin };
 
 /**
  * A title in both languages: its own English first, then the name glossary (content/i18n/names/quest.json holds the
@@ -35,5 +36,5 @@ export const nthEn = (list: readonly string[] | undefined, i: number): string | 
 /** Content text on screen: both languages filled with the player's name (`{name}`), shown by the current mode. */
 export function Say({ text, fill }: { text: Bilingual; fill: (line: string) => string }) {
   const filled = mapBoth(text, fill);
-  return <Bi vi={filled.vi} en={filled.en} />;
+  return <Bi {...filled} />;
 }

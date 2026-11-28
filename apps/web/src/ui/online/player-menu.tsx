@@ -6,7 +6,7 @@
 import { useState } from 'react';
 import { REPORT_REASONS, SAFE_CANNED_CHATS, type ReportReason, type SafeCannedChat } from '@miu/schema/multiplayer';
 import type { OnlinePlayer, SocialStore } from '../../game-bridge/social-store';
-import { linesOf, type TextKey } from '../i18n/i18n';
+import { linesOf, same, type TextKey } from '../i18n/i18n';
 import { Bi, T, useT } from '../i18n/use-t';
 import { buttonClass } from '../kit/button';
 import { Modal } from '../kit/modal';
@@ -28,7 +28,7 @@ export function CannedLines({ onPick, dataId }: { onPick: (text: SafeCannedChat)
       {SAFE_CANNED_CHATS.map((text, i) => (
         <li key={text}>
           <button type="button" className="online-menu-line" data-id={`${dataId}-${i}`} onClick={() => onPick(text)}>
-            <Bi vi={lines[i]?.vi ?? text} en={lines[i]?.en ?? text} />
+            <Bi {...(lines[i] ?? same(text))} />
           </button>
         </li>
       ))}
@@ -51,7 +51,7 @@ export function PlayerMenu({ social, player }: { social: SocialStore; player: On
   const [step, setStep] = useState<Step>('actions');
   const [reason, setReason] = useState<ReportReason | null>(null);
   const close = (): void => social.send({ type: 'close-menu' });
-  const who = { vi: player.name, en: player.name };
+  const who = same(player.name);
   // The menu's actions, in order (mock frame 7: "Gửi lời mời kết bạn" next to inviting).
   const actions: MenuAction[] = [
     { id: 'wave', icon: '👋', label: 'online.menu.wave', run: () => social.send({ type: 'wave', to: player.id }) },

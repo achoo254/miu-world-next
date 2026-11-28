@@ -2,7 +2,7 @@
 // setting changes), `t()` bound to it for strings shown inline (aria labels, placeholders), and `<Bi>` / `<T>`
 // for visible text: in Song ngữ the Vietnamese line with a smaller English line under it.
 import { useMemo, useSyncExternalStore } from 'react';
-import { getLangMode, inline, onLangModeChange, pairOf, type Bilingual, type LangMode, type Params, type TextKey } from './i18n';
+import { getLangMode, inline, mapBoth, onLangModeChange, pairOf, type Bilingual, type LangMode, type Params, type TextKey } from './i18n';
 import { nameOf, namesRevision, onNamesChange } from './names';
 import './i18n.css';
 
@@ -47,10 +47,12 @@ export function useT(): Translator {
 
 /**
  * Visible text in the current mode. Vietnamese mode renders the bare text (the same DOM as before the
- * bilingual display); Song ngữ stacks a smaller English line under the Vietnamese one, unless both are the same.
+ * bilingual display); English and 中文 mark their language when it differs from the Vietnamese; Song ngữ stacks a
+ * smaller English line under the Vietnamese one, unless both are the same.
  */
-export function Bi({ vi, en }: Bilingual) {
+export function Bi({ vi, en, zh }: Bilingual) {
   const mode = useLangMode();
+  if (mode === 'zh-CN') return zh === vi ? <>{vi}</> : <span lang={zh === en ? 'en' : 'zh-CN'}>{zh}</span>;
   if (mode === 'vi' || vi === en) return <>{mode === 'en' ? en : vi}</>;
   if (mode === 'en') return <span lang="en">{en}</span>;
   return (
@@ -66,7 +68,7 @@ export function Bi({ vi, en }: Bilingual) {
 /** `<Bi>` for a locale key. */
 export function T({ k, params }: { k: TextKey; params?: Params }) {
   const pair = pairOf(k, params);
-  return <Bi vi={pair.vi} en={pair.en} />;
+  return <Bi {...pair} />;
 }
 
 /**
@@ -77,5 +79,5 @@ export function Name({ vi, en, fill }: { vi: string; en?: string | null; fill?: 
   useLangMode();
   const pair = nameOf(vi, en);
   // Looked up as written ("Nhà của {name}"), then filled.
-  return fill ? <Bi vi={fill(pair.vi)} en={fill(pair.en)} /> : <Bi vi={pair.vi} en={pair.en} />;
+  return <Bi {...(fill ? mapBoth(pair, fill) : pair)} />;
 }

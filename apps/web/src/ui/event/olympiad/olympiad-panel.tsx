@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { fillPlayerName } from '@miu/quest/player-name';
 import type { ExamSubmitResponse, OlympiadQuestionPublic, OlympiadStatusResponse, OlympiadTopicId, PracticeFinishResponse } from '@miu/schema/olympiad';
 import { errorMessage } from '../../api-client';
+import { contentText, same } from '../../i18n/i18n';
 import { Bi, T, useT } from '../../i18n/use-t';
 import { buttonClass } from '../../kit/button';
 import { Modal } from '../../kit/modal';
@@ -36,7 +37,10 @@ export function OlympiadPanel({ name, onClose, onProgress }: { name: string; onC
   useEffect(refresh, [refresh]);
 
   const topicOf = (id: OlympiadTopicId) => status?.topics.find((topic) => topic.id === id);
-  const topicName = (id: OlympiadTopicId) => topicOf(id)?.name ?? { vi: id, en: id };
+  const topicName = (id: OlympiadTopicId) => {
+    const name = topicOf(id)?.name;
+    return name ? contentText(name) : same(id);
+  };
   const practise = (topic: OlympiadTopicId): void => {
     setError(null);
     loadPractice(topic).then((res) => setView({ kind: 'practice', topic, questions: res.questions }), (err: unknown) => setError(errorMessage(err)));
@@ -52,7 +56,7 @@ export function OlympiadPanel({ name, onClose, onProgress }: { name: string; onC
 
   return (
     <Modal
-      title={status ? <Bi {...status.title} /> : <T k="olympiad.rail" />}
+      title={status ? <Bi {...contentText(status.title)} /> : <T k="olympiad.rail" />}
       onClose={onClose}
       dataId="olympiad-panel"
       variant="scene"

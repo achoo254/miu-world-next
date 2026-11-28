@@ -4,7 +4,7 @@
 // help layers (never an answer), and stepping out. Each member plays on her own screen, with her own progress. A
 // companion bot of the party may ask the party to play and plays along; its name always shows it is a bot.
 import type { SocialStore } from '../../game-bridge/social-store';
-import { same } from '../i18n/i18n';
+import { same, type Bilingual } from '../i18n/i18n';
 import { T, useT } from '../i18n/use-t';
 import { buttonClass } from '../kit/button';
 import { useSocial } from '../online/use-social';
@@ -13,7 +13,7 @@ import { titleOf } from '../quest/content-text';
 import './coop.css';
 
 /** The quest's title as the player reads it, filled with her name. */
-function questName(data: PlayerData, questId: string, lang: (pair: { vi: string; en: string }) => string): string {
+function questName(data: PlayerData, questId: string, lang: (pair: Bilingual) => string): string {
   const quest = data.quests.find((q) => q.quest.id === questId)?.quest;
   return quest ? say(lang(titleOf(quest)), data.character) : questId;
 }

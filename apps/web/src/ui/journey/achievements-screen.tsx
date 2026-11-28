@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { ACHIEVEMENT_CATEGORIES, type AchievementCategory, type AchievementClaimResponse, type AchievementDto } from '@miu/schema/achievement';
 import { freshPicker, type FreshPicker } from '@miu/quest/pick-fresh';
-import { format, linesOf, mapBoth, same, type Bilingual, type TextKey } from '../i18n/i18n';
+import { formatBoth, linesOf, mapBoth, same, type Bilingual, type TextKey } from '../i18n/i18n';
 import { Bi, Name, T, useT } from '../i18n/use-t';
 import { ITEMS } from '../backpack/items';
 import { Icon } from '../kit/art';
@@ -111,7 +111,7 @@ export function AchievementCelebration({ claim, player, onClose }: { claim: Achi
   const [doneLine] = useState(() => {
     doneLines ??= freshPicker(linesOf('achievements.doneLines'));
     const line = doneLines.next();
-    return { vi: format(line.vi, { name: player.character.name }, 'vi'), en: format(line.en, { name: player.character.name }, 'en') };
+    return formatBoth(line, { name: player.character.name });
   });
   useEffect(() => {
     playCue('complete');
