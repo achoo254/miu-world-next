@@ -1,5 +1,7 @@
 # Miu World
 
+> **Đã dừng vận hành từ 28/11/2026.** `miu.hoandat.com` trả `410 Gone`; dữ liệu người chơi đã xoá, máy chủ đã gỡ, các workflow CI/deploy đã bỏ. Repo giữ công khai để tham khảo; ai muốn có thể fork và phát triển tiếp theo giấy phép của repo.
+
 Thư mục repo: `miu-world-next` (tên hiển thị sản phẩm vẫn là “Miu World”).
 
 Game phiêu lưu 3D voxel online trên web cho mọi lứa tuổi, nơi kiến thức là công cụ để tiến lên chứ không phải một LMS có thêm avatar. Nội dung học (Toán, Tiếng Việt) viết bằng lời của mình, tổ chức theo môn, chủ đề và mục tiêu, không theo sách giáo khoa hay lớp; nguồn ở [`content/learning/topics/`](content/learning/topics/), map và quest ở [`content/`](content/). Server là nguồn sự thật cho tiến độ và thưởng; client không tự tính.
